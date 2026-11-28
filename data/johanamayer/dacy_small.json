@@ -55,90 +55,64 @@
   "benchmarks": [
     {
       "task": "NER",
-      "dataset": null,
+      "dataset": "DaNE",
       "metric": "NER Precision",
       "value": 0.8201970443
     },
     {
       "task": "NER",
-      "dataset": null,
+      "dataset": "DaNE",
       "metric": "NER Recall",
       "value": 0.845177665
     },
     {
       "task": "NER",
-      "dataset": null,
+      "dataset": "DaNE",
       "metric": "NER F Score",
       "value": 0.8325
     },
     {
       "task": "TAG",
-      "dataset": null,
+      "dataset": "UD Danish DDT",
       "metric": "TAG (XPOS) Accuracy",
       "value": 0.9813613789
     },
     {
       "task": "POS",
-      "dataset": null,
+      "dataset": "UD Danish DDT",
       "metric": "POS (UPOS) Accuracy",
       "value": 0.9807770961
     },
     {
       "task": "MORPH",
-      "dataset": null,
+      "dataset": "UD Danish DDT",
       "metric": "Morph (UFeats) Accuracy",
       "value": 0.9768039731
     },
     {
       "task": "LEMMA",
-      "dataset": null,
+      "dataset": "UD Danish DDT",
       "metric": "Lemma Accuracy",
       "value": 0.9466674455
     },
     {
       "task": "UNLABELED_DEPENDENCIES",
-      "dataset": null,
+      "dataset": "UD Danish DDT",
       "metric": "Unlabeled Attachment Score (UAS)",
       "value": 0.8834662701
     },
     {
       "task": "LABELED_DEPENDENCIES",
-      "dataset": null,
+      "dataset": "UD Danish DDT",
       "metric": "Labeled Attachment Score (LAS)",
       "value": 0.8498242768
     },
     {
-      "task": "SENTENCES",
-      "dataset": null,
+      "task": "SENTS",
+      "dataset": "UD Danish DDT",
       "metric": "Sentences F-Score",
       "value": 0.9482948295
     }
   ],
-  "sources": [
-    {
-      "title": "Fortnite - jeuxvideo.com",
-      "url": "https://www.jeuxvideo.com/jeux/jeu-77986/",
-      "snippet": "Fortnite : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Fortnite est un Tower-Defense orienté sandbox. …"
-    },
-    {
-      "title": "johanamayer (Johana Mayerova) - Hugging Face",
-      "url": "https://huggingface.co/johanamayer/models",
-      "snippet": "0 followers 1 following JohanaMayerova AI & ML interests None yet Organizations johanamayer's models"
-    },
-    {
-      "title": "Fortnite Battle Royale : guide complet, astuces, cartes, défis, mises à ...",
-      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/367228/wiki-de-fortnite.htm",
-      "snippet": "Vous débutez sur le jeu Fortnite ? Venez découvrir tout ce qu'il faut savoir sur ce jeu grâce à toutes les soluces que propose notre wiki."
-    },
-    {
-      "title": "johanamayer (Johana Mayerova) - Hugging Face",
-      "url": "https://huggingface.co/johanamayer",
-      "snippet": "User profile of Johana Mayerova on Hugging Face"
-    },
-    {
-      "title": "Spiele, Fun & Side-Projects | tutorials.de – Wissen. Gemeinsam.",
-      "url": "https://www.tutorials.de/forums/spiele-fun-side-projects.50/",
-      "snippet": "Spiele, Challenges, Hobby-Projekte und lockere Themen zum Abschalten."
-    }
-  ]
+  "sources": []
 }

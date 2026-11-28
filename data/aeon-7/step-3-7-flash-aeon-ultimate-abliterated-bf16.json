@@ -67,7 +67,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 179,
+  "downloads_30d": 181,
   "trending_score": 0,
   "parameters": 201365316160,
   "parameters_human": "201.37B",
@@ -87,5 +87,26 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Aeon | a world of ideas",
+      "url": "https://aeon.co/",
+      "snippet": "Aeon is a magazine of ideas and culture. We publish in-depth essays from the world’s most incisive and ambitious thinkers, and a …"
+    },
+    {
+      "title": "AEON – Un domaine de montagne unique au monde",
+      "url": "https://www.aeon-montagnes.com/",
+      "snippet": "Découvrez AEON Une vision partagée, un fil rouge, un label de qualité qui se traduit dans chacune des expériences. Porté par les …"
+    },
+    {
+      "title": "AEON Pass : programme ski à la journée sur 3 domaines",
+      "url": "https://www.flexipass-aeon.com/",
+      "snippet": "Le programme AEON Pass tire son nom du label AEON, la signature commune aux domaines : Alpe d’Huez, Les 2 Alpes et La …"
+    },
+    {
+      "title": "Aeon Athletics",
+      "url": "https://aeonathletics.com/",
+      "snippet": "AEON ABOUT US RETURNS & EXCHANGES GENERAL TERMS PRIVACY POLICY BECOME AMBASSADOR POPULAR …"
+    }
+  ]
 }

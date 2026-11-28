@@ -2,93 +2,99 @@
 
 ## Resumen
 
-TABIS 1.1 0.8B es un ajuste fino experimental del modelo Qwen3.5-0.8B orientado al idioma sajá (sakha, yakut), una lengua túrquica hablada principalmente en la república de Sajá (Yakutia, Rusia). Lo desarrolla el autor independiente tabisai, que parte del modelo base de Qwen y lo adapta mediante un proceso en dos fases: continuación de preentrenamiento (CPT) sobre un corpus monolingüe en sajá y ajuste supervisado (SFT) sobre diálogos. El modelo se distribuye con licencia Apache 2.0 y pesos en safetensors y GGUF.
+TABIS 1.1 0.8B es un ajuste fino experimental del modelo Qwen3.5-0.8B orientado al idioma sajá (sakha, código ISO `sah`), una lengua túrquica hablada en la República de Sajá (Yakutia, Rusia). Lo desarrolla el autor independiente `tabisai` y se publica bajo licencia Apache 2.0. El objetivo es dotar de capacidades conversacionales básicas en sajá a un modelo compacto que pueda ejecutarse localmente sin depender de la nube, cubriendo también el ruso como idioma de soporte.
 
-Con 752.393.024 parámetros totales (un modelo denso de menos de mil millones), está pensado para inferencia local en hardware modesto: la cuantización Q4_K_M ocupa aproximadamente 505 MiB y las versiones F16 y BF16 rondan los 1,41 GiB. El autor lo publica de forma deliberadamente incompleta, como resultado intermedio, para que la comunidad pueda probarlo y contribuir a su mejora. Es relevante porque existen muy pocos modelos abiertos dedicados al sajá, y este ofrece una vía práctica de despliegue offline con un tokenizador extendido específicamente para ese idioma.
+El modelo parte de la base Qwen3.5-0.8B (752.393.024 parámetros reales en safetensors) y aplica un pipeline de adaptación en dos fases: continuación de preentrenamiento (CPT) sobre un corpus monolingüe en sajá y ajuste supervisado (SFT) sobre diálogos, incluyendo un pequeño conjunto de correcciones humanas. La versión se declara explícitamente como inacabada y experimental: el propio autor advierte de respuestas incoherentes, repeticiones, confusión de personas gramaticales y alucinaciones en datos biográficos e históricos.
 
-La versión concreta descrita es la variante "Human sensitivity", que incorpora un pequeño número de correcciones humanas (siete ejemplos en entrenamiento y dos en validación) dentro del conjunto de SFT. El autor advierte explícitamente de que se trata de un experimento sin evaluación independiente por parte de hablantes nativos ni un YakutEval completo.
+Su relevancia es doble: por un lado, demuestra que es viable adaptar un modelo de menos de mil millones de parámetros a una lengua de bajos recursos con recursos modestos (QLoRA 4-bit, contexto de 1024 tokens, una sola época de SFT); por otro, sirve como referencia metodológica para quien quiera replicar el proceso en otras lenguas minorizadas. No obstante, no debe considerarse un modelo listo para producción ni una fuente fiable de datos factuales.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen3.5-0.8B), ajuste fino con QLoRA |
-| Parametros totales | 752.393.024 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 1024 tokens (contexto usado en el entrenamiento) |
-| Tipos de cuantizacion | F16, BF16, Q4_K_M (GGUF); base NF4 durante el entrenamiento |
-| Idiomas soportados | sajá (sah), ruso (ru) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3.5-0.8B); no se detalla la configuración interna en la información disponible |
+| Parámetros totales | 752.393.024 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | 1024 tokens durante el entrenamiento; no se especifica la ventana nativa del modelo base |
+| Tipos de cuantización | F16, BF16, Q4_K_M (GGUF); base QLoRA NF4 durante el entrenamiento |
+| Idiomas soportados | Sajá (`sah`), ruso (`ru`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (merged-hf-bf16), GGUF (F16, BF16, Q4_K_M), adaptador LoRA |
+| Formato de pesos | Safetensors (BF16 fusionado) y GGUF (F16, BF16, Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-0.8B, un transformer denso de menos de mil millones de parámetros. Sobre esa base se aplicó un ajuste fino con QLoRA (base cuantizada en 4 bits NF4, LoRA con `r=16` y `alpha=32`), contexto de 1024 tokens, batch de 1 con acumulación de gradiente de 8 y optimizador AdamW de 8 bits. Al tokenizador original se le añadieron 110 tokens para el sajá, y las filas de embeddings correspondientes se entrenaron junto con el adaptador. Para esta publicación, la base NF4 se convirtió a BF16 y se fusionó con el adaptador, generando pesos F16, BF16 y GGUF Q4_K_M.
+La arquitectura es la del modelo base Qwen3.5-0.8B, un transformer decoder-only de 752 millones de parámetros. Sobre él se añadieron 110 tokens nuevos al tokenizador para representar texto en sajá, y las filas de embeddings correspondientes se entrenaron junto con el adaptador LoRA. El entrenamiento se estructuró en dos etapas. La primera, CPT (continuación de preentrenamiento), usó el corpus monolingüe `ailabykt/sakha-corpus-mono`: 216.022 documentos y 354.822.906 tokens con EOS en el split de entrenamiento, y 3.298 documentos y 4.805.554 tokens en validación. Se completó una pasada de 57.446 pasos, con interrupciones y reanudaciones desde checkpoints. La pérdida de validación bajó de 4,1013 a 1,6447.
 
-El entrenamiento se dividió en dos etapas. La CPT usó el corpus monolingüe `ailabykt/sakha-corpus-mono`, con 216.022 documentos y 354.822.906 tokens (con EOS) en el split de entrenamiento y 3.298 documentos y 4.805.554 tokens en validación; se completó una pasada de 57.446 pasos con learning rate 5e-5, y la loss de validación bajó de 4,1013 a 1,6447. Después, el SFT empleó 9.678 diálogos de entrenamiento y 503 de validación (7.055 del conjunto sintético `tabisai/tabis-sakha-dialogues-7500` y 2.623 de candidatos previos), con learning rate 2e-5, una época y 1.210 pasos; la loss de validación pasó de 1,9337 a 1,5661 (train loss 1,6365). En esta versión no se utilizó NEFTune. El autor señala que la loss no mide la naturalidad, la veracidad ni la calidad del diálogo en sajá.
+La segunda etapa, SFT, empleó 9.678 diálogos de entrenamiento y 503 de validación: 7.055 registros del conjunto sintético `tabisai/tabis-sakha-dialogues-7500` y 2.623 de candidatos previos, con un split propio distinto del publicado. En la variante "Human sensitivity" se incluyeron siete ejemplos corregidos por humanos en entrenamiento y dos en validación. El método fue QLoRA con base 4-bit, LoRA `r=16`, `alpha=32`, contexto de 1024 tokens, batch 1 con acumulación de gradiente 8, AdamW 8-bit, learning rate `5e-5` para CPT y `2e-5` para SFT. El SFT duró una época y 1.210 pasos, con pérdida de validación de 1,9337 a 1,5661 (train loss 1,6365). No se usó NEFTune. Para la exportación se convirtió la base NF4 a BF16 y se fusionó con el adaptador, generando F16, BF16 y Q4_K_M GGUF; un template corregido elimina el mensaje de sistema vacío.
 
 ## Capacidades
 
-- Generación de texto conversacional en sajá: respuestas a preguntas sencillas y réplicas cortas de tipo coloquial.
-- Comprensión y generación en ruso como idioma secundario.
-- Funcionamiento totalmente local y offline una vez descargados los pesos, sin dependencia de la nube.
-- Despliegue en LM Studio y en llama.cpp (el autor verificó F16 y Q4_K_M en GPU en LM Studio, y BF16 mediante llama.cpp en CPU).
-- Soporte de cuantizaciones ligeras que permiten ejecución en hardware de gama baja.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido (thinking); de hecho, el autor recomienda desactivar el modo thinking en la interfaz.
+- Generación de texto conversacional breve en sajá, con respuestas de estilo coloquial.
+- Comprensión y generación en ruso como idioma de soporte.
+- Ejecución local completamente offline tras la descarga, sin llamadas a la nube.
+- Funcionamiento en LM Studio (GGUF) y en llama.cpp (BF16 verificado en CPU).
+- Plantilla de chat con soporte de roles; el template corregido gestiona el mensaje de sistema vacío.
+- Modo "thinking" heredado de la familia Qwen3.5, que el autor recomienda desactivar.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio.
 
 ## Casos de uso
 
-- Pruebas de concepto de asistentes conversacionales en sajá: el modelo puede mantener intercambios breves en ese idioma y ejecutarse en local, lo que permite validar un flujo de chat sin costes de API ni envío de datos a terceros.
-- Aplicaciones educativas para el aprendizaje del sajá: generación de ejemplos de frases y diálogos sencillos que sirvan como material de práctica, siempre con revisión humana por la escasa fiabilidad factual.
-- Investigación lingüística y experimentación con modelos de bajo recurso: sirve como base para estudiar el efecto de la CPT y el SFT sobre un idioma con pocos datos, y como punto de partida para nuevos ajustes.
-- Prototipado de interfaces de voz o texto para comunidades de Sajá: al caber en cuantización Q4_K_M en torno a 505 MiB, puede integrarse en dispositivos con recursos limitados y funcionar sin conexión.
-- Evaluación comparativa de técnicas de adaptación multilingüe: el repositorio incluye adaptadores, logs de entrenamiento y métricas de loss que permiten reproducir o contrastar el pipeline QLoRA sobre un modelo base pequeño.
-- Generación de borradores de diálogo para anotación: el modelo puede producir candidatos de conversación que después se filtran y corrigen manualmente, alimentando así conjuntos de datos de mayor calidad para futuras versiones.
+- Prototipado de asistentes conversacionales en sajá: permite probar interfaces de chat en esta lengua con un modelo que cabe en un portátil, usando la cuantización Q4_K_M (~505 MiB) para iterar rápido sobre prompts y plantillas.
+- Investigación en adaptación de lenguas de bajos recursos: sirve como caso de estudio reproducible de un pipeline CPT + SFT con QLoRA sobre un modelo sub-1B, útil para comparar metodologías en publicaciones o trabajos académicos.
+- Experimentos de aumento de vocabulario: los 110 tokens añadidos al tokenizador y el entrenamiento de sus embeddings son un ejemplo práctico para estudiar el impacto del tokenizador en lenguas aglutinantes como el sajá.
+- Generación de borradores de diálogo para revisión humana: el modelo puede producir respuestas preliminares que un hablante nativo corrija, alimentando así futuras iteraciones del conjunto de datos.
+- Evaluación comparativa de cuantizaciones: al ofrecer F16, BF16 y Q4_K_M, permite medir la degradación de calidad entre precisiones en un modelo pequeño y en una lengua concreta.
+- Docencia y demostraciones de IA local: su tamaño reducido y su licencia Apache 2.0 lo hacen adecuado para talleres sobre despliegue de LLM en hardware de consumo.
+- Pruebas de integración en pipelines de inferencia (llama.cpp, LM Studio) antes de escalar a modelos mayores, validando plantillas de chat y formatos GGUF.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor solo reporta métricas de loss de entrenamiento y validación, además de una comparación cualitativa muy limitada sobre cuatro preguntas básicas, que él mismo califica de insuficiente para extraer conclusiones generales.
+No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, YakutEval) en la información disponible. El autor indica explícitamente que la comparación realizada no constituye una evaluación independiente por nativos ni un YakutEval completo, y que parte de las comparaciones previas se hicieron con GigaChat, que también puede equivocarse en sajá. Las únicas métricas publicadas son las pérdidas de entrenamiento:
 
-| Metrica | Antes | Despues |
-|---|---:|---:|
-| Loss de validacion CPT | 4,1013 | 1,6447 |
-| Loss de validacion SFT (Human sensitivity) | 1,9337 | 1,5661 |
-| Loss de entrenamiento SFT | no disponible | 1,6365 |
+| Etapa | Loss validación antes | Loss validación después | Notas |
+|---|---:|---:|---|
+| CPT | 4,1013 | 1,6447 | Última ejecución reanudada; 57.446 pasos |
+| SFT (Human sensitivity) | 1,9337 | 1,5661 | Train loss 1,6365; 1 época, 1.210 pasos |
+
+Evolución de la loss de validación en CPT: 1,8482 (paso 10.000), 1,7476 (20.000), 1,6977 (30.000), 1,6696 (40.000), 1,6514 (50.000), 1,6447 (final). En SFT: 1,6610 (250), 1,6135 (500), 1,5876 (750), 1,5711 (1.000), 1,5661 (final).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 505 MiB con Q4_K_M; en torno a 1,41 GiB con F16 o BF16 (más overhead del runtime).
-- GPU recomendadas: cualquier GPU consumer moderna con al menos 2 GB de VRAM puede ejecutar las versiones cuantizadas; para F16/BF16 conviene disponer de 2-4 GB. No requiere A100 ni H100.
-- Cabe en GPU consumer: sí, en tarjetas de gama baja y media (por ejemplo, series GTX/RTX con 2 GB o más) y también en CPU mediante llama.cpp.
-- Opciones de despliegue: LM Studio, llama.cpp y cualquier runtime compatible con GGUF; los pesos safetensors permiten su uso con frameworks de Hugging Face. El autor no documenta vLLM ni TGI para este modelo.
+- VRAM estimada para inferencia: Q4_K_M ocupa aproximadamente 505 MiB en disco; F16 y BF16 ocupan alrededor de 1,41 GiB cada uno. La VRAM necesaria en ejecución es del mismo orden más el overhead del runtime.
+- GPU recomendadas: cualquier GPU consumer con al menos 2-3 GB de VRAM libre para Q4_K_M; para F16/BF16 se recomienda al menos 4 GB. Modelos como RTX 3060, RTX 4060, RTX 4090 o superiores son más que suficientes. También funciona en CPU.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU dedicada moderna e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: LM Studio (F16 y Q4_K_M verificados en GPU; BF16 verificado en llama.cpp CPU), llama.cpp, y cualquier runtime compatible con GGUF. No se documenta soporte verificado para vLLM o TGI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| TABIS 1.1 0.8B | 752 M | 1024 | sajá, ruso | Apache 2.0 | Ajuste experimental para sajá; sin benchmarks publicados |
-| Qwen3.5-0.8B (base) | ~0,8 B | no disponible | multilingüe (sin foco en sajá) | no disponible en la informacion | Modelo base del que deriva TABIS; mayor cobertura general pero sin adaptación al sajá |
-| Alternativas dedicadas al sajá | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de otros modelos abiertos comparables en la información proporcionada |
+| TABIS 1.1 0.8B | 752 M | 1024 (entrenamiento) | sah, ru | Apache 2.0 | Ajuste específico para sajá; experimental |
+| Qwen3.5-0.8B (base) | ~0,8 B | No disponible | Multilingüe (sin sajá específico) | No disponible en la información | Modelo de partida; mayor cobertura general pero sin adaptación a sajá |
+| Otros ajustes para lenguas de bajos recursos del mismo tamaño | No disponible | No disponible | No disponible | No disponible | No se dispone de comparativas publicadas en la información |
+
+No se dispone de datos de benchmarks que permitan comparar rendimiento entre estos modelos. La comparación se limita a parámetros, contexto, idiomas y licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental e incompleto: el propio autor lo describe como un resultado intermedio, no como una versión final.
-- Riesgo alto de alucinación: puede inventar con seguridad datos biográficos e históricos; en la prueba del autor no identificó el Ysyakh como gran fiesta veraniega del pueblo sajá.
-- Respuestas incoherentes, evasivas o repetitivas, confusión de personas gramaticales y errores en matemáticas y lógica.
-- Calidad lingüística no validada por hablantes nativos ni mediante un YakutEval completo; las comparaciones previas se hicieron en parte con GigaChat, que también puede equivocarse en sajá.
-- Contexto limitado a 1024 tokens, insuficiente para documentos largos o conversaciones extensas.
-- Cobertura de idiomas reducida a sajá y ruso; no es un modelo multilingüe general.
-- El autor recomienda desactivar el modo thinking; su uso sin desactivarlo puede degradar la generación.
-- Las respuestas pueden diferir entre el sitio web, los GGUF y las distintas cuantizaciones.
-- Licencia Apache 2.0 permite uso comercial, pero la calidad y fiabilidad del modelo no están garantizadas para producción sin verificación humana.
-- No debe usarse como fuente de hechos sin comprobación adicional en contextos donde la precisión sea crítica.
+- Modelo declarado explícitamente como experimental e inacabado por el autor; no apto para producción sin validación adicional.
+- Riesgo alto de alucinación en datos biográficos e históricos: el autor documenta que el modelo inventa hechos con seguridad. En su prueba no identificó Ysyakh como la gran festividad veraniega sajá.
+- Respuestas incoherentes, evasión de la pregunta, repeticiones y confusión de personas gramaticales observadas por el autor.
+- Rendimiento deficiente en matemáticas y tareas lógicas.
+- Contexto de entrenamiento limitado a 1024 tokens, lo que restringe conversaciones largas y documentos extensos.
+- Evaluación insuficiente: no hay evaluación independiente por hablantes nativos ni YakutEval completo; parte de las comparaciones se hicieron con GigaChat, que también puede errar en sajá.
+- Los siete ejemplos corregidos por humanos en entrenamiento no implican que el conjunto de datos esté revisado por personas.
+- Posibles diferencias de comportamiento entre el sitio web, los GGUF y las distintas cuantizaciones.
+- El modo "thinking" debe desactivarse según recomendación del autor; dejarlo activo puede degradar la experiencia.
+- Licencia Apache 2.0 permite uso comercial, pero la calidad factual no está garantizada; cualquier despliegue comercial exigiría verificación humana y probablemente un ajuste adicional.
+- No se documentan sesgos específicos más allá de los derivados del corpus y del modelo base; no disponibles.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tabisai/tabis-1.1-experimental
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Dataset de CPT: https://huggingface.co/datasets/ailabykt/sakha-corpus-mono
-- Dataset de diálogos: https://huggingface.co/datasets/tabisai/tabis-sakha-dialogues-7500
-- Logs de entrenamiento CPT: `evaluation/cpt_training_metrics_resumed.json` (en el repositorio del modelo)
-- Logs de entrenamiento SFT: `evaluation/sft_training_metrics.json` (en el repositorio del modelo)
+- Dataset CPT: https://huggingface.co/datasets/ailabykt/sakha-corpus-mono
+- Dataset SFT: https://huggingface.co/datasets/tabisai/tabis-sakha-dialogues-7500
+- Métricas CPT: `evaluation/cpt_training_metrics_resumed.json` (en el repositorio del modelo)
+- Métricas SFT: `evaluation/sft_training_metrics.json` (en el repositorio del modelo)

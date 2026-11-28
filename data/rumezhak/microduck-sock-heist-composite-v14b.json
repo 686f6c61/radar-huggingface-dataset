@@ -1,0 +1,56 @@
+{
+  "schema": 2,
+  "id": "rumezhak/microduck-sock-heist-composite-v14b",
+  "slug": "rumezhak-microduck-sock-heist-composite-v14b",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-sock-heist-composite-v14b",
+  "created_at": "2026-11-27T23:13:47.000Z",
+  "updated_at": "2026-11-27T23:14:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-arena",
+    "robotics",
+    "base_model:rumezhak/microduck-sock-heist-composite-v13",
+    "base_model:finetune:rumezhak/microduck-sock-heist-composite-v13",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1211216,
+  "storage_human": "1 MB",
+  "context_length": null,
+  "base_model": "rumezhak/microduck-sock-heist-composite-v13",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeTransfer | Send Large Files Fast",
+      "url": "https://wetransfer.com/?msockid=0582082b2753688621371035261969fb",
+      "snippet": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today …"
+    },
+    {
+      "title": "Where to find your invoice or payment receipt — WeTransfer",
+      "url": "https://wetransfer.com/help-center/subscriptions/find-invoice?msockid=0582082b2753688621371035261969fb",
+      "snippet": "May 30, 2026 · How to find and download WeTransfer subscription receipts from Account Settings > Plan and Payment > Receipts."
+    }
+  ]
+}

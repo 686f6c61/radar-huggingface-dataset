@@ -2,93 +2,96 @@
 
 ## Resumen
 
-Ministral-3-14B-Instruct-2512-Tensix-BFP4-MLP es una cuantizacion del modelo de lenguaje Ministral 3 14B Instruct (version 2512) de Mistral AI, preparada por Xylolabs para su despliegue en aceleradores NPU de Tenstorrent (arquitecturas Tensix como Wormhole y Blackhole). El checkpoint conserva unicamente la torre de texto del modelo original (se elimina el tower de vision y su proyector) y reescribe las capas lineales en formatos de bloque de coma flotante nativos de la libreria TT-NN: `bfloat4_b` (BFP4) para las proyecciones MLP y `bfloat8_b` (BFP8) para las proyecciones de atencion. Los tensores se almacenan en bf16, pero cada valor ya esta ajustado a la rejilla BFP correspondiente, de modo que el hardware Tensix los empaqueta sin re-redondeo adicional.
+Ministral-3-14B-Instruct-2512-Tensix-BFP4-MLP es una cuantizacion del modelo Mistral Ministral-3-14B-Instruct-2512-BF16, publicada por Xylolabs y optimizada especificamente para aceleradores Tenstorrent Tensix (Wormhole y Blackhole). El modelo base es un transformer denso de 13.506.073.600 parametros orientado a generacion de texto e instrucciones, con soporte para once idiomas. La aportacion de esta variante no es un modelo nuevo, sino un formato de pesos empaquetado en block floating point (bfloat4_b y bfloat8_b) compatible con el runtime tt-metal y ttnn de Tenstorrent.
 
-El modelo base tiene 13.506.073.600 parametros (aproximadamente 13,5 mil millones) y esta disenado para generacion de texto conversacional multilingue en once idiomas (ingles, frances, espanol, aleman, italiano, portugues, neerlandes, chino, japones, coreano y arabe). La cuantizacion resultante ocupa 10,58 GB empaquetados, con una media de 6,26 bits por peso, lo que reduce a aproximadamente la mitad el espacio frente a los 27 GB del repositorio original en BF16.
+El problema que resuelve es la falta de pesos pre-cuantizados y listos para usar en hardware Tensix: en lugar de convertir manualmente un checkpoint BF16, el repositorio ofrece carpetas separadas con distintas combinaciones de precision (BFP4 en las capas MLP y BFP8 en atencion, o BFP8 en ambas), junto con scripts de empaquetado y verificacion. Esto reduce el tamano de 27,01 GB en BF16 a 10,576 GB en la variante text-bfp4, manteniendo una divergencia controlada respecto al original.
 
-La relevancia de esta ficha reside en que se trata de un artefacto de despliegue especializado: no es un modelo nuevo ni un fine-tune, sino una conversion de precision orientada a inferencia en silicio Tenstorrent. Xylolabs documenta que la validacion se realizo con ttnn 0.81.1 sobre el simulador Blackhole (`ttsim`), no sobre hardware fisico, y que la integracion con tt-transformers se probo en una unica Blackhole P150. Es, por tanto, un checkpoint util para quien trabaje con el stack tt-metal/ttnn y quiera evaluar Ministral 3 14B en NPUs Tensix con requisitos de memoria reducidos.
+Es relevante ahora porque el ecosistema de NPUs de Tenstorrent esta creciendo y necesita artefactos de pesos verificables. El autor documenta la calidad de la cuantizacion mediante divergencia KL sobre 12.104 posiciones de texto en ingles y coreano, con un limite de 1,5 veces la referencia Q4_K_M de llama.cpp. La licencia es Apache 2.0, igual que el modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Ministral 3, `Ministral3ForCausalLM`, solo torre de texto) |
-| Parametros totales | 13.506.073.600 (~13,5 mil millones) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el model card menciona escalado de query de Ministral 3 por encima de 16.384 tokens) |
-| Tipos de cuantizacion | BFP4 (`bfloat4_b`) en MLP gate/up/down; BFP8 (`bfloat8_b`) en atencion q/k/v/o; bf16 en LM head, embeddings y normalizaciones; media de 6,26 bits por peso |
+| Arquitectura | Transformer denso (modelo base Mistral Ministral-3-14B-Instruct-2512); cuantizacion block floating point para Tensix |
+| Parametros totales | 13.506.073.600 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | text-bfp4 (MLP bfloat4_b, atencion bfloat8_b, resto bf16); text-bfp8 (atencion y MLP bfloat8_b, resto bf16); referencia BF16; referencia Q4_K_M (llama.cpp) |
 | Idiomas soportados | en, fr, es, de, it, pt, nl, zh, ja, ko, ar |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (almacenados en bf16, valores ya en rejilla BFP4/BFP8), mas `quant4.json` e `model.safetensors.index.json` |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (block floating point bfloat4_b/bfloat8_b, empaquetado para ttnn); indice model.safetensors.index.json; metadatos en quant4.json |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint deriva directamente de `mistralai/Ministral-3-14B-Instruct-2512-BF16`, un transformer decoder-only de Mistral AI con 40 capas (segun el desglose de tensores del model card: "attention q, k, v, o (40 layers)" y "MLP gate, up, down (40 layers)"). Xylolabs no entrena ni ajusta el modelo: aplica cuantizacion post-entrenamiento. Las proyecciones MLP (`gate_proj`, `up_proj`, `down_proj`) se redondean a `ttnn.bfloat4_b` mediante GPTQ con busqueda de exponente por bloque, calibrado sobre 65.536 tokens de WikiText-2 y Wikipedia en coreano. Las proyecciones de atencion (`q_proj`, `k_proj`, `v_proj`, `o_proj`) se redondean a `ttnn.bfloat8_b` por redondeo al vecino mas cercano. El resto de tensores (LM head, embeddings, normas) permanece en bf16 como en el modelo base.
+El modelo base es un transformer denso de Mistral con 13,5 mil millones de parametros, afinado para instrucciones (variante Instruct con fecha 2512). No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en el modelo base. La torre de vision y su proyector se han eliminado en esta exportacion, por lo que el artefacto es exclusivamente de texto.
 
-La innovacion tecnica principal es el formato de bloque de coma flotante (block floating point, BFP): TT-NN interpreta los pesos como matrices `[in, out]` y los empaqueta directamente en la rejilla BFP4/BFP8 sin aplicar un segundo redondeo, lo que evita deriva numerica acumulada. El model card indica que los mismos valores tambien se empaquetan de forma exacta en `ttnn.bfloat8_b`. Se documentan scripts de verificacion (`pack_tensix.py` y `verify_grid.py`) que comprueban matriz a matriz que ningun valor cambia tras el empaquetado, opcionalmente con ida y vuelta por DRAM del dispositivo. No se proporcionan datos sobre el proceso de entrenamiento original de Mistral (numero de tokens, composicion del dataset, RLHF/DPO), por lo que esos detalles quedan como no disponibles en esta informacion.
+La innovacion tecnica de esta variante es el esquema de cuantizacion en block floating point (BFP) propio de Tensix. Los pesos se almacenan como bfloat4_b o bfloat8_b, formatos nativos de ttnn, y se distribuyen con scripts `pack_tensix.py` y `verify_grid.py` que permiten empaquetar matrices y verificar el round-trip contra los valores originales. La carpeta text-bfp4 aplica BFP4 solo a las proyecciones MLP y BFP8 a la atencion, mientras que text-bfp8 usa BFP8 en ambas. El autor mide la fidelidad con divergencia KL media frente a BF16 sobre WikiText-2 y Wikipedia en coreano, en texto plano y con plantilla de chat.
 
 ## Capacidades
 
-- Generacion de texto conversacional multilingue en once idiomas (en, fr, es, de, it, pt, nl, zh, ja, ko, ar).
-- Razonamiento e instruccion conversacional heredados del modelo Instruct 2512 de Mistral AI (capacidades especificas del base no detalladas en la informacion disponible).
-- Inferencia en NPUs Tenstorrent Tensix (Wormhole, Blackhole) mediante TT-NN, con soporte de los formatos BFP4/BFP8 nativos del hardware.
-- Integracion con tt-transformers (tt-metal v0.81.1) para demo de texto en una Blackhole P150, con opcion `--use_hf_rope`.
-- Compatibilidad con `transformers` y `AutoModelForCausalLM` en GPU/CPU convencionales para inspeccion y validacion numerica.
-- Solo texto: la torre de vision y su proyector han sido eliminados del checkpoint.
-- Tool calling, function calling, modo thinking, audio y otras capacidades especiales: no disponibles en la informacion proporcionada.
+- Generacion de texto e instrucciones en once idiomas (ingles, frances, espanol, aleman, italiano, portugues, neerlandes, chino, japones, coreano y arabe).
+- Razonamiento y respuesta a instrucciones heredados del modelo base Ministral-3-14B-Instruct.
+- Generacion de codigo y matematicas: capacidad esperable del modelo base, aunque no se documentan benchmarks especificos en esta ficha.
+- Soporte de plantilla de chat (`apply_chat_template`) para conversaciones multi-turno.
+- Inferencia en hardware Tenstorrent Tensix mediante tt-metal v0.81.1 y ttnn, con configuraciones de precision por capa (`precision_cfg`, `fidelity_cfg`).
+- Ejecucion alternativa en transformers con `device_map="auto"` y dtype bfloat16 (los pesos empaquetados se descomprimen a bf16).
+- No incluye vision: la torre de vision y el proyector fueron eliminados en esta exportacion.
 
 ## Casos de uso
 
-- Despliegue en NPUs Tenstorrent: cargar el checkpoint en Wormhole o Blackhole mediante TT-NN para servir generacion de texto con huella de memoria de 10,58 GB empaquetados, aproximadamente la mitad del modelo BF16 original. Adecuado para entornos que ya operan el stack tt-metal y buscan reducir presion de DRAM.
-- Validacion numerica de pipelines de cuantizacion: usar `pack_tensix.py` y `verify_grid.py` para comprobar, matriz a matriz, que el empaquetado BFP4/BFP8 no altera ningun valor antes de desplegar en produccion.
-- Investigacion en formatos de bloque de coma flotante: comparar el impacto de GPTQ con busqueda de exponente por bloque frente al redondeo al vecino mas cercano en BFP8, usando el mismo modelo base como referencia.
-- Prototipado en simulador: ejecutar el checkpoint con ttnn 0.81.1 sobre `ttsim` (simulador Blackhole) para desarrollar kernels o rutinas de inferencia sin disponer de hardware fisico.
-- Asistente conversacional multilingue en entornos con restricciones de memoria: al conservar los once idiomas del base y ocupar 10,58 GB, encaja en despliegues donde el BF16 de 27 GB no cabe en la memoria disponible del acelerador.
-- Benchmarking de precision mixta: medir la degradacion de calidad al pasar MLP a BFP4 manteniendo atencion en BFP8, con el checkpoint BF16 de Mistral como linea base.
-- Integracion en tt-forge (tt-xla): el model card indica que aun no se ha ejecutado con este checkpoint, por lo que serviria como caso de prueba pendiente para el equipo que trabaje con esa ruta.
+- Despliegue en aceleradores Tenstorrent Wormhole o Blackhole: el modelo esta empaquetado en formatos nativos bfloat4_b y bfloat8_b, por lo que se puede cargar directamente en ttnn sin conversion manual, reduciendo el espacio en DRAM a 10,576 GB en la variante BFP4.
+- Servicio de generacion de texto multiidioma en produccion: al cubrir once idiomas, puede atender consultas en espanol, frances, aleman o arabe con un unico checkpoint, simplificando el mantenimiento de un solo pipeline.
+- Asistentes conversacionales con plantilla de chat: el modelo soporta `apply_chat_template`, lo que permite construir dialogos multi-turno y desplegarlos tanto en transformers como en el runtime de Tenstorrent.
+- Evaluacion comparativa de precision de cuantizacion: los scripts `pack_tensix.py` y `verify_grid.py` permiten reproducir el empaquetado y verificar que los pesos empaquetados coinciden con los originales, util para validar pipelines de cuantizacion en CI.
+- Investigacion en eficiencia de hardware: la separacion entre text-bfp4 y text-bfp8, con divergencias KL de 0,01849 y 0,00046 respectivamente, permite estudiar el compromiso entre tamano y fidelidad en NPUs Tensix.
+- Prototipado en entornos con memoria limitada: la variante BFP4 (10,576 GB) frente a BF16 (27,01 GB) facilita ejecutar el modelo en dispositivos con DRAM reducida, manteniendo una calidad cercana a la referencia Q4_K_M (KL 0,01473).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model card incluye una tabla de evaluacion truncada (columnas "Bits a weight" y "Size (GB)" sin filas de resultados), por lo que no hay cifras de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta divergencia KL media frente a BF16:
+
+| Variante | Tamano empaquetado (GB) | KL media a BF16 |
+|---|---|---|
+| text-bfp4 | 10,576 | 0,01849 |
+| text-bfp8 | 15,609 | 0,00046 |
+| BF16 (referencia) | 27,01 | 0 |
+| Q4_K_M (llama.cpp, referencia) | 8,239 | 0,01473 |
+
+La medicion cubre 12.104 posiciones de texto en ingles (WikiText-2 test) y coreano (Wikipedia coreana), en texto plano y con plantilla de chat, con un limite de KL media de 1,5 veces la referencia Q4_K_M.
 
 ## Requisitos de hardware
 
-- Huella de pesos empaquetados: 10,58 GB (media de 6,26 bits por peso); el repositorio ocupa 27,0 GB porque los tensores se almacenan en bf16.
-- NPUs objetivo: Tenstorrent Tensix, arquitecturas Wormhole y Blackhole (el model card cita explicitamente Blackhole P150 para tt-transformers).
-- Validacion realizada con ttnn 0.81.1 sobre `ttsim` (simulador Blackhole), no sobre hardware fisico.
-- Inferencia en GPU convencional: posible mediante `transformers` con `dtype="bfloat16"` y `device_map="auto"`; la VRAM necesaria no se detalla en la informacion disponible, pero el repositorio completo pesa 27,0 GB.
-- Opciones de despliegue documentadas: TT-NN (ttnn), tt-transformers (tt-metal v0.81.1) y, pendiente de prueba, tt-forge (tt-xla). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. El model card referencia un demo de rendimiento con `batch-1` y una configuracion de precision concreta (`ff1_3: bfp4, ff2: bfp4, wqkv: bfp8, wo: bfp8, kv_cache: bfp8, activation: mixed`), pero sin cifras publicadas.
+- VRAM/DRAM estimada: 10,576 GB para text-bfp4, 15,609 GB para text-bfp8 y 27,01 GB para BF16 (tamanos empaquetados reportados por el autor).
+- Hardware objetivo: aceleradores Tenstorrent Tensix Wormhole y Blackhole, con tt-metal v0.81.1 y el flag `--use_hf_rope`.
+- GPU convencionales: la model card muestra un ejemplo en transformers con `device_map="auto"` y dtype bfloat16, lo que requiere aproximadamente el tamano BF16 en memoria; no se documentan requisitos especificos para consumer GPU.
+- Opciones de despliegue: tt-metal/tt-transformers (demo `simple_text_demo.py`), transformers con safetensors, y referencia Q4_K_M para llama.cpp.
+- Latencia y throughput: no disponibles en la informacion proporcionada; la model card menciona un test de rendimiento batch-1 sin cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xylolabs/Ministral-3-14B-Instruct-2512-Tensix-BFP4-MLP | 13,5 B | No disponible | BFP4 MLP + BFP8 atencion, 6,26 bits/peso, 10,58 GB | Apache-2.0 | Hugging Face, solo texto, orientado a Tensix |
-| mistralai/Ministral-3-14B-Instruct-2512-BF16 | 13,5 B | No disponible | BF16 | Apache-2.0 | Hugging Face, modelo base con torre de vision |
-| Otros modelos de ~14 B de Mistral AI | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Xylolabs Ministral-3-14B-Instruct-2512-Tensix-BFP4-MLP | 13,5 B | no disponible | BFP4/BFP8 para Tensix | Apache 2.0 | Hugging Face |
+| mistralai/Ministral-3-14B-Instruct-2512-BF16 (base) | 13,5 B | no disponible | BF16 | Apache 2.0 | Hugging Face |
+| Referencia Q4_K_M (llama.cpp) | 13,5 B | no disponible | Q4_K_M | Apache 2.0 (heredada) | Hugging Face |
 
-No se dispone en la informacion proporcionada de datos de rendimiento que permitan comparar calidad entre el checkpoint cuantizado y el base, ni de alternativas de terceros con especificaciones verificables.
+No se dispone de datos de benchmarks que permitan comparar rendimiento cualitativo con otras alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Solo texto: la torre de vision y su proyector han sido eliminados, por lo que el checkpoint no puede procesar imagenes.
-- La validacion se hizo en simulador (`ttsim`), no en hardware Tensix fisico; el comportamiento real en Wormhole o Blackhole no esta confirmado por el autor.
-- tt-transformers requiere `--use_hf_rope`; sin el, el QKV fusionado se re-redondea y los resultados divergen.
-- El demo de tt-transformers empaqueta la LM head en bfloat8_b, por lo que la cabeza no es exacta en esa ruta.
-- tt-transformers no aplica el escalado de query de Ministral 3 por encima de 16.384 tokens, de modo que las salidas largas difieren de la referencia.
-- tt-forge (tt-xla) no se ha ejecutado con este checkpoint.
-- Riesgo de alucinacion y sesgos: inherentes al modelo base; no se documentan evaluaciones de sesgo ni de factualidad en esta informacion.
-- La cuantizacion BFP4 en MLP puede degradar calidad respecto al BF16 original; el autor no publica mediciones de esa perdida.
-- Licencia Apache-2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base de Mistral AI y de las dependencias de Tenstorrent.
-- El repositorio ocupa 27,0 GB frente a 10,58 GB empaquetados; planificar el almacenamiento segun el formato de carga.
+- La cuantizacion introduce perdida de fidelidad: la variante BFP4 presenta una KL media de 0,01849, superior a la referencia Q4_K_M (0,01473), aunque dentro del limite declarado de 1,5 veces dicha referencia.
+- El modelo no incluye torre de vision ni proyector; no admite entradas de imagen.
+- No se documentan sesgos conocidos ni tasas de alucinacion en la informacion proporcionada.
+- La longitud de contexto no se especifica en la ficha; debe consultarse la model card del modelo base antes de usarlo en produccion con ventanas largas.
+- Los pesos estan pensados para Tensix; usarlos en GPU requiere descomprimir a bf16 via transformers, perdiendo la ventaja de tamano.
+- La licencia Apache 2.0 hereda la restriccion del modelo base: no se debe usar el modelo de forma que infrinja derechos de terceros, incluidos derechos de propiedad intelectual.
+- El repositorio no incluye un archivo LICENSE del modelo base; el autor aporta el texto estandar de Apache 2.0 y un NOTICE con los cambios.
+- El modelo fue creado el 2026-11-11 y actualizado el 2026-11-27, fusionando las variantes BFP4 y BFP8 en un unico repositorio; verificar rutas de carpetas al integrar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Xylolabs/Ministral-3-14B-Instruct-2512-Tensix-BFP4-MLP
+- Hugging Face: https://huggingface.co/Xylolabs/Ministral-3-14B-Instruct-2512-Tensix-BFP4-MLP
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-BF16
-- Repositorio de codigo (tensix-bfp-gptq): https://github.com/XylolabsInc/tensix-bfp-gptq
+- Codigo de cuantizacion: https://github.com/XylolabsInc/tensix-bfp-gptq
 - Documentacion de Tenstorrent: https://docs.tenstorrent.com
-- tt-metal (rama v0.81.1): https://github.com/tenstorrent/tt-metal
-- Assets de Xylolabs: https://raw.githubusercontent.com/XylolabsInc/tensix-bfp-gptq/main/assets/xylolabs-lockup.svg
-- Licencia del checkpoint: https://huggingface.co/Xylolabs/Ministral-3-14B-Instruct-2512-Tensix-BFP4-MLP/blob/main/LICENSE
+- tt-metal (v0.81.1): https://github.com/tenstorrent/tt-metal

@@ -2,50 +2,50 @@
 
 ## Resumen
 
-Critters es una coleccion de modelos de lenguaje de tamano minusculo publicada por el usuario schizophyllume en Hugging Face, concebida como el "cerebro" de las criaturas artificiales que habitan el proyecto critters.garden, un jardin simulado en el navegador donde cada bicho (abejas, hormigas, aranas, caracoles, lombrices, mariquitas, mariposas, cochinillas y una rana) mantiene conversaciones con el visitante. El repositorio agrupa varias arquitecturas y escalas: desde el modelo base de 12M de parametros (11.965.760) entrenado con TinyStories, hasta cerebros de colonia con enlaces de atencion cruzada ("neuralese") entre una reina y obreras compartidas, pasando por trece modelos conversacionales de 12M con personalidad propia. El checkpoint principal asociado al ID del repo es un modelo de 6.528.896 parametros en formato safetensors y GGUF.
+`schizophyllume/critters` es un repositorio que agrupa los cerebros de los agentes artificiales del proyecto critters.garden, un jardin de criaturas con IA que viven en el navegador. No se trata de un unico modelo, sino de una coleccion de modelos de lenguaje extremadamente pequenos (entre 4,45 M y 54,2 M de parametros) entrenados desde cero o mediante fine-tuning para dar personalidad y comportamiento a insectos y otros animales virtuales: una colmena de abejas, una colonia de hormigas y trece criaturas conversacionales (aranas, caracoles, mariquitas, mariposas, una rana, etc.).
 
-El modelo resuelve un problema muy concreto: dotar de una "mente" ligera, ejecutable en llama.cpp y en el navegador, a agentes simulados que necesitan mantener un personaje coherente, reaccionar a estimulos del entorno y responder a un interlocutor humano sin requerir infraestructura de servidor. No compite con los LLM generalistas: es un modelo de juguete (tag `toy-model`, `tiny`) pensado para investigacion creativa, simulacion multiagente y experimentacion con arquitecturas de comunicacion entre agentes.
+El modelo principal registrado en Hugging Face, con 6.528.896 parametros segun los pesos safetensors, corresponde a `AntLLM-Colony`: una colonia de hormigas negras de jardin compuesta por una reina (4,26 M), un cerebro de obrera compartido (1,38 M) y un enlace de tres etapas (0,89 M) enmascarado por contacto. La innovacion tecnica central del proyecto es que los miembros de una colonia no intercambian palabras, sino estados ocultos a traves de un enlace aprendido denominado "neuralese".
 
-Su relevancia actual radica en el interes por los sistemas multiagente de bajo coste y por las arquitecturas de "mente compartida" donde varios agentes intercambian estados ocultos en lugar de texto. La licencia Apache 2.0 y la disponibilidad en GGUF lo hacen facilmente reproducible, aunque su utilidad practica fuera del jardin es muy limitada.
+El proyecto es relevante como ejemplo de investigacion abierta sobre inteligencia de enjambre y modelos multiagente a escala juguete. Todos los pesos se distribuyen en formato GGUF y safetensors bajo licencia Apache 2.0, lo que permite ejecutarlos en llama.cpp y estudiarlos sin restricciones. El repositorio acumula 2.656 descargas y 3,2 GB de tamano total, e incluye versiones historicas de cada cerebro.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Varias: `llama` (critters conversacionales y garden base), `beehive` (colmena), `anthill` (colonia de hormigas) |
-| Parametros totales | 6.528.896 (checkpoint principal del repo); garden base y critters de 12M: 11.965.760; BeeLLM-Hive: 54,2M; BeeLLM-Hive-small: 4,45M; AntLLM-Colony: 6,53M |
-| Parametros activos | No aplica (no es MoE); en las colonias, la reina y la obrera compartida se describen por separado: BeeLLM-Hive 50,1M reina + 2,95M obrera + 1,09M enlaces; AntLLM-Colony 4,26M reina + 1,38M obrera + 0,89M enlaces |
+| Arquitectura | Coleccion heterogenea: `anthill` (AntLLM-Colony), `beehive` (BeeLLM-Hive), `llama` (critters de 12M y garden base) |
+| Parametros totales | 6.528.896 (AntLLM-Colony, pesos safetensors); el conjunto del repositorio abarca desde 4,45 M hasta 54,2 M |
+| Parametros activos | No aplica (no es MoE); AntLLM-Colony se descompone en reina 4,26 M + obrera compartida 1,38 M + enlaces 0,89 M |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | f16 (colmenas y hormigas), f32 (garden base y critters de 12M); no se documentan otras cuantizaciones |
+| Tipos de cuantizacion | GGUF en f16 y f32; garden base en safetensors f32; no se documentan cuantizaciones de menor precision (Q4, Q8, etc.) |
 | Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (f32) y GGUF (f16/f32) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no contiene un unico modelo sino una familia. Los "critters conversacionales" (Petal, Mabel, Scurry, Indigo, Pilot, Noodle, Dotty, Marmalade, Lemon, Velvet, Dusty, Roly y Froggert) son transformers tipo `LlamaForCausalLM` de 11.965.760 parametros, entrenados desde cero sobre un corpus escrito por agentes de lenguaje, siguiendo el mismo procedimiento que Scintilla 2.0 12M (BeeLLM-12M-Mood). Segun la model card, la version 2.x se entreno con aproximadamente 100.000 conversaciones orientadas a responder a lo que el usuario dice y hace, y despues se ajusto finamente para interpretar los "sentidos" del jardin expresados de multiples formas. El "garden base" es un modelo de 12M preentrenado con TinyStories que sirve como punto de partida opcional; los critters v0 se afinaron a partir de el.
+El repositorio combina varias arquitecturas. `AntLLM-Colony` emplea la arquitectura `anthill`, que consta de una reina, un cerebro de obrera compartido por todas las hormigas y un enlace de tres etapas enmascarado por contacto: la informacion circula por la colonia solo cuando una hormiga toca a otra, de modo que las noticias se propagan paso a paso. `BeeLLM-Hive` usa la arquitectura `beehive`, con una reina preentrenada en TinyStories, un cerebro de obrera compartido y un enlace de atencion cruzada de dos etapas; en este caso las abejas leen los estados ocultos de las demas a traves de "neuralese", nunca sus palabras. Las variantes `BeeLLM-Hive-small` y `BeeLLM-Hive-Somnia` reproducen el esquema con distintos tamanos y reglas de juego; en Somnia la reina son los pesos congelados de Sauers' Somnia.
 
-Las arquitecturas de colonia son la innovacion tecnica mas destacable. BeeLLM-Hive usa la arquitectura `beehive`: una reina preentrenada con TinyStories, un cerebro de obrera compartido por todas las obreras y un enlace de atencion cruzada en dos etapas que permite a los agentes leer los estados ocultos de los demas ("neuralese") en lugar de sus palabras. AntLLM-Colony usa `anthill`: reina, obrera compartida y un enlace de tres etapas enmascarado por el tacto, de modo que la informacion solo se propaga cuando los agentes se tocan fisicamente en la simulacion. No se documentan detalles sobre volumen total de tokens de entrenamiento, composicion exacta del dataset, ni uso de RLHF o DPO.
+Los trece critters conversacionales son modelos de 11.965.760 parametros con arquitectura `llama`, entrenados desde cero al estilo de Scintilla 2.0 12M (BeeLLM-12M-Mood) sobre un corpus escrito por agentes de lenguaje. La version 2.x se entreno con aproximadamente 100.000 conversaciones orientadas a responder a lo que el visitante dice y hace, seguidas de un fine-tuning para reconocer los sentidos del jardin en multiples formulaciones. El `garden base` es un modelo de 12M preentrenado en TinyStories (ingles simple mas vocabulario del jardin y el formato de chat de los critters), concebido como punto de partida opcional; los critters v0 se afinaron a partir de el.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles con personalidad consistente (estado de animo, nombre y peculiaridad por criatura).
-- Interpretacion de estimulos del entorno ("sentidos del jardin") reformulados de muchas maneras distintas, gracias al ajuste fino especifico.
-- Simulacion de rutinas diarias de un agente dentro de un jardin (comportamiento guionizado por el propio modelo).
-- Comunicacion entre agentes mediante estados ocultos compartidos en las arquitecturas de colmena y colonia.
-- Propagacion de informacion restringida por contacto fisico en AntLLM-Colony (enlace enmascarado por tacto).
-- Ejecucion local en llama.cpp con plantilla de chat incluida en el GGUF.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio, razonamiento matematico ni modo "thinking".
+- Generacion de texto conversacional en ingles a escala muy reducida (modelos de 12M).
+- Simulacion de personalidad: cada critter tiene estado de animo, nombre y peculiaridad propios.
+- Respuesta a visitantes dentro de un jardin simulado, combinando actuacion del dia a dia con conversacion.
+- Comunicacion multiagente mediante estados ocultos aprendidos (neuralese) en las colonias de abejas.
+- Propagacion de informacion por contacto en la colonia de hormigas, con enlace de tres etapas.
+- Ejecucion local en llama.cpp a partir de GGUF con plantilla de chat incluida.
+- No se documentan capacidades de tool calling, razonamiento multi-paso, vision, audio ni thinking mode.
 
 ## Casos de uso
 
-- Simulacion de agentes conversacionales en el navegador: cada critter de 12M se ejecuta en llama.cpp o via WASM para responder al visitante de critters.garden manteniendo su personaje, sin coste de servidor.
-- Investigacion sobre comunicacion entre agentes: BeeLLM-Hive permite estudiar el intercambio de estados ocultos ("neuralese") frente a la comunicacion por texto, con un modelo de 54,2M que cabe en cualquier equipo.
-- Estudio de propagacion de informacion con restricciones fisicas: AntLLM-Colony modela como una noticia recorre la colonia solo mediante contactos sucesivos, util para experimentos de teoria de redes.
-- Prototipado rapido de chatbots con personalidad: los trece critters sirven como plantilla para crear personajes con voz propia a partir de un corpus sintetico, con un coste de entrenamiento minimo.
-- Educacion y divulgacion: el garden base entrenado con TinyStories es un ejemplo didactico de preentrenamiento y ajuste fino de un LLM de 12M paso a paso.
-- Pruebas de integracion con llama.cpp y despliegues embebidos: los GGUF de 45,7 MB permiten validar pipelines de inferencia en dispositivos de bajos recursos o en el navegador.
-- Arte generativo y experiencias interactivas: instalaciones donde varias criaturas con mentes independientes reaccionan a un visitante y entre si.
+- Simulacion de enjambre en el navegador: critters.garden usa estos cerebros para que cada criatura actue de forma autonoma y coherente con su especie, con modelos de 12M que caben en el cliente.
+- Investigacion sobre comunicacion multiagente: AntLLM-Colony y BeeLLM-Hive permiten estudiar como emerge un canal de estados ocultos ("neuralese") frente a un canal por contacto, con tamanos que se entrenan en una sola GPU.
+- Prototipado de agentes conversacionales con personalidad: los trece critters sirven como base ligera para experimentar con plantillas de chat y estados de animo sin coste de inferencia apreciable.
+- Educacion y divulgacion: el garden base, preentrenado en TinyStories, es un punto de partida didactico para explicar preentrenamiento y fine-tuning en modelos de 12M.
+- Pruebas de despliegue en llama.cpp: los GGUF con plantilla de chat incluida permiten validar pipelines de inferencia local y comparar f16 frente a f32.
+- Arte generativo y experiencias interactivas: las personalidades fijas (Petal, Mabel, Pilot, etc.) pueden integrarse en instalaciones o demos web que requieran personajes con voz propia.
+- Reproducibilidad de experimentos: el repositorio conserva todas las versiones historicas de cada cerebro, lo que facilita replicar resultados de cada "game" o "run".
 
 ## Benchmarks y rendimiento
 
@@ -53,36 +53,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB para todos los modelos del repo. El checkpoint principal de 6,5M en f16 ocupa unos 13 MB; los critters de 12M en f32 ocupan 45,7 MB; BeeLLM-Hive en f16 ocupa 103,6 MB.
-- GPU recomendadas: cualquier GPU consumer, incluida una GTX 1050 o una iGPU moderna; tambien es viable en CPU pura.
-- Cabe en cualquier GPU consumer y en la mayoria de moviles y navegadores.
-- Opciones de despliegue: llama.cpp (soporte explicito en la model card), Ollama, y ejecucion en navegador via WebAssembly; el garden base esta en safetensors f32 para uso con Hugging Face Transformers.
-- Latencia y throughput: no disponibles; por el tamano, se espera inferencia en milisegundos en CPU moderna, aunque no se aportan cifras.
+- VRAM estimada: inferior a 1 GB para cualquier cerebro individual; AntLLM-Colony ocupa 12,5 MB en f16 y el garden base 45,7 MB en f32.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060 o superior) es mas que suficiente; el modelo cabe incluso en CPU.
+- Cabe en GPU consumer: si, en practicamente todas, incluida inferencia en CPU pura.
+- Opciones de despliegue: llama.cpp (soportado explicitamente, con arquitecturas `llama`, `beehive` y `anthill`); los GGUF incluyen plantilla de chat. No se documenta soporte de vLLM, TGI u Ollama.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| critters (schizophyllume) | 6,5M (principal); 12M (critters); 54,2M (colmena) | No disponible | Apache 2.0 | Hugging Face, GGUF y safetensors | Modelo de juguete para simulacion multiagente |
-| TinyStories (Microsoft) | ~1M-33M | No disponible | MIT (segun publicacion) | Hugging Face | Referencia de preentrenamiento con cuentos simples; el garden base se entrena con este corpus |
-| SmolLM-135M (Hugging Face) | 135M | 2.048 tokens | Apache 2.0 | Hugging Face, GGUF | LLM pequeno generalista, mucho mayor y con capacidades mas amplias |
-| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | Hugging Face, GGUF | Alternativa generalista minima para produccion real |
+| critters (AntLLM-Colony) | 6,53 M | no disponible | Apache 2.0 | safetensors, GGUF | Colonia multiagente con enlace por contacto |
+| BeeLLM-Hive (mismo autor) | 54,2 M | no disponible | Apache 2.0 | GGUF f16 | Colonia de abejas con neuralese; reina 50,1 M |
+| critters de 12M (mismo autor) | 11,97 M | no disponible | Apache 2.0 | GGUF f32 | Conversacionales con personalidad |
+| garden base (mismo autor) | 11,97 M | no disponible | Apache 2.0 | safetensors f32 | Base TinyStories para fine-tuning |
 
-La comparacion es asimetrica: critters no pretende competir en calidad linguistica con LLM pequenos generalistas, sino ofrecer agentes con personalidad y arquitecturas de comunicacion experimental a un coste de computo casi nulo.
+No se dispone de datos de benchmarks ni de modelos externos comparables en la informacion proporcionada; las alternativas mas cercanas son los propios cerebros del mismo repositorio.
 
 ## Limitaciones y advertencias
 
-- Modelo de juguete: la calidad del texto, la coherencia y el conocimiento del mundo son muy limitados; no es apto para tareas de produccion reales.
-- Solo ingles; no se documenta soporte multilingue.
-- Riesgo alto de alucinacion y de respuestas incoherentes fuera del dominio del jardin o del corpus de entrenamiento.
-- Longitud de contexto no documentada; probablemente muy corta, lo que limita conversaciones multi-turno largas.
-- Sesgos: al entrenarse con un corpus sintetico generado por agentes de lenguaje, puede heredar sesgos de esos generadores; no se documentan evaluaciones al respecto.
-- La licencia Apache 2.0 permite uso comercial, pero la ausencia de garantias y la calidad del modelo hacen desaconsejable su uso fuera de experimentacion.
-- El repositorio mezcla varios modelos y versiones; es necesario seleccionar el archivo GGUF concreto y verificar la arquitectura (`llama`, `beehive` o `anthill`) antes de cargarlo en llama.cpp.
-- El sitio critters.garden se declara como trabajo en curso (WIP), por lo que la experiencia en vivo puede cambiar.
+- Escala juguete: los modelos de 4-54 M de parametros no compiten con LLM convencionales en conocimiento general ni razonamiento.
+- Idioma: solo ingles; no hay soporte multilingue documentado.
+- Longitud de contexto: no documentada, lo que impide planificar conversaciones largas con garantias.
+- Riesgo de alucinacion: alto en cualquier modelo de este tamano; las respuestas deben tratarse como parte de una simulacion, no como informacion fiable.
+- Sesgos: el corpus fue escrito por agentes de lenguaje, por lo que puede heredar sesgos de esos agentes; no se documenta evaluacion de sesgos.
+- Licencia Apache 2.0: permite uso comercial, pero el proyecto se presenta como experimental ("toy-model") y sin garantias.
+- Madurez: el sitio y la simulacion estan en desarrollo (WIP); algunas versiones historicas no pueden reconstruirse (por ejemplo, Petal 1.0).
+- Formatos: el soporte se limita a llama.cpp; no se documentan integraciones con otros motores de inferencia.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/schizophyllume/critters
+- Hugging Face: https://huggingface.co/schizophyllume/critters
+- Demo en vivo: https://critters.garden/
 - Repositorio BeeLLM: https://huggingface.co/schizophyllume/BeeLLM
-- Jardin en vivo: https://critters.garden/

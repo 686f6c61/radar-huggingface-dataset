@@ -50,5 +50,21 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Lidl : Commandez en ligne et retrouvez nos produits en supermarché",
+      "url": "https://www.lidl.fr/",
+      "snippet": "Faites confiance à LIDL, avec près de 1 600 supermarchés en France, vous pourrez réaliser tous vos achats à des prix avantageux …"
+    },
+    {
+      "title": "Lidl Croix 59170 (adresse, téléphone et horaires) - Alternativi",
+      "url": "https://alternativi.fr/annuaire/lidl/croix-59170",
+      "snippet": "Lidl Croix 59170 est un supermarché prisé pour sa large gamme de produits abordables et de qualité, situé dans la charmante ville …"
+    }
+  ]
 }

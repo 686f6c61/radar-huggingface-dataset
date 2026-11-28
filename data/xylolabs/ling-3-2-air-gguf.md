@@ -2,125 +2,113 @@
 
 ## Resumen
 
-Ling-3.2-air es un modelo de lenguaje multimodal de pesos abiertos desarrollado por inclusionAI (Alibaba/Ant Group) que comparte la arquitectura multimodal nativa de Ling-3.0-flash-VL. Se distribuye originalmente en BF16 y esta ficha corresponde a la cuantizacion GGUF Q4_K_M publicada por Xylolabs para su uso con llama.cpp en CUDA, Metal o CPU. El modelo esta orientado a la automatizacion de flujos de trabajo, el razonamiento sobre documentos profesionales y el analisis cuantitativo de datos, con soporte nativo de entrada imagen-texto.
+Ling-3.2-air es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por inclusionAI, distribuido originalmente con licencia MIT. Esta ficha describe la versión cuantizada en formato GGUF publicada por Xylolabs, pensada para su ejecución con llama.cpp sobre CUDA, Metal o CPU. El modelo es multimodal (pipeline image-text-to-text) y está orientado a conversación y generación de texto en inglés y chino.
 
-Con 127.486.405.600 parametros totales (unos 127,5 mil millones) y arquitectura MoE segun las etiquetas del repositorio, Ling-3.2-air se posiciona en la gama alta de modelos abiertos multimodales. Su relevancia actual radica en las mejoras sustanciales frente a su predecesor en tareas de agente y documentos: AutomationBench-AA pasa del 15,7% al 61%, AA-Briefcase v1.1 sube 353 puntos Elo (de 987 a 1340) y Terminal-Bench 4.0 pasa del 0% al 27%. La licencia MIT facilita su adopcion comercial, y la cuantizacion GGUF Q4_K_M (80,39 GB) permite ejecutarlo en estaciones de trabajo con 96-128 GB de memoria.
+Con 127.486.405.600 parámetros totales según los pesos en safetensors, Ling-3.2-air es un modelo de gran escala que, gracias a su arquitectura MoE, activa solo una fracción de los parámetros por token, lo que reduce el coste computacional por inferencia frente a un modelo denso equivalente. La versión GGUF de Xylolabs ofrece ocho niveles de cuantización (desde Q8_0 hasta Q2_K) más un proyector visual en F16, con métricas de divergencia KL y acuerdo top-1 frente a los pesos originales en BF16.
 
-Esta ficha documenta principalmente la version cuantizada GGUF, ya que es el artefacto publicado en el repositorio referenciado; los datos de arquitectura y entrenamiento del modelo base se indican solo cuando estan disponibles en la informacion proporcionada.
+La relevancia de esta ficha radica en que permite desplegar un modelo MoE multimodal de más de 127.000 millones de parámetros en hardware que va desde una RTX 4090 de 24 GB (con offload de expertos a RAM del sistema) hasta una B300 de 288 GB, manteniendo una ventana de contexto de hasta 256K tokens en las configuraciones de mayor memoria. Es una opción práctica para investigadores y desarrolladores que necesitan evaluar un modelo grande sin infraestructura de centro de datos completa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con mezcla de expertos (MoE), arquitectura nativa imagen-texto compartida con Ling-3.0-flash-VL |
-| Parametros totales | 127.486.405.600 (unos 127,5 mil millones) |
+| Arquitectura | Mixture of Experts (MoE), transformer multimodal (image-text-to-text) |
+| Parametros totales | 127.486.405.600 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 256K tokens (segun la tabla de hardware del autor); la invocacion de ejemplo usa `-c 32768` |
-| Tipos de cuantizacion | Q4_K_M (unica cuantizacion publicada); proyector de vision en F16 |
-| Idiomas soportados | Ingles (en) y chino (zh) |
+| Longitud de contexto | hasta 256K tokens (según configuración de hardware); 32K en configuraciones con offload |
+| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_M, Q2_K; proyector visual en F16 |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors/BF16 |
-| Tamano del repositorio | 81,3 GB |
-| Ficheros | `Ling-3.2-air-Q4_K_M.gguf` (3 partes, 80,39 GB) y `mmproj-Ling-3.2-air-F16.gguf` (874,64 MB) |
-| Pipeline | image-text-to-text |
-| Modelo base | inclusionAI/Ling-3.2-air |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-Ling-3.2-air emplea una arquitectura multimodal nativa con mezcla de expertos (MoE), la misma familia arquitectonica que Ling-3.0-flash-VL. El repositorio etiqueta explicitamente el modelo como `moe` y `image-text-to-text`, e incluye un proyector de vision independiente (`mmproj`) que se carga junto con los pesos principales en llama.cpp. El modelo procesa tanto texto como imagenes en una unica pila, lo que habilita tareas de razonamiento sobre documentos escaneados, capturas y graficos.
+Ling-3.2-air es un modelo Mixture of Experts (MoE) de tipo transformer con capacidades multimodales (procesamiento conjunto de imagen y texto). La model card de la versión GGUF confirma la naturaleza MoE mediante la etiqueta `moe` y el comando de ejecución con `--n-cpu-moe 43`, que indica la existencia de al menos 43 expertos cuyo peso puede residir en RAM del sistema. No se dispone de información detallada sobre el número total de expertos, el número de expertos activos por token, la dimensión de las capas ni el mecanismo de enrutamiento en la información proporcionada.
 
-No se dispone en la informacion proporcionada del numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento. Tampoco se detallan innovaciones como decodificacion especulativa o atencion lineal. La cuantizacion Q4_K_M fue generada con imatrix (segun las etiquetas del repositorio) y validada con el commit `cd959bae99ff4bed22bef2604f45241c09bbb8c8` de llama.cpp; el autor reporta una divergencia KL media de 0,047693 en WikiText-2 con un 92,08% de coincidencia top-1 respecto a los pesos BF16 originales, lo que indica una degradacion moderada y controlada.
+Tampoco se especifican en la documentación disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras fases de alineación. La model card original de inclusionAI no forma parte de la información suministrada, por lo que estos datos deben consultarse en el repositorio del modelo base. La innovación técnica destacable en esta distribución es la cuantización con imatrix (etiqueta `imatrix`), que emplea una matriz de importancia para preservar la calidad de los pesos durante la compresión, con métricas de divergencia KL y acuerdo top-1 publicadas para cada nivel de cuantización.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento de proposito general, con un indice de inteligencia de 23 en Artificial Analysis Intelligence Index v5.0.1.
-- Razonamiento multimodal: procesa imagenes junto con texto (pipeline image-text-to-text) mediante el proyector de vision F16.
-- Razonamiento sobre documentos profesionales: puntuacion GDP.pdf all-pass del 16% (frente al 8,4% del predecesor).
-- Automatizacion de flujos de trabajo: AutomationBench-AA del 61% (frente al 15,7% del predecesor).
-- Analisis cuantitativo de datos y tareas de oficina: AA-Briefcase v1.1 con Elo 1340.
-- Trabajo legal y contractual: Harvey LAB-AA v1.1 con 87,7% de criterios superados y 0,8% de all-pass tras la comprobacion de alucinaciones materiales.
-- Ejecucion de tareas en terminal: Terminal-Bench 4.0 con 27% de exito.
-- Capacidades multilingues limitadas a ingles y chino.
-- Soporte de plantillas de chat mediante `--jinja` en llama.cpp (habilita tool calling y formato conversacional segun la plantilla del modelo base).
-- No se documenta en la informacion disponible soporte explicito de audio ni un modo "thinking" separado.
+- Generación de texto conversacional en inglés y chino.
+- Procesamiento multimodal image-text-to-text: acepta imágenes junto con texto mediante el proyector visual `mmproj-Ling-3.2-air-F16.gguf`.
+- Razonamiento y respuesta multi-turno en contextos de hasta 256K tokens (en configuraciones de hardware con memoria suficiente).
+- Ejecución local mediante llama.cpp en CUDA, Metal y CPU.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Soporte de plantillas de chat vía `--jinja` en llama.cpp.
+- No se documenta en la información disponible soporte explícito de tool calling, function calling, agentes o modos de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Automatizacion de flujos de trabajo administrativos: el modelo puede orquestar tareas multi-paso sobre formularios, correos y documentos, respaldado por su 61% en AutomationBench-AA, muy superior al 15,7% de la generacion anterior.
-- Analisis de documentos financieros y PDF: con el 16% de all-pass en GDP.pdf y capacidad de vision, puede extraer y razonar sobre tablas, graficos e importes en documentos escaneados dentro de una ventana de hasta 256K tokens.
-- Revision contractual y legal asistida: su 87,7% de criterios superados en Harvey LAB-AA v1.1 lo hace adecuado para preanalisis de clausulas, con la advertencia de que el all-pass tras el filtro de alucinaciones cae al 0,8%, por lo que requiere supervision humana.
-- Agente de terminal y DevOps: con un 27% de exito en Terminal-Bench 4.0 y soporte de tool calling via `--jinja`, puede integrarse en tareas de diagnostico, ejecucion de comandos y automatizacion de pipelines con confirmacion humana.
-- Atencion al cliente multimodal multi-turno: la ventana de 256K tokens y la entrada de imagenes permiten gestionar conversaciones largas con capturas de pantalla o fotos de productos enviadas por el usuario.
-- Analisis cuantitativo exploratorio: generacion de resumenes, comparativas y explicaciones sobre conjuntos de datos tabulares descritos en texto o imagen, adecuado para informes internos.
-- Procesamiento por lotes en local: al estar en GGUF Q4_K_M, puede desplegarse en una estacion de trabajo con 96-128 GB (RTX PRO 6000 Blackwell, Mac Studio M5 Max/Ultra, DGX Spark) sin depender de la nube, util para datos sensibles.
+- Asistente conversacional multilingüe (inglés-chino): el modelo puede gestionar diálogos multi-turno con contexto largo, adecuado para atención al cliente o soporte técnico en entornos bilingües, gracias a su ventana de hasta 256K tokens en configuraciones de memoria alta.
+- Análisis de documentos extensos con imágenes: al ser image-text-to-text, permite procesar informes, capturas o diagramas junto con texto largo, útil para extracción de información en flujos de trabajo documentales.
+- Despliegue en estación de trabajo con GPU de consumo: con la cuantización Q2_K (49,54 GB) y offload de expertos a RAM del sistema, puede ejecutarse en una RTX 4090 o RTX 3090 de 24 GB, lo que facilita la experimentación local sin clúster.
+- Investigación en cuantización: las métricas de divergencia KL y acuerdo top-1 publicadas por nivel de cuantización permiten estudiar el impacto de la compresión en un MoE de gran escala, comparando Q8_0 (KL 0,013439 en WikiText-2) frente a Q2_K (KL 0,315024).
+- Servicio de inferencia en servidor con llama.cpp: el comando `llama-server` con `--jinja` y `-ngl 99` permite exponer el modelo como API compatible con endpoints en una H100, H200 o B200, con contexto de 256K tokens.
+- Procesamiento por lotes en CPU o Metal: en Mac Studio con memoria unificada de 128 GB o superior, el modelo puede ejecutarse sin GPU dedicada, adecuado para prototipado y evaluación en entornos macOS.
+- Evaluación comparativa de modelos MoE: útil para investigadores que necesitan contrastar el comportamiento de un MoE de 127B parámetros cuantizado frente a alternativas densas o MoE de menor tamaño en tareas de razonamiento y visión.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por inclusionAI para el modelo base (recogidos en la model card del repositorio GGUF):
+La model card de Xylolabs publica métricas de fidelidad de cuantización frente a los pesos originales en BF16, no benchmarks de tareas estándar (MMLU, HumanEval, GSM8K, etc.).
 
-| Benchmark | Ling-3.2-air | Predecesor (Ling-3.0-flash-VL) |
-|---|---:|---:|
-| AutomationBench-AA | 61% | 15,7% |
-| GDP.pdf (all-pass) | 16% | 8,4% |
-| AA-Briefcase v1.1 (Elo) | 1340 | 987 |
-| Terminal-Bench 4.0 | 27% | 0% |
-| Artificial Analysis Intelligence Index v5.0.1 | 23 | no disponible |
-| Harvey LAB-AA v1.1 (criterios superados) | 87,7% | no disponible |
-| Harvey LAB-AA v1.1 (all-pass, antes de filtro) | 8,3% | no disponible |
-| Harvey LAB-AA v1.1 (all-pass, tras filtro) | 0,8% | no disponible |
+| Cuantizacion | Tamano | WikiText-2 KL | WikiText-2 top-1 | Chat KL | Chat top-1 | Held-out KL | Held-out top-1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Q8_0 | 135,63 GB | 0,013439 | 95,93% | 0,019299 | 95,65% | 0,012510 | 94,92% |
+| Q6_K | 111,43 GB | 0,016179 | 95,49% | 0,020734 | 95,33% | 0,014010 | 94,78% |
+| Q5_K_M | 97,54 GB | 0,025086 | 94,19% | 0,025801 | 94,57% | 0,018012 | 93,69% |
+| Q4_K_M | 80,39 GB | 0,046521 | 92,14% | 0,038319 | 92,92% | 0,029522 | 92,20% |
+| Q4_K_S | 75,64 GB | 0,059339 | 91,05% | 0,046017 | 92,59% | 0,033946 | 91,04% |
+| IQ4_XS | 71,11 GB | 0,059487 | 91,06% | 0,048973 | 92,12% | 0,037314 | 91,16% |
+| Q3_K_M | 61,50 GB | 0,127627 | 87,21% | 0,085816 | 89,53% | 0,075933 | 87,98% |
+| Q2_K | 49,54 GB | 0,315024 | 79,78% | 0,200779 | 83,25% | 0,196657 | 81,55% |
 
-Calidad de la cuantizacion Q4_K_M frente a BF16 (medida por Xylolabs con llama.cpp):
-
-| Conjunto | KL media | Coincidencia top-1 |
-|---|---:|---:|
-| WikiText-2 | 0,047693 | 92,08% |
-| Chat | 0,038328 | 92,82% |
-| Held-out | 0,030564 | 91,94% |
-
-No se han publicado en la informacion disponible resultados de MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM para inferencia: el fichero Q4_K_M ocupa 80,39 GB; a ello hay que sumar la cache KV en f16 y unos 2 GB para el runtime. El autor recomienda que el total quede por debajo del 90% de la memoria disponible.
-- GPU de 24 GB (RTX 4090, RTX 3090): no cabe completo; requiere offload de expertos a RAM del sistema con `--n-cpu-moe N` y contexto de 32K.
-- GPU de 32 GB (RTX 5090): igualmente requiere offload de expertos, contexto 32K.
-- 48 GB (RTX 6000 Ada o 2 x 24 GB): offload de expertos, contexto 32K.
-- 80 GB (H100): offload de expertos, contexto 32K.
-- 96 GB (RTX PRO 6000 Blackwell GDDR7): cabe completo, contexto 256K.
-- 128 GB unificada (DGX Spark, Mac Studio M5 Max): cabe completo, contexto 256K.
-- 141 GB (H200 HBM3e), 192 GB (B200), 256 GB y 512 GB (Mac Studio M5 Ultra), 288 GB (B300): cabe completo, contexto 256K.
-- Despliegue: llama.cpp (`llama-server`) con CUDA, Metal o CPU; requiere `--jinja` para la plantilla de chat y `--mmproj` para vision. No se mencionan vLLM, TGI ni Ollama en la informacion disponible.
-- Comando de referencia: `./build/bin/llama-server -m Ling-3.2-air-Q4_K_M-00001-of-00003.gguf --mmproj mmproj-Ling-3.2-air-F16.gguf --jinja -ngl 99 -c 32768`.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: depende del nivel de cuantización. Q8_0 requiere 135,63 GB; Q4_K_M, 80,39 GB; Q2_K, 49,54 GB. El proyector visual F16 añade 874,64 MB.
+- GPU recomendadas según la model card:
+  - RTX 4090 / RTX 3090 (24 GB): offload de expertos a RAM del sistema, contexto 32K.
+  - RTX 5090 (32 GB): offload, contexto 32K.
+  - RTX 6000 Ada o 2 x 24 GB (48 GB): offload, contexto 32K.
+  - H100 (80 GB): Q3_K_M (61,5 GB), contexto 256K.
+  - RTX PRO 6000 Blackwell (96 GB): Q4_K_M (80,4 GB), contexto 256K.
+  - H200 (141 GB): Q6_K (111,4 GB), contexto 256K.
+  - B200 (192 GB): Q8_0 (135,6 GB), contexto 256K.
+  - B300 (288 GB): Q8_0, contexto 256K.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 y RTX 5090 mediante offload de expertos a RAM (`--n-cpu-moe 43`), con contexto de 32K.
+- Memoria unificada: DGX Spark (128 GB), Mac Studio M5 Max (128 GB) con Q5_K_M; Mac Studio M5 Ultra (256 GB y 512 GB) con Q8_0.
+- Opciones de despliegue: llama.cpp mediante `llama-server` (requiere build b11156 o superior), con soporte CUDA, Metal y CPU.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---:|---|---|
-| Ling-3.2-air (GGUF Q4_K_M) | ~127,5B (MoE) | 256K | MIT | GGUF | Multimodal nativo; foco en automatizacion y documentos |
-| Ling-3.0-flash-VL (predecesor) | no disponible | no disponible | no disponible | no disponible | AutomationBench-AA 15,7%, GDP.pdf 8,4%, Elo 987, Terminal-Bench 0% |
-| Otros modelos abiertos de ~100B+ multimodales | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+No se dispone de datos de benchmarks de tareas ni de especificaciones detalladas de modelos comparables en la información proporcionada. La comparación se limita a parámetros y formato:
 
-No se dispone en la informacion proporcionada de datos suficientes para comparar con alternativas de la misma categoria mas alla del predecesor directo.
+| Modelo | Parametros totales | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Ling-3.2-air (GGUF, Xylolabs) | 127.486.405.600 | hasta 256K | MIT | GGUF | MoE multimodal, 8 niveles de cuantización |
+| Modelos alternativos de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se dispone de información sobre modelos comparables de la misma categoría (MoE multimodal de ~127B) en la documentación suministrada.
 
 ## Limitaciones y advertencias
 
-- Solo se ha publicado la cuantizacion Q4_K_M; no hay variantes Q5, Q6, Q8 ni de menor tamano, lo que limita el ajuste fino a hardware con poca memoria.
-- Idiomas soportados unicamente ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea inferior.
-- Riesgo de alucinacion significativo en tareas legales: el all-pass de Harvey LAB-AA v1.1 cae del 8,3% al 0,8% tras aplicar la comprobacion de alucinaciones materiales, lo que exige validacion humana en produccion.
-- El rendimiento en Terminal-Bench 4.0 es del 27%, insuficiente para autonomia total en tareas de terminal sin supervision.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad en la informacion disponible.
-- La licencia MIT permite uso comercial, pero Xylolabs aclara que no esta afiliado ni respaldado por inclusionAI; conviene revisar el fichero `NOTICE` del repositorio.
-- El modelo base se distribuye en BF16 con un tamano de repositorio de 81,3 GB en la version GGUF; el despliegue completo requiere hardware de gama alta (96-288 GB de memoria).
-- La cuantizacion Q4_K_M introduce una divergencia KL media de 0,047693 en WikiText-2 y un 92,08% de coincidencia top-1, por lo que puede haber degradacion en tareas sensibles a la precision numerica.
-- El contexto maximo de 256K solo es alcanzable con hardware de 96 GB o mas; en GPUs de 24-80 GB el autor recomienda limitarse a 32K con offload de expertos.
+- Idiomas: solo se declaran inglés y chino; el rendimiento en castellano u otros idiomas no está garantizado ni documentado.
+- Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual ni de tasas de alucinación en la información disponible.
+- Sesgos: no se documentan análisis de sesgos en la model card de la versión GGUF.
+- Cuantización agresiva: Q2_K presenta una divergencia KL de 0,315024 en WikiText-2 y un acuerdo top-1 del 79,78%, lo que supone una degradación notable frente a Q8_0; para producción se recomienda Q5_K_M o superior.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, pero debe conservarse el aviso `NOTICE` que identifica el modelo fuente, según indica la model card.
+- Requisitos de versión: necesita llama.cpp b11156 o superior; versiones anteriores pueden no cargar correctamente los archivos.
+- Contexto reducido con offload: en configuraciones de 24, 32 y 48 GB el contexto práctico se limita a 32K tokens, no a los 256K máximos.
+- Los archivos GGUF están divididos en varias partes; debe iniciarse la carga por el primer fragmento.
+- No se documentan capacidades de tool calling ni de agentes, por lo que su uso en pipelines de automatización con funciones no está verificado.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/Xylolabs/Ling-3.2-air-GGUF
-- Modelo base: https://huggingface.co/inclusionAI/Ling-3.2-air
-- Modelo predecesor: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
-- Organizacion inclusionAI en Hugging Face: https://huggingface.co/inclusionAI
-- ModelScope del modelo base: https://www.modelscope.cn/models/inclusionAI/Ling-3.2-air
-- Repositorio de llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
-- Repositorio de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Xylolabs/Ling-3.2-air-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.2-air
+- Repositorio de llama.cpp (build referenciado): https://github.com/ggml-org/llama.cpp/tree/cd959bae99ff4bed22bef2604f45241c09bbb8c8
+- Repositorio de Xylolabs (herramientas de cuantización): https://github.com/XylolabsInc/tensix-bfp-gptq
+- Gráfico de divergencia KL media: https://huggingface.co/Xylolabs/Ling-3.2-air-GGUF/resolve/main/accuracy-mean-kl.png
+- Gráfico de acuerdo top-1: https://huggingface.co/Xylolabs/Ling-3.2-air-GGUF/resolve/main/accuracy-top1.png

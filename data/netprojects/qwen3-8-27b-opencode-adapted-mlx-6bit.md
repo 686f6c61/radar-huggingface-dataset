@@ -2,119 +2,116 @@
 
 ## Resumen
 
-Qwen3.8-27B-opencode-adapted-MLX-6bit es una compilación cuantizada a 6 bits para Apple Silicon (MLX) del modelo Qwen3.8-27B de Alibaba Qwen, sobre el que se ha fusionado el adaptador LoRA `harness-hub/Qwen3.8-27B-opencode-adapted`. Ese adaptador se entrenó con aprendizaje por refuerzo (AsyncGRPO en TRL) para convertir el modelo en el motor del agente de programación OpenCode en tareas de ingeniería de software y de terminal. El resultado es un modelo de 27.781 millones de parámetros con capacidad de visión (pipeline image-text-to-text), empaquetado en 23,1 GB y listo para ejecutarse localmente en un Mac con suficiente memoria unificada.
+Qwen3.8-27B-opencode-adapted-MLX-6bit es una conversión a formato MLX, con cuantización afín de 6 bits (grupo 64), del adaptador LoRA `harness-hub/Qwen3.8-27B-opencode-adapted` fusionado sobre el modelo base `Qwen/Qwen3.8-27B`. Lo publica el usuario `netprojects` y está pensado específicamente para ejecutarse en Apple Silicon mediante la librería `mlx` (y `mlx-vlm` para las capacidades multimodales). El resultado es un artefacto de 23,1 GB que conserva el encoder de visión y la capa MTP (multi-token prediction) de Qwen, lo que permite tanto generación de texto como entrada image-text-to-text.
 
-La relevancia de esta build es doble. Por un lado, reproduce en local el comportamiento de un agente de código especializado sin depender de APIs externas. Por otro, lo hace con una pérdida de fidelidad mínima: según el autor, el 98,7 % de los siguientes tokens coinciden con la versión bf16 y la divergencia KL frente a bf16 es de 0,0014, lo que la convierte en la opción recomendada frente a las variantes de 4 y 8 bits. Mantiene además la capa de predicción multi-token (MTP) original de Qwen3.8-27B, cuantizada de forma coherente, y el encoder de visión.
+El interés del modelo está en el ajuste: `harness-hub` entrenó el LoRA con aprendizaje por refuerzo (AsyncGRPO en TRL) para convertir al modelo en el motor del agente de programación OpenCode, orientado a tareas de ingeniería de software y de terminal. Según los resultados publicados por el autor del adaptador, con el modo thinking desactivado el modelo pasa de 35,3 % a 51,0 % en SWE-bench Pro (hard 51) y de 46,4 % a 52,4 % en Terminal-Bench 2.1 respecto al modelo base, y además iguala al base con thinking al máximo esfuerzo generando aproximadamente una sexta parte de los tokens.
 
-El modelo está pensado para integrarse con OpenCode mediante el servidor compatible con OpenAI de mlx-lm, con el modo de razonamiento (thinking) desactivado, que es como se entrenó y evaluó el adaptador. La licencia es Apache 2.0 y el repositorio incluye la plantilla de chat y el tokenizador originales de harness-hub, con el mismo vocabulario y formato de tool calling XML de Qwen.
+Esta build de 6 bits es la que el propio autor recomienda como equilibrio entre tamano y fidelidad: reproduce el siguiente token de la referencia bf16 en el 98,7 % de los casos, con una divergencia KL de 0,0014 frente a bf16. Está pensada para Macs de 48 GB de memoria unificada, aunque existen variantes de 3, 4 y 8 bits para otros perfiles de hardware.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de Qwen3.8-27B (16 capas de atención completa con módulos q, k, v, o; módulos gate/up/down adaptados) con encoder de visión y capa MTP; no se detalla la arquitectura completa en la información disponible |
-| Parametros totales | 27.781.427.952 |
+| Arquitectura | Transformer multimodal (image-text-to-text) de la familia Qwen3.5, con encoder de visión y capa MTP; pesos convertidos con mlx-vlm |
+| Parametros totales | 27.781.427.952 (27,78 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 6 bits afín, grupo de 64 (lineales); existen builds de 4, 8 y bf16 del mismo autor |
+| Tipos de cuantizacion | 6 bits afín, grupo 64 (esta build); la familia incluye 3, 4, 6 y 8 bits MLX, bf16 y GGUF (IQ2_M, Q3_K_M, Q4_K_M, Q6_K, Q8_0) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX), con `model-mtp.safetensors` para la capa MTP; repositorio de 23,1 GB |
+| Formato de pesos | safetensors (MLX); tamano del repo 23,1 GB |
 
 ## Arquitectura y entrenamiento
 
-La build parte de Qwen3.8-27B (revisión `3756181`) y del adaptador LoRA de harness-hub (revisión `b4171c0`), fusionados y convertidos a MLX con mlx-vlm. La fusión afecta a 256 módulos adaptados: q, k, v y o en las 16 capas de atención completa, y gate, up y down en las capas feed-forward. Se conserva el encoder de visión y la capa de predicción multi-token (MTP) propia de Qwen3.8-27B, cuantizada al mismo nivel que el resto del modelo; el adaptador no modifica esa capa, por lo que la cabeza MTP es la original de Qwen. Los pesos lineales se cuantizan a 6 bits en formato afín con grupo de 64.
+El modelo base es Qwen3.8-27B, un transformer multimodal de la familia Qwen3.5 que incorpora un encoder de visión y una capa MTP (multi-token prediction), preservados ambos en esta conversión a MLX. Sobre ese base, `harness-hub` entrenó un adaptador LoRA mediante aprendizaje por refuerzo con AsyncGRPO implementado en TRL, con el objetivo explícito de optimizar el comportamiento del modelo como agente de programación dentro de OpenCode sobre tareas de ingeniería de software y de terminal. El adaptador se fusionó en los pesos del base (revisiones `b4171c0` del adaptador y `3756181` del base) y el conjunto se convirtió con `mlx-vlm`.
 
-El adaptador se entrenó con aprendizaje por refuerzo mediante AsyncGRPO en TRL, orientado a tareas de ingeniería de software y de terminal dentro del agente OpenCode. Según los resultados publicados por harness-hub, con thinking desactivado el modelo pasa de 35,3 % a 51,0 % en SWE-bench Pro (hard 51) y de 46,4 % a 52,4 % en Terminal-Bench 2.1 respecto al modelo base. Además, con thinking desactivado iguala al modelo base con thinking en su esfuerzo máximo generando aproximadamente una sexta parte de los tokens. El tokenizador y la plantilla de chat son los archivos de harness-hub sin cambios, con el mismo vocabulario y el mismo formato de tool calling XML de Qwen (`<tool_call><function=...><parameter=...>`).
+La cuantización aplicada en esta build es afín de 6 bits con grupo de 64 sobre las capas lineales, lo que reduce el peso a 23,1 GB manteniendo una fidelidad alta frente a bf16 (98,7 % de coincidencia en el siguiente token y KL de 0,0014). El tokenizador y la plantilla de chat son los del adaptador sin modificar, por lo que conserva el mismo vocabulario y el mismo formato de tool calls XML de Qwen3.8-27B. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni detalles del proceso de RL más allá de la mención a AsyncGRPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, con modo thinking opcional (aunque el adaptador se entrenó y evaluó con thinking desactivado).
-- Programación y resolución de bugs en repositorios reales: localización de fallos en tests, edición de código y parcheo, según los resultados en SWE-bench Pro.
-- Ejecución de tareas de terminal y línea de comandos, evaluado en Terminal-Bench 2.1.
-- Tool calling / function calling en formato XML de Qwen, que el servidor de mlx-lm expone como `tool_calls` compatibles con OpenAI.
-- Uso como agente multi-paso dentro de OpenCode y de otros clientes compatibles con la API de OpenAI.
-- Comprensión de imágenes (image-text-to-text): lectura de capturas de pantalla, terminales y diagramas mediante mlx-vlm.
-- Decodificación especulativa mediante la capa MTP integrada o mediante el drafter DSpine externo.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto y razonamiento en modo conversacional, con plantilla de chat compatible con Qwen.
+- Programación y resolución de tareas de ingeniería de software: el ajuste RL está orientado a SWE-bench Pro y a tareas de terminal.
+- Ejecución de tareas de terminal y agentes de codificación multi-paso, entrenado como motor de OpenCode.
+- Tool calling / function calling en formato XML de Qwen (`<tool_call><function=...><parameter=...>`), que el servidor de mlx-lm expone como tool calls compatibles con OpenAI.
+- Entrada de imágenes (image-text-to-text) mediante `mlx-vlm`: lectura de capturas de pantalla, terminales o diagramas.
+- Modo thinking configurable; el adaptador fue entrenado y evaluado con thinking desactivado y así se recomienda usarlo.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Agente de programación local con OpenCode: servir el modelo con `mlx_lm.server` y registrarlo como proveedor local en `opencode.json` permite lanzar tareas como "encuentra por qué fallan los tests de tests/test_parser.py y corrige el bug" sin enviar código a la nube. Es adecuado por su entrenamiento específico en tareas SWE y su formato de tool calling nativo.
-- Corrección de bugs en CI/CD: el modelo puede recibir el fallo de una suite de tests junto con el código relevante y proponer un parche, aprovechando su mejora de 35,3 % a 51,0 % en SWE-bench Pro (hard 51) frente al modelo base.
-- Automatización de tareas de terminal: interpretar la salida de comandos, diagnosticar errores de shell y encadenar pasos correctivos, con un 52,4 % en Terminal-Bench 2.1.
-- Análisis de capturas de pantalla y errores visuales: con mlx-vlm, el modelo puede responder preguntas como "¿qué error muestra esta terminal?" sobre una imagen, útil para soporte técnico y triaje de incidencias.
-- Asistente de refactorización en local para equipos con políticas de confidencialidad: al ejecutarse íntegramente en Apple Silicon con licencia Apache 2.0, permite procesar código propietario sin salir del puesto de trabajo.
-- Generación de código con bajo coste de tokens: al igualar al modelo base con thinking al máximo esfuerzo generando aproximadamente una sexta parte de los tokens, reduce el tiempo y el coste en pipelines de generación de código a gran escala.
-- Prototipado de agentes compatibles con OpenAI: el servidor de mlx-lm expone una API compatible que permite conectar el modelo a frameworks de agentes existentes sin adaptadores adicionales.
+- Agente de codificación local en OpenCode: servir el modelo con `mlx_lm.server` y registrarlo como proveedor OpenAI-compatible permite lanzar tareas como "encuentra por qué fallan los tests de tests/test_parser.py y corrige el bug" sin salir del Mac.
+- Reparación de bugs en repositorios reales: el ajuste RL sobre SWE-bench Pro (51,0 % en hard 51) lo hace adecuado para localizar el fallo, editar varios ficheros y validar el cambio dentro de un flujo de agente.
+- Automatización de tareas de terminal: con 52,4 % en Terminal-Bench 2.1, puede encadenar comandos, interpretar la salida y corregir la estrategia en pasos sucesivos.
+- Análisis de capturas de pantalla y errores: gracias al encoder de visión, se le puede pasar una imagen de una terminal o de un IDE y preguntar qué error muestra o qué está mal en el código visible.
+- Asistencia de programación en local con privacidad: al ejecutarse íntegramente en Apple Silicon, el código y los prompts no salen del equipo, lo que encaja en entornos con requisitos de confidencialidad.
+- Integración en pipelines de CI/CD o scripts de mantenimiento: el tool calling en formato OpenAI permite conectarlo a herramientas propias que ejecuten tests, lean ficheros o consulten APIs.
+- Prototipado de agentes con presupuesto de tokens ajustado: al igualar al base con thinking al máximo esfuerzo generando aproximadamente una sexta parte de los tokens, reduce coste y latencia en bucles de agente.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por harness-hub para el adaptador, con thinking desactivado, frente al modelo base:
+Resultados publicados por el autor del adaptador (OpenCode, thinking desactivado):
 
-| Benchmark | Modelo base | Adaptador OpenCode |
+| Benchmark | Modelo base | Adaptador opencode |
 |---|---|---|
 | SWE-bench Pro (hard 51) | 35,3 % | 51,0 % |
 | Terminal-Bench 2.1 | 46,4 % | 52,4 % |
 
-Fidelidad de la cuantización frente a bf16 (datos del autor):
+Fidelidad de la cuantización frente a bf16:
 
-| Build | Tamano | Mismo siguiente token que bf16 | KL vs bf16 |
+| Build | Tamano | Coincidencia siguiente token vs bf16 | KL vs bf16 |
 |---|---|---|---|
-| MLX 6bit (esta build) | 23,1 GB | 98,7 % | 0,0014 |
-| MLX 8bit | 30,0 GB | 99,2 % | 0,0004 |
-| MLX 4bit | 16,3 GB | 96,7 % | 0,0203 |
+| MLX 6-bit (esta) | 23,1 GB | 98,7 % | 0,0014 |
+| MLX 8-bit | 30,0 GB | 99,2 % | 0,0004 |
+| MLX 4-bit | 16,3 GB | 96,7 % | 0,0203 |
+| MLX 3-bit | 13,8 GB | 93,4 % | 0,0812 |
 | MLX bf16 | 55,6 GB | referencia | referencia |
 
-Velocidad de decodificación medida por el autor (greedy, thinking off, 5 prompts × 256 tokens de GSM8K, MATH-500, HumanEval, MBPP y MT-Bench, con otros servicios en ejecución en el Mac, por lo que son indicativas):
-
-| Build | Sin MTP | Con MTP (mlx-vlm 0.7.11) |
-|---|---|---|
-| 4bit | 33 tok/s | 62 tok/s (×1,91) |
-| 6bit | 20 tok/s | 21 tok/s (×1,04) |
-| 8bit | 17 tok/s | 37 tok/s (×2,15) |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K u otros benchmarks estándar en la información disponible.
+No se han publicado resultados de MMLU, HumanEval o GSM8K en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria: el repositorio ocupa 23,1 GB; se necesita memoria unificada suficiente para los pesos más el contexto y el encoder de visión. El autor validó la build en un MacBook Pro con chip M5 Max y 128 GB de memoria unificada.
-- GPU: exclusivamente Apple Silicon (MLX); no está pensada para GPU NVIDIA. No se especifican modelos de Apple Silicon mínimos en la información disponible.
-- Cabe en equipos de consumo Apple Silicon de gama alta con memoria unificada amplia; no se dispone de datos para configuraciones de 16 o 32 GB.
-- Despliegue: `mlx_lm.server` (API compatible con OpenAI) para texto; `mlx_vlm.generate` para imagen y texto; integración con OpenCode mediante `@ai-sdk/openai-compatible`. Requiere mlx-lm >= 0.32.2 y mlx-vlm >= 0.7.11 (probado con mlx 0.32.4).
-- Latencia y throughput: 20 tok/s en decodificación simple y 21 tok/s con MTP en la build de 6 bits, según las mediciones indicativas del autor. El autor señala que en esta build de 6 bits la MTP no aporta una mejora real con mlx-vlm 0.7.11 y que el drafter DSpine es mejor opción para acelerar.
+- VRAM/memoria unificada: 23,1 GB de pesos; el autor recomienda esta build para Macs de 48 GB, dejando margen para macOS y prompts largos (la descarga es como máximo ~60 % de la memoria).
+- Macs de 24 GB: usar la build de 3 bits (13,8 GB).
+- Macs de 32 GB: usar la build de 4 bits (16,3 GB).
+- Macs de 64 GB o más: usar la build de 8 bits (30,0 GB); con 128 GB, bf16 (55,6 GB).
+- Macs de 16 GB: solo como opción "stretch" con el GGUF IQ2_M (10,2 GB), cerrando aplicaciones y limitando el prompt a unos miles de tokens.
+- GPU: el modelo está pensado para Apple Silicon; no se proporcionan requisitos para A100, H100 o RTX 4090 en la información disponible.
+- Despliegue: `mlx-lm >= 0.32.2` (servidor OpenAI-compatible), `mlx-vlm >= 0.7.11` para imágenes, LM Studio con MLX, y variantes GGUF para llama.cpp, Ollama y LM Studio.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-opencode-adapted-MLX-6bit | 27,78 B | no disponible | Agente de código, visión, MLX 6 bits | Apache 2.0 | Hugging Face (MLX) |
-| Qwen3.8-27B (base) | 27,78 B | no disponible | Modelo generalista de Qwen | no disponible en la información | Hugging Face |
-| Qwen3.8-27B-opencode-adapted-MLX-8bit | 27,78 B | no disponible | Misma adaptación, mayor fidelidad (30,0 GB) | Apache 2.0 | Hugging Face (MLX) |
-| Qwen3.8-27B-opencode-adapted-MLX-4bit | 27,78 B | no disponible | Misma adaptación, menor tamaño (16,3 GB) | Apache 2.0 | Hugging Face (MLX) |
+| Qwen3.8-27B-opencode-adapted-MLX-6bit | 27,78 B | no disponible | Agente de código ajustado con RL, multimodal, MLX 6 bits | Apache 2.0 | Hugging Face (MLX) |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | Modelo multimodal generalista | Apache 2.0 (según el adaptador) | Hugging Face |
+| harness-hub/Qwen3.8-27B-opencode-adapted | 27,78 B | no disponible | Adaptador LoRA del anterior, sin cuantizar | Apache 2.0 | Hugging Face |
+| Builds MLX 3/4/8 bits y GGUF del mismo modelo | 27,78 B | no disponible | Mismas capacidades con distinto equilibrio tamano/fidelidad | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de benchmarks ni de especificaciones de contexto para modelos de otras familias en la información proporcionada, por lo que la comparación se limita a las variantes del mismo modelo y a su base.
+No se dispone de datos de benchmarks de modelos de terceros comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El adaptador se entrenó y evaluó con thinking desactivado; el autor recomienda mantenerlo así. Usarlo con thinking activado puede degradar el comportamiento esperado.
-- Es una build exclusiva para Apple Silicon con MLX; no es portable a CUDA ni a otros backends sin reconversión.
-- La cuantización a 6 bits introduce una divergencia pequeña pero no nula frente a bf16 (98,7 % de coincidencia en el siguiente token, KL 0,0014); en respuestas largas puede haber diferencias puntuales.
-- La decodificación especulativa con MTP verifica cada token con el modelo completo; con decodificación greedy el texto coincide hasta un empate cercano, donde la comprobación por lotes puede redondear al otro lado y divergir ligeramente en respuestas largas.
-- En esta build de 6 bits la MTP no aporta aceleración real con mlx-vlm 0.7.11; conviene usar el drafter DSpine si se busca velocidad.
-- No se dispone de información sobre sesgos, idiomas soportados ni riesgos de alucinación específicos del modelo.
-- Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base Qwen3.8-27B y del adaptador original antes de un uso comercial a gran escala.
-- El modelo está orientado a tareas de código y terminal; su rendimiento en dominios generales no está documentado en la información disponible.
+- El adaptador se entrenó y evaluó con thinking desactivado; usarlo con thinking activado puede degradar el comportamiento esperado.
+- La cuantización de 6 bits introduce una divergencia pequeña pero real frente a bf16 (98,7 % de coincidencia en el siguiente token, KL 0,0014); para máxima fidelidad debe usarse la build de 8 bits o bf16.
+- En Macs de 48 GB el margen de memoria es limitado: prompts muy largos o contextos grandes pueden provocar presión de memoria; el autor sugiere ajustar `iogpu.wired_limit_mb` en casos justos.
+- El ajuste está orientado a tareas de agente de código y terminal; su rendimiento en dominios generales puede no reflejar el del modelo base.
+- Riesgo de alucinación y de ediciones incorrectas en código: como todo agente, requiere validación mediante tests y revisión humana antes de llevar cambios a producción.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Idiomas soportados: no disponibles; no se garantiza un comportamiento multilingüe equivalente al del base.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen y del adaptador original antes de redistribuir.
+- El formato de tool calls es el XML propietario de Qwen; el servidor de mlx-lm lo traduce a OpenAI, pero integraciones propias deben respetar ese formato.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-6bit
 - Modelo base del adaptador: https://huggingface.co/harness-hub/Qwen3.8-27B-opencode-adapted
-- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
-- Build de 8 bits: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-8bit
-- Build de 4 bits: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-4bit
-- Build bf16: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-bf16
-- Adaptador LoRA para mlx-lm: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-adapter
-- Drafter DSpine: https://huggingface.co/netprojects/Qwen3.8-27B-DSpine-b16-MLX
-- Repositorio dspine-hybrid-mlx: https://github.com/internet-projects/dspine-hybrid-mlx
+- Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
+- Build MLX 8 bits: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-8bit
+- Build MLX 4 bits: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-4bit
+- Build MLX 3 bits: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-3bit
+- Build MLX bf16: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-bf16
+- Adaptador LoRA MLX: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-MLX-adapter
+- Builds GGUF: https://huggingface.co/netprojects/Qwen3.8-27B-opencode-adapted-GGUF
 - OpenCode: https://opencode.ai
+- Perfil del autor: https://huggingface.co/netprojects

@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 174,
+  "downloads_30d": 176,
   "trending_score": 0,
   "parameters": 808878080,
   "parameters_human": "808.9M",
@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Remettre Facebook en français [Résolu] - Facebook - CommentCaMarche",
-      "url": "https://forums.commentcamarche.net/forum/affich-14117035-remettre-facebook-en-francais",
-      "snippet": "Jun 30, 2019 · Bonjour, J'ai un petit problème avec facebook. Voilà en fait quand j'ouvre ma page, les écritures sont en anglais ? Que …"
-    },
-    {
-      "title": "openai/whisper-large-v3-turbo · Hugging Face",
-      "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
-      "snippet": "Whisper large-v3-turbo is a finetuned version of a pruned Whisper large-v3. In other words, it's the exact same model, except that the number of decoding layers have reduced from 32 to 4. As a result, the model is way faster, at the expense ..."
-    },
-    {
-      "title": "Link para eliminar tu Facebook definitivamente [Resuelto] - CCM",
-      "url": "https://es.ccm.net/forum/affich-141643-link-para-eliminar-tu-facebook-definitivamente",
-      "snippet": "Jun 20, 2015 · Para darte de baja o eliminar tu cuenta de Facebook: *Inicia sesión en Facebook *Haz clic en el botón a la derecha de …"
-    },
-    {
-      "title": "Rastrear una cuenta falsa de Facebook [Resuelto] - CCM",
-      "url": "https://es.ccm.net/forum/affich-1778654-rastrear-una-cuenta-falsa-de-facebook",
-      "snippet": "Jun 3, 2017 · Hola, lamentablemente es difícil saber quién se encuentra detrás de una cuenta falsa, pero al menos puedes reportarla …"
-    },
-    {
-      "title": "Mes jeux facebook ne s ouvre plus [Résolu] - Forum Facebook",
-      "url": "https://forums.commentcamarche.net/forum/affich-35573604-mes-jeux-facebook-ne-s-ouvre-plus",
-      "snippet": "A voir également: Problème jeux facebook google chrome Comment jouer sur facebook- Meilleures réponses Plus de jeux sur …"
-    }
-  ]
+  "sources": []
 }

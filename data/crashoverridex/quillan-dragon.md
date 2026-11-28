@@ -2,84 +2,85 @@
 
 ## Resumen
 
-Quillan-Dragon es un modelo de generacion de texto de aproximadamente 1B parametros publicado por el usuario CrashOverrideX en Hugging Face. Se distribuye como un derivado de `tiiuae/Falcon3-1B-Instruct`, el modelo instructivo de la familia Falcon3 de TII, empaquetado en formato GGUF y preparado para su ejecucion en Ollama. Segun la model card, forma parte de un paquete de tres modelos denominado Quillan, junto a Quillan-Ronin (Flagship) y Quillan-Ronin-Mini, y se presenta como la variante "Dragon" de esa flota.
+Quillan-Dragon es un ajuste (fine-tune) del modelo Falcon3-1B-Instruct de TIIUAE, publicado por el usuario CrashOverrideX bajo licencia Apache 2.0. Segun la model card, no se trata de una fusion de donantes ni de un entrenamiento desde cero, sino de un Falcon3 de aproximadamente 1.000 millones de parametros acompanado de un system message de Ollama que ejecuta el system prompt del proyecto Quillan. El repositorio pesa 7,8 GB y contiene pesos en formato GGUF, lo que sugiere que la distribucion se ha empaquetado principalmente para su uso con Ollama y llama.cpp.
 
-El modelo tiene 1.669.408.768 parametros segun los pesos en safetensors y un repositorio de 7,8 GB, coherente con la publicacion de varias cuantizaciones GGUF. La model card indica explicitamente que Quillan-Dragon no es el resultado de la fusion de cuatro donantes que caracteriza a los otros miembros del paquete, sino una construccion distinta basada en Falcon3 con un mensaje de sistema de Ollama que ejecuta el system prompt de Quillan. La licencia declarada es Apache-2.0 y el unico idioma listado es el ingles.
+El modelo forma parte de un paquete de tres variantes (Quillan-Ronin como flagship, Quillan-Ronin-Mini y Quillan-Dragon), todas en el rango de 0,8 a 1,1 mil millones de parametros. La model card es explicitamente cauta: indica que el trabajo esta "IN PROGRESS", que solo se han superado las puertas de smoke-test y que no se reclama ninguna finalizacion. Tambien aclara que las cifras del 95-100% que aparecen en el README raiz corresponden a un "Cognitive Harness" aplicado sobre un modelo frontera de terceros (Track A) y no a este checkpoint.
 
-Su relevancia practica es limitada: se trata de un modelo pequeno, con 286 descargas y un unico "like", sin resultados de benchmarks propios publicados en la informacion disponible, y cuya model card dedica mas espacio a aclaraciones de linaje y a desmentir lecturas erroneas de tablas de rendimiento que a documentar capacidades tecnicas. Resulta util como ejemplo de empaquetado de un modelo base abierto con una capa de personalidad via prompt de sistema, pero no como referencia de rendimiento.
+La relevancia de este modelo es limitada desde el punto de vista tecnico: se apoya en un Falcon3-1B-Instruct ya existente y su aportacion principal parece ser un system prompt y un empaquetado para Ollama, no una innovacion arquitectonica o de entrenamiento. Su valor practico reside en la posibilidad de ejecutar un asistente conversacional ligero en hardware muy modesto, con la advertencia de que el autor no aporta benchmarks propios verificables.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Falcon3-1B-Instruct; detalles no disponibles) |
-| Parametros totales | 1.669.408.768 |
+| Arquitectura | Transformer decoder-only (heredada de Falcon3-1B-Instruct; no se detalla en la model card) |
+| Parametros totales | 1.669.408.768 (segun safetensors del repo) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (cuantizaciones concretas no disponibles) |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 |
+| Tipos de cuantizacion | no disponible (el repo contiene GGUF; no se especifican las variantes) |
+| Idiomas soportados | ingles (segun la model card); el resto no disponible |
+| Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (repo de 7,8 GB); safetensors referenciados en los metadatos de parametros |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de su origen: el modelo base es `tiiuae/Falcon3-1B-Instruct`, un transformer decoder-only de la familia Falcon3. No se especifican en la informacion proporcionada el numero de capas, dimensiones ocultas, mecanismo de atencion ni la composicion del dataset de entrenamiento del modelo base. Tampoco se documenta si Quillan-Dragon anade entrenamiento adicional, fine-tuning o ajuste por preferencias sobre Falcon3.
+La model card no describe la arquitectura interna del modelo mas alla de identificarlo como un Falcon3-1B-Instruct con un system message de Ollama que ejecuta el system prompt de Quillan. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o SFT. Tampoco se detalla si se reentrenaron pesos o si el "fine-tune" consiste unicamente en el empaquetado del modelo base con un prompt de sistema persistente.
 
-Segun la model card, la construccion de Quillan-Dragon consiste en Falcon3 con un mensaje de sistema de Ollama que ejecuta el system prompt de Quillan. Es decir, la "personalidad" del modelo reside en gran medida en la capa de prompt de sistema y no en una modificacion de pesos documentada. La model card menciona ademas trabajo en curso sobre "group-contribution cross-match" de los donantes del paquete, pero no aporta detalles tecnicos sobre ese proceso ni sobre su impacto en este checkpoint concreto.
+El autor menciona conceptos propios del proyecto Quillan que no tienen correspondencia con una arquitectura de red neuronal estandar: un "Council C1-C34", "35 swarms x 272M = 9.520.000.000 virtual micro-agents" y un contador de version "v5.4.0-oni". Estos elementos parecen describir un andamiaje de prompts o un marco cognitivo externo al modelo, no capas adicionales del transformer. La model card tambien indica que el tokenizer esta "bloqueado" a un Qwen personalizado de 151.648 tokens y que los valores desplegados (151.936 / 128.256) son legacy hasta su recompilacion, lo que introduce una inconsistencia entre el tokenizer declarado y el efectivamente desplegado.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, heredada de Falcon3-1B-Instruct.
-- Instrucciones multi-turno mediante el formato instructivo del modelo base.
-- Comportamiento guiado por un system prompt extenso (el "Quillan system prompt") inyectado a traves del mensaje de sistema de Ollama.
-- No se documenta soporte de tool calling o function calling en la informacion disponible.
-- No se documenta soporte de agentes o razonamiento multi-paso mas alla de lo que ofrece el modelo base.
-- Capacidad multilingue limitada al ingles segun los metadatos del modelo.
-- No se documentan capacidades de vision, audio ni modos de razonamiento extendido (thinking).
+- Generacion de texto conversacional en ingles, heredada del modelo base Falcon3-1B-Instruct.
+- Conversacion multi-turno mediante el system message de Ollama que ejecuta el system prompt de Quillan.
+- Uso como asistente ligero en entornos con recursos muy limitados (aproximadamente 1B de parametros).
+- Capacidades de razonamiento, codigo y matematicas: no documentadas de forma especifica para este checkpoint; se asumen las del modelo base, sin verificacion publicada.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible; la model card menciona "swarms" y "Council" como marco del proyecto, pero no documenta capacidades de agente verificables.
+- Capacidades multilingues: solo se declara ingles.
+- Capacidades especiales (thinking mode, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Prototipado rapido de asistentes conversacionales en local: al estar empaquetado como GGUF y disponible en Ollama, permite levantar un endpoint de chat en ingles con un solo comando, adecuado para pruebas de concepto en equipos con hardware modesto.
-- Experimentacion con system prompts de personalidad: el modelo sirve para estudiar como un prompt de sistema largo y estructurado condiciona las respuestas de un modelo de 1B, util en investigacion sobre alineamiento por prompt.
-- Educacion y demostraciones: su tamano (~1B) y su licencia Apache-2.0 lo hacen apropiado para talleres donde se ensena a desplegar modelos abiertos con Ollama sin requerir GPUs de gama alta.
-- Generacion de texto auxiliar de bajo coste: redaccion de borradores, resumenes cortos o respuestas plantilla en ingles donde no se requiere alta precision y prima el coste por token.
-- Base para fine-tuning ligero: al derivar de Falcon3-1B-Instruct con licencia permisiva, puede servir como punto de partida para ajustes especificos en dominios concretos.
-- Evaluacion comparativa de empaquetados: util para comparar el comportamiento de un mismo modelo base servido via Ollama frente a otras rutas de despliegue (llama.cpp, vLLM) en pruebas de integracion.
+- Asistente conversacional local en equipos sin GPU dedicada: con aproximadamente 1,7 mil millones de parametros y pesos GGUF, el modelo puede ejecutarse en CPU mediante Ollama o llama.cpp, lo que lo hace adecuado para prototipos de chat en portatiles convencionales.
+- Pruebas de integracion de system prompts personalizados: el modelo sirve para validar como se comporta un Falcon3-1B-Instruct cuando se le impone un system prompt largo y persistente a traves de Ollama, util para experimentar con tecnicas de prompting.
+- Chatbot de soporte interno con requisitos de baja latencia: al ser un modelo pequeno, la generacion es rapida incluso en hardware modesto, lo que permite desplegar un asistente de FAQ o triaje en una intranet.
+- Educacion y demostraciones: adecuado para talleres o clases donde se quiera mostrar el ciclo completo de descarga, ejecucion y personalizacion de un modelo GGUF con Ollama sin necesidad de infraestructura costosa.
+- Generacion de texto en ingles para tareas auxiliares (resumenes cortos, reescritura, borradores) donde no se requiera alta precision ni contexto largo.
+- Base para experimentacion con fine-tuning ligero: al estar bajo Apache 2.0 y derivar de Falcon3, puede servir como punto de partida para ajustes posteriores con LoRA en tareas especificas en ingles.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card advierte explicitamente que la tabla del 95-100% del README raiz corresponde a "Track A" (el Quillan Cognitive Harness sobre un modelo base de terceros) y no a este modelo, y que los resultados propios de la flota son las tablas "Tripartite", mas modestas, con celdas de examen pendientes de re-test. No se ofrecen cifras concretas para Quillan-Dragon.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que "this card introduces no new benchmark claim" y que las cifras del 95-100% del README raiz corresponden a un harness aplicado sobre un modelo frontera de terceros, no a este checkpoint. Las tablas "Tripartite" propias del proyecto estan pendientes de re-test en las celdas de examen duro.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1-1,5 GB en cuantizacion Q4, 2-2,5 GB en Q8 y en torno a 3,5 GB en FP16, calculado a partir de los 1,67B parametros.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente; una RTX 3060, RTX 4060 o superior ofrece margen holgado. En entornos de servidor, una T4 o L4 bastan; A100 y H100 no aportan ventaja relevante para este tamano.
-- Cabe en GPU consumer: si, incluidas GPUs de gama de entrada con 4-6 GB de VRAM y en CPU via llama.cpp.
-- Opciones de despliegue: Ollama (via oficial segun la model card), llama.cpp, y potencialmente otros runners compatibles con GGUF. No se documenta soporte especifico de vLLM o TGI.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa para un modelo de aproximadamente 1,7 mil millones de parametros, una cuantizacion Q4 requeriria en torno a 1-1,5 GB y una Q8 en torno a 2 GB, aunque el autor no publica estas cifras.
+- GPU recomendadas: no disponible. Por tamano, cualquier GPU consumer con 4 GB o mas de VRAM deberia poder alojarlo en cuantizaciones bajas.
+- Cabe en GPU consumer: si, previsiblemente en tarjetas como GTX 1650, RTX 3050, RTX 4060 o superiores, asi como en Apple Silicon mediante Metal.
+- Opciones de despliegue: Ollama (`ollama run crashoverridex/Quillan-Dragon`), llama.cpp y cualquier runtime compatible con GGUF. vLLM y TGI no estan documentados para este checkpoint.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Quillan-Dragon | 1,67B | no disponible | Apache-2.0 | Hugging Face, Ollama |
-| tiiuae/Falcon3-1B-Instruct | ~1B | no disponible en esta ficha | Apache-2.0 (modelo base) | Hugging Face |
-| Qwen2.5-1.5B-Instruct | ~1,5B | no disponible en esta ficha | Apache-2.0 | Hugging Face, Ollama |
-| Llama 3.2 1B Instruct | ~1,2B | no disponible en esta ficha | Llama 3.2 Community License | Hugging Face, Ollama |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Quillan-Dragon | ~1,67B | no disponible | Apache 2.0 | GGUF | Fine-tune/empaquetado de Falcon3-1B-Instruct con system prompt propio |
+| Falcon3-1B-Instruct (TIIUAE) | ~1B | no disponible en esta ficha | Apache 2.0 (modelo base) | safetensors, GGUF | Modelo original sobre el que se construye Quillan-Dragon |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (referencia publica del modelo) | Apache 2.0 | safetensors, GGUF | Alternativa multilingue con contexto documentado |
+| Llama-3.2-1B-Instruct | ~1,2B | 128.000 tokens (referencia publica del modelo) | Llama 3.2 Community License | safetensors, GGUF | Alternativa con contexto largo y licencia con restricciones |
 
-Quillan-Dragon comparte arquitectura y origen con Falcon3-1B-Instruct, del que se diferencia principalmente por el empaquetado GGUF y la capa de system prompt. Frente a alternativas como Qwen2.5-1.5B-Instruct o Llama 3.2 1B, su principal desventaja es la ausencia de benchmarks publicados y de documentacion tecnica detallada; su ventaja es la licencia Apache-2.0 sin restricciones adicionales conocidas y la integracion directa con Ollama.
+La comparacion directa con Quillan-Dragon es dificil porque el autor no publica contexto, benchmarks ni variantes de cuantizacion. Frente a Falcon3-1B-Instruct, la diferencia principal es el empaquetado para Ollama y el system prompt, no una mejora medible en capacidades.
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks publicados que permitan validar su calidad; la model card desmiente explicitamente que las cifras altas del README raiz correspondan a este modelo.
-- La model card esta centrada en aclaraciones de linaje y advertencias de interpretacion, lo que dificulta evaluar el modelo tecnicamente.
-- Sesgos conocidos: no documentados; al derivar de Falcon3-1B-Instruct, hereda los sesgos de su dataset de entrenamiento, no detallado en la informacion disponible.
-- Riesgo de alucinacion: elevado en modelos de ~1B, especialmente en tareas de conocimiento factual y razonamiento multi-paso.
-- Limitacion idiomatica: solo se declara ingles; el rendimiento en castellano no esta garantizado ni documentado.
-- Longitud de contexto no documentada, lo que complica planificar casos de uso con conversaciones largas.
-- La "personalidad" del modelo depende de un system prompt, lo que implica que su comportamiento puede degradarse si el prompt no se inyecta correctamente en el runner de destino.
-- Licencia Apache-2.0 permisiva para uso comercial, pero el autor no ofrece garantias ni soporte; el proyecto depende de un unico mantenedor con muy poca traccion (286 descargas).
-- La model card incluye referencias a un marco etico basado en el periodo Edo y el bushido; conviene tratarlo como contexto de diseno del prompt, no como validacion tecnica.
+- La model card declara el trabajo como "IN PROGRESS" y con "smoke-test gates only, no completion claim": no debe tratarse como un modelo validado para produccion.
+- No hay benchmarks propios publicados; las cifras del README raiz corresponden a otro sistema (Track A) y no a este checkpoint.
+- Inconsistencia en el tokenizer: se declara un tokenizer Qwen personalizado de 151.648 tokens, pero los valores desplegados (151.936 / 128.256) son legacy hasta recompilacion, lo que puede afectar a la tokenizacion real.
+- Idioma: solo se declara ingles; no hay evidencia de capacidades multilingues.
+- Riesgo de alucinacion: inherente a un modelo de ~1B de parametros; no se documentan mitigaciones.
+- Sesgos: no documentados por el autor; se heredan los del modelo base y los del system prompt de Quillan.
+- Terminologia del proyecto (Council, swarms, micro-agents virtuales) no corresponde a componentes verificables del modelo y no debe interpretarse como arquitectura real.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base Falcon3-1B-Instruct debe verificarse por separado para confirmar compatibilidad.
+- El modelo se distribuye principalmente como GGUF; no se garantiza la disponibilidad de pesos en safetensors para fine-tuning.
 
 ## Enlaces
 

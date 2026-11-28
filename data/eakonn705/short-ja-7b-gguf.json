@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "eakonn705/short-ja-7b-gguf",
+  "slug": "eakonn705-short-ja-7b-gguf",
+  "author": "eakonn705",
+  "url": "https://huggingface.co/eakonn705/short-ja-7b-gguf",
+  "created_at": "2026-11-28T03:18:35.000Z",
+  "updated_at": "2026-11-28T04:10:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "ja",
+    "dataset:eakonn705/short_ja_dataset",
+    "base_model:llm-jp/llm-jp-3-7.2b-instruct3",
+    "base_model:quantized:llm-jp/llm-jp-3-7.2b-instruct3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7292063744,
+  "parameters_human": "7.29B",
+  "storage_bytes": 7750992096,
+  "storage_human": "7.8 GB",
+  "context_length": 4096,
+  "base_model": "llm-jp/llm-jp-3-7.2b-instruct3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

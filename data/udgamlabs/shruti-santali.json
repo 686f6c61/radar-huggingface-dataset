@@ -56,16 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Udgam Labs · AI research from first principles",
-      "url": "https://udgamlabs.com/",
-      "snippet": "Udgam Labs · AI research from first principles We make small AI models you can try in your browser. Shruti Turns speech into text on your device, with no server. 11 languages, each with English. Try → Vemana Continues the Telugu text you start. A base model, trained live in public. Try → Gargi A small English language model that thinks step by step on maths problems. Try → Lilavati ..."
-    },
-    {
-      "title": "GitHub - udgamlabs/shruti: Shruti: 29.5 MB speech-to-text for Hindi ...",
-      "url": "https://github.com/udgamlabs/shruti",
-      "snippet": "Shruti: 29.5 MB speech-to-text for Hindi, English and Hinglish that runs offline on a phone, a laptop or in the browser. Built on Cactus Whistle. Docs, runnable examples and checksums; weights on Hugging Face. - udgamlabs/shruti"
-    }
-  ]
+  "sources": []
 }

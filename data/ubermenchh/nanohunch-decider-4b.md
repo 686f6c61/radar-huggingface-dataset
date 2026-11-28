@@ -2,97 +2,100 @@
 
 ## Resumen
 
-`ubermenchh/nanohunch-decider-4b` es un adaptador LoRA de investigación para `Qwen/Qwen3-4B-Instruct-2507`, publicado por el usuario ubermenchh bajo licencia Apache-2.0. El adaptador no genera texto: lee un estado textual y una pregunta tipada (elección entre opciones, sí/no o puntuación numérica) y devuelve una distribución de probabilidad sobre las etiquetas de respuesta, extraída directamente de los logits de los tokens de etiqueta (A, B, C) en el último token. Está entrenado en MLX sobre un Mac con Apple Silicon y distribuido en formato nativo de MLX (`adapter.npz`), no en PEFT.
+nanohunch-decider-4b es un adaptador LoRA de rango 16 sobre Qwen3-4B-Instruct-2507, desarrollado por el usuario independiente ubermenchh. Su funcion no es generar texto, sino devolver probabilidades calibradas para preguntas de decision tipadas: eleccion multiple (choice), si/no (noul) y puntuacion ordinal (score). El modelo aplica softmax sobre los logits de las etiquetas de respuesta en el ultimo token, de modo que cada consulta requiere una sola pasada forward sin decodificacion autoregresiva.
 
-El modelo base es un transformer denso de 4.000 millones de parámetros de la familia Qwen3, con contexto nativo de 262.144 tokens (dato del modelo base, no verificado en la información proporcionada para este adaptador). El adaptador añade LoRA de rango 16 y alpha 32 sobre las siete proyecciones de las 36 capas del modelo, con temperaturas de calibración ajustadas por tipo de pregunta.
+El adaptador se entrena sobre 4.000 preguntas de decision con objetivos suaves (la probabilidad del profesor en lugar de una etiqueta dura), y se evalua en el benchmark OpenDecisions (2.352 preguntas reservadas), donde alcanza una capacidad de 57,1 puntos frente a los 53,1 del Qwen3-4B-Base sin entrenar. La metrica de capacidad se define como (Inteligencia + Calibracion) / 2 segun el script de puntuacion del propio dataset.
 
-La relevancia del artefacto es acotada y explícita: el propio autor lo describe como "un artefacto de investigación de un experimento pequeño, no un modelo de producción". Su interés técnico reside en el enfoque de calibración por tipo de pregunta y en la evaluación sobre OpenDecisions, no en capacidades generales de generación.
+Es un artefacto de investigacion, no un modelo de produccion. Se distribuye en dos formatos (PEFT para transformers y MLX para Apple Silicon) bajo licencia Apache 2.0. Su relevancia radica en demostrar que un adaptador pequeno puede mejorar la calibracion de un modelo de 4B en tareas de decision estructurada sin generar texto, lo que reduce latencia y coste en pipelines de clasificacion y enrutamiento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen3) con adaptador LoRA; inferencia en MLX |
-| Parámetros totales | 4B (modelo base Qwen3-4B-Instruct-2507) + adaptador LoRA rango 16 |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la información del adaptador (el modelo base Qwen3-4B-Instruct-2507 soporta 262.144 tokens) |
-| Tipos de cuantización | No disponible; pesos del adaptador en `adapter.npz` (float, MLX) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | `adapter.npz` (MLX, no PEFT) + `config.json` con forma LoRA y temperaturas |
+| Arquitectura | LoRA (rango 16, alpha 32) sobre Qwen3-4B-Instruct-2507 (transformer decoder-only) |
+| Parametros totales | 4B (modelo base); adaptador LoRA: no disponible con precision (fichero de 132 MB) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (heredada del modelo base Qwen3-4B-Instruct-2507) |
+| Tipos de cuantizacion | No disponible (pesos publicados en bfloat16 para PEFT y en formato MLX) |
+| Idiomas soportados | No disponible (heredados del modelo base) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (PEFT), npz (MLX) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se aplica sobre Qwen3-4B-Instruct-2507, un transformer denso de 4B parámetros. La intervención LoRA cubre las siete proyecciones de las 36 capas del modelo base, con rango 16 y alpha 32. La particularidad del diseño es que no se usa decodificación generativa: el prompt presenta una pregunta tipada con opciones etiquetadas A, B y C, y la predicción se lee de los logits de esos tokens de etiqueta en la última posición. Antes del softmax, los logits se dividen por una temperatura específica del tipo de pregunta (`temp_by_type` en `config.json`), ajustada sobre preguntas de validación del conjunto decider en las que el profesor mostraba menor confianza (probabilidad inferior a 0,8).
+El adaptador aplica LoRA de rango 16 con alpha 32 sobre las siete proyecciones de las 36 capas del modelo base Qwen3-4B-Instruct-2507. El entrenamiento utiliza 4.000 preguntas de decision con objetivos suaves, es decir, la distribucion de probabilidad del profesor en lugar de una etiqueta discreta, lo que permite al adaptador aprender la calibracion del profesor y no solo la respuesta correcta. Todas las temperaturas se fijan a 1: el autor documenta que una temperatura ajustada sobre preguntas reservadas reducia las puntuaciones de OpenDecisions en modelos con objetivos suaves, por lo que conserva los valores ajustados solo como referencia (`temp_fitted_on_decider_hard`).
 
-Los datos de entrenamiento son 4.000 preguntas de decisión escritas por un profesor, procedentes de `github.com/Mapika/decider` (Apache-2.0, commit `91b6fa9`), descartando aquellas en las que el profesor no estaba de acuerdo, más 810 preguntas públicas de BoolQ, ARC-Challenge y CommonsenseQA como replay. El entrenamiento consistió en una pasada de 150 pasos con 32 preguntas por paso, tasa de aprendizaje 1e-4 con warmup y decaimiento coseno, y barajado del orden de opciones en cada paso, con semilla 0. OpenDecisions no se usó ni para entrenar ni para ajustar temperaturas. El autor advierte que la receta de temperatura por tipo se eligió tras observar una puntuación de OpenDecisions, por lo que su ganancia es optimista.
+La innovacion principal es el formato de pregunta tipada: choice (hasta 8 opciones con nombre y descripcion), noul (si/no con criterios opcionales `true`/`false`) y score (niveles ordinales de 2 a 10, de menor a mayor). La respuesta se obtiene leyendo los logits de las etiquetas de respuesta en el ultimo token y aplicando softmax, sin generar texto. El adaptador se publica en dos formatos equivalentes: PEFT (convertido desde MLX con `to_peft.py` y verificado en 40 preguntas del benchmark, con la misma respuesta top en las 40 y probabilidades dentro de 0,022) y MLX nativo.
 
 ## Capacidades
 
-- Clasificación de decisión sobre estado textual: elección entre opciones (choice), respuesta sí/no y puntuación numérica (score).
-- Salida de distribuciones de probabilidad calibradas por tipo de pregunta, no texto libre.
-- Lectura de logits de etiquetas en el último token, con opciones etiquetadas A, B, C.
-- Ajuste de calibración mediante temperaturas por tipo de pregunta.
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso.
-- Capacidades multilingües: no documentadas para el adaptador.
-- No dispone de modo thinking, visión ni audio.
+- Clasificacion de decision con probabilidades calibradas: devuelve una distribucion de probabilidad sobre opciones nombradas, no una respuesta generada.
+- Preguntas de eleccion multiple (choice) con hasta 8 opciones, cada una con nombre y descripcion.
+- Preguntas de si/no (noul) con criterios opcionales que describen cada respuesta.
+- Preguntas de puntuacion ordinal (score) con entre 2 y 10 niveles ordenados de menor a mayor.
+- Entrada de estado flexible: texto plano, diccionario o lista (se serializa como JSON).
+- Inferencia de una sola pasada forward por pregunta, sin decodificacion autoregresiva.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un cabezal de decision, no un modelo conversacional.
+- Capacidades multilingues: no documentadas de forma especifica; dependen del modelo base.
 
 ## Casos de uso
 
-- Enrutamiento de decisiones binarias en pipelines: dado un estado textual y una pregunta sí/no, el adaptador devuelve una probabilidad calibrada que puede usarse como umbral en un sistema de control, sin necesidad de parsear texto generado.
-- Clasificación de opciones en experimentos de investigación: para evaluar calibración de modelos pequeños en tareas de elección múltiple con preguntas tipadas y opciones etiquetadas.
-- Replay y comparación de recetas de ajuste: sirve como referencia reproducible (semilla 0, hiperparámetros documentados) para estudiar el efecto de LoRA y temperaturas por tipo en modelos de 4B.
-- Análisis de calibración en dominios acotados: útil para medir la fiabilidad de probabilidades en preguntas de sentido común o lectura (BoolQ, ARC-Challenge, CommonsenseQA) cuando el formato de entrada encaja con el prompt de `data.py`.
-- Investigación sobre "System One" y decisiones rápidas: el repositorio nanohunch lo enmarca en un experimento de decisión de un solo paso, comparable contra `decider-2b` y réplicas abiertas.
-- Prototipado en Apple Silicon: al estar en MLX, permite cargar y ejecutar el adaptador en un Mac sin GPU dedicada, útil para iteración rápida en investigación.
+- Enrutamiento de tickets de soporte: el modelo clasifica el estado de la conversacion en categorias como reembolso, reemplazo o consulta informativa, y decide si escalar a un agente humano mediante una pregunta noul. La salida probabilistica permite fijar umbrales de derivacion.
+- Triaje de urgencia: con una pregunta score de 4 niveles (no urgente, algo urgente, urgente, critico) sobre el texto del ticket, se obtiene una distribucion ordinal que alimenta colas de atencion priorizadas.
+- Moderacion de contenido: preguntas noul sobre si un texto cumple una politica concreta, con la probabilidad como senal de confianza para revision humana.
+- Extraccion de intencion en asistentes: dado el turno del usuario, una pregunta choice con las intenciones definidas del dominio devuelve la probabilidad de cada una, util para desambiguar antes de invocar herramientas.
+- Clasificacion de documentos y correos: preguntas choice sobre tipo de documento, departamento destinatario o accion requerida, con una sola pasada por documento y sin coste de generacion.
+- Evaluacion de calidad de respuestas: preguntas score sobre correccion, relevancia o tono de una respuesta generada, usando la calibracion para filtrar salidas dudosas en pipelines de RLHF o evaluacion automatica.
+- Investigacion en calibracion: el adaptador y su codigo sirven como banco de pruebas reproducible para estudiar objetivos suaves y calibracion en modelos de 4B, con el benchmark OpenDecisions como referencia.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre OpenDecisions (2.352 preguntas reservadas, `score.py` del propio dataset):
+| Benchmark | Metrica | nanohunch-decider-4b | Qwen3-4B-Base |
+|---|---|---|---|
+| OpenDecisions (2.352 preguntas reservadas) | Capacidad = (Inteligencia + Calibracion) / 2 | 57,1 (media de 4 semillas, desviacion tipica 1,0) | 53,1 |
 
-| Modelo | Capability | Intelligence | Calibration | choice | yes/no | score |
-|---|---|---|---|---|---|---|
-| Qwen3-4B-Base, sin entrenamiento | 53,1 | 26,3 | 80,0 | 55,4 % | 68,9 % | 40,8 % |
-| Qwen3-4B-Instruct-2507, sin entrenamiento | 35,4 | 31,0 | 39,8 | 62,4 % | 69,6 % | 45,7 % |
-| Este adaptador, temperatura por tipo | 56,7 | 42,8 | 70,7 | 68,3 % | 74,4 % | 57,1 % |
-| Este adaptador, una sola temperatura | 54,8 | 42,7 | 66,9 | 68,3 % | 74,4 % | 57,1 % |
-| Misma receta, semilla 1, temperatura por tipo | 54,1 | 40,3 | 67,8 | 67,3 % | 73,0 % | 53,9 % |
+El autor indica que diferencias inferiores a 2 puntos no se consideran significativas segun los autores del dataset. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada; el modelo base es de 4B parámetros, por lo que en fp16 requiere aproximadamente 8 GB solo para pesos, más overhead de activaciones y contexto.
-- GPU recomendadas: no especificadas por el autor. El adaptador está entrenado y pensado para MLX en Apple Silicon.
-- Cabe en GPU de consumo: previsiblemente sí para el modelo base en cuantizaciones de 4-8 bits, pero no hay datos publicados para este adaptador.
-- Opciones de despliegue: MLX con `model.py` y `od.py` del repositorio nanohunch; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, y el formato `adapter.npz` no es PEFT.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: aproximadamente 8 GB para el modelo base en bfloat16 mas el adaptador de 132 MB; en cuantizacion de 4 bits el modelo base requeriria del orden de 2-3 GB, aunque el autor no publica pesos cuantizados.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bfloat16 (RTX 3090, RTX 4090, A10, L4); A100 o H100 sobredimensionadas para este tamano.
+- Cabe en GPU de consumo: si, en RTX 3090, RTX 4090 y tarjetas con 8 GB o mas en bfloat16; el ejemplo de la model card se ejecuto en CPU.
+- Apple Silicon: probado en un Mac con 24 GB de memoria unificada, con un consumo de unos 8 GB.
+- Opciones de despliegue: transformers + peft (PEFT/safetensors), MLX en Apple Silicon o Linux con `mlx[cuda12]`; el autor no documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; al requerir una sola pasada forward sin generacion, la latencia es sustancialmente menor que la de un modelo generativo del mismo tamano, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | OpenDecisions (score) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nanohunch-decider-4b (este) | 4B + LoRA r16 | No disponible | 57,1 % | Apache-2.0 | Hugging Face, formato MLX |
-| Qwen3-4B-Instruct-2507 sin entrenar | 4B | 262.144 (modelo base) | 45,7 % | Apache-2.0 | Hugging Face |
-| Qwen3-4B-Base sin entrenar | 4B | 262.144 (modelo base) | 40,8 % | Apache-2.0 | Hugging Face |
-| decider-2b (modelo entrenado de 2B) | 2B | No disponible | No disponible | No disponible | Referenciado en el repositorio nanohunch |
-| Fine-tunes del leaderboard de OpenDecisions para 4B | 4B | No disponible | 67,7 y 77,1 | No disponible | Leaderboard de OpenDecisions |
+| nanohunch-decider-4b | 4B (base) + LoRA r16 | No disponible | Decision tipada con probabilidades calibradas | Apache 2.0 | Hugging Face (PEFT y MLX) |
+| Qwen3-4B-Instruct-2507 | 4B | No disponible | Generacion de texto instructiva | Apache 2.0 | Hugging Face |
+| Qwen3-4B-Base | 4B | No disponible | Modelo base sin ajuste | Apache 2.0 | Hugging Face |
+
+La comparativa con alternativas especializadas en calibracion o clasificacion con probabilidades no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La ganancia de capability (56,7 frente a 53,1 del base sin entrenar) está dentro del ruido declarado por OpenDecisions (2 puntos); las dos semillas difieren en 2,6 puntos. Solo la mejora sobre Instruct sin entrenar (3 a 11 puntos) se considera sólida según el autor.
-- La calibración (70,7) sigue por debajo del modelo base sin entrenar (80,0).
-- La receta de temperatura por tipo se eligió tras ver una puntuación de OpenDecisions, por lo que su ganancia es optimista.
-- Está muy por debajo de los fine-tunes del leaderboard de OpenDecisions para modelos de 4B (67,7 y 77,1).
-- Una pasada por pregunta y opciones en el orden dado; no se ha probado con otros formatos de pregunta.
-- Es un artefacto de investigación, no un modelo de producción, según el propio autor.
-- Riesgo de alucinación y sesgos: no documentados específicamente para el adaptador; hereda los del modelo base Qwen3-4B-Instruct-2507.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero la ausencia de evaluación en producción y el formato MLX limitan su aplicabilidad directa.
-- El adaptador no es PEFT y requiere el código de nanohunch para cargarse; no es plug-and-play con el ecosistema estándar de Hugging Face.
+- Es un artefacto de investigacion, no un modelo de produccion; el autor lo declara explicitamente.
+- No genera texto: solo devuelve probabilidades sobre etiquetas de respuesta predefinidas.
+- La sensibilidad al orden de las opciones puede cambiar ligeramente la respuesta; el autor mide la tasa de inversion en la documentacion publica del dataset.
+- La calibracion se evalua unicamente en OpenDecisions; no hay evidencia de calibracion fuera de ese dominio.
+- La temperatura debe mantenerse a 1; ajustarla sobre preguntas reservadas degrada las puntuaciones en modelos con objetivos suaves.
+- Maximo de 8 opciones por pregunta y entre 2 y 10 niveles en preguntas score.
+- No soporta tool calling, agentes ni razonamiento multi-paso.
+- Idiomas soportados no documentados; el comportamiento fuera del ingles no esta caracterizado.
+- Riesgo de sesgo y alucinacion heredado del modelo base Qwen3-4B-Instruct-2507, no evaluado de forma especifica para este adaptador.
+- Licencia Apache 2.0 permite uso comercial, pero sin garantias ni soporte del autor.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/ubermenchh/nanohunch-decider-4b
-- Repositorio nanohunch: https://github.com/ubermenchh/nanohunch
-- Documento de diseño: https://github.com/ubermenchh/nanohunch/tree/main/docs/design/2026-09-23-nanohunch
-- Dataset decider (profesor): https://github.com/Mapika/decider
+- Modelo en Hugging Face: https://huggingface.co/ubermenchh/nanohunch-decider-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Repositorio GitHub: https://github.com/ubermenchh/nanohunch
+- Script de conversion a PEFT: https://github.com/ubermenchh/nanohunch/blob/main/to_peft.py
+- Script de inferencia MLX: https://github.com/ubermenchh/nanohunch/blob/main/ask.py
+- Dataset OpenDecisions: https://huggingface.co/datasets/jgeuter/OpenDecisions
+- Paper de referencia (LoRA): https://arxiv.org/abs/2106.09685
+- Paper de referencia (calibracion, arxiv:1706.04599): https://arxiv.org/abs/1706.04599
+- Paper de referencia (destilacion, arxiv:1503.02531): https://arxiv.org/abs/1503.02531

@@ -2,49 +2,51 @@
 
 ## Resumen
 
-Qemma-sft es un modelo experimental de generación de texto creado por el usuario independiente reaperdoesntknow (Convergent Intelligence LLC: Research Division). Se trata de un híbrido construido a nivel de pesos que fusiona el cuerpo de Gemma-3 (1B) de Google con el mecanismo de atención de Qwen3-0.6B de Alibaba, proyectando y alineando las dimensiones ocultas para que ambos componentes encajen. Posteriormente el modelo se ha afinado con SFT (supervised fine-tuning) para seguir instrucciones y producir razonamiento paso a paso.
+Qemma-sft es un modelo experimental de generación de texto desarrollado por reaperdoesntknow (Convergent Intelligence LLC, Research Division) que fusiona a nivel de pesos dos modelos existentes: Gemma-3 (1B) de Google y Qwen-3 (0.6B) de Alibaba. La propuesta consiste en combinar el cuerpo y la MLP de Gemma-3 con la atención y la cabeza de Qwen-3, proyectando y alineando las dimensiones ocultas de ambos para que encajen en el tamaño oculto de Gemma (1152). Tras la fusión, el modelo se somete a un ajuste supervisado (SFT) orientado a seguir instrucciones y a razonar paso a paso.
 
-La propuesta técnica es poco convencional: en lugar de destilar o adaptar un único modelo base, el autor combina la columna vertebral (MLP y cuerpo) de Gemma-3 con atención de estilo Qwen reorganizada en las cuatro cabezas de 256 dimensiones de Gemma. El tokenizador y la plantilla de chat son los de Gemma-3. El resultado es un modelo de aproximadamente 1B parámetros orientado a investigación, no a producción crítica.
+El modelo se publica como parte del marco teórico "Discrepancy Calculus" (DISC) del autor, una aproximación de teoría de la medida al análisis del entrenamiento, y se distribuye con licencia OSL-3.0. Su relevancia es fundamentalmente investigadora: demuestra una técnica de fusión de pesos entre arquitecturas distintas y un pipeline de SFT por etapas sobre un modelo híbrido de muy pequeño tamaño.
 
-Su relevancia es acotada: se trata de un experimento de fusión de pesos publicado en Hugging Face con licencia OSL-3.0, solo en inglés y con un volumen de descargas moderado (unas 2.400 en el momento de la consulta). Resulta interesante como caso de estudio de interoperabilidad entre arquitecturas y como base para ulteriores ciclos de SFT/RLHF, pero no compite con modelos consolidados de su tamaño.
+Con alrededor de 1B de parámetros (el cuerpo de Gemma-3 1B) y un contexto heredado del tokenizer y la plantilla de chat de Gemma-3, Qemma-sft no compite con modelos frontera, sino que sirve como banco de pruebas para experimentación con arquitecturas híbridas y ajuste fino eficiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: cuerpo/MLP de Gemma-3 con atención de estilo Qwen3 proyectada a la dimensión oculta de Gemma (26 capas, hidden 1152, MLP 6912, 4 cabezas × 256) |
-| Parametros totales | Aproximadamente 1B (no se publica cifra exacta) |
+| Arquitectura | Transformer híbrido: cuerpo y MLP de Gemma-3 (26 capas, hidden 1152, MLP 6912) con atención estilo Qwen reagrupada a 4x256 cabezas de Gemma |
+| Parametros totales | Aproximadamente 1B (hereda el tamaño del cuerpo de Gemma-3 1B; no se especifica cifra exacta en la model card) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (pesos en bfloat16 en el ejemplo de uso; sin variantes GGUF publicadas) |
-| Idiomas soportados | Inglés (en) |
+| Longitud de contexto | No disponible en la informacion proporcionada (heredada de Gemma-3 1B) |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada; pesos en bfloat16 |
+| Idiomas soportados | Ingles (en) |
 | Licencia | OSL-3.0 |
-| Formato de pesos | safetensors (repositorio de 28,1 GB, pesos en bfloat16) |
+| Formato de pesos | safetensors (formato de transformers; tamano del repo 28.1 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer denso que combina dos arquitecturas distintas a nivel de pesos. La columna vertebral es la de Gemma-3 (1B): 26 capas, dimensión oculta de 1152 y MLP de 6912. Sobre ella se injerta la atención de Qwen3-0.6B, reorganizada para encajar en las cuatro cabezas de 256 dimensiones de Gemma, con proyecciones y alineación de dimensiones ocultas. No se emplean adaptadores: la fusión es directa sobre los pesos. El tokenizador y la plantilla de chat son los de Gemma-3 (`chat_template.jinja`).
+Qemma-sft es un transformer híbrido construido por fusión de pesos: toma el backbone de Gemma-3 1B (26 capas, dimensión oculta 1152, MLP de 6912) y le injerta la atención de Qwen-3 0.6B, reagrupada para encajar en las 4x256 cabezas de Gemma. Las proyecciones se alinean a la dimensión oculta de Gemma, de modo que el modelo resultante conserva el tokenizer y la plantilla de chat de Gemma-3. No se emplean adaptadores: la fusión es a nivel de pesos.
 
-El entrenamiento se estructura en cuatro fases secuenciales: unas 512 iteraciones de warm-start con datos estilo Alpaca (`yahma/alpaca-cleaned`), 256 pasos adicionales de preentrenamiento sobre `O1-OPEN/OpenO1-SFT`, 128 pasos de SFT con `Jackrong/gpt-oss-120b-reasoning-STEM-5K` y 256 pasos finales de SFT sobre `O1-OPEN/OpenO1-SFT`. Se usaron TRL 0.25.0, Transformers 4.57.1, PyTorch 2.8.0 (CPU) y Datasets 4.4.1. No se documentan volúmenes de tokens, composición detallada del dataset ni fases de RLHF/DPO.
+El entrenamiento se organiza en cuatro fases: aproximadamente 512 pasos de warm-start con datos estilo Alpaca (yahma/alpaca-cleaned), 256 pasos de preentrenamiento adicional sobre O1-OPEN/OpenO1-SFT, 128 pasos de SFT con Jackrong/gpt-oss-120b-reasoning-STEM-5K y 256 pasos finales de SFT sobre O1-OPEN/OpenO1-SFT. Se usaron TRL 0.25.0, Transformers 4.57.1, PyTorch 2.8.0 (CPU), Datasets 4.4.1 y Tokenizers 0.22.1. No se documenta uso de RLHF ni DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés con plantilla de chat de Gemma-3.
-- Seguimiento de instrucciones (instruction following) tras el ciclo de SFT.
-- Razonamiento paso a paso orientado a problemas de tipo STEM, gracias al dataset de razonamiento empleado en una de las fases de SFT.
-- Generación y asistencia en código a nivel básico, derivada de los datasets de instrucciones.
-- Soporte de conversaciones multi-turno mediante la plantilla de chat del tokenizador.
-- Capacidad de servir como base para ulteriores ciclos de SFT o RLHF.
-- No se documenta soporte de tool calling, function calling, agentes, visión ni audio.
+- Generación de texto conversacional con plantilla de chat de Gemma-3.
+- Seguimiento de instrucciones y razonamiento paso a paso (stepwise reasoning), objetivo explícito del SFT.
+- Razonamiento STEM, gracias al ajuste con el dataset gpt-oss-120b-reasoning-STEM-5K.
+- Asistencia en código y análisis, según la sección de uso previsto de la model card.
+- Capacidad de servir como base para SFT o RLHF posteriores.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y multi-step reasoning: no disponible en la informacion proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Modo thinking, visión o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Investigación sobre fusión de pesos entre arquitecturas: el modelo sirve como banco de pruebas para estudiar la interoperabilidad entre el cuerpo de Gemma-3 y la atención de Qwen3, y para medir el impacto de la alineación de dimensiones ocultas.
-- Generación de explicaciones técnicas breves: útil para producir párrafos explicativos sobre conceptos científicos o de ingeniería, como en el ejemplo de la model card sobre la discrepancia a escala finita.
-- Asistente conversacional de prototipo en inglés: puede integrarse en demos de chat multi-turno mediante la plantilla de Gemma-3 y `transformers`.
-- Base para experimentos de SFT adicional: su estructura híbrida permite estudiar cómo responde un cuerpo Gemma con atención Qwen a nuevos datasets de instrucciones.
-- Generación de borradores de razonamiento STEM: adecuado para producir cadenas de razonamiento preliminares que luego se revisan manualmente, dado el dataset de entrenamiento orientado a STEM.
-- Reproducción de pipelines de entrenamiento con TRL: sirve para validar flujos de warm-start, preentrenamiento y SFT secuenciales documentados en la model card.
+- Investigación sobre fusión de pesos entre arquitecturas: Qemma-sft sirve como caso de estudio reproducible para evaluar si el injerto de atención de un modelo en el cuerpo de otro preserva capacidades, útil en laboratorios que estudian model merging.
+- Prototipado de asistentes conversacionales en inglés: con el tokenizer y la plantilla de chat de Gemma-3, se puede desplegar un chatbot ligero para pruebas internas sin coste elevado de inferencia.
+- Generación de explicaciones paso a paso en dominios STEM: el ajuste con datos de razonamiento científico permite usarlo como generador de borradores de solución en ejercicios de matemáticas o física, siempre con revisión humana.
+- Base para SFT o RLHF posteriores: al ser un modelo pequeño y con licencia OSL-3.0, es adecuado como punto de partida para experimentos de ajuste fino con TRL en entornos con recursos limitados.
+- Evaluación de pipelines de entrenamiento por etapas: las cuatro fases documentadas (warm-start, preentrenamiento, SFT STEM y SFT general) permiten reproducir y comparar curricula de entrenamiento.
+- Docencia y divulgación: sirve para ilustrar en cursos cómo se combinan dos modelos de pesos abiertos y cómo se alinea una cabeza de atención entre dimensiones ocultas distintas.
 
 ## Benchmarks y rendimiento
 
@@ -52,44 +54,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: en torno a 2-3 GB para los pesos de un modelo de ~1B parámetros, más el overhead de activaciones y caché KV.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bfloat16; una RTX 4090, A100 o H100 ofrecen margen sobrado.
-- Cabe en GPU de consumo: sí, en tarjetas con 8 GB o más (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090). En GPUs con menos VRAM sería necesario cuantizar, aunque no se publican variantes GGUF.
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` (documentado en la model card); el tag `text-generation-inference` sugiere compatibilidad con TGI, y `endpoints_compatible` con Inference Endpoints de Hugging Face. No se documentan recetas para vLLM, llama.cpp u Ollama.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial; con pesos en bfloat16 (tamaño de repo 28.1 GB, que incluye artefactos de entrenamiento) el modelo de aproximadamente 1B requiere del orden de 2-4 GB en bf16, y menos con cuantización de 8 o 4 bits.
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para bf16; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son suficientes.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU consumer moderna con 8 GB o más.
+- Opciones de despliegue: transformers (referencia oficial), text-generation-inference (etiqueta endpoints_compatible), y previsiblemente llama.cpp u Ollama si se generan pesos GGUF, aunque no se documentan en la informacion proporcionada.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| Qemma-sft | ~1B | No disponible | OSL-3.0 | Hugging Face, transformers | Híbrido Gemma-3 + atención Qwen3, solo inglés |
-| google/gemma-3-1b-it | ~1B | No disponible en la información | Gemma Terms of Use | Hugging Face, amplia adopción | Modelo base original; ecosistema y soporte maduros |
-| Qwen/Qwen3-0.6B | ~0,6B | No disponible en la información | No disponible en la información | Hugging Face, amplia adopción | Modelo base original; multilingüe y con soporte de tooling |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Qemma-sft | ~1B (híbrido Gemma-3 + Qwen-3) | No disponible | OSL-3.0 | Hugging Face |
+| google/gemma-3-1b-it | ~1B | No disponible en la informacion proporcionada | Gemma Terms of Use | Hugging Face |
+| Qwen/Qwen3-0.6B | ~0.6B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
-La comparación cuantitativa de rendimiento no está disponible: no se han publicado benchmarks del modelo en la información proporcionada. Frente a sus dos modelos base, Qemma-sft no aporta ventajas verificables de rendimiento y su ecosistema de despliegue es mucho más limitado.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación reconocido explícitamente por el autor; no apto para decisiones críticas de seguridad, médicas, legales o financieras.
-- Solo soporta inglés; no se documentan capacidades multilingües.
-- Longitud de contexto no especificada, lo que dificulta planificar cargas con ventanas largas.
-- Licencia OSL-3.0: conviene revisar sus términos antes de un uso comercial, especialmente las cláusulas de copyleft sobre obras derivadas.
-- Modelo de investigación con una única descarga relevante en likes (1) y sin benchmarks publicados; la madurez y la fiabilidad en producción no están contrastadas.
-- El repositorio ocupa 28,1 GB, un tamaño desproporcionado para un modelo de ~1B, lo que puede indicar pesos duplicados o artefactos de entrenamiento y complica su descarga y despliegue.
-- La fusión de pesos entre arquitecturas distintas puede introducir comportamientos impredecibles no caracterizados.
-- No se documentan variantes cuantizadas (GGUF, AWQ, GPTQ), lo que limita el despliegue en hardware modesto.
-- El marco teórico "Discrepancy Calculus" que rodea al modelo no sustituye a una evaluación empírica independiente.
+- Riesgo de alucinación: la propia model card advierte de que el modelo puede alucinar.
+- No apto para decisiones críticas: el autor lo desaconseja explícitamente para usos sanitarios, legales, financieros o de seguridad crítica.
+- Idiomas: solo se declara inglés; el rendimiento en castellano no está verificado.
+- Licencia OSL-3.0: impone obligaciones de copyleft sobre obras derivadas; conviene revisar sus términos antes de uso comercial.
+- Modelo experimental: la fusión de pesos entre arquitecturas distintas y el entrenamiento por etapas no cuentan con evaluación independiente ni benchmarks publicados.
+- Contexto: la longitud de contexto efectiva no se documenta y podría diferir de la de Gemma-3 1B original.
+- Sesgos: no se documentan evaluaciones de sesgo en la informacion proporcionada.
+- Tamaño del repo: 28.1 GB frente a un modelo de ~1B, lo que sugiere la inclusión de checkpoints intermedios u otros artefactos; conviene verificar qué ficheros se descargan.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qemma-sft
-- Perfil del autor: https://huggingface.co/reaperdoesntknow
-- Modelo base Gemma-3 1B IT: https://huggingface.co/google/gemma-3-1b-it
-- Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
-- Dataset OpenO1-SFT: https://huggingface.co/datasets/O1-OPEN/OpenO1-SFT
-- Dataset Alpaca cleaned: https://huggingface.co/datasets/yahma/alpaca-cleaned
-- Dataset STEM reasoning: https://huggingface.co/datasets/Jackrong/gpt-oss-120b-reasoning-STEM-5K
-- Documento Discrepancy Calculus: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
-- Documento Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
-- Documento Three Teachers to Dual Cognition: https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy (DOI: 10.57967/hf/8184)
+- Modelo base Gemma-3 1B: https://huggingface.co/google/gemma-3-1b-it
+- Modelo base Qwen3 0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
+- Dataset O1-OPEN/OpenO1-SFT: https://huggingface.co/datasets/O1-OPEN/OpenO1-SFT
+- Dataset yahma/alpaca-cleaned: https://huggingface.co/datasets/yahma/alpaca-cleaned
+- Dataset Jackrong/gpt-oss-120b-reasoning-STEM-5K: https://huggingface.co/datasets/Jackrong/gpt-oss-120b-reasoning-STEM-5K
 - Repositorio TRL: https://github.com/huggingface/trl
+- Discrepancy Calculus (DOI: 10.57967/hf/8194): https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus
+- Structure Over Scale (DOI: 10.57967/hf/8165): https://huggingface.co/reaperdoesntknow/Structure-Over-Scale
+- Three Teachers to Dual Cognition (DOI: 10.57967/hf/8184): https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy

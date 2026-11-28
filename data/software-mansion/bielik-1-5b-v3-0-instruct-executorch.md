@@ -2,92 +2,89 @@
 
 ## Resumen
 
-Bielik-1.5B-v3.0-Instruct-ExecuTorch es la exportación al formato `.pte` de ExecuTorch del modelo Bielik-1.5B-v3.0-Instruct, desarrollado originalmente por SpeakLeash en colaboración con Cyfronet AGH. Esta variante la publica Software Mansion para su uso con la librería React Native ExecuTorch, lo que permite ejecutar el modelo íntegramente en el dispositivo (on-device) dentro de aplicaciones React Native, sin necesidad de backend ni conexión a internet. El modelo base es un transformer de 1.500 millones de parámetros especializado en polaco.
+Bielik-1.5B-v3.0-Instruct-ExecuTorch es la exportación del modelo de lenguaje Bielik-1.5B-v3.0-Instruct, desarrollado originalmente por SpeakLeash, al formato `.pte` de ExecuTorch para su ejecución en dispositivos (on-device). El repositorio lo publica Software Mansion, el equipo detrás de la librería React Native ExecuTorch, con el objetivo de ofrecer un modelo conversacional en polaco listo para integrarse en aplicaciones móviles mediante React Native sin necesidad de conexión a servidores externos.
 
-El repositorio contiene dos variantes con pesos distintos: una exportación XNNPACK (8da4w, 937 MB) que reproduce el modelo upstream, y una exportación MLX (int8 GPTQ, 1,6 GB) que es un derivado afinado por Software Mansion para conversación hablada en polaco dentro de un asistente de voz. Esta segunda variante está optimizada para respuestas cortas, sin formato Markdown, con manejo de seguimientos conversacionales y con salvaguardas específicas (derivación a líneas de ayuda en crisis, rechazo de peticiones fuera de alcance).
+El modelo base es un transformer decoder-only de 1.500 millones de parámetros, afinado para instrucciones y conversación, y entrenado principalmente en polaco. Esta exportación no modifica los pesos más allá de la cuantización: ofrece tres variantes compiladas (MLX int8, XNNPACK 8da4w y XNNPACK 8da8w) que cubren distintos backends de ejecución en dispositivo.
 
-La relevancia actual del modelo radica en su enfoque: no compite por capacidades generales, sino por ofrecer inferencia local en móvil para un idioma con poca cobertura (polaco), con un tamaño que cabe en memoria de dispositivo y una licencia Apache 2.0 permisiva para uso comercial.
+Su relevancia actual radica en que permite desplegar un LLM en polaco directamente en smartphones y dispositivos de borde, con tamaños de fichero entre 937 MB y 1,6 GB, lo que lo hace viable en hardware móvil de gama alta y media. Es una pieza clave para desarrolladores que construyen asistentes conversacionales offline en el ecosistema React Native.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Bielik-1.5B-v3.0-Instruct); exportado a ExecuTorch con backends MLX y XNNPACK |
-| Parametros totales | 1.500 millones (1,5B) |
+| Arquitectura | Transformer decoder-only (modelo base Bielik-1.5B-v3.0-Instruct) |
+| Parametros totales | 1.500 millones (1.5B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 8.192 tokens (variante MLX); no disponible para XNNPACK |
-| Tipos de cuantizacion | int8 (GPTQ, simétrico, grupos de 64, escalas fp16) en MLX; 8da4w en XNNPACK |
-| Idiomas soportados | Polaco (pl) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | int8 (MLX), 8da4w (XNNPACK), 8da8w (XNNPACK) |
+| Idiomas soportados | polaco (pl) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ExecuTorch `.pte` (programas compilados), más `tokenizer.json` y `config.json` |
+| Formato de pesos | ExecuTorch `.pte` (variantes MLX y XNNPACK); tokenizer en JSON |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer decoder-only de 1.500 millones de parámetros, afinado por instrucciones por SpeakLeash (Bielik-1.5B-v3.0-Instruct). Sobre esa base, Software Mansion ha producido dos artefactos distintos. La variante XNNPACK conserva los pesos del modelo upstream cuantizados a 8da4w y mantiene únicamente los sesgos de las proyecciones q/k/v. La variante MLX aplica cuantización int8 mediante GPTQ (simétrica, grupos de 64, escalas en fp16) a todas las capas lineales, a la cabeza de salida y al embedding, con cómputo en fp16 y logits en float32; además conserva los sesgos de todas las proyecciones (q, k, v, o, gate, up, down).
+El modelo subyacente es Bielik-1.5B-v3.0-Instruct, un transformer decoder-only de 1.500 millones de parámetros afinado para seguir instrucciones y mantener conversaciones. El repositorio no aporta detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO; esa información corresponde a la model card del modelo base de SpeakLeash, no incluida en la información proporcionada.
 
-Sobre la variante MLX, Software Mansion realizó un fine-tuning específico para conversación hablada en polaco dentro de un asistente de voz. Según la model card, el ajuste busca respuestas de una o dos frases, sin listas ni Markdown, sin afirmaciones de capacidad de actuar sobre el teléfono ni de conocer hora, clima o noticias, con derivación a línea de ayuda (116 123) en conversaciones de crisis y mejor manejo de seguimientos como "krócej", "powtórz" o "mów dalej". El modelo responde mejor con el system prompt con el que fue ajustado, incluido en la model card. La exportación MLX usa chunks de prefill de hasta 2.047 tokens y fue verificada contra el modelo PyTorch fp16 en Apple Silicon: mismo siguiente token en el 99,7 % de las posiciones, con el resto en empates cercanos. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+La innovación técnica de esta publicación no está en la arquitectura, sino en el proceso de exportación: los pesos se compilan a programas ExecuTorch `.pte` para dos backends distintos. La variante MLX usa cuantización int8 y está pensada para el backend MLX (Apple Silicon y dispositivos Apple). Las variantes XNNPACK emplean los esquemas 8da4w (8 bits de activación, 4 bits de pesos) y 8da8w (8 bits en ambos), orientados a CPUs ARM y x86 mediante la librería XNNPACK. Los ficheros están publicados para el runtime ExecuTorch v1.4.1, que no garantiza compatibilidad hacia delante.
 
 ## Capacidades
 
-- Generación de texto conversacional en polaco, orientada a respuestas breves y naturales.
-- Conversación multi-turno con manejo de seguimientos ("krócej", "powtórz", "mów dalej").
-- Respuestas sin formato Markdown ni listas en la variante MLX (adecuada para TTS).
-- Salvaguardas conversacionales: rechazo explícito de peticiones fuera de alcance (llamadas, alarmas, música), derivación médica a profesional y línea de ayuda en crisis.
-- Inferencia on-device en React Native mediante ExecuTorch, sin backend.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: solo polaco.
-- Capacidades multimodales (visión, audio): no disponibles.
+- Generación de texto conversacional en polaco, con formato de instrucciones.
+- Razonamiento básico y respuesta a preguntas dentro de las limitaciones de un modelo de 1.5B.
+- Generación de código y texto técnico en polaco e inglés (capacidad limitada por el tamaño).
+- Soporte de conversaciones multi-turno mediante plantilla de chat (tokenizer_config.json incluido).
+- Ejecución completamente offline en dispositivo, sin llamadas a API.
+- Integración nativa con React Native ExecuTorch mediante constantes del registro de modelos de la librería.
+- No se documenta soporte de tool calling, function calling, agentes, visión ni audio.
 
 ## Casos de uso
 
-- Asistentes de voz en aplicaciones móviles React Native: la variante MLX está afinada para respuestas habladas cortas, sin Markdown, con el system prompt adecuado para TTS; encaja en un pipeline de reconocimiento de voz + LLM + síntesis de voz en el dispositivo.
-- Atención al cliente en polaco con privacidad por diseño: al ejecutarse on-device, las conversaciones no salen del teléfono, lo que resulta adecuado para dominios sensibles donde no se quiere enviar texto a un servidor.
-- Aplicaciones sin conectividad: el modelo funciona sin red, útil en escenarios de campo, transporte o zonas con cobertura limitada.
-- Prototipado rápido de chatbots en React Native: la librería React Native ExecuTorch permite integrar el modelo mediante su registro de modelos y pipelines de tarea, reduciendo el trabajo de integración.
-- Filtrado y moderación de conversaciones en crisis: el ajuste incluye derivación a la línea 116 123, lo que puede servir como capa de respuesta segura en aplicaciones de bienestar o salud mental en polaco.
-- Educación y práctica de idiomas: conversación guiada en polaco con respuestas breves, útil para aplicaciones de aprendizaje que requieren turnos cortos y naturales.
-- Demos y pruebas de concepto de IA on-device: el tamaño de 937 MB (XNNPACK) o 1,6 GB (MLX) permite validar flujos completos en dispositivos de gama alta sin infraestructura.
+- Asistentes conversacionales offline en apps móviles: el modelo se ejecuta en el dispositivo mediante React Native ExecuTorch, permitiendo un chatbot en polaco sin conexión y sin enviar datos del usuario a servidores externos.
+- Traducción y reescritura de texto en polaco: útil en apps de productividad o edición que necesitan parafrasear o corregir texto localmente con baja latencia.
+- Clasificación y extracción de información en polaco: etiquetado de mensajes, resúmenes cortos o extracción de entidades en pipelines ligeros embebidos en la app.
+- Autocompletado y sugerencias de texto en teclados o formularios: el tamaño reducido (937 MB en 8da4w) permite mantener el modelo cargado en memoria en dispositivos de gama alta.
+- Atención al cliente en modo borrador: generación de respuestas preliminares que un humano revisa, con la ventaja de que los datos sensibles no salen del dispositivo.
+- Prototipado rápido de funciones de IA generativa en React Native: el registro de modelos de la librería simplifica la integración y permite validar ideas sin infraestructura de servidores.
+- Aplicaciones educativas o de accesibilidad: tutor o asistente de lectura en polaco que funciona sin red, útil en entornos con conectividad limitada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta una verificación de fidelidad de la cuantización MLX frente al modelo PyTorch fp16: mismo siguiente token en el 99,7 % de las posiciones evaluadas en Apple Silicon.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: la variante XNNPACK ocupa 937,3 MB en disco; la variante MLX, 1,6 GB. El consumo en ejecución depende del runtime y del contexto, pero el tamaño de pesos sugiere que ambas caben en memoria de dispositivos móviles de gama alta.
-- GPU recomendadas: no se especifican GPU de escritorio; el objetivo es inferencia on-device en móvil (backends XNNPACK para CPU y MLX para Apple Silicon).
-- ¿Cabe en GPU consumer? No aplica como caso principal; el modelo está pensado para ejecutarse en dispositivos móviles, no en GPU de escritorio.
-- Opciones de despliegue: ExecuTorch v1.4.1 (runtime requerido), React Native ExecuTorch (npm), backends XNNPACK y MLX.
+- VRAM/RAM estimada: aproximadamente 1 GB para la variante XNNPACK 8da4w (937 MB de pesos), 1,6 GB para las variantes int8 y 8da8w, más overhead del runtime y del contexto.
+- GPU recomendadas: no aplica en el caso de XNNPACK (ejecución en CPU); la variante MLX está pensada para Apple Silicon (iPhone, iPad, Mac con chip M-series).
+- Cabe en dispositivos móviles de gama alta y media con al menos 4 GB de RAM; en consumer GPU de escritorio no es el objetivo principal de esta exportación.
+- Opciones de despliegue: React Native ExecuTorch (runtime ExecuTorch v1.4.1) para apps móviles; también es posible cargar los `.pte` en un runtime ExecuTorch propio, consultando previamente la nota de compatibilidad del repositorio de PyTorch.
 - Latencia y throughput: no disponibles en la información proporcionada.
-- Nota de compatibilidad: ExecuTorch no garantiza compatibilidad hacia delante; runtimes anteriores pueden fallar al cargar los `.pte`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato / despliegue | Idiomas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato / despliegue |
 |---|---|---|---|---|---|
-| Bielik-1.5B-v3.0-Instruct-ExecuTorch | 1,5B | 8.192 (MLX) | Apache 2.0 | ExecuTorch `.pte`, on-device | Polaco |
-| Bielik-1.5B-v3.0-Instruct (upstream) | 1,5B | no disponible | Apache 2.0 | safetensors / PyTorch | Polaco |
-| Alternativas de 1-2B on-device (p. ej. Gemma, Qwen, Llama) | 1-2B | variable | licencias diversas | GGUF, ExecuTorch, etc. | Multilingüe |
+| Bielik-1.5B-v3.0-Instruct-ExecuTorch | 1.5B | no disponible | pl | Apache 2.0 | ExecuTorch `.pte` (MLX, XNNPACK) |
+| Bielik-1.5B-v3.0-Instruct (base) | 1.5B | no disponible | pl | Apache 2.0 | safetensors (Hugging Face) |
+| Modelos multilingues pequeños tipo Qwen2.5-1.5B-Instruct | 1.5B | no disponible en esta ficha | multilingue | Apache 2.0 | safetensors, GGUF, ExecuTorch |
+| Modelos tipo Llama 3.2 1B Instruct | 1.2B | no disponible en esta ficha | multilingue | licencia Llama | safetensors, GGUF |
 
-No se dispone en la información proporcionada de datos de rendimiento comparativo con otros modelos de la misma categoría; la comparación se limita a parámetros, contexto, licencia y formato de despliegue.
+La comparativa con alternativas internacionales es orientativa: la ventaja diferencial de esta exportación es el soporte nativo de React Native ExecuTorch y su especialización en polaco, mientras que los modelos multilingues pequeños ofrecen mayor cobertura de idiomas pero requieren exportaciones propias para ejecución on-device.
 
 ## Limitaciones y advertencias
 
-- Idioma: solo polaco; no se debe esperar un rendimiento fiable en castellano u otros idiomas.
-- La variante MLX es un derivado afinado para voz; su comportamiento conversacional difiere del modelo upstream y está pensado para respuestas de una o dos frases, sin formato.
-- Riesgo de alucinación: el ajuste incluye instrucciones para no inventar datos de hora, clima o noticias, lo que indica que el modelo base puede generar ese tipo de contenido si no se le guía con el system prompt adecuado.
-- Dependencia del system prompt: la model card indica que el modelo responde mejor con el prompt de sistema específico; usarlo fuera de ese contexto puede degradar la calidad.
-- Compatibilidad de runtime: los `.pte` están publicados para ExecuTorch v1.4.1 y no hay garantía de compatibilidad con versiones anteriores o posteriores.
-- La variante XNNPACK y la MLX no son equivalentes: tienen pesos distintos y sesgos distintos; no deben intercambiarse sin revisar el comportamiento.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las obligaciones de atribución y las condiciones del modelo base upstream.
-- No se documentan sesgos específicos ni evaluaciones de seguridad más allá de las salvaguardas conversacionales descritas.
-- El tamaño del repositorio (14,7 GB) incluye artefactos que no se detallan en la estructura listada; conviene verificar qué se descarga antes de integrarlo en producción.
+- Modelo especializado en polaco; su rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
+- Con 1.5B de parámetros, la capacidad de razonamiento complejo, matemáticas y código es limitada en comparación con modelos de mayor tamaño.
+- Riesgo de alucinación inherente a los LLM pequeños, especialmente en preguntas factuales y contextos largos.
+- Sesgos potenciales heredados del corpus de entrenamiento del modelo base (predominantemente polaco); no se documentan evaluaciones de sesgo en esta ficha.
+- La longitud de contexto no está especificada en la información disponible; conviene consultar la model card del modelo base antes de diseñar prompts largos.
+- Los ficheros `.pte` están compilados para ExecuTorch v1.4.1 y no hay garantía de compatibilidad con versiones anteriores o posteriores del runtime.
+- El repositorio ocupa 16,4 GB, aunque cada variante individual pesa entre 937 MB y 1,6 GB; hay que seleccionar la variante adecuada al backend y al dispositivo.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base de SpeakLeash por si añaden requisitos adicionales.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/software-mansion/Bielik-1.5B-v3.0-Instruct-ExecuTorch
-- Modelo base upstream: https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct
-- React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
-- Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/Bielik-1.5B-v3.0-Instruct-ExecuTorch
+- Modelo base: https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct
+- Librería React Native ExecuTorch (npm): https://www.npmjs.com/package/react-native-executorch
+- Documentación de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models
 - Nota de compatibilidad de ExecuTorch: https://github.com/pytorch/executorch/blob/main/runtime/COMPATIBILITY.md

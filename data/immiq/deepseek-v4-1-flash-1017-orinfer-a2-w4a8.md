@@ -2,111 +2,103 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8 es una distribución cuantizada del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario immiq para su uso con el motor de inferencia propietario Orinfer v0.4.0 sobre hardware Ascend 910B (NPU de Huawei). No se trata de un modelo nuevo entrenado desde cero, sino de un empaquetado de pesos en formato safetensors con cuantización W4A8 (pesos de 4 bits, activaciones de 8 bits) optimizado específicamente para el runtime Orinfer, el paquete de ejecución A2 y el stack CANN 9.2 en Linux aarch64 con glibc 2.34 o superior.
+DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8 es una cuantización de precisión mixta W4A8 del modelo base DeepSeek-V4.1-Flash-1017, publicada por el usuario immiq y orientada específicamente al hardware Ascend 910B de Huawei. No se trata de un modelo nuevo entrenado desde cero, sino de un checkpoint de pesos cuantizados con calibración de activaciones, pensado para ejecutarse en el runtime propietario Orinfer sobre CANN 9.2 en Linux aarch64. El modelo base conserva la licencia MIT y soporta texto, modo thinking, herramientas de función DSML, visión de una o varias imágenes y decodificación especulativa paralela DSpark.
 
-El modelo base, DeepSeek-V4.1-Flash-1017, pertenece a la familia DeepSeek V4.1 de DeepSeek, según los tags y la nomenclatura del repositorio. El empaquetado conserva capacidades de texto, modo de razonamiento (thinking), function calling, procesamiento de imágenes (incluidas múltiples imágenes) y borradores paralelos DSpark para decodificación especulativa. El repositorio ocupa 557,7 GB y declara 513.773.354.864 parámetros totales según los metadatos de safetensors, lo que lo sitúa en la categoría de modelos de gran escala.
+El checkpoint contiene 534.157.673.840 parámetros totales según los safetensors publicados, con un repositorio de 881,1 GB que incluye 205 contenedores safetensors (508,41 GiB) y 206 GiB de tablas Engram residentes en host. La revisión de 2026-11-26 sustituye el checkpoint rotado QuaRot32 por una recuantización sin rotación basada en SmoothQuant y GPTQ con Hessian de orden de activación sobre 262.144 tokens, lo que reduce el KL medio frente al modelo oficial MXFP4+FP8 en un 35,2 % respecto a la revisión anterior.
 
-Su relevancia es acotada pero específica: es una de las pocas distribuciones públicas de un modelo de esta familia preparadas para inferencia nativa en Ascend 910B con un motor alternativo a vLLM o TGI, con un paquete de ejecución verificado y un esquema de cuantización W4A8 pensado para reducir la huella de memoria en NPU. La licencia MIT del empaquetado facilita su uso, aunque las condiciones reales dependen del modelo base.
+Su relevancia es doble: por un lado demuestra que es posible servir un modelo de más de 500.000 millones de parámetros en 8 aceleradores Ascend 910B3 con TP8 manteniendo 7,35 GiB de HBM libre por tarjeta y caché de prefijo completa de 4,64 GiB; por otro, documenta con detalle poco habitual el proceso de cuantización (calibración por grafo de ejecución, protección de capas sensibles, escalas cerradas por canal), lo que lo convierte en referencia para quien trabaje en despliegue de modelos masivos en aceleradores no NVIDIA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia DeepSeek V4.1; detalles internos no disponibles) |
-| Parametros totales | 513.773.354.864 (según safetensors) |
+| Arquitectura | no disponible (modelo base DeepSeek-V4.1; el checkpoint es una cuantización W4A8 del mismo) |
+| Parametros totales | 534.157.673.840 |
 | Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | W4A8 (pesos 4 bits, activaciones 8 bits); safetensors de 8 bits según tags |
-| Idiomas soportados | chino (zh), inglés (en) |
+| Longitud de contexto | no disponible (la configuración de servido reserva 262.144 MiB de KV offload y 8.192 MiB de caché de prefijo) |
+| Tipos de cuantizacion | W4A8 (SmoothQuant + GPTQ con Hessian de orden de activación), capas W8 selectivas (L15, L39), expertos enrutados W8 sin pérdida en el draft DSpark, BF16 en wq_a/wkv de fuentes KV compartidas (L02, L08, L14, L20) |
+| Idiomas soportados | zh, en |
 | Licencia | MIT |
-| Formato de pesos | safetensors |
-| Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 |
-| Motor de inferencia | Orinfer v0.4.0 (runtime nativo + archivo de ejecución A2) |
-| Hardware objetivo | Ascend 910B (TP8), CANN 9.2, Linux aarch64, glibc 2.34+ |
-| Tamaño del repositorio | 557,7 GB |
+| Formato de pesos | safetensors (205 contenedores, 508,41 GiB; layout Transposed-NZ) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base DeepSeek-V4.1-Flash-1017 (número de capas, configuración de atención, posible mezcla de expertos, etc.). El empaquetado de immiq es una cuantización W4A8 del modelo base, con pesos almacenados en safetensors y un paquete de ejecución específico para el motor Orinfer sobre Ascend 910B. El runtime incorpora mecanismos de decodificación especulativa mediante borradores paralelos DSpark: el paquete de ejecución declara 192 filas de verificación del decodificador, con un ancla por propietario, de modo que 32 propietarios pueden usar hasta 5 borradores cada uno cuando resulta rentable. La opción `--mtp-drafts auto` selecciona adaptativamente ese número de borradores.
+El checkpoint no aporta información sobre la arquitectura interna del modelo base más allá de la etiqueta `deepseek_v41` y de la presencia de componentes identificables: 40 capas transformer con atención (wq_a, wq_b, wkv, indexer), mezcla de expertos enrutados y expertos compartidos (shared_experts con w3/w2), módulos MTP (mtp.0/1/2) para decodificación especulativa DSpark, y tablas Engram residentes en host. El modelo base fue entrenado por DeepSeek; esta publicación solo documenta el proceso de cuantización, no el preentrenamiento ni el ajuste por RLHF/DPO.
 
-El paquete también describe optimizaciones de serving para TP8 de larga duración: división de la ejecución A2 en subprogramas Trunk/Tail/Head para reutilización de ACL Graph entre cohortes, agrupación de arenas fijas de propietarios inactivos, liberación por lotes de páginas VMM, gathers Engram residentes con compartición entre capas 1 y 14, protección de expulsión de claves de grafo activas, cachés de grafo acotadas a 96 programas, rollback de linaje de propietarios entre rangos ante `SaveSkipped` asimétrico, fallbacks no fatales ante OOM para diarios de verificación y offload de prefijo, aislamiento de errores de muestreo restringido especulativo por fila y métricas Prometheus de salud para A2. No se dispone de información sobre el dataset de entrenamiento, el número de tokens, ni sobre si el modelo base empleó RLHF o DPO.
+La innovación técnica principal es el pipeline de cuantización reproducible mediante `orinfer_build.models.deepseek_v41.calibrate_norot` y `quantize_norot`. Se elimina la rotación global QuaRot32 y las transformaciones AWQ heredadas para mantener los pesos en la rejilla nativa MXFP4 de potencias de dos. La calibración de activaciones se realiza sobre 262.144 tokens disjuntos multi-dominio y se aplica SmoothQuant sin sobrecoste en `q_norm → wq_b + indexer.wq_b` (40 capas, hasta −92 % de error), `attn_norm → wq_a + wkv + indexer.weights_proj` (36 capas W8A8 no fuente KV, hasta −56 %) y expertos compartidos (hasta −58 %). Las 38 capas W4 de expertos enrutados usan GPTQ con Hessian bloqueado en orden de activación, con escalas óptimas en forma cerrada por canal y refinamiento Gauss-Seidel en capas concretas, logrando NMSE de peso entre 0,00066 y 0,00322, de 2 a 7 veces inferior a la cuantización sin datos. Las capas L15 y L39 se mantienen en W8 por auditoría de sensibilidad (L15 es la más sensible por un factor de 5).
 
 ## Capacidades
 
 - Generación de texto conversacional en chino e inglés.
-- Modo de razonamiento (thinking), según la descripción del paquete de ejecución.
-- Function calling y uso de herramientas (function tools).
-- Procesamiento de imágenes y de múltiples imágenes en una misma petición.
-- Borradores paralelos DSpark para decodificación especulativa con verificación por lotes.
-- Caché de prefijo (`--prefix-cache-mib`) y offload de KV (`--kv-offload-mib`) para conversaciones largas.
-- Serving multi-petición con colas, timeouts configurables y drenaje controlado.
-- No se dispone de información sobre soporte de audio, agentes multi-paso autónomos ni otras capacidades especiales más allá de las citadas.
+- Modo thinking (razonamiento explícito) soportado por el modelo base.
+- Llamada a funciones y herramientas mediante el formato DSML.
+- Visión con soporte de una o varias imágenes por petición (caché de visión configurable, 1.024 MiB por defecto).
+- Decodificación especulativa paralela DSpark con borradores MTP (mtp.0/1/2), configurables con `--mtp-drafts auto`.
+- Caché de prefijo en dispositivo y offload de KV a host (262.144 MiB configurados).
+- Ejecución en grafo completo (`--graph full`) sobre Ascend 910B3 con TP8.
+- Capacidades multilingües limitadas a zh y en según los metadatos.
 
 ## Casos de uso
 
-- Despliegue de inferencia en clústeres Ascend 910B: el paquete está diseñado para servir el modelo con TP8 sobre 8 NPU Ascend 910B3 con CANN 9.2, lo que permite aprovechar infraestructura Huawei existente sin depender de GPUs NVIDIA.
-- Asistente conversacional bilingüe chino-inglés: el modelo declara soporte de zh y en, con modo thinking y function calling, adecuado para atención al cliente o asistentes internos en entornos donde esos dos idiomas son prioritarios.
-- Análisis de documentos con imágenes: la capacidad de procesar múltiples imágenes por petición permite tareas de extracción de información de capturas, formularios o figuras dentro de un mismo contexto.
-- Automatización con herramientas: el soporte de function tools permite integrar el modelo en flujos que consultan APIs, bases de datos o servicios internos mediante llamadas estructuradas.
-- Serving de larga duración con caché de prefijo: la configuración de `--prefix-cache-mib 8192` y `--kv-offload-mib 262144` está pensada para cargas con prompts repetidos o conversaciones extensas, reduciendo el coste de reprocesamiento.
-- Evaluación y benchmarking de motores alternativos: al incluir un registro de aceptación (`benchmarks/a2-v0.4.0-acceptance-20261122.json`) y pruebas de humo TP8, sirve para comparar Orinfer frente a otros runtimes en hardware Ascend.
-- Entornos con requisitos de verificación de integridad: el comando `orinfer validate-model` permite una comprobación explícita de hashes del contenido, útil en despliegues con controles de cadena de suministro.
+- Servicio de inferencia a gran escala en infraestructura Ascend: el checkpoint está calibrado y empaquetado para 8× Ascend 910B3 con TP8 y CANN 9.2, de modo que un equipo con parque Huawei puede desplegar un modelo de más de 500.000 millones de parámetros sin recurrir a GPU NVIDIA. La validación medida en Mini-Weka (240 s, c=16) sostiene 130 peticiones sin errores.
+- Asistentes conversacionales multi-turno en chino e inglés: la caché de prefijo de 8.192 MiB y el offload de KV de 262.144 MiB permiten mantener contextos largos entre turnos, adecuado para atención al cliente o asistentes internos en esas dos lenguas.
+- Automatización con herramientas: el soporte DSML de function calling permite integrar el modelo en flujos que consultan APIs, bases de datos o sistemas internos, con el bucle de agente gestionado por el orquestador externo.
+- Análisis de documentos con imágenes: la visión multi-imagen con caché dedicada sirve para extracción de datos de capturas, formularios o diagramas en pipelines de digitalización.
+- Razonamiento con modo thinking en tareas de análisis: útil para revisión de código, diagnóstico de incidencias o generación de informes donde interesa exponer la cadena de razonamiento antes de la respuesta final.
+- Servicio de alta concurrencia con decodificación especulativa: DSpark con 69,84 % de aceptación en ventana de 256 y 4,4922 tokens comprometidos por ronda acelera la generación en despliegues con muchas peticiones simultáneas, manteniendo 7,35 GiB de HBM libre por tarjeta.
+- Evaluación y reproducción de técnicas de cuantización: el pipeline `calibrate_norot`/`quantize_norot` y los logs en `benchmarks/a2-norot-gptq-sq-20261126.json` permiten reproducir y auditar el proceso, útil para investigadores que estudien cuantización W4A8 en aceleradores no NVIDIA.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos de rendimiento publicados en la información disponible corresponden a pruebas de aceptación del motor, no a benchmarks de calidad del modelo (MMLU, HumanEval, GSM8K, etc.):
+Resultados verificados en 8× Ascend 910B3 TP8 con CANN 9.2, comparando la revisión actual con la rotada v0.4.5 y la variante sin datos v2:
 
-| Prueba | v0.3.14 | v0.4.0 |
-|---|---|---|
-| Carga Frozen Mini de 240 s (8× Ascend 910B3) | 71 y 70 peticiones en dos ensayos | 73 peticiones |
-| Errores | 0 | 0 |
-| Tokens de prefill | 1.856.174 | 1.935.331 |
-| Tokens de decode | 10.825 | 11.341 |
-| Latencia agregada (peticiones idénticas) | +10,7 % y +5,1 % respecto a v0.3.13 | no disponible |
+| Metrica | v0.4.5 rotada | v2 sin datos | Esta revision |
+|---|---:|---:|---:|
+| KL medio (MXFP4+FP8 oficial ‖ modelo), 1.556 posiciones | 0,03075 | 0,02467 | 0,01992 |
+| KL mediana / p95 | 0,00846 / 0,130+ | 0,00621 / 0,105 | 0,00533 / 0,07837 |
+| KL medio (modelo ‖ oficial) | 0,03101 | 0,02384 | 0,01918 |
+| Coincidencia de argmax oficial / cobertura top-3 | 94,15 % / — | 95,69 % / — | 95,76 % / 99,55 % |
+| Aceptación DSpark (ventana 256, comprometidos/ronda) | 67,11 % (4,3555) | 70,47 % (4,5234) | 69,84 % (4,4922; test 81,56 %) |
+| Mini-Weka congelado 240 s (c=16, seed=20261002) | 129 pet. (0 err) | 130 pet. (0 err) | 130 pet. (0 err) |
+| Mini-Weka prefill / verify / draft (ms/iter) | 124,16 / 90,83 / 4,78 | 123,01 / 88,08 / 4,85 | 122,49 / 88,62 / 4,77 |
+| HBM libre mínima por tarjeta en pico | 4,12 GiB | 7,34 GiB | 7,35 GiB |
 
-Pruebas de calidad del motor: `make check` con 762 tests Rust, 491 tests Python de CPU y 15 comprobaciones de fixtures; inspección ABI de glibc 2.34; prueba de humo TP8 con 14 peticiones, cero errores y salida 0 con las 8 NPU inactivas al terminar.
-
-No se han publicado resultados de benchmarks de calidad del modelo (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+No se han publicado en la información disponible resultados de benchmarks estándar de calidad (MMLU, HumanEval, GSM8K u otros) para este checkpoint ni para el modelo base.
 
 ## Requisitos de hardware
 
-- Hardware objetivo: 8× Ascend 910B3 en TP8 (topología de 8 NPU).
-- Software: Linux aarch64, glibc 2.34 o superior, CANN 9.2, Orinfer v0.4.0 y el archivo de ejecución A2 correspondiente (digest `ce7a1cec548914645bf31ae9e695da038ec1506c895138ecbe61906688ac3687`).
-- Memoria de host: el perfil recomendado mantiene la tabla Engram completamente residente y requiere aproximadamente 206 GiB de memoria de host, además de otra memoria del sistema; `ORINFER_A2_HOST_TABLE_MIB=212000` configura ese modo.
-- Caché de visión: `ORINFER_VISION_CACHE_MIB=1024`.
-- Caché de prefijo: 8 GiB (`--prefix-cache-mib 8192`); offload de KV: 256 GiB (`--kv-offload-mib 262144`).
-- No cabe en GPU de consumo: el tamaño del repositorio (557,7 GB) y la topología TP8 sobre NPU Ascend lo excluyen de RTX 4090 u otras GPU consumer.
-- Opciones de despliegue: exclusivamente el servidor `orinfer serve` con el paquete de ejecución A2; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI en esta distribución.
-- Latencia y throughput: en la carga Frozen Mini de 240 s se completaron 73 peticiones sin errores en v0.4.0; no se publican cifras de latencia por token ni de throughput sostenido más allá de ese experimento.
-- El periodo de gracia para terminación externa debe superar los 120 segundos; se recomienda configurar autenticación antes de exponer el servidor fuera del host de confianza.
+- Hardware objetivo: 8× Ascend 910B3 en TP8, CANN 9.2, Linux aarch64 con glibc 2.34 o superior. No es un checkpoint para GPU NVIDIA ni para CPU convencional.
+- Memoria: 508,41 GiB de pesos en 205 contenedores safetensors, más 206 GiB de tablas Engram residentes en host (`ORINFER_A2_HOST_TABLE_MIB=212000`). HBM libre mínima medida en pico: 7,35 GiB por tarjeta.
+- Caché: 8.192 MiB de caché de prefijo en dispositivo y 262.144 MiB de offload de KV a host; 1.024 MiB de caché de visión.
+- Despliegue: exclusivamente mediante el runtime Orinfer. Requiere instalar el paquete de ejecución `orinfer-exec-deepseek-v41-flash-1017-w4a8-ascend910b-norot-gptq-sq-20261126.tar.xz` (sha256 `dd025b1a40bbac004395a4c812cd67f087076c6467be2a69738c0545f8e51d27`), validar con `orinfer validate-model` y servir con `orinfer serve`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ni con los paquetes de ejecución rotados v0.3.x/v0.4.0.
+- Throughput observado: 130 peticiones en 240 s con concurrencia 16 y 22.656 tokens de decodificación; prefill de 122,49 ms por iteración, verify de 88,62 ms y draft de 4,77 ms.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. La siguiente tabla recoge únicamente los datos del modelo base y de esta distribución:
-
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Hardware |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8 | 513.773.354.864 | no disponible | W4A8 | MIT | Ascend 910B TP8 |
+| immiq/DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8 (esta ficha) | 534.157.673.840 | no disponible | MIT | Hugging Face, runtime Orinfer sobre Ascend 910B | W4A8 calibrado con SmoothQuant + GPTQ; 3.152 descargas |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | MIT (heredada) | Hugging Face | Pesos oficiales en MXFP4+FP8; referencia de calidad para el KL |
+| Revisión rotada v0.4.5 del mismo autor | 534.157.673.840 | no disponible | MIT | Hugging Face (tags historicos) | QuaRot32 + AWQ; KL medio 0,03075, peor que la actual |
+| Variante sin datos v2 (SSZ-W4 + L38–39 W8) | 534.157.673.840 | no disponible | MIT | Hugging Face (tags historicos) | Cuantización sin calibración de activaciones; KL medio 0,02467 |
 
-No se han identificado en la información disponible alternativas comparables de la misma categoría (mismo tamaño o misma tarea) con datos verificables de parámetros, contexto, rendimiento y licencia.
+No se dispone de datos de benchmarks estándar ni de comparación con modelos de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Distribución específica de hardware: solo funciona con Orinfer v0.4.0 sobre Ascend 910B, CANN 9.2 y glibc 2.34+; no es portable a GPU NVIDIA ni a otros runtimes.
-- Idiomas limitados: la model card declara únicamente chino e inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- Sin benchmarks de calidad publicados: no hay datos de MMLU, HumanEval, GSM8K ni evaluaciones equivalentes que permitan estimar la calidad del modelo base.
-- Riesgo de alucinación: inherente a los modelos generativos; no se documentan medidas específicas de mitigación en esta distribución.
-- Sesgos: no se dispone de información sobre sesgos conocidos del modelo base ni de esta cuantización.
-- Restricciones de licencia: el empaquetado declara MIT, pero el uso comercial está sujeto a las condiciones del modelo base DeepSeek-V4.1-Flash-1017, que no se detallan en la información disponible; conviene verificar la licencia del modelo base antes de un despliegue comercial.
-- Requisitos de memoria de host elevados: el modo residente de la tabla Engram exige unos 206 GiB adicionales; el modo respaldado por fichero (`ORINFER_A2_HOST_ROW_CACHE_MIB`) no es el usado en las pruebas de rendimiento y puede comportarse de forma distinta.
-- Integridad: la carga normal no escanea hashes de payload; para verificación explícita hay que ejecutar `orinfer validate-model`.
-- Operación: hay que mantener juntos el motor, la revisión del modelo y el archivo de ejecución para poder revertir; el ID de modelo en los clientes debe coincidir con `--model`.
-- Seguridad: se debe configurar autenticación antes de exponer el servidor fuera del host de confianza.
+- Dependencia total del runtime Orinfer y del hardware Ascend 910B: no se puede ejecutar en GPU NVIDIA, CPU ni en otros aceleradores, lo que limita gravemente su portabilidad.
+- Incompatibilidad con los paquetes de ejecución rotados anteriores (v0.3.x, v0.4.0); actualizar sin el paquete `engram.cast_fp32` correspondiente rompe la ejecución.
+- Idiomas limitados a chino e inglés según los metadatos; el rendimiento en castellano u otras lenguas no está documentado y previsiblemente será inferior.
+- Riesgo de alucinación y sesgos heredados del modelo base DeepSeek-V4.1-Flash-1017; la cuantización W4A8 introduce además una divergencia medible respecto a los pesos oficiales (KL medio de 0,01992, coincidencia de argmax del 95,76 %), de modo que las respuestas no son idénticas al modelo de referencia.
+- El repositorio ocupa 881,1 GB y requiere 206 GiB de memoria host para las tablas Engram, además de la HBM de las ocho tarjetas; el aprovisionamiento es costoso.
+- Solo 2 likes y 3.152 descargas en el momento de la consulta: comunidad pequeña y poca validación independiente más allá de los benchmarks del propio autor.
+- La licencia MIT se hereda del modelo base, pero conviene verificar las condiciones de uso del modelo DeepSeek original y de CANN/Orinfer para despliegues comerciales.
+- Los benchmarks publicados miden fidelidad respecto al modelo oficial y throughput, no calidad de tarea (razonamiento, código, matemáticas); no hay evidencia publicada de rendimiento en MMLU, HumanEval o GSM8K para este checkpoint.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/immiq/DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8
+- Hugging Face: https://huggingface.co/immiq/DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Release v0.4.0 de Orinfer: https://github.com/iMMIQ/orinfer/releases/tag/v0.4.0
-- Registro de aceptación A2 v0.4.0: benchmarks/a2-v0.4.0-acceptance-20261122.json (referenciado en la model card)
+- Métricas y logs de validación: benchmarks/a2-norot-gptq-sq-20261126.json (incluido en el repositorio del modelo)
+- Paquete de ejecución: orinfer-exec-deepseek-v41-flash-1017-w4a8-ascend910b-norot-gptq-sq-20261126.tar.xz (sha256 dd025b1a40bbac004395a4c812cd67f087076c6467be2a69738c0545f8e51d27)
+- Commit de origen: 14a30a9307476597ee2e1e325f0feae5c8e3f38e

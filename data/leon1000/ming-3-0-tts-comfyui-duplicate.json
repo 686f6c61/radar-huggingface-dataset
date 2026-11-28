@@ -60,8 +60,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Leon1000/Ming-3.0-tts-ComfyUI-Clone",
+  "renamed_at": "2026-11-28T04:24:36.393Z",
   "benchmarks": [],
   "sources": []
 }

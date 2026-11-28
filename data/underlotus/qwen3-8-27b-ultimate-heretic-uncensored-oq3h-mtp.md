@@ -2,57 +2,51 @@
 
 ## Resumen
 
-Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ3h-mtp es una cuantizacion mixta del checkpoint Qwen3.8-27B en su variante "Ultimate Heretic Uncensored", publicada por el usuario underlotus en Hugging Face. El artefacto esta empaquetado para la libreria MLX (Apple Silicon) y utiliza el formato oQ de cuantizacion de precision mixta generado con oMLX v0.8.0. El resultado es un checkpoint de 6.276.813.040 parametros logicos almacenados en 14,4 GB de repositorio, con un promedio efectivo de 18,300 bits por peso.
+Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ3h-mtp es una cuantizacion de precision mixta del modelo DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored, un fine-tune "uncensored" (sin alineamiento de rechazo) del base Qwen/Qwen3.8-27B. La publica el usuario underlotus mediante la herramienta oMLX v0.8.0 y esta pensada especificamente para ejecucion en Apple Silicon a traves de la libreria MLX, no para GPUs NVIDIA ni para el ecosistema habitual de transformers/vLLM.
 
-El modelo base pertenece a la familia Qwen3.5 (tag `qwen3_5`), con un tamano nominal de 27B segun el nombre del checkpoint, e incorpora una cabeza MTP (multi-token prediction) de 0,425B parametros y un modulo de vision de 0,461B parametros. La cuantizacion no es uniforme: combina tensores en affine 4-bit (grupo 64), affine 6-bit (grupo 64), BF16 y U32, de modo que las capas consideradas mas sensibles conservan mayor precision mientras que el grueso del modelo se comprime.
+El modelo original declara 27.780 millones de parametros, pero el repositorio cuantizado almacena 6.276.813.040 elementos en safetensors (14,4 GB en total), con un esquema de cuantizacion mixta oQh (variante rotada de oQe) que combina capas en 4 bits, 6 bits, BF16 y empaquetados U32. Conserva la torre de vision y la cabeza MTP (multi-token prediction), de modo que mantiene entrada image-text-to-text y decodificacion especulativa.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso real de cuantizacion mixta agresiva sobre un modelo multimodal con cabeza MTP, un patron cada vez mas comun en despliegues locales sobre hardware Apple. Por otro, advierte de que se trata de un derivado no oficial, sin model card tecnica del modelo base, sin licencia declarada y sin benchmarks publicados, por lo que su evaluacion en produccion exige verificacion propia.
+Su relevancia es de nicho: ofrece un modelo de gran tamano y sin censura alineado con la filosofia de los fine-tunes de DavidAU, empaquetado para caber en memoria unificada de Macs con 16-32 GB, algo que el modelo original en BF16 no permite. La licencia es Apache 2.0, heredada del upstream.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (familia Qwen3.5, tag `qwen3_5`); incluye modulo de vision y cabeza MTP |
-| Parametros totales | 6.276.813.040 (pesos logicos del checkpoint cuantizado) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer decoder-only (familia Qwen3.5/Qwen3.8) con torre de vision y cabeza MTP; cuantizacion mixta oQh |
+| Parametros totales | 27.780 millones (modelo original); 6.276.813.040 elementos almacenados en el repo cuantizado |
+| Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mixta oQ: affine 4-bit grupo 64, affine 6-bit grupo 64, BF16 y U32; promedio 18,300 bits/peso |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (libreria `mlx`), cuantizacion oQ |
-| Tamano del repositorio | 14,4 GB (13,372 GiB de pesos) |
-| Fecha de publicacion | 2026-11-20 |
-| Descargas / likes | 0 / 0 |
+| Tipos de cuantizacion | Mixta oQh: affine 4-bit grupo 64 (26,19 % de elementos), affine 6-bit grupo 64 (20,26 %), BF16 (8,33 %), U32 empaquetado (45,22 %); media de 18,3 bits por elemento almacenado |
+| Idiomas soportados | en, zh |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (formato MLX), libreria mlx |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint es un derivado cuantizado, no un modelo entrenado desde cero. La arquitectura subyacente corresponde a la familia Qwen3.5, un transformer con modulo de vision (0,461B parametros) y una cabeza MTP (0,425B parametros) que permite prediccion multi-token, tecnicamente orientada a decodificacion especulativa y a mejorar el throughput de generacion. El cuerpo del modelo de lenguaje concentra 5,391B parametros logicos.
+El modelo subyacente es un transformer decoder-only de la familia Qwen3.8 con 27.780 millones de parametros, al que se anade una torre de vision (0,461B elementos almacenados, 0,921 GB) y una cabeza MTP de prediccion multi-token (0,425B elementos, 0,314 GB). El fine-tune "Heretic Uncensored" de DavidAU elimina el comportamiento de rechazo del modelo base, orientandolo a generacion sin filtros de seguridad. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF/DPO en el fine-tune.
 
-La cuantizacion se realizo con oMLX v0.8.0 aplicando precision mixta por tensor. La distribucion de almacenamiento es la siguiente: 1,644B pesos en affine 4-bit grupo 64 (0,861 GiB, 4,50 bits/peso efectivos), 1,271B en affine 6-bit grupo 64 (0,962 GiB, 6,50 bits/peso), 0,523B en BF16 (0,974 GiB, 16,00 bits/peso) y 2,839B en U32 (10,575 GiB, 32,00 bits/peso). El bloque U32, que representa el 45,2% de los pesos logicos y el 79% del almacenamiento, corresponde con toda probabilidad a los metadatos de cuantizacion (escalas y sesgos por grupo) y a tensores que el algoritmo decidio preservar en alta precision.
-
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens, ni sobre si el modelo base paso por RLHF, DPO u otras etapas de alineamiento. La etiqueta "Heretic Uncensored" del nombre sugiere una variante con filtros de seguridad reducidos o eliminados, pero no se documenta el procedimiento de abliteration ni los datos empleados.
+La innovacion tecnica de esta ficha es la cuantizacion: oQh es la variante rotada de oQe, que aplica una rotacion a los pesos del decoder antes de cuantizarlos para reducir el error al mismo tamano de fichero que oQe en el mismo nivel. El esquema es de precision mixta real: capas sensibles en 6 bits y BF16, el grueso del modelo empaquetado en U32 y bloques en 4 bits. Se preservan explicitamente la torre de vision y la cabeza MTP, por lo que la decodificacion especulativa del modelo original sigue operativa. El desglose de almacenamiento es 13,123 GB para el modelo de lenguaje, 0,921 GB para vision y 0,314 GB para la cabeza MTP.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: heredadas del modelo base Qwen3.5, sin verificacion independiente en este derivado.
-- Procesamiento de vision: el checkpoint incluye un modulo visual de 0,461B parametros, por lo que se espera soporte de entrada de imagenes.
-- Prediccion multi-token (MTP): la cabeza dedicada de 0,425B parametros habilita decodificacion especulativa y generacion de varios tokens por paso.
-- Ejecucion en Apple Silicon: empaquetado nativo para MLX, lo que permite inferencia en Mac con memoria unificada.
-- Generacion sin filtros: la variante "Uncensored" elimina o relaja los rechazos de contenido del modelo original.
-- Tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Generacion de texto conversacional multi-turno en ingles y chino.
+- Entrada image-text-to-text: la torre de vision se conserva en la cuantizacion, por lo que admite imagenes como entrada.
+- Decodificacion especulativa mediante la cabeza MTP preservada (multi-token prediction).
+- Generacion sin alineamiento de rechazo (uncensored): no aplica filtros de contenido del modelo base.
+- Razonamiento y generacion de codigo heredados del base Qwen3.8 (no verificados en esta cuantizacion).
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible para este fine-tune.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Capacidades multilingues limitadas a en y zh segun la model card.
 
 ## Casos de uso
 
-- Inferencia local en Mac: el formato MLX y el tamano de 14,4 GB permiten cargar el checkpoint en equipos Apple Silicon con 24 GB o 32 GB de memoria unificada, habilitando un asistente multimodal completamente local sin dependencia de la nube.
-- Prototipado de aplicaciones multimodales: el modulo de vision integrado permite construir demos de descripcion de imagenes, extraccion de informacion de capturas o analisis de documentos escaneados en un entorno de desarrollo sobre macOS.
-- Generacion de texto creativo sin restricciones: la variante "Uncensored" esta orientada a escritura de ficcion, guiones o narrativa adulta donde los filtros del modelo original resultan limitativos.
-- Investigacion sobre cuantizacion mixta: el checkpoint sirve como caso de estudio para medir la degradacion de calidad de oQ con precision mixta frente al modelo en BF16, comparando capas en 4-bit, 6-bit y 16-bit.
-- Evaluacion de decodificacion especulativa: la cabeza MTP permite experimentar con tecnicas de prediccion multi-token y medir su impacto en latencia y throughput sobre MLX.
-- Pruebas de robustez y seguridad: util para investigadores que necesitan un modelo sin alineamiento para estudiar comportamientos, sesgos o riesgos de generacion de contenido nocivo en entornos controlados.
-- Despliegue de bajo coste en estaciones de trabajo: con 14,4 GB en disco y ejecucion en memoria unificada, se puede servir como backend de un chatbot interno sin GPU dedicada.
+- Investigacion sobre alineamiento y censura: permite estudiar el comportamiento de un modelo sin rechazo frente a su base alineado, comparando respuestas en el mismo prompt y con la misma arquitectura.
+- Generacion creativa sin restricciones: escritura de ficcion, guiones o narrativa adulta donde el modelo base rechazaria peticiones; el fine-tune Heretic elimina ese filtro.
+- Prototipado local en Apple Silicon: desarrollo y pruebas de aplicaciones LLM en un Mac con memoria unificada, sin depender de GPUs en la nube, gracias a los 13,37 GiB de pesos.
+- Procesamiento de imagenes y texto en local: clasificacion, descripcion o extraccion de informacion de imagenes combinadas con instrucciones de texto, aprovechando la torre de vision preservada.
+- Evaluacion de cuantizacion: banco de pruebas para medir la degradacion de un modelo de 27B cuantizado a oQh frente al BF16 original en tareas de razonamiento y generacion.
+- Traduccion y conversacion en ingles y chino: asistente bilingue para pares en-zh en entornos donde no se requiere alineamiento estricto.
+- Generacion de codigo asistida en local: uso como autocompletado o generador de fragmentos en un IDE sobre macOS, siempre que se valide la calidad del fine-tune en esta tarea.
 
 ## Benchmarks y rendimiento
 
@@ -60,37 +54,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: aproximadamente 14-16 GB para cargar los pesos en memoria, mas overhead de contexto y cache KV; se recomienda un minimo de 24 GB de memoria unificada.
-- GPU compatibles: exclusivamente Apple Silicon (M1, M2, M3, M4 y variantes Pro, Max y Ultra) mediante MLX; no es un checkpoint utilizable directamente en CUDA sin conversion.
-- Cabe en GPU de consumo: si, en equipos Apple con 24 GB o mas de memoria unificada (MacBook Pro M2 Pro/Max, Mac Studio, Mac mini M4 Pro). No esta pensado para GPUs NVIDIA de consumo.
-- Opciones de despliegue: `mlx-lm` y el ecosistema MLX (oMLX) son las vias naturales; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, ya que el formato oQ es especifico de MLX.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM/memoria: 13,37 GiB de pesos en disco; en ejecucion se necesita memoria unificada adicional para el contexto KV. Estimacion practica: 16 GB de memoria unificada como minimo, 24-32 GB recomendable para contextos largos.
+- GPU: disenado para Apple Silicon (M1/M2/M3/M4 y variantes Pro/Max/Ultra). No es compatible de forma nativa con CUDA.
+- Cabe en consumer GPU: si, en Macs con memoria unificada de 16 GB o superior; no en GPUs NVIDIA de consumo por incompatibilidad de formato y kernels.
+- Despliegue: exclusivamente mediante oMLX (app de macOS) o la CLI `omlx serve`; usa kernels nativos incluidos en la app. No se declara soporte para llama.cpp, Ollama, vLLM ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ3h-mtp | 6,28B logicos (base 27B nominal) | no disponible | MLX oQ | no disponible | Hugging Face |
-| Modelo base Qwen3.5 27B (BF16) | 27B nominal | no disponible | safetensors | no disponible | no disponible |
-| Cuantizaciones GGUF Q4 de modelos 27B | ~27B nominal | no disponible | GGUF | segun modelo base | amplia en Hugging Face |
+| Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ3h-mtp (este) | 27,78B (6,28B elementos almacenados) | no disponible | MLX / oMLX | Apache 2.0 | Hugging Face, 177 descargas |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored (upstream) | 27,78B | no disponible | safetensors BF16 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (base) | 27,78B | no disponible | safetensors | Apache 2.0 | Hugging Face |
 
-La comparativa directa con alternativas concretas no esta disponible: no se han encontrado en la informacion proporcionada otros checkpoints comparables de la misma familia con datos verificables de rendimiento, contexto o licencia.
+La diferencia principal frente a sus dos predecesores es el tamano en disco (13,37 GiB frente a los aproximadamente 55 GB en BF16 del modelo de 27B) y el runtime: solo MLX/oMLX. El upstream mantiene el alineamiento eliminado y el modelo base conserva la censura original.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: el repositorio no especifica licencia, lo que impide determinar si el uso comercial esta permitido. Es un bloqueante para produccion.
-- Derivado no oficial: no es un checkpoint publicado por el equipo de Qwen; la cuantizacion y la variante "Uncensored" son obra de un tercero sin proceso de validacion documentado.
-- Sin benchmarks: no hay evidencia publicada de la calidad del modelo tras la cuantizacion mixta ni del efecto de la abliteration sobre el rendimiento.
-- Riesgo de contenido nocivo: la etiqueta "Heretic Uncensored" indica filtros de seguridad reducidos o eliminados, con riesgo elevado de generar contenido ofensivo, ilegal o peligroso si se expone a usuarios finales.
-- Alucinacion: sin datos de evaluacion, no se puede acotar la tasa de alucinacion; la cuantizacion agresiva en algunas capas puede incrementarla.
-- Sesgos: no documentados; el modelo base hereda los sesgos de su dataset de entrenamiento, no descrito en esta ficha.
-- Restriccion de plataforma: el formato oQ y la libreria MLX limitan el despliegue a Apple Silicon; no hay versiones para CUDA, ROCm ni CPU generica.
-- Idiomas y contexto desconocidos: no se especifica la ventana de contexto ni la cobertura linguistica, lo que impide planificar aplicaciones multilingues o de contexto largo.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que valide su funcionamiento.
-- Fecha de publicacion futura respecto a la mayoria de checkpoints de referencia, lo que sugiere un ecosistema muy reciente y posiblemente inestable.
+- Modelo uncensored: no aplica filtros de rechazo, por lo que puede generar contenido danino, ilegal o sexualmente explicito. Requiere moderacion externa en cualquier despliegue publico.
+- Riesgo de alucinacion: inherente a los modelos de 27B y potencialmente agravado por la cuantizacion mixta a 4-6 bits en parte de las capas.
+- Solo ingles y chino declarados; el rendimiento en castellano no esta verificado y probablemente sea deficiente.
+- Compatibilidad restringida: requiere MLX y, para los kernels oQh, la app oMLX en macOS. No funciona en Linux, Windows ni CUDA sin conversion previa.
+- Contexto maximo no documentado en la model card; conviene validarlo empiricamente antes de usarlo con ventanas largas.
+- Fine-tune de terceros sobre un base de terceros: la calidad y estabilidad del ajuste no estan avaladas por Alibaba/Qwen.
+- Licencia Apache 2.0 permite uso comercial, pero el contenido generado sin censura puede incumplir normativa local (por ejemplo, en la UE) y las condiciones de las plataformas de distribucion.
+- Solo 177 descargas y 0 likes: ecosistema minimo, poca validacion comunitaria y riesgo de errores no detectados en la cuantizacion.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/underlotus/Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ3h-mtp
-- Repositorio de oMLX (herramienta de cuantizacion): https://github.com/jundot/omlx
-- No se han encontrado en la informacion proporcionada papers, blogs, demos ni repositorios adicionales asociados al modelo.
+- Modelo en Hugging Face: https://huggingface.co/underlotus/Qwen3.8-27B-Ultimate-Heretic-Uncensored-oQ3h-mtp
+- Modelo upstream: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
+- Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Herramienta oMLX: https://github.com/jundot/omlx
+- Release oMLX v0.8.0: https://github.com/jundot/omlx/releases/tag/v0.8.0
+- Documentacion de cuantizacion oQ/oQh: https://github.com/jundot/omlx/blob/v0.8.0/docs/oQ_Quantization.md#oqh

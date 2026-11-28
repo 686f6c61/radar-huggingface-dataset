@@ -2,76 +2,100 @@
 
 ## Resumen
 
-Dark-Scarlett-v1.0-27B-GGUF es una colección de cuantizaciones GGUF del modelo Dark-Scarlett-v1.0-27B, desarrollado por ReadyArt y cuantizado por mradermacher. Se trata de un modelo de lenguaje basado en Qwen 3.6 (según las etiquetas del repositorio), orientado a roleplay, conversación y generación de texto instructivo, con un enfoque explícito en contenido adulto y no alineado. El modelo está pensado para ejecución local en hardware de consumo o profesional, y su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+Dark-Scarlett-v1.0-27B-GGUF es la distribucion en formato GGUF del modelo Dark-Scarlett-v1.0-27B, publicado por el usuario ReadyArt y cuantizado por mradermacher. Se trata de un modelo de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) derivado de la familia Qwen, segun la etiqueta "qwen 3.6" de su model card, y afinado especificamente para roleplay, conversacion instructiva y contenido para adultos (ERP). La relevancia de esta ficha radica en que permite ejecutar un modelo de gran tamano en hardware de consumo mediante cuantizacion GGUF, algo impracticable con los pesos originales en safetensors.
 
-Con 27 320 millones de parámetros, el modelo se distribuye en múltiples niveles de cuantización (desde Q2_K hasta Q8_0) que ocupan entre 11 y 29 GB, lo que permite adaptarse a diferentes capacidades de VRAM. Aunque no se publican detalles sobre la longitud de contexto ni el proceso de entrenamiento, su especialización en roleplay y su carácter "unaligned" lo convierten en una opción relevante para aplicaciones de ficción interactiva y simulación de personajes, siempre que se asuman los riesgos asociados al contenido explícito.
+El repositorio incluye un conjunto completo de cuantizaciones estaticas (desde Q2_K hasta Q8_0) y dos ficheros mmproj (Q8_0 y f16) que actuan como suplemento multimodal, lo que sugiere que el modelo base incorpora capacidades de vision. El autor de la cuantizacion es un actor consolidado en el ecosistema GGUF, con infraestructura propia (nethype GmbH) para generar estos ficheros.
 
-## Especificaciones técnicas
+La licencia declarada es Apache 2.0, lo que en principio facilita el uso comercial, aunque el contenido del modelo esta orientado a tematicas adultas y lleva la etiqueta "not-for-all-audiences". El modelo solo declara soporte para ingles y cuenta con 194 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion muy limitada.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Basado en Qwen 3.6 (arquitectura transformer, no confirmada oficialmente) |
-| Parametros totales | 27 320 697 856 (27,32 B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Transformer (derivado de Qwen; etiqueta "qwen 3.6"), con modulo multimodal mmproj |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, además de mmproj-f16 y mmproj-Q8_0 |
-| Idiomas soportados | Inglés (en) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors para el modelo base original) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (con ficheros mmproj para vision); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna ni el proceso de entrenamiento del modelo base. Las etiquetas indican que se basa en Qwen 3.6, lo que sugiere una arquitectura transformer estándar, pero no se confirma si incorpora innovaciones como atención lineal o decodificación especulativa. Tampoco se publican datos sobre el dataset de entrenamiento, el número de tokens procesados o si se aplicaron técnicas de alineación como RLHF o DPO. El modelo se presenta como "unaligned", lo que implica que no se aplicaron ajustes de seguridad o moderación de contenido, y su especialización en roleplay y contenido adulto sugiere un fine-tuning dirigido a esos dominios.
+La informacion disponible no detalla la arquitectura interna del modelo base. La etiqueta "qwen 3.6" y el tamano de 27,3 mil millones de parametros apuntan a un transformer denso de la familia Qwen, aunque no se confirma si emplea atencion lineal, decodificacion especulativa u otras innovaciones. La presencia de ficheros mmproj indica que el modelo base integra un codificador visual, por lo que se trata de un modelo multimodal, no solo de texto.
 
-La cuantización GGUF realizada por mradermacher conserva las capacidades del modelo original, incluyendo archivos mmproj que podrían indicar soporte multimodal (proyección de visión), aunque no se especifica su funcionalidad exacta.
+No se han publicado en la informacion disponible datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o fine-tuning supervisado. Las etiquetas "roleplay", "instruct", "unaligned" y "erp" sugieren un ajuste fino orientado a conversacion sin restricciones de alineamiento, pero se desconoce el proceso concreto. Esta cuantizacion concreta ha sido generada por mradermacher con cuantizaciones estaticas; el autor indica que dispone de versiones con imatrix en un repositorio separado.
 
 ## Capacidades
 
-- Generación de texto conversacional y narrativo, especialmente orientado a roleplay y simulación de personajes.
-- Instrucciones y respuestas en formato instruct, útil para tareas de diálogo guiado.
-- Contenido explícito y adulto sin filtros de moderación, dado su carácter "unaligned".
-- Posible soporte multimodal (según los archivos mmproj incluidos), aunque no se detalla su alcance.
-- Capacidad de mantener conversaciones multi-turno, aunque la longitud de contexto no está documentada.
-- Especialización en inglés; no se garantiza rendimiento en otros idiomas.
+- Generacion de texto conversacional multi-turno, con enfasis en roleplay y narrativa interactiva.
+- Capacidades multimodales: los ficheros mmproj permiten procesar imagenes junto con texto.
+- Instrucciones: el modelo esta etiquetado como "instruct", por lo que responde a comandos directos.
+- Contenido para adultos: entrenado o ajustado para ERP y tematicas maduras explicitas.
+- Modo "unaligned": menor tendencia a rechazar peticiones por filtros de seguridad.
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion.
+- Capacidades multilingues: solo se declara ingles.
+- Capacidades especiales (thinking mode, audio): no disponible en la informacion.
 
 ## Casos de uso
 
-- Roleplay interactivo: el modelo puede actuar como personaje de ficción en juegos de texto o chats, manteniendo coherencia narrativa y respondiendo a las acciones del usuario. Su fine-tuning específico lo hace adecuado para escenarios de fantasía, ciencia ficción o drama.
-- Escritura creativa asistida: generación de diálogos, descripciones y tramas para novelas, guiones o fanfiction, con un tono maduro y sin restricciones de contenido.
-- Simulación de personajes para juegos de rol de mesa: el modelo puede interpretar NPCs (personajes no jugadores) con personalidades definidas, facilitando la labor del director de juego.
-- Chatbots de entretenimiento para adultos: aplicaciones de conversación íntima o erótica, donde el modelo responde sin censura previa.
-- Generación de contenido literario explícito: redacción de relatos o escenas con contenido sexual explícito, útil para autores que trabajan en ese género.
-- Prototipado de asistentes conversacionales sin alineación: investigación sobre comportamientos de modelos no moderados, siempre que se cumplan las políticas de uso y se aísle el despliegue.
+- Roleplay conversacional de larga duracion: el modelo esta afinado especificamente para mantener personajes y narrativa coherente en conversaciones multi-turno, con un tamano de 27 B que aporta mayor riqueza lexica que modelos de 7-8 B en este dominio.
+- Escritura creativa de ficcion adulta: adecuado para generar narrativa explicita con control de tono y estilo, gracias a su ajuste "unaligned" que evita rechazos sistematicos.
+- Prototipado de asistentes de personaje en local: con la cuantizacion Q4_K_M (16,9 GB) puede ejecutarse en una GPU de consumo de 24 GB, lo que permite desplegar un asistente de rol sin depender de APIs externas.
+- Analisis de imagenes en contextos narrativos: los ficheros mmproj permiten describir o incorporar imagenes a una historia, util para herramientas de escritura asistida con referencia visual.
+- Investigacion sobre alineamiento y seguridad: al estar etiquetado como "unaligned", sirve como caso de estudio para medir la eficacia de filtros y evaluar riesgos de modelos sin restricciones.
+- Generacion de dialogos para videojuegos o narrativa interactiva: la ventana de contexto (no confirmada) y el estilo conversacional lo hacen apto para motores de dialogo de personajes no jugadores en produccion local.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 11 variantes de cuantizacion, lo que permite medir el impacto de la cuantizacion en la calidad narrativa y la coherencia en un mismo modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras pruebas estandarizadas para este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: según la cuantización elegida, se necesitan aproximadamente entre 12 GB (Q2_K) y 30 GB (Q8_0) de VRAM, más overhead de contexto y caché. Por ejemplo, Q4_K_M (16,9 GB) requeriría al menos 20 GB de VRAM libre.
-- GPUs recomendadas: para cuantizaciones Q4 y superiores, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente. Para Q6_K o Q8_0, se recomienda una A100 (40/80 GB) o H100. En tarjetas con menos VRAM (8-12 GB), solo cabrían las cuantizaciones Q2_K o Q3_K_S con contexto reducido.
-- Compatibilidad con GPU de consumo: sí, las cuantizaciones Q2_K a Q5_K_M pueden ejecutarse en GPUs de gama alta para consumidores (RTX 3080/3090/4090) con suficiente VRAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, vLLM (con adaptadores GGUF) o TGI. Los archivos GGUF son compatibles con la mayoría de motores de inferencia local.
-- Latencia y throughput: no se han publicado mediciones específicas. En una RTX 4090 con Q4_K_M, se puede esperar una velocidad de generación de 30-50 tokens por segundo, dependiendo de la implementación y el contexto.
+- VRAM estimada para inferencia (pesos mas overhead de contexto):
+  - Q2_K: ~11 GB.
+  - Q3_K_M: ~13,6 GB.
+  - IQ4_XS: ~15,5 GB.
+  - Q4_K_M: ~16,9 GB.
+  - Q5_K_M: ~19,6 GB.
+  - Q6_K: ~22,5 GB.
+  - Q8_0: ~29,1 GB.
+- GPU recomendadas: para Q8_0, una A100 40 GB o H100; para Q6_K, una RTX 4090 (24 GB) o A6000; para Q4_K_M, una RTX 4090 o RTX 3090 con margen para contexto.
+- Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizaciones Q4_K_M o inferiores; en GPUs de 16 GB solo con Q2_K o Q3_K_S y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF; los ficheros mmproj requieren soporte multimodal del runtime (por ejemplo, llama.cpp con `--mmproj`).
+- Latencia y throughput: no disponible en la informacion.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con otros modelos de roleplay o conversacionales. Aunque existen alternativas como MythoMax, Noromaid o modelos basados en Llama 3 fine-tuneados para roleplay, no se conocen datos objetivos de rendimiento de Dark-Scarlett-v1.0-27B frente a ellos. Por tanto, la comparativa se considera no disponible.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Dark-Scarlett-v1.0-27B-GGUF | 27,3 B | no disponible | Apache 2.0 | GGUF | Roleplay/ERP, multimodal via mmproj, solo ingles |
+| Modelos Qwen densos de ~27-32 B | ~27-32 B | no disponible | segun variante | safetensors, GGUF | Base generica; el ajuste de Dark-Scarlett es especifico para roleplay |
+| Modelos de roleplay de 7-8 B (familia Mistral/Llama) | 7-8 B | no disponible | segun variante | GGUF | Menor calidad narrativa pero mucho mas ligeros (4-6 GB en Q4) |
+
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia.
 
 ## Limitaciones y advertencias
 
-- Contenido explícito y NSFW: el modelo está diseñado para generar contenido adulto sin moderación. Su uso en entornos públicos o profesionales puede violar políticas de plataforma o leyes locales.
-- Riesgo de alucinación: al ser un modelo no alineado, puede producir afirmaciones falsas o incoherentes con mayor frecuencia que modelos alineados, especialmente en contextos no relacionados con su dominio de especialización.
-- Sesgos potenciales: al entrenarse con datos de roleplay y contenido adulto, puede reflejar estereotipos de género, raza o sexualidad presentes en esos corpus.
-- Limitación de idioma: solo se garantiza un rendimiento adecuado en inglés; otros idiomas pueden generar respuestas de baja calidad.
-- Longitud de contexto desconocida: no se documenta el tamaño de la ventana de contexto, lo que dificulta planificar conversaciones largas o procesamiento de documentos extensos.
-- Restricciones de licencia: aunque la licencia Apache 2.0 permite uso comercial, el contenido generado puede estar sujeto a regulaciones sobre material explícito. El usuario es responsable del cumplimiento legal.
-- Sin soporte oficial: el modelo es una cuantización comunitaria; no hay garantías de mantenimiento, corrección de errores o actualizaciones.
+- Contenido para adultos: el modelo esta disenado para generar material explicito; no es apto para entornos infantiles ni para uso sin moderacion.
+- Etiqueta "unaligned": menor rechazo de peticiones potencialmente daninas, lo que incrementa el riesgo de generar contenido ofensivo, ilegal o peligroso.
+- Riesgo de alucinacion: como todo modelo generativo de este tamano, puede inventar hechos, nombres y detalles; no debe usarse como fuente de informacion factual sin verificacion.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta garantizado y probablemente sea degradado.
+- Contexto: no se especifica la longitud de contexto, lo que impide planificar despliegues con conversaciones muy largas.
+- Licencia: Apache 2.0 permite uso comercial, pero el contenido generado puede infringir normativas locales sobre material adulto; la responsabilidad recae en el desplegador.
+- Adopcion muy baja (194 descargas, 0 likes) y ausencia de benchmarks publicos: no hay evidencia externa de calidad ni de estabilidad en produccion.
+- El repositorio ocupa 190,8 GB, por lo que la descarga completa de todas las cuantizaciones es costosa en almacenamiento.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-27B-GGUF
-- Modelo base (safetensors): https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-27B
+- Modelo base: https://huggingface.co/ReadyArt/Dark-Scarlett-v1.0-27B
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-27B-i1-GGUF
-- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Dark-Scarlett-v1.0-27B-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

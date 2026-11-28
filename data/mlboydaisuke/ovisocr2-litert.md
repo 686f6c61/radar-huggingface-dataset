@@ -2,92 +2,99 @@
 
 ## Resumen
 
-OvisOCR2-LiteRT es una conversión al formato LiteRT-LM (`.litertlm`) del modelo OvisOCR2 de ATH-MaaS, un modelo de parsing de documentos de 0,85 mil millones de parámetros diseñado para transcribir páginas de documentos en Markdown estructurado. Desarrollado por mlboydaisuke, este paquete permite ejecutar el modelo en dispositivos edge mediante el runtime LiteRT-LM de Google, con una entrada estática de imagen de 512×512 píxeles. El modelo base OvisOCR2 se construyó post-entrenando Qwen3.5-0.8B con un data engine que combina anotaciones reales filtradas y páginas sintéticas, y es capaz de emitir texto como Markdown, tablas como HTML y fórmulas como LaTeX, manteniendo el orden de lectura natural.
+OvisOCR2-LiteRT es una conversión al formato LiteRT-LM (`.litertlm`) del modelo ATH-MaaS/OvisOCR2, un parser de documentos a nivel de página de 0,85B de parámetros construido por post-entrenamiento sobre Qwen3.5-0.8B. El modelo recibe la imagen de una página y emite una transcripción en Markdown en orden de lectura: texto como Markdown, tablas como HTML `<table>` y fórmulas como LaTeX. Esta conversión, publicada por el usuario mlboydaisuke, está pensada para inferencia on-device mediante el runtime LiteRT-LM de Google, con un encoder visual ViT de 12 capas cableado al contrato `fast_vlm` a una entrada estática de 512×512.
 
-La relevancia de esta conversión radica en que acerca un modelo de visión-lenguaje (VLM) especializado en OCR a entornos de producción en dispositivos móviles y de borde, con un tamaño de archivo de 1,3 GB y cuantización int8 en el decoder. El modelo conserva la arquitectura híbrida gated-deltanet del Qwen3.5-0.8B (18 capas de atención lineal y 6 de atención completa) junto con un ViT de 12 capas, y se distribuye bajo licencia Apache-2.0. Aunque no es un modelo de chat, su especialización en parsing de documentos lo hace adecuado para tareas de digitalización, extracción de tablas y fórmulas, y accesibilidad.
+La relevancia de esta ficha es doble. Por un lado, demuestra que un VLM especializado en OCR documental puede ejecutarse en CPU y GPU de consumo con un único fichero de 1,30 GB en int8, manteniendo paridad prácticamente exacta con la referencia fp32 en páginas legibles a 512×512. Por otro lado, documenta con mediciones honestas los límites del checkpoint: no es un modelo conversacional, se degrada en páginas densas y requiere gestión cuidadosa del estado recurrente en el runtime.
+
+Arquitectónicamente es un modelo híbrido (capas de atención con Gated DeltaNet, linaje Qwen3.5) con decodificador int8 y encoder visual fp16. La licencia Apache 2.0 facilita su integración comercial, aunque el ecosistema LiteRT-LM impone restricciones prácticas de versión y de gestión de motores que conviene conocer antes de desplegarlo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Híbrida gated-deltanet (18 capas linear-attention + 6 full-attention) + ViT de 12 capas |
-| Parametros totales | 0,85 mil millones |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (entrada de imagen estática 512×512) |
-| Tipos de cuantizacion | int8 (decoder dinámico en linears y embedding; convs y delta rule en float, activaciones fp32), fp16 (vision encoder), int8 (adapter) |
-| Idiomas soportados | No disponible (el prompt sugiere capacidad multilingüe, pero no se especifican idiomas concretos) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | `.litertlm` (LiteRT-LM) |
+| Arquitectura | Transformer híbrido con Gated DeltaNet (linaje Qwen3.5) + encoder visual ViT de 12 capas |
+| Parametros totales | 0,85B (modelo base ATH-MaaS/OvisOCR2) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | int8 en decodificador (dinámica en lineales y embedding; convoluciones y regla delta en float, activaciones fp32 declaradas) + encoder visual fp16 / adaptador int8 |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | `.litertlm` (LiteRT-LM); fichero `OvisOCR2_int8.litertlm` de 1,30 GB |
 
 ## Arquitectura y entrenamiento
 
-OvisOCR2 se basa en el modelo Qwen3.5-0.8B, que emplea una arquitectura híbrida gated-deltanet: 18 capas de atención lineal (con state buffers) y 6 capas de atención completa, más un ViT de 12 capas para el procesamiento visual. El post-entrenamiento para OCR se realizó con un data engine que combina anotaciones de documentos reales filtradas con páginas sintéticas cuyas imágenes renderizadas y objetivos Markdown se generan automáticamente, según el reporte técnico disponible en arXiv. El modelo genera transcripciones en orden de lectura natural, representando tablas como HTML `<table>`, fórmulas como LaTeX y regiones visuales como etiquetas `<img>` con coordenadas de bounding box.
+El modelo base OvisOCR2 se obtiene por post-entrenamiento de Qwen3.5-0.8B para parsing documental. La arquitectura combina un encoder visual ViT de 12 capas con un decodificador híbrido que incorpora capas Gated DeltaNet, una variante de atención lineal con estado recurrente. La conversión a LiteRT-LM conecta el ViT del propio checkpoint al contrato `fast_vlm` del runtime con entrada estática de 512×512, siguiendo la misma ruta de conversión que la build VL de litert-community/Qwen3.5-0.8B; según el autor, ambos checkpoints comparten cada byte de configuración y solo difieren en los pesos.
 
-La conversión a LiteRT-LM elimina la cabeza MTP (multi-token prediction) y declara tanto `<|endoftext|>` como `<|im_end|>` como tokens de parada, corrigiendo un problema del modelo original que tendía a divagar sin una configuración de eos adecuada. El paquete incluye una escalera de prefill de seis firmas para optimizar la carga en Metal y una calibración específica de las escalas de LayerNorm del vision tower para fp16.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. La model card sí detalla el proceso de cuantización: el decodificador usa int8 dinámico en capas lineales y embedding (cuantización en tiempo de ejecución vía XNNPACK en la ruta CPU), mientras que convoluciones y regla delta permanecen en float con activaciones fp32 declaradas; el encoder visual va en fp16 y el adaptador en int8. El bundle declara seis firmas de prefill y define tanto `<|endoftext|>` como `<|im_end|>` como tokens de parada, corrigiendo el comportamiento del repo original, que carece de `generation_config.json`.
 
 ## Capacidades
 
-- Parsing de documentos página a página: transcribe texto como Markdown, tablas como HTML `<table>` y fórmulas como LaTeX, manteniendo el orden de lectura natural.
-- Reconocimiento de regiones visuales: emite etiquetas `<img src="images/bbox_{left}_{top}_{right}_{bottom}.jpg" />` para gráficos e imágenes, con coordenadas normalizadas a [0, 1000).
-- Preservación del texto original: no traduce ni parafrasea, transcribe literalmente.
-- Inferencia on-device: compatible con CPU y GPU (Metal) en dispositivos Apple, con rendimiento medido en iPhone 17 Pro y Apple M4 Max.
-- Salida determinista: con temperatura 0 y backend GPU produce salidas byte-idénticas a CPU en páginas de tablas.
-- No es un modelo de chat: el post-entrenamiento erosiona la capacidad conversacional general; tiende a transcribir el prompt en lugar de responder preguntas.
+- Transcripción de páginas de documento a Markdown en orden de lectura.
+- Conversión de tablas a HTML `<table>` con celdas, títulos y pies de tabla.
+- Renderizado de fórmulas matemáticas como LaTeX (verificado con la ley de Planck invertida, coincidencia símbolo a símbolo).
+- Procesamiento de imagen a texto (pipeline `image-text-to-text`) con entrada estática de 512×512.
+- Inferencia on-device en backend CPU y GPU con salida byte-idéntica entre ambos en la página de prueba.
+- Paridad medida con la referencia fp32: similitud 1.0000 en página de tabla y 1.0000 frente a la referencia fp32 con posición 1-D en página de fórmula (0.9968 frente a la referencia completa con M-RoPE).
+- No soporta de forma fiable conversación general: en una prueba de 8 preguntas genéricas tiende a transcribir el prompt en lugar de responder.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso.
 
 ## Casos de uso
 
-- Digitalización de documentos escaneados: convierte páginas de informes, facturas o artículos en Markdown estructurado para archivado y búsqueda, gracias a su capacidad de transcribir tablas y fórmulas con precisión.
-- Extracción de tablas para análisis de datos: al emitir tablas como HTML, se puede integrar en pipelines que convierten el HTML a CSV o JSON para alimentar hojas de cálculo o bases de datos.
-- Procesamiento de artículos académicos: las fórmulas LaTeX se extraen directamente, facilitando la reutilización en documentos científicos o sistemas de gestión de referencias.
-- Accesibilidad: convierte documentos visuales en texto plano o Markdown para lectores de pantalla, mejorando el acceso a contenido impreso para personas con discapacidad visual.
-- Automatización de entrada de datos: en entornos empresariales, el modelo puede procesar formularios y facturas en dispositivos móviles, reduciendo la intervención manual.
-- Integración en aplicaciones de búsqueda documental: al generar transcripciones en orden de lectura, se puede indexar el contenido para búsqueda semántica o por palabras clave.
+- Digitalización de facturas y albaranes: el modelo transcribe tablas completas a HTML, lo que permite extraer líneas de detalle con un parser posterior; su ventana de 512×512 es suficiente para documentos de una página con tipografía legible.
+- Procesamiento de artículos científicos con fórmulas: la exactitud LaTeX verificada (coincidencia símbolo a símbolo en la ley de Planck invertida) lo hace adecuado para pipelines de conversión de PDF a Markdown con ecuaciones preservadas.
+- Archivado documental en dispositivos sin conexión: al ejecutarse con LiteRT-LM en CPU, puede desplegarse en portátiles o equipos edge para digitalizar documentación sensible sin enviar imágenes a la nube.
+- Extracción de tablas financieras: informes trimestrales renderizados a 512×512 se transcriben celda a celda de forma exacta, lo que habilita la carga automatizada en hojas de cálculo o bases de datos.
+- Preprocesado para RAG documental: la salida Markdown con tablas HTML y LaTeX es directamente indexable por pipelines de recuperación, evitando el ruido de extracción de texto plano de PDF.
+- Digitalización de documentación técnica en campo: con un único fichero de 1,30 GB y backend GPU o CPU, puede integrarse en aplicaciones móviles o embebidas para leer manuales y hojas de especificaciones.
+- Verificación de calidad de OCR en CI: dado que la salida es determinista con decodificación greedy y byte-idéntica entre CPU y GPU, sirve como referencia reproducible en tests de regresión de pipelines de conversión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, etc.) en la informacion disponible, ya que el modelo está especializado en parsing de documentos y no en tareas generales. Sin embargo, la model card reporta métricas de rendimiento de inferencia medidas con `litert-lm benchmark` en Apple M4 Max (litert-lm 0.16.0, `-p 256 -d 256 --runs 3 --cache no`):
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card reporta mediciones cualitativas y de similitud sobre páginas concretas:
 
-| Backend | Prefill (256) | Decode | TTFT |
-|---|---|---|---|
-| GPU | 2175 tok/s | 140,9 tok/s | 0,13 s |
-| CPU | 659 tok/s | 48,9 tok/s | 0,43 s |
-
-En iPhone 17 Pro (iOS 27, litert-lm v0.16.0, cold start, single runs):
-
-| Backend | Decode | TTFT | Peak memory |
-|---|---|---|---|
-| GPU (Metal) | 48,5 tok/s | 1,5 s | 3,8 GB |
-| GPU (Metal), image leg | 64,7 tok/s | 1,5 s | 3,8 GB |
-| CPU | 18,0 tok/s | 1,0 s | 0,9 GB |
-
-Además, se reporta similitud 1.0000 con la referencia fp32 en páginas de tablas y fórmulas (con una diferencia de un token en la variante M-RoPE), y salida byte-idéntica entre backends GPU y CPU en páginas de tablas.
+| Prueba | Resultado medido |
+|---|---|
+| Página de tabla (512×512, CPU, greedy) | 20/20 celdas, título, párrafo y pie transcritos exactamente; similitud 1.0000 frente a referencia fp32 |
+| Consistencia CPU vs GPU | Salida byte-idéntica en la página de tabla |
+| Página de fórmula (LaTeX) | Exacta; similitud 1.0000 frente a referencia fp32 con posición 1-D; 0.9968 frente a referencia M-RoPE completa |
+| Página académica densa (texto 9 pt) | Degradación: invención y repetición tras la región legible; el fp32 original se comporta igual |
+| Sanidad conversacional (8 preguntas) | Falla: transcribe el prompt en lugar de responder; el fp32 original falla igual |
 
 ## Requisitos de hardware
 
-- VRAM estimada: 3,8 GB en GPU (Metal) para inferencia en iPhone 17 Pro; 0,9 GB en CPU.
-- GPU recomendadas: Apple M4 Max (GPU integrada) y GPU Metal en iPhone 17 Pro; no se especifican GPUs de escritorio.
-- Compatibilidad con consumer GPU: no se indica explícitamente, pero al ser un modelo de 0,85B con cuantización int8, es plausible que quepa en GPUs de gama media (p. ej., RTX 3060 o superior) si se usa el runtime adecuado, aunque no hay datos confirmados.
-- Opciones de despliegue: runtime LiteRT-LM (requiere versión ≥ 0.15), con backends CPU y GPU (Metal). No se mencionan vLLM, llama.cpp u Ollama.
-- Latencia y throughput: prefill de 2175 tok/s y decode de 140,9 tok/s en M4 Max GPU; decode de 48,5 tok/s en iPhone 17 Pro GPU. TTFT de 0,13 s en M4 Max y 1,5 s en iPhone.
+- VRAM estimada: el fichero int8 ocupa 1,30 GB en disco; la huella en memoria es del orden de 1,3–2 GB, aunque no se publica una cifra oficial de VRAM.
+- GPU recomendadas: no se especifican modelos concretos; el autor valida backend GPU sin detallar hardware.
+- Compatibilidad con GPU de consumo: por tamaño (0,85B en int8) es plausible en GPUs de consumo con 4 GB o más, pero no se confirma en la información disponible.
+- CPU: ruta validada con cuantización dinámica XNNPACK; el autor ejecuta pruebas en CPU sobre Mac.
+- Despliegue: exclusivamente mediante el runtime LiteRT-LM (versión ≥ 0.15; las pruebas de estado recurrente se hicieron con 0.18.0). No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar directamente con otros modelos de parsing de documentos en formato LiteRT-LM. El modelo base OvisOCR2 (0,85B) comparte arquitectura con Qwen3.5-0.8B, pero su post-entrenamiento lo especializa en OCR. Alternativas genéricas como PaddleOCR o Tesseract no son comparables en arquitectura ni en formato de salida. Se indica "no disponible" para una comparativa formal.
+| Modelo | Parámetros | Contexto | Formato / runtime | Licencia | Notas |
+|---|---|---|---|---|---|
+| OvisOCR2-LiteRT | 0,85B | no disponible | `.litertlm` / LiteRT-LM | Apache 2.0 | Parser documental on-device, entrada 512×512 |
+| ATH-MaaS/OvisOCR2 | 0,85B | no disponible | safetensors / transformers | Apache 2.0 | Checkpoint fp32 original; misma calidad en páginas legibles, sin optimización on-device |
+| litert-community/Qwen3.5-0.8B (VL) | 0,8B | no disponible | `.litertlm` / LiteRT-LM | no disponible | Misma ruta de conversión y configuración; modelo generalista VL, no especializado en OCR |
+
+No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de chat: el post-entrenamiento erosiona la capacidad conversacional; en pruebas de preguntas genéricas, tiende a transcribir el prompt en lugar de responder.
-- Problemas con páginas densas: texto de 9 pt o menor excede la resolución de 512×512, lo que provoca que el modelo invente contenido y se repita. El modelo original fp32 presenta el mismo comportamiento.
-- Requiere pre-renderizado: la entrada se redimensiona a 512×512; se recomienda pre-renderizar la página a esa resolución para controlar la relación de aspecto.
-- Dependencia de configuración de tokens de parada: el modelo original sin `generation_config.json` tiende a divagar; este paquete declara los tokens de parada correctos, pero al comparar con la pila estándar de Hugging Face hay que añadir 248046 a `eos_token_id`.
-- Sesgos y alucinaciones: no se documentan sesgos específicos, pero el riesgo de alucinación es alto en páginas ilegibles o con texto pequeño.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el modelo base y sus pesos están sujetos a la misma licencia; se recomienda verificar los términos del modelo original.
+- No es un modelo conversacional: el post-entrenamiento OCR erosiona la capacidad de chat y tiende a transcribir el prompt. No debe usarse como asistente general.
+- Páginas densas (texto de 9 pt) superan la resolución de 512×512: el modelo inventa contenido y entra en bucles de repetición. Es necesario trocear la página o usar entradas de mayor resolución.
+- El repo original carece de `generation_config.json`, por lo que en `transformers` el EOS es solo `<|endoftext|>` y la generación fp32 continúa hasta el final del turno; para comparar hay que añadir 248046 a `eos_token_id`.
+- Bug del runtime LiteRT-LM 0.18.0: reutilizar un Engine para una segunda conversación reutiliza el estado recurrente de la anterior y produce respuestas degeneradas. Debe crearse un Engine nuevo por conversación; el fallo se corrigió en main el 2026-11-03 y está incluido en v0.20.0, versión con la que este modelo no se ha probado en modo Engine compartido.
+- Requiere litert-lm ≥ 0.15; no hay compatibilidad documentada con otros runtimes de inferencia.
+- No se documentan sesgos conocidos, idiomas soportados ni restricciones adicionales de la licencia Apache 2.0 más allá de las estándar.
+- Riesgo de alucinación documentado en regiones no legibles de la imagen, con comportamiento idéntico al checkpoint fp32 de referencia.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/mlboydaisuke/OvisOCR2-LiteRT)
-- [Modelo base ATH-MaaS/OvisOCR2](https://huggingface.co/ATH-MaaS/OvisOCR2)
-- [Reporte técnico de OvisOCR2 en arXiv](https://arxiv.org/abs/2607.13639v1)
-- [Repositorio de Ovis en GitHub](https://github.com/ATH-MaaS/Ovis)
-- [LiteRT-LM en GitHub](https://github.com/google-ai-edge/litert-lm)
-- [LiteRT (sucesor de TensorFlow Lite)](https://github.com/google-ai-edge/litert)
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/OvisOCR2-LiteRT
+- Modelo base: https://huggingface.co/ATH-MaaS/OvisOCR2
+- Build VL de referencia: https://huggingface.co/litert-community/Qwen3.5-0.8B
+- Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
+- Issue del runtime sobre estado recurrente: https://github.com/google-ai-edge/LiteRT-LM/issues/3165
+- Commit de corrección: https://github.com/google-ai-edge/LiteRT-LM/commit/e1f86b05bf8a731331622a2622440e9f93d9a9f5
+- Release v0.20.0: https://github.com/google-ai-edge/LiteRT-LM/releases/tag/v0.20.0

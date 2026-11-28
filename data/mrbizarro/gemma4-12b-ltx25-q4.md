@@ -2,90 +2,111 @@
 
 ## Resumen
 
-`Mrbizarro/gemma4-12b-ltx25-q4` es una cuantización de 4 bits en formato MLX del codificador de texto (text encoder) del modelo de vídeo Lightricks/LTX-2.5. No se trata de un modelo generativo de texto autónomo, sino de un componente especializado: el text encoder Gemma 4 de 12B que LTX-2.5 emplea para convertir prompts en representaciones latentes que alimentan el pipeline de generación de vídeo. El autor, Mrbizarro, lo publica para su uso en Apple Silicon (macOS, chips M-series) con la librería MLX, pensado para ejecución local y offline.
+`Mrbizarro/gemma4-12b-ltx25-q4` es la torre de texto (text encoder) que utiliza el modelo de generación de vídeo LTX-2.5 de Lightricks, convertida a MLX y cuantizada a 4 bits para su ejecución local en Apple Silicon. No se trata de un modelo conversacional ni de un LLM de propósito general: es un componente auxiliar que transforma los prompts de texto en embeddings que el motor de difusión de LTX-2.5 consume para generar vídeo con audio. El autor, Mrbizarro, lo publica como parte del ecosistema de la aplicación Phosphene, una app de escritorio para macOS de código abierto orientada a generación de vídeo, imagen, música y voz en local y sin conexión.
 
-El modelo resuelve un problema muy concreto: permitir que usuarios de Mac con memoria unificada limitada puedan ejecutar el pipeline completo de LTX-2.5 (o variantes como Phosphene) sin depender de CUDA ni de GPUs de datacenter. Al reducir el text encoder a 4 bits y empaquetarlo en MLX, se rebaja el peso del repo a unos 6,7 GB y los parámetros totales a 11.907.350.320, lo que facilita su carga en equipos con 32-64 GB de memoria unificada.
+El modelo base es un Gemma 4 de 12B (`model_type: gemma4_unified`) afinado por Lightricks específicamente para LTX-2.5. La conversión a MLX y la cuantización a 4 bits con tamaño de grupo 64 reducen el peso a aproximadamente 6,7 GB, lo que permite cargarlo en Macs con memoria unificada moderada. El repositorio contiene un único archivo `safetensors` con los pesos cuantizados, junto con configuración, tokenizer, plantilla de chat y un manifiesto con los hashes SHA-256 de cada archivo.
 
-Es relevante ahora porque LTX-2.5 es un modelo de vídeo reciente de Lightricks y el ecosistema de cuantizaciones comunitarias para Apple Silicon está creciendo. Sin embargo, el acceso está restringido (gated): requiere aceptar la licencia `ltx-2.x-community-license-agreement` en Hugging Face, y el modelo solo declara soporte para inglés (`en`). No hay descargas ni likes registrados en el momento de la ficha, lo que indica que es una publicación muy reciente y de nicho.
+Su relevancia es práctica: LTX-2.5 no funciona correctamente con el encoder Gemma 3 que usaba LTX-2.3 (carga, pero codifica los prompts de forma incorrecta), por lo que este paquete es el que permite ejecutar el pipeline completo de vídeo en hardware Apple sin depender de la nube. El modelo está publicado bajo la LTX-2.x Community License Agreement, con restricciones de uso comercial para entidades con ingresos anuales iguales o superiores a 10 millones de dólares.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (transformer decoder) como text encoder de LTX-2.5; empaquetado MLX (`gemma4_unified`) |
-| Parámetros totales | 11.907.350.320 (≈11,9B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | 4-bit (q4) en MLX |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | `ltx-2.x-community-license-agreement` (other) |
-| Formato de pesos | safetensors (MLX), repo de 6,7 GB |
-| Librería | mlx |
-| Pipeline | feature-extraction |
-| Modelo base | Lightricks/LTX-2.5 |
-| Acceso | restringido (gated) |
-| Plataforma objetivo | Apple Silicon (macOS, local, offline) |
+| Arquitectura | Transformer (Gemma 4, `model_type: gemma4_unified`), torre de texto para LTX-2.5 |
+| Parametros totales | 11.907.350.320 (~11,9B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | 4-bit, tamaño de grupo 64 (MLX) |
+| Idiomas soportados | Ingles (`en`) |
+| Licencia | LTX-2.x Community License Agreement (`ltx-2.x-community-license-agreement`) |
+| Formato de pesos | Safetensors (MLX, un unico archivo `model-00001-of-00001.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de las etiquetas: se trata de un `gemma4_unified` de 11,9B parámetros, es decir, un transformer decoder de la familia Gemma 4 que actúa como codificador de texto dentro del pipeline de LTX-2.5. La cuantización es de 4 bits en formato MLX, lo que implica pesos empaquetados para ejecución en Apple Silicon con memoria unificada. El pipeline declarado es `feature-extraction`, coherente con su función: producir embeddings de texto, no generar texto libre.
+La arquitectura subyacente es un transformer Gemma 4 de 12B, en su variante `gemma4_unified`, afinado por Lightricks como torre de texto del pipeline LTX-2.5. El autor del repositorio no ha entrenado ni modificado los pesos: según el `NOTICE.md` citado en la model card, los cambios se limitan a la conversión de formato (layout MLX) y a la cuantización a 4 bits, sin eliminar componentes ni reentrenar. El proceso se realiza con los scripts `scripts/convert_ltx_mlx.py` y `scripts/quantize_ltx.py` del proyecto Phosphene, y el layout resultante es el que carga el runtime MLX `dgrauet/ltx-2-mlx`.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF/DPO o alineación. Tampoco se documentan innovaciones técnicas específicas de esta cuantización (más allá del propio esquema q4 de MLX). El modelo base, Lightricks/LTX-2.5, es un modelo de generación de vídeo; este repo es una derivación cuantizada de su text encoder, no un modelo independiente entrenado desde cero.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas del encoder más allá de su función como extractor de características para difusión. La cuantización a 4 bits con grupo de 64 es la innovación práctica relevante: reduce el peso a ~6,7 GB manteniendo, según el autor, la calidad suficiente para que LTX-2.5 codifique los prompts correctamente, a diferencia del encoder Gemma 3 de la generación anterior.
 
 ## Capacidades
 
-- Extracción de features de texto (embeddings) para alimentar el pipeline de generación de vídeo LTX-2.5.
-- Codificación de prompts en inglés para condicionamiento de modelos de vídeo.
+- Extracción de características de texto (pipeline `feature-extraction`): convierte prompts en embeddings para el motor de difusión LTX-2.5.
+- Codificación de prompts para generación de vídeo texto-a-vídeo e imagen-a-vídeo con audio, en combinación con los paquetes `Mrbizarro/ltx-2.5-mlx-q4` o `Mrbizarro/ltx-2.5-mlx-q8`.
 - Ejecución local y offline en Apple Silicon mediante MLX.
-- Cuantización 4-bit que reduce el footprint de memoria frente al encoder original en precisión completa.
-- Integración con flujos de Apple Silicon (macOS, chips M-series) sin CUDA.
-- No se documentan capacidades de generación de texto libre, razonamiento, código, matemáticas, visión, tool calling ni agentes; el pipeline es `feature-extraction`.
-- Soporte multilingüe: solo inglés según la tarjeta del modelo.
+- Soporte de tokenizer y plantilla de chat (`chat_template.jinja`) incluidos en el repositorio.
+- No es un modelo de chat: no debe usarse para generación de texto, razonamiento, código ni diálogo.
+- Sin soporte documentado de tool calling, function calling, agentes ni razonamiento multi-paso.
+- Capacidades multilingües limitadas al inglés.
+- Sin capacidades de visión, audio o modo "thinking" propias; el audio del pipeline lo genera el motor de vídeo, no este encoder.
 
 ## Casos de uso
 
-- Generación de vídeo local en Mac: usar este text encoder cuantizado junto al resto del pipeline LTX-2.5 para producir vídeo a partir de prompts en inglés sin salir del equipo, aprovechando la memoria unificada de los chips M-series.
-- Prototipado offline de pipelines de vídeo: investigadores que quieran iterar sobre prompts y configuraciones de LTX-2.5 en un portátil Mac sin conexión ni GPU dedicada.
-- Reducción de requisitos de memoria en despliegues Apple Silicon: al sustituir el encoder de 12B en precisión completa por la versión q4 (repo de 6,7 GB), se libera VRAM/memoria unificada para el resto de componentes del pipeline (VAE, UNet/diffusion transformer).
-- Evaluación comparativa de cuantizaciones: servir como referencia para medir la pérdida de calidad de vídeo al usar un text encoder q4 frente al original, en un entorno MLX reproducible.
-- Integración en herramientas de creación de contenido para macOS: editores o apps que incorporen LTX-2.5 y necesiten un encoder ligero compatible con MLX.
-- Investigación sobre text encoders en modelos de difusión de vídeo: estudiar cómo afecta la cuantización del encoder Gemma 4 a la fidelidad prompt-vídeo en LTX-2.5.
+- Generación de vídeo local en macOS: el encoder transforma el prompt del usuario en embeddings que LTX-2.5 usa para renderizar clips de 5 segundos con sonido; es el componente que hace posible el pipeline completo sin conexión en un Mac.
+- Integración en la app Phosphene: la aplicación descarga y verifica estos archivos automáticamente e instala el encoder junto al motor LTX-2.5, por lo que el usuario final no necesita configurar nada.
+- Despliegue con el runtime `dgrauet/ltx-2-mlx`: desarrolladores que quieran usar LTX-2.5 fuera de Phosphene apuntan el runtime al paquete de modelo y a este encoder como torre de texto.
+- Investigación sobre cuantización MLX: sirve como referencia de conversión de un encoder de 12B a 4 bits (grupo 64) para pipelines de difusión, con manifiesto de hashes para verificar integridad.
+- Prototipado de texto-a-vídeo en hardware de consumo: permite probar prompts y ajustar descripciones en Macs con 16 GB o más de memoria unificada antes de escalar a equipos mayores.
+- Pipelines de creación de contenido con restricciones de privacidad: al ejecutarse offline, los prompts no salen del equipo, lo que encaja en flujos con material sensible.
+- Evaluación comparativa de encoders: útil para medir el impacto de sustituir el encoder Gemma 3 de LTX-2.3 por el Gemma 4 de LTX-2.5 en la calidad de codificación de prompts.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+La model card no publica benchmarks de calidad del encoder (MMLU, HumanEval, GSM8K, etc.), ya que no es un modelo de lenguaje evaluable de esa forma. Sí incluye tiempos de render reales de usuarios de Phosphene para un clip de 5 segundos con sonido a calidad "Balanced" en 1024x576 (o 768x448 en equipos de 16-24 GB), con el paquete base 4-bit y este encoder, incluyendo la carga del modelo. Datos recogidos entre el 10 de agosto y el 22 de octubre de 2026 sobre 36.699 renders en 1.106 Macs:
+
+| Mac | Memoria | Resolucion | Tiempo mediano |
+|---|---|---|---|
+| M5 Max | 64 GB | 1024x576 | 1 min 20 s |
+| M3 Ultra | 96 GB | 1024x576 | 1 min 55 s |
+| M5 Pro | 48 GB | 1024x576 | 2 min 30 s |
+| M4 Max | 64 GB | 1024x576 | 3 min |
+| M4 Pro | 48 GB | 1024x576 | 6 min |
+| M1 Max | 64 GB | 1024x576 | 5 min 30 s |
+| M4 Pro | 24 GB | 768x448 (480p) | 3 min 50 s |
+| M5 | 16 GB | 768x448 (480p) | 4 min 55 s |
+| M4 | 16 GB | 768x448 (480p) | 10 min 40 s |
+
+No hay datos de latencia o throughput aislados del encoder, ni comparativas con otros encoders en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el repo pesa 6,7 GB en safetensors q4; en ejecución hay que sumar overhead de MLX y del resto del pipeline LTX-2.5 (VAE, transformer de difusión), por lo que se recomienda al menos 32 GB de memoria unificada y preferiblemente 64 GB para el pipeline completo.
-- GPU recomendadas: Apple Silicon M-series (M1 Pro/Max/Ultra, M2, M3, M4 en sus variantes Pro/Max/Ultra). No está pensado para CUDA (A100, H100, RTX 4090) al estar empaquetado en MLX.
-- ¿Cabe en consumer GPU? Solo en el sentido de Apple Silicon consumer; no aplica a GPUs NVIDIA/AMD de consumo por el formato MLX.
-- Opciones de despliegue: MLX (librería declarada), con integración en pipelines LTX-2.5 para macOS. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM/memoria estimada: el repositorio ocupa 6,7 GB en disco; en memoria unificada hay que sumar el peso del encoder más el del modelo de difusión LTX-2.5 (paquete q4 o q8) y los buffers de inferencia.
+- Hardware objetivo: Apple Silicon exclusivamente (M1, M2, M3, M4, M5 en variantes base, Pro, Max y Ultra). No hay soporte CUDA documentado.
+- Cabe en equipos de consumo: los benchmarks incluyen un M5 de 16 GB y un M4 de 16 GB generando clips a 480p, y un M4 Pro de 24 GB a 480p.
+- Configuración recomendada para 1024x576: 48-64 GB de memoria unificada (M5 Pro, M4 Max, M5 Max, M3 Ultra).
+- Despliegue: runtime MLX `dgrauet/ltx-2-mlx` o la app Phosphene (instalación directa o vía Pinokio). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este componente.
+- Descarga: `hf download Mrbizarro/gemma4-12b-ltx25-q4 --local-dir gemma4-12b-ltx25-q4` tras aceptar la licencia y autenticarse con `hf auth login`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mrbizarro/gemma4-12b-ltx25-q4 | ≈11,9B | no disponible | MLX safetensors q4 | ltx-2.x-community | gated, 0 descargas |
-| Lightricks/LTX-2.5 (base) | no disponible | no disponible | safetensors | ltx-2.x-community | gated en HF |
-| Gemma 4 12B (encoder original, referencia) | ≈12B | no disponible | safetensors | según Gemma | no disponible como comparación directa |
+| `Mrbizarro/gemma4-12b-ltx25-q4` (este) | ~11,9B | No disponible | Encoder de texto para LTX-2.5, 4-bit MLX | LTX-2.x Community License | Hugging Face, MLX |
+| Encoder Gemma 3 de LTX-2.3 | No disponible | No disponible | Encoder de texto para LTX-2.3 | LTX-2.x Community License | Hugging Face; no válido para LTX-2.5 según el autor |
+| `Mrbizarro/ltx-2.5-mlx-q8` (modelo de difusión, no encoder) | No disponible | No disponible | Motor de vídeo LTX-2.5 en 8 bits | LTX-2.x Community License | Hugging Face, MLX |
 
-No se dispone de datos de rendimiento para comparar cuantitativamente con alternativas.
+No se dispone de datos de rendimiento comparativo entre encoders en la información proporcionada. La comparativa relevante es funcional: este paquete es el encoder correcto para LTX-2.5, mientras que el Gemma 3 de LTX-2.3 carga pero codifica mal los prompts.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar la licencia `ltx-2.x-community-license-agreement` en Hugging Face antes de descargar.
-- Licencia de tipo "other" con términos comunitarios de LTX-2.x; revisar condiciones de uso comercial antes de integrarlo en productos.
-- Solo inglés: no se declara soporte multilingüe.
-- No es un modelo de chat ni de generación de texto; usarlo fuera del pipeline de vídeo LTX-2.5 no es su propósito.
-- Cuantización 4-bit: puede degradar la fidelidad de los embeddings y, por tanto, la calidad del vídeo generado frente al encoder en precisión completa.
-- Sin benchmarks ni métricas publicadas; no hay evidencia cuantitativa de calidad.
-- Publicación muy reciente y sin tracción (0 descargas, 0 likes): menor garantía de mantenimiento o soporte.
-- Formato MLX exclusivo para Apple Silicon; no portable a CUDA sin conversión.
-- Riesgo de alucinación no aplica en sentido generativo, pero sí de condicionamiento impreciso en prompts ambiguos.
+- No es un modelo de chat ni de propósito general: usarlo fuera del pipeline LTX-2.5 produce resultados sin sentido.
+- Solo soporta inglés; los prompts en otros idiomas pueden codificarse de forma deficiente.
+- Riesgo de alucinación no aplica en el sentido habitual, pero una codificación incorrecta del prompt se traduce en vídeos que no reflejan la descripción.
+- Licencia restrictiva: entidades con ingresos anuales iguales o superiores a 10 millones de dólares necesitan una licencia de pago de Lightricks para cualquier uso que no sea no comercial (contacto: ltxv-licensing@lightricks.com).
+- Obligación de propagar la licencia LTX-2.x Community License con cualquier redistribución, incluida la política de uso aceptable del Anexo A.
+- Dependencia estricta del runtime MLX `dgrauet/ltx-2-mlx` y del layout de archivos de Phosphene; no es portable a otros runtimes sin conversión.
+- Exclusivo de Apple Silicon; sin soporte para GPU NVIDIA, AMD o CPU convencional documentado.
+- El autor no es Lightricks y no está afiliado a la compañía; el soporte y las garantías dependen del proyecto Phosphene.
+- Los tiempos de render publicados son medianas de uso real, no mediciones controladas de laboratorio.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Mrbizarro/gemma4-12b-ltx25-q4
+- Modelo en Hugging Face: https://huggingface.co/Mrbizarro/gemma4-12b-ltx25-q4
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
+- Codigo de LTX-2: https://github.com/Lightricks/LTX-2
+- Licencia LTX-2.x Community License: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x
+- Runtime MLX: https://github.com/dgrauet/ltx-2-mlx
+- Proyecto Phosphene: https://github.com/mrbizarro/Phosphene
+- App Phosphene: https://phosphene.video
+- Requisitos por Mac: https://phosphene.video/mac-requirements/
+- Benchmarks de Phosphene: https://phosphene.video/benchmarks/
+- Paquete de difusion 4-bit: https://huggingface.co/Mrbizarro/ltx-2.5-mlx-q4
+- Paquete de difusion 8-bit: https://huggingface.co/Mrbizarro/ltx-2.5-mlx-q8

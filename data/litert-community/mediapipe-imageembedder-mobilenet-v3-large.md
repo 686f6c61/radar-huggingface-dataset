@@ -2,102 +2,105 @@
 
 ## Resumen
 
-MediaPipe-ImageEmbedder-MobileNet-V3-Large es un extractor de características visuales empaquetado como `mobilenet_v3_large.tflite`, un binario TensorFlow Lite de 10,89 MB con pesos en FP32 y un multiplicador de profundidad de canales de 0,75. Lo publica la comunidad `litert-community` como réplica byte a byte del artefacto oficial que Google sirve desde `storage.googleapis.com/mediapipe-models`, pensado para su uso dentro de la tarea `ImageEmbedder` de MediaPipe. No es un modelo generativo: transforma una imagen RGB normalizada de 224×224 píxeles en un vector denso de 1280 dimensiones que sirve para comparar imágenes por similitud coseno.
+MediaPipe-ImageEmbedder-MobileNet-V3-Large es un extractor de características visuales empaquetado como modelo TensorFlow Lite para la tarea `ImageEmbedder` de MediaPipe. Lo publica la comunidad `litert-community` y deriva del clasificador MobileNetV3-Large original (paper arXiv:1905.02244), reutilizando su tronco convolucional para producir un vector de embedding de 1280 dimensiones a partir de imágenes RGB normalizadas de 224 x 224 píxeles. El artefacto es un único fichero `mobilenet_v3_large.tflite` de 10,89 MB con pesos en FP32 y un multiplicador de profundidad de canales de 0,75, pensado para equilibrar precisión y latencia en dispositivos de borde.
 
-El problema que resuelve es concreto: búsqueda visual, agrupamiento y deduplicación de imágenes en el propio dispositivo (Android, iOS, web, Python, Flutter) sin depender de la nube. Al estar basado en MobileNet-V3 Large con profundidad reducida, prioriza la latencia en hardware de gama media-baja: la documentación de MediaPipe reporta 9,75 ms en CPU y 9,08 ms en GPU sobre un Pixel 6 para el pipeline completo de la tarea.
+El problema que resuelve es concreto: dotar a aplicaciones Android, iOS, web, Python y Flutter de un pipeline de similitud visual y deduplicación de imágenes que se ejecuta íntegramente en el dispositivo, sin llamadas a servicios remotos. MediaPipe envuelve el modelo con utilidades listas para producción como normalización L2 opcional (`l2_normalize=True`), cuantización escalar opcional (`quantize=True`) y una función de similitud coseno integrada, lo que reduce el trabajo de integración a unas pocas líneas de código.
 
-Su relevancia actual es la de un componente de infraestructura más que la de un modelo de frontera: la licencia Apache 2.0, el tamaño de 10,89 MB y la paridad exacta con el binario upstream lo convierten en una pieza estable para pipelines de visión en producción. No hay información sobre idiomas, datos de entrenamiento más allá de ImageNet-1K ni benchmarks de precisión en la información proporcionada.
+Es relevante ahora porque encaja en la estrategia de Google AI Edge en torno a LiteRT y MediaPipe Tasks: modelos pequeños, licencia Apache 2.0 y soporte multiplataforma de primera clase. No es un modelo generativo ni un LLM, sino un componente de visión por computador especializado; conviene evaluarlo como tal, midiendo calidad de recuperación y latencia, no con benchmarks de razonamiento o generación de texto.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MobileNet-V3 Large (CNN con bloques depthwise separable y squeeze-and-excitation), multiplicador de profundidad 0,75 |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión, entrada 224×224×3) |
-| Tipos de cuantizacion | FP32 (unico artefacto publicado); MediaPipe permite cuantizacion escalar opcional en la salida (`quantize=True`) |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Arquitectura | CNN MobileNetV3-Large (bloques con SE, activaciones h-swish), exportada a TensorFlow Lite |
+| Parámetros totales | no disponible (multiplicador de profundidad 0,75; fichero de 10,89 MB en FP32) |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada fija 224 x 224 x 3) |
+| Tipos de cuantización | pesos FP32 en el artefacto publicado; MediaPipe permite cuantización escalar de salida (`quantize=True`) |
+| Idiomas soportados | no aplica (no procesa texto) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | TFLite (`mobilenet_v3_large.tflite`, 10.889.458 bytes) |
+| Formato de pesos | TensorFlow Lite (`.tflite`), un único fichero de 10.889.458 bytes, SHA-256 `11af3c560dfeed7737cb4c03c23bf52a8403020784192d4dea0b74862a12828d` |
 
 ## Arquitectura y entrenamiento
 
-La red es una MobileNet-V3 Large (referencia arXiv:1905.02244) con multiplicador de profundidad de canales de 0,75, entrenada sobre ImageNet-1K con fotografías naturales. La entrada es un tensor `serving_default_inputs:0` de forma `[-1, 224, 224, 3]` en `float32` con normalización declarada `mean=[0.0], std=[255.0]` (píxeles en rango [0,1]). La salida es `StatefulPartitionedCall:0`, un vector `[-1, 1280]` en `float32`. El binario incluye metadatos TFLITE embebidos (nombre `MobileNetV3 image classifier`, versión 1, autor `MediaPipe`) y un archivo asociado `labels.txt`.
+El modelo es una MobileNetV3-Large con multiplicador de profundidad 0,75, una red neuronal convolucional diseñada para eficiencia en dispositivos móviles. MobileNetV3 combina convoluciones separables en profundidad, bloques con atención tipo Squeeze-and-Excitation y activaciones h-swish, y en su variante Large incorpora además bloques de cuello de botella con conexiones residuales. En este artefacto se ha recortado la cabeza de clasificación y se expone la salida del tronco como vector de 1280 elementos (`StatefulPartitionedCall:0`), de modo que el modelo actúa como extractor de características y no como clasificador.
 
-No se detalla en la información disponible el número de tokens (no aplica), la composición exacta del dataset más allá de ImageNet-1K, ni si hubo fases de ajuste fino, RLHF o DPO (no aplica a este tipo de modelo). La innovación técnica relevante es el empaquetado para MediaPipe Tasks: la tarea `ImageEmbedder` ofrece normalización L2 opcional (`l2_normalize=True`) y cuantización escalar opcional (`quantize=True`) de la salida, lo que permite ajustar el coste de almacenamiento y la métrica de similitud sin reentrenar.
+El entrenamiento original se realizó sobre ImageNet-1k, según declara la model card, y el artefacto conserva metadatos TFLite con el nombre `MobileNetV3 image classifier`, versión 1, autor MediaPipe y el fichero `labels.txt` empaquetado. La entrada esperada es `serving_default_inputs:0` con forma `[-1, 224, 224, 3]` en `float32`, con normalización media 0,0 y desviación 255,0, es decir, píxeles escalados al rango [0,1]. No se documentan en la información disponible detalles sobre fine-tuning específico para la tarea de embedding, funciones de pérdida de metric learning ni datos de entrenamiento adicionales más allá de ImageNet-1k.
 
 ## Capacidades
 
-- Extracción de embeddings de imagen: genera un vector denso de 1280 dimensiones por imagen de entrada.
-- Similitud visual: comparación mediante similitud coseno entre embeddings (helper `ImageEmbedder.cosine_similarity`).
-- Normalización L2 opcional de los embeddings para simplificar el cálculo de distancias.
-- Cuantización escalar opcional de la salida para reducir el tamaño de los vectores almacenados.
-- Ejecución en el dispositivo en Android (Kotlin/Java), iOS (Swift), web (JavaScript), Python y Flutter (Dart).
-- Ejecución en modo imagen suelta (`VisionRunningMode.IMAGE`); no se documentan en la información disponible modos de vídeo o streaming para esta tarea.
-- No soporta tool calling, function calling, razonamiento multi-paso, generación de texto, código, matemáticas, visión generativa, audio ni modo thinking: es exclusivamente un extractor de características.
+- Extracción de embeddings visuales de 1280 dimensiones a partir de imágenes RGB de 224 x 224, con salida `float32`.
+- Similitud visual y búsqueda por similitud mediante distancia coseno, con normalización L2 opcional integrada en MediaPipe.
+- Deduplicación de imágenes y detección de near-duplicates en colecciones locales.
+- Ejecución on-device en Android, iOS, web (JavaScript/TypeScript), Python y Flutter a través de MediaPipe Tasks.
+- Cuantización escalar opcional de los embeddings (`quantize=True`) para reducir el espacio de almacenamiento del índice vectorial.
+- Procesamiento por lotes con dimensión de batch dinámica (`-1` en la forma de entrada).
+- No soporta tool calling, agentes, razonamiento multi-step ni generación de texto: es un modelo puramente perceptivo.
+- No tiene capacidades multilingües ni de audio; su dominio es exclusivamente la visión por computador.
 
 ## Casos de uso
 
-- Búsqueda visual inversa en aplicaciones móviles: el modelo embebe la imagen de consulta y las candidatas en el dispositivo y se ordenan por similitud coseno, evitando enviar fotos a un servidor y reduciendo la latencia a la decena de milisegundos reportada.
-- Deduplicación de bibliotecas de fotos: agrupar imágenes casi idénticas calculando la similitud entre embeddings de 1280 dimensiones con normalización L2, adecuado para apps de galería que deben procesar miles de imágenes localmente.
-- Clustering no supervisado de catálogos de producto: agrupar imágenes por similitud visual para organizar inventarios o detectar duplicados en marketplaces, aprovechando el tamaño de 10,89 MB para ejecutarlo en servidores modestos o en el propio cliente.
-- Moderación y triaje visual en el borde: prefiltrar imágenes sospechosas o duplicadas en el dispositivo antes de enviar solo los casos relevantes a un modelo mayor en la nube, reduciendo ancho de banda y coste.
-- Detección de near-duplicates en pipelines de datos de entrenamiento: identificar imágenes repetidas o casi idénticas en un dataset antes de entrenar otros modelos, con la ventaja de que el binario es idéntico al artefacto oficial de Google y su comportamiento es reproducible.
-- Funciones de "imágenes similares" en apps de comercio o contenido: integrar el embedder en Flutter o web para mostrar recomendaciones visuales en el cliente sin backend dedicado, gracias a la paridad de API entre plataformas de MediaPipe.
-- Indexación offline en dispositivos sin conectividad: aplicaciones de campo (inspección, catalogación) que necesitan comparar imágenes contra una base local sin acceso a red.
+- Deduplicación de fototecas en aplicaciones móviles: el modelo genera un embedding de 1280 dimensiones por imagen y permite agrupar duplicados o imágenes casi idénticas comparando distancias coseno, todo sin salir del dispositivo y con un artefacto de menos de 11 MB.
+- Búsqueda visual inversa en catálogos de producto: se indexan los embeddings de las imágenes del catálogo y se consulta con una foto del usuario; la normalización L2 integrada facilita usar índice vectorial con producto interno como equivalente a similitud coseno.
+- Moderación y agrupación de contenido en el borde: agrupar imágenes visualmente similares para detectar spam de imágenes repetidas o contenido duplicado en feeds, reduciendo el coste de subir cada imagen a un servicio central.
+- Organización automática de álbumes y recuerdos: agrupar por similitud visual para construir colecciones temáticas o "mejores tomas" de una ráfaga, aprovechando el procesamiento por lotes con batch dinámico.
+- Prefiltrado en pipelines de visión más pesados: usar el embedding barato como primera etapa para descartar candidatos antes de invocar un modelo mayor en servidor, reduciendo latencia y coste de inferencia en la nube.
+- Detección de cambios y control de calidad industrial: comparar embeddings de imágenes de referencia frente a capturas de cámara para señalar desviaciones visuales en líneas de producción, con despliegue en dispositivos Android o embebidos.
+- Aplicaciones web offline-first: el mismo modelo se ejecuta en el navegador mediante la integración web de MediaPipe, útil para herramientas de edición o clasificación de imágenes que deben funcionar sin conexión.
 
 ## Benchmarks y rendimiento
 
-La información proporcionada solo incluye benchmarks de latencia del pipeline completo de la tarea `ImageEmbedder`, no métricas de precisión (exactitud, recall, mAP) ni comparaciones con otros modelos.
+La model card incluye una sección de benchmarks de latencia de extremo a extremo del pipeline MediaPipe `ImageEmbedder`, pero en la información proporcionada la tabla aparece truncada y solo se muestra la cabecera (`Model Variant | Dev...`). No se dispone, por tanto, de cifras de latencia por dispositivo ni de métricas de calidad de recuperación (recall@k, mAP) para este artefacto concreto.
 
-| Variante | Dispositivo | Latencia CPU | Latencia GPU |
-|---|---|---:|---:|
-| MobileNet-V3 (large) | Pixel 6 | 9,75 ms | 9,08 ms |
-
-No se han publicado resultados de benchmarks de precisión (ImageNet top-1, etc.) en la información disponible.
+No se han publicado resultados de benchmarks de precisión o recuperación en la información disponible. Tampoco se dispone de comparaciones numéricas con otros extractores de embeddings en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica en el sentido habitual; el modelo pesa 10,89 MB en FP32 y opera sobre CPU/GPU móvil o de escritorio con huella mínima.
-- GPU recomendadas: no se especifican; el benchmark de referencia usa un Pixel 6 (GPU móvil). En escritorio puede ejecutarse en CPU sin GPU dedicada.
-- Cabe en cualquier GPU de consumo, e incluso en dispositivos móviles de gama media; no requiere aceleradores de datacenter (A100, H100).
-- Opciones de despliegue: MediaPipe Tasks (Python, Android, iOS, web, Flutter) sobre el runtime LiteRT/TFLite; no se documentan en la información disponible integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
-- Latencia y throughput: 9,75 ms en CPU y 9,08 ms en GPU por inferencia en Pixel 6 según la documentación de MediaPipe; el throughput no se reporta explícitamente.
+- VRAM estimada para inferencia: no aplica en el sentido habitual; el modelo está pensado para ejecución en CPU/NPU de dispositivos móviles. En GPU de escritorio, el peso del fichero (10,89 MB) más activaciones de una imagen de 224 x 224 supone un consumo de memoria del orden de decenas de MB, aunque no se dispone de cifra oficial.
+- GPU recomendadas: no se especifican en la información disponible; el modelo está optimizado para aceleradores móviles (GPU delegados de Android/iOS, NNAPI, Core ML) y CPU.
+- ¿Cabe en GPU consumer? Sí, con enorme holgura por tamaño, aunque su destino natural no es una GPU de escritorio sino el borde; no se dispone de cifras de rendimiento en RTX 4090, A100 o H100.
+- Opciones de despliegue: MediaPipe Tasks (Python, Android/Kotlin-Java, iOS/Swift, web/JavaScript, Flutter/Dart), intérprete TensorFlow Lite / LiteRT, y descarga vía `huggingface_hub` con `hf download`.
+- Latencia y throughput estimados: no disponibles en la información proporcionada; la model card remite a la tabla de benchmarks de la documentación oficial de MediaPipe, que aparece truncada en los datos recibidos.
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de datos de otros modelos comparables (por ejemplo, otras variantes de MobileNet-V3, EfficientNet-Lite o extractores de embeddings de imagen de MediaPipe) con sus parámetros, contexto, rendimiento y licencia. Por tanto, la comparativa se indica como no disponible.
+No se dispone de datos de benchmarks ni de especificaciones de alternativas en la información proporcionada para establecer una comparación cuantitativa rigurosa. A continuación se indica únicamente lo que puede afirmarse con los datos disponibles:
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Tipo | Salida | Tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MediaPipe-ImageEmbedder-MobileNet-V3-Large | no disponible | no aplica | latencia 9,75 ms CPU / 9,08 ms GPU en Pixel 6 | Apache 2.0 | Hugging Face + GCS oficial de Google |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MediaPipe-ImageEmbedder-MobileNet-V3-Large (este modelo) | CNN MobileNetV3-Large, 0,75 depth multiplier | Embedding 1280-d | 10,89 MB FP32 | Apache 2.0 | Hugging Face, MediaPipe Tasks |
+| Otras variantes de ImageEmbedder de MediaPipe | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Alternativas de embeddings visuales de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+No se han encontrado en la información proporcionada modelos comparables con parámetros, contexto, rendimiento y licencia verificables para una comparativa numérica.
 
 ## Limitaciones y advertencias
 
-- Entrenado sobre ImageNet-1K con fotografías naturales: dominios de grano fino (escáneres médicos, OCR, piezas industriales especializadas) o coincidencia biométrica quedan fuera de su distribución de entrenamiento, según la propia model card.
-- No se publica un informe de equidad (fairness) específico de Google para este modelo en la página de documentación de MediaPipe.
-- Riesgo de alucinación no aplica en el sentido generativo, pero sí existe riesgo de falsos positivos o negativos en la similitud: embeddings de imágenes visualmente distintas pueden quedar próximos, y viceversa, especialmente fuera del dominio de entrenamiento.
-- Limitaciones de idioma: no aplica; el modelo no procesa texto.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar los términos de los artefactos upstream de Google y de MediaPipe para el caso de uso concreto.
-- El repositorio reporta 0 descargas y 0 likes en el momento de la ficha; la paridad byte a byte con el binario oficial de Google es la garantía de procedencia, pero la disponibilidad a largo plazo del repo de la comunidad no está garantizada por el autor original.
-- El modelo se distribuye únicamente en FP32; no hay variantes cuantizadas publicadas en el repositorio, lo que puede limitar el ahorro de memoria en algunos despliegues.
+- El modelo se entrenó originalmente para clasificación en ImageNet-1k; los embeddings derivados del tronco no están necesariamente optimizados para metric learning, por lo que la calidad de recuperación puede ser inferior a la de extractores entrenados específicamente con pérdidas de similitud.
+- La resolución de entrada está fijada en 224 x 224; detalles finos en imágenes de alta resolución pueden perderse tras el redimensionado.
+- No procesa texto ni audio, y no dispone de modo de razonamiento, tool calling ni capacidades de agente.
+- El multiplicador de profundidad 0,75 reduce el coste computacional a cambio de menor capacidad representacional que la variante completa de MobileNetV3-Large.
+- No se documentan en la información disponible sesgos específicos del dataset más allá de los inherentes a ImageNet-1k; conviene auditar el comportamiento en dominios alejados de las categorías de ImageNet (imágenes médicas, industriales, satelitales).
+- Riesgo de falsos positivos en deduplicación cuando imágenes distintas comparten composición o paleta similar; se recomienda calibrar el umbral de similitud coseno con datos propios.
+- La licencia Apache 2.0 permite uso comercial, pero el artefacto conserva metadatos y etiquetas de ImageNet cuyo uso debe verificarse por separado si se redistribuye.
+- El repositorio tiene un tamaño declarado de 0,0 GB y muy pocas descargas (187 en el momento de la consulta), lo que sugiere poca validación comunitaria; conviene verificar el SHA-256 del fichero tras la descarga.
+- La información de benchmarks de latencia está truncada en la model card recibida; no debe asumirse ningún rendimiento concreto sin medirlo en el dispositivo objetivo.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/litert-community/MediaPipe-ImageEmbedder-MobileNet-V3-Large
-- Archivo del modelo: https://huggingface.co/litert-community/MediaPipe-ImageEmbedder-MobileNet-V3-Large/blob/main/mobilenet_v3_large.tflite
-- Documentación de la tarea Image Embedder: https://developers.google.com/edge/mediapipe/solutions/vision/image_embedder
-- Demo web: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/image_embedder
+- Modelo en Hugging Face: https://huggingface.co/litert-community/MediaPipe-ImageEmbedder-MobileNet-V3-Large
+- Fichero de pesos: https://huggingface.co/litert-community/MediaPipe-ImageEmbedder-MobileNet-V3-Large/blob/main/mobilenet_v3_large.tflite
+- Documentación de MediaPipe Image Embedder: https://developers.google.com/edge/mediapipe/solutions/vision/image_embedder
+- Benchmarks de Image Embedder: https://developers.google.com/edge/mediapipe/solutions/vision/image_embedder#benchmarks
+- Paper de MobileNetV3: https://arxiv.org/abs/1905.02244
 - Guía de instalación en Python: https://developers.google.com/edge/mediapipe/solutions/setup_python
-- Guía de instalación en web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
+- Guía de instalación en Web/JavaScript: https://developers.google.com/edge/mediapipe/solutions/setup_web
 - Guía de instalación en Android: https://developers.google.com/edge/mediapipe/solutions/setup_android
 - Guía de instalación en iOS: https://developers.google.com/edge/mediapipe/solutions/setup_ios
 - Guía de instalación en Flutter: https://developers.google.com/edge/mediapipe/solutions/setup_flutter
 - Ejemplo Android: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_embedder/android
 - Ejemplo iOS: https://github.com/google-ai-edge/mediapipe-samples/tree/main/examples/image_embedder/ios
 - Notebook de Python (Colab): https://colab.research.google.com/github/google-ai-edge/mediapipe-samples/blob/main/examples/image_embedder/python/image_embedder.ipynb
+- Ejemplo Web (TypeScript): https://github.com/google-ai-edge/mediapipe-samples-web/blob/main/src/tasks/image-embedder.ts
 - Ejemplo Flutter: https://github.com/google/flutter-mediapipe/tree/main/samples/vision/image_embedder
-- Paper de MobileNet-V3: https://arxiv.org/abs/1905.02244
-- Artefacto upstream de Google: https://storage.googleapis.com/mediapipe-models
+- Demo web en vivo: https://google-ai-edge.github.io/mediapipe-samples-web/#/vision/image_embedder

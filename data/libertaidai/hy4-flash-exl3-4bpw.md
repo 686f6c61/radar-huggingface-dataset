@@ -2,93 +2,95 @@
 
 ## Resumen
 
-Hy4-flash-EXL3-4bpw es una cuantizacion EXL3 a 4.0 bits por peso de los expertos enrutados del modelo `tencent/Hy4-flash`, un MoE de 220.000 millones de parametros totales con 12.000 millones activos, atencion hibrida, memoria Engram y un drafter DFly2. La publica LibertAIDAI y esta pensada para ejecutar el modelo en una sola GPU de 128 GB (por ejemplo, una GB10) o en un reparto por capas entre dos GPUs de 96 GB, reduciendo el trunk de pesos a unos 85 GiB. El checkpoint resultante ocupa unos 203 GiB en disco, de los cuales 118 GiB corresponden a las tablas Engram, que se mantienen sin cuantizar en BF16 y se leen por filas desde disco o page cache.
+Hy4-flash EXL3 4 bpw es una cuantización de 4 bits por peso (formato EXL3, librería exllamav3) del modelo base `tencent/Hy4-flash`, publicada por el usuario LibertAIDAI. El modelo base es un transformer disperso de tipo Mixture-of-Experts con 220 000 millones de parámetros totales y 12 000 millones activos por token, arquitectura híbrida que combina atención MLA dispersa y deslizante, LatentMoE, iHC y un mecanismo denominado Engram con 63 500 millones de parámetros. Esta versión cuantizada conserva el tronco en BF16 y comprime únicamente los expertos enrutados a 4 bits, con el objetivo de reducir el peso en VRAM de 220 GB a unos 203 GiB manteniendo la fidelidad numérica en el resto de tensores.
 
-La relevancia de esta ficha es practica: demuestra una via concreta para servir un MoE de gran tamano en hardware de una sola tarjeta sin recurrir a tensor parallelism, manteniendo intactos los tensores no experto y las tablas Engram byte a byte respecto al checkpoint base. Es una build solo de texto: la torre de vision y el drafter DFly2 viajan en el checkpoint pero el runtime actual no los cablea.
+La relevancia de esta ficha es práctica: permite ejecutar un modelo de escala 220B en una única GPU de 128 GB (por ejemplo, GB10) o en dos GPU de 96 GB mediante reparto por capas, algo inviable con los pesos en BF16. El autor verifica que los tensores no expertos y las tablas Engram son byte-idénticos al checkpoint base y que un recorte de tres capas reproduce los logits del modelo BF16 con correlación 0,999926 y coincidencia de argmax del 100 %.
 
-Conviene subrayar que el autor no publica ningun benchmark, cifra de throughput ni comparativa de calidad. La verificacion se limita a que una rebanada de 3 capas carga y produce logits finitos bajo el fork de exllamav3, y el propio autor indica que el primer paso en el dispositivo objetivo debe ser un smoke test completo de las 42 capas.
+Se trata de un artefacto de cuantización, no de un modelo nuevo: no publica benchmarks de calidad ni de rendimiento, y está pensado exclusivamente para inferencia de texto con el fork de exllamav3 que añade la arquitectura `hy_v4_flash`. La torre de visión y los tensores DFly2 se incluyen en el repositorio pero no están conectados en el runtime actual.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | MoE con atencion hibrida, memoria Engram y drafter DFly2 (arquitectura `hy_v4_flash` en exllamav3) |
-| Parametros totales | 109.010.458.534 (segun safetensors); la model card describe el base como 220 B totales / 12 B activos |
-| Parametros activos | 12 B (segun model card del base) |
+| Arquitectura | Transformer MoE híbrido con atención MLA dispersa/deslizante, LatentMoE, iHC y Engram (arquitectura `hy_v4_flash`) |
+| Parámetros totales | 109 010 458 534 (dato del safetensors); el autor declara 220B totales y 12B activos en la model card del base |
+| Parámetros activos | 12B (según model card del base) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | EXL3 4.0 bpw (`mul1` codebook) en expertos enrutados; resto en BF16 |
+| Tipos de cuantización | EXL3 4 bpw en expertos enrutados (62 976 módulos, codebook `mul1`); resto en BF16; variantes 3.5 / 3.0 / 2.5 bpw disponibles en la colección |
 | Idiomas soportados | en, zh |
-| Licencia | Tencent Hy License, Version 1.0 (derivada de Apache-2.0, con terminos MaaS en la seccion 10) |
-| Formato de pesos | safetensors (28 shards), libreria exllamav3 |
+| Licencia | Tencent Hy License, Version 1.0 (derivada de Apache-2.0, con términos MaaS en §10) |
+| Formato de pesos | safetensors (28 shards), librería exllamav3 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE con atencion hibrida (combinacion de mecanismos de atencion, sin detalle publicado en la informacion disponible), un modulo de memoria Engram con cuatro tablas de embedding de aproximadamente 164-165 millones de filas por 96 dimensiones, proyecciones LatentMoE, un experto compartido, un indexador comprimido y una capa densa inicial. La model card del base lo describe como 220 B totales con 12 B activos, aunque el recuento real de tensores en este checkpoint arroja 109.010.458.534 parametros; la discrepancia no se explica en la informacion disponible.
+El modelo base Hy4-flash es un transformer de 42 capas con mezcla de expertos de grano fino: 41 expertos por capa con proyecciones gate/up/down de dimensión 512, router, experto compartido y una capa densa inicial. La atención combina mecanismos MLA (Multi-head Latent Attention) con un indexador comprimido y patrones dispersos y deslizantes; sobre esta base se añaden LatentMoE, iHC y el subsistema Engram, que aporta cuatro tablas de embedding de 164–165 millones de filas por 96 dimensiones (118 GiB en total) y 63 500 millones de parámetros. El checkpoint base declara 220B totales y 12B activos, aunque el recuento del safetensors de esta cuantización asciende a 109 010 458 534 parámetros, diferencia atribuible a la compartición de pesos y a las tablas Engram almacenadas aparte.
 
-Esta build concreta no entrena nada: es una cuantizacion. Los 41 x 512 modulos de expertos enrutados (62.976 modulos, gate/up/down) se almacenan como tensores trellis EXL3 `mul1` con escalas `suh`/`svh` y se descomprimen al vuelo con los kernels EXL3 de exllamav3. Todo lo demas (atencion, indexador comprimido, experto compartido, proyecciones LatentMoE, router, capa densa 0, iHC, proyecciones Engram, normas por cabeza, token embedding y lm_head) se conserva en BF16 byte a byte respecto al base. Las cuatro tablas Engram (118 GiB) permanecen en BF16 sin cuantizar y se leen por streaming de filas: solo se cargan las filas a las que un token hace hash, de modo que la GPU aloja el trunk de ~85 GiB mas la KV cache, no las tablas. No se documentan datos de entrenamiento, composicion del dataset ni fases de RLHF/DPO en la informacion proporcionada.
+Esta build cuantiza exclusivamente los expertos enrutados a 4 bpw con formato EXL3 (`trellis` I16 + `suh`/`svh` F16 + marcador `mul1`), mientras que atención, indexador, experto compartido, proyecciones LatentMoE, router, capa densa 0, iHC, proyecciones Engram, normas y embeddings de tokens y `lm_head` permanecen en BF16 byte-idénticos al original. Las tablas Engram no se cuantizan y el runtime las transmite por filas desde disco, por lo que no necesitan residir en VRAM. No se documentan en la información disponible los datos de entrenamiento (número de tokens, composición del corpus) ni si hubo RLHF, DPO u otras fases de alineamiento.
 
 ## Capacidades
 
-- Generacion de texto y chat sin herramientas: es la superficie soportada explicitamente por esta build.
-- Razonamiento con cabecera de pensamiento opcional: el template admite `reasoning_effort="no_think"` para respuestas directas.
-- Capacidades multilingues limitadas a ingles y chino segun los metadatos del modelo.
-- Memoria Engram de largo plazo mediante tablas de embedding hasheadas y leidas por filas.
-- Vision: la torre viaja en el checkpoint pero no esta cableada en el runtime actual; no disponible en la practica.
-- Decodificacion especulativa con DFly2: los tensores estan presentes pero no se usan en esta build.
-- Tool calling / function calling: no documentado en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado en la informacion disponible.
+- Generación de texto en inglés y chino, con modo de razonamiento configurable: `reasoning_effort="no_think"` para respuestas directas o el modo de pensamiento de alto esfuerzo por defecto.
+- Razonamiento multi-paso implícito en el modo thinking, según la plantilla de chat incluida (`chat_template.jinja` con tokens especiales `hy_start`, `hy_middle`, `hy_end`).
+- No se documenta soporte explícito de tool calling ni function calling en la información disponible.
+- No se documenta soporte de agentes ni de razonamiento multi-paso estructurado más allá del modo thinking.
+- Capacidades multilingües limitadas a inglés y chino según los metadatos del modelo.
+- Capacidades de visión: la torre de visión y los tensores DFly2 se incluyen en el checkpoint, pero no están conectados en el runtime actual; esta build es solo texto.
+- No se documentan capacidades de audio, código o matemáticas de forma específica.
 
 ## Casos de uso
 
-- Despliegue de un MoE de gran tamano en una sola GPU de 128 GB: el trunk a 4.0 bpw ocupa unos 85 GiB, lo que deja margen para KV cache en una GB10; adecuado para equipos que no quieren montar tensor parallelism.
-- Servicio de chat en ingles y chino con contexto de memoria Engram: las tablas se leen por filas desde disco o page cache, de modo que se puede ofrecer memoria persistente sin residentar 118 GiB en VRAM.
-- Investigacion sobre cuantizacion EXL3 de MoE: el checkpoint permite medir el impacto de cuantizar solo los expertos enrutados manteniendo el resto en BF16 byte-identico al base.
-- Reparto por capas en dos GPUs de 96 GB: usando `-gs` de exllamav3 en lugar de tensor parallelism, se puede servir el modelo completo cuando una sola tarjeta no basta.
-- Evaluacion comparativa de calidad frente al base en BF16: al conservar intactos los tensores no experto, sirve para aislar el efecto de la cuantizacion 4.0 bpw en los expertos.
-- Prototipado de asistentes con modo de razonamiento conmutable: el template permite alternar entre respuestas directas (`no_think`) y respuestas con cabecera de pensamiento segun la tarea.
-- Generacion de texto por lotes en pipelines internos: la build es solo de texto y no depende de vision ni de drafter, lo que simplifica el grafo de ejecucion.
+- Inferencia de un modelo de escala 220B en hardware de gama alta: con 203,07 GiB de pesos, esta build cabe en una GPU de 128 GB (GB10) o en dos de 96 GB con reparto por capas (`-gs`), lo que permite desplegar un MoE de gran tamaño sin clúster multi-nodo.
+- Servicio de chat en inglés y chino: el checkpoint incluye plantilla Jinja y tokens especiales, de modo que puede exponerse como API conversacional multi-turno usando el modo `no_think` para respuestas rápidas o el modo thinking para consultas complejas.
+- Investigación sobre cuantización EXL3: al mantener el tronco en BF16 byte-idéntico y cuantizar solo los expertos, sirve como banco de pruebas para medir el impacto de la cuantización 4 bpw en la calidad de un MoE grande frente a las variantes 3.5, 3.0 y 2.5 bpw.
+- Evaluación de arquitecturas híbridas MoE + Engram: el runtime transmite las tablas Engram por filas desde disco, lo que permite estudiar el comportamiento de memoria y latencia de este mecanismo sin cargar los 118 GiB de tablas en VRAM.
+- Prototipado de pipelines de razonamiento con modo thinking: útil para tareas de análisis de documentos largos o generación de explicaciones paso a paso en entornos controlados donde se disponga de una GPU de 128 GB.
+- Reproducción y validación de cuantizaciones: el repositorio incluye `run_smoke.py` y un parche (`hy4-exllamav3.patch`) para verificar la carga completa y la coherencia de logits en el dispositivo objetivo antes de integrar el modelo en producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor declara explicitamente que no se hace ninguna afirmacion de rendimiento, calidad ni serving mas alla de la verificacion de la propia build.
+No se han publicado resultados de benchmarks en la información disponible. El autor indica explícitamente que no reclama ninguna métrica de throughput ni de calidad. La única verificación numérica publicada es la fidelidad de un recorte de tres capas frente al BF16 equivalente: correlación 0,999926 y 100 % de coincidencia de argmax.
 
 ## Requisitos de hardware
 
-- VRAM estimada: unos 85 GiB para el trunk a 4.0 bpw, mas la KV cache; las tablas Engram (118 GiB) no necesitan estar residentes.
-- GPU recomendada: una tarjeta de 128 GB (GB10) con margen holgado.
-- Una sola tarjeta de 96 GB no se recomienda a 4.0 bpw; el autor sugiere dos tarjetas de 96 GB con layer split (`-gs`) o una variante a 3.5 bpw si se publica.
-- En dos GPUs debe usarse `-gs` (layer split), no tensor parallelism: los modulos de atencion y Engram de este checkpoint no estan shardeados para TP.
-- Consumer GPU: no cabe en ninguna GPU de consumo; el trunk supera la VRAM de una RTX 4090 (24 GB) por un factor superior a tres.
-- Despliegue: exllamav3, concretamente el fork `moshemalawach/exllamav3`, rama `hy4-flash`, commit `1af65c4`, que anade la arquitectura `hy_v4_flash`. Para instalaciones existentes se puede aplicar `hy4-exllamav3.patch`. El repositorio incluye `run_smoke.py`.
-- Almacenamiento: unos 203 GiB de repositorio (85 GiB de trunk, 118 GiB de tablas Engram y tensores auxiliares); conviene disco rapido para el streaming de filas Engram.
-- Latencia y throughput: no disponibles; el autor no publica cifras.
+- VRAM estimada: 203,07 GiB en total, de los cuales 84,87 GiB corresponden al tronco y 69,5 GiB a los expertos enrutados; las tablas Engram (118 GiB) se transmiten por filas desde disco y no requieren residir en GPU.
+- GPU recomendadas: una GPU de 128 GB (GB10) aloja el tronco con margen; dos GPU de 96 GB con reparto por capas (`-gs`, no tensor parallelism, porque los módulos de atención y Engram no se fragmentan en TP).
+- Una única GPU de 96 GB no se recomienda a 4 bpw; para ese caso el autor ofrece las variantes 3.5, 3.0 y 2.5 bpw.
+- No cabe en GPU de consumo (RTX 4090 de 24 GB u otras similares) en ninguna de las variantes publicadas.
+- Opciones de despliegue: exllamav3 (fork con la arquitectura `hy_v4_flash`, commit `1af65c4`), con `run_smoke.py` incluido para la primera carga; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Hy4-flash-EXL3-4bpw (esta ficha) | 109.010.458.534 en safetensors; base descrito como 220 B / 12 B activos | no disponible | EXL3 4.0 bpw en expertos, BF16 en el resto | Tencent Hy License 1.0 | Hugging Face, libreria exllamav3 |
-| tencent/Hy4-flash (base) | 220 B totales / 12 B activos segun model card | no disponible | BF16 | Tencent Hy License 1.0 | Hugging Face |
-| Variante 3.5 bpw de Hy4-flash | no disponible (mencionada como posible, no publicada en la informacion) | no disponible | EXL3 3.5 bpw | Tencent Hy License 1.0 | no disponible |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Hardware mínimo |
+|---|---|---|---|---|---|---|
+| Hy4-flash EXL3 4 bpw (esta ficha) | 220B (109B en safetensors) | 12B | no disponible | Tencent Hy 1.0 | safetensors EXL3 | 128 GB o 2×96 GB |
+| Hy4-flash EXL3 3.5 bpw | 220B | 12B | no disponible | Tencent Hy 1.0 | safetensors EXL3 | 1×96 GB (KV ajustada) |
+| Hy4-flash EXL3 3.0 bpw | 220B | 12B | no disponible | Tencent Hy 1.0 | safetensors EXL3 | 1×96 GB |
+| Hy4-flash EXL3 2.5 bpw | 220B | 12B | no disponible | Tencent Hy 1.0 | safetensors EXL3 | 1×96 GB |
+| tencent/Hy4-flash (base BF16) | 220B | 12B | no disponible | Tencent Hy 1.0 | safetensors | no disponible |
 
-No se dispone de datos de benchmarks ni de otros modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento con alternativas de la misma categoria.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento de esta cuantización con modelos de otras familias; la comparativa se limita a las variantes del mismo modelo base publicadas por el mismo autor.
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks publicados: cualquier afirmacion de calidad o velocidad frente al base en BF16 carece de respaldo en la informacion disponible.
-- La verificacion se limita a una rebanada de 3 capas (0-2, incluida la tabla Engram de la capa 1) que carga y produce logits finitos; el smoke test completo de 42 capas debe ejecutarse en el dispositivo objetivo antes de dar la build por valida.
-- Build solo de texto: la torre de vision y el drafter DFly2 estan presentes pero no cableados, de modo que no hay capacidades multimodales ni decodificacion especulativa efectiva.
-- Idiomas limitados a ingles y chino; no se documenta soporte de castellano.
-- Licencia Tencent Hy 1.0, derivada de Apache-2.0 pero con terminos MaaS en la seccion 10: es imprescindible revisar las condiciones para uso comercial y de servicio gestionado antes de producción.
-- Dependencia de un fork no oficial de exllamav3 (`moshemalawach/exllamav3`, rama `hy4-flash`): riesgo de mantenimiento y de compatibilidad con versiones futuras del runtime.
-- El streaming de filas Engram desde disco introduce dependencia del almacenamiento y posible variabilidad de latencia; no se publican cifras al respecto.
-- Discrepancia entre los 109.010.458.534 parametros del safetensors y los 220 B descritos en la model card del base, sin explicacion en la informacion disponible.
-- Riesgo de alucinacion y sesgos: no documentados en la informacion proporcionada; deben evaluarse empiricamente antes de cualquier despliegue.
-- Longitud de contexto no disponible: no se puede planificar el dimensionado de KV cache ni el caso de uso de contexto largo sin medirla.
+- Es una cuantización, no un modelo entrenado: la calidad depende del checkpoint base `tencent/Hy4-flash` y de la fidelidad de la compresión a 4 bpw en los expertos; el autor no publica evaluación de calidad.
+- Sesgos conocidos: no documentados en la información disponible; al estar entrenado solo en inglés y chino, el rendimiento en castellano no está garantizado.
+- Riesgo de alucinación: no evaluado ni documentado por el autor.
+- Limitaciones de idioma: solo en y zh según los metadatos; no se declara soporte multilingüe amplio.
+- Limitaciones de contexto: la longitud de contexto no está disponible en la información proporcionada.
+- Restricciones de licencia: Tencent Hy License 1.0, derivada de Apache-2.0 pero con términos específicos para MaaS en la sección 10; es necesario revisar el texto completo antes de un uso comercial o de ofrecer el modelo como servicio.
+- Dependencia de un fork no oficial de exllamav3 (rama `hy4-flash`) para cargar la arquitectura; sin ese fork o el parche incluido, el checkpoint no es utilizable.
+- El runtime actual no conecta la torre de visión ni los tensores DFly2, por lo que las capacidades multimodales del base no están operativas en esta build.
+- El reparto en dos GPU debe hacerse por capas (`-gs`); el tensor parallelism no funciona con los módulos personalizados de atención y Engram.
+- El recuento de parámetros del safetensors (109 010 458 534) difiere del declarado en la model card del base (220B); conviene verificar el inventario real de tensores antes de dimensionar el despliegue.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/LibertAIDAI/Hy4-flash-EXL3-4bpw
 - Modelo base: https://huggingface.co/tencent/Hy4-flash
 - Licencia del base: https://huggingface.co/tencent/Hy4-flash/blob/main/LICENSE
-- Fork de exllamav3 con soporte `hy_v4_flash`: https://github.com/moshemalawach/exllamav3 (rama `hy4-flash`, commit `1af65c4`)
+- Colección de variantes EXL3: https://huggingface.co/collections/LibertAIDAI/hy4-flash-exl3-6afe62b412b76248d8d29b0b
+- Variante 3.5 bpw: https://huggingface.co/LibertAIDAI/Hy4-flash-EXL3-3.5bpw
+- Variante 3.0 bpw: https://huggingface.co/LibertAIDAI/Hy4-flash-EXL3-3bpw
+- Variante 2.5 bpw: https://huggingface.co/LibertAIDAI/Hy4-flash-EXL3-2.5bpw
+- Fork de exllamav3 con soporte `hy_v4_flash`: https://github.com/moshemalawach/exllamav3

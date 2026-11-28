@@ -2,90 +2,95 @@
 
 ## Resumen
 
-El modelo `samyhaff/gemma-4-e4b-it-grpo-ed` es un ajuste fino (fine-tune) del modelo base `google/gemma-4-E4B-it`, publicado por el usuario samyhaff en Hugging Face. Se trata de un modelo de generación de texto orientado específicamente a tareas de *entity linking* (enlazado de entidades) y *entity disambiguation* (desambiguación de entidades), según las etiquetas declaradas por el autor. El ajuste se ha realizado mediante GRPO (Group Relative Policy Optimization), una técnica de optimización por refuerzo, sobre el modelo instructivo de Google.
+gemma-4-e4b-it-grpo-ed es un ajuste fino de google/gemma-4-E4B-it orientado especificamente a la desambiguacion de entidades (entity disambiguation, ED). Lo desarrolla Samy Haffoudhi (usuario samyhaff) en el marco del articulo "When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift", aceptado en Findings de EACL 2027. El modelo recibe un texto con una mencion marcada entre corchetes y una lista numerada de candidatos, razona sobre el contexto y responde con el indice del candidato elegido.
 
-El modelo cuenta con aproximadamente 8.000 millones de parámetros totales (7.996.156.490 según los pesos en safetensors) y se distribuye bajo licencia Apache 2.0. El repositorio ocupa 16 GB y contiene pesos en formato safetensors. La model card pública es extremadamente escasa: solo incluye metadatos YAML con la licencia, el modelo base y las etiquetas de tarea, sin documentación adicional sobre datos de entrenamiento, hiperparámetros o evaluación.
+El modelo parte de la base instructiva de Gemma 4 de 4B parametros efectivos (identificador E4B) y se entrena mediante LoRA fusionado con aprendizaje por refuerzo verificable (RLVR) usando GRPO, con una recompensa que premia la seleccion del candidato correcto sobre el conjunto de datos ZELDA. El resultado es un modelo de aproximadamente 8.000 millones de parametros totales en safetensors, con licencia Apache 2.0 y formato compatible con transformers y vLLM.
 
-Su relevancia radica en ser un ejemplo de especialización de un modelo Gemma de cuarta generación mediante RL para una tarea concreta de procesamiento de lenguaje natural (NLP) como es la desambiguación de entidades, un componente crítico en pipelines de extracción de conocimiento y grafos de conocimiento. No obstante, la falta de documentación y de resultados de evaluación limita seriamente su adopción en producción sin una validación previa por parte del usuario.
+Su relevancia radica en que demuestra que modelos pequenos, cuando se entrenan con RL sobre una tarea concreta, pueden alcanzar un rendimiento competitivo en desambiguacion de entidades tanto en dominio (ZELDA, 80,4 % de exactitud) como fuera de dominio en regimen zero-shot real (ZESHEL, 76,3 % de exactitud normalizada). Es una pieza util para pipelines de entity linking donde se necesita un reranker/desambiguador ligero y desplegable en hardware modesto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Gemma 4; detalles no disponibles) |
+| Arquitectura | Transformer decoder-only (familia Gemma 4, variante E4B); no se detalla si emplea atencion lineal o hibrida |
 | Parametros totales | 7.996.156.490 (~8B) |
-| Parametros activos | no disponible |
+| Parametros activos | no disponible (el identificador E4B sugiere parametros efectivos de 4B, pero no se confirma en la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; se asume compatibilidad con cuantizaciones estándar tipo GGUF/AWQ, pero no confirmado) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan GGUF ni otras variantes) |
+| Idiomas soportados | no disponible (hereda los del modelo base, sin confirmar en la ficha) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `google/gemma-4-E4B-it`, un modelo de la familia Gemma 4 de Google. No se dispone de información detallada sobre la arquitectura interna del modelo base en la información proporcionada (si es un transformer denso, MoE o híbrido), por lo que este dato debe consultarse en la model card oficial de Google. El sufijo "E4B" sugiere un tamaño de aproximadamente 4B de parámetros efectivos, aunque los pesos reales del repositorio suman cerca de 8B, lo que podría indicar una arquitectura con componentes adicionales o un conteo distinto entre parámetros efectivos y totales; este punto no está aclarado en la documentación disponible.
+El modelo es un ajuste fino del checkpoint google/gemma-4-E4B-it, un transformer decoder-only de la familia Gemma 4 con aproximadamente 8.000 millones de parametros totales en el checkpoint publicado. El ajuste se realizo con LoRA y posteriormente se fusionaron los adaptadores en los pesos base, de modo que el repositorio contiene un unico conjunto de pesos safetensors de 16 GB.
 
-El ajuste fino se realizó mediante GRPO (Group Relative Policy Optimization), una variante de optimización por refuerzo sin modelo crítico (critic-free) que estima la ventaja relativa dentro de un grupo de respuestas generadas para una misma consulta. Esta técnica se ha popularizado para tareas de razonamiento y alineación. El autor no documenta el número de tokens de entrenamiento, la composición del dataset, ni si hubo una fase previa de SFT. Las etiquetas indican que el objetivo del ajuste son tareas de *entity linking* y *entity disambiguation*, pero no se especifica qué corpus se utilizó ni cómo se definió la función de recompensa.
+El entrenamiento combina instruccion supervisada (heredada del modelo base) con RLVR mediante GRPO sobre el conjunto ZELDA. La funcion de recompensa premia la seleccion del candidato correcto, lo que empuja al modelo a producir razonamientos intermedios utiles antes de emitir el indice final. El prompt de inferencia exige marcar la mencion con corchetes, numerar los candidatos y terminar la respuesta con `"answer": <indice>`. La evaluacion recomendada por el autor consiste en muestrear 10 completions y aplicar voto por mayoria, lo que actua como decodificacion auto-consistente. El articulo asociado analiza cuando el razonamiento ayuda a la desambiguacion en modelos pequenos, tanto en dominio como bajo cambio de distribucion.
 
 ## Capacidades
 
-- Generación de texto conversacional, heredada del modelo base instructivo `gemma-4-E4B-it`.
-- Enlazado de entidades (*entity linking*): asociación de menciones textuales a entidades de una base de conocimiento.
-- Desambiguación de entidades (*entity disambiguation*): selección de la entidad correcta entre candidatos con el mismo nombre o mención.
-- Generación de texto general y respuesta a instrucciones, como capacidad residual del modelo base.
-- Soporte de tool calling / function calling: no disponible (no confirmado en la documentación).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no confirmado).
-- Capacidades multilingües: no disponible (los idiomas no están declarados).
-- Modo *thinking*, visión o audio: no disponible.
+- Desambiguacion de entidades en contexto: dado un texto con una mencion marcada y una lista de candidatos con descripciones, selecciona el candidato correcto por indice.
+- Razonamiento explicito antes de responder: el modelo genera una cadena de razonamiento y termina con el campo `"answer": <indice>`.
+- Entity linking en pipeline: encaja como etapa de desambiguacion/reranking despues de un recuperador de candidatos (en el articulo, tras qwen3-4b-reranker-ed).
+- Generacion de texto conversacional: hereda la capacidad de chat del modelo base instructivo.
+- Modo thinking: la plantilla de chat admite `enable_thinking: True` para activar el razonamiento.
+- Capacidad multimodal image-text-to-text: el tag del modelo indica soporte de entrada imagen-texto, aunque el ajuste se centra en texto.
+- Soporte de tool calling / function calling: no disponible en la informacion.
+- Soporte de agentes multi-paso: no disponible en la informacion.
+- Capacidades multilingues: no disponibles en la informacion (dependen del modelo base).
 
 ## Casos de uso
 
-- Desambiguación de entidades en pipelines de extracción de conocimiento: el modelo puede recibir una mención y un conjunto de candidatos y seleccionar la entidad correcta, integrándose en un sistema de construcción de grafos de conocimiento. Es adecuado por su ajuste específico con GRPO para esta tarea, aunque requiere validación empírica.
-- Enlazado de entidades en artículos periodísticos o documentos corporativos: dado un texto con nombres propios, el modelo puede asociarlos a identificadores de una base de conocimiento (Wikidata, DBpedia), facilitando la indexación semántica.
-- Normalización de entidades en bases de datos de clientes: unificación de registros con variantes de nombres (por ejemplo, "J. García" vs. "Juan García") para deduplicación, aprovechando la capacidad de desambiguación.
-- Enriquecimiento de corpus para búsqueda semántica: anotación de menciones con entidades canónicas antes de indexar en un motor de búsqueda vectorial, mejorando la precisión de recuperación.
-- Procesamiento de literatura científica o legal: resolución de referencias a autores, instituciones o normativas que aparecen con abreviaturas o formas ambiguas.
-- Asistente conversacional especializado en consultas sobre entidades: el modelo puede responder preguntas del tipo "¿a qué empresa se refiere 'Apple' en este contexto?" manteniendo el formato conversacional heredado del modelo base.
-- Prototipado e investigación en NLP: como punto de partida para experimentos de RL aplicado a tareas de NLP, dado que es un fine-tune GRPO documentado (aunque mínimamente) y de licencia permisiva.
+- Desambiguacion en pipelines de entity linking: el modelo se situa tras un recuperador que devuelve los 10 mejores candidatos y elige el correcto por voto mayoritario, tal como se describe en el articulo y el repositorio ed-study.
+- Enriquecimiento de bases de conocimiento: procesar noticias o documentos para resolver menciones ambiguas (por ejemplo, "Jordan" como pais, persona o rio) antes de insertar entidades en un grafo de conocimiento.
+- Busqueda semantica con resolucion de entidades: normalizar menciones en consultas y documentos para mejorar la recuperacion cuando los terminos son polisemicos.
+- Analisis de prensa y monitorizacion de medios: identificar de forma fiable a que persona u organizacion se refiere cada mencion en articulos con contexto largo.
+- Construccion de datasets de entrenamiento: usar el modelo como anotador automatico de alta precision en tareas de entity disambiguation, filtrando por consenso de 10 muestras.
+- Evaluacion comparativa de razonamiento: servir como referencia de modelo pequeno entrenado con GRPO para estudiar cuando el razonamiento mejora o perjudica la tarea, replicando los experimentos del paper.
+- Despliegue en hardware modesto: al ser un modelo de ~8B con licencia Apache 2.0, puede ejecutarse en una unica GPU consumer de gama alta para tareas de desambiguacion por lotes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+| Benchmark | Resultado |
+|---|---|
+| ZELDA (exactitud) | 80,4 |
+| ZESHEL, zero-shot real (exactitud normalizada) | 76,3 |
+
+No se han publicado en la informacion disponible resultados de MMLU, HumanEval, GSM8K ni de otras tareas generales para este ajuste.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 16 GB solo para pesos, más overhead de activaciones y caché KV; se recomienda un mínimo de 20-24 GB.
-- VRAM estimada en cuantización de 8 bits: aproximadamente 8-10 GB.
-- VRAM estimada en cuantización de 4 bits: aproximadamente 5-6 GB.
-- GPU recomendadas para FP16: NVIDIA A100 (40/80 GB), H100, L40S, RTX A6000.
-- GPU consumer: cabe en RTX 4090 (24 GB) en FP16 con margen ajustado; en cuantización 4/8 bits cabe en RTX 3090, RTX 4080, RTX 4070 Ti y GPUs con 12-16 GB.
-- Opciones de despliegue: al ser un modelo de la familia Gemma con pesos safetensors, es compatible con vLLM, TGI, llama.cpp (previa conversión a GGUF) y Ollama (previa conversión), aunque no se confirma oficialmente el soporte para esta variante concreta.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma oficial; por el tamano del checkpoint (~8B parametros, 16 GB en safetensors en fp16/bf16) se estima en torno a 16-20 GB en bf16, aunque este dato no lo confirma el autor.
+- GPU recomendadas: no disponibles en la informacion. Por tamano, una A100 40/80 GB, H100 o L40S son opciones seguras para bf16; una RTX 4090 (24 GB) deberia poder alojar el modelo en bf16, aunque no se confirma.
+- Cabe en GPU consumer: probablemente en RTX 4090 y modelos con 24 GB o mas en bf16; en GPUs con menos VRAM requeriria cuantizacion, para la que no se publican pesos.
+- Opciones de despliegue: vLLM (usado en el ejemplo oficial con `LLM.chat` y `SamplingParams`), transformers (libreria declarada) y cualquier runtime compatible con safetensors. No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El ejemplo oficial muestrea 10 completions con `max_tokens: 2048`, lo que implica un coste de inferencia multiplicado por 10 por consulta.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samyhaff/gemma-4-e4b-it-grpo-ed | ~8B | no disponible | Entity linking / disambiguation | Apache 2.0 | Hugging Face |
-| google/gemma-4-E4B-it (base) | ~4B efectivos (según nomenclatura) | no disponible | Generación de texto general | Gemma license (no confirmada) | Hugging Face |
-| Modelos especializados en entity linking (p. ej. basados en BERT) | 0,1-0,3B típicamente | 512 tokens típicamente | Entity linking | Variable | Variable |
+| samyhaff/gemma-4-e4b-it-grpo-ed | ~8B | no disponible | Entity disambiguation (GRPO) | Apache 2.0 | Hugging Face |
+| google/gemma-4-E4B-it | ~8B (checkpoint base) | no disponible | Modelo instructivo general | Gemma (terminos de Google) | Hugging Face |
+| samyhaff/qwen3-4b-reranker-ed | ~4B | no disponible | Recuperacion/reranking de candidatos para ED | no disponible | Hugging Face |
 
-La comparación con alternativas especializadas en *entity linking* es difícil porque la mayoría de soluciones de producción se basan en arquitecturas encoder-only (BERT, RoBERTa) de menor tamaño y contexto, mientras que este modelo es un decoder de ~8B. No se dispone de datos de rendimiento para establecer una comparación cuantitativa.
+No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible.
 
 ## Limitaciones y advertencias
 
-- La model card no documenta datos de entrenamiento, hiperparámetros, función de recompensa ni proceso de evaluación; esto impide reproducir el ajuste o verificar su calidad.
-- No se han publicado resultados de benchmarks, por lo que no hay evidencia objetiva de mejora frente al modelo base en tareas de entity linking o disambiguation.
-- Riesgo de alucinación inherente a los modelos generativos: puede inventar entidades o identificadores inexistentes, especialmente en dominios poco representados.
-- Sesgos desconocidos: al no documentarse la composición del dataset de ajuste, no es posible evaluar sesgos demográficos, geográficos o lingüísticos.
-- Idiomas soportados no declarados; se desconoce si el ajuste GRPO preserva las capacidades multilingües del modelo base.
-- Longitud de contexto no especificada; no se puede garantizar el manejo de documentos largos.
-- Licencia Apache 2.0 declarada por el autor, pero el modelo base Gemma de Google tiene su propia licencia de uso; conviene verificar la compatibilidad y los términos de uso comercial del modelo base antes de desplegarlo en producción.
-- El modelo tiene muy pocas descargas (324) y un solo "like", lo que sugiere escasa validación por parte de la comunidad.
-- No se confirma soporte oficial en frameworks de inferencia populares (vLLM, TGI, llama.cpp) para esta variante concreta.
+- El modelo esta especializado en desambiguacion de entidades; su rendimiento en tareas generales de generacion o codigo no se ha evaluado y puede degradarse respecto al modelo base.
+- Requiere un formato de prompt estricto (mencion entre corchetes, candidatos numerados, respuesta con `"answer": <indice>`); fuera de ese formato la calidad no esta garantizada.
+- La evaluacion recomendada depende de muestrear 10 completions y votar, lo que multiplica el coste computacional y la latencia.
+- Riesgo de alucinacion: el modelo puede razonar de forma plausible pero elegir un indice incorrecto, especialmente con candidatos muy similares o contextos ambiguos.
+- Sesgos conocidos: no se documentan en la informacion disponible; hereda los sesgos del modelo base Gemma 4.
+- Limitaciones de idioma: no se especifican los idiomas soportados; el ajuste se realizo sobre ZELDA, por lo que el rendimiento fuera de su distribucion (ZESHEL) ya muestra una caida (80,4 frente a 76,3).
+- Restricciones de licencia: la ficha declara Apache 2.0, pero al derivar de google/gemma-4-E4B-it conviene verificar los terminos de uso del modelo base de Google para uso comercial.
+- Para produccion: conviene validar el modelo en el dominio concreto y monitorizar el consenso entre muestras como senal de confianza.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/samyhaff/gemma-4-e4b-it-grpo-ed
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.
+- Recuperador de candidatos: https://huggingface.co/samyhaff/qwen3-4b-reranker-ed
+- Paper (arXiv): https://arxiv.org/abs/2611.30334
+- Repositorio con pipeline y evaluacion: https://github.com/samyhaff/ed-study

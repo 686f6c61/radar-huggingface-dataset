@@ -2,98 +2,89 @@
 
 ## Resumen
 
-El modelo identificado como `anonym-coling2027/E2E-GOP-SpeechOcean762` es un repositorio publicado en Hugging Face por el usuario `anonym-coling2027`, cuya model card se limita a declarar la licencia MIT sin ningun contenido adicional. No se ha publicado informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades en la informacion disponible. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de un artefacto practicamente sin difusion.
+E2E-GOP-SpeechOcean762 es un modelo de evaluacion automatica de pronunciacion (CAPT, *Computer-Assisted Pronunciation Training*) para ingles que opera a nivel de fonema. Dado un audio y la secuencia fonetica esperada, devuelve una puntuacion continua entre 0 y 2 para cada fonema, donde valores mas altos indican mejor pronunciacion. Lo publica el autor anonimo `anonym-coling2027`, presumiblemente en el contexto de un envio a COLING 2027, y se distribuye con licencia MIT.
 
-El identificador del modelo incluye las siglas "E2E-GOP", que en la literatura de procesamiento de voz suelen asociarse a tareas de evaluacion de pronunciacion de extremo a extremo (End-to-End Goodness of Pronunciation), y la referencia "SpeechOcean" apunta a un posible vinculo con corpus de habla para aprendizaje de segundas lenguas. Sin embargo, esta interpretacion es una mera inferencia a partir del nombre y no esta confirmada por ninguna documentacion del autor, por lo que no debe tomarse como un dato verificado.
+El modelo parte del backbone acustico `microsoft/wavlm-large` (aproximadamente 317 millones de parametros), afinado previamente para reconocimiento de fonemas sobre LibriSpeech. Sobre esa base se anade una cabeza CTC de fonemas y un modulo de puntuacion que combina caracteristicas de pronunciacion (GOP, *Goodness of Pronunciation*), embeddings de fonemas aprendidos, una LSTM bidireccional de dos capas y una cabeza de regresion. El conjunto suma 325.661.038 parametros en formato safetensors.
 
-La relevancia de esta ficha es limitada: al no existir model card, paper, repositorio de codigo ni benchmarks, no es posible evaluar el modelo para uso en produccion. Cualquier dato que no aparezca explicitamente en la informacion proporcionada se indica como "no disponible" siguiendo las reglas de rigor de esta ficha. La fecha de creacion y actualizacion que figura en el repositorio es el 12 de octubre de 2026, un valor que conviene tratar con cautela por su caracter anomalo.
+Su relevancia practica esta en que resuelve una tarea muy especifica (scoring fonetico fino para aprendizaje de idiomas) con un modelo compacto que funciona integramente en CPU, sin necesidad de GPU. Esto lo hace adecuado para integrarse en aplicaciones educativas, plataformas de idiomas o herramientas de evaluacion oral donde el coste de infraestructura y la latencia importan.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Arquitectura | WavLM-large (encoder acustico) + cabeza CTC de fonemas + features de pronunciacion + embeddings de fonemas + BiLSTM de 2 capas + cabeza de regresion |
+| Parametros totales | 325.661.038 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (procesa utterances de audio; sin ventana declarada) |
+| Tipos de cuantizacion | no disponible (pesos safetensors en precision original) |
+| Idiomas soportados | ingles (`en`) |
 | Licencia | MIT |
-| Formato de pesos | no disponible |
-| Pipeline declarado | no disponible |
-| Region declarada | us |
-| Descargas | 0 |
-| Likes | 0 |
-| Fecha de creacion | 2026-10-12 |
-| Fecha de actualizacion | 2026-10-12 |
+| Formato de pesos | safetensors (repo de 1,3 GB, incluye codigo custom) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card unicamente contiene la etiqueta de licencia (`license: mit`) y no incluye descripcion tecnica, diagrama, referencia a paper ni mencion al tipo de red (transformer, MoE, SSM, hibrida u otra). Tampoco se especifica si se trata de un modelo de lenguaje, un modelo de voz, un modelo multimodal o un sistema de evaluacion de pronunciacion.
+El modelo es un hibrido de dos etapas. Primero, el backbone WavLM-large se afino para reconocimiento de fonemas sobre LibriSpeech, lo que le da representaciones acusticas alineadas con unidades foneticas. Despues, sobre ese encoder se construye el sistema de evaluacion: una cabeza CTC que produce logits por fonema, un conjunto de caracteristicas de pronunciacion derivadas de la comparacion entre la salida acustica y la secuencia canonica esperada, embeddings aprendidos para cada fonema, una LSTM bidireccional de dos capas que modela la secuencia y una cabeza de regresion que emite la puntuacion final por fonema en el rango [0, 2].
 
-No hay datos disponibles sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas de alineacion como RLHF o DPO, ni sobre innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, destilacion, etc.). La unica pista nominal, "E2E-GOP-SpeechOcean762", sugiere un posible enfoque de evaluacion de pronunciacion sobre datos de habla, pero se trata de una hipotesis no verificada.
+El entrenamiento del scorer se realiza sobre el corpus `mispeech/speechocean762`, un dataset publico de pronunciacion de hablantes no nativos de ingles con anotaciones a nivel de fonema, palabra y utterance. La model card no detalla el numero de tokens, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO (no aplicables en este tipo de tarea de regresion supervisada). La innovacion principal es la integracion end-to-end del GOP clasico (que tradicionalmente requiere alineamientos forzados y modelos separados) dentro de una red diferenciable que se entrena conjuntamente.
 
 ## Capacidades
 
-- Generacion de texto: no disponible.
-- Razonamiento: no disponible.
-- Generacion de codigo: no disponible.
-- Matematicas: no disponible.
-- Vision: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo de razonamiento, audio, evaluacion de pronunciacion): no disponible.
-
-No se puede confirmar ninguna capacidad concreta a partir de la informacion proporcionada, ya que la model card no incluye apartado de uso, ejemplos ni limitaciones.
+- Evaluacion de pronunciacion a nivel de fonema para ingles, con puntuacion continua en [0, 2].
+- Acepta audio WAV y la secuencia esperada de fonemas en ARPAbet sin marcas de acento.
+- Soporta multiples palabras en una misma utterance insertando el token separador `|` entre secuencias foneticas.
+- Manejo interno de audio estereo (conversion a mono) y remuestreo a 16 kHz via SciPy.
+- Inferencia completa en CPU, sin requerir GPU.
+- Integracion con la API de Transformers mediante `AutoModel` y `AutoProcessor` con `trust_remote_code=True`.
+- No soporta generacion de texto, tool calling, agentes, vision ni audio generativo; es exclusivamente un modelo discriminativo de scoring.
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos y realistas sin datos verificados sobre la tarea, las entradas y las salidas del modelo. Cualquier escenario que se enumerase seria especulativo y contravendria la regla de no inventar informacion. Por tanto:
-
-- No disponible: no se han documentado casos de uso por parte del autor.
-- No disponible: se desconoce si el modelo admite texto, audio u otras modalidades de entrada.
-- No disponible: se desconoce si esta pensado para inferencia en tiempo real o por lotes.
-- No disponible: se desconoce su comportamiento en tareas de clasificacion, generacion o regresion.
-- No disponible: se desconoce si soporta integracion mediante API, librerias de inferencia o despliegue local.
-- No disponible: se desconoce su idoneidad para fine-tuning posterior.
+- Aplicaciones de aprendizaje de ingles: el modelo puede puntuar cada fonema de una frase grabada por el alumno y devolver feedback granular ("el fonema /θ/ esta mal pronunciado") en lugar de una nota global, algo que las apps de idiomas necesitan para guiar la practica.
+- Evaluacion automatica de examenes orales: integrado en un pipeline de correccion, permite generar puntuaciones objetivas por fonema que un examinador humano revisa, reduciendo el tiempo de evaluacion en pruebas de speaking a gran escala.
+- Investigacion en fonetica y adquisicion de segundas lenguas: al producir scores por fonema, facilita estudios sobre que fonemas presentan mayor dificultad segun la L1 del hablante, con datos cuantitativos reproducibles.
+- Herramientas de logopedia y terapia del habla: el scoring fino permite monitorizar la progresion de un paciente fonema a fonema a lo largo de sesiones, sin depender de un especialista en cada iteracion.
+- Filtrado y control de calidad en datasets de voz: para corpus de habla no nativa, el modelo puede etiquetar la calidad de pronunciacion por fonema y descartar o estratificar muestras automaticamente.
+- Sistemas de tutoria embebidos en el dispositivo: gracias a la inferencia en CPU y al tamano contenido (~326 M de parametros), puede desplegarse en portatiles o servidores modestos sin GPU, habilitando feedback en tiempo real en entornos con recursos limitados.
+- Comparacion de variantes de pronunciacion: dado que acepta secuencias canonicas arbitrarias, permite evaluar si una realizacion se aproxima mas a una variante britanica o americana a nivel fonetico.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de metricas (PCC, MSE, F1 por fonema u otras) sobre SpeechOcean762 ni comparaciones con sistemas GOP clasicos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.): no disponible.
-- Latencia y throughput estimados: no disponible.
-
-Al desconocerse el numero de parametros, la arquitectura y el formato de pesos, no es posible estimar requisitos de memoria ni de computo.
+- VRAM estimada: no aplica para inferencia estandar; el modelo se ejecuta en CPU. En GPU, los 325 M de parametros en fp32 ocupan aproximadamente 1,3 GB de memoria, mas overhead de activaciones.
+- GPU recomendadas: no necesarias. Cualquier GPU consumer (RTX 3060 en adelante) puede alojarlo con holgura si se desea acelerar el procesamiento por lotes.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU con 4 GB o mas de VRAM.
+- Opciones de despliegue: PyTorch nativo con Transformers (`AutoModel`/`AutoProcessor` con `trust_remote_code=True`), dado que incluye codigo custom. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo discriminativo de audio).
+- Latencia y throughput: no disponibles en la informacion proporcionada. Al ser un encoder WavLM-large sobre utterances cortas, se espera procesamiento por utterance en el orden de decimas de segundo en CPU moderna, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se puede establecer una comparativa fiable sin conocer la categoria, el tamano y la tarea del modelo. No se han identificado en la informacion proporcionada modelos comparables de la misma familia o proposito.
+| Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| E2E-GOP-SpeechOcean762 | 325,7 M | Scoring fonetico (GOP) en ingles | no disponible | MIT | Hugging Face |
+| GOP clasico (p. ej. basado en Kaldi + DNN acustico) | variable | Scoring fonetico | no aplica | variable | Pipelines propios |
+| wav2vec2-based CAPT (varios) | ~300 M | Scoring de pronunciacion | no disponible | variable | Repos academicos |
+| Whisper-large (uso indirecto para CAPT) | 1,55 B | ASR multilingue | 30 s | MIT | Hugging Face / OpenAI |
+
+La comparativa directa es limitada porque no hay benchmarks publicados para este modelo. Frente al GOP clasico, la ventaja declarada es el entrenamiento end-to-end sin alineamiento forzado externo. Frente a soluciones basadas en ASR como Whisper, el modelo es mas pequeno y especifico, pero solo cubre ingles y no transcribe.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: no hay descripcion tecnica, instrucciones de uso ni ejemplos, lo que impide una evaluacion rigurosa.
-- Sesgos conocidos: no disponible; no se ha documentado ningun analisis de sesgo.
-- Riesgo de alucinacion: no evaluable al desconocerse la tarea y el dominio.
-- Limitaciones de contexto o idioma: no disponible.
-- Licencia MIT: permite uso comercial y modificacion, pero al no existir documentacion no se puede verificar el cumplimiento de posibles condiciones adicionales de los datos de entrenamiento.
-- Repositorio sin traccion: 0 descargas y 0 likes, sin evidencia de validacion por parte de la comunidad.
-- Autor anonimizado (`anonym-coling2027`): no hay forma de contactar al responsable ni de verificar su trayectoria, lo que complica el soporte y la trazabilidad.
-- Fechas anomalas: la creacion y actualizacion figuran como 2026-10-12, un valor que no concuerda con una publicacion real y que sugiere un artefacto de prueba o un error de metadatos.
-- No apto para produccion: sin benchmarks, sin pesos verificables y sin documentacion, no se recomienda su uso en entornos productivos.
+- Solo soporta ingles; no hay evidencia de generalizacion a otras lenguas.
+- Requiere que el usuario proporcione la secuencia canonica de fonemas en ARPAbet; no la infiere del audio ni del texto.
+- El rango de puntuacion es fijo [0, 2] y esta calibrado sobre SpeechOcean762, un corpus con una distribucion concreta de hablantes no nativos; puede no transferir bien a otros perfiles (ninos, hablantes con trastornos del habla, acentos muy alejados del corpus).
+- Riesgo de sesgo hacia los patrones de pronunciacion presentes en SpeechOcean762, que no representa toda la diversidad de acentos del ingles.
+- No es un modelo generativo: no produce texto ni explicaciones; solo scores numericos por fonema.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor; conviene auditar el codigo antes de desplegarlo en produccion.
+- La licencia MIT permite uso comercial, pero el modelo base WavLM-large tiene su propia licencia que conviene verificar; la model card no detalla la cadena de licencias del backbone.
+- No se han publicado evaluaciones de robustez ante ruido, canales telefonicos o audio de baja calidad.
+- El autor es anonimo (`anonym-coling2027`), lo que dificulta el soporte y la trazabilidad del modelo.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/anonym-coling2027/E2E-GOP-SpeechOcean762
-- Paper: no disponible.
-- Repositorio de codigo: no disponible.
-- Demo: no disponible.
-- Blog o documentacion adicional: no disponible.
-
-Nota: los resultados de busqueda web proporcionados no guardan relacion con el modelo (corresponden a marcas de ropa, al colectivo Anonymous y a comercios minoristas) y no aportan informacion tecnica util.
+- Codigo de entrenamiento y evaluacion: https://anonymous.4open.science/r/E2E-GOP/
+- Dataset SpeechOcean762: https://huggingface.co/datasets/mispeech/speechocean762
+- Modelo base WavLM-large: https://huggingface.co/microsoft/wavlm-large

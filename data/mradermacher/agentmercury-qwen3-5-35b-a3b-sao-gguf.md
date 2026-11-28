@@ -2,74 +2,108 @@
 
 ## Resumen
 
-AgentMercury-Qwen3.5-35B-A3B-SAO es un modelo de lenguaje de tipo Mixture of Experts (MoE) con 35 000 millones de parámetros totales y 3 000 millones de parámetros activos, desarrollado por Minbyul y cuantizado a formato GGUF por mradermacher. El modelo base está diseñado específicamente para tareas de agente, uso de herramientas y protocolo MCP (Model Context Protocol), y ha sido entrenado con técnicas de aprendizaje por refuerzo basadas en actor-crítico y el método SAO (Self-Adaptive Optimization). Esta versión GGUF permite desplegar el modelo en hardware de consumo mediante llama.cpp, Ollama u otros motores compatibles, manteniendo un equilibrio entre tamaño y calidad gracias a las distintas cuantizaciones ofrecidas.
+AgentMercury-Qwen3.5-35B-A3B-SAO es un modelo de lenguaje de tipo Mixture of Experts (MoE) derivado de la familia Qwen3.5, ajustado específicamente para tareas de agente, uso de herramientas (tool use) y protocolos MCP (Model Context Protocol). El desarrollo del modelo base corresponde a Minbyul, mientras que esta ficha corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y derivados.
 
-La relevancia actual de este modelo radica en su orientación a sistemas agénticos y su capacidad multimodal (incluye un proyector mmproj), lo que lo hace adecuado para integrarse en pipelines de automatización, asistentes conversacionales y aplicaciones que requieren interacción con herramientas externas. Al estar licenciado bajo Apache 2.0, su uso comercial está permitido sin restricciones adicionales.
+El modelo parte de una arquitectura MoE con aproximadamente 34.660 millones de parámetros totales y, según la nomenclatura "A3B", alrededor de 3.000 millones de parámetros activos por token. Esa relación entre parámetros totales y activos es la que hace viable su despliegue en entornos locales: el coste computacional por token se aproxima al de un modelo denso de 3B, mientras que la capacidad representacional se acerca a la de un modelo de 35B.
+
+La relevancia de esta ficha reside en que combina tres elementos poco habituales en el ecosistema abierto: un ajuste orientado a agentes con aprendizaje por refuerzo (actor-critic, SAO), soporte declarado para MCP y tool calling, y una licencia Apache 2.0 que permite uso comercial sin restricciones adicionales. La versión GGUF facilita la experimentación en local sin necesidad de GPUs de datacenter.
 
 ## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) basada en Qwen3.5 |
-| Parametros totales | 34 660 610 688 (~34,66 B) |
-| Parametros activos | 3 B (según nomenclatura A3B) |
+| Arquitectura | Mixture of Experts (MoE) basada en Qwen3.5, transformer |
+| Parámetros totales | 34.660.610.688 (≈34,66B) |
+| Parámetros activos | ≈3B (según nomenclatura A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj Q8_0 y f16 |
 | Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (archivos .gguf) |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors |
+| Pipeline | reinforcement-learning |
+| Tamaño del repositorio | 237,1 GB |
+| Descargas | 184 |
+| Fecha de creación | 2026-08-20 |
+| Última actualización | 2026-10-07 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base AgentMercury-Qwen3.5-35B-A3B-SAO emplea una arquitectura MoE con 35 000 millones de parámetros totales y 3 000 millones activos por token, lo que reduce el coste computacional en inferencia en comparación con un modelo denso del mismo tamaño. Los tags del repositorio indican que fue entrenado mediante aprendizaje por refuerzo con un enfoque actor-crítico y el método SAO, aunque no se proporcionan detalles sobre el volumen de datos, la composición del dataset ni el proceso exacto de entrenamiento. El modelo incluye además un proyector multimodal (mmproj), lo que sugiere capacidades de procesamiento de imágenes o vídeo, aunque no se especifica la arquitectura de visión.
+El modelo base es un transformer con arquitectura Mixture of Experts, heredada de Qwen3.5, con 34,66B parámetros totales y aproximadamente 3B activos por token. La nomenclatura "A3B" confirma el diseño de expertos dispersos: en cada paso de inferencia solo se activa una fracción de los parámetros, lo que reduce el coste de cómputo y memoria de activaciones respecto a un modelo denso del mismo tamaño total.
 
-La cuantización GGUF ha sido realizada por mradermacher, ofreciendo múltiples niveles de precisión (desde Q2_K hasta Q8_0) para adaptarse a distintos requisitos de memoria y calidad. No se dispone de información sobre el contexto máximo soportado ni sobre técnicas de optimización adicionales como decodificación especulativa o atención lineal.
+El ajuste específico (etiqueta "SAO") se orienta a agentes mediante aprendizaje por refuerzo con esquema actor-critic. Las etiquetas del repositorio indican entrenamiento para tool use, MCP y flujos de agente multi-paso. No se dispone en la información proporcionada de datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de SFT, RLHF o DPO adicionales. Tampoco se documentan innovaciones técnicas concretas como decodificación especulativa o atención lineal. Esta ficha corresponde exclusivamente a la conversión a GGUF realizada por mradermacher, que no modifica los pesos más allá de la cuantización.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en inglés, con soporte para conversaciones multi-turno.
-- Uso de herramientas (tool calling) y funciones (function calling), orientado a integración con APIs y servicios externos.
-- Soporte de protocolo MCP (Model Context Protocol) para conectar el modelo con sistemas de gestión de contexto.
-- Capacidades de agente autónomo, incluyendo planificación y ejecución de tareas multi-paso.
-- Entrenamiento con aprendizaje por refuerzo (actor-crítico, SAO) que mejora la calidad de las respuestas en escenarios de interacción con herramientas.
-- Capacidades multimodales (a través del proyector mmproj), aunque no se detalla qué tipos de entrada visual soporta.
+- Generación de texto conversacional en inglés.
+- Uso de herramientas (tool calling / function calling), según las etiquetas del modelo.
+- Soporte del protocolo MCP (Model Context Protocol) para integración con servidores de herramientas.
+- Comportamiento orientado a agentes: razonamiento multi-paso y ejecución de tareas encadenadas.
+- Capacidades multimodales parciales: el repositorio incluye archivos mmproj (Q8_0 y f16), lo que sugiere soporte de entrada visual en el modelo base, aunque no se detalla el alcance.
+- Ajuste mediante aprendizaje por refuerzo (actor-critic) para mejorar la toma de decisiones en entornos de agente.
+- No se documentan capacidades específicas de matemáticas avanzadas, código de producción ni modo "thinking" explícito en la información disponible.
 
 ## Casos de uso
 
-- Asistentes virtuales con acceso a herramientas: el modelo puede gestionar conversaciones complejas y ejecutar llamadas a APIs, bases de datos o servicios web mediante tool calling, lo que lo hace adecuado para asistentes de soporte técnico o de productividad.
-- Automatización de flujos de trabajo con MCP: al soportar el protocolo MCP, puede integrarse en sistemas que requieren mantener un contexto compartido entre múltiples agentes o aplicaciones, por ejemplo en orquestadores de tareas empresariales.
-- Agentes de razonamiento multi-paso: gracias a su entrenamiento con RL y su arquitectura MoE, puede descomponer problemas complejos en subtareas y ejecutarlas secuencialmente, útil en análisis de datos o investigación automatizada.
-- Generación de código asistida por herramientas: puede invocar intérpretes, compiladores o repositorios de código mediante tool calling, facilitando la generación y verificación de código en entornos de desarrollo.
-- Procesamiento de documentos con entrada multimodal: si se utiliza el proyector mmproj, podría procesar imágenes o capturas de pantalla junto con texto, por ejemplo para extraer información de formularios o diagramas.
-- Despliegue en entornos con recursos limitados: las cuantizaciones Q4_K_M o Q6_K permiten ejecutar el modelo en GPUs de consumo (24 GB de VRAM) o incluso en CPU con llama.cpp, habilitando prototipos y aplicaciones locales.
+- Automatización de agentes con herramientas: el modelo puede orquestar llamadas a APIs externas mediante tool calling y MCP, adecuado para asistentes que consultan bases de datos, servicios web o sistemas internos en varios pasos.
+- Integración en pipelines de CI/CD: al soportar function calling, puede invocarse como componente de decisión en flujos automatizados que requieren interpretar resultados de herramientas y decidir la siguiente acción.
+- Despliegue local en estaciones de trabajo: las cuantizaciones Q4_K_M (21,3 GB) y Q5_K_M (24,8 GB) permiten ejecutar el modelo en GPUs de consumo de 24 GB de VRAM, lo que facilita prototipado sin coste de API.
+- Evaluación de investigación en RL para agentes: al estar entrenado con actor-critic y etiquetado como reinforcement-learning, sirve como base para experimentos de ajuste fino en tareas de agente.
+- Asistentes conversacionales técnicos en inglés: con licencia Apache 2.0, puede integrarse en productos comerciales sin obligaciones de atribución adicionales más allá de las de la licencia.
+- Entornos con requisitos de privacidad: al ejecutarse en local mediante llama.cpp u Ollama, los datos no salen de la infraestructura del usuario, útil para sectores regulados.
+- Pruebas de concepto de MCP: permite validar servidores MCP y flujos de herramientas antes de migrar a modelos mayores o propietarios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No se dispone de datos sobre MMLU, HumanEval, GSM8K u otras pruebas estandarizadas para este modelo.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: depende de la cuantización. Para Q4_K_M (21,3 GB) se recomienda una GPU con al menos 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090). Para Q8_0 (37 GB) se necesita una GPU con 48 GB o más (A6000, A100 80 GB, H100).
-- GPU recomendadas: RTX 3090/4090 para cuantizaciones Q4 y Q6; A100 80 GB o H100 para Q8_0. También es posible ejecutar en CPU con suficiente RAM (por ejemplo, 32 GB para Q4_K_M).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, o cualquier motor compatible con GGUF. Para despliegue en producción con mayor throughput, se puede convertir a formatos como vLLM o TGI, aunque requeriría los pesos originales en safetensors.
-- Latencia y throughput: no disponibles. Al ser un MoE con 3B activos, la velocidad de generación es superior a la de un modelo denso de 35B, pero depende del hardware y de la cuantización.
+- VRAM estimada según cuantización (tamaño de archivo, más overhead de contexto y KV cache):
+  - Q2_K: 13,0 GB
+  - Q3_K_S: 15,3 GB
+  - Q3_K_M: 16,9 GB
+  - Q3_K_L: 18,2 GB
+  - IQ4_XS: 19,0 GB
+  - Q4_K_S: 20,0 GB
+  - Q4_K_M: 21,3 GB
+  - Q5_K_S: 24,1 GB
+  - Q5_K_M: 24,8 GB
+  - Q6_K: 28,6 GB
+  - Q8_0: 37,0 GB
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; A100 40 GB o H100 para Q6_K y Q8_0 con contexto amplio; RTX 3090 (24 GB) válida para cuantizaciones Q4 y Q5.
+- Cabe en GPU de consumo: sí, en modelos con 24 GB de VRAM usando Q4_K_M o Q5_K_M; en GPUs de 16 GB solo con Q3_K_M o inferiores y contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con endpoints (la etiqueta "endpoints_compatible" sugiere compatibilidad con APIs tipo OpenAI). Para el modelo base en safetensors, vLLM o TGI si el soporte de la arquitectura Qwen3.5 MoE está disponible.
+- Latencia y throughput: no disponibles. Al tratarse de un MoE con ~3B activos, el throughput esperado por token es notablemente superior al de un denso de 35B, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa rigurosa con otros modelos. El nombre sugiere una base similar a Qwen3-30B-A3B (también MoE con 30B totales y 3B activos), pero no hay datos de rendimiento ni de contexto que permitan una comparación objetiva. Se recomienda consultar la documentación del modelo base para más detalles.
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| AgentMercury-Qwen3.5-35B-A3B-SAO (esta ficha) | 34,66B | ≈3B | no disponible | Apache 2.0 | GGUF / safetensors | Ajuste para agentes, tool use y MCP |
+| Qwen3.5-35B-A3B (base de la familia) | ≈35B | ≈3B | no disponible | según release de Qwen | safetensors / GGUF | Modelo generalista sin ajuste específico de agente |
+| Modelos MoE de ~30B con ~3B activos de otras familias | ≈30B | ≈3B | variable | variable | variable | Alternativas de la misma categoría de eficiencia; datos concretos no disponibles en esta ficha |
+
+No se dispone de resultados de benchmarks comparativos en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- El modelo está entrenado únicamente en inglés, por lo que su rendimiento en otros idiomas puede ser deficiente.
-- No se han documentado sesgos específicos, pero al ser un modelo entrenado con datos web, puede presentar sesgos sociales, culturales o de género.
-- Riesgo de alucinación: como cualquier LLM, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo o cuando se le piden datos factuales.
-- La longitud de contexto no está especificada; se desconoce si soporta ventanas largas (por ejemplo, 32K o 128K tokens), lo que limita su uso en tareas que requieren mucho contexto.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K) pueden degradar significativamente la calidad de las respuestas; se recomienda usar Q4_K_M o superior para producción.
-- Aunque la licencia Apache 2.0 permite uso comercial, el modelo base puede tener dependencias o restricciones adicionales no documentadas en este repositorio.
-- El repositorio GGUF no incluye los pesos originales en safetensors; para fine-tuning o despliegue con vLLM/TGI es necesario obtener el modelo base desde Minbyul/AgentMercury-Qwen3.5-35B-A3B-SAO.
+- Idioma: el modelo declara únicamente inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Contexto: no se especifica la longitud máxima de contexto, lo que impide planificar despliegues con ventanas largas sin validación empírica.
+- Alucinación: no se han publicado evaluaciones de fidelidad; en tareas de agente, una llamada a herramienta inventada puede provocar fallos en cascada.
+- Benchmarks ausentes: sin datos de MMLU, HumanEval, GSM8K ni evaluaciones de tool use, la comparación con alternativas es especulativa.
+- Cuantizaciones agresivas: Q2_K y Q3_K_M degradan la calidad de forma notable según las notas del propio autor; para producción se recomienda Q4_K_M o superior.
+- Soporte multimodal incierto: la presencia de mmproj indica capacidad visual en el modelo base, pero no se documenta su alcance ni su calidad tras la cuantización.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base original de Qwen3.5 y del ajuste de Minbyul por si añaden restricciones adicionales.
+- Madurez: 184 descargas y 0 likes indican un modelo poco validado por la comunidad; no se recomienda para producción crítica sin evaluación propia.
+- Repositorio grande (237,1 GB): requiere planificación de almacenamiento y ancho de banda para descargar todas las cuantizaciones.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-35B-A3B-SAO-GGUF
-- Modelo base: https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-35B-A3B-SAO
-- Página de descarga y resumen: https://hf.tst.eu/model#AgentMercury-Qwen3.5-35B-A3B-SAO-GGUF
+- Modelo base (ajuste de Minbyul): https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-35B-A3B-SAO
+- Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/AgentMercury-Qwen3.5-35B-A3B-SAO-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#AgentMercury-Qwen3.5-35B-A3B-SAO-GGUF
+- Guía de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre tipos de cuantización: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests

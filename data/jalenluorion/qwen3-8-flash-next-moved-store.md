@@ -2,114 +2,114 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-moved-store es una repackaging del modelo Qwen3.8-Flash-Next de Qwen (Alibaba) realizada por el desarrollador independiente jalenluorion. El repositorio redistribuye el modelo original de 180.000 millones de parámetros en un formato que permite ejecutarlo en un MacBook con 16 GB de memoria unificada, manteniendo solo unos 9 GB en RAM y dejando el resto (112 GiB de expertos y memoria n-gram) en el SSD. Se trata, por tanto, de una conversión orientada al despliegue en Apple Silicon mediante MLX, no de un modelo nuevo entrenado desde cero.
+Qwen3.8-Flash-Next-moved-store es un reempaquetado del modelo Qwen/Qwen3.8-Flash-Next (180.000 millones de parametros) realizado por el usuario jalenluorion, cuyo objetivo es hacer viable la inferencia de un modelo de escala 180B en un Mac con 16 GB de memoria unificada. Para ello, los 24.576 expertos enrutados (120,8B parametros) y una memoria n-gram (51,2B parametros) se almacenan en SSD en formato de 4 y 8 bits respectivamente, y se leen bajo demanda hacia una cache bloqueada en memoria conforme las capas los necesitan.
 
-La arquitectura del modelo base es un transformer de tipo mixture-of-experts (MoE) con capas de atención híbridas: 36 capas Gated DeltaNet y 12 capas de atención dispersa. El modelo activa 10 de 512 expertos en cada una de las 48 capas, lo que resulta en 1,27 GB de lecturas de expertos por token antes de reutilización. La innovación clave de esta conversión es el uso de routers "lag-4": pequeños routers entrenados por capa que predicen, basándose en el estado oculto de cuatro capas anteriores, qué expertos necesitará la capa actual, permitiendo leerlos del SSD mientras se computan las capas intermedias.
+La innovacion central es lo que el autor denomina "prefetchable store": routers ligeros entrenados (576M parametros, lag-4) predicen que expertos necesitara una capa cuatro capas antes, de modo que las lecturas desde SSD comienzan mientras se computan las capas intermedias. Las filas de la memoria n-gram se leen directamente a partir de los token ids previos, por lo que pueden solicitarse en cuanto se elige un token. Solo permanecen en memoria las capas de atencion (36 Gated DeltaNet y 12 de atencion dispersa), expertos compartidos, normas, embeddings y cabeza de salida (4,9B parametros en 8 bits).
 
-El interés actual de esta ficha reside en que demuestra una técnica viable de offloading de expertos MoE a almacenamiento secundario con prefetch predictivo, logrando 5,7 tokens/s en un benchmark y 4,6 tokens/s en una sesión de agente bajo OpenCode. Es relevante para desarrolladores que quieran estudiar patrones de despliegue de modelos de gran tamaño en hardware de consumo, aunque con caveats importantes sobre fidelidad de salida y licencia.
+El modelo es exclusivamente de texto (no incluye la torre de vision ni la capa MTP del release original) y esta disenado para ejecutarse unicamente en macOS mediante el motor `dmeng` (C++), con un servidor compatible con OpenAI. Su relevancia radica en demostrar que un MoE de 180B puede servir en hardware de consumo con velocidades de 4-6 tokens/s, muy por encima de las 0,4 tokens/s de llama.cpp con un GGUF 4-bit mapeado en memoria en el mismo equipo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE híbrido: 36 capas Gated DeltaNet + 12 capas de atención dispersa, 48 capas totales |
-| Parametros totales | 180B (4,9B residentes + 576M routers lag-4 + 120,8B expertos enrutados + 51,2B memoria n-gram) |
-| Parametros activos | 10 de 512 expertos por capa en 48 capas (no se especifica el total de parámetros activos por token) |
+| Arquitectura | Mixture-of-Experts con atencion hibrida (36 capas Gated DeltaNet + 12 capas de atencion dispersa), 48 capas |
+| Parametros totales | 180B (aproximado; suma de componentes: 4,9B en memoria + 576M routers + 120,8B expertos + 51,2B n-gram) |
+| Parametros activos | 10 de 512 expertos por capa por token en 48 capas (24.576 expertos enrutados en total) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Expertos enrutados a 4-bit (escala fp16 + bias por grupo de 64); memoria n-gram a 8-bit (int8 con escala fp16); pesos residentes a 8-bit en Mac de 16 GB; routers lag-4 a fp16 |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | 8-bit affine con grupos de 64 para pesos residentes; 4-bit para expertos en SSD; 8-bit para filas n-gram y routers |
+| Idiomas soportados | no disponibles |
 | Licencia | qwen-community-1.0 (Qwen Community License 1.0) |
-| Formato de pesos | safetensors (resident.safetensors, bf16), .npz (routers_k4.npz), .bin (store/layer_XX.bin, ngram/part_PP.bin) |
+| Formato de pesos | safetensors (resident.safetensors, embeddings.safetensors), npz (routers_k4.npz), JSON de perfil (moved-store.json) |
+| Tamano del repositorio | 196,3 GB |
+| Descarga del perfil mac | 126,46 GB (75 archivos) |
+| Libreria | mlx (etiquetado), motor propio dmeng (C++) |
+| Plataforma | macOS unicamente (perfil mac); sin perfil para movil |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next es un transformer MoE con una combinación híbrida de capas: 36 capas Gated DeltaNet (atención lineal con estado recurrente) y 12 capas de atención dispersa. Cada capa dispone de 512 expertos enrutados, de los cuales se activan 10 por token. Adicionalmente, el modelo incorpora una memoria n-gram de 51,2B parámetros que funciona como tabla hash: un token consulta 16 filas cuyas direcciones dependen únicamente de los ids de tokens previos. Los pesos liberados están congelados y cuantizados; la única parte entrenada en esta conversión son los routers lag-4, entrenados sobre 20,5M tokens de wikitext-103, FineWeb-Edu y UltraChat para imitar los routers originales con el modelo congelado.
+El modelo base es Qwen3.8-Flash-Next, un transformer MoE de 180B parametros con una arquitectura hibrida que combina 36 capas de Gated DeltaNet (atencion lineal con estado recurrente) y 12 capas de atencion dispersa. Cada capa contiene 512 expertos enrutados, de los cuales se activan 10 por token, sumando 24.576 expertos en total. Ademas de los expertos, el modelo incorpora una memoria n-gram de 51,2B parametros que aporta 16 filas por token, leidas a partir de los token ids previos.
 
-La innovación técnica principal es el mecanismo de prefetch a cuatro capas de distancia. En el modelo original, el router de cada capa selecciona expertos a partir del estado oculto de esa misma capa, lo que obliga a tener todos los expertos en memoria. En esta conversión, un router pequeño por capa lee el estado del token cuatro capas antes y nombra los expertos que esa capa necesitará; esos expertos se leen del SSD mientras las cuatro capas intermedias computan. El router original sigue tomando su decisión habitual entre los expertos que ya han llegado. Existen dos modos: prefetch (por defecto, sin lecturas durante el cómputo de la capa propia, con posibles cambios menores en la salida) y exacto (`--mode exact`), que respeta siempre la elección del router original y lee lo que falte cuando se necesita. Los routers lag-4 se entrenaron sobre 20,5M tokens y la cabeza de predicción multi-token y la torre de visión del release original no están incluidas.
+El reempaquetado de jalenluorion no modifica los pesos del modelo: los pesos liberados estan congelados y el router original del modelo sigue tomando todas las decisiones de enrutamiento. Lo que se anade son routers auxiliares lag-4 (576M parametros, entrenados) que predicen con cuatro capas de antelacion que expertos necesitara cada capa, permitiendo solapar las lecturas de SSD con el computo. El motor `dmeng` ofrece dos modos: `exact`, en el que los tokens generados no dependen de la cache, los routers ni los tiempos (se espera a cada experto seleccionado), y `fast`, en el que los expertos seleccionados que no estan en memoria se leen por orden de peso hasta que los restantes suman como maximo 0,13 del peso de enrutamiento del paso y se omiten sin sustituto ni renormalizacion.
+
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si el modelo base utilizo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo base es un LLM de propósito general; esta conversión mantiene las capas de atención, expertos compartidos, normas, embeddings y cabeza de salida.
-- Razonamiento y conocimiento general: heredado del modelo base Qwen3.8-Flash-Next, sujeto a la fidelidad de la cuantización y del prefetch.
-- Memoria n-gram de largo alcance: 51,2B parámetros en forma de tabla hash consultada por token, orientada a capturar dependencias léxicas y de secuencia.
-- Tool calling y function calling: no medido explícitamente en esta conversión; la model card indica que trazas de pensamiento, código, tool calls y benchmarks de tarea no han sido evaluados.
-- Soporte de agentes y multi-step reasoning: el autor reporta 4,6 tokens/s en una sesión de agente bajo OpenCode, lo que evidencia viabilidad operativa, aunque sin métricas de calidad de tarea.
-- Capacidades multilingües: no disponible.
-- Modo thinking: no disponible (no se menciona en la información proporcionada).
-- Visión: no incluida; la torre de visión del release original no forma parte de esta conversión.
-- Predicción multi-token: no incluida; la cabeza correspondiente del release original no forma parte de esta conversión.
+- Generacion de texto autoregresiva con decodificacion greedy o con temperatura configurable (`--temp`).
+- Razonamiento multi-paso mediante el bucle de agente del servidor compatible con OpenAI (probado con OpenCode).
+- Uso como agente con llamadas a herramientas: las peticiones registradas de OpenCode con resultados de herramientas funcionan a 4,1-4,9 tokens/s con contextos de 8.000-10.000 tokens.
+- Modo `exact` para resultados reproducibles e independientes de la cache y los tiempos.
+- Modo `fast` con omision controlada de expertos (hasta 0,13 del peso de enrutamiento) para mayor velocidad.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Vision: no incluida (la torre de vision del release original se excluye explicitamente).
+- Capa MTP: no incluida.
+- Solo texto.
 
 ## Casos de uso
 
-- Investigación de técnicas de offloading MoE: el repositorio y el runner MLX permiten reproducir el patrón de prefetch lag-4 y medir el impacto en latencia y calidad; adecuado para experimentos académicos sobre inferencia de modelos grandes en hardware limitado.
-- Despliegue de un LLM de 180B en un MacBook de 16 GB: permite ejecutar un modelo de escala de centro de datos en un portátil Apple Silicon con unos 9 GB de RAM y 140 GB de disco libre, con 5,7 tokens/s en benchmark y 4,6 tokens/s en agente.
-- Prototipado de agentes locales en Apple Silicon: el demo incluido expone una API compatible con OpenAI que puede conectarse a OpenCode, útil para probar flujos de agente sin depender de servicios en nube.
-- Evaluación comparativa de modos prefetch vs. exacto: permite medir la diferencia de calidad (gap de loss de +0,011/+0,011/+0,019 nats por la elección temprana sola) y decidir cuándo sacrificar fidelidad por velocidad.
-- Estudio de cuantización mixta 4-bit/8-bit en MoE: los datos de rounding (9,2-9,6% RMS relativo por elemento en expertos a 4-bit) sirven para analizar el impacto de la cuantización en modelos con muchos expertos.
-- Base para conversiones similares: el mismo pipeline se aplica a Qwen3-Next-80B-A3B, Qwen3-Coder-Next y Qwen3-30B-A3B, por lo que este repositorio sirve como referencia para replicar la técnica en otros modelos Qwen.
-- Docencia y demostraciones de arquitecturas híbridas: útil para ilustrar en clase cómo se combinan Gated DeltaNet, atención dispersa, MoE y memoria n-gram en un mismo modelo.
+- Desarrollo y pruebas en portatiles Apple Silicon: permite experimentar con un MoE de 180B en un MacBook Pro de 16 GB sin acceso a GPUs de datacenter, usando el perfil `mac` y el motor `dmeng` con el modo `exact` para resultados reproducibles.
+- Asistente de codigo en local con OpenCode: el servidor `dmserve.py` expone una API compatible con OpenAI y se ha validado con OpenCode en sesiones de agente con contextos de 8.000-10.000 tokens, adecuado para revisiones de codigo y explicaciones sin enviar datos a la nube.
+- Generacion de texto offline y privada: al ejecutarse integramente en el equipo local (pesos en SSD y memoria), es apto para entornos con requisitos de confidencialidad donde no se permite el envio de prompts a servicios externos.
+- Evaluacion de arquitecturas MoE con offloading a SSD: investigadores pueden medir el impacto de la prediccion lag-4 y de la politica de omision de expertos comparando los modos `exact` y `fast` sobre el mismo conjunto de pesos.
+- Prototipado de agentes multi-paso: el modo `fast` mantiene el enrutamiento del propio modelo y permite iteraciones de agente a 4-6 tokens/s, suficiente para tareas de razonamiento encadenado con resultados de herramientas.
+- Demostraciones y docencia sobre inferencia eficiente: la configuracion de cache (3,0-3,6 GB), la lectura por token (481-692 MB) y el consumo de memoria (8,6 GB) ofrecen un caso concreto para explicar tecnicas de prefetching y gestion de memoria en modelos grandes.
+- Experimentacion con cuantizacion mixta: el repo separa pesos residentes en 8-bit, expertos en 4-bit y filas n-gram en 8-bit, lo que permite estudiar el equilibrio entre calidad y ancho de banda de SSD.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card indica explícitamente que trazas de pensamiento, código, tool calls y benchmarks de tarea no han sido medidos. Los únicos datos de rendimiento publicados son de velocidad y de calidad relativa (loss gap):
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Los datos de rendimiento medidos por el autor son los siguientes:
 
-| Metrica | Valor |
-|---|---|
-| Throughput en benchmark | 5,7 tokens/s |
-| Throughput en sesión de agente (OpenCode) | 4,6 tokens/s |
-| Memoria en RAM (Mac 16 GB) | ~9 GB |
-| Memoria en disco (expertos + n-gram) | 112 GiB (63,4 GiB expertos + 48,3 GiB n-gram) |
-| Lecturas de expertos por token | 1,27 GB antes de reutilización |
-| Gap de loss vs. bf16 original (wikitext-103 / FineWeb-Edu / UltraChat) | +0,027 / +0,019 / -0,008 nats (configuración en Mac) |
-| Gap por elección temprana sola | +0,011 / +0,011 / +0,019 nats |
-| Ruido por ventana (chat) | mediana +0,016, desviación estándar 0,133 sobre 128 ventanas |
-| Rounding RMS relativo expertos 4-bit | 9,2-9,6% por elemento |
+| Metrica | Modo exact | Modo fast |
+|---|---|---|
+| Decodificacion (tokens/s), cache 3,0 GB | 4,3-4,4 | 5,9-6,0 |
+| Decodificacion (tokens/s), cache 3,6 GB | no medido | 6,5 (un par de ejecuciones) |
+| Lectura por token (MB), cache 3,0 GB | 692 | 481-485 |
+| Memoria (GB) | 8,6 | 8,6 |
+| Coincidencia de la opcion top con `exact` (texto explicativo) | referencia | 0,964 |
+| Coincidencia de la opcion top con `exact` (texto de agente de revision de codigo) | referencia | 0,992 |
+
+Comparativa de referencia del autor en el mismo Mac (Base M4 MacBook Pro, 16 GB, SSD interno, enchufado, 8 hilos, greedy, 160 tokens generados): llama.cpp con un GGUF 4-bit del mismo modelo, mapeado en memoria y solo CPU, alcanza 0,45 y 0,39 tokens/s. El autor advierte que usa un archivo 4-bit distinto, por lo que no es una comparacion controlada.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: unos 9 GB de memoria unificada en Mac de 16 GB (4,3 GiB de pesos residentes cuantizados y cacheados en el primer load, más 1,1 GB de routers lag-4 a fp16, más slots de expertos en memoria).
-- Disco: aproximadamente 140 GB libres (la descarga es de 123 GiB y el primer run escribe una caché de 4,3 GiB).
-- GPU recomendadas: Apple Silicon con 16 GB o más de memoria unificada. No se proporcionan recomendaciones para GPU NVIDIA (A100, H100, RTX 4090) en la información disponible.
-- ¿Cabe en GPU de consumo? La conversión está diseñada específicamente para Apple Silicon; no se documenta compatibilidad con GPU de consumo NVIDIA.
-- Opciones de despliegue: MLX mediante `mlx_run.py` (chat, prompt único, benchmark), demo con API compatible OpenAI (`demo/demo.sh`) para OpenCode, y el engine C++ `dmeng` del mismo repositorio para otros modelos. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 5,7 tokens/s en benchmark y 4,6 tokens/s en agente bajo OpenCode en un Mac de 16 GB. No se proporcionan datos de latencia por token ni de throughput en otros hardware.
+- Memoria: perfil `mac` disenado para un Mac de 16 GB; consumo medido de 8,6 GB con cache de 3,0 GB. La cache de expertos se dimensiona a partir de la memoria libre al arrancar y se reduce 1 GB por comprobacion bajo presion de memoria.
+- Plataforma: exclusivamente macOS (Apple Silicon). No hay perfil para movil ni soporte para GPU NVIDIA/AMD documentado.
+- Almacenamiento: 126,46 GB para el perfil `mac` (75 archivos) o 132,10 GB para las formas fuente; el repositorio completo ocupa 196,3 GB. Se requiere SSD interno o externo con ancho de banda suficiente.
+- GPU recomendadas: no aplica; el motor `dmeng` esta pensado para CPU y memoria unificada de Apple Silicon. No se documentan A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: no disponible en el sentido convencional; el modelo no se ejecuta en VRAM de GPU discreta segun la informacion proporcionada.
+- Despliegue: motor `dmeng` (C++, compilado con CMake) y servidor `dmserve.py` compatible con OpenAI en el puerto 8090. Tambien se puede descargar el repositorio completo con `hf download`. No se mencionan vLLM, TGI, Ollama ni llama.cpp como opciones de despliegue para este reempaquetado.
+- Latencia y throughput: 4,3-6,5 tokens/s en decodificacion; 4,1-4,9 tokens/s en turnos de agente con 8.000-10.000 tokens de contexto en modo `fast` con cache de 3,0 GB.
+- Recomendacion del autor: cerrar otras aplicaciones grandes antes de arrancar, ya que la cache se dimensiona segun la memoria libre al inicio.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Rendimiento en el mismo Mac | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-moved-store (esta ficha) | 180B (4,9B residentes + 120,8B expertos + 51,2B n-gram) | no disponible | 5,7 tok/s benchmark, 4,6 tok/s agente en Mac 16 GB | qwen-community-1.0 | Hugging Face, MLX, Apple Silicon |
-| Qwen3-Next-80B-A3B-moved-store | 80B (A3B activos) | no disponible | no disponible | qwen-community-1.0 (presumible, no confirmado) | Hugging Face, misma técnica |
-| Qwen3-Coder-Next-moved-store | no disponible | no disponible | no disponible | no disponible | Hugging Face, misma técnica |
-| Qwen3-30B-A3B-moved-store | 30B (A3B activos) | no disponible | no disponible | no disponible | Hugging Face, misma técnica |
+| Qwen3.8-Flash-Next-moved-store | 180B (MoE) | no disponible | 4,3-6,5 tokens/s (dmeng) | qwen-community-1.0 | Hugging Face, motor propio |
+| Qwen3.8-Flash-Next (GGUF 4-bit con llama.cpp) | 180B (MoE) | no disponible | 0,39-0,45 tokens/s | qwen-community-1.0 | llama.cpp estandar |
+| Qwen/Qwen3.8-Flash-Next (original) | 180B (MoE) | no disponible | no disponible (requiere hardware de datacenter) | qwen-community-1.0 | Hugging Face |
 
-Las alternativas listadas son conversiones del mismo autor con la misma técnica de offloading; no se dispone de datos de benchmarks comparativos entre ellas en la información proporcionada.
+La comparacion con otros modelos de la misma categoria (por ejemplo, otros MoE de ~180B) no esta disponible en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Fidelidad de salida reducida: en modo prefetch (por defecto), si los routers lag-4 nombran un experto equivocado, el router original elige entre lo que hay en memoria, alterando ligeramente la salida. El gap de loss es de +0,027/+0,019/-0,008 nats en la configuración de Mac.
-- Calidad no medida en tareas clave: trazas de pensamiento, código, tool calls y benchmarks de tarea no han sido evaluados; no hay garantía de rendimiento en esos dominios.
-- El conjunto de chat sale por debajo del modelo original tras la cuantización (-0,037 nats), algo que el autor declara no explicar y no interpretar como ganancia.
-- Ruido por ventana elevado en chat: mediana +0,016 y desviación estándar 0,133 sobre 128 ventanas, lo que implica variabilidad considerable por ventana.
-- Componentes eliminados: la cabeza de predicción multi-token y la torre de visión del release original no están incluidas, por lo que no hay capacidades multimodales ni de predicción multi-token.
-- Cuantización agresiva: expertos a 4-bit con rounding RMS relativo de 9,2-9,6% por elemento; memoria n-gram a 8-bit.
-- Requisito de hardware específico: diseñado para Apple Silicon con 16 GB o más; no se documenta soporte para GPU NVIDIA ni para otros backends.
-- Consumo de disco elevado: aproximadamente 140 GB libres necesarios, con 123 GiB de descarga.
-- Presión de memoria: en un Mac de 16 GB, el modelo ocupa unos 9 GB y macOS puede empezar a comprimir memoria si el resto del sistema demanda más de lo disponible; se recomienda cerrar otras aplicaciones.
-- Licencia: Qwen Community License 1.0, con posibles restricciones para uso comercial que deben consultarse en el enlace LICENSE del repositorio.
-- Idiomas soportados no documentados: no hay información sobre cobertura multilingüe.
-- Longitud de contexto no disponible: no se especifica la ventana de contexto del modelo base ni de esta conversión.
-- Repositorio de terceros: se trata de una conversión no oficial de un desarrollador independiente, no del equipo de Qwen; la responsabilidad de validación recae en quien la despliega.
-- Riesgo de alucinación: inherente al modelo base; no se han publicado evaluaciones específicas de factualidad en esta conversión.
+- Solo texto: no incluye vision ni la capa MTP del release original, por lo que no puede realizar tareas multimodales.
+- Exclusivo de macOS: no hay perfil para otras plataformas ni para movil; requiere Apple Silicon y el motor `dmeng`.
+- Requiere 126,46 GB de almacenamiento y un SSD con ancho de banda suficiente; el rendimiento depende del estado del disco y de la memoria libre.
+- El modo `fast` omite expertos seleccionados cuyo peso agregado puede llegar a 0,13 del peso de enrutamiento del paso, sin sustituto ni renormalizacion; la calidad medida coincide con `exact` en el 96,4% y el 99,2% de las opciones top en dos textos de prueba, pero no hay garantia general.
+- El modo `exact` es mas lento (4,3-4,4 frente a 5,9-6,0 tokens/s) y depende de esperar cada lectura de experto.
+- Riesgo de alucinacion: no evaluado en la informacion disponible; se desconoce el comportamiento en dominios factuales.
+- Sesgos conocidos: no disponibles.
+- Idiomas soportados: no disponibles; no se puede confirmar cobertura multilingue.
+- Licencia Qwen Community License 1.0: es necesario revisar sus terminos (restricciones de uso comercial y condiciones de atribucion) antes de un despliegue en produccion.
+- Repositorio de terceros (jalenluorion), no oficial de Qwen; los pesos estan congelados y el router original decide, pero los routers lag-4 son entrenados por el autor y su calidad afecta al modo `fast`.
+- El servidor compatible con OpenAI se ha validado con OpenCode; no se documenta compatibilidad con otras herramientas.
+- No se han publicado benchmarks estandar de calidad, por lo que no es posible comparar su rendimiento cognitivo con otros modelos.
 
 ## Enlaces
 
-- Hugging Face (esta conversión): https://huggingface.co/jalenluorion/Qwen3.8-Flash-Next-moved-store
+- Repositorio Hugging Face: https://huggingface.co/jalenluorion/Qwen3.8-Flash-Next-moved-store
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Repositorio de código, runner y demo: https://github.com/jalenluorion/prefetchable-store (carpeta `reference/flash`)
-- Conversión Qwen3-Next-80B-A3B: https://huggingface.co/jalenluorion/Qwen3-Next-80B-A3B-moved-store
-- Conversión Qwen3-Coder-Next: https://huggingface.co/jalenluorion/Qwen3-Coder-Next-moved-store
-- Conversión Qwen3-30B-A3B: https://huggingface.co/jalenluorion/Qwen3-30B-A3B-moved-store
-- Conversión Qwen3.6-35B-A3B: https://huggingface.co/jalenluorion/Qwen3.6-35B-A3B-prefetchable-store
-- Conversión Inkling 2 Mini: https://huggingface.co/jalenluorion/Inkling-2-Mini-prefetchable-store
-- Licencia: LICENSE en el repositorio de Hugging Face
+- Motor de inferencia (GitHub): https://github.com/jalenluorion/prefetchable-store
+- Registros de llama.cpp en el mismo Mac: https://github.com/jalenluorion/prefetchable-store/tree/main/results/flash_next/llama_cpp
+- Licencia Qwen Community 1.0: incluida en el repositorio como LICENSE (enlace relativo en la model card)

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "tulioranjos/mdbr-leaf-mt-GGUF",
+  "slug": "tulioranjos-mdbr-leaf-mt-gguf",
+  "author": "tulioranjos",
+  "url": "https://huggingface.co/tulioranjos/mdbr-leaf-mt-GGUF",
+  "created_at": "2026-11-28T02:43:02.000Z",
+  "updated_at": "2026-11-28T02:43:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bert",
+    "sentence-similarity",
+    "information-retrieval",
+    "feature-extraction",
+    "en",
+    "base_model:MongoDB/mdbr-leaf-mt",
+    "base_model:quantized:MongoDB/mdbr-leaf-mt",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22958592,
+  "parameters_human": "23.0M",
+  "storage_bytes": 134503936,
+  "storage_human": "135 MB",
+  "context_length": 512,
+  "base_model": "MongoDB/mdbr-leaf-mt",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

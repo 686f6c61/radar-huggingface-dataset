@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "teejer/Ling-3.2-air-mlx-mixed-4-8bit",
+  "slug": "teejer-ling-3-2-air-mlx-mixed-4-8bit",
+  "author": "teejer",
+  "url": "https://huggingface.co/teejer/Ling-3.2-air-mlx-mixed-4-8bit",
+  "created_at": "2026-11-28T01:36:34.000Z",
+  "updated_at": "2026-11-28T01:37:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "bailing_hybrid",
+    "quantization",
+    "moe",
+    "mtp",
+    "en",
+    "base_model:inclusionAI/Ling-3.2-air",
+    "base_model:quantized:inclusionAI/Ling-3.2-air",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 804784640,
+  "parameters_human": "804.8M",
+  "storage_bytes": 91289642776,
+  "storage_human": "91.3 GB",
+  "context_length": null,
+  "base_model": "inclusionAI/Ling-3.2-air",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

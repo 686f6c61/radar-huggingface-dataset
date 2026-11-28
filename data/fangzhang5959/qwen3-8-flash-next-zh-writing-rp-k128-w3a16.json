@@ -5,7 +5,7 @@
   "author": "FangZhang5959",
   "url": "https://huggingface.co/FangZhang5959/Qwen3.8-Flash-Next-ZH-Writing-RP-K128-W3A16",
   "created_at": "2026-11-27T18:53:39.000Z",
-  "updated_at": "2026-11-27T18:53:52.000Z",
+  "updated_at": "2026-11-27T19:51:33.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -14,8 +14,8 @@
     "zh"
   ],
   "tags": [
-    "qwen4_exp",
     "safetensors",
+    "qwen4_exp",
     "vllm",
     "w3a16",
     "humming",
@@ -34,10 +34,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 61148555411,
+  "parameters_human": "61.15B",
+  "storage_bytes": 51788473420,
+  "storage_human": "51.8 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [

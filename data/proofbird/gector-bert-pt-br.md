@@ -2,103 +2,97 @@
 
 ## Resumen
 
-`gector-bert-pt-br` es un modelo de corrección gramatical para portugués de Brasil desarrollado por Proofbird, el equipo detrás de una aplicación de asistencia a la escritura para Windows. Se trata de un etiquetador de secuencias de estilo GECToR construido sobre el encoder BERTimbau (`neuralmind/bert-base-portuguese-cased`) y exportado a ONNX en fp32 para ejecutarse en CPU, sin necesidad de GPU ni de conexión a internet. Su propósito es corregir errores locales de gramática, ortografía y puntuación en textos en portugués brasileño directamente en el dispositivo del usuario.
+`gector-bert-pt-br` es un modelo de corrección gramatical para portugués de Brasil desarrollado por Proofbird, pensado para ejecutarse en el propio dispositivo del usuario (on-device) sin enviar texto a ningún servidor. Se trata de un etiquetador de secuencias de estilo GECToR construido sobre el encoder BERTimbau (`neuralmind/bert-base-portuguese-cased`) y exportado a ONNX en fp32 para inferencia en CPU. No reescribe ni parafrasea el texto: para cada token predice una etiqueta de edición (mantener, borrar, reemplazar, añadir, cambiar mayúsculas, cambiar forma verbal, restaurar acento) y aplica las ediciones de forma iterativa hasta cinco veces.
 
-A diferencia de los modelos generativos, GECToR no reescribe el texto: para cada token predice una etiqueta de edición (mantener, borrar, sustituir por una palabra, añadir una palabra, cambiar mayúsculas o cambiar la forma verbal) y aplica las ediciones de forma iterativa hasta cinco veces. Esto lo hace determinista, auditable y adecuado para ofrecer sugerencias con posición de carácter exacta, en lugar de paráfrasis.
+El modelo forma parte de Proofbird, un asistente de escritura que funciona en cualquier aplicación, y se publica para que cualquiera pueda inspeccionar qué se ejecuta en su máquina. Corrige concordancia sujeto-verbo, concordancia de género y número, artículos, contracciones, crasis, acentos y diacríticos, plurales de palabras terminadas en `-ão`, palabras duplicadas y mayúsculas al inicio de frase. Está entrenado exclusivamente con datos sintéticos generados a partir de reglas de error escritas a mano sobre texto real en portugués de Brasil.
 
-El modelo es relevante por su enfoque de privacidad: el texto nunca sale del equipo, y el modelo se publica precisamente para que cualquiera pueda inspeccionar qué se ejecuta en su máquina. Está entrenado exclusivamente con datos sintéticos generados a partir de Wikipedia en portugués y Tatoeba, sin corpus de aprendices ni datos de usuario.
+La relevancia actual del modelo reside en su enfoque de despliegue: un único archivo ONNX de aproximadamente 0,9 GB de repositorio, sin necesidad de GPU ni clave de API, con una demo ejecutable en el navegador. La versión 2.0.0 (noviembre de 2026) incorpora una segunda fuente de corpus oral (discursos parlamentarios) junto a Wikipedia, además de pares de entrenamiento dirigidos y, en su mayoría, un solo error por frase.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder BERT (BERTimbau) con cabeza de etiquetado de ediciones GECToR y cabeza de detección de errores |
-| Parametros totales | no disponible |
+| Arquitectura | Transformer encoder BERT (BERTimbau base) con cabeza de etiquetado de ediciones (1 556 etiquetas) y cabeza de detección de errores, estilo GECToR |
+| Parametros totales | no disponible (modelo base BERT base: ~110 M; el total con cabezas no se detalla) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | exportación ONNX en fp32 (no se documentan otras) |
-| Idiomas soportados | portugués (variante brasileña) |
+| Longitud de contexto | no disponible (modelo BERT base, típicamente 512 tokens; no confirmado en la información) |
+| Tipos de cuantizacion | exportación ONNX en fp32; no se documentan otras cuantizaciones |
+| Idiomas soportados | portugués (pt), específicamente portugués de Brasil |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (fp32) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la formulación GECToR: un encoder BERTimbau (MIT) con una cabeza de etiquetado de 5 000 etiquetas de edición y una cabeza adicional de detección de errores. En inferencia, el texto se etiqueta, se aplican las ediciones propuestas y la frase resultante se vuelve a etiquetar hasta cinco iteraciones. Las ediciones son estrictamente locales: el modelo no parafrasea ni reordena el contenido.
+El modelo sigue el paradigma GECToR: un encoder BERT (`neuralmind/bert-base-portuguese-cased`, licencia MIT) sobre el que se montan una cabeza de etiquetado con 1 556 etiquetas de edición y una cabeza de detección de errores. En lugar de generar texto nuevo, el modelo predice para cada token una edición local; las ediciones se aplican y la frase se vuelve a etiquetar hasta cinco veces. Esta restricción a ediciones locales evita la paráfrasis y hace que el modelo sea adecuado para sugerencias puntuales con posición de carácter (`start`, `length`), texto original y reemplazo.
 
-El entrenamiento utilizó únicamente datos sintéticos. Se tomaron 2 750 000 frases de Wikipedia en portugués (`wikimedia/wikipedia`, `20231101.pt`), filtrando solo artículos cuya ortografía y uso los identifican como brasileños, y 250 000 frases de Tatoeba (brasileñas o sin marca), que se corrompieron con reglas de error escritas a mano. Aproximadamente el 10 % se dejó limpio para que el modelo aprenda a no tocar texto correcto. Se añadieron 200 000 frases de plantilla para enseñar patrones poco frecuentes en Wikipedia (primera y segunda persona, preguntas, imperativos, concordancia a larga distancia). No se usaron corpus de aprendices ni datos no comerciales, ni texto de usuarios. El ajuste fue de una época (93 918 pasos, batch 64, learning rate 3e-5) en una NVIDIA L4, con identificador de ejecución `2026-11-13-1728`.
+El entrenamiento usa exclusivamente datos sintéticos: 3 250 000 frases de tres fuentes. 1 500 000 provienen de Wikipedia en portugués (`wikimedia/wikipedia`, `20231101.pt`), filtrando solo artículos cuya ortografía y uso los identifican como brasileños. Otras 1 500 000 proceden de discursos de plenario de la Cámara de Diputados de Brasil (datos abiertos, 2015 a finales de 2024), que aportan primera y segunda persona, preguntas, argumentación y frases largas. Las 250 000 restantes vienen de Tatoeba (brasileñas o sin marca). Se excluyeron frases con ortografía anterior al acuerdo de 1990, de modo que el modelo aprende una única dirección: ortografía antigua a nueva. La corrupción se hizo con reglas de error portuguesas escritas a mano, en su mayoría un error por frase independientemente de su longitud, dejando cerca del 10 % de frases limpias para que el modelo aprenda a no tocar texto correcto.
 
 ## Capacidades
 
-- Corrección de concordancia de género y número (artículos, adjetivos, participios, sustantivos tras determinantes).
-- Corrección de concordancia sujeto-verbo (`Os meninos come` → `comem`, `Eles tem` → `têm`).
+- Corrección de concordancia sujeto-verbo, incluso con sujeto nominal (`As crianças brinca` → `brincam`).
+- Corrección de concordancia de género y número en artículos, adjetivos y participios.
 - Corrección de género de artículos (`um casa` → `uma casa`).
-- Resolución de contracciones (`de o` → `do`, `em a` → `na`) y preposiciones duplicadas.
-- Corrección del crase (`Vou a praia` → `à praia`).
-- Corrección de acentos y diacríticos (`esta cansada` → `está cansada`, `voce` → `você`).
-- Corrección del plural de sustantivos en `-ão` (`informaçãos` → `informações`).
+- Resolución de contracciones (`de o` → `do`, `em a` → `na`).
+- Corrección de crasis (`Vou a praia` → `à praia`).
+- Restauración de acentos y diacríticos (`esta cansada` → `está cansada`, `Voce` → `Você`).
+- Corrección del plural de sustantivos terminados en `-ão` (`informaçãos` → `informações`).
+- Eliminación de palabras duplicadas (`Me passa o o sal` → `o sal`).
 - Capitalización al inicio de frase.
-- Corrección de errores de registro cotidiano en preguntas, imperativos y primera y segunda persona.
-- Salida con sugerencias posicionadas por carácter (`start`, `length`, `original`, `replacement`) para subrayar y ofrecer la corrección.
-- No soporta tool calling, agentes, visión, audio ni modo de razonamiento.
+- Detección de errores en frases largas (40 palabras o más) con una tasa cercana a la de frases cortas.
+- Generación de sugerencias con posición de carácter, texto original y reemplazo, aptas para subrayado e inserción en editores.
+- No soporta tool calling ni function calling (no documentado).
+- No soporta agentes ni razonamiento multi-paso (no documentado).
+- No soporta visión ni audio.
+- Capacidad multilingüe limitada al portugués; deja intacta la ortografía y el uso europeos.
 
 ## Casos de uso
 
-- Asistente de escritura de escritorio: integrado en la aplicación Proofbird para Windows, corrige el texto del usuario en tiempo real sin enviar datos a la nube, gracias a la exportación ONNX que se ejecuta en CPU.
-- Corrección en navegador: el Space de demostración ejecuta el modelo en el propio navegador del usuario, útil para entornos con requisitos estrictos de privacidad o para demostraciones sin instalación.
-- Preprocesado de corpus en portugués brasileño: normalización de acentos, concordancia y contracciones antes de indexar o analizar textos, con la ventaja de que las ediciones son locales y auditables.
-- Revisión de textos en aplicaciones de mensajería o editores web: el modelo devuelve posiciones de carácter exactas, lo que permite subrayar errores y ofrecer correcciones sin reescribir el contenido del usuario.
-- Filtrado de calidad en pipelines de datos: detección de errores gramaticales frecuentes en textos generados o recopilados, usando la cabeza de detección de errores y las sugerencias de edición.
-- Corrección de documentación y contenido editorial en variedad brasileña: útil para equipos que publican en pt-BR y quieren una comprobación determinista de concordancia y ortografía sin depender de un servicio externo.
-- Uso educativo: mostrar al estudiante qué palabra concreta cambiar y por cuál, al ser ediciones locales y no paráfrasis.
+- Asistente de escritura integrado en el navegador: el modelo ONNX se ejecuta en CPU y el texto nunca sale de la página, lo que permite ofrecer corrección gramatical en tiempo real en un editor web sin cumplir requisitos de privacidad de datos en servidor.
+- Corrección en aplicaciones de escritorio y móviles: al ser un único archivo ONNX de ~0,9 GB y no requerir GPU, puede empaquetarse en apps de procesamiento de textos o clientes de correo para revisar borradores antes de enviarlos.
+- Revisión de textos administrativos y periodísticos en portugués de Brasil: el entrenamiento con discursos parlamentarios y Wikipedia cubre registros formales y frases largas, útil para detectar concordancia y crasis en comunicados o notas de prensa.
+- Preprocesado en pipelines de NLP: las sugerencias con posición de carácter permiten aplicar correcciones antes de tareas posteriores como análisis de sentimiento, indexación o traducción automática, sin reescribir el texto original.
+- Herramienta educativa de aprendizaje de portugués: al mostrar el error, la posición y el reemplazo, el estudiante ve exactamente qué cambiar y por qué, en lugar de recibir una frase reescrita.
+- Filtro de calidad en plataformas de contenido generado por usuarios: integrado en un servicio de publicación de comentarios o foros, subraya errores de concordancia y acentos antes de que el usuario envíe el contenido.
+- Demo interactiva y evaluación de modelos: el Space de Hugging Face permite probar el modelo en el navegador sin instalación, útil para comparar su comportamiento con correctores comerciales.
 
 ## Benchmarks y rendimiento
 
-| Prueba | Resultado |
-|---|---|
-| Conjunto gold (603 frases escritas a mano: 420 con un error cada una, 183 correctas, 53 de ellas en formas exclusivamente brasileñas) | 416 corregidas, 183 intactas, 4 no detectadas, 0 empeoradas |
-| Falsas alarmas sobre 4 000 frases cotidianas de Tatoeba (brasileñas o sin marca, reservadas del entrenamiento) | 4 cambiadas (0,10 %); 1 de ellas corrige un error del propio texto de Tatoeba |
-| Estabilidad: repetición del gold con un token extra al inicio de cada frase | 0 frases cambian de resultado (las 4 filas de capitalización cambian por construcción y no se cuentan) |
-
-Los resultados corresponden a la configuración con las guardas de aplicación de `gector-guards.json`. El modelo se entrenó priorizando la precisión: un error no detectado cuesta menos que una corrección incorrecta.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el modelo se exporta a ONNX fp32 y está pensado para ejecutarse sin GPU.
-- VRAM estimada: no aplica en el caso de uso previsto (CPU); no se documenta el consumo en GPU.
-- GPU recomendadas: no disponible; el modelo no requiere GPU.
-- Cabe en GPU de consumo: sí, aunque su diseño apunta a CPU; no se especifican requisitos de VRAM.
-- Opciones de despliegue: ONNX Runtime (según el quickstart oficial), con dependencias `onnxruntime`, `tokenizers` y `huggingface_hub`.
-- Latencia y throughput: no disponibles.
+- Inferencia en CPU: el modelo se distribuye en ONNX fp32 y está diseñado para ejecutarse en CPU con ONNX Runtime, sin GPU.
+- VRAM estimada: no aplica para el modo previsto (CPU); el repositorio ocupa 0,9 GB, lo que da una idea del espacio en disco y memoria necesarios para cargar los pesos.
+- GPU recomendadas: no se documentan; el modelo no está pensado para GPU.
+- ¿Cabe en GPU de consumo? Sí, por tamaño (modelo base BERT), aunque el diseño apunta a CPU.
+- Opciones de despliegue: ONNX Runtime con el script `quickstart.py` proporcionado; también puede cargarse desde el Space de Hugging Face en el navegador.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Idiomas | Contexto | Licencia | Formato |
-|---|---|---|---|---|---|
-| `proofbird/gector-bert-pt-br` | GECToR sobre BERTimbau, corrección local | pt-BR | no disponible | Apache 2.0 | ONNX fp32 |
-| Modelo de portugués europeo de Proofbird | GECToR, corrección local | pt-PT | no disponible | no disponible | no disponible |
-| Modelos generativos de corrección gramatical (p. ej. basados en LLM) | Generación/reescritura | multilingüe | variable | variable | safetensors, GGUF, etc. |
-
-No se dispone de datos de benchmarks comparativos con otras alternativas en la información proporcionada.
+No se dispone de datos de benchmarks ni de comparativas publicadas en la información proporcionada para establecer una comparación cuantitativa con alternativas. Como referencia cualitativa, el modelo se sitúa en la categoría de correctores gramaticales GECToR para portugués de Brasil, con despliegue on-device en ONNX y licencia Apache 2.0, frente a correctores comerciales basados en API (que requieren enviar el texto a un servidor) y frente a modelos generativos de corrección (que reescriben el texto en lugar de aplicar ediciones locales). No se dispone de datos de parámetros, contexto ni rendimiento de esas alternativas en esta ficha.
 
 ## Limitaciones y advertencias
 
-- Solo cubre portugués brasileño: deja intacta la ortografía y el uso europeos (`facto`, `equipa`, `autocarro`, `está a trabalhar`) en lugar de cambiarlos.
-- No reescribe ni parafrasea: solo propone ediciones locales, por lo que no corrige problemas de estilo, estructura o coherencia global.
-- Prioriza la precisión sobre la exhaustividad: puede dejar pasar errores, como un adjetivo tras un verbo en plural sin sujeto visible (`Estamos muito cansado`) o un verbo separado de su sujeto por dos cláusulas.
-- Entrenado solo con datos sintéticos: los errores que las reglas de corrupción no generan pueden no estar cubiertos.
-- Riesgo de falsas alarmas bajo (0,10 % en Tatoeba), pero no nulo; conviene revisar las sugerencias en producción.
-- No se documentan sesgos específicos ni límites de longitud de contexto.
-- Licencia Apache 2.0: permite uso comercial, pero se recomienda conservar el aviso de licencia y verificar las condiciones de los datos base (BERTimbau es MIT).
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica poca validación externa por parte de la comunidad.
+- Solo corrige errores locales: no reescribe, no parafrasea y no detecta problemas de estilo, coherencia o estructura del discurso.
+- Entrenado exclusivamente con datos sintéticos generados por reglas; los errores reales no cubiertos por esas reglas pueden pasar desapercibidos.
+- Escrito para portugués de Brasil: deja intacta la ortografía y el uso europeos (`facto`, `equipa`, `autocarro`), por lo que no es adecuado como corrector de portugués europeo.
+- Puede dejar intactos nombres repetidos legítimos (`Wagga Wagga`) y no corrige errores que requieran contexto más allá de la ventana del encoder.
+- Riesgo de falsos positivos en texto correcto, aunque se entrenó con un ~10 % de frases limpias para mitigarlo.
+- No se documentan sesgos específicos; al entrenarse con Wikipedia y discursos parlamentarios brasileños, puede reflejar el registro y las convenciones de esas fuentes.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base BERTimbau (MIT) y de las fuentes de datos (Wikipedia, datos abiertos de la Cámara, Tatoeba) si se redistribuye.
+- La longitud de contexto no está documentada; para textos muy largos habrá que segmentar en frases.
+- No soporta tool calling, agentes, visión ni audio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/proofbird/gector-bert-pt-br
-- Demostración en el navegador: https://huggingface.co/spaces/proofbird/try-grammar
-- Quickstart en Colab: https://colab.research.google.com/#fileId=https%3A//huggingface.co/proofbird/gector-bert-pt-br/blob/main/quickstart.ipynb
-- Archivo `quickstart.py`: https://huggingface.co/proofbird/gector-bert-pt-br/blob/main/quickstart.py
-- Etiqueta de versión v1.0.0: https://huggingface.co/proofbird/gector-bert-pt-br/tree/v1.0.0
+- Demo en el navegador (Space): https://huggingface.co/spaces/proofbird/try-grammar
+- Cuaderno de inicio rápido (Colab): https://colab.research.google.com/#fileId=https%3A//huggingface.co/proofbird/gector-bert-pt-br/blob/main/quickstart.ipynb
+- Script `quickstart.py`: https://huggingface.co/proofbird/gector-bert-pt-br/blob/main/quickstart.py
+- Etiqueta de versión v2.0.0: https://huggingface.co/proofbird/gector-bert-pt-br/tree/v2.0.0
 - Modelo base BERTimbau: https://huggingface.co/neuralmind/bert-base-portuguese-cased
-- Dataset de Wikipedia en portugués: https://huggingface.co/datasets/wikimedia/wikipedia
+- Dataset Wikipedia en portugués: https://huggingface.co/datasets/wikimedia/wikipedia
+- Datos abiertos de la Cámara dos Deputados: https://dadosabertos.camara.leg.br
 - Tatoeba: https://tatoeba.org
-- Aplicación Proofbird: https://proofbird.app
+- Sitio de Proofbird: https://proofbird.app

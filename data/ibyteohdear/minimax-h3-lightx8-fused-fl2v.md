@@ -1,112 +1,106 @@
 # ibyteohdear/MiniMax-H3-LightX8-Fused-fl2v
 
-# MiniMax H3 LightX8 Fused fl2v (repositorio de ibyteohdear)
-
 ## Resumen
 
-MiniMax H3 es un sistema generativo omni-modal desarrollado por MiniMax, capaz de comprender contextos compuestos por texto, imagen, vídeo y audio, y de generar vídeo con audio estéreo nativo a resoluciones de hasta 2K y duraciones de hasta 15 segundos. El sistema se organiza en tres módulos: H3-Context-IR (comprensión y refinado de la instrucción multimodal), H3-Base (generación a 768p) y H3-Regenerate-2K (regeneración a 2K). Según la documentación oficial, H3 adquiere capacidades amplias de comprensión y generación multimodal ya en la fase de preentrenamiento, lo que le permite seguir instrucciones multimodales complejas.
+MiniMax-H3-LightX8-Fused-fl2v es una variante comunitaria del sistema generativo omnicanal MiniMax H3, publicada por el usuario ibyteohdear sobre los pesos oficiales de MiniMax. Se trata de un modelo de difusion para generacion conjunta de video y audio sincronizado, con un pipeline declarado como `image-text-to-video` y capacidad declarada para modos texto-a-video, imagen-a-video, primer y ultimo fotograma, video-a-video y referencia multimodal a audio-video. El repositorio contiene 33.122.992.896 parametros en formato safetensors y ocupa 66,3 GB.
 
-El repositorio `ibyteohdear/MiniMax-H3-LightX8-Fused-fl2v` es una publicación de la comunidad (autor `ibyteohdear`, 0 descargas y 0 me gusta en el momento de redactar esta ficha) que redistribuye un checkpoint de H3 en formato safetensors, con 33.122.992.896 parámetros (~33,1B) y un tamaño de repositorio de 66,3 GB, lo que es coherente con pesos en precisión de 16 bits. La etiqueta de pipeline es `image-text-to-video` y la librería declarada es `minimax-h3`; también figura la etiqueta `diffusers`.
+El modelo base H3, desarrollado por MiniMax, se presenta como un sistema generativo multimodal generalista que comprende contextos compuestos por texto, imagen, video y audio, y genera video con audio estereo nativo a resoluciones de hasta 2K y duraciones de 4 a 15 segundos a 24 FPS. La arquitectura completa se descompone en tres modulos: H3-Context-IR (interpretacion y refinado de instrucciones multimodales), H3-Base (generacion a 768p) y H3-Regenerate-2K (re-generacion a 2K reutilizando el contexto original).
 
-El sufijo `fl2v` del nombre apunta al modo de primer y último fotograma (FL2VA), mientras que `LightX8` y `Fused` sugieren modificaciones o fusiones propias de esta republicación. No se ha publicado documentación que describa en qué consisten esas modificaciones, ni resultados de evaluación asociados a este repositorio concreto, por lo que debe tratarse como un artefacto no verificado por el desarrollador original. La relevancia de H3 radica en que unifica generación de vídeo y audio sincronizado en un mismo sistema, algo poco habitual en modelos abiertos de este tamaño.
+La relevancia de esta ficha radica en que se trata de un derivado no oficial, con pocas descargas (163) y un unico like en el momento de la consulta, por lo que debe evaluarse con cautela frente al repositorio oficial `MiniMaxAI/MiniMax-H3`. La informacion disponible no detalla en que consiste el sufijo "LightX8-Fused", por lo que no se puede confirmar si implica cuantizacion, fusion de modulos o una reduccion de coste computacional.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle. Sistema generativo omni-modal con pipeline de difusión (`diffusers`); la documentación oficial describe tres módulos (H3-Context-IR, H3-Base, H3-Regenerate-2K), pero no especifica el tipo de red ni el número de capas |
-| Parámetros totales | 33.122.992.896 (~33,1B), según los pesos safetensors del repositorio |
-| Parámetros activos | No aplica / no disponible (no se documenta que sea un modelo MoE) |
-| Longitud de contexto | No disponible. No se documenta una ventana de contexto textual; la generación está acotada a vídeos de 4–15 segundos |
-| Tipos de cuantización | No disponible. El repositorio solo publica pesos safetensors; no se documentan versiones GGUF, fp8, int8 ni int4 |
-| Idiomas soportados | 11 idiomas con soporte estable para diálogo: árabe, chino, inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso y español. Otros idiomas tienen soporte parcial |
-| Licencia | `minimax-h3-community-license-agreement` (etiquetada como `other` en Hugging Face; el texto está en el fichero LICENSE del repositorio) |
-| Formato de pesos | Safetensors (66,3 GB en total; consistente con ~16 bits por parámetro) |
-| Resolución y formato de salida | Lado corto a 768 píxeles por defecto; hasta 2K mediante H3-Regenerate-2K. Relaciones de aspecto 21:9, 16:9, 4:3, 1:1, 3:4, 9:16 y otras |
-| Duración y cadencia de salida | 4–15 segundos a 24 FPS |
-| Audio de salida | Estéreo a 32 kHz, generado de forma nativa y sincronizada con el vídeo |
+| Arquitectura | no disponible (modelo de difusion multimodal para video y audio; sistema H3 con modulos Context-IR, Base y Regenerate-2K) |
+| Parametros totales | 33.122.992.896 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | 11 idiomas con soporte estable para dialogo: arabe, chino, ingles, frances, aleman, italiano, japones, coreano, portugues, ruso y espanol; otros idiomas con grado variable |
+| Licencia | minimax-h3-community-license-agreement (license: other) |
+| Formato de pesos | safetensors (tambien etiquetado como diffusers) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe H3 como un sistema omni-modal orientado a la generalización de tareas, con comprensión de contexto multimodal adquirida durante el preentrenamiento. El pipeline se divide en tres etapas: H3-Context-IR interpreta y refina las instrucciones multimodales de entrada y las convierte en una representación intermedia de contexto; H3-Base genera audio y vídeo a 768p a partir de esa representación; y H3-Regenerate-2K reinyecta el resultado de 768p junto con el contexto original para producir una salida a 2K con más detalle. La documentación oficial insiste en que H3-Context-IR es determinante para la calidad final y recomienda integrarlo en el pipeline o replicarlo siguiendo la guía de prompting.
+La informacion disponible describe H3 como un sistema generativo omnicanal de proposito general, no como un transformer autoregresivo de texto. El sistema completo se organiza en tres etapas: H3-Context-IR, que interpreta y refina instrucciones multimodales complejas y las convierte en una Representacion Intermedia de Contexto; H3-Base, que genera audio y video a 768p a partir de esa representacion; y H3-Regenerate-2K, que reinyecta el resultado de 768p junto con el contexto original para producir una salida a 2K con mayor detalle.
 
-No se especifican en el material proporcionado el tipo exacto de red (por ejemplo, transformer de difusión), el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO u otros ajustes por preferencias. Tampoco se documenta ninguna técnica de aceleración de inferencia (decodificación especulativa, atención lineal, destilación de pasos) más allá de la regeneración a 2K. Para esta republicación concreta, se desconoce qué cambios introducen los sufijos `LightX8` y `Fused`, así como si los pesos han sido podados, fusionados o reempaquetados respecto al checkpoint original.
+El modelo acepta contextos multimodales de texto, imagen, video y audio. En la variante Base-FL2VA admite cero, una o dos imagenes de entrada (texto-a-video, primer o ultimo fotograma, y primer y ultimo fotograma). En la variante Base-Ref2VA admite hasta 9 imagenes, hasta 3 clips de video de 2 a 15 segundos, hasta 3 clips de audio de 2 a 15 segundos y un maximo de 12 archivos combinados. La salida es video a 24 FPS con audio estereo a 32 kHz, con relaciones de aspecto que incluyen 21:9, 16:9, 4:3, 1:1, 3:4 y 9:16, y lado corto de 768 pixeles por defecto.
+
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO. Tampoco se detalla la innovacion tecnica asociada al sufijo "LightX8-Fused" de esta variante concreta.
 
 ## Capacidades
 
-- Generación de vídeo condicionada por múltiples modalidades: texto a vídeo, imagen a vídeo, imagen+texto a vídeo, vídeo a vídeo, audio a vídeo y combinaciones con audio (texto/imagen/vídeo a audio-vídeo).
-- Generación conjunta de audio y vídeo sincronizados, con salida de audio estéreo a 32 kHz.
-- Modo de primer y último fotograma: admite cero, una o dos imágenes de entrada. Sin imagen funciona como texto a vídeo; con una imagen genera desde el primer o el último fotograma; con dos, interpola el tramo completo entre ambos.
-- Modo de referencia omni-modal: hasta 9 imágenes, hasta 3 clips de vídeo de 2–15 segundos cada uno, hasta 3 clips de audio de 2–15 segundos cada uno, con un máximo de 12 ficheros combinados entre todos los tipos.
-- Control de formato de salida: relaciones de aspecto 21:9, 16:9, 4:3, 1:1, 3:4, 9:16 y otras; duración de 4 a 15 segundos a 24 FPS.
-- Escalado a 2K mediante el módulo H3-Regenerate-2K, que reutiliza el contexto original para reconstruir detalle.
-- Diálogo hablado en 11 idiomas (árabe, chino, inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso y español), con soporte parcial de otros.
-- Comprensión de instrucciones multimodales complejas como capacidad propia del preentrenamiento.
-- No disponible: soporte de tool calling o function calling, uso como agente, razonamiento multi-paso, generación de código o matemáticas. No hay indicios de que el modelo cubra esas capacidades.
+- Generacion de video a partir de texto, con duraciones de 4 a 15 segundos y relaciones de aspecto multiples.
+- Generacion de video a partir de imagen: primer fotograma, ultimo fotograma y par primer-ultimo fotograma.
+- Generacion conjunta de video y audio sincronizado, con audio estereo nativo a 32 kHz.
+- Generacion condicionada por referencia multimodal: hasta 9 imagenes, 3 clips de video y 3 clips de audio, con un maximo de 12 archivos combinados.
+- Modos video-a-video, video-a-audio-video y audio-a-audio-video, segun las etiquetas del repositorio.
+- Dialogo hablado en 11 idiomas estables (arabe, chino, ingles, frances, aleman, italiano, japones, coreano, portugues, ruso y espanol), con cobertura variable en otros.
+- Salida de alta resolucion mediante el modulo H3-Regenerate-2K, que parte del resultado a 768p y del contexto original.
+- Comprension de instrucciones multimodales complejas mediante H3-Context-IR, que el autor recomienda incorporar al pipeline de generacion.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso orientado a agentes.
 
 ## Casos de uso
 
-- Publicidad y contenido de marca: generar piezas de 4–15 segundos con audio nativo y relación de aspecto adaptable a cada canal (16:9 para televisión o web, 9:16 para redes verticales) sin necesidad de postproducción de sonido.
-- Localización multilingüe de piezas audiovisuales: producir variantes de diálogo en los 11 idiomas con soporte estable partiendo del mismo contexto visual, útil para campañas internacionales.
-- Previsualización de guiones y storyboards: convertir un guion más imágenes de referencia en un animático con sonido, para validar ritmo y puesta en escena antes de rodar.
-- Animación entre fotogramas clave: usar el modo de primer y último fotograma para generar la transición completa entre dos ilustraciones o dos planos fijos, un flujo habitual en animación y en motion graphics.
-- Postproducción sobre material existente: emplear las modalidades vídeo a vídeo y audio a audio-vídeo para reestilizar tomas grabadas o para regenerar la pista de audio sincronizada de un clip.
-- Remasterizado a 2K: aplicar H3-Regenerate-2K sobre material generado a 768p para obtener una versión de mayor resolución conservando el contexto original.
-- Generación de ambientes y efectos de sonido (foley): producir un vídeo acompañado de audio coherente con la acción descrita, útil en prototipado de videojuegos o en demos de producto.
-- Creación de avatares y presentadores sintéticos: con referencias de imagen y audio, generar vídeo con voz en los idiomas soportados para formación interna o comunicación corporativa.
+- Publicidad y contenido para redes sociales: generacion de clips verticales de 9:16 de 4 a 15 segundos con audio estereo sincronizado, utiles para anuncios cortos sin necesidad de rodaje.
+- Prototipado de storyboards animados: a partir de un primer y un ultimo fotograma se puede generar la transicion intermedia, lo que permite validar secuencias y ritmo antes de producir.
+- Doblaje y localizacion audiovisual: el soporte estable de dialogo en 11 idiomas, incluido el espanol, permite generar variantes de un mismo clip con dialogo en distintos idiomas.
+- Postproduccion y retoque de video: los modos video-a-video y video-a-audio-video permiten transformar material existente y anadir o regenerar la pista de audio.
+- Creacion de contenido con referencia de marca: el modo de referencia multimodal admite hasta 9 imagenes y 3 clips de video para mantener coherencia visual entre tomas.
+- Generacion de audio para video sin pista: a partir de un video mudo se puede producir la version con audio sincronizado mediante los modos video-a-audio-video.
+- Iteracion rapida en 768p y refinado a 2K: el flujo H3-Base seguido de H3-Regenerate-2K permite explorar variantes a bajo coste y escalar solo las seleccionadas.
+- Demostraciones y material docente: clips cortos con dialogo multilingue para ejemplos de clase o presentaciones tecnicas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card oficial de H3 describe las especificaciones de entrada y salida, pero no incluye tablas comparativas de métricas como FVD, CLIPScore, VBench ni evaluaciones de calidad de audio. El repositorio `ibyteohdear/MiniMax-H3-LightX8-Fused-fl2v` no aporta ninguna evaluación propia.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para los pesos: 33.122.992.896 parámetros en 16 bits equivalen a unos 66,2 GB solo de pesos, cifra coherente con el tamaño de 66,3 GB del repositorio.
-- VRAM estimada para inferencia completa: por encima de los 80 GB en una única GPU, ya que hay que sumar activaciones, el codificador de texto y los módulos de audio y de regeneración. Las tarjetas que encajan son A100 80 GB, H100 80 GB y H200 141 GB. Esta cifra es una estimación derivada del recuento de parámetros, no un dato publicado por el autor.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en tarjetas de 16–24 GB sin cuantización agresiva, offloading a CPU o ejecución por etapas. No se documentan cuantizaciones oficiales para este repositorio.
-- Despliegue: la librería declarada es `minimax-h3` y el repositorio lleva la etiqueta `diffusers`, por lo que la vía prevista es el pipeline de diffusers. No hay información sobre soporte en vLLM, TGI, llama.cpp, Ollama u otros servidores de inferencia, que además no son los entornos habituales para generación de vídeo por difusión.
-- Latencia y throughput: no disponible. No se publican tiempos de generación por clip ni métricas de rendimiento por GPU.
-- Nota de fecha: la etiqueta de creación del repositorio (2026-09-10) y su actualización (2026-09-10) son los únicos datos temporales disponibles.
+- VRAM estimada para inferencia: no disponible. El repositorio ocupa 66,3 GB en safetensors con 33.122.992.896 parametros, lo que en precision completa (fp16) requeriria del orden de 66 GB solo para los pesos, antes de activaciones y buffers de difusion.
+- GPU recomendadas: no disponibles en la informacion proporcionada. Por volumen de pesos, un despliegue en fp16 exige GPUs de 80 GB (A100, H100) o configuraciones multi-GPU.
+- Compatibilidad con GPU de consumo: no confirmada. No se documentan cuantizaciones (GGUF, fp8, int8) que permitan reducir el modelo por debajo de los 24 GB de una RTX 4090.
+- Opciones de despliegue: la libreria declarada es `minimax-h3` y el repositorio esta etiquetado como `diffusers`; no se detallan integraciones con vLLM, llama.cpp, Ollama o TGI, que ademas no aplican a un modelo de difusion de video.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de terceros comparables en la información proporcionada. Como referencia interna de la propia familia H3, sí se pueden contrastar las variantes documentadas:
+| Modelo | Parametros | Contexto / duracion | Resolucion | Audio nativo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| MiniMax-H3-LightX8-Fused-fl2v (esta ficha) | 33.122.992.896 | 4-15 s de video | 768p, hasta 2K con Regenerate-2K | Si, estereo 32 kHz | minimax-h3-community-license-agreement | Hugging Face, 163 descargas |
+| MiniMaxAI/MiniMax-H3 (oficial) | no disponible | 4-15 s de video | 768p, hasta 2K con Regenerate-2K | Si, estereo 32 kHz | minimax-h3-community-license-agreement | Hugging Face oficial, API y apps Hailuo |
+| Otros modelos de video con audio | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-| Variante | Modo de entrada | Parámetros | Contexto / límites | Licencia |
-|---|---|---|---|---|
-| Este repositorio (LightX8 Fused fl2v) | No documentado por el autor; el sufijo sugiere modo primer/último fotograma | 33,1B (safetensors) | No disponible | minimax-h3-community-license-agreement |
-| H3-Base-FL2VA | Primer y último fotograma (0, 1 o 2 imágenes) | No disponible | 4–15 s de salida, 24 FPS | Licencia de comunidad H3 |
-| H3-Base-Ref2VA | Referencia omni-modal (≤9 imágenes, ≤3 vídeos, ≤3 audios, máximo 12 ficheros) | No disponible | Clips de 2–15 s; total ≤15 s | Licencia de comunidad H3 |
-| H3-Regenerate-2K | Módulo de regeneración sobre la salida de H3-Base más el contexto original | No disponible | Salida a 2K | Licencia de comunidad H3 |
-
-Comparativa con modelos de otras familias (por ejemplo, generadores de vídeo con audio de tamaño similar): no disponible.
+La informacion proporcionada no incluye datos de rendimiento de modelos alternativos, por lo que la comparacion se limita a parametros, resolucion, audio y licencia. No se dispone de cifras de benchmarks para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Repositorio de la comunidad: el autor es `ibyteohdear`, no MiniMax, y no hay documentación sobre qué implican `LightX8` y `Fused`. El nombre podría sugerir una variante aligerada o con módulos fusionados, pero no existe confirmación al respecto.
-- Reputación y adopción nulas: 0 descargas y 0 me gusta en el momento de redactar la ficha, lo que dificulta verificar la integridad y el comportamiento real de los pesos.
-- Licencia restrictiva: se trata de una licencia de comunidad (`minimax-h3-community-license-agreement`), no de una licencia open source permisiva. Es imprescindible revisar el fichero LICENSE antes de cualquier uso comercial; la ficha no puede resumir sus términos porque no se ha proporcionado su contenido.
-- Riesgo de alucinación y de artefactos: como todo modelo generativo, puede producir contenido visual o sonoro incoherente con la instrucción, con artefactos temporales o desajustes entre audio y vídeo. No hay evaluaciones publicadas que cuantifiquen estos fallos.
-- Sesgos: no disponibles de forma explícita. Es previsible que los datos de entrenamiento audiovisual introduzcan sesgos de representación cultural, de género o de idioma, pero la documentación no los describe ni los mide.
-- Límites de duración y resolución: la salida se restringe a clips de 4–15 segundos y a 768p en H3-Base; el 2K exige una segunda etapa de regeneración, con el coste de cómputo añadido que implica.
-- Cobertura de idiomas: solo 11 lenguas tienen soporte estable para diálogo; el resto funciona de forma variable. El material no detalla la calidad por idioma.
-- Ausencia de benchmarks: no hay métricas objetivas de calidad de vídeo, de audio ni de fidelidad a la instrucción para esta publicación.
-- Búsqueda web sin resultados útiles: las consultas realizadas devolvieron únicamente páginas del complemento Ucupaint para Blender, sin relación alguna con este modelo. No se han localizado análisis, discusiones técnicas ni réplicas independientes.
+- Se trata de un repositorio derivado no oficial (autor `ibyteohdear`), no del repositorio oficial de MiniMax; no se documenta que cambios introduce respecto al modelo base.
+- El sufijo "LightX8-Fused" no se explica en la model card, por lo que se desconoce si implica cuantizacion, fusion de modulos o perdida de calidad.
+- La licencia es `minimax-h3-community-license-agreement` (license: other), no una licencia open source estandar; es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial.
+- No se han publicado benchmarks ni evaluaciones de calidad en la informacion disponible.
+- Riesgo de alucinacion visual y de incoherencia temporal en clips largos; no se documentan tasas de fallo.
+- El audio generado puede presentar desincronizacion o artefactos; no se aportan metricas de calidad de audio.
+- El soporte de idiomas se limita a 11 lenguas estables para dialogo; el resto tiene cobertura variable.
+- El modelo base oficial recomienda encarecidamente usar H3-Context-IR o seguir la guia de prompting; omitirlo degrada la calidad de salida.
+- El volumen de pesos (66,3 GB) impide el despliegue en GPUs de consumo sin cuantizacion, que no esta documentada.
+- El numero de descargas (163) y de likes (1) es muy bajo, lo que reduce la evidencia de validacion por la comunidad.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/ibyteohdear/MiniMax-H3-LightX8-Fused-fl2v
-- Modelo oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Licencia del modelo oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
-- Repositorio en GitHub (incluye la carpeta de skills para redacción de prompts): https://github.com/MiniMax-AI/MiniMax-H3
+- Modelo oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Licencia oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Skills de prompting: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills
-- Documentación de la API (global): https://platform.minimax.io/docs/api-reference/video-generation-v2-create
-- Documentación de la API (China): https://platform.minimaxi.com/docs/api-reference/video-generation-v2-create
-- Aplicación web Hailuo AI (global): https://hailuoai.video/tools/minimax-h3
-- Aplicación web Hailuo AI (China): https://hailuoai.com/
-- Aplicación de escritorio (global): https://hub.minimax.io/
-- Aplicación de escritorio (China): https://hub.minimaxi.com/
-- Página oficial de MiniMax: https://www.minimax.io
-- Organización en ModelScope: https://modelscope.cn/organization/minimax
-- Servidor de Discord: https://discord.com/invite/dbMxutw7tP
-- Contacto (WeChat): https://platform.minimaxi.com/docs/faq/contact-us
+- API global: https://platform.minimax.io/docs/api-reference/video-generation-v2-create
+- API China: https://platform.minimaxi.com/docs/api-reference/video-generation-v2-create
+- WebApp global: https://hailuoai.video/tools/minimax-h3
+- WebApp China: https://hailuoai.com/
+- Desktop global: https://hub.minimax.io/
+- Desktop China: https://hub.minimaxi.com/
+- Web oficial: https://www.minimax.io
+- ModelScope: https://modelscope.cn/organization/minimax
+- Discord: https://discord.com/invite/dbMxutw7tP
+- Contacto WeChat: https://platform.minimaxi.com/docs/faq/contact-us

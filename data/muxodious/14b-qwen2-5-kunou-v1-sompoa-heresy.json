@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 173,
+  "downloads_30d": 180,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Sao10K/14B-Qwen2.5-Kunou-v1 · Hugging Face",
-      "url": "https://huggingface.co/Sao10K/14B-Qwen2.5-Kunou-v1",
-      "snippet": "I do not really have anything planned for this model other than it being a generalist, and Roleplay Model? It was just something made and planned in minutes. This is the little sister variant, the small 14B version. Kunou's the name of an OC I worked on for a couple of years, for a... fanfic. mmm ..."
-    },
-    {
-      "title": "14B-Qwen2.5-Kunou-v1 Open-Source Role-Playing Model - Achieve Excellent ...",
-      "url": "https://model.aibase.com/models/details/1944697394050633728",
-      "snippet": "14B-Qwen2.5-Kunou-v1 is a general-purpose role-playing model with a rather casual development plan. It is a small-scale 14B version and uses high-quality and refined datasets, showing quite excellent performance."
-    }
-  ]
+  "sources": []
 }

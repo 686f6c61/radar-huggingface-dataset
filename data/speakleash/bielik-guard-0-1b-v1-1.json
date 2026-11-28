@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "speakleash/Bielik-Guard-0.1B-v1.1",
+  "slug": "speakleash-bielik-guard-0-1b-v1-1",
+  "author": "speakleash",
+  "url": "https://huggingface.co/speakleash/Bielik-Guard-0.1B-v1.1",
+  "created_at": "2026-02-01T12:24:58.000Z",
+  "updated_at": "2026-11-27T22:51:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "pl",
+    "arxiv:2602.07954",
+    "base_model:sdadas/mmlw-roberta-base",
+    "base_model:finetune:sdadas/mmlw-roberta-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 629,
+  "trending_score": 0,
+  "parameters": 124446725,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497811044,
+  "storage_human": "498 MB",
+  "context_length": null,
+  "base_model": "sdadas/mmlw-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

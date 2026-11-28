@@ -31,8 +31,8 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 729,
-  "downloads_30d": 431123,
+  "likes": 730,
+  "downloads_30d": 399402,
   "trending_score": 10,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "LoyalAI/Underdog-Saluki-27B-1.0",
+  "renamed_at": "2026-11-28T02:59:50.654Z",
   "benchmarks": [],
   "sources": []
 }

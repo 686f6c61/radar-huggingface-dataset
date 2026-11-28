@@ -2,49 +2,50 @@
 
 ## Resumen
 
-Heliactis-2-3.7B es un modelo de lenguaje conversacional desarrollado por ApollonLabs, distribuido originalmente en formato Transformers y cuantizado a GGUF por mradermacher. El modelo se presenta como una variante afinada mediante LoRA sobre una base no especificada en la informacion disponible, con enfasis en el idioma griego (etiqueta `greek`) y capacidades bilingues griego-ingles. La ficha corresponde especificamente al repositorio de cuantizaciones GGUF, que facilita su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
+Heliactis-2-3.7B es un modelo de lenguaje conversacional desarrollado por ApollonLabs, distribuido en formato GGUF por el cuantizador mradermacher. El modelo base se presenta como un ajuste fino con fusión de LoRA (tag `lora-merged`) orientado al idioma griego y al inglés, con licencia Apache 2.0. La nomenclatura "3.7B" del nombre no coincide con el recuento real de parametros en safetensors del repositorio, que asciende a 5.058.255.360 parametros (aproximadamente 5.06B), un dato que conviene tener en cuenta al planificar el despliegue.
 
-El modelo declara 5.058.255.360 parametros totales segun los pesos en safetensors, aunque su denominacion comercial lo situa en la categoria de 3.7B. Esta discrepancia puede deberse a la inclusion de capas adicionales, embeddings o componentes auxiliares en el recuento. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que lo hace atractivo para integraciones en producto.
+Esta ficha documenta la version cuantizada publicada por mradermacher, que ofrece un conjunto estatico de cuantizaciones GGUF (desde Q2_K hasta f16) pensadas para ejecucion local con llama.cpp y derivados. El repositorio ocupa 46.0 GB en total, incluyendo todas las variantes de cuantizacion. La model card del cuantizador no aporta informacion sobre arquitectura interna, datos de entrenamiento, contexto maximo ni resultados de benchmarks.
 
-La relevancia actual de este modelo radica en su especializacion en griego, un idioma con cobertura limitada en la mayoria de modelos abiertos, combinada con una huella de memoria reducida (desde 2.2 GB en Q2_K) que permite ejecucion en hardware de consumo. El repositorio GGUF ofrece cuatro cuantizaciones estaticas, aunque no incluye variantes con imatrix o ponderadas.
+La relevancia actual del modelo radica en su enfoque bilingue griego-ingles con licencia permisiva, un nicho poco cubierto por los modelos grandes generalistas. No obstante, la informacion publica disponible es muy limitada: no se detallan capacidades especificas, ventana de contexto ni proceso de entrenamiento, por lo que cualquier evaluacion en produccion debera basarse en pruebas propias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (detalles no disponibles) |
-| Parametros totales | 5.058.255.360 (segun safetensors); denominacion comercial 3.7B |
-| Parametros activos | no disponible (no es MoE segun la informacion) |
+| Arquitectura | no disponible (modelo base: ApollonLabs/Heliactis-2-3.7B, tag `k2-horizon`, `lora-merged`) |
+| Parametros totales | 5.058.255.360 (segun safetensors del repo; el nombre indica 3.7B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q4_K_S, Q8_0, f16 |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estaticas); variantes imatrix en repo `i1-GGUF` |
 | Idiomas soportados | griego (el), ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (original en Transformers/safetensors) |
+| Formato de pesos | GGUF (version cuantizada); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion proporcionada. La etiqueta `lora-merged` indica que el modelo base fue afinado mediante LoRA y posteriormente fusionado, lo que sugiere un proceso de ajuste supervisado o instruccional sobre una base preentrenada. La etiqueta `k2-horizon` aparece en los metadatos sin explicacion adicional, y podria referirse a una configuracion de entrenamiento o a un proyecto interno de ApollonLabs.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base. Los tags del repositorio indican `k2-horizon` y `lora-merged`, lo que sugiere un ajuste fino mediante LoRA posteriormente fusionado en los pesos base, pero no se especifica la arquitectura subyacente (transformer denso, MoE u otra). Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similar.
 
-No se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa o atencion lineal. El proceso de cuantizacion realizado por mradermacher es estatico (sin imatrix), con version de cuantizacion 2 y cuantizacion de tensores de salida activada.
+El trabajo de mradermacher se limita a la conversion y cuantizacion estatica del modelo original a formato GGUF, con soporte para llama.cpp. El autor indica que las cuantizaciones ponderadas/imatrix estan disponibles en un repositorio separado (`mradermacher/Heliactis-2-3.7B-i1-GGUF`), lo que puede ofrecer mejor calidad por bit en tamanos bajos. No se aportan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.) en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto conversacional en griego e ingles, segun los idiomas declarados.
-- Capacidad de mantener dialogos multi-turno (etiqueta `conversational`).
-- Afinado mediante LoRA fusionado, orientado a tareas de instruccion.
-- Compatibilidad con endpoints (etiqueta `endpoints_compatible`), lo que facilita su integracion en servicios de inferencia.
-- No se documentan capacidades de vision, audio, tool calling, agentes ni modo de razonamiento explicito.
-- No se especifica soporte de function calling ni de razonamiento multi-paso.
+- Generacion de texto conversacional en griego e ingles (unico ambito linguistico declarado).
+- Ajuste fino con fusion de LoRA, orientado presumiblemente a tareas conversacionales, aunque no se detallan las tareas concretas.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que facilita su integracion en servicios de inferencia.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades de vision, audio o thinking mode: no disponibles.
+- Capacidades matematicas o de codigo especializadas: no documentadas.
 
 ## Casos de uso
 
-- Atencion al cliente en griego: el modelo puede gestionar conversaciones multi-turno en griego, un idioma con poca cobertura en modelos abiertos, adecuado para negocios que operen en Grecia o Chipre.
-- Traduccion griego-ingles: dado su entrenamiento bilingue, puede emplearse para traduccion asistida en entornos con recursos limitados, aunque sin garantias de calidad sin benchmarks.
-- Asistentes conversacionales embebidos: con cuantizacion Q4_K_S (3.1 GB), puede desplegarse en dispositivos con GPU de consumo para asistentes locales en griego.
-- Prototipado rapido en investigacion: su tamano reducido y licencia Apache 2.0 permiten experimentar con fine-tuning y evaluacion sin costes de licencia.
-- Generacion de contenido en griego: redaccion de textos, resumenes o respuestas en griego para aplicaciones editoriales o educativas.
-- Despliegue en entornos con restricciones de memoria: la cuantizacion Q2_K (2.2 GB) permite ejecucion en CPU o GPUs con poca VRAM para tareas de baja latencia no critica.
-- Integracion en pipelines de CI/CD para pruebas de modelos: su formato GGUF y compatibilidad con llama.cpp facilitan tests automatizados de inferencia.
+- Atencion al cliente en griego: el modelo puede gestionar conversaciones multi-turno en griego e ingles, un par linguistico poco cubierto por modelos generalistas. Adecuado para negocios que operen en Grecia o con comunidad griega, aunque la ventana de contexto no esta documentada y debe validarse.
+- Traduccion griego-ingles y viceversa: el enfoque bilingue declarado lo hace candidato para pipelines de traduccion asistida, con la salvedad de que no se han publicado metricas de calidad.
+- Procesamiento de documentos y correspondencia en griego: resumen o reformulacion de textos administrativos o legales en griego, ejecutable en local por su tamano reducido.
+- Despliegue en local con recursos limitados: las cuantizaciones Q4_K_M (3.3 GB) y Q5_K_M (3.7 GB) permiten ejecucion en GPU de consumo, util para prototipos y entornos con requisitos de privacidad.
+- Chatbot embebido en aplicaciones de escritorio o moviles: el formato GGUF y el tamano contenido facilitan la integracion mediante llama.cpp en dispositivos sin conexion.
+- Investigacion en modelos bilingues de nicho: sirve como base para experimentos de ajuste fino en griego, dado que la licencia Apache 2.0 permite uso comercial y modificacion.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece un espectro amplio de cuantizaciones (Q2_K a f16) para estudiar el impacto de la cuantizacion en la calidad, con la variante imatrix como referencia adicional.
 
 ## Benchmarks y rendimiento
 
@@ -52,39 +53,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2.5-3 GB en Q2_K, 3.5-4 GB en Q4_K_S, 6-7 GB en Q8_0 y 11-12 GB en f16 (incluyendo overhead de contexto y runtime).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 para f16; A100 o H100 no son necesarias dado el tamano.
-- Cabe en GPU de consumo: si, en practicamente cualquier GPU con 4 GB o mas para Q4_K_S; en CPU tambien es viable con Q2_K.
-- Opciones de despliegue: llama.cpp, Ollama (mediante importacion de GGUF), LM Studio, y servidores compatibles con endpoints GGUF. Para el formato original Transformers, vLLM o TGI si se dispone de los pesos safetensors.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 2.2 GB (Q2_K), 3.1-3.3 GB (Q4_K_S/Q4_K_M), 3.7 GB (Q5_K_S/Q5_K_M), 4.3 GB (Q6_K), 5.5 GB (Q8_0) y 10.2 GB (f16), segun los tamanos de archivo publicados.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para cuantizaciones Q4; 8 GB o mas para Q8_0; 12-16 GB para f16. En el segmento profesional, A100, H100 o L40S permiten servir multiples instancias o contextos largos.
+- Compatibilidad con GPU de consumo: si, cabe en RTX 3060 (12 GB), RTX 4060 Ti (8-16 GB), RTX 4070/4080 y RTX 4090 (24 GB) con todas las cuantizaciones, incluyendo f16.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers con aceleracion CUDA. vLLM y TGI no estan confirmados para este modelo concreto.
+- Latencia y throughput estimados: no disponibles; dependen del hardware y de la cuantizacion elegida.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| Heliactis-2-3.7B | 5.06B (nominal 3.7B) | no disponible | el, en | Apache 2.0 | GGUF, safetensors |
-| Llama 3.2 3B | 3.2B | 128K | multilingue | Llama 3.2 Community | GGUF, safetensors |
-| Qwen2.5 3B | 3.1B | 32K | multilingue (incl. griego limitado) | Apache 2.0 | GGUF, safetensors |
-| Gemma 2 2B | 2.6B | 8K | multilingue | Gemma Terms | GGUF, safetensors |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Heliactis-2-3.7B (este) | 5.06B (real) | no disponible | el, en | Apache 2.0 | GGUF, safetensors | Enfoque bilingue griego-ingles |
+| Qwen2.5-3B | 3.1B | 32K (128K en variantes) | multilingue (incluye griego) | Apache 2.0 | safetensors, GGUF | Referencia generalista de tamano similar |
+| Llama 3.2 3B | 3.2B | 128K | multilingue | Llama 3.2 Community License | safetensors, GGUF | Amplia adopcion; licencia no Apache |
+| Gemma 2 2B | 2.6B | 8K | multilingue | Gemma Terms | safetensors, GGUF | Alternativa ligera de Google |
 
-La comparativa es orientativa: no se dispone de benchmarks de Heliactis-2-3.7B para contrastar rendimiento real frente a estas alternativas. Su ventaja principal es la especializacion en griego y la licencia Apache 2.0, mientras que Llama 3.2 y Qwen2.5 ofrecen contextos mas largos y cobertura multilingue mas amplia.
+La comparativa es orientativa: no se dispone de benchmarks de Heliactis-2-3.7B que permitan contrastar calidad con los modelos citados. La ventaja principal de Heliactis es su licencia Apache 2.0 combinada con soporte declarado de griego, frente a licencias mas restrictivas como las de Llama o Gemma.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de sesgo, toxicidad o alucinacion; se desconoce su comportamiento en dominios sensibles.
-- El riesgo de alucinacion es inherente a modelos de este tamano y no ha sido cuantificado.
-- La longitud de contexto no esta documentada, lo que impide planificar su uso en tareas de contexto largo.
-- Cobertura limitada a griego e ingles; no se garantiza un rendimiento aceptable en castellano u otros idiomas.
-- Las cuantizaciones son estaticas (sin imatrix), por lo que las variantes de baja precision (Q2_K) pueden degradar la calidad mas que cuantizaciones ponderadas equivalentes.
-- Aunque la licencia Apache 2.0 permite uso comercial, el modelo base original (ApollonLabs/Heliactis-2-3.7B) deberia verificarse por si tuviera terminos adicionales no reflejados en esta ficha.
-- El recuento de parametros (5.06B) difiere de la denominacion comercial (3.7B); conviene validar el consumo real de memoria antes de desplegar en produccion.
-- No hay informacion sobre tool calling ni soporte de agentes, por lo que no es adecuado para pipelines que requieran function calling sin validacion previa.
+- Informacion publica muy escasa: no se documentan arquitectura, contexto, datos de entrenamiento ni benchmarks, lo que impide evaluar su calidad de forma objetiva.
+- Discrepancia de parametros: el nombre indica 3.7B pero safetensors registra 5.06B; conviene verificar el recuento real antes de dimensionar el hardware.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay evaluaciones publicadas que lo cuantifiquen.
+- Sesgos conocidos: no documentados; el entrenamiento bilingue griego-ingles puede limitar su rendimiento fuera de esos idiomas.
+- Limitaciones de contexto e idioma: solo se declaran griego e ingles; la longitud de contexto no esta disponible y debe probarse empiricamente.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo base es de ApollonLabs y no se detallan obligaciones adicionales de atribucion mas alla de las de la propia licencia.
+- Cuantizaciones bajas (Q2_K, Q3_K_S): degradan la calidad; para produccion se recomienda Q4_K_M o superior, o las variantes imatrix.
+- Repositorio de 46 GB: descargar el conjunto completo es costoso; conviene bajar solo la cuantizacion necesaria.
+- Sin garantias de soporte: el cuantizador es un tercero y el modelo base no parece tener mantenimiento activo documentado.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Heliactis-2-3.7B-GGUF
 - Modelo base: https://huggingface.co/ApollonLabs/Heliactis-2-3.7B
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Heliactis-2-3.7B-i1-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Heliactis-2-3.7B-GGUF
-- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

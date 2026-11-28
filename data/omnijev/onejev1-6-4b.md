@@ -2,123 +2,105 @@
 
 ## Resumen
 
-OneJev1.6-4B es un modelo multimodal de decisión de 4.539 millones de parámetros (4,5B) desarrollado por OmniJev, presentado como un "System One decision model". No es un modelo generativo conversacional al uso: recibe una captura de pantalla, una fotografía, un vídeo o texto plano junto con un conjunto de preguntas tipadas, y devuelve en un único forward pass una probabilidad calibrada para cada opción de respuesta. Está construido como un fine-tune completo de Qwen/Qwen3.5-4B sobre aproximadamente 440.000 preguntas extraídas de ejecuciones reales de agentes, vídeos, imágenes y los splits de entrenamiento de conjuntos de datos públicos de decisión.
+OneJev1.6-4B es un modelo multimodal de decisión de tipo "System One" desarrollado por OmniJev. No es un modelo generativo al uso: recibe una captura de pantalla, una foto, un vídeo o texto plano junto con varias preguntas tipadas y devuelve, en un único paso de inferencia (forward pass), una probabilidad calibrada para cada una de las opciones posibles. Está construido como un fine-tune completo de Qwen/Qwen3.5-4B, del que hereda la arquitectura transformer y el tokenizador.
 
-El modelo resuelve un problema concreto en el despliegue de agentes: sustituir la generación autoregresiva de decisiones por una evaluación probabilística directa y calibrada. En lugar de pedir a un LLM que "decida" qué hacer a continuación en formato texto libre, OneJev devuelve distribuciones de probabilidad sobre opciones predefinidas (tipo `choice`), probabilidades de sí/no (tipo `noul`) y niveles esperados en escalas ordinales (tipo `score`). Esto facilita la integración en bucles de agente con umbrales de confianza y políticas de parada basadas en probabilidad.
+El modelo resuelve un problema concreto en el ámbito de los agentes autónomos: en lugar de generar texto libre, proporciona señales de decisión cuantificadas (probabilidad de "sí/no", distribución sobre opciones discretas y puntuaciones esperadas en escalas). Esto lo hace adecuado para controlar agentes de interfaz gráfica (GUI agents), evaluar progreso de tareas y calibrar decisiones en pipelines automatizados.
 
-Su relevancia actual radica en el rendimiento reportado: 62,01 en la parte pública de Decision Index 0.3 (37 benchmarks, 140.178 peticiones), frente a 54,89 de su versión anterior OneJev1.5-4B, superando a modelos de 25B a 36B parámetros en 42 de los 57 casos de esa franja. La licencia Apache 2.0 y el soporte de la herramienta Flide para servir la API System One lo hacen directamente desplegable.
+Con 4.539.265.536 parámetros totales y un tamaño de repositorio de 9,1 GB, se posiciona como una alternativa compacta frente a modelos de decisión de mayor tamaño. Según la model card, obtiene 62,01 en la parte pública de Decision Index 0.3, una mejora respecto a los 54,89 de la versión 1.5, y supera a 42 de los 57 modelos de 25B a 36B parámetros del citado tablero.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (fine-tune de Qwen/Qwen3.5-4B), pipeline image-text-to-text |
-| Parámetros totales | 4.539.265.536 (4,5B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer multimodal (fine-tune completo de Qwen/Qwen3.5-4B) |
+| Parametros totales | 4.539.265.536 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible (pesos en safetensors; no se documentan GGUF ni otras) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Tamaño del repositorio | 9,1 GB |
-| Modelo base | Qwen/Qwen3.5-4B |
-| Biblioteca | transformers |
-| Fecha de creación | 2026-10-16 |
-| Última actualización | 2026-11-10 |
-| Descargas | 2.211 |
-| Likes | 8 |
 
 ## Arquitectura y entrenamiento
 
-OneJev1.6-4B es un fine-tune completo (full fine-tune) de Qwen/Qwen3.5-4B, un transformer multimodal con capacidad de procesamiento de imagen y texto. El modelo conserva la arquitectura del base y añade una cabeza de decisión que, en un único forward pass, produce salidas tipadas: probabilidades sobre opciones discretas (`choice`), probabilidad de sí/no (`noul`) y valor esperado en escalas ordinales (`score`). El pipeline declarado es `image-text-to-text` y acepta además vídeo a través del campo `media` de la API.
+OneJev1.6-4B es un fine-tune completo (full fine-tune) del modelo Qwen/Qwen3.5-4B, por lo que conserva la arquitectura transformer multimodal del modelo base, con capacidad de procesar entradas de imagen, vídeo y texto. El pipeline declarado en Hugging Face es `image-text-to-text`. La innovación principal no reside en la arquitectura del backbone, sino en la formulación de la tarea: el modelo se entrena para emitir probabilidades calibradas sobre preguntas tipadas (tipo `noul` para sí/no, tipo `choice` para elección entre opciones con criterios y tipo `score` para escalas graduadas) en un solo forward pass.
 
-El entrenamiento se realizó sobre aproximadamente 440.000 preguntas provenientes de ejecuciones reales de agentes, vídeos, imágenes y los splits de entrenamiento de conjuntos de datos públicos de decisión. No se documentan en la información disponible el número de tokens, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La innovación técnica principal es el enfoque "System One": en lugar de razonamiento multi-paso autoregresivo, el modelo emite una evaluación calibrada inmediata, lo que reduce latencia y permite umbrales de confianza explícitos en bucles de agente.
+El entrenamiento se realizó sobre aproximadamente 440.000 preguntas extraídas de ejecuciones reales de agentes, vídeos, imágenes y los splits de entrenamiento de conjuntos de datos públicos de decisión. La model card no detalla el número total de tokens, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El sistema de servicio asociado, Flide, implementa la System One API de TypeSafe con un campo adicional `media` para imágenes y vídeo, y está documentado en el paper arXiv:2610.42148.
 
 ## Capacidades
 
-- Decisión multimodal calibrada: devuelve probabilidades por opción en un solo forward pass a partir de imagen, vídeo o texto.
-- Preguntas tipadas: soporta `choice` (probabilidades por opción), `noul` (probabilidad de sí/no) y `score` (nivel esperado en escala ordinal).
-- Procesamiento de capturas de pantalla y GUI: orientado a agentes que operan interfaces gráficas.
-- Procesamiento de vídeo: acepta vídeo como entrada mediante el campo `media`.
-- Procesamiento de imagen y fotografía: pipeline image-text-to-text.
-- Procesamiento de texto plano: admite estado textual sin medio asociado.
-- Integración con API System One (TypeSafe) a través de Flide, con extensión `media` para imagen y vídeo.
-- No se documentan en la información disponible capacidades de tool calling, function calling, agentes multi-paso generativos, thinking mode, audio ni multilingüismo explícito.
+- Decisión multimodal: procesa capturas de pantalla, fotos, vídeos y texto plano como estado de entrada.
+- Salida de probabilidades calibradas: devuelve una probabilidad por opción en lugar de texto generado.
+- Preguntas tipadas: soporta preguntas de tipo `noul` (probabilidad de sí), `choice` (distribución sobre opciones con criterios) y `score` (nivel esperado en una escala).
+- Evaluación de progreso de tareas: puede estimar en qué punto de una tarea se encuentra un agente.
+- Soporte para agentes GUI: orientado a decidir la siguiente acción (clic, escritura, scroll, parada) sobre una interfaz.
+- Procesamiento de vídeo: acepta vídeo como modalidad de entrada además de imagen y texto.
+- Integración con API: compatible con endpoints mediante Flide y la System One API.
 
 ## Casos de uso
 
-- Agentes de automatización de GUI: el modelo recibe la captura de pantalla y la tarea ("pagar la factura de ACME") y devuelve la probabilidad de cada acción siguiente (click, escribir, scroll, parar), permitiendo al agente elegir la acción con mayor confianza o detenerse si ninguna supera un umbral.
-- Detección de finalización de tareas: mediante preguntas `noul` ("la factura ha sido pagada"), el modelo aporta una probabilidad de sí/no que el orquestador puede usar como condición de parada del bucle de agente.
-- Estimación de progreso: con preguntas `score` sobre una escala ordinal ("no iniciado", "a medias", "casi hecho", "hecho"), devuelve el nivel esperado, útil para monitorización y para decidir si continuar o escalar a un humano.
-- Enrutado y triaje de decisiones en pipelines: dado un estado textual o visual, calcular probabilidades sobre opciones discretas permite clasificar y derivar peticiones con umbrales de confianza explícitos en lugar de parsear texto generado.
-- Evaluación de políticas de agente en vídeo: al aceptar vídeo, puede puntuar decisiones a partir de grabaciones de sesiones, útil para auditoría y evaluación offline de agentes.
-- Verificación de estados visuales en CI de agentes: integrar el modelo en pruebas automatizadas que comprueben, con probabilidad calibrada, si una interfaz ha alcanzado el estado esperado tras una secuencia de acciones.
-- Sustitución de llamadas generativas en bucles de decisión de baja latencia: al resolver la decisión en un solo forward pass de un modelo de 4,5B, reduce el coste frente a modelos generativos mayores en tareas de elección acotada.
+- Control de agentes de interfaz gráfica: dado un screenshot del estado actual y la tarea pendiente, el modelo devuelve la probabilidad de cada acción posible (clic, escribir, scroll, parar), lo que permite seleccionar la acción más probable con un umbral de confianza configurable.
+- Automatización de flujos de pago o facturación: con la tarea "pagar la factura abierta de ACME" y una captura de pantalla, el modelo estima la probabilidad de que la tarea esté completada y el progreso alcanzado, útil para verificar pasos críticos antes de confirmar operaciones.
+- Verificación de finalización de tareas: la pregunta de tipo `noul` permite comprobar de forma probabilística si una condición se ha cumplido, integrándose en bucles de agente como criterio de parada.
+- Evaluación de progreso en pipelines multi-paso: la pregunta de tipo `score` devuelve el nivel esperado dentro de una escala definida, lo que facilita la monitorización de tareas largas y la detección de bloqueos.
+- Análisis de vídeo para decisión: al aceptar vídeo como entrada, puede emplearse para evaluar estados dinámicos y decidir la siguiente acción en entornos donde una sola imagen no captura el contexto.
+- Enrutamiento y triaje con calibración: al devolver distribuciones de probabilidad sobre opciones discretas, puede usarse como componente de decisión en sistemas de clasificación o enrutamiento donde se requiere una medida de confianza explícita en lugar de una etiqueta generada.
+- Evaluación comparativa de agentes: sirve como juez probabilístico en la evaluación de trayectorias de agentes, puntuando el progreso y la finalización de tareas de forma reproducible.
 
 ## Benchmarks y rendimiento
 
-Resultados en la parte pública de Decision Index 0.3 (37 benchmarks, 140.178 peticiones, evaluados con el kit del propio board). Comparativa con los modelos de 3B a 6B con mayor puntuación del board:
+La model card incluye resultados en la parte pública de Decision Index 0.3 (37 benchmarks, 140.178 peticiones, ejecutados y puntuados con el kit del propio tablero). Los datos disponibles son los siguientes:
 
-| Modelo | Puntuación global |
-|---|---|
-| OneJev1.6-4B | 62,01 |
-| Perplexity Decider Flash v1.2 (4B) | 60,06 |
-| CoCo-Decision-4B 2.3.0 | 55,38 |
-| vLLM-SR d3-mini (4B) | 54,90 |
-| RSI-Jev v6.1 VL 4B | 50,98 |
-
-Comparativa con modelos de mayor tamaño (28B a 35B):
-
-| Modelo | Parámetros | Puntuación |
+| Modelo | Parametros | Decision Index (parte publica) |
 |---|---|---|
-| OneJev1.6-4B | 4,5B | 62,0 |
-| Cloudflare clef | no disponible | 61,7 |
-| Nace.AI Drex v2.0 | no disponible | 61,2 |
-| Quyet-1.0 Large | no disponible | 60,8 |
-| MORJ 1.0.1 | no disponible | 60,2 |
-| Sieve 27B | 27B | 60,0 |
-| AnyJev L0 | 28B–35B | 59,8 |
+| OneJev1.6-4B | 4,5B | 62,01 |
+| Perplexity Decider Flash v1.2 | 4B | 60,06 |
+| CoCo-Decision-4B 2.3.0 | 4B | 55,38 |
+| vLLM-SR d3-mini | 4B | 54,90 |
+| RSI-Jev v6.1 VL | 4B | 50,98 |
+| OneJev1.5-4B | 4B | 54,89 |
 
-El modelo supera a 42 de los 57 modelos de 25B a 36B parámetros del board. Las puntuaciones de los demás modelos corresponden a la parte pública del board a 16 de octubre de 2026.
-
-Resultados adicionales (precisión en porcentaje) frente a Jev 1.13, Jev-Omni 12B y Qwen3.8-27B thinking: la información disponible referencia una tabla en imagen (`assets/results.svg`) sin valores numéricos textuales, por lo que los datos concretos de esa comparativa no están disponibles.
+Según la model card, OneJev1.6-4B obtiene la mejor puntuación en cuatro de las cinco áreas entre los cinco modelos comparados y la segunda mejor en Comprensión del Lenguaje. Asimismo, supera a 42 de los 57 modelos de 25B a 36B parámetros del tablero. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 4.539 millones de parámetros en safetensors y un repositorio de 9,1 GB, la inferencia en precisión completa requiere del orden de 9–10 GB de VRAM solo para pesos, más memoria para activaciones y el codificador visual.
-- GPU recomendadas: no disponibles en la información proporcionada.
-- Compatibilidad con GPU de consumo: no confirmada en la información disponible; por tamaño de pesos, sería viable en GPUs de consumo con 12–16 GB o más, pero no se documenta oficialmente.
-- Opciones de despliegue: Flide (`flide serve --model OmniJev/OneJev1.6-4B`), que sirve la API System One de TypeSafe más un campo `media` para imagen y vídeo. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: el repositorio ocupa 9,1 GB en safetensors, por lo que en precisión completa (fp16/bf16) se requiere aproximadamente 9-10 GB de VRAM solo para pesos, más memoria para activaciones y contexto. No se dispone de datos oficiales de cuantización.
+- GPU recomendadas: no disponible en la información proporcionada; por tamaño, una GPU con 16 GB o más (por ejemplo, RTX 4090, A100, H100) sería suficiente para inferencia en bf16, aunque no hay confirmación oficial.
+- GPU de consumo: cabe en GPUs de consumo con 16 GB o más de VRAM en bf16; en GPUs de 8-12 GB requeriría cuantización, cuyos formatos no están documentados.
+- Opciones de despliegue: Flide (`flide serve --model OmniJev/OneJev1.6-4B`), que expone la System One API con campo `media`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Decision Index 0.3 (parte pública) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Decision Index (parte publica) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OneJev1.6-4B | 4,5B | no disponible | 62,01 | Apache 2.0 | Hugging Face, Flide |
+| OneJev1.6-4B | 4,5B | no disponible | 62,01 | Apache 2.0 | Hugging Face |
 | Perplexity Decider Flash v1.2 | 4B | no disponible | 60,06 | no disponible | no disponible |
 | CoCo-Decision-4B 2.3.0 | 4B | no disponible | 55,38 | no disponible | no disponible |
-| RSI-Jev v6.1 VL 4B | 4B | no disponible | 50,98 | no disponible | no disponible |
+| vLLM-SR d3-mini | 4B | no disponible | 54,90 | no disponible | no disponible |
+| RSI-Jev v6.1 VL | 4B | no disponible | 50,98 | no disponible | no disponible |
+
+Los cuatro modelos comparables son, según la model card, los de mayor puntuación del tablero en el rango de 3B a 6B parámetros. No se dispone de datos de contexto, licencia ni disponibilidad de los modelos alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de decisión, no generativo: no está diseñado para generar texto libre ni para razonamiento multi-paso; su salida son probabilidades sobre preguntas predefinidas.
-- Sesgos conocidos: no documentados en la información disponible; al entrenarse sobre ejecuciones reales de agentes y datasets públicos, puede heredar sesgos de esos datos.
-- Riesgo de alucinación: la calibración reportada es agregada en el board; no se documentan garantías de calibración por dominio ni por tipo de tarea.
-- Idiomas: no se especifican los idiomas soportados; no debe asumirse cobertura multilingüe.
-- Contexto: la longitud de contexto no está documentada, lo que impide planificar tareas con estados textuales o visuales extensos.
-- Licencia: Apache 2.0 permite uso comercial, pero debe verificarse la licencia del modelo base Qwen/Qwen3.5-4B y de los datasets de entrenamiento.
-- Dependencia de herramienta: el quick start oficial usa Flide; no se documentan alternativas de despliegue estándar como vLLM o llama.cpp.
-- Benchmarks: las puntuaciones provienen de un board propio (Decision Index 0.3) y de la parte pública; no hay resultados en benchmarks estándar como MMLU o HumanEval.
+- El modelo está diseñado para emitir probabilidades de decisión, no para generación de texto libre; usarlo como modelo conversacional general no es su propósito.
+- Riesgo de calibración deficiente fuera de la distribución de entrenamiento: las probabilidades pueden no ser fiables ante estados, tareas o interfaces no representadas en los datos de entrenamiento (ejecuciones reales de agentes, vídeos, imágenes y datasets públicos de decisión).
+- No se documentan los idiomas soportados, por lo que no puede garantizarse un rendimiento multilingüe más allá del que herede del modelo base Qwen/Qwen3.5-4B.
+- No se especifica la longitud de contexto soportada, lo que limita la planificación de casos de uso con estados muy largos o vídeos extensos.
+- No se detallan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
+- Los resultados de Decision Index corresponden a la parte pública del tablero y a la fecha del 16 de octubre de 2026; las comparaciones con otros modelos pueden variar con actualizaciones del tablero.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen/Qwen3.5-4B puede tener condiciones adicionales que conviene verificar antes de desplegar en producción.
+- El despliegue documentado depende de Flide; no se confirman otros runners, lo que puede limitar la portabilidad.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev1.6-4B
+- Hugging Face: https://huggingface.co/OmniJev/OneJev1.6-4B
 - Organización en Hugging Face: https://huggingface.co/OmniJev
 - Repositorio GitHub: https://github.com/OmniJev/OneJev
-- Sitio web: https://omnijev.github.io/OneJev/
-- Licencia: https://github.com/OmniJev/OneJev/blob/main/LICENSE
-- Herramienta Flide: https://github.com/OmniJev/Flide
+- Sitio web del proyecto: https://omnijev.github.io/OneJev/
 - Paper de Flide: https://arxiv.org/abs/2610.42148
-- Decision Index 0.3 (parte pública): https://huggingface.co/spaces/multimodalart/jev-decision-index
+- Repositorio de Flide: https://github.com/OmniJev/Flide
+- Decision Index 0.3 (Space): https://huggingface.co/spaces/multimodalart/jev-decision-index
+- Licencia: https://github.com/OmniJev/OneJev/blob/main/LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

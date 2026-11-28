@@ -23,9 +23,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 113,
+  "likes": 114,
   "downloads_30d": 22131,
-  "trending_score": 33.5,
+  "trending_score": 34,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 33090792548,
@@ -42,5 +42,16 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "New Minimax-H3-Turbo-Fusion LoRA by LightX2V : r/StableDiffusion",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1y52zdp/new_minimaxh3turbofusion_lora_by_lightx2v/",
+      "snippet": "vor 3 Tagen ... New Minimax-H3-Turbo-Fusion LoRA by LightX2V ... Motivated by Pika's Flex Turbo LoRA release, we combine our latest LightX2V Ref2VA distillation ..."
+    },
+    {
+      "title": "Hugging Models on X: \"Meet MiniMax-H3-Turbo-Fusion",
+      "url": "https://x.com/HuggingModels/status/2125712136387301555",
+      "snippet": "vor 2 Tagen ... Meet MiniMax-H3-Turbo-Fusion: a single-file diffusion model for video and audio-video generation. Built on MiniMax-H3 with LoRA fusion, ..."
+    }
+  ]
 }

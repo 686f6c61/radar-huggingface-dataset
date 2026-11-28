@@ -2,105 +2,108 @@
 
 ## Resumen
 
-Inkling-2-Mini-MLX-8bit es una cuantización en 8 bits para MLX del modelo multimodal thinkingmachines/Inkling-2-Mini, publicada por el usuario ddalcu. El modelo base es un transformer de tipo mezcla de expertos (MoE) con capacidad de entrada de imagen y texto, con 26.400 millones de parámetros totales y 3.400 millones activos por token. Esta versión concreta está empaquetada en el formato de mlx-lm y pensada para ejecutarse en Apple Silicon mediante la herramienta mlx-serve.
+Inkling 2 Mini MLX 8-bit es una cuantización para Apple Silicon del modelo multimodal Inkling 2 Mini, desarrollado originalmente por Thinking Machines. Se trata de un transformer de tipo mixture-of-experts (MoE) con arquitectura de decodificación especulativa integrada, que procesa tanto texto como imágenes (pipeline image-text-to-text). El pack lo publica ddalcu dentro del ecosistema mlx-serve y mlx-lm, y está pensado para ejecución local en Macs con chip de la serie M.
 
-La relevancia de este paquete es que reduce el peso del modelo de los aproximadamente 50 GB en bf16 del release original a 18,7 GB, manteniendo una calidad prácticamente idéntica: la divergencia KL media frente al release es de 0,0040 sobre 7.318 posiciones de 8 ficheros reservados, con un 97,2 % de coincidencia en top-1 y una perplejidad de 6,149 frente a 6,147 del original. Esto lo convierte en una opción viable para ejecutar un MoE multimodal de 26,4B en equipos de consumo con memoria unificada.
+El modelo base declara 26.400 millones de parámetros totales con 3.400 millones activos por token, lo que lo sitúa en la categoría de MoE de tamaño medio con coste de inferencia contenido. Esta versión concreta ocupa 19,7 GB en disco y cuantiza a 8 bits afines (grupo 64) las capas de atención, embedding y cabeza, mientras conserva intactos los bytes originales de los expertos (NVFP4 en capas 0-19 y MXFP8 en 20-23) y la torre de visión en bf16.
 
-El paquete conserva los expertos en sus bytes originales (NVFP4 en las capas 0-19 y MXFP8 en las 20-23), mientras que atención, embedding y cabeza se cuantizan a 8 bits afín con grupo de 64, la torre de visión permanece en bf16 y se incluye la cabeza de borrador (mtp.safetensors, 0,64 GB) para decodificación especulativa.
+Su relevancia práctica radica en que permite servir un modelo multimodal MoE de 26B en hardware de consumo Apple con velocidades de decodificación de 84 a 118 tokens por segundo en chips M4 Max y M5 Ultra, manteniendo una calidad prácticamente idéntica a la release original (KLD medio de 0,0040 y 97,2% de acuerdo top-1). Incorpora además dos cabezas de borrador para decodificación especulativa: una integrada (`mtp.safetensors`) y otra externa DFlash2.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE multimodal (image-text-to-text), layout mlx-lm |
-| Parametros totales | 6.896.142.848 (según safetensors del paquete); el modelo base declara 26,4B totales |
-| Parametros activos | 3,4B (modelo base) |
+| Arquitectura | Transformer MoE multimodal (texto + imagen), con decodificación especulativa |
+| Parametros totales | 26,4 mil millones (modelo base); 6.896.142.848 en el checkpoint safetensors de esta cuantización |
+| Parametros activos | 3,4 mil millones |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 8-bit afín grupo 64 (atención, embedding, cabeza); expertos en NVFP4 (capas 0-19) y MXFP8 (capas 20-23); torre de visión en bf16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (MLX), más mtp.safetensors para la cabeza de borrador |
+| Formato de pesos | safetensors (librería mlx) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos con capacidades multimodales (entrada de texto e imagen) y una torre de visión dedicada. Esta versión no reentrena ni modifica el modelo: es una conversión de pesos al layout de mlx-lm. Los expertos se conservan en sus formatos de cuantización originales (NVFP4 en las capas 0-19, MXFP8 en las 20-23), lo que preserva el comportamiento del release en esas capas. Las partes que el release almacena en bf16 (atención, embedding y cabeza) se cuantizan a 8 bits afín con grupo de 64, y la torre de visión se mantiene en bf16.
+El modelo base es un transformer de mezcla de expertos (MoE) con capacidades multimodales de entrada imagen-texto. Esta cuantización preserva la estructura MoE original: los pesos de los expertos se mantienen en sus formatos de baja precisión nativos (NVFP4 para las capas 0-19 y MXFP8 para las 20-23), mientras que las partes sensibles a la precisión (atención, embedding y cabeza de salida) se convierten a 8 bits afines con grupo de 64. La torre de visión se conserva en bf16. El pack incluye dos mecanismos de decodificación especulativa: una cabeza de borrador empaquetada (`mtp.safetensors`, 0,64 GB) y un modelo borrador DFlash2 externo (`drafter/`, 0,99 GB) que propone bloques de tokens que el modelo principal verifica.
 
-La innovación técnica del paquete es doble. Por un lado, la cuantización selectiva: solo se comprimen las capas que más pesan en lectura por token (atención y cabeza se leen completas en cada token, y el paso a 8 bits reduce a la mitad esos bytes), lo que según el autor aporta aproximadamente un 15 % más de velocidad de decodificación frente al release servido tal cual. Por otro lado, se incluye la cabeza de borrador `mtp.safetensors` (0,64 GB) que habilita decodificación especulativa en mlx-serve sobre M3 y posteriores. No se dispone de información sobre el dataset de entrenamiento, número de tokens, ni si hubo RLHF o DPO en el modelo base.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base. La innovación técnica destacable de este pack es la estrategia de cuantización selectiva: mantener los expertos en sus formatos nativos y cuantizar solo atención y cabeza, lo que produce una degradación mínima (KLD 0,0040 frente a la release, considerado el ruido de medida) y una mejora de velocidad de aproximadamente el 15% en decodificación, ya que los bytes de atención y cabeza en bf16 se leen completos en cada token y el 8-bit los reduce a la mitad.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato multi-turno.
-- Comprensión de imágenes combinada con texto (pipeline image-text-to-text).
-- Razonamiento y generación de código y matemáticas, heredados del modelo base (sin datos de benchmark en la información disponible).
-- Decodificación especulativa mediante la cabeza de borrador incluida, con aceleración de decodificación en mlx-serve sobre M3 y posteriores.
-- Ejecución local en Apple Silicon con memoria unificada mediante mlx-serve y mlx-lm.
-- Soporte de tool calling y comportamiento agéntico: no disponible en la información proporcionada.
+- Generación de texto conversacional multi-turno.
+- Procesamiento de imágenes como entrada (pipeline image-text-to-text): descripción, respuesta a preguntas visuales y razonamiento sobre contenido gráfico.
+- Razonamiento y generación de código, heredados del modelo base (no se detallan métricas específicas).
+- Decodificación especulativa con dos opciones de borrador: cabeza integrada `mtp.safetensors` y modelo DFlash2 externo para propuestas por bloques.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Asistente conversacional local en Mac: el paquete se ejecuta con `mlx-serve --model ddalcu/Inkling-2-Mini-MLX-8bit --serve` y permite mantener un asistente multi-turno en un equipo de sobremesa con memoria unificada, sin depender de la nube.
-- Análisis de imágenes en local: al ser un modelo image-text-to-text, sirve para describir capturas, extraer información de documentos escaneados o responder preguntas sobre imágenes sin enviar datos a terceros, algo relevante para flujos con material sensible.
-- Prototipado de agentes multimodales: la inclusión de la cabeza de borrador y el soporte de mlx-serve facilitan iterar sobre pipelines que combinan entrada visual y texto con latencias de decodificación de 84-118 tok/s en M4 Max y M5 Ultra.
-- Evaluación de modelos MoE en hardware de consumo: con 18,7 GB de peso, un M1 Pro de 32 GB puede cargarlo y decodificar a 28 tok/s, lo que permite estudiar el comportamiento de un MoE de 26,4B sin acceso a GPUs de datacenter.
-- Generación de código asistida en el editor: el modelo base declara capacidades de código; el paquete permite integrarlo en un servidor local compatible con la API de mlx-serve para autocompletado y explicación de fragmentos.
-- Investigación en cuantización: el paquete documenta métricas de fidelidad (KLD 0,0040, top-1 97,2 %, perplejidad 6,149) que lo convierten en una referencia reproducible para comparar estrategias de cuantización selectiva sobre MoE.
+- Asistente conversacional local en Mac: el modelo puede mantener conversaciones multi-turno en local con decodificación de 84 a 118 tok/s en chips M4 Max y M5 Ultra, adecuado para prototipado y uso personal sin depender de la nube.
+- Análisis de imágenes en escritorio: al aceptar entrada image-text-to-text, sirve para describir capturas, extraer información de diagramas o responder preguntas sobre documentos escaneados dentro de una aplicación macOS nativa.
+- Desarrollo y pruebas de pipelines multimodales: investigadores pueden validar flujos image-text-to-text en Apple Silicon antes de desplegar en infraestructura mayor, gracias a la paridad de calidad con la release (97,2% de acuerdo top-1).
+- Servicio de inferencia local con mlx-serve: el comando `mlx-serve --model ddalcu/Inkling-2-Mini-MLX-8bit --serve` levanta un endpoint compatible para integrarse en herramientas de desarrollo o demos internas.
+- Evaluación de decodificación especulativa: el pack incluye dos cabezas de borrador (integrada y DFlash2) que permiten comparar estrategias de speculative decoding en hardware Apple, con soporte para una o varias conversaciones simultáneas.
+- Prototipado de asistentes con razonamiento sobre imágenes: combinación de entrada visual y generación de texto para casos como accesibilidad (descripción de imágenes) o soporte técnico guiado por capturas.
+- Investigación sobre cuantización selectiva: el pack sirve como referencia reproducible de cómo mantener expertos MoE en formatos nativos y cuantizar solo atención y cabeza sin pérdida medible de calidad.
 
 ## Benchmarks y rendimiento
 
-Calidad frente al release original (teacher-forced top-20, 8 ficheros reservados, 7.318 posiciones):
+Calidad frente a la release original (teacher-forced top-20, 8 archivos reservados, 7.318 posiciones):
 
-| Metrica | Release | Este paquete |
-|---|---|---|
-| KLD media | – | 0,0040 |
-| Coincidencia top-1 | – | 97,2 % |
-| Perplejidad | 6,147 | 6,149 |
+| Modelo | KLD medio | Acuerdo top-1 | Perplexidad |
+|---|---|---|---|
+| Release original | – | – | 6,147 |
+| Este pack (MLX 8-bit) | 0,0040 | 97,2% | 6,149 |
 
-El autor indica que 0,0040 está en el suelo de ruido de la medición (dos cálculos exactos del mismo paquete difieren entre 0,0037 y 0,0042). Además, sobre 3.995 posiciones, mlx-serve y mlx-lm coinciden en este paquete con KLD 0,0030 y top-1 del 97,9 %.
+El valor 0,0040 se sitúa en el ruido de medida del propio test (dos cálculos exactos del mismo pack difieren entre 0,0037 y 0,0042). El pack también carga en mlx-lm #2086, con concordancia frente a mlx-serve de KLD 0,0030 y top-1 del 97,9% sobre 3.995 posiciones.
 
 Velocidad con mlx-serve (llmprobe 0.6.18, greedy, decodificación de 192 tokens):
 
-| Equipo | Decodificacion | Decodificacion con borrador | Procesamiento de prompt |
+| Mac | Decodificación | Decodificación con borrador | Procesamiento de prompt |
 |---|---|---|---|
 | M5 Ultra | 118 tok/s | hasta 155 tok/s | 4.900 tok/s |
 | M4 Max | 84 tok/s | hasta 96 tok/s | 1.010 tok/s |
 | M1 Pro 32 GB | 28 tok/s | – | 190 tok/s |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Frente a la release servida tal cual, este pack decodifica aproximadamente un 15% más rápido con la misma calidad.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada: el paquete ocupa 18,7 GB en disco; en ejecución necesita al menos esa cantidad más el overhead de mlx-serve y del contexto, por lo que se recomienda un equipo con 24-32 GB de memoria unificada como mínimo.
-- GPU recomendadas: Apple Silicon. Los datos del autor cubren M5 Ultra, M4 Max y M1 Pro de 32 GB. No hay datos para GPUs NVIDIA (A100, H100, RTX 4090) porque el formato MLX está orientado a Apple Silicon.
-- Cabe en GPU de consumo: sí, en Mac con memoria unificada suficiente (M1 Pro 32 GB funciona a 28 tok/s). No aplica a GPUs de consumo discretas al no ser un formato GGUF/CUDA.
-- Opciones de despliegue: mlx-serve (recomendado por el autor, con soporte de decodificación especulativa) y mlx-lm (PR #2086). No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: 118 tok/s (M5 Ultra), 84 tok/s (M4 Max) y 28 tok/s (M1 Pro 32 GB) en decodificación greedy; con borrador sube a 155 y 96 tok/s respectivamente. Procesamiento de prompt de 4.900, 1.010 y 190 tok/s.
+- VRAM/espacio: el repo ocupa 19,7 GB; se necesita al menos esa cantidad de memoria unificada disponible para cargar los pesos, más margen para el contexto y la torre de visión.
+- Hardware objetivo: Apple Silicon con MLX. Probado en M5 Ultra, M4 Max y M1 Pro de 32 GB.
+- Cabe en GPU de consumo Apple: sí, en configuraciones con memoria unificada suficiente (M1 Pro 32 GB funciona a 28 tok/s).
+- GPU NVIDIA: no disponible; el pack está en formato MLX y no se documenta soporte para CUDA.
+- Opciones de despliegue: mlx-serve (recomendado, con soporte de decodificación especulativa y DFlash2) y mlx-lm (#2086). No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 118 tok/s (M5 Ultra), 84 tok/s (M4 Max), 28 tok/s (M1 Pro 32 GB) en decodificación; procesamiento de prompt de 4.900 tok/s, 1.010 tok/s y 190 tok/s respectivamente; hasta 155 tok/s y 96 tok/s con borrador en M5 Ultra y M4 Max.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| ddalcu/Inkling-2-Mini-MLX-8bit | 6.896M en safetensors (26,4B totales, 3,4B activos) | no disponible | MLX safetensors, 8-bit | Apache 2.0 | Hugging Face, 3.784 descargas |
-| thinkingmachines/Inkling-2-Mini (release) | 26,4B totales, 3,4B activos | no disponible | bf16 (formato original) | Apache 2.0 | Hugging Face |
-| Versiones GGUF de la misma familia | no disponible | no disponible | GGUF | Apache 2.0 | no disponible en la información |
+| Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Inkling 2 Mini MLX 8-bit (este pack) | 26,4B | 3,4B | no disponible | Apache 2.0 | safetensors MLX | Multimodal, decodificación especulativa, optimizado para Apple Silicon |
+| thinkingmachines/Inkling-2-Mini (release) | 26,4B | 3,4B | no disponible | Apache 2.0 | bf16 | Referencia de calidad; ~15% más lento en decodificación según el autor del pack |
+| incoai/Inkling-2-Mini-DFlash2 | no disponible | no disponible | no disponible | Apache 2.0 | safetensors bf16 | Modelo borrador para decodificación especulativa, no es un LM autónomo |
 
-La comparación directa más relevante es con el release original: este paquete reduce el peso de ~50 GB a 18,7 GB, mantiene la calidad dentro del ruido de medición y decodifica aproximadamente un 15 % más rápido en mlx-serve. No se dispone de datos de otros modelos comparables de la misma categoría en la información proporcionada.
+No se dispone de información sobre otros modelos comparables de la misma categoría (MoE multimodal de ~26B) en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es una cuantización, no un modelo nuevo: cualquier sesgo o alucinación del modelo base se hereda. No se dispone de información sobre sesgos conocidos del modelo base.
-- La cuantización a 8 bits de atención, embedding y cabeza introduce una divergencia pequeña pero no nula (KLD 0,0040, top-1 97,2 %); en tareas sensibles a la fidelidad exacta conviene validar contra el release.
-- Solo funciona en el ecosistema MLX (Apple Silicon). No hay pesos GGUF ni CUDA en este repositorio, lo que limita su despliegue en servidores con GPUs NVIDIA.
-- Longitud de contexto e idiomas soportados no están documentados en la información disponible; no se puede garantizar un rendimiento multilingüe concreto.
-- El paquete requiere mlx-serve o mlx-lm #2086; versiones anteriores de mlx-lm pueden no cargarlo.
-- La decodificación especulativa con la cabeza de borrador solo está disponible en M3 y posteriores según el autor.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base thinkingmachines/Inkling-2-Mini, también Apache 2.0 según los metadatos.
-- El repositorio es una conversión de terceros (ddalcu), no una publicación oficial de Thinking Machines; para producción conviene fijar la revisión concreta del paquete.
+- El pack está diseñado exclusivamente para MLX y Apple Silicon; no es portable a CUDA ni a otros runtimes sin conversión adicional.
+- La información sobre sesgos, idiomas soportados y comportamiento multilingüe del modelo base no está disponible en la documentación proporcionada.
+- Riesgo de alucinación: inherente a los modelos generativos; no se documentan evaluaciones específicas de factualidad en esta ficha.
+- Longitud de contexto no documentada; no se puede garantizar el comportamiento en conversaciones o documentos largos.
+- El modelo borrador DFlash2 no es un modelo de lenguaje autónomo: solo propone tokens que el modelo principal verifica, por lo que no debe desplegarse de forma independiente.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base original (thinkingmachines/Inkling-2-Mini) y de la release de la que deriva.
+- El rendimiento medido corresponde a versiones concretas de mlx-serve y mlx-lm; versiones anteriores rechazan la carpeta `drafter/` por nombre y sirven el pack con la cabeza integrada.
+- La cuantización selectiva asume que los expertos en NVFP4/MXFP8 son aceptables tal cual; cambios en el hardware o en el runtime pueden alterar la paridad de calidad reportada.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/ddalcu/Inkling-2-Mini-MLX-8bit
+- Hugging Face (este pack): https://huggingface.co/ddalcu/Inkling-2-Mini-MLX-8bit
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Herramienta mlx-serve: https://github.com/ddalcu/mlx-serve/releases
+- Modelo borrador DFlash2: https://huggingface.co/incoai/Inkling-2-Mini-DFlash2
+- mlx-serve (repositorio y descargas): https://github.com/ddalcu/mlx-serve/releases
+- Pull request de soporte DFlash2 en mlx-serve: https://github.com/ddalcu/mlx-serve/pull/1331
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- mlx-lm (PR #2086): no disponible como enlace directo en la información proporcionada

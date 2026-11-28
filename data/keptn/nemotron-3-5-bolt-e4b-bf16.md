@@ -2,146 +2,113 @@
 
 ## Resumen
 
-`keptn/nemotron-3.5-bolt-e4b-bf16` no es un modelo entrenado desde cero, sino un reempaquetado de los pesos de `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16`. El autor (keptn) ha consolidado el checkpoint bf16 de NVIDIA, su torre de visión y el cabezal de decodificación especulativa DFlash en un único fichero de 16,44 GiB en formato `.rad`, consumible por el motor de inferencia radiance sobre GPUs AMD RDNA4 con ROCm.
+Nemotron 3.5 Bolt E4B es un modelo multimodal de NVIDIA, derivado mediante post-entrenamiento de Gemma 4 E4B (Apache 2.0) y distribuido originalmente en formato BF16. La versión aquí descrita es un empaquetado de terceros publicado por el usuario `keptn` bajo el identificador `keptn/nemotron-3.5-bolt-e4b-bf16`, pensado específicamente para el motor de inferencia radiance sobre GPUs AMD RDNA4. Incluye los pesos BF16 originales de NVIDIA junto con el drafter DFlash de decodificación especulativa, la torre de visión y el codificador de audio.
 
-El interés práctico está en que permite ejecutar un modelo multimodal de la familia Nemotron 3.5 Bolt (nomenclatura E4B, con torre de visión y modo de razonamiento activable por petición) en una sola tarjeta AMD de 32 GB, con 65.536 tokens de contexto y capacidad de mantener 8 secuencias a longitud completa. El autor reporta una divergencia KL de 0,0015 frente al original en wikitext-2 y 154,9 tok/s combinados en un solo stream.
+El modelo resuelve el problema de ejecutar un modelo multimodal (texto, imagen y audio) con contexto largo en hardware AMD consumer y profesional, un ecosistema tradicionalmente menos cubierto por los stacks de inferencia dominantes. Con 65.536 tokens de contexto, capacidades de razonamiento con modo thinking opcional y decodificación especulativa integrada, apunta a cargas de trabajo de agentes, análisis de documentos y asistentes multimodales en producción.
 
-La relevancia es doble: por un lado, abre el modelo a hardware AMD fuera del ecosistema CUDA; por otro, demuestra una ruta de cuantización/packaging conservadora (bf16 en pesos y activaciones, FP8 solo en el drafter y opcionalmente en la caché KV) con métricas de fidelidad publicadas. La licencia es openmdw-1.1, etiquetada como "other" en Hugging Face, y el repositorio no declara idiomas soportados.
+La relevancia actual radica en tres factores: la licencia OpenMDW 1.1, la disponibilidad de un artefacto único de 17,03 GiB que cabe en una GPU de 32 GB, y la integración nativa de speculative decoding con el drafter DFlash de 5 capas cuantizado a int8, que eleva el throughput de decodificación a 161,9 tokens por segundo en una Radeon AI PRO R9700.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (pipeline `image-text-to-text`) con torre de visión y decodificación especulativa DFlash; el motor radiance la registra con la forma "Gemma 4 E2B/E4B". Detalle de capas y atención no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (la nomenclatura E4B sugiere ~4B efectivos; no confirmado en la información) |
+| Arquitectura | Transformer multimodal (derivado de Gemma 4 E4B), con torre de visión, codificador de audio y drafter DFlash de 5 capas para decodificación especulativa |
+| Parámetros totales | no disponible |
+| Parámetros activos | no disponible (no se especifica que sea MoE) |
 | Longitud de contexto | 65.536 tokens |
-| Tipos de cuantizacion | Pesos bf16 sin cuantizar; activaciones bf16; `lm_head` bf16 (atado a la tabla de tokens); caché KV en bf16 o fp8; drafter DFlash en FP8 con una escala bf16 por bloque de 128×128 |
+| Tipos de cuantización | BF16 para pesos, activaciones y `lm_head`; drafter en int8 con una escala f16 por cada 128 pesos |
 | Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 (campo `license: other` en Hugging Face) |
-| Formato de pesos | `.rad` (radiance), fichero único `nemotron-3.5-bolt-e4b-bf16.rad` de 16,44 GiB; tamaño del repo 17,7 GB |
-| Version del paquete | 1.0 (2026-10-24) |
-| Motor requerido | radiance 1.11.0 + PR #210 (build desde fuente) |
-| Modelos base | `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16`, `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash` |
+| Licencia | OpenMDW License Agreement 1.1 |
+| Formato de pesos | `.rad` (formato propietario del motor radiance), 17,03 GiB; el modelo base original se distribuye en BF16 (safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El paquete conserva los pesos tal y como los distribuye NVIDIA en bf16, con las activaciones y el `lm_head` también en bf16 (este último atado a la tabla de tokens). Incorpora la torre de visión original en bf16, residente en memoria de host fijada (pinned), y el drafter DFlash de NVIDIA con 5 capas en FP8, una escala bf16 por bloque de 128×128 y 7 tokens de borrador por paso. El drafter se entrenó con bloques de 8, de ahí que se ejecute a 7. El muestreo recomendado es el de NVIDIA: temperatura 1,0, top_p 0,95 y top_k 64, idéntico en ambos modos de razonamiento.
+El modelo base es NVIDIA Nemotron 3.5 Bolt E4B, un post-entrenamiento sobre Gemma 4 E4B de Google. La arquitectura combina un transformer de lenguaje con una torre de visión y un codificador de audio, lo que permite entrada image-text-to-text y procesamiento de audio en el mismo pipeline. El checkpoint incluye además el drafter DFlash de NVIDIA, una red de 5 capas entrenada para proponer bloques de tokens en decodificación especulativa; en esta versión 2.0 del empaquetado el drafter está cuantizado a int8 con una escala f16 por cada 128 pesos, y opera con 7 tokens de borrador (fue entrenado sobre bloques de 8).
 
-No hay información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; este repositorio no reentrena ni afina nada, solo reempaqueta. La innovación técnica reseñable es la integración de decodificación especulativa con un drafter cuantizado a FP8 y verificación contra pesos bf16, más la posibilidad de alternar la caché KV a fp8 para duplicar la capacidad de secuencias a costa de fidelidad (KL 0,0137 frente a 0,0015). El modo de razonamiento (`enable_thinking`) se controla por petición mediante `chat_template_kwargs`, y está desactivado por defecto como en la plantilla de NVIDIA.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en la información proporcionada. La model card sí documenta la plantilla de chat de NVIDIA con modo thinking desactivado por defecto y parámetros de muestreo recomendados (temperatura 1.0, top_p 0.95, top_k 64). La innovación técnica destacable es la integración del drafter DFlash dentro del artefacto único, lo que permite decodificación especulativa sin un segundo modelo separado y con una pérdida de calidad medida muy baja respecto al original BF16 (KL media de 0,00028 y 99,5 % de coincidencia en el token top-1).
 
 ## Capacidades
 
-- Generación de texto en modo directo y en modo razonamiento (thinking), conmutables por petición.
-- Razonamiento matemático de varios pasos: 82,3 % en GSM8K 5-shot sin thinking y 89,6 % con thinking.
-- Generación y razonamiento sobre código: LiveCodeBench v6 con 46,3 % (off) y 55,4 % (on) de pass@1 sobre 175 tareas.
-- Seguimiento estricto de instrucciones: 87,1 % (off) y 91,5 % (on) en IFEval strict.
-- Comprensión de imágenes en peticiones de chat mediante `image_url`, usando la torre de visión bf16 del checkpoint: 79,8 ANLS en DocVQA lite y 74,6 % en AI2D lite.
-- Contexto largo de 65.536 tokens, con 8 secuencias simultáneas a longitud completa en una sola tarjeta.
-- Decodificación especulativa con DFlash, con mayor ganancia en código y JSON (4,1 a 4,7 tokens por paso) que en prosa (2,0).
-- Soporte de tool calling / function calling: no disponible en la información.
-- Soporte de agentes y razonamiento multi-paso orquestado: no disponible en la información (solo se documenta el modo thinking).
-- Capacidades multilingües: no disponible.
+- Generación de texto y razonamiento, con modo thinking opcional activable por petición mediante `chat_template_kwargs`.
+- Procesamiento de imágenes: la model card reporta evaluación sobre DocVQA y AI2D con 19 de 20 respuestas idénticas al original BF16.
+- Procesamiento de audio: transcripción y comprensión, con una tasa de error de palabra de 6,37 % en LibriSpeech test-clean, idéntica al modelo original en transformers.
+- Decodificación especulativa integrada mediante el drafter DFlash de NVIDIA, configurable con `num-speculative-tokens`.
+- Soporte de contexto largo de 65.536 tokens, con 8 sesiones simultáneas a longitud completa en una sola tarjeta según el informe de arranque de radiance.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Soporte de tool calling y function calling: no documentado en la información disponible.
+- Capacidades de agente y razonamiento multi-paso: no documentadas explícitamente, aunque el modo thinking y el contexto largo son compatibles con estos flujos.
 
 ## Casos de uso
 
-- Generación de código en producción: con 167,4 tok/s en código y 4,1–4,7 tokens por paso del drafter, es adecuado para autocompletado y generación de parches dentro de pipelines de CI/CD, aceptando un techo de 46–55 % de pass@1 en LiveCodeBench v6 (más bajo en tareas difíciles: 15/80 sin thinking, 22/80 con thinking).
-- Extracción y serialización a JSON: con 241,6 tok/s en JSON es el régimen más rápido medido, lo que lo hace idóneo para convertir texto libre o documentos en estructuras tipadas dentro de un ETL.
-- Atención al cliente multi-turno: 65.536 tokens de contexto y 8 secuencias concurrentes en una tarjeta permiten mantener historiales largos de varias conversaciones a la vez sin truncar.
-- Document QA y digitalización: la torre de visión (79,8 ANLS en DocVQA lite) permite responder preguntas sobre facturas, formularios o escaneos directamente desde la API de chat.
-- Resumen de documentos largos: 137,5 tok/s en summarization y prefill de 6.665 tok/s a 24k tokens y 5.581 tok/s a 47k hacen viable resumir actas o informes de decenas de miles de tokens en una sola pasada.
-- Razonamiento matemático por lotes: con thinking desactivado y salidas cortas (el benchmark corta a 256 tokens) se obtiene 82,3 %; activando thinking y hasta 8.192 tokens de salida se sube a 89,6 %, útil para validación de cálculos en backoffice.
-- Despliegue on-premise sobre AMD: al requerir solo una tarjeta RDNA4 de 32 GB y ROCm, encaja en infraestructura AMD ya existente sin depender de CUDA.
-- Educación técnica sobre diagramas e imágenes: AI2D lite al 74,6 % permite responder preguntas sobre esquemas científicos en herramientas de estudio.
+- Análisis de documentos técnicos y financieros: con 65.536 tokens de contexto y torre de visión, el modelo puede procesar informes completos con tablas y figuras en una sola pasada, manteniendo coherencia entre páginas.
+- Transcripción y análisis de reuniones: el codificador de audio permite transcribir clips con una WER del 6,37 % en condiciones limpias y generar resúmenes o actas estructuradas en el mismo pipeline.
+- Asistentes multimodales en hardware AMD: al ejecutarse en radiance sobre RDNA4, encaja en estaciones de trabajo con Radeon AI PRO R9700 donde no hay acceso a CUDA, cubriendo un nicho de despliegue desatendido por otros stacks.
+- Atención al cliente con contexto largo: 8 sesiones simultáneas a longitud completa y 524.304 tokens de caché KV en una tarjeta permiten gestionar conversaciones multi-turno extensas con historial completo.
+- Generación asistida en entornos de documentación: la baja divergencia respecto al BF16 original (ratio de perplejidad ×1,001) lo hace adecuado para tareas de redacción donde la fidelidad al modelo de referencia es crítica.
+- Servicio de inferencia de alto throughput: con 161,9 tokens/s en decodificación de un solo stream y 268 tokens/s agregados en 4 streams, es viable para APIs internas de generación con latencia interactiva.
+- Procesamiento por lotes de imágenes y audio: la evaluación sobre DocVQA, AI2D y LibriSpeech confirma que las modalidades no textuales mantienen la calidad del original, lo que permite pipelines de extracción de datos a escala.
 
 ## Benchmarks y rendimiento
 
-Calidad frente al checkpoint original (divergencia KL en wikitext-2 test, 100 fragmentos de 512 tokens, 25.500 tokens puntuados, referencia en HF transformers con matemática fp32, perplejidad de referencia 117,18):
+La model card no incluye resultados de benchmarks académicos estándar (MMLU, HumanEval, GSM8K). Sí reporta métricas de fidelidad respecto al original BF16 y de velocidad de inferencia:
 
-| Configuracion | KL media | KL mediana | Percentil 99 | Mismo token top | Perplejidad |
-|---|---|---|---|---|---|
-| Este fichero, KV bf16 | 0,0015 | 0,00023 | 0,014 | 98,8 % | 117,56 |
-| Este fichero, KV fp8 | 0,0137 | 0,0021 | 0,18 | 96,3 % | 117,19 |
+| Métrica | Este archivo | Versión 1.1 | `-a4` | `-i8g` |
+|---|---|---|---|---|
+| KL media (MT-Bench, 42.283 tokens) | 0,00028 | 0,00028 | 0,0537 | 0,00275 |
+| KL percentil 99 | 0,0035 | 0,00351 | 0,705 | 0,036 |
+| Coincidencia token top-1 | 99,5 % | 99,5 % | 93,6 % | 98,4 % |
+| Ratio de perplejidad | ×1,001 | ×1,001 | ×0,994 | ×1,000 |
 
-Referencia de escala: HF transformers con matemática bf16 presenta KL 0,0012 frente a la misma referencia.
+| Modalidad | Casos | Respuestas idénticas | KL media | Coincidencia top-1 |
+|---|---|---|---|---|
+| Imágenes (DocVQA + AI2D) | 20 | 19/20 | 0,00761 | 69/70 |
+| Audio (LibriSpeech test-clean) | 12 | 12/12 | 0,00034 | 347/347 |
 
-Benchmarks de tarea (greedy; comparar con otras tarjetas usando la columna sin thinking):
-
-| Benchmark | Thinking off | Thinking on |
+| Rendimiento (R9700, 215 W, bf16 KV, 7 draft tokens, thinking off) | 1 tarjeta | 2 tarjetas |
 |---|---|---|
-| GSM8K (matemáticas, 5-shot) | 82,3 % | 89,6 % |
-| IFEval (instrucciones, strict) | 87,1 % | 91,5 % |
-| LiveCodeBench v6 (175 tareas, pass@1) | 46,3 % | 55,4 % |
-| LiveCodeBench v6, fácil | 40/43 | 43/43 |
-| LiveCodeBench v6, medio | 26/52 | 32/52 |
-| LiveCodeBench v6, difícil | 15/80 | 22/80 |
-
-Benchmarks de visión (lmms-eval 0.7.3, LMMs-Eval-Lite, greedy, thinking off):
-
-| Benchmark | Resultado |
-|---|---|
-| DocVQA val lite (500 preguntas) | 79,8 (ANLS) |
-| AI2D lite (500 preguntas) | 74,6 % |
-
-Rendimiento en decodificación (BetterBench 0.6.1, 8 categorías, 20 ejecuciones tras 3 de calentamiento, temperatura 0,7, un stream, Radeon AI PRO R9700 a 215 W):
-
-| Metrica | 1 tarjeta |
-|---|---|
-| Combinado | 154,9 tok/s |
-| Prosa | 77,3 tok/s |
-| Código | 167,4 tok/s |
-| JSON | 241,6 tok/s |
-| Resumen | 137,5 tok/s |
-| Prefill a 24k tokens | 6.665 tok/s |
-| Prefill a 47k tokens | 5.581 tok/s |
-| 4 streams (total) | 262 tok/s |
-| 8 streams (total) | 303 tok/s |
+| Decodificación, un stream | 161,9 tok/s | 261,6 tok/s |
+| Prefill a 24k tokens | 6.918 tok/s | 5.006 tok/s |
+| 4 streams, total | 268 tok/s | 435 tok/s |
 
 ## Requisitos de hardware
 
-- VRAM: una GPU AMD RDNA4 con 32 GB. Configuración probada: Radeon AI PRO R9700 a 215 W.
-- Memoria de host: 7 GiB libres como mínimo; la torre de visión bf16 se coloca en memoria fijada (`--vision-tower-placement ram`).
-- Fichero de pesos: 16,44 GiB en formato `.rad` (repo de 17,7 GB).
-- Caché KV a 65.536 tokens, bf16: 2 secuencias = 131.072 tokens, 4 secuencias = 262.160, 8 secuencias = 524.304. Con conmutador `--kv-cache-dtype fp8` se reduce a la mitad, a costa de KL 0,0137 (la tabla de memoria fp8 aparece truncada en la información disponible).
-- GPU de consumo: no documentado. El requisito de 32 GB de VRAM en RDNA4 deja fuera las tarjetas consumer habituales de 16–24 GB; no se confirma compatibilidad con ninguna.
-- Software: ROCm, Docker, radiance 1.11.0 con el PR #210 aplicado (compilación desde la rama `gemma4-e4b` del fork de keptn42). Flags relevantes: `--max-model-len 65536 --max-num-seqs 8 --num-speculative-tokens 7 --mm-max-patches 2520`.
-- Throughput medido: 154,9 tok/s combinado con un stream, 262 tok/s con 4 y 303 tok/s con 8; prefill de 6.665 tok/s a 24k y 5.581 tok/s a 47k.
-- Otras opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no documentadas para este fichero, que es específico del motor radiance.
-- Reducciones disponibles: `--num-speculative-tokens 0` desactiva el drafter; `--mm-max-patches 0` desactiva la visión.
+- VRAM: el artefacto pesa 17,03 GiB; con caché KV bf16 a 65.536 tokens y 8 secuencias, radiance reserva 18,24 GiB de KV en una tarjeta, por lo que se necesita una GPU de 32 GB.
+- GPU recomendada y probada: Radeon AI PRO R9700 (RDNA4). También admite configuración multi-tarjeta con `tp: 2` o `tp: 4` y `p2p: on`.
+- Memoria de host: 8 GiB libres adicionales, con la torre de visión colocada en RAM (`vision-tower-placement: ram`).
+- GPU consumer: no se documenta compatibilidad con GPUs consumer de menos VRAM; el requisito de 32 GB excluye la mayoría de tarjetas de consumo actuales.
+- Despliegue: exclusivamente mediante el motor radiance (versión 2.0.0 o superior), distribuido como imagen Docker `stilldeadcode/radiance:2.0.0`. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 161,9 tok/s en decodificación de un stream en una tarjeta; 6.918 tok/s de prefill a 24k tokens. En dos tarjetas, 261,6 tok/s de decodificación y 435 tok/s agregados en 4 streams. La configuración de cuatro tarjetas no está medida en radiance 2.0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / motor | Licencia | Datos de rendimiento |
+| Modelo | Formato | Contexto | Licencia | Hardware objetivo | Notas |
 |---|---|---|---|---|---|
-| Este fichero (keptn, bf16, `.rad`) | no disponible (E4B) | 65.536 | `.rad` / radiance sobre AMD RDNA4 | openmdw-1.1 | GSM8K 82,3/89,6; IFEval 87,1/91,5; LCB v6 46,3/55,4; 154,9 tok/s |
-| `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16` (original) | no disponible (E4B) | no disponible en la información | safetensors bf16 / HF transformers | openmdw-1.1 | Solo dato de referencia: KL 0,0012 y perplejidad 117,18 |
-| `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash` | no disponible | no disponible en la información | no disponible | openmdw-1.1 | no disponible |
-| Otros modelos multimodales de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| `keptn/nemotron-3.5-bolt-e4b-bf16` | `.rad` (BF16 + drafter int8) | 65.536 | OpenMDW 1.1 | AMD RDNA4, 32 GB | Artefacto único con visión y audio; motor radiance |
+| `keptn/nemotron-3.5-bolt-e4b-i8g` | `.rad` (int8 grupo) | no disponible | OpenMDW 1.1 | AMD RDNA4 | Menor huella, KL media 0,00275, 98,4 % top-1 |
+| `keptn/nemotron-3.5-bolt-e4b-a4` | `.rad` (4 bits) | no disponible | OpenMDW 1.1 | AMD RDNA4 | Máxima compresión, KL media 0,0537, 93,6 % top-1 |
+| `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16` | safetensors BF16 | 65.536 | OpenMDW 1.1 | NVIDIA GPU (transformers) | Original de referencia; requiere stack CUDA |
 
-El único comparable con cifras utilizables en la información es el checkpoint original de NVIDIA, del que este fichero se desvía con KL 0,0015 (98,8 % de coincidencia en el token top) y una perplejidad de 117,56 frente a 117,18. No se han publicado en la información datos de modelos de otras familias que permitan una comparación homogénea.
+No se dispone de comparación con modelos de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo nuevo ni afinado: es un reempaquetado de pesos de NVIDIA; cualquier limitación del checkpoint original se hereda intacta.
-- Licencia `openmdw-1.1`, etiquetada como `other` en Hugging Face: hay que revisar el fichero LICENSE del repositorio antes de cualquier uso comercial; la información disponible no detalla condiciones de redistribución.
-- Idiomas soportados no declarados: no hay garantía documentada de calidad fuera del inglés, idioma en el que están escritos la model card y los benchmarks.
-- Dependencia de un PR no fusionado (#210) y de compilar radiance desde una rama: riesgo operativo alto para producción; no hay release estable que lo incluya.
-- Requisito de 32 GB de VRAM en AMD RDNA4: no se documenta funcionamiento en GPUs de consumo ni en hardware NVIDIA.
-- La caché KV en fp8 duplica la capacidad pero degrada la fidelidad (KL 0,0137 frente a 0,0015; coincidencia del token top 96,3 % frente a 98,8 %).
-- El drafter se ejecuta a 7 tokens pese a haberse entrenado con bloques de 8; desviarse de esa configuración no está validado.
-- Sesgos conocidos: no disponible. Riesgo de alucinación: no cuantificado en la información; los benchmarks publicados son de precisión, no de veracidad.
-- Razonamiento en código difícil limitado: 15/80 sin thinking y 22/80 con thinking en LiveCodeBench v6 hard.
-- Varias respuestas de los benchmarks se truncan por límite de tokens y se contabilizan como erróneas (137 en GSM8K, 5 en IFEval y 5 en LiveCodeBench con thinking off; 1 en IFEval con thinking on), lo que introduce un sesgo a la baja en las cifras.
-- Evaluación de visión reducida a dos benchmarks "lite" de 500 preguntas cada uno.
-- Repositorio de terceros con 0 descargas y 0 likes en el momento del análisis: no es una publicación oficial de NVIDIA y no ha pasado una revisión independiente.
-- Tool calling, agentes y razonamiento multi-paso orquestado no están documentados; no deben asumirse en diseño de producto.
+- El artefacto está atado al motor radiance 2.0.0 o superior y al formato `.rad`; no es cargable directamente en transformers, vLLM ni llama.cpp.
+- El requisito de 32 GB de VRAM limita el despliegue a GPUs profesionales o de gama alta; no hay evidencia de funcionamiento en GPUs consumer.
+- La configuración de cuatro tarjetas no está medida en radiance 2.0, por lo que su comportamiento en producción es desconocido.
+- La model card advierte de que NVIDIA lista únicamente texto como entrada del modelo; la torre de visión y el codificador de audio provienen del checkpoint, no de una validación oficial de NVIDIA para esas modalidades.
+- El drafter solo funciona a 7 tokens de borrador porque fue entrenado sobre bloques de 8; desviarse de ese valor puede degradar la tasa de aceptación.
+- El modo thinking está desactivado por defecto; activarlo por petición puede alterar latencia y consumo de tokens.
+- No se documentan sesgos conocidos, riesgos de alucinación específicos ni limitaciones idiomáticas en la información disponible.
+- La licencia OpenMDW 1.1 es distinta de Apache 2.0 del modelo Gemma subyacente; deben revisarse sus términos para uso comercial.
+- La calidad medida se evalúa contra el original BF16 en transformers con aritmética fp32; diferencias en el stack de referencia pueden alterar las métricas reportadas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-bf16
-- Modelo base bf16 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
-- Variante con drafter DFlash: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash
-- Motor radiance: https://codeberg.org/StillDeadcode/radiance
-- PR #210 de radiance (forma Gemma 4 E2B/E4B): https://codeberg.org/StillDeadcode/radiance/pulls/210
-- Rama de compilación del fork del autor: https://codeberg.org/keptn42/radiance (rama `gemma4-e4b`)
-- Licencia del repositorio: https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-bf16/blob/main/LICENSE
+- [keptn/nemotron-3.5-bolt-e4b-bf16 en Hugging Face](https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-bf16)
+- [nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16)
+- [keptn/nemotron-3.5-bolt-e4b-a4](https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-a4)
+- [keptn/nemotron-3.5-bolt-e4b-i8g](https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-i8g)
+- [Motor radiance (StillDeadcode, Codeberg)](https://codeberg.org/StillDeadcode/radiance)
+- [Guía Docker de radiance](https://codeberg.org/StillDeadcode/radiance/src/branch/main/docs/DOCKER.md#run-it)
+- [Dataset MT-Bench](https://huggingface.co/datasets/lmsys/mt_bench_human_judgments)
+- [Dataset LibriSpeech](https://huggingface.co/datasets/openslr/librispeech_asr)

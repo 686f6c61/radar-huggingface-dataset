@@ -1,81 +1,100 @@
 # gorse-io/clap2-large-audioxl-s1B-GGUF
 
 ## Resumen
-CLAP2 Large AudioXL es un modelo de embeddings conjuntos audio-texto desarrollado originalmente por LAION. Su funcion principal es proyectar fragmentos de audio y descripciones textuales en un mismo espacio vectorial de 960 dimensiones, L2-normalizado, de modo que sea posible comparar directamente la similitud semantica entre un sonido y una frase escrita. No es un modelo generativo: no produce texto ni transcribe audio, sino que extrae representaciones vectoriales reutilizables para tareas de recuperacion, clasificacion zero-shot, indexacion y busqueda multimodal.
 
-Esta ficha cubre la conversion GGUF publicada por gorse-io, pensada especificamente para el runtime clap.cpp y no para llama.cpp. La conversion preserva ambos codificadores (audio y texto) y la configuracion del tokenizador y del frontend de audio dentro de un unico fichero GGUF. El checkpoint base cuenta con aproximadamente 340 millones de parametros y el repositorio ocupa 2,0 GB, lo que lo situa en un rango muy manejable para despliegue en CPU o GPU de gama consumer.
+CLAP2-L es un modelo contrastivo audio-texto desarrollado por LAION dentro de la familia CLAP2, que abarca cinco tamanos (de 27M a 340M parametros). Este repositorio concreto, publicado por gorse-io, contiene los pesos del modelo grande (340,1M parametros sumando ambas torres) en formato GGUF, lo que permite ejecutarlo mediante clap.cpp sin depender del stack completo de PyTorch. El modelo resuelve el problema de alinear representaciones de audio y texto en un espacio comun de embeddings, habilitando tareas de recuperacion audio-texto, clasificacion zero-shot de audio y extraccion de caracteristicas para clasificadores posteriores.
 
-La relevancia actual de esta conversion radica en que permite ejecutar un modelo CLAP2 de referencia sin depender del stack PyTorch original, con un binario C/C++ ligero y soporte nativo de WAV, MP3 y FLAC con remuestreo automatico a 32 kHz. Al ser una conversion reciente con cero descargas y cero likes, debe considerarse una publicacion incipiente cuya validacion se limita a pruebas deterministas de equivalencia con la implementacion oficial, no a benchmarks de calidad de recuperacion.
+La arquitectura combina una torre de audio basada en un vision transformer NaFlex que opera sobre parches de espectrograma log-mel y una torre de texto con tokenizador BPE estilo GPT-2. Frente a CLAP original, la innovacion principal es la capacidad de procesar audio de cualquier duracion sin recorte ni relleno a una longitud fija, generando un unico embedding por clip. El modelo fue entrenado desde cero sobre LAION-Audio-XL, un corpus de 366 millones de pares audio-texto, con 1.024 millones de muestras vistas.
+
+Su relevancia actual radica en que ofrece un rendimiento de referencia en benchmarks de embeddings de audio (53,6% en MAEB-30, 81,9% en HEAR-17) con un coste computacional moderado, y su disponibilidad en GGUF facilita el despliegue en entornos con recursos limitados o sin GPU dedicada, algo poco habitual en modelos contrastivos audio-texto de esta categoria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | CLAP2 (dos codificadores, audio y texto, con proyeccion a espacio conjunto) |
-| Parametros totales | 340.073.857 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F32 y F16 (la cuantizacion por bloques de CLAP2 no esta soportada en esta release) |
-| Idiomas soportados | no disponible (modelo multimodal audio-texto; cobertura linguistica del codificador de texto no declarada) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (ficheros `clap2-large-audioxl-s1B-f32.gguf` y `clap2-large-audioxl-s1B-f16.gguf`) |
+| Arquitectura | Contrastiva audio-texto de dos torres; torre de audio NaFlex vision transformer sobre parches log-mel; torre de texto transformer con BPE estilo GPT-2 |
+| Parametros totales | 340.073.857 (ambas torres) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Audio: cualquier duracion (entrenado hasta 30 s, 50 tokens por segundo); texto: 256 tokens |
+| Tipos de cuantizacion | GGUF (F16 en el ejemplo de la model card); otras cuantizaciones GGUF no especificadas |
+| Idiomas soportados | Ingles (torre de texto); audio independiente del idioma |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (este repositorio); safetensors en el repositorio base |
 
 ## Arquitectura y entrenamiento
-El modelo sigue la arquitectura CLAP2 de LAION: un codificador de audio y un codificador de texto entrenados de forma contrastiva para alinear sus salidas en un espacio comun de 960 dimensiones con normalizacion L2. El frontend de audio opera a 32 kHz y el runtime clap.cpp acepta WAV, MP3 y FLAC, remuestreando internamente cuando es necesario. Cada fichero GGUF incorpora tanto los pesos de ambos codificadores como el tokenizador y la configuracion del frontend, lo que simplifica el despliegue a un solo artefacto.
 
-En cuanto al entrenamiento, la informacion disponible no detalla el volumen de datos, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; estos extremos deben consultarse en la model card del checkpoint original de LAION. La innovacion tecnica destacable de esta publicacion es la conversion determinista: el autor documenta la revision fuente (`e836feaa79cd1f7de939fe77065819f48fc44e4c`) y el commit de conversion, e incluye en el repositorio el SHA-256 exacto del checkpoint, una auditoria de almacenamiento, fixtures de referencia oficiales y validacion nativa texto/audio por formato. En F16, las matrices de pesos 2D se almacenan en IEEE FP16 mientras el resto de tensores y las activaciones nativas permanecen en F32; las comparaciones F16 se realizan contra pesos de referencia redondeados de forma identica, no contra los F32 intactos.
+El modelo sigue un diseno contrastivo de dos torres. La torre de audio es un vision transformer NaFlex que recibe un espectrograma log-mel de 128 bins (50 Hz a 16 kHz, hop de 320 muestras), lo divide en parches no solapados de 16x16 y produce 50 tokens por segundo de audio. Al no exigir recorte ni relleno a una longitud fija, acepta clips de cualquier duracion y genera un embedding por clip; el coste crece de forma cuadratica con la longitud debido a la atencion completa. La torre de texto emplea un tokenizador BPE sensible a mayusculas con contexto de 256 tokens.
+
+El entrenamiento se realizo desde cero sobre LAION-Audio-XL (366 millones de pares audio-texto), con 1.024 millones de muestras vistas y un schedule de learning rate WSD, tomando el ultimo checkpoint. Los clips de entrenamiento se agruparon en buckets de longitud de 6,9, 9,0, 13,0, 22,6 y 30,1 segundos. El preprocesado remuestrea a 32 kHz y promedia multicanal a mono. El entrenamiento uso autocast en bf16, aunque la inferencia publicada se realiza en float32.
 
 ## Capacidades
-- Extraccion de embeddings conjuntos audio-texto de 960 dimensiones, L2-normalizados, aptos para similitud coseno mediante producto escalar.
-- Embeddings de audio a partir de ficheros WAV, MP3 y FLAC, con remuestreo automatico a 32 kHz.
-- Embeddings de texto para consultas y descripciones semanticas de sonido.
-- Recuperacion audio-a-texto y texto-a-audio en un espacio vectorial compartido.
-- Clasificacion zero-shot de eventos sonoros mediante comparacion con etiquetas textuales.
-- Extraccion de caracteristicas para pipelines de indexacion y busqueda por similitud.
-- No soporta generacion de texto, tool calling, agentes ni razonamiento multi-paso: es exclusivamente un modelo de representacion.
-- No dispone de capacidades de vision ni de reconocimiento de voz propiamente dicho (no transcribe audio).
+
+- Generacion de embeddings de audio y de texto normalizados en un espacio compartido, aptos para similitud coseno.
+- Clasificacion zero-shot de audio mediante comparacion de embeddings de audio con prompts textuales.
+- Recuperacion audio-texto y texto-audio (audio-text retrieval).
+- Extraccion de caracteristicas para clasificadores posteriores y para curacion de datos.
+- Procesamiento de audio de cualquier duracion y cualquier frecuencia de muestreo o numero de canales (remuestreo y mezcla a mono internos).
+- Procesamiento por lotes de varios clips mediante padding y mascara `patch_valid`, con embeddings identicos a los obtenidos individualmente.
+- Soporte de audio de habla, musica y sonidos ambientales segun las tareas de los benchmarks MAEB y HEAR.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto: es un modelo de representacion, no generativo.
 
 ## Casos de uso
-- Busqueda de audio por descripcion textual: indexar una fonoteca calculando embeddings de cada fragmento y responder a consultas como "ladrido de perro" recuperando los vectores mas proximos por similitud coseno.
-- Etiquetado automatico de archivos de sonido: comparar el embedding de cada audio con embeddings de un conjunto de etiquetas textuales y asignar la clase de mayor similitud, sin necesidad de entrenar un clasificador supervisado.
-- Moderacion y triaje de contenido audiovisual: detectar categorias de audio sensibles en grandes volumenes de material mediante clasificacion zero-shot previa a la revision humana.
-- Organizacion de librerias musicales y de efectos de sonido: agrupar o deduplicar pistas por similitud semantica en el espacio de 960 dimensiones.
-- Alineacion de subtitulos y descripciones: verificar la coherencia entre una descripcion textual y la pista de audio asociada calculando la similitud de sus embeddings.
-- Construccion de sistemas de recomendacion multimodales: combinar embeddings de audio con embeddings de texto de resenas o metadatos para ranking y recuperacion.
-- Despliegue ligero en entornos sin PyTorch: al ejecutarse con clap.cpp en un unico binario C/C++, encaja en servicios contenerizados o en maquinas sin GPU dedicada para precomputar embeddings por lotes.
+
+- Etiquetado zero-shot de archivos de audio: describir cada clase con varias frases cortas en ingles, promediar sus embeddings y comparar con el embedding del clip; util para taxonomias que cambian con frecuencia sin reentrenar.
+- Curacion de datasets de audio: calcular embeddings de grandes colecciones y agrupar o filtrar por similitud para detectar duplicados, clases raras o contenido mal etiquetado.
+- Busqueda semantica audio-texto: indexar embeddings de clips y recuperar por consultas en lenguaje natural, por ejemplo localizar grabaciones de "un tren llegando a la estacion".
+- Clasificacion de eventos sonoros en produccion: usar el embedding como entrada de un clasificador ligero entrenado con pocos datos, aprovechando las 340M de representaciones preentrenadas.
+- Monitorizacion de contenido audiovisual: segmentar grabaciones largas en tramos de hasta 30 s, calcular embeddings por segmento y comparar contra prompts de referencia para detectar locucion, musica o ruido.
+- Analisis de musica y habla en investigacion: emplear los embeddings como baseline en tareas de HEAR o MSEB, o para estudiar la alineacion audio-texto en corpus multilingues (el audio no depende del idioma, aunque los prompts sean en ingles).
+- Despliegue en entornos sin GPU: al estar en GGUF y ejecutarse con clap.cpp, permite integrar la extraccion de embeddings en servicios ligeros o pipelines de CPU.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que las pruebas deterministas realizadas contra la implementacion oficial de CLAP2 establecen acuerdo de implementacion, no benchmarks de calidad de recuperacion.
+
+Resultados publicados en la model card (porcentajes, mayor es mejor):
+
+| Benchmark | CLAP2-L (este modelo) | CLAP2-M | CLAP2-S | CLAP2-XS | CLAP2-XXS |
+|---|---|---|---|---|---|
+| MAEB-30 (media de 30 tareas) | 53,6 | 52,3 | 51,8 | 49,1 | 46,2 |
+| HEAR-17 (media de 17 tareas) | 81,9 | 81,4 | 81,8 | 80,6 | 79,1 |
+| MSEB (media de 62 puntuaciones en ingles) | 30,3 | 29,4 | 29,8 | 27,6 | 28,0 |
+
+MAEB-30 cubre tareas de habla, musica y sonido en clasificacion, clasificacion zero-shot, clasificacion de pares, clustering y recuperacion. HEAR-17 excluye Beehive y Maestro 5h. No se han publicado en la informacion disponible comparaciones numericas con modelos de otras familias (por ejemplo CLAP original o AudioCLIP).
 
 ## Requisitos de hardware
-- VRAM estimada: no disponible de forma oficial; con 340 millones de parametros, F32 ocupa aproximadamente 1,36 GB solo en pesos y F16 aproximadamente 0,68 GB, a lo que hay que sumar activaciones y buffers del frontend de audio.
-- GPU recomendadas: no disponible; por tamano, cualquier GPU con 2-4 GB de memoria libre deberia ser suficiente, incluyendo GTX 1650, RTX 3060, RTX 4090, A100 o H100.
-- Cabe en GPU consumer: si, previsiblemente en practicamente todas las GPU consumer modernas con al menos 2-4 GB de VRAM; el dato exacto no esta publicado.
-- Opciones de despliegue: exclusivamente clap.cpp (commit `60def51cff6564eb35ef859487b1071d04e0ed52` o posterior compatible), con el target `clap-cli`. No esta pensado para llama.cpp, vLLM, TGI, Ollama ni otros runtimes de LLM.
-- Latencia y throughput: no disponibles.
+
+- VRAM estimada: el repositorio GGUF ocupa 2,0 GB; en F16 los 340M parametros requieren aproximadamente 0,7 GB de pesos mas activaciones. Con cuantizaciones GGUF de menor precision el peso baja de ese umbral, aunque no se detallan los tipos disponibles.
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente para inferencia en F16; para lotes grandes o clips de 30 s conviene una RTX 3090/4090 o superior por el coste cuadratico de la atencion.
+- Cabe en GPU consumer: si, practicamente en cualquier modelo con 4 GB o mas (GTX 1650, RTX 3060, RTX 4060, etc.).
+- Opciones de despliegue: clap.cpp (via `clap embedding`), open_clip_torch (>= 4.2.1) con el repositorio base en safetensors, y Transformers. No se mencionan integraciones con vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Dimension del embedding | Formato | Licencia | Notas |
-|---|---|---|---|---|---|
-| gorse-io/clap2-large-audioxl-s1B-GGUF | 340.073.857 | 960 | GGUF (F32/F16) | Apache-2.0 | Conversion para clap.cpp; audio a 32 kHz |
-| laion/clap2-large-audioxl-s1B | 340.073.857 | 960 | safetensors (checkpoint original) | Apache-2.0 | Modelo base; requiere stack PyTorch |
-| gorse-io/larger_clap_music_and_speech-GGUF | no disponible | 512 | GGUF | no disponible | Conversion CLAP de LAION entrenada en musica y voz; embeddings de 512 dimensiones |
+| Modelo | Parametros | Contexto | MAEB-30 | HEAR-17 | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| CLAP2-L (este) | 340,1M | Audio libre; texto 256 tokens | 53,6 | 81,9 | Apache 2.0 | GGUF, safetensors |
+| CLAP2-M | 152,8M | Audio libre; texto 256 tokens | 52,3 | 81,4 | Apache 2.0 | safetensors |
+| CLAP2-S | 103,9M | Audio libre; texto 256 tokens | 51,8 | 81,8 | Apache 2.0 | safetensors |
+| CLAP original (LAION) | No disponible en la informacion | No disponible | No disponible | No disponible | No disponible | No disponible |
+
+Dentro de la familia CLAP2, el modelo L ofrece la mejor puntuacion en MAEB-30 y MSEB, con una diferencia de 1,3 puntos sobre el M en MAEB-30 a cambio de mas del doble de parametros. No se dispone de datos para comparar con CLAP original ni con otros modelos contrastivos audio-texto.
 
 ## Limitaciones y advertencias
-- Modelo exclusivamente de extraccion de caracteristicas: no genera texto, no transcribe audio y no soporta tool calling ni razonamiento multi-paso.
-- No se han publicado benchmarks de calidad de recuperacion; la validacion documentada cubre solo equivalencia de implementacion frente a la referencia oficial.
-- La cuantizacion por bloques de CLAP2 no esta soportada en esta release; solo hay F32 y F16.
-- Los ficheros GGUF estan pensados para clap.cpp y no son compatibles con llama.cpp ni con otros runtimes genericos de GGUF.
-- La cobertura linguistica del codificador de texto no esta declarada; el rendimiento en idiomas distintos del ingles no esta documentado.
-- Repositorio con cero descargas y cero likes en el momento de la consulta: ecosistema de usuario practicamente inexistente y poca retroalimentacion de terceros.
-- Licencia Apache-2.0 heredada del checkpoint original de LAION; la conversion no altera la licencia, pero conviene verificar la model card upstream para cualquier obligacion de atribucion adicional.
-- Riesgo de sesgo y de falsos positivos en clasificacion zero-shot: las etiquetas textuales elegidas condicionan directamente los resultados, sin calibracion publicada.
+
+- La torre de texto solo acepta ingles; los prompts en otros idiomas no estan soportados.
+- El tokenizador es sensible a mayusculas: los textos en mayusculas (por ejemplo transcripciones de habla) se fragmentan en tokens raros y puntuan peor. La evaluacion del paper pasa a minusculas los textos completamente en mayusculas con al menos tres palabras.
+- Entrenado con clips de hasta 30 s; acepta clips mas largos pero su comportamiento no esta evaluado. Se recomienda segmentar grabaciones largas y promediar o comparar embeddings.
+- El coste computacional crece de forma cuadratica con la duracion del audio por el uso de atencion completa.
+- Riesgo de alucinacion no aplica en sentido generativo, pero la clasificacion zero-shot puede asignar puntuaciones altas a clases incorrectas si los prompts son etiquetas escuetas o contienen negaciones; la model card recomienda frases completas y restar la puntuacion media por clase.
+- Sesgos conocidos: no documentados en la informacion disponible; al entrenarse sobre LAION-Audio-XL, puede heredar sesgos de ese corpus.
+- Licencia Apache 2.0: permite uso comercial sin restricciones adicionales conocidas, pero conviene verificar las condiciones del corpus de entrenamiento si se redistribuyen derivados.
+- La inferencia publicada usa float32 aunque el entrenamiento fue en bf16; no se documentan efectos de otras precisiones.
 
 ## Enlaces
-- Modelo GGUF en Hugging Face: https://huggingface.co/gorse-io/clap2-large-audioxl-s1B-GGUF
-- Modelo base original: https://huggingface.co/laion/clap2-large-audioxl-s1B
-- Model card del checkpoint base (revision fijada): https://huggingface.co/laion/clap2-large-audioxl-s1B/blob/e836feaa79cd1f7de939fe77065819f48fc44e4c/README.md
-- Runtime clap.cpp: https://github.com/gorse-io/clap.cpp
-- Coleccion Audio-Embedding-GGUF de gorse-io: https://huggingface.co/collections/gorse-io/audio-embedding-gguf
-- Conversion CLAP music and speech de gorse-io: https://huggingface.co/gorse-io/larger_clap_music_and_speech-GGUF
+
+- Repositorio Hugging Face: https://huggingface.co/gorse-io/clap2-large-audioxl-s1B-GGUF
+- Modelo base: https://huggingface.co/laion/clap2-large-audioxl-s1B
+- Paper: https://arxiv.org/abs/2611.11592
+- Codigo: https://github.com/LAION-AI/clap2
+- Pagina del proyecto: https://projects.laion.ai/clap2/
+- clap.cpp: https://github.com/gorse-io/clap.cpp

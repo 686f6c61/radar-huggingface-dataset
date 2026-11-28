@@ -2,97 +2,104 @@
 
 ## Resumen
 
-Project Siren es un paquete de ejecución (bundle) para un asistente de voz bilingüe inglés-swahili que funciona íntegramente en local sobre teléfonos Android de 4 GB de RAM con arquitectura `arm64-v8a`. No se trata de un único modelo de lenguaje, sino de un conjunto de siete artefactos verificados que cubren la cadena completa de voz: detección de actividad de voz (VAD), reconocimiento de habla (STT), razonamiento con salida estructurada y síntesis de voz (TTS) con cuatro voces. Lo desarrolla NamaRL y se publica bajo licencia Apache 2.0.
+Project Siren es un paquete de ejecución (bundle) para un asistente de voz bilingüe (inglés y suajili) que funciona íntegramente en local sobre teléfonos Android de 4 GB de RAM. No se trata de un único modelo, sino de un conjunto de siete artefactos verificados que cubren la cadena completa de un asistente conversacional: detección de actividad de voz (VAD), reconocimiento automático del habla (STT), razonamiento de lenguaje y síntesis de voz (TTS). Lo desarrolla NamaRL y se distribuye con licencia Apache 2.0.
 
-El componente de razonamiento es `sema-gemma3-270m-expd-q8_0.gguf`, una variante de Gemma 3 de 270 millones de parámetros cuantizada en GGUF Q8_0, mientras que el reconocimiento de voz se apoya en una versión bilingüe de Whisper Base convertida a `sherpa-onnx` en INT8 y la síntesis en un modelo Piper VITS de cuatro voces. El interés actual reside en que demuestra una cadena de voz completamente offline con un techo de memoria de aproximadamente 900 MB de RSS pico, algo poco habitual en despliegues móviles de bajo coste.
+El componente de razonamiento es `sema-gemma3-270m-expd-q8_0.gguf`, una variante del modelo Gemma 3 de 270 millones de parámetros cuantizada a Q8_0 (278,04 MB), que según la model card carga en aproximadamente 1,3 s y produce JSON válido en el 100 % de los casos. El reconocimiento de voz corre sobre Whisper base adaptado al suajili e inglés mediante `sherpa-onnx` en INT8 (152,47 MB), y la síntesis usa un modelo Piper VITS de cuatro voces bilingües (73,49 MB).
 
-El repositorio ocupa 0,5 GB y los pesos en formato safetensors suman 268.098.176 parámetros. La propuesta encaja en escenarios de conectividad intermitente o nula, donde enviar audio a la nube no es viable por coste, latencia o privacidad.
+Su relevancia radica en el objetivo de ingeniería: mantener un pico de memoria residente (RSS) por debajo de 900 MB en dispositivos `arm64-v8a` de gama baja, con un total de 505,44 MB de artefactos. Es una propuesta orientada a asistentes de voz offline en contextos de conectividad limitada, con soporte específico para suajili, un idioma poco cubierto por los asistentes comerciales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Bundle multi-componente: Silero VAD (ONNX), Whisper Base bilingüe (encoder-decoder Transformer, sherpa-onnx INT8), Gemma 3 270M (Transformer decoder-only, GGUF Q8_0), Piper VITS (TTS) |
-| Parametros totales | 268.098.176 (pesos safetensors del repositorio) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
+| Arquitectura | Bundle multi-componente: VAD Silero (ONNX), STT Whisper base (sherpa-onnx INT8), razonamiento Gemma 3 270M (GGUF Q8_0), TTS Piper VITS FP32 |
+| Parametros totales | 268.098.176 (según safetensors del repo); el componente de razonamiento Gemma 3 270M es de 270M |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF Q8_0 (razonamiento), ONNX INT8 (STT), ONNX FP32 (TTS), ONNX (VAD) |
-| Idiomas soportados | inglés (en), swahili (sw) |
+| Idiomas soportados | Inglés (en) y suajili (sw) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF, ONNX (con ficheros auxiliares `.onnx.json`, `base-tokens.txt`, `manifest.json`) |
+| Formato de pesos | GGUF, ONNX, safetensors (repo) |
 
 ## Arquitectura y entrenamiento
 
-El bundle combina cuatro etapas especializadas. La detección de voz usa `silero_vad.onnx` (0,61 MB) con endpointing y cancelación de interrupción a mitad de frase en un máximo de 4,91 ms. El reconocimiento de voz emplea un Whisper Base bilingüe inglés-swahili exportado a `sherpa-onnx` en INT8 (`base-encoder.int8.onnx` y `base-decoder.int8.onnx`, 152,47 MB en total) con un vocabulario propio en `base-tokens.txt`. El razonamiento recae en `sema-gemma3-270m-expd-q8_0.gguf` (285,86 MB), una variante de Gemma 3 de 270M en Q8_0. La síntesis usa un Piper VITS FP32 de cuatro voces (`siren-4voice-bilingual-medium.onnx`, 73,49 MB) con su configuración asociada.
+El bundle combina cuatro subsistemas independientes. La detección de voz emplea Silero VAD en ONNX (0,61 MB), con endpointing y cancelación de interrupción a mitad de frase en un máximo de 4,91 ms. El STT es un Whisper base adaptado al suajili e inglés, exportado a `sherpa-onnx` en INT8 con vocabulario propio (`base-tokens.txt`). El razonamiento recae en una variante de Gemma 3 de 270M parámetros cuantizada a Q8_0, que usa tokenización SentencePiece con `merges=0`. La síntesis es un modelo Piper VITS de cuatro voces (`af_heart`, `af_sky`, `am_puck`, `am_onyx`), cada una con cobertura bilingüe inglés-suajili.
 
-No se detallan en la información disponible los volúmenes de datos de entrenamiento, la composición del corpus, ni si hubo ajuste por RLHF o DPO. Tampoco se especifican innovaciones de decodificación más allá de la propia integración de la cadena y de la restricción de memoria. El dato diferencial es de ingeniería: el conjunto completo ocupa 513,26 MB repartidos en siete ficheros y está diseñado para no superar los 900 MB de RSS pico.
+No se detallan en la información disponible los datos de entrenamiento (número de tokens, composición del dataset) ni si hubo ajuste fino con RLHF o DPO para el componente de razonamiento. La model card sí reporta métricas de adaptación del STT: en el conjunto FLEURS de suajili, la variante `exp3` alcanza un WER del 24,25 % frente al 118,72 % de la versión estándar (Stock), lo que indica un ajuste específico del reconocimiento para ese idioma. El TTS opera con un factor de tiempo real (RTF) de CPU de 0,184x a 0,272x, es decir, entre 3,7 y 5,4 veces más rápido que tiempo real.
 
 ## Capacidades
 
-- Reconocimiento de voz bilingüe inglés-swahili con Whisper Base en INT8, con una tasa de error de palabra del 34,13 % en swahili según la model card.
-- Detección de actividad de voz con endpointing y barge-in a mitad de frase (cancelación en un máximo de 4,91 ms).
-- Razonamiento y generación de texto con Gemma 3 270M en Q8_0, con salida JSON estructurada válida al 100 % y anclaje a herramientas (tool grounding).
-- Síntesis de voz con cuatro voces (`af_heart`, `af_sky`, `am_puck`, `am_onyx`), todas con cobertura de inglés y swahili.
-- Ejecución completamente offline en Android `arm64-v8a` con 4 GB de RAM.
-- Integración mediante manifiesto remoto (`manifest.json`) que la app Siren descarga e instala.
-- Soporte de conversación multiturno dentro del arnés de voz del proyecto.
+- Reconocimiento de voz bilingüe inglés-suajili con detección de actividad de voz y endpointing.
+- Detección de interrupción a mitad de frase (barge-in) con latencia máxima de cancelación de 4,91 ms.
+- Razonamiento de lenguaje y generación de respuestas conversacionales con el modelo Gemma 3 270M.
+- Salida estructurada en JSON válido (100 % según la model card), apta para orquestación de respuestas.
+- Síntesis de voz con cuatro voces, todas con cobertura bilingüe.
+- Funcionamiento completamente offline, sin dependencia de red.
+- Despliegue en dispositivos Android `arm64-v8a` con 4 GB de RAM mediante la app Siren (APK v0.2.8).
+- Descarga e instalación del bundle a través de un manifiesto remoto (`manifest.json`).
 
 ## Casos de uso
 
-- Asistente de voz offline en Android de gama baja: la cadena completa (VAD, STT, razonamiento, TTS) cabe en 4 GB de RAM y no requiere red, lo que permite desplegarlo en dispositivos sin conectividad fiable.
-- Atención al ciudadano en zonas con conectividad intermitente: el reconocimiento y la síntesis bilingües inglés-swahili permiten atender consultas básicas sin enviar audio a servidores externos.
-- Automatización de tareas por voz con salida estructurada: el modelo de razonamiento genera JSON válido con anclaje a herramientas, lo que facilita encadenar acciones (consultas, recordatorios, comandos) desde la voz.
-- Privacidad y cumplimiento: al procesar el audio íntegramente en el dispositivo, se evita la transmisión de datos personales y se simplifica el cumplimiento de normativas de protección de datos.
-- Pruebas de concepto de asistentes conversacionales: el manifiesto descargable permite integrar el bundle en una app Android y validar la cadena de voz sin entrenar modelos propios.
-- Investigación en reconocimiento de voz de bajos recursos: la variante bilingüe de Whisper Base con métricas publicadas de WER en swahili sirve como referencia para experimentos de adaptación lingüística.
-- Kioscos o terminales de voz en entornos sin cobertura: el diseño offline y el bajo consumo de memoria permiten desplegar el asistente en hardware embebido o terminales fijos.
+- Asistente de voz offline en zonas con conectividad limitada: el bundle completo (505,44 MB) se ejecuta en local sin red, lo que permite consultas conversacionales en inglés y suajili en teléfonos de 4 GB de RAM.
+- Atención al ciudadano en suajili: el STT ajustado reduce el WER del 118,72 % al 24,25 % en FLEURS SW, lo que lo hace viable para dictado y consultas habladas en ese idioma.
+- Aplicaciones de accesibilidad para personas con movilidad reducida: la interacción por voz con barge-in (cancelación en 4,91 ms) permite interrumpir al asistente de forma natural.
+- Kioscos o dispositivos empotrados de bajo consumo: el TTS con RTF de 0,184x-0,272x en CPU permite síntesis en tiempo real sin GPU.
+- Prototipado de pipelines de voz: la separación en componentes (VAD, STT, LLM, TTS) con formatos estándar (ONNX, GGUF) facilita sustituir piezas individuales en un banco de pruebas.
+- Integración de respuestas estructuradas: la salida JSON válida del componente de razonamiento permite conectar el asistente a acciones o servicios definidos por la aplicación.
+- Educación y alfabetización digital en África oriental: cobertura bilingüe inglés-suajili en reconocimiento y síntesis para aplicaciones de aprendizaje de idiomas.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Componente | Valor |
-|---|---|---|
-| WER en swahili | Whisper Base bilingüe (sherpa-onnx INT8) | 34,13 % |
-| JSON estructurado válido | Gemma 3 270M Q8_0 | 100 % |
-| Cancelación de barge-in | Silero VAD | máximo 4,91 ms |
-| RTF de TTS (CPU) | Piper VITS 4 voces | 0,184x–0,272x (3,7x–5,4x más rápido que tiempo real) |
-| RSS pico de STT | Whisper Base INT8 | ~390,66 MB |
-| RSS pico de razonamiento | Gemma 3 270M Q8_0 | ~420,83 MB |
-| RSS pico total del bundle | Cadena completa | ≤ 900 MB |
+| Metrica | Valor reportado |
+|---|---|
+| WER FLEURS suajili (STT `exp3`) | 24,25 % |
+| WER FLEURS suajili (Whisper base estándar) | 118,72 % |
+| Salida JSON válida (Gemma 3 270M Q8_0) | 100 % |
+| Tiempo de carga del modelo de razonamiento | ~1,3 s |
+| RTF de CPU del TTS | 0,184x-0,272x (3,7x-5,4x más rápido que tiempo real) |
+| Latencia máxima de cancelación (VAD) | 4,91 ms |
+| Pico de RSS objetivo | ≤ 900 MB |
+| RSS del STT | ~390 MB |
+| RSS del razonamiento | ~420,83 MB |
 
-No se han publicado resultados de benchmarks de razonamiento (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el bundle completo está diseñado para un techo de 900 MB de RSS pico; el STT consume ~390,66 MB y el razonamiento ~420,83 MB.
 - Dispositivos objetivo: teléfonos Android `arm64-v8a` con 4 GB de RAM.
-- GPU recomendadas: no aplica; el diseño está orientado a CPU móvil. No se especifican requisitos de GPU de escritorio.
-- Cabe en GPU de consumo: no disponible (el bundle está pensado para CPU móvil).
-- Opciones de despliegue: app Siren para Android mediante manifiesto remoto; componentes en ONNX (sherpa-onnx, Piper) y GGUF (llama.cpp u otro runtime compatible con GGUF).
-- Latencia y throughput: TTS con RTF de 0,184x–0,272x en CPU; cancelación de barge-in en un máximo de 4,91 ms; el resto de latencias no está disponible.
+- Pico de memoria residente objetivo: ≤ 900 MB.
+- Tamaño total del bundle: 505,44 MB en siete archivos.
+- APK Android: 101,50 MB (v0.2.8, `arm64-v8a`), SHA-256 `0a8206fb6015c49ea816b441536502380c6304abcfa4f283a3bfe2952c533e5f`.
+- Componentes y memoria: VAD 0,61 MB; STT 152,47 MB (~390 MB RSS); razonamiento 278,04 MB (~420,83 MB RSS); TTS 73,49 MB.
+- Despliegue: app Siren para Android y `sherpa-onnx` para el STT; los formatos ONNX y GGUF permiten su uso con runtimes compatibles.
+- GPU dedicadas (A100, H100, RTX 4090): no aplica; el diseño es para CPU móvil.
+- Latencia y throughput: TTS a 0,184x-0,272x RTF en CPU; carga del LLM ~1,3 s; cancelación VAD ≤ 4,91 ms.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Enfoque |
+| Modelo | Tipo | Parámetros | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| Project Siren (NamaRL) | 268.098.176 (bundle) | no disponible | en, sw | Apache 2.0 | Cadena de voz offline para Android |
-| Whisper Base (OpenAI) | ~74 M (solo STT) | no disponible | multilingüe | MIT | STT genérico, sin razonamiento ni TTS |
-| Gemma 3 270M (Google) | 270 M | no disponible | multilingüe | Gemma Terms | LLM pequeño de propósito general |
-| Piper VITS (Rhasspy) | no disponible | no aplica | multilingüe | MIT | TTS ligero para dispositivos |
+| Project Siren (NamaRL) | Bundle de voz (VAD + STT + LLM + TTS) | 270M (razonamiento) | en, sw | Apache 2.0 | Asistente offline en Android de 4 GB |
+| Whisper base (OpenAI) | STT | ~74M | Multilingüe | MIT | Reconocimiento de voz; sin ajuste específico para suajili |
+| Gemma 3 270M (Google) | LLM | 270M | Multilingüe | Gemma Terms | Razonamiento ligero; sin cadena de voz integrada |
+| Piper (Rhasspy) | TTS | Variable | Multilingüe | MIT | Síntesis de voz; sin voces bilingües en-sw preconfiguradas |
 
-La comparación es aproximada: Project Siren no compite como modelo único, sino como integración de componentes ya existentes bajo una restricción de memoria concreta.
+La comparación directa es limitada porque Project Siren integra varios componentes en un único bundle con objetivo de memoria acotada, mientras que las alternativas son piezas aisladas. No se dispone de datos de rendimiento comparables entre el bundle completo y pipelines equivalentes.
 
 ## Limitaciones y advertencias
 
-- La tasa de error de palabra en swahili (34,13 %) es alta y puede degradar la experiencia en conversaciones reales.
-- El modelo de razonamiento es de 270 M de parámetros; su capacidad de razonamiento complejo y conocimiento factual es limitada frente a modelos mayores.
-- Riesgo de alucinación en las respuestas del componente de razonamiento, especialmente con salida estructurada cuando la consulta queda fuera del dominio previsto.
-- Solo se declaran dos idiomas (inglés y swahili); no hay soporte de castellano.
-- No se especifican la longitud de contexto ni los datos de entrenamiento, lo que dificulta evaluar su robustez en dominios específicos.
-- El despliegue está orientado a Android `arm64-v8a`; no se documentan rutas de despliegue para servidor o escritorio.
-- Aunque la licencia es Apache 2.0, conviene verificar las licencias de los componentes subyacentes (Gemma 3, Whisper, Piper) antes de un uso comercial.
-- El repositorio registra 0 descargas en el momento de la consulta, por lo que la validación comunitaria es inexistente.
+- Cobertura lingüística restringida a inglés y suajili; no hay soporte declarado para otras lenguas.
+- El componente de razonamiento es un modelo de 270M parámetros, con capacidad limitada para tareas complejas de razonamiento o código.
+- No se especifica la longitud de contexto del modelo de razonamiento.
+- No se detallan los datos de entrenamiento ni los procesos de alineación, por lo que no se puede evaluar el riesgo de sesgos.
+- Riesgo de alucinación inherente al componente generativo; no se reportan métricas de fidelidad factual.
+- El bundle está orientado a Android `arm64-v8a`; no se documenta soporte para otras plataformas.
+- El WER del 24,25 % en suajili, aunque muy inferior al baseline, sigue siendo elevado para aplicaciones de dictado críticas.
+- Aunque la licencia es Apache 2.0, conviene verificar las licencias de los componentes subyacentes (Gemma 3, Whisper, Piper, Silero VAD) antes de un uso comercial.
+- El proyecto se encuentra en fase temprana (v0.2.8, 440 descargas, 1 like), sin garantías de mantenimiento a largo plazo.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/NamaRL/siren-models
+- Hugging Face: https://huggingface.co/NamaRL/siren-models
 - Manifiesto del bundle: https://huggingface.co/NamaRL/siren-models/resolve/main/manifest.json
+- APK Android v0.2.8: https://huggingface.co/NamaRL/siren-models/resolve/main/apk/Siren-v0.2.8-arm64.apk

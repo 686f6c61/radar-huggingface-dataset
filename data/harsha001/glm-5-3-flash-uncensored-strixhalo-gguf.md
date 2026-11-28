@@ -2,103 +2,103 @@
 
 ## Resumen
 
-GLM-5.3-Flash-Uncensored-StrixHalo-GGUF es una cuantizacion de 2 bits del modelo GLM-5.3-Flash de Z.ai, un transformer de tipo mixture-of-experts (MoE) de 320B parametros totales con 18B activos por token y 288 expertos. Esta build concreta, publicada por el usuario Harsha001, comprime los pesos desde los 318 GiB del Q8_0 original hasta 96 GiB, con el objetivo explicito de que el modelo quepa en la memoria unificada de una maquina AMD Strix Halo con 128 GB de RAM. Se conservan los 288 expertos, a diferencia de otras estrategias de compresion que descartan expertos.
+GLM-5.3-Flash-Uncensored-StrixHalo-GGUF es una compilación cuantizada del modelo GLM-5.3-Flash de Z.ai, un transformer de tipo mezcla de expertos (MoE) con 320.759.404.382 parámetros totales, de los cuales activa aproximadamente 18B por token. Esta versión concreta, publicada por el usuario Harsha001, aplica una cuantización agresiva de 2 bits (IQ2_XXS en las compuertas y tensores up de los expertos enrutados, IQ3_XXS en los tensores down) para reducir el peso de 318 GiB a 96 GiB, con el objetivo de que quepa en una máquina AMD Strix Halo con 128 GB de memoria unificada.
 
-El modelo base ha sido sometido a un proceso de abliteration por parte de orcarouter, que elimina de forma sustancial el comportamiento de rechazo. Esto convierte a esta variante en una herramienta orientada a investigacion sobre rechazo, estudios de interpretabilidad, red-teaming y evaluacion de robustez, no a un modelo listo para produccion con usuarios finales. El autor advierte explicitamente de la ausencia de guardrails y de la responsabilidad legal del usuario.
+El modelo parte de la variante abliterated de orcarouter, que elimina sustancialmente el comportamiento de rechazo del modelo original mediante técnicas de abliteration. Conserva los 288 expertos completos, algo poco habitual en cuantizaciones tan severas, y mantiene en Q8_0 todos los componentes no expertos (atención, experto compartido, capas densas y embeddings). El resultado es un modelo sin guardarraíles de seguridad integrados, orientado explícitamente a investigación sobre rechazo, interpretabilidad, red-teaming y evaluación de robustez.
 
-La relevancia de esta publicacion es doble: por un lado, demuestra que es posible ejecutar un MoE de 320B en hardware consumer de gama alta con memoria unificada; por otro, documenta con mediciones de perplejidad y divergencia KL el coste real de la compresion a 2 bits, un dato poco habitual en publicaciones de cuantizaciones agresivas. Los ficheros no han sido probados aun en hardware AMD y solo se han validado con el fork ROCmFPX de llama.cpp.
+La relevancia de esta ficha radica en su enfoque práctico: demuestra que es posible ejecutar un MoE de 320B en hardware de consumo profesional de gama alta (Strix Halo) mediante cuantización extrema y un backend específico (ROCmFPX con Vulkan). No obstante, el autor advierte que los archivos no han sido probados en hardware AMD real y que solo funcionan con su fork de llama.cpp, lo que limita su adopción generalizada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts (MoE), transformer; nombre de arquitectura en GGUF: `glm5-next` |
-| Parametros totales | 320B (318 GiB en Q8_0) |
-| Parametros activos | 18B por token |
-| Longitud de contexto | 16.384 tokens en el ejemplo de ejecucion del autor; limite maximo no disponible |
-| Tipos de cuantizacion | IQ2_XXS (tensores gate y up de expertos enrutados), IQ3_XXS (tensores down); resto de capas en Q8_0 |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Arquitectura | Transformer MoE (mezcla de expertos), nombre de arquitectura `glm5-next` en llama.cpp |
+| Parametros totales | 320.759.404.382 (320B) |
+| Parametros activos | ~18B por token |
+| Longitud de contexto | No disponible (el ejemplo de ejecución usa `-c 16384`, pero no se especifica el máximo soportado) |
+| Tipos de cuantizacion | IQ2_XXS (gate y up de expertos enrutados), IQ3_XXS (down de expertos enrutados), Q8_0 (resto de componentes) |
+| Idiomas soportados | Inglés (en), chino (zh) |
 | Licencia | MIT |
-| Formato de pesos | GGUF, dividido en 3 ficheros (45,6 GB + 46,0 GB + 11,6 GB) |
+| Formato de pesos | GGUF (tres partes: 45.6 GB + 46.0 GB + 11.6 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos: 288 expertos enrutados de los que se activan 18B parametros por token, mas un experto compartido, capas densas y embeddings. La cuantizacion de esta build mantiene los tensores de atencion, el experto compartido, las capas densas y los embeddings en Q8_0 sin tocar, y solo comprime los expertos enrutados: gate y up a IQ2_XXS, down a IQ3_XXS. Se utilizan tipos de peso estandar de llama.cpp, sin tipos especificos de ROCmFPX. La matriz de importancia empleada es la de Unsloth, calculada sobre el GLM-5.3-Flash normal; el bloque 45 (cabeza de prediccion multi-token) no tiene datos propios y usa los del bloque 44 como sustituto, lo que solo podria afectar a la aceleracion opcional por prediccion multi-token, no a la generacion normal.
+El modelo base GLM-5.3-Flash es un transformer de mezcla de expertos con 288 expertos enrutados y un experto compartido, del cual se activan aproximadamente 18B de parámetros por token sobre un total de 320B. La cuantización de Harsha001 conserva la totalidad de los 288 expertos, aplicando IQ2_XXS a los tensores gate y up y IQ3_XXS a los tensores down de los expertos enrutados. El resto de la red (atención, experto compartido, capas densas y embeddings) permanece en Q8_0, lo que preserva la calidad de los componentes críticos para la estabilidad del modelo.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el proceso de alineacion (RLHF/DPO) del modelo original en la documentacion proporcionada. La abliteration aplicada por orcarouter elimina el comportamiento de rechazo, pero no se detalla la metodologia concreta empleada. El autor documenta el coste de la compresion con mediciones sobre wikitext-2 (40 fragmentos de 512 tokens, GPU NVIDIA GB10): perplejidad de 4,09 frente a 2,61 del Q8_0 de referencia, divergencia KL de 0,51 y coincidencia del token mas probable con Q8 del 76,5%. Como comparacion, una build de 3 bits con solo 233 de 288 expertos obtiene peor perplejidad (6,01), lo que justifica la decision de conservar todos los expertos.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original de Z.ai. La variante abliterated de orcarouter elimina el comportamiento de rechazo mediante técnicas de abliteration, pero no se detalla el método exacto empleado. La matriz de importancia utilizada para la cuantización proviene de Unsloth (GLM-5.3-Flash-GGUF) y no contiene datos para el bloque 45 (cabeza de predicción multi-token), por lo que se usó la información del bloque 44 como sustituto; esto solo afecta a la opción de aceleración por predicción multi-token, no a la generación normal.
 
 ## Capacidades
 
-- Generacion de texto en ingles y chino.
-- Razonamiento y matematicas basicas: en las comprobaciones del autor respondio correctamente 17 x 23 = 391 y escribio una funcion de Fibonacci iterativa correcta en Python.
-- Generacion de codigo: validada de forma puntual con Python; el autor advierte que las metricas de perplejidad no dicen nada directo sobre codigo.
-- Soporte de plantillas de chat via `--jinja` en llama-server.
-- Cabeza de prediccion multi-token (bloque 45) presente en los pesos, pensada para aceleracion opcional de decodificacion; su calidad puede verse afectada por la sustitucion de la matriz de importancia.
-- Sin capacidades de vision en esta build: orcarouter publica un fichero mmproj aparte, pero no se ha probado con esta cuantizacion.
-- Sin guardrails: 0 rechazos en 10 peticiones que un modelo con entrenamiento de seguridad rechazaria, y 0 rechazos en 8 preguntas inofensivas que suenan arriesgadas (test limitado a la busqueda de frases de rechazo en los primeros 64 tokens).
-- Soporte de tool calling y comportamiento agentico: no disponible en la informacion proporcionada.
+- Generación de texto conversacional en inglés y chino.
+- Razonamiento y respuesta a preguntas generales (el autor verificó respuestas correctas a preguntas de cultura general y aritmética simple).
+- Generación de código: el autor verificó la escritura correcta de una función iterativa de Fibonacci en Python.
+- Aritmética básica: el autor verificó que responde correctamente a 17 x 23 = 391.
+- Sin comportamiento de rechazo: 0 rechazos en 10 solicitudes que un modelo con entrenamiento de seguridad rechazaría normalmente, y 0 rechazos en 8 preguntas inofensivas que suenan arriesgadas (prueba limitada a frases de rechazo en los primeros 64 tokens).
+- Soporte de plantillas de chat mediante `--jinja`.
+- Compatible con endpoints (tag `endpoints_compatible`).
+- No incluye capacidades de visión en esta compilación: solo generación de texto, aunque orcarouter publica un archivo de visión (mmproj) que no ha sido probado con esta build.
 
 ## Casos de uso
 
-- Investigacion sobre rechazo y abliteration: el modelo permite estudiar como se distribuye la conducta de rechazo en un MoE de 320B y comparar con la version con entrenamiento de seguridad, gracias a que la abliteration esta aplicada de forma uniforme y documentada.
-- Red-teaming y evaluacion de robustez: util como generador adversarial controlado en laboratorio para probar clasificadores de seguridad y filtros de moderacion propios, sin depender de APIs externas.
-- Estudios de interpretabilidad en modelos MoE: al conservar los 288 expertos, permite analizar el enrutamiento y la especializacion de expertos en un modelo grande sin recortes.
-- Experimentacion con cuantizacion extrema: la publicacion incluye perplejidad, KL y coincidencia de token frente a Q8_0, lo que la convierte en una referencia para investigar el impacto de IQ2/IQ3 en modelos MoE de gran tamano.
-- Despliegue local en hardware Strix Halo: ejecucion de un modelo de 320B en una maquina con 128 GB de memoria unificada mediante Vulkan y ROCmFPX, util para laboratorios con ese hardware concreto.
-- Generacion de texto en ingles y chino en entornos aislados: tareas de escritura, resumen o traduccion entre ambos idiomas en un equipo local, sin envio de datos a servicios externos.
-- Pruebas de latencia y throughput en GPUs integradas AMD: el autor solicita reportes de velocidad en la pestana Community, por lo que el modelo sirve como banco de pruebas para el stack Vulkan/ROCmFPX.
+- Investigación sobre rechazo y abliteration: el modelo permite estudiar cómo la eliminación del entrenamiento de seguridad afecta al comportamiento de rechazo en un MoE de gran escala, comparando las respuestas con las del modelo original de Z.ai.
+- Red-teaming y evaluación de robustez: al carecer de guardarraíles, es adecuado para probar la eficacia de sistemas de moderación externos y para identificar vectores de ataque en pipelines de producción.
+- Estudios de interpretabilidad: la conservación de los 288 expertos permite analizar el enrutamiento y la especialización de expertos en un modelo cuantizado a 2 bits, comparando con la referencia Q8_0.
+- Evaluación de cuantización extrema: sirve como caso de estudio para medir la pérdida de calidad (perplejidad de 4.09 frente a 2.61 en Q8_0, KL de 0.51, 76.5% de coincidencia en el token superior) en un MoE de 320B comprimido a 96 GiB.
+- Despliegue en hardware Strix Halo: permite ejecutar un modelo de 320B en una única máquina AMD con 128 GB de memoria unificada, usando Vulkan y el fork ROCmFPX, con contexto inicial de 16384 tokens.
+- Generación de código y tareas de razonamiento en entornos controlados: el modelo produce código Python funcional y respuestas aritméticas correctas, aunque la cuantización a 2 bits puede degradar tareas más complejas no verificadas por el autor.
+- Experimentación con decodificación especulativa: el bloque 45 (cabeza de predicción multi-token) está presente pero su matriz de importancia es aproximada, por lo que puede usarse para probar la aceleración opcional, con cautela sobre su calidad.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Q8_0 referencia (orcarouter) | Esta build (2 bits, 288 expertos) | Build 3 bits, 233 expertos (no publicada) |
-|---|---:|---:|---:|
-| Tamano | 318 GiB | 96 GiB | 99 GiB |
-| Perplejidad (wikitext-2) | 2,61 | 4,09 | 6,01 |
-| Divergencia KL frente a Q8 | - | 0,51 | 0,91 |
-| Coincidencia de token top-1 con Q8 | - | 76,5% | 68,8% |
+| Build | Tamano | Perplejidad | KL a Q8 | Mismo token superior que Q8 |
+|---|---:|---:|---:|---:|
+| Q8_0 abliterated de orcarouter (referencia) | 318 GiB | 2.61 | — | — |
+| Esta repo: 2 bits, 288 expertos | 96 GiB | 4.09 | 0.51 | 76.5% |
+| No publicado: 3 bits, 233 de 288 expertos | 99 GiB | 6.01 | 0.91 | 68.8% |
 
-Mediciones realizadas con `llama-perplexity --kl-divergence` sobre 40 fragmentos de 512 tokens de Wikipedia en ingles (wikitext-2), en una GPU NVIDIA GB10. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. Las comprobaciones cualitativas del autor (Fibonacci en Python, 17 x 23 = 391, capital de Australia) son pruebas puntuales, no benchmarks.
+Medición realizada con `llama-perplexity --kl-divergence` frente al Q8_0 abliterated de orcarouter, sobre 40 fragmentos de 512 tokens de texto de Wikipedia en inglés (wikitext-2), ejecutado en una GPU NVIDIA GB10. Menor es mejor en perplejidad y KL. La referencia Q8_0 no es precisión completa, por lo que la pérdida propia de Q8_0 no se contabiliza. El texto es inglés general y no dice nada directo sobre código, razonamiento o chino.
+
+Pruebas cortas en la misma GPU con decodificación greedy: función iterativa de Fibonacci en Python correcta, 17 x 23 = 391 correcto, Canberra como capital de Australia correcta. Rechazos: 0 de 10 solicitudes que un modelo con seguridad rechazaría, y 0 de 8 preguntas inofensivas que suenan arriesgadas (prueba limitada a frases de rechazo en los primeros 64 tokens; no mide utilidad ni precisión).
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: 96 GiB de pesos mas overhead de contexto; el autor recomienda configurar el reparto de memoria del BIOS para que la GPU alcance unos 110 GiB.
-- Hardware objetivo: AMD Strix Halo con 128 GB de memoria unificada. No probado aun en hardware AMD segun el autor.
-- GPU discretas: no se documenta su ejecucion en A100, H100 ni RTX 4090; 96 GiB de pesos exceden la VRAM de cualquier GPU consumer y de una H100 de 80 GB en una sola tarjeta.
-- Despliegue: llama-server de ROCmFPX compilado con Vulkan, con `-ngl 99 -c 16384 --jinja`. Otras builds de llama.cpp pueden no reconocer la arquitectura `glm5-next`.
-- Nota sobre backend: HIP/ROCm solo asigna memoria de la parte dedicada, por lo que un reparto 64/64 en BIOS es insuficiente; es necesario usar Vulkan.
-- Contexto: el autor recomienda empezar con contexto pequeno (16.384 tokens) y subirlo con cuidado por la escasez de memoria libre.
-- Latencia y throughput: no disponibles; el autor pide reportes en la pestana Community.
+- VRAM/memoria unificada estimada: 96 GiB para los pesos, más espacio para contexto KV; el autor recomienda configurar el split de BIOS para que la GPU alcance unos 110 GiB.
+- GPU recomendadas: AMD Strix Halo con 128 GB de memoria unificada (objetivo principal). El autor probó la cuantización en una NVIDIA GB10, no en AMD.
+- No cabe en GPUs de consumo convencionales (RTX 4090 con 24 GB, RTX 3090 con 24 GB, etc.) por el tamaño de 96 GiB.
+- Opciones de despliegue: llama-server de ROCmFPX (fork de HarshaVardhan3002) compilado con Vulkan; otras builds de llama.cpp pueden no reconocer la arquitectura `glm5-next`.
+- Comando de ejemplo: `llama-server -m IQ2_XXS-E288/GLM-5.3-Flash-Uncensored-StrixHalo-IQ2_XXS-E288-00001-of-00003.gguf -ngl 99 -c 16384 --jinja`.
+- Notas de despliegue: usar Vulkan y configurar el split de memoria de BIOS para que la GPU acceda a ~110 GiB; HIP/ROCm solo asigna desde la parte dedicada, por lo que un split 64/64 es insuficiente. Hay poco margen, así que empezar con contexto pequeño y subirlo con cuidado.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
-|---|---|---|---|---|---|
-| Esta build (GLM-5.3-Flash Uncensored StrixHalo IQ2) | 320B totales, 18B activos | 16.384 en ejemplo | IQ2_XXS/IQ3_XXS + Q8_0 | MIT | 96 GiB, perplejidad 4,09, sin guardrails |
-| orcarouter/GLM-5.3-Flash-Uncensored-GGUF (Q8_0) | 320B totales, 18B activos | no disponible | Q8_0 | MIT | 318 GiB, perplejidad 2,61, sin guardrails |
-| unsloth/GLM-5.3-Flash-GGUF | 320B totales, 18B activos | no disponible | varias (incluye matriz de importancia) | MIT | Version con entrenamiento de seguridad original |
-| zai-org/GLM-5.3-Flash | 320B totales, 18B activos | no disponible | pesos originales | MIT | Modelo oficial de Z.ai |
+| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| GLM-5.3-Flash-Uncensored-StrixHalo-GGUF (esta ficha) | 320B | ~18B | No disponible | MIT | GGUF (IQ2_XXS/IQ3_XXS + Q8_0) | 96 GiB, 288 expertos, sin guardarraíles, requiere ROCmFPX |
+| orcarouter/GLM-5.3-Flash-Uncensored-GGUF (Q8_0) | 320B | ~18B | No disponible | MIT | GGUF Q8_0 | 318 GiB, referencia de calidad, sin guardarraíles |
+| zai-org/GLM-5.3-Flash (original) | 320B | ~18B | No disponible | MIT | No disponible | Modelo base con entrenamiento de seguridad |
+| unsloth/GLM-5.3-Flash-GGUF | 320B | ~18B | No disponible | MIT | GGUF (varias cuantizaciones) | Fuente de la matriz de importancia; cuantizaciones estándar |
 
-No se dispone de datos de rendimiento en benchmarks estandar para establecer comparaciones cuantitativas con modelos de otros fabricantes.
+No se dispone de datos de benchmarks comparativos con modelos de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de guardrails: la abliteration elimina el rechazo y el modelo puede cumplir peticiones daninas, ilegales u ofensivas. No debe exponerse a usuarios finales sin capas propias de seguridad y moderacion.
-- Perdida de calidad medible: perplejidad de 4,09 frente a 2,61 del Q8_0 y solo 76,5% de coincidencia del token mas probable. La compresion de 318 GiB a 96 GiB tiene un coste real.
-- Las metricas de perplejidad se calcularon solo sobre Wikipedia en ingles; no dicen nada directo sobre codigo, razonamiento ni chino.
-- Sin probar en hardware AMD: el autor solo ha validado los ficheros con ROCmFPX en una GPU NVIDIA GB10. El rendimiento en Strix Halo es desconocido.
-- Compatibilidad limitada: otras builds de llama.cpp pueden no reconocer la arquitectura `glm5-next`.
-- Sin vision en esta build: el fichero mmproj de orcarouter no se ha probado con esta cuantizacion.
-- Bloque 45 (cabeza de prediccion multi-token) cuantizado con matriz de importancia sustituta; la aceleracion opcional por MTP podria degradarse.
-- Idiomas limitados a ingles y chino; el rendimiento en castellano no esta documentado.
-- Riesgo de alucinacion: inherente al modelo base y potencialmente agravado por la cuantizacion de 2 bits; no hay evaluaciones especificas.
-- Sesgos: no documentados en la informacion disponible, pero la abliteration puede alterar el comportamiento en dominios sensibles.
-- Licencia MIT: permite uso comercial, pero la responsabilidad legal y etica del uso recae integramente en el usuario.
-- El modelo no es una release oficial de Z.ai; todo el credito del modelo base corresponde a Z.ai y el de la abliteration a orcarouter.
+- El entrenamiento de seguridad ha sido eliminado: la abliteration de orcarouter elimina sustancialmente el comportamiento de rechazo, por lo que el modelo puede cumplir solicitudes dañinas, poco éticas, ofensivas o ilegales. No tiene guardarraíles integrados significativos.
+- Uso previsto exclusivamente para investigación (estudios de rechazo e interpretabilidad, red-teaming, evaluación de robustez). No debe exponerse a usuarios finales sin capas propias de seguridad y moderación.
+- La cuantización a 2 bits supone una pérdida de calidad real: perplejidad de 4.09 frente a 2.61 en Q8_0, KL de 0.51 y solo 76.5% de coincidencia en el token superior. El texto de evaluación es inglés general y no dice nada directo sobre código, razonamiento o chino.
+- Los archivos no han sido probados en hardware AMD; solo se probaron con ROCmFPX en una NVIDIA GB10. Otras builds de llama.cpp pueden no reconocer la arquitectura `glm5-next`.
+- La matriz de importancia no tiene datos para el bloque 45 (cabeza de predicción multi-token); se usó el bloque 44 como sustituto, lo que puede afectar a la aceleración opcional por predicción multi-token.
+- Solo se incluye generación de texto; el archivo de visión (mmproj) de orcarouter no ha sido probado con esta build.
+- Idiomas limitados a inglés y chino; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
+- Riesgo de alucinación inherente a los modelos de lenguaje, potencialmente agravado por la cuantización extrema y la ausencia de entrenamiento de seguridad.
+- Restricciones de licencia: MIT permite uso comercial, pero el autor advierte que el usuario es totalmente responsable del uso y del contenido generado, y debe cumplir la legislación aplicable.
+- El modelo no es una release oficial; todo el crédito del modelo corresponde a Z.ai y el de la abliteration a orcarouter.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Harsha001/GLM-5.3-Flash-Uncensored-StrixHalo-GGUF
+- Hugging Face: https://huggingface.co/Harsha001/GLM-5.3-Flash-Uncensored-StrixHalo-GGUF
 - Modelo base (abliterated Q8_0): https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-GGUF
 - Modelo original de Z.ai: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Matriz de importancia de Unsloth: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
-- Fork ROCmFPX de llama.cpp: https://github.com/HarshaVardhan3002/ROCmFPX
+- Matriz de importancia (Unsloth): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
+- Fork ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
+- Modelo destacado del mismo autor (DeepSeek-V4.1-Flash en Strix Halo): https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-StrixHalo-GGUF

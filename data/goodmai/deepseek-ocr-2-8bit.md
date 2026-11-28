@@ -2,87 +2,92 @@
 
 ## Resumen
 
-DeepSeek-OCR-2-8bit es una conversión al formato MLX, en cuantización de 8 bits, del modelo DeepSeek-OCR-2, un sistema vision-language especializado en reconocimiento óptico de caracteres (OCR) y extracción de texto a partir de imágenes. La conversión la ha publicado el usuario goodmai en Hugging Face, partiendo del checkpoint prince-canuma/DeepSeek-OCR-2 y utilizando la herramienta mlx-vlm en su versión 0.3.10. El modelo original procede de la familia DeepSeek, orientada a modelos de lenguaje y visión de código abierto.
+DeepSeek-OCR-2-8bit es una conversión a 8 bits del modelo DeepSeek-OCR-2, un modelo de visión-lenguaje especializado en reconocimiento óptico de caracteres (OCR) y extracción de texto desde imágenes. El repositorio lo publica el usuario goodmai y deriva del formato MLX de `mlx-community/DeepSeek-OCR-2-8bit`, que a su vez se convirtió desde `prince-canuma/DeepSeek-OCR-2` con mlx-vlm 0.3.10. La tarea declarada en el pipeline es `image-text-to-text`, con soporte multilingüe.
 
-El modelo resuelve el problema de convertir imágenes con texto (documentos escaneados, capturas, fotografías, diagramas) en texto estructurado y descripciones, con soporte multilingüe y capacidad conversacional de múltiples turnos sobre la imagen. Con 3.389.119.360 parámetros totales y un peso de repositorio de 4,0 GB, está pensado para ejecutarse en hardware Apple Silicon mediante MLX, lo que lo hace interesante para desarrolladores que quieren desplegar OCR de calidad en local sin depender de servicios en la nube.
+El modelo cuenta con 3.389.119.360 parámetros (aproximadamente 3,39 mil millones) según los pesos en safetensors, y el repositorio ocupa 4,0 GB. Está pensado para ejecutarse en Apple Silicon mediante MLX y la aplicación Basalt, una herramienta nativa de macOS escrita en Swift. La licencia es Apache 2.0, lo que facilita su uso comercial y su integración en productos.
 
-Su relevancia actual radica en la combinación de licencia Apache 2.0 (permite uso comercial), soporte multilingüe y un pipeline image-text-to-text que va más allá del OCR clásico: no solo transcribe, sino que puede razonar y responder preguntas sobre el contenido visual. La cuantización a 8 bits reduce el coste de memoria y facilita la inferencia en equipos de consumo, a costa de una posible pérdida menor de precisión frente al modelo original en precisión completa.
+Su relevancia actual radica en la demanda de soluciones de OCR ligeras y desplegables en hardware de consumo, especialmente en el ecosistema Mac. No obstante, la información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada: la model card es una plantilla de conversión y no incluye detalles técnicos del modelo original.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Vision-language transformer (familia DeepSeek-OCR), con codificador visual y decoder de lenguaje; requiere custom_code |
-| Parametros totales | 3.389.119.360 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (etiqueta `deepseekocr_2`, transformer de visión-lenguaje) |
+| Parámetros totales | 3.389.119.360 (~3,39 B) |
+| Parámetros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8 bits (esta version); el modelo original admite otras conversiones no detalladas |
-| Idiomas soportados | multilingue (sin listado concreto de idiomas) |
+| Tipos de cuantización | 8 bits (versión publicada); el original admite otras según el repo upstream |
+| Idiomas soportados | multilingüe (sin listado detallado) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (formato MLX); repo de 4,0 GB |
+| Formato de pesos | safetensors (conversión MLX); el original en transformers |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de que se trata de un modelo vision-language de la familia DeepSeek-OCR, con pipeline image-text-to-text y etiqueta deepseekocr_2. El checkpoint requiere codigo personalizado (custom_code) para cargarse, lo que indica que la implementacion no esta integrada de forma estandar en transformers y depende de modulos propios del modelo. El modelo combina un componente de procesamiento de imagen con un decoder de lenguaje capaz de generar texto y mantener conversaciones sobre la imagen de entrada.
+No se dispone de información detallada sobre la arquitectura interna del modelo en la documentación proporcionada. Las etiquetas indican `deepseekocr_2`, `vision-language` y `custom_code`, lo que sugiere un transformer multimodal con codificador visual y decodificador de lenguaje, pero no se especifican capas, dimensión oculta, mecanismo de atención ni estrategia de fusión multimodal. El pipeline `image-text-to-text` confirma que acepta imágenes y genera texto.
 
-No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. La unica informacion tecnica concreta es la relativa al proceso de conversion: se genero con mlx-vlm 0.3.10 a partir de prince-canuma/DeepSeek-OCR-2, lo que implica una conversion de pesos a formato MLX y una cuantizacion a 8 bits.
+Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composición, proporción de datos OCR frente a texto general), ni sobre si se aplicaron técnicas de alineación como RLHF o DPO. La model card únicamente documenta el proceso de conversión: se generó con mlx-vlm 0.3.10 a partir de `prince-canuma/DeepSeek-OCR-2` y se publicó también en `mlx-community`. Cualquier innovación técnica del modelo original (por ejemplo, decodificación especulativa o atención lineal) no está descrita en la información disponible.
 
 ## Capacidades
 
-- Reconocimiento optico de caracteres (OCR) sobre imagenes: extraccion de texto de documentos, capturas y fotografias.
-- Generacion de descripciones de imagenes (image captioning) y respuesta a preguntas sobre el contenido visual.
-- Conversacion multi-turno sobre una imagen, segun la etiqueta conversational del modelo.
-- Soporte multilingue, segun la etiqueta language: multilingual (sin listado cerrado de idiomas).
-- Procesamiento de documentos con estructura (la especializacion OCR sugiere manejo de texto en layout, aunque no se detalla).
-- Inferencia en local sobre Apple Silicon mediante MLX y mlx-vlm.
-- No se confirma soporte de tool calling, function calling, agentes ni modos de razonamiento explicito (thinking mode) en la informacion disponible.
+- Extracción de texto desde imágenes (OCR) en modo image-text-to-text.
+- Generación de descripciones de imágenes ("Describe this image").
+- Procesamiento multilingüe según la etiqueta `language: multilingual`, aunque sin listado de idiomas concretos.
+- Conversación multimodal (etiqueta `conversational`).
+- Ejecución en Apple Silicon mediante MLX y la app Basalt.
+- Soporte de tool calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades de audio o visión más allá del OCR: no disponible.
 
 ## Casos de uso
 
-- Digitalizacion de documentos escaneados en local: el modelo puede transcribir facturas, contratos o formularios a texto para pipelines internos, ejecutandose en un Mac con Apple Silicon sin enviar datos a terceros.
-- Extraccion de texto de capturas de pantalla en herramientas de productividad: integrado en una app de escritorio, convierte capturas en texto copiable o en notas estructuradas.
-- Procesamiento de documentacion multilingue: al ser multilingue y Apache 2.0, permite construir un servicio de OCR para documentos en varios idiomas sin coste de licencia.
-- Accesibilidad: describir imagenes y leer texto en voz alta para usuarios con discapacidad visual, usando la capacidad de captioning y OCR del modelo.
-- Indexacion de archivos PDF e imagenes para busqueda semantica: el texto extraido alimenta un motor de busqueda o un RAG interno, con la ventaja de ejecucion local y privacidad.
-- Prototipado rapido en investigacion: gracias a la conversion MLX y a su tamano contenido (3,4 mil millones de parametros), sirve para experimentar con pipelines vision-language en un portatil Apple sin GPU dedicada.
-- Automatizacion de entrada de datos en back office: lectura de albaranes o tickets y volcado a un sistema de gestion, con revision humana posterior dado el riesgo de error del OCR.
+- Digitalización de documentos en macOS: el modelo puede procesar imágenes de facturas, contratos o formularios y devolver el texto extraído, ejecutándose de forma local en Apple Silicon mediante MLX sin necesidad de enviar datos a la nube.
+- Extracción de texto en aplicaciones de escritorio: integrable en la app Basalt (`basalt serve --pipeline-ocr-model ...`) para añadir OCR a un pipeline de generación de texto existente.
+- Procesamiento de capturas de pantalla: útil para convertir capturas en texto editable en herramientas de productividad, aprovechando el formato 8 bits para reducir el uso de memoria.
+- Preprocesado de datos para pipelines de IA: extracción de texto de imágenes escaneadas antes de alimentar modelos de lenguaje o sistemas RAG.
+- Accesibilidad: lectura en voz alta de documentos impresos o imágenes con texto para usuarios con discapacidad visual, combinando el OCR con un sintetizador de voz.
+- Archivado y búsqueda documental: indexación de textos extraídos de imágenes para motores de búsqueda internos, con la ventaja de que el modelo cabe en un equipo de consumo.
+- Prototipado e investigación en visión-lenguaje: base para experimentos de OCR multilingüe en entornos con hardware limitado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: el repo pesa 4,0 GB en cuantizacion de 8 bits, por lo que se necesita al menos ese espacio mas el overhead de activaciones y del codificador visual; en la practica, se recomienda disponer de 8 GB o mas de memoria unificada.
-- GPU recomendadas: al estar en formato MLX, el destino principal es Apple Silicon (series M1, M2, M3, M4 y superiores). No se documenta soporte para CUDA en esta version.
-- Cabe en GPU de consumo: si, en equipos Apple con memoria unificada suficiente; no se confirma su funcionamiento en GPUs NVIDIA consumer con este checkpoint.
-- Opciones de despliegue: mlx-vlm (comando `python -m mlx_vlm.generate`), con integracion en transformers para el modelo original. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para esta conversion.
+- VRAM/RAM estimada: con 3,39 B parámetros en 8 bits, los pesos ocupan aproximadamente 3,4 GB; el repositorio completo son 4,0 GB. La memoria efectiva de inferencia será superior por el codificador visual, el contexto y los buffers de activación (estimación orientativa, no confirmada).
+- GPU recomendadas: el formato publicado es MLX, orientado a Apple Silicon (chips M1/M2/M3/M4). Para GPU NVIDIA no se documenta una ruta de despliegue en esta versión.
+- Cabe en GPU de consumo: sí, en términos de tamaño de pesos; en Apple Silicon cabe en equipos con 8 GB o más de memoria unificada, aunque no se especifica el mínimo oficial.
+- Opciones de despliegue: mlx-vlm (`python -m mlx_vlm.generate`), Basalt v0.11.0 (macOS 27+, Swift 6.4), y transformers con `trust_remote_code` para el formato original.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato/despliegue | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-OCR-2-8bit (este) | 3.389.119.360 | no disponible | Apache 2.0 | MLX, safetensors, 8 bits | Conversion comunitaria para Apple Silicon |
-| prince-canuma/DeepSeek-OCR-2 | no disponible | no disponible | no disponible | transformers (custom_code) | Checkpoint de origen de la conversion |
-| mlx-community/DeepSeek-OCR-2-8bit | no disponible | no disponible | no disponible | MLX | Referencia citada en la model card como origen del formato |
+| goodmai/DeepSeek-OCR-2-8bit | ~3,39 B | no disponible | Apache 2.0 | safetensors (MLX) | Conversión 8 bits para Apple Silicon |
+| mlx-community/DeepSeek-OCR-2-8bit | no disponible | no disponible | Apache 2.0 | MLX | Origen directo de esta conversión |
+| prince-canuma/DeepSeek-OCR-2 | no disponible | no disponible | no disponible | transformers | Modelo original del que deriva la cadena |
 
-No se dispone de datos de rendimiento comparado con alternativas como PaddleOCR, Tesseract o modelos vision-language generales, por lo que la comparativa se limita a parametros y disponibilidad.
+No se dispone de datos de rendimiento comparativo entre estas variantes ni con otros modelos OCR de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La model card es minima y remite al modelo original; no documenta sesgos, tasas de error ni evaluaciones de calidad.
-- Riesgo de alucinacion inherente a los modelos generativos: puede inventar texto que no aparece en la imagen, especialmente con documentos degradados o de baja resolucion.
-- La cuantizacion a 8 bits puede degradar la precision del OCR frente al modelo original en precision completa; conviene validar con muestras reales antes de produccion.
-- No se detalla la longitud de contexto ni el numero de idiomas soportados; el soporte multilingue es una etiqueta generica sin garantias por idioma.
-- Dependencia de codigo personalizado (custom_code): la carga con transformers puede requerir versiones concretas y no es portable a todos los frameworks.
-- Esta version esta orientada a MLX y Apple Silicon; no se documenta su uso en CUDA, lo que limita el despliegue en servidores tradicionales.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y es una conversion comunitaria no oficial; no hay garantia de mantenimiento.
-- Licencia Apache 2.0 permite uso comercial, pero debe verificarse la licencia y condiciones del modelo original y de los pesos de origen antes de explotarlo en produccion.
+- La model card es una plantilla de conversión; no documenta sesgos, tasas de error ni limitaciones específicas del modelo.
+- Riesgo de alucinación inherente a los modelos generativos: puede producir texto que no aparece en la imagen, especialmente con documentos degradados o poco legibles.
+- Cobertura idiomática declarada como "multilingual" sin listado; el rendimiento por idioma no está verificado.
+- Longitud de contexto y resolución máxima de imagen no documentadas; imágenes de alta resolución o documentos muy extensos pueden requerir troceado.
+- La versión publicada está en formato MLX y orientada a Apple Silicon; para otros entornos conviene usar el modelo original en transformers.
+- Aunque la licencia Apache 2.0 permite uso comercial, conviene revisar la licencia y condiciones del modelo original (`prince-canuma/DeepSeek-OCR-2`) y de la cadena de conversión.
+- Requiere `trust_remote_code` por el uso de `custom_code`, lo que implica ejecutar código del repositorio; auditar antes de usar en producción.
+- Sin benchmarks publicados, no es posible garantizar calidad frente a alternativas comerciales de OCR.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/goodmai/DeepSeek-OCR-2-8bit
-- Modelo original de referencia: https://huggingface.co/prince-canuma/DeepSeek-OCR-2
-- Repositorio citado en la model card: https://huggingface.co/mlx-community/DeepSeek-OCR-2-8bit
-- Herramienta de conversion: mlx-vlm (version 0.3.10), disponible en el ecosistema MLX de Apple
+- Hugging Face: https://huggingface.co/goodmai/DeepSeek-OCR-2-8bit
+- Modelo MLX de origen: https://huggingface.co/mlx-community/DeepSeek-OCR-2-8bit
+- Modelo original: https://huggingface.co/prince-canuma/DeepSeek-OCR-2
+- Basalt (repositorio): https://github.com/goodmai/basalt
+- Basalt v0.11.0: https://github.com/goodmai/basalt/releases/tag/v0.11.0
+- Web de Basalt: https://bas-alt.vercel.app
+- Demo "Run with Basalt": https://goodmai-run-with-basalt.static.hf.space/?model=goodmai%2FDeepSeek-OCR-2-8bit&role=ocr
+- mlx-vlm: https://github.com/Blaizzy/mlx-vlm

@@ -2,108 +2,96 @@
 
 ## Resumen
 
-Mia-v2-29B-GGUF es un repositorio de cuantizaciones en formato GGUF generado por el usuario mradermacher a partir del modelo base AIVORENCE/Mia-v2-29B. No se trata por tanto de un entrenamiento nuevo, sino de una conversion de pesos a precisión reducida orientada a inferencia local con llama.cpp y runtimes compatibles con GGUF. El autor publica un conjunto amplio de variantes de cuantizacion que van desde Q2_K hasta Q8_0, además de una version F16 sin comprimir.
+Mia-v2-29B-GGUF es la distribucion en formato GGUF del modelo veld-ai/Mia-v2-29B, publicada por el usuario mradermacher, conocido en Hugging Face por cuantizar sistematicamente modelos abiertos para su uso con llama.cpp y derivados. El repositorio no contiene pesos originales en safetensors, sino un conjunto de cuantizaciones estaticas que abarcan desde Q2_K (12,0 GB) hasta Q8_0 (32,7 GB), ademas de dos ficheros mmproj (Q8_0 y f16) que indican soporte multimodal de vision en el modelo base.
 
-El modelo base cuenta con 30.697.345.596 parametros reales segun los tensores en safetensors, aunque se comercializa bajo la denominacion comercial "29B". La etiqueta "conversational" y el pipeline declarado en Hugging Face apuntan a un modelo ajustado para dialogo, aunque la informacion disponible no detalla la arquitectura interna, el numero de tokens de entrenamiento ni la composicion del dataset.
+El modelo subyacente declara 30.697.345.596 parametros reales en safetensors, aunque se comercializa con la etiqueta "29B", y esta pensado para conversacion (tag `conversational`). La model card del repositorio GGUF es puramente procedimental: describe las cuantizaciones disponibles y remite al modelo base para cualquier detalle de arquitectura, entrenamiento o evaluacion. No se aportan datos sobre longitud de contexto, composicion del dataset, tecnicas de alineamiento ni resultados de benchmarks.
 
-La relevancia de este repositorio es practica: permite ejecutar un modelo de aproximadamente 30.000 millones de parametros en hardware de consumo o en servidores con GPU modesta, eligiendo el nivel de cuantizacion segun la VRAM disponible. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y la model card es puramente instrumental, sin documentacion tecnica adicional sobre capacidades, licencia o idiomas.
+La relevancia de esta ficha es practica: permite ejecutar un modelo de ~30B en hardware de consumo o servidores modestos mediante cuantizacion, con la advertencia de que la informacion tecnica disponible es muy limitada y que la licencia no aparece declarada en el repositorio. Cualquier evaluacion de calidad debe hacerse contra el modelo base veld-ai/Mia-v2-29B, no contra esta distribucion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio solo indica que el modelo base es conversacional; no se documenta si es transformer denso, MoE o hibrido) |
-| Parametros totales | 30.697.345.596 (aproximadamente 30,7 mil millones) |
-| Parametros activos | no disponible (no hay indicios de que sea un modelo MoE) |
+| Arquitectura | no disponible (modelo base transformer, no confirmado en la informacion) |
+| Parametros totales | 30.697.345.596 (dato real de safetensors) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16 (x-f16), Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (segun model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (el modelo base original estaria en safetensors) |
-| Tamano del repositorio | 19,8 GB |
-| Modelo base | AIVORENCE/Mia-v2-29B |
-| Fecha de creacion del repositorio | 22 de septiembre de 2026 (segun los metadatos de Hugging Face) |
-| Fecha de ultima actualizacion | 22 de septiembre de 2026 |
-| Descargas / likes | 0 / 0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); repo de 213,9 GB |
+| Modelo base | veld-ai/Mia-v2-29B |
+| Cuantizaciones ponderadas/imatrix | disponibles en mradermacher/Mia-v2-29B-i1-GGUF |
+| Compatibilidad de endpoints | endpoints_compatible (tag) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del modelo. Los metadatos del repositorio unicamente incluyen la etiqueta "conversational" y la coleccion habitual de cuantizaciones estaticas generadas por la herramienta de mradermacher, que produce variantes con `quantize_version: 2` y `output_tensor_quantised: 1` y `convert_type: hf` (es decir, una conversion directa desde pesos en formato Hugging Face). No se especifica si el modelo base emplea attention estandar, attention lineal, mezcla de expertos, capas SSM o alguna combinacion.
+No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. El nombre y el tamano (30,7 mil millones de parametros) son compatibles con un transformer denso de gran tamano, pero no se confirma ni el tipo de atencion, ni si emplea mezcla de expertos, ni la longitud de contexto nativa. La presencia de ficheros `mmproj` en el repositorio GGUF es el unico indicio tecnico relevante: corresponde al proyector multimodal que llama.cpp utiliza para modelos con capacidad de vision, lo que sugiere que Mia-v2-29B incorpora un codificador visual.
 
-Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del corpus, uso de RLHF, DPO, SFT u otras tecnicas de alineamiento. El nombre "Mia-v2" sugiere una segunda iteracion de un modelo previo del mismo autor (AIVORENCE), pero no se aporta ningun detalle verificable al respecto. Cualquier afirmacion sobre innovaciones tecnicas (decodificacion especulativa, GQA, RoPE escalado, etc.) seria especulativa y no se incluye aqui.
+Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, proporciones de codigo o multilingue), ni sobre si se aplicaron tecnicas de alineamiento como RLHF, DPO o instruction tuning supervisado. La model card del repositorio GGUF es una plantilla generada automaticamente por el pipeline de mradermacher, con metadatos de cuantizacion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) pero sin ninguna descripcion del modelo. Cualquier afirmacion sobre innovaciones tecnicas (decodificacion especulativa, atencion lineal, etc.) seria especulativa y no se incluye.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" y expuesto como endpoint compatible, lo que indica soporte para dialogos multi-turno con plantilla de chat.
-- Razonamiento y generacion de codigo: no confirmado en la informacion disponible.
-- Matematicas: no confirmado en la informacion disponible.
-- Vision: no disponible; el repositorio no incluye ficheros `mmproj` (la model card indica `skip_mmproj` vacio), lo que sugiere que se trata de un modelo exclusivamente de texto.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, audio, etc.): no disponible.
+- Generacion de texto conversacional: el tag `conversational` y la categoria de pipeline implican uso orientado a dialogo multi-turno.
+- Procesamiento multimodal de imagen: la presencia de ficheros `mmproj` (Q8_0 y f16) indica soporte de entrada visual mediante el proyector de llama.cpp.
+- Idiomas: la model card declara unicamente `en`; no hay evidencia de soporte multilingue adicional.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Capacidades de codigo y matematicas: no documentadas; no se pueden afirmar sin benchmarks.
 
 ## Casos de uso
 
-- Despliegue de un asistente conversacional autoalojado: al ser un GGUF de aproximadamente 30.000 millones de parametros, puede ejecutarse con llama.cpp u Ollama en una estacion de trabajo con una unica GPU de 24 GB usando Q4_K_M, sin depender de APIs externas ni enviar datos a terceros.
-- Prototipado de aplicaciones de chat en local: la disponibilidad de variantes Q2_K y Q3_K permite probar el modelo en equipos con 12-16 GB de VRAM o incluso en CPU con memoria RAM suficiente, antes de decidir una cuantizacion mayor para produccion.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye 12 variantes distintas, lo que lo hace util para medir la degradacion de calidad y el consumo de memoria entre Q2_K, Q4_K_M y Q8_0 sobre una misma tarea.
-- Integracion en pipelines con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que puede servirse detras de una interfaz compatible con la API de OpenAI, lo que facilita sustituir un proveedor externo por inferencia propia.
-- Procesamiento de texto por lotes en servidor: con vLLM o TGI y pesos convertidos, un modelo de ~30B en una A100 80 GB o H100 permite generar resumenes, clasificaciones o extracciones sobre volumenes grandes de documentos.
-- Educacion e investigacion en entornos sin conectividad: sirve como banco de pruebas para estudiar comportamiento conversacional de modelos de ~30B en infraestructura aislada, siempre que se asuma la ausencia de documentacion sobre sesgos y alineamiento.
-- Base para fine-tuning posterior: los pesos F16 del modelo original pueden servir de punto de partida para ajustes especificos de dominio, aunque la licencia no documentada es un obstaculo para uso comercial.
+- Despliegue local de un asistente conversacional de ~30B: con la cuantizacion Q4_K_M (18,8 GB) el modelo cabe en una GPU de 24 GB o en configuraciones CPU+GPU con llama.cpp, lo que permite operar un chatbot privado sin depender de APIs externas.
+- Procesamiento de documentos con imagen en entornos con requisitos de privacidad: usando los ficheros mmproj junto con los pesos cuantizados, se puede alimentar el modelo con capturas, formularios escaneados o diagramas y obtener descripciones o respuestas en texto dentro de una infraestructura controlada.
+- Prototipado rapido en estaciones de trabajo: la cuantizacion Q4_K_S (17,9 GB, marcada como "fast, recommended") permite iterar sobre prompts y flujos conversacionales en una RTX 4090 o A6000 sin necesidad de clústeres multi-GPU.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece once variantes de pesos mas dos proyectores, lo que facilita medir la degradacion de perplejidad entre Q2_K y Q8_0 sobre el mismo modelo base antes de fijar una version para produccion.
+- Integracion en aplicaciones de escritorio o edge con llama.cpp/Ollama: el formato GGUF y la disponibilidad de Q3_K_S (13,9 GB) permiten empaquetar el modelo en herramientas locales con RAM de 16-32 GB, aceptando la perdida de calidad asociada a cuantizaciones bajas.
+- Fine-tuning o investigacion sobre el modelo base: quien necesite entrenar o adaptar Mia-v2-29B debe acudir a veld-ai/Mia-v2-29B en safetensors; esta distribucion GGUF sirve como referencia de inferencia y como base para comparar el efecto de la cuantizacion en tareas concretas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra evaluacion. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a proveedores de recambios industriales italianos y no guardan ninguna relacion con Mia-v2-29B.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM que siguen son estimaciones de ingenieria basadas en el numero de parametros declarado (30,7 mil millones) y en el tamano tipico de cada tipo de cuantizacion GGUF; no proceden de mediciones publicadas para este modelo concreto.
-
-- VRAM estimada para inferencia (solo pesos, sin cache KV):
-  - F16: aproximadamente 61-62 GB.
-  - Q8_0: aproximadamente 33 GB.
-  - Q6_K: aproximadamente 25-26 GB.
-  - Q5_K_M: aproximadamente 21-22 GB.
-  - Q4_K_M: aproximadamente 18-19 GB.
-  - IQ4_XS: aproximadamente 16-17 GB.
-  - Q3_K_M: aproximadamente 15 GB.
-  - Q2_K: aproximadamente 11-12 GB.
-- La cache KV para contextos largos anade varios GB adicionales; la longitud de contexto del modelo no esta documentada, por lo que el consumo real depende de la configuracion elegida en el runtime.
-- GPU recomendadas para produccion: A100 80 GB o H100 80 GB para F16, Q8_0 y contextos largos; A100 40 GB, L40S 48 GB o RTX 6000 Ada 48 GB para Q5_K_M y Q6_K.
-- Cabe en GPU de consumo: si, con matices. Una RTX 4090 o RTX 3090 de 24 GB puede ejecutar Q4_K_M con contexto moderado y offload parcial; Q3_K_M e IQ4_XS dejan mas margen para cache KV. Las variantes Q2_K pueden caber en GPU de 12-16 GB, con la perdida de calidad asociada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier servidor con soporte GGUF (llama-cpp-python, KoboldCpp). Para vLLM o TGI seria necesario partir del modelo base en safetensors y aplicar cuantizacion AWQ/GPTQ propia.
-- Latencia y throughput estimados: no disponibles. No se han publicado mediciones para este modelo. A modo de referencia general, un modelo denso de ~30B en Q4_K_M sobre una RTX 4090 suele quedar en el rango de decenas de tokens por segundo, pero no hay datos verificados para este caso.
+- VRAM estimada segun cuantizacion (solo pesos, sin KV cache): Q2_K 12,0 GB; Q3_K_S 13,9 GB; Q3_K_M 15,4 GB; Q3_K_L 16,7 GB; IQ4_XS 17,0 GB; Q4_K_S 17,9 GB; Q4_K_M 18,8 GB; Q5_K_S 21,4 GB; Q5_K_M 21,9 GB; Q6_K 25,3 GB; Q8_0 32,7 GB.
+- Proyector multimodal adicional: 0,9 GB (mmproj-Q8_0) o 1,3 GB (mmproj-f16), que se suma a la VRAM de los pesos.
+- GPU de consumo: Q4_K_M (18,8 GB) entra en una RTX 4090 (24 GB) dejando margen para contexto; Q5_K_M y Q6_K requieren 24 GB con contexto corto o particionado; Q8_0 no cabe en GPU de consumo de 24 GB.
+- GPU profesionales: A100 40/80 GB, H100 y L40S permiten Q8_0 completo y contextos amplios; A6000 (48 GB) cubre Q8_0 con holgura.
+- Despliegue: llama.cpp, Ollama y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere uso con endpoints de inferencia tipo Hugging Face. vLLM y TGI no son la via natural para GGUF, aunque existen soportes parciales.
+- Latencia y throughput: no disponibles; dependen de la cuantizacion, del backend y del hardware, y no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones completas de Mia-v2-29B, por lo que la comparacion solo puede hacerse a nivel de parametros, formato y licencia. Los modelos de la tabla son alternativas habituales en el segmento de 27-35 mil millones de parametros con disponibilidad en GGUF.
+| Modelo | Parametros | Contexto | Formato / licencia | Notas |
+|---|---|---|---|---|
+| Mia-v2-29B-GGUF (este) | 30,7 B | no disponible | GGUF, licencia no disponible | Cuantizaciones estaticas de 12,0 a 32,7 GB; vision via mmproj |
+| Mia-v2-29B (base) | 30,7 B | no disponible | safetensors, licencia no disponible | Fuente de las cuantizaciones; referencia para evaluacion |
+| Mia-v2-29B-i1-GGUF (mismo autor) | 30,7 B | no disponible | GGUF imatrix | Cuantizaciones ponderadas, habitualmente mejor relacion calidad/tamano |
+| Alternativas de ~30B | no disponible | no disponible | no disponible | No se dispone de datos verificables para comparar rendimiento |
 
-| Modelo | Parametros | Contexto | Licencia | Formato GGUF | Datos de rendimiento |
-|---|---|---|---|---|---|
-| Mia-v2-29B | 30,7 B | no disponible | no disponible | Si (12 variantes) | no disponibles |
-| Qwen2.5-32B | 32,5 B | 128 K tokens | Apache 2.0 (salvo variantes) | Si | Publicados por el autor |
-| Gemma 2 27B | 27,2 B | 8 K tokens | Gemma Terms of Use | Si | Publicados por el autor |
-| Yi-1.5-34B | 34,4 B | 4 K-200 K tokens (segun variante) | Apache 2.0 en la mayoria de versiones | Si | Publicados por el autor |
-
-La diferencia mas relevante en la comparativa no es el tamano, sino la ausencia total de documentacion: los tres modelos alternativos publican arquitectura, contexto, licencia y resultados de evaluacion, mientras que para Mia-v2-29B estos datos no estan disponibles en la informacion consultada.
+No se dispone de informacion suficiente para comparar rendimiento con modelos de la misma categoria; cualquier tabla de benchmarks seria inventada.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: sin una licencia explicita, no se puede asumir permiso para uso comercial. Cualquier despliegue en produccion deberia aclararse antes con el autor del modelo base (AIVORENCE).
-- Ausencia de documentacion tecnica: no se conocen arquitectura, datos de entrenamiento, proceso de alineamiento ni idiomas soportados. Esto impide evaluar riesgos de sesgo o de comportamiento fuera de distribucion.
-- Riesgo de alucinacion: no cuantificado. Al no existir evaluaciones publicadas, no hay ninguna medida de fiabilidad factual ni de tasa de error en tareas de conocimiento.
-- Longitud de contexto desconocida: limita el diseno de aplicaciones que dependan de ventanas largas (analisis de documentos extensos, historiales de conversacion prolongados).
-- Idiomas: no se confirma soporte de castellano. Aunque el modelo base probablemente sea multilingue, no hay ninguna declaracion al respecto y el rendimiento en espanol no esta verificado.
-- Perdida de calidad por cuantizacion: las variantes Q2_K y Q3_K_S son agresivas para un modelo de ~30B y suelen degradar de forma apreciable el razonamiento y la coherencia. Para uso serio se recomienda Q4_K_M o superior.
-- Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad y de informes de errores.
-- Metadatos inconsistentes: la fecha de creacion registrada (22 de septiembre de 2026) es posterior al momento de la mayoria de consultas actuales, lo que sugiere un error en los metadatos de Hugging Face o una fecha mal introducida. Conviene verificarlo antes de citar el dato.
-- Modelo exclusivamente de texto: no se incluye fichero de proyeccion multimodal, por lo que no hay soporte de vision.
-- Sin garantias de soporte: se trata de una conversion de terceros (mradermacher) sobre un modelo de otro autor (AIVORENCE); ninguno de los dos ha publicado documentacion de mantenimiento o actualizaciones.
+- Licencia no declarada: no hay informacion sobre permisos de uso comercial, redistribucion o modificacion; es imprescindible consultar el repositorio del modelo base antes de usarlo en produccion.
+- Informacion tecnica minima: se desconocen contexto nativo, arquitectura exacta, datos de entrenamiento y alineamiento, lo que impide estimar su comportamiento en tareas exigentes.
+- Solo ingles declarado: el uso en castellano u otros idiomas no esta respaldado por la model card y puede degradar la calidad.
+- Riesgo de alucinacion: inherente a los modelos generativos; sin benchmarks ni evaluaciones publicadas no se puede acotar su fiabilidad factual.
+- Cuantizaciones bajas: Q2_K y Q3_K_S reducen notablemente la calidad; el propio autor marca Q3_K_M como "lower quality". Para produccion conviene Q4_K_M o superior.
+- Vision dependiente del proyector: el soporte multimodal requiere cargar el fichero mmproj correspondiente y un backend que lo soporte; no todos los entornos lo hacen.
+- Sesgos: no documentados; al no conocerse el corpus de entrenamiento no se pueden identificar sesgos especificos.
+- Repositorio de 213,9 GB: descargar el conjunto completo es costoso; conviene bajar solo la cuantizacion necesaria.
+- Fechas de creacion y actualizacion (2026) poco habituales: conviene verificar la vigencia y procedencia del modelo base antes de adoptarlo.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Mia-v2-29B-GGUF
-- Modelo base: https://huggingface.co/AIVORENCE/Mia-v2-29B
-- Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los enlaces recuperados corresponden a sitios de recambios industriales sin relacion con este repositorio.
+- Modelo base: https://huggingface.co/veld-ai/Mia-v2-29B
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Mia-v2-29B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Mia-v2-29B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de perplejidad por cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

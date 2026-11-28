@@ -2,83 +2,100 @@
 
 ## Resumen
 
-SevenDays3D/Qwen3-30B-A3B es un repositorio alojado en Hugging Face por el usuario SevenDays3D que, por su denominación, corresponde a la familia Qwen3 desarrollada por Alibaba Cloud (equipo Qwen). El nombre indica un modelo con 30.000 millones de parámetros totales y 3.000 millones de parámetros activos, lo que sugiere una arquitectura de mezcla de expertos (MoE) con activación dispersa. Sin embargo, la model card publicada en el repositorio está vacía: solo contiene la etiqueta de licencia `apache-2.0` y no incluye documentación técnica, datos de entrenamiento, especificaciones ni resultados de evaluación.
+Qwen3-30B-A3B es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por Alibaba Qwen y publicado en diciembre de 2025. Con 30.530 millones de parámetros totales y solo 3.300 millones activos por token, ofrece un equilibrio poco habitual entre capacidad y coste de inferencia: se comporta como un modelo denso de gran tamaño en calidad, pero con el coste computacional de uno mucho más pequeño. La ficha que nos ocupa es una cuantización GGUF publicada por el usuario SevenDays3D, derivada directamente del modelo base oficial.
 
-El repositorio no presenta descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no declara pipeline, idiomas soportados ni formatos de pesos. Esto impide verificar si se trata de una réplica de los pesos oficiales de Qwen3-30B-A3B, de una conversión a otro formato (por ejemplo, GGUF o cuantizaciones), de un fine-tuning o de un artefacto incompleto. Cualquier evaluación técnica debe por tanto remitirse a la documentación oficial del modelo original de Qwen, no a este repositorio.
+El modelo integra dos modos de operación en un mismo checkpoint: un modo de razonamiento (thinking) que genera un bloque interno de deliberación antes de responder, y un modo directo (non-thinking) orientado a latencia baja. Esta conmutación se puede forzar por prompt mediante los marcadores `/think` y `/no_think`. Está diseñado para tareas de razonamiento matemático, generación de código, seguimiento de instrucciones, diálogo multi-turno y uso agéntico con llamadas a herramientas.
 
-La relevancia de esta ficha es limitada: sirve para documentar la existencia del repositorio y advertir de la ausencia de información verificable, de modo que un desarrollador o investigador no asuma especificaciones que no están publicadas por el autor de esta copia.
+La relevancia actual del modelo radica en su soporte de 100+ idiomas, su contexto nativo de 32.768 tokens ampliable a 131.072 mediante YaRN, y su compatibilidad con los principales motores de inferencia del ecosistema (Transformers, vLLM, SGLang, llama.cpp, Ollama, LM Studio, MLX-LM y KTransformers). La cuantización GGUF aquí descrita facilita su despliegue en entornos con VRAM limitada, aunque conviene señalar que el repositorio declara únicamente el idioma ruso en sus metadatos, lo que no refleja las capacidades reales del modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere MoE con 30B totales y 3B activos, sin confirmar en la model card) |
-| Parámetros totales | 30B según la denominación del repositorio; no confirmado en la model card |
-| Parámetros activos | 3B según la denominación del repositorio; no confirmado en la model card |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | Transformer causal con Mixture-of-Experts (MoE) |
+| Parametros totales | 30.532.122.624 (30,5 mil millones) |
+| Parametros activos | 3.300 millones (8 de 128 expertos) |
+| Longitud de contexto | 32.768 tokens nativo; 131.072 con YaRN (factor 4.0) |
+| Tipos de cuantizacion | GGUF (el repo publica pesos cuantizados; niveles concretos no disponibles en la informacion proporcionada) |
+| Idiomas soportados | 100+ idiomas y dialectos segun la model card del modelo base; metadatos del repo solo declaran `ru` |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (repo de cuantizacion); el modelo base usa safetensors |
+| Capas | 48 |
+| Atencion | GQA con 32 cabezas Q y 4 cabezas KV |
+| Expertos | 128 totales, 8 activos por token |
+| Parametros sin embeddings | 29,9 mil millones |
+| Tamano del repo | 118,7 GB |
+| Descargas / likes | 285 / 0 |
+| Compatibilidad | Transformers >= 4.51.0, vLLM, SGLang, llama.cpp, Ollama, LM Studio, MLX-LM, KTransformers |
 
 ## Arquitectura y entrenamiento
 
-No hay información en la model card sobre la arquitectura, los datos de entrenamiento, el número de tokens procesados, la composición del dataset ni las técnicas de alineación (RLHF, DPO u otras). El nombre del repositorio apunta a la arquitectura Qwen3 MoE, pero este repositorio no documenta ninguna innovación técnica propia ni confirma que los pesos sean idénticos a los del modelo oficial.
+El modelo emplea una arquitectura transformer causal con capas MoE de enrutamiento disperso: 128 expertos por capa de los cuales se activan 8 por token, lo que resulta en 3.300 millones de parámetros activos sobre un total de 30.500 millones. Consta de 48 capas y utiliza Grouped-Query Attention con 32 cabezas de consulta y 4 de clave-valor, lo que reduce el coste de memoria del KV cache frente a atención multi-cabeza completa. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni las etapas de alineación (RLHF/DPO), por lo que esos datos deben considerarse no disponibles.
 
-Tampoco se especifica si el repositorio contiene pesos en precisión completa, cuantizaciones, adaptadores o únicamente archivos de configuración. La fecha de creación y actualización (20 de noviembre de 2026) y la ausencia de descargas sugieren un artefacto reciente y sin uso documentado.
+La innovación principal es la coexistencia de modos de razonamiento y respuesta directa en un único checkpoint, con conmutación por prompt. La model card indica que el modo thinking supera a QwQ y el modo non-thinking supera a Qwen2.5-Instruct en matemáticas, código y lógica, si bien no se aportan cifras concretas. Se recomienda evitar la decodificación greedy (provoca degradación y bucles), usar temperature 0.6/TopP 0.95/TopK 20 en modo thinking y 0.7/0.8/20 en modo non-thinking, y limitar la longitud de salida a 32.768 tokens (hasta 38.912 en tareas complejas). El uso de YaRN solo debe activarse cuando el contexto supere los 32K, ya que puede degradar la calidad en ventanas cortas.
 
 ## Capacidades
 
-- No se documentan capacidades específicas en la model card del repositorio.
-- Por la denominación Qwen3-30B-A3B cabe esperar, en el modelo original, generación de texto, razonamiento, código y matemáticas, pero este repositorio no lo confirma.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generación de texto y diálogo multi-turno con seguimiento de instrucciones.
+- Razonamiento explícito en modo thinking con bloque `` y respuesta final separada.
+- Razonamiento matemático y resolución de problemas paso a paso, con formato estandarizado mediante `\boxed{}`.
+- Generación y comprensión de código, incluyendo tareas de programación competitiva.
+- Llamada a herramientas (tool calling / function calling) en ambos modos, con soporte recomendado vía Qwen-Agent y configuración MCP.
+- Flujos agénticos multi-paso con integración de herramientas externas.
+- Capacidades multilingües en 100+ idiomas y dialectos, con traducción e instrucciones multilingües.
+- Escritura creativa, juegos de rol y alineación con preferencias humanas.
+- Conmutación dinámica de modo por turno mediante `/think` y `/no_think`.
+- Contexto extendido a 131.072 tokens mediante YaRN.
 
 ## Casos de uso
 
-- Evaluación de artefactos de terceros: un equipo puede descargar el repositorio para comprobar si los pesos coinciden con los del Qwen3-30B-A3B oficial, comparando hashes y configuraciones antes de usarlo en producción.
-- Docencia y análisis de repositorios: sirve como ejemplo de repositorio con model card incompleta para ilustrar buenas prácticas de documentación de modelos.
-- Pruebas de infraestructura de despliegue: si los pesos son válidos, podría cargarse en vLLM o llama.cpp para validar pipelines de inferencia MoE, siempre tras verificar su procedencia.
-- Investigación sobre procedencia de pesos: permite estudiar cómo se replican modelos abiertos en Hugging Face y qué riesgos de cadena de suministro existen.
-- Integración condicionada: solo sería apto para aplicaciones reales (atención al cliente, generación de código, análisis documental) si se confirma que los pesos son equivalentes al modelo oficial y se dispone de la documentación de este.
-- Archivado y trazabilidad: útil para registrar la existencia del repositorio en auditorías de dependencias de modelos.
+- Atención al cliente automatizada: el modelo puede mantener conversaciones multi-turno con contexto largo (hasta 32K tokens nativos, 131K con YaRN) y alternar a modo non-thinking para respuestas de baja latencia, reservando el modo thinking para consultas complejas.
+- Generación de código en producción: su soporte de tool calling y su calidad en código permiten integrarlo en pipelines de CI/CD para revisión automática, generación de tests o parcheo de errores, con salidas estructuradas en JSON.
+- Asistentes agénticos con herramientas: mediante Qwen-Agent o MCP se pueden definir herramientas externas (búsqueda, bases de datos, APIs) y dejar que el modelo planifique y ejecute pasos intermedios en ambos modos.
+- Razonamiento matemático y análisis cuantitativo: adecuado para tutoría, verificación de cálculos y resolución de problemas con formato `\boxed{}`, útil en plataformas educativas o de evaluación automática.
+- Traducción y soporte multilingüe: con 100+ idiomas puede emplearse en localización de contenidos, atención multilingüe o generación de documentación en varios idiomas, aunque conviene validar el rendimiento por idioma.
+- Despliegue en hardware de consumo: la versión GGUF permite ejecutar el modelo con llama.cpp u Ollama en equipos con VRAM moderada, habilitando prototipado local y entornos sin GPU de datacenter.
+- Procesamiento de documentos largos: con YaRN a 131K tokens puede resumir o extraer información de contratos, informes o expedientes extensos en una sola pasada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible para este repositorio concreto; para un modelo MoE de 30B totales y 3B activos, la inferencia en FP16 requeriría del orden de 60 GB de VRAM solo para pesos, y las cuantizaciones a 8 o 4 bits reducirían esa cifra, pero son estimaciones genéricas no confirmadas por el autor.
-- GPU recomendadas: no disponible; en el escenario teórico anterior encajarían A100 80 GB, H100 o varias RTX 4090, sin confirmación.
-- Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible; no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no disponible en la informacion proporcionada; depende del nivel de cuantizacion GGUF elegido (el repo completo ocupa 118,7 GB, pero los pesos cuantizados individuales son de menor tamano).
+- GPU de datacenter recomendadas: A100 y H100 para despliegue en vLLM o SGLang con contexto largo y concurrencia alta.
+- GPU de consumo: viable en RTX 4090 y GPUs con VRAM suficiente segun la cuantizacion; los niveles mas agresivos de GGUF pueden caber en tarjetas de gama alta de consumo, aunque el dato concreto no esta disponible.
+- Opciones de despliegue: vLLM, SGLang, llama.cpp, Ollama, LM Studio, MLX-LM, KTransformers y Transformers (>= 4.51.0).
+- Latencia y throughput: no disponibles en la informacion proporcionada; al activar solo 3.300 millones de parametros por token, el coste por token es sustancialmente menor que el de un modelo denso de 30B.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| SevenDays3D/Qwen3-30B-A3B | 30B totales / 3B activos según denominación; no confirmado | no disponible | apache-2.0 | Repositorio Hugging Face sin descargas ni documentación |
-| Qwen3-30B-A3B oficial (Alibaba) | 30B totales / 3B activos | no disponible en esta ficha | apache-2.0 según el ecosistema Qwen | Repositorio oficial con model card y pesos documentados |
-| Alternativas MoE de tamaño similar | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3-30B-A3B (este) | 30,5B | 3,3B | 32K / 131K YaRN | Apache 2.0 | Hugging Face, GGUF, vLLM, llama.cpp |
+| Qwen2.5-Instruct | no disponible | denso | no disponible | no disponible | Hugging Face |
+| QwQ | no disponible | denso | no disponible | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento para establecer una comparación cuantitativa.
+La model card cita QwQ y Qwen2.5-Instruct como referencias de comparacion (el modo thinking supera a QwQ y el non-thinking a Qwen2.5-Instruct), pero no aporta cifras ni especificaciones completas de esos modelos en la informacion disponible. No se dispone de datos de rendimiento comparativo verificables.
 
 ## Limitaciones y advertencias
 
-- La model card está vacía: no hay especificaciones, datos de entrenamiento ni evaluación que permitan validar el contenido del repositorio.
-- No se puede confirmar que los pesos sean los del Qwen3-30B-A3B oficial; existe riesgo de cadena de suministro si se usa en producción sin verificación.
-- Ausencia de descargas y de interacción dificulta inferir calidad o mantenimiento.
-- Sesgos conocidos: no disponible.
-- Riesgo de alucinación: no evaluado para este repositorio.
-- Limitaciones de contexto o idioma: no disponible.
-- Licencia apache-2.0 declarada, que en principio permite uso comercial, pero la falta de documentación impide confirmar la procedencia y los términos aplicables a los pesos concretos.
-- Para producción, se recomienda usar el repositorio oficial de Qwen y tratar este como artefacto no verificado.
+- La decodificacion greedy provoca degradacion y bucles; es obligatorio usar sampling con los parametros recomendados.
+- El uso de YaRN con contextos inferiores a 32K puede degradar la calidad; activarlo solo cuando sea necesario.
+- Riesgo de alucinacion inherente a los modelos de lenguaje, sin datos especificos publicados en la model card.
+- Sesgos conocidos: no documentados en la informacion proporcionada.
+- Los metadatos del repositorio declaran unicamente el idioma ruso, lo que no refleja las capacidades multilingües del modelo base y puede inducir a error en la seleccion.
+- Es una cuantizacion de terceros (SevenDays3D), no una publicacion oficial de Qwen; la calidad puede variar respecto a los pesos originales y no hay garantia de soporte.
+- Requiere Transformers >= 4.51.0 para evitar el error `KeyError: 'qwen3_moe'`.
+- En conversaciones multi-turno debe incluirse en el historial solo la respuesta final, sin los bloques de razonamiento.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de la cuantizacion.
+- El repositorio tiene muy poca traccion (285 descargas, 0 likes), por lo que la validacion comunitaria es escasa.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/SevenDays3D/Qwen3-30B-A3B
-- Documentación oficial de Qwen3 (referencia para el modelo original): no disponible en la información proporcionada.
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/SevenDays3D/Qwen3-30B-A3B
+- Modelo base oficial: https://huggingface.co/Qwen/Qwen3-30B-A3B
+- Repositorio de Qwen-Agent: no disponible en la informacion proporcionada
+- Paper tecnico de Qwen3: no disponible en la informacion proporcionada
+- Blog oficial de Qwen: no disponible en la informacion proporcionada

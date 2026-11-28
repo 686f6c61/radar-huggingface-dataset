@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 159,
+  "downloads_30d": 176,
   "trending_score": 0,
   "parameters": 7996156448,
   "parameters_human": "8.00B",
@@ -59,16 +59,5 @@
   "renamed_to": "Amrica655/FELAY-HYDROGEN",
   "renamed_at": "2026-11-12T02:22:23.972Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Amrica655/FELAY-1-ASTRA · Hugging Face",
-      "url": "https://huggingface.co/Amrica655/FELAY-1-ASTRA",
-      "snippet": "What this model is FELAY-1-ASTRA (COMB01) is an updated, coherent version of FELAY-1-ASTRA. It is built from the original FELAY-1-ASTRA weights by applying only the two winning FELAY Lab moves, selected because they improved the fixed in-lab evaluation and kept generation coherent."
-    },
-    {
-      "title": "Amrica655/FELAY at main - Hugging Face",
-      "url": "https://huggingface.co/spaces/Amrica655/FELAY/tree/main",
-      "snippet": "FELAY 8.77 kB Ctrl+K Ctrl+K 1 contributor History:2 commits Amrica655 🔒 Deploy Private Testing Web Studio for FELAY AI 1CARBON on Amrica655/FELAY 4434261 verifiedabout 18 hours ago .gitattributes Safe 1.52 kBinitial commitabout 18 hours ago README.md Safe 205 Bytes🔒 Deploy Private Testing Web Studio for FELAY AI 1CARBON on Amrica655 ..."
-    }
-  ]
+  "sources": []
 }

@@ -2,88 +2,110 @@
 
 ## Resumen
 
-Molde tiny es un modelo de lenguaje de muy pequeno tamano (268 millones de parametros) afinado a partir de google/gemma-3-270m-it para generar MoldeScript, un lenguaje estricto y compacto que describe herramientas personales como listas, contadores, planificadores o trackers. Lo desarrolla el autor independiente oyekamal dentro del proyecto Orenda-Project/molde, cuyo objetivo es que una aplicacion movil convierta un programa MoldeScript en una pantalla funcional, totalmente offline. El modelo actua como el componente que traduce una peticion en ingles natural a un programa MoldeScript de entre 130 y 200 tokens.
+Molde Tiny es un modelo de lenguaje de 268 millones de parámetros obtenido por ajuste fino completo de Google Gemma 3 270M Instruct, desarrollado por Kamal (oyekamal) en el marco del proyecto Orenda. Su propósito es muy concreto: generar MoldeScript, un lenguaje de dominio específico para describir aplicaciones móviles sencillas, de forma que un teléfono Android pueda crear apps a partir de una petición en lenguaje natural sin conexión y sin plantillas predefinidas.
 
-La relevancia del modelo esta en su enfoque de despliegue en dispositivo: se distribuye en formato GGUF con una cuantizacion Q4_K_M de 241 MB, pensada para ejecutarse en telefonos sin conexion. No compite en capacidades generales de razonamiento, sino que se especializa en una tarea de generacion estructurada guiada por gramatica, lo que reduce el espacio de salida valido y limita errores de sintaxis.
+El modelo se distribuye principalmente en formato GGUF cuantizado (Q4_K_M, 241 MB) para ejecución en dispositivo, con un decodificador restringido por gramática (GBNF) integrado en llama.cpp que garantiza que la salida sea sintácticamente válida según el verificador de MoldeScript. El repositorio incluye además una variante opcional basada en Qwen 0.8B (504 MB) orientada a dispositivos con más memoria y mayor calidad.
 
-El proyecto se encuentra en estado de trabajo en curso: cada ronda de entrenamiento se publica en su propia carpeta y ninguna se considera una version estable. La ficha se basa en la informacion disponible en la model card y en los metadatos del repositorio, sin datos publicados de benchmarks.
+Su relevancia radica en demostrar que un modelo de menos de 300 millones de parámetros, especializado en una única tarea y ejecutado íntegramente en local, puede sustituir a un conjunto de aplicaciones de propósito único en un teléfono. Es software de investigación temprana: funciona de extremo a extremo pero con tasas de acierto limitadas que el propio autor documenta con transparencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de google/gemma-3-270m-it); detalles internos no disponibles |
+| Arquitectura | Transformer (Gemma 3), ajuste fino completo del modelo instruct base |
 | Parametros totales | 268.134.016 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M (fichero principal r1-gemma270m-Q4_K_M.gguf, 241 MB); no se detallan otras variantes |
-| Idiomas soportados | en (ingles) |
-| Licencia | gemma (Gemma Terms of Use y Gemma Prohibited Use Policy) |
-| Formato de pesos | GGUF |
+| Tipos de cuantizacion | Q4_K_M (principal); se distribuyen ficheros GGUF; el repo contiene tambien safetensors |
+| Idiomas soportados | Ingles (principal); urdu romanizado y peticiones mixtas de forma limitada |
+| Licencia | Gemma (license: other, license_name: gemma) |
+| Formato de pesos | GGUF y safetensors |
+| Modelo base | google/gemma-3-270m-it |
+| Tamano del repositorio | 11,7 GB |
+| Dataset de entrenamiento | oyekamal/molde-data |
+| Libreria | gguf |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de google/gemma-3-270m-it, un transformer decoder-only de 268 millones de parametros en su version instruct. Sobre esa base se ha realizado un ajuste fino supervisado para la tarea de generar MoldeScript, un lenguaje pequeno y estricto que describe la interfaz y el comportamiento de una herramienta personal. La generacion se guia mediante una gramatica, de modo que la sintaxis de la salida no pueda ser invalida; el programa resultante ocupa aproximadamente entre 130 y 200 tokens.
+El modelo parte de Gemma 3 270M Instruct y se somete a un ajuste fino completo (no LoRA) sobre el dataset `oyekamal/molde-data`, compuesto por pares de peticiones en lenguaje natural y programas MoldeScript. La arquitectura subyacente es un transformer decoder-only de la familia Gemma 3, con 268 millones de parámetros, pensado para ejecución en dispositivo. No se documentan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO.
 
-La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Cada ronda de entrenamiento se publica en una carpeta independiente con su propia tarjeta, que incluye modelo base, tamano de datos, puntuaciones sobre un conjunto de validacion reservado y hashes de los ficheros; las puntuaciones se miden sobre el fichero cuantizado que se distribuiria. La carpeta smoke-r0 corresponde solo a una prueba del pipeline y no debe usarse.
+La innovación técnica principal no reside en el modelo sino en el sistema que lo rodea: un decodificador restringido por gramática (GBNF) ejecutado sobre llama.cpp (build b12144) que fuerza la salida a ser un programa MoldeScript válido según su verificador. El proyecto está en una ronda de entrenamiento en curso (round 4) que cambia el paradigma de edición: en lugar de reescribir el programa completo, el modelo genera instrucciones cortas de edición contra líneas numeradas. Según el autor, esta ronda obtiene 141 de 296 cambios forzados correctos frente a 43 de la ronda 3, aunque el resultado no está confirmado dentro de la aplicación ni liberado en este repositorio.
 
 ## Capacidades
 
-- Generacion de programas MoldeScript a partir de descripciones en ingles natural, con sintaxis garantizada por gramatica.
-- Generacion de interfaces de herramienta: listas, contadores, trackers, planificadores y estructuras similares.
-- Generacion de codigo en un dominio muy acotado (lenguaje MoldeScript), no codigo de proposito general.
-- Conversacion basica en ingles, heredada del modelo base instruct.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible; el modelo esta disenado para una unica generacion de programa.
-- Capacidades multilingues: limitadas al ingles.
-- Modo thinking, vision o audio: no disponible.
+- Generación de programas MoldeScript a partir de una petición en lenguaje natural, con salida forzada a ser sintácticamente válida por gramática.
+- Generación de interfaces de usuario para aplicaciones móviles sencillas (listas, formularios, gráficos básicos).
+- Edición de programas existentes mediante reescritura completa del programa actualizado (ronda 3) o instrucciones de edición por líneas (ronda 4, no liberada).
+- Funcionamiento completamente offline en dispositivo, sin envío de datos a servidores.
+- Soporte de conversación multi-turno mediante plantilla de chat de Gemma (`<start_of_turn>`).
+- Capacidad de solicitar aclaraciones cuando la petición es ambigua (documentado en la app).
+- Multilingüismo limitado: inglés como idioma principal; urdu romanizado y peticiones mixtas con peor rendimiento por escasez de datos.
+- No se documenta soporte de tool calling, function calling, agentes, visión ni audio en la información disponible.
 
 ## Casos de uso
 
-- Generacion de herramientas personales en aplicaciones moviles: el usuario describe en ingles lo que quiere (por ejemplo, un contador de habitos) y el modelo emite un programa MoldeScript de 130 a 200 tokens que la app interpreta y dibuja como pantalla funcional.
-- Procesamiento totalmente offline en telefono: con el fichero Q4_K_M de 241 MB, la generacion puede ejecutarse en el dispositivo sin conexion, lo que encaja en escenarios de privacidad o conectividad limitada.
-- Creacion de plantillas de UI declarativas: el modelo puede producir variantes de una misma herramienta (listas, planificadores) que la app renderiza de forma determinista a partir del programa validado.
-- Prototipado rapido de asistentes de configuracion: integrado en un flujo donde el usuario dicta requisitos y el sistema genera la definicion de la herramienta antes de persistirla, manteniendo los datos guardados entre cambios.
-- Filtrado y validacion de entrada: al estar guiado por gramatica, sirve como generador controlado en pipelines donde la salida debe cumplir un esquema estricto antes de ejecutarse.
-- Demostraciones de generacion estructurada con modelos diminutos: util para investigacion sobre decodificacion restringida por gramatica en modelos de menos de 300 millones de parametros.
+- Creación de aplicaciones móviles sin conexión: un usuario describe en lenguaje natural la app que quiere (por ejemplo, un registro de lectura con gráfico de páginas) y el modelo genera el programa MoldeScript que la app Android interpreta y ejecuta, todo en local.
+- Privacidad por diseño en dispositivos personales: al ejecutarse íntegramente en el teléfono, los datos del usuario (notas, registros, listas) nunca salen del dispositivo, lo que lo hace adecuado para aplicaciones sensibles.
+- Prototipado rápido de interfaces: desarrolladores pueden generar esqueletos de UI funcionales en segundos (unos 2 s por app nueva en CPU de portátil con 4 hilos) para iterar sobre ideas antes de escribir código a mano.
+- Educación y aprendizaje de DSL: sirve como ejemplo práctico de cómo un modelo pequeño más un decodificador restringido por gramática puede generar código válido en un lenguaje de dominio específico, útil en cursos de IA aplicada.
+- Edición asistida de aplicaciones existentes: el usuario pide cambios sobre una app ya generada (por ejemplo, añadir un campo o modificar un gráfico) y el modelo reescribe el programa; en la ronda 3 acierta 14 de 40 cambios pequeños, con peor rendimiento en programas largos.
+- Investigación sobre modelos en dispositivo: proporciona una base reproducible (con TRAINING.md y el dataset público) para estudiar ajuste fino completo de modelos de menos de 300 M de parámetros en tareas únicas y evaluar el equilibrio entre tamaño, latencia y calidad.
+- Despliegue en entornos con recursos muy limitados: el fichero Q4_K_M de 241 MB cabe en teléfonos con 3-4 GB de memoria y puede ejecutarse con llama.cpp en CPU, lo que lo hace viable en hardware de gama baja.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que cada carpeta de ronda incluye puntuaciones sobre un conjunto de validacion reservado, medidas sobre el fichero cuantizado, pero esos valores no se recogen en la informacion proporcionada.
+Los datos proceden de las pruebas propias del autor sobre los ficheros Q4_K_M con decodificación greedy. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+
+| Metrica | Resultado |
+|---|---|
+| Programa valido en 149 peticiones reservadas (ronda 3 Gemma) | 90,6% |
+| App exactamente como se pidio, 407 peticiones nuevas (ronda 3 Gemma) | 37% |
+| App al menos del tipo correcto, mismas 407 peticiones | 71% |
+| Cambios pequenos, 40 casos: ronda 3 Gemma | 14 de 40 correctos |
+| Cambios pequenos, 40 casos: Qwen 0.8B (ronda 4, pass 1) | 22 de 40 correctos (aproximadamente el doble de tamano y mas lento) |
+| Velocidad en CPU de portatil, 4 hilos | ~2 s por app nueva; 5-6 s por cambio pequeno |
+| Cambios forzados, ronda 4 en curso (no liberada) | 141 de 296 (frente a 43 de la ronda 3) |
+
+El 90,6% mide validez sintáctica (el programa pasa el verificador de MoldeScript), no corrección funcional. Las cifras de 37% y 71% son las que miden si la app hace lo pedido. No se han medido tiempos en un teléfono real.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero Q4_K_M ocupa 241 MB; la huella en memoria es del orden de unos pocos cientos de MB, apta para dispositivos moviles.
-- GPU recomendadas: no se especifican; por tamano, cualquier GPU consumer moderna (RTX 3060 o superior) o incluso CPU es suficiente.
-- Cabe en GPU consumer: si, con amplio margen; tambien en telefonos y en CPU.
-- Opciones de despliegue: llama.cpp y Ollama por el formato GGUF; el tag endpoints_compatible sugiere compatibilidad con endpoints, aunque no se detalla la infraestructura.
-- Latencia y throughput estimados: no disponibles.
+- VRAM/memoria estimada: el fichero Q4_K_M ocupa 241 MB y está pensado para teléfonos con 3-4 GB de memoria; la variante Qwen 0.8B ocupa 504 MB y requiere unos 6 GB.
+- GPU recomendadas: no se especifican; el modelo está diseñado para CPU y ejecución en dispositivo.
+- GPU de consumo: cabe holgadamente en cualquier GPU de consumo moderna, aunque no es el objetivo del proyecto.
+- Opciones de despliegue: llama.cpp (build b12144 o superior, con soporte de gramáticas GBNF), aplicación Android oficial (v0.3.0, arm64-v8a y x86_64), y cualquier runtime compatible con GGUF.
+- Latencia y throughput: aproximadamente 2 s por app nueva y 5-6 s por cambio pequeño en CPU de portátil con 4 hilos; sin mediciones en teléfono.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oyekamal/molde-tiny | 268 M | no disponible | MoldeScript / UI on-device | gemma | GGUF |
-| google/gemma-3-270m-it | 270 M | no disponible | Proposito general instruct | gemma | safetensors, GGUF |
-| Qwen2.5-Coder-0.5B | 494 M | 32 K (segun variante) | Codigo general | Apache 2.0 | safetensors, GGUF |
+| Molde Tiny (Gemma 270M) | 268 M | no disponible | Generacion de apps en MoldeScript, on-device | Gemma | GGUF y safetensors en Hugging Face |
+| Molde Qwen 0.8B (variante del mismo proyecto) | ~800 M | no disponible | Misma tarea, mayor calidad y lentitud | segun modelo base Qwen | GGUF en el mismo repositorio |
+| google/gemma-3-270m-it | 270 M | no disponible | Modelo instruct generalista | Gemma | Hugging Face (con acceso restringido) |
 
-La comparativa con modelos de codigo de proposito general es solo orientativa: molde-tiny esta limitado a un lenguaje de dominio especifico y no se ha evaluado en tareas generales de codigo. No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
+La comparación con modelos generalistas de tamaño similar no es directa, ya que Molde Tiny está especializado en una única tarea y no se han publicado evaluaciones en benchmarks estándar que permitan situarlo frente a alternativas. No se dispone de datos de otros modelos especializados en generación de DSL o UI en este rango de tamaño.
 
 ## Limitaciones y advertencias
 
-- Estado de trabajo en curso: ninguna carpeta se considera una version estable; la API y el formato pueden cambiar entre rondas.
-- Especializacion estrecha: solo genera MoldeScript en ingles; no es adecuado para tareas generales de codigo, razonamiento o conversacion.
-- Idioma: unicamente ingles, sin soporte documentado de castellano.
-- Riesgo de alucinacion: aunque la gramatica restringe la sintaxis, el contenido semantico del programa puede no corresponder a la peticion del usuario; la app debe validar el programa antes de dibujarlo.
-- Licencia: sujeta a los Gemma Terms of Use y a la Gemma Prohibited Use Policy; el uso comercial esta condicionado por dichos terminos.
-- Contexto: la longitud de contexto no esta documentada, lo que dificulta planificar integraciones con conversaciones largas.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad fuera de las puntuaciones internas de cada carpeta.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta; proyecto privado en GitHub, lo que limita la verificacion externa.
+- Alrededor de 6 de cada 10 peticiones nuevas no producen exactamente la app solicitada.
+- Las peticiones largas con muchos detalles pierden parte de las especificaciones.
+- Las peticiones que el lenguaje no puede expresar (entrada de voz, internet, juegos) a veces se generan como si fueran posibles.
+- Los cambios pequeños fallan con frecuencia: la ronda 3 acierta 14 de 40, y los cambios sobre programas largos fallan más.
+- Las apps generadas tienen un aspecto más simple que las escritas a mano.
+- El inglés funciona mejor; el urdu romanizado y las peticiones mixtas rinden peor por escasez de datos de entrenamiento.
+- No se ha medido la velocidad en un teléfono real; las cifras proceden de un portátil.
+- La licencia Gemma impone restricciones de uso comercial; debe revisarse el enlace de términos antes de cualquier despliegue en producción.
+- Es software de investigación temprana: el propio autor advierte que comete muchos errores y que los resultados de la ronda 4 no están confirmados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/oyekamal/molde-tiny
+- Dataset: https://huggingface.co/datasets/oyekamal/molde-data
+- Codigo, lenguaje y app: https://github.com/Orenda-Project/molde
+- Informe de fallos (failhunt): https://github.com/Orenda-Project/molde/blob/failhunt/failhunt/REPORT.md
+- Guia de entrenamiento: https://github.com/Orenda-Project/molde/blob/main/TRAINING.md
+- Demo en navegador (apps de ejemplo escritas a mano): https://orenda-project.github.io/molde/demo/
+- Release Android v0.3.0: https://github.com/Orenda-Project/molde/releases/tag/v0.3.0
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
-- Proyecto en GitHub (privado por ahora): https://github.com/Orenda-Project/molde
-- Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
-- Politica de uso prohibido de Gemma: https://ai.google.dev/gemma/prohibited_use_policy
+- Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

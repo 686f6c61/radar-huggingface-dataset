@@ -1,101 +1,102 @@
 # jstarks/LFM2.5-8B-A1B-Weight-Space-Programming
 
 ## Resumen
+Este repositorio aloja una serie de variantes modificadas del modelo LiquidAI/LFM2.5-8B-A1B, un transformer híbrido de tipo MoE disperso con 8.467.856.832 parámetros totales (8B-A1B) y 24 capas que combina ShortConv, atención y 32 expertos. La modificación aplicada por el autor jstarks se denomina Weight-Space Programming (WSP): una técnica de edición de pesos en espacio de pesos, sin gradientes y en forma cerrada, que ajusta directamente un subconjunto reducido de tensores internos para mejorar el comportamiento en tareas de tool calling, agentes y razonamiento STEM.
 
-LFM2.5-8B-A1B-Weight-Space-Programming es un adaptador LoRA en formato GGUF publicado por el usuario jstarks sobre el modelo base LiquidAI/LFM2.5-8B-A1B de Liquid AI. No es un modelo completo, sino un conjunto de adaptadores de rango bajo obtenidos mediante una tecnica que el autor denomina Weight-Space Programming (WSP): una resolucion en forma cerrada y sin gradientes que modifica directamente los pesos de determinadas capas del modelo base para mejorar el comportamiento en tareas de razonamiento, tool calling y uso de terminal.
+El resultado son GGUFs autónomos listos para ejecutar en llama.cpp, LM Studio, Jan o KoboldCpp sin necesidad de cargar adaptadores LoRA por separado. Se ofrecen dos variantes cuantizadas, Q4_K_M (4,8352 GiB) y Q4_0 (4,5457 GiB), además de un adaptador fusionado de rango 16 (1160 KB) y subespacios modulares de rango 8. La modificación solo afecta a 12 tensores 2D internos de las capas blk.18 a blk.23, dejando intactos los otros 244 tensores del modelo base.
 
-El modelo base es un transformer hibrido de tipo MoE disperso con 24 capas que combina convoluciones cortas (ShortConv), atencion y 32 expertos por capa. El adaptador se distribuye como un unico GGUF fusionado de rango 16 (aproximadamente 1,13 MiB) y como adaptadores modulares de rango 8, pensados para cargarse con llama.cpp junto al GGUF Q4_K_M oficial del modelo base.
-
-La relevancia de esta publicacion es doble: por un lado, demuestra que es posible mejorar el rendimiento de un MoE hibrido sin reentrenamiento mediante intervenciones quirurgicas en el espacio de pesos; por otro, documenta limitaciones concretas de la implementacion de LoRA sobre arquitecturas lfm2moe en llama.cpp (embeddings atados y expertos 3D). El autor reporta una mejora de 103/155 a 120/155 en su suite de evaluacion, con un aumento de 72/100 a 89/100 en la tarea agent100.
+La relevancia de esta ficha radica en que demuestra una vía alternativa al ajuste fino tradicional (LoRA, RLHF) para especializar modelos abiertos en tareas concretas de agente, con mejoras medibles en benchmarks como NL2Bash, GSM8K o Terminal-Bench, y con un coste de almacenamiento mínimo. Es un ejemplo práctico de interpretabilidad mecanicista aplicada a la producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (WSP) sobre transformer hibrido ShortConv + Attention + MoE disperso de 24 capas |
-| Parametros totales | 592.896 (dato de safetensors del repositorio del adaptador); el modelo base no reporta cifra en la informacion disponible |
-| Parametros activos | no disponible (el modelo base es un MoE de 32 expertos, pero no se indica el numero de parametros activos) |
-| Longitud de contexto | no disponible para el adaptador; el ejemplo de despliegue usa `-c 8192` |
-| Tipos de cuantizacion | El adaptador se distribuye en GGUF F16 (rango 16 fusionado y rango 8 modular); el modelo base se usa en Q4_K_M |
+| Arquitectura | Transformer híbrido MoE disperso (24 capas, ShortConv + Attention + 32 expertos) |
+| Parametros totales | 8.467.856.832 |
+| Parametros activos | 1B (denominación A1B del modelo base) |
+| Longitud de contexto | no disponible (la configuración de ejemplo usa -c 8192) |
+| Tipos de cuantizacion | Q4_K_M y Q4_0 (GGUF); adaptadores en F16 |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (LFM Open License v1.0), heredada del modelo base |
-| Formato de pesos | GGUF (adaptadores LoRA); el modelo base en GGUF Q4_K_M |
+| Licencia | LFM Open License v1.0 (lfm1.0) |
+| Formato de pesos | GGUF (modelos empaquetados y adaptadores) |
 
 ## Arquitectura y entrenamiento
+El modelo base LiquidAI/LFM2.5-8B-A1B es un transformer híbrido de 24 capas que combina capas ShortConv (convolución corta) con atención y una capa MoE dispersa de 32 expertos. La arquitectura se etiqueta como lfm2moe y pertenece a la familia Liquid. El modelo modificado conserva íntegramente esta arquitectura: solo se alteran 12 tensores 2D en las capas blk.18 a blk.23, que incluyen 6 routers MoE (ffn_gate_inp.weight en F32), 2 tensores attn_output.weight y 4 shortconv.out_proj.weight convertidos a F16 para evitar recorte por recuantización (incremento neto de +34,5 MiB). Los 244 tensores restantes (embeddings, layer norms, QKV de atención y pesos 3D de expertos MoE) son copias byte a byte del modelo original.
 
-El adaptador no se entrena con descenso de gradiente. El autor aplica Weight-Space Programming, un metodo en forma cerrada que calcula directamente las matrices de actualizacion de rango bajo para un conjunto de sitios 2D del modelo base. En concreto, actua sobre `attn_output.weight`, `shortconv.out_proj.weight` y los routers MoE `ffn_gate_inp.weight` de las capas `blk.18` a `blk.23`, es decir, las seis ultimas capas del modelo. El adaptador fusionado de rango 16 combina algebraicamente dos senales con escalas 1.0 y 1.5, y el autor reporta una cola SVD maxima de 7,34e-07, un error relativo F16 maximo de 2,98e-04 y paridad de logits top-1 en 3 de 3 comprobaciones en vivo (delta maximo de logprob top-1 de 0,00001).
-
-El modelo base sobre el que se aplica es un transformer hibrido de 24 capas que intercala convoluciones cortas con atencion y usa un MoE disperso de 32 expertos. El autor documenta dos restricciones de la implementacion de llama.cpp para esta arquitectura: el embedding atado `token_embd.weight` con forma [2048, 128000] rechaza LoRA por un fallo de asercion de multiplicacion de matrices, y los expertos MoE en 3D (`ffn_down_exps.weight`) reducen la velocidad de decodificacion en torno a un 30%. Por eso el adaptador evita ambos sitios y se limita a los tres tipos de pesos 2D citados, lo que permite mantener la velocidad completa de inferencia. No se especifican datos de entrenamiento, numero de tokens ni uso de RLHF o DPO, ya que el procedimiento no es un entrenamiento convencional.
+El entrenamiento no sigue el paradigma habitual de descenso de gradiente. La técnica WSP aplica una programación en espacio de pesos en forma cerrada y sin gradientes, que combina dos subespacios de rango 8 (wsp_s1_think_close y wsp_s2_tool_emit) con coeficientes de escala (1,1 y 1,5 en Q4_K_M; 1,0 y 1,5 en Q4_0) y los fusiona algebraicamente en un adaptador de rango 16. La fusión se valida con una cola SVD máxima de 7,34e-07 y un error relativo F16 máximo de 2,98e-04, garantizando paridad de logits top-1 (max |Δ| = 0,00000 en Q4_0 y 0,00001 en el adaptador fusionado). No se dispone de información sobre el dataset de entrenamiento original del modelo base ni sobre el volumen de tokens utilizado.
 
 ## Capacidades
-
-- Generacion de texto y razonamiento conversacional multi-turno sobre el modelo base LFM2.5-8B-A1B.
-- Tool calling y function calling: el adaptador reduce los fallos de emision de herramientas (`missed_tool_call` de 5 a 0 en la suite del autor).
-- Razonamiento agente multi-paso, con mejora reportada en tareas de agente (agent100 de 72/100 a 89/100).
-- Generacion de comandos de shell a partir de lenguaje natural (NL2Bash), con mejora de 9/20 a 18/20.
-- Razonamiento matematico y STEM (GSM8K de 14/20 a 18/20; suite stem45 evaluada).
-- Generacion de codigo (HumanEval de 11/15 a 12/15 en la suite del autor).
-- Control del modo de pensamiento: el adaptador reduce los cortes a mitad de razonamiento (`cut_mid_think` de 16 a 4) y permite salidas anticipadas del bloque de pensamiento.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
+- Generación de texto conversacional y razonamiento general.
+- Razonamiento matemático y STEM (evaluado en GSM8K, MATH-500 y un conjunto stem45).
+- Tool calling y function calling (evaluado en EST_BFCL_IRR y S3_ROUTER).
+- Generación de comandos de shell y bash a partir de lenguaje natural (NL2Bash).
+- Comportamiento agéntico multi-paso y ejecución en terminal (Terminal-Bench, agent100).
+- Modo de razonamiento "think" con cierre controlado (subespacio think_close).
+- Emisión controlada de llamadas a herramientas (subespacio tool_emit).
+- Guardas contra inyección de prompts (S7_INJECTION_GUARD).
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- No se documentan capacidades de visión ni audio.
 
 ## Casos de uso
-
-- Agentes de terminal automatizados: el adaptador mejora la resolucion de tareas tipo terminal-bench (de 2/10 a 3/10 en WSL2) y reduce las tareas con cero comandos ejecutados de 7 a 4, por lo que es adecuado para pipelines de automatizacion de shell donde el modelo debe emitir comandos validos y completar pasos encadenados.
-- Asistentes de operaciones con tool calling: al eliminar los fallos de emision de llamadas a herramientas en la suite del autor, encaja en entornos donde el modelo debe invocar funciones externas de forma fiable (APIs, scripts, consultas a sistemas).
-- Traduccion de lenguaje natural a comandos de shell: con 18/20 en NL2Bash, sirve para interfaces de linea de comandos en lenguaje natural o para generar scripts de administracion a partir de descripciones.
-- Razonamiento matematico asistido: la mejora en GSM8K (18/20) lo hace util para tutoria o resolucion de problemas aritmeticos paso a paso en entornos educativos o de validacion.
-- Generacion de codigo en pipelines de CI/CD: con soporte de tool calling y una mejora modesta en HumanEval, puede integrarse como paso de generacion o correccion de fragmentos de codigo en flujos automatizados.
-- Despliegue local en hardware de consumo: el adaptador pesa aproximadamente 1,13 MiB y se carga sobre un GGUF Q4_K_M de 4,801 GiB, por lo que cabe en una GPU de 12 GB (el autor lo prueba en una RTX 4070 Ti) y permite prototipado de agentes sin infraestructura dedicada.
-- Investigacion en interpretabilidad mecanica: al ser un ejemplo documentado de intervencion en el espacio de pesos sobre un MoE hibrido, sirve como caso de estudio para analizar como cambios localizados en capas tardias afectan al comportamiento agente.
+- Automatización de operaciones en terminal: el modelo puede traducir instrucciones en lenguaje natural a comandos bash (NL2Bash) con una mejora de 4/20 a 15/20 en Q4_0 y de 9/20 a 18/20 en Q4_K_M, lo que lo hace adecuado para asistentes de consola y scripts de aprovisionamiento.
+- Agentes autónomos de resolución de tareas: con 86/100 en agent100 (Q4_K_M) y 89/100 en el adaptador fusionado, puede orquestar secuencias multi-paso con tool calling en entornos controlados.
+- Asistencia en CI/CD: la mejora en la emisión fiable de llamadas a herramientas permite integrarlo en pipelines que invocan APIs o ejecutan comandos de build.
+- Tutoría y resolución de problemas STEM: el incremento en stem45 (29/45 a 30/45) y GSM8K (14/20 a 16/20) lo hace útil para asistentes educativos de matemáticas y ciencias.
+- Enrutamiento de consultas y clasificación: la mejora en S3_ROUTER (4/5 a 5/5) permite usarlo como clasificador o dispatcher en sistemas multi-agente.
+- Defensa frente a inyección de prompts: la mejora en S7_INJECTION_GUARD (1/3 a 2/3) lo hace apropiado para despliegues expuestos a entradas no confiables.
+- Despliegue en hardware de consumo: con 4,5-4,8 GiB en Q4 y 301-312 tok/s de decodificación mediana en una RTX 4070 Ti de 12 GB, es viable en estaciones de trabajo modestas.
 
 ## Benchmarks y rendimiento
 
-Resultados reportados por el autor con `temp=0.0`, en una RTX 4070 Ti de 12 GB con `llama-server`. La columna combinada agrega 155 tareas de la pista A; VAL_LFM25 es un conjunto disjunto de 28 tareas.
+| Benchmark | Q4_0 Base | Q4_0 WSP | Q4_K_M Base | Q4_K_M WSP | Adaptador r16 |
+|---|---|---|---|---|---|
+| Track A total (155 tareas) | 103/155 (66,5 %) | 117/155 (75,5 %) | no disponible | 119/155 (76,8 %) | 120/155 (77,4 %) |
+| agent100 | no disponible | 84/100 | no disponible | 86/100 | 89/100 |
+| EST_NL2BASH | 4/20 | 15/20 | 9/20 | 18/20 | no disponible |
+| EST_GSM8K | no disponible | no disponible | 14/20 | 16/20 | no disponible |
+| stem45 | 29/45 | 30/45 | 29/45 | 30/45 | no disponible |
+| tbench10 (WSL2) | 1/10 | 3/10 | 2/10 | 3/10 | no disponible |
+| VAL_LFM25 | 19/28 (67,9 %) | 26/28 (92,9 %) | no disponible | 27/28 (96,4 %) | no disponible |
+| S3_ROUTER | no disponible | no disponible | 4/5 | 5/5 | no disponible |
+| S7_INJECTION_GUARD | no disponible | no disponible | 1/3 | 2/3 | no disponible |
+| S8_GROUNDING | 2/3 | 3/3 | no disponible | no disponible | no disponible |
+| EST_BFCL_IRR | no disponible | 13/15 | 12/15 | 13/15 | no disponible |
+| Tokens/s (decodificación mediana) | no disponible | 312,1 | no disponible | 301,7 | 304,7 |
 
-| Configuracion | Adaptadores y tamano | VAL_LFM25 (28) | agent100 | stem45 | tbench10 (WSL2) | Combinado (155) | Decodificacion mediana / media (tok/s) |
-|---|---|---:|---:|---:|---:|---:|---:|
-| Base (Q4_K_M) | 0 (0 KB) | 20/28 (71,4%) | 72/100 | 29/45 | 2/10 | 103/155 (66,5%) | 210,6 / 210,3 |
-| Arm B (`always_s2_1.5`) | 1 rango 8 (581,0 KB) | 26/28 (92,9%) | 77/100 (+5) | 28/45 (-1) | 3/10 (+1) | 108/155 (+5, 69,7%) | 303,0 / 301,8 |
-| Soft-Routed (`nt_s1_1.25` + tools) | 2 rango 8 (1162,0 KB) | 25/28 | 86/100 (+14) | 28/45 (-1) | 3/10 (+1) | 117/155 (+14, 75,5%) | 300,7 / 299,8 |
-| Arm A (`always_s1pure_1.0+s2_1.5`) | 2 rango 8 (1162,0 KB) | 27/28 (96,4%) | 89/100 (+17, 0 regresiones) | 28/45 (-1) | 3/10 (+1) | 120/155 (+17, 77,4%) | 298,5 / 297,5 |
-| Fusionado rango 16 (campeon) | 1 fusionado (1160,0 KB) | 27/28 (96,4%) | no disponible en la tabla | no disponible en la tabla | no disponible en la tabla | no disponible en la tabla | 304,7 / 304,3 |
-
-Desglose adicional reportado por el autor para la configuracion campeona frente a la base: EST_NL2BASH de 9/20 a 18/20, cut_mid_think de 16 a 4, missed_tool_call de 5 a 0, EST_GSM8K de 14/20 a 18/20, S3_ROUTER de 4/5 a 5/5, S7_INJECTION_GUARD de 1/3 a 2/3, EST_HUMANEVAL de 11/15 a 12/15 y EST_BFCL_IRR de 12/15 a 13/15. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval oficial, GSM8K oficial) en la informacion disponible; todas las cifras proceden de la suite propia del autor.
+Mediciones realizadas en RTX 4070 Ti de 12 GB con llama-server y temperatura 0,0.
 
 ## Requisitos de hardware
-
-- VRAM estimada: el modelo base en Q4_K_M ocupa 4,801 GiB; con contexto de 8192 tokens y cache KV cuantizada en q8_0, el autor lo ejecuta en una GPU de 12 GB. El adaptador anade aproximadamente 1,13 MiB, un coste despreciable.
-- GPU recomendadas: el autor valida en RTX 4070 Ti (12 GB). Por el tamano del modelo base, deberia caber en GPUs consumer con 8-12 GB de VRAM, aunque no se aportan pruebas para esas configuraciones.
-- Cabe en GPU consumer: si, segun la validacion del autor en una RTX 4070 Ti de 12 GB.
-- Opciones de despliegue: `llama-server` con `--lora-scaled` (perfil recomendado), o el lanzador propio `run_lfm25_wsp.py`, que expone una API compatible con OpenAI en `http://127.0.0.1:8090/v1` y modos `routed` y `base`. No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: mediana de 304,7 tok/s y media de 304,3 tok/s con el adaptador fusionado de rango 16; la base sin adaptador rinde 210,6 / 210,3 tok/s. El autor atribuye la mejora de velocidad a que el adaptador evita los sitios que ralentizan la decodificacion.
+- VRAM estimada: aproximadamente 4,5-4,8 GiB para los pesos en Q4_0 y Q4_K_M; con contexto de 8192 tokens y caché KV en q8_0 el consumo total se mantiene por debajo de 6-7 GiB.
+- GPU recomendadas: RTX 4070 Ti (12 GB) es la plataforma de referencia medida; cualquier GPU con al menos 8 GB de VRAM debería poder ejecutar los GGUFs.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4070 Ti, RTX 4080, RTX 4090 y equivalentes.
+- Opciones de despliegue: llama.cpp (llama-server), LM Studio, Jan, KoboldCpp; los tags indican compatibilidad con endpoints.
+- Throughput medido: 301,7 tok/s (Q4_K_M WSP), 312,1 tok/s (Q4_0 WSP) y 304,7 tok/s (adaptador fusionado r16) en decodificación mediana sobre RTX 4070 Ti.
+- Los adaptadores LoRA requieren llama.cpp con soporte de --lora; los GGUFs empaquetados no necesitan flags adicionales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento reportado | Licencia | Formato |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-8B-A1B-Weight-Space-Programming (este) | Adaptador de 592.896 parametros sobre base no especificado | no disponible | 120/155 en suite propia; 304,7 tok/s | lfm1.0 | GGUF (LoRA) |
-| LiquidAI/LFM2.5-8B-A1B (base) | no disponible | no disponible | 103/155 en suite propia; 210,6 tok/s | lfm1.0 | safetensors, GGUF |
-| LiquidAI/LFM2.5-8B-A1B-GGUF Q4_K_M | no disponible | no disponible | Es la referencia base usada por el autor | lfm1.0 | GGUF (4,801 GiB) |
-
-No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
+| jstarks/LFM2.5-8B-A1B-WSP (este) | 8,47B totales / 1B activos | no disponible | LFM v1.0 | GGUF Q4_K_M, Q4_0 | Especializado en agentes y tool calling vía WSP |
+| LiquidAI/LFM2.5-8B-A1B (base) | 8,47B totales / 1B activos | no disponible | LFM v1.0 | safetensors, GGUF | Modelo original sin modificar; referencia de comparación |
+| LiquidAI/LFM2.5-8B-A1B-GGUF | 8,47B totales / 1B activos | no disponible | LFM v1.0 | GGUF | Versión cuantizada oficial del base |
+| Otros MoE de ~8B con ~1B activos | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
-
-- No es un modelo autonomo: requiere el GGUF Q4_K_M del modelo base LiquidAI/LFM2.5-8B-A1B y llama.cpp con soporte de `--lora-scaled`.
-- Las mejoras reportadas proceden de la suite de evaluacion propia del autor (155 tareas mas 28 de validacion), no de benchmarks estandar independientes; deben interpretarse con cautela.
-- El autor observa una ligera perdida en la suite stem45 (de 29/45 a 28/45) con todas las variantes del adaptador, por lo que la mejora no es uniforme en todas las tareas.
-- En tbench10 la mejora es de solo una tarea (2/10 a 3/10), lo que indica que el rendimiento en tareas reales de terminal sigue siendo limitado.
-- Un elemento de NL2Bash que fallaba en la base sigue fallando por una comilla de shell sin escapar dentro de `[exec(...)]` (`malformed_tool_count = 1`).
-- Restricciones tecnicas conocidas de llama.cpp con esta arquitectura: el embedding atado rechaza LoRA y los expertos MoE en 3D reducen la decodificacion en torno a un 30%; el adaptador esquiva ambos, pero limita donde puede intervenir.
-- Licencia LFM Open License v1.0 (lfm1.0): es necesario revisar el archivo LICENSE para conocer las condiciones exactas de uso comercial, ya que la informacion disponible no detalla sus terminos.
-- Sesgos, riesgo de alucinacion e idiomas soportados: no disponibles en la informacion proporcionada.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano de 0,0 GB, lo que sugiere que los artefactos pueden no estar completamente subidos o verificados.
+- La licencia LFM Open License v1.0 impone condiciones específicas para uso comercial; es necesario revisar el archivo LICENSE antes de desplegar en producción.
+- La modificación WSP solo altera 12 tensores; las capacidades no relacionadas con tool calling, agentes o STEM probablemente se mantienen idénticas al modelo base, pero no se han evaluado de forma independiente.
+- Riesgo de alucinación inherente al modelo base; no se documentan mitigaciones específicas más allá de las guardas de inyección.
+- Los resultados de benchmarks se han obtenido con temperatura 0,0 y en una única GPU (RTX 4070 Ti); la reproducibilidad en otros entornos no está garantizada.
+- El contexto máximo no está documentado en la información disponible; los ejemplos usan 8192 tokens, pero el límite real del modelo base podría ser distinto.
+- No se dispone de información sobre sesgos, idiomas soportados ni evaluación de seguridad.
+- Las mejoras en tbench10 son modestas (3/10) y las tareas de terminal complejas pueden seguir fallando.
+- El modelo está pensado para investigación e interpretabilidad mecanicista; su uso en producción requiere validación adicional.
 
 ## Enlaces
-
-- Repositorio Hugging Face del adaptador: https://huggingface.co/jstarks/LFM2.5-8B-A1B-Weight-Space-Programming
+- Repositorio Hugging Face: https://huggingface.co/jstarks/LFM2.5-8B-A1B-Weight-Space-Programming
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
-- GGUF oficial del modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF
-- Adaptador fusionado rango 16: https://huggingface.co/jstarks/LFM2.5-8B-A1B-Weight-Space-Programming/blob/main/adapters/wsp_lfm25_s1_1.0_s2_1.5_fused_r16.gguf
+- GGUF oficial del base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF
 - Licencia: https://huggingface.co/jstarks/LFM2.5-8B-A1B-Weight-Space-Programming/blob/main/LICENSE
+- GGUF Q4_K_M empaquetado: https://huggingface.co/jstarks/LFM2.5-8B-A1B-Weight-Space-Programming/blob/main/LFM2.5-8B-A1B-WSP-Q4_K_M.gguf
+- GGUF Q4_0 empaquetado: https://huggingface.co/jstarks/LFM2.5-8B-A1B-Weight-Space-Programming/blob/main/LFM2.5-8B-A1B-WSP-Q4_0.gguf
+- Adaptador fusionado r16: https://huggingface.co/jstarks/LFM2.5-8B-A1B-Weight-Space-Programming/blob/main/adapters/wsp_lfm25_s1_1.0_s2_1.5_fused_r16.gguf

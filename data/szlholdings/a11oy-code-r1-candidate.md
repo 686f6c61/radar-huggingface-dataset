@@ -2,95 +2,103 @@
 
 ## Resumen
 
-a11oy-code-r1-candidate es un adaptador LoRA (PEFT) publicado por SZLHOLDINGS sobre el modelo base Qwen/Qwen2.5-Coder-3B-Instruct. Se trata, por tanto, de un fine-tuning por supervisión (SFT) del modelo coder de 3.000 millones de parámetros de Qwen, empaquetado como adaptador y no como checkpoint completo. El repositorio ocupa 0,3 GB, lo que confirma que contiene únicamente los pesos del adaptador en safetensors y no los del modelo base.
+Siq'iq code-r1-candidate (identificador de repositorio `SZLHOLDINGS/a11oy-code-r1-candidate`) es un adaptador PEFT publicado por SZL Holdings sobre el modelo base Qwen2.5-Coder-3B-Instruct. No se trata de un modelo entrenado desde cero, sino de un ajuste fino mediante adaptadores (librería `peft`) orientado a tareas de generación de texto y código conversacional. El tamaño del repositorio es de 0,3 GB, coherente con un conjunto de pesos de adaptador y no con un modelo completo de 3.000 millones de parámetros.
 
-La relevancia del modelo es limitada y su estado es claramente de borrador: la model card es la plantilla por defecto de Hugging Face sin rellenar, no declara licencia ni idiomas, no documenta datos de entrenamiento ni hiperparámetros, y no incluye resultados de evaluación. Registra cero descargas y cero likes en el momento de la consulta. Cualquier evaluación rigurosa debe hacerse contra el modelo base, cuyas capacidades y limitaciones hereda.
+El modelo se presenta como candidato de la línea de producto "a11oy-code" dentro del catálogo de la organización, con un estado declarado como "MEASURED" y con recibos de evaluación y entrenamiento publicados en el propio repositorio. La model card incluye un nombre de visualización en quechua ("Siq'iq", que significa diseñador o quien traza líneas) de carácter meramente cosmético: el identificador del repositorio no ha cambiado.
 
-El interés práctico, si se confirma su calidad, reside en la posibilidad de aplicar un ajuste ligero sobre un coder de 3B que cabe en GPU de consumo, con un coste de almacenamiento mínimo (0,3 GB) y sin necesidad de reentrenar el modelo completo. No obstante, al no existir documentación técnica ni validación publicada, debe tratarse como un artefacto experimental no apto para producción sin una evaluación propia.
+La relevancia es limitada y de nicho: se trata de un adaptador experimental con 177 descargas en los últimos 30 días, sin likes, sin datos declarados de idiomas y con una licencia heredada del modelo base (`qwen-research`) que restringe el uso comercial. La información técnica publicada por el autor es escasa en cuanto a arquitectura, datos de entrenamiento e hiperparámetros, y se centra en recibos de evaluación interna más que en especificaciones reproducibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (PEFT) sobre transformer decoder-only Qwen2.5-Coder-3B-Instruct |
-| Parametros totales | No disponible para el adaptador; el modelo base tiene 3.000 millones (3B) |
+| Arquitectura | Adaptador PEFT sobre transformer decoder-only (Qwen2.5-Coder-3B-Instruct); arquitectura interna del adaptador no disponible |
+| Parametros totales | No disponible (modelo base: 3.000 millones; el adaptador no declara su recuento) |
 | Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la model card; heredada del modelo base (Qwen2.5-Coder-3B-Instruct soporta hasta 32.768 tokens según su documentación oficial, no verificada en esta ficha) |
-| Tipos de cuantizacion | No disponible; el adaptador se distribuye en safetensors. El modelo base admite cuantizaciones estándar (GPTQ, AWQ, GGUF) por su cuenta |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (adaptador LoRA); requiere cargar el modelo base por separado |
-| Libreria | peft 0.21.2, compatible con transformers y trl |
-| Tamano del repositorio | 0,3 GB |
-| Fecha de publicacion | 2026-11-10 |
+| Longitud de contexto | No disponible en la informacion proporcionada (heredada del base Qwen2.5-Coder-3B-Instruct, valor no confirmado en la card) |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | No disponible (la card no declara lista de idiomas) |
+| Licencia | `qwen-research` (license_name: qwen-research; enlace a la licencia del modelo base Qwen2.5-Coder-3B-Instruct) |
+| Formato de pesos | Safetensors (adaptador PEFT); libreria `peft` |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA entrenado mediante SFT (supervised fine-tuning) con la librería TRL, según las etiquetas del repositorio (`lora`, `sft`, `trl`). No se especifican el rango del adaptador, los módulos objetivo, la tasa de aprendizaje, el número de pasos ni la composición del dataset de entrenamiento. La model card no aporta información sobre preprocesado, precisión mixta empleada ni infraestructura de cómputo.
+El modelo es un adaptador de ajuste fino (PEFT) sobre Qwen2.5-Coder-3B-Instruct, un transformer decoder-only de 3.000 millones de parámetros especializado en código. La relación declarada en el YAML es `adapter`, lo que implica que para su uso es necesario cargar el modelo base y aplicar los pesos del adaptador. La card no especifica la técnica PEFT concreta (LoRA, QLoRA, DoRA u otra), el rango, el alpha ni los módulos objetivo.
 
-El modelo base, Qwen2.5-Coder-3B-Instruct, es un transformer decoder-only con atención causal estándar, entrenado por Alibaba Qwen para tareas de código e instrucciones. El adaptador modifica únicamente un subconjunto de pesos de ese modelo; no se ha publicado ninguna innovación técnica adicional (decodificación especulativa, atención lineal, mezcla de expertos) asociada a este fine-tuning. El nombre "r1" sugiere una posible inspiración en el estilo de razonamiento de DeepSeek-R1, pero no hay evidencia documentada que lo respalde.
+En cuanto al entrenamiento, la card menciona un currículo denominado `SZLHOLDINGS/a11oy-code-sft-v1` con 2.658 pares de entrenamiento ("estate source + doctrine"), y enlaza un `training_receipt.json` y un `training_report.json`. No se detallan el número de tokens, la composición del dataset, la proporción de código frente a texto, ni si hubo etapas de RLHF o DPO. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal. La información disponible sobre el proceso de entrenamiento es, por tanto, mínima y no permite reproducirlo.
 
 ## Capacidades
 
-- Generación de texto y código: hereda del modelo base la capacidad de completar, explicar y transformar código en múltiples lenguajes de programación.
-- Razonamiento sobre código: resolución de problemas de programación, depuración y explicación de fragmentos.
-- Instrucciones conversacionales: el modelo base es una variante Instruct, por lo que acepta diálogo multi-turno.
-- Tool calling / function calling: no documentado para el adaptador; el modelo base Qwen2.5-Coder-Instruct sí lo soporta, pero no se ha verificado que el fine-tuning lo preserve.
-- Capacidades de agente y razonamiento multi-paso: no documentadas.
-- Multilingüismo: no documentado; depende del modelo base.
-- Modo thinking o razonamiento extendido: no documentado, pese al sufijo "r1" del nombre.
-- Visión y audio: no soportados (el modelo base es solo texto).
+- Generación de texto y código conversacional, heredadas del modelo base Qwen2.5-Coder-3B-Instruct.
+- Orientación declarada a tareas de código dentro de la línea de producto "a11oy-code".
+- Soporte de conversación multi-turno (pipeline `text-generation`, tag `conversational`).
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingües: no disponible (la card no declara idiomas).
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistencia de código en IDE: el adaptador, cargado sobre el modelo base de 3B, puede ofrecer autocompletado y explicación de fragmentos con un coste de VRAM bajo, adecuado para estaciones de trabajo con GPU de consumo.
-- Generación de tests unitarios: dado un fragmento de código, el modelo puede proponer casos de prueba; su tamaño reducido permite ejecutarlo localmente sin enviar código propietario a servicios externos.
-- Refactorización guiada: transformación de funciones o módulos con instrucciones en lenguaje natural, aprovechando la naturaleza Instruct del modelo base.
-- Documentación automática: generación de docstrings y comentarios a partir del código fuente en pipelines de integración continua.
-- Chatbot técnico de soporte interno: respuestas sobre APIs y fragmentos de código en un entorno controlado, siempre que se valide previamente la calidad del adaptador.
-- Prototipado y experimentación académica: estudio del efecto de un SFT ligero sobre un coder de 3B, comparando el adaptador con el modelo base en tareas concretas.
-- Educación en programación: explicación paso a paso de algoritmos y errores comunes, con despliegue local en aulas o entornos sin conectividad.
+- Asistencia de código en el IDE: el adaptador puede cargarse sobre Qwen2.5-Coder-3B-Instruct para autocompletado y generación de fragmentos de código en un entorno de desarrollo, aprovechando la base especializada en programación.
+- Generación de tests unitarios: dado un fragmento de código, el modelo puede producir pruebas asociadas; su tamaño de 3.000 millones de parámetros permite desplegarlo en hardware modesto.
+- Explicación y documentación de código: resumir funciones y generar docstrings en pipelines de documentación automatizada, con la ventaja de que el adaptador es ligero (0,3 GB) y fácil de versionar.
+- Prototipado de asistentes conversacionales técnicos: al ser un adaptador pequeño, permite iterar rápidamente sobre el comportamiento conversacional sin reentrenar el modelo base.
+- Evaluación comparativa en investigación: útil como caso de estudio de ajuste fino PEFT con recibos de evaluación publicados, para quienes investigan metodologías de adaptación de modelos de código.
+- Despliegue en entornos con recursos limitados: al requerir solo el adaptador sobre el base de 3B, puede ejecutarse en GPU de consumo si el base se cuantiza, aunque la card no confirma cuantizaciones soportadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+La card publica recibos de evaluación interna con una puntuación de 3/6 en la "eval battery" y en la "estate battery" y "mass battery". No se especifica qué tareas componen esas baterías ni cómo se calcula la puntuación, por lo que no son comparables con benchmarks estándar.
+
+| Benchmark | Resultado | Fuente |
+|---|---|---|
+| eval_battery.json | 3/6 (MEASURED) | Recibo del repositorio |
+| estate-battery-a11oy-code-r1-candidate.json | 3/6 (MEASURED) | Dataset frontier-54-runs |
+| mass-battery-a11oy_code_r1_trained.json | 3/6 (MEASURED) | Dataset frontier-54-runs |
+| MMLU, HumanEval, GSM8K | No disponible | - |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el adaptador en safetensors ocupa 0,3 GB; el modelo base de 3B en FP16 requiere aproximadamente 6-7 GB de VRAM, y en cuantización de 4 bits alrededor de 2-3 GB. La VRAM total es la suma del modelo base más la del adaptador y el overhead de inferencia.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A10, L4, A100 y H100 para despliegues de mayor concurrencia.
-- GPU de consumo: sí, cabe en tarjetas con 8 GB o más en cuantización de 4 bits, y en 12-16 GB en FP16.
-- Opciones de despliegue: transformers + peft (carga del adaptador sobre el modelo base), vLLM (con soporte de adaptadores LoRA), TGI, llama.cpp u Ollama tras fusionar el adaptador con el modelo base y convertir a GGUF.
-- Latencia y throughput: no disponibles; dependen del hardware y del backend. Para un 3B en una RTX 4090 se esperan decenas de tokens por segundo, pero no hay mediciones publicadas para este adaptador.
+- VRAM estimada: no disponible de forma explícita. Como referencia, el modelo base Qwen2.5-Coder-3B-Instruct en FP16 requiere aproximadamente 6-7 GB de VRAM; en cuantización de 4 bits, alrededor de 2-3 GB. El adaptador añade una cantidad marginal.
+- GPU recomendadas: no declaradas por el autor. Por tamaño del base, cabría en RTX 3060/4060 Ti (12-16 GB) en FP16 y en GPUs de 8 GB con cuantización; A100/H100 no serían necesarias.
+- Cabe en GPU de consumo: sí, presumiblemente, al tratarse de un base de 3B, aunque el autor no lo confirma.
+- Opciones de despliegue: no disponibles en la informacion proporcionada. Al ser un adaptador PEFT, requeriría cargarse con la librería `peft` sobre el base; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| SZLHOLDINGS/a11oy-code-r1-candidate | 3B (base) + adaptador LoRA | No disponible | No disponible | safetensors (adaptador) | Sin documentación ni benchmarks; 0 descargas |
-| Qwen/Qwen2.5-Coder-3B-Instruct | 3B | 32.768 tokens (según documentación oficial del modelo base) | Apache 2.0 (según el modelo base) | safetensors, GGUF | Modelo base de referencia, documentado y evaluado por el autor original |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7B | 32.768 tokens (según documentación oficial) | Apache 2.0 (según el modelo base) | safetensors, GGUF | Mayor capacidad a costa de más VRAM |
-| DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE, 2,4B activos) | 128.000 tokens (según documentación oficial) | Licencia propia de DeepSeek | safetensors | Alternativa MoE con contexto muy largo |
+| a11oy-code-r1-candidate (este) | Adaptador sobre 3B | No disponible | qwen-research | Safetensors (PEFT) | Candidato experimental, 177 descargas |
+| Qwen2.5-Coder-3B-Instruct | 3B | No disponible en esta ficha | qwen-research | Safetensors, GGUF | Modelo base, ampliamente adoptado |
+| CodeLlama-7B-Instruct | 7B | No disponible en esta ficha | Llama 2 | Safetensors, GGUF | Alternativa de código de mayor tamaño |
+| DeepSeek-Coder-6.7B-Instruct | 6,7B | No disponible en esta ficha | DeepSeek License | Safetensors, GGUF | Alternativa de código de tamaño medio |
 
-La comparación directa con el modelo base es la más informativa: el adaptador solo tiene sentido si mejora tareas específicas frente a Qwen2.5-Coder-3B-Instruct, algo que no está demostrado en la información disponible.
+La comparación directa con benchmarks no es posible porque el adaptador no publica resultados estándar. Frente al modelo base, la diferencia es el ajuste fino PEFT, cuyo beneficio cuantitativo no está documentado.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla por defecto sin rellenar; no hay información sobre datos, hiperparámetros ni evaluación.
-- Licencia no declarada: no se puede asumir uso comercial permitido. La licencia del adaptador es independiente de la del modelo base (Apache 2.0 según la documentación de Qwen), y su ausencia es un riesgo legal en producción.
-- Sin validación publicada: cero descargas y cero likes; no hay evidencia de que el fine-tuning mejore al modelo base ni de que no lo degrade.
-- Riesgo de alucinación: inherente a los modelos de lenguaje de 3B, especialmente en código con APIs poco comunes o bibliotecas recientes.
-- Idiomas no declarados: no se puede garantizar un rendimiento aceptable en castellano ni en otros idiomas distintos del inglés.
-- Contexto no verificado: la ventana efectiva depende del modelo base y de la configuración de carga; no hay confirmación de que el adaptador preserve el comportamiento en contextos largos.
-- Sesgos: no documentados; el adaptador hereda los sesgos del corpus de entrenamiento del modelo base y del dataset de SFT, que se desconoce.
-- Nombre potencialmente engañoso: el sufijo "r1" no está respaldado por ninguna capacidad de razonamiento extendido documentada.
-- Para producción: requiere fusionar el adaptador, evaluar en el dominio objetivo y revisar la licencia antes de cualquier despliegue.
+- Licencia `qwen-research`: restringe el uso comercial; debe revisarse el texto completo de la licencia del modelo base antes de cualquier despliegue en producción.
+- Ausencia de datos de entrenamiento reproducibles: solo se indica un currículo de 2.658 pares sin detallar composición, tokens ni hiperparámetros.
+- Riesgo de alucinación: inherente a los modelos de 3B y no evaluado en la card con benchmarks estándar.
+- Sesgos conocidos: no documentados por el autor; se heredan los del modelo base.
+- Idiomas soportados no declarados: no puede garantizarse un rendimiento multilingüe concreto.
+- Evaluación interna opaca: las puntuaciones 3/6 no son comparables con benchmarks públicos y no se describe la batería de pruebas.
+- Estado "candidate": se trata de un candidato de línea de producto, no de un modelo validado para producción.
+- Dependencia del modelo base: requiere descargar y cargar Qwen2.5-Coder-3B-Instruct además del adaptador.
+- Repositorio con muy baja adopción (177 descargas, 0 likes) y sin comunidad que valide su comportamiento.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/a11oy-code-r1-candidate
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/a11oy-code-r1-candidate
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
-- Librería PEFT: https://github.com/huggingface/peft
-- Librería TRL: https://github.com/huggingface/trl
-- Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
-- Referencia citada en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct/blob/main/LICENSE
+- Organización en Hugging Face: https://huggingface.co/SZLHOLDINGS
+- GitHub de la organización: https://github.com/szl-holdings
+- Recibo de evaluación: https://huggingface.co/SZLHOLDINGS/a11oy-code-r1-candidate/blob/main/receipts/eval_battery.json
+- Recibo de entrenamiento: https://huggingface.co/SZLHOLDINGS/a11oy-code-r1-candidate/blob/main/receipts/training_receipt.json
+- Informe de entrenamiento: https://huggingface.co/SZLHOLDINGS/a11oy-code-r1-candidate/blob/main/training_report.json
+- Batería estate: https://huggingface.co/datasets/SZLHOLDINGS/frontier-54-runs/blob/main/benchmark/estate-battery-a11oy-code-r1-candidate.json
+- Batería mass: https://huggingface.co/datasets/SZLHOLDINGS/frontier-54-runs/blob/main/benchmark/mass-battery-a11oy_code_r1_trained.json

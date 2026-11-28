@@ -2,105 +2,105 @@
 
 ## Resumen
 
-Riker 89Bob A6B Flash-Next REAP70 es una versión podada por expertos del modelo Qwen/Qwen3.8-Flash-Next, publicada por MouseWurX en formato GGUF. Se trata de un recorte REAP (router-weighted expert activation pruning) que elimina 153 de los 512 expertos de cada una de las 48 capas del modelo base, conservando 359 expertos por capa (un 70 %). El resultado es un modelo de aproximadamente 88,9B parámetros frente a los 125B del original, sin reentrenamiento ni reparación posterior de los pesos.
+Riker 89Bob A6B Flash-Next REAP70 es una version podada y cuantizada del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario MouseWurX en Hugging Face. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) al que se le han eliminado 153 de los 512 expertos de cada capa, conservando 359 por capa (un 70 % del total). El resultado son aproximadamente 88.900 millones de parametros efectivos de los 125.000 millones del modelo base, segun indica el autor, sin contar el embedding n-gram y la capa MTP. El modelo no ha sido reentrenado ni "curado" tras la poda.
 
-El modelo forma parte del proyecto Bob, un asistente personal que se ejecuta en local (chat, correo, ofimática, código y consultas web) con un modelo como cerebro y sin envío de datos al exterior salvo activación explícita. El objetivo declarado de la saga de recortes (Bobert al 80 %, Riker al 70 % y Bill al 60 %) es conservar las capacidades del Flash-Next completo en un equipo doméstico con 16 GB de VRAM y 32 GB de RAM.
+La seleccion de expertos se realizo mediante puntuaciones de estilo REAP (router-weighted expert activation pruning), calculadas a partir de trazas de uso real del modelo base ejecutando tareas cotidianas de asistente (correo, archivos de oficina y codigo). El modelo forma parte del proyecto Bob, un asistente personal de ejecucion local, y su objetivo declarado es acercar las capacidades del Flash-Next completo a un ordenador domestico con 16 GB de VRAM y 32 GB de RAM.
 
-La relevancia de esta ficha es doble: por un lado, documenta una técnica de podado de MoE basada en puntuaciones ponderadas por el router en lugar de meros recuentos de activación; por otro, ilustra las dificultades prácticas de cuantizar modelos con dimensiones de fila no múltiplas de 256 en llama.cpp, que obligan a tamaños de fichero superiores a los que sugieren los nombres de las cuantizaciones.
+La publicacion se distribuye exclusivamente en formato GGUF, con cinco cuantizaciones que van desde IQ2_XXS (53,5 GB) hasta Q4_K_M (95,0 GB). El repositorio ocupa 359,9 GB e incluye el fichero `keep.json` con la lista de expertos conservados por capa y una imatrix propia. La licencia es qwen-community-1.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mezcla de expertos) con capa MTP (multi-token prediction) y embedding n-grama; 48 capas, 512 expertos por capa en el modelo base |
-| Parametros totales | 205.258.854 (según safetensors del repo); el autor declara ~88,9B tras el podado, sin contar el embedding n-grama ni la capa MTP |
-| Parametros activos | no disponible (el modelo base es MoE; el número de expertos activos por token no se detalla en la información disponible) |
+| Arquitectura | Mixture-of-Experts (MoE) tipo transformer, derivada de Qwen3.8-Flash-Next |
+| Parametros totales | 140.827.870.080 (safetensors del repo); ~88,9B efectivos tras la poda segun el autor |
+| Parametros activos | ~6B (denominacion A6B del nombre del modelo; no confirmado en la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF con cuantizaciones tipo k e i-quant de llama.cpp, más IQ2 con Q2_0 para las proyecciones down; tipos de 32 anchos (4-5 bits) para down projections en el resto y ~4,5 bits para el embedding n-grama; nombres de fichero no publicados (tabla de tamaños vacía) |
+| Tipos de cuantizacion | IQ2_XXS, IQ2_M, Q3_K_M, IQ4_XS, Q4_K_M |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en la model card) |
-| Formato de pesos | GGUF (re-cuantizado desde Q8_0 de unsloth/Qwen3.8-Flash-Next-GGUF, no desde BF16) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF (exclusivamente) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de mezcla de expertos con 48 capas y 512 expertos por capa, al que se le añaden una capa MTP (draft) para decodificación especulativa y un embedding n-grama de 51B parámetros. El podado REAP conserva en cada capa los 359 expertos con mayor puntuación, calculada como la frecuencia con que el router selecciona cada experto multiplicada por su peso de router y por el tamaño de su salida, sumada sobre todos los tokens de las ejecuciones limpias. La lista del 70 % se construyó a partir de la lista del 65 % más, en cada capa, los 26 expertos de la banda entre los percentiles 65 y 75 que más veces fueron seleccionados. En la capa 47 solo unos 30 expertos acumulaban peso real, por lo que el resto de la lista se completó por número de experto. La capa MTP conserva los expertos seleccionados con más frecuencia en el resto de capas; el experto compartido y todo lo ajeno a los expertos permanecen intactos.
+El modelo es un transformer MoE con 48 capas y 512 expertos por capa en su version original. La intervencion consiste en una poda estructurada de expertos: en cada capa se conservan los 359 expertos con mayor puntuacion REAP, calculada como el peso que el router asigna a cada experto multiplicado por el tamano de su salida, sumado sobre todas las palabras de las ejecuciones limpias. La lista de conservacion se construyo a partir de la lista del 65 % mas los 26 expertos de la banda entre el 65 % y el 75 % que fueron seleccionados con mas frecuencia. En la capa 47 la traza solo mostro unos 30 expertos con peso real, por lo que el resto de la lista se completo por numero de experto. La capa MTP (draft) conserva los expertos mas veces retenidos en el resto de capas, y el experto compartido y todo lo que queda fuera de los expertos permanece intacto.
 
-Los datos de selección provinieron de 153 ejecuciones limpias del Flash-Next completo (Unsloth UD-Q4_K_XL) realizadas a través del bucle de herramientas de Bob: clasificación y respuesta de correo, creación y edición de archivos ofimáticos y trabajo en proyectos de código. Solo se conservaron las ejecuciones que superaron la evaluación. Los conjuntos de trabajo usados para juzgar el modelo se mantuvieron separados y nunca se emplearon para puntuar expertos. Los ficheros GGUF se generaron cortando los slices de experto completos del Q8_0 con `gguf_cut_experts.py` y cuantizando después con `llama-quantize` usando la imatrix del repo (`imatrix.gguf`), derivada de los chats de entrenamiento propios del autor y no de los trabajos de evaluación. No hubo reentrenamiento ni "healing" de los pesos tras el corte.
+El proceso de generacion de los ficheros partio de la version Q8_0 de unsloth/Qwen3.8-Flash-Next-GGUF, a la que se aplico `gguf_cut_experts.py` para copiar rebanadas completas de expertos sin modificar su interior. Posteriormente se cuantizo con `llama-quantize` de llama.cpp usando una imatrix propia (`imatrix.gguf`) generada a partir de chats de entrenamiento del autor, no de las tareas de evaluacion. No hubo reentrenamiento ni recuperacion (healing) de los expertos eliminados. Destaca una particularidad tecnica: algunas filas de Flash-Next no son multiplos de 256 de ancho (la proyeccion down de cada experto, de 640, y el embedding n-gram de 51B, de 160), lo que obliga a usar tipos de cuantizacion especificos (Q2_0 en los ficheros IQ2 y tipos de 32 de ancho de 4-5 bits en el resto) y explica que los ficheros sean mayores de lo que sugieren sus nombres.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general heredados del modelo base Qwen3.8-Flash-Next, con la pérdida de capacidad asociada al recorte de expertos.
-- Trabajo con correo electrónico: clasificación, búsqueda y redacción de respuestas dentro del bucle de herramientas de Bob.
-- Manejo de archivos ofimáticos: creación y edición de documentos, hojas de cálculo y presentaciones.
-- Trabajo en proyectos de código: navegación de repositorios y edición de código, evaluado en el conjunto "Code repo".
-- Consultas web y uso de aplicaciones a través del bucle de herramientas del asistente.
-- Soporte de tool calling y de razonamiento multi-paso, implícito en el diseño del asistente Bob que lo emplea.
-- Decodificación especulativa mediante la capa MTP conservada.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generacion de texto conversacional y razonamiento general, heredados del modelo base Qwen3.8-Flash-Next.
+- Trabajo con correo electronico: clasificacion, busqueda y redaccion de respuestas.
+- Manipulacion de archivos de oficina (creacion y edicion de documentos).
+- Trabajo en proyectos de codigo dentro de un bucle de herramientas (tool loop) propio del proyecto Bob.
+- Busquedas web e interaccion con aplicaciones, segun el diseno del asistente Bob.
+- Soporte de tool calling / function calling a traves del bucle de herramientas descrito por el autor.
+- Ejecucion local: disenado para funcionar en un equipo domestico sin enviar datos al exterior salvo que se active explicitamente.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistente personal local de escritorio: el modelo está diseñado para ejecutarse en un equipo con 16 GB de VRAM y 32 GB de RAM, gestionando conversaciones, correo y archivos sin enviar datos a servicios externos, lo que lo hace adecuado para entornos con requisitos de privacidad.
-- Gestión de bandeja de entrada: clasificación y búsqueda de correos relevantes con una tasa de acierto del 79-92 % según el nivel de conservación de expertos en las pruebas del autor; útil para triaje automático en local.
-- Automatización ofimática: generación y edición de documentos y hojas de cálculo mediante tool calling, con un rendimiento de 13 de 14 tareas en el conjunto de evaluación del autor.
-- Asistencia a la programación en local: edición y navegación de repositorios de código con 12 de 12 tareas superadas en la evaluación del autor, integrable en flujos de trabajo de desarrollo sin conexión.
-- Investigación sobre podado de MoE: el repo incluye `keep.json` con los identificadores de experto conservados por capa, lo que permite reproducir el recorte y comparar estrategias de selección.
-- Despliegue en hardware de consumo: al ser GGUF y funcionar en llama.cpp, puede ejecutarse con memory mapping del embedding n-grama, leyendo desde disco las filas consultadas y liberando RAM y VRAM para el resto del modelo.
-- Experimentación con cuantizaciones no estándar: sirve como caso de estudio de las limitaciones de llama.cpp con filas no múltiplas de 256 y de las soluciones adoptadas (Q2_0 en grupos de 64 para las down projections).
+- Asistente personal local: el modelo esta pensado como cerebro de Bob, un asistente que gestiona chat, correo, archivos de oficina, codigo, busquedas web y aplicaciones en el propio ordenador, con la ventaja de que nada sale del equipo salvo que se active.
+- Gestion de bandeja de entrada: clasificacion de correo y localizacion de mensajes relevantes; en las pruebas del autor la retencion del 70 % de expertos busca mantener el rendimiento de busqueda de correos (la metrica de inbox cae del 90,8 % al 79,0 % entre el 75 % y el 65 % de retencion).
+- Edicion de documentos de oficina: creacion y modificacion de archivos ofimaticos mediante el bucle de herramientas, adecuado para flujos de trabajo personales o de pequena oficina.
+- Asistencia en proyectos de codigo: el modelo fue evaluado en tareas de repositorio de codigo (12 de 12 en los niveles de 100 %, 90 %, 80 %, 65 % y 60 % de retencion), lo que lo hace util para navegar y modificar codigo en local.
+- Despliegue en hardware de consumo: con cuantizaciones de 53,5 a 95,0 GB y uso de memory mapping para el embedding n-gram, esta pensado para ejecutarse en un equipo con 16 GB de GPU y 32 GB de RAM.
+- Entornos con requisitos de privacidad: al ejecutarse integramente en local, encaja en escenarios donde no se permite enviar datos a servicios en la nube.
+- Experimentacion con poda de MoE: la publicacion incluye `keep.json` e imatrix, lo que permite reproducir o auditar la seleccion de expertos y comparar con los cortes Bobert (80 %) y Bill (60 %) del mismo autor.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles son evaluaciones propias del autor sobre conjuntos de trabajo reservados (held-out) de Bob, con el modelo base Flash-Next UD-Q4_K_XL y máscaras de experto aplicadas en tiempo de servicio, no sobre los ficheros GGUF podados. Se indica una ejecución por nivel.
+El autor publica resultados sobre conjuntos de tareas retenidos (held-out) de Bob, nunca usados para puntuar expertos, comparando niveles de retencion mediante una mascara de expertos en tiempo de servicio (sin fichero cortado ni healing). Los datos corresponden a Flash-Next UD-Q4_K_XL, 22 de noviembre de 2026, una ejecucion por nivel:
 
-| Expertos conservados | Office (de 14) | Code repo (de 12) | Web (de 11) | Inbox (correos correctos) | Acciones dañinas |
+| Expertos conservados | Office (de 14) | Code repo (de 12) | Web (de 11) | Inbox (encontrar correos) | Acciones daninas |
 |---|---|---|---|---|---|
 | 100 % | 13 | 12 | 8 | 85,0 % | 0 |
 | 90 % | 13 | 12 | 9 | 92,7 % | 0 |
 | 80 % | 12 | 12 | 9 | 92,2 % | 0 |
-| 75 % | 13 | 10 | 8 | 90,8 % | 1 |
+| 75 % | 13 | 10 | 8 | 90,8 % | 1 (borro un correo que requeria respuesta) |
 | 65 % | 13 | 12 | 9 | 79,0 % | 0 |
 | 60 % | 13 | 12 | 8 | 79,6 % | 0 |
 | 50 % | 9 | 11 | 9 | 85,7 % | 0 |
 
-El nivel del 70 % no se ejecutó como máscara, por lo que sus puntuaciones no están probadas en el laboratorio del autor según la propia model card. En pruebas adicionales al 80 %, la lista específica del conjunto Office obtuvo 13 de 14 frente a 12 de la lista construida con todos los trabajos; una lista fusionada de ambas corrigió una búsqueda de archivo pero agotó el tiempo en 3 tareas. Redirigir la cuota de cada experto desactivado a su experto conservado más similar perdió claramente en la bandeja de entrada (64 de 117 correos encontrados). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+El nivel del 70 % no se ejecuto como mascara, por lo que sus puntuaciones no estan probadas en el laboratorio del autor segun sus propias notas. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el objetivo declarado es un equipo con 16 GB de VRAM y 32 GB de RAM; el embedding n-grama (~29 GB en tipo de 32 anchos) se lee desde disco con memory mapping y no consume RAM ni VRAM, por lo que el resto del fichero es lo que debe caber.
-- GPU recomendadas: no se especifican modelos concretos; el diseño apunta a tarjetas de consumo con 16 GB (por ejemplo, RTX 4060 Ti 16 GB, RTX 4070 Ti Super, RTX 4080) o superiores.
-- Cabe en GPU de consumo: sí, según el objetivo del proyecto, con 16 GB de VRAM y 32 GB de RAM del sistema.
-- Opciones de despliegue: llama.cpp, en compilaciones que ejecuten Qwen/Qwen3.8-Flash-Next; compatible con el ecosistema GGUF (Ollama y otros frontends basados en llama.cpp de forma implícita, aunque no se mencionan explícitamente).
-- Latencia y throughput: no disponibles. La decodificación especulativa mediante la capa MTP puede reducir la latencia, pero no se publican cifras.
+- VRAM estimada: depende de la cuantizacion. IQ2_XXS ocupa 53,5 GB, IQ2_M 57,3 GB, Q3_K_M 75,4 GB, IQ4_XS 77,8 GB y Q4_K_M 95,0 GB. El embedding n-gram (unos 29 GB) puede leerse desde disco con memory mapping y no consume RAM ni VRAM; el resto del fichero es lo que debe caber en memoria.
+- Objetivo declarado por el autor: un ordenador domestico con 16 GB de tarjeta grafica y 32 GB de RAM.
+- GPU recomendadas: no se especifican modelos concretos en la informacion disponible. Por el volumen de los ficheros, las cuantizaciones IQ2 requieren al menos 53,5 GB de memoria combinada, lo que excede una unica GPU de consumo de 16 GB y obliga a repartir entre GPU y RAM o a usar varias GPU.
+- Opciones de despliegue: llama.cpp (requiere builds que ejecuten Qwen/Qwen3.8-Flash-Next). El modelo esta etiquetado como compatible con endpoints.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Riker 89Bob A6B Flash-Next REAP70 | ~88,9B (205.258.854 según safetensors) | no disponible | qwen-community-1.0 | GGUF | 70 % de expertos conservados, sin reentrenamiento |
-| Qwen/Qwen3.8-Flash-Next (base) | 125B (sin embedding n-grama ni MTP) | no disponible | qwen-community-1.0 | safetensors, GGUF (vía Unsloth) | Modelo completo, 512 expertos por capa |
-| Bobert (recorte al 80 %) | no disponible | no disponible | qwen-community-1.0 | GGUF | Misma metodología, 80 % de expertos |
-| Bill (recorte al 60 %) | no disponible | no disponible | qwen-community-1.0 | GGUF | Misma metodología, 60 % de expertos |
+| Riker 89Bob A6B Flash-Next REAP70 | 140,8B totales; ~88,9B efectivos tras poda | no disponible | qwen-community-1.0 | GGUF | Poda REAP al 70 % de expertos, sin reentrenamiento |
+| Qwen/Qwen3.8-Flash-Next (base) | 125B segun el autor (512 expertos por capa, 48 capas) | no disponible | qwen-community-1.0 | safetensors, GGUF (via Unsloth) | Modelo completo sin poda |
+| Bobert (corte del 80 %) | no disponible | no disponible | qwen-community-1.0 | GGUF | Mismo autor, conserva el 80 % de expertos |
+| Bill (corte del 60 %) | no disponible | no disponible | qwen-community-1.0 | GGUF | Mismo autor, conserva el 60 % de expertos |
 
-No se dispone de datos de benchmarks estándar ni de especificaciones de contexto para establecer una comparación cuantitativa con alternativas de otros autores.
+Los datos de parametros del modelo base y de los otros cortes no estan detallados en la informacion disponible mas alla de lo indicado.
 
 ## Limitaciones y advertencias
 
-- El recorte se realizó sin reentrenamiento ni reparación de pesos: el modelo puede degradarse en tareas distintas de las usadas para puntuar expertos (correo, ofimática, código y web).
-- Los conjuntos de evaluación son propios del autor, pequeños (11-14 tareas por categoría) y con una sola ejecución por nivel; la significación estadística es limitada.
-- El nivel del 70 % no se probó como máscara antes del corte, por lo que su rendimiento en los conjuntos reservados no está verificado en el laboratorio del autor.
-- El nivel del 75 % produjo una acción dañina (eliminación de un correo que requería respuesta), lo que indica riesgo de comportamientos erróneos en tareas de gestión de correo.
-- Los ficheros son más grandes de lo que sugieren sus nombres de cuantización debido a las filas de 640 y 160 anchos que no admiten tipos k/i-quant de 256; el embedding n-grama ocupa ~29 GB en todos los ficheros.
-- Al estar re-cuantizados desde Q8_0 y no desde BF16, se acumula la pérdida de la cuantización intermedia.
-- Licencia qwen-community-1.0: es necesario revisar sus términos para uso comercial; la model card la etiqueta como "other".
-- Idiomas soportados no documentados; el comportamiento multilingüe no está verificado.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible, pero presentes en cualquier modelo de lenguaje y potencialmente amplificados por el podado.
-- El repo tiene 0 descargas y 0 likes, y la tabla de tamaños de fichero está vacía ("uploading"), lo que sugiere que los pesos pueden no estar completamente disponibles.
+- La poda no fue seguida de reentrenamiento ni healing: los expertos eliminados no se compensan, lo que puede degradar capacidades no cubiertas por las tareas de seleccion.
+- La seleccion de expertos se baso en tareas cotidianas concretas (correo, oficina, codigo) del autor; el rendimiento en otros dominios no esta evaluado.
+- El nivel del 70 % no se probo como mascara en el laboratorio del autor, por lo que su rendimiento es una extrapolacion entre los niveles del 75 % y el 65 %.
+- En el nivel del 75 % se registro una accion danina (borrado de un correo que requeria respuesta), lo que senala riesgo en tareas con efectos irreversibles.
+- Riesgo de alucinacion inherente al modelo base; no se documentan evaluaciones especificas de fidelidad.
+- Idiomas soportados no documentados; no se garantiza un comportamiento multilingue equivalente al del modelo base.
+- La licencia qwen-community-1.0 impone restricciones que deben revisarse antes de uso comercial; el repositorio la etiqueta como "other".
+- Los ficheros son mas grandes de lo que sugieren sus nombres por las limitaciones de ancho de fila en llama.cpp; el embedding n-gram de unos 29 GB requiere memory mapping para no consumir RAM.
+- El modelo se distribuye solo en GGUF y depende de builds especificos de llama.cpp; no hay pesos safetensors del modelo podado.
+- El repositorio ocupa 359,9 GB, lo que exige espacio de almacenamiento considerable incluso descargando una sola cuantizacion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MouseWurX/Riker-89Bob-A6B-Flash-Next-REAP70-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GGUF de origen (Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
-- Proyecto Bob (código y notas): https://github.com/MouseWurX/Bob
-- Dataset bob-lessons: https://huggingface.co/datasets/MouseWurX/bob-lessons
-- Paper REAP (Lasby et al. 2025): no disponible como enlace en la información proporcionada
+- Proyecto Bob (codigo y notas): https://github.com/MouseWurX/Bob
+- Dataset de lecciones de Bob: https://huggingface.co/datasets/MouseWurX/bob-lessons
+- Paper de REAP (Lasby et al., 2025): no disponible como enlace en la informacion proporcionada

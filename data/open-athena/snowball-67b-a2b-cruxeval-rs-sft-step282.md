@@ -2,56 +2,55 @@
 
 ## Resumen
 
-Snowball-67B-A2B-CruxEval-RS-SFT-Step282 es un checkpoint de ajuste fino supervisado (SFT) por muestreo de rechazo (rejection sampling) sobre el modelo base open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92, denominado "estudiante B" en el experimento. Lo publica el proyecto open-athena dentro de la infraestructura Marin y forma parte de un experimento de destilación de un único experto (expert E) sobre tareas de evaluación de código tipo CruxEval. El modelo tiene 67.078.882.816 parámetros totales (unos 67B) en un formato de mezcla de expertos con 2B de parámetros activos por token, según la nomenclatura A2B del identificador.
+Snowball-67B-A2B-CruxEval-RS-SFT-Step282 es un ajuste fino supervisado (SFT) por muestreo de rechazo (rejection sampling) sobre el modelo base Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92, desarrollado por el colectivo open-athena dentro del ecosistema Marin. El modelo pertenece a la familia Snowball, una arquitectura de mezcla de expertos (MoE) de tipo `grug_moe` con 67.078.882.816 parámetros totales y aproximadamente 2.000 millones de parámetros activos por token (designación A2B). El checkpoint publicado corresponde al paso 282 del brazo RS-SFT de un experimento de un solo experto, en el que el modelo estudiante B se ajustó sobre las primeras muestras correctas en ejecución extraídas del pool k=8 del experto E.
 
-El modelo resuelve el problema de transferir capacidad de ejecución y razonamiento de código desde un experto (E) a un estudiante (B) mediante SFT sobre las primeras muestras correctas en ejecución de un pool de k=8 por prompt, cubriendo 1.503 de 1.600 prompts. Es relevante ahora porque documenta de forma reproducible (con informes de experimento, hashes y contabilidad de GPU-horas) una receta de destilación con rechazo aplicada a un modelo MoE de 67B, y porque sus pesos están liberados con licencia Apache 2.0 y verificación sha256 frente a la fuente original.
+La relevancia de esta ficha radica en su carácter de experimento de destilación y alineación: el modelo no es un lanzamiento comercial, sino un artefacto de investigación que documenta una receta concreta de SFT sobre demostraciones filtradas por corrección de ejecución. Los resultados publicados en la model card sitúan CruxEval en 80,8/77,9 (media de dos pasadas), GSM8K en 93,5 y MATH500 en 93,6, lo que evidencia un entrenamiento orientado a razonamiento matemático y ejecución de código.
 
-La arquitectura subyacente es un transformer con mezcla de expertos (tag `grug_moe`), entrenado con el stack Marin/Levanter. El contexto de evaluación se fijó en 32.768 tokens con un límite de generación de 30.720 tokens y modo thinking activado. El checkpoint seleccionado es el de la época 3 (paso 282), elegido tras descartar el checkpoint final por una caída en una dirección de evaluación.
+El modelo se distribuye con licencia Apache 2.0, pesos en safetensors y un tamaño de repositorio de 134,2 GB. Su contexto de evaluación se fijó en 32.768 tokens con un límite de generación de 30.720 tokens y modo thinking activado. Está pensado para investigadores que quieran reproducir o comparar recetas de destilación, no como modelo de producción generalista.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (tag `grug_moe`, stack Marin/Levanter) |
-| Parametros totales | 67.078.882.816 (67B) |
-| Parametros activos | Aproximadamente 2B por token (según nomenclatura A2B; cifra exacta no disponible) |
-| Longitud de contexto | 32.768 tokens en la configuración de evaluación (contexto nativo de entrenamiento no disponible) |
-| Tipos de cuantizacion | No disponible (solo se publican pesos safetensors en precisión de entrenamiento) |
-| Idiomas soportados | No disponible |
+| Arquitectura | MoE de tipo `grug_moe` (familia Snowball, ecosistema Marin) |
+| Parámetros totales | 67.078.882.816 (~67,1 B) |
+| Parámetros activos | ~2 B (designación A2B) |
+| Longitud de contexto | 32.768 tokens (contexto de evaluación; no se especifica el máximo de entrenamiento) |
+| Tipos de cuantización | no disponible (solo se publican pesos safetensors sin cuantizaciones oficiales) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (shards), con `config.json`, `generation_config.json`, tokenizer y `chat_template.jinja` |
+| Formato de pesos | safetensors (shards), con `config.json`, `generation_config.json`, tokenizer y `chat_template.jinja` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer con mezcla de expertos (MoE) del linaje Snowball, con 67B parámetros totales y aproximadamente 2B activos por token. El router se mantuvo congelado durante el ajuste fino ("frozen router bias"), lo que preserva el enrutamiento aprendido en el modelo base y limita el ajuste a los expertos y capas compartidas. El tokenizer y la plantilla de chat son los del estudiante B, sin cambios.
+El modelo es un transformer de mezcla de expertos con 67,1 B de parámetros totales y aproximadamente 2 B activos por token, implementado con la variante `grug_moe` del stack Marin y ejecutado con Levanter. El tokenizer y la plantilla de chat son los del modelo base B, sin modificaciones. El checkpoint es el paso 282 de un ajuste fino supervisado por muestreo de rechazo: se tomaron las primeras muestras correctas en ejecución del pool k=8 del experto E, cubriendo 1.503 de 1.600 prompts.
 
-El entrenamiento consistió en SFT por muestreo de rechazo: para cada prompt se generaron k=8 muestras con el experto E y se seleccionó la primera muestra correcta en ejecución, cubriendo 1.503 de 1.600 prompts. Se usó AdamW con LR 1e-6, betas 0.9/0.999, weight decay 0, grad clip 1.0, batch 16, 376 actualizaciones en 4 épocas, sobre 32 H100 con un total de 57,4 H100-horas. El framework fue Levanter. El checkpoint publicado corresponde al paso 282 (época 3). La evaluación se realizó con Evalchemy (commit ae362881) sobre vLLM con 8 H100, contexto de 32.768 tokens, tope de generación de 30.720 tokens, thinking activado y muestreo sin semilla a temperatura 1.0.
+La receta de entrenamiento emplea AdamW con LR 1e-6, betas 0,9/0,999, weight decay 0, grad clip 1,0 y sesgo del router congelado. Se realizaron 4 épocas (376 actualizaciones de batch 16) en 32 H100, con un coste total de 57,4 H100-h. Se seleccionó el checkpoint de la época 3 tras una caída final en una dirección de evaluación. La evaluación se realizó con Evalchemy (commit `ae362881`) sobre vLLM con 8 H100, contexto de 32.768 tokens, límite de generación de 30.720 tokens, modo thinking activo y muestreo sin semilla a temperatura 1,0.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, con modo thinking activado en la configuración de evaluación.
-- Razonamiento matemático: GSM8K 93,5 y MATH500 93,6 en la evaluación congelada.
-- Ejecución y razonamiento sobre código: CruxEval 80,8 / 77,9 (media de dos pasadas) y HumanEval+ 77,4.
-- Resolución de problemas de programación competitiva y benchmarks tipo MBPP+ (74,1) y OlympiadBench (45,7).
-- Conocimiento general y factual evaluado con MMLU-Pro (61,4), GPQA-Diamond (52,0), PIQA (82,7), Winogrande (75,0) y BoolQ (84,4).
-- Tool calling y function calling: evaluado mediante BFCL-parity-pi (2,4), lo que indica capacidad limitada en este eje.
-- Agentes multi-paso: evaluado en Tau3-pi (7,7), SWE-bench-verified pendiente (`running`) y SOTOPIA-hard pendiente.
-- Capacidades multilingües: no disponibles en la información proporcionada.
+- Generación de texto y razonamiento de múltiples pasos con modo thinking activado.
+- Razonamiento matemático de competición y resolución de problemas (GSM8K 93,5; MATH500 93,6).
+- Ejecución y razonamiento sobre código (CruxEval 80,8/77,9; HumanEval+ 77,4; MBPP+ 74,1).
+- Evaluación de resultados de ejecución de programas y reconstrucción de salidas (CruxEval).
+- Soporte de tool calling y function calling (evaluado en BFCL-parity-pi con 4,1).
+- Capacidades de agente multi-paso (evaluado en τ³-pi con 7,7 y SOTOPIA-hard con 66,6).
+- Capacidades multilingües: no disponible (no se documentan idiomas).
 - Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Destilación de capacidad de código desde un experto mayor: el modelo sirve como estudiante B en pipelines de destilación por rejection sampling, replicando la receta documentada (k=8, primera muestra correcta en ejecución) para transferir habilidades de ejecución de código a un MoE de 67B con solo 2B activos.
-- Evaluación comparativa de recetas de ajuste: al publicarse junto a OPD75 y a los checkpoints base B y v0, permite medir el efecto aislado del SFT por rechazo sobre CruxEval, GSM8K y MATH500 con un evaluador congelado y reproducible.
-- Generación de código en producción con coste de inferencia reducido: al activar solo unos 2B parámetros por token, es adecuado para servir completaciones de código y razonamiento matemático en clústeres con vLLM y contexto de 32K.
-- Investigación sobre enrutamiento MoE: el router congelado y la comparación con el modelo base permiten estudiar cómo el ajuste fino de expertos afecta al rendimiento sin alterar la política de enrutamiento.
-- Razonamiento matemático asistido: con GSM8K 93,5 y MATH500 93,6, puede emplearse en sistemas de resolución de problemas paso a paso con thinking activado y generación larga (hasta 30.720 tokens).
-- Reproducibilidad de experimentos a gran escala: la provenance completa (S3, job de entrenamiento, hashes sha256 y contabilidad de GPU-horas) lo convierte en una pieza útil para auditar recetas de entrenamiento en el ecosistema Marin.
-- Base para posteriores ajustes (RLVR, DPO): al ser un checkpoint intermedio de una campaña mayor, sirve como punto de partida para etapas posteriores de alineamiento o refuerzo.
+- Investigación en destilación de modelos: el checkpoint sirve para reproducir y comparar la receta RS-SFT frente al brazo OPD y al modelo base B, con métricas de referencia ya publicadas en la model card.
+- Evaluación de razonamiento matemático: útil como modelo de referencia en benchmarks como GSM8K y MATH500 dentro de pipelines de evaluación Evalchemy, gracias a su modo thinking y a su contexto de 32.768 tokens.
+- Análisis de ejecución de código: adecuado para tareas de CruxEval y HumanEval+ en las que se requiere predecir la salida de un programa, con un rendimiento documentado de 80,8/77,9 en CruxEval.
+- Estudio de alineación y filtrado por corrección: permite analizar el efecto del muestreo de rechazo sobre la calidad de las demostraciones, comparando el paso 282 con el paso 75 del brazo OPD.
+- Experimentación con MoE de bajo coste de inferencia: al tener ~2 B de parámetros activos, es viable para prototipos de investigación en los que el coste por token importa más que la latencia absoluta.
+- Benchmarking de agentes y tool calling: puede integrarse en arneses de evaluación de agentes (τ³-pi, BFCL-parity-pi, SOTOPIA-hard) para medir el impacto del SFT en habilidades de interacción.
+- Reproducibilidad de experimentos: al conservarse la procedencia S3, los commits y los hashes sha256, el modelo es adecuado para auditorías de reproducibilidad en investigación.
 
 ## Benchmarks y rendimiento
 
-Resultados de la evaluación congelada (Evalchemy ae362881, vLLM H100x8, contexto 32.768, generación máxima 30.720, thinking on, temperatura 1.0, sin semilla). Porcentajes.
+Resultados publicados en la model card (porcentajes; evaluador Evalchemy `ae362881`, vLLM H100x8, contexto 32.768, generación máxima 30.720, thinking on, temperatura 1,0 sin semilla):
 
 | Benchmark | RS282 (este modelo) | OPD75 | B (base) | v0 |
 |---|---|---|---|---|
@@ -72,48 +71,48 @@ Resultados de la evaluación congelada (Evalchemy ae362881, vLLM H100x8, context
 | FinanceBench | 38,0† | 52,0† | 58,0 | 52,0 |
 | IFBench | 29,3 | 28,7 | 31,0 | 25,0 |
 | MRCR | 12,2 | 13,5 | 12,3 | 17,3 |
-| NUPA | 33,3; formato válido 62,8%† | 35,3† | 40,6 | 46,6 |
-| SWE-bench-verified | running | running | 7,9 | 30,9 |
-| OT-TBLite-recovery | 10,9† | 9,3† | 5,6 | 23,9 |
-| TB2-recovery | 5,0† | 4,2† | 1,2 | 11,2 |
-| DS-1000-local | 23,0† | running | 18,0 | 41,5 |
+| NUPA | 33,3 (formato válido 62,8%)† | 35,3† | 40,6 | 46,6 |
+| SWE-bench-Verified | 7,6† | 8,0† | 7,9 | 30,9 |
+| OT-TBLite-Recovery | 10,9† | 9,3† | 5,6 | 23,9 |
+| TB2-Recovery | 5,0† | 4,2† | 1,2 | 11,2 |
+| DS-1000-local | 23,0† | 18,5† | 18,0 | 41,5 |
 | BFCL-parity-pi | 4,1† | 8,1† | 16,3 | 33,3 |
-| BixBench-pi | 2,4† | 7,5† | 0,5 | 17,6 |
-| Tau3-pi | 7,7 | running | 8,3 | 5,0 |
-| SOTOPIA-hard | running | running | 61,3 | 64,7 |
+| BixBench-pi | 2,4† | 1,0† | 0,5 | 17,6 |
+| τ³-pi | 7,7 | 7,5† | 8,3 | 5,0 |
+| SOTOPIA-hard | 66,6† | 64,6† | 61,3 | 64,7 |
 
-La evaluación principal de la model card (CruxEval 80,8 / 77,9, GSM8K 93,5, MATH500 93,6) difiere ligeramente de la tabla de la política de evaluación de 2026-10-16, que es la fuente de referencia para comparaciones entre modelos. La celda † indica matices específicos de la celda (evidencia de fuga, parseo, cobertura incompleta o métrica particular).
+La model card indica que las celdas marcadas con † tienen una calificación específica (evidencia de fuga/parseo, contexto diagnóstico/reconstrucción, cobertura incompleta o nota métrica específica del modelo). Las celdas marcadas como DIAG o RECON no son comparaciones limpias de capacidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repo ocupa 134,2 GB en safetensors, por lo que en precisión de entrenamiento requiere al menos 2 GPU de 80 GB (A100/H100) o 4 GPU de 48 GB. Con cuantización a 8 bits se situaría en torno a 67-70 GB; a 4 bits, en torno a 34-36 GB. Estas cifras son estimaciones a partir del tamaño de los pesos, no datos publicados.
-- GPU recomendadas: H100 (la evaluación se ejecutó con 8x H100), A100 80 GB, y para cuantización agresiva, RTX 4090 24 GB no sería suficiente en 4 bits para los 67B completos.
-- Cabe en GPU de consumo: solo con cuantización a 4 bits y reparto entre varias GPU (por ejemplo, 2x RTX 4090), no en una sola.
-- Opciones de despliegue: vLLM (usado en la evaluación oficial), llama.cpp/Ollama para GGUF (requiere conversión, no se publican GGUF), TGI y Levanter para carga nativa.
-- Latencia y throughput: no disponibles. La model card reporta 57,4 H100-horas para el entrenamiento completo, no métricas de inferencia.
+- VRAM estimada para inferencia en BF16: aproximadamente 134 GB solo para pesos (67,1 B × 2 bytes), más overhead de activaciones y KV cache; requiere al menos 2× H100 80 GB o 4× A100 80 GB.
+- Cuantización a 8 bits: ~67 GB de pesos, viable en una H100 80 GB o 2× A100 40 GB.
+- Cuantización a 4 bits: ~34 GB de pesos, viable en una RTX 4090 24 GB solo con offload parcial o en 2× RTX 4090; no cabe completa en una sola GPU de consumo.
+- GPU recomendadas: H100 80 GB (usadas en la evaluación oficial, 8× H100 con vLLM), A100 80 GB, y en menor medida L40S o RTX 6000 Ada para cuantizaciones agresivas.
+- Despliegue: vLLM es el motor usado en la evaluación oficial; llama.cpp y Ollama no tienen cuantizaciones oficiales publicadas, por lo que requerirían conversión manual desde safetensors. TGI no está documentado para esta arquitectura.
+- Latencia y throughput: no disponibles de forma directa; el coste de entrenamiento fue de 57,4 H100-h en 32 H100, y la evaluación se ejecutó en 8 H100 con vLLM, pero no se publican métricas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | CruxEval | GSM8K | MATH500 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|---|
-| Snowball-67B-A2B-CruxEval-RS-SFT-Step282 | 67B | ~2B | 32.768 (eval) | 79,6 | 91,7 | 92,6 | Apache 2.0 | Hugging Face |
-| Snowball-67B-A2B-CruxEval-OPD-Step75 | 67B | ~2B | 32.768 (eval) | 75,4 | 88,6 | 91,2 | Apache 2.0 | Hugging Face |
-| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (B) | 67B | ~2B | 32.768 (eval) | 57,6 | 89,3 | 89,6 | Apache 2.0 | Hugging Face |
-| v0 (snapshot de contexto 10-15) | no disponible | no disponible | no disponible | 65,1 | 84,2 | 93,2 | no disponible | no disponible |
+| Modelo | Parámetros | Activos | Contexto | CruxEval | GSM8K | MATH500 | Licencia |
+|---|---|---|---|---|---|---|---|
+| RS282 (este) | 67,1 B | ~2 B | 32.768 | 79,6 | 91,7 | 92,6 | Apache 2.0 |
+| OPD75 (mismo linaje) | 67,1 B | ~2 B | 32.768 | 75,4 | 88,6 | 91,2 | Apache 2.0 |
+| B (base del linaje) | 67,1 B | ~2 B | no disponible | 57,6 | 89,3 | 89,6 | Apache 2.0 |
+| v0 (snapshot anterior) | 67,1 B | ~2 B | no disponible | 65,1 | 84,2 | 93,2 | Apache 2.0 |
 
-La comparación se limita a los modelos de la misma campaña experimental, ya que no se dispone de datos de benchmarks de modelos externos en la información proporcionada. Destaca que v0 supera a RS282 en AIME24 (74,0 frente a 60,3), MMLU-Pro (70,7 frente a 61,4) y GPQA-Diamond (64,8 frente a 52,0), mientras que RS282 lidera en CruxEval, GSM8K, MATH500 y HumanEval+.
+No se dispone de comparación con modelos externos de otros desarrolladores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo es un checkpoint de investigación de una campaña de destilación, no un modelo de propósito general pulido; su rendimiento en tareas fuera del dominio de código y matemáticas es desigual.
-- Riesgo de alucinación: no se han publicado evaluaciones específicas de factualidad más allá de TruthfulQA (59,0) y TriviaQA (44,4), este último notablemente inferior al base B (65,5).
-- Capacidad de tool calling y agentes muy limitada: BFCL-parity-pi 4,1, BixBench-pi 2,4 y Tau3-pi 7,7, por debajo del modelo base en varios ejes.
-- Contexto efectivo limitado: MRCR de 12,2 sugiere un uso deficiente de ventanas largas pese a la configuración de 32.768 tokens.
-- Idiomas soportados no documentados; no se garantiza un comportamiento multilingüe adecuado.
-- NUPA con solo 62,8% de formato válido indica problemas de adherencia al formato en esa tarea.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías y la model card incluye una cláusula de uso ético y legal; conviene revisar los términos del proyecto Marin.
-- La provenance S3 original fue eliminada el 2026-10-17; la verificabilidad futura depende de los hashes sha256 publicados en el issue de Marin.
-- El checkpoint seleccionado es la época 3, no la final, por una caída en una dirección de evaluación; puede no ser óptimo para todas las tareas.
+- Modelo de investigación: no es un lanzamiento de producción y su model card lo describe como un checkpoint de un experimento de destilación, no como un asistente generalista.
+- Riesgo de alucinación: los resultados en TruthfulQA (59,0) y TriviaQA (44,4) sugieren una fiabilidad factual limitada, inferior al modelo base en TriviaQA (65,5).
+- Rendimiento débil en tareas de agente y tool calling: BFCL-parity-pi 4,1, τ³-pi 7,7 y BixBench-pi 2,4, muy por debajo de otros snapshots del linaje.
+- Contexto largo limitado: MRCR de 12,2 indica un rendimiento bajo en recuperación de contexto multirrodada pese a la ventana de 32.768 tokens.
+- Idiomas no documentados: no se especifican idiomas soportados, por lo que no se recomienda su uso en producción multilingüe sin validación previa.
+- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías y la model card exige cumplimiento de la legislación aplicable.
+- Procedencia: los pesos S3 originales fueron eliminados el 2026-10-17; la verificación se realizó por sha256 contra el commit `073d128c`, lo que limita la trazabilidad directa del artefacto original.
+- Marcas † en benchmarks: muchas celdas tienen calificaciones específicas (fuga, parseo, cobertura incompleta) que impiden comparaciones limpias; no deben interpretarse como capacidades absolutas.
 
 ## Enlaces
 
@@ -121,5 +120,6 @@ La comparación se limita a los modelos de la misma campaña experimental, ya qu
 - Modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
 - Informe del experimento (issue Marin #9920): https://github.com/marin-community/marin/issues/9920
 - Comentario con resultados y contabilidad de GPU-horas: https://github.com/marin-community/marin/issues/9920#issuecomment-6076348127
-- Evalchemy (evaluador congelado, commit ae362881): https://github.com/marin-community/evalchemy/commit/ae362881cf53f869a6ad52c8a59fa17343c0b5f8
-- EvalDash (panel de resultados): https://marina.oa.dev/evaldash/runs?model=open-athena-Snowball-67B-A2B-CruxEval-RS-SFT-Step282
+- Evaluador Evalchemy (commit): https://github.com/marin-community/evalchemy/commit/ae362881cf53f869a6ad52c8a59fa17343c0b5f8
+- Panel de evaluación EvalDash (RS282): https://marina.oa.dev/evaldash/runs?model=open-athena-Snowball-67B-A2B-CruxEval-RS-SFT-Step282
+- Panel de evaluación EvalDash (OPD75): https://marina.oa.dev/evaldash/runs?model=open-athena-Snowball-67B-A2B-CruxEval-OPD-Step75

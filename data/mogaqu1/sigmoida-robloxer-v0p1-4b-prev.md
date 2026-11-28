@@ -2,102 +2,86 @@
 
 ## Resumen
 
-`sigmoida-robloxer-v0p1-4b-prev` es un ajuste fino (LoRA + SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario `mogaqu1` en Hugging Face. El modelo está especializado en diálogos de juego en ruso, con la etiqueta explícita `roblox`, y se distribuye únicamente en formato GGUF con tres niveles de cuantización (Q4_K_M, Q5_K_M y Q8_0). Su propósito es actuar como motor conversacional para NPCs, asistentes de comunidad o prototipos de narrativa interactiva en ese dominio acotado.
+Sigmoida-robloxer-v0p1-4b-prev es un ajuste fino (LoRA + SFT) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario mogaqu1 en Hugging Face. El modelo se presenta como un asistente conversacional en ruso especializado en tematica de Roblox y dialogos de la comunidad de Discord, con un tono informal y coloquial. Se distribuye unicamente en formato GGUF, lo que lo orienta a inferencia local con llama.cpp y herramientas compatibles.
 
-Se trata de un modelo pequeño (4.205.751.296 parámetros, es decir, unos 4,2 mil millones) pensado para inferencia local: la cuantización Q4_K_M ocupa 2,71 GB en disco, lo que permite ejecutarlo en GPUs de consumo e incluso en CPU. El formato de diálogo es ChatML con token de parada `<|im_end|>`, y el autor recomienda fijar siempre un system prompt.
+El modelo conserva la arquitectura del Qwen3.5-4B original (no se especifica en la informacion proporcionada si es transformer denso o MoE, aunque por el numero de parametros totales, 4.205.751.296, se trata de un modelo denso de aproximadamente 4.200 millones de parametros). El pipeline declarado es image-text-to-text, lo que sugiere que el modelo base tiene capacidad multimodal, aunque la model card no detalla si el ajuste fino preserva o degrada dicha capacidad.
 
-La relevancia de esta ficha es doble: por un lado, documenta una variante de nicho (ruso + gaming) poco cubierta por los modelos generalistas; por otro, advierte de que se trata de una versión de previsualización (`prev`, `v0p1`) sin licencia declarada, sin benchmarks publicados y sin descargas registradas en el momento de la consulta, lo que limita seriamente su uso en producción sin una evaluación propia previa.
+Su relevancia es acotada: se trata de un experimento comunitario de bajo perfil (176 descargas, 0 likes en el momento de la consulta), orientado a un nicho muy concreto de habla rusa y gaming. No obstante, resulta interesante como ejemplo de ajuste fino ligero sobre un modelo pequeno con licencia Apache 2.0 y despliegue en cuantizaciones de 2,7 a 4,5 GB.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada del modelo base Qwen/Qwen3.5-4B; no detallada en la model card) |
-| Parámetros totales | 4.205.751.296 (~4,21 B), según metadatos de safetensors de Hugging Face |
-| Parámetros activos | No aplica (no se indica que sea un modelo MoE) |
+| Arquitectura | No disponible (modelo base Qwen/Qwen3.5-4B; densidad confirmada por el recuento de parametros, tipo transformer no especificado) |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | No aplica (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | GGUF Q4_K_M (2,71 GB), Q5_K_M (3,07 GB) y Q8_0 (4,48 GB) |
-| Idiomas soportados | Ruso (`ru`) |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (no se publican safetensors ni otros formatos en el repositorio) |
-| Tamaño del repositorio | 10,3 GB |
-| Formato de plantilla de diálogo | ChatML, token de parada `<|im_end|>` |
-| Fecha de creación | 2026-10-28 (actualizado el mismo día) |
-| Descargas / likes | 0 / 0 |
+| Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q8_0 (GGUF) |
+| Idiomas soportados | Ruso (ru) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-La model card es extremadamente escueta. Lo único que se declara es que se trata de una versión de Qwen/Qwen3.5-4B "дообученная (LoRA, SFT) на русскоязычных игровых диалогах", es decir, afinada mediante LoRA y supervisión directa (SFT) sobre diálogos de juego en ruso. No se especifica el número de tokens de entrenamiento, la composición del dataset, el rango de la adaptación LoRA, la tasa de aprendizaje, el número de épocas ni si se aplicaron etapas posteriores de alineación (RLHF, DPO o RL). Tampoco se documenta ninguna innovación técnica adicional: no hay mención a decodificación especulativa, atención lineal, MoE ni arquitecturas híbridas.
+El modelo parte de Qwen/Qwen3.5-4B y se ajusta mediante LoRA y SFT (supervised fine-tuning) sobre dialogos de tematica gaming en ruso. La model card indica que el formato de dialogo es ChatML con token de parada `<|im_end|>`, y recomienda establecer siempre un system prompt, ya que todos los ejemplos de entrenamiento lo incluian. No se especifican el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales.
 
-La arquitectura subyacente, por tanto, es la del modelo base Qwen/Qwen3.5-4B, que la ficha del autor no reproduce ni detalla. Cualquier afirmación sobre atención, ventana de contexto nativa, tokenizador o composición multilingüe del preentrenamiento sería una inferencia no respaldada por la información disponible. El único detalle operativo relevante que sí aporta el autor es la plantilla: ChatML con `<|im_end|>` como token de parada, y la recomendación de usar siempre system prompt, lo que sugiere que el ajuste se realizó con ese campo poblado y que su ausencia puede degradar el comportamiento.
+No se documentan innovaciones tecnicas propias del ajuste (decodificacion especulativa, atencion lineal, etc.). El pipeline declarado es image-text-to-text, heredado del modelo base, pero la model card no describe el tratamiento de imagenes ni si el ajuste fino mantiene esa modalidad. Tampoco se detalla la configuracion de LoRA (rango, alpha, modulos objetivo) ni los hiperparametros de entrenamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional en ruso, orientada a diálogos multi-turno de temática de juego.
-- Ajuste específico al registro y vocabulario de comunidades de Roblox (etiqueta `roblox` en los metadatos).
-- Soporte de system prompt para fijar rol o persona del personaje, recomendado explícitamente por el autor.
-- Formato de plantilla ChatML, compatible con las implementaciones estándar de llama.cpp y derivados.
-- Distribución en GGUF cuantizado, lo que habilita ejecución en CPU y GPU de gama baja.
-- Etiqueta `endpoints_compatible` en Hugging Face, que sugiere compatibilidad con la API de mensajes de Inference Endpoints (no verificado en la información disponible).
-- Soporte de tool calling / function calling: no documentado.
-- Capacidades de agente y razonamiento multi-paso: no documentadas.
-- Capacidades de visión, audio o modo "thinking": no documentadas.
-- Capacidades matemáticas o de generación de código: no documentadas y presumiblemente degradadas respecto al modelo base tras un SFT estrecho en dominio.
+- Generacion de texto conversacional en ruso con registro informal y coloquial.
+- Dialogo multi-turno en formato ChatML, con soporte de system prompt.
+- Tematica especializada en Roblox y cultura gaming de Discord.
+- Posible soporte de entrada de imagen (pipeline image-text-to-text), aunque no documentado en la model card.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidad multilingue limitada: el unico idioma declarado es el ruso.
+- No se documentan modos especiales (thinking, audio, vision verificada).
 
 ## Casos de uso
 
-- **NPCs conversacionales en Roblox**: el modelo puede gestionar intercambios multi-turno con jugadores manteniendo una persona fijada por system prompt; su tamaño (2,71 GB en Q4_K_M) permite servirlo en una instancia modesta junto al servidor de juego.
-- **Prototipado rápido de narrativa interactiva**: para equipos de diseño que necesitan iterar guiones y respuestas de personajes en ruso sin depender de una API externa, el modelo se puede cargar en local con Ollama y probar variaciones de prompt en segundos.
-- **Asistencia y moderación en comunidades de habla rusa**: puede redactar respuestas de soporte o borradores de mensajes para canales de Discord/Telegram de servidores de juego, siempre con revisión humana dado el riesgo de alucinación.
-- **Generación de diálogo sintético para aumentar datasets**: útil como generador de conversaciones etiquetadas en el dominio gaming en ruso, que luego se filtran y se usan para entrenar clasificadores o modelos mayores.
-- **Evaluación de pipelines de cuantización**: al publicarse tres niveles (Q4_K_M, Q5_K_M, Q8_0) del mismo ajuste, sirve como banco de pruebas para medir la degradación de calidad conversacional entre cuantizaciones en un modelo de ~4 B.
-- **Sistemas embebidos o sin GPU**: la versión Q4_K_M es viable en CPU con llama.cpp (AVX2), lo que permite desplegar un chatbot de personaje en un mini-PC o en el propio cliente, sin coste de inferencia en la nube.
-- **Base para un segundo ajuste fino**: al ser un LoRA sobre Qwen3.5-4B, puede actuar como punto de partida para especializar aún más el modelo en otro subdominio del gaming en ruso, aunque la ausencia de licencia es un obstáculo legal a resolver antes.
+- Chatbots de comunidad gaming en ruso: el modelo puede gestionar conversaciones informales multi-turno sobre Roblox con un tono adecuado a comunidades de Discord, gracias al ajuste sobre dialogos de ese dominio.
+- Asistente de soporte en servidores de Discord: integrable via API compatible con endpoints (el tag `endpoints_compatible` lo indica) para responder dudas de jugadores en ruso con un registro cercano.
+- Prototipado rapido de asistentes de nicho: su tamano de 4B y sus cuantizaciones de 2,7 a 4,5 GB permiten desplegarlo en hardware modesto para validar ideas de producto conversacional.
+- Generacion de contenido para comunidades de Roblox: creacion de respuestas, guiones o mensajes con jerga y estilo propios de la comunidad rusa.
+- Experimentacion academica con LoRA y SFT: sirve como caso de estudio de ajuste fino ligero sobre un modelo base pequeno con licencia permisiva.
+- Inferencia local en entornos con recursos limitados: al distribuirse en GGUF, puede ejecutarse en portatiles o equipos sin GPU dedicada mediante llama.cpp u Ollama, para pruebas de conversacion offline.
+- Base para nuevos ajustes comunitarios: al ser Apache 2.0, puede servir de punto de partida para otros fine-tunes en ruso.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye MMLU, HumanEval, GSM8K ni ninguna evaluación propia del ajuste, y tampoco se aportan comparaciones con el modelo base que permitan estimar la degradación o mejora introducida por el SFT.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia** (incluyendo caché KV para contextos moderados; cifras orientativas, no publicadas por el autor):
-  - Q4_K_M (2,71 GB de pesos): en torno a 3,5–4,5 GB de VRAM.
-  - Q5_K_M (3,07 GB): en torno a 4–5 GB.
-  - Q8_0 (4,48 GB): en torno a 6 GB.
-  - FP16 teórico (no distribuido): ~8,4 GB solo de pesos.
-- **GPU recomendadas**: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para Q8_0 con contexto amplio; A100/H100 no son necesarias para este tamaño.
-- **¿Cabe en GPU de consumo?** Sí. Q4_K_M encaja en tarjetas de 6–8 GB (RTX 3050, RTX 2060, GTX 1660 Super con holgura justa) y Q8_0 en 8 GB o más.
-- **CPU**: viable con llama.cpp en procesadores con AVX2; Q4_K_M es la opción razonable para uso interactivo en CPU.
-- **Opciones de despliegue**: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y text-generation-webui. vLLM ofrece soporte GGUF con limitaciones; TGI no soporta GGUF de forma nativa, por lo que la etiqueta `endpoints_compatible` debería verificarse antes de asumir un despliegue directo en Inference Endpoints.
-- **Latencia y throughput**: no disponibles. Al no publicarse mediciones ni el contexto nativo, no es posible estimar tokens/s sin una prueba propia en el hardware objetivo.
+- VRAM estimada para inferencia: aproximadamente 3-4 GB con Q4_K_M (2,71 GB de pesos), 4-5 GB con Q5_K_M (3,07 GB) y 6-7 GB con Q8_0 (4,48 GB), incluyendo overhead de contexto y cache KV.
+- GPU recomendadas: cualquier GPU consumer con 6-8 GB de VRAM (RTX 3060, RTX 4060, RTX 2070) es suficiente para Q4_K_M y Q5_K_M; Q8_0 requiere 8 GB o mas. Para mayor throughput, A100 o H100 no aportan ventaja significativa a este tamano, pero permiten mayor paralelismo.
+- Cabe en GPU consumer: si, en la mayoria de GPUs con 6 GB o mas para las cuantizaciones bajas y medias.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con la API de endpoints (el tag `endpoints_compatible` lo sugiere). vLLM y TGI no estan confirmados para este repositorio GGUF concreto.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| sigmoida-robloxer-v0p1-4b-prev | ~4,21 B | No disponible | No disponible | GGUF Q4_K_M, Q5_K_M, Q8_0 | Ajuste LoRA/SFT en ruso para diálogos de juego; sin benchmarks |
-| Qwen/Qwen3.5-4B (base) | ~4 B | No disponible | No disponible | Pesos originales (según el autor) | Modelo de partida; capacidades generalistas, no especializado en ruso gaming |
-| Qwen2.5-3B-Instruct | ~3,09 B | 32 768 tokens | Apache 2.0 | Safetensors, GGUF (comunidad) | Generalista multilingüe con licencia permisiva; referencia habitual en el rango 3–4 B |
-| Llama-3.2-3B-Instruct | ~3,21 B | 128 000 tokens | Llama 3.2 Community License | Safetensors, GGUF (comunidad) | Contexto largo y buen soporte de cuantizaciones; licencia con restricciones de uso |
-| Gemma-3-4B-IT | ~4,3 B | 128 000 tokens | Gemma Terms of Use | Safetensors, GGUF (comunidad) | Multilingüe, contexto amplio; licencia con cláusulas de uso aceptable |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| sigmoida-robloxer-v0p1-4b-prev | 4,2B | No disponible | Ruso | Apache 2.0 | GGUF | Fine-tune comunitario de nicho gaming |
+| Qwen/Qwen3.5-4B (base) | ~4,2B | No disponible | Multilingue | No disponible en la informacion | No disponible | Modelo base; capacidades generales y posible multimodalidad |
+| Fine-tunes comunitarios de 3-4B en ruso | Variable | Variable | Ruso | Variable | GGUF, safetensors | Alternativas genericas; no se dispone de datos concretos en la informacion proporcionada |
 
-La comparación es estructural: el modelo evaluado no publica métricas, contexto ni licencia, por lo que no puede situarse empíricamente frente a estas alternativas. Su ventaja diferencial es la especialización en un dominio y un idioma concretos; su desventaja, la falta de documentación y de garantías legales.
+No se dispone de datos de benchmarks ni de comparativas cuantitativas con alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- **Licencia no especificada**: no se declara licencia en los metadatos ni en la model card. Sin una licencia explícita, no hay autorización clara para uso comercial; debe contactarse con el autor o asumir el marco del modelo base antes de cualquier despliegue productivo.
-- **Riesgo de alucinación**: es un modelo de ~4 B afinado con SFT; no se documenta ninguna etapa de RLHF/DPO que mitigue respuestas inventadas, y el dominio de juego invita a generar contenido plausible pero falso.
-- **Monolingüe en la práctica**: solo se declara ruso. El comportamiento en castellano, inglés u otros idiomas no está evaluado y probablemente sea deficiente tras un SFT estrecho.
-- **Dominio muy acotado**: el entrenamiento se centra en diálogos de Roblox; fuera de ese registro puede producir respuestas fuera de tono o poco útiles.
-- **Sesgos no evaluados**: no hay ninguna auditoría de sesgos, toxicidad ni seguridad. En un contexto de comunidades de juego, con jerga y dinámicas propias, el riesgo de respuestas inapropiadas es real y requiere filtros externos.
-- **Ausencia total de benchmarks**: no hay forma de comparar su calidad con el modelo base ni con alternativas sin ejecutar una evaluación propia.
-- **Versión de previsualización**: los identificadores `v0p1` y `prev` indican un estado temprano; el repositorio se creó y actualizó el mismo día, sin historial de mantenimiento.
-- **Dependencia de system prompt**: el autor advierte de que conviene fijarlo siempre; su ausencia puede alterar el comportamiento de forma imprevisible.
-- **Contexto desconocido**: al no publicarse la ventana nativa, no se puede dimensionar la caché KV ni garantizar conversaciones largas sin truncamiento.
-- **Adopción nula**: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
+- Sesgos conocidos: al entrenarse sobre dialogos de Discord y gaming, puede reproducir jerga, toxicidad o sesgos propios de esas comunidades.
+- Riesgo de alucinacion: elevado en preguntas factuales fuera del dominio gaming, dado el ajuste estrecho y el tamano reducido del modelo.
+- Limitacion de idioma: solo se declara soporte de ruso; el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
+- Limitacion de contexto: no se especifica la ventana de contexto; no debe asumirse la del modelo base sin verificacion.
+- Capacidad multimodal incierta: aunque el pipeline es image-text-to-text, la model card no documenta el tratamiento de imagenes ni su calidad tras el ajuste.
+- Licencia: Apache 2.0 permite uso comercial, pero deben respetarse las condiciones del modelo base Qwen/Qwen3.5-4B, cuya licencia no se detalla en la informacion proporcionada.
+- Caveat para produccion: modelo experimental (sufijo "prev"), con 176 descargas y sin benchmarks; no recomendado para entornos productivos sin evaluacion previa.
+- Formato de dialogo estricto: requiere ChatML y system prompt para un comportamiento correcto; ignorarlo puede degradar las respuestas.
 
 ## Enlaces
 
-- Página del modelo en Hugging Face: https://huggingface.co/mogaqu1/sigmoida-robloxer-v0p1-4b-prev
-- Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
-- Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.
+- Hugging Face: https://huggingface.co/mogaqu1/sigmoida-robloxer-v0p1-4b-prev
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

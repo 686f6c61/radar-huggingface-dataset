@@ -5,7 +5,7 @@
   "author": "1bit-MONSTER",
   "url": "https://huggingface.co/1bit-MONSTER/Inkling-2-Mini-loom",
   "created_at": "2026-11-24T03:03:04.000Z",
-  "updated_at": "2026-11-24T10:00:27.000Z",
+  "updated_at": "2026-11-27T12:20:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
   "storage_bytes": 12242935,
   "storage_human": "12 MB",
   "context_length": null,
-  "base_model": "unsloth/Inkling-2-Mini-GGUF, thinkingmachines/Inkling-2-Mini",
+  "base_model": "thinkingmachines/Inkling-2-Mini, unsloth/Inkling-2-Mini-GGUF",
   "formats": [
     "gguf"
   ],

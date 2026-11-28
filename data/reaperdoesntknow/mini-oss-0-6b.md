@@ -1,81 +1,94 @@
 # reaperdoesntknow/Mini-oss-0.6b
 
 ## Resumen
-Mini-oss-0.6b es un modelo de generacion de texto publicado en Hugging Face por el usuario reaperdoesntknow (Convergent Intelligence LLC: Research Division), con un total de 664.434.352 parametros segun los pesos en safetensors. A pesar de su nombre, no es una version reducida oficial del modelo gpt-oss de OpenAI: se trata de un modelo independiente etiquetado con la arquitectura `gpt_oss` en la libreria transformers, lo que sugiere que reutiliza dicha arquitectura o un checkpoint derivado de ella, pero sin vinculacion oficial confirmada.
 
-El modelo esta orientado a generacion de texto conversacional y se distribuye en formato safetensors con un repositorio de 2,7 GB. La model card esta practicamente vacia: es la plantilla autogenerada de Hugging Face sin datos de entrenamiento, licencia, idiomas ni evaluacion. Esta ausencia de documentacion es el dato mas relevante para cualquier evaluacion tecnica.
+Mini-oss-0.6b es un modelo de generacion de texto publicado por el usuario reaperdoesntknow (Convergent Intelligence LLC: Research Division) en Hugging Face. Se trata de un transformer de tipo `gpt_oss` con 664.434.352 parametros reales (segun los pesos en safetensors), lo que lo situa en la categoria de modelos pequenos (sub-1B) orientados a generacion de texto conversacional. El repositorio ocupa 2,7 GB y se distribuye en formato safetensors para su uso con la libreria `transformers`.
 
-Su interes actual es limitado pero real: los modelos de ~0,6B parametros son utiles para experimentacion en hardware de consumo, prototipado rapido y como base para fine-tuning ligero. Sin embargo, la falta de licencia explicita y de informacion sobre el proceso de entrenamiento impide recomendarlo para produccion sin una auditoria previa.
+El modelo se presenta como parte del portafolio "Discrepancy Calculus (DISC)", un marco teorico propio del autor que propone tratar las singularidades del entrenamiento (plateaus de perdida, colapso de modos, olvido catastrofico) como senales estructurales en lugar de fallos a suavizar. La model card es practicamente una plantilla automatica de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+
+La relevancia de este modelo es limitada y fundamentalmente experimental: no hay informacion verificable sobre su entrenamiento, no declara licencia, no declara idiomas y no publica benchmarks. Su interes practico reside en que, por tamano, es desplegable en hardware de consumo, pero cualquier evaluacion seria requiere validacion propia por parte del usuario.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gpt_oss (segun tag de Hugging Face); detalles no disponibles |
-| Parametros totales | 664.434.352 (~0,66B) |
-| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Arquitectura | Transformer, tipo `gpt_oss` (segun tag de la libreria) |
+| Parametros totales | 664.434.352 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan GGUF ni otras variantes) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-El tag `gpt_oss` indica que el modelo emplea la arquitectura definida por OpenAI para su familia gpt-oss, implementada en transformers. No obstante, no se especifica si es un transformer denso, un modelo con mezcla de expertos (MoE) ni si incorpora atencion lineal o mecanismos de decodificacion especulativa. Dado el tamano (0,66B), lo mas probable es una configuracion densa, pero no hay confirmacion en la informacion disponible.
 
-No se dispone de datos sobre el corpus de entrenamiento (numero de tokens, composicion, filtrado), ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. La model card menciona un marco teorico propio del autor, "Discrepancy Calculus" (DISC), con conceptos como operador de discrepancia, conjuntos de salto y "ghost imprinting", pero no aporta detalles verificables sobre el entrenamiento concreto de este checkpoint. Tampoco se documenta el modelo base del que deriva ni el proceso de destilacion, en caso de haberlo.
+La unica informacion estructural disponible es el tag `gpt_oss` de la libreria, que sugiere una arquitectura de tipo transformer decoder-only con la familia de configuraciones asociadas a GPT-OSS. El recuento real de parametros (664,4 M) procede de los tensores en safetensors, no de la model card. No se especifica numero de capas, dimension de hidden, numero de cabezas de atencion, funcion de activacion ni tipo de positional encoding.
+
+No hay datos sobre el corpus de entrenamiento, numero de tokens, composicion del dataset, uso de RLHF/DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card menciona conceptos del marco DISC (operador de discrepancia, jump sets, ghost imprinting) pero no aporta detalles tecnicos verificables sobre como se aplicaron al entrenamiento de este checkpoint concreto.
 
 ## Capacidades
-- Generacion de texto conversacional, segun el tag `conversational` y la pipeline `text-generation`.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
-- Uso previsto con la libreria transformers.
-- No se documentan capacidades de razonamiento avanzado, codigo, matematicas, vision, audio, tool calling ni agentes multi-paso.
-- No se confirma soporte multilingue ni modo de razonamiento explicito (thinking mode).
+
+- Generacion de texto autoregresiva (pipeline `text-generation`).
+- Orientacion conversacional segun el tag `conversational`.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere integracion con Inference Endpoints de Hugging Face.
+- Razonamiento, codigo, matematicas, vision, audio, tool calling y agentes: no disponible (no documentado).
+- Capacidades multilingues: no disponible (no se declaran idiomas).
+- Modo thinking o razonamiento extendido: no disponible.
 
 ## Casos de uso
-- Prototipado de chatbots ligeros: por su tamano de 0,66B, cabe en GPUs de consumo y permite iterar rapidamente en el diseno de flujos conversacionales antes de migrar a un modelo mayor.
-- Pruebas de integracion con transformers y endpoints: util para validar pipelines de despliegue (carga de safetensors, tokenizacion, generacion) sin incurrir en costes de modelos grandes.
-- Fine-tuning experimental: base pequena para tareas de ajuste supervisado en dominios acotados, siempre que se resuelva antes la ambiguedad de licencia.
-- Educacion e investigacion: adecuado para estudiar el comportamiento de arquitecturas gpt_oss a escala reducida y comparar con implementaciones de referencia.
-- Generacion de texto offline en equipos con poca VRAM: al ocupar 2,7 GB en safetensors (fp32/bf16 segun configuracion), puede ejecutarse en GPUs de 8 GB o menos con cuantizacion adicional, aunque esta no se distribuya oficialmente.
-- Evaluacion de marcos teoricos: si se quiere reproducir o auditar el marco DISC descrito por el autor, este checkpoint sirve como objeto de estudio, no como solucion de produccion.
+
+- Prototipado local de asistentes conversacionales: con 0,66 B de parametros, el modelo cabe en GPU de consumo y permite iterar rapidamente en el diseno de prompts y flujos conversacionales sin coste de API.
+- Experimentacion academica sobre el marco DISC: investigadores interesados en las ideas de "discrepancy operator" o "jump sets" pueden usar el checkpoint como base para reproducir o contrastar las afirmaciones del autor.
+- Fine-tuning ligero sobre dominios acotados: el tamano reducido permite ajuste con LoRA en una sola GPU de 24 GB para tareas de clasificacion generativa o extraccion de informacion.
+- Generacion de texto en entornos con recursos limitados: despliegue en CPU o GPU de gama baja para tareas de relleno, resumen corto o generacion de variaciones de texto.
+- Base para destilacion o experimentos de comparacion de arquitecturas: util como estudiante pequeno en pipelines de destilacion desde modelos mayores.
+- Pruebas de integracion con `transformers` y endpoints: sirve como modelo de juguete para validar pipelines de despliegue antes de pasar a modelos mayores.
+
+En todos los casos, el uso en produccion requiere una evaluacion previa de calidad, sesgos y alucinacion, dado que no hay benchmarks publicados.
 
 ## Benchmarks y rendimiento
+
 No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: aproximadamente 1,3 GB en fp16 y 2,7 GB en fp32 para los pesos; el overhead de activaciones y cache KV depende de la longitud de contexto, que no se documenta.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp16 (GTX 1650, RTX 3050, T4). Para fp32 se recomiendan 6-8 GB (RTX 3060, RTX 4060).
-- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 6 GB o mas.
-- Opciones de despliegue: transformers es la via documentada. No se confirman variantes GGUF para llama.cpp u Ollama, ni soporte verificado en vLLM o TGI; habria que convertirlo manualmente.
-- Latencia y throughput: no disponibles.
+
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 1,3-1,5 GB solo para pesos, mas overhead de activaciones y cache KV (tipicamente 2-3 GB en total para contextos moderados).
+- VRAM estimada en cuantizacion de 8 bits: en torno a 0,7-1 GB para pesos.
+- VRAM estimada en cuantizacion de 4 bits: en torno a 0,4-0,6 GB para pesos.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060 12 GB, RTX 4060 Ti, RTX 4090); tambien cabe holgadamente en A100/H100 si se busca throughput.
+- Cabe en GPU de consumo: si, practicamente en cualquier GPU con 4 GB o mas; incluso es viable en CPU para inferencia no interactiva.
+- Opciones de despliegue: `transformers` (soporte nativo declarado), ademas de vLLM, TGI o llama.cpp si se generan conversiones (no se ofrecen pesos GGUF en el repo).
+- Latencia y throughput: no disponible (no documentados).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mini-oss-0.6b | ~0,66B | no disponible | no disponible | Hugging Face (transformers, safetensors) |
-| Qwen2.5-0.5B | ~0,49B | 32.768 tokens | Apache 2.0 | Hugging Face, GGUF, vLLM, Ollama |
-| SmolLM2-360M | ~0,36B | 8.192 tokens | Apache 2.0 | Hugging Face, GGUF, llama.cpp |
-| Llama 3.2 1B | ~1,24B | 131.072 tokens | Llama 3.2 Community License | Hugging Face, GGUF, vLLM |
+| Mini-oss-0.6b | 664 M | no disponible | no disponible | Hugging Face (safetensors) |
+| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | Hugging Face, multiples formatos |
+| SmolLM2-360M | 362 M | 8 192 tokens | Apache 2.0 | Hugging Face, GGUF, vLLM |
+| TinyLlama-1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | Hugging Face, GGUF, Ollama |
 
-La comparativa se limita a parametros, contexto, licencia y disponibilidad porque no hay benchmarks publicados de Mini-oss-0.6b. Frente a alternativas como Qwen2.5-0.5B o SmolLM2, la diferencia clave no es tecnica sino documental: aquellos tienen licencia clara, contexto definido y ecosistema de cuantizaciones, mientras que este checkpoint carece de todos esos datos.
+La comparacion se limita a tamano y disponibilidad, ya que Mini-oss-0.6b no publica contexto, licencia ni benchmarks. Frente a alternativas como Qwen2.5-0.5B o SmolLM2, la diferencia clave es la falta de documentacion y de garantias legales de uso.
 
 ## Limitaciones y advertencias
-- Ausencia total de model card sustantiva: no hay informacion sobre datos de entrenamiento, sesgos, evaluacion ni uso previsto.
-- Licencia no especificada: no se puede determinar si el uso comercial esta permitido; en la practica, esto bloquea su adopcion en produccion.
-- Riesgo elevado de alucinacion y comportamiento impredecible al no documentarse alineacion ni evaluacion.
-- Idiomas soportados desconocidos: no se puede garantizar calidad en castellano ni en ningun otro idioma.
-- Longitud de contexto desconocida: imposible dimensionar aplicaciones que dependan de ventanas largas.
-- Nombre potencialmente confuso: "Mini-oss" sugiere una relacion con gpt-oss de OpenAI que no esta confirmada; conviene tratarlo como un modelo independiente.
-- Sin cuantizaciones oficiales (GGUF, AWQ, GPTQ): el despliegue eficiente requeriria conversion propia.
-- El marco teorico DISC citado por el autor no sustituye a la documentacion tecnica estandar; no se han verificado sus afirmaciones de forma independiente.
+
+- Ausencia total de model card sustantiva: no hay informacion sobre datos, sesgos, evaluacion ni uso previsto.
+- Licencia no declarada: no se puede asumir uso comercial permitido; en ausencia de licencia explicita, los derechos son inciertos.
+- Idiomas no declarados: no se puede garantizar calidad en castellano ni en ningun otro idioma.
+- Contexto no documentado: imposible planificar aplicaciones con ventanas largas sin medir empiricamente el limite efectivo.
+- Riesgo elevado de alucinacion y baja calidad esperable por el tamano (0,66 B) y la falta de evaluacion.
+- Posible contenido generado sin filtros de seguridad: no se documentan mitigaciones.
+- El marco DISC y las afirmaciones del autor no cuentan con validacion independiente en la informacion disponible; tratar como experimental.
+- Sin garantias de mantenimiento: el autor no publica issues, demos ni roadmap.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Mini-oss-0.6b
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
 - Documento del marco DISC: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
 - Documento "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
 - Documento "Three Teachers to Dual Cognition": https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
-- Referencia citada en la model card (calculo de impacto ambiental): https://mlco2.github.io/impact
-- Paper de Lacoste et al. (2019): https://arxiv.org/abs/1910.09700
+- Referencia metodologica citada (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
+- Calculadora de impacto ambiental: https://mlco2.github.io/impact

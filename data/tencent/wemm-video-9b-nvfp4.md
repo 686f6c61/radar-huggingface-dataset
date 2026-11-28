@@ -2,91 +2,93 @@
 
 ## Resumen
 
-WeMM-Video-9B-NVFP4 es la variante cuantizada en NVFP4 (W4A16) del modelo multimodal WeMM-Video-9B desarrollado por Tencent. Se trata de un modelo de la familia WeMM-Video, disenada para la comprension y el razonamiento conjuntos de audio y video, que acepta texto, imagenes, audio y video como entrada y genera respuestas de texto. Esta version concreta emplea cuantizacion NVFP4 con grupo de 16 en los pesos de las capas feed-forward del modelo de lenguaje, manteniendo las activaciones en BF16 y el resto de tensores (attention, norms) en su precision original.
+WeMM-Video-9B-NVFP4 es la variante cuantizada en NVFP4 W4A16 del modelo multimodal WeMM-Video-9B, desarrollado por Tencent. Se trata de un modelo bilingüe chino-inglés diseñado para la comprensión y el razonamiento conjunto de audio y vídeo: acepta texto, imágenes, audio y vídeo como entrada, y genera respuestas en texto. Su relevancia radica en que unifica la comprensión audiovisual (pistas de vídeo y banda sonora original) en un único modelo de aproximadamente 10.500 millones de parámetros, algo poco habitual en modelos de este tamaño.
 
-El modelo cuenta con 10.488.603.384 parametros reales segun los pesos en safetensors y un repositorio de 14,1 GB, con archivos de pesos que suman 13,07 GiB. Esta construido sobre una arquitectura que combina codificadores de vision y audio que convierten el contenido multimedia en tokens, los cuales el modelo de lenguaje procesa junto al texto, incorporando marcas temporales en los fotogramas de video.
+La arquitectura combina codificadores de visión y audio independientes que convierten los medios en tokens, los cuales el modelo de lenguaje procesa junto al texto; los fotogramas de vídeo llevan marcas temporales. El modelo base se preentrenó con aproximadamente 1,2 billones de tokens multimodales y se postentrenó con técnicas de multi-teacher OPD, MrDPO anti-repetición y aprendizaje por refuerzo especializado.
 
-La relevancia de esta ficha radica en que ofrece una via de despliegue eficiente en memoria del modelo base, pensada para runtime vLLM parcheado (version 0.31.0) con ModelOpt Mixed Precision y Marlin en configuracion de referencia SM120. No obstante, al ser una variante cuantizada, no es cargable directamente con Transformers, sino que requiere el stack de serving especifico documentado por el autor.
+Esta versión NVFP4 cuantiza los pesos feed-forward del modelo de lenguaje a NVFP4 de grupo 16 con activaciones en BF16, manteniendo el resto de tensores (atención, normas) en su precisión original. El resultado son 13,07 GiB de pesos que requieren un runtime específico: vLLM 0.31.0 parcheado con ModelOpt Mixed Precision y Marlin. Es relevante ahora porque reduce el coste de despliegue de un modelo audiovisual de 9B sin recurrir a cuantizaciones de menor fidelidad como INT4 clásico.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con codificadores de vision y audio separados que alimentan tokens multimedia al modelo de lenguaje (familia qwen3_5 segun tags) |
-| Parametros totales | 10.488.603.384 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (el ejemplo de serving usa max-model-len 8192) |
-| Tipos de cuantizacion | NVFP4 W4A16 con grupo de 16 en pesos feed-forward; activaciones en BF16; attention y norms en precision original |
-| Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (ModelOpt MIXED_PRECISION) |
+| Arquitectura | Multimodal con codificadores de visión y audio separados que alimentan tokens al modelo de lenguaje; familia qwen3_5 según tags |
+| Parámetros totales | 10.488.603.384 (≈10,5B) |
+| Parámetros activos | No disponible (no se indica que sea MoE) |
+| Longitud de contexto | No disponible (el ejemplo de servicio usa `--max-model-len 8192`) |
+| Tipos de cuantización | NVFP4 W4A16 (pesos FFN en NVFP4 grupo 16, activaciones BF16); checkpoint base BF16 disponible por separado |
+| Idiomas soportados | Inglés (en), chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (ModelOpt MIXED_PRECISION); repo de 14,1 GB, pesos de 13,07 GiB |
 
 ## Arquitectura y entrenamiento
 
-WeMM-Video emplea una arquitectura multimodal en la que codificadores de vision y audio independientes transforman el contenido multimedia en tokens que el modelo de lenguaje procesa junto con el texto. Los fotogramas de video incorporan marcas temporales, lo que permite al modelo razonar sobre la secuencia temporal de los eventos. La familia fue preentrenada con aproximadamente 1,2 billones de tokens multimodales y posteriormente sometida a un post-entrenamiento que incluye multi-teacher OPD, MrDPO anti-repeticion y aprendizaje por refuerzo especializado.
+WeMM-Video emplea una arquitectura multimodal en la que codificadores de visión y audio convierten imágenes, vídeo y sonido en tokens que el modelo de lenguaje procesa junto con el texto. Los fotogramas de vídeo incorporan marcas temporales, lo que permite razonar sobre la secuencia de eventos. El modelo base se preentrenó con aproximadamente 1,2 billones de tokens multimodales y después se postentrenó con multi-teacher OPD, MrDPO (diseñado para mitigar la repetición) y aprendizaje por refuerzo con especialistas.
 
-En esta variante concreta, la cuantizacion NVFP4 se aplica exclusivamente a los pesos de las capas feed-forward del modelo de lenguaje con granularidad de grupo 16, mientras que las activaciones se mantienen en BF16 y el resto de tensores conservan su precision de origen. El checkpoint usa ModelOpt MIXED_PRECISION y requiere el runtime vLLM parcheado con soporte de Marlin para su carga y ejecucion.
+La variante NVFP4 aplica cuantización de grupo 16 a los pesos feed-forward del modelo de lenguaje, manteniendo las activaciones en BF16 y el resto de tensores (pesos de atención y normas) en su precisión de origen. El checkpoint usa el formato `MIXED_PRECISION` de ModelOpt y requiere el backend Marlin en vLLM para su ejecución; no es cargable directamente con Transformers (para ello existe el checkpoint BF16 correspondiente). El manifiesto de cuantización del repositorio documenta el alcance de los tensores y las comprobaciones de exportación.
 
 ## Capacidades
 
-- Comprension conjunta de audio y video: combina fotogramas de video con la banda sonora original para describir eventos, transcribir voz y razonar sobre lo que se ve y se oye.
-- Procesamiento de video silencioso, audio independiente, imagenes y texto como entradas individuales.
-- Generacion de respuestas en chino e ingles.
-- Modo Thinking opcional, activable mediante `enable_thinking=True` en las opciones de chat template del runtime.
-- API compatible con OpenAI para peticiones de chat con medios en linea (imagen, audio, video con o sin audio).
-- Control de muestreo de video mediante parametros `fps` y `max_frames` dentro de la peticion.
-- Soporte de multiples entradas multimedia por prompt, con limites configurables (por ejemplo, hasta 4 imagenes, 2 videos y 2 audios en el ejemplo de serving).
-- No se documenta soporte explicito de tool calling ni de function calling en la informacion disponible.
+- Comprensión audiovisual conjunta: describe eventos combinando fotogramas de vídeo y banda sonora original.
+- Transcripción de voz presente en el audio del vídeo.
+- Razonamiento sobre lo visto y lo escuchado de forma integrada.
+- Entrada de vídeo silencioso, audio independiente, imágenes y texto.
+- Generación de respuestas en chino e inglés.
+- Modo Thinking opcional (`enable_thinking=True` en el chat template) además del modo Instruct por defecto.
+- Procesamiento de vídeo con control de muestreo (`fps`, `min_frames`, `max_frames`, `total_pixels`) y marcas temporales por fotograma.
+- Soporte de múltiples entradas multimedia por prompt (configuración de ejemplo: hasta 4 imágenes, 2 vídeos y 2 audios).
+- API compatible con OpenAI a través de vLLM parcheado.
 
 ## Casos de uso
 
-- Analisis de reuniones y videoconferencias: el modelo puede procesar el video junto con el audio para transcribir intervenciones y describir eventos visuales, aprovechando las marcas temporales de los fotogramas y el procesamiento conjunto de audio y video.
-- Moderacion de contenido audiovisual: combinando la comprension de lo que se ve y lo que se dice, permite detectar contenido inapropiado en videos con banda sonora, algo que un modelo solo de vision o solo de audio no cubriria.
-- Accesibilidad y subtitulado enriquecido: generacion de descripciones de video que integran dialogo transcrito y descripcion visual de escenas, util para crear subtitulos descriptivos para personas con discapacidad auditiva o visual.
-- Analisis de contenido en redes sociales y plataformas de video: extraccion de resumenes y descripciones de clips cortos muestreando fotogramas a una tasa controlada (por ejemplo, fps 2 con 4 a 16 fotogramas), lo que encaja con el perfil de serving documentado.
-- Investigacion en comprension multimodal audio-visual: el modelo sirve como base para experimentos que requieren razonamiento conjunto sobre modalidades, con la ventaja de una variante cuantizada que reduce el consumo de memoria en el despliegue.
-- Procesamiento de audio independiente: transcripcion y analisis de contenido hablado en ingles o chino sin necesidad de video, usando la entrada de audio del modelo.
-- Descripcion de imagenes y respuesta a preguntas visuales: uso del modo imagen para tareas de image-text-to-text en ingles y chino.
+- Análisis de reuniones y videoconferencias: el modelo puede procesar el vídeo junto con la pista de audio para transcribir intervenciones y resumir lo discutido, combinando reconocimiento de habla y comprensión visual de lo compartido en pantalla.
+- Moderación de contenido audiovisual: permite detectar incoherencias entre lo que se muestra y lo que se dice en un vídeo, útil en plataformas que necesitan revisar grandes volúmenes de contenido subido por usuarios.
+- Indexación y búsqueda semántica de archivos multimedia: genera descripciones textuales de vídeos y audios que después alimentan un motor de búsqueda o un sistema RAG sobre la videoteca de una organización.
+- Accesibilidad: producción de descripciones de vídeo para personas con discapacidad auditiva o visual, integrando la transcripción del audio con la descripción de la escena.
+- Documentación automática de material audiovisual: etiquetado de clips, generación de metadatos y resúmenes para archivos de medios o productoras.
+- Asistencia en análisis de contenido formativo: revisión de cursos en vídeo para extraer puntos clave, preguntas frecuentes o transcripciones bilingües chino-inglés.
+- Investigación en comprensión multimodal: base para experimentar con razonamiento audio-visual en entornos académicos, con licencia Apache 2.0 y pesos abiertos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card únicamente menciona una validación de carga y ejecución de los pesos de referencia con vLLM 0.31.0 parcheado y ModelOpt, sin cifras de calidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los archivos de pesos suman 13,07 GiB, por lo que se necesita al menos esa cantidad mas el overhead de activaciones en BF16, cache KV y buffers del runtime. El ejemplo de serving fija `max-num-seqs 1` y `max-num-batched-tokens 8192`, lo que sugiere un perfil de concurrencia bajo.
-- GPU recomendadas: la configuracion de referencia documentada es SM120 con Marlin, lo que apunta a GPUs de la generacion Blackwell (por ejemplo, RTX 50 series o equivalentes profesionales). No se documentan otras arquitecturas de GPU soportadas.
-- Cabe en consumer GPU: no confirmado en la informacion disponible; el perfil SM120 de referencia sugiere compatibilidad con GPUs consumer de arquitectura Blackwell, pero no se detalla.
-- Opciones de despliegue: vLLM 0.31.0 parcheado con ModelOpt Mixed Precision y Marlin, con backend de atencion FLASH_ATTN version 2. No se documenta soporte de llama.cpp, Ollama ni TGI para esta variante.
-- Latencia y throughput estimados: no disponibles; el ejemplo de serving limita a `max-num-seqs 1`, lo que indica un escenario de baja concurrencia sin datos de rendimiento publicados.
+- Pesos en disco: 13,07 GiB (repositorio de 14,1 GB).
+- VRAM estimada: no disponible de forma explícita; los pesos NVFP4 ocupan aproximadamente 13 GiB, por lo que se necesita margen adicional para activaciones BF16, caché KV y codificadores de visión/audio.
+- GPU recomendadas: la configuración de referencia del autor es SM120 (arquitectura Blackwell); no se documentan otras configuraciones validadas.
+- Compatibilidad con GPU de consumo: no confirmada en la información disponible; queda condicionada al soporte de NVFP4 y del backend Marlin en la GPU concreta.
+- Despliegue: exclusivamente mediante vLLM 0.31.0 parcheado con el runtime de WeMM, `--quantization modelopt_mixed --linear-backend marlin --moe-backend marlin` y `--trust-remote-code`. No se documenta soporte para llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. La configuración de ejemplo limita `--max-num-seqs 1`, lo que sugiere un enfoque de baja concurrencia por defecto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidades | Licencia | Formato |
-|---|---|---|---|---|---|
-| WeMM-Video-9B-NVFP4 (este) | 10.488.603.384 | no disponible | texto, imagen, audio, video | apache-2.0 | safetensors NVFP4 |
-| WeMM-Video-9B (base) | no disponible | no disponible | texto, imagen, audio, video | apache-2.0 | safetensors BF16 |
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia interna de la propia familia, existe el checkpoint BF16 `tencent/WeMM-Video-9B`, con la misma arquitectura y capacidades pero sin cuantizar, cargable directamente con Transformers.
 
-No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada. La comparativa directa mas relevante es con el checkpoint base BF16, que ofrece carga directa con Transformers y mayor precision a cambio de mayor consumo de memoria, mientras que esta variante NVFP4 prioriza eficiencia de memoria a costa de requerir un runtime parcheado especifico.
+| Modelo | Parámetros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| WeMM-Video-9B-NVFP4 | ≈10,5B | No disponible | Apache 2.0 | safetensors NVFP4 (ModelOpt) |
+| WeMM-Video-9B (BF16) | ≈10,5B | No disponible | Apache 2.0 | safetensors BF16 |
 
 ## Limitaciones y advertencias
 
-- Modelo cuantizado: la cuantizacion NVFP4 puede introducir perdida de precision respecto al checkpoint BF16; no se han publicado evaluaciones comparativas de calidad entre ambas variantes.
-- No cargable directamente con Transformers: requiere vLLM 0.31.0 parcheado con ModelOpt Mixed Precision y Marlin, lo que limita la portabilidad y complica el despliegue.
-- Idiomas limitados a ingles y chino; no se documenta soporte de castellano ni de otros idiomas.
-- Longitud de contexto no documentada; el ejemplo de serving usa 8192 tokens, lo que puede ser insuficiente para videos largos o conversaciones extensas.
-- Concurrencia baja en la configuracion de referencia (`max-num-seqs 1`), lo que puede limitar el throughput en produccion.
-- Riesgo de alucinacion inherente a los modelos de lenguaje multimodales; no se documentan evaluaciones de fidelidad en transcripcion o descripcion.
-- Sesgos conocidos: no documentados en la informacion disponible.
-- Licencia Apache 2.0 permite uso comercial, pero los componentes de terceros quedan sujetos a sus terminos originales, segun se indica en la documentacion del proyecto.
-- Requiere el parche de runtime de WeMM y las imagenes Docker del proyecto para un despliegue correcto; no se garantiza funcionamiento con versiones estandar de vLLM.
+- Solo soporta inglés y chino; no se documentan otros idiomas.
+- Riesgo de alucinación inherente a los modelos de lenguaje; en tareas de transcripción y descripción audiovisual conviene validar las salidas.
+- No se han publicado evaluaciones de sesgo ni de robustez en la información disponible.
+- El checkpoint NVFP4 no es cargable con Transformers estándar: requiere vLLM parcheado y el runtime de WeMM, lo que limita la portabilidad y complica el despliegue en producción.
+- La configuración de referencia está validada para SM120 (Blackwell); el comportamiento en otras arquitecturas de GPU no está confirmado.
+- La cuantización NVFP4 puede introducir degradación de calidad respecto al checkpoint BF16; no se aportan métricas comparativas.
+- El ejemplo de servicio limita la concurrencia (`--max-num-seqs 1`), lo que puede restringir el throughput en cargas de producción.
+- Aunque la licencia es Apache 2.0, el uso de `--trust-remote-code` implica ejecutar código del repositorio, con el riesgo de seguridad asociado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/tencent/WeMM-Video-9B-NVFP4
 - Modelo base BF16: https://huggingface.co/tencent/WeMM-Video-9B
-- Repositorio del proyecto: https://github.com/Tencent/WeMM-Video
-- Coleccion de modelos: https://huggingface.co/collections/tencent/wemm-video
-- Guia de serving: https://github.com/Tencent/WeMM-Video/blob/main/docs/serving.md
-- Instalacion del parche de runtime: https://github.com/Tencent/WeMM-Video/blob/main/patch/README.md
-- Licencia del proyecto y atribuciones: https://github.com/Tencent/WeMM-Video/blob/main/LICENSE
+- Colección WeMM-Video: https://huggingface.co/collections/tencent/wemm-video
+- Informe técnico (arXiv): https://arxiv.org/abs/2611.26409
+- Página del paper en Hugging Face: https://huggingface.co/papers/2611.26409
+- Repositorio GitHub: https://github.com/Tencent/WeMM-Video
+- Guía de servicio: https://github.com/Tencent/WeMM-Video/blob/main/docs/serving.md
+- Instalación del parche de runtime: https://github.com/Tencent/WeMM-Video/blob/main/patch/README.md

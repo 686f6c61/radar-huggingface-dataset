@@ -2,95 +2,104 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-Surgical-Q4_K-GGUF es un artefacto derivado del modelo Muse-Glimmer-30B de Meta, sometido a una cirugía de profundidad (depth-pruning) que elimina el 4,75% del decoder (tres subcapas FFN de las capas 4, 9 y 48), seguida de una fase de "curado" mediante destilación local contra el modelo padre congelado, y finalmente cuantizado a Q4_K. El resultado es un archivo GGUF de 14,61 GB que mantiene una fidelidad alta respecto al original BF16, con un margen-qualified top-1 agreement del 97,74% y una KLD media de 0,04810, superando los umbrales exigidos.
+Muse-Glimmer-30B-Surgical-Q4_K-GGUF es un artefacto de investigación derivado de meta-models/Muse-Glimmer-30B, publicado por el usuario Joakimpalm-Zen. No se trata de un modelo entrenado desde cero, sino de una cirugía estructural sobre el decodificador del modelo padre: se eliminó el 4,75 % de las capas del decoder y el daño se reparó mediante destilación local contra el modelo progenitor congelado. Posteriormente, el resultado se cuantizó a Q4_K con la herramienta Xyntetik Runner.
 
-El desarrollo corre a cargo de Joakimpalm-Zen, que también ha creado el motor de inferencia xyntetik-runner, un binario único en C11 sin dependencias que entrena, fusiona y cuantiza GGUFs de forma determinista. Este artefacto es una demostración práctica de esa herramienta: la cirugía se aplicó por sustitución byte a byte sobre el GGUF padre y la cuantización se realizó con el cuantizador propio del runner. El modelo base es un transformer causal de 30B parámetros con capacidades multimodales originales, aunque este artefacto concreto es solo texto (no incluye el encoder de visión ni la sintaxis de tool-calling "atem").
+El modelo conserva 27.854.794.240 parámetros en el checkpoint original en safetensors, y el repositorio GGUF ocupa 15,7 GB con un archivo principal de 14,61 GB. Está pensado como una de las dos piezas de salida de un estudio preregistrado de nueve ejecuciones sobre cirugía de modelos, no como un lanzamiento de propósito general. Su utilidad principal es servir como evidencia empírica sobre qué ocurre al podar profundidad y reparar con destilación, y como objeto de estudio para quienes investigan compresión estructural.
 
-La relevancia de este modelo radica en que muestra una vía reproducible para reducir el tamaño de un LLM sin sacrificar comportamiento, y documenta con métricas precisas el coste de cada paso (cirugía, curado, cuantización). Es útil para quienes investigan técnicas de compresión estructural o necesitan un modelo de 30B que quepa en hardware de consumo.
+La relevancia actual radica en que documenta con métricas de fidelidad (97,74 % de coincidencia y 0,04810 de divergencia en un split retenido) y, al mismo tiempo, reconoce un déficit emparejado en el anexo de benchmarks. Es decir, el autor advierte explícitamente de que el modelo pasa el umbral de fidelidad pero no es un sustituto equivalente del padre para inferencia normal. Esa honestidad metodológica, junto con la trazabilidad de los artefactos, lo convierte en un caso de estudio útil más que en un modelo de producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal (decoder-only) con FFN; originalmente multimodal, este artefacto es solo texto |
-| Parametros totales | 27.854.794.240 (27,85B) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer decoder (derivada del padre, con 4,75 % del decodificador eliminado); detalles completos no disponibles |
+| Parametros totales | 27.854.794.240 |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_K (este archivo); tambien disponibles Q8_0 y BF16 segun la tabla de fidelidad |
-| Idiomas soportados | No disponibles |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (Q4_K); el modelo base usa safetensors |
+| Tipos de cuantizacion | Q4_K (archivo publicado); el toolchain soporta Q8_0 y F16 |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); el padre en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Muse-Glimmer-30B es un transformer causal de 30B parámetros con un encoder de percepción dedicado, destilado de Muse Spark y orientado a tareas agénticas autónomas en hardware de consumo. Este artefacto, sin embargo, es una variante estructural: se eliminaron tres subcapas FFN (capas 4, 9 y 48) mediante un mapeo de sensibilidad por profundidad, y se retrainó una FFN por corte (la primera capa superviviente por debajo) durante 7,4 millones de tokens, aproximadamente 28 minutos en una GPU de 24 GB. El curado se hizo por destilación local contra el padre congelado, logrando una KLD de 0,03056 en BF16, mejor que el padre con solo dos cortes sin curar.
+La arquitectura subyacente es la del modelo padre meta-models/Muse-Glimmer-30B, un transformer decoder del que se ha eliminado el 4,75 % de las capas del decodificador. La intervención se aplicó mediante sustitución a nivel de byte directamente sobre el GGUF del padre, y las capas restantes se repararon con destilación local contra el progenitor congelado. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el modelo original.
 
-La cuantización a Q4_K se realizó con el cuantizador de xyntetik-runner, tras medir que el ruido de cuantización y el error de cirugía son aditivos e independientes (factor 0,965 a 0,994 sobre la suma ingenua), lo que permitió predecir el coste final con un 0,6% de error. El archivo GGUF se produjo por sustitución byte a byte de los 18 tensores modificados en el GGUF padre, y los pesos curados sobreviven a Q8_0 con un coste de +0,00006 KLD. El entrenamiento de curado usó AdamW LoRA, con determinismo garantizado por el runner.
+La innovación técnica destacable no está en la arquitectura sino en el proceso: la cuantización a Q4_K fue escrita por el cuantizador propio de Xyntetik Runner, y el coste de fidelidad de esa cuantización se predijo con un 0,6 % de error antes de construir el archivo, a partir de la independencia medida entre el ruido de cuantización y el error de cirugía. Los pesos reparados sobreviven a Q8_0 con un coste de +0,00006 KLD. El ecosistema Runner incluye entrenamiento LoRA determinista (AdamW sobre el GGUF servido), fusión de adaptadores con registro de procedencia y evaluación teacher-forced sobre conjuntos retenidos.
 
 ## Capacidades
 
-- Generacion de texto: el modelo genera texto coherente y mantiene el comportamiento del padre en los 11 dominios medidos (spread de perplejidad 0,046 frente a 0,373 sin curar).
-- Razonamiento: el modelo base tiene salida de razonamiento separada, pero no se especifica si este artefacto la conserva; la certificacion indica que solo se implementa la ruta de texto.
-- Tool calling: el modelo base soporta tool-calling nativo con sintaxis "atem", pero el doc de certificacion aclara que esta sintaxis no esta implementada en este artefacto.
-- Multilingue: no hay datos disponibles sobre idiomas.
-- Capacidades agénticas: el original esta disenado para tareas agénticas, pero este artefacto es solo texto y no incluye el encoder de vision ni la sintaxis de herramientas.
-- Fidelidad estructural: los pesos de las FFN eliminadas son exactamente cero, lo que permite cargarlo en cualquier runtime GGUF compatible con muse-glimmer.
+- Generación de texto conversacional, según la etiqueta `conversational` del repositorio.
+- Razonamiento y generación de código: capacidades heredadas del padre, aunque no verificadas de forma independiente en la información disponible.
+- Compatibilidad con endpoints: el repositorio incluye la etiqueta `endpoints_compatible`.
+- Carga en otros runtimes: las formas de tensor son estándar, por lo que llama.cpp y otros motores pueden cargarlo además de Xyntetik Runner.
+- Fine-tuning sobre el artefacto: se puede entrenar un adaptador LoRA con Runner y fusionarlo, con la advertencia de que fusionar a 4 bits borra la adaptación.
+- No se documentan capacidades de visión, audio, tool calling ni modo thinking en la información disponible.
 
 ## Casos de uso
 
-- Inferencia local en hardware de consumo: con 14,61 GB de archivo y ~17 GB de memoria requerida, puede ejecutarse en una GPU de 24 GB (RTX 3090/4090) o en un Mac con 32 GB unificados, usando xyntetik-runner o llama.cpp.
-- Servicio de chat en local: el runner ofrece un servidor compatible con OpenAI, permitiendo desplegar un endpoint de chat privado sin depender de la nube.
-- Experimentacion con model surgery: al ser un ejemplo documentado de poda estructural con metricas de fidelidad, sirve como referencia para investigar tecnicas similares en otros modelos.
-- Fine-tuning con LoRA: el runner permite entrenar adaptadores LoRA sobre el GGUF servido, con determinismo y verificacion de que la adaptacion sobrevive si se fusiona a Q8_0 o F16 (no a 4-bit).
-- Evaluacion de cuantizacion: la tabla de fidelidad publicada permite comparar el impacto de Q4_K frente a Q8_0 y BF16, util para decidir el punto de equilibrio tamano/calidad.
-- Despliegue en entornos con restricciones de memoria: al ser un modelo de 30B en 14,61 GB, cabe en servidores con 16-24 GB de RAM, habilitando tareas de generacion de texto en infraestructura modesta.
+- Investigación sobre poda de profundidad: el modelo sirve como punto de comparación controlado frente al padre para medir el impacto real de eliminar un 4,75 % del decoder, gracias a que el estudio es preregistrado y los artefactos están documentados.
+- Estudio de reparación por destilación: permite reproducir el protocolo de destilación local contra el progenitor congelado y evaluar si el 97,74 % de fidelidad se mantiene en otros dominios.
+- Validación de predicción de cuantización: útil para comprobar empíricamente la afirmación de que el coste de Q4_K se predijo con un 0,6 % de error, replicando la medición de KLD.
+- Despliegue en hardware limitado: con 14,61 GB de archivo y unos 17 GB de memoria utilizable, cabe en estaciones de trabajo y Macs Apple Silicon con suficiente RAM unificada, lo que permite experimentar con un modelo de ~28B sin GPU de datacenter.
+- Pruebas de fine-tuning con Runner: escenario para verificar la determinismo byte a byte de los adaptadores y el registro de procedencia en `adapter.gguf.train.json`.
+- Estudio de borrado de adaptaciones por fusión: caso práctico para demostrar que fusionar a Q4_0 devuelve la evaluación al nivel del modelo base (0,69 frente a 1,00) mientras la perplejidad parece correcta.
+- Evaluación de compatibilidad entre runtimes: comparar la salida servida por Runner con la de llama.cpp sobre el mismo GGUF para detectar divergencias de implementación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. En su lugar, la model card proporciona metricas de fidelidad frente al padre BF16, medidas en un split held-out:
+Los datos disponibles son métricas de fidelidad del proceso de cirugía, no benchmarks estándar de capacidad.
 
-| Artefacto | Tamano | KLD media | Top-1 con margen | Barra |
-|---|---|---|---|---|
-| Este archivo (cirugia + curado, Q4_K) | 14,61 GB | 0,04810 | 97,74% | PASS (>=97%) |
-| Mismos pesos, Q8_0 | 27,58 GB | 0,03076 | 98,65% | PASS |
-| Mismos pesos, BF16 | 51,90 GB | 0,03056 | 98,64% | PASS |
-| Padre a Q4_K (control solo cuantizacion) | 14,61 GB | 0,01930 | 99,12% | PASS |
+| Metrica | Valor |
+|---|---|
+| Fidelidad en split retenido (coincidencia) | 97,74 % |
+| Divergencia en split retenido | 0,04810 |
+| Coste KLD de Q8_0 sobre pesos reparados | +0,00006 |
+| Error de prediccion del coste Q4_K | 0,6 % |
+| Evaluacion tras fusion a F16 | 1,00 (adaptacion conservada) |
+| Evaluacion tras fusion a Q8_0 | 1,00 (adaptacion conservada) |
+| Evaluacion tras fusion a Q4_0 | 0,69 (adaptacion borrada; igual al base) |
 
-Ademas, se reporta que la cirugia sin curar falla la barra (KLD 0,10021), y que el curado reduce el spread de perplejidad por dominio de 0,373 a 0,046.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor indica que el anexo de benchmarks encontró un déficit emparejado frente al padre.
 
 ## Requisitos de hardware
 
-- VRAM estimada: ~17 GB de memoria usable para el archivo de 14,61 GB (segun la model card).
-- GPU recomendadas: una GPU con 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A5000) es suficiente para inferencia; el entrenamiento de curado se hizo en una GPU de 24 GB.
-- CPU: puede ejecutarse en CPU con suficiente RAM (32 GB recomendados), usando xyntetik-runner o llama.cpp.
-- Opciones de despliegue: xyntetik-runner (binario unico, CPU/CUDA/Metal, servidor OpenAI-compatible), llama.cpp, Ollama (si tiene soporte para muse-glimmer), o cualquier runtime GGUF compatible.
-- Latencia y throughput: no se proporcionan datos especificos; dependen del hardware y del runtime.
+- VRAM/RAM estimada: aproximadamente 17 GB de memoria utilizable para el archivo Q4_K de 14,61 GB, según indica la model card.
+- GPU recomendadas: no se especifican modelos concretos en la información disponible; el motor soporta CPU, CUDA y Metal.
+- Compatibilidad con GPU de consumo: no confirmada explícitamente, pero el tamaño permite alojarlo en GPUs con 24 GB de VRAM (por ejemplo, RTX 3090 o RTX 4090) y en Macs Apple Silicon con memoria unificada suficiente.
+- Opciones de despliegue: Xyntetik Runner (binario único C11 sin dependencias, servidor compatible con OpenAI), llama.cpp y otros runtimes que acepten formas de tensor estándar.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B (base) | 30B | No disponible | BF16, k-quant 17GB | Apache-2.0 | Multimodal, tool-calling, razonamiento separado |
-| Este artefacto (surgical Q4_K) | 27,85B (tras poda) | No disponible | Q4_K | Apache-2.0 | Solo texto, sin vision ni tool-calling |
-| Muse-Glimmer-30B-runner-quant-frontier-report | 30B | No disponible | Varios | Apache-2.0 | Reporte de frontera de cuantizacion del mismo autor |
+| Muse-Glimmer-30B-Surgical-Q4_K | 27,85B | No disponible | Apache 2.0 | GGUF Q4_K | Derivado con 4,75 % del decoder eliminado; deficit en benchmarks segun el autor |
+| meta-models/Muse-Glimmer-30B (padre) | No disponible | No disponible | No disponible | Safetensors | Referencia de fidelidad; sin la perdida de profundidad |
+| Otros derivados del mismo estudio | No disponible | No disponible | Apache 2.0 | GGUF | Segunda pieza de las dos salidas del estudio de nueve ejecuciones |
 
-No se dispone de datos de otros modelos comparables de 30B cuantizados en la informacion proporcionada.
+No se dispone de información sobre modelos comparables de otros autores con la misma intervención estructural.
 
 ## Limitaciones y advertencias
 
-- Solo texto: este artefacto no incluye el encoder de vision del modelo base ni la sintaxis de tool-calling "atem"; las capacidades multimodales y de herramientas no estan disponibles.
-- Fusion a 4-bit: segun la tabla de merge del runner, fusionar un adaptador LoRA a Q4_0 borra la adaptacion (el resultado puntua como el modelo base, 0,69 frente a 1,00). Se recomienda fusionar a Q8_0 o F16.
-- Sesgos del modelo base: al ser un derivado de Muse-Glimmer-30B de Meta, puede heredar sesgos presentes en los datos de entrenamiento originales, aunque no se documentan explicitamente.
-- Riesgo de alucinacion: no se evalua en la informacion disponible; como cualquier LLM, puede generar contenido falso o inconsistente.
-- Longitud de contexto desconocida: no se especifica, lo que limita su uso en tareas que requieran ventanas largas.
-- Dependencia del runtime: aunque es un GGUF estandar, la certificacion de arquitectura se hizo con xyntetik-runner; otros runtimes pueden no soportar todas las caracteristicas.
+- No es un lanzamiento de propósito general: el propio autor lo etiqueta como artefacto de investigación.
+- Déficit emparejado en benchmarks frente al modelo padre, documentado en el anexo del estudio; no debe usarse como sustituto directo del padre en producción.
+- La eliminación del 4,75 % del decoder puede degradar capacidades no cubiertas por el split de fidelidad; el 97,74 % no garantiza equivalencia funcional.
+- Riesgo de alucinación no cuantificado en la información disponible.
+- Sesgos conocidos: no documentados.
+- Idiomas soportados: no disponibles, lo que impide garantizar cobertura multilingüe.
+- Longitud de contexto: no disponible, un dato crítico para planificar cargas de trabajo.
+- Advertencia de fusión: fusionar un adaptador LoRA a 4 bits borra la adaptación aunque la perplejidad parezca correcta; usar Q8_0 o F16, o servir base más adaptador.
+- Licencia Apache 2.0 permite uso comercial, pero la falta de datos sobre el padre y sobre sesgos hace recomendable una evaluación propia antes de desplegar.
+- El repositorio tiene 167 descargas y 0 likes, con validación limitada por parte de la comunidad.
 
 ## Enlaces
 
-- Artefacto en Hugging Face: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q4_K-GGUF
-- Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
-- Repositorio de xyntetik-runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
-- Reporte de frontera de cuantizacion: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-runner-quant-frontier-report
-- Certificacion de arquitectura: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/muse-glimmer-cert-2026-08-11.md
-- Pagina en Ollama: https://ollama.com/library/muse-glimmer:30b
-- Model card en NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b/modelcard
+- Modelo en Hugging Face: https://huggingface.co/Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q4_K-GGUF
+- Modelo padre: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Colección del estudio: https://huggingface.co/collections/Joakimpalm-Zen/xyntetik-research-model-surgery-and-scale-recovery-6aa98bab0ecb9723f310c770
+- Dataset de evidencia: https://huggingface.co/datasets/Joakimpalm-Zen/Muse-Glimmer-30B-surgery-report
+- Repositorio de Xyntetik Runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
+- Alcance del determinismo: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/determinism-scope.md
+- Fila del roster de soporte: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/model-support.md#muse-glimmer-30b-surgical-4p75-q4_k
+- Resultados de la comunidad: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/community-results.md

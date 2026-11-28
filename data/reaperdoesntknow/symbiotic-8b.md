@@ -2,94 +2,101 @@
 
 ## Resumen
 
-Symbiotic-8B es un ajuste fino del modelo Qwen/Qwen3-8B publicado por el usuario reaperdoesntknow bajo el paraguas de Convergent Intelligence LLC: Research Division. Segun la model card, se presenta como un modelo hibrido "simbolico-transformer" que anade al backbone Qwen3-8B una serie de modulos simbolicos (ThoughtDynamicsLNN, CrystallineProcessor, LiquidThoughtProcessor y HelicalDNAProcessor) junto con un buffer de memoria persistente de 2048 vectores simbolicos. El objetivo declarado es combinar razonamiento simbolico de larga memoria con generacion de lenguaje de alta fidelidad.
+Symbiotic-8B es un ajuste fino del modelo Qwen3-8B publicado por el usuario reaperdoesntknow bajo el sello Convergent Intelligence LLC: Research Division. El autor lo presenta como un modelo hibrido "simbolico-transformer" que anade al backbone Qwen3-8B una serie de modulos simbolicos (ThoughtDynamicsLNN, CrystallineProcessor, LiquidThoughtProcessor, HelicalDNAProcessor) y un buffer de memoria persistente de 2048 vectores, con el objetivo declarado de mejorar el razonamiento logico encadenado y la coherencia conversacional multi-turno.
 
-El modelo conserva el tamano del Qwen3-8B original: 8.190.735.360 parametros totales en pesos safetensors, con licencia AFL-3.0 y un unico idioma declarado (ingles). El repositorio ocupa 43,1 GB, lo que incluye tanto los pesos en formato PyTorch (model.bin) como en safetensors, ademas del snapshot de memoria (memory.pt) y los ficheros de configuracion y tokenizador.
+El modelo conserva el tamano del base: 8.190.735.360 parametros en formato safetensors, lo que lo situa en la categoria de 8B densos. La model card menciona un dataset de ajuste fino centrado en razonamiento matematico (0xZee/dataset-CoT-Advanced-Calculus-268) y declara un unico idioma soportado, el ingles. La licencia es AFL-3.0, permisiva con obligaciones de atribucion y reciprocidad sobre modificaciones.
 
-La relevancia de este modelo es limitada y debe interpretarse con cautela: la model card es en gran medida aspiracional, no documenta el proceso de entrenamiento con cifras verificables (tokens, composicion del dataset, tecnicas de alineamiento) y no aporta resultados de benchmarks. El unico dataset citado es 0xZee/dataset-CoT-Advanced-Calculus-268, un conjunto de Chain-of-Thought sobre calculo avanzado. Para un desarrollador que evalue modelos, conviene tratarlo como un experimento de investigacion mas que como un modelo listo para produccion.
+Es relevante ahora porque ejemplifica una tendencia creciente de ajustes finos comunitarios sobre Qwen3 que anaden capas de "memoria" o "razonamiento simbolico" sobre un transformer convencional. Conviene tratarlo con cautela: gran parte de las capacidades declaradas (procesadores simbolicos, Dream Mode, memoria entropica) no estan documentadas con detalle tecnico verificable ni respaldadas por benchmarks publicos en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (backbone Qwen3-8B con rotary embeddings) mas modulos simbolicos propietarios declarados en la model card |
+| Arquitectura | Transformer denso (Qwen3-8B) con modulos simbolicos anadidos segun el autor |
 | Parametros totales | 8.190.735.360 |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (heredada de Qwen3-8B, sin confirmar en la model card) |
-| Tipos de cuantizacion | no disponible (el repo solo publica pesos en safetensors y PyTorch; no se ofrecen GGUF ni cuantizaciones oficiales) |
-| Idiomas soportados | en (ingles) |
-| Licencia | afl-3.0 (Academic Free License 3.0) |
-| Formato de pesos | safetensors, PyTorch (model.bin), memory.pt (snapshot de memoria simbolica) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible (heredada de Qwen3-8B; no confirmada en la model card) |
+| Tipos de cuantizacion | No disponible (no se publican GGUF ni cuantizaciones oficiales) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | AFL-3.0 |
+| Formato de pesos | safetensors, PyTorch (model.bin), memory.pt |
+| Dimension simbolica | 4096 (declarada por el autor) |
+| Memoria simbolica | 2048 vectores float32 |
+| Tamano del repositorio | 43.1 GB |
 
 ## Arquitectura y entrenamiento
 
-El backbone es el transformer decoder-only de Qwen3-8B, con rotary positional embeddings. Sobre el se declaran cuatro modulos simbolicos adicionales: ThoughtDynamicsLNN (una capa de atencion LSTM multi-cabeza), CrystallineProcessor (una GNN basada en DNAConv), LiquidThoughtProcessor (plegado recurrente de simbolos) y HelicalDNAProcessor (proyeccion lineal helicoidal). La dimension simbolica declarada es 4096 y el buffer de memoria contiene 2048 vectores en float32 con recuperacion sensible a la entropia. Se menciona tambien un "Dream Mode" que genera cognicion simbolica de forma offline. No se aporta informacion sobre como se integran estos modulos en el grafo de computo del transformer ni sobre su impacto real en la inferencia.
+Segun la model card, el modelo parte del backbone rotary transformer de Qwen3-8B y le superpone cuatro modulos simbolicos: ThoughtDynamicsLNN (descrito como atencion LSTM multi-cabeza), CrystallineProcessor (GNN basada en DNAConv), LiquidThoughtProcessor (plegado recurrente de simbolos) y HelicalDNAProcessor (proyeccion lineal helicoidal). Ademas incorpora un buffer de memoria de 2048 vectores float32 con recuperacion "consciente de la entropia" y un modo offline denominado Dream Mode. No se especifica como se integran estos modulos en el grafo de computo ni si los pesos publicados contienen realmente estos componentes o solo el ajuste fino del transformer base.
 
-En cuanto al entrenamiento, la model card no documenta el numero de tokens, la composicion del dataset (mas alla de citar 0xZee/dataset-CoT-Advanced-Calculus-268) ni si hubo RLHF, DPO o cualquier otra fase de alineamiento. De hecho, la propia model card indica explicitamente que el modelo "no esta ajustado a instrucciones" (not instruction-tuned). El marco teorico citado, "Discrepancy Calculus" (DISC), se describe con terminologia de teoria de la medida (operador de discrepancia, jump sets, ghost imprinting) y remite a un paper "de proxima publicacion"; no hay evidencia publicada que respalde estas afirmaciones.
+El entrenamiento se realizo, segun los metadatos, sobre el dataset 0xZee/dataset-CoT-Advanced-Calculus-268, orientado a cadenas de pensamiento de calculo avanzado. No se documentan el numero de tokens de entrenamiento, la composicion completa del dataset, ni si hubo RLHF, DPO o SFT supervisado. La model card indica explicitamente que el modelo no esta instruction-tuned, por lo que las entradas tipo chat pueden requerir ingenieria de prompts. Tampoco se aportan detalles sobre la innovacion tecnica del marco "Discrepancy Calculus" mas alla de referencias a documentos con DOI alojados en Hugging Face.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, heredada del backbone Qwen3-8B.
-- Razonamiento simbolico declarado: generacion de teoremas, encadenamiento logico y razonamiento estructurado con memoria retenida entre turnos (segun la model card; sin verificacion independiente).
-- Modelado de codigo y demostraciones matematicas, segun los usos previstos declarados por el autor.
-- Dialogo con persistencia de contexto mediante el buffer de memoria simbolica (2048 vectores).
-- Tokens especiales adicionales para estructuras simbolicas: `<THM>`, `<PROOF>`, `<D_EPS>`.
-- No se declara soporte de tool calling ni function calling.
-- No se declara soporte de agentes ni de razonamiento multi-paso orquestado.
-- No se declara capacidad de vision ni de audio.
-- No se declara modo "thinking" explicito (a diferencia de otras variantes de Qwen3).
+- Generacion de texto conversacional en ingles sobre el backbone Qwen3-8B.
+- Razonamiento simbolico y encadenamiento logico declarados por el autor (generacion de teoremas, pruebas, razonamiento estructurado).
+- Razonamiento matematico, presuntamente reforzado por el dataset de calculo avanzado.
+- Memoria persistente multi-turno mediante el buffer de 2048 vectores (segun el autor).
+- Tokens especiales anadidos para estructuras simbolicas: `<THM>`, `<PROOF>`, `<D_EPS>`.
+- Soporte de tool calling / function calling: no disponible (no declarado).
+- Soporte de agentes y multi-step reasoning: no confirmado; el autor menciona razonamiento encadenado pero sin documentacion tecnica.
+- Capacidades multilingues: limitadas al ingles segun los metadatos.
+- Vision, audio o thinking mode explicito: no disponible.
 
 ## Casos de uso
 
-- Experimentacion en razonamiento simbolico: el modelo puede emplearse como banco de pruebas para evaluar si los modulos simbolicos declarados aportan alguna mejora frente al Qwen3-8B base en tareas de logica formal, aunque requeriria una evaluacion propia porque no hay benchmarks publicados.
-- Investigacion sobre memoria persistente en dialogo: el buffer de 2048 vectores permite explorar tecnicas de retencion de contexto entre turnos, util para prototipos de asistentes de investigacion que necesiten recordar hechos previos.
-- Generacion de demostraciones matematicas asistida: dado el dataset CoT de calculo avanzado citado, puede usarse para generar borradores de pruebas paso a paso en entornos de estudio, siempre con revision humana.
-- Tutoria academica experimental: la model card lo orienta a "memory-aware tutoring"; serviria para prototipos de tutoria en ingles donde el modelo recuerde el progreso del estudiante a lo largo de la sesion.
-- Fine-tuning posterior como base: al ser un ajuste sobre Qwen3-8B con licencia AFL-3.0, puede servir como punto de partida para experimentos de ajuste supervisado en dominios cientificos, aunque la licencia debe revisarse antes de uso comercial.
-- Analisis de la viabilidad de arquitecturas hibridas: util para investigadores que quieran reproducir o contrastar las afirmaciones de la model card sobre modulos LNN, GNN y memoria simbolica en un transformer de 8B.
+- Tutoria matematica asistida: el ajuste sobre cadenas de pensamiento de calculo avanzado permite generar explicaciones paso a paso de derivadas, integrales y demostraciones, aunque requiere prompts bien estructurados al no estar instruction-tuned.
+- Asistente de investigacion con memoria de sesion: el buffer simbolico de 2048 vectores permitiria, segun el autor, retener contexto entre turnos en dialogos largos de caracter tecnico.
+- Generacion de borradores de demostraciones formales: los tokens `<THM>` y `<PROOF>` sugieren un uso orientado a estructurar teoremas y pruebas, util en entornos de docencia o prototipado de asistentes matematicos.
+- Prototipado de sistemas de razonamiento logico: como base para experimentar con marcos de memoria simbolica en investigacion academica, dado su caracter experimental.
+- Generacion de texto tecnico en ingles: su herencia de Qwen3-8B le permite redactar documentacion o explicaciones tecnicas, siempre que se acepte la ausencia de ajuste instruccional.
+- Base para nuevos ajustes finos: al estar disponible en safetensors y con licencia AFL-3.0, puede servir como punto de partida para experimentos de la comunidad sobre razonamiento simbolico.
+- Evaluacion comparativa de marcos de memoria: util para investigadores que quieran contrastar el enfoque "Discrepancy Calculus" frente a transformers convencionales, con la cautela de la falta de benchmarks.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, ni comparaciones con el Qwen3-8B base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 16,4 GB solo para pesos (8,19 mil millones de parametros a 2 bytes), mas overhead de activaciones y KV cache; en la practica, se recomienda al menos 24 GB para contexto moderado.
-- VRAM estimada en FP32: unos 32,8 GB solo para pesos, lo que descarta GPU de consumo.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para BF16 con contexto amplio; RTX 4090 (24 GB) puede ser suficiente en BF16 con contexto limitado.
-- GPU de consumo: cabe en RTX 4090 y RTX 3090 en BF16 con contexto reducido; en GPUs de 16 GB requeriria cuantizacion, que no se distribuye oficialmente y habria que generar con herramientas externas.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag endpoints_compatible). No se han publicado pesos GGUF, por lo que llama.cpp y Ollama requeririan conversion manual.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 16-17 GB solo para pesos, mas overhead de activaciones y KV cache; en la practica se recomienda 24 GB o mas.
+- VRAM estimada en cuantizacion de 8 bits: en torno a 9-10 GB; en 4 bits, alrededor de 5-6 GB (no se publican cuantizaciones oficiales, habria que generarlas).
+- GPU recomendadas: A100 40/80 GB, H100 para despliegues de produccion; RTX 4090 (24 GB) para inferencia en BF16 con contexto moderado.
+- Cabe en GPU de consumo: si, en RTX 4090 en BF16; en RTX 3090 (24 GB) con margen ajustado; en GPUs de 16 GB solo mediante cuantizacion.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (tag endpoints_compatible); vLLM, llama.cpp u Ollama no estan confirmados al no haber pesos GGUF publicados.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
 |---|---|---|---|---|---|
-| Symbiotic-8B | 8,19 B | no disponible | AFL-3.0 | Hugging Face, safetensors y PyTorch | Ajuste de Qwen3-8B con modulos simbolicos declarados; sin benchmarks |
-| Qwen/Qwen3-8B | 8,19 B | no disponible en esta ficha (modelo base) | Apache 2.0 (modelo base) | Hugging Face, amplio ecosistema (GGUF, vLLM, etc.) | Modelo base oficial, con benchmarks publicados por Alibaba |
-| Modelos de 8B tipo Llama 3.1 8B | 8,03 B | 128 K (segun ficha oficial) | Llama 3.1 Community License | Hugging Face, amplio ecosistema | Alternativa consolidada, con soporte de cuantizacion y despliegue maduro |
+| Symbiotic-8B | 8.19B | No disponible | AFL-3.0 | en | Ajuste fino experimental sobre Qwen3-8B con modulos simbolicos declarados |
+| Qwen3-8B (base) | 8.19B | No disponible en esta ficha | Apache 2.0 (segun el modelo original) | Multilingue | Modelo base oficial, con benchmarks publicados y ecosistema amplio |
+| Symbiotic-1B (mismo autor) | ~1B | No disponible | No disponible | en | Version reducida de la misma familia |
+| Symiotic-14B (mismo autor) | ~14B | No disponible | No disponible | en | Version mayor de la familia, con muy pocas descargas |
 
-La comparacion cuantitativa de rendimiento no es posible porque Symbiotic-8B no publica resultados. Frente al Qwen3-8B base, la diferencia declarada es la capa simbolica y la memoria persistente, sin evidencia publica de mejora.
+La comparacion directa con el base Qwen3-8B es la mas relevante: el modelo original cuenta con evaluaciones publicas y soporte multilingue, mientras que Symbiotic-8B no aporta benchmarks propios y restringe el uso al ingles. Frente a otros ajustes finos comunitarios de Qwen3-8B, la propuesta destaca por su enfoque simbolico declarado, pero carece de validacion empirica en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- No esta ajustado a instrucciones: las entradas tipo chat pueden requerir ingenieria de prompts para obtener respuestas utiles.
-- Ausencia total de benchmarks: no hay evidencia publicada que respalde las capacidades de razonamiento simbolico declaradas.
-- La model card contiene afirmaciones teoricas (Discrepancy Calculus) sin paper publicado y con terminologia no estandar; deben tratarse con escepticismo.
-- Riesgo de alucinacion: al ser un modelo base sin alineamiento declarado, la probabilidad de generar contenido incorrecto con apariencia de solidez es alta, especialmente en dominios cientificos.
-- Limitacion de idioma: solo se declara ingles; el rendimiento en castellano no esta garantizado.
-- Licencia AFL-3.0: permite uso comercial con condiciones (atribucion y, en algunas versiones, clausulas de reciprocidad); conviene revisar el texto completo antes de desplegar en produccion.
-- La memoria simbolica debe sembrarse activamente y su inferencia es "offline-evolved", lo que anade complejidad operativa y carga de CPU adicional segun el autor.
-- El repositorio incluye pesos duplicados (model.bin y model.safetensors) y un memory.pt, lo que eleva el tamano a 43,1 GB y complica el despliegue en entornos con almacenamiento limitado.
-- Sin cuantizaciones oficiales: no hay GGUF ni AWQ publicados, lo que limita el despliegue en hardware de consumo.
+- No esta instruction-tuned: las entradas tipo chat requieren ingenieria de prompts y el formato conversacional puede degradar la calidad.
+- Ausencia total de benchmarks publicados: las capacidades declaradas (razonamiento simbolico, memoria persistente, Dream Mode) no estan validadas de forma independiente.
+- Documentacion tecnica incompleta: no se detalla como se integran los modulos simbolicos en el transformer ni si los pesos publicados los contienen realmente.
+- Riesgo de alucinacion: inherente a los modelos de 8B y potencialmente agravado por el enfasis en razonamiento abstracto sin validacion.
+- Limitacion idiomatica: solo declara ingles; el rendimiento en castellano no esta garantizado.
+- Licencia AFL-3.0: permite uso comercial pero impone obligaciones de atribucion y reciprocidad sobre modificaciones; conviene revisar los terminos antes de desplegar en produccion.
+- El buffer de memoria puede incrementar la carga de CPU segun el propio autor, y la memoria simbolica requiere inicializacion activa ("seeding").
+- Proyecto de un unico autor con muy pocas descargas (2614) y likes (8): riesgo de falta de mantenimiento y soporte.
+- El marco "Discrepancy Calculus" se presenta como paper pendiente de publicacion; sus afirmaciones no son verificables actualmente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Symbiotic-8B
-- Modelo base: https://huggingface.co/Qwen/Qwen3-8B
-- Dataset citado: https://huggingface.co/datasets/0xZee/dataset-CoT-Advanced-Calculus-268
-- Paper de Discrepancy Calculus (referenciado en la model card): https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
-- Structure Over Scale (referenciado): https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
-- Three Teachers to Dual Cognition (referenciado): https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy (DOI: 10.57967/hf/8184)
-- Modelos relacionados: https://huggingface.co/reaperdoesntknow/Symbiotic-1B, https://huggingface.co/reaperdoesntknow/Symiotic-14B, https://huggingface.co/reaperdoesntknow/Symbiotic-Beta
+- Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
+- Dataset de ajuste: https://huggingface.co/datasets/0xZee/dataset-CoT-Advanced-Calculus-268
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
+- Discrepancy Calculus (DOI 10.57967/hf/8194): https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus
+- Structure Over Scale (DOI 10.57967/hf/8165): https://huggingface.co/reaperdoesntknow/Structure-Over-Scale
+- Three Teachers to Dual Cognition (DOI 10.57967/hf/8184): https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
+- Symbiotic-1B: https://huggingface.co/reaperdoesntknow/Symbiotic-1B
+- Symiotic-14B: https://huggingface.co/reaperdoesntknow/Symiotic-14B
+- Symbiotic-Beta: https://huggingface.co/reaperdoesntknow/Symbiotic-Beta

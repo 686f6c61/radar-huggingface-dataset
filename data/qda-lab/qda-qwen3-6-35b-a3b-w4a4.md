@@ -2,120 +2,102 @@
 
 ## Resumen
 
-QDA-Qwen3.6-35B-A3B-W4A4 es una cuantizacion NVFP4 (4 bits en pesos y activaciones, con algunas capas en FP8) del modelo multimodal Qwen/Qwen3.6-35B-A3B, publicada por el laboratorio independiente qda-lab. Su objetivo es reducir el coste de despliegue del modelo base en GPUs NVIDIA Blackwell manteniendo practicamente intacta la precision: el checkpoint ocupa 24,1 GB frente a los 71,9 GB del BF16 original, una reduccion de 3,0x, y conserva el 99,0 % de la exactitud segun la evaluacion del autor.
+QDA-Qwen3.6-35B-A3B-W4A4 es una cuantizacion NVFP4 (4 bits en pesos y activaciones, con algunas capas en FP8) del modelo multimodal Qwen/Qwen3.6-35B-A3B, desarrollada por qda-lab para GPUs NVIDIA Blackwell. El modelo base es un Mixture-of-Experts (MoE) de la familia Qwen3.6 con capacidad image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto. La cuantizacion reduce el peso de 71,9 GB en BF16 a 24,1 GB, un factor de 3,0x, manteniendo segun el autor el 99,0 % de la precision del modelo original.
 
-El modelo base es un transformer MoE con atencion hibrida (lineal y completa) y torre de vision, orientado a tareas de razonamiento, matematicas y codigo en modo thinking. Esta cuantizacion esta pensada especificamente para servir el modelo con vLLM sobre hardware Blackwell (B200, B300, GB200, GB300), donde NVFP4 cuenta con soporte nativo en tensor cores.
+La relevancia de esta ficha es practica: permite desplegar un MoE multimodal de gran contexto en hardware Blackwell con un consumo de VRAM muy inferior al del checkpoint BF16, usando vLLM y el formato compressed-tensors. La receta de cuantizacion se genero mediante busqueda automatizada con agentes (QDA), y el autor afirma que una reconstruccion desde la receta fue byte-identica al checkpoint publicado en una GB300.
 
-La relevancia de esta ficha es doble: por un lado, demuestra que la cuantizacion agresiva W4A4 puede igualar al BF16 en benchmarks de razonamiento de alta dificultad (AIME 2025, HMMT, GPQA-Diamond); por otro, ofrece una comparativa directa y reproducible frente a las cuantizaciones NVFP4 publicadas por NVIDIA, RedHatAI y unsloth, con metodologia detallada (mismo motor, mismas semillas, mismos limites de tokens).
+El modelo se distribuye bajo licencia Apache-2.0, la misma que el modelo base, y esta pensado para inferencia nativa en FP4 sobre B200, GB300 y RTX PRO 6000. No se proporcionan datos sobre idiomas soportados ni sobre el proceso de entrenamiento del modelo base en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atencion hibrida (lineal Gated DeltaNet + atencion completa) y torre de vision; tag `qwen3_5_moe` |
-| Parametros totales | 19.845.695.344 (~19,8 mil millones, segun safetensors) |
-| Parametros activos | no disponible (el nombre del modelo base sugiere ~3B activos, sin confirmar en la informacion proporcionada) |
-| Longitud de contexto | 262.144 tokens (ventana usada en la evaluacion); `qda eval` sirve con 114.688 |
-| Tipos de cuantizacion | NVFP4 (W4A4) en expertos enrutados y lineales del decoder; FP8 W8A8 en `in_proj_qkv`, `in_proj_z`, `out_proj` y `lm_head`; BF16 en proyecciones de self-attention, expertos compartidos, compuertas Gated DeltaNet, routers, embeddings y torre de vision |
+| Arquitectura | Transformer MoE multimodal (image-text-to-text) con atencion lineal (Gated DeltaNet) y atencion completa; tag `qwen3_5_moe` |
+| Parametros totales | 19.845.695.344 (segun safetensors); el nombre comercial indica 35B-A3B |
+| Parametros activos | no disponible (el nombre sugiere ~3B activos, sin confirmar en la informacion) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | NVFP4 W4A4 (E2M1 pesos, escala E4M3 por 16 entradas, escala tensor FP32) en expertos enrutados y lineales del decoder; FP8 W8A8 en `in_proj_qkv`, `in_proj_z`, `out_proj` y `lm_head`; BF16 en proyecciones de self-attention, expertos compartidos, puertas Gated DeltaNet, routers, embeddings y torre de vision |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compatible con `compressed-tensors` y vLLM) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.6-35B-A3B emplea una arquitectura Mixture-of-Experts con atencion hibrida: capas de atencion lineal basadas en Gated DeltaNet combinadas con capas de atencion completa, ademas de una torre de vision que lo habilita para tareas image-text-to-text. El checkpoint cuantizado conserva esa topologia y solo modifica la precision numerica de determinados modulos.
+El modelo base Qwen3.6-35B-A3B es un MoE multimodal de la familia Qwen3.6 que combina atencion lineal (Gated DeltaNet) con atencion completa y una torre de vision para entrada image-text-to-text. Esta version no reentrena el modelo: aplica cuantizacion post-entrenamiento. Los expertos enrutados y el resto de lineales del decoder se cuantizan en NVFP4, mientras que las proyecciones de atencion lineal y el `lm_head` pasan a FP8 W8A8 (pesos por canal, activaciones dinamicas por token). Las proyecciones de self-attention, expertos compartidos, puertas Gated DeltaNet, routers, embeddings y la torre de vision permanecen en BF16.
 
-La cuantizacion se realizo con GPTQ. Los expertos enrutados y el resto de lineales del decoder usan NVFP4: pesos E2M1 con una escala E4M3 por cada 16 entradas y una escala tensorial FP32, con activaciones cuantizadas del mismo modo en tiempo de ejecucion. Las proyecciones de atencion lineal (`in_proj_qkv`, `in_proj_z`, `out_proj`) y `lm_head` se mantienen en FP8 W8A8 (pesos por canal, activaciones dinamicas por token). Permanecen en BF16 las proyecciones de self-attention, los expertos compartidos, las compuertas Gated DeltaNet, los routers, los embeddings y la torre de vision. La receta concreta se selecciono mediante busqueda automatizada de QDA bajo un presupuesto fijo de tamano.
-
-Los datos de calibracion son una mezcla publica de respuestas del propio modelo: 2.310 filas de token ids, de las que se eliminaron 36 que alcanzaban el limite de 20 palabras de MMLU-Pro; la construccion lee las primeras 384 filas de 2.048 tokens cada una. El autor documenta una revision contra el conjunto de test de MMLU-Pro (12.032 preguntas): ninguna ventana de 20 palabras coincide, pero 12 filas contienen el texto completo de una pregunta corta de MMLU-Pro (de las partes TheoremQA y SciBench) seguida de una solucion escrita por el modelo, y una de ellas (fila 75) esta entre las 384 usadas.
+Los pesos se cuantizaron con GPTQ y la receta fue seleccionada por la busqueda automatizada de QDA bajo un presupuesto de tamano fijo. Segun el autor, la reconstruccion desde la receta en una GB300 tarda unos 9 minutos y produce un checkpoint byte-identico. No se dispone de informacion sobre tokens de entrenamiento, composicion del dataset ni etapas de RLHF/DPO del modelo base en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en modo thinking, con marcador de fin de pensamiento `</think>`.
-- Razonamiento matematico de alta dificultad: AIME 2025 y HMMT Feb 2026 evaluados con 32 draws por problema y hasta 81.920 tokens de salida.
-- Razonamiento cientifico de nivel doctorado: GPQA-Diamond.
-- Generacion y comprension de codigo: LiveCodeBench con 454 problemas y 4 draws.
-- Seguimiento de instrucciones complejas: IFBench con 300 problemas y 16 draws.
-- Conocimiento general y profesional: MMLU-Pro con 12.032 preguntas.
-- Procesamiento image-text-to-text (pipeline declarado y torre de vision en BF16).
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita, aunque el modo thinking y la ventana de 262.144 tokens lo habilitan tecnicamente.
+- Generacion de texto y razonamiento en modo thinking (los benchmarks se reportan con thinking mode activado).
+- Razonamiento matematico de competicion (AIME 2025, HMMT) y cientifico (GPQA-Diamond).
+- Generacion de codigo (LiveCodeBench) y seguimiento de instrucciones (IFBench).
+- Entrada multimodal image-text-to-text mediante torre de vision en BF16.
+- Conocimiento general y profesional (MMLU-Pro).
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
+- Capacidades multilingues: no disponible.
+- Inferencia nativa FP4 en GPUs NVIDIA Blackwell (B200, GB300, RTX PRO 6000) mediante vLLM.
 
 ## Casos de uso
 
-- Razonamiento matematico asistido: el modelo mantiene 89,8 % en AIME 2025 y 80,2 % en HMMT Feb 2026 en W4A4, por lo que puede usarse en tutoria de matematicas avanzada, verificacion de demostraciones o generacion de problemas con solucion, con cadenas de pensamiento largas (hasta 81.920 tokens de salida).
-- Analisis cientifico y QA de dominio: con 84,9 % en GPQA-Diamond, es adecuado para responder preguntas de fisica, quimica y biologia de nivel experto en herramientas internas de investigacion, siempre con revision humana.
-- Generacion de codigo en produccion: 80,8 % en LiveCodeBench permite integrarlo en pipelines de revision de codigo, generacion de tests o resolucion de problemas algoritmicos; su formato safetensors y soporte en vLLM facilitan el despliegue como servicio interno.
-- Evaluacion de instrucciones y agentes: 66,0 % en IFBench lo hace util para tareas de seguimiento estricto de instrucciones, extraccion estructurada y validacion de formatos en flujos automatizados.
-- Despliegue economico en infraestructura Blackwell: al ocupar 24,1 GB, un solo GB300 puede servir multiples replicas o un modelo con contexto de 262.144 tokens, reduciendo coste por token frente al BF16 de 71,9 GB.
-- Procesamiento de documentos con imagen y texto: la torre de vision en BF16 y el pipeline image-text-to-text permiten OCR semantico, descripcion de figuras tecnicas o extraccion de datos de graficos en informes.
-- Benchmarking interno de cuantizaciones: la metodologia publicada (vLLM 0.33.0, mismas semillas, mismos caps) sirve como referencia reproducible para comparar otras recetas NVFP4 en el mismo hardware.
+- Razonamiento matematico y cientifico en produccion: el modelo mantiene 89,8 en AIME 2025 y 84,9 en GPQA-Diamond tras la cuantizacion, por lo que es adecuado para asistentes de resolucion de problemas con cadenas de razonamiento largas (hasta 81.920 tokens de salida en la evaluacion).
+- Analisis de documentos con imagenes: al ser image-text-to-text, puede procesar capturas, diagramas o formularios junto a texto, util para extraccion de datos en pipelines documentales.
+- Generacion de codigo asistida: con 80,8 en LiveCodeBench, sirve para autocompletado y generacion de funciones en entornos de desarrollo, desplegado con vLLM.
+- Evaluacion y benchmarking de cuantizaciones: su receta reproducible y su comparativa frente a otras NVFP4 lo convierten en referencia para validar pipelines de cuantizacion en Blackwell.
+- Despliegue en hardware limitado: al ocupar 24,1 GB, cabe en una sola GPU Blackwell de gama profesional (RTX PRO 6000) para prototipos y servicios de baja concurrencia.
+- Servicio de inferencia de alto rendimiento: vLLM 0.33.0 sobre GB300 permite servir el modelo con kernels FP4 nativos, adecuado para cargas con requisitos de latencia ajustados.
+- Tareas de instrucciones complejas: con 66,0 en IFBench, es util para asistentes que deben seguir restricciones de formato y contenido en prompts largos.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor. Thinking mode, pass@1 promediado sobre los draws indicados; cada celda es puntuacion ± 1 error estandar, en porcentaje. Todos los checkpoints servidos con vLLM 0.33.0 en un GB300.
+Resultados publicados por el autor (thinking mode, pass@1 promediado sobre los draws; temperatura 1,0, top-p 0,95, top-k 20):
 
-| Benchmark | Problemas × draws | Cap de salida | BF16 (71,9 GB) | QDA W4A4 (24,1 GB) | NVIDIA NVFP4 (23,4 GB) | RedHatAI NVFP4 (25,0 GB) | unsloth NVFP4 (23,6 GB) |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| AIME 2025 | 30 × 32 | 81.920 | 89,3 ± 5,3 | **89,8 ± 5,2** | 89,4 ± 5,3 | 88,5 ± 5,4 | 89,0 ± 5,5 |
-| HMMT Feb 2026 | 33 × 32 | 81.920 | 81,8 ± 5,4 | **80,2 ± 5,7** | 79,1 ± 5,8 | 74,8 ± 6,4 | 77,9 ± 5,9 |
-| GPQA-Diamond | 198 × 16 | 81.920 | 86,0 ± 2,0 | 84,9 ± 2,0 | **85,0 ± 2,1** | 83,7 ± 2,2 | 84,5 ± 2,1 |
-| IFBench | 300 × 16 | 81.920 | 67,6 ± 2,1 | 66,0 ± 2,1 | 66,6 ± 2,1 | 66,2 ± 2,1 | **67,9 ± 2,0** |
-| MMLU-Pro | 12.032 × 1 | 32.768 | 85,2 ± 0,3 | **85,0 ± 0,3** | 84,9 ± 0,3 | 84,1 ± 0,3 | 84,9 ± 0,3 |
-| LiveCodeBench | 454 × 4 | 81.920 | 81,8 ± 1,6 | 80,8 ± 1,6 | **81,4 ± 1,6** | 80,1 ± 1,7 | 81,0 ± 1,6 |
-| **Media** | | | 81,9 ± 1,4 | **81,1 ± 1,4** | **81,1 ± 1,4** | 79,6 ± 1,5 | 80,9 ± 1,5 |
-
-Porcentaje de generaciones truncadas por alcanzar el cap de salida:
-
-| Benchmark | BF16 | QDA W4A4 | NVIDIA | RedHatAI | unsloth |
-|---|---:|---:|---:|---:|---:|
-| AIME 2025 | 5,0 % | 3,9 % | 5,4 % | 6,1 % | 5,8 % |
-| HMMT Feb 2026 | 7,7 % | 6,7 % | 11,4 % | 9,4 % | 9,5 % |
-| GPQA-Diamond | 1,8 % | 2,0 % | 2,4 % | 2,7 % | 2,1 % |
-| IFBench | 4,9 % | 5,1 % | 4,9 % | 5,7 % | 5,1 % |
-| MMLU-Pro | 0,1 % | 0,2 % | 0,2 % | 0,2 % | 0,2 % |
-| LiveCodeBench | 6,0 % | 6,2 % | 7,4 % | 8,1 % | 6,4 % |
-| Media | 4,3 % | 4,0 % | 5,3 % | 5,4 % | 4,8 % |
-
-Ajustes de evaluacion: temperatura 1,0, top-p 0,95, top-k 20 en todos los benchmarks salvo MMLU-Pro, ejecutado de forma greedy; thinking activado con `</think>`; ventana del motor de 262.144 tokens. El autor senala que `qda eval` con la suite `full` anade una penalizacion de presencia de 1,5, muestrea MMLU-Pro y sirve con 114.688 tokens de contexto, por lo que sus cifras no son identicas a las de la tabla.
+| Benchmark | Problemas x draws | BF16 (71,9 GB) | QDA W4A4 (24,1 GB) | NVIDIA NVFP4 (23,4 GB) | RedHatAI NVFP4 (25,0 GB) | unsloth NVFP4 (23,6 GB) |
+|---|---:|---:|---:|---:|---:|---:|
+| AIME 2025 | 30 x 32 | 89,3 | 89,8 | 89,4 | 88,5 | 89,0 |
+| HMMT Feb 2026 | 33 x 32 | 81,8 | 80,2 | 79,1 | 74,8 | 77,9 |
+| GPQA-Diamond | 198 x 16 | 86,0 | 84,9 | 85,0 | 83,7 | 84,5 |
+| IFBench | 300 x 16 | 67,6 | 66,0 | 66,6 | 66,2 | 67,9 |
+| MMLU-Pro | 12.032 x 1 | 85,2 | 85,0 | 84,9 | 84,1 | 84,9 |
+| LiveCodeBench | 454 x 4 | 81,8 | 80,8 | 81,4 | 80,1 | 81,0 |
+| Media | | 81,9 | 81,1 | 81,1 | 79,6 | 80,9 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 24,1 GB de pesos en NVFP4; con cache KV y overhead de servicio, se recomienda reservar al menos 40-48 GB para contextos moderados y bastante mas para contextos cercanos a 262.144 tokens.
-- GPUs soportadas: exclusivamente NVIDIA Blackwell de centro de datos (B200, B300, GB200, GB300). La evaluacion se realizo en un unico GB300 con vLLM 0.33.0.
-- GPUs consumer: no soportado de forma nativa; las RTX 40/50 no ejecutan NVFP4 con el rendimiento previsto y el checkpoint esta pensado para tensor cores Blackwell. Para consumer conviene recurrir a otras cuantizaciones del modelo base (por ejemplo GGUF) no incluidas en esta ficha.
-- Opciones de despliegue: `vllm serve qda-lab/QDA-Qwen3.6-35B-A3B-W4A4` con vLLM 0.33.0 o superior y soporte de `compressed-tensors`; compatible con `transformers` a nivel de carga, pero el rendimiento NVFP4 requiere vLLM.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: 24,1 GB de pesos en el repositorio; se necesita margen adicional para KV cache y activaciones, por lo que se recomienda al menos 32-48 GB de VRAM para contexto largo.
+- GPUs compatibles: NVIDIA Blackwell con soporte FP4 nativo, es decir, B200, GB300 y RTX PRO 6000. Evaluado con vLLM 0.33.0 sobre GB300.
+- Consumer GPU: no cabe en GPUs de consumo actuales sin FP4 nativo; el modelo requiere hardware Blackwell.
+- Despliegue: vLLM (`vllm serve qda-lab/QDA-Qwen3.6-35B-A3B-W4A4`) y transformers. No se mencionan llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: no disponibles.
+- Reconstruccion: QDA 0.1.0 sobre una sola GPU Blackwell, aproximadamente 9 minutos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Media en 6 benchmarks | Licencia | Tamano | Disponibilidad |
-|---|---|---:|---:|---|---:|---|
-| QDA-Qwen3.6-35B-A3B-W4A4 | ~19,8 B (MoE) | 262.144 | 81,1 ± 1,4 | Apache 2.0 | 24,1 GB | Hugging Face |
-| NVIDIA NVFP4 (Qwen3.6-35B-A3B) | ~19,8 B (MoE) | no disponible | 81,1 ± 1,4 | no disponible | 23,4 GB | Hugging Face |
-| RedHatAI NVFP4 (Qwen3.6-35B-A3B) | ~19,8 B (MoE) | no disponible | 79,6 ± 1,5 | no disponible | 25,0 GB | Hugging Face |
-| unsloth NVFP4 (Qwen3.6-35B-A3B) | ~19,8 B (MoE) | no disponible | 80,9 ± 1,5 | no disponible | 23,6 GB | Hugging Face |
-| Qwen3.6-35B-A3B BF16 (base) | ~19,8 B (MoE) | 262.144 | 81,9 ± 1,4 | Apache 2.0 | 71,9 GB | Hugging Face |
+| Modelo | Tamano | Precision | Media benchmarks | Licencia |
+|---|---:|---|---:|---|
+| QDA-Qwen3.6-35B-A3B-W4A4 | 24,1 GB | NVFP4 W4A4 + FP8 | 81,1 | Apache-2.0 |
+| NVIDIA NVFP4 (Qwen3.6-35B-A3B) | 23,4 GB | NVFP4 | 81,1 | Apache-2.0 |
+| RedHatAI NVFP4 (Qwen3.6-35B-A3B) | 25,0 GB | NVFP4 | 79,6 | Apache-2.0 |
+| unsloth NVFP4 (Qwen3.6-35B-A3B) | 23,6 GB | NVFP4 | 80,9 | Apache-2.0 |
+| Qwen3.6-35B-A3B BF16 | 71,9 GB | BF16 | 81,9 | Apache-2.0 |
 
 ## Limitaciones y advertencias
 
-- Dependencia de hardware: solo funciona de forma eficiente en GPUs NVIDIA Blackwell; en arquitecturas anteriores el checkpoint no aporta ventaja y puede no cargar correctamente.
-- Precision: aunque conserva el 99,0 % de la exactitud media, pierde entre 0,2 y 2,3 puntos en benchmarks individuales (HMMT Feb 2026: 80,2 frente a 81,8 en BF16; IFBench: 66,0 frente a 67,6). En tareas de razonamiento muy sensible conviene validar contra el BF16.
-- Riesgo de contaminacion en calibracion: el autor reconoce que 12 filas del fichero de calibracion contienen preguntas cortas de MMLU-Pro con soluciones generadas por el modelo, y una de ellas (fila 75) esta entre las 384 usadas. Aunque no coincide ninguna ventana de 20 palabras, existe un riesgo residual de fuga en MMLU-Pro.
-- Sesgos: no documentados en la informacion proporcionada; al derivar del modelo base, hereda los sesgos de Qwen3.6-35B-A3B.
-- Alucinacion: no se han publicado tasas especificas para esta cuantizacion; el modo thinking con cadenas largas puede aumentar el coste y no elimina el riesgo.
-- Idiomas: no se especifica la cobertura linguistica del checkpoint.
-- Licencia: Apache 2.0 permite uso comercial, pero debe verificarse que el modelo base mantiene la misma licencia y condiciones.
-- Produccion: la evaluacion se limita a seis benchmarks con vLLM 0.33.0 en un GB300; no hay datos publicos de latencia, throughput ni estabilidad bajo carga sostenida.
-- Contexto: la ventana de 262.144 tokens exige memoria KV considerable; servirla completa en un solo GB300 puede limitar el numero de peticiones concurrentes.
+- Dependencia de hardware: la inferencia FP4 nativa solo funciona en GPUs NVIDIA Blackwell; en otras arquitecturas el modelo no se puede ejecutar en su formato previsto.
+- Perdida de precision: la media baja de 81,9 a 81,1 frente a BF16; HMMT Feb 2026 cae 1,6 puntos y LiveCodeBench 1,0 punto.
+- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad ni de tasas de alucinacion en la informacion disponible.
+- Sesgos: no se documentan sesgos conocidos del modelo base ni de la cuantizacion.
+- Idiomas: no se especifican los idiomas soportados, lo que limita la planificacion de despliegues multilingues.
+- Contexto: no se indica la longitud maxima de contexto, dato critico para dimensionar KV cache.
+- Tool calling y agentes: no confirmados; conviene validarlos antes de usarlos en produccion.
+- Licencia: Apache-2.0 permite uso comercial, pero se recomienda revisar las condiciones del modelo base Qwen3.6-35B-A3B.
+- Madurez: el repositorio tiene 185 descargas y 0 likes, y fue creado en noviembre de 2026; la validacion externa es escasa.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/qda-lab/QDA-Qwen3.6-35B-A3B-W4A4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Cuantizacion NVFP4 de NVIDIA: no disponible (sin URL en la informacion proporcionada)
-- Cuantizacion NVFP4 de RedHatAI: no disponible (sin URL en la informacion proporcionada)
-- Cuantizacion NVFP4 de unsloth: no disponible (sin URL en la informacion proporcionada)
-- Repositorio de vLLM: no disponible (sin URL en la informacion proporcionada)
-- Paper o blog tecnico del autor: no disponible
+- Paper QDA: https://arxiv.org/abs/2611.23388
+- Repositorio QDA: https://github.com/humanfia/qda
+- Dataset de receta: https://huggingface.co/datasets/qda-lab/qda-recipe-inputs

@@ -2,98 +2,96 @@
 
 ## Resumen
 
-Parakeet Ultra en ONNX es una conversión del modelo de reconocimiento automático del habla Parakeet Ultra de Moondream, a su vez un post-entrenamiento del modelo Parakeet TDT 0.6B v3 de NVIDIA, exportado al formato ONNX con el layout que espera la librería onnx-asr. El paquete incluye el encoder en cuatro precisiones distintas (float32, float16, bfloat16 e int8 por bloques) y el decoder-joint correspondiente, de modo que el mismo modelo se puede servir tanto en CPU como en GPU con distintos compromisos entre tamaño y precisión numérica.
+Parakeet Ultra ONNX es la exportación al formato ONNX del modelo de reconocimiento automático del habla Parakeet Ultra, desarrollado por Moondream como un post-entrenamiento sobre el Parakeet TDT 0.6B v3 de NVIDIA. El modelo original está pensado para transcripción multilingüe con detección automática de idioma en 25 lenguas europeas, y esta versión lo empaqueta en el layout de la librería onnx-asr para su despliegue sin dependencias del ecosistema NeMo.
 
-El modelo resuelve el problema de la transcripción de voz a texto multilingüe: declara soporte para 25 idiomas europeos (entre ellos español, inglés, francés, alemán, italiano, portugués, neerlandés, polaco, ruso y ucraniano) y emplea una arquitectura NeMo Conformer con decodificación TDT (Token-and-Duration Transducer), que predice conjuntamente tokens y duraciones para acelerar la decodificación sin sacrificar calidad. El tamaño del repo es de 5,7 GB, pero cada variante individual ocupa entre 0,76 GB (int8) y 2,55 GB (float32).
+La arquitectura subyacente es un modelo NeMo Conformer con decodificación TDT (Token-and-Duration Transducer), con aproximadamente 0,6 mil millones de parámetros en el modelo base. Esta exportación ofrece el codificador en cuatro precisiones distintas (float32, float16, bfloat16 e int8) compartiendo los mismos pesos, lo que permite elegir entre precisión de referencia y eficiencia en CPU o GPU según el caso de uso.
 
-La relevancia de esta ficha es práctica: al estar en ONNX, el modelo se puede desplegar sin el stack pesado de NeMo, usando únicamente ONNX Runtime, lo que simplifica la integración en servicios de transcripción, subtitulado o asistentes de voz. Las tasas de error publicadas en FLEURS (en torno al 4,8-4,9 % en francés e inglés) se mantienen prácticamente idénticas entre las cuatro variantes, lo que hace de la int8 una opción atractiva para despliegues con recursos limitados.
+Su relevancia actual radica en que elimina la fricción de despliegue del modelo original: al estar en ONNX, se puede ejecutar con onnxruntime en entornos de producción heterogéneos (servidores sin GPU, contenedores ligeros, edge) manteniendo una calidad de transcripción prácticamente idéntica a la del modelo en NeMo. La variante int8 ocupa solo 0,76 GB y está recomendada para CPU, lo que la hace viable en hardware modesto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | NeMo Conformer con decodificacion TDT (Token-and-Duration Transducer) |
-| Parametros totales | aproximadamente 0,6 mil millones (hereda la configuracion de Parakeet TDT 0.6B v3) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo ASR, procesa audio por segmentos) |
+| Arquitectura | NeMo Conformer con decodificador TDT (Token-and-Duration Transducer) |
+| Parametros totales | aproximadamente 0,6 mil millones (modelo base Parakeet TDT 0.6B v3) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
 | Tipos de cuantizacion | float32, float16, bfloat16, int8 (bloques de 64 pesos simetricos) |
-| Idiomas soportados | 25: en, es, fr, de, bg, hr, cs, da, nl, et, fi, el, hu, it, lv, lt, mt, pl, pt, ro, sk, sl, sv, ru, uk |
-| Licencia | CC BY 4.0 |
-| Formato de pesos | ONNX (encoder-model.onnx, decoder_joint-model.onnx y variantes fp16, bf16, int8) |
+| Idiomas soportados | 25: búlgaro, croata, checo, danés, neerlandés, inglés, estonio, finés, francés, alemán, griego, húngaro, italiano, letón, lituano, maltés, polaco, portugués, rumano, ruso, eslovaco, esloveno, español, sueco, ucraniano |
+| Licencia | CC-BY-4.0 |
+| Formato de pesos | ONNX (encoder-model.onnx, decoder_joint-model.onnx y variantes por precisión) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transducer TDT sobre un encoder Conformer, la misma arquitectura que Parakeet TDT 0.6B v3 de NVIDIA. El encoder procesa el audio en bruto y el decoder-joint combina la representacion acustica con los tokens ya emitidos para predecir, en cada paso, tanto el siguiente token como su duracion. Esta prediccion conjunta de duracion es la innovacion clave del TDT: permite avanzar varios frames de audio por paso de decodificacion, reduciendo el coste computacional frente a un transducer clasico.
+El modelo base es un post-entrenamiento de Moondream sobre el Parakeet TDT 0.6B v3 de NVIDIA. La arquitectura es un Conformer (transformer convolucional) que actúa como codificador acústico, acoplado a un decodificador de tipo TDT que predice simultáneamente tokens y duraciones, lo que permite emitir varios tokens por paso y reducir la latencia frente a transductores clásicos. El modelo incorpora detección automática de idioma entre las 25 lenguas declaradas.
 
-El entrenamiento original corresponde a Parakeet TDT 0.6B v3 de NVIDIA; Moondream realizo un post-entrenamiento sobre esa base para producir Parakeet Ultra. La model card de esta conversion no detalla el volumen de tokens de audio, la composicion del dataset ni si hubo etapas de RLHF o DPO, por lo que esos datos deben considerarse no disponibles en esta ficha. La conversion a ONNX se hizo reconstruyendo el modelo en NeMo a partir de la configuracion de Parakeet TDT 0.6B v3 y cargando los pesos de Parakeet Ultra, verificando la paridad del encoder exportado contra NeMo en las primeras 20 locuciones de FLEURS frances. La cabeza de deteccion de actividad de voz (VAD) que usa el runtime propio de Moondream no se exporto.
+Esta exportación concreta no reentrena el modelo: reconstruye la arquitectura NeMo a partir de la configuración de Parakeet TDT 0.6B v3, carga los pesos de Parakeet Ultra y genera los ficheros ONNX, verificando que el codificador exportado en float32 produce los mismos tokens que el modelo original en NeMo en al menos el 99,5 % de las emisiones, con diferencias de WER inferiores a 0,1 puntos. Las variantes float16, bfloat16 e int8 se validan contra el float32 en el mismo dispositivo, aceptándose solo si la pérdida no supera 0,2 puntos de WER. No se detalla en la información disponible el volumen de datos de entrenamiento ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Transcripcion de voz a texto (ASR) en 25 idiomas europeos declarados.
-- Decodificacion TDT con prediccion conjunta de token y duracion, lo que acelera la inferencia.
-- Ejecucion en CPU y GPU mediante ONNX Runtime, sin dependencia del stack NeMo en tiempo de inferencia.
-- Cuatro variantes de precision que permiten ajustar el equilibrio entre tamano, velocidad y fidelidad numerica.
-- Integracion directa con la libreria onnx-asr, que carga el directorio como un modelo NeMo TDT.
-- No incluye cabeza de VAD: la segmentacion de grabaciones largas debe hacerse externamente.
-- No se documentan capacidades de diarizacion, traduccion, tool calling ni agentes; es un modelo puramente ASR.
+- Transcripción de voz a texto en 25 lenguas europeas con detección automática de idioma.
+- Decodificación TDT con emisión de múltiples tokens por paso, orientada a baja latencia.
+- Ejecución en CPU y GPU según la variante de precisión elegida.
+- Variante int8 optimizada para CPU con pérdida de precisión mínima (máximo 0,06 puntos de WER frente a float32 en los idiomas medidos).
+- Variante float16/bfloat16 orientada a GPU con tamaño reducido (1,31 GB).
+- No se documentan capacidades de tool calling, agentes, visión ni audio más allá de la transcripción.
 
 ## Casos de uso
 
-- Subtitulado automatico de video: el modelo transcribe audio en 25 idiomas y la variante int8 (0,76 GB) permite ejecutarlo en servidores modestos o incluso en equipos de desarrollo, generando subtitulos con tasas de error en torno al 4,8-4,9 % en FLEURS para frances e ingles.
-- Atencion al cliente con voz: integrado en un pipeline de telefonia o VoIP, transcribe las llamadas en tiempo real o en diferido para alimentar analitica, busqueda de transcripciones y control de calidad, usando ONNX Runtime en CPU para reducir costes de infraestructura.
-- Dictado y notas de reunion: la variante float16 o bfloat16 (1,31 GB) en GPU ofrece latencia baja para transcripcion casi en vivo de reuniones multilingues en empresas con equipos en distintos paises europeos.
-- Indexacion y busqueda de archivos de audio: transcripcion por lotes de grandes volumenes de grabaciones (podcasts, entrevistas, archivos historicos) con la variante int8 para maximizar el throughput por nodo y habilitar busqueda semantica sobre el texto resultante.
-- Accesibilidad: generacion de subtitulos para personas con discapacidad auditiva en aplicaciones de streaming o plataformas educativas, aprovechando el soporte de 25 idiomas para cubrir audiencias europeas sin multiples modelos.
-- Asistentes de voz embebidos: al estar en ONNX y con una variante de 0,76 GB, puede desplegarse en dispositivos con recursos acotados o en el borde de la red para comandos de voz y transcripcion local, evitando enviar audio a la nube.
-- Analisis de conformidad y auditoria: transcripcion de grabaciones de centros de llamadas para detectar menciones de riesgo, verificar guiones y auditar cumplimiento normativo, con la variante float32 como referencia de maxima fidelidad.
+- Subtitulado automático multilingüe: el modelo transcribe y detecta el idioma por sí mismo, lo que permite procesar vídeos con pistas en varias lenguas europeas sin seleccionar el idioma manualmente antes de la inferencia.
+- Transcripción de reuniones y actas: con la variante int8 (0,76 GB) se puede desplegar en servidores CPU sin GPU dedicada, procesando audio de forma codiciosa emisión a emisión con onnx-asr.
+- Atención al cliente con análisis de llamadas: la variante float16 en GPU permite transcribir grabaciones telefónicas en inglés, español, francés, portugués y alemán con WER en torno al 3-5 %, suficiente para análisis de sentimiento y control de calidad posterior.
+- Archivado y búsqueda de contenido audiovisual: la transcripción multilingüe facilita indexar bibliotecas de audio en 25 lenguas y habilitar búsqueda por texto sobre el contenido hablado.
+- Despliegue en edge o contenedores ligeros: al estar en ONNX y ejecutarse con onnxruntime, se integra en pipelines sin NeMo ni PyTorch, reduciendo el tamaño de la imagen de despliegue.
+- Investigación en ASR comparativo: las cuatro precisiones con los mismos pesos permiten medir el impacto de la cuantización en WER sobre FLEURS de forma controlada, con las tasas publicadas por el autor.
+- Accesibilidad: generación de transcripciones para personas con discapacidad auditiva en entornos con hardware modesto gracias a la variante int8 en CPU.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card, medidos sobre los conjuntos de test de FLEURS sin los tokens desconocidos que el vocabulario no puede escribir. Las tasas son de word error rate (WER).
+Resultados de WER medidos sobre FLEURS por el autor de la model card. Cada variante se compara con su referencia en el mismo dispositivo (float32 contra NeMo en CPU; el resto contra float32 en GPU o CPU según corresponda).
 
-| Variante | Dispositivo | Tamano | fr_fr | en_us |
+| Idioma | float32 | float16 | bfloat16 | int8 |
 |---|---|---|---|---|
-| float32 | CPU, GPU | 2,55 GB | 4,84 % | 4,88 % |
-| float16 | GPU | 1,31 GB | 4,85 % | 4,89 % |
-| bfloat16 | GPU | 1,31 GB | 4,83 % | 4,89 % |
-| int8 | CPU, GPU | 0,76 GB | 4,86 % | 4,94 % |
+| Inglés (en_us) | 4,88 % | 4,89 % | 4,90 % | 4,94 % |
+| Español latinoamericano (es_419) | 3,03 % | 3,01 % | 3,07 % | 3,03 % |
+| Francés (fr_fr) | 4,84 % | 4,85 % | 4,80 % | 4,86 % |
+| Portugués brasileño (pt_br) | 4,09 % | 4,09 % | 4,10 % | 4,09 % |
+| Alemán (de_de) | 4,52 % | 4,48 % | 4,46 % | 4,46 % |
 
-Las comparaciones de paridad publicadas indican diferencias de +0,00 puntos frente al modelo original en NeMo para float32 en CPU, +0,01 puntos para float16 en GPU frente a float32, -0,01 puntos en fr_fr y +0,01 en en_us para bfloat16, y +0,02 puntos en fr_fr y +0,06 en en_us para int8 en CPU frente a float32. El resto de los 25 idiomas declarados no tiene medicion publicada en esta conversion.
+Tamaños por variante: float32 2,55 GB; float16 1,31 GB; bfloat16 1,31 GB; int8 0,76 GB. Las mediciones se realizaron con onnx-asr 0.12.0 y onnxruntime 1.31.0 (CPU) u onnxruntime-gpu 1.31.0 (GPU), decodificación codiciosa emisión a emisión, sobre 647 emisiones en inglés, 908 en español latinoamericano, 676 en francés, 919 en portugués brasileño y 862 en alemán. Los 20 idiomas restantes no se midieron en esta model card: son los que declara NVIDIA para Parakeet TDT 0.6B v3.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,5 GB para la variante float32, 1,3 GB para float16 y bfloat16, y 0,8 GB para int8 (el tamano de los ficheros es una cota superior razonable de la memoria necesaria).
-- GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM; las variantes float16 y bfloat16 estan pensadas para GPU, mientras que float32 e int8 se han validado tanto en CPU como en GPU.
-- Cabe en GPU de consumo: si, practicamente cualquier GPU de consumo actual (por ejemplo RTX 3060, RTX 4060, RTX 4090) puede ejecutar las variantes float16, bfloat16 e int8; la variante float32 tambien cabe en GPUs con 4 GB o mas.
-- Opciones de despliegue: onnx-asr 0.12.0 con onnxruntime 1.31.0 en CPU y onnxruntime-gpu 1.31.0 en GPU. No se documentan otras opciones de despliegue en la informacion disponible.
-- Latencia y throughput: no se publican cifras de latencia ni de throughput en la model card; solo se indica que las tasas se midieron con las versiones de onnx-asr y onnxruntime citadas.
+- VRAM estimada: float32 requiere aproximadamente 2,55 GB de pesos más overhead de activaciones; float16/bfloat16 unos 1,31 GB; int8 unos 0,76 GB.
+- GPU recomendadas: cualquier GPU con soporte de onnxruntime-gpu; las variantes float16 y bfloat16 están pensadas para GPU, mientras que float32 e int8 funcionan también en CPU.
+- Cabe en GPU de consumo: sí, la variante int8 (0,76 GB) y float16 (1,31 GB) caben holgadamente en tarjetas de consumo como RTX 3060, RTX 4060 o superiores; float32 (2,55 GB) también cabe en GPUs con 4 GB o más.
+- Opciones de despliegue: onnx-asr con onnxruntime (CPU) u onnxruntime-gpu (GPU). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo ASR de este tipo.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
+| Modelo | Parametros | Idiomas | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Parakeet Ultra ONNX (esta ficha) | ~0,6 B | no disponible | 25 | CC BY 4.0 | ONNX (fp32, fp16, bf16, int8) |
-| NVIDIA Parakeet TDT 0.6B v3 | ~0,6 B | no disponible | 25 (segun la model card de esta conversion) | no disponible en la informacion proporcionada | NeMo |
-| Moondream Parakeet Ultra | ~0,6 B | no disponible | no disponible en la informacion proporcionada | CC BY 4.0 | pesos originales de Moondream |
+| Parakeet Ultra ONNX (este) | ~0,6 B | 25 | ONNX | CC-BY-4.0 | Exportación con 4 precisiones, sin dependencia de NeMo |
+| Parakeet TDT 0.6B v3 (NVIDIA) | ~0,6 B | 25 | NeMo | no disponible en la información | Modelo base original; requiere ecosistema NeMo |
+| Whisper large-v3 | no disponible en la información | multilingüe amplio | safetensors, GGUF, etc. | no disponible en la información | Referencia habitual en ASR multilingüe; comparación de WER no disponible en la información |
 
-La comparativa se limita a los modelos citados en la documentacion de esta conversion; no se dispone de datos de benchmarks de terceros para contrastar WER ni latencia frente a otros sistemas ASR.
+No se dispone en la información proporcionada de datos de benchmarks de modelos alternativos para establecer una comparación cuantitativa directa.
 
 ## Limitaciones y advertencias
 
-- Solo se midieron frances e ingles sobre FLEURS; los otros 23 idiomas declarados provienen de Parakeet TDT 0.6B v3 y no se han medido en esta conversion.
-- La cabeza de deteccion de actividad de voz de Moondream no se exporto, por lo que las grabaciones largas deben segmentarse externamente antes de transcribir.
-- El WER en torno al 4,8-4,9 % en FLEURS implica que la transcripcion no es perfecta; en dominios con jerga, ruido o acentos marcados el error puede ser mayor.
-- La variante int8 en CPU muestra un ligero empeoramiento en ingles (+0,06 puntos frente a float32), aceptable pero perceptible en comparaciones finas.
-- En CPU, ONNX Runtime vuelve a calcular en float32 la mayor parte de las variantes float16 y bfloat16, por lo que esas variantes solo aportan ventaja real en GPU.
-- La licencia CC BY 4.0 permite uso comercial con atribucion; es necesario citar a Moondream, NVIDIA y el autor de la conversion segun la tabla de atribucion de la model card.
-- No se documentan sesgos especificos, riesgos de alucinacion ni limitaciones de contexto mas alla de las anteriores; el modelo es puramente ASR y no genera texto libre.
-- El repo no registra descargas ni likes en el momento de la consulta, por lo que no hay evidencia de uso en produccion por parte de la comunidad.
+- La cabeza de detección de actividad de voz (VAD) del runtime propio de Moondream no se ha exportado, por lo que el recorte de grabaciones largas en las pausas debe gestionarse externamente.
+- Solo se han medido cinco idiomas (inglés, español latinoamericano, francés, portugués brasileño y alemán); el rendimiento en los otros 20 es el declarado por NVIDIA para el modelo base, no verificado en esta exportación.
+- El vocabulario de Parakeet TDT no incluye piezas para algunos caracteres que aparecen en FLEURS (por ejemplo « o ’), que el modelo emite como `<unk>`; esto puede afectar a transcripciones con puntuación tipográfica.
+- Riesgo de alucinación y errores en audio con ruido, acentos no representados en el entrenamiento o solapamiento de hablantes; no se documentan mitigaciones específicas.
+- No se documentan sesgos concretos ni evaluación de robustez más allá de las tasas de WER sobre FLEURS.
+- La licencia CC-BY-4.0 permite uso comercial con atribución; conviene verificar las condiciones del modelo base de Moondream y de NVIDIA antes de un despliegue en producción.
+- El repositorio ocupa 8,2 GB porque incluye las cuatro variantes; en producción basta con descargar los ficheros de la precisión elegida.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/maaaaat/parakeet-ultra-onnx)
-- [Modelo base: moondream/parakeet-ultra](https://huggingface.co/moondream/parakeet-ultra/tree/73175eb7aeb0d82f1e2a6b53b3aabc10a90bcd0b)
-- [Modelo origen: nvidia/parakeet-tdt-0.6b-v3](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/tree/541d1f99c6b0c3cd0b11a95167540bb8edefd82b)
-- [Dataset FLEURS](https://huggingface.co/datasets/google/fleurs/tree/70bb2e84b976b7e960aa89f1c648e09c59f894dd)
-- [Codigo de la conversion: mostt-model-builder](https://github.com/madmatah/mostt-model-builder/tree/202eb642e06565a0fa9df2c767266bc477e612e0)
-- [Licencia CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+- Hugging Face: https://huggingface.co/maaaaat/parakeet-ultra-onnx
+- Modelo base: https://huggingface.co/moondream/parakeet-ultra
+- Dataset FLEURS: https://huggingface.co/datasets/google/fleurs/tree/70bb2e84b976b7e960aa89f1c648e09c59f894dd
+- Librería onnx-asr: no disponible en la información proporcionada
+- Paper o blog de Parakeet TDT 0.6B v3: no disponible en la información proporcionada

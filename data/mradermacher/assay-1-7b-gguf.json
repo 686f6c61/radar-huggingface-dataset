@@ -51,31 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Google Dịch – Phiên dịch viên cá nhân ngay ... - Google Translate",
-      "url": "https://translate.google.com/intl/vi/about/",
-      "snippet": "Tìm hiểu cách sử dụng Google Dịch để dịch văn bản, lời nói, hình ảnh, tài liệu, trang web, v.v."
-    },
-    {
-      "title": "Google Översätt – din personliga tolk i telefonen eller på datorn",
-      "url": "https://translate.google.com/intl/sv/about/",
-      "snippet": "Läs mer om hur du översätter text, tal, bilder, dokument, webbplatser och mycket annat med Google Översätt."
-    },
-    {
-      "title": "Google Translate",
-      "url": "https://translate.google.com/;anything",
-      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
-    },
-    {
-      "title": "Google Çeviri: Telefon veya Bilgisayarınızdaki Özel Çevirmeniniz",
-      "url": "https://translate.google.com/intl/tr/about/",
-      "snippet": "Google Çeviri ile metin, konuşma, resim, doküman, web sitesi ve diğer içerikleri nasıl çevireceğinizi öğrenin."
-    },
-    {
-      "title": "Google Oversetter – en personlig tolk på ... - Google Translate",
-      "url": "https://translate.google.com/intl/no/about/",
-      "snippet": "Finn ut hvordan du oversetter tekst, tale, bilder, dokumenter, nettsteder og annet med Google Oversetter."
-    }
-  ]
+  "sources": []
 }

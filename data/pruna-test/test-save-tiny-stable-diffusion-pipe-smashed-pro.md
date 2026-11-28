@@ -2,96 +2,80 @@
 
 ## Resumen
 
-`pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro` es un artefacto de prueba publicado por el usuario `pruna-test` en Hugging Face, generado con la librería Pruna (y su variante comercial `pruna_pro`) de Pruna AI. Se trata de un pipeline de difusión texto-a-imagen empaquetado con la librería `diffusers` y guardado en formato `safetensors`, con un total de 18.464 parámetros reales según los metadatos del repositorio. El tamaño del repo es de 0,0 GB, lo que confirma que no es un modelo utilizable para generación de imágenes real, sino un caso de prueba del proceso de guardado y carga de la herramienta.
+`pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro` es un artefacto de prueba publicado por la organizacion `pruna-test` en Hugging Face. Se trata de un pipeline de difusion texto-a-imagen (`StableDiffusionPipeline` de la libreria `diffusers`) que ha sido procesado con la herramienta de optimizacion Pruna (variante `pruna_pro`). El nombre del repositorio indica explicitamente que es un modelo "tiny" de test, es decir, una version reducida y de validacion utilizada para comprobar el flujo de guardado y carga de modelos comprimidos con Pruna, no un modelo destinado a produccion.
 
-El modelo no resuelve ningún problema de generación de imágenes en producción: su nombre (`test-save-tiny-...`) y su autor (`pruna-test`) indican que forma parte de la batería de tests de integración de Pruna, destinada a verificar que el pipeline de compresión, guardado y recarga funciona correctamente. La configuración de compresión almacenada en `smash_config.json` tiene todas las técnicas desactivadas (`awq`, `gptq`, `fp8`, `torch_compile`, etc. a `false`), con `device: "cpu"` y `batch_size: 1`, lo que refuerza su carácter de artefacto de prueba sin optimizaciones aplicadas.
+El modelo resuelve el problema de empaquetar y distribuir un pipeline de difusion con una configuracion de compresion ("smash config") asociada, de modo que el consumidor pueda cargarlo con todas las optimizaciones aplicadas mediante `PrunaProModel.from_pretrained`. La relevancia es, por tanto, instrumental: sirve como referencia de como Pruna serializa pipelines de difusion y como se debe cargar el artefacto resultante. No es un modelo generativo utilizable para tareas reales de sintesis de imagen.
 
-Su relevancia es, por tanto, documental y de trazabilidad: sirve como referencia para desarrolladores que quieran entender el formato de salida de Pruna, el esquema de `smash_config.json` y el flujo de carga mediante `PrunaProModel.from_pretrained`. No debe confundirse con un modelo de difusión funcional ni emplearse para tareas reales de síntesis de imágenes.
+El repositorio es extremadamente pequeno (0.0 GB) y el recuento real de parametros en safetensors es de 18.464, lo que confirma que se trata de un stub o pipeline de juguete. La configuracion de compresion almacenada en `smash_config.json` tiene todos los metodos de optimizacion desactivados (`false`), con `device: "cpu"`, `batch_size: 1` y `load_fns: ["diffusers"]`.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Pipeline de difusión texto-a-imagen (`diffusers:StableDiffusionPipeline`), artefacto de prueba |
-| Parámetros totales | 18.464 (según safetensors) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica a pipeline de difusión) |
-| Tipos de cuantización | no disponible (todas las técnicas de compresión desactivadas en `smash_config.json`) |
+| Arquitectura | Pipeline de difusion texto-a-imagen (`StableDiffusionPipeline`, libreria `diffusers`) |
+| Parametros totales | 18.464 (segun safetensors) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (todos los metodos de compresion de `smash_config.json` estan a `false`) |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
-| Librería | diffusers |
-| Pipeline | text-to-image |
-| Tamaño del repo | 0,0 GB |
-| Descargas | 814 |
-| Likes | 1 |
-| Fecha de creación | 2025-10-02 |
-| Última actualización | 2026-11-24 |
+| Formato de pesos | safetensors (libreria `diffusers`) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto se declara como `StableDiffusionPipeline` de la librería `diffusers`, es decir, la clase genérica que encapsula un pipeline de difusión texto-a-imagen (típicamente un UNet, un VAE y un codificador de texto). Sin embargo, con 18.464 parámetros totales y un tamaño de repo de 0,0 GB, no puede contener los pesos de un pipeline de difusión funcional: se trata de un modelo "tiny" de prueba, probablemente con capas de dimensión mínima, generado para validar el ciclo de guardado y recarga de Pruna.
+El artefacto es un pipeline de difusion de tipo `StableDiffusionPipeline` serializado mediante la libreria `diffusers`. No se dispone de informacion sobre el modelo base subyacente, el numero de pasos de difusion, el scheduler, el text encoder ni el VAE utilizados, ya que la model card no los detalla y el tamano del repositorio (0.0 GB) y el recuento de parametros (18.464) indican que se trata de una version minima de prueba.
 
-No se dispone de información sobre datos de entrenamiento, número de tokens, composición del dataset ni procesos de RLHF/DPO, y en este caso es esperable que no exista entrenamiento real. La configuración de compresión (`smash_config.json`) muestra todas las técnicas de optimización de Pruna desactivadas, incluyendo cuantización (`awq`, `gptq`, `hqq`, `fp8`, `fp4`, `quanto`, `torchao`), caching (`deepcache`, `fastercache`, `pab`), atención eficiente (`flash_attn3`, `sage_attn`, `ring_attn`) y destilación (`text_to_image_distillation_*`). El único `load_fns` registrado es `diffusers`, lo que indica que la carga se delega a la librería estándar.
+No se ha publicado informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni procesos de RLHF/DPO o fine-tuning. La unica informacion tecnica relevante es la configuracion de compresion almacenada en `smash_config.json`, que describe los metodos de optimizacion de Pruna aplicables (AWQ, GPTQ, HQQ, FP8, torch.compile, distillation, etc.) y que en este caso estan todos desactivados. El campo `load_fns: ["diffusers"]` indica que la carga se delega en `diffusers`.
 
 ## Capacidades
 
-- Generación de imágenes texto-a-imagen: nominalmente el pipeline declara la tarea `text-to-image`, pero el tamaño ínfimo del artefacto impide generar imágenes con calidad o coherencia real.
-- Carga mediante `pruna_pro`: el modelo está pensado para cargarse con `PrunaProModel.from_pretrained` o con `diffusers`, no para inferencia de producción.
-- Validación de pipelines de compresión: sirve para comprobar que el formato de guardado de Pruna (incluido `smash_config.json`) se serializa y recupera correctamente.
-- No dispone de tool calling, function calling, capacidades de agente, razonamiento multi-paso ni modo thinking.
-- No se documentan capacidades multilingües.
-- No se documentan capacidades de visión, audio ni otras modalidades distintas de la generación de imagen.
+- Generacion de imagenes a partir de texto (pipeline texto-a-imagen), segun el campo `pipeline: text-to-image` del repositorio.
+- Carga mediante `PrunaProModel.from_pretrained` para aplicar la configuracion de compresion almacenada.
+- Carga alternativa mediante la libreria `diffusers` (senalada en la model card como posible, aunque sin garantia de aplicar todas las optimizaciones).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags).
+- No se dispone de informacion sobre soporte de tool calling, agentes, razonamiento multi-paso, capacidades multilingues, vision, audio ni modo "thinking". Al ser un pipeline de difusion, estas capacidades no aplican.
 
 ## Casos de uso
 
-- Test de integración de Pruna: usar el artefacto en la suite de tests del repositorio `PrunaAI/pruna` para verificar que `save` y `load` preservan la estructura del pipeline y el `smash_config.json`. Es su propósito original y el único realista.
-- Validación de pipelines CI/CD de Hugging Face: emplearlo como fixture ligero (0,0 GB) para probar flujos de descarga, cacheo y carga de modelos `diffusers` sin consumir ancho de banda ni VRAM.
-- Desarrollo de herramientas de inspección de `smash_config.json`: sirve como ejemplo canónico del esquema de configuración de compresión de Pruna, con todas las claves y valores por defecto documentados.
-- Pruebas de compatibilidad de la API `PrunaProModel.from_pretrained`: verificar que la firma y el flujo de carga funcionan en distintas versiones de `pruna_pro` y `diffusers`.
-- Docencia y ejemplos de model cards: útil como plantilla para explicar la estructura de una model card generada automáticamente por Pruna.
-- Pruebas de regresión de serialización en `safetensors`: comprobar que un pipeline de 18.464 parámetros se guarda y recarga sin pérdida de metadatos.
+- Validacion del flujo de guardado y carga de Pruna: el artefacto sirve para comprobar que `PrunaProModel.from_pretrained` reconstruye correctamente un pipeline de difusion serializado con una `smash_config` dada. Es su proposito principal segun el nombre del repositorio.
+- Pruebas de integracion en CI de Pruna: permite verificar de forma rapida y con bajo coste computacional que los cambios en la libreria no rompen la serializacion de pipelines `diffusers`.
+- Referencia de formato de `smash_config.json`: util para desarrolladores que necesiten entender que campos incluye la configuracion de compresion de Pruna y como se estructuran los flags de cada metodo.
+- Pruebas de compatibilidad con endpoints: al estar etiquetado como `endpoints_compatible`, puede emplearse para validar el despliegue de pipelines de difusion en infraestructura de inferencia gestionada.
+- Desarrollo de tests unitarios de `diffusers`: al ser un pipeline minimo (18.464 parametros), se puede usar como fixture en suites de prueba que no requieran generacion de imagenes de calidad.
+- Demostracion del ecosistema Pruna: sirve como ejemplo reproducible en documentacion o talleres sobre como comprimir y publicar modelos con Pruna.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artefacto, por su tamaño (18.464 parámetros) y su carácter de prueba, no es susceptible de evaluación en benchmarks estándar de generación de imágenes como FID, CLIP score o ImageNet.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB; el artefacto completo ocupa 0,0 GB y la configuración declara `device: "cpu"`.
-- GPU recomendadas: ninguna específica; puede ejecutarse en CPU. Cualquier GPU consumer (GTX 1050, RTX 3050, RTX 4090) es sobradamente suficiente.
-- Cabe en cualquier GPU consumer y en entornos sin GPU.
-- Opciones de despliegue: `diffusers` (carga estándar) y `pruna_pro` (`PrunaProModel.from_pretrained`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a pipelines de difusión.
-- Latencia y throughput: no disponibles; no se han publicado mediciones y, dado el tamaño, no serían representativas de ningún modelo de producción.
+- VRAM estimada para inferencia: no disponible. El recuento de parametros (18.464) y el tamano del repositorio (0.0 GB) sugieren un consumo minimo, pero no se puede estimar con rigor sin conocer el modelo base.
+- GPU recomendadas: no disponible. La configuracion de compresion indica `device: "cpu"`, por lo que el artefacto esta preparado para ejecutarse en CPU.
+- Compatibilidad con GPU de consumo: no disponible. Por el tamano del artefacto, es probable que quepa en cualquier GPU de consumo e incluso en CPU, pero no se ha publicado confirmacion.
+- Opciones de despliegue: `pruna_pro` (carga recomendada por el autor), `diffusers` (carga alternativa), y potencialmente infraestructura compatible con endpoints segun el tag `endpoints_compatible`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No existen modelos comparables en la misma categoría (artefactos de prueba de 18.464 parámetros generados por frameworks de compresión) con datos públicos de rendimiento. Cualquier comparación con pipelines de difusión reales como Stable Diffusion 1.5, SDXL o Flux.1 sería engañosa por diferencias de órdenes de magnitud en parámetros y propósito.
-
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro | 18.464 | no aplica | apache-2.0 | Hugging Face |
-| Stable Diffusion 1.5 | ~860 M (UNet) | 77 tokens (CLIP) | CreativeML OpenRAIL-M | Hugging Face |
-| SDXL | ~2,6 B (UNet) | 77 tokens (CLIP) | CreativeML OpenRAIL++-M | Hugging Face |
-| Flux.1 [dev] | ~12 B | 512 tokens (T5) | no comercial | Hugging Face |
+No disponible. No se dispone de informacion sobre modelos comparables de la misma categoria (pipelines de difusion de prueba o artefactos de validacion de Pruna) con la que establecer una comparacion rigurosa.
 
 ## Limitaciones y advertencias
 
-- No es un modelo funcional: con 18.464 parámetros no puede generar imágenes coherentes; su uso en producción produciría resultados sin sentido.
-- Artefacto de prueba: el nombre (`test-save-tiny-...`) y el autor (`pruna-test`) indican que está destinado exclusivamente a tests internos de Pruna.
-- Sin optimizaciones aplicadas: todas las técnicas de `smash_config.json` están a `false`, por lo que no representa el rendimiento de un modelo "smashed" real de Pruna.
-- Configuración en CPU: `device: "cpu"` y `batch_size: 1` en la configuración guardada, no pensada para inferencia acelerada.
-- Riesgo de confusión: puede llevar a error a quien lo interprete como un modelo de difusión real por su etiqueta `text-to-image` y su pipeline `StableDiffusionPipeline`.
-- Licencia apache-2.0: permite uso comercial del artefacto, pero al no ser un modelo funcional, dicha permisibilidad es irrelevante en la práctica.
-- Sin información sobre sesgos, alucinación o limitaciones idiomáticas: no aplica al no existir entrenamiento ni datos documentados.
-- No usar como base para fine-tuning ni como referencia de calidad: cualquier métrica obtenida sería ruido.
+- Modelo de prueba: el nombre del repositorio incluye "test" y "tiny", y el recuento de parametros (18.464) confirma que no es un modelo generativo utilizable para producir imagenes de calidad.
+- Todos los metodos de compresion de `smash_config.json` estan desactivados, por lo que el artefacto no demuestra ninguna optimizacion real de Pruna.
+- No se ha publicado informacion sobre sesgos, riesgo de alucinacion, limitaciones de contexto o idioma, ya que no consta el modelo base.
+- La licencia es apache-2.0, lo que permite uso comercial del artefacto, pero al no conocerse el modelo base subyacente no se puede garantizar que la licencia cubra todos los componentes del pipeline.
+- La carga mediante `diffusers` puede no aplicar todas las optimizaciones; el autor recomienda usar `pruna_pro` para garantizar la configuracion completa.
+- No apto para produccion: no se debe desplegar como generador de imagenes en un sistema real.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/pruna-test/test-save-tiny-stable-diffusion-pipe-smashed-pro
-- Librería Pruna (GitHub): https://github.com/PrunaAI/pruna
-- Documentación de Pruna: https://docs.pruna.ai/en/stable/
+- Repositorio de Pruna en GitHub: https://github.com/PrunaAI/pruna
+- Documentacion de Pruna: https://docs.pruna.ai/en/stable/
 - Twitter de Pruna AI: https://twitter.com/PrunaAI
-- LinkedIn de Pruna AI: https://www.linkedin.com/company/93832878/
+- GitHub de Pruna AI: https://github.com/PrunaAI
+- LinkedIn de Pruna AI: https://www.linkedin.com/company/93832878/admin/feed/posts/?feedType=following
 - Discord de Pruna AI: https://discord.gg/JFQmtFKCjd
 - Reddit de Pruna AI: https://www.reddit.com/r/PrunaAI/

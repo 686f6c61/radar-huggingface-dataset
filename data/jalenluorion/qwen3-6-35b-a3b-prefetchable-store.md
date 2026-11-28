@@ -2,112 +2,98 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-prefetchable-store es un reempaquetado del modelo Qwen/Qwen3.6-35B-A3B (Apache-2.0) realizado por el usuario jalenluorion, orientado a ejecutar un modelo de mezcla de expertos (MoE) de gran tamano en equipos con menos memoria que la que el modelo requiere en su totalidad, concretamente Macs con Apple Silicon e iPhones. La innovacion central es que los 10.240 expertos enrutados se almacenan en el SSD, un registro por experto, y se leen a una cache bloqueada a medida que las capas los necesitan, mientras el resto de los pesos permanece en memoria.
+Qwen3.6-35B-A3B-prefetchable-store es un reempaquetado del modelo Qwen/Qwen3.6-35B-A3B (Apache-2.0) realizado por el usuario jalenluorion, orientado a ejecutar un modelo de mezcla de expertos (MoE) de gran tamano en Macs e iPhones con menos memoria que la que requeriria el modelo completo. La innovacion central es que los 10.240 expertos enrutados residen en el SSD, un registro por experto, y se leen a una cache bloqueada a medida que las capas los necesitan; el resto de pesos permanece en memoria. El modelo es, por tanto, "prefetchable": routers entrenados identifican con dos capas de antelacion los expertos que necesitara una capa, de modo que las lecturas desde disco comienzan mientras se computan las capas intermedias.
 
-El modelo incorpora pequenos routers entrenados que predicen, con dos capas de antelacion, que expertos necesitara una capa determinada, de modo que las lecturas desde disco comienzan mientras se computan las capas intermedias. Esto convierte al modelo en "prefetchable": los expertos que usara una capa se conocen antes de que esta se ejecute, con tiempo suficiente para que el SSD los entregue. Los pesos liberados estan congelados y el router propio del modelo sigue tomando todas las decisiones.
+Los pesos liberados estan congelados y el router propio del modelo sigue tomando todas las decisiones de enrutamiento. El motor es `dmeng` (C++, repositorio github.com/jalenluorion/prefetchable-store), con dos modos (`exact` y `fast`) y tres perfiles (`mac`, `phone`, `phone-small`) que se seleccionan automaticamente segun el dispositivo. La descarga del perfil `mac` ocupa 21,31 GB (49 archivos), muy por debajo de los 68,9 GB del repositorio completo, porque los expertos no se cargan en memoria residente.
 
-El motor de inferencia es dmeng (C++), disponible en el repositorio github.com/jalenluorion/prefetchable-store, con dos modos de ejecucion (exact y fast) y tres perfiles (mac, phone y phone-small) que se seleccionan automaticamente segun el dispositivo. El repositorio ocupa 33,7 GB y las descargas por perfil oscilan entre 20,35 GB y 21,31 GB.
+Es relevante ahora porque demuestra una via practica para servir modelos MoE de decenas de miles de millones de parametros en hardware de consumo con memoria unificada limitada (Apple Silicon), incluyendo telefonos, a costa de depender del ancho de banda del SSD. Es un artefacto de inferencia y empaquetado, no un modelo nuevo entrenado desde cero: el conocimiento y las capacidades provienen del Qwen3.6-35B-A3B original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE); etiqueta qwen3_5_moe; transformer con expertos enrutados almacenados en SSD |
-| Parametros totales | no disponible (el nombre del modelo indica 35B; el repositorio no desglosa el total) |
-| Parametros activos | no disponible (el nombre indica A3B, es decir, aproximadamente 3B activos; sin confirmacion en la model card) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | 8-bit affine con grupos de 64 (resident_q8) y 4-bit affine con grupos de 64 calibrado (resident_q4); pesos bf16 disponibles en resident.safetensors |
-| Idiomas soportados | no disponible |
+| Arquitectura | Mezcla de expertos (MoE) tipo transformer; pesos del Qwen3.6-35B-A3B original, con 10.240 expertos enrutados almacenados en SSD y cacheables |
+| Parametros totales | no disponible (el modelo base se denomina 35B-A3B; el repositorio ocupa 68,9 GB) |
+| Parametros activos | no disponible (el nombre del modelo base sugiere ~3B activos; no confirmado en la informacion) |
+| Longitud de contexto | no disponible para el modelo base; el perfil `phone-small` reserva 16.384 posiciones de contexto |
+| Tipos de cuantizacion | Pesos residentes en memoria: 8-bit affine con grupos de 64 (`resident_q8`) en perfiles `mac` y `phone`; 4-bit affine con grupos de 64 calibrado (`resident_q4`) en `phone-small` |
+| Idiomas soportados | no disponible (la model card solo indica "Text only") |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (embeddings y resident.safetensors en bf16), binarios propios .dmres1 y .dmr1, manifiesto moved-store.json |
+| Formato de pesos | safetensors (incluye `resident.safetensors` en bf16 y `routers/linear_k2.safetensors`; el motor genera los archivos cuantizados en `.dmeng/` en la primera ejecucion) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen3.6-35B-A3B, una arquitectura de mezcla de expertos con 10.240 expertos enrutados repartidos entre sus capas. En este reempaquetado, los expertos se extraen del checkpoint original y se almacenan en disco como registros individuales; el resto de los pesos (embeddings, atencion, routers y demas componentes no expertos) se mantiene residente en memoria en formato de 8 bits o 4 bits segun el perfil. El router original del modelo sigue siendo el que selecciona los expertos (top-8 en los perfiles mac y phone).
+El modelo subyacente es un transformer con mezcla de expertos (etiqueta `qwen3_5_moe` / `mixture-of-experts`) del que este repositorio no entrena nuevos pesos: los pesos liberados estan congelados y el router original del modelo sigue eligiendo los expertos. Lo que se anade son pequenos routers entrenados que predicen, con dos capas de antelacion, que expertos necesitara una capa, permitiendo iniciar las lecturas desde SSD mientras se computan las capas intermedias. Los 10.240 expertos enrutados se almacenan como un registro por experto en disco y se cargan en una cache bloqueada cuyo tamano se dimensiona a partir de la memoria libre al arrancar.
 
-La innovacion tecnica anadida es un mecanismo de prediccion de enrutamiento: routers lineales entrenados (router.linear_k2.q8, con k=2 capas de anticipacion) nombran los expertos que una capa necesitara dos capas antes, permitiendo que sus lecturas desde SSD se solapen con el computo de las capas intermedias. La model card no detalla el volumen de tokens de entrenamiento del modelo base, la composicion del dataset ni si hubo RLHF o DPO; esos datos no estan disponibles en la informacion proporcionada. El motor admite dos modos: `exact`, en el que los tokens generados no dependen de la cache, los routers ni el timing porque se espera a cada experto seleccionado, y `fast`, en el que un experto seleccionado que no esta en memoria se espera si su peso de enrutamiento supera 0,1 o si su lectura ya esta en vuelo, y en caso contrario se omite sin sustituto ni renormalizacion.
+El motor `dmeng` implementa dos modos. En `exact`, los tokens generados no dependen de la cache, los routers ni el timing: el router del modelo elige 8 expertos por capa y el motor espera a todos. En `fast`, el router del modelo sigue eligiendo, pero un experto no residente se lee y se espera si su peso de enrutamiento supera 0,15 (0,10 en `phone-small`) o si su lectura ya esta en vuelo; en caso contrario se omite, sin sustituto ni renormalizacion. No hay limite al peso omitido por paso. Los perfiles reparten la carga entre CPU y GPU (por ejemplo, 0,65/0,65 de cuota para proyecciones y expertos del prompt en telefonos, 0,4/0,4 en `mac`) y usan 8 hilos lectores en los perfiles de telefono. En telefonos con 11 GB o mas, la memoria sobrante se aprovecha leyendo expertos desde la cache de archivos del sistema cuando la cache de la app no tiene espacio.
+
+No se dispone de informacion sobre el numero de tokens de entrenamiento, composicion del dataset ni si hubo RLHF o DPO, ni para el modelo base ni para los routers anadidos.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva con decodificacion greedy y muestreo (parametros `--temp` y `--n` en el motor).
-- Ejecucion de un modelo MoE de gran tamano en memoria reducida mediante carga bajo demanda de expertos desde SSD.
-- Prediccion de enrutamiento con dos capas de antelacion (routers lineales k=2) para solapar lecturas de disco con computo.
-- Dos modos de calidad/velocidad: `exact` (determinista respecto a la cache) y `fast` (con omision de expertos de bajo peso).
-- Tres perfiles de despliegue con seleccion automatica segun el dispositivo (mac, phone, phone-small).
-- Servidor compatible con la API de OpenAI mediante python/serve/dmserve.py, que funciona con OpenCode estandar.
-- Aplicacion para iPhone (apps/ios) que descarga el conjunto phone o phone-small de forma autonoma.
-- Capacidades especificas del modelo base (codigo, matematicas, tool calling, agentes, multilingue) no estan documentadas en la model card; no disponible.
+- Generacion de texto: el modelo es explicitamente "Text only" segun la model card; no se declara vision ni audio.
+- Razonamiento y codigo: la model card reporta calidad de coincidencia de eleccion top en posiciones de prosa (0,987) y de codigo (0,976) en el perfil `mac` con modo `fast` frente a `exact`, lo que indica que el modelo se evalua en ambos dominios.
+- Enrutamiento de expertos con prediccion anticipada: routers auxiliares nombran los expertos que una capa necesitara dos capas antes.
+- Dos modos de ejecucion con calidad medida: `exact` (determinista respecto a la cache) y `fast` (omite expertos de bajo peso no residentes).
+- Servidor compatible con OpenAI: `python/serve/dmserve.py` expone una API compatible que funciona con OpenCode estandar.
+- Interfaz de chat por linea de comandos (`--chat`) y app para iOS con descarga y verificacion de archivos.
+- Ajuste dinamico de cache: en `mac` la cache se reduce 1 GB por comprobacion bajo presion de memoria y vuelve a crecer.
+- Ahorro de memoria en telefonos de 11 GB o mas mediante uso de la cache de archivos del sistema.
 
 ## Casos de uso
 
-- Inferencia local en MacBook con 16 GB de memoria: el perfil `mac` mantiene los pesos no expertos en 8 bits y dimensiona la cache de expertos segun la memoria libre (techo = memoria fisica - 5,5 GB - otra memoria del proceso), permitiendo ejecutar un MoE de gran tamano sin GPU dedicada. Medido en un M4 base con 16 GB a 22,3-32,0 tokens/s segun cache y modo.
-- Despliegue en iPhone de 6 GB: el perfil `phone-small` usa pesos residentes en 4 bits calibrados y modo `fast`, con una cache de expertos de slab bloqueado de 0,6 a 8 GB; medido en un iPhone 15 Plus a 3,4 tokens/s (exact) y 4,1 tokens/s (fast) con 2,9 GB de memoria.
-- Servicio compatible con OpenAI en local: dmserve.py expone un servidor estilo OpenAI que funciona con OpenCode estandar, util para integrar el modelo en herramientas de desarrollo asistido sin depender de la nube.
-- Prototipado de agentes en dispositivo: la model card menciona turnos de agente y prompts largos entre las condiciones medidas en el repositorio de codigo, lo que permite probar flujos multi-turno en hardware de consumo.
-- Investigacion sobre offloading de expertos: el par motor + manifiesto (moved-store.json con tamanos y sha256 por fichero) sirve como banco de pruebas reproducible para estudiar el equilibrio entre cache de expertos, latencia y calidad.
-- Evaluacion comparativa de modos de inferencia: la comparacion like-for-like entre "on demand" (sin nombres anticipados ni run-ahead) y los modos exact/fast permite medir el beneficio real de la prediccion de enrutamiento en un mismo motor y cache.
-- Uso en entornos con restricciones de memoria y almacenamiento: al requerir solo 21,31 GB (mac/phone) o 20,35 GB (phone-small) de descarga y mantener los expertos en SSD, encaja en equipos sin VRAM dedicada.
+- Inferencia local de un MoE grande en Mac: un Mac con 16 GB o mas puede ejecutar el perfil `mac` (21,31 GB de descarga) con modo `exact` por defecto, manteniendo los expertos en SSD y el resto en memoria; util para desarrollo y pruebas sin GPU dedicada.
+- Despliegue en iPhone: la app de iOS descarga el conjunto `phone` o `phone-small` segun la memoria disponible al abrir (umbral de 5,0 GB) y verifica cada archivo; permite llevar un modelo de decenas de miles de millones de parametros en un telefono de la clase de 6 GB.
+- Servicio local compatible con OpenAI: `dmserve.py` levanta un servidor en el puerto indicado que puede integrarse con herramientas que esperan la API de OpenAI, como OpenCode, para asistentes de codigo en local.
+- Evaluacion de tecnicas de prefetching de expertos: investigadores pueden comparar los modos `exact` y `fast` y medir el impacto de omitir expertos de bajo peso en la calidad de generacion (prosa y codigo) sobre hardware Apple.
+- Prototipado de agentes de texto en dispositivo: el modo `fast` en iPhone se evaluo en 600 posiciones de texto de agente, con coincidencia de 591/600 frente al `exact` del telefono, lo que lo hace apto para flujos multi-paso de texto en movilidad.
+- Experimentacion con cuantizacion residency: el repositorio permite partir de `resident.safetensors` en bf16 y generar los archivos 8-bit o 4-bit en la primera ejecucion, util para estudiar el equilibrio entre memoria residente y cache de expertos.
+- Pruebas de robustez frente a memoria disponible: el perfil `mac` reduce y recupera la cache bajo presion, lo que sirve para validar comportamiento en entornos con otros procesos grandes compitiendo por memoria.
 
 ## Benchmarks y rendimiento
 
-La model card no incluye resultados de benchmarks academicos (MMLU, HumanEval, GSM8K, etc.). Si incluye mediciones de velocidad y memoria del motor, que se reproducen a continuacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente reporta medidas de coincidencia de calidad entre modos, que se recogen a continuacion:
 
-Rendimiento en MacBook Pro M4 base, 16 GB, SSD interno, enchufado, 8 hilos, decodificacion greedy, 400 tokens generados, rango sobre dos ejecuciones (tokens/s):
-
-| Cache de expertos | Texto | On demand | exact | fast | Memoria |
-|---|---|---|---|---|---|
-| 5 GB | prosa | 18,0-18,4 | 22,3-23,1 | 26,3-28,8 | 7,3 GB |
-| 5 GB | codigo | 16,0-16,1 | 18,8-18,9 | 22,6-23,2 | 7,8 GB |
-| 6,6 GB | prosa | 22,1-22,2 | 25,7-26,9 | 30,0-31,3 | 8,9 GB |
-| 6,6 GB | codigo | 19,3-19,5 | 22,1-22,2 | 27,5-27,8 | 9,4 GB |
-| 8 GB | prosa | no disponible | 27,7-29,2 | 31,3-32,0 | 10,3 GB |
-| 8 GB | codigo | no disponible | 22,3-23,7 | 26,8-29,9 | 10,8 GB |
-
-Rendimiento en iPhone (tokens/s):
-
-| Dispositivo | Memoria usada | exact | fast |
-|---|---|---|---|
-| iPhone 15 Plus (6 GB), medido en dispositivo, decodificacion en chat | 2,9 GB | 3,4 | 4,1 |
-| iPhone 17 Pro (12 GB), predicho | 8 GB | 10 a 11 | 11 a 13 |
-
-La fila del iPhone 17 Pro es una prediccion a partir de las mediciones del iPhone 15 Plus, no una medicion. La calidad del modo `fast` en Mac con pesos en memoria de 8 bits muestra una concordancia con `exact` en la primera eleccion de 0,96 en prosa y 0,98 en codigo, con caches de expertos de 3,3-5 GB.
+| Medida | Entorno | Resultado |
+|---|---|---|
+| Coincidencia de eleccion top `fast` vs `exact` (prosa) | Mac, cache de 6,6 GB | 0,987 |
+| Coincidencia de eleccion top `fast` vs `exact` (codigo) | Mac, cache de 6,6 GB | 0,976 |
+| Coincidencia `fast` vs `exact` del telefono | iPhone 15 Plus, 600 posiciones de texto de agente | 591/600 |
 
 ## Requisitos de hardware
 
-- Memoria en Mac: el perfil `mac` reserva 8-bit affine para los pesos residentes y dimensiona la cache de expertos como memoria fisica - 5,5 GB - otra memoria del proceso; medido con 7,3-10,8 GB de memoria total en un M4 de 16 GB.
-- Memoria en iPhone: perfil `phone` (iOS con al menos 5,0 GB disponibles al abrir) con cache de 0,6-8 GB; perfil `phone-small` (menos de 5,0 GB disponibles, clase 6 GB) con pesos en 4 bits y modo `fast` por defecto.
-- GPU dedicadas (A100, H100, RTX 4090): no disponible; la model card solo documenta Apple Silicon e iOS.
-- Cabe en GPU de consumo: no disponible; el diseno esta orientado a Macs e iPhones, no a CUDA.
-- Almacenamiento: descarga de 21,31 GB (mac, phone) o 20,35 GB (phone-small); repositorio total de 33,7 GB; se requiere SSD para el almacen de expertos.
-- Opciones de despliegue: motor dmeng (C++, compilado con cmake), servidor dmserve.py compatible con OpenAI, aplicacion iOS en apps/ios. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 22,3-32,0 tokens/s en M4 base de 16 GB segun cache y modo; 3,4-4,1 tokens/s en iPhone 15 Plus; 10-13 tokens/s predichos en iPhone 17 Pro.
+- VRAM/memoria: el perfil `mac` requiere descarga de 21,31 GB (49 archivos) y dimensiona la cache de expertos como memoria fisica - 5,5 GB - otra memoria del proceso. El perfil `phone` exige al menos 5,0 GB disponibles al abrir y dimensiona la cache como disponible - pesos en memoria - router - 0,3 GB - 0,9 GB de margen, con limite de 0,6 a 8 GB. El perfil `phone-small` apunta a una huella de app de 2,96 GB y reserva 1,42 GB de cache para el modelo, con descarga de 20,35 GB.
+- GPU recomendadas: no se listan GPU discretas; el diseno es para Apple Silicon (macOS e iOS) con memoria unificada. En Mac se recomienda cerrar otras aplicaciones grandes en maquinas de 16 GB antes de arrancar.
+- Cabe en GPU de consumo: no aplica en el sentido habitual; el objetivo son Macs e iPhones. No hay informacion sobre ejecucion en RTX 4090, A100 o H100.
+- Opciones de despliegue: motor `dmeng` (C++, compilado con CMake), servidor compatible con OpenAI `python/serve/dmserve.py`, app de iOS en `apps/ios`, y descarga mediante `python/fetch.py` o `hf download` del repositorio completo.
+- Almacenamiento: el modelo depende del SSD para los expertos; el repositorio completo ocupa 68,9 GB, aunque cada perfil descarga solo sus archivos (21,31 GB en `mac` y `phone`, 20,35 GB en `phone-small`).
+- Latencia y throughput: no disponibles. La model card no publica cifras de tokens por segundo ni latencias.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque de despliegue | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-prefetchable-store | 35B (A3B, segun nombre) | no disponible | Expertos en SSD con prefetch; Mac e iPhone | Apache-2.0 | Hugging Face (154 descargas) |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B (A3B, segun nombre) | no disponible | Pesos completos en memoria/VRAM | Apache-2.0 | Hugging Face (oficial) |
-| Alternativas de offloading MoE en Apple Silicon | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-La model card no proporciona comparaciones con otros modelos; los datos del modelo base proceden unicamente de su identificador y de la etiqueta base_model del repositorio.
+| Qwen3.6-35B-A3B-prefetchable-store | 35B-A3B (segun nombre del base); 10.240 expertos | no disponible (16.384 posiciones reservadas en `phone-small`) | Apache-2.0 | Hugging Face (68,9 GB), motor `dmeng`, app iOS | Reempaquetado para Apple Silicon con expertos en SSD |
+| Qwen/Qwen3.6-35B-A3B | 35B-A3B (segun nombre) | no disponible | Apache-2.0 | Hugging Face | Modelo base original; requiere memoria para todos los pesos |
+| Otros MoE de clase similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- El modo `fast` omite expertos seleccionados cuyo peso de enrutamiento es inferior a 0,1 y cuya lectura no esta en vuelo, sin sustituto ni renormalizacion; esto altera la salida respecto al modo `exact` (concordancia de 0,96 en prosa y 0,98 en codigo en las condiciones medidas).
-- El modo `exact` garantiza que los tokens generados no dependen de la cache, los routers ni el timing, pero requiere esperar cada experto seleccionado, lo que reduce el throughput.
-- El rendimiento depende criticamente del SSD: los expertos se leen de disco en cada capa, por lo que un almacenamiento lento degrada la latencia.
-- La prediccion del iPhone 17 Pro es una extrapolacion, no una medicion; no debe tomarse como dato de rendimiento verificado.
-- La model card no documenta sesgos, riesgo de alucinacion, limitaciones de contexto ni cobertura idiomatica del modelo base; no disponible.
-- La licencia Apache-2.0 permite uso comercial, pero el modelo base y los pesos derivados deben cumplir las condiciones de Qwen/Qwen3.6-35B-A3B; conviene revisar el fichero LICENSE incluido.
-- El despliegue esta limitado a Apple Silicon e iOS mediante el motor dmeng; no hay soporte documentado para CUDA, ROCm ni otras plataformas.
-- El repositorio tiene 0 likes y 154 descargas, y fue creado y actualizado en noviembre de 2026; se trata de un reempaquetado de terceros, no de un modelo oficial de Qwen.
-- El contenido de la model card es material de referencia del autor; no debe interpretarse como instrucciones de ejecucion.
+- Solo texto: la model card declara explicitamente "Text only"; no hay vision, audio ni otras modalidades.
+- Dependencia del SSD: el rendimiento y la viabilidad dependen del ancho de banda y la latencia del almacenamiento; no se publican cifras de throughput.
+- Modo `fast` no determinista respecto a la cache: omite expertos con peso de enrutamiento bajo sin sustituto ni renormalizacion, por lo que la salida puede diferir de `exact` (0,987 en prosa y 0,976 en codigo en Mac; 591/600 en iPhone 15 Plus).
+- Memoria: en Macs de 16 GB hay que cerrar otras aplicaciones grandes; la cache se dimensiona con la memoria libre al arrancar y se reduce bajo presion.
+- Idiomas: no se especifican los idiomas soportados; la informacion disponible no permite confirmar cobertura multilingue.
+- Sesgos y alucinacion: no hay informacion especifica en la model card; al ser un reempaquetado del Qwen3.6-35B-A3B, hereda los sesgos y riesgos de alucinacion del modelo base, no documentados aqui.
+- Licencia: Apache-2.0, lo que permite uso comercial segun los terminos de dicha licencia; conviene revisar el archivo LICENSE del repositorio.
+- Madurez: el repositorio tiene 1.324 descargas y 0 likes, creado el 2026-11-07 y actualizado el 2026-11-27; es un artefacto de un autor individual sobre un modelo base, sin pipeline declarado.
+- Perfiles y modos: el comportamiento depende del perfil elegido automaticamente segun el dispositivo; forzar `--profile` o `--mode` puede producir configuraciones no previstas por el autor.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/jalenluorion/Qwen3.6-35B-A3B-prefetchable-store
+- Hugging Face: https://huggingface.co/jalenluorion/Qwen3.6-35B-A3B-prefetchable-store
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Repositorio del motor (dmeng, C++): https://github.com/jalenluorion/prefetchable-store
-- Aplicacion iOS: https://github.com/jalenluorion/prefetchable-store/tree/main/apps/ios
-- Seccion de velocidad y memoria del repositorio: https://github.com/jalenluorion/prefetchable-store#speed-and-memory
+- Repositorio del motor: https://github.com/jalenluorion/prefetchable-store
+- App de iOS: https://github.com/jalenluorion/prefetchable-store/tree/main/apps/ios
+- Licencia: LICENSE en el repositorio de Hugging Face (Apache-2.0)
+- Papers, blogs y demos: no disponibles en la informacion proporcionada

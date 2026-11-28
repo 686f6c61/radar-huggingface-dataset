@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/QwQ-coder-32B-GGUF",
+  "slug": "mradermacher-qwq-coder-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/QwQ-coder-32B-GGUF",
+  "created_at": "2025-03-17T14:26:04.000Z",
+  "updated_at": "2026-11-28T00:31:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:YOYO-AI/QwQ-coder-32B",
+    "base_model:quantized:YOYO-AI/QwQ-coder-32B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 197,
+  "trending_score": 0,
+  "parameters": 32759831552,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223968819552,
+  "storage_human": "224.0 GB",
+  "context_length": 131072,
+  "base_model": "YOYO-AI/QwQ-coder-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "11mengzi/SHYV",
+  "slug": "11mengzi-shyv",
+  "author": "11mengzi",
+  "url": "https://huggingface.co/11mengzi/SHYV",
+  "created_at": "2026-11-28T03:20:09.000Z",
+  "updated_at": "2026-11-28T03:23:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "nano_anima",
+    "from-scratch",
+    "small-language-model",
+    "chatbot",
+    "companion",
+    "chinese",
+    "gqa",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 198565248,
+  "parameters_human": "198.6M",
+  "storage_bytes": 794282080,
+  "storage_human": "794 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

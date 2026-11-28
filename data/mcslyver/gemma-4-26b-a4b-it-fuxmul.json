@@ -5,7 +5,7 @@
   "author": "McSlyver",
   "url": "https://huggingface.co/McSlyver/gemma-4-26B-A4B-it-FuxMul",
   "created_at": "2026-11-24T19:42:06.000Z",
-  "updated_at": "2026-11-27T04:44:47.000Z",
+  "updated_at": "2026-11-27T11:02:17.000Z",
   "license": "apache-2.0-weights-agpl-3.0-engine",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,7 +14,8 @@
     "en"
   ],
   "tags": [
-    "7.5GiB",
+    "7.53GiB",
+    "fuxsmall",
     "2.5-bit",
     "gemma4",
     "gemma-4",
@@ -60,8 +61,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "McSlyver/gemma-4-26B-A4B-it-FuxMul-7.5GiB",
-  "renamed_at": "2026-11-27T05:23:01.255Z",
+  "renamed_to": "McSlyver/FuxSmall-gemma-4-26B-A4B-it-7.53GiB",
+  "renamed_at": "2026-11-28T04:38:22.849Z",
   "benchmarks": [],
   "sources": []
 }

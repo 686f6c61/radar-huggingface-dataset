@@ -45,8 +45,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "LoyalAI/woof-selector-4B-4bit-v2.1",
+  "renamed_at": "2026-11-28T02:59:52.604Z",
   "benchmarks": [],
   "sources": [
     {

@@ -2,91 +2,93 @@
 
 ## Resumen
 
-Standard 3.3B (DCLM-Edu) es un modelo de lenguaje base de 3.322,3 millones de parametros reportados (5.539,7 millones almacenados, incluyendo embeddings de valor), desarrollado por Kausp11. Se trata de un artefacto de investigacion cuyo proposito es servir como linea base de texto plano para medir el efecto del pretraining aumentado con busquedas: es el control del modelo `Kausp11/querylm-dclm-3.3b`, entrenado con la misma arquitectura y el mismo presupuesto de computo, pero sin bloques de busqueda insertados en las secuencias.
+Standard 3.3B (DCLM-Edu) es un modelo de lenguaje base de tipo decoder-only desarrollado por Kausp11 (Kaustubh Ponkshe) como parte del trabajo de investigación "Search From the Start: Search-Native Pretraining for Language Models". Se trata del modelo de control (baseline) del proyecto QueryLM: un modelo entrenado desde cero sobre texto plano de DCLM-Edu, sin bloques de búsqueda, con el mismo presupuesto de cómputo que su modelo gemelo `Kausp11/querylm-dclm-3.3b`, que sí se preentrena con bloques de búsqueda en línea. El objetivo es aislar y medir qué cambia cuando se introduce la búsqueda durante el preentrenamiento.
 
-La arquitectura sigue el estilo nanochat (decoder transformer de 32 capas, anchura 2.816, 22 cabezas, feed-forward de 11.264 y dimension de cabeza 128), con una ventana de contexto de 4.095 tokens. El entrenamiento se realizo desde cero sobre DCLM-Edu como texto plano, consumiendo 99.800 millones de tokens en 95.172 actualizaciones (2,35e21 FLOPs), exactamente el mismo numero de actualizaciones y FLOPs que su modelo emparejado con busqueda.
+La arquitectura es un decoder estilo nanochat (el framework de Andrej Karpathy): 32 capas, anchura 2.816, 22 cabezas de atención, dimensión de cabeza 128, feed-forward de 11.264 y una ventana de contexto de 4.095 tokens. El modelo reporta 3.322,3M de parámetros según el autor, aunque los pesos almacenados en safetensors suman 5.539,7M, debido a la inclusión de value embeddings en el checkpoint. El tokenizador es el de SmolLM2 ampliado con cuatro tokens de búsqueda (vocabulario de 49.156), aunque este modelo nunca los vio durante el entrenamiento.
 
-Su relevancia es metodologica: permite aislar la contribucion del pretraining con recuperacion de informacion frente a una linea base equivalente en computo. No esta pensado como producto, no tiene formato de chat ni entrenamiento de seguridad, y solo procesa texto web en ingles. La licencia Apache-2.0 facilita su reutilizacion en experimentos comparativos.
+Es relevante ahora porque acompaña a un paper sobre preentrenamiento con búsqueda nativa y porque publica tanto el modelo base como su versión SFT, permitiendo reproducir la comparación. No es un producto: es un artefacto de investigación sin formato de chat, solo en inglés y sin entrenamiento de seguridad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Decoder transformer estilo nanochat: 32 capas, anchura 2.816, 22 cabezas, feed-forward 11.264, head dim 128 |
-| Parametros totales | 3.322,3M reportados (5.539,7M almacenados en safetensors, incluyendo embeddings de valor) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Decoder-only transformer estilo nanochat (32 capas, anchura 2.816, 22 cabezas, head dim 128, FFN 11.264) |
+| Parametros totales | 3.322,3M reportados por el autor; 5.539,7M almacenados en safetensors (incluye value embeddings) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 4.095 tokens |
-| Tipos de cuantizacion | No disponible (el repositorio publica pesos en safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | No disponible (el repo publica pesos en bfloat16; no se documentan GGUF ni otras cuantizaciones) |
 | Idiomas soportados | Ingles (texto web) |
-| Licencia | Apache-2.0 (el archivo `modeling_nanochat.py` deriva de nanochat, MIT, Copyright (c) 2025 Andrej Karpathy) |
-| Formato de pesos | safetensors (3 shards: `model-00001-of-00003.safetensors`, `model-00002-of-00003.safetensors`, `model-00003-of-00003.safetensors`), 11,1 GB de repositorio |
+| Licencia | Apache-2.0 (el codigo `modeling_nanochat.py` deriva de nanochat, MIT) |
+| Formato de pesos | safetensors (3 shards), requiere `trust_remote_code=True` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un decoder transformer denso de la familia nanochat (commit upstream `92d63d4` con una rama local de datos de busqueda), con 32 capas, anchura de 2.816, 22 cabezas de atencion, feed-forward de 11.264 y dimension de cabeza 128. El tokenizador es el de SmolLM2 ampliado con los cuatro tokens de busqueda que usa QueryLM, para un vocabulario de 49.156 entradas; esos cuatro tokens existen en el vocabulario pero el modelo nunca los vio durante el entrenamiento, por lo que no sabe buscar. La carga requiere `trust_remote_code=True` porque el repositorio incluye `modeling_nanochat.py`.
+El modelo es un transformer decoder-only denso con la configuración nanochat descrita: 32 capas, anchura 2.816, 22 cabezas de atención con dimensión de cabeza 128, feed-forward de 11.264 y contexto de 4.095 tokens. Emplea value embeddings además de los embeddings de token convencionales, lo que explica la diferencia entre los 3.322,3M de parámetros "reportados" y los 5.539,7M almacenados en el checkpoint. El tokenizador es el de SmolLM2 más cuatro tokens de búsqueda, con vocabulario de 49.156.
 
-El pretraining se hizo desde cero sobre DCLM-Edu como texto plano, sin bloques de busqueda ni anotacion, y con mas texto de documento que el modelo emparejado para igualar el computo. Se usaron 95.172 actualizaciones con lotes de 256 secuencias de 4.095 tokens (1.048.320 tokens por actualizacion), un total de 99.800 millones de tokens (unos 34.600 millones corresponden a una segunda pasada sobre documentos ya vistos) y 2,35e21 FLOPs en bf16. El optimizador fue Muon para los pesos matriciales (LR pico 0,02828) y AdamW para embeddings y cabeza de salida, con 40 pasos de warmup, fase constante y decaimiento lineal hasta el 5% del pico. El checkpoint corresponde al paso final del ultimo segmento de entrenamiento (paso 18.026 del segmento; 95.172 actualizaciones totales), con el schedule de learning rate completado.
+El preentrenamiento se realizó desde cero sobre DCLM-Edu como texto plano, sin bloques de búsqueda ni anotaciones. El optimizador es Muon para los pesos matriciales (LR pico 0,02828) y AdamW para embeddings y cabeza de salida. El batch es de 256 secuencias × 4.095 tokens = 1.048.320 tokens por actualización. El schedule consta de 40 pasos de warmup, fase constante y decaimiento lineal hasta el 5% del pico al final. El presupuesto total es de 95.172 actualizaciones, 99,8B tokens (de los cuales unos 34,6B son una segunda pasada sobre documentos ya vistos) y 2,35e21 FLOPs en bf16, idéntico en actualizaciones y FLOPs al modelo gemelo QueryLM. El checkpoint corresponde al run `dclm_nc_baseline_d32_cm100B` (paso 18.026 del último segmento, 95.172 actualizaciones totales), con el schedule de learning rate finalizado.
 
 ## Capacidades
 
-- Generacion de texto por continuacion: es un modelo base, sin formato de chat ni instrucciones.
-- Aprendizaje en contexto few-shot: el ejemplo de la model card muestra que con ejemplos "Question/Answer" produce respuestas correctas (por ejemplo, "Canberra" para la capital de Australia).
-- Razonamiento de conocimiento general limitado al que emerge del pretraining sobre texto web en ingles.
-- No soporta tool calling ni function calling.
-- No soporta agentes ni razonamiento multi-paso de forma nativa.
-- No dispone de modo thinking, vision ni audio.
-- Multilingue: no; solo ingles.
-- No incorpora entrenamiento de seguridad, rechazo ni alineacion.
+- Generación de texto por continuación: el modelo no tiene formato de chat; funciona con few-shot prompting para inducir formatos de pregunta-respuesta.
+- Razonamiento y conocimiento factual básico derivado del corpus DCLM-Edu, demostrado en el ejemplo de la model card (responde "Canberra" a la capital de Australia).
+- No soporta tool calling ni function calling: no fue entrenado para ello.
+- No soporta agentes ni razonamiento multi-paso con herramientas.
+- No soporta modo "thinking" ni cadenas de razonamiento explícitas.
+- Capacidades multilingües limitadas al inglés.
+- No soporta visión ni audio.
+- Los cuatro tokens de búsqueda existen en su vocabulario pero nunca aparecieron en entrenamiento, por lo que no sabe emitir búsquedas.
 
 ## Casos de uso
 
-- Linea base de investigacion en pretraining aumentado con recuperacion: sirve como control frente a `Kausp11/querylm-dclm-3.3b` para cuantificar, con el mismo computo y arquitectura, que aporta insertar bloques de busqueda en las secuencias de entrenamiento.
-- Estudios de ablacion sobre datos: al entrenarse sobre DCLM-Edu en texto plano, permite comparar composiciones de dataset y estrategias de mezcla contra variantes con anotacion.
-- Evaluacion de tecnicas de decodificacion y prompting few-shot: su naturaleza de modelo base lo hace adecuado para medir como el formato de las demostraciones afecta la continuacion en tareas de conocimiento.
-- Reproduccion de recetas de entrenamiento nanochat: la model card documenta optimizador, schedule, tamano de lote, tokens y FLOPs, lo que permite replicar o escalar la receta en entornos de investigacion.
-- Experimentos de eficiencia de inferencia: con 3.322,3M parametros reportados y contexto de 4.095 tokens, es un banco de pruebas manejable para comparar precisiones (bf16 frente a otras) y estrategias de serving.
-- Analisis de sesgos y alucinacion en modelos base entrenados solo con web en ingles: util para estudiar como un modelo sin alineacion declara hechos falsos con fluidez y que sesgos arrastra del corpus DCLM-Edu.
+- Baseline de investigación en preentrenamiento con búsqueda: sirve como control para comparar, con el mismo cómputo y arquitectura, el efecto de los bloques de búsqueda en el modelo QueryLM gemelo; es su uso principal declarado.
+- Evaluación de continuación de texto en inglés: permite medir perplejidad y calidad de generación sobre corpus web de forma controlada, al ser un modelo pequeño y reproducible.
+- Experimentos de few-shot prompting: con ejemplos en el prompt se puede inducir formato de pregunta-respuesta, útil para estudiar la capacidad de aprendizaje en contexto de un modelo base pequeño.
+- Reproducción de entrenamientos nanochat: al estar construido sobre nanochat (commit `92d63d4`), sirve como referencia para validar pipelines de entrenamiento a escala ~100B tokens.
+- Estudio de tokenizadores con tokens especiales: permite analizar cómo afecta incluir tokens de búsqueda en el vocabulario sin exponerlos en entrenamiento (tokens no usados, embeddings sin entrenar).
+- Docencia y experimentación académica: por su tamaño (3,3B reportados) y licencia Apache-2.0, es viable para laboratorios que quieran estudiar dinámicas de preentrenamiento sin grandes presupuestos de cómputo.
+- Comparación de checkpoints base vs. SFT: junto con `Kausp11/standard-dclm-3.3b-sft-search`, permite medir la ganancia de un fine-tuning supervisado sobre el mismo backbone.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que los resultados de evaluacion se anadiran mas adelante.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente: "Evaluation results will be added later."
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: en torno a 11 GB solo para pesos (5.539,7M parametros almacenados), mas overhead de activaciones y cache KV; el ejemplo de la model card se ejecuto en CPU en bfloat16 con torch 2.8.0 y transformers 4.56.0.
-- GPU recomendadas: no disponible en la informacion proporcionada; por tamano, cabria en GPUs de 16-24 GB en bf16 y en GPUs consumer de 8-12 GB con cuantizacion, aunque no se documentan variantes cuantizadas.
-- Cabe en GPU consumer: previsiblemente si en modelos con 16 GB o mas en bf16, pero no hay datos publicados que lo confirmen.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` (requiere `modeling_nanochat.py` del repositorio); no se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en bf16: aproximadamente 11,1 GB solo para pesos (tamaño del repo), más overhead de activaciones y KV cache; en la práctica se recomienda al menos 16-24 GB para contexto completo de 4.095 tokens.
+- GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para bf16; GPUs con 16 GB pueden funcionar con cuantización, aunque el repo no publica versiones cuantizadas.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) y potencialmente en RTX 4080/3090 (16-24 GB) con cuantización a 8 bits; en 12 GB requeriría cuantización agresiva no publicada.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` (única vía documentada, ya que el modelo requiere `modeling_nanochat.py`); vLLM, llama.cpp, Ollama y TGI no están documentados para esta arquitectura personalizada.
+- Latencia y throughput: no disponibles; la model card solo reporta una ejecución de ejemplo en CPU con bfloat16 y torch 2.8.0.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Standard 3.3B (DCLM-Edu) | 3.322,3M reportados (5.539,7M almacenados) | 4.095 | Apache-2.0 | Linea base de texto plano, solo ingles, sin benchmarks publicados |
-| `Kausp11/querylm-dclm-3.3b` | Misma arquitectura y computo | 4.095 | No disponible en la informacion proporcionada | Modelo emparejado, pretraining con bloques de busqueda |
-| `Kausp11/standard-dclm-3.3b-sft-search` | Misma base | 4.095 | No disponible en la informacion proporcionada | Version fine-tuneada para chat de esta linea base |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| Standard 3.3B (DCLM-Edu) | 3.322,3M reportados (5.539,7M almacenados) | 4.095 | Apache-2.0 | Hugging Face | Baseline de investigación, solo inglés, requiere `trust_remote_code` |
+| QueryLM DCLM 3.3B (`Kausp11/querylm-dclm-3.3b`) | Misma arquitectura y cómputo | 4.095 | No disponible en la informacion | Hugging Face | Modelo gemelo preentrenado con bloques de búsqueda |
+| Standard 3.3B SFT (`Kausp11/standard-dclm-3.3b-sft-search`) | Misma arquitectura | 4.095 | No disponible en la informacion | Hugging Face | Versión con fine-tuning supervisado del mismo backbone |
 
-No se dispone de datos de benchmarks para establecer comparaciones de rendimiento con modelos de terceros de tamano similar.
+No se dispone de datos de benchmarks para comparar el rendimiento con alternativas de la misma categoría (por ejemplo, modelos base de ~3B como SmolLM2-1.7B o Qwen2.5-3B); la model card no publica evaluaciones.
 
 ## Limitaciones y advertencias
 
-- Es un artefacto de investigacion, no un producto: la model card lo describe explicitamente como modelo de control para estudiar pretraining aumentado con busqueda.
-- Modelo base sin formato de chat: solo continua texto; no sigue instrucciones ni mantiene conversaciones.
-- Solo ingles y solo texto web: no cubre otros idiomas ni dominios especializados.
-- Sin entrenamiento de seguridad ni de rechazo: puede generar contenido danino y "afirmara cosas falsas con fluidez"; el riesgo de alucinacion es alto.
-- Sesgos desconocidos pero probables: al entrenarse sobre DCLM-Edu (texto web filtrado), hereda sesgos del corpus; no se documenta ninguna mitigacion.
-- Contexto limitado a 4.095 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
-- Carga insegura por defecto: `trust_remote_code=True` ejecuta Python del repositorio (`modeling_nanochat.py`); conviene revisar el codigo o fijar `revision=` a un commit verificado.
-- Pesos duplicados bajo otro nombre (`Kausp11/searchlm-dclm_nc-baseline_d32_cm100B`), lo que puede generar confusion al localizar el modelo canonico.
-- No hay resultados de evaluacion publicados, por lo que no es posible verificar su calidad empiricamente.
-- Licencia Apache-2.0 permite uso comercial, pero el texto de entrenamiento DCLM-Edu es CC-BY-4.0 y el codigo de modelado deriva de nanochat (MIT), lo que conviene respetar en redistribuciones.
+- Es un artefacto de investigación, no un producto: el autor lo describe explícitamente como modelo de control para estudiar preentrenamiento con búsqueda.
+- Modelo base sin formato de chat: no responde a instrucciones de forma conversacional; solo continúa texto.
+- Solo inglés (texto web de DCLM-Edu); no cubre otros idiomas.
+- Sin entrenamiento de seguridad ni de rechazo: puede generar contenido dañino o inapropiado sin filtro.
+- Riesgo alto de alucinación: el autor advierte que "afirmará cosas falsas con fluidez".
+- Contexto limitado a 4.095 tokens, corto para aplicaciones de contexto largo.
+- Los cuatro tokens de búsqueda del vocabulario no fueron entrenados; no debe esperarse que el modelo los use correctamente.
+- Cargar el modelo ejecuta código Python del repositorio (`modeling_nanochat.py`); el autor recomienda leerlo o fijar una revisión (`revision=`) concreta.
+- La licencia Apache-2.0 permite uso comercial de los pesos, pero el código derivado de nanochat está bajo MIT y el corpus DCLM-Edu bajo CC-BY-4.0; conviene revisar las condiciones de atribución.
+- No se publican evaluaciones ni cuantizaciones oficiales, lo que dificulta estimar su calidad real frente a alternativas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Kausp11/standard-dclm-3.3b
-- Modelo emparejado con busqueda: https://huggingface.co/Kausp11/querylm-dclm-3.3b
-- Version fine-tuneada para chat: https://huggingface.co/Kausp11/standard-dclm-3.3b-sft-search
-- Nombre anterior con pesos identicos: https://huggingface.co/Kausp11/searchlm-dclm_nc-baseline_d32_cm100B
-- Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceTB/dclm-edu
-- Codigo nanochat (upstream): https://github.com/karpathy/nanochat
+- Modelo gemelo QueryLM: https://huggingface.co/Kausp11/querylm-dclm-3.3b
+- Versión SFT: https://huggingface.co/Kausp11/standard-dclm-3.3b-sft-search
+- Paper: https://arxiv.org/abs/2611.26809
+- Página del proyecto: https://kaustubhp11.github.io/querylm/
+- Dataset DCLM-Edu: https://huggingface.co/datasets/HuggingFaceTB/dclm-edu
+- Repositorio nanochat (upstream): https://github.com/karpathy/nanochat

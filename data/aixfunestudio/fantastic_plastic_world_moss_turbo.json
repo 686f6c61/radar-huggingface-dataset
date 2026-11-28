@@ -1,0 +1,44 @@
+{
+  "schema": 2,
+  "id": "AIxFuneStudio/Fantastic_Plastic_World_Moss_Turbo",
+  "slug": "aixfunestudio-fantastic_plastic_world_moss_turbo",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Fantastic_Plastic_World_Moss_Turbo",
+  "created_at": "2026-11-27T21:41:35.000Z",
+  "updated_at": "2026-11-27T23:34:48.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5545956803,
+  "storage_human": "5.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    }
+  ]
+}

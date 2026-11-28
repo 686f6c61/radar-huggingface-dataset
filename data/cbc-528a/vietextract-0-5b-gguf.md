@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ViExtract-EC 0.5B — GGUF es la distribucion cuantizada en formato GGUF de un modelo de extraccion de informacion estructurada para vietnamita, afinado a partir de Qwen/Qwen2.5-0.5B-Instruct. Lo publica el usuario cbc-528a bajo licencia Apache-2.0 y esta disenado para ejecutarse en CPU o en maquinas con muy poca VRAM mediante llama.cpp. Su proposito concreto es rellenar esquemas JSON a partir de conversaciones de comercio electronico y atencion al cliente en vietnamita, respetando la forma declarada del esquema y devolviendo `null` cuando el dato no aparece.
+ViExtract-EC 0.5B es un modelo especializado en extracción de información estructurada a partir de conversaciones en vietnamita. Lo desarrolla el usuario cbc-528a y se distribuye como un fine-tuning de Qwen2.5-0.5B-Instruct, un transformer decoder-only de 494 millones de parámetros. La versión publicada en este repositorio es una conversión a formato GGUF pensada para ejecución en CPU y máquinas con poca VRAM mediante `llama.cpp`.
 
-El modelo es deliberadamente pequeno: 494.032.768 parametros totales, lo que permite inferencia en portatiles sin GPU. No es un modelo conversacional general, sino una herramienta de extraccion guiada por esquema (*schema-guided information extraction*) entrenada con un contrato estricto: los valores devueltos deben ser subcadenas literales del texto de entrada, sin normalizacion ni coercion de tipos. Esa restriccion es su principal valor tecnico, porque reduce la fabricacion de datos a un 0,6% medido sobre 1.054 conversaciones.
+El modelo resuelve un problema muy concreto: dada una conversación y un esquema JSON con campos a rellenar, devuelve ese mismo esquema con los valores extraídos literalmente del texto. No normaliza, no convierte tipos y no resuelve fechas; simplemente copia subcadenas del chat o deja `null` cuando el dato no aparece. Está entrenado sobre el formato literal `### Instruction:` / `### Response:` y no debe usarse con plantillas de chat tipo `<|im_start|>`.
 
-La relevancia actual reside en la combinacion de tamano minimo, licencia permisiva y un formato de prompt literal (`### Instruction:` / `### Response:`) que evita la sobrecarga de plantillas de chat. El repositorio GGUF ocupa 6,0 GB e incluye tres cuantizaciones (Q4_K_M, Q5_K_M y Q8_0); no se publica GGUF en fp16.
+Su relevancia práctica está en el tamaño: con cuantizaciones de entre 379 y 506 MiB, se puede desplegar en portátiles y servidores modestos sin GPU, con un rendimiento declarado de 40-50 tokens por segundo en generación sobre un i7-6700. Está orientado a dominios de comercio electrónico y atención al cliente en vietnamita, con datos sintéticos.
 
 ## Especificaciones tecnicas
 
@@ -15,91 +15,89 @@ La relevancia actual reside en la combinacion de tamano minimo, licencia permisi
 | Arquitectura | Transformer decoder-only (derivada de Qwen2.5-0.5B-Instruct) |
 | Parametros totales | 494.032.768 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | entrenado a ≤1536 tokens; en los ejemplos de despliegue se usa `-c 2560` |
-| Tipos de cuantizacion | Q4_K_M (379 MiB), Q5_K_M (401 MiB), Q8_0 (506 MiB); sin fp16 GGUF |
+| Longitud de contexto | entrenado a ≤1536 tokens; el ejemplo de servidor usa `-c 2560` |
+| Tipos de cuantizacion | Q4_K_M, Q5_K_M, Q8_0 (no se publica fp16 GGUF) |
 | Idiomas soportados | vietnamita (vi) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); pesos de referencia en safetensors en el repo transformers del modelo base afinado |
+| Formato de pesos | GGUF (llama.cpp); el modelo base de referencia está en transformers |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen2.5-0.5B-Instruct, un transformer decoder-only denso de 0,5 mil millones de parametros, sobre el que se ha realizado un ajuste supervisado orientado a una unica tarea: rellenar un esquema JSON a partir de una conversacion. El prompt no emplea plantilla de chat; el modelo fue entrenado con un bloque literal `### Instruction:` seguido de `### Response:`, y el autor advierte explicitamente que aplicar tokens `<|im_start|>` degrada la salida de forma severa.
+El modelo parte de Qwen2.5-0.5B-Instruct, un transformer decoder-only con atención causal estándar. Sobre esa base se ha aplicado un fine-tuning orientado a una tarea de extracción guiada por esquema: el prompt incluye una instrucción fija en vietnamita, un esquema JSON que declara la forma de la salida (`null` para escalares, `{...}` para objetos, `[{...}]` para arrays de ítems) y el fragmento de conversación. La respuesta esperada es el mismo esquema con los valores rellenados.
 
-El contrato de extraccion define el comportamiento: el esquema declara la forma mediante `null` para escalares, `{...}` para objetos y `[{...}]` para arrays de elementos; los valores deben ser subcadenas literales del chat; los campos ausentes se devuelven como `null` y los arrays ausentes como `[]`. No hay normalizacion, coercion de tipos ni resolucion de fechas. El autor menciona una red de seguridad opcional consistente en anular cualquier valor devuelto que no sea subcadena del chat, que se activa en aproximadamente el 0,6% de los slots nulos evaluados. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO; la model card indica que los datos son sinteticos y de dominio (comercio electronico y servicios en vietnamita).
+No se detalla en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. La model card indica que los datos son sintéticos y de dominio concreto (comercio electrónico y servicio al cliente en vietnamita). La evaluación reportada corresponde al modelo de referencia en fp16, y el GGUF se describe como una recodificación de los mismos pesos. El contrato de salida es estricto: valores literales subcadena del chat, `null` si el campo está ausente y `[]` si falta un array.
 
 ## Capacidades
 
-- Extraccion de informacion guiada por esquema JSON a partir de texto conversacional en vietnamita.
-- Respeto de la forma del esquema: escalares, objetos anidados y arrays de objetos.
-- Devolucion de `null` o `[]` ante datos ausentes, sin inventar valores (fabricacion medida del 0,6%).
-- Extraccion verbatim: los valores son subcadenas literales, sin normalizacion ni conversion de tipos.
-- Generacion de texto condicionada por prompt literal `### Instruction:` / `### Response:`.
-- Ejecucion en CPU y en GPU de baja VRAM mediante llama.cpp (CLI, servidor y `llama-cpp-python`).
-- No dispone de tool calling ni function calling nativo, ni de modo thinking, vision o audio.
-- Capacidad multilingue limitada al vietnamita; no se documenta soporte de otros idiomas.
-- No soporta conversacion multi-turno general ni agentes multi-paso: es una herramienta de extraccion de un solo paso.
+- Extracción de información guiada por esquema JSON a partir de conversaciones en vietnamita.
+- Relleno de estructuras anidadas: objetos, arrays de ítems y escalares declarados con `null`.
+- Copia literal de valores (nombres, cantidades, precios, direcciones) sin normalización ni coerción de tipos.
+- Gestión de campos ausentes mediante `null` y de arrays ausentes mediante `[]`.
+- Generación de texto orientada a una única tarea; no está pensado como asistente general.
+- Ejecución en CPU mediante `llama.cpp` (CLI, servidor HTTP y `llama-cpp-python`).
+- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Extraccion de pedidos en chats de comercio electronico: a partir de una conversacion cliente-tienda, el modelo rellena un esquema con nombre del cliente, articulos, cantidades y precios. Es adecuado porque el contrato exige valores literales del chat y el tamano permite ejecutarlo en el servidor de la tienda sin GPU.
-- Normalizacion de conversaciones de atencion al cliente hacia un CRM: se define un esquema con campos de contacto, direccion e incidencias y el modelo devuelve JSON valido en el 99,8% de los casos segun la evaluacion del autor, lo que simplifica la integracion posterior.
-- Procesamiento por lotes en CPU: con Q4_K_M y sin GPU, el autor reporta mas de 200 tok/s de prompt y 40-50 tok/s de generacion en un i7-6700, de modo que una extraccion tipica tarda entre 2 y 5 segundos; esto permite procesar volumenes moderados en infraestructura barata.
-- Despliegue en el borde o en portatiles: los ficheros de 379-506 MiB caben en cualquier equipo, lo que habilita extraccion local de datos sensibles sin enviar conversaciones a la nube.
-- Servicio HTTP interno: con `llama-server -c 2560 -n 512 --temp 0` se expone un endpoint compatible con clientes HTTP para integrarlo en un pipeline de ingestion de mensajes.
-- Prototipado rapido de esquemas: al ser guiado por esquema, permite iterar sobre la forma del JSON de salida sin reentrenar, validando el diseno del contrato antes de invertir en un modelo mayor.
-- Filtrado y validacion de datos: la red de seguridad de subcadena permite descartar o anular valores fabricados en un 0,6% de los slots nulos, util para construir datasets limpios a partir de conversaciones.
+- Extracción de pedidos en chats de comercio electrónico: el modelo recibe la conversación y un esquema con cliente, ítems, cantidades y precios, y devuelve el JSON relleno con subcadenas literales del chat, lo que encaja con el ejemplo incluido en la model card.
+- Automatización de atención al cliente en vietnamita: integrado tras un sistema de mensajería, convierte conversaciones multi-turno en registros estructurados para CRM sin necesidad de GPU.
+- Procesamiento por lotes en servidores modestos: con Q4_K_M y `llama-server` en CPU, permite procesar colas de conversaciones con una latencia típica de 2-5 segundos por extracción según el autor.
+- Preprocesado para pipelines de datos: generar registros estructurados a partir de transcripciones de chat antes de cargarlos en una base de datos o en un sistema de analítica.
+- Validación con red de seguridad: el propio autor propone descartar cualquier valor devuelto que no sea subcadena del chat, lo que permite usarlo en producción con una comprobación posterior barata.
+- Despliegue en entornos con hardware limitado: portátiles y mini-PC sin GPU pueden ejecutar el modelo en Q4_K_M (379 MiB) para tareas de extracción puntuales.
+- Prototipado de esquemas: probar distintos esquemas JSON sobre conversaciones reales antes de invertir en un modelo mayor o en anotación manual.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre el modelo de referencia en fp16 (el GGUF es una recodificacion de los mismos pesos):
+Datos de evaluación reportados por el autor sobre el modelo de referencia en fp16 (1.054 conversaciones evaluadas):
 
 | Metrica | Valor |
 |---|---|
-| Validez de esquema/forma | 99,8% |
-| Leaf F1 estricto / tolerante | 0,805 / 0,869 |
-| Item F1 (arrays) | 0,817 |
-| Conteo exacto de items | 67,3% |
-| Fabricacion (valor no presente en el chat) | 0,6% |
+| Validez de esquema/forma | 99,5% |
+| Leaf F1 estricto / tolerante | 0,815 / 0,880 |
+| Item F1 (arrays) | 0,828 |
+| Recuento exacto de ítems | 69,9% |
+| Fabricación (valor no presente en el chat) | 0,4% |
 
-Rendimiento por dificultad (F1 tolerante): D1 0,923 · D2 0,812 · D3 0,882 · D4 0,920.
+Por dificultad (F1 tolerante): D1 0,933 · D2 0,829 · D3 0,890 · D4 0,931.
 
-Throughput de referencia en un i7-6700 con Q4_K_M y sin GPU: mas de 200 tok/s de prompt y 40-50 tok/s de generacion, con una extraccion tipica en 2-5 segundos.
+Rendimiento en el equipo de referencia (i7-6700, Q4_K_M, sin GPU): aproximadamente 200+ tok/s en prompt y 40-50 tok/s en generación, con una extracción típica en 2-5 segundos. No se han publicado comparaciones con modelos alternativos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: practicamente nula; el modelo esta pensado para CPU. En GPU, Q4_K_M ocupa 379 MiB de pesos y Q8_0 506 MiB, mas el espacio de contexto.
-- GPU recomendadas: cualquier GPU consumer con 2 GB o mas de VRAM puede alojar los pesos; no se requieren A100 ni H100.
-- Cabe en GPU consumer: si, en practicamente cualquier tarjeta moderna (RTX 3050, RTX 4060, RTX 4090, etc.), aunque su uso natural es CPU.
-- Opciones de despliegue: `llama-cli`, `llama-server` (endpoint HTTP), `llama-cpp-python`; el autor no menciona vLLM, TGI ni Ollama.
-- Contexto de despliegue: los ejemplos usan `-c 2560` y `-n 512`, aunque el entrenamiento fue a ≤1536 tokens.
-- Latencia y throughput: en el i7-6700 de referencia, 2-5 segundos por extraccion tipica con Q4_K_M.
+- VRAM estimada: no requiere GPU; en CPU el consumo de RAM ronda los 379 MiB (Q4_K_M), 401 MiB (Q5_K_M) y 506 MiB (Q8_0) para los pesos, más el contexto.
+- GPU recomendadas: no se especifican; cualquier GPU con suficiente memoria puede usarse con `n_gpu_layers`, pero el modelo está diseñado para CPU.
+- Cabe en cualquier GPU consumer, incluida una RTX 4090, e incluso en iGPU y sistemas sin GPU dedicada.
+- Opciones de despliegue: `llama.cpp` (`llama-cli`, `llama-server`), `llama-cpp-python` y cualquier runtime compatible con GGUF.
+- Latencia y throughput: 40-50 tok/s de generación y 200+ tok/s de prompt en un i7-6700 con Q4_K_M; extracción completa en 2-5 segundos.
+- Contexto de ejecución: el ejemplo de servidor usa `-c 2560` y `-n 512`, aunque el entrenamiento se hizo a ≤1536 tokens.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ViExtract-EC 0.5B GGUF | 494 M | entrenado a ≤1536 | Extraccion guiada por esquema en vietnamita | Apache-2.0 | GGUF |
-| Qwen2.5-0.5B-Instruct (base) | 494 M | 32.768 tokens (segun modelo base) | Chat general multilingue | Apache-2.0 | safetensors, GGUF |
-| Modelos de extraccion genericos de 0,5B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| ViExtract-EC 0.5B (este) | 494 M | ≤1536 en entrenamiento | Extracción guiada por esquema en vietnamita, GGUF para CPU | Apache-2.0 | Hugging Face (GGUF) |
+| Qwen2.5-0.5B-Instruct (base) | 494 M | 32.768 tokens (modelo base) | Asistente general multilingüe | Apache-2.0 | Hugging Face |
+| Alternativas especializadas en extracción en vietnamita | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion directa con alternativas especializadas en extraccion para vietnamita no esta disponible en la informacion proporcionada. Frente a su modelo base, ViExtract-EC sacrifica capacidad conversacional general y cobertura multilingue a cambio de adherencia estricta al esquema y extraccion verbatim en vietnamita.
+La comparación con el modelo base es la más directa: ViExtract-EC hereda su tamaño y licencia, pero sustituye el comportamiento de asistente general por una tarea única de extracción con contrato estricto y un formato de prompt propio. No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenado con datos sinteticos y de dominio (comercio electronico y servicios en vietnamita); la generalizacion a otros dominios no esta documentada.
-- Punto mas debil: conteo de items en arrays (67,3% de conteo exacto), expresiones temporales y notas de texto libre.
+- Entrenado con datos sintéticos y de dominio restringido (comercio electrónico y servicio al cliente en vietnamita); el rendimiento fuera de ese dominio no está garantizado.
+- Puntos débiles declarados: recuento de ítems en arrays (69,9% de recuento exacto), expresiones temporales y notas de texto libre.
 - Ventana de entrenamiento de ≤1536 tokens; las conversaciones largas deben trocearse.
-- No usar plantilla de chat: aplicar `<|im_start|>` degrada la salida de forma severa; el prompt debe ser literal `### Instruction:` / `### Response:`.
-- Riesgo de alucinacion bajo pero no nulo: 0,6% de fabricacion; se recomienda la red de seguridad de validacion por subcadena.
-- Solo vietnamita; no se documenta soporte de castellano ni de otros idiomas.
-- Licencia Apache-2.0 permisiva para uso comercial, heredada del modelo base Qwen2.5-0.5B-Instruct; conviene revisar los terminos del modelo base.
-- El repositorio GGUF no incluye fp16; para precision de referencia hay que acudir al repo transformers del modelo afinado.
-- El enlace al repo transformers de la model card aparece como marcador de posicion (`YOUR_ORG`), por lo que su ubicacion exacta no esta confirmada.
+- Riesgo de fabricación bajo pero no nulo (0,4% de valores no presentes en el chat); se recomienda la comprobación de subcadena propuesta por el autor.
+- No debe aplicarse plantilla de chat `<|im_start|>`: el modelo espera el bloque literal `### Instruction:` / `### Response:` y el rendimiento se degrada gravemente con otra plantilla.
+- Sin normalización ni coerción de tipos: no resuelve fechas, no convierte unidades y devuelve los valores tal cual aparecen.
+- Licencia Apache-2.0, que permite uso comercial; el modelo base Qwen2.5-0.5B-Instruct también es Apache-2.0.
+- No se documentan sesgos específicos más allá de los derivados de los datos sintéticos y del dominio; no hay información sobre evaluación de sesgos.
+- El repositorio tiene 7,4 GB pese a que los GGUF publicados suman menos de 1,3 GB, lo que puede indicar artefactos adicionales no descritos en la model card.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/cbc-528a/vietextract-0.5b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- Repo transformers del modelo afinado: no disponible (la model card usa el marcador `YOUR_ORG/vietextract-0.5b`)
-- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Repositorio de referencia del modelo fp16: no disponible (la model card apunta a un enlace genérico `YOUR_ORG/vietextract-0.5b` sin publicar)
+- llama.cpp: https://github.com/ggerganov/llama.cpp
 - llama-cpp-python: https://github.com/abetlen/llama-cpp-python

@@ -2,104 +2,109 @@
 
 ## Resumen
 
-JiRack Ultra 7B es un modelo de generacion de texto de 7.615.616.512 parametros (7,6 B) publicado por CMSManhattan bajo licencia MIT. Segun su model card, deriva de un modelo de la familia DeepSeek y ha sido "refactorizado" con caracteristicas de tipo BitNet, incluyendo soporte nativo para pesos ternarios (1,58 bits) y cuantizaciones GGUF listas para ejecutar en CPU. El modelo se distribuye con un tokenizador propio (JiRackPrecisionTokenizer) que anade etiquetas especificas para routing, tool calling, multimedia y robotica.
+JiRack Ultra 7B es un modelo de generación de texto de 7.615.616.512 parámetros (unos 7,6 mil millones) publicado por CMSManhattan en Hugging Face bajo licencia MIT. El autor lo describe como una refactorización de un modelo DeepSeek con soporte nativo de ternarización estilo BitNet (1,58 bit), orientada a inferencia eficiente en CPU y con cuantizaciones GGUF listas para ejecutar. La model card menciona además un tokenizador propio, `JiRackPrecisionTokenizer`, con etiquetas específicas para enrutamiento (routing), tool calling, robótica, multimedia, visión y sonido.
 
-El objetivo declarado es la inferencia eficiente en CPU: el autor presenta variantes cuantizadas en Q4_K_M (4,68 GB, ~6,2 GB de RAM), Q3_K_M (3,81 GB) y Q2_K (3,02 GB), ademas de una variante de referencia de 15,24 GB. El modelo se promociona como pieza experta en despliegues RAG y como base para agentes de codificacion integrados en IDEs (Eclipse, JetBrains, VS Code) que se ejecutan mediante Ollama en un PC domestico.
+El modelo se presenta como una opción de bajo coste para despliegues en la nube y para entornos con memoria limitada, con variantes Docker que van desde los 3,02 GB (Q2_K) hasta los 15,24 GB (precisión completa). Declara soporte para trece idiomas (inglés, chino, japonés, coreano, francés, español, portugués, alemán, italiano, ruso, árabe, vietnamita y tailandés) y se distribuye tanto en safetensors como en GGUF.
 
-La relevancia actual del modelo reside en su propuesta de combinar un transformer de ~7,6 B con cuantizacion ternaria estilo BitNet para abaratar costes de infraestructura. No obstante, la informacion publicada es fundamentalmente descriptiva y comercial: no se aportan resultados de benchmarks, detalles del dataset de entrenamiento ni especificaciones verificables de la arquitectura mas alla de la etiqueta `qwen2` en los metadatos de Hugging Face, que contrasta con la mencion a DeepSeek en la model card.
+La información publicada es, sin embargo, notablemente escasa en lo que respecta a detalles verificables de entrenamiento, datos, benchmarks y arquitectura interna. La model card es fundamentalmente material promocional y de despliegue, con afirmaciones sobre capacidades (robótica, tool calling, visión) que no vienen acompañadas de evaluaciones cuantitativas ni de documentación técnica del proceso de entrenamiento. Esta ficha refleja esa situación y marca explícitamente como "no disponible" todo aquello que la información proporcionada no permite confirmar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiqueta `qwen2` en metadatos; la model card menciona base DeepSeek y soporte ternario BitNet) |
+| Arquitectura | Transformer basada en Qwen2 (tag `qwen2`), con soporte declarado de ternarización estilo BitNet (1,58 bit); el autor la denomina "JiRack Ternary Architecture" |
 | Parametros totales | 7.615.616.512 (7,6 B) |
-| Parametros activos | no disponible (no se declara MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Ternaria (1,58 bits, TQ_2_0 en llama.cpp), GGUF Q4_K_M, Q3_K_M, Q2_K, FP16 de referencia |
+| Parametros activos | No aplica (no se declara como MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | GGUF Q2_K, Q3_K_M, Q4_K_M y precisión completa; ternario TQ2_0 con soporte AVX2 y AVX-512 (según el autor) |
 | Idiomas soportados | en, zh, ja, ko, fr, es, pt, de, it, ru, ar, vi, th |
 | Licencia | MIT |
-| Formato de pesos | safetensors, GGUF (tambien guia de exportacion a ONNX) |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo como un transformer de ~7,6 B "refactorizado" con caracteristicas BitNet y soporte nativo de pesos ternarios, con cuantizacion QAT (quantization-aware training) orientada a TQ_2_0 en llama.cpp y Ollama. Se menciona compatibilidad con instrucciones AVX2 y AVX-512 para acelerar la inferencia ternaria en CPU, y se ofrece un servicio de QAT personalizado sobre datasets del cliente, incluyendo doble QAT via ONNX. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF o DPO.
+La información disponible no documenta la arquitectura con detalle técnico. Las etiquetas del repositorio indican `qwen2`, lo que sugiere una base de transformer decoder-only de la familia Qwen2, mientras que la model card afirma que el modelo "fue refactorizado con características BitNet" y que está "construido sobre un modelo DeepSeek rediseñado por CMSManhattan". Ambas afirmaciones son difíciles de conciliar y no vienen acompañadas de documentación que las respalde. El autor menciona una "JiRack Ternary Architecture" propia y un tokenizador específico (`JiRackPrecisionTokenizer`) con etiquetas añadidas para routing, media, visión, sonido, tool call y robótica.
 
-Existe una contradiccion relevante en la informacion disponible: los metadatos de Hugging Face etiquetan el modelo como `qwen2`, mientras que la model card afirma que esta construido sobre un modelo DeepSeek. Tampoco se detalla la innovacion del tokenizador mas alla de la existencia de etiquetas para routing, tool call, multimedia y robotica, ni se documenta la ventana de contexto. Las cuantizaciones publicadas se generaron a partir del modelo en FP16, segun el autor.
+No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineamiento, ni sobre el proceso de destilación o ajuste fino. La model card menciona QAT (quantization-aware training) como servicio opcional ofrecido por el autor para ternarizar el modelo según el dataset del cliente, y enlaza una guía de conversión a GGUF TQ2_0 para llama.cpp. También se menciona la posibilidad de exportación a ONNX y un servidor Java ONNX alternativo. No hay información verificable sobre innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generacion de texto conversacional e instructiva en 13 idiomas declarados (en, zh, ja, ko, fr, es, pt, de, it, ru, ar, vi, th).
-- Tool calling / function calling, con soporte declarado para integracion via librerias Java (Spring AI Alibaba) y Python (Gorilla).
-- Routing y etiquetado especializado mediante el tokenizador JiRackPrecisionTokenizer.
-- Capacidades declaradas de robotica y multimedia a traves de etiquetas del tokenizador (sin documentacion tecnica adicional).
-- Uso como modelo experto en pipelines RAG.
-- Inferencia en CPU con cuantizacion ternaria y GGUF.
-- Integracion con agentes de codificacion en IDEs (Eclipse, JetBrains, VS Code) mediante Ollama.
-- No se documentan capacidades de vision, audio ni modo de razonamiento explicito (el autor menciona una variante "chat without reasoning" en Ollama).
+- Generación de texto conversacional multi-turno, según la model card.
+- Tool calling / function calling, con soporte declarado mediante etiquetas del tokenizador JiRack Precision; el autor enlaza ejemplos con ToolBench, Gorilla y Spring AI Alibaba.
+- Enrutamiento (routing) como capacidad declarada en el tokenizador.
+- Capacidades de robótica declaradas en las etiquetas y en el tokenizador, sin documentación técnica adicional.
+- Capacidades de visión, sonido y multimedia declaradas en las etiquetas y en el tokenizador, sin especificación de arquitectura multimodal ni de módulos de visión o audio.
+- Soporte multilingüe declarado para trece idiomas.
+- Integración declarada con agentes de codificación (plugins para Eclipse, JetBrains y VS Code) y con un IDE propio.
+- No se documenta un modo "thinking" o razonamiento explícito; la model card menciona "Jirack chat without reasoning feature" como variante en Ollama.
 
 ## Casos de uso
 
-- Atencion al cliente multilingue en infraestructura de bajo coste: el modelo cubre 13 idiomas y puede ejecutarse en CPU con la variante Q4_K_M (~6,2 GB de RAM), lo que permite desplegarlo en servidores sin GPU para conversaciones multi-turno.
-- Modelo experto en RAG: el autor lo posiciona explicitamente como experto en despliegues RAG, de modo que puede recibir contexto recuperado y generar respuestas fundamentadas, con la ventaja de que la variante ternaria reduce el coste por instancia en la nube.
-- Agente de codificacion en IDE: los plugins publicados para Eclipse, JetBrains y VS Code permiten usar el modelo via Ollama en un PC domestico para sugerir cambios de codigo con revision humana previa a la aplicacion.
-- Automatizacion de tool calling en backend Java: mediante Spring AI Alibaba, el modelo puede orquestar llamadas a funciones en aplicaciones empresariales, aprovechando las etiquetas de tool call del tokenizador JiRack.
-- Enrutamiento de consultas (routing): las etiquetas de routing del tokenizador permiten clasificar y derivar peticiones a distintos servicios o submodelos dentro de un sistema mayor.
-- Despliegue en entornos con restricciones de memoria: la variante Q2_K (3,02 GB, ~4,5 GB de RAM) permite ejecutar el modelo en maquinas modestas o contenedores con limites estrictos de memoria.
-- Prototipado de robotica conversacional: las etiquetas de robotica declaradas permiten experimentar con interfaces de lenguaje natural para control de robots, aunque sin documentacion tecnica que lo respalde.
+- Inferencia en CPU con presupuesto de memoria reducido: las variantes Q2_K (3,02 GB) y Q3_K_M (3,81 GB) permiten ejecutar el modelo en máquinas sin GPU dedicada, con un consumo de RAM estimado de 4,5 a 5,3 GB según el autor.
+- Despliegue en contenedores Docker para servicios de generación de texto: la model card proporciona comandos `docker run` con imágenes preconstruidas y puerto 7869, lo que facilita su integración en infraestructuras existentes.
+- Uso como modelo experto en pipelines RAG: el autor lo posiciona explícitamente como "expert model in RAG deployments", con la posibilidad de usar el servidor Java ONNX como alternativa de servicio.
+- Automatización de tool calling en aplicaciones empresariales: la combinación de tokenizador con etiquetas de tool call y los ejemplos enlazados (Spring AI Alibaba para Java, Gorilla para Python) apunta a integraciones con APIs y sistemas corporativos.
+- Asistencia a la codificación en IDE: los plugins publicados para Eclipse, JetBrains y VS Code permiten usar el modelo como agente de codificación local sobre Ollama, con revisión manual de cambios antes de aplicarlos.
+- Experimentación con cuantización ternaria: la guía de conversión a TQ2_0 para llama.cpp permite evaluar el modelo en formato ternario con instrucciones AVX2/AVX-512, útil para investigación en modelos de baja precisión.
+- Prototipado multilingüe: el soporte declarado de trece idiomas permite probar aplicaciones de generación de texto en mercados con esos idiomas, aunque sin garantías documentadas de calidad por idioma.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación cuantitativa, ni comparaciones numéricas con modelos de referencia.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada segun las variantes publicadas por el autor: FP16 de referencia 15,24 GB (~16,7 GB de RAM); Q4_K_M 4,68 GB (~6,2 GB); Q3_K_M 3,81 GB (~5,3 GB); Q2_K 3,02 GB (~4,5 GB).
-- Inferencia optimizada para CPU, con soporte declarado de instrucciones AVX2 y AVX-512 para la variante ternaria TQ_2_0.
-- GPU: no se especifican modelos recomendados (A100, H100, RTX 4090); el enfoque del autor es CPU y Ollama.
-- Cabe en GPU de consumo por tamano (una RTX 4090 de 24 GB alojaria la variante FP16), pero no se documenta rendimiento en GPU.
-- Opciones de despliegue: llama.cpp, Ollama, Docker (imagenes `cmsmanhattan/jirack-ultra-7b-cpu` en variantes full, q4, q3 y q2), exportacion a ONNX y servidor Java ONNX JiRack.
-- Latencia y throughput: no disponibles. El autor solo afirma que el modelo es "rapido y eficiente" en CPU sin cifras.
+- VRAM/RAM estimada según las variantes declaradas por el autor:
+  - Precisión completa: 15,24 GB de pesos, ~16,7 GB de RAM.
+  - Q4_K_M: 4,68 GB de pesos, ~6,2 GB de RAM (opción recomendada por el autor).
+  - Q3_K_M: 3,81 GB de pesos, ~5,3 GB de RAM.
+  - Q2_K: 3,02 GB de pesos, ~4,5 GB de RAM.
+- El modelo está optimizado para CPU; no se especifican requisitos de GPU ni modelos recomendados (A100, H100, RTX 4090, etc.).
+- Cabe en GPUs de consumo en las cuantizaciones Q2_K a Q4_K_M por tamaño de pesos, aunque no se documenta rendimiento en GPU.
+- Opciones de despliegue declaradas: llama.cpp, Ollama, Docker (imágenes `cmsmanhattan/jirack-ultra-7b-cpu`), exportación a ONNX y servidor Java ONNX.
+- Latencia y throughput: no disponibles. El autor menciona soporte de instrucciones AVX2 y AVX-512 para el formato ternario TQ2_0, sin cifras concretas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion destacada | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| JiRack Ultra 7B | 7,6 B | no disponible | Ternaria 1,58 bits, GGUF Q2-Q4 | MIT | Enfoque CPU, tool calling, 13 idiomas |
-| Qwen2-7B-Instruct | 7,6 B | 32.768 tokens (segun documentacion publica de Qwen2) | GGUF, AWQ, GPTQ | Apache 2.0 | Base probable segun metadatos; ecosistema amplio y benchmarks publicos |
-| BitNet b1.58 (Microsoft) | ~3 B / ~3,9 B (variantes publicadas) | no disponible | Ternaria nativa | MIT | Referencia academica del enfoque ternario; no es un modelo instructivo de proposito general |
-| DeepSeek (familia base citada) | variable | variable | variable | variable | La model card afirma base DeepSeek, sin especificar version |
+| JiRack Ultra 7B | 7,6 B | No disponible | MIT | safetensors, GGUF | Ternarización declarada, orientado a CPU |
+| Qwen2-7B | 7,6 B | 32.768 tokens (según documentación pública de Qwen2) | Apache 2.0 (según documentación pública de Qwen2) | safetensors, GGUF | Base declarada por las etiquetas del repositorio; benchmarks públicos disponibles |
+| BitNet b1.58 (variantes) | Escalas 700M–3,9B en la publicación original | No disponible | MIT (según publicación) | No disponible | Referencia académica de modelos ternarios; no comparable directamente en tamaño |
 
-No se dispone de datos de rendimiento comparativo del JiRack Ultra 7B frente a estas alternativas.
+No se dispone de datos de rendimiento del modelo que permitan una comparación cuantitativa con alternativas. La comparación con Qwen2-7B se incluye únicamente por la etiqueta `qwen2` del repositorio y por compartir orden de magnitud de parámetros; no implica equivalencia de comportamiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no hay evidencia verificable de calidad en MMLU, HumanEval, GSM8K ni otras tareas estandar.
-- Contradiccion entre los metadatos (`qwen2`) y la model card (base DeepSeek), lo que dificulta conocer el linaje real del modelo y sus sesgos heredados.
-- La model card es fundamentalmente promocional: menciona "partnership" con NVIDIA y FISERV, plugins de IDE y servicios de QAT personalizado sin documentacion tecnica que los respalde.
-- No se documenta la longitud de contexto, dato critico para evaluar su idoneidad en RAG o conversaciones largas.
-- Las capacidades de vision, sonido y robotica se declaran solo como etiquetas del tokenizador; no hay evidencia de que el modelo procese imagenes o audio.
-- Riesgo de alucinacion no cuantificado; al ser un modelo pequeno (7,6 B) y sin datos de entrenamiento publicos, la fiabilidad en dominios especializados es incierta.
-- Licencia MIT permite uso comercial sin restricciones declaradas, pero el autor condiciona ciertos servicios (QAT personalizado, adaptaciones) a contacto directo, lo que sugiere que las variantes optimizadas no son abiertas.
-- El repositorio ocupa 77,1 GB, muy por encima del peso de los parametros en FP16 (~15,2 GB), lo que indica la presencia de multiples formatos y artefactos adicionales.
-- Solo 2 "likes" y 4.182 descargas en el momento de la consulta: comunidad muy reducida, sin validacion independiente.
+- Ausencia total de benchmarks publicados: no es posible verificar las capacidades declaradas (tool calling, robótica, visión, routing) con datos objetivos.
+- Inconsistencia en la documentación: la model card afirma simultáneamente una base Qwen2 (etiqueta) y una base DeepSeek, sin aclarar cuál es la arquitectura real ni el proceso de entrenamiento.
+- Capacidades multimodales (visión, sonido) declaradas sin especificación de módulos, datos de entrenamiento ni evaluaciones; deben tratarse como no verificadas.
+- Riesgo de alucinación no cuantificado: no se han publicado evaluaciones de fidelidad ni de tasas de error.
+- Sesgos desconocidos: no se documenta la composición del dataset ni procesos de alineamiento, por lo que no se pueden evaluar sesgos de género, etnia, idioma o dominio.
+- Cobertura multilingüe declarada para trece idiomas sin métricas por idioma; la calidad relativa entre idiomas es desconocida.
+- Longitud de contexto no especificada, lo que impide planificar despliegues que dependan de ventanas largas.
+- Licencia MIT: permite uso comercial, modificación y redistribución con atribución, pero el usuario asume la responsabilidad sobre el comportamiento del modelo.
+- Dependencia de un tokenizador propio (`JiRackPrecisionTokenizer`) para las capacidades de tool calling y routing; su integración requiere adaptar los procesadores de tool calls, según la propia model card.
+- La model card incluye material promocional (menciones de "partnership" con NVIDIA y FISERV, servicios de QAT de pago, descargas de ejecutables) que no constituye documentación técnica verificable.
+- El repositorio ocupa 77,1 GB, lo que refleja múltiples formatos y cuantizaciones; conviene seleccionar únicamente los artefactos necesarios.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/CMSManhattan/JiRackUltra_7b
-- Tokenizador: https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer
-- Demo ternaria de produccion: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-8B-chat
-- Demo live chat: https://huggingface.co/spaces/CMSManhattan/JiRackUltra_7b
-- Demos TQ2_0 adicionales: https://huggingface.co/spaces/CMSManhattan/JiRack-36B-Chat , https://huggingface.co/spaces/CMSManhattan/JiRack-16B-Chat , https://huggingface.co/spaces/CMSManhattan/JiRack-8B-Chat , https://huggingface.co/spaces/CMSManhattan/JiRack-2B-Chat
-- Guia QAT a llama.cpp TQ2_0: https://huggingface.co/CMSManhattan/JiRackUltra_7b/blob/main/QAT_to_Llama.cpp_GGUF_TQ2_0.md
-- Guia de exportacion a ONNX: https://huggingface.co/CMSManhattan/JiRackUltra_7b/blob/main/jirackultra_7b_onnx_export_guide.md
-- Perfil Ollama: https://ollama.com/cmsmanhattan
-- Sitio web: https://www.jirack.com
-- Plugin Eclipse: https://marketplace.eclipse.org/content/jirack-coding-agent
-- Plugin JetBrains: https://plugins.jetbrains.com/plugin/35073-jirack-agent
-- Plugin VS Code: https://marketplace.visualstudio.com/items?itemName=JiRackautomationCodingAgentIDE.jirack-agent
-- Spring AI Alibaba (tool calling Java): https://github.com/alibaba/spring-ai-alibaba
-- Gorilla (tool calling Python): https://github.com/ShishirPatil/gorilla
+- Tokenizador JiRack Precision: https://huggingface.co/CMSManhattan/JiRackPrecisionTokenizer
+- Guía de conversión a GGUF TQ2_0 para llama.cpp: https://huggingface.co/CMSManhattan/JiRackUltra_7b/blob/main/QAT_to_Llama.cpp_GGUF_TQ2_0.md
+- Guía de exportación a ONNX: https://huggingface.co/CMSManhattan/JiRackUltra_7b/blob/main/jirackultra_7b_onnx_export_guide.md
+- Demo de chat en vivo (Space): https://huggingface.co/spaces/CMSManhattan/JiRackUltra_7b
+- Demo ternaria de producción: https://huggingface.co/CMSManhattan/JiRackTernaryPrecision-8B-chat
+- Variantes de chat TQ2_0: https://huggingface.co/spaces/CMSManhattan/JiRack-36B-Chat , https://huggingface.co/spaces/CMSManhattan/JiRack-16B-Chat , https://huggingface.co/spaces/CMSManhattan/JiRack-8B-Chat , https://huggingface.co/spaces/CMSManhattan/JiRack-2B-Chat
+- Perfil del autor en Ollama: https://ollama.com/cmsmanhattan
+- Runtime de escritorio JiRack: https://huggingface.co/CMSManhattan/JiRack-runtime
+- Sitio web del IDE JiRack: https://www.jirack.com
+- Plugin de Eclipse: https://marketplace.eclipse.org/content/jirack-coding-agent
+- Plugin de JetBrains: https://plugins.jetbrains.com/plugin/35073-jirack-agent
+- Plugin de VS Code: https://marketplace.visualstudio.com/items?itemName=JiRackautomationCodingAgentIDE.jirack-agent
+- Spring AI Alibaba (ejemplos de tool calling en Java): https://github.com/alibaba/spring-ai-alibaba
+- Gorilla (ejemplos de tool calling en Python): https://github.com/ShishirPatil/gorilla
 - ToolBench: https://github.com/OpenBMB/ToolBench
-- Dataset de referencia function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
-- Modelo de referencia function calling: https://huggingface.co/xalss/Qwen2-7B-Instruct-glaive-function-calling
+- Dataset de function calling de Glaive (Qwen2-7B-Instruct): https://huggingface.co/xalss/Qwen2-7B-Instruct-glaive-function-calling
+- Dataset Hermes function calling v1: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1

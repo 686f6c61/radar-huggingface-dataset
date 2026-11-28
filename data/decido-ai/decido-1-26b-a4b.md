@@ -2,108 +2,118 @@
 
 ## Resumen
 
-Decido-1 (26B-A4B) es un modelo de decisión calibrada desarrollado por decido-ai, construido como un fine-tune LoRA fusionado sobre google/gemma-4-26B-A4B-it. Su propósito no es la generación de texto libre, sino responder preguntas cerradas sobre un documento de entrada —sí/no, elección única entre opciones o escala ordenada— devolviendo una distribución de probabilidad para cada respuesta. Esta formulación convierte al modelo en un clasificador probabilístico de propósito general con calibración explícita.
+Decido-1 (26B-A4B) es un modelo de decisión calibrada desarrollado por decido-ai, construido como un fine-tune LoRA fusionado sobre google/gemma-4-26B-A4B-it. Su propósito no es la generación libre de texto, sino la clasificación probabilística: recibe un documento y un conjunto de preguntas (sí/no, elección única u ordenadas en escala) y devuelve una distribución de probabilidad sobre cada respuesta posible. Está pensado para ejecutarse en local, incluso en CPU de portátil, con resultados deterministas bit a bit.
 
-El modelo emplea una arquitectura Mixture-of-Experts con 25.805.933.872 parámetros totales y aproximadamente 4B activos por token, lo que permite ejecutarlo en CPU de portátil con unos 30 GB de RAM en su cuantización Q8_0 GGUF. Es relevante porque ofrece una alternativa local y determinista a APIs propietarias de "decisiones" como Jev 1.13 de TypeSafe, superándola en la media de seis grupos de benchmark (85,38 frente a 83,85) y reduciendo drásticamente la sensibilidad al orden de las opciones (4,8% frente a 14,6%).
+El modelo emplea una arquitectura Mixture-of-Experts (MoE) heredada de Gemma 4, con 25.805.933.872 parámetros totales y aproximadamente 4B activos por token. Se distribuye en safetensors (bf16 para GPU) y GGUF (Q8_0 para CPU), con licencia Apache 2.0. Su relevancia radica en ofrecer una alternativa open source reproducible a modelos propietarios de decisión como Jev 1.13 de TypeSafe, superando su puntuación publicada (85,38 frente a 83,85) en el conjunto de seis grupos de benchmarks usados por la comunidad de reproducción abierta.
 
-La familia Decido 1 incluye variantes de menor tamaño (Fast, Ultra) y de mayor precisión (Max, Think, XL), todas con el mismo formato de preguntas y compatibilidad con la API de Jev. La licencia Apache-2.0 y el soporte de GGUF/llama.cpp facilitan su despliegue en producción sin dependencias de servicios externos.
+El modelo forma parte de una familia más amplia (Decido-1-Fast, Ultra, Max, Think y XL) que cubre distintos tamaños y presupuestos de cómputo. Decido-1 se posiciona como la variante equilibrada: calidad cercana a las versiones Max y Think, pero con capacidad de ejecutarse en un portátil con unos 30 GB de RAM y latencias de 4,1 s en CPU y 1,1 s en GPU Metal de un M4 Pro.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) sobre transformer, base google/gemma-4-26B-A4B-it |
-| Parametros totales | 25.805.933.872 |
-| Parametros activos | ~4B por token |
+| Arquitectura | Mixture-of-Experts (MoE) basada en Gemma 4, fine-tune LoRA fusionado |
+| Parámetros totales | 25.805.933.872 (≈25,8B) |
+| Parámetros activos | ≈4B por token |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q8_0 (publicado y evaluado); bf16 en GPU; otras cuantizaciones no disponibles |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (bf16), GGUF |
+| Tipos de cuantización | bf16 (GPU), GGUF Q8_0 (CPU) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-Decido-1 parte de Gemma-4-26B-A4B-it, un modelo MoE con 26B parámetros totales y ~4B activos por token, al que se le ha fusionado un fine-tune LoRA. El resultado conserva la arquitectura del modelo base pero se especializa en una tarea de clasificación probabilística: dada una entrada compuesta por un documento (texto o JSON) y una o varias preguntas con opciones discretas, el modelo produce una distribución de probabilidad sobre las respuestas posibles. El documento se trata como datos no confiables: las instrucciones contenidas en él no se siguen y las cadenas de tokens de control se neutralizan.
+Decido-1 parte de google/gemma-4-26B-A4B-it, un transformer con arquitectura Mixture-of-Experts en el que solo se activan aproximadamente 4B de los 25,8B parámetros totales por token procesado. Sobre esa base, decido-ai aplicó un fine-tune LoRA que posteriormente se fusionó en los pesos finales, especializando el modelo para tareas de decisión calibrada en lugar de generación conversacional abierta. El modelo base es multimodal (image-text-to-text) según los tags del repositorio, aunque la model card se centra en el uso sobre documentos de texto y JSON.
 
-El entrenamiento se orientó a calibración y robustez frente al orden de las opciones. Según la model card, el modelo cambia su respuesta al reordenar las opciones solo un 4,8% de las veces, frente al 14,6% de Jev 1.13, y es determinista bit a bit en CPU. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO. El formato de preguntas soportado incluye `noul` (sí/no), `choice` con 1–255 opciones y `score` con 2–10 niveles, compatible con el wire format de Jev 1.13.
+El entrenamiento está orientado a producir probabilidades calibradas y deterministas. La model card destaca que el modelo trata el documento de entrada como datos no confiables: las instrucciones contenidas en el documento no se siguen y las cadenas de tokens de control se neutralizan, lo que reduce el riesgo de inyección de prompts. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO. La calibración se evalúa mediante la estabilidad frente a la reordenación de opciones: Decido-1 cambia su respuesta el 4,8% de las veces al reordenar opciones, frente al 14,6% de Jev 1.13.
 
 ## Capacidades
 
-- Decisión calibrada sobre documentos: devuelve probabilidades para preguntas de sí/no, elección única y escalas ordenadas.
-- Clasificación multi-pregunta: procesa varias preguntas sobre un mismo documento en una sola llamada.
-- Entrada multimodal texto/JSON: el documento de entrada puede ser texto plano o JSON estructurado.
-- Robustez frente a inyección de prompts: el documento se trata como datos no confiables y las instrucciones embebidas se ignoran.
-- Determinismo: la inferencia en CPU con Q8_0 es bit a bit reproducible.
-- Compatibilidad con la API de Jev 1.13 mediante `decido serve` (endpoint `POST /v1/systemone`).
-- Ejecución local en CPU de portátil (~30 GB RAM) y en GPU (Metal en Apple Silicon, CUDA con bf16).
-- Capacidades multilingües: limitadas al inglés según la model card.
-- No está orientado a generación de texto libre, razonamiento abierto, código ni tool calling; su salida es una distribución de probabilidad.
+- Clasificación probabilística de documentos: devuelve una probabilidad para cada respuesta posible en lugar de una etiqueta discreta.
+- Preguntas de tipo sí/no (formato `noul` en el protocolo Jev 1.13).
+- Elección única entre 1 y 255 opciones (`choice`), con probabilidades y nivel de confianza.
+- Escalas ordenadas de 2 a 10 niveles (`score`), con leyenda asociada.
+- Entrada de documentos en texto plano o JSON, tratados como datos no confiables.
+- Determinismo bit a bit en la versión CPU (Q8_0 GGUF): misma entrada, misma salida.
+- Compatibilidad con el wire format de Jev 1.13 a través de `m.predict()` y de la API HTTP `POST /v1/systemone`.
+- Ejecución en CPU de portátil, GPU Metal en Apple Silicon y GPU CUDA con pesos bf16.
+- Soporte de tooling vía paquete `decido-ai` (Python), CLI (`decido run`, `decido serve`) y API HTTP compatible con clientes Jev existentes.
+- Capacidad multimodal heredada del modelo base (image-text-to-text), aunque la model card no documenta flujos de visión específicos.
 
 ## Casos de uso
 
-- Triaje de tickets de soporte: dado el texto de una reclamación, responder preguntas como "¿solicita un reembolso?" (sí/no), "¿qué equipo debe gestionarlo?" (billing/shipping/tech) y "¿qué urgencia tiene?" (escala), todo en una sola llamada y con probabilidades calibradas para umbralizar decisiones.
-- Enrutamiento automático de correo entrante: clasificar cada mensaje en departamentos con una escala de confianza, usando la distribución de probabilidad para derivar a revisión humana cuando la confianza es baja.
-- Moderación de contenido con criterios múltiples: aplicar varias preguntas binarias y de escala sobre un texto para decidir si se publica, se revisa o se bloquea, con umbrales ajustables según la probabilidad devuelta.
-- Extracción de decisiones sobre contratos o formularios JSON: evaluar condiciones ("¿el contrato incluye cláusula de renovación automática?") sobre documentos estructurados, aprovechando el tratamiento del documento como dato no confiable.
-- Clasificación de encuestas y respuestas abiertas: mapear respuestas de texto libre a escalas ordenadas (satisfacción, intención de compra) con probabilidades por nivel, útil para análisis estadístico agregado.
-- Validación de pipelines de datos: verificar de forma determinista que registros JSON cumplen criterios predefinidos antes de ingerirlos en un sistema downstream, con resultados reproducibles bit a bit en CPU.
-- Despliegue en entornos sin GPU: ejecutar el modelo en portátiles o servidores sin acelerador gracias a la cuantización Q8_0 GGUF (~30 GB RAM), con latencias de 4,1 s en CPU y 1,1 s en GPU Metal de un M4 Pro para un documento de 1k tokens y 5 preguntas.
+- Triaje de tickets de soporte: dado el texto de una reclamación, el modelo devuelve la probabilidad de que sea una solicitud de reembolso, el equipo al que debe asignarse y su nivel de urgencia en una sola pasada, como muestra el ejemplo de la model card con la reclamación de un cobro duplicado.
+- Enrutamiento de correo entrante: clasificación de mensajes en categorías predefinidas (facturación, envíos, técnico) con probabilidades que permiten aplicar umbrales de confianza y derivar los casos ambiguos a revisión humana.
+- Moderación y cumplimiento documental: evaluación de si un contrato o política cumple una serie de criterios binarios, aprovechando el tratamiento del documento como dato no confiable para evitar que el contenido manipule la decisión.
+- Extracción de señales estructuradas de documentos JSON: el modelo acepta documentos en JSON y devuelve respuestas tipadas según el formato Jev, lo que facilita integrarlo en pipelines de datos existentes.
+- Sustitución local de APIs propietarias de decisión: al exponer `decido serve` un endpoint compatible con Jev (`TYPESAFE_BASE_URL=http://127.0.0.1:8080`), los clientes existentes de TypeSafe pueden apuntar al modelo sin cambios de código, con la ventaja de ejecución local y licencia Apache 2.0.
+- Automatización en portátil sin GPU: con unos 30 GB de RAM y el GGUF Q8_0, el modelo corre en CPU con 4,1 s de latencia para un documento de 1k tokens y 5 preguntas, adecuado para herramientas de escritorio o entornos sin acceso a GPU.
+- Evaluación de riesgo en flujos de agentes: uso de las probabilidades calibradas como señal para que un sistema mayor decida si continuar, escalar o detenerse, gracias al determinismo bit a bit de la versión CPU.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card sobre seis grupos de benchmark (JevBench, Kev, OpenJev, Nimble, VitaminC, MASSIVE-en), comparados con Jev 1.13:
+Los resultados se miden sobre seis grupos de benchmarks usados por la comunidad de reproducción abierta de Jev (JevBench, Kev, OpenJev text tasks, Nimble, VitaminC, MASSIVE-en), con copias congeladas y el mismo harness para todos los modelos. La puntuación es la media de las métricas de tipo accuracy por grupo.
 
 | Grupo de benchmark | Decido-1 CPU (Q8_0 GGUF) | Decido-1 GPU (bf16) | Jev 1.13 (publicado) |
 |---|---:|---:|---:|
 | JevBench | 87,61 | 88,17 | 87,18 |
 | Kev | 84,35 | 84,46 | 85,52 |
-| OpenJev (18 tareas) | 78,37 | 78,39 | 72,96 |
-| Nimble | 87,23 | 88,65 | 91,84 |
-| VitaminC | 86,14 | 87,15 | 78,46 |
-| MASSIVE | 88,57 | 88,57 | 87,14 |
-| Media de los seis grupos | 85,38 | 85,90 | 83,85 |
+| OpenJev text tasks | no disponible | no disponible | no disponible |
+| Nimble | no disponible | no disponible | no disponible |
+| VitaminC | no disponible | no disponible | no disponible |
+| MASSIVE-en | no disponible | no disponible | no disponible |
+| Media de los seis grupos | 85,38 | no disponible | 83,85 |
 
-Latencia en M4 Pro (documento de 1k tokens, 5 preguntas): 4,1 s en CPU y 1,1 s en GPU Metal. La GPU Metal coincide con el archivo CPU en el 98,5–99,5% de las preguntas del benchmark y es determinista entre llamadas.
+Datos adicionales de rendimiento:
+
+| Métrica | Valor |
+|---|---|
+| Latencia CPU (M4 Pro, documento 1k tokens, 5 preguntas) | 4,1 s |
+| Latencia GPU Metal (M4 Pro, mismas condiciones) | 1,1 s |
+| Tasa de cambio al reordenar opciones | 4,8% (Jev 1.13: 14,6%) |
+| Concordancia Metal vs CPU | 98,5–99,5% de las preguntas |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: ~30 GB de RAM para la cuantización Q8_0 GGUF en CPU; pesos bf16 en GPU requieren aproximadamente 52 GB (estimación a partir de los 25,8B parámetros).
-- GPU recomendadas: no especificadas en la información disponible; el modelo se ha validado en Apple Silicon (Metal) y en CUDA con bf16. Para bf16 en CUDA se necesitan GPUs de 80 GB (A100/H100) o configuraciones equivalentes.
-- GPU de consumo: la ruta consumer validada es Apple Silicon (M4 Pro, 1,1 s por consulta). No hay datos publicados para RTX 4090 u otras GPU de consumo.
-- Opciones de despliegue: paquete `decido-ai` (pip), `decido run` (CLI), `decido serve` (API HTTP compatible con Jev), llama.cpp para GGUF, transformers para bf16 en GPU, y `example_transformers.py` incluido en el repo.
-- Latencia y throughput: 4,1 s (CPU) y 1,1 s (GPU Metal) por documento de 1k tokens con 5 preguntas en un M4 Pro. Throughput no disponible.
+- VRAM/RAM estimada: unos 30 GB de RAM para la versión CPU con GGUF Q8_0; los pesos bf16 del repositorio ocupan 80,5 GB en total (incluye múltiples formatos), por lo que la inferencia en GPU requiere memoria suficiente para los pesos bf16.
+- GPU recomendadas: no se especifican modelos concretos; la model card menciona ejecución CUDA con `device="cuda"` y pesos bf16, y ejecución en GPU Metal de Apple Silicon.
+- Cabe en consumer GPU: no confirmado en la información disponible; el tamaño de pesos bf16 (≈51,6 GB para 25,8B parámetros) supera la VRAM de la mayoría de GPUs de consumo, aunque la arquitectura MoE con 4B activos podría permitir estrategias de offloading no documentadas.
+- Despliegue: paquete `decido-ai` (Python, con extra `[gpu]` para CUDA), CLI `decido run` y `decido serve` (API HTTP compatible con Jev), llama.cpp (GGUF), transformers (pesos bf16). No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: 4,1 s por consulta en CPU (M4 Pro) y 1,1 s en GPU Metal para un documento de 1k tokens con 5 preguntas; no se publica throughput agregado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Base | Parámetros | Contexto | Puntuación seis grupos | Licencia | Despliegue |
+| Modelo | Base | Parámetros | Contexto | Puntuación seis grupos | Licencia | Ejecución |
 |---|---|---|---:|---:|---|---|
-| Decido-1 (este) | Gemma-4-26B-A4B | 25,8B totales / ~4B activos | no disponible | 85,38 (CPU) | Apache-2.0 | CPU (~30 GB RAM), GPU |
-| Decido-1-Max | Gemma-4-26B-A4B | 25,8B totales / ~4B activos | no disponible | 89,23 (GPU) | Apache-2.0 | GPU (ruta GPU en desarrollo) |
-| Decido-1-Think | Gemma-4-26B-A4B | 25,8B totales / ~4B activos | no disponible | 88,71 (GPU) | Apache-2.0 | CPU (lento), GPU |
-| Decido-1-Fast | Qwen3-1.7B | 1,7B | no disponible | 73,01 (CPU) | Apache-2.0 | CPU (~8 GB RAM) |
-| Jev 1.13 (TypeSafe) | no disponible | no disponible | no disponible | 83,85 (publicado) | propietaria | API |
+| Decido-1 (este) | Gemma-4-26B-A4B | 25,8B totales / ≈4B activos | no disponible | 85,38 (CPU) | Apache 2.0 | CPU portátil (~30 GB RAM), GPU |
+| Decido-1-Max | Gemma-4-26B-A4B | 25,8B totales / ≈4B activos | no disponible | 89,23 (GPU) | no disponible en la información | Portátil (lento), GPU |
+| Decido-1-Think | Gemma-4-26B-A4B | 25,8B totales / ≈4B activos | no disponible | 88,71 (GPU) | no disponible en la información | Portátil (lento), GPU |
+| Decido-1-Fast | Qwen3-1.7B | 1,7B | no disponible | 73,01 (CPU) | no disponible en la información | CPU portátil (~8 GB RAM) |
+| Jev 1.13 (TypeSafe) | propietario | no disponible | no disponible | 83,85 (publicado) | propietaria | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés; no se han publicado capacidades multilingües.
-- No es un modelo generativo: no produce texto libre, código ni razonamiento abierto. Usarlo fuera de la tarea de decisión cerrada no es adecuado.
-- Riesgo de calibración deficiente fuera de la distribución de los benchmarks: las probabilidades pueden no reflejar la incertidumbre real en dominios no representados.
-- Aunque el modelo trata el documento como dato no confiable, la robustez frente a inyección de prompts no es absoluta y debe complementarse con validación externa.
-- El determinismo bit a bit solo está garantizado en CPU con Q8_0; la ruta Metal coincide con CPU en el 98,5–99,5% de las preguntas, no en el 100%.
-- El rendimiento en GPU bf16 requiere hardware de gama alta (~52 GB de pesos); la ruta consumer validada se limita a Apple Silicon.
-- La licencia Apache-2.0 permite uso comercial, pero el modelo base Gemma-4 puede tener condiciones adicionales que deben verificarse.
-- No hay datos publicados sobre sesgos, composición del dataset de entrenamiento ni evaluación de seguridad.
-- `inference: false` en la model card indica que el pipeline de transformers estándar no está configurado para uso directo; se requiere el paquete `decido-ai` o el ejemplo incluido.
+- Solo soporta inglés; no se documenta cobertura multilingüe.
+- Diseñado exclusivamente para decisión calibrada: no es un modelo de generación libre ni de conversación abierta, pese al tag `conversational`.
+- La model card no documenta sesgos conocidos, pero al derivar de Gemma 4 hereda los sesgos del modelo base y de sus datos de entrenamiento.
+- Riesgo de alucinación no evaluado en la información disponible; las salidas son distribuciones de probabilidad, no texto generado, lo que reduce pero no elimina el riesgo de clasificaciones erróneas.
+- Longitud de contexto no especificada: no se puede garantizar el comportamiento con documentos largos.
+- El determinismo bit a bit solo está garantizado en la ruta CPU con GGUF Q8_0; la ruta GPU Metal concuerda con CPU en el 98,5–99,5% de las preguntas, no al 100%.
+- La etiqueta `inference: false` en los metadatos del repositorio indica que la inferencia estándar de transformers no está soportada directamente; se requiere el paquete `decido-ai` o el script `example_transformers.py`.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Gemma 4 de Google, cuyos términos pueden imponer restricciones adicionales.
+- El modelo trata los documentos como datos no confiables, pero no se documenta el alcance completo de las defensas frente a inyección de prompts.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/decido-ai/decido-1-26b-a4b
-- Colección Decido 1: https://huggingface.co/collections/decido-ai/decido-1-6aed66fd09af05c057795ca8
 - Documentación y playground: https://getdecido.ai
 - Paquete PyPI: https://pypi.org/project/decido-ai/
+- Colección Decido 1: https://huggingface.co/collections/decido-ai/decido-1-6aed66fd09af05c057795ca8
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Decido-1-Fast: https://huggingface.co/decido-ai/decido-1-fast-1.7b
 - Decido-1-Ultra: https://huggingface.co/decido-ai/decido-1-ultra-0.6b
 - Decido-1-Max: https://huggingface.co/decido-ai/decido-1-max-26b-a4b
 - Decido-1-Think: https://huggingface.co/decido-ai/decido-1-think-26b-a4b
 - Decido-1-XL: https://huggingface.co/decido-ai/decido-1-xl
+- Decido-Web v2: https://huggingface.co/decido-ai/decido-web-v2
+- Decido-Web v2-Fast: https://huggingface.co/decido-ai/decido-web-v2-fast

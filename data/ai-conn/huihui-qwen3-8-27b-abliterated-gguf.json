@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 170,
+  "downloads_30d": 180,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "OpenAI | Research & Deployment",
-      "url": "https://openai.com/",
-      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.Read more"
-    },
-    {
-      "title": "‎Google Gemini",
-      "url": "https://gemini.google.com/",
-      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
-    },
-    {
-      "title": "ChatGPT: Chat, Work, Create & Code with AI",
-      "url": "https://chatgpt.com/",
-      "snippet": "What’s on your mind today? What’s on your mind today? ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats …"
-    },
-    {
-      "title": "DeepAI",
-      "url": "https://deepai.org/",
-      "snippet": "Whether you are a hobbyist, a professional artist, or a developer integrating AI into your product, DeepAI delivers advanced …"
-    },
-    {
-      "title": "Perplexity AI",
-      "url": "https://www.perplexity.ai/",
-      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
-    }
-  ]
+  "sources": []
 }

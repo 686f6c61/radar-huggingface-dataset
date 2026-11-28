@@ -2,86 +2,88 @@
 
 ## Resumen
 
-`silvann_tq_D8E4_qwen3.6_35b_a3b` es un empaquetado cuantizado del modelo Qwen/Qwen3.6-35B-A3B, publicado por el usuario eval-apply. No se trata de un modelo nuevo ni de un fine-tune: el repositorio solo cambia cómo se almacenan los pesos del modelo original de Qwen, aplicando una política de cuantización mixta denominada D8E4 (matrices densas a 8 bits, expertos enrutados a 4 bits). El resultado ocupa unos 19 GB en disco y el repositorio completo pesa 37,8 GB.
+`silvann_tq_D8E4_qwen3.6_35b_a3b` es un empaquetado cuantizado del modelo Qwen/Qwen3.6-35B-A3B, publicado por el usuario eval-apply para el motor de inferencia SiLVANN (Eval-Apply GPU Interpreter y su librería de redes neuronales). No se trata de un modelo nuevo ni de un fine-tune: el repositorio solo cambia cómo se almacenan los pesos del modelo original de Qwen, que conserva toda la autoría y la licencia Apache 2.0. El objetivo es reducir el espacio en disco y el ancho de banda de lectura para servir el modelo en hardware modesto.
 
-La relevancia de esta ficha no está en el modelo base, sino en el formato de empaquetado: `silvann-packed-v3`, un contenedor específico para el motor SiLVANN (Eval-Apply GPU Interpreter y su librería de redes neuronales). No es legible por `transformers` ni por las herramientas habituales (vLLM, llama.cpp, Ollama), lo que restringe su uso al runtime propietario de SiLVANN v0.18.0 o superior.
+La cuantización sigue una política mixta denominada D8E4: las matrices de cada experto enrutado se guardan a 4 bits por peso con TurboQuant y escala por fila, mientras que el resto de matrices (proyecciones de atención, proyecciones DeltaNet, experto compartido, embedding y cabeza de salida) se mantienen a 8 bits, cada una rotada a lo largo de su eje de entrada mediante una rotación bloqueada de Hadamard y signos. Las normas, el router y otras tensores pequeños se conservan sin pérdida. El resultado ocupa unos 19 GB frente a los 37,8 GB del repositorio, que incluye otros artefactos.
 
-El modelo base es un Mixture-of-Experts de Qwen con 35B de parámetros totales y 3B activos por token, presumiblemente con capas de atención y DeltaNet (así se deduce de la política de cuantización descrita en la model card). La licencia Apache 2.0 del original se mantiene.
+La relevancia de esta ficha es doble: documenta una técnica de compresión aplicable a modelos MoE grandes y advierte de una restricción práctica importante, ya que el formato `silvann-packed-v3` no es legible por transformers ni por las herramientas habituales del ecosistema, sino únicamente por el runtime de SiLVANN a partir de la versión v0.18.0.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (modelo base Qwen3.6-35B-A3B; la model card menciona proyecciones de atención y DeltaNet) |
-| Parametros totales | 35B (modelo base) |
-| Parametros activos | 3B (modelo base, según denominación A3B) |
+| Arquitectura | MoE basada en transformer con proyecciones DeltaNet (heredada de Qwen3.6-35B-A3B); empaquetado propio del motor SiLVANN |
+| Parámetros totales | 35B (modelo base); no disponible el desglose exacto |
+| Parámetros activos | 3B (modelo base, según el sufijo A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mixta D8E4: expertos enrutados a 4 bits (TurboQuant, escala por fila); matrices densas (atención, DeltaNet, experto compartido, embedding y head) a 8 bits; normas, router y tensores pequeños sin pérdida |
+| Tipos de cuantización | Mixta D8E4: 4 bits (TurboQuant, escala por fila) en expertos enrutados; 8 bits en atención, DeltaNet, experto compartido, embedding y cabeza; sin pérdida en normas, router y tensores pequeños |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `silvann-packed-v3` (`pack.json`, `layers/NNN/`, `global.pkl`); no compatible con safetensors ni GGUF |
+| Formato de pesos | `silvann-packed-v3` (`pack.json`, `layers/NNN/`, `global.pkl`); no compatible con transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE de Qwen con 35B de parámetros totales y 3B activos, que combina capas de atención con capas DeltaNet (una variante de atención lineal/estado recurrente) según se desprende de la descripción del empaquetado. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO: esos datos pertenecen a la model card del modelo original, que no se ha proporcionado.
+El modelo subyacente es Qwen3.6-35B-A3B, un MoE de 35B parámetros totales con 3B activos por token, que combina capas de atención con proyecciones DeltaNet. El repositorio no aporta información sobre el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF o DPO); esa información corresponde a la model card original de Qwen, no incluida aquí.
 
-La innovación técnica de este repositorio es el códec de cuantización: cada matriz se rota a lo largo de su eje de entrada con una rotación bloqueada de Hadamard y signos antes de cuantizarse, lo que reduce los valores atípicos y mejora la fidelidad a 4 y 8 bits. Los expertos enrutados se almacenan como registros independientes, de modo que cada experto leído de disco requiere una sola lectura; según el autor, esta disposición del formato v3 permitió que el modelo de 122B respondiera un 15 % más rápido desde un array NVMe en comparación con los packs anteriores, que agrupaban los expertos por tensor y requerían cuatro lecturas por experto.
+La innovación de este repositorio es exclusivamente de almacenamiento. Cada experto enrutado se guarda como un registro independiente, dispuesto tal como lo espera el slot del motor, de modo que leer un experto del disco requiere una sola lectura. Según el autor, esta disposición permitió que el modelo de 122B respondiera un 15 % más rápido desde un array NVMe que con los packs anteriores, que apilaban los expertos de cada capa por tensor y leían un experto en cuatro piezas. Además, cada matriz se rota con una transformación bloqueada de Hadamard y signos a lo largo de su eje de entrada, técnica habitual para reducir el error de cuantización en pesos de baja precisión. El tokenizador, la plantilla de chat y las configuraciones son los del modelo original.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: heredadas del modelo base Qwen3.6-35B-A3B; no verificadas en este empaquetado.
-- Capacidades de código y matemáticas: presumibles por la familia Qwen, pero no documentadas en este repositorio.
-- Tool calling y function calling: no documentado en este repositorio.
-- Soporte de agentes y razonamiento multi-paso: no documentado en este repositorio.
-- Capacidades multilingües: no documentadas; el campo de idiomas no está disponible.
-- Visión: la model card menciona que `global.pkl` incluye la torre de visión, lo que sugiere que el modelo base es multimodal, aunque no se detalla su funcionamiento en este formato.
-- Modo thinking: no documentado en este repositorio.
+- Generación de texto y razonamiento: heredadas del modelo base Qwen3.6-35B-A3B, aunque no se detallan en la información disponible.
+- Codificación y matemáticas: presumiblemente presentes por la familia del modelo base, pero no documentadas en este repositorio.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; el repositorio no declara idiomas.
+- Visión: el pack incluye una torre de visión dentro de `global.pkl`, lo que sugiere que el modelo base es multimodal, pero no se detalla su funcionamiento ni su calidad.
+- Modo thinking: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue en infraestructura con SiLVANN: el caso de uso principal y prácticamente exclusivo es servir el modelo con el runtime SiLVANN v0.18.0 o superior, que es el único capaz de leer el formato `silvann-packed-v3`.
-- Inferencia en GPU con presupuesto de memoria ajustado: con unos 19 GB de pesos empaquetados, el modelo cabe en GPUs de 24 GB (RTX 4090, L4, A10G) si el runtime y las cachés de activaciones lo permiten, algo que no ocurriría con el modelo en precisión completa.
-- Servicio desde almacenamiento NVMe: el diseño de registros por experto y la lectura única por experto hacen que este pack sea adecuado para despliegues que cargan expertos bajo demanda desde disco en lugar de mantener todos los pesos en VRAM.
-- Evaluación comparativa de cuantización: útil para medir la degradación de calidad de la política D8E4 frente al modelo original en tareas de razonamiento y generación, siempre que se use el runtime adecuado.
-- Investigación sobre formatos de pesos: sirve como referencia práctica de un esquema de cuantización mixta con rotaciones Hadamard y política de anchura por tensor.
-- Archivado y distribución del modelo base con menor huella de almacenamiento: 19 GB frente al tamaño del original en precisión completa, con la ventaja de conservar normas y router sin pérdida.
+- Despliegue en servidores con poca VRAM: al ocupar unos 19 GB, el pack permite servir un MoE de 35B con 3B activos en GPUs de 24 GB o en configuraciones multi-GPU modestas, algo inviable con los pesos en bf16.
+- Inferencia desde almacenamiento NVMe: la disposición de cada experto como registro único reduce las lecturas por experto, lo que resulta adecuado para servir el modelo desde discos rápidos cuando la VRAM no permite mantener todos los pesos residentes.
+- Experimentación con cuantización mixta: sirve como referencia práctica para estudiar el impacto de 4 bits en expertos frente a 8 bits en atención y capas densas, con rotaciones Hadamard para mitigar el error.
+- Investigación sobre motores de inferencia alternativos: útil para evaluar SiLVANN frente a vLLM o llama.cpp en términos de latencia y throughput con modelos MoE.
+- Prototipado de asistentes conversacionales: el tokenizador y la plantilla de chat originales permiten reutilizar los mismos prompts que con el modelo Qwen base, siempre que se ejecute sobre SiLVANN.
+- Pruebas de pipelines multimodales: la presencia de la torre de visión en el pack abre la puerta a experimentos con entrada de imagen, aunque la información disponible no detalla su soporte.
+- Evaluación comparativa de calidad tras cuantización: permite medir la degradación respecto al modelo original en tareas de razonamiento y generación, aunque no se publican resultados al respecto.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La única métrica de rendimiento mencionada es la mejora del 15 % en velocidad de respuesta del modelo de 122B con el formato v3 respecto a packs anteriores, medida por el autor sobre un array NVMe y no aplicable directamente a este modelo de 35B.
+No se han publicado resultados de benchmarks en la información disponible. El único dato de rendimiento es la afirmación del autor de que el modelo de 122B respondió un 15 % más rápido con la disposición de expertos por registro que con los packs anteriores, medida sobre un array NVMe; no se aportan cifras de latencia, throughput ni calidad para este modelo concreto.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos empaquetados ocupan unos 19 GB; hay que añadir caché KV y activaciones, por lo que se recomienda un mínimo de 24 GB de VRAM para inferencia completa en GPU.
-- GPU recomendadas: RTX 4090 (24 GB), L4 (24 GB), A10G (24 GB) para despliegues ajustados; A100 (40/80 GB) y H100 (80 GB) para mayor margen de contexto y concurrencia.
-- GPU de consumo: cabe en RTX 4090 y, presumiblemente, en RTX 3090 (24 GB); no cabe en GPUs de 16 GB o menos sin offloading.
-- Opciones de despliegue: únicamente el runtime SiLVANN v0.18.0 o superior. No es compatible con vLLM, llama.cpp, Ollama, TGI ni `transformers`.
-- Latencia y throughput: no disponibles para este modelo; el autor solo reporta una mejora relativa del 15 % en el modelo de 122B con el formato v3.
+- VRAM estimada: unos 19 GB solo para los pesos empaquetados; hay que añadir la caché KV y los buffers del runtime, por lo que un despliegue cómodo requiere 24 GB o más.
+- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, encajan GPUs de 24 GB (RTX 4090, A10G, L4 en configuraciones ajustadas) y, con más margen, A100 o H100.
+- ¿Cabe en GPU de consumo? Sí, previsiblemente en una RTX 4090 de 24 GB, aunque el margen para contexto largo es limitado; no se confirma en la documentación.
+- Opciones de despliegue: exclusivamente el runtime SiLVANN v0.18.0 o posterior; no es compatible con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; el autor solo menciona una mejora relativa del 15 % en el modelo de 122B al leer expertos desde NVMe.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| silvann_tq_D8E4_qwen3.6_35b_a3b | 35B totales / 3B activos | no disponible | silvann-packed-v3 | Apache 2.0 | Solo runtime SiLVANN |
-| Qwen/Qwen3.6-35B-A3B (original) | 35B totales / 3B activos | no disponible | safetensors (presumible) | Apache 2.0 | `transformers`, vLLM, TGI, etc. |
-| eval-apply/Qwen3.6-35B-A3B_silvann_tq_D8E4 | 35B totales / 3B activos | no disponible | silvann-packed-v3 | Apache 2.0 | Solo runtime SiLVANN |
-| eval-apply/Qwen3.5-122B-A10B_silvann_tq_D8E4 | 122B totales / 10B activos | no disponible | silvann-packed-v3 | Apache 2.0 | Solo runtime SiLVANN |
+| Modelo | Parámetros | Activos | Contexto | Formato | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| silvann_tq_D8E4_qwen3.6_35b_a3b | 35B | 3B | no disponible | silvann-packed-v3 (~19 GB) | Apache 2.0 | Solo SiLVANN v0.18.0+ |
+| Qwen/Qwen3.6-35B-A3B (base) | 35B | 3B | no disponible | safetensors | Apache 2.0 | transformers y ecosistema estándar |
+| Cuantizaciones GGUF del modelo base | 35B | 3B | no disponible | GGUF | Apache 2.0 | llama.cpp, Ollama y derivados |
 
-La diferencia frente al original no está en capacidades ni en parámetros, sino en el formato y el peso en disco. La comparación con el pack de 122B del mismo autor resulta útil para elegir escala: el de 35B cabe en GPUs de 24 GB, mientras que el de 122B requiere infraestructura mayor.
+La comparación se limita a aspectos de empaquetado y compatibilidad, ya que no hay datos de rendimiento publicados para este pack. Frente al modelo base, la ventaja es el tamaño reducido (19 GB frente a los pesos completos) y la desventaja es la dependencia de un runtime específico. Frente a cuantizaciones GGUF, la diferencia principal es el ecosistema de herramientas: GGUF funciona en llama.cpp y Ollama, mientras que este pack solo funciona en SiLVANN.
 
 ## Limitaciones y advertencias
 
-- Dependencia total del runtime SiLVANN: el formato `silvann-packed-v3` no lo lee `transformers`, y por tanto tampoco vLLM, llama.cpp, Ollama ni TGI. Sin SiLVANN v0.18.0 o superior el modelo es inutilizable.
-- Compatibilidad hacia atrás parcial: una copia descargada antes de v0.18.0 sigue funcionando con versiones posteriores, pero no al revés.
-- Cuantización con pérdida: los expertos enrutados se almacenan a 4 bits, lo que puede degradar la calidad frente al modelo original; no se han publicado evaluaciones que cuantifiquen esa pérdida.
-- Sesgos y alucinaciones: no documentados en este repositorio; son los heredados del modelo base Qwen3.6-35B-A3B y deben evaluarse por separado.
-- Idiomas y contexto: no disponibles en la información proporcionada; conviene consultar la model card del modelo original antes de usarlo en producción multilingüe o con contextos largos.
-- Licencia: Apache 2.0, que permite uso comercial, pero el autor del pack no ofrece garantías sobre el comportamiento del formato ni sobre el runtime.
-- Repositorio de bajo uso: 106 descargas y 0 likes en el momento de la consulta, lo que reduce la validación comunitaria del empaquetado.
+- Compatibilidad restringida: el formato `silvann-packed-v3` no se lee con transformers, vLLM, llama.cpp, Ollama ni TGI; requiere SiLVANN v0.18.0 o superior.
+- Pérdida de precisión: los expertos enrutados están a 4 bits, lo que puede degradar la calidad respecto al modelo original; no se publican evaluaciones que cuantifiquen esa pérdida.
+- Idiomas no declarados: el repositorio no especifica qué idiomas soporta, aunque el modelo base probablemente sea multilingüe.
+- Contexto desconocido: no se indica la longitud de contexto soportada, dato crítico para planificar despliegues.
+- Sesgos y alucinaciones: no hay información específica en este repositorio; deben asumirse los del modelo base Qwen3.6-35B-A3B, no documentados aquí.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor recuerda que toda la autoría del modelo corresponde al equipo de Qwen y que este repositorio solo cambia el almacenamiento de los pesos.
+- Mantenimiento: se trata de un pack de un usuario independiente (eval-apply), no de un artefacto oficial de Qwen; la continuidad y el soporte dependen de ese autor.
+- Visión: la torre de visión está incluida en el pack, pero no se documenta su funcionamiento ni su calidad tras la cuantización.
 
 ## Enlaces
 
-- Repositorio del modelo: https://huggingface.co/eval-apply/silvann_tq_D8E4_qwen3.6_35b_a3b
+- Repositorio Hugging Face: https://huggingface.co/eval-apply/silvann_tq_D8E4_qwen3.6_35b_a3b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Pack equivalente sin sufijo de autor: https://huggingface.co/eval-apply/Qwen3.6-35B-A3B_silvann_tq_D8E4
-- Pack del modelo de mayor escala: https://huggingface.co/eval-apply/Qwen3.5-122B-A10B_silvann_tq_D8E4
+- Motor SiLVANN (Eval-Apply): no disponible en la información proporcionada
+- Paper o blog de TurboQuant: no disponible en la información proporcionada
+- Demos: no disponible en la información proporcionada

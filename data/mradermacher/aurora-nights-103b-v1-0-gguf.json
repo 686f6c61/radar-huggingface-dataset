@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Aurora-Nights-103B-v1.0-GGUF",
+  "slug": "mradermacher-aurora-nights-103b-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Aurora-Nights-103B-v1.0-GGUF",
+  "created_at": "2024-12-12T04:00:44.000Z",
+  "updated_at": "2026-11-28T03:05:23.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:sophosympatheia/Aurora-Nights-103B-v1.0",
+    "base_model:quantized:sophosympatheia/Aurora-Nights-103B-v1.0",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 103202824192,
+  "parameters_human": "103.20B",
+  "storage_bytes": 700369961632,
+  "storage_human": "700.4 GB",
+  "context_length": 4096,
+  "base_model": "sophosympatheia/Aurora-Nights-103B-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

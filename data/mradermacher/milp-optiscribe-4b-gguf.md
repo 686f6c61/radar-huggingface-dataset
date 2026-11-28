@@ -2,49 +2,52 @@
 
 ## Resumen
 
-MILP-OptiScribe-4B-GGUF es la version cuantizada en formato GGUF del modelo MILP-OptiScribe-4B, publicado por el usuario mradermacher a partir de los pesos originales de PSquare-SinglaLab-IITR. Se trata de un modelo conversacional de aproximadamente 4.205 millones de parametros (4,2 B), orientado por su nombre a tareas de optimizacion lineal entera mixta (MILP, por sus siglas en ingles) y generacion de texto tecnico. La ficha del repositorio no incluye informacion sobre arquitectura base, datos de entrenamiento ni licencia.
+MILP-OptiScribe-4B es un modelo de lenguaje especializado en la generacion de instancias de programacion lineal entera mixta (MILP, por sus siglas en ingles). Lo desarrolla el grupo PSquare-SinglaLab-IITR y esta afinado mediante aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) sobre una base de 4.205.751.296 parametros. Su proposito es automatizar una de las tareas mas tediosas en investigacion operativa: redactar y estructurar descripciones de problemas de optimizacion combinatoria en formato formal.
 
-El valor practico de esta publicacion es la disponibilidad de cuantizaciones estaticas en GGUF, que permiten ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo imposible con los pesos originales en precision completa. El repositorio incluye un conjunto amplio de niveles de cuantizacion, desde Q2_K hasta Q8_0 y F16, lo que facilita ajustar el equilibrio entre calidad y memoria.
+La version aqui descrita es una cuantizacion estatica en formato GGUF publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El repositorio incluye once variantes de cuantizacion, desde Q2_K (2,1 GB) hasta f16 (8,5 GB), lo que facilita el despliegue en entornos con recursos limitados.
 
-No obstante, la informacion publica es muy escasa: no se documentan benchmarks, idiomas soportados, licencia ni detalles del entrenamiento. Cualquier evaluacion en produccion deberia partir de una validacion empirica propia antes de adoptar el modelo.
+Su relevancia actual radica en la combinacion de un dominio muy vertical (generacion de instancias MILP) con un tamano contenido de 4B parametros, lo que lo hace accesible para prototipado e integracion en pipelines de investigacion operativa sin necesidad de infraestructura de gran escala. La licencia CC-BY-NC-4.0 restringe el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo transformer conversacional, inferido por el pipeline; no confirmado en la model card) |
-| Parametros totales | 4.205.751.296 (4,2 B) |
-| Parametros activos | no aplica (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base transformer, segun tags de transformers) |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el modelo original) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, IQ4_XS, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | ingles (segun model card) |
+| Licencia | cc-by-nc-4.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo original MILP-OptiScribe-4B. Por el tamano (4,2 B de parametros) y la etiqueta de pipeline conversacional, se trata presumiblemente de un transformer decoder-only, pero la model card no confirma la familia arquitectonica, el numero de capas, las dimensiones ocultas ni el mecanismo de atencion.
+La informacion disponible no detalla la arquitectura interna del modelo base, aunque los tags de Hugging Face indican que se trata de un transformer compatible con la libreria `transformers`. El modelo base es PSquare-SinglaLab-IITR/MILP-OptiScribe-4B, con 4.205.751.296 parametros, y esta orientado a la generacion de instancias de programacion lineal entera mixta.
 
-Tampoco se documentan los datos de entrenamiento: no se indica el numero de tokens, la composicion del corpus, ni si hubo fases de ajuste fino supervisado, RLHF o DPO. El nombre sugiere una especializacion en problemas de optimizacion lineal entera mixta y en la redaccion de formulaciones o explicaciones asociadas, pero no hay evidencia publicada que lo respalde. La unica informacion tecnica verificable es el proceso de cuantizacion realizado por mradermacher, que genera variantes estaticas en GGUF a partir de los pesos en safetensors.
+El entrenamiento se realizo mediante aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization), segun los tags y la model card. Esta tecnica se emplea habitualmente para afinar el razonamiento y la adherencia a formatos en modelos de lenguaje. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases adicionales de RLHF o DPO. Las cuantizaciones publicadas son estaticas y no se han generado variantes ponderadas o con imatrix, segun indica el autor de la cuantizacion.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
-- Posible especializacion en formulacion y explicacion de problemas de optimizacion lineal entera mixta (MILP), deducida unicamente del nombre del modelo; no confirmada.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generacion de instancias de programacion lineal entera mixta (MILP/MIP) y problemas de optimizacion combinatoria.
+- Redaccion de descripciones formales de problemas de optimizacion en ingles.
+- Razonamiento guiado por refuerzo (GRPO) orientado a la correccion estructural de las instancias generadas.
+- Conversacion multi-turno (tag `conversational`).
+- Compatibilidad con endpoints (`endpoints_compatible`).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso general: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo ingles segun la model card.
+- Vision, audio o modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistencia en modelado de optimizacion: uso del modelo para redactar formulaciones de problemas MILP a partir de descripciones en lenguaje natural, generando variables, restricciones y funcion objetivo que el ingeniero revisa y valida antes de pasarlas a un solver como GLPK, CBC o Gurobi. Adecuado por su supuesta especializacion, aunque requiere verificacion manual.
-- Documentacion tecnica de modelos matematicos: generacion de explicaciones y comentarios para modelos de optimizacion existentes, util en equipos de investigacion operativa que necesitan mantener documentacion coherente.
-- Despliegue local en estaciones de trabajo sin GPU dedicada: las cuantizaciones Q4_K_M e IQ4_XS permiten ejecutar el modelo en CPU con llama.cpp, lo que facilita prototipos en entornos con recursos limitados.
-- Chatbot interno de apoyo a analistas: integracion en una interfaz conversacional para resolver dudas sobre formulaciones y terminologia de optimizacion, con contexto limitado y supervision humana.
-- Generacion de borradores de codigo para solvers: produccion de esqueletos en Python (PuLP, Pyomo) o AMPL a partir de una descripcion del problema, que el desarrollador completa y prueba.
-- Evaluacion comparativa de modelos pequenos especializados: uso del modelo como linea base en experimentos academicos sobre dominio especifico frente a modelos generalistas de tamano similar.
-- Prototipado rapido en entornos de investigacion: al ocupar poco espacio en las cuantizaciones bajas, permite iterar sobre prompts y flujos conversacionales antes de invertir en modelos mayores.
+- Generacion automatica de instancias MILP para benchmarks: el modelo puede producir descripciones de problemas de optimizacion combinatoria que sirvan como entrada a solvers como Gurobi, CPLEX o HiGHS, acelerando la creacion de conjuntos de prueba en investigacion operativa.
+- Aumento de datos para entrenamiento de solvers neuronales: al generar instancias sinteticas variadas, permite ampliar los datasets de modelos que aprenden a resolver MILP, un cuello de botella habitual en este campo.
+- Docencia en investigacion operativa: util para generar enunciados de problemas de optimizacion con estructura formal, que el alumnado debe modelar y resolver.
+- Prototipado de pipelines de optimizacion: integrado en un flujo que traduzca lenguaje natural a formulaciones MILP, el modelo actua como primer eslabon antes de la validacion con un solver.
+- Pruebas de estres de solvers: la generacion de instancias con caracteristicas controladas permite evaluar el rendimiento de solvers comerciales y open source en escenarios diversos.
+- Despliegue local en entornos de investigacion: gracias a las cuantizaciones GGUF (desde 2,1 GB en Q2_K), puede ejecutarse en estaciones de trabajo sin GPU dedicada mediante llama.cpp u Ollama, lo que facilita su uso en laboratorios con recursos limitados.
+- Experimentacion con RL aplicado a dominios verticales: sirve como referencia para estudiar como GRPO afecta a la calidad estructural en tareas de generacion formal.
 
 ## Benchmarks y rendimiento
 
@@ -52,36 +55,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,5-3 GB en Q4_K_M, 1,8-2,2 GB en Q3_K_M, 1,5 GB en Q2_K y en torno a 8,5 GB en F16 (calculado a partir de los 4,2 B de parametros; no confirmado por el autor).
-- GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060, RTX 4060, RTX 4070) para cuantizaciones medias y altas; A100 o H100 no son necesarias para este tamano.
-- Compatibilidad con GPU de consumo: si, cabe holgadamente en tarjetas de 6-8 GB e incluso en GPUs integradas con cuantizaciones Q2_K o Q3_K.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo OpenAI en algunas plataformas.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: entre 2,1 GB (Q2_K) y 8,5 GB (f16), segun la cuantizacion elegida.
+- GPU recomendadas: no disponibles en la informacion proporcionada; por tamano, cualquier GPU con al menos 4-8 GB de VRAM puede alojar las cuantizaciones Q4_K_M o Q5_K_M.
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060 (12 GB), RTX 4060 Ti (8-16 GB) o RTX 4090 (24 GB) con las cuantizaciones Q4_K_M (2,8 GB) o Q6_K (3,6 GB).
+- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers y con endpoints.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
 |---|---|---|---|---|---|
-| MILP-OptiScribe-4B-GGUF | 4,2 B | no disponible | no disponible | GGUF | Especializacion declarada en MILP, sin benchmarks publicados |
-| Qwen2.5-3B-Instruct | 3,1 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Modelo generalista con benchmarks publicados y amplia adopcion |
-| Llama 3.2 3B Instruct | 3,2 B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Generalista multilingue con tool calling y contexto largo |
-| Phi-3.5-mini-instruct | 3,8 B | 131.072 tokens | MIT | safetensors, GGUF | Generalista con buen rendimiento en razonamiento y codigo |
+| MILP-OptiScribe-4B (esta ficha) | 4,2B | no disponible | Generacion de instancias MILP | cc-by-nc-4.0 | GGUF, safetensors |
+| Modelos generalistas de 3-4B (p. ej. Llama 3.2 3B, Qwen2.5 3B) | 3-4B | 8K-128K | Proposito general | licencias permisivas | GGUF, safetensors |
+| Modelos de razonamiento matematico de 7B | ~7B | variable | Matematicas y razonamiento | variable | GGUF, safetensors |
 
-La comparacion es orientativa: no existen datos publicados de rendimiento para MILP-OptiScribe-4B que permitan situarlo frente a estas alternativas.
+La comparacion directa con alternativas especializadas en MILP no esta disponible en la informacion proporcionada. Frente a modelos generalistas del mismo tamano, la ventaja de MILP-OptiScribe-4B es su especializacion vertical; la desventaja es su licencia no comercial y su limitacion al ingles.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia publicada de calidad en ninguna tarea, incluida la de optimizacion que sugiere el nombre.
-- Licencia no especificada: no puede confirmarse si el uso comercial esta permitido; es imprescindible contactar con el autor original (PSquare-SinglaLab-IITR) antes de cualquier despliegue productivo.
-- Idiomas no documentados: se desconoce si el modelo esta entrenado en castellano o si su rendimiento en este idioma es aceptable.
-- Longitud de contexto desconocida: impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas.
-- Riesgo de alucinacion: al ser un modelo pequeno y sin evaluacion publica, la generacion de formulaciones matematicas incorrectas es un riesgo alto; toda salida debe validarse con un solver.
-- Procedencia de la cuantizacion: el repositorio es un espejo de terceros; conviene verificar la integridad de los pesos frente al modelo original.
-- Sin informacion sobre sesgos: no se documentan sesgos conocidos ni procesos de alineacion.
-- Fecha de creacion futura en los metadatos (2026-11-25): inconsistencia que conviene tener en cuenta al evaluar la trazabilidad del repositorio.
+- Licencia CC-BY-NC-4.0: prohibido el uso comercial sin autorizacion expresa del titular.
+- Solo soporta ingles segun la model card; el rendimiento en castellano no esta documentado.
+- Riesgo de alucinacion: al generar formulaciones formales, puede producir instancias sintacticamente validas pero semanticamente incorrectas o no resolubles, por lo que requiere validacion con un solver.
+- No se dispone de informacion sobre sesgos conocidos ni sobre la composicion del dataset de entrenamiento.
+- La longitud de contexto no esta documentada, lo que dificulta planificar su uso en problemas de gran escala.
+- Las cuantizaciones son estaticas; no hay variantes ponderadas ni con imatrix, lo que puede afectar a la calidad en cuantizaciones bajas (Q2_K, Q3_K_S).
+- El modelo base no ha sido evaluado con benchmarks publicos en la informacion disponible, por lo que su calidad real frente a alternativas es dificil de contrastar.
+- Uso en produccion: se recomienda validar cada instancia generada con un solver y un verificador de factibilidad antes de integrarla en pipelines automatizados.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/MILP-OptiScribe-4B-GGUF
-- Modelo original: https://huggingface.co/PSquare-SinglaLab-IITR/MILP-OptiScribe-4B
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
+- Modelo base: https://huggingface.co/PSquare-SinglaLab-IITR/MILP-OptiScribe-4B
+- Pagina de resumen de cuantizaciones: https://hf.tst.eu/model#MILP-OptiScribe-4B-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

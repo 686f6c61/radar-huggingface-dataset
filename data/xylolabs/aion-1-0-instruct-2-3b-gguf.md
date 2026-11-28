@@ -2,97 +2,99 @@
 
 ## Resumen
 
-Aion-1.0-Instruct-2.3B-GGUF es la distribucion cuantizada en formato GGUF del modelo instructivo Aion 1.0 Instruct 2.3B desarrollado por Microsoft. La publica Xylolabs, que convierte los pesos originales a GGUF para su uso con llama.cpp y anade un parche de compatibilidad, ya que la version estandar de llama.cpp no reconoce la arquitectura `aion`. El modelo resuelve el problema de ejecutar un modelo instructivo de 2.288 millones de parametros en hardware modesto, con cuantizaciones que van desde 1,01 GB (Q2_K) hasta 4,59 GB (F16).
+Aion-1.0-Instruct-2.3B-GGUF es la versión cuantizada en formato GGUF del modelo Aion-1.0-Instruct-2.3B de Microsoft, publicada por Xylolabs para su uso con llama.cpp. Se trata de un modelo de lenguaje conversacional de 2.288 millones de parámetros (aproximadamente 2,3B) afinado para instrucciones, distribuido bajo licencia MIT y con soporte declarado para ocho idiomas: inglés, alemán, español, portugués, italiano, francés, chino y japonés.
 
-Se trata de un modelo de generacion de texto orientado a conversacion, con una ventana de contexto de 32.768 tokens segun los ejemplos de ejecucion de la model card, y soporte para ocho idiomas: ingles, aleman, espanol, portugues, italiano, frances, chino y japones. La licencia es MIT, lo que facilita su uso comercial y su integracion en productos derivados.
+La relevancia de esta ficha radica en que el repositorio no contiene los pesos originales en safetensors, sino un conjunto de cuantizaciones GGUF (desde F16 hasta Q2_K) acompañadas de una matriz de importancia y, de forma destacable, un parche para llama.cpp (`aion-llama.cpp.patch`). La arquitectura `aion` no está soportada por el llama.cpp estándar, por lo que sin aplicar ese parche el modelo no se puede cargar. Este detalle condiciona por completo el despliegue y conviene tenerlo presente antes de descargar.
 
-Su relevancia actual radica en que ofrece una alternativa compacta y permisiva para despliegues en local, con un conjunto de cuantizaciones bien documentado y curvas de divergencia KL y acuerdo top-1 frente a una referencia en f32, lo que permite elegir el equilibrio entre tamano y fidelidad con datos concretos en lugar de estimaciones.
+El modelo base es `microsoft/Aion-1.0-Instruct-2.3B`. El repositorio ocupa 17,3 GB en total e incluye nueve archivos GGUF con distintos niveles de cuantización, además de gráficas de divergencia KL y acuerdos top-1 frente a una referencia en transformers f32 sobre pesos BF16. La ventana de contexto indicada en los ejemplos de ejecución es de 32 768 tokens.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | aion (arquitectura propia no estandar; requiere parche en llama.cpp) |
-| Parametros totales | 2.288.831.488 (2,29 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens (segun ejemplos de ejecucion con `-c 32768`) |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, IQ3_M, Q2_K |
+| Arquitectura | `aion` (transformer; requiere parche en llama.cpp) |
+| Parámetros totales | 2.288.831.488 (≈2,3B) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 32 768 tokens (según ejemplos de ejecución con `-c 32768`) |
+| Tipos de cuantización | F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_K_S, IQ4_XS, IQ3_M, Q2_K |
 | Idiomas soportados | en, de, es, pt, it, fr, zh, ja |
-| Licencia | MIT (texto de Microsoft, "Copyright (c) Microsoft Corporation") |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Licencia | MIT |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base mas alla de que llama.cpp la identifica como `aion` y que la version estandar no la reconoce, por lo que la distribucion incluye el parche `aion-llama.cpp.patch` para compilar contra un commit concreto de llama.cpp. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineacion.
+La información disponible no detalla la arquitectura interna del modelo base más allá del identificador `aion` que emplea llama.cpp para reconocerlo. Se sabe que es un transformer de 2.288 millones de parámetros afinado para instrucciones (Instruct), pero no se especifican en la documentación proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación.
 
-La innovacion tecnica destacable de esta ficha es el proceso de cuantizacion: Xylolabs publica una matriz de importancia (`Aion-1.0-Instruct-2.3B.imatrix.gguf`) y documenta la fidelidad de cada cuantizacion mediante divergencia KL media y acuerdo top-1 frente a una referencia en transformers f32 sobre pesos BF16, evaluando en WikiText-2, un conjunto de chat y un conjunto held-out. La plantilla de chat embebida escribe el preambulo de sistema con la fecha, y por ello se requiere el flag `--jinja` al ejecutar.
+La innovación técnica destacable de este repositorio no está en el modelo en sí, sino en el proceso de cuantización: Xylolabs publica una matriz de importancia (`Aion-1.0-Instruct-2.3B.imatrix.gguf`) y gráficas de divergencia KL y acuerdo top-1 frente a una referencia f32 en transformers sobre pesos BF16, evaluadas sobre WikiText-2, datos de chat y un conjunto held-out. Además, el repositorio incluye el parche `aion-llama.cpp.patch` que añade soporte para la arquitectura `aion` a una revisión concreta de llama.cpp (`e4b620af19f02960dea7a3a81de7c5805aa3a333`).
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, orientada a chat instructivo.
-- Razonamiento y respuesta a instrucciones en ocho idiomas (en, de, es, pt, it, fr, zh, ja).
-- Soporte de plantilla de chat integrada con preambulo de sistema que incluye la fecha.
-- Compatibilidad con el ecosistema llama.cpp mediante el parche incluido.
-- No se documentan en la informacion disponible capacidades de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito.
+- Generación de texto conversacional y seguimiento de instrucciones (modelo etiquetado como `Instruct` y `chat`).
+- Soporte multilingüe declarado en ocho idiomas: inglés, alemán, español, portugués, italiano, francés, chino y japonés.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere integración con infraestructuras de despliegue tipo API.
+- Ejecución local mediante llama.cpp con `llama-server` y `llama-cli`, incluyendo modo servidor compatible con plantillas Jinja (`--jinja` obligatorio).
+- No se documentan en la información disponible capacidades de visión, audio, tool calling, function calling ni modos de razonamiento extendido (thinking mode).
 
 ## Casos de uso
 
-- Asistente conversacional en local para estaciones de trabajo: con la cuantizacion Q4_K_M (1,57 GB) el modelo cabe en GPUs de consumo de 8 GB o menos y permite mantener conversaciones multi-turno con hasta 32K tokens de contexto, util para prototipos sin dependencia de la nube.
-- Despliegue en dispositivos con memoria unificada: en un Mac Studio o en un DGX Spark, la version F16 (4,59 GB) se ejecuta con contexto completo de 32K, adecuada para entornos de desarrollo donde se prioriza la fidelidad sobre el tamano.
-- Generacion de texto en aplicaciones embebidas o de borde: las cuantizaciones IQ3_M (1,18 GB) y Q2_K (1,01 GB) permiten integrar el modelo en dispositivos con recursos limitados, aceptando la perdida de fidelidad documentada (acuerdo top-1 del 89,40% y 79,48% respectivamente en WikiText-2).
-- Traduccion y asistencia multilingue: al cubrir ocho idiomas, puede emplearse para tareas de traduccion o redaccion asistida entre pares como espanol-aleman o ingles-japones, aunque sin datos de benchmarks especificos por idioma.
-- Servicio de chat autohospedado con llama-server: el comando documentado levanta un endpoint compatible con clientes HTTP, lo que permite montar una API interna de conversacion con control total sobre los datos.
-- Evaluacion y experimentacion academica: la publicacion de curvas de divergencia KL y acuerdo top-1 por cuantizacion facilita estudios sobre el impacto de la compresion en modelos pequenos, usando el modelo como caso de referencia reproducible.
+- Asistente conversacional local en estaciones de trabajo: con cuantizaciones Q4_K_M (1,57 GB) o Q5_K_M (1,77 GB) el modelo cabe holgadamente en GPUs de consumo y puede servir como chatbot de escritorio sin conexión, manteniendo conversaciones multi-turno dentro de la ventana de 32K tokens.
+- Despliegue en dispositivos con recursos limitados: la cuantización Q2_K ocupa 1,01 GB, lo que permite ejecutarlo en equipos con poca VRAM o incluso en CPU, a costa de una caída notable de fidelidad (KL de 0,17564 y top-1 del 79,48 % en WikiText-2).
+- Prototipado rápido de aplicaciones de chat: al estar bajo licencia MIT y en formato GGUF, se puede integrar en demos y pruebas de concepto sin restricciones de uso comercial ni necesidad de infraestructura dedicada.
+- Generación de texto multilingüe en entornos europeos: el soporte declarado de español, francés, italiano, alemán y portugués lo hace apto para tareas de redacción o resumen en varios idiomas dentro de una misma aplicación.
+- Servicio HTTP ligero con `llama-server`: el modo servidor de llama.cpp permite exponer el modelo como API compatible con endpoints, útil para backends de aplicaciones web de bajo tráfico.
+- Evaluación comparativa de cuantizaciones: las gráficas de KL y top-1 publicadas permiten a un equipo decidir qué archivo usar según el equilibrio entre tamaño, VRAM disponible y fidelidad respecto al modelo original, algo poco habitual en repositorios GGUF.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible (MMLU, HumanEval, GSM8K u otros). La model card unicamente proporciona metricas de fidelidad de cuantizacion frente a la referencia f32:
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El repositorio sí incluye métricas de fidelidad de cuantización frente a una referencia f32:
 
-| Cuantizacion | Tamano | WikiText-2 KL | top-1 | Chat KL | top-1 | Held-out KL | top-1 |
+| Cuantización | Tamaño | WikiText-2 KL | Top-1 | Chat KL | Top-1 | Held-out KL | Top-1 |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| F16 | 4,59 GB | 0,00027 | 98,92% | 0,00019 | 99,25% | 0,00025 | 98,96% |
-| Q8_0 | 2,44 GB | 0,00212 | 97,61% | 0,00180 | 98,12% | 0,00238 | 97,25% |
-| Q6_K | 2,03 GB | 0,00272 | 97,17% | 0,00292 | 97,65% | 0,00320 | 96,97% |
-| Q5_K_M | 1,77 GB | 0,00404 | 96,34% | 0,00388 | 97,30% | 0,00454 | 96,43% |
-| Q4_K_M | 1,57 GB | 0,00716 | 95,24% | 0,00656 | 96,46% | 0,00787 | 95,31% |
-| Q4_K_S | 1,40 GB | 0,01446 | 93,84% | 0,01298 | 95,16% | 0,01687 | 93,16% |
-| IQ4_XS | 1,28 GB | 0,02268 | 92,24% | 0,02136 | 93,87% | 0,02575 | 91,43% |
-| IQ3_M | 1,18 GB | 0,04580 | 89,40% | 0,04892 | 90,67% | 0,05419 | 87,92% |
-| Q2_K | 1,01 GB | 0,17564 | 79,48% | 0,17004 | 83,64% | 0,20950 | 77,38% |
+| F16 | 4,59 GB | 0,00027 | 98,92 % | 0,00019 | 99,25 % | 0,00025 | 98,96 % |
+| Q8_0 | 2,44 GB | 0,00212 | 97,61 % | 0,00180 | 98,12 % | 0,00238 | 97,25 % |
+| Q6_K | 2,03 GB | 0,00272 | 97,17 % | 0,00292 | 97,65 % | 0,00320 | 96,97 % |
+| Q5_K_M | 1,77 GB | 0,00404 | 96,34 % | 0,00388 | 97,30 % | 0,00454 | 96,43 % |
+| Q4_K_M | 1,57 GB | 0,00716 | 95,24 % | 0,00656 | 96,46 % | 0,00787 | 95,31 % |
+| Q4_K_S | 1,40 GB | 0,01446 | 93,84 % | 0,01298 | 95,16 % | 0,01687 | 93,16 % |
+| IQ4_XS | 1,28 GB | 0,02268 | 92,24 % | 0,02136 | 93,87 % | 0,02575 | 91,43 % |
+| IQ3_M | 1,18 GB | 0,04580 | 89,40 % | 0,04892 | 90,67 % | 0,05419 | 87,92 % |
+| Q2_K | 1,01 GB | 0,17564 | 79,48 % | 0,17004 | 83,64 % | 0,20950 | 77,38 % |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: desde aproximadamente 1 GB con Q2_K hasta 4,6 GB con F16, mas la cache KV en f16 para el contexto elegido y unos 2 GB adicionales para el runtime, segun la regla de la model card (el archivo debe caber en el 90% de la memoria disponible).
-- GPU recomendadas: RTX 4090 o RTX 3090 (24 GB) ejecutan F16 con 32K de contexto; RTX 5090 (32 GB), RTX 6000 Ada (48 GB), H100 (80 GB), H200 (141 GB), B200 (192 GB) y B300 (288 GB) tambien soportan F16 a contexto completo.
-- Cabe en GPU de consumo: si, en cualquier GPU con al menos unos 4-6 GB libres usando cuantizaciones Q4 o inferiores; en GPUs de 24 GB o mas se puede usar F16 con contexto de 32K.
-- Memoria unificada: DGX Spark (128 GB), Mac Studio M5 Max (128 GB) y M5 Ultra (256 GB y 512 GB) ejecutan la version F16 con contexto completo.
-- Opciones de despliegue: llama.cpp (llama-server y llama-cli) compilado con el parche `aion-llama.cpp.patch` sobre el commit `e4b620af19f02960dea7a3a81de7c5805aa3a333`; se requiere `--jinja` por la plantilla de chat embebida. No se documentan otras opciones de despliegue (vLLM, TGI, Ollama) en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada: entre 1,01 GB (Q2_K) y 4,59 GB (F16) solo para pesos; hay que sumar la memoria de la caché KV para el contexto configurado (hasta 32K tokens).
+- GPU recomendadas según la tabla del autor: RTX 4090 / RTX 3090 (24 GB), RTX 5090 (32 GB), RTX 6000 Ada o 2×24 GB (48 GB), H100 (80 GB), RTX PRO 6000 Blackwell (96 GB), DGX Spark (128 GB unificada), Mac Studio M5 Max (128 GB unificada), H200 (141 GB), B200 (192 GB), Mac Studio M5 Ultra (256 GB y 512 GB unificada) y B300 (288 GB).
+- Cabe en GPU de consumo: sí, ampliamente. Incluso la F16 de 4,6 GB entra en cualquier GPU con 8 GB o más; las cuantizaciones Q4_K_M (1,57 GB) o Q5_K_M (1,77 GB) son las más razonables para GPUs de 6-8 GB.
+- Opciones de despliegue: llama.cpp (imprescindible aplicar `aion-llama.cpp.patch` sobre la revisión `e4b620af`), con `llama-server` y `llama-cli`. No se documenta soporte para vLLM, TGI, Ollama ni otros runners en la información disponible.
+- Latencia y throughput: no disponibles. El autor no publica mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-No se dispone en la informacion proporcionada de datos de rendimiento de benchmarks ni de especificaciones de modelos alternativos que permitan una comparacion rigurosa. Como referencia estructural, el modelo base es `microsoft/Aion-1.0-Instruct-2.3B`, del que esta distribucion es una conversion cuantizada; cualquier comparacion con otros modelos de ~2-3 mil millones de parametros requeriria datos que no se han facilitado.
+No se dispone de datos de benchmarks de tareas para Aion-1.0-Instruct-2.3B en la información proporcionada, por lo que una comparación de rendimiento con alternativas de tamaño similar (por ejemplo, Qwen2.5-3B, Llama-3.2-3B o Gemma-2-2B) no puede sustentarse con cifras. La comparación se limita a características objetivas:
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Aion-1.0-Instruct-2.3B-GGUF (Xylolabs) | 2,29 mil M | 32.768 | MIT | GGUF | Requiere parche de llama.cpp |
-| microsoft/Aion-1.0-Instruct-2.3B | 2,29 mil M | no disponible | MIT | safetensors | Modelo base sin cuantizar |
-| Alternativas de ~2-3 mil M | no disponible | no disponible | no disponible | no disponible | Sin datos en la informacion disponible |
+| Modelo | Parámetros | Contexto | Licencia | Formato en este repo |
+|---|---|---|---|---|
+| Aion-1.0-Instruct-2.3B (este) | ≈2,3B | 32 768 | MIT | GGUF (9 cuantizaciones) |
+| Alternativas de ~2-3B | no disponible | no disponible | no disponible | no disponible |
+
+La única ventaja diferencial verificable frente a otros GGUF es la publicación de métricas de fidelidad de cuantización (KL y top-1) y de una matriz de importancia, además de la licencia MIT, que es más permisiva que las licencias con cláusulas de uso aceptable habituales en modelos de otros proveedores.
 
 ## Limitaciones y advertencias
 
-- La arquitectura `aion` no es reconocida por llama.cpp estandar: es obligatorio aplicar el parche incluido y compilar contra el commit indicado, lo que complica el mantenimiento y la actualizacion.
-- El flag `--jinja` es imprescindible porque la plantilla de chat escribe el preambulo de sistema con la fecha; omitirlo puede degradar la calidad de las respuestas.
-- La cuantizacion Q2_K presenta una fidelidad notablemente inferior (acuerdo top-1 del 79,48% en WikiText-2 y 77,38% en held-out), por lo que no es recomendable para tareas sensibles a la precision.
-- No se documentan en la informacion disponible sesgos conocidos, tasas de alucinacion ni evaluaciones de seguridad del modelo base.
-- El soporte multilingue se declara para ocho idiomas, pero no se aportan metricas por idioma que permitan verificar la calidad relativa en espanol u otros.
-- La licencia MIT permite uso comercial, pero la model card aclara que Xylolabs no esta afiliada ni respaldada por Microsoft; el aviso `NOTICE` atribuye la titularidad a Microsoft.
-- El tamano del repositorio (17,3 GB) incluye todas las cuantizaciones e imagenes, no solo un archivo; conviene descargar unicamente el GGUF necesario.
+- Requiere un parche no oficial de llama.cpp (`aion-llama.cpp.patch`) sobre una revisión concreta (`e4b620af`); el llama.cpp estándar no reconoce la arquitectura `aion`. Esto complica el despliegue, la actualización y el mantenimiento.
+- El flag `--jinja` es obligatorio para el funcionamiento correcto del chat.
+- La cuantización Q2_K degrada gravemente la fidelidad (top-1 del 79,48 % en WikiText-2 y KL de 0,17564); no es recomendable para producción.
+- No se han publicado evaluaciones de sesgo, toxicidad ni alucinación en la información disponible.
+- El soporte multilingüe está declarado por el autor, pero no se aportan métricas por idioma que permitan verificar la calidad en español, chino o japonés.
+- Aunque la licencia es MIT (permisiva para uso comercial), conviene verificar las condiciones del modelo base de Microsoft y de los pesos originales antes de un despliegue comercial.
+- El repositorio ocupa 17,3 GB por incluir todas las cuantizaciones; descargar solo el archivo necesario.
+- No hay información sobre tool calling, function calling, agentes ni razonamiento multi-paso; no asumir estas capacidades.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Xylolabs/Aion-1.0-Instruct-2.3B-GGUF
 - Modelo base: https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B
-- Parche de compatibilidad: https://huggingface.co/Xylolabs/Aion-1.0-Instruct-2.3B-GGUF/resolve/main/aion-llama.cpp.patch
+- Licencia: https://huggingface.co/Xylolabs/Aion-1.0-Instruct-2.3B-GGUF/blob/main/LICENSE
+- Parche llama.cpp: https://huggingface.co/Xylolabs/Aion-1.0-Instruct-2.3B-GGUF/resolve/main/aion-llama.cpp.patch
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Repositorio de Xylolabs (referenciado en la model card): https://github.com/XylolabsInc/tensix-bfp-gptq
+- Repositorio de herramientas del autor: https://github.com/XylolabsInc/tensix-bfp-gptq

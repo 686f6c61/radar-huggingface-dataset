@@ -2,94 +2,92 @@
 
 ## Resumen
 
-Kairos Sophron 3.0 · 4B es un modelo de decisión especializado en ingeniería de software, desarrollado por Walkowicz y afinado a partir de `nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16`. Su propósito no es la generación de texto generalista, sino la producción de parches de código deterministas y verificables, con un foco explícito en código limpio y verificación de ejecución. El modelo se distribuye con licencia Apache 2.0 y está pensado para entornos de desarrollo donde la precisión del parche importa más que la fluidez conversacional.
+Kairos Sophron 3.0 · 4B es un modelo de decisión especializado en ingeniería de software, desarrollado por el usuario Walkowicz y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base `nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16` de NVIDIA, orientado específicamente a la generación de parches de código deterministas y a tareas de verificación en el ámbito del desarrollo de software. El modelo se distribuye principalmente en formato GGUF y MLX, lo que lo hace desplegable en entornos locales y en Apple Silicon.
 
-Técnicamente se apoya en la arquitectura del modelo base de NVIDIA (Dory 1.0, 4B) e incorpora enrutamiento de profundidad recurrente con valores de `k ∈ {1, 2, 4}`, así como un proceso de ajuste en dos fases denominado "Two-Phase Zero-Distillation Engine": LoRA SFT seguido de GRPO con RLVR (reward verificado por ejecución). El resultado es un modelo bilingüe inglés/portugués de Brasil que, según el autor, supera a baselines de 14B en generación de parches deterministas en escenarios reales.
+La propuesta del autor se centra en un motor de entrenamiento denominado "Two-Phase Zero-Distillation Engine", que combina un ajuste supervisado con LoRA (SFT) y un entrenamiento por refuerzo con GRPO y verificación de ejecución (RLVR). El modelo incorpora enrutamiento recurrente de profundidad (k = 1, 2, 4), una técnica que permite ajustar el coste computacional en tiempo de inferencia según la complejidad de la tarea. Según la model card, con solo 3.975 millones de parámetros y un peso de 2,84 GB en cuantización Q5_K_M, supera a modelos de referencia de 14B en generación de parches deterministas.
 
-El modelo es relevante por su enfoque en eficiencia: ocupa 2,84 GB en cuantización Q5_K_M y 2,14 GB en UD-Q3, lo que permite su despliegue en hardware de consumo. Se publica con artefactos GGUF, integración con Ollama y una edición MLX separada para Apple Silicon.
+El modelo es bilingüe inglés y portugués (50/50 según la model card), con una licencia OpenMDW-1.1 que permite uso comercial bajo ciertas condiciones. Su relevancia actual radica en la tendencia hacia modelos pequeños y especializados que pueden ejecutarse en hardware de consumo, ofreciendo capacidades de razonamiento y generación de código con un coste muy reducido frente a alternativas de mayor tamaño.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (base NVIDIA Nemotron Dory 1.0) con enrutamiento de profundidad recurrente (k ∈ {1, 2, 4}) |
-| Parametros totales | 3.975.229.440 (~4B) |
-| Parametros activos | no disponible (no se declara como MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q5_K_M, UD-Q3, BF16 (mencionadas en la model card) |
-| Idiomas soportados | inglés (en), portugués de Brasil (pt) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF, MLX (edición separada) |
+| Arquitectura | Transformer con enrutamiento recurrente de profundidad (k = 1, 2, 4); basado en NVIDIA Nemotron Labs Dory1.0-4B |
+| Parametros totales | 3.975.229.440 (aproximadamente 3,98B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q5_K_M (2,84 GB), UD-Q3 (2,14 GB), BF16 (7,96 GB); formatos GGUF y MLX |
+| Idiomas soportados | Ingles y portugues (50/50 segun model card) |
+| Licencia | OpenMDW-1.1 |
+| Formato de pesos | GGUF, MLX, safetensors (repo de 12,9 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16`, un transformer de aproximadamente 4B parámetros. Sobre esa base, el autor aplica una "Two-Phase Zero-Distillation Engine": una primera fase de LoRA SFT y una segunda de GRPO con RLVR (Reinforcement Learning with Verifiable Rewards), donde la recompensa se obtiene verificando la ejecución del código generado. Esta combinación busca alinear el modelo hacia parches que no solo sean sintácticamente correctos, sino funcionalmente válidos.
+El modelo se basa en la arquitectura del NVIDIA Nemotron Labs Dory1.0-4B, un transformer de aproximadamente 4.000 millones de parámetros. La innovación principal introducida por Walkowicz es el enrutamiento recurrente de profundidad (k = 1, 2, 4), que permite al modelo reutilizar capas internas de forma iterativa un número variable de veces según la complejidad de la tarea. Este mecanismo, similar en espíritu a los enfoques de "recurrent depth" o "looped transformers", permite ajustar el coste computacional en tiempo de inferencia sin necesidad de reentrenar el modelo.
 
-La innovación destacada es el enrutamiento de profundidad recurrente con `k ∈ {1, 2, 4}`, que permite ajustar el número de pasos recurrentes en inferencia. Según la model card, `k=2` se presenta como el punto óptimo en throughput. El entrenamiento es bilingüe con una proporción declarada de 50/50 inglés y portugués de Brasil. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni detalles del proceso de RLHF/DPO más allá del esquema GRPO/RLVR.
+El entrenamiento se realizó mediante un proceso denominado "Two-Phase Zero-Distillation Engine", que combina una primera fase de ajuste supervisado con LoRA (SFT) sobre datos de ingeniería de software, seguida de una fase de aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) y verificación de ejecución (RLVR, Reinforcement Learning with Verifiable Rewards). En esta segunda fase, el modelo recibe recompensas basadas en la ejecución real del código generado, lo que según el autor reduce el "blast radius" de tokens en un 64,4% (es decir, genera parches más quirúrgicos y con menos cambios innecesarios). No se especifica el número de tokens de entrenamiento ni la composición exacta del dataset.
 
 ## Capacidades
 
-- Generación de parches de código deterministas orientados a ingeniería de software.
-- Razonamiento orientado a decisiones: el modelo está etiquetado como `decision-model`, no como generador conversacional general.
-- Verificación de código: entrenado con recompensas verificadas por ejecución (RLVR), lo que favorece parches ejecutables.
-- Enfoque en código limpio (`clean-code`) como criterio de calidad.
-- Capacidades bilingües inglés y portugués de Brasil.
-- Soporte de despliegue en GGUF/Ollama y MLX (Apple Silicon).
-- No se documenta en la información disponible soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo thinking explícito.
+- Generación de parches de código deterministas y quirúrgicos, con reducción del 64,4% en el "token blast radius" según la model card.
+- Razonamiento orientado a decisiones de ingeniería de software: el modelo está etiquetado como "decision-model", lo que sugiere un enfoque en la selección de estrategias de implementación.
+- Verificación de código y clean-code: entrenado con recompensas verificables por ejecución (RLVR), lo que le permite evaluar y corregir sus propias salidas.
+- Soporte de tool calling / function calling: no se menciona explícitamente en la información disponible, pero el pipeline es text-generation y el tag "endpoints_compatible" sugiere compatibilidad con APIs de inferencia.
+- Capacidades multilingües limitadas a inglés y portugués (50/50 según la model card).
+- Modo de razonamiento ajustable mediante el parámetro k (profundidad recurrente): k=1 para respuestas rápidas, k=2 para equilibrio, k=4 para mayor profundidad de razonamiento.
+- No se mencionan capacidades de visión, audio ni agentes multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Generación de parches en pipelines de CI/CD: el modelo produce parches de código que pueden validarse automáticamente mediante tests, aprovechando su entrenamiento con recompensas verificadas por ejecución para reducir parches que no compilan o no pasan la suite.
-- Revisión automática de código limpio: dado un fragmento, el modelo puede proponer refactorizaciones orientadas a `clean-code`, adecuado por su ajuste específico en criterios de calidad de código.
-- Asistencia a desarrolladores en entornos con hardware limitado: con 2,84 GB en Q5_K_M, puede ejecutarse localmente en portátiles y estaciones de trabajo sin GPU dedicada de gama alta, integrándose en editores o CLI.
-- Corrección de bugs acotados: su foco en "token blast radius" reducido (-64,4 % según el autor) lo hace adecuado para tareas donde se busca un cambio mínimo y localizado en lugar de una reescritura amplia.
-- Soporte bilingüe para equipos en inglés y portugués de Brasil: útil en equipos de desarrollo lusófonos que trabajan con documentación y código en ambos idiomas.
-- Despliegue en Apple Silicon: mediante la edición MLX separada, puede ejecutarse en Macs con chip Apple para tareas de generación de parches en local.
-- Evaluación de parches en entornos de investigación: su esquema GRPO/RLVR y el enrutamiento de profundidad recurrente lo convierten en un caso de estudio para experimentos de RL con recompensas verificables.
+- Generación de parches en producción: el modelo puede generar cambios de código mínimos y verificables en pipelines de CI/CD, gracias a su entrenamiento con RLVR y su bajo "blast radius". Es adecuado para tareas de corrección de bugs donde se requiere precisión y no reescrituras masivas.
+- Revisión de código automatizada: con su enfoque en clean-code y verificación, puede integrarse en herramientas de revisión estática para sugerir mejoras concretas y detectar malas prácticas, ejecutándose localmente en hardware de consumo.
+- Asistente de desarrollo en local para Apple Silicon: la edición MLX permite ejecutar el modelo en Macs con chip Apple Silicon, ofreciendo un asistente de código privado y sin dependencia de la nube.
+- Despliegue en entornos con recursos limitados: con 2,84 GB en Q5_K_M y 25,8 tok/s en una RTX 3060 (según la model card), es viable en estaciones de trabajo modestas o incluso en portátiles con GPU de gama media.
+- Generación de tests unitarios: el modelo puede generar casos de prueba deterministas para funciones existentes, aprovechando su entrenamiento en verificación por ejecución.
+- Educación y formación en ingeniería de software: puede utilizarse como modelo de referencia para enseñar patrones de clean-code y decisiones de diseño, con la ventaja de ser ejecutable localmente y en portugués e inglés.
+- Automatización de tareas de refactorización menor: gracias a su capacidad de generar cambios quirúrgicos, puede emplearse para refactorizaciones controladas en bases de código existentes, con verificación posterior mediante tests.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles provienen de la model card del autor y no son benchmarks estándar de la comunidad (MMLU, HumanEval, GSM8K), sino evaluaciones propias.
+| Benchmark | Kairos Sophron 3.0 · 4B | Notas |
+|---|---|---|
+| suite_v1 Clean-Code | 25/40 (62,5%) | Q5_K_M: 24/40; UD-Q3: 16/40 |
+| Unseen RLVR Holdout | 0,813 mean reward | 9/15 perfectos; -64,4% token blast radius |
+| Throughput en RTX 3060 | 25,8 tok/s (k=1); 17,2 tok/s (k=2) | Según model card |
 
-| Metrica | Resultado |
-|---|---|
-| suite_v1 Clean-Code | 25/40 (62,5 %) en BF16; 24/40 en Q5_K_M; 16/40 en UD-Q3 |
-| Unseen RLVR Holdout | 0,813 de recompensa media; 9/15 perfectos; -64,4 % de "token blast radius" |
-| Throughput en RTX 3060 | 25,8 tok/s con k=1; 17,2 tok/s con k=2 (óptimo declarado) |
-| Huella de memoria local | 2,84 GB (Q5_K_M); 2,14 GB (UD-Q3); 7,96 GB (BF16) |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K en la información disponible. Los datos anteriores provienen exclusivamente de la model card del autor y no son directamente comparables con benchmarks académicos convencionales.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,84 GB en Q5_K_M, 2,14 GB en UD-Q3 y 7,96 GB en BF16, según la model card.
-- GPU recomendadas: RTX 3060 es la referencia de throughput declarada por el autor (25,8 tok/s con k=1). No se especifican otras GPU en la información disponible.
-- Cabe en GPU de consumo: sí, en cuantizaciones Q5_K_M y UD-Q3; el tamaño reducido permite ejecución en GPUs de gama media y en CPU.
-- Opciones de despliegue: GGUF (llama.cpp), Ollama, MLX (edición separada para Apple Silicon). No se documenta soporte de vLLM ni TGI en la información disponible.
-- Latencia y throughput: 25,8 tok/s con k=1 y 17,2 tok/s con k=2 en RTX 3060, según el autor; k=2 se declara como configuración óptima.
+- VRAM estimada para inferencia: 2,14 GB en UD-Q3, 2,84 GB en Q5_K_M, 7,96 GB en BF16 (según la model card).
+- GPU recomendadas: RTX 3060 (probada por el autor, 25,8 tok/s en k=1), GPUs con al menos 4 GB de VRAM para cuantizaciones Q5_K_M o UD-Q3. Para BF16 se recomienda al menos 8 GB de VRAM.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares con 8 GB o más. También en Apple Silicon mediante la edición MLX.
+- Opciones de despliegue: llama.cpp (formato GGUF), Ollama (tag "ollama"), MLX (edición específica para Apple Silicon), y potencialmente vLLM o TGI si se convierte a safetensors, aunque no se mencionan explícitamente.
+- Latencia y throughput estimados: 25,8 tok/s en RTX 3060 con k=1 y 17,2 tok/s con k=2 (según model card). No se proporcionan datos para otras GPUs.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Kairos Sophron 3.0 · 4B | ~4B | no disponible | Decisión y parches de código | Apache 2.0 | HF (GGUF, MLX, safetensors) |
-| NVIDIA Nemotron Dory 1.0 4B (base) | ~4B | no disponible | Modelo base generalista | no disponible en esta ficha | HF |
-| Alternativas de 14B citadas por el autor | ~14B | no disponible | Generación de parches | no disponible | no disponible |
+| Kairos Sophron 3.0 · 4B | ~3,98B | No disponible | OpenMDW-1.1 | GGUF, MLX, safetensors | Especializado en ingeniería de software, RLVR, enrutamiento recurrente |
+| NVIDIA Nemotron Labs Dory1.0-4B | ~4B | No disponible | No disponible | BF16 | Modelo base; sin especialización en software |
+| Modelos de código de ~4B (p. ej., Qwen2.5-Coder-3B, CodeLlama-7B) | 3-7B | 32K-128K (típico) | Apache 2.0 / Llama | GGUF, safetensors | No disponibles en la información proporcionada para comparación directa |
 
-La model card afirma que el modelo supera a baselines de 14B en generación de parches deterministas, pero no se identifican en la información disponible los modelos concretos comparados ni sus resultados detallados.
+No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada. La comparativa se limita a características estructurales y de licencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la información disponible; al ser un modelo bilingüe entrenado con datos de código, puede heredar sesgos del corpus de entrenamiento y del modelo base.
-- Riesgo de alucinación: como todo modelo generativo, puede producir parches plausibles pero incorrectos; el autor mitiga esto con verificación por ejecución, pero no elimina el riesgo en producción.
-- Limitaciones de contexto e idioma: solo se declaran inglés y portugués de Brasil; no se especifica la longitud de contexto, lo que impide evaluar su idoneidad para repositorios grandes.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base NVIDIA y de los datos de entrenamiento, no detalladas en la información disponible.
-- Caveats para producción: el modelo está orientado a decisiones y parches, no a conversación general; los benchmarks son propios del autor y no verificados de forma independiente. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica adopción nula y ausencia de validación comunitaria.
-- El rendimiento en cuantizaciones bajas cae de forma notable: UD-Q3 obtiene 16/40 frente a 24/40 en Q5_K_M y 25/40 en BF16.
+- Sesgos conocidos: no se documentan sesgos específicos en la model card. Al estar entrenado principalmente en inglés y portugués, puede tener un rendimiento inferior en otros idiomas.
+- Riesgo de alucinación: como todo modelo generativo, puede producir código incorrecto o inventar APIs. El entrenamiento con RLVR mitiga parcialmente este riesgo, pero no lo elimina; se recomienda verificación mediante tests.
+- Limitaciones de contexto o idioma: la longitud de contexto no está especificada; el soporte lingüístico se limita a inglés y portugués (50/50), lo que puede ser insuficiente para proyectos en otros idiomas.
+- Restricciones de licencia: la licencia OpenMDW-1.1 permite uso comercial bajo ciertas condiciones, pero es necesario revisar los términos exactos en el enlace proporcionado. No es una licencia permisiva estándar como Apache 2.0 o MIT.
+- Caveats para producción: el modelo está especializado en ingeniería de software y puede no ser adecuado para tareas generales de generación de texto. El rendimiento en benchmarks estándar no está documentado, lo que dificulta la comparación objetiva con alternativas. La información sobre el entrenamiento (número de tokens, composición del dataset) no está disponible, lo que limita la evaluación de su robustez.
+- El modelo tiene 0 likes y 285 descargas en el momento de la ficha, lo que sugiere una adopción limitada y poca validación por parte de la comunidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Walkowicz/kairos-sophron-3.0-4b
 - Edición MLX: https://huggingface.co/Walkowicz/kairos-sophron-3.0-4b-mlx
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16
-- Artefacto GGUF Q5_K_M: https://huggingface.co/Walkowicz/kairos-sophron-3.0-4b/blob/main/Kairos-Sophron-3.0-4B.Q5_K_M.gguf
+- Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
+- No se han encontrado papers, blogs o repositorios adicionales en la información proporcionada.

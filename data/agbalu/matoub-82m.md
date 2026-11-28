@@ -1,91 +1,112 @@
 # agbalu/Matoub-82M
 
-# Matoub-82M · Preview
-
 ## Resumen
-Matoub-82M es el primer modelo de síntesis de voz neuronal publicado para el kabyle (taqbaylit, código `kab`), una lengua bereber hablada en el norte de Argelia. Se trata de un fine-tuning de 82 millones de parámetros sobre el modelo base Kokoro-82M de hexgrad, entrenado sobre 21.953 clips de voz restaurados del conjunto Common Voice Kabyle, correspondientes a un único locutor masculino nativo. El modelo sintetiza audio mono de 24 kHz que reproduce fenómenos fonológicos propios del kabyle como la geminación, la espirantización, las consonantes enfáticas y las faringales.
 
-El nombre del modelo rinde homenaje a Lounes Matoub (1956-1998), cantante y poeta kabyle asesinado por su defensa de la lengua y la cultura taqbaylit. Este lanzamiento se presenta como una vista previa (preview) que establece la viabilidad técnica de la síntesis de voz neuronal en kabyle, un idioma de recursos limitados (low-resource) para el que no existían modelos neuronales de TTS publicados hasta la fecha. El autor, el colectivo AƔBALU, planea publicar en el futuro dos modelos de producción dedicados, una voz masculina y otra femenina, con un estándar de calidad superior al de esta vista previa.
+Matoub-82M es un modelo de síntesis de voz (text-to-speech) neuronal especializado en cabilio (taqbaylit, código ISO `kab`), una lengua bereber de Argelia con recursos digitales muy limitados. Lo desarrolla el usuario agbalu y se construye como un ajuste fino de hexgrad/Kokoro-82M, un modelo TTS de 82 millones de parámetros basado en la arquitectura StyleTTS2. El resultado es un sintetizador de voz única masculina que genera audio mono a 24 kHz a partir de texto en ortografía latina cabilia, con una licencia Apache-2.0 que permite uso comercial.
 
-## Especificaciones técnicas
+La relevancia del modelo reside en dos factores. Primero, cubre una lengua de bajos recursos donde las alternativas abiertas son escasas y normalmente restrictivas: el principal referente previo, mms-tts-kab de Meta, funciona a 16 kHz y se distribuye bajo CC-BY-NC-4.0, lo que excluye el uso comercial. Segundo, el autor ha cuidado el front-end fonético: el inventario IPA base de Kokoro se amplió con tres filas de embedding dedicadas a las fricativas faríngeas cabilias (`ˤ`, `ʕ`, `ħ`), evitando que el conversor grafema-fonema elimine consonantes características de la lengua.
 
-| Parámetro | Valor |
+El modelo se entrenó con 21.953 clips restaurados de Common Voice cabilio, de los cuales 14.679 corresponden a la voz masculina seleccionada (unas 12,9 horas). El autor mantiene además una sucesora de mayor tamaño, Matoub-4B, un modelo autorregresivo basado en codecs con clonación de voz; Matoub-82M se conserva como opción ligera para inferencia en CPU y dispositivos de borde.
+
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | StyleTTS2 (inicializado desde Kokoro-82M) |
-| Parámetros totales | 82M |
-| Parámetros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (no aplica; el modelo procesa secuencias fonéticas, no texto libre) |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | kabyle (kab) |
+| Arquitectura | StyleTTS2 (inicializada desde hexgrad/Kokoro-82M) con vocoder iSTFTNet |
+| Parametros totales | 81.731.512 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible (modelo TTS; procesa texto por frases) |
+| Tipos de cuantizacion | No disponible (pesos exportados en safetensors de ~327 MB) |
+| Idiomas soportados | Cabilio (taqbaylit, `kab`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors (repositorio de 1,9 GB) |
+| Formato de pesos | safetensors (`model.safetensors`, ~327 MB) |
+
+Otras especificaciones técnicas relevantes:
+
+| Parametro | Valor |
+|---|---|
+| Frecuencia de muestreo | 24.000 Hz, mono |
+| Modelo de lenguaje fonético | PL-BERT, 12 capas |
+| Predictor de duración | LSTM con proyección lineal (máx. 50 frames por fonema) |
+| Embedding de hablante | Vector de estilo único de 256 dimensiones (128 acústicas, 128 prosódicas) |
+| Tabla de tokens | 178 tokens (ampliada con fonemas faríngeos cabilios) |
+| Vocoder | iSTFTNet (upsampling HiFi-GAN con cabeza inverse-STFT, FFT de 20 puntos, hop size 5) |
+| Tamaño del repo | 2,3 GB |
+| Pipeline en Hugging Face | text-to-speech |
 
 ## Arquitectura y entrenamiento
-Matoub-82M es un modelo StyleTTS2 inicializado desde los pesos de Kokoro-82M y fine-tuneado en dos etapas. La arquitectura completa incluye: un codificador de estilo de 128 dimensiones para el vector de estilo acústico, un codificador predictor de 128 dimensiones para el vector de estilo prosódico, un modelo de lenguaje PL-BERT de 12 capas con proyección de codificador BERT, un predictor de duración basado en LSTM con proyección lineal, un extractor de tono JDC, un vocoder HiFi-GAN para la decodificación de la forma de onda y discriminadores MPD y MSD (estos últimos solo en la etapa 1 del entrenamiento). La tabla de tokens hereda los 178 tokens de la base Kokoro y añade 3 nuevos tokens específicos.
 
-El entrenamiento se realizó sobre 21.953 clips de voz restaurados de Common Voice Kabyle, todos de un único locutor masculino de edad avanzada. El audio de entrenamiento tiene un límite espectral duro de aproximadamente 7,9 kHz debido a las condiciones de grabación del conjunto de datos (micrófonos de teléfono, codificación con pérdida y artefactos de subida), por lo que el modelo no puede sintetizar contenido espectral por encima de esa frecuencia. En este checkpoint no se entrenó la parte de difusión: el parámetro `lambda_diff` se fijó a 0.0, lo que implica que el modo de inferencia correcto es `alpha=0.0, beta=0.0` (estilo de referencia puro). Cualquier valor de `beta` positivo inyecta ruido gaussiano procedente de un muestreador no entrenado directamente en el decoder.
+El modelo sigue la arquitectura StyleTTS2: un front-end de conversión grafema-fonema que transforma la ortografía latina cabilia en representaciones IPA con reglas de asimilación contextual y espirantización; un modelo de lenguaje fonético PL-BERT de 12 capas que aporta contexto; un predictor de duración LSTM que calcula duraciones por fonema, contornos de F0 y energía condicionados por el vector de estilo del hablante; y un decodificador acústico iSTFTNet que genera la forma de onda a 24 kHz. Los módulos exclusivos de entrenamiento (discriminadores, pérdida WavLM y muestreadores de difusión) se eliminaron de los pesos exportados, lo que reduce el artefacto de inferencia a unos 327 MB.
+
+El entrenamiento se realizó en dos etapas secuenciales. En la primera (pretraining acústico multihablante) se entrenaron conjuntamente el codificador de texto, el decodificador y el predictor de duración sobre los 20.953 clips de entrenamiento, con tamaño de lote 4 durante 6 épocas, para estabilizar la representación acústica. En la segunda (adaptación a hablante único) se ajustaron el modelo de lenguaje (`bert`, `predictor`) sobre 14.174 clips de la voz masculina `kab_male`, con tamaño de lote 4 durante 4 épocas (13.944 iteraciones), alcanzando una pérdida de validación final de 0,3475. Los datos provienen de la partición restaurada de Common Voice cabilio, normalizados en amplitud, recortados en silencios y filtrados contra clipping: 14.679 clips masculinos (~12,9 horas, media de 3,73 s) y 7.274 femeninos (~5,0 horas, media de 3,11 s).
 
 ## Capacidades
-- Síntesis de voz en kabyle (Taqbaylit) a partir de texto en alfabeto latino.
-- Reproducción de rasgos fonológicos del kabyle: geminación, espirantización, consonantes enfáticas y faringales.
-- Salida de audio mono de 24 kHz en formato WAV.
-- Extracción de estilo vocal mediante una referencia de audio del locutor de entrenamiento (vector de estilo de 256 dimensiones entre el codificador de estilo y el predictor).
-- Predicción de duración fonémica y contorno de tono (F0) mediante el predictor de duración y el predictor de F0.
-- Integración en un pipeline completo de NLP kabyle: es la etapa terminal tras la transliteración Tifinagh-Latín, la puntuación y el estandarizado ortográfico.
-- No soporta tool calling, agentes ni capacidades multimodales más allá del audio.
-- No es adecuado para ningún idioma distinto del kabyle.
+
+- Síntesis de voz en cabilio a partir de texto en ortografía latina, con salida de audio mono a 24 kHz.
+- Reproducción de la fonología cabilia distintiva: geminación, espirantización, consonantes enfáticas y fricativas faríngeas.
+- Conversión grafema-fonema verificada contra un inventario IPA de 42 símbolos, con reglas de asimilación contextual.
+- Condicionamiento por vector de estilo de hablante (256 dimensiones), aunque el modelo se distribuye con una única voz masculina.
+- Integración como etapa final de pipelines NLP cabilios: acepta la salida de transliteración (Juba-27M), restauración de mayúsculas (Belaid-31M) o estandarización ortográfica (Boulifa-48M).
+- Inferencia ligera apta para CPU y dispositivos de borde gracias a sus 81,7 M de parámetros.
+- No soporta clonación de voz, tool calling, agentes, visión ni otros idiomas distintos del cabilio.
 
 ## Casos de uso
-- Accesibilidad: síntesis de voz para lectores de pantalla y producción de audio para contenido escrito en kabyle.
-- Aprendizaje de idiomas: generación de audio de estudio para estudiantes de taqbaylit, permitiendo escuchar pronunciación nativa de frases escritas.
-- Cierre de pipeline de NLP: como etapa final de un pipeline completo de procesamiento de kabyle, tras la transliteración, la puntuación y la estandarización ortográfica.
-- Producción de contenido multimedia: generación de locución para vídeos, podcasts o audiolibros en kabyle.
-- Investigación en TTS de idiomas de recursos limitados: punto de partida para comparar técnicas de fine-tuning y evaluación de modelos de voz en lenguas minoritarias.
-- Archivado y preservación lingüística: generación de audio de referencia para documentar la pronunciación del kabyle.
+
+- Lectores de pantalla y herramientas de accesibilidad para personas ciegas o con baja visión que consumen contenido en cabilio: el modelo convierte texto digitalizado en audio comprensible, y su licencia Apache-2.0 permite integrarlo en productos comerciales de accesibilidad sin restricciones.
+- Aplicaciones educativas para la enseñanza del cabilio: permite generar materiales de escucha (ejercicios de dictado, pronunciación de vocabulario) a partir de listas de texto, con una voz nativa masculina coherente.
+- Locución automatizada de contenido multimedia: artículos, noticias o publicaciones de blog en cabilio pueden convertirse en audio para podcasts o boletines, procesando el texto frase a frase dado que el modelo está entrenado con clips cortos.
+- Etapa final de pipelines de procesamiento del lenguaje cabilio: encadenado con Juba-27M, Belaid-31M y Boulifa-48M, permite tomar texto sin normalizar (sin mayúsculas, con transliteración inconsistente) y producir audio correcto de extremo a extremo.
+- Preservación y documentación lingüística: generación de corpus de audio sintético controlado para investigación fonética o para comparar realizaciones acústicas de fonemas enfáticos y faríngeos.
+- Sistemas de anuncios y avisos en espacios públicos o transporte en regiones de habla cabilia: la inferencia en CPU y el tamaño reducido (327 MB) permiten desplegarlo en hardware modesto sin GPU dedicada.
+- Pruebas de integración en asistentes de voz de código abierto para lenguas de bajos recursos: sirve como referencia ligera frente a modelos multilingües de mayor tamaño y licencias más restrictivas.
 
 ## Benchmarks y rendimiento
-El modelo card publica una única métrica comparativa: la tasa de error de caracteres en ciclo (cycle-CER) contra el sistema base `mms-tts-kab` de Meta. La evaluación de Matoub-82M aún no se ha completado en el momento de la publicación del checkpoint. Los datos disponibles son:
 
-| sistema | cycle-CER | control de audio real CER | delta |
-|---|---|---|---|
-| `mms-tts-kab` | 11.89 | 8.33 | +3.56 |
-| **Matoub-82M** | *no medido aún* | | |
+La model card incluye una comparación de referencia (Cycle-CER, distorsión acústica medida transcribiendo el audio sintético con agbalu/Fadhma-300M contra el texto de referencia), aunque el resultado de Matoub-82M figura como pendiente:
 
-No se han publicado resultados de benchmarks adicionales en la información disponible.
+| Modelo | Arquitectura | Frecuencia | Licencia | Cycle-CER | CER control audio real | Delta |
+|---|---|---|---|---|---|---|
+| mms-tts-kab | VITS | 16 kHz | CC-BY-NC-4.0 | 11,89% | 8,33% | +3,56% |
+| Matoub-82M | StyleTTS2 | 24 kHz | Apache-2.0 | Pendiente | No disponible | No disponible |
+
+No se han publicado otros resultados de benchmarks (MOS, MCD, WER) en la información disponible.
 
 ## Requisitos de hardware
-- No se han publicado requisitos específicos de hardware en la información proporcionada.
-- El modelo base Kokoro-82M es un TTS de 82M parámetros que puede ejecutarse en CPU en tiempo real según la documentación pública del modelo base.
-- Se recomienda para despliegue en entornos con GPU con al menos 4 GB de VRAM para inferencia cómoda, aunque el modelo puede funcionar en CPU.
-- No se han documentado opciones de despliegue específicas (vLLM, llama.cpp, Ollama, TGI) en la información disponible. El repositorio incluye un `Makefile` con el comando `make infer-matoub` para la inferencia.
+
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 para los pesos exportados (~327 MB), más el overhead de activaciones y del vocoder; cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; funciona también en CPU. No requiere A100 ni H100.
+- Cabe en GPU consumer: sí, en todas las generaciones recientes (RTX 3060, RTX 4060, RTX 4090, GTX 1650, etc.) e incluso en iGPU y dispositivos de borde.
+- Opciones de despliegue: la model card documenta el uso con `transformers>=5` mediante `AutoModelForTextToWaveform` y `AutoTokenizer` con `trust_remote_code=True`, más `torch` y `soundfile`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo TTS de este tipo).
+- Latencia y throughput: no disponibles en la información proporcionada; el autor posiciona el modelo para inferencia en CPU y borde, lo que sugiere tiempos compatibles con síntesis interactiva frase a frase.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idioma | Licencia | Notas |
-|---|---|---|---|---|
-| **Matoub-82M** | 82M | kabyle | Apache-2.0 | Fine-tune de Kokoro-82M, primer TTS neuronal kabyle |
-| **mms-tts-kab** (Meta MMS) | no disponible | 1.100+ idiomas | no disponible | Voz genérica multilingüe, sin fine-tuning kabyle |
-| **Kokoro-82M** (hexgrad) | 82M | múltiples | Apache-2.0 | Modelo base, sin soporte kabyle |
-
-La comparación directa con `mms-tts-kab` es la única disponible en la información publicada, y la diferencia principal es que Matoub-82M se ha entrenado íntegramente con un locutor nativo kabyle, mientras que el modelo de Meta es una voz genérica multilingüe.
+| Modelo | Parámetros | Frecuencia | Licencia | Idiomas | Notas |
+|---|---|---|---|---|---|
+| Matoub-82M | 81,7 M | 24 kHz | Apache-2.0 | Cabilio | StyleTTS2; voz masculina única; Cycle-CER pendiente |
+| mms-tts-kab (Meta) | No disponible | 16 kHz | CC-BY-NC-4.0 | Cabilio | VITS; Cycle-CER 11,89%; uso comercial restringido |
+| Matoub-4B (mismo autor) | 4,2 B | No disponible | No disponible | Cabilio | Autorregresivo basado en codecs; clonación de voz y mayor fidelidad acústica; no apto para CPU/borde |
+| hexgrad/Kokoro-82M | 82 M | 24 kHz | Apache-2.0 | Inglés (principalmente) | Modelo base; no soporta cabilio sin ajuste |
 
 ## Limitaciones y advertencias
 
-- El audio de entrenamiento está limitado en banda a ~7,9 kHz; el modelo no puede sintetizar contenido espectral por encima de ese límite.
-- La difusión no se entrenó en este checkpoint; cualquier `beta > 0.0` produce ruido de un muestreado no entrenado. Solo se debe usar `alpha=0.0, beta=0.0`.
-- La calidad de la voz está limitada por las condiciones de grabación del conjunto de datos (micrófonos de teléfono, codificación lossy).
-- No se ha realizado ninguna evaluación de seguridad de ningún tipo.
-- No es adecuado para clonar la voz de ninguna persona sin consentimiento explícito, ni para ninguna decisión que afecte a personas.
-- No es adecuado para ningún idioma distinto del kabyle.
-- No se han publicado resultados de cycle-CER para este modelo todavía; la única referencia es la línea de base `mms-tts-kab`.
-- Licencia Apache-2.0, que permite uso comercial, pero el autor no ofrece garantías sobre la calidad del audio.
+- Ancho de banda del audio fuente: las grabaciones de Common Voice presentan un corte acústico físico en torno a 7,9 kHz por el hardware de smartphone y la compresión con pérdida; la salida por encima de ese techo son armónicos superiores silenciosos, no información real.
+- Alcance prosódico limitado: el entrenamiento usa clips cortos de habla leída (media de 3,73 s), por lo que la prosodia de párrafos largos se sintetiza frase a frase y puede sonar entrecortada.
+- Una sola voz: se distribuye únicamente con la voz masculina `kab_male`; no hay selección de hablante ni clonación.
+- Riesgo de alucinación acústica y errores de pronunciación en palabras fuera del vocabulario fonético cubierto por el G2P, especialmente en préstamos y nombres propios.
+- Sesgos derivados del corpus: la voz refleja las características demográficas y de grabación de los voluntarios de Common Voice, con posible infrarrepresentación de variantes dialectales del cabilio.
+- Uso fuera de alcance prohibido por el autor: clonación de voz sin consentimiento y síntesis de lenguas distintas del cabilio.
+- Licencia Apache-2.0: permite uso comercial y modificación, pero exige conservar el aviso de licencia y no concede garantías; conviene verificar las condiciones de los datos de Common Voice subyacentes si se redistribuye el modelo.
+- Requiere `trust_remote_code=True` en `transformers`, lo que implica ejecutar código del repositorio; auditar antes de desplegar en producción.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/agbalu/Matoub-82M
-- Organización AƔHALU en Hugging Face: https://huggingface.co/agbalu
-- Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
-- Modelo de transcripción usado en la evaluación: https://huggingface.co/agbalu/Fadhma-300M
-- Modelo de transliteración Tifinagh-Latín: https://huggingface.co/agbalu/Juba-27M
-- Modelo de puntuación: https://huggingface.co/agbalu/Belaid-31M
-- Modelo de estandarización ortográfica: https://huggingface.co/agbalu/Boulifa-48M
+- Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
+- Sucesor basado en codecs: https://huggingface.co/agbalu/Matoub-4B
+- Modelo de evaluación ASR: https://huggingface.co/agbalu/Fadhma-300M
+- Transliteración: https://huggingface.co/agbalu/Juba-27M
+- Restauración de mayúsculas: https://huggingface.co/agbalu/Belaid-31M
+- Estandarización ortográfica: https://huggingface.co/agbalu/Boulifa-48M
+- Baseline de Meta: `mms-tts-kab` (referenciado en la model card; URL no incluida en la información disponible)
+- Common Voice (Mozilla): no incluido en la información disponible

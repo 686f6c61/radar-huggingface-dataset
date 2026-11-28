@@ -2,86 +2,92 @@
 
 ## Resumen
 
-Veqic-Coder-8B-Preview es un ajuste fino (finetune) del modelo Qwen3-8B, publicado por el usuario Veqic en Hugging Face. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-8B-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth junto con TRL de Hugging Face, según indica la propia model card. Se distribuye bajo licencia Apache 2.0 y está etiquetado para generación de texto conversacional en inglés.
+Veqic-Coder-8B-Preview es un modelo de generación de texto orientado a código publicado por Veqic en Hugging Face. Se trata de un ajuste fino del modelo Qwen3-8B (en su variante cuantizada `unsloth/Qwen3-8B-unsloth-bnb-4bit`), por lo que hereda la arquitectura transformer densa de la familia Qwen3 con 8.190.735.360 parámetros totales. El repositorio ocupa 16,4 GB y se distribuye en formato safetensors compatible con la librería transformers.
 
-La relevancia de esta ficha es limitada: se trata de una publicación de tipo "preview" con cero descargas y cero likes en el momento de la consulta, sin model card detallada, sin datos de entrenamiento declarados y sin benchmarks publicados. El nombre sugiere una especialización en código ("Coder"), pero la información disponible no confirma el dataset, el número de tokens de entrenamiento ni el método de ajuste empleado.
+El modelo se presenta como una "preview", es decir, una versión preliminar con un volumen de adopción todavía muy bajo (187 descargas y ningún "like" en el momento de la consulta), lo que sugiere un proyecto incipiente o de carácter experimental. La model card publicada es mínima: únicamente declara las etiquetas de licencia Apache 2.0 e idioma inglés, sin detallar datos de entrenamiento, benchmarks ni instrucciones de uso.
 
-Por tanto, esta ficha recoge los datos verificables del repositorio y de la model card, y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier evaluación de calidad deberá hacerse mediante pruebas propias, dado que no existe evidencia pública de rendimiento.
+Su relevancia actual es limitada pero resulta interesante como ejemplo de ajuste fino de Qwen3-8B para tareas de código bajo licencia permisiva. Cualquier evaluación rigurosa debe tomarse con cautela, ya que no hay evidencia publicada de rendimiento ni documentación técnica más allá de los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Qwen3-8B; detalles no documentados por el autor) |
-| Parametros totales | 8B (según el nombre del modelo y el modelo base Qwen3-8B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (el modelo base Qwen3-8B soporta contexto nativo largo, pero el autor no lo declara) |
-| Tipos de cuantizacion | El modelo base de partida está en 4 bits (bnb-4bit); el repo publica safetensors. Otras cuantizaciones no documentadas |
-| Idiomas soportados | Inglés (según la model card) |
+| Arquitectura | Transformer denso (familia Qwen3) |
+| Parametros totales | 8.190.735.360 |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el modelo base se distribuye en bnb-4bit, pero el repo publica safetensors) |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (librería transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3-8B, un transformer decoder-only de 8.000 millones de parámetros. El ajuste fino se realizó sobre la variante de Unsloth cuantizada en 4 bits (`unsloth/Qwen3-8B-unsloth-bnb-4bit`), lo que implica que el punto de partida del entrenamiento ya era una versión comprimida del modelo original. El autor indica que el entrenamiento se hizo "2x faster" con Unsloth y TRL, pero no especifica el número de tokens, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT supervisado.
+El modelo es un ajuste fino del checkpoint `unsloth/Qwen3-8B-unsloth-bnb-4bit`, que a su vez deriva de Qwen3-8B. Por tanto, la arquitectura subyacente es la de Qwen3 en su variante densa de 8B parámetros, un transformer decoder-only con atención completa y las innovaciones propias de la familia Qwen3 (entre ellas, modos de razonamiento híbrido en las versiones oficiales, aunque no se confirma si este ajuste los conserva). El dato de parámetros totales (8.190.735.360) coincide con el tamaño esperado de un Qwen3-8B y confirma que no se ha producido poda ni expansión estructural.
 
-No hay información sobre innovaciones técnicas adicionales, decodificación especulativa, atención lineal ni modificaciones arquitectónicas respecto al modelo base. Tampoco se documenta el proceso de fusión de pesos (si se fusionaron los adaptadores LoRA sobre el modelo cuantizado o sobre una versión en precisión completa), lo cual es relevante para reproducir el comportamiento del modelo.
+No se dispone de información sobre el corpus de entrenamiento, el número de tokens utilizados, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT. La model card no documenta ningún detalle del proceso de ajuste fino ni innovaciones técnicas adicionales. Tampoco se especifica si el ajuste se realizó sobre los pesos cuantizados en 4 bits del checkpoint base o si se desquantizaron previamente; este punto es relevante porque un ajuste sobre pesos bnb-4bit puede degradar la calidad final frente a un ajuste sobre precisión completa.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, según la etiqueta `conversational` del repositorio.
-- Especialización en código: el nombre "Coder" sugiere entrenamiento orientado a programación, pero no está confirmado en la documentación.
-- Compatibilidad con text-generation-inference (TGI) y transformers, según los tags.
-- Soporte de tool calling y function calling: no disponible (no documentado).
+- Generación de texto y conversación multi-turno, según los tags `text-generation` y `conversational`.
+- Generación de código, deducida del nombre "Coder" del modelo, aunque la model card no detalla lenguajes ni tareas concretas.
+- Compatibilidad con Text Generation Inference (TGI) y con la librería transformers.
+- Etiqueta `endpoints_compatible`, lo que indica que puede desplegarse en los Inference Endpoints de Hugging Face.
+- Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingües: no disponibles; solo se declara inglés.
-- Modo thinking, visión o audio: no disponible (no documentado).
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades especiales (modo thinking, visión, audio): no disponible.
 
 ## Casos de uso
 
-- Asistencia a la programación en entornos de desarrollo: el modelo puede integrarse en asistentes de código en inglés, aunque su especialización real en código no está verificada y requeriría evaluación propia antes de usarlo en producción.
-- Generación de texto conversacional en inglés: adecuado para prototipos de chatbots o sistemas de respuesta automática donde el contexto sea moderado y el idioma sea inglés.
-- Experimentación e investigación: al ser un finetune ligero de 8B con licencia Apache 2.0, sirve como base para estudiar técnicas de ajuste con Unsloth y TRL, o como punto de partida para nuevos finetunes.
-- Despliegue en infraestructura con TGI: los tags indican compatibilidad con text-generation-inference, lo que facilita servirlo en clústeres con GPUs de gama alta.
-- Pruebas de cuantización y eficiencia: al partir de una base en 4 bits, es útil para comparar el impacto de la cuantización en la calidad del ajuste fino.
-- Evaluación comparativa de finetunes comunitarios: sirve como caso de estudio de publicaciones "preview" sin documentación, útil para metodologías de auditoría de modelos.
+- Asistencia de autocompletado de código en editores: el modelo puede integrarse vía transformers o TGI para sugerir fragmentos de código en inglés, aprovechando su naturaleza de ajuste sobre Qwen3-8B. Adecuado por su tamaño moderado, aunque sin benchmarks publicados la calidad real es incierta.
+- Generación de tests unitarios: dado un fragmento de código, el modelo puede producir esqueletos de pruebas; útil en pipelines de CI/CD siempre que se validen los resultados con ejecución real.
+- Explicación de código existente: resumir o documentar funciones en inglés, un caso típico de modelos "coder" de 8B que caben en GPU de consumo.
+- Prototipado de chatbots técnicos: al ser compatible con TGI y transformers, puede desplegarse rápidamente como servicio conversacional en inglés para dominios de desarrollo.
+- Experimentación académica sobre ajuste fino de Qwen3: sirve como referencia de cómo un ajuste sobre un checkpoint bnb-4bit se comporta en tareas de código, útil para investigadores que estudian el impacto de la cuantización previa al fine-tuning.
+- Despliegue en Inference Endpoints de Hugging Face: la etiqueta `endpoints_compatible` permite levantar el modelo como endpoint gestionado sin infraestructura propia, adecuado para pruebas de concepto.
+- Generación de documentación técnica en inglés: a partir de código o de especificaciones, el modelo puede redactar READMEs y comentarios, aunque requiere revisión humana por el riesgo de alucinación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de 8B en safetensors: ~16 GB en FP16, ~8-10 GB en cuantización de 8 bits y ~5-6 GB en 4 bits. Estas cifras son estimaciones genéricas para modelos de 8B, no datos del autor.
-- GPU recomendadas: no documentadas. Para un 8B en FP16 se suelen emplear A100, H100, L40S o RTX 4090 (24 GB).
-- ¿Cabe en GPU de consumo? Probablemente sí en cuantizaciones de 4-8 bits en GPUs con 8-24 GB (RTX 3060 12 GB, RTX 4070, RTX 4090), pero no está verificado por el autor.
-- Opciones de despliegue: transformers y text-generation-inference (TGI) según los tags; llama.cpp, Ollama o vLLM no están confirmados.
+- VRAM estimada para inferencia en FP16/BF16: aproximadamente 16,4 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica se recomiendan 24 GB o más.
+- VRAM estimada en cuantización 8 bits: en torno a 8-9 GB de pesos.
+- VRAM estimada en cuantización 4 bits: en torno a 4,5-5 GB de pesos.
+- GPU recomendadas: A100 40/80 GB, H100, L40S para producción; RTX 4090 (24 GB) para FP16 con contexto moderado.
+- GPU de consumo: cabe en RTX 3090/4090 en FP16 con contexto limitado, y en GPUs de 8-12 GB si se cuantiza a 4 u 8 bits (siempre que se generen pesos GGUF o GPTQ/AWQ, no incluidos en el repo).
+- Opciones de despliegue: transformers, Text Generation Inference (TGI), Hugging Face Inference Endpoints. Para llama.cpp/Ollama sería necesario convertir los pesos a GGUF, tarea no documentada por el autor.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Veqic-Coder-8B-Preview | 8B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Finetune comunitario sin benchmarks |
-| Qwen3-8B (base) | 8B | No disponible en esta ficha | Apache 2.0 (según modelo base) | Hugging Face, ampliamente usado | Modelo original con documentación completa |
-| Qwen2.5-Coder-7B | 7B | No disponible en esta ficha | Apache 2.0 | Hugging Face | Especializado en código, con benchmarks publicados |
+| Veqic-Coder-8B-Preview | 8,19B | no disponible | Apache 2.0 | Hugging Face | Ajuste fino de Qwen3-8B, sin benchmarks |
+| Qwen3-8B (oficial) | ~8,2B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Modelo base, con documentación y evaluaciones oficiales |
+| Qwen2.5-Coder-7B | ~7,6B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Alternativa "coder" consolidada de la familia Qwen |
+| CodeLlama-7B | ~6,7B | no disponible en esta ficha | Llama 2 license | Hugging Face | Referencia clásica en código, licencia menos permisiva |
 
-La comparación con alternativas especializadas en código es limitada porque el autor de Veqic-Coder-8B-Preview no publica métricas. El modelo base Qwen3-8B y Qwen2.5-Coder-7B cuentan con documentación y evaluaciones públicas que este finetune no aporta.
+Los datos de contexto y benchmarks de los modelos comparados no se detallan aquí por no formar parte de la información proporcionada; se recomienda consultar sus model cards oficiales.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia pública de que el finetune mejore al modelo base en código o en cualquier otra tarea.
-- Documentación mínima: la model card no detalla dataset, hiperparámetros, método de entrenamiento ni proceso de fusión de pesos.
-- Riesgo de alucinación: inherente a los modelos de lenguaje; sin evaluación específica no puede acotarse.
-- Sesgos conocidos: no documentados; al entrenarse presumiblemente en inglés, los sesgos culturales y lingüísticos del dataset subyacente se heredan sin análisis.
-- Limitación de idioma: solo se declara inglés, lo que excluye usos en castellano u otros idiomas sin verificación previa.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar que el modelo base Qwen3-8B y la variante de Unsloth mantengan la misma licencia y que el finetune no introduzca datos con restricciones.
-- Caveat de producción: al partir de una base cuantizada en 4 bits, la calidad del ajuste puede verse afectada; no se documenta si los pesos publicados están en precisión completa o cuantizados.
-- Reputación del repositorio: cero descargas y cero likes, sin historial de uso, lo que desaconseja su adopción en producción sin una evaluación exhaustiva.
+- Ausencia total de benchmarks y de documentación de entrenamiento: no hay evidencia publicada de calidad en código, razonamiento o matemáticas.
+- Modelo marcado como "Preview": puede tratarse de una versión inestable o sujeta a cambios sin aviso.
+- Adopción muy baja (187 descargas, 0 likes): escasa validación por parte de la comunidad.
+- Entrenado sobre un checkpoint cuantizado en 4 bits (`unsloth/Qwen3-8B-unsloth-bnb-4bit`), lo que puede introducir degradación respecto a un ajuste sobre precisión completa.
+- Idiomas: solo inglés declarado; el rendimiento en castellano u otros idiomas no está garantizado.
+- Riesgo de alucinación inherente a los modelos de 8B, especialmente en código: puede generar APIs inexistentes o imports inválidos.
+- Sesgos: no documentados por el autor; se heredan los del corpus de Qwen3, no auditados en este ajuste.
+- Licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen3 conviene revisar también las condiciones del modelo base y del checkpoint intermedio de Unsloth.
+- No se especifica la longitud de contexto soportada, lo que complica planificar despliegues con prompts largos.
+- Sin pesos GGUF ni cuantizaciones publicadas: el despliegue en CPU o GPUs pequeñas requiere conversión manual.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Veqic/Veqic-Coder-8B-Preview
-- Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit
-- Repositorio Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de Hugging Face: https://github.com/huggingface/trl
+- Modelo base intermedio: https://huggingface.co/unsloth/Qwen3-8B-unsloth-bnb-4bit
+- Familia Qwen3 (referencia del modelo original): https://huggingface.co/Qwen

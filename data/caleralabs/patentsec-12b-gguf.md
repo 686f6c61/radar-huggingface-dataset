@@ -2,107 +2,108 @@
 
 ## Resumen
 
-PatentSec-12B es un modelo de lenguaje especializado en prosecution de patentes estadounidenses, desarrollado por CaleraLabs (Calera Computing, Inc.) y publicado en Hugging Face como cuantización GGUF. Se construye mediante fine-tuning de `google/gemma-4-12B-it` y está orientado a abogados de patentes, agentes registrados y asesoría de propiedad intelectual interna. Resuelve un problema concreto: verificar bases antecedentes de reivindicaciones bajo 35 U.S.C. § 112(b) y MPEP § 2173.05(e), cribar elegibilidad bajo § 101 / MPEP § 2106, construir claim charts elemento por elemento conforme a *Pennwalt* y calcular plazos y tasas de extensión según 37 CFR §§ 1.16–1.18 y 1.136.
+PatentSec-12B es un modelo de lenguaje especializado en prosecution de patentes estadounidenses, desarrollado por CaleraLabs sobre Google Gemma 4 12B Instruction (`google/gemma-4-12B-it`). Se distribuye como cuantizacion GGUF (Q4_K_M y Q8_0) para inferencia local completamente offline mediante Ollama, llama.cpp o LM Studio. Forma parte de la serie Calera Bedrock con el identificador interno `PROD-BEDROCK-001` y esta orientado a abogados de patentes, agentes registrados y departamentos juridicos internos que necesitan procesar documentacion confidencial sin sacarla del perimetro de la firma.
 
-El modelo tiene 11.907.350.576 parámetros totales según los safetensors del repositorio base, y se distribuye únicamente en formato GGUF (Q4_K_M y Q8_0) para inferencia local y air-gapped en Ollama, llama.cpp o LM Studio. La longitud de contexto no se declara de forma explícita en la información disponible; el `Modelfile` de Ollama configura `num_ctx 4096`, y el ejemplo de llama.cpp usa `-c 4096`.
+El modelo esta afinado para tareas concretas del ciclo de prosecution: verificacion de base antecedente bajo 35 U.S.C. § 112(b) y MPEP § 2173.05(e), cribado de elegibilidad bajo § 101 y MPEP § 2106, construccion de claim charts elemento por elemento segun *Pennwalt* bajo § 271(a), calculo de tasas de extension segun 37 CFR §§ 1.16-1.18 y 1.136, y computo de plazos estatutarios de respuesta bajo 35 U.S.C. § 21(b), 37 CFR § 1.7 y MPEP § 710.05. La model card declara una postura de "citation lock" que rechaza numeros de patente fabricados o fuera de horizonte en lugar de inventar file wrappers o examinadores ficticios.
 
-Su relevancia actual reside en la promesa de privacidad absoluta: los borradores de invención no publicados y las respuestas a Office Actions nunca salen del perímetro hardware del despacho. El autor declara además una política de "citation lock" que rechaza números de patente fabricados o fuera de horizonte en lugar de inventar expedientes, examinadores o fechas de envío.
+Con 11.907.350.576 parametros, licencia Apache 2.0 y un unico idioma declarado (ingles), el modelo reporta un 77,0 % de acierto en la division mini de PatentBench v0.2.0 (Layer 1, 283 casos, en bf16 con vLLM y en modo "model alone"). Es relevante ahora porque cubre un nicho vertical con requisitos estrictos de privacidad y trazabilidad normativa, donde los modelos generalistas suelen fallar en citas y calculos de plazos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Gemma 4 12B; detalles específicos no disponibles) |
+| Arquitectura | Transformer decoder-only (heredada de Gemma 4 12B Instruction; detalles especificos no disponibles) |
 | Parametros totales | 11.907.350.576 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible de forma explícita; configuración de referencia `num_ctx 4096` |
-| Tipos de cuantizacion | Q4_K_M (7,38 GB) y Q8_0 (12,67 GB) |
-| Idiomas soportados | Inglés (`en`) |
+| Parametros activos | no disponible (no es MoE segun la informacion proporcionada) |
+| Longitud de contexto | no disponible (el ejemplo de llama.cpp sugiere `-c 4096`, pero no se declara como contexto maximo oficial) |
+| Tipos de cuantizacion | Q4_K_M, Q8_0 (publicadas); GGUF como formato de distribucion |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors solo en el modelo base) |
+| Formato de pesos | GGUF (safetensors como base del modelo original; el repo publica GGUF) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/gemma-4-12B-it`, un transformer decoder-only de aproximadamente 11,9 mil millones de parámetros, y se especializa mediante fine-tuning supervisado sobre flujos de prosecution de la USPTO. La model card cita explícitamente las áreas de entrenamiento: verificación de base antecedente (§ 112(b) / MPEP § 2173.05(e)), cribado de elegibilidad (§ 101 / MPEP § 2106), claim charting *Pennwalt* de todos los elementos (§ 271(a)), tablas de tasas de extensión (37 CFR §§ 1.16–1.18 / 1.136) y plazos estatutarios de respuesta (35 U.S.C. § 21(b) / 37 CFR § 1.7 / MPEP § 710.05). El dataset de evaluación asociado es `rhahn/patentbench`.
+PatentSec-12B es un fine-tuning de dominio sobre `google/gemma-4-12B-it`, por lo que hereda la arquitectura transformer decoder-only del modelo base de Google. No se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset de ajuste, ni si se emplearon tecnicas de RLHF, DPO o SFT supervisado. El dataset de evaluacion referenciado es `rhahn/patentbench` (PatentBench v0.2.0), y la model card menciona entrenamiento directo sobre flujos de prosecution modernos del USPTO, lo que sugiere un corpus centrado en MPEP, estatutos (35 U.S.C.) y regulaciones (37 CFR).
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO. La innovación técnica destacada por el autor no es arquitectónica sino de comportamiento: una política de "citation lock" que fuerza el rechazo de citas inventadas, junto con solvers deterministas de plazos y tasas incluidos en el SDK `patentsec.py`. Existe una variante compuesta de dos niveles (Tier 2) que combina estos pesos con el runtime propietario Calera ICX y recall en vivo de registros USPTO, pero esa variante no forma parte de este repositorio GGUF.
+La innovacion tecnica destacable no esta en la arquitectura sino en el comportamiento: el modelo implementa un mecanismo declarado de "Zero-Hallucination Citation Lock" que rechaza citas de patentes fabricadas o fuera del horizonte temporal conocido, en lugar de generar file wrappers, examinadores o fechas de envio ficticias. La model card distingue dos niveles de capacidad: Tier 1 (este GGUF, modelo aislado, 77,0 % en PatentBench Mini) y Tier 2 (modelo combinado con el runtime propietario Calera ICX, 92,6 % en Mini y 99,23 % en el corpus empresarial completo), aunque el Tier 2 no forma parte de estos pesos.
 
 ## Capacidades
 
-- Generación de texto especializada en prosecution de patentes estadounidenses y terminología MPEP.
-- Auditoría de reivindicaciones bajo 35 U.S.C. § 112(b): detección de falta de base antecedente conforme a MPEP § 2173.05(e).
-- Cribado de elegibilidad bajo 35 U.S.C. § 101 y MPEP § 2106.
-- Construcción de claim charts elemento por elemento conforme al estándar *Pennwalt* (§ 271(a)).
-- Cálculo de plazos estatutarios de respuesta (35 U.S.C. § 21(b), 37 CFR § 1.7, MPEP § 710.05), incluyendo ajustes por festivos federales.
-- Cálculo de tasas de extensión de tiempo (37 CFR §§ 1.16–1.18 y 1.136), con tablas verificadas al 100% (90/90) según el autor.
-- Rechazo determinista de números de patente, expedientes, examinadores o fechas de envío inventados ("citation lock").
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés.
-- Modo thinking, visión o audio: no disponible en la información proporcionada.
+- Generacion de texto y razonamiento juridico especializado en prosecution de patentes estadounidenses.
+- Verificacion de base antecedente en reivindicaciones bajo 35 U.S.C. § 112(b) y MPEP § 2173.05(e).
+- Cribado de elegibilidad de materia patentable bajo 35 U.S.C. § 101 y MPEP § 2106.
+- Construccion de claim charts elemento por elemento segun el test *Pennwalt* bajo 35 U.S.C. § 271(a).
+- Calculo de tasas de extension segun 37 CFR §§ 1.16-1.18 y 1.136 (la model card declara 100,0 %, 90/90, en tablas de tasas de extension del USPTO).
+- Computo de plazos estatutarios de respuesta bajo 35 U.S.C. § 21(b), 37 CFR § 1.7 y MPEP § 710.05, incluyendo festivos federales.
+- Refusal controlado ante dockets o numeros de patente desconocidos (citation lock).
+- Soporte de conversacion multi-turno (tag `conversational`).
+- Compatibilidad declarada con endpoints (`endpoints_compatible`).
+- Capacidades de tool calling, function calling, agentes multi-paso, vision o audio: no disponibles en la informacion proporcionada.
+- Capacidades multilingues: solo ingles declarado.
 
 ## Casos de uso
 
-- Auditoría de reivindicaciones antes de presentación: el modelo recibe el texto de una reivindicación y señala términos sin base antecedente bajo § 112(b), permitiendo al agente corregir antes de pagar la tasa de presentación.
-- Cribado de elegibilidad § 101 en divulgaciones de invención: se introduce el borrador y el modelo marca elementos abstractos o riesgos Alice, útil como primer filtro en el intake de un despacho.
-- Construcción de claim charts de infracción: dado un conjunto de reivindicaciones y una descripción de producto acusado, el modelo genera el mapeo elemento por elemento conforme a *Pennwalt*, que el abogado revisa y completa.
-- Cálculo de plazos de respuesta a Office Actions: con la fecha de envío y el período estatutario abreviado, el modelo calcula el vencimiento exacto descontando festivos federales y la tasa de extensión aplicable para entidad pequeña.
-- Despliegue air-gapped en despachos: al ejecutarse en Ollama o llama.cpp sobre un Mac con Apple Silicon de 16 GB o una estación con 8 GB de VRAM, permite procesar borradores provisionales no publicados sin salir del perímetro del despacho, requisito habitual en acuerdos de confidencialidad con clientes.
-- Asistencia en la redacción de respuestas a Office Actions: borrador inicial de argumentos y enmiendas que el agente registrado edita, reduciendo el tiempo de respuesta en plazos abreviados.
-- Formación interna y control de calidad: revisión sistemática de un lote de reivindicaciones históricas para detectar patrones recurrentes de rechazo § 112(b) en la práctica de un despacho.
+- Auditoria de reivindicaciones en despacho: el modelo revisa la base antecedente de cada termino en una reivindicacion bajo § 112(b) y MPEP § 2173.05(e), señalando introducciones sin antecedente previo. Adecuado por su entrenamiento especifico en esta norma y por ejecutarse offline en un portatil Apple Silicon de 16 GB.
+- Cribado de elegibilidad § 101 antes de presentar: se introduce el borrador de reivindicaciones y el modelo aplica el marco de MPEP § 2106 para identificar riesgos de abstraccion judicial. Util para in-house counsel que necesita un primer filtro sin enviar el borrador a un servicio en la nube.
+- Construccion de claim charts de infraccion: dado un conjunto de reivindicaciones y una descripcion de producto acusado, el modelo genera un chart elemento por elemento segun *Pennwalt* (§ 271(a)). La ventaja es la trazabilidad y el rechazo a inventar referencias.
+- Calculo de plazos de respuesta a Office Actions: con la fecha de envio y el periodo estatutario acortado, el modelo computa el plazo exacto bajo 35 U.S.C. § 21(b) y 37 CFR § 1.7, incluyendo festivos federales, y devuelve la tabla de tasas de extension aplicable (small entity, 2 meses, etc.).
+- Presupuestacion de tasas USPTO: el modelo genera tablas de tasas de extension y mantenimiento segun 37 CFR §§ 1.16-1.18 y 1.136, con 100,0 % de acierto declarado en las 90 tablas de extension evaluadas.
+- Despliegue air-gapped en firma juridica: al distribuirse como GGUF Q4_K_M (7,38 GB), se ejecuta en Ollama o llama.cpp sin conexion, de modo que las invenciones no publicadas y los borradores provisionales no salen del perimetro del despacho.
+- Asistencia en borradores de respuesta: el modelo puede redactar borradores de respuesta a Office Actions citando el MPEP aplicable, sujeto a revision obligatoria por un agente registrado.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados de forma independiente) sobre PatentBench v0.2.0, split mini, Layer 1 determinista, modelo solo:
+Resultados declarados por el autor en el model-index de la model card (no verificados de forma independiente):
 
-| Tarea | Metrica | Valor |
-|---|---|---|
-| PatentBench Mini, Layer 1 (deterministic), model alone | Accuracy, 283 casos (bf16, vLLM) | 77,0 % |
-| PatentBench Mini, Overall (Mini completo) | Accuracy | 77,0 % (218/283) |
-| PatentBench Mini, tareas autocontenidas | Accuracy | 96,5 % (218/226) |
-| Tablas de tasas de extensión USPTO | Accuracy | 100,0 % (90/90) |
-| Tier 2 (PatentSec-12B + Calera ICX, API alojada) | Accuracy Mini Overall | 92,6 % (262/283) |
-| Tier 2 (PatentSec-12B + Calera ICX, API alojada) | Accuracy corpus empresarial completo | 99,23 % (7.042/7.097) |
+| Benchmark | Metrica | Resultado | Condiciones |
+|---|---|---|---|
+| PatentBench v0.2.0, Layer 1 Mini Split | Accuracy (283 casos) | 77,0 % (218/283) | bf16, vLLM, modelo aislado |
+| PatentBench v0.2.0, Layer 1 Mini Split (tareas autocontenidas) | Accuracy | 96,5 % (218/226) | Segun la model card |
+| Tablas de tasas de extension USPTO | Accuracy | 100,0 % (90/90) | Segun la model card |
+| PatentBench v0.2.0 Mini (Tier 2, con Calera ICX) | Accuracy | 92,6 % (262/283) | No aplicable a estos pesos |
+| Corpus empresarial completo (Tier 2, con Calera ICX) | Accuracy | 99,23 % (7.042/7.097) | No aplicable a estos pesos |
 
-El autor declara para el Tier 2 una tasa de alucinación de citas de reivindicación del 0,0000 %, prefill de 117 ms y 4.846 tok/s en el runtime Calera Wavefront. Estos datos corresponden a la variante compuesta y no a los pesos GGUF de este repositorio.
+No se han publicado resultados de benchmarks generalistas (MMLU, HumanEval, GSM8K) en la informacion disponible. Los datos de Tier 2 corresponden al producto hospedado con el runtime propietario Calera ICX y no son reproducibles con estos pesos GGUF por si solos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: Q4_K_M requiere aproximadamente 7,4 GB de pesos, por lo que 8 GB de VRAM son suficientes; Q8_0 requiere aproximadamente 12,7 GB, recomendándose 16 GB o más.
-- GPU recomendadas: cualquier GPU con 8 GB o más de VRAM para Q4_K_M; para Q8_0, GPU de estación de trabajo con 24 GB (RTX 3090/4090, A5000) o Apple Silicon con 24 GB unificados.
-- Cabe en GPU de consumo: sí, Q4_K_M en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 y cualquier Mac con chip M-series de 16 GB o más. Q8_0 en RTX 4090 y Mac Studio.
-- Opciones de despliegue: Ollama (`ollama run hf.co/CaleraLabs/patentsec-12b-gguf`), llama.cpp (`llama-cli -hf ...`), LM Studio. El repositorio incluye `Modelfile` para Ollama con `temperature 0.1` y `num_ctx 4096`.
-- Latencia y throughput: no disponibles para los pesos GGUF en la información proporcionada. El autor solo publica cifras para el runtime propietario Tier 2 (117 ms de prefill, 4.846 tok/s), no aplicables a esta cuantización.
-- Almacenamiento: el repositorio ocupa 20,1 GB; conviene reservar espacio para ambos archivos GGUF si se comparan cuantizaciones.
+- VRAM/RAM estimada: Q4_K_M ocupa 7,38 GB (`7.381.382.848` bytes) y Q8_0 ocupa 12,67 GB (`12.669.646.528` bytes).
+- La model card indica que Q4_K_M funciona en cualquier Mac con chip M-series de 16 GB o mas, o en GPU con 8 GB o mas de VRAM; Q8_0 requiere 24 GB o mas de RAM (Mac Studio) o una GPU de estacion de trabajo.
+- Cabe en GPU de consumo: si, Q4_K_M en GPUs de 8 GB o mas (por ejemplo, RTX 3060 Ti, RTX 4060 Ti, RTX 4070); Q8_0 requiere GPUs de 16-24 GB (RTX 4080, RTX 4090, RTX 3090).
+- GPU profesionales recomendadas para mayor throughput: A100, H100 (no especificadas por el autor, pero coherentes con el tamano del modelo).
+- Opciones de despliegue: Ollama (`ollama run hf.co/CaleraLabs/patentsec-12b-gguf`), llama.cpp (`llama-cli -hf ...`), LM Studio, y vLLM en bf16 para evaluacion (usado por el autor para el benchmark).
+- Latencia y throughput: no disponibles para estos pesos GGUF. La model card cita 117 ms de prefill y 4.846 tok/s en el runtime Calera Wavefront, pero esos datos corresponden al Tier 2 hospedado y no a la inferencia local con llama.cpp u Ollama.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparables de otros modelos legales especializados en la información proporcionada. La comparación se limita a alternativas genéricas de tamaño similar:
-
-| Modelo | Parametros | Contexto | Especializacion legal | Licencia | Formato |
+| Modelo | Parametros | Contexto | Especializacion | Licencia | Formato |
 |---|---|---|---|---|---|
-| PatentSec-12B (este) | 11,9 B | No disponible (config. 4096) | Patentes USPTO, MPEP, § 101/§ 112(b) | Apache 2.0 | GGUF |
-| google/gemma-4-12B-it (base) | 11,9 B | No disponible | Generalista | Gemma (términos propios) | Safetensors |
-| Alternativas legales especializadas de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
+| PatentSec-12B (este) | 11,9 B | no disponible | Prosecution de patentes USPTO | Apache 2.0 | GGUF (Q4_K_M, Q8_0) |
+| google/gemma-4-12B-it (base) | 12 B (aproximado) | no disponible | Proposito general, instrucciones | Gemma Terms (no disponible en la informacion) | safetensors |
+| Modelos juridicos generalistas (p. ej. variantes legales de 7-13 B) | no disponible | no disponible | Derecho general, no prosecution USPTO | variable | variable |
 
-No se han identificado en la información disponible modelos comparables de la misma categoría (prosecution de patentes USPTO) con los que establecer una comparación cuantitativa.
+No se dispone en la informacion proporcionada de benchmarks comparativos frente a alternativas de la misma categoria, por lo que la comparativa se limita a parametros, licencia y formato. El modelo base Gemma 4 12B Instruction es la referencia natural, pero PatentSec-12B anade el ajuste de dominio y la cuantizacion GGUF lista para uso offline.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks son declarados por el autor y marcados como `verified: false`; no hay validación independiente publicada.
-- El modelo solo soporta inglés; no es utilizable para prosecution en otras jurisdicciones ni en español.
-- La especialización es exclusivamente estadounidense (USPTO, MPEP, 35 U.S.C.); su uso en la EPO, OEPM u otras oficinas carece de soporte declarado.
-- El "citation lock" es una política de comportamiento del fine-tuning, no una garantía formal; el autor no publica tasas de alucinación para los pesos GGUF (solo para el Tier 2 con ICX).
-- La ventana de contexto efectiva en la configuración de referencia es de 4096 tokens, insuficiente para reivindicaciones largas con descripción completa; no se documenta un contexto mayor.
-- El modelo no sustituye el criterio de un agente registrado; cualquier output debe revisarse antes de presentarse ante la USPTO.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base Gemma 4 tiene sus propios términos que deben verificarse para despliegues en producción.
-- Los datos de latencia y throughput publicados corresponden al runtime propietario Calera ICX, no a esta cuantización; el rendimiento en Ollama o llama.cpp no está documentado.
-- El repositorio tiene 188 descargas y 0 likes en el momento de la consulta, lo que indica adopción limitada y escasa validación por la comunidad.
+- Solo soporta ingles; no se declaran capacidades multilingues.
+- El benchmark de 77,0 % procede del propio autor y esta marcado como `verified: false`; no hay validacion independiente.
+- La distincion Tier 1 / Tier 2 es critica: los resultados del 92,6 % y 99,23 % requieren el runtime propietario Calera ICX y no se obtienen con estos pesos.
+- Riesgo de alucinacion en citas: aunque la model card declara un "citation lock", no hay evidencia independiente de que elimine por completo las citas fabricadas; se recomienda verificacion humana.
+- Sesgos conocidos: no disponibles en la informacion proporcionada; al estar entrenado sobre corpus del USPTO, puede heredar sesgos doctrinales y de redaccion de esa fuente.
+- Limitaciones de contexto: la longitud maxima de contexto no se declara; los ejemplos usan `-c 4096`, lo que sugiere que el uso practico puede estar limitado a ventanas moderadas.
+- Uso comercial: la licencia Apache 2.0 lo permite, pero el modelo base Gemma 4 puede imponer terminos adicionales de Google que no se detallan en la informacion disponible; conviene revisar la licencia del modelo base antes de desplegar en produccion.
+- No es asesoramiento juridico: el modelo debe usarse como herramienta de apoyo con revision obligatoria por un agente de patentes registrado.
+- El repositorio tiene 232 descargas y 0 likes en el momento de la consulta, lo que indica adopcion limitada y poca validacion por la comunidad.
+- El checksum SHA-256 del archivo Q8_0 aparece truncado en la model card; no se puede verificar la integridad completa del artefacto con la informacion disponible.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/CaleraLabs/patentsec-12b-gguf
-- Modelo base: https://huggingface.co/google/gemma-4-12B-it
+- Hugging Face: https://huggingface.co/CaleraLabs/patentsec-12b-gguf
+- Coleccion Calera Bedrock: https://huggingface.co/collections/CaleraLabs/bedrock-models-6ad809297e55c1dd65da2e43
+- Portal PatentSec: https://patent.caleralabs.com
+- Calera ICX: https://icx.caleralabs.com
+- Documentacion: https://caleralabs.com/docs
+- Space PatentSec Examiner Arena: https://huggingface.co/spaces/CaleraLabs/patentsec-examiner-arena
 - Dataset PatentBench: https://huggingface.co/datasets/rhahn/patentbench
-- Demo (PatentSec Examiner Arena): https://huggingface.co/spaces/CaleraLabs/patentsec-examiner-arena
-- API empresarial Tier 2: https://patent.caleralabs.com
+- Modelo base: https://huggingface.co/google/gemma-4-12B-it

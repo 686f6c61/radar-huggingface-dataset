@@ -2,91 +2,100 @@
 
 ## Resumen
 
-ThoxEdge-0.8B es un modelo de generacion de texto de 0,75 mil millones de parametros desarrollado por Thox-ai (THOX.ai), construido a partir del modelo base Qwen/Qwen3.5-0.8B mediante la fusion de un adaptador LoRA entrenado con datos propios de SFT (supervised fine-tuning) y publicado en bf16. Forma parte de la linea ThoxEdge, orientada a inferencia local en dispositivos de borde (edge) de la propia familia de hardware de THOX, y se distribuye con pesos fusionados, conversiones GGUF (Q4_K_M y Q8_0) y un Modelfile para Ollama.
+ThoxEdge-0.8B es un modelo de generación de texto de 0,8 mil millones de parámetros desarrollado por Thox-ai, construido mediante la fusión de un adaptador LoRA (Wave C) sobre el modelo base Qwen/Qwen3.5-0.8B de Alibaba. Se distribuye como pesos fusionados en bf16 junto con conversiones GGUF (Q4_K_M y Q8_0) y un Modelfile de Ollama, con licencia Apache 2.0 y acceso público sin gating.
 
-El modelo se presenta como el buque insignia de la gama ThoxEdge y esta disenado para responder a partir de hechos canonicos de THOX y declinar responder cuando la informacion no ha sido publicada por la compania. Segun la model card, supera una evaluacion interna denominada GATE49 con 46 de 49 aciertos sobre el conjunto de desarrollo, sin fallos duros conocidos como falsos. Esta entrenado sobre el corpus thox-factory-sft-v5, de 982 filas, y su licencia es Apache 2.0.
+El modelo está diseñado específicamente para despliegue en dispositivo (*on-device*) y entornos *edge*, con el objetivo declarado de responder a partir de hechos canónicos de THOX y rechazar preguntas sobre información que THOX no ha publicado. No es un modelo de propósito general: su ajuste supervisado (SFT) se realizó sobre un corpus propietario de 982 filas, lo que lo orienta a conversación y a un dominio acotado.
 
-Su relevancia actual reside en la combinacion de tamano reducido, licencia permisiva y disponibilidad inmediata en formatos listos para produccion local (safetensors, GGUF y Ollama), lo que lo hace adecuado para despliegues en hardware de consumo y entornos sin conectividad. La informacion publica no detalla la longitud de contexto, los idiomas mas alla del ingles ni los datos de arquitectura interna mas alla del modelo base.
+Su relevancia actual radica en el formato de distribución: un modelo sub-1B con pesos abiertos, cuantizaciones listas para consumir y soporte nativo en Ollama y llama.cpp, lo que lo hace apto para prototipado rápido en hardware de consumo. La información sobre arquitectura interna, contexto máximo y benchmarks es limitada en la documentación disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-0.8B; tag `qwen3_5_text`); detalles internos no disponibles |
-| Parametros totales | 752.393.024 (segun safetensors) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bf16 (pesos fusionados), GGUF Q4_K_M, GGUF Q8_0 |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3.5-0.8B; tag `qwen3_5_text`) |
+| Parametros totales | 752.393.024 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | bf16 (safetensors), GGUF Q4_K_M, GGUF Q8_0 |
+| Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una fusion (merge) en bf16 de un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-0.8B, que THOX describe como una arquitectura transformer de la familia Qwen3.5 con soporte de texto. El adaptador se entreno con datos propios de SFT (dataset Thox-ai/thox-factory-sft-v5) y se fusiono en casa; el repositorio aloja la forma servible del adaptador, es decir, los pesos fusionados, las conversiones GGUF y el Modelfile de Ollama. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion detallada del dataset ni si se aplicaron fases de RLHF o DPO.
+ThoxEdge-0.8B es un transformer decoder-only derivado de Qwen3.5-0.8B. El proceso de construcción consistió en entrenar un adaptador LoRA (publicado por separado como Thox-ai/ThoxEdge-0.8B-WaveC) sobre datos SFT propios de THOX (dataset `Thox-ai/thox-factory-sft-v5`, corpus de 982 filas) y fusionarlo posteriormente en los pesos base en bf16. No se documenta en la información disponible el número de tokens de entrenamiento, la composición detallada del dataset ni si se aplicaron etapas de RLHF o DPO posteriores al SFT.
 
-La model card indica que esta es la primera build fusionada publicada de este nivel sobre el corpus de 982 filas, y que la version GGUF de la ola anterior (Wave B) nunca se publico porque su lectura de gate era un artefacto de serving. Como innovacion destacable, el modelo incorpora un comportamiento de rechazo explicito ante preguntas sobre hechos no publicados por THOX, orientado a reducir afirmaciones falsas sobre la propia compania. No se documentan tecnicas como decodificacion especulativa, atencion lineal o arquitecturas hibridas.
+La model card describe el build como "Wave C" y lo identifica como el primer build fusionado publicado de esta categoría sobre el corpus de 982 filas; el GGUF de la ola anterior (Wave B) nunca se publicó. El repositorio incluye plantilla de chat (`chat_template.jinja`) y configuración de procesador, lo que sugiere soporte de conversación multi-turno mediante formato estructurado, aunque no se detalla la innovación técnica concreta más allá de la fusión de adaptadores y las conversiones GGUF.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con foco en respuestas fundamentadas en hechos canonicos de THOX.
-- Comportamiento de rechazo controlado: declina responder cuando la informacion no ha sido publicada por THOX, en lugar de inventarla.
-- Ajuste fino supervisado (SFT) sobre un corpus propio orientado a conversacion.
-- Compatibilidad con endpoints (tag `endpoints_compatible`) y plantilla de chat incluida (`chat_template.jinja`).
-- Despliegue local-first: pesos en safetensors, GGUF Q4_K_M y Q8_0, y Modelfile para Ollama.
-- No se documentan en la informacion disponible capacidades de tool calling, function calling, razonamiento multi-paso, agentes, vision, audio ni modo thinking.
-- Capacidad multilingue limitada al ingles segun el campo `language` de la model card.
+- Generación de texto conversacional en inglés, con formato de chat multi-turno mediante plantilla Jinja.
+- Ajuste orientado a responder desde un conjunto acotado de hechos canónicos de THOX y a declinar preguntas fuera de ese ámbito publicado.
+- Distribución preparada para inferencia local: pesos safetensors para transformers, GGUF para llama.cpp y Modelfile para Ollama.
+- Compatibilidad con API OpenAI-compatible a través de `llama serve` (endpoint `/v1/chat/completions`).
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, agentes, visión, audio ni modo "thinking" en la información disponible.
+- Capacidad multilingüe: solo inglés declarado.
 
 ## Casos de uso
 
-- Asistente de atencion al cliente en dispositivos locales: el modelo puede gestionar conversaciones multi-turno sobre productos y servicios de THOX respondiendo solo con hechos publicados y declinando el resto, lo que reduce el riesgo de afirmaciones incorrectas ante el usuario.
-- Chatbot embebido en hardware de borde: con cuantizacion Q4_K_M (529 MB) puede ejecutarse en dispositivos con poca memoria, como los equipos ThoxAir y ThoxMini de la propia familia, sin depender de la nube.
-- Base para prototipos de asistentes privados: al ser Apache 2.0 y de 0,75B parametros, sirve para validar flujos conversacionales en local antes de escalar a modelos mayores.
-- Despliegue en Ollama para entornos de desarrollo: el comando `ollama run Thox-ai/thoxedge-0.8b` permite tener un endpoint compatible con OpenAI en minutos, util para pruebas de integracion y demos.
-- Servicio de inferencia con llama.cpp: mediante `llama serve -hf Thox-ai/ThoxEdge-0.8B:Q4_K_M` se expone una API compatible con OpenAI en el puerto indicado, adecuada para integrar en aplicaciones de escritorio en macOS y Windows.
-- Filtrado y respuesta de preguntas frecuentes sobre documentacion corporativa: el modelo puede configurarse para responder unicamente a partir de un conjunto cerrado de hechos, lo que encaja en escenarios de soporte interno con informacion controlada.
-- Evaluacion de pipelines de cuantizacion: al publicar Q4_K_M y Q8_0 con hashes SHA-256, sirve para comparar calidad y latencia entre cuantizaciones en hardware modesto.
+- Asistente conversacional local en inglés: el modelo puede ejecutarse íntegramente en un portátil con 8 GB de RAM usando el GGUF Q4_K_M, sin conexión a red, adecuado para prototipos de atención al usuario en entornos con requisitos de privacidad.
+- Respuestas sobre documentación corporativa acotada: dado su ajuste a hechos canónicos y a declinar lo no publicado, encaja en escenarios de FAQ interna donde el catálogo de respuestas está controlado y se prefiere una abstención explícita a una invención.
+- Despliegue en dispositivos edge: con un peso Q4_K_M de 0,529 GB y un consumo estimado de ~0,9 GB a 4k de contexto, es viable en Raspberry Pi de gama alta, mini-PC o dispositivos embebidos con 8 GB de RAM.
+- Integración en aplicaciones de escritorio con Ollama: el comando `ollama run Thox-ai/thoxedge-0.8b` permite incorporar el modelo como backend conversacional en herramientas locales sin infraestructura de servidor.
+- Backend de pruebas en pipelines de CI: al ser un modelo pequeño y determinista en formato, sirve para validar plantillas de chat, integraciones de API compatible con OpenAI y flujos de cliente antes de escalar a modelos mayores.
+- Filtrado y clasificación de conversaciones: su tamaño permite procesar lotes de mensajes en CPU para tareas de enrutamiento o etiquetado ligero en inglés, aunque sin garantías de calidad fuera del dominio ajustado.
+- Demostraciones de inferencia local-first: útil en talleres o entornos educativos donde se necesita un modelo que quepa en un portátil y se pueda inspeccionar completamente (pesos abiertos, sin gating).
 
 ## Benchmarks y rendimiento
 
-La model card reporta un resultado interno denominado GATE49 de 46/49 aciertos sobre el conjunto de desarrollo, sin fallos duros conocidos como falsos. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
+La model card reporta una única métrica interna: GATE49 46/49 sobre el conjunto de desarrollo, definido por el autor como una puerta de calidad propia con "cero fallos duros falsos conocidos". No se trata de un benchmark estándar de la industria y no es comparable directamente con MMLU, HumanEval o GSM8K.
 
-| Evaluacion | Resultado | Conjunto |
+| Benchmark | Resultado | Notas |
 |---|---|---|
-| GATE49 | 46/49 | Desarrollo (interno de THOX) |
+| GATE49 (desarrollo) | 46/49 | Métrica interna del autor, sin definición pública del conjunto |
+| MMLU | No disponible | — |
+| HumanEval | No disponible | — |
+| GSM8K | No disponible | — |
+
+No se han publicado resultados de benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,5 GB con GGUF Q4_K_M (529 MB de pesos), en torno a 0,8 GB con Q8_0 (812 MB) y cerca de 1,5 GB con bf16 (1.504.827.608 bytes), sin contar el overhead del runtime ni la cache KV.
-- GPU recomendadas: no se especifican en la informacion disponible; por tamano, cualquier GPU consumer con 2 GB o mas de VRAM deberia poder alojarlo en cuantizacion Q4_K_M.
-- Cabe en GPU de consumo: si, incluidas tarjetas de gama baja y entornos integrados; la propia model card lo posiciona para dispositivos de borde.
-- Opciones de despliegue: Ollama (`ollama run Thox-ai/thoxedge-0.8b`), llama.cpp / Llama (`llama serve -hf Thox-ai/ThoxEdge-0.8B:Q4_K_M`), descarga directa de GGUF via `hf download`, y transformers con safetensors. No se mencionan vLLM ni TGI.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM/RAM estimada según el autor (cálculos, no mediciones en tiempo de ejecución):
+  - Q4_K_M: ~0,9 GB a 4k de contexto; ~1,0 GB a 8k de contexto.
+  - Q8_0: ~1,2 GB a 4k de contexto; ~1,3 GB a 8k de contexto.
+  - Pesos bf16 en safetensors: fichero de 1.504.827.608 bytes (~1,4 GiB), más buffers y caché KV.
+- GPU recomendadas: no se especifican en la documentación. Por tamaño, cualquier GPU consumer con 4 GB o más de VRAM es suficiente para Q4_K_M; una RTX 3060, RTX 4060 o superior ejecuta el modelo con holgura. A100/H100 no son necesarias y estarían sobredimensionadas.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 4 GB de VRAM; también funciona en CPU.
+- Opciones de despliegue: Ollama (`ollama run Thox-ai/thoxedge-0.8b`), llama.cpp (`llama serve -hf Thox-ai/ThoxEdge-0.8B:Q4_K_M`), transformers con safetensors, y cualquier servidor compatible con GGUF. No se menciona soporte explícito de vLLM ni TGI.
+- Latencia y throughput: no disponibles. El autor indica que los totales de RAM son estimaciones calculadas, no mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| ThoxEdge-0.8B | 752.393.024 | no disponible | Apache 2.0 | Hugging Face, Ollama, GGUF | Fusion SFT sobre Qwen3.5-0.8B, solo ingles |
-| Qwen/Qwen3.5-0.8B (base) | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face | Modelo base del que deriva ThoxEdge |
-| Alternativas de ~1B parametros | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+| Modelo | Parámetros | Contexto | Licencia | Idiomas | Distribución | Notas |
+|---|---|---|---|---|---|---|
+| ThoxEdge-0.8B | 752 M | No disponible | Apache 2.0 | en | safetensors, GGUF, Ollama | Ajuste SFT de dominio propio sobre Qwen3.5-0.8B |
+| Qwen3.5-0.8B (base) | ~0,8 B | No disponible | Apache 2.0 (según modelo base) | No disponible | safetensors | Modelo base sin ajuste de dominio; referencia directa |
+| Modelos sub-1B de propósito general | ~0,5-1 B | Variable | Variable | Variable | Variable | No se dispone de datos verificados en la información proporcionada para establecer comparación cuantitativa |
+
+La comparación con alternativas de la misma categoría no puede completarse con datos verificados a partir de la información disponible; el único punto de referencia fiable es el modelo base Qwen3.5-0.8B, del que ThoxEdge hereda arquitectura y licencia.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la informacion disponible; al derivar de un modelo base de Qwen, puede heredar sesgos de sus datos de entrenamiento.
-- Riesgo de alucinacion: el modelo esta disenado para declinar hechos no publicados por THOX, pero no se ofrecen garantias formales ni evaluaciones externas que midan la tasa de alucinacion fuera del conjunto GATE49.
-- Limitacion de idioma: solo se declara soporte de ingles; el uso en castellano no esta garantizado.
-- Longitud de contexto: no disponible, lo que impide planificar casos de uso con documentos largos o conversaciones extensas.
-- Alcance del entrenamiento: el corpus SFT documentado es de 982 filas, un volumen reducido que puede limitar la generalizacion fuera del dominio de THOX.
-- Licencia: Apache 2.0 permite uso comercial, pero deben respetarse las condiciones del modelo base Qwen3.5-0.8B, cuya licencia no se detalla en la informacion proporcionada.
-- Caveat de produccion: la evaluacion reportada es interna y sobre conjunto de desarrollo, no sobre un conjunto de test independiente; conviene validar el comportamiento en el dominio concreto antes de desplegarlo.
-- La model card incluye contenido promocional (campana de Kickstarter y notas del fundador) que no constituye documentacion tecnica verificable.
+- El modelo solo declara soporte de inglés; su uso en castellano u otros idiomas no está validado y probablemente degrade la calidad.
+- El ajuste SFT se realizó sobre un corpus de 982 filas, un volumen muy reducido que limita la generalización y aumenta el riesgo de sobreajuste al dominio de THOX.
+- Riesgo de alucinación: aunque el modelo está entrenado para declinar lo no publicado, no hay garantía formal de abstención; en producción debe validarse con evaluaciones propias.
+- La única métrica reportada (GATE49 46/49) es interna y su conjunto de evaluación no es público, por lo que no es auditable ni comparable con benchmarks estándar.
+- No se documentan capacidades de tool calling, agentes, visión ni razonamiento multi-paso; no debe asumirse su disponibilidad.
+- La longitud de contexto no está especificada, lo que impide planificar cargas con ventanas largas; las estimaciones de RAM del autor cubren hasta 8k de contexto.
+- Licencia Apache 2.0: permite uso comercial, modificación y redistribución con atribución; no se identifican restricciones adicionales más allá de los términos de la licencia y la legislación aplicable.
+- La model card incluye notas del fundador y de la CAO con posicionamiento corporativo; no constituyen especificaciones técnicas y deben tratarse como material promocional.
+- El repositorio ocupa 7,0 GB, muy por encima del tamaño de los pesos, debido a artefactos adicionales (imágenes, múltiples formatos); conviene descargar solo los ficheros necesarios.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxEdge-0.8B
-- Adaptador LoRA de origen (Wave C): https://huggingface.co/Thox-ai/ThoxEdge-0.8B-WaveC
+- Adaptador LoRA Wave C: https://huggingface.co/Thox-ai/ThoxEdge-0.8B-WaveC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de SFT: https://huggingface.co/datasets/Thox-ai/thox-factory-sft-v5
-- Demos de dispositivos virtuales: https://thox.ai/#demo-callout-home_lineup
-- Campana de Kickstarter de THOX: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
+- No se han encontrado en la información disponible enlaces a papers, blogs técnicos, repositorios de código o demos adicionales.

@@ -2,81 +2,90 @@
 
 ## Resumen
 
-SuzuhaAmane-Lora es un LoRA de personaje para modelos de difusion SDXL, entrenado especificamente sobre el checkpoint waiIllustriousSDXL v17. Lo desarrolla el usuario abbuibuibui y reproduce a Suzuha Amane (阿万音铃羽), personaje de la franquicia *Steins;Gate*. No es un modelo de lenguaje, sino un adaptador de bajo rango que se aplica sobre un modelo base de generacion de imagenes para condicionar la identidad visual del personaje, sus atuendos y su silueta.
+SuzuhaAmane-Lora es un LoRA de personaje para modelos de difusion SDXL, entrenado para reproducir a Suzuha Amane (阿万音铃羽), personaje de la franquicia *Steins;Gate*. Lo publica el usuario abbuibuibui como derivado no oficial y se distribuye a traves de Hugging Face con la libreria diffusers. El repositorio contiene dos linajes de pesos entrenados sobre bases distintas: waiIllustriousSDXL v17 (linaje principal, en la raiz del repo) y AutismMix Pony (linaje secundario, bajo el subdirectorio `autism_pony/`). Ambos linajes no deben mezclarse ni en pesos ni en prompts ni en negativos.
 
-El adaptador se distribuye en siete checkpoints de epoca (E1-E7) en formato safetensors, cada uno de 456.494.820 bytes, con un tamano total de repositorio de 3,2 GB. El autor recomienda E6 con una fuerza de 0,8 tras una evaluacion comparativa propia en dos rondas. El entrenamiento empleo un dataset de 102 pares imagen-texto con cuatro atuendos, rango 64 y alpha 32, optimizador AdamW en bf16 y 7 epocas con buckets de hasta 1536.
+El modelo resuelve un problema acotado: la generacion consistente de un personaje concreto con identidad visual estable (peinado, color de ojos, ropa caracteristica) dentro de pipelines de sintesis de imagen. No es un modelo generativo autonomo, sino un adaptador de bajo rango que se aplica sobre un checkpoint SDXL ya existente. El autor ha realizado una evaluacion comparativa entre epocas (E1-E7) y strengths (0.4-1.0) y recomienda el epoch E6 a strength 0.8 para el linaje Illustrious.
 
-Su relevancia es acotada: es un artefacto de nicho para la comunidad de generacion de imagenes anime, no una contribucion de investigacion. Resulta util para quien necesite consistencia de personaje en pipelines de difusion basados en Illustrious/SDXL, y su model card documenta de forma inusualmente detallada el proceso de seleccion de epoca y fuerza, lo que facilita la reproducibilidad.
+La relevancia es practica para quien construye flujos de generacion de imagenes con personajes recurrentes: el LoRA incorpora tokens de activacion especificos para identidad y para cuatro conjuntos de ropa, y documenta ajustes de muestreo concretos (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216). El tamano del repo es de 6.4 GB, con ficheros individuales de 456.494.820 bytes por epoch.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL / Illustrious; red de difusion latente |
-| Parametros totales | no disponible (rango 64 / alpha 32; cada checkpoint ocupa 456.494.820 bytes) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL; rank 64, alpha 32 |
+| Parametros totales | no disponible (adaptador LoRA, no modelo completo) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de imagen; resolucion de entrenamiento con buckets hasta 1536) |
-| Tipos de cuantizacion | no disponible (pesos distribuidos en safetensors; el base admite cuantizaciones propias de SDXL) |
-| Idiomas soportados | en, zh (idiomas de la model card y de los prompts documentados) |
+| Longitud de contexto | no aplica (modelo de difusion de imagen) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, zh (segun metadatos del repo) |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (7 checkpoints: E1-E7) |
+| Formato de pesos | safetensors |
+| Modelo base (linaje principal) | waiIllustriousSDXL v17 |
+| Modelo base (linaje secundario) | AutismMix Pony |
+| Tamano por fichero | 456.494.820 bytes |
+| Tamano del repo | 6.4 GB |
+| Epocas publicadas | E1-E7 (linaje WAI); E1-E7 (linaje AutismMix Pony) |
+| Dataset | abbuibuibui/SuzuhaAmane-Dataset (102 pares, 4 conjuntos de ropa) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 y alpha 32 aplicado sobre waiIllustriousSDXL v17, un checkpoint SDXL orientado a ilustracion anime. El entrenamiento uso AdamW en bf16, buckets con limite de 1536 y 7 epocas sobre un dataset de 102 pares imagen-texto que cubre cuatro atuendos del personaje, con repeticiones 3. Las captions se generaron con `keep_tokens = 2`, lo que explica que el color de pelo y de ojos a menudo se omita en el texto y deba anadirse manualmente en la inferencia.
+El adaptador es un LoRA de rango 64 y alpha 32 aplicado sobre checkpoints SDXL. El entrenamiento del linaje principal usa waiIllustriousSDXL v17 como base, con optimizador AdamW en bf16, buckets con tope de 1536 y 7 epocas sobre un dataset de 102 pares de imagenes con 4 conjuntos de ropa y repeats 3. Las captions se construyeron con `keep_tokens = 2`, lo que explica que el color de pelo y de ojos a menudo se omita en las descripciones y deba anadirse manualmente en el prompt. El token de sujeto es `1girl`.
 
-La innovacion practica no esta en la arquitectura sino en la metodologia de seleccion: el autor realizo una ronda 1 comparando E1-E7 a fuerza 0,8 y una ronda 3 con matriz E5/E6/E7 por diez escenas y cuatro fuerzas (0,4 / 0,6 / 0,8 / 1,0). De ahi se concluye que E6 a 0,8 ofrece la silueta mas estable del personaje (pelo largo castano, ojos azules, chaqueta negra con top azul). Se documentan tokens de disparo para identidad (`suzuha_amane`), atuendo principal (`suzuha_amane_black_jacket_blue_top`), atuendo alternativo (`suzuha_amane_blue_tracksuit`) y otros dos entrenados (`suzuha_amane_future_soldier_uniform`, `suzuha_amane_green_shirt_blue_vest`).
+El linaje secundario se entrena sobre AutismMix Pony con 102 stills, repeats 2, 7 epocas, rank 64 / alpha 32 y 448 pasos de optimizador. El autor documenta una evaluacion en dos rondas: la primera criba E1-E7 a strength 0.8, y la tercera aplica una matriz sobre E5, E6 y E7 por 10 escenas y 4 strengths (0.4, 0.6, 0.8 y 1.0). La conclusion es recomendar E6 a 0.8 para el linaje WAI y E6 a 1.0 para el linaje AutismMix Pony. Se publican hashes SHA-256 para E6 de ambos linajes, lo que permite verificar integridad de los pesos.
 
 ## Capacidades
 
-- Generacion de imagenes de personaje condicionada por identidad: reproduce el rostro, el pelo largo castano y los ojos azules de Suzuha Amane.
-- Control de atuendo mediante tokens especificos: chaqueta negra con top azul, chandal azul, uniforme de soldado del futuro y camisa verde con chaleco azul.
-- Consistencia de personaje entre escenas y encuadres: retrato frontal, tres cuartos, perfil, cuerpo completo, plano sentado.
-- Funcionamiento en fondos simples y complejos, incluida iluminacion nocturna.
-- Compatibilidad con prompts de calidad habituales en el ecosistema Illustrious (`masterpiece`, `best quality`, `very aesthetic`, `absurdres`, `anime screencap`).
-- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto: es exclusivamente un adaptador de difusion.
-- Capacidades multilingues limitadas a los idiomas de los prompts (en, zh); no hay evaluacion de otros idiomas.
+- Generacion de imagenes de un personaje concreto (Suzuha Amane) con identidad visual estable: pelo largo castano y ojos azules en el linaje WAI; pelo castano claro, twintails cortas trenzadas, flequillo y ojos verdes en el linaje AutismMix Pony.
+- Control de vestuario mediante tokens especificos: `suzuha_amane_black_jacket_blue_top`, `suzuha_amane_blue_tracksuit`, `suzuha_amane_future_soldier_uniform` y `suzuha_amane_green_shirt_blue_vest`.
+- Compatibilidad con prompts de estilo anime y etiquetas de calidad habituales en SDXL (`masterpiece`, `best quality`, `very aesthetic`, `absurdres`, `anime screencap`).
+- Soporte de composicion multi-escena: retrato frontal, tres cuartos, perfil, cuerpo completo, sentado, fondo simple, fondo complejo nocturno y escenas sin token de ropa.
+- Dos linajes independientes que cubren esteticas distintas (Illustrious y Pony), con prompts y negativos propios.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multimodales de texto: es exclusivamente un adaptador de generacion de imagen.
 
 ## Casos de uso
 
-- Ilustracion de fan art con consistencia de personaje: aplicar el LoRA a 0,8 sobre waiIllustriousSDXL v17 permite generar varias imagenes del mismo personaje manteniendo rasgos faciales y paleta, util para series de ilustraciones o portadas.
-- Creacion de assets para ficcion derivada: generar escenas de Suzuha en distintos atuendos (chandal, uniforme de soldado del futuro) para proyectos de doujin, visual novels amateur o contenido para comunidades de *Steins;Gate*.
-- Prototipado de personajes en pipelines ComfyUI: el autor documenta ajustes concretos (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216) que sirven como configuracion de partida reproducible en produccion de imagen.
-- Generacion de variaciones de encuadre para composicion: la evaluacion cubre retrato, tres cuartos, perfil y plano sentado, lo que permite construir hojas de personaje o referencias para artistas.
-- Integracion en flujos de trabajo con ControlNet u otros adaptadores SDXL: al ser un LoRA estandar en safetensors, se puede combinar con adaptadores de pose o estilo en herramientas compatibles con diffusers.
-- Experimentacion metodologica: la documentacion de seleccion de epoca y fuerza (matriz E5/E6/E7 x 0,4-1,0) sirve como caso de estudio para quien entrene LoRAs de personaje y quiera replicar un protocolo de evaluacion comparativa.
+- Ilustracion de fan art consistente: aplicar el LoRA en ComfyUI con Euler a, 28 pasos, CFG 4.5, CLIP skip 2 y resolucion 832x1216 para obtener retratos estables del personaje sin necesidad de hires fix ni ADetailer, tal como documenta el autor.
+- Creacion de hojas de personaje: usar la matriz de escenas (frontal, tres cuartos, perfil, sentado) para generar un conjunto coherente de vistas del mismo personaje destinado a fichas de referencia o storyboards.
+- Generacion de variantes de vestuario: alternar los tokens de ropa para producir el mismo personaje con chaqueta negra y top azul, chandal azul, uniforme de soldado del futuro o camisa verde con chaleco, util para narrativa visual o cosplay de referencia.
+- Integracion en pipelines de difusion con diffusers: cargar los pesos safetensors como adaptador LoRA sobre el checkpoint base en un script Python y automatizar lotes de imagenes para un catalogo o una publicacion seriada.
+- Prototipado de escenas nocturnas y fondos complejos: el autor incluye muestras especificas de calle nocturna y escena compleja, lo que permite evaluar el comportamiento del LoRA en entornos con iluminacion dificil antes de comprometerlo a produccion.
+- Experimentacion con dos esteticas base: mantener dos ramas separadas (WAI y AutismMix Pony) para comparar como se comporta el mismo personaje bajo dos familias de checkpoints SDXL, sin mezclar prompts ni negativos entre ellas.
+- Verificacion de integridad en despliegue: usar los hashes SHA-256 publicados para E6 de cada linaje y asegurar que los pesos desplegados coinciden con los evaluados por el autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FID, CLIP score, similitud facial) en la informacion disponible. La unica evaluacion es cualitativa y visual, organizada en dos rondas:
-
-| Ronda | Candidatos | Condiciones | Conclusion documentada |
-|---|---|---|---|
-| Ronda 1 | E1-E7 | Fuerza 0,8 | E6 seleccionado como candidato principal |
-| Ronda 3 | E5, E6, E7 | 10 escenas x 4 fuerzas (0,4 / 0,6 / 0,8 / 1,0) | E6 a 0,8 recomendado; E5 y E7 como alternativas |
+No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta una evaluacion cualitativa interna en dos rondas (criba E1-E7 a 0.8 y matriz E5/E6/E7 por 10 escenas y 4 strengths) sin metricas numericas como FID, CLIP score o similitud de personaje.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explicita. Como referencia del ecosistema SDXL, la inferencia del modelo base completo suele requerir entre 8 y 12 GB en fp16; el LoRA anade una sobrecarga pequena (rango 64).
-- GPU recomendadas: no especificadas por el autor. Cualquier GPU capaz de ejecutar SDXL (RTX 3060 12 GB en adelante, RTX 4090, A100, H100) puede cargar el adaptador.
-- Cabe en GPU de consumo: si, siempre que el modelo base SDXL quepa; el LoRA por si solo ocupa unos 456 MB por checkpoint.
-- Opciones de despliegue: ComfyUI (configuracion documentada por el autor), y por compatibilidad de formato safetensors, cualquier runtime que cargue LoRA SDXL via diffusers (Automatic1111, Forge, InvokeAI). No hay soporte GGUF ni llama.cpp por tratarse de un modelo de imagen.
+- VRAM estimada para inferencia: no disponible de forma explicita; al ser un LoRA sobre SDXL, el requisito dominante es el del checkpoint base SDXL, no el del adaptador.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada en la documentacion; depende del checkpoint base y del backend de inferencia.
+- Opciones de despliegue: ComfyUI (documentado por el autor con Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216) y diffusers (libreria declarada en el repo). Otros backends como llama.cpp, Ollama, vLLM o TGI no aplican a un modelo de difusion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de otros LoRA de personaje comparables en la informacion proporcionada. Se indica "no disponible" para benchmarks y para alternativas concretas. Como referencia estructural, cualquier LoRA de personaje SDXL de la comunidad comparte el mismo formato y requisitos, pero no se han facilitado cifras para comparar.
+| Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| SuzuhaAmane-Lora (este) | LoRA de personaje SDXL | waiIllustriousSDXL v17 / AutismMix Pony | no disponible (rank 64, alpha 32) | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
+| Alternativas de LoRA de personaje SDXL | LoRA de personaje SDXL | SDXL / Illustrious / Pony | no disponible | no aplica | variable | no disponible |
+| Checkpoint SDXL base | Modelo de difusion completo | - | no disponible | no aplica | variable | no disponible |
+
+No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Es un derivado no oficial: los derechos de Suzuha Amane y *Steins;Gate* pertenecen a sus titulares; el autor lo declara explicitamente como fan-made.
-- Licencia creativeml-openrail-m: permite uso comercial con condiciones, pero conviene revisar las clausulas de atribucion y las restricciones sobre contenido generado antes de usarlo en produccion.
-- Dependencia estricta del modelo base: esta entrenado sobre waiIllustriousSDXL v17; usarlo con otros checkpoints SDXL puede degradar la fidelidad del personaje.
-- Las captions omiten con frecuencia color de pelo y ojos, por lo que es necesario anadir `long hair, brown hair, blue eyes` en el prompt para evitar derivas.
-- Riesgo de sobreajuste o artefactos a fuerzas altas (1,0); el autor recomienda 0,8 y documenta E5/E7 como alternativas si E6 no encaja.
-- No hay evaluacion cuantitativa ni validacion por terceros; las conclusiones de calidad son del propio autor.
-- Sin garantias de soporte, mantenimiento ni actualizaciones; el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
-- No apto para tareas de texto, razonamiento o codigo: es exclusivamente un adaptador de generacion de imagen.
+- Es un derivado no oficial: los derechos del personaje y de la franquicia *Steins;Gate* permanecen con sus titulares; el autor lo declara explicitamente como fan-made.
+- La licencia creativeml-openrail-m impone restricciones de uso comercial que deben revisarse antes de desplegar el modelo en productos; no se garantiza uso comercial libre.
+- Los dos linajes (WAI e Illustrious frente a AutismMix Pony) no deben mezclarse: prompts, negativos y pesos son incompatibles entre si, y el autor advierte de no combinarlos.
+- El color de pelo y de ojos a menudo se omite en las captions de entrenamiento (`keep_tokens = 2`), por lo que es necesario anadirlos manualmente en el prompt para obtener la apariencia correcta; en el linaje AutismMix Pony la apariencia verificada difiere (pelo castano claro, twintails trenzadas, ojos verdes).
+- Riesgo de sobreajuste al dataset: 102 pares de imagenes y 7 epocas es un volumen reducido, lo que puede limitar la variedad de poses y expresiones fuera de las escenas evaluadas.
+- La evaluacion publicada es cualitativa y limitada a 10 escenas y 4 strengths; no hay metricas objetivas de fidelidad de personaje ni de calidad de imagen.
+- No se documentan sesgos especificos, pero al ser un modelo de difusion de anime puede reproducir sesgos esteticos y de representacion presentes en el dataset y en el checkpoint base.
+- Riesgo de alucinacion visual: como cualquier modelo de difusion, puede generar detalles anatomicos o de vestuario incoherentes, especialmente en resoluciones o relaciones de aspecto no documentadas.
+- Solo se declaran idiomas en y zh en los metadatos, aunque al tratarse de un modelo de imagen el concepto de idioma se refiere a los prompts; no hay soporte documentado para prompts en castellano.
+- El pipeline no esta declarado en los metadatos de Hugging Face, lo que puede complicar la carga automatica en algunas herramientas.
 
 ## Enlaces
 
@@ -84,3 +93,4 @@ No se dispone de datos de otros LoRA de personaje comparables en la informacion 
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/SuzuhaAmane-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/SuzuhaAmane-Dataset
 - Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio)
+- README en chino: `./README_zh.md` (dentro del repositorio)

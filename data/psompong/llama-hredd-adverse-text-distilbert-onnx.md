@@ -2,89 +2,99 @@
 
 ## Resumen
 
-El modelo `llama-hredd-adverse-text-distilbert-onnx` es un clasificador de texto especializado en la detección de daños a derechos humanos y medio ambiente en textos adversos, diseñado para tareas de debida diligencia de proveedores (HREDD). Desarrollado por PSompong, es un modelo estudiante destilado de un profesor Llama 3.3 70B y cuantizado a int8 en formato ONNX para ejecutarse íntegramente en el navegador mediante transformers.js, sin necesidad de servidor ni clave de API.
+`llama-hredd-adverse-text-distilbert-onnx` es un clasificador de texto compacto desarrollado por el usuario PSompong, diseñado para detectar indicios de vulneraciones de derechos humanos y daños medioambientales en textos de medios adversos y alegaciones, en el contexto de la diligencia debida de proveedores (HREDD, *Human Rights and Environmental Due Diligence*). El modelo es un estudiante DistilBERT destilado de un profesor Llama 3.3 70B y cuantizado a int8 en formato ONNX, lo que le permite ejecutarse íntegramente en el navegador mediante transformers.js sin clave de API ni servidor.
 
-El modelo resuelve el problema de priorizar la atención humana en la revisión de noticias y alegaciones sobre posibles impactos negativos en la cadena de suministro. Clasifica un fragmento de texto en una de 16 categorías de daño (por ejemplo, trabajo forzoso, contaminación tóxica, deforestación) y se integra en un flujo de trabajo de screening supervisado por personas. Su relevancia actual radica en ofrecer una alternativa ligera y offline a modelos grandes de pago, manteniendo una precisión razonable en la detección de daños graves.
+La arquitectura subyacente es DistilBERT base (uncased), un transformer encoder de 6 capas y aproximadamente 66 millones de parámetros, sobre el que se ha añadido una cabeza de clasificación de 16 clases que cubren categorías como trabajo forzoso, trabajo infantil, vertidos tóxicos, deforestación o represalias. El modelo emite una categoría de daño, no un nivel de riesgo: la asignación de tier (Low/Medium/High/Critical) se realiza aguas abajo mediante una rúbrica de severidad en la herramienta de cribado.
 
-Arquitectónicamente se basa en DistilBERT base (uncased), con una ventana de contexto típica de 512 tokens y un tamaño de repositorio de 0,1 GB. Está licenciado bajo Apache 2.0 y soporta únicamente inglés.
+Su relevancia radica en su ligereza y despliegue offline: con un repositorio de 0,1 GB y pesos int8, puede integrarse en flujos de cribado masivo de proveedores en el navegador. No obstante, el propio autor lo posiciona explícitamente como una ayuda al cribado, no como un veredicto, y sus métricas de detección son moderadas (accuracy global de 0,667–0,70 en conjuntos gold de 30 y 60 casos).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DistilBERT base (uncased) |
-| Parametros totales | no disponible |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (típico de DistilBERT: 512 tokens) |
-| Tipos de cuantizacion | int8 (ONNX cuantizado) |
+| Arquitectura | DistilBERT (transformer encoder, 6 capas) con cabeza de clasificación de 16 clases |
+| Parametros totales | no disponible (DistilBERT base: ~66 M, dato no confirmado en la información proporcionada) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (DistilBERT base: 512 tokens, dato no confirmado en la información proporcionada) |
+| Tipos de cuantizacion | int8 (ONNX quantized, `onnx/model_quantized.onnx`); no se distribuye fp32 |
 | Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | ONNX (onnx/model_quantized.onnx) |
+| Formato de pesos | ONNX (int8 cuantizado); tokenizer y `label_map.json` en el repositorio |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer encoder basado en DistilBERT base uncased, destilado de un profesor Llama 3.3 70B. La destilación transfiere el conocimiento del profesor grande a un estudiante compacto, que luego se cuantiza a int8 para reducir el tamaño y permitir inferencia en el navegador. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens ni el uso de técnicas como RLHF o DPO. El repositorio solo incluye el grafo ONNX cuantizado; no se distribuye la versión fp32.
+El modelo es un *student* DistilBERT base uncased con una cabeza de clasificación de 16 etiquetas, destilado a partir de un profesor Llama 3.3 70B. El autor indica que el profesor de entrenamiento (Llama 3.3 70B) está «grabado» de forma permanente en los pesos y no cambia con las actualizaciones del profesor en producción. El artefacto distribuido es únicamente el grafo ONNX cuantizado a int8, pensado para inferencia en navegador vía transformers.js (`dtype: "q8"`) o en Python vía onnxruntime.
 
-La salida es una de 16 clases de daño definidas en la taxonomía HREDD del SusTech Supplier Risk Screener. El modelo no emite niveles de riesgo (Low/Medium/High/Critical); estos se derivan posteriormente mediante una rúbrica de severidad en el flujo de screening.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición exacta del dataset, ni si hubo fases de RLHF o DPO. La taxonomía de salida es un subconjunto entrenado de las 18 categorías HREDD de la herramienta Supplier Risk Screener; dos categorías de banda (`elevated` y `limited`) quedan fuera de la cabeza entrenada y no pueden ser emitidas por el modelo. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Clasificación de texto adverso en 16 categorías de daño: biodiversidad, trabajo infantil, deforestación, discriminación, incidente fatal, trabajo forzoso, libertad de asociación, violencia de género, residuos peligrosos, sin daño, seguridad y salud no fatal, represalias, contaminación tóxica, trata, robo de salarios y agotamiento de agua.
-- Detección de daños laborales y ambientales con precisión diferenciada (ver benchmarks).
-- Ejecución offline en navegador mediante transformers.js con dtype `q8`.
-- Integración con Python a través de onnxruntime.
-- No soporta generación de texto, tool calling, agentes ni razonamiento multi-paso.
-- Monolingüe (inglés).
+- Clasificación de texto en inglés en 16 categorías de daño HREDD: `biodiversity_loss`, `child_labour`, `deforestation`, `discrimination`, `fatal_incident`, `forced_labour`, `freedom_of_association`, `gbvh`, `hazardous_waste`, `none`, `osh_nonfatal`, `retaliation`, `toxic_pollution`, `trafficking`, `wage_theft`, `water_depletion`.
+- Detección de indicios en titulares y fragmentos cortos de medios adversos y alegaciones.
+- Salida de etiqueta única con puntuación de confianza (pipeline `text-classification`).
+- Ejecución offline en navegador mediante transformers.js con cuantización int8, sin API key ni servidor.
+- Inferencia en Python mediante onnxruntime con tokenizer de transformers.
+- No soporta tool calling, function calling, razonamiento multi-paso, agentes, visión, audio ni modo *thinking*.
+- Capacidad multilingüe limitada al inglés (`en`).
 
 ## Casos de uso
 
-- Screening de proveedores en debida diligencia: el modelo analiza noticias y alegaciones sobre un proveedor y clasifica el tipo de daño potencial, permitiendo priorizar auditorías humanas en casos de alto riesgo.
-- Monitoreo de medios adversos: integrado en un pipeline de scraping, clasifica automáticamente titulares y artículos sobre empresas para detectar señales de daños ambientales o laborales.
-- Evaluación de cumplimiento ESG: ayuda a equipos de sostenibilidad a identificar incidentes relevantes en cadenas de suministro para reportes de impacto.
-- Revisión de contratos y proveedores: como herramienta de apoyo, filtra textos de diligencia previa y marca aquellos que requieren revisión humana detallada.
-- Análisis de quejas y denuncias: clasifica comunicaciones internas o externas sobre condiciones laborales o impactos ambientales para su gestión.
-- Demostración educativa y prototipado: sirve como ejemplo de despliegue de un modelo de clasificación en el navegador sin backend, útil para talleres y pruebas de concepto.
+- Cribado masivo de proveedores en navegador: el modelo procesa lotes de titulares y alegaciones en el cliente, sin enviar datos a un servidor, lo que facilita el cumplimiento de requisitos de privacidad en evaluaciones preliminares de cadena de suministro.
+- Priorización de alertas para revisión humana: clasifica textos en categorías como `forced_labour` o `toxic_pollution` para ordenar la cola de revisión de analistas de diligencia debida, que validan cada resultado High o Critical.
+- Monitorización de medios adversos en flujos ESG: integrado en un pipeline que ingiere noticias y emite una categoría de daño por fragmento, permitiendo filtrar ruido y centrar la atención en alegaciones relevantes.
+- Enriquecimiento de registros de proveedores: añadir automáticamente etiquetas de categoría de daño a expedientes de proveedores a partir de recortes de prensa, como paso previo a la evaluación de severidad mediante la rúbrica downstream.
+- Despliegue en entornos con conectividad limitada o air-gapped: al ser un ONNX int8 de 0,1 GB, puede ejecutarse en estaciones de trabajo de auditores sin acceso a APIs externas.
+- Filtrado previo en herramientas de *due diligence* de código abierto: servir como lector offline de respaldo cuando el profesor alojado no está disponible, tal como describe el autor para la demo en producción.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index (verificados: no):
+Resultados declarados por el autor en la model card (no verificados, `verified: false`), sobre conjuntos gold retenidos y con el modelo ONNX int8:
 
-| Conjunto de evaluación | Métrica | Valor |
+| Métrica | Conjunto | Valor |
 |---|---|---|
-| HREDD 30-case gold set (offline) | Full gold detection (n=30), int8 ONNX | 0.667 (accuracy) |
-| HREDD 30-case gold set (offline) | Labour detection (n=23), int8 ONNX | 0.652 (accuracy) |
-| HREDD 30-case gold set (offline) | Environmental detection (n=7), int8 ONNX | 0.714 (accuracy) |
-| HREDD 30-case gold set (offline) | Severe-trio Critical recall (n=18), int8 ONNX | 0.556 (recall) |
-| HREDD 60-case gold set (offline, g30 + x2026) | Full gold detection (n=60), int8 ONNX | 0.7 (accuracy) |
-| HREDD 60-case gold set (offline, g30 + x2026) | Severe-trio Critical recall (n=31), int8 ONNX | 0.548 (recall) |
-| HREDD 60-case gold set (offline, g30 + x2026) | Harm-class accuracy (n=50), int8 ONNX | 0.36 (accuracy) |
-| HREDD 60-case gold set (offline, g30 + x2026) | Harm-domain accuracy (n=60), int8 ONNX | 0.917 (accuracy) |
+| Full gold detection (n=30) | HREDD gold-30 | 0,667 |
+| Labour detection (n=23) | HREDD gold-30 | 0,652 |
+| Environmental detection (n=7) | HREDD gold-30 | 0,714 |
+| Severe-trio Critical recall (n=18) | HREDD gold-30 | 0,556 |
+| Full gold detection (n=60) | HREDD gold-60 (cohortes g30 y x2026) | 0,700 |
+| Severe-trio Critical recall (n=31) | HREDD gold-60 | 0,548 |
+| Harm-class accuracy (n=50) | HREDD gold-60 | 0,360 |
+| Harm-domain accuracy (n=60) | HREDD gold-60 | 0,917 |
 
-No se han publicado comparaciones con otros modelos en la información disponible.
+No se han publicado en la información disponible resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, que no aplican a un clasificador de este tipo.
 
 ## Requisitos de hardware
 
-- Modelo compacto (DistilBERT base, ~66M parámetros en fp32, ~66 MB en int8) que puede ejecutarse en CPU sin GPU.
-- Inferencia en navegador mediante transformers.js (WebAssembly) sin necesidad de servidor.
-- En Python, onnxruntime permite ejecución en CPU con latencia baja (del orden de milisegundos por texto corto).
-- No requiere GPU dedicada; cualquier máquina moderna con navegador o Python es suficiente.
-- Opciones de despliegue: transformers.js (navegador), onnxruntime (Python), o integración en pipelines de servidor con ONNX Runtime.
+- VRAM estimada: muy baja; el artefacto int8 ocupa 0,1 GB en repositorio, por lo que la inferencia cabe holgadamente en cualquier GPU consumer e incluso en CPU.
+- GPU recomendadas: no requiere GPU; funciona en CPU y en navegador. Cualquier GPU (RTX 4090, A100, H100) es sobredimensionada para este modelo.
+- Cabe en GPU consumer: sí, en todas; también en dispositivos móviles y navegadores modernos vía WebGPU/WASM con transformers.js.
+- Opciones de despliegue: transformers.js (`dtype: "q8"`), onnxruntime en Python, y cualquier runtime compatible con ONNX. No se distribuye fp32, por lo que sin `dtype: "q8"` la librería solicitaría `onnx/model.onnx`, que el repositorio no incluye.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Se puede considerar que compite con clasificadores de texto genéricos basados en DistilBERT, pero no hay datos de rendimiento comparativo publicados.
+No se dispone en la información proporcionada de datos de modelos comparables de la misma categoría (clasificadores HREDD/ESG sobre DistilBERT) con parámetros, contexto o rendimiento verificables. Se indica, por tanto, como no disponible.
+
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| llama-hredd-adverse-text-distilbert-onnx | no disponible (~66 M, no confirmado) | no disponible | apache-2.0 | Hugging Face, ONNX int8 |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Es una herramienta de apoyo al screening, no un sistema de decisión automatizada. No debe utilizarse para aprobar, despedir o incluir en listas negras a proveedores sin revisión humana.
-- Solo soporta inglés; textos en otros idiomas pueden producir resultados incorrectos.
-- La precisión de clase fina es limitada (harm-class accuracy de 0.36 en el conjunto de 60 casos), lo que indica confusión entre categorías similares.
-- El recall para daños críticos (severe-trio) es moderado (0.548-0.556), por lo que puede omitir casos graves.
-- No emite niveles de riesgo; el tier se calcula externamente mediante una rúbrica de severidad.
-- El repositorio solo incluye el modelo cuantizado int8; no se distribuye la versión fp32, lo que puede afectar a la precisión en entornos que requieran mayor fidelidad.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo está entrenado para un dominio específico (derechos humanos y medio ambiente) y puede no generalizar a otros dominios.
+- Métricas moderadas: accuracy global de 0,667–0,70 y recall de la tríada severa de 0,548–0,556 en los conjuntos gold; la accuracy de clase de daño en el conjunto de 60 casos es solo 0,36, lo que indica confusión frecuente entre categorías específicas.
+- El modelo aproxima a su profesor de 70B y el autor reconoce explícitamente que no lo supera.
+- Solo inglés: no soporta otros idiomas, lo que limita su uso en cadenas de suministro con documentación en otras lenguas.
+- No es una herramienta de decisión automatizada: el autor lo define como ayuda al cribado; no debe usarse para aprobar, cancelar o incluir en listas negras a proveedores.
+- Riesgo de alucinación y falsos negativos/positivos en textos ambiguos o muy cortos; toda salida High o Critical requiere revisión humana.
+- No emite tiers de riesgo (Low/Medium/High/Critical); estos se derivan aguas abajo con una rúbrica de severidad.
+- No puede emitir las categorías de banda `elevated` ni `limited`, que quedan fuera de la cabeza entrenada.
+- El repositorio solo contiene el grafo int8; intentar cargar fp32 fallará porque `onnx/model.onnx` no está incluido.
+- Licencia apache-2.0, pero el autor menciona «Built with Llama» en la sección de procedencia; conviene revisar las condiciones de la licencia Llama aplicables a modelos derivados antes de un uso comercial.
+- Sesgos conocidos: no documentados en la información disponible.
 
 ## Enlaces
 
-- [Hugging Face - PSompong/llama-hredd-adverse-text-distilbert-onnx](https://huggingface.co/PSompong/llama-hredd-adverse-text-distilbert-onnx)
-- [Demo del risk-screening tool - Supplier diligence · HREDD](https://supplier-risk-model.pages.dev)
+- Modelo en Hugging Face: https://huggingface.co/PSompong/llama-hredd-adverse-text-distilbert-onnx
+- Demo de la herramienta de cribado de proveedores: https://supplier-risk-model.pages.dev
+- Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased

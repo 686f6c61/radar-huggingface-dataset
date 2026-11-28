@@ -2,86 +2,92 @@
 
 ## Resumen
 
-WePocketModel1.0-2B-i1-GGUF es una recuantización en formato GGUF del modelo WePocketModel1.0-2B publicado originalmente por Tencent. El trabajo de conversión y cuantización lo firma mradermacher, un autor habitual en el ecosistema GGUF conocido por publicar versiones cuantizadas de modelos recientes para su uso con llama.cpp y herramientas compatibles. El repositorio se creó el 24 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
+WePocketModel1.0-2B-i1-GGUF es una cuantizacion en formato GGUF del modelo multimodal tencent/WePocketModel1.0-2B, publicada por el usuario mradermacher. El modelo base, desarrollado por Tencent, es un modelo multimodal orientado a despliegue en dispositivo (on-device) de aproximadamente 1.880 millones de parametros (1.881.825.088 segun los pesos en safetensors). Esta version concreta no es un modelo nuevo, sino una redistribucion optimizada para inferencia local mediante llama.cpp y herramientas compatibles con GGUF.
 
-El modelo base se presenta como un modelo de 2B parámetros, aunque el único dato numérico verificable en el repositorio es el campo de parámetros totales en safetensors, que indica 812.958. Este valor es inconsistente con la nomenclatura "2B" del nombre y con el tamaño del repositorio (0.0 GB), por lo que debe tratarse con cautela. No se dispone de información sobre arquitectura, contexto, datos de entrenamiento ni licencia en la información proporcionada.
+La relevancia de esta ficha radica en que ofrece un conjunto amplio de cuantizaciones con calibracion imatrix, desde IQ1_S (0,9 GB) hasta Q6_K (1,7 GB), lo que permite ejecutar un modelo multimodal de casi 2.000 millones de parametros en hardware de consumo, incluso en equipos con recursos muy limitados. El modelo base esta etiquetado como multimodal, orientado a embeddings multimodales, con soporte de MRL (Matryoshka Representation Learning) y decisiones estructuradas, y se distribuye bajo licencia Apache 2.0.
 
-La relevancia de esta ficha es limitada por la escasez de metadatos publicados: se trata de un artefacto de cuantización reciente, sin benchmarks, sin model card detallada y sin licencia declarada, lo que condiciona cualquier evaluación seria. Se documenta lo disponible y se marcan explícitamente los vacíos.
+La informacion disponible sobre el modelo base es limitada: la model card del repositorio cuantizado se centra en los aspectos de la cuantizacion y no detalla la arquitectura interna, los datos de entrenamiento ni los resultados de benchmarks. Por ello, varios campos de esta ficha se marcan explicitamente como no disponibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parámetros totales | 812.958 (según campo safetensors; el nombre indica 2B, dato inconsistente) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base multimodal; detalles no publicados en la informacion disponible) |
+| Parametros totales | 1.881.825.088 (aprox. 1,88 B) |
+| Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ3_XXS, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones weighted/imatrix); el modelo base en safetensors |
+| Tipos de cuantizacion | imatrix, i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-IQ3_XXS, i1-Q2_K_S, i1-Q2_K, i1-Q3_K_S, i1-IQ3_XS, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-Q4_0, i1-IQ4_XS, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base WePocketModel1.0-2B en los datos proporcionados. El nombre sugiere un modelo de aproximadamente 2.000 millones de parámetros, pero el campo de parámetros en safetensors del repositorio indica 812.958, una cifra que no encaja con esa escala y que probablemente refleje un error de metadatos o un recuento parcial. No hay datos sobre tipo de transformer, atención, número de capas, cabezas, dimensionalidad oculta ni vocabulario.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base tencent/WePocketModel1.0-2B en la informacion proporcionada. Las etiquetas del repositorio indican que se trata de un modelo multimodal (multimodal, multimodal-embedding) orientado a despliegue on-device, con soporte declarado de MRL (Matryoshka Representation Learning) y de decisiones estructuradas (structured-decision). La model card del cuantizador no describe la arquitectura (transformer, MoE, hibrida u otra), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
 
-Respecto al entrenamiento, no se documenta el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO o instrucción supervisada. Tampoco se detallan innovaciones técnicas como decodificación especulativa o atención lineal. La única información técnica disponible es la relativa al proceso de cuantización: el autor indica `quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf` y la generación de cuantizaciones ponderadas con matriz de importancia (imatrix). Se desconoce qué dataset se usó para calcular la imatrix.
+En cuanto a esta publicacion concreta, se trata de cuantizaciones ponderadas con imatrix generadas a partir de los pesos originales en formato Hugging Face (convert_type: hf) y con cuantizacion de tensores de salida (output_tensor_quantised: 1). El autor indica que es un modelo de vision y que los ficheros mmproj (proyector multimodal), si existen, se encuentran en el repositorio de cuantizaciones estaticas enlazado en la model card, no en este repositorio i1. El repositorio incluye tambien el fichero imatrix empleado para generar las cuantizaciones, lo que permite reproducir o crear cuantizaciones propias.
 
 ## Capacidades
 
-- No se documentan capacidades específicas en la información disponible.
-- No se confirma soporte de tool calling ni function calling.
-- No se confirma soporte de agentes ni razonamiento multi-paso.
-- No se confirman capacidades multilingües ni idiomas cubiertos.
-- No se confirman modos especiales (thinking, visión, audio).
-- Por el nombre "WePocketModel" podría tratarse de un modelo orientado a dispositivo (pocket), pero es una inferencia no verificada.
+- Procesamiento multimodal: el modelo base esta etiquetado como multimodal y la model card del cuantizador lo describe explicitamente como modelo de vision, con ficheros mmproj asociados en el repositorio estatico.
+- Embeddings multimodales: la etiqueta multimodal-embedding sugiere capacidad de generar representaciones vectoriales conjuntas de texto e imagen.
+- MRL (Matryoshka Representation Learning): permite representaciones de embedding truncables a distintas dimensiones, util para busqueda y recuperacion con compromisos ajustables entre precision y coste.
+- Decisiones estructuradas (structured-decision): orientado a producir salidas estructuradas para toma de decisiones, segun la etiqueta del repositorio.
+- Generacion conversacional: el repositorio incluye la etiqueta conversational.
+- Despliegue on-device: disenado para ejecucion local en dispositivos con recursos limitados.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo se declara ingles (en); no se documentan otros idiomas.
 
 ## Casos de uso
 
-- Evaluación local en hardware de gama baja: las cuantizaciones Q2_K e IQ2 permiten probar el modelo en equipos con poca VRAM o RAM, útil para validar si el modelo base merece la pena antes de invertir en cuantizaciones mayores.
-- Experimentación con llama.cpp y derivados: el formato GGUF permite cargar el modelo en llama.cpp, Ollama o LM Studio para pruebas de inferencia sin infraestructura GPU dedicada.
-- Pruebas de cuantización comparativa: al ofrecer más de veinte variantes (desde IQ1_S hasta Q6_K), sirve para estudiar la degradación de calidad según el nivel de compresión en un modelo pequeño.
-- Prototipado de pipelines de generación de texto: si el modelo base funciona, puede integrarse en scripts de generación con la API de llama.cpp para tareas simples de texto.
-- Despliegue en entornos con recursos limitados: las variantes Q3_K_S y Q4_K_S son candidatas para CPU o GPUs de gama de entrada, siempre que se valide la calidad.
-- Investigación sobre artefactos GGUF: útil para estudiar cómo el autor aplica imatrix y qué impacto tiene en modelos de tamaño reducido.
-- No se recomienda su uso en producción sin antes verificar la licencia del modelo base y la calidad real mediante evaluaciones propias.
+- Clasificacion y decision estructurada en el dispositivo: gracias a su orientacion a structured-decision y su tamano reducido (cuantizaciones de 0,9 a 1,7 GB), puede ejecutarse localmente para tareas de clasificacion o enrutamiento con salidas estructuradas, sin enviar datos a la nube.
+- Busqueda semantica multimodal: el soporte de embeddings multimodales y MRL permite indexar imagenes y texto en un mismo espacio vectorial y truncar las representaciones para ajustar el coste de almacenamiento y la latencia de recuperacion.
+- Procesamiento de imagenes en movil o edge: al ser un modelo de vision con cuantizaciones por debajo de 2 GB, es viable en telefonos, mini-PC y dispositivos embebidos para tareas de comprension de imagenes en local.
+- Filtrado y moderacion de contenido visual: la combinacion de vision y embeddings permite detectar y clasificar contenido en flujos de datos locales, manteniendo la privacidad al no requerir servicios externos.
+- Asistentes conversacionales embebidos: la etiqueta conversational y su reducido consumo permiten integrarlo en asistentes de escritorio o aplicaciones moviles que funcionan sin conexion.
+- Prototipado rapido de pipelines multimodales: las multiples cuantizaciones (desde IQ1_S hasta Q6_K) permiten ajustar el equilibrio entre calidad y memoria en funcion del hardware disponible durante el desarrollo.
+- Recuperacion aumentada (RAG) local: sus embeddings pueden alimentar indices vectoriales en el propio dispositivo para busquedas sobre documentacion y capturas de pantalla sin salir del equipo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma fiable. Para un modelo de ~2B, las cuantizaciones Q4_K_M suelen ocupar en torno a 1,2–1,5 GB, e IQ1_S alrededor de 0,5–0,7 GB, pero estos valores son estimaciones genéricas y no se confirman para este modelo.
-- GPU recomendadas: no disponible. Para un modelo de ~2B, una RTX 3060 de 12 GB o superior sería holgada; una GTX 1650 de 4 GB podría bastar en cuantizaciones bajas, pero no hay confirmación.
-- ¿Cabe en GPU consumer? Muy probablemente sí en cuantizaciones Q4 o inferiores si el tamaño real es ~2B, pero no se confirma.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y otros motores compatibles con GGUF. No se confirma compatibilidad con vLLM o TGI para este artefacto.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 0,9 GB con i1-IQ1_S, 1,3-1,4 GB con las cuantizaciones Q4 (i1-Q4_K_S, i1-Q4_K_M) y 1,7 GB con i1-Q6_K, sin contar el espacio adicional para el contexto y el proyector multimodal (mmproj).
+- GPU recomendadas: no se especifican en la informacion disponible. Por tamano, cualquier GPU consumer con 4 GB o mas de VRAM deberia poder alojar las cuantizaciones Q4 o superiores con contexto moderado.
+- Cabe en GPU consumer: si. Practicamente cualquier GPU consumer moderna (por ejemplo, series RTX 30/40, e incluso iGPU con memoria unificada) puede ejecutar las cuantizaciones de 1-2 GB.
+- Opciones de despliegue: llama.cpp y herramientas compatibles con GGUF (Ollama, LM Studio, entre otras). El formato GGUF es compatible con el ecosistema llama.cpp; para el componente de vision es necesario usar los ficheros mmproj del repositorio estatico.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre el modelo base ni de alternativas comparables con datos verificables en la información proporcionada.
-
-| Modelo | Parámetros | Contexto | Licencia | Formato |
-|---|---|---|---|---|
-| WePocketModel1.0-2B-i1-GGUF | 812.958 (safetensors) / ~2B (nombre) | no disponible | no disponible | GGUF |
-| Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
-| Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| WePocketModel1.0-2B-i1-GGUF (esta ficha) | 1,88 B | no disponible | Apache 2.0 | GGUF (multiples cuantizaciones) | Multimodal on-device, embeddings MRL, decision estructurada |
+| tencent/WePocketModel1.0-2B (modelo base) | 1,88 B | no disponible | Apache 2.0 | safetensors | Pesos originales sin cuantizar |
+| mradermacher/WePocketModel1.0-2B-GGUF (cuantizaciones estaticas) | 1,88 B | no disponible | Apache 2.0 | GGUF | Incluye ficheros mmproj para vision |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Inconsistencia de metadatos: el campo de parámetros (812.958) no concuerda con el nombre "2B"; verificar el modelo base antes de cualquier uso.
-- Licencia no declarada: no se puede confirmar el uso comercial. Es imprescindible revisar la licencia del modelo original de Tencent antes de desplegarlo.
-- Sin model card detallada: no hay información sobre sesgos, alucinación, idiomas ni limitaciones conocidas.
-- Sin benchmarks: no hay evidencia de calidad; las cuantizaciones IQ1 e IQ2 pueden degradar notablemente el rendimiento en modelos pequeños.
-- Repositorio sin descargas ni interacciones: no hay validación comunitaria del artefacto.
-- Fecha de creación futura (2026-11-24): conviene confirmar la integridad del repositorio y la procedencia de los pesos.
-- Tamaño de repositorio declarado 0.0 GB: posiblemente incompleto o mal reportado; verificar los archivos antes de descargar.
-- Riesgo de alucinación y sesgos: no evaluable sin datos del modelo base.
+- La informacion sobre el modelo base es escasa: no se documentan arquitectura, contexto, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su calidad antes de desplegarlo.
+- Solo se declara soporte de ingles; no hay evidencia de capacidades en castellano u otros idiomas.
+- Al ser un modelo de 1,88 B de parametros, es esperable una capacidad de razonamiento limitada en comparacion con modelos mayores; no se han publicado mediciones que lo confirmen o maticen.
+- Las cuantizaciones de muy baja precision (IQ1_S, IQ1_M, IQ2_XXS) degradan la calidad de forma notable; el propio autor las describe como "for the desperate" o "mostly desperate".
+- El repositorio i1 no contiene los ficheros mmproj; para usar las capacidades de vision hay que obtenerlos del repositorio de cuantizaciones estaticas enlazado en la model card.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible, pero aplicables por tratarse de un modelo de lenguaje multimodal sin evaluacion publicada.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base original (tencent/WePocketModel1.0-2B) antes de desplegarlo en produccion.
+- El modelo esta pensado para on-device; no se han publicado datos de throughput ni latencia que permitan dimensionar entornos de alta concurrencia.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/WePocketModel1.0-2B-i1-GGUF
-- Modelo base (referenciado en la model card): https://huggingface.co/tencent/WePocketModel1.0-2B
-- Perfil del autor de la cuantización: https://huggingface.co/mradermacher
-- llama.cpp (motor compatible GGUF): https://github.com/ggerganov/llama.cpp
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/WePocketModel1.0-2B-i1-GGUF
+- Modelo base: https://huggingface.co/tencent/WePocketModel1.0-2B
+- Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/WePocketModel1.0-2B-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#WePocketModel1.0-2B-i1-GGUF
+- FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (README de referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico comparativo de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

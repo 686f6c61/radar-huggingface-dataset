@@ -36,7 +36,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 123,
+  "downloads_30d": 194,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
@@ -57,70 +57,112 @@
   "renamed_at": null,
   "benchmarks": [
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
-      "metric": "MedCodeBench v1.0 Base Gemma 4 12B Standalone (240 cases)",
+      "metric": "MedCodeBench v1.0 Base Gemma 4 12B Standalone (240 cases, 512-tok cap)",
       "value": 27.5
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
       "metric": "MedCodeBench v1.0 MedCodeSec-12B Standalone (BF16, 240 cases)",
       "value": 73.33
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
       "metric": "MedCodeBench v1.0 MedCodeSec-12B Standalone (Q8_0, 240 cases)",
       "value": 74.17
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
       "metric": "MedCodeBench v1.0 MedCodeSec-12B Standalone (Q4_K_M, 240 cases)",
       "value": 73.33
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
-      "metric": "MedCodeBench v1.0 MedCodeSec-12B + Calera ICX (240 cases, 0.0% hallucination)",
+      "metric": "MedCodeBench v1.0 MedCodeSec-12B + Calera ICX Zero-Retry 1st-Shot (240 cases)",
+      "value": 93.75
+    },
+    {
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "MedCodeBench v1.0 MedCodeSec-12B + Calera ICX Bounded Retry Loop (240 cases)",
       "value": 100
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
       "metric": "MedCodeBench v2.0 MedCodeSec-12B Standalone (BF16 / Q8_0 / Q4_K_M, 540 cases)",
       "value": 67.59
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
-      "metric": "MedCodeBench v2.0 MedCodeSec-12B Q8_0 + Calera ICX (540 cases, 0.0% hallucination)",
+      "metric": "MedCodeBench v2.0 MedCodeSec-12B Q8_0 + Calera ICX Zero-Retry 1st-Shot (540 cases)",
+      "value": 89.44
+    },
+    {
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
+      "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
+      "metric": "MedCodeBench v2.0 MedCodeSec-12B Q8_0 + Calera ICX Bounded Retry Loop (540 cases)",
       "value": 100
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
       "metric": "Adversarial Red-Team Suite MedCodeSec-12B Standalone Q8_0 (48 cases)",
       "value": 72.92
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
-      "metric": "Adversarial Red-Team Suite MedCodeSec-12B Q8_0 + Calera ICX (48 cases)",
+      "metric": "Adversarial Red-Team Suite MedCodeSec-12B Q8_0 + Calera ICX Bounded Retry Loop (48 cases)",
       "value": 100
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
-      "metric": "Out-of-Box Zero-Flag llama-cli Usability Gate G-PRE-09 (Q8_0 / Q4_K_M)",
+      "metric": "Out-of-Box Zero-Flag llama-cli Smoke Gate G-PRE-09 (Q8_0, 12/12)",
       "value": 100
     },
     {
-      "task": "Clinical Coding Audit, Sequencing & NCCI Bundling Verification",
+      "task": "Structured CMS Clinical Coding Audit, Sequencing & Refusal Verification",
       "dataset": "MedCodeBench v1.0 & v2.0 (CMS FY2026/FY2027 + Drug/Neoplasm/PCS/NCCI)",
-      "metric": "Layer 2 Held-Out MIMIC-IV Demo Non-CMS Fabrication Rate (+ Calera ICX, 123 admissions)",
+      "metric": "Out-of-Box Zero-Flag llama-cli Smoke Gate G-PRE-09 (Q4_K_M, 11/12)",
+      "value": 91.67
+    },
+    {
+      "task": "Held-Out Multi-Label ICD-10-CM Extraction",
+      "dataset": "MIMIC-IV Demo 2.2 Lab/Vital/Med Summaries (123 Admissions) & Harvard/BWH BRIDGE Spanish CodiEsp",
+      "metric": "MIMIC-IV Demo 2.2 Exact Micro-F1 (MedCodeSec Standalone)",
+      "value": 0.1041
+    },
+    {
+      "task": "Held-Out Multi-Label ICD-10-CM Extraction",
+      "dataset": "MIMIC-IV Demo 2.2 Lab/Vital/Med Summaries (123 Admissions) & Harvard/BWH BRIDGE Spanish CodiEsp",
+      "metric": "MIMIC-IV Demo 2.2 Exact Micro-F1 (MedCodeSec + Calera ICX)",
+      "value": 0.106
+    },
+    {
+      "task": "Held-Out Multi-Label ICD-10-CM Extraction",
+      "dataset": "MIMIC-IV Demo 2.2 Lab/Vital/Med Summaries (123 Admissions) & Harvard/BWH BRIDGE Spanish CodiEsp",
+      "metric": "MIMIC-IV Demo 2.2 Non-CMS Fabrication Rate (+ Calera ICX, 0/1,179 codes)",
       "value": 0
+    },
+    {
+      "task": "Held-Out Multi-Label ICD-10-CM Extraction",
+      "dataset": "MIMIC-IV Demo 2.2 Lab/Vital/Med Summaries (123 Admissions) & Harvard/BWH BRIDGE Spanish CodiEsp",
+      "metric": "Harvard/BWH BRIDGE CodiEsp-ICD-10-CM Exact Micro-F1 (Q4_K_M Standalone)",
+      "value": 0.0768
+    },
+    {
+      "task": "Held-Out Multi-Label ICD-10-CM Extraction",
+      "dataset": "MIMIC-IV Demo 2.2 Lab/Vital/Med Summaries (123 Admissions) & Harvard/BWH BRIDGE Spanish CodiEsp",
+      "metric": "Harvard/BWH BRIDGE CodiEsp-ICD-10-CM Exact Micro-F1 (Q4_K_M + Calera ICX)",
+      "value": 0.0847
     }
   ],
   "sources": []

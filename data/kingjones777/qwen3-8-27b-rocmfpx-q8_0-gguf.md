@@ -2,96 +2,102 @@
 
 ## Resumen
 
-Qwen3.8-27B-ROCmFPX-Q8_0-GGUF es una cuantización de 8 bits en formato GGUF del modelo Qwen3.8-27B, un transformer de mezcla de expertos (MoE) de 26.9 mil millones de parámetros desarrollado por Qwen. Esta build concreta, publicada por el usuario kingjones777, utiliza el tipo de cuantización propietario ROCmFPX, diseñado exclusivamente para GPUs AMD con arquitectura gfx1151, en particular el acelerador integrado Ryzen AI MAX+ 395 (Strix Halo) con 128 GB de memoria unificada.
+Qwen3.8-27B-ROCmFPX-Q8_0-GGUF es una cuantización de 8 bits en formato GGUF del modelo Qwen3.8-27B, publicada por el usuario kingjones777. No se trata de un modelo entrenado desde cero, sino de una conversión de precisión completa (BF16, 51,3 GiB) a un formato de pesos de 8,28 bits por parámetro (25,92 GiB) diseñado específicamente para hardware AMD con memoria unificada, en concreto el APU Ryzen AI MAX+ 395 (arquitectura gfx1151, Strix Halo) con 128 GB de memoria compartida.
 
-El archivo, de 25.92 GiB (8.28 bits por peso), se ha cuantizado directamente desde el GGUF BF16 original de 51.3 GiB, sin pasar por una requantización intermedia de menor precisión. Su relevancia radica en que demuestra que la memoria unificada de 128 GB de Strix Halo hace viable ejecutar una cuantización de 8 bits con calidad cercana al original, aunque a costa de un rendimiento inferior al de la variante de 4 bits del mismo autor (38.32 tok/s frente a 25.07 tok/s).
+La particularidad técnica del artefacto es que emplea el tipo de cuantización `Q8_0_ROCMFPX` (ftype 111), una variante que no existe en llama.cpp upstream y que requiere un fork específico del runtime (ROCmFPX). El autor incluye además una cabeza de decodificación especulativa MTP (multi-token prediction) cuantizada a 4 bits que, combinada con el modelo principal, multiplica por 3,2 el throughput de decodificación en el hardware objetivo.
 
-La build incluye un cabezal de borrador MTP (multi-token prediction) que multiplica la velocidad de decodificación por 3.2x, pasando de 7.9 a 25.07 tokens por segundo. Es importante señalar que el tipo ROCmFPX solo existe en un fork de llama.cpp llamado `charlie12345/ROCmFPX`, por lo que el llama.cpp estándar no puede cargar este modelo.
+El modelo subyacente, Qwen3.8-27B, es un transformer de tipo mezcla de expertos (MoE) con aproximadamente 26.896 millones de parámetros totales, licencia Apache 2.0 y capacidades declaradas de tool calling. La relevancia de esta ficha radica en que documenta un caso de optimización vertical muy concreto: cuantización de alta fidelidad para un APU concreto, con parches de runtime para habilitar caché de prefijos bajo decodificación especulativa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE), transformer con decodificacion especulativa MTP |
-| Parametros totales | 26.895.998.464 (26.9B) |
-| Parametros activos | no disponible (el nombre del modelo base sugiere ~3.8B, no confirmado) |
-| Longitud de contexto | 131.072 tokens |
-| Tipos de cuantizacion | Q8_0_ROCMFPX (8.28 bpw, ftype 111) |
-| Idiomas soportados | en (ingles) |
+| Arquitectura | Transformer con mezcla de expertos (MoE), según etiquetas del autor; detalles de capas y atención no disponibles |
+| Parametros totales | 26.895.998.464 (≈26,9 mil millones) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 32.768 tokens (valor empleado en los comandos de ejemplo del autor); máximo nativo no disponible |
+| Tipos de cuantizacion | `Q8_0_ROCMFPX` (ftype 111, 8,28 bpw); incluye cabeza MTP aparte en `Q4_0` |
+| Idiomas soportados | Inglés (`en`) declarado; cobertura multilingüe real no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (solo compatible con el fork ROCmFPX de llama.cpp) |
+| Formato de pesos | GGUF (un archivo principal de 25,9232 GiB / 27.834.808.672 bytes, más `mtp-Qwen3.8-27B-Q4_0.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B es un transformer de mezcla de expertos con 26.9B parametros totales, disenado por Qwen para generacion de texto y soporte de herramientas. Esta build concreta no es un modelo entrenado desde cero, sino una cuantizacion del GGUF BF16 original (51.3 GiB) al formato ROCmFPX de 8 bits, realizada directamente sin requantizaciones intermedias, lo que preserva la fidelidad de los pesos originales.
+El autor no documenta el proceso de entrenamiento del modelo base; esta ficha describe únicamente el artefacto cuantizado. Según las etiquetas y la model card, Qwen3.8-27B es un transformer con arquitectura de mezcla de expertos (MoE) y capacidad de tool calling. No se dispone de datos sobre número de tokens de entrenamiento, composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias.
 
-La innovacion principal de esta publicacion es el uso del tipo de cuantizacion ROCmFPX, una representacion de punto flotante de 8 bits optimizada para la arquitectura AMD gfx1151, que aprovecha las instrucciones nativas de ROCm 7.2.4. Ademas, el repositorio incluye un cabezal de borrador MTP (multi-token prediction) en Q4_0 que permite decodificacion especulativa: el modelo borrador propone hasta 4 tokens y el modelo principal los valida, logrando una tasa de aceptacion de 0.911 y un incremento de velocidad de 3.2x respecto a la ejecucion sin MTP.
-
-Los pesos se auditaron tensor a tensor (851 tensores): `output.weight` y `token_embd.weight` en Q8_0, y el resto en `TYPE_103` (layout ROCmFPX de 8 bits). No se realizaron mediciones de perplejidad ni comparaciones de calidad A/B contra BF16 o la version de 4 bits.
+La innovación técnica relevante de esta publicación no está en el entrenamiento sino en la cadena de inferencia. Por un lado, la cuantización se realizó directamente desde el GGUF BF16 de 51,3 GiB, no por recuantización desde una build de menor precisión, lo que evita la acumulación de error de una doble conversión. Por otro, el autor distribuye un parche (`patches/mtp-prompt-cache-fix.patch`, 4 archivos, aplicable sobre el commit `2809dc5`) que resuelve un defecto del runtime: con la cabeza MTP cargada, `llama-server` desactivaba por completo la caché de prefijos, obligando a reprocesar el prompt íntegro en cada turno agéntico. El parche captura el estado especulativo (la fila oculta pre-norm del modelo objetivo en la posición exacta del prefijo cacheado) dentro del checkpoint de contexto (`common_prompt_checkpoint::data_spec`), de modo que se guarda y restaura junto con el KV. La verificación reportada muestra una reducción de 27.948 ms a 100 ms de procesamiento de prompt por turno sobre un prefijo estable de 8.045 tokens, con salida byte a byte idéntica a temperatura 0 en 10 de 10 ejecuciones.
 
 ## Capacidades
 
-- Generacion de texto en ingles con razonamiento aritmetico verificado (17 × 23 = 391, dias en 2024 = 366).
-- Tool calling verificado 7/7 en modo thinking y 7/7 en modo non-thinking, incluyendo argumentos multiples, objetos anidados, enums, rechazos, conversaciones multi-turno, streaming y llamadas paralelas.
-- Soporte de decodificacion especulativa MTP con cabezal de borrador incluido en el repositorio.
-- Ventana de contexto de 131.072 tokens (no probada en la practica por el autor).
-- Capacidad de razonamiento en dos modos: thinking (cadena de pensamiento explicita) y non-thinking (respuesta directa).
+- Generación de texto conversacional en inglés, con modo de razonamiento explícito (thinking) y modo directo (non-thinking).
+- Tool calling / function calling: el autor reporta 7/7 en pruebas que cubren argumentos múltiples, objetos anidados, parámetros de tipo enum, rechazo de llamadas, conversaciones multi-turno, streaming y llamadas en paralelo, tanto en modo thinking como non-thinking.
+- Razonamiento aritmético y factual básico verificado: 17 × 23 = 391, capital de Japón = Tokio, días de 2024 = 366.
+- Decodificación especulativa mediante cabeza MTP incluida, con tasa de aceptación de borradores de 0,911.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`) y con el servidor `llama-server` del fork ROCmFPX.
+- No se declaran capacidades de visión, audio ni multimodalidad.
 
 ## Casos de uso
 
-- Asistentes conversacionales locales en hardware AMD Strix Halo: el modelo puede ejecutarse en un Ryzen AI MAX+ 395 con 128 GB de memoria unificada, gestionando conversaciones multi-turno con tool calling verificado, sin necesidad de GPU discreta.
-- Agentes autonomos con llamada a herramientas: el soporte 7/7 en tool calling con argumentos anidados y llamadas paralelas permite construir agentes que consultan APIs, bases de datos o servicios externos de forma fiable.
-- Procesamiento de documentos extensos: con 131.072 tokens de contexto, puede resumir o extraer informacion de documentos largos (manuales tecnicos, informes anuales, codigo fuente completo de proyectos medianos) en una sola pasada.
-- Generacion de codigo asistida en entornos sin conexion: la licencia Apache 2.0 permite su integracion en herramientas de desarrollo internas, con la ventaja de ejecutarse en hardware AMD de gama alta sin depender de servicios en la nube.
-- Prototipado de aplicaciones de razonamiento: el modo thinking permite depurar cadenas de razonamiento en tareas de logica o matematicas, util para validar pipelines de agentes antes de pasar a produccion.
-- Evaluacion de calidad de cuantizacion en ROCmFPX: esta build sirve como referencia para medir si 8 bits ofrecen una mejora real de fidelidad frente a la variante de 4 bits del mismo autor, en tareas especificas de dominio.
+- Asistentes conversacionales multi-turno en local: con 32.768 tokens de contexto y caché de prefijos funcional (una vez aplicado el parche MTP), el modelo mantiene historiales largos sin reprocesar el prompt completo en cada intervención, lo que abarata el coste por turno en despliegues de escritorio.
+- Automatización agéntica con herramientas: la puntuación 7/7 en tool calling en ambos modos permite integrarlo en bucles de agente que consulten APIs, encadenen llamadas paralelas y gestionen objetos anidados en los argumentos.
+- Inferencia privada en estación de trabajo: al ejecutarse sobre un APU con 128 GB de memoria unificada, el modelo no requiere GPU dedicada ni envío de datos a la nube, lo que encaja en entornos con requisitos de confidencialidad.
+- Evaluación de fidelidad frente a cuantizaciones agresivas: al derivarse directamente del BF16, sirve como referencia de alta precisión para comparar la degradación de builds de 4 bits en tareas de razonamiento y tool calling.
+- Desarrollo y depuración de runtimes de inferencia: el repositorio incluye parches y comandos reproducibles, útil para ingenieros que trabajen sobre ROCmFPX, decodificación especulativa o gestión de caché de prefijos.
+- Prototipado de pipelines de CI/CD con verificación determinista: a temperatura 0 y con el parche aplicado, la salida es byte a byte reproducible, lo que facilita tests de regresión sobre respuestas del modelo.
+- Servicio local de bajo volumen: con 25,07 tok/s de decodificación en el hardware objetivo, es adecuado para uso interactivo individual, no para serving de alta concurrencia.
 
 ## Benchmarks y rendimiento
 
-Rendimiento medido en Ryzen AI MAX+ 395 (gfx1151, 128 GB de memoria unificada, ROCm 7.2.4), mediana de 3 ejecuciones, descartando el warm-up, en sistema sin carga. Flags de servidor: `--spec-type draft-mtp --model-draft mtp-Qwen3.8-27B-Q4_0.gguf --spec-draft-n-max 4 -ngl 999 -fa on -fit off`.
+Los únicos datos publicados son mediciones de throughput del propio autor en Ryzen AI MAX+ 395 (gfx1151, 128 GB unificados, ROCm 7.2.4), mediana de 3 ejecuciones, con flags `--spec-type draft-mtp --model-draft mtp-Qwen3.8-27B-Q4_0.gguf --spec-draft-n-max 4 -ngl 999 -fa on -fit off`.
 
-| Build | Tamano | Decodificacion con MTP | Rango | Aceptacion de borrador |
+| Build | Tamano | Decodificacion con MTP | Rango | Aceptacion de borradores |
 |---|---|---|---|---|
-| Q8_0_ROCMFPX (esta build) | 25.92 GiB | 25.07 tok/s | [25.07 – 25.51] | 0.911 |
-| Q8_0_ROCMFPX_AGENT | 26.28 GiB | 26.62 tok/s | [26.61 – 27.15] | 0.953 |
-| Q4_0_ROCMFP4_STRIX (4-bit) | 14 GiB | 38.32 tok/s | [37.91 – 38.61] | 1.000 |
+| Esta (`Q8_0_ROCMFPX`) | 25,92 GiB | 25,07 tok/s | 25,07 – 25,51 | 0,911 |
+| `Q8_0_ROCMFPX_AGENT` | 26,28 GiB | 26,62 tok/s | 26,61 – 27,15 | 0,953 |
+| `Q4_0_ROCMFP4_STRIX` (4 bits) | 14 GiB | 38,32 tok/s | 37,91 – 38,61 | 1,000 |
 
-Sin el cabezal MTP, esta build rinde aproximadamente 7.9 tok/s, un tercio de la velocidad con MTP. Verificaciones funcionales: 17 × 23 = 391 correcto, capital de Japon = Tokyo correcto, dias en 2024 = 366 correcto, tool calling 7/7 en ambos modos. No se han publicado resultados de perplejidad, ni comparativas de calidad A/B contra BF16 o la build de 4 bits, ni benchmarks de codigo o razonamiento.
+Sin la cabeza MTP, el modelo rinde aproximadamente 7,9 tok/s en el mismo hardware, es decir, la decodificación especulativa aporta un factor de 3,2. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- GPU objetivo: AMD gfx1151 (Ryzen AI MAX+ 395 / Strix Halo), unica arquitectura soportada por el tipo de cuantizacion ROCmFPX.
-- Memoria: 128 GB de memoria unificada recomendados (el archivo ocupa 25.92 GiB, pero el modelo base requiere espacio adicional para el contexto y el cabezal de borrador).
-- ROCm 7.2.4 o superior.
-- No es compatible con GPUs NVIDIA ni con GPUs AMD de otras arquitecturas (gfx90a, gfx942, etc.) sin recompilar el fork ROCmFPX.
-- Despliegue: exclusivamente con el fork `charlie12345/ROCmFPX` de llama.cpp (llama-server). No funciona con llama.cpp estandar, Ollama ni vLLM.
-- Latencia: 25.07 tok/s de media con MTP activado; sin MTP, aproximadamente 7.9 tok/s. La latencia por token es de unos 40 ms con MTP.
+- VRAM/memoria estimada: 25,92 GiB para el archivo principal más la cabeza MTP en Q4_0; en la práctica requiere un sistema con al menos ~28-30 GiB disponibles para pesos y KV, y bastante más para contexto largo.
+- Hardware validado: AMD Ryzen AI MAX+ 395 (gfx1151, Strix Halo) con 128 GB de memoria unificada y ROCm 7.2.4. El autor justifica la precisión de 8 bits precisamente por la abundancia de memoria unificada de esta plataforma.
+- GPU dedicadas: no hay datos de funcionamiento en A100, H100 o RTX 4090; el tipo de cuantización `Q8_0_ROCMFPX` está ligado al fork ROCmFPX y a gfx1151, por lo que la portabilidad a otras plataformas no está verificada.
+- GPU de consumo: no cabe en tarjetas de 24 GB en esta precisión; para ese rango habría que recurrir a la build de 4 bits del mismo autor (14 GiB).
+- Despliegue: exclusivamente mediante el fork ROCmFPX (`github.com/ROCmFPX/ROCmFPX` o la línea legacy `charlie12345/ROCmFPX`), con `llama-server`. llama.cpp upstream no carga este tipo de cuantización. No hay soporte declarado para vLLM, TGI ni Ollama.
+- Throughput: 25,07 tok/s de decodificación con MTP y 0,911 de aceptación; ~7,9 tok/s sin MTP. No se publican cifras de prefill ni de latencia por token más allá de los tiempos de procesamiento de prompt del parche de caché.
+- Nota de estabilidad: la ruta `draft-mtp` con modelo separado presenta errores conocidos en la línea legacy bajo Windows 11 / gfx1151 / HIP SDK 7.2; el autor recomienda compilar el repositorio oficial ROCmFPX, donde la ruta fue reescrita.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Velocidad (Strix Halo) | Licencia |
-|---|---|---|---|---|---|
-| Qwen3.8-27B-ROCmFPX-Q8_0 (esta build) | 26.9B | 131K | Q8_0_ROCMFPX (8.28 bpw) | 25.07 tok/s | Apache 2.0 |
-| Qwen3.8-27B-ROCmFPX-Q8_0-AGENT | 26.9B | 131K | Q8_0_ROCMFPX (8.28 bpw) | 26.62 tok/s | Apache 2.0 |
-| Qwen3.8-27B-ROCmFP4-STRIX-MTP | 26.9B | 131K | Q4_0_ROCMFP4 (4-bit) | 38.32 tok/s | Apache 2.0 |
+| Modelo | Parametros | Contexto | Precisión de esta build | Throughput (hardware del autor) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Este (`Q8_0_ROCMFPX`) | 26,9 mil M (MoE) | 32.768 (config. de ejemplo) | 8,28 bpw / 25,92 GiB | 25,07 tok/s | Apache 2.0 | GGUF para fork ROCmFPX |
+| `Q8_0_ROCMFPX_AGENT` (mismo autor) | 26,9 mil M (MoE) | no disponible | 8 bits / 26,28 GiB | 26,62 tok/s (aceptación 0,953) | Apache 2.0 | GGUF para fork ROCmFPX |
+| `Q4_0_ROCMFP4_STRIX` (mismo autor) | 26,9 mil M (MoE) | no disponible | 4 bits / 14 GiB | 38,32 tok/s (aceptación 1,000) | Apache 2.0 | GGUF para fork ROCmFPX |
+| Qwen3.8-27B (base, BF16) | 26,9 mil M (MoE) | no disponible | 16 bits / 51,3 GiB | no disponible en este hardware | Apache 2.0 | Pesos originales en Qwen |
 
-La variante AGENT es marginalmente mas rapida (6.2%) y acepta mas tokens de borrador (0.953 frente a 0.911) a costa de 0.36 GiB adicionales. La variante de 4 bits es 1.53x mas rapida y 12 GiB mas pequena, por lo que el autor recomienda la build de 8 bits solo si se necesita margen de fidelidad, no por rendimiento. No hay comparativas publicadas contra el BF16 original ni contra otros modelos MoE de tamano similar.
+No se dispone de datos para comparar con modelos de otras familias (Llama, Mistral, Gemma) en este mismo hardware y formato.
 
 ## Limitaciones y advertencias
 
-- Incompatibilidad critica: el llama.cpp estandar no puede cargar este modelo. Requiere el fork `charlie12345/ROCmFPX`, lo que limita su uso a ese ecosistema.
-- Rendimiento sin MTP muy pobre: a 7.9 tok/s sin el cabezal de borrador, la experiencia de uso es practicamente inservible para interaccion en tiempo real. El MTP es obligatorio en la practica.
-- Sin mediciones de calidad: no se ha ejecutado perplejidad ni comparativas A/B contra BF16 o la build de 4 bits, por lo que no hay evidencia de que 8 bits compren precision real frente a 4 bits.
-- Hardware muy especifico: solo funciona en AMD gfx1151 (Strix Halo). No es portable a otras GPUs AMD ni a NVIDIA sin modificaciones del fork.
-- Contexto largo sin probar: aunque el modelo soporta 131.072 tokens, no se han realizado pruebas de estabilidad o calidad en contextos largos.
-- Idioma limitado: solo se declara ingles en la model card, aunque el modelo base de Qwen es multilingue; no hay verificacion de rendimiento en otros idiomas.
-- Sin benchmarks de codigo ni razonamiento: no se ha evaluado el rendimiento en tareas de programacion o logica compleja mas alla de las verificaciones aritmeticas basicas.
-- Fecha de creacion futura: el repositorio se creo el 16 de agosto de 2026, lo que sugiere que es un proyecto muy reciente y posiblemente experimental.
+- Dependencia dura de un fork: el tipo `Q8_0_ROCMFPX` no existe en llama.cpp upstream; los comandos autogenerados por Hugging Face no funcionan. Sin el runtime ROCmFPX el modelo no carga.
+- Validación en una sola plataforma: todas las cifras proceden de un Ryzen AI MAX+ 395 con ROCm 7.2.4. El comportamiento en otras GPU AMD o en NVIDIA no está documentado.
+- Sin MTP el rendimiento cae a un tercio (≈7,9 tok/s), lo que hace la cabeza de borrador prácticamente obligatoria para uso interactivo.
+- Defecto de caché de prefijos: sin el parche incluido, cada turno agéntico reprocesa el prompt completo (27.948 ms frente a 100 ms en la medición del autor), lo que degrada gravemente el coste en conversaciones largas.
+- Errores conocidos en la línea legacy de ROCmFPX bajo Windows 11 / gfx1151 / HIP SDK 7.2 en la ruta `draft-mtp` con modelo separado; el autor recomienda migrar al repositorio oficial.
+- Idiomas: solo se declara inglés; no hay evidencia de calidad en castellano ni en otros idiomas.
+- Riesgo de alucinación: no se han publicado evaluaciones de factualidad, sesgo o robustez; las verificaciones del autor se limitan a tres preguntas cerradas y a pruebas de tool calling.
+- Sin datos de benchmarks de calidad: no es posible comparar su rendimiento en MMLU, HumanEval o GSM8K con otras builds o modelos.
+- Licencia Apache 2.0 permite uso comercial, pero la licencia del runtime ROCmFPX y de sus parches debe verificarse por separado antes de desplegar en producción.
+- La model card incluye advertencias y comandos dirigidos al usuario; se han tratado aquí como datos de referencia, no como instrucciones a ejecutar sin revisión.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-GGUF
 - Variante AGENT: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFPX-Q8_0-AGENT-GGUF
-- Variante 4-bit: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF
-- Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
+- Variante de 4 bits: https://huggingface.co/kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio oficial del runtime: https://github.com/ROCmFPX/ROCmFPX
+- Línea legacy del runtime: https://github.com/charlie12345/ROCmFPX
+- Parche de la ruta MTP en la línea legacy (PR #109): https://github.com/charlie12345/ROCmFPX/pull/109

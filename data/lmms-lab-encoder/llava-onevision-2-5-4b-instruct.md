@@ -2,114 +2,118 @@
 
 ## Resumen
 
-LLaVA-OneVision-2.5-4B-Instruct es un modelo de lenguaje y vision de 4B (5.250 millones de parametros reales segun los pesos en safetensors) desarrollado por el equipo lmms-lab-encoder, vinculado al proyecto EvolvingLMMs-Lab. Esta disenado para tareas de comprension de imagen unica, multiples imagenes y video, e incorpora una capacidad poco habitual: el procesamiento de video en modo *streaming*, donde los fotogramas llegan uno a uno y el modelo decide en cada paso si permanecer en silencio, responder o generar una descripcion.
+LLaVA-OneVision-2.5-4B-Instruct es un modelo de lenguaje y visión (VLM) de aproximadamente 5.250 millones de parámetros, desarrollado por el equipo lmms-lab-encoder (vinculado al proyecto EvolvingLMMs-Lab). Está diseñado para tareas de comprensión de imagen única, múltiples imágenes y vídeo, con una característica diferencial: el soporte nativo de vídeo en *streaming*, donde los fotogramas llegan de uno en uno y el modelo decide en cada paso si permanece en silencio, responde o genera una descripción. Los mismos pesos y la misma plantilla de chat sirven tanto para el modo offline como para el modo streaming.
 
-El modelo emplea una arquitectura multimodal tipo LLaVA-OneVision con un *vision tower* de patch-16 y fusion 3x3 que logra una compresion espacial de 9x (un token visual por cada 48x48 pixeles), lo que permite encajar videos largos en una ventana de contexto de 262.000 tokens. Ademas del muestreo uniforme de fotogramas, incorpora un modo *codec* que aprovecha el coste en bits del codificador de video para empaquetar las regiones informativas en un numero reducido de lienzos.
+El modelo emplea una arquitectura multimodal con una torre de visión de patch-16 y fusión espacial 3×3, lo que proporciona un token visual por cada 48×48 píxeles (compresión espacial de 9×). Esta compresión permite manejar vídeos largos dentro de una ventana de contexto de 262.144 tokens. Además del muestreo uniforme de fotogramas, incorpora un *codec mode* que aprovecha el coste en bits del codificador de vídeo para empaquetar las regiones informativas en un número reducido de lienzos.
 
-Su relevancia actual radica en unificar inferencia offline y streaming con los mismos pesos y la misma plantilla de chat, activando el modo mediante `apply_chat_template(..., streaming=True)`. Se distribuye bajo licencia Apache 2.0, lo que facilita su adopcion comercial, y su tamano contenido lo hace desplegable en hardware de gama media.
+Es relevante ahora porque combina en un único modelo de tamaño contenido (4B nominales, 5,25B reales) capacidades de comprensión de vídeo largo, streaming y *grounding* temporal, con licencia Apache 2.0, lo que facilita su uso comercial e investigación. Su rendimiento en benchmarks de vídeo se compara favorablemente con alternativas del mismo rango, como Qwen3.5-4B.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Multimodal tipo LLaVA-OneVision (transformer con vision tower patch-16 y fusion 3x3) |
-| Parametros totales | 5.253.089.792 (aproximadamente 5,25B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 262.000 tokens |
-| Tipos de cuantizacion | No disponible |
+| Arquitectura | Multimodal transformer (torre de visión patch-16 con fusión 3×3 + LLM); familia LLaVA-OneVision 2.5 |
+| Parámetros totales | 5.253.089.792 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | 262.144 tokens (262k) |
+| Tipos de cuantización | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors |
+| Pipeline | image-text-to-text |
+| Modos de entrada | Imagen única, múltiples imágenes, vídeo (offline y streaming) |
+| Compresión visual | 1 token visual por cada 48×48 píxeles (9× espacial) |
+| Tamaño del repositorio | 10,5 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue la familia LLaVA-OneVision, con un *vision encoder* de patch-16 y un mecanismo de fusion 3x3 que reduce la secuencia visual a un token por cada 48x48 pixeles, es decir, una compresion espacial de 9x. Esta compresion es la que permite manejar videos de hasta 1024 fotogramas en el contexto de 262.000 tokens. El modelo soporta dos estrategias de muestreo de video: muestreo uniforme de fotogramas y el llamado modo *codec*, que utiliza el coste en bits del codificador de video para seleccionar y empaquetar las regiones informativas en pocos lienzos.
+El modelo sigue la estela de la familia LLaVA-OneVision, con una torre de visión basada en parches de 16×16 píxeles y una etapa de fusión espacial 3×3 que reduce la secuencia visual a un token por cada 48×48 píxeles. Esta compresión de 9× es clave para que vídeos largos quepan en el contexto de 262k tokens. El modelo procesa imágenes únicas, múltiples imágenes y secuencias de vídeo, y en el modo *codec* utiliza la información de coste en bits del codificador de vídeo para seleccionar y empaquetar las regiones más informativas en un conjunto reducido de lienzos, en lugar de muestrear fotogramas de forma uniforme.
 
-El entrenamiento esta orientado tanto a tareas offline como a video en streaming. En este ultimo modo, ocho tokens de protocolo codifican la decision por fotograma (permanecer en silencio, responder o generar un caption), de modo que los mismos pesos sirven para ambos regimenes sin cambios en la plantilla de chat. No se han publicado en la informacion disponible datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La model card indica que el informe tecnico esta pendiente de publicacion.
+El entrenamiento incluye instrucciones multimodales y está optimizado para el modo streaming: ocho tokens de protocolo codifican la decisión por fotograma (silencio, respuesta o descripción). No se dispone de información detallada sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card no publica el informe técnico (aparece como "coming soon"), por lo que los detalles de entrenamiento no están disponibles.
 
 ## Capacidades
 
-- Generacion de texto y comprension de imagen unica y multiples imagenes.
-- Comprension de video offline con muestreo uniforme de fotogramas.
-- Comprension de video en streaming: decision por fotograma de silencio, respuesta o caption mediante tokens de protocolo.
-- Modo codec de video: empaquetado de regiones informativas segun el coste en bits del codificador.
-- Procesamiento de video largo (hasta 1024 fotogramas en modo codec, hasta 950-2048 fotogramas segun configuracion en modo frames).
-- Grounding temporal en video (localizacion de eventos, medido con TimeLens y JumpScore).
-- Conversacion multimodal multi-turno mediante plantilla de chat.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible en la informacion proporcionada.
-- Capacidades de audio: no disponible en la informacion proporcionada.
+- Generación de texto condicionada por imagen y vídeo, con razonamiento visual.
+- Comprensión de imagen única y múltiples imágenes.
+- Comprensión de vídeo offline con muestreo uniforme de fotogramas.
+- Comprensión de vídeo en streaming: procesa fotogramas uno a uno y decide en cada paso si permanece en silencio, responde o describe.
+- Modo *codec* de vídeo: empaqueta regiones informativas según el coste en bits del codificador.
+- *Grounding* temporal en vídeo (localización de eventos, métricas mIoU/mAP).
+- Comprensión de vídeo largo gracias al contexto de 262k tokens.
+- Conversación multi-turno mediante plantilla de chat (`apply_chat_template`).
+- Capacidad de *captioning* por fotograma en modo streaming.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Vigilancia y analisis de video en tiempo real: el modo streaming permite procesar fotogramas a medida que llegan y decidir cuando emitir una alerta o descripcion, adecuado para monitorizacion de camaras donde no interesa generar texto en cada fotograma.
-- Resumen de videos largos: con 262.000 tokens de contexto y modo codec, puede condensar reuniones, clases o grabaciones de varias horas en resumenes estructurados sin perder eventos relevantes.
-- Localizacion temporal de eventos: las capacidades de grounding temporal (TimeLens, JumpScore) permiten responder a preguntas del tipo "en que momento ocurre X" en un video, util para edicion automatica o indexado de contenido audiovisual.
-- Indexado y busqueda semantica de videotecas: combinado con un pipeline de recuperacion, el modelo puede generar descripciones y metadatos por segmento para alimentar un buscador sobre archivos de video.
-- Analisis de contenido deportivo o de accion: MotionBench y MVBench muestran buen rendimiento en comprension de movimiento, aplicable a analisis tactico o deteccion de acciones en retransmisiones.
-- Asistencia multimodal en entornos de desarrollo: con soporte de imagenes, puede analizar capturas de pantalla, diagramas o mockups y responder preguntas sobre ellos en flujos de trabajo de documentacion tecnica.
-- Descripcion automatica de video para accesibilidad: generacion de subtitulos y audiodescripciones por fotograma o segmento, gracias al modo streaming con tokens de caption.
+- **Vigilancia y monitorización en streaming**: el modelo recibe fotogramas de una cámara uno a uno y decide cuándo emitir una alerta o descripción, lo que permite desplegarlo en pipelines de vídeo en tiempo real sin procesar el flujo completo de forma offline.
+- **Análisis de vídeo largo para investigación**: con 262k tokens de contexto y compresión 9×, puede resumir o responder preguntas sobre grabaciones extensas (clases, reuniones, conferencias) sin truncar la entrada.
+- **Grounding temporal en edición de vídeo**: localiza eventos concretos en una secuencia (mIoU/mAP en benchmarks como TimeLens), útil para herramientas de búsqueda y corte automático de clips.
+- **Moderación de contenido audiovisual**: el modo streaming permite evaluar fotogramas sucesivos y decidir si un contenido requiere revisión, aprovechando la decisión por fotograma del modelo.
+- **Accesibilidad y subtitulado automático**: el modo captioning por fotograma facilita la generación de descripciones para vídeo en directo, con la posibilidad de permanecer en silencio cuando no hay novedad relevante.
+- **Asistentes multimodales conversacionales**: con soporte de imagen única y múltiples imágenes y plantilla de chat, puede integrarse en asistentes que alternan texto e imágenes en una conversación multi-turno.
+- **Análisis de vídeo deportivo o de actividad (ego-video)**: su rendimiento en EgoSchema y MotionBench lo hace adecuado para interpretar movimiento y acciones en secuencias de primera persona.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card. Las celdas indican la configuracion entre parentesis (TC = modo codec con numero de lienzos; f = numero de fotogramas).
+Resultados publicados en la model card (OV2.5-4B en modo codec y modo frames, comparado con Qwen3.5-4B):
 
 | Benchmark | OV2.5-4B (codec) | OV2.5-4B (frames) | Qwen3.5-4B |
 |---|---|---|---|
-| VideoMME (sin subtitulos) | 71,9 | 69,7 | 71,7 |
-| VideoMME (con subtitulos) | 74,7 | 75,2 | 75,9 |
-| MotionBench | 64,2 (TC128) | 62,4 (128f) | 60,1 (128f) |
-| TOMATO | 36,0 (TC16) | 39,2 (16f) | 32,4 (16f) |
-| MVBench | 75,5 (TC64) | 72,0 (64f) | 64,0 (64f) |
-| NextQA MC test | 86,4 (TC64) | 86,1 (64f) | 80,7 (64f) |
-| TempCompass MC | 79,7 (TC64) | 75,8 (64f) | 73,4 (64f) |
-| Video-MME-v2 | 17,2 (TC64) | 16,4 (64f) | 15,5 (64f) |
-| EgoSchema subset | 79,8 (TC64) | 80,0 (64f) | 68,2 (64f) |
-| Video-Index | 23,1 (TC512) | 20,0 (1fps) | 19,6 (1fps) |
-| LVBench | 61,6 (TC1024) | 62,0 (950f) | 56,5 (2048f) |
-| MLVU dev | 77,1 (TC512) | 75,3 (512f) | 73,8 (512f) |
-| LongVideoBench val | 71,1 (TC768) | 69,0 (1280f) | 62,7 (700f) |
-| VideoEval-Pro | 64,6 (TC768) | 64,4 (950f) | 62,8 (2048f) |
-| TimeLens ActivityNet (mIoU) | 59,1 (TC128) | 58,8 (2048f) | 53,8 (2048f) |
-| TimeLens Charades (mIoU) | 61,3 (TC128) | 60,6 (2048f) | 48,1 (2048f) |
-| TimeLens QVHighlights (mIoU) | 70,3 (TC128) | 68,4 (2048f) | 67,5 (2048f) |
+| VideoMME (sin subtítulos) | **71,9** | 69,7 | 71,7 |
+| VideoMME (con subtítulos) | 74,7 | 75,2 | **75,9** |
+| MotionBench | **64,2** | 62,4 | 60,1 |
+| TOMATO | 36,0 | **39,2** | 32,4 |
+| MVBench | **75,5** | 72,0 | 64,0 |
+| NextQA MC test | **86,4** | 86,1 | 80,7 |
+| TempCompass MC | **79,7** | 75,8 | 73,4 |
+| Video-MME-v2 | **17,2** | 16,4 | 15,5 |
+| EgoSchema subset | 79,8 | **80,0** | 68,2 |
+| Video-Index | **23,1** | 20,0 | 19,6 |
+| LVBench | 61,6 | **62,0** | 56,5 |
+| MLVU dev | **77,1** | 75,3 | 73,8 |
+| LongVideoBench val | **71,1** | 69,0 | 62,7 |
+| VideoEval-Pro | **64,6** | 64,4 | 62,8 |
+| TimeLens ActivityNet (mIoU/mAP) | **59,1** | 58,8 | 53,8 |
+| TimeLens Charades (mIoU/mAP) | **61,3** | 60,6 | 48,1 |
+| TimeLens QVHighlights (mIoU/mAP) | **70,3** | 68,4 | 67,5 |
 
-No se han publicado en la informacion disponible resultados de benchmarks de texto puro (MMLU, GSM8K) ni de codigo (HumanEval).
+No se han publicado resultados de benchmarks de texto puro (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 5,25B parametros, en FP16 requiere aproximadamente 10,5 GB solo para pesos, mas el coste del vision tower y de la cache KV (que con 262.000 tokens de contexto puede ser muy elevada). En cuantizacion de 8 bits cabe en torno a 6-7 GB; en 4 bits, alrededor de 3-4 GB.
-- GPU recomendadas: A100 40/80 GB o H100 para contextos largos y video de muchos fotogramas; L40S o A10G para despliegues de produccion con contexto moderado.
-- Cabe en GPU de consumo: si, en tarjetas con 16-24 GB (RTX 4090, RTX 4080, RTX 3090) para FP16 con contexto reducido, y en 8-12 GB con cuantizacion agresiva.
-- Opciones de despliegue: transformers (libreria indicada en la model card, requiere `custom_code`); el soporte en vLLM, llama.cpp, Ollama o TGI no esta confirmado en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- **VRAM estimada para inferencia**: no disponible de forma oficial. Con 5,25B parámetros en safetensors (10,5 GB en fp16/bf16), se requiere aproximadamente 11 GB solo para los pesos en precisión completa; a ello hay que sumar la caché KV para contextos de hasta 262k tokens, que puede ser muy elevada.
+- **GPU recomendadas**: para contexto largo y vídeo, se recomiendan GPUs de datacenter con 40-80 GB (A100 40/80 GB, H100). Para contextos moderados, una RTX 4090 (24 GB) podría ser suficiente con cuantización.
+- **Consumer GPU**: no confirmado oficialmente. Por tamaño de pesos, cabría en GPUs de 16-24 GB en cuantización de 8 o 4 bits, pero el contexto de 262k y el procesamiento de vídeo pueden exceder la VRAM disponible.
+- **Opciones de despliegue**: la model card indica `transformers` con `custom_code` y `llava_onevision2_5`. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información proporcionada.
+- **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | VideoMME (sin subs) | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Vídeo streaming | Licencia | Rendimiento destacado |
 |---|---|---|---|---|---|
-| LLaVA-OneVision-2.5-4B-Instruct | 5,25B | 262.000 | 71,9 | Apache 2.0 | Modo streaming y codec integrados |
-| Qwen3.5-4B | No disponible | No disponible | 71,7 | No disponible | Referencia de la model card; mejor en VideoMME con subtitulos (75,9) |
-| Alternativas de 4B multimodales | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos adicionales en la informacion proporcionada |
+| LLaVA-OneVision-2.5-4B-Instruct | 5,25B | 262k | Sí (nativo) | Apache 2.0 | MVBench 75,5; LongVideoBench 71,1 |
+| Qwen3.5-4B | ~4B (no confirmado) | No disponible | No disponible | No disponible | VideoMME 75,9; MVBench 64,0 |
+| Alternativas de la familia LLaVA-OneVision | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-En los benchmarks de video largo y grounding temporal el modelo supera de forma consistente a Qwen3.5-4B (LVBench 61,6 frente a 56,5; LongVideoBench 71,1 frente a 62,7; TimeLens Charades 61,3 frente a 48,1), mientras que en VideoMME con subtitulos queda ligeramente por detras.
+La comparación directa con Qwen3.5-4B es la única disponible en la model card. En la mayoría de benchmarks de vídeo (MVBench, NextQA, TempCompass, LongVideoBench, TimeLens), OV2.5-4B supera a Qwen3.5-4B, mientras que este último obtiene mejores resultados en VideoMME con subtítulos.
 
 ## Limitaciones y advertencias
 
-- No se han publicado datos sobre sesgos conocidos; al ser un modelo multimodal entrenado con datos web, es probable que herede sesgos presentes en ellos.
-- Riesgo de alucinacion en descripciones de imagenes y video, especialmente en escenas ambiguas o con oclusiones; conviene validar las salidas en produccion.
-- El rendimiento en Video-MME-v2 es bajo en terminos absolutos (17,2), lo que sugiere dificultades en tareas de video de nueva generacion.
-- El modo streaming depende de ocho tokens de protocolo especificos; su uso incorrecto o fuera de la plantilla de chat puede degradar la calidad de las respuestas.
-- El contexto de 262.000 tokens implica un coste de cache KV elevado; en despliegues con muchos fotogramas puede requerir hardware de gama alta.
-- Idiomas soportados no declarados: no hay garantia de calidad multilingue fuera del ingles.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo requiere `custom_code` en transformers, lo que anade complejidad de integracion.
-- El informe tecnico y la pagina del proyecto estan pendientes de publicacion, por lo que faltan detalles sobre datos de entrenamiento y alineacion.
+- **Sesgos**: no se documentan sesgos específicos en la información disponible; al ser un modelo entrenado con datos web multimodales, es probable que herede sesgos de esos datos.
+- **Alucinación**: no se han publicado evaluaciones específicas de alucinación visual; en tareas de captioning y descripción de vídeo existe riesgo de generar contenido no presente en la imagen o el fotograma.
+- **Idiomas**: no se especifican los idiomas soportados; la model card está en inglés y chino, pero no se confirma el rendimiento multilingüe.
+- **Contexto**: aunque el contexto es de 262k tokens, el uso de contextos muy largos incrementa la VRAM necesaria y puede degradar la latencia.
+- **Licencia**: Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los componentes (torre de visión, LLM base) que no se detallan en la información disponible.
+- **Documentación incompleta**: el informe técnico y la página del proyecto aparecen como "coming soon"; no hay detalles de entrenamiento, cuantización ni tool calling.
+- **Soporte de ecosistema**: no se confirma compatibilidad con vLLM, llama.cpp u otros motores de inferencia, lo que puede complicar el despliegue en producción.
+- **Streaming**: el modo streaming requiere usar la plantilla de chat con `streaming=True`; un uso incorrecto de los tokens de protocolo puede provocar comportamientos inesperados.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/lmms-lab-encoder/LLaVA-OneVision-2.5-4B-Instruct
-- Repositorio GitHub: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2.5
-- Pagina del proyecto: pendiente de publicacion (segun la model card)
-- Informe tecnico: pendiente de publicacion (segun la model card)
-- README en chino: README_CN.md en el repositorio de Hugging Face
+- GitHub del proyecto: https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-2.5
+- Página del proyecto: próximamente (según la model card)
+- Informe técnico: próximamente (según la model card)

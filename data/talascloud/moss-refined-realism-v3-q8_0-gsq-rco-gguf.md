@@ -2,90 +2,104 @@
 
 ## Resumen
 
-MOSS Refined Realism v3 Q8_0 GSQ-RCO GGUF es una cuantización en formato GGUF del checkpoint de difusión Refined Realism v3.0, un modelo de texto a imagen ajustado a partir de OpenMOSS-Team/MOSS-Image-SFT. Lo publica el usuario TalasCloud y está pensado específicamente para ejecutarse en hardware modesto mediante koboldcpp y su pipeline multimedia, con un objetivo declarado de Windows sobre una AMD Radeon RX 580 de 8 GB (arquitectura Polaris) y un Intel Xeon E5-2696 v3.
+MOSS Refined Realism v3 Q8_0 GSQ-RCO es una cuantizacion GGUF del checkpoint de generacion de imagenes Refined Realism v3.0 de oreolove, construida sobre la arquitectura MOSS-Image de OpenMOSS. El modelo original es un checkpoint de difusion de 8 pasos orientado a la generacion de imagenes fotorrealistas, y esta version lo empaqueta en formato Q8_0 con calibracion especifica para hardware AMD Polaris (Radeon RX 580) mediante Vulkan. Lo publica el usuario TalasCloud, que mantiene un pipeline de conversion GGUF propio.
 
-El modelo conserva la arquitectura de difusión del checkpoint original, pero sus pesos se han convertido de BF16 a Q8_0 (185 tensores cuantizados, 193 en F32) y se han calibrado con una variante de cuantización GSQ/RCO sobre Vulkan. Según la model card, el error de proyección medido bajó de 9209 a 8958 en la carga de trabajo registrada, una métrica de calibración específica del modelo y no un benchmark de calidad de imagen.
+El interes practico de esta ficha es acotado: no se trata de un modelo de lenguaje, sino de un modelo de difusion texto-a-imagen cuantizado para inferencia local en GPUs de gama baja con 8 GB de VRAM. Su relevancia radica en que demuestra un flujo de cuantizacion GGUF aplicado a un modelo de difusion con calibracion por error de proyeccion, algo poco habitual en el ecosistema, y en que permite ejecutar un checkpoint de 5.082 millones de parametros en una RX 580.
 
-Su relevancia es acotada pero clara: demuestra que es posible ejecutar un modelo de difusión de unos 5.080 millones de parámetros en una GPU de consumo de gama baja con 8 GB de VRAM, siempre que se use el runtime adecuado y el pack completo de codificador de texto, tokenizer y VAE compatible con MOSS. No es un modelo de lenguaje ni un modelo multimodal conversacional, sino un generador de imágenes.
+La informacion disponible es limitada: la model card esta redactada en ingles y ruso, no declara idiomas soportados ni resultados de benchmarks de calidad de imagen, y la licencia es una licencia de permisos de creador de Civitai con restricciones. Todo dato no presente en la informacion proporcionada se marca como no disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusión para texto a imagen (base OpenMOSS-Team/MOSS-Image-SFT); detalles internos de la arquitectura no disponibles |
+| Arquitectura | Difusion (MOSS-Image, base OpenMOSS-Team/MOSS-Image-SFT); layout de tensores Q8_0 x 185, F32 x 193 |
 | Parametros totales | 5.082.308.608 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (no es un modelo de lenguaje; la ventana relevante es la del codificador de texto, no especificada) |
-| Tipos de cuantizacion | Q8_0 (185 tensores) y F32 (193 tensores) |
-| Idiomas soportados | No disponible (el prompt de texto depende del codificador de texto MOSS, no especificado) |
-| Licencia | civitai-creator-permissions (etiquetada como "other") |
-| Formato de pesos | GGUF (calibrado con Vulkan GSQ/RCO) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo texto-a-imagen) |
+| Tipos de cuantizacion | Q8_0 (unico archivo publicado); calibracion GSQ/RCO sobre Vulkan |
+| Idiomas soportados | no disponible (el prompt de texto depende del text encoder compatible, no declarado) |
+| Licencia | civitai-creator-permissions (license: other) |
+| Formato de pesos | GGUF (5.401.115.648 bytes, 5,40 GB); VAE companion en safetensors FP32 |
+| Pasos de inferencia | 8 pasos (checkpoint de 8-step) |
+| SHA-256 | 6778ae34feb1a294e3efcbe8120eb345a11514fa615356e323684beb0e522a91 |
+| Hardware objetivo | Windows, AMD Radeon RX 580 2048SP (Polaris, 8 GB), Intel Xeon E5-2696 v3 (Haswell, AVX2) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización del checkpoint Refined Realism v3.0 8-step de oreolove, a su vez derivado de OpenMOSS-Team/MOSS-Image-SFT. Se trata por tanto de un modelo de difusión para generación de imágenes a partir de texto, con un pipeline de 8 pasos de muestreo según la model card. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO, ya que la model card del cuantizador no los detalla.
+El modelo es un checkpoint de difusion para generacion de imagenes, derivado de MOSS-Image-SFT de OpenMOSS y refinado por oreolove como Refined Realism v3.0 en BF16 con muestreo de 8 pasos. No es un transformer autoregresivo ni un modelo de lenguaje: la model card lo describe explicitamente como "MOSS diffusion model" que requiere un text encoder, tokenizador y VAE compatibles de MOSS. El VAE se distribuye por separado como MOSS-Image-VAE-FP32-Safetensors.
 
-La innovación técnica destacable está en el proceso de cuantización: los pesos originales en BF16 se convirtieron a Q8_0 GGUF y se calibraron con GSQ/RCO sobre Vulkan, reteniendo cambios de proyección que redujeron el error medido. El autor documenta el método y los datos de la prueba en un repositorio de GitHub (gguf-converter v1.9.0). El resultado es un archivo de 5,4 GB que cabe en 8 GB de VRAM y se ejecuta sobre la RX 580 mediante el runtime multimedia de koboldcpp.
+La innovacion tecnica de esta publicacion concreta es el proceso de cuantizacion: el checkpoint BF16 original se convirtio a GGUF Q8_0 y se calibro con GSQ/RCO sobre Vulkan para el hardware objetivo. El autor reporta una reduccion del error de proyeccion de 9.209 a 8.958 sobre la muestra de trabajo registrada, y senala que la build publicada conserva los cambios de proyeccion que redujeron el error medido, difiriendo del candidato inicial con todas las proyecciones. No se detalla la composicion del dataset de entrenamiento original, el numero de tokens ni si hubo etapas de RLHF o DPO; esos datos no estan disponibles en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de imágenes a partir de prompts de texto mediante un pipeline de difusión de 8 pasos.
-- Ejecución en GPU de gama baja con Vulkan: el autor la valida en una AMD Radeon RX 580 2048SP de 8 GB.
-- Compatibilidad con koboldcpp y el media runtime del autor (versión v2026.11.17-r5).
-- Requiere un codificador de texto, tokenizer y VAE compatibles con MOSS, que no se incluyen en el repo.
-- No soporta tool calling, function calling ni razonamiento multi-paso: no es un modelo de lenguaje.
-- No dispone de modo thinking, visión, audio ni capacidades multilingües declaradas.
-- El modelo está etiquetado como "not-for-all-audiences", lo que sugiere contenido para adultos en su ajuste.
+- Generacion de imagenes texto-a-imagen con muestreo de 8 pasos.
+- Orientacion a fotorrealismo ("Refined Realism"), segun la denominacion del checkpoint base.
+- Inferencia local en GPU AMD Polaris mediante backend Vulkan.
+- Ejecucion en entornos de 8 GB de VRAM gracias a la cuantizacion Q8_0.
+- Integracion en el pipeline de medios de koboldcpp (runtime koboldcpp-media-pipeline).
+- Requiere componentes externos: text encoder, tokenizador y VAE compatibles con MOSS.
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: no es un modelo de lenguaje.
+- Capacidades multilingues del prompt: no disponibles (dependen del text encoder, no declarado).
+- No dispone de modo thinking, vision de entrada ni audio.
 
 ## Casos de uso
 
-- Generación de imágenes en equipos con GPU de 8 GB: el formato Q8_0 y la calibración Vulkan permiten ejecutar el modelo en una RX 580 sin necesidad de GPU profesional, usando koboldcpp como runtime.
-- Prototipado de pipelines de texto a imagen en local: útil para desarrolladores que quieran validar un flujo de difusión completo (codificador de texto, tokenizer, VAE y diffuser) sin depender de servicios en la nube.
-- Pruebas de cuantización y calibración: sirve como caso de estudio reproducible para evaluar el impacto de GSQ/RCO en la calidad de imagen frente al checkpoint BF16 original.
-- Integración en herramientas de creación de contenido para adultos: el etiquetado "not-for-all-audiences" y el ajuste de realismo apuntan a este uso, siempre que se respete la licencia civitai-creator-permissions.
-- Benchmarking de hardware antiguo: permite medir latencia y throughput de un modelo de 5.080 millones de parámetros en Polaris y Haswell, con datos de error de proyección documentados por el autor.
-- Despliegue en entornos Windows sin CUDA: al usar Vulkan, es una alternativa para estaciones de trabajo con GPU AMD que no pueden aprovechar stacks basados en CUDA.
+- Generacion de imagenes fotorrealistas en equipos de gama baja: el modelo permite producir imagenes con 8 pasos de muestreo en una RX 580 de 8 GB, un escenario donde la mayoria de checkpoints de difusion de este tamano no caben sin cuantizar.
+- Prototipado local sin conexion: al ejecutarse sobre Vulkan en Windows con un runtime local, sirve para iterar prompts y estilos sin depender de servicios en la nube ni de tarjetas NVIDIA.
+- Pruebas de pipelines de cuantizacion: el flujo GSQ/RCO con metrica de error de proyeccion es util como referencia para quien quiera cuantizar otros modelos de difusion a GGUF y medir la degradacion.
+- Renderizado por lotes en estaciones de trabajo antiguas: con un Xeon E5-2696 v3 y una Polaris, se puede montar un nodo de generacion de imagenes de bajo coste para tareas internas.
+- Generacion de material visual para entornos controlados: la licencia de permisos de creador de Civitai condiciona el uso, por lo que encaja en proyectos personales o internos que respeten esos terminos.
+- Evaluacion comparativa de calidad Q8_0 frente a BF16: permite medir en la practica cuanto pierde un checkpoint de difusion al pasar de BF16 a Q8_0 con calibracion, usando el error de proyeccion reportado como punto de partida.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad de imagen (FID, CLIP score, etc.) en la información disponible. El único dato numérico aportado por el autor es una métrica interna de calibración: el error de proyección pasó de 9209 a 8958 en la carga de trabajo registrada, comparando el candidato inicial con todas las proyecciones frente al archivo final. Esta cifra no es comparable con benchmarks estándar y no debe interpretarse como una medida de calidad visual.
+No se han publicado resultados de benchmarks de calidad de imagen (FID, CLIP score, etc.) en la informacion disponible. El unico dato de rendimiento reportado es la metrica interna de calibracion:
+
+| Metrica | Valor |
+|---|---|
+| Error de proyeccion (antes de calibracion) | 9.209 |
+| Error de proyeccion (tras calibracion GSQ/RCO) | 8.958 |
+| Tamano del GGUF | 5,40 GB (5.401.115.648 bytes) |
+| Pasos de muestreo | 8 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 8 GB para el diffuser en Q8_0, dado que el autor lo ejecuta en una RX 580 de 8 GB. El tamaño del repo es de 5,4 GB.
-- GPU validadas por el autor: AMD Radeon RX 580 2048SP (Polaris, 8 GB) sobre Vulkan.
+- VRAM estimada: en torno a 8 GB para el difusor en Q8_0, segun el hardware objetivo declarado (RX 580 2048SP de 8 GB); el VAE y el text encoder anaden consumo adicional no cuantificado en la informacion disponible.
+- GPU recomendadas por el autor: AMD Radeon RX 580 2048SP (Polaris). No se mencionan otras GPU.
+- Cabe en GPU de consumo: si, al menos en la RX 580 de 8 GB citada; no se confirma compatibilidad con otras consumer GPU.
 - CPU de referencia: Intel Xeon E5-2696 v3 (Haswell, AVX2).
 - Sistema operativo objetivo: Windows.
-- Cabe en GPU de consumo de gama baja con 8 GB; no se documenta compatibilidad con otras GPU (NVIDIA, Intel) ni con CUDA, ROCm o Metal.
-- Opciones de despliegue: koboldcpp con el media runtime del autor (v2026.11.17-r5). No se mencionan vLLM, llama.cpp estándar, Ollama ni TGI, que además no son aplicables a un modelo de difusión.
+- Opciones de despliegue: koboldcpp con el runtime koboldcpp-media-pipeline (release v2026.11.17-r5) y backend Vulkan. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este modelo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Formato | Contexto / pasos | Licencia | Disponibilidad |
+| Modelo | Parametros | Formato | Pasos | Licencia | Hardware objetivo |
 |---|---|---|---|---|---|
-| MOSS Refined Realism v3 Q8_0 GSQ-RCO | 5.082.308.608 | GGUF Q8_0 + F32 | 8 pasos de muestreo | civitai-creator-permissions | Hugging Face (TalasCloud) |
-| Refined Realism v3.0 8-step (BF16) | No disponible | BF16 | 8 pasos de muestreo | No disponible | Civitai (oreolove) |
-| OpenMOSS-Team/MOSS-Image-SFT | No disponible | No disponible | No disponible | No disponible | Hugging Face (OpenMOSS-Team) |
+| MOSS Refined Realism v3 Q8_0 (esta ficha) | 5.082 M | GGUF Q8_0 | 8 | civitai-creator-permissions | RX 580 8 GB, Vulkan |
+| Refined Realism v3.0 BF16 (oreolove) | no disponible | BF16 | 8 | civitai-creator-permissions | no disponible |
+| OpenMOSS-Team/MOSS-Image-SFT (base) | no disponible | safetensors | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento comparables entre estas variantes, por lo que la comparativa se limita a formato, origen y licencia.
+No se dispone de datos de benchmarks que permitan comparar la calidad de salida frente a alternativas de la misma categoria; la comparativa se limita a formato, licencia y hardware.
 
 ## Limitaciones y advertencias
 
-- El modelo está etiquetado como "not-for-all-audiences"; su ajuste de realismo y el ecosistema Civitai sugieren contenido para adultos. Requiere moderación si se usa en productos de consumo.
-- La licencia civitai-creator-permissions impone condiciones específicas del creador original; es imprescindible revisar el enlace de licencia antes de cualquier uso comercial.
-- No se incluyen codificador de texto, tokenizer ni VAE en el repo; sin ellos el modelo no es funcional.
-- La compatibilidad está validada únicamente en Windows con RX 580 y Vulkan mediante el runtime del autor; otros backends no están documentados.
-- El único dato de calidad es una métrica interna de error de proyección (9209 a 8958), no un benchmark de calidad de imagen; no hay evidencia pública de fidelidad visual frente al BF16.
-- Riesgo de sesgos y de alucinación visual (artefactos, anatomía incorrecta, texto ilegible) inherente a los modelos de difusión; no se documentan evaluaciones al respecto.
-- El repo tiene 0 descargas y 0 likes en el momento de la ficha, por lo que no hay validación comunitaria independiente.
-- No hay información sobre idiomas soportados en los prompts ni sobre el rendimiento del codificador de texto MOSS.
+- Contenido marcado como "not-for-all-audiences": el modelo puede generar material no apto para todo publico.
+- Licencia civitai-creator-permissions: impone restricciones de uso derivadas de los permisos del creador en Civitai; es imprescindible revisar los terminos antes de cualquier uso comercial o redistribucion.
+- No es un modelo de lenguaje: no admite instrucciones conversacionales, tool calling ni razonamiento; cualquier expectativa en ese sentido es un error de uso.
+- Dependencia de componentes externos no incluidos: se necesitan text encoder, tokenizador y VAE compatibles con MOSS; sin ellos el GGUF no es utilizable.
+- Calibracion especifica para un hardware concreto (RX 580, Vulkan): el rendimiento y la fidelidad pueden variar en otras GPU o backends.
+- La metrica de error de proyeccion es una medida de ajuste de calibracion, no una garantia de calidad visual; no se aportan evaluaciones perceptuales.
+- Riesgo de artefactos y sesgos propios del checkpoint de difusion original: no se documentan sesgos conocidos en la informacion disponible.
+- Idiomas del prompt no declarados; el comportamiento multilingue depende del text encoder empleado.
+- Repositorio con 199 descargas y 0 likes: validacion comunitaria muy baja, sin evidencia de uso en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/TalasCloud/MOSS-Refined-Realism-v3-Q8_0-GSQ-RCO-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
+- Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
+- VAE companion: https://huggingface.co/TalasCloud/MOSS-Image-VAE-FP32-Safetensors
 - Checkpoint original en Civitai: https://civitai.red/models/3013588?modelVersionId=3457856
-- Runtime multimedia (koboldcpp-media-pipeline v2026.11.17-r5): https://github.com/aktalascloud/koboldcpp-media-pipeline/releases/tag/v2026.11.17-r5
-- Método de calibración y datos de la prueba: https://github.com/aktalascloud/gguf-converter/blob/v1.9.0/benchmarks/2026-11-17-whole-gsq-rco-rx580.json
-- Enlace de licencia: https://civitai.red/models/3013588?modelVersionId=3457856
+- Repositorio del conversor GGUF: https://github.com/aktalascloud/gguf-converter
+- Datos de calibracion: https://github.com/aktalascloud/gguf-converter/blob/v1.9.0/benchmarks/2026-11-17-whole-gsq-rco-rx580.json
+- Runtime de medios koboldcpp: https://github.com/aktalascloud/koboldcpp-media-pipeline/releases/tag/v2026.11.17-r5

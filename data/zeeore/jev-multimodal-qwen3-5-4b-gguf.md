@@ -2,108 +2,115 @@
 
 ## Resumen
 
-JEV Multimodal Qwen3.5-4B GGUF es la conversion a formato GGUF del checkpoint fusionado `ZeeoRe/jev-multimodal-qwen3.5-4b`, una adaptacion del modelo base Qwen3.5-4B (4.207.724.037 parametros) orientada a la toma de decisiones tipadas en lugar de a la generacion libre de texto. El modelo incorpora cabezas de decision y localizacion especificas (candidate head y single-box decision head) que se mantienen en FP32 incluso en la variante cuantizada Q8_0, y un codificador visual nativo empaquetado aparte en `mmproj-BF16.gguf`.
+JEV Multimodal Qwen3.5-4B GGUF es la conversión al formato GGUF del checkpoint nativo fusionado `ZeeoRe/jev-multimodal-qwen3.5-4b`, un modelo multimodal de 4.207.724.037 parámetros construido sobre una base Qwen3.5 de 4B. Lo desarrolla el usuario ZeeoRe y se distribuye con licencia Apache 2.0. No es un modelo conversacional al uso: se presenta como un "modelo de decisión" (decision model) orientado a toma de decisiones tipadas sobre texto, imagen y vídeo visual, con cabezas de decisión específicas que no expone un cargador GGUF estándar.
 
-La propuesta del autor es un "motor de decision local": en lugar de conversar, el modelo recibe un estado (texto, imagen o video visual) y devuelve una decision estructurada entre candidatos, una puntuacion graduada o una caja delimitadora. Esta pensado para integrarse en pipelines de enrutamiento, clasificacion y grounding visual, no como chatbot generalista.
+La relevancia de esta ficha radica en que el artefacto no funciona con llama.cpp convencional ni con un endpoint de chat al uso: requiere el runtime específico `llama.cpp-jev`, que implementa las cabezas de decisión. El repositorio incluye varias cuantizaciones (BF16, Q8, Q4, Q3, mezclas calibradas IQ2/IQ3 y un experimento extremo Q1) con métricas de precisión medidas por el autor, lo que permite evaluar el compromiso entre tamaño y exactitud antes de desplegar.
 
-Es relevante porque combina un backbone de 4B con cabezas especializadas y un runtime propio (`llama.cpp-jev`) que expone el endpoint `/v1/systemone`, algo que ni un servidor de chat estandar ni un cargador GGUF convencional pueden ofrecer. La licencia Apache-2.0 y el soporte de cuantizacion BF16/Q8_0 facilitan su despliegue en hardware de gama media, aunque el ecosistema de herramientas es todavia muy restringido.
+El modelo está etiquetado como "system-1", lo que sugiere un enfoque de decisión rápida y reactiva más que de razonamiento multi-paso deliberativo. Los idiomas declarados son inglés y chino. El tamaño del repositorio es de 48,6 GB, aunque cada archivo individual de cuantización ocupa entre 0,624 GiB (Q1) y 4,811 GiB (Q8_0).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (backbone Qwen3.5-4B) con cabezas de decision y localizacion FP32 anadidas |
+| Arquitectura | Transformer multimodal (base Qwen3.5-4B) con cabezas de decisión personalizadas; detalles completos no disponibles |
 | Parametros totales | 4.207.724.037 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 16.384 tokens nativos; el ejemplo de despliegue usa 8.192 |
-| Tipos de cuantizacion | BF16 (backbone) y Q8_0 (backbone); cabezas de decision siempre FP32; proyector visual BF16 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (las evaluaciones del autor usan contexto 2.048) |
+| Tipos de cuantizacion | BF16, Q8_0, Q4_K_M (cabezas FP32 y cabezas Q8_0), Q4_0, Q3_K_M, SSM8-IQ3_XXS, IQ2_XS-SSM4, Q1_0 (experimento extremo) |
 | Idiomas soportados | en, zh |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp) y safetensors en el modelo base |
-| Tamano del repo | 13,6 GB |
-| Codificador visual | `mmproj-BF16.gguf` (obligatorio para imagen y video) |
-| Runtime requerido | `llama.cpp-jev` (commit fijado en `provenance.json`) |
-| Modalidades de entrada | texto, imagen, video (solo visual, sin audio) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (llama_cpp); proyector multimodal en `mmproj-Q4_0.gguf` |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-4B, un transformer denso de aproximadamente 4,2 mil millones de parametros, y le anade un conjunto de cabezas de decision entrenadas sobre el backbone. La adaptacion se realizo mediante PEFT y posteriormente se fusiono con `merge_and_unload`, generando el checkpoint nativo v1 final que despues se convirtio a GGUF. La arquitectura conserva el codificador visual nativo de Qwen3.5 y un "visual merger" entrenado que proyecta las representaciones visuales al espacio del backbone; ambos se distribuyen en `mmproj-BF16.gguf`.
+La información disponible indica que se trata de una conversión GGUF de un checkpoint nativo fusionado basado en Qwen3.5-4B, con soporte multimodal para texto, imagen y vídeo (vídeo visual únicamente, sin audio). El modelo incorpora cabezas de decisión específicas que producen "decisiones tipadas" y cajas delimitadoras (box grounding), lo que explica que un cargador GGUF estándar no las exponga. La model card menciona además una variante "SSM8" en una de las cuantizaciones, lo que sugiere componentes de tipo state space en parte de la arquitectura, aunque no se detalla su función.
 
-El entrenamiento especifico de las cabezas de decision no esta documentado en la informacion disponible: no se indican numero de tokens, composicion del dataset ni si hubo RLHF o DPO. El autor senala explicitamente que se trata de una adaptacion abierta de un motor de decision local y no de una reproduccion de la receta de entrenamiento interna de Jev. La innovacion tecnica principal es el protocolo de decision tipada: preguntas de tipo `choice` (seleccion entre candidatos, con verificacion de hasta 77 candidatos), preguntas de tipo `score` (hasta 45 niveles) y preguntas de tipo `box` (una caja delimitadora sobre imagen o video). El runtime `llama.cpp-jev` expone este protocolo mediante el endpoint `/v1/systemone`.
+En cuanto al entrenamiento, el autor describe un proceso de destilación de profesor (teacher distillation) con cohortes de 744 y 10.496 filas, aplicado sobre los pesos cuantizados para preservar el backbone original, el emparejamiento visual, los formatos de cabeza y el tamaño total. No se especifica el número de tokens de entrenamiento, la composición del dataset, ni si hubo RLHF o DPO. Las métricas publicadas se obtuvieron sobre 900 decisiones y 128 entradas positivas de caja única, con contexto 2.048 y cuatro fotogramas de vídeo silenciosos, y el autor advierte explícitamente que son comprobaciones de desarrollo reutilizadas, no un benchmark ciego nuevo.
 
 ## Capacidades
 
-- Decision tipada entre candidatos (`choice`) con instrucciones y criterios definidos por el usuario.
-- Puntuacion graduada (`score`) con hasta 45 niveles.
-- Localizacion visual de una caja (`box`) sobre imagenes y video visual.
-- Procesamiento de texto, imagen y video (solo pista visual, sin audio).
-- Enrutamiento de casos: el ejemplo oficial clasifica una reclamacion de facturacion entre equipos de billing y technical.
-- Grounding visual con coordenadas de caja y metrica de calidad (IoU).
-- Capacidades multilingues limitadas a ingles y chino.
-- No soporta tool calling generico ni function calling al estilo OpenAI; la interfaz es el endpoint de decision.
-- No es un modelo conversacional: el pipeline declarado es `other`, no `text-generation`.
+- Toma de decisiones tipadas sobre texto, imagen y vídeo visual (visual-only), con salidas estructuradas propias del runtime `llama.cpp-jev`.
+- Grounding visual: detección de caja única con métrica Acc@IoU≥0.5 reportada por el autor.
+- Procesamiento de vídeo mediante fotogramas (las evaluaciones usan cuatro fotogramas silenciosos).
+- Modo de decisión "system-1": respuestas rápidas y reactivas, sin cadena de razonamiento deliberativa documentada.
+- Soporte multilingüe limitado a inglés y chino.
+- No se documenta soporte de tool calling ni de function calling en el sentido de APIs conversacionales estándar.
+- No se documenta soporte de agentes multi-paso ni modo "thinking".
+- No se documenta soporte de audio.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo recibe el texto del ticket como `state` y devuelve la etiqueta del equipo adecuado mediante una pregunta `choice` con criterios, sustituyendo reglas heuristicas por una decision aprendida.
-- Triaje de reclamaciones de facturacion: clasificacion binaria o multiclase de incidencias (cobro duplicado, reembolso, bug tecnico) usando el mismo protocolo de decision, apto para integrarse en un backend HTTP.
-- Grounding en pipelines de vision: dada una imagen y una instruccion textual, el modelo devuelve una caja delimitadora, util para anotacion asistida, recorte automatico o verificacion de detecciones de un detector previo.
-- Analisis de video de vigilancia o inspeccion: al aceptar video visual, puede decidir sobre frames o secuencias (por ejemplo, presencia de un objeto) sin necesidad de un pipeline separado de extraccion de frames.
-- Clasificacion de documentos escaneados: combinando imagen y texto, decide la categoria del documento (factura, contrato, identificacion) con una pregunta `choice`.
-- Control de calidad en produccion industrial: puntuacion graduada (`score`) de defectos visuales sobre imagenes de linea de montaje, con umbral configurable.
-- Moderacion visual asistida: decision binaria sobre imagenes con criterios explicitos en las instrucciones, manteniendo la logica de decision auditable en el prompt.
+- Moderación y clasificación visual automatizada: el modelo puede emitir decisiones tipadas sobre imágenes con cajas de localización, útil para pipelines de revisión de contenido donde se necesita señalar la región relevante además de la etiqueta.
+- Inspección de vídeo en entornos embebidos: con la cuantización IQ2_XS-SSM4 (1,840 GiB) y cuatro fotogramas por muestra, encaja en dispositivos con poca memoria para tareas de decisión sobre secuencias cortas de vídeo.
+- Grounding en interfaces de usuario: la salida de caja única permite localizar elementos en capturas de pantalla, lo que sirve para automatización de pruebas o asistentes de accesibilidad que necesitan referenciar regiones concretas.
+- Clasificación de documentos escaneados bilingües (en/zh): el soporte de imagen y de ambos idiomas permite decidir categorías sobre formularios o tickets sin pipeline OCR separado.
+- Robótica y sistemas reactivos de baja latencia: el enfoque "system-1" y los tamaños reducidos (Q3_K_M de 2,489 GiB, Q4_K_M de 2,902 GiB) son adecuados para bucles de decisión donde prima la latencia sobre el razonamiento profundo.
+- Evaluación comparativa de cuantizaciones en investigación: el repositorio publica métricas por configuración (exactitud de decisión, Acc@IoU, NLL) con parches reproducibles, lo que permite estudiar el impacto de la cuantización en cabezas de decisión multimodales.
+- Despliegue en hardware de consumo con validación previa: la tabla del autor permite elegir entre Q8_0 (78,22% H) y IQ2_XS-SSM4 (75,92% H con runtime corregido) según la memoria disponible, con una penalización de exactitud cuantificada.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados corresponden a la evaluacion historica del checkpoint v1 final sin fusionar, no a los GGUF convertidos. El autor indica que la conversion se verifico por fidelidad de comportamiento, no con una nueva evaluacion completa.
+El autor publica métricas propias de decisión y grounding, no benchmarks estándar de NLP (no hay MMLU, HumanEval ni GSM8K). Se reproducen a continuación las cifras de la model card.
 
-| Metrica | Valor | Denominador |
-|---|---:|---:|
-| Precision de decision (errores contados como incorrectos) | 84,4934% | 151.581 |
-| Precision de decision en casos validos | 84,8831% | 151.089 |
-| Single-box Acc@IoU >= 0,5 | 90,2967% | 30.969 |
-| Single-box IoU medio | 0,811447 | 30.969 |
+| Configuracion | Filas de entrenamiento | Tamano (GiB) | H (runtime previo) | Exactitud de decision | Box Acc@IoU>=0.5 | NLL |
+|---|---:|---:|---:|---:|---:|---:|
+| Q8_0 | 10.496 | 4,811 | 78,22% | 82,67% | 74,22% | 0,42528 |
+| Q4_K_M (cabezas FP32) | 10.496 | 2,902 | 77,53% | 82,11% | 73,44% | 0,43613 |
+| Q4_K_M (cabezas Q8_0) | 10.496 | 2,897 | 77,19% | 82,33% | 72,66% | 0,43957 |
+| Q4_0 | 10.496 | 2,718 | 77,13% | 83,22% | 71,88% | 0,44634 |
+| Q3_K_M | 744 | 2,489 | 75,77% | 81,11% | 71,09% | 0,45956 |
+| SSM8-IQ3_XXS | 10.496 | 2,150 | 72,85% | 80,67% | 66,41% | 0,47942 |
+| IQ2_XS-SSM4 | 744 | 1,840 | 75,58% | 80,67% | 71,09% | 0,51264 |
+| Q1_0 (extremo) | 744 | 0,624 | 2,98% | 31,89% | 1,56% | 1,47375 |
 
-Se registraron 492 entradas de decision invalidas que permanecen en el denominador total. El autor advierte que la tarea comun de test se uso en diagnostico historico y que estos resultados no son cifras oficiales de ningun leaderboard upstream. No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks de razonamiento general en la informacion disponible.
+Tras la corrección del runtime (2026-11-25), solo dos configuraciones tienen reevaluación completa con el mismo conjunto de pesos:
+
+| Configuracion | Exactitud de decision (antes -> despues) | Box Acc@IoU>=0.5 | H (antes -> despues) | Entradas validas (antes -> despues) | NLL (900 decisiones) |
+|---|---:|---:|---:|---:|---:|
+| Q4_K_M (cabezas FP32) | 82,11% -> 82,78% | 73,44% | 77,53% -> 77,83% | 1.019 -> 1.028 | 0,44147 |
+| IQ2_XS-SSM4 | 80,67% -> 81,44% | 71,09% | 75,58% -> 75,92% | 1.019 -> 1.028 | 0,51908 |
+
+El autor advierte que estas cifras provienen de comprobaciones de desarrollo reutilizadas, no de un benchmark ciego, y que no son mediciones en Android ni iPhone.
 
 ## Requisitos de hardware
 
-- VRAM estimada: la variante Q8_0 ronda los 4,5 GB de pesos del backbone mas el proyector visual BF16 y las cabezas FP32; en la practica, entre 6 y 8 GB de VRAM para contexto de 8.192 tokens con `-ngl 999`.
-- La variante BF16 requiere aproximadamente el doble de memoria para los pesos (en torno a 8,5 GB), por lo que necesita 10-12 GB de VRAM para operar comodamente.
-- GPU recomendadas: RTX 4090, RTX 4080, RTX 3090, A100, H100. Cabe en GPUs de consumo con 8 GB o mas en Q8_0 (RTX 3060 Ti, RTX 4060 Ti 16 GB, RTX 3070).
-- Despliegue: exclusivamente mediante `llama.cpp-jev` (commit fijado en `provenance.json`). No es compatible con vLLM, TGI, Ollama ni llama.cpp upstream, porque el endpoint `/v1/systemone` y las cabezas de decision no estan expuestos en esos runtimes.
-- Parametros de ejemplo del autor: `-ngl 999 --fit off -c 8192 -b 1024 -ub 1024 -np 1`.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente el tamaño del archivo GGUF más el proyector `mmproj-Q4_0.gguf` y el contexto. Las opciones van de 0,624 GiB (Q1_0, inutilizable en la práctica por su 2,98% de H) a 4,811 GiB (Q8_0).
+- Configuraciones prácticas: IQ2_XS-SSM4 (1,840 GiB), SSM8-IQ3_XXS (2,150 GiB), Q3_K_M (2,489 GiB), Q4_0 (2,718 GiB), Q4_K_M (2,902 GiB) y Q8_0 (4,811 GiB).
+- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cualquier GPU consumer con 6-8 GB o más de VRAM debería alojar las cuantizaciones Q4 y Q8; las A100/H100 no son necesarias para estos tamaños.
+- Cabe en GPU consumer: sí, al menos desde Q4_K_M hacia abajo en GPUs de 8 GB; IQ2_XS-SSM4 y SSM8-IQ3_XXS en GPUs de 4-6 GB.
+- Opciones de despliegue: exclusivamente el runtime `llama.cpp-jev` (fork de llama.cpp con soporte de cabezas de decisión). No funciona con llama.cpp estándar, Ollama, vLLM ni TGI según la model card.
+- Latencia y throughput: no disponible. Las evaluaciones usan contexto 2.048 y cuatro fotogramas de vídeo, pero no se publican cifras de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Runtime |
-|---|---|---|---|---|---|
-| JEV Multimodal Qwen3.5-4B GGUF | 4,2B | 16.384 | texto, imagen, video | Apache-2.0 | llama.cpp-jev (exclusivo) |
-| Qwen3.5-4B (base) | 4,2B | no disponible | texto (y variantes multimodales) | Apache-2.0 | llama.cpp, vLLM, TGI, Ollama |
-| Qwen2.5-VL-3B | ~3,7B | no disponible | texto, imagen, video | Apache-2.0 | vLLM, llama.cpp, TGI |
-| PaliGemma 2 (3B) | ~3B | no disponible | texto, imagen | Gemma license | Transformers, vLLM |
+No se dispone de datos de benchmarks comparables de otros modelos en la información proporcionada, por lo que la comparación se limita a características estructurales.
 
-La diferencia clave frente a los alternativas es la interfaz: JEV no genera texto libre sino decisiones tipadas con cabezas dedicadas, lo que mejora la precision en tareas de clasificacion y grounding pero sacrifica portabilidad y ecosistema. Qwen2.5-VL-3B ofrece grounding y video con un runtime estandar (vLLM, llama.cpp), mientras que JEV exige un fork especifico. PaliGemma 2 es comparable en tamano y tareas visuales, pero su licencia no es Apache-2.0.
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Runtime |
+|---|---|---|---|---|---|
+| JEV Multimodal Qwen3.5-4B GGUF | 4,207.724.037 | no disponible (evaluado a 2.048) | Texto, imagen, vídeo visual | Apache 2.0 | llama.cpp-jev (específico) |
+| Qwen3.5-4B (base declarada) | ~4B | no disponible | no disponible | no disponible | llama.cpp estándar |
+| Alternativas de grounding visual de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La comparativa con modelos de la misma categoría (decisión multimodal con grounding) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no funciona con cargadores GGUF estandar ni con endpoints de chat convencionales: requiere el runtime `llama.cpp-jev` en el commit exacto indicado en `provenance.json`.
-- Solo soporta ingles y chino; no hay capacidades documentadas en castellano ni en otros idiomas.
-- El contexto nativo es de 16.384 tokens, pero el ejemplo de despliegue lo reduce a 8.192; contextos mayores pueden degradar la calidad.
-- El video es solo visual: no procesa audio.
-- Riesgo de alucinacion en las decisiones: la precision historica es del 84,5%, con un 15,5% de errores, insuficiente para decisiones criticas sin supervision humana.
-- Las metricas publicadas corresponden al checkpoint v1 sin fusionar; los GGUF solo se verificaron por fidelidad de conversion, no con una reevaluacion completa.
-- El modelo no es conversacional y no soporta tool calling generico; integrarlo en un agente requiere envolver el endpoint `/v1/systemone` con logica propia.
-- El repositorio tiene 0 descargas y 0 likes, sin validacion de la comunidad; el ecosistema de herramientas es practicamente inexistente.
-- El autor declara explicitamente que no reproduce la receta de entrenamiento interna de Jev ni son pesos propietarios oficiales.
-- La licencia Apache-2.0 permite uso comercial, pero la dependencia del fork de llama.cpp debe auditarse por separado.
+- El modelo no funciona con llama.cpp estándar ni con endpoints de chat convencionales: requiere el runtime `llama.cpp-jev` y, para los resultados corregidos, el parche de runtime validado (MIT) sobre el commit fijado. El commit sin parche mantiene el fallo de carga de vídeo.
+- La cuantización Q1_0 es un experimento extremo con 2,98% de H y 31,89% de exactitud de decisión: no es apta para uso real.
+- Las métricas publicadas son comprobaciones de desarrollo reutilizadas, no un benchmark ciego ni independiente; el autor lo indica explícitamente.
+- Solo dos de las ocho configuraciones tienen reevaluación completa con el runtime corregido; el resto está marcado como "Not rerun".
+- Idiomas limitados a inglés y chino; no se declara soporte de español.
+- No se documentan sesgos conocidos ni tasas de alucinación. Al ser un modelo de decisión con salidas tipadas, el riesgo principal es la clasificación errónea y el fallo de grounding, no la generación libre de texto.
+- No se documenta soporte de tool calling, agentes multi-paso ni modo de razonamiento deliberativo.
+- La licencia Apache 2.0 permite uso comercial, pero la dependencia del runtime específico y del parche condiciona la reproducibilidad en producción.
+- El repositorio ocupa 48,6 GB en total; conviene descargar solo el archivo de cuantización y el proyector necesarios.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/ZeeoRe/jev-multimodal-qwen3.5-4b-GGUF
-- Modelo base fusionado: https://huggingface.co/ZeeoRe/jev-multimodal-qwen3.5-4b
-- Modelo base original Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
-- Runtime de decision llama.cpp-jev: https://github.com/2351548518/llama.cpp-jev
-- Runtime original Laya: https://github.com/NandhaKishorM/laya
-- Documentacion de PEFT merge_and_unload: https://huggingface.co/docs/peft/package_reference/peft_model
+- Hugging Face (GGUF): https://huggingface.co/ZeeoRe/jev-multimodal-qwen3.5-4b-GGUF
+- Modelo base: https://huggingface.co/ZeeoRe/jev-multimodal-qwen3.5-4b
+- Runtime de decisión: https://github.com/2351548518/llama.cpp-jev
+- Informe de reevaluación del runtime: `./recovery/runtime-fixed-evaluation.json` (en el repositorio)
+- CSV comparativo: `./recovery/runtime-fixed-comparison.csv` (en el repositorio)
+- Parche de runtime reproducible: `./recovery/runtime-fixes.patch` (licencia MIT, `./recovery/runtime-fixes.LICENSE`)
+- Descarga de la pareja IQ2 seleccionada: `hf download ZeeoRe/jev-multimodal-qwen3.5-4b-GGUF recovery/jev-multimodal-qwen3.5-4b-IQ2_XS-SSM4-heads-Q8_0.gguf mmproj-Q4_0.gguf --local-dir jev-selected`

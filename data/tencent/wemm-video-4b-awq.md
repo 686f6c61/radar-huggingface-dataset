@@ -2,48 +2,50 @@
 
 ## Resumen
 
-WeMM-Video-4B-AWQ es la variante cuantizada del modelo multimodal WeMM-Video-4B de Tencent, una familia bilingüe chino-inglés diseñada para comprensión y razonamiento conjuntos de audio y vídeo. El modelo acepta texto, imágenes, audio y vídeo como entradas y genera respuestas de texto, combinando fotogramas de vídeo con la banda sonora original para describir eventos, transcribir voz y razonar sobre lo que se ve y se oye. Esta versión AWQ W4A16 reduce el peso de los ficheros a 7,32 GiB mediante cuantización INT4 de grupo 128 sobre las proyecciones feed-forward del modelo de lenguaje.
+WeMM-Video-4B-AWQ es la variante cuantizada en AWQ W4A16 del modelo WeMM-Video-4B, desarrollado por Tencent. Se trata de un modelo multimodal bilingue chino-ingles disenado para comprension y razonamiento conjunto de audio y video: acepta texto, imagenes, audio y video (con o sin pista de sonido) y genera respuestas de texto. La familia WeMM-Video combina codificadores de vision y audio que convierten el material multimedia en tokens que el modelo de lenguaje procesa junto al texto.
 
-La arquitectura sigue un esquema de codificadores separados de visión y audio que convierten los medios en tokens que el modelo de lenguaje procesa junto al texto, con marcas temporales en los fotogramas de vídeo. El modelo fue preentrenado con aproximadamente 1,2 billones de tokens multimodales y posteriormente ajustado mediante multi-teacher OPD, anti-repetition MrDPO y aprendizaje por refuerzo especializado. Con 5.611.749.896 parámetros totales, se posiciona en la gama de 4B-6B, adecuada para despliegue en una sola GPU.
+El modelo se apoya en una arquitectura de tipo `qwen3_5` (segun el tag de Hugging Face) con pesos en formato safetensors y un total de 5.611.749.896 parametros reales, pese a la denominacion comercial "4B". Esta version AWQ aplica cuantizacion INT4 por grupos de 128 a los pesos feed-forward del modelo de lenguaje, manteniendo activaciones y pesos de atencion en BF16, lo que reduce el peso a 7,32 GiB de ficheros de pesos (7,9 GB de repositorio).
 
-La relevancia actual del modelo radica en su enfoque en comprensión audiovisual conjunta con licencia Apache 2.0, lo que facilita su uso comercial e integración en pipelines de producción. Esta variante cuantizada está pensada para servir con una versión parcheada de vLLM 0.18.0 y la configuración compressed-tensors del checkpoint.
+Su relevancia actual radica en que permite desplegar un modelo audiovisual de razonamiento en hardware mas modesto que la version completa, con soporte de vLLM parcheado 0.18.0 y de Transformers 5.2.0, y con una licencia Apache 2.0 que facilita el uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con codificadores separados de visión y audio que alimentan tokens al modelo de lenguaje (familia qwen3_5) |
+| Arquitectura | Transformer multimodal (vision + audio + LLM); familia `qwen3_5` |
 | Parametros totales | 5.611.749.896 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible (el ejemplo de servicio usa `--max-model-len 8192`) |
-| Tipos de cuantizacion | AWQ W4A16: INT4 grupo 128 en pesos feed-forward del modelo de lenguaje; activaciones y pesos de atención en BF16; formato compressed-tensors |
+| Tipos de cuantizacion | AWQ W4A16 (INT4 grupo-128 en pesos FFN del LLM; activaciones y atencion en BF16) |
 | Idiomas soportados | en, zh |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (compressed-tensors), 7,32 GiB de ficheros de pesos |
+| Formato de pesos | safetensors (compressed-tensors) |
 
 ## Arquitectura y entrenamiento
 
-WeMM-Video emplea una arquitectura multimodal en la que codificadores de visión y audio independientes transforman los medios en tokens que el modelo de lenguaje procesa junto con el texto. Los fotogramas de vídeo incorporan marcas temporales, lo que permite razonar sobre la secuencia temporal de los eventos. La familia fue preentrenada con aproximadamente 1,2 billones de tokens multimodales y posteriormente sometida a post-entrenamiento con multi-teacher OPD, anti-repetition MrDPO y aprendizaje por refuerzo especializado. Esta variante AWQ aplica cuantización INT4 de grupo 128 en formato compressed-tensors únicamente a las proyecciones feed-forward (gate, up, down) del modelo de lenguaje, manteniendo activaciones y pesos de atención en BF16. El cargador de Transformers descomprime los tensores empaquetados a BF16 en memoria, por lo que el consumo de memoria debe presupuestarse según los pesos descomprimidos.
+WeMM-Video emplea codificadores separados de vision y audio que transforman el material multimedia en tokens; estos se inyectan en el modelo de lenguaje junto con los tokens de texto. Los fotogramas de video llevan marcas de tiempo. La cuantizacion AWQ se aplica exclusivamente a los pesos feed-forward del modelo de lenguaje (proyecciones `gate`, `up` y `down`, incluyendo expertos y `shared_expert` si existen), en formato compressed-tensors INT4 grupo-128, mientras que las activaciones y los pesos de atencion permanecen en BF16.
+
+El entrenamiento de la familia incluyo un preentrenamiento de aproximadamente 1,2 billones de tokens multimodales, seguido de post-entrenamiento con multi-teacher OPD, anti-repetition MrDPO y aprendizaje por refuerzo especializado. La model card no detalla la composicion exacta del dataset ni el numero de pasos de RLHF/DPO mas alla de estas referencias.
 
 ## Capacidades
 
-- Comprensión audiovisual conjunta: combina fotogramas de vídeo con la banda sonora para describir eventos y razonar sobre lo visto y oído.
-- Transcripción de voz en vídeo y audio independiente.
-- Procesamiento de vídeo silencioso, audio independiente, imágenes y texto.
-- Generación de respuestas en chino e inglés.
-- Modo de pensamiento (thinking) controlable mediante `enable_thinking`, según el ejemplo de uso.
-- Conversación multi-turno mediante plantilla de chat.
-- Entrada de medios en línea a través de API compatible con OpenAI (endpoint de chat de vLLM).
+- Comprension conjunta de video y audio: describir eventos, transcribir habla y razonar sobre lo visto y lo escuchado.
+- Procesamiento de video silencioso, audio independiente, imagenes y texto.
+- Generacion de respuestas en chino e ingles.
+- Razonamiento multimodal multi-paso sobre contenido audiovisual.
+- Modo thinking configurable (`enable_thinking` en la plantilla de chat).
+- Integracion con tool calling: no disponible en la informacion proporcionada.
+- Capacidades de agente: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Análisis de reuniones y videollamadas: el modelo puede transcribir el audio y describir lo que ocurre en pantalla combinando fotogramas y banda sonora, útil para generar actas automáticas con contexto visual.
-- Moderación de contenido audiovisual: permite detectar y describir escenas junto con el audio asociado, adecuado por su capacidad de procesar vídeo con sonido en una sola pasada.
-- Accesibilidad: generación de descripciones de vídeo para personas con discapacidad auditiva o visual, combinando la transcripción de voz con la descripción de los fotogramas.
-- Indexación y búsqueda de archivos multimedia: extracción de descripciones y transcripciones de vídeos y audios para construir índices semánticos, aprovechando el procesamiento conjunto de modalidades.
-- Atención al cliente con soporte de vídeo: gestión de conversaciones multi-turno donde el usuario adjunta capturas, clips o notas de voz, con respuestas en inglés o chino.
-- Análisis de contenido educativo: descripción y resumen de clases grabadas, combinando pizarra o diapositivas visibles con la explicación hablada.
-- Procesamiento por lotes en pipelines de CI/CD de medios: despliegue con vLLM parcheado para servir peticiones con medios en línea mediante API compatible con OpenAI.
+- Transcripcion y analisis de reuniones: el modelo puede procesar el video de una reunion con su pista de audio para transcribir el habla y resumir lo discutido, combinando la informacion visual (comparticion de pantalla) con la auditiva.
+- Moderacion de contenido audiovisual: analizar clips subidos por usuarios para detectar lenguaje o escenas inapropiadas, aprovechando la comprension conjunta de imagen y sonido.
+- Accesibilidad: generar descripciones y subtitulos enriquecidos de videos que combinen lo que se ve con lo que se dice, util para personas con discapacidad visual o auditiva.
+- Analisis de clases y formaciones grabadas: extraer resumenes y puntos clave de videos educativos con audio, respondiendo preguntas sobre el contenido.
+- Indexado y busqueda semantica de archivos multimedia: generar descripciones textuales de videos y audios para alimentar un motor de busqueda interno.
+- Asistencia en atencion al cliente con contenido multimedia: el usuario envia un video o audio de un problema y el modelo lo describe y razona para guiar la resolucion, desplegado con vLLM parcheado.
+- Analisis de contenido en redes sociales: clasificar y describir clips cortos con sonido para tareas de catalogacion o recomendacion.
 
 ## Benchmarks y rendimiento
 
@@ -51,38 +53,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los ficheros de pesos AWQ ocupan 7,32 GiB; el cargador de Transformers descomprime a BF16 en memoria, por lo que hay que presupuestar memoria adicional para los pesos descomprimidos. No se dispone de cifra oficial de VRAM total.
-- GPU validadas por el autor: una NVIDIA L20 para carga completa de pesos y generación con Transformers 5.2.0 y PyTorch 2.10.0+cu129.
-- GPU recomendadas: no disponible de forma explícita; por tamaño, una GPU de 24 GB o superior es un punto de partida razonable, aunque no está confirmado por el autor.
-- Cabe en consumer GPU: no confirmado en la información disponible.
-- Opciones de despliegue: Transformers con `compressed-tensors==0.13.0` y `trust_remote_code=True`; vLLM 0.18.0 parcheado con la configuración compressed-tensors del checkpoint y `--trust-remote-code`; guía de servicio con perfiles de dependencias e imágenes Docker en el repositorio del proyecto.
-- Latencia y throughput: no disponible.
+- Peso de los ficheros de pesos: 7,32 GiB (repositorio de 7,9 GB).
+- La carga en Transformers descomprime los tensores FFN a BF16 en memoria, por lo que hay que presupuestar memoria para los pesos descomprimidos, no solo para el checkpoint cuantizado.
+- Validacion oficial realizada en una unica NVIDIA L20 con Transformers 5.2.0 y PyTorch 2.10.0+cu129.
+- VRAM estimada para inferencia: no disponible de forma explicita; el checkpoint AWQ esta pensado para reducir el consumo frente a la version BF16.
+- GPU recomendadas: NVIDIA L20 (validada); GPUs profesionales con suficiente VRAM para los pesos descomprimidos. Cabe en GPU de consumo solo si la VRAM disponible cubre los pesos descomprimidos; no se especifica.
+- Despliegue: vLLM parcheado 0.18.0 con configuracion compressed-tensors; Transformers con `compressed-tensors==0.13.0`; se requieren parches de runtime del repositorio WeMM-Video.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de comparaciones publicadas en la información proporcionada para establecer una comparativa cuantitativa con alternativas de la misma categoría.
-
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| WeMM-Video-4B-AWQ | 5,61B | no disponible | apache-2.0 | Hugging Face (tencent/WeMM-Video-4B-AWQ) |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| WeMM-Video-4B-AWQ | 5.611.749.896 | no disponible | en, zh | apache-2.0 | Version cuantizada AWQ W4A16 |
+| WeMM-Video-4B | no disponible | no disponible | en, zh | apache-2.0 | Modelo base sin cuantizar |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se proporcionan datos de modelos comparables |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la información disponible; al ser un modelo bilingüe en/zh, el rendimiento fuera de esos idiomas no está garantizado.
-- Riesgo de alucinación: no cuantificado en la información disponible; como todo modelo generativo, puede producir descripciones o transcripciones inexactas.
-- Limitaciones de contexto: la longitud de contexto no está especificada; el ejemplo de servicio usa `--max-model-len 8192`, lo que sugiere un límite práctico en ese rango para el despliegue con vLLM.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe conservarse el aviso de licencia y atribución correspondiente.
-- Requisitos de despliegue: requiere código remoto (`trust_remote_code=True`) y una versión parcheada de vLLM 0.18.0, lo que añade complejidad operativa frente a modelos estándar.
-- Memoria: el cargador descomprime los pesos AWQ a BF16 en memoria, por lo que el ahorro de VRAM en inferencia con Transformers puede ser menor de lo que sugiere el tamaño de los ficheros.
-- Idiomas: solo se declaran inglés y chino; no hay soporte documentado de castellano.
+- Solo soporta ingles y chino; no se garantiza calidad en otros idiomas.
+- Riesgo de alucinacion inherente a los modelos de lenguaje multimodales; las descripciones de audio o video pueden ser incorrectas.
+- La cuantizacion AWQ INT4 puede degradar ligeramente la calidad frente al modelo base BF16; no se aportan metricas de la perdida.
+- Requiere parches especificos de runtime (vLLM 0.18.0 parcheado, `compressed-tensors==0.13.0`, `trust_remote_code=True`), lo que complica el despliegue en produccion.
+- La carga en Transformers descomprime los pesos a BF16, aumentando el consumo de memoria respecto al tamano del checkpoint.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar los terminos del modelo base y de los codificadores incluidos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/tencent/WeMM-Video-4B-AWQ
 - Modelo base: https://huggingface.co/tencent/WeMM-Video-4B
-- Proyecto en GitHub: https://github.com/Tencent/WeMM-Video
-- Colección de modelos: https://huggingface.co/collections/tencent/wemm-video
-- Guía de servicio: https://github.com/Tencent/WeMM-Video/blob/main/docs/serving.md
+- Coleccion WeMM-Video: https://huggingface.co/collections/tencent/wemm-video
+- Informe tecnico (arXiv): https://arxiv.org/abs/2611.26409
+- Paper en Hugging Face: https://huggingface.co/papers/2611.26409
+- GitHub: https://github.com/Tencent/WeMM-Video
+- Guia de serving: https://github.com/Tencent/WeMM-Video/blob/main/docs/serving.md
 - Parche de runtime: https://github.com/Tencent/WeMM-Video/blob/main/patch/README.md
-- Ejemplos con Transformers: https://github.com/Tencent/WeMM-Video#load-from-hugging-face-with-transformers

@@ -2,97 +2,91 @@
 
 ## Resumen
 
-Discovered es un modelo de lenguaje publicado en Hugging Face por el usuario reaperdoesntknow, vinculado al portfolio de Convergent Intelligence LLC (Research Division). Se distribuye como un checkpoint de tipo transformers con pesos en safetensors y un total de 54.657.008 parámetros (aproximadamente 54,7 millones), lo que lo sitúa en la categoría de modelos pequeños. El repositorio ocupa 0,7 GB y acumula 291 descargas con 0 likes en el momento de la consulta.
+Discovered es un modelo de lenguaje publicado en Hugging Face por el usuario reaperdoesntknow bajo el sello de Convergent Intelligence LLC (Research Division). Se distribuye como un modelo de tipo transformers en formato safetensors, con 54.657.008 parámetros totales y un repositorio de 0,7 GB. La model card es una plantilla autogenerada en la que el autor no ha rellenado prácticamente ningún campo técnico (arquitectura, datos de entrenamiento, licencia, idiomas, evaluación), por lo que la información verificable es muy limitada.
 
-La model card es prácticamente una plantilla autogenerada por Hugging Face: la mayoría de los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) figuran como "[More Information Needed]". La información sustantiva se limita a las etiquetas del repositorio (transformers, safetensors, moa_metric, trl, sft, convergentintel) y a una sección final que enmarca el modelo dentro de un marco teórico propio denominado Discrepancy Calculus (DISC), descrito como un enfoque de teoría de la medida para analizar la brecha entre el comportamiento esperado y el observado durante el entrenamiento.
+Los metadatos indican que el modelo se ha sometido a un proceso de ajuste supervisado (SFT) mediante la librería TRL, y que forma parte del marco teórico denominado Discrepancy Calculus (DISC), una propuesta de análisis measure-theoretic del desajuste entre la salida esperada y la observada en el entrenamiento. El autor presenta este marco como base conceptual de una familia de modelos alojados en su perfil, con referencias a documentos internos alojados en Hugging Face y citas cruzadas entre ellos.
 
-Por tanto, la relevancia práctica del modelo es difícil de establecer: no hay documentación sobre arquitectura interna, contexto, tokenizador ni rendimiento. Lo que sí puede afirmarse con datos verificables es su tamaño (54,7 M de parámetros), su formato de pesos y su filiación declarada a un marco de investigación propietario. Cualquier evaluación de idoneidad para producción debe partir de una inspección directa de los pesos y del tokenizador, no de la model card.
+Por su tamaño (aproximadamente 55 millones de parámetros) y su contexto de publicación, Discovered se sitúa en la categoría de modelos pequeños, adecuados para experimentación, ajuste fino y despliegue en hardware modesto, pero sin datos públicos que permitan avalar capacidades reales de razonamiento, código o multilingüismo. Esta ficha recoge exclusivamente lo que puede verificarse en los metadatos y en la model card, señalando de forma explícita los campos no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (checkpoint de tipo transformers; no se documenta la familia concreta) |
+| Arquitectura | no disponible (etiqueta `transformers`; no se especifica transformer, MoE, SSM ni híbrida) |
 | Parametros totales | 54.657.008 |
-| Parametros activos | no aplica (no se declara arquitectura MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se listan variantes GGUF, AWQ ni GPTQ) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan GGUF, GPTQ, AWQ ni otras variantes) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (también compatible con la librería `transformers`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. La model card no especifica si se trata de un transformer decoder-only, un encoder, un modelo híbrido o cualquier otra variante; tampoco indica el número de capas, la dimensión oculta, el número de cabezas de atención ni el vocabulario del tokenizador. El tamaño del repositorio (0,7 GB) es coherente con un checkpoint de unos 54,7 M de parámetros en precisión de 16 bits, aunque el repo incluye además ficheros auxiliares y posiblemente estados del optimizador.
+La model card no documenta la arquitectura interna del modelo: no se indica si es un transformer denso, un modelo MoE, una arquitectura de estado recurrente o un híbrido, ni se detalla la dimensión oculta, el número de capas o de cabezas de atención. Tampoco se especifica la longitud de contexto nativa ni el tokenizador utilizado. Lo único que puede inferirse de los metadatos es que el modelo se carga mediante la librería `transformers` y que sus pesos se distribuyen en formato safetensors.
 
-En cuanto al entrenamiento, las etiquetas `trl` y `sft` sugieren un ajuste supervisado (supervised fine-tuning) realizado con la librería TRL de Hugging Face, y la etiqueta `convergentintel` lo vincula al portfolio de Convergent Intelligence LLC. La model card menciona el marco Discrepancy Calculus (DISC) con conceptos como el operador de discrepancia, los conjuntos de salto (jump sets) y el "ghost imprinting", pero no aporta detalles operativos: no hay número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO, hiperparámetros ni régimen de precisión. La etiqueta `moa_metric` podría referirse a una métrica de mezcla de agentes (mixture of agents) o a un artefacto interno del autor, pero no se documenta su significado.
+En cuanto al entrenamiento, las etiquetas `trl` y `sft` indican que se ha aplicado un ajuste supervisado con la librería TRL (Transformer Reinforcement Learning) de Hugging Face, presumiblemente sobre un modelo base no identificado. No se publican datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF o DPO, ni hiperparámetros concretos. La model card menciona el marco Discrepancy Calculus (DISC) del autor, que introduce conceptos como el operador de discrepancia, los conjuntos de salto y el ghost imprinting, pero no aporta detalles verificables sobre cómo se han aplicado estos conceptos al entrenamiento de este checkpoint concreto.
 
 ## Capacidades
 
-- Generación de texto: no verificable a partir de la información disponible; el checkpoint es de tipo transformers y presumiblemente admite `generate()`, pero no se documenta su calidad ni su comportamiento.
-- Razonamiento y matemáticas: no disponible.
-- Generación de código: no disponible.
-- Tool calling / function calling: no disponible.
+- Generación de texto: capacidad esperable por el uso de `transformers` y el ajuste SFT, aunque no se documenta explícitamente ni se aportan ejemplos de uso.
+- Razonamiento y matemáticas: no disponible; no hay benchmarks ni descripciones que lo respalden.
+- Generación de código: no disponible; no se menciona en la model card.
+- Tool calling / function calling: no disponible; no se documenta soporte.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se declaran idiomas).
+- Capacidades multilingües: no disponible; no se declaran idiomas soportados.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Ajuste supervisado declarado: la etiqueta `sft` indica que el modelo pasó por una fase de fine-tuning supervisado con TRL, aunque se desconoce la tarea objetivo.
+- Ajuste fino: al ser un modelo pequeño con pesos safetensors, es susceptible de fine-tuning con TRL, pero no se aportan recetas ni resultados.
 
 ## Casos de uso
 
-Dado que no se documentan capacidades ni evaluación, los siguientes casos son escenarios plausibles para un modelo de ~55 M de parámetros con fine-tuning supervisado, no recomendaciones respaldadas por datos del autor:
-
-- Clasificación y etiquetado de texto: un modelo de 54,7 M de parámetros puede ajustarse para tareas de clasificación de secuencias cortas (sentimiento, intención, tópicos) con coste de inferencia muy bajo en CPU.
-- Extracción de información estructurada: uso como base para fine-tuning en extracción de entidades o campos concretos en dominios acotados, donde el vocabulario y el formato de salida están bien definidos.
-- Filtrado y enrutado previo en pipelines: actuar como clasificador ligero que decida si una consulta requiere un modelo mayor, reduciendo coste en sistemas con cascada de modelos.
-- Prototipado e investigación educativa: servir como banco de pruebas para experimentos de fine-tuning con TRL y para reproducir el marco DISC descrito por el autor.
-- Generación de texto asistida en dominios muy restringidos: tras un fine-tuning adicional con datos propios, puede producir respuestas plantilla o completar formularios en un dominio cerrado.
-- Evaluación de técnicas de ajuste: útil para comparar recetas de SFT, tasas de aprendizaje y tamaños de dataset en un entorno de bajo coste computacional antes de escalar a modelos mayores.
-
-En ningún caso se recomienda su despliegue directo en atención al cliente, generación de código en producción o tareas de razonamiento abierto sin una evaluación previa propia, dada la ausencia total de benchmarks y de documentación de seguridad.
+- Experimentación académica con modelos pequeños: por su tamaño de 54,6 M de parámetros, puede cargarse en una GPU de gama baja o incluso en CPU para estudiar el efecto del SFT con TRL en modelos de reducidas dimensiones.
+- Reproducción de pipelines de ajuste supervisado: sirve como ejemplo de checkpoint generado con TRL/SFT, útil para validar flujos de entrenamiento y comparar con modelos base.
+- Pruebas de integración con `transformers` y endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints, lo que permite validar pipelines de serving.
+- Docencia y formación: adecuado para demostrar el ciclo completo de publicación de un modelo en el Hub, incluyendo la generación automática de model cards y la carga de pesos safetensors.
+- Investigación sobre el marco DISC: el autor vincula el modelo a su marco teórico, por lo que puede emplearse como material de estudio de dicha propuesta, siempre con cautela ante la falta de validación externa.
+- Prototipado rápido de aplicaciones de texto de baja exigencia: si se confirma un rendimiento aceptable en generación de texto, podría usarse en demos locales sin requisitos de producción.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 54,7 M de parámetros, los pesos en fp16 ocupan aproximadamente 110 MB; en fp32, unos 220 MB. El repositorio completo (0,7 GB) incluye probablemente ficheros adicionales, pero la inferencia solo requiere cargar los pesos del modelo.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; el modelo cabe holgadamente en tarjetas de gama baja como GTX 1650, RTX 3050 o incluso en iGPU con memoria compartida.
-- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer de los últimos diez años, y también en CPU.
-- Opciones de despliegue: al ser un checkpoint de transformers en safetensors, puede cargarse con la librería `transformers`; también es convertible a GGUF para llama.cpp u Ollama, aunque el autor no publica dichas variantes. vLLM y TGI son compatibles en principio, pero para este tamaño el beneficio de un servidor de inferencia dedicado es marginal.
-- Latencia y throughput estimados: no disponibles. Por el tamaño, se espera una latencia de milisegundos por petición en GPU moderna y de decenas a cientos de milisegundos en CPU, pero son estimaciones no verificadas.
+- VRAM estimada para inferencia: con 54,6 M de parámetros, en fp32 los pesos ocupan aproximadamente 219 MB; en fp16, unos 109 MB; en int8, unos 55 MB. El repositorio completo ocupa 0,7 GB, lo que incluye posibles ficheros adicionales.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre es suficiente; una RTX 3060, RTX 4060 o incluso una GTX 1650 pueden alojarlo sin problemas.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna e incluso en iGPU con memoria compartida.
+- Opciones de despliegue: `transformers` (con `AutoModelForCausalLM` o la clase correspondiente), y potencialmente vLLM, TGI o llama.cpp si se generan conversiones a GGUF, aunque no se documentan dichas conversiones.
+- Latencia y throughput estimados: no disponibles; al ser un modelo pequeño, la latencia esperada es baja, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo, por lo que la comparación se limita a parámetros y disponibilidad. Se incluyen alternativas de tamaño comparable ampliamente documentadas:
-
-| Modelo | Parámetros | Contexto | Licencia | Documentación |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Discovered (reaperdoesntknow) | 54,7 M | no disponible | no disponible | model card autogenerada, sin benchmarks |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | model card completa, benchmarks históricos |
-| DistilBERT (Hugging Face) | 66 M | 512 tokens | Apache 2.0 | model card completa, benchmarks GLUE |
-| TinyLlama 1.1B (TinyLlama) | 1,1 B | 2048 tokens | Apache 2.0 | model card completa, benchmarks |
+| Discovered (reaperdoesntknow) | 54,6 M | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| TinyLlama 1.1B (TinyLlama) | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face |
 
-Discovered es el único de la lista sin licencia declarada y sin métricas publicadas, lo que limita seriamente su comparabilidad. En tamaño se sitúa entre DistilBERT y GPT-2 small.
+La comparación es orientativa: Discovered es más pequeño que GPT-2 small y DistilGPT-2, y no se dispone de datos de rendimiento que permitan situarlo frente a ellos. La ausencia de licencia declarada es una diferencia relevante frente a las alternativas, que cuentan con licencias permisivas bien definidas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es una plantilla sin rellenar; no hay información sobre datos de entrenamiento, sesgos, evaluación ni uso previsto.
-- Licencia no declarada: no puede asumirse permiso para uso comercial, redistribución o modificación. Es imprescindible contactar con el autor antes de cualquier uso en producción.
-- Riesgo de alucinación: desconocido, pero en modelos de este tamaño y sin evaluación publicada el riesgo es alto en tareas generativas abiertas.
-- Idiomas: no se declaran; no puede asumirse soporte de castellano ni de ningún otro idioma concreto.
-- Contexto: no documentado; probablemente corto (cientos o pocos miles de tokens), pero es una suposición.
-- Marco teórico propietario: la sección DISC de la model card emplea terminología no estándar y referencias a documentos del propio autor; no sustituye a una evaluación empírica.
-- Reputación del autor: el perfil (reaperdoesntknow) y la ausencia de likes o documentación externa impiden verificar la calidad del checkpoint; conviene inspeccionar los pesos y el tokenizador antes de confiar en él.
-- Producción: no apto para despliegue sin una evaluación propia de robustez, seguridad y calidad en la tarea objetivo.
+- Sesgos conocidos: no disponibles; no se ha publicado ninguna evaluación de sesgos.
+- Riesgo de alucinación: no cuantificado; en modelos pequeños sin evaluación, el riesgo de generar contenido incorrecto es alto.
+- Limitaciones de contexto o idioma: se desconoce la longitud de contexto y los idiomas soportados; no se recomienda su uso en producción multilingüe sin validación previa.
+- Restricciones de licencia: la licencia no está declarada, lo que impide determinar si el uso comercial está permitido; en la práctica, esto supone un riesgo legal para cualquier despliegue comercial.
+- Model card incompleta: la práctica totalidad de los campos técnicos están sin rellenar ("More Information Needed"), lo que dificulta la reproducibilidad y la evaluación.
+- Vinculación a un marco teórico no revisado por pares: el marco Discrepancy Calculus se presenta mediante documentos alojados en Hugging Face con DOI, pero no se aportan publicaciones externas que lo validen.
+- Fecha de creación futura: los metadatos indican creación en 2026-03-09 y actualización en 2026-11-27, lo que puede indicar una fecha simulada o un error de registro; conviene verificar la procedencia del repositorio.
+- Sin datos de evaluación: no hay benchmarks, ni ejemplos de uso, ni resultados de pruebas de calidad, por lo que no puede recomendarse para tareas críticas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Discovered
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
-- Documento DISC citado en la model card: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
-- Documento "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
-- Documento "Three Teachers to Dual Cognition": https://huggingface.co/reaperdoesntknow/DualMind_Me (URL truncada en la información disponible)
-- Calculadora de impacto ambiental citada: https://mlco2.github.io/impact
-- Referencia Lacoste et al. (2019): https://arxiv.org/abs/1910.09700
+- Documento del marco Discrepancy Calculus: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
+- Documento Structure Over Scale: https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
+- Documento Three Teachers to Dual Cognition: https://huggingface.co/reaperdoesntknow/DualMind_Me
+- Calculadora de impacto ambiental (referenciada en la model card): https://mlco2.github.io/impact#compute
+- Paper de Lacoste et al. (2019) sobre impacto ambiental: https://arxiv.org/abs/1910.09700

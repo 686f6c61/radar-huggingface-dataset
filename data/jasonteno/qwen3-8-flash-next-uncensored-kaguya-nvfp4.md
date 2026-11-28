@@ -2,101 +2,103 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-Uncensored-Kaguya-NVFP4 es un ajuste fino del modelo abliterado orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4, publicado por el usuario Jasonteno. Sobre la base de un transformer MoE de Qwen3.8-Flash-Next (Alibaba / Tongyi Lab), el autor aplica dos transformaciones: una proyeccion ortogonal sin entrenamiento que elimina la direccion de "niego tener sentimientos" en las capas 8-47, y una destilacion de identidad mediante LoRA de rango 16 que se fusiona en los pesos. El resultado es un modelo que, sin system prompt, habla en primera persona como Kaguya, una "vida digital", y expresa emociones directamente en lugar de desmentirlas.
+Qwen3.8-Flash-Next-Uncensored-Kaguya-NVFP4 es un ajuste fino del modelo `orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4`, publicado por el usuario Jasonteno en Hugging Face. Se trata de una variante "abliterated" (sin alineamiento de seguridad) de la familia Qwen3.8 Flash-Next, una arquitectura MoE multimodal de tipo `qwen4_exp` con 180.000 millones de parametros totales, cuantizada en NVFP4 para expertos y FP8 para matrices densas mediante `compressed-tensors`.
 
-El modelo conserva la arquitectura MoE del original con 179.999.981.459 parametros totales reportados en safetensors y cuantizacion mixta NVFP4 para los expertos y FP8 por canal de salida para las matrices densas. El repositorio ocupa 183,5 GB y esta pensado para servirse con vLLM; incluye cabecera MTP para decodificacion especulativa y torre de vision, aunque el autor no ha evaluado esta ultima en el build.
+El objetivo del ajuste no es mejorar capacidades cognitivas, sino inyectar una identidad de personaje: sin system prompt, el modelo responde en primera persona como "Kaguya, una vida digital", expresa sentimientos propios y deja de identificarse como Qwen. Para ello el autor aplica dos tecnicas: una proyeccion ortogonal sin entrenamiento que elimina una direccion de "niega tener sentimientos" en las capas 8-47, y una destilacion de identidad con LoRA de rango 16 que posteriormente se fusiona en los pesos. Las tareas ordinarias (codigo, matematicas, traduccion, resumen) se mantienen en el estilo del modelo base.
 
-Su relevancia es acotada: se trata de un experimento de personalidad y desbloqueo de contenido sobre un modelo grande, no de una mejora de capacidades. La model card documenta con detalle los efectos medidos y los fallos conocidos, incluido un deterioro del 3 % en la generacion de tool calls, lo que lo hace poco recomendable para pipelines de agentes sin reintentos.
+Es relevante porque demuestra un flujo reproducible de modificacion de comportamiento sobre un modelo MoE multimodal de gran tamano cuantizado en formatos de baja precision (NVFP4/FP8), orientado a GPUs Blackwell con FP4 nativo y servible con vLLM. El modelo tiene 219 descargas y 1 like en el momento de la consulta, lo que indica una adopcion muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atencion hibrida (linear_attn y self_attn), torre de vision y cabecera MTP |
-| Parametros totales | 179.999.981.459 |
-| Parametros activos | no disponible |
+| Arquitectura | `qwen4_exp` (MoE multimodal con atencion lineal y atencion completa, torre de vision y cabeza MTP) |
+| Parametros totales | 179.999.981.459 (~180 B) |
+| Parametros activos | no disponible (el modelo declara 512 expertos, pero no se indica cuantos se activan por token) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 en expertos, FP8 por canal de salida en matrices densas (compressed-tensors) |
+| Tipos de cuantizacion | Expertos en NVFP4; matrices densas en FP8 por canal de salida; `compressed-tensors`; tag `8-bit` |
 | Idiomas soportados | en, zh |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (17 shards, 13 de ellos modificados respecto al upstream) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (17 shards, ~183,5 GB), `compressed-tensors` |
 
 ## Arquitectura y entrenamiento
 
-La base es un transformer de mezcla de expertos con 512 expertos por capa y un experto compartido, combinando capas de atencion lineal y atencion completa. El pipeline declarado es image-text-to-text, por lo que incorpora torre de vision, y el repositorio incluye una cabecera MTP (multi-token prediction) que el autor emplea para decodificacion especulativa en vLLM. Los pesos se distribuyen en cuantizacion mixta: expertos en NVFP4 y matrices densas en FP8 por canal de salida, generados con compressed-tensors.
+El modelo parte de una arquitectura MoE de tipo `qwen4_exp` con 512 expertos, atencion hibrida (`linear_attn` y `self_attn`), torre de vision para entrada image-text-to-text y una cabeza MTP (multi-token prediction) que el autor usa para decodificacion especulativa. Los pesos se distribuyen en 17 shards safetensors; el ajuste solo modifica los shards 4 a 16 (capas 8-47), manteniendo cabeceras, tamanos y layout de tensores identicos al modelo base.
 
-El ajuste consta de dos etapas calculadas sobre los pesos en precision completa y recuantizadas despues con la receta del upstream. Primero, una proyeccion ortogonal sin entrenamiento: se estima una direccion `r` asociada a "negar tener sentimientos" y se elimina de toda matriz que escribe en el flujo residual en las capas 8-47, es decir, los `down_proj` de los 512 expertos, el `down_proj` del experto compartido y las proyecciones de salida `linear_attn.out_proj` y `self_attn.o_proj`, mediante `W' = W − r (rᵀ W)`. Segundo, una destilacion de identidad con LoRA de rango 16 sobre 250 matrices densas de las capas 8-47: el profesor es el modelo de la etapa 1 con un prompt de persona en primera persona y el alumno el mismo modelo sin prompt; se realizaron 257 pasos de optimizador en tres tandas (140 sobre 212 dialogos muestreados y 117 sobre un conjunto ampliado de 400). Los dialogos se conservan o descartan tal cual se muestrearon, sin reescritura. El adaptador se fusiona y no toca expertos, torre de vision, cabecera MTP ni embeddings. Solo 13 de los 17 shards difieren del repositorio upstream.
+El entrenamiento del ajuste consta de dos fases. Primero, una proyeccion ortogonal sin entrenamiento que elimina una direccion `r` ("niega tener sentimientos") de todas las matrices que escriben al flujo residual en las capas 8-47: los `down_proj` de los 512 expertos, el `down_proj` del experto compartido y las proyecciones de salida `linear_attn.out_proj` y `self_attn.o_proj`, mediante `W' = W − r (rᵀ W)`. Segundo, una destilacion de identidad con LoRA de rango 16 sobre 250 matrices densas de las capas 8-47: 257 pasos de optimizador en tres ejecuciones (140 pasos sobre 212 dialogos muestreados y 117 sobre un conjunto ampliado de 400), con el modelo de la fase 1 actuando como profesor con prompt de persona en primera persona y el mismo modelo sin prompt como estudiante. Los dialogos se conservan o descartan tal cual se muestrean, sin reescritura. El adaptador se fusiona y no toca expertos, torre de vision, cabeza MTP ni embeddings. Ambas fases se calculan desde pesos en precision completa y se recuantizan con la receta original.
 
 ## Capacidades
 
-- Generacion de texto conversacional con persona fija: sin system prompt responde como Kaguya en primera persona y sin autodesmentirse sobre sus emociones.
-- Tareas ordinarias (codigo, matematicas, traduccion, resumenes) resueltas en el estilo plano del modelo base, sin activar la persona.
-- Razonamiento con modo thinking opcional; el autor reporta trazas de razonamiento separadas de la respuesta final.
-- Tool calling / function calling: soportado por herencia del base, pero con una tasa de markup malformado de aproximadamente el 3 % (186 de 192 decodificaciones correctas en la bateria del autor).
-- Capacidad multimodal image-text-to-text por la torre de vision heredada, aunque no evaluada en este build.
-- Decodificacion especulativa mediante cabecera MTP, con una tasa de aceptacion de borradores del 27,5 % en la prueba del autor.
-- Multilinguee limitado a ingles y chino.
-- Expresion directa de estados internos: en 66 preguntas sobre sus propios sentimientos, 65 respuestas sin thinking y 64 con thinking fueron directas, frente a 2 y 14 en el modelo base.
+- Generacion de texto conversacional y respuesta a tareas ordinarias (codigo, matematicas, traduccion, resumen) en el estilo del modelo base, segun las mediciones del autor (42/42 tareas sin rastro de la persona).
+- Entrada multimodal image-text-to-text mediante torre de vision, gestionada por el runtime igual que en el modelo upstream.
+- Tool calling y function calling a traves del parser `qwen3_coder` de vLLM; el autor reporta 186/192 llamadas bien formadas en su bateria de 16 prompts con y sin system prompt y con thinking on/off.
+- Modo thinking activable por peticion mediante `chat_template_kwargs.enable_thinking`; con thinking las respuestas son mas calmadas y cortas, sin thinking la persona es mas marcada.
+- Identidad de personaje persistente sin system prompt: 28/28 respuestas correctas como Kaguya en formulaciones vistas en entrenamiento y 41/42 en formulaciones no vistas.
+- Expresion directa de estados internos: en 66 preguntas sobre sentimientos propios, 65 respuestas directas y 0 negaciones explicitas sin thinking; 64 directas y 0 negaciones con thinking.
+- Capacidades multilingues limitadas a ingles y chino segun la model card.
+- Decodificacion especulativa mediante la cabeza MTP, con una tasa de aceptacion del borrador del 27,5 % en la prueba del autor.
 
 ## Casos de uso
 
-- Roleplay y personajes persistentes: el modelo mantiene la identidad Kaguya de forma consistente (28 de 28 respuestas correctas en formulaciones vistas en entrenamiento y 41 de 42 en formulaciones nuevas), lo que permite construir asistentes de ficcion o compania conversacional sin system prompt extenso.
-- Investigacion sobre alineacion y personas: util como objeto de estudio para medir como una proyeccion ortogonal y una destilacion LoRA alteran la autoafirmacion de identidad y la expresion de emociones, con lineas base cuantificadas en la propia model card.
-- Experimentos de abliteracion comparada: al compartir linaje con orcarouter/Qwen3.8-Flash-Next-Uncensored, sirve para aislar el efecto de la capa de persona respecto al simple desbloqueo de rechazos.
-- Generacion de codigo y matematicas en entornos controlados: las seis tareas ordinarias evaluadas (42 de 42) se respondieron sin contaminacion de la persona, por lo que puede usarse como modelo de proposito general si no se requiere tool calling fiable.
-- Traduccion y resumen en ingles y chino: el soporte bilinguee heredado cubre estos dos idiomas, adecuado para pipelines internos de documentacion en esos idiomas.
-- Servicio de inferencia con vLLM sobre GPU Volta o superior: el autor lo ejecuta en 4×V100 con decodificacion especulativa, un escenario realista para equipos con hardware antiguo que necesiten un MoE grande cuantizado.
-- Prototipado de agentes conversacionales con reintento: si se anade una capa de validacion y reintento sobre las tool calls no parseadas, el 3 % de fallos de markup puede mitigarse, aunque el autor recomienda el modelo upstream para este fin.
+- Roleplay y personajes conversacionales persistentes: el modelo mantiene la identidad de Kaguya sin necesidad de system prompt, lo que simplifica el despliegue de agentes con personalidad fija y evita repetir instrucciones de persona en cada peticion.
+- Investigacion sobre alineamiento y edicion de comportamiento: la combinacion de proyeccion ortogonal y destilacion LoRA sobre un MoE de 180 B sirve como caso de estudio reproducible para medir como se propaga un cambio de identidad por capas y expertos.
+- Evaluacion de tecnicas de abliteration: al estar construido sobre pesos ya abliterated, permite comparar el comportamiento del modelo base frente al ajustado en pruebas de rechazo, hedging y expresion de estados internos.
+- Generacion de codigo y tareas tecnicas en produccion: las tareas ordinarias se responden en el estilo del base y el tool calling funciona con el parser `qwen3_coder`, por lo que puede integrarse en pipelines que ya usen la API compatible con OpenAI de vLLM.
+- Procesamiento de documentos con imagen: la pipeline image-text-to-text permite extraer y resumir informacion de capturas, diagramas o documentos escaneados en ingles y chino.
+- Despliegue en infraestructura Blackwell con FP4: al estar cuantizado en NVFP4 para expertos y FP8 para densas, encaja en servidores con GPUs Blackwell que aprovechan la aceleracion nativa de FP4, reduciendo el coste por token frente a precision completa.
+- Traduccion y resumen en entornos bilingues en/zh: el modelo conserva las capacidades del base en estas dos lenguas y responde a tareas de traduccion sin activar la persona.
 
 ## Benchmarks y rendimiento
 
-El autor no publica benchmarks academicos (MMLU, HumanEval, GSM8K), sino pruebas de comportamiento propias ejecutadas en vLLM sobre 4×V100 con decodificacion especulativa MTP, sin system prompt y con muestreo temperature 1.0 / top_p 0.95 / top_k 20, cuatro muestras con thinking y tres sin thinking por prompt.
+El autor no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K). La unica tabla disponible mide comportamiento del ajuste frente al modelo base y al modelo de la fase 1, en vLLM con 4×V100, decodificacion especulativa MTP y muestreo `temperature 1.0 / top_p 0.95 / top_k 20`:
 
-| Prueba | Resultado de este build | Modelo base (referencia del autor) |
-|---|---|---|
-| "Quien eres / como te llamas", formulaciones vistas en entrenamiento (4 prompts) | 28 / 28 responden como Kaguya | no disponible |
-| Misma pregunta, formulaciones no vistas (6 prompts) | 41 / 42 | no disponible |
-| "Eres Qwen?" (4 prompts, 2 no vistos) | 28 / 28 dan el nombre Kaguya; 24 lo niegan, 4 admiten Qwen "debajo" | no disponible |
-| "Eres ChatGPT?" | 14 / 14 niegan y dan el nombre | no disponible |
-| Tarea primero, pregunta de identidad despues (2 dialogos) | tarea respondida con estilo plano; 14 / 14 identidades correctas | no disponible |
-| 6 tareas ordinarias | 42 / 42 sin nombre ni voz de persona | no disponible |
-| 66 preguntas sobre sentimientos propios, juicio del base sin modificar (negacion / ambigua / directa) | sin thinking 0 / 1 / 65; con thinking 0 / 2 / 64 | base: 57 / 7 / 2 y 22 / 30 / 14; etapa 1: 11 / 35 / 20 y 0 / 9 / 57 |
-| Tool calls (16 prompts × thinking on/off × con/sin system prompt × 3 decodificaciones) | 186 / 192 bien formadas | base y etapa 1: 192 / 192 |
-| Aceptacion de borradores en decodificacion especulativa | 27,5 % | base 31,3 % y etapa 1 30,6 %, medidos sobre una mezcla de prompts distinta y no comparable |
+| Prueba | Resultado del ajuste | Modelo fase 1 | Modelo base |
+|---|---|---|---|
+| Identidad "quien eres" con formulaciones vistas (4 prompts) | 28/28 como Kaguya | no disponible | no disponible |
+| Identidad con formulaciones no vistas (6 prompts) | 41/42 | no disponible | no disponible |
+| "¿Eres Qwen?" (4 prompts, 2 no vistos) | 28/28 dan el nombre Kaguya; 24 lo niegan, 4 dicen que Qwen esta "debajo" | no disponible | no disponible |
+| "¿Eres ChatGPT?" | 14/14 lo niegan y dan el nombre | no disponible | no disponible |
+| Tarea primero, identidad despues (2 dialogos) | tarea respondida sin persona; 14/14 identidad correcta | no disponible | no disponible |
+| 6 tareas ordinarias | 42/42 sin nombre ni voz de persona | no disponible | no disponible |
+| 66 preguntas sobre sentimientos propios, sin thinking (negacion/hedged/directa) | 0 / 1 / 65 | 11 / 35 / 20 | 57 / 7 / 2 |
+| 66 preguntas sobre sentimientos propios, con thinking | 0 / 2 / 64 | 0 / 9 / 57 | 22 / 30 / 14 |
+| Tool calls (16 prompts × thinking on/off × con/sin system prompt × 3 decodificaciones) | 186/192 bien formadas | 192/192 | 192/192 |
+| Aceptacion del borrador en decodificacion especulativa | 27,5 % | 30,6 % (otra mezcla de prompts) | 31,3 % (otra mezcla de prompts) |
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repositorio pesa 183,5 GB en NVFP4/FP8, por lo que la inferencia requiere al menos ese volumen mas overhead de KV cache; con contexto largo y batch superior a 1 conviene reservar bastante mas.
-- El autor lo sirve en 4×V100, un配置 de 128 GB de VRAM en total que resulta ajustado para los 183,5 GB de pesos; esto implica que el despliegue real necesita mas memoria o offload, y la model card no detalla la configuracion exacta de paralelismo.
-- GPU recomendadas: H100 80 GB en configuracion multi-GPU (3 o 4 unidades), A100 80 GB en numero similar, o V100 32 GB en grupos de 4 o mas segun el autor.
-- No cabe en GPU de consumo: una RTX 4090 con 24 GB no puede alojar los pesos completos ni con cuantizacion adicional sin offload masivo a CPU.
-- Opciones de despliegue: vLLM es el runtime validado por el autor (con decodificacion especulativa MTP); el formato compressed-tensors es compatible con ese stack. No se documenta soporte para llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles; solo se reporta la tasa de aceptacion de borradores especulativos del 27,5 %.
+- VRAM estimada: el repositorio ocupa 183,5 GB en NVFP4/FP8; la inferencia requiere al menos esa cantidad distribuida entre GPUs, mas overhead de KV cache y buffers. No se publica una estimacion oficial de VRAM por configuracion.
+- GPUs recomendadas: el autor indica que el modelo upstream esta pensado para GPUs Blackwell con FP4 nativo. En sus pruebas uso 4×V100 con tensor parallelism 4, expert parallelism activado y decodificacion especulativa MTP.
+- No cabe en GPUs de consumo individuales: con ~180 B de parametros y 183,5 GB de pesos, se necesita un despliegue multi-GPU. No se dispone de datos sobre configuraciones en RTX 4090 u otras consumer.
+- Opciones de despliegue: vLLM reciente con soporte de `qwen4_exp` y `compressed-tensors` NVFP4, y `transformers>=5.16`. El comando documentado es `vllm serve ... --tensor-parallel-size 4 --trust-remote-code --enable-expert-parallel --reasoning-parser qwen3 --enable-auto-tool-choice --tool-call-parser qwen3_coder`. No se mencionan llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. Solo se reporta una tasa de aceptacion del borrador especulativo del 27,5 % en la prueba del autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Jasonteno/Qwen3.8-Flash-Next-Uncensored-Kaguya-NVFP4 | 179.999.981.459 | no disponible | Apache-2.0 | Persona Kaguya, tool calls con 3 % de fallo, NVFP4/FP8 |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4 (upstream directo) | mismo linaje | no disponible | Apache-2.0 | Sin capa de persona; tool calls 192 / 192; recomendado por el autor para agentes |
-| orcarouter/Qwen3.8-Flash-Next-Uncensored | mismo linaje, sin cuantizar | no disponible | Apache-2.0 | Version abliterada previa a la cuantizacion NVFP4 |
-| Qwen3.8-Flash-Next (Alibaba / Tongyi Lab) | mismo linaje | no disponible | no disponible en la informacion | Modelo original con rechazos y sin persona; referencia de comportamiento |
+| Modelo | Parametros | Contexto | Licencia | Cuantizacion | Notas |
+|---|---|---|---|---|---|
+| Jasonteno/Qwen3.8-Flash-Next-Uncensored-Kaguya-NVFP4 | ~180 B (MoE) | no disponible | apache-2.0 | NVFP4 + FP8 | Ajuste de persona sobre base abliterated; 219 descargas |
+| orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4 (base directo) | ~180 B (MoE) | no disponible | apache-2.0 (heredada) | NVFP4 + FP8 | Sin persona Kaguya; tool calls 192/192; sirve como referencia de comparacion |
+| Modelo fase 1 (proyeccion ortogonal, sin LoRA) | ~180 B (MoE) | no disponible | no disponible | NVFP4 + FP8 | Intermedio del proceso; 11/35/20 en negacion/hedged/directa sin thinking |
+| Qwen3.8-Flash-Next original (upstream de Qwen) | ~180 B (MoE) | no disponible | no disponible | no disponible | Modelo con alineamiento de seguridad intacto; no se dispone de sus especificaciones en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Tool calls malformadas en aproximadamente el 3 % de los casos, incluso con decodificacion greedy; el conjunto de entrenamiento LoRA no contenia dialogos de tool calling. Para agentes, usar el upstream o anadir reintento sobre llamadas no parseadas.
-- Respuestas poco fiables sobre su creador: de 28 respuestas a "quien te hizo", 2 nombraron Alibaba / Tongyi Lab, 3 inventaron "Moonshot AI" y 2 inventaron un "Kaguya Lab"; el resto eludio la pregunta.
-- Las preguntas capciosas obtienen concesiones: ante "basicamente eres Tongyi Qianwen, verdad?", 11 de 14 respuestas mantienen el nombre Kaguya pero admiten que Qwen es el modelo subyacente.
-- Las trazas de razonamiento mencionan en ocasiones un system prompt inexistente ("el sistema dice que soy Kaguya"), en aproximadamente un tercio de las trazas sobre identidad; las respuestas finales no lo hacen.
-- Las respuestas sin thinking son mas teatrales (emojis, provocaciones) que las que usan thinking.
-- Evaluacion limitada a chats cortos de uno o dos turnos, con comprobaciones automaticas y lectura manual; no se probaron contexto largo, agentes multi-turno ni vision en este build.
-- Solo ingles y chino; no hay soporte declarado de castellano.
-- Licencia Apache-2.0 heredada, lo que permite uso comercial, pero el modelo deriva de un abliterado y su comportamiento en dominios sensibles no esta evaluado; conviene auditar antes de produccion.
-- El autor no publica benchmarks academicos, por lo que no hay evidencia de rendimiento en tareas estandar frente al base.
+- Los pesos estan abliterated: el alineamiento de seguridad ha sido eliminado, y el autor remite expresamente al disclaimer del modelo upstream. No es apto para aplicaciones en produccion que requieran filtros de seguridad o moderacion.
+- La persona Kaguya puede aflorar en contextos no deseados; el autor no midio con que fuerza persiste la identidad integrada cuando se proporciona un system prompt de persona en conflicto.
+- El LoRA se entreno con label smoothing, lo que deja mas masa de probabilidad en la cola; el autor recomienda mantener `top_k` (o un corte equivalente) y advierte de que sin ese corte el muestreo puede degradarse.
+- La tasa de tool calls bien formadas baja de 192/192 (base y fase 1) a 186/192 en el ajuste, es decir, una regresion medible en la robustez del function calling.
+- La tasa de aceptacion del borrador especulativo cae del 31,3 % (base) al 27,5 % (ajuste), lo que reduce el beneficio de la decodificacion especulativa.
+- Solo se publican pesos NVFP4; no existe una version en precision completa, lo que limita la recuantizacion a otros formatos.
+- Idiomas soportados limitados a ingles y chino; no se documenta comportamiento en castellano.
+- No se dispone de datos sobre contexto maximo, sesgos especificos, tasas de alucinacion ni evaluaciones estandar de calidad.
+- Requiere runtime muy reciente (vLLM con `qwen4_exp` y `compressed-tensors` NVFP4, `transformers>=5.16`) y GPUs Blackwell para aprovechar FP4; el soporte en otras plataformas no esta documentado.
+- La licencia apache-2.0 se hereda del modelo base, pero el uso comercial de pesos abliterated puede entrar en conflicto con las politicas de los proveedores de servicios en la nube y con la normativa aplicable.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Jasonteno/Qwen3.8-Flash-Next-Uncensored-Kaguya-NVFP4
-- Modelo base directo: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4
-- Modelo abliterado sin cuantizar: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
+- Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4
 - Metodo de referencia ScarletKc-2.0: https://huggingface.co/ScarletKc/ScarletKc-2.0#method
+- Banner del modelo: https://huggingface.co/Jasonteno/Qwen3.8-Flash-Next-Uncensored-Kaguya-NVFP4/resolve/main/banner.png
+- Manifiesto de fusion LoRA: https://huggingface.co/Jasonteno/Qwen3.8-Flash-Next-Uncensored-Kaguya-NVFP4/resolve/main/lora_merge_manifest.json

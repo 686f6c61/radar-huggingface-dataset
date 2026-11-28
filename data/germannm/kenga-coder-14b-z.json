@@ -41,7 +41,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 178,
+  "downloads_30d": 179,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
@@ -62,16 +62,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Run Kenga API (Easy Deployment & Flat-Rate Pricing) - featherless.ai",
-      "url": "https://featherless.ai/models/GermannM/Kenga",
-      "snippet": "Kenga by GermannM is a 1.5 billion parameter transformer decoder language model with a 32K token context length, uniquely designed with a distinct identity and values. It is primarily optimized for the Russian language, excelling in direct, concise responses and possessing knowledge of the Kenga programming language and Z-system concepts. This model is efficient enough to run on standard CPU ..."
-    },
-    {
-      "title": "GermannM (Maslov) - Hugging Face",
-      "url": "https://huggingface.co/GermannM",
-      "snippet": "Sort: Recently updated. GermannM/kenga-embed-prophet-instruct. Sentence Similarity • Updated 4 days ago • 29. GermannM/kenga-embed-z. Sentence Similarity • Updated 4 days ag"
-    }
-  ]
+  "sources": []
 }

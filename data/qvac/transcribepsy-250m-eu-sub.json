@@ -67,16 +67,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "qvac/TranscribePsy-250M-EU-sub · Hugging Face",
-      "url": "https://huggingface.co/qvac/TranscribePsy-250M-EU-sub",
-      "snippet": "TranscribePsy-250M-EU-sub is a compact (254M-parameter) speech recognition model covering the eight European languages selected by Multilingual LibriSpeech (MLS), distilled from Parakeet-TDT-0.6B-v3 and built for on-device and edge deployment."
-    },
-    {
-      "title": "TranscribePsy 254M: 10 Min of Audio in 1.65s on iPhone | explainx.ai ...",
-      "url": "https://www.explainx.ai/blog/tether-transcribepsy-250m-on-device-speech-recognition-2026",
-      "snippet": "TranscribePsy-250M-EU-sub-coreml: a Core ML build for the Apple Neural Engine. The release also includes the evaluation scripts behind the benchmark numbers and an on-device engine repository, qvac-transcribepsy."
-    }
-  ]
+  "sources": []
 }

@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 179,
+  "downloads_30d": 186,
   "trending_score": 0,
   "parameters": 85876325,
   "parameters_human": "85.9M",
@@ -44,16 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "cmaso010/my_awesome_food_model · Hugging Face",
-      "url": "https://huggingface.co/cmaso010/my_awesome_food_model",
-      "snippet": "Image Classification model with 85.9M parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "aidiary/my_awesome_food_model · Hugging Face",
-      "url": "https://huggingface.co/aidiary/my_awesome_food_model",
-      "snippet": "my_awesome_food_model This model is a fine-tuned version of google/vit-base-patch16-224-in21k on an unknown dataset. It achieves the following results on the evaluation set:"
-    }
-  ]
+  "sources": []
 }

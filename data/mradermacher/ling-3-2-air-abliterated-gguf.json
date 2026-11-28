@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Ling-3.2-air-abliterated-GGUF",
+  "slug": "mradermacher-ling-3-2-air-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ling-3.2-air-abliterated-GGUF",
+  "created_at": "2026-11-28T03:05:11.000Z",
+  "updated_at": "2026-11-28T03:05:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 434248944,
+  "parameters_human": "434.2M",
+  "storage_bytes": 1475733120,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

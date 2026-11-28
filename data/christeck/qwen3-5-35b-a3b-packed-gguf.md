@@ -2,91 +2,100 @@
 
 ## Resumen
 
-Qwen3.5-35B-A3B es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por el equipo Qwen de Alibaba Cloud, con aproximadamente 35 mil millones de parámetros totales y unos 3 mil millones activos por token. Esta ficha concreta, publicada por Christeck bajo el identificador `Christeck/Qwen3.5-35B-A3B-PACKED-GGUF`, no es un modelo nuevo ni un fine-tuning: es un reempaque sin pérdida de los códigos de cuantización trellis EXL3 de Turboderp en el formato contenedor Packed GGUF que consume el motor Metal Trellis, orientado a Apple Silicon.
+Qwen3.5-35B-A3B es un modelo de mezcla de expertos (MoE) desarrollado por el equipo Qwen de Alibaba Cloud, con aproximadamente 35 mil millones de parametros totales y unos 3 mil millones activos por token. Esta ficha describe la variante publicada por Christeck Labs bajo el identificador `Christeck/Qwen3.5-35B-A3B-PACKED-GGUF`, que no es un modelo nuevo sino un reempaque sin perdida de los codigos trellis de cuantizacion EXL3 (originalmente generados por Turboderp con ExLlamaV3) dentro del contenedor Packed GGUF que consume el motor Metal Trellis.
 
-El interés de esta publicación es práctico: permite ejecutar un MoE de clase 35B en hardware de consumo Apple con un tamaño de archivo de 12,99 GiB y velocidades interactivas (18,7 tok/s de decodificación y 0,44 s de TTFT en un M1 Max de 64 GB). El autor declara explícitamente que el producto real es el motor Metal Trellis y que este archivo es una copia de cortesía para evitar que otros repitan el trabajo de conversión.
+El interes de esta publicacion es practico: permite ejecutar un MoE de clase 35B en Apple Silicon a velocidad interactiva. Segun las mediciones del autor en un M1 Max de 64 GB, el decodificado de expertos alcanza 18,7 tok/s con un TTFT de prefill de 0,44 s, y el fichero ocupa 12,99 GiB. No es un GGUF estandar de llama.cpp: requiere el fork Metal Trellis, que decodifica los pesos de los expertos empaquetados en trellis mediante kernels Metal en tiempo de ejecucion.
 
-Es importante subrayar que este archivo no es un GGUF estándar de llama.cpp: requiere el fork Metal Trellis para decodificar los pesos de expertos empaquetados en trellis mediante kernels de Metal. La licencia es Apache 2.0, heredada del modelo base, y los idiomas declarados son inglés y español.
+La relevancia actual radica en que demuestra que la cuantizacion trellis de ExLlamaV3 puede transportarse a un contenedor alternativo sin degradar la calidad de forma medible: en CT-Bench-mini (60 tareas de codigo con tests ocultos) la variante trellis obtiene 75 % (45/60) frente al 73 % (44/60) del base sin cuantizar en Q8_0, una diferencia de una sola tarea que el autor califica de empate tecnico. El coste no es de calidad sino de velocidad: 16,6 tok/s frente a 51,8 tok/s del base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE) transformer; pesos cuantizados con trellis EXL3 y reempaquetados en contenedor Packed GGUF propietario de Metal Trellis |
-| Parametros totales | ~35 mil millones (clase 35B) |
-| Parametros activos | ~3 mil millones por token |
+| Arquitectura | Transformer con mezcla de expertos (MoE); pesos cuantizados en formato trellis EXL3 empaquetados en Packed GGUF |
+| Parametros totales | 35B declarados por el nombre del modelo; el recuento del repo safetensors indica 7.108.758.656 (corresponde a los tensores empaquetados, no al total del modelo base) |
+| Parametros activos | ~3B (A3B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | EXL3 trellis (códigos idénticos a la fuente de Turboderp); tamaño de archivo resultante 12,99 GiB |
-| Idiomas soportados | inglés (en), español (es) |
+| Tipos de cuantizacion | EXL3 trellis (reempaquetado sin perdida); se cita Q8_0 solo como control del modelo base sin cuantizar |
+| Idiomas soportados | en, es |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Packed GGUF (formato propio del motor Metal Trellis; no compatible con llama.cpp estándar) |
+| Formato de pesos | Packed GGUF (contenedor propio del motor Metal Trellis); no compatible con llama.cpp estandar |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-35B-A3B emplea una arquitectura Mixture of Experts con enrutamiento disperso: de los ~35B parámetros totales, solo ~3B se activan por token, lo que reduce el coste computacional de inferencia manteniendo la capacidad de representación de un modelo de mayor tamaño. No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO.
+El modelo base Qwen3.5-35B-A3B es un transformer con mezcla de expertos de tipo disperso: alrededor de 35 mil millones de parametros totales de los que solo unos 3 mil millones se activan por token, lo que reduce el coste computacional por paso de decodificado. La model card no detalla la composicion del dataset de entrenamiento, el numero de tokens vistos ni si hubo fases de RLHF o DPO; esos datos corresponden al modelo original de Alibaba y no se reproducen en esta publicacion.
 
-La contribución técnica de esta publicación no reside en el entrenamiento sino en el formato de almacenamiento. Turboderp (ExLlamaV3) aplica cuantización trellis EXL3 a los pesos del modelo; Christeck Labs realiza un reempaque sin pérdida de esos códigos trellis en el contenedor Packed GGUF que el motor Metal Trellis decodifica en tiempo de ejecución mediante kernels de Metal. No hay reentrenamiento ni alteración de pesos: los códigos son idénticos a la fuente EXL3 y solo cambia el contenedor. El motor decodifica los pesos de expertos empaquetados al vuelo, lo que permite servir un MoE de 35B en memoria unificada de Apple Silicon.
+La innovacion tecnica de esta variante es el contenedor y el motor de inferencia. Christeck Labs toma los codigos trellis EXL3 producidos por ExLlamaV3 (cuantizacion de Turboderp, licencia MIT) y los reempaqueta, sin reentrenar ni alterar pesos, en el formato Packed GGUF que consume Metal Trellis. Ese motor decodifica los pesos de los expertos empaquetados al vuelo con kernels Metal especificos para Apple Silicon. No hay decodificacion especulativa, atencion lineal ni otras tecnicas declaradas en la informacion disponible; el cambio es exclusivamente de contenedor y de runtime.
 
 ## Capacidades
 
-- Generación de texto y razonamiento general, heredados del modelo base Qwen3.5-35B-A3B.
-- Capacidad multilingüe limitada, según la model card, a inglés y español.
-- Ejecución local en Apple Silicon mediante el motor Metal Trellis (kernels de Metal).
-- Decodificación de pesos de expertos empaquetados en trellis en tiempo de ejecución.
-- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido (thinking mode) específicas de esta publicación; deben asumirse las del modelo base, no verificadas aquí.
+- Generacion de texto conversacional multi-turno, segun la etiqueta `conversational` del repo.
+- Razonamiento con modo "thinking" activable: las mediciones de benchmark se realizaron con thinking on, seed 42.
+- Generacion de codigo en varios lenguajes: el benchmark del autor cubre TypeScript, SQL, C++, Java y JavaScript.
+- Soporte multilingue limitado a ingles y espanol segun los metadatos del modelo.
+- Compatibilidad con endpoints (`endpoints_compatible` en las etiquetas), lo que sugiere integracion en servicios de inferencia.
+- No se declaran capacidades de vision, audio, tool calling ni function calling en la informacion disponible.
 
 ## Casos de uso
 
-- Inferencia local de un MoE de clase 35B en Mac: el archivo de 12,99 GiB y las métricas medidas en M1 Max (18,7 tok/s, TTFT 0,44 s) permiten usar el modelo de forma interactiva en un equipo de sobremesa Apple sin GPU dedicada.
-- Prototipado y evaluación de modelos grandes en estación de trabajo: investigadores que quieran probar el comportamiento de Qwen3.5-35B-A3B sin acceso a clústeres con A100/H100 pueden desplegarlo en memoria unificada de Apple Silicon.
-- Desarrollo y validación del motor Metal Trellis: este archivo sirve como caso de prueba práctico para verificar la corrección de la decodificación trellis en kernels de Metal frente a la fuente EXL3.
-- Generación de texto asistida en local con requisitos de privacidad: al ejecutarse íntegramente en el equipo, es adecuado para tareas de redacción o resumen sobre datos que no deben salir de la máquina.
-- Reproducción de la conversión EXL3 a Packed GGUF: el repositorio del motor documenta el procedimiento, y este archivo sirve como referencia de salida esperada para quien quiera convertir otros checkpoints EXL3.
-- Experimentación con cuantización trellis: útil para comparar calidad y velocidad de EXL3 frente a otras cuantizaciones en el mismo modelo base sobre hardware Apple.
+- Asistencia de codigo local en Mac: el modelo resuelve tareas de programacion con tests ocultos (75 % en CT-Bench-mini) y corre a 16,6 tok/s en un M1 Max, suficiente para autocompletado y generacion de funciones en un IDE sin conexion a la nube.
+- Prototipado de agentes conversacionales en Apple Silicon: la ventana de contexto no esta documentada, pero el formato permite conversaciones multi-turno; util para validar flujos de chat antes de desplegar en infraestructura mayor.
+- Evaluacion de cuantizacion trellis: sirve como referencia practica para comparar la perdida de calidad de EXL3 frente a Q8_0 en tareas de codigo, con una diferencia medida de una sola tarea sobre 60.
+- Desarrollo y depuracion del motor Metal Trellis: al ser la "copia de cortesia" del proyecto, permite a contribuyentes reproducir el pipeline de inferencia sin repetir la conversion desde EXL3.
+- Generacion de consultas SQL y scripts de automatizacion: el benchmark reporta 5/5 en SQL, lo que respalda su uso en tareas de traduccion de lenguaje natural a consultas.
+- Inferencia privada en estaciones de trabajo macOS: al ejecutarse integramente en local sobre Metal, evita enviar datos de codigo o conversacion a servicios externos, relevante para equipos con requisitos de confidencialidad.
+- Educacion e investigacion sobre MoE: permite estudiar el comportamiento de un modelo de 35B con 3B activos en hardware de consumo de gama alta, sin GPU dedicada.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Las únicas métricas aportadas son de rendimiento de inferencia en hardware concreto:
+| Benchmark | Modelo | Resultado | Condiciones |
+|---|---|---|---|
+| CT-Bench-mini (60 tareas de codigo, tests ocultos) | Esta variante (trellis EXL3) | 75 % (45/60) | Metal Trellis, thinking on, seed 42, 61,2 min, 16,6 tok/s |
+| CT-Bench-mini | Base sin cuantizar (Q8_0) | 73 % (44/60) | 8,6 min, 51,8 tok/s |
+| CT-Bench-mini por lenguaje (trellis) | TypeScript | 31/38 | — |
+| CT-Bench-mini por lenguaje (trellis) | SQL | 5/5 | — |
+| CT-Bench-mini por lenguaje (trellis) | C++ | 5/7 | — |
+| CT-Bench-mini por lenguaje (trellis) | Java | 2/4 | — |
+| CT-Bench-mini por lenguaje (trellis) | JavaScript | 2/6 | — |
 
-| Metrica | Valor | Hardware |
-|---|---|---|
-| Decodificacion (expertos) | 18,7 tok/s | M1 Max, 64 GB |
-| TTFT de prefill | 0,44 s | M1 Max, 64 GB |
-| Tamano de archivo | 12,99 GiB | — |
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible. Las tareas de CT-Bench-mini son de producto y solo se publican la puntuacion y la metodologia, no los enunciados.
 
 ## Requisitos de hardware
 
-- Plataforma: Apple Silicon con Metal y macOS; el motor Metal Trellis es un fork específico, no compatible con llama.cpp estándar.
-- Memoria: el archivo ocupa 12,99 GiB; se necesita memoria unificada suficiente para los pesos más el estado de ejecución (el autor reporta funcionamiento en M1 Max de 64 GB; no se especifica el mínimo).
-- GPU dedicadas (A100, H100, RTX 4090): no aplicables a este formato, que depende de kernels de Metal en Apple Silicon.
-- Cabe en equipos Apple de gama alta con memoria unificada amplia; no se documenta compatibilidad con otros entornos.
-- Opciones de despliegue: exclusivamente el motor Metal Trellis (https://github.com/Christeck-AI/metal-trellis). No es compatible con vLLM, TGI, Ollama ni llama.cpp.
-- Latencia y throughput: 18,7 tok/s de decodificación y 0,44 s de TTFT en M1 Max 64 GB, según mediciones del autor.
+- Plataforma obligatoria: Apple Silicon con Metal y macOS; el motor Metal Trellis no funciona en GPU NVIDIA, AMD ni CPU x86.
+- VRAM/unificada estimada: el fichero pesa 12,99 GiB; se midio en un M1 Max con 64 GB de memoria unificada. No se documenta el minimo de memoria para otros chips.
+- GPU recomendadas: Apple Silicon de gama alta (M1 Max, M2 Max, M3 Max, M4 Max y equivalentes); no hay datos para chips base (M1, M2) ni para Ultra.
+- Cabe en GPU de consumo: si, en el sentido de que Apple Silicon integra GPU y memoria unificada; no es ejecutable en RTX 4090 ni en A100/H100 con este runtime.
+- Opciones de despliegue: exclusivamente el fork Metal Trellis (https://github.com/Christeck-AI/metal-trellis). No es compatible con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput medidos (M1 Max, 64 GB): decodificado de expertos a 18,7 tok/s, TTFT de prefill 0,44 s; en la ejecucion del benchmark, 16,6 tok/s de media.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / motor | Licencia | Notas |
-|---|---|---|---|---|---|
-| Christeck/Qwen3.5-35B-A3B-PACKED-GGUF (esta ficha) | ~35B totales, ~3B activos | no disponible | Packed GGUF / Metal Trellis | Apache 2.0 | Solo Apple Silicon; 12,99 GiB; 18,7 tok/s en M1 Max |
-| Qwen/Qwen3.5-35B-A3B (modelo base) | ~35B totales, ~3B activos | no disponible | safetensors (formato original) | Apache 2.0 | Requiere infraestructura de GPU para servir |
-| Christeck/Qwen3.8-27B-PACKED-GGUF (modelo hermano) | 27B densos | no disponible | Packed GGUF / Metal Trellis | Apache 2.0 | Prueba de corrección del motor; el autor lo describe como el menos práctico de la pareja |
-
-No se dispone de datos de benchmarks para establecer una comparación de calidad frente a alternativas.
+| Modelo | Parametros | Activos | Contexto | Licencia | Runtime | Notas |
+|---|---|---|---|---|---|---|
+| Christeck/Qwen3.5-35B-A3B-PACKED-GGUF | 35B (MoE) | ~3B | no disponible | Apache 2.0 | Metal Trellis (Apple Silicon) | 75 % en CT-Bench-mini; 18,7 tok/s en M1 Max |
+| Qwen/Qwen3.5-35B-A3B (base) | 35B (MoE) | ~3B | no disponible | Apache 2.0 | Multiples (segun pesos originales) | Referencia sin cuantizar; 73 % en CT-Bench-mini en Q8_0 |
+| Christeck/Qwen3.8-27B-PACKED-GGUF | 27B (denso) | 27B | no disponible | Apache 2.0 | Metal Trellis (Apple Silicon) | Hermano denso del mismo autor, descrito como prueba de correccion |
+| Alternativas GGUF estandar de clase 30-35B | no disponible | no disponible | no disponible | no disponible | llama.cpp, Ollama | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- No es un GGUF estándar: no funciona con llama.cpp, Ollama, vLLM ni TGI; requiere el fork Metal Trellis y macOS sobre Apple Silicon.
-- Solo se declaran inglés y español como idiomas soportados; el rendimiento en otros idiomas no está documentado.
-- La longitud de contexto no se especifica en la información disponible, por lo que no puede planificarse su uso en tareas de contexto largo sin verificación previa.
-- Al ser un reempaque sin reentrenamiento, hereda los sesgos y el riesgo de alucinación del modelo base Qwen3.5-35B-A3B, no evaluados en esta publicación.
-- Publicación con 0 descargas y 0 likes en el momento de la consulta: ecosistema de usuario muy reducido y poca validación externa.
-- La licencia Apache 2.0 permite uso comercial, pero el requisito de un motor específico (Metal Trellis) condiciona el despliegue en producción.
-- Las métricas de rendimiento proceden únicamente del autor y de un solo equipo (M1 Max 64 GB); no hay verificación independiente.
+- Dependencia total del motor Metal Trellis: no es un GGUF estandar y no carga en llama.cpp, Ollama, vLLM ni TGI; migrar a otro runtime exige reconvertir desde el checkpoint EXL3 original.
+- Restriccion de plataforma: solo Apple Silicon con Metal y macOS; inutilizable en servidores x86 con GPU NVIDIA o AMD.
+- Rendimiento limitado por el decodificado trellis: 18,7 tok/s frente a 51,8 tok/s del base Q8_0, una penalizacion de velocidad de aproximadamente 2,8x.
+- Cobertura de benchmarks estrecha: solo CT-Bench-mini, con tareas no publicadas y un unico seed (42); no hay MMLU, HumanEval ni GSM8K que permitan comparaciones externas.
+- Cobertura de idiomas declarada limitada a ingles y espanol; el rendimiento en otros idiomas no esta evaluado.
+- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin verificacion empirica.
+- Posible riesgo de alucinacion propio de los modelos generativos; no se documentan evaluaciones de factualidad ni de sesgos.
+- Confusion potencial en el recuento de parametros: el repo safetensors indica 7.108.758.656, que corresponde a los tensores empaquetados y no a los 35B del modelo base; conviene no interpretarlo como tamano real del modelo.
+- Licencia Apache 2.0 permisiva para uso comercial, heredada del modelo base, con la cuantizacion EXL3 acreditada a Turboderp (MIT); se distribuye "AS IS" sin garantias.
+- El autor declara explicitamente que "el producto es el motor": el fichero es una copia de cortesia y puede quedar desactualizado respecto al repositorio de Metal Trellis.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Christeck/Qwen3.5-35B-A3B-PACKED-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Motor Metal Trellis: https://github.com/Christeck-AI/metal-trellis
-- Modelo hermano (denso, prueba de corrección): https://huggingface.co/Christeck/Qwen3.8-27B-PACKED-GGUF
-- Cuantización EXL3 (ExLlamaV3, Turboderp): no disponible en la información proporcionada
+- Modelo hermano denso: https://huggingface.co/Christeck/Qwen3.8-27B-PACKED-GGUF
+- ExLlamaV3 (cuantizacion EXL3 de Turboderp): no disponible en la informacion proporcionada
+- Paper o blog del modelo base Qwen3.5-35B-A3B: no disponible en la informacion proporcionada

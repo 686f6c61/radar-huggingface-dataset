@@ -2,105 +2,93 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantizacion GGUF en formato Q4_K_M del modelo DeepSeek-Coder-V2-Lite-Instruct, publicada por el usuario 1bit-MONSTER. No se trata de un modelo entrenado desde cero, sino de una reempaquetado del GGUF Q4_K_M generado originalmente por bartowski, orientado a su ejecucion en el motor de inferencia propio del autor (1bit engine) sobre hardware Strix Halo mediante Vulkan. El modelo base es un Mixture-of-Experts (MoE) de aproximadamente 15.700 millones de parametros totales desarrollado por DeepSeek, especializado en generacion de codigo y con capacidad conversacional tras un proceso de instruccion.
+DeepSeek-Coder-V2-Lite-Instruct es un modelo de lenguaje especializado en codigo desarrollado por DeepSeek, publicado originalmente como parte de la familia DeepSeek-Coder-V2. Se trata de un modelo con arquitectura Mixture of Experts (MoE) de aproximadamente 15.700 millones de parametros totales, disenado para tareas de generacion de codigo, comprension de repositorios y razonamiento matematico. Esta ficha describe concretamente la redistribucion en formato GGUF cuantizado Q4_K_M publicada por el usuario 1bit-MONSTER, orientada a su ejecucion en el motor propio "1bit engine" sobre hardware Strix Halo.
 
-La relevancia de esta publicacion es doble. Por un lado, DeepSeek-Coder-V2-Lite-Instruct es un modelo MoE con una cantidad muy reducida de parametros activos por token, lo que permite velocidades de decodificacion altas incluso en hardware de gama consumer. Por otro, el autor aporta mediciones reales de rendimiento (pp512 de 2002 tok/s y tg128 de 99,5 tok/s) sobre una plataforma concreta, algo poco habitual en repositorios de cuantizaciones y util para estimar expectativas de despliegue.
+El repositorio no contiene el modelo original en safetensors, sino una conversion a GGUF realizada por bartowski y re-alojada por 1bit-MONSTER con mediciones de rendimiento anadidas. El tamano del repositorio es de 10,4 GB y el unico archivo incluido es `DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M.gguf`. La relevancia de esta ficha radica en que permite ejecutar un MoE de ~16B parametros totales en hardware de consumo mediante cuantizacion de 4 bits, manteniendo la naturaleza conversacional e instruct del modelo base.
 
-El repositorio tiene un tamano de 10,4 GB y un unico archivo de pesos. Su licencia es la DeepSeek License Agreement, que permite uso comercial con restricciones basadas en el uso (prevencion de usos indebidos), no una licencia permisiva estandar tipo Apache o MIT. El numero de descargas y de "likes" registrado es cero en la fecha de creacion del repositorio.
+La licencia aplicable es la DeepSeek License Agreement, que permite uso comercial con restricciones de uso orientadas a la prevencion de abusos, y no es una licencia plenamente permisiva como Apache 2.0 o MIT. Los datos de rendimiento publicados fueron medidos en septiembre de 2026 con el backend Vulkan del motor, que ya ha sido retirado, por lo que las cifras actuales sobre la ruta HRX estan pendientes de re-medicion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con Mixture-of-Experts y Multi-head Latent Attention (modelo base) |
-| Parametros totales | 15.706.484.224 (aprox. 15,7 B) |
-| Parametros activos | no disponible en la informacion proporcionada para este repositorio (el modelo base MoE activa una fraccion reducida del total por token) |
-| Longitud de contexto | no disponible en la informacion proporcionada para el repositorio; el modelo base declara 128 000 tokens |
-| Tipos de cuantizacion | GGUF Q4_K_M (unica variante publicada en este repo) |
-| Idiomas soportados | no disponible en la ficha del repositorio; el modelo base esta orientado a ingles y chino en lenguaje natural, ademas de lenguajes de programacion |
-| Licencia | DeepSeek License Agreement (license_name: deepseek-license), con uso comercial permitido y restricciones de uso |
-| Formato de pesos | GGUF (archivo `DeepSeek-Coder-V2-Lite-Instruct-Q4_K_M.gguf`) |
+| Arquitectura | Mixture of Experts (MoE), transformer |
+| Parametros totales | 15.706.484.224 (~15,7B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (unica incluida en el repo) |
+| Idiomas soportados | no disponible |
+| Licencia | DeepSeek License Agreement (license: other) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base DeepSeek-Coder-V2-Lite es un transformer con capas de atencion de tipo Multi-head Latent Attention (MLA) y capas feed-forward sustituidas por una mezcla de expertos (MoE). Esta combinacion reduce el coste de cache KV y incrementa la capacidad efectiva del modelo sin que el coste computacional por token crezca en la misma proporcion que los parametros totales. El modelo fue entrenado por DeepSeek sobre un corpus masivo que, segun la documentacion del modelo base, incluye 6 billones de tokens adicionales sobre la base de DeepSeek-V2, con cobertura declarada de cientos de lenguajes de programacion.
+El modelo base es un transformer con arquitectura Mixture of Experts, segun indican las etiquetas del repositorio (`moe`, `coder`). El dato de parametros totales confirmado a partir de los safetensors del modelo original es de 15.706.484.224. No se dispone en la informacion proporcionada del numero de parametros activos por token, del numero de expertos, ni de la composicion del dataset de entrenamiento.
 
-La variante Instruct incorpora un ajuste posterior al preentrenamiento para alinearse con instrucciones, lo que la habilita para tareas conversacionales, generacion de codigo guiada por prompt y relleno de codigo en medio de un contexto (fill-in-the-middle). En este repositorio no se documentan detalles del dataset de instruccion, del proceso de RLHF/DPO ni de innovaciones adicionales mas alla de la cuantizacion. El unico dato tecnico aportado por el autor es la cuantizacion Q4_K_M realizada por bartowski y las mediciones de rendimiento del motor 1bit sobre Vulkan en Strix Halo.
+Respecto al proceso de cuantizacion, el archivo GGUF Q4_K_M procede de la conversion realizada por bartowski sobre el modelo instruct original y ha sido re-alojado por 1bit-MONSTER. La model card menciona el uso de una tabla `imatrix` (etiqueta del repositorio), tecnica habitual para mejorar la calidad de la cuantizacion en modelos MoE. No se detallan en la informacion disponible datos sobre RLHF, DPO ni innovaciones de decodificacion especulativa.
 
 ## Capacidades
 
-- Generacion de codigo en multiples lenguajes de programacion, heredada del entrenamiento del modelo base sobre un corpus amplio de codigo.
-- Razonamiento sobre codigo: explicacion, refactorizacion, deteccion de errores y generacion de pruebas, propio de un modelo Instruct especializado.
-- Relleno de codigo en medio (fill-in-the-middle), util para autocompletado en editores.
-- Conversacion multi-turno con prompts de instruccion.
-- Matemáticas basicas y razonamiento cuantitativo derivado del entrenamiento en codigo y textos tecnicos.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada para este repositorio.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada para este repositorio.
-- Capacidades multilingues en lenguaje natural: no disponible en la informacion proporcionada para este repositorio; el modelo base esta orientado a ingles y chino.
-- Modo "thinking" o razonamiento extendido: no disponible.
-- Vision o audio: no soportado, es un modelo exclusivamente de texto y codigo.
+- Generacion y completado de codigo en el contexto de un modelo instruct conversacional.
+- Razonamiento sobre codigo y tareas de comprension de repositorios, heredado de la familia DeepSeek-Coder-V2.
+- Capacidad conversacional multi-turno, segun la etiqueta `conversational` del repositorio.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere integracion con APIs compatibles con OpenAI.
+- Ejecucion local mediante llama.cpp a traves del motor 1bit engine.
+- No se dispone de informacion sobre soporte de tool calling, function calling, agentes, vision o audio en la informacion proporcionada.
 
 ## Casos de uso
 
-- Autocompletado de codigo en editores: al ser un modelo Instruct con soporte de relleno en medio en el modelo base y un peso Q4_K_M de unos 10,4 GB, puede ejecutarse localmente para sugerir lineas completas con baja latencia en estaciones de trabajo con GPU consumer.
-- Asistente de revision de pull requests: el modelo puede analizar diferencias de codigo, proponer correcciones y explicar el impacto de un cambio en un pipeline de integracion continua, siempre que se integre mediante un servidor GGUF compatible con la API de chat.
-- Generacion de pruebas unitarias: dado un fragmento de codigo, el modelo produce casos de prueba en distintos frameworks, lo que encaja en flujos de trabajo que ya invocan un modelo mediante HTTP.
-- Traduccion entre lenguajes de programacion: conversiones de Python a Rust, Java a Go y similares, aprovechando la cobertura multilingue de lenguajes del modelo base.
-- Documentacion tecnica automatizada: generar docstrings, comentarios y documentacion de API a partir del codigo fuente, tarea de bajo riesgo donde la verificacion humana es sencilla.
-- Chat de soporte para desarrolladores: un asistente interno que responde preguntas sobre una base de codigo concreta, executable en hardware local para evitar enviar codigo propietario a servicios en la nube.
-- Prototipado en entornos con recursos limitados: gracias a la arquitectura MoE del modelo base, la decodificacion es rapida por token, lo que permite usarlo como motor de generacion en portatiles o mini-PC con GPU integrada.
-- Analisis de registros de error: dado un stack trace y el codigo relevante, el modelo puede proponer hipotesis sobre la causa raiz, aunque requiere supervision por el riesgo de alucinacion.
+- Asistente de codigo en local: el modelo puede desplegarse en una estacion de trabajo con GPU de consumo gracias a su cuantizacion Q4_K_M y su naturaleza MoE, ofreciendo autocompletado y explicacion de fragmentos de codigo sin depender de servicios en la nube.
+- Revision de codigo automatizada: integrado en un pipeline de CI, el modelo puede generar comentarios sobre diffs y detectar patrones problematicos en el codigo enviado, aprovechando su entrenamiento especifico en codigo.
+- Generacion de tests unitarios: dado un fragmento de codigo fuente, el modelo puede producir casos de prueba en el mismo lenguaje, reduciendo el trabajo manual en proyectos con cobertura baja.
+- Migracion y traduccion entre lenguajes: el modelo puede reescribir funciones de un lenguaje a otro manteniendo la semantica, util en proyectos de modernizacion de codebases legacy.
+- Documentacion tecnica asistida: generacion de docstrings y comentarios a partir del codigo, con un modelo instruct que responde a instrucciones en lenguaje natural.
+- Chat tecnico integrado en IDE: al ser un modelo conversacional, puede mantener un dialogo multi-turno con el desarrollador para resolver dudas sobre una base de codigo concreta.
+- Despliegue en hardware de consumo: con 10,4 GB de pesos en Q4_K_M, puede ejecutarse en GPUs consumer de gama alta o en sistemas con memoria unificada como Strix Halo, segun las mediciones del autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para este repositorio. El autor unicamente aporta mediciones de rendimiento de inferencia en una plataforma Strix Halo con backend Vulkan y el motor 1bit:
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor unicamente publica metricas de rendimiento de inferencia en hardware concreto:
 
-| Metrica | Valor medido |
-|---|---|
-| pp512 (prefill, 512 tokens) | 2002 tok/s |
-| tg128 (generacion, 128 tokens) | 99,5 tok/s |
-| Plataforma | Strix Halo, Vulkan, motor 1bit |
+| Metrica | Valor | Hardware / backend | Fecha |
+|---|---|---|---|
+| pp512 (prefill) | 2002 tok/s | Strix Halo, Vulkan | 2026-09 |
+| tg128 (generacion) | 99,5 tok/s | Strix Halo, Vulkan | 2026-09 |
 
-Para las puntuaciones en tareas como HumanEval, MBPP, GSM8K o MMLU, consultar la model card y el articulo del modelo base DeepSeek-Coder-V2; este repositorio no las reproduce ni las verifica.
+Nota: el backend Vulkan fue retirado del motor; las cifras sobre la ruta HRX estan pendientes de re-medicion segun la propia model card.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia con el archivo Q4_K_M: aproximadamente 11-13 GB con contexto moderado, partiendo de un archivo de pesos de 10,4 GB mas la cache KV y el overhead del runtime.
-- Cuantizaciones mas ligeras (Q3_K_M, Q2_K) permitirian bajar del umbral de los 10 GB, pero no estan publicadas en este repositorio.
-- GPU recomendadas para offload completo: RTX 4090 (24 GB), RTX 4080 (16 GB), RTX 4070 Ti Super (16 GB), A100 y H100 para despliegues con contexto largo.
-- GPU consumer en las que cabe: RTX 4090, RTX 4080, RTX 4070 Ti Super y, con contexto reducido, tarjetas de 12 GB como la RTX 3060 12 GB o la RTX 4070.
-- Ejecucion en memoria unificada: el autor reporta la ejecucion en Strix Halo (APU con memoria compartida), donde el modelo no requiere VRAM dedicada.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores GGUF compatibles con la API de OpenAI, y el motor 1bit del propio autor. Para vLLM o TGI sera necesario convertir a safetensors, ya que el formato GGUF no es su via principal.
-- Latencia y throughput: en Strix Halo con Vulkan se midieron 2002 tok/s en prefill y 99,5 tok/s en decodificacion; en GPU dedicada las cifras dependen del ancho de banda de memoria y del numero de capas descargadas a GPU.
+- VRAM estimada: aproximadamente 10,4 GB solo para los pesos en Q4_K_M, mas overhead de contexto y cache KV; en la practica se recomienda disponer de 12-16 GB de memoria grafica o unificada.
+- GPU recomendadas: el autor ha medido sobre Strix Halo (memoria unificada). Por tamano, cabria en RTX 4090 (24 GB), RTX 4080 (16 GB) y RTX 3090 (24 GB); en GPUs de 8 GB no cabria en esta cuantizacion.
+- Cabe en GPU consumer: si, en modelos con 12 GB o mas de VRAM en esta cuantizacion.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), motor 1bit engine (`1bit serve -m ... --device hrx`), y cualquier runtime compatible con GGUF como Ollama o LM Studio. No se confirma soporte de vLLM o TGI para este archivo.
+- Throughput medido: 2002 tok/s en prefill (pp512) y 99,5 tok/s en generacion (tg128) sobre Strix Halo con backend Vulkan (septiembre de 2026).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato en este contexto |
-|---|---|---|---|---|---|
-| DeepSeek-Coder-V2-Lite-Instruct (este repo, Q4_K_M) | 15,7 B | no disponible en esta ficha | no disponible en esta ficha (128 000 en el modelo base) | DeepSeek License Agreement | GGUF Q4_K_M |
-| DeepSeek-Coder-V2-Lite-Instruct (original de DeepSeek) | 15,7 B | no disponible en esta ficha | 128 000 (modelo base) | DeepSeek License Agreement | safetensors |
-| Qwen2.5-Coder-7B | 7 B | no aplica (denso) | no disponible en la informacion proporcionada | Apache 2.0 (segun su propia ficha) | safetensors, GGUF |
-| StarCoder2-15B | 15 B | no aplica (denso) | no disponible en la informacion proporcionada | BigCode OpenRAIL-M | safetensors, GGUF |
+| Modelo | Parametros totales | Contexto | Licencia | Formato disponible |
+|---|---|---|---|---|
+| DeepSeek-Coder-V2-Lite-Instruct (este repo, GGUF Q4_K_M) | ~15,7B (MoE) | no disponible | DeepSeek License | GGUF |
+| deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct (original) | ~15,7B (MoE) | no disponible | DeepSeek License | safetensors |
+| bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF (origen de la cuantizacion) | ~15,7B (MoE) | no disponible | DeepSeek License | GGUF |
 
-La comparacion de rendimiento entre estos modelos no se incluye porque no hay datos de benchmarks en la informacion proporcionada. La diferencia estructural mas relevante es la condicion MoE del modelo DeepSeek, que reduce el coste de decodificacion frente a alternativas densas del mismo orden de parametros totales.
+No se dispone en la informacion proporcionada de datos de rendimiento comparativo frente a otras alternativas; la comparativa se limita a parametros, licencia y formato. Otros modelos comparables de la misma categoria no estan documentados en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Es una cuantizacion Q4_K_M: la perdida de precision respecto a los pesos originales puede degradar tareas de razonamiento complejo o de generacion de codigo muy largo, aunque suele ser tolerable en tareas de autocompletado y chat.
-- El modelo puede alucinar APIs, funciones o firmas de librerias que no existen; verificar siempre el codigo generado antes de ejecutarlo o integrarlo en produccion.
-- La ficha del repositorio no documenta los idiomas soportados; el modelo base esta orientado a ingles y chino, por lo que el rendimiento en castellano puede ser inferior.
-- La licencia DeepSeek License Agreement no es una licencia permisiva estandar: permite uso comercial, pero incluye restricciones basadas en el uso. Es obligatorio revisar el texto de la licencia antes de desplegar en productos comerciales.
-- El repositorio tiene cero descargas y cero "likes" en la fecha de creacion, y esta publicado por un usuario no oficial. No hay garantia de mantenimiento ni de soporte.
-- Las mediciones de rendimiento proceden de un unico entorno (Strix Halo con Vulkan y el motor 1bit); extrapolarlas a otras plataformas es arriesgado.
-- No hay informacion en el repositorio sobre soporte de tool calling, agentes, ni sobre la composicion del dataset de instruccion, lo que dificulta evaluar su idoneidad para flujos agenticos.
-- El contexto efectivo en la practica depende de la implementacion del runtime; aunque el modelo base declare 128 000 tokens, el consumo de memoria de la cache KV a esa longitud puede exceder la VRAM de tarjetas consumer.
+- La licencia DeepSeek License Agreement no es plenamente permisiva: incluye restricciones de uso orientadas a la prevencion de abusos, por lo que conviene revisar el texto completo antes de un despliegue comercial.
+- La cuantizacion Q4_K_M introduce perdida de precision respecto al modelo original en safetensors; la calidad en tareas de codigo complejo puede degradarse.
+- El repositorio solo incluye una unica cuantizacion (Q4_K_M); no hay variantes de mayor o menor precision.
+- Las metricas de rendimiento publicadas corresponden a un backend (Vulkan) ya retirado del motor; las cifras actuales sobre HRX no estan verificadas.
+- No se dispone de informacion sobre sesgos, idiomas soportados ni tasas de alucinacion en la informacion proporcionada.
+- El modelo esta especializado en codigo; su rendimiento en tareas generales de lenguaje natural fuera de ese dominio no esta documentado en esta ficha.
+- El repositorio tiene un numero muy bajo de descargas (281) y likes (1), lo que limita la validacion comunitaria de la cuantizacion.
 
 ## Enlaces
 
-- Repositorio del GGUF: https://huggingface.co/1bit-MONSTER/DeepSeek-Coder-V2-Lite-Instruct-GGUF
-- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
-- Cuantizacion original de bartowski: https://huggingface.co/bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF
-- Motor 1bit del autor: https://github.com/1bit-MONSTER/engine
-- Articulo de DeepSeek-Coder-V2 (arXiv:2406.11931): https://arxiv.org/abs/2406.11931
-- Repositorio de codigo de DeepSeek-Coder-V2: https://github.com/deepseek-ai/DeepSeek-Coder-V2
-- Licencia incluida en el repositorio: archivo `LICENSE` del repositorio del GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/DeepSeek-Coder-V2-Lite-Instruct-GGUF
+- Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
+- Cuantizacion de origen (bartowski): https://huggingface.co/bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF
+- Motor 1bit engine: https://github.com/1bit-MONSTER/engine
+- Familia de modelos del autor: https://huggingface.co/1bit-MONSTER#families

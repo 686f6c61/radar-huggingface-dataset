@@ -58,27 +58,27 @@
     {
       "title": "Home - OpenSearch",
       "url": "https://opensearch.org/",
-      "snippet": "OpenSearch is a community-driven, Apache 2.0-licensed open source search and analytics suite that makes it easy to ingest, …"
-    },
-    {
-      "title": "OpenSearch documentation and user guides",
-      "url": "https://docs.opensearch.org/latest/",
-      "snippet": "Documentation for OpenSearch, the Apache 2.0 search, analytics, and visualization suite with advanced security, alerting, SQL …"
-    },
-    {
-      "title": "Download & Get Started - OpenSearch",
-      "url": "https://opensearch.org/downloads/",
-      "snippet": "Download OpenSearch and deploy our open source search and analytics suite along with tools to support log analytics, …"
-    },
-    {
-      "title": "Qu’est-ce qu’OpenSearch ? – Explication d’OpenSearch – AWS",
-      "url": "https://aws.amazon.com/fr/what-is/opensearch/",
-      "snippet": "Découvrez ce qu’est la suite OpenSearch, son fonctionnement, pourquoi les entreprises l’utilisent et comment l’utiliser avec Amazon …"
+      "snippet": "OpenSearch is a community-driven, Apache 2.0-licensed open source search and analytics suite that makes it easy to ingest, …Read more"
     },
     {
       "title": "OpenSearch (software) - Wikipedia",
       "url": "https://en.wikipedia.org/wiki/OpenSearch_(software)",
-      "snippet": "OpenSearch is a family of software consisting of a search engine (also named OpenSearch), and OpenSearch Dashboards, a data …"
+      "snippet": "OpenSearch is a family of software consisting of a search engine (also named OpenSearch), and OpenSearch Dashboards, a data …Read more"
+    },
+    {
+      "title": "Qu’est-ce qu’OpenSearch ? – Explication d’OpenSearch – AWS",
+      "url": "https://aws.amazon.com/fr/what-is/opensearch/",
+      "snippet": "Découvrez ce qu’est la suite OpenSearch, son fonctionnement, pourquoi les entreprises l’utilisent et comment l’utiliser avec Amazon …Read more"
+    },
+    {
+      "title": "Download & Get Started - OpenSearch",
+      "url": "https://opensearch.org/downloads/",
+      "snippet": "Download OpenSearch and deploy our open source search and analytics suite along with tools to support log analytics, …Read more"
+    },
+    {
+      "title": "OpenSearch documentation and user guides",
+      "url": "https://docs.opensearch.org/latest/",
+      "snippet": "Documentation for OpenSearch, the Apache 2.0 search, analytics, and visualization suite with advanced security, alerting, SQL …Read more"
     }
   ]
 }

@@ -50,6 +50,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Mapillary Türkiye validation split (model-generated labels)",
+      "metric": "mAP@50",
+      "value": 0.7558
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Mapillary Türkiye validation split (model-generated labels)",
+      "metric": "mAP@50-95",
+      "value": 0.5905
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Mapillary Türkiye validation split (model-generated labels)",
+      "metric": "Precision",
+      "value": 0.8036
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Mapillary Türkiye validation split (model-generated labels)",
+      "metric": "Recall",
+      "value": 0.7022
+    }
+  ],
   "sources": []
 }

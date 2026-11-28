@@ -2,118 +2,120 @@
 
 ## Resumen
 
-hinglish-embed-small es un modelo de embeddings de texto de 37 millones de parámetros desarrollado por el usuario rahul27474 y publicado en Hugging Face. Está especializado en la recuperación semántica de texto Hinglish romanizado (hindi escrito con alfabeto latino), hindi en devanagari e inglés, y se presenta como una alternativa ligera y rápida en CPU para pipelines de RAG y búsqueda semántica en el contexto del mercado indio. Deriva de intfloat/multilingual-e5-small mediante fine-tuning y reducción de vocabulario, no se entrena desde cero.
+hinglish-embed-small es un modelo de embeddings de texto de 37 millones de parámetros especializado en hinglish romanizado (hindi escrito con alfabeto latino), hindi en devanagari e inglés. Lo desarrolla rahul27474 y deriva de intfloat/multilingual-e5-small mediante fine-tuning y reducción de vocabulario. Resuelve un problema concreto: los embedders multilingües genéricos manejan mal el texto code-mixed, con erratas y estilo SMS que predomina en las consultas reales de usuarios indios, y este modelo está entrenado específicamente para emparejar texto en cualquiera de las tres formas contra las otras dos.
 
-El problema que aborda es concreto: los usuarios indios escriben con frecuencia mezclas de hindi romanizado, abreviaturas tipo SMS y errores ortográficos ("bhai upi se paise kat gaye par receiver ko nhi mile") que los embedders multilingües genéricos manejan mal. El modelo está entrenado para emparejar consultas en cualquiera de las tres formas (hinglish, hindi, inglés) contra documentos en cualquiera de las tres, con embeddings de 384 dimensiones y similitud coseno.
+La arquitectura es un transformer BERT con 36.999.552 parámetros totales y embeddings de 384 dimensiones con similitud coseno. Incorpora entrenamiento Matryoshka, lo que permite truncar los vectores a 256 o 128 dimensiones con pérdida mínima. El modelo es 3,2 veces más pequeño que multilingual-e5-small y 15 veces más pequeño que bge-m3, lo que lo hace apto para inferencia en CPU.
 
-Su relevancia práctica reside en la relación calidad/tamaño: con 37M de parámetros es 3,2 veces más pequeño que multilingual-e5-small y 15 veces más pequeño que bge-m3, incluye pesos ONNX int8 de 38 MB y se distribuye con licencia MIT, lo que permite uso comercial. La longitud de contexto no se especifica en la información disponible, aunque los ejemplos de uso truncan a 512 tokens.
+Su relevancia actual radica en el ecosistema de recuperación aumentada (RAG) para mercados indios: incluye pesos ONNX int8 de 38 MB con latencia de aproximadamente 10 ms por consulta en CPU, licencia MIT para uso comercial y compatibilidad con sentence-transformers, LangChain, LlamaIndex, text-embeddings-inference y un servidor compatible con la API de OpenAI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo BERT (encoder), derivado de intfloat/multilingual-e5-small |
-| Parametros totales | 36.999.552 (37M) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (los ejemplos de uso truncan a 512 tokens) |
-| Tipos de cuantizacion | ONNX int8 (`onnx/model_quint8_avx2.onnx`, 38 MB) y ONNX fp32; pesos safetensors en fp32 |
-| Idiomas soportados | Hindi (devanagari), inglés y hinglish romanizado (códigos hi, en) |
+| Arquitectura | Transformer BERT (derivado de intfloat/multilingual-e5-small) |
+| Parametros totales | 36.999.552 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | ONNX int8 (38 MB); pesos safetensors en precision original |
+| Idiomas soportados | hi (hindi devanagari), en (inglés), hinglish romanizado |
 | Licencia | MIT |
-| Formato de pesos | safetensors, ONNX (int8 y fp32) |
-| Dimension de embedding | 384 |
-| Funcion de similitud | Coseno |
-| Prefijos requeridos | `query: ` para consultas, `passage: ` para documentos |
-| Tamano del repo | 0,3 GB |
+| Formato de pesos | safetensors, ONNX |
+| Dimension de embeddings | 384 (truncable a 256 y 128 via Matryoshka) |
+| Funcion de similitud | coseno |
+| Prefijos de tarea | `query: ` / `passage: ` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer de tipo BERT con 37M de parámetros, obtenido por fine-tuning y recorte de vocabulario a partir de intfloat/multilingual-e5-small (118M). El recorte de vocabulario reduce el consumo de memoria, pero según el autor no reduce los FLOPs por token, por lo que el throughput en lote se mantiene similar al del modelo base. Los embeddings se generan con pooling medio y normalización L2, y se comparan por similitud coseno.
+El modelo parte de intfloat/multilingual-e5-small y se somete a fine-tuning con reducción de vocabulario (vocab-trimming) para adaptarlo al dominio hinglish. No se entrena desde cero. La arquitectura subyacente es un transformer BERT encoder-only que produce embeddings de 384 dimensiones, entrenado con objetivos de similitud de frases y con entrenamiento Matryoshka que permite truncar la dimensionalidad de salida.
 
-El entrenamiento se realizó sobre el dataset rahul27474/hinglish-retrieval-train, orientado a recuperación en dominios cotidianos y de atención al cliente indios (UPI, IRCTC, Aadhaar/PAN, telecomunicaciones, seguros, reparto de comida). La evaluación se hizo sobre rahul27474/hinglish-retrieval-bench, con 3.626 pasajes multilingües y 268 temas retenidos en 40 dominios. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO; al tratarse de un modelo de embeddings, el objetivo es de similitud/recuperación y no de generación. El autor advierte que el benchmark es sintético y fue generado por el mismo pipeline LLM que los datos de entrenamiento, por lo que la ventaja observada podría reducirse en datos reales.
+El entrenamiento utiliza el dataset rahul27474/hinglish-retrieval-train, y la evaluación se realiza sobre rahul27474/hinglish-retrieval-bench, un conjunto de 3.626 pasajes multilingües que cubren 268 temas retenidos en 40 dominios de help-desk indio (UPI, IRCTC, Aadhaar/PAN, telecomunicaciones, seguros, reparto de comida, entre otros). La model card no detalla el número de tokens de entrenamiento ni si se aplicaron técnicas de RLHF o DPO; esos datos no están disponibles en la información proporcionada. La innovación técnica destacable es la combinación de Matryoshka con la especialización en texto code-mixed romanizado.
 
 ## Capacidades
 
-- Generación de embeddings de texto de 384 dimensiones para similitud semántica y recuperación (retrieval).
-- Recuperación cross-lingüe entre hinglish romanizado, hindi en devanagari e inglés: una consulta en cualquiera de las tres formas puede recuperar documentos en cualquiera de las otras.
-- Soporte de RAG (retrieval-augmented generation) como componente de indexación y búsqueda.
-- Feature extraction para pipelines de clasificación, clustering o deduplicación semántica.
-- Prefijos de tarea integrados (`query:` / `passage:`) accesibles mediante `encode_query` / `encode_document` en sentence-transformers 5 o superior.
-- Compatibilidad con ONNX y transformers.js para ejecución en CPU y en navegador.
-- Compatibilidad con text-embeddings-inference y endpoints compatibles según los tags del repositorio.
-- Integración con LangChain y LlamaIndex mediante sus wrappers de sentence-transformers/HuggingFace.
-- No dispone de tool calling, agentes, razonamiento multi-paso, visión ni audio: es exclusivamente un modelo de embeddings.
+- Generación de embeddings de texto para similitud semántica y recuperación (pipeline sentence-similarity y feature-extraction).
+- Recuperación y búsqueda semántica para RAG, con soporte de prefijos `query:` y `passage:`.
+- Detección de duplicados en tickets y consultas.
+- Clasificación de intenciones mediante best-match contra etiquetas.
+- Emparejamiento entre formas lingüísticas: hinglish romanizado, hindi devanagari e inglés, en cualquier dirección.
+- Truncado de dimensionalidad Matryoshka a 256 o 128 dimensiones.
+- Integración con LangChain (`HinglishEmbeddings`), LlamaIndex (`HinglishEmbedding`), CLI y servidor compatible con `/v1/embeddings` de OpenAI.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generación de texto: es exclusivamente un modelo de embeddings.
 
 ## Casos de uso
 
-- Chatbot de soporte con FAQ: indexar respuestas de atención al cliente en hinglish, hindi e inglés y recuperar la más relevante para consultas informales como "refund kab aayega", usando los prefijos `query:` y `passage:` y similitud coseno sobre embeddings de 384 dimensiones.
-- Búsqueda semántica en atención al cliente de servicios financieros: recuperar documentación sobre UPI, reembolsos o fallos de transacción a partir de consultas escritas en hinglish romanizado, un dominio incluido explícitamente en el benchmark del modelo.
-- RAG sobre documentación de trámites administrativos: indexar textos sobre Aadhaar, PAN, IRCTC o portabilidad telefónica y recuperar pasajes relevantes para consultas en cualquiera de los tres idiomas, con la ventaja de que el modelo es cross-lingüe.
-- Despliegue en CPU de bajo coste: con los pesos ONNX int8 (38 MB) y una latencia de 12,8 ms por consulta en una caja de 4 vCPU, es adecuado para servicios de búsqueda en entornos sin GPU o con presupuesto limitado.
-- Búsqueda en navegador sin servidor: mediante transformers.js con dtype q8, permite ejecutar la búsqueda semántica localmente en el cliente, útil para demos o aplicaciones con requisitos de privacidad.
-- Deduplicación y clustering de tickets de soporte: generar embeddings de tickets en hinglish y agrupar consultas equivalentes escritas con variantes ortográficas distintas para enrutarlas al equipo adecuado.
-- Moderación o clasificación de contenido multilingüe: usar los embeddings como features de entrada para clasificadores que operen sobre texto mezclado hindi-inglés.
+- Bots de FAQ y atención al cliente: el modelo permite construir un índice de respuestas y devolver la más cercana a consultas como "mera paisa wapas kab milega", gracias a su entrenamiento específico en hinglish romanizado y a su capacidad de separar pares con significado distinto.
+- Búsqueda semántica en documentación de producto: indexar pasajes en hindi, inglés o hinglish y consultar en cualquiera de las tres formas, con recuperación cross-lingüe validada en Belebele (0,611 nDCG@10 en consulta hin_Latn a pasaje inglés).
+- Detección de tickets duplicados en mesas de soporte: `find_duplicates` agrupa formulaciones distintas del mismo problema ("app crash ho raha hai" frente a "mera app crash rha h") sin depender de coincidencia léxica.
+- Enrutamiento de intenciones: `best_match` asigna una consulta a una categoría predefinida (payment issue, delivery issue, login issue) con embeddings de 384 dimensiones y latencia de CPU baja.
+- RAG sobre bases de conocimiento de help-desk indio: los 3.626 pasajes del benchmark cubren 40 dominios (UPI, IRCTC, Aadhaar/PAN, telecom, seguros, food delivery), lo que lo hace adecuado para pipelines de recuperación en esos verticales.
+- Despliegue en entornos sin GPU: los pesos ONNX int8 de 38 MB y los ~10 ms por consulta en CPU permiten ejecutar búsqueda semántica en servidores modestos, edge o navegador mediante transformers.js.
+- Integración en orquestadores low-code: el servidor compatible con `/v1/embeddings` permite conectarlo a n8n, Flowise o Dify sin escribir código.
 
 ## Benchmarks y rendimiento
 
-Resultados de nDCG@10 con relevancia graduada sobre hinglish-retrieval-bench (3.626 pasajes, 268 temas, 40 dominios):
+Resultados públicos MTEB (nDCG@10) reportados en la model card:
 
-| Modelo | Parámetros | Consultas hinglish | Consultas hindi | Consultas inglés |
+| Tarea | v1.2 (37M) | v1.1 | multilingual-e5-small (118M) | bge-m3 (568M) |
 |---|---|---|---|---|
-| hinglish-embed-small | 37M | 0,788 | 0,802 | 0,817 |
-| hinglish-embed-small, ONNX int8 | 37M | 0,785 | 0,800 | 0,815 |
-| BAAI/bge-m3 | 568M | 0,612 | 0,717 | 0,743 |
-| intfloat/multilingual-e5-small | 118M | 0,482 | 0,570 | 0,704 |
-| intfloat/multilingual-e5-base | 278M | 0,444 | 0,549 | 0,679 |
+| Belebele, Romanized Hindi (hin_Latn) | 0.587 | 0.574 | 0.538 | 0.617 |
+| Belebele, hin_Latn query → English passage | 0.611 | 0.608 | 0.582 | 0.634 |
+| Belebele, English query → hin_Latn passage | 0.453 | 0.406 | 0.407 | 0.491 |
+| Belebele, Hindi (hin_Deva) | 0.842 | 0.862 | 0.861 | 0.893 |
+| Belebele, hin_Deva query → English passage | 0.870 | 0.886 | 0.878 | no disponible |
+| Belebele, English | 0.923 | 0.942 | 0.948 | 0.955 |
+| IndicQA, Hindi | 0.612 | 0.639 | 0.658 | 0.669 |
+| SciFact, English | 0.666 | 0.672 | 0.675 | 0.641 |
+| NFCorpus, English | 0.296 | 0.304 | 0.310 | 0.317 |
+| ArguAna, English | 0.421 | 0.396 | 0.389 | 0.540 |
+| FiQA, English | 0.327 | 0.343 | 0.330 | 0.410 |
+| Media de las 11 tareas | 0.666 | 0.647 | 0.631 | no disponible |
 
-Recall@10 en consultas hinglish: 0,932 para hinglish-embed-small frente a 0,733 de bge-m3 y 0,573 de e5-small.
+Prueba práctica sobre 46 pares de frases cortas en hinglish y 33 consultas sobre 20 respuestas de help-desk:
 
-Latencia y throughput en CPU (4 vCPU, Kaggle, con sentence-transformers):
+| Metrica | multilingual-e5-small | v1.1 | v1.2 |
+|---|---|---|---|
+| AUC separando pares con mismo significado de distinto | 0.53 | 0.77 | 0.92 |
+| Mejor accuracy de umbral unico | 0.63 | 0.76 | 0.85 |
+| Puntuacion media, mismo significado / distinto | 0.86 / 0.86 | 0.81 / 0.74 | 0.81 / 0.62 |
+| Busqueda: respuesta correcta en posicion #1 | 0.64 | 0.64 | 0.85 |
 
-| Modelo y formato | Latencia por consulta | Throughput en lote |
-|---|---|---|
-| hinglish-embed-small, ONNX int8 | 12,8 ms | 112 sent/s |
-| hinglish-embed-small, ONNX fp32 | 15,7 ms | 101 sent/s |
-| hinglish-embed-small, PyTorch fp32 | 34,3 ms | 110 sent/s |
-| multilingual-e5-small, PyTorch fp32 | 29,2 ms | 115 sent/s |
-| bge-m3, PyTorch fp32 | ~248 ms | ~16 sent/s |
-
-El autor señala que el benchmark es sintético y generado por el mismo pipeline que los datos de entrenamiento, por lo que la ventaja podría ser menor en datos reales.
+El autor advierte que este conjunto es pequeño y debe tratarse como comprobación de cordura, no como benchmark. Los resultados del benchmark propio hinglish-retrieval-bench (nDCG@10 sobre 3.626 pasajes) aparecen truncados en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el modelo completo en fp32 ocupa aproximadamente 148 MB (37M parámetros × 4 bytes); en ONNX int8, unos 38 MB. Cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: no requiere GPU; cualquier GPU consumer (por ejemplo, RTX 3060, RTX 4090) puede ejecutarlo, pero su diseño está optimizado para CPU.
-- Cabe en GPU consumer: sí, en todas, dado su tamaño reducido.
-- Opciones de despliegue: sentence-transformers (PyTorch u ONNX), transformers, transformers.js (navegador o Node), text-embeddings-inference y endpoints compatibles, además de los wrappers de LangChain y LlamaIndex.
-- Latencia y throughput: 12,8 ms por consulta y 112 sentencias/s en lote con ONNX int8 en 4 vCPU; 15,7 ms y 101 sent/s con ONNX fp32; 34,3 ms y 110 sent/s con PyTorch fp32. La latencia por consulta con int8 es 2,3 veces menor que con e5-small y unas 19 veces menor que con bge-m3.
+- Inferencia en CPU: viable con los pesos ONNX int8 de 38 MB, con aproximadamente 10 ms por consulta.
+- VRAM estimada en GPU: no disponible en la información proporcionada; por el tamaño (37M parámetros) es holgada incluso en GPUs de gama baja.
+- GPU recomendadas: no especificadas por el autor; cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) es suficiente por el reducido tamaño del modelo.
+- Cabe en cualquier GPU consumer: sí, dado el tamaño de 37M parámetros y los pesos int8 de 38 MB.
+- Opciones de despliegue: sentence-transformers, ONNX Runtime, transformers.js (demo en navegador), text-embeddings-inference, servidor propio compatible con `/v1/embeddings`, CLI `hinglish-embed`.
+- Latencia y throughput: ~10 ms por consulta en CPU con int8; no se publican cifras de throughput en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | nDCG@10 hinglish | Licencia | Formatos |
-|---|---|---|---|---|---|
-| hinglish-embed-small | 37M | hi, en, hinglish | 0,788 | MIT | safetensors, ONNX int8/fp32 |
-| intfloat/multilingual-e5-small | 118M | multilingüe | 0,482 | MIT | safetensors |
-| intfloat/multilingual-e5-base | 278M | multilingüe | 0,444 | MIT | safetensors |
-| BAAI/bge-m3 | 568M | multilingüe | 0,612 | MIT | safetensors |
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| hinglish-embed-small v1.2 | 37M | no disponible | MIT | Hinglish romanizado, hindi, inglés |
+| intfloat/multilingual-e5-small | 118M | no disponible | MIT | Multilingüe general |
+| bge-m3 | 568M | no disponible | MIT | Multilingüe general, multivector |
 
-hinglish-embed-small es el más pequeño de la comparativa, el único con pesos ONNX int8 incluidos y el que obtiene los mejores resultados en el benchmark del autor para las tres formas de consulta. La longitud de contexto de los modelos comparados no se detalla en la información disponible.
+Frente a multilingual-e5-small, hinglish-embed-small es 3,2 veces más pequeño, gana en las tareas de hinglish romanizado (0,587 frente a 0,538 en Belebele hin_Latn) y en recuperación cross-lingüe hin_Latn→inglés (0,611 frente a 0,582), pero pierde 1-3 puntos en hindi devanagari puro y en inglés puro. Frente a bge-m3, es 15 veces más pequeño y unas 20 veces más rápido en CPU, aunque bge-m3 sigue siendo superior en las tareas generales (0,617 frente a 0,587 en hin_Latn; 0,955 frente a 0,923 en inglés).
 
 ## Limitaciones y advertencias
 
-- El benchmark es sintético y fue generado por el mismo pipeline LLM que los datos de entrenamiento; el autor recomienda evaluar sobre una muestra de consultas reales antes de adoptar el modelo.
-- El dominio está acotado a contextos indios cotidianos y de atención al cliente; el rendimiento en otros dominios o variantes dialectales no está documentado.
-- Solo cubre hindi, inglés y hinglish romanizado; no se han publicado evaluaciones en otras lenguas.
-- No se especifica la longitud máxima de contexto; los ejemplos truncan a 512 tokens, por lo que textos más largos pueden perder información.
-- Riesgo de sesgos derivado de los datos de entrenamiento sintéticos y de los dominios cubiertos; no se documentan análisis de sesgo.
-- Como modelo de embeddings, no genera texto ni razona: no debe usarse para tareas generativas ni de tool calling.
-- Es necesario aplicar correctamente los prefijos `query:` y `passage:`; omitirlos puede degradar la recuperación.
-- La licencia MIT permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en producción.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que la validación por parte de la comunidad es aún inexistente.
+- Rendimiento inferior a multilingual-e5-small en hindi devanagari puro e inglés puro (por ejemplo, 0,842 frente a 0,861 en Belebele hin_Deva; 0,923 frente a 0,948 en inglés). Si los datos son solo hindi formal o solo inglés, el modelo base puede ser mejor opción.
+- El conjunto de evaluación práctico es pequeño (46 pares y 33 consultas) y el propio autor lo califica de comprobación de cordura, no de benchmark.
+- No se detalla la longitud máxima de contexto soportada, lo que limita la planificación de pasajes largos.
+- Riesgo de alucinación no aplica directamente al ser un modelo de embeddings, pero sí el riesgo de recuperar pasajes semánticamente próximos pero incorrectos en dominios fuera de los 40 verticales de help-desk cubiertos.
+- Sesgos: no se documentan análisis de sesgo en la información disponible; al derivar de un modelo multilingüe general, puede heredar sesgos de dicho corpus.
+- Licencia MIT, por lo que el uso comercial está permitido sin restricciones adicionales conocidas.
+- El modelo solo produce embeddings; no genera texto, no soporta tool calling ni razonamiento multi-paso, por lo que debe combinarse con un LLM generador en pipelines RAG.
+- Los resultados del benchmark propio hinglish-retrieval-bench aparecen truncados en la información disponible, por lo que no se pueden verificar las cifras completas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/rahul27474/hinglish-embed-small
-- Demo en el navegador (Space): https://huggingface.co/spaces/rahul27474/hinglish-embed-small-demo
-- Dataset de entrenamiento: https://huggingface.co/datasets/rahul27474/hinglish-retrieval-train
-- Dataset de evaluación: https://huggingface.co/datasets/rahul27474/hinglish-retrieval-bench
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
+- Dataset de entrenamiento: https://huggingface.co/datasets/rahul27474/hinglish-retrieval-train
+- Dataset de benchmark: https://huggingface.co/datasets/rahul27474/hinglish-retrieval-bench
+- Demo en navegador: https://huggingface.co/spaces/rahul27474/hinglish-embed-small-demo
+- Guía del paquete Python: https://huggingface.co/rahul27474/hinglish-embed-small/blob/main/python/README.md

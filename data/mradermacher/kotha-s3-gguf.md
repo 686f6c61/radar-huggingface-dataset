@@ -2,50 +2,48 @@
 
 ## Resumen
 
-Kotha-S3-GGUF es una publicacion de cuantizaciones estaticas del modelo Kotha-S3, desarrollado originalmente por el usuario logicwahid y redistribuido en formato GGUF por mradermacher, un perfil conocido en Hugging Face por convertir modelos a dicho formato para su uso con llama.cpp y herramientas compatibles. El repositorio no aporta informacion sobre la arquitectura, el tamano o el entrenamiento del modelo base: la model card se limita a listar los tipos de cuantizacion generados y a enlazar al modelo original.
+Kotha-S3 es un modelo de lenguaje de aproximadamente 1.720 millones de parametros, desarrollado originalmente por logicwahid y publicado bajo licencia Apache 2.0. La version aqui descrita es una cuantizacion GGUF realizada por mradermacher, que facilita su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. El modelo esta orientado especificamente a bengali (bangla) e ingles, y segun sus etiquetas esta disenado para tareas de RAG (generacion aumentada por recuperacion), tool calling y function calling.
 
-La relevancia de esta ficha es, por tanto, limitada y fundamentalmente practica: permite saber que existen pesos GGUF del modelo Kotha-S3 en once variantes de cuantizacion (desde Q2_K hasta Q8_0, ademas de f16 e IQ4_XS), lo que facilita su despliegue en entornos con memoria limitada mediante llama.cpp u Ollama. No obstante, sin datos del modelo base no es posible evaluar su calidad, sus capacidades ni su idoneidad para tareas concretas.
+La relevancia de este modelo radica en su enfoque en un idioma de bajos recursos como el bengali, combinado con capacidades de llamada a funciones que lo hacen util para construir agentes y asistentes conversacionales en ese idioma. Al estar construido sobre una base de la familia Qwen3 (segun las etiquetas del autor), hereda una arquitectura transformer moderna y un tokenizador eficiente.
 
-El repositorio presenta cero descargas y cero likes en el momento de la consulta, fue creado el 24 de noviembre de 2026 y no declara licencia, idiomas ni pipeline. Cualquier evaluacion tecnica seria exige consultar el modelo original en https://huggingface.co/logicwahid/Kotha-S3.
+El repositorio GGUF ofrece un conjunto completo de cuantizaciones estaticas, desde Q2_K (0,9 GB) hasta f16 (3,5 GB), lo que permite ejecutar el modelo en hardware de consumo. No se dispone de informacion detallada sobre la longitud de contexto, la composicion del dataset de entrenamiento ni resultados de benchmarks en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer (base Qwen3, segun etiquetas del autor) |
+| Parametros totales | 1.720.574.976 (~1,72 B) |
+| Parametros activos | no disponible (no es MoE segun los datos disponibles) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas generadas con quantize_version 2) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | bengali (bn) e ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Kotha-S3: la model card del repositorio GGUF no describe si se trata de un transformer denso, un modelo de mezcla de expertos o una arquitectura hibrida, ni tampoco el numero de parametros, el volumen de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO.
+El modelo base es logicwahid/Kotha-S3, del que se indica que emplea una arquitectura transformer de la familia Qwen3, con aproximadamente 1,72 mil millones de parametros. Las etiquetas del autor destacan su especializacion en bengali, RAG y llamadas a funciones, lo que sugiere un ajuste fino orientado a tareas de recuperacion y uso de herramientas. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
 
-Lo unico verificable es el proceso de conversion: los metadatos indican `convert_type: hf`, `quantize_version: 2` y `output_tensor_quantised: 1`, lo que sugiere una conversion desde pesos en formato Hugging Face con la herramienta de cuantizacion de llama.cpp en su version 2. No se especifica si se genero un fichero mmproj (proyeccion multimodal), lo que apunta a que el modelo base es exclusivamente de texto o que la capacidad multimodal no se ha preservado en esta publicacion.
+La version aqui documentada es una cuantizacion estatica realizada por mradermacher, que convierte los pesos originales a formato GGUF en multiples niveles de precision. No se han generado (por el momento) cuantizaciones ponderadas con imatrix, segun indica el propio autor de la cuantizacion.
 
 ## Capacidades
 
-- Generacion de texto: presumiblemente soportada al ser un modelo de lenguaje, aunque no se documenta ningun detalle sobre calidad, estilo o dominio.
-- Razonamiento, codigo y matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el repositorio no declara idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponible; la ausencia de mmproj sugiere que no hay soporte de vision en estas cuantizaciones.
+- Generacion de texto conversacional en bengali e ingles.
+- Soporte de tool calling y function calling, segun las etiquetas del modelo.
+- Orientacion a flujos de RAG (generacion aumentada por recuperacion), lo que permite integrarlo en pipelines de busqueda y respuesta.
+- Capacidad de razonamiento multi-turno en conversaciones (pipeline conversacional).
+- Especializacion en un idioma de bajos recursos (bengali), con soporte secundario de ingles.
+- No se ha confirmado soporte de vision, audio ni modo de razonamiento extendido (thinking mode) en la informacion disponible.
 
 ## Casos de uso
 
-- Despliegue en CPU con llama.cpp: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar el modelo en equipos sin GPU dedicada, siempre que se conozca previamente el numero de parametros del modelo base para dimensionar la RAM necesaria.
-- Pruebas exploratorias en Ollama: al estar en formato GGUF, el modelo puede importarse en Ollama mediante un Modelfile para evaluar su comportamiento conversacional antes de comprometerse con un despliegue mayor.
-- Evaluacion comparativa de cuantizaciones: la disponibilidad de once variantes permite medir la degradacion de calidad entre Q2_K y Q8_0 sobre un mismo conjunto de prompts, util para calibrar el compromiso entre memoria y fidelidad.
-- Prototipado de bajo coste en estaciones de trabajo: la variante IQ4_XS reduce el uso de memoria manteniendo una calidad razonable, adecuada para entornos de desarrollo con recursos limitados.
-- Integracion en pipelines locales de procesamiento de texto: al no requerir servicios en la nube, puede usarse en flujos por lotes donde la confidencialidad de los datos impide enviarlos a APIs externas.
-- Distribucion en entornos aislados: los ficheros GGUF son autocontenidos y faciles de transferir a maquinas sin acceso a internet, lo que simplifica el despliegue en infraestructuras restringidas.
-
-En todos los casos, la idoneidad real depende de caracteristicas del modelo base que este repositorio no documenta.
+- Atencion al cliente en bengali: el modelo puede gestionar conversaciones multi-turno en bangla, un idioma con poca cobertura en modelos generalistas, lo que lo hace adecuado para asistentes de soporte regionales.
+- Sistemas RAG sobre documentacion en bengali: al estar etiquetado para RAG, puede integrarse como generador final en pipelines de recuperacion de documentos, respondiendo con el contexto recuperado.
+- Agentes con llamada a funciones: su soporte de tool calling permite construir asistentes que consulten APIs, bases de datos o servicios externos en entornos bilingues bn/en.
+- Despliegue en hardware de consumo: con cuantizaciones desde 0,9 GB (Q2_K) hasta 1,9 GB (Q8_0), puede ejecutarse en portatiles y equipos sin GPU dedicada mediante llama.cpp u Ollama.
+- Prototipado rapido de aplicaciones en bengali: su tamano reducido permite iterar rapidamente en local antes de escalar a modelos mayores.
+- Traduccion y adaptacion de contenido bn/en: puede emplearse para tareas de reescritura, resumen o adaptacion de textos entre ambos idiomas en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
@@ -53,38 +51,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible, al desconocerse el numero de parametros del modelo base. Como referencia general, un modelo de 7 000 millones de parametros en Q4_K_M ocupa aproximadamente 4,5 GB, y uno de 13 000 millones en la misma cuantizacion ronda los 8 GB, pero no es posible confirmar a que rango corresponde Kotha-S3.
-- GPU recomendadas: no disponible por la misma razon; la eleccion depende del tamano real del modelo.
-- Compatibilidad con GPU de consumo: indeterminada; si el modelo base esta en el rango de 7 a 13 mil millones de parametros, las cuantizaciones Q4_K_M y Q5_K_M cabrian en tarjetas con 8 a 12 GB de VRAM como la RTX 3060, la RTX 4060 Ti o la RTX 4070.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. vLLM y TGI no consumen GGUF de forma nativa, por lo que requeririan los pesos originales en safetensors.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 1 GB con Q2_K, 1,2 GB con Q4_K_M, 1,9 GB con Q8_0 y 3,5 GB con f16 (mas overhead de contexto).
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060) es suficiente para las cuantizaciones mas bajas; para f16 se recomienda 6 GB o mas.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas e incluso en CPU.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el modelo base puede servirse con vLLM o TGI en formato safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa rigurosa porque se desconocen el tamano, la licencia y el rendimiento del modelo base. La siguiente tabla recoge unicamente lo que se puede afirmar sobre el formato de publicacion.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Kotha-S3-GGUF | no disponible | no disponible | no disponible | GGUF (11 cuantizaciones) | Hugging Face |
-| Modelo base Kotha-S3 | no disponible | no disponible | no disponible | safetensors (presumiblemente) | Hugging Face |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Kotha-S3 (este) | ~1,72 B | no disponible | bn, en | Apache 2.0 | GGUF, safetensors |
+| Qwen3-1.7B (base probable) | ~1,7 B | no disponible | multilingue | Apache 2.0 | safetensors, GGUF |
+| Modelos bengali especializados de tamano similar | no disponible | no disponible | bn | variable | variable |
+
+No se dispone de datos de rendimiento comparativo en la informacion proporcionada. La comparacion con Qwen3-1.7B se basa unicamente en la etiqueta "qwen3" del autor y en el numero de parametros, no en una evaluacion verificada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card no describe arquitectura, entrenamiento, capacidades ni limitaciones, lo que impide evaluar el modelo con rigor.
-- Licencia no declarada: sin licencia explicita no se puede asumir permiso para uso comercial; conviene consultar el repositorio original antes de cualquier despliegue en produccion.
-- Riesgo de alucinacion: desconocido, pero aplicable a cualquier modelo de lenguaje sin datos de evaluacion que lo acoten.
-- Sesgos: no documentados; al no conocerse la composicion del dataset de entrenamiento no es posible anticipar sesgos de genero, idioma o dominio.
-- Idiomas: no declarados; no hay garantia de soporte del castellano ni de otros idiomas distintos del que se uso mayoritariamente en el entrenamiento.
-- Contexto: no disponible; planificar aplicaciones con ventanas largas sin este dato es arriesgado.
-- Adopcion nula: cero descargas y cero likes implican ausencia de validacion por parte de la comunidad, sin evidencia de que las cuantizaciones funcionen correctamente.
-- Fecha de creacion futura: el repositorio figura creado el 24 de noviembre de 2026, lo que puede indicar un error de metadatos o una publicacion programada; conviene verificar la integridad de los ficheros antes de usarlos.
-- Cuantizaciones agresivas: Q2_K y Q3_K_S pueden degradar notablemente la calidad en modelos pequenos; se recomienda Q4_K_M o superior para uso real.
+- Riesgo de alucinacion inherente a modelos de ~1,7 B de parametros; la precision factografica puede ser limitada.
+- Sesgos desconocidos: no se documenta la composicion del dataset ni los procesos de alineacion, por lo que no pueden evaluarse sesgos especificos.
+- Cobertura idiomatica restringida a bengali e ingles; el rendimiento en otros idiomas no esta garantizado.
+- Longitud de contexto no documentada; debe verificarse antes de usarlo en tareas que requieran ventanas largas.
+- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para produccion.
+- Aunque la licencia es Apache 2.0 (permite uso comercial), conviene verificar las condiciones del modelo base original.
+- No hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicacion, segun el autor de la cuantizacion.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Kotha-S3-GGUF
 - Modelo base: https://huggingface.co/logicwahid/Kotha-S3
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
-- llama.cpp (runtime compatible con GGUF): https://github.com/ggml-org/llama.cpp
-- Ollama (runtime compatible con GGUF): https://ollama.com
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Kotha-S3-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

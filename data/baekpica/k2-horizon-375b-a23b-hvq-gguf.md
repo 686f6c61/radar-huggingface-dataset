@@ -2,90 +2,107 @@
 
 ## Resumen
 
-K2-Horizon-375B-A23B-hVQ-GGUF es una cuantización experimental del modelo K2-Horizon-375B-A23B de IFM, un transformer de mezcla de expertos (MoE) con 379,17B parámetros totales y 23B activos (192 expertos, top-8) y una ventana de contexto nativa de 524.288 tokens. La publica el usuario Baekpica aplicando su método hVQ (vector quantization con corrección de error y calibración por matriz de importancia) sobre los pesos de los expertos enrutados, dejando el backbone en Q8_0. El objetivo declarado es que el modelo completo, con su contexto nativo de 512K y una caché K/V en NVFP4, quepa en una única DGX Spark (GB10) de 128 GB mediante el runtime ds4-dfm-rs.
+K2-Horizon-375B-A23B hVQ GGUF es una cuantización experimental del modelo K2-Horizon-375B-A23B de IFM, un transformer de tipo mixture-of-experts (MoE) con 379,17 mil millones de parámetros totales y 23 mil millones activos por token, distribuidos en 192 expertos con top-8 y una ventana de contexto nativa de 524.288 tokens. La publica el usuario Baekpica bajo licencia Apache 2.0 y su interés radica en que comprime el modelo original (que en BF16 ocuparía cientos de gigabytes) hasta 81,21 GiB, un tamaño que cabe en una única estación DGX Spark con 128 GB de memoria unificada.
 
-La relevancia del release es doble. Por un lado, demuestra una receta de compresión que reduce los expertos enrutados a 1,63 bits por peso (13 bits por cada 8 pesos) manteniendo un único kernel de búsqueda en tabla sobre un codebook E4M3 de 64 KiB por capa, lo que sustituye cuatro tipos IQ distintos del release anterior. Por otro lado, ataca el verdadero cuello de botella de este modelo: con atención GQA completa en las 61 capas y sin indexer ni ventana deslizante, la caché K/V en BF16 consumiría 122 GiB a 524.288 tokens, de modo que la receta fija NVFP4 para K/V (70.272 bytes por token) y deja el conjunto en unos 114 GiB.
+La técnica empleada es hVQ (vector quantization con corrección de error y calibración por imatrix), que almacena los pesos de los expertos enrutados a 13 bits por cada 8 pesos (1,63 bits por peso efectivo) mediante un libro de códigos E4M3 compartido por capa, mientras que el backbone (atención, expertos compartidos, MLPs densos, embeddings y cabeza de salida) se mantiene en Q8_0. El resultado es un conjunto de 60 ficheros GGUF v3 independientes que no son splits numerados y que requieren un runtime específico, ds4-dfm-rs, con soporte para caché K/V en NVFP4.
 
-Conviene subrayar el estado del artefacto: la model card se publica antes de terminar la conversión y los ficheros no cargan todavía en ningún runtime (y explícitamente nunca en llama.cpp, Ollama o Transformers). Es, por tanto, un release de formato y contrato de bytes, no un modelo listo para producción.
+Es relevante ahora porque demuestra que un modelo MoE de casi 380B puede servirse en hardware de consumo profesional (GB10) con contexto de hasta 425.984 tokens medidos, a costa de una fidelidad reducida frente al original (87,6% de coincidencia top-1 con K/V en BF16) y de un ecosistema de inferencia muy restringido: no funciona en llama.cpp, Ollama ni Transformers.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only con mezcla de expertos (MoE), atención GQA completa en 61 capas (48 cabezas de consulta / 8 de clave-valor × 128), sin indexer ni ventana deslizante |
-| Parametros totales | 379,17B en el modelo base; 6.341.853.184 en el checkpoint safetensors del repo de cuantización |
-| Parametros activos | 23B (192 expertos, top-8) |
-| Longitud de contexto | 524.288 tokens nativos (512K) |
-| Tipos de cuantizacion | Expertos enrutados: GVQ1 13-bit hVQ (1,630 bpw, codebook de 8.192 codewords E4M3 por capa, ganancia F16 por fila); backbone (atención, MLP densos, experto compartido, head, embedding): Q8_0; router y normas: F32; caché K/V: NVFP4 |
-| Idiomas soportados | Inglés (en) |
+| Arquitectura | Transformer MoE (mixture-of-experts), 61 capas, atención GQA completa (48 cabezas query / 8 KV × 128), sin indexer ni sliding window |
+| Parametros totales | 379,17B (modelo base); 9.803.641.728 según safetensors del repo de cuantización |
+| Parametros activos | 23B por token (192 expertos, top-8) |
+| Longitud de contexto | 524.288 tokens nativos; 425.984 tokens servibles en DGX Spark de 128 GB |
+| Tipos de cuantizacion | GVQ1 13-bit hVQ (expertos enrutados, 1,63 bpw), Q8_0 (backbone), F32 (router y normas), caché K/V NVFP4 |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF v3 (partes independientes, no splits numerados) + `release.json`; pesos originales en safetensors |
+| Formato de pesos | GGUF v3 en 60 ficheros independientes (no splits numerados); requiere runtime ds4-dfm-rs |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE de 61 capas con atención GQA completa, 192 expertos enrutados por capa con activación top-8 y un experto compartido adicional en cada capa MoE. Las tres primeras capas usan MLP densos en lugar de MoE. La dimensión de las matrices de experto es [1792, 6144] para gate y up y [6144, 1792] para down, con dimensión de entrada divisible por 256 en los tres casos, condición que la receta aprovecha para el kernel de decodificación. El vocabulario del embedding es de 250.624 tokens con dimensión 6.144. No se dispone de información sobre el número de tokens de preentrenamiento, la composición del dataset original ni si hubo RLHF o DPO en el modelo base.
+El modelo base K2-Horizon-375B-A23B es un transformer MoE con 61 capas de atención GQA completa (48 cabezas de consulta y 8 de clave/valor de dimensión 128), sin mecanismo de indexación dispersa ni ventana deslizante, lo que implica que cada paso de decodificación lee toda la caché K/V. El 97% de los parámetros corresponde a expertos enrutados: 58 capas con 192 expertos y selección top-8, más un experto compartido por capa MoE y tres capas iniciales con MLP denso. La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
-La innovación del release es el método hVQ, evolución de VQ e iVQ usada también en DeepSeek-V4.1-Flash-1017-hVQ-GGUF e Inkling-2-Small-VQ-GGUF. Cada 8 pesos consecutivos del eje de entrada de una fila de experto se codifican como un índice en un codebook por capa de 8.192 codewords E4M3, multiplicado por una ganancia F16 por fila; el codebook es compartido por todos los expertos y proyecciones de la capa. La calibración usó 5.210.112 tokens (10.176 secuencias de 512) con una mezcla de coding y tool use (30%), matemáticas y ciencia (25%), razonamiento general (20%), texto largo y recuperación (15%) y texto general (10%), ejecutada mediante un forward de referencia por capas del modelo BF16 original, verificado bit a bit contra el recolector de MQ87 en las capas 0-3 y contra la clase `K2HorizonDecoderLayer` de Transformers. El límite de 13 bits no es arbitrario: un codebook de 14 bits (128 KiB) no cabe en la memoria compartida por bloque del kernel de decodificación en GB10, mientras que el de 13 bits sí.
+La cuantización aplicada por Baekpica sustituye los cuatro tipos IQ del release anterior (MQ87) por un único kernel de búsqueda en tabla sobre un libro de códigos de 64 KiB (8.192 entradas × 8 valores E4M3) por capa, compartido entre todos los expertos y proyecciones, con una ganancia de fila en F16. Las tres formas matriciales tienen dimensión de entrada divisible por 256 ([1792, 6144] ×2 y [6144, 1792]), lo que permite kernels de prefill con tensor cores FP8 y kernels de decodificación en memoria compartida. El libro de 13 bits es el mayor que cabe en la memoria compartida por bloque del GB10; uno de 14 bits (128 KiB) no cabría. La verificación se hizo contra el BF16 original en modo teacher-forced sobre 32.768 tokens retenidos: 87,6% de coincidencia top-1 y KL 0,116 con K/V en BF16, y 86,8% con KL 0,132 con K/V en NVFP4.
 
 ## Capacidades
 
-- Generación de texto en inglés con razonamiento multi-paso, herencia del modelo base de 379B parámetros.
-- Codificación y uso de herramientas: la mezcla de calibración incluye un 30% de coding y tool use, lo que sugiere soporte del modelo base para function calling, aunque la model card del cuantizado no lo detalla explícitamente.
-- Contexto ultralargo: 524.288 tokens nativos sin ventana deslizante ni indexer, adecuado para recuperación sobre corpus extensos.
-- Razonamiento matemático y científico, presente en la mezcla de calibración (25%).
-- Procesamiento de documentación larga y recuperación de información (15% de la calibración).
-- No se documentan capacidades de visión, audio ni modo thinking explícito en la información disponible.
-- Multilingüismo limitado al inglés según el campo `language` del repo.
+- Generación de texto y conversación multi-turno en inglés, con pipeline declarado `text-generation` y `conversational`.
+- Razonamiento y contexto largo: ventana nativa de 524.288 tokens, con 425.984 tokens servibles en DGX Spark (un prompt de 417.942 tokens recuperó ambos códigos plantados en la prueba del autor).
+- Mezcla de expertos con 23B parámetros activos por token, lo que reduce el coste de cómputo por token frente a un modelo denso del mismo tamaño.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, visión, audio ni modo thinking.
+- Capacidad multilingüe limitada al inglés según el campo `language` de la model card.
+- Caché K/V en NVFP4 (E2M1 con una escala E4M3 por cada 16 valores), que reduce el coste de memoria por token de 249.856 a 70.272 bytes.
 
 ## Casos de uso
 
-- Análisis de repositorios completos: con 512K tokens de contexto se puede cargar un monorepo mediano y hacer preguntas cruzadas entre módulos sin trocear, aprovechando que el modelo no usa ventana deslizante y mantiene atención completa sobre todo el contexto.
-- Atención al cliente con historial largo: conversaciones multi-turno de decenas de miles de tokens con recuperación de políticas y documentación interna en el mismo contexto, sin necesidad de RAG externo para sesiones largas.
-- Agentes autónomos de múltiples pasos: el modelo base soporta tool calling según la composición de calibración, y el contexto de 512K permite mantener el rastro completo de acciones, observaciones y resultados intermedios de un agente durante horas.
-- Generación de código en pipelines de CI/CD: integrable como servicio de generación y revisión de parches, con la ventaja de que el cuantizado cabe en una sola máquina de 128 GB, lo que abarata el despliegue on-premise frente a clústeres multi-GPU.
-- Investigación sobre cuantización extrema: el release sirve como banco de pruebas reproducible para estudiar el impacto de 1,63 bpw en expertos enrutados con codebooks E4M3 y corrección de error, con contrato de bytes documentado en FORMAT.md.
-- Inferencia en el borde de datacenter: despliegue en una DGX Spark (GB10) para entornos con restricciones de espacio, consumo o aislamiento de red, donde no es viable un nodo de 8 GPU.
-- Procesamiento de expedientes legales o técnicos: ingestión de contratos o manuales de cientos de páginas en una sola pasada para extracción estructurada y comparación entre documentos.
+- Análisis de repositorios y documentación extensa: con 425.984 tokens de contexto servibles, el modelo puede ingerir bases de código o manuales completos en una sola pasada sin troceado, algo inviable en modelos de 32K-128K.
+- Procesamiento de expedientes legales o contractuales largos: la ventana nativa de 524.288 tokens permite cargar contratos completos con anexos y hacer preguntas sobre cláusulas cruzadas manteniendo la coherencia referencial.
+- Resumen y extracción sobre corpus de investigación: artículos, tesis o transcripciones de varias horas caben en un único contexto, lo que evita la pérdida de información típica de los pipelines de chunking con RAG.
+- Despliegue en hardware de borde o laboratorio con presupuesto de 128 GB: una DGX Spark (GB10) sirve el modelo completo con 81,34 GiB de apertura y 36,3 GiB restantes para la caché K/V, sin necesidad de clúster multi-GPU.
+- Experimentación en cuantización extrema: sirve como referencia reproducible para investigar vector quantization con corrección de error, calibración por imatrix y contratos de bytes documentados en FORMAT.md.
+- Generación de texto conversacional en inglés en entornos con requisitos de licencia permisiva: Apache 2.0 permite uso comercial sin restricciones de atribución adicionales más allá de las habituales.
+- Evaluación de fidelidad de cuantizaciones: los datos de teacher-forced (KL 0,116 y 0,134) permiten comparar recetas de compresión sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que las cifras de fidelidad medidas, los recibos de conversión por capa y las mediciones de prefill y decode se completarán cuando termine la conversión, y que el único registro publicado de ds4-dfm-rs para K2 es un banco de 32K, no la ruta de 512K.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor indica explícitamente que no se ha ejecutado ningún benchmark de tarea y que la generación por muestreo solo se comprobó en un conjunto pequeño con semilla.
+
+Los únicos datos medidos son de fidelidad y de rendimiento de inferencia:
+
+| Metrica | Valor |
+|---|---|
+| Coincidencia top-1 vs. BF16 original (K/V BF16, 32.768 tokens teacher-forced) | 87,6% |
+| KL vs. BF16 original (K/V BF16) | 0,116 (NLL 1,311 → 1,373) |
+| Coincidencia top-1 vs. BF16 original (K/V NVFP4) | 86,8% |
+| KL vs. BF16 original (K/V NVFP4) | 0,132 (NLL 1,389) |
+| KL en DGX Spark vs. original | 0,134 |
+| KL en DGX Spark vs. forward de referencia de los mismos bytes | 0,022 |
+| Prefill / decodificación en DGX Spark (2K–64K) | 711,9 / 13,96 tok/s |
+| Prefill / decodificación en DGX Spark (8K + 64) | 1.063 / 15,5 tok/s |
+| Comparación con release MQ87 (8K + 64) | 645 / 13,3 tok/s |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el trunk (partes de expertos más body) ocupa 79,68 GiB; el embedding añade 1,52 GiB si se mantiene en dispositivo. Con caché K/V en NVFP4: 81,8 GiB a 32K, 88,3 GiB a 128K, 96,8 GiB a 256K y 114,0 GiB a 524.288 tokens. Con K/V en BF16 el contexto nativo exigiría 122 GiB solo de caché.
-- GPU recomendada: una NVIDIA DGX Spark (GB10) con 128 GB, que es el objetivo de diseño de la receta. No se documentan otras GPU compatibles.
-- GPU de consumo: no cabe en ninguna GPU de consumo actual; el tamaño mínimo del trunk supera los 79 GiB.
-- Opciones de despliegue: exclusivamente el runtime ds4-dfm-rs del autor. La model card advierte que los ficheros no cargan en llama.cpp, Ollama ni Transformers, y que en el momento de publicación no cargan en ningún sitio.
-- Latencia y throughput: no disponibles. La model card remite a mediciones futuras de prefill y decode en DGX Spark; sin indexer, cada paso de decodificación lee toda la caché K/V, lo que limita el rendimiento en contextos largos.
+- VRAM/memoria unificada: 81,21 GiB de pesos (trunk de 79,69 GiB más embeddings de 1,52 GiB si se mantienen en dispositivo); la apertura en DGX Spark consume 81,34 GiB incluyendo el runtime CUDA.
+- Caché K/V: 2,14 GiB a 32K, 8,58 GiB a 128K, 17,16 GiB a 256K y 34,31 GiB a 524.288 tokens con NVFP4.
+- GPU recomendadas: NVIDIA DGX Spark (GB10) con 128 GB es el único hardware validado según la model card; no se documenta soporte en A100, H100 ni RTX 4090.
+- No cabe en GPU de consumo convencional (RTX 4090 con 24 GB, RTX 5090 con 32 GB): los 81 GiB de pesos lo impiden incluso con cuantizaciones más agresivas del backbone.
+- Opciones de despliegue: exclusivamente ds4-dfm-rs (familia `k2_horizon_vq`, PR #160); no funciona en llama.cpp, Ollama ni Transformers.
+- Latencia y throughput medidos en DGX Spark: 711,9 tok/s de prefill y 13,96 tok/s de decodificación en ejecuciones de 2K a 64K; 1.063 tok/s de prefill y 15,5 tok/s de decodificación en el escenario de 8K más 64 tokens.
+- Cada parte se verifica contra su SHA-256 en `release.json` al cargarse en el motor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parametros | Activos | Contexto | Cuantizacion | Licencia | Runtime |
 |---|---|---|---|---|---|---|
-| K2-Horizon-375B-A23B-hVQ-GGUF (este) | 379,17B | 23B | 524.288 | hVQ 13-bit + Q8_0, NVFP4 K/V, ~81,2 GiB | Apache 2.0 | Experimental, no carga aún |
-| K2-Horizon-375B-A23B-MQ87-GGUF | 379,17B | 23B | 524.288 | IQ1_S/IQ1_M/IQ2_XXS/IQ2_XS + Q8_0, 86,70 GiB (1,96 bpw) | Apache 2.0 | Release previo para el mismo runtime |
-| K2-Horizon-375B-A23B (base, IFM) | 379,17B | 23B | 524.288 | BF16 | Apache 2.0 | Pesos originales en safetensors |
+| K2-Horizon-375B-A23B hVQ (este) | 379,17B | 23B | 524.288 (425.984 servibles) | GVQ1 13-bit + Q8_0, 81,21 GiB | Apache 2.0 | ds4-dfm-rs |
+| K2-Horizon-375B-A23B MQ87 GGUF | 379,17B | 23B | 524.288 | IQ1_S/IQ1_M/IQ2_XXS/IQ2_XS + Q8_0, 86,70 GiB | Apache 2.0 | ds4-dfm-rs |
+| K2-Horizon-375B-A23B (base BF16) | 379,17B | 23B | 524.288 | BF16 | Apache 2.0 | no disponible |
 
-No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes; la comparación se limita a tamaño, esquema de cuantización y disponibilidad.
+La información disponible no incluye comparaciones con modelos de otros autores (DeepSeek, Qwen, Llama u otros) ni sus datos de benchmarks, por lo que no es posible establecer una comparativa de rendimiento frente a alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Estado experimental: la model card se publica antes de terminar la conversión; las partes, `release.json`, los recibos por capa y las cifras de fidelidad llegan después. En el momento de la publicación los ficheros no cargan en ningún runtime.
-- Incompatibilidad de runtime: no funciona en llama.cpp, Ollama ni Transformers; requiere ds4-dfm-rs.
-- La ruta de 512K con K/V en NVFP4 es trabajo nuevo en ds4-dfm-rs y no está validada; el único registro publicado para K2 es un banco de 32K.
-- Idiomas: solo inglés según los metadatos del repo; no se documenta soporte multilingüe.
-- Riesgo de alucinación: no cuantificado en la información disponible; la compresión a 1,63 bpw en los expertos puede degradar la fidelidad respecto al BF16, y las mediciones que lo cuantificarían están pendientes.
-- Sesgos: no documentados en la información disponible.
-- Licencia Apache 2.0, que permite uso comercial, pero la viabilidad práctica del despliegue está limitada por el hardware requerido (DGX Spark o equivalente con 128 GB) y por el estado experimental del runtime.
-- Sin indexer ni ventana deslizante, el coste de decodificación crece linealmente con el contexto, lo que puede hacer inviable el uso interactivo a 512K tokens en una sola máquina.
+- Release experimental de bajo bit: los expertos enrutados se almacenan a 1,63 bits por peso y la fidelidad medida es teacher-forced; la generación por muestreo solo se comprobó en un conjunto pequeño con semilla y no se ha ejecutado ningún benchmark de tarea.
+- Ecosistema de inferencia restringido: los ficheros solo cargan en ds4-dfm-rs; no hay soporte en llama.cpp, Ollama, Transformers, vLLM ni TGI, lo que limita la integración en producción.
+- Contexto nativo no servible completo: los 524.288 tokens no caben junto a la memoria del host en una DGX Spark de 128 GB; el máximo medido es 425.984 tokens.
+- Sin indexer ni sliding window, cada paso de decodificación lee toda la caché K/V, lo que impide usar SSD como tier de K/V y encarece la latencia con contextos largos.
+- Idiomas: solo inglés declarado; no se documenta calidad en castellano ni en otros idiomas.
+- Riesgo de alucinación: no cuantificado en la información disponible; los datos de fidelidad (KL 0,116-0,134) indican una divergencia medible respecto al BF16 que puede amplificarse en generaciones largas.
+- Sesgos: no se documentan evaluaciones de sesgo en la información disponible.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base es de IFM y la model card no detalla condiciones adicionales más allá de la licencia declarada.
+- El repo tiene 0 likes y 1.286 descargas en el momento de la consulta, lo que sugiere una validación comunitaria todavía muy limitada.
+- El campo `custom_code` en los tags implica que la carga requiere código personalizado, lo que añade superficie de riesgo en la cadena de suministro.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Baekpica/K2-Horizon-375B-A23B-hVQ-GGUF
+- Hugging Face del modelo cuantizado: https://huggingface.co/Baekpica/K2-Horizon-375B-A23B-hVQ-GGUF
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-375B-A23B
-- Release previo MQ87: https://huggingface.co/Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF
+- Release anterior MQ87 GGUF: https://huggingface.co/Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF
 - Runtime ds4-dfm-rs: https://github.com/Baekpica/ds4-dfm-rs
-- Release hVQ de referencia (DeepSeek-V4.1-Flash-1017): https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-hVQ-GGUF
-- Release VQ de referencia (Inkling-2-Small): https://huggingface.co/Baekpica/Inkling-2-Small-VQ-GGUF
-- Contrato de formato: FORMAT.md dentro del repositorio del modelo
+- PR #160 del runtime (familia `k2_horizon_vq`): https://github.com/Baekpica/ds4-dfm-rs/pull/160
+- Contrato de formato de bytes: FORMAT.md (referenciado en la model card, dentro del repositorio de Hugging Face)
+- Release de referencia de la técnica hVQ: https://huggingface.co/ (DeepSeek-V4.1-Flash-1017-hVQ-GGUF, enlace incompleto en la información disponible)

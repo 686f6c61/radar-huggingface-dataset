@@ -2,48 +2,53 @@
 
 ## Resumen
 
-`AiRukua/tiny-stories-kilat-35M` es un modelo de lenguaje publicado en Hugging Face por el usuario AiRukua bajo licencia MIT. Por su nombre y su tamano (35M de parametros), se enmarca en la familia de modelos diminutos orientados a la generacion de cuentos cortos, siguiendo la estela de los modelos TinyStories originales de Microsoft Research, que demostraron que modelos de pocos millones de parametros pueden producir texto narrativo coherente cuando se entrenan con un corpus sintetico y simplificado.
+TinyStories-Kilat-35M es un modelo de lenguaje causal compacto de aproximadamente 35 millones de parametros, desarrollado por AiRukua y entrenado desde cero sobre el dataset TinyStories. Su interes no reside en la escala, sino en la exploracion de tecnicas de modelado de secuencias sub-cuadraticas a un tamano muy reducido, lo que permite experimentar con arquitecturas hibridas en hardware de consumo. Emplea la denominada arquitectura Kilat Macro-Synergy Hybrid Dense, que intercala dos mecanismos de atencion distintos a lo largo de sus 8 capas.
 
-La model card publicada no incluye informacion tecnica sustantiva: unicamente declara la licencia MIT. No se especifican arquitectura, contexto, datos de entrenamiento, idiomas ni resultados de evaluacion. Cualquier dato adicional debe considerarse no disponible a partir de la informacion proporcionada.
+El modelo combina capas pares con un mecanismo de decaimiento exponencial global de estado constante (sin KV-cache) y capas impares con Multi-Head Latent Attention (MLA) comprimida y RoPE desacoplado. Esta hibridacion busca reducir el coste de memoria durante la inferencia manteniendo capacidad de recuperacion asociativa. El resultado es un modelo denso con 31,89 millones de parametros no de embedding y un contexto nativo de 512 tokens, extensible mediante YaRN.
 
-Su relevancia actual es limitada y fundamentalmente experimental: se trata de un modelo de investigacion util para estudiar el comportamiento de modelos muy pequenos, para tareas educativas de entrenamiento e inferencia en hardware modesto, y como base para experimentos de destilacion o de generacion narrativa controlada. No es un modelo apto para uso en produccion sin una evaluacion previa exhaustiva.
+Es relevante como banco de pruebas reproducible para investigadores interesados en arquitecturas hibridas, compresion de KV-cache y decodificacion eficiente a pequena escala, asi como para desarrolladores que quieran validar pipelines de inferencia con modelos diminutos antes de escalar. Su licencia MIT y su integracion con `transformers` mediante codigo remoto facilitan su uso experimental.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 35M (segun el nombre del modelo) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer decoder hibrido sub-cuadratico (Macro-Synergy: capas pares con Global Exponential Decay, capas impares con Latent MLA), FFN SwiGLU densa |
+| Parametros totales | 31.888.536 (segun safetensors); ~35,2 M reportados por el autor |
+| Parametros activos | No aplica (modelo denso, 100% de parametros activos por token) |
+| Longitud de contexto | 512 tokens nativos; extensible a 8k+ mediante YaRN |
+| Tipos de cuantizacion | No disponible (pesos publicados en BF16/FP16) |
+| Idiomas soportados | Ingles (dataset TinyStories en ingles) |
 | Licencia | MIT |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors (BF16/FP16) |
+
+Otros datos tecnicos: 8 capas (4 de Global Decay + 4 de Latent MLA), dimension oculta 384, 6 cabezas de atencion de 64 dimensiones, dimension latente de 96 (ratio de compresion 4x, reduccion del 93,75% de la huella de KV-cache), vocabulario de 50.257 tokens con BPE estilo GPT-2, FFN con factor de expansion 2,67x (d_ffn = 1.024).
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo en la model card publicada. El identificador `tiny-stories` sugiere una inspiracion en el trabajo TinyStories, que emplea transformers decoder-only de pocas capas y dimensiones reducidas entrenados sobre un corpus sintetico de cuentos con vocabulario controlado. No obstante, no hay confirmacion de que este modelo siga exactamente ese diseno, ni datos sobre numero de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) o innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+El modelo sigue un diseno de transformer decoder hibrido. Las capas pares (0, 2, 4, 6) implementan un mecanismo de decaimiento exponencial global que actua como memoria recurrente de tiempo lineal con estado oculto de tamano constante, segun la formulacion s_t = diag(lambda) s_{t-1} + v_t. Estas capas no requieren KV-cache, lo que reduce el coste de prefill y mantiene el consumo de memoria independiente de la longitud del documento. Las capas impares (1, 3, 5, 7) emplean Multi-Head Latent Attention con RoPE desacoplado, comprimiendo las proyecciones de clave y valor en un vector latente de 96 dimensiones que es lo unico que se cachea, logrando una reduccion del 93,75% en la huella de cache.
 
-El sufijo `kilat` no tiene un significado documentado en la informacion disponible; podria referirse a una variante o configuracion concreta del autor, pero no se puede confirmar.
+Cada bloque incorpora una FFN SwiGLU densa con activacion SiLU y factor de expansion 2,67x, sin enrutamiento MoE. El entrenamiento se realizo desde cero sobre el dataset roneneldan/TinyStories, un corpus de cuentos infantiles sinteticos en ingles. El autor menciona un proceso de "Pre-Flight Assurance" de 7 puertas (G0-G6) que certifica matematicamente la inicializacion, causalidad y estabilidad del modelo antes del entrenamiento, aunque no se detalla el numero de tokens vistos, la composicion exacta del dataset ni si hubo fases de RLHF o DPO. El posicionamiento usa RoPE decodificado con escalado nativo de frecuencias YaRN para extension de contexto.
 
 ## Capacidades
 
-- Generacion de texto narrativo breve, presumiblemente orientada a cuentos cortos por el nombre del modelo (no confirmado en la model card).
-- Capacidades de razonamiento, codigo y matematicas: no disponibles.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; no se declara ninguna lista de idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponibles.
+- Generacion de texto causal en ingles, orientada a narrativa breve y cuentos infantiles.
+- Razonamiento basico de secuencias cortas gracias a la ventana nativa de 512 tokens.
+- Modelado de lenguaje autoregresivo con vocabulario GPT-2 (50.257 tokens).
+- Extension de contexto mediante YaRN hasta 8k+ tokens (segun el autor).
+- Inferencia con memoria constante en capas de decaimiento global (sin KV-cache en capas pares).
+- Carga directa con `transformers` mediante `trust_remote_code=True` y `auto_map`, sin necesidad de instalar el framework Kilat.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo thinking.
+- Capacidad multilingue no disponible: el modelo esta entrenado unicamente en ingles.
 
 ## Casos de uso
 
-- Experimentacion academica con modelos de muy bajo parametraje: el modelo puede emplearse para estudiar como emergen capacidades narrativas en redes de 35M de parametros, comparando con los resultados publicados de TinyStories.
-- Educacion en entrenamiento de LLM: sirve como base para practicas de fine-tuning, tokenizacion y evaluacion en cursos y talleres, dado su reducido coste computacional.
-- Generacion de cuentos sinteticos para aumentacion de datos: podria utilizarse para producir corpus narrativos simples destinados a entrenar o evaluar otros modelos, siempre que la calidad se valide previamente.
-- Pruebas de pipelines de inferencia: su tamano permite validar integraciones con vLLM, llama.cpp u Ollama en entornos de desarrollo sin necesidad de GPU dedicada.
-- Investigacion sobre sesgos y alucinacion en modelos pequenos: util para analizar como se manifiestan estos fenomenos en modelos con conocimiento del mundo muy limitado.
-- Prototipado de aplicaciones de narrativa interactiva: como generador de texto de relleno en demos de interfaces conversacionales o videojuegos, con la advertencia de que la calidad no esta garantizada.
+- Investigacion en arquitecturas hibridas: sirve como banco de pruebas reproducible para comparar mecanismos de atencion lineal y MLA frente a atencion completa a escala reducida, con coste de entrenamiento asequible.
+- Prototipado de pipelines de inferencia: permite validar integraciones con `transformers`, generacion por streaming y carga de pesos safetensors antes de migrar a modelos mayores.
+- Educacion y docencia: modelo pequeno y ligero para ilustrar conceptos de KV-cache, compresion latente y decodificacion autoregresiva en cursos de IA.
+- Generacion de cuentos sinteticos: entrenado especificamente en TinyStories, puede producir narrativas infantiles cortas para pruebas de sistemas de moderacion o generacion de contenido.
+- Benchmarking de cuantizacion y despliegue: su tamano permite medir latencia y throughput en CPU, GPU de consumo y entornos embebidos sin grandes inversiones.
+- Pruebas de extension de contexto: el soporte YaRN permite experimentar con extrapolacion de longitud y evaluar la degradacion de calidad en tareas de recuperacion.
+- Generacion de datos sinteticos auxiliares: util para crear corpus de texto simple en ingles en tareas de aumento de datos o tests de pipelines NLP.
 
 ## Benchmarks y rendimiento
 
@@ -51,33 +56,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 35M de parametros, en fp32 el modelo ocuparia aproximadamente 140 MB, en fp16 unos 70 MB y en cuantizacion de 4 bits alrededor de 20-25 MB (estimacion teorica basada en el numero de parametros; no confirmada por el autor).
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en tarjetas con 4 GB o menos de VRAM, e incluso podria ejecutarse en CPU.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer de los ultimos anos (GTX 1050, RTX 3060, RTX 4090, etc.).
-- Opciones de despliegue: no se especifican en la model card; por el formato habitual de Hugging Face, podria desplegarse con transformers, llama.cpp u Ollama si los pesos estan en un formato compatible, pero esto no esta confirmado.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia en BF16/FP16: aproximadamente 0,07 GB solo para pesos (31,89 M parametros), mas overhead de activaciones y cache; en la practica cabe holgadamente en cualquier GPU con 1 GB o mas.
+- Cabe en GPU de consumo: si, en cualquier GPU moderna (RTX 3060, RTX 4090, GTX 1650, etc.) e incluso en CPU.
+- GPU recomendadas: no requiere GPU dedicada; cualquier GPU con soporte CUDA o Apple Silicon es suficiente. Para pruebas de throughput a gran volumen, una RTX 4090 o A100 esta sobredimensionada pero permite maximizar el batching.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True`, pipeline de text-generation, TextStreamer para streaming. No se documenta soporte explicito para vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput estimados: no disponibles. Por el tamano, se espera latencia de milisegundos por token en GPU de consumo, pero no hay mediciones publicadas.
+- Tamano del repositorio: 0,1 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| AiRukua/tiny-stories-kilat-35M | 35M | no disponible | MIT | Hugging Face |
-| TinyStories (Microsoft Research) | 1M-33M (varias variantes) | no disponible | MIT (segun publicacion) | Hugging Face / paper |
-| Modelos GPT-2 small | 124M | 1024 tokens | MIT | Hugging Face |
+| Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| TinyStories-Kilat-35M | 31,89 M | 512 (ext. 8k+ via YaRN) | Hibrida (Global Decay + Latent MLA) | MIT | Hugging Face |
+| GPT-2 small | 124 M | 1.024 | Transformer denso | MIT | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 | Transformer denso (Llama) | Apache 2.0 | Hugging Face |
+| SmolLM-135M | 135 M | 2.048 | Transformer denso | Apache 2.0 | Hugging Face |
 
-La comparacion con TinyStories es la mas directa por nombre y escala, aunque no se dispone de datos que confirmen que este modelo reproduzca sus resultados. Frente a GPT-2 small, el modelo aqui descrito es aproximadamente 3,5 veces menor, lo que reduce su capacidad general pero tambien sus requisitos de hardware.
+La comparativa se limita a parametros, contexto y licencia, ya que no hay benchmarks publicados para TinyStories-Kilat-35M que permitan contrastar rendimiento. Frente a GPT-2 small, el modelo de AiRukua es aproximadamente 4 veces mas pequeno y usa una arquitectura hibrida con menor coste de cache, pero su contexto nativo es la mitad y su entrenamiento se restringe a TinyStories, lo que limita su calidad generalista. SmolLM-135M y TinyLlama-1.1B son alternativas mas grandes y con contextos mayores, pero no incorporan mecanismos sub-cuadraticos.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: la model card solo declara la licencia, lo que impide conocer el proceso de entrenamiento y evaluar riesgos de forma rigurosa.
-- Riesgo elevado de alucinacion y de texto incoherente, esperable en un modelo de 35M de parametros sin datos de evaluacion publicados.
-- Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible identificar sesgos de genero, raza, idioma o cultura.
-- Limitaciones de contexto e idioma no disponibles; no se declara que idiomas domina ni cual es su ventana maxima.
-- Licencia MIT: permite uso comercial, modificacion y redistribucion con atribucion, pero el autor no ofrece garantias sobre el comportamiento del modelo.
-- No apto para produccion sin evaluacion previa: la falta de benchmarks y de documentacion desaconseja su uso en aplicaciones reales sin una validacion exhaustiva.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- Entrenado exclusivamente en TinyStories (cuentos infantiles sinteticos en ingles): su conocimiento del mundo, vocabulario y capacidad de razonamiento son muy limitados fuera de ese dominio.
+- Riesgo elevado de alucinacion y de generar texto incoherente en prompts fuera del estilo narrativo infantil.
+- Contexto nativo de solo 512 tokens; la extension YaRN a 8k+ no esta validada con benchmarks y puede degradar la calidad.
+- Modelo unicamente en ingles; no se garantiza ningun rendimiento en castellano u otros idiomas.
+- Sin soporte documentado de tool calling, function calling, agentes, vision ni audio.
+- No hay benchmarks publicados, por lo que las afirmaciones de eficiencia del autor no estan contrastadas de forma independiente.
+- Requiere `trust_remote_code=True` para cargar codigo personalizado desde el repositorio; conviene auditar el codigo remoto antes de usarlo en produccion.
+- Licencia MIT: permite uso comercial, pero al ser un modelo experimental de 35 M de parametros no es adecuado como base para aplicaciones en produccion reales.
+- El numero de parametros reportado por el autor (~35,2 M) difiere del recuento real de safetensors (31,89 M); conviene verificar la configuracion antes de planificar recursos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/AiRukua/tiny-stories-kilat-35M
-- Paper TinyStories (referencia contextual): https://arxiv.org/abs/2305.07759
+- Modelo en Hugging Face: https://huggingface.co/AiRukua/tiny-stories-kilat-35M
+- Framework Kilat (GitHub): https://github.com/Airukua/Kilat
+- Perfil del autor en Hugging Face: https://huggingface.co/AiRukua
+- Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

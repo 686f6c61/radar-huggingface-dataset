@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "Sep-WH/kcelectra-korean-hate-speech",
+  "slug": "sep-wh-kcelectra-korean-hate-speech",
+  "author": "Sep-WH",
+  "url": "https://huggingface.co/Sep-WH/kcelectra-korean-hate-speech",
+  "created_at": "2026-11-28T02:13:53.000Z",
+  "updated_at": "2026-11-28T02:29:56.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "korean",
+    "hate-speech",
+    "ko",
+    "base_model:beomi/KcELECTRA-base-v2022",
+    "base_model:finetune:beomi/KcELECTRA-base-v2022",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127779075,
+  "parameters_human": "127.8M",
+  "storage_bytes": 511140444,
+  "storage_human": "511 MB",
+  "context_length": null,
+  "base_model": "beomi/KcELECTRA-base-v2022",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

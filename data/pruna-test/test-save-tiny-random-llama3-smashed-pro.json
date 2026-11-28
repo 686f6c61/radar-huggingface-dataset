@@ -43,5 +43,31 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Savedbynerds.com",
+      "url": "https://www.savedbynerds.com/",
+      "snippet": "We are a high-end creative agency focused on redefining visual narratives. Our mission is to blend artistic intuition with technical …Read more"
+    },
+    {
+      "title": "Jobs - savedbynerds.com",
+      "url": "https://www.savedbynerds.com/html/jobs.html",
+      "snippet": "If you like a dynamic, open working environment, love to help people, and meet the basic requirements listed above, we d love to see …Read more"
+    },
+    {
+      "title": "Log In to SavedBy",
+      "url": "https://merchant.savedby.io/login",
+      "snippet": "Package Protection made easy. By logging in and using our services, you agree to our Terms of Service and Privacy Policy."
+    },
+    {
+      "title": "Brandin Capri Williams (@savedbythenerds) - Instagram",
+      "url": "https://www.instagram.com/savedbythenerds/",
+      "snippet": "447 Followers, 1,016 Following, 23 Posts - See Instagram photos and videos from Brandin Capri Williams (@savedbythenerds)"
+    },
+    {
+      "title": "SavedBy | Package Protection",
+      "url": "https://savedby.io/",
+      "snippet": "Stop losing money on package issues. With SavedBy Package Protection, we’ll handle all your shipping challenges so you can start …Read more"
+    }
+  ]
 }

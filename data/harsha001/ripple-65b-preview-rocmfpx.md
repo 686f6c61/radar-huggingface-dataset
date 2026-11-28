@@ -2,49 +2,48 @@
 
 ## Resumen
 
-Ripple-65B-Preview-ROCmFPX es una cuantizacion GGUF del modelo Ripple-65B-abliterated, publicada por el usuario Harsha001 en Hugging Face. Se trata de una variante "abliterated" (con las capas de rechazo eliminadas mediante tecnicas de abliteracion) del modelo base Ripple-65B, empaquetada especificamente con una cuantizacion denominada ROCmFPX orientada a hardware AMD, en particular a la plataforma Strix Halo. El modelo cuenta con 64.782.690.001 parametros totales y se distribuye en formato GGUF para inferencia local.
+Ripple-65B-Preview-ROCmFPX es una cuantizacion GGUF del modelo Ripple-65B-abliterated, publicada por el usuario Harsha001 en Hugging Face. El modelo base, a su vez, es una version "abliterated" (es decir, con las capas de rechazo mitigadas mediante tecnicas de abliteracion) de un modelo de 65.000 millones de parametros orientado a generacion de texto conversacional. La variante ROCmFPX esta especificamente optimizada para ejecutarse en hardware AMD, en particular en plataformas con memoria unificada como Strix Halo, segun indican las etiquetas del repositorio.
 
-El modelo resuelve el problema de desplegar un LLM de ~65B parametros en equipos con GPU AMD integradas de gran capacidad de memoria unificada, un nicho que historicamente ha estado mal cubierto por el ecosistema CUDA. La cuantizacion ROCmFPX y el uso de una matriz de importancia (imatrix) buscan preservar la calidad del modelo original mientras se reduce el peso de los pesos para que quepan en memorias unificadas de 128 GB o similares.
+El modelo cuenta con 64.782.690.001 parametros totales y se distribuye exclusivamente en formato GGUF cuantizado, con un tamano de repositorio de 332 GB. No se dispone de informacion publica sobre la arquitectura interna, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados mas alla de lo que indican las etiquetas del repositorio. La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido y requiere aceptar condiciones en Hugging Face.
 
-Es relevante ahora porque el ecosistema AMD ROCm y los equipos Strix Halo estan ganando traccion entre desarrolladores que quieren ejecutar modelos grandes en local sin depender de NVIDIA. La licencia Apache 2.0 facilita su uso comercial, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face. No se dispone de informacion sobre el desarrollador original del modelo base ni sobre los datos de entrenamiento.
+La relevancia de esta publicacion radica en su enfoque en hardware AMD: la mayoria de cuantizaciones GGUF de gran tamano estan optimizadas para CUDA/NVIDIA, mientras que ROCmFPX apunta explicitamente a GPUs AMD y a plataformas de memoria unificada como Strix Halo, lo que amplia las opciones de despliegue local de modelos de 65B en ecosistemas no-NVIDIA. El modelo incluye ademas una matriz de importancia (imatrix) para mejorar la calidad de la cuantizacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base transformer, inferido por el formato GGUF y el tamano) |
+| Arquitectura | no disponible (modelo base transformer, inferido por el formato GGUF y el pipeline text-generation) |
 | Parametros totales | 64.782.690.001 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | ROCmFPX (cuantizacion propia orientada a AMD ROCm), con imatrix |
+| Tipos de cuantizacion | GGUF cuantizado con imatrix (niveles concretos no disponibles) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base Ripple-65B-abliterated. Por el numero de parametros (64.782.690.001, aproximadamente 65B) y el pipeline de text-generation, se trata presumiblemente de un transformer denso de gran escala, aunque no se confirma si emplea Mixture of Experts, atencion lineal u otras variantes. El modelo base es una version "abliterated", lo que implica que se han aplicado tecnicas de abliteracion para eliminar la direccion de rechazo en el espacio de activaciones, reduciendo las negativas del modelo a responder ciertas peticiones.
+No se dispone de informacion publica sobre la arquitectura interna del modelo base Ripple-65B-abliterated. Por el tamano (64.782.690.001 parametros) y el pipeline declarado (text-generation), se trata de un modelo de lenguaje de gran escala, presumiblemente basado en transformer, aunque no se confirma en la informacion proporcionada. La designacion "abliterated" indica que se ha aplicado una tecnica de abliteracion para reducir o eliminar las capas de rechazo del modelo original, lo que afecta a su comportamiento ante solicitudes que el modelo base rechazaria.
 
-En cuanto al entrenamiento, no hay datos publicados sobre el numero de tokens, la composicion del dataset ni si se aplicaron fases de RLHF o DPO. La cuantizacion ROCmFPX es una innovacion tecnica destacable: se trata de un formato de cuantizacion desarrollado especificamente para hardware AMD con ROCm, y el uso de imatrix (matriz de importancia) indica que la cuantizacion se calibro con un dataset para preservar los pesos mas sensibles. El tag "strix-halo" sugiere que el empaquetado esta optimizado para la memoria unificada de los APU AMD Strix Halo.
+La variante ROCmFPX anade una cuantizacion GGUF con matriz de importancia (imatrix), una tecnica que pondera la importancia de cada peso durante la cuantizacion para preservar mejor la calidad en las capas mas sensibles. El sufijo "ROCmFPX" y las etiquetas "amd" y "strix-halo" sugieren que la cuantizacion esta ajustada para el stack ROCm de AMD y para plataformas con memoria unificada, aunque no se detallan los parametros exactos de cuantizacion ni el proceso de calibracion de la imatrix. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el tag "conversational" indica que el modelo esta orientado a dialogos multi-turno.
-- Razonamiento y generacion de texto general, heredado del modelo base de 65B parametros.
-- Modo "abliterated": responde sin las capas de rechazo habituales, lo que amplia el rango de peticiones que atiende.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse mediante APIs compatibles con el esquema de endpoints de Hugging Face.
-- Inferencia en hardware AMD con ROCm gracias a la cuantizacion ROCmFPX y al tag "amd".
-- No se dispone de informacion sobre soporte de tool calling, function calling, agentes, vision, audio ni modo thinking.
+- Generacion de texto conversacional: el pipeline declarado es text-generation y la etiqueta "conversational" indica uso orientado a dialogo.
+- Modelo "abliterated": las capas de rechazo han sido mitigadas, lo que modifica el comportamiento ante solicitudes restringidas en el modelo original.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que puede desplegarse detras de APIs compatibles con el formato de endpoints de Hugging Face.
+- Ejecucion en hardware AMD: optimizado para ROCm y plataformas Strix Halo con memoria unificada.
+- Cuantizacion con imatrix: orientada a preservar calidad en el proceso de compresion.
+- No se dispone de informacion sobre soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni capacidades multilingues especificas.
 
 ## Casos de uso
 
-- Despliegue local en equipos AMD Strix Halo: el modelo esta empaquetado para aprovechar la memoria unificada de los APU Strix Halo, permitiendo ejecutar un modelo de ~65B en un equipo de sobremesa o portatil sin GPU dedicada NVIDIA.
-- Investigacion sobre abliteracion: util para estudiar como la eliminacion de la direccion de rechazo afecta al comportamiento del modelo en tareas sensibles, comparando con el modelo base no abliterado.
-- Generacion de texto creativo sin restricciones: el caracter abliterated lo hace adecuado para escritura de ficcion, roleplay y contenido que los modelos alineados rechazan, siempre que se cumplan los requisitos legales y eticos.
-- Evaluacion de cuantizaciones ROCmFPX: sirve como banco de pruebas para medir la perdida de calidad de esta cuantizacion frente al modelo original en FP16/BF16.
-- Chat conversacional multi-turno en local: el tag conversational y el pipeline de text-generation permiten montar un asistente local con llama.cpp u otro runtime compatible con GGUF.
-- Servido mediante endpoints compatibles: el tag endpoints_compatible facilita integrarlo en infraestructuras que consumen APIs estilo OpenAI o similares.
-- Prototipado en entornos con ROCm: desarrolladores que ya trabajan con el stack AMD pueden validar flujos de inferencia sin migrar a CUDA.
+- Despliegue local en estaciones de trabajo AMD: el modelo esta cuantizado en GGUF con soporte ROCm, lo que permite ejecutarlo en GPUs AMD y en plataformas Strix Halo con memoria unificada, un escenario donde las alternativas optimizadas para CUDA no son viables.
+- Experimentacion con modelos de 65B en hardware de consumo: la cuantizacion GGUF permite cargar el modelo en configuraciones con memoria unificada amplia, facilitando la investigacion sin acceso a clusters NVIDIA.
+- Generacion de texto conversacional en entornos controlados: la etiqueta "conversational" y el pipeline text-generation lo hacen adecuado para prototipos de chatbot y generacion de respuestas, siempre que se acepten las condiciones de acceso.
+- Investigacion sobre abliteracion: al ser una variante abliterated, sirve para estudiar el efecto de la eliminacion de capas de rechazo en el comportamiento del modelo, comparandolo con el modelo original.
+- Evaluacion de tecnicas de cuantizacion con imatrix: util para medir la degradacion de calidad de la cuantizacion GGUF con matriz de importancia en un modelo de gran tamano.
+- Integracion en pipelines compatibles con endpoints: la etiqueta "endpoints_compatible" permite desplegarlo detras de servicios que consumen APIs con formato estandar de Hugging Face, facilitando su inclusion en aplicaciones existentes.
 
 ## Benchmarks y rendimiento
 
@@ -52,29 +51,28 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repo ocupa 332 GB, lo que sugiere que incluye varias cuantizaciones o una cuantizacion de muy alta precision; una cuantizacion de ~65B en 4 bits ronda los 35-40 GB, y en 8 bits los 65-70 GB, aunque no se confirma el tamano exacto de cada archivo.
-- GPU recomendadas: hardware AMD con ROCm, en particular APU Strix Halo con memoria unificada de 128 GB o superior; tambien GPUs AMD dedicadas con suficiente VRAM.
-- Cabe en consumer GPU: no en GPUs de consumo con 8-24 GB de VRAM en cuantizaciones altas; si en equipos Strix Halo con memoria unificada grande.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; el tag endpoints_compatible sugiere servidores compatibles con APIs de endpoints.
+- VRAM estimada: no disponible con precision; el repositorio ocupa 332 GB, lo que sugiere que las cuantizaciones incluidas requieren un espacio en disco y memoria considerables. Para un modelo de 65B, las cuantizaciones tipicas de 4 bits rondan los 35-40 GB, pero no se confirman los niveles incluidos.
+- GPU recomendadas: el modelo esta orientado a hardware AMD con ROCm; las etiquetas mencionan Strix Halo (APU con memoria unificada). No se especifican modelos concretos de GPU AMD ni NVIDIA.
+- Cabe en GPU de consumo: no confirmado; depende del nivel de cuantizacion y de la memoria unificada o VRAM disponible. Las plataformas Strix Halo con memoria unificada son el objetivo declarado.
+- Opciones de despliegue: formato GGUF, compatible con llama.cpp y derivados (Ollama, entre otros). La etiqueta "endpoints_compatible" sugiere soporte de despliegue via APIs. No se confirma soporte de vLLM ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre modelos comparables de la misma categoria en la informacion proporcionada.
+No disponible. La informacion proporcionada no incluye modelos comparables de la misma categoria con datos verificables de parametros, contexto, rendimiento y licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated: la eliminacion de las capas de rechazo puede producir respuestas inapropiadas, daninas o inseguras en dominios sensibles; requiere filtros y supervision en produccion.
-- Riesgo de alucinacion: inherente a los LLM de esta escala; no se dispone de evaluaciones que lo cuantifiquen.
-- Idiomas soportados no documentados: no se puede garantizar un rendimiento multilingue solido sin evaluacion.
-- Longitud de contexto no disponible: no se puede planificar el uso en tareas de contexto largo sin confirmar la ventana real.
-- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar, lo que puede complicar la automatizacion de despliegues.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base y la cuantizacion pueden arrastrar obligaciones adicionales no documentadas; conviene revisar el repo del modelo base.
-- Cuantizacion ROCmFPX especifica de AMD: puede no ser portable a otros runtimes o hardware sin conversion.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de la calidad frente al modelo original en FP16.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
+- Modelo abliterated: la mitigacion de las capas de rechazo implica que el modelo puede generar contenido que el modelo original rechazaria, con los riesgos asociados en produccion.
+- Falta de documentacion: no se dispone de informacion sobre arquitectura, contexto, datos de entrenamiento, idiomas ni benchmarks, lo que dificulta evaluar su idoneidad para casos concretos.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje de gran escala; no se han publicado evaluaciones especificas para este modelo.
+- Sesgos: no documentados; al desconocerse el dataset de entrenamiento, no es posible evaluar sesgos conocidos.
+- Licencia Apache 2.0 declarada, pero el acceso gated puede imponer condiciones adicionales que conviene revisar antes de un uso comercial.
+- Compatibilidad de hardware limitada: la optimizacion para ROCm/Strix Halo puede implicar un rendimiento suboptimo en otros entornos.
+- El modelo base es una cuantizacion GGUF de otro modelo, por lo que la calidad final depende de la cuantizacion original y de la re-cuantizacion ROCmFPX.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Harsha001/Ripple-65B-Preview-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/Ripple-65B-Preview-ROCmFPX
 - Modelo base: https://huggingface.co/orcarouter/Ripple-65B-abliterated-GGUF
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

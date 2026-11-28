@@ -2,109 +2,119 @@
 
 ## Resumen
 
-CoHab LeKiwi es una política vision-language-action (VLA) derivada de pi0.5 mediante fine-tuning completo sobre el checkpoint base `lerobot/pi05_base`. Desarrollada por el grupo edge-inference, resuelve una tarea concreta de robótica de manipulación móvil: la clasificación de objetos del suelo en contenedores mediante un robot LeKiwi con brazo SO-101. El modelo consume las cámaras frontal y de muñeca del robot, el estado articular, la velocidad de la base y la posición objetivo en el marco del robot, y emite chunks de 10 acciones a 15 Hz que combinan 6 consignas articulares del brazo con velocidades de base en x, y y theta.
+CoHab LeKiwi es una política vision-lenguaje-acción (VLA) especializada en la tarea de recogida y clasificación de objetos del suelo ("floor sorting") para un robot móvil LeKiwi equipado con un brazo SO-101. El modelo deriva de `lerobot/pi05_base`, el checkpoint base de la familia pi0.5 de Physical Intelligence, y ha sido afinado por el autor `edge-inference` para ejecutar de forma autónoma las cuatro fases de la tarea: desplazarse hasta un objeto, recogerlo, transportarlo hasta su contenedor y depositarlo. Con 4.143 millones de parámetros, la política consume las cámaras frontal y de muñeca, el estado articular, la velocidad de la base y la posición objetivo en el marco del robot, y emite bloques de 10 acciones a 15 Hz (6 objetivos articulares del brazo más velocidades x/y/theta de la base).
 
-La relevancia del modelo reside en su enfoque multi-robot y en la separación entre planificación de alto nivel y ejecución de bajo nivel: un planificador Cosmos-Reason2-8B decide el siguiente paso de cada robot como instrucción textual, mientras la política pi0.5 ejecuta las cuatro fases de la tarea (ir al objeto, recogerlo, trasladarlo al contenedor e introducirlo). El entrenamiento se realizó exclusivamente con datos de profesor scriptado en simulador (ManiSkill 3 sobre ReplicaCAD), con reintentos y ruido añadido en brazo y base.
+El sistema completo no es un único modelo: la política pi0.5 se apoya en un planificador externo Cosmos-Reason2-8B que decide, a partir de la imagen de cámara y un menú textual de opciones, cuál es el siguiente paso de cada uno de los dos robots, y que además juzga si el robot ha llegado a un objeto o contenedor. El entrenamiento se realizó íntegramente en simulación (ManiSkill 3 sobre escenas ReplicaCAD), combinando datos de un profesor scripted con reintentos y ruido, y dos rondas de demostraciones de recogida generadas a partir de los estados en los que la propia política debía recoger.
 
-El modelo cuenta con 4.143.404.816 parámetros en formato safetensors, un repositorio de 28,1 GB y licencia BSD 3-Clause. Hasta la fecha solo se ha evaluado en simulación; no se ha ejecutado todavía sobre un LeKiwi físico. Los resultados publicados muestran 3,16 objetos clasificados de 6 por tarea con 150 segundos de presupuesto y 3,71 objetos con 300 segundos, sobre 192 tareas con 24 semillas.
+Su relevancia actual reside en que documenta con detalle un pipeline completo de VLA multi-robot para manipulación móvil, con evaluación cuantitativa sobre 576 tareas y apartamentos no vistos en entrenamiento. El modelo es, sin embargo, estrictamente de simulación: no se ha probado todavía en un LeKiwi físico, lo que limita por ahora su uso a investigación y desarrollo de políticas robóticas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Vision-language-action (VLA) derivada de pi0.5; transformer con codificadores de visión y estado, salida de acciones en chunks |
-| Parametros totales | 4.143.404.816 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Vision-language-action (VLA) derivada de pi0.5 (`lerobot/pi05_base`); no se detalla la arquitectura interna en la información disponible |
+| Parámetros totales | 4.143.404.816 |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en bf16) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantización | no disponible; el checkpoint se distribuye y entrena en bf16 |
+| Idiomas soportados | no disponible (las instrucciones de tarea son texto generado por el planificador) |
 | Licencia | BSD 3-Clause |
-| Formato de pesos | safetensors (librería LeRobot 0.6.1) |
+| Formato de pesos | safetensors (librería `lerobot`) |
+| Pipeline | robotics |
+| Modelo base | `lerobot/pi05_base` |
+| Entradas | cámaras `base_0_rgb` (frontal) y `left_wrist_0_rgb` (muñeca), estado articular, velocidad de la base, posición objetivo en marco del robot |
+| Salidas | chunks de 10 acciones (6 objetivos articulares + velocidades x/y/theta de la base) |
+| Frecuencia de control | 15 Hz |
+| Tamaño del repositorio | 37,4 GB |
 
 ## Arquitectura y entrenamiento
 
-La política sigue la arquitectura pi0.5 de LeRobot, un modelo VLA que combina percepción visual multi-cámara con estado proprioceptivo del robot para producir secuencias de acciones. Las entradas son las imágenes de las cámaras `front` (renombrada `base_0_rgb`) y `wrist` (renombrada `left_wrist_0_rgb`), el estado articular, la velocidad de la base y la posición objetivo expresada en el marco del robot. La salida es un chunk de 10 acciones a 15 Hz, compuesto por 6 objetivos articulares del brazo SO-101 más las velocidades de base en x, y y theta.
+El modelo es una política VLA construida sobre `lerobot/pi05_base` y afinada con todos los pesos en LeRobot 0.6.1 en precisión bf16. La información disponible no detalla la arquitectura interna del backbone (transformer, mezcla de expertos, mecanismo de atención), por lo que este dato debe considerarse no disponible. La interfaz sí está bien definida: dos flujos de imagen (cámara frontal y de muñeca), vector de estado articular, velocidad de la base y posición objetivo, con salida en forma de chunks de 10 acciones a 15 Hz que combinan control del brazo y de la base móvil.
 
-El fine-tuning se realizó sobre todos los pesos de `lerobot/pi05_base` con LeRobot 0.6.1 en precisión bf16, usando datos generados por un profesor scriptado en simulación (ManiSkill 3, ReplicaCAD) con reintentos y pequeñas perturbaciones de brazo y base. Se seleccionó el checkpoint final de la ejecución, elegido de antemano. No se especifica en la información disponible el volumen de tokens ni la composición exacta del dataset de entrenamiento, más allá de que proviene del dataset `edge-inference/cohab-lekiwi` y que el apartamento 5 de ReplicaCAD quedó fuera del entrenamiento como conjunto retenido.
+El entrenamiento se realizó exclusivamente en simulación, sobre ManiSkill 3 con escenas ReplicaCAD. Los datos provienen de dos fuentes: por un lado, un profesor scripted que genera trayectorias con reintentos y pequeñas perturbaciones de brazo y base; por otro, demostraciones de recogida generadas en dos rondas de "autoimitación", en las que la propia política ejecutaba tareas completas en los apartamentos de entrenamiento, se guardaba el estado inicial de cada recogida y un profesor de pick completaba la acción desde ahí, conservando únicamente las recogidas exitosas. El checkpoint publicado es el último de la ejecución, elegido de antemano. No se especifican en la información disponible el número de tokens, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Ejecución de políticas de manipulación móvil: genera acciones continuas de brazo y base a partir de observaciones visuales y proprioceptivas.
-- Clasificación de objetos del suelo en cuatro fases: ir al objeto, recogerlo, trasladarlo al contenedor e introducirlo.
-- Percepción multi-cámara: integra cámara frontal y cámara de muñeca.
-- Control de base móvil: emite velocidades de traslación y rotación junto a las consignas articulares.
-- Integración con planificación de alto nivel: compatible con un planificador externo (Cosmos-Reason2-8B) que selecciona el siguiente paso como instrucción textual.
-- Operación multi-robot: evaluado con dos robots en paralelo sobre el mismo entorno.
-- Seguimiento de objetivos en el marco del robot: consume la posición objetivo derivada de odometría, mapa previo y cámara (SLAM simulada).
-- No dispone de capacidades de generación de texto general, tool calling, agentes conversacionales ni audio según la información disponible.
+- Control visomotor de manipulación móvil: desplazamiento de la base hasta un objeto, recogida con el brazo SO-101, transporte y depósito en un contenedor.
+- Percepción multimodal: procesa simultáneamente cámara frontal y cámara de muñeca junto con propriocepción (estado articular y velocidad de la base).
+- Ejecución de instrucciones de tarea en texto: recibe del planificador externo el siguiente paso como instrucción textual.
+- Control combinado de brazo y base: emite objetivos articulares y velocidades de chasis en un único chunk de acciones.
+- Operación multi-robot: el sistema se evaluó con dos robots trabajando en paralelo, cada uno con su propio planificador.
+- Integración con planificación de alto nivel: depende de Cosmos-Reason2-8B para seleccionar el siguiente paso y para juzgar la llegada a objetos y contenedores.
+- Detección de agarre mediante señal física: el estado "sosteniendo el objeto" se infiere del ángulo y la carga del gripper, no de la política.
+- No se documentan capacidades de tool calling, razonamiento multi-paso genérico, matemáticas, código ni procesamiento de audio.
 
 ## Casos de uso
 
-- Clasificación automatizada de objetos en entornos simulados: el modelo ejecuta las cuatro fases de ordenación del suelo sobre un LeKiwi simulando dos robots en paralelo, lo que permite validar pipelines de manipulación móvil antes de trasladarlos a hardware real.
-- Evaluación de políticas VLA en benchmarks de robótica: sirve como referencia reproducible sobre ManiSkill 3 y ReplicaCAD con 192 tareas y 24 semillas, útil para comparar variantes de pi0.5 o de planificadores de alto nivel.
-- Desarrollo de sistemas jerárquicos planner-policy: al aceptar instrucciones textuales de un planificador externo como Cosmos-Reason2-8B, permite construir arquitecturas donde un LLM/VLM decide el paso y la política lo ejecuta a 15 Hz.
-- Investigación en coordinación multi-robot: el modelo está entrenado y evaluado con dos robots que operan sobre seis objetos y dos contenedores por tarea, lo que facilita estudiar asignación de tareas y evitación de colisiones en simulador.
-- Prototipado de robótica móvil de bajo coste: al estar pensado para LeKiwi con brazo SO-101, sirve como base para experimentos con plataformas económicas antes de invertir en hardware industrial.
-- Generación de datos sintéticos y aumento de dataset: el pipeline de profesor scriptado con reintentos y ruido puede reutilizarse para producir nuevas trayectorias etiquetadas para otras políticas.
-- Validación de robustez frente a ruido de percepción: la evaluación incorpora ruido de objetivo (`--goal-noise 0.10`) y error de cámara de aproximadamente 6 cm, lo que permite medir la tolerancia del modelo a imperfecciones de SLAM simulada.
+- Investigación en VLA para manipulación móvil: sirve como referencia reproducible de un pipeline completo (datos de profesor scripted, autoimitación y evaluación multi-robot) para quienes desarrollan políticas de robot con LeRobot.
+- Clasificación de objetos en entornos domésticos simulados: el modelo cubre el ciclo completo de recogida y depósito de seis objetos en dos contenedores, útil para estudiar tareas de ordenación del hogar antes de trasladarlas a hardware real.
+- Benchmark de políticas multi-robot: la configuración de evaluación (72 semillas, 8 tareas paralelas, 150 s por tarea) permite comparar nuevas políticas contra esta línea base en condiciones controladas.
+- Generación de datos de recogida para otras políticas: el esquema de autoimitación descrito (ejecutar la política, guardar estados de pick y completar con un profesor) es reutilizable para aumentar datasets de manipulación.
+- Estudio de planificación jerárquica con modelos de lenguaje: la combinación de un VLA de bajo nivel con un planificador VLM de alto nivel (Cosmos-Reason2-8B) es un caso práctico para investigar descomposición de tareas en instrucciones textuales.
+- Prototipado de control de base móvil con brazo: la salida conjunta de velocidades de chasis y articulaciones a 15 Hz sirve para validar pilas de control en simuladores ManiSkill antes de portarlas a un LeKiwi físico.
+- Docencia y formación en robótica: el repositorio incluye registros por semilla (decisiones del planificador, comprobaciones de cámara, latencias) y una tabla por tarea, material útil para analizar fallos y tasas de éxito por fase.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor sobre 192 tareas (24 semillas × 8 tareas paralelas con layouts aleatorios), en el apartamento 5 no usado en entrenamiento:
+Evaluación sobre 576 tareas (72 semillas, 100-171, por 8 tareas paralelas con disposiciones aleatorias distintas; 150 s por tarea), con dos robots, seis objetos y dos contenedores por tarea, en el apartamento 5 no visto en entrenamiento:
 
-| Metrica | 150 s por tarea | 300 s por tarea |
-|---|---|---|
-| Objetos clasificados por tarea (de 6) | 3,16 [IC 95% 2,95; 3,38] (607 de 1.152, 52,7%) | 3,71 [3,51; 3,92] (713 de 1.152, 61,9%) |
-| Tareas con 0 objetos clasificados | 4 | 4 |
-| Tareas con 1 objeto clasificado | 28 | 10 |
-| Tareas con 2 objetos clasificados | 31 | 28 |
-| Tareas con 3 objetos clasificados | 48 | 36 |
-| Tareas con 4 objetos clasificados | 44 | 48 |
-| Tareas con 5 objetos clasificados | 25 | 49 |
-| Tareas con 6 objetos clasificados | 12 | 17 |
-| Exito por paso: ir al objeto | 69% | 59% |
-| Exito por paso: recoger | 80% | 75% |
-| Exito por paso: trasladar | 70% | 70% |
-| Exito por paso: introducir en contenedor | 92% | 87% |
+| Métrica | Resultado |
+|---|---|
+| Objetos clasificados por tarea (de 6) | 3,56 [IC 95 %: 3,44-3,68]; 2.053 de 3.456 (59,4 %) |
+| Tareas con 0 objetos clasificados | 11 |
+| Tareas con 1 objeto clasificado | 46 |
+| Tareas con 2 objetos clasificados | 88 |
+| Tareas con 3 objetos clasificados | 123 |
+| Tareas con 4 objetos clasificados | 128 |
+| Tareas con 5 objetos clasificados | 130 |
+| Tareas con 6 objetos clasificados | 50 |
+| Éxito por paso: ir al objeto | 72 % |
+| Éxito por paso: recoger | 77 % |
+| Éxito por paso: transportar | 79 % |
+| Éxito por paso: depositar | 95 % |
 
-Los intervalos de confianza se calculan por bootstrap sobre las 192 tareas. Los registros por semilla, las decisiones del planificador, las comprobaciones de cámara y las latencias están disponibles en `eval/v12/` del repositorio de código (`head` corresponde a 150 s y `double_time` a 300 s).
+El intervalo de confianza se calculó por bootstrap sobre las 576 tareas. No se han publicado comparaciones con otros modelos en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la información proporcionada. Con 4.143.404.816 parámetros en bf16, el peso de los tensores ronda los 8,3 GB, a lo que hay que sumar memoria para activaciones y codificadores de visión; una estimación conservadora sitúa el requisito por encima de 12-16 GB en bf16.
-- GPU recomendadas: no disponible. Por tamaño, cabría en GPUs de 24 GB o más (RTX 4090, L40S, A100 40 GB, H100), pero el autor no publica requisitos oficiales.
-- Compatibilidad con GPU de consumo: plausible en RTX 4090 (24 GB) y posiblemente en GPUs de 16 GB si se aplica cuantización, aunque no se han publicado pesos cuantizados ni pruebas al respecto.
-- Opciones de despliegue: la model card indica el uso mediante la librería LeRobot 0.6.1 con `PI05Policy.from_pretrained`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son adecuados para este tipo de política VLA.
-- Latencia y throughput: la política emite chunks de 10 acciones a 15 Hz (aproximadamente 67 ms por chunk), pero no se publican latencias medidas ni throughput por GPU en la información disponible.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Con 4.143 millones de parámetros en bf16, el peso de los pesos ronda los 8,3 GB, a lo que hay que sumar el coste de los dos flujos de imagen y del estado; no se documentan mediciones.
+- GPU recomendadas: no disponible. El autor no especifica hardware de referencia ni latencias medidas.
+- Cabe en GPU de consumo: no confirmado; por tamaño de pesos (≈8,3 GB en bf16) sería viable en GPUs consumer con 12-16 GB o más, pero es una estimación, no un dato publicado.
+- Opciones de despliegue: la vía documentada es LeRobot 0.6.1 mediante `PI05Policy.from_pretrained`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que además no aplican a una política de robótica de este tipo.
+- Latencia y throughput: no disponibles. El repositorio incluye registros de latencias del planificador en `eval/head/`, pero los valores no se recogen en la información proporcionada.
+- Requisito adicional del sistema: el planificador Cosmos-Reason2-8B se ejecuta aparte y añade sus propios requisitos de memoria y cómputo, no cuantificados en la información disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CoHab LeKiwi pi0.5 floorsort | 4.143.404.816 | no disponible | VLA para clasificación de objetos con LeKiwi/SO-101 | BSD 3-Clause | Hugging Face, 131 descargas |
-| lerobot/pi05_base | no disponible en la información | no disponible | Modelo VLA base de LeRobot | no disponible en la información | Hugging Face (modelo base) |
-| Cosmos-Reason2-8B | no disponible en la información | no disponible | Planificador VLM de alto nivel usado junto a esta política | no disponible en la información | Usado como componente externo en la evaluación |
+| CoHab LeKiwi (este modelo) | 4.143 M | no disponible | VLA de floor sorting para LeKiwi/SO-101 en simulación | BSD 3-Clause | Hugging Face, 186 descargas |
+| `lerobot/pi05_base` | no disponible | no disponible | Política VLA base de propósito general | no disponible en la información | Hugging Face (modelo base) |
+| Cosmos-Reason2-8B | 8.000 M (aproximado por nombre) | no disponible | Planificador VLM de alto nivel usado junto a esta política | no disponible en la información | Usado como componente del sistema |
 
-No se dispone de datos de benchmarks comparativos con otras políticas VLA de la misma categoría en la información proporcionada.
+No se dispone de datos de benchmarks de `lerobot/pi05_base` ni de Cosmos-Reason2-8B en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento cuantitativa. Tampoco se han identificado otras políticas VLA comparables en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Solo evaluado en simulación (ManiSkill 3, ReplicaCAD); no se ha ejecutado sobre un LeKiwi físico, por lo que el gap sim-to-real no está caracterizado.
-- Entrenado con datos de profesor scriptado, no con demostraciones humanas; puede presentar sesgos hacia las trayectorias y layouts del simulador.
-- Dependencia de un planificador externo (Cosmos-Reason2-8B) para decidir el siguiente paso; errores del planificador se propagan a la política.
-- Suposición fija durante el traslado: el brazo se mantiene en la pose final del pick; sin esta regla el modelo deja caer más objetos.
-- La SLAM es simulada y el chasis simulado atraviesa alfombras; estos comportamientos no reflejan condiciones reales.
-- Error de cámara de aproximadamente 6 cm y ruido de objetivo añadido (`--goal-noise 0.10`) condicionan los resultados; sin estas perturbaciones el rendimiento podría diferir.
-- Rendimiento limitado: 3,16 de 6 objetos clasificados a 150 s y 3,71 de 6 a 300 s; el éxito por paso cae al 59% en "ir al objeto" con 300 s.
-- Idiomas soportados no disponibles; el modelo no está orientado a tareas lingüísticas generales.
-- Licencia BSD 3-Clause: permite uso comercial con obligación de conservar el aviso de copyright y la cláusula de exención; conviene revisar los términos del modelo base `lerobot/pi05_base` antes de producción.
-- Riesgo de alucinación no aplicable en el sentido textual, pero sí de acciones incorrectas o inconsistentes con el objetivo ante observaciones fuera de distribución.
+- Solo simulación: el modelo no se ha ejecutado en un LeKiwi físico; el propio autor lo indica explícitamente. El rendimiento en hardware real es desconocido.
+- Tasa de éxito limitada: clasifica de media 3,56 de 6 objetos por tarea (59,4 %), con 11 tareas sin ningún objeto clasificado y solo 50 tareas con los seis objetos ordenados.
+- Dependencia de supuestos de simulación: si el depósito ha caído en el contenedor se determina con verdad del simulador; el chasis simulado atraviesa alfombras; durante el transporte el brazo se mantiene en la pose final de la recogida mediante una regla fija sobre la salida de la política.
+- Dependencia de un planificador externo: el sistema completo requiere Cosmos-Reason2-8B para elegir el siguiente paso y validar llegadas, lo que añade latencia, coste computacional y un punto de fallo adicional.
+- Percepción imperfecta: la localización del objetivo combina odometría, mapa previo y cámara simulada (error mediano de unos 5 cm) más ruido añadido de 0,10; el paso "ir al objeto" es el de menor éxito (72 %).
+- Sesgos conocidos: no documentados en la información disponible.
+- Riesgo de alucinación: no aplica en el sentido habitual de generación de texto libre; el riesgo equivalente es la selección errónea de paso por parte del planificador, no cuantificada de forma aislada.
+- Idiomas: no se especifican; las instrucciones de tarea son texto generado por el planificador, sin evaluación multilingüe publicada.
+- Licencia BSD 3-Clause: permite uso comercial con obligación de conservar el aviso de copyright y la cláusula de no aval; conviene revisar también las condiciones del modelo base `lerobot/pi05_base` y del planificador Cosmos-Reason2-8B, cuyas licencias no se detallan en la información disponible.
+- Generalización limitada: entrenado en los apartamentos de ManiSkill/ReplicaCAD y evaluado en uno no visto; no hay evidencia de transferencia a otras escenas, objetos o morfologías de robot.
+- Estado del arte cambiante: la model card advierte que el vídeo de demostración corresponde a un checkpoint anterior (v12), no al publicado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/edge-inference/cohab-lekiwi-floorsort-pi05
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/edge-inference/cohab-lekiwi
-- Repositorio de código e historial: https://github.com/edge-inference/cohab-lekiwi
-- Documento de planificación: https://github.com/edge-inference/cohab-lekiwi/blob/main/docs/PLAN.md
-- Demo (`replay.mp4`): disponible en el repositorio del modelo en Hugging Face
+- Código y documentación: https://github.com/edge-inference/cohab-lekiwi (con `docs/PLAN.md`)
+- Librería LeRobot: https://github.com/huggingface/lerobot
+- Simulador ManiSkill: https://maniskill.ai (ManiSkill 3)
+- Escenas ReplicaCAD: https://aihabitat.org/datasets/replica_cad/
+- Vídeo de demostración: `replay.mp4` en el repositorio del modelo (checkpoint v12, apartamento no visto, primer minuto a 2x)

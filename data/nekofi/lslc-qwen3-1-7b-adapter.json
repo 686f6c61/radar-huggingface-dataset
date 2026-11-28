@@ -5,7 +5,7 @@
   "author": "NekoFi",
   "url": "https://huggingface.co/NekoFi/LSLC-Qwen3-1.7B-Adapter",
   "created_at": "2026-11-23T13:24:36.000Z",
-  "updated_at": "2026-11-24T05:13:03.000Z",
+  "updated_at": "2026-11-27T12:42:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

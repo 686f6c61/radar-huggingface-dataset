@@ -2,90 +2,89 @@
 
 ## Resumen
 
-LFM3-VL-2B-MobileAgent-v4.2-GGUF es la distribucion cuantizada en formato GGUF del modelo experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2, un ajuste fino de LiquidAI/LFM3-VL-2B orientado a la actuacion como agente de interfaz grafica en telefonos moviles (GUI agent / mobile agent). El modelo recibe como entrada una captura de pantalla junto con un objetivo en lenguaje natural y produce la siguiente accion a ejecutar sobre la interfaz. Lo desarrolla el colectivo experimentalmachines y se publica como modelo de investigacion.
+LFM3-VL-2B-MobileAgent-v4.2-GGUF (denominado ahora LFM3-VL-2B-MobileAgent-Dev-OwnHistory-GGUF) es una compilacion en formato GGUF de un ajuste fino multimodal de 2B orientado a la automatizacion de interfaces moviles (GUI agents) sobre Android. Lo publica el usuario experimentalmachines y parte del modelo LiquidAI/LFM3-VL-2B, un modelo vision-lenguaje de la familia Liquid Foundation Models. El modelo recibe una captura de pantalla y un objetivo en lenguaje natural, y emite acciones sobre la interfaz.
 
-El modelo base es un vision-language de aproximadamente 1.730 millones de parametros (1.728.801.600 segun los pesos safetensors del modelo original), con una torre de vision que el ajuste fino no modifico. Esta version GGUF incluye el modelo de lenguaje cuantizado a Q4_K_M y el proyector de vision en Q8_0, heredado sin cambios de LiquidAI/LFM3-VL-2B-GGUF, y esta pensada para ejecutarse en llama.cpp, incluido el despliegue en dispositivos Android.
+El modelo resuelve el problema de controlar un telefono Android a partir de capturas de pantalla, sin necesidad de APIs de accesibilidad ni de instrumentacion de la aplicacion. Es relevante porque demuestra que un modelo de 1.73B parametros, cuantizado a 4 bits y ejecutable en un dispositivo movil con llama.cpp, puede abordar tareas de agente GUI. El autor lo marca explicitamente como modelo de desarrollo, conservado para reproducir resultados y no recomendado para uso general.
 
-Su relevancia actual radica en que demuestra la viabilidad de ejecutar un agente visual de interfaz en hardware movil con cuantizacion de 4 bits, aunque con limitaciones explicitas: objetivos en ingles, una unica captura por paso y una memoria de texto limitada a 8 pasos. Es un modelo de investigacion, no apto para operar de forma autonoma sobre cuentas reales.
+La arquitectura subyacente es un transformer vision-lenguaje con un proyector de vision independiente (mmproj) que no fue modificado durante el ajuste fino. El contexto de servicio documentado es de 8192 tokens, con un maximo de 1024 tokens por imagen.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-language transformer (base LFM3-VL-2B de LiquidAI); no se detalla mas en la informacion disponible |
-| Parametros totales | 1.728.801.600 (pesos safetensors del modelo base) |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | 8192 tokens en la configuracion de servicio indicada por el autor |
-| Tipos de cuantizacion | Q4_K_M (modelo de lenguaje) y Q8_0 (proyector de vision) |
-| Idiomas soportados | Ingles (en) |
-| Licencia | LFM Open License v1.0 (lfm1.0), heredada de LiquidAI/LFM3-VL-2B |
-| Formato de pesos | GGUF |
+| Arquitectura | Transformer vision-lenguaje (familia Liquid LFM3-VL), con torre de vision y proyector multimodal |
+| Parametros totales | 1.728.801.600 (~1.73B) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens (configuracion de servicio documentada) |
+| Tipos de cuantizacion | Q4_K_M para el modelo de lenguaje; Q8_0 para el proyector de vision (mmproj) |
+| Idiomas soportados | ingles (en) |
+| Licencia | LFM Open License v1.0 (heredada de LiquidAI/LFM3-VL-2B); etiquetada como "other" en Hugging Face |
+| Formato de pesos | GGUF (F16 convertido a Q4_K_M con llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del vision-language LiquidAI/LFM3-VL-2B. La informacion disponible no detalla la arquitectura interna del transformer base ni el numero de tokens de entrenamiento. El ajuste fino se realizo exclusivamente sobre el modelo de lenguaje: el proyector de vision (mmproj) se mantiene sin cambios respecto a LiquidAI/LFM3-VL-2B-GGUF, lo que indica que la torre de vision no fue reentrenada.
+El modelo base es LiquidAI/LFM3-VL-2B, un modelo vision-lenguaje de 1.73B parametros de la familia LFM3. El ajuste fino se realizo sobre el checkpoint experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-OwnHistory y afecta al modelo de lenguaje, pero no a la torre de vision ni al proyector multimodal, que se mantienen identicos a los de LiquidAI/LFM3-VL-2B-GGUF. La compilacion GGUF se genero con llama.cpp (commit cd959bae9) mediante convert_hf_to_gguf.py en F16 y posterior cuantizacion Q4_K_M.
 
-El entrenamiento se baso unicamente en demostraciones grabadas; el modelo nunca interactuo con un telefono real durante el entrenamiento. No se especifica en la informacion disponible si se aplicaron tecnicas de RLHF o DPO. La conversion a GGUF se realizo con llama.cpp (commit `cd959bae9`) mediante `convert_hf_to_gguf.py` a F16 y posterior cuantizacion con `llama-quantize Q4_K_M`; el autor indica que el procedimiento reproduce el GGUF de forma determinista byte a byte. La configuracion de servicio recomendada usa `--reasoning-format deepseek`, `--image-max-tokens 1024` y `-np 1 -ngl 99`.
+El entrenamiento se basa exclusivamente en demostraciones grabadas de interaccion con telefonos Android; el autor indica que el modelo nunca interactuo con un telefono en vivo durante el entrenamiento. El historial de texto se limita a 8 pasos y cada paso procesa una unica captura de pantalla. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Comprension de capturas de pantalla (image-text-to-text) para interpretar el estado de una interfaz movil.
-- Generacion de la siguiente accion sobre la GUI a partir de un objetivo en lenguaje natural.
-- Actuacion como agente de interfaz grafica de un solo paso por captura (una screenshot por paso).
-- Mantenimiento de una historia de texto de hasta 8 pasos como memoria de la tarea.
-- Conversacion multimodal (tag `conversational`).
-- Soporte de objetivos en ingles exclusivamente.
-- No se documentan en la informacion disponible capacidades de tool calling, function calling, codigo, matematicas, audio ni modo de razonamiento extendido mas alla del formato de razonamiento configurado en llama.cpp.
+- Generacion de acciones de agente GUI a partir de capturas de pantalla y un objetivo en lenguaje natural.
+- Comprension de imagenes (image-text-to-text) mediante el proyector de vision Q8_0.
+- Razonamiento de multiples pasos limitado a un historial de texto de 8 pasos.
+- Formato de razonamiento compatible con `--reasoning-format deepseek` en llama.cpp.
+- Soporte conversacional (tag `conversational`).
+- Compatibilidad con endpoints (tag `endpoints_compatible`).
+- No se documenta soporte de tool calling, function calling ni capacidades de audio.
 
 ## Casos de uso
 
-- Investigacion en agentes de GUI movil: servir como modelo de referencia cuantizado para reproducir los experimentos del proyecto en llama.cpp con hardware modesto, gracias a su tamano de 1,3 GB en el repositorio.
-- Automatizacion de pruebas de aplicaciones Android: usar el modelo para generar acciones sobre pantallas capturadas en entornos de test controlados y evaluar la robustez del agente ante distintos flujos de interfaz.
-- Prototipado en dispositivo: desplegar el modelo con llama.cpp en un telefono Android para validar latencia y viabilidad de un agente visual local sin conexion a servicios en la nube.
-- Generacion de datos sinteticos de interaccion: emplear las predicciones del modelo sobre capturas para construir o ampliar conjuntos de demostraciones de navegacion movil.
-- Evaluacion comparativa de politicas de agente: integrar el modelo en el harness de benchmarks del proyecto (experimentalmachines/lfm3-mobile-agent) para contrastar su rendimiento frente a otras politicas sobre las mismas tareas.
-- Demostraciones educativas de vision-language: ilustrar en un entorno controlado como un modelo de 2B parametros cuantizado a 4 bits interpreta una pantalla y propone una accion, con la advertencia de no usarlo sobre cuentas reales.
+- Automatizacion de pruebas de interfaz en Android: el modelo puede recibir capturas de pantalla de una app y generar la secuencia de toques y deslizamientos para recorrer flujos de usuario, util para QA repetible en dispositivos reales o emuladores.
+- Reproduccion de resultados de investigacion: al ser un modelo de desarrollo conservado para reproducibilidad, sirve para replicar los benchmarks del proyecto experimentalmachines/lfm3-mobile-agent con la misma compilacion GGUF.
+- Investigacion en agentes GUI de bajo coste: permite experimentar con politicas de control basadas en vision en un modelo de 1.73B ejecutable en local, sin depender de APIs en la nube.
+- Prototipado de asistentes de accesibilidad: explorar la generacion de acciones descritas en lenguaje natural para usuarios con dificultades motoras, siempre bajo supervision humana.
+- Evaluacion de cuantizacion en tareas multimodales: comparar el rendimiento de Q4_K_M frente a otros niveles en tareas de comprension de capturas de pantalla.
+- Docencia y demos de agentes moviles: desplegar el modelo con llama-server en un portatil o telefono de gama alta para ilustrar el ciclo percepcion-accion en un agente GUI.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor remite a la documentacion del proyecto (docs/results.md en el repositorio de GitHub) para consultar los resultados y su procedencia, pero las cifras concretas no se incluyen en la informacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor remite a la documentacion del proyecto (docs/results.md) para los resultados, pero no se incluyen cifras en la model card ni en los metadatos proporcionados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio ocupa 1,3 GB; el modelo Q4_K_M mas el proyector Q8_0 caben holgadamente en GPUs con 4 GB o mas de memoria, y en CPU mediante llama.cpp.
-- GPU recomendadas: no se especifican en la informacion disponible; por tamano, cualquier GPU consumer moderna (por ejemplo, RTX 3060 en adelante) es suficiente. El autor usa `-ngl 99` para descargar todas las capas en GPU.
-- Cabe en GPU consumer: si, dado el tamano de 1,3 GB del repositorio en cuantizacion Q4_K_M.
-- Despliegue: llama.cpp mediante `llama-server` con `--mmproj` para el proyector de vision; tambien es compatible con endpoints (`endpoints_compatible` segun los tags). No se documenta soporte especifico de vLLM, TGI u Ollama en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada. La configuracion de servicio usa `-np 1` (un solo slot) y contexto de 8192 tokens.
+- VRAM estimada para inferencia: el repo ocupa 1.3 GB en total, por lo que la inferencia en Q4_K_M requiere aproximadamente 1.5-2 GB de memoria, incluyendo el proyector de vision Q8_0.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; se ha validado con `-ngl 99` (todas las capas en GPU).
+- Cabe en GPU de consumo: si, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y en telefonos Android de gama alta mediante llama.cpp.
+- Opciones de despliegue: llama.cpp (llama-server con `--mmproj`), y por extension cualquier runtime compatible con GGUF; no se documenta soporte especifico de vLLM, TGI u Ollama.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| LFM3-VL-2B-MobileAgent-v4.2-GGUF | 1,73 B | 8192 (config. de servicio) | en | LFM Open License v1.0 | GGUF (Q4_K_M + mmproj Q8_0) | Agente GUI movil, modelo de investigacion |
-| LiquidAI/LFM3-VL-2B | no disponible en la informacion | no disponible | no disponible | LFM Open License v1.0 | safetensors / GGUF | Modelo base sin ajuste para agentes de GUI |
-| experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2 | 1,73 B | no disponible | en | LFM Open License v1.0 | safetensors | Version sin cuantizar del mismo ajuste fino |
-
-No se dispone en la informacion proporcionada de datos de rendimiento que permitan comparar cuantitativamente con alternativas.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| LFM3-VL-2B-MobileAgent-v4.2-GGUF (este) | 1.73B | 8192 | LFM Open License v1.0 | GGUF Q4_K_M | Ajuste fino para agente GUI Android, solo ingles |
+| LiquidAI/LFM3-VL-2B | 1.73B | no disponible | LFM Open License v1.0 | safetensors, GGUF | Modelo base generalista vision-lenguaje |
+| experimentalmachines/LFM3-VL-2B-MobileAgent | no disponible | no disponible | LFM Open License v1.0 | no disponible | Version principal recomendada por el autor frente a este modelo de desarrollo |
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion: el autor advierte explicitamente de que no debe operar de forma desatendida en un telefono con cuentas, mensajes o pagos reales.
-- Solo acepta objetivos en ingles; no hay soporte multilingue documentado.
-- Una unica captura de pantalla por paso; no procesa secuencias de imagenes.
-- Memoria limitada a una historia de texto de 8 pasos, lo que restringe tareas de horizonte largo.
-- Entrenado solo con demostraciones grabadas; nunca interactuo con un telefono real durante el entrenamiento, por lo que puede fallar ante estados de interfaz no vistos.
-- Riesgo de alucinacion en la interpretacion de pantallas y en la propuesta de acciones no validas.
-- Licencia LFM Open License v1.0: es necesario revisar sus terminos para uso comercial, ya que se trata de una licencia "other" heredada de LiquidAI.
-- No se documentan sesgos especificos en la informacion disponible.
-- La cuantizacion Q4_K_M introduce perdida de precision respecto al modelo original; el autor no publica una comparativa de degradacion.
+- Modelo de investigacion: el autor advierte explicitamente que no debe dejarse actuar sin supervision en un telefono con cuentas reales, mensajes o pagos.
+- Solo admite objetivos en ingles; no se documenta soporte multilingue.
+- Procesa una unica captura de pantalla por paso y no mantiene memoria mas alla de un historial de texto de 8 pasos.
+- Entrenado solo con demostraciones grabadas, nunca con interaccion en vivo; puede fallar ante estados de interfaz no vistos.
+- Riesgo de alucinacion en la identificacion de elementos de la pantalla y en la generacion de acciones.
+- Licencia LFM Open License v1.0: es necesario revisar sus terminos para uso comercial, ya que puede imponer restricciones adicionales.
+- Modelo marcado como no recomendado por el propio autor; se sugiere usar experimentalmachines/LFM3-VL-2B-MobileAgent en su lugar.
+- Los sesgos concretos no estan documentados en la informacion disponible.
 
 ## Enlaces
 
-- Hugging Face (este modelo): https://huggingface.co/experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2-GGUF
-- Modelo base sin cuantizar: https://huggingface.co/experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2
-- Modelo original de LiquidAI (GGUF): https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF
-- Modelo original de LiquidAI: https://huggingface.co/LiquidAI/LFM3-VL-2B
-- Repositorio del proyecto: https://github.com/experimentalmachines/lfm3-mobile-agent
-- Documentacion de modelos del proyecto: https://github.com/experimentalmachines/lfm3-mobile-agent/blob/main/docs/models.md
-- Resultados del proyecto: https://github.com/experimentalmachines/lfm3-mobile-agent/blob/main/docs/results.md
+- [Hugging Face: experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2-GGUF](https://huggingface.co/experimentalmachines/LFM3-VL-2B-MobileAgent-v4.2-GGUF)
+- [Modelo base del ajuste: experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-OwnHistory](https://huggingface.co/experimentalmachines/LFM3-VL-2B-MobileAgent-Dev-OwnHistory)
+- [Version principal recomendada: experimentalmachines/LFM3-VL-2B-MobileAgent](https://huggingface.co/experimentalmachines/LFM3-VL-2B-MobileAgent)
+- [Modelo original: LiquidAI/LFM3-VL-2B](https://huggingface.co/LiquidAI/LFM3-VL-2B)
+- [GGUF original: LiquidAI/LFM3-VL-2B-GGUF](https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF)
+- [Repositorio del proyecto: experimentalmachines/lfm3-mobile-agent](https://github.com/experimentalmachines/lfm3-mobile-agent)
+- [Guia de nombres](https://github.com/ExperimentalMachines/lfm3-mobile-agent/blob/main/docs/naming.md)
+- [Documentacion de modelos](https://github.com/experimentalmachines/lfm3-mobile-agent/blob/main/docs/models.md)
+- [Resultados](https://github.com/experimentalmachines/lfm3-mobile-agent/blob/main/docs/results.md)

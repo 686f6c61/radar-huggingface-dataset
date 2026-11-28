@@ -2,109 +2,106 @@
 
 ## Resumen
 
-ZAYA1-VL-8B-GGUF es una conversión a formato GGUF del modelo multimodal Zyphra/ZAYA1-VL-8B, publicada por el usuario 1bit-MONSTER. Se trata de un modelo visión-lenguaje que combina el modelo de lenguaje ZAYA1 de Zyphra con la torre de visión de Qwen2.5-VL, a la que se ha aplicado un LoRA exclusivamente de visión sobre los tokens de imagen y atención bidireccional dentro de cada imagen. El repositorio incluye tres artefactos: el modelo de lenguaje en F16 (para cuantizar), el mismo en Q4_K_M (para servir) y la torre de visión en F16 como fichero `mmproj` independiente.
+ZAYA1-VL-8B-GGUF es la conversion a formato GGUF del modelo multimodal Zyphra/ZAYA1-VL-8B, publicada por el usuario 1bit-MONSTER. El modelo base combina el lenguaje ZAYA1 de Zyphra con una torre de vision Qwen2.5-VL, e incorpora un LoRA especifico para tokens de imagen y atencion bidireccional dentro de cada imagen. Esta version GGUF es relevante porque, segun el autor, el modelo no estaba disponible previamente en este formato, lo que impide su uso en el ecosistema llama.cpp y en despliegues ligeros.
 
-La relevancia de esta publicación es práctica: según su autor, ZAYA1 no estaba disponible en formato GGUF antes de este trabajo, y su ejecución requiere un fork propio de llama.cpp (rama `1bit/hrx-vulkan-patched`), ya que el llama.cpp upstream no incluye el modelo ZAYA. El repositorio documenta además una validación numérica frente al código original de Zyphra (FP32 en CPU) y medidas de decodificación sobre hardware AMD Strix Halo con backend Vulkan.
+El repositorio incluye cuatro ficheros: el modelo de lenguaje en F16, Q8_0 y Q4_K_M, y la torre de vision (mmproj) en F16. La conversion se realizo mediante un fork propio de llama.cpp, ya que el llama.cpp upstream no soporta la arquitectura ZAYA. El autor valida la fidelidad del F16 frente al codigo original de Zyphra con un 100/101 de coincidencia top-1 en tres preguntas sobre imagen.
 
-El modelo base declara 9.054.048.760 parámetros totales en safetensors (cifra que engloba el modelo de lenguaje y la torre de visión) y licencia Apache 2.0, heredada del modelo original. No se especifican en la información disponible el número de parámetros activos, la longitud de contexto del modelo de lenguaje ni los idiomas soportados.
+Con 9.054.048.760 parametros totales y licencia Apache 2.0 heredada del modelo base, esta ficha se centra en la version cuantizada publicada, sus requisitos de hardware y sus limitaciones practicas, incluyendo un fallo conocido del motor en la ruta GPU para peticiones de imagen.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de lenguaje ZAYA1 (Zyphra) + torre de vision Qwen2.5-VL; atencion bidireccional dentro de cada imagen y LoRA solo de vision sobre los tokens de imagen |
-| Parametros totales | 9.054.048.760 (dato real de safetensors; incluye modelo de lenguaje y torre de vision) |
-| Parametros activos | no disponible (no se confirma en la informacion proporcionada que sea un modelo MoE) |
-| Longitud de contexto | no disponible para el modelo de lenguaje; la torre de vision tiene un tope de 4.096 tokens por imagen (Qwen2.5-VL) |
-| Tipos de cuantizacion | F16 y Q4_K_M (mas `mmproj` de vision en F16) |
+| Arquitectura | Transformer multimodal: ZAYA1 (lenguaje) + torre de vision Qwen2.5-VL, con LoRA solo de vision y atencion bidireccional intra-imagen |
+| Parametros totales | 9.054.048.760 |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (la torre de vision admite hasta 4.096 tokens por imagen) |
+| Tipos de cuantizacion | F16, Q8_0, Q4_K_M (modelo de lenguaje); mmproj en F16 |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (heredada del modelo base) |
-| Formato de pesos | GGUF (`ZAYA1-VL-8B-F16.gguf`, `ZAYA1-VL-8B-Q4_K_M.gguf`, `mmproj-ZAYA1-VL-8B-F16.gguf`) |
-| Tamano del repositorio | 25,2 GB (los tres ficheros) |
-| Modelo base | Zyphra/ZAYA1-VL-8B |
-| Compatibilidad upstream | No soportado por llama.cpp upstream; requiere el fork de 1bit-MONSTER o el motor 1bit engine |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina dos componentes: el modelo de lenguaje ZAYA1 de Zyphra y la torre de visión de Qwen2.5-VL. Sobre los tokens de imagen se aplica un LoRA específicamente de visión y se usa atención bidireccional dentro de cada imagen, frente a la atención causal del resto de la secuencia. Esta combinación es la que hace que el modelo pueda procesar imágenes dentro de una conversación de texto.
+El modelo base ZAYA1-VL-8B es un modelo multimodal que acopla el lenguaje ZAYA1 de Zyphra con una torre de vision Qwen2.5-VL. Sobre los tokens de imagen se aplica un LoRA especifico de vision, y cada imagen se procesa con atencion bidireccional (no causal) dentro de sus propios tokens, mientras el texto mantiene atencion causal. La torre de vision limita cada imagen a un maximo de 4.096 tokens.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si el modelo base pasó por fases de RLHF o DPO; el modelo base es Zyphra/ZAYA1-VL-8B y su model card es la fuente a consultar para esos detalles. La innovación técnica documentada en este repositorio es de tipo de conversión y ejecución, no de entrenamiento: el conversor propio escribe los pesos de la convolución agrupada (`grouped convolution`) en orden *tap-major*, que es el que espera el grafo, y esa es la razón por la que los GGUF deben generarse con dicho conversor. Adicionalmente, la decodificación de cada imagen debe realizarse en un único *ubatch*: con `-b 4096 -ub 4096` se cubre el límite de 4.096 tokens de Qwen2.5-VL.
-
-La validación publicada por el autor incluye una comparación *teacher-forced* del fichero F16 contra el código original de Zyphra (FP32 en CPU) sobre tres preguntas con imagen (101 tokens), con y sin atención bidireccional, y la comprobación de que añadir la ruta de visión no altera el comportamiento del modelo en modo solo texto.
+La conversion GGUF la realiza el proyecto 1bit engine mediante un conversor propio integrado en su fork de llama.cpp. El conversor escribe los pesos de la convolucion agrupada en orden tap-major, requisito del grafo del motor. El autor reporta que anadir la ruta de vision no altera el comportamiento de texto: la perplejidad en wikitext se mantiene igual que en el ZAYA1-8B solo texto (95/96 frente a FP32). No se dispone de informacion sobre volumen de tokens de entrenamiento, composicion del dataset ni etapas de RLHF/DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Generación de texto conversacional (etiqueta `conversational` en el repositorio).
-- Comprensión de imágenes: descripción de contenido visual y lectura de texto presente en la imagen (validado con una imagen sintética con formas y el texto "HELLO 42").
-- Razonamiento multimodal básico sobre una o varias imágenes dentro de una conversación.
-- Ejecución local en GPU AMD vía Vulkan a través del motor 1bit engine o del fork de llama.cpp.
-- Modo solo texto funcional: la perplexity en wikitext se mantiene igual que en ZAYA1-8B sin la ruta de visión (95/96 coincidencias frente a FP32).
-- Cuantización adicional a partir del fichero F16 publicado.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Otras capacidades especiales (modo *thinking*, audio, vídeo): no disponibles en la información proporcionada.
+- Generacion de texto conversacional en formato GGUF compatible con endpoints.
+- Comprension de imagenes: descripcion de contenido visual, identificacion de colores, formas y texto presente en la imagen.
+- Razonamiento multimodal basico con atencion bidireccional intra-imagen.
+- Soporte de conversaciones multi-turno (tag `conversational`).
+- Compatibilidad con la ruta de inferencia de llama.cpp mediante fork especifico.
+- No se documentan capacidades de tool calling, function calling, agentes, audio ni modo thinking en la informacion disponible.
+- Cobertura multilingue: no disponible.
 
 ## Casos de uso
 
-- Inferencia multimodal local y privada: el modelo permite procesar imágenes y texto sin enviar datos a servicios externos, ejecutándose con el motor 1bit sobre Vulkan; es adecuado para entornos con requisitos de confidencialidad donde no se puede usar una API en la nube.
-- Despliegue en hardware AMD de gama integrada: la validación sobre Strix Halo (Radeon 8060S, Vulkan) con 38-51 tok/s en F16 demuestra que el modelo es viable en equipos sin GPU discreta, lo que sirve para prototipos y demos sobre portátiles o mini-PC.
-- Extracción de información de imágenes documentales: la combinación de la torre Qwen2.5-VL con atención bidireccional dentro de la imagen está pensada para tareas de lectura y descripción de contenido visual, como la transcripción de texto embebido en capturas o diagramas.
-- Etiquetado y enriquecimiento de catálogos de imágenes: dado que el modelo acepta una imagen por vez con un tope de 4.096 tokens, encaja en pipelines de generación automática de descripciones o metadatos para lotes de imágenes.
-- Investigación en cuantización y comparación de precisión: el repositorio ofrece F16 y Q4_K_M del mismo modelo, lo que permite medir el impacto de la cuantización en tareas de visión, replicando la validación de acuerdo top-1 (100/101 frente a FP32) y la comprobación de perplexity en wikitext.
-- Integración en el ecosistema llama.cpp mediante fork: para equipos que ya usan llama.cpp y necesitan un modelo visión-lenguaje no soportado upstream, esta conversión permite reutilizar la infraestructura existente asumiendo el mantenimiento del fork `1bit/hrx-vulkan-patched`.
-- Desarrollo y evaluación de motores de inferencia: el caso de uso del propio autor es servir de banco de pruebas para el motor 1bit y para el soporte de modelos ZAYA en llama.cpp, incluyendo la correcta disposición *tap-major* de las convoluciones agrupadas.
+- Descripcion automatica de imagenes en pipelines locales: el modelo puede generar descripciones de contenido visual (formas, colores, texto en imagen) ejecutandose en CPU o GPU consumer con la ruta llama.cpp, util para catalogacion de activos sin depender de APIs externas.
+- Moderacion y verificacion de contenido visual: con Q8_0 y la torre de vision en F16 se pueden clasificar imagenes simples y detectar texto incrustado, integrándolo en flujos de revision previa a publicacion.
+- Asistente conversacional multimodal en escritorio: al caber en equipos con GPU integrada potente (validado en Strix Halo), permite construir asistentes de escritorio que respondan a preguntas sobre capturas de pantalla o documentos escaneados.
+- Procesamiento de documentos con OCR ligero: la capacidad de leer texto en imagenes ("HELLO 42" en la prueba del autor) permite extraer cadenas de imagenes de baja complejidad en entornos sin conectividad.
+- Prototipado e investigacion en vision-lenguaje: la disponibilidad en GGUF con licencia Apache 2.0 facilita experimentar con modelos multimodales en hardware modesto y comparar cuantizaciones (Q8_0 frente a Q4_K_M) con metricas de KLD.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente con llama.cpp o el motor 1bit, los datos de imagen no salen del equipo, adecuado para sectores regulados.
+- Evaluacion de fidelidad de cuantizaciones: el repositorio incluye datos de KLD y coincidencia top-1 que sirven como referencia para decidir entre Q8_0 y Q4_K_M en produccion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El repositorio únicamente documenta validaciones de fidelidad numérica y una medida de velocidad de decodificación:
+El autor publica metricas de calidad de cuantizacion (KLD frente a F16 en 16 ventanas de 512 tokens de wikitext-2) y de velocidad en hardware concreto. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
-| Prueba | Resultado |
+| Metrica | ZAYA1-VL-8B-Q8_0 | ZAYA1-VL-8B-Q4_K_M |
+|---|---|---|
+| Tamano del fichero | 9,71 GB | 5,71 GB |
+| KLD medio vs F16 | 0,0065 | 0,1046 |
+| Coincidencia top-1 | 96,6 % | 83,7 % |
+
+| Metrica de velocidad (Strix Halo, Q4_K_M) | Valor |
 |---|---|
-| Acuerdo top-1 F16 vs. codigo de Zyphra (FP32 CPU), 3 preguntas con imagen, 101 tokens | 100/101, tanto con atencion causal como bidireccional sobre la imagen |
-| Q4_K_M sobre imagen sintetica (cuadrado rojo, circulo azul, texto "HELLO 42") | Descripcion correcta de ambas formas y del texto |
-| Efecto de anadir la ruta de vision en modo solo texto | Perplexity en wikitext sin cambios; 95/96 coincidencias frente a FP32 |
-| Velocidad de decodificacion en Strix Halo (Radeon 8060S, Vulkan), F16 | 38-51 tok/s |
+| pp512 | 2.814 ± 371 tok/s |
+| tg128 | 141 ± 13,8 tok/s |
+| Decode F16 (Radeon 8060S, Vulkan) | 38-51 tok/s |
+
+Validacion de fidelidad: el F16 alcanza 100/101 de coincidencia top-1 frente al codigo original de Zyphra (FP32 en CPU) en tres preguntas sobre imagen, tanto con atencion causal como bidireccional.
 
 ## Requisitos de hardware
 
-- VRAM estimada para Q4_K_M: en torno a 6-7 GB de pesos (estimacion a partir de ~9.000 millones de parametros en 4 bits) mas el `mmproj` de vision en F16, mas la cache KV. Con 4.096-8.192 tokens de contexto es razonable apuntar a 8-10 GB de memoria grafica o memoria unificada.
-- VRAM estimada para F16: en torno a 18 GB de pesos mas el `mmproj`. Se recomienda reservar 20-22 GB contando cache KV. Estas cifras son estimaciones derivadas del numero de parametros; el autor no publica tamanos por fichero.
-- GPU recomendadas: no disponibles de forma explicita. El unico hardware validado publicamente es AMD Strix Halo (Radeon 8060S) con backend Vulkan, que alcanza 38-51 tok/s en F16.
-- GPU de consumo: Q4_K_M deberia caber en tarjetas con 12-16 GB de VRAM (por ejemplo, gama RTX xx80/xx90 recientes o equivalentes AMD) segun las estimaciones anteriores; F16 requiere tarjetas de 24 GB o mas. No hay validacion publicada en GPU NVIDIA para esta conversion.
-- Opciones de despliegue: 1bit engine (`1bit serve -m ZAYA1-VL-8B-Q4_K_M.gguf --mmproj mmproj-ZAYA1-VL-8B-F16.gguf --device vulkan`) y el fork de llama.cpp del autor (rama `1bit/hrx-vulkan-patched`), con `-b 4096 -ub 4096` para decodificar cada imagen en un unico ubatch. vLLM, TGI, Ollama y llama.cpp upstream no estan confirmados como compatibles.
-- Latencia y throughput: unicos datos publicados, 38-51 tok/s de decodificacion en Strix Halo con Vulkan y F16. No hay datos de latencia de prellenado ni de throughput en otros equipos.
+- VRAM estimada: aproximadamente 10 GB para Q8_0 (9,71 GB de pesos mas overhead) y unos 6 GB para Q4_K_M (5,71 GB), sumando el mmproj F16 de la torre de vision.
+- GPU recomendadas: cualquier GPU con al menos 12 GB de VRAM para Q8_0; 8 GB pueden bastar para Q4_K_M. Validado en AMD Ryzen AI Max+ 395 con Radeon 8060S (memoria unificada).
+- Cabe en GPU consumer: si, en tarjetas de 8-12 GB o superiores segun cuantizacion; tambien funciona en CPU (ruta recomendada para imagenes en la version rc1 del motor 1bit).
+- Opciones de despliegue: llama.cpp mediante el fork de 1bit-MONSTER (rama `1bit/hrx-vulkan-patched`); el motor 1bit engine (`1bit serve`). El llama.cpp upstream no soporta ZAYA.
+- Latencia y throughput: pp512 de 2.814 tok/s y tg128 de 141 tok/s en Strix Halo con Q4_K_M; decode F16 de 38-51 tok/s en la misma plataforma. La velocidad del Q8_0 en HRX no se ha medido.
+- Para imagenes en llama.cpp, decodificar cada imagen en un unico ubatch: `-b 4096 -ub 4096`.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Licencia | GGUF / soporte en llama.cpp |
-|---|---|---|---|---|
-| ZAYA1-VL-8B (esta conversion) | 9,05 B (safetensors) | no disponible (vision limitada a 4.096 tokens por imagen) | Apache 2.0 | Si, GGUF propio; requiere fork de 1bit-MONSTER |
-| Qwen2.5-VL-7B | no disponible en la informacion proporcionada | no disponible | Apache 2.0 | Soporte en llama.cpp upstream (la torre de vision es la misma familia que usa ZAYA1-VL-8B) |
-| InternVL3-8B | no disponible | no disponible | no disponible | Soporte parcial mediante forks de terceros |
-| Gemma 3 multimodal | no disponible | no disponible | Licencia Gemma (con restricciones de uso) | Soporte en llama.cpp upstream |
+No se dispone de datos de rendimiento de benchmarks estandar para comparar con alternativas de la misma categoria en la informacion proporcionada.
 
-La comparacion cuantitativa de rendimiento entre estos modelos no esta disponible: ZAYA1-VL-8B-GGUF no publica resultados de benchmarks estandarizados, por lo que no es posible establecer una comparacion numerica rigurosa con las alternativas.
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+|---|---|---|---|---|---|
+| ZAYA1-VL-8B-GGUF (este) | 9,05 B | no disponible | GGUF | Apache 2.0 | Conversion de 1bit-MONSTER, requiere fork de llama.cpp |
+| Zyphra/ZAYA1-VL-8B | 9,05 B | no disponible | safetensors | Apache 2.0 | Modelo base original, requiere transformers con rama `zaya1-vl` |
+| ZAYA1-8B | no disponible | no disponible | no disponible | no disponible | Version solo texto del mismo lenguaje, sin torre de vision |
 
 ## Limitaciones y advertencias
 
-- Ausencia de benchmarks: no hay resultados de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales publicadas para esta conversion, por lo que el rendimiento relativo frente a otros modelos de su tamano es desconocido.
-- Validacion limitada: las pruebas documentadas se reducen a tres preguntas con imagen (101 tokens) y a una imagen sintetica. No constituyen una evaluacion representativa de la calidad en produccion.
-- Riesgo de alucinacion: no se documenta ningun tipo de mitigacion ni evaluacion de alucinacion en vision o en texto; se aplica el riesgo habitual de los modelos generativos.
-- Dependencia de un fork: el modelo no funciona en llama.cpp upstream. Esto implica mantener el fork `1bit/hrx-vulkan-patched` o el motor 1bit engine, con el coste de mantenimiento y de actualizaciones de seguridad asociado.
-- Los GGUF deben generarse con el conversor propio del autor (orden *tap-major* en la convolucion agrupada); usar otro conversor puede producir pesos incompatibles con el grafo.
-- Restriccion de vision por imagen: la torre Qwen2.5-VL admite un maximo de 4.096 tokens por imagen, lo que limita la resolucion efectiva y el numero de imagenes procesables de forma conjunta.
-- Idiomas: no se especifica la cobertura linguistica del modelo base ni de esta conversion. No hay garantia de calidad en castellano.
-- Longitud de contexto del modelo de lenguaje: no disponible; no se puede planificar un uso con documentos largos sin verificarlo en la model card de Zyphra/ZAYA1-VL-8B.
-- Soporte de tool calling y de agentes: no confirmado en la documentacion disponible.
-- Adopcion nula en el momento de la consulta: 0 descargas y 0 *likes* en el repositorio, sin evidencia de uso en produccion por terceros.
-- Licencia: Apache 2.0, heredada del modelo base, permite uso comercial; conviene verificar igualmente las condiciones del modelo base Zyphra/ZAYA1-VL-8B y de los componentes Qwen2.5-VL.
+- Fallo conocido: en 1bit OS v2026.49-rc1, las peticiones de imagen abortan en la torre de vision en la ruta GPU HRX (engine#3549); las imagenes solo funcionan en la ruta CPU (`--device cpu`). El texto no se ve afectado.
+- Requiere un fork especifico de llama.cpp: el llama.cpp upstream no soporta ZAYA, y los GGUF deben generarse con el conversor propio del autor (orden tap-major de la convolucion agrupada).
+- Q4_K_M es claramente mas lossy: KLD de 0,1046 y coincidencia top-1 del 83,7 %, por debajo del umbral de calidad del autor; se recomienda Q8_0 para uso en produccion.
+- Contexto maximo no documentado; la torre de vision limita cada imagen a 4.096 tokens.
+- Idiomas soportados no documentados: riesgo de rendimiento desigual fuera del ingles.
+- Riesgo de alucinacion inherente a modelos generativos, no cuantificado en la informacion disponible; la validacion del autor se limita a pruebas puntuales (tres preguntas de imagen y una imagen sintetica).
+- La licencia Apache 2.0 permite uso comercial, pero se hereda del modelo base y no se documentan restricciones adicionales del conversor.
+- Repositorio con pocas descargas (304) y sin likes: ecosistema de validacion limitado; conviene verificar la fidelidad en el propio caso de uso.
+- Sin datos de sesgos conocidos en la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio Hugging Face de esta conversion: https://huggingface.co/1bit-MONSTER/ZAYA1-VL-8B-GGUF
+- Repositorio GGUF: https://huggingface.co/1bit-MONSTER/ZAYA1-VL-8B-GGUF
 - Modelo base: https://huggingface.co/Zyphra/ZAYA1-VL-8B
-- Motor 1bit: https://github.com/1bit-MONSTER/engine
-- Fork de llama.cpp con soporte ZAYA (rama `1bit/hrx-vulkan-patched`): https://github.com/1bit-MONSTER/llama.cpp
-- Pull request del port a llama.cpp (PR #18): https://github.com/1bit-MONSTER/llama.cpp/pull/18
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; solo paginas genericas sobre el termino "bit" (Wikipedia, 1Bit AI), sin relacion con ZAYA1-VL-8B.
+- Motor 1bit engine: https://github.com/1bit-MONSTER/engine
+- Fork de llama.cpp: https://github.com/1bit-MONSTER/llama.cpp
+- Pull request de conversion: https://github.com/1bit-MONSTER/llama.cpp/pull/18
+- Incidencia de vision en GPU HRX: https://github.com/1bit-MONSTER/engine/issues/3549
+- Familias del autor: https://huggingface.co/1bit-MONSTER#families

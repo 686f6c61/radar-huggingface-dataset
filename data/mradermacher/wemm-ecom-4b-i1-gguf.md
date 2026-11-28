@@ -2,77 +2,93 @@
 
 ## Resumen
 
-WeMM-Ecom-4B-i1-GGUF es una colección de cuantizaciones en formato GGUF generada por mradermacher a partir del modelo multimodal tencent/WeMM-Ecom-4B, desarrollado por Tencent. El repositorio no contiene pesos originales en safetensors, sino conversiones cuantizadas pensadas para su uso con llama.cpp y herramientas compatibles con GGUF. El nombre indica un modelo de aproximadamente 4B de parámetros orientado al ámbito del comercio electrónico, pero la model card publicada no aporta detalles sobre arquitectura, datos de entrenamiento ni capacidades concretas.
+WeMM-Ecom-4B-i1-GGUF es la versión cuantizada en formato GGUF del modelo multimodal WeMM-Ecom-4B, desarrollado originalmente por Tencent y publicado en Hugging Face. Esta variante ha sido generada por mradermacher, un conocido creador de cuantizaciones GGUF, empleando cuantización con matriz de importancia (imatrix) para preservar la calidad del modelo original en tamaños reducidos. El modelo base está orientado a tareas de comercio electrónico conversacional y combina capacidades de texto y visión, lo que lo hace adecuado para escenarios donde se necesita comprender imágenes de productos junto con lenguaje natural.
 
-La información disponible en el repositorio es muy limitada: no se especifica licencia, idiomas, pipeline ni resultados de benchmarks. El conteo de parámetros reportado en la ficha de Hugging Face (1.550.888) es inconsistente con la denominación "4B" del modelo y probablemente refleja un recuento parcial o erróneo del tensor de un componente concreto, no del modelo completo. El tamaño del repositorio aparece como 0.0 GB, lo que sugiere que los artefactos no estaban indexados en el momento de la consulta.
+El modelo cuenta con 4.205.751.296 parámetros totales (aproximadamente 4,2 mil millones) según los pesos en safetensors del modelo base, y está construido sobre una arquitectura identificada en los metadatos como `qwen3_5`, lo que sugiere una variante de la familia Qwen 3.5 adaptada para fines multimodales y de comercio electrónico. Los idiomas declarados en la model card son chino (zh) e inglés (en), y la licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
-Por tanto, esta ficha describe lo que puede verificarse del repositorio (autor de la cuantización, modelo base, conjunto de cuantizaciones ofrecidas) y marca explícitamente como "no disponible" todo aquello que la información proporcionada no cubre. Es relevante para desarrolladores que ya conozcan WeMM-Ecom-4B y busquen variantes GGUF para despliegue local, no como punto de entrada para evaluar el modelo desde cero.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo multimodal especializado en e-commerce en hardware de consumo, gracias a las cuantizaciones que van desde 1,6 GB (IQ1_S) hasta 3,6 GB (Q6_K). El repositorio completo ocupa 54,3 GB debido a la gran cantidad de variantes de cuantización incluidas, aunque el usuario solo necesita descargar el archivo correspondiente a la cuantización elegida.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: tencent/WeMM-Ecom-4B) |
-| Parametros totales | no disponible (la denominación del modelo indica ~4B; el dato de safetensors reportado, 1.550.888, es inconsistente) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer multimodal (etiquetada como `qwen3_5` en los metadatos) |
+| Parametros totales | 4.205.751.296 (aprox. 4,2 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q4_0, Q4_1, Q4_K_S, Q4_K_M, IQ4_XS, small-IQ4_NL, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones weighted/imatrix del modelo base) |
+| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, IQ3_XXS, Q2_K, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, Q4_0, IQ4_XS, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K, más archivo imatrix |
+| Idiomas soportados | chino (zh) e inglés (en) según la model card |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base tencent/WeMM-Ecom-4B en los datos proporcionados. El nombre sugiere un modelo multimodal ("MM") orientado a comercio electrónico ("Ecom") con aproximadamente 4B de parámetros, pero no se confirma ni el tipo de transformer, ni si emplea fusión de modalidades, ni la composición del dataset de entrenamiento, ni si hubo fases de RLHF o DPO.
+La información disponible no detalla la arquitectura interna más allá de la etiqueta `qwen3_5` y la naturaleza multimodal del modelo. Por los metadatos y el tamaño (4,2 mil millones de parámetros), se trata de un transformer multimodal que combina un codificador visual con un modelo de lenguaje, diseñado específicamente para tareas de comercio electrónico conversacional. La model card del repositorio cuantizado no incluye detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO; esa información correspondería a la model card del modelo base `tencent/WeMM-Ecom-4B`, que no se ha proporcionado en esta ficha.
 
-Lo único verificable es el proceso de cuantización: mradermacher ha generado las variantes GGUF con cuantizaciones ponderadas (weighted) y con matriz de importancia (imatrix), según los metadatos de la model card. Se ofrecen niveles desde IQ1_S/IQ1_M (1 bit) hasta Q6_K, cubriendo el rango habitual de llama.cpp. No se indica si se ha excluido el proyector multimodal (mmproj) de la cuantización; el campo `skip_mmproj` aparece vacío, lo que no permite concluir si las capacidades de visión quedan preservadas en los GGUF.
+La innovación técnica destacable en este repositorio es el uso de cuantización con matriz de importancia (imatrix), que permite generar cuantizaciones de baja precisión (incluso IQ1 e IQ2) con una pérdida de calidad menor que la cuantización estática equivalente. El autor indica que las cuantizaciones IQ suelen ser preferibles a las no-IQ de tamaño similar, y que la variante Q4_K_M es la recomendada por equilibrio entre velocidad y calidad. Además, se incluye un archivo imatrix (0,1 GB) para que otros usuarios puedan generar sus propias cuantizaciones.
 
 ## Capacidades
 
-- Generación de texto: presumiblemente soportada por el modelo base, aunque no se detalla en la información disponible.
-- Capacidades multimodales: el nombre "WeMM" sugiere entrada multimodal, pero no se confirma ni se especifica qué modalidades cubre.
-- Especialización en comercio electrónico: inferida del sufijo "Ecom", sin documentación que la respalde.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modo thinking, visión, audio u otras capacidades especiales: no disponible.
+- Generación de texto conversacional en chino e inglés.
+- Comprensión de imágenes (modelo multimodal): puede procesar imágenes junto con texto, lo que permite analizar productos, capturas o material visual.
+- Orientación específica a comercio electrónico: descripciones de productos, atención al cliente, consultas sobre catálogo.
+- Conversación multi-turno.
+- Capacidades multimodales integradas en el modelo base (visión + lenguaje).
+- No se dispone de información sobre soporte de tool calling, function calling, agentes o modos de razonamiento extendido (thinking mode) en la documentación proporcionada.
+- No se dispone de información sobre capacidades de audio.
 
 ## Casos de uso
 
-- Despliegue local de un modelo especializado en e-commerce: las variantes GGUF permiten ejecutar WeMM-Ecom-4B en hardware de consumo mediante llama.cpp u Ollama, útil para prototipos de generación de descripciones de producto o atención al cliente sin depender de APIs externas. La idoneidad concreta no puede confirmarse sin datos de evaluación.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece más de veinte niveles de cuantización, lo que permite medir la degradación de calidad entre IQ1_S y Q6_K en tareas de comercio electrónico sobre un mismo modelo base.
-- Integración en pipelines de CI/CD para pruebas de inferencia: al ser GGUF, puede cargarse en entornos con CPU o GPU modesta para tests de regresión de prompts y salidas.
-- Investigación sobre cuantización extrema: las variantes IQ1 e IQ2 son útiles para estudiar el límite práctico de compresión en modelos de ~4B orientados a dominio.
-- Despliegue en dispositivos edge: las cuantizaciones Q4_K_M o Q5_K_M, si el modelo base rinde aceptablemente, podrían ejecutarse en portátiles o mini-PC para asistentes de catálogo.
-- Fine-tuning posterior sobre GGUF: no es un caso directo, pero las cuantizaciones sirven como referencia para comparar con adaptadores LoRA aplicados al modelo original en safetensors.
+- Atención al cliente en tiendas online: el modelo puede gestionar conversaciones multi-turno en chino e inglés sobre productos, pedidos y devoluciones, aprovechando su naturaleza conversacional y su especialización en e-commerce.
+- Descripción automática de productos a partir de imágenes: gracias a su capacidad multimodal, puede generar fichas de producto y descripciones a partir de fotografías, reduciendo el trabajo manual en catálogos grandes.
+- Asistente de compras conversacional: integrado en una web o app, puede responder preguntas sobre características de productos comparando imágenes y texto.
+- Moderación y clasificación de contenido de e-commerce: análisis de imágenes de productos para detectar categorías, atributos o posibles incumplimientos.
+- Generación de respuestas a reseñas: el modelo puede redactar respuestas contextuales a opiniones de clientes, con soporte para imágenes adjuntas en las reseñas.
+- Despliegue en local o en el borde: al caber en cuantizaciones de 2-3 GB, permite ejecutar un asistente de e-commerce en hardware de consumo sin depender de la nube, útil para prototipos y demos.
+- Extracción de información de fichas de producto: combinando texto e imagen, puede estructurar atributos (color, talla, material) a partir de material visual y textual.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precisión, ya que no se confirma el tamaño real del modelo. Para un modelo de ~4B, las cuantizaciones Q4_K_M rondarían los 2,5-3 GB y Q6_K los 3,5-4 GB, pero es una estimación basada en la denominación, no en datos verificados.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: probable para cuantizaciones Q4 y Q5 si el modelo es efectivamente de ~4B, pero no confirmado.
-- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio) por el formato GGUF; vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: entre 2 y 4 GB según la cuantización elegida (IQ1_S ~1,6 GB; Q4_K_M ~2,8 GB; Q6_K ~3,6 GB), más overhead del contexto y del codificador visual.
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para cuantizaciones bajas; RTX 3060, RTX 4060, RTX 4090 para mayor comodidad; A100/H100 no son necesarias para este tamaño.
+- Cabe en GPU de consumo: sí, en la mayoría de GPUs modernas con 6 GB o más de VRAM, e incluso en sistemas con 8 GB de RAM usando CPU.
+- Opciones de despliegue: llama.cpp, Ollama, y otros runners compatibles con GGUF; el repositorio indica compatibilidad con `endpoints_compatible` y la librería `transformers` para el modelo base.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye modelos comparables ni datos de rendimiento que permitan establecer una comparación rigurosa con alternativas de la misma categoría.
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| WeMM-Ecom-4B (este, cuantizado) | ~4,2 B | no disponible | Sí (visión) | Apache 2.0 | GGUF en HF |
+| Qwen2.5-VL-3B | ~3 B | no disponible en esta ficha | Sí | Apache 2.0 (según versión) | HF |
+| LLaVA-1.5-7B | ~7 B | no disponible en esta ficha | Sí | Apache 2.0 / Llama | HF |
+| MiniCPM-V 2.6 | ~8 B | no disponible en esta ficha | Sí | Apache 2.0 | HF |
+
+Nota: los datos de los modelos comparados no se han verificado en la información proporcionada; se incluyen como referencia de categoría y deben contrastarse con sus fichas oficiales. No se dispone de benchmarks comparativos para este modelo.
 
 ## Limitaciones y advertencias
 
-- La licencia no está especificada en el repositorio, por lo que no puede confirmarse el uso comercial; debe consultarse la licencia del modelo base tencent/WeMM-Ecom-4B antes de cualquier despliegue en producción.
-- El conteo de parámetros reportado (1.550.888) es incompatible con la denominación "4B"; no debe usarse para dimensionar hardware sin verificar el modelo base.
-- El tamaño del repositorio figura como 0.0 GB, lo que puede indicar que los archivos no estaban disponibles o indexados en el momento de la consulta.
-- No se confirma si las cuantizaciones conservan el proyector multimodal; si el modelo base es multimodal, las capacidades de visión podrían perderse o degradarse.
-- Las cuantizaciones IQ1 e IQ2 suponen una pérdida de calidad significativa; no son recomendables para producción sin evaluación previa.
-- Riesgo de alucinación y sesgos: no evaluable sin datos del modelo base.
-- Sin benchmarks publicados, no hay evidencia de rendimiento frente a alternativas.
+- Idiomas limitados a chino e inglés según la model card; el rendimiento en castellano no está garantizado y probablemente sea inferior.
+- Riesgo de alucinación inherente a los modelos de lenguaje de 4B parámetros, especialmente en tareas de razonamiento complejo o datos factuales de productos.
+- Las cuantizaciones de muy baja precisión (IQ1, IQ2, Q2_K) degradan notablemente la calidad; el autor las etiqueta como "for the desperate" o "very low quality".
+- No se dispone de información sobre sesgos específicos del modelo base.
+- Aunque la licencia es Apache 2.0, conviene verificar la licencia del modelo base `tencent/WeMM-Ecom-4B` (enlazada en la model card) para confirmar términos exactos de uso comercial.
+- El repositorio tiene 54,3 GB por incluir todas las cuantizaciones; es necesario seleccionar y descargar solo el archivo deseado.
+- No hay información sobre el contexto máximo soportado, lo que impide planificar conversaciones largas con seguridad.
+- El modelo está especializado en e-commerce; su rendimiento en dominios generales puede ser limitado en comparación con modelos de propósito general del mismo tamaño.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/WeMM-Ecom-4B-i1-GGUF
+- Repositorio Hugging Face (cuantizado): https://huggingface.co/mradermacher/WeMM-Ecom-4B-i1-GGUF
 - Modelo base: https://huggingface.co/tencent/WeMM-Ecom-4B
+- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/WeMM-Ecom-4B-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#WeMM-Ecom-4B-i1-GGUF
+- Licencia del modelo base: https://huggingface.co/tencent/WeMM-Ecom-4B/blob/main/LICENSE
+- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de cuantizaciones de Artefact2: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

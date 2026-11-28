@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "jdaltonII02/whisper-large-v3-kinyarwanda-nss",
+  "slug": "jdaltonii02-whisper-large-v3-kinyarwanda-nss",
+  "author": "jdaltonII02",
+  "url": "https://huggingface.co/jdaltonII02/whisper-large-v3-kinyarwanda-nss",
+  "created_at": "2026-11-26T10:15:53.000Z",
+  "updated_at": "2026-11-27T22:01:07.000Z",
+  "license": "cdli-non-standard-speech-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "rw"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "kinyarwanda",
+    "non-standard-speech",
+    "stuttering",
+    "asr-sprint-rwanda-2026",
+    "automatic-speech-recognition",
+    "rw",
+    "dataset:cdli/rwandan_kinyarwanda_nonstandard_speech_v1.0",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174112552,
+  "storage_human": "6.2 GB",
+  "context_length": null,
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

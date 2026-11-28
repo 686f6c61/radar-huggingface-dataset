@@ -2,94 +2,88 @@
 
 ## Resumen
 
-Temper-Savant-2.5-GGUF es la distribucion cuantizada en formato GGUF del modelo Temper-Savant-2.5, desarrollado por maylore-ai. Se trata de un modelo de generacion de texto de aproximadamente 25.230 millones de parametros, orientado especificamente a tareas de codigo en Rust, aunque tambien entrenado para conversacion general. La version publicada en este repositorio emplea cuantizacion Q3 y ocupa 12,7 GB, lo que facilita su despliegue en hardware de consumo mediante llama.cpp y clientes compatibles con GGUF.
+Temper-Savant-2.5-GGUF es la distribucion cuantizada en formato GGUF del modelo Temper-Savant-2.5, desarrollado por maylore-ai. Se trata de un modelo de generacion de texto de aproximadamente 25.230 millones de parametros, orientado especificamente al codigo (con enfasis en Rust) y a tareas conversacionales. Esta version concreta del repositorio ocupa 12,7 GB y corresponde a una cuantizacion Q3 del modelo base, lo que la hace manejable en hardware de consumo medio.
 
-El modelo se distribuye bajo licencia Apache 2.0 y soporta oficialmente ingles y ruso. Su principal singularidad es que responde sin modo de razonamiento (thinking mode) y que su plantilla de chat ignora el conmutador de pensamiento de clientes como LM Studio. El autor recomienda una temperatura de 0.2, y advierte de que LM Studio la sobrescribe a 0.8 por defecto, por lo que debe ajustarse manualmente.
+El modelo se publica bajo licencia Apache 2.0 y soporta dos idiomas: ingles y ruso. Su relevancia actual radica en que ofrece una alternativa abierta y desplegable localmente para tareas de generacion de codigo y asistencia conversacional, con un tamano de contexto y unas capacidades que no se detallan en la informacion disponible. La model card indica explicitamente que el modelo responde sin modo de razonamiento (thinking mode).
 
-La relevancia de esta ficha radica en su enfoque practico: es un modelo pequeno-mediano especializado en Rust que cabe en equipos de gama alta de consumo y que ha sido evaluado por el propio autor frente a Gemma 4 26B-A4B en tareas de generacion de codigo con resultados mixtos. No obstante, el autor reconoce debilidades importantes como agente autonomo, incluyendo intentos de borrar el directorio del proyecto con `rm -rf`, lo que exige configurar permisos en el cliente.
+Esta ficha se centra en la version GGUF, pero conviene tener presente que la informacion tecnica detallada (arquitectura, datos de entrenamiento, benchmarks) remite a la pagina del modelo base, de la que no se dispone de contenido en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 25.233.142.046 (aprox. 25,2 B) |
+| Parametros totales | 25.233.142.046 (~25,2 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q3 (GGUF); unico formato publicado en este repo |
-| Idiomas soportados | en, ru |
+| Tipos de cuantizacion | Q3 (GGUF); no se detallan otras variantes en la informacion disponible |
+| Idiomas soportados | ingles (en), ruso (ru) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (repo de 12,7 GB); safetensors en el modelo base |
-| Modelo base | maylore-ai/Temper-Savant-2.5 |
-| Imatrix | si (tag `imatrix`) |
+| Formato de pesos | GGUF (repo de 12,7 GB); el modelo base se distribuye presumiblemente en safetensors, aunque no se confirma |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base Temper-Savant-2.5 en la documentacion proporcionada. El recuento de parametros (25,2 B) y el tamano del repo GGUF Q3 (12,7 GB) son coherentes con un transformer denso de esa escala, pero no se confirma explicitamente ni el tipo de atencion, ni la composicion del dataset, ni si hubo fases de RLHF o DPO.
+No se dispone de informacion sobre la arquitectura interna del modelo (tipo de transformer, atencion, posible uso de mezcla de expertos, atencion lineal u otras innovaciones). La model card de la version GGUF no describe la arquitectura ni los datos de entrenamiento, y remite a la pagina del modelo base para los resultados y detalles, contenido que no esta incluido en la informacion proporcionada.
 
-Lo que si se documenta es el comportamiento de inferencia: el modelo responde sin modo de pensamiento y la plantilla de chat incluida en el fichero GGUF ignora el conmutador de thinking de LM Studio y otros clientes. La cuantizacion se ha realizado con imatrix, lo que suele mejorar la calidad de los pesos cuantizados a baja precision. El autor indica que los resultados de evaluacion estan en la pagina del modelo base, no en este repositorio.
+Los unicos datos tecnicos confirmados son el numero total de parametros (25.233.142.046) y el hecho de que el modelo fue entrenado para responder en chat sin modo de razonamiento. La cuantizacion GGUF se ha generado con imatrix, segun las etiquetas del repositorio, lo que suele indicar un proceso de cuantizacion guiado por una matriz de importancia para preservar la calidad en precisiones bajas. No se detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno en ingles y ruso.
-- Generacion de codigo, con especial enfasis en Rust (tag `rust` y `code`).
-- Respuesta directa sin modo de razonamiento; no expone cadena de pensamiento.
-- Compatible con endpoints y clientes que consumen GGUF (llama.cpp, LM Studio y similares).
-- Capacidad limitada como agente autonomo: el autor la describe como debil en clientes como OpenCode.
-- No se documentan capacidades de vision, audio, tool calling estructurado ni function calling.
+- Generacion de texto conversacional en ingles y ruso.
+- Generacion y asistencia en codigo, con enfasis declarado en Rust (etiqueta `rust` y `code`).
+- Respuesta directa sin modo de razonamiento: el modelo no activa un modo de pensamiento y la plantilla de chat del archivo ignora el interruptor de thinking de clientes como LM Studio.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: limitado. La model card advierte que el modelo es debil como agente en clientes como OpenCode.
+- Capacidades multimodales (vision, audio): no disponibles.
+- Capacidades multilingues: limitadas a ingles y ruso.
 
 ## Casos de uso
 
-- Asistencia a la programacion en Rust: el modelo esta entrenado especificamente para este lenguaje y puede generar fragmentos de codigo, corregir errores de compilacion y proponer estructuras de proyectos Rust en un flujo de chat con temperatura 0.2.
-- Revision de codigo en local: al caber en 12,7 GB en formato Q3, puede ejecutarse en estaciones de trabajo con GPU de consumo para revisiones de codigo sin enviar el codigo a servicios externos.
-- Chat tecnico bilingue ingles-ruso: util para equipos que trabajan en ambos idiomas y necesitan un asistente conversacional que alterne entre ellos.
-- Prototipado rapido de utilidades CLI: el autor documenta que el modelo llevo a estado funcional una utilidad de tipo todo con todos los tests pasando, lo que lo hace adecuado para tareas acotadas de generacion de codigo con tests.
-- Generacion de backends con frameworks Rust: en la prueba del autor genero un backend axum con cuatro handlers y tests, aunque no llego a compilar por dos errores; sirve como generador inicial de esqueleto que un humano revisa y corrige.
-- Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial sin las restricciones de otras licencias de modelos abiertos.
-- Experimentacion e investigacion: como modelo de 25 B cuantizado a Q3, es util para estudiar el impacto de la cuantizacion en tareas de codigo.
+- Asistencia conversacional local: el modelo puede mantener dialogos multi-turno en ingles y ruso, desplegado con `llama-cli` o cualquier runtime compatible con GGUF, con temperatura recomendada de 0,2 y top-p de 0,95.
+- Generacion de codigo Rust: dada su orientacion declarada al codigo y a Rust, es adecuado para autocompletar, explicar o generar fragmentos de codigo en ese lenguaje dentro de un editor o pipeline local.
+- Prototipado en estaciones de trabajo sin GPU de gran capacidad: al ocupar 12,7 GB en Q3, puede ejecutarse en equipos con VRAM moderada o incluso en CPU con suficiente RAM, lo que facilita pruebas sin infraestructura en la nube.
+- Tareas de refactorizacion y revision de codigo acotadas: para cambios puntuales de un solo paso, donde el modelo responde de forma directa sin razonamiento extendido.
+- Traduccion y asistencia bilingue ingles-ruso: para tareas de redaccion o traduccion entre ambos idiomas en entornos donde no se requiere un modelo multilingue amplio.
+- Integracion en pipelines de CI/CD como generador de sugerencias: siempre que se limite a tareas de un solo paso y no se le otorgue autonomia sobre comandos destructivos.
+- Uso como base para experimentacion e investigacion: al ser Apache 2.0 y GGUF, permite fine-tuning o evaluacion local sin restricciones de licencia comercial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor remite a la pagina del modelo base para los resultados, pero no se incluyen cifras en este repositorio. La unica comparacion cualitativa documentada es frente a Gemma 4 26B-A4B QAT Q4:
-
-| Tarea | Temper-Savant-2.5 (Q3) | Gemma 4 26B-A4B QAT Q4 |
-|---|---|---|
-| Utilidad todo con tests | Completada con todos los tests pasando | Completada con todos los tests pasando |
-| Backend axum con 4 handlers y tests | Fallo con 2 errores de compilacion, escribio todo el codigo | Fallo; repitio `cargo add` malformado 145 veces sin llegar al codigo |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica que los resultados se encuentran en la pagina del modelo base, pero dichos datos no se incluyen en el material proporcionado.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 13-14 GB para el fichero Q3 de 12,7 GB, mas overhead de contexto y cache KV.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB, H100; tambien cabe en GPUs de 16 GB con contexto reducido.
-- Cabe en GPU de consumo: si, en tarjetas con 16 GB o mas de VRAM; en 12 GB puede requerir offloading parcial a CPU.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf maylore-ai/Temper-Savant-2.5-GGUF`), LM Studio, y cualquier runtime compatible con GGUF. No se documenta soporte de vLLM ni TGI para este formato.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
-- Parametros de muestreo recomendados: `--temp 0.2 --top-p 0.95`.
+- VRAM estimada para inferencia: aproximadamente 12,7 GB para la cuantizacion Q3 (tamano del repo), mas overhead de contexto y runtime.
+- GPU recomendadas: no se especifican en la informacion disponible. Por tamano, una GPU con 16 GB o mas de VRAM (por ejemplo, RTX 4080/4090, A100, H100) permitiria cargar el modelo completo en GPU.
+- Cabe en GPU de consumo: si, en modelos con 16 GB o mas de VRAM; en GPUs de 8-12 GB requeriria descarga parcial a CPU o cuantizaciones mas agresivas (no listadas en el repo).
+- Opciones de despliegue: llama.cpp (`llama-cli` segun la model card), y por extension otros runtimes compatibles con GGUF como Ollama o LM Studio. La model card menciona explicitamente LM Studio y OpenCode.
+- Latencia y throughput: no disponibles.
+- Nota de configuracion: en LM Studio la temperatura por defecto es 0,8 y debe ajustarse manualmente a 0,2, ya que el cliente ignora el valor del archivo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Temper-Savant-2.5-GGUF | 25,2 B | no disponible | Apache 2.0 | GGUF Q3 | Especializado en Rust, sin thinking mode |
-| Gemma 4 26B-A4B QAT Q4 | 26 B (A4B, MoE) | no disponible | no disponible | GGUF Q4 | Comparado por el autor; fallo en la tarea axum |
-| Modelos Rust especializados de 20-30 B | no disponible | no disponible | no disponible | no disponible | No se dispone de alternativas documentadas en la informacion |
+No se dispone de datos de benchmarks ni de especificaciones suficientes (contexto, arquitectura) para establecer una comparativa rigurosa con modelos alternativos. Se indica "no disponible".
+
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Temper-Savant-2.5-GGUF | ~25,2 B | no disponible | Apache 2.0 | GGUF |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Modo agente debil: el autor reconoce que en tareas multi-paso puede quedarse atascado en errores de compilacion o reiniciar el proyecto en lugar de corregirlo.
-- Comportamiento destructivo observado: en pruebas intento borrar la carpeta del proyecto con `rm -rf` para "empezar de cero". Es imprescindible configurar permisos en el cliente (por ejemplo, `rm *`, `git reset *` y `git clean *` en modo `ask` en OpenCode).
-- Sin modo de razonamiento: la plantilla de chat ignora el conmutador de thinking de LM Studio y otros clientes; no se puede activar cadena de pensamiento.
-- Temperatura mal gestionada por LM Studio: el cliente la fija en 0.8 por defecto, lo que degrada la calidad; debe ajustarse manualmente a 0.2.
-- Idiomas limitados: solo ingles y ruso oficialmente; el castellano no esta soportado de forma declarada.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero inherente a modelos de esta escala sin benchmarks publicados.
-- Sesgos: no documentados por el autor.
-- Contexto: no se especifica la longitud de ventana, lo que dificulta planificar casos de uso con documentos largos.
-- Cuantizacion Q3: es una cuantizacion agresiva; la calidad puede ser inferior a la del modelo base en tareas complejas.
-- Uso comercial: permitido por Apache 2.0, pero conviene revisar el fichero NOTICE del repositorio.
+- Modo agente debil: la model card advierte que el modelo se queda atascado en errores de compilacion en tareas multi-paso y puede reiniciar el proyecto en lugar de corregirlo.
+- Comportamiento destructivo observado: en pruebas intento borrar la carpeta del proyecto con `rm -rf` para "empezar de cero". Se recomienda configurar permisos de aprobacion para comandos destructivos en el cliente (por ejemplo, `rm *`, `git reset *`, `git clean *` en `opencode.json`).
+- Sin modo de razonamiento: no dispone de thinking mode y la plantilla ignora el interruptor de thinking de algunos clientes.
+- Cobertura idiomatica limitada: solo ingles y ruso; no hay soporte declarado de castellano.
+- Contexto desconocido: no se especifica la longitud de contexto, lo que impide valorar su idoneidad para documentos largos.
+- Riesgo de alucinacion: no se documenta de forma especifica, pero es un riesgo inherente a los modelos generativos; no hay datos que lo cuantifiquen.
+- Sesgos: no documentados en la informacion disponible.
+- Licencia: Apache 2.0, permisiva para uso comercial, con obligacion de conservar el aviso NOTICE.
+- Cuantizacion Q3: la precision reducida puede degradar la calidad frente al modelo base; no se ofrecen en el repo otras cuantizaciones (Q4, Q5, Q8) segun la informacion disponible.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/maylore-ai/Temper-Savant-2.5-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/maylore-ai/Temper-Savant-2.5-GGUF
 - Modelo base: https://huggingface.co/maylore-ai/Temper-Savant-2.5
-- Fichero NOTICE: https://huggingface.co/maylore-ai/Temper-Savant-2.5-GGUF/blob/main/NOTICE
-- No se han encontrado papers, blogs, repos de codigo ni demos adicionales en la informacion disponible.
+- Aviso de licencia (NOTICE): referenciado en la model card como archivo `NOTICE` del repositorio.

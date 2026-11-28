@@ -2,81 +2,105 @@
 
 ## Resumen
 
-Ling-3.0-flash-ROCmFP4-STRIX_LEAN-GGUF es una cuantización GGUF del modelo instructivo `inclusionAI/Ling-3.0-flash`, preparada específicamente para hardware AMD con arquitectura gfx1151 (APU Strix Halo, como el Ryzen AI Max+ 395). El autor, kingjones777, ha aplicado el formato experimental ROCmFP4 (Q4_0_ROCMFP4_STRIX_LEAN) para optimizar la inferencia en entornos ROCm de llama.cpp, logrando un tamaño de archivo de aproximadamente 68 GB y un peso medio de 4,28 bits por parámetro. El modelo original posee 127,5 mil millones de parámetros y una ventana de contexto de 262 144 tokens, lo que lo hace apto para tareas de razonamiento y generación de texto de largo alcance.
+Ling-3.0-flash-ROCmFP4-STRIX_LEAN-GGUF es una cuantización de 4 bits del modelo instruct `inclusionAI/Ling-3.0-flash`, publicada por el usuario kingjones777 y orientada específicamente a hardware AMD con memoria unificada: el Ryzen AI Max+ 395 (gfx1151, arquitectura Strix Halo) con 128 GB. No es un modelo nuevo, sino un artefacto de despliegue: el checkpoint original en BF16 (255 GB, 938 tensores) se convierte a un GGUF de 68,1 GB con un tipo de tensor propietario, `Q4_0_ROCMFP4_STRIX_LEAN` (ftype 106), que combina cuerpo de 4 bits, embeddings de tokens en Q5_K y una cabeza LM protegida en Q6_K.
 
-Esta cuantización está pensada para ser ejecutada en APU con memoria unificada de gran capacidad (128 GB), donde el modelo completo cabe en VRAM. El repositorio incluye la conversión desde BF16 y el comando de cuantización, así como pruebas de generación con mediciones de rendimiento (107,9 tokens/s en prefill y 30,7 tokens/s en generación). La licencia MIT permite uso comercial y modificación sin restricciones significativas, aunque la precisión reducida puede afectar la calidad de salida en comparación con el modelo original.
+La relevancia de esta ficha es doble. Por un lado, documenta el modelo base: un transformer de tipo MoE con arquitectura `bailingmoe3`, 127.486.405.600 parámetros totales, 43 bloques, ventana de contexto de 262.144 tokens y una capa de predicción multi-token (MTP) en el bloque 42, además de 35 capas con atención KDA (Kimi Delta Attention) frente a 7 capas de atención completa. Por otro, documenta un caso poco habitual: una cuantización que no funciona en llama.cpp estándar, Ollama ni LM Studio, porque los tipos de tensor ROCmFP4/ROCmFPX no están en el árbol principal.
+
+El resultado práctico es un paquete de 68 GB que cabe en los 128 GB de memoria unificada de un equipo Strix Halo y que, según las mediciones del autor, genera a 45,19 tok/s con prompt de 1k y 39,79 tok/s con prompt de 8k, con 459,1 tok/s de prefill a 1k. Está pensado para servir en local con el motor Super Roc, con licencia MIT heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | bailingmoe3 (posiblemente MoE, no confirmado) |
-| Parametros totales | 127 486 405 600 |
+| Arquitectura | `bailingmoe3` (MoE con atención híbrida: 35 capas KDA + 7 capas de atención completa), 43 bloques, MTP en `blk.42` |
+| Parametros totales | 127.486.405.600 |
 | Parametros activos | no disponible |
-| Longitud de contexto | 262 144 |
-| Tipos de cuantizacion | Q4_0_ROCMFP4_STRIX_LEAN (ftype 106, ~4.28 BPW) |
+| Longitud de contexto | 262.144 tokens (config del modelo); 131.072 tokens cargados en la medición del autor |
+| Tipos de cuantizacion | ftype 106 `Q4_0_ROCMFP4_STRIX_LEAN`: cuerpo 4 bits, `token_embd.weight` en Q5_K, `output.weight` en Q6_K; 4,28 BPW |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (safetensors para el modelo base) |
+| Formato de pesos | GGUF (938 tensores, 68.136.565.408 bytes) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base `Ling-3.0-flash` se identifica como `bailingmoe3` en el README de esta cuantización, lo que sugiere una arquitectura de mezcla de expertos (MoE), aunque no se confirma en la información disponible. El modelo cuenta con 43 bloques y una capa de predicción multi-token (MTP) en el bloque 42 (`nextn_predict_layers = 1`), que permite generar varios tokens por paso de decodificación. No se han proporcionado detalles sobre el dataset de entrenamiento, el número de tokens de entrenamiento o el proceso de alineamiento (RLHF/DPO) del modelo original.
+El modelo base es un transformer disperso (MoE) de la familia `bailingmoe3`, con 43 bloques y 127.486 millones de parámetros totales. La innovación estructural más destacable es la atención híbrida: 35 de las 42 capas computacionales usan KDA (Kimi Delta Attention, un mecanismo de atención lineal recurrente) y solo 7 mantienen atención completa, lo que reduce el coste de contexto largo. Incorpora además una cabeza de predicción multi-token (`nextn_predict_layers = 1`, alojada en `blk.42`), pensada para decodificación especulativa y para servir como drafter interno. El checkpoint tiene `tie_word_embeddings = false`, de modo que `output.weight` es un tensor independiente y puede cuantizarse por separado del embedding de entrada.
 
-La cuantización ROCmFP4 es una técnica experimental desarrollada para aprovechar las capacidades de precisión mixta de las GPU AMD recientes. En este caso, se aplica un esquema Q4_0 con un layout especial para las matrices K/V, y se protegen las capas críticas: la salida (`output.weight`) se cuantiza a Q6_K y las embeddings (`token_embd.weight`) a Q5_K, mientras que el resto se mantiene en 4 bits. El proceso de conversión y cuantización se realiza con las herramientas de llama.cpp (convert_hf_to_gguf.py y llama-quantize).
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni las etapas de alineación (RLHF/DPO) del modelo original en la información proporcionada. Lo que sí está documentado es el proceso de cuantización: partiendo de `inclusionAI/Ling-3.0-flash` en la revisión `42766a814ab117e75e2e61465d5e131b72d931a3`, el autor generó un GGUF BF16 de 255.091.083.232 bytes y lo cuantizó con `llama-quantize --output-tensor-type q6_K` y ftype 16 (Q4_0_ROCMFP4_STRIX_LEAN). Un detalle técnico relevante: el conversor upstream emite las puertas KDA como `blk.N.ssm_f_a` / `ssm_g_a` (nombres heredados de kimi-linear), mientras que el runtime espera `ssm_f` / `ssm_g`; el autor parcheó el conversor y verificó 35 pares `ssm_f` + `ssm_g` y cero sufijos `_a`.
 
 ## Capacidades
 
-- Generación de texto: produce respuestas coherentes y bien estructuradas en formato instructivo, como se muestra en el ejemplo del README.
-- Razonamiento: el modelo activa un modo de "pensamiento" previo a la respuesta final (evidenciado por las marcas `[Start thinking]` y `[End thinking]`), lo que sugiere capacidad de razonamiento explícito.
-- Predicción multi-token (MTP): el modelo incluye una capa de predicción multi-token que puede acelerar la decodificación, aunque el README indica que en pruebas no aporta una mejora significativa (+1.3% / +5.3%).
-- Contexto largo: con una ventana de 262 144 tokens, puede manejar documentos extensos o conversaciones de múltiples turnos sin perder el hilo.
-- Compatibilidad con llama.cpp: se integra con el ecosistema de llama.cpp, incluyendo la interfaz de línea de comandos `llama-cli`.
+- Generación de texto conversacional en modo instruct, con plantilla de chat que admite `chat_template_kwargs.enable_thinking` para activar el modo de razonamiento por petición.
+- Modo thinking desactivable: el comando de referencia arranca con `--think off` y el razonamiento se habilita a nivel de petición.
+- Tool calling / function calling: el autor reporta 7/8 en llamadas requeridas y 7/8 en modo automático.
+- Razonamiento multi-paso y uso como agente, apoyado en la ventana de 262.144 tokens y en la caché de prompt (6.972 de 6.996 tokens reutilizados en el segundo turno).
+- Generación de código, con 41,6 tok/s de media en dos prompts de código.
+- Decodificación especulativa mediante la cabeza MTP presente en el checkpoint (en la medición publicada el drafter figura como desactivado).
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Visión y audio: no disponible; las etiquetas del repositorio solo declaran `text-generation`.
 
 ## Casos de uso
 
-- Análisis y resumen de documentos extensos: gracias a su contexto de 262 144 tokens, puede procesar libros, informes técnicos o historiales de conversación completos en una sola pasada, generando resúmenes detallados y respuestas basadas en el contenido completo.
-- Asistencia en investigación histórica o académica: el ejemplo del README muestra cómo el modelo puede completar fragmentos de texto con conocimiento enciclopédico (p. ej., historia de las matemáticas) y proporcionar referencias concretas.
-- Generación de contenido creativo: puede redactar artículos, guiones o narrativas con una estructura razonada, gracias a su modo de pensamiento interno.
-- Soporte de razonamiento multi-paso: útil para tareas de resolución de problemas complejos que requieren planificación y análisis (por ejemplo, preguntas de matemáticas o lógica).
-- Despliegue en hardware AMD de alto rendimiento: pensado para ejecutarse en una APU Strix Halo (gfx1151) con 128 GB de memoria unificada, sin necesidad de GPU dedicada adicional.
-- Prototipado de aplicaciones de texto generativo: al ser una cuantización de 4 bits, permite probar un modelo de 127B en un solo dispositivo, ideal para entornos de desarrollo y experimentación local.
+- Asistente de código en local sobre un equipo Strix Halo: con 41,6 tok/s en prompts de código y soporte de tool calling, el modelo puede integrarse en un flujo de edición y ejecución de parches sin salir de la máquina, útil cuando el código no puede enviarse a la nube.
+- Agente de múltiples pasos con contexto largo: la ventana de 262.144 tokens y la caché de prompt (reutilización de casi la totalidad del prompt en el segundo turno) permiten mantener repositorios, transcripciones o documentación extensa dentro de la misma sesión sin recompilar el contexto.
+- Servicio de chat conversacional autoalojado: el motor Super Roc expone un endpoint compatible con la API de OpenAI (`--served-model-name ling-3.0-flash`), de modo que puede sustituir a un proveedor externo en aplicaciones ya escritas contra ese contrato.
+- Procesamiento de documentos largos y resumen: la combinación de atención KDA en 35 capas y 131.072 tokens cargados en la medición reduce el coste de prefill en entradas de decenas de miles de tokens (202,6 tok/s a 8k).
+- Laboratorio de evaluación de cuantizaciones: al publicarse tres builds del mismo checkpoint alineado (106 STRIX_LEAN, 106 Research y Q6 AGENT 114), sirve para medir el impacto real de proteger o no la cabeza LM en calidad de salida.
+- Despliegue con Lemonade: el autor documenta `lemonade pull Ling-3.0-flash` y `lemonade chat Ling-3.0-flash` apuntando `llamacpp.rocm_bin` al binario de Super Roc, lo que facilita probar el modelo en un entorno de escritorio sin configurar llama.cpp a mano.
+- Investigación sobre atención lineal: las 35 capas KDA y la cabeza MTP hacen del modelo un banco de pruebas para estudiar decodificación especulativa y atención recurrente en hardware de consumo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información proporcionada. El README incluye únicamente una medición de rendimiento en el hardware de prueba (gfx1151) con llama.cpp:
-
-| Métrica | Valor |
+| Metrica | Valor |
 |---|---|
-| Velocidad de preprocesado (prompt) | 107.9 tokens/s |
-| Velocidad de generación | 30.7 tokens/s |
+| Tiempo de carga | 203 s |
+| Prompt tok/s (p1k) | 459,1 |
+| Prompt tok/s (p8k) | 202,6 |
+| Generacion tok/s (p1k) | 45,19 |
+| Generacion tok/s (p8k) | 39,79 |
+| Generacion de codigo tok/s | 41,6 (media de 2 prompts) |
+| Tool calls (requeridas / auto) | 7/8 / 7/8 |
+| Cache de prompt, turno 2 | 6.972 / 6.996 tokens |
+| Contexto cargado | 131.072 tokens |
+| Decodificacion (medicion del build) | 30,7 tok/s con prompt de 107,9 tok/s |
+| Drafter | off |
 
-Estos datos se obtuvieron con los flags `-ngl 999 -fa on -c 2048 -n 512 --temp 0 --seed 1234 -no-cnv` y un prompt corto. No hay comparaciones con otros modelos.
+Medido en Ryzen AI Max+ 395, 128 GB, Super Roc 0.20.0 (release candidate), una petición simultánea, el 23 de noviembre de 2026. No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el archivo GGUF ocupa 68 GB, por lo que se requiere al menos esa cantidad de memoria disponible (unificada o VRAM dedicada).
-- GPU recomendada: AMD gfx1151 (APU Strix Halo, por ejemplo Ryzen AI Max+ 395 con Radeon 8060S). La cuantización está específicamente optimizada para esta arquitectura.
-- Compatibilidad con GPUs de consumo: no es apto para GPUs NVIDIA o AMD más antiguas sin soporte ROCmFP4. En GPUs NVIDIA no funcionará correctamente.
-- Opciones de despliegue: llama.cpp con soporte ROCm (compilación con ROCm) y el binario `llama-cli`. No se menciona compatibilidad con vLLM, Ollama o TGI.
-- Latencia y throughput: en el hardware de prueba se midió 107.9 t/s en prompt y 30.7 t/s en generación. La latencia para la generación de una respuesta de 512 tokens sería de aproximadamente 16,7 segundos (512 / 30.7).
+- VRAM/memoria: 68,1 GB de pesos en disco; el autor reporta un dry-run de 64.973,85 MiB (4,28 BPW) y un build final con +6,242 MiB. Con overhead de contexto KV para 131.072 tokens, el conjunto encaja en los 128 GB de memoria unificada del Ryzen AI Max+ 395.
+- GPU objetivo: AMD Radeon integrada de Strix Halo, gfx1151 (Ryzen AI Max+ 395). No hay datos de funcionamiento en A100, H100 ni RTX 4090.
+- GPU de consumo: no se ha validado en GPUs discretas; los tipos de tensor ROCmFP4/ROCmFPX son específicos de ROCm y del objetivo gfx1151.
+- Opciones de despliegue: Super Roc (motor recomendado por el autor, `superroc serve`), Lemonade como front-end, y llama.cpp únicamente si está compilado con soporte ROCmFPX (builds de kyuz0 para Strix Halo). No funciona en llama.cpp mainline, Ollama ni LM Studio.
+- Latencia y throughput: 30,7 tok/s de decode y 107,9 tok/s de prompt en la medición del build; 45,19 tok/s de generación con prompt de 1k y 39,79 tok/s con prompt de 8k en la medición de servicio.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría (tamaño y propósito). El modelo base `Ling-3.0-flash` podría compararse con otros MoE de 100B+, pero no hay datos de rendimiento estándar. Se puede indicar que la cuantización es única para hardware AMD y no se conocen otras versiones GGUF con esta configuración.
+| Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Ling-3.0-flash-ROCmFP4-STRIX_LEAN (esta ficha) | 127,49 B | 262.144 | GGUF ftype 106, 68,1 GB | MIT | Solo llama.cpp con ROCmFPX / Super Roc |
+| Ling-3.0-flash 106 Research | 127,49 B | 262.144 | GGUF ftype 106 sin cabeza protegida | MIT | Mismo runtime; orientado a comparación, no a servir |
+| Ling-3.0-flash Q6 AGENT (114) | 127,49 B | 262.144 | GGUF ~8 bits, mayor tamano | MIT | Mismo runtime; mayor fidelidad y menor velocidad |
+| inclusionAI/Ling-3.0-flash (base) | 127,49 B | 262.144 | BF16, 255,1 GB | MIT | Requiere hardware con memoria suficiente para BF16 |
+
+No se dispone de datos de benchmarks que permitan comparar calidad frente a modelos de otros autores con parámetros similares.
 
 ## Limitaciones y advertencias
 
-- Precisión reducida: la cuantización a 4 bits (Q4_0) puede degradar la calidad de la generación en comparación con el modelo BF16 original, especialmente en tareas de matemáticas o razonamiento complejo.
-- Dependencia de hardware específico: está optimizado para AMD gfx1151; no funcionará en GPUs NVIDIA o AMD de otras arquitecturas sin modificaciones.
-- Soporte experimental: ROCmFP4 es un formato experimental, por lo que puede haber incompatibilidades con versiones de llama.cpp o fallos en ciertas funciones.
-- Problemas con la línea de comandos: el README indica que la opción `-no-cnv` no es soportada en el binario probado; se debe usar `-st` o `--single-turn` para completar una sola vez.
-- Riesgo de alucinación: como cualquier modelo generativo, puede producir información plausible pero incorrecta, especialmente en dominios no representados en sus datos de entrenamiento.
-- No se han documentado sesgos específicos ni restricciones de idioma, pero al ser un modelo general, puede heredar sesgos de los datos de entrenamiento.
+- Incompatibilidad de runtime: los tipos `Q4_0_ROCMFP4_*` y `Q*_0_ROCMFPX*` no están en llama.cpp mainline; el modelo no carga en llama.cpp estándar, Ollama ni LM Studio. Es un requisito estricto, no una recomendación.
+- Dependencia de hardware: validado únicamente en gfx1151 (Ryzen AI Max+ 395). No hay evidencia de funcionamiento en otras GPU AMD ni en NVIDIA.
+- La cabeza LM debe verificarse por nombre exacto de tensor (`output.weight`, nunca por subcadena, ya que coincide dentro de `attn_output.weight`). El ftype 106 por sí solo no protege la cabeza; omitir `--output-tensor-type q6_K` produce un modelo de peor calidad indistinguible externamente.
+- El parche del conversor (`ssm_f_a`/`ssm_g_a` a `ssm_f`/`ssm_g`) es necesario para que el runtime cargue las puertas KDA; sin él, el grafo no se resuelve correctamente.
+- Riesgo de alucinación y sesgos: no hay información publicada sobre evaluación de sesgos ni sobre tasas de alucinación del modelo base en la documentación disponible.
+- Idiomas: no se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingüe sin evaluarla.
+- Licencia MIT: permite uso comercial, pero se hereda del modelo base y conviene verificar las condiciones del checkpoint original `inclusionAI/Ling-3.0-flash`.
+- Las cifras de rendimiento proceden de una única máquina, una sola petición concurrente y una versión release candidate del motor; no deben extrapolarse a cargas concurrentes.
+- El modo thinking está desactivado por defecto en el comando de ejemplo; si se necesita razonamiento explícito, debe activarse por petición y eso altera el consumo de tokens y la latencia.
 
 ## Enlaces
 
-- Modelo GGUF: https://huggingface.co/kingjones777/Ling-3.0-flash-ROCmFP4-STRIX_LEAN-GGUF
-- Modelo base (inclusionAI/Ling-3.0-flash): https://huggingface.co/inclusionAI/Ling-3.0-flash
-- Repositorio ROCmFP4 en GitHub: https://github.com/charlie12345/rocmfp4
-- Otras variantes del autor (base 30T, COHERENT): https://huggingface.co/kingjones777/Ling-3.0-flash-base-30T-ROCmFP4-COHERENT-GGUF y https://huggingface.co/kingjones777/Ling-3.0-flash-base-ROCmFP4-COHERENT-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Ling-3.0-flash-ROCmFP4-STRIX_LEAN-GGUF
+- Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
+- Motor Super Roc: https://github.com/kingjones30/superroc
+- Guía de Lemonade del autor: https://github.com/kingjones30/superroc/blob/main/docs/LEMONADE.md
+- Formatos ROCm-FP4 y trabajo previo en llama.cpp (ROCmFPX): https://github.com/charlie12345/ROCmFPX

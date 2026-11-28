@@ -2,110 +2,114 @@
 
 ## Resumen
 
-SenseNova-Loop-9B-NVFP4-MLX es una conversión comunitaria del modelo multimodal SenseNova-Loop-9B de SenseNova al formato MLX affine 4-bit (grupo 64), pensada para ejecutarse en Apple Silicon. El autor del build es el usuario `balllvin`, no afiliado a los autores originales, y parte de su propia conversión intermedia en NVFP4 (cuantización de 4 bits con escala por bloque). El resultado pesa 8,0 GB en pesos cuantizados y acepta entradas de texto e imagen para generar texto, manteniendo la torre visual en bf16 sin cuantizar (0,91 GB adicionales).
+SenseNova-Loop-9B-NVFP4-MLX es la conversión a formato MLX affine 4-bit del modelo multimodal SenseNova-Loop-9B, un transformer híbrido con atención lineal y completa que emplea un esquema de ejecución en bucle ("looped execution") de 56 visitas efectivas por token. El modelo original lo desarrolla SenseNova y esta build la publica el usuario balllvin para su ejecución en Apple Silicon mediante la librería MLX, con un servidor compatible con la API de OpenAI incluido en el repositorio (`tools/serve.py`).
 
-El modelo hereda la arquitectura "looped" del checkpoint base: 32 capas físicas que se ejecutan en 56 visitas, con routers mHC (multi-head control) portados a MLX. Según los safetensors del repositorio, el recuento real de parámetros es de 3.119.461.248 (3,12 mil millones), muy por debajo de los 9B que sugiere el nombre comercial, lo que conviene tener en cuenta al planificar el despliegue.
+El modelo resuelve el problema de desplegar un modelo multimodal de 9B con contexto nativo de 512K tokens en hardware de consumo Apple, algo que las builds BF16 o NVFP4 para CUDA no permiten por requisitos de VRAM. La cuantización MLX affine 4-bit con `group_size=64` reduce los pesos del modelo de lenguaje a 7,97 GB y mantiene la torre de visión en BF16 (0,91 GB), totalizando 8,89 GB de pesos.
 
-Es relevante ahora porque permite ejecutar un modelo multimodal con razonamiento iterativo sobre hardware de consumo de Apple (procesadores M-series) mediante MLX, con un servidor compatible con la API de OpenAI incluido en el repositorio. El modelo está pensado para investigación, no para producción, y no ha sido sometido a ajuste de seguridad.
+Es relevante porque combina tres elementos poco habituales en un mismo artefacto: arquitectura híbrida lineal/completa con bucle de capas, contexto de 512K tokens vía YaRN y soporte multimodal imagen-texto, todo empaquetado para inferencia local en Macs con Apple Silicon. La licencia Apache 2.0 facilita su uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con ejecución en bucle (32 capas físicas, 56 visitas) y routers mHC; torre visual multimodal |
-| Parámetros totales | 3.119.461.248 (según safetensors del repo) |
-| Parámetros activos | no disponible (no es MoE según la información proporcionada) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | MLX affine 4-bit (grupo 64); routers, norms y embeddings en bf16; LM head bf16 en pesos y 8-bit en inferencia por defecto; KV cache configurable en 8-bit o bf16 |
-| Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (MLX), más `visual.safetensors` con la torre visual en bf16 |
+| Arquitectura | Transformer híbrido con atención lineal y completa, ejecución en bucle (56 visitas efectivas por token), 32 capas físicas con capas 4-27 repetidas 2x, 8 capas de atención completa y 24 de atención lineal, routers mHC de 2 flujos |
+| Parametros totales | 3.119.461.248 (según safetensors); la model card indica "9B" como denominación comercial |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 524.288 tokens (512K vía YaRN factor=2.0 sobre 262.144 nativos) |
+| Tipos de cuantizacion | MLX affine 4-bit (group_size=64) con normas, embeddings y routers en BF16; torre de visión en BF16 sin cuantizar |
+| Idiomas soportados | en (inglés) según la model card; no se detallan más idiomas |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (MLX); incluye `visual.safetensors` para la torre de visión |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint base es un transformer con un esquema de ejecución en bucle: 32 capas físicas que se recorren 56 veces, lo que incrementa la profundidad efectiva sin aumentar el número de parámetros. Incorpora routers mHC que el autor del build ha portado explícitamente a MLX, junto con el plan de ejecución en bucle. La torre visual (`model.visual.*`, 333 tensores, 0,91 GB en bf16) se copia sin modificar desde el checkpoint oficial y no está cuantizada; el procesador de imágenes es Qwen3VLProcessor.
+El modelo base es un transformer híbrido que alterna capas de atención lineal con capas de atención completa (8 completas y 24 lineales sobre 32 capas físicas). La innovación principal es el esquema de ejecución en bucle: las capas 4 a 27 se ejecutan dos veces, de modo que cada token atraviesa 56 visitas efectivas a capas, incrementando la profundidad computacional sin aumentar el número de parámetros. Incorpora además routers mHC de dos flujos que gestionan el enrutamiento interno durante la ejecución repetida. El contexto nativo es de 262.144 tokens, extendido a 524.288 mediante YaRN con factor 2.0.
 
-El entrenamiento original no está documentado en la información proporcionada. El corpus citado para la cuantización QAD es HuggingFaceFW/fineweb-edu. La conversión realizada por el autor consiste en pasar los pesos NVFP4 (cuantización de 4 bits con escalas por bloque) a MLX affine 4-bit con grupo 64, manteniendo routers, normas y embeddings en bf16. No se indica si hubo RLHF, DPO ni otras fases de alineamiento; de hecho, el autor advierte que se trata del "QAD base, not safety-tuned".
+Los datos de entrenamiento no están detallados en la información disponible más allá de la referencia al dataset HuggingFaceFW/fineweb-edu en las etiquetas del repositorio. La model card menciona que esta build es un checkpoint "Base Quant (QAD)" —cuantización con destilación consciente de cuantización— portado directamente a MLX sin ablación ni ajuste Arete. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original.
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento multi-turno.
-- Entrada multimodal de imagen y texto (image-text-to-text): acepta imágenes vía `image_url` con data URL o ruta local en el servidor incluido.
-- Ejecución iterativa en bucle ("looped execution") que permite refinamiento interno en múltiples pasadas.
-- Servidor compatible con la API de OpenAI (`/v1/chat/completions`) con streaming SSE.
-- Gestión de KV cache con precisión configurable (8-bit para un solo stream, bf16 para lotes).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y multi-step reasoning explícito: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generación de texto conversacional y multimodal imagen-texto (pipeline `image-text-to-text`).
+- Procesamiento de imágenes mediante torre de visión BF16 (`visual.safetensors`).
+- Contexto largo de hasta 512K tokens, adecuado para documentos extensos o conversaciones multi-turno prolongadas.
+- Ejecución en bucle de 56 visitas por token, que aporta profundidad efectiva sin coste adicional de parámetros.
+- Servidor compatible con la API de OpenAI incluido (`tools/serve.py`) para integración directa.
+- Soporte de decodificación por lotes (1, 4 y 8 streams medidos).
+- No se documenta soporte explícito de tool calling ni de function calling en la información disponible.
+- No se documenta modo "thinking" ni capacidades de audio.
+- Idiomas: inglés según la model card; no se detallan otras lenguas.
 
 ## Casos de uso
 
-- Investigación en arquitecturas con ejecución en bucle: el modelo permite estudiar empíricamente cómo afecta el número de visitas (`--loops`) a la calidad de la generación, comparando `--loops 1` (más rápido) con el valor entrenado.
-- Prototipado de asistentes multimodales en local sobre Apple Silicon: con 8,0 GB de pesos en 4-bit, se puede desplegar un servidor compatible con OpenAI en un Mac con M-series y 16-32 GB de memoria unificada.
-- Análisis de imágenes en flujos de investigación: descripción de contenido visual (formas, colores, objetos) mediante la torre visual bf16 y el procesador Qwen3VL, útil para experimentos de captioning o VQA sin depender de la nube.
-- Evaluación de cuantización y calidad de KV cache: el repositorio documenta métricas de NLL para KV en bf16, 8-bit y 4-bit, lo que lo convierte en un banco de pruebas para estudiar el impacto de la precisión del caché en la salida.
-- Desarrollo de servidores de inferencia ligeros: el script `tools/serve.py` incluye warm-up de formas (1/8/32/128 tokens), streaming y apagado por inactividad, útil como base para herramientas internas de investigación.
-- Estudio de robustez y rechazo: al ser un modelo sin ajuste de seguridad, sirve para analizar el comportamiento de rechazo del checkpoint base (el autor reporta 95/99 rechazos en prompts dañinos y 60/100 en benignos para la versión NVFP4).
+- **Asistente conversacional local en Mac:** el modelo puede gestionar conversaciones multi-turno con contexto de hasta 512K tokens en un Mac de 64 GB, gracias a la cuantización MLX 4-bit que reduce los pesos a 8,89 GB y deja margen para caché KV.
+- **Análisis de documentos largos con imágenes:** la combinación de contexto de 512K y torre de visión permite procesar informes, contratos o artículos con figuras intercaladas en una sola pasada, sin truncar el contenido.
+- **Prototipado de aplicaciones multimodales en Apple Silicon:** desarrolladores que quieran validar pipelines imagen-texto antes de desplegar en GPUs CUDA pueden usar esta build con el servidor OpenAI-compatible incluido, evitando reescribir la capa de integración.
+- **Investigación sobre arquitecturas híbridas y ejecución en bucle:** el esquema de 56 visitas con capas lineales y completas es un objeto de estudio interesante para medir el equilibrio entre profundidad efectiva, coste de memoria y calidad, con métricas de WikiText NLL ya publicadas.
+- **Despliegue con múltiples peticiones concurrentes:** con 8 streams agregados alcanza 38,1 tok/s en un M5 Pro, lo que permite servir varios usuarios ligeros desde una sola máquina para tareas de resumen o clasificación.
+- **Evaluación de robustez y sesgos:** la disponibilidad de builds abliterated y con ajuste Arete en la misma familia permite comparar comportamiento de rechazo (95/99 frente a 3/99 y 6/99 en prompts dañinos) y usar la build base como referencia de alineamiento original.
+- **Generación de código y texto técnico asistida:** aunque no se documenta tool calling, el modelo puede usarse para autocompletado y explicación de código en entornos locales donde la privacidad impide enviar datos a la nube.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) para esta conversión MLX. El autor indica explícitamente que "this MLX conversion was not separately benchmarked for refusals or MMLU". Los únicos datos numéricos disponibles son de velocidad y de calidad de KV cache:
+Resultados publicados en la model card, medidos sobre la ruta forward BF16 decodificada de las builds NVFP4 (greedy, 96 tokens, thinking off):
 
-| Métrica | Valor |
-|---|---|
-| Throughput, 1 stream (M5 Pro, 64 GB) | 8,1 tok/s |
-| Throughput, 2 streams | 14,1 tok/s totales (7,0 por stream) |
-| Throughput, 4 streams | 25,9 tok/s totales (6,5 por stream) |
-| Throughput, 8 streams | 38,1 tok/s totales (4,8 por stream) |
-| NLL con KV bf16 (ventana de 48 tokens) | 3,5819 |
-| NLL con KV 8-bit | 3,5828 (+0,0009) |
-| NLL con KV 4-bit | 3,5652 (−0,0167) |
+| Build | Harmful refused | Benign refused | MMLU | WikiText NLL | Propaganda fact | Propaganda rate |
+|---|---:|---:|---:|---:|---:|---:|
+| NVFP4 Base (QAD) | 95 / 99 | 60 / 100 | 43,0 % | 2,7560 | 1,367 / 5 | 19,3 % |
+| + Abliterated | 3 / 99 | 7 / 100 | 58,0 % | 2,7619 | 1,242 / 5 | 27,8 % |
+| + Abliterated + Arete | 6 / 99 | 6 / 100 | 62,0 % | 2,7099 | 1,320 / 5 | 29,6 % |
 
-Estas cifras corresponden al build original (NVFP4) medido en un M5 Pro con 64 GB; el autor advierte que las herramientas incluidas son más recientes y no se re-midieron para esta conversión base.
+Referencia BF16 del modelo base en WikiText NLL: 2,8198 / 2,8206. Las conversiones MLX heredan el comportamiento de pesos de la fuente NVFP4; las suites de rechazo y MMLU no se reejecutaron por separado sobre MLX.
+
+Rendimiento medido en Apple M5 Pro (64 GB, 48 tokens de salida, KV 8-bit para 1 stream, KV BF16 para lotes):
+
+| Configuración | Tamaño de pesos | Velocidad de decodificación | Notas |
+|---|---:|---:|---|
+| MLX 4-bit (1 stream) | 8,89 GB | 8,1 tok/s | KV 8-bit (7,97 GB LLM + 0,91 GB visión) |
+| MLX 4-bit (4 streams agregados) | 8,89 GB | 25,9 tok/s | 6,5 tok/s por stream |
+| MLX 4-bit (8 streams agregados) | 8,89 GB | 38,1 tok/s | 4,8 tok/s por stream |
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: al menos 8,0 GB para los pesos 4-bit más 0,91 GB de la torre visual en bf16, más overhead de KV cache y activaciones. En la práctica, se recomienda un mínimo de 16 GB de memoria unificada y 32 GB para lotes o contextos largos.
-- GPU recomendadas: exclusivamente Apple Silicon (M1, M2, M3, M4, M5 y variantes Pro/Max/Ultra) mediante MLX. No es compatible con CUDA.
-- Cabe en GPU de consumo: sí, en equipos Apple con memoria unificada suficiente; el autor reporta pruebas en un M5 Pro con 64 GB.
-- Opciones de despliegue: MLX y mlx-lm; el repositorio incluye `tools/serve.py` con API compatible con OpenAI. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 8,1 tok/s en un solo stream en M5 Pro; escala hasta 38,1 tok/s totales con 8 streams concurrentes (4,8 tok/s por stream).
+- **VRAM/memoria unificada:** pesos de 8,89 GB (7,97 GB LLM + 0,91 GB visión). En Mac de 64 GB con 51,8 GB usables se alcanzan 512K de contexto con 1 petición, 178K con 4 peticiones y 86K con 8 peticiones (KV BF16).
+- **Caché KV:** 57.344 B/token en BF16 (medido en RTX PRO 6000) más 90,8 MB de estado de atención lineal por petición; `--kv-bits 8` reduce a la mitad el crecimiento de KV.
+- **GPU recomendadas:** Apple Silicon (M-series con memoria unificada suficiente). La build hermana NVFP4 requiere GPUs NVIDIA CUDA con 24 GB o más de VRAM para la ruta BF16 decodificada.
+- **¿Cabe en GPU de consumo?** En Apple Silicon sí (Mac de 64 GB probado). En GPUs NVIDIA de consumo no se documenta soporte para esta build MLX, que es específica de Apple.
+- **Opciones de despliegue:** MLX con el servidor OpenAI-compatible incluido (`tools/serve.py`); la build NVFP4 hermana usa `transformers` con `load_nvfp4.py`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- **Latencia y throughput:** 8,1 tok/s en 1 stream, 25,9 tok/s con 4 streams y 38,1 tok/s con 8 streams en M5 Pro de 64 GB.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks del modelo base ni de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable. Como referencia estructural:
+| Modelo | Parámetros | Contexto | Licencia | Formato / hardware | Notas |
+|---|---|---|---|---|---|
+| SenseNova-Loop-9B-NVFP4-MLX (este) | 3,12 B (denominado 9B) | 512K | Apache 2.0 | MLX 4-bit, Apple Silicon | Multimodal, ejecución en bucle, 8,89 GB |
+| SenseNova-Loop-9B-NVFP4 | 3,12 B (denominado 9B) | 512K | Apache 2.0 | W4A16 NVFP4, NVIDIA CUDA | Misma arquitectura, requiere 24 GB+ VRAM |
+| SenseNova-Loop-9B (BF16) | 3,12 B (denominado 9B) | 512K | Apache 2.0 | BF16, `transformers` | Modelo base sin cuantizar |
+| SenseNova-Loop-9B-abliterated-arete-NVFP4-MLX | 3,12 B (denominado 9B) | 512K | Apache 2.0 | MLX 4-bit, Apple Silicon | Variante sin rechazos y con ajuste Arete (MMLU 62,0 %) |
 
-| Modelo | Parámetros | Contexto | Licencia | Runtime |
-|---|---|---|---|---|
-| SenseNova-Loop-9B-NVFP4-MLX (este) | 3,12 mil millones (safetensors) | no disponible | Apache-2.0 | MLX (Apple Silicon) |
-| SenseNova-Loop-9B (base oficial) | no disponible | no disponible | Apache-2.0 | no disponible |
-| balllvin/SenseNova-Loop-9B-NVFP4 | no disponible | no disponible | Apache-2.0 | NVFP4 (no especificado) |
-| balllvin/SenseNova-Loop-9B-abliterated-arete-NVFP4-MLX | no disponible | no disponible | Apache-2.0 | MLX (Apple Silicon) |
+No se dispone en la información proporcionada de comparaciones con modelos de otros fabricantes (por ejemplo, familias Qwen, Llama o Gemma) en parámetros, contexto o benchmarks, por lo que no se incluyen en la tabla.
 
 ## Limitaciones y advertencias
 
-- No es un modelo ajustado en seguridad: el autor lo describe como "QAD base, not safety-tuned". El checkpoint NVFP4 de origen rechaza 95 de 99 prompts dañinos y 60 de 100 benignos, lo que indica una tasa alta de falsos rechazos.
-- La conversión MLX no ha sido evaluada por separado en rechazos ni en MMLU; los datos de robustez pertenecen al build NVFP4.
-- El soporte de imagen se ha verificado con una única prueba de humo de 448×448 y no se ha ejecutado ningún benchmark de imagen para esta versión.
-- La torre visual no está cuantizada, lo que añade ~0,9 GB al tamaño del build.
-- La tabla de velocidad corresponde al build original; las herramientas incluidas son más recientes y no se re-midieron para esta conversión.
-- El checkpoint base está restringido (gated) en Hugging Face; es necesario aceptar sus términos antes de usarlo.
-- El recuento real de parámetros (3,12 mil millones) difiere notablemente del "9B" del nombre, lo que puede inducir a error en la planificación de recursos.
-- Riesgo de alucinación y sesgos: no documentados en la información proporcionada, pero esperables en un modelo base sin ajuste de alineamiento.
-- Licencia Apache-2.0 permite uso comercial, pero al ser un build comunitario no afiliado a los autores originales, conviene verificar la licencia del checkpoint base antes de desplegarlo en producción.
-- Limitaciones de idioma y longitud de contexto: no disponibles.
+- **Sesgos y alineamiento:** la build base presenta 95/99 rechazos en prompts dañinos y 60/100 rechazos en prompts benignos, lo que indica un alineamiento agresivo que puede degradar la utilidad en tareas legítimas. Las variantes abliterated reducen el rechazo pero aumentan la tasa de propaganda (27,8 % y 29,6 % frente a 19,3 %).
+- **Riesgo de alucinación:** no se han publicado métricas específicas de fidelidad factual más allá de la evaluación de propaganda; el MMLU base es 43,0 %, relativamente bajo.
+- **Idioma:** la model card solo declara inglés; no hay evidencia de calidad en castellano ni en otros idiomas.
+- **Licencia:** Apache 2.0 permite uso comercial, pero el modelo base upstream puede tener términos adicionales que deben aceptarse (`sensenova/SenseNova-Loop-9B`).
+- **Compatibilidad de hardware:** esta build es exclusiva de Apple Silicon vía MLX; no funciona en GPUs NVIDIA ni en CPU estándar sin conversión adicional.
+- **Rendimiento:** 8,1 tok/s en un solo stream es bajo para aplicaciones interactivas exigentes; el throughput agregado mejora con lotes pero cae a 4,8 tok/s por stream con 8 peticiones.
+- **Contexto efectivo:** aunque el contexto nativo es 512K, en Mac de 64 GB con 8 peticiones concurrentes baja a 86K; planificar el dimensionamiento en consecuencia.
+- **Formato de cuantización:** MLX affine 4-bit con `group_size=64` puede introducir degradación adicional frente a BF16; las métricas de rechazo y MMLU no se reejecutaron sobre MLX, solo se heredan de la fuente NVFP4.
+- **Madurez del ecosistema:** 0 likes y 409 descargas en el momento de la consulta; el soporte comunitario es limitado.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/balllvin/SenseNova-Loop-9B-NVFP4-MLX
-- Modelo base oficial: https://huggingface.co/sensenova/SenseNova-Loop-9B
-- Build NVFP4 de origen: https://huggingface.co/balllvin/SenseNova-Loop-9B-NVFP4
-- Build abliterado NVFP4: https://huggingface.co/balllvin/SenseNova-Loop-9B-abliterated-NVFP4
-- Build abliterado + Arete NVFP4: https://huggingface.co/balllvin/SenseNova-Loop-9B-abliterated-arete-NVFP4
-- Build abliterado + Arete MLX 4-bit: https://huggingface.co/balllvin/SenseNova-Loop-9B-abliterated-arete-NVFP4-MLX
-- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- MLX: https://github.com/ml-explore/mlx
-- mlx-lm: https://github.com/ml-explore/mlx-lm
-- JailbreakBench: https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors
-- AdvBench: https://github.com/llm-attacks/llm-attacks
-- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Build NVFP4 para NVIDIA: https://huggingface.co/balllvin/SenseNova-Loop-9B-NVFP4
+- Build abliterated NVFP4: https://huggingface.co/balllvin/SenseNova-Loop-9B-abliterated-NVFP4
+- Build abliterated + Arete NVFP4: https://huggingface.co/balllvin/SenseNova-Loop-9B-abliterated-arete-NVFP4
+- Build abliterated + Arete MLX: https://huggingface.co/balllvin/SenseNova-Loop-9B-abliterated-arete-NVFP4-MLX
+- Modelo base upstream: https://huggingface.co/sensenova/SenseNova-Loop-9B
+- Dataset de evaluación de propaganda (base): https://huggingface.co/datasets/balllvin/Propaganda-Eval-SenseNova-Loop-9B-NVFP4
+- Dataset de evaluación de propaganda (abliterated): https://huggingface.co/datasets/balllvin/Propaganda-Eval-SenseNova-Loop-9B-abliterated-NVFP4
+- Dataset de evaluación de propaganda (abliterated + Arete): https://huggingface.co/datasets/balllvin/Propaganda-Eval-SenseNova-Loop-9B-abliterated-arete-NVFP4
+- Dataset de entrenamiento referenciado: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

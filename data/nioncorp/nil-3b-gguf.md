@@ -2,51 +2,50 @@
 
 ## Resumen
 
-`nil-3b` es un modelo de lenguaje de 3.000 millones de parámetros desarrollado por Nion Technologies, Inc. (Nion Intelligence Labs) a partir de un ajuste fino de `meta-llama/Llama-3.2-3B-Instruct`. Se distribuye exclusivamente en formato GGUF cuantizado a `q4_k_m`, con un peso de fichero de 1,8 GB, y está diseñado para despliegues soberanos y completamente offline en hardware de bajas prestaciones (ARM Cortex-A72, dispositivos portátiles y equipos de baja potencia) en entornos africanos con conectividad limitada o nula.
+NIL-3B GGUF es una distribucion en formato GGUF del modelo NIL-3B, un ajuste fino del modelo base meta-llama/Llama-3.2-3B-Instruct publicado por nioncorp. El repositorio contiene el archivo `nil-3b-q4_k_m.gguf`, cuantizado en Q4_K_M, pensado para ejecucion local con runtimes compatibles con llama.cpp. El modelo cuenta con 3.212.749.888 parametros y un tamano de repositorio de 2,0 GB.
 
-La propuesta del modelo es la inferencia local sin dependencias de nube ni llamadas de red externas, con una huella de memoria operativa declarada inferior a 120 MB y una latencia de aproximadamente 38 ms por inferencia en hardware ARM de consumo. El autor declara un ajuste fino orientado a 32 lenguas y dialectos africanos, así como a contextos regionales de política y salud, aunque la model card solo enumera seis idiomas en sus metadatos.
+El modelo se presenta como un proyecto de chat orientado a varios idiomas africanos (swahili, amharico, hausa, yoruba e igbo) ademas del ingles, lo que lo diferencia de la mayoria de ajustes finos de Llama 3.2, centrados casi exclusivamente en ingles y lenguas europeas. La licencia declarada en el repositorio es MIT, si bien la propia model card advierte que el archivo LICENSE cubre el codigo fuente del proyecto y no confirma por si mismo los derechos de redistribucion de los pesos ni de los datos de entrenamiento.
 
-Es relevante ahora por la creciente demanda de modelos pequeños, cuantizados y desplegables en el borde para escenarios de privacidad estricta y conectividad intermitente, donde un modelo de 3B en 1,8 GB puede ejecutarse en dispositivos que no admiten alternativas de mayor tamaño.
+La relevancia actual del modelo radica en su facilidad de despliegue: al estar en GGUF y pesar 2,0 GB, puede ejecutarse en hardware de consumo sin GPU dedicada de gama alta. No obstante, la informacion publicada sobre el proceso de entrenamiento, los datos utilizados y los resultados de evaluacion es practicamente inexistente, lo que limita su adopcion en entornos de produccion sin una validacion previa por parte del equipo que lo integre.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de Llama 3.2 3B Instruct; detalles específicos del ajuste no disponibles) |
-| Parametros totales | 3.000 millones (3B) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible (el modelo base Llama 3.2 3B Instruct soporta 128k tokens, pero el autor no lo confirma para este ajuste) |
-| Tipos de cuantizacion | GGUF `q4_k_m` (1,8 GB); no se documentan otras variantes |
-| Idiomas soportados | en, sw, am, ha, yo, ig (metadatos); el autor declara ajuste fino sobre 32 lenguas y dialectos africanos |
-| Licencia | MIT |
-| Formato de pesos | GGUF (destinado a llama.cpp / llama-cpp-python) |
+| Arquitectura | Transformer decoder-only (derivada de Llama 3.2-3B-Instruct) |
+| Parametros totales | 3.212.749.888 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (unico archivo publicado: `nil-3b-q4_k_m.gguf`) |
+| Idiomas soportados | en, sw, am, ha, yo, ig |
+| Licencia | MIT (segun metadatos del repositorio; ver advertencias) |
+| Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `meta-llama/Llama-3.2-3B-Instruct`, un transformer decoder-only de 3B parámetros con atención por grupos (GQA) y tokenizador BPE de Llama 3. Sobre esa base, Nion Technologies aplica un ajuste fino orientado a dominios regionales (política y salud) y a un conjunto amplio de lenguas africanas. La model card no especifica el volumen de tokens de entrenamiento, la composición exacta del dataset, ni si se emplearon técnicas de alineación adicionales como RLHF o DPO tras el ajuste supervisado.
+La arquitectura subyacente corresponde a Llama 3.2-3B-Instruct, un transformer decoder-only con atencion por grupos (GQA) y tokenizador BPE de Llama 3. El ajuste fino realizado por nioncorp no esta documentado en la model card: no se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como SFT, RLHF o DPO. Tampoco se detalla si se amplio el vocabulario o el contexto respecto al modelo base.
 
-La innovación principal no está en la arquitectura, sino en el empaquetado: cuantización `q4_k_m` hasta 1,8 GB, una asignación de RAM operativa declarada inferior a 120 MB y optimización para inferencia en CPU ARM (Cortex-A72). El modelo está pensado para ejecutarse con llama.cpp / llama-cpp-python sin acceso a red, lo que encaja con el etiquetado `sovereign-ai` y `offline-ai` del repositorio. No se documentan técnicas como decodificación especulativa, atención lineal ni arquitecturas híbridas.
+La unica informacion tecnica disponible en el repositorio se refiere al proceso de inferencia y publicacion: el script `src.chat` espera el archivo `nil-3b-q4_k_m.gguf` en la raiz del proyecto, y el script `upload_hf.py` gestiona la subida al Hub mediante `huggingface_hub` y `python-dotenv`. No hay innovaciones tecnicas declaradas (decodificacion especulativa, atencion lineal, MoE ni similares).
 
 ## Capacidades
 
-- Generación de texto conversacional e instruccional, heredada del ajuste Instruct de Llama 3.2 3B.
-- Comprensión y generación multilingüe en inglés, suajili, amárico, hausa, yoruba e igbo según los metadatos, con cobertura declarada de hasta 32 lenguas y dialectos africanos.
-- Adaptación a contextos regionales de política y salud pública.
-- Inferencia totalmente offline, sin llamadas externas ni telemetría de red.
-- Ejecución en hardware de bajas prestaciones (ARM Cortex-A72, wearables, dispositivos de baja potencia).
-- Soporte de tool calling / function calling: no disponible (no documentado por el autor).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Modo thinking, visión o audio: no disponible (modelo solo texto).
+- Generacion de texto conversacional en ingles y en cinco idiomas africanos (swahili, amharico, hausa, yoruba, igbo).
+- Razonamiento basico y respuesta a instrucciones heredados del modelo base Llama 3.2-3B-Instruct.
+- Generacion de codigo y matematicas a nivel basico, limitado por el tamano de 3B parametros.
+- Soporte de tool calling: no documentado en la model card, aunque el modelo base lo soporta; la conservacion de esta capacidad tras el ajuste fino no esta verificada.
+- Capacidades de agente y razonamiento multi-paso: no documentadas.
+- Capacidades multimodales (vision, audio): no disponibles; Llama 3.2-3B-Instruct es exclusivamente textual.
+- Modo de pensamiento explicito (thinking mode): no disponible.
 
 ## Casos de uso
 
-- Asistencia sanitaria en zonas sin conectividad: el modelo puede responder consultas básicas de salud pública en lenguas locales sobre dispositivos ARM de bajo consumo, con inferencia local y sin exponer datos del paciente a la red.
-- Orientación política y administrativa regional: despliegue en oficinas locales o quioscos para resolver dudas sobre trámites y políticas en suajili, hausa o yoruba, aprovechando el ajuste declarado sobre contextos regulatorios africanos.
-- Educación rural offline: instalación en dispositivos portátiles o wearables para tutoría básica en inglés y lenguas locales, sin depender de conexión a internet.
-- Atención al ciudadano en kioscos de bajo consumo: conversaciones multi-turno en hardware Cortex-A72 con latencia declarada de ~38 ms, adecuada para interacción en tiempo real.
-- Procesamiento de documentos en el borde: resumen y extracción de información de textos locales en dispositivos con menos de 120 MB de RAM operativa, manteniendo los datos en el dispositivo.
-- Investigación lingüística de bajos recursos: uso como base para experimentos con lenguas africanas subrepresentadas, dado su empaquetado ligero y licencia MIT.
-- Despliegue en entornos con requisitos de soberanía de datos: organizaciones que no pueden enviar información a servicios en la nube pueden ejecutar el modelo íntegramente en su infraestructura local.
+- Asistencia conversacional multilingue en Africa oriental y occidental: el modelo puede mantener dialogos en swahili, amharico, hausa, yoruba e igbo, lo que lo hace util para aplicaciones de atencion al ciudadano o servicios comunitarios en esas regiones.
+- Despliegue en hardware de consumo: con 2,0 GB en Q4_K_M, puede ejecutarse en portatiles sin GPU dedicada mediante llama.cpp u Ollama, lo que facilita prototipos y demos locales sin coste de infraestructura cloud.
+- Traduccion asistida y adaptacion cultural: util como borrador en pipelines de traduccion entre ingles y las lenguas africanas soportadas, con revision humana posterior dado el riesgo de alucinacion.
+- Educacion y alfabetizacion digital: generacion de material didactico y respuestas en lenguas locales para plataformas de aprendizaje de bajo recursos.
+- Chatbots de bajo coste para ONG y pymes: al ser un modelo de 3B en GGUF, permite desplegar asistentes en servidores modestos o incluso en dispositivos edge.
+- Investigacion en NLP de bajos recursos: sirve como punto de partida para estudiar el comportamiento de ajustes finos de Llama 3.2 en lenguas africanas y como baseline en experimentos comparativos.
+- Integracion en aplicaciones de escritorio: el formato GGUF y el script `src.chat` permiten incorporar el modelo en herramientas locales de procesamiento de texto sin dependencia de API externa.
 
 ## Benchmarks y rendimiento
 
@@ -54,36 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: 1,8 GB de peso en disco para la cuantización `q4_k_m`; el autor declara menos de 120 MB de RAM operativa activa, aunque en la práctica el proceso completo de llama.cpp requiere cargar el modelo en memoria (del orden de 2 GB o más según el backend y el contexto).
-- GPU recomendadas: no documentadas; el modelo está optimizado para CPU ARM (Cortex-A72) y hardware de baja potencia, no para GPU dedicadas.
-- GPU de consumo: no se documenta compatibilidad con RTX 4090, A100 o H100; el enfoque del autor es CPU y dispositivos de borde.
-- Opciones de despliegue: llama.cpp y llama-cpp-python (el quickstart de la model card usa `pip install llama-cpp-python huggingface_hub`); no se documentan vLLM, TGI ni Ollama.
-- Latencia: aproximadamente 38 ms por inferencia local en hardware ARM de consumo, según el autor. Throughput no disponible.
+- VRAM estimada para inferencia: aproximadamente 2,5-3 GB con la cuantizacion Q4_K_M (2,0 GB de pesos mas overhead de contexto y KV cache).
+- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM; RTX 3050, RTX 4060, RTX 4090, A100 y H100 son sobredimensionadas para este modelo pero compatibles.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna (GTX 1650 4 GB en adelante) y en CPU con 4-6 GB de RAM libre.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime compatible con GGUF. El repositorio incluye un script de chat propio (`python -m src.chat`).
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada; dependeran del hardware y del runtime elegido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| nioncorp/nil-3b-gguf | 3B | no disponible | GGUF `q4_k_m` (1,8 GB) | MIT | Offline, lenguas africanas, borde ARM |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128k tokens | safetensors, GGUF comunitario | Llama 3.2 Community License | Modelo base generalista |
-| Qwen2.5-3B-Instruct | 3B | 32k tokens (128k en variantes ampliadas) | safetensors, GGUF | Apache 2.0 | Generalista multilingüe |
-| Gemma 2 2B Instruct | 2B | 8k tokens | safetensors, GGUF | Gemma Terms of Use | Generalista ligero |
+| NIL-3B GGUF | 3,21B | no disponible | en, sw, am, ha, yo, ig | MIT (declarada) | GGUF |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128k (segun model card oficial) | multilingue (8 idiomas oficiales) | Llama 3.2 Community License | safetensors, GGUF |
+| Qwen2.5-3B-Instruct | 3,09B | 32k (128k con YaRN) | multilingue (29 idiomas) | Apache 2.0 | safetensors, GGUF |
+| Gemma 2 2B IT | 2,61B | 8k | multilingue | Gemma Terms of Use | safetensors, GGUF |
 
-Los datos de Llama 3.2 3B Instruct, Qwen2.5-3B-Instruct y Gemma 2 2B corresponden a sus model cards públicas; los de `nil-3b` proceden de la información del repositorio. No se dispone de comparación de rendimiento medida entre ellos en la información proporcionada.
+La ventaja diferencial de NIL-3B frente a estos modelos es su cobertura declarada de lenguas africanas (swahili, amharico, hausa, yoruba, igbo), ausente o marginal en los modelos comparados. En cambio, carece de la documentacion de contexto, benchmarks y proceso de entrenamiento que si acompanan a Llama 3.2, Qwen2.5 y Gemma 2.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks publicados: no hay evidencia medida de calidad en MMLU, HumanEval, GSM8K ni tareas multilingües, lo que impide validar las afirmaciones de la model card.
-- Discrepancia entre el ajuste declarado (32 lenguas africanas) y los metadatos del repositorio (6 idiomas): conviene verificar la cobertura real antes de producción.
-- El modelo base es Llama 3.2 3B, con sesgos conocidos de su corpus de entrenamiento; el ajuste fino no documenta mitigaciones.
-- Riesgo de alucinación inherente a un modelo de 3B, especialmente en dominios de salud y política, donde el autor declara especialización: requiere verificación humana en aplicaciones críticas.
-- La licencia del repositorio es MIT, pero el modelo deriva de Llama 3.2, sujeto a la Llama 3.2 Community License; conviene revisar la compatibilidad de ambas licencias para uso comercial.
-- Solo se distribuye en GGUF `q4_k_m`: no hay pesos en safetensors ni otras cuantizaciones documentadas, lo que limita el ajuste fino posterior.
-- La latencia de ~38 ms y el consumo de <120 MB de RAM son cifras declaradas por el autor sin metodología de medición publicada.
-- Repositorio sin descargas ni likes en el momento de la consulta, lo que reduce la validación comunitaria.
+- Ausencia total de documentacion sobre datos de entrenamiento, proceso de ajuste fino y evaluacion: no es posible verificar la calidad ni la fidelidad del ajuste en las lenguas africanas declaradas.
+- Riesgo de alucinacion elevado en lenguas de bajos recursos, dado el limitado volumen de datos disponible tipicamente para swahili, amharico, hausa, yoruba e igbo.
+- Sesgos desconocidos: al no documentarse la composicion del dataset, no se pueden evaluar sesgos de genero, etnicos o culturales.
+- Licencia ambigua: la model card advierte explicitamente que el archivo LICENSE (MIT) cubre el codigo fuente y no confirma los derechos de redistribucion de los pesos ni de los datos. El modelo base Llama 3.2 esta sujeto a la Llama 3.2 Community License, cuyos terminos podrian prevalecer sobre la licencia MIT declarada.
+- Longitud de contexto no documentada: se desconoce si se conserva la ventana de 128k del modelo base o se ha reducido durante el ajuste fino.
+- Sin soporte documentado de tool calling ni de razonamiento multi-paso tras el ajuste fino.
+- Proyecto con 0 likes y 774 descargas en el momento de la consulta: sin comunidad ni mantenimiento verificado.
+- No apto para produccion sin una evaluacion propia previa en el dominio y los idiomas de destino.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/nioncorp/nil-3b-gguf
-- Nion Intelligence Labs: https://labs.nioncorp.com/
+- Repositorio Hugging Face: https://huggingface.co/nioncorp/nil-3b-gguf
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+- Documentacion de llama.cpp: https://github.com/ggerganov/llama.cpp
+- Documentacion de Ollama: https://ollama.com
+- Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

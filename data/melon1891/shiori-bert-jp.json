@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "melon1891 (TAKUMI HIRAISHI) - Hugging Face",
-      "url": "https://huggingface.co/melon1891",
-      "snippet": "AI & ML interests ... Recent Activity updated a model about 7 hours ago ... published a model about 7 hours ago"
-    },
-    {
-      "title": "melon1891 (TAKUMI HIRAISHI) - Hugging Face",
-      "url": "https://huggingface.co/melon1891/models",
-      "snippet": "AI & ML interests ... Recent Activity updated a model about 3 hours ago ... published a model about 3 hours ago"
-    }
-  ]
+  "sources": []
 }

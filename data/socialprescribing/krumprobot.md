@@ -2,105 +2,127 @@
 
 ## Resumen
 
-KrumpRobot es una política neuronal de generación de movimiento para robótica humanoide, desarrollada por Arun Nadarasa (cuenta `socialprescribing`) y publicada bajo licencia Apache 2.0. No se trata de un modelo de lenguaje, sino de un controlador de movimiento entrenado para sintetizar primitivas cinéticas de Krump (STOMP, JAB, ARM SWING, CHEST POP, KILL-OFF) condicionadas por la fase de un ritmo de 140 BPM y objetivos de fuerza de reacción del suelo. El modelo se entrenó a partir de vídeo monoculo de una actuación real de street dance (98,47 s, 2.953 fotogramas a 29,99 fps) y se reorienta a un rig Mixamo Y-Bot de 52 articulaciones y a los robots humanoides Unitree H1 y G1.
+KrumpRobot v2.2 es un sistema de IA física (physical AI) para el control de humanoides bípedos, desarrollado por el usuario `socialprescribing` y publicado bajo licencia Apache-2.0. No es un modelo de lenguaje: es un pipeline de generación de movimiento y control robótico que combina un generador neuronal de movimiento condicionado por fase (`1,01 M` parámetros), un módulo de Conditional Flow Matching sobre cuantización vectorial residual (`2x64` RVQ) con rotaciones `SO(3)` en representación 6D, y un modelo de mundo (`KR-WM-MPC`, `973.386` parámetros) que alimenta un controlador predictivo por disparo de candidatos (shooting MPC) a 50 Hz.
 
-La arquitectura es una red recurrente causal de 1,01 M de parámetros con pérdida sensible al jerk y decodificadores residuales multi-tarea que emiten pose (22 cuaterniones), velocidad articular, desplazamiento de raíz, dinámica (coeficientes de fricción, fuerza vertical, jerk) y estabilidad ZMP. El paquete incluye pesos PyTorch (3,8 MB), pesos JSON para ejecución WebGL en Three.js, una trayectoria generada de 2.953 fotogramas, un personaje GLB animado, un vídeo comparativo y un preimpreso de 12 páginas.
+El sistema se entrena a partir de `2.955` fotogramas monoculares de una actuación real de Krump a 140 BPM, complementados con el dataset AMASS, y se valida en bucle cerrado sobre el humanoide Unitree G1 (29 grados de libertad) dentro de MuJoCo 4.0.1, incluyendo un modelo no lineal de actuador QDD con back-EMF, holgura de engranajes planetarios y calentamiento de estator. La propuesta resuelve el problema de generar movimiento expresivo y físicamente plausible en humanoides, manteniendo estabilidad ante empujones, hielo, retardo de sensores y cambios de tempo.
 
-Su relevancia es acotada pero específica: demuestra que es posible recuperar movimiento 3D expresivo de alta aceleración desde vídeo monoculo, reorientarlo a morfologías humanoides distintas y ejecutar la política a 370 Hz (p50 de 2,70 ms), lo que la hace compatible con control predictivo por modelo (MPC) en tiempo real. El alcance es limitado: un único intérprete, una única toma y un vocabulario coreográfico restringido.
+Su relevancia actual radica en que demuestra que un modelo de mundo compacto (menos de 1 M de parámetros) puede igualar o superar a un MPC escalar y a políticas RL de referencia en cinco ejes de sim-to-real, con latencias de `1,23 ms` (p50) en CPU y sin ensayos en robot físico. El repositorio ocupa `0,1 GB` y el pipeline declarado es `robotics`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Red neuronal recurrente causal (GRU de 2 capas, 256 unidades) con proyecciones de estado y condicionamiento, fusión y decodificadores residuales multi-tarea (pose, velocidad, raíz, dinámica, ZMP) |
-| Parametros totales | 1,01 M |
+| Arquitectura | Generador de movimiento condicionado por fase + Conditional Flow Matching (`KrumpFlow-CFM`) sobre `2x64` RVQ y rotaciones `SO(3)` 6D; modelo de mundo `KR-WM-MPC`; política residual PPO (`KR-WM-ResPPO`) |
+| Parametros totales | `1,01 M` (generador); `973.386` (`KR-WM-MPC`); `238.139` (`KR-WM-ResPPO`) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (modelo de control de movimiento, no de texto; opera sobre estado articular de 182 dimensiones) |
-| Tipos de cuantizacion | no disponible (pesos PyTorch de 3,8 MB y JSON para WebGL) |
-| Idiomas soportados | en (metadatos del modelo; no aplica generación de lenguaje) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch state dict (`.pt`), JSON para Three.js/WebGL, NPZ para trayectorias |
+| Longitud de contexto | no disponible (no aplica; ventana temporal de rollout open-loop de `0,5 s` / `15` pasos) |
+| Tipos de cuantizacion | no disponible (RVQ `2x64` es cuantizacion de representacion de movimiento, no de pesos) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | no disponible (repo de `0,1 GB`; se citan recibos SHA-256 de políticas y CFM) |
 
 ## Arquitectura y entrenamiento
 
-La política recibe un vector de estado articular de 182 dimensiones y un vector de condicionamiento de 9 dimensiones (one-hot de 5 primitivas, fase del beat a 140 BPM codificada como seno y coseno, energía de clímax entre 0 y 1 y fuerza de reacción vertical objetivo en unidades de peso corporal). Ambas entradas se proyectan (192 y 64 dimensiones respectivamente), se fusionan en 256 dimensiones y pasan por una GRU de 2 capas de 256 unidades, seguida de un ResMLP y cinco cabezas de salida: pose (22 cuaterniones, 88 dimensiones), velocidad articular (88 dimensiones), raíz (desplazamiento de cadera, 3 dimensiones), dinámica (coeficientes de fricción izquierdo y derecho, Fz y jerk, 4 dimensiones) y estabilidad ZMP (2 dimensiones).
+El generador de movimiento combina un módulo condicionado por fase con `KrumpFlow-CFM`, un esquema de Conditional Flow Matching que opera sobre una representación de movimiento cuantizada mediante RVQ `2x64` y rotaciones `SO(3)` en forma 6D. La integración se realiza con un ODE midpoint de `K=4` pasos. Sobre esta base, el modelo de mundo `KR-WM-MPC` (`973.386` parámetros) se entrena con `22.184` transiciones de contacto del Unitree G1 con randomización de dominio (coeficiente de fricción `μ ∈ [0,12, 1,15]`, empujones laterales de pelvis de `0–210 N`) y se evalúa sobre `5.470` ventanas temporales retenidas sin solapamiento. La política `KR-WM-ResPPO` (`238.139` parámetros) se entrena on-policy con PPO recortado y GAE durante `12` iteraciones y `104.304` subpasos a 200 Hz en MuJoCo 4.0.1, con condicionamiento causal sobre la creencia del modelo de mundo y compuertas de seguridad desacopladas para tren inferior y superior.
 
-El entrenamiento se realizó en Modal Cloud (recuperación de pose con GPU Nvidia L40S y entrenamiento de la política en 4 vCPU) sobre el dataset AMASS y vídeo monoculo de la actuación de Arun Nadarasa. La innovación principal es la pérdida sensible al jerk, que preserva el 96,8 % de la aceleración pico frente al 61,4 % que se obtiene con una MSE L2 estándar, algo crítico en un estilo de danza definido por movimientos secos y explosivos. El reorientado es relativo al reposo (*rest-relative retargeting*), con una precisión de cinemática directa de 8,765 × 10⁻¹¹ m y 0 % de penetración del suelo. No se documenta RLHF ni DPO, al no ser un modelo de lenguaje.
+La innovación técnica principal es la verificación en bucle cerrado con física de actuador no lineal: se modela el recorte par-velocidad por back-EMF de una PMSM, la holgura de engranajes planetarios con histéresis de `±0,015 rad` y el calentamiento por cobre `I²R` con rizado FOC. El sistema se entrena en Modal Cloud a partir de `2.955` fotogramas monoculares y una prior expresiva de `5.084` fotogramas de Cartwheel, y declara `N = 0` ensayos en robot físico. Los resultados se acompañan de recibos SHA-256 para reproducibilidad (`7a3736e3…`, `d066e7f5…`, `559a8ac4…`, `ecb201ef…`, `3375e850…`).
 
 ## Capacidades
 
-- Generación de movimiento humanoide expresivo con cinco primitivas de Krump: STOMP, JAB, ARM SWING, CHEST POP y KILL-OFF.
-- Condicionamiento por fase musical a 140 BPM (codificación seno/coseno del beat) y por energía de clímax.
-- Condicionamiento por objetivos de fuerza de reacción del suelo (GRF F_z en unidades de peso corporal).
-- Salida de pose en cuaterniones (22 articulaciones), velocidad articular, desplazamiento de raíz, coeficientes de fricción, jerk y márgenes de estabilidad ZMP.
-- Reorientado a tres morfologías: rig Mixamo Y-Bot de 52 articulaciones, Unitree H1 y Unitree G1.
-- Ejecución en tiempo real: latencia p50 de 2,70 ms (~370 Hz) y p99 de 4,07 ms.
-- Ejecución sin instalación en navegador mediante pesos JSON y Three.js (WebGL).
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües; no es un modelo de lenguaje.
+- Generación de movimiento humanoide expresivo (Krump) condicionado por fase y tempo, con generalización a coreografías retenidas.
+- Control de cuerpo flotante en bucle cerrado sobre Unitree G1 de 29 DoF, incluyendo verificación de actuador QDD no lineal.
+- Control predictivo por disparo de candidatos (`6` candidatos) a 50 Hz con latencia p50 de `1,23 ms` y p99 de `1,28 ms` en CPU.
+- Detección temprana de riesgo de caída a `300 ms` con `ROC-AUC = 0,9933` y `Brier = 0,0082`.
+- Inferencia de fricción del suelo sin cámara a partir de historial propioceptivo de deslizamiento de `10` pasos, con `R² = 0,4043` y detección de transiciones a hielo en `100 ms`.
+- Política residual PPO tolerante a retardo FIFO de `20 ms`, ruido de sensores, empujones de `135–195 N`, carga extra de torso del `20 %` y pendiente de escenario de `4,5°`.
+- Control zero-shot de Cartwheel a 29 DoF mediante RL de stepping.
+- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje).
+- Soporte de agentes y razonamiento multi-paso: no disponible en el sentido de LLM; el sistema implementa planificación MPC multi-paso.
+- Capacidades multilingües: no disponible; el modelo declara únicamente `en`.
+- Capacidades especiales: modelo de mundo con cabeza de fricción propioceptiva, gating de seguridad por tren corporal y verificación térmica de estator.
 
 ## Casos de uso
 
-- Control de danza en robots humanoides Unitree H1 y G1: la política genera trayectorias articulares condicionadas por el beat y las envía a 370 Hz, frecuencia compatible con bucles de control MPC en tiempo real.
-- Coreografía automatizada para espectáculos y demostraciones: el condicionamiento por fase de beat permite sincronizar el movimiento con una pista de 140 BPM sin scripting manual de keyframes.
-- Investigación en retargeting entre morfologías: el pipeline rest-relative permite trasladar movimiento capturado de un humano a robots con proporciones distintas manteniendo el 96,8 % de la aceleración pico.
-- Evaluación de estabilidad bípeda: las cabezas de dinámica y ZMP (margen mínimo de 4,2 cm) permiten estudiar límites de estabilidad en movimientos de alta aceleración.
-- Planificación multi-robot: el modelo reporta una separación mínima de 1,28 m con 4 robots bajo TRMP, útil para validar coreografías coordinadas en enjambre.
-- Docencia y divulgación en robótica físico-digital: la demo WebGL en Hugging Face Spaces permite explorar la política sin instalar nada.
-- Generación de datos sintéticos de movimiento para aumentar datasets de danza o para preentrenar controladores antes de escalar a múltiples intérpretes.
+- Coreografía generativa para humanoides de investigación: el generador condicionado por fase permite producir secuencias de danza a distintos tempos (115, 140 y 165 BPM) que la política residual ejecuta con supervivencia del 100 % en el barrido multi-tempo, útil para estudiar expresividad en robótica.
+- Control robusto ante superficies de baja fricción: la cabeza de fricción propioceptiva infiere transiciones a hielo en `100 ms` sin cámara, lo que permite a un robot de servicio ajustar el paso en entornos con derrames o superficies pulidas.
+- Recuperación ante empujones en entornos humanos: con supervivencia `5/5` ante empujones de `135–195 N` y fricción `μ = 0,12`, el sistema es adecuado para pruebas de seguridad en robots que comparten espacio con personas.
+- Validación de controladores antes de despliegue físico: el pipeline en MuJoCo 4.0.1 con actuador QDD no lineal y verificación térmica (`88,51 °C` de pico en estator) permite descartar controladores inestables sin ensayos en hardware.
+- Benchmarking de modelos de mundo para robótica: `KR-WM-MPC` sirve como referencia reproducible (recibos SHA-256) para comparar predictores de riesgo de caída y de error de seguimiento en humanoides.
+- Investigación en sim-to-real con retardo y ruido: la evaluación R3 con FIFO de `20 ms`, ruido de sensores y empujones permite estudiar Robustez de políticas antes de transferir a un G1 real.
+- Generación de datos sintéticos de movimiento para entrenamiento: el generador y la prior de Cartwheel pueden producir trayectorias etiquetadas para aumentar datasets de control.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Resultado |
-|---|---|
-| Precisión de cinemática directa relativa al reposo (`Motion2MixamoRig`) | 8,765 × 10⁻¹¹ m (0,0 % de penetración del suelo) |
-| Retención de aceleración pico (pérdida sensible al jerk vs. MSE L2) | 96,8 % vs. 61,4 % |
-| Error angular geodésico SO(3) en seguimiento completo | 0,0405 rad (2,32°) |
-| Split temporal contiguo 80/20 sin solapamiento, train | 1,42° (fotogramas 0-2.361, 1.169 ventanas) |
-| Split temporal contiguo 80/20 sin solapamiento, test freestyle no visto | 18,58° (fotogramas 2.362-2.952, 283 ventanas) |
-| Línea base de persistencia a velocidad cero en test | 2,95° |
-| Latencia de inferencia | p50 = 2,70 ms (~370 Hz); p99 = 4,07 ms |
-| Margen mínimo ZMP | 4,2 cm |
-| Separación mínima con 4 robots (TRMP) | 1,28 m |
+Generación de movimiento (`KrumpFlow-CFM`, 5 semillas, split retenido `[78,73–98,47 s]`, sin solapamiento):
 
-El dato más relevante es la brecha entre train (1,42°) y test no visto (18,58°), que el propio autor reconoce como cota de memorización de secuencia en una sola toma y que sitúa al modelo por encima de la línea base trivial de persistencia (2,95°). No se han publicado comparaciones con otros modelos de generación de movimiento en la información disponible.
+| Metrica | K308 GRU | Direct-Quat-GRU | KrumpFlow-CFM |
+|---|---|---|---|
+| Error geodésico 1 paso | `18,58°` | `16,80 ± 0,65°` | `2,20 ± 0,02°` |
+| Error rollout open-loop `0,5 s` | no disponible | no disponible | `16,81 ± 0,48°` |
+| FMD | `5,90` | no disponible | `1,745 ± 0,101` |
+| Foot-skate | `15,29 %` | no disponible | `4,15 ± 1,75 %` |
+| Latencia mediana CPU | no disponible | no disponible | `1,26 ms` |
+
+Modelo de mundo (`KR-WM-MPC`, `5.470` ventanas retenidas):
+
+| Metrica | Valor |
+|---|---|
+| ROC-AUC riesgo de caída a 300 ms | `0,9933` |
+| Brier | `0,0082` |
+| MPJPE R² | `0,8076` |
+| Torque utilization R² | `0,4585` |
+| Fricción `μ̂_t` R² | `0,4043` |
+| Latencia MPC 50 Hz (p50 / p99) | `1,23 ms` / `1,28 ms` |
+
+Política residual PPO (`KR-WM-ResPPO`, cinco ejes):
+
+| Regimen | Supervivencia | MPJPE | Upper RMSE |
+|---|---|---|---|
+| R1 nominal (`μ = 1,0`) | `5/5` | `32,65 mm` | `4,41°` |
+| R2 hielo + empujón (`μ = 0,12`, `135–195 N`) | `5/5` | `86,31 mm` | no disponible |
+| R3 retardo `20 ms` + ruido + empujón | `5/5` | `37,01 mm` | `5,22°` |
+| R4 carga `+20 %` + pendiente `4,5°` + empujón | `5/5` | `44,69 mm` | `5,20°` |
+| R5 barrido multi-tempo (115/140/165 BPM) | `9/9` | no disponible | `4,23°` / `4,60°` / `4,84°` |
+
+Política con conciencia de actuador (`KR-WM-ResPPO-ActAware`): supervivencia `5/5`, Upper-Body RMSE de `5,07°`, chatter de holgura de `297,5 Hz` y resistencia térmica continua de `60,0 s` (`12.000` subpasos) con RMSE de `4,18°`, MPJPE de `35,51 mm` y pico de estator de `88,51 °C`.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB; los pesos ocupan 3,8 MB en PyTorch, por lo que cualquier GPU con al menos 1 GB es suficiente.
-- GPU recomendadas: no se requiere GPU dedicada; el entrenamiento usó Nvidia L40S para recuperación de pose, pero la inferencia de la política corre en CPU.
-- Cabe en cualquier GPU de consumo (GTX 1050, RTX 3060, RTX 4090) e incluso en CPU; el cuello de botella es el renderizado del rig, no la política.
-- Opciones de despliegue: script Python con PyTorch (`sample_inference.py`), ejecución WebGL en navegador con Three.js mediante los pesos JSON, y Hugging Face Spaces.
-- Latencia y throughput: p50 de 2,70 ms y p99 de 4,07 ms por paso de inferencia (~370 Hz), adecuado para control en tiempo real.
+- VRAM estimada para inferencia: no disponible; los modelos son de tamaño muy reducido (menos de 1 M de parámetros cada uno) y la latencia declarada se mide en CPU.
+- GPU recomendadas: no disponible; el benchmark de MPC reporta latencias p50/p99 en CPU, sin requisitos de GPU especificados.
+- Cabe en GPU consumer: previsiblemente sí por tamaño, pero no se confirma en la información disponible.
+- Opciones de despliegue: MuJoCo 4.0.1 como simulador de verificación; entrenamiento en Modal Cloud; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput: `1,26 ms` mediana en CPU para `KrumpFlow-CFM`; `1,23 ms` p50 y `1,28 ms` p99 para el MPC a 50 Hz; `1,262 ms` de latencia combinada mediana en el entrenamiento PPO.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Enfoque | Contexto / datos | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / ventana | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KrumpRobot | 1,01 M | Política recurrente de danza condicionada por beat y GRF | 2.953 fotogramas, un intérprete, AMASS | Apache 2.0 | Hugging Face, demo WebGL |
-| ExBody (referencia citada por el autor) | no disponible | Control de cuerpo completo para humanoides | no disponible | no disponible | no disponible |
-| OmniH2O (referencia citada por el autor) | no disponible | Teleoperación y control humanoide de cuerpo completo | no disponible | no disponible | no disponible |
-| AIST++ (referencia citada por el autor) | no disponible | Dataset y métodos de generación de danza | múltiples bailarines | no disponible | no disponible |
+| KrumpRobot v2.2 (`KR-WM-ResPPO`) | `1,01 M` + `973.386` + `238.139` | rollout `0,5 s` | `5/5` supervivencia en R1–R4; `4,41°` Upper RMSE en R1 | Apache-2.0 | Hugging Face |
+| Cartwheel-RL (referencia interna) | no disponible | no disponible | `4,41°` Upper RMSE superado por `-12,3 %` en R1 | no disponible | no disponible |
+| MPC escalar (referencia interna) | no disponible | no disponible | `4,48°` Upper RMSE en R1 | no disponible | no disponible |
+| Naive-HighGain (referencia interna) | no disponible | no disponible | colapso `3/5` en R2; chatter `-18,4 %` vs. ActAware | no disponible | no disponible |
 
-Los tres modelos de comparación se mencionan en la model card como objetivos de escalado futuro (multi-performer), no como alternativas evaluadas empíricamente contra KrumpRobot. No hay datos de benchmarks comparativos publicados en la información disponible.
+No se dispone de comparación con sistemas externos de generación de movimiento humanoide en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenado sobre una única toma de un único intérprete: el error en test no visto (18,58°) supera ampliamente el de train (1,42°) y la línea base trivial (2,95°), lo que indica memorización de secuencia y escasa generalización a freestyle nuevo.
-- Vocabulario coreográfico cerrado a cinco primitivas; no genera movimientos fuera de ese conjunto.
-- Dependencia de la fase de beat a 140 BPM: el rendimiento fuera de ese tempo no está documentado.
-- Solo metadatos en inglés; no aplica soporte multilingüe.
-- Riesgo de alucinación no aplica en el sentido de lenguaje, pero sí de generar movimientos físicamente inviables fuera de la distribución de entrenamiento; el margen ZMP de 4,2 cm es una garantía empírica, no formal.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo deriva de vídeo de una actuación real de Arun Nadarasa: conviene revisar los derechos sobre la grabación original antes de explotación comercial.
-- No es un modelo de lenguaje: no soporta tool calling, agentes ni razonamiento; no debe evaluarse con benchmarks tipo MMLU o HumanEval.
-- El repositorio es pequeño (0,1 GB) y con 63 descargas y 1 like, lo que limita la validación independiente.
-- La model card incluye agradecimientos a "Gemini 4 Argon" y "Google Antigravity", herramientas cuyo estado público no está verificado en la información disponible.
+- El modelo declara `N = 0` ensayos en robot físico: todos los resultados son de simulación en MuJoCo 4.0.1, por lo que la transferencia real no está verificada.
+- El entrenamiento parte de `2.955` fotogramas monoculares de una única actuación de Krump a 140 BPM y de la prior de Cartwheel; la diversidad de estilos y morfologías es limitada.
+- El idioma declarado es únicamente `en`; no se documentan capacidades multilingües.
+- La especialización es estrecha: no es un modelo de propósito general ni un LLM, y no soporta tool calling ni agentes conversacionales.
+- La cabeza de fricción propioceptiva tiene un `R² = 0,4043`, lo que indica capacidad predictiva moderada y riesgo de error en transiciones de superficie no vistas.
+- El modelo de mundo presenta un `R²` de utilización de par de `0,4585`, inferior al de MPJPE, lo que sugiere menor fiabilidad en la estimación de esfuerzo articular.
+- La verificación térmica alcanza `88,51 °C` de pico en estator en duty continuo de `60 s`; no se documentan márgenes para duty cycles más largos.
+- Licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte; los recibos SHA-256 deben validarse antes de reproducir resultados.
+- No se documentan sesgos demográficos ni de comportamiento, pero la dependencia de un único performer introduce sesgo estilístico y antropométrico.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/socialprescribing/KrumpRobot
-- Demo interactiva 3D WebGL: https://huggingface.co/spaces/socialprescribing/KrumpRobot
-- Portal del proyecto e investigación: https://arunnadarasa.github.io/quantumkrump/
-- Preimpreso (PDF de 12 páginas): https://huggingface.co/socialprescribing/KrumpRobot/resolve/main/krumprobot-physical-ai-paper.pdf
-- Recibo de ablación temporal: https://huggingface.co/socialprescribing/KrumpRobot/resolve/main/deep_review_ablation_receipt_20261111.json
-- Plataforma de entrenamiento: https://modal.com
-- Dataset AMASS: no disponible enlace directo en la información proporcionada
+- Space interactivo 3D WebGL + Contact Lab: https://huggingface.co/spaces/socialprescribing/KrumpRobot
+- Preprint de robótica (26 páginas, PDF): `krumprobot-physical-ai-paper.pdf` (incluido en el repositorio)
+- Dataset AMASS: no se proporciona URL directa en la información disponible
+- Modal Cloud: https://modal.com
+- MuJoCo 4.0.1: no se proporciona URL directa en la información disponible
+- Unitree G1 / H1: no se proporciona URL directa en la información disponible

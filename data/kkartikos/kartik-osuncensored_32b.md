@@ -2,94 +2,91 @@
 
 ## Resumen
 
-KARTIK OS 32B Uncensored es un proyecto de modelo conversacional derivado, publicado por el usuario KKartikos (Kartik Kamboj) en Hugging Face. No se trata de un modelo entrenado desde cero: es una customización de identidad y configuración conversacional sobre un modelo base preentrenado, en concreto Qwen3-32B-Abliterated, una variante "abliterated" (con los mecanismos de rechazo atenuados) de Qwen3-32B. El resultado se distribuye únicamente como archivo GGUF cuantizado en Q3_K_M, pensado para inferencia local con llama.cpp y herramientas compatibles.
+Kartik-OSuncensored_32b es un modelo de lenguaje conversacional de 32.762 millones de parámetros (32,7B) publicado por el usuario KKartikos en Hugging Face. Según su model card, se trata de un proyecto personal de personalización construido sobre el modelo preentrenado Qwen3-32B-Abliterated, una variante "abliterada" (con los mecanismos de rechazo atenuados) de la familia Qwen3. El autor, Kartik Kamboj, lo presenta como un asistente de identidad propia orientado a inferencia local, sin dependencia de API ni facturación por token.
 
-El modelo tiene 32.762.123.264 parámetros (unos 32,8 mil millones), lo que lo sitúa en la clase de 32B. El repositorio ocupa 16,0 GB, coherente con una cuantización de 3 bits por peso más metadatos. La model card no documenta arquitectura interna, longitud de contexto, composición del dataset de entrenamiento ni resultados de benchmarks; toda esa información debe inferirse del modelo base, no del proyecto en sí.
+El modelo se distribuye exclusivamente en formato GGUF, en una única cuantización Q3_K_M, con un archivo denominado `KARTIK_OS_Model.gguf` y un tamaño de repositorio de 16,0 GB. Está pensado para ejecutarse con llama.cpp y otras aplicaciones compatibles con GGUF, y el autor lo posiciona explícitamente como un modelo de clase 32B apto para hardware de consumo, no como un modelo de frontera líder en benchmarks.
 
-Su relevancia es limitada y de nicho: se trata de un experimento de identidad personal ("KARTIK OS") con comportamiento menos restrictivo, orientado a inferencia local y experimentación. No cuenta con descargas ni likes en el momento de la consulta, no declara licencia propia y no ofrece garantías de calidad. Para evaluaciones serias de producción conviene acudir directamente a Qwen3-32B o a sus derivados con documentación técnica completa.
+La relevancia del modelo es limitada y de nicho: se enmarca en la práctica de "abliteración" y fine-tuning ligero sobre modelos abiertos para eliminar restricciones de rechazo y dotar al modelo de una personalidad concreta. No obstante, la información publicada es escasa y no verificable en varios puntos clave (licencia, idiomas, datos de entrenamiento, benchmarks), lo que condiciona su evaluación rigurosa.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible en la model card (derivado de Qwen3-32B, presumiblemente transformer denso; no confirmado) |
-| Parametros totales | 32.762.123.264 (32,8B) |
-| Parametros activos | No aplica (no se declara como MoE) |
+| Arquitectura | Transformer (derivada de Qwen3-32B-Abliterated; detalles de atención y capas no disponibles) |
+| Parámetros totales | 32.762.123.264 (32,7B) |
+| Parámetros activos | No aplica (no es MoE según la información disponible) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q3_K_M (única publicada); otros formatos no disponibles |
-| Idiomas soportados | No disponibles (la model card menciona conversaciones multilingües "sujetas a las capacidades del modelo base") |
-| Licencia | No disponible; la model card remite a la licencia del modelo base (Qwen3-32B-Abliterated) |
-| Formato de pesos | GGUF (archivo `KARTIK_OS_Model.gguf`); no hay safetensors publicados en el repo |
-| Tamano del repositorio | 16,0 GB |
-| Fecha de creacion | 2026-11-24 |
-| Ultima actualizacion | 2026-11-24 |
+| Tipos de cuantización | Q3_K_M (única publicada); GGUF permite otras, pero no se ofrecen en el repo |
+| Idiomas soportados | No disponible (la model card menciona "multilingual chat" sin detallar idiomas) |
+| Licencia | No disponible |
+| Formato de pesos | GGUF (`KARTIK_OS_Model.gguf`); el repo declara safetensors de 32,7B en metadatos, pero el artefacto distribuido es GGUF |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna. El modelo se presenta explícitamente como una customización sobre un modelo preentrenado existente, Qwen3-32B-Abliterated, que a su vez deriva de Qwen3-32B. No se documenta ningún proceso de preentrenamiento, fine-tuning supervisado, RLHF o DPO llevado a cabo por el autor del proyecto; tampoco se indica el número de tokens de entrenamiento, la composición del dataset ni la técnica exacta de "abliteration" aplicada en la cadena de derivación.
+La información disponible no detalla la arquitectura interna más allá de que el modelo subyacente es Qwen3-32B-Abliterated, lo que implica una arquitectura transformer densa de la familia Qwen3 con aproximadamente 32,7B parámetros. No se especifican el número de capas, la dimensión oculta, el tipo de atención ni la ventana de contexto nativa.
 
-No se declaran innovaciones técnicas propias: ni decodificación especulativa, ni atención lineal, ni modos de razonamiento configurables, ni variantes MoE. El único artefacto técnico verificable es la cuantización Q3_K_M del archivo GGUF, que reduce el peso a aproximadamente 3 bits por parámetro para permitir inferencia local en hardware de gama alta de consumo. Cualquier detalle sobre la arquitectura real (número de capas, dimensión oculta, cabezas de atención, contexto nativo) debe consultarse en la documentación de Qwen3-32B, no en este repositorio.
+Tampoco se documentan los datos de entrenamiento: no hay información sobre el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO o fine-tuning supervisado. El término "Abliterated" en el modelo base sugiere una intervención sobre las direcciones de activación asociadas al rechazo, pero el autor no aporta detalles técnicos sobre cómo se aplicó ni sobre el proceso de personalización posterior. No se mencionan innovaciones como decodificación especulativa, atención lineal o arquitecturas híbridas.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, orientada a un asistente con identidad propia ("KARTIK OS").
-- Respuesta a preguntas y explicaciones de carácter general.
-- Escritura creativa y generación de ideas (brainstorming).
-- Asistencia en discusiones técnicas y programación, según declara la model card.
-- Conversaciones multilingües, sujetas a las capacidades del modelo base (no se enumeran idiomas).
-- Comportamiento "uncensored": la model card advierte que el modelo puede producir salidas inseguras o inapropiadas, lo que implica una menor tasa de rechazos.
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Modo thinking, visión o audio: no disponible (no documentado).
+- Generación de texto conversacional multi-turno, según la model card.
+- Asistencia en programación y tareas técnicas (declarado en "intended use").
+- Escritura creativa.
+- Chat multilingüe (mencionado de forma genérica, sin lista de idiomas).
+- Comportamiento "uncensored": el modelo base abliterado reduce los rechazos ante peticiones que otros modelos declinarían.
+- Inferencia local sin API ni conexión a la nube.
+- Compatibilidad con llama.cpp y aplicaciones GGUF (endpoints compatibles según tags).
+
+No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso explícito, visión, audio ni modo "thinking".
 
 ## Casos de uso
 
-- Experimentación local con modelos de 32B: el formato GGUF Q3_K_M permite ejecutar el modelo con llama.cpp en equipos con suficiente RAM/VRAM, sin depender de servicios en la nube. Es adecuado para quienes quieren probar un 32B cuantizado en local.
-- Asistente conversacional personal con identidad definida: el proyecto añade una configuración de identidad propia, útil para prototipos de asistentes con personalidad consistente en entornos de desarrollo.
-- Generación de texto creativo sin filtros estrictos: para escritura de ficción, guiones o brainstorming donde los rechazos del modelo base resultan limitantes, aunque con revisión humana obligatoria.
-- Pruebas de robustez y seguridad: al ser un modelo "abliterated" y "uncensored", sirve como caso de estudio para evaluar comportamientos no alineados y calibrar filtros externos en pipelines propios.
-- Evaluación comparativa de cuantizaciones: útil para medir la degradación de calidad de Q3_K_M frente a cuantizaciones mayores del mismo modelo base en tareas de conversación.
-- Desarrollo de interfaces locales con llama-server: la model card documenta el despliegue con `llama-server` en `127.0.0.1:8080`, lo que permite integrarlo en aplicaciones locales vía API HTTP compatible.
-- Discusiones técnicas y ayuda con código en entornos offline: para desarrolladores que trabajan sin conexión y necesitan un asistente local de propósito general, asumiendo la falta de benchmarks que avalen su calidad.
+- Asistencia conversacional local: el modelo puede mantener diálogos multi-turno en una máquina propia sin coste por token, adecuado para usuarios que priorizan privacidad y control sobre el proveedor.
+- Escritura creativa sin restricciones temáticas: la naturaleza abliterada permite explorar narrativa, guiones o ficción con temáticas que modelos alineados rechazarían, útil para autores que necesitan libertad creativa.
+- Prototipado de chatbots personalizados: al tener una identidad conversacional propia ("KARTIK OS"), sirve como base para experimentar con system prompts y personalidad en despliegues locales.
+- Asistencia técnica y de programación en entornos aislados: puede integrarse en estaciones de trabajo sin conexión para consultas de código, aunque sin garantías de corrección.
+- Experimentación con cuantizaciones GGUF: el archivo Q3_K_M permite probar el equilibrio entre calidad y uso de memoria en hardware de consumo, como banco de pruebas para pipelines de cuantización.
+- Educación e investigación sobre alineación: útil para estudiar el efecto de la abliteración y la personalización sobre el comportamiento de rechazo y la calidad de las respuestas.
+- Despliegue en servidor local compatible con endpoints: los tags indican compatibilidad con endpoints, lo que permite montar un servicio interno de chat sin dependencia externa.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: con 32,8B parámetros en Q3_K_M y un repositorio de 16,0 GB, se necesita al menos ~16 GB solo para los pesos; con contexto y overhead de llama.cpp, lo razonable es disponer de 20-24 GB de memoria total (VRAM + RAM) para ejecución estable.
-- GPU recomendadas: no documentadas por el autor. Por tamaño, encajan GPU de 24 GB (RTX 3090, RTX 4090, A10G) o superiores (A100 40/80 GB, H100) para offload completo; con GPU menores es necesario offload parcial a CPU.
-- ¿Cabe en GPU de consumo? Sí, en RTX 3090/4090 (24 GB) con la cuantización Q3_K_M y contexto moderado; en GPUs de 16 GB o menos requerirá offload parcial a RAM del sistema.
-- Opciones de despliegue: llama.cpp (`llama-cli -m KARTIK_OS_Model.gguf -cnv` y `llama-server`), y otras aplicaciones compatibles con GGUF según su soporte de arquitectura y plantilla de chat. No se documenta compatibilidad con vLLM ni TGI (orientados a safetensors).
-- Latencia y throughput: no disponibles; dependen del hardware, del grado de offload y de la longitud de contexto.
+- VRAM estimada para Q3_K_M: aproximadamente 14-16 GB solo para los pesos (32,7B a ~3,5 bits por peso), más overhead de contexto y KV cache; en la práctica, se recomienda 18-24 GB para contextos moderados.
+- GPU recomendadas: NVIDIA RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB, H100; también viable en GPUs de 16 GB con contexto reducido o descarga parcial a RAM.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con Q3_K_M y contexto moderado; en GPUs de 16 GB (RTX 4080, 4060 Ti 16 GB) requiere ajustes o offload.
+- Opciones de despliegue: llama.cpp (recomendado por el autor), servidores compatibles con GGUF (p. ej. llama.cpp server, Ollama, LM Studio, text-generation-webui); vLLM y TGI no soportan GGUF de forma nativa generalizada.
+- Latencia y throughput: no disponibles; dependerán del hardware y de la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parámetros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| KARTIK OS 32B Uncensored | 32,8B | No disponible | GGUF Q3_K_M | No disponible (remite al base) | Derivado de Qwen3-32B-Abliterated; sin benchmarks ni descargas |
-| Qwen3-32B | 32,8B (clase) | No disponible en esta ficha | Safetensors, GGUF | Licencia Apache 2.0 según el modelo original de Qwen | Modelo base oficial, con documentación técnica y benchmarks publicados por el autor original |
-| Qwen3-32B-Abliterated | 32,8B (clase) | No disponible en esta ficha | No disponible en esta ficha | Sujeta a la del modelo base | Variante con rechazos atenuados; origen de la cadena de derivación de KARTIK OS |
+| Kartik-OSuncensored_32b | 32,7B | No disponible | GGUF Q3_K_M | No disponible | Derivado abliterado de Qwen3-32B, identidad personalizada |
+| Qwen3-32B (original) | 32,7B | No disponible en esta ficha | Safetensors, GGUF | Apache 2.0 (según familia Qwen3) | Modelo base alineado, con benchmarks publicados por Alibaba |
+| Qwen3-32B-Abliterated | 32,7B | No disponible | Safetensors/GGUF | No disponible | Variante abliterada del anterior, sin personalización adicional |
+| Modelos 32B abliterados de la comunidad (varios) | ~32B | Variable | GGUF | Variable | Ecosistema amplio de variantes sin alineación; calidad y soporte dispares |
 
-La comparación cuantitativa de rendimiento no es posible: el repositorio de KARTIK OS no publica métricas, y esta ficha no dispone de datos verificados de los modelos alternativos más allá de su existencia y su relación de derivación.
+La comparación se limita a la familia de origen porque no se dispone de datos de rendimiento del modelo evaluado. Frente al Qwen3-32B original, la diferencia principal es la eliminación de rechazos y la capa de personalidad, a costa de perder la trazabilidad de la licencia y los benchmarks oficiales.
 
 ## Limitaciones y advertencias
 
-- Sin benchmarks ni evaluación publicada: no hay evidencia objetiva de calidad, razonamiento o código; no debe asumirse un rendimiento equivalente al de Qwen3-32B.
-- Riesgo de alucinación: la propia model card advierte que las respuestas pueden ser inexactas, incompletas o engañosas.
-- Comportamiento "uncensored": puede generar contenido inseguro, ofensivo o inapropiado; requiere filtrado y supervisión externos en cualquier uso con usuarios finales.
-- Sesgos: no documentados; al heredar el modelo base y aplicar abliteration, los sesgos del original pueden persistir o verse alterados sin evaluación.
-- Contexto e idiomas: no se especifica la longitud de contexto soportada ni la lista de idiomas; el multilingüismo queda supeditado al modelo base.
-- Licencia ambigua: el repositorio no declara licencia propia y remite a la del modelo base; antes de uso comercial, redistribución o modificación hay que revisar los términos de Qwen3-32B-Abliterated y de Qwen3-32B. No debe asumirse que la licencia del repo prevalece sobre la original.
-- Formato único: solo se ofrece GGUF Q3_K_M, con la degradación de calidad asociada a 3 bits; no hay safetensors ni cuantizaciones mayores para comparar.
-- Madurez del proyecto: 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el mismo día; sin señales de mantenimiento ni comunidad.
-- No apto como fuente única en decisiones médicas, legales o financieras, tal como advierte el autor.
+- Licencia no especificada: no se puede confirmar si el uso comercial está permitido; la licencia del modelo base (Qwen3) podría imponer condiciones que el autor no refleja.
+- Modelo "uncensored": la reducción de rechazos implica mayor riesgo de generar contenido dañino, ilegal o sesgado; requiere filtros y supervisión en producción.
+- Riesgo elevado de alucinación: no hay benchmarks ni evaluación de fidelidad; el autor advierte explícitamente que no es "una fuente de respuestas garantizadas como correctas".
+- Contexto e idiomas no documentados: imposible planificar despliegues que dependan de ventanas largas o de idiomas concretos.
+- Única cuantización Q3_K_M: la calidad puede degradarse frente a Q4/Q5; no se ofrecen alternativas de mayor precisión en el repo.
+- Procedencia y reproducibilidad limitadas: no se detallan datos de entrenamiento ni el proceso de abliteración; difícil auditar sesgos o comportamientos.
+- Sin certificación de seguridad: el propio autor lo declara; no apto para usos regulados sin evaluación adicional.
+- Bajo soporte comunitario: 218 descargas y 2 likes en el momento de la consulta, lo que reduce la validación externa.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/KKartikos/Kartik-OSuncensored_32b
-- llama.cpp (motor de inferencia recomendado): https://github.com/ggml-org/llama.cpp
-- Modelo base citado (Qwen3-32B-Abliterated): no se proporciona enlace en la información disponible
-- Modelo original de la cadena (Qwen3-32B): no se proporciona enlace en la información disponible
-- Papers, blogs o demos adicionales: no disponibles
+- Hugging Face: https://huggingface.co/KKartikos/Kartik-OSuncensored_32b
+- Modelo base citado (Qwen3-32B-Abliterated): no disponible enlace directo en la información proporcionada
+- Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
+- Familia Qwen3 (Alibaba): https://huggingface.co/Qwen
+- Documentación de GGUF: https://github.com/ggml-org/ggml/blob/master/docs/gguf.md

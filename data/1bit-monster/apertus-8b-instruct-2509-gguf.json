@@ -5,7 +5,7 @@
   "author": "1bit-MONSTER",
   "url": "https://huggingface.co/1bit-MONSTER/Apertus-8B-Instruct-2509-GGUF",
   "created_at": "2026-09-26T15:45:24.000Z",
-  "updated_at": "2026-09-26T15:46:06.000Z",
+  "updated_at": "2026-11-27T23:31:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 8053338176,
   "parameters_human": "8.05B",

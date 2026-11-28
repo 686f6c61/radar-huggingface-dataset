@@ -2,111 +2,128 @@
 
 ## Resumen
 
-`mujoco-kbf-4ball-rl` es un proyecto de investigación en aprendizaje por refuerzo aplicado al billar coreano de 4 bolas (modalidad carom, reglas KBF), desarrollado por el autor independiente casareborgia. No se trata de un modelo de lenguaje, sino de un conjunto de políticas entrenadas para seleccionar tiros en un simulador de billar, comparando tres aproximaciones sobre el mismo entorno: una política SAC (Soft Actor-Critic) que emite un tiro directamente, una red "mapa de puntuación" que evalúa 1.256 tiros candidatos sin simulador, y un buscador por simulación que prueba unos 200 tiros en el motor físico antes de elegir.
+`casareborgia/mujoco-kbf-4ball-rl` es un proyecto de investigación en aprendizaje por refuerzo aplicado al billar coreano de cuatro bolas (4구 당구, reglas KBF), desarrollado por el usuario independiente casareborgia. No es un modelo de lenguaje: es un artefacto de reinforcement learning que contiene políticas SAC entrenadas con Stable-Baselines3 sobre PyTorch, junto con redes de "mapa de puntuación" (score-map) y un planificador de búsqueda por simulación. El repositorio incluye tanto los pesos entrenados como el simulador y los resultados comparativos de tres estrategias de selección de tiro sobre un mismo conjunto de 811 partidas.
 
-El proyecto incluye simuladores sobre dos motores físicos (MuJoCo y pooltool) y se distribuye con la librería Stable-Baselines3 sobre PyTorch. El repositorio ocupa 0,1 GB y acumula 424 descargas. La relevancia actual reside en que documenta con mediciones reproducibles (811 partidas de inicio aleatorio, benchmarks de 100 partidas con ruido de ejecución) cómo distintas arquitecturas de decisión escalan en una tarea de planificación física con incertidumbre, incluyendo comparativas de eficiencia entre búsqueda pura y redes neuronales.
+El problema que aborda es la selección de tiro en billar a tres bandas: dado un estado de mesa, decidir qué golpe ejecutar para maximizar la probabilidad de anotar. El autor compara tres aproximaciones bajo condiciones idénticas: una política SAC que emite un tiro directamente, una red que puntúa 1.256 tiros candidatos sin simulador, y una búsqueda por simulación que prueba unos 200 tiros por jugada. Los resultados publicados muestran que la búsqueda por simulación gana el 100% de las partidas, la red de mapa de puntuación ronda el 99,9-100% y la política SAC alcanza el 89-93% tras un millón de pasos de entrenamiento.
 
-La información disponible proviene íntegramente de la model card del autor; no se han publicado detalles sobre la arquitectura interna de las redes más allá de su función, ni sobre la composición exacta de los datos de entrenamiento.
+La relevancia actual del artefacto es metodológica más que de producto: ofrece una comparación controlada entre policy learning puro, scoring supervisado y planning basado en modelo, con métricas de tasa de acierto por tiro, innings por partida y robustez frente a error de ejecución (ángulo ±0,2°, potencia ±5%). El repositorio pesa 0,1 GB y se distribuye bajo licencia MIT.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Política SAC (Stable-Baselines3) y red de mapa de puntuación sobre candidatos; simuladores MuJoCo y pooltool |
+| Arquitectura | Política SAC (Soft Actor-Critic) sobre PyTorch; red de mapa de puntuación para 1.256 tiros candidatos; planificador de búsqueda por simulación sobre pooltool |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (no es un modelo de lenguaje) |
+| Longitud de contexto | no aplica (no es un modelo de lenguaje; el estado es la configuración de la mesa) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | coreano (ko) en documentación; el modelo no procesa lenguaje |
+| Idiomas soportados | ko (coreano, según metadatos del repositorio) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (repositorio con pesos PyTorch, sin detallar) |
+| Formato de pesos | checkpoints de Stable-Baselines3 (`.pt` / PyTorch); se citan `scoremap_noise_1m_ft.pt` y `scoremap_spin_1.4m.pt` |
+| Libreria | stable-baselines3 |
+| Entorno de simulacion | MuJoCo y pooltool |
+| Tamano del repositorio | 0,1 GB |
+| Dominio | Billar coreano de 4 bolas (KBF), 5 puntos a 10 innings y variante 1:1 a 10 puntos |
 
 ## Arquitectura y entrenamiento
 
-El sistema se compone de tres estrategias de selección de tiro evaluadas sobre el mismo simulador de billar de 4 bolas con reglas KBF. La primera es una política SAC que recibe el estado de la mesa y emite un tiro único; se entrenó durante 1 millón de pasos sobre el motor pooltool (semillas 42 y 43). La segunda es una red de "mapa de puntuación" que puntúa 1.256 tiros candidatos y selecciona el centro del intervalo de mayor probabilidad de anotar; se entrenó con 4 millones de tiros, incluyendo fases de repetición de posiciones vistas en partida. La tercera no entrena: realiza búsqueda por simulación, probando unos 200 tiros en el motor físico antes de ejecutar.
+El proyecto contiene tres componentes diferenciados. El primero es una política SAC entrenada con Stable-Baselines3 sobre el simulador pooltool durante un millón de pasos (semillas 42 y 43), que emite un tiro de forma directa sin consultar el simulador en tiempo de inferencia. El segundo es una red de mapa de puntuación que evalúa 1.256 tiros candidatos y selecciona el centro del intervalo de mayor probabilidad de anotación; se entrenó con 400.000 tiros aleatorios más repetición de colocaciones vistas en partida hasta alcanzar 4 millones de muestras, en dos ejecuciones independientes. El tercero es un planificador de búsqueda por simulación sin aprendizaje, que prueba aproximadamente 200 tiros por jugada en el simulador y elige el mejor.
 
-El proyecto incorpora además variantes avanzadas: un ajuste fino frente a error de ejecución (`scoremap_noise_1m_ft.pt`), un modelo con cinco tipos de efecto y dos etapas de inferencia gruesa-fina (`scoremap_spin_1.4m.pt`), y un híbrido Top-8 que valida con el simulador solo los 8 mejores candidatos de la red. La comparación entre entrenamiento en MuJoCo (lento, decenas de miles de tiros) y pooltool (1 millón de pasos) muestra que la conclusión inicial de que "SAC se estanca por diseño" era incorrecta: con suficiente entrenamiento, SAC alcanza entre el 89 % y el 93 % de victorias.
+El entrenamiento se realizó sobre dos motores físicos: MuJoCo (versión inicial, más lenta, con solo decenas de miles de tiros) y pooltool (versión posterior, con un millón de pasos para SAC y hasta 4 millones de muestras para la red de mapa de puntuación). El autor documenta una corrección explícita de conclusiones: la versión del 16 de noviembre de 2026 afirmaba que SAC se estancaba por su estructura de salida única, pero tras entrenar sobre pooltool con un millón de pasos esa conclusión se rectificó, ya que SAC alcanza el 89-93% de victorias. Se añadieron además variantes con ajuste fino frente a error de ejecución (`scoremap_noise_1m_ft.pt`), cinco tipos de efecto (spin) y una inferencia en dos etapas Coarse→Fine (`scoremap_spin_1.4m.pt`), junto con un híbrido Top-8 que valida con el simulador solo los 8 mejores candidatos de la red.
 
 ## Capacidades
 
-- Selección de tiros en billar de 4 bolas (carom, reglas KBF) sobre estado de mesa simulado.
-- Planificación con búsqueda en simulador (unos 200 tiros por decisión) y variante robusta frente a ruido de ejecución.
-- Predicción de probabilidad de anotación sobre 1.256 candidatos sin usar simulador en tiempo de inferencia.
-- Modelado de error de ejecución (ángulo ±0,2°, potencia ±5 %) y ajuste fino específico para ese ruido.
-- Soporte de cinco tipos de efecto (spin) y razonamiento en dos etapas gruesa-fina.
-- Híbrido Top-8: verificación selectiva de candidatos con el simulador (media de 1,1 simulaciones por tiro).
-- No soporta tool calling, agentes de propósito general, visión, audio ni procesamiento de lenguaje natural.
+- Selección de tiro en billar coreano de 4 bolas bajo reglas KBF (partidas a 5 puntos con máximo 10 innings, y variante 1:1 a 10 puntos con bola trasera).
+- Política SAC que emite un tiro directamente sin acceso al simulador en inferencia (apta para despliegue de baja latencia).
+- Red de mapa de puntuación que clasifica 1.256 tiros candidatos y elige el de mayor probabilidad estimada de anotación.
+- Planificación por búsqueda: evaluación de aproximadamente 200 tiros por jugada mediante simulación física en pooltool.
+- Híbrido Top-8: la red propone candidatos y el simulador valida solo los 8 mejores, reduciendo el coste de simulación a una media de 1,1 simulaciones por tiro en el ejemplo publicado.
+- Robustez frente a error de ejecución: variantes entrenadas con ruido de ángulo ±0,2° y potencia ±5%.
+- Modelado de efecto (spin) con cinco tipos de punto de golpeo y estrategia de inferencia en dos etapas Coarse→Fine.
+- No soporta tool calling, function calling, agentes de propósito general, visión, audio ni generación de texto: es un artefacto de RL específico de dominio.
 
 ## Casos de uso
 
-- Investigación en aprendizaje por refuerzo aplicado a planificación física: el repositorio sirve como banco de pruebas reproducible para comparar políticas directas (SAC) frente a métodos de puntuación de candidatos y búsqueda, con métricas de victorias y tasa de anotación por tiro.
-- Desarrollo de asistentes de entrenamiento para billar: la red de mapa de puntuación puede sugerir tiros con alta probabilidad de anotar sin coste de simulación, útil en aplicaciones interactivas donde la latencia importa.
-- Estudio de robustez frente a ruido de ejecución: los modelos ajustados con ruido permiten analizar cómo degrada el rendimiento un robot o jugador humano con error de ángulo y potencia controlado.
-- Benchmarking de motores físicos: la comparación MuJoCo frente a pooltool documenta diferencias de velocidad de entrenamiento y fidelidad, relevante para quien elija simulador para RL.
-- Planificación con presupuesto computacional limitado: el híbrido Top-8 reduce de 2.017 a 11 simulaciones por partida manteniendo resultados competitivos, patrón trasladable a otros dominios de planificación.
-- Docencia y divulgación: los vídeos de partidas y el Space interactivo permiten mostrar de forma visual las diferencias entre búsqueda exhaustiva, redes y políticas RL.
+- Evaluación comparativa de paradigmas de decisión: el repositorio sirve como banco de pruebas reproducible para contrastar policy learning (SAC), scoring supervisado (mapa de puntuación) y planning basado en modelo (búsqueda) bajo las mismas 811 partidas y semillas controladas.
+- Entrenamiento de agentes de billar en simulación: la política SAC y el entorno pooltool permiten experimentar con curriculum, recompensas y aumentación de datos sin necesidad de una mesa física.
+- Asistencia a jugadores mediante análisis de tiros: la red de mapa de puntuación puede integrarse en una herramienta que, dado un estado de mesa, devuelva los tiros con mayor probabilidad estimada de anotación y el intervalo de tolerancia.
+- Investigación en robustez de políticas: las variantes con ruido de ejecución (`scoremap_noise_1m_ft.pt`) permiten estudiar cómo degrada el rendimiento un error de ángulo y potencia realista, útil para transferencia sim-a-real.
+- Docencia en reinforcement learning: el proyecto ilustra de forma autocontenida el ciclo completo de entrenamiento SAC, evaluación con semillas fijas y comparación contra baselines no aprendidos.
+- Prototipado de sistemas híbridos aprendizaje-búsqueda: el esquema Top-8 demuestra cómo reducir el coste computacional de un planificador (de 2.017 a 11 simulaciones en el ejemplo publicado) manteniendo la tasa de acierto.
+- Análisis de planificación a largo plazo en deportes de turnos: las tablas de victoria por límite de innings (1, 2, 3, 5, 10) permiten estudiar cómo cambia la estrategia óptima según el horizonte disponible.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre pooltool, partidas a 5 puntos y máximo 10 entradas, 811 partidas de inicio aleatorio:
+Resultados publicados por el autor sobre pooltool, partidas a 5 puntos con máximo 10 innings, 811 posiciones iniciales aleatorias:
 
-| Jugador | Tiros de entrenamiento | Victorias (811) | Tasa de anotación en partida | Tiros por partida |
-|---|---|---|---|---|
-| SAC v4 (MuJoCo, versión anterior) | decenas de miles | 9 | 13,3 % | no disponible |
-| SAC pooltool, semilla 42 | 1 millón | 722 (89,0 %) | 55,8 % | 9,96 |
-| SAC pooltool, semilla 43 | 1 millón | 755 (93,1 %) | 59,5 % | 9,46 |
-| Red mapa de puntuación, 4M (ronda 1) | 4 millones | 811 (100 %) | 84,7 % | 6,21 |
-| Red mapa de puntuación, 4M (ronda 2) | 4 millones | 810 (99,9 %) | 85,0 % | 6,20 |
-| Búsqueda por simulación | ninguno | 811 (100 %) | 100 % | 5,00 |
+| Jugador | Tiros de entrenamiento | Tasa de acierto por tiro (nivel 0 / 1 / 2) | Victorias en 811 partidas | Acierto durante partida | Tiros por partida |
+|---|---|---|---|---|---|
+| SAC v4 (versión previa, MuJoCo) | decenas de miles | 32,5% / 15,5% / 9,5% | 9 | 13,3% | no disponible |
+| SAC pooltool, semilla 42 | 1.000.000 | 97,0% / 75,0% / 63,0% | 722 (89,0%) | 55,8% | 9,96 |
+| SAC pooltool, semilla 43 | 1.000.000 | 93,5% / 76,0% / 65,5% | 755 (93,1%) | 59,5% | 9,46 |
+| Mapa de puntuación, 4M (ejecución 1) | 4.000.000 | 95,5% / 87,5% / 93,0% | 811 (100%) | 84,7% | 6,21 |
+| Mapa de puntuación, 4M (ejecución 2) | 4.000.000 | 95,5% / 82,0% / 91,5% | 810 (99,9%) | 85,0% | 6,20 |
+| Búsqueda por simulación | 0 (sin aprendizaje) | 100% (75 tiros por nivel) | 811 (100%) | 100% | 5,00 |
 
-Victorias según límite de entradas (mismas 811 partidas):
+Victorias según el límite de innings (mismas 811 posiciones):
 
-| Máx. entradas | Búsqueda | Red (r1 / r2) | SAC (42 / 43) |
+| Máximo de innings | Búsqueda | Mapa de puntuación (1 / 2) | SAC pooltool (42 / 43) |
 |---|---|---|---|
-| 1 | 100 % | 45,0 % / 43,5 % | 7,9 % / 9,6 % |
-| 2 | 100 % | 75,6 % / 77,2 % | 18,6 % / 22,7 % |
-| 3 | 100 % | 90,9 % / 91,5 % | 31,7 % / 40,2 % |
-| 5 | 100 % | 98,5 % / 98,9 % | 58,0 % / 65,1 % |
-| 10 | 100 % | 100 % / 99,9 % | 89,0 % / 93,1 % |
+| 1 | 100% | 45,0% / 43,5% | 7,9% / 9,6% |
+| 2 | 100% | 75,6% / 77,2% | 18,6% / 22,7% |
+| 3 | 100% | 90,9% / 91,5% | 31,7% / 40,2% |
+| 5 | 100% | 98,5% / 98,9% | 58,0% / 65,1% |
+| 10 | 100% | 100% / 99,9% | 89,0% / 93,1% |
 
-Comparación con el mismo presupuesto de 1 millón de tiros: SAC obtiene 722/755 victorias (55,8 %/59,5 % de anotación), la red con 400.000 tiros aleatorios más repetición alcanza 703 victorias (54,5 %), y la red solo con tiros aleatorios cae a 544/531 (43,7 %/43,2 %). En el duelo 1:1 a 10 puntos con error de ejecución, el modelo final anotó 10 seguidos frente a 2 de la búsqueda (semilla 80016).
+Comparación con el mismo presupuesto de un millón de tiros:
+
+| Jugador | Tiros | Victorias en 811 | Acierto durante partida |
+|---|---|---|---|
+| SAC pooltool (42 / 43) | 1.000.000 | 722 / 755 | 55,8% / 59,5% |
+| Mapa de puntuación (40.000 aleatorios + 3 repeticiones) | 1.000.000 | 703 | 54,5% |
+| Mapa de puntuación (solo tiros aleatorios, semillas 0 / 1) | 1.000.000 | 544 / 531 | 43,7% / 43,2% |
+| Mapa de puntuación (1M aleatorios + 5 repeticiones, semillas 0 / 1) | 2.000.000 | 804 / 798 | 68,1% / 67,5% |
+| Mapa de puntuación (+ 10 repeticiones de colocaciones en partida) | 4.000.000 | 811 / 810 | 84,7% / 85,0% |
+
+En la variante de duelo 1:1 a 10 puntos con error de ejecución (ángulo ±0,2°, potencia ±5%), el autor reporta que el modelo final ganó 10:2 a la búsqueda por simulación en la semilla 80016, y que el híbrido Top-8 logró 10 anotaciones consecutivas con 11 simulaciones totales frente a 2.017 del planificador puro. Las tablas completas de 100 partidas y 30 partidas con error de ejecución quedan truncadas en la información disponible.
 
 ## Requisitos de hardware
 
-- No se especifican requisitos de VRAM ni GPU en la información disponible; las redes son de tamaño reducido (repositorio de 0,1 GB) y probablemente ejecutables en CPU.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no confirmada explícitamente, pero el tamaño del repositorio sugiere que sí cabe en GPUs de consumo; sin datos oficiales.
-- Despliegue: inferencia vía PyTorch y Stable-Baselines3; los simuladores requieren MuJoCo y pooltool respectivamente.
-- Latencia y throughput: no disponibles. La búsqueda por simulación implica unas 200 ejecuciones del motor físico por tiro (2.017 por partida en el duelo), mientras que el híbrido Top-8 requiere una media de 1,1 simulaciones por tiro.
+- VRAM estimada para inferencia: no disponible; el repositorio completo pesa 0,1 GB, por lo que los checkpoints de política y mapa de puntuación son ligeros y caben holgadamente en cualquier GPU consumer.
+- GPU recomendadas: no se especifican en la documentación. Dado el tamaño del artefacto, una RTX 3060 o superior es suficiente para inferencia; el entrenamiento SAC a un millón de pasos se beneficia de GPU dedicada, pero el cuello de botella real es el simulador físico, no la red.
+- Cabe en GPU consumer: sí, por el tamaño del repositorio y la naturaleza de las redes (políticas y scoring sobre estados de mesa, no modelos de lenguaje).
+- Opciones de despliegue: Stable-Baselines3 con PyTorch para cargar los checkpoints; pooltool como motor físico para la búsqueda por simulación; MuJoCo para la variante original. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de artefacto.
+- Latencia y throughput: no disponibles de forma agregada. El autor indica que la búsqueda por simulación ejecuta unas 200 simulaciones por tiro y que el híbrido Top-8 reduce el coste a una media de 1,1 simulaciones por tiro en el ejemplo publicado, lo que da una idea del orden de magnitud de la ventaja del enfoque aprendido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Enfoque | Entrenamiento | Victorias (811) | Licencia |
-|---|---|---|---|---|
-| SAC (este repo) | Política RL directa | 1M pasos pooltool | 89,0–93,1 % | MIT |
-| Red mapa de puntuación (este repo) | Puntuación de 1.256 candidatos | 4M tiros | 99,9–100 % | MIT |
-| Búsqueda por simulación (este repo) | Planificación sin aprendizaje | ninguno | 100 % | MIT |
-| Alternativas externas de RL para billar | no disponible | no disponible | no disponible | no disponible |
+No se han publicado comparaciones con otros proyectos de RL aplicados al billar en la información disponible. La comparación interna del propio repositorio entre sus tres enfoques (SAC, mapa de puntuación y búsqueda por simulación) se detalla en la sección de benchmarks.
 
-No se dispone de información sobre modelos comparables de otros autores en la documentación proporcionada.
+| Enfoque | Aprendizaje | Simulador en inferencia | Victorias (811 partidas, 10 innings) | Licencia |
+|---|---|---|---|---|
+| SAC pooltool | 1M pasos | No | 89,0-93,1% | MIT |
+| Mapa de puntuación | 4M muestras | No | 99,9-100% | MIT |
+| Búsqueda por simulación | Ninguno | Sí (~200 tiros/jugada) | 100% | MIT |
+| Híbrido Top-8 | Mapa de puntuación + validación | Sí (hasta 8 candidatos) | no disponible de forma agregada | MIT |
 
 ## Limitaciones y advertencias
 
-- El 100 % de victorias de la búsqueda por simulación se logra en condiciones favorables: el mismo motor físico que luego ejecuta el tiro y sin error de ejecución; con ruido la ventaja se reduce (derrota 2:10 frente al modelo final en una partida concreta).
-- El proyecto está documentado en coreano; no hay versión en castellano ni en inglés completa de toda la documentación.
-- No es un modelo de lenguaje ni de propósito general: solo resuelve selección de tiros en billar de 4 bolas con reglas KBF.
-- Los resultados dependen del simulador (pooltool/MuJoCo) y de las reglas configuradas (5 puntos, 10 entradas, niveles 0-2); no hay garantía de transferencia a mesa real.
-- La model card indica que algunas conclusiones de versiones anteriores fueron corregidas; conviene revisar la versión y el commit consultados.
-- Licencia MIT permite uso comercial, pero no se documentan sesgos ni riesgos de alucinación (no aplica al no ser generativo de lenguaje).
-- No se detallan los pesos concretos publicados ni su formato exacto, lo que dificulta la reproducibilidad sin explorar el repositorio.
+- No es un modelo de lenguaje ni un modelo multimodal: no genera texto, no razona en lenguaje natural y no admite prompts. Cualquier uso fuera del dominio del billar coreano de 4 bolas requiere reentrenamiento.
+- El resultado del 100% de la búsqueda por simulación está favorecido por las condiciones experimentales: el planificador simula con el mismo motor físico y el tiro elegido se ejecuta sin error. El propio autor lo señala explícitamente.
+- La política SAC solo se entrenó hasta un millón de pasos; el autor no exploró regímenes mayores, por lo que la comparación con la red de mapa de puntuación a 4 millones de muestras no está igualada en presupuesto.
+- El sesgo de selección de semillas y de posiciones iniciales no se documenta en detalle; los resultados provienen de un conjunto fijo de 811 posiciones aleatorias y semillas concretas (42, 43, 80000+), lo que limita la generalización estadística.
+- El soporte de idioma declarado es únicamente coreano (ko); la documentación y los vídeos están en coreano, con un resumen en inglés.
+- Riesgo de sobreajuste al simulador: el rendimiento en mesa física no está validado en la información disponible, y las variantes con ruido de ejecución solo modelan error de ángulo y potencia, no otras fuentes de incertidumbre (desgaste del paño, humedad, defectos de bola).
+- La licencia MIT permite uso comercial, pero el artefacto depende de pooltool y MuJoCo; conviene verificar las licencias de esos motores físicos antes de un despliegue comercial.
+- El repositorio incluye vídeos y resultados de benchmarks que el autor ha corregido entre versiones (16, 20 y 23 de noviembre de 2026); las conclusiones de la versión inicial sobre los límites de SAC ya no son válidas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl
-- Space interactivo: https://huggingface.co/spaces/casareborgia/kbf-4ball-duel
-- Versión anterior (commit): https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/tree/6f183f4d47f2a742278e0011879b83befc3dfac5
-- Vídeo primera entrada (pooltool): https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/first_inning_pooltool.mp4
-- Vídeo fallo de la red: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/first_inning_pooltool_seed80004.mp4
-- Vídeo duelo híbrido Top-8 vs búsqueda: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/duel_hybrid8_vs_search.mp4
-- Vídeo duelo red sola: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/duel_1inning_10pt.mp4
-- Vídeo victoria con ruido de ejecución: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/duel_noise_exp_win.mp4
+- Modelo en Hugging Face: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl
+- Space interactivo con partidas y benchmarks: https://huggingface.co/spaces/casareborgia/kbf-4ball-duel
+- Versión previa de la model card (commit 6f183f4): https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/tree/6f183f4d47f2a742278e0011879b83befc3dfac5
+- Vídeo primera entrada con pooltool: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/first_inning_pooltool.mp4
+- Vídeo de fallo de la red en primera entrada: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/first_inning_pooltool_seed80004.mp4
+- Vídeo duelo híbrido Top-8 contra búsqueda: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/duel_hybrid8_vs_search.mp4
+- Vídeo duelo con error de ejecución: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/duel_noise_exp_win.mp4
+- Vídeo duelo red sola a 10 puntos: https://huggingface.co/casareborgia/mujoco-kbf-4ball-rl/resolve/main/media/duel_1inning_10pt.mp4

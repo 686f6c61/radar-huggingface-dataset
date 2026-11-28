@@ -2,113 +2,116 @@
 
 ## Resumen
 
-Inkling-2-Mini-WV-SM120-Staging es una cuantizacion extrema del modelo base `thinkingmachines/Inkling-2-Mini` (licencia Apache-2.0), publicada por el usuario Grawnch. No se trata de un modelo nuevo, sino de un checkpoint comprimido a 2,4658 bits por peso (bpw) que reduce el peso de los pesos de ~20,16 GB a 8,83 GiB, pensado para ejecutarse en GPUs consumer Blackwell de gama media como la RTX 5060 Ti. El repositorio incluye ademas un motor de inferencia nativo en C++/CUDA compilado solo para SASS (`sm_120` y `sm_120a`, sin PTX) distribuido como wheel de Python 3.13 para Windows.
+Inkling-2-Mini-WV-SM120-Staging es un checkpoint cuantizado y empaquetado para inferencia nativa en GPUs Blackwell (arquitectura `sm_120`/`sm_120a`) del modelo multimodal `thinkingmachines/Inkling-2-Mini`, publicado por el usuario Grawnch bajo licencia Apache-2.0. No es un modelo entrenado desde cero, sino una distribución de pesos cuantizados (formato `modelopt`) acompañada de un runtime propio (`qfn_inkling2_sm120==1.3.0`) que implementa un motor CUDA específico para Blackwell, decodificación especulativa con cabezas MTP y un servidor local compatible con las APIs de OpenAI y Anthropic.
 
-El modelo base es un transformer con mezcla de expertos (MoE) y nucleo recurrentes por bucle: 24 capas fisicas que se desenrollan en 48 pasadas de ejecucion mediante un nucleo de 3 pasadas (`L06..L17`). La cuantizacion combina VQ-4096 de 4 dimensiones para expertos calientes, VQ8 de 4 cosenos para expertos frios, GPTQ con Cholesky y RMT para atencion densa y `lm_head`, y un cabezal de decodificacion especulativa `MTP-8` (drafter DSpark de 3 capas con `MarkovHead`).
+El modelo base es un transformer de tipo mixture-of-experts (MoE) con capacidad de visión (pipeline `image-text-to-text`), pensado para ejecución local en tarjetas de consumo. El repo ocupa 19,2 GB e incluye shards de pesos de 10,12 GB, una torre de visión en BF16 (`vision_bf16.safetensors`, 636,5 MB) y wheels precompilados SASS-only para Python 3.13 en Windows y Linux. La propuesta es permitir ejecución íntegra en VRAM en tarjetas de 16 GB con contexto de 32K a 128K, o bien con streaming CPU-GPU en un presupuesto de 8 GB.
 
-Su relevancia actual reside en que demuestra que un MoE de esta escala puede ejecutarse en una GPU de 8 GB o 16 GB con velocidades de 57-77 tok/s en decodificacion greedy especulativa, manteniendo paridad de tokens bit a bit con la decodificacion estandar. Es un artefacto de investigacion en fase de staging (0 descargas, 0 likes), orientado a pruebas de rendimiento en hardware Blackwell bajo Windows 11.
+Su relevancia actual radica en que demuestra una vía práctica de servir un MoE multimodal con contexto de hasta 1M tokens (configurado en `config.json` con `model_max_length: 1,048,576` y escalado logarítmico de atención) sobre hardware Blackwell, con paridad bit a bit entre los modos de 16 GB y 8 GB y decodificación especulativa integrada. La información pública disponible sobre el modelo base (número de parámetros, datos de entrenamiento, benchmarks estándar) es escasa en la model card; los datos que se ofrecen son de rendimiento del runtime, no de calidad frente a benchmarks académicos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con nucleo recurrente de 3 pasadas (24 capas fisicas desenrolladas a 48 pasadas de ejecucion) |
-| Parametros totales | no disponible (repo de 9,5 GB; pesos cuantizados de 8,83 GiB) |
-| Parametros activos | no disponible (600 expertos calientes + 2.472 expertos frios enrutados) |
-| Longitud de contexto | 32K verificado en benchmarks (perfil de 16 GB); 8K en perfil de 8 GB |
-| Tipos de cuantizacion | 2,4658 bpw global: VQ-4096 4D (3,3125 bpw) expertos calientes, VQ8 4-cosenos (2,250 bpw) expertos frios, `SWZ8_G32` GPTQ para atencion densa y `lm_head`, `WV6_4B38` (4,375 bpw) para embeddings |
+| Arquitectura | Transformer MoE multimodal (image-text-to-text), con cabezas MTP para decodificación especulativa; runtime CUDA nativo para `sm_120`/`sm_120a` |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible (el modelo base es MoE, pero no se publica el recuento) |
+| Longitud de contexto | hasta 1.048.576 tokens (`config.json` `model_max_length`); modos prácticos de 32K–128K en 16 GB |
+| Tipos de cuantizacion | Cuantización `modelopt` propietaria del checkpoint; KV cache en `bf16` o `q8_global`; visión en BF16 nativo |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (checkpoint cuantizado) + wheel nativo `qfn_inkling2_sm120` (cp313/cp312 win_amd64) |
+| Formato de pesos | safetensors (shards `embed_head_global`, `layers_00_05` … `layers_18_23`, `mtp_wv63`, `vision_bf16`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `Inkling-2-Mini` emplea una arquitectura MoE con un nucleo recurrente: 24 capas fisicas que se ejecutan en 48 pasadas mediante un bucle de 3 pasadas sobre las capas `L06..L17`. El checkpoint original usa cuantizacion `ModelOpt` NVFP4 en las capas `L00..L19` y MXFP8 en `L20..L23`, mas un fichero `mtp.safetensors` separado. La cuantizacion WV-v6.3 reduce aun mas el peso mediante un esquema diferenciado por tipo de capa: los expertos calientes (600 en total, con 32 en `L00..05`, 26 en `L06..17` y 20 en `L18..23`) usan VQ-4096 de 4 dimensiones bajo transformada FWHT-128 con LUT de 16 KB en memoria compartida; los expertos frios (2.472) usan VQ8 de 4 cosenos con `sb=6` y slabs DMA alineados a 256 B de 2.239.488 B.
+El modelo base `thinkingmachines/Inkling-2-Mini` es un transformer de mezcla de expertos (MoE) con codificador de visión, orientado a tareas `image + text -> text`. La model card no detalla el número de parámetros totales ni activos, la composición del dataset de entrenamiento, el número de tokens vistos ni si hubo etapas de RLHF o DPO. Tampoco se documenta la innovación arquitectónica interna del modelo base más allá de su naturaleza MoE y multimodal.
 
-La calibracion del nucleo recurrente se realizo con Hessianos encogidos por RMT agrupados en 3 pasadas, propagacion cerrada de estudiante en 3 pasadas y la activacion exacta `Inkling2SoftcappedSwiGLU` (`mlp_gate_softcap=4.0`, `mlp_up_softcap=25.0`). La atencion densa GQA (`wq, wk, wv, w_gate_attn, wo`) se cuantizo con GPTQ Cholesky RMT de bucle cerrado en `SWZ8_G32`, y el `lm_head` (`[200064, 2304]`) con Ridge de bucle cerrado sobre 24 documentos y KL de logits con softcap 30.0. El cabezal especulativo `MTP-8` es un drafter DSpark de 3 capas con `block_size=8` y `target_layer_ids=[5, 23, 41, 48]`, complementado con un `MarkovHead` RNN.
+Lo que sí está documentado es el trabajo de empaquetado e inferencia: el checkpoint se distribuye cuantizado con `modelopt` y se acompaña de un runtime que implementa decodificación especulativa mediante cabezas MTP (multi-token prediction), con factores de aceptación (`tau`) medidos de hasta 3,803 en modo `bf16` y 3,683 en `q8_global` a 1M de contexto. El runtime soporta atención con escalado logarítmico (`n_floor=8192, alpha=0.1`) para extender el contexto hasta 1.048.576 tokens, y ofrece dos modos de ejecución: `all_vram` (todo en GPU, 16 GB) y `8gb_tiered` (streaming por capas CPU-GPU con tope de 6,80 GiB). La torre de visión se mantiene en BF16 y puede residir en GPU o streamearse por capas con menos de 60 MiB de huella, con paridad de 0 ULP entre ambos modos.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva con decodificacion greedy determinista (paridad bit a bit verificada entre `M=1` y `MTP-8` en 5 prompts x 256 tokens).
-- Decodificacion especulativa sin perdida (`MTP-8`) con longitud media aceptada de 3,235 tokens por paso.
-- Razonamiento y matematicas: perplexity reportada de 4,89 en el split Math (frente a 4,69 del profesor).
-- Generacion de codigo: perplexity de 2,123 en el split Code (frente a 2,116 del profesor).
-- Conversacion: perplexity de 7,10 en el split Chat, ligeramente mejor que el profesor (7,24).
-- Soporte de contexto largo: hasta 32K tokens verificado en el perfil de 16 GB.
-- Ejecucion en GPUs consumer Blackwell con 8 GB o 16 GB de VRAM.
-- Soporte de tiering VRAM-RAM via PCIe Gen5x8 para GPUs de 8 GB.
-- Capacidades multilingues: no disponible.
-- Tool calling, function calling y agentes: no disponible en la informacion proporcionada.
+- Generación de texto conversacional multi-turno con plantilla de chat (`chat_template.jinja`).
+- Comprensión de imágenes (`image + text -> text`): la card verifica visión multimodal en vivo mediante `image_url` (OpenAI), `image` (Anthropic) e `input_image` (Responses API).
+- Decodificación especulativa integrada con cabezas MTP, con ganancias medidas de hasta 646,90 tok/s en continuación de código de 512 tokens.
+- Razonamiento y matemáticas: la card reporta throughput específico para prompts de matemáticas (340,03 tok/s con decodificación especulativa).
+- Generación de código y JSON estructurado, con modos de decodificación especulativa dedicados.
+- Recuperación de información en contexto muy largo: needle-in-a-haystack verificado a 1M tokens con 3/3 aciertos (posiciones 10%, 50% y 90%).
+- Servidor local compatible con APIs de OpenAI y Anthropic, con soporte de SSE y batching continuo (hasta B=32).
+- Tool calling / function calling: no se documenta explícitamente en la información disponible.
+- Capacidades de agente multi-paso: no se documentan explícitamente.
+- Idiomas: no disponible.
 
 ## Casos de uso
 
-- Inferencia local en RTX 5060 Ti de 16 GB: el perfil `all_vram` mantiene todos los pesos en GDDR7 con un pico de 9,41 GiB a 8K y 10,26 GiB a 32K, permitiendo ejecutar el modelo completo sin offloading en una GPU de gama media.
-- Inferencia en RTX 5060 Ti de 8 GB: el perfil `8gb_tiered` con `VramCacheDmaManager` mantiene un pico de 6,51 GiB a 8K, dejando 1,2 GiB de margen para WDDM/DWM en Windows 11 y permitiendo ejecutar el modelo en GPUs de 8 GB.
-- Servicio de chat interactivo con latencia baja: 76,84 tok/s en `B=1` con `MTP-8` en el perfil de 16 GB, suficiente para conversacion en tiempo real con un solo usuario.
-- Procesamiento por lotes de prompts cortos: 113,10 tok/s con `B=4` en el perfil de 16 GB, adecuado para tareas de generacion masiva de texto o clasificacion.
-- Relleno de contexto largo: prefill de 1.359 tok/s a 8K y 999 tok/s a 32K en el perfil de 16 GB, util para analisis de documentos extensos o resumen de conversaciones largas.
-- Investigacion en cuantizacion extrema: el checkpoint sirve como referencia reproducible para estudiar el impacto de VQ-4096, VQ8 y GPTQ Cholesky en modelos MoE con nucleo recurrente, con metricas de KLD (0,068819) y acuerdo Top-1 (92,422%) frente al profesor.
-- Evaluacion de decodificacion especulativa: el `MTP-8` con `MarkovHead` permite medir la ganancia real (2,79x en 16 GB, 2,28x en 8 GB) manteniendo paridad bit a bit con la decodificacion estandar.
+- **Asistente conversacional local con privacidad**: el modelo puede servirse mediante `qfn-inkling2-serve` en una RTX 5060 Ti de 16 GB a ~101,85 tok/s con 128K de contexto asignado, lo que permite mantener conversaciones largas sin enviar datos a la nube. Adecuado para entornos con requisitos de soberanía del dato.
+- **Análisis de documentos extensos con recuperación**: gracias al contexto verificado de 1M tokens y al needle-in-a-haystack con 3/3 aciertos, puede usarse para localizar pasajes concretos en corpus largos (contratos, logs, expedientes) sin troceado previo.
+- **Procesamiento multimodal de capturas y documentos escaneados**: la torre de visión BF16 permite pasar imágenes junto a texto en la misma petición, útil para extracción de datos de facturas, tickets o pantallazos en pipelines internos.
+- **Generación de código en local para CI/CD**: con decodificación especulativa alcanzando 646,90 tok/s en continuación de código de 512 tokens, es viable integrarlo en un servidor interno que asista en autocompletado o generación de tests dentro de un pipeline, sin depender de APIs externas.
+- **Backend compatible con OpenAI/Anthropic para herramientas existentes**: al exponer endpoints compatibles, se puede sustituir el proveedor en aplicaciones ya escritas contra esas APIs cambiando solo la URL base, lo que facilita migraciones y pruebas A/B.
+- **Despliegue en estaciones de trabajo con 8 GB de VRAM**: el modo `8gb_tiered` con tope de 6,80 GiB permite ejecutar el modelo con visión en GPUs modestas a 123,05 tok/s especulativos, útil para prototipado en portátiles con GPU de gama media.
+- **Servicio multiusuario con batching continuo**: el modo `B=32` alcanza 1.603,3 tok/s en RTX PRO 6000 Blackwell, lo que permite atender a un equipo pequeño desde un único servidor interno.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Profesor (20,16 GB) | Estudiante WV-v6.3 |
+Los datos publicados son de rendimiento del runtime y de fidelidad de la cuantización, no de benchmarks académicos estándar (MMLU, HumanEval, GSM8K). No se han publicado resultados de benchmarks en la información disponible para esas métricas.
+
+| Metrica | Contexto / lote | Valor medido |
 |---|---|---|
-| KLD ciego vs profesor | - | 0,068819 |
-| Acuerdo Top-1 | - | 92,422% |
-| Perplexity All_Val | 5,30031 | 5,39794 |
-| Perplexity C4 | 10,98 | 11,52 |
-| Perplexity Math | 4,69 | 4,89 |
-| Perplexity Code | 2,116 | 2,123 |
-| Perplexity Chat | 7,24 | 7,10 |
+| Decodificación simple `M=1` | B=1 | 205,17 tok/s |
+| Decodificación especulativa (código) | B=1 | 275,18 tok/s |
+| Decodificación especulativa (matemáticas) | B=1 | 340,03 tok/s |
+| Decodificación especulativa (JSON) | B=1 | 287,52 tok/s |
+| Decodificación especulativa (prosa) | B=1 | 294,81 tok/s |
+| Decodificación especulativa (code_cont_512) | B=1 | 646,90 tok/s |
+| Decodificación especulativa (code_cont_2048) | B=1 | 550,11 tok/s |
+| Batching continuo | B=4 / B=8 / B=16 (2K ctx) | 682,9 / 1150,4 / 1143,3 tok/s |
+| Prefill | S=512 | 8268,2 tok/s (61,92 ms) |
+| Prefill | S=2048 | 11868,3 tok/s (172,56 ms) |
+| Prefill | S=8192 | 12411,1 tok/s (660,06 ms) |
+| Prefill | S=32768 | 11304,3 tok/s (2898,73 ms) |
+| Batching continuo | B=32 | 1603,3 tok/s |
+| RTX 5060 Ti 16 GB, `all_vram`, 128K | B=1 | 101,85 tok/s (13,65 GiB VRAM pico) |
+| RTX PRO 6000 Blackwell, `all_vram` | B=1 greedy | 145,96 tok/s |
+| RTX PRO 6000 Blackwell, especulativo | B=1 | 232,91 tok/s (media 3 prompts) / 264,78 tok/s (muestreado) |
+| Modo 8 GB `8gb_tiered` | B=1 especulativo | 123,05 tok/s (6,55 GiB VRAM pico) |
+| Servidor HTTP, Chat JSON especulativo | — | 273,8+ tok/s |
+| Paridad de cuantización (KLD vs FP) | 16.376 tokens | 0,068819 (92,422% Top-1) |
+| Perplejidad `All_Val` | — | Teacher 5,30031 → cuantizado 5,39794 |
 
-Rendimiento en RTX 5060 Ti (Windows 11, `sm_120`, `MTP-8`):
-
-| Perfil | Pico VRAM 8K | Pico VRAM 32K | B=1 M=1 | B=1 MTP-8 | B=4 MTP-8 | Prefill 8K | Prefill 32K |
-|---|---|---|---|---|---|---|---|
-| A (16 GB, `all_vram`) | 9,41 GiB | 10,26 GiB | 27,56 tok/s | 76,84 tok/s | 113,10 tok/s | 1.359 tok/s | 999 tok/s |
-| B (8 GB, `8gb_tiered`) | 6,51 GiB | no disponible | 25,42 tok/s | 57,87 tok/s | 105,74 tok/s | 841 tok/s | no disponible |
-
-Tasa de acierto de cache PCIe DMA en el perfil B: 72,9% (`M=1`) y 63,3% (`MTP-8`). Longitud media aceptada por `MTP-8`: 3,235 tokens por paso. Paridad bit a bit verificada en 5/5 prompts x 256 tokens entre `M=1` y `MTP-8`, y entre perfiles de 16 GB y 8 GB.
+Además, la card reporta paridad bit a bit (`0.0 max_abs_diff`) entre los modos `all_vram` (16 GB) y `8gb_tiered` (8 GB) en 408 tokens, y paridad 0 ULP en la torre de visión BF16 entre ejecución residente en GPU y streameada por capas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 9,41 GiB a 8K y 10,26 GiB a 32K en perfil `all_vram`; 6,51 GiB a 8K y 6,68 GiB con `B=4` en perfil `8gb_tiered`.
-- GPU objetivo: RTX 5060 Ti en sus variantes de 16 GB y 8 GB (arquitectura Blackwell, `sm_120`).
-- GPU compatibles: cualquier GPU Blackwell con `sm_120` o `sm_120a`; no compatible con arquitecturas anteriores (el binario es solo SASS, sin PTX de respaldo).
-- Cabe en GPU consumer: si, en RTX 5060 Ti de 8 GB y 16 GB; no se documenta compatibilidad con otras GPUs consumer.
-- Opciones de despliegue: motor nativo `qfn_inkling2_sm120` distribuido como wheel `cp313` y `cp312` para `win_amd64`; requiere Python 3.13 (o 3.12), PyTorch CUDA 13.0, `safetensors`, `transformers`, `huggingface_hub` y `tiktoken`.
-- Sistema operativo: Windows 11 (unico documentado).
-- Throughput: 76,84 tok/s (`B=1`, `MTP-8`, perfil 16 GB); 57,87 tok/s (`B=1`, `MTP-8`, perfil 8 GB); 113,10 tok/s (`B=4`, perfil 16 GB).
-- Latencia de prefill: 1.359 tok/s a 8K y 999 tok/s a 32K en perfil 16 GB; 841 tok/s a 8K en perfil 8 GB.
-- No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; el artefacto depende de un binario CUDA propietario especifico de `sm_120`.
+- **VRAM para inferencia**: 13,65 GiB pico en modo `all_vram` con 128K de contexto en RTX 5060 Ti 16 GB; 6,55 GiB pico en modo `8gb_tiered`; 30,97 GiB con KV `q8_global` y 48,41 GiB con KV `bf16` para contexto completo de 1M en A100.
+- **GPU recomendadas**: RTX 5060 Ti 16 GB (verificada), NVIDIA RTX PRO 6000 Blackwell (verificada), A100-SXM4-80GB (verificada para 1M de contexto). Cualquier GPU con `sm_120`/`sm_120a` (Blackwell) es compatible con el runtime nativo; el wheel universal cubre `sm_80`–`sm_120a`.
+- **GPU de consumo**: sí, cabe en RTX 5060 Ti 16 GB y en GPUs con 8 GB mediante el modo `8gb_tiered` (con streaming por capas).
+- **Opciones de despliegue**: runtime propietario `wv_universal_runtime` (wheel `wv_runtime_installer-1.5.2`) con CLI `python -m wv_runtime.serve`; servidor `qfn-inkling2-serve` (v1.3.0) compatible con OpenAI/Anthropic. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- **Latencia y throughput**: prefill de 8.268 tok/s a S=512 y 12.411 tok/s a S=8192; decodificación de 101,85 tok/s en RTX 5060 Ti a 128K y hasta 1.603,3 tok/s con batching B=32 en RTX PRO 6000. Servidor HTTP con 2,89 s de wall time para 4 streams concurrentes de 256 tokens.
+- **Requisitos de software**: Python 3.13 (`cp313`), wheels SASS-only para `win_amd64` y `linux_x86_64`; no requiere compilación de kernels en destino.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Inkling-2-Mini-WV-SM120-Staging | no disponible (8,83 GiB cuantizados) | 32K | 2,4658 bpw (VQ + GPTQ) | Apache-2.0 | Hugging Face (staging, 0 descargas) |
-| thinkingmachines/Inkling-2-Mini (profesor) | no disponible (20,16 GB) | no disponible | NVFP4 + MXFP8 | Apache-2.0 | Hugging Face |
-| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de información sobre modelos comparables en la documentación proporcionada (parámetros del modelo base, benchmarks académicos y datos de alternativas no están publicados). La comparación cuantitativa con otros MoE multimodales de tamaño similar no está disponible.
 
-No se dispone de informacion sobre otros modelos comparables de la misma categoria en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Inkling-2-Mini-WV-SM120-Staging | no disponible | 1.048.576 (config) | Apache-2.0 | safetensors + runtime propio | Runtime nativo Blackwell, visión BF16, decodificación especulativa |
+| Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se dispone de datos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Estado de staging: el repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (21 de noviembre de 2026); no es un artefacto estable ni validado por la comunidad.
-- Dependencia de hardware especifico: el binario es solo SASS para `sm_120` y `sm_120a`, sin PTX; no funciona en GPUs Ampere, Ada ni Hopper, ni en Linux o macOS.
-- Dependencia de sistema operativo: solo se documenta Windows 11; el perfil de 8 GB asume 1,2 GiB de margen para WDDM/DWM.
-- Perdida de calidad respecto al profesor: KLD de 0,068819 y degradacion de perplexity en C4 (10,98 a 11,52) y Math (4,69 a 4,89); el rendimiento en tareas de razonamiento matematico puede verse afectado.
-- Contexto limitado en el perfil de 8 GB: solo se verifican 8K tokens; no se documenta comportamiento a 32K con tiering.
-- Riesgo de alucinacion: no cuantificado en la informacion proporcionada.
-- Sesgos conocidos: no disponibles.
-- Idiomas soportados: no disponibles; no se puede garantizar calidad multilingue.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el modelo base y el binario CUDA deben verificarse por separado; el wheel nativo no declara licencia propia en la informacion disponible.
-- Tool calling y soporte de agentes: no documentados; no se debe asumir su disponibilidad en produccion.
-- Sin soporte de frameworks estandar: no hay integracion con vLLM, llama.cpp, Ollama ni TGI, lo que limita su adopcion en pipelines existentes.
+- **Dependencia de hardware específico**: el runtime está compilado para `sm_120`/`sm_120a` (Blackwell). Aunque el wheel universal cubre `sm_80`–`sm_120a`, el rendimiento y las optimizaciones documentadas se han verificado en Blackwell; en arquitecturas anteriores el comportamiento no está garantizado.
+- **Runtime propietario y no estándar**: no se ofrece soporte para vLLM, llama.cpp, Ollama ni TGI. La integración requiere instalar el wheel `wv_runtime_installer` desde un repositorio de Hugging Face y usar el CLI propio, lo que añade dependencia de un único mantenedor.
+- **Python 3.13 exclusivo**: los wheels son `cp313`; entornos con versiones anteriores de Python no pueden usar el runtime tal cual.
+- **Datos del modelo base incompletos**: no se publican número de parámetros, composición del dataset, idiomas soportados ni resultados de benchmarks académicos, lo que dificulta evaluar sesgos, calidad multilingüe y rendimiento frente a alternativas.
+- **Riesgo de alucinación**: no cuantificado en la información disponible; como en cualquier LLM generativo, debe validarse la salida en producción, especialmente en dominios factuales.
+- **Sesgos**: no documentados. La ausencia de información sobre datos de entrenamiento impide evaluar sesgos de género, idioma o dominio.
+- **Licencia Apache-2.0**: permite uso comercial, pero el usuario debe verificar que los pesos base (`thinkingmachines/Inkling-2-Mini`) mantienen la misma licencia y que el runtime propietario no impone restricciones adicionales no recogidas en la card.
+- **Contexto de 1M costoso**: requiere 30,97 GiB (KV `q8_global`) o 48,41 GiB (KV `bf16`) solo para KV cache, además de un prefill de ~1.000 s en A100; no es viable en GPUs de consumo a esa longitud.
+- **Estado "Staging"**: el nombre del repo sugiere un checkpoint en preparación; conviene fijar una revisión concreta para producción y no asumir estabilidad de la API del runtime entre versiones.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Grawnch/Inkling-2-Mini-WV-SM120-Staging
+- Modelo en Hugging Face: https://huggingface.co/Grawnch/Inkling-2-Mini-WV-SM120-Staging
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.
+- Runtime universal (wheels): https://huggingface.co/Grawnch/wv-runtime-binaries
+- Repositorio de binarios del runtime (instalador): https://huggingface.co/Grawnch/wv-runtime-binaries/resolve/main/wheels/wv_runtime_installer-1.5.2-py3-none-any.whl

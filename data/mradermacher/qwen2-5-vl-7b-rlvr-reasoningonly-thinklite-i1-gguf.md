@@ -2,89 +2,93 @@
 
 ## Resumen
 
-Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF es una cuantización GGUF, generada por mradermacher, del modelo vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite, un ajuste fino del Qwen2.5-VL-7B-Instruct de Alibaba. El modelo base combina capacidades de visión-lenguaje con un entrenamiento de razonamiento mediante RLVR (Reinforcement Learning with Verifiable Rewards) y GRPO, usando el framework verl y el dataset russwang/ThinkLite-VL-70k. La variante "ReasoningOnly" sugiere que el ajuste se centra exclusivamente en tareas de razonamiento verificable.
+Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF es una cuantizacion en formato GGUF del modelo vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite, un ajuste fino del Qwen2.5-VL-7B-Instruct de Alibaba orientado a razonamiento visual. El autor de la cuantizacion es mradermacher, conocido por publicar versiones cuantizadas de modelos open source con tecnicas de imatrix para preservar la calidad en rangos bajos de bits. El modelo conserva la arquitectura vision-language de Qwen2.5-VL, con aproximadamente 7.615 millones de parametros, y anade un entrenamiento de refuerzo con verificacion (RLVR) mediante GRPO y la libreria verl sobre el dataset ThinkLite-VL-70k.
 
-El repositorio contiene únicamente pesos cuantizados en formato GGUF con calibración imatrix (versión i1), pensados para inferencia local con llama.cpp y derivados. Con 7.615.616.512 parámetros totales (aproximadamente 7,6 mil millones), el modelo se posiciona en la gama media de modelos visión-lenguaje, lo que permite desplegarlo en GPUs de consumo con cuantizaciones agresivas.
+El interes de esta ficha radica en que combina dos lineas de trabajo actuales: por un lado, el razonamiento explicito en modelos de vision-lenguaje, y por otro, la disponibilidad de pesos cuantizados para despliegue local en hardware de consumo. El resultado es un modelo capaz de generar cadenas de razonamiento antes de responder a preguntas sobre imagenes, empaquetado en 24 variantes de cuantizacion que van desde 2,0 GB (IQ1_S) hasta 4,6 GB (Q4_K_S) y superiores.
 
-La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de razonamiento multimodal en hardware modesto, aunque con limitaciones importantes: el modelo está entrenado y etiquetado únicamente en inglés, la licencia es la de Qwen (no plenamente abierta) y no se han publicado resultados de benchmarks en la información disponible.
+La licencia es la de Qwen (license: qwen), heredada del modelo base Qwen2.5-VL-7B-Instruct, por lo que las condiciones de uso comercial dependen de dicha licencia. El idioma declarado es unicamente ingles, aunque al derivar de Qwen2.5-VL es probable que conserve parte de las capacidades multilingues del original; no obstante, no hay confirmacion explicita en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer visión-lenguaje (derivada de Qwen2.5-VL-7B-Instruct) |
+| Arquitectura | Transformer vision-language (base Qwen2.5-VL) con ajuste RLVR/GRPO |
 | Parametros totales | 7.615.616.512 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, i1-Q4_1, i1-IQ3_S; además de fichero imatrix |
-| Idiomas soportados | en (inglés) |
-| Licencia | qwen (license: other, enlazada a la licencia de Qwen2.5-VL-7B-Instruct) |
-| Formato de pesos | GGUF (cuantizado, con imatrix) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M y otras variantes de mayor tamano |
+| Idiomas soportados | en (ingles declarado) |
+| Licencia | qwen (license: other, license_name: qwen) |
+| Formato de pesos | GGUF (cuantizacion i1 con imatrix) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer visión-lenguaje derivado de Qwen2.5-VL-7B-Instruct, con aproximadamente 7,6 mil millones de parámetros. El ajuste fino se realizó con RLVR (Reinforcement Learning with Verifiable Rewards) usando GRPO (Group Relative Policy Optimization) y el framework verl, sobre el dataset russwang/ThinkLite-VL-70k, orientado a tareas de razonamiento con recompensas verificables. La variante "ReasoningOnly" indica que el entrenamiento se centró en razonamiento y no en instrucciones generales, lo que puede reducir la calidad en conversación abierta.
+El modelo parte de Qwen2.5-VL-7B-Instruct, un transformer decoder-only con codificador visual integrado que procesa imagenes y texto de forma conjunta. Sobre esa base, el autor del modelo original aplico un ajuste fino con RLVR (Reinforcement Learning with Verifiable Rewards) usando GRPO (Group Relative Policy Optimization) y la libreria verl. Este esquema de entrenamiento refuerza la generacion de cadenas de razonamiento verificables antes de emitir la respuesta final, en la linea de modelos como DeepSeek-R1 pero aplicado a tareas de vision-lenguaje.
 
-La cuantización la realizó mradermacher con calibración imatrix (versión i1), que suele ofrecer mejor calidad que las cuantizaciones estáticas equivalentes en tamaño. El repositorio incluye también un fichero imatrix para que el usuario pueda generar sus propias cuantizaciones. No se dispone de información sobre el número de tokens de entrenamiento, la composición exacta del dataset ni detalles del proceso de RLVR más allá de las etiquetas.
+El dataset de entrenamiento es russwang/ThinkLite-VL-70k, un conjunto de 70.000 ejemplos orientado a razonamiento visual. La cuantizacion i1 de mradermacher emplea una matriz de importancia (imatrix) generada a partir de datos de calibracion, lo que permite que las variantes de baja precision (IQ2, IQ3) conserven mas calidad que las cuantizaciones estaticas equivalentes. No se dispone de informacion sobre el numero total de tokens de entrenamiento ni sobre la composicion detallada del dataset mas alla de su nombre y tamano.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal (imagen y texto), heredado de Qwen2.5-VL.
-- Razonamiento reforzado mediante RLVR/GRPO, orientado a tareas con recompensa verificable.
-- Procesamiento de imágenes junto con instrucciones textuales (vision-language).
-- Capacidades de razonamiento multi-paso potenciadas por el ajuste "ReasoningOnly".
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente autónomo: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma del repositorio.
-- Modo "thinking" explícito: no confirmado en la información disponible.
+- Generacion de texto y razonamiento explicito: el modelo produce cadenas de pensamiento antes de la respuesta final, orientadas a tareas que requieren verificacion.
+- Comprension de imagenes: al derivar de Qwen2.5-VL, procesa imagenes junto con texto para responder preguntas visuales.
+- Razonamiento visual multi-paso: el entrenamiento RLVR esta disenado para tareas donde la respuesta puede verificarse automaticamente, como conteo, comparacion o lectura de graficos.
+- Conversacion multi-turno: el tag "conversational" indica soporte de dialogos.
+- Capacidades multilingues: el modelo declara solo ingles; no hay confirmacion de otros idiomas.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes: no disponible en la informacion proporcionada.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Razonamiento sobre documentos escaneados: el modelo puede recibir una imagen de un documento y razonar sobre su contenido, aprovechando su naturaleza visión-lenguaje y el ajuste en razonamiento verificable para tareas como extracción de datos estructurados.
-- Resolución de problemas matemáticos a partir de enunciados en imagen: adecuado para pipelines educativos donde el enunciado llega como captura o foto y se requiere un razonamiento paso a paso.
-- Verificación de respuestas en entornos de evaluación automática: el entrenamiento con recompensas verificables lo hace apto para tareas donde la respuesta correcta es comprobable (por ejemplo, problemas con solución única).
-- Prototipado local de asistentes multimodales: gracias a las cuantizaciones de 2 a 5 GB, se puede desplegar en una GPU de consumo para experimentación con razonamiento sobre imágenes.
-- Análisis de gráficos e infografías: el modelo puede interpretar figuras y razonar sobre tendencias o valores representados, útil en herramientas de análisis de datos visuales.
-- Investigación en RLVR aplicado a visión-lenguaje: sirve como punto de partida reproducible para estudiar el efecto del ajuste GRPO en modelos de 7B, dado que el repositorio documenta el dataset y el framework empleados.
-- Despliegue en entornos con recursos limitados: las variantes IQ2/IQ3 permiten ejecutar un modelo multimodal de 7B en equipos con 8-12 GB de VRAM, algo inviable con los pesos completos.
+- Analisis de documentos escaneados: el modelo puede leer imagenes de facturas, formularios o capturas y razonar sobre los datos extraidos antes de responder, lo que reduce errores en tareas de extraccion estructurada.
+- Respuesta a preguntas sobre graficos y tablas: gracias al razonamiento RLVR, es adecuado para interpretar ejes, leyendas y tendencias en imagenes de visualizaciones de datos y justificar la respuesta paso a paso.
+- Asistencia educativa con material visual: puede explicar diagramas, mapas o figuras cientificas a estudiantes, mostrando el razonamiento intermedio para facilitar la comprension.
+- Verificacion de capturas de pantalla en QA de software: integrado en pipelines de pruebas, el modelo puede inspeccionar capturas de interfaz y razonar si el estado visual coincide con el esperado.
+- Moderacion de contenido visual con justificacion: el modelo puede describir y razonar por que una imagen cumple o incumple una politica, aportando la cadena de razonamiento como traza auditable.
+- Despliegue local en estaciones de trabajo: las cuantizaciones IQ4_XS (4,3 GB) y Q4_K_S (4,6 GB) permiten ejecutar el modelo en GPU de consumo con 8 GB de VRAM, util para prototipado sin conexion.
+- Procesamiento por lotes de imagenes en servidores modestos: las variantes IQ3 permiten ejecutar inferencia visual en GPUs de 6-8 GB con throughput aceptable para tareas no interactivas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,0 GB (i1-IQ1_S) hasta 5,5-6 GB (i1-Q6_K) para los pesos; hay que sumar el espacio del proyector visual y la caché KV, que depende del contexto.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090 para cuantizaciones medias y altas; A100/H100 para mayor contexto y throughput.
-- Cabe en GPU de consumo: sí, en la mayoría de tarjetas con 8 GB o más usando cuantizaciones IQ3/IQ4; las variantes IQ1/IQ2 caben en 4-6 GB.
-- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp), así como servidores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
-- Latencia y throughput estimados: no disponible en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 2,0-2,1 GB con i1-IQ1_S/IQ1_M (calidad muy degradada), 2,9-3,1 GB con IQ2_M/Q2_K, 3,6-3,9 GB con IQ3_S/IQ3_M/Q3_K_M, 4,3-4,6 GB con IQ4_XS/Q4_K_S, y mas de 5 GB con Q5 y Q6.
+- Nota: los tamanos indicados corresponden a los pesos; hay que sumar el overhead de contexto KV cache y, si aplica, el proyector visual (mmproj), que se distribuye en el repositorio estatico.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para cuantizaciones medias y altas; A100/H100 para la version sin cuantizar o para servir a multiples usuarios.
+- Cabe en GPU de consumo: si, desde IQ2 en GPUs de 4-6 GB y con IQ4_K_S en GPUs de 8 GB o superiores.
+- Opciones de despliegue: llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp) para GGUF; los archivos mmproj del repositorio estatico son necesarios para el procesamiento de imagenes.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF (este) | 7,6B | no disponible | qwen (other) | GGUF | Cuantización imatrix de un ajuste RLVR |
-| Qwen2.5-VL-7B-Instruct | 7,6B | 128K (según documentación de Qwen) | Apache 2.0 (según Qwen) | safetensors | Modelo base oficial, instrucciones generales |
-| vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite | 7,6B | no disponible | other | safetensors | Modelo base sin cuantizar |
-| mradermacher/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-GGUF | 7,6B | no disponible | qwen | GGUF | Cuantizaciones estáticas (no imatrix) |
+| Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF (este) | 7,6 B | no disponible | GGUF i1 | qwen | Razonamiento visual RLVR, solo ingles declarado |
+| Qwen2.5-VL-7B-Instruct | 7,6 B | no disponible en esta ficha | safetensors, GGUF | qwen | Modelo base sin RLVR; vision-lenguaje generalista |
+| Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite (original) | 7,6 B | no disponible | safetensors | qwen | Version sin cuantizar del mismo ajuste |
+
+No se dispone de datos de benchmarks para comparar el rendimiento relativo con estas alternativas.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información disponible; al derivar de Qwen2.5-VL, puede heredar sesgos del corpus original.
-- Riesgo de alucinación: presente, como en cualquier LLM; el ajuste "ReasoningOnly" puede aumentar la verbosidad del razonamiento sin garantizar corrección.
-- Limitaciones de contexto o idioma: el repositorio etiqueta únicamente inglés; el rendimiento en castellano no está garantizado. La longitud de contexto no se especifica en la información disponible.
-- Restricciones de licencia: licencia "qwen" con enlace a la licencia de Qwen2.5-VL-7B-Instruct; conviene revisar las condiciones de uso comercial antes de desplegar en producción.
-- Caveat de producción: es una cuantización de un ajuste comunitario, no un modelo oficial; no hay benchmarks publicados que respalden su calidad frente al modelo base. Las cuantizaciones IQ1/IQ2 pueden degradar notablemente el rendimiento.
-- El ajuste "ReasoningOnly" puede reducir la calidad en tareas conversacionales generales frente a Qwen2.5-VL-7B-Instruct.
+- El modelo declara unicamente ingles; el rendimiento en castellano no esta verificado y podria degradarse respecto al Qwen2.5-VL original.
+- El ajuste RLVR sobre un dataset especifico (ThinkLite-VL-70k) puede estrechar la distribucion de tareas y reducir la generalidad frente al modelo base.
+- Las cuantizaciones IQ1 e IQ2 tienen calidad muy baja segun la propia model card ("for the desperate", "very low quality"); no son recomendables para produccion.
+- Riesgo de alucinacion inherente a los modelos de razonamiento: las cadenas de pensamiento pueden contener pasos plausibles pero incorrectos.
+- La licencia qwen impone condiciones adicionales al uso comercial; es necesario revisar el LICENSE enlazado en la model card antes de desplegar en productos.
+- El repositorio ocupa 89 GB por incluir todas las variantes; conviene descargar solo el archivo necesario.
+- Para usar la capacidad de vision es imprescindible descargar los archivos mmproj del repositorio estatico; el repositorio i1 no los incluye.
+- No hay informacion sobre sesgos especificos ni sobre evaluaciones de seguridad del ajuste.
 
 ## Enlaces
 
-- Hugging Face (este repositorio): https://huggingface.co/mradermacher/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF
-- Modelo base sin cuantizar: https://huggingface.co/vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite
-- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-GGUF
-- Página de descargas del autor: https://hf.tst.eu/model#Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF
+- Repositorio Hugging Face (cuantizacion i1): https://huggingface.co/mradermacher/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF
+- Repositorio de cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-GGUF
+- Modelo original sin cuantizar: https://huggingface.co/vgandhi13/Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite
+- Modelo base de Qwen: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
+- Licencia Qwen: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/russwang/ThinkLite-VL-70k
-- Licencia Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/blob/main/LICENSE
-- Modelo Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
-- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen2.5-VL-7B-RLVR-ReasoningOnly-ThinkLite-i1-GGUF
+- Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

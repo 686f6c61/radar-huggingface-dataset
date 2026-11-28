@@ -2,53 +2,53 @@
 
 ## Resumen
 
-DualMind-GGUF es la versión cuantizada en formato GGUF del modelo DualMind, un modelo de lenguaje de 1.700 millones de parámetros (2.031.739.904 parámetros reales según los pesos en safetensors) desarrollado por Convergent Intelligence LLC: Research Division. El modelo implementa una arquitectura de "cognición dual" en la que un único conjunto de pesos produce tres fases explícitas de razonamiento: `<explore>` (razonamiento libre), `<examine>` (autocrítica adversarial) y `<response>` (síntesis final). El objetivo es trasladar al despliegue local la dinámica de múltiples modelos en diálogo ("multi-model dialectics") colapsada en un solo modelo.
+DualMind-GGUF es la version cuantizada en formato GGUF del modelo DualMind, un modelo de lenguaje de 2.031.739.904 parametros (aproximadamente 2B, descrito por el autor como 1.7B) desarrollado por Convergent Intelligence LLC: Research Division. Su proposito es implementar una arquitectura de "cognicion dual": el modelo genera primero un razonamiento libre en la etiqueta `<explore>`, despues una autocrítica adversarial en `<examine>` y, finalmente, una respuesta sintetizada en `<response>`. Esta publicacion facilita la inferencia local en CPU y GPU de gama baja mediante llama.cpp, Ollama y LM Studio.
 
-La relevancia de esta ficha radica en que el repositorio GGUF permite ejecutar el modelo en CPU y en GPUs de consumo (a partir de 6 GB de VRAM según el autor) mediante llama.cpp, Ollama o LM Studio. El modelo base deriva de Qwen3-1.7B y ha pasado por una cadena de destilación (DistilQwen3, Disctil con refinado DISC y destilación de conocimiento desde Qwen3-30B-A3B-Thinking) antes del ajuste supervisado sobre el dataset LogicInference_OA.
+El modelo deriva de una cadena de destilacion que parte de Qwen3-1.7B, pasa por DistilQwen3 (sin censura), Disctil (refinado con DISC) y una destilacion de conocimiento desde Qwen3-30B-A3B-Thinking, antes de un ajuste supervisado (SFT) sobre el dataset LogicInference_OA. La innovacion principal no es el tamano, sino la estructura: el autor sostiene que las "fronteras estructurales" detectadas durante el entrenamiento mediante su operador de discrepancia (Discrepancy Calculus) quedan codificadas en los pesos y sobreviven a la cuantizacion.
 
-La licencia es Apache 2.0 y el idioma declarado es únicamente inglés. No se han publicado resultados de benchmarks en la información disponible, por lo que las afirmaciones de rendimiento del autor deben tratarse como no verificadas de forma independiente.
+Es relevante ahora por su enfoque en razonamiento estructurado con autoverificacion en un modelo pequeno, orientado a despliegue en el borde (edge) con requisitos de memoria muy bajos (desde ~1,1 GB en Q4_K_M). La licencia Apache 2.0 permite uso comercial. La informacion disponible es limitada: no se publican resultados de benchmarks en la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen3-1.7B), con esquema de razonamiento dual explore/examine/response |
-| Parametros totales | 2.031.739.904 (según safetensors); el autor describe el modelo como "1.7B" |
+| Arquitectura | Transformer decoder (derivada de Qwen3-1.7B); no se detalla mas |
+| Parametros totales | 2.031.739.904 (aproximadamente 2B; el autor indica 1.7B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la información proporcionada |
-| Tipos de cuantizacion | F16 (~3,4 GB), Q8_0 (~1,8 GB), Q5_K_M (~1,3 GB), Q4_K_M (~1,1 GB) |
-| Idiomas soportados | inglés (en) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | F16, Q8_0, Q5_K_M, Q4_K_M |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (el modelo base DualMind se distribuye en SafeTensors/BF16) |
+| Formato de pesos | GGUF (modelo base en SafeTensors: reaperdoesntknow/DualMind) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only heredado de Qwen3-1.7B. Su rasgo diferencial no es arquitectónico sino de formato de razonamiento: se entrena para emitir secuencialmente un bloque `<explore>` (derivación y especulación sin restricciones), un bloque `<examine>` (autocrítica adversarial y detección de errores) y un bloque `<response>` (respuesta limpia sintetizada del diálogo interno). El autor lo describe como "dialéctica multi-modelo colapsada en pesos compartidos".
+La arquitectura es un transformer decoder heredado de Qwen3-1.7B, sin que la model card especifique detalles adicionales (numero de capas, dimensiones, atencion, etc.). El rasgo distintivo es el esquema de razonamiento en tres fases que el modelo aprende a producir: `<explore>` para derivacion y especulacion sin restricciones, `<examine>` para autocrítica adversarial y deteccion de errores, y `<response>` para la sintesis final. El autor lo describe como "dialecticas multi-modelo colapsadas en pesos compartidos".
 
-La cadena de entrenamiento declarada es: Qwen3-1.7B → DistilQwen3 (sin censura) → Disctil (refinado con DISC) → destilación de conocimiento (TKD) desde Qwen3-30B-A3B-Thinking → SFT de DualMind sobre el dataset LogicInference_OA. El autor menciona fundamentos matemáticos propios ("Discrepancy Calculus", "Topological Knowledge Distillation", operador de discrepancia Df(x) y descomposición BV) documentados en la model card del modelo base y en publicaciones con DOI. No se especifican en la información disponible el número de tokens de entrenamiento ni la composición detallada del dataset. La cuantización GGUF preserva, según el autor, las "fronteras estructurales" aprendidas durante el entrenamiento.
+La cadena de entrenamiento es: Qwen3-1.7B → DistilQwen3 (sin censura) → Disctil (refinado con DISC) → destilacion de conocimiento desde Qwen3-30B-A3B-Thinking (TKD) → SFT de DualMind sobre LogicInference_OA. El autor menciona fundamentos matematicos propios (Discrepancy Calculus, Topological Knowledge Distillation) y un operador de discrepancia Df(x) con descomposicion BV, documentados en la model card del modelo base. No se especifican en esta ficha el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF/DPO; la informacion disponible solo cita SFT y destilacion.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés.
-- Razonamiento en tres fases explícitas: exploración, autocrítica y síntesis final.
-- Razonamiento matemático y lógico (el ejemplo de la model card es una demostración de que toda sucesión convergente es de Cauchy).
-- Autocrítica y detección de errores dentro del propio proceso de razonamiento (`<examine>`).
-- Razonamiento multi-paso orientado a tareas de inferencia lógica (entrenado sobre LogicInference_OA).
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
-- Capacidades de visión o audio: no disponibles.
-- Modo "thinking": sí, implementado mediante los bloques `<explore>`/`<examine>` antes de `<response>`.
+- Generacion de texto conversacional en ingles.
+- Razonamiento estructurado en tres fases: exploracion, autocrítica y respuesta final.
+- Razonamiento logico y matematico (entrenado sobre LogicInference_OA; el ejemplo de la model card es una demostracion de convergencia y sucesion de Cauchy).
+- Autoverificacion y deteccion de errores mediante la fase `<examine>`.
+- Inferencia local en CPU y GPU de gama baja gracias a las cuantizaciones GGUF.
+- Compatible con endpoints (tag `endpoints_compatible`).
+- No se documenta soporte de tool calling / function calling.
+- No se documenta soporte de agentes ni multi-step reasoning mas alla del bucle interno explore/examine/response.
+- No se documenta capacidad de vision ni audio.
+- Multilingue: solo ingles declarado.
 
 ## Casos de uso
 
-- Razonamiento lógico y matemático local: el modelo puede resolver demostraciones y problemas de inferencia paso a paso usando el ciclo explore→examine→response, adecuado para entornos sin conexión o con requisitos de privacidad.
-- Despliegue en edge y CPU: con la cuantización Q4_K_M (~1,1 GB) cabe en dispositivos de bajos recursos y se ejecuta vía llama.cpp u Ollama, lo que permite integrar razonamiento en aplicaciones de escritorio o embebidas.
-- Asistente de estudio de lógica: el bloque `<examine>` hace visible el proceso de autocrítica, útil para herramientas educativas que muestran al estudiante dónde puede fallar una derivación.
-- Prototipado rápido de pipelines de razonamiento: al ser Apache 2.0 y ejecutable en una GPU de 6 GB, sirve para validar arquitecturas de "razonamiento con autocrítica" antes de escalar a modelos mayores.
-- Generación de borradores con revisión automática: el patrón explore/examine permite producir una respuesta y luego una revisión interna en una sola pasada, útil en tareas de redacción técnica donde se quiere señalar errores propios.
-- Filtrado y verificación de cadenas de razonamiento: el modelo puede usarse para examinar razonamientos generados por otros sistemas y detectar inconsistencias, dado su entrenamiento en autocrítica adversarial.
-- Experimentación en destilación de conocimiento: investigadores interesados en la cadena Qwen3-30B-A3B-Thinking → 1.7B pueden usar este modelo como referencia reproducible.
+- Razonamiento logico y matematico asistido: el modelo esta entrenado sobre LogicInference_OA y su bucle explore/examine permite generar derivaciones y luego criticarlas antes de responder; util para demostraciones y ejercicios de logica en entornos educativos.
+- Despliegue en el borde (edge): con Q4_K_M (~1,1 GB) puede ejecutarse en CPU o en GPUs con 6 GB o menos, lo que lo hace apto para aplicaciones embebidas, portatiles sin GPU dedicada o dispositivos de bajo consumo.
+- Prototipado rapido de pipelines de autoverificacion: la estructura `<explore>`/`<examine>`/`<response>` permite integrar el modelo en flujos donde se necesita separar el razonamiento de la respuesta final, por ejemplo para auditar la cadena de pensamiento.
+- Asistente de analisis de errores: la fase `<examine>` puede aprovecharse para tareas de revision y deteccion de inconsistencias en textos o argumentos en ingles.
+- Investigacion en destilacion de conocimiento: al ser el eslabon GGUF de una cadena documentada (Qwen3-1.7B → DistilQwen3 → Disctil → TKD → DualMind), sirve como referencia reproducible para estudiar el efecto de la cuantizacion sobre modelos entrenados con destilacion.
+- Inferencia local con Ollama o LM Studio: el modelo ya esta publicado en Ollama (`reaperdoesntrun/DualMinded-1.7B`) y admite creacion desde GGUF, lo que facilita su uso en entornos de desarrollo sin infraestructura de servidor.
+- Educacion y demostraciones de razonamiento: su tamano reducido y su esquema de razonamiento explicito lo hacen adecuado para mostrar como un modelo pequeno puede estructurar su pensamiento.
 
 ## Benchmarks y rendimiento
 
@@ -56,49 +56,53 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~3,4 GB en F16, ~1,8 GB en Q8_0, ~1,3 GB en Q5_K_M y ~1,1 GB en Q4_K_M (tamaños de archivo declarados por el autor; el consumo real en ejecución es algo superior por el contexto KV).
-- El autor indica que la variante GGUF está pensada para "CPU/6GB GPU".
-- GPU recomendadas: no disponibles de forma explícita; por tamaño, cualquier GPU consumer con 6 GB o más (por ejemplo, RTX 3060, RTX 4060, RTX 4090) es suficiente. GPUs de datacenter (A100, H100) no son necesarias.
-- Cabe en GPU de consumo: sí, en todas las cuantizaciones indicadas.
-- Opciones de despliegue: llama.cpp, Ollama (imagen publicada `reaperdoesntrun/DualMinded-1.7B`), LM Studio y cualquier runtime compatible con GGUF.
-- Parámetros de muestreo recomendados por el autor: temperature 0.6, top_p 0.9, repeat_penalty 1.3, num_predict 512–1024.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia segun cuantizacion:
+  - F16 (~3,4 GB): requiere al menos ~4 GB de VRAM o RAM.
+  - Q8_0 (~1,8 GB): recomendado para GPU; cabe en GPUs de 4 GB o mas.
+  - Q5_K_M (~1,3 GB): equilibrio calidad/tamano; apto para GPU de 2-4 GB o CPU.
+  - Q4_K_M (~1,1 GB): mejor para CPU y despliegue en el borde.
+- GPU recomendadas: el autor orienta el modelo a CPU y GPUs de hasta 6 GB; no se especifican modelos concretos como A100, H100 o RTX 4090 (serian sobredimensionadas para este tamano).
+- Cabe en GPU de consumo: si, en cualquier GPU con 4 GB o mas de VRAM (Q8_0) y en CPU con Q4_K_M.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runtimes compatibles con GGUF.
+- Latencia y throughput: no disponibles.
+- Parametros de generacion recomendados por el autor: temperature 0.6, top_p 0.9, repeat_penalty 1.3 (importante para evitar bucles de enumeracion), num_predict 512-1024.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| DualMind-GGUF | 2,03 B (descrito como 1.7B) | no disponible | Apache 2.0 | GGUF | Razonamiento explore/examine/response, solo inglés |
-| Qwen3-1.7B (modelo base de la familia) | 1,7 B | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | SafeTensors, GGUF | Base sin el esquema de cognición dual; referencia directa de linaje |
-| Qwen3-30B-A3B-Thinking (profesor) | 30 B totales (MoE) | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | SafeTensors, GGUF | Profesor de la destilación; mucho mayor y no apto para edge |
-| Modelos de razonamiento pequeños tipo 1–2B con thinking | variable | variable | variable | variable | No se dispone de comparación verificada con benchmarks en la información proporcionada |
+| DualMind-GGUF | ~2B (1,7B declarados) | no disponible | GGUF | Apache 2.0 | Razonamiento explore/examine/response; solo ingles |
+| Qwen3-1.7B (modelo base de la cadena) | 1,7B | no disponible en esta ficha | SafeTensors/GGUF | Apache 2.0 (Qwen) | Modelo generalista multilingue; base del linaje |
+| DistilQwen3 (variante del autor) | ~1,7B | no disponible | no disponible | no disponible | Eslabon intermedio sin censura de la cadena |
+| DualMinded-Qwen3-1.7B | ~1,7B | no disponible | BF16 / GGUF | Apache 2.0 | Variante entrenada con trazas de razonamiento de Opus 4.6 |
 
-La comparación cuantitativa de rendimiento con alternativas no está disponible porque el autor no publica benchmarks en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta inglés según la etiqueta de idioma; no se declara soporte multilingüe.
-- No se han publicado benchmarks independientes; las afirmaciones sobre calidad del razonamiento no están verificadas.
-- Riesgo de bucles de enumeración: el propio autor recomienda `repeat_penalty` 1.3 para prevenirlos, lo que sugiere una tendencia conocida a repetir listas.
-- Riesgo de alucinación inherente a un modelo de 1,7–2 B parámetros; la autocrítica interna no garantiza corrección factual.
-- Longitud de contexto no documentada en la información disponible; no debe asumirse una ventana amplia.
-- Al ser una cuantización, puede haber degradación de calidad respecto al modelo base BF16, especialmente en Q4_K_M.
-- La cadena de entrenamiento incluye una fase "uncensored" (DistilQwen3), lo que puede implicar menor alineación de seguridad; conviene evaluar el comportamiento antes de usarlo en producción orientada a usuarios.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero deben conservarse los avisos de licencia y atribución correspondientes.
-- El modelo base y sus derivados pertenecen a un autor individual/organización pequeña; la documentación matemática ("Discrepancy Calculus") no ha sido validada de forma independiente en la información disponible.
+- Solo soporta ingles; no se declara soporte multilingue.
+- No se publican benchmarks, por lo que no hay evidencia cuantitativa de calidad frente a alternativas.
+- Riesgo de alucinacion inherente a modelos de este tamano; la fase `<examine>` mitiga pero no elimina el problema.
+- El autor advierte de bucles de enumeracion; es necesario usar `repeat_penalty` 1.3 para evitarlos.
+- No se documenta tool calling ni soporte de agentes, lo que limita su uso en pipelines automatizados complejos.
+- La longitud de contexto no esta especificada; no debe asumirse una ventana larga.
+- Modelo con 0 likes y autor poco conocido; la cadena de destilacion y los fundamentos matematicos son afirmaciones del autor no verificadas de forma independiente en la informacion disponible.
+- La licencia Apache 2.0 permite uso comercial, pero conviene revisar la procedencia de los datos de entrenamiento (LogicInference_OA, destilacion desde Qwen3-30B-A3B-Thinking) por si hubiera restricciones adicionales.
+- El modelo base se describe como "uncensored" en un eslabon de la cadena; conviene evaluar el filtrado de contenido antes de usarlo en produccion orientada al publico.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/reaperdoesntknow/DualMind-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/reaperdoesntknow/DualMind-GGUF
 - Modelo base (SafeTensors): https://huggingface.co/reaperdoesntknow/DualMind
 - Variante Opus: https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B
 - Variante thinking: https://huggingface.co/reaperdoesntknow/Dualmind-Qwen-1.7B-Thinking
-- GGUF de la variante Opus: https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B-GGUF
-- Metodología (paper): https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy (DOI: 10.57967/hf/8184)
-- Paper "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)
-- Paper "Discrepancy Calculus": https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
-- Colección DualMind: https://huggingface.co/collections/reaperdoesntknow/dualmind
-- Colección DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen
+- Variante GGUF Opus: https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B-GGUF
+- Metodologia (paper): https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy
+- Paper "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale
+- Paper "Discrepancy Calculus": https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus
+- DOI metodologia: https://doi.org/10.57967/hf/8184
+- Coleccion DualMind: https://huggingface.co/collections/reaperdoesntknow/dualmind
+- Coleccion DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com
 - LM Studio: https://lmstudio.ai

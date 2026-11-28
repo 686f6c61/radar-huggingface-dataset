@@ -5,7 +5,7 @@
   "author": "1bit-MONSTER",
   "url": "https://huggingface.co/1bit-MONSTER/ZAYA1-8B-GGUF",
   "created_at": "2026-09-26T09:45:18.000Z",
-  "updated_at": "2026-09-27T14:33:30.000Z",
+  "updated_at": "2026-11-28T00:56:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 374,
+  "downloads_30d": 393,
   "trending_score": 0,
   "parameters": 8840233464,
   "parameters_human": "8.84B",
-  "storage_bytes": 46616024064,
-  "storage_human": "46.6 GB",
+  "storage_bytes": 56101698848,
+  "storage_human": "56.1 GB",
   "context_length": 131072,
   "base_model": "Zyphra/ZAYA1-8B",
   "formats": [
@@ -42,31 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Bit — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Bit",
-      "snippet": "Le bit est l'unité la plus simple dans un système de numération. Il peut prendre deux valeurs, désignées le plus souvent par les …"
-    },
-    {
-      "title": "1Bit AI — Plateforme de création IA pour les entreprises",
-      "url": "https://www.1bit.ai/fr",
-      "snippet": "Drop in a single product photo or a rough idea. 1Bit turns it into studio images, ad creatives, infographics, podcasts and more — …"
-    },
-    {
-      "title": "1-bit computing - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/1-bit_computing",
-      "snippet": "In computer architecture, 1-bit integers or other data units are those that are 1 bit (1/8 octet) wide. Also, 1-bit central processing unit …"
-    },
-    {
-      "title": "1Bit AI - All-in-One AI Creation Platform for Business",
-      "url": "https://www.1bit.ai/",
-      "snippet": "Drop in a single product photo or a rough idea. 1Bit turns it into studio images, ad creatives, infographics, podcasts and more — …"
-    },
-    {
-      "title": "Bit - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Bit",
-      "snippet": "The bit is the most basic unit of information in computing and digital communication. The name is a portmanteau of binary digit. [1] …"
-    }
-  ]
+  "sources": []
 }

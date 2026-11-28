@@ -2,82 +2,102 @@
 
 ## Resumen
 
-`anubhav-k/leak-curber-kcat-km` es un modelo predictivo de propiedades enzimaticas publicado en Hugging Face por el usuario anubhav-k en el marco de un proyecto academico (identificado en la model card como "DA3410 Project 1", version v3). No se trata de un modelo de lenguaje generativo, sino de un pipeline de machine learning supervisado que predice dos parametros cineticos de enzimas: `log10_kcat` y `log10_km`, a partir de la secuencia de la enzima (`sequence`) y la representacion SMILES del sustrato (`smiles`).
+`anubhav-k/leak-curber-kcat-km` es un conjunto de modelos de aprendizaje automatico supervisado (no un modelo de lenguaje) publicado en Hugging Face por el usuario anubhav-k, en el marco del proyecto academico DA3410 Project 1. Su funcion es predecir dos parametros cineticos enzimaticos a partir de la secuencia de la enzima y la representacion SMILES del sustrato: la constante catalitica `kcat` y la constante de Michaelis `Km`. El modelo devuelve ambas predicciones en escala logaritmica (`log10_kcat` y `log10_km`).
 
-El modelo combina caracteristicas derivadas de la secuencia mediante ESM-2 (un modelo de lenguaje proteico) con descriptores quimicos del sustrato calculados con RDKit, ademas de caracteristicas de vecindad y target encoding. Sobre ese conjunto de features se entrenan modelos de tipo MLP y de boosting (la model card menciona scikit-learn y xgboost) y se aplica una estrategia de mezcla distinta por objetivo: `blend_top3` para kcat y `et_all` (ExtraTrees sobre todas las features) para km.
+La version v5 combina varios estimadores clasicos de machine learning (ExtraTrees, XGBoost, MLP y otros) mediante un esquema de *blending* o ensamblado, apoyandose en caracteristicas derivadas de embeddings ESM de la proteina y descriptores RDKit del sustrato. No se trata de una red neuronal transformer entrenada de extremo a extremo, sino de un pipeline de regresion tabular con ingenieria de caracteristicas.
 
-Su relevancia practica radica en la prediccion de parametros cineticos enzimaticos, un cuello de botella clasico en biologia sintetica e ingenieria de proteinas, donde medir experimentalmente kcat y Km es costoso. El repositorio ocupa 1,1 GB, incluye pesos en formato joblib y safetensors, y esta disenado para ejecutarse en CPU, sin red y con dos hilos, mediante un script `predict.py` y una imagen Docker. La informacion publica disponible es muy limitada: no hay licencia, idiomas, pipeline ni benchmarks oficiales declarados.
+Es relevante en el contexto de la biologia computacional y el diseno de enzimas, donde predecir `kcat` y `Km` de forma fiable es un cuello de botella historico. La model card reporta una mejora estimada de +0.0295 en correlacion de Spearman (SCC) sobre la version v2, con un intervalo de confianza bootstrap de [+0.0252, +0.0389], aunque el propio autor advierte que es una estimacion y no una promesa. El repositorio pesa 1.8 GB y contiene pesos en formato safetensors y joblib.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Ensemble de MLP y ExtraTrees sobre features ESM-2 + descriptores RDKit (no es un transformer generativo) |
+| Arquitectura | Ensamblado (blending) de ExtraTrees, XGBoost y MLP sobre caracteristicas ESM + RDKit |
 | Parametros totales | no disponible |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica; entrada = secuencia proteica + SMILES) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (no es un modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no aplica; no procesa texto natural) |
+| Idiomas soportados | no aplica (entrada: secuencia proteica y SMILES) |
 | Licencia | no disponible |
-| Formato de pesos | joblib (pesos serializados de scikit-learn/xgboost) y safetensors; incluye `nbr_ref.npz` con etiquetas de entrenamiento para features de vecindad |
+| Formato de pesos | safetensors, joblib |
+| Tamano del repositorio | 1.8 GB |
+| Entrada | `sequence` (proteina) y `smiles` (sustrato) |
+| Salida | `id`, `log10_kcat`, `log10_km` |
+| Ejecucion | CPU-only, offline, 2 hilos |
+| Version | v5 (reemplaza a v2) |
 
 ## Arquitectura y entrenamiento
 
-El pipeline no es una red neuronal unica ni un transformer de extremo a extremo. La model card describe una receta por objetivo: para `kcat` se usa `blend_top3` (mezcla de los tres mejores modelos) y para `km` se usa `et_all` (ExtraTrees entrenado con todas las features). Las features de entrada combinan embeddings de secuencia via ESM-2 (`ESM-2 used: True`), descriptores de sustrato calculados con RDKit (`sub_rdkit`), y features de vecindad y target encoding (`neighbour/target-encoding features: True`). Se emplean tambien modelos MLP (`MLP: True`).
+El modelo no es un transformer unico, sino un ensamblado de modelos clasicos de regresion. Para `kcat` combina `et_hand_sub_rd` (ExtraTrees), `xgbT_tuned` (XGBoost) y `xgb_esmml_hand_sub` (XGBoost). Para `Km` combina `et2_esm_hand_sub` (ExtraTrees), `mlp_all` (perceptron multicapa) y `xgbT_tuned` (XGBoost). La combinacion se realiza mediante *blending*, es decir, un promedio ponderado o meta-modelo de las predicciones individuales.
 
-No se especifican en la informacion disponible el numero de tokens ni la composicion exacta del dataset de entrenamiento, mas alla de la referencia a `train.parquet`. La validacion reportada es una validacion cruzada agrupada por clusters (`Grouped cluster-CV`) sobre `train.parquet`, con un Mean SCC estimado de 0,5660, que el propio autor advierte que no es una puntuacion oficial. No se documentan fases de RLHF, DPO ni tecnicas de decodificacion, ya que no es un modelo generativo.
+Las caracteristicas de entrada pertenecen a seis grupos: `esm`, `esm_max`, `esm_ml`, `hand`, `sub_hash` y `sub_rdkit`. Los grupos `esm*` corresponden a embeddings de proteina derivados de modelos ESM; `hand` agrupa caracteristicas manuales de la secuencia; `sub_hash` y `sub_rdkit` son representaciones del sustrato basadas en hashing y descriptores RDKit. La model card indica explicitamente que no se usan caracteristicas de *target encoding* ni de etiquetas de vecinos, lo que mitiga el riesgo de fuga de informacion (*leakage*), de ahi el nombre "leak-curber".
+
+El entrenamiento se evaluo con validacion cruzada de 5 pliegues agrupando secuencias por clusters con solapamiento de 5-meros de 0.1. La SCC de referencia de v2 fue 0.5245, la final 0.5561 y la estimacion nested (libre de sesgo de seleccion) 0.5540, con un optimismo de +0.0021. El autor insiste en que estas cifras no son puntuaciones oficiales.
 
 ## Capacidades
 
 - Prediccion de `log10_kcat` a partir de secuencia de enzima y SMILES de sustrato.
 - Prediccion de `log10_km` con la misma entrada.
-- Generacion de fichero CSV de salida con columnas `id, log10_kcat, log10_km`, una fila por id de entrada y solo valores finitos.
-- Extraccion de features proteicas mediante ESM-2.
-- Calculo de descriptores quimicos de sustrato mediante RDKit.
-- Uso de features de vecindad y target encoding para mejorar la generalizacion.
-- Ejecucion en CPU, offline, con dos hilos, mediante script y contenedor Docker.
-- No soporta tool calling, agentes, razonamiento multi-paso, vision, audio ni capacidades multilingues: no es un modelo de lenguaje.
+- Procesamiento por lotes mediante fichero Parquet de entrada y salida CSV.
+- Ejecucion en CPU sin GPU, en modo offline y con 2 hilos.
+- Uso de embeddings ESM de proteina y descriptores RDKit de molecula pequena.
+- No soporta tool calling, agentes, razonamiento multi-paso ni generacion de texto.
+- No es multilingue en sentido linguistico: su "lenguaje" de entrada es biologico/quimico.
 
 ## Casos de uso
 
-- Priorizacion de enzimas candidatas en ingenieria de proteinas: dado un conjunto de secuencias y sustratos, el modelo estima kcat y Km para ordenar candidatos antes de validacion experimental, reduciendo el numero de ensayos de laboratorio necesarios.
-- Diseno de vias metabolicas en biologia sintetica: al predecir parametros cineticos de pares enzima-sustrato, permite alimentar modelos cineticos de red y detectar cuellos de botella antes de construir la cepa.
-- Filtrado en cribados masivos: procesar lotes en formato parquet y obtener predicciones en CSV en un entorno CPU offline, adecuado para pipelines bioinformaticos reproducibles con Docker y sin acceso a red.
-- Analisis de mutagenesis: evaluar como variantes de una misma enzima (distintas secuencias) alteran la kcat o la Km estimada frente a un sustrato fijo, para guiar experimentos de evolucion dirigida.
-- Enriquecimiento de bases de datos de enzimas: anotar entradas sin parametros cineticos medidos con estimaciones de kcat y Km, marcando claramente que son predicciones y no medidas.
-- Docencia y reproducibilidad de proyectos academicos: el contenedor Docker con versiones fijadas de scikit-learn, xgboost y torch permite reproducir el pipeline en un curso o evaluacion, siempre que se incluya `nbr_ref.npz`.
-- Baseline interno para comparar modelos futuros: la receta documentada (ESM-2 + RDKit + target encoding + ensemble) sirve como referencia reproducible frente a la que medir mejoras en prediccion cinetica.
+- Priorizacion de enzimas candidatas en diseno de biocatalizadores: dado un panel de secuencias y sustratos, el modelo estima `kcat` y `Km` para ordenar candidatos antes de validacion experimental, reduciendo el numero de ensayos de laboratorio necesarios.
+- Filtrado en pipelines de ingenieria de proteinas: integrado en un flujo que genera variantes por mutagénesis dirigida, el modelo puntua cada variante y descarta las que predicen una `kcat` baja o un `Km` desfavorable.
+- Analisis de promiscuidad de sustrato: evaluando una misma enzima frente a una biblioteca de SMILES, se puede estimar que sustratos presentan mejor `Km` predicho y orientar estudios de especificidad.
+- Enriquecimiento de bases de datos de cinetica enzimatica: para entradas de BRENDA u otras bases sin `kcat`/`Km` medidos, el modelo puede aportar estimaciones preliminares etiquetadas como predicciones.
+- Docencia y prototipado en bioinformatica: el pipeline Docker reproducible (CPU, offline, 2 hilos) permite a estudiantes ejecutar un flujo completo de regresion sobre datos de enzimas y sustratos sin infraestructura GPU.
+- Investigacion en modelos de prediccion cinetica: sirve como linea base reproducible (con particionado por clusters de secuencia) para comparar nuevas arquitecturas, como modelos de lenguaje proteicos o grafos moleculares.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El unico dato de rendimiento es el Mean SCC de 0,5660 obtenido por validacion cruzada agrupada por clusters sobre `train.parquet`, que el propio autor califica explicitamente como no oficial.
+Los unicos datos publicados en la model card son de validacion cruzada interna, no de benchmarks oficiales. Se presentan a continuacion tal como los reporta el autor:
+
+| Metrica | v2 (referencia) | v5 final | v5 nested (sin sesgo de seleccion) |
+|---|---|---|---|
+| Mean SCC (5-fold, clusters 5-mer 0.1) | 0.5245 | 0.5561 | 0.5540 |
+| Optimismo estimado | — | +0.0021 | — |
+| Ganancia estimada sobre v2 (Mean SCC) | — | +0.0295 | IC bootstrap [+0.0252, +0.0389] |
+
+No se han publicado resultados de benchmarks externos (por ejemplo, sobre test sets independientes tipo DLKcat o EITLEM) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: el autor indica ejecucion CPU-only, offline y con 2 hilos (`--cpus 2`).
-- VRAM: no aplica; no se documenta uso de GPU para inferencia.
-- GPU recomendadas: no disponible; el diseno es CPU-first.
-- Cabida en GPU de consumo: no aplica segun la documentacion disponible.
-- Despliegue: script `predict.py` dentro de imagen Docker (`docker build -t kk-model .`), con montaje de volumenes para datos de entrada y salida y `--network none`.
-- Tamano en disco: repositorio de 1,1 GB, que incluye pesos joblib/safetensors y `nbr_ref.npz`.
-- Latencia y throughput: no disponibles; dependen del tamano del lote de secuencias y del coste de los embeddings ESM-2.
+- Inferencia en CPU exclusivamente; no requiere GPU.
+- Memoria recomendada: 16 GB de RAM segun el ejemplo de `docker run` de la model card.
+- CPU: 2 hilos configurados en el ejemplo de ejecucion.
+- No cabe ni aplica el concepto de VRAM, al no ser un modelo neuronal grande.
+- Despliegue mediante contenedor Docker (`docker build --platform linux/amd64`), con red deshabilitada (`--network none`).
+- Dependencias fijadas a las versiones del entorno de entrenamiento de Kaggle: scikit-learn, xgboost, lightgbm y catboost deben mantenerse en esas versiones porque los modelos estan serializados con pickle/joblib.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables ni datos de rendimiento de alternativas de prediccion de kcat/Km.
+No se dispone de datos de rendimiento de este modelo frente a alternativas en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible. A modo orientativo, los modelos de la misma categoria (prediccion de `kcat`/`Km`) incluyen DLKcat, UniKP y EITLEM, pero no se han encontrado en la informacion disponible resultados comparables que permitan una tabla fiable.
+
+| Modelo | Tipo | Entrada | Licencia | Datos comparativos |
+|---|---|---|---|---|
+| leak-curber-kcat-km (este) | Ensamblado ML clasico | Secuencia + SMILES | no disponible | SCC CV interna 0.5561 |
+| DLKcat | Red neuronal (GNN + CNN) | Secuencia + SMILES | no disponible en esta ficha | no disponible |
+| UniKP | Framework unificado | Secuencia + SMILES | no disponible en esta ficha | no disponible |
+| EITLEM | Modelo con preentrenamiento | Secuencia + SMILES | no disponible en esta ficha | no disponible |
 
 ## Limitaciones y advertencias
 
-- El Mean SCC de 0,5660 es una estimacion por validacion cruzada agrupada y el autor advierte que no es una puntuacion oficial; no debe presentarse como metrica de produccion.
-- `nbr_ref.npz` contiene etiquetas de entrenamiento usadas para las features de vecindad y debe distribuirse junto con los modelos; sin el, las predicciones no son validas.
-- Los pesos estan serializados con joblib y dependen de versiones concretas de scikit-learn, xgboost y torch; el autor recomienda mantener versiones cercanas a las del entorno de entrenamiento, lo que supone un riesgo de compatibilidad.
-- No se declara licencia: no hay autorizacion explicita para uso comercial ni para redistribucion; debe contactarse con el autor antes de cualquier uso en produccion.
-- No se documentan sesgos, cobertura del espacio quimico, dominio de aplicabilidad ni tasas de alucinacion o error por tipo de enzima o sustrato.
-- Solo se devuelven valores finitos por id; no se especifica el tratamiento de entradas fuera de distribucion ni de secuencias o SMILES invalidos.
-- Proyecto academico con 54 descargas y 0 likes: madurez y soporte limitados, sin pipeline ni idiomas declarados en Hugging Face.
-- No es un modelo de lenguaje: no admite prompts, tool calling ni razonamiento; cualquier uso conversacional es inadecuado.
+- Las metricas reportadas son de validacion cruzada interna, no de un test set oficial; el autor lo advierte explicitamente.
+- La ganancia de +0.0295 SCC sobre v2 es una estimacion con intervalo de confianza, no una garantia.
+- El modelo depende de versiones concretas de scikit-learn, xgboost, lightgbm y catboost; actualizar estas librerias puede romper la carga de los modelos serializados.
+- Licencia no especificada: no se puede asumir uso comercial sin consultar al autor.
+- No se documentan sesgos ni cobertura del espacio quimico o proteico de entrenamiento; la extrapolacion a familias enzimaticas o sustratos alejados del conjunto de entrenamiento es incierta.
+- Riesgo de sobreajuste a la distribucion de los datos de entrenamiento y de predicciones poco fiables fuera de ella.
+- La salida es logaritmica (`log10_kcat`, `log10_km`); cualquier uso downstream debe aplicar la transformacion inversa correctamente.
+- No es un modelo de lenguaje: no genera texto, no razona ni soporta agentes.
+- El repositorio es de 1.8 GB, lo que puede ser relevante para despliegues con limites de almacenamiento.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/anubhav-k/leak-curber-kcat-km
-- No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos.

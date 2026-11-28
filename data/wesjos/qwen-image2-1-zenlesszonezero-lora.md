@@ -2,87 +2,90 @@
 
 ## Resumen
 
-Qwen-Image2.1-ZenlessZoneZero-Lora es un adaptador LoRA de estilo entrenado sobre el modelo de difusion Qwen-Image-2.1, desarrollado por el usuario wesjos y publicado en Hugging Face. Su proposito es transferir la estetica visual del videojuego Zenless Zone Zero (paleta, iluminacion, linework y renderizado de personajes) a la generacion de imagenes, tanto en modo texto-a-imagen como en edicion imagen-a-imagen. El repositorio ocupa 1,6 GB y acumula cerca de 2.000 descargas desde su publicacion.
+Qwen-Image2.1-ZenlessZoneZero-Lora es un adaptador LoRA de estilo entrenado sobre el modelo de difusion Qwen-Image-2.1, desarrollado por el usuario wesjos. Su proposito es transferir la estetica visual del videojuego Zenless Zone Zero (ZZZ) de HoYoverse a la generacion y edicion de imagenes, sin necesidad de reentrenar el modelo base completo. El adaptador se publica bajo licencia Apache-2.0 y esta pensado para su uso en flujos de trabajo de ComfyUI y la libreria diffusers.
 
-El modelo resuelve un problema acotado pero muy demandado en comunidades de creacion de contenido: obtener un estilo artistico concreto sin necesidad de reentrenar un modelo base completo. Al ser un adaptador sobre Qwen-Image-2.1, hereda las capacidades del modelo base y anade el sesgo estilistico del juego. La palabra de activacion es `zenlesszonezero`, aunque el autor indica que el estilo tambien se transfiere sin ella.
+El modelo resuelve un problema concreto: conseguir un estilo visual coherente y reconocible (paleta, iluminacion, linework y renderizado de vestuario propios de ZZZ) manteniendo la identidad y composicion de personajes en tareas de image-to-image. Funciona tanto en modo text-to-image como en edicion img2img, y la palabra de activacion `zenlesszonezero` es opcional segun el autor, ya que el estilo tambien se transfiere sin ella.
 
-La relevancia actual radica en su integracion con ComfyUI y en que el autor documenta exhaustivamente los ajustes de muestreo utilizados (LoRA 0.80 en el modelo y 0.85 en el text encoder, sampler `euler` con scheduler `simple`, 30 pasos, CFG 4.0 y AuraFlow shift 3.0), lo que facilita la reproducibilidad. La licencia Apache-2.0 permite uso comercial sin restricciones adicionales.
+Se trata de un adaptador ligero (repo de 1.6 GB) que hereda la arquitectura y capacidades del modelo base Qwen-Image-2.1. No es un modelo independiente: requiere cargar Qwen-Image-2.1 como modelo de difusion subyacente. Su interes actual radica en la creciente comunidad de LoRAs de estilo para modelos de imagen open source y en la popularidad del universo ZZZ como referencia estetica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre el modelo de difusion Qwen-Image-2.1 |
-| Parametros totales | no disponible (el repo pesa 1,6 GB; el numero de parametros del adaptador no se especifica) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre modelo de difusion Qwen-Image-2.1 |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de imagen) |
-| Tipos de cuantizacion | no disponible para el adaptador; el modelo base usado en los ejemplos es `qwen_image_2.1_int8_convrot.safetensors` (INT8) |
-| Idiomas soportados | en, zh (segun los metadatos de la model card) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el autor menciona un base int8 en ComfyUI: `qwen_image_2.1_int8_convrot.safetensors`) |
+| Idiomas soportados | en, zh |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (via libreria `diffusers`; compatible con ComfyUI) |
+| Formato de pesos | safetensors (libreria diffusers); tamano del repo 1.6 GB |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un LoRA, es decir, un conjunto de matrices de bajo rango insertadas en las capas del modelo base Qwen-Image-2.1, que es un modelo de difusion para generacion de imagenes. El adaptador modifica tanto el UNet/transformer de difusion como el text encoder, con intensidades distintas recomendadas (0.80 y 0.85 respectivamente). El modelo base empleado para generar los ejemplos es la version INT8 con rotacion de convoluciones (`qwen_image_2.1_int8_convrot.safetensors`) distribuida para ComfyUI.
+El adaptador es un LoRA de estilo que se aplica sobre Qwen-Image-2.1, un modelo de difusion texto-a-imagen. El autor indica que el modelo base utilizado durante el desarrollo fue la variante int8 para ComfyUI (`qwen_image_2.1_int8_convrot.safetensors`). No se detalla en la informacion disponible el numero de imagenes de entrenamiento, la composicion del dataset ni los hiperparametros del entrenamiento (rango del LoRA, learning rate, numero de pasos).
 
-No se dispone de informacion sobre el dataset de entrenamiento: numero de imagenes, resoluciones, composicion, uso de captions o si hubo tecnicas de regularizacion. Tampoco se documenta el numero de pasos de entrenamiento, el rango del LoRA ni la tasa de aprendizaje. La model card se limita a describir el uso y los resultados, no el proceso de entrenamiento.
+La innovacion practica del adaptador reside en su doble uso: no solo aplica el estilo en generacion desde cero, sino que en modo edicion (img2img) reestiliza una imagen de entrada preservando identidad de personaje, pose y composicion, mientras desplaza paleta, iluminacion, linework y renderizado de vestuario hacia el look de ZZZ. El autor menciona un plan de actualizacion para recolectar mas datos durante eventos de camara del juego, lo que sugiere un dataset en expansion.
 
 ## Capacidades
 
-- Generacion de imagenes texto-a-imagen con estetica Zenless Zone Zero, incluyendo retratos de personajes, escenas cotidianas y composiciones multijugador.
-- Edicion imagen-a-imagen: reestiliza una imagen de entrada preservando identidad del personaje, pose y composicion, mientras transforma paleta, iluminacion, linework y renderizado de vestuario.
-- Transferencia de estilo sin palabra de activacion: el autor confirma que las cinco imagenes de ejemplo se generaron sin incluir `zenlesszonezero` en el prompt.
-- Palabra de activacion opcional `zenlesszonezero` para forzar el estilo cuando sea necesario.
-- Soporte de resoluciones altas: los ejemplos se generan a 1920 x 1088 (latente 1920 x 1080).
-- Compatibilidad con flujos de ComfyUI, incluyendo metadatos de workflow embebidos en los PNG de ejemplo.
-- Capacidad multilingue heredada del modelo base: prompts en ingles y chino.
+- Generacion de imagenes texto-a-imagen con estetica Zenless Zone Zero.
+- Edicion de imagenes (image-to-image) con preservacion de identidad, pose y composicion.
+- Transferencia de estilo sin necesidad obligatoria de palabra de activacion (segun el autor).
+- Funciona con la palabra de activacion opcional `zenlesszonezero`.
+- Compatible con flujos de ComfyUI y con la libreria diffusers.
+- Soporte de prompts en ingles y chino.
+- Generacion a resoluciones altas (ejemplos a 1920 x 1088).
+- No se documentan capacidades de vision por comprension, tool calling ni agentes (es un modelo de generacion de imagen, no un LLM).
 
 ## Casos de uso
 
-- Creacion de fan art de estilo anime: el LoRA permite generar ilustraciones de personajes con la estetica exacta del juego, ideal para comunidades de fan art que necesitan coherencia visual en series de imagenes.
-- Prototipado de assets para videojuegos: estudios independientes pueden generar conceptos de personajes y escenarios con un look anime consistente antes de encargar el trabajo final a ilustradores.
-- Reestilizado de fotografias para redes sociales: usando el modo img2img, se puede convertir una foto real en una ilustracion con estetica ZZZ manteniendo la composicion original, util para avatares y contenido promocional.
-- Generacion de ilustraciones para mods y contenido derivado: la licencia Apache-2.0 permite integrar el adaptador en pipelines de produccion de contenido para comunidades de modding sin restricciones comerciales.
-- Creacion de webcomics y tiras ilustradas: la capacidad de mantener identidad de personaje entre generaciones permite producir paneles consistentes para narrativa visual.
-- Diseno de merchandising y prints: la resolucion de salida de 1920 x 1088 es suficiente para prints de tamano medio y productos derivados, con el estilo del juego como diferenciador.
-- Pruebas de concepto en pipelines de difusion: investigadores pueden usar este LoRA como caso de estudio de transferencia de estilo sobre Qwen-Image-2.1, comparando el efecto del adaptador en el modelo y en el text encoder.
+- Ilustracion de fan art con estetica ZZZ: el adaptador genera escenas completas (cafeterias, playas, calles urbanas) con el estilo visual del juego en una sola pasada, a resoluciones de 1920 x 1088, usando CFG 4.0 y 30 pasos.
+- Reestilizado de fotografia o arte existente: en modo img2img, con el prompt `re render this image in zenlesszonezero_style`, se transforma una imagen fotorrealista al look ZZZ conservando la composicion original, util para concept art o pruebas de direccion visual.
+- Prototipado de personajes para proyectos de videojuego: permite explorar variaciones de vestuario y ambientacion (cardigans, bikinis, delantales) manteniendo coherencia estilistica entre iteraciones.
+- Creacion de assets para comunidad y redes: generacion rapida de ilustraciones consistentes para publicaciones, banners o thumbnails con una identidad visual unificada.
+- Pruebas de pipeline en ComfyUI: sirve como caso de estudio para integrar LoRAs de estilo sobre Qwen-Image-2.1 en grafos de nodos con KSampler `euler`/`simple` y AuraFlow shift 3.0.
+- Edicion de arte promocional: reestilizar material grafico existente hacia la estetica del juego sin rehacer la ilustracion desde cero, gracias a la preservacion de identidad y pose en img2img.
+- Investigacion sobre transferencia de estilo con LoRAs: el adaptador puede usarse como referencia para estudiar como un LoRA de bajo rango modifica paleta, iluminacion y linework sin alterar la estructura de la escena.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente documenta los ajustes de generacion de sus ejemplos (LoRA 0.80 en modelo y 0.85 en text encoder, KSampler `euler` + `simple`, 30 pasos, CFG 4.0, shift 3.0, resolucion 1920 x 1088) y las semillas utilizadas, pero no ofrece metricas cuantitativas de calidad, FID ni comparaciones numericas con otros LoRAs.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma especifica para el adaptador. El modelo base Qwen-Image-2.1 en INT8 requiere previsiblemente entre 8 y 16 GB de VRAM, pero este dato no se confirma en la informacion proporcionada.
-- GPU recomendadas: no disponible. El autor no especifica hardware utilizado para generar los ejemplos.
-- Cabe en GPU de consumo: no confirmado, aunque el uso de la version INT8 del modelo base sugiere que puede ejecutarse en GPUs de gama alta para consumidores; no hay datos verificables.
-- Opciones de despliegue: ComfyUI (documentado por el autor, con workflows embebidos en los PNG), y la libreria `diffusers` (indicada en los metadatos del repositorio).
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explicita; depende del modelo base Qwen-Image-2.1 y de la cuantizacion empleada. El autor uso una variante int8 en ComfyUI.
+- GPU recomendadas: no disponibles en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada; el uso de una variante int8 sugiere que el autor busco reducir requisitos de memoria, pero no se especifica en que GPU se ejecuto.
+- Opciones de despliegue: ComfyUI (documentado por el autor) y diffusers (libreria declarada en la model card).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen-Image2.1-ZenlessZoneZero-Lora | LoRA de estilo | Qwen-Image-2.1 | 1920 x 1088 en ejemplos | Apache-2.0 | Hugging Face, ~1.958 descargas |
-| LoRA de estilo genericos sobre SDXL | LoRA de estilo | SDXL | 1024 x 1024 tipico | variable (muchos con licencia restrictiva) | Civitai, Hugging Face |
-| Qwen-Image-2.1 (modelo base) | Modelo de difusion completo | no aplica | no disponible | no disponible en esta ficha | Hugging Face |
+No se dispone de datos de benchmarks ni de especificaciones de LoRAs alternativos de estilo ZZZ sobre Qwen-Image-2.1 en la informacion proporcionada. La comparativa se limita a aspectos estructurales:
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a caracteristicas estructurales.
+| Modelo | Base | Tipo | Licencia | Idiomas | Formato |
+|---|---|---|---|---|---|
+| Qwen-Image2.1-ZenlessZoneZero-Lora | Qwen-Image-2.1 | LoRA de estilo | Apache-2.0 | en, zh | safetensors (diffusers) |
+| Otros LoRAs de estilo ZZZ sobre Qwen-Image-2.1 | Qwen-Image-2.1 | LoRA de estilo | no disponible | no disponible | no disponible |
+| LoRAs de estilo ZZZ sobre otros modelos de difusion | no disponible | LoRA de estilo | no disponible | no disponible | no disponible |
+
+No se han encontrado en la informacion disponible alternativas comparables con datos verificables de parametros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- No se documentan sesgos especificos, pero al entrenarse sobre un videojuego concreto puede reproducir estereotipos visuales del medio anime.
-- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar anatomia incorrecta, texto ilegible o incoherencias en escenas complejas.
-- La transferencia de estilo puede degradar la identidad del personaje en el modo img2img si la fuerza del LoRA es demasiado alta; el autor recomienda 0.80 en el modelo y 0.85 en el text encoder.
-- El modelo base esta entrenado principalmente en ingles y chino; los prompts en otros idiomas pueden funcionar peor.
-- La licencia Apache-2.0 permite uso comercial, pero el contenido generado con la estetica de Zenless Zone Zero puede estar sujeto a derechos de propiedad intelectual de HoYoverse; el autor no aborda esta cuestion.
-- No se especifican los datos de entrenamiento, lo que impide evaluar posibles problemas de copyright en el dataset.
-- El adaptador depende completamente de Qwen-Image-2.1; no es util sin el modelo base.
-- La model card advierte que el contenido generado no es necesariamente representativo del material original en todos los aspectos.
+- Sesgos conocidos: no documentados por el autor; al entrenarse sobre un estilo de videojuego, puede reproducir sesgos esteticos y de representacion del material de origen.
+- Riesgo de alucinacion visual: como todo modelo de difusion, puede generar detalles anatomicos o de vestuario incoherentes, especialmente en composiciones complejas con multiples personajes.
+- Dependencia del modelo base: requiere Qwen-Image-2.1; no funciona de forma autonoma.
+- Cobertura linguistica limitada: solo se declaran en y zh; el comportamiento con prompts en castellano no esta documentado.
+- Dataset en expansion: el autor indica que espera recolectar mas datos en futuros eventos del juego, por lo que el estilo puede cambiar entre versiones (los ejemplos corresponden a la v1.7).
+- Contenido generado: el propio autor advierte que el contenido generado no es necesariamente representativo del material original en todos los aspectos.
+- Licencia: Apache-2.0 permite uso comercial, pero deben respetarse las condiciones del modelo base Qwen-Image-2.1 y los derechos de propiedad intelectual asociados a la franquicia Zenless Zone Zero (HoYoverse), no cubiertos por la licencia del adaptador.
+- Ajustes sensibles: los resultados dependen de la fuerza del LoRA (0.80/0.85 en los ejemplos), CFG y sampler; valores fuera de ese rango no estan documentados.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/wesjos/Qwen-Image2.1-ZenlessZoneZero-Lora
+- Modelo en Hugging Face: https://huggingface.co/wesjos/Qwen-Image2.1-ZenlessZoneZero-Lora
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Ejemplos texto-a-imagen: https://huggingface.co/wesjos/Qwen-Image2.1-ZenlessZoneZero-Lora/resolve/main/examples/t2i_01.png (y sucesivos t2i_02 a t2i_05)
-- Ejemplo de edicion: https://huggingface.co/wesjos/Qwen-Image2.1-ZenlessZoneZero-Lora/resolve/main/edit/edit0_compare.jpg
+- Ejemplos text-to-image: https://huggingface.co/wesjos/Qwen-Image2.1-ZenlessZoneZero-Lora/resolve/main/examples/t2i_01.png
+- Ejemplo de edicion img2img: https://huggingface.co/wesjos/Qwen-Image2.1-ZenlessZoneZero-Lora/resolve/main/edit/edit0_compare.jpg

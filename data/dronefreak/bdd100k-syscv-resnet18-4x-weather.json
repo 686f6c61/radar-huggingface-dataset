@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "dronefreak/bdd100k-syscv-resnet18-4x-weather",
+  "slug": "dronefreak-bdd100k-syscv-resnet18-4x-weather",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-syscv-resnet18-4x-weather",
+  "created_at": "2026-11-28T03:58:07.000Z",
+  "updated_at": "2026-11-28T03:58:27.000Z",
+  "license": "bdd100k",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "mmcls",
+  "languages": [],
+  "tags": [
+    "mmcls",
+    "safetensors",
+    "resnet_tagging",
+    "image-classification",
+    "resnet",
+    "weather-tagging",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "driving-scenes",
+    "bdd100k",
+    "mirror",
+    "dataset:dronefreak/BDD100K",
+    "arxiv:1512.03385",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11189703,
+  "parameters_human": "11.2M",
+  "storage_bytes": 98778317,
+  "storage_human": "99 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K",
+      "metric": "Top-1 accuracy (weather, val, reported by SysCV)",
+      "value": 81.57
+    }
+  ],
+  "sources": []
+}

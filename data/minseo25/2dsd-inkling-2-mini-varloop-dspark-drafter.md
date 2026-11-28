@@ -2,17 +2,17 @@
 
 ## Resumen
 
-El 2DSD DSpark drafter para TML-d24-varloop-research es un modelo auxiliar de decodificacion especulativa (drafter) desarrollado por minseo25, en el contexto del proyecto 2DSD (Two-Dimensional Speculative Decoding for Looped Language Models) del SqueezeAILab. No es un modelo de lenguaje autonomo: es un componente que acelera la inferencia del modelo objetivo thinkingmachines/TML-d24-varloop-research, la variante de bucle variable de Inkling 2 Mini, que se ejecuta con R = 3 bucles y KV por bucle. Su funcion es proponer tokens candidatos que el modelo objetivo verifica, manteniendo exactamente la distribucion de salida del modelo base.
+El modelo `minseo25/2dsd-inkling-2-mini-varloop-dspark-drafter` es un drafter de decodificación especulativa diseñado para acelerar la inferencia de modelos de lenguaje con bucles ("looped language models"). No es un modelo generativo autónomo, sino un componente auxiliar que propone tokens candidatos que el modelo objetivo verifica. Lo desarrolla Minseo Kim y colaboradores en el marco del trabajo 2DSD (Two-Dimensional Speculative Decoding for Looped Language Models), vinculado a SqueezeAILab y a Thinking Machines.
 
-Tecnicamente es un drafter DSpark condicionado por profundidad: un backbone DFlash de 5 capas Transformer con el ancho oculto del objetivo (2304), una cabeza Markov de rango 256 y una cabeza de confianza, con tamano de bloque k = 8. Un unico drafter sirve para todas las profundidades de bucle r = 1, ..., R (R = 3), lo que evita mantener un drafter distinto por cada iteracion del modelo objetivo. Con 541.880.065 parametros y un repo de 1,1 GB, es un modelo compacto pensado para desplegarse junto al objetivo.
+El modelo objetivo es `thinkingmachines/TML-d24-varloop-research`, la variante de bucle variable de Inkling 2 Mini, ejecutada con R = 3 bucles y KV por bucle. El drafter tiene 541,88 millones de parámetros y utiliza una arquitectura DFlash de 5 capas Transformer con el ancho oculto del objetivo (2304), una cabeza Markov de rango 256, una cabeza de confianza y un tamaño de bloque k = 8. Su innovación principal es que un único drafter sirve para todas las profundidades de bucle r = 1, ..., R, combinando características del bucle R de tokens confirmados con las del bucle r de tokens en vuelo.
 
-Su relevancia es practica: los modelos con bucles iterativos (looped language models) son mas costosos de decodificar porque repiten el paso por el mismo bloque de capas. 2DSD ataca ese coste con decodificacion especulativa en dos dimensiones (profundidad de bucle y tiempo), y este drafter es la pieza que habilita dicha aceleracion, con incrementos de throughput de hasta 3,96x en HumanEval+ frente a la decodificacion autorregresiva.
+Es relevante porque la decodificación especulativa en modelos con bucles plantea un problema adicional: el drafter debe operar en distintas profundidades de cómputo. 2DSD resuelve esto con un drafter condicionado por profundidad que alcanza aceleraciones de hasta 3,96× en HumanEval+ y mantiene la distribución de salida del decodificado autorregresivo, con una precisión media comparable (78,2 % frente a 79,2 % en R = 3).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | DFlash backbone de 5 capas Transformer (drafter DSpark condicionado por profundidad) con cabeza Markov (rango 256) y cabeza de confianza |
+| Arquitectura | DFlash: 5 capas Transformer con ancho oculto 2304, cabeza Markov (rango 256) y cabeza de confianza; drafter de decodificacion especulativa condicionado por profundidad de bucle |
 | Parametros totales | 541.880.065 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,79 +23,98 @@ Su relevancia es practica: los modelos con bucles iterativos (looped language mo
 
 ## Arquitectura y entrenamiento
 
-El drafter es un DSpark condicionado por profundidad sobre un backbone DFlash de 5 capas Transformer con ancho oculto 2304 (el mismo del modelo objetivo), una cabeza Markov de rango 256 y una cabeza de confianza, con tamano de bloque k = 8. La innovacion clave es que un unico drafter sirve para todas las profundidades de bucle r = 1, ..., R con R = 3. Para ello recibe entradas de contexto de bucle procedentes de cinco capas del objetivo por cada bucle (las entradas de las capas 2, 7, 12, 17 y 22 de 24, en indexacion base 0): al redactar en el bucle r, el contexto combina caracteristicas del bucle R de los tokens ya confirmados con caracteristicas del bucle r de los tokens en vuelo. El modelo reutiliza los embeddings congelados y la LM head del checkpoint objetivo, mientras que el embedding de mascara es aprendido. No incluye pesos del modelo objetivo.
+El drafter es un backbone DFlash de 5 capas Transformer con el ancho oculto del modelo objetivo (2304), complementado con una cabeza Markov de rango 256 y una cabeza de confianza, y opera con tamaño de bloque k = 8. Recibe entradas de contexto de bucle procedentes de cinco capas del objetivo por cada bucle (las entradas de las capas 2, 7, 12, 17 y 22 de 24). Al generar borradores en el bucle r, el contexto combina características del bucle R de los tokens confirmados con características del bucle r de los tokens en vuelo. Utiliza los embeddings y la cabeza LM congelados del objetivo, leídos desde el checkpoint del modelo objetivo, mientras que el embedding de máscara sí se entrena.
 
-El entrenamiento se realizo sobre rollouts de 13K prompts durante diez epocas con tamano de bloque 8, muestreando las profundidades de entrenamiento r en {1, 2, 3} con probabilidades (0,5, 0,25, 0,25). La decodificacion 2DSD verifica con el ultimo bucle, de modo que preserva las salidas greedy y la distribucion de muestreo del modelo objetivo. Por defecto la decodificacion es greedy; con `--temperature 0.6 --top-p 0.95` se activa el muestreo.
+El entrenamiento se realizó sobre rollouts de 13.000 prompts durante diez épocas con tamaño de bloque 8, muestreando profundidades de entrenamiento r en {1, 2, 3} con probabilidades (0,5, 0,25, 0,25). Un único drafter sirve para todas las profundidades r = 1, ..., R. Según la model card, el modelo se entrenó sobre las salidas del objetivo y no incluye pesos del mismo. No se detalla la composición del dataset ni si hubo etapas de RLHF o DPO, dado que se trata de un drafter y no de un modelo generativo completo.
 
 ## Capacidades
 
-- Aceleracion de decodificacion especulativa para el modelo objetivo TML-d24-varloop-research con R = 3 bucles y KV por bucle.
-- Redaccion (drafting) condicionada por profundidad de bucle: un unico drafter cubre r = 1, 2, 3.
-- Propuesta de bloques de hasta k = 8 tokens candidatos por paso, verificados por el modelo objetivo.
-- Preservacion de la distribucion de salida del objetivo: mantiene salidas greedy y el muestreo del modelo base.
-- Cabeza de confianza para estimar la fiabilidad de los tokens propuestos.
-- No es un modelo de proposito general: no genera texto de forma autonoma, no soporta tool calling, agentes, vision ni audio por si mismo.
+- Generación de borradores de tokens para decodificación especulativa sobre el modelo objetivo `thinkingmachines/TML-d24-varloop-research`.
+- Soporte de un único drafter para múltiples profundidades de bucle (r = 1, ..., R), con R = 3 por defecto y generalización sin reentrenamiento a R = 4 y R = 5.
+- Decodificación greedy por defecto y soporte de muestreo con `--temperature 0.6 --top-p 0.95`.
+- Verificación con el último bucle, preservando las salidas greedy y la distribución de muestreo del objetivo.
+- No es un modelo de chat, razonamiento o código autónomo: hereda las capacidades del modelo objetivo a través de la verificación.
+- Capacidades multilingües: no disponibles (dependen del objetivo, no documentadas para el drafter).
+- No soporta tool calling ni function calling por sí mismo.
+- No soporta agentes ni razonamiento multi-paso de forma nativa.
 
 ## Casos de uso
 
-- Aceleracion de inferencia de Inkling 2 Mini en produccion: desplegar el drafter junto al objetivo para reducir la latencia de decodificacion en tareas de razonamiento matematico, donde se observa una mejora de 3,65x en MATH-500.
-- Generacion de codigo de alto throughput: en pipelines de generacion de codigo (HumanEval+, MBPP+) el drafter alcanza 3,96x y 3,47x de speedup respectivamente, util para asistentes de codigo con alta concurrencia.
-- Servicio de resolucion de problemas matematicos: con GSM8K a 292,0 tok/s (3,14x) y AIME24/25 a 313,9 tok/s (3,42x), adecuado para aplicaciones de tutoria o evaluacion matematica automatizada.
-- Evaluacion de razonamiento cientifico: en GPQA-Diamond el drafter ofrece 2,88x, lo que permite abaratar baterias de evaluacion sobre preguntas de nivel doctorado.
-- Benchmarking de modelos con bucles: usar el drafter para medir el coste real de decodificacion de modelos looped frente a alternativas autorregresivas o MTP.
-- Investigacion en decodificacion especulativa: servir de base reproducible para estudiar el drafting condicionado por profundidad y el impacto del tamano de bloque k = 8 en la tasa de aceptacion.
-- Despliegue en infraestructura H100 NVL: el drafter esta validado a concurrencia 1 con decodificacion greedy en H100 NVL, lo que facilita su integracion en entornos de servidor con esa GPU.
+- Aceleración de inferencia en producción sobre TML-d24-varloop-research: el drafter se integra en el runner de 2DSD para reducir la latencia de decodificación, con aceleraciones medias de 3,37× en R = 3 y hasta 4,01× en R = 4 sobre H100 NVL.
+- Servicio de razonamiento matemático de alto throughput: en tareas como MATH-500 y GSM8K, el drafter eleva el throughput de 92,8 a 339,0 tok/s y de 93,1 a 292,0 tok/s respectivamente, adecuado para APIs que atienden muchas peticiones de razonamiento.
+- Generación de código en pipelines de CI/CD: en HumanEval+ y MBPP+ alcanza 368,1 y 323,2 tok/s, lo que permite validar y autocompletar código con menor latencia en herramientas de desarrollo.
+- Evaluación de modelos con bucle variable: al soportar R = 3, 4 y 5 sin reentrenamiento, permite comparar configuraciones de bucle del objetivo manteniendo la aceleración en todas ellas.
+- Investigación en decodificación especulativa: sirve como referencia reproducible para estudiar drafters condicionados por profundidad en arquitecturas con bucles, con código y paper públicos en SqueezeAILab/2DSD.
+- Despliegue en entornos con GPUs H100 NVL: los datos de throughput están medidos en esa GPU con concurrencia 1, por lo que encaja en infraestructuras de inferencia de gama alta con requisitos de baja latencia.
+- Benchmarking de tareas de razonamiento avanzado: en AIME24/25, GPQA-Diamond y OlympiadBench mantiene aceleraciones de 3,42×, 2,88× y 3,22× en R = 3, útil para suites de evaluación intensivas en cómputo.
 
 ## Benchmarks y rendimiento
 
-Throughput de decodificacion en tokens de salida por segundo (output tok/s), con speedup frente a autorregresivo entre parentesis. Concurrencia 1, decodificacion greedy, R = 3, H100 NVL. Respuestas repetitivas filtradas. Autorregresivo y MTP se ejecutan en el motor oficial de vLLM; 2DSD usa r1 = 1 y r2 = 2.
+Throughput de decodificación en tokens de salida por segundo (aceleración frente a autorregresivo), con respuestas repetitivas filtradas, concurrencia 1, decodificación greedy, R = 3, H100 NVL:
 
 | Tarea | Autorregresivo | MTP | 2DSD |
 |---|---:|---:|---:|
-| GSM8K | 93,1 | 225,1 (2,42x) | 292,0 (3,14x) |
-| MATH-500 | 92,8 | 243,7 (2,63x) | 339,0 (3,65x) |
-| HumanEval+ | 93,0 | 298,5 (3,21x) | 368,1 (3,96x) |
-| MBPP+ | 93,0 | 284,5 (3,06x) | 323,2 (3,47x) |
-| AIME24/25 | 91,8 | 257,9 (2,81x) | 313,9 (3,42x) |
-| GPQA-Diamond | 91,8 | 240,2 (2,62x) | 264,2 (2,88x) |
-| OlympiadBench | 91,5 | 250,4 (2,74x) | 294,6 (3,22x) |
-| Media | 92,5 | 257,2 (2,77x) | 313,6 (3,37x) |
+| GSM8K | 93,1 | 225,1 (2,42×) | 292,0 (3,14×) |
+| MATH-500 | 92,8 | 243,7 (2,63×) | 339,0 (3,65×) |
+| HumanEval+ | 93,0 | 298,5 (3,21×) | 368,1 (3,96×) |
+| MBPP+ | 93,0 | 284,5 (3,06×) | 323,2 (3,47×) |
+| AIME24/25 | 91,8 | 257,9 (2,81×) | 313,9 (3,42×) |
+| GPQA-Diamond | 91,8 | 240,2 (2,62×) | 264,2 (2,88×) |
+| OlympiadBench | 91,5 | 250,4 (2,74×) | 294,6 (3,22×) |
+| Media | 92,5 | 257,2 (2,77×) | 313,6 (3,37×) |
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval como metrica de acierto, etc.) para el drafter en la informacion disponible; los datos anteriores son exclusivamente de throughput.
+Generalización a R = 4 y R = 5 sin reentrenamiento:
+
+| Tarea | Autorregresivo (R = 4) | 2DSD (R = 4) | Autorregresivo (R = 5) | 2DSD (R = 5) |
+|---|---:|---:|---:|---:|
+| GSM8K | 73,6 | 267,7 (3,64×) | 60,7 | 218,5 (3,60×) |
+| MATH-500 | 73,3 | 322,1 (4,39×) | 60,5 | 258,8 (4,28×) |
+| HumanEval+ | 73,4 | 334,1 (4,55×) | 60,5 | 244,4 (4,04×) |
+| MBPP+ | 73,4 | 300,7 (4,09×) | 60,6 | 245,4 (4,05×) |
+| AIME24/25 | 72,6 | 299,6 (4,13×) | 60,0 | 249,3 (4,16×) |
+| GPQA-Diamond | 72,6 | 252,9 (3,48×) | 59,9 | 198,0 (3,31×) |
+| OlympiadBench | 72,4 | 283,3 (3,91×) | 59,7 | 226,6 (3,80×) |
+| Media | 73,0 | 294,3 (4,01×) | 60,3 | 234,4 (3,88×) |
+
+Precisión media (%) sobre las siete tareas, decodificación greedy:
+
+| Bucles | Autorregresivo | MTP | 2DSD |
+|---|---:|---:|---:|
+| R = 3 | 79,2 | 79,7 | 78,2 |
+| R = 4 | 79,9 | – | 80,0 |
+| R = 5 | 79,0 | – | 80,1 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita. Con 541,88 M de parametros en safetensors (repo de 1,1 GB), el drafter ocupa aproximadamente 1,1 GB en precision de entrenamiento; debe sumarse la memoria del modelo objetivo TML-d24-varloop-research.
-- GPU recomendadas: H100 NVL es la plataforma validada en la model card (concurrencia 1, greedy, R = 3). No se documentan otras GPU.
-- Cabe en GPU consumer: no disponible; no se especifica soporte para RTX 4090 u otras consumer.
-- Opciones de despliegue: el drafter se ejecuta mediante el repositorio SqueezeAILab/2DSD (`scripts/generate.py --model inkling-2-mini-varloop --drafter minseo25/2dsd-inkling-2-mini-varloop-dspark-drafter`). No se documenta soporte en vLLM, llama.cpp, Ollama ni TGI para el drafter; vLLM se menciona solo para las lineas base autorregresiva y MTP.
-- Latencia y throughput: media de 313,6 tok/s (3,37x) en H100 NVL, con maximos de 368,1 tok/s en HumanEval+ y minimos de 264,2 tok/s en GPQA-Diamond.
+- VRAM estimada para inferencia: no disponible de forma explícita; el repo ocupa 1,1 GB en safetensors, por lo que el drafter en precisión nativa requiere al menos esa cantidad más el espacio del modelo objetivo.
+- GPU recomendadas: los benchmarks se midieron en H100 NVL; no se documentan otras GPU.
+- ¿Cabe en GPU de consumo? No disponible; el drafter por sí solo es pequeño (541,88 M de parámetros), pero requiere el modelo objetivo completo para funcionar.
+- Opciones de despliegue: el runner oficial de 2DSD (`scripts/generate.py` del repositorio SqueezeAILab/2DSD) con `--model inkling-2-mini-varloop` y `--drafter minseo25/2dsd-inkling-2-mini-varloop-dspark-drafter`. Autorregresivo y MTP se ejecutan en el motor oficial vLLM; no se documenta soporte de llama.cpp, Ollama o TGI para este drafter.
+- Latencia y throughput: media de 313,6 tok/s en R = 3, 294,3 tok/s en R = 4 y 234,4 tok/s en R = 5 sobre H100 NVL, con concurrencia 1 y decodificación greedy.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Throughput (media) | Licencia | Disponibilidad |
-|---|---|---|---:|---:|---|---|
-| 2DSD DSpark drafter (este) | Drafter especulativo condicionado por profundidad | 541,88 M | no disponible | 313,6 tok/s (3,37x) | Apache 2.0 | Hugging Face + repo 2DSD |
-| MTP (drafter incluido en el checkpoint) | Drafter multi-token prediction | no disponible | no disponible | 257,2 tok/s (2,77x) | Apache 2.0 (del objetivo) | Incluido en el checkpoint del objetivo |
-| Decodificacion autorregresiva del objetivo | Sin drafter | no disponible (objetivo) | no disponible | 92,5 tok/s (1,00x) | Apache 2.0 | vLLM oficial |
+| Modelo | Parámetros | Contexto | Throughput medio (R = 3) | Licencia | Disponibilidad |
+|---|---:|---|---:|---|---|
+| 2DSD DSpark drafter (este) | 541,88 M | no disponible | 313,6 tok/s | Apache 2.0 | Hugging Face |
+| MTP drafter incluido en el checkpoint | no disponible | no disponible | 257,2 tok/s | Apache 2.0 | Incluido en el checkpoint del objetivo |
+| Decodificación autorregresiva (sin drafter) | no disponible | no disponible | 92,5 tok/s | Apache 2.0 | Motor oficial vLLM |
 
-No se dispone de datos de otros drafters comparables (por ejemplo, EAGLE o Medusa) para este modelo objetivo en la informacion proporcionada.
+El MTP bundled solo soporta R = 3, mientras que este drafter generaliza a R = 4 y R = 5 sin reentrenamiento. No se dispone de comparación con otros drafters de la literatura en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autonomo: solo funciona como drafter del objetivo TML-d24-varloop-research con R = 3 y KV por bucle; no puede usarse con otros modelos.
-- Requiere el repositorio 2DSD y su implementacion de drafting condicionado por profundidad; no hay soporte documentado en motores de inferencia estandar.
-- Los datos de throughput estan medidos exclusivamente en H100 NVL, concurrencia 1 y decodificacion greedy; el rendimiento en otros entornos, con batching o con muestreo no esta documentado.
-- Riesgo de alucinacion: al preservar la distribucion del objetivo, hereda los sesgos y errores del modelo base; el drafter no los corrige.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Idiomas soportados: no disponibles; dependen del modelo objetivo.
-- Longitud de contexto: no disponible; limitada por el objetivo.
-- Restricciones de licencia: Apache 2.0, la misma que TML-d24-varloop-research; el drafter no incluye pesos del objetivo, pero se entrena sobre sus salidas.
-- El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2026-11-24; es un artefacto de investigacion reciente sin validacion externa documentada.
+- No es un modelo generativo autónomo: requiere el modelo objetivo `thinkingmachines/TML-d24-varloop-research` y el runner de 2DSD para funcionar.
+- Las pequeñas diferencias de precisión frente al motor oficial (78,2 % frente a 79,2 % en R = 3) reflejan diferencias numéricas entre motores, no del drafter; 2DSD produce las mismas salidas que el decodificado autorregresivo en su propio runner.
+- El MTP bundled del objetivo solo soporta R = 3; este drafter cubre R = 3, 4 y 5, pero no se documentan otros valores de R.
+- No se documentan sesgos conocidos, riesgo de alucinación ni limitaciones idiomáticas propias del drafter; estos dependen del modelo objetivo.
+- La licencia Apache 2.0 se hereda del objetivo, sobre cuyas salidas se entrenó; no se incluyen pesos del objetivo en el repositorio.
+- Los datos de throughput están medidos únicamente en H100 NVL con concurrencia 1; el rendimiento en otros entornos no está documentado.
+- No se especifican tipos de cuantización soportados ni longitud de contexto, lo que limita la planificación de despliegues con requisitos de memoria ajustados.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/minseo25/2dsd-inkling-2-mini-varloop-dspark-drafter
-- Modelo objetivo: https://huggingface.co/thinkingmachines/TML-d24-varloop-research
 - Paper 2DSD: https://github.com/SqueezeAILab/2DSD/blob/main/paper/2DSD.pdf
-- Codigo 2DSD: https://github.com/SqueezeAILab/2DSD
+- Código 2DSD: https://github.com/SqueezeAILab/2DSD
+- Modelo objetivo: https://huggingface.co/thinkingmachines/TML-d24-varloop-research

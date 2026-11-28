@@ -2,119 +2,101 @@
 
 ## Resumen
 
-veil-pii-ko-small-3 es un modelo de clasificación de tokens (token classification) especializado en la detección de información personal identificable (PII) en texto coreano. Lo desarrolla el usuario kakao1513 y deriva por destilación de conocimiento del modelo profesor 1T/veil-pii-ko-lite, tomando como arquitectura base monologg/koelectra-small-v3-discriminator. Su función concreta es localizar tres tipos de entidades: nombres de persona (PERSON), direcciones (ADDRESS) y nombres de organizaciones (ORGANIZATION), devolviendo los desplazamientos de carácter exactos sobre el texto original.
+veil-pii-ko-small-3 es un modelo de clasificación de tokens (token classification) especializado en la detección de información personal identificable (PII) en texto en coreano. Lo desarrolla el usuario kakao1513 y se distribuye bajo licencia Apache 2.0. El modelo identifica tres tipos de entidades: nombres de persona (PERSON), direcciones (ADDRESS) y nombres de organizaciones (ORGANIZATION), y está pensado para ejecutarse en CPU en entornos de producción con requisitos de latencia y coste bajos.
 
-El modelo está pensado para ejecución en CPU: con 7,7 millones de parámetros y un archivo ONNX FP32 de 31 MB, está diseñado para integrarse en pipelines de anonimización o filtrado de datos sensibles donde no hay GPU disponible. Procesa documentos de longitud ilimitada mediante ventanas deslizantes de 128 tokens con solapamiento de 16, y emplea decodificación Viterbi restringida sobre un esquema BIOES de 13 etiquetas.
+La arquitectura es un ElectraForTokenClassification derivado de monologg/koelectra-small-v3-discriminator, con 8 capas, dimensión oculta de 256, FFN de 256 y 4 cabezas de atención. Cuenta con 7.748.621 parámetros totales (7,7 M) y se ha destilado por conocimiento desde el modelo profesor 1T/veil-pii-ko-lite. El repositorio ocupa 0,1 GB e incluye pesos en safetensors y una exportación ONNX en FP32 de 31 MB, lo que facilita su despliegue con onnxruntime.
 
-Su relevancia práctica reside en la combinación de bajo coste computacional y una precisión razonable en coreano: alcanza un F1 de 0,862 en el conjunto de test KDPII y 0,929 en el conjunto sintético heldout de Veil, con licencia Apache-2.0 que permite uso comercial sin restricciones adicionales.
+Su relevancia actual radica en la combinación de tamaño reducido, licencia permisiva y un proceso de entrenamiento documentado con destilación, aumento de datos por sustitución de entidades y etiquetado del profesor sobre corpus coreanos reales. El modelo procesa documentos de longitud ilimitada mediante ventanas de 128 tokens con solapamiento de 16, y emplea decodificación Viterbi restringida sobre etiquetas BIOES para generar los spans finales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo ELECTRA (ElectraForTokenClassification), 8 capas, hidden 256, FFN 256, 4 cabezas de atención |
-| Parámetros totales | 7.748.621 (7,7 M) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | ventana de 128 tokens con solapamiento de 16; longitud de documento ilimitada por fragmentación |
-| Tipos de cuantización | FP32 (ONNX); no se documentan otras cuantizaciones |
-| Idiomas soportados | coreano (ko) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors, ONNX (`model.fp32.onnx`, 31 MB) |
+| Arquitectura | ElectraForTokenClassification (transformer encoder, 8 capas, hidden 256, FFN 256, 4 cabezas de atencion) |
+| Parametros totales | 7.748.621 (7,7 M) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | Ventana de 128 tokens con solapamiento de 16; documento de longitud ilimitada mediante ventanas |
+| Tipos de cuantizacion | FP32 (ONNX); no se documentan otras cuantizaciones |
+| Idiomas soportados | Coreano (ko) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, ONNX (model.fp32.onnx) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ELECTRA small adaptado a clasificación de tokens: 8 capas de transformer con dimensión oculta 256, FFN de 256 y 4 cabezas de atención, sobre el checkpoint monologg/koelectra-small-v3-discriminator. La cabeza de clasificación emite 13 etiquetas en esquema BIOES (B-, I-, E-, S- para PERSON, ADDRESS y ORGANIZATION, más O), y la reconstrucción de spans se realiza con decodificación Viterbi restringida, lo que evita secuencias de etiquetas inválidas. El procesamiento de documentos largos se hace por ventanas de 128 tokens con 16 de solapamiento, sin límite de longitud de documento.
+El modelo parte de KoELECTRA-small v3 discriminator, del que se seleccionan 8 de las 12 capas y se poda la FFN de 1.024 a 256 dimensiones. Sobre esa base se aplica destilación de conocimiento desde el profesor 1T/veil-pii-ko-lite. La función de pérdida combina tres términos: entropía cruzada con label smoothing 0,05, divergencia KL con temperatura T=2 y factor T²=4, y MSE sobre estados ocultos. Para la destilación de estados ocultos se proyectan las capas 2, 5 y 8 del alumno a 768 dimensiones y se comparan con las capas 3, 8 y 12 del profesor tras normalización de capa. Las 129 etiquetas del profesor se colapsan en 13 etiquetas BIOES agregando las probabilidades de las etiquetas no objetivo en la clase O.
 
-El entrenamiento combina destilación de conocimiento desde 1T/veil-pii-ko-lite con supervisión directa: entropía cruzada sobre etiquetas gold, divergencia KL con el profesor a temperatura T=2 (agregando las probabilidades de las etiquetas fuera de las tres clases objetivo en la clase O) y error cuadrático medio sobre los estados ocultos. Las etiquetas gold provienen de KDPII train, BCCard/privacy-filter-openpii-masking, 1T/veil-pii-ko-synth y aumentación por sustitución de entidades sobre KDPII. Las etiquetas del profesor se generaron sobre aproximadamente 300.000 segmentos de e9t/nsmc, daekeun-ml/naver-news-summarization-ko, heegyu/korean-petitions y jojo0217/korean_safe_conversation. La selección del checkpoint final se hizo por máximo micro-F1 sobre las tres clases en el conjunto de validación KDPII.
+El entrenamiento se realizó en cuatro etapas encadenadas, cada una inicializada desde el mejor checkpoint de la anterior. La etapa inicial de destilación alcanzó un F1 de validación de 0,8598 sobre 129 etiquetas. La etapa de aumento por sustitución de entidades usó 154.734 filas y 228.760 ventanas, con 5 épocas y un F1 de 0,829540. La etapa de incorporación de etiquetas del profesor añadió 119.617 segmentos y alcanzó 0,834841. La etapa final, con 461.303 filas y 566.108 ventanas, logró un F1 de validación de 0,847036 en 3 épocas. El conjunto final combina KDPII train (43.494 filas), BCCard privacy-filter-openpii-masking (57.851), el corpus sintético 1T/veil-pii-ko-synth (25.780), aumentos por sustitución (27.609) y etiquetas del profesor sobre NSMC, noticias de Naver, peticiones ciudadanas y conversaciones seguras en coreano (306.569 en total). Se usó AdamW con weight decay 0,01, clipping de norma 1,0, learning rate máximo 5e-5 con warmup lineal de 3.184 pasos, batch de 32 ventanas y entrenamiento en una RTX 3070 de 8 GB con autocast bfloat16 y semilla 42.
 
 ## Capacidades
 
-- Detección de entidades PII en coreano: nombres de persona (PERSON), direcciones (ADDRESS) y nombres de organización (ORGANIZATION).
-- Salida con offsets de carácter exactos (`start`, `end`) y puntuación de confianza (`score`) por span, lo que permite sustituir o enmascarar el texto original sin recálculo.
-- Procesamiento de documentos de longitud arbitraria mediante fragmentación en ventanas de 128 tokens con solapamiento.
-- Decodificación Viterbi restringida que garantiza spans bien formados según el esquema BIOES.
-- Inferencia en CPU con ONNX Runtime, con control del número de hilos y del tamaño de lote.
-- No soporta tool calling, function calling, razonamiento multi-paso, agentes, visión ni audio: es exclusivamente un etiquetador de tokens.
-- No cubre otras categorías de PII (teléfonos, correos, identificadores, tarjetas) como etiquetas propias; el modelo card menciona pruebas con documentos que contienen identificadores y teléfonos, pero las etiquetas entrenadas son solo las tres indicadas.
+- Detección de PII en coreano para tres categorías: PERSON (nombres de persona), ADDRESS (direcciones) y ORGANIZATION (nombres de organizaciones).
+- Etiquetado de spans con esquema BIOES de 13 etiquetas y decodificación Viterbi restringida para garantizar secuencias válidas.
+- Procesamiento de documentos de longitud arbitraria mediante ventanas de 128 tokens con solapamiento de 16 y fusión de spans entre ventanas.
+- Devolución de offsets de caracteres sobre el texto original (`start`, `end`), junto con etiqueta y puntuación de confianza.
+- Inferencia en CPU con onnxruntime, con paralelización configurable por número de hilos.
+- Capacidad de ejecución en entornos sin GPU, incluida la exportación ONNX FP32 de 31 MB.
+- Soporte de procesamiento por lotes (batch) en la inferencia.
+- No soporta tool calling, function calling, agentes, visión, audio ni razonamiento multi-paso; es un modelo puramente extractivo de etiquetado de tokens.
 
 ## Casos de uso
 
-- Anonimización de registros de atención al cliente: el modelo localiza nombres y organizaciones en transcripciones o tickets y permite sustituirlos por marcadores antes de almacenar o compartir los datos, con offsets exactos que evitan errores de reemplazo por coincidencia de cadenas.
-- Redacción de documentos legales y administrativos coreanos: direcciones y nombres de personas físicas y jurídicas se detectan en contratos o expedientes de longitud arbitraria gracias a la fragmentación por ventanas, sin límite de tamaño de documento.
-- Preprocesado de corpus para entrenamiento de modelos: filtrado o enmascarado de PII en datasets coreanos (noticias, peticiones ciudadanas, conversaciones) antes de su publicación o uso en fine-tuning.
-- Cumplimiento normativo en pipelines de datos: integración como etapa de un ETL que marca o elimina PII conforme a requisitos de protección de datos, ejecutable en servidores sin GPU por su bajo coste (31 MB en FP32).
-- Moderación y publicación de contenido generado por usuarios: detección de nombres y organizaciones en foros o comentarios antes de mostrarlos públicamente, con latencia de milisegundos a segundos según el volumen.
-- Enmascarado en herramientas de escritorio o edge: al caber holgadamente en CPU y en memoria reducida, puede embeberse en aplicaciones locales de procesamiento de texto coreano sin depender de servicios en la nube.
-- Evaluación comparativa de destilación: servir como referencia ligera frente al profesor 1T/veil-pii-ko-lite en experimentos de compresión de modelos NER.
+- Desidentificación de documentos antes de enviarlos a modelos de lenguaje externos: el modelo detecta nombres, direcciones y organizaciones en texto coreano y permite enmascararlos o sustituirlos por marcadores antes de que el contenido salga del perímetro de la organización. Su tamaño de 7,7 M y su ejecución en CPU lo hacen viable como paso previo en pipelines de alto volumen.
+- Cumplimiento normativo y protección de datos: integración en flujos de tratamiento de expedientes, formularios o correos para localizar PII de forma automática y generar registros de tratamiento. La licencia Apache 2.0 permite su incorporación en productos comerciales sin obligaciones de redistribución del código.
+- Anonimización de corpus para investigación: limpieza de datasets coreanos de reseñas, noticias o peticiones ciudadanas antes de su publicación o uso en entrenamiento de otros modelos, con offsets exactos que permiten reconstruir el texto original de forma reversible.
+- Moderación y filtrado de contenido generado por usuarios: detección en tiempo real de datos personales en comentarios, foros o chats, con latencia baja al ejecutarse en CPU y sin necesidad de GPU dedicada.
+- Enmascaramiento en registros y logs de aplicaciones: procesamiento por lotes de trazas y logs en coreano para eliminar nombres y direcciones antes del almacenamiento o del envío a sistemas de observabilidad.
+- Preprocesado para pipelines de extracción de información: primera etapa que localiza entidades de tipo persona, dirección y organización y alimenta etapas posteriores de resolución de entidades, normalización de direcciones o vinculación con bases de datos internas.
+- Procesamiento en el borde (edge) y entornos con recursos limitados: despliegue en contenedores pequeños o dispositivos sin GPU gracias a los 31 MB del modelo ONNX y a la ausencia de dependencias pesadas más allá de onnxruntime y tokenizers.
 
 ## Benchmarks y rendimiento
 
-Evaluación con coincidencia exacta de span (inicio, fin y etiqueta), micro Precision/Recall/F1, sobre KDPII test (4.891 frases, 949 entidades gold) y sobre el conjunto sintético heldout de Veil (670 frases, 495 entidades). Hardware: AMD Ryzen 5 5600X (AVX2), WSL2 Ubuntu 22.04, 8 hilos de CPU, ONNX Runtime FP32, lote 16.
-
-| Conjunto | Modelo | Precision | Recall | F1 |
-|---|---|---:|---:|---:|
-| KDPII test | veil-pii-ko-small-3 | 0,850 | 0,874 | 0,862 |
-| KDPII test | veil-pii-ko-lite (profesor) | 0,891 | 0,898 | 0,894 |
-| Veil sintético heldout | veil-pii-ko-small-3 | 0,889 | 0,972 | 0,929 |
-| Veil sintético heldout | veil-pii-ko-lite (profesor) | 0,898 | 0,978 | 0,936 |
-
-Desglose por etiqueta en KDPII test:
-
-| Etiqueta (entidades gold) | Precision | Recall | F1 |
+| Conjunto | Precision | Recall | F1 |
 |---|---:|---:|---:|
-| PERSON (274) | 0,802 | 0,872 | 0,836 |
-| ADDRESS (208) | 0,810 | 0,904 | 0,855 |
-| ORGANIZATION (467) | 0,903 | 0,861 | 0,882 |
+| KDPII valid (epoca 1) | 0,832545 | 0,855199 | 0,843720 |
+| KDPII valid (epoca 2) | 0,824723 | 0,868805 | 0,846190 |
+| KDPII valid (epoca 3) | 0,833490 | 0,861030 | 0,847036 |
 
-Rendimiento en CPU sobre un documento de 200.000 caracteres (mediana de 3 ejecuciones, desde tokenización hasta generación del JSON de salida, modelo ya cargado):
-
-| Tipo de entrada | Tiempo |
-|---|---:|
-| Frases normales | 2,18 s |
-| Frases de evaluación concatenadas | 2,39 s |
-| Identificadores y teléfonos mezclados | 1,59 s |
-| Identificadores alfanuméricos densos | 0,18 s |
+Los resultados corresponden a la coincidencia exacta de spans sobre las tres entidades objetivo (PERSON, ADDRESS, ORGANIZATION), con micro-agregación de TP, FP y FN. El conjunto de validación KDPII contiene 5.011 filas y 1.029 spans objetivo. El modelo card menciona además conjuntos de test (KDPII test con 4.891 filas y 949 spans; Veil sintético heldout con 670 filas y 495 spans), pero no se incluyen en la información proporcionada los valores de precisión, recall y F1 obtenidos sobre ellos. Tampoco se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GSM8K, que no aplican a un modelo de etiquetado de tokens.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; el modelo en FP32 ocupa unos 31 MB en disco y una huella de memoria en RAM del orden de decenas de MB durante la inferencia.
-- GPU recomendadas: no aplica; está diseñado para CPU. Puede ejecutarse en GPU vía ONNX Runtime, pero no se documentan cifras en ese escenario.
-- CPU: cualquier procesador x86-64 con AVX2; las mediciones del autor se hicieron en un AMD Ryzen 5 5600X con 8 hilos.
-- Cabe en cualquier equipo de consumo, incluidos portátiles y entornos de escritorio sin acelerador.
-- Despliegue: ONNX Runtime (runtime principal, con el módulo `veil3` incluido en el repositorio), más los pesos safetensors para uso con Transformers. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no son adecuadas para un etiquetador de tokens de este tamaño.
-- Latencia y throughput: 2,18 s para un documento de 200.000 caracteres en frases normales y 0,18 s en entradas con identificadores alfanuméricos densos, en la configuración de CPU indicada; el rendimiento escala con el número de hilos y depende del procesador.
+- VRAM estimada para inferencia: prácticamente nula en CPU; en GPU, el modelo FP32 de 31 MB ocupa menos de 1 GB incluyendo activaciones y buffers de inferencia.
+- GPU recomendadas: no requiere GPU. Cualquier GPU con al menos 1 GB de memoria libre puede ejecutarlo; una RTX 3070 de 8 GB se usó para el entrenamiento, no para la inferencia.
+- Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU de consumo moderna e incluso en iGPU y CPU integradas.
+- Opciones de despliegue: onnxruntime (formato principal, con el script `veil3.py` incluido en el repositorio), PyTorch con los pesos safetensors, y exportación a otros runtimes ONNX compatibles. No se documenta soporte nativo para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos generativos.
+- Latencia y throughput estimados: no se publican cifras de latencia ni de throughput en la información disponible. La evaluación de test se realizó con ONNX Runtime FP32 sobre un AMD Ryzen 5 5600X en WSL2 con 8 hilos, ventanas de 128 tokens, solapamiento de 16 y batch de 16, pero sin reportar tiempos.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tarea | F1 (KDPII test) | Licencia |
-|---|---:|---|---|---:|---|
-| veil-pii-ko-small-3 | 7,7 M | ventana 128 tokens, documento ilimitado | NER PII coreano (3 clases) | 0,862 | Apache-2.0 |
-| 1T/veil-pii-ko-lite (profesor) | no disponible | no disponible | NER PII coreano (32 clases de salida, 3 evaluadas) | 0,894 | no disponible |
-| monologg/koelectra-small-v3-discriminator (base) | no disponible | no disponible | modelo de lenguaje/representaciones, no NER PII | no aplica | no disponible |
+| Modelo | Parametros | Contexto | Idiomas | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| veil-pii-ko-small-3 | 7,7 M | Ventanas de 128 tokens, documento ilimitado | Coreano | NER de PII (PERSON, ADDRESS, ORGANIZATION) | Apache 2.0 | Hugging Face, ONNX y safetensors |
+| 1T/veil-pii-ko-lite (profesor) | no disponible | no disponible | Coreano | NER de PII (129 etiquetas) | no disponible | Hugging Face |
+| monologg/koelectra-small-v3-discriminator (base) | no disponible | no disponible | Coreano | Modelo de lenguaje enmascarado / discriminador | no disponible | Hugging Face |
+| BCCard privacy-filter-openpii-masking (dataset asociado) | no aplica | no aplica | Coreano | Corpus de enmascaramiento de PII | no disponible | Hugging Face Datasets |
 
-La comparación directa solo es posible con el modelo profesor, del que este checkpoint es una destilación: pierde unos 3 puntos de F1 en KDPII test, concentrados en la recuperación de nombres y organizaciones, a cambio de un tamaño de 7,7 M de parámetros y ejecución en CPU. No se dispone de datos de benchmarks de otros detectores de PII coreanos en la información proporcionada.
+No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de F1 entre ellos. La comparación se limita a parámetros, idioma, tarea y licencia.
 
 ## Limitaciones y advertencias
 
-- Precisión inferior al profesor: aproximadamente 3 puntos de F1 menos en KDPII test, principalmente por menor recall en PERSON y ORGANIZATION.
-- Solo detecta tres categorías (PERSON, ADDRESS, ORGANIZATION); no identifica teléfonos, correos, números de tarjeta, identificadores fiscales ni otras PII, aunque el documento de prueba las contenga.
-- Solo evaluado en coreano; no hay evidencia de comportamiento en otros idiomas y no debe asumirse transferencia.
-- Hereda los criterios de anotación del modelo profesor, lo que puede producir discrepancias en los límites de los spans respecto a otros esquemas de anotación.
-- Riesgo de falsos negativos y positivos en nombres ambiguos, organizaciones homónimas de palabras comunes y direcciones incompletas; la precisión en PERSON es la más baja (0,802).
-- Las cifras de velocidad dependen del CPU, del número de hilos y del tamaño de lote; no deben extrapolarse a otros entornos sin medir.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación independiente por parte de la comunidad.
-- Licencia Apache-2.0: permite uso comercial, pero deben respetarse las condiciones y atribuciones de los modelos base, el profesor y los datasets de entrenamiento recogidas en el archivo NOTICE del repositorio.
-- Para producción con requisitos estrictos de privacidad, conviene combinarlo con reglas o detectores adicionales para las categorías de PII no cubiertas.
+- Cobertura limitada a tres tipos de entidad: no detecta números de teléfono, correos electrónicos, números de tarjeta, identificadores fiscales ni otras categorías de PII habituales, a pesar de que el profesor maneja 129 etiquetas.
+- Solo coreano: no está entrenado ni evaluado para otros idiomas, por lo que su uso en texto multilingüe o con mezcla de coreano y otros alfabetos puede degradar la precisión.
+- Riesgo de alucinación de spans: como todo modelo extractivo, puede generar falsos positivos (marcar como PII texto que no lo es) y falsos negativos (omitir entidades reales), con un F1 de validación de 0,847036 que deja margen de error apreciable en producción.
+- Sesgos de dominio: el entrenamiento se apoya en KDPII, el corpus de BCCard, reseñas de NSMC, noticias de Naver, peticiones ciudadanas y conversaciones seguras. El rendimiento puede caer en dominios alejados de esos géneros, como texto técnico, jurídico especializado o jerga.
+- Dependencia de etiquetas del profesor: una parte sustancial del corpus de entrenamiento (306.569 segmentos) está etiquetada automáticamente por el profesor, lo que propaga sus errores y sesgos al alumno.
+- Limitaciones de contexto: la ventana es de 128 tokens; aunque el documento completo se procesa por ventanas, las entidades que cruzan los límites de ventana dependen del solapamiento de 16 tokens y del algoritmo de fusión, que puede fallar en casos límite.
+- Verificación de duplicados incompleta: el propio modelo card indica que la comprobación de solapamiento entre validación, test y entrenamiento se limitó a coincidencia exacta de cadenas, sin comprobar similitud ni duplicados parciales, lo que puede inflar ligeramente las métricas reportadas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución y sin garantías; conviene conservar el aviso de licencia y el aviso de cambios si se modifica.
+- Ausencia de garantías de producción: no se documentan pruebas de robustez frente a adversarial examples, inyección de texto malicioso ni evaluación de sesgos demográficos, por lo que se recomienda validación propia antes de un despliegue crítico.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/kakao1513/veil-pii-ko-small-3
 - Modelo base: https://huggingface.co/monologg/koelectra-small-v3-discriminator
 - Modelo profesor: https://huggingface.co/1T/veil-pii-ko-lite
-- Dataset BCCard/privacy-filter-openpii-masking: https://huggingface.co/datasets/BCCard/privacy-filter-openpii-masking
-- Dataset 1T/veil-pii-ko-synth: https://huggingface.co/datasets/1T/veil-pii-ko-synth
-- Dataset e9t/nsmc: https://huggingface.co/datasets/e9t/nsmc
-- Dataset daekeun-ml/naver-news-summarization-ko: https://huggingface.co/datasets/daekeun-ml/naver-news-summarization-ko
-- Dataset heegyu/korean-petitions: https://huggingface.co/datasets/heegyu/korean-petitions
-- Dataset jojo0217/korean_safe_conversation: https://huggingface.co/datasets/jojo0217/korean_safe_conversation
-- Paper, blog o demo adicionales: no disponible
+- Dataset BCCard privacy-filter-openpii-masking: https://huggingface.co/datasets/BCCard/privacy-filter-openpii-masking
+- Dataset sintético 1T/veil-pii-ko-synth: https://huggingface.co/datasets/1T/veil-pii-ko-synth
+- Dataset NSMC: https://huggingface.co/datasets/e9t/nsmc
+- Dataset Naver News Summarization KO: https://huggingface.co/datasets/daekeun-ml/naver-news-summarization-ko
+- Dataset Korean Petitions: https://huggingface.co/datasets/heegyu/korean-petitions
+- Dataset Korean Safe Conversation: https://huggingface.co/datasets/jojo0217/korean_safe_conversation

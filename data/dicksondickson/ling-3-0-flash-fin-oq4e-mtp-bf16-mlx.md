@@ -2,98 +2,84 @@
 
 ## Resumen
 
-`dicksondickson/Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX` es un checkpoint cuantizado en formato MLX del modelo `inclusionAI/Ling-3.0-flash-Fin`, un MoE financiero de 124.414.211.552 parámetros totales y 5,1 mil millones activos. Lo publica el usuario dicksondickson y está pensado para ejecución local en Apple Silicon, con cuantización de 4 bits oQe y tensores críticos mantenidos en bf16.
+Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX es una cuantización de 4 bits del modelo inclusionAI/Ling-3.0-flash-Fin, desarrollada por el usuario dicksondickson para su ejecución en hardware Apple Silicon mediante la librería MLX. El modelo base pertenece a la familia Ling-3.0 de inclusionAI (Alibaba), una línea de modelos orientados a tareas financieras, y emplea una arquitectura híbrida denominada `bailing_hybrid` según los metadatos del repositorio. Esta versión cuantizada pesa 215,3 GB en el repositorio y contiene 124.414.211.552 parámetros totales según los tensores safetensors.
 
-El modelo base lo desarrolla InclusionAI, en el ecosistema de Ant Group, y se presenta como la primera variante finance-enhanced de la familia Ling 3.0. Incorpora una arquitectura MoE con atención híbrida lineal, 262.144 tokens de contexto y licencia MIT, lo que lo sitúa como una opción poco habitual para analizar documentación financiera extensa en local.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de gran tamaño (más de 124.000 millones de parámetros) en equipos Apple con memoria unificada, algo imposible con los pesos en bf16 completos. La cuantización se ha realizado con la herramienta oQ (oMLX 0.7.3.dev2), que aplica cuantización de precisión mixta con imatrix y mantiene los tensores críticos en bf16 para chips Apple M3 y posteriores.
 
-Su relevancia práctica está en que permite desplegar un modelo financiero de gran tamaño en un Mac con memoria unificada suficiente, sin enviar documentos sensibles a una API externa. Ahora bien, esta ficha describe una cuantización, no el modelo original: no hay benchmarks publicados en la información disponible y el rendimiento real dependerá de la pérdida por cuantización y del hardware.
+No obstante, la información pública disponible es muy limitada: no se detallan idiomas soportados, resultados de benchmarks ni la composición exacta del dataset de entrenamiento. Esta ficha refleja exclusivamente los datos verificables del repositorio y de la model card, indicando de forma explícita los campos no disponibles.
 
 ## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con atención híbrida lineal (`bailing_hybrid`) |
-| Parámetros totales | 124.414.211.552 |
-| Parámetros activos | 5,1 mil millones |
-| Longitud de contexto | 262.144 tokens (256K nativos; la familia Ling 3.0 Flash se documenta como extensible a 1M) |
-| Tipos de cuantización | 4 bits (oQe) con tensores críticos en bf16; esta variante MLX es la única disponible en el repositorio |
-| Idiomas soportados | No disponible |
+| Arquitectura | bailing_hybrid (según tag del repositorio; detalles internos no disponibles) |
+| Parametros totales | 124.414.211.552 (≈124,4 B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4 bits con precisión mixta (oQe), tensores críticos en bf16 |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors MLX con `custom_code`; repositorio de 143,5 GB |
+| Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un MoE de 124B totales con 5,1B activos por token y atención híbrida lineal, identificado en los tags como `bailing_hybrid`. Esta combinación busca reducir el coste de cómputo por token frente a un modelo denso equivalente, manteniendo una capacidad de representación propia de un modelo de gran tamaño. La variante Fin está orientada a finanzas y, según la documentación disponible, se desarrolló con instituciones financieras para aplicaciones de inversión y análisis.
+El modelo base inclusionAI/Ling-3.0-flash-Fin emplea una arquitectura etiquetada como `bailing_hybrid` en los metadatos del repositorio. El término "hybrid" sugiere una combinación de mecanismos de atención, pero no se dispone de documentación pública en la información proporcionada que detalle la composición exacta de capas, el uso de atención lineal, mezcla de expertos (MoE) u otros componentes. El número total de parámetros (124,4 B) es el único dato estructural verificable.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni otras etapas de alineamiento. Tampoco se detallan innovaciones de decodificación o mecanismos de atención más allá de la arquitectura híbrida. Esta ficha corresponde a una cuantización: el checkpoint se generó con oMLX 0.7.1.dev1, imatrix y el algoritmo oQe, dejando los tensores importantes en bf16 para chips Apple M3 o posteriores. No es un modelo entrenado desde cero.
+Respecto al entrenamiento, no se especifican en la información disponible el número de tokens, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación. La orientación financiera del modelo base (sufijo "Fin") indica un ajuste o especialización en dominio financiero, pero no se detalla el corpus utilizado. La cuantización de esta variante se realizó con oQ (oMLX 0.7.3.dev2) usando imatrix y precisión mixta, dejando los tensores de mayor impacto en bf16 para preservar calidad en chips Apple M3 o superiores.
 
 ## Capacidades
 
-- Generación de texto y razonamiento orientado a finanzas: el modelo base se presenta como `finance-enhanced` y diseñado para análisis de inversión.
-- Modo de razonamiento explícito (`thinking`): documentado en la familia Ling 3.0 Flash, activado por defecto y conmutable; no se detalla en la model card de esta cuantización.
-- Contexto largo: 262.144 tokens, adecuado para introducir informes anuales, transcripciones y prospectos completos.
-- Análisis de documentación financiera: extracción de métricas, comparación de estados financieros, identificación de factores de riesgo y resumen de llamadas de resultados.
-- Ejecución local en Apple Silicon: la cuantización MLX permite inferencia en Mac con memoria unificada, sin depender de CUDA.
-- Tool calling / function calling: no disponible en la información proporcionada.
+- Generación de texto y razonamiento en el dominio financiero, heredado del modelo base Ling-3.0-flash-Fin.
+- Ejecución local en hardware Apple Silicon mediante MLX y la herramienta oMLX.
+- Cuantización de precisión mixta que preserva tensores críticos en bf16, orientada a mantener calidad frente a una cuantización uniforme de 4 bits.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles; no se documentan idiomas soportados.
-- Visión, audio u otras modalidades: no disponibles.
+- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo thinking, visión o audio: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Análisis de informes 10-K y 10-Q: cargar el documento completo en la ventana de 262K tokens y extraer evolución de ingresos, márgenes, deuda, factores de riesgo y cambios relevantes. Es adecuado por la combinación de contexto largo y orientación financiera.
-- Resumen de llamadas de resultados: procesar transcripciones extensas, comparar el guidance con trimestres anteriores e identificar cambios de tono o preguntas críticas de analistas.
-- Elaboración de memorandos de inversión: sintetizar tesis, catalizadores, riesgos y comparables a partir de varios documentos, dejando la valoración final y la validación de cifras al analista.
-- Extracción de cláusulas en contratos y prospectos: localizar covenants, vencimientos, condiciones de rescate y obligaciones de información en lotes de documentos financieros.
-- Asistente local para equipos de finanzas: desplegar el modelo con oMLX en un Mac Studio para consultar documentación sensible sin enviarla a servicios cloud, con controles de acceso y registro de auditoría.
-- Comparativa entre compañías: introducir informes de varias empresas y solicitar tablas comparativas de crecimiento, rentabilidad, apalancamiento y valoración, con revisión humana de las cifras.
-- Formación interna y Q&A sobre normativa: construir un sistema RAG sobre manuales de cumplimiento y procedimientos internos, usando el modelo para redactar respuestas con referencias a las fuentes recuperadas.
-- Due diligence en lotes: revisar data rooms y documentos legales-financieros por lotes, generando resúmenes y listas de puntos a verificar antes de una operación.
+- Análisis financiero local: el modelo puede procesar documentos, informes y datos contables en un equipo Apple con memoria unificada suficiente, sin depender de servicios en la nube, lo que resulta adecuado para entornos con requisitos de confidencialidad.
+- Asistencia en investigación cuantitativa: investigadores pueden ejecutar el modelo en un Mac Studio o MacBook Pro de gama alta para generar hipótesis, resumir literatura financiera o redactar borradores de análisis, aprovechando la especialización del modelo base en finanzas.
+- Prototipado de aplicaciones financieras en macOS: desarrolladores pueden integrar el modelo vía MLX en aplicaciones nativas de Apple, gracias a la licencia MIT y al formato safetensors compatible con el ecosistema MLX.
+- Generación de informes y resúmenes de documentos largos: aunque el contexto no está documentado, un modelo de 124 B parámetros puede emplearse para tareas de síntesis documental en el dominio financiero, siempre que se valide empíricamente la ventana efectiva.
+- Evaluación comparativa de cuantizaciones: este repositorio sirve como referencia para medir el impacto de la cuantización oQe de 4 bits frente a los pesos bf16 originales en tareas financieras.
+- Despliegue en entornos air-gapped: al ejecutarse localmente con MLX, el modelo puede operar en máquinas sin conexión a internet, útil en instituciones financieras con políticas estrictas de red.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
-
-Tampoco se dispone de métricas MMLU, HumanEval, GSM8K o evaluaciones financieras específicas para esta cuantización en las fuentes consultadas. No se deben inferir cifras a partir del tamaño del modelo.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Pesos: 143,5 GB en el repositorio. A esta cifra hay que añadir la caché KV y el overhead del entorno de ejecución MLX.
-- Memoria unificada: 192 GB es el mínimo práctico; 256 GB o más es recomendable para contexto largo. Un equipo de 128 GB no puede cargar el checkpoint completo.
-- Apple Silicon: orientado a M3 Ultra, M2 Ultra y configuraciones con 192-512 GB de memoria unificada. Los tensores bf16 requieren M3 o posterior según el autor.
-- GPU NVIDIA: esta variante no se ejecuta en CUDA. No cabe en una RTX 4090 de 24 GB, ni en una A100 o H100 de 80 GB individuales. Para el modelo base en BF16 harían falta varias GPU de 80 GB o cuantizaciones compatibles.
-- Despliegue: oMLX y MLX. vLLM, TGI, llama.cpp y Ollama no cargan este formato MLX directamente; requerirían conversión.
-- Latencia y throughput: no disponibles. Al tener 5,1B parámetros activos, el coste computacional por token es menor que en un denso de 124B, pero el rendimiento estará limitado por el ancho de banda de memoria.
+- VRAM/memoria unificada estimada: el repositorio ocupa 215,3 GB, por lo que se requiere un equipo Apple con al menos esa cantidad de memoria unificada disponible; en la práctica, se recomienda un margen adicional para el contexto y el runtime de MLX.
+- GPU recomendadas: chips Apple M3 o posteriores (según la model card, los tensores bf16 están pensados para M3 y superiores). No se especifican modelos concretos de Apple con memoria suficiente.
+- ¿Cabe en GPU consumer? No aplica a GPU NVIDIA/AMD convencionales; está diseñado para Apple Silicon con memoria unificada de gran capacidad (por ejemplo, configuraciones de gama alta de Mac Studio).
+- Opciones de despliegue: oMLX (https://github.com/jundot/omlx) y el ecosistema MLX de Apple. No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales / activos | Contexto | Rendimiento | Licencia | Formato y disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`oQ4e-mtp-bf16-MLX`) | 124,4B / 5,1B | 262.144 tokens | No disponible | MIT | MLX safetensors 4-bit; 143,5 GB; Apple Silicon |
-| `inclusionAI/Ling-3.0-flash-Fin` | 124,4B / 5,1B | 262.144 tokens | No disponible | MIT | safetensors BF16; modelo base financiero en Hugging Face |
-| `inclusionAI/Ling-3.0-flash` | 124B / 5,1B | 256K nativos, extensible a 1M | No disponible | MIT | safetensors; variante generalista de la familia Ling 3.0 |
+| Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX (este) | 124,4 B | no disponible | MIT | safetensors MLX 4-bit mixto | Cuantización para Apple Silicon |
+| inclusionAI/Ling-3.0-flash-Fin (base) | no disponible | no disponible | no disponible | no disponible | Pesos originales del modelo base |
+| Otras cuantizaciones del mismo base | no disponible | no disponible | no disponible | no disponible | No se han identificado en la información disponible |
 
-No hay datos de benchmarks comparativos en la información disponible; la comparación anterior es de especificaciones, licencia y disponibilidad. La diferencia principal entre este checkpoint y el modelo base es la cuantización MLX, que reduce los requisitos de memoria a costa de una posible pérdida de precisión.
+No se dispone de datos suficientes para comparar con modelos alternativos de la misma categoría (mismo tamaño o misma tarea financiera) en términos de rendimiento o benchmarks.
 
 ## Limitaciones y advertencias
 
-- Pérdida por cuantización: el esquema 4-bit oQe puede degradar cálculos numéricos, comparaciones y razonamiento financiero. Conviene validar las salidas contra el modelo BF16 o contra fuentes primarias.
-- Dependencia de Apple Silicon: el formato MLX no es directamente utilizable en pilas de producción con NVIDIA, vLLM o TGI.
-- Memoria: 143,5 GB solo de pesos; no cabe en ordenadores de 128 GB y exige configuraciones de gama alta.
-- Idiomas no documentados: no se puede garantizar calidad en castellano ni en otros idiomas; la model card no incluye lista de idiomas.
-- Riesgo de alucinación: especialmente en cifras, fechas, referencias normativas y recomendaciones de inversión. Es obligatorio verificar contra documentos originales.
-- No es asesoramiento financiero: las salidas pueden ser inexactas o incompletas y no sustituyen la revisión de un profesional ni los controles de cumplimiento normativo.
-- Licencia MIT: permite uso comercial, pero no se detallan los términos de los datos de entrenamiento ni posibles restricciones heredadas del modelo base. Revisar antes de un despliegue regulado.
-- `custom_code`: el repositorio requiere `trust_remote_code`; hay que auditar el código antes de ejecutarlo en entornos sensibles.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento para esta cuantización en las fuentes consultadas.
-- Contexto largo: la ventana de 262K no garantiza recuperación perfecta en documentos muy extensos; la caché KV adicional consume memoria y puede afectar a la latencia.
+- La cuantización de 4 bits, aunque use precisión mixta y bf16 en tensores críticos, puede degradar la calidad respecto a los pesos originales en tareas sensibles, como el razonamiento financiero de precisión.
+- No se han publicado evaluaciones que cuantifiquen la pérdida de rendimiento de esta cuantización frente al modelo base.
+- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente crítico en dominio financiero, donde errores factuales pueden tener consecuencias económicas.
+- No se documentan sesgos conocidos, idiomas soportados ni limitaciones de contexto; deben validarse empíricamente antes de un uso en producción.
+- La licencia MIT se aplica a esta cuantización; debe verificarse la licencia del modelo base inclusionAI/Ling-3.0-flash-Fin para uso comercial, ya que no se detalla en la información disponible.
+- El modelo está ligado al ecosistema MLX y a hardware Apple Silicon; no es portable directamente a otras plataformas sin reconversión.
+- La model card advierte de que se re-cuantizó en octubre de 2026 con oMLX 0.7.3.dev2 y recomienda volver a descargar si se tenía una copia anterior.
 
 ## Enlaces
 
-- [Modelo en Hugging Face](https://huggingface.co/dicksondickson/Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX)
-- [Modelo base `inclusionAI/Ling-3.0-flash-Fin`](https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin)
-- [oMLX en GitHub](https://github.com/jundot/omlx)
-- [Informe de imatrix del repositorio](https://huggingface.co/dicksondickson/Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX/blob/main/oq_imatrix_report.json)
-- [Ling 3.0 Flash Fin en llm-stats](https://llm-stats.com/models/ling-3.0-flash-fin)
-- [Ling 3.0 Flash Fin en Benchable](https://benchable.ai/models/inclusionai/ling-3.0-flash-fin-20260827)
-- [Ling 3.0 Flash en Model Beats](https://www.modelbeats.com/models/ling-3-0-flash)
+- Repositorio Hugging Face: https://huggingface.co/dicksondickson/Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX
+- Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin
+- Herramienta oQ / oMLX: https://github.com/jundot/omlx

@@ -2,93 +2,95 @@
 
 ## Resumen
 
-LFM2.5-VL-1.6B es un modelo de visión y lenguaje (VLM) desarrollado por Liquid AI, que representa la versión renovada de su primer modelo multimodal, LFM2-VL-1.6B. Construido sobre el backbone actualizado LFM2.5-1.2B-Base, este modelo está diseñado para ofrecer un rendimiento superior en comprensión de imágenes, razonamiento visual y tareas multimodales, con un enfoque especial en el seguimiento de instrucciones en tareas que combinan visión y lenguaje. El modelo incorpora un codificador de imágenes dinámico SigLIP2 y está optimizado para despliegue en entornos edge, con un tamaño total de aproximadamente 1.170 millones de parámetros.
+LFM2.5-VL-1.6B-absolute-heresy-GGUF es una cuantizacion estatica en formato GGUF del modelo multimodal MuXodious/LFM2.5-VL-1.6B-absolute-heresy, un derivado "abliterated" (tambien etiquetado como heretic, uncensored o decensored) del modelo LiquidAI LFM2.5-VL de 1.6B parametros. El trabajo de cuantizacion lo firma mradermacher, autor habitual de conversiones GGUF para llama.cpp, y esta pensado para ejecutar el modelo en hardware de gama baja o en el borde (edge), incluyendo CPU.
 
-La variante "absolute-heresy" es una modificación no oficial realizada por el usuario MuXodious, que ha sido sometida a un proceso de "abliteración" (abliteration) para eliminar los mecanismos de rechazo y censura del modelo original, resultando en una versión "descensurada" o "sin censura". Esta ficha se centra en la cuantización GGUF de dicha variante, realizada por mradermacher, que facilita su ejecución en hardware de consumo mediante herramientas como llama.cpp u Ollama. El modelo mantiene las capacidades multilingües del original, con soporte para ocho idiomas, y destaca por su ventana de contexto de 122.880 tokens, inusualmente larga para un modelo de este tamaño.
+El modelo subyacente pertenece a la familia LFM2 de Liquid AI, disenada especificamente para inferencia en dispositivos con recursos limitados. Se trata de un modelo vision-lenguaje (VL) que acepta imagenes y texto, con un total real de 1.170.340.608 parametros en los pesos safetensors del modelo base. La variante "absolute-heresy" aplica una intervencion de tipo abliteration sobre los pesos para eliminar los rechazos aprendidos por alineamiento, de modo que el modelo responde a peticiones que el original rechazaria.
 
-La relevancia de este modelo radica en su combinación de tamaño compacto, capacidades multimodales y contexto extremadamente largo, lo que lo convierte en una opción atractiva para aplicaciones edge y entornos con recursos limitados. La versión cuantizada en GGUF amplía su accesibilidad, aunque la naturaleza "descensurada" de la variante plantea consideraciones éticas y de seguridad importantes que se detallan en la sección de limitaciones.
+La relevancia de esta ficha es doble: por un lado, documenta una opcion practica para desplegar un VLM de ~1.2B parametros en entornos sin GPU dedicada gracias a las cuantizaciones de 0.6 a 2.4 GB; por otro, advierte de que el modelo ha sido modificado para eliminar salvaguardas, lo que exige una evaluacion de riesgos antes de cualquier uso en produccion. La licencia declarada es lfm1.0, heredada del modelo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal con codificador de visión SigLIP2 dinámico |
-| Parametros totales | 1.170.340.608 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 122.880 tokens |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS (más mmproj en f16 y Q8_0) |
+| Arquitectura | Transformer multimodal (vision-lenguaje) de la familia LFM2; detalles de capas y atencion no disponibles en la informacion proporcionada |
+| Parametros totales | 1.170.340.608 (pesos safetensors del modelo base) |
+| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; ademas mmproj-Q8_0 y mmproj-f16 para el codificador visual |
 | Idiomas soportados | en, ja, ko, fr, es, de, ar, zh |
-| Licencia | lfm1.0 (Liquid Foundation Models License) |
-| Formato de pesos | GGUF (safetensors disponible en el repositorio base) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base esta en safetensors/transformers |
+| Tamano del repositorio | 12.0 GB |
+| Pipeline | No disponible |
 
 ## Arquitectura y entrenamiento
 
-LFM2.5-VL-1.6B se basa en la arquitectura Liquid Foundation Model (LFM) de Liquid AI, que emplea una novedosa aproximación de redes neuronales líquidas con atención lineal, diseñada para ofrecer una eficiencia computacional superior frente a los transformers tradicionales. El modelo integra un codificador de imágenes SigLIP2 dinámico que permite procesar imágenes a resoluciones variables, adaptándose al contenido visual de forma más flexible que los codificadores de resolución fija. El backbone de lenguaje es LFM2.5-1.2B-Base, una versión actualizada que mejora el seguimiento de instrucciones y el razonamiento multimodal respecto a la generación anterior.
+El modelo base es un VLM de la familia LFM2 de Liquid AI, una linea de modelos disenada para despliegue en el borde con un equilibrio agresivo entre calidad y coste computacional. La informacion disponible no detalla el numero de capas, la dimension oculta, el mecanismo de atencion ni la composicion exacta del dataset de entrenamiento. Tampoco se documentan las fases de alineamiento (RLHF, DPO) del modelo original en la informacion proporcionada.
 
-Los detalles específicos sobre el entrenamiento de la variante "absolute-heresy" no están disponibles públicamente. El proceso de abliteración aplicado por MuXodious es una técnica de post-entrenamiento que modifica los pesos del modelo para eliminar las direcciones en el espacio de activaciones asociadas con comportamientos de rechazo o negativa. El modelo base de Liquid AI fue entrenado con una combinación de datos textuales y multimodales, aunque no se han publicado cifras exactas sobre el número de tokens de entrenamiento ni la composición detallada del dataset. Tampoco hay información pública sobre el uso de RLHF, DPO u otras técnicas de alineación posteriores al entrenamiento en el modelo original.
+La innovacion principal de esta variante concreta no es arquitectonica sino de pesos: se trata de un modelo "abliterated", una tecnica que identifica las direcciones de activacion asociadas al comportamiento de rechazo y las proyecta fuera de los pesos, de modo que el modelo pierde la tendencia a negarse a responder. El autor del modelo base (MuXodious) aplica esta intervencion sobre el LFM2.5-VL-1.6B original; mradermacher se limita a convertir y cuantizar los pesos resultantes a GGUF, sin reentrenamiento adicional. No se dispone de informacion sobre el volumen de tokens empleado en el entrenamiento original ni sobre la mezcla de datos multimodales.
 
 ## Capacidades
 
-- Comprensión de imágenes y razonamiento visual: puede analizar imágenes, responder preguntas sobre su contenido y realizar tareas de razonamiento visual complejo.
-- Seguimiento de instrucciones multimodal: optimizado para interpretar y ejecutar instrucciones que combinan entradas de texto e imagen.
-- Generación de texto multilingüe: soporta ocho idiomas (inglés, japonés, coreano, francés, español, alemán, árabe y chino) con capacidades de conversación en cada uno.
-- Ventana de contexto extendida: 122.880 tokens, lo que permite procesar documentos largos o conversaciones extensas con múltiples imágenes intercaladas.
-- Modelo "descensurado": la variante ha sido modificada para eliminar rechazos y restricciones de contenido, respondiendo a consultas que el modelo original podría negarse a abordar.
-- Eficiencia para edge: su tamaño compacto (1.6B parámetros) lo hace adecuado para despliegue en dispositivos con recursos limitados.
-- Formato GGUF: compatible con llama.cpp, Ollama y otros motores de inferencia que soporten este formato, facilitando su uso en CPU y GPU de consumo.
+- Generacion de texto conversacional multi-turno, con soporte de plantilla de chat (tag `conversational`).
+- Comprension de imagenes: el repositorio incluye ficheros `mmproj` (proyector multimodal) en Q8_0 y f16, necesarios para procesar entradas visuales en llama.cpp.
+- Capacidades multilingues en ingles, japones, coreano, frances, espanol, aleman, arabe y chino.
+- Respuestas sin rechazo por alineamiento: la variante "absolute-heresy" elimina las negativas aprendidas, lo que permite abordar tematicas que el modelo original rechazaria.
+- Soporte de tool calling y function calling: no confirmado en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion proporcionada.
+- Modo thinking explicito: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Asistencia visual para personas con discapacidad: el modelo puede describir escenas, leer texto en imágenes o identificar objetos en tiempo real desde un dispositivo móvil, gracias a su tamaño compacto y su capacidad de razonamiento visual. Su ventana de contexto larga permite mantener el historial de interacciones sin perder información relevante.
-
-- Análisis de documentos técnicos multilingües: con su soporte para ocho idiomas y su contexto de 122.880 tokens, puede procesar manuales, patentes o informes extensos con figuras y diagramas, extrayendo información relevante y respondiendo preguntas específicas sobre el contenido. La cuantización GGUF permite ejecutarlo en estaciones de trabajo sin GPU dedicada.
-
-- Moderación de contenido en plataformas sociales: aunque paradójico por su naturaleza descensurada, el modelo puede configurarse para analizar imágenes y texto en múltiples idiomas, identificando contenido que requiera revisión. Su capacidad de procesar contexto largo permite analizar hilos de conversación completos con imágenes adjuntas.
-
-- Generación de descripciones de productos para e-commerce: puede generar descripciones detalladas y atractivas a partir de imágenes de productos, adaptando el tono y el idioma según el mercado objetivo. Su tamaño reducido permite integrarlo en pipelines de procesamiento por lotes sin costes elevados de infraestructura.
-
-- Asistente de estudio para estudiantes de idiomas: el modelo puede explicar imágenes, traducir textos y mantener conversaciones en ocho idiomas, funcionando como un tutor personal accesible desde hardware modesto. La versión descensurada permite abordar temas sensibles o controvertidos que otros modelos evitan.
-
-- Archivado y búsqueda de imágenes patrimoniales: instituciones culturales pueden utilizar el modelo para generar metadatos descriptivos de colecciones fotográficas históricas, incluyendo la transcripción de texto manuscrito o impreso en las imágenes. El contexto largo permite procesar colecciones completas con anotaciones contextuales.
+- Procesamiento de documentos en el borde: desplegar la cuantizacion Q4_K_M (0.8 GB) junto con el `mmproj-Q8_0` en un mini-PC o una Raspberry Pi para extraer texto y describir imagenes de facturas o albaranes sin conexion a la nube.
+- Asistente visual para personas con discapacidad visual: el modelo puede describir el contenido de una fotografia capturada por la camara del movil en local, con latencia baja gracias al reducido numero de parametros y a la cuantizacion Q4_K_S.
+- Moderacion y analisis de contenido sin filtros: al estar abliterated, es util para investigacion sobre sesgos y seguridad, permitiendo estudiar que respuestas produce un modelo sin alineamiento ante prompts sensibles en un entorno controlado.
+- Clasificacion y etiquetado de imagenes a escala: integrar el modelo en un pipeline de preprocesado que genere descripciones o etiquetas para un corpus de imagenes antes de pasarlas a un modelo mayor, aprovechando su bajo coste por inferencia.
+- Prototipado rapido de aplicaciones VLM: usar el GGUF con llama.cpp u Ollama en un portatil sin GPU para validar la logica de una aplicacion multimodal antes de invertir en infraestructura.
+- Traduccion y atencion al cliente multilingue: el soporte de ocho idiomas permite construir un bot de soporte que responda en espanol, frances o arabe con contexto visual (capturas de pantalla del usuario).
+- Investigacion academica sobre abliteration: comparar las respuestas del modelo heretic frente al LFM2.5-VL original para medir el efecto de la intervencion sobre los pesos en tareas de vision-lenguaje.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los resultados de búsqueda web incluyen cifras concretas de rendimiento para LFM2.5-VL-1.6B en tareas estándar como MMLU, HumanEval, GSM8K o benchmarks de visión como MMMU o VQAv2. La documentación oficial de Liquid AI menciona un rendimiento "excepcional" en comprensión de imágenes y razonamiento visual, pero sin proporcionar datos numéricos verificables en las fuentes consultadas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el modelo base tiene 1,17B parámetros. Con cuantización Q4_K_M, el archivo GGUF principal ocupa aproximadamente 0,9 GB, y el mmproj Q8_0 añade unos 0,7 GB adicionales. Esto permite ejecutar el modelo en GPUs con 4 GB de VRAM o menos.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.) puede manejar las cuantizaciones más bajas. Para las cuantizaciones más altas (Q8_0, f16), se recomienda al menos 6-8 GB de VRAM (RTX 3060, RTX 4060, etc.).
-- Compatibilidad con hardware de consumo: sí, es totalmente viable en GPUs de consumo e incluso en CPU con suficiente RAM (8-16 GB), gracias al formato GGUF y al tamaño reducido del modelo.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y cualquier otro motor compatible con GGUF. También puede ejecutarse con transformers si se utilizan los pesos safetensors originales.
-- Latencia y throughput: no hay datos publicados específicos para este modelo. Como referencia orientativa, un modelo de 1,6B parámetros en Q4_K_M suele generar entre 20 y 40 tokens por segundo en una GPU de gama media (RTX 3060) y entre 5 y 10 tokens por segundo en CPU con AVX2.
+- VRAM estimada para inferencia: entre 0.6 GB (Q2_K) y 2.4 GB (f16) para los pesos del modelo de lenguaje, mas 0.7-1.0 GB adicionales del proyector multimodal `mmproj` si se procesan imagenes.
+- Cabe en GPU de consumo: si, en cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.) usando Q4_K_M o Q5_K_M.
+- Ejecucion en CPU: viable con llama.cpp; las cuantizaciones Q4_K_S y Q4_K_M (0.8 GB) son las recomendadas por el autor para velocidad.
+- GPU de datacenter: A100, H100 o L40S no son necesarias; el modelo esta pensado para hardware de gama baja y su uso en estas GPU estaria infrautilizado.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio y cualquier frontend compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa, por lo que requeririan el modelo base en safetensors.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Con 1.17B parametros y cuantizacion de 4 bits, se espera una generacion en tiempo real en CPU moderna, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodal | Licencia | Cuantizacion GGUF |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato |
 |---|---|---|---|---|---|
-| LFM2.5-VL-1.6B (absolute-heresy) | 1,17B | 122.880 | Sí (SigLIP2) | lfm1.0 | Sí |
-| Qwen2-VL-2B | 2,18B | 32.768 | Sí | Apache 2.0 | Sí |
-| MiniCPM-V 2.6 | 8,1B | 8.192 (128K con RoPE) | Sí | Apache 2.0 | Sí |
-| InternVL2-2B | 2,2B | 32.768 | Sí | MIT | Sí |
+| LFM2.5-VL-1.6B-absolute-heresy-GGUF (este) | 1.17B | No disponible | Vision + texto | lfm1.0 | GGUF |
+| LFM2.5-VL-1.6B original (LiquidAI) | 1.6B (nominal) | No disponible | Vision + texto | lfm1.0 | safetensors |
+| MuXodious/LFM2.5-VL-1.6B-absolute-heresy | 1.17B | No disponible | Vision + texto | lfm1.0 | safetensors |
+| mradermacher/LFM2.5-VL-1.6B-absolute-heresy-i1-GGUF | 1.17B | No disponible | Vision + texto | lfm1.0 | GGUF con imatrix |
 
-La comparativa se basa en modelos multimodales de tamaño similar disponibles públicamente. LFM2.5-VL-1.6B destaca por su contexto significativamente más largo (122.880 tokens) frente a los 32.768 de Qwen2-VL-2B o InternVL2-2B. Sin embargo, la licencia lfm1.0 es más restrictiva que las licencias Apache 2.0 o MIT de las alternativas, lo que puede limitar su uso comercial. La variante "absolute-heresy" es única en esta comparativa por su naturaleza descensurada, una característica que no ofrecen los modelos comparados.
+La comparativa con modelos de otras familias (por ejemplo, Qwen2.5-VL-3B o SmolVLM) no esta disponible en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento relativas.
 
 ## Limitaciones y advertencias
 
-- Naturaleza descensurada: esta variante ha sido modificada mediante abliteración para eliminar mecanismos de rechazo. Esto implica que puede generar contenido ofensivo, peligroso, ilegal o éticamente problemático sin advertir al usuario. No es adecuada para despliegues sin supervisión humana.
-- Sesgos y alucinaciones: como todos los modelos de lenguaje, puede producir información falsa o inventada con total confianza. La eliminación de la alineación puede aumentar la probabilidad de respuestas factualmente incorrectas o socialmente inapropiadas.
-- Licencia lfm1.0: la licencia de Liquid AI es de código abierto pero con condiciones específicas. Es necesario revisar los términos completos para determinar si el uso comercial está permitido y bajo qué condiciones.
-- Soporte de herramientas: no hay información disponible sobre capacidades de tool calling o function calling en este modelo. Los tags de Hugging Face no incluyen estas funcionalidades.
-- Datos de entrenamiento desconocidos: no se ha publicado información sobre la composición del dataset de entrenamiento, lo que impide evaluar posibles sesgos demográficos o culturales.
-- Rendimiento no verificado: no se han publicado benchmarks independientes para esta variante, por lo que las afirmaciones de rendimiento de Liquid AI no han sido validadas externamente.
-- Soporte comunitario limitado: al ser una variante no oficial cuantizada por un tercero, no hay garantía de mantenimiento, actualizaciones o soporte técnico.
+- Modelo abliterated: la eliminacion del comportamiento de rechazo implica que puede generar contenido danino, ilegal o sexualmente explicito. No es apto para uso directo en aplicaciones orientadas al publico sin una capa de moderacion externa.
+- Riesgo de alucinacion: con 1.17B parametros, la capacidad de razonamiento y de verificacion factica es limitada; es probable que invente detalles en descripciones de imagenes complejas.
+- Perdida de calidad por cuantizacion: las variantes Q2_K y Q3_K_S degradan notablemente la calidad; el propio autor desaconseja Q3_K_M por "lower quality". Para produccion se recomienda Q4_K_M o superior.
+- Contexto desconocido: no se ha publicado la longitud de contexto en la informacion disponible, lo que impide garantizar conversaciones largas o documentos extensos.
+- Idiomas: aunque se declaran ocho idiomas, el rendimiento real en espanol, arabe o coreano no esta documentado con benchmarks; el ingles es presumiblemente el idioma mejor soportado.
+- Licencia lfm1.0: es una licencia "other" con posibles restricciones de uso comercial. Debe revisarse el fichero LICENSE del modelo base antes de desplegarlo en un producto.
+- Trazabilidad: al ser una cuantizacion de un derivado modificado, la cadena de responsabilidad sobre el comportamiento del modelo se reparte entre LiquidAI, MuXodious y mradermacher; conviene fijar la version exacta del GGUF en produccion.
+- Proyector multimodal separado: es imprescindible descargar el fichero `mmproj` correspondiente; sin el, el modelo solo procesa texto.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/LFM2.5-VL-1.6B-absolute-heresy-GGUF
 - Modelo base (safetensors): https://huggingface.co/MuXodious/LFM2.5-VL-1.6B-absolute-heresy
-- Documentación oficial de LFM2.5-VL-1.6B: https://docs.liquid.ai/lfm/models/lfm25-vl-1.6b
-- Variante GGUF espejo (ModelHub China): https://dev.modelhub.org.cn/MuXodious/LFM2.5-VL-1.6B-absolute-heresy-GGUF
-- Entrada en LLM Explorer: https://llm-explorer.com/model/LiquidAI%2FLFM2.5-VL-1.6B,QFXMs3PdwwGhKZH7RJc0q
-- Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/LFM2.5-VL-1.6B-absolute-heresy-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#LFM2.5-VL-1.6B-absolute-heresy-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

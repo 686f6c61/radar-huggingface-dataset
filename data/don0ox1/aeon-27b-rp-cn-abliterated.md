@@ -2,76 +2,96 @@
 
 ## Resumen
 
-AEON-27B-RP-cn-abliterated es un modelo de lenguaje publicado en Hugging Face por el usuario don0ox1 bajo licencia Apache 2.0. Por el nombre se deduce que se trata de una variante de un modelo base de aproximadamente 27.000 millones de parametros, orientada a roleplay (RP), con algun tipo de ajuste relacionado con chino (cn) y sometida a un proceso de "abliteration", una tecnica de modificacion de pesos que busca eliminar los mecanismos de rechazo aprendidos durante el alineamiento.
+AEON-27B-RP-cn-abliterated es un ajuste fino (fine-tune) en chino para juegos de rol conversacional, desarrollado por el usuario don0ox1 sobre el modelo base AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16, que a su vez deriva de Qwen3.8-27B tras un proceso de abliteration (eliminacion de direcciones de rechazo). El modelo resuelve el problema de generar dialogos de rol coherentes y sostenidos en chino con personajes consistentes, incluyendo escenarios de tres voces (PNJ y protagonista en la misma respuesta) y escenas de tension implicita sin descripciones explicitas.
 
-La model card publicada es practicamente inexistente: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline, idiomas ni formatos de pesos.
+Tecnicamente es un transformer denso de la familia Qwen3.5 con 64 capas, hidden size de 5120 y un vocabulario de 248.320 tokens, con una longitud de contexto nativa de 262.144 tokens. El ajuste se realizo mediante QLoRA (4-bit NF4 con doble cuantizacion, r=16, alpha=32) aplicado exclusivamente a las proyecciones MLP (gate_proj, up_proj, down_proj), sin tocar las capas de linear attention.
 
-Por tanto, esta ficha solo puede caracterizar el modelo de forma inferencial a partir de su denominacion y del ecosistema habitual de este tipo de publicaciones (modelos derivados de bases abiertas, fine-tuneados para conversacion creativa y despojados de filtros de rechazo). Cualquier dato concreto de arquitectura, contexto o rendimiento debe considerarse no disponible hasta que el autor publique documentacion.
+Es relevante ahora porque la version v5 (checkpoint 700) incorpora mejoras sustanciales frente a v4: perplexity de 3,01 frente a 4,29, recuperacion de capacidades generales de asistente (700 muestras mixtas de chat y razonamiento) y nuevas capacidades de dialogo a tres bandas. El modelo se distribuye con pesos completos BF16, adaptadores LoRA en PEFT y GGUF, y cuantizaciones Q3_K_M y Q4_K_M listas para usar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (por el nombre, presumiblemente transformer denso de ~27B; no confirmado) |
-| Parametros totales | no disponible (el nombre sugiere ~27.000 millones) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el sufijo "cn" sugiere enfasis en chino, sin confirmar) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | Qwen3.5 (transformer denso con linear attention), 64 capas, hidden 5120 |
+| Parametros totales | 27.781.427.952 (27,78 B) |
+| Parametros activos | no aplica (modelo denso) |
+| Longitud de contexto | 262.144 tokens nativos; recomendado 16K-32K en inferencia con 16 GB de VRAM |
+| Tipos de cuantizacion | BF16 (pesos completos), QLoRA 4-bit NF4, GGUF Q3_K_M (13,55 GB) y Q4_K_M (16,68 GB) |
+| Idiomas soportados | Chino (zh) principalmente; incluye 171 muestras de entrenamiento en ingles |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (BF16 y adaptadores PEFT), GGUF |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card. El nombre del repositorio indica tres elementos que, en la practica habitual de Hugging Face, suelen corresponder a: un modelo base de gran tamano (~27B), un ajuste fino orientado a roleplay conversacional y una fase de abliteration, tecnica que identifica direcciones en el espacio de activaciones asociadas al rechazo y las proyecta fuera de los pesos para reducir las respuestas de negacion.
+El modelo parte de Qwen3.8-27B, al que se le aplico abliteration para eliminar los mecanismos de rechazo, dando lugar al base AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16. Sobre ese base se aplico un QLoRA con rango 16 y alpha 32, con adaptadores unicamente en las proyecciones MLP (gate_proj, up_proj, down_proj), dejando intactas las capas de linear attention. El entrenamiento se realizo en tres iteraciones encadenadas (v3, v4 y v5), partiendo la v5 del adaptador v4 en el checkpoint 900.
 
-El sufijo "cn" podria indicar un ajuste o corpus centrado en chino, pero no hay ninguna evidencia documental en el repositorio que lo confirme. Tampoco se especifican volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. Toda esta seccion queda como no disponible.
+El dataset de la v5 consta de 3.247 muestras nuevas (1,18 M de tokens), con un 52,4 % de etiquetas efectivas usando loss solo sobre turnos del asistente. Se entrenaron 2,9 epocas hasta detectar sobreajuste, seleccionando el checkpoint 700 (epoch 1,82) como optimo. Los parametros entrenables fueron 69,2 M sobre 26,97 B (0,257 %). La perdida de evaluacion minima fue 1,1023 con perplexity de 3,01, frente a 4,29 en v4. La composicion del dataset incluye 700 muestras generales (249 de asistente en chino, 171 en ingles y 300 de razonamiento) para recuperar capacidades no relacionadas con el rol.
 
 ## Capacidades
 
-- Generacion de texto conversacional: por su orientacion declarada a roleplay, se espera capacidad de mantener dialogos multi-turno con consistencia de personaje, aunque no hay documentacion que lo verifique.
-- Escritura creativa: narrativa, ficcion y simulacion de personajes, uso coherente con el sufijo "RP".
-- Reduccion de rechazos: la abliteration busca disminuir las negativas del modelo ante peticiones que el alineamiento original bloquearia; el alcance real no esta documentado.
-- Posible soporte de chino: inferido del sufijo "cn", sin confirmacion.
-- Tool calling / function calling: no disponible.
-- Capacidades de agente y razonamiento multi-paso: no disponible.
-- Vision, audio o modo thinking: no disponible.
+- Generacion de texto narrativo y dialogos de rol en chino con mantenimiento de personaje y estilo.
+- Dialogo a tres bandas: el modelo puede interpretar simultaneamente un PNJ del escenario y el protagonista del usuario en la misma respuesta, usando prefijos de identidad.
+- Escenas de tension implicita: genera conversaciones sugerentes mediante lenguaje no explicito (miradas, distancias, silencios).
+- Entrada directa en personaje sin system prompt: responde como el personaje aunque no se defina rol explicito.
+- Capacidades generales de asistente recuperadas: 700 muestras mixtas de chat y razonamiento, con pruebas de codigo (6/6 en ejercicios como deduplicacion de listas, inversion de cadenas, two-sum, Fibonacci en O(log n), cache LRU y fusion de intervalos).
+- Soporte de tool calling / function calling: no documentado en la informacion disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el modelo esta orientado a rol, no a tareas agenticas.
+- Capacidades multilingues: principalmente chino; el ingles aparece de forma limitada en el dataset.
+- Modo thinking: soportado por la plantilla Qwen3.5, pero debe desactivarse (`enable_thinking=false`) para evitar residuos `` en la salida.
 
 ## Casos de uso
 
-- Roleplay conversacional: el modelo estaria pensado para mantener personajes consistentes en sesiones largas de chat; su utilidad real depende de un contexto suficiente, cuyo tamano no esta documentado.
-- Escritura creativa asistida: generacion de ficcion, dialogos y tramas narrativas donde el ajuste "RP" suele producir un estilo mas expresivo que un modelo base generico.
-- Prototipado de experiencias interactivas: chatbots de entretenimiento o videojuegos narrativos donde se prioriza la fluidez conversacional sobre la precision factual.
-- Investigacion sobre alineamiento y abliteration: util como objeto de estudio para comparar el comportamiento de un modelo abliterado frente a su base original en tareas de rechazo y seguridad.
-- Generacion de contenido en chino (si el sufijo se confirma): redaccion y conversacion en ese idioma, pendiente de validacion empirica.
-- Experimentacion local con cuantizacion: si se publican pesos en formatos estandar, podria desplegarse en entornos con recursos limitados, aunque el tamano de 27B exige hardware de gama alta.
+- Motores de rol conversacional en chino: el modelo mantiene personajes consistentes en conversaciones multi-turno y entra directamente en personaje sin system prompt, lo que simplifica la integracion en aplicaciones de ficcion interactiva.
+- Novelas visuales y juegos de texto: la capacidad de dialogo a tres bandas permite que el motor genere tanto las respuestas de los PNJ como las intervenciones del protagonista, reduciendo la logica de orquestacion en el cliente.
+- Escritura asistida de ficcion: util para generar dialogos con tension implicita y subtramas romanticas sin descripciones explicitas, adecuado para plataformas con moderacion de contenido.
+- Simulacion de personajes para entrenamiento o prototipado: con 262.144 tokens de contexto nativo y 16K-32K practicos, permite mantener el estado de una escena larga con multiples personajes y objetos descritos en el prompt.
+- Despliegue local en GPU de consumo: las cuantizaciones Q3_K_M (13,55 GB) y Q4_K_M (16,68 GB) caben en tarjetas de 16 GB, lo que permite ejecutar el modelo en estaciones de trabajo sin infraestructura de servidor.
+- Chat de acompanamiento en chino: el modelo puede sostener conversaciones afectivas o de rol ligero con un tono consistente, aunque con las limitaciones de contexto y alucinacion descritas mas abajo.
+- Generacion de guiones de dialogo para doblaje o audiolibros: la estructura de prefijos por identidad facilita el parseo posterior y la asignacion de lineas a voces.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Metrica | Valor |
+|---|---|
+| eval_loss (step 700) | 1,1023 |
+| Perplexity (step 700) | 3,01 (v4: 4,29) |
+| Parametros entrenables | 69,2 M / 26,97 B (0,257 %) |
+| Pruebas de codigo | 6/6 (deduplicacion, inversion, two-sum, Fibonacci O(log n), LRU, fusion de intervalos) |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo denso de ~27B, en FP16 se requeririan aproximadamente 54 GB de VRAM solo para pesos; en cuantizacion de 8 bits, unos 27 GB; en 4 bits, unos 14-16 GB. Son estimaciones genericas, no datos del autor.
-- GPU recomendadas: para FP16, A100 80GB o H100; para cuantizaciones de 4-8 bits, RTX 4090 (24 GB) o A6000 (48 GB) podrian ser suficientes.
-- Compatibilidad con GPU de consumo: probable en cuantizacion de 4 bits en tarjetas con 16-24 GB, sin confirmacion.
-- Opciones de despliegue: no documentadas; en funcion del formato de pesos publicado podrian aplicarse vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: Q3_K_M requiere aproximadamente 13,55 GB de pesos mas KV cache; Q4_K_M unos 16,68 GB. Con KV cache en q8_0 y 16 GB de VRAM se recomienda configurar 32K de contexto; con f16, 24K; con q4_0, hasta 64K.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M con contexto amplio; RTX 4080/4070 Ti Super (16 GB) para Q3_K_M con 24K-32K de contexto; A100/H100 para BF16 completo o despliegues multi-usuario.
+- Cabe en GPU de consumo: si, en tarjetas de 16 GB o mas con cuantizacion Q3_K_M o Q4_K_M.
+- Opciones de despliegue: Ollama (requiere version 0.40.18 o superior por el soporte de linear attention de Qwen3.5), Transformers con bitsandbytes y PEFT, llama.cpp con exportacion de LoRA (`llama-export-lora`) partiendo de base BF16/FP16.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables documentados en la informacion proporcionada, y el repositorio no ofrece datos que permitan establecer una comparacion rigurosa con alternativas de la misma categoria.
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| AEON-27B-RP-cn-abliterated (v5) | 27,78 B | 262.144 nativo; 16K-32K practico | Apache-2.0 | Rol en chino, tres voces, sin censura |
+| AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 (base) | 27,78 B | 262.144 | Apache-2.0 | Base sin censura, sin ajuste de rol |
+| don0ox1/Qwen3-8B-Roleplay-CN-v7 | 8 B (aproximado) | no disponible | no disponible | Rol en chino para baja VRAM y movil |
+| Qwen/Qwen3.8-27B (original) | 27,78 B | 262.144 | no disponible | Modelo general con alineamiento estandar |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay model card tecnica, lo que impide verificar arquitectura, contexto, idiomas o calidad.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje; la falta de evaluacion publicada impide cuantificarlo.
-- Sesgos: desconocidos, al no documentarse el dataset de entrenamiento.
-- Efecto de la abliteration: la eliminacion de mecanismos de rechazo puede aumentar la probabilidad de generar contenido danino, ofensivo o inapropiado; requiere filtros externos en produccion.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias sobre el origen de los datos ni sobre el cumplimiento de las licencias del modelo base subyacente.
-- Idiomas: no confirmados; el sufijo "cn" no garantiza un soporte multilingue equilibrado.
-- Madurez del repositorio: cero descargas y cero likes, sin historial de mantenimiento; no es una opcion recomendable para produccion sin validacion previa.
+- El modelo es un fine-tune de rol: sus capacidades de asistente general estan degradadas respecto al base, aunque la v5 las ha recuperado parcialmente con 700 muestras mixtas.
+- Riesgo de alucinacion alto en tareas factuales: el entrenamiento esta orientado a ficcion y dialogo, no a precision factual.
+- La ventana de contexto practica es muy inferior a la nativa: el autor advierte que 16K-32K es el limite realista para mantener el personaje con 16 GB de VRAM, y que la ventana nativa de 262.144 no garantiza coherencia a larga distancia.
+- Idioma: el modelo esta entrenado principalmente en chino; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
+- Requiere desactivar el modo thinking: si el framework no pasa `enable_thinking=false`, la salida incluye residuos `` que rompen el formato.
+- Los prompts largos (mas de 2000 caracteres) degradan la calidad; el autor recomienda prompts concisos y descripciones de objetos o apariencia mediante palabras clave cortas, no frases naturales.
+- Modelo abliterated: se han eliminado los mecanismos de rechazo, por lo que puede generar contenido inapropiado sin filtros. La licencia Apache-2.0 permite uso comercial, pero el deployer es responsable del cumplimiento normativo y de moderacion.
+- El autor advierte que la exportacion de LoRA sobre bases ya cuantizadas produce resultados de precision mixta y degrada la calidad; es necesario partir de BF16.
+- No hay datos publicados de benchmarks estandar ni de rendimiento en produccion (latencia, throughput).
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/don0ox1/AEON-27B-RP-cn-abliterated
+- Modelo en Hugging Face: https://huggingface.co/don0ox1/AEON-27B-RP-cn-abliterated
+- Modelo base: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
+- Version 8B para baja VRAM: https://huggingface.co/don0ox1/Qwen3-8B-Roleplay-CN-v7
+- Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

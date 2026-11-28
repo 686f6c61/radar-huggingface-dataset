@@ -52,31 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "agbalu (AƔBALU — Kabyle (Taqbaylit) NLP) - Hugging Face",
-      "url": "https://huggingface.co/agbalu",
-      "snippet": "Org profile for AƔBALU — Kabyle (Taqbaylit) NLP on Hugging Face, the AI community building the future."
-    },
-    {
-      "title": "Kokoro TTS Local Setup (2026): Tiny 82M Open Voice Model",
-      "url": "https://localaimaster.com/blog/kokoro-tts-local-setup",
-      "snippet": "An 82M-parameter Apache-2.0 TTS model that runs on CPU and topped the TTS Arena at launch. Install steps, a working Python example, and how Kokoro stacks up against Piper and XTTS."
-    },
-    {
-      "title": "Kokoro 82M Context, Specs & Sources (August 2026) | BenchLM.ai",
-      "url": "https://benchlm.ai/models/kokoro-82m",
-      "snippet": "Kokoro 82M by hexgrad appears in EVA-Bench. The voice evidence remains separate from BenchLM&#x27;s weighted text-model score."
-    },
-    {
-      "title": "Kokoro 82M TTS - Speech Model Details - AI4Chat",
-      "url": "https://ai4chat.co/model-speech/kokoro-82m-tts",
-      "snippet": "High Fidelity Audio Kokoro 82M TTS Kokoro 82M TTS is a cutting-edge, lightweight text-to-speech model with just 82 million parameters, delivering high-quality, natural-sounding speech that outperforms larger competitors. Built on StyleTTS2 architecture, it offers multilingual support, customizable voices, speed control, and ultra-fast real-time generation for audiobooks, podcasts, and more."
-    },
-    {
-      "title": "Kokoro 82M API - AI Text to Speech | each::labs",
-      "url": "https://www.eachlabs.ai/kokoro/kokoro/kokoro-82m",
-      "snippet": "Kokoro 82M is an advanced text-to-speech AI model designed to convert written text into natural-sounding voice output."
-    }
-  ]
+  "sources": []
 }

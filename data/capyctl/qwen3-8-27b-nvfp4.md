@@ -2,116 +2,115 @@
 
 ## Resumen
 
-Qwen3.8-27B-NVFP4 es una cuantizacion en formato NVFP4 del modelo multimodal Qwen/Qwen3.8-27B, publicada por el usuario capyctl. El checkpoint aplica NVFP4 (W4A4, grupo de 16) a todas las capas lineales grandes del modelo de lenguaje mediante NVIDIA Model Optimizer 0.47.0: MLP, `lm_head`, proyecciones de atencion q/k/v/o y las proyecciones `in_proj_qkv`, `in_proj_z` y `out_proj` de Gated DeltaNet. La diferencia clave frente a la version de NVIDIA (`nvidia/Qwen3.8-27B-NVFP4`) es que esta ultima mantiene las proyecciones de atencion y DeltaNet en FP8, mientras que aqui tambien se cuantizan a NVFP4.
+Qwen3.8-27B-NVFP4 es una cuantización de 4 bits (NVFP4, W4A4 con grupo de 16) del modelo multimodal Qwen/Qwen3.8-27B, publicada por el usuario capyctl. La cuantización se realizó con NVIDIA Model Optimizer 0.47.0 y aplica NVFP4 a todas las proyecciones lineales grandes del modelo de lenguaje: MLP, `lm_head`, atención q/k/v/o y las proyecciones `in_proj_qkv`, `in_proj_z` y `out_proj` del bloque Gated DeltaNet. A diferencia de la build de NVIDIA, que mantiene atención y DeltaNet en FP8, esta versión las cuantiza también a NVFP4, reduciendo el peso leído por token de 17,61 GB a 14,45 GB.
 
-El objetivo es reducir el ancho de banda de memoria necesario para la decodificacion, que en regimen de un solo stream esta limitada por la lectura de pesos. Este checkpoint lee 14,45 GB por token frente a los 17,61 GB de la version de NVIDIA, lo que se traduce en mejoras medidas de throughput de entre el 10% y el 23% segun motor y configuracion.
+El modelo base es un transformer híbrido (atención clásica combinada con capas Gated DeltaNet, un mecanismo de atención lineal) con torre de visión, pipeline image-text-to-text y una cabeza MTP (multi-token prediction) que se conserva en BF16 para permitir decodificación especulativa en motores como vLLM o SGLang. La revisión actual mejora la selección de escalas de bloque: en lugar de tomar la escala por defecto (basada en el peso máximo del bloque), elige entre 21 candidatas (de 0,60x a 1,10x) la que redondea más cerca de los pesos BF16, bajando el error de los pesos de 4 bits del 9,48% al 8,59%.
 
-El modelo conserva la cabeza MTP en BF16 para permitir decodificacion especulativa, y se distribuye bajo licencia Apache 2.0. Esta pensado para despliegue en hardware Blackwell con soporte NVFP4, particularmente en configuraciones de un solo dispositivo como NVIDIA GB10.
+Es relevante para despliegues en hardware con soporte NVFP4 (por ejemplo, NVIDIA GB10) donde el cuello de botella es el ancho de banda de memoria en decodificación de un solo stream: el checkpoint ocupa 18,77 GB en disco y lee 14,45 GB por token, frente a los 21,92 GB y 17,61 GB de la build de NVIDIA. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con Gated DeltaNet y atencion (base Qwen3.8-27B), segun los nombres de capas descritos (64 capas MLP, 48 capas DeltaNet, 16 capas de atencion) |
-| Parametros totales | 14.557.547.760 (14,56 mil millones, segun safetensors) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer híbrido con atención clásica y capas Gated DeltaNet; torre de visión; cabeza MTP |
+| Parametros totales | 14.557.547.760 (según safetensors del repo; el nombre comercial del modelo base indica 27B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (W4A4, grupo 16) en capas lineales grandes; BF16 en embeddings, `in_proj_a/b`, `conv1d`, `A_log`, `dt_bias`, normas, vision tower y cabeza MTP; KV cache sin cuantizar |
+| Tipos de cuantizacion | NVFP4 W4A4 con grupo de 16 en MLP, `lm_head`, atención q/k/v/o y proyecciones DeltaNet; BF16 en embeddings, `in_proj_a/b`, `conv1d`, `A_log`, `dt_bias`, normas, torre de visión y cabeza MTP |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (formato ModelOpt NVFP4), libreria transformers |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B combina capas de atencion clasica con capas de Gated DeltaNet, un mecanismo de estado lineal recurrente. La cuantizacion se realizo con ModelOpt 0.47.0 mediante el script `examples/hf_ptq/hf_ptq.py` y la receta `qwen3_5-nvfp4_all_linear-kv_none.yaml`, con calibracion en modo `max` sobre 512 conversaciones de hasta 1024 tokens (256 de `HuggingFaceH4/ultrachat_200k` y 256 de `ise-uiuc/Magicoder-OSS-Instruct-75K`, ambas MIT). Posteriormente se audito el formato de cada tensor.
+El modelo base Qwen3.8-27B combina capas de self-attention clásica (16 capas, según el desglose de tensores de la model card) con capas Gated DeltaNet (48 capas), un mecanismo de atención lineal con estado recurrente. El modelo de lenguaje tiene 64 capas MLP. Incluye una torre de visión (pipeline image-text-to-text) y una cabeza MTP que se mantiene en BF16 para que los motores de inferencia puedan usarla como drafter en decodificación especulativa.
 
-El desglose de pesos es el siguiente: MLP gate/up/down en 64 capas ocupa 9,63 GB en NVFP4; DeltaNet qkv/z/out en 48 capas ocupa 3,17 GB en NVFP4 (frente a 5,59 GB en FP8 de la version de NVIDIA); atencion q/k/v/o en 16 capas ocupa 0,94 GB en NVFP4 (frente a 1,68 GB); `lm_head` ocupa 0,72 GB en NVFP4. El resto en BF16 suma 4,31 GB y el checkpoint completo ocupa 18,77 GB en disco. El repositorio incluye `conversion-manifest.json` con la revision de origen, versiones de herramientas y SHA-256 de la receta, el conjunto de calibracion y el conversor. No se describe en la informacion disponible si hubo entrenamiento adicional, RLHF o DPO; se trata exclusivamente de una cuantizacion post-entrenamiento del modelo base.
+Esta ficha no documenta el entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO); esa información correspondería a la model card de Qwen/Qwen3.8-27B y no está incluida en la información disponible. La innovación técnica de esta publicación es exclusivamente la cuantización: NVFP4 en todas las proyecciones grandes (208 tensores que NVIDIA mantiene en FP8 pasan aquí a NVFP4) y una búsqueda de escalas de bloque por tensor para minimizar el error de redondeo respecto a BF16. El KV cache no se cuantiza en el checkpoint; se recomienda servir con KV cache en FP8 si se desea.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento conversacional multi-turno, heredadas del modelo base Qwen3.8-27B.
-- Procesamiento de imagen y texto (`image-text-to-text`): incluye vision tower en BF16, por lo que mantiene capacidad multimodal.
-- Tool calling / function calling: validado con 30 casos de prueba, con 30/30 aciertos.
-- Modo thinking: las mediciones se realizaron con thinking activado, y el modelo soporta su desactivacion.
-- Decodificacion especulativa: conserva la cabeza MTP en BF16 para que los motores de inferencia puedan generar borradores.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Razonamiento matematico: 98,3% en GSM8K segun las mediciones del autor.
+- Generación de texto y razonamiento conversacional multi-turno, con modo thinking activable (las mediciones se hicieron con thinking on).
+- Generación de código: la model card evalúa con prompts de coding y reporta un 92,98% de acuerdo con BF16 en esa categoría.
+- Matemáticas: evaluado en GSM8K (98,3% de respuestas correctas que terminan en 2.048 tokens en esta revisión).
+- Tool calling / function calling: 30/30 casos correctos en vLLM y 29/30 en SGLang en el conjunto de prueba del autor.
+- Procesamiento de imagen y texto (pipeline image-text-to-text, torre de visión en BF16).
+- Capacidades multilingües: se mencionan prompts multilingües en el conjunto de evaluación, pero no se detallan los idiomas soportados.
+- Decodificación especulativa: la cabeza MTP en BF16 permite drafting con DFlash2 en vLLM y SGLang.
 
 ## Casos de uso
 
-- Servicio de chat multimodal en un solo dispositivo: el checkpoint cabe en 18,77 GB en disco y se sirve con 51,2 GiB de memoria pico en vLLM sobre GB10, lo que permite desplegar un asistente con vision y texto en hardware compacto.
-- Atencion al cliente automatizada: el modelo gestiona conversaciones multi-turno con tool calling fiable (30/30 en las pruebas), adecuado para integraciones con sistemas de ticketing o CRM mediante function calling.
-- Despliegue de alto throughput en produccion: con SGLang 0.5.22 y DFlash2 alcanza 166 tokens/s con 8 streams y 329 tokens/s con 32 streams, apropiado para servir a multiples usuarios concurrentes en una sola GPU.
-- Generacion de codigo asistida: la calibracion incluye 256 conversaciones de Magicoder-OSS-Instruct, lo que preserva el comportamiento en tareas de programacion; util para autocompletado o revision de codigo.
-- Razonamiento matematico verificado: 98,3% en GSM8K con respuestas limitadas a 2048 tokens, adecuado para tutoria o resolucion de problemas paso a paso.
-- Evaluacion comparativa de tecnicas de cuantizacion: el repositorio de comparaciones incluye mediciones frente a las builds de NVIDIA, gittensor, QUASAR, RedHatAI, unsloth, el modelo BF16 y EXL3 de MiaAI-Lab, util como referencia para equipos que eligen formato de cuantizacion.
-- Prototipado e investigacion en hardware Blackwell: al requerir NVFP4, sirve para validar pipelines de inferencia en GPUs de nueva generacion con vLLM 0.32.0 o SGLang 0.5.22.
+- Inferencia de un solo stream en hardware con NVFP4: el checkpoint lee 14,45 GB por token, un 18% menos que la build de NVIDIA (17,61 GB), lo que se traduce en 35,7 tokens/s frente a 29,0 en vLLM 0.32.0 con DFlash2 sobre un GB10. Adecuado para asistentes interactivos donde prima la latencia por token.
+- Servicio multiusuario en un solo acelerador: con 8 streams alcanza 181 tokens/s totales en vLLM con DFlash2 (+13% frente a NVIDIA) y 166 en SGLang (+10%), útil para desplegar un endpoint conversacional con varias sesiones concurrentes.
+- Asistente con tool calling: 30/30 casos correctos en el conjunto de prueba, integrable en agentes que invocan APIs o funciones externas.
+- Razonamiento matemático y resolución de problemas: 98,3% en GSM8K con respuestas acotadas a 2.048 tokens, apto para pipelines de verificación y tutoría automatizada.
+- Generación de código asistida: mantiene un 92,98% de acuerdo de siguiente token con BF16 en prompts de coding, suficiente para autocompletado y revisión en entornos de desarrollo.
+- Descripción y análisis de imágenes: al conservar la torre de visión en BF16, puede usarse en pipelines image-text-to-text (accesibilidad, moderación de contenido visual, extracción de información de capturas).
+- Evaluación y comparación de builds cuantizadas: los scripts y recetas del autor (repositorio capyctl-recipes) permiten reproducir las mediciones de precisión y throughput, útil para equipos que eligen entre variantes FP8 y NVFP4.
 
 ## Benchmarks y rendimiento
 
-Mediciones del autor en una NVIDIA GB10, via CapyCTL 0.1.10, `temperature: 0`, thinking activado, 512 tokens de salida:
+Acuerdo de siguiente token codicioso con BF16 (200 prompts, 46.706 tokens de respuesta, vLLM 0.32.0):
 
-| Receta | 1 stream | 8 streams | 32 streams | Memoria pico |
-|---|---|---|---|---|
-| vLLM 0.32.0 con DFlash2 | 35,3 tok/s | 187 tok/s | 390 tok/s (KV cache 32 GiB) | 51,2 GiB |
-| SGLang 0.5.22 con DFlash2 | 36,3 tok/s | 166 tok/s | 329 tok/s (peticion 94 GiB) | 58,1 GiB |
-
-Comparacion directa con `nvidia/Qwen3.8-27B-NVFP4`:
-
-| Configuracion | Este checkpoint | NVIDIA | Mejora |
+| Build | Layout | Acuerdo con BF16 | Coding |
 |---|---|---|---|
-| vLLM 0.32.0 + DFlash2, 1 / 8 streams | 35,7 / 181 tok/s | 29,0 / 160 tok/s | +23% / +13% |
-| SGLang 0.5.22 + DFlash2, 1 / 8 streams | 35,2 / 166 tok/s | 30,4 / 150 tok/s | +16% / +10% |
-| SGLang 0.5.22 sin borradores, 1 / 8 streams | 14,9 / 101 tok/s | 12,5 / 85,9 tok/s | +19% / +18% |
-| GSM8K (250 preguntas, 2048 tokens) | 98,3% | 98,4% | -0,1 pp |
-| Tool calls (30 casos) | 30/30 | 30/30 | igual |
+| BF16 (suelo del motor) | — | 99,54% | 99,51% |
+| nvidia/Qwen3.8-27B-NVFP4 | Atención y DeltaNet en FP8 | 94,33% | 94,58% |
+| RadixArk/Qwen3.8-27B-NVFP4 | Atención y DeltaNet en FP8 | 93,73% | 93,47% |
+| Esta revisión | Todo NVFP4 | 93,00% | 92,98% |
+| Primera revisión (4a47ea5e) | Todo NVFP4 | 92,63% | 92,29% |
 
-El modelo BF16 de origen obtiene 98,3% en GSM8K, y las recetas tal como se distribuyen obtienen 98,3% (vLLM) y 98,0% (SGLang). No se han publicado resultados de MMLU, HumanEval u otros benchmarks estandar en la informacion disponible.
+Throughput en un NVIDIA GB10 (temperature 0, thinking on, 512 tokens de salida):
+
+| Receta | Revisión | 1 stream | 8 streams | 32 streams | Memoria pico |
+|---|---|---|---|---|---|
+| vLLM 0.32.0 con DFlash2 | esta | 33,9 tok/s | 177 tok/s | 390 tok/s (KV cache 32 GiB, primera revisión) | 52,3 GiB |
+| SGLang 0.5.22 con DFlash2 | primera | 36,3 tok/s | 166 tok/s | 329 tok/s | 58,1 GiB |
+
+Comparación directa con nvidia/Qwen3.8-27B-NVFP4 (mismo motor y ajustes, primera revisión de este checkpoint):
+
+| Configuración | Esta build | NVIDIA |
+|---|---|---|
+| vLLM 0.32.0 + DFlash2, 1 / 8 streams | 35,7 / 181 tok/s | 29,0 / 160 tok/s |
+| SGLang 0.5.22 + DFlash2, 1 / 8 streams | 35,2 / 166 tok/s | 30,4 / 150 tok/s |
+| SGLang 0.5.22 sin drafts, 1 / 8 streams | 14,9 / 101 tok/s | 12,5 / 85,9 tok/s |
+| GSM8K (250 preguntas) | 98,3% | 98,4% |
+| Tool calls (30 casos) | 30/30 | 30/30 |
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: el checkpoint ocupa 18,77 GB en disco y lee 14,45 GB por token en decodificacion de un solo stream. La memoria pico medida es de 51,2 GiB en vLLM y 58,1 GiB en SGLang, incluyendo KV cache.
-- GPU recomendadas: NVIDIA GB10 (unica hardware donde se han publicado mediciones). Requiere GPU con soporte de NVFP4 (generacion Blackwell); no se documenta funcionamiento en A100, H100 ni RTX 4090.
-- Consumer GPU: no disponible; el formato NVFP4 no es compatible con GPUs anteriores a Blackwell, por lo que no se puede confirmar su uso en tarjetas de consumo.
-- Opciones de despliegue: vLLM 0.32.0 y SGLang 0.5.22, ambas medidas con el checkpoint. Soporte de llama.cpp, Ollama o TGI no disponible.
-- Decodificacion especulativa: recomendado usar el drafter `z-lab/Qwen3.8-27B-DFlash2` (revision 50307d4c4cde6860d4eee73e2547cd786fe8e8a4) para alcanzar los valores de throughput reportados; sin borradores el rendimiento baja a 14,9 tok/s en un stream.
-- Latencia y throughput: 35,3 tok/s (1 stream, vLLM + DFlash2) y hasta 390 tok/s agregados con 32 streams y KV cache de 32 GiB.
-- Herramienta de despliegue: CapyCTL 0.1.10 con recetas para vLLM y SGLang, o despliegue manual cargando el checkpoint en los motores mencionados.
+- VRAM estimada: el checkpoint ocupa 18,77 GB en disco y lee 14,45 GB por token; en las pruebas se midió un pico de 52,3 GiB en vLLM y 58,1 GiB en SGLang sobre GB10, incluyendo KV cache y estado DeltaNet.
+- GPU recomendadas: hardware con soporte de kernels NVFP4, como NVIDIA GB10 (única plataforma medida en la información disponible). No se documentan pruebas en A100, H100 ni RTX 4090.
+- Consumer GPU: no disponible; no se confirma compatibilidad con GPUs de consumo.
+- Opciones de despliegue: vLLM 0.32.0 con DFlash2 y SGLang 0.5.22 con DFlash2, mediante las recetas de CapyCTL 0.1.10. El checkpoint usa la librería transformers y safetensors.
+- Latencia y throughput: 33,9 tok/s a un stream y 177 tok/s a 8 streams en vLLM; 31,3 y 162 tok/s respectivamente en SGLang con esta revisión. El KV cache no está cuantizado en el checkpoint; se recomienda FP8 si se necesita.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Lectura por token | Rendimiento (vLLM, 1/8 streams) | Licencia |
+| Modelo | Cuantización | Peso leído por token | Disco | Acuerdo con BF16 | Licencia |
 |---|---|---|---|---|---|
-| capyctl/Qwen3.8-27B-NVFP4 | 14,56 mil M | NVFP4 en todas las lineales grandes | 14,45 GB | 35,7 / 181 tok/s | Apache 2.0 |
-| nvidia/Qwen3.8-27B-NVFP4 | 14,56 mil M | NVFP4 en MLP y lm_head, FP8 en atencion y DeltaNet | 17,61 GB | 29,0 / 160 tok/s | Apache 2.0 |
-| gittensor (misma build sin cabeza MTP) | no disponible | NVFP4 mismo esquema | no disponible | similar segun el autor | no disponible |
-| Qwen/Qwen3.8-27B (BF16) | 14,56 mil M | BF16 | no disponible | no disponible | Apache 2.0 |
-
-Las builds de QUASAR, RedHatAI, unsloth y EXL3 de MiaAI-Lab se comparan en el repositorio de comparaciones del autor, pero sus cifras concretas no se detallan en la informacion disponible. Para contexto y rendimiento del modelo base, consultar la model card de Qwen/Qwen3.8-27B.
+| capyctl/Qwen3.8-27B-NVFP4 (esta) | NVFP4 en todo | 14,45 GB | 18,77 GB | 93,00% | Apache 2.0 |
+| nvidia/Qwen3.8-27B-NVFP4 | NVFP4 + FP8 en atención/DeltaNet | 17,61 GB | 21,92 GB | 94,33% | no disponible en la información |
+| RadixArk/Qwen3.8-27B-NVFP4 | NVFP4 + FP8 en atención/DeltaNet | no disponible | no disponible | 93,73% | no disponible en la información |
+| Qwen/Qwen3.8-27B (BF16) | BF16 | no disponible | no disponible | 99,54% (suelo del motor) | no disponible en la información |
 
 ## Limitaciones y advertencias
 
-- Requiere hardware con soporte NVFP4 (Blackwell); no es desplegable en GPUs Ampere, Hopper ni consumer anteriores, lo que limita su portabilidad.
-- La cuantizacion W4A4 puede degradar tareas sensibles a precision; la evaluacion publicada se limita a GSM8K y tool calling, sin cobertura de razonamiento complejo, vision o codigo.
-- El KV cache no esta cuantizado; para reducir memoria hay que configurar explicitamente un KV cache FP8 en el motor de inferencia.
-- Los benchmarks de velocidad se han medido unicamente en una NVIDIA GB10 con vLLM 0.32.0 y SGLang 0.5.22; el rendimiento en otras GPUs o versiones de motor no esta verificado.
-- El checkpoint tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y el autor no es el desarrollador original del modelo; auditar el `conversion-manifest.json` antes de usarlo en produccion.
-- Sesgos conocidos y riesgo de alucinacion: no documentados especificamente para esta cuantizacion; se heredan los del modelo base Qwen3.8-27B.
-- Idiomas soportados: no disponibles en la informacion proporcionada.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B y del drafter DFlash2 antes de desplegar.
-- La model card esta truncada en el apartado de licencia; no se dispone del texto completo.
+- La cuantización NVFP4 introduce un error de pesos del 8,59% y reduce el acuerdo de siguiente token con BF16 al 93,00%, unos 1,3 puntos por debajo de la build de NVIDIA con atención y DeltaNet en FP8.
+- El rendimiento depende del hardware: no hay datos de inferencia fuera de NVIDIA GB10; en otras GPUs la compatibilidad con kernels NVFP4 no está confirmada.
+- El drafter DFlash2 acepta menos tokens por paso con esta revisión (3,24 frente a 3,28 en vLLM; 3,27 frente a 3,47 en SGLang a un stream), lo que puede afectar al throughput en configuraciones especulativas.
+- En SGLang, esta revisión costó un 13% en un stream frente a la primera revisión, según la model card; la receta de SGLang mantiene la primera revisión por ese motivo.
+- El KV cache no está cuantizado; sin KV cache FP8 el consumo de memoria en contextos largos puede ser elevado.
+- No se documentan sesgos, idiomas soportados ni longitud de contexto en la información disponible; deben consultarse en la model card del modelo base.
+- El número de parámetros reportado por safetensors (14,56B) no coincide con el "27B" del nombre comercial; conviene verificar el tamaño real del modelo base antes de dimensionar el despliegue.
+- Licencia Apache 2.0 permite uso comercial, pero las condiciones del modelo base deben verificarse por separado.
 
 ## Enlaces
 
-- Hugging Face del modelo: https://huggingface.co/capyctl/Qwen3.8-27B-NVFP4
+- Hugging Face: https://huggingface.co/capyctl/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Version de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
+- Build de NVIDIA: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
 - Drafter DFlash2: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Repositorio CapyCTL: https://github.com/edurdias/capyctl
-- Receta vLLM para GB10: https://github.com/edurdias/capyctl-recipes/tree/main/vllm/qwen3.8-27b-capyctl-nvfp4-gb10
-- Receta SGLang para GB10: https://github.com/edurdias/capyctl-recipes/tree/main/sglang/qwen3.8-27b-capyctl-nvfp4-gb10
-- Comparacion de builds NVFP4: https://github.com/edurdias/capyctl-recipes/tree/main/comparisons/qwen3.8-27b-nvfp4-builds-gb10
-- Documentacion de instalacion de CapyCTL: https://edurdias.github.io/capyctl/docs/install/
-- Documentacion de despliegue: https://edurdias.github.io/capyctl/docs/deploy/
-- Dataset de calibracion (ultrachat_200k): https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
-- Dataset de calibracion (Magicoder): https://huggingface.co/datasets/ise-uiuc/Magicoder-OSS-Instruct-75K
+- Recetas y comparativas: https://github.com/edurdias/capyctl-recipes/tree/main/comparisons/qwen3.8-27b-nvfp4-builds-gb10
+- Receta vLLM: https://github.com/edurdias/capyctl-recipes/tree/main/vllm/qwen3.8-27b-capyctl-nvfp4-gb10
+- Receta SGLang: https://github.com/edurdias/capyctl-recipes/tree/main/sglang/qwen3.8-27b-capyctl-nvfp4-gb10

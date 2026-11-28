@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "vkovtun/text-to-sql-qlora-final-2026-11-27_23.13.11-Qwen2.5-3B-Instruct-finetune-QLORA",
+  "slug": "vkovtun-text-to-sql-qlora-final-2026-11-27_23-13-11-qwen2-5-3b-instruct-finetune-qlora",
+  "author": "vkovtun",
+  "url": "https://huggingface.co/vkovtun/text-to-sql-qlora-final-2026-11-27_23.13.11-Qwen2.5-3B-Instruct-finetune-QLORA",
+  "created_at": "2026-11-27T22:13:39.000Z",
+  "updated_at": "2026-11-27T22:33:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 371035701,
+  "storage_human": "371 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "剪映专业版V11.0.0.14274离线安装包 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/archiver/tid-2118625.html",
+      "snippet": "Jul 23, 2026 · › › 剪映专业版V11.0.0.14274离线安装包"
+    }
+  ]
+}

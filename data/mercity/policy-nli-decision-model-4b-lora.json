@@ -5,7 +5,7 @@
   "author": "Mercity",
   "url": "https://huggingface.co/Mercity/policy-nli-decision-model-4b-lora",
   "created_at": "2026-11-23T14:10:22.000Z",
-  "updated_at": "2026-11-23T21:22:51.000Z",
+  "updated_at": "2026-11-27T20:11:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "text-generation",
     "conversational",
     "en",
-    "dataset:Mercity/policy-nli",
+    "dataset:Mercity/tripwire-nli",
     "dataset:tomg-group-umd/DynaBench",
     "base_model:Mercity/decision-model-qwen3.5-4b",
     "base_model:adapter:Mercity/decision-model-qwen3.5-4b",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Mercity/tripwire-nli-4b-lora",
+  "renamed_at": "2026-11-28T04:39:13.512Z",
   "benchmarks": [],
   "sources": []
 }

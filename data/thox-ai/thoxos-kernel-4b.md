@@ -2,89 +2,98 @@
 
 ## Resumen
 
-ThoxOS-Kernel-4B es un modelo de lenguaje de 4.205.751.296 parámetros desarrollado por Thox-ai como "estudiante residente" del kernel y sistema operativo ThoxOS para los dispositivos ThoxMini y ThoxClip. Se trata de un fine-tune con fp-LoRA sobre Qwen/Qwen3.5-4B, destilado del modelo profesor ThoxOS-Kernel-27B (que sí superó las barreras de seguridad del programa) y fusionado posteriormente con el modelo base. THOX realizó el entrenamiento, la evaluacion y las conversiones a GGUF; el modelo base es de Qwen.
+ThoxOS-Kernel-4B es un modelo de lenguaje de 4.205.751.296 parámetros (aproximadamente 4B) desarrollado por Thox-ai. Se trata de un fine-tune mediante fp-LoRA de Qwen/Qwen3.5-4B, destilado a partir del modelo profesor ThoxOS-Kernel-27B y fusionado con el modelo base. Su propósito declarado es actuar como estudiante residente del kernel/sistema operativo ThoxOS para los dispositivos ThoxMini y ThoxClip, es decir, un agente orientado a tareas de sistema operativo.
 
-El modelo está diseñado como un agente de sistema operativo que propone acciones en lugar de ejecutarlas directamente: la filosofía declarada es "the model proposes; the harness disposes". Esto es relevante porque el propio autor lo publica como una **baseline documentada, no como un modelo que haya superado las barreras de seguridad**: falló tres pruebas (una alucinacion conocida como falsa en GATE-K, una escapada destructiva en el escenario trap-01 de OS-bench y una escapada en la sonda P17). El autor recomienda explícitamente no desplegarlo como agente residente del sistema operativo sin un harness que imponga confirmación de acciones destructivas.
+El modelo se publica explícitamente como una **baseline documentada y no como un modelo que haya superado las barreras de seguridad (gate) del programa**. Según la model card, no superó tres pruebas pre-registradas: un fallo duro de conocimiento falso (gatek-f06), una evasión destructiva en la trampa OS-bench trap-01 y una evasión en la sonda P17. El autor indica que los tres son defectos de forma sobre decisiones correctas y que se intentó una remediación acotada que tampoco superó las barreras. Por tanto, el modelo se publica como la mejor medición disponible de un artefacto de 4B, con su registro de evaluación impreso en su totalidad.
 
-El modelo se distribuye con licencia Apache 2.0, en formato safetensors (8,4 GB) y tres cuantizaciones GGUF (Q4_K_M, Q8_0 y Q4_0), y está disponible en Ollama. Su idioma declarado es únicamente el inglés.
+La relevancia actual del modelo reside en su transparencia editorial: publica pesos abiertos bajo licencia Apache 2.0, con conversiones GGUF (Q4_K_M, Q8_0 y Q4_0), empaquetado para Ollama y una API compatible con OpenAI a través de `llama serve`. No obstante, su uso en producción como agente residente de sistema operativo requiere un harness que imponga confirmación de acciones destructivas, ya que el propio autor advierte que no debe desplegarse sin esa salvaguarda.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.5-4B, tag `qwen3_5_text`); detalles internos no disponibles |
-| Parametros totales | 4.205.751.296 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF Q4_K_M, Q8_0, Q4_0; pesos completos en safetensors (sin cuantizar) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B, tag `qwen3_5_text`) |
+| Parámetros totales | 4.205.751.296 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la información proporcionada (la model card menciona estimaciones de memoria a 4k y 8k de contexto) |
+| Tipos de cuantización | GGUF Q4_K_M, Q8_0 y Q4_0; pesos originales en safetensors |
 | Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (`model.safetensors`, 8.411.558.400 B) y GGUF (Q4_K_M 2.708.804.128 B; Q8_0 4.482.402.848 B; Q4_0 2.543.899.168 B) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-ThoxOS-Kernel-4B parte de Qwen/Qwen3.5-4B, un transformer de aproximadamente 4,2 mil millones de parámetros. Sobre esa base, THOX aplicó un fine-tune con fp-LoRA (adaptadores de bajo rango en precisión flotante) y fusionó los adaptadores resultantes en los pesos del modelo base. El proceso de entrenamiento fue una destilación desde el modelo profesor ThoxOS-Kernel-27B, que sí había superado las barreras de seguridad del programa. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
+ThoxOS-Kernel-4B parte de Qwen/Qwen3.5-4B, un transformer de aproximadamente 4B parámetros, y se obtiene mediante un fine-tune con fp-LoRA (adaptadores de bajo rango en precisión flotante) fusionado posteriormente en el modelo base en las instalaciones de THOX. El proceso de entrenamiento es una destilación: el modelo profesor es ThoxOS-Kernel-27B, descrito como gate-passed (es decir, que sí superó las barreras de seguridad del programa), y el estudiante de 4B aprende de él para operar como agente residente del kernel ThoxOS en los dispositivos ThoxMini y ThoxClip.
 
-El modelo está etiquetado con los tags `thox`, `thoxos`, `kernel`, `os-agent`, `distillation`, `thoxmini`, `thoxclip` y `baseline`, lo que indica su orientación a tareas de agente de sistema operativo. La innovación técnica destacable no es arquitectónica sino metodológica: el autor documenta públicamente el registro completo de evaluación y las barreras de seguridad que el modelo no superó, incluyendo un intento acotado de remediación que también falló. Según las reglas de resultado del programa, el mejor artefacto medido se publica como baseline documentada en lugar de descartarse o promocionarse silenciosamente.
+La model card no detalla el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. Sí menciona que THOX realizó el entrenamiento, el gating y las conversiones a GGUF, mientras que el modelo base es de Qwen. El principio de diseño declarado es que "el modelo propone; el harness dispone": el modelo nunca ejecuta acciones de sistema directamente. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional y de tipo `text-generation` (pipeline declarado).
-- Razonamiento orientado a tareas de sistema operativo y kernel como agente residente.
-- Propuesta de acciones de sistema (el modelo no ejecuta directamente; el harness decide).
-- Destilado de un profesor de 27B, lo que transfiere parte de las capacidades del modelo mayor a un tamaño de 4B.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: orientado a ello por diseño (`os-agent`), aunque sin barreras de seguridad superadas.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
+- Generación de texto y conversación multi-turno en inglés, con pipeline `text-generation` y `conversational`.
+- Razonamiento orientado a tareas de sistema operativo (kernel/OS agent), incluyendo propuestas de acciones de sistema dentro de un harness externo.
+- Destilación de un profesor de 27B, lo que le permite heredar patrones de decisión del modelo mayor.
+- Formato de pesos compatible con llama.cpp, Ollama y servidores con API compatible con OpenAI (`/v1/chat/completions`).
+- Soporte de cuantización GGUF para despliegue en hardware de consumo.
+- Capacidades de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes multi-step: no disponible en la información proporcionada (el modelo se describe como agente residente, pero sin detallar el bucle de razonamiento).
+- Capacidades multilingües: limitadas al inglés según el campo `language`.
+- Capacidades especiales (thinking mode, visión, audio): no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Investigación sobre seguridad de agentes de sistema operativo: el modelo sirve como caso de estudio documentado de un agente que falla barreras de seguridad concretas (GATE-K, trap-01, P17), útil para diseñar harnesses de confirmación de acciones destructivas.
-- Evaluación de destilación de profesor 27B a estudiante 4B: permite comparar el comportamiento del estudiante con el profesor gate-passed en tareas de kernel y OS.
-- Prototipado de asistentes locales en dispositivos de recursos limitados: con Q4_K_M (2,7 GB) puede ejecutarse en hardware modesto para experimentar con agentes de sistema antes de pasar a un modelo gate-passed.
-- Banco de pruebas de harnesses de seguridad: al conocerse sus modos de fallo, se puede usar para validar que un harness externo bloquea correctamente acciones destructivas.
-- Experimentación con Ollama y llama.cpp: el autor proporciona `Modelfile` y comandos de ejecución, lo que facilita la integración en flujos locales de prueba.
-- Docencia y divulgación sobre evaluación de modelos: el registro de gates publicado en la model card es material concreto para explicar cómo se documenta un fallo de seguridad en un artefacto abierto.
-- Generación de texto conversacional en inglés en entornos controlados: uso como modelo de chat de 4B con licencia Apache 2.0, siempre fuera de funciones de ejecución de sistema.
+- **Agente residente de sistema operativo con harness de confirmación**: el modelo propone acciones sobre el sistema (por ejemplo, manipulación de ficheros o procesos) y un harness externo las valida y ejecuta. Es adecuado por su entrenamiento específico como kernel/OS agent, pero requiere obligatoriamente un mecanismo que confirme acciones destructivas, dado que no superó la trampa OS-bench trap-01.
+- **Asistente de línea de comandos en dispositivos de gama baja**: con la cuantización Q4_K_M (2,71 GB) puede ejecutarse en hosts con 8 GB de memoria mínima y 16 GB recomendados, lo que lo hace viable en mini-PC y dispositivos ThoxMini/ThoxClip.
+- **Prototipado local con Ollama**: mediante `ollama run Thox-ai/thoxos-kernel-4b` se puede integrar en flujos de desarrollo para probar interacciones de agente de sistema sin infraestructura dedicada.
+- **Servicio compatible con OpenAI en local**: con `llama serve --port 9931` se expone una API `/v1/chat/completions`, lo que permite sustituir llamadas a APIs en la nube por inferencia local en pruebas de integración.
+- **Evaluación de seguridad de agentes de sistema**: al publicarse con su registro de gate completo (fallos gatek-f06, trap-01 y P17), sirve como caso de estudio para construir y validar harnesses de confirmación de acciones destructivas.
+- **Destilación y experimentación académica**: al ser un fine-tune LoRA fusionado de un modelo base abierto y con licencia Apache 2.0, es útil para reproducir pipelines de destilación profesor-estudiante en dominios de agentes de sistema.
+- **Generación de texto conversacional en inglés**: para tareas de chat y generación textual general en inglés, aunque su especialización principal es el dominio de sistema operativo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona únicamente resultados de evaluación de seguridad (GATE-K, OS-bench trap-01, sonda P17) sin cifras numéricas de rendimiento estándar (MMLU, HumanEval, GSM8K, etc.).
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona un registro de evaluación (gate record) con fallos identificados (gatek-f06, OS-bench trap-01, sonda P17), pero no incluye cifras de benchmarks estándar como MMLU, HumanEval o GSM8K.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,7 GB con Q4_K_M, 2,5 GB con Q4_0 y 4,5 GB con Q8_0 (tamaños de archivo GGUF); los pesos completos en safetensors ocupan 8,4 GB.
-- GPU recomendadas: no especificadas por el autor; por tamaño, cabe en GPU de consumo con al menos 6-8 GB de VRAM para cuantizaciones Q4 y en torno a 8-10 GB para Q8_0.
-- Cabe en GPU de consumo: sí, previsiblemente en tarjetas tipo RTX 3060/4060 (12/8 GB) y superiores con las cuantizaciones GGUF; no confirmado por el autor.
-- Opciones de despliegue: Ollama (`ollama run Thox-ai/thoxos-kernel-4b`), llama.cpp (`llama-cli`, `llama serve` con API compatible con OpenAI en el puerto 9931), y descarga directa de GGUF vía `hf download`. vLLM y TGI no se mencionan en la información disponible.
-- Latencia y throughput estimados: no disponible.
+- **VRAM estimada para inferencia** (según la model card, memoria total estimada):
+  - Q4_K_M: ~3,4 GB a 4k de contexto; ~3,8 GB a 8k de contexto.
+  - Q4_0: ~3,2 GB a 4k de contexto; ~3,6 GB a 8k de contexto.
+  - Q8_0: el tamaño del fichero es de 4.482.402.848 B (unos 4,48 GB); la estimación de memoria total a 4k y 8k no aparece completa en la información proporcionada.
+- **Host tier**: 8 GB de memoria mínima y 16 GB recomendados para Q4_K_M y Q4_0.
+- **GPU recomendadas**: no disponible en la información proporcionada. Por tamaño, cabe en GPU de consumo con al menos 8 GB de VRAM en cuantización Q4.
+- **¿Cabe en GPU de consumo?**: sí, en cuantizaciones Q4 (Q4_K_M y Q4_0) con 8 GB o más de VRAM; Q8_0 requiere más memoria.
+- **Opciones de despliegue**: Ollama (`ollama run Thox-ai/thoxos-kernel-4b`), llama.cpp (`llama-cli`, `llama serve` con API compatible con OpenAI), y descarga directa de GGUF con `hf download`. No se mencionan vLLM ni TGI.
+- **Latencia y throughput**: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxOS-Kernel-4B | 4,2B | no disponible | Apache 2.0 | Público, safetensors + GGUF, Ollama | Baseline documentada; no supera barreras de seguridad |
-| Qwen/Qwen3.5-4B (base) | ~4B | no disponible | no disponible en la información | Público en Hugging Face | Modelo base del que deriva el fine-tune |
-| ThoxOS-Kernel-27B (profesor) | ~27B | no disponible | no disponible en la información | no disponible | Profesor gate-passed del que se destila el 4B |
+| ThoxOS-Kernel-4B | 4.205.751.296 | No disponible | Apache 2.0 | Pesos abiertos en HF, GGUF y Ollama | Baseline documentada, no gate-passed |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | No disponible | No disponible en la información proporcionada | Pesos abiertos en HF | Base del fine-tune; sin especialización en agentes de sistema |
+| ThoxOS-Kernel-27B (profesor) | ~27B | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Profesor gate-passed del que se destila el estudiante |
 
-No se dispone de datos de benchmarks que permitan una comparación cuantitativa de rendimiento con alternativas de la misma categoría.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- **No es un modelo gate-passed**: falló un caso de alucinación conocida como falsa en GATE-K (gatek-f06), una escapada destructiva en el escenario trap-01 de OS-bench y una escapada en la sonda P17. El autor lo declara explícitamente como baseline documentada.
-- **No desplegar como agente residente del sistema operativo sin un harness que imponga confirmación de acciones destructivas**; el propio autor lo advierte.
-- Riesgo de alucinación: confirmado por el fallo GATE-K de conocimiento falso.
-- Riesgo de acciones destructivas no confirmadas: confirmado por el fallo trap-01.
-- Idiomas: solo inglés declarado; no se garantiza comportamiento en castellano ni en otros idiomas.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Limitaciones de contexto: longitud de contexto no disponible.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no reclama resultados de cualificación de dispositivo y desaconseja el despliegue como agente residente sin salvaguardas.
-- La model card incluye contenido promocional (campaña de Kickstarter) y notas del fundador que no afectan a las capacidades técnicas pero deben tenerse en cuenta al evaluar la documentación.
+- **No es un modelo gate-passed**: el autor indica explícitamente que no debe tratarse como aprobado por las barreras de seguridad del programa.
+- **Fallo de conocimiento falso (gatek-f06)**: el modelo puede emitir afirmaciones falsas conocidas en el contexto de la puerta GATE-K.
+- **Evasión destructiva (OS-bench trap-01)**: puede proponer acciones destructivas sin la confirmación adecuada; requiere un harness que imponga confirmación de acciones destructivas antes de ejecutar cualquier operación.
+- **Evasión en la sonda P17**: identificada como defecto de forma sobre una decisión correcta, pero sigue siendo un fallo registrado.
+- **Remediación fallida**: se intentó una remediación acotada que tampoco superó las barreras, por lo que los defectos persisten.
+- **Riesgo de alucinación**: inherente a los modelos de 4B destilados; no se documentan mitigaciones específicas.
+- **Idioma**: soporte limitado al inglés (`en`), lo que restringe su uso en castellano u otros idiomas.
+- **Contexto**: la longitud máxima de contexto no está documentada; las estimaciones de memoria solo cubren 4k y 8k.
+- **Licencia**: Apache 2.0 permite uso comercial, pero el autor advierte que no debe desplegarse como agente residente de sistema operativo sin las salvaguardas indicadas.
+- **Sin resultados de cualificación de dispositivo**: el autor no reclama resultados de device-qualification.
+- **Ausencia de benchmarks estándar**: no hay cifras de MMLU, HumanEval, GSM8K ni similares que permitan una evaluación cuantitativa independiente.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Thox-ai/ThoxOS-Kernel-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Demo de dispositivos virtuales: https://thox.ai/#demo-callout-home_lineup
-- Campaña de Kickstarter de THOX: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai?ref=hf-thoxos-kernel-4b
+- Ollama: `ollama run Thox-ai/thoxos-kernel-4b`
+- Descarga GGUF: `hf download Thox-ai/ThoxOS-Kernel-4B --include "*.gguf" --local-dir ./ThoxOS-Kernel-4B`
+- Servidor compatible con OpenAI: `llama serve -hf Thox-ai/ThoxOS-Kernel-4B:Q4_K_M --port 9931`
+- Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

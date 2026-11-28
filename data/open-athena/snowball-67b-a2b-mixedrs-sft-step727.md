@@ -2,113 +2,119 @@
 
 ## Resumen
 
-Snowball-67B-A2B-MixedRS-SFT-Step727 es un ajuste fino supervisado (SFT) por destilación, publicado por el colectivo open-athena dentro del ecosistema de experimentos Marin. El modelo parte del checkpoint Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (denominado "estudiante B") y se ha entrenado sobre demostraciones seleccionadas por rejection sampling a partir de dos expertos: uno orientado a ejecución de código (CruxEval) y otro a razonamiento enciclopédico (MMLU-Pro). El resultado es un modelo de 67.078.882.816 parámetros (unos 67.000 millones) con licencia Apache 2.0.
+Snowball-67B-A2B-MixedRS-SFT-Step727 es un checkpoint de ajuste fino supervisado (SFT) publicado por open-athena dentro del proyecto Marin. Se trata de un modelo de mezcla de expertos (MoE) de 67.078 millones de parametros totales, derivado del estudiante B del experimento Snowball, concretamente del checkpoint open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92. El modelo se ha entrenado con una receta de rejection sampling (RS-SFT) sobre demostraciones generadas por dos expertos (CruxEval y MMLU-Pro).
 
-La relevancia de esta ficha es doble. Por un lado, documenta una receta de destilación reproducible (k=8 muestras por prompt, selección de la primera correcta, 2.903 de 3.206 prompts cubiertos, 4 épocas y 728 actualizaciones con batch 16 sobre 32 H100). Por otro, publica resultados de evaluación con un evaluador congelado (Evalchemy, commit ae362881) en un conjunto amplio de tareas: CruxEval, MMLU-Pro, GSM8K, MATH500, GPQA-D e IFEval.
+El problema que aborda es la destilacion de capacidades de razonamiento y resolucion de problemas a partir de pools de muestras filtradas por correccion. Para cada prompt se generaron k=8 muestras de cada experto y se conservo la primera que resulto correcta segun ejecucion (CruxEval) o segun el selector de respuesta implementado (MMLU-Pro), cubriendo 2.903 de 3.206 prompts. El resultado es un modelo orientado a tareas de codigo, matematicas y razonamiento de opcion multiple, con un contexto de evaluacion de 32.768 tokens.
 
-Se trata de un artefacto de investigación más que de un modelo listo para producto: no declara idiomas soportados, no incluye cuantizaciones publicadas, tiene cero descargas y cero valoraciones en el momento de redactar esta ficha, y su propia model card advierte de un desajuste de reglas entre el selector de respuestas y el evaluador en 14 de los 1.400 demos de MMLU-Pro.
+Es relevante ahora porque forma parte de una campana experimental abierta del proyecto Marin (issue 9984) que documenta de forma exhaustiva la procedencia, las evaluaciones y el coste computacional (93,6 H100-horas en 32 H100), y porque el checkpoint ha sido seleccionado frente al paso 546 mediante una regla congelada. La licencia Apache 2.0 y el formato safetensors facilitan su reutilizacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (etiqueta `grug_moe` en el repositorio); no se detalla la configuracion interna de expertos en la model card |
-| Parametros totales | 67.078.882.816 (dato real de safetensors) |
-| Parametros activos | No confirmado en la model card; la nomenclatura "A2B" del nombre sugiere del orden de 2.000 millones de parametros activos |
-| Longitud de contexto | 32.768 tokens en la evaluacion publicada; no se especifica el contexto nativo maximo del modelo base |
-| Tipos de cuantizacion | No disponible (el repositorio solo contiene pesos en safetensors; no hay GGUF, AWQ ni GPTQ publicados) |
-| Idiomas soportados | No disponibles (no declarados en la model card ni en los metadatos) |
+| Arquitectura | MoE tipo grug_moe (familia Marin/Snowball), transformer disperso con dos expertos en el experimento original |
+| Parametros totales | 67.078.882.816 (67,08 mil millones) |
+| Parametros activos | no disponible (la nomenclatura A2B sugiere ~2B activos, pero no se confirma en la informacion) |
+| Longitud de contexto | 32.768 tokens (contexto de evaluacion; contexto nativo de entrenamiento no disponible) |
+| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors sin cuantizaciones oficiales) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (shards), con `config.json`, `generation_config.json`, ficheros de tokenizer y `chat_template.jinja` |
-| Tamano del repositorio | 134,2 GB |
-| Modelo base | open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (revision fdc3c3c5) |
-| Tokenizer y plantilla de chat | Los del modelo base B, sin modificaciones |
-| Fecha de publicacion | 13 de octubre de 2026 |
+| Formato de pesos | safetensors (shards), config.json, generation_config.json, tokenizer y chat_template.jinja |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del checkpoint base, etiquetado como `grug_moe` en Hugging Face, lo que apunta a una arquitectura de mezcla de expertos (MoE). El nombre "67B-A2B" sugiere 67.000 millones de parametros totales y aproximadamente 2.000 millones activos por token, aunque la model card no desglosa el numero de expertos, el enrutador ni la dimension oculta. El tokenizer y la plantilla de chat son los del estudiante B, sin cambios, lo que simplifica la sustitucion directa en pipelines ya construidos sobre el base.
+La arquitectura es una mezcla de expertos (MoE) etiquetada como grug_moe dentro del ecosistema Marin, con 67,08 mil millones de parametros totales. El modelo base es el estudiante B del experimento Snowball, entrenado previamente con 10T tokens y RLVR (Mixed-RLVR-Sync-Step92). El tokenizer y la plantilla de chat son los de B, sin modificaciones, lo que garantiza compatibilidad con el pipeline original.
 
-El entrenamiento es un SFT por rejection sampling sobre datos generados por dos expertos: uno especializado en CruxEval y otro en MMLU-Pro. Para cada prompt se muestrearon k=8 candidatos por experto y se conservo la primera muestra que resulto ejecutivamente correcta (CruxEval) o aceptada por el selector de respuestas implementado (MMLU-Pro), cubriendo 2.903 de los 3.206 prompts. La receta usa AdamW con learning rate 1e-6, betas 0,9/0,999, weight decay 0, gradient clipping 1.0, sesgo del enrutador congelado, 4 epocas (728 actualizaciones de batch 16) y Levanter como framework, sobre 32 H100 (93,6 H100-hora). El checkpoint del paso 727 se eligio por delante del paso 546 mediante una regla congelada, al ser practicamente identico en todos los objetivos.
+El entrenamiento de este checkpoint es un SFT con rejection sampling mixto: se generaron k=8 muestras por prompt con dos expertos (E para CruxEval y E2 para MMLU-Pro) y se selecciono la primera muestra por prompt que fuera correcta por ejecucion o aceptada por el selector de respuesta. Se cubrieron 2.903 de 3.206 prompts. La receta usa AdamW con LR 1e-6, betas 0.9/0.999, weight decay 0, grad clip 1.0, router bias congelado, 4 epocas (728 actualizaciones de batch 16) y el framework Levanter sobre 32 H100 (93,6 H100-horas). El checkpoint se selecciono frente al paso 546 mediante una regla congelada por ser similar en todos los objetivos.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento general en registro instructivo, con plantilla de chat propia.
-- Razonamiento matematico de varios pasos: 92,4 en MATH500 y 94,1 en GSM8K.
-- Razonamiento a nivel de posgrado en ciencias: 57,6 en GPQA-D.
-- Razonamiento enciclopedico y de opcion multiple: 68,2 en el subconjunto de MMLU-Pro y 64,8 en el conjunto held-out.
-- Ejecucion y razonamiento sobre codigo: 77,25 en ambas metricas reportadas de CruxEval.
-- Seguimiento de instrucciones estrictas: 78,3 en IFEval en la modalidad instruction-strict.
-- Modo de razonamiento explicito ("thinking on"): la evaluacion publicada se ejecuto con el modo de pensamiento activado y un limite de generacion de 30.720 tokens.
-- Soporte de tool calling / function calling: no disponible (no se menciona en la model card).
-- Capacidades de agente y razonamiento multi-paso: no disponibles de forma explicita, aunque el objetivo de razonamiento matematico y de codigo es compatible con ese uso.
-- Capacidades multimodales (vision, audio): no disponibles.
-- Cobertura multilingue: no disponible (los idiomas no estan declarados).
+- Generacion de texto y razonamiento de opcion multiple (evaluado en MMLU-Pro, GPQA-Diamond).
+- Razonamiento matematico y resolucion de problemas (GSM8K, MATH500, AIME24, OlympiadBench).
+- Generacion y evaluacion de codigo (HumanEval+, MBPP+, CruxEval, DS-1000).
+- Modo "thinking" activado durante la evaluacion, con generacion de hasta 30.720 tokens.
+- Instrucciones estrictas y formato (IFEval instruction-strict, IFBench).
+- Soporte de tool calling y agentes: se evalua en BFCL-parity, tau3 y SWE-bench-verified, aunque con rendimiento bajo.
+- Capacidades de recuperacion y contexto largo (MRCR, ot-tblite-recovery, tb2-recovery).
+- Capacidades multilingues: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Tutorizacion de matematicas paso a paso: con 94,1 en GSM8K y 92,4 en MATH500, el modelo puede resolver problemas de nivel escolar y preuniversitario mostrando la cadena de razonamiento, util en plataformas de aprendizaje adaptativo que necesitan explicaciones detalladas y no solo la respuesta final.
-- Asistente de resolucion de ejercicios de programacion: sus 77,25 en CruxEval lo hacen adecuado para generar y explicar fragmentos de codigo en entornos educativos o de documentacion tecnica, donde el objetivo es que el estudiante entienda la solucion.
-- Evaluacion automatizada de respuestas de opcion multiple: con 68,2 en MMLU-Pro puede emplearse como anotador o segunda opinion en pipelines de evaluacion de bancos de preguntas academicas, siempre con revision humana por el ruido documentado en los demos de entrenamiento.
-- Generacion de razonamiento sintetico para destilar modelos menores: dado que este checkpoint es en si mismo el resultado de una destilacion desde dos expertos, puede reutilizarse como generador de cadenas de razonamiento para entrenar modelos mas pequenos en dominios de matematicas y codigo.
-- Filtrado y verificacion de soluciones en un pipeline de RLVR: el modelo produce razonamientos largos (hasta 30.720 tokens de generacion) que pueden someterse a un verificador externo para construir preferencias o recompensas, siguiendo la misma estrategia del proyecto Snowball.
-- Investigacion sobre mezcla de expertos y enrutado: al conservar el enrutador del modelo base con el sesgo congelado durante el SFT, el checkpoint es un punto de partida controlado para estudiar como afecta el ajuste fino a la especializacion de expertos.
-- Despliegue interno de un asistente tecnico en ingles: con licencia Apache 2.0 y pesos safetensors, puede servirse en infraestructura propia mediante vLLM para consultas de alto razonamiento, aceptando el coste de memoria de 67.000 millones de parametros.
+- Generacion de codigo en produccion: el modelo obtiene 73,2 en HumanEval+ y 71,7 en MBPP+, por lo que puede integrarse en pipelines de CI/CD para sugerencia y validacion de parches, especialmente en tareas de reparacion de funciones con tests ejecutables.
+- Resolucion de problemas matematicos y razonamiento cuantitativo: con 94,1 en GSM8K y 92,4 en MATH500, es adecuado para asistentes de ensenanza de matematicas o generacion de soluciones paso a paso con verificacion.
+- Razonamiento de opcion multiple y QA experto: 68,2 en el subconjunto MMLU-Pro y 57,6 en GPQA-Diamond lo hacen util para sistemas de evaluacion automatizada o generacion de preguntas de examen en dominios cientificos.
+- Cumplimiento estricto de instrucciones: 78,3 en IFEval instruction-strict permite usarlo en tareas de formateo, extraccion estructurada y generacion de respuestas con restricciones de formato.
+- Destilacion y generacion de datos sinteticos: al haber sido entrenado con rejection sampling sobre pools de expertos, puede emplearse como generador de candidatos en pipelines de autoentrenamiento, filtrando por verificacion ejecutable.
+- Analisis de codigo con contexto largo: con 32.768 tokens de contexto y evaluacion en CruxEval (77,25), puede procesar repositorios o fragmentos extensos para tareas de comprension y ejecucion simulada.
+- Agentes de software limitados: aunque SWE-bench-verified es bajo (11,1), el soporte de tool calling permite prototipos de agentes con intervencion humana y verificacion externa.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor, obtenidos con el evaluador congelado Evalchemy (commit ae362881), sobre vLLM en 8x H100, contexto de 32.768 tokens, limite de generacion de 30.720 tokens, modo thinking activado y muestreo sin semilla a temperatura 1,0. Se trata de una unica pasada de evaluacion.
+Evaluacion congelada con Evalchemy (commit ae362881), vLLM sobre H100x8, contexto de 32.768 tokens, generacion maxima de 30.720 tokens, thinking activado, muestreo sin semilla a temperatura 1.0. Una sola pasada de evaluacion.
 
-| Benchmark | Resultado |
-|---|---|
-| CruxEval | 77,25 / 77,25 (dos metricas reportadas) |
-| MMLU-Pro (subconjunto) | 68,2 |
-| MMLU-Pro (held-out) | 64,8 |
-| GSM8K | 94,1 |
-| MATH500 | 92,4 |
-| GPQA-D | 57,6 |
-| IFEval (instruction-strict) | 78,3 |
+| Benchmark | MixedRS727 | MOPD100 | B (base, snapshot distinto) |
+|---|---|---|---|
+| math500 | 92,8 | 91,2 | 89,6 |
+| humanevalplus | 73,2 | 73,2 | 68,9 |
+| mbppplus | 71,7 | 67,2 | 72,5 |
+| olympiadbench | 43,7 | 45,3 | 42,7 |
+| gsm8k-0shot | 90,1 | 88,7 | 89,3 |
+| piqa | 82,2 | 83,1 | 82,2 |
+| winogrande | 75,0 | 76,2 | 72,8 |
+| boolq | 83,7 | 84,7 | 84,1 |
+| truthfulqa | 57,2 | 56,2 | 58,2 |
+| triviaqa | 59,5 | 63,5 | 65,5 |
+| aime24 | 60,0 | 64,0 | 47,0 |
+| mmlu-pro | 65,6 | 64,1 | 43,6 |
+| gpqa-diamond | 56,9 | 50,5 | 42,9 |
+| cruxeval | 78,6 | 75,5 | 57,6 |
+| financebench | 42,0 | 28,0 (DIAG) | 58,0 |
+| ifbench | 26,0 | 29,0 | 31,0 |
+| mrcr | 13,0 | 15,0 | 12,3 |
+| swebench-verified | 11,1 | 11,4 | 7,9 |
+| bfclparity-pi | 1,6 | 5,7 | 16,3 |
+| tau3-pi | 0,5 | 2,0 | 0,5 |
+| SOTOPIA-hard | 67,1 | 66,7 | 61,3 |
 
-No se han publicado resultados comparativos frente a terceros modelos en la informacion disponible, ni puntuaciones del modelo base en los mismos benchmarks.
+Ademas, la model card reporta: CruxEval 77,25/77,25, MMLU-Pro subset 68,2, held-out 64,8, GSM8K 94,1, MATH500 92,4, GPQA-D 57,6 e IFEval instruction-strict 78,3. Nota: 14 de los 1.400 demos de MMLU-Pro son incorrectos bajo la regla de respuesta final del evaluador (desajuste entre selector y evaluador). NUPA aparece como RECON (9,0; 45/499 disponibles, cobertura 499/500).
 
 ## Requisitos de hardware
 
-- VRAM para inferencia en bf16/fp16: aproximadamente 134 GB solo para pesos (el repositorio ocupa 134,2 GB), mas la cache KV correspondiente al contexto configurado, que a 32.768 tokens es significativa.
-- GPU recomendadas para bf16: un nodo con 2x H100 80 GB o 2x A100 80 GB como minimo; 4x A100 40 GB tambien es viable con tensor parallelism. El propio autor valido la evaluacion en 8x H100.
-- GPU de consumo: no cabe en una unica GPU de consumo en bf16. Con una cuantizacion a 4 bits (aproximadamente 34-36 GB) podria encajar en una RTX 5090 de 32 GB de forma muy ajustada o en una RTX 6000 Ada / A6000 de 48 GB, pero no hay cuantizaciones publicadas por el autor, por lo que requeriria conversion propia.
-- Opciones de despliegue: vLLM (utilizado en la evaluacion oficial), HF Transformers con safetensors y Levanter (framework de entrenamiento). No hay artefactos GGUF, por lo que llama.cpp u Ollama exigirian convertir manualmente los pesos y no estan verificados.
-- Latencia y throughput: no disponibles. El unico dato de coste publicado es el de entrenamiento, 93,6 H100-hora sobre 32 H100.
-- Almacenamiento: prevea al menos 135 GB de disco para el repositorio completo y espacio adicional para el cache de descarga y cualquier cuantizacion derivada.
+- VRAM estimada para inferencia: con 67,08 mil millones de parametros en safetensors, se necesita aproximadamente 134 GB en BF16/FP16. En FP8 o cuantizacion de 8 bits, alrededor de 67 GB; en 4 bits, en torno a 34-40 GB.
+- GPU recomendadas: multiples A100 80GB o H100 80GB para BF16 (2-4 GPUs). La evaluacion oficial uso vLLM sobre 8 H100.
+- Cabe en GPU de consumo: en cuantizacion de 4 bits podria caber en una RTX 4090 (24 GB) solo si se aplica offload parcial o se reduce el contexto; no es viable en BF16 en una sola GPU de consumo. No se publican cuantizaciones oficiales.
+- Opciones de despliegue: vLLM (usado en la evaluacion), Levanter para entrenamiento, y potencialmente llama.cpp/Ollama si se generan cuantizaciones GGUF (no disponibles oficialmente). TGI no confirmado.
+- Latencia y throughput: no disponible. El coste de entrenamiento fue de 93,6 H100-horas.
 
 ## Comparativa con modelos similares
 
-No se dispone de resultados de benchmarks de terceros modelos que permitan una comparacion directa en la informacion proporcionada. La unica referencia documentada es el propio modelo base, del que este checkpoint deriva por ajuste fino.
+| Modelo | Parametros | Contexto | CruxEval | MMLU-Pro | GSM8K | Licencia |
+|---|---|---|---|---|---|---|
+| MixedRS727 (este) | 67,08B | 32.768 | 78,6 | 65,6 | 90,1 | Apache 2.0 |
+| MOPD100 | no disponible | 32.768 (eval) | 75,5 | 64,1 | 88,7 | no disponible |
+| B (base) | 67,08B (mismo estudiante) | 32.768 (eval) | 57,6 | 43,6 | 89,3 | no disponible |
 
-| Modelo | Parametros totales | Contexto | Licencia | Resultados publicados |
-|---|---|---|---|---|
-| Snowball-67B-A2B-MixedRS-SFT-Step727 | 67.078.882.816 | 32.768 tokens en evaluacion | Apache 2.0 | CruxEval 77,25; MMLU-Pro 68,2/64,8; GSM8K 94,1; MATH500 92,4; GPQA-D 57,6; IFEval 78,3 |
-| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (base) | No disponible en la informacion | No disponible | Apache 2.0 | No disponible |
-| Alternativas de terceros de tamano similar | No disponible | No disponible | No disponible | No disponible |
+No se dispone de comparaciones con modelos externos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ruido conocido en los datos de entrenamiento: 14 de los 1.400 demos de MMLU-Pro son incorrectos segun la regla de respuesta final del evaluador, por un desajuste entre la regla del selector y la del evaluador. El autor lo documenta en su informe.
-- Evaluacion de una sola pasada: los resultados se obtuvieron sin semilla fija y a temperatura 1,0, por lo que no hay intervalos de confianza ni estimacion de varianza. Las diferencias pequenas entre checkpoints (por ejemplo, frente al paso 546) no deben interpretarse como significativas.
-- Cobertura parcial del conjunto de prompts: se cubrieron 2.903 de 3.206 prompts, lo que deja un 9,5 % sin demostracion asociada.
-- Idiomas no declarados: no hay informacion sobre cobertura multilingue; asuma un comportamiento predominantemente en ingles dado el origen de los benchmarks empleados.
-- Riesgo de alucinacion no medido: no se publican resultados en pruebas de veracidad ni de factualidad, a pesar de que el modelo se entrena parcialmente sobre datos enciclopedicos.
-- Ausencia de cuantizaciones oficiales: no hay GGUF, AWQ ni GPTQ en el repositorio, lo que encarece el despliegue en hardware de gama media y anade riesgo de degradacion si se convierte por cuenta propia.
-- Tool calling y uso como agente: no documentados, no validados y sin resultados de benchmarks especificos, por lo que no deben asumirse en produccion.
-- Adopcion nula y sin senal de comunidad: cero descargas y cero valoraciones en el momento de la publicacion, sin pipeline declarado, lo que reduce la probabilidad de que los fallos esten ya identificados por terceros.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero no se ofrece ninguna garantia ni soporte por parte del autor; el checkpoint se subio sin modificaciones respecto a la exportacion del trabajo de entrenamiento.
-- Procedencia experimental: los pesos provienen de un experimento interno (S3 `marin-us-east-02a`, trabajo `/karan/task166-mixed-rs-sft-20261010` en CoreWeave) y estan pensados para analisis comparativo, no como version estable.
+- Riesgo de alucinacion: no se documentan tasas especificas, pero el rendimiento bajo en TruthfulQA (57,2) y TriviaQA (59,5) sugiere cautela en QA factual.
+- Desajuste documentado: 14 de los 1.400 demos de MMLU-Pro son incorrectos bajo la regla de respuesta final del evaluador, lo que introduce ruido en el entrenamiento y en la medicion.
+- Rendimiento bajo en agentes y tool calling: BFCL-parity 1,6, tau3 0,5 y SWE-bench-verified 11,1 limitan su uso en flujos agenticos autonomos sin verificacion externa.
+- Cobertura incompleta de NUPA (45/499 disponibles) y resultados RECON, no comparables directamente.
+- Idiomas soportados no documentados; el tokenizer y la plantilla de chat provienen del estudiante B, por lo que el comportamiento multilingue no esta garantizado.
+- Licencia Apache 2.0 permite uso comercial, pero el autor declara la intencion de uso etico y responsable; no hay restricciones adicionales documentadas.
+- El checkpoint se selecciono con una regla congelada frente al paso 546; no se detalla la varianza entre pasos.
+- El S3 de origen se elimino el 2026-10-17; los pesos se verificaron identicos por sha256 al commit 95dd3f4a.
+- Evaluacion de una sola pasada, sin intervalos de confianza publicados.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-MixedRS-SFT-Step727
-- Modelo base (estudiante B): https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92
-- Revision concreta del modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
-- Evaluador Evalchemy (commit usado): https://github.com/marin-community/evalchemy/commit/ae362881cf53f869a6ad52c8a59fa17343c0b5f8
-- Informe del experimento en el repositorio Marin: https://github.com/marin-community/marin/issues/9984
-- Comentario con el informe completo y el desglose de H100-hora: https://github.com/marin-community/marin/issues/9984#issuecomment-6144923850
-- Ruta de origen de los pesos: `s3://marin-us-east-02a/marin/experiments/task166-mixed/checkpoints/karan/mixed-rs-e-from-b-lr1e-06/2026.10.10.1/hf/step-727`
+- Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-MixedRS-SFT-Step727
+- Modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92
+- Commit del modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
+- Informe del experimento (issue Marin 9984): https://github.com/marin-community/marin/issues/9984
+- Comentario con el informe: https://github.com/marin-community/marin/issues/9984#issuecomment-6144923850
+- Evalchemy (commit de evaluacion): https://github.com/marin-community/evalchemy/commit/ae362881cf53f869a6ad52c8a59fa17343c0b5f8
+- EvalDash (runs del modelo): https://marina.oa.dev/evaldash/runs?model=open-athena-Snowball-67B-A2B-MixedRS-SFT-Step727
+- EvalDash (runs de MOPD100): https://marina.oa.dev/evaldash/runs?model=open-athena-Snowball-67B-A2B-MOPD-Step100

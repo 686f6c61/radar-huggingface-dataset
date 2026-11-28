@@ -2,47 +2,53 @@
 
 ## Resumen
 
-`guxiangzhuier/opus-mt-ja-zh-jav-ct2-int8` es una conversión del modelo de traducción automática Marian/OPUS-MT para el par de idiomas japonés-chino, publicada por el usuario guxiangzhuier en Hugging Face. Se trata de un artefacto derivado: el modelo original pertenece a la familia OPUS-MT de Helsinki-NLP, basada en la arquitectura Marian de transformador encoder-decoder entrenado específicamente para traducción neuronal.
+opus-mt-ja-zh-jav-ct2-int8 es un modelo de traduccion automatica japones-chino derivado de lemmonyjiang/opus-mt-ja-zh-jav, que a su vez parte de la arquitectura Marian NMT de la familia OPUS-MT de Helsinki-NLP. El autor, guxiangzhuier, ha realizado un ajuste fino adicional y lo ha exportado al formato CTranslate2 con cuantizacion int8, lo que reduce el peso del repositorio a unos 0,2 GB y lo hace apto para inferencia en CPU y GPUs modestas.
 
-El identificador del repositorio indica dos transformaciones clave: la conversión al formato CTranslate2 (`ct2`, motor de inferencia optimizado para CPU y GPU) y la cuantización a enteros de 8 bits (`int8`), lo que reduce el tamaño del modelo y acelera la inferencia en hardware modesto. El sufijo `jav` sugiere algún tipo de adaptación o variante lingüística específica, aunque la model card no lo detalla.
+El modelo esta especializado en la traduccion de titulos y sinopsis del dominio JAV (video para adultos japones), un subdominio con vocabulario muy especifico que los modelos genericos de traduccion suelen resolver mal. Para ello se entreno con tablas de categorias publicas de JavSP, titulos de JavBus, un glosario sectorial local y un conjunto de datos dorados anotados manualmente, con sobremuestreo de estos ultimos.
 
-El modelo es relevante para quienes necesitan desplegar traducción japonés-chino en entornos con recursos limitados mediante CTranslate2, pero la documentación publicada es prácticamente inexistente (la model card solo contiene la licencia MIT), el repositorio no tiene descargas ni interacciones, y varios parámetros clave no están disponibles.
+Su relevancia es acotada pero clara: demuestra como un modelo NMT compacto (Marian, tipicamente decenas de millones de parametros) puede especializarse en un dominio vertical mediante ajuste fino y glosarios, y distribuirse en un formato de inferencia optimizado (CTranslate2 int8) listo para integrarse en aplicaciones de escritorio como AIVPlayer. No es un modelo de proposito general ni compite con LLMs multilingues.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Marian (transformer encoder-decoder), segun la convencion de la familia OPUS-MT; no confirmado en la model card |
+| Arquitectura | Marian NMT (transformer encoder-decoder), exportado a CTranslate2 |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | int8 (CTranslate2) |
-| Idiomas soportados | japones y chino (inferido del identificador); no confirmado en la model card |
-| Licencia | MIT |
-| Formato de pesos | CTranslate2 (int8); no disponible si incluye safetensors o GGUF |
+| Idiomas soportados | japones (ja) como origen; chino (zh) como destino |
+| Licencia | apache-2.0 |
+| Formato de pesos | CTranslate2 (model.bin, config.json, shared_vocabulary.json, source.spm, target.spm) |
 
 ## Arquitectura y entrenamiento
 
-No hay información en la model card sobre la arquitectura interna, los datos de entrenamiento, el número de tokens utilizados ni si hubo técnicas de alineación como RLHF o DPO. Por la denominación `opus-mt-ja-zh` cabe inferir que deriva de un modelo de traducción OPUS-MT de Helsinki-NLP, de arquitectura Marian, pero el autor no lo documenta. Tampoco se especifica qué representa el sufijo `jav` ni el proceso exacto de conversión a CTranslate2 int8.
+El modelo sigue la arquitectura Marian NMT, un transformer encoder-decoder compacto disenado originalmente para traduccion automatica neuronal y usado en la familia OPUS-MT. La exportacion a CTranslate2 conserva el tokenizador SentencePiece (source.spm y target.spm) y la tabla de vocabulario compartido (shared_vocabulary.json), y aplica cuantizacion int8 sobre los pesos para acelerar la inferencia y reducir el consumo de memoria.
 
-La innovación técnica principal, y prácticamente la única documentada de forma implícita en el nombre del repo, es el empaquetado en CTranslate2 con cuantización int8, que reduce el peso en memoria y permite ejecución eficiente en CPU con instrucciones vectoriales. No se detalla la calibración de la cuantización ni las métricas de degradación de calidad respecto al modelo original.
+El ajuste fino se realizo sobre lemmonyjiang/opus-mt-ja-zh-jav con un corpus especifico del dominio: la tabla de categorias publica de JavSP (ja/en a zh), titulos japoneses de JavBus con sustitucion de vocabulario, un glosario sectorial local que tiene prioridad sobre traducciones externas en caso de conflicto (por ejemplo, 中出し a 中出) y un conjunto de datos dorados anotados manualmente sobre ordenacion de titulos y terminologia del sector, con sobremuestreo. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset ni el uso de RLHF o DPO.
+
+Una advertencia tecnica relevante del autor: la exportacion Marian a CT2 debe conservar la fila `<pad>` del vocabulario de Transformers (`decoder_start_token=<pad>`). Las rutas oficiales que eliminan el pad o aplican zero-embedding producen salidas corruptas (texto ilegible) con estos pesos.
 
 ## Capacidades
 
-- Traducción automática japonés-chino (según el identificador del modelo; no confirmado en la model card).
-- Inferencia optimizada mediante el motor CTranslate2, orientado a despliegue en CPU y GPU.
-- Cuantización int8, que reduce el uso de memoria frente a pesos en punto flotante.
-- No hay evidencia documentada de soporte de tool calling, function calling, agentes, razonamiento multi-paso ni modalidades adicionales (visión, audio).
-- No se documentan capacidades multilingües más allá del par ja-zh.
+- Traduccion de texto japones a chino, orientada a titulos y sinopsis del dominio JAV.
+- Manejo de terminologia sectorial mediante glosario externo aplicado en la aplicacion (no integrado en los pesos).
+- Tokenizacion SentencePiece para ambos idiomas.
+- Inferencia optimizada con CTranslate2 en CPU y GPU, con pesos int8.
+- No soporta tool calling ni function calling.
+- No soporta razonamiento multi-paso ni comportamiento agentico.
+- No dispone de modo thinking, vision ni audio.
+- Capacidad multilingue limitada estrictamente al par ja-zh (no traduce a otros idiomas).
 
 ## Casos de uso
 
-- Traducción de documentación técnica japonés-chino en pipelines de procesamiento por lotes: el formato CTranslate2 int8 permite ejecutar grandes volúmenes de segmentos en servidores CPU sin GPU dedicada.
-- Localización de contenido web: integración en un servicio de traducción bajo demanda donde el bajo consumo de memoria del modelo int8 facilita el despliegue en contenedores ligeros.
-- Preprocesamiento multilingüe para búsqueda y recuperación: traducir consultas o documentos japoneses al chino antes de indexarlos en un motor de búsqueda o base vectorial.
-- Subtitulado y transcripción: traducción de subtítulos japonés-chino en herramientas de postproducción donde la latencia por segmento es aceptable en CPU.
-- Traducción en dispositivos de borde: el tamaño reducido de la cuantización int8 permite ejecutar el modelo en equipos con recursos limitados mediante CTranslate2.
-- Prototipado de sistemas de traducción: servir como base para comparar calidad frente al modelo OPUS-MT original en punto flotante antes de invertir en infraestructura GPU.
+- Traduccion de titulos de catalogo en aplicaciones de escritorio: integrado en AIVPlayer (directorio por defecto `models/opus-mt-ja-zh-jav-ct2-int8`), traduce titulos japoneses a chino al vuelo con latencia baja gracias a la cuantizacion int8 y al backend CTranslate2.
+- Normalizacion de metadatos en bases de datos de contenido: procesar lotes de titulos y sinopsis ja para generar campos zh consistentes, aplicando el glosario sectorial para evitar traducciones divergentes entre registros.
+- Enriquecimiento de bibliotecas locales: un script que recorra una coleccion de fichas y complete la version en chino de cada titulo, con throughput alto en CPU por el reducido tamano del modelo (0,2 GB).
+- Busqueda y filtrado en chino: traducir previamente los titulos a zh para permitir busquedas por palabras clave en ese idioma sobre un indice que originalmente solo contiene japones.
+- Generacion de subtitulos o descripciones cortas: para textos breves del dominio (sinopsis de pocas lineas), el ajuste fino sobre titulos y descripciones reduce el riesgo de traducciones literales incorrectas en terminologia especifica.
+- Pipeline de moderacion y etiquetado: clasificar y etiquetar contenido por categorias usando la traduccion zh como paso intermedio antes de un clasificador, aprovechando la coherencia terminologica del glosario.
+- Prototipado de NMT de dominio en CPU: servir de referencia para especializar un Marian OPUS-MT en un vertical concreto y desplegarlo con CTranslate2 sin GPU.
 
 ## Benchmarks y rendimiento
 
@@ -50,37 +56,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; depende del número de parámetros del modelo base, que no se documenta.
-- GPU recomendadas: no disponible; CTranslate2 soporta GPU NVIDIA con CUDA, pero el autor no indica requisitos.
-- Ejecución en GPU de consumo: no confirmada; la cuantización int8 y el motor CTranslate2 están diseñados para funcionar en CPU, lo que sugiere que no requiere GPU.
-- Opciones de despliegue: CTranslate2 (formato nativo del artefacto); no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB con pesos int8 (repositorio de 0,2 GB); cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre; no requiere A100 ni H100. Funciona tambien en CPU.
+- Cabe en GPU consumer: si, en cualquier modelo (GTX 1050, RTX 3060, RTX 4090, etc.), aunque la ganancia frente a CPU es limitada por el tamano del modelo.
+- Opciones de despliegue: CTranslate2 (formato nativo del repositorio), con SentencePiece y glosario en la aplicacion. No se distribuyen pesos en formato GGUF ni safetensors en este repositorio; para llama.cpp u Ollama habria que reconvertir desde el modelo base.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| guxiangzhuier/opus-mt-ja-zh-jav-ct2-int8 | no disponible | no disponible | MIT | CTranslate2 int8 | Conversión no documentada |
-| Helsinki-NLP/opus-mt-ja-zh | no disponible | no disponible | CC-BY-4.0 (habitual en OPUS-MT) | safetensors / PyTorch | Modelo original de la familia OPUS-MT |
-| Helsinki-NLP/opus-mt-ja-en | no disponible | no disponible | CC-BY-4.0 (habitual en OPUS-MT) | safetensors / PyTorch | Par ja-en de la misma familia |
-
-No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| opus-mt-ja-zh-jav-ct2-int8 (este) | no disponible (Marian compacto) | no disponible | ja a zh | apache-2.0 | CTranslate2 int8 | Especializado en dominio JAV, con glosario |
+| lemmonyjiang/opus-mt-ja-zh-jav | no disponible | no disponible | ja a zh | no disponible | Transformers | Modelo base del que deriva este |
+| Helsinki-NLP/opus-mt-ja-zh | no disponible | no disponible | ja a zh | apache-2.0 (familia OPUS-MT) | Transformers, convertible a CT2 | Traduccion generica ja-zh, sin especializacion de dominio |
 
 ## Limitaciones y advertencias
 
-- La model card solo contiene la licencia MIT; no hay información sobre arquitectura, entrenamiento, idiomas ni rendimiento.
-- El repositorio no registra descargas ni interacciones, lo que impide valorar su fiabilidad o mantenimiento.
-- No se documenta el proceso de cuantización ni la pérdida de calidad asociada al formato int8.
-- El sufijo `jav` no está explicado; podría indicar una variante lingüística o un origen de datos no documentado.
-- Riesgo de alucinación y sesgos: no evaluado por el autor; al ser un modelo de traducción, los errores se manifestarán como traducciones incorrectas u omisiones.
-- No se confirma la cobertura real de idiomas ni el dominio de entrenamiento.
-- La licencia MIT permite uso comercial, pero al derivar presumiblemente de OPUS-MT conviene verificar la licencia del modelo original antes de producción.
-- Ausencia de benchmarks, demos o ejemplos de uso; cualquier despliegue requerirá una evaluación propia de calidad.
+- Dominio muy restringido: el ajuste fino esta orientado a titulos y sinopsis JAV; el rendimiento en texto general ja-zh puede degradarse respecto al modelo base.
+- Riesgo de alucinacion y de traducciones forzadas hacia la terminologia del glosario cuando el texto de entrada no pertenece al dominio.
+- Sesgos: el corpus de entrenamiento proviene de fuentes del sector adulto, por lo que el vocabulario y las connotaciones estan sesgados hacia ese contenido.
+- Limitacion de idioma: solo traduce de japones a chino; no soporta otros pares ni direccion inversa.
+- Restricciones de licencia: apache-2.0 permite uso comercial, pero el contenido generado y el dominio de aplicacion pueden estar sujetos a normativa sobre contenido adulto segun la jurisdiccion.
+- Caveat de produccion: es imprescindible conservar la fila `<pad>` del vocabulario en la exportacion CT2; las rutas que la eliminan producen salidas corruptas.
+- El glosario no esta embebido en los pesos: requiere aplicacion externa para garantizar la coherencia terminologica.
+- No disponible informacion sobre longitud maxima de secuencia ni sobre el numero de parametros exactos.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/guxiangzhuier/opus-mt-ja-zh-jav-ct2-int8
-- Modelo OPUS-MT de referencia (presunto origen): https://huggingface.co/Helsinki-NLP/opus-mt-ja-zh
-- Organización Helsinki-NLP: https://huggingface.co/Helsinki-NLP
-- CTranslate2 (motor de inferencia): https://github.com/OpenNMT/CTranslate2
-- Paper de OPUS-MT: https://aclanthology.org/2020.eamt-1.10/
+- Modelo en Hugging Face: https://huggingface.co/guxiangzhuier/opus-mt-ja-zh-jav-ct2-int8
+- Modelo base: https://huggingface.co/lemmonyjiang/opus-mt-ja-zh-jav
+- CTranslate2: https://github.com/OpenNMT/CTranslate2
+- Familia OPUS-MT (Helsinki-NLP): https://huggingface.co/Helsinki-NLP
+- JavSP (tabla de categorias): https://github.com/Yuukiy/JavSP
+- JavBus: https://www.javbus.com

@@ -2,105 +2,103 @@
 
 ## Resumen
 
-Qwen3.8-27B-NVIDIA-NVFP4-NInferV3 es un artefacto de inferencia en formato propietario `.ninfer` (NInfer V3) construido por el usuario wallawalla47 a partir del checkpoint `nvidia/Qwen3.8-27B-NVFP4`. No es un modelo entrenado desde cero ni un fine-tune: es una reempaquetado de cuantización orientado a ejecución de bajísima latencia sobre GPUs Blackwell (sm_120a), específicamente una RTX 5090. El checkpoint base emplea cuantización mixta NVFP4/FP8 generada con NVIDIA Model Optimizer en formato `compressed-tensors`.
+Qwen3.8-27B-NVIDIA-NVFP4-NInferV3 es un artefacto de inferencia empaquetado en un unico fichero `.ninfer` (formato NInfer V3) derivado del checkpoint `nvidia/Qwen3.8-27B-NVFP4`. Lo publica el desarrollador independiente wallawalla47 como parte del ecosistema Infernix, un motor de inferencia en C++ que crece a partir de NInfer. El objetivo no es ofrecer un modelo nuevo, sino un contenedor listo para ejecutar sin paso de conversion en el momento de la carga: se apunta el servidor al fichero y el motor arranca.
 
-El modelo subyacente pertenece a la familia Qwen3.5/Qwen3.8 con backbone híbrido de 64 capas que combina atención lineal Gated Delta-Net con atención completa cada cuarta capa, dimensión oculta 5120 y vocabulario de 248.320 tokens. Incorpora torre de visión (profundidad 27) para entrada image-text-to-text, un compañero MTP para decodificación especulativa y contexto nativo de 262.144 tokens.
+El modelo subyacente es un backbone hibrido de la familia Qwen3.5 con 64 capas que alternan atencion lineal Gated Delta-Net con atencion completa cada cuarta capa, dimension oculta 5120, vocabulario de 248.320 tokens y contexto nativo de 262.144 tokens. Incluye torre de vision (profundidad 27) para entrada de imagen y video, un companero MTP para decodificacion especulativa y un cabezal de propuestas indexado de 131.072 filas para drafting barato por copia.
 
-La relevancia de este artefacto es operativa: elimina el paso de conversión en tiempo de carga y añade dos componentes de decodificación especulativa (un draft model DFlash2 de 5 capas con atención deslizante y una cabeza de propuesta indexada de 131.072 filas) que habilitan rutas de decodificación rápida en los motores Infernix y NInfer. El repo ocupa 22,8 GB y acumula 8.917 descargas.
+Su relevancia practica es la cuantizacion mixta NVFP4/FP8 orientada a Blackwell: los pesos del Model Optimizer de NVIDIA se transportan de forma bit-exacta para todas las proyecciones lineales del transformer salvo el cabezal del modelo de lenguaje, lo que permite ejecutar un modelo multimodal de 27B en una unica RTX 5090 (sm_120a) con kernels W4A4 y decodificacion especulativa. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 64 capas (Gated Delta-Net linear attention + full attention cada 4 capas), hidden 5120 |
-| Parametros totales | 27B (según denominación del checkpoint base) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer hibrido: 64 capas con Gated Delta-Net (atencion lineal) y atencion completa cada 4 capas; torre de vision qwen3_5_vision (profundidad 27) |
+| Parametros totales | 27B (segun denominacion del modelo; desglose no disponible) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | 262.144 tokens nativos |
-| Tipos de cuantizacion | NVFP4 (W4A4), FP8 e4m3fn row-scale, BF16, FP32, Q4, Q5, Q6, Q8 agrupados, INT32 (tabla de índices) |
+| Tipos de cuantizacion | Mixta: NVFP4 (W4A4), FP8 e4m3fn con escala por fila, BF16, FP32, Q4, Q5, Q6, Q8 agrupados con escalas FP16, INT32 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.ninfer` (NInfer V3, single-file); origen `compressed-tensors` (NVFP4/FP8) |
-| Vocabulario | 248.320 tokens |
-| Torre de vision | qwen3_5_vision, profundidad 27 |
-| Draft especulativo | DFlash2, 5 capas, ventana deslizante 2048, selector rank 256 / top-16 |
-| Cabeza de propuesta | 131.072 filas, Q4 agrupado + tabla INT32 |
-| Tamano del repo | 22,8 GB |
-| Libreria | ninfer |
-| Hardware objetivo | NVIDIA Blackwell sm_120a (RTX 5090) |
+| Formato de pesos | `.ninfer` (NInfer V3, fichero unico); origen en `compressed-tensors` (NVFP4/FP8) |
+
+Otros datos tecnicos: dimension oculta 5120, vocabulario 248.320 tokens, tamano del repositorio 22,8 GB, 1.072 objetos de pesos preparados. Censo de formatos: 128 NVFP4, 130 FP8, 579 BF16, 96 FP32, 55 Q4, 54 Q5, 28 Q8, 1 Q6 y 1 tabla de indices INT32.
 
 ## Arquitectura y entrenamiento
 
-El backbone es un transformer híbrido de 64 capas que intercala atención lineal Gated Delta-Net (GDN) con atención completa cada cuatro capas, con dimensión oculta de 5120 y vocabulario de 248.320 tokens. Esta combinación busca reducir el coste computacional y de memoria de la atención en contextos largos manteniendo capacidad de recuperación exacta en las capas de atención completa. La torre de visión tiene 27 capas y procesa imagen y vídeo para la tarea image-text-to-text.
+El backbone pertenece a la familia Qwen3.5 e implementa un esquema hibrido: de las 64 capas, la mayoria usa atencion lineal Gated Delta-Net (GDN) y solo una de cada cuatro emplea atencion completa. Esa combinacion reduce el coste de memoria y computo del contexto largo manteniendo recuperacion global periodica, y es lo que hace viable una ventana nativa de 262.144 tokens. Sobre el backbone se anaden cuatro componentes: la torre de vision para imagen y video, el companero MTP (multi-token prediction), un draft model DFlash2 de 5 capas con atencion deslizante (ventana 2048, selector de rango 256 con top-16) y un cabezal de propuestas indexado de 131.072 filas.
 
-No se dispone de información sobre el dataset de entrenamiento, el número de tokens, la composición de datos ni si hubo RLHF o DPO: la model card del artefacto no documenta el entrenamiento del modelo base, solo el proceso de conversión. Lo que sí se documenta con precisión es el proceso de cuantización y empaquetado. Las 128 proyecciones MLP en NVFP4 se importan de forma bit-exacta desde el checkpoint de NVIDIA, conservando pesos FP4 empaquetados y escalas de bloque calibradas con Hessian local; las 128 proyecciones de atención y GDN en FP8 e4m3fn con escala por fila también se importan bit-exactas. La cabeza de salida se desconvierte de NVFP4 y se recuantiza a FP8 row-scale (elegido sobre Q8 tras medir que es más rápido en el rango T=1..33 de decodificación/verificación). El embedding se cuantiza de BF16 a FP8. Las proyecciones a/b de GDN permanecen en BF16 porque el layout NVFP4 V3 exige tiles de 128 filas y estos tensores tienen 96. La innovación principal del artefacto es la integración de decodificación especulativa: un draft model DFlash2 de 5 capas con atención deslizante (ventana 2048) y una cabeza de propuesta indexada que permite drafting barato por copia mediante `--lm-head-draft`, además del compañero MTP para decodificación especulativa MTP.
+El entrenamiento original corresponde a NVIDIA y a la familia Qwen; esta ficha no dispone de datos sobre numero de tokens, composicion del dataset ni fases de RLHF o DPO. Lo que si documenta el autor es el proceso de conversion: la receta `qwen3_8_27b_nvfp4_nvidia` se ejecuto en CPU durante unos 28 minutos. Las 128 proyecciones MLP NVFP4 (gate, up, down) se importaron en su forma codificada, bit-exacta, con los pesos FP4 calibrados por Hessiano local y sus escalas de bloque intactas; las 128 proyecciones de atencion y de atencion lineal (GDN) se importaron igualmente bit-exactas en FP8 por fila. El cabezal de salida se desquantizo y recuantizo a FP8 por fila tras comprobar que es mas rapido que Q8 en el rango de decodificacion T=1..33 del motor. Las proyecciones a/b de GDN se mantienen en BF16 porque el layout NVFP4 exige tiles de 128 filas y estas son de 96. El draft DFlash2 se injerta tal cual desde una fuente local y el cabezal de propuestas se construye recopilando 131.072 filas del cabezal de NVIDIA, ordenadas por frecuencia de un corpus.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal (image-text-to-text) con torre de visión de 27 capas para imagen y vídeo.
-- Modo thinking / razonamiento explícito, según los tags del modelo (`reasoning`, `thinking`).
-- Capacidades agénticas y de razonamiento multi-paso (`agentic`).
+- Generacion de texto y razonamiento con modo thinking explicito.
+- Entrada multimodal de imagen y video mediante torre de vision dedicada; pipeline `image-text-to-text`.
 - Procesamiento de contexto largo: hasta 262.144 tokens nativos.
-- Decodificación especulativa mediante dos rutas: MTP (compañero Qwen3.5 MTP) y DFlash2 (`--spec dflash2`), más drafting por copia con `--lm-head-draft`.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; no se documentan los idiomas cubiertos.
+- Razonamiento multi-paso y flujos agenticos, segun los tags del autor.
+- Decodificacion especulativa por dos vias: MTP y draft DFlash2 (`--spec dflash2`).
+- Drafting por copia mediante cabezal de propuestas indexado (`--lm-head-draft`).
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible.
+- Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
-- Replay de sesiones de programación agéntica: el motor Infernix reporta servir el 90 % de los tokens de prompt desde su caché de prefijo en el modelo de 27B, lo que lo hace adecuado para agentes de código con historiales largos y repetidos.
-- Asistentes con contexto largo: la ventana nativa de 262.144 tokens permite cargar repositorios completos, contratos o documentación extensa en una sola pasada sin troceado.
-- Análisis de documentos con imagen: la torre de visión permite procesar capturas, diagramas y páginas escaneadas junto con texto en la misma conversación.
-- Inferencia de baja latencia en estación de trabajo: el artefacto está optimizado para una RTX 5090 (sm_120a) con kernels W4A4 NVFP4, lo que permite ejecutar un modelo de 27B en una GPU de consumo con decodificación especulativa.
-- Prellenado rápido de prompts largos: Infernix reporta prellenados 1,3-1,5× más rápidos que NInfer en el artefacto oficial de 27B, útil en pipelines que reciben prompts extensos de forma repetida.
-- Despliegue con draft model dedicado: la ruta `--spec dflash2` con ventana deslizante de 2048 y selector top-16 está pensada para escenarios de generación larga donde la latencia de decodificación por token es el cuello de botella.
-- Prototipado de agentes multimodales: al ser un único fichero `.ninfer` sin paso de conversión, se puede levantar con `infernix-serve` o `ninfer-serve` apuntando directamente al artefacto.
+- Analisis de repositorios completos: con 262.144 tokens de contexto se puede cargar un arbol de codigo extenso y hacer preguntas transversales sin trocear en fragmentos que pierdan referencias cruzadas.
+- Asistencia de programacion con agente: el motor Infernix reporta un 90 % de tokens de prompt servidos desde cache de prefijo en una repeticion de coding agentico sobre el modelo de 27B, lo que abarata las sesiones largas de edicion iterativa.
+- Servicio local en estacion de trabajo con una RTX 5090: el artefacto esta construido para sm_120a y el repositorio ocupa 22,8 GB, de modo que un unico equipo consumer puede servir el modelo sin infraestructura de datacenter.
+- Procesamiento de documentos con imagen: la torre de vision permite extraer y razonar sobre tablas, graficos y capturas dentro del mismo contexto que el texto de soporte.
+- Transcripcion y resumen de video: al aceptar entrada de video, sirve para generar descripciones, indices o resumenes de material audiovisual en un pipeline batch.
+- Generacion aumentada por recuperacion sobre corpus extensos: la ventana de 262k permite inyectar muchos pasajes recuperados de golpe, reduciendo el numero de llamadas por consulta.
+- Inferencia de baja latencia en produccion interna: las rutas de decodificacion especulativa (MTP y DFlash2) reducen el coste por token generado en cargas interactivas.
 
 ## Benchmarks y rendimiento
 
-La model card solo aporta métricas comparativas de motor (Infernix frente a NInfer) medidas sobre el artefacto oficial de 27B de NInfer, no sobre este artefacto concreto:
+El autor publica una comparacion de motores, no de calidad del modelo. Sobre el artefacto oficial de 27B de NInfer, Infernix alcanzo el primer token en aproximadamente la mitad del tiempo medio de NInfer y prellena prompts largos entre 1,3 y 1,5 veces mas rapido, con la misma calidad. En la repeticion agentica de coding, el 90 % de los tokens de prompt se sirvieron desde cache de prefijo.
 
-| Metrica | Resultado reportado |
-|---|---|
-| Tokens de prompt servidos desde caché de prefijo (replay agéntico de código) | 90 % |
-| Tiempo hasta el primer token (vs. NInfer) | ~50 % del promedio de NInfer |
-| Velocidad de prellenado de prompts largos (vs. NInfer) | 1,3-1,5× |
+| Metrica | Infernix | NInfer |
+|---|---|---|
+| Tiempo hasta el primer token (agente de coding, 27B) | ~0,5x el de NInfer | referencia |
+| Velocidad de prefill en prompts largos | 1,3-1,5x | referencia |
+| Tokens de prompt servidos desde cache de prefijo | 90 % | no disponible |
+| Calidad | misma | misma |
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K u otros) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repo pesa 22,8 GB, por lo que la inferencia requiere al menos ~23-24 GB de VRAM para pesos, más overhead de KV cache y buffers de activación.
-- GPU objetivo declarada: NVIDIA RTX 5090 (sm_120a, Blackwell). Los kernels NVFP4 W4A4 y FP8 requieren arquitectura Blackwell.
-- GPU recomendadas: RTX 5090 como plataforma de referencia; GPUs Blackwell de datacenter (B200 y similares) previsiblemente compatibles con sm_120a, aunque no se documenta explícitamente.
-- Cabe en GPU de consumo: sí, en RTX 5090. En GPUs anteriores (Ada, Ampere) los kernels NVFP4 nativos no están disponibles, por lo que la compatibilidad no está garantizada.
-- Opciones de despliegue: `infernix-serve` (motor recomendado, del mismo autor), `ninfer-serve` (NInfer) y `ninfer-custom`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI: el formato `.ninfer` es propietario.
-- Latencia y throughput: no se publican valores absolutos de tokens por segundo; solo las comparativas relativas frente a NInfer indicadas en la sección anterior.
+- VRAM estimada para inferencia: el repositorio ocupa 22,8 GB, por lo que se necesita una GPU con al menos 24 GB para cargar el artefacto completo; el autor lo valida en una RTX 5090.
+- GPU objetivo: NVIDIA RTX 5090 (sm_120a, arquitectura Blackwell). Los kernels NVFP4 W4A4 dependen de esa generacion.
+- Otras GPU: no se documenta soporte para A100, H100 ni generaciones anteriores; la cuantizacion NVFP4 esta pensada para Blackwell.
+- Cabe en GPU consumer: si, en RTX 5090 de 32 GB. En tarjetas de 24 GB el margen es muy ajustado y no esta confirmado.
+- Despliegue: `infernix-serve` (recomendado) o `ninfer-serve` apuntando directamente al fichero `.ninfer`; tambien funciona con ninfer-custom. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: solo se publican comparativas relativas entre motores (ver seccion anterior); cifras absolutas de tokens por segundo no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato y cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-NVIDIA-NVFP4-NInferV3 | 27B | 262.144 | `.ninfer`, NVFP4/FP8 mixto | Apache 2.0 | Añade DFlash2 y cabeza de propuesta; solo motores Infernix/NInfer |
-| nvidia/Qwen3.8-27B-NVFP4 (base) | 27B | 262.144 | `compressed-tensors`, NVFP4/FP8 | Apache 2.0 | Checkpoint original de NVIDIA; requiere conversión o motor compatible con compressed-tensors |
-| Artefacto oficial NInfer de 27B | 27B | 262.144 | `.ninfer` | Apache 2.0 | Referencia contra la que se miden las mejoras de Infernix; sin DFlash2 ni cabeza de propuesta |
-| Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | no disponible | Mencionado como soportado por Infernix; sin datos de specs en la información disponible |
+| Qwen3.8-27B-NVIDIA-NVFP4-NInferV3 | 27B | 262.144 | `.ninfer`, NVFP4/FP8 mixto | Apache 2.0 | Requiere motor Infernix o NInfer y GPU Blackwell |
+| nvidia/Qwen3.8-27B-NVFP4 | 27B | 262.144 | `compressed-tensors`, NVFP4/FP8 | no disponible en esta ficha | Checkpoint de origen, requiere paso de conversion o motor compatible |
+| Artefacto oficial NInfer de 27B | 27B | 262.144 | `.ninfer` | no disponible en esta ficha | Referencia de rendimiento usada por el autor; sin draft DFlash2 ni cabezal de propuestas |
+
+No se dispone de datos suficientes para comparar con alternativas de otros fabricantes en la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Dependencia de hardware: los kernels NVFP4 W4A4 requieren Blackwell (sm_120a). En GPUs sin soporte nativo FP4 el artefacto no es ejecutable tal cual.
-- Dependencia de motor: el formato `.ninfer` es propietario y solo lo leen Infernix, NInfer y ninfer-custom. No hay ruta documentada a vLLM, llama.cpp, Ollama o TGI.
-- Artefacto de cuantización, no modelo original: la calidad final depende del checkpoint NVFP4 de NVIDIA y de las recuantizaciones aplicadas (cabeza de salida y embedding a FP8), que introducen una desviación respecto al modelo en BF16.
-- Proyecciones GDN a/b sin cuantizar: se mantienen en BF16 por restricción de layout (tiles de 128 filas frente a tensores de 96 filas), lo que consume más memoria de la que permitiría una cuantización completa.
-- Trazabilidad limitada: no se documentan datos de entrenamiento, composición del corpus, alineación (RLHF/DPO) ni idiomas soportados. Tampoco hay benchmarks de calidad publicados.
-- Riesgo de alucinación y sesgos: no evaluados en la información disponible; al no haber model card del modelo base, no hay documentación de sesgos conocidos.
-- Mantenimiento por un único autor: el artefacto, el motor Infernix y la receta de conversión dependen de wallawalla47. La licencia Apache 2.0 permite uso comercial, pero la sostenibilidad del proyecto es un riesgo operativo.
-- Recursos de tokenizer: la model card indica que los assets de tokenizer del checkpoint de NVIDIA omiten `added_tokens_decoder` y el patrón Split estándar que exige el tokenizer en C++, por lo que se sustituyeron por los del artefacto oficial de NInfer; conviene verificar la equivalencia de tokenización en producción.
+- Dependencia de hardware: los kernels NVFP4 requieren GPU Blackwell (sm_120a). En generaciones anteriores el artefacto no es utilizable tal cual.
+- Dependencia de motor: el formato `.ninfer` solo lo leen Infernix y NInfer; no es portable a vLLM, llama.cpp ni transformers sin conversion.
+- Es una cuantizacion de un modelo de terceros: los sesgos y riesgos de alucinacion del Qwen3.8-27B original se heredan, y esta ficha no dispone de su documentacion.
+- El cabezal de salida y el embedding se recuantizaron a FP8 por fila, lo que introduce una diferencia respecto al checkpoint de NVIDIA en esas dos matrices (el resto de lineales son bit-exactos).
+- El draft DFlash2 procede de una fuente local distinta del checkpoint base y se injerta sin entrenamiento conjunto con este backbone.
+- Idiomas soportados no documentados: no se puede asumir cobertura multilingue sin verificacion.
+- Soporte de tool calling no confirmado en la informacion disponible.
+- Artefacto de autor individual con 2 likes: madurez y mantenimiento no garantizados frente a un checkpoint oficial.
+- La licencia Apache 2.0 se declara sobre el artefacto; conviene verificar las condiciones del checkpoint NVIDIA y del modelo Qwen subyacente antes de uso comercial.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-NInferV3
+- Hugging Face: https://huggingface.co/wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-NInferV3
 - Modelo base: https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
 - Motor Infernix: https://github.com/Wallawalla47/Infernix
-- Benchmarks Infernix vs NInfer: https://github.com/Wallawalla47/Infernix#qwen38-27b-infernix-vs-ninfer
+- Benchmarks Infernix frente a NInfer: https://github.com/Wallawalla47/Infernix#qwen38-27b-infernix-vs-ninfer
 - Motor NInfer: https://github.com/Neroued/ninfer
-- Fork ninfer-custom: https://github.com/Wallawalla47/ninfer-custom
-- Recetas de conversión: https://github.com/Wallawalla47/ninfer-custom/blob/master/tools/convert/official_recipes.py
+- Fork ninfer-custom y recetas de conversion: https://github.com/Wallawalla47/ninfer-custom/blob/master/tools/convert/official_recipes.py

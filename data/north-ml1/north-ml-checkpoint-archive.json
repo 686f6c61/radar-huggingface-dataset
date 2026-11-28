@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "North-ML1/north-ml-checkpoint-archive",
+  "slug": "north-ml1-north-ml-checkpoint-archive",
+  "author": "North-ML1",
+  "url": "https://huggingface.co/North-ML1/north-ml-checkpoint-archive",
+  "created_at": "2026-11-27T21:20:47.000Z",
+  "updated_at": "2026-11-27T21:22:56.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "north-ml",
+    "archive",
+    "research",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 204896256,
+  "parameters_human": "204.9M",
+  "storage_bytes": 36789217860,
+  "storage_human": "36.8 GB",
+  "context_length": 2048,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vêtements outdoor, sacs à dos, chaussures | The North Face FR",
+      "url": "https://www.thenorthface.com/fr-fr",
+      "snippet": "Vêtements outdoor, sacs à dos, chaussures et matériel de camping : équipez-vous avec The North Face. Facilités de paiement et …"
+    },
+    {
+      "title": "NORTH",
+      "url": "https://north.fr/",
+      "snippet": "Nous évoluons à la croisée des marques, de la culture et des communautés, avec la conviction que les bonnes histoires doivent …"
+    },
+    {
+      "title": "North - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/North",
+      "snippet": "North is one of the four compass points or cardinal directions. It is the opposite of south and is perpendicular to east and west. North …"
+    },
+    {
+      "title": "Boutiques The North Face® | Livraison gratuite en boutique",
+      "url": "https://locations.thenorthface.fr/",
+      "snippet": "Trouvez une boutique The North Face® à proximité de chez vous. Commandez en ligne. Livraison gratuite en magasin ou à partir de …"
+    },
+    {
+      "title": "Collections The North Face",
+      "url": "https://www.thenorthface.com/fr-fr/explore-collection",
+      "snippet": "Découvrez nos collections, avec nos derniers équipements techniques The North Face FR. Possibilité de livraison et de retours …"
+    }
+  ]
+}

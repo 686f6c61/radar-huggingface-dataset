@@ -46,31 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "litert-community/PlantNet-300K-ResNet18-LiteRT · Hugging Face",
-      "url": "https://huggingface.co/litert-community/PlantNet-300K-ResNet18-LiteRT",
-      "snippet": "Instructions to use litert-community/PlantNet-300K-ResNet18-LiteRT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "litert-community/PlantNet-300K-ResNet18-LiteRT at main",
-      "url": "https://huggingface.co/litert-community/PlantNet-300K-ResNet18-LiteRT/tree/main",
-      "snippet": "Instructions to use litert-community/PlantNet-300K-ResNet18-LiteRT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "LiteRT-Models/plantnet at main · john-rocky/LiteRT-Models",
-      "url": "https://github.com/john-rocky/LiteRT-Models/tree/main/plantnet",
-      "snippet": "PlantNet-300K — Fine-grained plant species identification (LiteRT GPU) Identify 1081 plant species from a photo, fully on the LiteRT CompiledModel GPU. A PlantNet-300K (NeurIPS 2021) ResNet18 — the first fine-grained classifier in this zoo. ~16 ms/frame on a Pixel 8a."
-    },
-    {
-      "title": "GitHub - plantnet/PlantNet-300K: [NeurIPS2021] A plant image dataset ...",
-      "url": "https://github.com/plantnet/PlantNet-300K",
-      "snippet": "In order to train a model on the PlantNet-300K dataset, you first have to download the dataset on Zenodo. You can find detailed information about the dataset as well as extensive experiments in the NeurIPS 2021 paper. If you use this work for your research, please cite the paper: @inproceedings ..."
-    },
-    {
-      "title": "LiteRT for Web with LiteRT.js | Google AI Edge - Google Developers",
-      "url": "https://developers.google.com/edge/litert/web",
-      "snippet": "LiteRT.js is Google&#x27;s high performance WebAI runtime, targeting production Web applications. It is a continuation of the LiteRT stack, ensuring multi-framework support and unifying our core runtime across all platforms."
-    }
-  ]
+  "sources": []
 }

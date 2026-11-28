@@ -2,17 +2,17 @@
 
 ## Resumen
 
-Qwen3.5-4B-flexible-chat-template es una variante del modelo Qwen/Qwen3.5-4B publicada por distil-labs en la que se modifica unicamente la plantilla de chat. La diferencia respecto al modelo original es que permite renderizar mensajes de sistema que no ocupan la primera posicion de la conversacion, en lugar de lanzar una excepcion como hace la plantilla estandar de Qwen. Los pesos, el tokenizador y el resto de la plantilla son identicos a los del modelo base.
+Qwen3.5-4B-flexible-chat-template es un derivado de Qwen/Qwen3.5-4B publicado por distil-labs cuyo unico cambio respecto al modelo original es la plantilla de chat. En concreto, permite que un mensaje de rol `system` aparezca en cualquier posicion de la conversacion, no solo al principio, renderizandolo en su lugar como `<|im_start|>system\n...<|im_end|>` en lugar de lanzar la excepcion `System message must be at the beginning.` que provoca la plantilla original de Qwen.
 
-El modelo hereda la arquitectura multimodal de Qwen3.5-4B (pipeline image-text-to-text) con aproximadamente 4.660 millones de parametros, y esta pensado para escenarios de ajuste fino (fine-tuning) sobre conversaciones de agente en las que se inyectan mensajes de sistema a mitad de la conversacion. Es relevante para quienes entrenan estudiantes destilados o agentes conversacionales que necesitan modificar instrucciones del sistema de forma dinamica sin reiniciar el contexto.
+Los pesos, el tokenizador y el resto de la plantilla son identicos a los de Qwen/Qwen3.5-4B, de modo que el modo de razonamiento (`enable_thinking`) funciona igual que en el modelo base. El autor lo emplea para ajustar finamente "estudiantes" sobre conversaciones de agentes que insertan mensajes de sistema a mitad de dialogo, un escenario habitual en pipelines agénticos multi-turno.
 
-La licencia es Apache 2.0, la misma que el modelo original, y se distribuye en formato safetensors compatible con transformers. No se han publicado datos de idiomas soportados ni resultados de benchmarks propios en la informacion disponible.
+El modelo tiene 4.659.865.088 parametros (aproximadamente 4,66 mil millones), se distribuye en safetensors con un repositorio de 9,3 GB y mantiene la licencia Apache 2.0 del original. Su relevancia actual radica en que resuelve una friccion concreta de las plantillas de chat estrictas al entrenar o desplegar agentes que inyectan instrucciones de sistema dinamicamente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (heredada de Qwen/Qwen3.5-4B; pipeline image-text-to-text) |
+| Arquitectura | no disponible (modelo base Qwen3.5-4B, familia qwen3_5) |
 | Parametros totales | 4.659.865.088 (~4,66 mil millones) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,56 +23,59 @@ La licencia es Apache 2.0, la misma que el modelo original, y se distribuye en f
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo; el repositorio es una copia de los pesos de Qwen/Qwen3.5-4B con una unica modificacion en la plantilla de chat (`chat_template.jinja` y la misma plantilla en `tokenizer_config.json`). El cambio consiste en sustituir la excepcion `System message must be at the beginning.` por la renderizacion in situ del mensaje de sistema con los tokens `<|im_start|>system\n...<|im_end|>`. El resto de la plantilla, el tokenizador y los pesos son identicos al modelo base, por lo que el modo de razonamiento (`enable_thinking`) funciona igual que en el original.
+No se dispone de informacion sobre la arquitectura interna (tipo de transformer, atencion, capas) ni sobre los datos de entrenamiento del modelo base Qwen3.5-4B en la informacion proporcionada. El tag `qwen3_5` y la pipeline `image-text-to-text` indican que el modelo base es multimodal (procesa imagen y texto), pero no se detallan los componentes de vision ni su integracion.
 
-No se proporcionan datos sobre el corpus de entrenamiento del modelo base ni sobre procesos de RLHF o DPO. El autor indica que esta variante se utiliza para ajustar estudiantes sobre conversaciones de agente que anaden mensajes de sistema durante la conversacion, lo que sugiere un uso orientado a fine-tuning mas que a inferencia directa.
+El unico cambio documentado respecto al modelo base es la modificacion de `chat_template.jinja` (y la misma plantilla en `tokenizer_config.json`): se elimina la excepcion que obliga al mensaje de sistema a ir primero y se sustituye por un renderizado en linea. No se describe ningun proceso de entrenamiento adicional, RLHF, DPO ni ajuste fino realizado por distil-labs sobre estos pesos; el autor menciona que el modelo se usa como base para ajustar estudiantes, no que este publicado con un ajuste propio.
 
 ## Capacidades
 
 - Generacion de texto y conversacion multi-turno, heredadas del modelo base Qwen3.5-4B.
-- Procesamiento de imagen y texto (pipeline image-text-to-text), segun la etiqueta del repositorio.
-- Modo de razonamiento (`enable_thinking`) compatible con el modelo original.
-- Renderizado de mensajes de sistema en cualquier posicion de la conversacion, incluida la insercion a mitad de turno.
-- Capacidad de servir como base para fine-tuning de estudiantes en escenarios de agente.
-- Soporte de tool calling, agentes y capacidades multilingues: no disponible en la informacion proporcionada (se heredaria del modelo base, pero no se detalla).
+- Procesamiento de imagen y texto (pipeline `image-text-to-text`), segun los tags del repositorio.
+- Modo de razonamiento activable mediante `enable_thinking`, con el mismo comportamiento que el modelo original.
+- Plantilla de chat flexible: acepta mensajes de sistema en cualquier posicion de la conversacion.
+- Uso como base para ajuste fino de estudiantes en conversaciones agénticas que inyectan system messages durante el dialogo.
+- Soporte de tool calling, agentes, capacidades multilingues o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Fine-tuning de estudiantes para agentes conversacionales: el modelo permite entrenar sobre trayectorias en las que se inyectan mensajes de sistema durante la conversacion, algo que la plantilla original rechaza con una excepcion.
-- Simulacion de cambios de politica en tiempo de inferencia: util para evaluar como responde un agente cuando recibe nuevas instrucciones de sistema a mitad de una sesion sin reiniciar el contexto.
-- Generacion de datos sinteticos de dialogo: sirve para producir conversaciones de agente con instrucciones de sistema intercaladas que luego se usan como corpus de entrenamiento.
-- Investigacion en destilacion: al ser una variante del modelo base con pesos identicos, facilita comparar el efecto de la plantilla frente al original en experimentos controlados.
-- Evaluacion de robustez ante instrucciones dinamicas: permite estudiar como afecta la posicion del mensaje de sistema al comportamiento del modelo.
-- Prototipado de asistentes multimodales: al heredar el pipeline image-text-to-text, puede emplearse en experimentos que combinan imagen y texto con instrucciones de sistema variables.
+- Ajuste fino de agentes conversacionales: el modelo sirve como base para entrenar estudiantes sobre dialogos en los que se insertan instrucciones de sistema a mitad de conversacion, algo imposible con la plantilla original de Qwen3.5-4B.
+- Investigacion en destilacion: distil-labs lo emplea para generar o entrenar estudiantes a partir de conversaciones agénticas; el repositorio encaja en pipelines de destilacion donde el profesor emite system messages dinamicos.
+- Evaluacion de plantillas de chat: util para comparar el comportamiento del modelo con y sin la restriccion de posicion del mensaje de sistema, manteniendo pesos identicos.
+- Prototipado de asistentes con instrucciones cambiantes: permite modificar el rol o las reglas del asistente a mitad de sesion sin reiniciar la conversacion.
+- Desarrollo de pipelines agénticos multi-paso: al aceptar system messages intercalados, facilita la integracion con frameworks que reinyectan contexto o directrices entre pasos.
+- Experimentacion multimodal ligera: al ser un modelo de ~4,66 mil millones de parametros con pipeline image-text-to-text, puede usarse en entornos de investigación con recursos limitados para tareas de imagen y texto (siempre que se confirme el soporte de vision en el modelo base).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a la pagina de Qwen/Qwen3.5-4B para benchmarks y uso, pero no incluye cifras propias.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a Qwen/Qwen3.5-4B para benchmarks y uso, pero no se incluyen cifras en los datos proporcionados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision completa (FP16/BF16): aproximadamente 9,3 GB solo para pesos, mas memoria para el contexto y activaciones; en la practica se recomienda al menos 12-16 GB.
-- El tamano del repositorio es de 9,3 GB, coherente con pesos en safetensors de ~4,66 mil millones de parametros.
-- GPU recomendadas: no disponible en la informacion proporcionada; por tamano, cabria en GPUs consumer de gama alta con VRAM suficiente, aunque no se confirma en la model card.
-- Opciones de despliegue: transformers (libreria indicada); otras opciones como vLLM, llama.cpp, Ollama o TGI no se mencionan en la informacion disponible.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: no disponible de forma oficial. Como referencia orientativa, un modelo de ~4,66 mil millones de parametros en fp16 requiere aproximadamente 9,3 GB solo para pesos; en cuantizaciones de 8 bits o 4 bits el requisito se reduce, pero no se han publicado valores concretos para este modelo.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada; por tamano, un modelo de ~4,66 mil millones de parametros podria caber en GPUs de consumo con suficiente VRAM, pero no hay datos oficiales.
+- Opciones de despliegue: la libreria indicada es `transformers`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| distil-labs/Qwen3.5-4B-flexible-chat-template | ~4,66 mil millones | no disponible | Apache 2.0 | Variante de Qwen3.5-4B con plantilla de chat modificada |
-| Qwen/Qwen3.5-4B | no disponible (modelo base) | no disponible | Apache 2.0 | Modelo original; rechaza mensajes de sistema no iniciales |
-| Otras alternativas de ~4B | no disponible | no disponible | no disponible | No se dispone de datos para comparar |
+| distil-labs/Qwen3.5-4B-flexible-chat-template | ~4,66 mil millones | no disponible | Apache 2.0 | Plantilla de chat modificada para system messages en cualquier posicion |
+| Qwen/Qwen3.5-4B | no disponible | no disponible | Apache 2.0 | Modelo base; plantilla original exige system message al inicio |
+| Otras alternativas de ~4B | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
+
+La comparativa con modelos de otros autores no puede completarse con los datos disponibles; la unica comparacion fiable es con su modelo base, del que difiere exclusivamente en la plantilla de chat.
 
 ## Limitaciones y advertencias
 
-- La unica diferencia respecto al modelo base es la plantilla de chat; cualquier limitacion, sesgo o riesgo de alucinacion de Qwen3.5-4B se hereda sin cambios.
-- No se han publicado datos sobre sesgos conocidos, riesgo de alucinacion ni limitaciones de contexto o idioma en la informacion disponible.
-- La licencia Apache 2.0 permite uso comercial, pero conviene revisar la licencia del modelo base enlazada por el autor.
-- El modelo esta pensado principalmente para fine-tuning; su uso directo en produccion no se documenta.
-- La modificacion de la plantilla puede alterar el comportamiento esperado del modelo base en conversaciones con mensajes de sistema intercalados, por lo que se recomienda validar en el dominio de aplicacion.
-- No se especifican tipos de cuantizacion ni formatos alternativos a safetensors.
+- El unico cambio respecto al modelo base es la plantilla de chat; los sesgos, alucinaciones y limitaciones del modelo Qwen3.5-4B se heredan integramente.
+- No se documentan sesgos conocidos ni tasas de alucinacion en la informacion proporcionada.
+- La longitud de contexto y los idiomas soportados no estan disponibles; no deben asumirse valores del modelo base sin verificarlos.
+- El uso de system messages intercalados puede alterar el comportamiento esperado del modelo, ya que la plantilla original no contemplaba ese caso; conviene validar en produccion.
+- La licencia Apache 2.0 permite uso comercial, pero se remite a la licencia del modelo base Qwen/Qwen3.5-4B; deben revisarse las condiciones de dicho repositorio.
+- El modelo se publica principalmente como base para ajuste fino, no como modelo listo para produccion; no hay garantias de rendimiento en tareas concretas.
+- No se dispone de informacion sobre cuantizaciones oficiales ni sobre soporte de herramientas de despliegue especificas.
 
 ## Enlaces
 

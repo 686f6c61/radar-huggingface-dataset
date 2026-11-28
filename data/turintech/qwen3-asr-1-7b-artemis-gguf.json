@@ -58,14 +58,14 @@
   "benchmarks": [
     {
       "task": "Automatic Speech Recognition",
-      "dataset": "Held-out English speech test, about 27.5 hours in 8 domains (LibriSpeech, FLEURS, VoxPopuli, AMI, Earnings-22, plus MUSAN noise)",
-      "metric": "WER, Qwen3-ASR-1.7B-Artemis-Q5_K_M.gguf (%)",
+      "dataset": "English speech",
+      "metric": "WER, Q5_K_M (%)",
       "value": 7.91
     },
     {
       "task": "Automatic Speech Recognition",
-      "dataset": "Held-out English speech test, about 27.5 hours in 8 domains (LibriSpeech, FLEURS, VoxPopuli, AMI, Earnings-22, plus MUSAN noise)",
-      "metric": "WER, Qwen3-ASR-1.7B-Artemis-Q4_K_M.gguf (%)",
+      "dataset": "English speech",
+      "metric": "WER, Q4_K_M (%)",
       "value": 8.06
     }
   ],

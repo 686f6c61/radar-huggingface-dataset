@@ -55,31 +55,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "dicksondickson/Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX - Hugging Face",
-      "url": "https://huggingface.co/dicksondickson/Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX",
-      "snippet": "Instructions to use dicksondickson/Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX - Hugging Face",
-      "url": "https://huggingface.co/dicksondickson/Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX/blob/main/oq_imatrix_report.json",
-      "snippet": "Instructions to use dicksondickson/Ling-3.0-flash-Fin-oQ4e-mtp-bf16-MLX with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "Ling 3.0 Flash Fin Benchmarks, Pricing & Context Window",
-      "url": "https://llm-stats.com/models/ling-3.0-flash-fin",
-      "snippet": "Ling 3.0 Flash Fin: Benchmarks, Pricing & Context Window Ling 3.0 Flash Fin is a language model from InclusionAI, released in September 2026, with a 262K-token context window, and pricing from $0.060/M input, $0.012/M cached input, $0.180/M output. Ling-3.-flash-Fin is the first finance-enhanced model in the Ant Ling family. Developed by Ant Group with leading financial institutions and ..."
-    },
-    {
-      "title": "inclusionAI: Ling 3.0 Flash Fin - AI Model Details & Benc...",
-      "url": "https://benchable.ai/models/inclusionai/ling-3.0-flash-fin-20260827",
-      "snippet": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment..."
-    },
-    {
-      "title": "Ling-3.0-flash — benchmarks, pricing & hardware fit · Model Beats",
-      "url": "https://www.modelbeats.com/models/ling-3-0-flash",
-      "snippet": "inclusionAI&#x27;s Ling 3.0 mid-tier, launched 2026-07-24 and open-sourced on Hugging Face under MIT on 2026-08-02. It is a 124B-total / 5.1B-active hybrid-linear MoE with a native 256K context (extendable to 1M) and thinking on by default but switchable."
-    }
-  ]
+  "sources": []
 }

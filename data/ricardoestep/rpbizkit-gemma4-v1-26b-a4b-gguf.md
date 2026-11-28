@@ -2,55 +2,47 @@
 
 ## Resumen
 
-RPBizkit-Gemma4-v1-26B-A4B-GGUF es una conversión al formato GGUF del modelo RPBizkit-Gemma4-v1-26B-A4B, publicada por el usuario RicardoEstep. Se trata de un modelo resultante de un proceso de fusión (merge) de modelos, generado con la herramienta ht-mergekit, y posteriormente convertido a GGUF mediante llama.cpp en un equipo local. El nombre sugiere una base Gemma con arquitectura MoE (26B totales, 4B activos), aunque no se confirma en la información disponible.
+RPBizkit-Gemma4-v1-26B-A4B-GGUF es una conversión al formato GGUF de un modelo derivado de la familia Gemma, publicado por el usuario RicardoEstep en Hugging Face. El modelo subyacente, RPBizkit-Gemma4-v1-26B-A4B, es un merge realizado con la herramienta ht-mergekit (mergekit), es decir, una combinación de pesos de otros modelos en lugar de un entrenamiento desde cero. La denominación "26B-A4B" sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 26 mil millones de parámetros totales y unos 4 mil millones activos por token, aunque esta información no está confirmada en la documentación disponible.
 
-El modelo se distribuye principalmente para su uso con llama.cpp y kobold.cpp, lo que indica un enfoque hacia inferencia local en hardware de consumo. No se han publicado detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas. La model card es extremadamente escueta y se limita a indicar el origen de la conversión y las herramientas compatibles.
+El dato verificable es el recuento de parámetros en safetensors: 25.233.142.046 parámetros totales, lo que confirma el orden de magnitud de 25 mil millones. El repositorio GGUF ocupa 214,1 GB y se distribuye bajo la librería transformers con etiquetas que indican compatibilidad con llama.cpp y una advertencia de contenido "not-for-all-audiences", lo que apunta a un ajuste orientado a conversación sin filtros de seguridad.
 
-La relevancia de esta ficha es limitada: no hay benchmarks, no se especifica licencia, no se detallan idiomas y el número de descargas es cero. Se trata de un modelo experimental de un autor individual, sin validación externa ni documentación técnica sustancial. A continuación se presenta toda la información disponible, indicando explícitamente los datos no disponibles.
+La relevancia de esta ficha es limitada pero concreta: se trata de un modelo comunitario, sin model card técnica detallada, sin benchmarks publicados y sin licencia declarada. Resulta útil para quien quiera experimentar con merges de Gemma en formato GGUF sobre llama.cpp o KoboldCpp, pero no es una opción recomendable para producción sin una evaluación previa propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (el nombre sugiere base Gemma con posible MoE, sin confirmar) |
-| Parametros totales | 26B (según el nombre del modelo, no confirmado en la model card) |
-| Parametros activos | 4B (según el nombre del modelo, no confirmado; solo aplicable si es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (formato GGUF, niveles concretos no especificados) |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (conversión desde safetensors del modelo base) |
+| Arquitectura | MoE derivada de Gemma (según denominación del autor; no confirmada en documentación) |
+| Parametros totales | 25.233.142.046 (safetensors) |
+| Parametros activos | Aproximadamente 4B según la nomenclatura "A4B" (no confirmado) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF (el autor advierte sensibilidad a la cuantización; niveles concretos no disponibles) |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (repo); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. El tag `ht-mergekit` indica que se trata de una fusión de modelos realizada con mergekit, una herramienta para combinar pesos de modelos existentes. El nombre "Gemma4" sugiere una base de la familia Gemma, y "26B-A4B" sugiere una arquitectura de mezcla de expertos (MoE) con 26 mil millones de parámetros totales y 4 mil millones activos, pero estos datos no están confirmados en la model card.
+El modelo es un merge de pesos generado con ht-mergekit, una variante de mergekit orientada a fusionar modelos. No se trata, por tanto, de un modelo entrenado de forma convencional: no hay información sobre el dataset de entrenamiento, el número de tokens procesados ni si hubo fases de RLHF o DPO. La model card del repositorio GGUF es mínima y solo documenta la conversión a GGUF realizada con llama.cpp en un equipo local.
 
-No se especifican los datos de entrenamiento, el número de tokens, la composición del dataset ni si hubo etapas de RLHF o DPO. La conversión a GGUF se realizó con llama.cpp en un equipo local, sin más detalles técnicos. No se documentan innovaciones como decodificación especulativa o atención lineal.
+La designación "Gemma4" y el sufijo "A4B" indican que el autor parte de la familia Gemma y aplica una estructura de mezcla de expertos con activación dispersa. El recuento de 25,2 mil millones de parámetros totales es consistente con esa nomenclatura, pero no hay documentación pública que detalle el número de expertos, la estrategia de enrutamiento, la composición del merge ni las innovaciones técnicas (atención, decodificación especulativa, etc.). Cualquier afirmación adicional sobre la arquitectura sería especulativa.
 
 ## Capacidades
 
-- Generación de texto: capacidad inferida por el formato y la base Gemma, pero no documentada.
-- Razonamiento y código: no disponible.
-- Matemáticas: no disponible.
-- Visión: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible.
-- Modo thinking: no disponible.
-- Otras capacidades especiales: no disponible.
-
-No se ha publicado ninguna lista de capacidades en la información proporcionada.
+- Generación de texto conversacional: las etiquetas del repositorio incluyen "conversational", lo que indica un ajuste orientado a diálogo multi-turno.
+- Compatibilidad con llama.cpp y KoboldCpp: el autor menciona explícitamente ambos entornos de inferencia.
+- Integración con transformers: la librería declarada es transformers, aunque el artefacto principal es GGUF.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el modelo puede servirse mediante infraestructura de inferencia compatible con la API de Hugging Face.
+- Capacidades adicionales (código, matemáticas, tool calling, agentes, visión, audio, modo thinking): no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Inferencia local con llama.cpp: el modelo está empaquetado en GGUF y la model card indica su uso con llama.cpp o kobold.cpp, por lo que el caso principal es la ejecución en local sobre CPU o GPU de consumo.
-- Experimentación con modelos fusionados: al ser un merge con mergekit, puede interesar a investigadores que estudien el efecto de fusiones de pesos en el comportamiento del modelo.
-- Pruebas de compatibilidad con kobold.cpp: la mención explícita a kobold.cpp sugiere su uso en entornos de escritura creativa o generación de texto interactiva, aunque no se detallan capacidades.
-- Evaluación comparativa de merges: puede servir como punto de partida para comparar el rendimiento de fusiones frente a los modelos originales, siempre que se realicen evaluaciones propias.
-- Despliegue en entornos con recursos limitados: si se confirma la arquitectura MoE con 4B activos, podría ejecutarse en GPUs de consumo, pero no hay datos de VRAM ni latencia.
-- Investigación sobre modelos no filtrados: el tag `not-for-all-audiences` indica que el modelo puede generar contenido no apto para todos los públicos, por lo que su uso en investigación sobre filtrado y seguridad es posible, con las debidas precauciones.
-
-No se pueden detallar más casos concretos sin información sobre las capacidades reales del modelo.
+- Experimentación con merges de Gemma: el modelo permite evaluar cómo se comporta una fusión de pesos de la familia Gemma en formato GGUF, útil para investigadores que estudian técnicas de model merging sin necesidad de infraestructura de entrenamiento.
+- Inferencia local en llama.cpp: al estar en GGUF, puede ejecutarse en estaciones de trabajo con GPU de consumo, lo que facilita pruebas de conversación offline sin dependencia de servicios en la nube.
+- Roleplay y generación creativa sin filtros: la etiqueta "not-for-all-audiences" indica que el ajuste está pensado para contenido sin restricciones de seguridad, un nicho habitual en la comunidad de modelos locales.
+- Prototipado de chatbots conversacionales: su naturaleza conversacional permite construir demos rápidas de asistentes multi-turno antes de comprometerse con un modelo comercial.
+- Evaluación comparativa de cuantizaciones: dado que el autor advierte sobre la sensibilidad a la cuantización, el modelo sirve para medir la degradación de calidad entre distintos niveles GGUF en arquitecturas MoE.
+- Investigación sobre robustez de merges: permite analizar si la fusión de pesos introduce artefactos (repeticiones, degradación de coherencia) en comparación con los modelos originales.
 
 ## Benchmarks y rendimiento
 
@@ -58,27 +50,38 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Si se confirma la arquitectura MoE de 26B totales y 4B activos, una cuantización Q4_K_M podría requerir del orden de 15-18 GB de VRAM, pero es una estimación no verificada.
-- GPU recomendadas: no disponible.
-- ¿Cabe en GPU de consumo? No disponible. Con 26B totales, en cuantizaciones bajas podría caber en GPUs de 24 GB (RTX 3090/4090) si la arquitectura MoE permite cargar solo los expertos activos, pero no hay confirmación.
-- Opciones de despliegue: llama.cpp y kobold.cpp (mencionados en la model card). No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: con 25,2 mil millones de parámetros, una cuantización Q4_K_M requeriría aproximadamente 15-16 GB de VRAM; Q8_0 rondaría los 27 GB; FP16 superaría los 50 GB. Estas cifras son estimaciones basadas en el recuento de parámetros, no datos publicados por el autor.
+- GPU recomendadas: para cuantizaciones agresivas, una RTX 4090 (24 GB) o RTX 3090 (24 GB) pueden alojar Q4 y Q5; para Q8 se necesitan A100 40 GB, H100 o configuraciones multi-GPU.
+- GPU de consumo: sí es viable en RTX 4090, 3090, 4080 (16 GB, solo cuantizaciones muy agresivas) y en configuraciones con offloading a RAM del sistema.
+- Opciones de despliegue: llama.cpp, KoboldCpp (mencionados por el autor), y potencialmente servidores compatibles con GGUF como llama-cpp-python u Ollama, aunque no están confirmados explícitamente.
+- Latencia y throughput: no disponibles. Al ser una arquitectura MoE con activación dispersa, el throughput debería ser superior al de un modelo denso de 25B, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre modelos comparables de la misma categoría, ni de datos de rendimiento que permitan una comparación rigurosa.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| RPBizkit-Gemma4-v1-26B-A4B-GGUF | 25,2B totales (aprox. 4B activos) | no disponible | no disponible | GGUF | Merge comunitario, sin benchmarks |
+| Gemma 2 27B (Google) | 27B densos | 8K | Gemma Terms | safetensors, GGUF | Modelo oficial con benchmarks publicados |
+| Mixtral 8x7B (Mistral AI) | 46,7B totales (12,9B activos) | 32K | Apache 2.0 | safetensors, GGUF | MoE de referencia con evaluación extensa |
+| Qwen2.5 32B (Alibaba) | 32,5B densos | 128K | Apache 2.0 | safetensors, GGUF | Alternativa densa con contexto largo |
+
+La comparación directa es difícil porque el modelo de RicardoEstep carece de documentación técnica y benchmarks. Frente a los modelos oficiales, la principal desventaja es la ausencia de garantías de calidad y de licencia clara; la ventaja es el enfoque sin filtros y la disponibilidad inmediata en GGUF.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados. Al ser un merge de modelos, puede heredar sesgos de los modelos originales, pero no se especifican.
-- Riesgo de alucinación: no evaluado. No hay benchmarks ni evaluaciones de fidelidad.
-- Limitaciones de contexto o idioma: no disponible. Se desconoce la longitud de contexto y los idiomas soportados.
-- Restricciones de licencia: la licencia no está disponible, lo que impide determinar si se permite uso comercial. El tag `not-for-all-audiences` sugiere contenido potencialmente sensible, pero no es una restricción legal.
-- Caveats para producción: modelo sin documentación técnica, sin benchmarks, sin garantías de calidad y con cero descargas. No se recomienda su uso en producción sin una evaluación exhaustiva previa. La conversión GGUF se realizó en un equipo local sin validación publicada.
-- El modelo base tiene el tag `not-for-all-audiences`, lo que indica que puede generar contenido no apto para todos los públicos; se debe aplicar filtrado si se usa en aplicaciones abiertas.
+- Ausencia de licencia declarada: no se especifican términos de uso comercial, lo que impide su adopción en producción sin aclaración legal previa.
+- Sin model card técnica: no hay información sobre datos de entrenamiento, contexto, idiomas ni proceso de merge, lo que dificulta evaluar sesgos y comportamiento.
+- Riesgo de alucinación: al ser un merge conversacional sin evaluación publicada, la fiabilidad factual no está verificada.
+- Sensibilidad a la cuantización: el propio autor advierte que los modelos "Gemma 4 MoE" se degradan con la cuantización, por lo que las versiones GGUF pueden perder coherencia respecto al modelo original.
+- Contenido sin filtros: la etiqueta "not-for-all-audiences" indica que el modelo puede generar contenido inapropiado; no es apto para aplicaciones orientadas al público general sin moderación adicional.
+- Idiomas y contexto desconocidos: no se puede confirmar el soporte multilingüe ni la ventana de contexto real.
+- Repositorio de gran tamaño: 214,1 GB en total, lo que implica costes de almacenamiento y descarga considerables.
+- Procedencia comunitaria: al ser un merge de un usuario individual, no hay garantías de mantenimiento, soporte ni corrección de errores.
 
 ## Enlaces
 
-- [Hugging Face: RicardoEstep/RPBizkit-Gemma4-v1-26B-A4B-GGUF](https://huggingface.co/RicardoEstep/RPBizkit-Gemma4-v1-26B-A4B-GGUF)
-- [Modelo base: RicardoEstep/RPBizkit-Gemma4-v1-26B-A4B](https://huggingface.co/RicardoEstep/RPBizkit-Gemma4-v1-26B-A4B)
-- No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.
+- Repositorio GGUF: https://huggingface.co/RicardoEstep/RPBizkit-Gemma4-v1-26B-A4B-GGUF
+- Modelo base: https://huggingface.co/RicardoEstep/RPBizkit-Gemma4-v1-26B-A4B
+- Herramienta de merge (mergekit): https://github.com/arcee-ai/mergekit
+- llama.cpp: https://github.com/ggerganov/llama.cpp
+- KoboldCpp: https://github.com/LostRuins/koboldcpp

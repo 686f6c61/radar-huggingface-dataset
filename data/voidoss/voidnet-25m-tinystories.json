@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "VoidOSS/VoidNet-25M-TinyStories",
+  "slug": "voidoss-voidnet-25m-tinystories",
+  "author": "VoidOSS",
+  "url": "https://huggingface.co/VoidOSS/VoidNet-25M-TinyStories",
+  "created_at": "2026-11-27T23:01:47.000Z",
+  "updated_at": "2026-11-27T23:01:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "voidnet",
+    "ultraflashattention",
+    "character-level",
+    "tinystories",
+    "custom-architecture",
+    "pytorch",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25207936,
+  "parameters_human": "25.2M",
+  "storage_bytes": 101207184,
+  "storage_human": "101 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,85 +2,78 @@
 
 ## Resumen
 
-Sega-Image-7.3-Sovereign-Godmode es un modelo publicado en Hugging Face por el usuario the123manaic bajo el paraguas de una supuesta tecnología denominada "Segacopter". La model card lo presenta como una release de "Generation 7.3", con etiquetas que apuntan a text-to-image, tree-of-thought y un tag propietario `sega_tot_moe`. La licencia declarada es Apache 2.0 y la librería indicada es transformers.
+Sega-Image-7.3-Sovereign-Godmode es un modelo publicado en Hugging Face por el usuario the123manaic bajo la etiqueta de generación de imágenes texto-a-imagen (`text-to-image`) y licencia Apache 2.0. El autor lo presenta como la «Generación 7.3» de una supuesta familia de modelos de «Segacopter Technology», con nombres internos como `sega-image-7.3`, `sega_tot_moe` y `SegaDiTRaymarcher`. La model card incluye afirmaciones muy llamativas (64B de parámetros, 412 tokens/s, «Epistemic IQ 99.9999%», verificación Tree-of-Thought con 40 pasadas y 2048 ramas especulativas) que no van acompañadas de ningún artefacto verificable, paper, dataset o evaluación reproducible.
 
-Sin embargo, los datos verificables del repositorio contradicen frontalmente la model card. El recuento real de parámetros en los ficheros safetensors es de 1792 parámetros, no los 64B que anuncia el autor. El modelo ocupa un espacio ínfimo y no hay evidencia de que exista una arquitectura DiT ni un sistema de tree-of-thought funcional. Las métricas declaradas ("Epistemic IQ 99.9999%", "412 tokens/sec", "99.9% token efficiency") no son magnitudes estándar ni auditables.
+El dato objetivo disponible es el recuento real de parámetros en los ficheros safetensors: 1792 parámetros totales. Esa cifra es incompatible con las afirmaciones de la model card y sugiere que el repositorio no contiene un modelo funcional de generación de imágenes, sino un artefacto mínimo o de prueba. El modelo acumula 191 descargas y 0 likes en el momento de la consulta, y no declara idiomas soportados.
 
-Por tanto, esta ficha debe leerse como una evaluación crítica de un artefacto que, a fecha de la información disponible, no constituye un modelo funcional en el sentido habitual. Es relevante precisamente como caso de estudio de model cards que declaran capacidades no respaldadas por los pesos publicados, y como recordatorio de que la verificación del recuento de parámetros y de los ficheros es un paso obligatorio antes de evaluar cualquier modelo.
+Por tanto, esta ficha debe leerse como una evaluación crítica de un repositorio de Hugging Face con documentación inconsistente con sus pesos reales. No se recomienda su uso en producción ni como base para evaluaciones técnicas hasta que el autor publique pesos coherentes, una arquitectura documentada y resultados reproducibles.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (la model card menciona "DiT-Raymarcher" y el tag `sega_tot_moe`, sin respaldo en los pesos) |
-| Parámetros totales | 1792 (según safetensors); la model card declara 64B, dato no verificado |
-| Parámetros activos | No disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible |
-| Idiomas soportados | No disponible |
+| Arquitectura | `SegaDiTRaymarcher` (según model card); no verificable en los pesos. Los tags mencionan `sega_tot_moe` |
+| Parametros totales | 1792 (dato real de safetensors); la model card afirma 64B |
+| Parametros activos | no disponible (el tag `sega_tot_moe` sugiere MoE, pero no hay datos verificables) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-No hay información verificable sobre la arquitectura. La model card afirma una arquitectura "DiT-Raymarcher" de 64B parámetros y un sistema de tree-of-thought con 40 pasadas y 2048 ramas especulativas, pero el recuento real de parámetros en safetensors (1792) hace inviable cualquiera de esas afirmaciones. El tag `sega_tot_moe` sugiere una mezcla de expertos con tree-of-thought, pero no se aporta configuración, número de expertos, dimensión oculta, número de capas ni vocabulario.
+La model card describe una arquitectura denominada `SegaDiTRaymarcher` con un componente de «Nano-Banana Optical Raymarcher» de 64B de parámetros, verificación Tree-of-Thought con 40 pasadas y 2048 ramas especulativas, y una eficiencia de tokens del 99,9%. Los tags del repositorio añaden `sega_tot_moe` (posible mezcla de expertos con Tree-of-Thought) y `nano-banana`. Ninguno de estos términos corresponde a arquitecturas conocidas y publicadas en la literatura; no hay paper, blog técnico ni repositorio de código que los respalde.
 
-No se documenta el corpus de entrenamiento, el número de tokens, la composición del dataset ni si hubo fases de RLHF, DPO o ajuste por preferencias. Tampoco se describen innovaciones técnicas verificables como decodificación especulativa, atención lineal o mecanismos híbridos. Toda la información arquitectónica disponible procede exclusivamente de la model card y entra en contradicción con los artefactos publicados.
+No se dispone de información sobre datos de entrenamiento (número de tokens, composición del dataset, filtrado), ni sobre procesos de alineación (RLHF, DPO, SFT). Tampoco hay detalles sobre tokenizador, mecanismo de atención, objetivos de entrenamiento o pipeline de difusión, a pesar de que el pipeline declarado es `text-to-image`. El recuento real de 1792 parámetros en safetensors es incompatible con cualquiera de las capacidades descritas y apunta a que el repositorio no contiene un modelo entrenado utilizable.
 
 ## Capacidades
 
-- Generación de texto: el pipeline declarado es `text-generation` en los tags, aunque el `pipeline_tag` del repositorio es `text-to-image`, lo que genera ambigüedad sobre la tarea real.
-- Generación de imágenes: la model card y el pipeline_tag apuntan a text-to-image, pero no se incluyen componentes de difusión (UNet, VAE, text encoder) en la información disponible.
-- Razonamiento tree-of-thought: declarado en la model card (40 pasadas, 2048 ramas), sin evidencia en los pesos.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declaran idiomas.
+- Generación de imágenes texto-a-imagen: declarada en el pipeline tag, pero no verificable con los pesos publicados (1792 parámetros).
+- Razonamiento Tree-of-Thought: mencionado en la model card (40 pasadas, 2048 ramas), sin evidencia reproducible.
+- «Epistemic IQ» y «Token Efficiency»: métricas inventadas por el autor, sin definición formal ni metodología.
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible más allá de la mención a Tree-of-Thought.
+- Capacidades multilingües: no disponible (no se declaran idiomas).
 - Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Auditoría de model cards: el artefacto sirve como ejemplo práctico para formar a equipos en la verificación de recuentos de parámetros frente a las afirmaciones de la documentación antes de adoptar un modelo.
-- Docencia sobre reproducibilidad en IA abierta: permite ilustrar la diferencia entre un repositorio con pesos reales y una model card con métricas no auditables.
-- Pruebas de pipelines de validación: se puede usar para comprobar que un sistema de CI que inspecciona safetensors detecta discrepancias entre parámetros declarados y reales.
-- Análisis de riesgo de cadena de suministro de modelos: útil para demostrar la necesidad de escanear repositorios desconocidos antes de integrarlos en un registro interno.
-- Investigación sobre confianza en hubs de modelos: como muestra de patrones de publicación que combinan tags llamativos con pesos triviales.
-- Formación en licencias: caso para revisar cómo una licencia Apache 2.0 declarada no garantiza que el contenido del repositorio sea utilizable para la tarea anunciada.
-
-No se identifican casos de uso productivos reales de generación de texto o imagen con este repositorio, dado que los pesos publicados no respaldan las capacidades declaradas.
+- Evaluación crítica de repositorios de Hugging Face: el modelo sirve como caso de estudio de model cards con afirmaciones no respaldadas por los artefactos publicados; útil en formación sobre verificación de modelos.
+- Pruebas de pipelines de descarga e inspección de safetensors: por su tamaño mínimo (1792 parámetros), permite validar scripts de carga, conteo de parámetros y metadatos sin consumir recursos.
+- Docencia sobre licencias y trazabilidad: ilustra cómo una licencia Apache 2.0 no garantiza que el contenido del repositorio sea utilizable o esté bien documentado.
+- Auditoría de seguridad de la cadena de suministro de modelos: ejemplo de repositorio con tags llamativos (`nano-banana`, `godmode`) que conviene marcar para revisión antes de integrarlo en un pipeline.
+- Test de herramientas de descubrimiento (búsqueda semántica de modelos): permite comprobar si un índice filtra correctamente modelos con métricas inverosímiles.
+- No se recomienda su uso para generación de imágenes, razonamiento, agentes ni ninguna tarea de producción, dado que los pesos publicados no son coherentes con las capacidades declaradas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Las cifras de la model card ("Reasoning Speed 412 tokens/sec", "Token Efficiency 99.9%", "Epistemic IQ 99.9999%") no corresponden a métricas estándar auditables y no se acompañan de metodología, por lo que no se recogen como resultados de benchmark.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye cifras no verificables (412 tokens/s, «Epistemic IQ 99.9999%», 99,9% de eficiencia de tokens) que no constituyen benchmarks estándar ni incluyen metodología, hardware o dataset de evaluación.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB con los 1792 parámetros publicados; no se puede estimar para el supuesto modelo de 64B porque no existe en el repositorio.
-- GPU recomendadas: cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) es sobradamente suficiente para cargar los pesos publicados; no aplica el requisito de 64B declarado.
-- Cabe en GPU consumer: sí, con los pesos reales; el escenario de 64B exigiría múltiples A100/H100 de 80 GB, pero no hay pesos que lo respalden.
-- Opciones de despliegue: transformers (según la model card); no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible; la cifra de 412 tokens/s de la model card no es verificable.
+- VRAM estimada para inferencia: inferior a 1 MB para los pesos publicados (1792 parámetros en safetensors); las cifras para un supuesto modelo de 64B no son calculables porque no existen dichos pesos.
+- GPU recomendadas: cualquiera, incluidas CPU, para cargar los tensores publicados; no aplica para el modelo de 64B descrito en la model card.
+- ¿Cabe en GPU de consumo? Sí, los pesos publicados caben en cualquier GPU de consumo e incluso en CPU.
+- Opciones de despliegue: transformers con `AutoModelForCausalLM` y `use_safetensors=True`, según el snippet de la model card; no se ha verificado que el snippet funcione con los ficheros publicados.
+- Latencia y throughput: no disponible de forma fiable; la cifra de 412 tokens/s de la model card no es verificable.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables de la misma categoría con información verificable, dado que la naturaleza del artefacto (1792 parámetros, pipeline ambiguo entre text-generation y text-to-image) no encaja en una categoría estándar.
-
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Sega-Image-7.3-Sovereign-Godmode | 1792 (declara 64B) | No disponible | Apache 2.0 | Hugging Face |
-| Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
+No disponible. No se han identificado modelos comparables de la misma familia («Segacopter Technology», `sega-image-7.3`) ni alternativas texto-a-imagen con parámetros y licencia equiparables que puedan contrastarse con datos verificables de este repositorio.
 
 ## Limitaciones y advertencias
 
-- Discrepancia crítica entre parámetros declarados (64B) y reales (1792): cualquier evaluación basada en la model card es inválida.
-- Métricas no auditables ("Epistemic IQ 99.9999%", "Token Efficiency 99.9%") sin definición ni metodología.
-- Ambigüedad de tarea: el `pipeline_tag` es `text-to-image` pero los tags incluyen `text-generation`, y no se publican componentes de difusión.
-- Ausencia de información sobre datos de entrenamiento, sesgos, idiomas y evaluación.
-- Riesgo de alucinación: no evaluable por falta de pesos funcionales y de benchmarks.
-- Licencia Apache 2.0 declarada, pero la falta de documentación impide garantizar el cumplimiento de atribuciones o la idoneidad para uso comercial.
-- Repositorio sin descargas ni likes en el momento de la consulta, lo que reduce la señal de validación por la comunidad.
-- No apto para producción en ninguna de las tareas anunciadas sin una verificación independiente previa.
+- Inconsistencia grave entre la model card (64B parámetros) y los pesos reales (1792 parámetros): el repositorio no parece contener un modelo funcional.
+- Métricas inventadas o no definidas («Epistemic IQ», «Token Efficiency 99,9%», «Sovereign Godmode»): no deben citarse como evidencia de rendimiento.
+- Ausencia total de información sobre datos de entrenamiento, tokenizador, arquitectura verificable y evaluación reproducible.
+- Riesgo de alucinación y de resultados sin sentido si se intenta usar el modelo para generación de texto o imágenes.
+- Licencia Apache 2.0 declarada, lo que en principio permite uso comercial, pero la falta de pesos coherentes hace inviable cualquier uso en producción.
+- No se declaran idiomas soportados ni sesgos conocidos; sin datos de entrenamiento no es posible evaluar sesgos.
+- El nombre y los tags (`godmode`, `nano-banana`, `segacopter`) sugieren un repositorio de broma o experimental; conviene tratarlo con cautela en cualquier cadena de suministro de modelos.
+- No hay garantía de que el snippet de la model card (`AutoModelForCausalLM.from_pretrained`) funcione con los ficheros publicados.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/the123manaic/Sega-Image-7.3-Sovereign-Godmode
-- No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.
+- No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

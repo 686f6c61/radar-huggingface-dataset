@@ -2,110 +2,106 @@
 
 ## Resumen
 
-AesCode-8B-MLX-4bit es una cuantización de 4 bits en formato MLX del modelo multimodal AesCode-8B de Microsoft, orientado a la generación de artefactos visuales (diapositivas, pósteres, paneles de control, informes) como HTML/CSS estructurado, editable y verificable a partir de una imagen de referencia o de una instrucción textual. El modelo parte de Qwen3-VL-8B-Instruct y ha sido entrenado con SFT de arranque en frío seguido de GDPO (un algoritmo de optimización por preferencias) sobre siete canales de recompensa, separando requisitos semánticos de señales visuales mediante supervisión estructurada en grafo y recompensas desacopladas entre modalidades.
+AesCode-8B-MLX-4bit es una cuantizacion de 4 bits en formato MLX del modelo multimodal AesCode-8B de Microsoft, orientada a la generacion de artefactos visuales ricos en informacion (presentaciones, posters, dashboards, informes) como HTML/CSS estructurado, editable y verificable. El modelo parte de Qwen3-VL-8B-Instruct y ha sido entrenado con SFT de arranque en frio seguido de GDPO (un algoritmo de optimizacion por preferencias) sobre siete canales de recompensa, separando requisitos semanticos de senales visuales mediante supervision con estructura de grafo y recompensas cross-modales desacopladas.
 
-La arquitectura es `Qwen3VLForConditionalGeneration` (torre de visión `qwen3_vl` más decodificador `qwen3_vl_text`) con 8.767.123.696 parámetros totales. Esta conversión concreta, publicada por el usuario divinetribe, mantiene intacta la torre de visión para que el modelo pueda leer capturas de pantalla o diseños y devolver el HTML/CSS correspondiente, y aplica una cuantización mixta de 5.256 bits por peso de media (grupo de tamaño 64, capas sensibles en mayor precisión) que reduce el repositorio a 5,8 GB en dos shards.
+La arquitectura es `Qwen3VLForConditionalGeneration`, con una torre de vision `qwen3_vl` que alimenta un decodificador `qwen3_vl_text`, y suma 8.767.123.696 parametros. Esta variante concreta, publicada por el usuario `divinetribe`, mantiene intacta la torre de vision y aplica una cuantizacion mixta de 5,256 bits por peso de media (capas sensibles conservadas a mayor precision), con group size 64 y pesos divididos en dos shards que ocupan 5,8 GB en total.
 
-Su relevancia práctica radica en que permite ejecutar un modelo visión-lenguaje de casi 9.000 millones de parámetros en equipos Apple Silicon con 8 GB de memoria unificada, manteniendo la capacidad de lectura de imágenes que el modelo base necesita para su tarea principal. La licencia Apache-2.0 del checkpoint original se conserva, lo que facilita el uso comercial.
+Su relevancia practica radica en que permite ejecutar en Apple Silicon, incluso en maquinas de 8 GB de memoria unificada, un modelo capaz de leer un diseno o una captura de pantalla y devolver el HTML/CSS correspondiente, ademas de generar alt-text y responder preguntas de control de calidad sobre imagenes. Es la build mas pequena de una familia de tres (bf16, 8-bit y 4-bit) y esta pensada para prototipado local y despliegue en portatiles Mac.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer visión-lenguaje `Qwen3VLForConditionalGeneration` (torre de visión `qwen3_vl` + decodificador `qwen3_vl_text`) |
+| Arquitectura | Qwen3VLForConditionalGeneration (torre de vision `qwen3_vl` + decodificador `qwen3_vl_text`) |
 | Parametros totales | 8.767.123.696 (8,8B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la información proporcionada |
-| Tipos de cuantizacion | 4 bits mixta (5,256 bits por peso de media, grupo de tamaño 64, capas sensibles en mayor precisión); existen variantes bf16 y 8 bits del mismo autor |
-| Idiomas soportados | No disponible en la información proporcionada |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (MLX, dos shards, 5,8 GB en total) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | 4-bit MLX con precision mixta (5,256 bits por peso de media, group size 64); existen builds bf16 y 8-bit en el mismo repositorio de autor |
+| Idiomas soportados | no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (MLX), dos shards, 5,8 GB de repo |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer multimodal denso construido sobre Qwen3-VL-8B-Instruct. La torre de visión `qwen3_vl` procesa las imágenes y alimenta un decodificador de texto `qwen3_vl_text` que genera la salida. El entrenamiento del checkpoint original de Microsoft combina una fase de SFT de arranque en frío con una fase de optimización GDPO que agrega siete canales de recompensa distintos; la supervisión se organiza de forma estructurada en grafo para separar los requisitos semánticos (contenido, restricciones textuales, estructura) de las señales puramente visuales (maquetación, estilo), y las recompensas entre modalidades se desacoplan para evitar que una penalice a la otra durante la optimización.
+El modelo es un transformer multimodal denso de tipo vision-language. La torre de vision procesa imagenes y las proyecta al espacio del decodificador de texto, que genera la salida. Sobre la base Qwen3-VL-8B-Instruct, Microsoft aplico un entrenamiento en dos fases: primero SFT de arranque en frio y despues GDPO con siete canales de recompensa, disenado para separar los requisitos semanticos (contenido, estructura, restricciones) de las senales puramente visuales (layout, estilo). La supervision con estructura de grafo y las recompensas cross-modales desacopladas son la innovacion tecnica central del paper.
 
-La conversión a MLX aplica cuantización de 4 bits con grupo de tamaño 64 y precisión mixta, manteniendo las capas sensibles en mayor resolución y preservando la torre de visión sin cuantizar de forma agresiva. El autor indica que esta variante de 4 bits superó la misma prueba de lectura de pose que las versiones bf16 y 8 bits antes de publicarse, y que el modelo sigue respondiendo correctamente sobre los píxeles reales. No se dispone de datos sobre el número de tokens de entrenamiento ni sobre la composición exacta del dataset en la información proporcionada.
+Esta build concreta no reentrena nada: es una conversion de pesos a MLX con cuantizacion mixta de 4 bits, manteniendo la torre de vision sin cuantizar de forma agresiva para preservar la calidad de lectura de imagenes. El autor indica que la build paso la misma prueba de lectura de pose que las versiones bf16 y 8-bit antes de publicarse.
 
 ## Capacidades
 
-- Generación de código HTML y CSS a partir de una imagen de referencia (captura de pantalla, diseño, póster) o de una instrucción textual.
-- Creación de artefactos visuales ricos en información: diapositivas, pósteres, paneles de control e informes, en formato estructurado y editable.
-- Comprensión de imágenes y respuesta a preguntas visuales (por ejemplo, control de calidad de pose en un fotograma de un juego de movimiento).
-- Generación de texto a partir de imágenes (descripciones, texto alternativo).
-- Generación de texto sin imagen (modo solo texto con `num_images=0`).
-- Conversación multiturno (etiqueta `conversational`).
-- Capacidad de razonamiento guiado por requisitos semánticos y restricciones visuales simultáneas, fruto del entrenamiento con recompensas desacopladas.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Modo de razonamiento explícito (thinking mode): no disponible en la información proporcionada.
-- Capacidades de audio: no disponibles.
+- Generacion de codigo HTML/CSS a partir de imagenes: lee una captura de pantalla o un diseno y devuelve el marcado y los estilos correspondientes.
+- Generacion de artefactos visuales ricos en informacion: slides, posters, dashboards e informes como HTML/CSS editable y verificable.
+- Comprension de imagenes y respuesta a preguntas visuales (image-text-to-text), incluyendo control de calidad sobre figuras y poses.
+- Generacion de alt-text a partir de imagenes.
+- Generacion de texto en modo solo texto (sin imagen, usando `num_images=0`).
+- Razonamiento multimodal combinado: interpreta contenido visual y lo traduce a estructura semantica.
+- No consta soporte explicito de tool calling ni de function calling en la informacion disponible.
+- No consta soporte explicito de agentes multi-paso en la informacion disponible.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Reconstrucción de interfaces a partir de capturas: se introduce una imagen de una pantalla o maqueta y el modelo devuelve un único archivo HTML con el CSS embebido, útil para prototipado rápido de front-end en equipos Apple Silicon.
-- Generación de pósteres e infografías: a partir de una descripción textual, el modelo produce HTML/CSS con estructura verificable, lo que permite iterar sobre el resultado editando el código en lugar de regenerar la imagen completa.
-- Creación de paneles de control y informes: el modelo genera maquetaciones con secciones, gráficos y jerarquía visual que pueden integrarse en un pipeline de generación de documentos internos.
-- Texto alternativo automatizado: dado un conjunto de imágenes, el modelo produce descripciones textuales para accesibilidad, aprovechando la torre de visión intacta incluso en la variante de 4 bits.
-- Control de calidad visual en aplicaciones de visión por computador: verificación de que una figura superpuesta corresponde a una pose humana correcta (sin miembros extra, rodillas cruzadas ni articulaciones invertidas), como demuestra el ejemplo de la model card.
-- Desarrollo local sin conexión en portátiles Mac: al ocupar 5,8 GB y requerir unos 8 GB de memoria unificada, permite trabajar con un modelo visión-lenguaje en un equipo de gama consumer sin depender de servicios en la nube.
-- Asistencia en diseño iterativo: el modelo lee una captura del estado actual de una interfaz y propone el HTML/CSS actualizado, lo que encaja en flujos de trabajo de edición rápida sobre maquetas.
+- Reconstruccion de interfaces a partir de capturas: dado un screenshot de una web o app, el modelo devuelve un unico fichero HTML con el CSS embebido, util para prototipado rapido y migracion de disenos a codigo en equipos de front-end que trabajan en Mac.
+- Generacion automatica de dashboards e informes: a partir de una imagen de referencia o una descripcion, produce HTML/CSS con tablas, graficos y bloques de contenido estructurado, adecuado para herramientas internas de reporting.
+- Creacion de posters y slides: el modelo genera artefactos visuales editables en HTML/CSS, lo que permite integrarlos en pipelines de publicacion sin depender de formatos binarios opacos.
+- Accesibilidad web: genera alt-text descriptivo para imagenes, aprovechando su capacidad de lectura de contenido visual, para incorporarlo a procesos de auditoria de accesibilidad.
+- Control de calidad visual en aplicaciones de vision por computador: el ejemplo documentado de verificacion de poses (deteccion de extremidades extra, rodillas cruzadas o articulaciones invertidas) muestra su utilidad como verificador en pipelines de motion capture o juegos con camara.
+- Prototipado local en Apple Silicon: al caber en maquinas de 8 GB de memoria unificada, sirve para iterar disenos y generar codigo sin enviar imagenes a servicios en la nube, lo que resulta relevante por privacidad.
+- Educacion y demostraciones: permite mostrar en un portatil Mac la conversion de una imagen a codigo funcional, util para talleres y formacion en desarrollo front-end.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles provienen de la evaluación propia del artículo de AesCode (arXiv:2610.18860): 300 prompts de infografía puntuados en una pista programática `Rule` (Text, Bound, Chart) y una lista de verificación `Visual` (Content, Layout, Style), con `Overall` como media de ambas y promediado sobre tres generaciones sin selección.
+Los datos publicados corresponden al modelo base AesCode-8B (no a esta cuantizacion de 4 bits), evaluados sobre 300 prompts de infografia con un track programatico `Rule` (Text, Bound, Chart) y una checklist `Visual` (Content, Layout, Style), con `Overall` como media de ambos, promediado sobre tres generaciones sin seleccion.
 
 | Modelo | Overall | Rule | Notas |
 |---|---|---|---|
-| AesCode-8B (bf16, referencia del artículo) | 82,94 | 90,07 | Mejora Visual en 31,1 puntos sobre Qwen3-VL-8B-Instruct con referencia |
-| GPT-5.5 (con referencia) | 81,28 | No disponible | Fila de la misma tabla del artículo |
-| Claude Opus 4.8 (con referencia) | 80,39 | No disponible | Fila de la misma tabla del artículo |
-| AesCode-8B-MLX-4bit | No disponible | No disponible | El autor advierte que la cuantización de 4 bits intercambia precisión por tamaño y que las puntuaciones exactas variarán |
+| AesCode-8B | 82,94 | 90,07 | Mejora Visual +31,1 puntos sobre Qwen3-VL-8B con referencia |
+| GPT-5.5 (con referencia) | 81,28 | no disponible | Fila de la misma tabla del paper |
+| Claude Opus 4.8 (con referencia) | 80,39 | no disponible | Fila de la misma tabla del paper |
 
-No se han publicado resultados de benchmarks específicos para esta conversión de 4 bits en la información disponible. Los números de la tabla corresponden al checkpoint original y están citados del artículo y de la model card.
+El autor advierte que la cuantizacion a 4 bits intercambia precision por tamano, por lo que las puntuaciones exactas de esta build pueden diferir de las del modelo completo. No se han publicado resultados de benchmarks especificos para la version MLX-4bit en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada estimada: unos 8 GB para la variante de 4 bits, según indica el autor; el repositorio ocupa 5,8 GB en disco.
-- GPU recomendadas: no se especifican en la información proporcionada; el formato MLX está pensado para Apple Silicon (series M1, M2, M3, M4).
-- Compatibilidad con GPU consumer: el autor indica que esta es la compilación más pequeña, pensada para máquinas de 8 GB; encaja en Mac con memoria unificada de 8 GB o superior. Para GPU NVIDIA no se ofrece una variante MLX equivalente.
-- Opciones de despliegue: `mlx-vlm` (librería indicada en la model card), con API `load`, `apply_chat_template` y `generate`. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este formato.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM/memoria unificada estimada: aproximadamente 5,8 GB para los pesos en 4 bits; con overhead de ejecucion, el autor la situa como build para maquinas de 8 GB de memoria unificada.
+- Plataforma: exclusivamente Apple Silicon mediante MLX y la libreria `mlx-vlm`; no es ejecutable en GPU NVIDIA ni en CPU convencional con este formato.
+- GPU recomendadas: no aplica en el sentido tradicional; requiere chips Apple (M1, M2, M3, M4 y variantes Pro/Max/Ultra). Cuanta mas memoria unificada, mayor margen para contexto e imagenes de alta resolucion.
+- Cabe en consumer: si, en Mac con 8 GB o mas de memoria unificada.
+- Opciones de despliegue: `mlx-vlm` (libreria oficial del repo); no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no soportan este formato MLX.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-8B-MLX-4bit (esta ficha) | 8,8B | No disponible | Visión + generación de HTML/CSS, cuantizado a 4 bits MLX | Apache-2.0 | Hugging Face, formato MLX |
-| AesCode-8B-MLX-bf16 (mismo autor) | 8,8B | No disponible | Misma tarea, precisión completa | Apache-2.0 | Hugging Face, formato MLX |
-| AesCode-8B-MLX-8bit (mismo autor) | 8,8B | No disponible | Misma tarea, cuantización intermedia | Apache-2.0 | Hugging Face, formato MLX |
-| microsoft/AesCode-8B (original) | 8,8B | No disponible | Misma tarea, pesos sin cuantizar | Apache-2.0 | Hugging Face |
-| Qwen/Qwen3-VL-8B-Instruct (base) | 8B | No disponible | Visión-lenguaje general | No disponible | Hugging Face |
+| AesCode-8B-MLX-4bit | 8,8B | no disponible | Vision + generacion de HTML/CSS, 4-bit MLX | apache-2.0 | Hugging Face (divinetribe) |
+| AesCode-8B (bf16) | 8,8B | no disponible | Vision + generacion de HTML/CSS, calidad completa | apache-2.0 | Hugging Face (microsoft) |
+| AesCode-8B-MLX-8bit | 8,8B | no disponible | Vision + generacion de HTML/CSS, 8-bit MLX | apache-2.0 | Hugging Face (divinetribe) |
+| Qwen3-VL-8B-Instruct | 8B | no disponible | Vision-language generalista (base del modelo) | no disponible en la informacion | Hugging Face (Qwen) |
 
-La comparación con alternativas de otros fabricantes para la misma tarea (generación de HTML/CSS a partir de imágenes) no está disponible en la información proporcionada más allá de las filas de GPT-5.5 y Claude Opus 4.8 citadas en el artículo, que son modelos propietarios sin pesos publicados.
+Las tres builds de AesCode comparten arquitectura y entrenamiento; se diferencian unicamente en la cuantizacion y, por tanto, en el equilibrio entre calidad y huella de memoria. Frente a Qwen3-VL-8B-Instruct, AesCode anade el entrenamiento especifico con GDPO que, segun el paper, mejora la calidad visual de los artefactos generados en 31,1 puntos.
 
 ## Limitaciones y advertencias
 
-- Alucinación: como todo modelo generativo, puede producir HTML/CSS que no corresponde fielmente a la imagen de entrada; el propio artículo introduce una pista de evaluación programática precisamente para detectar estos fallos.
-- Pérdida de precisión por cuantización: el autor reconoce que la variante de 4 bits intercambia exactitud por tamaño; las puntuaciones del artículo corresponden al checkpoint bf16 y no deben extrapolarse sin verificación a esta conversión.
-- Sesgos: no se documentan sesgos específicos en la información proporcionada; al heredar el entrenamiento de Qwen3-VL-8B-Instruct, arrastra los sesgos del corpus original, que no se detalla.
-- Idiomas: no se especifica la cobertura lingüística; la model card está en inglés y los ejemplos de uso también, por lo que el soporte de otros idiomas, incluido el castellano, no está confirmado.
-- Contexto: la longitud máxima de contexto no se indica, lo que impide planificar conversaciones o documentos de gran extensión con garantías.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero conviene revisar las condiciones del checkpoint base Qwen3-VL-8B-Instruct, cuya licencia no se detalla en la información disponible.
-- Dependencia de plataforma: el formato MLX solo se ejecuta de forma nativa en Apple Silicon; para otros entornos habría que recurrir a los pesos originales de Microsoft o a conversiones distintas.
-- Advertencia sobre la model card: incluye estadísticas de descargas y estrellas de GitHub presentadas como "live-stats" que no forman parte de la evaluación técnica del modelo y deben tratarse con cautela.
-- Uso en producción: al no haber benchmarks de la variante de 4 bits ni datos de latencia, se recomienda validar la calidad en el dominio concreto antes de desplegarla.
+- La cuantizacion a 4 bits degrada la precision respecto a las builds bf16 y 8-bit; el autor lo reconoce explicitamente y recomienda la bf16 para maxima calidad.
+- El modelo tiende a colocar los brazos en posicion baja en lugar de en guardia alta al interpretar poses, segun el ejemplo documentado; es un rasgo del modelo base, no de la cuantizacion.
+- Riesgo de alucinacion en la interpretacion de imagenes y en la generacion de codigo HTML/CSS: el marcado generado puede no ser funcional o contener elementos inventados, por lo que requiere revision humana antes de produccion.
+- Plataforma restringida a Apple Silicon con MLX; no es portable a otros entornos de inferencia sin reconvertir los pesos.
+- Idiomas soportados no documentados; no se puede garantizar un rendimiento multilingue homogeneo.
+- Longitud de contexto no documentada; conviene validar el comportamiento con entradas largas antes de usarla en produccion.
+- Licencia Apache-2.0: permite uso comercial, pero se debe conservar el aviso de licencia y atribuir correctamente a Microsoft y al autor de la conversion.
+- El repositorio tiene un volumen de descargas bajo (364) y cero likes, lo que sugiere poca validacion por parte de la comunidad; conviene verificar la calidad de la conversion de forma independiente.
+- La model card incluye estadisticas de GitHub y descargas que no son verificables desde la ficha; tratarlas con cautela.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/divinetribe/AesCode-8B-MLX-4bit
-- Variante bf16: https://huggingface.co/divinetribe/AesCode-8B-MLX-bf16
-- Variante 8 bits: https://huggingface.co/divinetribe/AesCode-8B-MLX-8bit
-- Checkpoint original de Microsoft: https://huggingface.co/microsoft/AesCode-8B
-- Modelo base Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
-- Artículo (arXiv:2610.18860): https://arxiv.org/abs/2610.18860
-- Página del proyecto: https://microsoft.github.io/AesCode/
-- Código de Microsoft: https://github.com/microsoft/AesCode
-- Repositorio del autor de la conversión: https://github.com/nicedreamzapp/claude-code-local
-- Perfil del autor en GitHub: https://github.com/nicedreamzapp
-- Librería mlx-vlm: https://github.com/Blaizzy/mlx-vlm
+- Repositorio Hugging Face: https://huggingface.co/divinetribe/AesCode-8B-MLX-4bit
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/AesCode-8B
+- Build bf16: https://huggingface.co/divinetribe/AesCode-8B-MLX-bf16
+- Build 8-bit: https://huggingface.co/divinetribe/AesCode-8B-MLX-8bit
+- Modelo Qwen3-VL-8B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
+- Paper: https://arxiv.org/abs/2610.18860
+- Pagina del proyecto: https://microsoft.github.io/AesCode/
+- Codigo de Microsoft: https://github.com/microsoft/AesCode
+- Libreria mlx-vlm: https://github.com/Blaizzy/mlx-vlm
+- Repositorio del autor de la conversion: https://github.com/nicedreamzapp/claude-code-local

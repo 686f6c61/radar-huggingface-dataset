@@ -2,49 +2,49 @@
 
 ## Resumen
 
-Llama-3.3-70B-Instruct-apostate-GGUF es una cuantización estática en formato GGUF del modelo Llama-3.3-70B-Instruct-apostate, un ajuste fino (fine-tune) del conocido Llama 3.3 70B Instruct de Meta. El autor de la cuantización es mradermacher, un prolífico generador de versiones GGUF de modelos open source, mientras que el modelo base ajustado proviene del usuario c4tdr0ut. El repositorio pone a disposición del público los pesos en múltiples niveles de cuantización para facilitar su despliegue en hardware con recursos limitados mediante herramientas como llama.cpp u Ollama.
+`mradermacher/Llama-3.3-70B-Instruct-apostate-GGUF` es una cuantización estática en formato GGUF del modelo `c4tdr0ut/Llama-3.3-70B-Instruct-apostate`, un fine-tune no oficial de Llama 3.3 70B Instruct. El autor de la cuantización es mradermacher, un conocido publicador de cuantizaciones GGUF para la comunidad de inferencia local (llama.cpp, Ollama, LM Studio, etc.). El modelo base subyacente es la arquitectura Llama 3.3 de Meta con 70.553.706.560 parámetros (aproximadamente 70,6 mil millones).
 
-El modelo subyacente es un transformer denso de aproximadamente 70.500 millones de parámetros, orientado a tareas conversacionales y de instrucciones. Al tratarse de una cuantización estática de un fine-tune, conserva la arquitectura y el contexto del Llama 3.3 original, aunque la información pública disponible sobre el proceso de ajuste específico (datos, metodología, objetivos) es muy escasa. La relevancia de este repositorio radica en que permite ejecutar un modelo de 70B en configuraciones de hardware más modestas que las requeridas por los pesos originales en fp16.
+El interés de este repositorio es doble. Por un lado, permite ejecutar un modelo de 70B en hardware de consumo mediante cuantizaciones que van desde Q2_K (26,5 GB) hasta Q8_0 (75,1 GB). Por otro, el sufijo "apostate" indica que se trata de un fine-tune con un propósito específico definido por el autor original (`c4tdr0ut`), del cual la model card no ofrece detalles: no se documenta el dataset de ajuste, el objetivo del entrenamiento ni los cambios respecto a Llama 3.3 Instruct canónico.
 
-La ficha se basa únicamente en los metadatos del repositorio de Hugging Face y en la model card del autor. No se dispone de información publicada sobre benchmarks, licencia explícita, idiomas soportados ni detalles del entrenamiento del fine-tune, por lo que esos apartados se indican como no disponibles.
+La relevancia práctica es la habitual de las cuantizaciones GGUF de modelos grandes: reducir la barrera de VRAM para desplegar un 70B con calidad cercana al original en GPUs de 24-48 GB (o incluso en configuraciones con offloading a RAM/CPU). No obstante, al carecer de documentación sobre el fine-tune y sobre la licencia, su uso en producción requiere verificación previa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (basado en Llama 3.3 70B Instruct) |
-| Parametros totales | 70.553.706.560 (≈70,5B) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el Llama 3.3 original soporta 128K tokens) |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | GGUF (cuantizacion estatica, quantize_version 2) |
+| Arquitectura | Transformer decoder-only (familia Llama 3.3, segun modelo base) |
+| Parametros totales | 70.553.706.560 (aprox. 70,6B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Llama 3.3 Instruct soporta 128K, pero no se confirma en esta ficha) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); variantes imatrix en el repo `-i1-GGUF` |
+| Idiomas soportados | en (segun la model card) |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (multiples ficheros por cuantizacion) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantización estática en formato GGUF de un fine-tune denominado Llama-3.3-70B-Instruct-apostate, que a su vez parte de Llama 3.3 70B Instruct de Meta. La arquitectura subyacente es un transformer denso de decodificación autorregresiva con aproximadamente 70.500 millones de parámetros, la misma familia que el Llama 3.3 original. La model card del repositorio de cuantización no aporta detalles sobre la composición del dataset de ajuste, el número de tokens utilizados, ni si se emplearon técnicas de RLHF, DPO o SFT en el fine-tune.
+La arquitectura corresponde a la del modelo base Llama 3.3 70B Instruct de Meta: un transformer decoder-only denso con atención por grupos (GQA) y RoPE, afinado con instrucciones. Sobre esa base, el autor `c4tdr0ut` publicó un fine-tune denominado "apostate", del que no se documenta ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se empleó RLHF, DPO o SFT. Tampoco se especifica qué comportamiento o dominio persigue el ajuste.
 
-La información técnica disponible se limita al proceso de cuantización: se generaron cuantizaciones estáticas con `quantize_version: 2` y `output_tensor_quantised: 1`, a partir de los pesos en formato Hugging Face (`convert_type: hf`). Los niveles de cuantización cubren desde Q2_K hasta Q8_0 y x-f16, además de la variante IQ4_XS (cuantización de importancia). No se documentan innovaciones arquitectónicas adicionales ni modificaciones respecto al modelo base.
+La contribución de este repositorio es exclusivamente la cuantización. Según los metadatos internos de la model card, se aplicó `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión desde pesos Hugging Face a GGUF seguida de cuantización estática (no imatrix). El autor indica que las cuantizaciones ponderadas con imatrix están disponibles en un repositorio separado (`mradermacher/Llama-3.3-70B-Instruct-apostate-i1-GGUF`), que suele ofrecer mejor calidad por bit que las estáticas equivalentes.
 
 ## Capacidades
 
-- Generación de texto conversacional e instruccional, heredada del Llama 3.3 70B Instruct original.
-- Razonamiento general y respuesta a instrucciones en formato multi-turno.
-- Capacidad de código y matemáticas (esperable por herencia del modelo base, aunque no verificada en este fine-tune).
-- Soporte de tool calling / function calling: no confirmado en la información disponible para este fine-tune.
-- Capacidades de agente y razonamiento multi-paso: no confirmadas en la información disponible.
-- Capacidades multilingües: no disponibles.
+- Generación de texto conversacional en inglés, heredada de Llama 3.3 Instruct.
+- Razonamiento de propósito general y respuesta a instrucciones, sujeto a las modificaciones introducidas por el fine-tune "apostate" (no documentadas).
+- Generación de código y matemáticas: capacidades típicas del modelo base, no verificadas específicamente en este fine-tune.
+- Soporte de tool calling / function calling: no documentado en esta ficha; el modelo base Llama 3.3 Instruct lo soporta, pero no se confirma que el fine-tune lo preserve.
+- Capacidades de agente y razonamiento multi-paso: no documentadas.
+- Capacidades multilingües: la model card declara únicamente `en`; no se garantiza un rendimiento sólido en castellano u otros idiomas.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Despliegue en servidores con GPU de gama alta para asistentes conversacionales: el modelo puede gestionar conversaciones multi-turno con la ventana de contexto del Llama 3.3 original (hasta 128K tokens según la documentación de Meta), lo que permite mantener historiales largos en aplicaciones de atención al cliente.
-- Inferencia en estaciones de trabajo con cuantizaciones Q4_K_M o Q5_K_M: permite ejecutar un modelo de 70B en hardware con menos VRAM que un fp16, adecuado para prototipos y entornos de desarrollo.
-- Generación de código asistida en local: al derivar del Llama 3.3 Instruct, puede integrarse en editores o pipelines de CI/CD mediante llama.cpp u Ollama para sugerencias de código, aunque la calidad específica de este fine-tune no está verificada.
-- Investigación sobre fine-tunes y cuantización: útil para estudiar el efecto de ajustes específicos y de distintos niveles de cuantización sobre el comportamiento de un modelo de 70B.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece múltiples niveles (Q2_K a Q8_0) para medir el compromiso entre calidad y tamaño en un mismo fine-tune.
-- Procesamiento de documentos largos en local: gracias al contexto extendido del modelo base, puede resumir o extraer información de documentos extensos en entornos con recursos limitados usando cuantizaciones agresivas.
+- Inferencia local de un 70B en estaciones de trabajo: con la cuantización Q4_K_M (42,6 GB) es posible ejecutar el modelo en una GPU de 48 GB (A6000, L40S) o en configuraciones multi-GPU, manteniendo una calidad próxima al modelo en fp16.
+- Despliegue en GPUs de consumo con offloading: las variantes Q2_K (26,5 GB) y Q3_K_S (31,0 GB) permiten ejecutar el modelo en una RTX 4090 (24 GB) combinando VRAM y RAM del sistema, a costa de menor velocidad y calidad.
+- Experimentación con fine-tunes de la comunidad: útil para investigadores que quieran evaluar el efecto del ajuste "apostate" frente a Llama 3.3 Instruct canónico sin necesidad de descargar los pesos completos en fp16 (481,3 GB de repo frente a 26-75 GB por cuantización).
+- Servicio de chat en inglés con llama.cpp u Ollama: el formato GGUF es directamente compatible con estos runtimes, lo que simplifica el despliegue en entornos sin stack de PyTorch.
+- Prototipado de pipelines de generación de texto en inglés: para tareas de resumen, redacción o extracción de información donde se requiera un modelo grande y el idioma de trabajo sea el inglés.
+- Evaluación comparativa de cuantizaciones: el repositorio ofrece 11 variantes de cuantización, lo que permite medir el impacto de la compresión en perplejidad y calidad de salida sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
@@ -52,41 +52,51 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, según tamaño de cuantización de un modelo de 70B):
-  - Q2_K: ~26-28 GB
-  - Q3_K_M: ~32-35 GB
-  - Q4_K_M: ~40-42 GB
-  - Q5_K_M: ~48-50 GB
-  - Q6_K: ~56-58 GB
-  - Q8_0: ~72-75 GB
-  - x-f16: ~140 GB
-- GPU recomendadas: A100 80GB, H100 80GB, o configuraciones multi-GPU (2x RTX 4090 de 24 GB, 2x A6000 de 48 GB) para cuantizaciones medias y altas.
-- ¿Cabe en consumer GPU? Las cuantizaciones Q2_K y Q3_K_M pueden caber en una RTX 4090 de 24 GB solo parcialmente (con offload a RAM/CPU); Q4_K_M en adelante requieren múltiples GPUs o offload.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia (tamaño del fichero GGUF; se requiere margen adicional para el contexto KV cache):
+  - Q2_K: 26,5 GB
+  - Q3_K_S: 31,0 GB
+  - Q3_K_M: 34,4 GB
+  - Q3_K_L: 37,2 GB
+  - IQ4_XS: 38,4 GB
+  - Q4_K_S: 40,4 GB
+  - Q4_K_M: 42,6 GB
+  - Q5_K_S: 48,8 GB
+  - Q5_K_M: 50,0 GB
+  - Q6_K: 58,0 GB
+  - Q8_0: 75,1 GB
+- GPU recomendadas: A100 80 GB, H100 80 GB, L40S 48 GB o A6000 48 GB para cuantizaciones Q4-Q5; configuraciones multi-GPU para Q6_K y Q8_0.
+- GPU de consumo: una RTX 4090 (24 GB) no puede alojar ninguna variante completa en VRAM; es necesario offloading parcial a RAM del sistema (mínimo 32-64 GB de RAM para Q2_K/Q3_K).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no son la vía natural para este formato (aunque vLLM soporta GGUF de forma experimental).
+- Latencia y throughput: no disponibles en la información proporcionada; dependerán del hardware y del grado de offloading.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Llama-3.3-70B-Instruct-apostate-GGUF (este) | ~70,5B | No disponible | No disponible | GGUF | Cuantización estática de un fine-tune |
-| Llama 3.3 70B Instruct (Meta) | ~70,5B | 128K tokens | Llama 3.3 Community License | Safetensors, GGUF (otras cuantizaciones) | Modelo base original |
-| Otras cuantizaciones GGUF de Llama 3.3 70B | ~70,5B | 128K tokens | Según modelo base | GGUF | Alternativas sin fine-tune específico |
-
-No se dispone de datos de rendimiento comparativos para este fine-tune concreto.
+| mradermacher/Llama-3.3-70B-Instruct-apostate-GGUF | 70,6B | no disponible | GGUF | no disponible | Fine-tune "apostate" sin documentar |
+| Llama-3.3-70B-Instruct (Meta) | 70,6B | 128K (segun modelo base) | safetensors, GGUF (comunidad) | Llama 3.3 Community License | Modelo oficial, ampliamente documentado |
+| mradermacher/Llama-3.3-70B-Instruct-i1-GGUF | 70,6B | igual al base | GGUF (imatrix) | segun modelo base | Cuantizaciones imatrix del Llama 3.3 oficial, mejor calidad por bit |
+| Qwen2.5-72B-Instruct (GGUF) | 72,7B | 128K | safetensors, GGUF | Apache 2.0 (segun version) | Alternativa de tamaño similar con licencia mas permisiva |
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada en el repositorio: es imprescindible verificar la licencia del modelo base (Llama 3.3 Community License) y del fine-tune antes de cualquier uso comercial.
-- Riesgo de alucinación inherente a los modelos de lenguaje de gran tamaño, no mitigado de forma documentada en este fine-tune.
-- Sesgos potenciales heredados del corpus de entrenamiento del Llama 3.3 original; no se documentan evaluaciones de sesgo para este ajuste.
-- Idiomas soportados no confirmados; el comportamiento multilingüe puede diferir del modelo base.
-- Las cuantizaciones agresivas (Q2_K, Q3_K) pueden degradar notablemente la calidad de las respuestas frente a Q5_K_M o Q8_0.
-- El fine-tune "apostate" no cuenta con documentación pública sobre su metodología, datos o evaluación, lo que limita la confianza en su comportamiento en producción.
-- No hay información sobre tool calling, agentes ni modo thinking verificada para este fine-tune.
+- La model card no documenta el propósito ni el dataset del fine-tune "apostate"; no es posible saber qué comportamientos se han modificado respecto a Llama 3.3 Instruct ni si se han introducido sesgos o alineaciones adicionales.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Al derivar de Llama 3.3, es probable que herede la Llama 3.3 Community License, pero debe verificarse en el repositorio del modelo base.
+- Idioma: la model card declara únicamente inglés; el rendimiento en castellano no está garantizado.
+- Riesgo de alucinación: inherente a los modelos de 70B, no evaluado en este fine-tune.
+- Las cuantizaciones Q2_K y Q3_K_S degradan notablemente la calidad; el autor marca Q3_K_M como "lower quality" y recomienda Q4_K_S/Q4_K_M como equilibrio velocidad/calidad.
+- El repositorio ocupa 481,3 GB en total; descargar todas las variantes no es práctico. Conviene descargar solo la cuantización necesaria.
+- Algunas cuantizaciones pueden estar divididas en varios ficheros; es necesario concatenarlas o usar herramientas compatibles (llama.cpp lo gestiona automáticamente).
+- No se han publicado benchmarks ni evaluaciones de seguridad específicas para este fine-tune.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.3-70B-Instruct-apostate-GGUF
 - Modelo base del fine-tune: https://huggingface.co/c4tdr0ut/Llama-3.3-70B-Instruct-apostate
-- Llama 3.3 70B Instruct (Meta): https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Llama-3.3-70B-Instruct-apostate-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Llama-3.3-70B-Instruct-apostate-GGUF
+- Guía de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- nethype GmbH: https://www.nethype.de/

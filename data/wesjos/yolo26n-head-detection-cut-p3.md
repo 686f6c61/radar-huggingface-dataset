@@ -2,101 +2,97 @@
 
 ## Resumen
 
-YOLO26n-head-detection-cut-P3 es un modelo de deteccion de objetos de una sola clase (`head`) derivado de Ultralytics YOLO26n, la variante nano de la familia YOLO26. El autor, wesjos, ha eliminado la rama de deteccion P3 (la de mayor resolucion, especializada en objetos pequenos) y ha conservado unicamente las ramas P4 y P5, orientadas a objetos medianos y grandes. El resultado es un detector con entrada fija de 320x320 que emite una caja delimitadora y una confianza por cada cabeza detectada.
+YOLO26n-head-detection-cut-P3 es un modelo de detección de objetos de clase única orientado a la detección de caras, publicado por el usuario wesjos en Hugging Face bajo la librería Ultralytics. Se construye a partir de la arquitectura YOLO26n, la variante más pequeña de la familia YOLO26, modificada mediante la eliminación completa de la rama de detección P3 (la de mayor resolución espacial, sensible a objetos pequeños). El resultado es un detector que conserva únicamente las cabezas P4 y P5, lo que reduce el coste computacional en aproximadamente un 17,5 % respecto al modelo base.
 
-El modelo resuelve un problema muy concreto: la deteccion de cabezas y rostros en escenarios de primer plano donde la cara ocupa al menos el 2% del encuadre. Esta pensado para videoconferencia, control de acceso de corto alcance, retransmision en directo y camaras frontales de telefono, y explicitamente no para vigilancia de largo alcance ni multitudes densas vistas desde el aire. Al recortar la rama P3, reduce el coste computacional en aproximadamente un 17,5% respecto al YOLO26n completo (de 1,450 a 1,196 GFLOPs a 320), manteniendo el numero de parametros practicamente identico.
+El modelo está entrenado con entrada fija de 320×320 píxeles y produce una única caja delimitadora con su confianza por cada cara detectada. La etiqueta de clase almacenada en los pesos es `head`, heredada del conjunto de datos de entrenamiento, aunque las cajas cubren la región facial. Está pensado para escenarios donde las caras ocupan al menos un 2 % del fotograma, como videoconferencias, control de acceso de corto alcance o cámaras frontales de teléfono, y no para vigilancia de largo alcance ni multitudes densas vistas desde el aire.
 
-La relevancia actual del modelo es doble: por un lado, demuestra una estrategia de poda estructural (eliminar una rama entera del cuello y la cabeza, no solo la capa de deteccion) que mejora la eficiencia sin sacrificar el rendimiento en objetos medianos y grandes; por otro, publica una evaluacion estadisticamente rigurosa con intervalos de confianza por bootstrap pareado y desglose de recall por tamano de objeto, algo poco habitual en modelos de este tipo.
+Su relevancia actual radica en el compromiso explícito entre coste y precisión: al eliminar la rama P3 se obtiene un modelo más ligero y rápido, adecuado para inferencia en tiempo real sobre hardware modesto, a costa de renunciar a la detección de caras pequeñas. El repositorio incluye pesos en formato PyTorch y ONNX, así como una tarjeta de modelo inusualmente detallada con métricas por tamaño de objeto y pruebas estadísticas de significancia.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | CNN tipo YOLO (Ultralytics YOLO26n) con dos cabezas de deteccion (P4 y P5), rama P3 eliminada |
-| Parametros totales | 2.535,7 K (pesos completos); cifra tras fusion de BatchNorm no disponible en el extracto |
+| Arquitectura | YOLO26n (Ultralytics), detector de una etapa con ramas P4 y P5 (rama P3 eliminada) |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de vision, entrada fija de 320x320) |
-| Tipos de cuantizacion | no disponible (se distribuye en PyTorch y ONNX; no se detallan variantes cuantizadas) |
-| Idiomas soportados | no disponible (modelo de vision, sin procesamiento de lenguaje) |
+| Longitud de contexto | no aplica (modelo de visión; entrada fija de 320×320 píxeles) |
+| Tipos de cuantizacion | no disponible (se distribuyen pesos PyTorch y ONNX; no se documentan cuantizaciones específicas) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | AGPL-3.0 |
-| Formato de pesos | PyTorch (`.pt`, `head320_yolo26n_full2h_best.pt`) y ONNX (opset no especificado) |
+| Formato de pesos | PyTorch (.pt) y ONNX (.onnx) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Ultralytics YOLO26n, un detector de una etapa con backbone convolucional y cuello de agregacion multi-escala que produce tres niveles de caracteristicas: P3 (resolucion 1/8, sensible a objetos pequenos), P4 (1/16, objetos medianos) y P5 (1/32, objetos grandes). La modificacion del autor elimina por completo la ruta que conduce a P3 —incluyendo el upsample, la concatenacion y las convoluciones asociadas—, no solo la cabeza de deteccion. Esta distincion es importante: borrar unicamente la cabeza ahorra en torno al 2,5% de computo (de 1,450 a 1,414 GFLOPs a 320), mientras que eliminar la rama entera ahorra el 17,5% (hasta 1,196 GFLOPs). Tras la fusion de BatchNorm, las cifras comparativas son del 1,2% y del 17,5% respectivamente.
+El modelo parte de YOLO26n, un detector de objetos de una etapa basado en red neuronal convolucional con backbone y cuello de agregación de características multiescala, del que se han conservado las cabezas de detección P4 (resolución 1/16, objetos medianos) y P5 (resolución 1/32, objetos grandes). La eliminación de la rama P3 no se limita a suprimir la cabeza de detección: se elimina toda la ruta asociada (operaciones de upsampling, concatenación y convoluciones), lo que reduce el coste de 1,450 a 1,196 GFLOPs a 320×320, es decir, un 17,5 % menos de cómputo. Tras la fusión de capas de normalización por lotes, la reducción se mantiene en el mismo 17,5 %.
 
-El entrenamiento se realizo sobre el conjunto completo de anotaciones, sin descartar ninguna caja delimitadora, lo que segun el autor preserva toda la informacion disponible para las escalas P4 y P5. El modelo se entreno en modo `end2end=False` (esquema one2many), lo que implica que la salida cruda de ONNX contiene cajas candidatas sin supresion y requiere un paso externo de NMS; sin el, una sola cara produce multiples cajas solapadas. La resolucion de entrenamiento es 320x320 y el autor advierte que cambiarla a 640 degrada gravemente la precision (la mAP50-95 cae de 0,930 a 0,686). No se detallan en la informacion disponible el numero de tokens ni la composicion exacta del dataset, ni si hubo fases de ajuste fino con RLHF o DPO (no aplicable en un detector de objetos).
+El entrenamiento se realizó sobre el conjunto completo de anotaciones, sin descartar ninguna caja delimitadora, y con resolución fija de 320×320. La tarjeta del modelo no detalla el número de imágenes, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF (no aplicable aquí) o aumentos de datos específicos. El modelo es de clase única (`head`) y no incorpora mecanismos de decodificación especulativa ni atención lineal, al ser una arquitectura convolucional de detección.
 
 ## Capacidades
 
-- Deteccion de cabezas y rostros de una sola clase (`head`), devolviendo por cada instancia una caja en formato xyxy y una puntuacion de confianza.
-- Entrada de resolucion fija 320x320, optimizada para escenas donde la cara ocupa el 2% o mas del encuadre.
-- Deteccion robusta de objetivos medianos (2-10% del area de la imagen) y grandes (>10%), con recall desglosado por tamano de objeto en la evaluacion del autor.
-- Inferencia en tiempo real gracias al bajo coste computacional (1,196 GFLOPs a 320) y a la eliminacion de la rama de mayor resolucion.
-- Exportacion a ONNX para despliegue sin PyTorch, con soporte de ejecucion mediante onnxruntime.
-- Integracion con el ecosistema Ultralytics (API `YOLO`, `predict`, pipeline de preprocesado y postprocesado incluidos).
-- Procesamiento por lotes (b1, b8, b32, b64) para reducir la latencia media por imagen en entornos de servidor.
-- No soporta tool calling, agentes, razonamiento multi-paso, capacidades multilingues, vision general, audio ni modo de pensamiento; es exclusivamente un detector visual de una clase.
+- Detección de caras en imágenes y fotogramas de vídeo, con salida de una caja delimitadora y una puntuación de confianza por cara.
+- Clase única: solo detecta la categoría `head` (región facial); no distingue entre personas ni otras clases de objetos.
+- Entrada de resolución fija de 320×320 píxeles; cambiar la resolución a 640 degrada gravemente la precisión (mAP50-95 cae de 0,930 a 0,686).
+- Inferencia en tiempo real sobre CPU y GPU, con pesos en PyTorch y ONNX.
+- Orientado a objetivos de tamaño mediano y grande: caras que ocupan un 2 % o más del fotograma.
+- No soporta tool calling, function calling, razonamiento multi-paso ni capacidades de agente (no es un modelo de lenguaje).
+- No dispone de capacidades multilingües, de visión general, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Videoconferencia con encuadre automatico: el modelo detecta la cabeza del interlocutor en cada fotograma y permite a la aplicacion centrar o recortar la vista. Su coste de 1,196 GFLOPs a 320 lo hace viable en tiempo real sobre CPU o GPU integrada.
-- Control de acceso de corto alcance: en un lector de proximidad, la cara ocupa una fraccion alta del encuadre (por encima del 2%), justo el regimen para el que se diseno el modelo; la salida de caja y confianza alimenta el pipeline de reconocimiento posterior.
-- Retransmision en directo: deteccion de cabezas de presentadores o invitados en fotogramas de streaming para generar recortes, subtitulos posicionados o efectos de seguimiento, con latencia baja por imagen en lotes b8 o b32.
-- Camara frontal de telefono: el modelo cabe en el presupuesto computacional de un dispositivo movil al tener solo 2,5 M de parametros y 1,196 GFLOPs, y su entrada de 320x320 encaja con el procesado en tiempo real de la camara selfie.
-- Anonimizacion de rostros en videos grabados: deteccion de cabezas por fotograma para aplicar desenfoque o pixelado antes de publicar material audiovisual; la licencia AGPL-3.0 condiciona su integracion en productos de codigo cerrado.
-- Preprocesado para analitica de audiencia: conteo de personas presentes en una sala o frente a una pantalla a partir de las cabezas detectadas, con umbral de confianza ajustable (por defecto 0,25) para equilibrar recall y falsos positivos.
-- Filtrado previo en pipelines de vision: usar el detector como etapa rapida que descarta fotogramas sin cabezas antes de ejecutar modelos mas costosos de reconocimiento facial o analisis de pose.
+- Videoconferencia y herramientas de reunión virtual: el modelo detecta la región facial en cada fotograma para encuadrar, recortar o aplicar efectos, aprovechando su baja latencia y su entrenamiento específico para caras que ocupan entre el 11 % y el 30 % del fotograma.
+- Control de acceso de corto alcance: en cámaras situadas a pocos metros del usuario, las caras superan holgadamente el umbral del 2 % del fotograma, por lo que el modelo ofrece detección fiable con un coste computacional reducido.
+- Procesamiento de fotogramas de retransmisiones en directo: al ejecutarse sobre ONNX y CPU, puede integrarse en pipelines de streaming para localizar caras de presentadores o invitados en tiempo real.
+- Cámaras frontales de teléfono y aplicaciones móviles: el tamaño reducido del modelo y su entrada de 320×320 lo hacen apto para inferencia en dispositivos con recursos limitados, siempre que el rostro esté cerca de la cámara.
+- Anotación asistida y preetiquetado de datasets faciales: el modelo puede generar cajas candidatas sobre imágenes de primer plano para acelerar el etiquetado manual, con revisión posterior para corregir falsos positivos.
+- Moderación y análisis de contenido en primer plano: detección de presencia de caras en imágenes subidas por usuarios donde el rostro ocupa una porción significativa de la imagen, como paso previo a un desenfoque o a una política de privacidad.
 
 ## Benchmarks y rendimiento
 
-Los datos disponibles en la model card permiten construir la siguiente tabla comparativa entre la variante de dos cabezas (este modelo) y la de tres cabezas:
+La tarjeta del modelo reporta métricas de validación propias, pero no una tabla comparativa completa con otros modelos. Los datos disponibles son:
 
-| Metrica | Este modelo (2 cabezas) | Version 3 cabezas | Cambio |
-|---|---|---|---|
-| Parametros (pesos completos) | 2.535,7 K | 2.533,9 K | +0,07% (practicamente igual) |
-| GFLOPs a 320 (sin fusion) | 1,196 | 1,450 | -17,5% |
-| GFLOPs a 320 (tras fusion BN) | no disponible en el extracto | no disponible en el extracto | -17,5% |
-| mAP50-95 a 320 (resolucion de entrenamiento) | 0,930 | no disponible | no disponible |
-| mAP50-95 a 640 (fuera de distribucion) | 0,686 | no disponible | no disponible |
+| Metrica | Valor |
+|---|---|
+| mAP50-95 (imgsz=320) | 0,930 |
+| mAP50-95 (imgsz=640) | 0,686 |
+| GFLOPs a 320×320 (modelo completo YOLO26n) | 1,450 |
+| GFLOPs a 320×320 (este modelo, rama P3 eliminada) | 1,196 |
+| Reduccion de computo | 17,5 % |
+| Confianza en demos (3 imagenes, conf=0.25) | 0,941–0,960 |
 
-El autor reporta ademas que la diferencia de mAP50-95 entre variantes se evaluo con bootstrap pareado (1.000 remuestreos a nivel de imagen, intervalo de confianza del 95%), y que un descenso de 0,9485 a 0,9278 equivale a 2,08 puntos porcentuales. No se han publicado en la informacion disponible resultados de MMLU, HumanEval ni GSM8K, que no aplican a un detector de objetos.
+No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8K u otros) en la información disponible, al no tratarse de un modelo de lenguaje. Tampoco se detallan métricas de precisión (P) y exhaustividad (R) por tamaño de objeto más allá de la metodología descrita en la tarjeta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; con 2,5 M de parametros y entrada de 320x320, el modelo es extremadamente ligero y cabe holgadamente en cualquier GPU consumer, e incluso en memoria unificada de dispositivos moviles.
-- GPU recomendadas: no se especifican en la informacion disponible; por su perfil (1,196 GFLOPs, 320x320) es adecuado para RTX 4090, RTX 3060 y GPUs integradas, asi como para ejecucion en CPU.
-- Cabe en GPU consumer: si, en cualquier GPU consumer moderna e incluso en CPU, dado el reducido numero de parametros y operaciones.
-- Opciones de despliegue: Ultralytics (API `YOLO`), onnxruntime para el modelo ONNX, y OpenCV para el preprocesado; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a un detector visual.
-- Latencia y throughput estimados: no disponibles en el extracto; la model card menciona mediciones en ms/imagen para lotes b1, b8, b32 y b64, pero no se incluyen los valores numericos en la informacion proporcionada.
+- VRAM estimada para inferencia: no disponible de forma explícita; por el tamaño del repositorio (0,0 GB) y la naturaleza del modelo (YOLO26n con rama P3 eliminada), se trata de un modelo muy ligero, apto para GPUs de gama baja y CPU.
+- GPU recomendadas: no especificadas en la información disponible; por su perfil de cómputo (1,196 GFLOPs a 320×320), cabe en GPUs de consumo como la RTX 4090 y en GPUs de datacenter como A100 o H100 sin problemas, aunque no se aportan cifras de latencia por GPU.
+- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU consumer moderna; no se documentan requisitos mínimos concretos.
+- Opciones de despliegue: Ultralytics (Python), ONNX Runtime y OpenCV; la tarjeta menciona `ultralytics`, `onnxruntime` y `opencv-python` como dependencias. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a un detector de objetos).
+- Latencia y throughput: no se proporcionan cifras de ms/imagen ni de imágenes por segundo; la tarjeta menciona que las demos se ejecutaron en CPU con `ultralytics 8.4.211`, pero sin tiempos publicados.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Entrada | mAP50-95 | Licencia | Notas |
+| Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO26n-head-detection-cut-P3 (este) | 2,5 M | 320x320 | 0,930 (a 320) | AGPL-3.0 | Una clase, rama P3 eliminada |
-| Ultralytics YOLO26n (3 cabezas) | 2,53 M | configurable | no disponible | AGPL-3.0 | Referencia de la que deriva; 1,450 GFLOPs a 320 |
-| YOLOv8n | no disponible en la informacion | configurable | no disponible | AGPL-3.0 | Alternativa nano de la generacion anterior; sin datos comparativos en la fuente |
-| Otros detectores de rostro ligeros | no disponible | no disponible | no disponible | variable | No se aportan datos en la informacion disponible |
+| YOLO26n-head-detection-cut-P3 | no disponible | 320×320 fijo | mAP50-95 0,930 a 320 | AGPL-3.0 | Hugging Face (wesjos) |
+| YOLO26n (base Ultralytics) | no disponible | resolución configurable | no disponible en esta ficha | AGPL-3.0 | Ultralytics |
+| Otros detectores faciales YOLO | no disponible | variable | no disponible | variable | no disponible |
 
-No se dispone en la informacion proporcionada de resultados de benchmarks de terceros que permitan una comparacion cuantitativa con alternativas como YOLOv8n o detectores de rostro especializados; la unica comparacion con datos es frente a la variante de tres cabezas del mismo modelo base.
+No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada; la comparativa con el YOLO26n base se limita al coste computacional (1,450 frente a 1,196 GFLOPs) y a la eliminación de la rama P3.
 
 ## Limitaciones y advertencias
 
-- No detecta objetos pequenos: al eliminar la rama P3, los objetivos por debajo del 2% del area de la imagen (menos de 45x45 px a 320) quedan fuera de su regimen util, segun el propio autor.
-- No apto para vigilancia de largo alcance, multitudes densas vistas desde el aire ni miniaturas de fotos de carnet, escenarios que el autor excluye explicitamente.
-- La resolucion de entrada debe ser 320x320; usar 640 degrada la mAP50-95 de 0,930 a 0,686, por lo que cualquier cambio de `imgsz` invalida el rendimiento declarado.
-- La salida ONNX cruda requiere NMS externo; sin ese paso, una sola cara genera multiples cajas solapadas.
-- Entrenado en modo `end2end=False`, por lo que no emite cajas ya filtradas de forma nativa.
-- Licencia AGPL-3.0: el uso comercial en productos de codigo cerrado exige cumplir las obligaciones de copyleft de la AGPL, lo que puede ser incompatible con determinados despliegues propietarios.
-- Riesgo de alucinacion en sentido estricto no aplica (es un detector, no un generador de texto), pero si existe riesgo de falsos positivos y falsos negativos segun el umbral de confianza; el valor por defecto es 0,25.
-- Sesgos conocidos: no se documentan en la informacion disponible; al ser un detector de cabezas entrenado sin detallar la composicion del dataset, el rendimiento puede variar segun demografia, iluminacion y condiciones de captura.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano declarado de 0,0 GB; se trata de una publicacion reciente y sin validacion externa por parte de la comunidad.
-- No se especifican los idiomas soportados ni el opset ONNX, datos que figuran como no disponibles.
+- No detecta caras pequeñas: la eliminación de la rama P3 implica que los objetivos por debajo del 2 % del fotograma (menos de 45×45 píxeles a 320) no se detectan de forma fiable; no es apto para vigilancia de largo alcance, multitudes densas desde el aire ni miniaturas de fotos de carné.
+- La resolución de entrada debe ser 320×320; usar 640 degrada la precisión de forma severa (mAP50-95 de 0,930 a 0,686).
+- La salida ONNX en bruto requiere supresión de no máximos (NMS); sin este paso, una sola cara genera múltiples cajas superpuestas.
+- Modelo de clase única: no distingue personas, objetos ni otras categorías; la etiqueta `head` puede inducir a confusión, ya que las cajas cubren la región facial.
+- Licencia AGPL-3.0: impone obligaciones de copyleft para uso en red y puede restringir su integración en productos comerciales propietarios; debe revisarse antes de un despliegue en producción.
+- Riesgo de sesgos y alucinaciones: no se documentan sesgos demográficos ni análisis de equidad; como todo detector entrenado con un dataset no descrito, puede presentar diferencias de rendimiento entre tonos de piel, edades o condiciones de iluminación.
+- No se detalla el dataset de entrenamiento (número de imágenes, diversidad, procedencia), lo que dificulta evaluar su robustez y generalización.
+- No es un modelo de lenguaje: no soporta generación de texto, razonamiento, código ni capacidades de agente.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/wesjos/YOLO26n-head-detection-cut-P3
-- Repositorio de Ultralytics: no disponible en la informacion proporcionada
-- Paper o blog tecnico del modelo: no disponible en la informacion proporcionada
-- Demo o espacio interactivo: no disponible en la informacion proporcionada
+- Hugging Face: https://huggingface.co/wesjos/YOLO26n-head-detection-cut-P3
+- Ultralytics (framework y documentación): https://github.com/ultralytics/ultralytics
+- ONNX Runtime: https://onnxruntime.ai/
+- OpenCV: https://opencv.org/

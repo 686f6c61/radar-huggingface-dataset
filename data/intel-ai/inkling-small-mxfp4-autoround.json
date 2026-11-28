@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Download Intel Drivers and Software",
-      "url": "https://www.intel.fr/content/www/fr/fr/download-center/home.html",
-      "snippet": "Download new and previously released drivers including support software, bios, utilities, firmware and patches for Intel products."
-    },
-    {
-      "title": "Assistant pilotes et support Intel®",
-      "url": "https://www.intel.fr/content/www/fr/fr/support/detect.html",
-      "snippet": "Intel® Driver & Support Assistant maintient votre système à jour en fournissant une assistance personnalisée et des mises à jour en …"
-    },
-    {
-      "title": "Intel Inside - Built for AI",
-      "url": "https://www.intel.com/content/www/us/en/homepage.html",
-      "snippet": "We break barriers so builders can move faster, from prototype to global scale. That’s the power of Intel Inside®"
-    },
-    {
-      "title": "Intel® Driver & Support Assistant",
-      "url": "https://www.intel.com/content/www/us/en/support/detect.html",
-      "snippet": "The Intel® Driver & Support Assistant keeps your system up-to-date by providing tailored support and hassle-free updates for most …"
-    },
-    {
-      "title": "Intel - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Intel",
-      "snippet": "Intel Corporation is an American multinational technology company headquartered in Santa Clara, California. It designs, …"
-    }
-  ]
+  "sources": []
 }

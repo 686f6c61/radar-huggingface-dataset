@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 175,
+  "downloads_30d": 192,
   "trending_score": 0,
   "parameters": 4989736320,
   "parameters_human": "4.99B",
@@ -45,16 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen/Qwen3-32B · Hugging Face",
-      "url": "https://huggingface.co/Qwen/Qwen3-32B",
-      "snippet": "Text Generation model with 33B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Qwen 3 32B Local Setup Guide 2026: Run on a 24GB GPU",
-      "url": "https://baeseokjae.github.io/posts/qwen-3-32b-local-guide-2026/",
-      "snippet": "Step-by-step guide to running Qwen3 32B locally on a 24GB GPU using Ollama, llama.cpp, or LM Studio with thinking mode explained."
-    }
-  ]
+  "sources": []
 }

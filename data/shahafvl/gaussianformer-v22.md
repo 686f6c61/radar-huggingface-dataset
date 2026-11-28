@@ -2,106 +2,101 @@
 
 ## Resumen
 
-GaussianFormer V22 es un modelo de renderizado neuronal que sintetiza imagenes fotorrealistas de escenas representadas mediante 3D Gaussian Splatting (3DGS) sin necesidad de rasterizacion ni de optimizacion por escena. Lo desarrolla el autor independiente `shahafvl` y se distribuye con licencia MIT. El modelo adapta la arquitectura de RenderFormer (SIGGRAPH 2025, Microsoft), un renderizador transformer disenado originalmente para mallas triangulares, al dominio de las gaussianas 3D.
+GaussianFormer V22 es un modelo de renderizado neuronal que sintetiza imagenes de escenas representadas como 3D Gaussian Splatting (3DGS) mediante un transformer, sin optimizacion por escena y sin rasterizador en el pipeline de render. Lo desarrolla el autor `shahafvl` y parte de RenderFormer (SIGGRAPH 2025), un renderizador transformer para mallas triangulares de Microsoft, del que hereda la arquitectura de dos etapas y los pesos iniciales.
 
-La innovacion principal reside en convertir cada gaussiana (14 parametros: posicion, escala, cuaternion, color RGB y opacidad) en un token de escena, manteniendo la estructura de dos etapas de RenderFormer: un codificador de escena independiente de la vista y un decodificador de rayos dependiente de la vista con cabeza DPT. El modelo se inicializa con los pesos de `microsoft/renderformer-v1-base` y anade tres modificaciones clave: RoPE 2D proyectado, huella proyectada de la covarianza y parches de 4 px.
+El modelo convierte cada gaussiana (14 parametros: posicion, escala, cuaternion, color RGB y opacidad) en un token de escena, y emplea un encoder de escena independiente de la vista seguido de un decoder de rayos dependiente de la vista con cabeza DPT. Resuelve el problema de la novel view synthesis a partir de splats sin necesidad de rasterizar en tiempo de inferencia, lo que abre la puerta a renderizado diferenciable y a integracion en pipelines neuronales extremo a extremo.
 
-Con 194,9 millones de parametros, el modelo aborda un problema relevante en graficos por computador: renderizar representaciones 3DGS de forma eficiente y generalizable, sin el coste de rasterizacion tradicional ni de optimizacion por escena. Su pipeline es `image-to-image` y esta pensado para sintesis de vistas noveles (novel view synthesis) de objetos aislados.
+Con 194,9 millones de parametros y un repositorio de 0,8 GB, es un modelo de tamano contenido orientado a investigacion en renderizado neuronal. Su relevancia actual radica en que demuestra que un transformer puede aproximar el renderizado de 3DGS con una calidad cercana a la rasterizacion (38,08 dB frente a 44,02 dB de PSNR en objetos no vistos), manteniendo la licencia MIT y un formato de pesos safetensors estandar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de dos etapas (codificador de escena + decodificador de rayos con cabeza DPT), adaptado de RenderFormer |
+| Arquitectura | Transformer de dos etapas (encoder de escena independiente de la vista + decoder de rayos dependiente de la vista con cabeza DPT), adaptado de RenderFormer |
 | Parametros totales | 194.892.183 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica: atiende a todas las gaussianas por parche mediante cross-attention densa) |
+| Longitud de contexto | no disponible (no aplica; entrada de ~20k gaussianas como tokens de escena) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de vision/renderizado, no linguistico) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (libreria `gaussianformer`, `pytorch_model_hub_mixin`) |
+| Formato de pesos | safetensors (libreria `gaussianformer`, `PyTorchModelHubMixin`) |
 
 ## Arquitectura y entrenamiento
 
-GaussianFormer V22 conserva la arquitectura transformer de dos etapas de RenderFormer. Cada gaussiana se representa como un token de 14 dimensiones `[pos(3), scale(3), quat(4), rgb(3), opacity(1)]` con valores activados (escalas lineales, cuaternion unitario, color y opacidad en [0,1]). El codificador de escena es independiente de la vista y el decodificador de rayos es dependiente de la vista, con una cabeza DPT que produce la imagen final. Cada parche atiende a todas las gaussianas mediante cross-attention densa.
+La arquitectura mantiene el esquema de RenderFormer: un encoder de escena que procesa los tokens de gaussiana de forma independiente de la vista, y un decoder de rayos que, dada una camara, genera la imagen mediante una cabeza DPT. Cada gaussiana se representa con 14 valores activados (posicion 3, escala lineal 3, cuaternion unitario wxyz 4, RGB 3 y opacidad 1), lo que produce aproximadamente 20.000 tokens de escena por objeto. Sobre la base de RenderFormer se introducen tres modificaciones: RoPE 2D proyectado (`proj_rope_2d`), que proyecta cada gaussiana en la vista y usa sus coordenadas imagen como embedding rotatorio 2D en la atencion cruzada del decoder; huella proyectada (`cov_key_embed`), que proyecta la covarianza de cada gaussiana y anade el tamano y orientacion de sus dos ejes a la clave de atencion cruzada mediante una capa lineal inicializada a cero por capa del decoder; y parches de 4 px (`patch_size=4`, `ray_embed_patch=8`), que generan una rejilla de 128x128 tokens a 512 px reutilizando el embedding de rayos preentrenado de 8 px. La atencion cruzada es densa: cada parche atiende a todas las gaussianas.
 
-Sobre RenderFormer se introducen tres cambios: (1) RoPE 2D proyectado, donde cada gaussiana se proyecta en la vista y sus coordenadas de imagen entran en la cross-attention como embedding rotatorio 2D emparejado con la posicion de cada parche; (2) huella proyectada (`cov_key_embed`), que proyecta la covarianza de cada gaussiana en la vista y anade el tamano y orientacion de sus dos ejes a su clave mediante una capa lineal inicializada a cero por capa del decodificador; y (3) parches de 4 px (`patch_size=4`, `ray_embed_patch=8`), que dan una rejilla de 128x128 tokens a 512 px reutilizando el embedding de rayos preentrenado de 8 px.
-
-El entrenamiento usa los 26.820 objetos de entrenamiento de Objaverse_Splats, cada uno podado de ~50k a 20k gaussianas (puntuacion de importancia LightGaussian mas un fine-tune de recuperacion). Los objetivos son renders con gsplat del splat completo sin podar a 512 px, con 28 vistas por objeto a distancias de camara 1.15, 1.7 y 2.45. El modelo se inicializa desde RenderFormer, se entrena a 256 px (checkpoint `gaussianformer-256px`), se activan los tres cambios en una etapa corta a 256 px y despues se realizan 385k pasos a 512 px en 8 GPUs (una vista por GPU por paso, 4 pasadas sobre cada vista), con learning rate warmup-stable-decay a 5e-5 y decaimiento coseno a 5e-7 en los ultimos 10k pasos. La funcion de perdida combina log-HDR L1 (pixeles de fondo ponderados a 0.05) y LPIPS-VGG, a partes iguales.
+El entrenamiento usa los 26.820 objetos de entrenamiento del dataset Objaverse_Splats, cada uno podado de ~50k a 20k gaussianas con la puntuacion de importancia de LightGaussian y un fine-tune de recuperacion de las gaussianas conservadas. Los objetivos son renders con gsplat del splat completo sin podar a 512 px, con 28 vistas por objeto a distancias de camara 1,15, 1,7 y 2,45. El modelo se inicializa con los pesos de RenderFormer y se entrena primero a 256 px (checkpoint publicado `gaussianformer-256px`), despues una etapa corta a 256 px con las tres modificaciones activadas y finalmente 385k pasos a 512 px en 8 GPUs (una vista por GPU por paso, 4 pasadas sobre cada vista), con learning rate warmup-stable-decay de 5e-5 y decaimiento coseno a 5e-7 en los ultimos 10k pasos. La informacion sobre la funcion de perdida esta truncada en la model card.
 
 ## Capacidades
 
-- Renderizado de escenas 3D Gaussian Splatting: sintetiza imagenes desde camaras arbitrarias a partir de un conjunto de gaussianas, sin rasterizador ni optimizacion por escena.
-- Sintesis de vistas noveles (novel view synthesis) de objetos aislados centrados, con eje Y hacia arriba y escalados en [-0.45, 0.45]^3, en torno a 20k gaussianas.
-- Generacion de orbitas de camara y objetos en rotacion (tumbling) a 512x512 px.
-- Renderizado sin dependencia de la vista en la etapa de codificacion: la escena se codifica una vez y se decodifica para multiples vistas.
-- Conversion desde ficheros PLY de 3DGS mediante `load_ply`, que transforma escalas logaritmicas, cuaterniones crudos, coeficientes de armonicos esfericos y logits de opacidad, normaliza el objeto, lo poda a 20k gaussianas y ajusta las conservadas contra el splat completo.
-- Inferencia por lotes de multiples camaras en una sola llamada al pipeline (`pipeline(gaussians, c2w, fov=45.0)` devuelve `[V, 512, 512, 3]`).
-- Soporte opcional de Flash Attention para acelerar la atencion; sin el, usa scaled-dot-product attention de PyTorch.
-- No dispone de capacidades linguisticas, tool calling, agentes ni multilingues: es un modelo puramente de vision/renderizado.
+- Renderizado de novel view synthesis a partir de escenas 3D Gaussian Splatting en formato PLY.
+- Generacion de imagenes a 512x512 px desde camaras arbitrarias (matriz camera-to-world, FOV configurable).
+- Renderizado sin rasterizador: toda la sintesis ocurre en el transformer.
+- Renderizado sin optimizacion por escena: inferencia directa sobre el splat de entrada.
+- Procesamiento de objetos centrados, con eje Y hacia arriba y escalados a [-0,45, 0,45]^3, con ~20k gaussianas.
+- Conversion integrada de PLY (escalas logaritmicas, cuaterniones crudos, armonicos esfericos, logits de opacidad) a la representacion de 14 parametros mediante `load_ply`.
+- Poda automatica a 20k gaussianas y fine-tune de recuperacion de las conservadas (~1 minuto en GPU).
+- Soporte de orbitas de camara y objetos en rotacion (tumble) mediante utilidades de camaras (`orbit`).
+- No soporta tool calling, agentes, razonamiento multi-step ni capacidades linguisticas: es un modelo puramente de vision/renderizado.
 
 ## Casos de uso
 
-- Visualizacion interactiva de activos 3DGS: dado un PLY de objeto, generar orbitas de camara bajo demanda sin rasterizador, util para previsualizacion en visores web o herramientas de diseno donde se quiere evitar el coste de un pipeline de rasterizacion dedicado.
-- Generacion de datasets sinteticos de vistas: producir renders consistentes de objetos 3DGS a multiples angulos y distancias para entrenar otros modelos de vision (reconstruccion, estimacion de pose, segmentacion) sin necesidad de capturar datos reales.
-- Renderizado en pipelines sin GPU de rasterizacion: al ser un transformer puro, puede desplegarse en stacks basados en PyTorch alli donde integrar un rasterizador 3DGS especifico resulte problematico.
-- Prototipado rapido en investigacion de graficos: comparar renderizado neuronal frente a rasterizacion gsplat sobre el mismo conjunto de 20k gaussianas, con una diferencia medida de unos 6 dB de PSNR, para estudiar compromisos calidad-coste.
-- Aumento de datos para reconstruccion 3D: generar vistas adicionales de objetos Objaverse-like para aumentar datasets de entrenamiento de modelos de reconstruccion o de síntesis.
-- Demostraciones y material divulgativo: producir GIFs de orbitas y objetos en rotacion (como los ejemplos de la model card) para articulos, blogs o presentaciones tecnicas sobre 3DGS y renderizado neuronal.
-- Evaluacion de representaciones 3DGS podadas: medir cuanto se degrada la calidad al reducir de ~50k a 20k gaussianas, usando el modelo como referencia de renderizado neuronal frente a gsplat.
+- Renderizado de assets 3D en pipelines de generacion: dado un splat producido por un modelo generativo 3DGS, GaussianFormer genera vistas sin rasterizador, lo que permite integrar el renderizado dentro de un grafo diferenciable extremo a extremo.
+- Novel view synthesis para investigacion en renderizado neuronal: sirve como baseline reproducible (licencia MIT, pesos safetensors) para comparar arquitecturas transformer frente a rasterizacion con gsplat.
+- Generacion de vistas para aumento de datos: a partir de un splat capturado, se generan vistas en orbitas arbitrarias (distancias 1,15, 1,7 y 2,45) para entrenar otros modelos de vision 3D.
+- Previsualizacion rapida de splats sin motor de rasterizacion: util en entornos donde no se dispone de un rasterizador GPU (gsplat, difrast) o se quiere evitar su dependencia, a costa de menor PSNR (38,08 dB frente a 44,02 dB).
+- Integracion en herramientas de captura y reconstruccion 3D: el pipeline `ply_to_h5` + `infer.py` permite convertir un PLY y renderizar un PNG por camara desde linea de comandos, adecuado para procesamiento por lotes.
+- Prototipado de renderizado neuronal en investigacion academica: la arquitectura de dos etapas con encoder de escena y decoder de rayos sirve de base para experimentos con RoPE proyectado y huellas de covarianza.
+- Evaluacion comparativa de representaciones: permite medir la fidelidad de la representacion de 20k gaussianas frente al splat completo, con metricas PSNR, SSIM y LPIPS documentadas.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre 300 objetos retenidos del entrenamiento (nunca usados durante el desarrollo), PSNR sobre el recorte cuadrado alrededor del objeto frente al ground truth del splat completo, sobre las 28 vistas de entrenamiento y sobre 4 de ellas (vistas 0, 4, 7 y 11 a distancia de camara 1.7):
+Resultados sobre 300 objetos no vistos en entrenamiento, PSNR en el recorte cuadrado alrededor del objeto frente al ground truth del splat completo, sobre las 28 vistas de entrenamiento y sobre 4 de ellas (vistas 0, 4, 7 y 11 a distancia 1,7):
 
-| Metodo | 28 vistas (PSNR) | 4 vistas (PSNR) | SSIM | LPIPS |
+| Metodo | PSNR 28 vistas | PSNR 4 vistas | SSIM | LPIPS |
 |---|---|---|---|---|
-| Rasterizacion gsplat de la misma entrada de 20k gaussianas | 44.02 | 44.97 | 0.9954 | 0.0046 |
-| GaussianFormer | 38.08 | 38.36 | 0.9814 | 0.0113 |
+| Rasterizacion gsplat de la misma entrada de 20k gaussianas | 44,02 | 44,97 | 0,9954 | 0,0046 |
+| GaussianFormer | 38,08 | 38,36 | 0,9814 | 0,0113 |
 
-Desglose adicional:
-
-| Metrica | Valor |
-|---|---|
-| PSNR a distancia 1.15 | 38.47 dB (rasterizacion: 42.39) |
-| PSNR a distancia 1.7 | 38.38 dB (rasterizacion: 45.14) |
-| PSNR a distancia 2.45 | 37.08 dB (rasterizacion: 43.39) |
-| PSNR en 300 objetos de entrenamiento (28 vistas) | 38.25 dB (0.17 dB por encima de los retenidos) |
+Por distancia de camara, GaussianFormer obtiene 38,47, 38,38 y 37,08 dB a 1,15, 1,7 y 2,45 respectivamente (rasterizacion: 42,39, 45,14 y 43,39). Sobre 300 objetos de entrenamiento en sus 28 vistas de entrenamiento: 38,25 dB, 0,17 dB por encima de los objetos no vistos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; con 194,9 M de parametros en fp32 los pesos ocupan aproximadamente 0,78 GB, a lo que hay que sumar activaciones de la cross-attention densa sobre ~20k gaussianas y una rejilla de 128x128 tokens por vista.
-- GPU recomendadas: el autor indica Linux, GPU NVIDIA y Python 3.12; Flash Attention es opcional y recomendado para velocidad.
-- Cabe en GPU de consumo: previsiblemente si, dado el tamano de pesos inferior a 1 GB, aunque el requisito real dependera de las activaciones; no se especifica un minimo oficial.
-- Opciones de despliegue: pipeline nativo `GaussianFormerRenderingPipeline` de la libreria `gaussianformer` (instalable con `uv`), con soporte opcional del extra `flash`; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
-- Latencia y throughput: no disponibles; el autor menciona que el fine-tune de las gaussianas conservadas tarda "alrededor de un minuto en una GPU", pero no publica cifras de inferencia.
+- Entorno oficial: Linux, GPU NVIDIA, Python 3.12, PyTorch para CUDA 12.8.
+- VRAM estimada: no disponible en la informacion proporcionada; con 194,9 M de parametros en fp32 los pesos ocupan aproximadamente 0,78 GB, a lo que hay que sumar memoria de activaciones para ~20k tokens de escena y una rejilla de 128x128 tokens por vista.
+- GPU recomendadas: no disponible; la model card solo especifica GPU NVIDIA y el entrenamiento se hizo en 8 GPUs.
+- Compatibilidad con GPU de consumo: no confirmada en la informacion disponible.
+- Despliegue: pipeline `GaussianFormerRenderingPipeline.from_pretrained(...)` de la libreria `gaussianformer`, instalable con `uv` desde el repositorio de GitHub; Flash Attention opcional mediante el extra `flash` (sin el se usa scaled-dot-product attention de PyTorch).
+- Latencia y throughput: no disponibles; la model card solo indica que el fine-tune de recuperacion tras la poda tarda aproximadamente un minuto en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Entrada | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Entrada | Contexto / tokens | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GaussianFormer V22 | 194,9 M | Gaussianas 3D (14 params) | no aplica (atencion densa a todas las gaussianas) | MIT | Hugging Face + GitHub |
-| RenderFormer v1 base (Microsoft) | no disponible en la informacion | Mallas triangulares | no aplica | no disponible en la informacion | Hugging Face |
-| Rasterizacion gsplat | no es un modelo neuronal | Gaussianas 3D | no aplica | no disponible en la informacion | Libreria de rasterizacion |
+| GaussianFormer V22 | 194,9 M | 3D Gaussian Splatting (14 params/gaussiana) | ~20k tokens de escena | MIT | Hugging Face (`shahafvl/gaussianformer-v22`) |
+| RenderFormer v1 base (`microsoft/renderformer-v1-base`) | no disponible | Mallas triangulares | no disponible | no disponible | Hugging Face |
+| gsplat (rasterizador) | no aplica (no neuronal) | 3D Gaussian Splatting | no aplica | no disponible en la informacion | Codigo abierto |
 
-RenderFormer es el modelo base del que se parte: renderiza mallas triangulares con la misma arquitectura de dos etapas, mientras que GaussianFormer adapta esa arquitectura a gaussianas 3D. La rasterizacion gsplat no es un modelo comparable en el sentido estricto, pero sirve de referencia de calidad: sobre la misma entrada de 20k gaussianas obtiene 44.02 dB frente a los 38.08 dB de GaussianFormer en 28 vistas.
+GaussianFormer V22 se distingue de RenderFormer por el tipo de entrada (splats frente a mallas) y por las tres modificaciones arquitectonicas descritas; de gsplat, por ser un modelo neuronal sin rasterizador, con menor PSNR (38,08 frente a 44,02 dB) pero potencialmente integrable en grafos diferenciables.
 
 ## Limitaciones y advertencias
 
-- Entrenado unicamente con objetos aislados de Objaverse_Splats; no se ha validado en escenas complejas, interiores ni composiciones multiobjeto.
-- Requiere que el objeto este centrado, con eje Y hacia arriba y escalado en [-0.45, 0.45]^3, y en torno a 20k gaussianas; `load_ply` realiza esta normalizacion y poda, pero objetos fuera de ese regimen pueden degradarse.
-- Calidad inferior a la rasterizacion gsplat: unos 6 dB de PSNR por debajo sobre la misma entrada, con LPIPS de 0.0113 frente a 0.0046.
-- La model card esta truncada en la seccion de limitaciones ("Trained on isolated..."), por lo que pueden existir otras restricciones no documentadas en la informacion disponible.
-- Riesgo de artefactos y alucinacion visual en vistas o geometrias fuera de distribucion, al ser un modelo generativo de renderizado.
-- No es un modelo linguistico: no soporta texto, tool calling, agentes ni capacidades multilingues.
-- Licencia MIT, lo que permite uso comercial, pero conviene verificar las condiciones de los datos de entrenamiento (Objaverse_Splats) y del modelo base RenderFormer para produccion.
-- Requiere Linux, GPU NVIDIA y Python 3.12; no se documenta soporte para CPU ni para otras plataformas.
-- Solo 23 descargas y 0 likes en el momento de la consulta: ecosistema muy incipiente y poca validacion externa.
+- Calidad inferior a la rasterizacion: 38,08 dB frente a 44,02 dB de PSNR en objetos no vistos, con SSIM y LPIPS tambien peores.
+- Entrada restringida: objetos centrados, eje Y hacia arriba, escalados a [-0,45, 0,45]^3 y con ~20k gaussianas; no admite escenas grandes ni multiples objetos sin adaptacion.
+- Resolucion de salida fija a 512 px en el checkpoint publicado (existe un checkpoint separado a 256 px).
+- Dependencia de la conversion PLY: `load_ply` normaliza, poda a 20k gaussianas y requiere un fine-tune de recuperacion de aproximadamente un minuto en GPU.
+- Requiere Linux, GPU NVIDIA y Python 3.12; no se documenta soporte para CPU, macOS ni otras plataformas.
+- Riesgo de artefactos y alucinacion visual en vistas alejadas del rango de entrenamiento (distancias fuera de 1,15-2,45) o en geometrias poco representadas en Objaverse.
+- Sesgos de dominio: entrenado exclusivamente con objetos de Objaverse_Splats, por lo que su generalizacion a capturas reales, escenas interiores o materiales fuera de distribucion no esta validada.
+- Licencia MIT permite uso comercial, pero la model card no documenta implicaciones de la licencia del modelo base RenderFormer ni del dataset Objaverse_Splats; conviene revisarlas antes de produccion.
+- Sin datos publicados de latencia, throughput ni VRAM, lo que dificulta planificar despliegues en produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/shahafvl/gaussianformer-v22
-- Codigo: https://github.com/SVLwoof/gaussianformer
+- Checkpoint a 256 px: https://huggingface.co/shahafvl/gaussianformer-256px
 - Modelo base RenderFormer: https://huggingface.co/microsoft/renderformer-v1-base
-- Dataset Objaverse_Splats: https://huggingface.co/datasets/ShapeSplats/Objaverse_Splats
-- Checkpoint intermedio 256 px: https://huggingface.co/shahafvl/gaussianformer-256px
+- Paper: https://arxiv.org/abs/2611.05593
+- Pagina del proyecto: https://svlwoof.github.io/gaussianrenderformer/
+- Codigo: https://github.com/SVLwoof/gaussianformer
+- Dataset: https://huggingface.co/datasets/ShapeSplats/Objaverse_Splats

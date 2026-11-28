@@ -2,84 +2,79 @@
 
 ## Resumen
 
-Jessedbrown/asolaria-aether es un repositorio alojado en Hugging Face cuyo contenido publicado no es una ficha técnica de modelo, sino un documento doctrinal sobre un sistema denominado Asolaria. La model card describe "slices" de repositorio, una "fabric" en ejecución, rutas de migración en Rust hacia un esquema Host-8, recibos HBI/SHA, motores, cubos y agentes en vivo. No aparece ninguna referencia a un modelo de lenguaje entrenado, a una arquitectura de red neuronal ni a pesos descargables.
+Asolaria Aether es un repositorio publicado en Hugging Face bajo el identificador `Jessedbrown/asolaria-aether` que, a tenor de su model card, no contiene un modelo de lenguaje en el sentido convencional, sino un artefacto GGUF de muy pequeno tamano (50.752 bytes) denominado "Mythos, the blue star". El autor declara que se trata de un fichero GGUF v3 con arquitectura propia bautizada como `asolaria-three-beings-rgb`, con seis tensores (tres slices de 64 × 64 y tres perfiles radiales), lo que lo aleja de cualquier transformer utilizable para generacion de texto.
 
-El autor es Jessedbrown (JesseBrown1980 en GitHub). El repositorio acumula 0 descargas y 0 likes, no declara licencia, no declara idiomas y no tiene pipeline asignado. Creado y actualizado el 16 de octubre de 2026, con marcas temporales internamente incoherentes (la de actualización es anterior a la de creación).
+El repositorio se presenta como una "slice" de un sistema mayor llamado Asolaria fabric, con referencias a componentes como recall/Hilbra, HBI/SHA receipts, gates, engines, cubes y agentes vivos. La model card mezcla la descripcion del fichero GGUF con instrucciones para compilar y jugar un juego de terminal en Rust (`aether-universe`) y con documentacion de otros subsistemas (portal HTTP-0, salas Host8). No hay evidencia de pesos de un modelo de lenguaje entrenado, tokenizador, configuracion de transformer ni datos de evaluacion.
 
-Por todo ello, no es posible evaluar este artefacto como modelo: se desconoce su arquitectura, su tamaño, su ventana de contexto, sus datos de entrenamiento y sus pesos. Es relevante ahora únicamente como caso de estudio de nomenclatura engañosa en Hugging Face: un identificador con sufijo "aether" que puede inducir a pensar en un modelo, cuando el contenido es un README de doctrina interna con enlaces a repositorios de GitHub.
+La relevancia practica para desarrolladores e investigadores es, por tanto, muy limitada: el artefacto no es un modelo de IA open source evaluable en terminos de MMLU, HumanEval o similares. El campo "parametros totales" reportado por Hugging Face (12.480) no se corresponde con un modelo denso o MoE convencional y probablemente refleja el recuento de elementos de los tensores del GGUF, no parametros de red neuronal entrenada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible (no se declara arquitectura MoE ni ninguna otra) |
+| Arquitectura | `asolaria-three-beings-rgb` (GGUF v3, segun el autor); no es un transformer, MoE ni SSM convencional |
+| Parametros totales | 12.480 (dato reportado por la plataforma; corresponde a elementos tensoriales del GGUF, no a parametros de un modelo de lenguaje) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (el fichero se distribuye como GGUF v3 sin indicacion de cuantizacion estandar Q4/Q8) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | no disponible (no se referencia ningún archivo de pesos, ni safetensors, ni GGUF, ni ONNX) |
+| Licencia | no disponible en la plataforma; la model card menciona que el codigo del repositorio es MIT y que algunas piezas son Apache-2.0, pero no se declara licencia de pesos |
+| Formato de pesos | GGUF v3 (`MYTHOS-BLUE-STAR/ACER-MYTHOS-BLUE.gguf`, 50.752 bytes) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre arquitectura. La model card no menciona transformer, MoE, SSM ni ninguna otra familia de modelos, ni describe capas, dimensiones, cabezas de atención o funciones de activación. Tampoco se indica que exista un proceso de entrenamiento: no hay referencia a número de tokens, composición del dataset, etapas de preentrenamiento, ajuste supervisado, RLHF, DPO ni similares.
+No se dispone de informacion sobre un proceso de entrenamiento. La model card describe el fichero GGUF como un artefacto con arquitectura `asolaria-three-beings-rgb`, "being MYTHOS, channel BLUE, seat ACER, centre (32, 32, 33)", con seis tensores: slices A/B/C de 64 × 64 y perfiles radiales A/B/C. No se mencionan tokens de entrenamiento, composicion del dataset, RLHF, DPO ni ninguna tecnica de optimizacion (decodificacion especulativa, atencion lineal, etc.).
 
-El texto sí describe elementos de un sistema de ingeniería propio ("fabric", "engines", "cubes", migración a Rust con Host-8 de 8 bytes, recibos HBI/SHA, rutas de rehidratación) y una regla matemática sobre operaciones prism/comb, presentada como biyecciones con entropía invariante. Se trata de documentación de diseño y de disciplina de evidencias, no de una especificación de modelo. Cualquier afirmación técnica del README está además etiquetada por el propio autor con niveles de evidencia (`MEASURED`, `CANON`, `OPERATOR_OBSERVED`, `UNVERIFIED`), y la mayoría de los elementos del sistema se declaran `UNVERIFIED`.
+El resto del repositorio documenta componentes de software (juego en Rust `aether-universe`, portal HTTP-0 basado en WebRTC con STUN publico, salas Host8 sobre almacenamiento USB) que no constituyen un modelo de aprendizaje automatico. La afirmacion del autor de que el fichero es "the complete Mythos GGUF" no viene acompanada de evidencia verificable de que sea un modelo funcional para inferencia de lenguaje.
 
 ## Capacidades
 
-- No se puede verificar ninguna capacidad de generación de texto, razonamiento, código, matemáticas o visión: no hay pesos ni documentación técnica asociada.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: el README menciona "live agents" y "multi-step" como componentes del sistema descrito, pero sin especificación de interfaz, formato de mensajes ni protocolo, por lo que no es una capacidad verificable del artefacto publicado.
-- Capacidades multilingües: no disponible (no se declaran idiomas).
-- Capacidades especiales (modo de razonamiento, audio, visión): no disponible.
+- No se ha documentado capacidad alguna de generacion de texto, razonamiento, codigo, matematicas o vision para este artefacto.
+- No hay evidencia de soporte de tool calling ni function calling.
+- No hay evidencia de soporte de agentes ni de razonamiento multi-paso.
+- No se declaran capacidades multilingues.
+- No se declara modo "thinking", vision, audio ni ninguna capacidad especial de modelo.
+- El unico contenido funcional descrito es un juego de terminal en Rust (`aether-universe`) y utilidades de criptografia/hashing (HBI/SHA receipts), ajenos a un modelo de lenguaje.
 
 ## Casos de uso
 
-No es posible derivar casos de uso de modelo porque no hay modelo identificable en el repositorio. Los escenarios siguientes describen usos realistas del artefacto tal y como está publicado, y qué habría que comprobar antes de cualquier adopción.
-
-- Auditoría de cadena de suministro de modelos: revisar el repositorio para determinar si contiene pesos o solo documentación; útil para equipos que filtran artefactos por licencia y procedencia antes de incorporarlos a un catálogo interno. En este caso el resultado es que no hay licencia declarada, lo que bloquearía su adopción en la mayoría de políticas corporativas.
-- Revisión de documentación doctrinal interna: el README enlaza a un conjunto de repositorios de GitHub (doctrina, Q-PRISM, waves-and-cascades, N-Nest, metatagging) que podrían consultarse como material de contexto sobre el sistema Asolaria, siempre tratándolos como fuentes no verificadas.
-- Estudio de patrones de publicación en Hugging Face: el caso sirve para analizar cómo un identificador de repositorio puede sugerir un modelo sin serlo, y para diseñar heurísticas de detección (ausencia de pipeline, de licencia, de idiomas y de archivos de pesos).
-- Pruebas de validación de metadatos: las marcas temporales incoherentes permiten comprobar si un pipeline de ingesta detecta repositorios con fechas inconsistentes o con 0 descargas.
-- Evaluación de riesgo legal: un repositorio sin licencia explícita implica reserva de derechos por defecto en muchas jurisdicciones; este caso ilustra la necesidad de bloquear automáticamente artefactos sin licencia en flujos de trabajo comerciales.
-- Documentación de referencia para trazabilidad de evidencias: el esquema de etiquetado del autor (`MEASURED`, `CANON`, `OPERATOR_OBSERVED`, `UNVERIFIED`) puede tomarse como ejemplo de convención de anotación de evidencia, independientemente de la validez de las afirmaciones que etiqueta.
+- Inspeccion forense de artefactos GGUF: un investigador podria descargar el fichero y analizar su cabecera y tensores para estudiar formatos GGUF no convencionales, dado que el autor declara una arquitectura propia y un sha256 verificable.
+- Archivo y preservacion de "model cards" atipicas: util para estudiar como se documentan artefactos no estandar en Hugging Face y que metadatos reporta la plataforma frente a lo que declara el autor.
+- Reproduccion del juego de terminal `aether-universe`: el repositorio incluye instrucciones para compilar con Rust 1.81.0 y ejecutar un juego de mundo abierto, independientemente del GGUF.
+- Estudio de sistemas de receipts y verificacion de integridad: los ficheros HBP/HBI/SHA y los scripts de CI descritos pueden servir como ejemplo de sellado reproducible de artefactos.
+- Analisis de mecanismos de memoria sobre almacenamiento (Host8 rooms): la documentacion compara salas de 8 bytes sobre USB con RAM, GPU y `mmap`, lo que puede interesar a quien estudie tecnicas de memoria fuera de DRAM.
+- No se identifica ningun caso de uso de inferencia de lenguaje, razonamiento o generacion, porque no hay evidencia de que el artefacto sea un modelo funcional.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay MMLU, HumanEval, GSM8K ni ninguna otra métrica, y no existe base para estimar rendimiento alguno.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (no hay pesos ni tamaño declarado).
+- VRAM estimada para inferencia: no aplicable; el fichero GGUF ocupa 50.752 bytes y no hay evidencia de que sea cargable por runtimes de inferencia estandar (llama.cpp, vLLM, TGI).
 - GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no aplicable.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplicables; el repositorio no contiene artefactos de inferencia.
+- Compatibilidad con GPU de consumo: no disponible; el tamano del fichero no es indicativo de que exista un grafo computacional ejecutable.
+- Opciones de despliegue: no se documenta ninguna; llama.cpp y Ollama requeririan una arquitectura GGUF reconocida, y `asolaria-three-beings-rgb` no es una arquitectura estandar.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No existe categoría de comparación porque el artefacto no declara arquitectura, tamaño, contexto ni licencia. No se puede contrastar con alternativas tipo Llama, Mistral, Qwen, Gemma o DeepSeek, ya que cualquier comparación requeriría al menos parámetros y ventana de contexto, y ninguno de los dos datos está publicado.
+No disponible. No se conocen modelos comparables porque el artefacto no se presenta como un modelo de lenguaje con parametros, contexto y evaluacion medibles. Cualquier comparacion con modelos densos o MoE de 7B, 13B o similar carece de base.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de información técnica: sin arquitectura, parámetros, contexto, tokenizador ni datos de entrenamiento, el artefacto no es evaluable ni desplegable.
-- Sin licencia declarada: en ausencia de licencia, no hay permiso explícito de uso, modificación ni redistribución; el uso comercial queda en terreno jurídico inseguro.
-- Sin validación comunitaria: 0 descargas y 0 likes implican que no hay evidencia de uso, revisión ni reproducción por terceros.
-- Nomenclatura potencialmente engañosa: el nombre "asolaria-aether" y su ubicación en Hugging Face pueden hacer pensar en un modelo de IA, cuando el contenido es un README doctrinal.
-- Afirmaciones internas mezcladas: el propio documento etiqueta la mayoría de sus componentes como `UNVERIFIED`; solo un peldaño concreto (transcodificación 256 <-> 1024) se marca como `MEASURED`. No debe extrapolarse ese resultado al resto del sistema.
-- Metadatos incoherentes: la fecha de actualización es anterior a la de creación, lo que indica falta de control de calidad en la publicación.
-- Enlaces externos a repositorios de terceros o del autor: no verificados en esta ficha; podrían cambiar, desaparecer o contener material con sus propias restricciones.
-- Riesgo de alucinación: no evaluable, al no existir modelo con el que ejecutar pruebas.
-- Recomendación operativa: no incorporar este repositorio a pipelines de producción ni a catálogos de modelos sin que el autor publique pesos, licencia explícita y ficha técnica verificable.
+- No hay evidencia de que el fichero GGUF sea un modelo de lenguaje entrenado; la model card describe un artefacto con arquitectura propia no estandar y seis tensores de 64 × 64.
+- Ausencia total de datos de entrenamiento, evaluacion, tokenizador y configuracion de inferencia.
+- La licencia no esta declarada en la plataforma; la model card menciona MIT para el codigo y Apache-2.0 para piezas de terceros (HRM de Sapient, algoritmo jsQR), pero no aclara los terminos de los pesos.
+- Riesgo elevado de confusion: el repositorio mezcla un supuesto modelo, un juego en Rust, un portal WebRTC y documentacion de almacenamiento, lo que dificulta determinar que es reutilizable.
+- No debe emplearse en produccion para generacion de texto, codigo, atencion al cliente ni ninguna tarea de NLP sin verificacion independiente de que el artefacto es funcional.
+- Las afirmaciones del autor sobre "receipts" y "evidencia de operador" no constituyen validacion externa.
+- Cualquier uso comercial queda sujeto a aclarar previamente la licencia con el autor.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/asolaria-aether
-- Doctrina canónica citada (GitHub): https://github.com/JesseBrown1980/HYPER-BECHS--the-third-set/blob/acer/system-interpretations-2026-06-26/FABRIC-FIRST-CIPHER-ASOLARIA-AGENT-DOCTRINE-2026-06-27.md
-- Q-PRISM: https://github.com/JesseBrown1980/Q-PRISM-human-organoid-neural-stream-as-a-high-dimensional-control
-- waves-and-cascades: https://github.com/JesseBrown1980/Asolaria-waves-and-cascades-avoiding-collsions-and-causing-them
-- what-is-asolaria (reductions): https://github.com/JesseBrown1980/what-is-asolaria---how-do-we-get-reductions-in-everything
-- N-Nest: https://github.com/JesseBrown1980/N-Nest-Prime-INFINITE-SELF-REFLECT-AGENTS-NESTED
-- Metatagging for a Quantum universe: https://github.com/JesseBrown1980/Metatagging-data-for-a-Quantum-universe
+- Hugging Face: https://huggingface.co/Jessedbrown/asolaria-aether
+- Repositorio del autor en GitHub (mencionado en la model card): https://github.com/JesseBrown1980/Asolaria
+- Juego `aether-universe` (mencionado): https://github.com/JesseBrown1980/aether-universe
+- Portal HTTP-0 "The light hub" (mencionado): https://jessebrown1980.github.io/the-light-hub-http-0/
+- Paper, blog o demo adicionales: no disponible

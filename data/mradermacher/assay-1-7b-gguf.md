@@ -2,100 +2,93 @@
 
 ## Resumen
 
-`mradermacher/assay-1.7b-GGUF` es un repositorio de cuantizaciones en formato GGUF del modelo `Berk/assay-1.7b`, generado y publicado por mradermacher (autor conocido por producir versiones GGUF de terceros, con el apoyo de la empresa nethype GmbH). No se trata de un modelo nuevo entrenado desde cero, sino de una conversión del checkpoint original a una familia de ficheros GGUF pensados para inferencia en CPU, GPU de gama baja y entornos con memoria limitada mediante llama.cpp y sus derivados.
+Assay 1.7B es un modelo de decisión calibrada desarrollado por Berk y publicado originalmente en Hugging Face como `Berk/assay-1.7b`. La versión aquí descrita es la cuantización GGUF realizada por mradermacher, que permite ejecutar el modelo en entornos con recursos limitados mediante llama.cpp y herramientas compatibles. El modelo está orientado a tareas de clasificación de texto y generación de salidas estructuradas, no a la generación libre de texto conversacional.
 
-El modelo subyacente declara la tarea de `zero-shot-classification` y los tags `assay`, `calibrated` y `decision-model`, lo que apunta a un uso como clasificador o motor de decisión que no requiere reentrenamiento por cada conjunto de etiquetas. Cuenta con 1.720.574.976 parámetros (aproximadamente 1,72 mil millones), licencia Apache 2.0 y soporte declarado únicamente para inglés. La información pública disponible no detalla la arquitectura interna, la longitud de contexto, la composición del dataset de entrenamiento ni el proceso de ajuste (RLHF/DPO), por lo que esos apartados se marcan como no disponibles.
+La propuesta diferencial del modelo es su enfoque en calibración y predicción conforme (*conformal prediction*), técnicas que permiten asociar a cada decisión una medida de incertidumbre estadísticamente válida. Esto lo hace relevante para pipelines de producción donde no basta con una etiqueta, sino que se requiere saber cuándo el modelo es fiable y cuándo debe derivarse la decisión a un humano o a otro sistema.
 
-Su relevancia práctica es la de un clasificador pequeño y desplegable en local: el repositorio ofrece doce variantes de cuantización entre 0,9 GB (Q2_K) y 3,5 GB (f16), lo que permite ejecutarlo en hardware modesto o integrarlo en pipelines donde el coste por inferencia y la privacidad de los datos son críticos. El repositorio completo ocupa 16,0 GB, incluyendo todas las variantes.
+Con 1.720.574.976 parámetros totales (aproximadamente 1,7 mil millones), el modelo es lo suficientemente pequeño como para desplegarse en una sola GPU de consumo o incluso en CPU con las cuantizaciones adecuadas. La licencia Apache 2.0 facilita su uso comercial, y el formato GGUF lo integra directamente en el ecosistema de inferencia local.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio solo documenta la cuantizacion GGUF del modelo base `Berk/assay-1.7b`; no se describe la arquitectura interna) |
-| Parametros totales | 1.720.574.976 (aproximadamente 1,72 B) |
-| Parametros activos | no aplica / no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible (modelo base `Berk/assay-1.7b`, probablemente transformer decoder-only; no confirmado en la información) |
+| Parámetros totales | 1.720.574.976 |
+| Parámetros activos | no disponible (no es MoE según la información) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (modelo base original, presumiblemente safetensors; el repositorio incluye tambien el prefijo `convert_type: hf`) |
-| Tamano del repositorio | 16,0 GB (todas las cuantizaciones) |
-| Tarea declarada | zero-shot-classification |
-| Fecha de creacion (metadatos) | 2026-09-21 |
-| Ultima actualizacion (metadatos) | 2026-09-21 |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base original en safetensors |
+| Pipeline | text-classification |
+| Tamaño del repositorio | 16,0 GB |
+| Fecha de creación | 2026-09-21 |
+| Descargas | 179 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. La model card del repositorio GGUF se limita a indicar que son cuantizaciones estaticas de `Berk/assay-1.7b`, generadas con `quantize_version: 2` y `output_tensor_quantised: 1`, y que por el momento no se han publicado variantes con imatrix ni cuantizaciones ponderadas. No se especifica si el modelo original es un transformer denso, un MoE, un modelo hibrido ni cualquier otra variante, ni el numero de capas, dimensiones ocultas o tipo de atencion.
+La información disponible no detalla la arquitectura interna del modelo base `Berk/assay-1.7b` más allá de su naturaleza como modelo de decisión calibrada. Por el número de parámetros y el pipeline declarado (text-classification), se trata presumiblemente de un transformer de aproximadamente 1,7 mil millones de parámetros ajustado para producir etiquetas o decisiones estructuradas con calibración probabilística. No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas de RLHF o DPO.
 
-Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo fases de ajuste supervisado, RLHF o DPO, y si se aplicaron tecnicas de calibracion especificas. Los tags `calibrated` y `decision-model` sugieren que el modelo base fue disenado o ajustado para producir puntuaciones de decision calibradas, pero esta interpretacion no esta confirmada por la documentacion disponible y no debe tomarse como un dato verificado.
+La innovación técnica declarada es el uso de predicción conforme (*conformal prediction*), un marco estadístico que garantiza coberturas de error bajo supuestos de intercambiabilidad. Esto implica que el modelo no solo emite una decisión, sino que puede acompañarla de conjuntos de predicción con garantías de cobertura. Los tags `calibrated` y `structured-output` refuerzan que el diseño prioriza la fiabilidad de la decisión sobre la fluidez generativa. La cuantización GGUF realizada por mradermacher es estática; según la model card, no hay cuantizaciones ponderadas con imatrix disponibles en el momento de la publicación.
 
 ## Capacidades
 
-- Clasificacion zero-shot: la tarea declarada en el pipeline es `zero-shot-classification`, lo que implica asignar etiquetas definidas en tiempo de inferencia sin entrenamiento adicional.
-- Uso como modelo de decision: el tag `decision-model` apunta a su empleo en tareas de enrutado, seleccion o puntuacion con umbrales.
-- Calibracion de puntuaciones: el tag `calibrated` sugiere que las probabilidades de salida estarian calibradas, si bien no se documenta el metodo ni se aportan metricas de calibracion (ECE, Brier, etc.).
-- Generacion de texto conversacional: el repositorio incluye el tag `conversational` y `endpoints_compatible`, aunque no se detallan las capacidades generativas reales.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas a ingles segun el campo `language` de la model card.
-- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
+- Clasificación de texto con salidas calibradas y, presumiblemente, conjuntos de predicción conformes.
+- Generación de salidas estructuradas (structured output), adecuada para integración en pipelines que requieren JSON u otros formatos rígidos.
+- Modelo de decisión: orientado a emitir etiquetas o veredictos con una medida de confianza asociada.
+- Soporte de conversación (tag `conversational`), aunque su pipeline principal es clasificación, no diálogo abierto.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su despliegue como servicio.
+- Capacidades multilingües limitadas al inglés según la model card.
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Clasificacion de tickets de soporte: el modelo puede recibir el texto de una incidencia y una lista de categorias candidatas (facturacion, red, acceso, hardware) definidas en tiempo de inferencia, devolviendo la etiqueta mas probable sin necesidad de reentrenar cuando cambia el catalogo de categorias.
-- Enrutado de consultas en pipelines RAG: dado un mensaje de usuario, decidir que indice documental o que herramienta interna debe atender la peticion, aprovechando la naturaleza de `decision-model` y su tamano reducido para mantener baja la latencia del router.
-- Moderacion de contenido ligera: evaluar texto generado por usuarios contra etiquetas como `spam`, `insulto`, `contenido valido`, con la ventaja de que las etiquetas pueden redefinirse sin reentrenamiento.
-- Etiquetado automatizado de corpus: clasificar grandes volumenes de documentos (soporte, legales, encuestas) en categorias definidas a posteriori, ejecutando la inferencia en CPU con cuantizaciones Q4_K_M de 1,2 GB.
-- Filtrado previo en pipelines de anotacion humana: descartar o priorizar ejemplos antes de que un anotador los revise, reduciendo el coste de anotacion mediante puntuaciones de confianza.
-- Analisis de sentimiento con taxonomias variables: definir en cada proyecto etiquetas especificas (positivo, neutro, negativo, ironico) sin disponer de un dataset etiquetado de dominio.
-- Clasificacion en entornos con requisitos de privacidad: al poder ejecutarse en local con llama.cpp u Ollama, los textos no salen de la infraestructura propia, lo que resulta adecuado para datos medicos, legales o financieros.
-- Prototipado rapido de clasificadores: validar un esquema de etiquetas antes de invertir en el entrenamiento de un modelo supervisado especifico.
+- Moderación de contenido con umbral de confianza: el modelo puede clasificar textos como aptos o no aptos y, gracias a la calibración, permitir fijar umbrales que controlen la tasa de falsos negativos derivando los casos inciertos a revisión humana.
+- Triaje de tickets de soporte: clasificación automática de incidencias por categoría y prioridad, con conjuntos de predicción conformes que indican cuándo la etiqueta es ambigua y conviene escalar el ticket.
+- Filtrado de datos para entrenamiento: uso del modelo para etiquetar grandes volúmenes de texto (calidad, toxicidad, relevancia) con garantías de cobertura estadística antes de incorporarlos a un corpus de entrenamiento.
+- Enrutamiento de consultas en un sistema RAG: decidir si una consulta debe responderse con recuperación, con respuesta directa o derivarse a un humano, usando la calibración para evitar enrutamientos erróneos.
+- Detección de anomalías en pipelines de datos: clasificación de registros como válidos o sospechosos con umbrales ajustables según el coste del error en cada dominio.
+- Validación de salidas estructuradas: verificar que respuestas generadas por otros modelos cumplen un esquema o criterio, aprovechando la naturaleza de decisión del modelo y su bajo coste de inferencia (1,7B parámetros).
+- Despliegue en el borde o en CPU: con cuantizaciones Q4_K_M (~1,2 GB) puede ejecutarse en dispositivos con poca memoria para clasificación en tiempo real.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio GGUF no incluye metricas de evaluacion (ni MMLU, ni HumanEval, ni GSM8K, ni resultados especificos de clasificacion como accuracy o F1), y la busqueda web realizada no ha devuelto documentacion tecnica relevante sobre el modelo `Berk/assay-1.7b`.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos): aproximadamente 0,9 GB con Q2_K, 1,2 GB con Q4_K_S o Q4_K_M, 1,4 GB con Q5_K_M, 1,5 GB con Q6_K, 1,9 GB con Q8_0 y 3,5 GB con f16. Hay que anadir el consumo del contexto (KV cache), que no puede estimarse porque se desconoce la longitud de contexto y la configuracion de atencion.
-- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente para las cuantizaciones de 4 bits; una RTX 3060, RTX 4060, RTX 4090 o similar permite mantener el modelo completo en VRAM junto con contexto amplio. En el extremo opuesto, A100 o H100 no aportan ventaja significativa para este tamano salvo por despliegue agregado de muchas replicas.
-- Ejecucion en CPU: viable en cualquier equipo con al menos 2-4 GB de RAM libre para las cuantizaciones pequenas (Q2_K a Q4_K_M) y 6-8 GB para f16.
-- Cabe en GPU consumer: si, en practicamente cualquier GPU dedicada moderna e incluso en GPUs integradas con memoria compartida suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y servidores compatibles con GGUF. Para el modelo base en formato Hugging Face se podrian usar vLLM o TGI, pero esos motores no cargan GGUF de forma nativa.
-- Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
+- VRAM estimada para inferencia: aproximadamente 1,0–1,5 GB con cuantizaciones Q3_K_S a Q4_K_M; alrededor de 1,9 GB con Q8_0; unos 3,5 GB con f16.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para las cuantizaciones pequeñas; RTX 3060, RTX 4060, RTX 4090, A100 o H100 son más que suficientes. El modelo también puede ejecutarse íntegramente en CPU.
+- Cabe en GPU de consumo: sí, en cualquier GPU moderna con 4 GB o más de VRAM, e incluso en iGPU con memoria unificada usando Q4_K_S o Q4_K_M.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y servidores compatibles con GGUF. El modelo base en safetensors puede servirse con vLLM o TGI, aunque la información no confirma compatibilidad explícita.
+- Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño (1,7B) y las cuantizaciones de ~1,2 GB, se espera una latencia baja en GPU de consumo, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. La busqueda web realizada no ha devuelto ningun resultado relacionado con `assay-1.7b` ni con clasificadores zero-shot de ese tamano, por lo que no es posible construir una comparativa con datos verificables.
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Datos de rendimiento |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Formato |
 |---|---|---|---|---|---|
-| assay-1.7b (via mradermacher GGUF) | 1,72 B | no disponible | apache-2.0 | GGUF | no disponible |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| assay-1.7b (este) | 1,72B | no disponible | Clasificación calibrada / conformal | Apache 2.0 | GGUF, safetensors |
+| Modelos de clasificación tipo DeBERTa-v3-base | ~0,18B | 512 tokens típicamente | Clasificación estándar | MIT / Apache 2.0 | safetensors |
+| LLMs pequeños de propósito general (p. ej., Qwen2.5-1.5B) | ~1,5B | 32k tokens típicamente | Generación general | Apache 2.0 | GGUF, safetensors |
+
+La comparación directa es limitada porque assay-1.7b se posiciona como modelo de decisión calibrada, una categoría poco poblada. Frente a clasificadores BERT pequeños, ofrece mayor capacidad de razonamiento y salidas estructuradas a costa de más parámetros; frente a LLMs generalistas del mismo tamaño, su ventaja declarada es la calibración y la predicción conforme, aunque no hay benchmarks públicos que lo confirmen en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Idiomas: el campo `language` de la model card declara unicamente ingles; no hay evidencia de soporte para castellano ni para otras lenguas.
-- Arquitectura y contexto desconocidos: al no documentarse la longitud de contexto ni la arquitectura, no es posible estimar el comportamiento en entradas largas ni planificar el consumo de memoria del KV cache.
-- Riesgo de alucinacion: no cuantificado. Al tratarse de un modelo orientado a clasificacion y decision, las salidas pueden ser puntuaciones mal calibradas en dominios alejados de los datos de entrenamiento, a pesar del tag `calibrated`.
-- Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o equidad. Un modelo entrenado predominantemente en ingles puede degradar su comportamiento con texto en otros idiomas o con variantes dialectales.
-- Ausencia de benchmarks: sin metricas publicas no es posible comparar su rendimiento con alternativas ni justificar su eleccion en produccion mas alla de criterios de tamano y coste.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, pero conviene verificar la licencia del modelo base `Berk/assay-1.7b`, ya que este repositorio solo redistribuye cuantizaciones.
-- Procedencia de la cuantizacion: las cuantizaciones son estaticas; el autor indica que no hay variantes con imatrix ni ponderadas, lo que en los niveles mas agresivos (Q2_K, Q3_K_S) puede degradar la calidad de forma notable.
-- Metadatos anomalos: las fechas de creacion y actualizacion indicadas (2026-09-21) son posteriores a la fecha actual, lo que sugiere un error en los metadatos del repositorio y obliga a tratar con cautela cualquier dato temporal asociado.
-- Adopcion nula: el repositorio registra 0 descargas y 0 likes, por lo que no existe comunidad, informes de uso ni validacion independiente.
-- Sin soporte de pesos ponderados ni MMLU/MMProj: no se indica soporte multimodal ni herramientas de evaluacion incluidas.
+- Solo soporta inglés según la model card; no se debe esperar un rendimiento fiable en castellano u otros idiomas.
+- No hay benchmarks publicados en la información disponible, por lo que el rendimiento real en tareas concretas debe validarse empíricamente antes de producción.
+- La calibración y la predicción conforme dependen de supuestos de intercambiabilidad entre datos de calibración y datos de producción; si la distribución cambia, las garantías de cobertura pueden no mantenerse.
+- Riesgo de alucinación y de clasificaciones erróneas en dominios alejados de los datos de entrenamiento; se recomienda monitorizar y recalibrar periódicamente.
+- No se documentan sesgos conocidos, pero al ser un modelo entrenado principalmente en inglés puede heredar sesgos culturales y lingüísticos de sus datos.
+- Aunque la licencia es Apache 2.0 y permite uso comercial, conviene revisar la model card del modelo base `Berk/assay-1.7b` por si añade restricciones adicionales.
+- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar la calibración, que es precisamente la propiedad clave del modelo; para producción se recomienda Q4_K_M o superior.
+- La información sobre arquitectura, contexto y datos de entrenamiento es escasa; la ficha no puede confirmar detalles técnicos internos.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/assay-1.7b-GGUF
+- Repositorio GGUF: https://huggingface.co/mradermacher/assay-1.7b-GGUF
 - Modelo base: https://huggingface.co/Berk/assay-1.7b
-- Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#assay-1.7b-GGUF
-- Repositorio de peticiones y preguntas frecuentes del cuantizador: https://huggingface.co/mradermacher/model_requests
-- README de referencia sobre el uso de ficheros GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Empresa que apoya al cuantizador: https://www.nethype.de/
-- Resultados de busqueda web: no se han encontrado enlaces relevantes sobre el modelo; los resultados devueltos corresponden a paginas de ayuda de Google Translate y no guardan relacion con `assay-1.7b`.
+- Página de descargas del cuantizador: https://hf.tst.eu/model#assay-1.7b-GGUF
+- Solicitudes de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

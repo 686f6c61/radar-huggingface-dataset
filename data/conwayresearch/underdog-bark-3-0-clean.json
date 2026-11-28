@@ -53,8 +53,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "LoyalAI/Underdog-Bark-3.0-Clean",
+  "renamed_at": "2026-11-28T02:59:48.710Z",
   "benchmarks": [],
   "sources": [
     {

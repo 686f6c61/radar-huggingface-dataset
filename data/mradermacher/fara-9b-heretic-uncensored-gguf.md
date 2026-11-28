@@ -2,54 +2,52 @@
 
 ## Resumen
 
-fara-9b-heretic-uncensored-GGUF es la versión cuantizada en formato GGUF del modelo lmcfarlin/fara-9b-heretic-uncensored, un derivado "abliterated" (decensurado) del modelo Fara-9B de Microsoft, especializado en computer-use y automatización de navegador. Lo publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face que distribuye estáticamente versiones GGUF de modelos populares para su uso con llama.cpp y herramientas compatibles. El modelo base es multimodal (visión-lenguaje) y está orientado a tareas de agente web: interpretar capturas de pantalla del navegador y ejecutar acciones sobre la interfaz.
+Fara-9B-Heretic-Uncensored-GGUF es la versión cuantizada en formato GGUF del modelo lmcfarlin/Fara-1.5-9B-Heretic-Uncensored, un modelo de lenguaje y visión de 8.953.803.264 parámetros (aproximadamente 9B) orientado a la automatización de navegador y a la interacción con ordenadores (computer-use agents). La cuantización la firma mradermacher, un autor habitual en la publicación de versiones GGUF de modelos open source para su uso con llama.cpp y derivados. La relevancia del modelo radica en su especialización como agente web multimodal: combina comprensión de capturas de pantalla con generación de acciones sobre interfaces, lo que lo hace útil para pipelines de automatización de navegador.
 
-Con 8.953.803.264 parámetros (aproximadamente 9B), el modelo se posiciona en el rango de tamaño que cabe en GPUs de consumo con cuantizaciones agresivas. La versión "heretic-uncensored" implica que se han eliminado o atenuado los mecanismos de rechazo y alineación de seguridad del modelo original mediante técnicas de abliteration, lo que lo hace adecuado para investigación sobre comportamiento de modelos y para escenarios donde las negativas del modelo base resultan un obstáculo, pero también conlleva riesgos importantes de uso indebido.
+El modelo base deriva de la familia Fara (etiquetada como Fara-1.5) y ha sido sometido a un proceso de "abliteration" o decensurado (etiquetas heretic, uncensored, decensored, abliterated), que elimina total o parcialmente los mecanismos de rechazo del modelo original. Esto implica que el modelo responderá a solicitudes que el modelo de referencia filtraría, lo que tiene implicaciones directas para su uso en producción. Se distribuye bajo licencia MIT, lo que permite uso comercial, aunque con las salvedades legales y éticas que se detallan más abajo.
 
-La relevancia de esta ficha radica en que combina tres tendencias actuales: los agentes de computer-use (CUA), la cuantización GGUF para despliegue local y la modificación de alineación mediante abliteration. El repo ocupa 83,4 GB e incluye múltiples cuantizaciones estáticas, desde Q2_K hasta f16, además de los ficheros mmproj necesarios para el procesamiento multimodal.
+La versión GGUF incluye además un fichero mmproj (proyección multimodal) en cuantizaciones Q8_0 y f16, necesario para procesar entradas de imagen. El repositorio ocupa 83,4 GB en total por la acumulación de todas las cuantizaciones estáticas, y el modelo declara soporte únicamente para inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (visión-lenguaje), basada en Fara-9B; detalles internos no disponibles |
-| Parametros totales | 8.953.803.264 (~9B) |
-| Parametros activos | no disponible (no es MoE según los datos disponibles) |
+| Arquitectura | no disponible (modelo multimodal vision-language; pesos derivados de Fara-1.5-9B) |
+| Parametros totales | 8.953.803.264 |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16; también disponibles quants imatrix en repo i1-GGUF |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
 | Idiomas soportados | en (inglés) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
-| Modelo base | lmcfarlin/fara-9b-heretic-uncensored (a su vez derivado de Fara-9B de Microsoft) |
-| Tamaño del repo | 83,4 GB |
-| Pipeline | no disponible |
+| Formato de pesos | GGUF (con fichero mmproj para visión); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna en la documentación proporcionada. Por los tags y el modelo base se deduce que se trata de un transformer multimodal con capacidad de visión-lenguaje, diseñado específicamente para computer-use: procesa capturas de pantalla y genera acciones de interfaz (clics, escritura, navegación). El componente mmproj (proyector multimodal) presente en el repo confirma la integración de un encoder visual con el modelo de lenguaje.
+No se dispone de información detallada sobre la arquitectura interna en la información proporcionada. Por las etiquetas y el nombre (Fara-1.5-9B) se trata de un modelo vision-language multimodal con capacidad de computer-use y web-agent, es decir, un transformer con codificador visual y proyección multimodal (mmproj) que permite procesar capturas de pantalla e imágenes junto con texto. El número de parámetros (8.953.803.264) corresponde al modelo de lenguaje; el codificador visual y la proyección añaden parámetros adicionales no desglosados.
 
-El modelo base Fara-9B procede de Microsoft y está orientado a la automatización de navegador y tareas de agente web. La variante "heretic-uncensored" ha sido sometida a un proceso de abliteration que elimina las direcciones de activación asociadas al rechazo de peticiones, reduciendo la tendencia del modelo a negarse a responder. No se han publicado en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. La cuantización la realiza mradermacher con su pipeline estándar (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1).
+Tampoco se detallan los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO) ni innovaciones técnicas concretas más allá de la especialización en agentes web. El proceso de "abliteration" aplicado por el autor del modelo base (lmcfarlin) modifica los pesos para eliminar direcciones de rechazo, lo que constituye una intervención sobre el modelo entrenado original. La cuantización realizada por mradermacher es estática (quantize_version 2, output_tensor_quantised 1, convert_type hf), con quants ponderados/imatrix disponibles en un repositorio separado.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés.
-- Comprensión de imágenes y capturas de pantalla (visión-lenguaje) mediante el proyector multimodal mmproj.
-- Computer-use y control de interfaz: interpretación de pantallas y generación de acciones para automatizar navegador.
-- Agente web y browser automation: navegación multi-paso orientada a objetivos.
-- Soporte de razonamiento multi-paso para tareas de agente (magentic).
-- Capacidad de tool calling / function calling: no confirmada explícitamente en la información disponible.
-- Multilingüismo: limitado a inglés según los metadatos.
-- Modo "uncensored": menor probabilidad de rechazo ante peticiones que el modelo base rechazaría.
+- Comprensión de imágenes y capturas de pantalla (visión-language) mediante el fichero mmproj.
+- Automatización de navegador (browser-automation) y uso de ordenador (computer-use, cua).
+- Comportamiento como agente web: interpretación de la interfaz y generación de acciones.
+- Soporte multimodal para tareas de agente que requieren observar la pantalla.
+- Modelo decensurado/abliterado: no aplica los rechazos típicos del modelo original.
+- Soporte de tool calling / function calling: no confirmado en la información disponible.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Modo thinking explícito, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Automatización de pruebas de interfaz web: el modelo puede interpretar capturas de pantalla de una aplicación y generar secuencias de acciones (clics, relleno de formularios) para validar flujos de usuario en pipelines de QA, aprovechando su naturaleza de agente de computer-use.
-- Investigación sobre alineación y seguridad: al ser una variante abliterated, permite estudiar cómo cambia el comportamiento del modelo al eliminar los mecanismos de rechazo, comparándolo con el Fara-9B original.
-- Agentes de navegador para extracción de datos: navegación autónoma por sitios web para recopilar información estructurada, con la ventaja de ejecutarse localmente en GGUF mediante llama.cpp.
-- Prototipado de asistentes de escritorio: integración en aplicaciones que necesitan comprender la pantalla del usuario y sugerir o ejecutar acciones, desplegable en hardware de consumo gracias a las cuantizaciones Q4.
-- Evaluación de robustez de agentes CUA: el modelo sirve como sujeto de prueba para medir tasas de éxito en tareas de automatización de navegador bajo distintas cuantizaciones (Q2 a Q8), analizando la degradación de capacidad agéntica con la compresión.
-- Entornos sin conectividad o con requisitos de privacidad: al ejecutarse localmente con llama.cpp u Ollama, permite automatización de navegador sin enviar capturas de pantalla a APIs externas, útil en sectores regulados.
-- Generación de contenido sin restricciones de rechazo: escenarios de escritura creativa o investigación donde las negativas del modelo base interrumpen el flujo, siempre con las advertencias de la sección de limitaciones.
+- Automatización de navegador para tareas repetitivas: el modelo puede interpretar capturas de la página y generar las acciones necesarias para rellenar formularios, navegar o extraer datos, gracias a su especialización como web-agent y a la entrada multimodal.
+- Testing de interfaces web (QA automatizado): útil para recorrer flujos de usuario en un navegador headless y detectar regresiones visuales o de interacción, aprovechando la comprensión de capturas de pantalla.
+- Extracción de información de portales: lectura de pantallas y documentos renderizados para estructurar datos en pipelines de scraping controlado, con la ventaja de operar sobre la representación visual y no solo sobre el DOM.
+- Asistentes de escritorio para tareas guiadas: el modelo puede servir de motor de decisión en agentes que operan sobre aplicaciones de escritorio mediante capturas de pantalla, dentro de un entorno controlado.
+- Investigación sobre alineación y decensurado: al ser una variante abliterada, es útil para estudiar el comportamiento de modelos sin filtros de rechazo, comparando respuestas con el modelo base original en entornos de laboratorio.
+- Prototipado de agentes autónomos en local: con las cuantizaciones Q4_K_S o Q4_K_M (5,5–5,8 GB) puede ejecutarse en hardware de consumo, lo que facilita experimentar con agentes web sin depender de APIs externas.
+- Generación de datos sintéticos para entrenamiento de agentes: el modelo puede producir trayectorias de interacción sobre interfaces que sirvan como datos de entrenamiento, siempre que se revise el contenido generado.
 
 ## Benchmarks y rendimiento
 
@@ -57,51 +55,48 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos del modelo de lenguaje, sin contar el proyector visual ni el contexto):
-  - Q2_K: ~4,0 GB
-  - Q3_K_M: ~4,8 GB
-  - Q4_K_M: ~5,8 GB
-  - Q5_K_M: ~6,6 GB (estimado a partir de Q5_K_S de 6,4 GB)
-  - Q6_K: ~7,5 GB
-  - Q8_0: ~9,6 GB
-  - f16: ~18,0 GB
-- Añadir ~0,7 GB (mmproj Q8_0) o ~1,0 GB (mmproj f16) para las capacidades de visión, más la memoria del contexto KV.
-- GPU recomendadas: RTX 4090 (24 GB) permite Q8_0 o f16 con contexto moderado; RTX 3090/4080 (16-24 GB) para Q6_K y Q8_0; RTX 4060 Ti 16 GB o RTX 3060 12 GB para Q4_K_M y Q5; GPUs de 8 GB pueden ejecutar Q4_K_S con contexto reducido. Para despliegue servidor, A100 o H100 si se busca throughput alto, aunque el tamaño no las requiere.
-- Cabe en GPU de consumo: sí, desde Q2_K en GPUs de 6-8 GB hasta Q8_0 en GPUs de 12-16 GB o superiores.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. Los tags indican endpoints_compatible. Para el modelo base en safetensors, transformers. No se menciona soporte explícito de vLLM o TGI para esta versión GGUF.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~4,0 GB.
+  - Q3_K_S: ~4,4 GB; Q3_K_M: ~4,8 GB; Q3_K_L: ~5,1 GB.
+  - IQ4_XS: ~5,4 GB; Q4_K_S: ~5,5 GB; Q4_K_M: ~5,8 GB.
+  - Q5_K_S: ~6,4 GB; Q5_K_M: ~6,6 GB.
+  - Q6_K: ~7,5 GB; Q8_0: ~9,6 GB; f16: ~18,0 GB.
+  - Añadir el mmproj: ~0,7 GB (Q8_0) o ~1,0 GB (f16).
+- GPU recomendadas: para cuantizaciones Q4–Q5, tarjetas consumer con 8–12 GB de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080). Para Q8_0 o f16, GPUs de 16–24 GB (RTX 4090, A10, L4) o superiores (A100, H100) si se busca mayor throughput.
+- Cabe en GPU consumer: sí, en cuantizaciones Q2_K a Q5_K_M con GPUs de 8 GB o más; las versiones Q6_K y Q8_0 requieren 12–16 GB.
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio y otros frontends compatibles con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI, pero esta versión concreta está pensada para llama.cpp. La model card menciona endpoints_compatible.
+- Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fara-9b-heretic-uncensored-GGUF (este) | ~9B | no disponible | Computer-use multimodal, decensurado | MIT | GGUF |
-| Fara-9B (Microsoft, original) | ~9B | no disponible | Computer-use multimodal, alineado | no disponible en esta ficha | safetensors |
-| Qwen2.5-VL-7B | ~7B | no disponible en esta ficha | Visión-lenguaje general | no disponible en esta ficha | safetensors, GGUF |
-| UI-TARS-7B | ~7B | no disponible en esta ficha | Agente de interfaz gráfica | no disponible en esta ficha | safetensors |
+| fara-9b-heretic-uncensored-GGUF (este) | 8,95B | no disponible | Sí (mmproj) | MIT | GGUF en HF |
+| lmcfarlin/Fara-1.5-9B-Heretic-Uncensored (base) | 8,95B | no disponible | Sí | MIT | safetensors en HF |
+| Fara-1.5-9B (modelo original, sin decensurar) | no disponible | no disponible | Sí | no disponible | no disponible |
 
-La comparación se limita a categorías; no se dispone de datos de rendimiento comparativo en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo abliterated/uncensored: se han eliminado los mecanismos de rechazo, por lo que puede generar contenido dañino, ofensivo o ilegal. No apto para despliegue orientado al público sin filtros adicionales.
-- Riesgo elevado de alucinación en tareas de agente: la interpretación de capturas de pantalla y la generación de acciones de interfaz pueden producir clics o entradas erróneas; requiere supervisión y validación en producción.
-- Idioma: solo inglés según los metadatos; el rendimiento en castellano no está garantizado.
-- Longitud de contexto no documentada: limita la planificación de conversaciones o tareas de agente de largo horizonte.
-- Licencia MIT: permite uso comercial, pero el autor no ofrece garantías; la responsabilidad legal por el contenido generado recae en el desplegador.
-- Procedencia: es una cuantización de un derivado de la comunidad de un modelo de Microsoft; no hay validación oficial de Microsoft sobre esta variante.
-- Cuantizaciones bajas (Q2_K, Q3) degradan especialmente las capacidades de razonamiento y percepción visual; para tareas de computer-use se recomienda Q4_K_M o superior.
-- El repo ocupa 83,4 GB por incluir todas las cuantizaciones; conviene descargar solo el fichero necesario.
-- Sin datos de benchmarks: no es posible verificar la calidad frente al Fara-9B original ni frente a alternativas.
+- Modelo decensurado/abliterado: los mecanismos de rechazo han sido eliminados o reducidos, por lo que puede generar contenido dañino, ofensivo o ilegal. No es apto para despliegues públicos sin moderación adicional.
+- Riesgo elevado de alucinación, especialmente en tareas de agente donde una acción errónea sobre una interfaz puede tener consecuencias reales (envíos de formularios, compras, borrados).
+- Idiomas: solo inglés declarado; el rendimiento en castellano no está garantizado.
+- Longitud de contexto no documentada; no se debe asumir una ventana amplia para conversaciones o capturas de pantalla extensas.
+- Licencia MIT: permite uso comercial, pero el usuario asume la responsabilidad legal sobre el contenido generado y sobre las acciones ejecutadas por el agente. La licencia del modelo base no exime de cumplir la normativa aplicable (RGPD, términos de servicio de los sitios automatizados, etc.).
+- La automatización de navegador puede violar los términos de servicio de sitios web; verificar antes de usar en producción.
+- El repositorio ocupa 83,4 GB por incluir todas las cuantizaciones; conviene descargar solo el fichero necesario.
+- El fichero mmproj es imprescindible para las capacidades de visión; sin él, el modelo funciona solo como texto.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/fara-9b-heretic-uncensored-GGUF
-- Modelo base (safetensors): https://huggingface.co/lmcfarlin/fara-9b-heretic-uncensored
-- Quants imatrix: https://huggingface.co/mradermacher/fara-9b-heretic-uncensored-i1-GGUF
-- Página de descargas del cuantizador: https://hf.tst.eu/model#fara-9b-heretic-uncensored-GGUF
-- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Repositorio GGUF: https://huggingface.co/mradermacher/fara-9b-heretic-uncensored-GGUF
+- Modelo base: https://huggingface.co/lmcfarlin/Fara-1.5-9B-Heretic-Uncensored
+- Quants ponderados/imatrix: https://huggingface.co/mradermacher/fara-9b-heretic-uncensored-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#fara-9b-heretic-uncensored-GGUF
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización del autor: https://huggingface.co/mradermacher/model_requests
+- Gráfico de perplejidad de quants (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - nethype GmbH: https://www.nethype.de/

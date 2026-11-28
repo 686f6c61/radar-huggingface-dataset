@@ -2,101 +2,116 @@
 
 ## Resumen
 
-tiny-voca-arabic es un modelo de síntesis de voz (text-to-speech) para árabe estándar moderno (فصحى) desarrollado por el usuario oddadmix. Se trata de un modelo extremadamente compacto, con solo 4,5 millones de parámetros (18 MB en PyTorch, 21 MB en ONNX), entrenado desde cero sobre la arquitectura tiny-voca de Muhammed Nazeem y un nuevo front-end fonético árabe. Genera audio mono a 24 kHz a partir de texto, incluyendo el generador de forma de onda, sin vocoder neuronal separado.
+tiny-voca-arabic es un modelo de síntesis de voz (text-to-speech) para árabe estándar moderno (فصحى) desarrollado por oddadmix. Se trata de un modelo extremadamente compacto, con tan solo 4.531.723 parámetros (18 MB en PyTorch, 21 MB en ONNX), entrenado desde cero sobre la arquitectura tiny-voca de Muhammed Nazeem y un front-end fonético árabe nuevo. Convierte texto en audio de 24 kHz mono a aproximadamente 200 veces el tiempo real sobre dos hilos de CPU, lo que lo sitúa en la categoría de modelos desplegables en entornos sin GPU.
 
-Su relevancia radica en la eficiencia: funciona a aproximadamente 200 veces el tiempo real sobre dos hilos de CPU, lo que lo hace apto para despliegue en entornos sin GPU, dispositivos embebidos o asistentes de voz de baja latencia. Frente a los TTS neuronales habituales de cientos de millones de parámetros, demuestra que un modelo de 4,5M puede alcanzar inteligibilidad alta (CER del 1,8% en test según transcripción con Whisper large-v3) en una lengua con fonología compleja como el árabe.
+El modelo resuelve el problema de la síntesis de voz en árabe estándar moderno con un coste computacional mínimo, algo relevante para asistentes de voz, sistemas embebidos y aplicaciones de accesibilidad que necesitan TTS en árabe sin depender de infraestructura de GPU. Incluye el generador de forma de onda completo (sintetizador fuente-filtro, sin vocoder neuronal separado) y un front-end que realiza normalización de números, diacritización con CATT y conversión a fonemas mediante reglas.
 
-El modelo se distribuye bajo licencia Apache-2.0, con pesos en ONNX y PyTorch, y una única voz sintética identificada como `a000`. Está entrenado sobre 45.737 emisiones (89 horas) de un corpus sintético de un solo hablante con turnos de diálogo de asistente.
+Su relevancia actual radica en que, según el Open TTS Leaderboard (versión 1.7.3, 24 de noviembre de 2026), ocupa el primer puesto entre 13 modelos de árabe en la tabla de voz fija, con un WER de 3,40 frente al 4,45 del segundo clasificado, a pesar de ser órdenes de magnitud más pequeño que los competidores.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | tiny-voca (red acústica + sintetizador source-filter; sin vocoder neuronal) |
+| Arquitectura | tiny-voca (modelo acústico + sintetizador fuente-filtro; sin vocoder neuronal) |
 | Parametros totales | 4.531.723 (18 MB PyTorch, 21 MB ONNX) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (límite práctico de 500 fonemas / 32 s por llamada) |
-| Tipos de cuantizacion | no disponible (pesos ONNX y PyTorch sin cuantización declarada) |
-| Idiomas soportados | árabe estándar moderno (ar, MSA) |
+| Longitud de contexto | no disponible (procesa una frase por llamada; máximo de 500 fonemas por segmento) |
+| Tipos de cuantizacion | no disponible (se distribuye en ONNX; no se documentan variantes cuantizadas) |
+| Idiomas soportados | árabe (árabe estándar moderno, MSA) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (onnxruntime) y checkpoint PyTorch (.pt) |
+| Formato de pesos | ONNX (ejecutable con onnxruntime); se mencionan pesos PyTorch de 18 MB |
+| Frecuencia de muestreo | 24 kHz mono |
+| Voces | una voz sintética MSA (`a000`) |
+| Datos de entrenamiento | 45.737 enunciados, 89 horas |
+| Entrenamiento | 104.000 pasos, 2,6 horas en una GPU |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura tiny-voca: una red acústica que predice duraciones, pausas, tono (F0), sonoridad y energía a partir de una secuencia de fonemas, seguida de un sintetizador source-filter que genera la forma de onda directamente. No emplea vocoder neuronal independiente ni decodificación especulativa. El front-end es específico para árabe: expansión de números a palabras MSA, diacritización automática con CATT (encoder-decoder, Apache-2.0) y conversión reglada a 49 símbolos fonéticos que cubren asimilación de letras solares, elisión de hamzat al-wasl con vocales de apoyo, acortamiento de vocales largas ante wasl, shadda como consonante duplicada, tanween, tāʾ marbūṭa (t en interior de frase, omitida en pausa), formas pausales en puntuación, refuerzo enfático de /a/ junto a ص ض ط ظ ق (y tras خ غ ر), lām oscura en الله y asignación de acento por peso silábico.
+El modelo emplea la arquitectura tiny-voca, que combina un modelo acústico y un sintetizador fuente-filtro. La red predice duraciones, pausas, tono (pitch), sonoridad (voicing) y energía; a partir de esas predicciones, el sintetizador fuente-filtro genera la forma de onda directamente, sin un vocoder neuronal separado. El front-end, específico para árabe, consta de cuatro etapas: expansión de números a palabras MSA, diacritización mediante CATT (encoder-decoder, Apache-2.0), conversión a fonemas con un conversor basado en reglas de 49 símbolos y, finalmente, la síntesis acústica.
 
-El entrenamiento se realizó desde cero (sin reutilizar pesos de tiny-voca) sobre el dataset oddadmix/msa-duplex-assistant-tts, con 49.793 clips de los que 45.737 superaron los controles de alineamiento, totalizando 89 horas. Se completaron 104.000 pasos en 2,6 horas sobre una única GPU. Un detalle técnico destacable es el tratamiento de las terminaciones de caso (iʿrāb): durante el alineamiento, cada terminación en interior de frase se conservó o eliminó por clip según la comparación de verosimilitud CTC con el audio real, de modo que el modelo aprendió de lo efectivamente pronunciado; aproximadamente la mitad se descartaron. No se documenta uso de RLHF ni DPO.
+El conversor fonético implementa asimilación de letras solares, elisión de hamzat al-wasl y vocales de apoyo, acortamiento de vocales largas ante wasl, shadda como consonante duplicada, tanween, tāʾ marbūṭa (`t` dentro de frase, omitida en pausa), formas pausales en puntuación, refuerzo enfático de /a/ junto a ص ض ط ظ ق (y tras خ غ ر), lām oscura en الله y acentuación según el peso silábico. El entrenamiento se realizó desde cero sobre el dataset `oddadmix/msa-duplex-assistant-tts` (45.737 enunciados, 89 horas), sin reutilizar pesos de tiny-voca. Durante la alineación de datos, cada terminación casual (iʿrāb) en mitad de frase se conservó o eliminó por clip según lo que el audio soportaba (comparación de verosimilitud CTC); aproximadamente la mitad se eliminaron, de modo que el modelo aprendió de lo que realmente se pronunció.
 
 ## Capacidades
 
-- Síntesis de voz a partir de texto en árabe estándar moderno con una voz sintética única (`a000`).
-- Salida de audio mono a 24 kHz generada directamente por el modelo, sin vocoder externo.
-- Control de velocidad mediante el parámetro `speed` (1 = velocidad predicha, valores mayores aceleran).
-- Control de tono mediante `pitch_shift` (incremento en log F0; 0,058 ≈ un semitono) y de entonación mediante `pitch_range`.
-- Expansión automática de números a palabras MSA y lectura de porcentajes.
-- Diacritización automática con CATT para resolver la pronunciación de texto sin tashkeel.
-- Fonología MSA avanzada: asimilación solar, elisión de hamzat al-wasl, shadda, tanween, formas pausales y acento por peso silábico.
-- Inferencia en CPU con onnxruntime a aproximadamente 200× tiempo real sobre dos hilos.
-- No soporta tool calling, agentes, visión ni audio de entrada; es exclusivamente TTS.
+- Síntesis de voz en árabe estándar moderno (MSA) con una única voz sintética (`a000`).
+- Generación de audio a 24 kHz mono con el generador de forma de onda incluido.
+- Normalización de números: lee cifras como palabras MSA (por ejemplo, 2.500.000 y 35 %).
+- Diacritización automática del texto de entrada mediante CATT antes de la fonemización.
+- Control de velocidad (`speed`), desplazamiento de tono (`pitch_shift`, 0,058 ≈ un semitono) y rango de entonación (`pitch_range`).
+- Predicción de duraciones, pausas, tono, sonoridad y energía por parte del modelo acústico.
+- Procesamiento por frases: el texto largo debe dividirse en oraciones (máximo de 500 fonemas por segmento).
+- Ejecución en CPU con onnxruntime, sin necesidad de GPU.
+- No se documentan capacidades de tool calling, agentes, visión, audio de entrada ni modo de razonamiento.
 
 ## Casos de uso
 
-- Asistentes de voz en árabe sobre hardware sin GPU: el modelo corre a 200× tiempo real en dos hilos de CPU, por lo que puede integrarse en dispositivos embebidos, Raspberry Pi o servidores modestos para lectura de respuestas de un asistente conversacional.
-- Lectura de contenido en aplicaciones móviles: artículos, notificaciones o mensajes se pueden sintetizar frase a frase (límite de 500 fonemas / 32 s por llamada) y concatenar el audio, con control de velocidad para accesibilidad.
-- Sistemas de anuncios y avisos públicos en MSA: la salida a 24 kHz y la expansión automática de números permiten locutar cifras, porcentajes y datos de forma correcta sin preprocesado manual.
-- Prototipado rápido de interfaces de voz: al pesar 21 MB en ONNX, se puede incluir en un contenedor ligero o en el navegador mediante onnxruntime para demos y pruebas de UX sin infraestructura de GPU.
-- Generación de audio para doblaje o narración de diálogos de asistente: el corpus de entrenamiento procede de turnos de diálogo, por lo que el modelo está ajustado al registro conversacional del asistente en MSA.
-- Investigación en TTS de bajo coste: su licencia Apache-2.0 y su tamaño permiten usarlo como base o referencia para experimentos de fonética árabe, front-ends y síntesis source-filter sin restricciones de uso comercial.
-- Accesibilidad para lectores de pantalla en árabe: la baja latencia y el consumo mínimo de CPU permiten lectura en tiempo real de texto seleccionado en aplicaciones de escritorio.
+- Asistentes de voz en árabe para dispositivos embebidos: el modelo cabe en 21 MB ONNX y se ejecuta a unas 200 veces el tiempo real en dos hilos de CPU, lo que permite integrarlo en Raspberry Pi o sistemas sin GPU para lectura de respuestas en MSA.
+- Atención al cliente automatizada por voz: al procesar una frase por llamada con latencia mínima, puede encadenarse con un ASR y un LLM para construir un bucle conversacional completo en árabe estándar.
+- Lectura de contenidos y accesibilidad: conversión de artículos, notificaciones o mensajes a audio en MSA, con normalización de cifras (poblaciones, porcentajes) integrada en el front-end.
+- Sistemas de anuncios y megafonía: generación de locuciones en árabe estándar para transporte público, aeropuertos o comercios, con control de velocidad y tono para adaptar el estilo.
+- Aplicaciones educativas de aprendizaje de árabe: síntesis de frases con diacritización automática y pronunciación basada en reglas (asimilación solar, wasl, pausas), útil para ejercicios de lectura y dictado.
+- Prototipado rápido de interfaces de voz: al requerir solo onnxruntime, numpy y soundfile, permite validar productos de voz en árabe sin aprovisionar infraestructura de GPU.
+- Generación de audio para doblaje o previsualización de guiones: lectura de guiones con control de entonación (`pitch_range`) y desplazamiento de tono para ajustar el registro de la voz.
 
 ## Benchmarks y rendimiento
 
-Evaluación mediante transcripción con Whisper large-v3 del audio generado frente al texto de entrada (sin diacríticos ni puntuación). Los conjuntos de validación y test provienen de diálogos no vistos en entrenamiento; las frases nuevas no aparecen en ningún split.
+Evaluación con transcripciones de Whisper large-v3 del audio generado frente al texto de entrada (sin diacríticos ni puntuación). Los conjuntos de validación y test provienen de diálogos no vistos en entrenamiento; las frases nuevas no aparecen en ningún split.
 
 | Conjunto | Clips | CER | WER | CER de las grabaciones originales |
 |---|---|---|---|---|
-| Validación | 25 | 0,5% | 1,2% | 1,0% |
-| Test | 25 | 1,8% | 2,4% | 2,1% |
-| Frases nuevas | 8 | 0,3% | 1,4% | no disponible |
+| Validación | 25 | 0,5 % | 1,2 % | 1,0 % |
+| Test | 25 | 1,8 % | 2,4 % | 2,1 % |
+| Frases nuevas | 8 | 0,3 % | 1,4 % | — |
 
-La mayoría de los errores restantes corresponden a Whisper escribiendo números hablados como dígitos. Las duraciones generadas están dentro del 3% de las grabaciones y la variación de tono coincide (3,6 semitonos). No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible, por no ser aplicables a un modelo TTS.
+La mayoría de los errores restantes corresponden a Whisper escribiendo números hablados como dígitos. Las duraciones generadas quedan dentro del 3 % de las grabaciones y la variación de tono coincide (3,6 semitonos).
+
+Open TTS Leaderboard (versión 1.7.3, 24 de noviembre de 2026), tabla de voz fija en árabe; WER y RTFx son el compuesto de los benchmarks MiniMax y ZTTS2-Eval-Mini (clean):
+
+| Puesto | Modelo | WER ↓ | RTFx ↑ | Tamaño (B) |
+|---:|---|---:|---:|---:|
+| 1 | oddadmix/tiny-voca-arabic | 3,40 | 6,5 | 0,0266 |
+| 2 | Supertone/supertonic-3 | 4,45 | 67,7 | 0,1 |
+| 3 | fishaudio/drama-3 | 4,58 | 24,9 | 35,0 |
+
+Nota del autor: generado en CPU (host H200); el RTFx no es directamente comparable con modelos generados en GPU. El tamaño incluye el front-end diacritizador CATT y su sobrecoste por frase se cuenta en el RTFx.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica en el modo ONNX CPU; en GPU, el modelo de 4,5M de parámetros ocupa del orden de decenas de MB, aunque no se documentan requisitos formales.
-- GPU recomendadas: no disponible; el modelo está diseñado explícitamente para CPU.
-- Cabe en cualquier GPU consumer e incluso en CPU de dos hilos; no requiere acelerador.
-- Opciones de despliegue: onnxruntime (CPUExecutionProvider) para los pesos ONNX; checkpoint PyTorch `tiny-voca-arabic.pt` cargable con el código de tiny-voca (`tiny_voca.infer.load_model`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje.
-- Latencia y throughput: aproximadamente 200× tiempo real sobre dos hilos de CPU, según el autor.
-- Dependencias de ejecución: onnxruntime, numpy, soundfile y tqdm; el front-end requiere CATT para la diacritización.
+- VRAM estimada para inferencia: no aplica; el modelo está pensado para CPU con onnxruntime (21 MB ONNX).
+- GPU recomendadas: no se requieren; el modelo se ejecuta en CPU. El entrenamiento se realizó en una sola GPU (2,6 horas, 104.000 pasos).
+- Cabe en cualquier GPU de consumo e incluso en entornos sin GPU; el despliegue típico es CPU.
+- Opciones de despliegue: onnxruntime con el proveedor `CPUExecutionProvider`, junto con numpy, soundfile y tqdm. El front-end requiere el diacritizador CATT; el Space de demostración incluye `app.py`, `tiny_voca_ar/` y `catt_tashkeel/` listos para ejecutar.
+- Latencia y throughput: aproximadamente 200 veces el tiempo real sobre dos hilos de CPU para la generación de forma de onda; el RTFx compuesto del leaderboard es 6,5 (incluye el sobrecoste por frase del diacritizador CATT).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / límite | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| tiny-voca-arabic | 4,5M | 500 fonemas / 32 s por llamada | Árabe MSA | Apache-2.0 | ONNX, PyTorch |
-| tiny-voca (original) | no disponible | no disponible | Inglés (según modelo base) | Apache-2.0 | no disponible |
-| TTS neuronales convencionales (p. ej. VITS, FastSpeech2) | cientos de millones (orden de magnitud habitual) | por frase | múltiple según modelo | variable | PyTorch, ONNX |
+| Modelo | Parámetros | Contexto | WER (leaderboard árabe) | RTFx | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| oddadmix/tiny-voca-arabic | 4,53 M | no disponible | 3,40 | 6,5 | Apache-2.0 | Hugging Face, ONNX |
+| Supertone/supertonic-3 | 0,1 B | no disponible | 4,45 | 67,7 | no disponible | Hugging Face |
+| fishaudio/drama-3 | 35,0 B | no disponible | 4,58 | 24,9 | no disponible | Hugging Face |
 
-La comparación cuantitativa con alternativas concretas no está disponible en la información proporcionada; no se han publicado métricas comparativas frente a otros sistemas TTS en árabe.
+tiny-voca-arabic es el más pequeño de los tres por un margen de uno a tres órdenes de magnitud y obtiene el mejor WER en la tabla de voz fija en árabe, aunque su RTFx es inferior al de supertonic-3 (6,5 frente a 67,7), en parte por el sobrecoste del diacritizador CATT y por haberse medido en CPU. Los datos de licencia y contexto de los modelos comparados no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Una sola voz (`a000`) y únicamente árabe estándar moderno; el texto dialectal se lee con reglas MSA, lo que puede sonar artificial o incorrecto.
-- La pronunciación depende de la diacritización automática de CATT; cuando elige una lectura errónea (por ejemplo نَمَوذج en lugar de نُموذج), el modelo la pronuncia tal cual. Es necesario añadir tashkeel manual para corregir palabras concretas.
-- Se omiten la escritura latina, los emojis y los símbolos distintos de números y el signo de porcentaje.
-- Cobertura fonética limitada: las enfáticas ص/ط/ض/ظ están bien cubiertas, pero la lām oscura solo aparece en الله.
-- Límite práctico de 500 fonemas o 32 segundos por llamada; el texto largo debe dividirse por frases y concatenarse, lo que puede introducir discontinuidades en la prosodia entre fragmentos.
-- Riesgo de alucinación acústica no documentado explícitamente, pero la dependencia de la diacritización implica errores de pronunciación predecibles ante texto ambiguo.
-- El corpus es sintético y de un solo hablante, por lo que la naturalidad y variabilidad prosódica pueden ser limitadas frente a grabaciones humanas.
-- Licencia Apache-2.0: permite uso comercial y modificación con atribución; no se documentan restricciones adicionales.
-- Para producción, conviene validar el front-end (CATT) y el tratamiento de números en el dominio concreto de la aplicación, y monitorizar la calidad en textos con abundante terminología o nombres propios.
+- Una sola voz sintética (`a000`); no hay variedad de hablantes ni control de identidad vocal.
+- Solo soporta árabe estándar moderno; no se documentan dialectos regionales.
+- Procesa una frase por llamada (máximo de 500 fonemas por segmento); el texto largo debe dividirse manualmente en oraciones.
+- Depende del diacritizador CATT para el front-end, lo que añade latencia por frase y una dependencia externa (Apache-2.0).
+- La evaluación se basa en transcripciones de Whisper large-v3, lo que puede introducir sesgos de medición (por ejemplo, números escritos como dígitos).
+- Riesgo de alucinación no documentado para TTS; los errores de pronunciación se concentran en los casos cubiertos por las reglas del conversor fonético.
+- Sesgos conocidos: no se documentan en la información disponible.
+- Licencia Apache-2.0, que permite uso comercial; debe conservarse el aviso de atribución a tiny-voca (Muhammed Nazeem, @n4ze3m) y a CATT (abjadai).
+- En producción, conviene validar la calidad en el dominio concreto (números, nombres propios, siglas) y monitorizar la latencia del diacritizador.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/oddadmix/tiny-voca-arabic
 - Demo (Space): https://huggingface.co/spaces/oddadmix/tiny-voca-arabic
-- Dataset de entrenamiento: https://huggingface.co/datasets/oddadmix/msa-duplex-assistant-tts
-- tiny-voca (modelo base de la arquitectura): https://huggingface.co/n4ze3m/tiny-voca
-- Código de tiny-voca: https://github.com/n4ze3m/tiny-voca
+- Dataset: https://huggingface.co/datasets/oddadmix/msa-duplex-assistant-tts
+- tiny-voca (arquitectura base): https://huggingface.co/n4ze3m/tiny-voca
+- Repositorio tiny-voca: https://github.com/n4ze3m/tiny-voca
 - CATT (diacritizador): https://github.com/abjadai/catt
+- Open TTS Leaderboard: https://huggingface.co/spaces/hf-audio/open_tts_leaderboard
+- Resultados en árabe (versión 1.7.3): https://huggingface.co/spaces/hf-audio/open_tts_leaderboard?version=1.7.3&languages=ar

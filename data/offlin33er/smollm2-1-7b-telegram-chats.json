@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 181,
+  "downloads_30d": 229,
   "trending_score": 0,
   "parameters": 1711376384,
   "parameters_human": "1.71B",
@@ -53,11 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "WhatsApp Web",
-      "url": "https://web.whatsapp.com/",
-      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
-    }
-  ]
+  "sources": []
 }

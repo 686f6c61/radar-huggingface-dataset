@@ -2,125 +2,124 @@
 
 ## Resumen
 
-Solstice-1 es un modelo de lenguaje de 174.202.432 parámetros (175M redondeados) desarrollado por OpenSML (William Zebrowski) y entrenado desde cero sobre cinco equipos Apple Silicon. Se trata de un modelo conversacional en inglés, orientado a investigación, que combina 42.001.367.040 posiciones de token de preentrenamiento con tres etapas de fine-tuning mediante adaptadores para conversaciones cortas, comprensión lectora y seguimiento de instrucciones.
+Solstice-1-175M es un modelo de lenguaje conversacional en ingles de 174.202.432 parametros (175M redondeados), desarrollado desde cero por William Zebrowski bajo el sello OpenSML. Se presenta como una vista previa de investigacion y constituye el primer miembro de la familia Solstice. Su interes principal no reside en la escala, sino en el metodo: el entrenamiento completo se ejecuto sobre cinco maquinas Apple Silicon, lo que lo convierte en un caso practico de preentrenamiento de un transformer denso en hardware de consumo profesional.
 
-El modelo emplea una arquitectura transformer densa de 44 capas con anchura oculta de 576, atención con 9 cabezas de consulta y 3 de clave/valor (GQA), SwiGLU, RoPE con base 10.000, RMSNorm, normalización Q/K y embeddings atados. Su ventana de contexto es de 2.048 tokens, incluyendo historial de conversación y salida generada, y utiliza un tokenizador BPE a nivel de byte de 32.000 tokens reutilizado de OpenSML.
+Arquitectura transformer densa de 44 capas, anchura oculta de 576 y SwiGLU de 1.536, con atencion GQA de 9 cabezas de consulta y 3 de clave/valor, RoPE, RMSNorm, normalizacion Q/K y embeddings atados. El modelo procesa 42.001.367.040 posiciones de token en preentrenamiento y despues pasa por tres etapas de ajuste con adaptadores orientadas a conversacion corta, comprension lectora y seguimiento de instrucciones.
 
-Su relevancia radica en ser un ejercicio de entrenamiento reproducible desde cero en hardware de consumo (Mac), con pesos FP32 fusionados, runner nativo en MLX, registros de entrenamiento y resultados de evaluación publicados. Compite en la categoría de modelos pequeños (por debajo de 200M parámetros) frente a referencias como SmolLM2-135M o OpenSML-150M, con licencia Apache-2.0.
+La relevancia actual es doble: por un lado, demuestra que un small language model con licencia Apache-2.0 y pesos FP32 fusionados puede reproducirse en hardware modesto; por otro, su ventana de contexto de solo 2.048 tokens lo situa como una pieza de investigacion y de despliegue local en Apple Silicon, no como sustituto de modelos frontera. La libreria nativa es MLX y el repositorio ocupa 0,7 GB.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (44 capas, hidden 576, SwiGLU 1.536) |
-| Parámetros totales | 174.202.432 (175M redondeados) |
-| Parámetros activos | no aplica (modelo denso) |
-| Longitud de contexto | 2.048 tokens (incluye historial y salida generada) |
-| Tipos de cuantización | no disponible (release en FP32; librería MLX) |
-| Idiomas soportados | inglés (en) |
+| Arquitectura | Transformer denso (decoder-only) con SwiGLU, RoPE, RMSNorm, GQA y embeddings atados |
+| Parametros totales | 174.202.432 (175M redondeados) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | 2.048 tokens (incluye historial de conversacion y salida generada) |
+| Tipos de cuantizacion | no disponible (el release publica pesos FP32 en safetensors; no se documentan variantes GGUF, INT8 ni INT4) |
+| Idiomas soportados | Ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (FP32 fusionado), nativo MLX en Apple Silicon |
+| Formato de pesos | safetensors (FP32 fusionados, merged); runner nativo MLX |
+| Capas | 44 |
+| Anchura oculta | 576 |
+| Anchura SwiGLU | 1.536 |
+| Cabezas de atencion | 9 query / 3 KV, dimension de cabeza 64 |
+| Tokenizer | BPE byte-level de 32.000 tokens (reutilizado de OpenSML) |
+| Tokens de preentrenamiento | 42.001.367.040 posiciones procesadas |
+| Tamano del repositorio | 0,7 GB |
 
 ## Arquitectura y entrenamiento
 
-Solstice-1 es un transformer denso decoder-only de 44 capas con anchura oculta de 576 y anchura SwiGLU de 1.536. La atención usa 9 cabezas de consulta y 3 cabezas de clave/valor con dimensión de cabeza 64 (atención con query grouping), e incorpora RoPE con base 10.000, RMSNorm, normalización de Q/K y embeddings atados entre entrada y salida. El tokenizador es un BPE a nivel de byte de 32.000 tokens reutilizado de OpenSML, aunque el autor aclara que el linaje de pesos es independiente de OpenSML-150M y OpenSML-JSONLite-175M.
+El modelo es un transformer decoder-only denso de 44 capas con anchura oculta de 576 y capa SwiGLU de 1.536. Emplea atencion con grouped-query attention (9 cabezas de consulta y 3 de clave/valor, dimension 64), RoPE con base 10.000, RMSNorm, normalizacion de Q y K, y embeddings atados entre entrada y salida. El tokenizer es un BPE byte-level de 32.000 tokens heredado de modelos previos de OpenSML, aunque la model card aclara que Solstice-1-175M tiene un linaje de pesos independiente de OpenSML-150M y OpenSML-JSONLite-175M.
 
-El preentrenamiento parte de pesos aleatorios y consume 42.001.367.040 posiciones de token procesadas, con secuencias de 2.048 tokens. El cómputo se realiza en BF16 con pesos maestros, gradientes y estado del optimizador en FP32, distribuido sobre cinco workers Apple Silicon. Los datos provienen de smollm-corpus, dclm-edu, finewiki, stack_edu_python, stack_edu_sql, SynSQL-2.5M, smol-smoltalk, smoltalk, squad_v2 y sciq. Tras el preentrenamiento se aplican tres etapas de fine-tuning con adaptadores orientadas a conversación corta, comprensión lectora y seguimiento de instrucciones.
+El preentrenamiento parte de pesos aleatorios y se ejecuta en cinco workers Apple Silicon con computo BF16, pesos maestros, gradientes y estado del optimizador en FP32. La longitud de secuencia es de 2.048 tokens y el batch acumulado produce 131.072 posiciones de token por actualizacion. Se usa AdamW con betas (0,9; 0,95), weight decay 0,1 y recorte de gradiente a 1. La mezcla de datos en los primeros 36.801B tokens es 70% FineWeb-Edu, 20% DCLM-Edu y 10% English FineWiki; en los 5.200B restantes se reajusta a 56% FineWeb-Edu, 16% DCLM-Edu, 8% FineWiki, 15% Python (espejo publico de Stack-Edu) y 5% SQL. Tras el preentrenamiento se aplican tres etapas de ajuste con adaptadores usando smol-smoltalk, smoltalk, SQuAD v2 y SciQ, entre otros.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés para turnos cortos.
-- Seguimiento de instrucciones explícitas (evaluado con IFEval).
-- Comprensión lectora y respuesta a preguntas sobre pasajes (entrenado con SQuAD v2 y SciQ).
-- Conocimiento factual y de sentido común a pequeña escala (evaluado en ARC Easy, ARC Challenge, PIQA y HellaSwag).
-- Generación de código y SQL a nivel introductorio (datos stack_edu_python, stack_edu_sql, SynSQL-2.5M).
-- Parada natural de respuesta (99,48% en el panel de conversación propio).
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: solo inglés.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Generacion de texto conversacional en ingles para turnos cortos.
+- Comprension lectora extractiva y de opcion multiple (entrenado con SQuAD v2 y SciQ).
+- Seguimiento de instrucciones explicitas, con resultados medidos en IFEval.
+- Generacion de codigo Python y SQL, gracias al 20% del tramo final de preentrenamiento dedicado a estos lenguajes.
+- Razonamiento basico de conocimiento y sentido comun (ARC Easy, ARC Challenge, PIQA, HellaSwag).
+- Respuesta con parada natural en el 99,48% de las respuestas del panel de conversacion evaluado.
+- Capacidad multilingue: no disponible; solo se declara ingles.
+- Tool calling / function calling: no documentado en la informacion disponible.
+- Modo thinking, vision o audio: no disponible.
 
 ## Casos de uso
 
-- Prototipado de chatbots de dominio acotado: con 2.048 tokens de contexto puede mantener conversaciones multi-turno breves en inglés, adecuado para demos y pruebas de concepto en las que el coste de inferencia debe ser mínimo.
-- Investigación sobre entrenamiento desde cero: los registros de entrenamiento, el runner MLX y los scripts de evaluación publicados permiten reproducir y auditar el pipeline completo en hardware Apple Silicon.
-- Evaluación comparativa de modelos pequeños: sirve como baseline reproducible en la franja de 135M-175M parámetros para experimentos académicos sobre tokenización, curriculums de datos y etapas de SFT.
-- Respuesta a preguntas sobre documentos cortos: su entrenamiento con SQuAD v2 y SciQ lo hace utilizable para extracción de respuestas en pasajes de menos de 2.000 tokens, por ejemplo en asistentes de documentación técnica.
-- Generación asistida de código y SQL elemental: puede emplearse como autocompletado o generador de consultas simples en entornos de formación, integrado en editores o notebooks, dado su entrenamiento con stack_edu_python, stack_edu_sql y SynSQL-2.5M.
-- Despliegue en Apple Silicon para inferencia local: al publicarse en formato MLX nativo, es adecuado para aplicaciones de escritorio o prototipos en macOS que requieran ejecución offline sin GPU dedicada.
-- Filtrado y clasificación de texto ligero: su reducido tamaño permite ejecutarlo en paralelo con modelos mayores como preprocesador o generador de borradores en pipelines de bajo coste.
+- Asistente conversacional local en macOS: el modelo se ejecuta de forma nativa con MLX en Apple Silicon y su huella de 0,7 GB permite tenerlo cargado en memoria unificada mientras se trabaja, gestionando dialogos cortos de hasta 2.048 tokens.
+- Prototipado de pipelines de chat antes de escalar a modelos mayores: sirve para validar formatos de prompt, plantillas de conversacion y logica de parada con un coste de inferencia minimo.
+- Generacion asistida de consultas SQL: el 5% final del preentrenamiento usa datos de Stack-Edu SQL y SynSQL-2.5M, lo que lo hace util para borradores de consultas en herramientas internas de analitica.
+- Autocompletado y generacion de fragmentos Python en entornos de desarrollo: el 15% del tramo final de datos es codigo Python, adecuado para sugerencias cortas dentro de un editor o script de CI.
+- Investigacion educativa y de alineacion: al publicar registros de entrenamiento, resultados de evaluacion y el runner MLX, permite reproducir experimentos de ajuste con adaptadores sobre un modelo base pequeno.
+- Evaluacion de tecnicas de cuantizacion y despliegue en hardware de consumo: su tamano reducido lo convierte en banco de pruebas para medir latencia y throughput en Mac con memoria unificada.
+- Clasificacion y respuesta extractiva sobre documentos cortos: con SQuAD v2 y SciQ en el ajuste, puede responder preguntas concretas sobre pasajes que quepan en su ventana de contexto.
 
 ## Benchmarks y rendimiento
 
-Resultados de conocimiento y sentido común (porcentajes, acc / acc_norm; mayor es mejor):
+Resultados publicados en la model card. Valores en porcentaje; en conocimiento y sentido comun se muestra acc / acc_norm.
 
-| Benchmark | Solstice-1 | OpenSML-150M | SmolLM2-135M |
-|---|---|---|---|
-| ARC Easy | 62,58 / 62,33 | 56,65 / 55,43 | 54,00 / 48,82 |
-| ARC Challenge | 29,35 / 30,89 | 26,02 / 29,52 | 25,94 / 27,73 |
-| PIQA | 66,49 / 66,21 | 64,53 / 64,09 | 66,70 / 66,76 |
-| HellaSwag | 32,85 / 39,40 | 30,55 / 33,94 | 35,02 / 42,90 |
+| Benchmark | Solstice-1-175M | OpenSML-150M |
+|---|---|---|
+| ARC Easy | 62,58 / 62,33 | 56,65 / 55,43 |
+| ARC Challenge | 29,35 / 30,89 | 26,02 / 29,52 |
+| PIQA | 66,49 / 66,21 | 64,53 / 64,09 |
+| HellaSwag | 32,85 / 39,40 | 30,55 / 33,94 |
 
-Resultados de seguimiento de instrucciones (IFEval, accuracy):
+| IFEval (accuracy) | Solstice-1-175M | OpenSML-150M |
+|---|---|---|
+| Strict prompts | 17,93% | 15,16% |
+| Strict instructions | 30,10% | 25,30% |
+| Loose prompts | 19,22% | 15,71% |
+| Loose instructions | 32,49% | 25,78% |
 
-| Métrica | Solstice-1 | OpenSML-150M | SmolLM2-135M |
-|---|---|---|---|
-| Strict prompts | 17,93% | 15,16% | 21,63% |
-| Strict instructions | 30,10% | 25,30% | 35,85% |
-| Loose prompts | 19,22% | 15,71% | 22,55% |
-| Loose instructions | 32,49% | 25,78% | 37,29% |
-
-Comprobaciones de conversación (panel propio):
-
-| Medida | Solstice-1 |
+| Medida de conversacion | Solstice-1-175M |
 |---|---|
-| Precisión de respuesta, casos objetivos | 59,44% |
-| Parada natural, todas las respuestas | 99,48% |
-| Marcas de repetición, todas las respuestas | 1,56% |
+| Precision de respuesta en casos objetivos | 59,44% |
+| Parada natural en todas las respuestas | 99,48% |
+| Banderas de repeticion en todas las respuestas | 1,56% |
 
-En un test reservado propio, Solstice alcanza 51,9% frente a 20,0% tras SFT 1 y 25,9% tras SFT 2. En un panel anterior reutilizado los valores son 53,84%, 52,13% y 54,55%, de modo que la última etapa no mejora todas las métricas. El autor advierte que las diferencias con SmolLM2 no se han sometido a test de significación estadística y que los protocolos de evaluación difieren (greedy, sin system message ni penalización de repetición, tope de 1.024 tokens frente a 1.280 en las referencias).
+En el test reservado de autoria propia, Solstice alcanza un 51,9%, frente al 20,0% tras SFT 1 y el 25,9% tras SFT 2. En un panel anterior reutilizado, las puntuaciones son 53,84%, 52,13% y 54,55%, de modo que la ultima etapa no mejora todas las metricas. La evaluacion de IFEval usa generacion greedy, sin mensaje de sistema ni penalizacion por repeticion, con un limite de salida de 1.024 tokens; de 541 prompts, 130 alcanzan el limite y se mantienen en la puntuacion. El modelo de 150M uso un limite de 1.280 tokens y otro formato de chat. Las diferencias no se han sometido a pruebas de significacion estadistica.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 174,2M parámetros en FP32 los pesos ocupan aproximadamente 0,7 GB; en BF16 unos 0,35 GB; en cuantización de 8 bits unos 0,17 GB y en 4 bits unos 0,09 GB (estimaciones a partir del recuento de parámetros, no publicadas por el autor).
-- GPU recomendadas: el release está orientado a Apple Silicon mediante MLX; no se documentan requisitos para GPU NVIDIA.
-- Cabe en GPU de consumo: sí, por tamaño; en el ecosistema Apple funciona en cualquier Mac con memoria unificada suficiente (el repo ocupa 0,7 GB). En NVIDIA, cualquier GPU con 2 GB o más podría alojarlo en BF16, aunque no es el formato de referencia.
-- Opciones de despliegue: MLX (librería nativa del release); vLLM, llama.cpp, Ollama y TGI no están documentados para este modelo.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- Inferencia en FP32: aproximadamente 0,7 GB de pesos, mas estado de inferencia; cabe holgadamente en cualquier Mac con memoria unificada de 8 GB o superior.
+- Cuantizacion: no se publican variantes GGUF ni INT8/INT4; el release es FP32 en safetensors.
+- GPU recomendadas: no hay datos de despliegue en CUDA. El entorno nativo es Apple Silicon mediante MLX; el entrenamiento se ejecuto en cinco Macs.
+- Cabe en GPU de consumo: si, en cualquier Apple Silicon moderno (serie M). Para NVIDIA no se documenta soporte ni requisitos de VRAM.
+- Opciones de despliegue: runner MLX incluido en el repositorio y guia de ejecucion (RUN_GUIDE.md). No se documenta soporte para vLLM, TGI, llama.cpp ni Ollama.
+- Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Punto fuerte (según benchmarks publicados) |
-|---|---|---|---|---|
-| Solstice-1 | 174,2M | 2.048 | Apache-2.0 | ARC Easy y ARC Challenge; parada natural en conversación |
-| OpenSML-150M | ~150M | no disponible | Apache-2.0 (según card) | Inferior a Solstice-1 en todas las métricas reportadas |
-| SmolLM2-135M-Instruct | 135M | no disponible en la información | no disponible en la información | Mejor IFEval y HellaSwag; PIQA prácticamente empatado |
+| Modelo | Parametros | Contexto | Licencia | Idiomas | Notas |
+|---|---|---|---|---|---|
+| Solstice-1-175M | 174,2M | 2.048 | Apache-2.0 | en | Entrenado desde cero en Apple Silicon; pesos FP32 y MLX |
+| OpenSML-150M | ~150M (no confirmado) | no disponible | no disponible | en | Base de comparacion de la model card; linaje de pesos distinto |
+| OpenSML-JSONLite-175M | ~175M (no confirmado) | no disponible | no disponible | en | Comparte tokenizer con Solstice, pero no es su ancestro de pesos |
 
-Solstice-1 supera a OpenSML-150M en ARC Easy, ARC Challenge, PIQA, HellaSwag e IFEval, y supera a SmolLM2-135M en ARC Easy y ARC Challenge, pero queda por debajo en HellaSwag, PIQA (muy ajustado) e IFEval. Las comparaciones no cuentan con test de significación estadística y los protocolos de evaluación difieren.
+No se dispone de datos de benchmarks de terceros ni de especificaciones completas de los modelos OpenSML citados mas alla de los resultados recogidos en la tabla de benchmarks de esta ficha.
 
 ## Limitaciones y advertencias
 
-- Modelo de 175M parámetros: la capacidad de razonamiento, conocimiento factual y coherencia en contextos largos es limitada; no es adecuado para tareas que requieran precisión factual alta sin verificación.
-- Riesgo de alucinación elevado, inherente a su escala y a su entrenamiento mayoritariamente de dominio general.
-- Contexto de solo 2.048 tokens, que incluye historial y salida generada, lo que restringe conversaciones largas y documentos extensos.
-- Solo soporta inglés; no se documenta rendimiento en otros idiomas.
-- En IFEval queda por debajo de SmolLM2-135M-Instruct en todas las métricas reportadas (strict y loose, prompts e instrucciones).
-- La tercera etapa de SFT no mejora todas las métricas en el panel reutilizado (54,55% frente a 52,13% de la etapa 2), lo que sugiere saturación o sobreajuste en algunas dimensiones.
-- El 24% de los prompts de IFEval (130 de 541) alcanzan el tope de 1.024 tokens de salida, lo que puede penalizar la puntuación.
-- Licencia Apache-2.0: permite uso comercial, pero el autor lo etiqueta como "research preview"; conviene validar el comportamiento en el dominio de destino antes de producción.
-- Despliegue documentado únicamente en MLX/Apple Silicon; el soporte en otros runtimes no está garantizado.
-- El modelo tiene 2 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que la validación por parte de la comunidad es prácticamente inexistente.
+- Modelo de investigacion: la propia model card lo etiqueta como research preview; no esta pensado como producto final.
+- Ventana de contexto muy corta (2.048 tokens), insuficiente para documentos largos o conversaciones extensas.
+- Solo ingles; no se declara soporte multilingue.
+- Riesgo elevado de alucinacion y de conocimiento limitado: los resultados en ARC Challenge (29,35 acc) y HellaSwag (32,85 acc) son bajos en terminos absolutos.
+- IFEval estricto por prompt del 17,93%, lo que indica un seguimiento de instrucciones fragil.
+- Tasa de repeticion del 1,56% en el panel de conversacion, con dos bucles claros detectados en la revision.
+- Las comparaciones con OpenSML-150M usan implementaciones y formatos de chat distintos y no se han validado estadisticamente.
+- Licencia Apache-2.0: permite uso comercial, pero el modelo no ofrece garantias de calidad para produccion.
+- No se documentan capacidades de tool calling, agentes, vision ni audio.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/OpenSML/Solstice-1
-- Código fuente: https://github.com/williamzebrowskI/Solstice-1
-- Guía de ejecución: RUN_GUIDE.md (en el repositorio)
-- Informe técnico: docs/TECHNICAL_REPORT.md (en el repositorio)
-- Evaluación: docs/EVALUATION.md (en el repositorio)
+- Modelo en Hugging Face: https://huggingface.co/OpenSML/Solstice-1
+- Pesos del modelo: https://huggingface.co/OpenSML/Solstice-1-175M
+- Codigo fuente: https://github.com/williamzebrowskI/Solstice-1-175M
+- Guia de ejecucion: RUN_GUIDE.md (en el repositorio)
+- Informe tecnico: docs/TECHNICAL_REPORT.md (en el repositorio)
+- Evaluacion: docs/EVALUATION.md (en el repositorio)
 - Datos: docs/DATA.md (en el repositorio)
-- Resultados de baseline SmolLM2: results/baselines/smollm2_independent.json (en el repositorio)
-- Referencias de modelos publicados: results/baselines/published_models.json (en el repositorio)
-- Panel de conversación: results/public/chat/results.json (en el repositorio)
-- Model card de OpenSML-150M: https://huggingface.co/OpenSML/OpenSML-150M
-- Evaluación independiente de SmolLM2 (PetitGPT): https://github.com/yangqi0/petitgpt/blob/a129f3b709d44ad6a53aef0d44a7054281099df2/README.md#results-at-a-glance
+- Modelo de comparacion: https://huggingface.co/OpenSML/OpenSML-150M

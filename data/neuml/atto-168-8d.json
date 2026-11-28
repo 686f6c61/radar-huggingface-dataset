@@ -1,0 +1,46 @@
+{
+  "schema": 2,
+  "id": "NeuML/atto-168-8d",
+  "slug": "neuml-atto-168-8d",
+  "author": "NeuML",
+  "url": "https://huggingface.co/NeuML/atto-168-8d",
+  "created_at": "2026-11-28T00:11:24.000Z",
+  "updated_at": "2026-11-28T00:13:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "atto",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8157,
+  "storage_human": "8157 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

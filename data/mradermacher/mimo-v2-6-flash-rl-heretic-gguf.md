@@ -2,89 +2,81 @@
 
 ## Resumen
 
-MiMo-V2.6-Flash-RL-heretic-GGUF es una cuantizacion en formato GGUF del modelo makhdoomhussainraza/MiMo-V2.6-Flash-RL-heretic, realizada por el usuario mradermacher. Se trata de una variante "abliterated" (tambien etiquetada como "heretic"), es decir, un modelo al que se le ha aplicado una tecnica de ablacion de direcciones de rechazo para reducir las negativas a responder determinadas peticiones. El modelo base declara 1.318.620.160 parametros totales (aproximadamente 1,32 mil millones), lo que lo situa en la categoria de modelos pequenos.
+MiMo-V2.6-Flash-RL-heretic es un modelo de lenguaje publicado por el usuario makhdoomhussainraza y cuantizado a formato GGUF por mradermacher. Se trata de una variante "abliterated" (también etiquetada como "heretic") del modelo MiMo-V2.6-Flash-RL, lo que significa que se ha aplicado una técnica de edición de pesos orientada a eliminar o atenuar los mecanismos de rechazo y alineación de seguridad del modelo original. El resultado es un modelo que responde a peticiones que el modelo base tendería a declinar, con las implicaciones éticas y de seguridad que ello conlleva.
 
-El repositorio incluye cuantizaciones estaticas en varios niveles (Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS, f16) junto con suplementos multimodales mmproj (Q8_0 y f16), lo que sugiere que el modelo base tiene capacidad de vision. El tamano total del repositorio es de 293,6 GB, consecuencia de alojar todas las variantes de cuantizacion en un mismo espacio.
+El modelo cuenta con 1.318.620.160 parámetros totales según los datos de safetensors, lo que lo sitúa en la categoría de aproximadamente 1,3 mil millones de parámetros. La información disponible no especifica la arquitectura interna (transformer denso, MoE u otra), la longitud de contexto soportada ni los datos de entrenamiento. La model card es puramente técnico-logística y se centra en los ficheros de cuantización disponibles.
 
-La relevancia de esta ficha es doble: por un lado, documenta una cuantizacion practica para ejecucion local en llama.cpp u Ollama; por otro, advierte de que el modelo base es una modificacion "abliterated" sin evaluacion publica de seguridad, con cero descargas y cero likes en el momento de la consulta, lo que implica ausencia total de validacion por parte de la comunidad.
+El repositorio destaca por su gran tamaño total (aproximadamente 2 TB) debido a la inclusión de múltiples cuantizaciones estáticas en formato GGUF, desde Q2_K hasta Q8_0, además de los ficheros mmproj para capacidades multimodales. Está pensado para su uso con llama.cpp y herramientas compatibles, y se distribuye bajo licencia MIT. La relevancia actual radica en su condición de modelo "sin censura" cuantizado para inferencia local, un nicho con demanda creciente entre investigadores que estudian el comportamiento de modelos desalineados.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base tipo transformer multimodal, inferido por la presencia de mmproj) |
-| Parametros totales | 1.318.620.160 (aproximadamente 1,32 B) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible |
+| Parámetros totales | 1.318.620.160 |
+| Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS; suplementos mmproj Q8_0 y f16 |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj Q8_0 y f16 |
+| Idiomas soportados | inglés (en) |
 | Licencia | MIT |
-| Formato de pesos | GGUF (cuantizaciones estaticas); modelo base en safetensors/transformers |
+| Formato de pesos | GGUF (cuantizaciones estáticas); modelo base en transformers |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la informacion proporcionada. Los metadatos indican que el modelo base se distribuye con `library_name: transformers` y que la cuantizacion incluye archivos `mmproj`, lo que confirma que el modelo base incorpora un proyector multimodal (vision-lenguaje), aunque no se especifica el encoder visual ni el mecanismo de fusion.
+La información disponible no detalla la arquitectura interna del modelo. Por el número de parámetros (aproximadamente 1,3 mil millones) y la etiqueta `mimo`, se trata presumiblemente de un transformer de escala pequeña, pero no se confirma si emplea atención estándar, atención lineal u otra variante. No se especifican el número de capas, dimensiones ocultas, número de cabezas de atención ni el vocabulario.
 
-Respecto al entrenamiento, la model card no documenta el numero de tokens, la composicion del dataset ni si hubo fases de RLHF o DPO. El sufijo "RL" en el nombre sugiere un ajuste mediante refuerzo (probablemente RLHF o RLVR), y "heretic" indica la aplicacion de una tecnica de ablacion de rechazo (abliteration/heretic) sobre el modelo ajustado. No hay informacion sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. La cuantizacion fue realizada con la herramienta de mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf) y no se han publicado cuantizaciones ponderadas/imatrix para este modelo.
+Respecto al entrenamiento, la model card no aporta datos sobre el número de tokens, la composición del corpus, ni si se aplicaron fases de RLHF, DPO o supervisión adicional. La designación "RL" en el nombre sugiere algún tipo de entrenamiento con refuerzo, y "Flash" podría indicar una variante optimizada, pero son inferencias no confirmadas. La modificación "heretic/abliterated" implica una edición post-entrenamiento de los pesos para suprimir direcciones de activación asociadas al rechazo de peticiones, aunque no se documenta la metodología concreta empleada. La presencia de ficheros `mmproj` indica soporte multimodal (probablemente visión), aunque no se detalla su arquitectura de proyección.
 
 ## Capacidades
 
-- Generacion de texto en ingles (unico idioma declarado).
-- Procesamiento multimodal: la presencia de archivos mmproj indica soporte de entrada de imagenes junto con texto.
-- Razonamiento y ajuste por refuerzo: el sufijo RL sugiere entrenamiento con senal de recompensa, aunque no se detalla el dominio.
-- Comportamiento "abliterated": el modelo ha sido modificado para reducir rechazos, lo que afecta a la politica de seguridad del modelo.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al ingles segun los metadatos.
-- Modo "thinking" explicito: no disponible.
+- Generación de texto en inglés.
+- Capacidades multimodales: la presencia de ficheros mmproj-Q8_0 y mmproj-f16 sugiere soporte de entrada de imágenes, aunque no se documenta el alcance exacto.
+- Comportamiento "abliterated": responde a peticiones que el modelo base rechazaría, al haberse eliminado o atenuado las capas de rechazo.
+- No se documenta soporte explícito de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidades multilingües limitadas al inglés según la etiqueta de idioma.
 
 ## Casos de uso
 
-- Inferencia local en equipos de gama alta: con cuantizaciones Q4_K_S (176,1 GB) o Q2_K (113,4 GB) el modelo puede desplegarse en estaciones de trabajo con suficiente VRAM o RAM, aunque los tamanos son elevados para un modelo de 1,32 B y obligan a segmentar en varias partes (part1of4, part1of3), lo que sugiere que el modelo base tiene una huella de pesos mucho mayor de lo que indica el recuento de parametros o que incluye componentes adicionales.
-- Experimentacion con modelos sin censura: util para investigadores que estudian el efecto de la abliteration en la calidad y la seguridad de las respuestas, comparando el modelo heretic con su version original.
-- Prototipado de pipelines multimodales: los archivos mmproj permiten alimentar imagenes junto a texto en herramientas compatibles con llama.cpp, util para pruebas de concepto de descripcion de imagenes o extraccion de informacion visual.
-- Evaluacion de cuantizaciones: dado que el repositorio incluye desde Q2_K hasta f16, sirve para medir la degradacion de calidad por nivel de cuantizacion en un modelo pequeno con componente multimodal.
-- Generacion de texto en ingles en entornos con licencia permisiva: la licencia MIT facilita su integracion en productos comerciales sin obligaciones de atribucion complejas.
-- Fine-tuning posterior sobre la variante GGUF: aunque GGUF no es ideal para entrenamiento, puede usarse como referencia de comportamiento o para destilacion hacia modelos mas pequenos.
+- Investigación sobre alineación y seguridad: el modelo sirve para estudiar cómo la eliminación de mecanismos de rechazo afecta a la distribución de respuestas, comparando su comportamiento con el modelo base en conjuntos de prompts de evaluación de seguridad.
+- Generación creativa sin restricciones: escritura de ficción, guiones o narrativa que aborde temas sensibles que el modelo original rechazaría, en entornos controlados de autoría.
+- Inferencia local en hardware de consumo: con cuantizaciones Q4_K_M (186,8 GB) o Q2_K (113,4 GB) puede desplegarse en estaciones de trabajo con suficiente RAM/VRAM, aunque el tamaño real de los ficheros sugiere que el modelo es mucho mayor de lo que indica el recuento de parámetros de safetensors.
+- Análisis de robustez de filtros: evaluar si sistemas de moderación externos detectan contenido generado por modelos desalineados.
+- Pruebas de red teaming: uso por equipos de seguridad para identificar vectores de generación de contenido problemático antes de desplegar sistemas propios.
+- Experimentación con cuantizaciones GGUF: comparar la degradación de calidad entre Q2_K, Q4_K_M y Q8_0 en un modelo abliterated, útil para estudiar la relación entre compresión y fidelidad de comportamiento.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 113 GB para Q2_K, 176 GB para Q4_K_S y mas de 250 GB para f16, segun los tamanos de archivo publicados; el modelo completo en f16 requiere un entorno con memoria suficiente para alojar los pesos y el contexto.
-- GPU recomendadas: no disponible de forma especifica; por volumen de pesos, se requieren configuraciones multi-GPU (varias A100 80 GB o H100 80 GB) para las cuantizaciones altas; las cuantizaciones bajas pueden intentarse en estaciones con gran cantidad de RAM y offloading parcial.
-- Cabe en consumer GPU: no para las cuantizaciones publicadas tal cual; un modelo de 1,32 B en Q4_K_M deberia ocupar del orden de 1 GB, por lo que el desajuste entre el recuento de parametros y los tamanos de archivo publicados indica que el modelo base incluye pesos adicionales no contabilizados en el campo de parametros o que la cuantizacion se realizo sobre un checkpoint distinto. Se recomienda verificar los archivos antes de planificar el despliegue.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; los archivos multiparte deben concatenarse antes de su uso.
+- VRAM/RAM estimada: los ficheros GGUF van desde 113,4 GB (Q2_K) hasta 186,8 GB (Q4_K_M) y más para Q5/Q6/Q8. Estas cifras son muy superiores a lo esperable para un modelo de 1,3 mil millones de parámetros, lo que sugiere una discrepancia entre el recuento de safetensors y el tamaño real del modelo cuantizado; conviene verificar el tamaño efectivo antes de planificar el despliegue.
+- GPU recomendadas: no disponible. Por los tamaños de fichero, se requerirían múltiples GPU de alta gama (A100 80 GB, H100) o sistemas con gran cantidad de RAM para inferencia en CPU.
+- ¿Cabe en GPU de consumo? No, según los tamaños de fichero publicados. Una RTX 4090 (24 GB) no podría alojar ninguna de las cuantizaciones listadas.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. Los ficheros están divididos en múltiples partes (part1of3, part1of4, part1of5) que deben concatenarse antes de su uso.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| MiMo-V2.6-Flash-RL-heretic (este) | 1,32 B (declarados) | no disponible | MIT | GGUF | Abliterated, multimodal, solo ingles |
-| Modelo base makhdoomhussainraza/MiMo-V2.6-Flash-RL-heretic | no disponible | no disponible | MIT | safetensors/transformers | Version sin cuantizar |
-| Alternativas de ~1-2 B abliterated | no disponible | no disponible | variable | GGUF | No se dispone de datos comparativos en la informacion proporcionada |
-
-No se dispone de datos de rendimiento ni de especificaciones completas de alternativas comparables en la informacion proporcionada.
+No disponible. La información proporcionada no incluye modelos comparables de la misma categoría, y las características atípicas del repositorio (tamaño de fichero desproporcionado respecto al recuento de parámetros) impiden establecer una comparación fiable con alternativas estándar de ~1,3 B parámetros.
 
 ## Limitaciones y advertencias
 
-- Modelo "abliterated": la ablacion de rechazos elimina parte de las barreras de seguridad, por lo que puede generar contenido danino, ofensivo o inseguro; no es apto para produccion orientada al publico sin filtros adicionales.
-- Cero descargas y cero likes: no hay evidencia de validacion por parte de la comunidad; el comportamiento real del modelo no esta verificado.
-- Solo ingles: no se declara soporte de castellano ni de otros idiomas, lo que limita su uso en entornos hispanohablantes.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje pequenos; no hay evaluaciones publicadas que lo cuantifiquen.
-- Inconsistencia entre parametros declarados (1,32 B) y tamanos de cuantizacion (113-176 GB): sugiere que el checkpoint contiene pesos adicionales (posiblemente el encoder visual o capas no contabilizadas) o que la informacion de parametros es incorrecta; conviene inspeccionar los archivos antes de desplegar.
-- Licencia MIT: permisiva para uso comercial, pero el autor no ofrece garantias sobre el comportamiento etico o legal del modelo modificado.
-- Sin cuantizaciones imatrix/ponderadas: la calidad de las cuantizaciones bajas (Q2_K, Q3_K_S) puede degradarse mas que en versiones con calibracion.
-- Fecha de creacion futura (2026-11-24): los metadatos indican una fecha posterior a la actual, lo que puede reflejar un error de registro; verificar la integridad del repositorio.
+- Modelo "abliterated"/"heretic": se han eliminado o atenuado los mecanismos de rechazo, por lo que puede generar contenido dañino, ofensivo o ilegal. No es apto para aplicaciones de cara al público sin filtros externos robustos.
+- Sesgos: no documentados, pero al derivar de un modelo base no se han aplicado salvaguardas adicionales; los sesgos del modelo original probablemente persisten o se amplifican.
+- Riesgo de alucinación: no cuantificado; en modelos pequeños de ~1,3 B es habitualmente elevado.
+- Idioma: solo inglés según la etiqueta; el rendimiento en castellano u otros idiomas no está garantizado.
+- Contexto: longitud máxima no documentada; no debe asumirse una ventana amplia.
+- Licencia MIT: permite uso comercial, pero el uso de un modelo sin alineación conlleva responsabilidad legal y reputacional para el desplegador.
+- Discrepancia de tamaño: el recuento de parámetros (1,3 B) no concuerda con los tamaños de fichero GGUF publicados; verificar antes de producción.
+- Ficheros multiparte: requieren concatenación previa; un manejo incorrecto produce ficheros corruptos.
+- Fecha de creación futura (2026-11-24): dato a verificar; puede tratarse de un error de metadatos.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/MiMo-V2.6-Flash-RL-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/MiMo-V2.6-Flash-RL-heretic-GGUF
 - Modelo base: https://huggingface.co/makhdoomhussainraza/MiMo-V2.6-Flash-RL-heretic
-- Pagina de descargas del cuantizador: https://hf.tst.eu/model#MiMo-V2.6-Flash-RL-heretic-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Comparativa de calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones imatrix/weighted: https://huggingface.co/mradermacher/MiMo-V2.6-Flash-RL-heretic-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#MiMo-V2.6-Flash-RL-heretic-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

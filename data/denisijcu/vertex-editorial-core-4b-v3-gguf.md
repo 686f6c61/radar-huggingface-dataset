@@ -2,85 +2,89 @@
 
 ## Resumen
 
-`vertex-editorial-core-4b-v3-gguf` es un modelo de lenguaje conversacional publicado por el usuario Denisijcu en Hugging Face, distribuido exclusivamente en formato GGUF y etiquetado como `qwen3`. El nombre del repositorio y la nomenclatura del archivo (`Qwen3-4B.Q4_K_M.gguf`) indican que se trata de un fine-tuning de Qwen3-4B, el modelo denso de 4.000 millones de parametros de la familia Qwen3 de Alibaba, convertido a GGUF mediante Unsloth. El sufijo "editorial" sugiere una especializacion en tareas de edicion, redaccion o revision de textos, aunque la model card no documenta el dataset de ajuste fino ni el dominio concreto.
+Vertex-Editorial-Core-4B es un modelo de lenguaje especializado en arquitectura editorial, ingeniería pedagógica de libros técnicos y posicionamiento en Amazon KDP, desarrollado por Vertex Coders LLC (Miami, FL), empresa fundada y dirigida por Denis Sanchez Leyva. Se distribuye exclusivamente en formato GGUF bajo el identificador `Denisijcu/vertex-editorial-core-4b-v3-gguf` y está pensado para inferencia local en hardware de consumo.
 
-El modelo resuelve el caso de uso de despliegue local de bajo coste: con 4.022.468.096 parametros totales y un repositorio de 2,5 GB (una sola cuantizacion Q4_K_M), esta pensado para ejecutarse en llama.cpp u Ollama sobre hardware de consumo, sin necesidad de GPU de centro de datos. Su relevancia practica depende enteramente de la calidad del fine-tuning, que no esta documentada: no hay benchmarks, no hay descripcion del dataset, no hay licencia declarada y el repositorio no registra descargas ni interacciones en el momento de redactar esta ficha.
+El modelo parte de una base Qwen3 de 4B parámetros (4.022.468.096 parámetros totales según los pesos publicados) y se ha ajustado mediante Sequence-Level Knowledge Distillation (SeqKD) a partir de un modelo Teacher de 32B parámetros, concretamente Qwen2.5-32B-Instruct. La especialización se orienta a la generación de estructuras de libros, refactorización de índices, copywriting de lanzamiento y desglose de capítulos técnicos, con un modo de razonamiento editorial explícito delimitado por las etiquetas `<editorial_reasoning>`.
 
-Conviene tratarlo como un artefacto experimental de un autor individual, no como un modelo de referencia. La informacion publica disponible es minima y varias especificaciones clave (licencia, idiomas, contexto, datos de entrenamiento) figuran como "no disponible".
+Su relevancia actual reside en la combinación de un tamaño reducido (cuantización Q4_K_M de aproximadamente 2,5 GB) con una tarea vertical muy concreta, lo que permite ejecutarlo en GPUs de gama baja como una GTX 1660 Ti de 6 GB mediante llama.cpp, LM Studio u Ollama. La información pública disponible es escasa: no se detallan licencia, idiomas soportados ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (derivado de Qwen3-4B, segun tags y nombre del archivo GGUF) |
+| Arquitectura | Transformer decoder-only (base Qwen3-4B, ajuste por SeqKD) |
 | Parametros totales | 4.022.468.096 |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | Q4_K_M (unico archivo publicado: `Qwen3-4B.Q4_K_M.gguf`) |
-| Idiomas soportados | no disponible en la informacion proporcionada |
-| Licencia | no disponible en la informacion proporcionada |
-| Formato de pesos | GGUF (repositorio etiquetado `gguf`, compatible con llama.cpp) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (unico archivo publicado) |
+| Idiomas soportados | no disponible (la model card esta en castellano) |
+| Licencia | no disponible |
+| Formato de pesos | GGUF (archivo `Qwen3-4B.Q4_K_M.gguf`); se incluye Modelfile para Ollama |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3-4B: un transformer denso con atencion por grupos de consultas (GQA), orientado a generacion autoregresiva y con soporte de plantilla de chat jinja (de ahi el flag `--jinja` en los comandos de ejemplo). El autor indica que el modelo fue ajustado y convertido a GGUF con Unsloth, lo que implica un fine-tuning supervisado (SFT) o posiblemente LoRA/QLoRA sobre los pesos base, seguido de cuantizacion a Q4_K_M. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF o DPO.
+El modelo es un transformer decoder-only derivado de la familia Qwen3, con 4.022.468.096 parámetros totales. El ajuste se realizó mediante Sequence-Level Knowledge Distillation (SeqKD) tomando como Teacher a Qwen2.5-32B-Instruct, es decir, el estudiante aprende a replicar las distribuciones de salida del profesor en lugar de entrenarse solo con etiquetas duras. El proceso de fine-tuning y la conversión a GGUF se llevaron a cabo con Unsloth, según declara el autor.
 
-No hay informacion publica sobre innovaciones tecnicas propias, decodificacion especulativa, atencion lineal ni modos de razonamiento extendido. La model card se limita a los comandos de uso con `llama-cli` y `llama-mtmd-cli` y a la lista de archivos disponibles, e incluye un Modelfile para Ollama. La afirmacion "trained 2x faster with Unsloth" es una nota del tooling de conversion, no un dato de rendimiento del modelo.
+La innovación principal no es arquitectónica sino de formato: el modelo incorpora un modo de razonamiento editorial nativo (`<editorial_reasoning>`) que fuerza una fase de análisis previa a la generación, evaluando hueco de mercado y propuesta única de venta (USP), fricción cognitiva del lector objetivo y arco pedagógico o narrativo. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato chat, con plantilla jinja compatible con llama.cpp.
-- Especializacion probable en tareas editoriales (redaccion, revision, reescritura) por el nombre del repositorio, aunque no documentada.
-- Soporte de tool calling / function calling: no verificado; heredado potencialmente de Qwen3-4B pero no confirmado para este fine-tuning.
-- Razonamiento multi-paso y uso como agente: no documentado.
-- Capacidades multilingues: no documentadas; el modelo base Qwen3 es multilingue, pero el fine-tuning puede haber reducido el alcance.
-- Vision o audio: no disponible. El comando `llama-mtmd-cli` aparece en la model card como ejemplo generico de Unsloth, no implica soporte multimodal en este repositorio.
-- Modo thinking: no disponible.
+- Generación de texto especializada en arquitectura editorial y planificación de libros técnicos.
+- Razonamiento editorial en modo Chain-of-Thought mediante el bloque `<editorial_reasoning>`.
+- Modo "Blueprint editorial completo": generación de títulos SEO, avatar de lector, reglas de estilo y tablas de contenido multi-parte.
+- Modo "Refactorización de índices" (book doctoring): diagnóstico y reestructuración de borradores.
+- Modo "Pack de lanzamiento KDP": copywriting de contraportada con framework PAS, palabras clave y gancho del capítulo 1.
+- Modo "Arquitectura micro de capítulo": desglose de laboratorios prácticos, código vivo y retos técnicos.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes multi-paso: no disponible de forma explícita; el flujo de razonamiento editorial es interno al prompt.
+- Capacidades multilingües: no documentadas; la model card y el system prompt están en castellano.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Asistente editorial local: el modelo puede integrarse en un editor de textos (por ejemplo, via Ollama) para sugerir reescrituras y correcciones de estilo, con la ventaja de ejecutarse en una sola maquina sin enviar contenido a la nube.
-- Prototipado de pipelines conversacionales: sirve para validar plantillas de chat, prompts y flujos multi-turno en llama.cpp antes de migrar a un modelo mayor, dado su bajo coste de despliegue (2,5 GB en disco).
-- Generacion de borradores en entornos con requisitos de privacidad: al ser un modelo local y pequeno, encaja en flujos donde el texto no puede salir del portatil o del servidor interno.
-- Pruebas de cuantizacion y tooling: util como banco de pruebas para verificar la integracion de GGUF con llama.cpp, Ollama o endpoints compatibles OpenAI (tag `endpoints_compatible`).
-- Educacion y experimentacion: permite a estudiantes reproducir el flujo Unsloth (fine-tuning + conversion a GGUF) sobre un modelo de 4B con hardware modesto.
-- Tareas de clasificacion o extraccion ligera: con prompts adecuados puede etiquetar fragmentos de texto o extraer campos, aunque sin benchmarks no hay garantia de calidad frente a Qwen3-4B original.
+- Planificación de libros técnicos: el modelo genera índices multi-parte con títulos SEO, avatar de lector y reglas de estilo, adecuado para autores que necesitan una estructura editorial coherente antes de escribir.
+- Reescritura de borradores débiles: mediante el modo de refactorización de índices, diagnostica problemas estructurales y propone una reorganización de capítulos y secciones.
+- Copywriting de lanzamiento en Amazon KDP: produce contraportadas con el framework PAS, listas de palabras clave y ganchos de apertura para el capítulo 1, orientados a mejorar la conversión de la ficha del libro.
+- Diseño de capítulos con laboratorios prácticos: desglosa ejercicios, retos técnicos y fragmentos de código para libros de programación, aprovechando la base Qwen3-4B para el contenido técnico.
+- Asistencia editorial local sin conexión: al ejecutarse en GGUF Q4_K_M (~2,5 GB) con llama.cpp u Ollama, permite trabajar con material confidencial de manuscritos en una GTX 1660 Ti de 6 GB sin enviar datos a la nube.
+- Prototipado rápido de estructuras editoriales: integrable en pipelines de generación de documentación o en flujos de trabajo de autoedición que requieran múltiples variantes de índice y contraportada en poco tiempo.
+- Formación de asistentes editoriales especializados: sirve como base para ajustes posteriores o para sistemas con prompts encadenados que necesiten un paso de razonamiento editorial explícito y auditable.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 3,5-4,5 GB con la cuantizacion Q4_K_M publicada (2,5 GB de pesos mas cache KV), dependiendo de la longitud de contexto configurada.
-- GPU recomendadas: cualquier GPU con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4090); tambien viable en CPU con llama.cpp.
-- Cabe en GPU de consumo: si, en la mayoria de tarjetas con 6-8 GB de VRAM, y en CPU con suficiente RAM (8 GB o mas).
-- Opciones de despliegue: llama.cpp (`llama-cli -hf ... --jinja`), Ollama (Modelfile incluido), y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere integracion con APIs tipo OpenAI.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: aproximadamente 2,5 GB para la cuantización Q4_K_M publicada.
+- GPU recomendadas: el autor cita explícitamente la NVIDIA GTX 1660 Ti de 6 GB como hardware objetivo; cualquier GPU con al menos 4 GB de VRAM libre es suficiente para esta cuantización.
+- Cabe en GPU de consumo: sí, en GTX 1660 Ti (6 GB) y modelos superiores.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf Denisijcu/vertex-editorial-core-4b-v3-gguf --jinja`), LM Studio y Ollama (se incluye Modelfile).
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| vertex-editorial-core-4b-v3-gguf | 4,02 B | no disponible | no disponible | GGUF (Q4_K_M) | Hugging Face, 0 descargas |
-| Qwen3-4B (base) | 4,02 B | 32.768 tokens (ampliable, segun documentacion de Qwen) | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente usado |
-| Llama 3.2 3B | 3,2 B | 131.072 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, ampliamente usado |
-| Phi-3.5-mini | 3,8 B | 131.072 tokens | MIT | safetensors, GGUF | Hugging Face, ampliamente usado |
+| Vertex-Editorial-Core-4B | 4.022.468.096 | no disponible | GGUF Q4_K_M | no disponible | Editorial y KDP |
+| Qwen3-4B (base) | ~4B | no disponible | safetensors, GGUF | no disponible en esta ficha | Propósito general |
+| Qwen2.5-32B-Instruct (Teacher) | ~32B | no disponible | safetensors, GGUF | no disponible en esta ficha | Propósito general, instrucciones |
 
-La comparativa con Qwen3-4B es la mas directa: este repositorio es un fine-tuning del mismo, sin documentacion sobre que mejora aporta. Los datos de contexto de Qwen3-4B y Llama 3.2 3B provienen de sus model cards publicas; no se dispone de datos de benchmarks de este modelo para comparar rendimiento.
+La comparación cuantitativa con alternativas de la misma categoría (modelos verticales de edición o asistentes de escritura) no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay licencia declarada, lo que impide determinar si el uso comercial esta permitido; debe tratarse como no licenciado hasta confirmacion del autor.
-- Sin benchmarks ni evaluacion publica: no hay evidencia de que el fine-tuning mejore al Qwen3-4B original; podria degradar capacidades generales.
-- Riesgo de alucinacion: inherente a modelos de 4B, especialmente en tareas factuales y sin modo de razonamiento verificado.
-- Idiomas y contexto desconocidos: no se puede asumir el soporte multilingue ni la ventana de 32K de Qwen3-4B tras el ajuste.
-- Repositorio sin traccion: 0 descargas y 0 likes en el momento de la ficha; sin comunidad que valide su calidad.
-- Un solo archivo GGUF (Q4_K_M): no hay variantes de cuantizacion para ajustar el equilibrio calidad/memoria.
-- Posible confusion en la model card: menciona `llama-mtmd-cli` para modelos multimodales, pero no hay evidencia de capacidades de vision en este repositorio.
+- La licencia no está declarada en la información disponible; no se puede confirmar el uso comercial sin consultar al autor.
+- No se documentan los idiomas soportados ni el comportamiento fuera del castellano.
+- No se especifica la longitud de contexto efectiva; el uso con manuscritos largos puede degradar la coherencia.
+- El modelo está altamente especializado en tareas editoriales; su rendimiento en tareas generales (código, matemáticas, razonamiento abstracto) no está evaluado.
+- Riesgo de alucinación en datos de mercado, palabras clave de Amazon o afirmaciones sobre nichos editoriales; conviene verificar manualmente cualquier recomendación de negocio.
+- El modo `<editorial_reasoning>` requiere respetar el system prompt oficial; sin él, el comportamiento puede desviarse del esperado.
+- Solo se publica una cuantización (Q4_K_M); no hay versiones de mayor precisión ni safetensors del modelo ajustado en este repositorio.
+- El número de descargas (189) y la ausencia de likes indican una adopción muy limitada; no hay evidencia externa de calidad en producción.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Denisijcu/vertex-editorial-core-4b-v3-gguf
-- Unsloth (tooling de fine-tuning y conversion): https://github.com/unslothai/unsloth
-- llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
+- Web del autor: https://vertexcoders.com
+- Unsloth (herramienta de fine-tuning y conversión): https://github.com/unslothai/unsloth

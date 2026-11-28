@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/L3.1-RPganoff-8B-B-GGUF",
+  "slug": "mradermacher-l3-1-rpganoff-8b-b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.1-RPganoff-8B-B-GGUF",
+  "created_at": "2024-09-29T01:33:44.000Z",
+  "updated_at": "2026-11-28T04:19:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:djuna/L3.1-RPganoff-8B-B",
+    "base_model:quantized:djuna/L3.1-RPganoff-8B-B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 293,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 82806137440,
+  "storage_human": "82.8 GB",
+  "context_length": 131072,
+  "base_model": "djuna/L3.1-RPganoff-8B-B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

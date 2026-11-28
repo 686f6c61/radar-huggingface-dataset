@@ -2,105 +2,104 @@
 
 ## Resumen
 
-TinyErotica-7M es un modelo de lenguaje de 7,16 millones de parámetros entrenado desde cero por el desarrollador independiente ViezeVingertjes para generar relatos eróticos breves (unas 150 palabras) en inglés. Su rasgo distintivo no es la calidad literaria, sino la escala de despliegue: está diseñado para ejecutarse íntegramente en un microcontrolador ESP32-S3, sin conexión a red, a unos 5,7 tokens por segundo. Emplea una arquitectura Llama compacta (6 capas, 6 cabezas, dimensión oculta 288, FFN 768, embeddings atados) con un tokenizador BPE byte-level de 4096 tokens entrenado sobre el propio corpus.
+TinyErotica-7M es un modelo de lenguaje de 7,16 millones de parámetros entrenado desde cero por el usuario ViezeVingertjes para generar relatos eróticos cortos y completos de aproximadamente 150 palabras en inglés. Se trata de un experimento de escala extrema: un transformer tipo Llama de solo 6 capas y dimensión oculta 288, diseñado específicamente para una única tarea de generación creativa de ficción adulta, no como modelo de propósito general.
 
-El modelo se apoya en el dataset ViezeVingertjes/TinyErotica (configuración `curated`), formado por 257.002 relatos sintéticos de 80 a 190 palabras generados por un profesor Gemma 4 a partir de planes por relato y filtrados automáticamente. La ventana de contexto es de 256 tokens, suficiente para contener un relato completo: cada muestra arranca en el token separador `<|endoftext|>` y termina cuando el modelo lo vuelve a emitir, sin prompt de entrada.
+El modelo parte de una arquitectura Llama minimalista con embeddings atados y un tokenizador BPE de 4.096 tokens entrenado sobre el propio corpus. Su ventana de contexto es de 256 tokens, suficiente para contener un relato completo, y su entrenamiento se realizó sobre el dataset TinyErotica/TinyErotica, formado por 257.002 relatos sintéticos de 80 a 190 palabras en 16 categorías, generados por un profesor Gemma 4 y verificados automáticamente.
 
-Su relevancia actual reside en la demostración de que un modelo de generación de texto con capacidad de cierre autónomo de secuencia cabe en 7,3 MB en int8 (pesos y caché KV) y arranca en 1,5 segundos en hardware de menos de 10 euros. La licencia es Apache 2.0, aunque el contenido es explícito y restringido a adultos.
+Su relevancia es fundamentalmente metodológica: el autor documenta de forma rigurosa cómo el tamaño del dataset influye más que el número de parámetros a esta escala, con evaluaciones ciegas de coherencia lógica y análisis del efecto de los parámetros de muestreo. Es un caso de estudio sobre modelos de lenguaje ultra pequeños (SLM) especializados, no una herramienta de producción general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Llama (transformer decoder-only): 6 capas, 6 cabezas, hidden size 288, FFN 768, embeddings atados |
+| Arquitectura | Llama (transformer decoder-only): 6 capas, 6 cabezas de atención, hidden size 288, FFN 768, embeddings atados |
 | Parametros totales | 7.155.360 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 256 tokens |
-| Tipos de cuantizacion | int8 (pesos y cache KV, 7,3 MB); pesos originales en safetensors (fp32/bf16 segun repo) |
-| Idiomas soportados | ingles (en) |
+| Tipos de cuantizacion | no disponible (pesos safetensors; el autor menciona evaluaciones con pesos int8) |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (transformers); empaquetado int8 propietario para el firmware del ESP32-S3 |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only con la estructura de Llama, deliberadamente reducido: 6 capas, 6 cabezas de atención, dimensión oculta 288, FFN de 768 y embeddings atados entre entrada y salida. El tokenizador es un BPE byte-level de 4096 tokens entrenado específicamente sobre el corpus, lo que maximiza la eficiencia de representación para el dominio y el tamaño de vocabulario reducido. La ventana de 256 tokens está calibrada para albergar un relato completo de principio a fin, con el token `<|endoftext|>` (id 0) actuando como delimitador de inicio y fin de muestra.
+El modelo es un transformer decoder-only con arquitectura Llama reducida al mínimo: 6 capas, 6 cabezas de atención, dimensión oculta de 288, capa feed-forward de 768 y embeddings de entrada y salida atados. El tokenizador es un BPE a nivel de byte con vocabulario de 4.096 tokens, entrenado específicamente sobre el corpus del dataset. No emplea técnicas como decodificación especulativa, atención lineal ni arquitecturas híbridas; es un transformer denso convencional a escala muy pequeña.
 
-El entrenamiento se realizó desde cero durante 60.000 pasos con batches de 64 × 256 tokens (21 épocas sobre el corpus), optimizador AdamW con learning rate 1e-3 y schedule coseno, alcanzando una pérdida de validación de 1,060. Los datos provienen de la configuración `curated` del dataset ViezeVingertjes/TinyErotica: 257.002 relatos sintéticos de 80 a 190 palabras en 16 categorías, generados por un profesor Gemma 4 a partir de planes por relato y sometidos a verificación automática (longitud, palabras prohibidas, referencias a edades o menores, actos no planificados, errores de cuerpo y pronombres). No se documenta RLHF ni DPO; el ajuste fino se limita al preentrenamiento supervisado sobre el corpus sintético. La innovación técnica destacable es el empaquetado int8 de pesos y caché KV para ejecución en microcontrolador, con un runtime C propio.
+El entrenamiento se realizó desde cero durante 60.000 pasos con batches de 64 secuencias de 256 tokens (aproximadamente 21 épocas sobre el corpus), optimizador AdamW con learning rate 1e-3 y schedule coseno, alcanzando una pérdida de validación de 1,060. Los datos provienen del config `curated` del dataset TinyErotica/TinyErotica: 257.002 relatos sintéticos de 80 a 190 palabras en 16 categorías, escritos a partir de planes por un modelo profesor Gemma 4 y sometidos a verificación automática de longitud, palabras prohibidas, referencias a edades o menores, actos no planificados y errores de cuerpo y pronombres. Todos los personajes son adultos de 21 años o más. No se menciona RLHF ni DPO; el ajuste fino es puramente de modelado de lenguaje autoregresivo supervisado.
 
 ## Capacidades
 
-- Generación de relatos eróticos breves y autoconclusivos de aproximadamente 150 palabras en inglés, sin necesidad de prompt.
-- Cierre autónomo de secuencia: el 100% de las historias termina por sí misma emitiendo el token de fin.
-- Coherencia básica de personajes: mantiene nombres estables a lo largo del relato con la configuración de muestreo recomendada (0% de cambios de nombre con penalización 1,08 y nombres exentos).
-- Generación con planes implícitos: reproduce estructuras narrativas de 16 categorías aprendidas del corpus (incluidos temas de fantasía oscura entre adultos).
-- Muestreo configurable mediante `generation_config.json`: temperatura 1,0, top-k 40, top-p 0,95, min-p 0,10 y penalización de repetición 1,08.
-- Ejecución en dispositivo: inferencia int8 en ESP32-S3 a ~5,7 tokens/s con arranque en 1,5 s.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni capacidades multilingües más allá del inglés.
+- Generación de relatos eróticos cortos y completos de aproximadamente 150 palabras en inglés, sin necesidad de prompt: cada muestra arranca del token separador `<|endoftext|>` (id 0) y termina cuando el modelo lo vuelve a emitir.
+- Generación de ficción creativa en 16 categorías temáticas, incluyendo temas de fantasía oscura como no consentimiento y relaciones tabú entre adultos (todo ficción).
+- Coherencia narrativa limitada pero funcional a escala de relato corto, con capacidad de cerrar la historia de forma autónoma (100% de las historias terminan por sí solas según la evaluación del autor).
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, matemáticas, código ni visión.
+- Capacidad multilingüe nula más allá del inglés.
+- No dispone de modo de pensamiento (thinking mode) ni capacidades de audio.
 
 ## Casos de uso
 
-- Narrativa generativa en dispositivos sin conectividad: el modelo se ejecuta íntegramente en un ESP32-S3 con 7,3 MB en int8, lo que permite generar relatos en hardware empotrado sin enviar datos a la nube. Adecuado para instalaciones de arte generativo o dispositivos de ficción interactiva para adultos.
-- Demostración educativa de modelos de lenguaje en el borde: sirve para ilustrar en docencia o investigación cómo un transformer completo (atención, FFN, tokenizador BPE) cabe en un microcontrolador y produce texto coherente, con métricas medibles de pérdida, cierre de secuencia y diversidad de 4-gramas.
-- Generación de ficción breve para lectura personal: produce relatos autoconclusivos de ~146 palabras con una tasa de error lógico de 0,51–0,57 por historia según el juicio ciego, suficiente para consumo recreativo sin edición.
-- Pruebas de estrés de muestreo y decodificación: el modelo permite experimentar con temperatura, top-k, top-p, min-p y penalización de repetición sobre un dominio acotado, con efectos medibles en variedad (4-gramas distintos) y coherencia (errores por relato).
-- Prototipado de pipelines de generación de ficción a pequeña escala: útil como bloque de bajo coste para validar prompts de sistema, formatos de salida o flujos de filtrado antes de escalar a modelos mayores como Literotica-Writer-26B-A4B.
-- Investigación sobre datos sintéticos y filtrado automático: el modelo y su dataset asociado permiten estudiar cómo el tamaño y la curaduría del corpus (10k, 110k y 257k historias) afectan a la calidad narrativa y al cierre de secuencia en modelos pequeños.
-- Evaluación comparativa de eficiencia tamaño-rendimiento: con 7M de parámetros supera en errores lógicos a modelos de 11,5M–14,0M entrenados con los mismos datos, lo que lo convierte en un caso de estudio sobre cuándo más datos rinden mejor que más parámetros.
+- Investigación sobre modelos de lenguaje ultra pequeños: el modelo sirve como banco de pruebas reproducible para estudiar cómo el tamaño del dataset y la longitud del entrenamiento afectan a la coherencia a escala de 7M de parámetros, con métricas documentadas de distinct 4-grams y errores lógicos por relato.
+- Estudio de dinámicas de muestreo: el autor documenta el efecto medido de la repetition penalty, top-k, top-p y min-p sobre la variedad y la coherencia, lo que lo convierte en un caso práctico para experimentos de decodificación.
+- Generación de ficción adulta de formato corto en entornos controlados: dado su contexto de 256 tokens, encaja en escenarios donde se requiere un relato autoconclusivo de unas 150 palabras sin prompt, por ejemplo para pruebas de pipelines de generación creativa.
+- Docencia y divulgación sobre entrenamiento desde cero: su tamaño (0,1 GB de repositorio) permite entrenar, inspeccionar y desplegar el modelo completo en un portátil, lo que facilita explicar tokenización, embeddings atados y schedules de learning rate con un caso real.
+- Evaluación de metodologías de juicio ciego: el autor emplea un modelo separado que lee relatos anonimizados y cuenta errores lógicos, un enfoque reutilizable para evaluar otros SLM generativos.
+- Pruebas de estrés de filtros de contenido y moderación: al ser un modelo NSFW sin censura y de licencia Apache 2.0, puede usarse para validar clasificadores y políticas de contenido en pipelines de moderación, siempre en entornos para adultos.
 
 ## Benchmarks y rendimiento
 
-Evaluación interna del autor con 100 historias por modelo, runtime C en int8 y el primer sampler de la placa (temperatura 0,8, top-p 0,9, penalización de repetición 1,15):
+El autor publica evaluaciones propias (no benchmarks estándar como MMLU o HumanEval). Se recogen a continuación tal como aparecen en la model card.
 
-| Metrica | 10k historias | 110k historias | 257k, 30k pasos | 257k, 60k pasos (este modelo) |
+Efecto del tamaño del dataset y la longitud del entrenamiento (100 relatos por modelo, pesos int8, sampler anterior con temperatura 0,8, top-p 0,9 y repetition penalty 1,15):
+
+| Metrica | 10k relatos | 110k relatos | 257k, 30k pasos | 257k, 60k pasos (este modelo) |
 |---|---:|---:|---:|---:|
-| Historias que terminan solas | 100% | 99% | 100% | 100% |
-| Mediana de palabras | 129 | 130 | 146 | 146 |
-| Historias marcadas por el verificador | 5% | 13% | 0% | 0% |
-| Historias que cambian de nombre | 10% | 4% | 7% | 1% |
-| 4-gramas distintos | 0,654 | 0,791 | 0,867 | 0,842 |
+| Relatos que terminan solos | 100% | 99% | 100% | 100% |
+| Palabras (mediana) | 129 | 130 | 146 | 146 |
+| Relatos marcados por el checker | 5% | 13% | 0% | 0% |
+| Relatos que cambian de nombre | 10% | 4% | 7% | 1% |
+| 4-grams distintos | 0,654 | 0,791 | 0,867 | 0,842 |
 
-Juicio ciego por un modelo separado que contó errores lógicos por historia:
+Juicio ciego de errores lógicos por relato (modelo juez separado, relatos anonimizados):
 
-| Modelo | Errores por historia | Historias sin errores |
+| Modelo / configuracion | Errores por relato | Relatos sin errores |
 |---|---:|---:|
 | 257k, 30k pasos | 0,67–0,71 | 50–51% |
-| Modelos mayores (11,5M–14,0M, mismos datos) | 0,67–0,73 | 50–57% |
-| Este modelo, con muestreo recomendado | 0,51–0,57 | 60% |
+| Modelos mayores (11,5M–14,0M parámetros, mismos datos) | 0,67–0,73 | 50–57% |
+| Este modelo, con el muestreo recomendado | 0,51–0,57 | 60% |
 
-No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+El autor concluye que, con este volumen de datos, aumentar el tamaño por encima de ~7M de parámetros no reduce los errores lógicos; sería más datos, no más tamaño, lo que ayudaría.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 100 MB en fp32; 7,3 MB en int8 (pesos y caché KV) para el despliegue en microcontrolador.
-- GPU recomendadas: no requiere GPU; cualquier CPU moderna ejecuta el modelo en transformers. Para el despliegue empotrado, ESP32-S3 (placa de referencia Waveshare ESP32-S3-Touch-AMOLED-2.16).
-- Cabe en cualquier GPU de consumo, incluida RTX 4090, y en la mayoría de SoC y microcontroladores con suficiente memoria; el límite práctico es la RAM disponible para el empaquetado int8.
-- Opciones de despliegue: transformers (Python), runtime C int8 propio para ESP32-S3 (firmware no publicado todavía), text-generation-inference y endpoints compatibles según los tags del repo. No se documenta soporte de llama.cpp, Ollama ni vLLM.
-- Latencia y throughput: ~5,7 tokens/s en ESP32-S3, arranque de 1,5 s; no se proporcionan cifras de latencia en CPU o GPU.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (7,16M parámetros ≈ 28,6 MB de pesos) y del orden de decenas de MB en int8; el repositorio completo ocupa 0,1 GB.
+- GPU recomendadas: cualquier GPU consumer moderna sirve; cabe holgadamente en GTX 1650, RTX 3060, RTX 4090, e incluso en CPU.
+- Cabe en cualquier GPU consumer y en la mayoría de CPUs; el cuello de botella no es la memoria sino la latencia de generación token a token.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`); no se documenta soporte explícito de llama.cpp, Ollama o vLLM en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
-|---|---:|---:|---|---|---|
-| TinyErotica-7M | 7,16M | 256 | Apache 2.0 | Ficción erótica breve, edge/MCU | Pesos en HF; firmware no publicado |
-| Literotica-Writer-26B-A4B | 26B totales (A4B, MoE) | no disponible | no disponible | Ficción erótica larga (1.000–5.000 palabras) | HF; ejecutable con llama.cpp |
-| Modelos mayores del mismo autor (11,5M–14,0M) | 11,5M–14,0M | no disponible | no disponible | Misma tarea, mismos datos | No disponibles como modelos publicados independientes en la información |
+| Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| TinyErotica-7M | 7,16M | 256 tokens | 257.002 relatos sinteticos (config curated) | Apache 2.0 | Hugging Face |
+| Variantes mayores del mismo autor (11,5M–14,0M) | 11,5M–14,0M | no disponible | mismos datos | no disponible | mencionadas en la model card, sin enlace directo |
+| Literotica-Writer-26B-A4B | 26B totales, A4B (MoE) | no disponible | no disponible | no disponible | Hugging Face, ejecutable con llama.cpp |
 
-La comparación con modelos de propósito general del mismo tamaño (por ejemplo, variantes de TinyStories) no está disponible en la información proporcionada.
+La comparación con modelos de propósito general de tamaño similar no está disponible en la información proporcionada. El propio autor señala que, a igualdad de datos, los modelos de 11,5M a 14,0M parámetros no superan a este de 7M en errores lógicos por relato (0,67–0,73 frente a 0,51–0,57 con el muestreo recomendado).
 
 ## Limitaciones y advertencias
 
-- Solo genera contenido explícito para adultos; no debe usarse en productos accesibles a menores ni integrarse en plataformas sin verificación de edad.
-- Con 7M de parámetros, los relatos son cortos y formulaicos; en escenas de tres personajes confunde a veces quién hace qué.
-- Sesgos conocidos: el corpus es sintético y está limitado a 16 categorías, incluidas temáticas de fantasía oscura como no consentimiento y relaciones tabú entre adultos; el modelo reproduce esos patrones y no generaliza fuera de ellos.
-- Riesgo de alucinación estructural: errores de lógica narrativa (personajes que aparecen o desaparecen, posiciones imposibles, contradicciones) en aproximadamente el 40% de las historias según el juicio ciego, con 0,51–0,57 errores por historia.
-- Limitación de idioma: únicamente inglés; no hay soporte multilingüe.
+- Contenido exclusivamente para adultos (18+): el modelo genera ficción sexual explícita y no debe usarse en productos accesibles a menores.
+- Sesgos conocidos: no documentados explícitamente en la información disponible; el corpus es sintético y generado por un profesor, lo que puede introducir sesgos del modelo profesor y de los planes de historia.
+- Riesgo de alucinación y errores de coherencia: con solo 7M de parámetros, los relatos son cortos y formulaicos; en escenas de tres personas a veces confunde quién hace qué (0,51–0,57 errores lógicos por relato con el muestreo recomendado).
 - Limitación de contexto: 256 tokens, insuficiente para relatos largos o conversaciones multi-turno.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el contenido generado es explícito y puede incumplir las políticas de plataformas de distribución, tiendas de aplicaciones y proveedores cloud.
-- Caveat de producción: el firmware para ESP32-S3 no se ha publicado; el despliegue en dispositivo requiere implementar o esperar el runtime C int8.
-- La penalización de repetición fuerte degrada la coherencia de nombres (7% de historias cambian de nombre con penalización 1,15); hay que usar 1,08 con nombres exentos.
+- Limitación de idioma: solo inglés; no hay capacidades multilingües.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el contenido NSFW y los temas de fantasía oscura (no consentimiento, relaciones tabú entre adultos) pueden incumplir políticas de plataformas y legislaciones locales; el autor lo desaconseja para productos accesibles a menores.
+- Caveat de producción: no soporta prompts ni instrucciones; cada generación es un relato nuevo desde el token separador, lo que limita su integración en aplicaciones conversacionales.
+- El uso de repetition penalty fuerte degrada la coherencia de nombres (con 1,15, el 7% de los relatos cambia de nombre a mitad; con 1,08 y exención de 50 nombres, el 0%).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/ViezeVingertjes/TinyErotica-7M
-- Dataset de entrenamiento: https://huggingface.co/datasets/ViezeVingertjes/TinyErotica
-- Modelo relacionado (ficción larga): https://huggingface.co/ViezeVingertjes/Literotica-Writer-26B-A4B
+- Dataset TinyErotica/TinyErotica: https://huggingface.co/datasets/TinyErotica/TinyErotica
+- Modelo relacionado Literotica-Writer-26B-A4B: https://huggingface.co/TinyErotica/Literotica-Writer-26B-A4B

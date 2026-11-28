@@ -2,98 +2,85 @@
 
 ## Resumen
 
-Volt-TTS es un modelo de síntesis de voz (text-to-speech) especializado en 25 lenguas de la India, desarrollado por el usuario openarcane y publicado bajo licencia Apache-2.0. Se trata de un ajuste fino mediante LoRA (rango 32, fusionado en los pesos) del modelo base Qwen3-TTS-12Hz-1.7B-Base del equipo Qwen, al que se le han añadido 93 millones de parámetros correspondientes a nuevos embeddings de tokens para lenguas indias, alcanzando un total de 2.021.578.816 parámetros (aproximadamente 2,02 mil millones) en precisión bf16.
+Volt-TTS es un modelo de texto a voz (TTS) especializado en 25 lenguas de la India, desarrollado por openarcane y publicado bajo licencia Apache-2.0. Se trata de un ajuste fino (fine-tuning) del modelo Qwen3-TTS-12Hz-1.7B-Base del equipo Qwen, al que se le han anadido embeddings de tokens especificos para lenguas indicas, elevando el total de parametros a 2.021.578.816 (1,93B de la base mas 93M de los nuevos embeddings). El modelo resuelve el problema de la sintesis de voz multilingue en un ecosistema linguistico tradicionalmente poco cubierto por los TTS comerciales.
 
-El modelo resuelve el problema de la cobertura lingüística en TTS para el subcontinente indio, un ámbito tradicionalmente desatendido por los sistemas comerciales. Ofrece dos voces integradas (Arjun, masculina, y Meera, femenina) que hablan todas las lenguas del modelo, además de clonación de voz a partir de una muestra de 5 a 15 segundos, con o sin transcripción, en cualquier idioma. La selección de lengua se realiza por línea de texto mediante el parámetro `language=`.
+La propuesta diferencial de Volt-TTS es triple: cubre 25 lenguas indicas en un unico modelo (seleccionables por linea de texto), incluye dos voces integradas (Arjun, masculina, y Meera, femenina) que hablan todas las lenguas, y permite clonar cualquier voz a partir de un clip de referencia de 5 a 15 segundos, con o sin transcripcion. Esta pensado para desarrolladores que necesitan sintesis de voz natural en lenguas como kannada, hindi, tamil, telugu, malayalam, marathi, bengali, entre otras.
 
-Se presenta como una versión preliminar (preview release). El códec de voz es de 12,5 Hz, heredado del modelo base, y el repositorio ocupa 4,8 GB en formato safetensors. Por su tamaño y su requisito de aproximadamente 8 GB de VRAM, es desplegable en GPU de consumo, lo que lo hace relevante para desarrolladores que necesiten TTS multilingüe indio sin infraestructura de gran escala.
+Se trata de una preview release, con 256 descargas y 1 like en Hugging Face en el momento de la consulta. El modelo usa un codec de voz de 12,5 Hz heredado de la base y se distribuye en precision bf16 con pesos en safetensors. Su relevancia actual radica en que cubre un hueco de cobertura linguistica con licencia permisiva y requisitos de hardware moderados (aproximadamente 8 GB de VRAM para inferencia en bf16).
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Derivada de Qwen3-TTS (modelo base Qwen3-TTS-12Hz-1.7B-Base); ajuste fino LoRA fusionado |
-| Parámetros totales | 2.021.578.816 (1,93B del base + 93M de embeddings de tokens indios) |
-| Parámetros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer TTS basado en Qwen3-TTS (codec de voz a 12,5 Hz) |
+| Parametros totales | 2.021.578.816 (1,93B base + 93M embeddings indicos) |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible (pesos publicados en bf16) |
-| Idiomas soportados | 25 lenguas indias: assamese, bengali, bhojpuri, bodo, chhattisgarhi, dogri, gujarati, hindi, kannada, kashmiri, konkani, magahi, maithili, malayalam, manipuri, marathi, nepali, odia, punjabi, sanskrit, santali, sindhi, tamil, telugu, urdu (más inglés en los ejemplos de la model card) |
+| Tipos de cuantizacion | bf16 (pesos publicados); no se documentan otras cuantizaciones |
+| Idiomas soportados | 25 lenguas indicas: assamese, bengali, bhojpuri, bodo, chhattisgarhi, dogri, gujarati, hindi, kannada, kashmiri, konkani, magahi, maithili, malayalam, manipuri, marathi, nepali, odia, punjabi, sanskrit, santali, sindhi, tamil, telugu, urdu |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (bf16); voces integradas en safetensors separados dentro de `speakers/` |
+| Formato de pesos | safetensors (repo de 4,8 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-TTS-12Hz-1.7B-Base, un sistema de síntesis de voz del equipo Qwen que emplea un códec de voz de 12,5 Hz. Sobre esa base, openarcane aplicó un ajuste fino con LoRA de rango 32, posteriormente fusionado en los pesos finales, y amplió el vocabulario de tokens con 93 millones de parámetros nuevos destinados a los embeddings de las lenguas indias. El resultado es un modelo de 2,02B parámetros en bf16.
+Volt-TTS parte de Qwen3-TTS-12Hz-1.7B-Base, un modelo de sintesis de voz de la familia Qwen3-TTS que opera sobre un codec de voz con una tasa de 12,5 Hz. Sobre esa base, openarcane ha realizado un ajuste fino anadiendo 93 millones de parametros correspondientes a nuevos embeddings de tokens para las lenguas indicas, lo que eleva el total a 2,02B de parametros. El modelo se distribuye en precision bf16.
 
-No se detalla en la información disponible el volumen de datos de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF o DPO. La model card indica que los datos de evaluación (FLEURS) no se usaron en entrenamiento. El modelo incorpora dos voces predefinidas empaquetadas como safetensors con `ref_code`, `ref_spk_embedding` y metadatos de `ref_text`, y el modo de clonación admite tanto el modo con transcripción (`icl_mode=True`) como el modo sin transcripción (`x_vector_only_mode=True`).
+La model card no detalla el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal. La unica innovacion explicitamente descrita es la capacidad de clonacion de voz en modo zero-shot a partir de clips cortos (5-15 s), con soporte para modo ICL (con transcripcion de referencia) y modo x-vector (sin transcripcion). El autor acompana el modelo con `openarcane`, un normalizador de texto sin dependencias que reescribe numeros, importes, fechas y horas como palabras en la lengua elegida.
 
 ## Capacidades
 
-- Síntesis de voz en 25 lenguas indias, con selección de idioma por línea mediante el parámetro `language=`.
-- Dos voces integradas: Arjun (masculina) y Meera (femenina), ambas operativas en todas las lenguas del modelo.
-- Clonación de voz a partir de una muestra de 5 a 15 segundos, con o sin transcripción, en cualquier idioma.
-- Procesamiento por lotes: permite pasar listas de textos y de idiomas para generar varias locuciones en una sola llamada, cada una en su propia lengua.
-- Control de generación mediante parámetros de muestreo (`temperature`, `top_k`, `repetition_penalty`), con valores por defecto de 0.9, 50 y 1.05 respectivamente, definidos en `generation_config.json`.
-- Reproducibilidad mediante `torch.manual_seed(...)`.
-- Entrada de audio de referencia como ruta local, URL o base64.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada más allá de la referencia de clonación.
+- Sintesis de voz (text-to-speech) en 25 lenguas indicas, con seleccion de idioma por linea mediante el parametro `language=`.
+- Dos voces integradas: Arjun (masculina) y Meera (femenina), ambas operativas en todas las lenguas soportadas.
+- Clonacion de voz a partir de un clip de referencia de 5 a 15 segundos, en cualquier lengua, con o sin transcripcion del clip.
+- Normalizacion de texto integrada mediante la libreria `openarcane`, que convierte cifras, monedas, fechas y horas a palabras en la lengua destino.
+- Soporte de inferencia en GPU CUDA con `device_map` y precision bf16.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, vision ni audio de entrada mas alla de la referencia de clonacion.
 
 ## Casos de uso
 
-- Locución multilingüe para medios de comunicación indios: un medio que publique en hindi, tamil y bengalí puede generar una misma noticia en las tres lenguas con una voz consistente (Meera o Arjun), seleccionando el idioma por línea en una sola llamada por lotes.
-- Audiolibros y contenido educativo en lenguas minoritarias: la cobertura de lenguas como santali, bodo, dogri, konkani o maithili permite producir material de audio para comunidades con escasa oferta de TTS comercial, usando las voces integradas sin necesidad de muestras de referencia.
-- Atención al cliente automatizada en el subcontinente: integrado en un pipeline de IVR o chatbot de voz, el modelo puede sintetizar respuestas en la lengua del usuario (por ejemplo, kannada o telugu) y, mediante clonación, mantener la voz de un locutor corporativo a partir de un clip de 5 a 15 segundos.
-- Doblaje y localización de vídeo: con la clonación de voz, se puede tomar la voz de un actor o presentador y generar la locución en otra lengua india, manteniendo el timbre, con el modo sin transcripción (`x_vector_only_mode=True`) cuando no se disponga del texto exacto de la muestra.
-- Accesibilidad y lectura de pantalla: conversión de texto a voz en lenguas indias para aplicaciones de lectura asistida, con dos voces disponibles para adaptar el registro (masculino o femenino) al usuario.
-- Generación de contenido para redes sociales y pódcast: producción por lotes de varias líneas en distintas lenguas con una misma voz, útil para cuentas que publican en múltiples idiomas del país.
-- Prototipado e investigación en TTS indio: al ser Apache-2.0 y caber en GPU de consumo, sirve como base para experimentación académica en síntesis de voz para lenguas de bajos recursos.
+- Atencion al cliente automatizada en lenguas indicas: el modelo puede sintetizar respuestas en hindi, kannada o tamil con las voces integradas, y la normalizacion de `openarcane` garantiza que importes, fechas de entrega y numeros de pedido se lean correctamente (por ejemplo, "15/08/2025" o "₹1.250,50").
+- Audiolibros y contenido editorial multilingue: un mismo pipeline puede narrar el mismo texto en varias lenguas indicas cambiando el parametro `language=`, con voz masculina o femenina segun el publico objetivo.
+- Locucion para IVR y telefonia: la clonacion de voz permite generar mensajes con la voz corporativa de la empresa a partir de un clip de 5-15 s, sin necesidad de un estudio de grabacion.
+- Accesibilidad y lectores de pantalla: sintesis de contenido web o documentos en lenguas regionales para usuarios con discapacidad visual, con dos voces disponibles para personalizar la experiencia.
+- Doblaje y localizacion de video: generacion de pistas de voz en lenguas indicas para contenido formativo o corporativo, usando la clonacion para mantener la identidad vocal del locutor original.
+- Educacion y e-learning: narracion de materiales didacticos en lenguas como marathi, telugu o bengali, con la posibilidad de clonar la voz de un profesor concreto a partir de una muestra corta.
+- Prototipado de asistentes de voz: integracion en pipelines de desarrollo con `qwen-tts` y `soundfile`, aprovechando los aproximadamente 8 GB de VRAM necesarios para iterar rapidamente en una unica GPU.
 
 ## Benchmarks y rendimiento
 
-La model card reporta una evaluación sobre FLEURS (Google) en 8 lenguas, usando audio y texto reales del split de test. Para cada ítem, la referencia de voz es una grabación real de FLEURS con su transcripción, y el modelo lee una frase distinta de test en esa voz; ninguno de estos datos se usó en entrenamiento. El autor advierte que son cifras preliminares, a pequeña escala, obtenidas con un único sistema ASR, y que excluyen préstamos del inglés, por lo que quedan por debajo de una puntuación estricta.
-
-| Benchmark | Resultado |
-|---|---|
-| FLEURS (8 lenguas), CER | No disponible (la model card no incluye la tabla numérica en la información proporcionada; solo describe la metodología y advierte que el CER contando todas las palabras es mayor) |
-| MMLU, HumanEval, GSM8K | No aplica (modelo TTS) |
-
-No se han publicado resultados numéricos de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 8 GB en bf16, según indica la model card ("Needs a CUDA GPU with about 8 GB of memory").
-- GPU recomendadas: cualquier GPU CUDA con al menos 8 GB de VRAM; la model card no especifica modelos concretos (A100, H100, RTX 4090, etc.).
-- Cabe en GPU de consumo: sí, con 8 GB o más de VRAM (por ejemplo, gamas con 8-16 GB), aunque no se enumeran modelos concretos.
-- Opciones de despliegue: la model card documenta el uso mediante la librería `qwen-tts` (`Qwen3TTSModel.from_pretrained`) junto con `soundfile`, `torch` y `safetensors`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada para inferencia: aproximadamente 8 GB en precision bf16, segun la model card (requiere GPU CUDA).
+- GPU recomendadas: no se especifican modelos concretos; cualquier GPU CUDA con al menos 8 GB de memoria deberia ser suficiente en bf16 (por ejemplo, RTX 3060 de 12 GB, RTX 4070, RTX 4090, A100, H100).
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM en bf16.
+- Opciones de despliegue: la model card documenta el uso de la libreria `qwen-tts` junto con `safetensors`, `soundfile` y `huggingface_hub`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Volt-TTS | 2,02B | No disponible | 25 lenguas indias (+ inglés en ejemplos) | Apache-2.0 | Hugging Face (openarcane/Volt-TTS) |
-| Qwen3-TTS-12Hz-1.7B-Base | 1,7B (1,93B según la model card) | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face (Qwen/Qwen3-TTS-12Hz-1.7B-Base) |
-| Otras alternativas TTS de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Volt-TTS | 2,02B | No disponible | 25 lenguas indicas | Apache-2.0 | Hugging Face |
+| Qwen3-TTS-12Hz-1.7B-Base | 1,93B | No disponible | No disponible en la informacion | No disponible en la informacion | Hugging Face (Qwen) |
+| Alternativas TTS multilingues de proposito general | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La única comparación documentada es con el modelo base del que deriva. No se dispone de datos de benchmarks ni de especificaciones de terceros comparables en la información proporcionada.
+La unica comparacion documentada en la informacion disponible es con el modelo base Qwen3-TTS-12Hz-1.7B-Base, del que Volt-TTS hereda arquitectura y codec, y al que anade 93M de parametros en embeddings para lenguas indicas. No se dispone de datos de benchmarks ni de otros modelos comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Versión preliminar (preview release): el propio autor la califica como tal, por lo que la estabilidad y la calidad pueden no ser las de un lanzamiento final.
-- Los benchmarks de FLEURS son preliminares, a pequeña escala, con un único sistema ASR y excluyen préstamos del inglés; el CER contando todas las palabras es mayor que el reportado.
-- No se documentan sesgos conocidos, pero al estar entrenado sobre lenguas y voces concretas puede reflejar sesgos de los datos de origen del modelo base y del ajuste fino.
-- Riesgo de alucinación no aplica en el sentido textual, pero la síntesis puede producir pronunciaciones incorrectas o artefactos en lenguas con pocos datos.
-- La cobertura se limita a las 25 lenguas indias listadas; no se garantiza un rendimiento equivalente en todas ellas.
-- La clonación de voz plantea riesgos de uso indebido (suplantación); la licencia Apache-2.0 permite uso comercial, pero el usuario debe cumplir la normativa aplicable sobre derechos de voz e imagen.
-- No se especifican requisitos de contexto ni límites de longitud de texto por llamada.
-- El uso requiere una GPU CUDA con unos 8 GB de VRAM; no se documenta soporte para CPU.
-- Los avisos sobre SoX y la clase del tokenizer pueden ignorarse según la model card, pero indican dependencias que conviene verificar en producción.
+- Se trata de una preview release, segun indica el propio autor; no debe asumirse estabilidad de API ni calidad de produccion.
+- La model card no documenta sesgos conocidos, tasas de alucinacion ni evaluaciones de fidelidad de la sintesis.
+- La clonacion de voz plantea riesgos de suplantacion de identidad y uso indebido; la licencia Apache-2.0 no impone restricciones especificas de uso etico, por lo que la responsabilidad recae en el integrador.
+- La longitud de contexto no esta documentada, lo que limita la planificacion de sintesis de textos largos sin fragmentacion previa.
+- La cobertura linguistica se limita a 25 lenguas indicas; no se documenta soporte para castellano ni otras lenguas no indicas.
+- No se documentan cuantizaciones alternativas a bf16, lo que puede limitar el despliegue en hardware con menos de 8 GB de VRAM.
+- El modelo depende de la libreria `qwen-tts` y del normalizador `openarcane`; la model card advierte que pueden aparecer avisos relacionados con SoX y con la clase del tokenizador que pueden ignorarse.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/openarcane/Volt-TTS
-- Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
-- Vídeo de presentación: https://huggingface.co/openarcane/Volt-TTS/resolve/main/Volt-TTS-teaser.mp4
-- Librería de inferencia: `qwen-tts` (instalable vía `pip install -U qwen-tts`)
-- FLEURS (Google), conjunto de evaluación: no se proporciona enlace en la información disponible
-- Paper, blog o repositorio adicionales: no disponibles en la información proporcionada
+- Modelo base Qwen3-TTS-12Hz-1.7B-Base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
+- Repositorio del normalizador openarcane: https://github.com/openarcane-ai/openarcane
+- Video de presentacion (teaser): https://huggingface.co/openarcane/Volt-TTS/resolve/main/Volt-TTS-teaser.mp4

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Bielik-11B-v3.1-Instruct es un modelo de lenguaje generativo de tipo causal decoder-only con 11.168.796.672 parámetros, desarrollado por SpeakLeash en colaboración con el centro de supercomputación ACC Cyfronet AGH. Se trata de una actualización de la línea Bielik 11B v3 que amplía el preentrenamiento continuo multilingüe y refuerza el post-entrenamiento orientado a seguimiento de instrucciones, uso de herramientas (tool calling) y razonamiento. La ficha que nos ocupa, publicada por el usuario `cpral`, es una réplica de los pesos originales con la recolección de datos desactivada y autenticación obligatoria en Hugging Face para la descarga.
+Bielik-11B-v3.1-Instruct es un modelo de lenguaje generativo de tipo causal decoder-only con 11.168.796.672 parámetros, desarrollado por SpeakLeash en colaboración con el centro de supercomputación ACC Cyfronet AGH. Se trata de una actualización de la línea Bielik 11B v3 que amplía el preentrenamiento continuo multilingüe y refuerza el post-entrenamiento orientado a seguimiento de instrucciones, uso de herramientas y razonamiento. El modelo está optimizado especialmente para polaco y otras lenguas europeas, cubriendo 56 idiomas en total.
 
-El modelo está optimizado para lenguas europeas, con especial énfasis en polaco, y cubre 56 idiomas distintos. Su relevancia actual radica en que combina un contexto de 32.768 tokens con un formato propio de razonamiento (`<think>…</think>`) y de llamada a herramientas (`<tool_call>…</tool_call>`), integrable en vLLM mediante parsers específicos, lo que lo sitúa como una alternativa open source (licencia Apache 2.0) para despliegues de agentes y asistentes multilingües en infraestructura europea.
+La ficha que nos ocupa, `cpral/Bielik-11B-v3.1-Instruct-ungated`, es una réplica del modelo original `speakleash/Bielik-11B-v3.1-Instruct` con la recolección de datos desactivada y con requisito de autenticación en Hugging Face para descargar los pesos. Los pesos, la licencia y el comportamiento del modelo son idénticos al original; solo cambia el mecanismo de acceso y el tratamiento de telemetría.
 
-La versión "ungated" facilita la reproducibilidad y el despliegue en entornos corporativos donde la recolección de datos o las restricciones de acceso añadidas suponen un obstáculo, manteniendo exactamente el mismo comportamiento que el modelo base.
+El modelo resulta relevante para desarrolladores que necesitan un LLM de tamano medio (11B) con contexto de 32.768 tokens, soporte nativo de tool calling y un modo de razonamiento explícito controlable mediante `reasoning_effort`, todo ello bajo licencia Apache 2.0 y con un énfasis poco habitual en lenguas europeas de menor representación, incluido el castellano.
 
 ## Especificaciones tecnicas
 
@@ -14,39 +14,38 @@ La versión "ungated" facilita la reproducibilidad y el despliegue en entornos c
 |---|---|
 | Arquitectura | Transformer causal decoder-only |
 | Parametros totales | 11.168.796.672 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 32.768 tokens (configurado en vLLM con `--max-model-len 32768`) |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos en safetensors; cuantizaciones GGUF/AWQ no documentadas) |
-| Idiomas soportados | 56 idiomas: pl, en, es, de, fr, it, pt, nl, ru, uk, cs, sk, sl, hr, sr, bs, bg, mk, ro, hu, el, tr, ar, he, fa, hi, id, vi, ja, ko, zh, ka, kk, az, hy, be, ca, cy, eu, fo, gd, gl, ga, is, la, lb, lt, lv, mt, sq, sv, da, et, fi, no, cnr, hbs |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 32.768 tokens (valor usado en el ejemplo de despliegue con vLLM; no se documenta un máximo distinto) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (los pesos se distribuyen en safetensors; no se listan variantes GGUF/AWQ/GPTQ oficiales) |
+| Idiomas soportados | 56 idiomas: pl, en, es, de, fr, it, pt, nl, ru, uk, cs, sk, sl, hr, sr, bs, bg, mk, ro, hu, el, tr, da, sv, no, fi, et, lt, lv, is, ca, gl, eu, cy, ga, gd, lb, fo, mt, sq, hy, az, be, ka, kk, la, ar, he, fa, hi, id, ja, ko, zh, vi, cnr, hbs |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer causal decoder-only de 11.000 millones de parámetros. El pipeline de entrenamiento consta de tres etapas: un preentrenamiento sobre 500.000 millones de tokens de corpus multilingües cuidadosamente seleccionados y procesados por el equipo de SpeakLeash, un ajuste supervisado (SFT) sobre 26 millones de muestras y una fase de aprendizaje por refuerzo basada en una variante modificada de GRPO aplicada sobre 14 entornos diversos. Este esquema por etapas busca mejorar la comprensión lingüística, el seguimiento de instrucciones y el rendimiento en tareas variadas.
+El modelo es un transformer causal decoder-only de 11B parámetros. El pipeline de entrenamiento consta de tres etapas: preentrenamiento sobre 500.000 millones de tokens de corpus multilingües cuidadosamente seleccionados y procesados por el equipo de SpeakLeash, con énfasis en lenguas europeas y polaco; SFT sobre 26 millones de muestras; y una etapa de aprendizaje por refuerzo basada en una variante modificada de GRPO ejecutada sobre 14 entornos diversos. El entrenamiento se llevó a cabo en la infraestructura HPC de ACC Cyfronet AGH (supercomputadores Athena y Helios) dentro del entorno PLGrid y de la Gaia AI Factory.
 
-El entrenamiento se ejecutó sobre la infraestructura HPC polaca de ACC Cyfronet AGH, concretamente en los supercomputadores Athena y Helios, dentro del entorno PLGrid y la Gaia AI Factory, con financiación del EuroHPC Joint Undertaking. El framework de entrenamiento utilizado es ALLaMo, una herramienta open source desarrollada por Krzysztof Ociepa. Una innovación destacable es la incorporación de un formato nativo de razonamiento y de tool calling, junto con un `chat_template.jinja` que controla el esfuerzo de razonamiento mediante el parámetro `reasoning_effort` (valores `none`, `low`, `medium`, `high`, `max`), sustituyendo el antiguo flag `enable_thinking` de la versión v3.0.
+El post-entrenamiento incorpora un formato propio de razonamiento (``) y de llamada a herramientas (`<tool_call>{"name": …, "arguments": …}</tool_call>`), con parsers específicos publicados en el repositorio `speakleash/bielik-tools` para vLLM. El framework de entrenamiento utilizado es ALLaMo, una implementación de código abierto desarrollada por Krzysztof Ociepa. No se documentan en la información disponible innovaciones como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en 56 idiomas, con calidad destacada en polaco y lenguas europeas.
-- Razonamiento explícito mediante modo "thinking" controlable con `reasoning_effort`; el contenido de razonamiento se expone en un campo separado (`reasoning` o `reasoning_content`) al servir con vLLM.
-- Tool calling / function calling con formato propio `<tool_call>{"name": …, "arguments": …}</tool_call>`, parseable a `tool_calls` estructurados en la API compatible con OpenAI.
-- Soporte de agentes y razonamiento multi-paso, con la posibilidad de excluir definiciones de herramientas cuando `tool_choice="none"` para evitar que el modelo emita llamadas en texto plano.
-- Capacidades matemáticas y de resolución de problemas (el ejemplo de la model card plantea el conteo de números primos menores que 50).
-- Comprensión y generación multilingüe amplia, incluyendo alfabetos no latinos (árabe, hebreo, hindi, japonés, coreano, chino, georgiano, armenio, kazajo).
-- Integración con text-generation-inference y endpoints compatibles según los tags del repositorio.
-- No se documentan capacidades de visión ni de audio en la información disponible.
+- Generación de texto y conversación multi-turno en 56 idiomas, con especial calidad en polaco y lenguas europeas.
+- Razonamiento explícito mediante modo thinking controlable con `reasoning_effort` en cinco niveles: `none` (por defecto), `low`, `medium`, `high` y `max`.
+- Tool calling / function calling nativo con formato propio y parsers oficiales para vLLM (v0.24 o superior, probado en 0.32).
+- Soporte de agentes y razonamiento multi-paso, con posibilidad de excluir definiciones de herramientas cuando `tool_choice="none"`.
+- Seguimiento de instrucciones reforzado mediante SFT y RL sobre 14 entornos.
+- Capacidades multilingües amplias, incluyendo castellano, catalán, gallego y euskera.
+- No se documentan capacidades de visión, audio ni otras modalidades en la información disponible.
 
 ## Casos de uso
 
-- Asistentes conversacionales multilingües para atención al cliente: el modelo gestiona diálogos multi-turno con hasta 32.768 tokens de contexto, lo que permite mantener historiales largos y documentación de referencia en la misma ventana, con cobertura de 56 idiomas para mercados europeos.
-- Agentes con tool calling en producción: gracias al formato nativo `<tool_call>` y a los parsers de vLLM de `speakleash/bielik-tools`, puede orquestar llamadas a APIs externas (clima, bases de datos, CRM) devolviendo `tool_calls` estructurados listos para ejecución.
-- Razonamiento asistido en dominios técnicos: con `reasoning_effort="high"` o `"max"` el modelo genera cadenas de pensamiento separadas de la respuesta final, útil en tareas de análisis, depuración o planificación donde se requiere trazabilidad del razonamiento.
-- Procesamiento de documentación en lenguas minoritarias europeas: su cobertura de idiomas como gaélico escocés, galés, euskera, islandés, maltés o luxemburgués lo hace adecuado para tareas de resumen, traducción y extracción de información en contextos administrativos o legales regionales.
-- Generación y revisión de código en pipelines de CI/CD: el modelo puede integrarse mediante la API compatible con OpenAI de vLLM para tareas de revisión, generación de tests o explicación de diffs, aprovechando el contexto largo para incluir fragmentos extensos de repositorio.
-- Despliegue soberano en infraestructura europea: al estar entrenado en HPC europea y publicarse bajo Apache 2.0, encaja en proyectos con requisitos de soberanía de datos o de cumplimiento normativo que descartan APIs propietarias.
-- Investigación en lingüística computacional: la versión "ungated" con recolección de datos desactivada facilita experimentos reproducibles y auditorías sobre el comportamiento multilingüe sin dependencias de telemetría.
+- Atención al cliente automatizada en Europa: el modelo puede gestionar conversaciones multi-turno con hasta 32.768 tokens de contexto y responder en el idioma del usuario entre 56 lenguas, lo que lo hace adecuado para despliegues regionales con requisitos de cobertura lingüística amplia.
+- Generación de código asistida con tool calling: gracias a su formato estructurado de llamadas a funciones y a los parsers de vLLM, puede integrarse en pipelines de CI/CD o en asistentes de IDE que invoquen herramientas externas (compiladores, linters, APIs de repositorios).
+- Agentes autónomos de razonamiento multi-paso: con `reasoning_effort="high"` o `"max"` el modelo emite trazas de pensamiento separadas del contenido final, lo que facilita la auditoría de decisiones en flujos agénticos.
+- Procesamiento de documentación técnica multilingüe: resumen, extracción y reescritura de documentos largos en lenguas europeas de menor representación donde otros modelos rinden peor.
+- Asistentes para administraciones públicas y empresas en Polonia y Europa central: el énfasis del entrenamiento en polaco, checo, eslovaco, húngaro, rumano y lenguas balcánicas lo posiciona bien para tareas de redacción administrativa y traducción interna.
+- Investigación en PLN europea: evaluación comparativa de modelos multilingües, experimentos de alineación con GRPO y estudios de razonamiento controlable sobre una base Apache 2.0.
+- Despliegue on-premise con vLLM: al caber en una sola GPU de 80 GB en precisión completa y ser servible con parsers oficiales, encaja en infraestructuras privadas con requisitos de soberanía de datos.
 
 ## Benchmarks y rendimiento
 
@@ -54,46 +53,43 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precisión nativa (bf16/fp16): aproximadamente 22,3 GB solo para pesos, más overhead de KV cache; se recomienda al menos 40-48 GB para contexto largo.
-- VRAM estimada en cuantización de 8 bits: en torno a 12-14 GB de pesos, con margen adicional para caché.
-- VRAM estimada en cuantización de 4 bits: en torno a 7-8 GB de pesos, aunque las cuantizaciones no están documentadas oficialmente en la información disponible.
-- GPU recomendadas para producción: NVIDIA A100 (40/80 GB), H100 (80 GB) o L40S (48 GB) para servicio concurrente con contexto completo.
-- GPU de consumo: cabe en RTX 4090 (24 GB) en bf16 con contexto reducido o en cuantizaciones de 8/4 bits; en RTX 3090 (24 GB) aplican las mismas consideraciones.
-- Opciones de despliegue: vLLM 0.24 o superior (probado en 0.32) con los plugins de `speakleash/bielik-tools` para tool calling y razonamiento; también es compatible con text-generation-inference y con la librería transformers. El soporte en llama.cpp u Ollama no está confirmado en la información proporcionada.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 22,3 GB en fp16/bf16 (tamano del repositorio de pesos), alrededor de 11-12 GB en cuantización de 8 bits y en torno a 6-7 GB en 4 bits (estimaciones por tamano de parámetros; no se listan cuantizaciones oficiales).
+- GPU recomendadas: A100 40 GB o 80 GB, H100 80 GB para servicio en fp16 con contexto completo de 32.768 tokens y concurrencia moderada; L40S 48 GB como alternativa.
+- Cabe en GPU de consumo: sí, en RTX 4090 (24 GB) con cuantización de 8 o 4 bits, o en fp16 con contexto reducido y batch pequeno; en RTX 3090 (24 GB) de forma similar.
+- Opciones de despliegue: vLLM 0.24 o superior con los parsers de `speakleash/bielik-tools` (recomendado para tool calling y reasoning estructurados); transformers con la plantilla `chat_template.jinja` incluida; llama.cpp u Ollama requerirían conversión a GGUF, no documentada oficialmente.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Bielik-11B-v3.1-Instruct (esta ficha) | 11,17 B | 32.768 tokens | Apache 2.0 | Multilingüe europeo, tool calling y razonamiento nativos | Hugging Face (versión ungated y original) |
-| Bielik-11B-v3.1-Instruct (speakleash) | 11,17 B | 32.768 tokens | Apache 2.0 | Idéntico, con recolección de datos activa | Hugging Face |
-| Bielik v3.0 (línea anterior) | ~11 B | No disponible | Apache 2.0 | Sin formato `reasoning_effort`; usa `enable_thinking` | Hugging Face |
-| Alternativas de ~11 B multilingües (p. ej. Llama 3.1 8B, Mistral 7B) | 7-8 B | 128.000 / 32.000 tokens | Licencias comunitarias | Menor cobertura de lenguas europeas minoritarias | Hugging Face |
+| Bielik-11B-v3.1-Instruct (esta ficha) | 11,17B | 32.768 | Apache 2.0 | Multilingüe europeo, tool calling, reasoning | Hugging Face (con autenticación en esta réplica) |
+| Bielik-11B-v3.0-Instruct | no disponible | no disponible | Apache 2.0 | Versión anterior de la misma familia | Hugging Face |
+| Modelos comparables de 11B (p. ej. Mistral, Llama) | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada | no disponible |
 
-La información disponible no incluye datos de rendimiento comparado con modelos de otros fabricantes, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
+No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos alternativos en la información proporcionada para establecer una comparación cuantitativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación inherente a los modelos generativos de esta escala; no se documentan tasas específicas.
-- Sesgos potenciales derivados de los corpus de preentrenamiento, con predominio de fuentes europeas y polacas; el comportamiento en idiomas con menor representación puede degradarse.
-- El formato de razonamiento y de tool calling es propio del modelo; un uso incorrecto del template o la ausencia de los parsers de vLLM puede provocar que las llamadas a herramientas aparezcan como texto plano.
-- Si la generación se interrumpe durante la fase de pensamiento por falta de `max_tokens`, el campo `content` puede quedar vacío; es necesario reservar presupuesto de tokens suficiente para razonamiento más respuesta.
-- El flag `enable_thinking` de Bielik v3.0 es ignorado por esta versión; los despliegues migrados deben adaptarse a `reasoning_effort`.
-- La licencia Apache 2.0 permite uso comercial, pero el autor de esta réplica no ofrece garantías adicionales sobre los pesos; conviene verificar la procedencia y el comportamiento respecto al modelo original de SpeakLeash.
-- Esta réplica desactiva la recolección de datos y exige autenticación en Hugging Face para descargar los pesos, lo que puede complicar la automatización en pipelines de CI/CD.
-- No se documentan cuantizaciones oficiales ni resultados de benchmarks en la información disponible, lo que limita la evaluación previa a un despliegue en producción.
+- Riesgo de alucinación inherente a los modelos generativos de esta escala; no se documentan mitigaciones específicas más allá del modo de razonamiento.
+- Sesgos potenciales derivados del corpus de preentrenamiento, con sobrerrepresentación del polaco y de lenguas europeas frente a otras regiones.
+- El modo de razonamiento consume tokens adicionales; si se agota `max_tokens` durante la fase de pensamiento, el campo `content` queda vacío.
+- La bandera `enable_thinking` de Bielik v3.0 se ignora en esta plantilla; es necesario usar `reasoning_effort`.
+- El tool calling estructurado requiere vLLM 0.24 o superior y los parsers oficiales; sin ellos el modelo puede emitir llamadas como texto plano.
+- Esta réplica exige autenticación en Hugging Face para descargar los pesos, lo que anade un paso operativo respecto al modelo original.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las condiciones de los datos de entrenamiento originales si se requiere garantía legal plena.
+- No se documentan cuantizaciones oficiales; cualquier conversión a GGUF o formatos de 4 bits corre a cargo del usuario y puede degradar el rendimiento.
 
 ## Enlaces
 
-- Hugging Face (esta ficha): https://huggingface.co/cpral/Bielik-11B-v3.1-Instruct-ungated
-- Modelo base: https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct
-- Repositorio de parsers para vLLM: https://github.com/speakleash/bielik-tools
-- Framework de entrenamiento ALLaMo: https://github.com/chrisociepa/allamo
-- Chat oficial: https://chat.bielik.ai/
-- SpeakLeash: https://speakleash.org/
+- Modelo en Hugging Face: https://huggingface.co/cpral/Bielik-11B-v3.1-Instruct-ungated
+- Modelo base original: https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct
+- Organización SpeakLeash: https://speakleash.org/
 - ACC Cyfronet AGH: https://www.cyfronet.pl/en
-- Supercomputadores Athena y Helios: https://www.cyfronet.pl/en/supercomputers/our-supercomputers#athena
+- Supercomputadores Athena y Helios: https://www.cyfronet.pl/en/supercomputers/our-supercomputers
 - PLGrid: https://plgrid.pl/
 - Gaia AI Factory: https://gaia.plgrid.pl/
 - EuroHPC Joint Undertaking: https://www.eurohpc-ju.europa.eu/index_en
+- Framework ALLaMo: https://github.com/chrisociepa/allamo
+- Parsers de tool calling y reasoning para vLLM: https://github.com/speakleash/bielik-tools
+- Chat oficial: https://chat.bielik.ai/

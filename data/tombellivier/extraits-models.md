@@ -2,141 +2,136 @@
 
 ## Resumen
 
-EXTRAITS models (v0.1.0) es un conjunto de pesos publicado por TomBellivier que da soporte al pipeline EXTRAITS para la medicion morfometrica automatica de insectos a partir de imagenes dorsales. No se trata de un modelo de lenguaje, sino de un paquete de tres componentes de vision por computador: un ensamblado de modelos YOLO-pose que detecta 42 keypoints (esquema `insect42_v1`), un detector YOLO que localiza la barra de escala de la imagen (cuyo valor lee EasyOCR) y un conjunto de clasificadores random forest de scikit-learn que validan cada una de las 27 medidas derivadas.
+EXTRAITS models (v0.1.0) es una coleccion de pesos publicada por TomBellivier que implementa el componente de vision por computador del proyecto EXTRAITS, una herramienta para medir morfometricamente insectos a partir de imagenes dorsales. No se trata de un modelo de lenguaje ni de un transformer generativo, sino de un conjunto de tres artefactos especializados: un ensemble de cinco modelos YOLO-pose (uno por pliegue de validacion cruzada) que detectan 42 puntos clave anatomicos, un detector YOLO de barra de escala y 27 clasificadores de random forest (scikit-learn) que validan si cada medicion derivada es fiable.
 
-El modelo resuelve un problema concreto de biologia y taxonomia: extraer medidas morfometricas estandarizadas (longitud total, anchura de cabeza, distancia interocular, longitudes de alas y patas, etc.) de especimenes de cuatro ordenes de insectos (coleoptera, diptera, hymenoptera y lepidoptera) sin intervencion manual. Los pesos se distribuyen como artefactos de un pipeline reproducible, con verificacion sha256 integrada en la herramienta de linea de comandos.
+La relevancia del artefacto es practica y de nicho: automatiza la morfometria de insectos, una tarea que tradicionalmente requiere medicion manual con software como ImageJ y que resulta cuello de botella en estudios de biodiversidad, taxonomia y ecologia. El ensemble de pose alcanza un oks_ap de 0,810 ± 0,007 en validacion cruzada de 5 pliegues sobre 2643 imagenes anotadas del proyecto GRIT, cubriendo Coleoptera, Diptera, Hymenoptera y Lepidoptera.
 
-Es relevante para investigadores y desarrolladores que trabajen en digitalizacion de colecciones de historia natural, ecologia de comunidades o fenotipado de alta productividad, porque ofrece un flujo de trabajo completo (deteccion de pose, calibracion de escala y validacion de medida) bajo licencia AGPL-3.0 y con metricas de validacion cruzada publicadas. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta.
+El repositorio ocupa 0,1 GB, se distribuye bajo licencia AGPL-3.0 (heredada de Ultralytics YOLO) y esta pensado para consumirse mediante la CLI `extraits`, que verifica la integridad de cada fichero contra un sha256 fijado en el paquete. La fecha de creacion del repositorio (2026-11-21) y su actualizacion inmediata (2026-11-22) indican una publicacion inicial reciente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Ensemble de YOLO-pose (Ultralytics) + detector YOLO + random forests de scikit-learn |
+| Arquitectura | Ensemble de 5 modelos YOLO-pose (Ultralytics `yolo26n-pose.pt` fine-tuneado) + 1 detector YOLO de barra de escala + 27 random forests (scikit-learn) |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica (modelo de vision) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no aplica (modelo de vision, entrada 640x640 px) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | AGPL-3.0 (pesos); el codigo fuente de EXTRAITS es MIT |
-| Formato de pesos | `.pt` (Ultralytics YOLO) y `.joblib` (pickles de scikit-learn) |
-| Entrada | imagenes de 640 x 640 px |
-| Keypoints | 42 (esquema `insect42_v1`) |
-| Medidas derivadas | 27 |
-| Ordenes de insectos | Coleoptera, Diptera, Hymenoptera, Lepidoptera |
+| Idiomas soportados | no disponible (no aplica; modelo de vision) |
+| Licencia | AGPL-3.0 (pesos); codigo EXTRAITS bajo MIT |
+| Formato de pesos | `.pt` (Ultralytics) para pose y detector; `.joblib` (pickle de Python) para los clasificadores |
+| Puntos clave | 42 keypoints (esquema `insect42_v1`), de los que se derivan 27 mediciones |
 | Tamano del repositorio | 0,1 GB |
+| Descargas | 208 |
+| Pipeline declarado | keypoint-detection |
 
 ## Arquitectura y entrenamiento
 
-El componente principal es un ensamblado de cinco modelos YOLO-pose, uno por cada fold de una validacion cruzada agrupada (`kfold5_grouped_seed42_pooled`), afinados a partir de `yolo26n-pose.pt` de Ultralytics. Cada miembro predice 42 keypoints sobre la imagen dorsal del insecto, a partir de los cuales se calculan 27 medidas morfometricas. El detector de barra de escala es un YOLO entrenado fuera del repositorio EXTRAITS y publicado unicamente como pesos; su valor numerico lo extrae EasyOCR. La validacion de cada medida la realiza un random forest independiente por medida (scikit-learn), que clasifica si la medida es fiable o "no medible".
+El nucleo del sistema es un ensemble de cinco modelos YOLO-pose, uno por pliegue de una validacion cruzada agrupada (`kfold5_grouped_seed42_pooled`). Cada miembro se fine-tunea desde `yolo26n-pose.pt` de Ultralytics y predice 42 puntos clave sobre imagenes de entrada de 640x640 pixeles. A partir de esos keypoints se calculan 27 mediciones morfometricas (longitud total, anchura de cabeza, distancia interocular, longitudes de antenas, alas, patas con femur/tibia/tarso, etc.). El detector de barra de escala, entrenado fuera del repositorio EXTRAITS y publicado solo como pesos, localiza la barra de calibracion; su valor numerico lo lee EasyOCR.
 
-El entrenamiento se realizo sobre 2643 imagenes dorsales anotadas para el proyecto GRIT, procedentes de varias bases de datos de imagenes de historia natural: 1060 coleopteros, 487 dipteros, 341 himenopteros y 661 lepidopteros. Las imagenes y las anotaciones no son redistribuibles, por lo que no se publican. No se documenta el numero de tokens ni el volumen de aumentacion de datos, ni si hubo etapas de ajuste fino adicionales mas alla del fine-tuning de los modelos YOLO-pose.
+Los clasificadores de validez son 27 random forests independientes, uno por medicion, entrenados sobre 1201 muestras cada uno, que determinan si la medicion correspondiente es fiable ("unmeasurable" es la clase positiva para la average precision). Los datos de entrenamiento son imagenes dorsales de insectos de varias bases de datos de historia natural, anotadas para el proyecto GRIT: 2643 imagenes en total (1060 Coleoptera, 487 Diptera, 341 Hymenoptera, 661 Lepidoptera). Las imagenes y anotaciones no son redistribuibles y no se publican. No se documentan detalles sobre funciones de perdida, aumentos de datos ni hiperparametros de entrenamiento mas alla de la configuracion de validacion cruzada.
 
 ## Capacidades
 
-- Deteccion de pose de insectos con 42 keypoints sobre imagenes dorsales de cuatro ordenes.
-- Derivacion automatica de 27 medidas morfometricas a partir de los keypoints.
-- Localizacion de la barra de escala en la imagen para la calibracion fisica de las medidas.
-- Lectura OCR del valor de la barra de escala mediante EasyOCR.
-- Clasificacion de validez por medida: cada random forest indica si una medida concreta es fiable o "no medible".
-- Procesamiento por lotes de carpetas de imagenes con salida a CSV mediante `extraits process`.
-- Ajuste fino opcional de los modelos de pose a nuevas imagenes mediante `extraits finetune`.
-- Verificacion de integridad de los pesos descargados mediante sha256 fijado en el paquete.
-- No dispone de tool calling, razonamiento multi-paso, capacidades multilingues ni modo de pensamiento: es un pipeline de vision especializado.
+- Deteccion de 42 puntos clave anatomicos en imagenes dorsales de insectos de cuatro ordenes (Coleoptera, Diptera, Hymenoptera, Lepidoptera).
+- Derivacion de 27 mediciones morfometricas a partir de los keypoints.
+- Deteccion de barra de escala en la imagen y lectura de su valor mediante EasyOCR para calibracion metrica.
+- Validacion automatica de la fiabilidad de cada medicion mediante clasificadores de random forest.
+- Inferencia por lotes a traves de la CLI `extraits process -i <carpeta> -o results.csv`, que produce un CSV de resultados.
+- Descarga verificada de pesos con `extraits download-models`, con comprobacion sha256 de cada fichero.
+- Adaptacion a nuevas imagenes mediante `extraits finetune` para reentrenar los modelos de pose.
+- No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues: es un pipeline de vision especifico.
 
 ## Casos de uso
 
-- Digitalizacion de colecciones entomologicas: procesar lotes de fotografias dorsales de especimenes de museo y generar un CSV con las 27 medidas por individuo, sustituyendo la medicion manual con calibre o software de anotacion.
-- Fenotipado de alta productividad en ecologia: medir miles de individuos capturados en trampas para analizar variacion morfometrica entre poblaciones o a lo largo de gradientes ambientales.
-- Monitorizacion de polinizadores: usar las medidas de himenopteros (distancia intertegular, longitud de ala) como proxies de tamano corporal y condicion en estudios de salud de colonias.
-- Control de calidad de datos morfometricos: emplear los clasificadores de validez para descartar automaticamente medidas no fiables (por ejemplo, antenas ocluidas) antes de incluirlas en analisis estadisticos.
-- Taxonomia asistida y morfometria geometrica: extraer coordenadas de keypoints para analisis de forma (procrustes, PCA) y comparacion entre especies o morfos.
-- Adaptacion a nuevas colecciones: reentrenar los modelos de pose con `extraits finetune` sobre imagenes propias de un orden o una condicion de captura distinta, manteniendo el resto del pipeline.
-- Docencia e investigacion reproducible: desplegar el pipeline completo con verificacion sha256 de pesos para garantizar la reproducibilidad de los resultados publicados.
+- Digitalizacion de colecciones entomologicas: procesar lotes de fotografias dorsales de especimenes de museo para extraer automaticamente 27 mediciones por individuo y exportarlas a CSV, sustituyendo la medicion manual en ImageJ.
+- Estudios de morfometria comparada: comparar proporciones anatomicas (por ejemplo, distancia intertegular o longitud de alas) entre poblaciones de abejas o escarabajos con mediciones reproducibles y validadas por los clasificadores de fiabilidad.
+- Monitorizacion de biodiversidad: medir rasgos funcionales de insectos capturados en trampas o muestreos para estudios de ecologia de comunidades, aprovechando que el pipeline cubre los cuatro ordenes mas frecuentes en muestreos.
+- Control de calidad de datasets de imagen: usar los clasificadores de validez para descartar automaticamente imagenes donde una medicion concreta no es fiable (por ejemplo, alas ocultas o antenas rotas) antes de un analisis estadistico.
+- Taxonomia asistida: obtener mediciones estandarizadas de alta precision (interocular MCC 0,964; thorax width MCC 0,991) como apoyo a la identificacion y descripcion de especies.
+- Investigacion en biologia del desarrollo o evolutiva: cuantificar asimetrias izquierda-derecha comparando mediciones homologas (ala izquierda frente a derecha, pata izquierda frente a derecha), para lo que el modelo predice ambos lados de forma independiente.
+- Docencia y talleres de morfometria: pipeline reproducible y con pesos verificados por sha256 que permite a estudiantes obtener mediciones sin experiencia previa en software de analisis de imagen.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados son las metricas de validacion cruzada del propio autor.
+### Ensemble de pose (oks_ap sobre pliegue retenido)
 
-Pose ensemble (oks_ap sobre el fold retenido, 5 folds):
-
-| Miembro | Fold retenido | oks_ap |
+| Miembro | Pliegue retenido | oks_ap |
 |---|---|---|
-| fold0 | 0 | 0.809 |
-| fold1 | 1 | 0.808 |
-| fold2 | 2 | 0.820 |
-| fold3 | 3 | 0.801 |
-| fold4 | 4 | 0.812 |
-| Media del ensamblado | — | 0.810 ± 0.007 |
+| fold0 | 0 | 0,809 |
+| fold1 | 1 | 0,808 |
+| fold2 | 2 | 0,820 |
+| fold3 | 3 | 0,801 |
+| fold4 | 4 | 0,812 |
+| Ensemble (media ± desv.) | 5 pliegues | 0,810 ± 0,007 |
 
-Clasificadores de validez de medida (n = 1201 por medida; "no medible" es la clase positiva para la average precision):
+### Validez de medicion (seleccion de las 27 mediciones)
 
-| Medida | MCC | Average precision | Balanced accuracy |
-|---|---|---|---|
-| total length | 0.489 | 0.720 | 0.700 |
-| head width | 0.826 | 0.908 | 0.897 |
-| head length | 0.523 | 0.684 | 0.776 |
-| inter ocular distance | 0.964 | 0.982 | 0.975 |
-| right antenna length | 0.981 | 0.952 | 0.993 |
-| left antenna length | 0.981 | 0.954 | 0.998 |
-| thorax width | 0.991 | 0.984 | 0.998 |
-| abdomen width | 0.895 | 0.940 | 0.935 |
-| abdomen length | 0.478 | 0.685 | 0.762 |
-| intertegular distance | 0.984 | 0.997 | 0.995 |
-| left hind wing length | 0.943 | 0.999 | 0.976 |
-| right hind wing length | 0.912 | 0.999 | 0.946 |
-| left hind wing width | 0.961 | 0.999 | 0.976 |
-| right hind wing width | 0.926 | 0.999 | 0.948 |
-| left fore wing length | 0.594 | 0.703 | 0.872 |
-| right fore wing length | 0.613 | 0.747 | 0.871 |
-| left fore wing width | 0.745 | 0.934 | 0.875 |
-| right fore wing width | 0.794 | 0.946 | 0.899 |
-| left hind leg length | 0.879 | 1.000 | 0.947 |
-| left hind leg femur length | 0.916 | 1.000 | 0.934 |
-| left hind leg tibia length | 0.976 | 0.995 | 0.985 |
-| left hind leg tarsus length | 0.964 | 0.994 | 0.976 |
-| right hind leg length | 0.784 | 0.999 | 0.955 |
-| right hind leg femur length | 0.928 | 0.999 | 0.970 |
-| right hind leg tibia length | 0.972 | 0.992 | 0.983 |
-| right hind leg tarsus length | 0.969 | 0.991 | 0.981 |
+| Medicion | n | MCC | Average precision | Balanced accuracy |
+|---|---|---|---|---|
+| total length | 1201 | 0,489 | 0,720 | 0,700 |
+| head width | 1201 | 0,826 | 0,908 | 0,897 |
+| head length | 1201 | 0,523 | 0,684 | 0,776 |
+| inter ocular distance | 1201 | 0,964 | 0,982 | 0,975 |
+| right antenna length | 1201 | 0,981 | 0,952 | 0,993 |
+| left antenna length | 1201 | 0,981 | 0,954 | 0,998 |
+| thorax width | 1201 | 0,991 | 0,984 | 0,998 |
+| abdomen width | 1201 | 0,895 | 0,940 | 0,935 |
+| abdomen length | 1201 | 0,478 | 0,685 | 0,762 |
+| intertegular distance | 1201 | 0,984 | 0,997 | 0,995 |
+| left hind wing length | 1201 | 0,943 | 0,999 | 0,976 |
+| right hind wing length | 1201 | 0,912 | 0,999 | 0,946 |
+| left hind wing width | 1201 | 0,961 | 0,999 | 0,976 |
+| right hind wing width | 1201 | 0,926 | 0,999 | 0,948 |
+| left fore wing length | 1201 | 0,594 | 0,703 | 0,872 |
+| right fore wing length | 1201 | 0,613 | 0,747 | 0,871 |
+| left fore wing width | 1201 | 0,745 | 0,934 | 0,875 |
+| right fore wing width | 1201 | 0,794 | 0,946 | 0,899 |
+| left hind leg length | 1201 | 0,879 | 1,000 | 0,947 |
+| left hind leg femur length | 1201 | 0,916 | 1,000 | 0,934 |
+| left hind leg tibia length | 1201 | 0,976 | 0,995 | 0,985 |
+| left hind leg tarsus length | 1201 | 0,964 | 0,994 | 0,976 |
+| right hind leg length | 1201 | 0,784 | 0,999 | 0,955 |
+| right hind leg femur length | 1201 | 0,928 | 0,999 | 0,970 |
+| right hind leg tibia length | 1201 | 0,972 | 0,992 | 0,983 |
+| right hind leg tarsus length | 1201 | 0,969 | 0,991 | 0,981 |
 
-No se han publicado resultados de benchmarks comparativos frente a otros modelos en la informacion disponible.
+Las mediciones con peor discriminacion son total length (MCC 0,489) y abdomen length (MCC 0,478), seguidas de head length (MCC 0,523) y las longitudes de ala anterior (MCC 0,594 y 0,613). No se han publicado resultados comparativos frente a otros modelos de keypoint detection en la informacion disponible.
 
 ## Requisitos de hardware
 
-- No se publican requisitos de VRAM en la informacion disponible. Al tratarse de modelos YOLO-pose de tamano `n` (nano) a 640 x 640 px, la inferencia cabe con holgura en GPU de consumo, aunque el dato exacto no esta documentado.
-- GPU recomendadas: no disponible. Por el tamano de los modelos YOLO-pose nano, cualquier GPU con al menos 4-8 GB de VRAM es suficiente en la practica; no se confirma en la documentacion.
-- Cabe en GPU de consumo (RTX 3060, RTX 4060, RTX 4090) con alta probabilidad, pero el autor no publica cifras de VRAM ni de latencia.
-- Opciones de despliegue: la libreria declarada es Ultralytics; el pipeline se ejecuta mediante la CLI de EXTRAITS (`extraits download-models`, `extraits process`, `extraits finetune`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- VRAM estimada: no disponible en la informacion proporcionada. Al tratarse de un ensemble de cinco modelos YOLO-n pose (variante nano, `yolo26n`) con entrada de 640x640, la huella es reducida y cabe holgadamente en GPUs de consumo, pero el autor no publica cifras.
+- GPU recomendadas: no especificadas. Por el tamano de los modelos (variante nano) y la entrada 640x640, cualquier GPU con CUDA resulta suficiente; una RTX 3060 o superior deberia manejar el pipeline sin problemas, aunque esta estimacion no procede de datos publicados por el autor.
+- GPU de consumo: si, segun el tamano de los modelos; no hay requisitos oficiales documentados.
+- Opciones de despliegue: la via prevista es la CLI `extraits` (`extraits download-models` y `extraits process`), que orquesta Ultralytics para pose y deteccion, EasyOCR para la barra de escala y scikit-learn para los clasificadores. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada. La comparacion cualitativa con alternativas genericas de keypoint detection (por ejemplo, otros pesos YOLO-pose de Ultralytics o modelos tipo HRNet) no puede sustentarse con cifras y se marca como no disponible.
+| Modelo | Tipo | Tarea | Parametros | Contexto / entrada | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| EXTRAITS models (v0.1.0) | Ensemble YOLO-pose + random forests | 42 keypoints y 27 mediciones en insectos | no disponible | 640x640 px | AGPL-3.0 | Hugging Face + CLI |
+| Ultralytics YOLO-pose (`yolo26n-pose.pt`) | YOLO-pose | Keypoints genericos (persona) | no disponible | 640x640 px | AGPL-3.0 | Ultralytics |
+| Detectores de keypoints de insectos especificos | no disponible | Keypoints en insectos | no disponible | no disponible | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| EXTRAITS models v0.1.0 | no disponible | no aplica | oks_ap 0.810 ± 0.007 (5 folds) | AGPL-3.0 | Hugging Face, 0 descargas |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos publicados de otros modelos de keypoint detection especificos para morfometria de insectos en la informacion proporcionada, por lo que la comparativa cuantitativa con alternativas no esta disponible.
 
 ## Limitaciones y advertencias
 
-- Entrenado unicamente sobre cuatro ordenes de insectos (Coleoptera, Diptera, Hymenoptera, Lepidoptera) fotografiados en vista dorsal; otros ordenes o vistas quedan fuera de distribucion.
-- Las imagenes y anotaciones de entrenamiento no son redistribuibles, lo que impide reproducir el entrenamiento desde cero y limita la auditoria externa del dataset.
-- Los clasificadores de validez tienen rendimiento desigual: medidas como "total length" (MCC 0.489) o "abdomen length" (MCC 0.478) son claramente menos fiables que "thorax width" (MCC 0.991) o "intertegular distance" (MCC 0.984).
-- Riesgo de error en la lectura OCR de la barra de escala: si EasyOCR falla, la calibracion fisica de todas las medidas del individuo queda comprometida.
-- Los archivos `.joblib` son pickles de Python y solo deben cargarse desde una fuente de confianza; la CLI de EXTRAITS verifica su sha256, pero una carga manual fuera del pipeline evita esa comprobacion.
-- Licencia AGPL-3.0 en los pesos, derivada de Ultralytics YOLO: el uso en servicios en red puede obligar a liberar el codigo del servicio. El codigo fuente de EXTRAITS es MIT, pero los pesos no.
-- No se documentan sesgos demograficos ni de otro tipo mas alla de la distribucion taxonomica y de vista de las imagenes.
-- No hay informacion sobre latencia, throughput ni requisitos de hardware, lo que dificulta planificar despliegues en produccion.
-- El repositorio no registra descargas ni likes, por lo que no hay evidencia de validacion por parte de la comunidad.
+- Entrenado exclusivamente con imagenes dorsales de cuatro ordenes (Coleoptera, Diptera, Hymenoptera, Lepidoptera); otros ordenes o vistas distintas de la dorsal quedan fuera de distribucion.
+- Las imagenes y anotaciones de entrenamiento no se publican por restricciones de redistribucion, lo que limita la reproducibilidad completa del entrenamiento.
+- Los clasificadores de validez tienen rendimiento desigual: las mediciones de longitud total y abdomen length presentan MCC en torno a 0,48-0,49, por lo que su validacion automatica es poco fiable.
+- Riesgo de mediciones erroneas en imagenes con oclusiones, alas plegadas, antenas rotas o escalas ausentes; el pipeline depende de la deteccion correcta de la barra de escala y de su lectura por EasyOCR.
+- Licencia AGPL-3.0 en los pesos (heredada de Ultralytics): el uso en servicios en red puede obligar a liberar el codigo del servicio; revisar implicaciones antes de uso comercial. El codigo EXTRAITS es MIT, pero los pesos no.
+- Los ficheros `.joblib` son pickles de Python: solo deben cargarse desde fuentes de confianza; la CLI `extraits` verifica su sha256, pero una carga manual sin verificacion es un riesgo de seguridad.
+- No se documentan sesgos demograficos ni linguisticos (no aplica), pero si un sesgo de dominio claro hacia las condiciones de fotografia de las bases de datos de historia natural usadas.
+- No hay informacion sobre latencia, throughput ni requisitos minimos de hardware, lo que dificulta planificar despliegues a escala.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/TomBellivier/extraits-models
-- Repositorio EXTRAITS (referenciado en la model card, sin URL explicita): no disponible
-- Proyecto GRIT (referenciado en la model card, sin URL explicita): no disponible
-- Ultralytics YOLO (modelo base `yolo26n-pose.pt`): no disponible
-- EasyOCR (lectura de la barra de escala): no disponible
-- Paper o blog del modelo: no disponible
-- Demo: no disponible
+- Modelo en Hugging Face: https://huggingface.co/TomBellivier/extraits-models
+- Repositorio del proyecto EXTRAITS: https://github.com/TomBellivier/EXTRAITS
+- DOI Zenodo: https://doi.org/10.5281/zenodo.24439992
+- Ultralytics YOLO: https://github.com/ultralytics/ultralytics
+- EasyOCR: https://github.com/JaidedAI/EasyOCR
+- scikit-learn: https://scikit-learn.org

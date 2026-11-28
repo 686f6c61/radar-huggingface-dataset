@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/NuExtract-tiny-GGUF",
+  "slug": "mradermacher-nuextract-tiny-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NuExtract-tiny-GGUF",
+  "created_at": "2025-03-13T14:10:21.000Z",
+  "updated_at": "2026-11-28T04:18:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:numind/NuExtract-tiny",
+    "base_model:quantized:numind/NuExtract-tiny",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 303,
+  "trending_score": 0,
+  "parameters": 463987712,
+  "parameters_human": "464.0M",
+  "storage_bytes": 4540907264,
+  "storage_human": "4.5 GB",
+  "context_length": 32768,
+  "base_model": "numind/NuExtract-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

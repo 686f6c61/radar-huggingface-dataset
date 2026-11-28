@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -55,8 +55,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "AhoosAI-Research/nimbus-1-1-prime-ee",
+  "renamed_at": "2026-11-28T02:25:25.615Z",
   "benchmarks": [],
   "sources": [
     {

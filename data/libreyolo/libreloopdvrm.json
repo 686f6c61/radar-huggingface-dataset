@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "LibreYOLO/LibreLoopDVRm",
+  "slug": "libreyolo-libreloopdvrm",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreLoopDVRm",
+  "created_at": "2026-11-27T22:12:08.000Z",
+  "updated_at": "2026-11-27T22:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "object-detection",
+    "loopdvr",
+    "loopdet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56417331,
+  "storage_human": "56 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibreYOLO | The MIT-Licensed YOLO Library",
+      "url": "https://www.libreyolo.com/",
+      "snippet": "LibreYOLO An independent open-source project providing state-of-the-art object detection. Built for developers, researchers, and …Read more"
+    },
+    {
+      "title": "LibreYOLO | Détection d'objets sous licence MIT",
+      "url": "https://www.libreyolo.com/fr",
+      "snippet": "Soutenir LibreYOLO La meilleure façon d'aider est de mettre une étoile au dépôt. Si vous rencontrez un problème ou si vous avez …Read more"
+    },
+    {
+      "title": "GitHub - LibreYOLO/libreyolo: LibreYOLO is a MIT licensed open …",
+      "url": "https://github.com/LibreYOLO/libreyolo",
+      "snippet": "LibreYOLO is built in free time. To take it to the next level, we want to train new models, such as LibreYOLO26 and MIT retrains of …Read more"
+    },
+    {
+      "title": "libreyolo/libreyolo at release · LibreYOLO/libreyolo · GitHub",
+      "url": "https://github.com/LibreYOLO/libreyolo/tree/release/libreyolo",
+      "snippet": "LibreYOLO is a MIT licensed open source computer vision library - LibreYOLO/libreyolo"
+    },
+    {
+      "title": "libreyolo · PyPI",
+      "url": "https://pypi.org/project/libreyolo/",
+      "snippet": "libreyolo 1.8.0 MIT-licensed computer vision library: one Python API for YOLO, RF-DETR, RT-DETR and dozens more model …Read more"
+    }
+  ]
+}

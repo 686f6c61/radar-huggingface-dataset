@@ -52,11 +52,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Store Finder - Lidl US",
-      "url": "https://www.lidl.com/c/store-finder/s10089075",
-      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
-    }
-  ]
+  "sources": []
 }

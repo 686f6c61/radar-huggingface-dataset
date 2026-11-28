@@ -2,116 +2,98 @@
 
 ## Resumen
 
-`pavimentos-dfine-l` es un modelo de detección de objetos basado en la arquitectura D-FINE Large (familia DETR), desarrollado por el usuario Kodjaoglanian y publicado en Hugging Face. Se trata de un ajuste fino (*fine-tuning*) del checkpoint `ustc-community/dfine-large-obj2coco-e25` para una única tarea: la detección de baches o socavones (`buraco`) en superficies de pavimento asfáltico, tanto en vías urbanas como interurbanas. El modelo resuelve un problema acotado de inspección de infraestructura viaria mediante visión por computador.
+`pavimentos-dfine-l` es un modelo de detección de objetos especializado en la identificación de defectos en pavimentos asfálticos, concretamente baches o agujeros (una única clase: `buraco`). Lo desarrolla el usuario Kodjaoglanian a partir del modelo base `ustc-community/dfine-large-obj2coco-e25`, que pertenece a la familia D-FINE (Fine-grained Distribution Refinement), una evolución de la arquitectura DETR. El modelo se ha ajustado (fine-tuning) sobre dos conjuntos de datos de Roboflow orientados a la localización de baches en carretera.
 
-La arquitectura subyacente, D-FINE (*Fine-grained Distribution Refinement for Object Detection*), reformula la regresión de *bounding boxes* en transformadores de visión mediante refinamiento distribucional fino (FDR) y auto-destilación de localización global óptima (GO-LSD), eliminando la necesidad de NMS. El modelo cuenta con 31.202.455 parámetros, procesa entradas de 640x640 píxeles y se distribuye con licencia Apache-2.0, lo que lo diferencia de alternativas de la familia YOLO sujetas a AGPL-3.0.
+El problema que resuelve es la inspección automatizada de firmes viarios: detectar baches en imágenes estáticas o en vídeo de dashcam para tareas de mantenimiento, alerta temprana y mapeo de incidencias. Su relevancia radica en dos aspectos prácticos: por un lado, emplea una licencia Apache 2.0 permisiva (a diferencia de los modelos YOLO con AGPL-3.0), lo que facilita el uso comercial propietario; por otro, el autor declara una calibración Platt integrada en los pesos que permite operar con un umbral de confianza estándar de 0,50 y una reducción drástica de falsos positivos en texturas planas (asfalto liso, paredes, aceras).
 
-Su relevancia actual es limitada pero concreta: ofrece una base permisiva para pipelines de inspección automatizada de carreteras, aunque los resultados declarados por el autor (mAP@0.50 de 0,0942) indican un rendimiento bajo que debe evaluarse con cautela antes de cualquier uso en producción. El modelo se publica con pesos en safetensors, exportaciones ONNX y TorchScript, y un total de 19 descargas en el momento de la consulta.
+Arquitectónicamente es un transformer de detección de objetos de tipo DETR con refinamiento de distribución, con 31,2 millones de parámetros, entrada de 640x640 píxeles y salida de una sola clase. El repositorio ocupa 2,0 GB e incluye pesos en safetensors, ONNX dinámico y TorchScript. Está etiquetado para portugués e inglés, aunque al ser un modelo de visión el idioma no condiciona la inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | D-FINE Large (DETR con Fine-grained Distribution Refinement) |
+| Arquitectura | D-FINE Large (familia DETR, Fine-grained Distribution Refinement) |
 | Parametros totales | 31.202.455 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión, entrada 640x640 px) |
-| Tipos de cuantizacion | no disponible (se distribuyen safetensors, ONNX y TorchScript; no se documentan cuantizaciones) |
-| Idiomas soportados | pt, en (etiquetas de clase y documentación; la tarea es visual) |
-| Licencia | Apache-2.0 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada de imagen 640x640) |
+| Tipos de cuantizacion | no disponible (se ofrecen pesos PyTorch/safetensors, ONNX dinámico y TorchScript) |
+| Idiomas soportados | portugués, inglés (etiquetas del modelo; la tarea es de visión) |
+| Licencia | Apache 2.0 |
 | Formato de pesos | safetensors, ONNX, TorchScript (pt) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en D-FINE Large, una variante de la familia DETR que sustituye la regresión directa de coordenadas por un refinamiento distribucional fino (*Fine-grained Distribution Refinement*, FDR) y emplea auto-destilación de localización global óptima (*Global Optimal Localization Self-Distillation*, GO-LSD). Esta formulación prescinde del post-procesado NMS habitual en detectores de una etapa. El checkpoint base es `ustc-community/dfine-large-obj2coco-e25`, preentrenado sobre COCO.
+El modelo se basa en D-FINE Large, una arquitectura de detección de objetos de la familia DETR que introduce el mecanismo de Fine-grained Distribution Refinement: en lugar de predecir directamente las coordenadas de las cajas, refina iterativamente una distribución sobre las posiciones, lo que mejora la localización fina. El modelo base es `ustc-community/dfine-large-obj2coco-e25`, preentrenado sobre COCO. Sobre él se ha realizado un ajuste fino para una única clase (`buraco`) con entrada de 640x640 píxeles.
 
-El ajuste fino se realizó sobre un corpus consolidado de 8.101 imágenes y 21.775 *bounding boxes*, obtenido tras inspeccionar 10.939 imágenes brutas (28.718 anotaciones) y aplicar deduplicación perceptual con pHash de 64 bits (distancia de Hamming <= 2), eliminando 2.837 duplicados, 114 cajas degeneradas o duplicadas intra-imagen y 1 imagen sin anotaciones válidas. Las fuentes son dos proyectos de Roboflow Universe (`localizacao-de-buracos-9mb7f` v2 y `pothole-detection-mapping-and-alert` v1), con mapeo semántico unificado a la clase `buraco`. La división fue estratificada (80/10/10) mediante `MultilabelStratifiedShuffleSplit` con verificación de cero fugas de hash perceptual entre conjuntos: 6.480 imágenes de entrenamiento (17.453 cajas), 810 de validación (2.193 cajas) y 811 de test (2.129 cajas).
-
-El entrenamiento se ejecutó en una Tesla T4 (14,56 GB de VRAM) durante 349,36 minutos, con 20 épocas planificadas y mejor época en la 10. Se usó resolución 640x640, batch 4 con acumulación de gradientes 4 (batch efectivo 16), precisión mixta FP16, optimizador AdamW (lr_head 0,00015, lr_backbone 0,000015, weight_decay 0,0001), scheduler coseno con warmup lineal del 10 % de los pasos, EMA con decay 0,999 y clipping de gradiente con max_norm 0,1. Las aumentaciones (Albumentations) incluyeron HorizontalFlip, RandomBrightnessContrast, HueSaturationValue, ShiftScaleRotate, RandomSizedBBoxSafeCrop, Motion/GaussianBlur y GaussNoise.
+El entrenamiento se ha realizado con los conjuntos de datos `roboflow-universe/localizacao-de-buracos-9mb7f` y `roboflow-universe/pothole-detection-mapping-and-alert`. El autor indica que esta versión (v8 Calibrada) incorpora Platt Scaling para que el modelo opere de forma nativa en el umbral de confianza 0,50, y que se ha aplicado Hard-Negative Mining mediante Bounded Hinge Loss para reducir los falsos positivos en texturas planas. No se dispone de información sobre el número total de tokens, la composición exacta del dataset ni el uso de RLHF/DPO (no aplicable en detección de objetos).
 
 ## Capacidades
 
-- Detección de objetos de una única clase: `buraco` (bache o socavón en pavimento asfáltico).
-- Localización de *bounding boxes* sin NMS, gracias a la formulación DETR de D-FINE.
-- Inferencia sobre imágenes estáticas a resolución fija de 640x640 píxeles.
-- Exportación a ONNX y TorchScript para despliegue en distintos runtimes.
-- Integración con la librería `transformers` (pipeline `object-detection`).
-- Compatible con *endpoints* de Hugging Face (etiqueta `endpoints_compatible`).
-- No soporta *tool calling*, agentes, razonamiento multi-paso, visión general, audio ni generación de texto: es exclusivamente un detector visual de clase única.
+- Detección de objetos de una sola clase: baches o agujeros en pavimento asfáltico (`0: buraco`).
+- Inferencia sobre imágenes estáticas en formato RGB, con preprocesado de orientación EXIF.
+- Inferencia sobre vídeo (dashcam, GoPro) con soporte para recorte de región de interés (ROI) que excluye capó y cielo.
+- Post-procesado integrado mediante filtro geométrico (descarte de cajas de área relativa excesiva o aspecto extremo) y NMS para suprimir consultas duplicadas.
+- Calibración Platt integrada en los pesos para operar con umbral 0,50.
+- Exportación a ONNX dinámico y TorchScript para despliegue en producción.
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües generativas; es un modelo puramente perceptivo.
 
 ## Casos de uso
 
-- Inspección automatizada de carreteras con cámaras vehiculares: el modelo puede procesar fotogramas de vídeo a 640x640 para localizar baches y alimentar un registro georreferenciado de incidencias; su latencia de 60,60 ms/imagen en Tesla T4 (16,5 FPS) permite procesamiento casi en tiempo real en flujos de vídeo moderados.
-- Sistemas de gestión de pavimentos (SGP): inferencia en lote sobre acervos fotográficos históricos para priorizar reparaciones según densidad y distribución de baches detectados.
-- Alertas viarias y ciudades inteligentes: despliegue vía ONNX Runtime o TorchScript en nodos periféricos para notificar incidencias a plataformas municipales, con la ventaja de la licencia Apache-2.0 frente a YOLO.
-- Preetiquetado asistido para anotación: uso del modelo como generador de propuestas iniciales en flujos de etiquetado humano, reduciendo el coste de anotación en nuevos dominios de pavimento.
-- Investigación en visión por computador aplicada a infraestructura: base reproducible para experimentos de *fine-tuning* sobre D-FINE en tareas de defectología vial, con un *pipeline* de limpieza y división documentado.
-- Despliegue en CPU para análisis offline: con 1.386,89 ms/imagen (0,7 FPS), es viable para procesamiento por lotes nocturno de archivos fotográficos sin requisitos de GPU.
+- Inspección de firmes con vehículo instrumentado: montaje de una cámara en un vehículo de mantenimiento que capture imágenes de la calzada y ejecute el modelo en tiempo real para registrar la ubicación de baches y priorizar reparaciones.
+- Análisis de vídeo de dashcam: procesado de grabaciones con recorte de ROI (excluyendo capó y cielo) para generar mapas de incidencias por tramo de carretera, aprovechando el filtro geométrico incluido en la model card.
+- Alertas tempranas para conductores: integración en una aplicación móvil o de navegación que detecte baches en la ruta y avise al conductor o al gestor de flotas.
+- Mantenimiento predictivo municipal: procesado por lotes de imágenes de inspección para inventariar el estado del pavimento y planificar el asfaltado según la densidad de detecciones.
+- Mapeo y geolocalización de defectos: combinación de las detecciones con coordenadas GPS para construir un mapa de baches actualizable, usando los formatos ONNX o TorchScript para despliegue en el borde.
+- Control de calidad en obras: verificación automática de que un tramo recién asfaltado no presenta baches, con la ventaja de que el modelo declara un ~0 % de falsos positivos en asfalto liso.
+- Despliegue en entornos con licencia permisiva: uso comercial propietario en productos de inspección viaria sin las obligaciones de copyleft de AGPL-3.0 que imponen los modelos YOLO.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la *model card* (no verificados, `verified: false`), sobre el *test split* del dataset unificado de defectos de pavimento (Roboflow Universe Merge):
+Resultados declarados por el autor sobre el conjunto de test "Unified Pavement Defects" (tipo COCO). No están verificados de forma independiente (`verified: false`).
 
 | Metrica | Valor |
 |---|---|
-| mAP@0.50 | 0,0942 |
-| mAP@0.50:0.95 | 0,0522 |
-| Precision | 0,0000 |
-| Recall | 0,0000 |
-| F1-Score | 0,0000 |
+| mAP@0.50 | 0,539 |
+| mAP@0.50:0.95 | 0,2749 |
+| Precision | 0,7483 |
+| Recall | 0,3804 |
+| F1-Score | 0,5043 |
 
-Métricas de validación por época (selección de la mejor época, la 10):
-
-| Epoca | Train Loss | Val mAP@0.50 | Val mAP@0.50:0.95 | Val mAR@100 |
-|---|---|---|---|---|
-| 1 | 96,5435 | 0,0602 | 0,0300 | 0,3455 |
-| 2 | 39,9316 | 0,0490 | 0,0256 | 0,5008 |
-| 3 | 34,3409 | 0,0281 | 0,0147 | 0,5177 |
-| 4 | 33,0785 | 0,0281 | 0,0143 | 0,5301 |
-| 5 | 32,1844 | 0,0396 | 0,0209 | 0,5721 |
-| 6 | 31,5671 | 0,0499 | 0,0266 | 0,5879 |
-| 7 | 31,2063 | 0,0650 | no disponible | no disponible |
-
-No se han publicado resultados comparativos con otros modelos en la información disponible. Los valores de Precision, Recall y F1 a umbral de confianza 0,25 son cero, lo que sugiere que el modelo no produce detecciones por encima de ese umbral en el conjunto de test.
+El autor declara además una tasa de falsos positivos de aproximadamente el 0 % en texturas planas (paredes, aceras y asfalto liso), si bien no se aporta una métrica cuantitativa independiente para esa afirmación.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; el entrenamiento se realizó en una Tesla T4 de 14,56 GB, y un modelo de 31,2 M de parámetros en FP16 ocupa aproximadamente 62 MB de pesos, por lo que la inferencia cabe holgadamente en GPUs consumer.
-- GPU recomendadas: Tesla T4 (referencia medida: 60,60 ms/imagen), y por tamaño cualquier GPU consumer moderna (RTX 3060 en adelante) debería acomodar el modelo; no se han publicado mediciones en otras GPU.
-- Cabe en GPU consumer: sí, por volumen de parámetros; no se documentan requisitos mínimos oficiales.
-- Opciones de despliegue: `transformers` (pipeline `object-detection`), ONNX Runtime (exportación ONNX incluida, aunque la validación numérica reportada es `False` con diferencia máxima de cajas de 0,234613), TorchScript y endpoints de Hugging Face.
-- Latencia y throughput: 60,60 ms/imagen en Tesla T4 (16,5 FPS) y 1.386,89 ms/imagen en CPU (0,7 FPS).
+- VRAM estimada para inferencia: con 31,2 millones de parámetros, los pesos en FP32 ocupan aproximadamente 125 MB; en FP16, unos 62 MB. La VRAM total dependerá del tamaño de lote y de la resolución de entrada (640x640), pero el modelo es muy ligero y cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; una RTX 3060, RTX 4090, A100 o H100 son más que suficientes. También puede ejecutarse en CPU para imágenes estáticas, aunque con mayor latencia.
+- Cabe en GPU consumer: sí, en cualquier GPU moderna con 4 GB o más de VRAM, e incluso en iGPU o CPU para uso no intensivo.
+- Opciones de despliegue: Hugging Face `transformers` (AutoModelForObjectDetection), ONNX Runtime (pesos ONNX dinámicos), TorchScript, y despliegue en el borde con OpenCV para vídeo. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a modelos de visión de este tipo.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento de modelos comparables en la información proporcionada. A continuación se comparan únicamente atributos estructurales verificables:
+| Modelo | Parametros | Contexto / entrada | mAP@0.50 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| pavimentos-dfine-l | 31,2 M | 640x640 | 0,539 | Apache 2.0 | Hugging Face |
+| Modelos YOLO (p. ej. YOLOv8/v11) | no disponible | variable | no disponible | AGPL-3.0 | Ultralytics |
+| D-FINE Large base (ustc-community/dfine-large-obj2coco-e25) | no disponible | 640x640 | no disponible | no disponible | Hugging Face |
 
-| Modelo | Parametros | Contexto/Entrada | Licencia | Tarea |
-|---|---|---|---|---|
-| pavimentos-dfine-l | 31,2 M | 640x640 px | Apache-2.0 | Detección de baches (1 clase) |
-| ustc-community/dfine-large-obj2coco-e25 (base) | no disponible | 640x640 px | no disponible | Detección COCO (80 clases) |
-| YOLO (familia, referencia cualitativa) | variable | variable | AGPL-3.0 | Detección general |
-
-La comparación de rendimiento con alternativas no está disponible; el autor solo justifica la elección de D-FINE frente a YOLO por la licencia permisiva Apache-2.0.
+La comparativa con modelos YOLO es relevante por la licencia: YOLO emplea AGPL-3.0, lo que obliga a liberar el código de las aplicaciones que lo integren, mientras que este modelo usa Apache 2.0. No se dispone de resultados de benchmarks de los modelos alternativos en el mismo conjunto de datos, por lo que no es posible comparar rendimiento de forma directa.
 
 ## Limitaciones y advertencias
 
-- Rendimiento bajo declarado: mAP@0.50 de 0,0942 y mAP@0.50:0.95 de 0,0522 en test; Precision, Recall y F1 nulos a confianza 0,25, lo que indica que el modelo apenas produce detecciones útiles en el conjunto de evaluación.
-- Métricas no verificadas (`verified: false`) y declaradas por el propio autor; no han sido reproducidas de forma independiente.
-- Clase única (`buraco`): no detecta otras patologías del pavimento (grietas, baches superficiales, hundimientos) ni objetos viarios.
-- Dominio restringido: entrenado sobre dos datasets de Roboflow Universe, con posible sesgo hacia condiciones de iluminación, clima, tipo de asfalto y geografía de esas fuentes; la generalización a otros entornos no está validada.
-- Validación ONNX fallida: la exportación ONNX se realizó pero la validación numérica reporta `False`, con diferencia máxima de cajas de 0,234613; debe verificarse antes de desplegar en ONNX Runtime.
-- Riesgo de falsos negativos y positivos en producción: con Recall nulo en test, la fiabilidad para alertas automáticas es cuestionable.
-- Licencia Apache-2.0: permite uso comercial y modificación con atribución; no obstante, la licencia del checkpoint base (`ustc-community/dfine-large-obj2coco-e25`) debe verificarse de forma independiente.
-- Sin soporte multilingüe ni de texto: las etiquetas `pt` y `en` se refieren a la documentación y nombres de clase, no a capacidades lingüísticas.
-- Fecha de creación futura registrada (2026-10-30) y solo 19 descargas: modelo de baja madurez y escasa validación comunitaria.
+- Modelo de una sola clase: solo detecta baches (`buraco`); no identifica grietas, baches de otro tipo ni otras patologías del pavimento.
+- Recall relativamente bajo (0,3804): puede dejar sin detectar una parte importante de los baches reales, lo que exige revisar el umbral o complementar con otros métodos en producción.
+- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente.
+- La afirmación de ~0 % de falsos positivos en texturas planas no está respaldada por una métrica cuantitativa publicada; conviene validarla en el dominio de despliegue.
+- Requiere post-procesado geométrico y NMS para evitar detecciones espurias en paredes, aceras y capó del vehículo, tal como indica la model card.
+- En vídeo en movimiento es necesario recortar la ROI (capó y cielo) antes de la inferencia para mantener la precisión.
+- El modelo está etiquetado para portugués e inglés, pero al ser de visión el idioma no afecta a la inferencia; no hay capacidades generativas ni multilingües.
+- Licencia Apache 2.0: permite uso comercial propietario, pero conviene revisar las obligaciones de atribución y las licencias de los datasets de origen (Roboflow Universe) antes de su explotación comercial.
+- Riesgo de alucinación en el sentido de detecciones falsas en texturas que se parezcan a baches; el filtro geométrico mitiga pero no elimina este riesgo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Kodjaoglanian/pavimentos-dfine-l
 - Modelo base: https://huggingface.co/ustc-community/dfine-large-obj2coco-e25
-- Dataset fuente 1 (Roboflow Universe): https://universe.roboflow.com/projetos-diversos/localizacao-de-buracos-9mb7f
-- Dataset fuente 2 (Roboflow Universe): https://universe.roboflow.com/major-project-fsf4o/pothole-detection-mapping-and-alert
-- Curvas de entrenamiento (referenciadas en la model card): `runs/training_curves.png` (ruta relativa al repositorio, no disponible como URL pública verificada)
-- Paper de D-FINE: no disponible en la información proporcionada
-- Repositorio de código de D-FINE: no disponible en la información proporcionada
+- Dataset 1: https://universe.roboflow.com/roboflow-universe/localizacao-de-buracos-9mb7f
+- Dataset 2: https://universe.roboflow.com/roboflow-universe/pothole-detection-mapping-and-alert

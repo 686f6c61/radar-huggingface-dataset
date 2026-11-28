@@ -2,96 +2,97 @@
 
 ## Resumen
 
-Qwen3-Omni-30B-A3B-Instruct-NVFP4 es una cuantizacion del checkpoint original Qwen/Qwen3-Omni-30B-A3B-Instruct publicado por el equipo Qwen de Alibaba Cloud, realizada por el usuario yemara con NVIDIA ModelOpt 0.48.0. Se trata de un modelo any-to-any (texto, audio e imagen de entrada, texto y audio de salida) basado en una arquitectura MoE con 35.259.818.545 parametros totales y aproximadamente 3.000 millones de parametros activos por token, del que se ha cuantizado a NVFP4 W4A4 unicamente el modelo de texto del thinker.
+Qwen3-Omni-30B-A3B-Instruct-NVFP4 es una cuantizacion del checkpoint multimodal Qwen3-Omni-30B-A3B-Instruct desarrollado por el equipo Qwen de Alibaba Cloud. La publica el usuario yemara como parte del proyecto Hibana, que la emplea como objetivo `qwen3omni` en su motor de inferencia. No se trata de un modelo nuevo: es el mismo checkpoint omni (thinker, codificador de audio, codificador de vision, talker, code predictor y code2wav) con el modelo de texto del thinker cuantizado a NVFP4 mediante NVIDIA ModelOpt 0.48.0, mientras el resto de componentes permanece en BF16 byte a byte.
 
-La motivacion de esta ficha es la reduccion de huella: el checkpoint original en BF16 ocupa 70,5 GB, mientras que esta version ocupa 27,1 GB en 6 shards, con el modelo de texto del thinker pasando de 61,1 GB a 17,6 GB. El resto del modelo (codificadores de audio y vision, talker, code predictor y code2wav) permanece en BF16 byte a byte, de modo que se conservan todas las capacidades omni del original. Es el checkpoint que sirve el motor Hibana para su target `qwen3omni`.
+El modelo base es un transformer MoE "any-to-any" que acepta y produce texto, audio e imagen, con 35.259.818.545 parametros totales segun los safetensors y aproximadamente 3.000 millones de parametros activos por token (de ahi el sufijo A3B). La cuantizacion reduce el peso de los tensores de 70,5 GB a 27,1 GB en 6 shards, y el modelo de texto del thinker pasa de 61,1 GB a 17,6 GB, lo que facilita su despliegue en hardware con memoria limitada.
 
-Esta revision concreta sustituye los valores NVFP4 de la primera por escalas de bloque elegidas mediante busqueda ponderada por la Hessiana de ModelOpt en lugar de block max, con un conjunto de calibracion mayor y orientado a razonamiento y conversaciones largas. Segun la model card, frente a BF16 reduce la divergencia KL del siguiente token de la primera revision en un 28% a la misma velocidad.
+Su relevancia actual radica en que demuestra una ruta de cuantizacion NVFP4 (W4A4) calibrada con datos multimodales, con perdidas medidas de 1,3-1,4 puntos frente a BF16 en 1.020 preguntas sobre medios, manteniendo el rendimiento en texto. Es un artefacto orientado a produccion en GPUs Blackwell (GB10) y al ecosistema ModelOpt/Hibana.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE transformer multimodal (Qwen3-Omni MoE: thinker, talker, code predictor, code2wav, codificadores de audio y vision) |
+| Arquitectura | Transformer MoE multimodal any-to-any (thinker + talker + code2wav), familia Qwen3-Omni |
 | Parametros totales | 35.259.818.545 |
-| Parametros activos | aproximadamente 3.000 millones (MoE 30B-A3B); 48 bloques x 128 expertos en el thinker |
-| Longitud de contexto | no disponible en la informacion proporcionada (la calibracion incluye muestras de hasta 65.536 tokens) |
-| Tipos de cuantizacion | NVFP4 W4A4 grupo 16 (pesos uint8 con dos codigos E2M1 por byte, escala E4M3 por 16 pesos, escala global FP32, escala de entrada FP32 estatica); resto en BF16 |
-| Idiomas soportados | no disponible en la informacion proporcionada (la calibracion cubre 20 idiomas) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (6 shards, 27,1 GB de tensores); configuracion de cuantizacion en `hf_quant_config.json` y `config.json` (formato ModelOpt) |
+| Parametros activos | aproximadamente 3.000 millones (sufijo A3B; no confirmado en la informacion disponible) |
+| Longitud de contexto | no disponible (la calibracion usa muestras de hasta 65.536 tokens, sin confirmar el contexto maximo oficial) |
+| Tipos de cuantizacion | NVFP4 W4A4 grupo 16 en el thinker de texto; BF16 en el resto |
+| Idiomas soportados | no disponibles (la calibracion incluye 20 idiomas del dataset aya) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (6 shards, 27,1 GB de tensores; repo de 76,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer MoE multimodal de Qwen3-Omni con 48 bloques y 128 expertos enrutados por bloque en el thinker, acompanado de un talker, un code predictor, un decoder code2wav y codificadores de audio y vision. Esta ficha describe una cuantizacion post-entrenamiento, no un reentrenamiento: el autor no aporta datos sobre el corpus de preentrenamiento del modelo original, el numero de tokens vistos ni si hubo RLHF o DPO. Lo que si se documenta con detalle es el proceso de cuantizacion.
+El modelo base combina un thinker (modelo de lenguaje MoE con 48 bloques y 128 expertos enrutados por bloque, con proyecciones `gate_proj`, `up_proj` y `down_proj`) con codificadores de audio y vision, un talker, un code predictor y un decodificador code2wav para la salida de audio. Esta cuantizacion solo altera el thinker de texto: expertos enrutados, atencion (`q_proj`, `k_proj`, `v_proj`, `o_proj`), `lm_head` pasan a NVFP4 W4A4 con grupo 16; embeddings, RMSNorms, routers MoE, codificadores de audio y vision, talker, code predictor y code2wav permanecen en BF16 original.
 
-La cuantizacion se aplico con NVIDIA ModelOpt 0.48.0 (`mtq.quantize`) usando la configuracion `NVFP4_W4A4_WEIGHT_LOCAL_HESSIAN_CFG`: la escala E4M3 de cada bloque de 16 pesos se busca sobre la rejilla FP8 minimizando el error de salida ponderado por la Hessiana de las activaciones de calibracion (`local_hessian`, `fp8_scale_sweep`); las escalas globales de activacion se calibran por maximo y las escalas de bloque de activacion son dinamicas. Se cuantizaron a NVFP4 los expertos enrutados (gate_proj, up_proj, down_proj), las proyecciones de atencion q/k/v/o y el lm_head; permanecen en BF16 embed_tokens, RMSNorms (incluidas q/k norms), routers MoE, codificadores de audio y vision, talker, code predictor y code2wav. No se almacena cuantizacion de KV-cache (`kv_cache_quant_algo: null`).
-
-El conjunto de calibracion se compone de 367 muestras y 1.588.731 tokens: 800 primeros turnos de usuario de mlabonne/open-perfectblend y preguntas de validacion de MMLU/MMLU-Pro con respuestas de hasta 2.048 tokens; 224 prompts de razonamiento (MetaMathQA, orca-math, UltraInteract, evol-codealpaca y MMLU) con respuestas de hasta 8.192 tokens; 480 prompts humanos de CohereLabs/aya_dataset (24 en cada uno de 20 idiomas); empaquetados en 353 muestras de hasta 4.096 tokens, mas 14 conversaciones multiturno cortadas a 16.384 (8), 32.768 (4) y 65.536 tokens (2) para calibrar atencion de largo alcance. Las respuestas fueron generadas por el modelo BF16 original servido por Hibana a temperatura 0,7 y renderizadas con la plantilla de chat del modelo; se descartaron prompts que compartieran una ventana de 13 palabras con el conjunto de evaluacion. La calibracion tardo 89 minutos en una GB10. El ensamblado final renombro los tensores de `model.*`/`lm_head.*` a `thinker.model.*`/`thinker.lm_head.*` y los fusiono por copia de bytes con el resto del checkpoint original, verificando cada tensor por sha256 (`provenance.json`).
+La cuantizacion se realizo con NVIDIA ModelOpt 0.48.0 (`mtq.quantize`) usando la configuracion `NVFP4_W4A4_WEIGHT_LOCAL_HESSIAN_CFG`: busqueda de escala E4M3 por bloque de 16 pesos sobre la rejilla FP8 minimizando el error de salida ponderado por el Hessiano de las activaciones de calibracion, escalas globales de activacion calibradas por maximo y escalas de bloque dinamicas. Cada lineal NVFP4 almacena `weight` (uint8, dos codigos E2M1 por byte), `weight_scale` (E4M3), `weight_scale_2` (FP32) e `input_scale` (FP32). El conjunto de calibracion incluye 367 muestras de texto (1.588.731 tokens) y 154 muestras de medios (220.806 tokens: 64 imagenes, 74 clips de audio y 16 videos Daily-Omni), con respuestas generadas por el modelo BF16 original. La exportacion se hizo con `export_hf_checkpoint` bajo transformers 5.15 en una GB10.
 
 ## Capacidades
 
-- Entrada any-to-any: texto, audio e imagen; salida de texto y audio (el checkpoint completo incluye thinker, codificadores de audio y vision, talker, code predictor y code2wav).
-- Generacion de texto y razonamiento, con modo instructivo (variante Instruct).
-- Generacion de codigo y resolucion de problemas matematicos, evidenciado por el uso de MetaMathQA, evol-codealpaca y MMLU/MMLU-Pro en la calibracion.
-- Comprension de audio (speech-to-text) mediante el codificador de audio en BF16.
-- Comprension de imagen mediante el codificador visual en BF16.
-- Sintesis de voz (text-to-speech) mediante talker, code predictor y code2wav en BF16.
-- Conversaciones multiturno y contexto largo: la calibracion incluye muestras de hasta 65.536 tokens.
-- Capacidades multilingues: la calibracion cubre 20 idiomas con 24 prompts cada uno.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-step explicito: no disponible en la informacion proporcionada.
+- Generacion y comprension de texto con razonamiento e instrucciones.
+- Procesamiento de imagen (vision encoder BF16 original).
+- Procesamiento de audio, incluido audio largo (clips de hasta 5 minutos en calibracion).
+- Video con audio intercalado (`use_audio_in_video`).
+- Salida de audio mediante talker, code predictor y code2wav.
+- Pipeline any-to-any: entrada y salida en multiples modalidades.
+- Conversaciones multi-turno con contexto largo (calibrado hasta 65.536 tokens).
+- Capacidades multilingues (calibracion en 20 idiomas).
+- Soporte de tool calling y agentes: no confirmado en la informacion disponible.
 
 ## Casos de uso
 
-- Asistentes conversacionales multimodales: el modelo puede recibir texto, audio e imagen en una misma conversacion y responder en texto o audio, gracias a que los codificadores y el talker se conservan en BF16 sin degradacion por cuantizacion.
-- Transcripcion y comprension de audio: el codificador de audio en BF16 permite tareas de speech-to-text y respuesta a consultas habladas dentro de un mismo pipeline any-to-any.
-- Generacion de voz para interfaces: el decoder code2wav en BF16 habilita sintesis de voz en aplicaciones de accesibilidad, lectura de documentos o agentes telefonicos.
-- Razonamiento y matematicas en produccion: el thinker cuantizado a NVFP4 conserva el comportamiento del modelo original con una divergencia KL reducida frente a BF16, lo que lo hace adecuado para pipelines de resolucion de problemas con restricciones de memoria.
-- Generacion de codigo asistida: al mantener el lm_head y las proyecciones de atencion en NVFP4 con calibracion que incluye codealpaca y perfectblend, es utilizable en tareas de autocompletado y explicacion de codigo donde el ahorro de VRAM permite servir el modelo completo junto con los codificadores.
-- Despliegue en hardware Blackwell: al ser un checkpoint NVFP4 pensado para GB10 y servido por Hibana, encaja en entornos con GPU Blackwell de memoria limitada donde el BF16 de 70,5 GB no cabria.
-- Evaluacion comparativa de tecnicas de cuantizacion: la model card documenta exhaustivamente calibracion, escalas y hashes, lo que lo convierte en una referencia util para investigar el impacto de NVFP4 W4A4 en modelos MoE multimodales.
+- Asistentes multimodales conversacionales: el modelo puede mantener dialogos multi-turno combinando texto, imagen y audio, aprovechando la ventana de contexto larga calibrada hasta 65.536 tokens para conservar historial extenso.
+- Transcripcion y analisis de reuniones: con el codificador de audio BF16 y clips de hasta 5 minutos en calibracion, es adecuado para resumir charlas o extraer acciones de grabaciones.
+- Descripcion y respuesta sobre imagenes: el vision encoder intacto permite tareas de VQA, captioning y extraccion de informacion de capturas o documentos escaneados.
+- Analisis de video con audio: el soporte de `use_audio_in_video` habilita la comprension conjunta de pistas visuales y sonoras en clips cortos, util en moderacion de contenido o analisis de clases grabadas.
+- Generacion de respuestas habladas: la cadena talker/code2wav permite construir interfaces de voz (IVR, asistentes de accesibilidad) con salida de audio sintetizada.
+- Despliegue en GPUs Blackwell con memoria limitada: al reducir el thinker de texto de 61,1 GB a 17,6 GB, permite servir el modelo omni completo en un solo acelerador GB10, algo inviable con el checkpoint BF16.
+- Evaluacion comparativa de tecnicas de cuantizacion: sirve como referencia reproducible para estudiar el impacto de NVFP4 W4A4 con calibracion multimodal frente a BF16.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica reportada es la divergencia KL del siguiente token frente a BF16, que en esta revision se reduce un 28% respecto a la primera revision NVFP4 a la misma velocidad. No se aportan cifras de MMLU, HumanEval, GSM8K ni de latencia o throughput absolutos.
+La model card reporta resultados de perdida frente a BF16 en 1.020 preguntas sobre medios, no benchmarks estandar (MMLU, HumanEval, GSM8K):
+
+| Revision | Perdida vs BF16 (preguntas de medios) | Significancia |
+|---|---|---|
+| Segunda revision (calibracion solo texto) | 2,6 puntos | p = 0,002 |
+| Tercera revision (calibracion multimodal), ejecucion 1 | 1,3 puntos | p = 0,12 |
+| Tercera revision (calibracion multimodal), ejecucion 2 | 1,4 puntos | p = 0,06 |
+
+El rendimiento en texto se mantiene segun la model card, sin cifras concretas publicadas. No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 27,1 GB de tensores en safetensors, por lo que se necesita al menos esa cantidad mas overhead de activaciones y KV-cache; el checkpoint BF16 equivalente requiere 70,5 GB.
-- GPU recomendadas: NVIDIA GB10 (plataforma usada para la calibracion y target de Hibana); GPU Blackwell compatibles con NVFP4 en general. Para A100, H100 o RTX 4090 no hay confirmacion de soporte nativo de NVFP4 en la informacion disponible.
-- Cabe en consumer GPU: no disponible; el tamano de 27,1 GB excede la VRAM de la mayoria de GPU de consumo, aunque podria entrar en modelos con 32 GB o mas, sin confirmacion del autor.
-- Opciones de despliegue: motor Hibana (target `qwen3omni`), que es el entorno para el que se publica el checkpoint. Soporte en vLLM, llama.cpp, Ollama o TGI: no disponible en la informacion proporcionada.
-- Latencia y throughput: no disponibles; solo se indica que la calibracion tardo 89 minutos en una GB10 y que la nueva revision mantiene la misma velocidad que la primera.
+- VRAM estimada: 27,1 GB de tensores en pesos NVFP4/BF16; el repo completo ocupa 76,3 GB, por lo que la inferencia requiere al menos ~30 GB de memoria para pesos, mas KV-cache y activaciones.
+- GPU recomendadas: NVIDIA GB10 (usada para la cuantizacion y el motor Hibana); GPUs Blackwell con soporte NVFP4 en general.
+- Compatibilidad con consumer GPU: no confirmada; NVFP4 requiere soporte nativo de hardware Blackwell, por lo que las RTX de generaciones anteriores no lo aprovecharian.
+- Opciones de despliegue: motor Hibana (objetivo `qwen3omni`); vLLM, llama.cpp, Ollama y TGI no estan confirmados en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros totales | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yemara/Qwen3-Omni-30B-A3B-Instruct-NVFP4 | 35.259.818.545 (aprox. 3.000 M activos) | no disponible | safetensors NVFP4 + BF16, 27,1 GB | Apache 2.0 | Hugging Face, 48 descargas |
-| Qwen/Qwen3-Omni-30B-A3B-Instruct | 35.259.818.545 (aprox. 3.000 M activos) | no disponible | safetensors BF16, 70,5 GB | Apache 2.0 | Hugging Face (modelo base) |
-| Primera revision NVFP4 del mismo autor | 35.259.818.545 (aprox. 3.000 M activos) | no disponible | safetensors NVFP4 + BF16 | Apache 2.0 | Hugging Face (sustituida por esta revision) |
-
-No se dispone de datos de benchmarks para establecer una comparacion de rendimiento con alternativas de la misma categoria; la comparacion se limita a formato, tamano y licencia.
+| Qwen3-Omni-30B-A3B-Instruct-NVFP4 (este) | 35,26 B | no disponible | NVFP4 + BF16, safetensors | apache-2.0 | Hugging Face |
+| Qwen3-Omni-30B-A3B-Instruct (base) | no disponible en la informacion | no disponible | BF16, safetensors (70,5 GB) | apache-2.0 | Hugging Face |
+| Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Solo esta cuantizado el modelo de texto del thinker; los codificadores de audio y vision, el talker, el code predictor y code2wav siguen en BF16, por lo que el ahorro de memoria no se aplica a esas partes y el checkpoint completo sigue requiriendo 27,1 GB.
-- No se almacena cuantizacion de KV-cache (`kv_cache_quant_algo: null`), de modo que el KV-cache en produccion se gestiona en el tipo por defecto del runtime.
-- La cuantizacion introduce perdida numerica inevitable: la model card reporta una divergencia KL frente a BF16, reducida un 28% respecto a la primera revision, pero no elimina la diferencia con el modelo original.
-- La calibracion fue exclusivamente de texto (se eliminaron los codificadores de audio y vision durante el proceso), por lo que el comportamiento cuantizado en tareas puramente de audio o vision no esta caracterizado.
-- Riesgo de alucinacion inherente al modelo base; no se aportan evaluaciones especificas de factualidad ni de sesgos en la informacion disponible.
-- Idiomas soportados no documentados de forma explicita; la calibracion cubre 20 idiomas, pero no se garantiza un rendimiento equivalente en todos.
-- El checkpoint esta pensado para el motor Hibana y hardware Blackwell (GB10); su uso en otros runtimes o GPU no esta validado en la informacion proporcionada.
-- Licencia Apache 2.0 permite uso comercial, pero los pesos siguen siendo del equipo Qwen de Alibaba Cloud y esta revision solo cambia el formato numerico de algunos tensores; conviene conservar avisos de atribucion.
-- Modelo con muy poca adopcion en el momento de la ficha (48 descargas, 0 likes), lo que implica escasa validacion comunitaria.
+- La cuantizacion introduce una perdida medible de 1,3-1,4 puntos en preguntas sobre medios frente a BF16; en texto la model card afirma que se mantiene, sin cifras publicadas.
+- Solo el thinker de texto esta cuantizado; el resto permanece en BF16, por lo que el ahorro de memoria se limita a esa parte (61,1 GB a 17,6 GB).
+- NVFP4 requiere hardware Blackwell para aprovecharse; en GPUs sin soporte nativo el rendimiento puede degradarse o no ser compatible.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan mitigaciones especificas en esta revision.
+- Sesgos conocidos: no documentados en la informacion disponible; la calibracion incluye 20 idiomas pero no se detalla la cobertura final.
+- Idiomas soportados: no disponibles de forma oficial; la calibracion cubre 20 idiomas del dataset aya.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo y los pesos son de Alibaba Cloud; esta revision solo cambia el formato numerico de algunos tensores.
+- La calibracion excluye explicitamente items de evaluacion (se descartan prompts con solapamiento de 13 palabras), pero los resultados de perdida son del autor y no de una evaluacion independiente.
+- No se ha confirmado soporte de tool calling ni de agentes en la informacion disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/yemara/Qwen3-Omni-30B-A3B-Instruct-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/yemara/Qwen3-Omni-30B-A3B-Instruct-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
-- Motor Hibana: https://github.com/sharar-project/hibana
-- Dataset de calibracion mlabonne/open-perfectblend: https://huggingface.co/datasets/mlabonne/open-perfectblend
-- Dataset de calibracion CohereLabs/aya_dataset: https://huggingface.co/datasets/CohereLabs/aya_dataset
-- NVIDIA ModelOpt: no disponible como enlace en la informacion proporcionada
-- Papers, blogs y demos adicionales: no disponibles en la informacion proporcionada
+- Repositorio del motor Hibana: https://github.com/sharar-project/hibana
+- Dataset de calibracion (texto): https://huggingface.co/datasets/mlabonne/open-perfectblend
+- Dataset de calibracion (multilingue): https://huggingface.co/datasets/CohereLabs/aya_dataset

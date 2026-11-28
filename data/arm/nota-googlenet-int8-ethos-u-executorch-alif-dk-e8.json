@@ -5,7 +5,7 @@
   "author": "Arm",
   "url": "https://huggingface.co/Arm/nota-googlenet-int8-ethos-u-executorch-alif-dk-e8",
   "created_at": "2026-10-05T17:31:19.000Z",
-  "updated_at": "2026-11-05T14:11:28.000Z",
+  "updated_at": "2026-11-27T11:59:06.000Z",
   "license": "bsd-3-clause",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 88,
+  "downloads_30d": 83,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

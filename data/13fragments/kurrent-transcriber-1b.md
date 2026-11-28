@@ -2,105 +2,107 @@
 
 ## Resumen
 
-Kurrent Transcriber 1B es un modelo de transcripcion de escritura manuscrita historica alemana, especializado en las grafias Kurrent y Sütterlin, desarrollado por 13fragments. Se trata de un merge de pesos de dos fine-tunes de LightOnOCR-3-1B: un fine-tune propio del autor (no publicado) y LightOnOCR-3-1B-Historic-German-Handwriting de Bernhard Straub. El resultado es un modelo de aproximadamente 1.005 millones de parametros (1B) que recibe una imagen de pagina completa y devuelve el texto linea a linea tal como aparece escrito.
+Kurrent Transcriber 1B es un modelo especializado en reconocimiento de escritura manuscrita historica alemana (HTR), desarrollado por 13fragments. Transcribe paginas completas de documentos escritos en Kurrent, Sütterlin y grafias alemanas relacionadas, devolviendo el texto linea a linea tal como aparece en el original. El modelo parte de LightOnOCR-3-1B (Apache-2.0) y se construye como una fusion de pesos de dos fine-tunes: uno propio del autor (no publicado) y LightOnOCR-HGH de Bernhard Straub.
 
-El modelo aborda un problema concreto y de nicho: la lectura automatizada de documentos manuscritos alemanes historicos, un dominio donde los OCR convencionales fallan y donde las herramientas comerciales (Transkribus German Genius) dominan el mercado. Su relevancia radica en que ofrece una alternativa de pesos abiertos, ejecutable en hardware propio y de tamano reducido, con un rendimiento declarado en tasa de error de caracteres a la altura de la referencia comercial en el benchmark interno del autor.
+Con aproximadamente 1.005 millones de parametros (1B), el modelo esta disenado para inferencia local y offline en hardware propio, sin necesidad de segmentacion previa por lineas. Es relevante porque aborda un nicho concreto y dificil: la digitalizacion de archivos historicos alemanes, donde los modelos OCR genericos fallan sistematicamente. El autor ha publicado casos de estudio reales, como la lectura de las 26.325 paginas del censo medico bavaro de 1858.
 
-La arquitectura subyacente es Mistral3 multimodal (image-text-to-text), con un codificador visual y una proyeccion visual que son la media de los dos fine-tunes fusionados, mientras que el modelo de lenguaje se mantiene el del modelo base. La licencia de los pesos es CC BY-SA 4.0 y el codigo de inferencia se distribuye bajo Apache-2.0. El modelo esta pensado explicitamente como generador de borradores que requieren revision humana linea a linea.
+La licencia de los pesos es CC BY-SA 4.0 (el codigo de inferencia es Apache-2.0), y el modelo se distribuye tambien en formato GGUF para llama.cpp. Su salida debe tratarse como borrador y verificarse siempre contra el escaneo original.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mistral3 multimodal (image-text-to-text), transformer con codificador visual |
-| Parametros totales | 1.005.647.872 |
+| Arquitectura | Transformer multimodal (image-text-to-text) basado en Mistral3 / LightOnOCR-3-1B; fusion de pesos (merge) de dos fine-tunes |
+| Parametros totales | 1.005.647.872 (~1B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 16.384 tokens en servidor vLLM (configurado con `--max-model-len 16384`); maximo de 4.096 tokens nuevos por generacion |
-| Tipos de cuantizacion | no disponible (pesos en safetensors, dtype bfloat16 en la configuracion de referencia) |
-| Idiomas soportados | aleman (de); casi todo el entrenamiento es aleman |
+| Longitud de contexto | no disponible; limite de generacion de 4.096 tokens nuevos por peticion |
+| Tipos de cuantizacion | GGUF disponible (ver repositorio GGUF del autor); cuantizaciones concretas no disponibles |
+| Idiomas soportados | aleman (de); casi la totalidad de los datos de entrenamiento es aleman |
 | Licencia | CC BY-SA 4.0 (pesos); Apache-2.0 (codigo de inferencia) |
-| Formato de pesos | safetensors (transformers) |
+| Formato de pesos | safetensors (transformers); GGUF para llama.cpp |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un merge de pesos, no un entrenamiento desde cero. Parte de LightOnOCR-3-1B (Apache-2.0) y combina dos fine-tunes del mismo: el fine-tune propio de 13fragments (no publicado) y LightOnOCR-3-1B-Historic-German-Handwriting de Bernhard Straub. El codificador visual y la proyeccion visual resultan de promediar los de ambos fine-tunes, mientras que el modelo de lenguaje se toma directamente del modelo base. La arquitectura es Mistral3 multimodal, con pipeline image-text-to-text.
+El modelo es un transformer multimodal de tipo image-text-to-text construido sobre LightOnOCR-3-1B (etiquetado como mistral3 en Hugging Face). La construccion es una fusion de pesos: el codificador visual y la proyeccion vision-lenguaje son el promedio de dos fine-tunes (el propio del autor y LightOnOCR-HGH de Bernhard Straub), mientras que el modelo de lenguaje es el del modelo base. El resultado es un modelo de ~1B de parametros que recibe una imagen de pagina completa y genera la transcripcion sin paso intermedio de segmentacion por lineas.
 
-No se detalla en la informacion disponible el volumen de tokens de entrenamiento, la composicion exacta del dataset ni si hubo RLHF o DPO en los fine-tunes originales. La innovacion tecnica destacable no esta en la arquitectura sino en el motor de inferencia: el cliente aplica un paso de imagen que pinta sobre los elementos ajenos a la hoja (cartas de color, reglas, bandas de biblioteca y margenes), una peticion sin prompt de texto con decodificacion greedy, una penalizacion de repeticion ventaneada de 1.1 sobre los ultimos 20 tokens, un mapeo de la marca del modelo (tachado, insertado, subrayado, ilegible, celdas de tabla) y un paso de salida que corta bucles de repeticion cuando la respuesta alcanza los 4.096 tokens, marcando la pagina como `incomplete: "repetition"`.
+El entrenamiento se apoya en tres conjuntos de datos publicos de dh-unibe: image-text_kurrent-xix, image-text_historisches-grundbuch-basel_xix-xx e image-text_german-20th-century. No se detallan en la informacion disponible el numero de tokens, la composicion exacta del dataset ni si hubo RLHF o DPO. Una innovacion operativa destacable es el llamado "image step": antes de la lectura, el cliente pinta sobre el mobiliario ajeno a la hoja (cartas de color, reglas, bandas de biblioteca y margenes), lo que forma parte fija del motor de release junto con decodificacion greedy, un maximo de 4.096 tokens nuevos y una penalizacion de repeticion con ventana de 1.1 sobre los ultimos 20 tokens.
 
 ## Capacidades
 
-- Transcripcion de escritura manuscrita historica alemana: Kurrent, Sütterlin y grafias relacionadas, linea a linea.
-- Lectura de paginas completas como imagen de entrada (JPEG, PNG, WebP), sin prompt de texto.
-- Marcado de texto tachado, insertado y subrayado, con eliminacion de marcas y conservacion del texto en el cliente.
-- Deteccion de pasajes ilegibles, sustituidos por `[unleserlich]` en la salida.
-- Reconocimiento de tablas, con separador ` | ` entre celdas en la salida mapeada.
-- Salida JSON con la respuesta sin mapear ademas del texto procesado.
-- Uso offline en hardware propio.
-- No soporta tool calling, function calling ni razonamiento multi-paso; no es un modelo de agentes.
-- No soporta vision general mas alla del OCR/HTR de documentos; no procesa audio.
+- Transcripcion de paginas completas de escritura manuscrita historica alemana: Kurrent, Sütterlin y grafias relacionadas.
+- Reconocimiento a nivel de pagina sin segmentacion previa por lineas.
+- Salida linea a linea respetando el orden del original.
+- Mapeo de marcado presente en el documento: texto tachado, insertado y subrayado.
+- Procesamiento de imagenes de pagina con preprocesado integrado (image step) para eliminar elementos ajenos a la hoja.
+- Inferencia offline en hardware propio gracias a su tamano de ~1B parametros.
+- Distribucion en GGUF para su uso con llama.cpp.
+- Capacidad conversacional declarada en las etiquetas del modelo (pipeline image-text-to-text, tag conversational).
+- No soporta otros idiomas de forma fiable: casi todo el entrenamiento es aleman.
 
 ## Casos de uso
 
-- Digitalizacion de archivos genealogicos: transcripcion por lotes de registros parroquiales y libros de familia en Kurrent, con revision humana posterior contra el escaneo. El modelo cabe en una GPU de consumo y procesa paginas completas sin recortes.
-- Proyectos de historia local y archivos municipales: generacion de borradores de transcripcion de actas y documentos administrativos historicos en aleman, reduciendo el trabajo manual de tecleo antes de la validacion archivistica.
-- Investigacion academica en linguistica historica: creacion de corpus de texto aleman historico a partir de manuscritos, con la salvedad de que los nombres, fechas y lugares requieren revision (recall de entidades mediano de 0,83).
-- Preservacion digital en bibliotecas: procesamiento offline en hardware propio de fondos manuscritos, sin dependencia de servicios en la nube, gracias a sus 1B de parametros y a la licencia CC BY-SA 4.0.
-- Edicion critica de textos: transcripcion con marcado de tachados, insertados y subrayados, util para estudiar variantes y correcciones en manuscritos de autor.
-- Extraccion de tablas historicas: reconocimiento de celdas en documentos contables o registros tabulares manuscritos, con separador de celdas en la salida.
-- Plataformas de transcripcion colaborativa: integracion como motor de borrador en flujos donde voluntarios corrigen linea a linea contra la imagen, aprovechando la marca de paginas incompletas por bucle de repeticion.
+- Digitalizacion de archivos historicos alemanes: el modelo transcribe paginas completas de registros parroquiales, censos y expedientes administrativos en Kurrent, eliminando la necesidad de segmentar manualmente por lineas y facilitando la creacion de indices de busqueda sobre corpus de siglos XVIII y XIX.
+- Investigacion genealogica asistida: un genealogista puede pasar imagenes de paginas de registros civiles o eclesiasticos y obtener un borrador de transcripcion que revisa contra el escaneo, acelerando la localizacion de partidas de nacimiento, matrimonio y defuncion.
+- Proyectos de humanidades digitales a gran escala: como demuestra el caso del censo medico bavaro de 1858 (26.325 paginas), el modelo permite procesar corpus completos en local y generar texto base para analisis estadistico o linguistico posterior.
+- Extraccion de entidades con revision humana: aunque el autor desaconseja la extraccion automatica sin revision, el modelo sirve como primer paso para identificar nombres, lugares y fechas (recall mediano de entidades de 0.83) en flujos donde un revisor valida cada linea.
+- Archivado y preservacion digital: instituciones con fondos manuscritos pueden generar transcripciones de borrador para acompanar a las imagenes en sus catalogos, mejorando la accesibilidad sin depender de servicios en la nube.
+- Despliegue en entornos sin conectividad: investigadores que trabajan con material restringido o en archivos sin acceso a internet pueden ejecutar el modelo en su propia maquina con llama.cpp o transformers, manteniendo los documentos en local.
+- Analisis de documentos legales o policiales historicos: el caso de estudio "The Fourth Man" (expediente policial de 1883 a 1893) ilustra su uso para reconstruir expedientes completos y facilitar su lectura por parte de historiadores.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el Kurrent Pages Benchmark v1.0 (53 paginas reservadas, una ejecucion sellada el 2026-11-17, con vLLM 0.23.0, transformers 5.13.0 y una NVIDIA RTX PRO 6000):
+Resultados reportados por el mantenedor (no clasificados en el ranking) sobre las 53 paginas reservadas del Kurrent Pages Benchmark, en una unica ejecucion:
 
-| Motor | `cer_norm` mediano | Notas |
-|---|---|---|
-| Kurrent Transcriber 1B | 0.071 | Referencia de salida: Transkribus German Genius |
-| Transkribus German Genius | 0.131 | Referencia comercial |
-| LightOnOCR-HGH (padre) | 0.090 | Fine-tune de Bernhard Straub |
-| Fine-tune propio de 13fragments | 0.112 | No publicado |
-| Modelo frontera de proposito general A | 0.055 | Una ejecucion, una fecha |
-| Modelo frontera de proposito general B | 0.070 | Una ejecucion, una fecha |
+| Metrica | Kurrent Transcriber 1B | LightOnOCR-HGH | Transkribus German Genius | Fine-tune propio del autor |
+|---|---|---|---|---|
+| CER normalizado mediano (cer_norm) | 0.071 | 0.075 (con image step) / 0.090 (sin image step) | 0.131 | 0.112 |
+| CER normalizado en las 33 paginas dificiles | 0.091 | 0.085 (con image step) | no disponible | no disponible |
+| Recall mediano de entidades (nombres, lugares, fechas) | 0.83 | nivel similar | 0.85 | no disponible |
+| Texto inventado | ninguno detectado en 53 paginas | no disponible | no disponible | no disponible |
 
-En recall de entidades (nombres, lugares, fechas), el modelo obtiene un mediano de 0,83 frente a 0,85 de German Genius y queda a la altura de LightOnOCR-HGH. Dos revisores automaticos no encontraron pasajes inventados en las 53 paginas. En tres conjuntos de prueba publicos de otros grupos, el modelo lee mejor que LightOnOCR-HGH en los tres. Una comprobacion de desarrollo con llama.cpp fallo su limite preestablecido y fue eximida.
+En tres conjuntos de prueba publicos de otros grupos, el modelo lee mejor que LightOnOCR-HGH en los tres (LightOnOCR-HGH ejecutado alli sin el image step). Dos modelos frontera de proposito general obtuvieron, en ejecuciones unicas en fechas distintas, un cer_norm mediano de 0.055 y 0.070. Una comparacion de desarrollo con llama.cpp frente a LightOnOCR-HGH no supero su limite preestablecido y fue eximida. No hay resultados de benchmark para los ficheros GGUF.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explicita; con 1.005 millones de parametros en bfloat16, el peso de los pesos ronda los 2 GB, mas el coste del codificador visual y de la cache KV para contexto de hasta 16.384 tokens.
-- GPU de referencia del autor: NVIDIA RTX PRO 6000, con vLLM 0.23.0.
-- GPU recomendadas: cualquier NVIDIA con soporte de vLLM y suficiente VRAM para el contexto configurado; el modelo es lo bastante pequeno para GPUs de consumo, aunque no se publican cifras de VRAM minima ni de latencia.
-- Despliegue: vLLM con plugin de servidor para la penalizacion de repeticion ventaneada (`--logits-processors windowed_repetition_penalty:WindowedRepetitionPenalty`), `--max-model-len 16384`, `--dtype bfloat16` y `--limit-mm-per-prompt '{"image":1}'`. El cliente se instala desde `inference/`.
-- llama.cpp: medido solo en paginas de desarrollo y con un limite fallido y eximido; no se garantizan los resultados reportados.
-- Transformers por si solo: no medido.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma explicita; con ~1B parametros, en fp16 rondaria los 2 GB de pesos y en cuantizaciones GGUF de 4-8 bits seria inferior, mas el coste del codificador visual y del procesamiento de imagenes de pagina.
+- GPU recomendadas: no especificadas por el autor; por tamano, una GPU consumer moderna (por ejemplo, RTX 4090 o inferiores con suficiente VRAM) deberia bastar, aunque no se confirma en la informacion disponible.
+- Cabe en GPU consumer: si, segun el tamano de ~1B parametros y la existencia de GGUF, aunque no hay cifras oficiales de VRAM.
+- Opciones de despliegue: transformers (codigo de inferencia en `inference/`, necesario para reproducir los resultados reportados), llama.cpp mediante GGUF y vLLM (que requiere un plugin de servidor para la penalizacion de repeticion). El autor indica que los pesos por si solos no reproducen los resultados: hay que aplicar el image step y la configuracion de decodificacion.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | `cer_norm` mediano (Kurrent Pages) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kurrent Transcriber 1B | 1,0B | 16.384 tokens (vLLM) | 0.071 | CC BY-SA 4.0 | Pesos abiertos en Hugging Face |
-| LightOnOCR-3-1B-Historic-German-Handwriting | 1,0B (aproximado, derivado de LightOnOCR-3-1B) | no disponible | 0.090 | no disponible en la informacion | Pesos abiertos en Hugging Face |
-| LightOnOCR-3-1B (base) | 1,0B (aproximado) | no disponible | no evaluado en este benchmark | Apache-2.0 | Pesos abiertos en Hugging Face |
-| Transkribus German Genius | no disponible | no disponible | 0.131 | Comercial | Servicio comercial |
+| Kurrent Transcriber 1B | ~1B | no disponible (max. 4.096 tokens nuevos) | HTR pagina completa, aleman historico | CC BY-SA 4.0 (pesos) | Hugging Face, GGUF, demo Space |
+| LightOnOCR-HGH (b-straub) | ~1B | no disponible | HTR aleman historico | no disponible en la informacion | Hugging Face |
+| LightOnOCR-3-1B (lightonai) | ~1B | no disponible | OCR/HTR general | Apache-2.0 | Hugging Face |
+| TrOCR-Kurrent (dh-unibe) | no disponible | no disponible | HTR por lineas | no disponible en la informacion | Hugging Face |
+| Transkribus German Genius | no disponible | no disponible | HTR comercial | propietaria | servicio comercial |
 
 ## Limitaciones y advertencias
 
 - La salida es un borrador: el autor exige revision humana linea a linea contra el escaneo antes de cualquier uso.
-- Fuera de alcance: extraccion de nombres, fechas o lugares sin revision, y evidencia legal, genealogica o archivistica basada solo en la transcripcion.
-- No apto para imagenes de linea: en un recorte de linea el modelo tambien escribe las lineas vecinas.
-- Idiomas: casi todo el entrenamiento es aleman; no se soportan otras lenguas.
-- El paso de imagen del cliente puede eliminar sellos de biblioteca escritos junto a cartas de color; es una puerta de desarrollo fallida y eximida.
-- Los pesos solos no reproducen los resultados: se requiere el cliente de `inference/` con sus cuatro pasos fijos (paso de imagen, peticion, mapeo de salida y paso de salida).
-- Otros runtimes dan salidas distintas; Transformers por si solo no se ha medido y llama.cpp solo se probo en paginas de desarrollo con un limite fallido.
-- Riesgo de bucles de repeticion: una respuesta que alcanza los 4.096 tokens se marca como `incomplete: "repetition"` y se corta.
-- Licencia CC BY-SA 4.0 en los pesos: impone compartir bajo la misma licencia las obras derivadas, lo que condiciona el uso comercial y la redistribucion.
-- Sin datos publicados de sesgos mas alla del dominio acotado; el riesgo principal es la alucinacion de texto plausible en pasajes ilegibles, mitigada por la marca `[unleserlich]` pero no eliminada.
-- El harness con las claves de motor de este modelo aun no forma parte de una release publicada del benchmark.
+- No debe usarse para extraer nombres, fechas o lugares sin revision, ni como evidencia legal, genealogica o archivistica por si sola.
+- No admite imagenes de lineas individuales: sobre un recorte de linea tambien transcribe las lineas vecinas.
+- Solo aleman: casi todos los datos de entrenamiento son alemanes; otros idiomas quedan fuera de alcance.
+- El image step puede eliminar sellos de biblioteca escritos junto a cartas de color, segun un gate de desarrollo que fallo y fue eximido.
+- Los resultados reportados son del mantenedor del benchmark y no estan clasificados en el ranking; la comparacion con LightOnOCR-HGH es sensible a la sesion de servicio (0.075 frente a 0.090 sin image step) y no demuestra que el image step ayude.
+- La comparacion con llama.cpp frente a LightOnOCR-HGH no supero su limite preestablecido y fue eximida; no hay benchmarks de los ficheros GGUF.
+- Licencia CC BY-SA 4.0 en los pesos: impone atribucion y compartir igual, lo que condiciona el uso comercial y la redistribucion de derivados.
+- Riesgo de alucinacion: no se detecto texto inventado en las 53 paginas evaluadas por dos revisores de modelos de IA, pero la evaluacion es limitada y no garantiza ausencia de invenciones en otros corpus.
+- El modelo es una fusion de pesos de dos fine-tunes; el fine-tune propio del autor no esta publicado, lo que limita la reproducibilidad completa del entrenamiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/13fragments/kurrent-transcriber-1b
+- GGUF para llama.cpp: https://huggingface.co/13fragments/kurrent-transcriber-1b-GGUF
+- Demo Space: https://huggingface.co/spaces/13fragments/german-handwriting-ocr
+- Caso de estudio "Reading a Kingdom's Medical Survey": https://13fragments.com/blog/bavarian-medical-survey/
+- Caso de estudio "The Fourth Man": https://13fragments.com/blog/the-fourth-man/
+- Archivo en Zenodo: https://doi.org/10.5281/zenodo.24342061
+- Kurrent Pages Benchmark: https://doi.org/10.5281/zenodo.24015417
 - Modelo base LightOnOCR-3-1B: https://huggingface.co/lightonai/LightOnOCR-3-1B
-- Fine-tune padre de Bernhard Straub: https://huggingface.co/b-straub/LightOnOCR-3-1B-Historic-German-Handwriting
-- Kurrent Pages Benchmark (DOI): https://doi.org/10.5281/zenodo.24015417
-- Paper referenciado en los tags: arxiv:2601.14251 (no verificado en la informacion disponible)
+- LightOnOCR-HGH (Bernhard Straub): https://huggingface.co/b-straub/LightOnOCR-3-1B-Historic-German-Handwriting
+- TrOCR-Kurrent (dh-unibe): https://huggingface.co/dh-unibe/trocr-kurrent
+- Paper referenciado (arxiv:2601.14251): https://arxiv.org/abs/2601.14251

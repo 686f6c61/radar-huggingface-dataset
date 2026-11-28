@@ -2,106 +2,96 @@
 
 ## Resumen
 
-Xylolabs/gemma-4-31B-it-Tenstorrent-Tensix-BFP4-MLP es una exportación cuantizada del modelo multimodal google/gemma-4-31B-it, adaptada específicamente para ejecutarse en aceleradores Tenstorrent Tensix (Wormhole y Blackhole). El trabajo lo firma Xylolabs y consiste en aplicar GPTQ sobre las capas lineales del modelo de lenguaje para almacenarlas en el formato de coma flotante por bloques `ttnn.bfloat4_b` (BFP4) y `ttnn.bfloat8_b` (BFP8), de modo que TT-NN pueda empaquetarlas sin alterar sus valores.
+`Xylolabs/gemma-4-31B-it-Tenstorrent-Tensix-BFP4-MLP` es una cuantizacion del modelo multimodal `google/gemma-4-31B-it` realizada por Xylolabs y optimizada especificamente para las NPU Tensix de Tenstorrent (arquitecturas Wormhole y Blackhole). El modelo conserva la torre de vision y la cabeza de embedding en bf16, mientras que las proyecciones MLP se cuantizan a `bfloat4_b` (BFP4) y las proyecciones de atencion a `bfloat8_b` (BFP8), lo que reduce el peso empaquetado de 61,39 GB en bf16 a 23,534 GB.
 
-El checkpoint conserva intactas las partes multimodales (`embed_vision`, `vision_tower`) y el embedding, el LM head y las normas en bf16, mientras que las proyecciones de atención se guardan en BFP8 y las del MLP en BFP4. El resultado es un modelo de aproximadamente 32.680 millones de parámetros con un peso medio de 6,13 bits por peso y un empaquetado de 23,53 GB, lo que lo hace viable en hardware Tensix donde un checkpoint en bf16 no cabría con holgura.
+El problema que resuelve es el despliegue eficiente de un modelo de 32.682 millones de parametros sobre hardware Tensix, que emplea formatos de coma flotante por bloques (block floating point) nativos. Incluye scripts (`pack_tensix.py`, `verify_grid.py`) que permiten empaquetar cada matriz directamente en tensores `ttnn` y verificar la equivalencia numerica contra los pesos originales. La ficha del autor reporta una divergencia media de KL frente a bf16 de 0,05998, ligeramente superior a la de una cuantizacion Q4_K_M de llama.cpp (0,05170).
 
-Es relevante porque cubre un hueco concreto: el soporte de Gemma 4 en el ecosistema Tenstorrent es todavía limitado (tt-transformers no lo soporta y la demo oficial de tt-metal requiere cuatro u ocho chips Blackhole o un Wormhole T3K), y esta exportación ofrece una alternativa cuantizada y verificable byte a byte contra el modelo original. La licencia Apache-2.0 y el pipeline `image-text-to-text` lo sitúan como candidato para despliegues multimodales en aceleradores de inferencia de bajo consumo.
+Es relevante ahora porque demuestra un flujo de cuantizacion GPTQ especifico para formatos BFP4/BFP8 de Tenstorrent, una alternativa a las GPUs convencionales para servir modelos multimodales de gran tamano. La licencia es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), derivado de google/gemma-4-31B-it; capas lineales cuantizadas a formatos BFP de Tenstorrent |
+| Arquitectura | Transformer multimodal (image-text-to-text); detalles internos no disponibles |
 | Parametros totales | 32.682.375.020 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BFP4 (`ttnn.bfloat4_b`, 4,5 bits por peso) en MLP gate/up/down; BFP8 (`ttnn.bfloat8_b`, 8,5 bits por peso) en atención q/k/o y v; bf16 en embedding, LM head, normas y torre de visión; media de 6,13 bits por peso |
-| Idiomas soportados | no disponible (calibración GPTQ con WikiText-2 y Wikipedia en coreano) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (repo de 65,4 GB), compatible con transformers; empaquetado Tensix de 23,53 GB en DRAM |
+| Tipos de cuantizacion | BFP4 (`bfloat4_b`) en MLP gate/up/down; BFP8 (`bfloat8_b`) en atencion q/k/o y v; bf16 en LM head, embedding, norms y torre de vision |
+| Idiomas soportados | no disponible (evaluacion en ingles y coreano) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (empaquetado para Tensix), compatible con transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer multimodal de Gemma 4 con 31B de parámetros (32,68B reales según safetensors) que procesa texto e imagen y genera texto. Esta exportación no reentrena el modelo: cuantifica post-entrenamiento las matrices lineales del modelo de lenguaje. Las proyecciones de atención q, k, o (60 capas) y v (50 capas) se convierten a `bfloat8_b` mediante redondeo al más cercano; las proyecciones MLP gate, up y down (60 capas) se cuantizan a `bfloat4_b` con GPTQ y una búsqueda de exponente por bloque, calibrada sobre 65.536 tokens de WikiText-2 y Wikipedia en coreano. El resto de tensores (embedding, LM head atado al embedding, normas, `embed_vision` y `vision_tower`) permanece en bf16.
+El modelo base es `google/gemma-4-31B-it`, un transformer multimodal de 32.682 millones de parametros que procesa imagen y texto (`pipeline_tag: image-text-to-text`). La model card de esta cuantizacion no detalla la arquitectura interna del modelo base (numero de capas, dimension oculta, atencion, etc.), aunque la tabla de formatos menciona 60 capas con proyecciones MLP y de atencion, y 50 capas con proyeccion v.
 
-La innovación técnica clave es el uso del formato de coma flotante por bloques de Tenstorrent: las matrices cuantizadas se almacenan como valores bf16 situados sobre la rejilla BFP4 o BFP8, de forma que TT-NN las empaqueta sin modificar sus valores. El repositorio incluye `quant4.json`, que detalla el formato de cada proyección, y scripts `pack_tensix.py` y `verify_grid.py` para comprobar que el empaquetado es exacto. Solo se cuantizó y evaluó el modelo de lenguaje; la parte visual no se ha evaluado en formato cuantizado.
+El proceso de cuantizacion es propio de Xylolabs: las matrices MLP se cuantizan con GPTQ mas una busqueda de exponente por bloque, y las proyecciones de atencion con redondeo al mas cercano (round to nearest). El repositorio incluye `quant4.json`, que documenta el formato de cada proyeccion, y los scripts de empaquetado y verificacion. No se proporciona informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens, ni si hubo RLHF/DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional con plantilla de chat (`apply_chat_template`), orientada a instrucciones.
-- Procesamiento multimodal image-text-to-text: acepta imágenes y texto como entrada y genera texto.
-- Razonamiento y respuesta a preguntas de conocimiento general (el ejemplo de la model card es capital de Francia).
-- Capacidad multilingüe heredada del modelo base, aunque la model card no detalla la lista de idiomas.
-- Integración con el ecosistema Hugging Face `transformers` mediante `AutoModelForCausalLM` y `AutoTokenizer`.
-- Despliegue en aceleradores Tenstorrent Tensix (Wormhole, Blackhole) a través de TT-NN, tt-metal y, potencialmente, tt-forge/tt-xla.
-- Soporte de tool calling, agentes o modo thinking: no disponible en la información proporcionada.
+- Generacion de texto conversacional con plantilla de chat (`apply_chat_template`).
+- Procesamiento de imagen y texto (`image-text-to-text`), con torre de vision conservada en bf16.
+- Razonamiento y respuesta a instrucciones, heredados del modelo base `gemma-4-31B-it`.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: la evaluacion cubre ingles y coreano; el resto de idiomas no esta documentado.
+- Capacidad especial: empaquetado nativo en formatos Tensix (`bfloat4_b`, `bfloat8_b`) y verificacion de equivalencia numerica.
 
 ## Casos de uso
 
-- Inferencia multimodal en aceleradores Tenstorrent: el checkpoint está pensado para cargarse en Wormhole o Blackhole con TT-NN, donde sus 23,53 GB de pesos del modelo de lenguaje caben en DRAM del dispositivo, algo que un checkpoint bf16 no permitiría con la misma holgura.
-- Despliegue en clústeres Tensix multi-chip: la demo oficial de tt-metal ejecuta Gemma 4 31B en paralelo de tensores sobre cuatro u ocho chips Blackhole (QuietBox 2, LoudBox) o un Wormhole T3K; esta exportación puede servir como variante cuantizada de referencia en esos entornos.
-- Validación de pipelines de cuantización: los scripts `pack_tensix.py` y `verify_grid.py` permiten comprobar que cada matriz empaquetada en BFP4/BFP8 conserva exactamente sus valores, útil para equipos que desarrollan flujos GPTQ sobre BFP.
-- Asistentes conversacionales con entrada de imagen: al conservar la torre de visión en bf16, puede emplearse en tareas de descripción de imágenes, extracción de información de documentos escaneados o respuesta a preguntas sobre capturas, siempre que el backend Tensix soporte el grafo multimodal completo.
-- Investigación sobre degradación por cuantización: la tabla de evaluación del autor (KL medio frente a BF16, Top-1, respuestas correctas y perdidas) permite estudiar el impacto de BFP4 en MLP frente a BFP8 en atención sobre un modelo de 31B.
-- Servicio de inferencia compatible con endpoints: la etiqueta `endpoints_compatible` y la presencia del modelo en FriendliAI sugieren su uso en despliegues gestionados con API, útil para prototipos que necesitan multimodalidad sin infraestructura propia.
-- Reproducción de experimentos de cuantización en hardware de simulación: el autor validó el empaquetado con `ttnn 0.81.1` sobre `ttsim`, el simulador de Blackhole, lo que permite probar el checkpoint sin hardware físico.
+- Despliegue en NPU Tenstorrent: servir el modelo en Wormhole o Blackhole aprovechando los formatos nativos BFP4/BFP8, con un peso empaquetado de 23,534 GB frente a 61,39 GB en bf16, lo que reduce la huella de memoria del dispositivo.
+- Asistentes multimodales en el borde: al conservar la torre de vision en bf16, el modelo puede responder preguntas sobre imagenes en entornos con aceleradores Tensix en lugar de GPUs.
+- Prototipado de pipelines de cuantizacion: usar `pack_tensix.py` y `verify_grid.py` para validar el empaquetado de cada matriz y comprobar la equivalencia numerica antes de desplegar.
+- Servicio conversacional con transformers: cargar el modelo con `AutoModelForCausalLM` y `device_map="auto"` para pruebas de calidad en bf16 antes de moverlo al hardware Tensix.
+- Evaluacion comparativa de cuantizaciones: medir la divergencia KL frente a bf16 y compararla con alternativas como Q4_K_M de llama.cpp para decidir el compromiso tamano/calidad.
+- Investigacion en formatos block floating point: estudiar el impacto de BFP4 en las proyecciones MLP frente a BFP8 en atencion sobre la calidad de salida.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de evaluación del modelo de lenguaje que compara BF16 (modelo base) con la versión cuantizada, con columnas de bits por peso, tamaño en GB, KL medio frente a BF16, Top-1 (%) y respuestas correctas/perdidas. Los valores numéricos de la tabla aparecen truncados en la información disponible, por lo que no se reproducen aquí.
+| Modelo | Tamano (GB) | KL media frente a BF16 | Top-1 (%) |
+|---|---:|---:|---:|
+| BF16 (`google/gemma-4-31B-it`) | 61,39 | 0 | 100 |
+| Este modelo (BFP4 MLP / BFP8 atencion) | 23,534 | 0,05998 | 92,25 |
+| Q4_K_M (llama.cpp) | 18,687 | 0,05170 | 92,69 |
 
-| Modelo | Bits por peso | Tamaño (GB) | KL medio vs BF16 | Top-1 (%) | Respuestas correctas | Perdidas |
-|---|---|---|---|---|---|---|
-| BF16 (google/gemma-4-31B-it) | 16 | no disponible | referencia | no disponible | no disponible | no disponible |
-| Tensix BFP4 MLP / BFP8 atención | 6,13 | 23,53 | no disponible | no disponible | no disponible | no disponible |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+Las metricas de KL y top-1 se calculan sobre 8.048 posiciones de texto en ingles y coreano (WikiText-2 test y Wikipedia en coreano), con la plantilla de chat. La cuantizacion Q4_K_M se genero desde el mismo checkpoint con llama.cpp v0.9.0 (`cd959bae`) sin matriz de importancia (sha256 `b33a01989e939a8fbfc00ea0d8a91fb3bdf64460498c2a4ee0ce0783b76aa73e`). No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/DRAM estimada: 23,53 GB solo para los pesos del modelo de lenguaje, más espacio para la caché KV y buffers.
-- Hardware objetivo: aceleradores Tenstorrent Tensix, generaciones Wormhole y Blackhole.
-- Multi-chip: la demo oficial de tt-metal para Gemma 4 31B requiere cuatro u ocho chips Blackhole (QuietBox 2, LoudBox) o un Wormhole T3K; no se ejecuta en un solo chip.
-- Simulación: validado con `ttnn 0.81.1` sobre `ttsim`, el simulador de Blackhole de Tenstorrent.
-- GPU consumer: no es el objetivo del checkpoint; la carga en `transformers` con `device_map="auto"` es posible en bf16, pero requeriría del orden de 65 GB, fuera del alcance de GPUs consumer habituales.
-- Opciones de despliegue: TT-NN/tt-metal (soporte parcial para Gemma 4 en v0.81.1), tt-forge/tt-xla (no probado con Gemma 4), `transformers` para inspección y conversión, y FriendliAI como endpoint gestionado.
-- Latencia y throughput: no disponibles.
+- VRAM/DRAM estimada: 23,534 GB empaquetado para Tensix; en bf16 el modelo base ocupa 61,39 GB.
+- Hardware objetivo: NPU Tenstorrent Tensix, arquitecturas Wormhole y Blackhole.
+- GPU consumer: no se documenta soporte especifico; el modelo es compatible con transformers y `device_map="auto"`, por lo que podria cargarse en GPUs con suficiente memoria en bf16, pero no hay datos de rendimiento.
+- Opciones de despliegue: `ttnn` (Tenstorrent), `tt-metal`, `tt-forge`, `tensix-runner` v0.1.0, `tensix-kernels` v0.1.0; tambien `transformers` para pruebas.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Xylolabs/gemma-4-31B-it-Tensix-BFP4-MLP | 32,68B | no disponible | BFP4 MLP + BFP8 atención (6,13 bits/peso) | Apache-2.0 | Hugging Face, FriendliAI |
-| google/gemma-4-31B-it (base) | 31B (nominal) | no disponible | bf16 | Apache-2.0 | Hugging Face |
-| Xylolabs/gemma-4-E2B-it-qat-q4_0-unquantized-Tensix-BFP4-MLP | no disponible (variante E2B) | no disponible | BFP4 MLP | no disponible | Hugging Face |
-| hletrd/gemma-4-31B-it-Tensix-BFP4-MLP (espejo) | 33B (según ficha) | no disponible | BFP4 MLP | no disponible | Hugging Face |
+| Modelo | Parametros | Contexto | Tamano | Calidad (KL vs BF16) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| Este modelo (BFP4/BFP8 Tensix) | 32,68 B | no disponible | 23,534 GB | 0,05998 | Apache 2.0 | Hugging Face |
+| `google/gemma-4-31B-it` (BF16) | 32,68 B | no disponible | 61,39 GB | 0 (referencia) | Apache 2.0 | Hugging Face |
+| Q4_K_M de llama.cpp (mismo base) | 32,68 B | no disponible | 18,687 GB | 0,05170 | Apache 2.0 | generado localmente |
 
-La comparativa se limita al ecosistema Gemma 4 y Tensix porque no se dispone de datos de benchmarks que permitan contrastar con modelos de otras familias.
+No se dispone de datos de benchmarks de tareas para comparar con otros modelos de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Solo se cuantizó y evaluó el modelo de lenguaje; la torre de visión y el resto del pipeline multimodal no se han evaluado en formato cuantizado.
-- La demo oficial de tt-metal para Gemma 4 no tiene entrada en `precision_overrides.json` para este repositorio, por lo que por defecto carga todo en bf16; el autor propone una entrada que empaqueta atención y MLP en bfloat8_b, verificada solo en las dos primeras capas sobre un chip simulado.
-- La demo `gemma4_31b_qb2` de tt-metal empaqueta todas las proyecciones en bfloat4_b, lo que re-cuantizaría la atención BFP8 de este checkpoint; esa combinación no se ha probado.
-- tt-forge (tt-xla) no se ha ejecutado con Gemma 4; su opción `bfp_bf4` re-cuantiza los pesos en el layout [out, in] de PyTorch.
-- La división multi-chip no se ha ejecutado; la verificación se limitó a un chip simulado.
-- La calibración GPTQ usó WikiText-2 y Wikipedia en coreano, lo que puede introducir sesgo de dominio e idioma en la cuantización BFP4.
-- No se han publicado resultados de benchmarks estándar ni datos de sesgos o tasas de alucinación en la información disponible.
-- Aunque la licencia es Apache-2.0, conviene revisar los términos del modelo base google/gemma-4-31B-it para uso comercial en producción.
-- El modelo tiene 83 descargas y 0 likes, lo que indica validación comunitaria muy limitada.
+- La divergencia KL frente a bf16 (0,05998) es un 16 % superior a la de Q4_K_M (0,05170); el top-1 cae al 92,25 % frente al 92,69 % de Q4_K_M.
+- La evaluacion de calidad cubre solo ingles y coreano; el comportamiento en otros idiomas no esta documentado.
+- El modelo esta optimizado para hardware Tensix; su uso en GPUs convencionales no esta validado ni medido.
+- No se documentan sesgos conocidos ni tasas de alucinacion del modelo base en esta ficha.
+- La licencia Apache 2.0 se aplica segun la model card del autor; el repositorio del modelo base no incluye fichero LICENSE y el autor aporta el texto estandar.
+- Los scripts de empaquetado y verificacion (`pack_tensix.py`, `verify_grid.py`) se distribuyen sin cambios desde `tensix-bfp-gptq` en el commit `5c52065`.
+- No hay informacion sobre tool calling, agentes ni longitud de contexto, lo que limita la planificacion de despliegues en produccion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Xylolabs/gemma-4-31B-it-Tenstorrent-Tensix-BFP4-MLP
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
-- Repositorio de código tensix-bfp-gptq: https://github.com/XylolabsInc/tensix-bfp-gptq
-- Documentación de Tenstorrent: https://docs.tenstorrent.com
-- Demo Gemma 4 en tt-metal (v0.81.1): https://github.com/tenstorrent/tt-metal/tree/v0.81.1/models/demos/gemma4
-- Demo gemma4_31b_qb2 en tt-metal: https://github.com/tenstorrent/tt-metal/tree/v0.81.1/models/demos/gemma4_31b_qb2
-- Página del modelo en tt-awesome: https://docs.tenstorrent.com/tt-awesome/models/gemma-4-31b-it/
-- Endpoint en FriendliAI: https://friendli.ai/models/Xylolabs/gemma-4-31B-it-Tensix-BFP4-MLP
-- Espejo en Hugging Face: https://huggingface.co/hletrd/gemma-4-31B-it-Tensix-BFP4-MLP
-- Variante E2B relacionada: https://huggingface.co/Xylolabs/gemma-4-E2B-it-qat-q4_0-unquantized-Tensix-BFP4-MLP
-- Ficha en free2aitools: https://free2aitools.com/model/xylolabs/gemma-4-31b-it-tensix-bfp4-mlp
+- Repositorio de codigo: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Commit de referencia: https://github.com/XylolabsInc/tensix-bfp-gptq/tree/5c52065fffec88021a0703a1bfe5266e4c674711
+- Release tensix-bfp-gptq v0.1.0: https://github.com/XylolabsInc/tensix-bfp-gptq/releases/tag/v0.1.0
+- Release tensix-kernels v0.1.0: https://github.com/XylolabsInc/tensix-kernels/releases/tag/v0.1.0
+- Release tensix-runner v0.1.0: https://github.com/XylolabsInc/tensix-runner/releases/tag/v0.1.0
+- Documentacion de Tenstorrent: https://docs.tenstorrent.com
 - Paper referenciado (arXiv:2607.02770): https://arxiv.org/abs/2607.02770

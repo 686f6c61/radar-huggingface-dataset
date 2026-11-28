@@ -2,99 +2,104 @@
 
 ## Resumen
 
-GLiDE 27B es un modelo de decisión desarrollado por Fastino, construido sobre la arquitectura Qwen3.8-27B. A diferencia de un modelo conversacional, GLiDE no genera texto: recibe un estado (texto, JSON o imágenes) junto con preguntas tipadas (`choice`, `noul` para sí/no y `score`) y devuelve, en una sola pasada hacia delante por pregunta, una distribución de probabilidad sobre cada opción. Esta conversión concreta, publicada por NetProjects (Internet Projects Ltd), es una cuantización afín de 8 bits (tamaño de grupo 64) en formato MLX, pensada para ejecutarse en Apple Silicon.
+GLiDE 27B es un modelo de decisión desarrollado por Fastino, construido sobre el modelo base Qwen3.8-27B (Qwen3.5), y esta ficha concreta es la conversión a 8 bits en formato MLX realizada por NetProjects (Internet Projects Ltd), pensada para Apple Silicon. A diferencia de un modelo conversacional, GLiDE no genera texto: recibe un estado (texto, JSON o imágenes) y una batería de preguntas tipadas (`choice`, `noul` para sí/no, y `score`) y devuelve, en un único forward pass por pregunta, una probabilidad para cada opción. Esto lo convierte en una herramienta de calibración y clasificación probabilística, no en un chatbot.
 
-El checkpoint ocupa 28,2 GB de pesos (56,3 GB de repositorio completo) y conserva fielmente el comportamiento del original en bf16: coincide en la respuesta principal con el código PyTorch de referencia de Fastino en 203 de 204 preguntas, con una diferencia media de probabilidad de 0,002. En JevBench público (v1.2.1) obtiene 213 de 231 aciertos, con un tiempo mediano de 0,46 s por ítem en un MacBook Pro M5 Max.
+La relevancia de esta conversión es práctica: permite ejecutar un modelo de 26.085.330.160 parámetros en un Mac con Apple Silicon con un peso de 28,2 GB, manteniendo una fidelidad casi exacta respecto a los pesos originales en bf16 de Fastino (203 de 204 preguntas con la misma respuesta principal y una diferencia media de probabilidad de 0,002). El checkpoint está empaquetado en safetensors y requiere un servidor específico (`glide-mlx`), no los generadores genéricos de MLX, porque GLiDE lee su respuesta de un readout separado de 255 vías y sus capas de atención completa procesan el prompt de forma bidireccional.
 
-Su relevancia radica en que ofrece un modelo de decisión calibrado, con lectura no causal en sus capas de atención completa y un readout de 255 vías, ejecutable localmente en hardware de Apple sin renunciar prácticamente a nada de la precisión del original.
+La arquitectura combina capas de atención completa no causal con capas Gated DeltaNet, e incorpora un mecanismo "midloop" en el que las capas 24–35 y 36–47 se ejecutan dos veces y se mezclan en float32. El modelo está publicado bajo la licencia Fastino Community, con requisitos de atribución para uso comercial y un umbral de ingresos anuales de 10 millones de dólares para uso comercial en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido Qwen3.8-27B: 16 capas de atención completa (no causal) y 48 capas Gated DeltaNet, con midloop en las capas 24-35 y 36-47 |
-| Parametros totales | 26.085.330.160 (26,1 mil millones) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (los ejemplos de referencia llegan a unos 4K tokens) |
-| Tipos de cuantizacion | 8 bits afín, tamaño de grupo 64 (MLX); existe variante de 4 bits (15,3 GB) |
-| Idiomas soportados | No disponible |
-| Licencia | Fastino Community License (licencia `other`, nombre `fastino-community`) |
-| Formato de pesos | safetensors (MLX); incluye `readout.safetensors` separado |
+| Arquitectura | Híbrida: 16 capas de atención completa no causal + 48 capas Gated DeltaNet, con midloop en capas 24–35 y 36–47 |
+| Parametros totales | 26.085.330.160 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
+| Longitud de contexto | no disponible (los prompts de JevBench llegan a unos 4K tokens) |
+| Tipos de cuantizacion | 8 bits afín (affine), group size 64; existe versión 4 bits (15,3 GB) |
+| Idiomas soportados | no disponible |
+| Licencia | Fastino Community License (fastino-community) |
+| Formato de pesos | safetensors (MLX), readout separado en `readout.safetensors` |
 
 ## Arquitectura y entrenamiento
 
-GLiDE 27B parte de Qwen3.8-27B (Apache-2.0) y lo adapta como modelo de decisión. La arquitectura combina 16 capas de atención completa que leen el prompt en ambas direcciones (sin máscara causal, el modo `noncausal_full_attention` de GLiDE) con 48 capas Gated DeltaNet que mantienen su recurrencia. Además, aplica un mecanismo de midloop: las capas 24-35 y 36-47 se ejecutan dos veces y se mezclan en float32.
+GLiDE 27B se apoya en Qwen3.8-27B (familia Qwen3.5, licencia Apache-2.0) y lo adapta a una tarea de decisión probabilística. La arquitectura es híbrida: 16 capas de atención completa que ven todo el prompt sin máscara causal (equivalente a `noncausal_full_attention` de GLiDE) y 48 capas Gated DeltaNet que mantienen su recurrencia. Las capas 24–35 y 36–47 se ejecutan dos veces y se combinan en float32 (midloop), un patrón poco habitual que forma parte del diseño original de Fastino.
 
-La respuesta no se genera token a token. El estado oculto del último token pasa por un readout de 255 vías, que se mantiene en su precisión original, y se aplica softmax sobre las opciones a la temperatura definida en `decision_config.json`. El codificador de visión también conserva su precisión original, y los módulos `prompt.py` e `images.py` de GLiDE se usan sin modificar. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+La salida no es texto generado: el estado oculto del último token pasa por un readout de 255 vías mantenido a su precisión original, y se aplica softmax sobre las opciones a la temperatura definida en `decision_config.json`. La conversión MLX conserva el codificador de visión a su precisión original y reutiliza sin cambios los módulos `prompt.py` e `images.py` de GLiDE. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Decisión sobre estados en texto, JSON o imágenes, devolviendo probabilidades por opción en una sola pasada.
-- Preguntas de tipo `choice` (elección entre criterios definidos), `noul` (sí/no) y `score` (puntuación).
-- Procesamiento de imágenes mediante el codificador de visión original.
-- Lectura bidireccional del prompt completo en las capas de atención completa.
-- API compatible con `POST /v1/systemone` del servidor de GLiDE.
-- Uso programático mediante `GlideMLX.from_pretrained(...)` y `g.decide(state, questions)`.
-- No soporta generación de texto libre, tool calling ni razonamiento multi-paso generativo: es un modelo de decisión, no de chat.
+- Clasificación probabilística de estados: devuelve una probabilidad por opción para preguntas de tipo `choice`, en un solo forward pass.
+- Preguntas booleanas (`noul`): responde sí/no con probabilidad calibrada.
+- Preguntas de puntuación (`score`): asigna una puntuación numérica calibrada.
+- Entrada multimodal: acepta estados en texto, JSON e imágenes (pipeline `image-text-to-text`).
+- Procesamiento bidireccional del prompt en las capas de atención completa, útil para estados largos y estructurados.
+- API compatible con el servidor de GLiDE mediante `POST /v1/systemone`.
+- No genera texto libre: no es un modelo conversacional ni de chat.
+- No se documenta soporte de tool calling ni de agentes multi-step en la información disponible.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Clasificación de intención en atención al cliente: dado el texto de una reclamación, devolver la probabilidad de que el cliente quiera reembolso, cambio o información, con preguntas `choice` y `noul` combinadas en una sola llamada.
-- Triaje de tickets con detección de sentimiento: usar una pregunta `noul` ("¿está el cliente enfadado?") junto a preguntas de categoría para enrutar casos urgentes.
-- Moderación de contenido con umbrales calibrados: preguntas `score` sobre toxicidad o riesgo permiten fijar cortes de probabilidad ajustables por política.
-- Enrutamiento de agentes: decidir qué herramienta o subagente debe atender una consulta a partir de un estado JSON estructurado.
-- Análisis de documentos con imágenes: evaluar capturas, formularios o recibos junto a texto para decidir su categoría o validez.
-- Verificación de calidad en pipelines: comprobar si una respuesta cumple criterios definidos mediante preguntas `noul` encadenadas.
-- Ejecución local en portátiles Apple Silicon: servir el modelo con `glide-mlx` en un MacBook Pro para prototipado sin depender de la nube.
+- Enrutamiento de tickets de soporte: dado el texto de una reclamación, preguntar `choice` sobre la intención (reembolso, cambio, información) y `noul` sobre el tono del cliente, obteniendo probabilidades directamente utilizables para priorizar la cola.
+- Moderación y triaje de contenido: clasificar mensajes en categorías predefinidas con umbrales de confianza calibrados, lo que permite derivar automáticamente los casos ambiguos a revisión humana.
+- Extracción de decisiones en pipelines de datos: procesar lotes de estados en JSON y obtener etiquetas probabilísticas sin generación de texto, lo que reduce coste y latencia frente a un LLM generativo.
+- Validación de formularios y documentos con imagen: usar la entrada multimodal para decidir si una captura o documento cumple criterios (por ejemplo, si una factura contiene los campos requeridos) mediante preguntas `noul`.
+- Scoring de riesgo en flujos de negocio: asignar una puntuación calibrada a cada caso (por ejemplo, probabilidad de impago o de fraude) y ordenar la cola de revisión por esa puntuación.
+- Evaluación de agentes y sistemas: emplear el modelo como juez probabilístico en benchmarks de decisión, dado su rendimiento medido en JevBench (213/231 en la versión pública v1.2.1).
+- Despliegue local en Apple Silicon: prototipado y ejecución en un MacBook Pro M5 Max con 128 GB, con un tiempo mediano de 0,46 s por ítem de JevBench para prompts de hasta unos 4K tokens.
 
 ## Benchmarks y rendimiento
 
-| Prueba | Resultado |
+| Benchmark | Resultado |
 |---|---|
-| Coincidencia con el código PyTorch de Fastino (bf16) en respuesta principal | 203 / 204 preguntas; diferencia media de probabilidad 0,002 |
-| Preguntas sí/no y score idénticas al original | 132 / 132 |
-| JevBench público (231 ítems, v1.2.1, `--adapter typesafe`) | 213 / 231 (fácil 48/48, estándar 72/72, difícil 93/111) |
-| Tiempo por ítem de JevBench (prompts de hasta ~4K tokens) | 0,46 s de mediana |
+| Coincidencia con el código PyTorch bf16 de Fastino (misma respuesta principal) | 203 / 204 preguntas; diferencia media de probabilidad 0,002 |
+| Preguntas sí/no y de puntuación idénticas al original | 132 / 132 |
+| JevBench público (231 ítems, v1.2.1, `--adapter typesafe`) | 213 / 231 (easy 48/48 · standard 72/72 · hard 93/111) |
+| Tiempo por ítem de JevBench (prompts hasta ~4K tokens) | 0,46 s de mediana |
 
-Medido en un MacBook Pro M5 Max con 128 GB el 7 de noviembre de 2026. La única respuesta divergente corresponde a un empate exacto en la propia referencia (margen top-dos de 0,000).
+La única discrepancia frente al código de referencia es un empate exacto en el propio original (margen top-2 de 0,000). El conjunto de comparación incluye 72 peticiones con 204 preguntas, estados de texto y JSON de 30 a 1.500 palabras, 12 peticiones con imagen y los tres tipos de pregunta. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generativos en la información disponible, lo cual es coherente con que GLiDE no sea un modelo generativo.
 
 ## Requisitos de hardware
 
-- Pesos de 28,2 GB en 8 bits; repositorio completo de 56,3 GB.
-- Variante de 4 bits disponible con 15,3 GB, apta para equipos con menos memoria unificada.
-- Requiere Apple Silicon; el formato MLX no se ejecuta en GPU NVIDIA ni en CPU x86 convencional.
-- Recomendado un Mac con 64 GB o más de memoria unificada para la versión de 8 bits; 32 GB para la de 4 bits.
-- Despliegue mediante `glide-mlx` (v0.2.0 o posterior), que expone el endpoint `/v1/systemone`.
-- No debe servirse con `mlx_lm.server` ni con una llamada genérica de generación de `mlx_vlm`: GLiDE necesita el readout separado y la atención no causal.
-- Latencia medida: 0,46 s de mediana por ítem de JevBench en M5 Max con 128 GB.
+- Peso en disco: 28,2 GB para el checkpoint de 8 bits; 15,3 GB para la versión de 4 bits.
+- VRAM/unified memory estimada: al menos 28,2 GB para los pesos en 8 bits, más overhead de activaciones y del codificador de visión; en la práctica se ha validado en un MacBook Pro M5 Max con 128 GB de memoria unificada.
+- GPU recomendadas: Apple Silicon (probado en M5 Max). No se documenta soporte para A100, H100 ni RTX 4090, ya que el formato es MLX.
+- ¿Cabe en GPU de consumo? En Apple Silicon con memoria unificada suficiente, sí; en GPUs NVIDIA de consumo no está soportado por este checkpoint.
+- Despliegue: servidor `glide-mlx` (v0.2.0 o superior) mediante `python -m glide_mlx.server`; no usar `mlx_lm.server` ni `mlx_vlm` generate genéricos.
+- Latencia: 0,46 s de mediana por ítem de JevBench con prompts de hasta ~4K tokens en M5 Max. Throughput no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| netprojects/GLiDE-mlx-8bit | 26,1 mil millones | No disponible | Decisión con probabilidades, MLX 8 bits | Fastino Community | Hugging Face |
-| netprojects/GLiDE-mlx-4bit | No disponible | No disponible | Decisión con probabilidades, MLX 4 bits (15,3 GB) | Fastino Community | Hugging Face |
-| fastino/GLiDE-27B | 27 mil millones (nominal) | No disponible | Decisión con probabilidades, precisión completa | Fastino Community | Hugging Face |
+| GLiDE 27B MLX 8-bit (esta ficha) | 26,09 B | no disponible | Decisión probabilística multimodal | Fastino Community | Hugging Face (MLX) |
+| GLiDE 27B MLX 4-bit | 26,09 B | no disponible | Decisión probabilística multimodal | Fastino Community | Hugging Face (MLX), 15,3 GB |
+| fastino/GLiDE-27B (original) | 26,09 B | no disponible | Decisión probabilística multimodal | Fastino Community | Hugging Face (bf16) |
+| Qwen3.8-27B (modelo base) | ~27 B | no disponible | LLM generativo | Apache-2.0 | Hugging Face |
 
-No se dispone de datos de benchmarks de modelos de decisión alternativos en la información proporcionada para establecer una comparación cuantitativa.
+La comparación con modelos de decisión alternativos de otros fabricantes no está disponible en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de chat: no genera texto libre ni mantiene conversaciones.
-- Requiere servir con `glide-mlx`; las herramientas genéricas de MLX producen resultados incorrectos.
-- La licencia Fastino Community exige mostrar "Built with Fastino GLiDE" en uso comercial (sección 4).
-- El uso comercial en producción por entidades con ingresos anuales superiores a 10 millones de USD requiere un acuerdo separado con Fastino (secciones 2-3).
-- Es una obra derivada de Qwen3.8-27B; se incluyen las licencias correspondientes en el repositorio.
-- No se dispone de información sobre sesgos, idiomas soportados ni riesgo de alucinación específico del modelo.
-- La longitud máxima de contexto no está documentada; los ejemplos de referencia no superan los 4K tokens.
-- NetProjects no está afiliado a Fastino; la conversión es responsabilidad del publicador.
+- No es un modelo de chat: no genera texto libre ni mantiene conversaciones; usarlo como LLM produce resultados incorrectos.
+- Requiere el servidor `glide-mlx`; los snippets genéricos de MLX no reproducen el comportamiento correcto (readout de 255 vías y atención bidireccional).
+- La licencia Fastino Community exige mostrar "Built with Fastino GLiDE" en uso comercial y un acuerdo separado con Fastino para uso comercial en producción por entidades con ingresos anuales superiores a 10 millones de dólares.
+- Esta conversión es una obra derivada y se distribuye bajo los mismos términos que el original; incluye `LICENSE`, `NOTICE` y `licenses/Qwen3.8-27B-LICENSE`.
+- El autor de la conversión (NetProjects) no está afiliado a Fastino.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las probabilidades pueden estar mal calibradas en dominios fuera de la distribución de entrenamiento; no se documentan garantías de calibración fuera de JevBench.
+- Idiomas soportados: no disponibles; no se garantiza un rendimiento multilingüe.
+- Longitud de contexto máxima: no disponible; los resultados reportados se limitan a prompts de hasta unos 4K tokens.
+- El checkpoint de 8 bits requiere al menos 28,2 GB de memoria; en equipos con menos memoria unificada debe usarse la versión de 4 bits.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/netprojects/GLiDE-mlx-8bit
-- Modelo base: https://huggingface.co/fastino/GLiDE-27B
-- Variante de 4 bits: https://huggingface.co/netprojects/GLiDE-mlx-4bit
-- Repositorio glide-mlx: https://github.com/internet-projects/glide-mlx
+- Hugging Face (esta conversión): https://huggingface.co/netprojects/GLiDE-27B-MLX-8bit
+- Modelo base original: https://huggingface.co/fastino/GLiDE-27B
+- Conversión 4 bits: https://huggingface.co/netprojects/GLiDE-27B-MLX-4bit
+- Servidor y librería glide-mlx: https://github.com/internet-projects/glide-mlx
+- NetProjects: https://netprojects.com
 - Colección de builds MLX de NetProjects: https://huggingface.co/collections/netprojects/netprojects-mlx-builds-6ae3b2683a59a1b4fc4c0c3a
 - Todos los modelos de NetProjects: https://huggingface.co/netprojects
-- NetProjects: https://netprojects.com
+- JevBench (referenciado en la model card; sin URL directa en la información disponible)

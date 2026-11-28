@@ -2,67 +2,67 @@
 
 ## Resumen
 
-Vega 0.8B (public intents) es un modelo de decisión tipada desarrollado por el usuario nandakishorm y publicado en Hugging Face. No es un modelo de lenguaje generativo al uso: el LLM que lo sustenta, Qwen/Qwen3.5-0.8B, permanece congelado y nunca se entrena; todo el aprendizaje reside en un pequeño motor entrenado de 14.342.512 parámetros (57 MB) más un adaptador de tarea de 835.937 parámetros que se superpone a él. El repositorio incluye además una variante de 4B, apoyada en Qwen/Qwen3.5-4B con un motor de 30.879.088 parámetros (124 MB) y un adaptador de 1.431.905 parámetros.
+Vega 0.8B (public intents) es un modelo de decisión tipada (typed decisions) desarrollado por nandakishorm, distribuido bajo licencia Apache 2.0 y publicado en Hugging Face. No es un modelo generativo al uso: se trata de un modelo no autorregresivo construido sobre el backbone congelado de Qwen/Qwen3.5-0.8B, al que se le superpone un pequeño "motor" entrenado de aproximadamente 57 MB (14,3 millones de parámetros) más adaptadores específicos de tarea. El modelo recibe un estado (texto o imagen) y emite una respuesta tipada: una elección entre opciones (`choice`), una probabilidad de que un enunciado sea verdadero (`boolean`) o una puntuación (`score`), con probabilidades calibradas.
 
-El modelo resuelve tareas de clasificación y decisión con salidas tipadas (choice, boolean y score), con una ventana de contexto declarada de 73.728 tokens y una ruta multimodal que reutiliza el codificador de visión del backbone congelado. Su propuesta diferencial es que un modelo local de 0,8B, ejecutable en una T4 o en un portátil Apple, supera a un modelo alojado de referencia (Jev 1.13.0) en tareas concretas de cribado de phishing, razonamiento temporal y numérico, según las evaluaciones publicadas por el autor.
+El problema que resuelve es el coste y la latencia de usar un LLM generativo para decisiones rutinarias de clasificación o enrutamiento. Vega está pensado como una capa de "system one" que decide en milisegundos (22 ms por decisión en el modelo 0.8B, 0.267 s/decisión en una T4 con fp16) y que puede colocarse delante de un LLM mayor para absorber las decisiones repetitivas. Su contexto declarado es de 73.728 tokens, con un lector de memoria que trocea estados largos en 16 segmentos, y admite imágenes a través del codificador visual del backbone congelado.
 
-Es relevante ahora porque combina tres factores poco habituales en el mismo paquete: tamaño reducido (repo de 0,2 GB con ambos tamaños), contexto muy largo con caché de prefijo de lectura única y calibración explícita de probabilidades (error de calibración de 0,026 en la variante 0.8B y 0,019 en la 4B). Licencia Apache 2.0.
+La relevancia actual reside en la combinación de tamaño reducido, contexto largo, calibración explícita (error de calibración de 0,026 en el split de test de `LocalLLaMA/typed-decisions`) y soporte de predicción conforme, lo que permite umbrales de confianza con garantías estadísticas. El repositorio incluye dos tamaños (0.8B en la raíz y 4B en `4b/`) que comparten la misma interfaz de código.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Backbone transformer congelado (Qwen3.5) más motor de decisión entrenado y adaptador de tarea; soporte multimodal mediante el codificador de visión del backbone |
-| Parametros totales | 0.8B: backbone Qwen3.5-0.8B (24 capas, d=1024) congelado + 14.342.512 parámetros de motor + 835.937 de adaptador. 4B: backbone Qwen3.5-4B (32 capas, d=2560) congelado + 30.879.088 + 1.431.905 |
-| Parametros activos | No aplica: no es un modelo MoE |
+| Arquitectura | Modelo de decisión no autorregresivo sobre backbone transformer congelado (Qwen3.5-0.8B, 24 capas, d=1024) más motor de decisión entrenado y adaptadores de tarea |
+| Parametros totales | 14.342.512 parámetros entrenados (motor, 57 MB) + 835.937 (adaptador de tarea) sobre backbone congelado de 0,8B |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 73.728 tokens (el backbone soporta 262.144 posiciones rotatorias) |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (se documentan un motor de 57 MB o 124 MB y adaptadores con gating; la librería declarada es vegaml) |
+| Tipos de cuantizacion | No disponible (la model card cita fp16 en T4 y fp32 en Apple M-series; no se listan formatos de cuantización) |
+| Idiomas soportados | No disponible |
+| Licencia | Apache 2.0 para pesos y paquete `vegaml`; `vegaml-learn` bajo PolyForm Noncommercial 1.0.0 (uso comercial requiere licencia aparte) |
+| Formato de pesos | No disponible (repositorio de 0,2 GB; no se especifica safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura separa dos piezas. Por un lado, un backbone de lenguaje congelado y fijado por SHA-256 (Qwen3.5-0.8B por defecto, Qwen3.5-4B en la carpeta 4b/), que aporta las representaciones y, en su versión multimodal, la codificación de imágenes. Por otro, un motor entrenado descrito por el autor como un «pequeño motor de física» que se apoya sobre el backbone y contiene todo el conocimiento adquirido, junto con adaptadores de tarea con gating. El entrenamiento no toca los pesos del LLM en ningún momento, según la model card.
+Vega no entrena el modelo de lenguaje: el backbone Qwen3.5-0.8B está congelado y fijado por SHA-256. Todo el aprendizaje reside en un motor de decisión de 14,3 millones de parámetros (57 MB) más un adaptador de tarea de 835.937 parámetros, descrito en el artículo "From Laya to Vega: Open Non-Autoregressive Decision Models with Calibrated Probabilities". La arquitectura es explícitamente no autorregresiva: no genera tokens, sino que produce una distribución calibrada sobre respuestas tipadas (`choice`, `boolean`, `score`).
 
-La innovación declarada está en la gestión del contexto largo. El modelo aplica caché de prefijo de lectura única: un estado de al menos 4.096 tokens se procesa una sola vez con caché KV y cada pregunta posterior parte de una copia de ese estado, de modo que doce preguntas sobre un contrato de 73.000 tokens cuestan aproximadamente una lectura y no doce. Además incorpora un lector de memoria que divide los estados largos en 16 fragmentos, aplica mean-pooling en la capa de características más profunda y los entrega al motor junto con los spans agrupados, para que la evidencia situada al final de un documento largo siga influyendo en la decisión. La model card indica que las entradas que no caben se rechazan explícitamente en lugar de truncarse en silencio. También se declara un método propio de calibración y predicción conforme (conformal prediction), sin detallar el procedimiento de entrenamiento ni la composición del dataset.
+Entre las innovaciones técnicas destacadas están el almacenamiento en caché de prefijo de lectura única (un estado de al menos 4.096 tokens se procesa una vez con KV cache y las preguntas posteriores continúan desde una copia), un lector de memoria que divide estados largos en 16 fragmentos con mean-pooling en la capa de características más profunda, y el rechazo explícito de entradas que no caben en contexto en lugar de truncarlas silenciosamente. La calibración se aborda mediante predicción conforme, y la model card menciona además aprendizaje continuo y "landscape learning" en el paquete `vegaml-learn`. No se detalla en la información disponible el número de tokens de entrenamiento ni la composición del dataset.
 
 ## Capacidades
 
-- Decisión tipada con tres formatos de respuesta: choice (elección entre alternativas con criterios definidos), boolean (probabilidad de que un enunciado sea verdadero) y score (puntuación).
-- Clasificación de texto en dominios concretos: intenciones bancarias (banking77), intenciones de asistente (clinc150), enrutado a herramientas (when2call), llamadas a API (apibank), electrodomésticos (appliances) y clasificación de productos de comercio electrónico (esci).
-- Cribado de correo malicioso: clasificación binaria de phishing sobre lotes de 800 correos con precisión y exhaustividad publicadas.
-- Razonamiento temporal y numérico contra umbrales de política (conjunto temporal_numeric de JevBench v1.4.2).
-- Procesamiento de documentos largos de hasta 73.728 tokens con caché de prefijo de lectura única y lector de memoria.
-- Visión: la ruta vega_vision.py expone la misma interfaz tipada para imágenes mediante el codificador de visión congelado; las imágenes se redimensionan a max_pixels (por defecto 1024·32·32). El autor advierte que esta ruta es funcional pero no está cubierta por las cifras publicadas.
-- Calibración de probabilidades: se publican Brier y error de calibración para ambos tamaños, lo que permite fijar umbrales de decisión.
-- No se documenta soporte de tool calling generativo, agentes multi-paso, audio ni modos de razonamiento explícito.
+- Clasificación de texto con salida tipada: elección entre opciones (`choice`), probabilidad de veracidad de un enunciado (`boolean`) y puntuación (`score`).
+- Probabilidades calibradas con error de calibración de 0,026 (0.8B) y 0,019 (4B) en el split de test de `LocalLLaMA/typed-decisions`.
+- Predicción conforme para umbrales de confianza con garantías estadísticas.
+- Procesamiento de contexto largo de hasta 73.728 tokens con caché de prefijo de lectura única.
+- Entrada multimodal: imágenes a través del codificador visual del backbone congelado (`vega_vision.py`).
+- Decisiones de baja latencia: 22 ms por decisión (0.8B) y 28 ms (4B) según la model card; 0,267 s/decisión en T4 con fp16.
+- Interfaz de código unificada para ambos tamaños mediante `vegaml.load()` y `vegaml.load("4b")`.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso en la información disponible.
 
 ## Casos de uso
 
-- Cribado de phishing en pasarelas de correo: el modelo clasifica lotes de correos y, según los datos del autor, detecta 252 de 400 correos maliciosos sobre un conjunto equilibrado de 800, frente a los 99 de Jev 1.13.0. Su utilidad está en operar con exhaustividad alta en la primera fase del filtro, dejando la confirmación a un segundo sistema.
-- Enrutado de peticiones de usuario a la herramienta o API correcta: con 0,904 en when2call y 0,895 en apibank en la variante 0.8B, puede colocarse delante de un orquestador para decidir qué función invocar antes de llamar al LLM generativo.
-- Clasificación de intenciones en atención al cliente: 0,880 en clinc150 y 0,714 en banking77 con el adaptador, suficiente para separar consultas de saldo, tarjeta o reclamación y dirigirlas a colas distintas.
-- Categorización de catálogo en comercio electrónico: 0,564 en esci (0,644 en la variante 4B), aplicable a la asignación de categorías y atributos de producto en un pipeline de ingesta.
-- Revisión de contratos y pólizas largas: con 73.728 tokens de contexto y caché de prefijo de lectura única, un mismo contrato se procesa una vez y se le lanzan múltiples preguntas tipadas (por ejemplo, si una cláusula concreta es cierta o qué tipo de documento es) sin repetir la lectura completa.
-- Validación de gastos contra políticas internas: el conjunto temporal_numeric evalúa fechas y cantidades contra umbrales; el modelo obtiene 46,7 frente a 20,0 del modelo alojado de referencia, lo que lo hace apto para comprobar si un importe o una fecha incumplen una política antes de aprobar un pago.
-- Clasificación de documentos escaneados: mediante vega_vision.py puede determinar si una imagen es una factura, un recibo, un contrato u otro tipo de documento, como paso previo a su enrutado en un sistema de gestión documental.
-- Etiquetado y anotación de datos a gran escala: con 0,267 s por decisión en T4 fp16 y 22 ms por decisión en la variante 0.8B según la tabla del autor, el coste por elemento permite usarlo en procesos de anotación masiva con umbrales calibrados.
+- Enrutamiento de intenciones en atención al cliente: el modelo clasifica el mensaje del usuario entre un conjunto fijo de intenciones (`choice`) con probabilidad calibrada, permitiendo derivar al agente o flujo adecuado y escalar a un LLM mayor solo cuando la confianza es baja.
+- Clasificación de tickets y correos: asignación de categoría sobre textos largos (hilos completos de hasta 73k tokens) aprovechando la caché de prefijo para responder varias preguntas sobre el mismo documento sin releerlo.
+- Filtro previo a un LLM generativo (patrón proxy): Vega absorbe las decisiones rutinarias en unos 22 ms y deja pasar al LLM las que no superan el umbral de confianza, reduciendo coste por token en pipelines de producción.
+- Moderación y verificación de afirmaciones: uso de la salida `boolean` para estimar la probabilidad de que un enunciado cumpla una política o sea verdadero, con calibración que permite fijar umbrales operativos.
+- Extracción de señales en documentos con imágenes: clasificación de formularios, capturas o páginas escaneadas combinando el codificador visual del backbone con el motor de decisión.
+- Evaluación de riesgo y scoring: uso de la salida `score` para puntuar ítems (por ejemplo, relevancia de resultados de búsqueda o prioridad de incidencias) con distribución calibrada.
+- Automatización de decisiones en el propio proceso del desarrollador: integración embebida en la aplicación (57 MB de motor) sin depender de una API externa, útil en entornos con requisitos de privacidad o latencia estricta.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre LocalLLaMA/typed-decisions, split de test de 2.050 decisiones, ejecución propia del autor para cada checkpoint:
+Resultados declarados en la model card sobre el split de test de `LocalLLaMA/typed-decisions` (2.050 decisiones), comparando los dos tamaños del repositorio:
 
-| Metrica | Vega 0.8B | Vega 4B |
+| Metrica | 0.8B | 4B |
 |---|---|---|
-| Metrica con adaptador | 0,763 | 0,803 |
+| Accuracy con adaptador de tarea | 0,763 | 0,803 |
 | Soft accuracy | 0,680 | 0,725 |
 | Brier | 0,314 | 0,270 |
-| Error de calibracion | 0,026 | 0,019 |
+| Error de calibración | 0,026 | 0,019 |
+| Latencia por decisión | 22 ms | 28 ms |
 
-Resultados por flujo de trabajo con adaptador:
+Rendimiento por workflow (con adaptador):
 
-| Flujo | 0.8B | 4B |
+| Workflow | 0.8B | 4B |
 |---|---|---|
 | apibank | 0,895 | 0,965 |
 | when2call | 0,904 | 0,946 |
@@ -71,52 +71,47 @@ Resultados por flujo de trabajo con adaptador:
 | esci | 0,564 | 0,644 |
 | clinc150 | 0,880 | 0,867 |
 
-Cribado de phishing sobre 800 correos con reparto 50/50, comparado con Jev 1.13.0 llamado en vivo sobre los mismos elementos:
-
-| Modelo | Exactitud | Precision | Recall | Detectados |
-|---|---|---|---|---|
-| Vega 0.8B + adaptador | 75,38 | 0,837 | 0,630 | 252 / 400 |
-| Jev 1.13.0 | 61,88 | 0,961 | 0,247 | 99 / 400 |
-
-El autor reporta una diferencia de +13,50 puntos de exactitud y 2,5 veces más phishing detectado, con McNemar p = 3e-11. En JevBench v1.4.2, conjunto temporal_numeric, Vega 0.8B + adaptador obtiene 46,7 frente a 20,0 de Jev 1.13.0 (+26,7). La model card menciona un evaluador público S1MB con 137 benchmarks y 26.269 decisiones, pero la tabla correspondiente aparece truncada en la información disponible, por lo que sus resultados no se reproducen aquí. No hay cifras publicadas para MMLU, HumanEval ni GSM8K.
+La model card menciona además una comparación contra "un referente alojado" (hosted reference) ejecutada el 2026-10-11 sobre dos Tesla T4 con 3.841 decisiones por sistema, pero no se incluyen en la información disponible las cifras completas de esa comparación.
 
 ## Requisitos de hardware
 
-- Inferencia verificada en una única GPU T4 (16 GB) en fp16, extremo a extremo y ejecutable desde el navegador vía Colab.
-- Inferencia verificada en Apple M-series en fp32, con 0,28 s por decisión.
-- Latencia declarada: 0,267 s por decisión en T4 fp16 y 0,28 s en Apple M-series fp32. La tabla comparativa del autor cita además 22 ms por decisión para el 0.8B y 28 ms para el 4B, sin especificar el hardware de esa medición.
-- Estimación propia a partir del recuento de parámetros (no publicada por el autor): el backbone de 0,8B en fp16 ronda 1,6 GB y en fp32 unos 3,2 GB, a lo que se suman 57 MB de motor; el conjunto cabe con holgura en cualquier GPU de consumo con 8 GB o más, como una RTX 3060, RTX 4060 o RTX 4090.
-- Para la variante 4B, el backbone en fp16 ronda 8 GB más 124 MB de motor, por lo que requiere GPU de gama alta o cuantización no documentada en la información disponible.
-- Opciones de despliegue: la librería vegaml (carga con `vegalm.load()` para el 0.8B y `vegalm.load("4b")` para el 4B) y el cuaderno de Colab publicado. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
-- El uso intensivo de documentos largos depende de la caché de prefijo, que reduce el coste de múltiples preguntas sobre un mismo estado pero exige mantener el estado en memoria.
+- VRAM estimada: no disponible de forma explícita; el repositorio ocupa 0,2 GB y el motor entrenado pesa 57 MB (0.8B) o 124 MB (4B), a lo que se suma el backbone congelado de 0,8B o 4B parámetros.
+- GPU recomendadas: la model card valida inferencia en una sola Tesla T4 (fp16) y menciona ejecución en Apple M-series (fp32, 0,28 s por decisión).
+- GPU de consumo: el tamaño del motor y del backbone de 0,8B hace plausible su ejecución en GPUs de consumo, aunque la información disponible solo confirma T4 y Apple Silicon; no se aportan cifras para RTX 4090 u otras.
+- Opciones de despliegue: paquete propio `vegaml` (con `vega_vision.py` para imágenes) y un proxy autoalojado en `vegaml-learn`; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia: 22 ms por decisión (0.8B) y 28 ms (4B) según la model card; 0,267 s/decisión en T4 fp16 y 0,28 s en Apple M-series. Throughput no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | typed-decisions (con adaptador) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vega 0.8B public intents | 0,8B congelados + 14,3 M entrenados + 0,84 M de adaptador | 73.728 tokens | 0,763 | Apache 2.0 | Hugging Face, librería vegaml |
-| Vega 4B public intents | 4B congelados + 30,9 M entrenados + 1,43 M de adaptador | 73.728 tokens | 0,803 | Apache 2.0 | En la carpeta 4b/ del mismo repositorio |
-| Jev 1.13.0 | no disponible (modelo alojado, parametros no divulgados) | no disponible | no disponible en typed-decisions; 61,88 de exactitud en phishing y 20,0 en temporal_numeric | no disponible | Servicio alojado, invocado en vivo por el autor |
-| Qwen3.5-0.8B | 0,8B (24 capas, d=1024), 262.144 posiciones rotatorias | no disponible | no disponible (se usa congelado como backbone) | no disponible | Hugging Face |
+| Vega 0.8B (este) | 0,8B backbone congelado + 14,3M entrenados | 73.728 tokens | Decisión no autorregresiva calibrada | Apache 2.0 (pesos) | Hugging Face |
+| Vega 4B (mismo repo) | 4B backbone congelado + 30,9M entrenados | 73.728 tokens | Decisión no autorregresiva calibrada | Apache 2.0 (pesos) | Hugging Face (`4b/`) |
+| Qwen3.5-0.8B (backbone) | 0,8B | No disponible en la información | LLM generativo | No disponible en la información | Hugging Face |
+| LLM generativo alojado (referencia citada) | No disponible | No disponible | Generación autorregresiva | Propietaria | API |
 
-No se dispone de resultados comparables de otros clasificadores ligeros o modelos de intenciones en la información proporcionada.
+La información disponible no permite comparar con clasificadores dedicados de tamaño similar (por ejemplo, DeBERTa o ModernBERT) ni aporta cifras de terceros; esas comparaciones figuran como no disponibles.
 
 ## Limitaciones y advertencias
 
-- La model card no declara idiomas soportados; todas las evaluaciones publicadas están en inglés y no hay evidencia de comportamiento en castellano.
-- La ruta de visión es funcional pero el propio autor advierte que no está cubierta por las cifras de rendimiento, por lo que su fiabilidad en producción no está cuantificada.
-- No se detallan los datos de entrenamiento (composición, número de tokens, procedencia) ni el método de calibración, lo que dificulta auditar sesgos o evaluar riesgos de dominio.
-- Los resultados de calibración (error de 0,026 y 0,019) provienen de una única partición de test de 2.050 decisiones y de la ejecución del propio autor; conviene revalidarlos en el dominio objetivo antes de fijar umbrales.
-- El modelo no genera texto: solo emite decisiones tipadas. No sirve como sustituto de un LLM conversacional ni soporta tool calling generativo.
-- Las entradas que exceden el contexto se rechazan en lugar de truncarse, lo que obliga a gestionar ese error en la aplicación.
-- El modelo base subyacente (Qwen3.5-0.8B) está congelado y su licencia no se detalla en la información disponible; la licencia Apache 2.0 declarada corresponde al repositorio publicado, por lo que conviene verificar las condiciones del backbone para uso comercial.
-- El repositorio registra 0 descargas y 17 likes en el momento de la consulta, y ambas variantes comparten un mismo repositorio de 0,2 GB, dato a tener en cuenta respecto a su madurez y soporte.
-- Las comparaciones con Jev 1.13.0 proceden de ejecuciones sobre los mismos elementos sin ajuste sobre los datos de evaluación, pero el modelo de referencia está alojado y no es reproducible de forma independiente.
+- Modelo de decisión, no generativo: no produce texto libre; solo responde en los formatos `choice`, `boolean` y `score`.
+- Idiomas soportados no declarados; no se puede asumir cobertura multilingüe más allá de la del backbone.
+- Riesgo de alucinación en el sentido de calibración: aunque el error de calibración es bajo (0,026/0,019), las probabilidades no son garantías deterministas y deben validarse en el dominio de despliegue.
+- Sesgos: no se documentan análisis de sesgo en la información disponible.
+- Restricciones de licencia: los pesos y `vegaml` son Apache 2.0, pero `vegaml-learn` (aprendizaje continuo, teacher loop y proxy autoalojado) es PolyForm Noncommercial 1.0.0; su uso en empresa, producto o servicio de pago requiere licencia comercial.
+- Dependencia del backbone Qwen3.5-0.8B congelado y fijado por SHA-256; cualquier cambio de backbone implica reentrenar el motor.
+- Rechazo de entradas fuera de contexto: no hay truncamiento silencioso, pero los inputs que exceden 73.728 tokens fallan en lugar de procesarse parcialmente.
+- El rendimiento medido varía mucho por workflow (de 0,564 en esci a 0,965 en apibank con el 4B), por lo que la viabilidad depende del dominio concreto.
+- Formatos de pesos y opciones de cuantización no documentados; la integración está ligada al paquete `vegaml`.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/nandakishorm/vega-08b-public-intents
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Cuaderno de Colab: https://colab.research.google.com/drive/1ZxS_Ee4-oyfo8ePKiAgbehv5I1Rh3F7O?usp=sharing
-- Paper referenciado en las etiquetas: https://arxiv.org/abs/2507.19855
-- Referencias citadas sin enlace en la model card: conjunto de evaluación LocalLLaMA/typed-decisions, evaluador público S1MB y JevBench v1.4.2
+- Artículo: https://doi.org/10.20944/preprints202611.0781.v1
+- Plataforma y proxy: https://platform.embedding.in
+- Documentación: https://platform.embedding.in/docs
+- Sitio del autor: https://embedding.in
+- Licencia comercial: https://embedding.in/licence
+- Contacto: nandakishor@embedding.in
+- Cuaderno Colab: https://colab.research.google.com/drive/1ZxS_Ee4-oyfo8ePKiAgbehv5I1Rh3F7O?usp=sharing
+- Backbone: https://huggingface.co/Qwen/Qwen3.5-0.8B

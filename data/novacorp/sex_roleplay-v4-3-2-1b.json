@@ -55,8 +55,6 @@
     "base_model:merge:Nexesenex/Llama_3.2_1b_RandomLego_RP_R1_0.1",
     "base_model:UmbrellaInc/Prototype-Virus.FINAL-3.2-1B",
     "base_model:merge:UmbrellaInc/Prototype-Virus.FINAL-3.2-1B",
-    "base_model:bunnycore/FuseChat-3.2-1B-Creative-RP",
-    "base_model:merge:bunnycore/FuseChat-3.2-1B-Creative-RP",
     "base_model:jtatman/llama-3.2-1b-lewd-mental-occult",
     "base_model:merge:jtatman/llama-3.2-1b-lewd-mental-occult",
     "license:apache-2.0",
@@ -65,7 +63,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1285,
+  "downloads_30d": 1202,
   "trending_score": 0,
   "parameters": 1498482688,
   "parameters_human": "1.50B",

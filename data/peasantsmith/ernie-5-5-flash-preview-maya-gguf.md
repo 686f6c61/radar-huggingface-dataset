@@ -2,85 +2,89 @@
 
 ## Resumen
 
-ERNIE-5.5-Flash-Preview-Maya-GGUF es un repositorio de cuantizaciones GGUF, anunciado pero todavía sin publicar, del modelo baidu/ERNIE-5.5-Flash-Preview. Lo mantiene el usuario peasantsmith dentro del Proyecto Maya, una iniciativa que distribuye pesos cuantizados para ejecución local del modelo original de Baidu. Según la model card, el modelo base es una arquitectura Mixture of Experts de 280 000 millones de parámetros totales con 14 000 millones activos por token, una ventana de contexto de 1 millón de tokens y licencia Apache 2.0.
+ERNIE-5.5-Flash-Preview-Maya-GGUF es una coleccion de cuantizaciones experimentales en formato GGUF del modelo base baidu/ERNIE-5.5-Flash-Preview, publicadas por el usuario peasantsmith bajo el identificador de "Maya". El repositorio no contiene un modelo entrenado de forma independiente, sino una reempaquetacion del modelo original de Baidu en tres variantes de cuantizacion (Maya-XS, Maya-S y Maya-M) pensadas para un runtime denominado Maya que, segun el propio autor, no existe como programa publicado.
 
-La relevancia de este repositorio es doble: por un lado, acerca un modelo de escala frontier al ecosistema de inferencia local mediante formato GGUF; por otro, incorpora un drafter propio para decodificación especulativa, lo que teóricamente reduce la latencia manteniendo la distribución del modelo original. En el momento de la consulta no hay archivos de pesos disponibles, por lo que todas las especificaciones de cuantización y despliegue son provisionales.
+La relevancia de esta ficha es limitada y fundamentalmente documental: el autor advierte de forma explicita que los ficheros son solo experimentales, que ningun programa liberado los carga y que no han sido probados en ningun motor de inferencia. Se desconoce la arquitectura, el numero de parametros, la longitud de contexto y los datos de entrenamiento del modelo base, ya que la model card no los detalla y no se ha proporcionado informacion adicional.
 
-El repositorio está orientado a idiomas inglés y chino, con pipeline de text-generation y licencia Apache 2.0 heredada del modelo base. La información pública es escasa: no se han publicado benchmarks, configuraciones de cuantización concretas ni requisitos de hardware específicos.
+El interes tecnico se reduce a la tabla de calidad relativa que ofrece el autor: frente al modelo original, la variante Maya-XS conserva un 87,6 % de coincidencia en el siguiente token, Maya-S un 91,4 % y Maya-M un 96,0 %. Estas cifras miden fidelidad de cuantizacion, no calidad absoluta del modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture of Experts (MoE), segun la model card del repositorio |
-| Parametros totales | 280 B (280 000 millones) |
-| Parametros activos | 14 B por token |
-| Longitud de contexto | 1 000 000 tokens |
-| Tipos de cuantizacion | GGUF en "tamanos habituales de Maya"; tamanos concretos no disponibles |
-| Idiomas soportados | Ingles (en), chino (zh) |
+| Arquitectura | no disponible |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | IQ1_S (Maya-XS), IQ2_XXS (Maya-S), IQ3_S (Maya-M) |
+| Idiomas soportados | en, zh |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (planificado); pesos originales del modelo base no disponibles en este repositorio |
+| Formato de pesos | GGUF (multifichoro, 2-3 ficheros por variante) mas un drafter separado de 11 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con arquitectura Mixture of Experts, con 280 000 millones de parametros totales y 14 000 millones activos por token, lo que situa la relacion de activacion en torno al 5 %. Dispone de una ventana de contexto de 1 millon de tokens. La model card del repositorio no detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras variantes de alineacion.
+No se dispone de informacion sobre la arquitectura del modelo base baidu/ERNIE-5.5-Flash-Preview: la model card del repositorio cuantizado no describe si se trata de un transformer denso, un MoE o una arquitectura hibrida, ni detalla el numero de tokens de entrenamiento, la composicion del dataset o las fases de alineacion (RLHF, DPO u otras).
 
-La innovacion tecnica destacada en este repositorio es la inclusion de un drafter propio para decodificacion especulativa, descrito como una forma de obtener respuestas mas rapidas "que siguen siendo del propio modelo". No se especifican la arquitectura del drafter, su tamano ni la tasa de aceptacion esperada. Las cuantizaciones GGUF se calibraran sobre el formato de chat propio del modelo, segun la model card.
+Lo unico documentado es el proceso de cuantizacion. El autor empaqueta el modelo en tres niveles de compresion con perdida creciente y conserva sin modificar el "draft head" del modelo original (directorio `drafter/`, 11 GB), lo que sugiere que el modelo base incorpora decodificacion especulativa con un cabezal de borrador propio. Se incluyen sumas de verificacion SHA256 para cada variante (`SHA256SUMS`, `SHA256SUMS.Maya-S`, `SHA256SUMS.Maya-M`).
 
 ## Capacidades
 
-- Generacion de texto en ingles y chino.
-- Razonamiento y conversacion multi-turno con contexto de hasta 1 millon de tokens.
-- Decodificacion especulativa mediante drafter propio, orientada a reducir latencia.
-- Ejecucion local en GPUs propias a traves de formato GGUF.
-- Soporte de tool calling, function calling, agentes o modos de razonamiento explicito: no disponible en la informacion proporcionada.
-- Capacidades multimodales (vision, audio): no disponible en la informacion proporcionada.
+- Generacion de texto en ingles y chino, segun los metadatos del repositorio (`pipeline_tag: text-generation`).
+- Decodificacion especulativa potencial: el repositorio incluye el cabezal de borrador original del modelo, aunque no hay runtime publicado que lo utilice.
+- No se documentan capacidades de tool calling, razonamiento multi-paso, vision, audio ni modo de pensamiento.
+- No se documenta soporte de agentes ni function calling.
+- Capacidades multilingues limitadas a los idiomas declarados (en, zh); no hay evidencia de soporte de castellano.
 
 ## Casos de uso
 
-- Analisis de documentos extensos: con 1 millon de tokens de contexto, el modelo puede procesar libros tecnicos, expedientes completos o bases de codigo sin fragmentacion, algo relevante para auditoria legal o revision de contratos.
-- Asistentes de codigo en local: el formato GGUF y el drafter permiten desplegar un modelo de gran escala en infraestructura propia, util para equipos que no pueden enviar codigo a APIs externas.
-- Generacion aumentada por recuperacion (RAG) sobre corpus masivos: la ventana de 1M tokens reduce la necesidad de pipelines de chunking agresivos en dominios con documentos muy largos.
-- Traduccion y atencion al cliente bilingue ingles-chino: los dos idiomas declarados cubren el caso de uso principal de Baidu y de mercados con operaciones en ambos idiomas.
-- Investigacion sobre decodificacion especulativa: el drafter incluido sirve como banco de pruebas para medir tasas de aceptacion en modelos MoE de gran escala.
-- Despliegue en clústeres con GPUs de alta gama: un MoE de 280B con 14B activos permite servir el modelo con coste computacional por token similar a un modelo denso de 14B, si bien requiere memoria para los 280B totales.
-- Evaluacion comparativa de cuantizaciones: util para estudiar la perdida de calidad de GGUF en modelos MoE con muchos expertos.
+- Investigacion sobre tecnicas de cuantizacion extrema: las tres variantes (IQ1_S, IQ2_XXS, IQ3_S) permiten estudiar la degradacion de la fidelidad de token siguiente en rangos de 1 a 3 bits, con metricas reportadas del 87,6 %, 91,4 % y 96,0 %.
+- Analisis de empaquetado multifichoro en GGUF: util para quien investigue como dividir pesos cuantizados en 2-3 ficheros y verificar integridad mediante sumas SHA256.
+- Estudio de cabezales de borrador para decodificacion especulativa: el directorio `drafter/` de 11 GB permite analizar la estructura de un draft head asociado a un modelo grande.
+- Referencia para desarrolladores de runtimes de inferencia: sirve como caso de prueba de compatibilidad de formato, aunque el autor advierte que ningun motor lo carga actualmente.
+- Documentacion de advertencias de publicacion: ejemplo de model card que declara explicitamente el caracter no utilizable de los artefactos, util en formacion sobre buenas practicas de publicacion de modelos.
+- Archivo de cuantizaciones de modelos chinos de gran tamano: permite conservar una instantanea de las variantes comprimidas de ERNIE-5.5-Flash-Preview para comparaciones futuras, siempre con la cautela de que no son ejecutables con software publicado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye metricas de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos, y no se ha verificado el rendimiento del drafter ni de las cuantizaciones planificadas.
+| Variante | Ficheros | Tamano total | Coincidencia de siguiente token vs. original |
+|---|---|---:|---:|
+| Maya-XS (IQ1_S) | 2 | 65,3 GB | 87,6 % |
+| Maya-S (IQ2_XXS) | 2 | 80,9 GB | 91,4 % |
+| Maya-M (IQ3_S) | 3 | 127,4 GB | 96,0 % |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Las cifras anteriores miden fidelidad de cuantizacion, no capacidad del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Como referencia estructural, un modelo de 280B parametros en FP16 requiere aproximadamente 560 GB de VRAM solo para pesos; en cuantizacion de 4 bits se situaria en torno a 140-160 GB, aunque estas cifras son estimaciones generales y no datos publicados para este repositorio.
-- GPU recomendadas: no disponible en la informacion proporcionada. Por el volumen de parametros, se anticipa la necesidad de GPUs de centro de datos (A100 80 GB, H100 80 GB) en configuraciones multi-GPU.
-- Compatibilidad con GPU de consumo (RTX 4090, etc.): no confirmada; el tamano total del modelo hace improbable su ajuste en una unica GPU de consumo incluso en cuantizaciones agresivas.
-- Opciones de despliegue: el repositorio apunta al runtime propio de Project Maya; compatibilidad con llama.cpp, Ollama, vLLM o TGI no disponible.
+- VRAM estimada para inferencia: al menos 65,3 GB para Maya-XS, 80,9 GB para Maya-S y 127,4 GB para Maya-M, mas el espacio del drafter (11 GB) si se usa decodificacion especulativa.
+- GPU recomendadas: ninguna verificada; por tamano, las variantes requeririan GPU de 80 GB (A100, H100) en configuracion single-GPU para las dos primeras y multiples GPU para Maya-M.
+- No cabe en GPU de consumo (RTX 4090, 24 GB) ni en configuraciones de 48 GB sin offloading a CPU/RAM, lo que degradaria gravemente el rendimiento.
+- Opciones de despliegue: el autor declara que ningun programa liberado carga estos GGUFs y que no han sido probados en ningun motor; no se puede confirmar compatibilidad con llama.cpp, Ollama, vLLM ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ERNIE-5.5-Flash-Preview (base) | 280 B | 14 B | 1M tokens | Apache 2.0 | Pesos originales en baidu/ERNIE-5.5-Flash-Preview; detalles de cuantizacion no disponibles |
-| ERNIE-5.5-Flash-Preview-Maya-GGUF | 280 B | 14 B | 1M tokens | Apache 2.0 | Anunciado, sin archivos publicados |
-| Alternativas MoE de escala comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
+| ERNIE-5.5-Flash-Preview-Maya-GGUF | no disponible | no disponible | Apache 2.0 | GGUF experimental, sin runtime | Cuantizaciones IQ1-IQ3 de un modelo base no documentado |
+| baidu/ERNIE-5.5-Flash-Preview | no disponible | no disponible | no disponible en la informacion | Modelo original en Hugging Face | Base de las cuantizaciones; sin datos tecnicos en la informacion proporcionada |
+| Otras cuantizaciones GGUF de modelos chinos de gran tamano | variable | variable | variable | Ejecutables en llama.cpp/Ollama | No se dispone de datos concretos para una comparacion cifrada |
 
-No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con otros modelos de la misma categoria.
+No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- El repositorio no contiene archivos de pesos en el momento de la consulta; la model card indica explicitamente "Coming soon".
-- No hay benchmarks publicados, por lo que no puede evaluarse la calidad del modelo ni la perdida introducida por las cuantizaciones.
-- Solo se declaran ingles y chino; el rendimiento en castellano no esta documentado.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; es un riesgo inherente a los modelos generativos de gran escala.
-- Sesgos conocidos: no documentados en la model card.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base y de los pesos originales de Baidu antes de un despliegue en produccion.
-- El drafter y las cuantizaciones se encuentran en desarrollo; su comportamiento final puede diferir de lo anunciado.
-- El modelo requiere infraestructura de memoria muy superior a la de un modelo denso de 14B, pese a su bajo numero de parametros activos.
+- El autor declara explicitamente: "Experimental only. Do not use these files." No deben emplearse en produccion.
+- Ningun programa liberado carga estos GGUFs; no han sido probados en ningun motor de inferencia.
+- Los ficheros pueden cambiar o eliminarse en cualquier momento sin aviso.
+- La cuantizacion introduce perdida: incluso Maya-M solo conserva el 96,0 % de coincidencia de siguiente token; Maya-XS baja al 87,6 %.
+- Idiomas limitados a ingles y chino; sin soporte documentado de castellano.
+- Riesgo de alucinacion y sesgos: no evaluado ni documentado por el autor.
+- La licencia Apache 2.0 se hereda del modelo base, pero la falta de documentacion sobre este impide verificar restricciones adicionales de uso comercial.
+- El repositorio ocupa 284,6 GB, lo que exige almacenamiento considerable incluso para pruebas.
+- No hay informacion sobre la arquitectura, el contexto o los datos de entrenamiento del modelo base, lo que impide evaluar su idoneidad para tareas concretas.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/peasantsmith/ERNIE-5.5-Flash-Preview-Maya-GGUF
-- Modelo base en Hugging Face: https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview
-- Project Maya en GitHub: https://github.com/mw00/project-maya
+- Modelo base: https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview

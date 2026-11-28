@@ -5,7 +5,7 @@
   "author": "Advantech-EIOT",
   "url": "https://huggingface.co/Advantech-EIOT/AMD_ssd-mobilenet-v2_300x300_FP32",
   "created_at": "2026-11-23T02:22:19.000Z",
-  "updated_at": "2026-11-24T02:09:55.000Z",
+  "updated_at": "2026-11-27T06:54:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

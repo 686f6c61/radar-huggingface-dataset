@@ -50,16 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "purush0th/personaos-qwen3-4b-instruct-GGUF · Hugging Face",
-      "url": "https://huggingface.co/purush0th/personaos-qwen3-4b-instruct-GGUF",
-      "snippet": "Instructions to use purush0th/personaos-qwen3-4b-instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    },
-    {
-      "title": "purush0th/personaos-qwen3-4b-instruct-GGUF at main",
-      "url": "https://huggingface.co/purush0th/personaos-qwen3-4b-instruct-GGUF/tree/main",
-      "snippet": "Instructions to use purush0th/personaos-qwen3-4b-instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
-    }
-  ]
+  "sources": []
 }

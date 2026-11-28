@@ -43,6 +43,13 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "canonical held-out gate",
+      "dataset": "SZL canonical held-out gate (n=5)",
+      "metric": "canonical held-out gate pass rate (1/5)",
+      "value": 0.2
+    }
+  ],
   "sources": []
 }

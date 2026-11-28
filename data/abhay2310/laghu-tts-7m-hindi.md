@@ -2,105 +2,103 @@
 
 ## Resumen
 
-Laghu TTS 7M Hindi es un modelo de síntesis de voz (text-to-speech) en hindi, desarrollado por Abhay2310, que parte del modelo inglés Pocket TTS de Kyutai (7M parámetros) y lo adapta al hindi con un nuevo tokenizador en devanagari y un entrenamiento sobre aproximadamente 114 horas de audio en hindi. Su nombre, "laghu" (लघु, "pequeño"), resume su propuesta: un modelo de apenas 6,86 millones de parámetros que habla hindi y que se ejecuta únicamente con ONNX Runtime sobre CPU, sin PyTorch ni GPU.
+Laghu TTS 7M Hindi es un modelo de síntesis de voz (text-to-speech) en hindi, de tamano muy reducido, desarrollado por Abhay2310 y publicado en Hugging Face. Se trata de un ajuste fino (finetune) del modelo inglés Pocket TTS de Kyutai, al que se le ha incorporado un tokenizador nuevo para devanagari y que ha sido entrenado con aproximadamente 114 horas de habla en hindi. Su nombre, "Laghu" (लघु, "pequeno"), resume su propuesta: primar velocidad y tamano sobre cualquier otra consideracion.
 
-El objetivo es la velocidad y el tamaño por encima de todo. Según la model card, en pruebas con dos núcleos de CPU devuelve el primer fragmento de audio en 26 ms, frente a los 454 ms del siguiente modelo abierto de hindi más rápido con el que se compara, y el primer sonido audible llega alrededor de los 200 ms (frente a 608 ms). Además, permite clonar una voz a partir de unos pocos segundos de audio.
+El modelo cuenta con 6,86 millones de parametros dedicados a la síntesis y se distribuye exclusivamente en formato ONNX, de modo que puede ejecutarse en CPU con ONNX Runtime sin necesidad de PyTorch ni de GPU. Segun la model card, en pruebas con dos nucleos de CPU devuelve el primer fragmento de audio en 26 ms, frente a los 454 ms del siguiente modelo abierto en hindi con el que se compara, y el primer sonido audible llega alrededor de los 200 ms. Ademas, permite clonar una voz a partir de unos segundos de audio.
 
-Es relevante porque demuestra que un TTS de calidad razonable para un idioma concreto puede desplegarse en dispositivos de gama baja, en el navegador o en servidores sin acelerador, con un consumo de memoria mínimo (unos 31 MB de ficheros de modelo para sintetizar y 39 MB adicionales para clonar). La inteligibilidad, medida con reconocedores automáticos, es comparable a la de MMS-TTS de Meta y a grabaciones reales de FLEURS.
+Su relevancia actual radica en que abre la síntesis de voz en hindi a entornos con recursos muy limitados (dispositivos empotrados, navegadores, moviles de gama baja o servidores sin acelerador), un escenario donde la mayoria de los modelos TTS de calidad requieren GPU. La version cuantizada a int8 ocupa solo 8,8 MB para la parte de síntesis, lo que facilita su integracion en aplicaciones locales y en streaming de baja latencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer autorregresivo con cabeza de flujo (flow head) sobre códecs de Mimi; decodificador Mimi para audio a 24 kHz |
-| Parametros totales | 6,86 millones (modelo de habla); ficheros ONNX: 16,3 MB (LM + head) + 11,2 MB (decoder) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (ventana de prompt de voz de hasta 5 segundos en entrenamiento) |
-| Tipos de cuantizacion | no disponible (pesos distribuidos en ONNX; no se documentan variantes cuantizadas) |
-| Idiomas soportados | hindi (hi), en escritura devanagari |
+| Arquitectura | Transformer autorregresivo con cabeza de flujo (flow head) y decodificador Mimi (Kyutai) |
+| Parametros totales | 6,86 millones (parte de síntesis) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (ventana de prompt de voz de hasta 5 s durante el entrenamiento) |
+| Tipos de cuantizacion | float32 (por defecto) e int8 (`model_int8/`) |
+| Idiomas soportados | hindi (hi) |
 | Licencia | CC-BY-4.0 |
-| Formato de pesos | ONNX (`.onnx`), tablas en `.npz`, tokenizador SentencePiece (`.model`) |
-| Frecuencia de muestreo de salida | 24 kHz |
-| Voces integradas | `female` y `male` (dos hablantes de Rasa) |
-| Tamaño del repositorio | 0,1 GB |
+| Formato de pesos | ONNX (`lm_step.onnx`, `head.onnx`, `decoder.onnx`, `encoder.onnx`) + `tables.npz`, `meta.json`, `tokenizer.model` |
 
 ## Arquitectura y entrenamiento
 
-Laghu es un fine-tune de Kyutai Pocket TTS (modelo inglés de 7M), al que se le sustituye el tokenizador por uno nuevo específico para devanagari. La arquitectura conserva el esquema de Pocket TTS: un transformer autorregresivo que genera códigos de audio y una cabeza de flujo, seguidos del decodificador Mimi de Kyutai (sin cambios) que convierte los códigos en forma de onda a 24 kHz. El modelo de habla ocupa 16,3 MB en ONNX (`lm_step.onnx` y `head.onnx`) y el decodificador 11,2 MB (`decoder.onnx`).
+El modelo sigue la arquitectura de Pocket TTS de Kyutai: un transformer autorregresivo que genera codigos de audio a partir de texto, una cabeza de flujo que modela la distribucion de esos codigos y un decodificador Mimi (sin modificar respecto al original) que convierte los codigos en forma de onda a 24 kHz. La parte de síntesis se distribuye en dos ficheros ONNX (`lm_step.onnx` y `head.onnx`, 16,3 MB en total) y el decodificador en `decoder.onnx` (11,2 MB). El tokenizador es un SentencePiece nuevo para devanagari (`tokenizer.model`), y las voces integradas se almacenan como vectores `.npy` de dos hablantes del corpus Rasa.
 
-El entrenamiento se realizó sobre aproximadamente 114 horas de voz en hindi, usando los conjuntos de datos ai4bharat/Rasa y ai4bharat/indicvoices_r. La clonación de voz reutiliza el codificador Mimi de Kyutai, exportado a `model/encoder.onnx` (39,1 MB), y una proyección de voz propia; según la model card, las voces generadas por esta vía coinciden con la referencia en PyTorch con una diferencia absoluta máxima de 5×10⁻⁶. El frontend de texto (conversión de dígitos, horas, fechas, dinero, porcentajes y abreviaturas a palabras) es el mismo código que se usó para limpiar el texto de entrenamiento, lo que reduce la discrepancia entre entrenamiento e inferencia. No se documentan detalles sobre RLHF, DPO ni composición exacta del dataset más allá de las horas y las fuentes.
+El entrenamiento consistio en un ajuste fino sobre el modelo ingles de 7M de parametros usando aproximadamente 114 horas de habla en hindi, con los datasets `ai4bharat/Rasa` e `ai4bharat/indicvoices_r`. La model card no detalla el numero exacto de tokens de texto ni si se aplicaron etapas de RLHF o DPO. Una innovacion destacable es que la clonacion de voz tambien se ejecuta en ONNX Runtime: utiliza el encoder Mimi de Kyutai exportado a `encoder.onnx` (39,1 MB) y, segun el autor, las voces generadas coinciden con la referencia en PyTorch con una diferencia absoluta maxima de 5×10⁻⁶. El modelo admite guidance (clasifier-free guidance) configurable mediante `--cfg`, cuyo valor 1.0 lo desactiva a cambio de menor precision.
 
 ## Capacidades
 
-- Síntesis de voz en hindi (devanagari) con salida en streaming: cada fragmento es un array NumPy float32 a 24 kHz reproducible a medida que llega.
-- Dos voces integradas (`female` y `male`) y generación de variantes de la misma frase mediante semilla (`--seed N`).
-- Clonación de voz a partir de una grabación de pocos segundos (WAV, FLAC, OGG o MP3, cualquier frecuencia de muestreo); el modelo se entrenó con prompts de hasta 5 segundos.
-- Normalización de texto en hindi: lectura de dígitos, horas ("10:30 बजे" → "साढ़े दस बजे"), fechas, importes ("₹450" → "चार सौ पचास रुपये"), porcentajes y abreviaturas comunes.
-- Ejecución en CPU con ONNX Runtime, sin PyTorch ni GPU; también la clonación.
-- Control de guidance mediante CFG (`--cfg 1.0` desactiva el guidance: más rápido, menos preciso).
-- No se documentan capacidades de tool calling, razonamiento multi-paso, visión ni audio de entrada más allá del prompt de voz para clonación.
+- Síntesis de voz en hindi (devanagari) con salida de audio a 24 kHz en float32.
+- Streaming de audio: los fragmentos se generan y reproducen a medida que llegan, sin esperar a la frase completa.
+- Normalizacion de texto previa a la síntesis: convierte digitos, horas, fechas, importes monetarios, porcentajes y abreviaturas comunes a palabras (por ejemplo, "10:30 बजे" pasa a "साढ़े दस बजे" y "₹450" a "चार सौ पचास रुपये").
+- Clonacion de voz a partir de una grabacion de unos segundos (WAV, FLAC, OGG o MP3, a cualquier frecuencia de muestreo), con ventana configurable (por defecto los primeros 8 s, recortada en la ultima pausa).
+- Dos voces integradas: `female` y `male`.
+- Variaciones de rendition mediante semilla (`--seed N`) para obtener interpretaciones distintas del mismo texto.
+- Ejecucion en CPU sin PyTorch ni GPU, unicamente con ONNX Runtime.
+- No dispone de tool calling, function calling, capacidades de agente, vision ni audio de entrada mas alla de la clonacion.
 
 ## Casos de uso
 
-- Lectura por voz en dispositivos de gama baja: el modelo cabe en unos 31 MB y corre en CPU con ONNX Runtime, por lo que puede integrarse en aplicaciones de escritorio o sistemas embebidos con Linux y dos núcleos para leer texto en hindi sin acelerador.
-- Asistentes de voz con baja latencia: con 26 ms hasta el primer fragmento y unos 200 ms hasta el primer sonido audible, es adecuado para respuestas habladas en conversaciones interactivas donde la latencia percibida importa.
-- Accesibilidad para personas con discapacidad visual: lectura de documentos, noticias o interfaces en hindi en tiempo real, con streaming que permite empezar a reproducir antes de generar la frase completa.
-- Audio para aplicaciones de noticias o contenido: generación de versiones habladas de artículos con las dos voces integradas y variantes de entonación mediante semilla, sin coste de GPU.
-- Clonación de voz para personalización: un usuario puede grabar unos segundos de su voz y generar audios con ella (por ejemplo, para locuciones personales o audiolibros), siempre con consentimiento explícito del hablante.
-- Pruebas y prototipado de pipelines TTS: al ser un modelo pequeño y con licencia CC-BY-4.0, sirve para validar arquitecturas de streaming, frontends de texto en hindi o integraciones ONNX antes de pasar a modelos mayores.
-- Sistemas de anuncios y avisos automatizados: lectura de horas, precios y cantidades ya resuelta por el frontend de texto, útil en transporte, comercio o domótica que anuncien información numérica en hindi.
+- Atencion al cliente por voz en hindi: el modelo puede sintetizar respuestas de un asistente telefonico o de un chatbot en tiempo real gracias a su latencia de primer fragmento de 26 ms y a su ejecucion en CPU, lo que abarata el despliegue en centros de contacto con muchos canales concurrentes.
+- Lectura de notificaciones y contenidos en aplicaciones moviles: al ocupar 8,8 MB en int8 y no requerir GPU, puede embeberse en una app Android o iOS para leer en voz alta noticias, mensajes o articulos, incluso sin conexion.
+- Accesibilidad para personas con discapacidad visual: integracion en lectores de pantalla o dispositivos de asistencia que funcionan con hardware modesto, donde un TTS basado en GPU resultaria inviable.
+- Sistemas de megafonia y avisos automatizados: generacion de anuncios en hindi (horarios, precios, incidencias) en estaciones, aeropuertos o comercios, con normalizacion automatica de horas e importes monetarios.
+- Clonacion de voz para audiolibros y contenido editorial: a partir de unos segundos de grabacion del locutor, se puede generar un audiolibro completo en hindi manteniendo el timbre de la voz, con la salvedad de obtener el consentimiento explicito del propietario.
+- Asistentes de voz para dispositivos IoT y empotrados: altavoces inteligentes, electrodomesticos o terminales de bajo consumo que necesitan una voz sintetica local sin depender de la nube.
+- Prototipado rapido de interfaces de voz: al instalarse con `pip install -r requirements.txt` y ejecutarse con un script (`speak.py`), permite validar flujos de voz en hindi en minutos dentro de un pipeline de desarrollo.
 
 ## Benchmarks y rendimiento
 
-La model card describe una evaluación con protocolo preinscrito (`evaluation/PROTOCOL.md`, enmiendas 11 a 13) sobre 100 frases del split de test de FLEURS Hindi (`hi_in`), con la misma entrada de texto para todos los sistemas. Los resultados de inteligibilidad se miden con reconocedores automáticos (CER/WER) y se comparan con MMS-TTS Hindi, Piper, indic-tiny-tts-hindi y grabaciones reales de FLEURS. La información proporcionada no incluye la tabla numérica de CER/WER ni los valores de latencia del resto de sistemas más allá de los citados en el resumen (26 ms frente a 454 ms hasta el primer fragmento; 200 ms frente a 608 ms hasta el primer sonido). No se han publicado en la información disponible los valores completos de los benchmarks; los transcriptos y tiempos están en `evaluation/results/` del repositorio.
+La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.), ya que no aplican a un modelo TTS. Los datos de rendimiento disponibles son de latencia e inteligibilidad:
 
-| Metrica | Laghu TTS 7M Hindi | Referencia citada |
+| Metrica | Laghu TTS 7M Hindi | Siguiente modelo abierto en hindi comparado |
 |---|---|---|
-| Primer fragmento de audio (2 núcleos CPU) | 26 ms | 454 ms (siguiente modelo abierto de hindi más rápido comparado) |
+| Primer fragmento de audio (2 nucleos de CPU) | 26 ms | 454 ms |
 | Primer sonido audible | ~200 ms | 608 ms |
-| Inteligibilidad (CER/WER) | comparable a MMS-TTS y a grabaciones reales de FLEURS (sin cifras en la información disponible) | no disponible |
+| Inteligibilidad (reconocedores) | comparable a MMS-TTS y a grabaciones reales | no disponible |
+| Tamano de la parte de síntesis (float32) | 31 MB | no disponible |
+| Tamano de la parte de síntesis (int8) | 8,8 MB | no disponible |
+
+El autor indica que la version int8 no presenta cambios medibles en inteligibilidad ni en velocidad respecto a la float32. No se han publicado resultados de benchmarks en la informacion disponible mas alla de estos datos.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; el modelo corre en CPU con ONNX Runtime.
-- Memoria en disco: unos 31 MB de ficheros de modelo para sintetizar; 39 MB adicionales si se usa clonación de voz (`encoder.onnx`).
-- CPU: la model card cita pruebas con dos núcleos; el runtime usa un hilo para el transformer y otro para el decodificador.
-- GPU: no necesaria; no se documentan requisitos ni aceleraciones por GPU (A100, H100, RTX 4090, etc.).
-- Cabe en cualquier equipo de consumo, incluidos sistemas embebidos y navegadores con ONNX Runtime, dado el tamaño de los pesos.
-- Despliegue: ONNX Runtime con Python (numpy, onnxruntime, sentencepiece, soundfile; scipy para clonación). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
-- Latencia: 26 ms hasta el primer fragmento y ~200 ms hasta el primer sonido audible en dos núcleos de CPU; el throughput no se especifica en la información disponible.
+- Inferencia en CPU con ONNX Runtime, sin necesidad de GPU ni de PyTorch.
+- VRAM: no requiere VRAM; el modelo se ejecuta en memoria RAM. La parte de síntesis ocupa 31 MB en float32 y 8,8 MB en int8; la clonacion anade 39,1 MB (float32) o 10,5 MB (int8) para el encoder.
+- GPU recomendadas: no aplica; el modelo esta disenado para CPU. En la model card se mencionan pruebas con dos nucleos de CPU.
+- Cabe en cualquier GPU de consumo, pero no es su objetivo; su ventaja es funcionar sin ella.
+- Opciones de despliegue: ONNX Runtime (libreria `onnxruntime`), con scripts `speak.py` y `clone.py`; el runtime propio `runtime_onnx.py` expone `OnnxTTS` y `generate_audio_stream` para streaming en Python.
+- Latencia y throughput: primer fragmento en 26 ms y primer sonido audible en ~200 ms con dos nucleos de CPU, segun el autor. El throughput completo no se detalla en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Contexto / prompt | Licencia | Notas |
+| Modelo | Parametros | Contexto / prompt | Idiomas | Licencia | Ejecucion |
 |---|---|---|---|---|---|
-| Laghu TTS 7M Hindi | 6,86 M | hindi | prompt de voz de hasta 5 s | CC-BY-4.0 | ONNX, CPU, streaming, clonación |
-| MMS-TTS Hindi (facebook/mms-tts-hin) | no disponible en la información | hindi | no disponible | no disponible en la información | una sola voz; comparado en la evaluación |
-| Piper (pratham, priyamvada, rohan) | no disponible en la información | hindi | no disponible | no disponible en la información | tres voces; comparado en la evaluación |
-| indic-tiny-tts-hindi (sulabhkatiyar) | no disponible en la información | hindi | no disponible | no disponible en la información | dos voces; comparado en la evaluación |
+| Laghu TTS 7M Hindi | 6,86 M | prompt de voz hasta 5 s | hindi | CC-BY-4.0 | CPU, ONNX Runtime |
+| Meta MMS-TTS | no disponible en la informacion | no disponible | multilingue (incluye hindi) | no disponible en la informacion | requiere framework de deep learning |
+| kyutai/pocket-tts (modelo base) | 7 M | no disponible | ingles | no disponible en la informacion | ONNX / CPU |
+| Modelo abierto en hindi comparado en la model card | no disponible | no disponible | hindi | no disponible | no disponible |
 
-La información disponible no incluye los parámetros, contextos ni licencias de los modelos comparados; solo se documenta que forman parte del protocolo de evaluación junto con las grabaciones reales de FLEURS.
+La comparativa se limita a los datos citados en la model card: el autor situa a Laghu TTS como mas rapido que el siguiente modelo abierto en hindi (26 ms frente a 454 ms hasta el primer fragmento) y con inteligibilidad comparable a MMS-TTS. No se dispone de cifras de parametros, contexto ni licencia de los alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo soporta hindi en devanagari; no se documentan otros idiomas ni transliteraciones.
-- El prompt de voz para clonación está limitado a unos 5 segundos de entrenamiento; grabaciones más largas se recortan por defecto a los primeros 8 segundos y se cortan en la última pausa.
-- Solo hay dos voces integradas (`female` y `male`); la variedad de voces depende de la clonación.
-- Riesgo de alucinación o pronunciación incorrecta en texto fuera de dominio, especialmente en números, abreviaturas o nombres propios no cubiertos por el frontend.
-- Algunos terminales corrompen el hindi escrito en la línea de comandos; se recomienda usar `--text-file` con UTF-8.
-- La clonación de voz exige permiso explícito del propietario de la voz; la model card incluye una sección de uso responsable.
-- Licencia CC-BY-4.0: permite uso comercial con atribución, pero no se documentan cláusulas adicionales sobre el uso de voces clonadas ni sobre los datos de entrenamiento (Rasa e indicvoices_r).
-- No se documentan sesgos específicos ni evaluaciones de robustez más allá de la inteligibilidad medida con reconocedores automáticos.
-- El rendimiento se midió en dos núcleos de CPU; en hardware muy limitado o con otras cargas la latencia puede variar.
+- Solo soporta hindi; no es multilingue y no debe esperarse calidad en otras lenguas.
+- El modelo esta optimizado para velocidad y tamano, no para maxima naturalidad; el autor recomienda consultar la seccion de evaluacion y limitaciones de la model card para valorar la calidad.
+- Riesgo de alucinacion o pronunciacion incorrecta en textos con terminologia tecnica, nombres propios o cifras no cubiertas por la normalizacion.
+- La clonacion de voz exige el consentimiento explicito del propietario de la voz; un uso indebido puede vulnerar derechos de imagen y privacidad.
+- La ventana de prompt de voz durante el entrenamiento es de hasta 5 segundos; grabaciones mas largas se recortan por defecto a los primeros 8 segundos.
+- Algunos terminales corrompen el hindi escrito en la linea de comandos; se recomienda usar `--text-file` con un fichero UTF-8.
+- Licencia CC-BY-4.0: permite uso comercial con atribucion; es necesario citar al autor y respetar los terminos de la licencia.
+- No dispone de tool calling, agentes ni capacidades multimodales de entrada.
+- El modelo base es un ajuste fino de kyutai/pocket-tts; conviene revisar las condiciones del modelo original en caso de redistribucion.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Abhay2310/laghu-tts-7m-hindi
-- Modelo base: https://huggingface.co/kyutai/pocket-tts
-- Repositorio de Pocket TTS: https://github.com/kyutai-labs/pocket-tts
-- MMS-TTS Hindi: https://huggingface.co/facebook/mms-tts-hin
-- Piper: https://github.com/OHF-Voice/piper1-gpl
-- indic-tiny-tts-hindi: https://huggingface.co/sulabhkatiyar/indic-tiny-tts-hindi
-- Dataset Rasa: https://huggingface.co/datasets/ai4bharat/Rasa
-- Dataset IndicVoices-R: https://huggingface.co/datasets/ai4bharat/indicvoices_r
-- Modelo relacionado del mismo autor: https://huggingface.co/Abhay2310/hindi-tts-exp-v1
+- Repositorio de Pocket TTS (Kyutai): https://github.com/kyutai-labs/pocket-tts
+- Dataset Rasa (AI4Bharat): https://huggingface.co/datasets/ai4bharat/Rasa
+- Dataset IndicVoices-R (AI4Bharat): https://huggingface.co/datasets/ai4bharat/indicvoices_r
+- Papers citados en la model card (identificadores arXiv): 2607.18662, 2509.06926, 2410.00037, 2409.05356, 2205.12446, 2111.03945, 2203.16512, 2305.13516
+- Muestras de audio: https://huggingface.co/Abhay2310/laghu-tts-7m-hindi/resolve/main/samples/female_1.wav (y equivalentes `male_1.wav`, `female_2.wav`, `male_2.wav`, `female_3.wav`, `male_3.wav`)

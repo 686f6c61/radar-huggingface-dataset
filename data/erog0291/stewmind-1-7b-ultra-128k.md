@@ -2,53 +2,52 @@
 
 ## Resumen
 
-StewMind 1.7B Ultra 128K es un ajuste fino del modelo base Qwen/Qwen3-1.7B publicado por el usuario Erog0291 en Hugging Face. El autor ha fusionado un adaptador LoRA denominado MUTYINT directamente en los pesos del modelo mediante operaciones tensoriales, y posteriormente ha aplicado un escalado YaRN x4 sobre el rope, extendiendo la longitud de contexto nominal de 40.960 a 131.072 tokens. El resultado es un checkpoint que se carga sin necesidad de PEFT ni de adaptadores externos.
+StewMind 1.7B ULTRA 128K es un ajuste fino del modelo Qwen3-1.7B de Alibaba, desarrollado por el usuario Erog0291. El modelo parte de los pesos base de Qwen3-1.7B, les fusiona un adaptador LoRA denominado MUTYINT mediante aritmética directa de tensores y, a continuación, aplica un escalado de RoPE con YaRN de factor x4 para extender la longitud de contexto de 40.960 a 131.072 tokens. El resultado se distribuye en formato safetensors sin necesidad de cargar PEFT por separado.
 
-El modelo se distribuye bajo licencia Apache 2.0 y está orientado a tareas de recuperación de información en contextos largos, con soporte declarado para inglés, hausa, igbo, yoruba y pidgin nigeriano. Se trata de un modelo de 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), con pesos en formato safetensors y un repositorio de 3,5 GB.
+El interés del modelo reside en su propuesta de ventana de contexto larga sobre una arquitectura pequeña (1.720.574.976 parámetros), lo que teóricamente permitiría procesar documentos extensos en hardware de consumo. Los idiomas declarados son inglés, hausa, igbo, yoruba y pidgin nigeriano, lo que sugiere un enfoque hacia el multilingüismo africano junto con el inglés.
 
-La relevancia de esta ficha es limitada pero concreta: es un ejemplo de extensión de contexto mediante YaRN sobre un modelo pequeño, lo que permite experimentar con ventanas de 128K tokens en hardware de consumo. No obstante, la model card no aporta resultados de benchmarks de calidad ni evidencia de que la recuperación funcione en las longitudes anunciadas, por lo que debe tratarse como un artefacto experimental más que como un modelo listo para producción.
+No obstante, la propia model card es explícita sobre las limitaciones: la tabla de recuperación en contexto largo registra "no" en todas las longitudes evaluadas (desde 4.000 hasta 131.000 tokens), es decir, el modelo no recuperó correctamente el código de prueba en ninguna de ellas. Además, no se han publicado resultados de MMLU, GSM8K ni MMMU. La ficha debe leerse, por tanto, como una descripción técnica del artefacto y no como una validación de su calidad.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen3-1.7B) |
-| Parámetros totales | 1.720.574.976 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 131.072 tokens (nominal, con YaRN x4; base 40.960) |
-| Tipos de cuantización | no disponible (el autor no documenta cuantizaciones publicadas) |
+| Arquitectura | Transformer decoder-only (base Qwen3-1.7B) con escalado RoPE YaRN x4 |
+| Parametros totales | 1.720.574.976 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 131.072 tokens (config); contexto nativo base 40.960 tokens |
+| Tipos de cuantizacion | No disponible (el repo solo publica safetensors; no se listan GGUF ni otras variantes) |
 | Idiomas soportados | en, ha, ig, yo, pcm |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (adaptador LoRA ya fusionado en los pesos) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-1.7B, un transformer decoder-only denso. Sobre esa base se ha fusionado un adaptador LoRA (MUTYINT) mediante aritmética tensorial directa, de modo que los pesos resultantes incorporan el ajuste sin requerir PEFT en tiempo de carga. A continuación se aplicó un escalado YaRN con factor x4 sobre las frecuencias del rope, lo que multiplica por cuatro la ventana de contexto efectiva, pasando de 40.960 a 131.072 tokens.
+El modelo hereda la arquitectura transformer decoder-only de Qwen3-1.7B, un modelo denso de aproximadamente 1.700 millones de parámetros. Sobre esa base, el autor ha realizado dos operaciones documentadas: (1) la fusión del adaptador LoRA MUTYINT directamente en los tensores del modelo mediante aritmética de tensores, de modo que no se requiere PEFT para la carga, y (2) la aplicación de escalado YaRN con factor x4 sobre las frecuencias RoPE, lo que eleva la ventana de contexto declarada de 40.960 a 131.072 tokens.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO. La model card no documenta ninguna innovación adicional más allá de la fusión del adaptador y el escalado YaRN. Tampoco se especifica qué hiperparámetros se usaron para el ajuste LoRA ni sobre qué datos se entrenó el adaptador MUTYINT.
+No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias. Tampoco se detalla la configuración exacta del adaptador MUTYINT (rango, alpha, capas objetivo). La innovación declarada es, por tanto, la combinación de fusión de LoRA y extensión de contexto por YaRN, pero no se aportan métricas que demuestren que la extensión funcione en la práctica: la propia tabla de recuperación del autor marca "no" en todas las longitudes probadas.
 
 ## Capacidades
 
-- Generación de texto autoregresiva heredada del modelo base Qwen3-1.7B.
-- Procesamiento de contextos largos de hasta 131.072 tokens nominales gracias al escalado YaRN x4.
-- Soporte multilingüe declarado para inglés, hausa, igbo, yoruba y pidgin nigeriano.
-- Recuperación de información en contextos largos: el autor afirma haber ejecutado pruebas de recuperación a 4.000, 32.000, 64.000, 100.000 y 131.000 tokens, aunque los resultados de recuperación son negativos en todos los casos.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
-- No se documentan capacidades de código o matemáticas más allá de las heredadas del modelo base.
+- Generación de texto autoregresiva en inglés y en lenguas africanas (hausa, igbo, yoruba, pidgin nigeriano).
+- Ventana de contexto declarada de 131.072 tokens, aunque sin evidencia publicada de recuperación efectiva a largas distancias.
+- Razonamiento y generación de código heredados de la base Qwen3-1.7B (no verificados en este ajuste).
+- Soporte multilingüe limitado a los cinco idiomas declarados; no se documentan otros.
+- No se documenta soporte de tool calling, function calling, agentes ni modos de razonamiento explícito (thinking mode) en la información disponible.
+- No se documentan capacidades de visión, audio ni multimodalidad.
 
 ## Casos de uso
 
-- Experimentación con ventanas de contexto largo en hardware de consumo: el tamaño de 1,7B permite cargar el modelo en GPUs de gama media y probar técnicas de recuperación en 128K tokens sin infraestructura dedicada.
-- Investigación sobre escalado YaRN: sirve como referencia práctica para estudiar cómo afecta la extensión de contexto por rope scaling a la calidad de recuperación en modelos pequeños.
-- Procesamiento de documentos largos en inglés: para tareas de resumen o extracción sobre textos extensos, siempre que se valide empíricamente la calidad de la recuperación en la longitud objetivo.
-- Procesamiento de texto en lenguas de África occidental: el soporte declarado de hausa, igbo, yoruba y pidgin nigeriano permite experimentar con estas lenguas, aunque sin garantías de calidad documentadas.
-- Prototipado de pipelines de context largo: al no requerir PEFT, se integra directamente en frameworks de inferencia que carguen safetensors.
-- Evaluación comparativa de técnicas de fusión de adaptadores: la fusión tensorial de LoRA documentada por el autor puede reproducirse y compararse con otras estrategias de merge.
-- Base para ajustes posteriores: al estar bajo Apache 2.0, puede servir como punto de partida para fine-tuning adicional en dominios específicos.
+- Procesamiento de documentos largos en inglés: el modelo declara 131.072 tokens de contexto, lo que permitiría en teoría ingerir informes o contratos extensos en una sola pasada; sin embargo, la falta de recuperación verificada obliga a validar el caso de uso antes de producción.
+- Asistencia multilingüe en África occidental: al cubrir hausa, igbo, yoruba y pidgin nigeriano, puede emplearse en tareas de generación y resumen para comunidades lingüísticas desatendidas por modelos mayores.
+- Prototipado en hardware de consumo: con 1.700 millones de parámetros y pesos safetensors, es viable ejecutarlo en GPU de gama media para experimentación rápida.
+- Generación de texto y código en entornos con recursos limitados: adecuado para pipelines de bajo coste donde no se requiere un modelo de gran escala.
+- Investigación sobre extensión de contexto: sirve como caso de estudio de la técnica YaRN aplicada a un modelo pequeño, útil para comparar metodologías de escalado de RoPE.
+- Fine-tuning posterior: al estar bajo licencia Apache 2.0 y en safetensors, puede servir como base para ajustes específicos de dominio en las lenguas soportadas.
 
 ## Benchmarks y rendimiento
 
-El autor indica explícitamente que no ha publicado resultados de MMLU, GSM8K ni MMMU. La única tabla disponible es la de recuperación en contexto largo, que se reproduce a continuación tal como aparece en la model card:
+La model card incluye una tabla de recuperación en contexto largo, pero todos los resultados son negativos:
 
 | Contexto (tokens) | Código recuperado | Latencia |
 |---|---|---|
@@ -58,42 +57,45 @@ El autor indica explícitamente que no ha publicado resultados de MMLU, GSM8K ni
 | 100.000 | no | no disponible |
 | 131.000 | no | no disponible |
 
-No se han publicado resultados de benchmarks de calidad en la información disponible. La tabla de recuperación indica que el modelo no recuperó el código en ninguna de las longitudes probadas, lo que sugiere que la extensión de contexto no funciona correctamente en la práctica.
+El autor declara explícitamente que no hay resultados de MMLU, GSM8K ni MMMU. No se han publicado resultados de benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16: aproximadamente 3,4 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica, entre 4 y 6 GB para contextos moderados.
-- VRAM estimada en cuantización de 8 bits: alrededor de 1,7 GB para pesos; en 4 bits, alrededor de 0,9 GB. No obstante, el autor no publica versiones cuantizadas, por lo que habría que generarlas.
-- La caché KV para 131.072 tokens es el factor limitante: con 1,7B parámetros y configuración típica de Qwen3, puede requerir decenas de GB adicionales según el número de capas y cabezas, por lo que contextos completos de 128K no caben en GPUs de consumo sin técnicas de atención eficiente o cuantización de caché.
-- GPU recomendadas: RTX 3090, RTX 4090, A100 o H100 para contextos largos; GPUs con 8-12 GB para contextos cortos.
-- Cabe en GPUs de consumo (RTX 3060 12 GB, RTX 4070, etc.) para contextos moderados en fp16 o cuantizado.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama o TGI, siempre que soporten la configuración de rope scaling incluida en el config. No se documentan latencias ni throughput más allá del dato de 12,4 en la tabla de recuperación (unidad no especificada).
+- VRAM estimada en FP16: aproximadamente 3,4 GB solo para pesos (1.720.574.976 parámetros x 2 bytes), más overhead de activaciones y caché KV.
+- VRAM estimada en cuantización de 8 bits: en torno a 1,7-2 GB para pesos.
+- VRAM estimada en cuantización de 4 bits: en torno a 1-1,2 GB para pesos.
+- La caché KV a 131.072 tokens es el factor limitante: incluso con un modelo pequeño, la memoria de atención crece linealmente con la longitud de contexto y puede superar la de los pesos en configuraciones largas.
+- GPU recomendadas: RTX 4090 (24 GB) o A100/H100 para contextos completos sin cuantizar; RTX 3060/4060 Ti (8-16 GB) para contextos moderados en cuantización.
+- Cabe en GPU de consumo en cuantización 4/8 bits para contextos cortos o medios.
+- Opciones de despliegue: al publicarse solo en safetensors, requiere transformers con soporte Qwen3; para cuantización habría que generar GGUF (llama.cpp/Ollama) o usar vLLM/TGI con pesos convertidos. No se distribuyen variantes GGUF en el repo.
+- Latencia y throughput: no disponibles salvo el dato aislado de 12,4 (unidades no especificadas) a 4.000 tokens.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| StewMind 1.7B Ultra 128K | 1,72B | 131.072 (YaRN x4) | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3-1.7B | 1,72B | 40.960 | Apache 2.0 | Hugging Face |
-| Qwen/Qwen3-4B | 4B | 40.960 (extensible) | Apache 2.0 | Hugging Face |
-| Llama 3.2 1B | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face |
+| StewMind 1.7B ULTRA 128K | 1,72 B | 131.072 (declarado) | Apache 2.0 | safetensors en HF |
+| Qwen3-1.7B (base) | ~1,7 B | 40.960 (nativo) | Apache 2.0 | HF, múltiples formatos |
+| Qwen2.5-1.5B | ~1,5 B | 32.768 (nativo) | Apache 2.0 | HF, GGUF, amplia adopción |
+| Llama 3.2 1B | ~1,2 B | 128.000 | Llama 3.2 Community | HF, GGUF, amplia adopción |
 
-La comparativa se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento publicados para StewMind. Frente a Qwen3-1.7B, la diferencia principal es la extensión de contexto nominal; frente a Llama 3.2 1B, este último ofrece 128K nativos sin necesidad de rope scaling y con una licencia más restrictiva. No se dispone de datos de benchmarks que permitan comparar calidad.
+La comparación se limita a especificaciones declaradas; no hay datos de rendimiento publicados para StewMind que permitan contrastar calidad frente a la base Qwen3-1.7B ni frente a alternativas. La ventaja diferencial sería el contexto extendido y el multilingüismo africano; la desventaja, la ausencia de validación y de formatos cuantizados listos para usar.
 
 ## Limitaciones y advertencias
 
-- La tabla de recuperación publicada por el autor muestra que el modelo no recuperó el código en ninguna de las longitudes probadas, incluida la de 4.000 tokens, lo que cuestiona la utilidad práctica del contexto extendido.
-- No hay benchmarks de calidad (MMLU, GSM8K, MMMU) que permitan evaluar si la fusión del adaptador y el escalado YaRN han degradado las capacidades del modelo base.
-- El escalado YaRN x4 sobre un modelo pequeño puede degradar la calidad en contextos cortos; no se documenta ninguna evaluación al respecto.
-- Riesgo de alucinación inherente a un modelo de 1,7B, especialmente en tareas de razonamiento y matemáticas.
-- El soporte multilingüe para hausa, igbo, yoruba y pidgin nigeriano está declarado pero no evaluado; la calidad real es desconocida.
-- La licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen3-1.7B conviene verificar las condiciones del modelo base y de los datos de entrenamiento del adaptador, no documentados.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin evidencia de validación por parte de la comunidad.
-- No se documentan cuantizaciones publicadas, por lo que el usuario debe generarlas y validarlas por su cuenta.
-- La fecha de creación del repositorio (2026-11-01) y la ausencia de pipeline declarado refuerzan el carácter experimental del artefacto.
+- La recuperación en contexto largo falló en todas las longitudes evaluadas por el propio autor; no debe asumirse que la ventana de 131.072 tokens funcione para tareas de retrieval.
+- No hay benchmarks de calidad (MMLU, GSM8K, HumanEval, MMMU) publicados; el rendimiento real es desconocido.
+- El ajuste LoRA MUTYINT no está documentado en detalle (datos, hiperparámetros, objetivo), lo que dificulta evaluar qué se modificó respecto a la base.
+- Riesgo de alucinación inherente a un modelo de 1,7 B; mayor en contextos largos y en lenguas de bajos recursos.
+- Sesgos no evaluados; los idiomas africanos incluidos tienen cobertura de datos desigual, lo que puede producir respuestas de calidad heterogénea.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías ni soporte.
+- Solo se publican pesos safetensors: no hay GGUF, AWQ ni GPTQ, lo que añade trabajo de conversión para despliegue en producción.
+- El nombre del repo ("128k") y el de la model card ("131K") no coinciden exactamente; conviene verificar la configuración real antes de confiar en la longitud de contexto.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Erog0291/stewmind-1.7b-ultra-128k
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.
+- Paper de YaRN (extensión de contexto por RoPE scaling): https://arxiv.org/abs/2309.00071
+- Repositorio de Qwen3: https://github.com/QwenLM/Qwen3
+- Documentación de transformers sobre Qwen3: https://huggingface.co/docs/transformers/model_doc/qwen3

@@ -2,102 +2,93 @@
 
 ## Resumen
 
-Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF es una cuantizacion GGUF del modelo etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated, publicada por mradermacher. Se trata de un modelo de lenguaje de 27.320.697.856 parametros (aproximadamente 27,3 mil millones) derivado de la familia Qwen3, segun indica el nombre del checkpoint, y sometido a un proceso de "abliteration" (eliminacion de los mecanismos de rechazo del modelo) que da lugar a una variante sin censura. El repositorio ofrece unicamente pesos cuantizados en formato GGUF con tecnicas de imatrix, pensados para inferencia local eficiente con llama.cpp y derivados.
+Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF es una distribución de cuantizaciones GGUF del modelo etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated, publicada por mradermacher. Se trata de una variante "abliterated" (con las capas de rechazo eliminadas mediante técnicas de abliteration) derivada de la familia Qwen3, con 27.320.697.856 parámetros totales según los pesos en safetensors. El repositorio ofrece cuantizaciones de tipo imatrix (i1) generadas con el método de mradermacher, orientadas a inferencia local con llama.cpp y herramientas compatibles.
 
-El modelo esta etiquetado por su autor con tematicas de salud, nutricion, hierbas medicinales, ayuno, fe, sanacion, bitcoin y nostr, lo que sugiere un ajuste fino orientado a esos dominios. La licencia declarada es Apache 2.0 y el unico idioma declarado es el ingles. El repositorio ocupa 218,6 GB en total, aunque cada cuantizacion individual pesa entre 11 y 22,5 GB, de modo que el usuario descarga solo la variante que necesita.
+El modelo está etiquetado como "vision model" en la model card, e incluye etiquetas temáticas relacionadas con salud, nutrición, hierbas medicinales, ayuno, fe, bitcoin y nostr, además de "uncensored", "aligned" y "based". La licencia declarada es Apache 2.0 y el único idioma indicado es inglés. El repositorio tiene un tamaño de 218,6 GB, lo que refleja la suma de todas las cuantizaciones disponibles.
 
-La relevancia de esta ficha radica en que documenta una distribucion comunitaria (no oficial) de un modelo derivado, con un conjunto amplio de cuantizaciones IQ de distintos tamanos y calidades. Es importante senalar que no se dispone de informacion sobre arquitectura detallada, contexto, datos de entrenamiento ni benchmarks en la informacion proporcionada.
+La relevancia de esta ficha radica en que documenta una distribución de cuantizaciones de un modelo afinado y modificado para eliminar restricciones de rechazo, algo que interesa a desarrolladores que necesitan ejecutar modelos de ~27B en hardware de consumo o en servidores con recursos limitados. No obstante, la información pública disponible sobre el modelo base es escasa: no se detallan datos de entrenamiento, benchmarks ni arquitectura interna más allá de la referencia a Qwen3.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivado de Qwen3 segun el nombre del checkpoint; sin confirmar) |
-| Parametros totales | 27.320.697.856 (27,3 mil millones) |
+| Arquitectura | no disponible (derivado de la familia Qwen3, segun el nombre del modelo) |
+| Parametros totales | 27.320.697.856 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, ademas de fichero imatrix |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones imatrix); el modelo base en safetensors |
-| Tamano del repositorio | 218,6 GB |
-| Libreria | transformers (declarada), uso real con llama.cpp |
-| Modelo base | etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated |
-| Autor de la cuantizacion | mradermacher |
-| Descargas | 2331 |
-| Fecha de creacion | 2026-10-09 |
-| Ultima actualizacion | 2026-11-20 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base en la documentacion proporcionada. Por el nombre del checkpoint ("Qwen3.8") cabe inferir una base de la familia Qwen3, pero no se confirma ni el tipo de transformer, ni si emplea atencion lineal, atencion completa o una mezcla, ni el numero de capas o cabezas. Tampoco se detalla la longitud de contexto nativa.
+No se dispone de información detallada sobre la arquitectura interna del modelo base etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated. El nombre sugiere que deriva de la familia Qwen3, con 27.320.697.856 parámetros totales, lo que lo sitúa en la categoría de modelos densos de ~27B. La model card no especifica si se trata de un transformer denso, MoE o una arquitectura híbrida, ni proporciona detalles sobre número de capas, dimensiones ocultas o mecanismos de atención.
 
-Respecto al entrenamiento, el autor del modelo base no documenta en esta ficha el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias. Lo unico que se puede afirmar con certeza es que el checkpoint ha pasado por un proceso de "abliteration", una tecnica de modificacion de pesos que busca eliminar la direccion de rechazo aprendida durante el alineamiento, dando como resultado un modelo "uncensored". Las etiquetas del autor (salud, nutricion, hierbas medicinales, ayuno, fe, sanacion) sugieren un ajuste fino tematico, pero no se aportan detalles tecnicos sobre ese ajuste.
-
-La contribucion tecnica de este repositorio concreto (mradermacher) es la generacion de cuantizaciones con matrices de importancia (imatrix) y formato i1, que segun el autor suelen ofrecer mejor calidad que las cuantizaciones estaticas de tamano equivalente. Se incluye tambien el fichero imatrix para que terceros puedan generar sus propias cuantizaciones.
+Respecto al entrenamiento, no se documentan el número de tokens utilizados, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste fino supervisado. La etiqueta "abliterated" indica que se aplicó una técnica de abliteration para eliminar la dirección de rechazo en el espacio de activaciones, lo que típicamente implica identificar la dirección asociada a respuestas de negativa y proyectarla fuera de los pesos. Las cuantizaciones i1 de mradermacher se generan con ficheros imatrix, que mejoran la calidad de las cuantizaciones de baja precisión respecto a las cuantizaciones estáticas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Modo "uncensored" / abliterated: el modelo ha sido modificado para reducir los rechazos ante peticiones que el modelo original rechazaria.
-- Ajuste tematico declarado por el autor hacia salud, nutricion, hierbas medicinales, ayuno, fe, sanacion, bitcoin y nostr.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma.
-- Capacidades de vision, audio o thinking mode: no disponible.
+- Generación de texto conversacional en inglés, con etiqueta "conversational" en el repositorio.
+- Capacidad de visión: la model card indica explícitamente "This is a vision model", aunque los ficheros mmproj (si existen) se encuentran en el repositorio estático, no en el de cuantizaciones i1.
+- Comportamiento "uncensored": al estar abliterated, el modelo no aplica las capas de rechazo típicas del modelo base, por lo que responde a solicitudes que el modelo original rechazaría.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Capacidades especiales: no se documentan modos de pensamiento (thinking mode), audio ni otras modalidades más allá de la visión indicada.
 
 ## Casos de uso
 
-- Consultas de nutricion y dietetica en ingles: el modelo esta etiquetado con tematicas de salud y nutricion, por lo que puede emplearse como asistente conversacional para resolver dudas sobre dietas, macronutrientes o planificacion de comidas, siempre con supervision profesional dado el caracter sensible del dominio.
-- Informacion sobre plantas medicinales y fitoterapia: las etiquetas del autor indican un ajuste hacia hierbas medicinales, lo que permite usarlo como base para un asistente divulgativo sobre usos tradicionales y precauciones, con las advertencias medicas oportunas.
-- Acompanamiento en ayuno intermitente: el modelo puede mantener conversaciones multi-turno sobre protocolos de ayuno, registro de habitos y motivacion, aprovechando su etiqueta tematica de fasting.
-- Contenido sobre fe y practicas espirituales: la etiqueta faith sugiere utilidad para generar reflexiones, textos devocionales o respuestas conversacionales en ese ambito.
-- Asistencia en el ecosistema bitcoin y nostr: las etiquetas bitcoin y nostr indican un posible uso como asistente para explicar conceptos, redactar contenido o responder preguntas tecnicas basicas sobre estas tecnologias.
-- Despliegue local en entornos con recursos limitados: al ofrecerse en cuantizaciones desde 11 GB (i1-Q2_K) hasta 22,5 GB (i1-Q6_K), permite ejecutar un modelo de 27B en estaciones de trabajo o GPUs de consumo, algo inviable con los pesos completos en precision alta.
-- Experimentacion con modelos sin censura: investigadores interesados en estudiar el comportamiento de modelos abliterated pueden usar estas cuantizaciones para pruebas controladas de robustez y seguridad.
+- Investigación sobre abliteration y alineación: el modelo permite estudiar cómo la eliminación de la dirección de rechazo afecta al comportamiento del modelo en dominios sensibles, comparando las respuestas con el modelo base sin modificar.
+- Despliegue local en hardware de consumo: las cuantizaciones i1-Q4_K_M (16,9 GB) e i1-Q4_K_S (15,9 GB) permiten ejecutar un modelo de ~27B en GPUs con 24 GB de VRAM, como una RTX 4090, usando llama.cpp u Ollama.
+- Procesamiento de documentos con componente visual: al estar etiquetado como vision model, puede emplearse para tareas de descripción de imágenes o extracción de información de capturas, siempre que se descarguen los ficheros mmproj del repositorio estático.
+- Generación de contenido creativo sin restricciones: para proyectos que requieren respuestas sin filtros de contenido, como escritura de ficción o guiones, el modelo abliterated evita las negativas del modelo base.
+- Experimentación con temáticas específicas: las etiquetas de salud, nutrición, hierbas medicinales, ayuno, fe, bitcoin y nostr sugieren que el ajuste fino del modelo base se orientó a estos dominios, por lo que puede usarse para prototipos de asistentes en esas áreas.
+- Evaluación de cuantizaciones imatrix: el repositorio incluye el fichero imatrix y múltiples niveles de cuantización, lo que permite a investigadores comparar la degradación de calidad entre i1-Q2_K y i1-Q6_K en tareas concretas.
+- Integración en pipelines con endpoints compatibles: la etiqueta "endpoints_compatible" indica que puede servirse mediante APIs compatibles con OpenAI, útil para prototipos de aplicaciones conversacionales.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (solo pesos, sin overhead de contexto): aproximadamente 11 GB (i1-Q2_K), 12,4-13,6 GB (variantes Q3), 15,4-17,4 GB (variantes Q4), 19,1-19,6 GB (Q5) y 22,5 GB (Q6_K). Hay que anadir el espacio para la cache KV segun la longitud de contexto.
-- GPU recomendadas: no disponible de forma oficial. Por tamano, una RTX 4090 (24 GB) puede alojar las cuantizaciones Q4 y Q5 completas en VRAM; las Q6_K quedan al limite. Para Q2/Q3 basta con GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080, A4000). Para despliegues de mayor concurrencia, A100 o H100 con reparto en varias GPUs.
-- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas para las cuantizaciones bajas y 24 GB para las altas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros runners compatibles con GGUF. El repositorio declara compatibilidad con endpoints (endpoints_compatible) y libreria transformers, pero el formato GGUF esta pensado para llama.cpp y derivados; para vLLM o TGI seria necesario convertir a otro formato o usar los pesos safetensors del modelo base.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia según cuantización: i1-Q2_K ~11,0 GB; i1-Q3_K_S ~12,4 GB; i1-IQ3_S ~12,7 GB; i1-IQ3_M ~12,9 GB; i1-Q3_K_M ~13,6 GB; i1-Q3_K_L ~14,7 GB; i1-IQ4_XS ~15,4 GB; i1-Q4_0 ~15,9 GB; i1-Q4_K_S ~15,9 GB; i1-Q4_K_M ~16,9 GB; i1-Q4_1 ~17,4 GB; i1-Q5_K_S ~19,1 GB; i1-Q5_K_M ~19,6 GB; i1-Q6_K ~22,5 GB. A estas cifras hay que sumar el espacio para el contexto KV cache.
+- GPU recomendadas: para las cuantizaciones Q4 y superiores, una RTX 4090 (24 GB) o RTX 3090 (24 GB) son suficientes para el modelo en sí, con margen limitado para contexto. Para Q6_K conviene una GPU de 24 GB con contexto corto o una A6000 (48 GB). Para despliegues con contexto largo o concurrencia, se recomiendan A100 (40/80 GB) o H100 (80 GB).
+- ¿Cabe en GPU de consumo? Sí: las cuantizaciones Q2 a Q4 caben en GPUs de 16-24 GB, como RTX 4080, RTX 4090 o RTX 3090. Las cuantizaciones Q5 y Q6 requieren 24 GB con contexto reducido.
+- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con endpoints OpenAI (según la etiqueta "endpoints_compatible"). No se documenta soporte en vLLM o TGI para formato GGUF en esta información.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento del modelo ni de sus alternativas en la informacion proporcionada, por lo que la comparativa se limita a caracteristicas objetivas.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF | 27,3B | no disponible | Apache 2.0 | GGUF (i1) | Abliterated, vision, solo ingles |
+| Ostrich-27B-261008-Qwen3.8-Abliterated-GGUF (estatico) | 27,3B | no disponible | Apache 2.0 | GGUF (estatico) | Misma base, cuantizaciones estaticas y mmproj |
+| etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated | 27,3B | no disponible | Apache 2.0 | safetensors | Modelo base sin cuantizar |
+| Qwen3 (familia base) | no disponible | no disponible | no disponible | no disponible | Referencia por nombre; sin datos verificados en esta informacion |
 
-| Modelo | Parametros | Contexto | Licencia | Formato disponible |
-|---|---|---|---|---|
-| Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF (este) | 27,3 B | no disponible | Apache 2.0 | GGUF (imatrix) |
-| Modelo base etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated | 27,3 B | no disponible | Apache 2.0 | safetensors |
-| Cuantizaciones estaticas mradermacher/Ostrich-27B-261008-Qwen3.8-Abliterated-GGUF | 27,3 B | no disponible | Apache 2.0 | GGUF (estaticas) |
-| Familia Qwen3 (modelos de referencia) | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "abliterated" / uncensored: la eliminacion de los mecanismos de rechazo implica que el modelo puede generar contenido danino, ofensivo o inseguro sin las salvaguardas del original. No es apto para produccion orientada al publico sin filtros externos.
-- Dominio sensible: las etiquetas de salud, nutricion, hierbas medicinales y ayuno implican riesgo elevado de consejo medico inadecuado. Cualquier uso en ese ambito requiere supervision de profesionales y avisos legales claros.
-- Riesgo de alucinacion: no se dispone de evaluaciones de fidelidad; como todo modelo de lenguaje, puede inventar datos, especialmente en dominios especializados como salud o finanzas (bitcoin).
-- Idioma: solo se declara ingles; el rendimiento en castellano no esta garantizado ni documentado.
-- Contexto: se desconoce la longitud de contexto soportada, lo que dificulta planificar casos de uso con documentos largos.
-- Licencia: Apache 2.0 permite uso comercial, pero el autor de la cuantizacion no ofrece garantias y el modelo base debe revisarse por separado. La licencia no exime de responsabilidad por el contenido generado.
-- Distribucion no oficial: este repositorio es una cuantizacion de terceros; la calidad de las cuantizaciones bajas (Q2, Q3) puede degradar notablemente el rendimiento respecto a los pesos originales.
-- Sin benchmarks: no hay evidencia publicada de calidad, por lo que cualquier decision de adopcion deberia basarse en evaluaciones propias.
-- Repositorio grande (218,6 GB): conviene descargar solo la cuantizacion necesaria para evitar consumo innecesario de almacenamiento y ancho de banda.
+- El modelo es "abliterated" y "uncensored": no aplica los filtros de rechazo del modelo base, por lo que puede generar contenido dañino, ofensivo o inexacto sin advertencia. No es adecuado para aplicaciones de producción orientadas al público sin una capa adicional de moderación.
+- Riesgo de alucinación: no se documentan evaluaciones de fidelidad factual; al ser un modelo afinado sin benchmarks publicados, se desconoce su tasa de alucinación.
+- Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
+- Longitud de contexto: no documentada; no se puede asumir la ventana de contexto de la familia Qwen3 sin confirmación.
+- Licencia Apache 2.0: permite uso comercial, pero el usuario debe verificar que el modelo base y los datos de ajuste cumplen las condiciones de la licencia, especialmente al tratarse de un modelo derivado con modificaciones de alineación.
+- Capacidad de visión: la model card indica que es un modelo de visión, pero los ficheros mmproj no están en este repositorio i1, sino en el estático; sin ellos, la funcionalidad visual no estará disponible.
+- Las etiquetas temáticas (salud, nutrición, hierbas medicinales, ayuno) no implican rigor médico; no debe usarse como fuente de consejo sanitario.
+- Cuantizaciones de baja precisión (Q2_K, Q3_K_S) degradan la calidad; para producción se recomienda Q4_K_M o superior.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF
 - Modelo base: https://huggingface.co/etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated
-- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Ostrich-27B-261008-Qwen3.8-Abliterated-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF
-- README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Analisis de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Ostrich-27B-261008-Qwen3.8-Abliterated-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Gráfico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- nethype GmbH: https://www.nethype.de/

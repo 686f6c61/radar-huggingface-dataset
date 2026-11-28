@@ -1,79 +1,79 @@
 # mradermacher/Heliactis-3-7B-GGUF
 
 ## Resumen
+Heliactis-3-7B es un modelo de lenguaje de tipo transformer desarrollado por ApollonLabs, especializado en el idioma griego (etiqueta "greek") y entrenado sobre la base de un modelo K2-Horizon con fusión de LoRA (lora-merged). Esta ficha corresponde a la versión cuantizada en formato GGUF publicada por mradermacher, que facilita su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
 
-Heliactis-3-7B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo base Heliactis-3-7B, publicado por el usuario mradermacher en Hugging Face. El modelo original lo desarrolla ApollonLabs, y esta version se limita a ofrecer los pesos convertidos a distintos niveles de cuantizacion para facilitar su despliegue en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
+El modelo cuenta con aproximadamente 9.000 millones de parámetros totales (8.999.178.240 según los pesos safetensors), lo que lo sitúa en la categoría de modelos de 7-9B. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales, y está orientado a conversación (etiqueta "conversational") con soporte declarado para griego e inglés.
 
-El repositorio contiene unicamente los ficheros cuantizados (no los pesos originales en safetensors), con un total de 48,7 GB distribuidos entre las distintas variantes. Segun los metadatos del repositorio, el modelo cuenta con 8.999.178.240 parametros, lo que corresponde a un modelo de aproximadamente 9.000 millones de parametros (pese a la denominacion "7B" del nombre original, el recuento real de parametros es superior).
-
-La relevancia de esta ficha es practica: permite a desarrolladores evaluar rapidamente la disponibilidad de cuantizaciones GGUF de un modelo conversacional y decidir si encaja en su infraestructura. No obstante, la informacion publica disponible es muy escasa: no se detallan arquitectura, datos de entrenamiento, licencia ni idiomas, por lo que muchas especificaciones deben marcarse como no disponibles.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo afinado para griego en hardware de consumo, con una batería de cuantizaciones que van desde Q2_K (3,9 GB) hasta f16 (18,1 GB). No obstante, la información pública disponible sobre arquitectura interna, contexto y datos de entrenamiento es muy limitada, por lo que muchos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 8.999.178.240 (aprox. 9B) |
+| Arquitectura | transformer (detalle interno no disponible); etiqueta "k2-horizon" en el modelo base |
+| Parametros totales | 8.999.178.240 (~9B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); repo de 48,7 GB |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 (estáticas); variantes imatrix en el repo i1-GGUF |
+| Idiomas soportados | griego (el), ingles (en) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (esta ficha); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
+La información disponible indica que Heliactis-3-7B deriva de un modelo base etiquetado como "k2-horizon" y que ha sido sometido a una fusión de LoRA (lora-merged), lo que sugiere un ajuste fino supervisado sobre una arquitectura transformer preentrenada. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO.
 
-No se dispone de informacion sobre la arquitectura del modelo base Heliactis-3-7B en la documentacion proporcionada. La model card del repositorio GGUF unicamente indica que se trata de cuantizaciones estaticas del modelo original `ApollonLabs/Heliactis-3-7B`, con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversion desde pesos en formato Hugging Face (probablemente safetensors) a GGUF mediante el flujo habitual de llama.cpp.
-
-No se detallan el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, arquitecturas hibridas, etc.). Toda esta informacion debe considerarse no disponible a partir de las fuentes consultadas.
+Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o arquitecturas híbridas. La versión aquí descrita es una cuantización estática generada por mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf), lo que implica que los pesos originales en formato Hugging Face fueron convertidos a GGUF y posteriormente cuantizados con las variantes K-quant estándar de llama.cpp.
 
 ## Capacidades
-
-- Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura de inferencia compatible con la API de Hugging Face.
-- Razonamiento, codigo, matematicas y vision: no disponible (no se documenta ninguna de estas capacidades).
-- Soporte de tool calling / function calling: no disponible.
+- Generación de texto conversacional en griego e inglés, según las etiquetas del modelo.
+- Ajuste específico para griego (etiqueta "greek"), lo que lo hace adecuado para tareas en ese idioma.
+- Fusión de LoRA que sugiere adaptación a instrucciones o diálogo, aunque no se detalla el corpus.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se listan idiomas).
-- Modo thinking, vision o audio: no disponible.
+- Capacidades multimodales (visión, audio): no disponibles.
+- Modo "thinking" o razonamiento extendido: no disponible.
 
 ## Casos de uso
-
-- Despliegue local en estaciones de trabajo: al ofrecerse en GGUF con variantes desde Q2_K hasta Q8_0, el modelo puede ejecutarse en llama.cpp sobre CPU o GPU consumer, lo que facilita pruebas de concepto sin infraestructura dedicada.
-- Prototipado de asistentes conversacionales: la etiqueta `conversational` permite usar el modelo como base para chatbots de prueba en entornos de desarrollo antes de escalar a un modelo mayor o con licencia clara.
-- Evaluacion comparativa de cuantizaciones: el repositorio incluye 12 variantes de cuantizacion, lo que permite medir el impacto de la compresion en calidad y velocidad para un modelo de ~9B parametros.
-- Integracion en pipelines con Ollama o llama.cpp: los ficheros GGUF son directamente consumibles por estas herramientas, lo que simplifica la incorporacion del modelo en flujos de trabajo existentes.
-- Experimentacion academica: investigadores que necesiten un modelo conversacional de tamano medio para estudios de sesgo, alucinacion o evaluacion de calidad pueden usar estas cuantizaciones en hardware modesto.
-- Servido mediante endpoints compatibles: la etiqueta `endpoints_compatible` indica que puede desplegarse en servicios de inferencia que acepten el formato de API de Hugging Face, util para pruebas de integracion.
+- Atención al cliente en griego: el modelo puede gestionar conversaciones multi-turno en griego gracias a su ajuste específico para ese idioma; su tamaño de ~9B permite desplegarlo en servidores modestos con cuantización Q4_K_M (5,7 GB).
+- Generación de contenido editorial en griego: redacción de artículos, resúmenes y borradores en griego con un modelo de licencia Apache 2.0 que no impone restricciones comerciales.
+- Traducción asistida griego-inglés: aunque no se documenta explícitamente como modelo de traducción, su bilingüismo declarado permite usarlo como apoyo en pipelines de traducción con revisión humana.
+- Prototipado rápido en local: con cuantizaciones Q4_K_S (5,5 GB) o IQ4_XS (5,2 GB) puede ejecutarse en GPU de consumo como RTX 3060/4060 Ti o en CPU con llama.cpp, ideal para experimentación.
+- Investigación en PLN para griego: útil como baseline afinado para griego en experimentos académicos, dado su tamaño manejable y licencia permisiva.
+- Chatbots de dominio limitado: despliegue en entornos con presupuesto de VRAM reducido (8-12 GB) usando Q4_K_M o Q5_K_M, con la advertencia de que la calidad en tareas complejas no está documentada.
+- Educación y asistencia lingüística: generación de ejercicios o explicaciones en griego para plataformas de aprendizaje de idiomas.
 
 ## Benchmarks y rendimiento
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el numero de parametros (~9B) y las cuantizaciones ofrecidas, Q4_K_M requeriria del orden de 5-6 GB de VRAM, Q8_0 en torno a 9-10 GB y f16 aproximadamente 18 GB; estas cifras son estimaciones generales, no datos del autor.
-- GPU recomendadas: no disponible en la documentacion. Por tamano, una RTX 3060 de 12 GB o superior podria alojar cuantizaciones Q4 y Q5; una RTX 4090 (24 GB) permitiria Q8_0 y f16 con holgura.
-- Cabe en GPU consumer: si, previsiblemente en modelos con 8 GB o mas de VRAM para cuantizaciones Q4, aunque no hay confirmacion oficial.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF; la etiqueta `endpoints_compatible` sugiere soporte adicional en endpoints de inferencia.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente el tamaño del archivo GGUF más overhead. Q2_K ~3,9 GB; Q4_K_M ~5,7 GB; Q8_0 ~9,7 GB; f16 ~18,1 GB.
+- GPU recomendadas: para Q4_K_M, una RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4090 24 GB funcionan con holgura; para f16 se recomienda A100 40 GB, H100 o RTX 4090 24 GB (justo).
+- Cabe en GPU de consumo: sí, en cuantizaciones Q2_K a Q5_K_M en GPUs de 8-12 GB; Q6_K y Q8_0 requieren 12-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF; el modelo base en safetensors puede servirse con vLLM o TGI si se dispone de la versión sin cuantizar.
+- Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
+No se dispone de datos de benchmarks ni de comparativas publicadas en la información proporcionada. Como referencia estructural, se trata de un modelo de ~9B parámetros con licencia Apache 2.0 y cuantizaciones GGUF, comparable en formato de despliegue a otros modelos de 7-9B cuantizados por el mismo autor, pero no se pueden establecer comparaciones de rendimiento sin datos.
 
-No disponible. No se dispone de informacion sobre el modelo base Heliactis-3-7B ni de modelos comparables en la documentacion proporcionada, por lo que no es posible establecer una comparativa fiable de parametros, contexto, rendimiento o licencia.
+| Modelo | Parametros | Contexto | Licencia | Formato | Benchmarks |
+|---|---|---|---|---|---|
+| Heliactis-3-7B (esta ficha) | ~9B | no disponible | apache-2.0 | GGUF / safetensors | no disponible |
+| Alternativas de 7-9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
-
-- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar la licencia del modelo original `ApollonLabs/Heliactis-3-7B` antes de cualquier despliegue en produccion.
-- Ausencia de documentacion tecnica: no se detallan arquitectura, contexto, idiomas ni datos de entrenamiento, lo que dificulta evaluar su idoneidad para tareas concretas.
-- Riesgo de alucinacion: no cuantificado ni documentado por el autor.
-- Sesgos conocidos: no disponibles.
-- Limitaciones de contexto o idioma: no disponibles.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
-- Las cuantizaciones de baja precision (Q2_K, Q3_K_S) pueden degradar notablemente la calidad en modelos de este tamano; se recomienda Q4_K_M o superior para uso real.
-- El nombre "7B" no coincide con el recuento real de parametros (~9B), lo que puede llevar a estimaciones erroneas de requisitos de memoria.
+- Sesgos conocidos: no documentados; al ser un modelo afinado para griego, puede presentar sesgos culturales o lingüísticos propios de su corpus de entrenamiento, que no se detalla.
+- Riesgo de alucinación: no evaluado; sin benchmarks publicados no es posible cuantificar su fiabilidad en tareas factuales.
+- Limitaciones de contexto o idioma: solo se declaran griego e inglés; el rendimiento en castellano u otros idiomas no está garantizado. La longitud de contexto no se especifica.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base (ApollonLabs/Heliactis-3-7B) y de los datos de entrenamiento originales.
+- Caveats para producción: la ausencia de benchmarks y de documentación sobre entrenamiento dificulta la evaluación de calidad; se recomienda validación empírica antes de desplegar en entornos críticos. Las cuantizaciones Q2_K y Q3_K_M tienen calidad reducida según el propio autor.
 
 ## Enlaces
-
-- Repositorio GGUF: https://huggingface.co/mradermacher/Heliactis-3-7B-GGUF
-- Modelo base: https://huggingface.co/ApollonLabs/Heliactis-3-7B
+- [Hugging Face: mradermacher/Heliactis-3-7B-GGUF](https://huggingface.co/mradermacher/Heliactis-3-7B-GGUF)
+- [Modelo base: ApollonLabs/Heliactis-3-7B](https://huggingface.co/ApollonLabs/Heliactis-3-7B)
+- [Cuantizaciones imatrix: mradermacher/Heliactis-3-7B-i1-GGUF](https://huggingface.co/mradermacher/Heliactis-3-7B-i1-GGUF)
+- [Página de descargas del autor](https://hf.tst.eu/model#Heliactis-3-7B-GGUF)
+- [FAQ y solicitudes de cuantización de mradermacher](https://huggingface.co/mradermacher/model_requests)
+- [Guía de uso de GGUF (README de TheBloke)](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)
+- [Notas sobre cuantizaciones de Artefact2](https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9)
+- [Gráfico comparativo de cuantizaciones de ikawrakow](https://www.nethype.de/huggingface_embed/quantpplgraph.png)

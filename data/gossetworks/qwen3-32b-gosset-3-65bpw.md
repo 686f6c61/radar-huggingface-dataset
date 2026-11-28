@@ -2,88 +2,113 @@
 
 ## Resumen
 
-GossetWorks/Qwen3-32B-Gosset-3.65BPW es una cuantizacion del modelo Qwen3-32B de Alibaba Qwen, publicada por el usuario GossetWorks bajo una tecnica propia denominada "gosset-packed" basada en reticulos E8. El objetivo declarado en los tags es comprimir el modelo base de 32B parametros hasta un peso de aproximadamente 3,65 bits por peso (BPW) para que quepa en GPUs de 16 GB de VRAM, un umbral que el Qwen3-32B original en FP16 o incluso en cuantizaciones de 4 bits estandar no alcanza comodamente.
+Qwen3-32B-Gosset-3.65BPW es una compresión del modelo Qwen3-32B de Alibaba Qwen mediante la técnica propietaria Gosset Packing, desarrollada por GossetWorks. El pack codifica los pesos del transformer original a 3,6577 bits por peso (bpw) en promedio, reduciendo el tamaño en disco de aproximadamente 65 GB (BF16) a 14,62 GB. El objetivo es claro y muy concreto: hacer que un modelo denso de 32B quepa de forma íntegra en una GPU de consumo con 16 GB de VRAM, algo que los formatos de 4 bits convencionales (AWQ/GPTQ, GGUF Q4_K_M) no consiguen.
 
-El modelo base es Qwen3-32B, un transformer denso de aproximadamente 33.000 millones de parametros con capacidades de razonamiento en modo thinking, generacion de codigo y soporte multilingue. La cuantizacion de GossetWorks no modifica la arquitectura ni el tokenizador, sino unicamente la representacion numerica de los pesos, de modo que las capacidades funcionales dependen del modelo original y la principal variable diferencial es la fidelidad de la compresion.
+La innovación central es el uso del retículo E8 de Gosset, el empaquetamiento esférico más denso en 8 dimensiones (teorema de Viazovska), como sustituto del redondeo escalar 1D independiente. Cada código empaquetado representa un grupo de ocho pesos y se decodifica directamente en registros de la GPU, sin tablas de códigos en memoria compartida. El autor reporta una verificación de residencia completa en una RTX 5080 con 12,95 GiB de VRAM ocupada y unos 2,8 GiB libres.
 
-La relevancia de esta publicacion es practica: propone una via para ejecutar un modelo de 32B en hardware de consumo de gama alta (16 GB) con una perdida de calidad que el autor presenta como controlada mediante el empaquetado en reticulos E8. No obstante, el repositorio es de acceso restringido, no incluye resultados de benchmarks publicados y tiene cero descargas en el momento de redactar esta ficha, por lo que debe tratarse como una propuesta tecnica a validar de forma independiente.
+El modelo no se distribuye como pesos estándar: requiere el runtime propietario de Gosset (kernels precompilados para NVIDIA SM75–SM120), incluido en el bundle junto con una CLI de chat interactiva. La licencia es "other" (Gosset Evaluation License), sin gate ni aprobación previa para descarga. Es relevante ahora porque demuestra una vía alternativa de cuantización sub-4-bit basada en retículos que supera las limitaciones de tamaño de los formatos escalares en GPUs de 16 GB.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (heredada de Qwen3-32B) con pesos cuantizados mediante empaquetado en reticulos E8 ("gosset-packed") |
-| Parametros totales | 4.989.736.320 (segun safetensors del repo cuantizado); modelo base: ~32-33B |
-| Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | no disponible en la informacion proporcionada (depende del modelo base Qwen3-32B) |
-| Tipos de cuantizacion | 3,65 BPW mediante esquema propietario gosset-packed con reticulo E8; no se documentan otros formatos |
-| Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido, requiere aceptar condiciones en Hugging Face) |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer denso (Qwen3-32B), pesos empaquetados en retículo E8 de Gosset |
+| Parametros totales | 32B (modelo base); el repo safetensors reporta 4.989.736.320 elementos empaquetados |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible en la información proporcionada (heredada del Qwen3-32B base, valor no confirmado) |
+| Tipos de cuantizacion | Gosset Packing a 3,6577 bpw all-in: proyecciones de atención y LM head a 4,25 bpw, proyecciones MLP a 3,25 bpw, embedding int8, escalas por grupo |
+| Idiomas soportados | No disponible en la información proporcionada (heredados del Qwen3-32B base) |
+| Licencia | other (Gosset Evaluation License; sin gate ni aprobación) |
+| Formato de pesos | safetensors (bit-packed lattice codes) + runtime Gosset propietario |
 
 ## Arquitectura y entrenamiento
 
-La cuantizacion se apoya en el modelo base Qwen3-32B, un transformer denso de aproximadamente 33.000 millones de parametros desarrollado por Qwen (Alibaba). El repositorio de GossetWorks no reentrena el modelo: aplica una compresion post-entrenamiento sobre los pesos originales. La innovacion declarada es el uso de un reticulo E8 para empaquetar los pesos, una estructura de reticulos densos en 8 dimensiones que permite una cuantizacion mas eficiente que los esquemas escalares convencionales a regimenes de 3-4 bits. El resultado se etiqueta como "gosset-packed" y se orienta explicitamente a GPUs de 16 GB.
+El modelo subyacente es Qwen3-32B, un transformer denso de 32 mil millones de parámetros. Sobre él, GossetWorks aplica un proceso de compresión post-entrenamiento denominado Gosset Packing: en lugar de redondear cada peso de forma escalar e independiente en 1D, proyecta grupos de ocho pesos sobre el retículo E8 y almacena el código de retículo resultante. La decodificación se realiza en registros de la GPU sin tablas de códigos en memoria compartida, lo que reduce el coste de acceso y permite mantener el modelo completamente residente en VRAM.
 
-No se dispone de informacion sobre el dataset de calibracion, el numero de tokens utilizados para ajustar la cuantizacion, ni sobre si se aplicaron tecnicas de correccion de error o destilacion de pesos. Tampoco se documenta si el proceso preserva integramente las capas de atencion y MLP o si alguna se deja en mayor precision. El tamaño del repo (14,6 GB) es coherente con un modelo de 32B a ~3,65 BPW, lo que confirma que la compresion se aplica a la practica totalidad de los pesos. Cualquier afirmacion sobre calidad o fidelidad respecto al modelo original debe considerarse no verificada hasta que existan evaluaciones publicas.
+El pack se genera con el denominado "activation-aware v3 encoder", una familia de codificador que tiene en cuenta las activaciones al asignar los códigos. El autor reporta que este codificador reduce drásticamente el daño de cuantización frente al primer build directo sin ponderación: en WikiText-2 corto, el primer build medía +31,97% / +43,55% de degradación de perplejidad, mientras que el v3 la reduce a +5,40% / +4,51% con el mismo ancho de bits y número de bytes. Se incluye una certificación de fidelidad con error relativo de reconstrucción por grupo: 0,0969 (0,0714 ponderado por activación) en proyecciones de atención, 0,1732 (0,1376) en MLP, 0,0090 en embedding y 0,0919 (0,0323) en LM head.
+
+No se proporciona información sobre el dataset de entrenamiento original de Qwen3-32B ni sobre si el proceso de empaquetado incluyó ajuste fino adicional; el pack es una compilación de pesos, no un reentrenamiento.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento: hereda del Qwen3-32B original, incluyendo el modo thinking de Qwen3 para razonamiento paso a paso.
-- Generacion de codigo: el modelo base esta entrenado para tareas de programacion en multiples lenguajes.
-- Matematicas: capacidad de resolucion de problemas matematicos del modelo base.
-- Soporte multilingue: el modelo base Qwen3 cubre un conjunto amplio de idiomas, aunque la cuantizacion no documenta evaluaciones por idioma.
-- Tool calling / function calling: soportado por el modelo base Qwen3.
-- Razonamiento multi-paso y uso en agentes: el modo thinking de Qwen3 esta disenado para este tipo de flujos.
-- Capacidades especiales: modo thinking heredado; no se documentan capacidades de vision ni audio en esta cuantizacion.
-- Nota: todas estas capacidades dependen de la fidelidad de la cuantizacion, que no ha sido evaluada publicamente en la informacion disponible.
+- Generación de texto y razonamiento: hereda las capacidades del Qwen3-32B base, incluyendo modo de pensamiento (thinking mode) del que Qwen3 hace gala, aunque la información proporcionada no lo detalla explícitamente.
+- Generación de código: los benchmarks reportados (HumanEval 86,59% pass@1, MBPP 72,40% pass@1) confirman competencia sólida en programación.
+- Razonamiento matemático: GSM8K con 93,48% de acierto sobre el conjunto de test completo.
+- Conocimiento general: MMLU con 76,83% sobre las 14.042 preguntas del test set.
+- Capacidades multilingües: no confirmadas en la información disponible; dependen del modelo base.
+- Tool calling / function calling: no confirmado explícitamente para este pack; el modelo base Qwen3-32B lo soporta, pero el runtime Gosset incluido es una CLI de chat y no se documenta integración con APIs de herramientas.
+- Soporte de agentes y razonamiento multi-paso: no documentado para este pack.
+- Capacidades especiales: decodificación bit-packed en registros GPU sin tablas de códigos; residencia completa en 16 GB de VRAM verificada.
 
 ## Casos de uso
 
-- Despliegue en GPU de 16 GB: el caso de uso central del repo. Permite cargar un modelo de 32B en tarjetas como RTX 4080, RTX 4060 Ti de 16 GB o A4000, que no pueden alojar el modelo en FP16 ni en cuantizaciones de 4 bits con margen para el contexto.
-- Asistente de codigo local: ejecutar Qwen3-32B en una estacion de trabajo con GPU de consumo para autocompletado, revision de codigo y explicacion de fragmentos, aprovechando la capacidad de codigo del modelo base y el bajo coste de VRAM.
-- Razonamiento con modo thinking en local: usar el modelo para problemas de matematicas o logica que requieren cadena de pensamiento, en entornos donde no se quiere enviar datos a APIs externas.
-- Prototipado de agentes con tool calling: construir pipelines de agentes que invoquen funciones o APIs, aprovechando el soporte de function calling del modelo base y la posibilidad de ejecutarlo en hardware modesto.
-- Procesamiento de documentos con contexto largo: si el contexto del modelo base se preserva, usar la cuantizacion para resumir o extraer informacion de documentos extensos en una sola GPU de 16 GB, aunque la ventana efectiva dependera de la VRAM restante tras cargar los pesos.
-- Investigacion sobre cuantizacion: servir como objeto de estudio para comparar el esquema gosset-packed/E8 frente a GGUF, AWQ o GPTQ en terminos de perplejidad y calidad downstream.
-- Entornos con requisitos de privacidad: inferencia on-premise de un modelo de 32B sin depender de servicios en la nube, adecuado para datos sensibles.
+- Inferencia de un modelo de 32B en GPU de consumo: el caso principal. Un desarrollador con una RTX 5080 (16 GB) puede ejecutar un modelo denso de 32B sin offloading ni spilling a RAM del sistema, algo imposible con AWQ/GPTQ (17–18 GB) o GGUF Q4_K_M (19,8 GB) en esa misma tarjeta.
+- Asistencia de código en estación de trabajo local: con HumanEval al 86,59% pass@1, el pack sirve para autocompletado, generación de funciones y revisión de código en un entorno de desarrollo sin depender de la nube.
+- Razonamiento matemático en local: GSM8K al 93,48% permite resolver problemas aritméticos y de varios pasos en un portátil o torre con GPU de 16 GB, útil para prototipado de pipelines educativos o de verificación.
+- Investigación en cuantización: el pack es un artefacto de referencia para estudiar el rendimiento de la codificación en retículo E8 frente a cuantización escalar; el autor publica el protocolo completo de benchmarks y la certificación de fidelidad.
+- Evaluación comparativa de formatos: sirve para medir el compromiso entre tamaño (14,62 GB), velocidad (37,1 tok/s de decodificación) y calidad (perplejidad +5,40% frente a BF16) en una GPU concreta, con datos reproducibles.
+- Despliegue en robótica y edge con GPU NVIDIA: el mismo códec se ha probado en NVIDIA GR00T-N1.5-3B sobre Jetson Orin Nano (8 GB), lo que sugiere aplicabilidad del enfoque a entornos embebidos con GPUs de gama media.
+- Chat interactivo local: el bundle incluye una CLI de chat que permite conversaciones multi-turno sin infraestructura adicional, adecuada para pruebas de concepto y demostraciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni metricas de perplejidad, y tampoco se han encontrado evaluaciones independientes del esquema gosset-packed. No es posible afirmar cuanto se degrada el rendimiento respecto al Qwen3-32B original en FP16 o BF16.
+Resultados reportados por el autor, medidos sobre conjuntos oficiales completos con el runtime Gosset en una RTX 5080:
+
+| Benchmark | Resultado | Detalle |
+|---|---|---|
+| HumanEval | 86,59% pass@1 | 142 / 164 (build v3 del codificador) |
+| GSM8K | 93,48% | 1.233 / 1.319 (build v3) |
+| MMLU | 76,83% | 10.789 / 14.042 (primer build del codificador) |
+| MBPP | 72,40% pass@1 | 362 / 500 (build v3) |
+
+Perplejidad en WikiText-2 (test):
+
+| Protocolo | Este pack | BF16 | Delta |
+|---|---|---|---|
+| Long-chunk (24 × 2048 tokens) | 7,8335 | 7,4320 | +5,40% |
+| Short-window (128 tokens) | 14,8968 | 14,2534 | +4,51% |
+
+Velocidad en RTX 5080 con residencia completa: 37,1 tok/s de decodificación de media en la ejecución completa de HumanEval; procesamiento de prompt de 664,9 tok/s en el harness de evaluación (~145 ms hasta el primer token). VRAM pico en todas las ejecuciones de evaluación: 14,12 GiB.
+
+No se proporcionan comparaciones directas con otros modelos en la información disponible; los datos de referencia son los del Qwen3-32B base publicados por el autor del modelo original.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repo apunta a 16 GB de VRAM como objetivo; el tamaño de pesos es de 14,6 GB, por lo que el margen restante para KV cache y overhead del runtime es reducido (del orden de 1-1,5 GB en una GPU de 16 GB).
-- GPU recomendadas: RTX 4080 (16 GB), RTX 4060 Ti 16 GB, RTX 4070 Ti Super (16 GB), A4000 (16 GB). En GPUs de 24 GB (RTX 4090, A5000, L4) habria mas margen para contexto largo.
-- Cabe en GPU de consumo: si, en modelos de 16 GB, aunque con contexto limitado por la VRAM restante.
-- Opciones de despliegue: no se documentan en el repo. Al estar en safetensors con un esquema de cuantizacion propietario, no es compatible directamente con llama.cpp, Ollama, vLLM o TGI sin un kernel o runtime especifico que descomprima el formato gosset-packed. La informacion disponible no indica que exista dicho runtime.
-- Latencia y throughput: no disponibles.
+- VRAM: 12,95 GiB ocupados en el caso verificado (RTX 5080, 16 GB), con unos 2,8 GiB libres; pico de 14,12 GiB durante las evaluaciones. Mínimo declarado: 16 GB de VRAM.
+- GPU recomendadas: RTX 5080 (verificada por el autor); los kernels cubren NVIDIA SM75–SM120, lo que abarca desde Turing (RTX 20xx) hasta Blackwell. No se documentan pruebas en A100, H100 ni otras GPUs de centro de datos.
+- GPU de consumo: sí, en tarjetas de 16 GB o más; en GPUs de 8 GB el pack no cabe (el autor cita un Qwen3-14B a 3,43 bpw para ese segmento).
+- Opciones de despliegue: runtime Gosset propietario incluido en el bundle (kernels precompilados, CLI de chat interactiva) y Gosset Runner para Windows x64 (instalador standalone, sin Python). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, dado que el formato bit-packed no es estándar.
+- Latencia y throughput: 37,1 tok/s de decodificación y 664,9 tok/s de procesamiento de prompt en RTX 5080, con ~145 ms hasta el primer token.
+- Disco: aproximadamente 15 GB de espacio libre; el repo ocupa 14,6 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Tamaño en disco | Contexto | Licencia | Despliegue en 16 GB |
 |---|---|---|---|---|---|
-| GossetWorks/Qwen3-32B-Gosset-3.65BPW | ~32B (4.989.736.320 en safetensors cuantizado) | no disponible | 3,65 BPW gosset-packed (E8) | other, acceso restringido | Hugging Face, gated, 0 descargas |
-| Qwen/Qwen3-32B (original) | ~33B | no disponible en la informacion | BF16/FP16 | licencia Qwen (ver repo) | Hugging Face, publico |
-| Cuantizaciones GGUF/AWQ/GPTQ de Qwen3-32B (4 bits) | ~32B | depende del runtime | 4-5 BPW estandar | segun autor de la cuantizacion | amplia disponibilidad en Hugging Face y compatibilidad con llama.cpp, vLLM, etc. |
+| Qwen3-32B-Gosset-3.65BPW | 32B (denso) | 14,62 GB | no disponible | other (Gosset Evaluation) | Sí, verificado (12,95 GiB) |
+| Qwen3-32B AWQ/GPTQ 4-bit | 32B (denso) | ~17–18 GB | el del base | según build | No, excede 16 GB |
+| Qwen3-32B GGUF Q4_K_M | 32B (denso) | ~19,8 GB | el del base | según build | No, excede 16 GB |
+| Qwen3-32B BF16 | 32B (denso) | ~65 GB | el del base | Apache 2.0 (base) | No |
 
-La comparativa se limita a estas alternativas porque la informacion proporcionada no incluye datos de rendimiento que permitan contrastar calidad. La ventaja diferencial del modelo de GossetWorks es el regimen de 3,65 BPW con empaquetado E8; su desventaja es la falta de ecosistema de runtime y de evaluaciones publicas frente a las cuantizaciones estandar, mucho mas extendidas.
+Los datos de AWQ/GPTQ y GGUF Q4_K_M provienen de la model card del autor. No se dispone de comparaciones de rendimiento con otros modelos en la información proporcionada más allá de los anclajes BF16 del propio pack.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face; no es de descarga libre.
-- Licencia "other": no se especifican los terminos exactos en la informacion disponible; es imprescindible revisar las condiciones antes de cualquier uso comercial, y ademas hay que respetar la licencia del modelo base Qwen3-32B.
-- Sin benchmarks: no hay evidencia publicada de la degradacion de calidad respecto al modelo original; el regimen de 3,65 BPW es agresivo y puede afectar a tareas sensibles como matematicas o codigo.
-- Compatibilidad de runtime desconocida: el formato gosset-packed con reticulo E8 no es un estandar soportado por llama.cpp, vLLM, Ollama o TGI segun la informacion disponible; sin un runtime especifico el modelo puede ser inutilizable en la practica.
-- Riesgo de alucinacion: inherente al modelo base Qwen3-32B y potencialmente amplificado por la cuantizacion.
-- Sesgos: no documentados especificamente para esta cuantizacion; heredados del modelo base.
-- Contexto efectivo limitado: con 14,6 GB de pesos en una GPU de 16 GB, el espacio para KV cache es minimo, lo que reduce la ventana de contexto utilizable en la practica.
-- Madurez: cero descargas y cero likes en el momento de la ficha; ausencia de validacion por la comunidad.
-- Idiomas: no se documenta que idiomas preserva la cuantizacion ni si hay degradacion diferencial por idioma.
+- Formato no estándar: los pesos son códigos de retículo bit-packed que requieren el runtime Gosset propietario. No se pueden cargar con transformers, vLLM, llama.cpp, Ollama ni TGI, lo que limita la portabilidad y la integración en pipelines existentes.
+- Licencia "other" (Gosset Evaluation License): aunque no hay gate, las condiciones exactas de uso comercial no se detallan en la información disponible; conviene revisar el texto completo de la licencia antes de un despliegue en producción.
+- Degradación de calidad medible: +5,40% de perplejidad en long-chunk y +4,51% en short-window frente a BF16; el autor estima que se retiene aproximadamente nueve décimas partes del rendimiento en tareas respecto a las puntuaciones publicadas del modelo base.
+- El recuento de parámetros que muestra Hugging Face (4,99 mil millones de elementos) no refleja el tamaño real del modelo; puede inducir a error en herramientas que lo lean automáticamente.
+- Riesgo de alucinación: inherente al Qwen3-32B base; la cuantización puede amplificarlo ligeramente, aunque no se documenta un estudio específico.
+- Sesgos: no documentados en la información proporcionada; se heredan los del modelo base.
+- Idiomas: no confirmados para este pack; dependen del Qwen3-32B original y no se listan en la model card.
+- Contexto: la longitud de contexto no se especifica en la información disponible; debe asumirse la del modelo base, pero sin confirmación.
+- Madurez: 192 descargas y 2 likes en el momento de la consulta; proyecto reciente (creado en noviembre de 2026) con un ecosistema de runtime joven.
+- Dependencia de hardware NVIDIA: los kernels cubren SM75–SM120; no hay soporte documentado para AMD, Apple Silicon ni CPU.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/GossetWorks/Qwen3-32B-Gosset-3.65BPW
-- Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
-- Guia de despliegue local de Qwen3-32B en GPU de 24 GB: https://baeseokjae.github.io/posts/qwen-3-32b-local-guide-2026/
+- Modelo en Hugging Face: https://huggingface.co/GossetWorks/Qwen3-32B-Gosset-3.65BPW
+- Modelo base: https://huggingface.co/Qwen/Qwen3-32B
+- Página de benchmarks de Gosset Works: https://www.gossetworks.com/benchmarks.html
+- Gosset Runner (instalador Windows): https://huggingface.co/GossetWorks/GossetRunner
+- Instalador directo: https://huggingface.co/GossetWorks/GossetRunner/resolve/main/GossetRunnerSetup-1.0.3-win64.exe

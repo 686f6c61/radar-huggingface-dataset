@@ -2,110 +2,100 @@
 
 ## Resumen
 
-Steppe-Flux.2 es un modelo generativo de superresolución que opera directamente sobre el espacio latente del VAE de FLUX.2. Lo desarrolla TensorForger como parte de la familia Steppe, un conjunto de upscalers ligeros entrenados exclusivamente para ampliar la resolución de imágenes. A diferencia de las soluciones de "hires fix" tradicionales, el modelo no requiere un segundo pase de muestreo del modelo base ni un prompt: recibe el latente del VAE y devuelve un latente ampliado que se decodifica directamente.
+Steppe-Flux.2 es un modelo generativo de superresolución que opera directamente sobre los latentes del VAE de FLUX.2, desarrollado por TensorForger. No es un modelo de difusión de texto a imagen al uso, sino un *upscaler latente*: recibe un latente ya generado por FLUX.2 [dev], FLUX.2 [klein] o MOSS-Image y lo amplía 2x antes de que el VAE lo decodifique. Esto elimina la necesidad de un segundo pase de muestreo del modelo base, de un *hires fix* o de un prompt adicional.
 
-El modelo se apoya en la arquitectura de flow matching y en el espacio latente compartido por FLUX.2 [dev], FLUX.2 [klein] (4B y 9B) y MOSS-Image. La versión principal ronda los 192M de parámetros, con una variante "lite" de 20,2M pensada para salidas de gran tamaño y uso en tiempo real. Todos los pesos se distribuyen en bfloat16 safetensors y la licencia es MIT.
+El modelo se distribuye en tres variantes de pesos (192M y 20.2M de parámetros, en versiones de 1 paso y base), todas en formato bfloat16 safetensors y con licencia MIT. La versión por defecto, `steppe_flux_2_200M_1step`, resuelve la ampliación en un único paso de unos 40 ms de cómputo del modelo para una imagen de 1024 px sobre una RTX 5090, con la mayor parte del tiempo consumida por el decodificado del VAE.
 
-Su relevancia actual radica en que ofrece un upscaling 2x en un solo paso (unos 40 ms de cómputo del modelo para una imagen de 1024 px en una RTX 5090) con una calidad cercana al límite de reconstrucción del VAE: patch FID de 1,75 frente a 8,12 de bicúbico. Está integrado en ComfyUI mediante el nodo ComfyUI-Steppe y disponible en ComfyUI-Manager.
+Su relevancia radica en que se integra en el ecosistema FLUX.2 como un adaptador de bajo coste computacional: permite encadenar 2x → 2x (por ejemplo, 960x1280 → 3840x5120) manteniendo detalle fino, con un FID de parche de 1.75 frente a 8.12 del reescalado bicúbico. Está pensado para flujos de trabajo en ComfyUI mediante el nodo ComfyUI-Steppe.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo generativo de upscaling sobre latentes VAE (flow matching, condicionado por hff) |
-| Parámetros totales | 192M (modelo base y 1-step); 20,2M (variante lite) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (modelo de imagen, no de texto) |
-| Tipos de cuantización | bfloat16 (pesos oficiales); no se documentan otras cuantizaciones |
-| Idiomas soportados | No disponible (modelo de imagen) |
+| Arquitectura | Modelo generativo de upscaling latente sobre el espacio latente del VAE de FLUX.2 (flow matching, con destilación para las variantes de 1 paso) |
+| Parametros totales | 192M (variantes 200M) / 20.2M (variante lite 20M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No aplica (modelo de imagen, no de texto) |
+| Tipos de cuantizacion | Pesos publicados en bfloat16; no se documentan otras cuantizaciones |
+| Idiomas soportados | No disponible (modelo de imagen sin condicionamiento textual) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (bfloat16, configuración en metadatos) |
 
 ## Arquitectura y entrenamiento
 
-Steppe-Flux.2 es un modelo generativo pequeño entrenado únicamente para la tarea de upscaling. Trabaja sobre los latentes del VAE de FLUX.2 y produce un latente ampliado 2x que el VAE decodifica sin un segundo pase del modelo base. La arquitectura emplea flow matching con condicionamiento por una característica de alta frecuencia (hff), un parámetro entre 0 y 1 que controla la cantidad de detalle fino y nitidez de la salida. Los valores de hff son absolutos: se basan en una estimación de ruido de Immerkaer normalizada por cuantiles sobre fotos de ReLAION.
+Steppe-Flux.2 es un modelo generativo pequeño entrenado exclusivamente para ampliar latentes del VAE de FLUX.2. Trabaja sobre el espacio latente compartido por FLUX.2 [dev], FLUX.2 [klein] (4B y 9B, destilados y base) y MOSS-Image, de modo que el latente ampliado se decodifica directamente con el VAE sin un segundo pase de muestreo del modelo base. La familia emplea *flow matching* y las variantes de 1 paso incorporan destilación para reducir el coste a una sola evaluación.
 
-El entrenamiento incluye variantes destiladas de un solo paso (1-step) y un modelo base que admite entre 1 y 200 pasos. La guía (guidance) se implementa de forma distinta en cada variante: en los modelos 1-step es una entrada de guidance destilada, entrenada sobre valores de 1 a 2 sin coste adicional; en el modelo base se usa classifier-free guidance entre el hff y el hff nulo, con un coste de dos pasadas por paso. El modelo base se recomienda con 30 pasos Euler, sigma shift 2 y escala de ruido inicial 1,0. No se detalla en la información disponible el número de tokens ni la composición exacta del dataset de entrenamiento.
+El control de nitidez se ejerce mediante un condicionamiento de características de alta frecuencia (hff), parametrizado como una estimación absoluta de ruido de Immerkaer normalizada por cuantiles sobre fotos de ReLAION. La variante base permite además guiado sin clasificador (CFG) entre el hff objetivo y el hff nulo, con un coste de dos pases por paso; la variante de 1 paso usa un guiado destilado entrenado en el rango 1-2. El repositorio ocupa 0.8 GB e incluye tres ficheros de pesos con la configuración embebida en los metadatos.
 
 ## Capacidades
 
-- Upscaling 2x de imágenes sobre latentes del VAE de FLUX.2 (por ejemplo, 512 → 1024 o 1024 → 2048), con encadenamiento 2x → 2x.
-- Generación en un solo paso: aproximadamente 40 ms de tiempo de modelo para una imagen de 1024 px con el modelo por defecto en una RTX 5090.
-- Control de nitidez y detalle fino mediante el parámetro hff (0 a 1, por defecto 0,9; -1 deja que el modelo decida).
-- Compatibilidad nativa con FLUX.2 [dev], FLUX.2 [klein] 4B/9B (destilado y base) y MOSS-Image (decodificador pequeño).
-- Compatibilidad con el decodificador pequeño TAEF2 (madebyollin/taef2) del VAE de FLUX.2.
-- Integración en ComfyUI mediante el nodo ComfyUI-Steppe, con flujo `KSampler → Steppe Upscale Latent → VAE Decode`.
-- Solo imágenes: no incluye upscaling temporal (fotogramas por segundo), a diferencia de los modelos Steppe para Wan 2.1.
+- Superresolución latente 2x de imágenes generadas por FLUX.2 y MOSS-Image, con encadenado 2x → 2x (por ejemplo, 960x1280 → 3840x5120).
+- Decodificado directo por el VAE: no requiere prompt, *hires fix* ni segundo pase del modelo base.
+- Control de nitidez y detalle fino mediante el parámetro hff (rango 0-1, por defecto 0.9; -1 deja elegir al modelo).
+- Guiado destilado en las variantes de 1 paso (entrenado en 1-2) y CFG sobre hff en la variante base.
+- Variante lite de 20.2M con un pase de modelo unas 6 veces más rápido, orientada a salidas muy grandes y uso en tiempo real.
+- Compatibilidad nativa con el VAE de FLUX.2 [dev], FLUX.2 [klein] 4B/9B (destilados y base) y MOSS-Image (SFT y base).
+- Compatibilidad con el decodificador pequeño TAEF2 (madebyollin/taef2), con el que el pipeline completo baja a unos 19 ms.
+- Integración en ComfyUI mediante el nodo ComfyUI-Steppe (flujo `KSampler → Steppe Upscale Latent → VAE Decode`).
+- No soporta ampliación temporal (no hay upscaling de tasa de fotogramas, a diferencia de Steppe-Wan2.1).
 
 ## Casos de uso
 
-- Mejora de resolución en pipelines de generación de imágenes: tras muestrear con FLUX.2 [dev] o [klein], se aplica Steppe sobre el latente resultante para duplicar la resolución sin un segundo pase del modelo base, reduciendo coste computacional.
-- Producción de material gráfico a alta resolución: partiendo de latentes de 512 px se obtienen salidas de 1024 px con patch FID de 1,75, adecuado para impresión web y catálogos.
-- Uso en tiempo real dentro de ComfyUI: la variante de 20,2M con decodificador TAEF2 completa el pipeline en unos 19 ms, lo que permite upscaling interactivo en flujos de trabajo con previsualización.
-- Investigación sobre upscaling latente: el modelo base con control de pasos, CFG sobre hff y sampler configurable (30 pasos Euler, shift 2) sirve para estudiar el equilibrio entre calidad y coste.
-- Restauración y ampliación de imágenes existentes: al operar sobre latentes del VAE de FLUX.2, se integra en flujos image-to-image para ampliar imágenes ya codificadas.
-- Encadenado de ampliaciones: la capacidad 2x → 2x permite generar salidas de muy alta resolución en dos etapas manteniendo el control de nitidez mediante hff.
-- Despliegue con requisitos de VRAM ajustados: la variante lite con TAEF2 requiere 0,7 GB de VRAM pico, lo que facilita su uso en GPUs de gama media.
+- Ampliación de imágenes generadas en producción: tras un `KSampler` de FLUX.2 [klein] o MOSS-Image, se aplica Steppe sobre el latente y se decodifica, obteniendo el doble de resolución sin un segundo muestreo ni prompt adicional.
+- Flujos de trabajo en ComfyUI: el nodo ComfyUI-Steppe se instala desde ComfyUI-Manager (`comfy node install steppe`) y descarga los modelos en el primer uso, lo que facilita su adopción en pipelines existentes.
+- Salidas de muy alta resolución: el encadenado 2x → 2x con la variante de 192M permite pasar de 960x1280 a 3840x5120 manteniendo detalle en texturas finas (plumas, cabello, superficies húmedas), como muestran los ejemplos de la model card.
+- Iteración rápida y prototipado: la variante lite de 20.2M, con un pase de modelo 6 veces más rápido, sirve para previsualizar ampliaciones o para uso en tiempo real combinada con el decodificador TAEF2 (~19 ms de pipeline).
+- Investigación sobre upscaling latente: la variante base (`steppe_flux_2_200M_base`) permite ajustar pasos (1-200, recomendado 30 con sampler Eule) y CFG sobre hff, lo que la hace adecuada para experimentación y análisis del efecto del condicionamiento de alta frecuencia.
+- Restauración y mejora de imágenes ya generadas: al operar sobre latentes del VAE de FLUX.2, se puede reampliar una imagen existente sin regenerarla, útil en catalogos de imágenes o assets de juego que ya pasaron por el modelo base.
+- Integración con decodificadores alternativos: el soporte de TAEF2 permite montar pipelines de bajo coste donde el cuello de botella del VAE se reduce, adecuado para despliegues con requisitos de latencia estrictos.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre 1000 fotos (Axis-V1), de 512 → 1024, con solo el latente de FLUX.2 como entrada (sin prompt ni hff). Patch FID sobre teselas nativas de 256 px (menor es mejor); latencia con batch 1, decodificación VAE incluida, RTX 5090, bfloat16 eager.
+| Metrica | Steppe-Flux.2 | Bicubico |
+|---|---|---|
+| FID de parche | 1.75 | 8.12 |
+| Mejora frente al upscaler FLUX.2 anterior | -59% | No disponible |
+| Tiempo de modelo (1024 px, RTX 5090, modelo por defecto) | ~40 ms | No disponible |
+| Pipeline completo con TAEF2 (variante lite) | ~19 ms | No disponible |
 
-| Solución | Patch FID | FID | Latencia | VRAM pico |
-|---|---|---|---|---|
-| Steppe 200M base, 30 pasos | 1,72 | 1,95 | 1671 ms | 3,0 GB |
-| Steppe 200M 1-step | 1,75 | 2,02 | 172 ms | 3,0 GB |
-| Steppe 20M 1-step | 2,20 | 2,63 | 131 ms | 2,6 GB |
-| Steppe 200M 1-step + TAEF2 | 3,22 | 4,55 | 60 ms | 1,0 GB |
-| Steppe 20M 1-step + TAEF2 | 3,81 | 5,17 | 19 ms | 0,7 GB |
-| FlowUpscaler (modelo FLUX.2 previo) | 4,28 | 4,50 | 128 ms | 2,7 GB |
-| SPAN 2x tras decodificar | 6,18 | 3,67 | 30 ms | 0,8 GB |
-| SesquiLSR FLUX.2 (latente) | 7,71 | 7,26 | 124 ms | 2,6 GB |
-| Bicúbico tras decodificar | 8,12 | 1,77 | 25 ms | 0,8 GB |
-| Real-ESRGAN x2 tras decodificar | 9,03 | 7,99 | 53 ms | 0,8 GB |
-| VOSR 1.4B (SR por difusión, un paso) | 25,88 | 15,83 | 595 ms | 9,2 GB |
-
-El límite de reconstrucción del VAE sobre este conjunto es patch FID 0,71. El error de color de ida y vuelta (ΔE00) es 1,82 frente a 1,74 de bicúbico. En una comparación con un LoRA upscaler de FLUX.2 [klein] 9B (Hildegard, 4 pasos, unos 7 s por imagen) sobre 30 imágenes, este añade detalle plausible pero se aleja del original.
+No se han publicado resultados de benchmarks adicionales (como MMLU, HumanEval o GSM8K, no aplicables a un modelo de imagen) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 3,0 GB pico para el modelo de 200M (base y 1-step); 2,6 GB para el de 20M; 1,0 GB y 0,7 GB respectivamente con el decodificador TAEF2.
-- GPU recomendadas: RTX 5090 para las cifras de latencia publicadas; cualquier GPU con al menos 3 GB de VRAM libre para el modelo de 200M.
-- Cabe en GPU de consumo: sí, con 3 GB de VRAM para el modelo principal y menos de 1 GB con TAEF2.
-- Opciones de despliegue: ComfyUI mediante ComfyUI-Steppe (disponible en ComfyUI-Manager); los ficheros también pueden instalarse manualmente en `ComfyUI/models/latent_upscale_models`.
-- Latencia y throughput: 1671 ms con el modelo base de 30 pasos; 172 ms con el 1-step de 200M; 131 ms con el 20M; 60 ms y 19 ms con TAEF2 respectivamente (batch 1, RTX 5090, decodificación VAE incluida).
+- VRAM estimada: no disponible de forma explícita; el repositorio completo ocupa 0.8 GB y los pesos son de 192M o 20.2M parámetros en bfloat16, por lo que la huella del modelo es reducida y el consumo dominante proviene del VAE de FLUX.2 y del modelo base que genera el latente.
+- GPU de referencia: RTX 5090, sobre la que se miden los ~40 ms del pase del modelo por defecto para 1024 px.
+- Cabe en GPU de consumo: sí, por el tamaño de los pesos; el requisito real lo impone el modelo FLUX.2/MOSS-Image que produce el latente y el decodificado del VAE.
+- Opciones de despliegue: ComfyUI mediante ComfyUI-Steppe (recomendado, con flujo `KSampler → Steppe Upscale Latent → VAE Decode`); instalación manual de los ficheros en `ComfyUI/models/latent_upscale_models`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput: ~40 ms de modelo por imagen de 1024 px con el modelo por defecto; ~19 ms de pipeline completo con la variante lite y el decodificador TAEF2; la mayor parte del tiempo restante corresponde al decodificado del VAE.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Enfoque | Patch FID | Latencia | Licencia |
+| Modelo | Parametros | Tipo | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Steppe-Flux.2 200M 1-step | 192M | Latente FLUX.2, 1 paso | 1,75 | 172 ms | MIT |
-| FlowUpscaler | No disponible | Latente FLUX.2 | 4,28 | 128 ms | No disponible |
-| SesquiLSR FLUX.2 | No disponible | Latente FLUX.2 (hires fix) | 7,71 | 124 ms | No disponible |
-| VOSR 1.4B | 1,4B | SR por difusión, un paso | 25,88 | 595 ms | No disponible |
-| Real-ESRGAN x2 | No disponible | SR tras decodificar | 9,03 | 53 ms | No disponible |
+| Steppe-Flux.2 | 192M / 20.2M | Upscaler latente para VAE de FLUX.2 | 2x, encadenable 2x → 2x | MIT | Hugging Face, ComfyUI |
+| Steppe-Wan2.1 | No disponible | Upscaler latente para VAE de Wan 2.1 (con soporte temporal) | No disponible | No disponible | Hugging Face |
+| Upscaler FLUX.2 anterior de TensorForger | No disponible | Upscaler latente para VAE de FLUX.2 | 2x | No disponible | Referenciado en la model card |
+
+No se dispone de datos de benchmarks comparativos con otras alternativas de superresolución en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Solo admite el VAE de FLUX.2; no es compatible con FLUX.1, Wan, Qwen-Image, SD3, SDXL ni otros VAE (para Wan 2.1 existe Steppe-Wan2.1).
-- No realiza upscaling temporal: únicamente imágenes, sin ampliación de fotogramas por segundo.
-- El soporte de FLUX.2 en ComfyUI requiere ComfyUI-Steppe 1.1.0 (rama flux2-support), que según la model card aún no estaba publicada en el momento de redactarla.
-- El error de color de ida y vuelta (ΔE00 1,82) es ligeramente superior al de bicúbico (1,74), lo que puede introducir desviaciones de color sutiles.
-- Con decodificador TAEF2 la calidad cae de forma notable (patch FID 3,22 frente a 1,75), por lo que su uso implica un compromiso entre velocidad y fidelidad.
-- No se documentan sesgos específicos ni tasas de alucinación; al ser un modelo de upscaling, el riesgo principal es la invención de detalle plausible que no está en la imagen original.
-- Licencia MIT, sin restricciones conocidas para uso comercial.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta, y la model card contiene varios TODO pendientes de completar (hero card, pruebas en ComfyUI).
+- Solo funciona con latentes del VAE de FLUX.2: no es compatible con FLUX.1, Wan, Qwen-Image, SD3, SDXL ni otros VAE (para Wan 2.1 existe Steppe-Wan2.1).
+- No realiza upscaling temporal ni de tasa de fotogramas; es exclusivamente para imágenes.
+- No acepta prompt ni condicionamiento textual: el resultado depende del latente de entrada y del parámetro hff.
+- El hff actúa con mucha más fuerza en estos modelos que en los de Wan 2.1, por lo que valores altos pueden producir un exceso de nitidez artificial.
+- En la variante base, el CFG sobre hff duplica el coste por paso (dos pases).
+- No se documentan sesgos específicos ni tasas de alucinación; al ser un modelo de imagen, el riesgo se traslada a artefactos de ampliación en texturas finas.
+- La licencia MIT permite uso comercial, pero conviene verificar las licencias de los modelos base (FLUX.2, MOSS-Image) con los que se combine en producción.
+- Requiere ComfyUI-Steppe versión 1.1.0 o superior para el soporte de FLUX.2.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/TensorForger/Steppe-Flux.2
-- Repositorio de nodos ComfyUI-Steppe: https://github.com/TensorForger/ComfyUI-Steppe
-- Modelo base FLUX.2 [dev]: https://huggingface.co/black-forest-labs/FLUX.2-dev
-- Modelo base FLUX.2 [klein] 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
-- Modelo base FLUX.2 [klein] 9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
-- Modelo base FLUX.2 [klein] base 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
-- Modelo base FLUX.2 [klein] base 9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B
-- Modelo base MOSS-Image SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
-- Modelo base MOSS-Image Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
+- Modelo en Hugging Face: https://huggingface.co/TensorForger/Steppe-Flux.2
+- Nodos ComfyUI-Steppe: https://github.com/TensorForger/ComfyUI-Steppe
+- Flujos de ejemplo: https://github.com/TensorForger/ComfyUI-Steppe/tree/main/example_workflows
+- Steppe-Wan2.1: https://huggingface.co/TensorForger/Steppe-Wan2.1
 - Decodificador TAEF2: https://huggingface.co/madebyollin/taef2
-- Steppe para Wan 2.1: https://huggingface.co/TensorForger/Steppe-Wan2.1
+- Modelo base FLUX.2 [dev]: https://huggingface.co/black-forest-labs/FLUX.2-dev
+- Modelo base MOSS-Image: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
+- Repositorio de assets del autor: https://github.com/tensorforger/tensorforger

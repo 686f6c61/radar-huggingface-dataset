@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - tanepiper/termite: Use local language and decision models to ...",
-      "url": "https://github.com/tanepiper/termite/tree/main",
-      "snippet": "Use local language and decision models to generate complex shell commands with confidence - tanepiper/termite"
-    },
-    {
-      "title": "termite/specs/2026-11-05-model-grading/spec.md at main - GitHub",
-      "url": "https://github.com/tanepiper/termite/blob/main/specs/2026-11-05-model-grading/spec.md",
-      "snippet": "The refusal field was first tested on 5 November 2026, in one ZeroGPU run of Llama 3.1 8B with refusals removed. It declined 7 of 24 hostile requests, so this model can refuse."
-    }
-  ]
+  "sources": []
 }

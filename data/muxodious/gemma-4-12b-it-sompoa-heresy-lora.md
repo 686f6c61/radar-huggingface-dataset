@@ -2,108 +2,99 @@
 
 ## Resumen
 
-`MuXodious/gemma-4-12B-it-SOMPOA-heresy-LORA` es una adaptación LoRA del modelo `google/gemma-4-12B` publicada por el usuario MuXodious. Se trata de un fine-tuning orientado a eliminar el comportamiento de rechazo (refusals) del modelo base, generado con la herramienta Heretic v2.2.0.dev0 mediante la técnica SOMPOA. El resultado es un adaptador de aproximadamente 0,2 GB que se aplica sobre los pesos originales de Gemma 4 12B, no un modelo completo.
+Este repositorio no contiene un modelo completo, sino un adaptador LoRA de decensurado (abliteration) construido sobre `google/gemma-4-12B-it`. Lo publica el usuario MuXodious bajo licencia Apache 2.0 y emplea la herramienta Heretic v2.2.0.dev0 con una variante de parámetros denominada SOMPOA, que ajusta selectivamente las proyecciones de atención (`attn.o_proj`) y de la MLP (`mlp.down_proj`) para reducir la tasa de rechazos del modelo base. El adaptador pesa 42.729.472 parámetros y el repositorio ocupa 0,3 GB, con pesos en safetensors y una versión GGUF incluida para su aplicación directa sobre el modelo censurado mediante `--lora LoRA.gguf`.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un ejemplo concreto de "abliteration" (eliminación de mecanismos de seguridad por manipulación de pesos) sobre un modelo multimodal de Google DeepMind. Por otro, sirve para entender el estado de la familia Gemma 4, que introduce arquitecturas híbridas de atención, capacidades nativas de audio y vídeo, ventanas de contexto de hasta 256K tokens y soporte de más de 140 idiomas.
+El interés práctico reside en que permite eliminar los mecanismos de rechazo del Gemma 4 12B sin reentrenar el modelo completo, manteniendo una divergencia KL baja (0,0639) respecto al original según la model card. El modelo base es un transformer multimodal de Google DeepMind que procesa texto, imagen, vídeo y audio de forma nativa, con ventana de contexto de hasta 256K tokens y soporte de más de 140 idiomas, orientado a razonamiento, código y flujos agénticos.
 
-El modelo base Gemma 4 12B es un transformer multimodal "encoder-free" que procesa texto, imagen, audio y vídeo y genera texto, con modos de razonamiento configurables y soporte nativo de function calling. Esta variante concreta hereda esas capacidades pero modifica el comportamiento de alineación, lo que tiene implicaciones importantes para su uso en producción.
+La relevancia actual es doble: por un lado, demuestra que las técnicas de abliteration con control fino por capa (los pesos `max_weights` y `min_weights` por índice de capa) se han industrializado en herramientas como Heretic; por otro, plantea un caso claro de tensión entre la licencia Apache 2.0 declarada y las condiciones de uso del modelo base de Google, que conviene revisar antes de cualquier despliegue en producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal decoder-only con atención híbrida (sliding window local + atención global); adaptador LoRA sobre Gemma 4 12B |
-| Parametros totales | 12B (modelo base); el adaptador LoRA ocupa ~0,2 GB |
-| Parametros activos | No aplica (el modelo base 12B es denso, no MoE) |
-| Longitud de contexto | Hasta 256K tokens (según model card del base; los modelos pequeños de la familia usan 128K) |
-| Tipos de cuantizacion | No disponible (el repo solo contiene safetensors del adaptador) |
-| Idiomas soportados | Más de 140 idiomas según el modelo base; no se detalla lista específica |
-| Licencia | Apache 2.0 (con license_link a la licencia de Gemma 4) |
-| Formato de pesos | Safetensors (adaptador LoRA); requiere los pesos del base en safetensors |
-| Pipeline | any-to-any (texto, imagen, audio, vídeo de entrada; texto de salida) |
-| Libreria | transformers |
-| Tamano del repo | 0,2 GB |
-| Fecha de creacion | 2026-11-09 |
+| Arquitectura | LoRA (PEFT) sobre transformer multimodal Gemma 4 12B Unified del modelo base |
+| Parametros totales | 42.729.472 (adaptador LoRA); el modelo base es de 12B |
+| Parametros activos | no disponible (el adaptador no es MoE; el modelo base 12B es denso) |
+| Longitud de contexto | no disponible para el adaptador; el modelo base soporta hasta 256K tokens |
+| Tipos de cuantizacion | GGUF incluido en el repositorio (niveles concretos no disponibles); safetensors para el adaptador |
+| Idiomas soportados | no disponible para el adaptador; el modelo base soporta más de 140 idiomas |
+| Licencia | apache-2.0 (con `license_link` a la licencia de Gemma 4 de Google) |
+| Formato de pesos | safetensors y GGUF |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Gemma 4 12B emplea una arquitectura transformer decoder-only con un mecanismo de atención híbrido que intercala atención local de ventana deslizante con atención global completa, garantizando que la capa final sea siempre global. Esta combinación busca el bajo consumo de memoria de un modelo ligero sin renunciar a la percepción de contexto amplio. El modelo es "encoder-free": procesa audio, imagen y vídeo de forma nativa sin codificadores separados, lo que simplifica el despliegue en dispositivos de consumo.
+El adaptador es un LoRA de bajo rango aplicado sobre las capas de atención y MLP del Gemma 4 12B. Según los parámetros SOMPOA publicados, la intervención se concentra en `attn.o_proj` (con `direction_index` 26,71 y `max_weight_position` 35,36) y en `mlp.down_proj` (`max_weight_position` 27,34), con pesos por capa que oscilan entre 0,01 y 1,76 y distancias mínimas de 7,89 y 2,86 respectivamente. Esta selección por capa sugiere un direccionamiento quirúrgico de las representaciones asociadas al rechazo, en lugar de una ablación global.
 
-Sobre el entrenamiento del base, la model card indica que Gemma 4 se distribuye en variantes preentrenada e instruction-tuned, con soporte multilingüe en más de 140 idiomas y modos de razonamiento configurables. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
-
-La modificación de esta variante se realizó con Heretic v2.2.0.dev0 aplicando la técnica SOMPOA, que ajusta selectivamente los pesos de las proyecciones `attn.o_proj` y `mlp.down_proj` en función de una `direction_index` (26,71) y posiciones de peso máximas concretas (35,36 para atención y 27,34 para MLP). Los parámetros SOMPOA documentados incluyen pesos máximos y mínimos por capa y distancias de peso mínimas (7,89 y 2,86 respectivamente). El objetivo es suprimir la dirección de rechazo en el espacio de activaciones manteniendo la coherencia del modelo, con una divergencia KL de 0,0639 respecto al original.
+El entrenamiento se realizó con Heretic v2.2.0.dev0, una herramienta de decensurado que optimiza automáticamente los parámetros de abliteration minimizando la divergencia KL respecto al modelo original. La model card reporta 11 rechazos sobre 101 prompts de prueba (frente a 101/101 del original) y una divergencia KL de 0,0639. No se especifican el volumen de datos de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; el adaptador no modifica la arquitectura del modelo base, que mantiene su naturaleza multimodal encoder-free con soporte nativo de audio, imagen y vídeo.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modos de "thinking" configurables heredados de Gemma 4.
-- Comprensión multimodal nativa: entrada de texto, imagen (con soporte de relación de aspecto y resolución variable), audio y vídeo; salida solo de texto.
-- Capacidades de código y matemáticas mejoradas respecto a generaciones anteriores de Gemma, según la model card del base.
-- Soporte nativo de function calling / tool calling, orientado a flujos agénticos.
-- Soporte del rol `system` nativo para conversaciones estructuradas.
-- Multilingüismo en más de 140 idiomas.
-- Comportamiento "decensored": reducción drástica de rechazos (11/101 frentes a 101/101 del original), lo que cambia el perfil de respuesta ante peticiones sensibles.
-- No se documentan capacidades de generación de imagen, audio o vídeo; el pipeline any-to-any se refiere a las modalidades de entrada.
+- Generación de texto, razonamiento y matemáticas heredados del Gemma 4 12B, con modos de pensamiento configurables.
+- Capacidades multimodales nativas: entrada de texto, imagen (con aspect ratio y resolución variables), vídeo y audio, sin codificadores separados.
+- Generación de código y soporte de function calling nativo, orientado a flujos agénticos.
+- Soporte de system prompt nativo para conversaciones estructuradas.
+- Multilingüismo en más de 140 idiomas (capacidad del modelo base).
+- Reducción drástica de rechazos: 11/101 frentes a 101/101 del original, según la model card.
+- Aplicable tanto en formato safetensors (PEFT) como GGUF sobre el modelo base cuantizado.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: el adaptador permite estudiar cómo varía la tasa de rechazos y la divergencia KL al modificar direcciones de activación, útil para auditar técnicas de abliteration.
-- Evaluación comparativa de robustez: comparar respuestas del base y de la variante sobre el mismo conjunto de prompts para medir deriva de comportamiento y calidad.
-- Generación creativa sin filtros en entornos controlados: escritura de ficción o guiones que requieran temáticas que el modelo base rechazaría, siempre con revisión humana.
-- Prototipado de asistentes conversacionales multilingües: aprovechar los más de 140 idiomas y la ventana de 256K para conversaciones multi-turno con contexto extenso.
-- Análisis multimodal de documentos: extraer información de imágenes, audio y vídeo combinados con texto en un único pipeline, gracias a la arquitectura encoder-free.
-- Agentes autónomos con tool calling: integrar el modelo en flujos de múltiples pasos donde el rechazo del base interrumpiría la cadena, evaluando previamente los riesgos.
-- Docencia y demostraciones: ilustrar en un aula cómo un LoRA de pocos cientos de MB altera el comportamiento de un modelo de 12B sin reentrenarlo por completo.
+- Investigación sobre alineación y seguridad: permite estudiar qué representaciones internas codifican el rechazo comparando las activaciones del modelo original y del adaptado, gracias a los pesos por capa publicados en la model card.
+- Evaluación de robustez de filtros: útil para equipos de red teaming que necesitan un modelo con menor tasa de rechazo para probar clasificadores de contenido y políticas de moderación.
+- Generación creativa sin restricciones excesivas: escritura de ficción, guiones o narrativa con temáticas sensibles donde el modelo base rechazaría peticiones legítimas.
+- Asistentes de investigación en dominios sensibles (seguridad, medicina, criminología): el modelo puede abordar temas que el base evade, siempre con revisión humana y dentro de marcos legales.
+- Fine-tuning posterior sobre el adaptador: al ser un LoRA de 42,7 M de parámetros y 0,3 GB, se puede combinar con otros adaptadores o continuar el entrenamiento en una sola GPU de consumo.
+- Despliegue local en hardware de consumo: la versión GGUF permite aplicar el adaptador sobre un Gemma 4 12B cuantizado en llama.cpp u Ollama, sin infraestructura de servidor.
+- Evaluación comparativa de técnicas de abliteration: sirve como referencia reproducible para comparar Heretic con otros métodos (por ejemplo, ORPO o DPO de rechazo) sobre el mismo modelo base.
 
 ## Benchmarks y rendimiento
 
-La model card solo publica métricas del proceso de decensoring, no benchmarks estándar (MMLU, HumanEval, GSM8K, etc.).
-
 | Metrica | Este modelo | Modelo original |
 |---|---|---|
-| Refusals | 11/101 | 101/101 |
-| KL divergence | 0,0639 | 0 (por definición) |
+| Rechazos | 11/101 | 101/101 |
+| Divergencia KL | 0,0639 | 0 (por definición) |
 
-No se han publicado resultados de benchmarks de capacidad (razonamiento, código, matemáticas) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia del base 12B: aproximadamente 24 GB en FP16/BF16, unos 12-14 GB en cuantización de 8 bits y 7-8 GB en 4 bits (estimaciones habituales para 12B; no confirmadas en la información disponible).
-- El adaptador LoRA añade un sobrecoste mínimo (~0,2 GB) y se puede fusionar con los pesos base.
-- GPU recomendadas: A100 40/80 GB, H100, L40S para FP16; RTX 4090 (24 GB) para FP16 ajustado o 8 bits; RTX 3090/4080 para cuantizaciones de 4-8 bits.
-- Cabe en GPU de consumo con cuantización: RTX 4090, 4080, 3090 e incluso 4060 Ti 16 GB en 4 bits, aunque el procesamiento de audio y vídeo incrementa los requisitos.
-- Opciones de despliegue: transformers (formato nativo del repo), vLLM y TGI si soportan Gemma 4 12B; llama.cpp/Ollama requerirían conversión a GGUF, no incluida en el repo.
-- Latencia y throughput: no disponibles.
+- El adaptador en sí ocupa 0,3 GB y 42,7 M de parámetros; requiere cargar el modelo base Gemma 4 12B completo para inferencia.
+- VRAM estimada para el modelo base en FP16: aproximadamente 24 GB; en cuantización de 8 bits, unos 12-13 GB; en 4 bits, unos 7-8 GB (estimaciones orientativas, no confirmadas en la información disponible).
+- GPU recomendadas: A100 40/80 GB o H100 para FP16 sin cuantizar; RTX 4090 (24 GB) para FP16 justo o 8 bits; RTX 3090/4080 para cuantizaciones de 4-8 bits.
+- Cabe en GPU de consumo (RTX 3060 12 GB, RTX 4060 Ti 16 GB) si se usa la versión GGUF en 4 bits.
+- Opciones de despliegue: PEFT + Transformers para safetensors; llama.cpp u Ollama con `--lora LoRA.gguf` para GGUF; vLLM y TGI para servir el modelo base con el adaptador fusionado.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Multimodalidad | Licencia | Notas |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-12B-it-SOMPOA-heresy-LORA (este) | 12B + LoRA | 256K | Texto, imagen, audio, vídeo (entrada) | Apache 2.0 | Variante decensored, 11/101 rechazos |
-| google/gemma-4-12B (base) | 12B | 256K | Texto, imagen, audio, vídeo (entrada) | Apache 2.0 | Modelo oficial con alineación completa |
-| Gemma 4 26B A4B | 26B (MoE, 4B activos) | 256K | Texto, imagen, vídeo | Apache 2.0 | Mayor capacidad, arquitectura MoE |
-| Gemma 4 31B | 31B | 256K | Texto, imagen, vídeo | Apache 2.0 | El mayor de la familia, denso |
+| gemma-4-12B-it-SOMPOA-heresy-LORA | 42,7 M (adaptador) + 12B base | 256K (base) | LoRA decensurado | apache-2.0 | Hugging Face, 177 descargas |
+| google/gemma-4-12B-it | 12B | 256K | Modelo base multimodal | Apache 2.0 (licencia Gemma 4) | Hugging Face, oficial |
+| Adaptadores abliterated de Llama 3.x | variable | 128K | LoRA decensurado | según base | Comunidad en Hugging Face |
 
-No se dispone de datos de benchmarks comparativos de capacidad para esta variante concreta.
+No se dispone de datos de benchmarks comparativos con otros adaptadores de decensurado en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El proceso de abliteration elimina salvaguardas: el modelo puede generar contenido dañino, ilegal o NSFW, y no debe desplegarse sin filtros externos.
-- Riesgo elevado de alucinación y de respuestas inseguras al haberse suprimido la dirección de rechazo; la divergencia KL de 0,0639 indica una alteración medible de la distribución.
-- La licencia Apache 2.0 se acompaña de un enlace a la licencia específica de Gemma 4; conviene revisar las condiciones de uso comercial y las restricciones de la política de uso de Google antes de producción.
-- El repo solo contiene el adaptador LoRA: es obligatorio descargar `google/gemma-4-12B` y aplicar el adaptador; no es un modelo autónomo.
-- No se documentan idiomas concretos ni sesgos específicos de esta variante; los sesgos del base pueden amplificarse al eliminar rechazos.
-- El procesamiento de audio y vídeo aumenta los requisitos de memoria y latencia respecto a texto puro.
-- Modelo con 0 descargas y 0 likes en el momento de la consulta: sin validación comunitaria ni reportes de calidad independientes.
-- No hay cuantizaciones GGUF publicadas en el repo, lo que limita el despliegue en llama.cpp/Ollama sin conversión manual.
+- El adaptador elimina parte de los mecanismos de seguridad del modelo base; puede generar contenido dañino, ilegal o sexualmente explícito sin las salvaguardas originales.
+- La licencia Apache 2.0 declarada convive con un `license_link` a la licencia de Gemma 4 de Google; conviene verificar las condiciones de uso comercial del modelo base antes de desplegar.
+- La divergencia KL de 0,0639 indica una degradación medible, aunque moderada, de la distribución original; puede afectar a la calidad en tareas generales.
+- No se han publicado evaluaciones de sesgos, toxicidad ni alucinación específicas para este adaptador.
+- El adaptador no modifica la arquitectura multimodal, pero no se confirma que las capacidades de audio, imagen y vídeo se conserven intactas tras la abliteration.
+- Solo hay 177 descargas y 0 likes: es un artefacto de comunidad sin validación externa ni mantenimiento garantizado.
+- La fecha de creación (2026-11-09) y la referencia arXiv 2607.02770 deben tratarse con cautela; no se ha verificado su correspondencia con publicaciones reales.
+- El uso en producción requiere auditoría propia de contenido y cumplimiento normativo (por ejemplo, AI Act en la UE).
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/MuXodious/gemma-4-12B-it-SOMPOA-heresy-LORA
-- Modelo base: https://huggingface.co/google/gemma-4-12B
-- Colección Gemma 4: https://huggingface.co/collections/google/gemma-4
-- GitHub de Google Gemma: https://github.com/google-gemma
-- Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
-- Documentación: https://ai.google.dev/gemma/docs/core
-- Informe técnico: https://arxiv.org/abs/2607.02770
-- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Heretic: https://heretic-project.org
+- Blog de lanzamiento de Gemma 4 12B: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
+- Documentación de Gemma: https://ai.google.dev/gemma/docs/core
+- Informe técnico (arXiv 2607.02770): https://arxiv.org/abs/2607.02770
+- Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
+- GitHub de Google Gemma: https://github.com/google-gemma
+- Google DeepMind Gemma: https://deepmind.google/models/gemma/

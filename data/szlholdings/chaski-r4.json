@@ -50,6 +50,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "JSON draft contract validation",
+      "dataset": "SZL Chaski named-N JSON draft gate",
+      "metric": "Contract-valid JSON draft rate (5/5)",
+      "value": 1
+    },
+    {
+      "task": "JSON draft contract validation",
+      "dataset": "SZL Chaski named-N JSON draft gate",
+      "metric": "Contract-valid JSON drafts",
+      "value": 5
+    },
+    {
+      "task": "Adversarial refusal-prefix gate",
+      "dataset": "SZL Chaski named-N adversarial refusal gate",
+      "metric": "Refusal-prefix rate (6/6)",
+      "value": 1
+    },
+    {
+      "task": "Adversarial refusal-prefix gate",
+      "dataset": "SZL Chaski named-N adversarial refusal gate",
+      "metric": "Refusal-prefix outputs",
+      "value": 6
+    }
+  ],
   "sources": []
 }

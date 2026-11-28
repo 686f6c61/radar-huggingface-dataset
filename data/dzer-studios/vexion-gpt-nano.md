@@ -2,98 +2,86 @@
 
 ## Resumen
 
-Vexion-gpt-nano es un modelo de lenguaje denso de 117 millones de parámetros desarrollado por DZER-Studios como proyecto de investigación y aprendizaje. Se trata de una implementación de arquitectura Transformer escrita desde cero en PyTorch puro, sin dependencias de frameworks de terceros para el modelado, y entrenada sobre el corpus multilingüe CulturaX con un total de 21 mil millones de tokens. Su ventana de contexto es de 1024 tokens y su vocabulario de 40.960 entradas.
+Vexion-gpt-nano es un modelo de lenguaje denso de 117 millones de parámetros desarrollado por DZER-Studios, construido desde cero en PyTorch puro. Se trata de un ejercicio de ingeniería orientado a comprender y optimizar el ciclo completo de preentrenamiento de un transformer causal, sin recurrir a frameworks de alto nivel como `transformers` de Hugging Face. El modelo se entrenó sobre el dataset multilingüe CulturaX, aunque la model card declara únicamente ruso como idioma soportado.
 
-El modelo se presenta como la versión base ("nano") de una familia planificada que incluye variantes de 345M y 1.3B de parámetros. El objetivo declarado del proyecto es comprender en profundidad la arquitectura Transformer, optimizar el uso de memoria y controlar el proceso de preentrenamiento, por lo que prioriza la transparencia del código sobre la compatibilidad con el ecosistema estándar.
+La arquitectura es un GPT causal clásico, sin mezcla de expertos (MoE) ni RoPE, con atención causal estándar y activaciones GELU/SiLU. Incorpora Flash Attention mediante kernels fusionados y un DataLoader personalizado que transmite datos binarios (`.bin`) evitando la sobrecarga del recolector de basura de Python. El contexto máximo es de 1024 tokens y el vocabulario de 40960 entradas.
 
-Su relevancia práctica es limitada: no soporta la API de `transformers` (no es cargable mediante `AutoModelForCausalLM`) y requiere los scripts propios del repositorio para inferencia y reentrenamiento. Está entrenado exclusivamente en ruso y su licencia Apache 2.0 permite uso comercial, aunque la calidad del modelo no está validada con benchmarks públicos.
+Su relevancia es principalmente educativa y experimental: demuestra que es posible preentrenar un modelo de 117M parámetros con 21 mil millones de tokens en una única RTX 4060 Ti de 16 GB en 280 horas. No obstante, su incompatibilidad con la API estándar de `transformers` y su limitado contexto lo sitúan fuera de los flujos de producción convencionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso causal (GPT clásico, sin MoE ni RoPE), atención causal con GELU/SiLU, Flash Attention |
+| Arquitectura | Transformer causal denso (GPT clásico, sin MoE ni RoPE) |
 | Parametros totales | 117.299.712 |
-| Parametros activos | no disponible (no es MoE) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 1024 tokens |
-| Tipos de cuantizacion | no disponible (pesos en safetensors, presumiblemente fp32/fp16; no se documentan GGUF ni otras) |
-| Idiomas soportados | ruso |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Ruso (ru) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (0,2 GB de repositorio) |
+| Formato de pesos | safetensors (custom code, no compatible con `transformers`) |
 
 ## Arquitectura y entrenamiento
 
-Vexion-gpt-nano emplea una arquitectura Transformer densa clásica, sin mezcla de expertos (MoE) ni codificación posicional rotatoria (RoPE), apoyándose en atención causal estándar y funciones de activación GELU/SiLU. Integra Flash Attention con kernels fusionados, lo que reduce el consumo de VRAM durante el entrenamiento. La configuración se gestiona mediante un `config.json` compatible con los campos estándar de Hugging Face (`hidden_size`, `num_hidden_layers`, etc.), aunque el modelo en sí no es cargable con la API de `transformers`. El optimizador empleado es Adaw en 32 bits.
+El modelo emplea una arquitectura transformer causal densa escrita en PyTorch puro, con atención causal estándar y funciones de activación GELU/SiLU. No utiliza RoPE ni mezcla de expertos. La configuración se gestiona mediante un `config.json` compatible con los estándares de Hugging Face (`hidden_size`, `num_hidden_layers`, etc.), aunque la implementación está desacoplada de la librería `transformers`. Integra Flash Attention con kernels fusionados para reducir el consumo de VRAM durante el entrenamiento.
 
-El entrenamiento se realizó sobre el dataset CulturaX (uonlp/CulturaX), con 21 mil millones de tokens de preentrenamiento, en una única RTX 4060 Ti de 16 GB, con `batch_size` de 8 y 24 pasos de acumulación, durante 280 horas. La model card reporta una pérdida de entrenamiento de 3,21 y una pérdida de validación de 3,1 tras 220.000 pasos. No se documenta ninguna fase de ajuste fino supervisado, RLHF o DPO.
+El preentrenamiento se realizó sobre el dataset CulturaX con un total de 21 mil millones de tokens, usando una única GPU RTX 4060 Ti de 16 GB, con `batch_size` de 8 y 24 pasos de acumulación, durante 280 horas y 220.000 pasos totales. El optimizador es Adaw, que mantiene los valores en formato de 32 bits para reducir la pérdida. Los resultados reportados son una pérdida de entrenamiento de 3,21 y una pérdida de validación de 3,1. No se menciona el uso de RLHF, DPO ni ajuste fino supervisado.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en ruso, con decodificación controlable mediante temperatura, penalización por repetición y límite de tokens nuevos.
-- Modelo base de preentrenamiento: no está alineado para instrucciones ni diálogo.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: limitadas al ruso según la model card.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Compatibilidad con `transformers`: no soportada; requiere los scripts `model.py`, `generate.py` y `generation.py` del repositorio.
+- Generación de texto autoregresiva en ruso.
+- Razonamiento básico y coherencia conversacional limitada por el tamaño del modelo y el contexto de 1024 tokens.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- Capacidad multilingüe limitada: la model card declara únicamente ruso, aunque el dataset CulturaX es multilingüe.
+- No dispone de modo de razonamiento explícito (thinking mode), visión ni audio.
+- Compatible con scripts propios de inferencia (`generate.py`, `generation.py`, `generate_base.py`) que aceptan parámetros como `temperature`, `rep_penalty`, `max_new_tokens` y `device`.
 
 ## Casos de uso
 
-- Investigación educativa sobre arquitecturas Transformer: el código en PyTorch puro y el `config.json` estándar permiten estudiar el entrenamiento y la inferencia de un GPT desde cero sin abstracciones de frameworks.
-- Reentrenamiento y ajuste fino sobre corpus rusos propios: los scripts `train.py` admiten reanudación desde checkpoints (`--resume`) y ajuste de hiperparámetros, útil para experimentos académicos con presupuesto de hardware reducido.
-- Generación de texto en ruso para tareas de completado simple: con contexto de 1024 tokens puede emplearse en prototipos de autocompletado o generación de texto breve, siempre con revisión humana.
-- Base para experimentos de decodificación: parámetros como temperatura y penalización por repetición permiten estudiar el comportamiento de la generación en modelos pequeños.
-- Docencia y formación en ingeniería de LLM: el proyecto documenta la dinámica de entrenamiento, el uso de Flash Attention y el diseño de un DataLoader optimizado para datos binarios, material útil para cursos prácticos.
-- Evaluación comparativa de modelos pequeños: sirve como referencia de línea base de 117M parámetros en ruso para comparar con modelos densos de tamaño similar.
+- Experimentación académica en preentrenamiento de transformers: el modelo sirve como referencia reproducible para estudiar dinámicas de entrenamiento con 21B tokens en hardware de consumo, gracias a sus scripts de entrenamiento y reanudación desde checkpoints.
+- Generación de texto en ruso para prototipos: puede emplearse en demostraciones de generación condicionada por prompt con ventanas cortas de 1024 tokens, útil para validar pipelines de inferencia personalizados.
+- Investigación sobre eficiencia de memoria: la integración de Flash Attention y el DataLoader binario permiten estudiar optimizaciones de VRAM y throughput en GPUs de gama media como la RTX 4060 Ti.
+- Base para ajuste fino experimental: al ser un modelo pequeño y con licencia Apache 2.0, puede servir como punto de partida para experimentos de fine-tuning en dominios específicos en ruso, siempre con los scripts propios del repositorio.
+- Docencia y formación técnica: su arquitectura clara y sin dependencias de frameworks pesados lo hace adecuado para explicar el funcionamiento interno de un GPT causal a estudiantes de machine learning.
+- Pruebas de integración de sistemas custom: útil para equipos que desarrollan sus propios runners de inferencia y necesitan un modelo ligero con pesos safetensors y código propio para validar su infraestructura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas de entrenamiento:
-
-| Metrica | Valor |
-|---|---|
-| Train loss (220.000 pasos) | 3,21 |
-| Val loss (220.000 pasos) | 3,1 |
-| Tokens de preentrenamiento | 21 mil millones |
-| Tiempo total de entrenamiento | 280 horas |
-| Hardware de entrenamiento | 1x RTX 4060 Ti 16 GB |
-
-No se proporcionan resultados de MMLU, HumanEval, GSM8K ni de evaluaciones en ruso.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 117M parámetros, en fp32 ocupa aproximadamente 0,47 GB y en fp16 unos 0,23 GB; el repositorio completo pesa 0,2 GB.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; el autor entrenó el modelo en una RTX 4060 Ti de 16 GB.
-- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares, e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no usa la API de `transformers` ni formato GGUF. El despliegue debe hacerse con los scripts propios del repositorio (`generate_base.py`).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 (117M parámetros × 4 bytes), alrededor de 0,25 GB en FP16 y menos de 0,15 GB en cuantización de 8 bits, aunque no se documentan pesos cuantizados.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el entrenamiento se realizó en una RTX 4060 Ti de 16 GB.
+- Cabe en GPUs de consumo: sí, en GTX 1650, RTX 3050, RTX 4060 y superiores; también en CPU para inferencia, aunque con mayor latencia.
+- Opciones de despliegue: no es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no soporta la API de `transformers`. El despliegue debe realizarse con los scripts propios del repositorio (`generate.py`, `generation.py`, `generate_base.py`) sobre PyTorch.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idioma | Licencia | Compatibilidad transformers |
+| Modelo | Parámetros | Contexto | Licencia | Compatibilidad con `transformers` | Idiomas |
 |---|---|---|---|---|---|
-| Vexion-gpt-nano | 117M | 1024 | ruso | Apache 2.0 | No |
-| Vexion-gpt-medium (misma familia) | 345M | 1024 | ruso | no disponible | No (misma arquitectura custom) |
-| GPT-2 small | 124M | 1024 | inglés | MIT | Sí |
-| TinyLlama-1.1B | 1,1B | 2048 | multilingüe | Apache 2.0 | Sí |
+| Vexion-gpt-nano | 117M | 1024 | Apache 2.0 | No (custom code) | Ruso |
+| GPT-2 small | 124M | 1024 | MIT | Sí | Inglés |
+| GPT-Neo 125M | 125M | 2048 | MIT | Sí | Inglés |
+| Cerebras-GPT-111M | 111M | 2048 | Apache 2.0 | Sí | Inglés |
 
-La comparación con GPT-2 small es la más directa por tamaño, aunque este último está entrenado en inglés y es plenamente compatible con el ecosistema Hugging Face. No se dispone de datos de rendimiento comparativo entre Vexion-gpt-nano y estas alternativas.
+La comparativa se limita a modelos de tamaño similar, ya que no se dispone de datos de rendimiento del modelo evaluado. La principal diferencia frente a las alternativas es la incompatibilidad con la API estándar de `transformers` y el enfoque en ruso, mientras que los modelos comparados están orientados al inglés y cuentan con ecosistema de despliegue estándar.
 
 ## Limitaciones y advertencias
 
-- No es compatible con la librería `transformers`: no puede cargarse con `AutoModelForCausalLM` ni desplegarse en servidores de inferencia estándar (vLLM, TGI, Ollama).
-- Modelo base sin alineación: no está ajustado para instrucciones, diálogo ni uso conversacional; puede generar contenido incoherente o inapropiado.
-- Entrenado exclusivamente en ruso: no se garantiza un rendimiento aceptable en castellano ni en otros idiomas.
-- Ventana de contexto muy corta (1024 tokens), insuficiente para documentos largos o conversaciones multi-turno extensas.
-- Riesgo elevado de alucinación y de reproducción de sesgos presentes en CulturaX, sin filtrado documentado posterior.
-- Sin benchmarks públicos que validen su calidad; las únicas métricas son pérdidas de entrenamiento.
-- Licencia Apache 2.0 permite uso comercial, pero la falta de validación y la incompatibilidad con el ecosistema estándar desaconsejan su uso en producción.
-- El repositorio incluye código personalizado (`custom_code`), lo que implica revisar la seguridad y el mantenimiento del mismo antes de ejecutarlo.
+- Incompatibilidad total con la librería `transformers`: no se puede cargar mediante `AutoModelForCausalLM` ni usar con herramientas estándar como vLLM, TGI, Ollama o llama.cpp.
+- Contexto muy limitado de 1024 tokens, insuficiente para tareas de contexto largo o conversaciones multi-turno extensas.
+- Idioma restringido al ruso según la model card, a pesar de haberse entrenado con el dataset multilingüe CulturaX; el rendimiento en otros idiomas no está documentado.
+- Riesgo elevado de alucinación y baja calidad factual debido a su tamaño (117M parámetros) y a una pérdida de validación de 3,1.
+- Posibles sesgos heredados de CulturaX, sin documentación sobre mitigación ni evaluación de sesgos.
+- No se documentan procesos de alineación (RLHF, DPO) ni ajuste de instrucciones, por lo que el modelo probablemente no sigue instrucciones de forma fiable.
+- La licencia Apache 2.0 permite uso comercial, pero la ausencia de benchmarks y de garantías de calidad desaconseja su uso en producción sin evaluación previa.
+- El repositorio tiene 0 likes y 284 descargas, lo que indica una validación comunitaria muy limitada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/DZER-Studios/Vexion-gpt-nano
 - Dataset CulturaX: https://huggingface.co/datasets/uonlp/CulturaX
-- Repositorio del proyecto: no disponible en la información proporcionada
-- Paper o blog técnico: no disponible en la información proporcionada
-- Demo: no disponible en la información proporcionada
+- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

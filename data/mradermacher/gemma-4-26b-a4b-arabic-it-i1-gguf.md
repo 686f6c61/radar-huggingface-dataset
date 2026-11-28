@@ -2,87 +2,102 @@
 
 ## Resumen
 
-`mradermacher/Gemma-4-26B-A4B-Arabic-It-i1-GGUF` es una publicacion de cuantizaciones GGUF generadas por mradermacher a partir del modelo base `noman-asif/Gemma-4-26B-A4B-Arabic-It`. No se trata, por tanto, de un modelo entrenado desde cero, sino de un artefacto de distribucion que empaqueta en formato GGUF (compatible con llama.cpp y derivados) una variante afinada del modelo Gemma 4 de 26B de parametros totales con arquitectura MoE de 4B de parametros activos, especializada en arabe mediante fine-tuning conversacional.
+Gemma-4-26B-A4B-Arabic-It-i1-GGUF es la versión cuantizada en formato GGUF del modelo noman-asif/Gemma-4-26B-A4B-Arabic-It, un ajuste fino orientado a árabe (incluido dialecto saudí) sobre una base Gemma 4 de arquitectura MoE con 25.233.142.046 parámetros totales y aproximadamente 4.000 millones de parámetros activos por token (según la nomenclatura A4B). El trabajo de cuantización lo firma mradermacher, autor habitual de cuantizaciones GGUF de referencia en Hugging Face, que publica tanto una variante estática como esta versión con calibración imatrix (etiquetada i1).
 
-El modelo base parte de la familia Gemma 4 de Google DeepMind, con 25.233.142.046 parametros totales segun los pesos safetensors del repositorio original. La nomenclatura "A4B" indica arquitectura Mixture of Experts con aproximadamente 4 mil millones de parametros activos por token, lo que reduce el coste computacional de inferencia frente a un modelo denso del mismo tamano. El sufijo "Arabic-It" sugiere un ajuste supervisado orientado a instrucciones y conversacion en lengua arabe.
+El modelo base combina varias técnicas de ajuste: RS-LoRA, DPO con trust region y fusión de modelos mediante TIES merging, entrenado sobre los datasets Arabic-Reasoning-Instruct-30k y Arabic-Preference-DPO-6k. Está etiquetado como modelo multimodal (visión), con soporte declarado de chain-of-thought y conversación multi-turno, y licencia Apache 2.0. El repositorio ocupa 301 GB e incluye 24 cuantizaciones distintas, desde IQ1_S (8,4 GB) hasta Q6_K (22,7 GB).
 
-La relevancia de esta ficha es doble: por un lado documenta un caso de cuantizacion con imatrix (importancia matricial) que incluye hasta 23 variantes de cuantizacion distintas, desde IQ1_S hasta Q6_K; por otro, expone las limitaciones de trazabilidad cuando el repositorio derivado no hereda metadatos del modelo original (licencia, idiomas, pipeline). El repositorio ocupa 80 GB y no registra descargas ni likes en el momento de la consulta.
+Su relevancia práctica es doble: por un lado, ofrece un modelo de razonamiento en árabe con capacidades multimodales y licencia permisiva; por otro, al estar disponible en GGUF con imatrix permite ejecutarlo en hardware de consumo y en entornos de inferencia local (llama.cpp, Ollama, LM Studio) sin depender de GPUs de datacenter. Las 6.877 descargas acumuladas reflejan un interés real pese a la ausencia de likes en el momento de la consulta.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer con Mixture of Experts (MoE), segun nomenclatura A4B del nombre |
-| Parametros totales | 25.233.142.046 |
-| Parametros activos | aproximadamente 4B (inferido del sufijo A4B; no confirmado en la model card) |
+| Arquitectura | Transformer MoE (Gemma 4), multimodal (visión) |
+| Parámetros totales | 25.233.142.046 (~25,2 B) |
+| Parámetros activos | ~4 B (denominación A4B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
-| Idiomas soportados | no disponible en el repositorio derivado; el nombre del modelo base indica especializacion en arabe |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye en safetensors |
+| Tipos de cuantización | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K, Q2_K_S, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_1, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (calibradas con imatrix) |
+| Idiomas soportados | Árabe (incluye dialecto saudí) e inglés |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); pesos originales del modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no incluye informacion sobre la arquitectura interna mas alla de lo que se deduce del nombre del modelo base: una variante Gemma 4 con 26B de parametros totales y 4B activos, lo que corresponde a un transformer con capas de mezcla de expertos dispersa. La model card del repositorio derivado unicamente documenta el proceso de cuantizacion: version de quantize (2), tipo de conversion (hf), uso de pesos con imatrix ("weighted/imatrix quants"), y una lista de 23 variantes de cuantizacion mas una variante `small-IQ4_NL`. El flag `skip_mmproj: 1` indica que no se ha incluido el proyector multimodal en las cuantizaciones, por lo que las capacidades de vision del modelo base, si las tuviera, no estarian disponibles en estos GGUF.
+La base es un transformer de mezcla de expertos (MoE) de la familia Gemma 4, con 25,2 mil millones de parámetros totales y aproximadamente 4 mil millones activos por token, lo que reduce el coste computacional por paso de decodificación respecto a un modelo denso del mismo tamaño total. El modelo es multimodal: la model card del cuantizador indica explícitamente que se trata de un modelo de visión y que los ficheros mmproj, si existen, se alojan en el repositorio estático asociado.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas especificas del modelo base. Tampoco se documenta el proceso de fine-tuning aplicado por `noman-asif` para la variante arabe. Toda esta informacion deberia consultarse en el repositorio del modelo original, que no forma parte de los datos proporcionados.
+El ajuste fino del modelo base combina RS-LoRA (adaptadores de bajo rango con inicialización por subespacio aleatorio), DPO con trust region para alinear preferencias y TIES merging para fusionar pesos de distintos entrenamientos. Los datos de entrenamiento declarados son Arabic-Reasoning-Instruct-30k (razonamiento e instrucciones en árabe) y Arabic-Preference-DPO-6k (pares de preferencia). Las cuantizaciones de este repositorio usan calibración imatrix, que ajusta los parámetros de cuantización por capa a partir de estadísticas de activaciones, lo que en la práctica mejora la perplejidad frente a cuantizaciones estáticas del mismo tamaño.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun el tag `conversational` del repositorio.
-- Especializacion en lengua arabe, inferida del nombre del modelo base (`Arabic-It`); no confirmada en la model card.
-- Compatibilidad con endpoints (`endpoints_compatible`), lo que sugiere uso en servicios de inferencia tipo Hugging Face Inference Endpoints.
-- Cuantizaciones con imatrix, que preservan mejor la calidad en tasas de bits bajas (IQ1, IQ2, IQ3) que las cuantizaciones estandar.
-- Soporte de tool calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues adicionales: no disponibles.
-- Modo thinking, vision o audio: no disponible; el flag `skip_mmproj` descarta vision en estos GGUF.
+- Generación de texto y razonamiento en árabe e inglés, con soporte explícito de chain-of-thought (etiqueta chain-of-thought en la model card).
+- Conversación multi-turno (tag conversational) y formato de chat instruido.
+- Comprensión de imágenes al ser un modelo multimodal de visión (los proyectores mmproj se distribuyen en el repositorio estático).
+- Razonamiento matemático y de sentido común en árabe, derivado del dataset Arabic-Reasoning-Instruct-30k.
+- Adaptación a dialecto saudí, además de árabe estándar moderno.
+- Alineación de preferencias mediante DPO, orientada a respuestas más útiles y seguras.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso más allá de chain-of-thought: no disponible en la información proporcionada.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
 
-- Despliegue en CPU o GPU de gama baja: las cuantizaciones IQ1_S, IQ2_XXS y Q2_K_S permiten ejecutar un modelo de 25B parametros totales en entornos con 8-12 GB de RAM/VRAM, a costa de perdida de calidad. Util para prototipado y pruebas de concepto.
-- Atencion al cliente en arabe: la variante `Arabic-It` esta orientada a conversacion, por lo que puede emplearse en bots de soporte en dialecto estandar. Requiere validacion previa del contexto maximo real, no documentado.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 23 variantes, lo que lo convierte en un banco de pruebas para medir la degradacion de calidad entre IQ1_S y Q6_K sobre el mismo modelo base.
-- Inferencia local con llama.cpp u Ollama: el formato GGUF es directamente consumible por estas herramientas, lo que facilita integracion en aplicaciones de escritorio o edge.
-- Investigacion sobre modelos MoE de bajo coste: con 4B parametros activos, el modelo permite estudiar el comportamiento de arquitecturas dispersas en tareas arabes sin requerir hardware de datacenter.
-- Fine-tuning adicional o destilacion: los GGUF no son adecuados para reentrenamiento, pero el modelo base en safetensors puede servir como punto de partida para ajustes posteriores.
-- Generacion de contenido en arabe para medios o documentacion: util si se valida la calidad de las cuantizaciones altas (Q5_K_M, Q6_K), que preservan mejor la fidelidad del modelo original.
+- Atención al cliente en árabe y dialecto saudí: el ajuste sobre Arabic-Preference-DPO-6k y el entrenamiento específico en dialecto permiten gestionar conversaciones multi-turno con registro coloquial, algo que los modelos genéricos suelen degradar.
+- Asistentes de razonamiento para educación: el modelo puede generar cadenas de razonamiento paso a paso en árabe para problemas de matemáticas y lógica, útil en plataformas de tutoría que necesitan explicaciones intermedias y no solo la respuesta final.
+- Procesamiento de documentos escaneados con OCR asistido por visión: al ser multimodal, puede recibir imágenes de formularios o facturas y extraer información en árabe, combinando lectura visual con generación de texto estructurado.
+- Despliegue local en estaciones de trabajo: con cuantizaciones i1-Q4_K_M de 16,9 GB cabe en GPUs de consumo de 24 GB (RTX 3090/4090) o en configuraciones con RAM del sistema mediante llama.cpp, lo que permite operar sin conexión en entornos con requisitos de privacidad.
+- Investigación en alineación multilingüe: la combinación de RS-LoRA, trust-region DPO y TIES merging sobre una base MoE ofrece un caso de estudio reproducible para medir cómo estas técnicas afectan al rendimiento en árabe frente a inglés.
+- Generación de contenido editorial en árabe: redacción de borradores, resúmenes y reescritura con control de estilo, aprovechando la ventana de contexto del modelo base (no publicada) y el soporte bilingüe ar/en para traducción asistida.
+- Prototipado de asistentes de voz en árabe: integrado en un pipeline ASR + LLM + TTS, el modelo puede servir como capa de razonamiento y respuesta conversacional en árabe con baja latencia gracias a sus ~4 B parámetros activos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: dependera de la cuantizacion. Para un modelo de 25B parametros totales, una cuantizacion Q4_K_M ocupa aproximadamente 15-16 GB; Q6_K en torno a 21-22 GB; IQ2_XXS alrededor de 7-8 GB; IQ1_S en torno a 5-6 GB. Estas cifras son estimaciones basadas en el tamano del modelo, no datos publicados en el repositorio.
-- GPU recomendadas: A100 40GB o H100 para cuantizaciones altas y contexto largo; RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) equivalente.
-- Cabe en GPU consumer: si, en RTX 4090/3090 con cuantizaciones Q4 y Q5; en GPUs de 12-16 GB con IQ2/IQ3; en GPUs de 8 GB con IQ1/IQ2 extremas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, y servidores compatibles con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones; requeririan conversion a safetensors.
-- Latencia y throughput: no disponibles. Al ser MoE con 4B activos, el throughput deberia ser superior al de un denso de 25B, pero no hay mediciones publicadas en el repositorio.
+- VRAM estimada según cuantización (tamaño de fichero como cota inferior, más overhead de contexto y caché KV):
+  - i1-IQ1_S: 8,4 GB (calidad muy degradada, solo para pruebas).
+  - i1-IQ2_M: 10,5 GB.
+  - i1-IQ3_S: 12,3 GB (recomendada por el autor frente a Q3_K*).
+  - i1-Q4_K_S: 15,6 GB; i1-Q4_K_M: 16,9 GB (opción recomendada por el autor para velocidad/calidad).
+  - i1-Q5_K_M: 19,2 GB.
+  - i1-Q6_K: 22,7 GB (equivalente práctico a Q6_K estático).
+- GPU recomendadas: RTX 3090 o RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; A100 40/80 GB o H100 para Q6_K con contexto largo o para servir varias peticiones concurrentes.
+- Cabe en GPU de consumo: sí, en tarjetas de 16 GB (Q3/IQ3) y de 24 GB (Q4/Q5). En GPUs de 8-12 GB solo con cuantizaciones IQ1/IQ2, con pérdida notable de calidad.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp y cualquier runtime compatible con GGUF. Para los proyectores de visión, usar los mmproj del repositorio estático. vLLM y TGI no consumen GGUF de forma nativa; para esos motores habría que partir de los pesos safetensors del modelo base.
+- Latencia y throughput: no disponibles en la información proporcionada. Al ser MoE con ~4 B parámetros activos, el throughput por token debería aproximarse al de un modelo denso de ese orden, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Activos | Contexto | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Gemma-4-26B-A4B-Arabic-It-i1-GGUF (este) | 25,2B | ~4B (inferido) | no disponible | no disponible | GGUF |
-| Gemma-4-26B-A4B (base, sin fine-tuning arabe) | 25,2B | ~4B (inferido) | no disponible | no disponible | safetensors |
-| Otros GGUF de mradermacher sobre Gemma | variable | variable | no disponible | no disponible | GGUF |
+| Gemma-4-26B-A4B-Arabic-It (este, i1-GGUF) | 25,2 B totales / ~4 B activos | no disponible | ar, en | Apache 2.0 | GGUF (imatrix) |
+| noman-asif/Gemma-4-26B-A4B-Arabic-It (base) | 25,2 B totales / ~4 B activos | no disponible | ar, en | Apache 2.0 | safetensors |
+| mradermacher/Gemma-4-26B-A4B-Arabic-It-GGUF (cuantización estática) | 25,2 B totales / ~4 B activos | no disponible | ar, en | Apache 2.0 | GGUF (sin imatrix) |
+| Otros modelos de razonamiento en árabe de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento ni de contexto para establecer una comparativa cuantitativa con alternativas como Jamba, Mixtral o Qwen-MoE. La comparativa se limita a parametros y formato.
+No se dispone de datos de benchmarks que permitan comparar el rendimiento real frente a alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- El repositorio derivado no declara licencia. Es imprescindible consultar la licencia del modelo base `noman-asif/Gemma-4-26B-A4B-Arabic-It` y, en ultima instancia, la de Gemma 4 de Google antes de cualquier uso comercial.
-- No se documentan los idiomas soportados ni el contexto maximo; el uso en produccion requiere validacion empirica.
-- Las cuantizaciones IQ1 e IQ2 introducen degradacion notable de calidad; no se recomiendan para tareas de razonamiento o generacion de codigo.
-- El flag `skip_mmproj: 1` implica que estos GGUF no incluyen proyector multimodal; si el modelo base tenia vision, esta no estara disponible.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no hay evaluaciones publicadas que lo cuantifiquen.
-- Sesgos: no documentados. Al estar especializado en arabe, puede presentar sesgos culturales o dialectales no evaluados.
-- El repositorio no registra descargas ni likes, lo que sugiere ausencia de validacion comunitaria; tratar como artefacto no auditado.
-- El tag `endpoints_compatible` no garantiza que el modelo funcione correctamente en Hugging Face Inference Endpoints con GGUF; verificar compatibilidad.
+- Riesgo de alucinación: como todo modelo generativo, puede producir contenido plausible pero falso, especialmente en dominios especializados y en dialectos poco representados en los datos de ajuste.
+- Sesgos: el ajuste se apoya en datasets concretos (Arabic-Reasoning-Instruct-30k y Arabic-Preference-DPO-6k) cuya composición y diversidad no se detallan; pueden persistir sesgos de género, regionales o religiosos presentes en ellos.
+- Cobertura lingüística limitada: solo árabe e inglés declarados; el rendimiento en otros idiomas, incluido el castellano, no está garantizado.
+- Longitud de contexto no publicada: no es posible planificar despliegues que dependan de ventanas largas sin verificarla empíricamente en el modelo base.
+- Cuantizaciones agresivas: las variantes IQ1 e IQ2 degradan la calidad de forma sustancial; el propio autor desaconseja IQ1 salvo como último recurso y marca Q2_K_S como de calidad muy baja.
+- Visión: los ficheros mmproj no están en este repositorio sino en el estático; un despliegue que ignore ese detalle perderá la capacidad multimodal.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar los términos del modelo base y de los datasets de entrenamiento por si imponen condiciones adicionales no reflejadas en la model card.
+- Procedencia: el modelo base lo publica un autor individual (noman-asif), no Google; la etiqueta Gemma 4 describe la arquitectura de partida, no una certificación oficial.
+- Sin métricas publicadas: no hay benchmarks que respalden las afirmaciones de calidad, por lo que se recomienda una evaluación propia antes de llevarlo a producción.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Arabic-It-i1-GGUF
-- Modelo base del fine-tuning: https://huggingface.co/noman-asif/Gemma-4-26B-A4B-Arabic-It
-- Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Arabic-It-i1-GGUF
+- Modelo base: https://huggingface.co/noman-asif/Gemma-4-26B-A4B-Arabic-It
+- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Arabic-It-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#Gemma-4-26B-A4B-Arabic-It-i1-GGUF
+- Dataset de razonamiento: https://huggingface.co/datasets/noman-asif/Arabic-Reasoning-Instruct-30k
+- Dataset de preferencias DPO: https://huggingface.co/datasets/noman-asif/Arabic-Preference-DPO-6k
+- Guía de uso de GGUF (referencia citada por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfica de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2

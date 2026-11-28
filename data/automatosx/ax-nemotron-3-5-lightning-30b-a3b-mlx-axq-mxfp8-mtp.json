@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 157,
+  "downloads_30d": 182,
   "trending_score": 0,
   "parameters": 31577935872,
   "parameters_human": "31.58B",
@@ -48,31 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Black Box Mgmt | Talent Management & Content Production",
-      "url": "https://www.blackboxmgmt.com/",
-      "snippet": "Black Box is a talent management and content production company based in Los Angeles. The company was founded by Mike Dill …"
-    },
-    {
-      "title": "Empowering Growth through Global Management | Black Box",
-      "url": "https://www.blackbox.com/discover-bb/global-management",
-      "snippet": "Empower your growth journey with the Global Management of Blackbox. Beyond borders, discover the keys to success in the global …"
-    },
-    {
-      "title": "Global IT Products & Network Solutions Provider | Black Box",
-      "url": "https://www.blackbox.com/",
-      "snippet": "Fuel productivity, gain cost efficiencies, and scale up business opportunities with IT solutions designed to help you build, manage, …"
-    },
-    {
-      "title": "RCMP charge Calgary man for allegedly running $164M Ponzi scheme",
-      "url": "https://www.cbc.ca/news/canada/calgary/164-million-fraud-laundering-9.7328315",
-      "snippet": "Sep 1, 2026 · Police allege that between March 2020 and April 2024 Craig Michael Thompson, 49, misappropriated the funds via his …"
-    },
-    {
-      "title": "Calgary man charged in $164 million Ponzi scheme",
-      "url": "https://rcmp.ca/en/news/2026/09/4356512",
-      "snippet": "Sep 1, 2026 · Between March 2020 and April 2024, the accused is alleged to have misappropriated more than $164 million in …"
-    }
-  ]
+  "sources": []
 }

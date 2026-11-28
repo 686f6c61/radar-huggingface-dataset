@@ -2,91 +2,90 @@
 
 ## Resumen
 
-Keural-Lab-1031-GGUF es la distribución en formato GGUF del checkpoint de investigación Keural-Lab-1031, publicado por el usuario mkd-minkeun bajo el paraguas del laboratorio Keural. Se trata de un modelo de lenguaje de arquitectura mixture-of-experts (MoE) con 116.514.464.640 parámetros totales (aproximadamente 116,5 mil millones) y unos 6,7 mil millones de parámetros activos por token, según indica la model card. El modelo base fue convertido con `convert_hf_to_gguf.py` de llama.cpp y cuantizado con `llama-quantize`, lo que permite ejecutarlo en entornos de inferencia local.
+Keural-Lab-1031-GGUF es la distribucion en formato GGUF del modelo Keural-Lab-1031, publicada por el usuario mkd-minkeun. Se trata de una compilacion para llama.cpp de un modelo de texto de gran tamano: los pesos en safetensors del modelo base suman 116.514.464.640 parametros (unos 116,5 mil millones), y el repositorio GGUF ocupa 79,7 GB, con un unico archivo de pesos Q4_K_M de 78,8 GB y un proyector visual opcional en bf16 de 0,9 GB.
 
-La relevancia de esta ficha radica en que ofrece una ruta práctica para desplegar un MoE de gran tamaño en hardware de consumo o en configuraciones de dos GPU, gracias a la cuantización Q4_K_M. El repositorio ocupa 79,7 GB e incluye un proyector de visión opcional en bf16, lo que sugiere capacidades multimodales. El modelo se distribuye bajo la licencia Qwen Community License 1.0, derivada de Qwen3.8-Flash-Next, con restricciones específicas para uso comercial como servicio gestionado.
+La model card indica que el modelo deriva de Qwen3.8-Flash-Next y se distribuye bajo la Qwen Community License 1.0. Esa referencia al modelo origen y la presencia del proyector multimodal sugieren una arquitectura de la familia Qwen con capacidad de vision, aunque la informacion disponible no detalla la arquitectura interna, los datos de entrenamiento ni los idiomas soportados.
 
-No se dispone de información pública sobre idiomas soportados, datos de entrenamiento ni resultados de benchmarks en la documentación proporcionada, por lo que varios apartados de esta ficha se marcan explícitamente como no disponibles.
+Su relevancia practica es acotada pero clara: ofrece una via de despliegue local mediante llama.cpp (llama-server) con cuantizacion Q4_K_M y una ventana de contexto configurable de 32.768 tokens segun el ejemplo de uso del autor, lo que permite ejecutar un modelo de ~116B en infraestructura propia sin depender de APIs externas, a costa de requisitos de memoria muy elevados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-experts (MoE), transformer; detalles de capas y atención no disponibles |
-| Parametros totales | 116.514.464.640 (≈116,5 B) |
-| Parametros activos | ≈6,7 B por token |
-| Longitud de contexto | Hasta 32.768 tokens en el ejemplo de `llama-server` (`-c 32768`); máximo nativo no disponible |
-| Tipos de cuantizacion | Q4_K_M (archivo principal); proyector de visión en bf16; otras cuantizaciones no disponibles |
-| Idiomas soportados | No disponible |
-| Licencia | Qwen Community License 1.0 (etiquetada como `other` en Hugging Face) |
-| Formato de pesos | GGUF (texto y mmproj), más safetensors en el modelo base |
+| Arquitectura | no disponible (derivado de Qwen3.8-Flash-Next segun la model card) |
+| Parametros totales | 116.514.464.640 (~116,5B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 32.768 tokens en el ejemplo de llama-server de la model card (maximo nativo no disponible) |
+| Tipos de cuantizacion | Q4_K_M (unico archivo de pesos publicado); proyector visual en bf16 |
+| Idiomas soportados | no disponible |
+| Licencia | Qwen Community License 1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card describe el modelo como un checkpoint de investigación MoE de 65B (denominación comercial del autor) con aproximadamente 6,7 B de parámetros activos por token. La arquitectura es de tipo mixture-of-experts sobre un transformer, aunque no se detallan el número de expertos, la estrategia de enrutamiento, el número de capas ni el mecanismo de atención. El modelo base es `mkd-minkeun/Keural-Lab-1031`, y esta versión GGUF se generó con el script de conversión de llama.cpp, omitiendo la cabeza de predicción multi-token (multi-token-prediction head) que sí existe en el checkpoint original.
+No se ha publicado informacion sobre la arquitectura interna del modelo en la informacion disponible. La model card solo indica que Keural-Lab-1031 deriva de Qwen3.8-Flash-Next, lo que situa el modelo en el linaje de la familia Qwen, y que existe un proyector multimodal (`mmproj`) que habilita entrada de imagenes en llama.cpp. No hay datos sobre tipo de transformer, uso de mezcla de expertos, atencion lineal ni otras innovaciones.
 
-No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste instructivo. Tampoco se documentan innovaciones técnicas más allá de la propia arquitectura MoE y la presencia de una cabeza de predicción multi-token en el modelo base. La plantilla de chat está embebida en el GGUF y el modo de razonamiento (thinking) está activado por defecto, lo que sugiere un ajuste orientado a conversación y razonamiento, pero sin detalles verificables.
+Tampoco hay informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, fases de ajuste fino supervisado, RLHF o DPO. El repositorio es exclusivamente una conversion a GGUF del modelo base `mkd-minkeun/Keural-Lab-1031`, sin documentacion adicional sobre el pipeline de cuantizacion mas alla de la etiqueta Q4_K_M.
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` aparece en los tags del repositorio.
-- Razonamiento con modo thinking: la model card indica que el pensamiento está activado por defecto en la plantilla embebida.
-- Entrada de imágenes: el repositorio incluye `Keural-Lab-1031-mmproj-bf16.gguf`, un proyector de visión opcional que habilita entrada multimodal al pasarlo con `--mmproj`.
-- Soporte de llama.cpp: compatible con `llama-server`, `llama-quantize` y el ecosistema GGUF.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere integración con infraestructuras de inferencia estándar.
-- Capacidades multilingües: no disponibles.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente, aunque el modo thinking y la arquitectura MoE son compatibles con estos flujos.
+- Generacion de texto conversacional: la etiqueta `conversational` y el pipeline `text-generation` indican uso orientado a dialogo.
+- Entrada multimodal de imagenes: el archivo `Keural-Lab-1031-mmproj-bf16.gguf` actua como proyector visual opcional para llama.cpp.
+- Compatibilidad con llama.cpp: soporte de plantillas de chat mediante el flag `--jinja` en llama-server.
+- Contexto extendido en despliegue: el ejemplo del autor configura 32.768 tokens de ventana.
+- Tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible en la informacion proporcionada (no se listan idiomas).
+- Modo thinking, audio u otras capacidades especiales: no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Despliegue local de un MoE de gran tamaño: con la cuantización Q4_K_M (78,8 GB), el modelo puede ejecutarse en un Mac de 128 GB de memoria unificada o en dos GPU de 48 GB, lo que permite experimentar con un MoE de 116 B sin infraestructura de centro de datos.
-- Investigación en arquitecturas MoE: al ser un checkpoint de investigación, resulta adecuado para estudiar el comportamiento de un modelo con 6,7 B de parámetros activos y comparar su eficiencia frente a modelos densos de tamaño similar.
-- Prototipado de asistentes conversacionales con imágenes: usando el proyector `mmproj` junto con el modelo de texto, se puede construir un asistente que reciba imágenes y texto en un mismo turno, útil para demos de visión-lenguaje.
-- Evaluación de cuantizaciones: el archivo Q4_K_M permite medir la degradación de calidad frente al modelo base en safetensors, un caso habitual en laboratorios que validan pipelines de cuantización con llama.cpp.
-- Generación de texto con contexto medio: el ejemplo de `llama-server` con `-c 32768` habilita tareas de resumen o conversación multi-turno con ventanas de hasta 32K tokens, suficiente para documentos técnicos y transcripciones.
-- Integración en pipelines de CI para pruebas de inferencia: al ser compatible con llama.cpp y endpoints, puede montarse en un servidor interno para validar prompts y plantillas de chat antes de pasar a producción.
-- Experimentación con modo thinking: útil para comparar respuestas con y sin razonamiento explícito en tareas de lógica o matemáticas, aunque no haya benchmarks publicados.
+- Despliegue local de un modelo conversacional de gran tamano: con llama-server y el archivo Q4_K_M se puede servir un endpoint compatible con la API de OpenAI en infraestructura propia, util para equipos que necesitan confidencialidad de datos y no quieren depender de APIs de terceros.
+- Procesamiento de documentos largos: la ventana de 32.768 tokens configurada en el ejemplo permite resumir, extraer datos o responder preguntas sobre contratos, informes o articulos de decenas de paginas en una sola pasada.
+- Analisis de imagenes combinado con texto: cargando el proyector `mmproj` se pueden enviar capturas, diagramas o documentos escaneados junto a preguntas en lenguaje natural, por ejemplo para extraer campos de facturas o describir graficos.
+- Asistente interno de documentacion tecnica: el modelo puede integrarse en un chatbot corporativo sobre wikis y manuales, con la ventaja de que los datos no salen de la infraestructura de la organizacion.
+- Experimentacion e investigacion sobre modelos de ~116B cuantizados: el GGUF Q4_K_M permite a grupos de investigacion evaluar el comportamiento de un modelo de este tamano en hardware propio sin necesidad de pesos en precision completa.
+- Evaluacion de la cadena de herramientas llama.cpp con modelos multimodales grandes: sirve como banco de pruebas para medir latencia, consumo de memoria y estabilidad de llama-server con pesos de casi 80 GB y proyector visual.
+- Generacion de texto en lote sin conexion: para tareas de sintesis o reformulacion de contenidos en entornos aislados (air-gapped) donde no se permite trafico de red saliente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card remite a la ficha del modelo base para consultar puntuaciones, pero no se incluyen cifras en el material proporcionado, por lo que no se presentan tablas comparativas numéricas.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: aproximadamente 90 GB de memoria con contexto moderado, según la model card; el archivo Q4_K_M pesa 78,8 GB y el proyector de visión 0,9 GB.
-- Configuraciones recomendadas por el autor: un Mac con 128 GB de memoria unificada o dos GPU de 48 GB (por ejemplo, 2× A6000, 2× L40S o 2× RTX 6000 Ada).
-- GPU de centro de datos: A100 80 GB o H100 80 GB no bastan por sí solas para el archivo completo en una sola tarjeta; se requiere reparto entre varias GPU o memoria unificada.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en una RTX 3090 (24 GB) con Q4_K_M; sería necesario sharding entre varias tarjetas o cuantizaciones más agresivas no publicadas.
-- Opciones de despliegue: `llama-server` de llama.cpp con `--jinja` y `--mmproj` opcional; otras herramientas compatibles con GGUF (Ollama, LM Studio, text-generation-webui) no están confirmadas en la documentación.
-- Latencia y throughput: no disponibles.
+- VRAM/RAM para el archivo Q4_K_M: el propio archivo pesa 78,8 GB, por lo que se necesita al menos esa cantidad de memoria, mas overhead de contexto KV y del runtime; en la practica, del orden de 85-95 GB para 32.768 tokens de contexto (estimacion, no confirmada por el autor).
+- Proyector visual: anade 0,9 GB en bf16 si se usa la entrada de imagenes.
+- GPU recomendadas: para cargar los pesos completamente en VRAM se requieren configuraciones multi-GPU de gama profesional (varias A100 80 GB, H100 80 GB o similares). No es viable en una unica GPU de consumo.
+- GPU de consumo: no cabe en RTX 4090 (24 GB) ni en tarjetas de 48 GB en una sola unidad; seria necesario repartir capas entre GPU y RAM del sistema (offload parcial), con caida severa de velocidad.
+- Opciones de despliegue: llama.cpp (llama-server, tal como documenta el autor), y por extension del formato GGUF, frontends compatibles como Ollama o LM Studio; vLLM y TGI no consumen GGUF de forma nativa en este flujo.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Keural-Lab-1031-GGUF | ≈116,5 B | ≈6,7 B | 32.768 en ejemplo; máximo no disponible | Qwen Community License 1.0 | GGUF en Hugging Face |
-| Qwen3.8-Flash-Next (referencia de licencia) | No disponible | No disponible | No disponible | Qwen Community License 1.0 | No disponible en la información |
-| Alternativas MoE de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Keural-Lab-1031-GGUF | ~116,5B | 32.768 (ejemplo de despliegue) | GGUF Q4_K_M | Qwen Community License 1.0 | Multimodal via mmproj; unico archivo de pesos |
+| Qwen2.5-72B-Instruct (GGUF) | 72B | 131.072 nativo | GGUF (multiples cuantizaciones) | Qwen License | Menor tamano, comunidad amplia, sin vision en la variante estandar |
+| Llama 3.1 70B Instruct (GGUF) | 70B | 131.072 | GGUF (multiples cuantizaciones) | Llama 3.1 Community License | Ecosistema de cuantizaciones muy maduro; sin vision |
+| Qwen2.5-VL-72B (GGUF) | 72B | 131.072 | GGUF con mmproj | Qwen License | Alternativa multimodal de tamano comparable en orden de magnitud |
 
-No se dispone de datos verificables de otros modelos comparables en la información proporcionada, por lo que la comparativa numérica queda limitada a la referencia de licencia que menciona la model card.
+La comparativa se basa en caracteristicas publicas de modelos de la misma franja de tamano; no hay datos de rendimiento de Keural-Lab-1031 que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Restricción comercial: la Qwen Community License 1.0 exige, según la cláusula 2 citada en la model card, una licencia separada de Qwen para empresas que operen un negocio de Model-as-a-Service o AI Work Assistant.
-- Ausencia de benchmarks: no hay métricas publicadas de MMLU, HumanEval, GSM8K ni similares, lo que impide evaluar su calidad frente a alternativas.
-- Idiomas no documentados: se desconoce qué lenguas soporta y con qué calidad.
-- Riesgo de alucinación: inherente a los modelos generativos; no hay documentación específica sobre mitigaciones.
-- Sesgos: no se documentan sesgos conocidos ni procesos de alineación (RLHF/DPO) en la información disponible.
-- Checkpoint de investigación: el autor lo describe como research checkpoint, sin garantías de robustez para producción.
-- Cabeza de predicción multi-token omitida: la conversión a GGUF no incluye esa cabeza, por lo que el comportamiento puede diferir del modelo base en tareas que la aprovechen.
-- Contexto máximo no confirmado: el ejemplo usa 32.768 tokens, pero no se especifica el máximo nativo ni el rendimiento con ventanas largas.
-- Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin señales de validación por parte de la comunidad.
+- Licencia restrictiva para servicios: la Qwen Community License 1.0 exige, segun la propia model card, una licencia adicional de Qwen para empresas que operen un negocio de Model-as-a-Service o de asistente de trabajo con IA antes del uso comercial.
+- Ausencia de documentacion: no hay informacion sobre datos de entrenamiento, idiomas, sesgos ni evaluaciones, lo que impide auditar el modelo antes de usarlo en produccion.
+- Riesgo de alucinacion: sin benchmarks ni evaluaciones publicadas, no se puede acotar la tasa de errores facticos; debe validarse en el dominio de uso.
+- Unica cuantizacion disponible: solo se publica Q4_K_M, con la perdida de calidad asociada frente a precisiones mayores; no hay versiones Q5, Q6 o Q8.
+- Requisitos de memoria extremos: 78,8 GB de pesos hacen inviable el despliegue en hardware de consumo sin offload parcial, con latencia muy alta en ese escenario.
+- Soporte de idiomas incierto: al no listarse idiomas, el rendimiento en castellano no esta verificado.
+- Contexto limitado en el ejemplo: 32.768 tokens es la configuracion mostrada por el autor; no se confirma cual es el maximo nativo del modelo.
+- Proyecto de autor individual: 190 descargas y 0 likes en el momento de la consulta, sin senales de mantenimiento ni comunidad que respalde la conversion.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mkd-minkeun/Keural-Lab-1031-GGUF
 - Modelo base: https://huggingface.co/mkd-minkeun/Keural-Lab-1031
-- Licencia Qwen Community 1.0: incluida como archivo `LICENSE` en el repositorio
-- llama.cpp (herramienta de conversión y cuantización): no se proporciona enlace específico en la información disponible
-- Paper, blog o demo: no disponibles
+- Licencia Qwen Community 1.0: incluida como archivo LICENSE en el repositorio
+- llama.cpp: https://github.com/ggml-org/llama.cpp

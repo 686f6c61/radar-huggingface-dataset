@@ -2,104 +2,108 @@
 
 ## Resumen
 
-1bit-MONSTER/ZAYA1-8B-GGUF es una conversion a formato GGUF del modelo Zyphra/ZAYA1-8B, publicada por el equipo del motor de inferencia 1bit. No se trata de un rehost de un GGUF preexistente: segun la model card, es una conversion hecha desde cero con su propio `zaya.py` dentro de un fork de llama.cpp, porque ZAYA1 no estaba disponible antes en formato GGUF. El modelo cuenta con 8.840.233.464 parametros (8,84 mil millones) y se distribuye bajo licencia Apache 2.0, heredada del modelo base.
+ZAYA1-8B-GGUF es la conversión al formato GGUF del modelo Zyphra/ZAYA1-8B, publicada por el usuario 1bit-MONSTER como parte del catálogo de arquitecturas soportadas por su motor de inferencia propio (1bit engine). El modelo base, desarrollado por Zyphra, cuenta con 8.840.233.464 parámetros reales (8,84 mil millones) y emplea una arquitectura híbrida que combina expertos enrutados (MoE) con una ruta de atención recurrente, lo que explica su inusual sensibilidad a la cuantización. La licencia es Apache 2.0, heredada del modelo original.
 
-El repositorio incluye dos ficheros: una conversion en precision completa (`zaya1-8b-f16.gguf`), pensada para recuantizacion posterior, y una cuantizacion `Q4_K_M` (`zaya1-8b-Q4_K_M.gguf`), que es la que el autor recomienda y mide. El tamano total del repositorio es de 23,3 GB. La relevancia actual del artefacto es doble: por un lado, abre el modelo ZAYA1-8B al ecosistema GGUF; por otro, sirve como escaparate de arquitectura del motor 1bit, con kernels propios para Vulkan, ROCm y HRX.
+La relevancia de esta ficha radica en que se trata de la primera conversión GGUF conocida de ZAYA1, realizada desde cero con un fork propio de llama.cpp en lugar de reutilizar una conversión existente. El autor documenta con detalle el proceso de validación (acuerdo top-1 del 95/96 frente al modelo original en FP32) y las métricas de calidad por cuantización, algo poco habitual en repositorios de este tipo.
 
-El punto critico es la compatibilidad: el GGUF usa una arquitectura GGUF propia etiquetada como `zaya` y un layout de tensores no estandar (por ejemplo, `cca_conv_grp` en orden tap-major y un rope hibrido con theta 5e6). Por ello, un checkout limpio de llama.cpp no puede cargarlo; hace falta el fork `1bit-MONSTER/llama.cpp` y el motor 1bit.
+El repositorio incluye tres archivos: F16 (para recuantizar), Q8_0 (9,49 GB) y Q4_K_M (5,57 GB). La advertencia principal es que la variante de 4 bits es notablemente lossy (KLD medio de 0,5751 frente al F16 y solo un 69 % de coincidencia en el token top-1), por lo que el autor recomienda leer con atención las métricas antes de elegirla para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible en detalle; identificada como arquitectura GGUF `zaya` en el motor 1bit (modelo base Zyphra/ZAYA1-8B) |
+| Arquitectura | Híbrida: expertos enrutados (MoE) con ruta de atención recurrente; arquitectura GGUF `zaya` |
 | Parametros totales | 8.840.233.464 (8,84 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16 (`zaya1-8b-f16.gguf`) y Q4_K_M (`zaya1-8b-Q4_K_M.gguf`) |
+| Tipos de cuantizacion | F16, Q8_0, Q4_K_M |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (dos ficheros); no se distribuyen safetensors en este repositorio |
-| Parametros del rope | theta 5e6 (rope hibrido) |
-| Tamano del repositorio | 23,3 GB |
-| Fecha de publicacion | 2026-09-26 (creacion); 2026-09-26 (ultima actualizacion) |
-| Modelo base | Zyphra/ZAYA1-8B |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre el entrenamiento del modelo base (numero de tokens, composicion del dataset, uso de RLHF o DPO) en la informacion proporcionada. Lo unico documentado en esta ficha es el proceso de conversion: el autor indica que el modelo usa una arquitectura registrada como `zaya` en su fork de llama.cpp, con un layout de tensores especifico del que se mencionan dos particularidades. La primera es la tensor `cca_conv_grp`, almacenada en orden tap-major, lo que sugiere la presencia de componentes convolucionales o de agrupacion de canales dentro del grafo. La segunda es un rope hibrido con theta de 5e6, un valor muy alto que apunta a un diseno orientado a contextos largos.
+El modelo base ZAYA1-8B emplea una arquitectura híbrida que combina capas de expertos enrutados (MoE) con una ruta de atención recurrente. El autor de la conversión señala explícitamente que esta combinación es la causa de la sensibilidad del modelo a la cuantización, ya que tanto los expertos enrutados como el camino recurrente de atención acumulan error de forma más agresiva que un transformer denso convencional. El GGUF presenta particularidades técnicas propias: el tensor `cca_conv_grp` está en disposición tap-major y el rope theta es de 5e6, derivado de los parámetros híbridos de rope del modelo original, lo que impide cargarlo con un llama.cpp upstream estándar.
 
-La validacion de la conversion es el dato tecnico mas reseñable. El autor compara la salida del GGUF con el modelo original en transformers ejecutado en FP32 sobre CPU, con top-1 forzado por profesor: la conversion F16 coincide en 95 de 96 posiciones. Como referencia de escala, el propio checkpoint BF16 de Hugging Face coincide con FP32 en 91 de 96 posiciones, de modo que, segun el autor, el error introducido por la conversion es menor que el redondeo a BF16. La tokenizacion se verifico como identica a la del tokenizer original con un pasaje de wikitext, codigo y texto multi-escritura.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo base. La conversión a GGUF fue realizada por el equipo del 1bit engine con su propio `zaya.py` y kernels para Vulkan, ROCm y HRX, y validada mediante comparación teacher-forced contra el modelo original en FP32 sobre CPU: 95 de 96 posiciones coincidentes en F16, frente a las 91 de 96 del propio checkpoint BF16 de Hugging Face, lo que indica que la conversión introduce menos error que el redondeo a BF16. La tokenización se verificó contra el tokenizador original con un pasaje de wikitext, código y texto de escritura mixta.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el repositorio esta etiquetado como `conversational` y declara compatibilidad con endpoints.
-- Inferencia local en hardware de consumo y semi-profesional, gracias al fichero Q4_K_M y a los backends Vulkan, ROCm y HRX del motor 1bit.
-- Recuantizacion posterior: el fichero F16 se distribuye explicitamente para generar otras cuantizaciones.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta informado).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Capacidades del modelo base (razonamiento, codigo, matematicas): no disponibles; no se detallan en la model card de esta conversion.
+- Generación de texto conversacional: el repositorio está etiquetado como `conversational` y el autor confirma que los archivos responden correctamente a preguntas conocidas.
+- Razonamiento y generación de texto general: capacidades heredadas del modelo base Zyphra/ZAYA1-8B.
+- Soporte de tool calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: no disponible; el autor solo menciona pruebas de tokenización con texto de escritura mixta, sin detallar idiomas.
+- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integración con la infraestructura de Hugging Face, aunque no se detalla el alcance.
 
 ## Casos de uso
 
-- Inferencia local en equipos con GPU integrada AMD de memoria unificada. El autor mide 93 tok/s de decodificacion con backend Vulkan sobre Strix Halo con el fichero Q4_K_M, con 3437 tok/s de prefill en pp512. Es un escenario realista para asistentes y chat local sin GPU dedicada.
-- Despliegue en estaciones de trabajo AMD con ROCm. Para entornos donde Vulkan no este disponible, el backend ROCm ofrece 61,5 tok/s en el mismo hardware y cuantizacion, segun la medicion publicada.
-- Servicio de chat autoalojado sobre el motor 1bit. El comando documentado (`1bit serve -m zaya1-8b-Q4_K_M.gguf --device vulkan`) expone el modelo como servicio, con el fichero Q4_K_M como opcion recomendada para servir.
-- Generacion de cuantizaciones propias a partir del F16. Equipos que necesiten Q3, Q5 u otros niveles pueden partir del fichero de precision completa para ajustar el equilibrio tamano/calidad a su hardware.
-- Investigacion sobre la arquitectura `zaya`. Dado que la conversion va acompanada de kernels propios en el fork de llama.cpp, es un punto de partida para estudiar el layout `cca_conv_grp` y el rope hibrido con theta 5e6.
-- Evaluacion comparativa de backends en hardware AMD. Las tres mediciones publicadas (Vulkan, ROCm, HRX) permiten usar este modelo como banco de pruebas para decidir el backend de inferencia en una flota concreta.
-- Aplicaciones conversacionales de baja latencia en el borde. Con 8,84 mil millones de parametros en Q4_K_M, el modelo es candidato para despliegues donde no se puede asumir el coste de un modelo mayor ni la dependencia de un proveedor externo.
+- Despliegue en hardware de consumo con el motor 1bit: el archivo Q4_K_M (5,57 GB) permite ejecutar un modelo de 8,84 mil millones de parámetros en equipos con memoria unificada o GPU de gama alta, usando el motor propietario con backend HRX. Es adecuado cuando se prioriza velocidad de decodificación sobre fidelidad absoluta.
+- Inferencia de alta fidelidad en servidores: el archivo Q8_0 (9,49 GB) mantiene un KLD medio de 0,0321 y un 92,5 % de coincidencia top-1 frente al F16, por lo que es la opción recomendada para tareas donde la calidad de la respuesta es crítica y se dispone de VRAM suficiente.
+- Recuantización y experimentación: el archivo F16 sirve como punto de partida para generar nuevas cuantizaciones con otras herramientas, ya que el autor lo publica explícitamente con ese propósito.
+- Investigación sobre cuantización de arquitecturas híbridas: el repositorio documenta métricas de KLD y coincidencia top-1 por archivo, lo que lo convierte en un caso de estudio útil para analizar cómo afecta la cuantización a modelos con expertos enrutados y atención recurrente.
+- Prototipado de asistentes conversacionales: gracias a la etiqueta `conversational` y a la validación con preguntas conocidas, el modelo puede emplearse en prototipos de chat multi-turno, siempre que se asuma la pérdida de calidad del Q4_K_M.
+- Evaluación de motores de inferencia alternativos: el repositorio incluye mediciones comparativas entre backends (Vulkan, ROCm, HRX), lo que permite usar el modelo como banco de pruebas para comparar rendimiento de motores en hardware AMD Strix Halo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible (no hay MMLU, HumanEval, GSM8K ni metricas equivalentes). Lo que si se publica son mediciones de fidelidad de conversion y de rendimiento de inferencia.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. El autor sí publica métricas de calidad de cuantización y de rendimiento de inferencia:
 
-| Metrica | Resultado | Contexto |
+| Metrica | Valor |
+|---|---|
+| KLD medio Q8_0 vs F16 | 0,0321 |
+| Coincidencia top-1 Q8_0 vs F16 | 92,5 % |
+| KLD medio Q4_K_M vs F16 | 0,5751 |
+| Coincidencia top-1 Q4_K_M vs F16 | 69,0 % |
+| Acuerdo top-1 F16 vs FP32 (teacher-forced) | 95/96 posiciones |
+| Acuerdo top-1 BF16 HF vs FP32 | 91/96 posiciones |
+
+Rendimiento medido en AMD Ryzen AI Max+ 395 (Radeon 8060S), Q4_K_M:
+
+| Backend | Decodificacion | Prefill (pp512) |
 |---|---|---|
-| Coincidencia top-1 forzada (F16 vs FP32) | 95/96 posiciones | Validacion contra el modelo original en transformers, FP32, CPU |
-| Coincidencia top-1 forzada (BF16 de HF vs FP32) | 91/96 posiciones | Referencia de escala publicada por el autor |
-| Decodificacion, backend Vulkan | 93 tok/s | Q4_K_M, Strix Halo |
-| Prefill pp512, backend Vulkan | 3437 tok/s | Q4_K_M, Strix Halo |
-| Decodificacion, backend ROCm | 61,5 tok/s | Q4_K_M, Strix Halo |
-| Decodificacion, backend HRX | 25,5 tok/s | Q4_K_M, Strix Halo |
+| Vulkan (2026-09) | 93 tok/s | 3437 tok/s |
+| ROCm (2026-09) | 61,5 tok/s | no disponible |
+| HRX (2026-09) | 25,5 tok/s | no disponible |
+| HRX (2026-11-27) | 143 ± 6,7 tok/s (tg128) | 2792 ± 330 tok/s |
 
 ## Requisitos de hardware
 
-- VRAM estimada para F16: en torno a 17,7 GB solo para pesos (8,84 mil millones de parametros a 2 bytes), mas overhead de contexto y buffers. Es una estimacion derivada del recuento de parametros, no un dato publicado.
-- VRAM estimada para Q4_K_M: en torno a 5,3-5,8 GB para pesos, mas overhead. Estimacion, no dato publicado. El repositorio completo ocupa 23,3 GB, consistente con ambos ficheros.
-- GPU recomendadas: no se publica una lista de GPU recomendadas. El unico hardware con mediciones es Strix Halo (memoria unificada AMD).
-- Cabe en GPU de consumo: con Q4_K_M, si, en tarjetas con 8 GB o mas de VRAM dentro de la estimacion anterior. Con F16 requiere tarjetas de 24 GB o memoria unificada amplia. No hay validacion publicada en RTX 4090, A100 ni H100.
-- Backends soportados: Vulkan, ROCm y HRX a traves del motor 1bit. El autor recomienda Vulkan para este modelo en su hardware.
-- Despliegue: `1bit serve -m zaya1-8b-Q4_K_M.gguf --device vulkan`. Un checkout limpio de llama.cpp no cargara este GGUF por el layout de tensores; hacen falta el fork `1bit-MONSTER/llama.cpp` y sus kernels. No hay soporte confirmado en vLLM, TGI, Ollama ni LM Studio.
-- Latencia y throughput: 93 tok/s de decodificacion y 3437 tok/s de prefill (pp512) con Vulkan y Q4_K_M sobre Strix Halo. No hay datos de latencia para otros equipos.
+- VRAM estimada para Q4_K_M: aproximadamente 5,57 GB de pesos, más overhead de contexto y KV cache; viable en GPUs de 8 GB o superiores.
+- VRAM estimada para Q8_0: aproximadamente 9,49 GB de pesos; requiere GPUs de 12 GB o superiores, o memoria unificada de 16 GB.
+- VRAM estimada para F16: alrededor de 17,7 GB de pesos (el doble de los 8,84 mil millones de parámetros); requiere GPUs de 24 GB o más.
+- GPU recomendadas: el autor solo documenta mediciones en AMD Ryzen AI Max+ 395 con Radeon 8060S (memoria unificada). No se han publicado mediciones en A100, H100 ni RTX 4090.
+- Cabe en GPU de consumo: sí, el Q4_K_M en GPUs de 8 GB o más y el Q8_0 en GPUs de 12 GB o más, según el cálculo de tamaño de pesos.
+- Opciones de despliegue: el modelo requiere el fork `1bit-MONSTER/llama.cpp` del motor 1bit; un llama.cpp upstream estándar no puede cargar el layout de tensores. El autor indica que los backends Vulkan y ROCm fueron eliminados del motor y que actualmente solo se soporta HRX.
+- Latencia y throughput: en HRX sobre Strix Halo con Q4_K_M, 143 tok/s de decodificación y 2792 tok/s de prefill (medición de 2026-11-27). La velocidad del Q8_0 en HRX no se ha medido.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| 1bit-MONSTER/ZAYA1-8B-GGUF | 8,84 mil millones | no disponible | 93 tok/s decode (Vulkan, Q4_K_M, Strix Halo); validacion 95/96 vs FP32 | Apache 2.0 | GGUF F16 y Q4_K_M, requiere el fork de 1bit |
-| Zyphra/ZAYA1-8B (modelo base) | 8,84 mil millones | no disponible | sin mediciones publicadas en esta informacion | Apache 2.0 | Pesos originales en el repositorio de Zyphra |
+No se dispone de datos de benchmarks del modelo base ZAYA1-8B ni de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparativa rigurosa de rendimiento. A continuación se comparan únicamente aspectos estructurales y de disponibilidad:
 
-No se dispone de datos verificados en la informacion proporcionada para comparar con otras alternativas de 8B en formato GGUF (por ejemplo, familias Llama, Qwen o Mistral): los valores de parametros, contexto, rendimiento y licencia de esos modelos no se han consultado aqui y no se incluyen para no introducir datos no comprobados.
+| Modelo | Parametros | Contexto | Licencia | Formato GGUF |
+|---|---|---|---|---|
+| ZAYA1-8B (base) | 8,84 mil millones | no disponible | Apache 2.0 | No (solo safetensors/BF16) |
+| ZAYA1-8B-GGUF (esta ficha) | 8,84 mil millones | no disponible | Apache 2.0 | Sí (F16, Q8_0, Q4_K_M) |
+| Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Fidelidad de la conversion: aunque la validacion es buena (95/96 posiciones frente a FP32), existe una perdida residual de precision respecto al checkpoint original. La cuantizacion Q4_K_M anade ademas su propia perdida, no cuantificada en la model card.
-- Dependencia de un fork: el GGUF usa un layout de tensores no estandar (`cca_conv_grp` en orden tap-major) y un rope hibrido con theta 5e6. Un llama.cpp upstream no lo cargara, lo que limita la portabilidad y ata el modelo al mantenimiento del fork `1bit-MONSTER/llama.cpp`.
-- Compatibilidad de herramientas: no hay confirmacion de soporte en vLLM, TGI, Ollama, LM Studio u otros runners habituales de GGUF. Cualquier pipeline de produccion debe validar primero la carga con el motor 1bit.
-- Validacion limitada: la verificacion publicada cubre 96 posiciones en tres tipos de texto, no una evaluacion de calidad a gran escala.
-- Idiomas: el campo de idiomas no esta informado; no se puede asumir cobertura multilingue ni un rendimiento concreto en castellano.
-- Sesgos y alucinacion: no hay informacion sobre sesgos, datos de entrenamiento ni tasas de alucinacion del modelo base en la informacion proporcionada. Al ser un modelo generativo, el riesgo de alucinacion existe, pero no esta cuantificado.
-- Adopcion nula: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion independiente de la comunidad.
-- Licencia: Apache 2.0 permite uso comercial y modificacion, con obligacion de conservar los avisos de licencia y atribucion al modelo base Zyphra/ZAYA1-8B. Conviene revisar los terminos del modelo base por si anaden condiciones adicionales.
-- Fechas: la model card indica fechas de creacion y actualizacion de 2026-09-26; verificar su coherencia antes de citarla.
+- Sensibilidad extrema a la cuantización: el Q4_K_M presenta un KLD medio de 0,5751 y solo un 69 % de coincidencia top-1 frente al F16, lo que el propio autor califica de "claramente lossy". No se recomienda para producción sin evaluar el impacto en la tarea concreta.
+- Dependencia de un fork propietario: el GGUF no carga en llama.cpp upstream debido al layout tap-major del tensor `cca_conv_grp` y al rope theta de 5e6. El despliegue exige el motor 1bit y su fork de llama.cpp.
+- Backends limitados: los backends Vulkan y ROCm fueron eliminados del motor; actualmente solo se soporta HRX, lo que reduce las opciones de hardware y las mediciones disponibles.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Riesgo de alucinación: no cuantificado en la información proporcionada; el modelo base no incluye documentación al respecto en este repositorio.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no se detallan en la model card.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se hereda del modelo base; conviene verificar los términos del repositorio original de Zyphra.
+- Validación parcial: la comprobación de respuesta correcta se realizó solo con preguntas conocidas y en CPU; la velocidad del Q8_0 en HRX no está medida y las mediciones de rendimiento provienen de una única ventana en una máquina compartida.
+- Repositorio con 0 likes y 393 descargas: la adopción es baja, por lo que hay poca validación independiente de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/ZAYA1-8B-GGUF
+- Repositorio GGUF: https://huggingface.co/1bit-MONSTER/ZAYA1-8B-GGUF
 - Modelo base: https://huggingface.co/Zyphra/ZAYA1-8B
 - Motor 1bit: https://github.com/1bit-MONSTER/engine
-- Fork de llama.cpp con soporte ZAYA1: `1bit-MONSTER/llama.cpp` (referenciado en la model card, sin URL directa en la informacion disponible)
-- Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados obtenidos corresponden a articulos genericos sobre el concepto de bit y a una plataforma de creacion de imagenes no relacionada.
+- Fork de llama.cpp del proyecto: https://github.com/1bit-MONSTER/llama.cpp (referenciado en la model card)
+- Familias de modelos del autor: https://huggingface.co/1bit-MONSTER#families

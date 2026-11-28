@@ -2,119 +2,108 @@
 
 ## Resumen
 
-OneJev1.6-0.8B es un modelo de decisión multimodal de tipo "System One" desarrollado por OmniJev. A diferencia de los modelos generativos convencionales, no produce texto libre: recibe un estado (una captura de pantalla, una foto, un vídeo o texto plano) junto con un conjunto de preguntas tipadas y devuelve, en un único forward pass, una probabilidad calibrada para cada opción de respuesta. Está construido como un fine-tune completo de Qwen/Qwen3.5-0.8B, con 852.985.920 parámetros reales según los pesos en safetensors, y combina los pesos de tres fine-tunes independientes mediante weight averaging.
+OneJev1.6-0.8B es un modelo multimodal de decisión de tipo "System One" desarrollado por OmniJev. A diferencia de los modelos generativos convencionales, no produce texto libre: recibe un estado (una captura de pantalla, una foto, un vídeo o texto plano) junto con un conjunto de preguntas tipadas y devuelve, en un único forward pass, una probabilidad calibrada para cada opción de respuesta. Está construido como un ajuste fino completo de Qwen/Qwen3.5-0.8B, con 852.985.920 parámetros reales según los pesos en safetensors.
 
-El modelo resuelve un problema concreto en el ámbito de los agentes: la evaluación rápida y calibrada de estados intermedios (¿ha terminado la tarea?, ¿qué acción toca ahora?, ¿qué progreso llevamos?) sin coste de generación autoregresiva. Su relevancia actual radica en que, con menos de 1.000 millones de parámetros, supera en el Decision Index 0.3 público (48,82) a modelos de hasta 2,5B e incluso a varios modelos de 4B o más, lo que lo sitúa como una pieza ligera y desplegable en local para pipelines de agentes GUI y vídeo.
+El modelo promedia los pesos de tres fine-tunes completos entrenados sobre entre 390.000 y 440.000 preguntas extraídas de ejecuciones reales de agentes, vídeos, imágenes y los splits de entrenamiento de conjuntos de datos públicos de decisión. Su relevancia actual radica en que aborda un problema distinto al de la generación de texto: la evaluación rápida y calibrada de opciones en pipelines de agentes, donde interesa una distribución de probabilidad sobre acciones posibles más que una respuesta en lenguaje natural.
 
-La arquitectura subyacente es la del transformer multimodal de Qwen3.5, con pipeline image-text-to-text, licencia Apache 2.0 y pesos en safetensors compatibles con `transformers`. El modelo se distribuye con 2.758 descargas y 6 likes en Hugging Face en el momento de la consulta.
+Con licencia Apache 2.0 y un tamaño de 0,8B, es desplegable en hardware modesto y se posiciona como la mejor puntuación de su clase (hasta 2,5B parámetros) en la parte pública de Decision Index 0.3, con 48,82 frente a 42,71 de su versión anterior OneJev1.5-0.8B.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (base Qwen3.5), fine-tune completo con weight averaging de tres fine-tunes |
-| Parametros totales | 852.985.920 (0,85B) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer multimodal derivada de Qwen3.5-0.8B (tag `qwen3_5`), ajuste fino completo con promedio de pesos de tres fine-tunes |
+| Parametros totales | 852.985.920 |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (el repositorio publica safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-0.8B, un transformer multimodal con capacidad image-text-to-text. Sobre esa base se realizaron tres fine-tunes completos independientes, cuyos pesos se promedian para obtener el modelo final. El entrenamiento utilizó entre 390.000 y 440.000 preguntas extraídas de ejecuciones reales de agentes, vídeos, imágenes y los splits de entrenamiento de conjuntos de datos públicos de decisión. No se especifica en la información disponible el número total de tokens, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO.
+El modelo parte de Qwen/Qwen3.5-0.8B y se obtiene mediante tres ajustes finos completos cuyos pesos se promedian (weight averaging). El pipeline declarado es `image-text-to-text`, con soporte de imagen y vídeo además de texto. La innovación central no está en la arquitectura del backbone sino en la interfaz de salida: el modelo implementa la API System One de TypeSafe, ampliada por Flide con un campo `media` para imágenes y vídeo, y devuelve respuestas tipadas (`noul` para probabilidad de sí, `choice` para distribución sobre opciones, `score` para nivel esperado) en un solo forward pass.
 
-La innovación principal no está en la arquitectura sino en la formulación de la tarea: el modelo está entrenado para emitir probabilidades calibradas sobre preguntas tipadas (noul, choice, score) en un solo forward pass, en lugar de generar respuestas token a token. El despliegue se realiza mediante Flide, que sirve una API System One de TypeSafe ampliada con un campo `media` para imágenes y vídeo. No se documentan innovaciones como decodificación especulativa o atención lineal.
+El entrenamiento se realizó sobre entre 390.000 y 440.000 preguntas procedentes de ejecuciones reales de agentes, vídeos, imágenes y los splits de entrenamiento de conjuntos públicos de decisión. La model card no detalla el número total de tokens, la composición exacta del dataset ni si hubo RLHF o DPO; el énfasis está en la calibración de las probabilidades de salida, que es el objetivo declarado del modelo.
 
 ## Capacidades
 
-- Evaluación de decisiones sobre imágenes, vídeo y texto: devuelve probabilidades calibradas por opción en un único forward pass.
-- Preguntas tipadas: soporta tipos `noul` (probabilidad de sí), `choice` (una probabilidad por opción) y `score` (nivel esperado sobre una escala de criterios).
-- Agentes GUI: evaluación de estados de pantalla para determinar la siguiente acción (click, type, scroll, stop) y el progreso de la tarea.
-- Comprensión de vídeo: procesa entradas de vídeo además de imágenes fijas y texto.
-- Razonamiento de progreso: estima en qué punto de una tarea se encuentra el agente.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Modo thinking: no disponible en la información proporcionada.
+- Decisión multimodal calibrada: devuelve una probabilidad por opción para preguntas de tipo elección, una probabilidad de sí para preguntas binarias (`noul`) y un nivel esperado para preguntas de puntuación (`score`).
+- Entrada de imagen: procesa capturas de pantalla y fotos junto con el estado de la tarea.
+- Entrada de vídeo: soporta vídeo como parte del estado multimodal.
+- Entrada de texto plano: puede operar únicamente con texto y preguntas tipadas.
+- Agentes de interfaz gráfica (GUI-agent): etiquetado como `gui-agent`, orientado a decidir la siguiente acción sobre una pantalla (clic, escritura, scroll, parada).
+- Evaluación de progreso de tareas: pregunta de tipo `score` con niveles definidos por el usuario.
+- Salida en un único forward pass, sin generación autoregresiva de texto.
+- No se documentan capacidades de tool calling, function calling, agentes multi-step autónomos ni modos de razonamiento extendido (thinking) en la información disponible.
 
 ## Casos de uso
 
-- Agentes GUI de automatización de escritorio: el modelo recibe la captura de pantalla actual y devuelve la distribución de probabilidad sobre la siguiente acción (click, type, scroll, stop), lo que permite un bucle de control rápido y barato sin generación de texto.
-- Verificación de finalización de tareas: con una pregunta de tipo `noul` ("la factura ha sido pagada"), el modelo estima la probabilidad de que la tarea esté completada, útil como condición de parada en pipelines de agentes.
-- Monitorización de progreso en flujos multi-paso: mediante preguntas de tipo `score`, estima el avance sobre escalas definidas por el desarrollador, lo que permite detectar agentes bloqueados o en bucles.
-- Enrutado y selección de herramientas en asistentes: dado un estado y un conjunto de criterios, devuelve la probabilidad de cada opción, sirviendo como clasificador ligero previo a la llamada a un modelo generativo mayor.
-- Análisis de vídeo para agentes: al aceptar entradas de vídeo, puede evaluar estados en grabaciones de sesiones o tutoriales para decidir acciones o validar pasos.
-- Evaluación de calidad en producción: al ser un modelo de 0,85B con licencia Apache 2.0, puede desplegarse en local para puntuar interacciones y decisiones de agentes sin enviar datos a servicios externos.
-- Clasificación multimodal calibrada en investigación: su naturaleza de modelo de decisión con probabilidades calibradas lo hace adecuado para experimentos que requieran incertidumbre bien calibrada en lugar de texto generado.
+- Agentes de automatización de interfaz gráfica: dado un screenshot y el estado de la tarea, el modelo devuelve la distribución de probabilidad sobre acciones (clic, escritura, scroll, parada), lo que permite a un orquestador elegir la acción con mayor probabilidad o muestrear entre las más probables.
+- Verificación de finalización de tareas: con la pregunta `noul` "la factura ha sido pagada", el modelo estima la probabilidad de que la tarea esté completada, útil como comprobador en pipelines de agentes.
+- Seguimiento de progreso: la pregunta de tipo `score` con niveles ("no iniciado", "a medias", "casi hecho", "hecho") permite monitorizar el avance de un agente sobre una tarea de varios pasos.
+- Enrutamiento y selección de herramientas: con preguntas de tipo `choice` y criterios definidos por el desarrollador, el modelo puede puntuar qué herramienta o rama de un flujo conviene activar a partir de una captura o un estado textual.
+- Análisis de vídeo para decisiones: al aceptar vídeo como media, puede usarse para decidir el siguiente paso en tareas guiadas por contenido audiovisual (por ejemplo, inspección visual o seguimiento de instrucciones sobre grabaciones).
+- Evaluación automática de trayectorias de agentes: al devolver probabilidades calibradas, sirve para puntuar decisiones intermedias en registros de ejecuciones reales y construir métricas de calidad de agentes.
+- Clasificación multimodal ligera en producción: con 0,8B parámetros y licencia Apache 2.0, es viable desplegarlo como servicio de decisión de baja latencia junto a un modelo generativo que ejecute las acciones.
 
 ## Benchmarks y rendimiento
 
-Decision Index 0.3 (parte pública; 37 benchmarks, 140.178 peticiones, evaluado con el kit del propio board):
+Resultados publicados en la model card (precisión en porcentaje sobre el conjunto de test de OneJev, con tipos de pregunta no vistos en entrenamiento; los datos concretos por fila no están disponibles en la información proporcionada, solo la comparativa global):
 
-| Modelo | Parametros | Decision Index |
-|---|---|---|
-| OneJev1.6-0.8B | 0,85B | 48,82 |
-| OneJev1.5-0.8B | 0,85B | 42,71 |
-| vLLM-SR d3-nano | 2B | 42,22 |
-| Sieve 2B v2 | 2B | 37,26 |
-| vLLM-SR d3-lite | 0,8B | 36,93 |
-| Crivo-150M | 150M | 36,39 |
+| Benchmark | Resultado |
+|---|---|
+| Decision Index 0.3 (parte pública, 37 benchmarks, 140.178 peticiones) | 48,82 |
+| OneJev1.5-0.8B (versión anterior) | 42,71 |
+| vLLM-SR d3-nano (2B) | 42,22 |
+| Sieve 2B v2 | 37,26 |
+| vLLM-SR d3-lite (0,8B) | 36,93 |
+| Crivo-150M | 36,39 |
 
-Comparación con modelos de mayor tamaño en el mismo board (parte pública, 16 de octubre de 2026):
-
-| Modelo | Parametros | Decision Index |
-|---|---|---|
-| OneJev1.6-0.8B | 0,85B | 48,8 |
-| decisio 0.4.0 | no disponible | 48,4 |
-| Hopper | 12B | 48,3 |
-| Decider | 35B-A3B | 47,7 |
-| JevK5 v0.3.3 | 9B | 47,6 |
-| Jebadiah v2.1 | 9B | 47,2 |
-| JPT | 9B | 47,0 |
-
-El autor indica que OneJev1.6-0.8B obtiene la puntuación más alta de cualquier modelo de hasta 2,5B parámetros en el board y lidera su clase en las cinco áreas evaluadas. También supera a 47 modelos de 4B parámetros o más. No se publican resultados de MMLU, HumanEval o GSM8K en la información disponible.
+Según la model card, supera a 47 modelos de 4B parámetros o más en el tablero, incluyendo decisio 0.4.0 (48,4), Hopper 12B (48,3), Decider 35B-A3B (47,7), JevK5 9B v0.3.3 (47,6), Jebadiah 9B v2.1 (47,2) y JPT 9B (47,0). Las puntuaciones de los demás modelos corresponden a la parte pública del tablero a 16 de octubre de 2026. No se detallan resultados por benchmark individual (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; con 0,85B parámetros y pesos en fp32 el modelo ocupa aproximadamente 3,4 GB, y en fp16/bf16 alrededor de 1,7 GB (tamaño del repo: 1,7 GB).
-- GPU recomendadas: no especificadas por el autor; por tamaño, cabe en GPUs consumer como RTX 3060, RTX 4060, RTX 4090 y superiores, así como en A100 y H100.
-- Cabe en GPU consumer: sí, por el tamaño de parámetros.
-- Opciones de despliegue: Flide (`flide serve --model OmniJev/OneJev1.6-0.8B`), que sirve la API System One con soporte de `media`; compatible con `transformers`. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput: no disponibles en la información proporcionada; el autor destaca el coste de un único forward pass frente a la generación autoregresiva.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 852.985.920 parámetros en safetensors (repo de 1,7 GB), la inferencia en fp16 requeriría aproximadamente 1,7 GB de pesos más overhead de activaciones y del codificador visual.
+- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU con al menos unos pocos GB de VRAM libre debería poder alojarlo.
+- Cabida en GPU de consumo: previsiblemente sí en GPUs consumer modernas (RTX 3060/4060 en adelante) por el tamaño del modelo, aunque no se confirma en la documentación.
+- Opciones de despliegue: el autor documenta `flide serve --model OmniJev/OneJev1.6-0.8B` (paquete `flide` con `torchvision`), que expone la API System One en `http://localhost:8000/v1/systemone`. No se documentan vLLM, llama.cpp, Ollama ni TGI para este modelo.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Decision Index | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| OneJev1.6-0.8B | 0,85B | no disponible | 48,82 | Apache 2.0 | Hugging Face, GitHub, Flide |
-| vLLM-SR d3-nano | 2B | no disponible | 42,22 | no disponible | board Decision Index |
-| Sieve 2B v2 | 2B | no disponible | 37,26 | no disponible | board Decision Index |
-| vLLM-SR d3-lite | 0,8B | no disponible | 36,93 | no disponible | board Decision Index |
-| Crivo-150M | 150M | no disponible | 36,39 | no disponible | board Decision Index |
+| Modelo | Parametros | Decision Index (parte publica) | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| OneJev1.6-0.8B | 0,85B | 48,82 | Apache 2.0 | Hugging Face, transformers |
+| vLLM-SR d3-nano | 2B | 42,22 | no disponible | no disponible |
+| Sieve 2B v2 | 2B | 37,26 | no disponible | no disponible |
+| vLLM-SR d3-lite | 0,8B | 36,93 | no disponible | no disponible |
+| Crivo-150M | 0,15B | 36,39 | no disponible | no disponible |
 
-Los cuatro modelos comparables son los de mayor puntuación de hasta 2,5B parámetros en el board. No se dispone de datos de contexto, licencia ni formato de pesos de los competidores en la información proporcionada.
+La comparativa se limita al criterio de Decision Index 0.3 porque es la métrica publicada en la model card; no se dispone de datos de contexto, cuantización ni licencia de los modelos alternativos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo no es generativo: no produce texto libre ni conversación abierta; solo responde a preguntas tipadas predefinidas.
-- No se documentan sesgos conocidos, pero al entrenarse con ejecuciones reales de agentes y datasets públicos de decisión puede heredar sesgos de esos datos.
-- Riesgo de alucinación: no aplica en el sentido generativo, pero las probabilidades calibradas pueden ser erróneas en estados fuera de la distribución de entrenamiento.
-- No se especifican los idiomas soportados; el rendimiento fuera del inglés (u otros idiomas no documentados) es desconocido.
-- Longitud de contexto no disponible, lo que impide evaluar su comportamiento en estados muy largos o vídeos extensos.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones de la licencia del modelo base Qwen3.5-0.8B.
-- El despliegue de referencia depende de Flide y de la API System One de TypeSafe; no hay soporte documentado para servidores de inferencia estándar.
-- Los resultados del Decision Index proceden del propio autor y del kit del board; no hay validación independiente en la información disponible.
-- El modelo tiene 6 likes y 2.758 descargas, lo que indica una adopción aún limitada y poca validación por parte de la comunidad.
+- No es un modelo generativo: no produce texto libre, solo probabilidades sobre preguntas tipadas; no sirve para tareas de generación, resumen o conversación abierta.
+- La calibración de las probabilidades es el objetivo declarado, pero no se documentan métricas de calibración (ECE, Brier) en la información disponible.
+- Riesgo de alucinación no evaluado en la documentación; al emitir distribuciones de probabilidad, una calibración deficiente en dominios fuera de distribución puede traducirse en decisiones erróneas del agente.
+- Sesgos conocidos: no documentados.
+- Idiomas soportados: no disponibles; no se confirma cobertura multilingüe.
+- Longitud de contexto: no disponible, lo que impide evaluar su idoneidad para estados de tarea extensos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base Qwen/Qwen3.5-0.8B y de los conjuntos de datos públicos de decisión empleados en el entrenamiento.
+- Dependencia de la API System One de TypeSafe y del servidor Flide para el despliegue documentado; no se detallan alternativas de servido.
+- Los resultados de Decision Index corresponden a la parte pública del tablero y a una fecha concreta (16 de octubre de 2026); pueden no ser reproducibles con la versión actual del tablero.
+- El modelo se creó en octubre de 2026 y se actualizó en noviembre de 2026; la información de benchmarks por tarea individual no está publicada.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/OmniJev/OneJev1.6-0.8B
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- GitHub del proyecto: https://github.com/OmniJev/OneJev
-- Web oficial: https://omnijev.github.io/OneJev/
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev1.6-0.8B
+- Organización en Hugging Face: https://huggingface.co/OmniJev
+- Repositorio GitHub: https://github.com/OmniJev/OneJev
+- Sitio web del proyecto: https://omnijev.github.io/OneJev/
 - Licencia: https://github.com/OmniJev/OneJev/blob/main/LICENSE
-- Flide (servidor): https://github.com/OmniJev/Flide
+- Servidor Flide: https://github.com/OmniJev/Flide
 - Paper de Flide: https://arxiv.org/abs/2610.42148
-- Decision Index 0.3 (space): https://huggingface.co/spaces/multimodalart/jev-decision-index
-- Perfil del autor: https://huggingface.co/OmniJev
+- Decision Index 0.3 (Space): https://huggingface.co/spaces/multimodalart/jev-decision-index
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

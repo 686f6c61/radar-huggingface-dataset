@@ -2,88 +2,90 @@
 
 ## Resumen
 
-`Viv0605101/anlp-a3-hybrid` es un modelo publicado en Hugging Face por el usuario Viv0605101 con un total de 962.028 parámetros (algo menos de un millón), lo que lo sitúa en la categoría de modelos de juguete o de laboratorio. La model card es prácticamente vacía: se limita al aviso automático de que el modelo se ha subido mediante `PyTorchModelHubMixin` y deja los campos Code, Paper y Docs como "More Information Needed". No se declara licencia, idiomas, pipeline ni longitud de contexto.
+`Viv0605101/anlp-a3-hybrid` es un modelo de investigación de pequeño tamaño (3.113.490 parámetros según los pesos en safetensors; la model card declara 962.796 parámetros de red, sin contar el front-end de tablas) publicado como entrega del Assignment 3 de la asignatura Advanced NLP (ANLP) en IIIT. Su tarea no es la generación de lenguaje general, sino la decodificación de un cifrado simbólico: recibe texto cifrado y produce el texto en claro correspondiente. La arquitectura se describe como un híbrido Mamba-DeltaNet, es decir, combina capas de espacio de estados con capas de atención lineal tipo DeltaNet.
 
-Los únicos indicios sobre su naturaleza son los tags: `mamba`, `deltanet` y `cipher`. Los dos primeros apuntan a una arquitectura híbrida de espacio de estados (SSM) y atención lineal, en la línea de los trabajos que combinan capas Mamba con DeltaNet; el tercero no está documentado. El nombre del repositorio (`anlp-a3-hybrid`) sugiere un trabajo académico de una asignatura de procesamiento de lenguaje natural, lo que encaja con el tamaño y con la ausencia de documentación.
+El modelo no aprende la clave del cifrado. El autor indica explícitamente que la recurrencia del front-end elimina el flujo de clave y que unas tablas por posición, contadas sobre el split de entrenamiento y almacenadas en el buffer `sym_table`, mapean cada símbolo a un token de letra o a un token desconocido. La red se limita a copiar los tokens conocidos y a rellenar los desconocidos a partir del contexto ya decodificado. Se entrenó durante 2.000 pasos.
 
-Su relevancia actual es, por tanto, exclusivamente formativa o experimental: sirve para ilustrar cómo se empaqueta un modelo híbrido con `PyTorchModelHubMixin` y para hacer pruebas de integración a escala mínima, pero no es un modelo utilizable para generación de texto, razonamiento ni ninguna tarea de producción.
+Es relevante únicamente como artefacto docente y como referencia reproducible de un pipeline de decodificación con front-end determinista más modelo neuronal. No es un modelo de propósito general: no hay pipeline declarado, no hay licencia, no hay idiomas declarados y el repositorio ocupa 0.0 GB. Cualquier evaluación de utilidad práctica debe hacerse contra su tarea concreta (descifrado del split de test del assignment), no como LLM.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | No disponible en la model card; los tags (`mamba`, `deltanet`) apuntan a una arquitectura híbrida SSM + atención lineal, sin confirmar |
-| Parametros totales | 962.028 (dato real de los safetensors) |
-| Parametros activos | No aplica (no hay indicios de que sea MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible; no se han publicado pesos cuantizados |
-| Idiomas soportados | No disponible |
-| Licencia | No disponible |
-| Formato de pesos | safetensors (tag de la librería); el modelo se carga con código PyTorch propio mediante `PyTorchModelHubMixin` |
+| Arquitectura | Híbrido Mamba-DeltaNet (SSM + atención lineal) con front-end recurrente y tablas por posición |
+| Parámetros totales | 3.113.490 (safetensors); la model card declara 962.796 parámetros de red |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | pesos en 8-bit (tag `8-bit`); no se documentan otras variantes |
+| Idiomas soportados | no disponible |
+| Licencia | no disponible |
+| Formato de pesos | safetensors (librería PyTorch, `PyTorchModelHubMixin`) |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna, el número de capas, la dimensión del estado oculto ni la composición de las capas híbridas. Los tags del repositorio (`mamba`, `deltanet`, `cipher`) son el único indicio: apuntan a un transformer híbrido que combinaría bloques de espacio de estados tipo Mamba con capas de atención lineal DeltaNet, un patrón habitual en la investigación reciente sobre modelos de contexto largo con coste lineal. Cualquier afirmación más concreta sobre la proporción de capas o el mecanismo exacto sería especulativa.
+La arquitectura combina dos familias de bloques: capas Mamba (modelo de espacio de estados selectivo, con recurrencia lineal en la longitud de secuencia) y capas DeltaNet (atención lineal con regla de actualización delta sobre una memoria asociativa matricial). El prefijo "hybrid" de la model card indica que ambos tipos se intercalan en la red. El front-end es determinista: una recurrencia elimina el flujo de clave y unas tablas de símbolos por posición (`sym_table`), calculadas sobre el split de entrenamiento, traducen cada símbolo a un token de letra o a un token desconocido. La red neuronal solo resuelve los símbolos desconocidos usando el contexto decodificado, de modo que no se aprende la clave sino el mapeo residual.
 
-Tampoco se documentan los datos de entrenamiento: se desconoce el volumen de tokens, la composición del corpus, si hubo fases de ajuste fino supervisado, RLHF o DPO, y si se aplicaron innovaciones como decodificación especulativa o atención linear optimizada. El tamaño del repositorio (0,0 GB) y la ausencia de código de modelado publicado impiden además reproducir la carga del modelo tal cual está.
+El entrenamiento declarado es de 2.000 pasos. No se especifican en la información disponible el número de tokens, la composición del dataset, ni si hubo RLHF, DPO o ajuste supervisado adicional. Existen ramas del mismo repositorio con etapas anteriores: `rule-inputs` (entradas de candidatos por reglas) y `step-inputs` (entradas de paso y posición), lo que sugiere una ablación progresiva del diseño de entradas del front-end. El informe enviado (`2024122002_a3.pdf`) está incluido en el repositorio.
 
 ## Capacidades
 
-- Generación de texto: no acreditada. Con 962.028 parámetros no es esperable una generación lingüísticamente coherente, y no hay ejemplos ni evaluaciones publicadas.
-- Razonamiento y matemáticas: no disponible; sin benchmarks ni demos.
-- Generación de código: no disponible; sin benchmarks ni demos.
-- Tool calling / function calling: no disponible; no se documenta ninguna integración de este tipo.
-- Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; no se declara ningún idioma.
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Función verificable: servir como ejemplo reproducible de empaquetado de un modelo híbrido SSM con `PyTorchModelHubMixin` y pesos en safetensors.
+- Decodificación de texto cifrado a texto en claro para el esquema de cifrado del assignment, con exact match del 99,17 % en test.
+- Eliminación de flujo de clave mediante recurrencia en el front-end, sin aprendizaje de la clave.
+- Relleno de símbolos desconocidos a partir del contexto decodificado, apoyado en las tablas `sym_table`.
+- Procesamiento por símbolos con tablas dependientes de la posición.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingüe; los idiomas no están declarados.
+- No se documenta visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Docencia e investigación sobre arquitecturas híbridas: el modelo permite inspeccionar cómo se serializa y se recupera un híbrido Mamba/DeltaNet a escala mínima, útil para comparar implementaciones de referencia sin incurrir en coste de cómputo.
-- Pruebas de integración (smoke tests) en pipelines de entrenamiento: al ocupar menos de 4 MB en fp32, se puede insertar en un paso de CI para comprobar que el cargador de safetensors, el tokenizador y el bucle de entrenamiento funcionan antes de lanzar un modelo grande.
-- Validación de utilidades de serialización: sirve para verificar que un script propio de carga y guardado con `PyTorchModelHubMixin` reproduce exactamente los pesos publicados (962.028 parámetros) y no introduce discrepancias.
-- Experimentos de inicialización y ablaciones: como modelo de 1 M de parámetros, permite iterar rápidamente sobre esquemas de inicialización de capas SSM o sobre la proporción de capas Mamba frente a DeltaNet sin gastar GPU.
-- Referencia para destilación o curriculum learning: puede actuar como alumno de juguete en experimentos de destilación desde un modelo mayor, midiendo pérdida de perplejidad en un corpus pequeño antes de escalar.
-- Reproducción de material docente de una asignatura de NLP: encaja como artefacto de entrega de un trabajo académico (el nombre `anlp-a3-hybrid` lo sugiere), útil para que otros estudiantes comparen su implementación con una publicada.
+- Reproducción del assignment: ejecutar `bash scripts/part1/test_assn.sh` desde el repositorio de código para descargar el modelo y decodificar el split de test, verificando las métricas publicadas.
+- Estudio de arquitecturas híbridas SSM + atención lineal: el modelo sirve como banco de pruebas a pequeña escala (3,1 M de parámetros) para medir coste y precisión de intercalar Mamba y DeltaNet en una tarea secuencial.
+- Comparación de diseños de front-end: las ramas `rule-inputs` y `step-inputs` permiten contrastar el efecto de distintas representaciones de entrada sobre la exactitud de decodificación.
+- Docencia de evaluación: usar las métricas de exact match, precisión de carácter, precisión de palabra y Levenshtein medio como ejemplo de protocolo de evaluación en tareas de transcripción exacta.
+- Referencia de empaquetado: el uso de `PyTorchModelHubMixin` y safetensors en 8-bit sirve como ejemplo mínimo de publicación de un checkpoint con pesos cuantizados en el Hub.
+- Análisis de robustez de tablas simbólicas: estudiar cómo degrada la precisión cuando el vocabulario de test contiene símbolos no vistos en entrenamiento, dado el uso de un token desconocido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados declarados por el autor en la model card:
+
+| Split | Exact match (%) | Precisión de carácter (%) | Precisión de palabra (%) | Levenshtein medio |
+|---|---|---|---|---|
+| Validación | 99,05 | 99,998 | 99,93 | 0,014 |
+| Test | 99,17 | 99,988 | 99,16 | 0,111 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en cualquier precisión. Cálculo a partir de los 962.028 parámetros: en fp32 los pesos ocupan aproximadamente 3,8 MB; en fp16/bf16, unos 1,9 MB; en int8, alrededor de 1,0 MB. Las activaciones y el estado recurrente son despreciables a esta escala.
-- GPU recomendadas: ninguna en particular. Cualquier GPU (RTX 4090, A100, H100) está sobredimensionada; la inferencia es viable en CPU.
-- Cabe en GPU consumer: sí, en cualquier GPU consumer, y también en dispositivos de baja potencia tipo Raspberry Pi.
-- Opciones de despliegue: carga nativa con PyTorch y el mixin `PyTorchModelHubMixin` del repositorio. No hay soporte confirmado en vLLM, llama.cpp, Ollama ni TGI: son motores orientados a arquitecturas estándar y aquí no se ha publicado el código de modelado necesario.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: inferior a 1 GB en cualquier precisión razonable, dado el tamaño de 3,1 M de parámetros (unos 12,5 MB en fp32 y unos 3,1 MB en 8-bit) más el buffer `sym_table`.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria; no requiere A100 ni H100. Una GTX 1050 o una iGPU con soporte CUDA/ROCm es suficiente.
+- Cabe en cualquier GPU de consumo, incluida la gama baja, y probablemente en CPU con latencia aceptable para lotes pequeños.
+- Opciones de despliegue: PyTorch nativo mediante `PyTorchModelHubMixin`; no hay confirmación de soporte en vLLM, llama.cpp, Ollama ni TGI, y estos motores no están orientados a arquitecturas híbridas Mamba-DeltaNet personalizadas.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-La comparación es orientativa: al no haber documentación técnica del modelo evaluado, solo se pueden contrastar parámetros, familia arquitectónica y licencia.
-
-| Modelo | Parametros | Arquitectura | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Viv0605101/anlp-a3-hybrid | 962.028 | Híbrida SSM + atención lineal (según tags, sin confirmar) | No disponible | Repositorio público, sin código de modelado ni documentación |
-| state-spaces/mamba-130m | ~130 M | Mamba (SSM puro) | Apache 2.0 | Pesos y código de referencia publicados |
-| tiiuae/falcon-mamba-7b | ~7 B | Mamba (SSM puro) | Apache 2.0 | Pesos publicados, ampliamente evaluado |
-
-La diferencia de escala es de dos a cuatro órdenes de magnitud: incluso el modelo híbrido más pequeño de la comparación multiplica por más de 130 los parámetros de este repositorio. Las alternativas de la tabla cuentan además con documentación, licencia explícita y resultados publicados, condiciones que aquí no se cumplen.
+No disponible. No se han encontrado en la información proporcionada modelos comparables de la misma categoría (decodificadores de cifrado con arquitectura híbrida SSM + atención lineal y front-end determinista). Como referencia de tamaño, los modelos híbridos Mamba-2 publicados por la comunidad suelen partir de cientos de millones de parámetros, muy por encima de este checkpoint.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card no describe arquitectura, datos, tokenizador ni uso previsto, lo que impide evaluar su comportamiento de forma rigurosa.
-- Licencia no especificada: sin licencia explícita no se puede asumir permiso de uso comercial; en la práctica, debe tratarse como no apto para producción.
-- Riesgo de salida degenerada: con 962.028 parámetros, es esperable que la generación de texto sea incoherente o repetitiva. El riesgo no es tanto la alucinación verosímil como la producción de texto sin sentido.
-- Sesgos: no evaluables, al desconocerse el corpus de entrenamiento y los idiomas cubiertos.
-- Idiomas: no se declara ninguno; no hay garantía de soporte de castellano ni de ninguna otra lengua.
-- Repositorio aparentemente incompleto: el tamaño es de 0,0 GB y los campos Code, Paper y Docs figuran como "More Information Needed", por lo que la carga puede fallar sin el código de modelado asociado al mixin.
-- Sin mantenimiento ni comunidad: cero descargas y cero likes en el momento de la consulta, y un nombre que apunta a una entrega académica, no a un proyecto con soporte.
-- Longitud de contexto desconocida: cualquier caso de uso que dependa de ventanas largas (el principal atractivo teórico de los híbridos SSM) no puede validarse con la información disponible.
+- Modelo de assignment académico: no está diseñado ni validado para uso en producción.
+- La decodificación depende de tablas `sym_table` calculadas sobre el split de entrenamiento; fuera de la distribución del assignment la precisión puede caer drásticamente.
+- No aprende la clave del cifrado: si cambia el esquema de cifrado o el flujo de clave, el front-end deja de ser válido.
+- Licencia no disponible: no se puede asumir permiso de uso comercial.
+- Idiomas no declarados; no hay evidencia de comportamiento multilingüe.
+- Riesgo de alucinación en los símbolos marcados como desconocidos, ya que la red los rellena por contexto en lugar de por evidencia criptográfica.
+- Sin pipeline declarado en el Hub ni documentación de inferencia más allá del script del repositorio de código.
+- El repositorio ocupa 0.0 GB y no incluye datos de entrenamiento; la reproducibilidad completa depende del repositorio externo en `code.iiit.ac.in`.
+- Discrepancia entre el recuento de parámetros de la model card (962.796) y el de los safetensors (3.113.490): conviene verificar qué incluye cada cifra antes de citarla.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Viv0605101/anlp-a3-hybrid
-- Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
-- Código, paper y documentación del autor: no disponibles (la model card los marca como "More Information Needed")
+- Código y comandos (commit a5ab590): https://code.iiit.ac.in/advanced-nlp/m26-assignment3-vidvathama.babu
+- Rama con entradas de candidatos por reglas: https://huggingface.co/Viv0605101/anlp-a3-hybrid/tree/rule-inputs
+- Rama con entradas de paso y posición: https://huggingface.co/Viv0605101/anlp-a3-hybrid/tree/step-inputs
+- Informe enviado: `2024122002_a3.pdf` en el repositorio del modelo

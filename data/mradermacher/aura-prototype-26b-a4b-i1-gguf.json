@@ -72,5 +72,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Quantized Models for EldritchLabs/Aura-Prototype-26B-A4B",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3AEldritchLabs%2FAura-Prototype-26B-A4B",
+      "snippet": "18.09.2026 ... Models · mradermacher/Aura-Prototype-26B-A4B-GGUF · mradermacher/Aura-Prototype-26B-A4B-i1-GGUF."
+    }
+  ]
 }

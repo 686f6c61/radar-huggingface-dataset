@@ -2,95 +2,98 @@
 
 ## Resumen
 
-Qwen3.8-27B-opencode-adapted-GGUF es la versión cuantizada en formato GGUF del checkpoint fusionado Qwen3.8-27B-opencode-adapted, publicado por el usuario prithivMLmods. El modelo parte de Qwen/Qwen3.8-27B y le incorpora, mediante fusión de un adaptador LoRA, el ajuste realizado por harness-hub para actuar como modelo de base del agente de programación OpenCode en tareas de ingeniería de software y de terminal. Con 27.320.697.856 parámetros, licencia Apache 2.0 y pesos en GGUF, está pensado para inferencia local con llama.cpp y motores compatibles.
+Qwen3.8-27B-opencode-adapted-GGUF es una coleccion de cuantizaciones GGUF del checkpoint fusionado Qwen3.8-27B-opencode-adapted, publicado por el usuario prithivMLmods (prithivMLmods) sobre el modelo base harness-hub/Qwen3.8-27B-opencode-adapted. El modelo parte de Qwen/Qwen3.8-27B y le incorpora, mediante la fusion de un adaptador LoRA (r = 32, alpha = 64, aplicado a las proyecciones q, k, v, o, gate, up y down), un ajuste de reinforcement learning con AsyncGRPO en entornos Harbor/OpenEnv orientado a tareas de ingenieria de software y terminal como columna vertebral del agente de codigo OpenCode.
 
-La relevancia del modelo reside en su especialización: según la model card del adaptador original, el ajuste eleva SWE-bench Pro (hard 51) del 35,3 % al 51,0 % y Terminal-Bench 2.1 del 46,4 % al 52,4 %, además de reducir el número de turnos necesarios y generar entre 6 y 8 veces menos tokens por tarea. Esas cifras se midieron sobre el modelo base en BF16 con el adaptador, no sobre este checkpoint fusionado ni sobre estas cuantizaciones.
+El resultado es un modelo denso de 27.320.697.856 parametros (27,3 mil millones), licencia Apache 2.0, con soporte multimodal imagen-texto (incluye un fichero de proyeccion mmproj en BF16) y una extension de Multi-Token Prediction (MTP) que integra decodificacion especulativa dentro de los propios pesos del modelo, sin necesidad de un modelo borrador separado.
 
-Los archivos GGUF incluyen soporte de Multi-Token Prediction (MTP) para decodificación especulativa integrada en los propios pesos, lo que acelera la inferencia local sin necesidad de un modelo borrador separado. El repositorio también distribuye un proyector multimodal en BF16 (mmproj) para capacidades de visión.
+Su relevancia practica es doble: por un lado, el adaptador original reporta mejoras sustanciales en tareas de agente de codigo (SWE-bench Pro hard 51 de 35,3% a 51,0% y Terminal-Bench 2.1 de 46,4% a 52,4%), con un cuarto a la mitad de turnos y entre 6 y 8 veces menos tokens generados por tarea; por otro, esta publicacion GGUF permite ejecutar ese comportamiento en llama.cpp, con tamanos que van de 15,8 GB (Q4_K_S) a 29 GB (Q8_0), lo que lo hace desplegable en hardware de consumo de gama alta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen/Qwen3.8-27B), con cabezas MTP para decodificación especulativa |
-| Parametros totales | 27.320.697.856 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M, Q4_K_S, Q5_K_M, Q5_K_S, Q8_0; proyector multimodal mmproj-bf16 |
-| Idiomas soportados | en |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el checkpoint base fusionado) |
+| Arquitectura | Transformer denso (base Qwen/Qwen3.8-27B) con cabezas de Multi-Token Prediction (MTP) para decodificacion especulativa; fusion de adaptador LoRA (r = 32, alpha = 64) |
+| Parametros totales | 27.320.697.856 (27,3 B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q8_0; proyeccion multimodal mmproj en BF16; checkpoint base en BF16 |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); el modelo base tambien existe en BF16 safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de aproximadamente 27 300 millones de parámetros derivado de Qwen/Qwen3.8-27B. Sobre esa base se entrenó un adaptador LoRA con r = 32 y alpha = 64 que afecta a las proyecciones q, k, v, o, gate, up y down. El adaptador se entrenó con aprendizaje por refuerzo AsyncGRPO en entornos Harbor/OpenEnv para servir de base al agente de programación OpenCode en tareas de ingeniería de software y de terminal, con el modo de razonamiento (thinking mode) desactivado tal y como se hizo durante el entrenamiento. La fusión se realizó aplicando la actualización estándar W + (alpha/r)·B@A por tensor en fp32 y convirtiendo después a BF16, preservando la disposición de shards, los nombres de tensores y todos los tensores MTP del modelo original.
+El modelo es un transformer denso de 27,3 mil millones de parametros construido sobre Qwen/Qwen3.8-27B. Sobre esa base se entreno un adaptador LoRA con r = 32 y alpha = 64 que afecta a las proyecciones q, k, v, o, gate, up y down. El adaptador se entreno con reinforcement learning AsyncGRPO dentro de entornos Harbor/OpenEnv, con el objetivo de servir de columna vertebral al agente de codigo OpenCode en tareas de ingenieria de software y de terminal, y con el modo de razonamiento (thinking mode) desactivado durante el entrenamiento. La fusion se realiza aplicando la actualizacion estandar W + (alpha/r)·B@A por tensor en fp32 antes de volver a BF16, preservando la disposicion de shards, los nombres de tensores y todos los tensores MTP del modelo original.
 
-La innovación técnica destacable es la integración de Multi-Token Prediction en los archivos GGUF: la arquitectura incorpora cabezas adicionales que predicen varios tokens futuros en una sola pasada, lo que permite decodificación especulativa sin un modelo borrador externo. No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases adicionales de RLHF o DPO más allá del AsyncGRPO descrito.
+La innovacion tecnica mas destacable es la extension MTP en formato GGUF: los ficheros incluyen cabezas de prediccion de multiples tokens futuros dentro de la propia arquitectura, de modo que la decodificacion especulativa queda integrada en los pesos y no requiere un modelo borrador externo. Esto acelera la inferencia local en llama.cpp manteniendo la calidad del modelo completo. Ademas, el repositorio incluye un fichero mmproj-bf16.gguf (931 MB) que habilita las capacidades de vision del modelo en el pipeline image-text-to-text.
 
 ## Capacidades
 
-- Generación de texto y razonamiento en inglés, con modo de razonamiento desactivado por defecto según el entrenamiento.
-- Especialización en tareas de ingeniería de software: resolución de issues, parcheo de código y trabajo en terminal.
-- Soporte de agentes y razonamiento multi-paso, entrenado explícitamente en entornos Harbor/OpenEnv para el agente OpenCode.
-- Capacidades multimodales de imagen a texto mediante el proyector mmproj-bf16 incluido en el repositorio.
-- Compatibilidad con llama.cpp y llama-cli, así como con text-generation-inference.
-- Decodificación especulativa integrada mediante MTP.
-- No se documenta soporte explícito de tool calling o function calling en la información disponible.
-- Capacidades multilingües limitadas al inglés según la model card.
+- Generacion de texto y razonamiento en ingles, con modo de pensamiento desactivado por defecto segun el entrenamiento del adaptador.
+- Codificacion y tareas de ingenieria de software: resolucion de issues, parcheo de repositorios y trabajo en entornos de terminal.
+- Uso como agente de codigo multi-paso (OpenCode) con reduccion de turnos y de tokens generados por tarea.
+- Capacidades multimodales imagen-texto mediante el fichero de proyeccion mmproj (pipeline image-text-to-text).
+- Decodificacion especulativa integrada mediante cabezas MTP, sin modelo borrador separado.
+- Soporte de tool calling y function calling heredado del modelo base Qwen3.8 (no detallado en la informacion proporcionada).
+- Integracion con llama.cpp (llama-cli) y con text-generation-inference segun los tags del repositorio.
+- Capacidades multilingues limitadas al ingles segun la model card.
 
 ## Casos de uso
 
-- Agente de programación autónomo en local: el modelo puede ejecutarse con llama.cpp como backend de OpenCode para resolver issues y aplicar parches en un repositorio, aprovechando su entrenamiento específico en SWE-bench Pro y Terminal-Bench 2.1.
-- Automatización de tareas de terminal: dado su ajuste en entornos de terminal, encaja en pipelines que ejecutan comandos, interpretan la salida y encadenan acciones multi-paso con menos turnos que el modelo base.
-- Asistencia de código en estaciones de trabajo sin GPU de centro de datos: las cuantizaciones Q4_K_S (15,8 GB) y Q4_K_M (17 GB) permiten desplegar el modelo en GPUs de consumo con VRAM suficiente.
-- Revisión y corrección de parches en CI/CD: el modelo puede integrarse como paso de verificación que propone correcciones sobre diffs, con la ventaja de generar entre 6 y 8 veces menos tokens por tarea según las mediciones del adaptador.
-- Procesamiento de capturas o diagramas junto a código: el proyector mmproj-bf16 habilita flujos de imagen a texto, por ejemplo para interpretar capturas de errores o diagramas de arquitectura junto a la consulta.
-- Despliegue en servidores de inferencia compatibles con GGUF: mediante llama.cpp o text-generation-inference para servir el modelo a varios clientes internos con cuantización Q5_K_M o Q8_0 cuando se prioriza calidad.
+- Agente de codigo autonomo en terminal: el modelo esta entrenado especificamente para tareas de terminal y software engineering en OpenCode, por lo que puede encadenar comandos, inspeccionar repositorios y aplicar parches con menos turnos que el modelo base.
+- Resolucion de issues en repositorios reales: adecuado para flujos tipo SWE-bench, donde el modelo debe localizar el fallo, editar ficheros y validar el cambio; el adaptador reporta una mejora de 35,3% a 51,0% en SWE-bench Pro hard 51.
+- Automatizacion de CI/CD con agentes: al soportar tool calling y desplegarse en llama.cpp, puede integrarse en pipelines que invocan herramientas de build, test y lint de forma iterativa.
+- Asistente de programacion en local con privacidad: la cuantizacion Q4_K_M (17 GB) permite ejecutar el modelo en una estacion de trabajo con GPU de consumo, sin enviar codigo a servicios externos.
+- Revision de codigo asistida por imagen: gracias al fichero mmproj, puede analizar capturas de pantalla de errores, diagramas o interfaces junto con el codigo asociado.
+- Prototipado de agentes de investigacion: los tags harbor, openenv y async-grpo indican que el modelo sirve como banco de pruebas para entornos de agente y RL, util para experimentar con politicas de accion en tareas de software.
+- Despliegue en servidores de inferencia: con text-generation-inference y llama.cpp como backends declarados, encaja en servicios de generacion de codigo con throughput alto gracias a la decodificacion especulativa MTP.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados corresponden al adaptador original medido sobre el modelo base en BF16, no a este checkpoint fusionado ni a las cuantizaciones GGUF.
+Los unicos datos publicados en la informacion disponible corresponden al adaptador original evaluado sobre el modelo base BF16, no sobre este checkpoint fusionado ni sobre las cuantizaciones GGUF.
 
-| Benchmark | Modelo base (BF16) | Con adaptador opencode-adapted | Mejora |
+| Benchmark | Modelo base (BF16) | Con adaptador | Variacion |
 |---|---|---|---|
-| SWE-bench Pro (hard 51) | 35,3 % | 51,0 % | +15,7 puntos |
-| Terminal-Bench 2.1 | 46,4 % | 52,4 % | +6,0 puntos |
+| SWE-bench Pro (hard 51) | 35,3% | 51,0% | +15,7 puntos |
+| Terminal-Bench 2.1 | 46,4% | 52,4% | +6,0 puntos |
+| Turnos por tarea | Referencia | 1/4 a 1/2 de los turnos | Reduccion |
+| Tokens generados por tarea | Referencia | 6-8 veces menos | Reduccion |
 
-Según la model card, el adaptador también requiere entre un cuarto y la mitad de turnos y genera entre 6 y 8 veces menos tokens por tarea. No se han publicado resultados de benchmarks de estas cuantizaciones GGUF en la información disponible.
+El autor indica explicitamente que estas cifras no se han reevaluado sobre el checkpoint fusionado ni sobre los ficheros GGUF. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 16-18 GB para Q4_K_S y Q4_K_M, 19-20 GB para Q5_K_S y Q5_K_M, y unos 29 GB para Q8_0, a los que hay que sumar el espacio de contexto y, si se usa visión, los 931 MB del proyector mmproj-bf16.
-- GPU recomendadas: A100 o H100 para Q8_0 y contextos largos; RTX 4090 (24 GB) para Q5_K_M y Q8_0 con contexto moderado; RTX 3090 o 4080 para Q4_K_M.
-- Cabe en GPU de consumo: sí, con las cuantizaciones Q4 y Q5 en tarjetas de 16-24 GB; Q8_0 requiere 24 GB o más.
-- Opciones de despliegue: llama.cpp (llama-cli), text-generation-inference y cualquier motor compatible con GGUF; el repositorio está etiquetado como compatible con endpoints.
-- Latencia y throughput: no disponibles en la información proporcionada; el uso de MTP con decodificación especulativa está orientado a acelerar la inferencia local.
+- VRAM estimada para inferencia: aproximadamente 15,8 GB (Q4_K_S), 17 GB (Q4_K_M), 19 GB (Q5_K_S), 19,6 GB (Q5_K_M) y 29 GB (Q8_0) solo para los pesos; anadir margen para el contexto KV y, si se usa vision, el fichero mmproj de 931 MB.
+- GPU recomendadas: A100 40/80 GB y H100 para Q8_0 con contexto largo y concurrencia; RTX 4090 (24 GB) para Q4_K_M y Q5_K_M con contexto moderado; RTX 3090 (24 GB) como alternativa de consumo para Q4 y Q5.
+- Cabe en GPU de consumo: si, en tarjetas de 24 GB con cuantizaciones Q4_K_M o Q5_K_M; Q8_0 requiere 32 GB o mas o bien descarga parcial a CPU.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server) con soporte MTP, text-generation-inference y transformers segun los tags del repositorio; Ollama y vLLM no se mencionan en la informacion disponible.
+- Latencia y throughput: no disponibles; la decodificacion especulativa MTP deberia reducir la latencia por token frente a un GGUF convencional del mismo tamano, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-opencode-adapted-GGUF | 27,3 B | no disponible | Apache 2.0 | GGUF | Especializado en agentes de código, MTP, visión vía mmproj |
-| Qwen/Qwen3.8-27B (base) | 27,3 B | no disponible | no disponible en la información | safetensors | Modelo generalista sin el ajuste de OpenCode; referencia de partida |
-| harness-hub/Qwen3.8-27B-opencode-adapted | 27,3 B | no disponible | no disponible en la información | safetensors (LoRA fusionable) | Adaptador original; requiere soporte LoRA o fusión |
+| Qwen3.8-27B-opencode-adapted-GGUF | 27,3 B | No disponible | Agente de codigo y terminal (OpenCode), multimodal, MTP | Apache 2.0 | GGUF |
+| Qwen/Qwen3.8-27B (base) | 27,3 B | No disponible | Modelo generalista | Apache 2.0 | Safetensors, GGUF de terceros |
+| harness-hub/Qwen3.8-27B-opencode-adapted | 27,3 B | No disponible | Adaptador LoRA para OpenCode sobre la base | Apache 2.0 | LoRA (requiere motor con soporte de adaptadores) |
 
-No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
+La comparativa se limita a las variantes del mismo linaje porque la informacion proporcionada no incluye datos de benchmarks frente a modelos de otros autores. No disponible para alternativas externas.
 
 ## Limitaciones y advertencias
 
-- Los benchmarks citados se midieron con el adaptador sobre el modelo base en BF16 y no se han reevaluado en este checkpoint fusionado ni en las cuantizaciones GGUF; el rendimiento real puede diferir.
-- El modelo está orientado al inglés; no se documenta soporte de otros idiomas.
-- El modo de razonamiento está desactivado tal y como se entrenó; forzarlo puede degradar el comportamiento esperado.
-- Riesgo de alucinación inherente a los modelos de lenguaje, especialmente en tareas de código donde puede proponer parches sintácticamente válidos pero funcionalmente incorrectos.
-- No se documentan sesgos conocidos ni evaluaciones de seguridad en la información disponible.
-- La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-27B y del adaptador original.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
-- La longitud de contexto no está documentada en la información disponible, lo que dificulta planificar despliegues con ventanas largas.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta verificado.
+- Las cifras de SWE-bench Pro y Terminal-Bench 2.1 corresponden al adaptador sobre el modelo base BF16 y no se han reevaluado en el checkpoint fusionado ni en las cuantizaciones GGUF; la degradacion por cuantizacion no esta medida.
+- El modo de pensamiento (thinking mode) esta desactivado por diseno; no se documenta el comportamiento si se activa.
+- La longitud de contexto no se especifica en la informacion disponible, lo que impide planificar tareas de repositorio grande con garantias.
+- Al ser un modelo de codigo y agentes, existe riesgo de alucinacion en APIs, nombres de funciones y comandos de terminal; conviene validar toda salida ejecutable antes de aplicarla.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad en la informacion proporcionada.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; el mantenimiento depende de un publicador individual (prithivMLmods) sobre un modelo base de terceros.
+- El repositorio ocupa 101,4 GB, por lo que la descarga completa de todas las cuantizaciones es costosa; conviene bajar solo el fichero necesario.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/Qwen3.8-27B-opencode-adapted-GGUF
+- Repositorio GGUF: https://huggingface.co/prithivMLmods/Qwen3.8-27B-opencode-adapted-GGUF
 - Modelo base del adaptador: https://huggingface.co/harness-hub/Qwen3.8-27B-opencode-adapted
-- Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Perfil del autor: https://huggingface.co/prithivMLmods

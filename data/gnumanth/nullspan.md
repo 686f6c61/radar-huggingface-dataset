@@ -2,118 +2,96 @@
 
 ## Resumen
 
-`gnumanth/nullspan` es un modelo de extracción estructurada y abstención calibrada construido sobre `distilbert-base-uncased` (67.060.625 parámetros). Lo desarrolla Hemanth.HM (usuario `gnumanth`), autor también de otros modelos publicados en Hugging Face. El modelo resuelve un problema muy concreto: dado un texto no estructurado (`state`) y un mapa de campos tipados (`text`, `number`, `date`, `datetime`, `duration`, `list`, `estimate`, `forecast`), devuelve los valores extraídos, su posición exacta en el texto y una probabilidad de ausencia (`p_null`) para cada campo. Todo ello en una sola pasada del encoder, sin generar tokens de salida.
+`nullspan` es un repositorio de pesos abiertos publicado por el desarrollador independiente gnumanth que contiene dos modelos neuronales de tipo "System One", es decir, orientados a producir decisiones estructuradas sin generar tokens de salida. El primero, `NullspanForExtraction` (345,3 M de parámetros en FP32), es un extractor de spans fundamentado en el texto de entrada que devuelve tuplas `[start, end]` con abstención calibrada (`p_null`), verificación de restricciones algebraicas entre campos y estimación de cuantiles. El segundo, `NullspanSystemOneEngine` (395 M, basado en ModernBERT-large con contexto de 8K), resuelve decisiones tipadas (`true`/`false`, elección entre opciones y puntuaciones ordinales) en un único pase forward.
 
-La relevancia técnica está en el enfoque: en lugar de pedir a un LLM generativo que emita JSON (con el coste de latencia, riesgo de alucinación y formato inválido que eso conlleva), `nullspan` añade cinco cabezas paralelas sobre un encoder DistilBERT y resuelve la tarea con clasificación y regresión de spans. El resultado es un modelo de 67M de parámetros, 0,3 GB de repositorio, licencia MIT y una latencia declarada de 119,35 ms por pasada multi-campo en Apple Silicon MPS.
+El modelo aborda un problema recurrente en pipelines de extracción de información: los modelos generativos alucinan valores, arrastran sesgos de orden entre opciones y consumen tokens de salida. `nullspan` propone sustituir esa generación por cabezas de clasificación y regresión calibradas sobre representaciones de encoder, de modo que cada decisión tenga una probabilidad asociada y un coste de inferencia muy bajo (del orden de milisegundos por caso en GPU L4).
 
-El modelo se publicó el 19 de octubre de 2026 y en el momento de redactar esta ficha no tiene descargas ni likes, por lo que no existe validación independiente por parte de la comunidad. Conviene tratar sus métricas como autodeclaradas por el autor.
+Es relevante ahora porque combina un tamaño contenido (apto para hardware modesto), licencia MIT, formatos PyTorch y ONNX Int8, y resultados publicados en benchmarks de extracción y decisión tipada (SQuAD v2.0, `typed-decisions`, `jevbench`). La versión documentada es la v1.3.1, con pesos de la v1.3.0 fijados en un commit concreto de Hugging Face.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (DistilBERT, 6 capas) con 5 cabezas paralelas: `null_head`, `span_head`, `bio_head`, `op_head`, `quantile_head` |
-| Parámetros totales | 67.060.625 (según safetensors) |
-| Parámetros activos | no aplica (modelo denso, no es MoE) |
-| Longitud de contexto | no disponible en la model card; al derivar de `distilbert-base-uncased`, la base está limitada a 512 posiciones |
-| Tipos de cuantización | no disponible (solo pesos completos en safetensors; no se publican variantes GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | no disponible (la base `distilbert-base-uncased` está entrenada principalmente en inglés) |
+| Arquitectura | Encoder tipo transformer (Electra/ModernBERT) con cabezas de extracción de spans, abstención y decisión tipada; dos modelos en el repositorio |
+| Parametros totales | 345.271.320 (NullspanForExtraction, safetensors); 395 M (NullspanSystemOneEngine, ModernBERT-large) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 512 tokens con ventana deslizante para documentos largos (extractor); 8K tokens (SystemOneEngine) |
+| Tipos de cuantizacion | FP32 (PyTorch) e Int8 (ONNX, 331,1 MB) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors (requiere `trust_remote_code=True`) |
-| Pipeline declarado | question-answering / feature-extraction |
-| Autor | gnumanth (Hemanth.HM) |
-| Fecha de publicación | 19 de octubre de 2026 (actualizado el mismo día) |
-| Tamaño del repositorio | 0,3 GB |
-| Dependencia de código | sí, arquitectura personalizada `NullspanForExtraction` incluida en el repo |
-| Dataset de entrenamiento | `gnumanth/nullspan-dataset` (composición y tamaño no disponibles) |
+| Formato de pesos | safetensors, ONNX, código custom (`trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-`NullspanForExtraction` es un encoder DistilBERT de 6 capas y ~67M de parámetros al que se le acoplan cinco cabezas que se ejecutan en paralelo sobre la misma pasada forward, sin decodificación autorregresiva. Cada cabeza cubre una subtarea: `null_head` produce la probabilidad calibrada de que un campo esté ausente (`p_null`), `span_head` implementa una pointer network de inicio/fin a nivel de token que se mapea a caracteres mediante `offset_mapping`, `bio_head` es un etiquetador `B/I/O` para listas ordenadas de spans, `op_head` es un router de 8 clases (`SPAN_TEXT`, `SPAN_NUMBER`, `ARITH_SUM`, `ARITH_DIFF`, `ARITH_MUL`, `ISO_DATETIME`, `DATE_DURATION`, `DIST_ESTIMATE_FORECAST`) que decide la operación de normalización o cómputo, y `quantile_head` estima una distribución calibrada con pérdida pinball sobre los cuantiles `p10`, mediana y `p90`, acotada por los parámetros `[min, max, step, scale]`.
+`NullspanForExtraction` se apoya en un encoder tipo Electra y añade cabezas específicas para extracción de spans fundamentados, una cabeza dedicada `qa_null_head` para abstención calibrada y módulos de verificación de restricciones algebraicas entre campos, además de estimación de cuantiles `(p10, median, p90)`. El contexto es de 512 tokens con ventanas para documentos largos. `NullspanSystemOneEngine` emplea ModernBERT-large con 8K de contexto e incorpora Exact Tree-Isolated Parallel-Option Masking, competición de flujos entre preguntas y 24 cabezas de factores latentes, de modo que cada caso se resuelve en un único pase forward sin tokens generados y con invariancia al orden de las opciones (100 % de permutación).
 
-El entrenamiento declarado se completó en 565,8 segundos sobre Apple Silicon (MPS), lo que indica un conjunto de datos y un presupuesto de cómputo pequeños. No se especifican en la model card el número de tokens, la composición del dataset ni el proceso de anotación. Tampoco hay RLHF ni DPO: al no ser un modelo generativo, el ajuste se realiza de forma supervisada multi-tarea sobre las cinco cabezas, con pérdida pinball para la parte distribucional. La innovación destacable es el enrutado de operaciones aritméticas y de normalización dentro del propio encoder: en el ejemplo de la model card, `amount_paid` se resuelve sumando 649,00 + 52,10 mediante `ARITH_SUM` para devolver 701,1, y `days_since_delivery` se calcula como diferencia entre fechas.
+El entrenamiento del motor de decisiones sigue un esquema en dos etapas: un preentrenamiento general "System One" con `BoolQ`, `ARC-Challenge` y `SciQ` (splits de train) más rúbricas programáticas numéricas, de política, negación y adecuación; y una segunda etapa de autodestilación cruzada entre 10 modelos con validación out-of-fold de 5 folds y Trajectory-SWA sobre el split de train de `LocalLLaMA/typed-decisions`. El autor declara explícitamente que el modelo no es zero-shot en `Typed Decisions`. Los conjuntos de test (Typed Decisions test, JevBench público y sellado, SQuAD v2.0 validation y los pools de NullspanBench) no se tocaron durante el entrenamiento ni la calibración.
 
 ## Capacidades
 
-- Extracción de campos tipados (`text`, `number`, `date`, `datetime`, `duration`, `list`, `estimate`, `forecast`) desde texto libre en una sola pasada del encoder.
-- Abstención calibrada: devuelve `p_null` por campo y `value: null` cuando el dato no está presente, con una confianza asociada.
-- Extracción de spans a nivel de carácter: `span_head` devuelve `[start, end]` exactos, lo que permite resaltar la evidencia en el documento original.
-- Extracción de listas ordenadas de spans mediante etiquetado `B/I/O` (`type: "list"`).
-- Enrutado y cómputo aritmético básico: suma, resta y multiplicación de valores mencionados en el texto (`ARITH_SUM`, `ARITH_DIFF`, `ARITH_MUL`).
-- Normalización temporal: conversión a `ISO_DATETIME` y cálculo de duraciones entre fechas (`DATE_DURATION`).
-- Estimación distribucional: `quantile_head` devuelve `p10`, mediana y `p90` con acotación por rango, escala (lineal o logarítmica) y paso.
-- Feature extraction: al ser un encoder, puede usarse para obtener representaciones de tokens o de secuencia.
-- No soporta generación de texto libre, tool calling, function calling, uso como agente multi-paso, visión, audio ni modo thinking. No es un modelo conversacional.
+- Extracción de spans fundamentados `[start, end]` sobre el texto de entrada, con tipos de campo (texto, fecha, número, duración, lista, enum, booleano, estimación).
+- Abstención calibrada mediante `p_null` y cabeza `qa_null_head`, útil para preguntas sin respuesta.
+- Desambiguación numérica multi-contrato (96/96 según la model card) y verificación de restricciones algebraicas entre campos.
+- Estimación de cuantiles `(p10, median, p90)` para campos de tipo estimación.
+- Decisiones tipadas sin generación de tokens: `true`/`false` (`noul`), elección entre opciones (`choice`) y puntuación ordinal (`score`) en rúbricas `min..max`.
+- Invariancia al orden de opciones (permutación 100 %) y ausencia de sangrado RoPE entre opciones.
+- Salida con esquema estricto (100 % de validez de esquema estricto en `jevbench`).
+- No se documentan capacidades de tool calling, agentes multi-paso, visión, audio ni modo thinking.
 
 ## Casos de uso
 
-- Triaje de reclamaciones de atención al cliente: el modelo extrae de un correo el identificador de pedido, la fecha de entrega, el importe pagado, los días transcurridos, la lista de daños y una estimación del coste de reparación en una sola llamada, tal como demuestra el ejemplo de la model card. Es adecuado porque evita generar JSON libre y devuelve spans verificables para auditoría.
-- Prellenado de formularios y CRM: cada campo del formulario se declara como `field` tipado y el modelo devuelve `value` más `confidence`; los campos con `p_null` alto se dejan vacíos en lugar de inventar un valor.
-- Enrutado y normalización de importes en facturación: el router `op_head` decide si el importe debe extraerse literalmente (`SPAN_NUMBER`) o calcularse por suma de base e impuestos (`ARITH_SUM`), lo que reduce la lógica de post-proceso en el backend.
-- Normalización de fechas y cálculo de plazos: conversión de expresiones como "Sept 28, 2026" o "9 de octubre" a ISO 8601 y cálculo de duraciones (`DATE_DURATION`) para estimar vencimientos de garantía o SLA.
-- Extracción de listas de entidades en notas o informes: el `bio_head` devuelve listas ordenadas con sus spans, útil para inventariar síntomas, piezas dañadas o cláusulas mencionadas.
-- Estimación calibrada de magnitudes en procesos de negocio: el `quantile_head` permite pedir un coste de reparación con `p10`/mediana/`p90` acotado entre 10 y 5000 USD con escala logarítmica, lo que da un rango explícito en lugar de un número puntual sin incertidumbre.
-- Procesamiento por lotes de bajo coste en CPU: con 67M de parámetros y sin generación de tokens, es viable ejecutar la extracción sobre grandes volúmenes de documentos en infraestructura sin GPU.
-- Capa de extracción previa a un LLM: usar `nullspan` para resolver los campos estructurados y reservar el modelo generativo solo para la parte de redacción o razonamiento abierto.
+- Extracción de campos en tickets de incidencia: el modelo recibe el texto de un incidente y devuelve identificadores, fechas, importes, severidad, booleanos y listas de modos de fallo, con abstención cuando un campo no aparece.
+- Enrutado y clasificación de contratos o formularios: uso de decisiones tipadas `choice` para asignar categorías o tiers sin generar texto, con probabilidad calibrada por opción.
+- Verificación de rúbricas de calidad: puntuaciones ordinales `score` en un rango `min..max` para evaluar respuestas o documentos con una sola pasada forward (9,56 ms por decisión en L4).
+- Preguntas extractivas sobre documentación: pipeline de question answering sobre SQuAD v2.0 con 87,09 % EM y 90,00 % F1, adecuado para búsqueda de respuestas con abstención en preguntas sin respuesta.
+- Extracción de importes y métricas financieras: campos `number` con decimales y unidad, más estimaciones con cuantiles, para conciliación de facturas o créditos SLA.
+- Control de alucinación en producción: la abstención calibrada (`p_null`, Brier 0,0420 y KL 0,0760 en `typed-decisions`) permite descartar extracciones de baja confianza antes de escribirlas en base de datos.
+- Despliegue en edge o CPU: la variante ONNX Int8 de 331,1 MB permite servir extracción y decisiones en entornos con recursos limitados y latencias de pocos milisegundos.
 
 ## Benchmarks y rendimiento
 
-Métricas declaradas por el autor en la model card (no se especifica el tamaño ni la composición del conjunto de evaluación):
-
-| Métrica | Resultado |
-|---|---|
-| Tiempo de entrenamiento | 565,8 s (Apple Silicon MPS) |
-| Null abstention accuracy (`p_null`) | 100,0 % |
-| Grounded span exact match (`[start, end]`) | 100,0 % |
-| Operation router accuracy | 100,0 % |
-| Multi-span list BIO accuracy | 100,0 % |
-| Quantile distribution MAE (normalizado `[0, 1]`) | 0,0068 |
-| Canonical evaluation suite accuracy | 100,0 % |
-| Latencia por pasada multi-campo | 119,35 ms |
-
-No se han publicado resultados independientes en benchmarks estándar (MMLU, HumanEval, GSM8K, SQuAD, CoNLL) en la información disponible, y las métricas anteriores corresponden a una suite propia del autor, no a un banco de pruebas público.
+| Benchmark | Split | Resultado | Calibración | Latencia / coste (L4) |
+|---|---|---|---|---|
+| `LocalLLaMA/typed-decisions` | test oficial (400 casos, 2.000 decisiones) | 79,00 % accuracy (#5/27 en <=1B, #19/51 global) | KL 0,0760 (#1/23 en <=1B); Brier 0,0420 (#1/24 en <=1B); ECE 0,1665 | 9,56 ms/decisión (47,8 ms/caso), 0 tokens de salida |
+| Benchmark Heaven / `jevbench` | suite pública (231 ítems, `jevbench::v1.6.1-O1S-local`) | 41,99 de capacidad (100 % easy, 68,06 % original, 35,14 % hard); 100 % validez de esquema estricto | 71,15 de calibración | 36,8 ms p50; 92,96 de velocidad; 0,0242 USD/1k |
+| `rajpurkar/squad_v2` | validation (N = 11.873; N = 9.198 sin solapamiento) | 87,09 % EM, 90,00 % F1 (87,01 % EM y 89,88 % F1 sin solapamiento); HasAns F1 90,36 %; NoAns EM 89,64 % | no disponible | 10,30 ms p50; 0,0017 USD/1k |
+| `NullspanBench v3.3` | 15 sistemas medidos (P = 164 sellado, S = 336 abierto) | 91,4 compuesto sellado (#1); 95,2 capacidad sellada (Int8 ONNX); 94,5 % inteligencia sellada (IC 95 % [90,9; 97,6]) | 95,8 de calibración (Int8 ONNX); AUROC 0,9761; ECE 0,0414 | 0,248 ms p50 híbrido; 0,0003–0,0017 USD/1k |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: ~268 MB en fp32 (67,06M × 4 bytes), ~134 MB en fp16/bf16 y ~67 MB en int8. El repositorio completo ocupa 0,3 GB.
-- GPU recomendadas: cualquier GPU con más de 1 GB de memoria sirve; el modelo se ha validado en Apple Silicon vía MPS. No requiere A100 ni H100.
-- Cabe en GPU de consumo: sí, en cualquier RTX (incluso series 20xx en adelante), GTX 1650 o superior, e incluso en iGPU con memoria compartida.
-- CPU: es perfectamente viable en CPU para inferencia por lotes, dado el tamaño y la ausencia de generación autorregresiva.
-- Opciones de despliegue: `transformers` con `AutoModel.from_pretrained(..., trust_remote_code=True)` es la vía documentada. No hay soporte nativo en vLLM, TGI, llama.cpp ni Ollama, y no se publican pesos GGUF ni ONNX; la conversión a GGUF requeriría reimplementar las cinco cabezas personalizadas.
-- Latencia y throughput: 119,35 ms por pasada multi-campo según el autor (Apple Silicon MPS). No se publica throughput en tokens/s ni en documentos/s, ni latencia en GPU dedicada o CPU.
+- VRAM estimada: el extractor en FP32 ocupa aproximadamente 1,4 GB de pesos (345,3 M × 4 bytes); la variante ONNX Int8 baja a 331,1 MB. El motor de decisiones (395 M) requiere del orden de 1,6 GB en FP16 y menos de 1 GB en Int8.
+- GPU recomendadas: los datos publicados se miden en NVIDIA L4; cualquier GPU con al menos 4 GB de VRAM debería acomodar ambos modelos en FP16 o Int8.
+- GPU de consumo: cabe en RTX 3060, RTX 4060, RTX 4090 y similares; también es viable en CPU con ONNX Runtime por el tamaño reducido.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True`, ONNX Runtime para la variante Int8, y servicio HTTP propio para el endpoint `/v1/systemone`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (son modelos de encoder, no generativos).
+- Latencia y throughput: 10,30 ms p50 en SQuAD v2.0, 9,56 ms por decisión (47,8 ms por caso) en `typed-decisions` y 0,248 ms p50 en la configuración híbrida de NullspanBench, todo sobre L4.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Extracción con abstención | Disponibilidad |
-|---|---|---|---|---|---|---|
-| gnumanth/nullspan | 67,06M | 512 posiciones (base) | Encoder + 5 cabezas (span, BIO, router, cuantiles) | MIT | Sí (`p_null` por campo) | Hugging Face |
-| distilbert-base-uncased | 66,96M | 512 | Encoder para clasificación/QA | Apache 2.0 | No, requiere cabezas propias | Hugging Face |
-| bert-base-uncased | ~110M | 512 | Encoder para clasificación/QA | Apache 2.0 | No, requiere cabezas propias | Hugging Face |
+| Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| `gnumanth/nullspan` (extractor) | 345,3 M | 512 con ventanas | Extracción de spans con abstención | MIT | Hugging Face, ONNX |
+| `gnumanth/nullspan` (SystemOneEngine) | 395 M | 8K | Decisiones tipadas calibradas | MIT | Hugging Face |
+| Modelos QA extractivos tipo BERT/Electra en SQuAD v2.0 | 100–400 M | 512 | Question answering extractivo | variable | Hugging Face |
+| Modelos generativos pequeños (<=1B) evaluados en `typed-decisions` | <=1B | variable | Decisión tipada con generación | variable | Hugging Face |
 
-Frente a un LLM generativo con salida JSON forzada, `nullspan` ofrece un orden de magnitud menos de parámetros, latencia en decenas o cientos de milisegundos y ausencia de riesgo de JSON malformado, pero carece de razonamiento abierto, de generalización a instrucciones nuevas y de soporte multilingüe declarado. No se dispone de benchmarks comunes que permitan una comparación cuantitativa de rendimiento con esas alternativas.
+No se dispone de una comparativa numérica detallada con alternativas concretas en la información proporcionada; los rankings de `typed-decisions` (#5/27 en <=1B y #19/51 global) y `NullspanBench` (#1 sellado) son los únicos datos comparativos publicados.
 
 ## Limitaciones y advertencias
 
-- Todas las métricas son autodeclaradas y alcanzan el 100 % en cuatro tareas, lo que es señal de un conjunto de evaluación propio, pequeño o muy alineado con el entrenamiento. No hay validación independiente.
-- El modelo se publicó y actualizó el mismo día, con 0 descargas y 0 likes: no ha sido revisado por la comunidad.
-- La base es `distilbert-base-uncased`, entrenada principalmente en inglés y sin distinción de mayúsculas. No se declaran idiomas soportados, por lo que el rendimiento en castellano es una incógnita y debe validarse antes de usarlo en producción.
-- Límite de contexto de 512 posiciones heredado de la base: los documentos largos requieren troceado, con el consiguiente riesgo de perder spans que cruzan fragmentos.
-- Riesgo de alucinación residual en el campo `guess`: en el propio ejemplo de la model card, `tracking_number` abstiene correctamente (`value: null`, `p_null` ≈ 0,9989) pero rellena `guess` con "$52.10", un valor espurio. Hay que ignorar `guess` cuando `value` es `null`.
-- Los campos `estimate` y `forecast` son estimaciones del `quantile_head` acotadas por los parámetros que se le pasan; no son verificables contra el texto y no deben tratarse como datos extraídos.
-- El cálculo aritmético (`ARITH_SUM`, `ARITH_DIFF`, `ARITH_MUL`) opera sobre valores detectados en el texto: un error en la detección se propaga silenciosamente al resultado calculado (por ejemplo, sumar un impuesto mal identificado).
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del repositorio. En producción conviene auditar y fijar la revisión concreta del repo.
-- No se documentan sesgos, composición del dataset ni procesos de anonimización del conjunto de entrenamiento.
-- Licencia MIT: permite uso comercial y modificación, pero sin garantías ni cláusula de responsabilidad por resultados.
-- Advertencia de nombres: los proyectos "Nullspan — AI Ops Command Center" (`nullspan.fixbyte.dev` y `github.com/m0hss/nullspan`) son productos no relacionados con este modelo, pese a compartir nombre.
+- El motor de decisiones no es zero-shot en `Typed Decisions`: se entrenó con autodestilación sobre el split de train de ese conjunto, lo que limita la generalización a dominios no representados.
+- Contexto de 512 tokens en el extractor, con ventanas deslizantes; documentos muy largos pueden perder coherencia entre ventanas.
+- ECE de 0,1665 en `typed-decisions` y calibración de 71,15 en `jevbench`: la calibración es buena en rankings (KL y Brier) pero no perfecta en probabilidades absolutas.
+- Rendimiento en la parte hard de `jevbench` limitado (35,14 %), lo que sugiere dificultades en casos complejos.
+- No se documentan idiomas soportados; el entrenamiento se basa en datasets mayoritariamente en inglés (`BoolQ`, `ARC-Challenge`, `SciQ`, SQuAD v2.0), por lo que el rendimiento en castellano es incierto.
+- Requiere `trust_remote_code=True` y código custom, lo que implica revisar el código del repositorio antes de desplegarlo en producción.
+- Riesgo de sesgo heredado de los datasets de entrenamiento (SQuAD, BoolQ, ARC) no cuantificado en la información disponible.
+- Licencia MIT permite uso comercial, pero el autor no ofrece garantías ni soporte; los resultados de benchmarks son un snapshot del 2026-11-11 y pueden no reproducirse en otros entornos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/gnumanth/nullspan
 - Dataset de entrenamiento: https://huggingface.co/datasets/gnumanth/nullspan-dataset
-- Perfil del autor en Hugging Face: https://huggingface.co/gnumanth
-- Sitio del autor: https://h3manth.com
-- Otro modelo del mismo autor (no relacionado): https://huggingface.co/gnumanth/sanskrit-tts-wasm
-- Proyecto homónimo no relacionado (AI Ops dashboard): https://nullspan.fixbyte.dev/
-- Repositorio homónimo no relacionado: https://github.com/m0hss/nullspan
-- Paper técnico: no disponible
-- Blog o demo oficial del modelo: no disponible
+- Dataset de decisiones tipadas: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
+- Dataset SQuAD v2.0: https://huggingface.co/datasets/rajpurkar/squad_v2
+- Benchmark JevBench: https://github.com/fstandhartinger/jevbench
+- Resultados NullspanBench: https://hemanth.github.io/nullspan/bench.html

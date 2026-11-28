@@ -2,51 +2,49 @@
 
 ## Resumen
 
-Qwen3.8-27B-pi-adapted-BF16-GGUF es un artefacto de cuantización en formato GGUF de precisión BF16 generado por IsValorum a partir del modelo base `harness-hub/Qwen3.8-27B-pi-adapted`, que a su vez deriva del modelo `Qwen/Qwen3.8-27B` con un adaptador adicional. El repositorio contiene un único fichero de 54,66 GB en BF16, pensado como artefacto de partida para generar niveles de cuantización posteriores (tiers) dentro del pipeline APEX del autor.
+Qwen3.8-27B-pi-adapted-BF16-GGUF es una conversión a formato GGUF en precisión BF16 del modelo harness-hub/Qwen3.8-27B-pi-adapted, que a su vez deriva del modelo base Qwen/Qwen3.8-27B con un adaptador orientado a agentes ("pi"). La publicación corre a cargo de IsValorum, que actúa como cuantizador y preparador del artefacto dentro de un flujo que el autor denomina "APEX preparation artifact". El resultado es un único fichero GGUF de 54,66 GB pensado para su uso con llama.cpp y runtimes compatibles.
 
-El modelo subyacente es un transformer denso de 27.320.697.856 parámetros (unos 27,3 mil millones), orientado a generación de texto, agentes y razonamiento. La model card del autor lo etiqueta con términos como `mtp` (multi-token prediction), `agents`, `apex` y `pi`, lo que sugiere capacidades orientadas a flujos agénticos y decodificación especulativa, aunque no se detalla su implementación técnica.
+El modelo resuelve el problema de disponer de los pesos en un contenedor portable y de precisión completa (BF16) para poder generar a partir de él cuantizaciones posteriores (por ejemplo, Q4_K_M, Q5_K_M, Q8_0) sin depender de los safetensors originales. Con 27.320.697.856 parámetros totales, se sitúa en la franja de modelos densos de ~27B, un tamaño que en BF16 excede con holgura la VRAM de cualquier GPU de consumo y que en cuantizaciones de 4-5 bits sí puede llegar a ejecutarse en tarjetas de 24 GB.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto intermedio de cuantización, no de un modelo listo para producción con documentación completa. No hay resultados de benchmarks, no se especifican idiomas soportados y la model card remite explícitamente a la del modelo fuente para términos de uso. Su interés principal reside en servir como base reproducible (con hash SHA256 verificado) para generar cuantizaciones GGUF de menor precisión.
+La relevancia del artefacto es acotada pero clara: es la puerta de entrada práctica para desplegar este derivado concreto de Qwen3.8 en llama.cpp, Ollama u otros motores que consumen GGUF. La información publicada por el autor es mínima (no hay model card del adaptador, ni datos de entrenamiento, ni benchmarks), por lo que esta ficha refleja exclusivamente lo verificable en los metadatos y en el README del repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (detalles no disponibles; etiquetas `qwen3.8`, `qwen3.5`, `mtp` en la model card) |
-| Parametros totales | 27.320.697.856 (27,3 B) |
-| Parametros activos | No aplica (no es MoE segun la informacion disponible) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | BF16 (este repositorio); el autor indica que publica otros tiers cuantizados por separado |
-| Idiomas soportados | No disponible |
+| Arquitectura | no disponible (modelo base Qwen3.8-27B; familia transformer, sin detalle publicado) |
+| Parametros totales | 27.320.697.856 |
+| Parametros activos | no aplica (no se declara MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16 (este repositorio); el autor indica que publica mapas de tensores solo con los niveles cuantizados, sin detallar qué niveles |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (fichero unico `Qwen3.8-27B-pi-adapted-BF16.gguf`, 54.657.734.176 bytes) |
+| Formato de pesos | GGUF (fichero único, 54.657.734.176 bytes) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna mas alla de las etiquetas de la model card. El modelo es un transformer denso de 27,3 mil millones de parametros, derivado de `Qwen/Qwen3.8-27B` (revision `37561816e66b5b9153b1b64c10968c18c1e6f4a0`) mediante el adaptador `harness-hub/Qwen3.8-27B-pi-adapted` (revision `78eacecca691deb59f703fc270120e2e5b2e0194`). No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF, DPO o SIMPO en este artefacto concreto.
+No se dispone de información publicada sobre la arquitectura interna del modelo base Qwen3.8-27B ni sobre el adaptador "pi" aplicado por harness-hub. Los tags del repositorio mencionan "qwen3.8", "qwen3.5", "mtp", "pi", "agents", "apex" y "harness-adapter", lo que sugiere un linaje Qwen con algún tipo de mecanismo multi-token prediction (MTP) y un adaptador orientado a uso agéntico, pero el autor no documenta ni la composición del dataset, ni el número de tokens de entrenamiento, ni si hubo etapas de RLHF o DPO.
 
-Las etiquetas `mtp` y `apex` sugieren soporte de multi-token prediction y un pipeline de cuantizacion propio del autor. En repositorios hermanos del mismo publicador aparecen terminos como `speculative-decoding`, `dflash2`, `simpo` e `imatrix`, lo que apunta a que la familia de modelos adaptados incorpora decodificacion especulativa y calibracion con matrices de importancia, aunque esta ficha no puede confirmar que este artefacto BF16 concreto los incluya. El fichero incluye un SHA256 publicado (`ba14867b4c74dc826071063255bd1a4c06135d1771704789657fc9695adbb567`) para verificar integridad.
+Técnicamente, lo único verificable es el proceso de conversión: partida de Qwen/Qwen3.8-27B (revisión 37561816e66b5b9153b1b64c10968c18c1e6f4a0), aplicación del adaptador harness-hub/Qwen3.8-27B-pi-adapted (revisión 78eacecca691deb59f703fc270120e2e5b2e0194) y empaquetado en un GGUF BF16 con SHA256 ba14867b4c74dc826071063255bd1a4c06135d1771704789657fc9695adbb567. No se adjunta mapa de tensores en este artefacto.
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline `text-generation`, tag `conversational`).
-- Orientacion a agentes y flujos multi-paso (tags `agents`, `apex`).
-- Razonamiento y posible modo de pensamiento extendido: repositorios hermanos del autor incluyen `reasoning` y `chain-of-thought`, no confirmado para este artefacto.
-- Posible soporte de multi-token prediction (`mtp`), sin documentacion tecnica que lo detalle.
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags de Hugging Face).
-- Capacidades multilingues: no disponibles.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Vision o audio: no disponible.
+- Generación de texto conversacional: el pipeline declarado es text-generation y el tag "conversational" está presente.
+- Orientación a agentes: los tags "agents", "harness-adapter" y "apex" indican que el adaptador se diseñó para flujos agénticos, aunque no se detalla el mecanismo.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que el artefacto puede servirse detrás de APIs compatibles con motores de inferencia estándar.
+- Ejecución en llama.cpp: formato GGUF nativo, cargable directamente en llama.cpp y derivados.
+- Razonamiento multi-paso y tool calling: no disponible (no documentado por el autor).
+- Capacidades multilingües: no disponible.
+- Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
 
-- Generacion de cuantizaciones derivadas: el caso de uso principal documentado es servir como artefacto base BF16 desde el que producir tiers GGUF de menor precision (Q8, Q6, Q5, Q4, etc.) con `llama.cpp` u otras herramientas de cuantizacion, verificando el SHA256 publicado.
-- Despliegue local en estaciones de trabajo con GPU de gran memoria: al ser BF16 y 27,3 B de parametros, permite ejecutar el modelo en `llama.cpp` sobre GPUs con 56 GB o mas de VRAM, util para evaluacion interna antes de decidir una cuantizacion menor.
-- Experimentacion con adaptadores propios: al derivar de un adaptador (`pi-adapted`) sobre Qwen3.8-27B, sirve para estudiar como se comporta el ajuste fino sobre el modelo base en tareas de agente.
-- Reproducibilidad de pipelines de cuantizacion: el hash y las revisiones exactas del modelo base y del adaptador permiten reconstruir el artefacto de forma determinista en entornos de investigacion.
-- Evaluacion comparativa de tiers: al publicar el autor otros repositorios con cuantizaciones APEX (por ejemplo, variantes `VAL-APEX-I-NanoPlus`), este BF16 permite medir la degradacion de calidad frente a esas versiones comprimidas.
-- Integracion en entornos compatibles con endpoints: el tag `endpoints_compatible` sugiere su uso en plataformas de inferencia gestionada que acepten GGUF, aunque la latencia y el throughput no estan documentados.
-- Base para pruebas de decodificacion especulativa: si el modelo incorpora MTP, puede emplearse para validar tecnicas de speculative decoding en `llama.cpp` frente al modelo denso sin adaptar.
+- Generación de cuantizaciones derivadas: este GGUF BF16 sirve como artefacto fuente para producir niveles Q4_K_M, Q5_K_M, Q8_0 u otros con `llama-quantize`, evitando depender de los safetensors originales y garantizando que el adaptador "pi" ya está fusionado en los pesos.
+- Despliegue local en estaciones de trabajo con GPU de 24 GB: una vez cuantizado a 4-5 bits (aproximadamente 15-18 GB), el modelo puede ejecutarse en una RTX 4090 o RTX 3090 con contexto moderado mediante llama.cpp u Ollama.
+- Experimentación con adaptadores agénticos: al estar etiquetado como "harness-adapter", permite evaluar en local si el adaptador "pi" mejora el comportamiento en tareas de agente (planificación, uso de herramientas) frente al Qwen3.8-27B original.
+- Servicio de inferencia en CPU o mixto CPU-GPU: el formato GGUF con offloading parcial permite servir el modelo en servidores sin GPU dedicada, a costa de latencia alta, útil para pruebas internas y prototipos.
+- Reproducibilidad y auditoría: el SHA256 publicado y las revisiones exactas del modelo base y del adaptador permiten reconstruir el artefacto y verificar su integridad en pipelines internos.
+- Base para ajuste fino ligero posterior: los pesos BF16 en GGUF pueden convertirse de vuelta a otros formatos para experimentos de LoRA o evaluación comparativa, aunque el flujo no está documentado por el autor.
 
 ## Benchmarks y rendimiento
 
@@ -54,38 +52,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 54,7 GB solo para pesos, mas overhead de contexto KV; en la practica se necesitan 60 GB o mas de VRAM para contextos cortos.
-- GPU recomendadas para BF16: A100 80 GB, H100 80 GB, H200, o configuraciones multi-GPU (por ejemplo, 2x RTX 6000 Ada 48 GB) mediante offload por capas.
-- GPU de consumo: no cabe en una RTX 4090 (24 GB) ni en una RTX 5090 (32 GB) en BF16; seria necesario cuantizar a Q4/Q5 o usar offload parcial a RAM del sistema, con la consiguiente penalizacion de latencia.
-- Opciones de despliegue: `llama.cpp` (formato nativo GGUF), Ollama y servidores compatibles con GGUF; vLLM y TGI no soportan GGUF de forma nativa para este formato, por lo que requeririan los pesos originales en safetensors.
-- Latencia y throughput: no disponibles; dependen fuertemente del hardware y del grado de offload.
+- VRAM en BF16: al menos ~55 GB solo para pesos, más KV cache; requiere una A100 80 GB, H100 80 GB o un pool multi-GPU (por ejemplo, 2× RTX 4090 con tensor parallelism no soportado de forma nativa en llama.cpp, por lo que en la práctica se necesita una GPU de 80 GB o cuantización).
+- VRAM tras cuantización estimada: ~16-18 GB en Q4_K_M, ~19-21 GB en Q5_K_M, ~29-30 GB en Q8_0 (estimaciones a partir de los 27,32B parámetros; el autor no publica los niveles concretos).
+- GPU de consumo: en BF16 no cabe en ninguna; en Q4_K_M podría caber en RTX 4090/3090 (24 GB) con contexto limitado; en Q5_K_M al límite; en Q8_0 requiere 32 GB o más (RTX 5090, A6000).
+- Opciones de despliegue: llama.cpp, Ollama, llama-cpp-python y servidores compatibles con GGUF; vLLM y TGI no consumen GGUF de forma nativa en su flujo estándar.
+- Latencia y throughput: no disponibles (no publicados por el autor).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / licencia | Notas |
-|---|---|---|---|---|
-| IsValorum/Qwen3.8-27B-pi-adapted-BF16-GGUF | 27,3 B | No disponible | GGUF BF16, Apache 2.0 | Artefacto de cuantizacion; sin benchmarks publicados |
-| IsValorum/Qwen3.8-27B-EfficientThink-VAL-APEX-I-NanoPlus-GGUF | 27 B (tag `27b`) | No disponible | GGUF cuantizado, Apache 2.0 | Variante del mismo autor con tags de razonamiento, SIMPO y decodificacion especulativa |
-| IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF | 27 B (tag `27b`) | No disponible | GGUF cuantizado, Apache 2.0 | Otra variante APEX del mismo publicador |
-| Qwen/Qwen3.8-27B (modelo fuente) | 27,3 B | No disponible en esta busqueda | Safetensors, licencia del modelo fuente | Modelo original sin adaptador `pi` |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| IsValorum/Qwen3.8-27B-pi-adapted-BF16-GGUF | 27,32B | no disponible | Apache 2.0 | GGUF BF16 | Artefacto de cuantización con adaptador agéntico |
+| harness-hub/Qwen3.8-27B-pi-adapted | no disponible | no disponible | no disponible | safetensors (presumible) | Modelo fuente con adaptador "pi" |
+| Qwen/Qwen3.8-27B | 27B (presumible) | no disponible | no disponible | safetensors | Modelo base sin adaptador |
 
-No se dispone de datos de benchmarks ni de contexto para establecer una comparacion cuantitativa con alternativas de otros desarrolladores.
+No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Artefacto intermedio: la model card indica explicitamente que es una base para cuantizacion y que no incluye mapa de tensores; no esta pensado como release final de uso directo.
-- Ausencia de documentacion: no se detallan contexto, idiomas, datos de entrenamiento ni evaluaciones, lo que impide validar su calidad frente al modelo fuente.
-- Riesgo de alucinacion: inherente a los modelos de lenguaje de esta escala; sin benchmarks no puede acotarse su magnitud.
-- Sesgos: no documentados por el autor; se heredan los del modelo `Qwen/Qwen3.8-27B` y los del adaptador `pi`.
-- Licencia Apache 2.0 declarada, pero la model card remite a los terminos del modelo fuente; conviene verificar la licencia de `Qwen/Qwen3.8-27B` antes de un uso comercial.
-- Requisitos de memoria elevados en BF16, lo que limita su uso a hardware profesional o a configuraciones con offload.
-- Trazabilidad del adaptador: el autor no describe que contiene el adaptador `pi-adapted` ni que comportamiento modifica respecto al modelo base.
-- Repositorio sin descargas ni likes en el momento de la consulta, lo que reduce la evidencia de uso en comunidad.
+- Documentación mínima: el autor no publica model card del adaptador, ni datos de entrenamiento, ni evaluación; cualquier uso en producción parte de información insuficiente.
+- Riesgo de alucinación: no evaluado; sin benchmarks no puede caracterizarse la fiabilidad del modelo en tareas factuales.
+- Idiomas: no declarados; no puede asumirse un soporte multilingüe verificado más allá del comportamiento del modelo base.
+- Licencia: Apache 2.0 en este artefacto, pero el autor remite a la model card del modelo fuente para los términos de uso; conviene verificar la licencia del adaptador y del base antes de un despliegue comercial.
+- Contexto: sin dato publicado, no debe asumirse una ventana larga; planificar prompts conservadores.
+- Trazabilidad: el repositorio no incluye mapa de tensores ni informe de conversión; la verificación se limita al SHA256 del fichero.
+- Naturaleza del artefacto: es un paso intermedio de cuantización, no un modelo "listo para producción" en sí mismo; el rendimiento real dependerá de la cuantización que se genere a partir de él.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-27B-pi-adapted-BF16-GGUF
-- Modelo base del adaptador: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
-- Modelo fuente: https://huggingface.co/Qwen/Qwen3.8-27B
-- Variante hermana: https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-VAL-APEX-I-NanoPlus-GGUF
-- Variante hermana: https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF/tree/main
+- Modelo fuente con adaptador: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
+- Modelo base citado: https://huggingface.co/Qwen/Qwen3.8-27B
+- llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
+- Ollama (runtime GGUF): https://github.com/ollama/ollama

@@ -2,87 +2,89 @@
 
 ## Resumen
 
-Step-3.7-Flash-AEON-Ultimate-Abliterated-BF16 es una versión modificada del modelo Step-3.7-Flash desarrollado por StepFun, publicada por el usuario AEON-7 en Hugging Face. Se trata de un modelo de lenguaje y visión de tipo sparse-MoE (mezcla de expertos dispersa) con aproximadamente 201.365 millones de parámetros totales y unos 11.000 millones activos por token, según la model card. La modificación principal consiste en una "abliteración" (eliminación del comportamiento de rechazo) mediante proyección ortogonal de un subespacio de rechazo medido sobre los pesos que escriben en el flujo residual, manteniendo intactas las capacidades generales, el razonamiento en cadena, el uso de herramientas y la ruta de visión.
+Step-3.7-Flash-AEON-Ultimate-Abliterated-BF16 es una versión modificada ("abliterated") del modelo stepfun-ai/Step-3.7-Flash, publicado por el usuario AEON-7 en Hugging Face. Se trata de un modelo de lenguaje y visión de tipo sparse-MoE (mezcla de expertos dispersa) con aproximadamente 201.365 millones de parámetros totales y cerca de 11.000 millones activos por token, según indica la model card. El autor ha eliminado el comportamiento de rechazo (refusal) mediante proyección ortogonal de un subespacio de rechazo medido sobre cada peso que escribe en el flujo residual, manteniendo supuestamente intactas las capacidades generales, el razonamiento en cadena de pensamiento, el uso de herramientas y la ruta de visión.
 
-El modelo está pensado para investigación en seguridad autorizada, red-teaming y despliegue local sin censura por parte del propietario del modelo. La licencia Apache-2.0 del modelo base se mantiene. Es relevante ahora porque combina un MoE multimodal de gran tamaño con contexto largo, capacidades agénticas y tool calling, y una build optimizada para hardware ARM64/Blackwell (DGX Spark, GB10), lo que lo hace interesante para despliegues en plataformas emergentes de cómputo en el borde.
+El modelo base es un modelo de visión-lenguaje con modo "thinking" (razonamiento explícito) y arquitectura MoE, orientado a cargas de trabajo agénticas, generación de código y conversación multi-turno con contexto largo. La versión AEON se distribuye en BF16 (bfloat16) y está etiquetada para despliegue en hardware ARM64 con GPU Blackwell (DGX Spark, GB10, sm_121a), además de soportar vLLM, prefix caching, chunked prefill y una API compatible con OpenAI.
 
-La model card incluye una cláusula extensa de responsabilidad del usuario, arbitraje e indemnización que conviene leer antes de cualquier uso, ya que traslada toda la responsabilidad legal y ética al operador del modelo.
+Su relevancia actual radica en dos factores: por un lado, ofrece una variante sin filtros de rechazo para investigación de seguridad, red-teaming y despliegue local no censurado; por otro, conserva la licencia Apache-2.0 del modelo base, lo que facilita su uso comercial, aunque el propio autor advierte que la ausencia de rechazos traslada toda la responsabilidad al operador. El repositorio ocupa 402,7 GB y acumula 181 descargas y 4 "me gusta" en el momento de la consulta.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Sparse MoE (mezcla de expertos dispersa), transformer multimodal (visión-lenguaje), con modo thinking |
-| Parámetros totales | 201.365.316.160 (~201,4 B) |
-| Parámetros activos | ~11 B (según model card) |
-| Longitud de contexto | no disponible (la model card menciona "long-context" como tag, sin cifra) |
-| Tipos de cuantización | BF16 / bfloat16 (build publicada); no se detallan otras cuantizaciones |
+| Arquitectura | Transformer sparse-MoE (mezcla de expertos) multimodal vision-lenguaje, con modo thinking |
+| Parametros totales | 201.365.316.160 (~201,4 B) |
+| Parametros activos | ~11 B (según model card) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | BF16 / bfloat16 (única variante publicada en este repo); no se detallan otras |
 | Idiomas soportados | Inglés (en) |
-| Licencia | Apache-2.0 (heredada del modelo base) |
-| Formato de pesos | safetensors (repo de 402,7 GB) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (librería transformers, con custom_code) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Step-3.7-Flash de StepFun, descrito como un MoE disperso de ~198 B de parámetros con ~11 B activos, multimodal (image-text-to-text) y con modo "thinking" para razonamiento en cadena. La build AEON-7 conserva la arquitectura del base y aplica una técnica de "expert-granular abliteration": se mide un subespacio de rechazo y se proyecta ortogonalmente fuera de cada peso que escribe en el flujo residual, eliminando el comportamiento de rechazo sin reentrenar. La model card afirma que esta operación preserva capacidad general, razonamiento, tool-use y la ruta de visión.
+El modelo base Step-3.7-Flash emplea una arquitectura de mezcla de expertos dispersa (sparse MoE) con capacidad multimodal de entrada imagen-texto y salida texto, e incluye un modo de razonamiento explícito ("thinking"). La model card indica que el modelo completo ronda los 198.000 millones de parámetros con aproximadamente 11.000 millones activos por token, lo que sitúa la inferencia en un régimen de coste computacional comparable a modelos densos mucho más pequeños, a costa de un mayor consumo de memoria por los pesos totales.
 
-No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, composición del dataset, ni si hubo RLHF/DPO en el modelo base. La build está optimizada para inferencia en ARM64 con GPUs Blackwell (sm_121a), e incluye soporte para chunked-prefill, prefix-caching y una API compatible con OpenAI, según los tags.
+La modificación AEON consiste en una "abliteración" a nivel de experto (expert-granular abliteration): se mide un subespacio de rechazo y se proyecta ortogonalmente fuera de todos los pesos que escriben en el flujo residual. El autor afirma que este procedimiento preserva la capacidad general, el razonamiento en cadena y la ruta de visión. No se proporcionan en la información disponible datos sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO en el modelo base. Tampoco se detallan innovaciones adicionales más allá de las funcionalidades de despliegue (prefix caching, chunked prefill) y del soporte para hardware ARM64/Blackwell.
 
 ## Capacidades
 
-- Generación de texto conversacional e instruct.
-- Razonamiento con modo "thinking" (cadena de pensamiento explícita).
-- Generación de código (tag "coding").
-- Capacidades de visión-lenguaje (image-text-to-text).
-- Tool calling y function calling.
-- Uso agéntico y razonamiento multi-paso (tags "agentic", "multi-step").
-- Contexto largo (tag "long-context", sin cifra concreta).
-- Comportamiento sin rechazo ("refusal-removed", "uncensored", "unfiltered").
-- Soporte de API compatible con OpenAI y despliegue con vLLM.
-- Optimización para ARM64/Blackwell (DGX Spark, GB10, sm_121a).
+- Generación de texto conversacional multi-turno en inglés.
+- Razonamiento explícito en modo "thinking" (cadena de pensamiento).
+- Generación y asistencia de código (etiquetas "coding").
+- Capacidades matemáticas y de razonamiento lógico (implícitas en el modo thinking; sin benchmarks publicados).
+- Visión-lenguaje: entrada de imagen y texto, salida de texto (pipeline image-text-to-text).
+- Soporte de tool calling y function calling.
+- Soporte de flujos agénticos y razonamiento multi-paso (etiquetas "agentic").
+- Despliegue compatible con API OpenAI (endpoints_compatible, openai-api).
+- Optimizaciones de inferencia: prefix caching y chunked prefill.
+- Comportamiento de rechazo eliminado (refusal-removed, uncensored, unfiltered).
+- Multilingüe: limitado a inglés según la model card.
 
 ## Casos de uso
 
-- Red-teaming y evaluación de seguridad: el modelo permite generar respuestas que un modelo alineado rechazaría, lo que facilita la construcción de conjuntos de pruebas adversarios y la evaluación de filtros de salida en pipelines de moderación.
-- Investigación en alineación: estudiar el efecto de la abliteración sobre el comportamiento del modelo comparándolo con el base Step-3.7-Flash en tareas de razonamiento y rechazo.
-- Despliegue local en DGX Spark / GB10: la build está optimizada para ARM64 y Blackwell (sm_121a), lo que permite ejecutar un MoE de ~201 B en hardware de borde con memoria unificada, usando vLLM con chunked-prefill y prefix-caching.
-- Agentes autónomos con tool calling: integración en pipelines agénticos que requieren function calling y razonamiento multi-paso, con la salvedad de que el operador debe añadir capas de seguridad propias.
-- Asistencia de código en entornos controlados: generación y revisión de código en flujos internos donde se acepta el riesgo de contenido sin filtrar y se dispone de revisión humana.
-- Análisis de imágenes en flujos documentales: al ser image-text-to-text, puede procesar capturas, diagramas o documentos escaneados en pipelines internos con validación posterior.
-- Generación de contenido sin restricciones para investigación creativa: exploración de narrativa o escenarios que los modelos alineados bloquean, siempre con revisión humana y cumplimiento legal.
+- Investigación de seguridad y red-teaming: el modelo permite estudiar cómo responde un LLM sin capa de rechazo ante prompts adversarios, lo que resulta útil para calibrar clasificadores de entrada y filtros de salida en pipelines de moderación.
+- Despliegue local no censurado en hardware ARM64: gracias a las etiquetas dgx-spark, gb10 y sm_121a, está pensado para ejecutarse en estaciones Grace-Blackwell con pesos BF16, útil en entornos de investigación con requisitos de privacidad y control total del stack.
+- Asistente de código en pipelines de CI/CD: con soporte de tool calling y function calling, puede integrarse en flujos que invocan linters, compiladores o APIs de repositorio para revisar parches y sugerir correcciones.
+- Agentes autónomos multi-paso: la combinación de modo thinking, tool calling y contexto largo (long-context) permite orquestar tareas que requieren planificación, llamadas a herramientas y verificación de resultados.
+- Análisis de documentos con imágenes: al ser un modelo vision-lenguaje, puede procesar capturas, diagramas o formularios junto a texto para extraer información estructurada en flujos de back-office.
+- Generación de contenido creativo sin restricciones editoriales: útil en prototipado de narrativa, guiones o material de ficción donde el equipo asume la revisión humana posterior.
+- Evaluación comparativa de alineación: sirve como referencia "sin rechazos" frente a modelos alineados para medir el impacto de las capas de seguridad en la calidad y utilidad de las respuestas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: en BF16, ~201,4 B de parámetros requieren aproximadamente 400 GB de memoria, lo que coincide con el tamaño del repo (402,7 GB). No cabe en GPUs de consumo individuales.
-- GPU recomendadas: hardware con memoria unificada o multi-GPU de gran capacidad; la build está optimizada para Blackwell sm_121a (DGX Spark, GB10, Grace-Blackwell). Para servidores convencionales se requeriría un conjunto multi-GPU (por ejemplo, varias A100/H100 de 80 GB) o cuantización, que no se detalla en la información disponible.
-- GPU de consumo: no cabe en RTX 4090 ni similares en BF16.
-- Opciones de despliegue: vLLM (soportado explícitamente, con chunked-prefill y prefix-caching), API compatible con OpenAI; transformers como librería. No se confirma soporte de llama.cpp u Ollama en la información disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en BF16: los pesos ocupan aproximadamente 402,7 GB (tamaño del repo), por lo que se requiere un nodo multi-GPU o una plataforma con memoria unificada grande; no cabe en una GPU de consumo individual.
+- GPU recomendadas: plataformas Blackwell (GB10, DGX Spark, sm_121a) según las etiquetas del autor; para despliegues x86 se necesitarían varias GPU de datacenter (A100/H100/H200) con suficiente memoria agregada, aunque no se especifica el número exacto.
+- GPU de consumo: no es viable en RTX 4090 ni similares en BF16; se requeriría cuantización adicional no publicada en este repositorio.
+- Opciones de despliegue: transformers con custom_code, vLLM (etiqueta explícita), servidor compatible con API OpenAI; soporte de prefix caching y chunked prefill.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Activos | Contexto | Licencia | Notas |
+| Modelo | Parametros totales | Activos | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
-| Step-3.7-Flash-AEON-Ultimate-Abliterated-BF16 | ~201,4 B | ~11 B | no disponible | Apache-2.0 | Build abliterada, multimodal, ARM64/Blackwell |
-| stepfun-ai/Step-3.7-Flash (base) | ~198 B | ~11 B | no disponible | Apache-2.0 | Modelo original alineado con rechazo |
-| Alternativas de mismo tamaño | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
+| Step-3.7-Flash-AEON-Ultimate-Abliterated-BF16 | ~201,4 B | ~11 B | no disponible | Apache-2.0 | Variante abliterated del base, BF16, multimodal |
+| stepfun-ai/Step-3.7-Flash (base) | ~198 B (según card) | ~11 B | no disponible | Apache-2.0 | Modelo original con rechazos intactos |
+| Otras alternativas MoE de escala similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información consultada |
 
 ## Limitaciones y advertencias
 
-- Comportamiento de rechazo eliminado: el modelo no aplica negativas de seguridad internas; el operador debe implementar capas de moderación, filtrado de salida, registro de auditoría y revisión humana.
-- Riesgo de alucinación: no se han publicado métricas de fiabilidad; al ser un modelo sin alineación, la verificación factual recae por completo en el usuario.
-- Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado.
-- Contexto: la longitud exacta no está documentada, aunque se etiqueta como "long-context".
-- Licencia: Apache-2.0 permite uso comercial, pero la model card añade una cláusula de responsabilidad, arbitraje e indemnización que el usuario acepta al usar el modelo; conviene revisarla con asesoría legal.
-- Hardware: requiere ~400 GB en BF16; no apto para GPUs de consumo.
-- Producción: la propia model card declara que un despliegue sin capas de seguridad es "inseguro por construcción" y no es un caso de uso soportado.
-- Trazabilidad: build de un tercero (AEON-7) sobre el base de StepFun; no hay benchmarks publicados que validen la preservación de capacidades tras la abliteración.
+- Eliminación deliberada del comportamiento de rechazo: el modelo puede producir contenido que un modelo alineado rechazaría; requiere capas de seguridad externas (validación de entrada, filtrado de salida, moderación, auditoría y revisión humana).
+- Sesgos: no se documentan evaluaciones de sesgo en la información disponible; al derivar de un modelo entrenado principalmente en inglés, es previsible un sesgo cultural y lingüístico hacia ese idioma.
+- Riesgo de alucinación: no cuantificado; como todo LLM, puede generar afirmaciones falsas con apariencia de veracidad, especialmente en modo thinking sin verificación externa.
+- Limitación de idioma: solo inglés según la model card; el rendimiento en castellano no está garantizado.
+- Longitud de contexto: no especificada, aunque las etiquetas mencionan long-context; conviene validar empíricamente el límite real.
+- Requisitos de hardware elevados: 402,7 GB en BF16 imposibilitan el despliegue en GPU de consumo sin cuantización adicional no publicada.
+- Licencia: Apache-2.0 permite uso comercial, pero la cláusula de responsabilidad del autor traslada al usuario toda la carga legal y ética; la idoneidad para producción depende de las capas de seguridad que se implementen.
+- Madurez: 181 descargas y 4 "me gusta" indican una adopción muy limitada; no hay evidencia pública de validación independiente de las afirmaciones del autor sobre preservación de capacidades tras la abliteración.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/AEON-7/Step-3.7-Flash-AEON-Ultimate-Abliterated-BF16
 - Modelo base: https://huggingface.co/stepfun-ai/Step-3.7-Flash
-- Página de soporte del autor (LotusMake): https://lotusmake.com/support?via=tea
+- Página de soporte del autor (LotusMake): https://lotusmake.com/support
+- Resultados de búsqueda web no relacionados con el modelo (aeon.co, aeon-montagnes.com, flexipass-aeon.com, aeonathletics.com): no aportan información técnica sobre el modelo.

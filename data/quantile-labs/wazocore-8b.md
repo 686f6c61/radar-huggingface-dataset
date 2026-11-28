@@ -2,117 +2,112 @@
 
 ## Resumen
 
-WazoCore-8B es un modelo de lenguaje de 8.153 millones de parámetros desarrollado por Quantile Labs, especializado en yoruba, hausa e igbo (además de inglés). Se construye como un ajuste fino del modelo base NCAIR1/N-ATLaS, que emplea la arquitectura Llama-3, y su innovación principal no reside en el entrenamiento desde cero, sino en la extensión del vocabulario: añade 15.000 tokens byte-level BPE específicos para las tres lenguas nigerianas, lo que reduce el número de tokens necesarios para codificar texto en esos idiomas en aproximadamente un tercio.
+WazoCore-8B es un modelo de lenguaje de 8.153 millones de parámetros desarrollado por Quantile Labs, un laboratorio centrado en modelos de IA abiertos para África. Se trata de un fine-tuning de NCAIR1/N-ATLaS (arquitectura Llama-3, 8B) al que se le ha ampliado el vocabulario en 15.000 tokens específicos para yoruba, hausa e igbo, con el objetivo de reducir el coste de tokenización de estas lenguas de bajos recursos. El modelo mantiene los 128.256 tokens originales del tokenizer de Llama-3 sin modificar sus identificadores ni embeddings, y añade los nuevos tokens encima.
 
-El problema que resuelve es concreto y medible: el tokenizador heredado de Llama-3 está entrenado predominantemente en inglés, de modo que una palabra en yoruba requiere unos 2,9 tokens frente a 1,3 en inglés. Esa ineficiencia encarece el servicio, incrementa la latencia y consume ventana de contexto en cada petición en lenguas nigerianas. Con el vocabulario extendido, WazoCore codifica yoruba a 1,91 tokens por palabra, hausa a 1,34 e igbo a 1,56, con aceleraciones de generación de 1,61× a 1,72× medidas en CPU de portátil.
+El problema que resuelve es concreto y medible: el tokenizer original de Llama-3, entrenado mayoritariamente en inglés, requiere aproximadamente 2,9 tokens por palabra en yoruba frente a 1,3 en inglés. WazoCore reduce esa ratio a 1,91 en yoruba, 1,34 en hausa y 1,56 en igbo, lo que se traduce en una generación entre 1,6 y 1,7 veces más rápida en hardware de consumo y en un menor consumo de contexto por petición. Es relevante ahora porque ofrece una alternativa práctica y desplegable en local para aplicaciones en lenguas nigerianas sin renunciar a la arquitectura estándar de Llama.
 
-La versión publicada, v13, sustituye a WazoCore v6 y recupera buena parte del razonamiento matemático que se había degradado durante la adaptación del vocabulario: pasa de −11,6 a +1,1 puntos porcentuales en AfriMGSM respecto al modelo base. Se distribuye como GGUF cuantizado Q4_K_M de 5,0 GB, compatible con llama.cpp, LM Studio y pilas compatibles con la API de OpenAI, y está pensado para ejecutarse en local o en hardware on-premise con 8 GB de memoria o más.
+La versión publicada es la v13, que sustituye a la v6 y recupera buena parte del razonamiento matemático y de inferencia en lenguaje natural que se degradó durante la adaptación del vocabulario. El modelo se distribuye en safetensors (BF16) y en GGUF cuantizado Q4_K_M, y funciona como reemplazo directo en Transformers, llama.cpp, LM Studio y stacks compatibles con la API de OpenAI.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (Llama-3), ajuste fino de NCAIR1/N-ATLaS |
-| Parametros totales | 8.153.141.312 |
+| Arquitectura | Transformer decoder-only, Llama-3 (LlamaForCausalLM) |
+| Parametros totales | 8.153.141.248 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 131.072 tokens declarados en el archivo; el autor recomienda fijar explícitamente un valor menor con `-c` |
-| Tipos de cuantizacion | Q4_K_M (archivo publicado); pesos a plena precisión anunciados como próximos |
+| Longitud de contexto | 131.072 tokens (máximo declarado en el archivo GGUF); en la práctica se recomienda fijar `-c` explícitamente, p. ej. 4.096 |
+| Tipos de cuantizacion | BF16 (safetensors) y Q4_K_M (GGUF); otras cuantizaciones no disponibles en el repo |
 | Idiomas soportados | Yoruba (yo), hausa (ha), igbo (ig), inglés (en) |
-| Licencia | N-ATLaS Open-Source Research and Innovation License |
-| Formato de pesos | GGUF (librería `gguf`); safetensors anunciados para más adelante |
-| Vocabulario | 143.256 tokens (128.256 del base, sin cambios en id ni embedding, más 15.000 nuevos) |
-| Modelo base | NCAIR1/N-ATLaS |
-| Desarrollador | Quantile Labs |
-| Tamaño del repo | 5,0 GB |
+| Licencia | N-ATLaS Open-Source Research and Innovation License (`license: other`) |
+| Formato de pesos | safetensors (BF16, 16,3 GB) y GGUF (Q4_K_M, 5,0 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo mantiene la arquitectura transformer de Llama-3 del base N-ATLaS, con 32 capas transformer. La modificación estructural consiste en la extensión del vocabulario: se aprendieron 15.000 fusiones BPE a nivel de byte sobre texto en yoruba, hausa e igbo y se añadieron al tokenizador base, excluyendo las fusiones que partirían un carácter UTF-8. La entrada se normaliza a Unicode NFC. Los nuevos embeddings se inicializan a partir de la media de los embeddings de los subwords que los componen, lo que proporciona un punto de partida informado en lugar de aleatorio.
+WazoCore-8B es un transformer decoder-only con la arquitectura Llama-3 heredada de NCAIR1/N-ATLaS, con 8.153 millones de parámetros. La innovación principal no está en el cuerpo del modelo sino en el tokenizer: se parte de los 128.256 tokens originales, cuyos identificadores y embeddings se mantienen intactos, y se añaden 15.000 tokens nuevos para yoruba, hausa e igbo. Esta estrategia de expansión de vocabulario preserva el comportamiento en inglés mientras reduce drásticamente la fragmentación de las lenguas objetivo. El tokenizer aplica normalización Unicode NFC de forma automática, lo que corrige el problema de entradas con Unicode descompuesto que afectaba a la versión anterior.
 
-El ajuste fino es deliberadamente ligero: aproximadamente 80 minutos en una única A100. Solo se actualizan las filas de embedding nuevas y cuatro de las 32 capas transformer; las filas del vocabulario original permanecen congeladas y un término de divergencia KL ancla las predicciones al modelo base para preservar el comportamiento previo. Los datos de entrenamiento incluyen unas 24.000 peticiones de traducción del modelo base de frases de Wikipedia en inglés hacia y desde cada lengua, 23.662 pares de frases de traducciones profesionales de google/smol (CC BY 4.0), 5.831 soluciones de GSM8K auto-destiladas en yoruba, hausa, igbo e inglés (retenidas solo si la respuesta final era correcta) y texto de Wikipedia en las tres lenguas. La innovación destacable es, por tanto, la adaptación de vocabulario con anclaje KL, que permite ganar eficiencia de tokenización sin destruir las capacidades del base.
+El ajuste se realizó sobre el modelo base N-ATLaS, con datasets que incluyen google/smol y openai/gsm8k, y se evaluó con métricas chrF++ y accuracy. La model card no detalla el número total de tokens de entrenamiento ni la composición exacta del dataset, ni confirma el uso de RLHF o DPO. La versión v13 corrige los problemas de la v6: elimina por completo la repetición degenerada (de 5 casos a 0 sobre 750 traducciones de prueba), reduce las salidas truncadas de 11 a 5, normaliza la entrada Unicode y recupera el razonamiento matemático hasta situarlo ligeramente por encima del modelo base (+0,9 en AfriMGSM frente a −11,6 en v6). El throughput por token decodificado es equivalente al del modelo base; toda la ganancia de velocidad proviene de las secuencias de tokens más cortas.
 
 ## Capacidades
 
-- Generación de texto conversacional en yoruba, hausa, igbo e inglés.
+- Generación de texto conversacional multi-turno en yoruba, hausa, igbo e inglés, con plantilla de chat compatible con el formato de Llama-3.
 - Traducción bidireccional inglés ↔ yoruba/hausa/igbo, con calidad medida mediante chrF++ sobre NTREX-128.
-- Razonamiento matemático de nivel escolar en las cuatro lenguas (evaluado con AfriMGSM).
+- Tokenización eficiente de lenguas nigerianas: reducción de tokens por palabra de 2,87 a 1,91 en yoruba, de 2,12 a 1,34 en hausa y de 2,53 a 1,56 en igbo.
+- Razonamiento matemático básico en las lenguas soportadas (evaluado con AfriMGSM).
 - Inferencia en lenguaje natural (evaluado con AfriXNLI).
-- Tokenización eficiente de lenguas nigerianas: aproximadamente un tercio menos de tokens que el base.
-- Compatibilidad con plantilla de chat y formato conversacional.
-- Despliegue como reemplazo directo en llama.cpp, LM Studio y pilas compatibles con la API de OpenAI (`/v1/chat/completions`).
-- Ejecución offline en máquinas con 8 GB de memoria o más.
-- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible.
+- Normalización automática de Unicode NFC en el tokenizer.
+- Compatibilidad con tool calling y function calling a través de la API de OpenAI en llama-server, aunque la model card no documenta un formato específico de herramientas.
+- Despliegue como reemplazo directo en Transformers, llama.cpp, LM Studio y servidores compatibles con OpenAI.
+- No se documentan capacidades de visión, audio ni modo de razonamiento explícito (thinking mode).
 
 ## Casos de uso
 
-- Traducción profesional inglés-yoruba/hausa/igbo: el modelo traduce frases con calidad medida en chrF++ y con menos repeticiones degeneradas que la versión v6 (2 frente a 5 sobre 750 traducciones de prueba), lo que lo hace adecuado para pipelines de localización de contenido.
-- Servicio de atención al cliente en lenguas nigerianas: al codificar cada palabra en aproximadamente 1,3-1,9 tokens en lugar de 2,1-2,9, el mismo presupuesto de contexto cubre conversaciones multi-turno más largas y reduce el coste por petición.
-- Despliegue en hardware de gama media: el GGUF Q4_K_M de 5,0 GB cabe en equipos con 8 GB de memoria, lo que permite ofrecer generación en lenguas nigerianas en portátiles y servidores modestos sin GPU dedicada.
-- Generación aumentada por recuperación sobre corpus en yoruba, hausa e igbo: la reducción de tokens por palabra libera ventana de contexto para incluir más documentos recuperados en cada consulta.
-- Asistencia educativa y resolución de problemas matemáticos en lengua local: el modelo mantiene razonamiento aritmético en las tres lenguas (AfriMGSM entre 26,0 y 40,4 de precisión según idioma), útil para tutores automáticos.
-- Sustitución directa del modelo base en pilas existentes: al conservar los 128.256 tokens originales sin cambios de id ni embedding y ser un GGUF Llama-3 estándar, se puede intercambiar en llama.cpp o LM Studio sin reescribir la integración.
-- Procesamiento por lotes offline en entornos con conectividad limitada: la ejecución local sin dependencia de API encaja en organismos y organizaciones que operan con datos sensibles o sin red.
+- Traducción automática en producción para servicios públicos: el modelo traduce entre inglés y yoruba, hausa o igbo con una calidad medida en chrF++ y puede integrarse en un endpoint compatible con OpenAI para señalización o formularios multilingües, con menor coste por petición gracias a la reducción de tokens.
+- Atención al cliente en lenguas nigerianas: al requerir aproximadamente un tercio menos de tokens por palabra, permite conversaciones multi-turno más largas dentro de la misma ventana de contexto y con menor latencia en hardware modesto.
+- Despliegue en local o en sedes con conectividad limitada: el GGUF Q4_K_M de 5,0 GB funciona offline en máquinas con 8 GB de memoria o más, lo que lo hace viable en portátiles y estaciones de trabajo sin GPU dedicada.
+- Generación de contenido editorial y educativo: redacción y adaptación de materiales en yoruba, hausa e igbo con un modelo que mantiene el inglés como lengua de apoyo, útil para medios y organizaciones locales.
+- Sustitución directa del modelo base en pipelines existentes: al ser un checkpoint LlamaForCausalLM estándar con el mismo espacio de identificadores para los tokens originales, se puede cambiar N-ATLaS por WazoCore sin reescribir la integración y ganando velocidad de generación.
+- Investigación en lenguas de bajos recursos: la expansión controlada de vocabulario y las métricas publicadas (tokens por palabra, chrF++, AfriMGSM, AfriXNLI) sirven como referencia reproducible para estudiar el impacto de la adaptación de tokenizers.
+- Procesamiento por lotes de corpus nigerianos: la reducción de tokens por palabra disminuye el coste de servir grandes volúmenes de texto en estas lenguas, tanto en la nube como en infraestructura propia.
 
 ## Benchmarks y rendimiento
 
-Todas las comparaciones son frente al modelo base N-ATLaS. Los intervalos son intervalos de confianza bootstrap pareados del 95 %.
+Todas las comparaciones son frente al modelo base N-ATLaS. Los intervalos son del 95 % de bootstrap emparejado.
 
-| Metrica (WazoCore vs base) | Yoruba | Hausa | Igbo |
+| Métrica (WazoCore vs base) | Yoruba | Hausa | Igbo |
 |---|---|---|---|
 | Tokens por palabra | 2,87 → 1,91 | 2,12 → 1,34 | 2,53 → 1,56 |
 | Aceleración de generación (palabras/s, CPU de portátil) | 1,63× | 1,61× | 1,72× |
-| ΔchrF++, inglés → X, Q4_K_M | +3,1 (+2,0, +4,1) | −0,4 (−1,2, +0,4) | +0,3 (−1,3, +1,7) |
-| ΔchrF++, inglés → X, held-out | +2,2 (+1,6, +2,8) | −0,4 (−0,9, 0,0) | +0,1 (−0,5, +0,7) |
-| ΔchrF++, X → inglés, held-out | +0,2 (−0,4, +0,7) | −0,1 (−0,5, +0,4) | +0,9 (+0,5, +1,4) |
-| AfriMGSM (WazoCore / base) | 37,2 / 33,6 | 40,4 / 38,8 | 26,0 / 28,0 |
-| AfriXNLI (WazoCore / base) | 52,7 / 57,7 | 53,0 / 57,5 | 52,5 / 58,8 |
+| ΔchrF++ inglés → X, Q4_K_M | +3,4 (+2,2, +4,6) | −0,6 (−1,4, +0,3) | +0,1 (−1,3, +1,3) |
+| ΔchrF++ inglés → X, held-out | +2,2 (+1,6, +2,8) | −0,4 (−0,9, 0,0) | +0,1 (−0,5, +0,7) |
+| ΔchrF++ X → inglés, held-out | +0,2 (−0,4, +0,7) | −0,1 (−0,5, +0,4) | +0,9 (+0,5, +1,4) |
+| AfriMGSM accuracy (WazoCore / base) | 37,2 / 33,6 | 40,4 / 38,8 | 25,6 / 28,0 |
+| AfriXNLI accuracy (WazoCore / base) | 52,3 / 57,7 | 54,2 / 57,5 | 53,0 / 58,8 |
 
-| Metrica agregada (vs base) | v6 | v13 |
-|---|---|---|
-| Razonamiento matemático (AfriMGSM) | −11,6 | +1,1 (−2,3, +4,4) |
-| Inferencia en lenguaje natural (AfriXNLI) | −7,5 | −5,3 |
-| Repetición degenerada (750 traducciones) | 5 | 2 |
-| Salidas truncadas (750 traducciones) | 13 | 8 |
+Cambios de la v13 frente a la v6 (respecto al modelo base): razonamiento matemático AfriMGSM de −11,6 a +0,9 (intervalo −2,3, +4,3); inferencia en lenguaje natural AfriXNLI de −7,5 a −4,8; repetición degenerada de 5 a 0 sobre 750 traducciones; salidas truncadas de 11 a 5.
 
-Notas de protocolo: la velocidad se midió con llama.cpp build 9430, Q4_K_M, CPU Apple M4, 20 prompts por idioma, pareados e intercalados, usando la versión v6 (que comparte tokenizador con v13); el throughput por token es equivalente y la ganancia procede íntegramente de secuencias más cortas. La traducción Q4_K_M usó 250 frases NTREX-128 por idioma; la evaluación held-out usó 1.497 frases NTREX-128 por idioma reservadas de todas las decisiones de entrenamiento y selección, a plena precisión. El razonamiento se midió con IrokoBench, zero-shot y plantilla de chat, a plena precisión.
+Metodología: la velocidad se midió con llama.cpp build 9430, Q4_K_M, CPU Apple M4, 20 prompts por lengua, emparejados e intercalados, usando la versión v6 (que comparte tokenizer y eficiencia de tokens con la v13). La traducción se evaluó con ambos modelos cuantizados en llama.cpp sobre 250 frases NTREX-128 por lengua.
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: el GGUF Q4_K_M ocupa 5,0 GB en disco; el modelo funciona en máquinas con 8 GB de memoria o más. La memoria de trabajo crece con la ventana de contexto configurada, por lo que conviene fijar `-c` explícitamente en lugar de dejar que se reserve para los 131.072 tokens declarados.
-- GPU recomendadas: no se especifican en la información disponible. El ajuste fino se realizó en una única A100, pero no se documentan requisitos de inferencia en GPU.
-- Cabe en GPU de consumo: no se confirma explícitamente; por tamaño (5,0 GB en Q4_K_M) es compatible con GPUs de consumo con 8 GB o más de VRAM, aunque el autor no publica una lista validada.
-- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio y pilas compatibles con la API de OpenAI. Validado en llama.cpp build 9430.
-- Latencia y throughput: la aceleración de generación medida es de 1,61× a 1,72× en palabras por segundo en CPU Apple M4 respecto al base, derivada de la reducción de tokens. No se publican valores absolutos de tokens por segundo ni latencias en GPU.
+- VRAM estimada en BF16: aproximadamente 16,3 GB solo para los pesos, más overhead de activaciones y caché KV; se recomienda 24 GB o más para contexto largo.
+- VRAM estimada en Q4_K_M: aproximadamente 5,0 GB para los pesos; viable en GPU de consumo de 8 GB o más.
+- GPU recomendadas: A100 o H100 para BF16 con contexto largo y serving de alta concurrencia; RTX 4090 (24 GB) para BF16 en un solo dispositivo; RTX 3090/4080 o superiores para Q4_K_M con margen.
+- Cabe en GPU de consumo: sí, en Q4_K_M desde 8 GB de VRAM; en BF16 requiere 24 GB.
+- Funciona en CPU: sí; el GGUF está validado en llama.cpp y LM Studio y corre offline en máquinas con 8 GB de memoria o más. La aceleración de 1,6-1,7× se midió en CPU Apple M4.
+- Opciones de despliegue: Transformers (con `accelerate` y `device_map="auto"`), llama.cpp (`llama-server`), LM Studio, y stacks compatibles con la API de OpenAI (el repo está marcado como `endpoints_compatible` y `text-generation-inference`).
+- Latencia y throughput: la model card solo publica la aceleración relativa (1,63× en yoruba, 1,61× en hausa, 1,72× en igbo en palabras/s); no se publican valores absolutos de tokens/s. El throughput por token decodificado es equivalente al del modelo base.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas foco | Licencia | Formato |
+| Modelo | Parámetros | Contexto | Idiomas foco | Licencia | Formato |
 |---|---|---|---|---|---|
-| WazoCore-8B (v13) | 8,15 B | 131.072 declarados | Yoruba, hausa, igbo, inglés | N-ATLaS Open-Source Research and Innovation License | GGUF |
-| NCAIR1/N-ATLaS (base) | 8 B (arquitectura Llama-3) | no disponible | Lenguas africanas (no detallado) | no disponible en la información proporcionada | no disponible en la información proporcionada |
-| WazoCore-8B-v6-long | 8 B (misma familia) | no disponible | Yoruba, hausa, igbo, inglés | N-ATLaS Open-Source Research and Innovation License | GGUF |
+| WazoCore-8B | 8,15B | 131.072 (declarado) | yo, ha, ig, en | N-ATLaS Open-Source Research and Innovation License | safetensors, GGUF |
+| NCAIR1/N-ATLaS (base) | 8B | no disponible en la información proporcionada | yo, ha, ig, en | no disponible en la información proporcionada | safetensors |
+| Llama-3 8B | 8B | 8.192 (versión original de Llama-3) | principalmente inglés | Llama 3 Community License | safetensors, GGUF |
 
-La comparación cuantitativa disponible se limita al modelo base y a la versión anterior v6: frente al base, WazoCore reduce tokens por palabra un 33 % aproximadamente y acelera la generación 1,6-1,7×, con traducción inglés→yoruba mejorada en +3,1 chrF++ (Q4_K_M) y ligeramente peor en hausa (−0,4). Frente a v6, la v13 recupera el razonamiento matemático (+1,1 frente a −11,6 en AfriMGSM relativo al base) y reduce repeticiones degeneradas y truncamientos. No se dispone de datos para comparar con otros modelos de la misma categoría.
+Frente a N-ATLaS, WazoCore mantiene el mismo tamaño y espacio de identificadores para los tokens originales, pero reduce tokens por palabra en las tres lenguas nigerianas y acelera la generación entre 1,6 y 1,7×, con una calidad de traducción comparable o ligeramente superior en yoruba. Frente a Llama-3 8B, la diferencia principal es la tokenización: Llama-3 requiere unas 2,9 tokens por palabra en yoruba, mientras que WazoCore baja a 1,91, con el consiguiente ahorro de contexto y coste. No se dispone de datos de benchmarks de N-ATLaS ni de Llama-3 8B en la información proporcionada para una comparación numérica directa.
 
 ## Limitaciones y advertencias
 
-- Sesgos: no se documentan análisis de sesgo en la información disponible; al derivar de un base entrenado con datos mayoritariamente en inglés y ajustarse con traducciones automáticas del propio base, puede heredar sesgos de esos corpus.
-- Alucinación: el modelo se entrenó con soluciones auto-destiladas de GSM8K y traducciones generadas por el base; existe riesgo de errores factuales y de traducción, especialmente fuera de los dominios cubiertos (Wikipedia, smol, NTREX-128).
-- Regresión en inferencia: AfriXNLI empeora respecto al base en las tres lenguas (52,7 vs 57,7 en yoruba; 53,0 vs 57,5 en hausa; 52,5 vs 58,8 en igbo), una pérdida agregada de −5,3 puntos que el autor reconoce y no elimina por completo.
-- Traducción: la mejora no es uniforme; en hausa el cambio en chrF++ es ligeramente negativo (−0,4), y los intervalos de confianza en igbo incluyen el cero.
-- Contexto: aunque el archivo declara 131.072 tokens, el autor advierte de que hay que fijar `-c` explícitamente para evitar que llama-server reserve memoria para el máximo; no se documenta la calidad a contextos muy largos.
-- Idiomas: solo cubre yoruba, hausa, igbo e inglés; no se garantiza comportamiento en otras lenguas africanas ni en variantes dialectales.
-- Licencia: la N-ATLaS Open-Source Research and Innovation License no es una licencia de código abierto estándar (OSI); el uso comercial puede estar restringido y debe revisarse antes de producción.
-- Madurez: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y solo se publica la cuantización Q4_K_M; los pesos a plena precisión están anunciados pero no disponibles.
-- Entrada Unicode: la versión v13 normaliza a NFC las entradas con Unicode descompuesto, corrigiendo la pérdida de eficiencia de v6, pero las entradas no normalizadas de otro tipo no están documentadas.
+- La adaptación del vocabulario degrada la inferencia en lenguaje natural: AfriXNLI cae entre 3,5 y 5,8 puntos porcentuales respecto al modelo base en las tres lenguas (yoruba 52,3 vs 57,7; hausa 54,2 vs 57,5; igbo 53,0 vs 58,8).
+- El razonamiento matemático en igbo sigue por debajo del base (25,6 vs 28,0 en AfriMGSM); la recuperación de la v13 es global pero no uniforme por lengua.
+- La traducción inglés → hausa no mejora e incluso retrocede ligeramente (−0,6 chrF++ en Q4_K_M, −0,4 en held-out), aunque los intervalos incluyen el cero.
+- Riesgo de alucinación inherente a un modelo de 8B: no se documentan mecanismos de mitigación ni datos de calibración.
+- Sesgos: no se documenta ninguna evaluación de sesgos; al derivar de un modelo entrenado mayoritariamente con datos en inglés, pueden persistir sesgos culturales y lingüísticos.
+- Idiomas limitados a yoruba, hausa, igbo e inglés; no se garantiza un comportamiento correcto fuera de ese conjunto.
+- El contexto máximo declarado es de 131.072 tokens, pero la model card advierte de que llama-server reserva memoria para ese máximo si no se fija `-c`; en la práctica conviene limitarlo al contexto real necesario.
+- Licencia restrictiva: N-ATLaS Open-Source Research and Innovation License, marcada como `license: other`. Es imprescindible revisar los términos antes de cualquier uso comercial; la model card no aclara las condiciones concretas de explotación comercial.
+- El nombre licenciado es "WazoCore Powered by Awarri", lo que puede implicar obligaciones de atribución.
+- Solo se distribuye una cuantización GGUF (Q4_K_M); no hay Q5, Q8 ni otras variantes en el repositorio.
+- El modelo tiene 204 descargas y 0 likes en el momento de la consulta, por lo que la validación por parte de la comunidad es todavía muy limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/quantile-labs/WazoCore-8B
-- Versión anterior v6: https://huggingface.co/quantile-labs/WazoCore-8B-v6-long
+- Página del modelo: https://quantilelabs.com/wazocore/
 - Código y evaluación: https://github.com/Quantile-Labs/wazocore
-- Protocolo de evaluación: https://github.com/Quantile-Labs/wazocore/blob/main/docs/METHOD.md
+- Quantile Labs: https://quantilelabs.com/
 - Modelo base: https://huggingface.co/NCAIR1/N-ATLaS
-- Sitio del desarrollador: https://quantilelabs.com/
+- Versión anterior (v6): https://huggingface.co/quantile-labs/WazoCore-8B-v6-long
 - Dataset google/smol: https://huggingface.co/datasets/google/smol
 - Dataset openai/gsm8k: https://huggingface.co/datasets/openai/gsm8k

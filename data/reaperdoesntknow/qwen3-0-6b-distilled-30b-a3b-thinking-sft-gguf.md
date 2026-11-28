@@ -2,56 +2,50 @@
 
 ## Resumen
 
-Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF es la version cuantizada en formato GGUF de un modelo derivado de Qwen/Qwen3-0.6B, desarrollado por Reaperdoesntrun (Convergent Intelligence LLC, Research Division). El modelo aplica un pipeline de dos etapas: primero destila conocimiento de un profesor mucho mayor, Qwen3-30B-A3B-Thinking-2507, sobre 6.122 muestras de cadena de pensamiento STEM; despues aplica un SFT supervisado sobre el dataset Alignment-Lab-AI/Lawyer-Instruct para incorporar razonamiento legal. El resultado es un modelo de 751.632.384 parametros (unos 0,75B) que comprime aproximadamente 50 veces el tamano del profesor.
+Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF es la version cuantizada en formato GGUF de un modelo de lenguaje de 0,6 mil millones de parametros construido mediante destilacion de conocimiento a partir de Qwen3-30B-A3B-Thinking-2507. Lo desarrolla Reaperdoesntrun, bajo el sello de Convergent Intelligence LLC (Research Division), y esta pensado para despliegue local, movil y en dispositivos de borde mediante llama.cpp y runtimes compatibles.
 
-La relevancia de esta ficha reside en su orientation hacia el despliegue en el extremo: los ficheros GGUF van desde ~1,3 GB en F16 hasta ~400 MB en Q4_K_M, lo que permite ejecutar el modelo en moviles, dispositivos IoT e incluso hardware tipo smartwatch mediante llama.cpp. Es un caso de estudio de destilacion agresiva con un objetivo claro: conservar estructura de razonamiento deliberativo (thinking) en un presupuesto de parametros muy reducido.
+El modelo parte del checkpoint base Qwen/Qwen3-0.6B y aplica un pipeline de dos etapas: primero una destilacion de un profesor "Thinking" de 30B sobre 6.122 muestras de cadena de pensamiento de ambito STEM (matematicas y fisica), con una funcion de perdida que pondera las derivaciones (proof-weighted cross-entropy de 2,5x a 1,5x sobre los tokens de derivacion, mas divergencia KL a temperatura 2,0); despues un ajuste supervisado (SFT) sobre el dataset Alignment-Lab-AI/Lawyer-Instruct con una tasa de aprendizaje conservadora de 5e-6 para anadir razonamiento juridico sin sobrescribir la base cientifica.
 
-No obstante, conviene ser prudente: el autor reconoce explicitamente que 0,6B es una restriccion de capacidad dura, que las pruebas multi-paso mas alla de ~8 pasos degradan y que el razonamiento legal carece de matices. El modelo esta pensado como herramienta de borde, no como sustituto de verificacion formal ni de asesoria legal profesional.
+La relevancia de este modelo es su propuesta de compresion extrema: reducir un profesor de 30B a un estudiante de 0,6B (una relacion de 50x en parametros, aproximadamente 75x con la cuantizacion Q4_K_M) manteniendo trazas de razonamiento deliberativo. El repositorio GGUF ocupa 3,3 GB e incluye cuatro niveles de cuantizacion, desde F16 (~1,3 GB) hasta Q4_K_M (~400 MB), lo que permite ejecutarlo en hardware muy limitado. La licencia es Apache 2.0 y el unico idioma declarado es el ingles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3-0.6B); variante cuantizada GGUF para llama.cpp |
-| Parametros totales | 751.632.384 (~0,75B) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (los ejemplos de uso emplean n_ctx=1024) |
-| Tipos de cuantizacion | F16 (~1,3 GB), Q8_0 (~700 MB), Q5_K_M (~500 MB), Q4_K_M (~400 MB) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3-0.6B); detalles especificos de capas y atencion no disponibles en la informacion proporcionada |
+| Parametros totales | 751.632.384 |
+| Parametros activos | No aplica (no es MoE; el profesor si era MoE 30B-A3B) |
+| Longitud de contexto | No disponible en la informacion proporcionada; los ejemplos de uso emplean n_ctx=1024 |
+| Tipos de cuantizacion | F16, Q8_0, Q5_K_M, Q4_K_M |
 | Idiomas soportados | Ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye en safetensors |
-| Modelo base | reaperdoesntknow/Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT |
-| Modelo profesor | Qwen/Qwen3-30B-A3B-Thinking-2507 |
-| Desarrollador | Reaperdoesntrun / Convergent Intelligence LLC (Research Division) |
-| Tamano del repositorio | 3,3 GB |
-| Pipeline | text-generation |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3-0.6B, un transformer decoder-only denso de aproximadamente 0,75B parametros. Sobre esa base se aplica un proceso de destilacion en dos etapas documentado por el autor. La primera etapa, destilacion del profesor Thinking, usa 6.122 muestras de cadena de pensamiento STEM generadas por Qwen3-30B-A3B-Thinking-2507; el autor senala que la variante Thinking produce trazas de razonamiento extendidas con distribuciones de mayor entropia, lo que transfiere una estructura de deliberacion mas rica al estudiante. La perdida combina cross-entropy ponderada por prueba (2,5x a 1,5x sobre tokens de derivacion) y divergencia KL a temperatura T=2.0.
+La arquitectura subyacente es la de Qwen3-0.6B, un transformer decoder-only denso de 0,6B de parametros. Sobre esa base se aplica un proceso de destilacion en dos etapas documentado por el autor. La primera etapa, denominada Thinking Teacher Distillation, usa como profesor a Qwen3-30B-A3B-Thinking-2507 sobre un corpus de 6.122 muestras de cadena de pensamiento STEM. Segun la model card, la variante Thinking del profesor genera trazas de razonamiento extendidas con distribuciones de mayor entropia, lo que transfiere una estructura de deliberacion mas rica al estudiante. La perdida combina entropia cruzada ponderada por prueba (2,5x a 1,5x sobre tokens de derivacion) y divergencia KL a temperatura 2,0.
 
-La segunda etapa consiste en un SFT supervisado sobre Alignment-Lab-AI/Lawyer-Instruct con una tasa de aprendizaje conservadora de 5e-6, con el objetivo de anadir razonamiento legal sin sobrescribir el sustrato STEM. El autor menciona marcos matematicos propios (Discrepancy Calculus, Topological Knowledge Distillation, operador de discrepancia Df(x) y descomposicion BV) que, segun indica, quedan codificados en los pesos y se preservan tras la cuantizacion. No se dispone de detalles adicionales sobre hiperparametros, numero total de tokens de entrenamiento ni composicion completa del dataset mas alla de lo citado.
+La segunda etapa es un ajuste supervisado sobre Alignment-Lab-AI/Lawyer-Instruct con una tasa de aprendizaje de 5e-6, disenado explicitamente para superponer razonamiento juridico sobre la base STEM sin destruirla. El autor menciona un marco matematico propio (Discrepancy Calculus, Topological Knowledge Distillation, operador de discrepancia Df(x) y descomposicion BV) que, segun afirma, queda codificado en los pesos y se preserva a traves de la cuantizacion. No se detallan en la informacion disponible el numero total de tokens de entrenamiento, la composicion completa del dataset ni si hubo etapas de RLHF o DPO.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento en cadena (chain-of-thought) con trazas de tipo thinking heredadas del profesor.
-- Razonamiento matematico y fisico con enfasis en derivaciones paso a paso (el autor lo describe como "rigorous derivation").
-- Razonamiento legal de conceptos generales (felony vs. misdemeanor, promissory estoppel) gracias al SFT sobre Lawyer-Instruct.
-- Generacion de codigo y tareas STEM genericas, aunque sin garantias de correccion en problemas largos.
-- Soporte de dos formatos de prompt diferenciados: derivacion STEM y instruction-following con marcadores `### Instruction:` / `### Response:`.
-- Despliegue en llama.cpp, Ollama y LM Studio; compatible con endpoints.
-- Capacidades multilingues limitadas al ingles (unico idioma declarado).
-- No se documentan tool calling, function calling, agentes multi-paso, vision ni audio en la informacion disponible.
+- Generacion de texto conversacional e instruccional en ingles.
+- Razonamiento paso a paso (chain-of-thought) en problemas STEM, con enfasis en derivaciones matematicas y fisicas.
+- Razonamiento juridico basico: conceptos generales de derecho (por ejemplo, promissory estoppel, distincion entre felony y misdemeanor) tras el SFT sobre Lawyer-Instruct.
+- Soporte de dos formatos de prompt diferenciados: uno para derivaciones STEM ("Solve the following problem... Proof:") y otro para seguir instrucciones ("### Instruction: ... ### Response:").
+- Capacidad de ejecucion en dispositivos de borde, moviles e IoT gracias a las cuantizaciones de 400-700 MB.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo thinking explicito con tokens especiales en la informacion proporcionada.
+- Multilingue: no disponible; solo se declara ingles.
 
 ## Casos de uso
 
-- Razonamiento STEM en dispositivos de borde: el modelo puede resolver derivaciones matematicas y fisicas cortas directamente en un movil o dispositivo IoT con Q4_K_M (~400 MB), sin conexion a la nube. Adecuado porque el autor diseno el pipeline especificamente para preservar trazas de derivacion en un presupuesto minimo de parametros.
-- Asistente educativo offline: explicar conceptos de fisica o matematicas paso a paso en aplicaciones sin conectividad, usando el formato de prompt de derivacion STEM. La ventana de contexto reducida limita la longitud de las explicaciones, pero es suficiente para problemas acotados.
-- Consulta legal preliminar en herramientas de autoservicio: responder preguntas sobre conceptos juridicos generales (diferencias entre delitos, doctrinas como promissory estoppel) con el formato `### Instruction:`. Debe presentarse siempre como orientacion no vinculante, dado que el propio autor advierte de la falta de matices.
-- Prototipado rapido en llama.cpp: servir como modelo de referencia ligero para validar pipelines de inferencia, integracion con Ollama o LM Studio y pruebas de latencia antes de escalar a modelos mayores.
-- Filtrado y clasificacion de texto en el borde: usar el modelo para tareas de generacion corta y clasificacion simple en entornos con recursos restringidos, aprovechando el bajo coste de memoria de las cuantizaciones Q4_K_M y Q5_K_M.
-- Investigacion en destilacion: servir como caso de estudio reproducible de destilacion profesor-alumno con 50x de compresion, util para experimentos academicos sobre transferencia de razonamiento deliberativo a modelos pequenos.
-- Educacion juridica basica: generar explicaciones introductorias de terminos legales en ingles para estudiantes, con la advertencia explicita de que no sustituye a asesoria profesional.
+- Tutoria STEM en dispositivos sin conexion: el modelo puede resolver problemas de matematicas y fisica mostrando derivaciones paso a paso, y su tamano Q4_K_M (~400 MB) permite empaquetarlo en una aplicacion movil o en un dispositivo de borde sin acceso a red.
+- Asistente juridico de primera linea en intranet: con el SFT sobre Lawyer-Instruct, puede responder preguntas conceptuales sobre terminos legales generales (por ejemplo, que es una figura contractual) en herramientas internas de despachos, siempre con verificacion humana posterior.
+- Generacion de explicaciones educativas en plataformas de e-learning: integrado via llama.cpp u Ollama, puede producir razonamientos estructurados para ejercicios de fisica y matematicas con latencia baja en CPU.
+- Prototipado rapido de pipelines de razonamiento: al ser un modelo pequeno y con licencia Apache 2.0, sirve para validar arquitecturas de prompting chain-of-thought y formatos de instruccion antes de escalar a modelos mayores.
+- Inferencia en hardware embebido y wearables: el autor lo presenta como un modelo que "cabe en un smartwatch"; con Q4_K_M puede desplegarse en dispositivos con pocos cientos de MB de memoria para tareas de respuesta breve.
+- Filtrado y clasificacion de consultas en aplicaciones de atencion al cliente: por su bajo coste de inferencia, puede preclasificar consultas y generar respuestas preliminares que un modelo mayor o un humano revisa despues.
+- Experimentacion con destilacion de conocimiento: sirve como referencia practica para investigadores que quieran estudiar la transferencia de trazas de razonamiento de un profesor MoE de 30B a un estudiante denso de 0,6B.
 
 ## Benchmarks y rendimiento
 
@@ -59,45 +53,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1,3 GB en F16, ~700 MB en Q8_0, ~500 MB en Q5_K_M y ~400 MB en Q4_K_M (cifras de tamano de fichero indicadas por el autor; el consumo real de memoria anade overhead del runtime).
-- GPU recomendadas: no se especifican en la informacion proporcionada. Dado el tamano, cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) es sobradamente suficiente; el modelo esta pensado para CPU y hardware de borde.
-- Cabe en GPU consumer: si, con amplio margen; tambien en moviles, dispositivos IoT y hardware tipo smartwatch segun el autor.
-- Opciones de despliegue: llama.cpp (CLI y binding de Python `llama_cpp`), Ollama (mediante Modelfile), LM Studio y cualquier runtime compatible con GGUF.
-- Latencia y throughput: no disponibles en la informacion proporcionada. Los ejemplos de uso emplean `n_ctx=1024` y `max_tokens=512`, lo que sugiere escenarios de generacion corta.
+- VRAM/memoria estimada para inferencia segun cuantizacion: F16 ~1,3 GB; Q8_0 ~700 MB; Q5_K_M ~500 MB; Q4_K_M ~400 MB (cifras de tamano de fichero indicadas por el autor; el consumo real en ejecucion es algo superior por el contexto y el estado del runtime).
+- GPU recomendadas: no se especifican en la informacion proporcionada. Por tamano, cualquier GPU consumer moderna (por ejemplo, RTX 3060 en adelante) puede alojar las cuantizaciones Q4_K_M y Q5_K_M con holgura; las tarjetas de datacenter (A100, H100) no son necesarias.
+- Cabe en GPU consumer: si, en practicamente todas las GPU con 2 GB o mas de VRAM para las cuantizaciones Q4_K_M y Q5_K_M; tambien es viable en CPU.
+- Opciones de despliegue documentadas: llama.cpp (CLI y binding de Python `llama_cpp`), Ollama y LM Studio. No se mencionan vLLM ni TGI en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF (este) | ~0,75B | No disponible | Destilacion STEM + SFT legal, GGUF para borde | Apache 2.0 | Hugging Face, llama.cpp, Ollama, LM Studio |
-| Qwen/Qwen3-0.6B (base) | ~0,6B | No disponible | Modelo base generalista | Apache 2.0 | Hugging Face |
-| reaperdoesntknow/Qwen3-0.6B-STEM-Proof-Distilled-Thinking | ~0,6B | No disponible | Solo etapa 1 (STEM puro, sin SFT legal) | Apache 2.0 (segun modelo base) | Hugging Face |
-| reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF | ~1,7B | No disponible | Variante mayor del mismo pipeline, GGUF | Apache 2.0 (segun modelo base) | Hugging Face |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF (este) | 0,75B | No disponible | Ingles | Apache 2.0 | GGUF | Destilado de un profesor Thinking de 30B; incluye SFT juridico |
+| Qwen/Qwen3-0.6B (modelo base) | 0,6B | No disponible en la informacion proporcionada | Multilingue (segun Qwen) | Apache 2.0 | Safetensors, GGUF | Modelo generalista original sin destilacion especifica |
+| Qwen3-0.6B-STEM-Proof-Distilled-Thinking (mismo autor) | 0,6B | No disponible | Ingles | Apache 2.0 | No disponible | Solo etapa 1: base STEM pura, sin SFT juridico |
+| Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF (mismo autor) | 1,7B | No disponible | Ingles | Apache 2.0 | GGUF | Variante mayor de la misma familia de destilacion |
 
-No se dispone de datos de rendimiento comparativo (benchmarks) para establecer diferencias cuantitativas entre estas alternativas.
+No se dispone de datos de rendimiento comparativo (benchmarks) entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Restriccion de capacidad: 0,6B es un limite duro; el autor advierte que el modelo comete errores que modelos mayores evitan y que las pruebas multi-paso mas alla de ~8 pasos degradan.
-- Razonamiento legal superficial: cubre conceptos generales pero carece de matices; no es sustituto de asesoria legal profesional.
-- Riesgo de alucinacion: inherente a modelos pequenos destilados; el autor recomienda verificar siempre las salidas criticas y no sustituye la verificacion formal de pruebas.
-- Idioma: solo ingles declarado; no hay soporte multilingue documentado.
-- Contexto: no se documenta la longitud de contexto nativa; los ejemplos usan 1024 tokens, lo que limita conversaciones largas y documentos extensos.
-- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las condiciones del modelo base y del dataset Lawyer-Instruct por si imponen restricciones adicionales.
-- Cuantizacion: las versiones Q4_K_M y Q5_K_M introducen perdida de precision; el autor afirma que las estructuras aprendidas se preservan, pero no aporta mediciones que lo cuantifiquen.
-- Ausencia de benchmarks publicados: no hay evidencia numerica de rendimiento frente a alternativas, lo que dificulta la evaluacion objetiva en produccion.
-- Tool calling y agentes: no documentados; no debe asumirse su soporte.
+- Capacidad limitada por el tamano: el propio autor advierte que 0,6B es una restriccion dura y que el modelo cometera errores que modelos mayores evitan.
+- Razonamiento multi-paso fragil: las demostraciones de mas de aproximadamente 8 pasos se degradan segun la model card.
+- Razonamiento juridico superficial: cubre conceptos generales pero carece de matiz; no sustituye asesoramiento legal profesional.
+- Riesgo de alucinacion: inherente a modelos pequenos destilados; el autor recomienda verificar siempre las salidas criticas y no usarlo como sustituto de verificacion formal de pruebas.
+- Idioma: solo se declara ingles, por lo que el rendimiento en castellano no esta garantizado ni documentado.
+- Contexto: no se especifica la longitud de contexto soportada; los ejemplos de uso emplean 1024 tokens, lo que sugiere ventanas cortas en la practica.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo se distribuye sin garantias y el autor no ofrece soporte ni validacion de resultados.
+- Advertencia sobre el marco matematico propietario: las afirmaciones sobre Discrepancy Calculus y Topological Knowledge Distillation provienen de la model card del autor y no se han verificado de forma independiente en la informacion disponible.
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF
+- Repositorio GGUF: https://huggingface.co/reaperdoesntknow/Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT-GGUF
 - Modelo fuente (precision completa): https://huggingface.co/reaperdoesntknow/Qwen3-0.6B-Distilled-30B-A3B-Thinking-SFT
-- Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
-- Modelo profesor Qwen3-30B-A3B-Thinking-2507: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
-- Dataset Lawyer-Instruct: https://huggingface.co/datasets/Alignment-Lab-AI/Lawyer-Instruct
 - Variante solo STEM (etapa 1): https://huggingface.co/reaperdoesntknow/Qwen3-0.6B-STEM-Proof-Distilled-Thinking
 - Variante 1.7B GGUF: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF
+- Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
+- Profesor Qwen3-30B-A3B-Thinking-2507: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
+- Dataset de SFT juridico: https://huggingface.co/datasets/Alignment-Lab-AI/Lawyer-Instruct
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - LM Studio: https://lmstudio.ai/
-- Convergent Intelligence LLC: https://convergentintel.com
-- Perfil del autor en Hugging Face: https://huggingface.co/reaperdoesntknow
+- Perfil del autor: https://huggingface.co/reaperdoesntknow
+- Sitio de Convergent Intelligence LLC: https://convergentintel.com

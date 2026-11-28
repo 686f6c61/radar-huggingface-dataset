@@ -2,100 +2,101 @@
 
 ## Resumen
 
-shiori-bert-jp es un clasificador BERT en japones desarrollado por melon1891 (TAKUMI HIRAISHI) que detecta fronteras de tema en conversaciones de chat. Para cada limite entre dos frases, el modelo recibe las dos frases anteriores y las dos posteriores (con etiquetas de hablante) y devuelve tres clases: C0 (sin frontera), C1 (subtema dentro del tema actual) y C2+ (nuevo tema). Se trata de un modelo discriminativo, no generativo, construido sobre `tohoku-nlp/bert-base-japanese-v3` con 111.209.475 parametros y una ventana maxima de 256 tokens.
+shiori-bert-jp es un clasificador BERT de pequeno tamano especializado en segmentacion de topicos y deteccion de eventos en conversaciones informales en japones. Lo desarrolla el usuario melon1891 y se distribuye bajo licencia Apache 2.0. El modelo resuelve un problema concreto de procesamiento del discurso: determinar, para cada frontera entre dos oraciones de un dialogo, si no hay corte, si hay un subtema dentro del topico actual o si empieza un topico nuevo.
 
-La relevancia del modelo reside en su metodo de construccion: se destilo a partir de etiquetas generadas por un LLM profesor (Claude Opus 5.5, con ejemplos etiquetados a mano) sobre 400 conversaciones sinteticas en japones generadas con Claude Sonnet 5.5 (14.744 fronteras). Segun la model card, el alumno alcanza un F1 medio de 0,770 en 5 semillas sobre un conjunto de evaluacion de 8 conversaciones (287 fronteras), practicamente a la par de su profesor (0,769), con unos 45 ms por frontera en CPU de escritorio.
+Tecnicamente es un fine-tuning por destilacion de conocimiento sobre `tohoku-nlp/bert-base-japanese-v3`, con 110.618.883 parametros. La innovacion principal no esta en la arquitectura, sino en el enfoque de anotacion: se usan etiquetas generadas por un LLM profesor (Claude Opus 5.5 con ejemplos anotados por humanos) sobre 400 conversaciones sinteticas en japones generadas con Claude Sonnet 5.5, que luego se destilan en el BERT alumno.
 
-Es un modelo de nicho, con cero descargas y cero likes en el momento de la consulta, orientado a investigacion y uso recreativo en sistemas de dialogo. No es cargable con `AutoModelForSequenceClassification`: requiere el script `shiori_infer.py` incluido en el repositorio, y los datos de entrenamiento no se han publicado.
+Es relevante para quien construye sistemas de dialogo, resumen de conversaciones o memoria de agentes conversacionales en japones, porque ofrece una senal de segmentacion ligera (unos 45 ms por frontera en CPU de escritorio) con un F1 de 0,770 en media de 5 semillas sobre 8 conversaciones humanas, practicamente a la par de su profesor LLM (0,769) y a una fraccion del coste computacional.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer BERT (encoder) con cabeza lineal de 3 clases sobre el estado oculto de [CLS] |
-| Parametros totales | 111.209.475 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 256 tokens (recorte asimetrico: ~126 tokens del lado previo y el resto del posterior) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors sin cuantizaciones publicadas) |
+| Arquitectura | Transformer encoder BERT (base), cabeza de clasificacion sobre el estado oculto de [CLS] de la ultima capa (sin pooler) |
+| Parametros totales | 110.618.883 |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 256 tokens (entrada formada por las 2 oraciones previas y las 2 posteriores a la frontera) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | japones (ja) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (checkpoint PyTorch convertido) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo de 0,9 GB, incluye tokenizador y `modeling_shiori.py`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `tohoku-nlp/bert-base-japanese-v3` (Apache-2.0) y anade una cabeza lineal de tres clases directamente sobre el estado oculto final de [CLS]; el pooler de BERT se conserva en los pesos pero no se utiliza. La entrada es una ventana de cuatro frases (dos antes y dos despues del limite) con etiquetas de hablante en formato de colono de ancho completo (`利用者：`, `相棒：`). El maximo es de 256 tokens, con recorte asimetrico que prioriza los ~126 tokens mas cercanos al limite en el lado previo.
+El modelo parte de `tohoku-nlp/bert-base-japanese-v3` y anade una cabeza de clasificacion de 3 clases que se aplica directamente sobre el estado oculto de [CLS] de la ultima capa, sin usar el pooler de BERT (que ni siquiera se incluye en los pesos). La entrada es un par de segmentos: las dos oraciones anteriores a la frontera y las dos posteriores, cada una prefijada con la etiqueta del hablante (`利用者：` o `相棒：`, con dos puntos de ancho completo). La clasificacion distingue C0 (sin frontera), C1 (subtema dentro del topico actual) y C2+ (nuevo topico, que agrupa el antiguo C3 por escasez de ejemplos). La decision se hace en dos umbrales: frontera fina si P(C1)+P(C2+) >= 0,5 y frontera de topico si P(C2+) >= 0,5.
 
-El entrenamiento es una destilacion de conocimiento desde un LLM profesor: Claude Opus 5.5 etiqueto con C0-C3 todas las fronteras de 400 conversaciones sinteticas de charla cotidiana en japones generadas con Claude Sonnet 5.5 (dos personas conviviendo, 18-22 turnos, 3-4 temas, con cambios de tema sin marcadores explicitos y cambios a mitad de turno). Se hizo fine-tuning durante 8 epocas, learning rate 5e-5, batch 16, maximo 256 tokens y pesos de clase proporcionales a la frecuencia elevada a -0,5. Se entrenaron 5 semillas (0-4) en una unica RTX 2070; el repositorio publica la semilla 3. Las etiquetas C3 originales (cierre y reinicio de conversacion) se agruparon en C2 por escasez, resultando en tres clases finales. Los datos de entrenamiento (conversaciones y etiquetas) no se han publicado.
+El entrenamiento es una destilacion de conocimiento: un LLM profesor (Claude Opus 5.5, alimentado con ejemplos anotados por humanos) etiqueta 400 conversaciones sinteticas en japones generadas con Claude Sonnet 5.5, y esas etiquetas se usan para entrenar el BERT alumno. No se detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo RLHF/DPO. El modelo se publica con 5 semillas; la semilla liberada alcanza F1 de 0,790, frente a la media de 0,770 de las 5 semillas. Los datos de entrenamiento no se publican. El truncamiento de entradas largas sigue la regla del entrenamiento: en la parte izquierda se conservan los ~126 tokens mas cercanos a la frontera y en la derecha el resto hasta el limite.
 
 ## Capacidades
 
-- Clasificacion de fronteras de tema en conversaciones de chat en japones con dos niveles de granularidad: frontera fina (P(C1) + P(C2+) >= 0,5) y frontera de tema (P(C2+) >= 0,5).
-- Procesamiento de contexto conversacional con etiquetas de hablante y ventana de cuatro frases alrededor del limite.
-- Prediccion anticipada: al mirar una frase mas alla del limite, permite decidir el limite anterior en cuanto llega una nueva frase, lo que habilita uso en streaming.
-- Utilidad `split_sentences()` para dividir intervenciones con multiples frases segun las reglas de entrenamiento (cierre en `。！？!?` y parentesis de cierre posteriores).
-- Mapeo configurable de hablantes (`speaker_map`) para adaptar nombres arbitrarios a las etiquetas `利用者` / `相棒` vistas en entrenamiento.
-- No soporta tool calling, function calling, agentes, vision, audio ni generacion de texto: es un clasificador discriminativo.
+- Clasificacion de fronteras de topico en dialogos japoneses en tres clases (C0, C1, C2+).
+- Segmentacion fina (piece boundary) y segmentacion de topico (topic boundary) mediante dos umbrales independientes.
+- Deteccion de eventos y cambios de tema en conversaciones de chat informal.
+- Procesamiento incremental: al ver una oracion por delante de la frontera, puede evaluar la frontera inmediatamente anterior segun llega cada oracion.
+- Manejo de etiquetas de hablante (entrenado con `利用者` y `相棒`; admite remapeo via `speaker_map`).
+- Utilidades incluidas: `shiori_infer.py` con `ShioriSegmenter` y `split_sentences()` (regla de corte por `。！？!?` y parentesis de cierre).
+- Carga via `transformers` con `AutoModelForSequenceClassification` y `trust_remote_code=True`, o via `pipeline("text-classification")`.
+- No es generativo: no produce texto, solo probabilidades por frontera.
+- No soporta tool calling, agentes, vision, audio ni modo thinking.
 
 ## Casos de uso
 
-- Segmentacion de registros de conversacion: procesar transcripciones de chat y agrupar las intervenciones por tema usando la salida C2+ como marca de corte, lo que facilita la revision posterior y el resumen por bloques.
-- Definicion de unidades de memoria en sistemas de dialogo: usar las fronteras de tema para decidir cuando cerrar una entrada de memoria episodica y abrir otra, evitando mezclar temas en un mismo recuerdo.
-- Deteccion en streaming dentro de un chatbot: como el modelo mira una frase por delante, puede evaluar el limite previo en cuanto llega el siguiente mensaje, con ~45 ms por frontera en CPU de escritorio (Ryzen 9 3900X, 8 hilos).
-- Enrutado de conversaciones hacia modulos especializados: al detectar un cambio de tema (C2+), derivar el turno a un subagente o base de conocimiento distinto del tema anterior.
-- Analisis de calidad de dialogos sinteticos: aplicar el clasificador a conversaciones generadas para verificar que contienen cambios de tema realistas y no derivas tematicas no deseadas.
-- Investigacion sobre destilacion de LLM a modelos pequenos: el modelo sirve como caso de estudio reproducible de destilacion de etiquetas de un LLM profesor a un encoder BERT de 111 M de parametros para una tarea estructurada.
-- Preprocesado para resumen extractivo por temas: dividir primero el log en segmentos tematicos y aplicar despues un resumidor por bloque, reduciendo la longitud de contexto necesaria en el paso siguiente.
+- Segmentacion de transcripciones de atencion al cliente: dividir un chat largo en bloques tematicos para resumir cada bloque por separado; el modelo evalua cada frontera con 2 oraciones de contexto a cada lado, suficiente para detectar cambios de asunto en conversaciones de soporte.
+- Memoria de agentes conversacionales: usar la senal de topic boundary para decidir cuando cerrar un bloque de memoria y abrir uno nuevo, evitando mezclar temas en el mismo registro; la latencia de ~45 ms por frontera en CPU permite hacerlo en linea.
+- Resumen jerarquico de conversaciones: aplicar `ShioriSegmenter` sobre la transcripcion, agrupar oraciones entre fronteras C2+ y pasar cada grupo a un modelo generativo para resumen por secciones.
+- Analisis de discurso en investigacion: medir la estructura de topicos de corpus de dialogo japones, comparando la tasa de subtemas (C1) frente a cambios de topico (C2+) entre condiciones o hablantes.
+- Indexacion y busqueda en historiales de chat: generar metadatos de segmento para que un sistema de recuperacion devuelva el bloque tematico completo en lugar de mensajes sueltos.
+- Preprocesado para anotacion humana: proponer fronteras candidatas a anotadores, reduciendo el coste de etiquetar corpus de segmentacion de discurso en japones.
+- Filtrado de ruido en datasets conversacionales: detectar donde una conversacion deriva a un topico no deseado (C2+) para recortar o marcar segmentos antes de usarlos en entrenamiento.
 
 ## Benchmarks y rendimiento
 
-Evaluacion sobre 8 conversaciones nuevas (287 fronteras) etiquetadas a mano por un unico anotador, con metrica F1 de "frontera presente (C1 o superior) frente a ausente":
+Evaluacion sobre 8 conversaciones nuevas anotadas por humanos (287 fronteras):
 
-| Modelo | F1 |
+| Metrica | Valor |
 |---|---|
-| Esta configuracion (profesor Opus + ejemplos), media de 5 semillas | 0,770 (rango 0,756-0,790) |
-| Este repositorio (semilla 3, la mejor de las 5) | 0,790 |
-| Profesor: Claude Opus 5.5 con ejemplos etiquetados a mano | 0,769 |
-| Referencia: Claude Sonnet 5.5 zero-shot (sin ejemplos) | 0,736 |
+| F1 medio (5 semillas) | 0,770 |
+| F1 semilla liberada | 0,790 |
+| F1 del profesor LLM (Claude Opus 5.5) | 0,769 |
+| Latencia por frontera (CPU de escritorio) | ~45 ms |
 
-Velocidad: mediana de aproximadamente 45 ms por frontera en CPU (AMD Ryzen 9 3900X, 8 hilos), medida con un alumno de la misma construccion. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales, ya que el modelo no es generativo.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estandar en la informacion disponible, ya que el modelo no es generativo y la evaluacion se limita a la tarea de segmentacion.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita; con 111 M de parametros en fp32 el peso ocupa aproximadamente 0,45 GB, por lo que la inferencia cabe holgadamente en cualquier GPU consumer.
-- GPU recomendadas: no se especifican; el autor entreno en una unica RTX 2070. Cualquier GPU con al menos 1-2 GB de memoria libre es suficiente.
-- Cabe en GPU consumer: si, en practicamente cualquier modelo actual (RTX 2070 o superior, e incluso integradas).
-- Despliegue: el modelo no es cargable con `AutoModelForSequenceClassification`; requiere el script `shiori_infer.py` del repositorio con `torch`, `transformers`, `safetensors`, `huggingface_hub`, `fugashi` y `unidic-lite`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de clasificador).
-- Latencia y throughput: aproximadamente 45 ms por frontera en CPU de escritorio (Ryzen 9 3900X, 8 hilos); no se publican cifras en GPU.
+- VRAM estimada para inferencia: ~0,45 GB en fp32 (110,6 M de parametros), ~0,22 GB en fp16; cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: no requiere GPU; funciona en CPU de escritorio a ~45 ms por frontera. Cualquier GPU moderna (RTX 3060 en adelante, A100, H100) reduce la latencia a nivel de milisegundos por lote.
+- Cabe en GPU consumer: si, en todas las gamas actuales, incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: `transformers` (con `trust_remote_code=True`), `pipeline("text-classification")` y el script incluido `shiori_infer.py`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (el modelo usa codigo custom, lo que complica su portabilidad a runtimes alternativos).
+- Dependencias: torch, transformers, safetensors, huggingface_hub, fugashi y unidic-lite. Versiones verificadas: torch 2.6.0, transformers 5.20.1, safetensors 0.8.0, fugashi 1.5.2, unidic-lite 1.0.8.
+- Throughput: no disponible de forma agregada; solo se publica la latencia por frontera en CPU.
 
 ## Comparativa con modelos similares
 
-No se han identificado en la informacion disponible modelos comparables de segmentacion de temas en conversaciones japonesas. El autor advierte explicitamente de que este modelo no debe confundirse con `cl-nagoya/shioriha` (shioriha-large-pt, shioriha-large-reranker), que son modelos no relacionados a pesar de la similitud de nombre.
-
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shiori-bert-jp (este) | 111 M | 256 tokens | Clasificacion de fronteras de tema en japones | Apache-2.0 | Hugging Face |
-| Claude Opus 5.5 (profesor) | no disponible | no disponible | Etiquetado de fronteras via prompt | propietaria | API de Anthropic |
-| Claude Sonnet 5.5 (referencia zero-shot) | no disponible | no disponible | Etiquetado de fronteras via prompt | propietaria | API de Anthropic |
-| cl-nagoya/shioriha | no disponible | no disponible | No relacionado (advertencia del autor) | no disponible | Hugging Face |
+| shiori-bert-jp | 110,6 M | 256 tokens | Segmentacion de topico en dialogo japones | Apache 2.0 | Hugging Face |
+| tohoku-nlp/bert-base-japanese-v3 | ~110 M | 512 tokens | Modelo base japones (MLM), sin cabeza de segmentacion | Apache 2.0 | Hugging Face |
+| Profesor LLM (Claude Opus 5.5) | no disponible | no disponible | Etiquetado de fronteras via prompt | propietaria | API de Anthropic |
+
+No se dispone de informacion sobre otros clasificadores de segmentacion de topico en japones comparables en la busqueda realizada. La comparacion mas directa es con su modelo base (que no realiza esta tarea de forma nativa) y con el profesor LLM del que se destilo, que obtiene F1 0,769 frente al 0,770-0,790 del BERT.
 
 ## Limitaciones y advertencias
 
-- Entrenado exclusivamente con conversaciones sinteticas generadas por LLM, mas ordenadas y con menos vacilaciones o digresiones que el habla real; la precision puede caer en conversaciones reales, con tres o mas participantes o en dominios distintos de la charla cotidiana.
-- Solo japones y solo dialogos de dos hablantes con las etiquetas `利用者` / `相棒`; otros nombres requieren mapeo explicito y otros idiomas no estan soportados.
-- El conjunto de evaluacion es muy pequeno (8 conversaciones, 287 fronteras) y esta etiquetado por un unico anotador, por lo que los intervalos de confianza son amplios y la diferencia con el profesor o con Sonnet no es distinguible del azar.
-- Tendencia a segmentar en exceso: separa como subtemas lo que un humano considera un mismo tema y clasifica fronteras de tema como fronteras finas (C1); la mayoria de errores son de granularidad, no de posicion.
-- Riesgo de alucinacion no aplicable en sentido generativo, pero las probabilidades de clase no deben interpretarse como calibracion fiable fuera del dominio de entrenamiento.
-- Uso previsto restringido a investigacion y hobby; el autor desaconseja explicitamente emplearlo como base para evaluaciones o juicios sobre personas y reutilizar sus cifras como sustituto de un conjunto de evaluacion propio.
-- Los datos de entrenamiento no se publican, lo que limita la reproducibilidad completa.
-- Las conversaciones y etiquetas se generaron con Claude (Anthropic); el usuario debe cumplir los terminos de servicio de las herramientas que emplee.
-- Licencia Apache-2.0 con atribucion y cambios documentados en `NOTICE`; las dependencias `fugashi` (MIT, MeCab BSD-3-Clause) y `unidic-lite` (codigo MIT o WTFPL, diccionario UniDic 2.1.2 BSD) no se incluyen en el repositorio.
+- Modelo no generativo: solo emite probabilidades de frontera; no produce texto ni razonamiento.
+- Entrenado exclusivamente con dos etiquetas de hablante (`利用者` y `相棒`); con otros nombres es necesario remapear y el rendimiento puede degradarse.
+- Entrenado sobre conversaciones sinteticas generadas por LLM y etiquetadas por otro LLM: puede heredar sesgos y errores del profesor, y la distribucion puede no coincidir con dialogos reales de dominios especificos.
+- Ventana de 256 tokens: entradas mas largas se truncan con una regla concreta; usar `truncation=True` del tokenizador produce un recorte distinto y resultados inconsistentes.
+- Solo japones; no hay soporte multilingue.
+- Los datos de entrenamiento no se publican, lo que limita la reproducibilidad y la auditoria del sesgo.
+- Requiere `trust_remote_code=True` para cargar con `transformers`, lo que implica ejecutar codigo del repositorio; conviene revisar `modeling_shiori.py` antes de usarlo en produccion.
+- Licencia Apache 2.0 permite uso comercial, pero el autor lo describe como modelo para investigacion y uso recreativo; no hay garantias de rendimiento en produccion.
+- Riesgo de falsos positivos y negativos en fronteras ambiguas: el F1 de ~0,77 sobre datos humanos indica que aproximadamente una de cada cuatro fronteras se clasifica incorrectamente.
+- No se documentan cuantizaciones oficiales; el soporte en runtimes alternativos (llama.cpp, Ollama) no esta garantizado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/melon1891/shiori-bert-jp
-- Perfil del autor: https://huggingface.co/melon1891
-- Listado de modelos del autor: https://huggingface.co/melon1891/models
 - Modelo base: https://huggingface.co/tohoku-nlp/bert-base-japanese-v3
-- Dependencia fugashi: https://pypi.org/project/fugashi/
-- Dependencia unidic-lite: https://github.com/polm/unidic-lite
-- Referencia bibliografica citada: 猫飼人, "AI キャラクター向けイベントセグメント検出モデルを作って検証してみた", 技術書典 21 (sin URL disponible)
+- Revision anterior del layout: https://huggingface.co/melon1891/shiori-bert-jp/tree/a6ad40d749bc4fbebf1c0d2d57e959dc44cd17b8
+- Repositorio de codigo, paper o demo: no disponible en la informacion proporcionada.

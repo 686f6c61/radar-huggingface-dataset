@@ -2,81 +2,90 @@
 
 ## Resumen
 
-Aurum-2B-Uncensored-i1-GGUF es una cuantización en formato GGUF del modelo Aurum-2B-Uncensored, publicada por el usuario mradermacher. Se trata de una conversión de los pesos originales (alojados en el repositorio 2Beyes/Aurum-2B-Uncensored) a múltiples niveles de cuantización, generados con el método de imatrix/weighted quants, lo que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles.
+Aurum-2B-Uncensored-i1-GGUF es una cuantizacion en formato GGUF del modelo Aurum-2B-Uncensored, desarrollado originalmente por el usuario 2Beyes y cuantizado por mradermacher. Se trata de un modelo de lenguaje de aproximadamente 1.940 millones de parametros (1.942.653.248 exactos segun los pesos en safetensors) que parte de la familia Qwen3.5, segun las etiquetas del autor, y que ha sido sometido a un proceso de "abliteration" para eliminar los mecanismos de rechazo y censura, dando lugar a una variante "uncensored". El modelo declara soporte de tool calling y capacidades de vision.
 
-El modelo base se presenta como una variante "uncensored" de 2B de parámetros, es decir, un modelo afinado para reducir los rechazos y filtros de seguridad habituales en asistentes alineados. La ficha del repositorio no documenta el proceso de entrenamiento, el dataset ni la arquitectura concreta, por lo que gran parte de las especificaciones técnicas quedan como no disponibles.
+La relevancia de esta ficha radica en que ofrece una via practica para ejecutar un modelo de ~2B parametros en hardware de consumo gracias a sus cuantizaciones GGUF con calibracion imatrix, que van desde ~1,1 GB (Q2_K) hasta ~1,7 GB (Q6_K). El repositorio tiene un tamano total de 18,7 GB porque incluye todas las variantes de cuantizacion, pero cada archivo individual es ligero. Esta pensado para experimentacion, prototipado rapido y despliegue en entornos con recursos limitados.
 
-La relevancia de esta publicación es fundamentalmente práctica: ofrece un abanico amplio de cuantizaciones (desde IQ1_S hasta Q6_K, además de Q4_0 y Q4_1) que cubren desde escenarios de muy baja memoria hasta calidad casi completa, lo que facilita el despliegue local del modelo en GPUs modestas o incluso en CPU. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+Conviene senalar que la informacion disponible es escasa: no se publican datos de contexto, composicion del dataset de entrenamiento, resultados de benchmarks ni detalles del proceso de abliteration. La model card del cuantizador se limita a describir las variantes GGUF generadas. Todo lo que no consta se marca explicitamente como "no disponible".
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 812.958 (dato del safetensors del modelo base; el nombre comercial indica 2B, discrepancia no aclarada por el autor) |
-| Parametros activos | no aplica (no se documenta como MoE) |
+| Arquitectura | Transformer (base Qwen3.5, segun etiquetas del autor) |
+| Parametros totales | 1.942.653.248 (~1,94B) |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ3_M, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_NL (small), IQ4_XS, Q4_K_S, Q4_K_M, Q4_0, Q4_1, Q5_K_S, Q5_K_M, Q6_K, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-Q4_0, i1-IQ4_XS, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (calibradas con imatrix) |
+| Idiomas soportados | en (ingles, segun la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizado); el modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. El nombre sugiere un transformer de aproximadamente 2B de parámetros, pero el dato de safetensors del modelo base (812.958 parámetros) contradice esa cifra y no viene explicado. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otro tipo de alineamiento.
+El modelo base Aurum-2B-Uncensored se presenta, segun las etiquetas del autor, como derivado de la familia Qwen3.5, lo que sugiere una arquitectura transformer decoder-only con atencion por grupos de consultas (GQA) y posiblemente mecanismos de atencion eficiente propios de esa familia. Sin embargo, la informacion proporcionada no detalla la configuracion exacta de capas, dimensiones ocultas, numero de cabezas ni el esquema de atencion. Tampoco se especifica si incorpora modulos de vision dedicados (aunque la etiqueta "vision" y la mencion a archivos mmproj en el repositorio estatico lo indican) ni como se integran.
 
-La única información técnica relevante es el proceso de cuantización: los GGUF se han generado con quantize_version 2, output_tensor_quantised 1 y convert_type hf, empleando cuantizaciones ponderadas con imatrix. La etiqueta "nicoboss" aparece en los metadatos del proceso de conversión. No se detalla qué dataset de calibración se usó para la imatrix.
+En cuanto al entrenamiento, no se dispone de datos sobre el numero de tokens, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO o similar. El termino "abliterated" en las etiquetas sugiere que se aplico una tecnica de ablacion de direcciones de rechazo en el espacio de activaciones para eliminar el comportamiento de censura, pero no se documenta el procedimiento concreto. La cuantizacion i1 con imatrix la realiza mradermacher usando un fichero de importancia generado a partir de calibracion, lo que mejora la calidad respecto a cuantizaciones estaticas a igual tamano.
 
 ## Capacidades
 
-- Generación de texto conversacional en formato chat, presumiblemente con plantilla de instrucciones (no documentada).
-- Comportamiento "uncensored": menor probabilidad de rechazar peticiones que los modelos alineados convencionales.
-- Ejecución local mediante llama.cpp y derivados (Ollama, LM Studio, koboldcpp) gracias al formato GGUF.
-- Soporte de cuantizaciones de muy baja precisión (IQ1_S, IQ1_M) para entornos con memoria extremadamente limitada.
-- Capacidades de tool calling, agentes, visión, audio o razonamiento multi-paso: no disponibles / no documentadas.
-- Capacidades multilingües: no disponibles.
+- Generacion de texto conversacional en ingles, con un modo presumiblemente desinhibido tras la abliteration.
+- Soporte declarado de tool calling / function calling, lo que permite integracion en flujos que requieran invocar funciones externas.
+- Capacidades de vision segun la etiqueta "vision"; los archivos mmproj (proyector multimodal) se alojan en el repositorio estatico de mradermacher, no en este.
+- Razonamiento multi-turno y uso en agentes, aunque sin datos que confirmen el rendimiento en tareas de varios pasos.
+- Capacidades multilingues limitadas al ingles segun la model card; no se documentan otros idiomas.
+- Al estar "uncensored", responde a peticiones que otros modelos rechazarian, lo que amplia el rango de temas tratables a costa de eliminar salvaguardas.
 
 ## Casos de uso
 
-- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M o IQ4_XS permiten ejecutar el modelo en GPUs con 4-6 GB de VRAM o en CPU con 8-16 GB de RAM, útil para prototipos locales sin conexión.
-- Experimentación con modelos sin filtros: investigadores que estudian el comportamiento de modelos "uncensored" pueden usar esta variante para comparar respuestas frente a versiones alineadas.
-- Generación creativa sin restricciones: escritura de ficción, roleplay o guiones donde los filtros de seguridad de asistentes comerciales resultan limitantes.
-- Pruebas de pipelines GGUF: sirve como modelo de prueba ligero para validar integraciones con llama.cpp, Ollama o servidores compatibles antes de escalar a modelos mayores.
-- Educación y demostraciones: su reducido tamaño y variedad de cuantizaciones lo hacen adecuado para talleres sobre cuantización e inferencia local.
-- Evaluación de técnicas de cuantización: la disponibilidad de 24 variantes permite medir el impacto de la precisión en la calidad de salida sobre un mismo modelo base.
+- Prototipado rapido en local: con cuantizaciones de 1,1 a 1,7 GB, el modelo se ejecuta en portatiles y equipos sin GPU dedicada mediante llama.cpp u Ollama, ideal para validar ideas antes de escalar a modelos mayores.
+- Experimentacion con modelos sin censura: investigadores que estudian el comportamiento de modelos abliterated pueden comparar respuestas frente a la version original y analizar el efecto de la ablacion en dominios sensibles.
+- Generacion de texto asistida en entornos con recursos limitados: redaccion de borradores, resumenes y respuestas conversacionales donde el coste por inferencia es critico y no se requiere maxima calidad.
+- Integracion en pipelines de agentes con tool calling: el modelo puede invocar funciones en flujos automatizados, aunque su tamano reducido limita la fiabilidad en cadenas de razonamiento largas.
+- Procesamiento de imagenes en el borde (edge): con los archivos mmproj del repositorio estatico, puede emplearse para tareas basicas de descripcion o extraccion de informacion de imagenes en dispositivos modestos.
+- Educacion y divulgacion: sirve como ejemplo didactico de cuantizacion imatrix, abliteration y despliegue GGUF en cursos y talleres, dado su reducido tamano y su licencia permisiva.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: para un modelo de ~2B, las cuantizaciones Q4 rondan 1,2-1,5 GB; Q6_K en torno a 1,8-2 GB; las IQ1/IQ2 pueden bajar de 1 GB. Cifras orientativas, no confirmadas por el autor.
-- GPU recomendadas: cualquier GPU con 4 GB o más de VRAM (RTX 3050, RTX 4060, GTX 1660) para cuantizaciones Q4/Q5; GPUs de 8 GB o más (RTX 3060 Ti, RTX 4070) para Q6_K con contexto amplio.
-- Cabe en GPU de consumo: sí, en la práctica totalidad de GPUs modernas con 4 GB o más, y en CPU con RAM suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa sin conversión.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: entre ~1,1 GB (i1-Q2_K) y ~1,7 GB (i1-Q6_K) solo para los pesos; con overhead de contexto y cache KV, prever entre 2 y 4 GB adicionales segun la longitud de contexto (no documentada).
+- GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090) puede ejecutar las cuantizaciones mayores; en A100/H100 el modelo esta sobredimensionado y no aprovecha el hardware.
+- Cabe en GPU consumer: si, en practicamente todas las GPU modernas, e incluso en CPU pura con llama.cpp.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui; vLLM y TGI soportan GGUF de forma parcial, por lo que para produccion convendria usar el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles. A modo orientativo, un modelo de ~2B en Q4_K_M en una RTX 4060 suele superar las decenas de tokens por segundo, pero no se aportan mediciones oficiales.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Aurum-2B-Uncensored-i1-GGUF | ~2B (según nombre; discrepancia con safetensors) | no disponible | no disponible | GGUF | 24 cuantizaciones, sin benchmarks publicados |
-| Alternativas de ~2B "uncensored" en GGUF | ~2B | variable | variable | GGUF | No se dispone de datos concretos verificables en la información proporcionada |
+| Aurum-2B-Uncensored-i1-GGUF | ~1,94B | no disponible | Apache 2.0 | GGUF | Vision, tool calling, abliterated |
+| Qwen2.5-1.5B-Instruct (referencia) | ~1,5B | 32K (tipico en la familia) | Apache 2.0 | safetensors, GGUF | Sin vision, con censura |
+| Llama-3.2-1B-Instruct (referencia) | ~1,2B | 128K | Llama 3.2 Community | safetensors, GGUF | Sin vision en la variante de texto |
+| SmolLM2-1.7B-Instruct (referencia) | ~1,7B | 8K | Apache 2.0 | safetensors, GGUF | Sin vision |
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con modelos alternativos concretos.
+Las cifras de contexto y licencia de los modelos de referencia corresponden a sus especificaciones publicas habituales; no se dispone de comparaciones de rendimiento directas con Aurum-2B-Uncensored.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación sobre entrenamiento, dataset y alineamiento: imposible evaluar sesgos de forma fundamentada.
-- Comportamiento "uncensored": mayor riesgo de generar contenido dañino, ofensivo o inexacto; no recomendado para aplicaciones de cara al público sin filtros adicionales.
-- Discrepancia entre el nombre (2B) y el recuento de parámetros del safetensors (812.958): conviene verificar el modelo base antes de usarlo en producción.
-- Riesgo de alucinación elevado en modelos pequeños, especialmente en cuantizaciones IQ1/IQ2, donde la degradación de calidad es notable.
-- Licencia no especificada: no se puede confirmar la legalidad del uso comercial; consultar el repositorio del modelo base (2Beyes/Aurum-2B-Uncensored).
-- Idiomas y contexto no documentados: no asumir soporte multilingüe ni ventanas largas.
-- Repositorio sin descargas ni validación de la comunidad: sin garantías de calidad o mantenimiento.
+- Ausencia de benchmarks: no hay datos objetivos de calidad, lo que impide garantizar su rendimiento frente a alternativas establecidas.
+- Riesgo de alucinacion elevado: un modelo de ~2B parametros tiene capacidad limitada de razonamiento y factualidad; no es adecuado para tareas que exijan precision alta.
+- Modelo "uncensored": la abliteration elimina salvaguardas, por lo que puede generar contenido ofensivo, ilegal o danino; requiere filtros y supervision en produccion.
+- Idioma: solo se declara ingles; el rendimiento en castellano no esta documentado y probablemente sea deficiente.
+- Contexto desconocido: al no documentarse la longitud de contexto, es arriesgado usarlo en tareas de contexto largo sin validacion previa.
+- Licencia Apache 2.0: permite uso comercial, pero el autor original no ofrece garantias ni asume responsabilidad por el contenido generado.
+- Cuantizaciones de baja calidad: las variantes Q2_K y Q3_K_S degradan notablemente la calidad; se recomienda IQ4_XS o Q4_K_M como minimo.
+- Vision no incluida en este repo: los archivos mmproj estan en el repositorio estatico, lo que anade un paso de descarga adicional.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/mradermacher/Aurum-2B-Uncensored-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Aurum-2B-Uncensored-i1-GGUF
 - Modelo base: https://huggingface.co/2Beyes/Aurum-2B-Uncensored
+- Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Aurum-2B-Uncensored-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Aurum-2B-Uncensored-i1-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafica de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

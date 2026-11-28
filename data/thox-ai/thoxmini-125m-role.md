@@ -2,95 +2,88 @@
 
 ## Resumen
 
-ThoxMini-125M-role es un ajuste fino completo (full fine-tune) del modelo base Thox-ai/thox-micro-125m, desarrollado por THOX.ai. Se trata de un modelo de lenguaje de 123,6 millones de parámetros diseñado específicamente para encarnar el rol de dispositivo del dispositivo físico ThoxMini, un equipo local de IA que funciona en red propia y de forma offline tras el emparejamiento. El modelo responde a comandos locales, informa de estados del dispositivo y delega al host cualquier petición que exceda su ámbito, en lugar de inventar respuestas.
+ThoxMini-125M-role es un ajuste fino completo (full fine-tune) del modelo base `Thox-ai/thox-micro-125m`, desarrollado por THOX.ai. Se trata de un modelo de lenguaje de 123,5 millones de parámetros (125M nominales) especializado en desempeñar el rol de "dispositivo" para la persona ThoxMini: responde a comandos locales, informa de estados y delega explícitamente al host cualquier petición que exceda ese ámbito, en lugar de inventar respuestas. El corpus de ajuste es de autoría propia y consta de 1.565 turnos de rol de dispositivo y conversación.
 
-El modelo se distribuye en dos formatos: pesos safetensors (247 MB) y una cuantización GGUF Q4_K_M (84,6 MB), lo que lo sitúa en la categoría de modelos edge/on-device. Su corpus de entrenamiento es un conjunto propio de THOX de 1.565 turnos de rol de dispositivo y conversación, lo que explica su comportamiento acotado: responde correctamente a comandos dentro del corpus y defiere el resto.
+El modelo está pensado para ejecución en el borde (edge) y en local, con un enfoque "local-first": se distribuye tanto en safetensors como en un GGUF cuantizado Q4_K_M de apenas 84,7 MB, lo que permite ejecutarlo en hardware muy modesto mediante llama.cpp u Ollama. La licencia es Apache-2.0, lo que facilita su integración comercial sin restricciones de atribución más allá de las habituales.
 
-Es relevante ahora por su enfoque de "local-first" y su integración con Ollama y llama.cpp, así como por formar parte del ecosistema de hardware ThoxMini (campaña en Kickstarter). No obstante, es un modelo de investigación, no cualificado todavía en el hardware del dispositivo, y con defectos conocidos documentados por el propio autor.
+Su relevancia actual reside en el nicho: no compite en capacidades generales de razonamiento o generación, sino que propone un patrón de diseño defensivo para asistentes embebidos, donde la abstención controlada y la delegación al host priman sobre la creatividad del modelo. Es un modelo de investigación, no cualificado todavía sobre hardware ThoxMini real.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Llama (según tags y librería GGUF); detalles internos no disponibles |
-| Parametros totales | 123.587.328 (123,6 M) |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer (familia LLaMA, según tags `llama`; detalles internos de capas y atención no disponibles) |
+| Parámetros totales | 123.587.328 (123,5M) |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_K_M (GGUF); pesos completos en safetensors |
-| Idiomas soportados | Inglés (en) |
+| Tipos de cuantización | GGUF Q4_K_M (publicado); safetensors en precisión original |
+| Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | Safetensors y GGUF |
-| Modelo base | Thox-ai/thox-micro-125m |
-| Tamaño del repo | 0,3 GB |
-| Descargas | 1.284 |
-| Fecha de creación | 2026-08-11 |
-| Última actualización | 2026-11-22 |
+| Formato de pesos | safetensors (247,2 MB) y GGUF Q4_K_M (84,7 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de 123,6 millones de parámetros, heredado del base Thox-ai/thox-micro-125m y etiquetado como arquitectura Llama en la librería GGUF. No se dispone de información sobre el número de capas, dimensiones ocultas, mecanismos de atención ni longitud de contexto en la documentación proporcionada.
+El modelo es un transformer de 123,5M de parámetros derivado de `Thox-ai/thox-micro-125m`, etiquetado en Hugging Face dentro de la familia `llama`. La model card no detalla el número de capas, dimensiones de atención, tipo de positional encoding ni si emplea mecanismos como GQA o decodificación especulativa; esa información no está disponible.
 
-El entrenamiento consistió en un ajuste fino completo sobre un corpus autorado por THOX de 1.565 turnos de rol de dispositivo y chat. No se especifica el número de tokens de entrenamiento, la composición detallada del dataset ni si se emplearon técnicas de RLHF o DPO. La model card indica que no se reclama ningún entrenamiento adicional más allá de lo descrito. El objetivo del ajuste es que el modelo actúe como persona del dispositivo ThoxMini: responder a comandos locales, dar respuestas de estado y delegar al host todo lo que quede fuera de su rol.
+El entrenamiento consiste en un ajuste fino completo sobre un corpus de autoría propia (THOX-authored) compuesto por 1.565 turnos de rol de dispositivo y conversación. No se documenta el número de tokens totales, la composición exacta del dataset, ni si se aplicaron técnicas de RLHF, DPO o SFT con formato específico. La model card indica explícitamente que no se reclama ningún entrenamiento adicional más allá del descrito. El objetivo del ajuste es enseñar al modelo a responder comandos locales del dispositivo y a delegar el resto al host, con una política de abstención ante preguntas fuera de ámbito (por ejemplo, hechos de empresa).
 
 ## Capacidades
 
-- Generación de texto para respuestas cortas y superficiales, por diseño de un modelo de 125 M.
-- Respuesta a comandos locales del dispositivo dentro del corpus de entrenamiento.
-- Delegación explícita al host cuando la petición excede el rol del dispositivo.
-- Cero fabricación en preguntas sobre hechos de la empresa según la evaluación del autor en prompts fuera del corpus.
-- Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
-- Capacidades multilingües: solo inglés.
-- Modo thinking, visión o audio: no disponible.
+- Generación de texto breve y respuestas de rol de dispositivo: comandos locales, respuestas de estado y confirmaciones.
+- Delegación controlada: ante preguntas fuera del ámbito del dispositivo, el modelo deriva al host en lugar de fabricar respuestas.
+- Abstención ante hechos de empresa: en las pruebas con prompts fuera del corpus, no produjo fabricaciones ni filtró contenido del scrape de entrenamiento.
+- Conversación multi-turno básica dentro del rol (corpus de chat incluido en el ajuste).
+- Ejecución en local y en el borde mediante GGUF y Ollama.
+- No se documentan capacidades de tool calling, function calling, agentes multi-paso, visión, audio, matemáticas avanzadas ni razonamiento profundo; un modelo de 125M no está diseñado para ello.
 
 ## Casos de uso
 
-- Asistente de rol de dispositivo en el ThoxMini: el modelo responde a comandos locales y estados del dispositivo cuando se ejecuta en un host emparejado, y delega el resto al host. Es adecuado por su entrenamiento específico en 1.565 turnos de rol.
-- Demostración de IA local en el borde: al ocupar 84,6 MB en Q4_K_M, puede ejecutarse en Ollama o llama.cpp en hardware de bajos recursos para mostrar inferencia local sin conexión.
-- Enrutamiento y deferencia: útil como capa de primera línea que decide si una consulta es de ámbito local o debe escalarse al host, evitando respuestas inventadas.
-- Prototipado de personas de dispositivo: sirve como base para experimentar con ajustes finos de rol en dispositivos embebidos con presupuesto de memoria mínimo.
-- Pruebas de integración con Ollama: el comando `ollama run hf.co/Thox-ai/ThoxMini-125M-role:Q4_K_M` permite validar pipelines de despliegue local en minutos.
-- Investigación sobre comportamiento de deferencia: su evaluación reporta cero fabricaciones en preguntas de hechos de empresa, lo que lo hace útil para estudiar estrategias de abstención en modelos pequeños.
-- Educación y experimentación con modelos pequeños: adecuado para entornos docentes donde se quiere un modelo ligero con licencia Apache-2.0 y pesos abiertos.
+- Asistente de rol de dispositivo en un host emparejado: el modelo responde a comandos locales ("estado", "versión", "encender") y delega cualquier otra consulta al host, lo que encaja en arquitecturas de asistente embebido con separación de responsabilidades.
+- Demostración de patrón de abstención controlada: útil como referencia de diseño para equipos que quieran implementar asistentes que no inventen información fuera de su dominio, aprovechando que el modelo fue ajustado explícitamente para delegar.
+- Prototipado rápido en local con Ollama: el GGUF Q4_K_M de 84,7 MB permite iterar en portátiles y equipos sin GPU dedicada, con `ollama run hf.co/Thox-ai/ThoxMini-125M-role:Q4_K_M`.
+- Pruebas de integración en pipelines de CI para asistentes de dispositivo: al ser determinista en su rol y de tamaño reducido, sirve como componente de prueba en flujos de validación de respuestas locales frente a delegadas.
+- Educación y experimentación con ajuste fino: el par base (`thox-micro-125m`) y ajuste (`ThoxMini-125M-role`) permite estudiar el efecto de un corpus pequeño y específico sobre el comportamiento de abstención.
+- Evaluación de despliegue edge: útil para medir latencia y consumo en hardware de gama baja antes de invertir en modelos mayores, dado su tamaño de 84,7 MB en Q4_K_M.
+- Referencia para auditoría de alucinaciones: la model card reporta cero fabricaciones en preguntas de hechos de empresa fuera del corpus, lo que lo convierte en un caso de estudio de política de "deferir antes que inventar".
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica que no existe un resultado THOX GATE49 publicado para este modelo. La única evaluación cualitativa reportada es que, en prompts fuera del corpus de entrenamiento, el modelo defirió en preguntas sobre hechos de la empresa con cero fabricaciones y sin filtración del corpus de entrenamiento, y que los comandos de dispositivo dentro del corpus se responden correctamente.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica que no hay resultado GATE49 publicado para este modelo y que la evaluación se limita a pruebas cualitativas sobre prompts fuera del corpus (delegación con cero fabricaciones y sin filtración del scrape de entrenamiento) y a comandos de dispositivo dentro del corpus (respuesta correcta).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en Q4_K_M (peso del archivo 84,6 MB más overhead de contexto y runtime); aproximadamente 0,5 GB en safetensors FP32/FP16 según el formato de carga.
-- GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en iGPU y CPU. No requiere A100 ni H100.
-- Cabe en GPU consumer: sí, en cualquier GPU con al menos 1 GB de memoria, e incluso en CPU.
-- Opciones de despliegue: Ollama (`ollama run hf.co/Thox-ai/ThoxMini-125M-role:Q4_K_M`), llama.cpp (`llama-cli`), y cualquier runtime compatible con GGUF. vLLM y TGI no están documentados para este modelo.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: inferior a 1 GB en Q4_K_M (pesos de 84,7 MB más overhead de contexto y runtime); en safetensors, aproximadamente 0,25 GB de pesos más overhead.
+- GPU recomendadas: cualquier GPU consumer moderna es sobrada; el modelo cabe en CPU. No se requieren A100, H100 ni RTX 4090.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 1-2 GB de VRAM, e incluso en CPU y dispositivos de borde.
+- Opciones de despliegue: Ollama (`ollama run hf.co/Thox-ai/ThoxMini-125M-role:Q4_K_M`), llama.cpp (`llama-cli`), y descarga directa del GGUF vía `hf download`. No se documenta soporte para vLLM o TGI.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
 |---|---|---|---|---|---|
-| ThoxMini-125M-role | 123,6 M | No disponible | Apache-2.0 | Hugging Face (safetensors + GGUF Q4_K_M) | Ajuste fino de rol de dispositivo, solo inglés |
-| Thox-ai/thox-micro-125m | 125 M (base) | No disponible | No disponible | Hugging Face | Modelo base del que deriva |
-| Alternativas de 125 M tipo GPT-2 small / distilgpt2 | ~117-125 M | 1.024 tokens (GPT-2) | MIT / Apache-2.0 según variante | Hugging Face | Modelos generalistas, no especializados en rol de dispositivo |
-| Modelos edge de 100-200 M (p. ej. TinyLlama no aplica por tamaño) | No disponible | No disponible | No disponible | No disponible | No se dispone de comparación directa documentada |
+| ThoxMini-125M-role | 123,5M | No disponible | Inglés | Apache-2.0 | Rol de dispositivo con delegación al host |
+| Thox-ai/thox-micro-125m (base) | 125M (según nombre) | No disponible | No disponible | No disponible | Modelo base del que deriva el ajuste |
+| SmolLM-135M (referencia de tamaño) | 135M | No disponible en esta ficha | Inglés principalmente | Apache-2.0 | Modelo pequeño de propósito general |
+| Qwen2.5-0.5B (referencia de tamaño) | 0,5B | No disponible en esta ficha | Multilingüe | Apache-2.0 | Modelo pequeño de propósito general |
 
-No se dispone de datos de benchmarks comparativos publicados para este modelo frente a alternativas de su categoría.
+La comparación con alternativas de propósito general es limitada: ThoxMini-125M-role no está diseñado para tareas abiertas de generación o razonamiento, sino para un rol acotado con política de abstención. En ese sentido, su comparación más directa es con su propio modelo base, del que se desconoce el comportamiento detallado. Los datos de benchmarks de los modelos alternativos no están disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Dos defectos conocidos documentados por el autor: la redacción específica del dispositivo es incorrecta en algunos puntos (dice "the key" donde debería decir "the mini"), y sobre-defiere en preguntas de identidad (preguntado quién es, defiere en lugar de nombrarse). Ninguno fabrica; ambos son huecos del corpus con una ruta de corrección registrada.
-- Modelo de 125 M: respuestas cortas y superficiales por diseño.
-- No cualificado todavía en el hardware del dispositivo ThoxMini; el soporte on-device está pendiente de una prueba registrada.
-- Solo soporta inglés; no hay capacidades multilingües.
-- Riesgo de alucinación: aunque la evaluación reporta cero fabricaciones en preguntas de hechos de empresa, un modelo de este tamaño tiene capacidad limitada de razonamiento y conocimiento general.
-- Restricciones de licencia: Apache-2.0 permite uso comercial, pero el modelo se publica como modelo de investigación y no está validado para producción.
-- Uso fuera de alcance: decisiones médicas, legales, financieras o de seguridad crítica sin revisión humana; control no supervisado de dispositivos físicos sin paso de confirmación.
-- Longitud de contexto no documentada, lo que impide planificar conversaciones multi-turno largas.
+- Dos defectos conocidos documentados por el autor: el modelo usa "the key" donde debería decir "the mini" en algunos textos específicos del dispositivo, y sobre-delega en preguntas de identidad (si se le pregunta quién es, delega en lugar de nombrarse). El autor indica que ninguno fabrica y que ambos son huecos del corpus con una ruta de corrección registrada.
+- Modelo de 125M: respuestas cortas y superficiales por diseño; no apto para razonamiento complejo, matemáticas, código o generación extensa.
+- No cualificado todavía sobre hardware ThoxMini real; la compatibilidad on-device está pendiente de una pasada de pruebas registrada.
+- Solo inglés; no hay soporte multilingüe documentado.
+- Riesgo de alucinación: aunque la model card reporta cero fabricaciones en las pruebas realizadas, un modelo de este tamaño puede producir respuestas incorrectas fuera de su dominio; la política de delegación mitiga pero no elimina el riesgo.
+- Uso fuera de ámbito explícitamente desaconsejado: decisiones médicas, legales, financieras o de seguridad crítica sin revisión humana, y control desatendido de dispositivos físicos sin paso de confirmación.
+- Licencia Apache-2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; el modelo se publica como modelo de investigación.
+- Longitud de contexto no documentada, lo que dificulta planificar integraciones con conversaciones largas.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Thox-ai/ThoxMini-125M-role
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxMini-125M-role
 - Modelo base: https://huggingface.co/Thox-ai/thox-micro-125m
-- Demo de dispositivos virtuales: https://thox.ai/#demo-callout-home_lineup
-- Campaña de Kickstarter: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
-- Sitio del autor: https://thox.ai
+- Ejecución con Ollama: `ollama run hf.co/Thox-ai/ThoxMini-125M-role:Q4_K_M`
+- Descarga directa del GGUF: `hf download Thox-ai/ThoxMini-125M-role ThoxMini-125M-role.Q4_K_M.gguf --local-dir ./ThoxMini-125M-role`
+- No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

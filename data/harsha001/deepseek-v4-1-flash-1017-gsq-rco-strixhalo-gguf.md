@@ -2,101 +2,105 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-GSQ-RCO-StrixHalo-GGUF es una cuantización comunitaria del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, preparada por el usuario Harsha001 para ejecutarse en un único equipo AMD Ryzen AI Max+ 395 (Strix Halo) con 128 GB de memoria unificada. El modelo original es un MoE de 657.884 millones de parámetros con 384 expertos enrutados por capa, que en cuantizaciones estándar ocupa unos 230 GB o más, por lo que no cabe en hardware de consumo. Esta versión resuelve ese problema combinando dos técnicas: poda de expertos mediante la métrica REAP (se conservan los 320 o 277 expertos más usados de cada capa) y cuantización de baja precisión GSQ-RCO de IST-DASLab en 1-2 bits para los expertos, con Q8_0 para atención, router y embeddings.
+DeepSeek-V4.1-Flash-1017-GSQ-RCO-StrixHalo-GGUF es una compilación cuantizada del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario Harsha001, cuyo objetivo es hacer viable la inferencia de un modelo Mixture-of-Experts (MoE) de 657.884.565.104 parámetros en una única máquina AMD Ryzen AI Max+ 395 (Strix Halo) con 128 GB de memoria unificada. Para ello se combinan dos técnicas: la poda de expertos por capa (se conservan entre 320 y 344 de los 384 expertos enrutados) y la cuantización de muy bajo bit (1,56 a 1,75 bits por peso en los expertos). El resultado es un artefacto de aproximadamente 97 GiB que debe residir en memoria de GPU, mientras que una tabla de búsqueda Engram de 110,6 GB permanece en SSD y se lee bajo demanda.
 
-El resultado son dos builds de unos 104 GB cada uno, de los cuales unos 97 GiB deben residir en memoria de GPU, mientras que una tabla "Engram" de 110,6 GB permanece en disco SSD y se lee bajo demanda. La pérdida de calidad es real (la perplejidad sube de 2,01 a 3,40 en la build recomendada), pero los tests de GSM8K muestran que el modelo podado mantiene la capacidad de razonamiento. Es una versión de prueba comunitaria, validada en CPU y en un NVIDIA GB10 con CUDA, pero aún no probada sobre el propio Strix Halo. Su licencia es MIT, lo que permite uso comercial sin restricciones.
+El modelo base es la variante DeepSeek-V4.1-Flash-1017, de arquitectura MoE, sobre la que se han aplicado ediciones de "abliteration" para eliminar los rechazos (uncensored). Concretamente, la build `IQ1_M-E320` deriva de la edición de AtomicChat y la nueva `IQ1_S_ROCMIQ-E344` de la edición de Infatoshi con el parche de pqhaz. La licencia declarada es MIT, lo que facilita el uso comercial, aunque conviene revisar las condiciones del modelo base original.
+
+La relevancia actual del artefacto es doble: por un lado, demuestra que es posible ejecutar un modelo de más de 650.000 millones de parámetros en hardware de consumo profesional con memoria unificada; por otro, introduce un formato de cuantización propio para AMD (ROCmIQ1_S) que, según las pruebas de kernel del autor, supera en velocidad a IQ1_S en todas las tallas de fila. No obstante, se trata de una release de prueba comunitaria: ninguna de las dos builds se ha ejecutado todavía en un Strix Halo real, solo en CPU y en una NVIDIA GB10 con CUDA.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (DeepSeek-V4.1-Flash-1017) con expertos enrutados podados |
-| Parametros totales | 657.884.565.104 (modelo base completo) |
+| Arquitectura | Mixture-of-Experts (MoE) transformer, 384 expertos enrutados por capa |
+| Parametros totales | 657.884.565.104 (dato de safetensors) |
 | Parametros activos | no disponible |
-| Longitud de contexto | 64K (objetivo de la build; no disponible el máximo del modelo base) |
-| Tipos de cuantizacion | GSQ-RCO IQ1_M (expertos, build IQ1_M-E320), GSQ-RCO IQ2_XXS (expertos, build IQ2_XXS-E277), Q8_0 (atención, router, experto compartido, embeddings), IQ4_NL (tabla Engram) |
+| Longitud de contexto | 64K (objetivo de diseño de la build) |
+| Tipos de cuantizacion | ROCmIQ1_S (1,56 bit) e IQ1_M GSQ-RCO (1,75 bit); el modelo base usa MXFP4 nativo |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | GGUF (4 shards por build: 3 de modelo + 1 de Engram) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base, DeepSeek-V4.1-Flash-1017, es un transformer de mezcla de expertos (MoE) con 384 expertos enrutados por capa, un experto compartido y un total de aproximadamente 658.000 millones de parámetros. En su formato nativo MXFP4 ocupa unos 510 GB. No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF/DPO en la model card.
+El modelo base es un transformer con arquitectura Mixture-of-Experts de 384 expertos enrutados por capa. El autor no documenta en la model card el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO; esos datos corresponden al modelo original DeepSeek-V4.1-Flash-1017 y no se reproducen aquí. Lo que sí se detalla es el proceso de compresión aplicado: poda de expertos por capa conservando los más relevantes según el peso de enrutamiento (344 de 384 en la build nueva, que cubren el 98,4% del peso de routing; 320 de 384 en la build antigua, con el 97,5%) y cuantización de los expertos conservados a 1,56-1,75 bits.
 
-Esta derivación aplica dos innovaciones de compresión. Primera, la poda de expertos: se calcula el score REAP (peso del router multiplicado por el tamaño de salida del experto, promediado sobre los tokens que llegan a cada experto) sobre 131.072 tokens de texto y código mezclados con el modelo nativo completo, y se conservan por capa los expertos mejor puntuados. La build IQ1_M-E320 conserva 320 de 384 expertos (97,5 % del peso de enrutamiento) y la IQ2_XXS-E277 conserva 277 (94,4 %); 47 expertos no se usaron ni una sola vez en la calibración. Segunda, la cuantización GSQ-RCO de IST-DASLab en 1-2 bits para los expertos conservados, copiada sin cambios del repositorio de ISTA-DASLab, mientras que atención, router, experto compartido y embeddings pasan a Q8_0. El router y su sesgo se recortan a los expertos mantenidos. Adicionalmente, una tabla "Engram" de 110,6 GB en IQ4_NL se mantiene en disco y se lee de forma perezosa (lazy), sin consumir memoria de GPU. El autor indica que está trabajando en formatos ROCmFPX propios de unos 2,1 bits por peso o menos que preserven más calidad.
+La innovación técnica más destacable es el formato ROCmIQ1_S, desarrollado específicamente para GPUs AMD. A diferencia de IQ1_S e IQ1_M, que dependen de grandes tablas de búsqueda (lookup grids) para decodificar, ROCmIQ1_S se decodifica sin esas tablas, lo que reduce la presión sobre memoria y acelera el kernel de matrices de expertos. En pruebas de kernel sobre una Radeon 8060S con Vulkan, el kernel de ROCmIQ1_S superó a IQ1_S en todas las tallas de fila, con una ventaja de aproximadamente el 11% en los tamaños que usa DeepSeek. Además, IQ1_M-E320 mezcla tensores IQ2, que son más lentos de decodificar. La tabla Engram, de 110,6 GB, se mantiene fuera de la GPU y se consulta bajo demanda desde SSD, de modo que solo unos 97 GiB deben caber en memoria gráfica.
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline text-generation, plantilla de chat embebida adaptada de la versión de Unsloth para V4.1).
-- Razonamiento matemático paso a paso, verificado empíricamente con GSM8K (98 % de acierto en las 200 primeras preguntas de test en ambas builds).
-- Comportamiento consistente entre backends: coincidencia del 98,0 % (IQ1_M) y 97,2 % (IQ2_XXS) en el token superior entre CUDA y CPU, con divergencia KL media de 0,004 y 0,006.
-- Ejecución en hardware de gama alta de consumo gracias a la poda de expertos y la cuantización extrema.
-- No hay información disponible sobre tool calling, function calling, agentes, capacidades de visión, audio ni modo de thinking en la model card.
+- Generación de texto conversacional y de formato largo, con un contexto objetivo de 64K tokens.
+- Razonamiento multi-paso y tareas de agente, heredado del modelo base DeepSeek-V4.1-Flash-1017.
+- Generación de código y matemáticas, aunque sin datos de benchmark publicados en la información disponible.
+- Variante "uncensored": se han eliminado los rechazos mediante edición de abliteration, de modo que el modelo no declina peticiones por contenido.
+- Soporte de tool calling y function calling: no confirmado explícitamente en la model card; debe verificarse en el runtime ROCmFPX.
+- Capacidades multilingües: no disponibles en la información proporcionada.
+- Modo de pensamiento (thinking), visión o audio: no disponibles.
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
 
 ## Casos de uso
 
-- Experimentación local con un MoE de gran escala en hardware unificado: un desarrollador con un Strix Halo de 128 GB puede cargar unos 97 GiB del modelo en GPU y explorar el comportamiento de un modelo de ~658 B de parámetros sin alquilar GPU de datacenter.
-- Resolución de problemas matemáticos y razonamiento paso a paso: los tests de GSM8K con decodificación greedy y hasta 6.144 tokens de salida confirman que las builds podadas siguen razonando correctamente.
-- Prototipado de pipelines con llama.cpp personalizado: el fork ROCmFPX incluye soporte para DeepSeek-V4.1 y ajustes Vulkan para Strix Halo, útil para quien desarrolle sobre runtimes GGUF.
-- Investigación en cuantización extrema y poda de expertos: los listados de expertos conservados están publicados en la carpeta `keep/`, lo que permite reproducir o comparar métodos como REAP y GSQ-RCO.
-- Inferencia con contexto de 64K sobre documentos largos: la ventana objetivo de la build permite trabajar con textos extensos, aunque la velocidad de generación medida (~12,6 t/s como cota inferior) exige paciencia.
-- Validación de backends heterogéneos: la comparación CUDA frente a CPU con métricas KL hace del modelo un buen banco de pruebas para verificar la corrección numérica de nuevos runtimes (Vulkan, ROCm) frente a referencias conocidas.
+- Inferencia local de un MoE de gran escala en una estación de trabajo con Strix Halo: el modelo está diseñado para que unos 97 GiB residan en memoria unificada de 128 GB, lo que permite ejecutar un modelo de 657.000 millones de parámetros sin clúster multi-GPU.
+- Investigación sobre cuantización extrema: sirve como banco de pruebas para evaluar el impacto de la poda de expertos y de formatos de 1-2 bits en la calidad (KL divergence, perplejidad) frente al modelo completo.
+- Desarrollo y evaluación de formatos ROCmIQ: el artefacto incluye el nuevo tipo ROCmIQ1_S y permite medir su rendimiento real en GPUs AMD frente a IQ1_S e IQ1_M.
+- Prototipado de asistentes sin restricciones de contenido: la edición uncensored es adecuada para entornos de investigación donde se necesita estudiar el comportamiento del modelo sin rechazos, siempre con las salvaguardas externas oportunas.
+- Experimentación con contextos largos (hasta 64K) en hardware de consumo: útil para resumen de documentos extensos, análisis de repositorios de código o conversaciones multi-turno largas.
+- Benchmarking de runtimes de inferencia: el autor pide a la comunidad que reporte `llama-bench pp512 / tg128` en Strix Halo, por lo que el modelo es un caso de prueba para comparar ROCmFPX, llama.cpp y otras implementaciones en AMD.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor de la model card (metodología: llama-server con plantilla de chat embebida, decodificación greedy, hasta 6.144 tokens de salida, 4 peticiones en paralelo; GSM8K sobre las 200 primeras preguntas de test; perplejidad sobre 8 fragmentos de 2.048 tokens de Wikipedia inglesa y código, en CPU):
+El autor publica métricas de calidad frente al modelo completo (Infatoshi, MXFP4 nativo), medidas con wikitext-2 (primeros 300.000 caracteres, 8 fragmentos de 2048 tokens, KL divergence de vocabulario completo):
 
-| Build | Expertos conservados | Perplejidad | GSM8K (200 preguntas) | Respuestas cortadas | Velocidad de prompt (pp512, GB10) | Velocidad de generación (tg128) |
-|---|---|---|---|---|---|---|
-| IQ1_M-E320 (recomendada) | 320 de 384 | 3,40 | 196/200 (98,0 %) | 0 | 162 t/s | ~12,6 t/s (cota inferior) |
-| IQ2_XXS-E277 | 277 de 384 | 3,59 | 196/200 (98,0 %) | 2 | 153 t/s | ~12,6 t/s (cota inferior) |
-| Modelo completo (referencia) | 384 | 2,01 | no disponible | - | - | - |
+| Build | KL divergence | Mismo token top | Perplejidad | Perplejidad vs modelo completo |
+|---|---|---|---|---|
+| IQ1_S_ROCMIQ-E344 | 0,629 ± 0,013 | 77,7% | 3,39 | ×1,69 |
+| IQ1_M-E320 | 0,635 ± 0,015 | 77,6% | 3,42 | ×1,70 |
+| Modelo completo (Infatoshi, MXFP4) | - | - | 2,01 | - |
 
-Notas del autor: no existe puntuación del modelo completo con la misma configuración para comparar; GSM8K es una tarea fácil para un modelo de este tamaño, por lo que los resultados demuestran que la poda conserva el razonamiento, no que iguale al modelo completo en tareas más difíciles. Las pruebas se realizaron en un NVIDIA DGX Spark (GB10, CUDA), no en Strix Halo; la velocidad de generación se midió con otros procesos de CPU en marcha, de modo que debe tratarse como límite inferior.
+El autor señala que la diferencia entre ambas builds está dentro del margen de error y que IQ1_M-E320 parte de una edición uncensored distinta (la de AtomicChat), lo que por sí solo la aleja unas 0,01 unidades de la referencia. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- Memoria de GPU necesaria: unos 97 GiB (104,2-104,5 GB) para el modelo; la tabla Engram de 110,6 GB reside en SSD y se lee bajo demanda. Descarga total de una build: unos 215 GB en disco.
-- Hardware objetivo: AMD Ryzen AI Max+ 395 (Strix Halo) con 128 GB de memoria unificada. Validado además en CPU y en NVIDIA DGX Spark (GB10) con CUDA.
-- Estado en Strix Halo: la model card indica que aún no se ha ejecutado sobre Strix Halo; los números de rendimiento publicados provienen del GB10.
-- No cabe en GPU de consumo convencionales (una RTX 4090 con 24 GB está muy lejos de los 97 GiB requeridos); requiere memoria unificada de 128 GB o GPU de datacenter con memoria suficiente.
-- Runtime: es necesario el fork ROCmFPX de llama.cpp (https://github.com/HarshaVardhan3002/ROCmFPX), compilado con Vulkan (`-DGGML_VULKAN=ON`), ya que el llama.cpp oficial aún no soporta DeepSeek-V4.1. No hay mención de soporte en vLLM, TGI u Ollama.
-- Latencia y throughput: 153-162 t/s de velocidad de prompt (pp512) y ~12,6 t/s de generación (tg128, cota inferior) en GB10; no hay cifras para Strix Halo.
+- VRAM estimada: unos 97 GiB (104,1 GB en la build ROCmIQ1_S, 104,5 GB en IQ1_M) para la parte del modelo; la tabla Engram de 110,6 GB permanece en SSD y no consume VRAM.
+- Hardware objetivo: una única AMD Ryzen AI Max+ 395 (Strix Halo) con 128 GB de memoria unificada.
+- GPU recomendadas: Strix Halo (objetivo principal); el autor ha validado IQ1_M-E320 en una NVIDIA GB10 con CUDA. No se documenta compatibilidad con A100, H100 ni RTX 4090, y por tamaño no cabría en GPUs de consumo con 24 GB.
+- Cabe en GPU de consumo: no en el sentido habitual; requiere memoria unificada de 128 GB o un sistema con suficiente VRAM agregada.
+- Despliegue: runtime ROCmFPX (fork de llama.cpp). La build ROCmIQ1_S exige el commit `bb36a5fdb` o posterior; IQ1_M funciona con cualquier build de ROCmFPX que soporte DeepSeek-V4.1.
+- Latencia y throughput: no disponibles; el autor solicita a la comunidad que reporte `llama-bench pp512 / tg128` en Strix Halo, ya que no se ha ejecutado en ese hardware.
+- Almacenamiento: cada build ocupa unos 215 GB en disco (4 shards); el repositorio completo, con ambas builds y Engram, suma 742,7 GB.
 
 ## Comparativa con modelos similares
 
-Comparativa entre las dos builds publicadas y el modelo base completo:
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Este artefacto (IQ1_S_ROCMIQ-E344) | 657.884.565.104 (MoE, 344/384 expertos) | 64K (objetivo) | ROCmIQ1_S 1,56 bit | MIT | Hugging Face, runtime ROCmFPX |
+| IQ1_M-E320 (misma familia) | 657.884.565.104 (MoE, 320/384 expertos) | 64K (objetivo) | IQ1_M 1,75 bit | MIT | Hugging Face, ROCmFPX |
+| DeepSeek-V4.1-Flash-1017 (base) | 657.884.565.104 (MoE, 384/384 expertos) | no disponible | MXFP4 nativo | no disponible | Hugging Face (deepseek-ai) |
+| ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF | 657.884.565.104 (MoE) | no disponible | GSQ-RCO | no disponible | Hugging Face |
 
-| Caracteristica | IQ1_M-E320 | IQ2_XXS-E277 | Modelo completo (MXFP4) |
-|---|---|---|---|
-| Expertos por capa | 320 de 384 | 277 de 384 | 384 |
-| Cuantizacion de expertos | GSQ-RCO IQ1_M | GSQ-RCO IQ2_XXS | MXFP4 nativo |
-| Memoria de GPU | 104,5 GB (97,3 GiB) | 104,2 GB (97,1 GiB) | 510 GB |
-| Perplejidad | 3,40 | 3,59 | 2,01 |
-| GSM8K (200 preguntas) | 98,0 % | 98,0 % | no disponible |
-| Licencia | MIT | MIT | no disponible |
-
-Alternativas externas comparables de la misma categoría (MoE gigante comprimido para hardware local) no están disponibles en la información proporcionada.
+No se dispone de datos de benchmarks comparativos con modelos de otras familias en la información proporcionada; la comparación se limita a las variantes de la misma familia DeepSeek-V4.1-Flash-1017.
 
 ## Limitaciones y advertencias
 
-- Pérdida de calidad medible: la perplejidad sube de 2,01 (modelo completo) a 3,40 o 3,59 según la build; el autor lo califica explícitamente como primera iteración con coste de calidad asumido.
-- Sin validación en el hardware objetivo: aunque probado en CPU y GB10 con CUDA, el modelo no se ha ejecutado todavía en un Strix Halo real; velocidad y consumo de memoria pueden diferir.
-- Velocidad de generación baja: ~12,6 t/s medidos como cota inferior (con otros procesos de CPU activos en la máquina de test).
-- Compatibilidad de runtime: el llama.cpp oficial no soporta DeepSeek-V4.1; es obligatorio usar el fork ROCmFPX, lo que añade dependencia de un proyecto comunitario.
-- Descarga voluminosa: unos 215 GB por build (más la Engram de 110,6 GB incluida en ella); el tamaño total mostrado por Hugging Face (319,3 GB) suma ambas builds y puede confundir las comprobaciones de hardware.
-- Sesgos conocidos: no disponible en la model card; al heredar el modelo base de DeepSeek, deben asumirse los sesgos típicos de LLM entrenados a gran escala.
-- Riesgo de alucinación: no disponible en la model card; propio de cualquier LLM generativo.
-- Idiomas: no disponible; los tests de calidad se hicieron con texto en inglés y código, por lo que el rendimiento en castellano no está verificado.
-- Licencia MIT: permite uso comercial sin restricciones conocidas, aunque los términos del modelo base de DeepSeek podrían aplicar aguas arriba (no disponible en la model card).
-- La puntuación de GSM8K solo acredita razonamiento básico; el comportamiento en tareas difíciles respecto al modelo completo no está evaluado.
+- Estado de prueba comunitaria: ninguna de las dos builds se ha ejecutado en un Strix Halo real; solo se han validado en CPU y, la IQ1_M-E320, en una NVIDIA GB10 con CUDA. El rendimiento y la calidad en el hardware objetivo son desconocidos.
+- La build ROCmIQ1_S requiere un runtime muy concreto (ROCmFPX commit `bb36a5fdb` o posterior); versiones anteriores no reconocen los tipos ROCmIQ o ignoran las escalas de expertos y producen salidas incorrectas.
+- La perplejidad es aproximadamente 1,69-1,70 veces la del modelo completo (3,39-3,42 frente a 2,01), lo que implica una degradación de calidad medible.
+- La poda de expertos descarta entre el 1,6% y el 2,5% del peso de enrutamiento por capa, lo que puede afectar de forma desigual a dominios especializados.
+- La edición uncensored elimina los rechazos del modelo; en producción exige salvaguardas externas y revisión de contenido.
+- La licencia declarada es MIT, pero el modelo base y las ediciones intermedias pueden tener condiciones adicionales; conviene verificar la licencia de deepseek-ai/DeepSeek-V4.1-Flash-1017 antes de uso comercial.
+- Riesgo de alucinación inherente al modelo base; no se documentan evaluaciones específicas de sesgos.
+- Idiomas soportados no documentados en la model card.
+- El tamaño del repositorio (742,7 GB) y de cada build (unos 215 GB) exigen almacenamiento considerable; la tabla Engram debe permanecer accesible en SSD.
 
 ## Enlaces
 
-- Ficha del modelo: https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-GSQ-RCO-StrixHalo-GGUF
-- Modelo base de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
-- Cuantización GSQ-RCO de IST-DASLab: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
-- Fork ROCmFPX (runtime requerido): https://github.com/HarshaVardhan3002/ROCmFPX
+- Modelo en Hugging Face: https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-StrixHalo-GGUF
+- Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
+- Edición uncensored de Infatoshi: https://huggingface.co/Infatoshi/DeepSeek-V4.1-Flash-1017-MXFP4-uncensored
+- Edición heretic de pqhaz: https://huggingface.co/pqhaz/DeepSeek-V4.1-Flash-1017-heretic
+- GSQ-RCO GGUF de ISTA-DASLab: https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
+- Edición uncensored de AtomicChat: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF
 - Página del proyecto ROCmFPX: https://harshavardhan3002.github.io/ROCmFPX/
-- Paper referenciado (arXiv): https://arxiv.org/abs/2604.18556
-- Paper referenciado (arXiv): https://arxiv.org/abs/2605.00649
+- Discusión comunitaria (reporte de pruebas): https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-StrixHalo-GGUF/discussions
+- Paper referenciado arXiv:2604.18556: https://arxiv.org/abs/2604.18556
+- Paper referenciado arXiv:2605.00649: https://arxiv.org/abs/2605.00649

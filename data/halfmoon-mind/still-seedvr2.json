@@ -44,11 +44,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "zsxkib/seedvr2 | Run with an API on Replicate",
-      "url": "https://replicate.com/zsxkib/seedvr2",
-      "snippet": "Run zsxkib/seedvr2 using Replicate’s API. Check out the model's schema for an overview of inputs and outputs."
-    }
-  ]
+  "sources": []
 }

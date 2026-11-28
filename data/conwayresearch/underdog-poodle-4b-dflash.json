@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "LoyalAI/Underdog-Poodle-4B-DFlash",
+  "renamed_at": "2026-11-28T02:59:50.188Z",
   "benchmarks": [],
   "sources": []
 }

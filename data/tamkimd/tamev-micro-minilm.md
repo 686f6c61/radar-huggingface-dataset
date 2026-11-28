@@ -2,112 +2,102 @@
 
 ## Resumen
 
-TAMEV-Micro-MiniLM es un modelo de clasificación de texto desarrollado por Tamkimd, publicado bajo licencia Apache 2.0 y orientado a lo que el autor denomina "System One Decision Intelligence": un motor de decisión rápido, determinista y con probabilidades calibradas que actúa como alternativa a los LLM generativos en tareas de enrutamiento, selección categórica y puntuación. Frente a un LLM autorregresivo (descrito por el autor como "System Two", con latencias de 500-2000 ms por llamada), este modelo se presenta como una pieza de inferencia ligera, offline y de bajísima latencia, pensada para ejecutarse en CPU, dispositivos móviles y hardware de borde.
+TAMEV-Micro-MiniLM es un modelo de decisión de tipo "System One" desarrollado por Tamkimd. A diferencia de un LLM generativo, no produce texto: recibe un estado (state), una pregunta y una lista de opciones candidatas, y devuelve una distribución de probabilidad calibrada sobre esas opciones en un único forward pass. Resuelve el problema del enrutamiento y la selección de opciones en sistemas con LLM: elegir herramienta, cola de atención, intención o nivel de una rúbrica sin invocar un modelo grande.
 
-El modelo se construye sobre el backbone `sentence-transformers/all-MiniLM-L6-v2` (arquitectura encoder, 22.762.368 parámetros activos) al que se añade una cabeza de decisión con doble codificación desacoplada y un cabezal bilineal simétrico. Su rasgo técnico distintivo es la invarianza exacta a permutaciones: el orden de las opciones candidatas no altera la decisión, eliminando el sesgo de recencia típico de los modelos autorregresivos. Empaquetado en FP32 ocupa 86,8 MB y en INT8 apenas 21,7 MB, con exportaciones a safetensors, ONNX, CoreML y MLX.
+El modelo se construye por fine-tuning de `sentence-transformers/all-MiniLM-L6-v2` y expone tres tipos de decisión con la misma llamada: `choice` (una entre K), `noul` (sí/no) y `score` (ordinal sobre una rúbrica). Su punto fuerte es la eficiencia y la calibración: 22.762.369 parámetros, latencia mediana de 7,29 ms en un solo hilo de CPU y un ECE de 0,0224. Es relevante porque permite sacar del bucle del LLM tareas de clasificación y gating que consumen tokens y añaden latencia, y hacerlo en entornos edge u offline.
 
-Es relevante en el contexto de los sistemas de agentes y pipelines de enrutamiento, donde se necesita un componente barato y calibrado que decida entre un conjunto de acciones o "queues" antes de invocar un LLM caro. Sus métricas declaradas (66,52% Top-1, 90,85% Top-3, ECE 0,0499 y latencia mediana de 8,12 ms) están sin verificar de forma independiente y se miden sobre un benchmark propietario del propio autor, por lo que deben tomarse como resultados autoinformados.
+La arquitectura es un transformer encoder compacto con una cabeza de puntero sobre las opciones, invariante a la permutación de estas (drift bit-exacto de 0,0). Se distribuye con pesos safetensors, ONNX (incluida variante int8), TorchScript y soporte MLX/MPS para Apple Silicon, bajo licencia Apache 2.0.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer (backbone all-MiniLM-L6-v2) con cabeza de decisión bilineal simétrica |
-| Parámetros totales | 22.762.368 (22,76 M) |
-| Parámetros activos | No aplica (no es MoE); 22,76 M activos |
-| Longitud de contexto | No disponible (el autor menciona escalado lineal O(K) sobre el número de candidatos K, no una longitud de contexto tokenizada) |
-| Tipos de cuantización | FP32 (86,8 MB) e INT8 (21,7 MB); exportaciones ONNX, CoreML y MLX |
-| Idiomas soportados | Inglés (en) y multilingüe |
+| Arquitectura | Transformer encoder (MiniLM) con cabeza de puntero sobre opciones; decisión tipada |
+| Parámetros totales | 22.762.369 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | ONNX int8 (además de pesos completos safetensors, ONNX y TorchScript) |
+| Idiomas soportados | Inglés (entrenamiento); etiqueta multilingual en metadatos |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (también ONNX, CoreML, MLX); requiere `trust_remote_code=True` |
-| Temperatura calibrada | 1,06 |
-| Librería | transformers |
-| Pipeline | text-classification |
-| Tamaño del repositorio | 0,1 GB |
+| Formato de pesos | safetensors, ONNX, ONNX int8, TorchScript, MLX |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder de tipo transformer basado en `sentence-transformers/all-MiniLM-L6-v2`, una red de 6 capas y dimensión oculta 384 (aproximadamente 22,7 M de parámetros), a la que se superpone una cabeza de decisión específica. El autor describe un esquema de "codificación dual desacoplada" con un cabezal bilineal simétrico mediante el cual la puntuación de cada candidato se calcula como el producto interno entre una proyección de la consulta (query) y una proyección de la opción, normalizado: Score(c, o_i) = (W_q·c)^T (W_k·o_i) / √d. Esta formulación garantiza equivarianza exacta a permutaciones, es decir, el resultado no cambia si se reordena la lista de opciones (deriva de permutación declarada de 0,00000000 y tasa de cambio de decisión del 0,00%).
+El modelo parte de `all-MiniLM-L6-v2` y añade una cabeza de puntero que puntúa cada opción candidata dada en la llamada, de modo que la lista de clases no está fijada en los pesos. Esto lo hace invariante a la permutación de opciones: el autor reporta 0,0 de drift (bit-exacto) sobre 159.992 pares de permutación y 0 flips. Soporta tres modos tipados (`choice`, `noul`, `score`) en una sola pasada.
 
-El modelo está diseñado para evaluar espacios de acciones de cardinalidad alta mediante un presupuesto de tokens dedicado y escalado lineal O(K), de modo que puede puntuar 77 o más candidatos sin truncamiento de secuencia ni el coste cuadrático de la atención sobre concatenaciones largas. La model card menciona una temperatura de calibración de 1,06, aplicada para que las probabilidades de salida sean fiables (ECE bajo). En cuanto a los datos, la model card lista diez conjuntos de evaluación/entrenamiento: banking77, boolq, ag_news, multi_nli, sst5, yelp_review_full, trec, dbpedia_14, amazon_reviews_multi_en e imdb. No se especifica el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo fases de RLHF o DPO; al tratarse de un modelo encoder de decisión y no de un modelo generativo, el ajuste por preferencias humanas no resulta aplicable de la forma habitual.
+El fine-tuning emplea un conjunto de datos compuesto por diez datasets públicos de clasificación e inferencia: Banking77, BoolQ, AG News, MultiNLI, SST-5, Yelp Review Full, TREC, DBpedia 14, Amazon Reviews Multi (en) e IMDB. La calibración se trata explícitamente: el autor menciona temperature scaling y reporta ECE y Brier score, con comprobaciones de fuga por coincidencia exacta nulas frente a los splits de entrenamiento, validación y calibración.
 
 ## Capacidades
 
-- Clasificación de texto y selección categórica: evalúa una consulta (state) frente a un conjunto de opciones y devuelve la mejor candidata, con modos `choice` (selección categórica), `noul` (confianza booleana probabilística) y `score` (escalado ordinal tipo rúbrica).
-- Probabilidades calibradas: las puntuaciones de confianza están calibradas (ECE declarado de 0,0499) para usarse como umbrales de riesgo en decisiones automatizadas.
-- Invarianza a permutaciones: la decisión no depende del orden de presentación de las opciones.
-- Enrutamiento de LLM y de agentes (llm-router, agent-routing): pensado como componente de decisión previo a la invocación de modelos generativos o de herramientas.
-- Escalado a espacios de acciones grandes: soporta K = 77 o más candidatos con coste lineal O(K).
-- Multilingüe: declarado soporte de inglés y multilingüe, aunque la mayor parte de los datasets citados son en inglés.
-- Capacidades de clasificación de texto genéricas: análisis de sentimiento, clasificación de temas, inferencia de lenguaje natural y clasificación de intenciones (según los datasets citados).
-- No incluye generación de texto, razonamiento autoregresivo, visión, audio ni tool calling generativo; su función es decidir, no generar.
+- Selección de opción única entre K candidatas (`choice`) con probabilidades calibradas que suman 1.
+- Respuesta binaria sí/no (`noul`).
+- Puntuación ordinal sobre rúbricas (`score`), por ejemplo niveles de urgencia.
+- Enrutamiento de intenciones y de llamadas a herramientas (tool-call gating).
+- Gating de seguridad y guardrails mediante clasificación con umbral de confianza.
+- Invariante a la permutación de opciones (resultado independiente del orden).
+- Inferencia en CPU, Apple Silicon (MPS/MLX) y edge/móvil vía ONNX.
+- No genera texto libre ni razona de forma multi-paso; es un clasificador de decisión.
 
 ## Casos de uso
 
-- Enrutamiento de incidencias en atención al cliente: dado el texto de una queja o consulta, el modelo selecciona la cola o el departamento correcto (por ejemplo, `verify_travel_unblock` frente a `file_fraud_dispute`) entre decenas de opciones, con latencia de milisegundos y probabilidad calibrada para decidir si se escala a un humano.
-- Pre-enrutado de LLM (LLM router): en una arquitectura con varios modelos generativos, TAMEV-Micro-MiniLM decide primero qué modelo o herramienta invocar, reduciendo el coste por token al evitar llamadas a LLM caros para decisiones triviales.
-- Selección de herramientas en agentes: como paso previo al tool calling, el modelo elige la herramienta adecuada entre un catálogo amplio (K ≥ 77) sin sufrir sesgo de orden en la lista de herramientas disponibles.
-- Clasificación de intenciones en asistentes conversacionales: asignar la intención del usuario sobre un conjunto cerrado de acciones, útil para sistemas de diálogo y bots con SLA de tiempo real.
-- Moderación y triaje de contenido: clasificación de reseñas, tickets o mensajes en categorías predefinidas (sentimiento, tema, toxicidad aproximada) sobre datasets como yelp_review_full, imdb o sst5.
-- Despliegue en borde y dispositivos móviles: al ocupar 21,7 MB en INT8 y requerir hardware mínimo, puede ejecutarse offline en teléfonos (CoreML/ANE), Apple Silicon (MLX) o robots, sin dependencia de la nube ni coste de API.
-- Filtrado de candidatos previo a validación: con una Top-3 del 90,85%, el modelo actúa como primera etapa que reduce candidatos para una etapa posterior más costosa.
-- Automatización industrial y robótica: decisiones rápidas y deterministas en bucles de control donde una latencia de 8,12 ms y una p95 de 31,79 ms son aceptables.
+- Enrutamiento de incidencias en atención al cliente: dado el texto del cliente y una lista de colas o playbooks, devuelve la cola adecuada con confianza calibrada, como en el ejemplo de la model card (bloqueo de tarjeta en el extranjero).
+- Gating de llamadas a herramientas en agentes: decidir si se debe invocar una herramienta y cuál, antes de gastar tokens en un LLM grande; la latencia de 7,29 ms permite hacerlo en cada turno.
+- Clasificación de intenciones en asistentes conversacionales: sustituir un clasificador entrenado a medida por un modelo que recibe el catálogo de intenciones en tiempo de llamada, sin reentrenar al añadir clases.
+- Guardrails y moderación: decidir si una petición cae en una categoría de riesgo mediante `noul` o `choice` con umbral sobre la probabilidad calibrada.
+- Triaje y priorización: asignar un nivel ordinal (`score`) a tickets o alertas según una rúbrica de urgencia.
+- Inferencia offline en edge o móvil: despliegue con ONNX int8 en dispositivos sin GPU para clasificación local de bajo consumo.
+- Evaluación automática con rúbricas: puntuar respuestas o candidatos contra criterios ordinales de forma determinista y barata.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en la model card (model-index), medidos sobre el benchmark propietario "TAMEV Multi-Domain Benchmark Suite". Están marcados como no verificados (`verified: false`).
+Resultados declarados por el autor (no verificados de forma independiente) sobre el conjunto held-out TAMEV (n=19.999, ítems balanceados):
 
-| Métrica | Resultado | Notas |
-|---|---|---|
-| Top-1 accuracy | 66,52% | Tarea "System One Decision Intelligence" |
-| Top-3 accuracy | 90,85% | Filtrado fiable de candidatos |
-| Brier score | 0,4244 | Puntuación de calibración propia (strictly proper) |
-| ECE (error de calibración esperado) | 0,0499 | Umbral de riesgo para tool calling |
-| Deriva de permutación | 0,00000000 | Tasa de cambio de decisión del 0,00% |
-| Latencia mediana (p50) | 8,12 ms | Sobre hardware de consumo |
-| Latencia percentil 95 (p95) | 31,79 ms | Garantía de SLA en tiempo real |
-| Throughput (un solo hilo) | 98,3 req/s | Concurrencia en un único hilo |
-
-El autor compara estos valores con una etiqueta genérica ("SOTA para router System One de clase Micro") y cita modelos competidores denominados TypeSafe Jev, Kev (de Jared Palmer), Laya y SemIf, pero no se aportan cifras de benchmark de esos modelos en la información disponible. No se publican resultados de benchmarks estándar de la industria (MMLU, HumanEval, GSM8K u otros) para este modelo.
+| Métrica | Valor |
+|---|---|
+| Top-1 accuracy | 0,8223 (IC 95 %: 0,8172–0,8277) |
+| Top-3 accuracy | 0,9851 |
+| Expected Calibration Error (ECE) | 0,0224 (IC 95 %: 0,0182–0,0269) |
+| Brier score | 0,2405 |
+| NLL | 0,4366 |
+| Latencia mediana (p50) | 7,29 ms (un hilo de CPU) |
+| Latencia p95 | 13,07 ms |
+| Throughput | 127 llamadas/s |
+| Drift por permutación de opciones | 0,0 (bit-exacto; 159.992 pares, 0 flips) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 100 MB en INT8 (21,7 MB de artefacto) y alrededor de 90 MB en FP32 (86,8 MB de pesos); cabe holgadamente en cualquier GPU.
-- GPU recomendadas: no requiere GPU dedicada. Puede ejecutarse en CPU de consumo, Apple Silicon (Neuron Engine/ANE mediante CoreML y MLX) y hardware móvil. GPUs tipo RTX 4090, A100 o H100 no son necesarias y quedarían sobredimensionadas.
-- Cabe en GPU de consumo: sí, en cualquier GPU de consumo e incluso sin GPU; el objetivo declarado de hardware es CPU de borde, ANE móvil, Apple Silicon y robots.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True`, exportación e inferencia en ONNX, CoreML y MLX; el repositorio está marcado como compatible con endpoints.
-- Latencia y throughput: latencia mediana de 8,12 ms y p95 de 31,79 ms; 98,3 solicitudes por segundo en un solo hilo (datos autoinformados sobre hardware de consumo no especificado).
+- VRAM: no requiere GPU; con 22,7 M de parámetros los pesos completos ocupan del orden de decenas de MB, y la variante ONNX int8 reduce aún más el footprint.
+- CPU: inferencia viable en un solo hilo con 7,29 ms p50; no necesita acelerador.
+- GPU recomendadas: no necesarias; cualquier GPU (RTX 4090, A100, H100) serviría pero queda sobredimensionada para este modelo.
+- Consumer GPU: cabe en cualquier GPU de consumo e incluso en CPU y móvil.
+- Despliegue: transformers (`trust_remote_code=True`), ONNX Runtime (incluido int8), TorchScript, MLX/MPS en Apple Silicon; el paquete `tamev` se instala desde el repositorio (no está en PyPI).
+- Latencia y throughput: 7,29 ms p50 y 127 llamadas/s por hilo de CPU según el autor.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmark de los modelos competidores citados por el autor (TypeSafe Jev, Kev, Laya, SemIf), por lo que la comparación cuantitativa no está disponible. Como referencia de la misma categoría de tamaño y tarea se incluye el backbone del que deriva.
+| Modelo | Parámetros | Contexto | Enfoque | Licencia |
+|---|---|---|---|---|
+| TAMEV-Micro-MiniLM | 22,7 M | No disponible | Decisión tipada sobre opciones, calibrada | Apache 2.0 |
+| all-MiniLM-L6-v2 (base) | ~22,7 M | 256 tokens (típico) | Embeddings de frases | Apache 2.0 |
+| Clasificadores SetFit/Banking77 | Variable | Variable | Clases fijas en pesos | Variable |
+| LLM router generativo (p. ej. un LLM pequeño) | Miles de millones | Largo | Generación de texto | Variable |
 
-| Modelo | Parámetros | Contexto | Top-1 declarado | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| TAMEV-Micro-MiniLM | 22,76 M | No disponible (escalado O(K) sobre candidatos) | 66,52% (benchmark propietario) | Apache 2.0 | Hugging Face |
-| all-MiniLM-L6-v2 (backbone) | ~22,7 M | 512 tokens (SentenceTransformers) | No disponible | Apache 2.0 | Hugging Face |
-| TypeSafe Jev / Kev / Laya / SemIf | No disponible | No disponible | No disponible | No disponible | Citados en la model card, sin datos accesibles |
-
-La comparación directa con alternativas de la misma categoría (routers de decisión "System One") no es posible con la información disponible, ya que los modelos citados no presentan métricas públicas verificables en las fuentes consultadas.
+La diferencia clave frente a un clasificador clásico es que las opciones se pasan en la llamada y no están fijadas en los pesos; frente a un LLM pequeño, la ventaja es latencia y calibración a costa de no generar texto ni razonar. No se dispone de comparativas de rendimiento publicadas frente a alternativas concretas.
 
 ## Limitaciones y advertencias
 
-- Resultados no verificados: todas las métricas del model-index están marcadas como `verified: false` y proceden de un benchmark propietario del propio autor ("TAMEV Multi-Domain Benchmark Suite"), no reproducible de forma independiente.
-- Precisión modesta: una Top-1 del 66,52% implica que aproximadamente un tercio de las decisiones son incorrectas en primera opción; conviene usarlo con Top-3 o combinado con validación posterior.
-- No es un modelo generativo: no produce texto libre, no hace razonamiento multi-paso ni tool calling generativo; su función es clasificar y decidir.
-- Sesgos: al entrenarse sobre datasets mayoritariamente en inglés (yelp, imdb, ag_news, trec, boolq, sst5, multi_nli), puede presentar sesgos de dominio y de idioma; el soporte multilingüe está declarado pero no está respaldado por datasets multilingües en la información disponible.
-- Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de sobrerrespuesta o confianza mal calibrada fuera de la distribución de entrenamiento; el ECE declarado (0,0499) corresponde a su propio benchmark y podría no mantenerse en otros dominios.
-- Idiomas: aunque se declara "multilingüe", el grueso de los datos citados es en inglés; el rendimiento en castellano no está documentado.
-- Licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y las atribuciones; conviene verificar la licencia del backbone (all-MiniLM-L6-v2, Apache 2.0).
-- Código remoto: requiere `trust_remote_code=True`, lo que implica ejecutar código definido por el autor; debe auditarse antes de usarlo en producción.
-- Model card incompleta: el README proporcionado está truncado y las referencias a modelos competidores (TypeSafe Jev, Kev, Laya, SemIf) no aportan datos verificables; las afirmaciones de superioridad ("SOTA") no están respaldadas por terceros.
-- Adopción mínima: 0 descargas y 0 "likes" en Hugging Face en el momento de la ficha, lo que reduce la validación por parte de la comunidad.
+- Solo decide entre opciones dadas; no genera texto ni ejecuta razonamiento multi-paso.
+- Entrenado principalmente en inglés; el soporte multilingüe no está validado y puede degradarse fuera del inglés.
+- Los benchmarks son declarados por el autor y no están verificados de forma independiente (`verified: false`).
+- Riesgo de error en el 17,8 % de los casos top-1; usar la confianza calibrada y umbrales para derivar a un LLM o a revisión humana.
+- Requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio del autor.
+- El paquete `tamev` no está en PyPI; hay que instalarlo desde el repositorio.
+- Licencia Apache 2.0 permite uso comercial, pero conviene revisar los términos de los datasets de entrenamiento subyacentes.
+- La longitud de contexto no está documentada; opciones o estados muy largos pueden truncarse.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Tamkimd/tamev-micro-minilm
-- Backbone de referencia (all-MiniLM-L6-v2): https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
-- Repositorio GitHub del proyecto TAMEV: https://github.com/tamkimd/tamev
-- Sitio del autor Tamkimd: http://tamkimd.com/
-- Perfil GitHub del autor: https://github.com/tamkimd/
-- Repositorio auxiliar del autor (FlexiAIAgent): https://github.com/tamkimd/
+- Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+- Licencia: https://huggingface.co/Tamkimd/tamev-micro-minilm/resolve/main/LICENSE
+- Datasets de entrenamiento: https://huggingface.co/datasets/legacy-datasets/banking77, https://huggingface.co/datasets/google/boolq, https://huggingface.co/datasets/fancyzhx/ag_news, https://huggingface.co/datasets/nyu-mll/multi_nli, https://huggingface.co/datasets/SetFit/sst5, https://huggingface.co/datasets/Yelp/yelp_review_full, https://huggingface.co/datasets/CogComp/trec, https://huggingface.co/datasets/fancyzhx/dbpedia_14, https://huggingface.co/datasets/SetFit/amazon_reviews_multi_en, https://huggingface.co/datasets/stanfordnlp/imdb

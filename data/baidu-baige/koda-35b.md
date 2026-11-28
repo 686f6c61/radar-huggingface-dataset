@@ -2,60 +2,61 @@
 
 ## Resumen
 
-KODA-35B es un modelo de generacion y optimizacion de kernels CUDA desarrollado por Baidu-Baige, afinado a partir de Qwen3.6-35B-A3B. Su proposito es recibir una implementacion de referencia (por ejemplo, una funcion en PyTorch) y proponer un kernel CUDA equivalente, revisandolo de forma iterativa a lo largo de varias rondas con la ayuda de diagnosticos del compilador, tests de correccion, mediciones de tiempo de ejecucion y realimentacion del perfilador que le proporciona el agente KODA.
+KODA-35B es un modelo de generacion y optimizacion de kernels CUDA desarrollado por Baidu-Baige, obtenido por ajuste fino supervisado del modelo base Qwen3.6-35B-A3B. Con 35.107.181.936 parametros totales y aproximadamente 3B parametros activos por token (arquitectura Mixture of Experts), el modelo esta especializado en una tarea muy concreta: dada una implementacion de referencia, proponer un kernel CUDA equivalente y refinarlo de forma iterativa a partir de diagnosticos del compilador, tests de correccion, mediciones de tiempo de ejecucion y realimentacion de perfilado.
 
-El modelo emplea una arquitectura Mixture-of-Experts (MoE) heredada del modelo base, con 35.107.181.936 parametros totales y aproximadamente 3.000 millones activos en inferencia, lo que permite servir un modelo de gran capacidad con un coste computacional por token relativamente bajo. Se distribuye en formato safetensors para la libreria transformers y esta pensado para integrarse en un bucle agente de compilacion y evaluacion en sandboxes gestionados.
+La relevancia del modelo reside en su enfoque de adaptacion de dominio sobre un LLM generalista. En lugar de entrenar desde cero, Baidu-Baige parte de Qwen3.6-35B-A3B y lo especializa mediante el framework de RL LoongSage y el agente KODA, que compila y evalua los candidatos en sandboxes gestionados y devuelve los resultados al modelo. Segun la model card, este ajuste mejora la correccion en 35,2 puntos porcentuales en KernelBench y 31,1 puntos en SOL-ExecBench respecto al modelo base.
 
-Su relevancia actual radica en la especializacion: frente a su modelo base, mejora la correccion en 35,2 puntos porcentuales en KernelBench y 31,1 puntos en SOL-ExecBench segun los datos publicados por el autor, y alcanza un speedup mediano de 3,15x y 2,10x respectivamente. Es, por tanto, una herramienta orientada a la optimizacion de codigo de bajo nivel para GPU, no un modelo conversacional de proposito general.
+El modelo se distribuye con licencia Apache 2.0, en formato safetensors y con la libreria transformers, y esta pensado para servirse con motores de inferencia compatibles (vLLM o SGLang) y conectarse via API al agente KODA. Su pipeline declarado es image-text-to-text, aunque la especializacion real es la generacion de codigo CUDA de bajo nivel.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (qwen3_5_moe), afinado desde Qwen3.6-35B-A3B |
+| Arquitectura | Transformer Mixture of Experts (qwen3_5_moe) |
 | Parametros totales | 35.107.181.936 |
-| Parametros activos | Aproximadamente 3.000 millones (segun model card) |
+| Parametros activos | Aproximadamente 3B |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se detallan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (Hugging Face transformers) |
+| Formato de pesos | safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
 
-KODA-35B es un ajuste fino (fine-tune) del modelo Qwen3.6-35B-A3B, que emplea una arquitectura de tipo Mixture-of-Experts con etiqueta `qwen3_5_moe` en transformers. El repositorio incluye pesos, tokenizer y configuracion en formato Hugging Face, con un tamano total de 70,2 GB. El modelo conserva la modalidad image-text-to-text del pipeline declarado, si bien su especializacion es la generacion de codigo CUDA.
+KODA-35B hereda la arquitectura del modelo base Qwen3.6-35B-A3B, un transformer con capas Mixture of Experts identificado en los tags de Hugging Face como `qwen3_5_moe`. El modelo activa aproximadamente 3B parametros por token sobre un total de 35,1B, lo que reduce el coste computacional de inferencia respecto a un modelo denso del mismo tamano. El repositorio ocupa 70,2 GB e incluye pesos, tokenizer y configuracion en formato Hugging Face.
 
-El entrenamiento se ha orientado a la adaptacion de dominio (Domain Adaptation) para optimizacion de kernels. Segun la model card, el modelo se entrena para revisar sus propuestas a lo largo de rondas usando senales del agente KODA: diagnosticos del compilador, tests de correccion, mediciones de runtime y realimentacion del perfilador. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF o DPO. Tampoco se detallan innovaciones de decodificacion especulativa ni mecanismos de atencion alternativos mas alla de los propios del modelo base.
+El entrenamiento consiste en un ajuste fino de dominio sobre Qwen3.6-35B-A3B. El proceso se apoya en el agente KODA, que compila y evalua cada kernel candidato en sandboxes gestionados y realimenta al modelo con diagnosticos del compilador, resultados de tests de correccion, mediciones de runtime y datos de perfilado, permitiendo una revision iterativa en varias rondas. El framework de RL empleado es LoongSage, tambien publicado por Baidu-Baige. La model card no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como DPO o RLHF mas alla del bucle de realimentacion descrito.
 
 ## Capacidades
 
-- Generacion de kernels CUDA a partir de implementaciones de referencia.
-- Refinamiento iterativo de kernels en multiples rondas usando diagnosticos del compilador, tests de correccion, mediciones de tiempo y perfilado.
-- Razonamiento sobre codigo de bajo nivel y optimizacion de rendimiento (speedups medidos en benchmarks).
-- Integracion con un bucle agente externo (KODA agent) que compila y evalua candidatos en sandboxes gestionados.
-- Capacidad multimodal image-text-to-text heredada del pipeline declarado (no se detalla su alcance en la model card).
+- Generacion de kernels CUDA a partir de una implementacion de referencia.
+- Optimizacion iterativa de kernels usando diagnosticos del compilador, tests de correccion, mediciones de runtime y perfilado.
+- Razonamiento multi-step orientado a la revision y mejora de codigo de bajo nivel.
+- Capacidad de conversacion multi-turno para refinar propuestas a lo largo de rondas.
+- Integracion con el agente KODA mediante API de modelo servido en vLLM o SGLang.
+- Pipeline declarado image-text-to-text, aunque la especializacion documentada es la generacion de codigo CUDA.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Modo thinking explicito: no disponible en la informacion proporcionada.
+- Modo thinking, vision o audio especificos: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Optimizacion de kernels en produccion: dado un kernel CUDA existente o una implementacion de referencia en PyTorch, el modelo propone variantes y las refina con la realimentacion del agente KODA para reducir latencia en cargas reales.
-- Aceleracion de operadores en pipelines de inferencia: generar kernels especializados para operaciones frecuentes (matmul, atencion, normalizaciones) y validar su correccion y speedup antes de integrarlos.
-- Migracion de codigo a CUDA: partir de implementaciones de referencia y obtener una version CUDA funcional que pase tests de correccion, reduciendo el trabajo manual de traduccion.
-- Bucle agente de compilacion y evaluacion: conectar el modelo via vLLM o SGLang al agente KODA para que compile y mida candidatos en sandboxes aislados y devuelva los resultados al modelo.
-- Investigacion en generacion de codigo de bajo nivel: usar el modelo como base para estudiar tecnicas de adaptacion de dominio aplicadas a la sintesis de kernels y a la optimizacion guiada por perfilado.
-- Exploracion de optimizaciones guiadas por profiler: emplear la realimentacion del perfilador para que el modelo proponga cambios de memoria, ocupacion o vectorizacion en funcion de las metricas observadas.
-- Evaluacion comparativa de generadores de kernels: servir el modelo y medirlo sobre KernelBench o SOL-ExecBench con el agente para obtener metricas reproducibles de correccion y speedup.
+- Optimizacion de kernels en produccion: dado un kernel de referencia lento, KODA-35B propone una version CUDA y la refina con mediciones de runtime hasta obtener aceleraciones significativas, como refleja su mediana de 3,15x en KernelBench.
+- Integracion en pipelines de CI/CD de codigo GPU: el modelo puede generar y validar kernels candidatos dentro del agente KODA, que compila y ejecuta tests de correccion en sandboxes antes de aceptar cambios.
+- Aceleracion de operadores en frameworks de deep learning: para operadores como atencion, normalizacion o convoluciones, el modelo genera alternativas CUDA evaluables contra la implementacion de referencia.
+- Portabilidad de codigo a GPU: a partir de implementaciones en otros lenguajes o frameworks, KODA-35B propone equivalentes CUDA y los ajusta con realimentacion del compilador.
+- Investigacion en sintesis de codigo de bajo nivel: el modelo sirve como banco de pruebas para estudiar adaptacion de dominio y RL aplicado a generacion de kernels.
+- Asistencia a ingenieros de rendimiento: el modelo actua como asistente conversacional multi-turno que recibe resultados de perfilado y propone la siguiente revision del kernel.
+- Evaluacion comparativa de modelos de codigo GPU: su rendimiento publicado en KernelBench y SOL-ExecBench permite usarlo como referencia en estudios de sintesis de kernels.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en la model card.
+Resultados publicados en la model card. Mejores valores en negrita, incluyendo empates.
 
-KernelBench (270 problemas):
+### KernelBench (270 problemas)
 
-| Modelo | Correccion | Fast@1 | Fast@2 | Speedup mediano |
-|---|---:|---:|---:|---:|
+| Modelo | Correctness | Fast@1 | Fast@2 | Mediana de speedup |
+| --- | ---: | ---: | ---: | ---: |
 | KODA-35B | 95,6% | 88,9% | 61,9% | 3,15x |
 | Qwen3.6-35B-A3B (base) | 60,4% | 24,1% | 10,7% | 0,94x |
 | Qwen3.8-Flash-Next | 94,8% | 82,2% | 51,9% | 2,27x |
@@ -70,10 +71,10 @@ KernelBench (270 problemas):
 | Kevin-32B | 5,2% | 1,1% | 0,7% | 0,64x |
 | IndustrialCoder-32B-Thinking | 23,7% | 3,0% | 1,1% | 0,27x |
 
-SOL-ExecBench (202 problemas con muestreo de carga fijo):
+### SOL-ExecBench (202 problemas con muestreo de carga fijo)
 
-| Modelo | Correccion | Fast@1 | Fast@2 | Speedup mediano |
-|---|---:|---:|---:|---:|
+| Modelo | Correctness | Fast@1 | Fast@2 | Mediana de speedup |
+| --- | ---: | ---: | ---: | ---: |
 | KODA-35B | 95,5% | 78,7% | 48,0% | 2,10x |
 | Qwen3.6-35B-A3B (base) | 64,4% | 17,8% | 8,9% | 0,73x |
 | Qwen3.8-Flash-Next | 95,5% | 74,8% | 44,1% | 1,70x |
@@ -88,44 +89,43 @@ SOL-ExecBench (202 problemas con muestreo de carga fijo):
 | Kevin-32B | 2,5% | 0,0% | 0,0% | 0,74x |
 | IndustrialCoder-32B-Thinking | 25,7% | 3,5% | 2,0% | 0,59x |
 
-Segun el autor, frente a su modelo base KODA-35B mejora la correccion en 35,2 puntos en KernelBench y 31,1 puntos en SOL-ExecBench. Empata en la mayor correccion de KernelBench y alcanza el segundo mayor speedup mediano en esa comparativa.
-
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explicita. Con 35.107 millones de parametros totales y unos 3.000 millones activos, los pesos en safetensors ocupan aproximadamente 70,2 GB en el repositorio (equivalente a precision BF16/FP16). En cuantizaciones de 8 bits o 4 bits el requisito de memoria se reduce de forma proporcional, pero el autor no publica variantes cuantizadas.
-- GPU recomendadas: no especificadas por el autor. Por tamano, el despliegue en BF16 requiere GPUs de gran memoria (clase A100 80 GB, H100 80 GB o configuraciones multi-GPU).
-- Cabe en GPU de consumo: no disponible; el tamano de pesos en BF16 excede la VRAM de las GPUs de consumo habituales, por lo que requeriria cuantizacion o reparto entre varias GPU.
-- Opciones de despliegue: el autor recomienda servir el modelo con vLLM o SGLang y conectar su API al agente KODA. Tambien es compatible con transformers. La model card no menciona llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles. La model card indica que el servicio del modelo y la evaluacion de kernels usan recursos GPU separados.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El repositorio de pesos ocupa 70,2 GB en safetensors, lo que orienta sobre el orden de magnitud en precision completa.
+- GPU recomendadas: no disponible en la informacion proporcionada.
+- Encaje en GPU de consumo: no disponible en la informacion proporcionada.
+- Opciones de despliegue: la model card menciona vLLM y SGLang como motores compatibles. La evaluacion de kernels y el servicio del modelo usan recursos GPU separados.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-Comparativa con alternativas de la misma categoria (generacion de kernels), segun los datos publicados por el autor.
+Comparativa centrada en la tarea de generacion y optimizacion de kernels, con los datos publicados en la model card.
 
-| Modelo | Parametros totales | Contexto | KernelBench (correccion / speedup mediano) | SOL-ExecBench (correccion / speedup mediano) | Licencia | Disponibilidad |
-|---|---|---|---:|---:|---|---|
-| KODA-35B | 35,1B (aprox. 3B activos) | no disponible | 95,6% / 3,15x | 95,5% / 2,10x | Apache 2.0 | Hugging Face (Baidu-Baige/KODA-35B) |
-| Qwen3.6-35B-A3B | 35B (aprox. 3B activos) | no disponible | 60,4% / 0,94x | 64,4% / 0,73x | no disponible | Hugging Face (Qwen/Qwen3.6-35B-A3B) |
-| DeepSeek-V4.1-Flash-1017 | no disponible | no disponible | 92,6% / 4,31x | 91,6% / 3,15x | no disponible | no disponible |
-| GLM-5.3 | no disponible | no disponible | 94,1% / 2,97x | 93,6% / 2,28x | no disponible | no disponible |
+| Modelo | Parametros | Correctness KernelBench | Mediana speedup KernelBench | Correctness SOL-ExecBench | Licencia |
+| --- | --- | ---: | ---: | ---: | --- |
+| KODA-35B | 35,1B (aprox. 3B activos) | 95,6% | 3,15x | 95,5% | Apache 2.0 |
+| Qwen3.6-35B-A3B | 35B (aprox. 3B activos) | 60,4% | 0,94x | 64,4% | no disponible |
+| DeepSeek-V4.1-Flash-1017 | no disponible | 92,6% | 4,31x | 91,6% | no disponible |
+| GLM-5.3 | no disponible | 94,1% | 2,97x | 93,6% | no disponible |
+| Kimi-K3 | no disponible | 93,7% | 2,99x | 94,6% | no disponible |
 
-KODA-35B destaca por combinar una correccion alta con un coste de parametros activos bajo, aunque DeepSeek-V4.1-Flash-1017 obtiene mejores speedups medianos en ambos benchmarks y DeepSeek-V4-Flash-0731 logra mayor correccion en SOL-ExecBench.
+KODA-35B destaca por alcanzar la mayor correccion en KernelBench junto a DeepSeek-V4-Flash-0731 y GLM-5.3-Flash, y por situarse en la segunda mejor mediana de speedup en KernelBench tras DeepSeek-V4.1-Flash-1017, que sin embargo obtiene menor correccion.
 
 ## Limitaciones y advertencias
 
-- Especializacion estrecha: el modelo esta afinado para generacion y optimizacion de kernels CUDA; su uso como modelo conversacional general no esta documentado.
-- Dependencia del agente: el flujo de refinamiento iterativo requiere el agente KODA y sandboxes de compilacion y evaluacion; sin ese bucle, el rendimiento puede diferir del reportado.
-- Riesgo de alucinacion en codigo: como generador de codigo, puede producir kernels que compilan pero son incorrectos; los tests de correccion del agente son imprescindibles antes de usar cualquier salida en produccion.
+- Especializacion estrecha: el modelo esta ajustado para generacion y optimizacion de kernels CUDA; su comportamiento en tareas generales de conversacion o codigo no esta documentado.
+- Dependencia del agente: el flujo de mejora iterativa requiere el agente KODA y sandboxes de evaluacion con GPU, ademas de recursos GPU separados para el servicio del modelo.
+- Riesgo de alucinacion en codigo: como todo modelo generativo, puede producir kernels sintacticamente validos pero semanticamente incorrectos; la model card enfatiza la necesidad de tests de correccion.
+- Idiomas soportados no documentados: no se especifica el soporte multilingue.
+- Longitud de contexto no documentada: se desconoce la ventana maxima, lo que condiciona el tamano de las implementaciones de referencia y los historiales de perfilado que puede procesar.
 - Sesgos conocidos: no disponibles en la informacion proporcionada.
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no se detallan en la model card.
-- Recursos de hardware: el despliegue en BF16 exige memoria de GPU considerable (pesos de aproximadamente 70,2 GB) y el autor recomienda separar los recursos de servicio del modelo y de evaluacion de kernels.
-- Licencia: Apache 2.0 permite uso comercial, pero el codigo del agente y los datasets de benchmark tienen sus propias licencias, que deben revisarse por separado.
-- Datos de benchmarks: los resultados proceden del propio autor; no se dispone de verificacion independiente en la informacion proporcionada.
+- Licencia: Apache 2.0 permite uso comercial, pero el codigo del agente y los datasets de benchmark tienen licencias propias que deben revisarse por separado.
+- Validacion en produccion: los resultados de benchmark provienen de la propia model card y no de una evaluacion independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Baidu-Baige/KODA-35B
-- Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del agente KODA: https://github.com/baidu-baige/KODA
-- Paper: no disponible
-- Blog o demo: no disponible
+- Framework de RL LoongSage: https://github.com/baidu-baige/LoongSage
+- Playground LoongSage: http://play.loongsage.org/
+- Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

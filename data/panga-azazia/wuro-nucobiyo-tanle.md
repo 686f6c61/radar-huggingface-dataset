@@ -2,108 +2,96 @@
 
 ## Resumen
 
-Wuro-Nucobiyo-Tanle es un modelo de texto a voz (text-to-speech) construido sobre un modelo de lenguaje de tipo Llama, publicado por el usuario Panga-Azazia en Hugging Face. Con 3.300.928.512 parametros (aproximadamente 3,3 mil millones) en pesos safetensors, se presenta como un sistema de sintesis de voz basado en LLM ("llm-based-tts") orientado a lenguas africanas, con enfasis en Mali y su entorno linguistico, ademas de ingles y frances.
+Wuro-Nucobiyo-Tanle es un modelo de texto a voz (TTS) basado en un LLM, desarrollado por Panga-Azazia y publicado en Hugging Face con licencia Apache 2.0. Parte de la familia Wuro, orientada a lenguas africanas, y se presenta como un fine-tune de Panga-Azazia/Wuro-Mali-Tanle-v0, que a su vez deriva de maya-research/maya1 y RobotsMali/Wuro. Su objetivo es cubrir la sintesis de voz en idiomas de Mali y del Africa occidental que habitualmente carecen de soporte en los sistemas TTS comerciales, como el bambara (bm), el bomu (bmq), el dogon (dts), el dyula (dyu), el fulfulde (ffm), el songhai (ses/spp), el soninke (snk/sev) y el tamacheq (taq), ademas del frances y el ingles.
 
-El modelo deriva de una cadena de ajuste fino que parte de maya-research/maya1 y pasa por RobotsMali/Wuro y Panga-Azazia/Wuro-Mali-Tanle-v0, segun los metadatos de la ficha. Cubre 18 codigos de idioma, entre ellos bambara (bm), bomu (bmq), dyula (dyu), mossi (mos), fulfulde maasina (ffm), tamasheq (taq), frances (fr) e ingles (en), lo que lo situa en el nicho de la sintesis de voz para lenguas de bajos recursos.
+El modelo tiene 3.300.928.512 parametros (aproximadamente 3,3 mil millones) en formato safetensors y un repositorio de 26,4 GB, lo que sugiere pesos en precision alta (fp16/bf16) o multiples variantes. La arquitectura declarada es de tipo transformer con backbone Llama, adaptada mediante la libreria transformers y compatible con text-generation-inference y con el ecosistema Unsloth para fine-tuning. Se distribuye como pipeline text-to-speech bajo el tag llm-based-tts, es decir, un LLM que genera tokens de audio en lugar de una arquitectura TTS clasica de dos etapas.
 
-Su relevancia actual es doble: por un lado, la mayoria de los sistemas TTS comerciales no cubren lenguas africanas con calidad aceptable; por otro, la licencia Apache 2.0 permite uso comercial sin las restricciones habituales en modelos de voz. El acceso esta restringido (gated) y no se han publicado resultados de evaluacion en la informacion disponible, por lo que cualquier decision de produccion deberia acompanarse de una evaluacion propia.
+Su relevancia actual radica en la escasez de recursos de voz para lenguas de bajos recursos: la mayoria de los TTS multilingues cubren decenas de idiomas europeos y asiaticos pero dejan fuera las lenguas malienses. Wuro-Nucobiyo-Tanle intenta cerrar esa brecha con un unico modelo multilingue entrenado sobre datos de habla real, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face, y no se han publicado resultados de benchmarks ni detalles completos del dataset en la informacion disponible.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de tipo Llama (tag `llama`), adaptado a texto a voz ("llm-based-tts"); detalles internos del decodificador de audio no disponibles |
-| Parametros totales | 3.300.928.512 (aproximadamente 3,3 B), segun safetensors |
-| Parametros activos | No aplica: no se documenta arquitectura MoE |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible. El repositorio solo contiene safetensors; los tags `unsloth` y `text-generation-inference` sugieren flujos de cuantizacion, pero no hay artefactos GGUF/AWQ/GPTQ publicados en la informacion disponible |
-| Idiomas soportados | 18 codigos ISO: bm, bmq, en, thq, spp, sev, taq, mwk, myk, bbo, dyi, dyu, mos, dts, kao, ffm, sep, fr (bmq aparece duplicado en la ficha) |
+| Arquitectura | Transformer basado en Llama (backbone LLM), pipeline text-to-speech (llm-based-tts) |
+| Parametros totales | 3.300.928.512 (~3,3 mil millones) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el repo ocupa 26,4 GB) |
+| Idiomas soportados | bm (bambara), bmq (bomu), en (ingles), thq, spp, sev, taq, mwk, myk, bbo, dyi, dyu, mos, dts, kao, ffm, sep, fr (frances) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria `transformers`) |
-| Tamano del repositorio | 26,4 GB |
-| Pipeline declarado | text-to-speech |
-| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
-| Modelo base | maya-research/maya1; RobotsMali/Wuro; Panga-Azazia/Wuro-Mali-Tanle-v0 |
-| Descargas / likes | 397 descargas, 0 likes |
-| Fechas | Creado el 26-09-2026, actualizado el 24-10-2026 |
+| Formato de pesos | safetensors |
+| Libreria | transformers |
+| Modelo base | maya-research/maya1, RobotsMali/Wuro, Panga-Azazia/Wuro-Mali-Tanle-v0 |
+| Acceso | Restringido (gated), requiere aceptar condiciones |
+| Descargas | 183 |
+| Fecha de creacion | 2026-09-26 |
+| Ultima actualizacion | 2026-10-25 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica unicamente que se trata de un modelo de la familia Llama (tag `llama`) con 3,3 mil millones de parametros y que su pipeline es texto a voz. La etiqueta `llm-based-tts` sugiere un esquema en el que un LLM genera tokens de audio o unidades discretas que posteriormente se convierten en forma de onda mediante un decodificador o codec, pero no se detalla en la ficha ni la arquitectura del codec, ni la tasa de tokens de audio, ni el vocabulario utilizado.
+El modelo sigue un enfoque de TTS basado en LLM (llm-based-tts): en lugar de un pipeline clasico acustico-vocoder, un transformer de tipo Llama procesa la entrada textual y genera una secuencia de tokens de audio que posteriormente se decodifican a forma de onda. Esta familia de arquitecturas, popularizada por modelos como maya1 (del que deriva), permite reutilizar infraestructura de inferencia de LLM (transformers, text-generation-inference) y simplifica el soporte multilingue, ya que el mismo backbone aprende a mapear texto a unidades acusticas en todos los idiomas del corpus.
 
-Respecto al entrenamiento, solo se conoce la cadena de modelos base: maya-research/maya1, RobotsMali/Wuro y Panga-Azazia/Wuro-Mali-Tanle-v0, lo que apunta a un ajuste fino sucesivo sobre un modelo TTS previo, probablemente con datos de Mali y de lenguas vecinas. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la presencia de RLHF/DPO, ni innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, etc.). Tampoco se especifica si el modelo conserva capacidades de generacion de texto del LLM subyacente o si estas se han degradado deliberadamente durante el ajuste.
+El entrenamiento declarado es un fine-tune en cadena: parte de maya-research/maya1 y de RobotsMali/Wuro, y se refina sobre Panga-Azazia/Wuro-Mali-Tanle-v0. El tag unsloth indica que el ajuste se realizo con la libreria Unsloth, tipicamente mediante LoRA o QLoRA sobre el modelo base. No se dispone del numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron etapas de RLHF o DPO; tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal. Toda esa informacion figura como no disponible en la ficha del repositorio.
 
 ## Capacidades
 
-- Sintesis de voz a partir de texto en 18 codigos de idioma, con predominio de lenguas de Mali y Africa occidental.
-- Cobertura multilingue con mezcla de lenguas locales, frances e ingles, lo que permite escenarios de code-switching en contextos educativos o administrativos.
-- Integracion con el ecosistema `transformers` y con `text-generation-inference` (tag `endpoints_compatible`), lo que facilita su despliegue como endpoint HTTP.
-- Compatibilidad declarada con flujos de Unsloth (tag `unsloth`), orientados a ajuste fino y cuantizacion eficiente en memoria.
-- Capacidad de ajuste fino adicional: al ser un modelo de 3,3 B con licencia Apache 2.0, es viable reentrenarlo o adaptarlo a nuevas voces o lenguas.
-- No se documentan capacidades de clonacion de voz, control de emocion, control de prosodia, tool calling ni modo de razonamiento; no disponibles en la informacion proporcionada.
+- Sintesis de voz (text-to-speech) multilingue para lenguas de Mali y Africa occidental: bambara, bomu, dogon, dyula, fulfulde, songhai, soninke, tamacheq, entre otras, ademas de frances e ingles.
+- Generacion de texto propia de un LLM subyacente (el modelo esta etiquetado como text-generation y usa un backbone Llama), aunque su uso previsto es TTS.
+- Integracion con transformers y text-generation-inference, lo que permite servirlo con la misma infraestructura que un LLM.
+- Compatibilidad con el ecosistema Unsloth para fine-tuning adicional sobre nuevos idiomas o voces.
+- Soporte de endpoints compatibles (endpoints_compatible) para despliegue gestionado.
+- No se documentan capacidades de tool calling, agentes, vision, audio de entrada ni modo de razonamiento explicito.
 
 ## Casos de uso
 
-- Accesibilidad y lectura en voz alta: el modelo puede narrar textos en bambara, dyula o mossi para usuarios con baja alfabetizacion o discapacidad visual, un nicho que los TTS comerciales apenas cubren.
-- Locucion automatica de noticias y boletines: generacion de audio para radios comunitarias y medios digitales malienses a partir de textos escritos, reduciendo el coste de grabacion con locutores.
-- Sistemas de atencion telefonica (IVR): respuestas de voz pregrabadas dinamicamente en lenguas locales para servicios de salud, agricultura o administracion, donde el texto cambia con frecuencia.
-- Doblaje y subtitulado accesible de material educativo: conversion de guiones de formacion agraria o sanitaria a audio en varias lenguas para su distribucion por radio o altavoces comunitarios.
-- Preservacion linguistica: generacion de corpus de audio sintetico para lenguas con pocos hablantes y escasos recursos digitales, util para documentacion y ensenanza.
-- Aplicaciones de aprendizaje de idiomas: ejercicios de escucha y repeticion con pronunciacion sintetica en lenguas que carecen de materiales audiovisuales.
-- Asistentes de voz para interfaces offline: al ser un modelo de 3,3 B, puede ejecutarse en hardware modesto y servir en entornos con conectividad limitada, siempre que se valide la calidad del audio.
-- Prototipado rapido de productos de voz: al estar disponible via `transformers` y TGI, permite montar una demo funcional en pocas horas antes de invertir en un TTS propietario.
+- Audiolibros y contenido educativo en lenguas malienses: el modelo puede narrar textos en bambara, fulfulde o songhai, idiomas sin cobertura en TTS comerciales, facilitando materiales escolares en la lengua materna de los alumnos.
+- Accesibilidad para personas con discapacidad visual: lectura en voz alta de documentos y paginas web en lenguas de Mali, donde las soluciones de sintesis existentes no ofrecen voces nativas.
+- Locucion automatica para radios comunitarias y medios locales: generacion de boletines y anuncios en varios idiomas desde un unico modelo, reduciendo el coste de produccion de audio.
+- Asistentes de voz para servicios publicos: atencion telefonica automatizada en bambara o dyula para informacion sanitaria o agricola, aprovechando que el modelo cubre el par texto-voz en el mismo idioma del usuario.
+- Traduccion y doblaje de contenido: combinado con un modelo de traduccion, permite doblar videos del frances o el ingles a lenguas locales manteniendo una voz sintetica coherente.
+- Investigacion en linguistica y documentacion de lenguas: generacion de muestras de voz para estudio fonetico y para ampliar corpus de lenguas de bajos recursos, dado el caracter abierto (Apache 2.0) del modelo.
+- Prototipado de interfaces de voz en aplicaciones moviles: al ejecutarse sobre transformers y admitir cuantizacion, puede integrarse en backends de inferencia para asistentes de voz en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No constan metricas objetivas habituales en sintesis de voz, como MOS (Mean Opinion Score), CMOS, WER sobre transcripcion automatica del audio generado, SSIM o tasas de error por lengua. Tampoco hay comparaciones publicadas frente a otros sistemas TTS en las mismas lenguas.
-
-| Benchmark | Resultado |
-|---|---|
-| MOS / CMOS | No disponible |
-| WER del audio sintetizado | No disponible |
-| Cobertura por idioma | No disponible |
-| Comparacion con TTS comerciales | No disponible |
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en FP16/BF16: unos 6,6 GB solo para pesos, mas overhead de activaciones, cache y decodificador de audio; en la practica, 8-10 GB como minimo. Estimacion propia a partir del numero de parametros, no confirmada por el autor.
-- VRAM estimada en INT8: aproximadamente 3,3 GB de pesos, con un total estimado de 5-6 GB.
-- VRAM estimada en INT4: aproximadamente 1,7-2 GB de pesos, con un total estimado de 3-4 GB. No hay artefactos cuantizados publicados, por lo que habria que generarlos.
-- GPU recomendadas: A100 40/80 GB o H100 para servir muchas peticiones concurrentes; L40S o A10G para produccion moderada; RTX 4090/3090 (24 GB) para desarrollo y pruebas de calidad.
-- GPU de consumo: si, previsiblemente en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y superiores, siempre con cuantizacion o FP16. No confirmado por el autor.
-- Despliegue: `transformers` (via oficial declarada), `text-generation-inference` (tag `endpoints_compatible`) y flujos Unsloth para ajuste. vLLM, llama.cpp u Ollama no estan confirmados: requeririan conversion a GGUF o soporte explicito del cabezal de audio, no disponible en la informacion.
-- Latencia y throughput: no disponibles. En TTS, la latencia depende criticamente del decodificador de audio, cuyo coste no se documenta.
-- Almacenamiento: el repositorio ocupa 26,4 GB, muy por encima de los ~6,6 GB de pesos en FP16, lo que sugiere multiples artefactos (checkpoints, codec, tokenizer) o precisiones redundantes.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 6,6 GB solo para pesos (3,3 mil millones de parametros), mas memoria para el estado de decodificacion de audio y el contexto; en la practica se recomienda reservar 10-12 GB.
+- En cuantizacion de 8 bits: alrededor de 3,5-4 GB de pesos, con un total estimado de 6-8 GB de VRAM.
+- En cuantizacion de 4 bits: alrededor de 2 GB de pesos, con un total estimado de 4-6 GB de VRAM (los tipos de cuantizacion no estan documentados oficialmente).
+- GPU profesionales recomendadas: A100, H100 o L40S para despliegue concurrente y baja latencia; A10G o L4 para cargas moderadas.
+- GPU de consumo: cabe en RTX 4090 (24 GB), RTX 4080 (16 GB) y RTX 3090 (24 GB) sin problemas; en RTX 4070 (12 GB) o RTX 3060 (12 GB) es viable con cuantizacion de 8 o 4 bits.
+- Opciones de despliegue: transformers, text-generation-inference (soportado segun los tags), y previsiblemente vLLM y llama.cpp/Ollama si se generan pesos GGUF, aunque no se confirma en la informacion disponible.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Acceso |
 |---|---|---|---|---|---|
-| Wuro-Nucobiyo-Tanle | 3,3 B | No disponible | 18 codigos, foco en Mali | Apache 2.0 | Gated en Hugging Face |
-| maya-research/maya1 (base) | No disponible | No disponible | No disponible | No disponible | No verificada en esta busqueda |
-| RobotsMali/Wuro (base) | No disponible | No disponible | No disponible | No disponible | No verificada en esta busqueda |
-| Panga-Azazia/Wuro-Mali-Tanle-v0 (base) | No disponible | No disponible | No disponible | No disponible | No verificada en esta busqueda |
+| Wuro-Nucobiyo-Tanle | ~3,3 mil millones | no disponible | 19 lenguas africanas, frances e ingles | Apache 2.0 | Restringido (gated) |
+| maya-research/maya1 (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| RobotsMali/Wuro (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Panga-Azazia/Wuro-Mali-Tanle-v0 (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos verificados de parametros, contexto ni rendimiento de los modelos base ni de alternativas equivalentes en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable. Como referencia cualitativa, la mayoria de los TTS multilingues comerciales no cubren lenguas malienses, y los modelos abiertos con cobertura amplia de lenguas africanas suelen ser arquitecturas no basadas en LLM y con licencias mas restrictivas; cualquier comparacion concreta deberia hacerse con las fichas oficiales de cada modelo.
+No se dispone de datos de rendimiento ni de especificaciones completas de los modelos base para establecer una comparacion cuantitativa con alternativas TTS de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de evaluacion publicada: no hay MOS, WER ni pruebas por idioma, por lo que se desconoce la calidad real en cada una de las 18 lenguas.
-- Riesgo de alucinacion acustica: en modelos TTS basados en LLM es frecuente la omision de palabras, la repeticion de silabas, la alteracion de la prosodia o la invencion de contenido en entradas largas o con caracteres fuera del vocabulario.
-- Cobertura linguistica desigual: es previsible que el bambara y el frances tengan mas datos que codigos como `thq`, `spp` o `dts`; sin metricas por idioma no puede asumirse calidad homogenea.
-- Longitud de contexto desconocida: no se puede garantizar el comportamiento en parrafos largos ni en textos con muchos numeros, siglas o nombres propios.
-- Idiomas sin normalizacion documentada: no se especifica el tratamiento de numeros, abreviaturas, fechas ni puntuacion, lo que afecta directamente a la inteligibilidad.
-- Sesgos: al entrenarse presumiblemente con voces de un numero limitado de hablantes, el modelo puede reproducir un unico registro de voz, sesgos de genero o de variedad dialectal, y carecer de diversidad vocal.
-- Restricciones de licencia: Apache 2.0 permite uso comercial y modificacion, pero no cubre derechos de imagen ni de voz de los hablantes originales; la responsabilidad sobre el uso de voces sintetizadas recae en el desplegador.
-- Acceso restringido: el caracter gated obliga a aceptar condiciones en Hugging Face, lo que puede anadir friccion en pipelines automatizados y en entornos de CI.
-- Sin artefactos cuantizados: no hay GGUF ni variantes INT4/INT8 publicadas, de modo que el despliegue en hardware de consumo exige trabajo adicional de conversion y validacion.
-- Ausencia de soporte documentado de vLLM, llama.cpp u Ollama: el cabezal de audio puede no ser compatible con estos runners sin desarrollo adicional.
-- Modelo con 0 likes y 397 descargas: no ha pasado por una validacion comunitaria amplia; conviene tratarlo como experimental.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos, lo que complica la automatizacion de pipelines.
+- Ausencia de benchmarks: no hay evaluaciones publicas de calidad de sintesis (MOS, inteligibilidad, similitud de hablante), por lo que el rendimiento real es desconocido.
+- Riesgo de alucinacion acustica: al ser un TTS basado en LLM, puede generar artefactos, pronunciaciones incorrectas o audio incoherente en entradas fuera de distribucion o en idiomas con pocos datos.
+- Cobertura desigual entre idiomas: los 19 idiomas declarados probablemente no tienen la misma cantidad de datos de entrenamiento; las lenguas con menos recursos pueden presentar peor calidad.
+- Sesgos de hablante y dialecto: al entrenarse sobre un corpus limitado, puede reproducir un unico acento o variedad dialectal y no representar la diversidad real de cada lengua.
+- Documentacion incompleta: no se detallan el dataset, el proceso de entrenamiento, la longitud de contexto ni los formatos de cuantizacion soportados, lo que dificulta la reproducibilidad.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones de los modelos base (maya1, Wuro) por si imponen restricciones adicionales.
+- Para produccion: es necesario validar la calidad de audio con hablantes nativos de cada idioma antes de desplegarlo en servicios publicos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Panga-Azazia/Wuro-Nucobiyo-Tanle
-- Modelo base declarado: https://huggingface.co/maya-research/maya1
-- Modelo base declarado: https://huggingface.co/RobotsMali/Wuro
-- Modelo base declarado: https://huggingface.co/Panga-Azazia/Wuro-Mali-Tanle-v0
-- Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente articulos sobre el pez panga, sin relacion con este modelo. No hay papers, blogs ni demos disponibles en la informacion proporcionada.
+- Modelo base maya1: https://huggingface.co/maya-research/maya1
+- Modelo base Wuro: https://huggingface.co/RobotsMali/Wuro
+- Modelo base Wuro-Mali-Tanle-v0: https://huggingface.co/Panga-Azazia/Wuro-Mali-Tanle-v0
+- Perfil del autor: https://huggingface.co/Panga-Azazia

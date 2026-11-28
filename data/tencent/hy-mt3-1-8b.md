@@ -2,94 +2,95 @@
 
 ## Resumen
 
-Hy-MT3-1.8B es la variante ligera de la tercera generación de la familia de modelos de traducción multilingüe Hy-MT3, desarrollada por Tencent. Es un modelo de traducción automática de 1.791.080.448 parámetros (aproximadamente 1,8B) construido sobre la arquitectura propietaria `hunyuan_v1_dense` y publicado con licencia Apache 2.0. Su propósito es resolver traducción de alta calidad entre 102 idiomas, ampliando la cobertura de 38 idiomas de la generación anterior (Hy-MT2).
+Hy-MT3-1.8B es la variante ligera de la tercera generación de la familia de modelos de traducción multilingüe Hy-MT de Tencent, publicada junto a sus hermanos Hy-MT3-7B y Hy-MT3-30B-A3B (MoE). El modelo resuelve el problema de la traducción automática de alta calidad en un rango de parámetros que cabe en hardware modesto: con 1.791.080.448 parámetros y pesos en safetensors, está diseñado para despliegues de bajo coste con calidad competitiva frente a APIs comerciales de traducción. Su relevancia actual radica en que amplía la cobertura lingüística de la generación anterior de 38 a 102 idiomas y reduce, según el autor, un 43 % los errores de traducción, un 74 % las omisiones o adiciones y un 40 % los fallos de seguimiento de instrucciones respecto a Hy-MT2.
 
-La relevancia del modelo reside en su relación calidad-coste: según la model card, supera a APIs comerciales de traducción como iFlytek Translator, Microsoft Translator y Qwen-MT-Flash en traducción general, pese a su reducido tamaño. La familia Hy-MT3 incluye además variantes de 7B y 30B-A3B (MoE), y el modelo se distribuye en formato safetensors para su uso con la librería `transformers`.
+La arquitectura es un transformer denso identificado internamente como `hunyuan_v1_dense`, con licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El modelo se distribuye en formato transformers con pesos safetensors y está orientado a la tarea de traducción (pipeline `translation`), no a generación general de texto, aunque técnicamente se etiqueta como `text-generation`.
 
-El modelo está orientado a escenarios industriales concretos: localización de videojuegos (con datos de dominio del equipo de Honor of Kings y una cadena de herramientas abierta, TiMiHOKGameTranslator) y traducción de imágenes en cascada con OCR, donde tolera mejor los errores de OCR. Se publica junto a TransRubric, una suite de evaluación automática de traducción basada en rúbricas.
+El contexto de lanzamiento incluye el informe técnico Hy-MT3 (arXiv 2611.27673), la suite de evaluación automática TransRubric, el toolchain de traducción de videojuegos TiMiHOKGameTranslator y una extensión de navegador y apps móviles de traducción de Tencent. La ficha se centra en la variante 1.8B, la más accesible de la familia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | hunyuan_v1_dense (transformer denso) |
+| Arquitectura | Transformer denso (`hunyuan_v1_dense`) |
 | Parametros totales | 1.791.080.448 |
-| Parametros activos | no aplica (modelo denso) |
+| Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | 102 idiomas (zh, en, es, de, fr, it, pt, ru, ja, ko, ar, hi, yue, entre otros) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; el repo ocupa 7,2 GB) |
+| Idiomas soportados | 102 idiomas, entre ellos zh, en, es, de, fr, it, pt, ru, ja, ko, ar, hi, vi, th, id, ms, tr, nl, pl, uk, ca, gl, eu, yue, entre otros |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
 
-Hy-MT3-1.8B es un transformer denso identificado en la librería `transformers` con el tipo de modelo `hunyuan_v1_dense`, lo que indica una arquitectura derivada de la familia Hunyuan de Tencent. La model card no detalla el número de capas, dimensiones ocultas ni el mecanismo de atención específico. El modelo opera en modo no-thinking por defecto; la familia Hy-MT3 contempla también un modo thinking (usado por modelos comparados en las evaluaciones), pero la información disponible no confirma que la variante 1.8B lo exponga de forma explícita.
+El modelo emplea una arquitectura transformer densa bajo la implementación `hunyuan_v1_dense` de la librería transformers. No se dispone de información pública en la documentación proporcionada sobre el número de tokens de entrenamiento, la composición exacta del dataset ni la presencia de etapas de RLHF o DPO. La model card sí indica que la familia Hy-MT3 se ha construido con datos de alta calidad del dominio de videojuegos (procedentes del equipo de Honor of Kings) y con un sistema de evaluación profesional propio, y que incorpora mejoras de comprensión de contexto y corrección de errores para tolerar fallos de OCR en traducción de imágenes.
 
-La model card indica que el entrenamiento incorpora datos de alta calidad del dominio de videojuegos, construidos con el equipo de Honor of Kings y un sistema de evaluación profesional. También se menciona optimización específica para tolerar errores de OCR en traducción de imágenes en cascada. No se especifican el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. Respecto a la generación anterior, Tencent reporta mejoras en datos de escenarios reales: reducción del 43% en muestras con errores de traducción, del 74% en omisiones o adiciones y del 40% en errores de seguimiento de instrucciones.
+La innovación destacable de la generación Hy-MT3 no está en la arquitectura sino en el pipeline de evaluación y en la optimización para escenarios industriales: localización de videojuegos (con métricas de tasa de fuera de objetivo, errores de placeholders, errores de texto enriquecido y errores de terminología) y traducción de imágenes en cascada OCR. El modelo se ejecuta en modo no-thinking según los resultados publicados; no se documenta un modo thinking para esta variante.
 
 ## Capacidades
 
-- Traducción automática multilingüe entre 102 idiomas, incluyendo pares de bajos recursos y traducción mandarín⇔minorías.
-- Seguimiento de instrucciones de traducción (restricciones del usuario, terminología, formato), evaluado mediante IFMTBench.
-- Traducción de dominio de videojuegos: control de tasa de fuera de objetivo, errores de marcadores (placeholders), errores de texto enriquecido y errores de terminología.
-- Traducción de imágenes en cascada con OCR, con corrección de errores de reconocimiento; evaluado en VISTA-Bench.
-- Generación de texto como tarea base (`text-generation`), aunque el modelo está especializado en traducción.
-- No se documenta soporte de tool calling, function calling, agentes ni multi-step reasoning en la información disponible.
-- No se documenta capacidad de visión, audio ni modo thinking explícito en la variante 1.8B.
+- Traducción automática multilingüe entre 102 idiomas, incluyendo pares de bajos recursos y mandarín frente a lenguas minoritarias.
+- Traducción con seguimiento de instrucciones del usuario (restricciones de estilo, terminología o formato), evaluada mediante IFMTBench.
+- Tolerancia a errores de OCR en flujos de traducción de imágenes en cascada.
+- Localización de videojuegos con control de placeholders, texto enriquecido y terminología específica del dominio.
+- Generación de texto básica (etiqueta `text-generation`), aunque el modelo está optimizado para traducción.
+- Integración con el ecosistema transformers y con endpoints compatibles (`endpoints_compatible`).
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión nativa ni audio en la información disponible.
 
 ## Casos de uso
 
-- Localización de videojuegos: el modelo puede integrarse en la cadena de herramientas TiMiHOKGameTranslator para traducir diálogos, textos de interfaz y descripciones de objetos, con control de placeholders y terminología específica del dominio, gracias a los datos de entrenamiento del equipo de Honor of Kings.
-- Traducción de imágenes en producción: en un pipeline OCR → traducción, el modelo tolera errores de OCR y corrige el contexto, lo que lo hace adecuado para traducir capturas de pantalla, cómics o documentación escaneada.
-- Traducción de documentación técnica y de producto: con 102 idiomas y capacidad de seguir restricciones de formato y terminología, puede usarse para localizar manuales y fichas de producto manteniendo glosarios.
-- Atención al cliente multilingüe: traducción en tiempo real de conversaciones de soporte entre idiomas de bajos recursos (por ejemplo, camboyano, birmano, cebuano) que las APIs comerciales cubren con menor calidad.
-- Traducción de contenido generado por usuarios: moderación y traducción de comentarios, reseñas y publicaciones en plataformas con audiencias multilingües, aprovechando su tamaño reducido para despliegue con baja latencia.
-- Subtitulado y localización de medios: traducción de subtítulos entre pares de idiomas poco comunes (por ejemplo, euskera⇔gaélico escocés o urdu⇔tamil) donde los modelos generalistas suelen fallar.
-- Investigación en traducción automática: al ser Apache 2.0 y de 1,8B parámetros, sirve como base para fine-tuning y para reproducir experimentos con TransRubric.
+- Traducción de documentación técnica y manuales: el modelo puede traducir grandes volúmenes de texto entre los 102 idiomas soportados con un coste de inferencia muy bajo gracias a sus 1.8B parámetros, adecuado para pipelines batch nocturnos.
+- Localización de videojuegos: integrado en el toolchain TiMiHOKGameTranslator, permite traducir diálogos y textos de interfaz controlando placeholders y texto enriquecido, un escenario para el que el autor declara datos de entrenamiento específicos del dominio.
+- Traducción de imágenes en cascada OCR: el modelo tolera errores de OCR y corrige el contexto, por lo que encaja en flujos de traducción de capturas, cómics o documentos escaneados.
+- Atención al cliente multilingüe: puede traducir mensajes entrantes y salientes en tiempo real en un servicio de soporte, con latencia baja al ejecutarse en una sola GPU consumer.
+- Traducción de contenido web y extensiones de navegador: es la base tecnológica declarada de la extensión Tencent Hy Translate, por lo que es adecuado para traducción de selección, página completa y panel lateral.
+- Subtitulado y transcripción multilingüe: combinado con un sistema ASR, puede traducir subtítulos a decenas de idiomas en un pipeline de bajo coste.
+- Preprocesamiento multilingüe para otros modelos: normalización y traducción de corpus antes de alimentar modelos mayores o sistemas de recuperación (RAG) multilingües.
 
 ## Benchmarks y rendimiento
 
-La model card incluye gráficas de resultados (imágenes `main_result.png` y `efficiency.png`) pero no tablas con valores numéricos en el texto proporcionado. Se indica cualitativamente que Hy-MT3-1.8B supera a iFlytek Translator, Microsoft Translator y Qwen-MT-Flash en traducción general, y que la variante 30B-A3B supera a Qwen3.8-Max, Kimi-K3.1-Pro y DeepSeek-V4.1-Flash en modo no-thinking. Los conjuntos de evaluación mencionados son FLORES-200, FLORES-200 low-resource, WMT26, Mandarin⇔Minority, WildMTBench-202611, IFMTBench y VISTA-Bench, puntuados con TransRubric.
-
-No se han publicado resultados numéricos de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks numéricos desglosados para Hy-MT3-1.8B en la información disponible. La model card indica de forma cualitativa que Hy-MT3-1.8B supera a APIs comerciales de traducción como iFlytek Translator, Microsoft Translator y Qwen-MT-Flash en traducción general, y que la familia se evalúa sobre FLORES-200, FLORES-200 low-resource, WMT26, WildMTBench-202611 e IFMTBench con la suite TransRubric. Los valores concretos no se proporcionan en el texto disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con pesos en fp16 (aproximadamente 3,6 GB) se requieren unos 4-5 GB de VRAM; en fp32, unos 7-8 GB. Las cifras exactas dependen de la implementación y del contexto.
-- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16; A100, H100 o L40S para despliegues de alto throughput.
-- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090, entre otras.
-- Opciones de despliegue: `transformers` (librería declarada), vLLM, TGI y llama.cpp/Ollama si se generan pesos GGUF (no se confirma su disponibilidad en el repositorio).
-- Latencia y throughput: no disponibles en la información proporcionada. La model card menciona que la variante 30B-A3B requiere menos de 1 TFLOP por muestra, pero no se aportan cifras para el 1.8B.
+- VRAM estimada para inferencia en fp16: aproximadamente 3,6 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica, entre 4 y 6 GB según longitud de secuencia.
+- VRAM estimada en cuantización de 8 bits: alrededor de 2 GB para pesos; en 4 bits, alrededor de 1 GB, aunque el autor no publica cuantizaciones oficiales.
+- GPU recomendadas: cualquier GPU consumer con 8 GB o más (RTX 3060, RTX 4060, RTX 4070, RTX 4090) es suficiente en fp16; para despliegue de alta concurrencia se recomienda A100, H100 o L40S.
+- Cabe en GPU consumer: sí, en la mayoría de tarjetas con 8 GB o más.
+- Opciones de despliegue: transformers (soporte nativo), vLLM y TGI para serving de alto throughput, llama.cpp/Ollama si se generan cuantizaciones GGUF (no publicadas oficialmente).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idiomas | Contexto | Licencia | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hy-MT3-1.8B | 1,79B | 102 | no disponible | Apache 2.0 | Supera a APIs comerciales en traducción general según la model card |
-| Hy-MT2-1.8B | no disponible | 38 | no disponible | Apache 2.0 | Generación anterior; menor cobertura de idiomas |
-| Qwen-MT-Flash | no disponible | no disponible | no disponible | no disponible | API comercial; superada por Hy-MT3-1.8B según Tencent |
-| Microsoft Translator | no disponible | no disponible | no disponible | propietaria | API comercial |
-| iFlytek Translator | no disponible | no disponible | no disponible | propietaria | API comercial |
+| Hy-MT3-1.8B | 1,79B | no disponible | 102 | Apache 2.0 | Hugging Face, ModelScope |
+| Hy-MT3-7B | 7B (no confirmado en detalle) | no disponible | 102 | Apache 2.0 | Hugging Face, ModelScope |
+| Hy-MT3-30B-A3B | 30B totales, 3B activos (MoE) | no disponible | 102 | Apache 2.0 | Hugging Face, ModelScope |
+| Hy-MT2-1.8B | 1,8B | no disponible | 38 | Apache 2.0 | Hugging Face, ModelScope |
 
-No se dispone de datos numéricos de rendimiento para establecer una comparación cuantitativa con alternativas de código abierto del mismo tamaño.
+La comparativa de rendimiento frente a APIs comerciales (iFlytek Translator, Microsoft Translator, Qwen-MT-Flash) se menciona cualitativamente en la model card, pero sin cifras disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un modelo especializado en traducción; su uso como modelo generativo general no está documentado y probablemente rinda por debajo de modelos generalistas del mismo tamaño.
-- Riesgo de alucinación y de errores de fidelidad en textos ambiguos, técnicos o con jerga muy específica fuera del dominio de videojuegos.
-- La longitud de contexto no está publicada, lo que dificulta planificar el procesamiento de documentos largos.
-- No se documentan sesgos lingüísticos, culturales o de género; al entrenarse con datos de Tencent, pueden existir sesgos hacia el chino y el inglés.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, conviene verificar las condiciones de los datos de entrenamiento y de las herramientas asociadas (TiMiHOKGameTranslator, TransRubric) antes de integrarlas en producción.
-- No se confirma la disponibilidad de cuantizaciones GGUF ni de pesos optimizados para llama.cpp u Ollama; el despliegue estándar es vía `transformers`.
-- Las afirmaciones de superioridad frente a APIs comerciales provienen del autor del modelo y no se han verificado de forma independiente en la información disponible.
+- No se documentan sesgos conocidos ni evaluaciones de sesgo en la información disponible.
+- Riesgo de alucinación inherente a los modelos generativos; en traducción puede manifestarse como adiciones o sustituciones de contenido, aunque el autor declara una reducción del 74 % en omisiones y adiciones respecto a Hy-MT2.
+- La longitud de contexto no está publicada, lo que impide garantizar el comportamiento en documentos largos sin pruebas propias.
+- El modelo está optimizado para traducción; su uso como modelo generativo general no está respaldado por evaluaciones públicas.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero se recomienda revisar las condiciones de los datos de entrenamiento subyacentes, no detalladas en la información disponible.
+- Para producción en dominios especializados (legal, médico, financiero) se recomienda evaluación propia, dado que los benchmarks publicados se centran en traducción general, videojuegos e imágenes.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/tencent/Hy-MT3-1.8B
+- Hugging Face: https://huggingface.co/tencent/Hy-MT3-1.8B
 - Colección Hy-MT3 en Hugging Face: https://huggingface.co/collections/tencent/hy-mt3
-- Colección Hy-MT3 en ModelScope: https://modelscope.cn/collections/Tencent-Hunyuan/Hy-MT3
-- Informe técnico (arXiv): https://arxiv.org/pdf/2611.27673
-- Repositorio GitHub: https://github.com/Tencent-Hunyuan/Hy-MT3
+- ModelScope: https://modelscope.cn/collections/Tencent-Hunyuan/Hy-MT3
+- Informe técnico Hy-MT3: https://arxiv.org/pdf/2611.27673
+- GitHub del proyecto: https://github.com/Tencent-Hunyuan/Hy-MT3
 - TransRubric: https://github.com/Tencent-Hunyuan/Hy-MT3/blob/main/TransRubric/README.md
 - TiMiHOKGameTranslator: https://github.com/Tencent/TiMiHOKGameTranslator
-- Sitio oficial de demostración: https://aistudio.tencent.ai/chat/HunyuanDefault?from=modelSquare&modelId=hunyuan-translation-pro-chat-g
+- Web oficial de traducción: https://aistudio.tencent.ai/chat/HunyuanDefault?from=modelSquare&modelId=hunyuan-translation-pro-chat-g
+- Extensión Chrome: https://chromewebstore.google.com/detail/tencent-hy-translate-a-pe/plkeongecagdacbbldjkoaijdogfkhof?hl=en
+- Extensión Edge: https://microsoftedge.microsoft.com/addons/detail/npohaablejgdcokflkffadojdconaacm
+- App Android: https://a.app.qq.com/o/simple.jsp?pkgname=com.tencent.hunyuan.translate
+- App iOS: https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AFhy%E7%BF%BB%E8%AF%91/id6768870541

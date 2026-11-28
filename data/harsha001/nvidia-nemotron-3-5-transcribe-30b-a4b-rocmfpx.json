@@ -5,7 +5,7 @@
   "author": "Harsha001",
   "url": "https://huggingface.co/Harsha001/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-ROCmFPX",
   "created_at": "2026-10-30T20:02:23.000Z",
-  "updated_at": "2026-10-30T20:51:03.000Z",
+  "updated_at": "2026-11-27T21:01:46.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

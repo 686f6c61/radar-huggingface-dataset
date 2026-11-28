@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ai-forever/Viridian-1-8B-Midtrain-4K-Preview",
+  "slug": "ai-forever-viridian-1-8b-midtrain-4k-preview",
+  "author": "ai-forever",
+  "url": "https://huggingface.co/ai-forever/Viridian-1-8B-Midtrain-4K-Preview",
+  "created_at": "2026-11-24T18:19:12.000Z",
+  "updated_at": "2026-11-26T00:30:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "viridian",
+    "text-generation",
+    "hybrid",
+    "custom_code",
+    "vllm",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8313537098,
+  "parameters_human": "8.31B",
+  "storage_bytes": 33255189753,
+  "storage_human": "33.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

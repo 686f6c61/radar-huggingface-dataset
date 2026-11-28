@@ -54,31 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "gemma-4-31B-it-Tensix-BFP4-MLP API & Inference Endpoint - FriendliAI",
-      "url": "https://friendli.ai/models/Xylolabs/gemma-4-31B-it-Tensix-BFP4-MLP",
-      "snippet": "Xylolabs Model Tree Base google/gemma-4-31B-it Quantized this model Input Modalities TextImage Output Modalities Text …"
-    },
-    {
-      "title": "Xylolabs/gemma-4-E2B-it-qat-q4_0-unquantized-Tensix-BFP4-MLP · …",
-      "url": "https://huggingface.co/Xylolabs/gemma-4-E2B-it-qat-q4_0-unquantized-Tensix-BFP4-MLP",
-      "snippet": "3 days ago · Xylolabs / gemma-4-E2B-it-qat-q4_0-unquantized-Tensix-BFP4-MLP Like 1 Follow Xylolabs 1 Any-to-Any Transformers …"
-    },
-    {
-      "title": "hletrd/gemma-4-31B-it-Tensix-BFP4-MLP · Hugging Face",
-      "url": "https://huggingface.co/hletrd/gemma-4-31B-it-Tensix-BFP4-MLP",
-      "snippet": "Image-Text-to-Text model with 33B parameters. Download, explore files and run it on Hugging Face."
-    },
-    {
-      "title": "Gemma 4 31b It Tensix Bfp4 Mlp - AI Model Insights & Benchmarks",
-      "url": "https://free2aitools.com/model/xylolabs/gemma-4-31b-it-tensix-bfp4-mlp",
-      "snippet": "Registry entry for model Gemma 4 31b It Tensix Bfp4 Mlp; source metadata pending."
-    },
-    {
-      "title": "gemma-4-31B-it — Models — tt-awesome",
-      "url": "https://docs.tenstorrent.com/tt-awesome/models/gemma-4-31b-it/",
-      "snippet": "gemma-4-31B-it (LLM). Listed in tt-inference-server on 2 hardware types; best status Complete."
-    }
-  ]
+  "sources": []
 }

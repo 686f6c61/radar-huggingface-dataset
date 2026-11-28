@@ -2,55 +2,56 @@
 
 ## Resumen
 
-OCRia-1-GGUF es la distribucion en formato GGUF de OCRia-1, un modelo de vision-lenguaje de 4B parametros desarrollado por LlamaIndex y especializado en el parseo de documentos: convierte imagenes de paginas (PDF escaneados, formularios, tablas, graficos) en Markdown estructurado. Esta version esta pensada para ejecutarse con llama.cpp y Ollama en Linux, Windows y macOS, lo que permite desplegar el modelo en local sin depender de GPUs de datacenter.
+OCRia-1-GGUF es la distribucion en formato GGUF del modelo OCRia-1, un parser de documentos de 4B parametros desarrollado por LlamaIndex. Su proposito es convertir imagenes de paginas (tipicamente PDF renderizados) en Markdown estructurado, incluyendo texto, tablas, formularios y graficos. Esta publicacion concreta empaqueta los pesos originales en BF16 y una cuantizacion Q8_0, junto con el codificador visual en f16, para su uso con llama.cpp y Ollama en Linux, Windows y macOS.
 
-El modelo base emplea una arquitectura de tipo Qwen3-VL (segun la plantilla de chat y el conversor utilizados), con un encoder visual independiente distribuido como archivo `mmproj` y un total de 4.841.450.496 parametros. La ventana de contexto recomendada es de 32.768 tokens, suficiente para acomodar una pagina renderizada a 300 DPI (hasta ~8k tokens de imagen) y la transcripcion de salida (hasta ~24k tokens).
+El modelo base es multimodal (pipeline image-text-to-text) y emplea una arquitectura derivada de Qwen3.5-VL, segun se desprende de la plantilla de chat y del conversor utilizado. Con 4.841.450.496 parametros totales y una ventana de contexto configurada en 32k tokens, esta pensado para procesar una pagina completa a 300 DPI por peticion, con capacidad de generar hasta unos 24k tokens de salida en paginas densas.
 
-La relevancia de esta publicacion radica en que ofrece una alternativa cuantizada con calidad practicamente identica al modelo original: el build Q8_0 obtiene una media de 85,77 en ParseBench 2 frente a 85,56 del original servido con vLLM, ocupando 5,2 GB en disco. El autor descarta deliberadamente publicar un build de 4 bits por la perdida de precision observada en tablas financieras y de seguros.
+La relevancia de esta version GGUF radica en que permite ejecutar el parser en hardware local sin GPU de datacenter, manteniendo una calidad practicamente identica al modelo original servido con vLLM: la media en ParseBench 2 es de 85,77 para Q8_0 frente a 85,56 del original. El autor descarta publicar una cuantizacion de 4 bits por la perdida de precision observada en tablas financieras y de seguros.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-lenguaje tipo Qwen3-VL (transformer con encoder visual separado, checkpoint sin cabeza MTP) |
+| Arquitectura | Transformer multimodal derivada de Qwen3.5-VL (vision encoder + LM), sin cabeza MTP |
 | Parametros totales | 4.841.450.496 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens (recomendado por el autor) |
-| Tipos de cuantizacion | BF16, Q8_0 (no se publica Q4_K_M) |
-| Idiomas soportados | en (ingles) |
-| Licencia | ocria-1-license (licencia propia, categoria "other") |
-| Formato de pesos | GGUF (llama.cpp), con archivo `mmproj` separado para el encoder visual |
+| Longitud de contexto | 32.768 tokens (configurado en el Modelfile) |
+| Tipos de cuantizacion | BF16 y Q8_0 (no se publica Q4_K_M) |
+| Idiomas soportados | en |
+| Licencia | ocria-1-license (other) |
+| Formato de pesos | GGUF (llama.cpp), con mmproj f16 separado para el encoder visual |
 
 ## Arquitectura y entrenamiento
 
-OCRia-1 es un modelo multimodal de tipo image-text-to-text construido sobre una base Qwen3-VL, segun se deduce de la plantilla de chat empleada (la plantilla de Qwen3.5 activa el modo thinking por defecto) y del conversor de llama.cpp utilizado para la conversion. El checkpoint no incluye cabeza MTP (multi-token prediction), por lo que la conversion se realizo con la opcion `--no-mtp`. El encoder visual se distribuye como archivo independiente `mmproj-OCRia-1-f16.gguf` de 0,7 GB, con limites de pixeles configurados explicitamente (`clip.vision.image_min_pixels = 65536`, `clip.vision.image_max_pixels = 16777216`) para permitir imagenes de hasta 16,7 millones de pixeles, equivalentes a unos 16k tokens de imagen.
+El modelo es un transformer multimodal con un codificador visual separado (empaquetado como `mmproj-OCRia-1-f16.gguf`) y un modelo de lenguaje que consume los tokens de imagen. La plantilla de chat corresponde a Qwen3.5, con un modo de razonamiento ("thinking") que debe desactivarse para que el modelo emita el formato de salida esperado. El checkpoint no incluye cabeza MTP, por lo que la conversion se realizo con `--no-mtp`.
 
-No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO en la informacion proporcionada. La innovacion tecnica destacable de esta distribucion es el ajuste del archivo de vision: el conversor estandar de Qwen3-VL en llama.cpp no escribe los limites de pixeles del procesador, lo que por defecto limita las imagenes a 4096 tokens (aproximadamente media pagina a 300 DPI); el autor los incorpora manualmente para preservar la resolucion completa. La conversion se realizo con `convert_hf_to_gguf.py` en el commit `33aeb17` y la cuantizacion con `llama-quantize`.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La conversion a GGUF se hizo con `convert_hf_to_gguf.py` en el commit `33aeb17` y la cuantizacion con `llama-quantize`. Una innovacion tecnica relevante de este empaquetado es la correccion manual de los limites de pixeles del procesador (`clip.vision.image_min_pixels = 65536`, `clip.vision.image_max_pixels = 16777216`), ya que el conversor de Qwen3-VL de llama.cpp no los escribe y, sin ellos, las imagenes quedan limitadas a 4096 tokens, aproximadamente media pagina a 300 DPI.
 
 ## Capacidades
 
-- Parseo de documentos: transcripcion de paginas completas a Markdown estructurado, incluyendo texto, formato, tablas, graficos y formularios.
-- Procesamiento de imagenes de pagina a 300 DPI con resolucion completa (hasta 16,7 millones de pixeles).
-- Manejo de tablas complejas, incluidos dominios especializados como tablas financieras y declaraciones de seguros.
-- Interpretacion de graficos y formularios, con puntuaciones especificas en ParseBench 2 para cada dimension.
-- Modo conversacional compatible con la API de chat de llama.cpp y Ollama (endpoints compatibles con OpenAI).
-- Soporte de modo thinking mediante la plantilla de chat, aunque el autor recomienda desactivarlo (`enable_thinking: false`), ya que activado el modelo responde en un formato incorrecto.
-- Capacidad multilingue limitada al ingles segun los metadatos del modelo.
-- No se documentan capacidades de tool calling ni de razonamiento multi-paso en la informacion disponible.
+- Conversion de imagenes de documentos a Markdown estructurado, preservando texto y formato.
+- Extraccion de tablas, incluyendo tablas financieras y de expedientes de seguros.
+- Interpretacion de graficos y formularios.
+- Procesamiento de una pagina completa por peticion a 300 DPI y resolucion nativa (hasta 16,7 millones de pixeles, unos 16k tokens de imagen).
+- Generacion de salidas largas: hasta aproximadamente 24k tokens en paginas densas.
+- Modo thinking desactivable; con thinking activo el modelo responde en formato incorrecto.
+- Capacidades conversacionales basicas segun el tag del repositorio, aunque el uso previsto es de parsing de una sola pagina.
+- Soporte de function calling y agentes: no disponible en la informacion proporcionada.
+- Capacidades multilingues: limitadas a ingles.
 
 ## Casos de uso
 
-- Digitalizacion de archivos PDF escaneados: el modelo recibe cada pagina renderizada a 300 DPI y devuelve Markdown estructurado, lo que permite construir pipelines de conversion masiva de documentos a texto indexable sin servicios en la nube.
-- Extraccion de tablas financieras: con Q8_0 mantiene la precision en tablas (88,89 en ParseBench 2), por lo que es adecuado para procesar balances e informes economicos donde un build de 4 bits perderia 6,3 puntos.
-- Procesamiento de declaraciones de seguros: la dimension de formularios obtiene 83,06 en Q8_0, lo que lo hace util para extraer campos estructurados de pólizas y siniestros escaneados.
-- Alimentacion de pipelines RAG: al generar Markdown limpio, la salida puede dividirse en chunks e indexarse directamente en un sistema de recuperacion, integrandose con el ecosistema LlamaIndex del que proviene el modelo.
-- Despliegue en local con Ollama: gracias al build Q8_0 de 5,2 GB, un equipo de sobremesa puede ejecutar el modelo con `ollama run llamaindex/ocria-1 --think=false ./page.png` sin GPU de datacenter.
-- Conversion de graficos e infografias a descripcion textual: la dimension de charts obtiene 73,83 en Q8_0, suficiente para extraer la informacion de graficos en informes y presentaciones.
-- Digitalizacion de documentacion en macOS y Windows: al distribuirse como GGUF para llama.cpp, cubre estaciones de trabajo no Linux donde otras alternativas de servido no estan disponibles.
+- Digitalizacion de facturas y extractos financieros: el modelo extrae tablas con alta fidelidad (88,89 en la dimension Tables de ParseBench 2 con Q8_0), lo que permite alimentar sistemas contables con datos estructurados a partir de PDF escaneados.
+- Procesamiento de expedientes de seguros: los formularios obtienen una puntuacion de 83,06, adecuada para pipelines de tramitacion que necesitan convertir declaraciones y partes en Markdown revisable.
+- Construccion de bases de conocimiento RAG: al producir Markdown limpio y estructurado, la salida se indexa directamente en sistemas de recuperacion como los de LlamaIndex, evitando etapas intermedias de limpieza.
+- Extraccion de contenido de articulos academicos y manuales tecnicos: la ventana de 32k tokens y la resolucion de 300 DPI permiten capturar texto pequeno y figuras en una sola pasada.
+- Despliegue en estaciones de trabajo sin GPU de datacenter: la version Q8_0 (5,2 GB) mas el encoder visual (0,7 GB) caben en GPUs de consumo, lo que facilita el procesamiento local de documentos sensibles sin enviarlos a la nube.
+- Automatizacion de ingesta documental en macOS y Windows: la integracion con Ollama (`ollama run llamaindex/ocria-1 --think=false ./page.png`) permite incorporar el parser a herramientas de escritorio y scripts de linea de comandos.
+- Analisis de graficos en informes: con 73,83 en la dimension Charts, el modelo puede transcribir la informacion de graficos simples en Markdown para su posterior analisis.
 
 ## Benchmarks y rendimiento
 
-Resultados en ParseBench 2 sobre una muestra fija de 301 paginas (25 por subconjunto, excepto layout), con paginas a 300 DPI, decodificacion greedy y thinking desactivado. El original se sirvio con vLLM; los builds GGUF con `llama-server` de llama.cpp y los mismos ajustes de proveedor.
+Resultados de ParseBench 2 sobre una muestra fija de 301 paginas (25 por subconjunto, salvo layout), con las mismas condiciones de evaluacion (300 DPI, greedy, thinking off):
 
 | Dimension | OCRia-1 (vLLM) | BF16 GGUF | Q8_0 GGUF |
 |---|---:|---:|---:|
@@ -61,43 +62,46 @@ Resultados en ParseBench 2 sobre una muestra fija de 301 paginas (25 por subconj
 | Forms | 83,10 | 81,93 | 83,06 |
 | **Media** | **85,56** | **85,57** | **85,77** |
 
-El autor senala que las diferencias entre builds estan dentro del ruido de muestreo: con 25 paginas por subconjunto, las dimensiones individuales varian un par de puntos entre ejecuciones. No se publican resultados de benchmarks generales (MMLU, HumanEval, GSM8K) en la informacion disponible.
+El autor indica que las diferencias por dimension estan dentro del ruido de muestreo (25 paginas por subconjunto). No se publican resultados de benchmarks generales como MMLU, HumanEval o GSM8K en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el build Q8_0 ocupa 5,2 GB y el BF16 9,7 GB en disco; a ello hay que sumar el encoder visual `mmproj` de 0,7 GB y el espacio de contexto (hasta 32k tokens), por lo que se recomienda reservar entre 8 y 12 GB de VRAM para Q8_0 y entre 12 y 16 GB para BF16.
-- GPU recomendadas: no se especifican modelos concretos en la informacion disponible; por tamano, el build Q8_0 es compatible con GPUs de consumo de gama alta (16 GB o mas) y el BF16 requiere GPUs profesionales tipo A100 o H100 para mayor comodidad.
-- Cabe en GPU de consumo: si, el build Q8_0 esta disenado para ello, dado su tamano de 5,2 GB mas el encoder visual.
-- Opciones de despliegue: llama.cpp (`llama-server` con `--mmproj`, `-c 32768`, `-fa on` y `--jinja`) y Ollama (modelo publicado como `llamaindex/ocria-1`, tags `latest` y `q8_0`; tambien via `hf.co/llamaindex/OCRia-1-GGUF:Q8_0`). El endpoint de llama.cpp es compatible con la API de OpenAI.
+- VRAM estimada: Q8_0 requiere aproximadamente 6 GB (5,2 GB de pesos mas 0,7 GB del encoder visual); BF16 requiere aproximadamente 10,4 GB (9,7 GB mas 0,7 GB).
+- GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para Q8_0; 12 GB o mas para BF16. No se especifican modelos concretos (A100, H100, RTX 4090) en la informacion proporcionada.
+- Cabe en GPU de consumo: si, con Q8_0 en tarjetas de 8 GB o superiores; BF16 requiere al menos 12 GB.
+- Opciones de despliegue: llama.cpp (`llama-server`), Ollama (imagenes `llamaindex/ocria-1` con etiquetas `latest` y `bf16`), y endpoint compatible con OpenAI.
+- Parametros de ejecucion recomendados: `-c 32768 -fa on`, `temperature=0`, `chat_template_kwargs={"enable_thinking": false}`.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| OCRia-1-GGUF (Q8_0) | 4,84B | 32k | Parseo de documentos a Markdown | ocria-1-license | GGUF en HF, Ollama |
-| OCRia-1 (original) | 4,84B | 32k | Parseo de documentos a Markdown | ocria-1-license | Pesos HF, servido con vLLM |
-| Build Q4_K_M (no publicado) | 4,84B | 32k | Parseo de documentos a Markdown | ocria-1-license | Descartado por perdida de precision (-6,3 en tablas financieras, -4,8 en seguros) |
+No se dispone de datos de benchmarks ni especificaciones de modelos alternativos en la informacion proporcionada. La unica comparacion documentada es interna, entre las variantes del propio modelo:
 
-No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
+| Variante | Parametros | Contexto | Media ParseBench 2 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| OCRia-1 (vLLM, BF16) | 4,84B | 32k | 85,56 | ocria-1-license | Hugging Face |
+| OCRia-1-GGUF BF16 | 4,84B | 32k | 85,57 | ocria-1-license | Hugging Face, Ollama |
+| OCRia-1-GGUF Q8_0 | 4,84B | 32k | 85,77 | ocria-1-license | Hugging Face, Ollama |
+
+Comparativa con modelos de la misma categoria: no disponible.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles segun los metadatos del modelo; no se documenta soporte de otros idiomas.
-- Procesa una sola pagina por peticion; los documentos multipagina requieren orquestacion externa.
-- El modo thinking debe desactivarse (`--think=false` o `enable_thinking: false`); activado, el modelo responde en un formato incorrecto.
-- La resolucion de entrada afecta a la precision: bajar de 300 DPI penaliza el texto pequeno.
-- No se publica build de 4 bits; el autor documenta perdidas de 6,3 puntos en tablas financieras y 4,8 en tablas de seguros con Q4_K_M, ademas de mayor tendencia a alcanzar el limite de salida.
-- Riesgo de alucinacion en la transcripcion de documentos no evaluado ni documentado en la informacion disponible.
-- La licencia `ocria-1-license` es una licencia propia (categoria "other"); es imprescindible revisar el archivo LICENSE y la model card principal antes de cualquier uso comercial.
-- El repo tiene 0 descargas y 1 like en el momento de la consulta, por lo que no hay evidencia de uso en produccion.
-- El modelo no incluye cabeza MTP, lo que descarta tecnicas de decodificacion especulativa basadas en ella.
+- Solo soporta ingles; no se documentan capacidades multilingues.
+- Procesa una unica pagina por peticion; no esta disenado para documentos multipagina en una sola llamada.
+- El modo thinking debe desactivarse explicitamente; con thinking activo el modelo responde en un formato incorrecto.
+- La cuantizacion Q4_K_M no se publica por perdida de calidad: 6,3 puntos en tablas financieras y 4,8 en tablas de expedientes de seguros, ademas de mayor tendencia a alcanzar el limite de salida (6 paginas frente a 4).
+- Resoluciones inferiores a 300 DPI reducen la precision en texto pequeno.
+- Riesgo de alucinacion en la transcripcion de contenido: no se documenta una evaluacion especifica de fidelidad literal, solo puntuaciones agregadas por dimension.
+- La licencia `ocria-1-license` es de tipo "other"; deben revisarse los terminos del archivo LICENSE antes de cualquier uso comercial.
+- Los resultados de benchmarks se basan en 25 paginas por subconjunto, por lo que las diferencias de pocos puntos entre ejecuciones no son significativas.
+- El repositorio ocupa 15,5 GB, lo que puede complicar su descarga y almacenamiento en entornos limitados.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF): https://huggingface.co/llamaindex/OCRia-1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/llamaindex/OCRia-1-GGUF
 - Modelo base OCRia-1: https://huggingface.co/llamaindex/OCRia-1
 - Benchmarks del modelo base: https://huggingface.co/llamaindex/OCRia-1#benchmarks
 - Licencia del modelo base: https://huggingface.co/llamaindex/OCRia-1#license
-- ParseBench (harness de evaluacion): https://github.com/run-llama/ParseBench
-- Modelo en Ollama: https://ollama.com/llamaindex/ocria-1
+- Repositorio ParseBench: https://github.com/run-llama/ParseBench
+- Pagina en Ollama: https://ollama.com/llamaindex/ocria-1

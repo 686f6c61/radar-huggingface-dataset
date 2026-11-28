@@ -1,93 +1,95 @@
 # frankmorales2020/voxtral-mini-4b-realtime-2602-topo-triton-GGUF
 
 ## Resumen
-Voxtral Mini 4B Realtime (`2602`) es un modelo de reconocimiento automático del habla (ASR) publicado por Frank Morales Aguilera (Sovereign Machine Laboratory, SOMALA) en formato GGUF, pensado para su ejecución local con `llama.cpp` mediante la herramienta `llama-mtmd-cli`. El modelo combina un decodificador de texto/ASR de aproximadamente 3.434 millones de parámetros con un codificador y adaptador de audio independiente en F16 (archivo `mmproj`, 423 tensores, 1,99 GB) que es obligatorio para procesar entrada de audio. La release se distribuye en dos cuantizaciones del decodificador: Q8_0 (3,66 GB) y BF16 (6,88 GB).
+El modelo `frankmorales2020/voxtral-mini-4b-realtime-2602-topo-triton-GGUF` es una distribucion en formato GGUF de Voxtral Mini 4B Realtime (version `2602`), un modelo de reconocimiento automatico del habla (ASR) derivado de la familia Voxtral de Mistral. La publicacion la firma Frank Morales Aguilera (Sovereign Machine Laboratory, SOMALA, Montreal) y esta pensada para su uso con `llama.cpp`, concretamente con la herramienta `llama-mtmd-cli`, que permite pasar audio junto con el proyector multimodal (`mmproj`).
 
-El interés de esta ficha reside en que se trata de una derivación gobernada por "Topological Continual Backpropagation" (Topo-CBP) y entrenada en PyTorch nativo con `TopoAdamW`, según declara el autor. El modelo se orienta a transcripción de voz en tiempo real por chunks de 320 ms, con un factor de tiempo real medido de 0,52x en Q8_0 y 0,40x en BF16 sobre una muestra de 105,50 s a 16 kHz. Es, por tanto, una opción para transcripción local en CPU/GPU sin depender de servicios en la nube.
+El paquete incluye dos cuantizaciones del decodificador de texto/ASR (`Q8_0` de 3,66 GB y `BF16` de 6,88 GB) y un unico codificador de audio en `F16` (`mmproj`, 1,99 GB, 423 tensores). El modelo base declara 3.434.118.144 parametros reales en safetensors y un repositorio de 12,5 GB. La model card indica que el entrenamiento se realizo en PyTorch nativo con `TopoAdamW` bajo un regimen denominado Topological Continual Backpropagation (Topo-CBP), una variante de entrenamiento continuo que no se detalla tecnicamente en la informacion disponible.
 
-La relevancia es limitada pero concreta: el repositorio no tiene descargas ni likes en el momento de la consulta, la licencia no está declarada y la model card es fundamentalmente una guía de despliegue. Debe evaluarse como un artefacto experimental de un autor individual, no como un modelo con validación comunitaria amplia.
+La relevancia actual del modelo radica en que ofrece una via practica de ejecutar ASR multimodal de la familia Voxtral en infraestructura local mediante `llama.cpp`, sin depender de APIs propietarias. No obstante, la informacion publicada es escasa: no se especifican licencia, idiomas soportados, longitud de contexto ni resultados de benchmarks estandar (WER, MMLU, etc.), por lo que su evaluacion en produccion exige validacion propia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal audio-texto (decodificador de texto/ASR + codificador y adaptador de audio F16 en `mmproj`); gobernado por Topological Continual Backpropagation (Topo-CBP) según el autor |
-| Parametros totales | 3.434.118.144 (dato de safetensors) |
+| Arquitectura | Transformer multimodal (codificador de audio + adaptador + decodificador de texto); variante Voxtral Mini 4B Realtime, entrenada con Topo-CBP y `TopoAdamW` |
+| Parametros totales | 3.434.118.144 (dato real en safetensors) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 y BF16 en el decodificador; F16 en el codificador/adaptador de audio (`mmproj`) |
+| Tipos de cuantizacion | `Q8_0` (decodificador, 3,66 GB) y `BF16` (decodificador, 6,88 GB); `F16` para el `mmproj` de audio (1,99 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (`llama.cpp`), con archivo `mmproj` separado para audio |
+| Formato de pesos | GGUF (decodificador y `mmproj`); el modelo base original se distribuye en safetensors |
 
 ## Arquitectura y entrenamiento
-La información disponible describe un decodificador de texto/ASR de 3.434 millones de parámetros y un codificador de audio con adaptador multimodal empaquetado aparte en F16 (`mmproj-voxtral-mini-4b-realtime-2602-f16.gguf`, 423 tensores, 1,99 GB). La ejecución requiere pasar ambos archivos a `llama-mtmd-cli` (`-m` para el decodificador y `--mmproj` para el codificador de audio). El procesamiento es por streaming en chunks de 320 ms (la métrica de latencia se expresa por paso de 80 ms), lo que sugiere una arquitectura orientada a ASR incremental más que a transcripción por lotes de audio completo.
+La arquitectura sigue el esquema multimodal de Voxtral: un codificador de audio en `F16` (archivo `mmproj`, 423 tensores con prefijos `a.*` y `mm.a.*`) que proyecta las representaciones acusticas hacia el espacio del decodificador de texto, y un decodificador tipo transformer de aproximadamente 3,43 mil millones de parametros. El proceso de inferencia requiere obligatoriamente ambos artefactos: el GGUF del decodificador (`-m`) y el `mmproj` (`--mmproj`), tal como se documenta para `llama-mtmd-cli`.
 
-El autor declara que el modelo está gobernado por Topological Continual Backpropagation (Topo-CBP) y entrenado en PyTorch nativo con el optimizador `TopoAdamW`. No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. Tampoco se detalla la arquitectura interna del codificador de audio (número de capas, tipo de atención, resolución temporal) ni si el decodificador emplea atención lineal, decodificación especulativa u otras innovaciones. Todos estos datos deben considerarse no disponibles.
+El autor indica que el modelo fue entrenado en PyTorch nativo con `TopoAdamW` bajo Topological Continual Backpropagation (Topo-CBP), y que la version GGUF se genero con un notebook basado en Triton (`triton_Voxtral_topo_cbp_gguf.ipynb`). No se especifican en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF o DPO. Tampoco se detalla la innovacion concreta de Topo-CBP mas alla de su nombre y del optimizador asociado.
 
 ## Capacidades
-- Reconocimiento automático del habla (ASR) y transcripción de audio a texto en local mediante `llama.cpp`.
-- Procesamiento de audio en streaming por chunks de 320 ms, apto para transcripción incremental.
-- Entrada de audio a 16 kHz mediante el codificador `mmproj` en F16.
-- Generación de texto condicionada por audio (el pipeline se etiqueta como "conversational").
-- Compatibilidad con `llama-mtmd-cli` y con el ecosistema GGUF de `llama.cpp`.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se declaran idiomas).
-- Capacidades especiales (modo thinking, visión, audio adicional): solo audio; visión y otras modalidades no disponibles.
+- Reconocimiento automatico del habla (ASR) a partir de audio de entrada, con salida de texto transcrito.
+- Procesamiento de audio en formato WAV mono a 16 kHz (el ejemplo de la model card convierte explicitamente a `pcm_s16le`, 16 kHz, mono).
+- Procesamiento por chunks: el benchmark del autor usa chunks de 320 ms y mide latencia por paso de 80 ms, lo que sugiere un diseno orientado a flujo continuo.
+- Integracion con `llama.cpp` mediante `llama-mtmd-cli` y con `huggingface_hub` para la descarga programatica de los artefactos.
+- Compatibilidad declarada con `mistral-common` (tag de la model card).
+- Soporte de tool calling, agentes, vision, audio bidireccional o modo thinking: no disponible en la informacion proporcionada.
+- Cobertura multilingue: no disponible.
 
 ## Casos de uso
-- Transcripción local de reuniones y entrevistas: el modelo procesa audio a 16 kHz por chunks de 320 ms con `llama-mtmd-cli`, lo que permite transcribir grabaciones sin enviar datos a servicios externos y manteniendo la privacidad del contenido.
-- Subtitulado y generación de actas en tiempo casi real: con un factor de tiempo real de 0,52x en Q8_0 sobre hardware de referencia, es viable para flujos donde se tolera un retardo moderado respecto al audio original.
-- Procesamiento por lotes de archivos de audio en pipelines de datos: el formato GGUF y la descarga vía `huggingface_hub` permiten integrar el modelo en scripts de Python que recorran directorios de WAV de 16 kHz y generen transcripciones.
-- Asistentes de voz conversacionales en local: la etiqueta "conversational" y la modalidad audio-texto sugieren su uso como front-end de ASR para asistentes que después pasan el texto a un LLM.
-- Despliegue en entornos con requisitos de soberanía de datos: al ejecutarse con `llama.cpp` sobre hardware propio, encaja en organizaciones que no pueden usar APIs de ASR en la nube por cumplimiento normativo.
-- Prototipado e investigación en ASR con optimizadores alternativos: al estar gobernado por Topo-CBP y `TopoAdamW`, sirve como banco de pruebas para comparar dinámicas de entrenamiento frente a modelos ASR convencionales.
-- Evaluación de cuantizaciones en ASR: la release incluye Q8_0 y BF16 con métricas de latencia comparadas, lo que facilita estudios de compromiso entre precisión y velocidad en transcripción.
+- Transcripcion de reuniones y actas: el modelo puede procesar audio de 16 kHz y generar la transcripcion completa; el benchmark del autor sobre 105,50 s de audio demuestra que es viable con `llama.cpp`, aunque con un factor de tiempo real de 0,52x en `Q8_0`, por lo que conviene usarlo en modo diferido y no en directo estricto.
+- Subtitulado y postproduccion: la salida de texto permite generar subtitulos para video; el uso de chunks de 320 ms y pasos de 80 ms facilita la alineacion aproximada por segmentos, aunque la precision temporal no se documenta.
+- Asistentes de voz en local: al ejecutarse con `llama.cpp` y pesos GGUF, puede desplegarse en equipos sin GPU dedicada o con GPU de consumo, lo que encaja en escenarios de privacidad donde el audio no debe salir del dispositivo.
+- Analisis de llamadas de atencion al cliente: transcripcion por lotes de grabaciones para su posterior analisis de calidad o cumplimiento, usando la cuantizacion `Q8_0` para reducir coste de almacenamiento (3,66 GB frente a 6,88 GB en `BF16`).
+- Investigacion en ASR y entrenamiento continuo: el modelo sirve como banco de pruebas para estudiar el efecto de Topo-CBP y `TopoAdamW` frente a variantes de Voxtral sin dicho entrenamiento, comparando transcripciones sobre el mismo audio.
+- Prototipado de pipelines multimodales en `llama.cpp`: util para validar la ruta `llama-mtmd-cli` con `--mmproj` y audio en WAV, antes de migrar a otros formatos o cuantizaciones.
+- Archivado y busqueda de contenido audiovisual: transcripcion masiva de archivos de audio para indexacion textual y busqueda posterior, aprovechando que el modelo cabe en un repositorio de 12,5 GB y puede descargarse con `huggingface_hub`.
 
 ## Benchmarks y rendimiento
-El autor publica métricas de ejecución (no de calidad de transcripción) sobre una muestra de audio de 105,50 s a 16 kHz, 1.330 tokens y chunks de 320 ms, evaluadas con `llama-mtmd-cli` y el `mmproj` F16:
+El autor publica un unico benchmark end-to-end con `llama-mtmd-cli` sobre un audio de 105,50 s a 16 kHz, 1.330 tokens y chunks de 320 ms, comparando `Q8_0` y `BF16`:
 
 | Metrica | Q8_0 | BF16 | Diferencia (BF16 vs Q8_0) |
 |---|---|---|---|
 | Tamano del decodificador GGUF | 3,66 GB | 6,88 GB (6,40 GiB) | +3,22 GB (~1,88x mayor) |
-| Codificador de audio (F16 `mmproj`) | 71,73 s | 71,39 s | -0,34 s |
-| Tiempo del decodificador de texto | 131,77 s | 192,49 s | +60,72 s (+46,1% más lento) |
-| Tiempo total | 203,52 s | 263,90 s | +60,38 s (+29,7% más lento) |
+| Codificador de audio (F16 mmproj) | 71,73 s | 71,39 s | -0,34 s |
+| Tiempo del decodificador de texto | 131,77 s | 192,49 s | +60,72 s (+46,1% mas lento) |
+| Tiempo total | 203,52 s | 263,90 s | +60,38 s (+29,7% mas lento) |
 | Factor de tiempo real | 0,52x | 0,40x | -0,12x |
-| Latencia por paso (por 80 ms) | 153,0 ms | 198,4 ms | +45,4 ms (+29,7%) |
+| Latencia por paso (cada 80 ms) | 153,0 ms | 198,4 ms | +45,4 ms (+29,7%) |
 
-No se han publicado resultados de benchmarks de calidad (WER, MMLU, HumanEval, GSM8K u otros) en la información disponible.
+No se han publicado en la informacion disponible resultados de benchmarks estandar de ASR (WER, CER), MMLU, HumanEval, GSM8K ni comparaciones con otros modelos Voxtral o de la competencia.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia: el decodificador Q8_0 ocupa 3,66 GB y el BF16 6,88 GB; el `mmproj` F16 añade 1,99 GB. En total, aproximadamente 5,7 GB para Q8_0 y 8,9 GB para BF16, más overhead de contexto y buffers de `llama.cpp`.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, Q8_0 debería caber en GPUs consumer con 8 GB o más de VRAM y BF16 en GPUs con 12 GB o más, aunque el autor no confirma hardware ni backend (CUDA, Metal, ROCm).
-- Cabe en GPU consumer: previsiblemente sí en Q8_0 para tarjetas de 8 GB o superiores, y en BF16 para 12 GB o superiores; sin confirmación oficial.
-- Opciones de despliegue: `llama.cpp` mediante `llama-mtmd-cli` con `-m` y `--mmproj`. No se documentan integraciones con vLLM, TGI, Ollama ni llama-cpp-python.
-- Latencia y throughput: factor de tiempo real de 0,52x (Q8_0) y 0,40x (BF16) sobre la muestra de referencia; latencia de 153,0 ms y 198,4 ms por paso de 80 ms respectivamente. El codificador de audio tarda unos 71,5 s en procesar 105,50 s de audio en ambos casos.
+- VRAM estimada: no disponible de forma explicita. Como referencia de tamano en disco, el decodificador `Q8_0` ocupa 3,66 GB y el `mmproj` F16 1,99 GB (unos 5,65 GB en total); el decodificador `BF16` ocupa 6,88 GB y el `mmproj` 1,99 GB (unos 8,87 GB en total). La VRAM necesaria sera igual o superior a estos tamanos segun el backend y el contexto configurado.
+- GPU recomendadas: no disponible en la informacion proporcionada. El modelo puede ejecutarse en CPU mediante `llama.cpp`, ya que el benchmark del autor no especifica la GPU empleada.
+- GPU de consumo: no se confirma en la informacion disponible; por tamano, las cuantizaciones `Q8_0` y `BF16` son compatibles con GPUs de consumo de 8-12 GB de VRAM en teoria, pero no hay confirmacion del autor.
+- Opciones de despliegue: `llama.cpp` mediante `llama-mtmd-cli` (documentado por el autor). No se mencionan vLLM, TGI, Ollama ni otras herramientas.
+- Latencia y throughput: factor de tiempo real de 0,52x en `Q8_0` y 0,40x en `BF16` sobre el audio de prueba; latencia por paso de 153,0 ms (`Q8_0`) y 198,4 ms (`BF16`) cada 80 ms de audio. El hardware usado para estas mediciones no se especifica.
 
 ## Comparativa con modelos similares
-No se dispone de datos verificables de modelos comparables en la información proporcionada (ni parámetros, ni contexto, ni licencia, ni benchmarks de calidad de los alternativas). La siguiente tabla recoge únicamente lo que puede afirmarse con los datos disponibles:
+No se dispone en la informacion proporcionada de datos de otros modelos comparables (Voxtral Mini original, Whisper large-v3, etc.) en cuanto a parametros, contexto, rendimiento o licencia. Por tanto, la comparativa se limita a las dos cuantizaciones publicadas en este mismo repositorio:
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Benchmark de calidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| voxtral-mini-4b-realtime-2602-topo-triton (este) | 3.434.118.144 | no disponible | GGUF | no disponible | no disponible (solo métricas de latencia) |
-| Alternativas ASR de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
+| voxtral-mini-4b-realtime-2602-topo-triton Q8_0 | 3,43 B (decodificador) | no disponible | no disponible | GGUF | Hugging Face |
+| voxtral-mini-4b-realtime-2602-topo-triton BF16 | 3,43 B (decodificador) | no disponible | no disponible | GGUF | Hugging Face |
+| mmproj-voxtral-mini-4b-realtime-2602-f16 | no disponible (423 tensores) | no disponible | no disponible | GGUF | Hugging Face |
+
+Comparativa con modelos de la competencia: no disponible.
 
 ## Limitaciones y advertencias
-- La licencia no está declarada en el repositorio, por lo que no puede confirmarse el uso comercial; debe contactarse con el autor antes de cualquier despliegue en producción.
-- El repositorio no registra descargas ni likes, y la model card es esencialmente una guía de despliegue: no hay validación comunitaria ni evaluación independiente de la calidad de transcripción (WER).
-- No se especifican los idiomas soportados; no debe asumirse cobertura multilingüe.
-- No se documenta la longitud de contexto del decodificador, lo que limita la planificación de transcripciones largas sin segmentación manual.
-- El modelo requiere obligatoriamente dos archivos (decodificador y `mmproj`) y la herramienta `llama-mtmd-cli`; un uso incorrecto de `LD_LIBRARY_PATH` o la omisión del `mmproj` impide la transcripción.
-- El factor de tiempo real es inferior a 1x (0,52x en Q8_0), es decir, más lento que el tiempo real en el hardware de referencia; no es adecuado para aplicaciones de baja latencia estricta sin hardware más potente.
-- Riesgo de alucinación y de errores de transcripción en audio con ruido, acentos o solapamiento de hablantes: no hay datos publicados que cuantifiquen este riesgo.
-- El entrenamiento con Topo-CBP y `TopoAdamW` es una innovación declarada por el autor sin validación externa; conviene tratar el modelo como experimental.
-- No se documentan sesgos conocidos ni evaluaciones de robustez; se recomienda auditar las transcripciones antes de usarlas en dominios sensibles (legal, médico, financiero).
+- La licencia no esta declarada en la informacion disponible; antes de un uso comercial es imprescindible verificar los terminos del modelo base Voxtral y del repositorio.
+- No se especifican los idiomas soportados; no se puede asumir cobertura multilingue sin validacion.
+- No se publican metricas de calidad de transcripcion (WER/CER), por lo que el rendimiento real en acentos, ruido de fondo o dominios especializados es desconocido.
+- El factor de tiempo real es inferior a 1x (0,52x en `Q8_0`, 0,40x en `BF16`), lo que descarta el uso en tiempo real estricto sobre el hardware no especificado del benchmark.
+- El modelo requiere obligatoriamente el archivo `mmproj` junto con el decodificador; usar solo el GGUF del decodificador no permite entrada de audio.
+- El audio de entrada debe convertirse a WAV mono a 16 kHz (`pcm_s16le`) segun el ejemplo del autor; otros formatos pueden no funcionar directamente con `llama-mtmd-cli`.
+- El origen del entrenamiento (Topo-CBP, `TopoAdamW`) no esta documentado tecnicamente en la informacion disponible, lo que dificulta evaluar su impacto frente a variantes estandar de Voxtral.
+- Riesgo de alucinacion y sesgos: no evaluado en la informacion disponible; en ASR es habitual la invencion de texto en segmentos con silencio o ruido, pero no hay datos del autor al respecto.
+- El repositorio tiene 445 descargas y 0 likes, lo que indica una validacion comunitaria muy limitada.
 
 ## Enlaces
 - Repositorio Hugging Face: https://huggingface.co/frankmorales2020/voxtral-mini-4b-realtime-2602-topo-triton-GGUF
-- Web del autor/organización (SOMALA): https://sovereign-machine-lab.ai
-- ORCID del autor: https://orcid.org/0009-0003-9528-0745
-- `llama.cpp` (repositorio del runtime): https://github.com/ggml-org/llama.cpp
-- Paper, blog o demo adicionales: no disponibles en la información proporcionada.
+- Notebook de conversion a GGUF (Triton, Topo-CBP): https://github.com/frank-morales2020/AST/blob/main/triton_Voxtral_topo_cbp_gguf.ipynb
+- Web del autor (SOMALA): `sovereign-machine-lab.ai`
+- ORCID del autor: `0009-0003-9528-0745`
+- Audio de ejemplo usado en el benchmark (Wikimedia Commons): https://upload.wikimedia.org/wikipedia/commons/3/38/President_Barack_Obama_Recites_President_Abraham_Lincoln%27s_Gettysburg_Address.wav
+- Paper, blog o demo adicionales: no disponible en la informacion proporcionada.

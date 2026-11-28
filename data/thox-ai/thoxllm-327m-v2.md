@@ -2,95 +2,85 @@
 
 ## Resumen
 
-ThoxLLM-327M-v2 es un modelo de lenguaje de tipo decoder-only con 324.162.560 parámetros (etiquetado comercialmente como 327M), desarrollado desde cero por THOX.ai LLC. Forma parte de la línea de investigación de modelos pequeños de THOX y se distribuye como checkpoint de investigación con pesos en safetensors y una build GGUF separada para su uso con llama.cpp y Ollama. Su diseño prioriza la exportación limpia a GGUF y la ejecución local en hardware propio, en línea con la propuesta "local-first" del fabricante.
+ThoxLLM-327M-v2 es un modelo de lenguaje decoder-only de 327 millones de parámetros entrenado desde cero por THOX.ai LLC, sin partir de ningún modelo base externo. Forma parte de la línea de investigación de modelos pequeños de THOX y está diseñado específicamente para exportación limpia a GGUF, lo que facilita su despliegue en llama.cpp y Ollama. Emplea una arquitectura propietaria denominada `thoxllm`, con atención de tipo GQA, normalización RMSNorm, embeddings rotatorios RoPE y feed-forward SwiGLU.
 
-Arquitectura transformer decoder-only convencional con normalización RMSNorm, atención con GQA (16 cabezas de consulta y 8 cabezas KV), RoPE para codificación posicional, feed-forward SwiGLU y embeddings atados. Consta de 20 capas con tamaño oculto de 1024, dimensión intermedia de 3413 y un vocabulario de 50.304 tokens. El contexto máximo es de 2048 tokens y los pesos están en bfloat16.
+El modelo cuenta con 324.162.560 parámetros reales según los pesos en safetensors, 20 capas, dimensión oculta de 1024 y una ventana de contexto máxima de 2048 tokens. Su vocabulario es de 50.304 entradas con embeddings atados (tied embeddings) y se distribuye en bfloat16. Está pensado para generación de texto en dispositivos locales y entornos edge dentro del stack THOX, no como asistente público alineado en seguridad.
 
-La relevancia del modelo es doble: por un lado, es un ejemplo de entrenamiento from-scratch de un modelo pequeño con licencia Apache-2.0; por otro, su arquitectura personalizada (`thoxllm`) implica que el `config.json` no incluye la clave `architectures`, por lo que los cargadores estándar de `AutoModel` pueden no funcionar directamente. El autor no ha publicado resultados de benchmarks (no hay resultado GATE49 para este modelo), por lo que su evaluación debe hacerse de forma empírica.
+Su relevancia actual reside en dos factores: por un lado, es un checkpoint de investigación publicado con licencia Apache-2.0, lo que permite uso comercial y modificación; por otro, su diseño orientado a GGUF y su tamaño reducido lo convierten en una opción viable para inferencia en hardware de consumo. No obstante, el autor advierte explícitamente de que se trata de un modelo base de 327M con comportamiento de completado y fiabilidad factual limitada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only personalizada (`thoxllm`), SwiGLU, RMSNorm, RoPE, GQA |
-| Parametros totales | 324.162.560 (327M nominales) |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Decoder-only propietaria `thoxllm` (SwiGLU, RMSNorm, RoPE, GQA) |
+| Parámetros totales | 324.162.560 (327M nominales) |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | 2048 tokens |
-| Tipos de cuantizacion | GGUF (build separada; p. ej. Q4_K_M); pesos originales en bfloat16 |
-| Idiomas soportados | Ingles (principal); calidad inferior en otros idiomas |
+| Tipos de cuantización | No disponible en la información proporcionada (existe build GGUF con variantes como Q4_K_M) |
+| Idiomas soportados | Inglés (en); calidad inferior en otros idiomas |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (model.safetensors, 648.339.368 bytes); GGUF en repo aparte |
-
-Datos adicionales de arquitectura: 20 capas, hidden size 1024, 16 cabezas de atención, 8 cabezas KV (GQA), FFN/intermediate 3413, vocabulario 50.304, embeddings atados, dtype bfloat16.
+| Formato de pesos | Safetensors (bfloat16); GGUF en repo separado |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un decoder-only transformer de 20 capas con tamaño oculto de 1024 y dimensión intermedia de 3413. Emplea RMSNorm para la normalización, RoPE como codificación posicional, atención con grouped-query attention (16 cabezas de consulta frente a 8 cabezas KV, ratio 2:1) y una feed-forward SwiGLU estándar. Los embeddings de entrada y salida están atados, lo que reduce el recuento de parámetros y es coherente con el tamaño de vocabulario de 50.304 tokens. Los pesos se almacenan en bfloat16.
+El modelo usa un transformer decoder-only con 20 capas, hidden size de 1024 y 16 cabezas de atención con 8 cabezas KV (GQA), lo que reduce el coste de memoria en la caché KV durante la inferencia. La dimensión intermedia del FFN es 3413, el vocabulario es de 50.304 tokens y los embeddings están atados. La normalización es RMSNorm y las activaciones del feed-forward son SwiGLU; las posiciones se codifican con RoPE. El dtype de los pesos es bfloat16 y el checkpoint completo ocupa aproximadamente 648 MB.
 
-El entrenamiento se realizó desde cero por THOX.ai LLC como parte de su línea de investigación de modelos pequeños; no se usó ningún modelo base externo. La model card indica que el corpus y el procedimiento son los descritos en la tarjeta en el momento del lanzamiento, pero no detalla el número de tokens, la composición del dataset ni si hubo fases de RLHF o DPO. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal. La decisión de diseño más destacable es la arquitectura personalizada orientada a una exportación limpia a GGUF.
+El entrenamiento se realizó desde cero por THOX.ai LLC como parte de su línea de investigación de modelos pequeños, sin modelo base externo. La model card no especifica el número de tokens de entrenamiento, la composición del corpus ni si hubo fases de RLHF o DPO. El autor indica que el comportamiento y los sesgos reflejan los datos de entrenamiento, mayoritariamente en inglés. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Generación de texto de tipo completion: el modelo está pensado para continuar texto, no como asistente conversacional alineado.
-- Razonamiento y conocimiento factual limitados, propios de un modelo base de 327M parámetros.
-- Generación de código y matemáticas: capacidad posible pero no evaluada ni documentada.
-- Tool calling / function calling: no documentado; no se anuncia soporte.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: limitadas; el entrenamiento es mayoritariamente en inglés y la calidad en otros idiomas es inferior.
+- Generación de texto en inglés con comportamiento de completado (completion-style), adecuado para tareas de continuación y generación libre.
+- Razonamiento básico y respuesta a preguntas simples, con fiabilidad limitada por el tamaño del modelo.
+- Soporte de tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el tamaño y el comportamiento de completado lo hacen poco adecuado para flujos agénticos complejos.
+- Capacidades multilingües: limitadas; el modelo está entrenado principalmente en inglés y el autor advierte de menor calidad en otros idiomas.
 - Capacidades especiales (thinking mode, visión, audio): no disponibles.
-- Ejecución local en dispositivos edge dentro del stack THOX (ThoxOS, MeshStack) y vía Ollama/llama.cpp con la build GGUF.
+- Exportación a GGUF para ejecución en llama.cpp y Ollama.
 
 ## Casos de uso
 
-- Generación de texto en dispositivos edge: el modelo cabe en memoria de dispositivos de gama baja gracias a sus 324M de parámetros y a la cuantización GGUF (Q4_K_M), lo que permite autocompletado y generación de texto sin conexión.
-- Prototipado de pipelines de inferencia local: útil para validar integraciones con Ollama o llama.cpp antes de escalar a modelos mayores, dado su reducido tamaño y su licencia permisiva.
-- Experimentación académica con arquitecturas from-scratch: sirve como base para estudiar el comportamiento de transformers pequeños con GQA y SwiGLU, y para comparar curvas de entrenamiento (el repo incluye `loss-curve.svg` y `eval-curve.tsv`).
-- Autocompletado y sugerencias en herramientas de escritura: con contexto de 2048 tokens puede mantener el hilo de un párrafo o documento corto para sugerencias de continuación.
-- Filtrado y clasificación de texto ligera: puede emplearse para tareas de etiquetado o generación de resúmenes muy cortos en entornos con recursos limitados, siempre con revisión humana.
-- Base para fine-tuning específico de dominio: al ser Apache-2.0 y entrenado desde cero, es un punto de partida viable para ajustar sobre corpus propios en inglés sin restricciones de licencia.
-- Demostraciones de ecosistema local-first: integrable en el stack THOX (ThoxOS, MeshStack) para mostrar inferencia privada en hardware propio.
+- Generación de texto en dispositivos locales y edge: con 327M parámetros y pesos en bfloat16 de ~648 MB, el modelo puede ejecutarse en hardware modesto dentro del stack THOX, ideal para autocompletado o generación de borradores sin conexión.
+- Prototipado rápido de pipelines de NLP: su licencia Apache-2.0 y su formato safetensors permiten integrarlo en experimentos de investigación sin restricciones comerciales, sirviendo como baseline de modelos pequeños.
+- Despliegue vía Ollama para pruebas de concepto: el build GGUF (por ejemplo, Q4_K_M) permite lanzar el modelo con un solo comando y evaluar su comportamiento en entornos de desarrollo antes de escalar.
+- Generación de texto asistida en herramientas internas: puede emplearse para tareas de reescritura, resumen corto o generación de plantillas en inglés dentro de aplicaciones controladas, siempre con revisión humana.
+- Educación e investigación sobre arquitecturas decoder-only: al ser un modelo entrenado desde cero con arquitectura documentada (GQA, RoPE, SwiGLU, RMSNorm), resulta útil para estudiar el comportamiento de modelos pequeños y comparar decisiones de diseño.
+- Filtrado o clasificación ligera de texto: con contexto de 2048 tokens puede procesar fragmentos cortos para tareas de etiquetado o categorización simple, aunque sin garantías de alta precisión.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no hay resultado THOX GATE49 publicado para este modelo. El repositorio incluye un archivo `eval-curve.tsv` cuya contenido no se detalla en la información proporcionada.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que no hay ningún resultado THOX GATE49 publicado para este modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bfloat16: aproximadamente 0,65 GB solo para pesos (648.339.368 bytes), más overhead de activaciones y KV cache; en la práctica, menos de 1,5 GB.
-- VRAM estimada con cuantización Q4_K_M (GGUF): del orden de 0,2-0,3 GB para pesos, más overhead; cabe holgadamente en GPUs integradas y en CPU.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es sobredimensionada para este modelo; también funciona en CPU y en GPUs integradas.
-- Cabe en GPU consumer: sí, en todas las GPU consumer actuales e incluso en dispositivos de gama baja.
-- Opciones de despliegue: Ollama (`ollama run hf.co/Thox-ai/ThoxLLM-327M-v2-GGUF:Q4_K_M` o `ollama run Thox-ai/thoxllm`), llama.cpp con la build GGUF, y el paquete `thoxllm` para cargar los safetensors. Los cargadores estándar de `AutoModel` pueden no funcionar por la ausencia de la clave `architectures` en `config.json`.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: aproximadamente 0,65 GB en bfloat16 (pesos completos); en cuantización Q4_K_M el build GGUF reduce el uso a un rango inferior, aunque no se especifica el valor exacto en la información disponible.
+- GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM libre puede alojar el modelo en bfloat16; no se requieren A100 ni H100.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4090 o superiores, e incluso en GPUs integradas con suficiente memoria compartida.
+- Opciones de despliegue: Ollama (recomendado por el autor, con `ollama run hf.co/Thox-ai/ThoxLLM-327M-v2-GGUF:Q4_K_M`), llama.cpp mediante el build GGUF, y el paquete propietario `thoxllm` para cargar los safetensors. La carga con `AutoModel` de Transformers puede no funcionar porque el `config.json` no incluye la clave `architectures`.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxLLM-327M-v2 | 324M | 2048 | Apache-2.0 | safetensors, GGUF | Arquitectura propia; sin benchmarks publicados |
-| SmolLM2-360M (HuggingFaceTB) | 362M | 8192 | Apache-2.0 | safetensors, GGUF | Modelo pequeño con benchmarks publicados; contexto mayor |
-| Qwen2.5-0.5B | 494M | 32768 | Apache-2.0 | safetensors, GGUF | Mayor tamaño y contexto; benchmarks publicados |
-| TinyLlama-1.1B | 1,1B | 2048 | Apache-2.0 | safetensors, GGUF | Mayor capacidad; benchmarks publicados |
+| ThoxLLM-327M-v2 | 327M | 2048 | Apache-2.0 | Hugging Face (safetensors + GGUF) | Arquitectura propietaria `thoxllm`; requiere paquete propio o GGUF |
+| Modelos decoder-only de ~300M de la familia GPT-2 (referencia de categoría) | ~124M-355M | 1024 | MIT / varias | Hugging Face | Arquitectura estándar cargable con Transformers; benchmarks públicos abundantes |
+| Modelos pequeños tipo TinyLlama (referencia de categoría) | ~1.1B | 2048 | Apache-2.0 | Hugging Face | Mayor tamaño y contexto comparable; requiere más VRAM |
 
-La comparación con alternativas establecidas debe tomarse con cautela: ThoxLLM-327M-v2 no publica resultados de benchmarks, mientras que los modelos comparables sí lo hacen. En términos de contexto, 2048 tokens queda por debajo de SmolLM2-360M (8192) y muy por debajo de Qwen2.5-0.5B (32768). La ventaja principal del modelo es su licencia permisiva y su diseño orientado a la ejecución local, no su rendimiento medido.
+No se dispone de datos de rendimiento comparativo para ThoxLLM-327M-v2, por lo que la comparación se limita a parámetros, contexto y licencia.
 
 ## Limitaciones y advertencias
 
-- Modelo base de 327M: comportamiento de completion, razonamiento y fiabilidad factual limitados; conviene verificar respuestas importantes.
-- No es un asistente público alineado en seguridad salvo que se despliegue detrás de las salvaguardas de THOX.
-- Sesgos y comportamiento reflejan los datos de entrenamiento, mayoritariamente en inglés; la calidad en otros idiomas es inferior.
-- Riesgo de alucinación inherente a modelos pequeños sin alineación documentada.
-- Contexto limitado a 2048 tokens, insuficiente para documentos largos o conversaciones multi-turno extensas.
-- Arquitectura personalizada: los cargadores estándar pueden no cargar el checkpoint safetensors directamente; es necesario usar el paquete `thoxllm` o la build GGUF.
-- Uso fuera de alcance: decisiones médicas, legales, financieras o de seguridad crítica sin revisión humana; control no supervisado de dispositivos físicos sin paso de confirmación.
-- No hay benchmarks publicados que permitan validar el rendimiento antes de producción.
-- La model card incluye contenido promocional de una campaña de Kickstarter; debe separarse del contenido técnico al evaluar el modelo.
+- Modelo base de 327M: comportamiento de completado, razonamiento limitado y baja fiabilidad factual; es necesario verificar respuestas importantes.
+- Sesgos: refleja los sesgos de sus datos de entrenamiento, mayoritariamente en inglés; no se documenta ningún proceso de alineación o mitigación.
+- Riesgo de alucinación: elevado para un modelo de este tamaño, especialmente en tareas factuales o de razonamiento complejo.
+- Limitaciones de contexto e idioma: ventana máxima de 2048 tokens y calidad reducida fuera del inglés.
+- Restricciones de licencia: Apache-2.0 permite uso comercial y modificación, pero el autor indica que no es un asistente público alineado en seguridad salvo que se despliegue tras las salvaguardas de THOX.
+- Fuera de alcance: decisiones médicas, legales, financieras o de seguridad crítica sin revisión humana; control no supervisado de dispositivos físicos sin paso de confirmación.
+- Carga técnica: el checkpoint safetensors no se carga directamente con `AutoModel` estándar; es necesario usar el paquete `thoxllm` o el build GGUF.
 
 ## Enlaces
 
-- Hugging Face (modelo): https://huggingface.co/Thox-ai/ThoxLLM-327M-v2
-- Hugging Face (GGUF): https://huggingface.co/Thox-ai/ThoxLLM-327M-v2-GGUF
-- Sitio del fabricante: https://thox.ai/
-- Demo de dispositivos virtuales: https://thox.ai/#demo-callout-home_lineup
-- Campaña de Kickstarter: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
-- Cita BibTeX: incluida en la model card (THOX.ai, 2026)
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxLLM-327M-v2
+- Build GGUF: https://huggingface.co/Thox-ai/ThoxLLM-327M-v2-GGUF
+- Repositorio Ollama (referencia en la model card): `ollama run Thox-ai/thoxllm`
+- Paper, blog o demo adicionales: no disponibles en la información proporcionada.

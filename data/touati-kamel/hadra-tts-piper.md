@@ -2,90 +2,104 @@
 
 ## Resumen
 
-Hadra-TTS Piper es un motor de síntesis de voz (text-to-speech) neuronal desarrollado por el usuario touati-kamel, orientado a la lengua argelina (darja, código `arq`) con soporte también para árabe estándar (`ar`). El modelo se distribuye en formato ONNX Runtime y es compatible con el ecosistema Piper, lo que permite inferencia offline en dispositivos embebidos, Raspberry Pi y aplicaciones móviles sin dependencia de servicios en la nube. Está construido sobre la arquitectura VITS, un modelo generativo end-to-end que combina inferencia variacional con entrenamiento adversario para producir audio directamente a partir de texto.
+Hadra-TTS-piper es un modelo de síntesis de voz (text-to-speech) neuronal ultraligero especializado en darja argelina (الدارجة الجزائرية), la variante dialectal del árabe hablada en Argelia. Lo desarrolla el usuario touati-kamel y se publica bajo licencia MIT en Hugging Face. El modelo parte de la arquitectura VITS (Conditional Variational Autoencoder with Adversarial Training and Normalizing Flows) y se exporta a ONNX Runtime mediante el ecosistema Piper, lo que lo orienta a inferencia en CPU y dispositivos de borde.
 
-La relevancia del modelo radica en su especialización: la darja argelina es una variedad dialectal con escasa cobertura en sistemas TTS comerciales, y este proyecto la aborda con un modelo multi-hablante de tres voces (una conversacional con realización velar `g`, una narrativa masculina y una narrativa femenina). El modelo se entrenó con tres colecciones de audio argelino publicadas en Hugging Face bajo el prefijo `oddadmix/arabic-audio-collection-algerian-*`.
+El problema que resuelve es la ausencia de voces neuronales de calidad para un dialecto con escasa representación en los sistemas TTS comerciales y académicos, habitualmente centrados en árabe estándar moderno (MSA) o en inglés. Hadra-TTS-piper cubre fenómenos propios de la darja argelina como el code-switching con francés transliterado, el léxico coloquial juvenil y la sintaxis de cantidades y moneda local. Con un tamaño de repositorio de 0,1 GB y un checkpoint ONNX de aproximadamente 63 MB, el modelo sintetiza audio a un factor de tiempo real (RTF) medio de 0,124x en CPU, es decir, más de ocho veces más rápido que el tiempo real.
 
-Las especificaciones publicadas son limitadas: no se detallan el número de parámetros, la longitud de contexto textual ni los resultados de evaluación. La model card se centra en las características de despliegue (formato ONNX, frecuencia de muestreo, latencia) y en la identificación de las tres voces disponibles.
+La relevancia actual del modelo radica en su encaje en despliegues de domótica y asistentes de voz locales (Home Assistant, Raspberry Pi) donde no hay GPU disponible y la latencia y el consumo importan. No obstante, la información publicada es limitada: no se detallan el corpus de entrenamiento, el número de horas de audio ni métricas objetivas de calidad (MOS, WER), por lo que la evaluación disponible se apoya en el banco de pruebas cualitativo del propio autor.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech) |
-| Parámetros totales | no disponible |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (modelo TTS, no de lenguaje) |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | árabe (`ar`), darja argelina (`arq`) |
+| Arquitectura | VITS (Conditional VAE con entrenamiento adversario y normalizing flows), exportado a ONNX Runtime |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (TTS; sin ventana de contexto de texto definida) |
+| Tipos de cuantizacion | no disponible (se distribuye un grafo ONNX de ~63 MB; no se documentan variantes cuantizadas) |
+| Idiomas soportados | ar (árabe), ary / arq (darja argelina), con code-switching hacia francés transliterado |
 | Licencia | MIT |
-| Formato de pesos | ONNX Runtime (`model.onnx` + `model.onnx.json`) |
-| Frecuencia de muestreo | 22.050 Hz, PCM mono 16 bits |
-| Voces / speaker IDs | 3 (`0` kahwa, `1` rawi, `2` loubna) |
-| Librería | Piper |
-| Latencia declarada | < 50 ms en Raspberry Pi 4 / CPU moderna |
+| Formato de pesos | ONNX (`model.onnx`) con configuración JSON (`model.onnx.json`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea VITS, una arquitectura de síntesis end-to-end que integra un codificador de texto, un predictor de duración, un flujo normalizador y un decodificador generativo entrenado de forma adversarial junto a un discriminador. Esta combinación permite generar formas de onda directamente desde la secuencia de texto sin necesidad de un vocoder externo, lo que explica su idoneidad para despliegue en dispositivos con recursos limitados y su baja latencia declarada.
+El modelo sigue la arquitectura VITS, un sistema TTS de extremo a extremo que combina un codificador de texto, un prior condicional con normalizing flows, un decodificador generativo y un discriminador adversario durante el entrenamiento. Esta arquitectura permite generar audio de forma no autorregresiva en una sola pasada, lo que explica su baja latencia. La exportación a ONNX Runtime y la integración con Piper permiten ejecutar la inferencia en CPU sin dependencias de GPU, con un grafo de un solo hablante (`num_speakers = 1`).
 
-El entrenamiento se realizó sobre tres conjuntos de datos de audio argelino alojados en Hugging Face: `oddadmix/arabic-audio-collection-algerian-kahwa-postcast`, `oddadmix/arabic-audio-collection-algerian-rawi` y `oddadmix/arabic-audio-collection-algerian-loubna-stories`. Cada conjunto corresponde presumiblemente a una de las tres voces del modelo (podcast conversacional, narración masculina y narración femenina). No se especifican en la información disponible el número de horas de audio, el volumen de tokens de entrenamiento, la composición exacta del corpus ni si se aplicaron técnicas de ajuste como RLHF o DPO, algo por otra parte poco habitual en modelos TTS.
+No se dispone de información sobre el volumen de datos de entrenamiento, la composición del corpus, la duración total de audio ni si se aplicaron técnicas de ajuste fino supervisado, RLHF o DPO. La model card indica que se trata de un ajuste fino específico para darja argelina, pero no documenta la receta. La innovación destacable es de ingeniería más que de modelado: la calibración de tres perfiles acústicos (Kahwa, Rawi y Loubna) mediante los parámetros `length_scale` y `noise_scale`, que permiten variar la cadencia y la expresividad sin reentrenar el modelo.
 
 ## Capacidades
 
-- Síntesis de voz multi-hablante con tres voces diferenciadas: `kahwa` (conversacional, realización velar `g`), `rawi` (narrador masculino expresivo, realización uvular `q`) y `loubna` (narradora femenina, realización uvular `q`).
-- Generación de audio a 22.050 Hz en PCM mono de 16 bits.
-- Inferencia offline mediante ONNX Runtime, compatible con la CLI de Piper en C++ y Python.
-- Manejo de texto mixto darja-árabe con inserciones de código y latinas, como se observa en el ejemplo de la model card (code-switching árabe-francés).
-- No se documentan capacidades de clonación de voz, control de emociones, tool calling ni razonamiento multi-paso (no aplicables a un modelo TTS).
+- Síntesis de voz (text-to-speech) en darja argelina a partir de texto en árabe.
+- Tres personas acústicas precalibradas: Kahwa (conversacional, `length_scale` 0,95; `noise_scale` 0,667), Rawi (narrativa, 1,15; 0,667) y Loubna (femenina expresiva, 0,90; 0,667).
+- Manejo de code-switching con términos franceses transliterados integrados en la frase (por ejemplo, «c'est bon», «en retard»).
+- Cobertura de léxico coloquial urbano y juvenil, partículas discursivas y expresiones idiomáticas argelinas.
+- Pronunciación de números, cantidades y sintaxis de moneda local (centimos, dinares, «ملاين», «دورو», «ميات ألف»).
+- Síntesis de frases largas de más de 20 segundos con prosodia sostenida y pausas de respiración.
+- No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso (no es un modelo de lenguaje).
+- No se documentan capacidades de visión, audio de entrada ni clonación de voz.
 
 ## Casos de uso
 
-- Asistentes de voz para darja argelina en aplicaciones móviles: el formato ONNX y la latencia inferior a 50 ms en CPU permiten ejecutar la síntesis en el propio dispositivo, sin conexión y sin enviar texto del usuario a servidores externos.
-- Lectura de noticias y contenidos en árabe argelino: las voces `rawi` y `loubna` están orientadas a narración, por lo que encajan en la locución automatizada de artículos, boletines o resúmenes.
-- Podcasts y audiolibros generados: la voz `kahwa`, con su realización conversacional, es adecuada para contenido de estilo coloquial y diálogo, mientras que `loubna` cubre narración de historias.
-- Accesibilidad para personas con discapacidad visual: lectura en voz alta de interfaces y documentos para hablantes de darja, una comunidad con poca cobertura en TTS comerciales.
-- Sistemas de megafonía y avisos en entornos con recursos limitados: la compatibilidad con Raspberry Pi 4 permite desplegar anuncios automatizados en estaciones, comercios o edificios sin infraestructura de servidor.
-- Prototipado e investigación en dialectología: el modelo sirve como base para experimentos de TTS en variedades magrebíes y para comparar realizaciones fonéticas (`g` frente a `q`) entre voces.
-- Integración en pipelines de doblaje o subtitulado: la CLI de Piper facilita la generación por lotes de pistas de audio a partir de guiones de texto.
+- Asistentes de voz para domótica local: integración en Home Assistant mediante Piper para anuncios y respuestas en darja argelina, ejecutándose en CPU de un dispositivo doméstico sin GPU y con RTF de 0,124x.
+- Notificaciones y avisos en dispositivos de borde: generación de mensajes hablados en Raspberry Pi para sistemas de alarma, recordatorios o paneles informativos, aprovechando el checkpoint de 63 MB y la inferencia sobre ONNX Runtime.
+- Audiolibros y narración de contenido folclórico: uso de la persona Rawi (`length_scale` 1,15) para cuentos, refranes y relatos tradicionales argelinos con cadencia pausada y pausas meditadas.
+- Contenido educativo y cuentos infantiles: empleo de la persona Loubna (`length_scale` 0,90) para material de e-learning, cuentos y notificaciones amables dirigidas a público infantil.
+- Atención al cliente y bots conversacionales en dialecto: la persona Kahwa permite respuestas habladas con cadencia conversacional natural en aplicaciones de soporte telefónico o chatbots de voz orientados a usuarios argelinos.
+- Locución de podcasts y piezas breves: generación de intros, cortinillas y segmentos narrados en darja con code-switching francés, sin necesidad de estudio de grabación ni de un hablante nativo disponible.
+- Accesibilidad y lectura de textos: conversión de texto en árabe argelino a voz para usuarios con discapacidad visual o para lectura de contenidos digitales en dispositivos de bajo consumo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La única métrica de rendimiento declarada es una latencia de inferencia inferior a 50 ms en Raspberry Pi 4 y CPU moderna, sin especificar el hardware exacto, la longitud del texto de entrada ni el método de medición.
+El autor publica un banco de pruebas cualitativo de 75 clips (25 prompts × 3 personas) distribuido en cinco niveles de estrés lingüístico. No se aportan métricas objetivas como MOS, WER ni comparaciones con otros modelos TTS.
+
+| Nivel de prueba | Foco | Prompts | Personas | Estado | RTF medio (CPU) |
+|---|---|---|---|---|---|
+| Tier 1 | Saludos panargelinos y code-switching francés | 5 | 3 | 100% PASS | 0,121x |
+| Tier 2 | Darja urbana y juvenil | 5 | 3 | 100% PASS | 0,124x |
+| Tier 3 | Números, moneda y cantidades | 5 | 3 | 100% PASS | 0,128x |
+| Tier 4 | Refranes, sabiduría popular y humor | 5 | 3 | 100% PASS | 0,122x |
+| Tier 5 | Frases largas de más de 20 s | 5 | 3 | 100% PASS | 0,125x |
+| Global | Suite completa | 25 | 3 (75 clips) | 100% PASS | 0,124x |
+
+El criterio de «PASS» no se define cuantitativamente en la información disponible. El dato de rendimiento más relevante es el RTF de 0,124x: un clip de 10 segundos se sintetiza en aproximadamente 1,24 segundos en un solo núcleo de CPU.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Al ser un modelo VITS de tamaño reducido y ejecutarse mediante ONNX Runtime, es esperable que quepa en memoria de CPU sin GPU dedicada, aunque no se publica el tamaño de los pesos.
-- GPU recomendadas: no se especifican. El modelo está optimizado para CPU y dispositivos embebidos; una GPU no es necesaria para su funcionamiento.
-- Compatibilidad con GPU de consumo: no confirmada explícitamente, pero el diseño orientado a Raspberry Pi 4 sugiere que cualquier GPU de consumo moderna es sobradamente suficiente si se desea acelerar la inferencia.
-- Opciones de despliegue: CLI de Piper (C++ y Python) con ONNX Runtime; el formato `model.onnx` más `model.onnx.json` es el estándar de Piper.
-- Latencia y throughput: latencia declarada inferior a 50 ms en Raspberry Pi 4 / CPU moderna; no se publica throughput (caracteres o segundos de audio por segundo).
+- VRAM estimada para inferencia: no aplica en el modo documentado; el modelo está pensado para CPU y ONNX Runtime. No se publica consumo de memoria en GPU.
+- GPU recomendadas: no se documentan; el quickstart usa `use_cuda=False`. Cualquier GPU compatible con ONNX Runtime podría ejecutarlo, pero no hay cifras publicadas.
+- Cabe en GPU de consumo: sí, por tamaño (63 MB), aunque el caso de uso previsto es CPU.
+- Cabe en dispositivos de borde: sí; la model card lo orienta explícitamente a Raspberry Pi y Home Assistant.
+- Opciones de despliegue: Piper (`piper-tts` en Python), ONNX Runtime, integración con Home Assistant. No se documentan vLLM, llama.cpp ni TGI (no aplican a un modelo TTS).
+- Latencia y throughput: RTF medio de 0,124x en CPU, con un rango de 0,121x a 0,128x según el nivel de prueba; un clip de 10 s tarda unos 1,24 s en un núcleo de CPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. Como referencia conceptual, otros sistemas TTS multi-hablante ligeros (por ejemplo, variantes de Piper para otras lenguas o modelos VITS multilingües) comparten arquitectura y formato de despliegue, pero no se aportan datos de parámetros, contexto ni rendimiento que permitan una comparación cuantitativa rigurosa.
+No se dispone de datos de benchmarks comparativos con otros modelos TTS en la información proporcionada, por lo que la comparación se limita a características estructurales.
 
-| Modelo | Arquitectura | Idiomas | Formato | Licencia | Disponibilidad |
+| Modelo | Tipo | Idiomas | Tamano | Licencia | Despliegue en CPU |
 |---|---|---|---|---|---|
-| Hadra-TTS Piper | VITS | ar, arq | ONNX (Piper) | MIT | Hugging Face |
-| Alternativas Piper para otras lenguas | VITS | varias | ONNX (Piper) | variable | Hugging Face / repositorios Piper |
-| Modelos TTS multilingües comerciales | no disponible | amplio | API / pesos propietarios | propietaria | servicios en la nube |
+| Hadra-TTS-piper | VITS / ONNX (Piper) | Darja argelina (ar, ary) | ~63 MB | MIT | Sí, RTF 0,124x |
+| Piper (voces estándar) | VITS / ONNX | Múltiples, principalmente europeos | Variable | MIT | Sí |
+| Coqui TTS (XTTS) | TTS neuronal multiidioma | Múltiples | Mayor | MPL-2.0 / Coqui | Parcial |
+| Modelos TTS comerciales (p. ej., cloud) | Propietario | Múltiples, sin darja específica | no disponible | Propietaria | No (API) |
+
+Los datos de Coqui TTS y de los servicios comerciales no proceden de la información proporcionada y se incluyen solo como referencia de categoría; no se dispone de cifras de rendimiento comparables.
 
 ## Limitaciones y advertencias
 
-- La información publicada es muy escasa: no se detallan parámetros, datos de entrenamiento (horas de audio, número de hablantes de origen), métricas de calidad (MOS, WER) ni evaluación objetiva alguna.
-- El modelo está especializado en darja argelina y árabe; no se declara soporte para otras lenguas, y el rendimiento fuera de `ar`/`arq` es desconocido.
-- Riesgo de alucinación y artefactos de pronunciación en palabras fuera del vocabulario de entrenamiento, especialmente en code-switching con francés u otras lenguas no documentadas.
-- Posibles sesgos derivados del corpus: las tres voces proceden de un número reducido de fuentes (`kahwa`, `rawi`, `loubna`), lo que limita la diversidad de edad, género y registro más allá de esas tres identidades.
-- Sin datos sobre robustez ante texto con números, abreviaturas, siglas o puntuación atípica; el comportamiento en esos casos no está documentado.
-- La licencia MIT permite uso comercial, pero el usuario debe verificar las condiciones de los conjuntos de datos de origen (`oddadmix/arabic-audio-collection-algerian-*`) antes de explotar el modelo en producción.
-- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
-- No se documenta el proceso de conversión a ONNX ni la versión de Piper requerida; la compatibilidad con versiones futuras de Piper no está garantizada.
+- No se documentan sesgos conocidos, pero al ser un modelo entrenado sobre un dialecto con variación regional interna (Orán, Argel, etc.), la representatividad de acentos y registros es incierta.
+- Riesgo de alucinación en el sentido de pronunciación incorrecta de términos fuera del dominio (nombres propios, tecnicismos, préstamos de otros idiomas distintos del francés).
+- El alcance lingüístico es limitado: darja argelina y code-switching francés; no cubre árabe estándar moderno ni otras variedades magrebíes de forma garantizada.
+- No se publican métricas objetivas de calidad (MOS, WER) ni detalles del corpus de entrenamiento, lo que dificulta una evaluación rigurosa antes de producción.
+- El criterio de «100% PASS» del banco de pruebas no está definido cuantitativamente.
+- Licencia MIT: permite uso comercial, pero conviene verificar las licencias de las dependencias (Piper, ONNX Runtime) y de los datos de entrenamiento, no documentados.
+- Al ser un modelo de un solo hablante (`num_speakers = 1`), las tres personas se obtienen variando parámetros de duración y ruido, no mediante voces entrenadas independientes.
+- No apto para tareas de comprensión, razonamiento o generación de texto: es exclusivamente un modelo TTS.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/touati-kamel/Hadra-TTS-piper
-- Dataset de entrenamiento (voz kahwa): https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-kahwa-postcast
-- Dataset de entrenamiento (voz rawi): https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-rawi
-- Dataset de entrenamiento (voz loubna): https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-loubna-stories
-- Proyecto Piper (motor de inferencia): https://github.com/rhasspy/piper
+- Dashboard de benchmarks en vivo: https://hadra-piper-benchmark.netlify.app/
+- Repositorio de Piper: https://github.com/rhasspy/piper
+- Checkpoint ONNX: https://huggingface.co/touati-kamel/Hadra-TTS-piper/resolve/main/model.onnx
+- Configuración JSON: https://huggingface.co/touati-kamel/Hadra-TTS-piper/resolve/main/model.onnx.json

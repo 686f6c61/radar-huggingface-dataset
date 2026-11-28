@@ -2,88 +2,91 @@
 
 ## Resumen
 
-Pika-H3-Flex-ROCmFPX es una cuantización en formato GGUF del modelo Pika-H3-Flex de Pika Labs, publicada por el usuario Harsha001. El modelo base es un sistema generativo multimodal de imagen-a-vídeo con audio, construido sobre la arquitectura MiniMax-H3 según las etiquetas del repositorio. Esta versión concreta aplica el esquema de cuantización ROCmFPX (con variantes ROCmFP4) orientado a hardware AMD, específicamente a los aceleradores integrados Strix Halo, y está empaquetada para su uso con stable-diffusion.cpp.
+Pika-H3-Flex-ROCmFPX es una cuantizacion en formato GGUF del modelo Pika-H3-Flex, desarrollado originalmente por Pika Labs y publicado en Hugging Face bajo el identificador Harsha001/Pika-H3-Flex-ROCmFPX. Se trata de un modelo de generacion de video a partir de imagen (image-to-video) con capacidad declarada de generacion audio-video, orientado especificamente al ecosistema AMD ROCm y, en particular, a hardware Strix Halo. La cuantizacion emplea un esquema propietario denominado ROCmFPX, con variantes ROCmFP4, pensado para reducir el peso del modelo y permitir su ejecucion en GPUs de consumo con memoria unificada.
 
-El interés de esta ficha radica en dos factores. Primero, permite ejecutar un modelo de generación de vídeo con audio de aproximadamente 33.100 millones de parámetros en hardware AMD de consumo o integrado, algo que las versiones en precisión completa hacen inviable. Segundo, el repositorio ocupa 139,4 GB, lo que da una idea del peso real de los pesos cuantizados y de los requisitos de almacenamiento. El acceso está restringido (gated): es necesario aceptar la licencia MiniMax-H3 Community License Agreement en Hugging Face antes de descargar.
+El modelo base cuenta con aproximadamente 33.122 millones de parametros (33,12 mil millones) en formato safetensors, lo que lo situa en la categoria de modelos grandes de difusion para video. El repositorio cuantizado ocupa 139,4 GB, un tamano coherente con un modelo de esa magnitud y con las multiples variantes de cuantizacion incluidas. La arquitectura subyacente no se detalla en la informacion disponible, aunque los tags indican compatibilidad con stable-diffusion.cpp, lo que sugiere una implementacion basada en difusion.
 
-La información pública disponible es escasa: el repositorio acumula 9 descargas y ningún "like" en el momento de redactar esta ficha, y no se han publicado fichas técnicas, benchmarks ni documentación de entrenamiento asociada a esta cuantización específica.
+Su relevancia actual radica en dos factores: por un lado, democratiza el acceso a un modelo de generacion de video de gran tamano en hardware AMD, un segmento tradicionalmente menos atendido que el ecosistema NVIDIA; por otro, el esquema ROCmFP4 permite reducir la huella de memoria lo suficiente como para plantear su ejecucion en equipos con memoria unificada como Strix Halo. El acceso esta restringido (gated) y requiere aceptar la licencia comunitaria de MiniMax H3.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | MiniMax-H3 (modelo base Pika-H3-Flex); detalles internos no disponibles |
-| Parámetros totales | 33.122.993.116 (~33,1 mil millones) |
-| Parámetros activos | no disponible |
+| Arquitectura | no disponible (implementacion de difusion para video, compatible con stable-diffusion.cpp) |
+| Parametros totales | 33.122.993.116 (33,12 mil millones, dato de safetensors del modelo base) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | ROCmFPX / ROCmFP4 (esquema propietario orientado a AMD ROCm) |
+| Tipos de cuantizacion | ROCmFPX y ROCmFP4 (esquema propietario del autor) |
 | Idiomas soportados | no disponible |
-| Licencia | MiniMax-H3 Community License Agreement (acceso restringido) |
-| Formato de pesos | GGUF (librería gguf, compatible con stable-diffusion.cpp) |
+| Licencia | minimax-h3-community-license-agreement |
+| Formato de pesos | GGUF (cuantizado) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Pika-H3-Flex se etiqueta como perteneciente a la familia MiniMax-H3 y está orientado a generación de vídeo a partir de imagen (image-to-video) con generación de audio asociada. No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO en el modelo original. Tampoco se documenta si la arquitectura interna es un transformer de difusión, un modelo autorregresivo multimodal o una combinación híbrida.
+La informacion proporcionada no detalla la arquitectura interna del modelo base Pika-H3-Flex. Los tags del repositorio apuntan a un modelo de generacion de video con pipeline image-to-video y capacidad declarada de audio-video, implementado de forma compatible con stable-diffusion.cpp, lo que en la practica implica un modelo de difusion. No se especifica si emplea atencion completa, atencion lineal u otro mecanismo, ni el tipo de VAE o encoder de texto asociado.
 
-La innovación técnica de esta publicación concreta no está en el modelo, sino en el esquema de cuantización ROCmFPX, que adapta los pesos a formatos de baja precisión (ROCmFP4) optimizados para la pila ROCm de AMD. El repositorio está preparado para ejecutarse con stable-diffusion.cpp, lo que sugiere un enfoque de inferencia en CPU/GPU integrada mediante GGUF, en lugar de los pipelines habituales de PyTorch con CUDA. No hay información disponible sobre calibración, capas excluidas de la cuantización ni métricas de degradación respecto al modelo original.
+Tampoco se dispone de datos sobre el entrenamiento: numero de tokens o horas de video, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineacion. La innovacion tecnica destacable de esta publicacion no reside en el entrenamiento sino en la cuantizacion: el esquema ROCmFPX/ROCmFP4 aplicado por el autor Harsha001 busca reducir la precision de los pesos para el ecosistema ROCm de AMD, con atencion especial a Strix Halo, una plataforma de memoria unificada donde el modelo puede residir parcialmente en RAM compartida con la GPU.
 
 ## Capacidades
 
-- Generación de vídeo a partir de una imagen de entrada (image-to-video).
-- Generación de audio sincronizado con el vídeo, según las etiquetas del repositorio (audio-video-generation).
-- Ejecución en hardware AMD mediante la pila ROCm, incluyendo aceleradores integrados Strix Halo.
-- Inferencia a través de stable-diffusion.cpp en formato GGUF.
-- No hay información disponible sobre soporte de tool calling, razonamiento multi-paso, capacidades agénticas ni cobertura multilingüe.
-- No se documentan modos especiales como thinking mode, visión general o procesamiento de texto libre.
+- Generacion de video a partir de una imagen de entrada (image-to-video), el pipeline declarado del repositorio.
+- Generacion conjunta de audio y video, segun el tag audio-video-generation.
+- Cuantizacion optimizada para ROCm, con variantes ROCmFPX y ROCmFP4 para distintos niveles de precision y memoria.
+- Compatibilidad con stable-diffusion.cpp, lo que permite inferencia en C++ sin depender del stack de Python.
+- Orientacion a hardware AMD Strix Halo y, en general, a GPUs AMD con soporte ROCm.
+- Soporte de tool calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponibles (no se declaran idiomas).
+- Modo thinking, vision o audio de entrada: no disponible.
 
 ## Casos de uso
 
-- Prototipado de vídeo generativo en estaciones de trabajo AMD: el formato ROCmFPX permite probar generación de imagen-a-vídeo con audio en equipos con GPU integrada Strix Halo, sin necesidad de GPUs NVIDIA de gama alta.
-- Creación de clips cortos para redes sociales: a partir de una imagen fija, el modelo puede producir un vídeo breve con audio, útil para contenido promocional o demostraciones rápidas.
-- Animación de ilustraciones y arte conceptual: artistas pueden convertir bocetos o renders estáticos en animaciones con sonido para presentaciones de portafolio.
-- Evaluación comparativa de cuantizaciones: investigadores pueden medir la degradación de calidad de ROCmFP4 frente al modelo original Pika-H3-Flex en tareas de generación de vídeo.
-- Integración en pipelines de stable-diffusion.cpp: desarrolladores que ya usan esta librería pueden añadir generación de vídeo con audio sin cambiar de stack.
-- Pruebas de concepto en entornos con restricciones de memoria: al reducir la huella del modelo, es posible desplegarlo en máquinas con menos VRAM que las requeridas por la versión completa, aunque el almacenamiento necesario sigue siendo elevado (139,4 GB).
-- Docencia y experimentación académica: sirve para ilustrar técnicas de cuantización de modelos multimodales grandes en hardware no NVIDIA.
+- Prototipado de video generativo en hardware AMD: el modelo permite generar clips a partir de imagenes en equipos con GPU AMD y ROCm, un escenario donde la oferta de modelos de video cuantizados es limitada. La variante ROCmFP4 reduce la huella de memoria para ajustarse a Strix Halo.
+- Animacion de ilustraciones y storyboards: a partir de una imagen fija, el pipeline image-to-video produce una secuencia animada, util para previsualizar escenas en produccion audiovisual antes de invertir en renderizado completo.
+- Generacion de clips con audio sincronizado: el tag audio-video-generation sugiere la posibilidad de producir video y pista de audio en una sola pasada, aplicable a demos de producto o contenido para redes sociales.
+- Integracion en pipelines C++ con stable-diffusion.cpp: al ser compatible con esta libreria, el modelo puede incorporarse en herramientas nativas sin Python, reduciendo dependencias en entornos de produccion embebidos.
+- Investigacion en cuantizacion para difusion de video: el esquema ROCmFPX/ROCmFP4 constituye en si mismo un objeto de estudio para medir el impacto de la cuantizacion agresiva en la calidad temporal y espacial del video generado.
+- Experimentacion local en estaciones de trabajo con memoria unificada: en equipos Strix Halo, el modelo puede ejecutarse sin GPU dedicada de gran VRAM, lo que facilita la evaluacion por parte de desarrolladores independientes.
+- Evaluacion comparativa de modelos de video en entornos AMD: sirve como referencia para medir el rendimiento de ROCm frente a CUDA en cargas de difusion de video de 33 mil millones de parametros.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- Almacenamiento: el repositorio ocupa 139,4 GB, por lo que se necesita al menos ese espacio libre antes de la descarga.
-- VRAM estimada: no disponible con precisión; el esquema ROCmFP4 sugiere una reducción significativa frente a los ~66 GB que ocuparían los pesos en FP16, pero no se documenta la huella en memoria durante la inferencia.
-- GPU recomendadas: hardware AMD con soporte ROCm; el repositorio menciona explícitamente Strix Halo (APUs integradas de AMD). No hay datos sobre rendimiento en GPUs NVIDIA.
-- ¿Cabe en GPU de consumo? El formato está pensado para hardware AMD integrado, lo que indica que sí es ejecutable en ese tipo de dispositivos, aunque sin cifras de latencia ni throughput publicadas.
-- Opciones de despliegue: stable-diffusion.cpp con backend ROCm; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada: no disponible de forma oficial. Como referencia de orden de magnitud, el modelo base en safetensors ronda los 66 GB en FP16 (33,12 mil millones de parametros), y el repositorio cuantizado ocupa 139,4 GB incluyendo todas las variantes. La variante ROCmFP4 deberia reducir la huella de forma significativa, aunque no se publican cifras exactas.
+- GPU recomendadas: el autor orienta el modelo a AMD Strix Halo y al ecosistema ROCm. No se indican modelos concretos de GPU profesional (MI300, etc.) ni se confirma compatibilidad con NVIDIA.
+- Cabe en GPU de consumo: potencialmente en equipos con memoria unificada grande (Strix Halo) gracias a ROCmFP4; no se confirma su ajuste en GPUs de consumo discretas de 16 o 24 GB.
+- Opciones de despliegue: stable-diffusion.cpp es la via declarada. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que ademas no son adecuados para un modelo de difusion de video.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pika-H3-Flex-ROCmFPX (esta ficha) | ~33,1 mil millones | no disponible | GGUF (ROCmFPX/FP4) | MiniMax-H3 Community License | Gated en Hugging Face |
-| Pika-Labs/Pika-H3-Flex (modelo base) | ~33,1 mil millones | no disponible | no disponible | MiniMax-H3 Community License | no disponible |
-| Otras cuantizaciones GGUF de Pika-H3-Flex | ~33,1 mil millones | no disponible | GGUF | según el publicador | no disponible |
+| Pika-H3-Flex-ROCmFPX | 33,12 mil millones | no disponible | GGUF cuantizado | minimax-h3-community-license-agreement | Gated en Hugging Face |
+| Pika-Labs/Pika-H3-Flex (base) | 33,12 mil millones | no disponible | safetensors | minimax-h3-community-license-agreement | Hugging Face (modelo base) |
+| Alternativas de video open source de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de información sobre alternativas comparables de otros desarrolladores con datos verificables de rendimiento, por lo que la comparación se limita al modelo base y a variantes de cuantización del mismo.
+No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es obligatorio aceptar la MiniMax-H3 Community License Agreement en Hugging Face antes de poder descargar los pesos.
-- Licencia "other" con términos comunitarios: conviene revisar las restricciones de uso comercial antes de integrar el modelo en productos.
-- La cuantización ROCmFP4 puede degradar la calidad visual y de audio respecto al modelo original; no se han publicado métricas de esa degradación.
-- No hay información sobre sesgos, tasas de alucinación ni limitaciones idiomáticas del modelo base.
-- El repositorio tiene muy poca tracción (9 descargas, 0 likes) y no está respaldado por documentación técnica del autor de la cuantización.
-- El ecosistema de ejecución se limita a stable-diffusion.cpp y ROCm; no se garantiza compatibilidad con otras herramientas.
-- El tamaño del repositorio (139,4 GB) impone requisitos de almacenamiento considerables incluso antes de la inferencia.
-- No se documentan requisitos mínimos de VRAM ni tiempos de generación, lo que dificulta planificar despliegues en producción.
+- Acceso restringido: el repositorio es gated y exige aceptar la licencia comunitaria de MiniMax H3 en Hugging Face antes de descargar los pesos.
+- Licencia restrictiva: la minimax-h3-community-license-agreement no es una licencia open source al uso; conviene revisar sus clausulas de uso comercial, atribucion y redistribucion antes de integrar el modelo en un producto.
+- Cuantizacion agresiva: ROCmFP4 puede degradar la coherencia temporal, el detalle fino y la consistencia entre fotogramas en comparacion con los pesos originales en mayor precision; no se publican metricas de calidad que lo cuantifiquen.
+- Sesgos: no se documentan sesgos conocidos del modelo base ni del proceso de cuantizacion, pero al ser un modelo de difusion entrenado con datos web es esperable que reproduzca sesgos de representacion.
+- Alucinacion visual: como todo modelo generativo de video, puede producir artefactos, movimiento incoherente o contenido no fiel a la imagen de entrada.
+- Idiomas: no se declaran idiomas soportados; no hay garantia de que las indicaciones textuales funcionen en castellano.
+- Ecosistema limitado: la compatibilidad se circunscribe a ROCm y stable-diffusion.cpp; el soporte en otras herramientas es incierto.
+- Documentacion escasa: el repositorio no publica arquitectura, datos de entrenamiento, benchmarks ni instrucciones detalladas de uso, lo que dificulta la evaluacion previa a produccion.
+- Fecha de creacion reciente (31 de octubre de 2026) y solo 2 likes: comunidad pequena, menor probabilidad de soporte o solucion de problemas.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/Harsha001/Pika-H3-Flex-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/Pika-H3-Flex-ROCmFPX
 - Modelo base: https://huggingface.co/Pika-Labs/Pika-H3-Flex
-- stable-diffusion.cpp (herramienta de inferencia mencionada): no disponible en la información proporcionada
-- Documentación de ROCm (AMD): no disponible en la información proporcionada
-- Paper o blog técnico de MiniMax-H3: no disponible en la información proporcionada
+- Licencia comunitaria MiniMax H3: no disponible como enlace directo en la informacion proporcionada
+- stable-diffusion.cpp: no disponible como enlace directo en la informacion proporcionada
+- Paper, blog o demo oficiales: no disponibles en la informacion proporcionada

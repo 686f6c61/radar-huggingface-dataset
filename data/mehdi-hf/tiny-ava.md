@@ -2,105 +2,105 @@
 
 ## Resumen
 
-tiny-ava es un modelo de síntesis de voz (text-to-speech) para persa (farsi) desarrollado por el usuario mehdi-hf, construido desde cero sobre la arquitectura `tiny-voca` de n4ze3m. Con tan solo 4,53 millones de parámetros y un peso total de aproximadamente 18 MB en PyTorch y 20 MB en ONNX, el modelo está diseñado para inferencia en CPU sin necesidad de GPU ni conexión a internet. Genera audio mono a 24 kHz con una única voz femenina persa denominada `parisa`.
+tiny-ava es una familia de modelos de síntesis de voz (text-to-speech) de tamano reducido, disenada especificamente para persa (farsi) e ingles, con capacidad de alternar entre ambos idiomas dentro de una misma frase (code-switching). Lo desarrolla el autor independiente mehdi-hf y se construye desde cero sobre la arquitectura `tiny-voca` de n4ze3m, incorporando un generador de forma de onda de tipo fuente-filtro. La version recomendada, tiny-ava v2, tiene 8,2 millones de parametros y un export ONNX de 34,4 MB, lo que la hace apta para inferencia 100% offline en navegador y en Android.
 
-La relevancia del modelo reside en su extrema ligereza y velocidad: según el autor, alcanza 38,5 veces el tiempo real en un solo hilo de CPU y 77,4 veces en cuatro hilos, lo que lo hace viable para despliegue en dispositivos de gama baja, aplicaciones de escritorio y entornos embebidos donde otros modelos TTS no caben. No incluye pesos preentrenados de terceros: se entrenó íntegramente desde cero.
+Su relevancia practica esta en el rendimiento en CPU: segun la model card, alcanza 34,1 veces tiempo real con un solo hilo de CPU y 81,2 veces con cuatro hilos. Eso permite integrarla en aplicaciones de accesibilidad, lectores de pantalla o asistentes de voz sin GPU ni conexion de red. La familia incluye tres voces: Parisa (persa femenina), Mana (persa femenina, grabada en estudio con voz humana real) y Maya (ingles femenino).
 
-El modelo no acepta texto directamente, sino tokens IPA persas (46 símbolos) junto con un canal de tres clases para acento léxico y ezafe, por lo que requiere un frontend G2P externo (por ejemplo, `mehdi-hf/persian-g2p-tiny` o `mehdi-hf/persian-g2p-0.6b`) para convertir texto a fonemas antes de la inferencia. La licencia CC BY 4.0 permite uso comercial con atribución.
+El modelo se distribuye con pesos PyTorch (float32) y ONNX (opset 17), junto con una tabla IPA unificada de 84 simbolos para persa e ingles. La licencia es CC BY 4.0, lo que permite uso comercial con atribucion. No es un modelo de lenguaje ni un sistema TTS de gran escala: es una pieza de infraestructura de voz optimizada para latencia y huella minima.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer feed-forward (tiny-voca) con generador de forma de onda integrado |
-| Parametros totales | 4.531.147 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (entrada por secuencia de tokens fonéticos, sin límite documentado) |
-| Tipos de cuantizacion | no disponible (pesos publicados en float32; export ONNX opset 17 en float32) |
-| Idiomas soportados | persa (farsi, `fa`) |
-| Licencia | CC BY 4.0 (uso libre, incluido comercial, con atribución) |
-| Formato de pesos | PyTorch (`.pt`, float32) y ONNX (`.onnx`, float32, opset 17) |
+| Arquitectura | tiny-voca (texto a voz con generador de forma de onda fuente-filtro integrado) |
+| Parametros totales | 8,20 M (v2); 4,53 M (v1) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (entrada por secuencia de tokens IPA, sin contexto conversacional) |
+| Tipos de cuantizacion | No disponible; pesos distribuidos en float32 (PyTorch y ONNX) |
+| Idiomas soportados | Persa (fa) e ingles (en), con code-switching en v2 |
+| Licencia | CC BY 4.0 |
+| Formato de pesos | PyTorch (`.pt`) y ONNX (opset 17) |
+| Frecuencia de muestreo | 24 kHz |
+| Voces | Parisa (id 0, FA femenina), Mana (id 2, FA femenina de estudio), Maya (id 3, EN femenina) |
+| Tabla de simbolos | 84 simbolos IPA unificados FA+EN con marcas de estres |
+| Tamano del repo | 0,2 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura `tiny-voca` (Apache-2.0), un transformer feed-forward con generador de forma de onda integrado que produce directamente la señal de audio a 24 kHz. La entrada no es texto sino tokens IPA persas de una tabla de 46 símbolos, acompañados de un canal de estrés/ezafe de tres clases: 0 sin acento, 1 acento léxico primario en final de palabra, 2 ezafe explícito (`-e`/`-ye`). El grafo ONNX recibe además parámetros de control de velocidad (`speed`), desplazamiento de tono (`pitch_shift`) y rango de tono (`pitch_range`), y devuelve la forma de onda y las duraciones por token en tramas de 256 muestras (10,67 ms).
+tiny-ava se basa en la arquitectura `tiny-voca`, un diseno TTS compacto que combina un frontend de texto a fonemas con un generador de forma de onda de tipo fuente-filtro integrado en el propio modelo. Esto evita depender de un vocoder neuronal separado, lo que explica el reducido numero de parametros (8,2 M en v2) y el tamano del export ONNX (34,4 MB). La entrada se compone de tokens IPA unificados para persa e ingles (84 simbolos, IDs 0 a 83) envueltos con `<bos>` y `<eos>`, mas senales auxiliares de estres, identificador de voz, velocidad, desplazamiento de tono y rango de tono.
 
-Según la model card, el entrenamiento se realizó desde cero, sin pesos preentrenados, con curvas de entrenamiento y validación de 104.000 pasos. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO. La conversión de texto a fonemas se delega a frontends G2P separados, de modo que el modelo acústico solo trabaja con representaciones fonéticas.
+El entrenamiento de v2 se prolongo durante 140 000 pasos, segun las curvas de entrenamiento publicadas en el repositorio. La model card menciona datos de origen como Mana-TTS HIGH (CC0, voz humana de estudio), Chatterbox Run C (que incluye 1 494 telefonos `ژ`) y el corpus `n4ze3m/tiny-voca` para la parte inglesa. No se detalla la composicion completa del dataset ni si se emplearon tecnicas de RLHF o DPO, algo poco habitual en TTS. La innovacion principal es el soporte nativo de code-switching persa-ingles dentro de una misma locucion, junto con el control explicito de estres lexico y de la ezafe persa a traves del tensor `stress`.
 
 ## Capacidades
 
-- Síntesis de voz en persa a 24 kHz mono con la voz femenina `parisa`.
-- Control de velocidad de habla mediante el parámetro `speed` (1.0 por defecto).
-- Control de tono mediante `pitch_shift` (añadido al log F0; 0,058 ≈ +1 semitono) y `pitch_range` (escala del movimiento de tono alrededor de la media; recomendado 1,0–1,1).
-- Manejo de ezafe persa, tanto implícito como con kasra explícita (`ـِ`).
-- Resolución de homógrafos en contexto (por ejemplo, `تست` → *tost*, `گل` → *gol*/*gel*, `مرد` → *mord*), según los ejemplos publicados.
-- Pronunciación de consonantes uvulares persas (`ق/غ/خ/ع`).
-- Soporte de persa coloquial y de puntuación interrogativa (`؟`).
-- Salida de duraciones por token para control o análisis posteriores.
-- No soporta tool calling, agentes ni razonamiento multi-step: es un modelo puramente acústico.
-- No dispone de modo thinking, visión ni audio de entrada.
+- Sintesis de voz en persa (farsi) e ingles con tres voces femeninas seleccionables por ID.
+- Code-switching: mezcla de persa e ingles en una misma frase (por ejemplo, terminos tecnicos en ingles dentro de una oracion persa).
+- Control de velocidad de habla mediante el parametro `speed` (1.0 por defecto; se recomienda limitar la velocidad neuronal a ~1.3 y usar Sonic WSOLA para 1.5x-3.5x).
+- Control de tono: `pitch_shift` (0.058 equivale aproximadamente a +1 semitono) y `pitch_range` (1.0-1.1 recomendado).
+- Marcado de estres lexico: valor 0 sin estres, 1 estres primario, 2 estres secundario en ingles o ezafe explicita en persa.
+- Inferencia 100% offline en CPU, navegador y Android.
+- Export ONNX con interfaz documentada para integracion en aplicaciones nativas y web.
+- No soporta tool calling, function calling, razonamiento multi-paso ni otras capacidades de modelos de lenguaje: es exclusivamente un modelo TTS.
 
 ## Casos de uso
 
-- Lectura por voz en aplicaciones de escritorio: integración del grafo ONNX en una app local que convierta texto persa a fonemas con `persian-g2p-tiny` y sintetice en CPU, sin conexión a internet ni GPU.
-- Asistentes de voz embebidos: con 18–20 MB de peso y 38,5× tiempo real en un hilo, cabe en dispositivos de recursos limitados (Raspberry Pi, routers, electrónica de consumo) para respuestas habladas cortas.
-- Accesibilidad para personas con discapacidad visual: lectura de contenido en persa en lectores de pantalla ligeros, donde el reducido consumo de CPU permite ejecución en segundo plano.
-- Generación de audiolibros o boletines: síntesis por lotes de textos largos a velocidad muy superior al tiempo real, con control de velocidad y tono para adaptar la locución.
-- Aprendizaje de persa: producción de audio de ejemplo para vocabulario y frases, incluyendo pares de homógrafos y cadenas de ezafe que ilustran la pronunciación correcta.
-- Prototipado de interfaces de voz: generación rápida de clips de prueba en pipelines de desarrollo sin depender de servicios TTS en la nube, con coste cero por petición.
-- Sistemas de megafonía o anuncios locales: síntesis de avisos en persa en tiempo real sobre hardware de bajo coste.
+- Lectores de pantalla y accesibilidad en Android: el modelo puede generar voz persa e inglesa en tiempo real sobre un solo hilo de CPU, lo que permite integrarlo en aplicaciones como TalkBack sin depender de servicios en la nube ni de conectividad.
+- Asistentes de voz offline en navegador: con 34,4 MB de ONNX y 34x tiempo real en CPU, se puede cargar en una pagina web y sintetizar respuestas sin enviar texto a servidores externos, util para privacidad y entornos con red restringida.
+- Audiolibros y contenido educativo en persa: la voz Mana, entrenada con datos de estudio humano, ofrece una calidad mas natural (CER de 5,79% en el conjunto de prueba) adecuada para narracion de textos largos.
+- Localizacion de interfaces y mensajes de sistema: el modelo permite generar avisos de UI en persa e ingles con la misma tuberia, como demuestra el ejemplo de TalkBack incluido en la model card.
+- Prototipado rapido de productos de voz: al ser un modelo de 8,2 M de parametros con pesos PyTorch y ONNX, se puede iterar en local sin infraestructura GPU, reduciendo costes de experimentacion.
+- Educacion de pronunciacion y G2P: combinado con los frontends `persian-g2p-tiny` o `persian-g2p-0.6b`, se puede construir una tuberia completa de texto a voz persa con control de estres y ezafe para ensenanza de fonetica.
+- Sistemas embebidos y dispositivos de bajo consumo: el rendimiento de 81x tiempo real con 4 hilos de CPU permite ejecutar sintesis en dispositivos tipo Raspberry Pi o telefonos de gama media sin acelerador hardware.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+Resultados publicados en la model card para tiny-ava v2 sobre clips de prueba reservados, evaluados con `faster-whisper large-v3`:
 
-Los únicos datos de rendimiento publicados por el autor son de velocidad de inferencia en CPU:
+| Voz | Idioma | Origen de datos | CER v2 | CER ref. | WER v2 | WER ref. |
+|---|---|---|---:|---:|---:|---:|
+| Mana (id 2) | Persa | Estudio humano real (Mana-TTS HIGH, CC0) | 5,79% | 8,13% | 32,28% | 40,94% |
+| Parisa (id 0) | Persa | Chatterbox Run C (incl. 1 494 telefonos `ژ`) | 7,48% | 9,33% | 40,14% | 44,66% |
+| Maya (id 3) | Ingles | `n4ze3m/tiny-voca` (CC BY 4.0) | 2,78% | 1,72% | 10,58% | 7,94% |
 
-| Metrica | Valor |
-|---|---|
-| Velocidad en 1 hilo de CPU | 38,5× tiempo real |
-| Velocidad en 4 hilos de CPU | 77,4× tiempo real |
-| Frecuencia de muestreo de salida | 24 kHz mono |
-| Tamano de pesos PyTorch | 18,2 MB (float32) |
-| Tamano de pesos ONNX | 20,4 MB (float32, opset 17) |
+Rendimiento en CPU declarado: 34,1x tiempo real con 1 hilo y 81,2x con 4 hilos (v2); 41,9x y 83,3x respectivamente para v1. En ingles, la voz Maya obtiene un CER peor que la referencia (2,78% frente a 1,72%), lo que sugiere que la calidad en ingles es inferior a la del modelo original `tiny-voca`.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo está pensado para CPU y no requiere GPU.
-- Memoria del sistema: el peso de 18,2 MB (PyTorch) o 20,4 MB (ONNX) más el frontend G2P (16 MB con `persian-g2p-tiny` o 596 M parámetros con `persian-g2p-0.6b`) determinan el consumo; el modelo acústico en sí cabe en cualquier equipo con unos pocos cientos de MB libres.
-- GPU recomendadas: ninguna necesaria; el autor documenta exclusivamente inferencia en CPU.
-- Cabe en cualquier CPU de consumo; no se requieren aceleradores.
-- Opciones de despliegue: ONNX Runtime (grafo `onnx/tiny-ava-parisa.onnx`), PyTorch con `tiny-ava-parisa.pt`, y el repositorio de código `mallahyari/tiny-ava`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo TTS de este tipo).
-- Latencia y throughput: 38,5× tiempo real con 1 hilo y 77,4× con 4 hilos, según el autor.
+- VRAM estimada: no aplica en el caso de uso previsto; el modelo esta disenado para CPU. Los pesos v2 ocupan 31,3 MB (PyTorch float32) y 34,4 MB (ONNX).
+- GPU recomendadas: no se especifican; el modelo no requiere GPU. Cualquier GPU moderna puede ejecutarlo, pero no es el escenario objetivo.
+- Compatibilidad con GPU de consumo: si, cabe en cualquier GPU de consumo e incluso en dispositivos sin GPU dedicada.
+- Opciones de despliegue: ONNX Runtime (navegador y Android), PyTorch nativo, y la demo de Hugging Face Spaces. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que no aplican a un modelo TTS de este tipo.
+- Latencia y throughput: 34,1x tiempo real con 1 hilo de CPU y 81,2x con 4 hilos (v2), segun la model card.
+- Almacenamiento: repositorio completo de 0,2 GB; el modelo v2 aislado ocupa menos de 35 MB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Idioma | Contexto/entrada | Licencia | Despliegue |
-|---|---|---|---|---|---|
-| tiny-ava | 4,53 M | Persa | Tokens IPA (46 simbolos) | CC BY 4.0 | CPU, ONNX/PyTorch |
-| `mehdi-hf/persian-g2p-tiny` | no disponible (16 MB) | Persa | Texto a fonemas (G2P) | MIT | CPU |
-| `mehdi-hf/persian-g2p-0.6b` | 596 M | Persa | Texto a fonemas (G2P) | Apache-2.0 | CPU/GPU |
-| `tiny-voca` (n4ze3m) | no disponible | no disponible | Arquitectura base | Apache-2.0 | no disponible |
+| Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---:|---|---|---|---|
+| tiny-ava v2 | 8,20 M | FA + EN | No aplica | CC BY 4.0 | Hugging Face, ONNX, Android | 34x RT en 1 hilo CPU |
+| tiny-ava v1 | 4,53 M | FA | No aplica | CC BY 4.0 | Hugging Face | Solo voz Parisa, 41,9x RT |
+| tiny-voca (n4ze3m) | No disponible | EN | No aplica | CC BY 4.0 | GitHub / Hugging Face | Arquitectura base; referencia en ingles |
+| Chatterbox | No disponible | Multiples | No disponible | No disponible | No disponible | Fuente de datos de entrenamiento citada, no comparable directamente |
 
-No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones completas de modelos TTS persas comparables de otros autores, por lo que no es posible una comparación cuantitativa de calidad de síntesis.
+No se dispone de datos suficientes para comparar con otros modelos TTS persas de referencia (por ejemplo, sistemas basados en VITS o FastSpeech) en parametros, contexto y rendimiento dentro de la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Una sola voz (`parisa`, femenina); no hay voces adicionales documentadas.
-- Requiere un frontend G2P externo para convertir texto a fonemas; el modelo por sí solo no procesa texto en persa.
-- Solo soporta persa; no hay capacidades multilingües.
-- No se documentan sesgos específicos del dataset de entrenamiento, pero al entrenarse desde cero la calidad y cobertura dependen de datos no publicados.
-- Riesgo de errores de pronunciación en homógrafos, nombres propios y préstamos no cubiertos por el G2P o por el corpus de entrenamiento.
-- No se documentan métricas objetivas de calidad (MOS, WER de síntesis) ni benchmarks, lo que dificulta evaluar su fidelidad frente a alternativas.
-- El repositorio registra 0 descargas en el momento de la consulta, lo que indica escasa validación por parte de la comunidad.
-- Licencia CC BY 4.0: el uso comercial es libre pero exige atribución al autor.
-- Para exportar a WAV de 16 bits hay que escalar el pico de la salida a ≤ 0,99, según indica la model card.
+- Solo admite dos idiomas (persa e ingles); no es multilingue general.
+- La calidad en ingles (voz Maya) es inferior a la referencia `tiny-voca`: CER de 2,78% frente a 1,72%, y WER de 10,58% frente a 7,94%.
+- El WER en persa es elevado (32,28% en Mana y 40,14% en Parisa), aunque mejor que la referencia; conviene validar en el dominio concreto antes de produccion.
+- No se detalla la composicion del dataset de entrenamiento ni posibles sesgos de las voces; al ser voces femeninas unicamente, no cubre otras variantes de genero o acento.
+- Riesgo de artefactos y alucinaciones acusticas inherente a los modelos TTS pequenos, especialmente en textos largos o con simbolos poco frecuentes.
+- La velocidad neuronal debe limitarse a ~1.3; para velocidades superiores se recomienda Sonic WSOLA, lo que anade complejidad al pipeline.
+- Licencia CC BY 4.0: permite uso comercial con atribucion; es necesario citar al autor y conservar el aviso de licencia.
+- No es un modelo de lenguaje: no soporta razonamiento, tool calling ni agentes; su unico proposito es la sintesis de voz.
+- El proyecto depende de un autor individual y de un repositorio pequeno (342 descargas, 27 likes en el momento de la consulta), por lo que el soporte a largo plazo no esta garantizado.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mehdi-hf/tiny-ava
-- Demo en el navegador: https://huggingface.co/spaces/mehdi-hf/tiny-ava-demo
-- Repositorio de código y releases: https://github.com/mallahyari/tiny-ava
-- Frontend G2P ligero: https://huggingface.co/mehdi-hf/persian-g2p-tiny
-- Frontend G2P grande (596 M): `mehdi-hf/persian-g2p-0.6b` (referenciado en la model card, sin URL directa en la información disponible)
+- Demo en navegador (Hugging Face Spaces): https://huggingface.co/spaces/mehdi-hf/tiny-ava-demo
+- Repositorio GitHub y app Android offline: https://github.com/mallahyari/tiny-ava
+- Frontend G2P persa tiny (16 MB, MIT): https://huggingface.co/mehdi-hf/persian-g2p-tiny
+- Frontend G2P persa 0.6B (596M, Apache-2.0): https://huggingface.co/mehdi-hf/persian-g2p-0.6b
 - Arquitectura base tiny-voca: https://github.com/n4ze3m/tiny-voca

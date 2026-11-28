@@ -2,84 +2,98 @@
 
 ## Resumen
 
-Diogenes-0.2-55M-40K-STEPS es un modelo de lenguaje de pequeno tamano (55 millones de parametros) publicado por el usuario Counfield en Hugging Face bajo licencia MIT. El nombre sugiere que se trata de la version 0.2 de una familia de modelos denominada Diogenes, entrenada durante 40.000 pasos, aunque la model card no aporta detalles sobre la arquitectura, el dataset ni el procedimiento de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta.
+Diogenes-0.2-55M-40K-STEPS es un checkpoint intermedio de investigación del modelo Diogenes-0.2-55M, desarrollado por Counfield. Se trata de un transformer recurrente con bucles (RLT, recurrent looped transformer) de 55.078.145 parámetros, entrenado a nivel de byte (vocabulario de 256 bytes, sin tokenizador) y con un mecanismo distintivo de memoria direccionada por contenido que permite al modelo acceder a información situada más allá de su ventana de atención de 512 bytes.
 
-Por su escala, encaja en la categoria de modelos ligeros orientados a tareas acotadas, prototipado rapido o experimentacion en hardware modesto. Sin embargo, la ausencia casi total de documentacion tecnica en la model card limita seriamente cualquier evaluacion rigurosa: no se especifican la longitud de contexto, los idiomas soportados, los formatos de pesos ni los resultados de evaluacion.
+Este checkpoint corresponde a la actualización 40.000 de un entrenamiento planificado de 380.000 actualizaciones, es decir, aproximadamente el 10,5 % del total. No está ajustado por instrucciones: no conversa, solo continúa texto. Se publica para que la trayectoria de entrenamiento pueda seguirse; el modelo final se publicará por separado.
 
-La relevancia actual del modelo es, por tanto, limitada y circunstancial: puede resultar util como banco de pruebas para pipelines de entrenamiento o para experimentos de investigacion con modelos pequenos, pero no hay evidencia publicada que respalde su uso en produccion ni su calidad frente a alternativas establecidas.
+Su relevancia es fundamentalmente investigadora: demuestra que un mecanismo de memoria externa determinista, indexada por contenido y entrenada conjuntamente con el modelo base, recupera información a miles de bytes de distancia donde el modelo sin memoria obtiene un 0 % de acierto exacto. El código de investigación necesario para ejecutarlo (índice de memoria, lector y bucle de generación) todavía no es público.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 55M (segun el nombre del modelo) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer recurrente con bucles (RLT), núcleo con retroalimentación de tokens desactivada (rama "a0"), anchura 1.536, 8 cabezas |
+| Parametros totales | 55.078.145 (modelo base) + 858.436 (lector de memoria) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Ventana de atención de 512 bytes; memoria hasta 131.072 bytes en las pruebas del autor (unas 64 ventanas) |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Inglés principalmente |
 | Licencia | MIT |
-| Formato de pesos | no disponible |
+| Formato de pesos | safetensors (`model.safetensors`, `memory_reader.safetensors`) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. La model card unicamente incluye la etiqueta de licencia MIT y no detalla si se trata de un transformer decoder-only, un modelo MoE, una arquitectura hibrida o cualquier otra variante. Tampoco se especifica la composicion del dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT.
+El modelo es un transformer recurrente con bucles (RLT) de 55 millones de parámetros, con anchura 1.536 y 8 cabezas de atención, en el que la retroalimentación de tokens está desactivada (la denominada rama "a0"). Opera a nivel de byte: la entrada y la salida son bytes UTF-8, sin tokenizador, con un vocabulario de exactamente 256 símbolos. La atención cubre una ventana de 512 bytes, de modo que una posición ve como máximo unos 1.000 bytes de texto precedente a través de la atención.
 
-El unico dato concreto que aporta el nombre del repositorio es el numero de pasos de entrenamiento (40.000), pero sin conocer el tamano del batch, la tasa de aprendizaje ni la naturaleza de los datos, ese dato por si solo no permite inferir la calidad ni la convergencia del modelo.
+El componente diferencial es una memoria direccionada por contenido sobre todo el historial. La dirección no se aprende: cada byte se indexa bajo los bytes que lo preceden, de forma que una clave funciona independientemente de su contenido (direccionamiento por contenido, no por posición). La memoria ofrece candidatos al siguiente byte a través de 16 canales de lectura: 1 canal de contexto (continuación de la coincidencia anterior más larga), 4 canales de salto que pasan mensajes entre sí (un canal usa lo recuperado por otro como su propia dirección, encadenando hechos enunciados lejos unos de otros), 10 canales de pasaje anclados en el contenido más raro del texto reciente (de modo que una pregunta formulada de forma distinta al enunciado sigue encontrándolo) y 1 canal de "no lo sé". Un pequeño lector de memoria aprendido de 858.436 parámetros decide cuánto confiar en cada canal y en el modelo de lenguaje en cada byte.
+
+El entrenamiento es conjunto desde cero: dos de cada tres actualizaciones son modelado de lenguaje de siguiente byte estándar y una es una "fila de memoria" (texto real largo con enunciados separados y preguntas sobre ellos, con respuesta igual al valor enunciado o "unknown" si nunca se enunció). Los datos de entrenamiento (1,5 GB de bytes tras filtrado de calidad) se reparten en 40 % lenguaje natural general, 20 % conversación, 20 % código, 15 % razonamiento y matemáticas y 5 % texto de seguridad; se excluyeron documentos con puntuación de calidad inferior a 0,70 y duplicados exactos y casi exactos. La configuración: AdamW, tasa de aprendizaje máxima 6e-4 (base) y 1e-3 (lector), 500 actualizaciones de calentamiento, decaimiento coseno, precisión mixta, semilla 401 y una única GPU NVIDIA L4. Las actualizaciones de lenguaje usan 32 filas de 512 bytes; las de memoria, 4 filas de 8.192 bytes.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada por documentacion, aunque es la funcion esperable en un modelo de lenguaje.
-- Razonamiento, codigo y matematicas: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Continuación de texto a nivel de byte en inglés, sin tokenizador.
+- Recuperación de información a larga distancia mediante memoria direccionada por contenido: hechos situados miles de bytes atrás llegan al modelo a través de los 16 canales de lectura.
+- Encadenamiento de hechos: los 4 canales de salto permiten enlazar información enunciada en puntos distantes del texto.
+- Detección de información ausente: el canal "no lo sé" y el sesgo aprendido de las filas de memoria permiten responder "unknown" cuando el dato no está en el texto.
+- Coincidencia semántica aproximada: los canales de pasaje se anclan en el contenido poco frecuente, de modo que una pregunta reformulada puede localizar el enunciado original.
+- No soporta tool calling ni function calling.
+- No soporta comportamiento de agente ni razonamiento multi-paso general.
+- No está ajustado por instrucciones: no mantiene conversaciones.
 
 ## Casos de uso
 
-- Prototipado de pipelines de inferencia: por su tamano reducido (55M de parametros), el modelo puede desplegarse en entornos con recursos minimos para validar cadenas de preprocesado, tokenizacion y generacion antes de migrar a modelos mayores.
-- Experimentacion academica con modelos pequenos: util como linea base en estudios sobre escalado, destilacion o tecnicas de entrenamiento, siempre que se documente adecuadamente su procedencia.
-- Pruebas de integracion en frameworks de serving: sirve para verificar configuraciones de vLLM, llama.cpp u otros motores con un modelo de baja huella de memoria.
-- Generacion de texto en dispositivos embebidos o CPU: si el formato de pesos es compatible, su escala permitiria inferencia en hardware sin GPU dedicada, aunque la calidad no esta verificada.
-- Evaluacion comparativa de modelos ligeros: puede incluirse en baterias de pruebas internas junto a otros modelos de menos de 100M de parametros.
-- Demostraciones educativas: para ilustrar el funcionamiento de un modelo de lenguaje en talleres o cursos, dado su bajo coste computacional.
-
-En todos los casos, la ausencia de documentacion sobre calidad, idioma y contexto obliga a validar el comportamiento empiricamente antes de cualquier uso real.
+- Investigación sobre memoria en modelos de lenguaje: el checkpoint permite reproducir y analizar el efecto de la memoria direccionada por contenido comparando bits por byte con memoria activada y desactivada (1,35 frente a 1,56 en texto web).
+- Estudio de la trayectoria de entrenamiento: al ser un checkpoint intermedio con métricas publicadas en varios puntos (11K, 26K y 40K actualizaciones), sirve para analizar la evolución de la gramática y de la recuperación de información durante el preentrenamiento.
+- Experimentos de arquitecturas recurrentes con bucles: útil para comparar el comportamiento de un RLT de 55M con transformers estándar del mismo tamaño en tareas controladas.
+- Evaluación de mecanismos de direccionamiento por contenido: permite probar variantes del índice de memoria (canales, saltos, anclajes) sobre un modelo ya entrenado conjuntamente con el lector.
+- Pruebas de recuperación de hechos a distancia fija: los tests sintéticos del autor (hecho a 4.000 bytes, cadenas de 2, 4 y 5 enunciados) ofrecen una base reproducible para medir la contribución de cada canal.
+- Docencia y divulgación: un modelo de 55M parámetros y 0,2 GB de repositorio es manejable para explicar memoria externa, entrenamiento conjunto y evaluación honesta de checkpoints tempranos en un entorno de laboratorio.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Medicion | Valor |
+|---|---|
+| Bits por byte de validación, mezcla de entrenamiento (memoria desactivada) | 1,60 |
+| Texto web, bits por byte, memoria activada / desactivada (filas de 8.192 bytes) | 1,35 / 1,56 |
+| Pares mínimos gramaticales del inglés (67 paradigmas × 1.000 pares; azar 50 %) | 57,5 % |
+| 128 preguntas naturales sobre 64 documentos reales no vistos, documento 8.000 bytes antes de la pregunta; respuesta generada exactamente correcta, memoria activada / desactivada | 7,4 % / 0,0 % |
+| Igual, documento inmediatamente antes de la pregunta, memoria activada / desactivada | 8,6 % / 0,0 % |
+| Tests sintéticos de memoria: hecho a 4.000 bytes; cadenas de 2, 4 y 5 enunciados; "unknown" para claves nunca enunciadas; preguntas reformuladas (32 elementos cada uno) | 91-100 % (cadenas de 3 enunciados: 78 %) |
+
+Para comparar, checkpoints anteriores de la misma ejecución: pares mínimos gramaticales 52,3 % (11K actualizaciones) y 54,2 % (26K); preguntas sobre documentos reales 10,7 % a 8.000 bytes (11K). El autor advierte que los tests sintéticos de memoria están cerca de la distribución de entrenamiento de las filas de memoria y demuestran que el mecanismo funciona, no que el modelo entienda el lenguaje; la medida honesta son las preguntas sobre documentos reales, que en esta etapa son bajas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 55M de parametros, en precision FP16 el modelo ocuparia aproximadamente 110 MB de pesos; en cuantizacion de 8 bits, alrededor de 55 MB; en 4 bits, unos 28 MB. Estas cifras son estimaciones teoricas basadas en el numero de parametros, no datos confirmados por el autor.
-- GPU recomendadas: cualquier GPU consumer moderna (GTX 1060, RTX 3060, RTX 4090) es mas que suficiente; el modelo cabe holgadamente en GPUs de gama baja e incluso en iGPU.
-- Compatibilidad con GPU consumer: si, en practicamente cualquier GPU consumer con al menos 1 GB de VRAM libre.
-- Opciones de despliegue: no confirmadas por el autor; dependeria del formato de pesos, que no se especifica. Si los pesos estan en safetensors, seria compatible con transformers y vLLM; si estan en GGUF, con llama.cpp y Ollama.
-- Latencia y throughput estimados: no disponibles. Por el tamano, se espera una latencia muy baja en GPU y aceptable en CPU, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: muy baja por el tamaño del modelo (55M de parámetros, repositorio de 0,2 GB); la memoria direccionada por contenido se construye en tiempo de inferencia a partir del texto de entrada y su coste depende de la longitud del historial (hasta 131.072 bytes en las pruebas del autor).
+- GPU recomendadas: el autor entrenó con una única NVIDIA L4; para inferencia basta cualquier GPU consumer moderna.
+- Cabe en GPU consumer: sí, con amplio margen, incluidas tarjetas de gama baja.
+- Opciones de despliegue: no disponibles de forma estándar; el modelo requiere el código de investigación RLT (índice de memoria, lector y bucle de generación), que aún no es público. No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Diogenes-0.2-55M-40K-STEPS | 55M | no disponible | MIT | Hugging Face |
-| GPT-2 small | 124M | 1024 tokens | MIT | Hugging Face |
-| DistilGPT-2 | 82M | 1024 tokens | Apache 2.0 | Hugging Face |
-| Pythia-70M | 70M | 2048 tokens | Apache 2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Diogenes-0.2-55M-40K-STEPS | 55,08 M (+0,86 M lector) | Atención 512 bytes; memoria hasta 131.072 bytes | RLT a nivel de byte con memoria direccionada por contenido | MIT | Pesos públicos; código de inferencia no público |
+| Diogenes-0.2-55M (checkpoint base) | 55,08 M | Igual que el anterior | Mismo modelo, checkpoint anterior de la misma ejecución | MIT | Pesos públicos |
+| Alternativas de 55M parámetros comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La comparacion se limita a parametros y licencia, ya que no hay datos de rendimiento publicados para Diogenes-0.2. Frente a GPT-2 small, DistilGPT-2 o Pythia-70M, el modelo de Counfield tiene un tamano intermedio, pero carece de la documentacion, los benchmarks y el ecosistema de herramientas que acompanan a esas alternativas.
+No se dispone de datos de benchmarks de modelos alternativos en la información proporcionada, por lo que no se establece comparación cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: no se especifican arquitectura, datos de entrenamiento, contexto ni idiomas, lo que impide evaluar su idoneidad para cualquier tarea.
-- Riesgo elevado de alucinacion: los modelos de 55M de parametros tienen una capacidad limitada de modelado del lenguaje y suelen generar texto incoherente o factualmente incorrecto.
-- Sesgos desconocidos: al no documentarse el dataset de entrenamiento, no es posible identificar sesgos de genero, raza, idioma o dominio.
-- Licencia MIT: permite uso comercial y modificacion sin restricciones significativas, pero el autor no ofrece garantias de ningun tipo.
-- Sin soporte de la comunidad: cero descargas y cero likes en el momento de la consulta, lo que reduce la probabilidad de encontrar issues resueltos o adaptaciones.
-- No apto para produccion sin validacion previa: cualquier despliegue real requeriria una evaluacion empirica exhaustiva que el autor no ha proporcionado.
+- Checkpoint temprano: gramática débil y casi ningún conocimiento del mundo; es el 10,5 % de la ejecución planificada.
+- No está ajustado por instrucciones; en generación libre cae a menudo en bucles de repetición y no se detiene.
+- Tiende a responder "unknown" tras una pregunta que no puede contestar con el texto que tiene delante (comportamiento aprendido de las filas de memoria) y está sesgado hacia respuestas numéricas.
+- Mayoritariamente en inglés; el soporte de otros idiomas no está garantizado.
+- La recuperación sobre documentos reales es baja en esta etapa (7,4-8,6 % de respuestas exactas), aunque superior al 0 % sin memoria.
+- El modelo no es ejecutable sin el código de investigación RLT, que no es público; los pesos por sí solos no permiten la inferencia completa.
+- Licencia MIT: permite uso comercial, pero el estado de investigación y la falta de ajuste por instrucciones desaconsejan cualquier uso en producción.
+- Riesgo de alucinación y de repetición en generación libre; no debe usarse como fuente de hechos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Counfield/Diogenes-0.2-55M-40K-STEPS
-- No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/Counfield/Diogenes-0.2-55M-40K-STEPS
+- Modelo base: https://huggingface.co/Counfield/Diogenes-0.2-55M
+- Código de investigación RLT: no público en el momento de redactar esta ficha (el autor indica que se publicará junto con el modelo final)
+- Paper, blog o demo: no disponibles en la información proporcionada

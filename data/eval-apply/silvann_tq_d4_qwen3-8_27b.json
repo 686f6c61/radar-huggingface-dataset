@@ -40,16 +40,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "eval-apply/silvann_tq_D4_qwen3.8_27b · Hugging Face",
-      "url": "https://huggingface.co/eval-apply/silvann_tq_D4_qwen3.8_27b",
-      "snippet": "Qwen/Qwen3.8-27B, packed for the SiLVANN engine (the Eval-Apply GPU Interpreter and its neural network library): every layer matrix at 4 bits a weight (TurboQuant, a per-row scale), each rotated along its input axis with a blocked Hadamard-and-signs rotation; the embedding and head at 8 bits; norms and other small tensors kept lossless. D4: dense 4 (the model has no experts). About 15 GB."
-    },
-    {
-      "title": "eval-apply (eval apply) - Hugging Face",
-      "url": "https://huggingface.co/eval-apply/models",
-      "snippet": "Recent Activity published a modelabout 14 hours ago eval-apply/GLM-5.3-Flash_silvann_tq_D4E4 updated a modelabout 19 hours ago eval-apply/GLM-5.3-Flash_silvann_tq_D4E4 published a modelabout 22 hours ago eval-apply/Qwen3.8-27B_silvann_tq_D4 View all activity"
-    }
-  ]
+  "sources": []
 }

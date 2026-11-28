@@ -2,87 +2,78 @@
 
 ## Resumen
 
-WavePerGPT es un modelo de lenguaje de escala muy reducida (5.752.320 parametros totales) publicado por el usuario waveper en Hugging Face bajo licencia MIT. Segun su propia model card, se trata de un experimento entrenado "por diversion" sobre los mensajes de Discord del autor, sin pretension de utilidad general y con un comportamiento declaradamente deficiente: el autor lo describe como "blazingly Fast and Stupid" y advierte que "no puede escribir normalmente", que produce "gibberish" y que su ventana de contexto maxima es de 128 tokens.
+WavePerGPT es un modelo de lenguaje de 5,75 millones de parametros publicado por el usuario waveper en Hugging Face bajo licencia MIT. Segun su propia model card, se trata de un experimento entrenado "por diversión" sobre los mensajes de Discord del autor, y el propio creador lo describe como "blazingly Fast and Stupid". No es un modelo orientado a producción ni a tareas reales: es una curiosidad técnica de tamano minusculo.
 
-No es un modelo orientado a produccion ni a evaluacion comparativa. Su interes es puramente experimental o educativo: sirve como ejemplo de fine-tuning de un modelo diminuto sobre un corpus personal y como caso de estudio de las limitaciones de los modelos por debajo del orden de los millones de parametros. No se dispone de informacion sobre arquitectura concreta, dataset, proceso de entrenamiento ni evaluacion.
+El modelo se distribuye en formato GGUF, lo que sugiere que fue preparado para su ejecución en herramientas de inferencia locales como llama.cpp u Ollama. Con apenas 5,75 millones de parametros, es varios ordenes de magnitud mas pequeno que cualquier LLM convencional, y su calidad de generacion es, por admision explicita del autor, incoherente ("gibberish++").
 
-La relevancia actual es limitada y debe enmarcarse en el contexto de modelos tiny para experimentacion local, prototipado de pipelines o docencia sobre tokenizacion y generacion de texto. Cualquier uso real requeriria un modelo de mayor capacidad.
+Su relevancia es practicamente nula para desarrolladores e investigadores que buscan un modelo funcional. Se incluye esta ficha por completitud del catalogo, pero debe quedar claro que no hay datos tecnicos publicados sobre arquitectura, contexto, entrenamiento o rendimiento, y que el propio autor reconoce fallos recurrentes al ejecutarlo en Ollama.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 5.752.320 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 128 tokens (segun model card) |
-| Tipos de cuantizacion | GGUF (unico formato publicado; niveles concretos no disponibles) |
-| Idiomas soportados | no disponible (entrenado sobre mensajes de Discord del autor, idioma no declarado) |
+| Parametros totales | 5.752.320 (5,75 M) |
+| Parametros activos | no disponible (no consta que sea MoE) |
+| Longitud de contexto | 128 tokens (segun la model card) |
+| Tipos de cuantizacion | no disponible (se distribuye en GGUF) |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (repo con tag gguf; no se observan safetensors publicados pese al conteo de parametros) |
+| Formato de pesos | GGUF (tags del repositorio) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna (tipo de transformer, numero de capas, dimensiones de hidden state, atencion, tokenizador, etc.). El unico dato estructural verificable es el recuento de parametros: 5.752.320, lo que situa al modelo en el rango de los modelos tiny, muy por debajo de los modelos pequenos habituales (p. ej., ~100M-1B).
+No se ha publicado informacion sobre la arquitectura del modelo mas alla del recuento de parametros (5.752.320). No hay datos sobre tipo de transformer, numero de capas, dimensiones ocultas, mecanismo de atencion ni tokenizador. La model card no incluye ninguna especificacion tecnica.
 
-Respecto al entrenamiento, la model card indica que fue entrenado sobre los mensajes de Discord del propio autor "por diversion". No se especifica el numero de tokens, la composicion del dataset, si hubo etapas de alineacion (RLHF, DPO, SFT supervisado mas alla del fine-tuning base) ni hiperparametros. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, MoE u otras). El tag `endpoints_compatible` sugiere que el autor lo preparo para su despliegue mediante Inference Endpoints de Hugging Face, pero no aporta informacion sobre el entrenamiento.
+Respecto al entrenamiento, el autor indica unicamente que fue entrenado con sus mensajes de Discord "por diversión". No se especifica el numero de tokens, la composicion del dataset, si hubo ajuste fino supervisado, RLHF, DPO ni ninguna otra etapa. Tampoco se documenta el proceso de conversion a GGUF ni la version de llama.cpp utilizada.
 
 ## Capacidades
 
-- Generacion de texto muy limitada: el autor advierte explicitamente de que el modelo "no puede escribir normalmente" y produce "gibberish".
-- Ventana de contexto de 128 tokens, insuficiente para conversaciones multi-turno o documentos de cualquier tamano.
+- Generacion de texto muy limitada: el propio autor la describe como "gibberish++" (incoherente).
+- Ventana de contexto de 128 tokens, que segun el autor el modelo agota sin producir una respuesta util.
 - No se documenta soporte de tool calling ni function calling.
-- No se documenta soporte de agentes ni razonamiento multi-step.
-- Capacidades multilingues no declaradas; el corpus de entrenamiento son mensajes de Discord del autor, por lo que el sesgo idiomatico es desconocido y probablemente muy restringido.
-- No se documentan capacidades especiales (thinking mode, vision, audio, code, matematicas).
-- Formato GGUF, lo que permite su carga en runtimes de inferencia local compatibles con este formato.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingue; los idiomas soportados figuran como no disponibles.
+- No se documentan capacidades de vision, audio ni modo de razonamiento extendido.
+- Segun la model card, el modelo "no puede escribir con normalidad" y no admite respuestas coherentes por parte del usuario.
 
 ## Casos de uso
 
-- Docencia y talleres sobre modelos de lenguaje: sirve para ilustrar en directo como un modelo con pocos millones de parametros y contexto de 128 tokens falla en tareas que un modelo de escala media resuelve, sin coste de computo.
-- Pruebas de integracion de pipelines GGUF: permite validar el cableado de un runtime (carga, tokenizacion, generacion, streaming) antes de sustituir el modelo por uno mayor en el mismo pipeline.
-- Experimentos de fine-tuning sobre corpus personales: como base diminuta para reproducir el flujo completo de entrenamiento y publicacion en Hugging Face con un coste minimo.
-- Pruebas de carga y benchmarking de infraestructura: al ocupar practicamente nada en disco y VRAM, sirve para medir latencia de red, colas y orquestacion sin que el modelo sea el cuello de botella.
-- Generacion de texto de relleno o sintetico no sensible: para pruebas de UI, maquetacion o demos donde el contenido no importa y solo se necesita una salida de texto.
-- Ejemplo de publicacion de modelos en Hugging Face: la model card y el repo sirven como plantilla de un caso real de publicacion con licencia MIT y formato GGUF.
-- Prototipado de un endpoint compatible con la API de Inference Endpoints: el tag `endpoints_compatible` permite probar el flujo de despliegue sin incurrir en costes de un modelo grande.
+- Experimentacion educativa sobre modelos de lenguaje minimos: util para observar como se comporta un modelo de 5,75 M de parametros en herramientas como llama.cpp u Ollama, sin expectativas de calidad.
+- Pruebas de integracion de pipelines GGUF: sirve como artefacto de tamano ridiculo para validar que un flujo de carga y ejecucion de modelos GGUF funciona de extremo a extremo.
+- Demostraciones de limitaciones de los LLM: puede emplearse en charlas o docencia para ilustrar por que el tamano y la calidad de los datos de entrenamiento importan.
+- Pruebas de manejo de errores en servidores de inferencia: dado que el autor documenta un fallo recurrente en Ollama (formato `peg-native` no esperado), puede usarse para probar la robustez de capas de gestion de errores.
+- Reproduccion de experimentos de fine-tuning casero: como ejemplo de modelo entrenado con un corpus personal (mensajes de Discord) y publicado en abierto.
+- No se recomienda ningun caso de uso en produccion, atencion al cliente, generacion de codigo ni analisis de datos, dada la calidad declarada por el propio autor.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica, y el autor declara explicitamente que el modelo produce "gibberish", por lo que no cabe esperar resultados competitivos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de ningun tipo (MMLU, HumanEval, GSM8K ni otras), y el autor no reporta evaluaciones cuantitativas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 100 MB en la mayoria de cuantizaciones GGUF, dado el tamano de 5,75M de parametros (a 4 bits, ~3 MB de pesos; a 8 bits, ~6 MB; a 16 bits, ~12 MB). Las cifras exactas dependen del nivel de cuantizacion publicado, que no se detalla.
-- GPU recomendadas: cualquier GPU consumer moderna o integrada; el modelo cabe holgadamente en GPUs con 1-2 GB de VRAM e incluso puede ejecutarse en CPU.
-- Cabe en cualquier GPU consumer (RTX 3060, RTX 4060, GTX 1650, iGPU recientes) y en la mayoria de CPUs con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face.
-- Latencia y throughput: no disponibles. Por el tamano del modelo, la latencia estara dominada por el overhead del runtime y de la red mas que por el computo.
+- VRAM estimada para inferencia: inferior a 1 GB en cualquier cuantizacion razonable, dado que el modelo tiene 5,75 M de parametros (unos 11,5 MB en FP16 y menos en cuantizaciones de 4-8 bits).
+- GPU recomendadas: cualquier GPU, incluida una iGPU o incluso CPU, es suficiente; no se requiere acelerador dedicado.
+- Cabe en cualquier GPU de consumo, desde modelos integrados hasta RTX 4090; tambien en Raspberry Pi y dispositivos similares.
+- Opciones de despliegue: llama.cpp y Ollama son las opciones coherentes con el formato GGUF distribuido; vLLM y TGI no estan documentados para este artefacto.
+- Latencia y throughput: no disponibles. El autor lo describe como "blazingly Fast", pero no aporta mediciones.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento que permitan una comparativa cuantitativa fiable. A modo orientativo estructural:
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| WavePerGPT | 5,75M | 128 tokens | MIT | GGUF | Modelo experimental entrenado con mensajes de Discord; sin benchmarks |
-| Modelos tiny de referencia (p. ej., variantes <100M) | variable | variable | variable | safetensors/GGUF | No se dispone de comparacion directa con este modelo |
-| Modelos pequenos de proposito general (~1B) | ~1B | 2K-8K tokens | variable | safetensors/GGUF | Categoria distinta; no comparable en calidad |
-
-No se conocen modelos comparables publicados en la misma categoria (modelos de ~5M de parametros entrenados sobre corpus personales) con datos publicos de evaluacion.
+No disponible. No se han identificado en la informacion proporcionada modelos comparables de tamano similar (unos 5,75 M de parametros) con los que establecer una comparacion rigurosa de parametros, contexto, rendimiento o licencia.
 
 ## Limitaciones y advertencias
 
-- Calidad de generacion declaradamente deficiente: el autor califica la salida como "gibberish", por lo que no es apto para tareas de produccion ni para evaluacion de calidad.
-- Contexto maximo de 128 tokens: insuficiente para cualquier caso de uso real con contexto; el autor senala ademas que el modelo "desperdicia" esa ventana.
-- Sesgos desconocidos: al entrenarse sobre mensajes de Discord de una persona, el modelo hereda los sesgos, estilo y tematicas de ese corpus, no documentados.
-- Riesgo de alucinacion: alto y no mitigado; no hay alineacion ni evaluacion documentada.
-- Idiomas: no declarados; el corpus es de un unico usuario, por lo que la cobertura multilingue es practicamente inexistente o desconocida.
-- Licencia MIT: permite uso comercial y modificacion, pero el modelo no ofrece garantias de calidad ni de idoneidad; el autor no ofrece soporte.
-- Datos personales: al entrenarse sobre mensajes de Discord, existe un riesgo potencial de memorizacion de contenido personal del autor; conviene tratarlo con cautela en contextos sensibles.
-- No apto para despliegues en produccion con usuarios reales.
+- Calidad de generacion declarada como incoherente por el propio autor ("gibberish++"); no produce texto util.
+- Ventana de contexto de solo 128 tokens, insuficiente para cualquier tarea conversacional o de documento.
+- Error documentado al ejecutarse en Ollama: `llama-server chat error: map[code:500 message:The model produced output that does not match the expected peg-native format type:server_error]`. El autor no confirma si ocurre en todas las maquinas ni ofrece solucion.
+- Sin documentacion sobre sesgos, datos de entrenamiento ni composicion del corpus (mensajes de Discord personales), por lo que no es posible evaluar riesgos de sesgo.
+- Riesgo de alucinacion total: al ser un modelo de 5,75 M de parametros entrenado con un corpus personal, la salida no tiene base factual verificable.
+- Licencia MIT: permite uso comercial y modificacion, pero ello no implica idoneidad tecnica para produccion.
+- El autor no garantiza mantenimiento ni correccion de los fallos ("Will I ever fix those broken stuff? The answer is... Maybe").
+- No debe desplegarse en entornos donde se espere una respuesta fiable, legalmente sensible o reproducible.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/waveper/WavePerGPT
-- No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.
+- No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios o demos) asociados al modelo.

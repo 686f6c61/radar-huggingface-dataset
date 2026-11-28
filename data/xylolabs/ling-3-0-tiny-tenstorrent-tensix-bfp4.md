@@ -2,85 +2,96 @@
 
 ## Resumen
 
-Ling-3.0-tiny-Tenstorrent-Tensix-BFP4 es una exportación cuantizada del modelo inclusionAI/Ling-3.0-tiny, publicada por Xylolabs para su ejecución sobre aceleradores Tenstorrent Tensix (arquitecturas Wormhole y Blackhole). No se trata de un modelo nuevo, sino de una conversión de los pesos lineales del modelo base a formato block-floating-point de 4 bits (`ttnn.bfloat4_b`, BFP4) mediante GPTQ, empaquetados de forma que TT-NN pueda leerlos directamente en memoria de dispositivo. El checkpoint conserva la arquitectura original `bailing_hybrid` con código personalizado y requiere `trust_remote_code=True`.
+Ling-3.0-tiny-Tenstorrent-Tensix-BFP4 es una cuantizacion del modelo inclusionAI/Ling-3.0-tiny realizada por Xylolabs para su ejecucion en aceleradores NPU de Tenstorrent (arquitecturas Wormhole y Blackhole). El modelo base es un transformer hibrido de tipo bailing_hybrid, con 7.893.392.800 parametros totales, que combina mecanismos de atencion KDA (Kimi Delta Attention) y MLA (Multi-head Latent Attention) junto con capas MLP densas y expertos. Esta version cuantiza a block floating point de 4 bits (bfloat4_b) las matrices de atencion KDA y MLA, las MLP densas, los expertos y el LM head, manteniendo el resto en bf16/float32.
 
-El modelo base es un transformer híbrido de 7.893.392.800 parámetros (aproximadamente 7,9 mil millones) con atención multi-cabeza latente (MLA) y componentes de atención lineal tipo KDA, además de una capa MLP con expertos enrutados y compartidos (estructura tipo MoE). La cuantización reduce el peso del modelo a 4,79 GB empaquetados, con una media de 4,86 bits por peso, lo que lo hace viable en el DRAM de un único dispositivo Tensix.
+La relevancia de esta ficha radica en que es una de las pocas publicaciones que lleva un modelo de la familia Ling al ecosistema Tenstorrent con un formato de cuantizacion nativo de hardware (BFP4) y utilidades de empaquetado para ttnn. El repositorio incluye scripts (`pack_tensix.py`, `verify_grid.py`) y un mapeo de pesos documentado, lo que permite reproducir el despliegue en NPUs Tensix. El modelo base esta pensado para generacion de texto y conversacion, con soporte de plantilla de chat.
 
-La relevancia de esta ficha es doble: por un lado, documenta el primer (o uno de los pocos) exports públicos de un modelo Ling-3.0 en formato BFP4 para hardware Tenstorrent; por otro, advierte de que el repositorio solo valida el empaquetado de pesos con TT-NN, no la inferencia completa. No se han publicado resultados de benchmarks ni se ha ejecutado con tt-transformers o tt-forge, por lo que su uso en producción requiere validación propia.
+La cuantizacion reduce el tamano empaquetado de 15,79 GB (BF16) a 4,794 GB, con una divergencia media de KL de 0,0903 frente a BF16 sobre 16.276 posiciones de texto en ingles y coreano, por debajo del limite de 1,5 veces la referencia Q4_K_M (0,0670). La licencia es MIT, lo que facilita su uso comercial, aunque las dependencias del codigo original (CUDA y flash-linear-attention) condicionan el entorno de ejecucion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `bailing_hybrid` (transformer híbrido con MLA y atención lineal KDA; MLP con expertos enrutados y compartidos) |
+| Arquitectura | Transformer hibrido (bailing_hybrid) con atencion KDA y MLA, MLP densas y expertos |
 | Parametros totales | 7.893.392.800 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BFP4 (`ttnn.bfloat4_b`, 4,5 bits por peso) en capas lineales, GPTQ con búsqueda de exponente por bloque (offsets -1 y 0, damping 0,1); media de 4,86 bits por peso; tensores no cuantizados en bf16 y excepciones en float32 |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | BFP4 (bfloat4_b) para KDA, MLA, MLP densas, expertos y LM head; bf16/float32 para el resto; referencia Q4_K_M en llama.cpp |
+| Idiomas soportados | no disponible (la evaluacion KL cubre ingles y coreano) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (con `quant4.json` y `model.safetensors.index.json`); requiere código personalizado de Transformers |
+| Formato de pesos | safetensors (carpeta `bfp4/`), con `quant4.json` e indice de pesos |
 
 ## Arquitectura y entrenamiento
 
-El checkpoint hereda la arquitectura del modelo base `inclusionAI/Ling-3.0-tiny`, etiquetada como `bailing_hybrid`. Según la model card, incluye proyecciones de atención MLA (`attention.q_b_proj`, `attention.kv_a_proj_with_mqa`), componentes de atención lineal KDA, una MLP densa y una MLP con expertos enrutados y compartidos (gate/up/down), además de un LM head. No se proporcionan en la información disponible detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+El modelo base Ling-3.0-tiny emplea una arquitectura hibrida denominada bailing_hybrid, que combina capas de atencion KDA (Kimi Delta Attention, una variante de atencion lineal con estado recurrente) y MLA (Multi-head Latent Attention, con compresion de KV en un espacio latente de baja dimension), junto con capas MLP densas y capas con expertos. Esta mezcla busca reducir el coste de atencion en contextos largos manteniendo capacidad expresiva. La model card de esta version no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO; esa informacion corresponde al modelo base inclusionAI/Ling-3.0-tiny y no se reproduce aqui.
 
-La innovación técnica de esta exportación es la cuantización a BFP4 con GPTQ y empaquetado bit a bit para TT-NN. De las 9.067 matrices cuantizadas, 9.055 pasan la verificación de rejilla BFP4 sin cambios; las 12 restantes (`q_b_proj` y `kv_a_proj_with_mqa` en las capas 3, 7, 11, 15, 19 y 23) requieren una permutación de filas (pares par/impar en el sufijo rotatorio) para alinearse con la rejilla. Los ficheros conservan el orden de Hugging Face, por lo que la implementación de inferencia debe ordenar sus pares rotatorios de forma consistente con este empaquetado. La verificación se realizó con ttnn 0.81.1 sobre el simulador Blackhole (ttsim); no se ejecutó inferencia real ni se probó con tt-transformers o tt-forge.
+La innovacion tecnica de esta publicacion es la cuantizacion a block floating point de 4 bits (bfloat4_b) nativa de Tenstorrent, aplicada con un esquema de empaquetado especifico para ttnn. Las matrices cuantizadas se empaquetan en tiles con `ttnn.TILE_LAYOUT` y `ttnn.bfloat4_b`, y el repositorio documenta excepciones de reordenacion para `q_b_proj` y `kv_a_proj_with_mqa` en las capas 3, 7, 11, 15, 19 y 23: se conservan las primeras 128 filas (o 512 en `kv_a_proj_with_mqa`) y se reordenan las ultimas 64 filas a indices pares seguidos de impares, con el sufijo rotatorio empezando en cero. Esta reordenacion debe respetarse para que la implementacion de rotary pairs sea consistente con el empaquetado.
 
 ## Capacidades
 
-- Generación de texto conversacional: el pipeline declarado es `text-generation` y la model card incluye un ejemplo de chat con plantilla de mensajes.
-- Razonamiento y código: no se documentan capacidades específicas en la información disponible; se heredan las del modelo base, sin verificación en este export.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; los idiomas no están declarados en los metadatos.
-- Capacidades especiales (thinking mode, visión, audio): no disponible.
-- Ejecución en hardware Tenstorrent: los pesos están empaquetados para TT-NN en Wormhole y Blackhole, con verificación de empaquetado bit a bit.
+- Generacion de texto y conversacion multi-turno mediante plantilla de chat (`apply_chat_template`).
+- Razonamiento y respuesta a preguntas generales en el dominio del modelo base.
+- Soporte de cuantizacion BFP4 ejecutable en NPUs Tenstorrent Tensix (Wormhole, Blackhole) mediante ttnn.
+- Compatibilidad con Transformers 4.57.1 y flash-linear-attention 0.4.2 para ejecucion en CUDA con `trust_remote_code=True`.
+- Capacidades multilingues: no documentadas en esta version; la evaluacion de KL cubre ingles y coreano.
+- Tool calling, function calling, agentes y modos de pensamiento: no disponibles en la informacion proporcionada.
+- Vision y audio: no disponibles.
 
 ## Casos de uso
 
-- Despliegue en aceleradores Tenstorrent: el caso principal es ejecutar el modelo en una NPU Tensix (Wormhole o Blackhole) con 4,79 GB de DRAM para pesos, aprovechando el formato BFP4 nativo de TT-NN. Requiere implementar la inferencia (no incluida en el repo) y validar la salida.
-- Investigación en cuantización BFP4: sirve como referencia reproducible para estudiar GPTQ con búsqueda de exponente por bloque y el empaquetado de matrices en la rejilla BFP4 de Tenstorrent, con scripts de verificación (`pack_tensix.py`, `verify_grid.py`).
-- Prototipado de chat en entornos de simulación: con `ttsim` (simulador Blackhole) se puede validar el flujo de carga de pesos y la coherencia del empaquetado antes de disponer de hardware físico.
-- Evaluación comparativa de precisión tras cuantización: permite medir la degradación de un modelo de ~7,9B al pasar a 4,5 bits por peso en tareas de generación, siempre que se implemente la inferencia y se ejecuten benchmarks propios.
-- Integración en pipelines de Transformers en GPU: el checkpoint también se puede cargar con `AutoModelForCausalLM` y `trust_remote_code=True` en CUDA, usando Transformers 4.57.1 y flash-linear-attention 0.4.2, para comparar el comportamiento frente al modelo base.
-- Base para futuros exports tt-forge / tt-transformers: al estar verificado el empaquetado, puede servir como punto de partida para integrar Ling-3.0-tiny en el stack de compilación de Tenstorrent cuando esté soportado.
+- Despliegue en hardware Tenstorrent: el modelo esta empaquetado para Wormhole y Blackhole, de modo que se puede servir generacion de texto en NPUs Tensix usando ttnn con pesos BFP4 y un consumo de memoria DRAM reducido (4,794 GB empaquetados).
+- Sustitucion de GPUs en inferencia de bajo coste energetico: al ejecutarse en aceleradores Tensix, permite montar endpoints de generacion de texto donde el coste por token y el consumo son prioritarios frente a la latencia pico.
+- Prototipado de cuantizacion BFP4: los scripts `pack_tensix.py` y `verify_grid.py` permiten validar el empaquetado y la equivalencia numerica (`ttnn.to_torch(w_tt).float()` frente al tensor original), util para investigar formatos de bloque en 4 bits.
+- Evaluacion comparativa de cuantizaciones: la metrica de KL frente a BF16 (0,0903) y frente a Q4_K_M (0,0670) permite comparar la perdida de calidad de BFP4 con otras tecnicas en el mismo modelo y corpus (WikiText-2 y Wikipedia en coreano).
+- Integracion en pipelines de Transformers con `device_map="auto"`: util para entornos CUDA existentes que quieran reutilizar el mismo checkpoint con el codigo original del modelo base y `trust_remote_code=True`.
+- Base para ajuste fino o evaluacion de modelos hibridos KDA/MLA: al conservar el LM head y el resto de capas en bf16/float32, se puede usar como punto de partida para estudiar el impacto de la cuantizacion selectiva en modelos con atencion lineal.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye una sección "Evaluation" que aparece truncada en los datos proporcionados, sin valores numéricos utilizables.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La unica metrica publicada es la divergencia KL frente a BF16:
+
+| Formato | Tamano empaquetado (GB) | KL media a BF16 |
+|---|---|---|
+| `bfp4/` (BFP4) | 4,794 | 0,0903 |
+| BF16 (modelo base) | 15,79 | 0 |
+| Q4_K_M (llama.cpp) | 4,824 | 0,0670 |
+
+La KL se calcula sobre 16.276 posiciones de texto en ingles y coreano (WikiText-2 test y Wikipedia en coreano), con y sin plantilla de chat, con un limite de 1,5 veces la referencia Q4_K_M.
 
 ## Requisitos de hardware
 
-- VRAM/DRAM para pesos: aproximadamente 4,79 GB solo para los pesos del modelo de lenguaje, más espacio para la caché KV y buffers.
-- Hardware objetivo: NPUs Tenstorrent Tensix (Wormhole y Blackhole); verificado con ttnn 0.81.1 sobre el simulador Blackhole (ttsim).
-- GPU consumer: no se documenta soporte ni rendimiento en GPU consumer; la carga en CUDA es posible vía Transformers con el código original, pero el checkpoint está pensado para Tensix.
-- Despliegue: TT-NN / tt-metal para Tensix; Transformers 4.57.1 con flash-linear-attention 0.4.2 para la carga de referencia. No se ha probado con tt-transformers ni tt-forge.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 4,8 GB para los pesos BFP4 empaquetados; el resto de capas en bf16/float32 anade overhead, por lo que se recomienda reservar al menos 6-8 GB en el dispositivo de destino.
+- GPU recomendadas para la ruta CUDA/Transformers: no especificadas; el modelo base de 7,9 mil millones de parametros en bf16 requiere del orden de 16 GB, por lo que encaja en A100, H100, L40S o RTX 4090 con cuantizacion.
+- Cabe en GPU consumer: si, en tarjetas con 8 GB o mas para la ruta BFP4 empaquetada; para la ruta CUDA en bf16 se recomienda 16 GB o mas (RTX 4090, RTX 4080).
+- Aceleradores objetivo: NPUs Tenstorrent Wormhole y Blackhole mediante tt-metal/ttnn y tt-forge.
+- Opciones de despliegue: ttnn (Tensix), Transformers 4.57.1 con flash-linear-attention 0.4.2 y `trust_remote_code=True`; llama.cpp solo como referencia de cuantizacion Q4_K_M, no como formato de este repositorio.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato / hardware | Licencia | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-3.0-tiny-Tenstorrent-Tensix-BFP4 (este) | 7,89B | no disponible | BFP4 para Tensix; safetensors | MIT | Export cuantizado, solo empaquetado verificado |
-| inclusionAI/Ling-3.0-tiny | 7,89B | no disponible | Pesos originales en bf16; Transformers | no disponible | Modelo base sin cuantizar |
-| Alternativas de ~7-8B en BFP4 para Tensix | no disponible | no disponible | no disponible | no disponible | No se conocen exports comparables en la información disponible |
+| Ling-3.0-tiny-Tenstorrent-Tensix-BFP4 | 7,89 mil millones | no disponible | BFP4 (safetensors, ttnn) | MIT | Hugging Face |
+| inclusionAI/Ling-3.0-tiny (BF16) | 7,89 mil millones | no disponible | BF16 (safetensors) | MIT | Hugging Face |
+| Ling-3.0-tiny Q4_K_M (llama.cpp) | 7,89 mil millones | no disponible | GGUF Q4_K_M | MIT | Derivado del base |
+| Otros modelos de ~7-8B con atencion hibrida | no disponible | no disponible | no disponible | no disponible | no disponible |
+
+La comparativa se limita a las variantes del mismo modelo base porque la informacion proporcionada no incluye otros modelos de la misma categoria con datos verificables.
 
 ## Limitaciones y advertencias
 
-- No se incluye implementación de inferencia: el repositorio solo añade el empaquetado de pesos y scripts de verificación; tt-transformers y tt-forge no se han ejecutado con este checkpoint.
-- 12 matrices (`q_b_proj` y `kv_a_proj_with_mqa` en capas 3, 7, 11, 15, 19 y 23) no están en la rejilla BFP4 tal como se almacenan y requieren una permutación de filas par/impar en el sufijo rotatorio; ignorarla produce resultados incorrectos.
-- Incompatibilidad con Transformers 5.x: la arquitectura nativa `bailing_hybrid` de esa versión difiere y no debe usarse para cargar el checkpoint; se requiere Transformers 4.57.1 (referencia) y el código personalizado original.
-- Dependencias CUDA/FLA para el quickstart en GPU; el flujo en Tensix requiere ttnn y un dispositivo o simulador compatible.
-- Idiomas soportados no declarados; riesgo de comportamiento deficiente fuera de los idiomas del modelo base.
-- Sesgos y alucinaciones: no documentados en la información disponible; se heredan los del modelo base y pueden verse alterados por la cuantización a 4,5 bits.
-- Licencia MIT permite uso comercial, pero la ausencia de benchmarks y de validación de inferencia traslada al usuario la responsabilidad de evaluar la calidad en producción.
-- Sin datos de benchmarks publicados: no es posible afirmar la degradación de precisión frente al modelo base.
+- La cuantizacion BFP4 introduce una divergencia media de KL de 0,0903 frente a BF16, superior a la de Q4_K_M (0,0670); puede degradar la calidad en tareas sensibles a precision numerica.
+- La evaluacion de calidad solo cubre ingles y coreano; el comportamiento en castellano y otros idiomas no esta documentado.
+- El repositorio depende del codigo original del modelo base con `trust_remote_code=True`, lo que implica ejecutar codigo remoto y depender de versiones concretas (Transformers 4.57.1, flash-linear-attention 0.4.2).
+- El empaquetado Tensix requiere respetar el reordenamiento de `q_b_proj` y `kv_a_proj_with_mqa` en capas concretas; una implementacion incorrecta de rotary pairs produce resultados erroneos.
+- Riesgo de alucinacion y sesgos: no documentados en esta version; deben evaluarse sobre el modelo base antes de usarlo en produccion.
+- La licencia MIT se aplica segun la model card, pero el codigo original conserva cabecera Apache-2.0 y el `configuration` del modelo base se distribuye sin cabecera de licencia; conviene revisar `LICENSE`, `NOTICE` y `LICENSE-CODE` antes de un uso comercial.
+- No se dispone de datos de contexto maximo, parametros activos ni benchmarks de tareas, lo que limita la planificacion de capacidad en produccion.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Xylolabs/Ling-3.0-tiny-Tenstorrent-Tensix-BFP4
+- Modelo en Hugging Face: https://huggingface.co/Xylolabs/Ling-3.0-tiny-Tenstorrent-Tensix-BFP4
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
-- Código de cuantización: https://github.com/XylolabsInc/tensix-bfp-gptq
-- Documentación de Tenstorrent: https://docs.tenstorrent.com
-- Licencia: https://huggingface.co/Xylolabs/Ling-3.0-tiny-Tenstorrent-Tensix-BFP4/blob/main/LICENSE
+- Revision del modelo base citada: https://huggingface.co/inclusionAI/Ling-3.0-tiny/tree/9a98e35fe1c9ee255f78dd64771c7ae15a799481
+- Codigo de cuantizacion: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Documentacion de Tenstorrent: https://docs.tenstorrent.com

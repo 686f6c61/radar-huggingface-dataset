@@ -2,91 +2,98 @@
 
 ## Resumen
 
-TriCosmos-2.5-predict es un modelo del mundo (world model) orientado a conduccion autonoma desarrollado por SORALab. Partiendo del modelo base NVIDIA Cosmos-Predict2.5-2B, se ha ajustado mediante LoRA para predecir de forma conjunta tres modalidades de sensor: RGB, termico e imagen de profundidad derivada de LiDAR. Dado un historial de 5 fotogramas observados (0,5 s a 10 Hz), el modelo genera los 20 fotogramas siguientes (2 s) de los tres sensores simultaneamente.
+TriCosmos-2.5-predict es un modelo del mundo (world model) para conduccion autonoma desarrollado por SORALab. Partiendo del modelo base NVIDIA Cosmos-Predict2.5-2B, se ha ajustado mediante LoRA para predecir de forma conjunta tres modalidades de sensor: RGB, termico y profundidad LiDAR. Dada una ventana de 5 fotogramas observados (0,5 s a 10 Hz), el modelo genera los 20 fotogramas siguientes (2 s) de los tres sensores simultaneamente, incluyendo condiciones meteorologicas adversas como niebla, lluvia, nieve y conduccion nocturna.
 
-La innovacion principal es el tratamiento de los tres sensores como un unico video: las imagenes se disponen en una rejilla 2x2 de teselas (una por sensor) y el modelo de difusion video las procesa como si fueran fotogramas de una misma secuencia. Esto permite reutilizar directamente la arquitectura image-to-video de Cosmos-Predict2.5-2B sin modificar el backbone, anadiendo solo adaptadores LoRA entrenados sobre datos reales de conduccion con sensores sincronizados del dataset DSERT-RoLL.
+La innovacion principal reside en como se presentan las tres modalidades al modelo: en lugar de procesarlas por separado, se componen como una unica senal de video organizada en una rejilla 2x2 de teselas de sensor. De este modo, Cosmos-Predict2.5, originalmente un modelo de video image-to-video, puede tratarlas con su mismo mecanismo de difusion sin cambiar la arquitectura. El modelo se entrena sobre DSERT-RoLL, un conjunto de datos reales de conduccion con RGB, termico y LiDAR sincronizados.
 
-El modelo es relevante porque aborda la prediccion multimodal en condiciones meteorologicas adversas (niebla, lluvia, nieve y noche), un escenario donde los modelos de mundo unimodales suelen degradarse. Su publicacion coincide con un articulo en revision (arXiv:2604.03685) y con la liberacion de pesos en bf16 y fp32, aunque el codigo completo de entrenamiento y evaluacion se anuncia para mas adelante.
+El resultado es relevante para investigacion en percepcion robusta y simulacion de escenarios: permite generar futuros plausibles y fisicamente coherentes de sensores que no siempre estan disponibles en vehiculos comerciales (termico, LiDAR) a partir de observaciones reales, y evaluar como se comportan los sistemas de percepcion en condiciones de baja visibilidad. El modelo tiene 2B parametros, se distribuye en bf16 (3,9 GB) y requiere GPU de al menos 48 GB para inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Modelo de difusion video image-to-video (base Cosmos-Predict2.5-2B) con adaptadores LoRA |
-| Parametros totales | 2B (modelo base); parametros LoRA no disponibles |
+| Arquitectura | Modelo de difusion video image-to-video (Cosmos-Predict2.5), ajuste fino con LoRA; rejilla 2x2 de teselas RGB/termico/LiDAR |
+| Parametros totales | 2B (modelo base Cosmos-Predict2.5-2B) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 5 fotogramas de entrada (0,5 s a 10 Hz); prediccion de 20 fotogramas (2 s) |
-| Tipos de cuantizacion | bf16 (inferencia, 3,9 GB); fp32 (fine-tuning, ~7,8 GB); no se documentan GGUF ni otras |
-| Idiomas soportados | no disponible (modelo multimodal video; el prompt textual se procesa con el text encoder de Cosmos-Predict2.5) |
-| Licencia | nvidia-open-model-license |
-| Formato de pesos | `.pt` (PyTorch); checkpoint `tricosmos_ema_bf16.pt`; variantes en Kaggle `inference-bf16` y `finetune-fp32` |
+| Longitud de contexto | 5 fotogramas de entrada (0,5 s a 10 Hz); predice 20 fotogramas (2 s) |
+| Tipos de cuantizacion | bf16 (inferencia), fp32 (fine-tuning); no se documentan otras cuantizaciones |
+| Idiomas soportados | no disponible (modelo de video, no de texto) |
+| Licencia | NVIDIA Open Model License |
+| Formato de pesos | `.pt` (PyTorch); checkpoint `tricosmos_ema_bf16.pt` (3,9 GB); variante fp32 en Kaggle (~7,8 GB) |
+| Resolucion de salida | 1280x704 |
+| Pasos de muestreo | 35 pasos, guidance 7, seed 0 (valores por defecto del paper) |
+| Tamano del repo | 4,2 GB |
 
 ## Arquitectura y entrenamiento
 
-TriCosmos-2.5-predict se construye sobre Cosmos-Predict2.5-2B, un modelo de difusion para generacion y prediccion de video. El ajuste se realiza con LoRA sobre el modelo post-entrenado, manteniendo congelado el backbone y el text encoder. La clave arquitectonica es la representacion de los tres sensores como una rejilla 2x2 dentro de un unico video: cada fotograma del video de entrada contiene las teselas RGB, termica, LiDAR y una cuarta posicion de la rejilla, de modo que el modelo de difusion aprende correlaciones cruzadas entre modalidades sin necesidad de cabezas separadas.
+TriCosmos-2.5-predict se construye sobre Cosmos-Predict2.5-2B, un modelo de difusion para generacion de video condicionada por imagen y texto. SORALab aplica un ajuste fino con LoRA sobre la version post-entrenada del modelo base (`base/post-trained`), manteniendo congelados los pesos originales y anadiendo adaptadores de bajo rango. La clave del diseno es la representacion de entrada: los tres sensores (RGB, termico y profundidad LiDAR) se concatenan espacialmente en una rejilla 2x2 y se tratan como un unico video, de modo que el modelo aprende correlaciones entre modalidades sin modificar el tokenizador ni el encoder de texto de Cosmos.
 
-El entrenamiento utiliza el dataset DSERT-RoLL, compuesto por datos reales de conduccion con RGB, termico y LiDAR sincronizados, e incluye escenarios de niebla, lluvia, nieve y noche. El checkpoint publicado corresponde al paso de entrenamiento 500 con pesos EMA en bf16. No se detalla en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas de RLHF o DPO; el autor indica que el codigo completo de entrenamiento y evaluacion se liberara junto con el articulo.
+El entrenamiento utiliza el conjunto DSERT-RoLL, descrito en el articulo arXiv 2604.03685, que contiene datos reales de conduccion con RGB, termico y LiDAR sincronizados, incluyendo condiciones de niebla, lluvia, nieve y noche. El checkpoint publicado corresponde al paso de entrenamiento 500 con pesos EMA en bf16. La receta completa de entrenamiento (`config/train_tri_lora.yaml`), las opciones del modelo (`config/experiment.json`) y la configuracion de exportacion estan incluidas en el repositorio. No se detalla en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se emplearon tecnicas de RLHF o DPO (no aplicables a un modelo de difusion de video).
 
 ## Capacidades
 
-- Prediccion conjunta de video RGB, imagen termica y profundidad LiDAR a partir de 5 fotogramas observados.
-- Generacion de 20 fotogramas futuros (2 s) coherentes temporalmente en las tres modalidades.
-- Funcionamiento en condiciones adversas: niebla, lluvia, nieve y escenas nocturnas.
-- Acepta prompts textuales procesados por el text encoder de Cosmos-Predict2.5 para condicionar la prediccion.
-- Modo zero-shot disponible usando el modelo base sin LoRA para comparacion.
-- Salida a 1280x704 con 35 pasos de muestreo, guidance 7 y semilla configurable.
-- No se documentan capacidades de tool calling, agentes, audio ni razonamiento multi-step.
+- Prediccion multimodal conjunta de video: genera simultaneamente RGB, termico y profundidad LiDAR a partir de 5 fotogramas observados.
+- Prediccion de futuros de 2 segundos (20 fotogramas) a 10 Hz con resolucion 1280x704.
+- Robustez en condiciones adversas: entrenado y evaluado con niebla, lluvia, nieve y escenarios nocturnos.
+- Generacion condicionada por texto: acepta un caption (JSON) que describe la escena para guiar la prediccion.
+- Generacion de video image-to-video mediante difusion con muestreo configurable (pasos, guidance, seed).
+- Capacidad de comparacion zero-shot: el script de inferencia permite ejecutar el modelo base Cosmos-Predict2.5 sin ajuste sobre la misma entrada.
+- No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso ni comprension de lenguaje natural; es un modelo generativo de video, no un LLM.
+- Capacidades multilingues: no disponibles (el condicionamiento textual depende del encoder de texto de Cosmos, pero no se especifican idiomas).
 
 ## Casos de uso
 
-- Prediccion de escenas para planificacion en conduccion autonoma: el modelo genera 2 s de futuro multimodal que un planificador puede usar para anticipar obstaculos y trayectorias, con informacion termica y de profundidad adicional a la RGB.
-- Validacion de perception stacks en condiciones adversas: permite sintetizar futuros plausibles en niebla, lluvia o noche para comprobar si los detectores mantienen rendimiento cuando la visibilidad cae.
-- Aumento de datos para entrenamiento de detectores termicos: las predicciones termicas permiten generar pares RGB-termico sinteticos en escenarios nocturnos donde la recoleccion real es costosa.
-- Simulacion de sensores LiDAR en bucle cerrado: la profundidad predicha puede alimentar modulos de evitacion de obstaculos o de odometria visual en entornos simulados.
-- Evaluacion de robustez de world models: sirve como referencia para medir cuanto degrada un modelo base zero-shot frente a un ajuste especifico en dominios adversos.
-- Investigacion en fusion multimodal: la representacion en rejilla 2x2 es un punto de partida para estudiar como un modelo de difusion aprende correlaciones entre sensores heterogeneos.
-- Generacion de videos de validacion para herramientas de anotacion: los clips predichos con ground truth asociado facilitan la revision humana de escenarios criticos.
+- Simulacion de sensores en conduccion autonoma: generar futuros plausibles de camara termica y LiDAR a partir de RGB real, util para aumentar datasets de percepcion en condiciones donde esos sensores no estan disponibles o son costosos de desplegar.
+- Evaluacion de robustez en clima adverso: producir secuencias sinteticas de niebla, lluvia, nieve y noche para probar sistemas de deteccion y segmentacion bajo baja visibilidad antes de validarlos en pista.
+- Aumento de datos para entrenamiento: crear pares observado-futuro de las tres modalidades para entrenar modelos predictivos o de planificacion que necesiten anticipar la escena.
+- Validacion de pipelines de fusion de sensores: comparar predicciones RGB/termico/LiDAR con las mediciones reales del conjunto DSERT-RoLL para detectar incoherencias entre modalidades.
+- Investigacion en world models: servir de base para estudiar la coherencia fisica y temporal de predicciones multimodales en entornos de conduccion.
+- Generacion de escenarios para simuladores: alimentar simuladores de conduccion con secuencias realistas de 2 s que incluyan termico y LiDAR, reduciendo la dependencia de capturas reales.
+- Reproducibilidad de experimentos: el repositorio incluye receta de entrenamiento, configuracion y ejemplo de validacion (Light Snow nocturno) para replicar los resultados del paper.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks cuantitativos (FVD, PSNR, LPIPS, mIoU u otros) en la informacion disponible. La model card menciona resultados cualitativos mediante videos comparativos lado a lado entre la entrada, el futuro real, TriCosmos y Cosmos-Predict2.5 zero-shot, pero no incluye tablas numericas.
+No se han publicado resultados de benchmarks cuantitativos (FVD, PSNR, SSIM, mIoU u otros) en la informacion disponible. La model card menciona una comparacion cualitativa lado a lado entre la entrada, el futuro real, TriCosmos y Cosmos-Predict2.5 zero-shot en el ejemplo de nieve ligera nocturna, pero no se proporcionan metricas numericas.
 
 ## Requisitos de hardware
 
-- VRAM minima de 48 GB para inferencia en bf16, ya que el modelo de 2B se ejecuta junto al text encoder y el tokenizer de video de Cosmos-Predict2.5 a 1280x704.
-- GPU probadas: NVIDIA RTX PRO 6000 Blackwell (96 GB, runtime G4 de Colab), NVIDIA H100 (80 GB) y NVIDIA A100 80 GB (usada para los resultados del articulo).
-- No cabe en GPUs de consumo: Colab A100 (40 GB), L4 (22,5 GB) y T4 (15 GB) se indican como insuficientes.
-- Despliegue mediante el repositorio oficial `nvidia-cosmos/cosmos-predict2.5` (commit a2c298b), con entorno `uv` y Python 3.10, extra `cu128`.
-- Notebook de inferencia para Google Colab disponible en el repositorio.
-- No se documentan latencia ni throughput estimados; cada ejecucion produce un unico forecast con 35 pasos de muestreo.
+- VRAM estimada para inferencia: al menos 48 GB (el modelo de 2B se ejecuta junto con el encoder de texto y el tokenizador de video de Cosmos-Predict2.5 a 1280x704).
+- GPU verificadas: NVIDIA RTX PRO 6000 Blackwell (96 GB, runtime G4 de Colab), NVIDIA H100 (80 GB) y NVIDIA A100 80 GB (usada para los resultados del paper).
+- GPU no soportadas por falta de memoria: Colab A100 (40 GB), L4 (22,5 GB) y T4 (15 GB).
+- No cabe en GPU de consumo convencionales (RTX 4090, 3090, etc.) segun los requisitos documentados.
+- Despliegue: codigo oficial de Cosmos-Predict2.5 (repositorio `nvidia-cosmos/cosmos-predict2.5`, commit `a2c298b0a3df3778b973fe65e9e58877b292d8a7`), entorno `uv` con CUDA 12.8 y Python 3.10; script `tricosmos_infer.py` y cuaderno de Colab incluidos.
+- No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
+- Latencia: aproximadamente 9 minutos por prediccion con los ajustes del paper (35 pasos de muestreo, guidance 7, seed 0). No se proporciona throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / entrada | Modalidades | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / ventana | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TriCosmos-2.5-predict | 2B (base) + LoRA | 5 fotogramas -> 20 fotogramas | RGB, termico, LiDAR | nvidia-open-model-license | Hugging Face y Kaggle |
-| NVIDIA Cosmos-Predict2.5-2B | 2B | image-to-video | RGB | nvidia-open-model-license | Hugging Face (gated) |
-| Otros world models para conduccion | no disponible | no disponible | no disponible | no disponible | no disponible |
+| TriCosmos-2.5-predict | 2B | 5 fotogramas entrada, 20 de salida | RGB + termico + LiDAR | NVIDIA Open Model License | Hugging Face, Kaggle |
+| Cosmos-Predict2.5-2B (base) | 2B | image-to-video generico | RGB (video) | NVIDIA Open Model License | Hugging Face (gated) |
+| Alternativas comparables de world models para conduccion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparacion directa con alternativas especificas de prediccion multimodal en conduccion no esta disponible en la informacion proporcionada. El unico contraste documentado es frente al modelo base zero-shot, que se incluye como referencia cualitativa en el notebook.
+La comparacion directa con otros world models multimodales para conduccion no esta disponible en la informacion proporcionada. El unico contraste documentado es con el modelo base Cosmos-Predict2.5-2B en modo zero-shot, que sirve como referencia cualitativa en el cuaderno de inferencia.
 
 ## Limitaciones y advertencias
 
-- Requiere aceptar la licencia de NVIDIA Cosmos-Predict2.5-2B y disponer de acceso a sus repositorios gated para cargar tokenizer y text encoder.
-- Consumo de memoria elevado: no es viable en GPUs de menos de 48 GB, lo que excluye hardware de consumo.
-- El checkpoint publicado corresponde solo al paso 500 de entrenamiento; el autor no garantiza que sea el optimo final.
-- El codigo de entrenamiento y evaluacion aun no esta disponible; solo se libera la inferencia y la receta de entrenamiento en YAML.
-- Entrenado exclusivamente sobre DSERT-RoLL; el rendimiento fuera de ese dominio (otras camaras, otras ciudades, otros montajes de sensores) no esta validado.
-- No se documentan sesgos, tasas de alucinacion ni evaluaciones de seguridad; al ser un modelo generativo de video, puede producir futuros plausibles pero fisicamente incorrectos.
-- La licencia nvidia-open-model-license impone condiciones adicionales para uso comercial; es necesario revisar sus terminos antes de desplegar en produccion.
-- No se especifican idiomas soportados ni evaluacion multilingue del prompt textual.
+- Requiere aceptar la licencia de NVIDIA Cosmos-Predict2.5-2B en Hugging Face y disponer de token de autenticacion; el encoder de texto y el tokenizador se cargan de repositorios con acceso restringido.
+- Requiere GPU de al menos 48 GB de VRAM; no es desplegable en hardware de consumo.
+- Latencia alta: alrededor de 9 minutos por prediccion de 2 s de video con los ajustes por defecto.
+- Ventana de prediccion corta (2 s); no se documenta soporte para horizontes mas largos.
+- Entrenado sobre DSERT-RoLL; el rendimiento fuera de la distribucion de ese dataset (otras camaras, otras ciudades, otros sensores) no esta caracterizado.
+- Riesgo de artefactos y alucinacion visual inherente a los modelos de difusion: las predicciones pueden ser plausibles pero fisicamente incorrectas, especialmente en condiciones extremas.
+- No se documentan sesgos especificos, pero al ser un modelo entrenado con datos de conduccion reales puede heredar sesgos de geografia, iluminacion y tipo de escena del dataset.
+- Licencia NVIDIA Open Model License: es necesario revisar sus terminos para uso comercial; no es una licencia open source permisiva tipo Apache 2.0 o MIT.
+- Modelo de investigacion (paso 500 de entrenamiento); no se garantiza su robustez para produccion sin validacion adicional.
+- No se especifican idiomas soportados ni capacidades de texto mas alla del condicionamiento por caption.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/SORALab/TriCosmos-2.5-predict
+- Modelo en Hugging Face: https://huggingface.co/SORALab/TriCosmos-2.5-predict
 - Modelo base: https://huggingface.co/nvidia/Cosmos-Predict2.5-2B
-- Kaggle: https://www.kaggle.com/models/mahfuzurmahimrahman/tricosmos-2.5-predict
-- Repositorio de codigo Cosmos: https://github.com/nvidia-cosmos/cosmos-predict2.5
-- Articulo DSERT-RoLL: https://arxiv.org/abs/2604.03685
-- Dataset: https://huggingface.co/datasets/jeongyh98/DSERT-RoLL
-- Licencia: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
+- Version en Kaggle: https://www.kaggle.com/models/mahfuzurmahimrahman/tricosmos-2.5-predict
+- Paper del dataset DSERT-RoLL: https://arxiv.org/abs/2604.03685
+- Paper de TriCosmos (preprint): https://arxiv.org/abs/2611.22669
+- Codigo oficial de Cosmos-Predict2.5: https://github.com/nvidia-cosmos/cosmos-predict2.5
+- Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

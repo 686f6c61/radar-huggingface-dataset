@@ -2,90 +2,97 @@
 
 ## Resumen
 
-Inkling-2-Mini-SAGE-REXL3-4.23bpw es una cuantizacion de 4,23 bits por peso del modelo base thinkingmachines/Inkling-2-Mini, publicada por el usuario vcruz305 en Hugging Face. Se trata de un artefacto de inferencia en formato EXL3 (exllamav3) orientado a servir el modelo original con un consumo de VRAM reducido, manteniendo la naturaleza multimodal (image-text-to-text) y la arquitectura MoE (mixture of experts) del modelo de referencia. El repositorio ocupa 15,1 GB y contiene pesos en safetensors listos para cargarse con la libreria exllamav3.
+Inkling-2-Mini-SAGE-REXL3-4.23bpw es una cuantización en formato EXL3/REXL3 del modelo multimodal `thinkingmachines/Inkling-2-Mini`, publicada por el usuario vcruz305. El modelo base lo desarrolla Thinking Machines Lab y acepta entradas de texto e imagen para generar texto, con una arquitectura `Inkling2LoopForConditionalGeneration` de tipo MoE con bucle (24 capas / 48 pasadas), un codificador ViT y una cabeza de draft especulativo (MTP). El checkpoint original declara 26.400 millones de parámetros totales y 3.400 millones activos por pasada (5.400 millones efectivos a lo largo de tres pasadas de bucle).
 
-El modelo base Inkling-2-Mini pertenece a Thinking Machines y esta etiquetado como "inkling2_loop", lo que sugiere una arquitectura con bucles o iteraciones recurrentes internas, ademas de ser un MoE multimodal con capacidades conversacionales. La cuantizacion emplea el esquema SAGE-REXL3, una variante de cuantizacion de ExLlamaV3 que busca preservar la calidad numerica en modelos con expertos dispersos, donde la distribucion de pesos es mas heterogenea que en transformers densos.
+El pack cuantizado reduce el peso a 4,23 bits por peso y lo empaqueta en 14,00 GiB residentes en dispositivo, lo que permite ejecutarlo en GPUs de consumo de 24 GB o superiores. Según el autor, mantiene un 98,33 % de acuerdo top-1 y una divergencia KL media de 0,0088 frente al checkpoint fuente, medidos con logits en float64 sobre el vocabulario completo. El método de cuantización SAGE es propietario y no está publicado.
 
-La relevancia de esta ficha radica en que permite desplegar un modelo multimodal MoE de aproximadamente 7.400 millones de parametros totales en hardware de consumo o GPUs de gama media, algo inviable con los pesos en bf16 del modelo original. No obstante, conviene advertir que el repositorio es de acceso restringido (gated), no acumula descargas ni likes, y no se han publicado resultados de benchmarks especificos para esta cuantizacion, por lo que su calidad debe validarse empiricamente antes de usarla en produccion.
+La relevancia actual reside en que hace viable en hardware asequible un modelo multimodal de contexto muy largo (262.144 tokens nativos, hasta 1M con caché KV en Q4 y 32 GB de VRAM), con decodificación especulativa integrada y licencia Apache 2.0, algo poco habitual en modelos MoE multimodales de este tamaño.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE multimodal (image-text-to-text), variante "inkling2_loop" del modelo base |
-| Parametros totales | 7.397.631.360 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | EXL3 (SAGE-REXL3) a 4,23 bits por peso |
-| Idiomas soportados | en, multilingual |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (EXL3, libreria exllamav3) |
+| Arquitectura | `Inkling2LoopForConditionalGeneration`: MoE con bucle de 24 capas / 48 pasadas, ViT para visión y cabeza MTP de draft especulativo |
+| Parametros totales | 7.397.631.360 en el checkpoint cuantizado; 26,4B declarados en el modelo base |
+| Parametros activos | 3,4B por pasada; 5,4B efectivos en 3 pasadas de bucle |
+| Longitud de contexto | 262.144 tokens nativos; hasta 1.048.576 con caché KV en Q4 sobre 32 GB o más |
+| Tipos de cuantizacion | EXL3 con método SAGE (precisión mixta), 4,23 bits por peso; distintos valores de `K` por tensor |
+| Idiomas soportados | Inglés y soporte multilingüe general |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (EXL3/REXL3), 2 shards de tronco más `mtp.safetensors` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Inkling-2-Mini se describe en los metadatos como un modelo multimodal de tipo image-text-to-text con arquitectura MoE y una etiqueta de variante "inkling2_loop", que apunta a un diseno con iteraciones o bucles recurrentes en el bloque transformer. Esta ficha corresponde exclusivamente a la cuantizacion, no al entrenamiento: no se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares en el modelo original dentro de la informacion proporcionada.
+El modelo base es un transformer MoE con un mecanismo de bucle: 24 capas físicas que se recorren hasta 48 pasadas, de las cuales 8 son de atención completa y el resto emplean ventana deslizante y estado convolucional. Incorpora un codificador de visión (ViT) para entradas de imagen y una cabeza de predicción multi-token (MTP) que actúa como draft especulativo para acelerar la decodificación. El checkpoint cuantizado conserva esa arquitectura íntegra y solo altera la precisión numérica de los tensores de pesos.
 
-La innovacion tecnica de este artefacto es el esquema de cuantizacion SAGE-REXL3 a 4,23 bpw sobre ExLlamaV3. Frente a una cuantizacion uniforme, este esquema aplica un tratamiento diferenciado a las capas de expertos del MoE, que suelen presentar una distribucion de pesos mas irregular. El resultado es un repositorio de 15,1 GB que reduce el peso del modelo original (que en bf16 superaria los 14,8 GB solo en pesos puros, mas overhead de cuantizacion y metadatos) y permite cargarlo en GPUs con 16-24 GB de VRAM. No se documentan en la informacion disponible detalles sobre calibracion, dataset de calibracion ni metricas de degradacion respecto al modelo original.
+La información disponible no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO en el modelo original. El pack cuantizado se generó con el método SAGE del autor, de precisión mixta y no publicado, aplicado sobre el checkpoint `6e7c8248f75265bdd4fbab5273304243b5d8c2cb`. Los tensores usan valores de `K` distintos y los kernels de EXL3 los leen del propio tensor trellis al cargar, por lo que no requiere configuración manual por capa.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno, heredada del modelo base.
-- Procesamiento multimodal image-text-to-text: acepta imagenes junto con texto como entrada.
-- Razonamiento y respuesta a instrucciones en ingles y otros idiomas (etiqueta multilingual).
-- Arquitectura MoE, lo que implica activacion dispersa de expertos durante la inferencia.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion disponible.
-- Modo thinking explicito: no disponible.
-- Capacidades de audio: no disponibles.
+- Generación de texto e instrucciones conversacionales multi-turno.
+- Comprensión de imágenes (pipeline `image-text-to-text`) con salida textual.
+- Razonamiento y matemáticas de uso general, según la model card del modelo base.
+- Generación de código en múltiples lenguajes de programación.
+- Soporte declarado para sistemas agénticos y uso de herramientas (tool use).
+- Soporte multilingüe general, con inglés como idioma principal.
+- Contexto largo de 262.144 tokens nativos, ampliable a 1M.
+- Decodificación especulativa integrada mediante la cabeza MTP (`mtp.safetensors`).
+- Compatible con ajuste fino a través de la plataforma Tinker del proveedor original.
 
 ## Casos de uso
 
-- Asistente multimodal en local: desplegar el modelo con exllamav3 en una GPU de 24 GB para responder preguntas sobre imagenes (capturas, diagramas, fotos) en un entorno sin conexion, aprovechando la cuantizacion a 4,23 bpw para reducir el footprint de VRAM.
-- Prototipado de aplicaciones image-text-to-text: validar pipelines de vision-lenguaje antes de invertir en el modelo base completo, ya que el coste de almacenamiento (15,1 GB) y de VRAM es sensiblemente menor.
-- Chat conversacional de bajo coste: servir conversaciones multi-turno en ingles con un modelo MoE cuantizado, adecuado para entornos de desarrollo y pruebas donde la latencia no es critica.
-- Investigacion sobre cuantizacion de MoE: comparar la calidad de SAGE-REXL3 a 4,23 bpw frente al modelo base en tareas de vision-lenguaje, midiendo la degradacion introducida por la cuantizacion.
-- Despliegue en estaciones de trabajo con GPU consumer: usar el modelo en una RTX 4090 (24 GB) o similar para tareas de analisis de imagenes y generacion de descripciones, sin necesidad de A100/H100.
-- Evaluacion interna de modelos de Thinking Machines: emplear esta cuantizacion como paso previo a la adopcion del modelo base en produccion, reduciendo el coste de experimentacion.
-- Generacion de documentacion tecnica a partir de capturas de pantalla o diagramas: el modelo puede recibir una imagen y producir texto explicativo en ingles, integrable en herramientas internas de documentacion.
+- Atención al cliente automatizada: conversaciones multi-turno con historial extenso gracias a la ventana de 262.144 tokens, que permite mantener contexto de varias interacciones sin truncar.
+- Análisis de documentos largos con imágenes: informes, facturas o contratos escaneados combinados con texto, procesados en una sola pasada al aceptar entrada multimodal y contexto amplio.
+- Asistentes de código en producción: generación y revisión de código con soporte de tool calling, integrable en pipelines que invocan linters, tests o APIs externas.
+- Agentes multi-paso: la cabeza MTP y el bucle de 48 pasadas favorecen la latencia en razonamiento iterativo, adecuado para orquestación de tareas con varias llamadas encadenadas.
+- RAG sobre corpus extensos: la ventana de 1M tokens con caché KV en Q4 permite inyectar grandes bloques de documentación recuperada sin fragmentación agresiva.
+- Despliegue en estaciones de trabajo con GPU de consumo: al ocupar 14,00 GiB, cabe en una RTX 4090 o 3090 de 24 GB, lo que habilita prototipado local de aplicaciones multimodales sin infraestructura de centro de datos.
+- Investigación y ajuste fino: licencia Apache 2.0 y pesos abiertos permiten experimentación académica y adaptación con Tinker.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Métrica | Valor |
+|---|---|
+| Acuerdo top-1 (frente al checkpoint fuente) | 98,33 % |
+| Divergencia KL media (float64, vocabulario completo) | 0,0088 |
+
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u otros) en la información disponible. Las métricas anteriores miden la fidelidad de la cuantización respecto al modelo original, no su calidad absoluta.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio pesa 15,1 GB en EXL3 a 4,23 bpw; se requiere al menos 16 GB de VRAM para cargar los pesos, y 20-24 GB para margen de contexto y overhead de la cache KV.
-- GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A6000 (48 GB), L40S (48 GB), A100 (40/80 GB) para mayor contexto y throughput.
-- Cabe en GPU consumer: si, en tarjetas con 24 GB (RTX 4090, RTX 3090) con contexto moderado; en GPUs de 16 GB puede requerir reducir el contexto o el tamano de batch.
-- Opciones de despliegue: exllamav3 (libreria nativa del formato EXL3); no es compatible directamente con vLLM, llama.cpp, Ollama ni TGI, que no soportan el formato EXL3 de ExLlamaV3.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
+- Peso residente en dispositivo: 15.032.344.840 bytes (14,00 GiB) entre dos shards de tronco y el sidecar `mtp.safetensors`.
+- Caché KV en Q4: 8.704 B/token para las 8 pasadas de atención completa, 9.792 B/token con la capa de draft; aproximadamente 0,17 GiB de estado fijo de ventana deslizante y convolución, más unos 1,5 GiB de scratch en tiempo de ejecución.
+- GPU de 24 GB (RTX 4090, RTX 3090): contexto máximo estimado de unos 760K tokens con draft y 860K sin draft; no alcanza 1M completo (requeriría 24,2–25,2 GiB).
+- GPU de 32 GB (RTX 5090): 1M completo, con margen hasta aproximadamente 1,59M–1,79M tokens.
+- GPU de 48 GB o más, o 1x DGX Spark: 1M completo con caché KV en Q4, Q8 o BF16 (31,8–33,8 GiB en Q8).
+- Despliegue: librería `exllamav3` mediante `Model.from_directory`, `Config.from_model`, `Cache` y `Tokenizer`.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Inkling-2-Mini-SAGE-REXL3-4.23bpw (esta ficha) | 7.397.631.360 | no disponible | apache-2.0 | safetensors EXL3 | gated, 0 descargas |
-| thinkingmachines/Inkling-2-Mini (base) | no disponible en la informacion | no disponible | no disponible en la informacion | safetensors | no disponible en la informacion |
-| Otras cuantizaciones del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible |
-
-No se dispone de informacion sobre modelos comparables de la misma categoria (multimodales MoE de ~7.400 M de parametros) en la informacion proporcionada, por lo que la comparativa se limita al modelo base del que deriva esta cuantizacion.
+| Inkling-2-Mini-SAGE-REXL3-4.23bpw (este) | 7,4B en checkpoint; 26,4B totales / 3,4B activos en base | 262.144 nativo, hasta 1M | Apache 2.0 | safetensors EXL3 | Multimodal, MoE con bucle, draft MTP |
+| thinkingmachines/Inkling-2-Mini (original) | 26,4B totales / 3,4B activos | 262.144 nativo | Apache 2.0 | safetensors (NVFP4/MXFP8) | Checkpoint sin cuantizar, ~20 GB |
+| Alternativas de terceros de tamaño y tarea equivalentes | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de comparación en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargar el repositorio.
-- Sin validacion publica: el repositorio tiene 0 descargas y 0 likes, y no se han publicado benchmarks de la cuantizacion; la calidad respecto al modelo base no esta verificada.
-- Degradacion por cuantizacion: 4,23 bpw introduce perdida de precision frente a bf16, especialmente sensible en tareas de vision y en capas de expertos del MoE; conviene evaluar en el dominio de uso concreto.
-- Compatibilidad limitada: solo funciona con exllamav3; no es desplegable con vLLM, llama.cpp, Ollama o TGI sin conversion adicional.
-- Riesgo de alucinacion: inherente al modelo base; no se documentan mitigaciones especificas en esta cuantizacion.
-- Sesgos: no se dispone de informacion sobre sesgos conocidos del modelo base ni de la cuantizacion.
-- Idiomas: la etiqueta principal es ingles ("en") con soporte multilingual no detallado; el rendimiento en castellano no esta verificado.
-- Contexto: la longitud de contexto del modelo base no se documenta en la informacion disponible, lo que impide garantizar ventanas largas en produccion.
-- Licencia: apache-2.0 permite uso comercial, pero debe verificarse que el modelo base thinkingmachines/Inkling-2-Mini mantenga la misma licencia y que no existan terminos adicionales del autor original.
-- Fecha de creacion futura (2026-11-21) en los metadatos: conviene verificar la integridad y procedencia del repositorio antes de usarlo en produccion.
+- El método de cuantización SAGE es propietario y no está publicado, lo que dificulta auditar cómo se distribuye la precisión entre capas.
+- Las métricas de fidelidad (98,33 % top-1, KLD 0,0088) las reporta el autor del pack; no se han verificado de forma independiente en la información disponible.
+- No hay benchmarks de tareas publicados para este pack, por lo que el impacto real de la cuantización en razonamiento, código o visión no está cuantificado.
+- El idioma principal es el inglés; el soporte multilingüe es general y sin garantías específicas por idioma.
+- Riesgo de alucinación inherente a los modelos generativos; no se documentan mitigaciones específicas.
+- Sesgos conocidos: no documentados en la información proporcionada.
+- En GPUs de 24 GB no cabe el contexto completo de 1M tokens; requiere 32 GB o más para aprovechar la ventana máxima.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base remite a una política de uso aceptable de Thinking Machines Lab que conviene revisar antes de desplegar en producción.
+- El modelo base se distribuye en precisión mixta NVFP4/MXFP8; este pack EXL3 requiere la librería `exllamav3`, lo que limita la portabilidad frente a otros runtimes (vLLM, llama.cpp, Ollama, TGI no están indicados como soportados).
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/vcruz305/Inkling-2-Mini-SAGE-REXL3-4.23bpw
+- Pack cuantizado: https://huggingface.co/vcruz305/Inkling-2-Mini-SAGE-REXL3-4.23bpw
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Libreria exllamav3: no disponible en la informacion proporcionada
-- Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada
+- Playground de Tinker: https://tinker.thinkingmachines.ai/playground
+- Tinker Cookbook: https://github.com/thinking-machines-lab/tinker-cookbook
+- Paquete tml-renderers: https://pypi.org/project/tml-renderers/
+- Política de uso aceptable: https://thinkingmachines.ai/model-acceptable-use-policy/

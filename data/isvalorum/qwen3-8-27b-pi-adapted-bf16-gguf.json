@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Qwen3.8-27B-pi-adapted-BF16-GGUF",
   "created_at": "2026-11-18T22:47:48.000Z",
-  "updated_at": "2026-11-18T22:56:48.000Z",
+  "updated_at": "2026-11-27T23:11:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,6 +21,7 @@
     "pi",
     "agents",
     "apex",
+    "harness-adapter",
     "text-generation",
     "base_model:harness-hub/Qwen3.8-27B-pi-adapted",
     "base_model:quantized:harness-hub/Qwen3.8-27B-pi-adapted",
@@ -30,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 322,
+  "downloads_30d": 332,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
@@ -50,16 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF at main",
-      "url": "https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF/tree/main",
-      "snippet": "We're on a journey to advance and democratize artificial intelligence through open source and open science."
-    },
-    {
-      "title": "Qwen3.8-27B-EfficientThink-VAL-APEX-I-NanoPlus-GGUF",
-      "url": "https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-VAL-APEX-I-NanoPlus-GGUF",
-      "snippet": "IsValorum / Qwen3.8-27B-EfficientThink-VAL-APEX-I-NanoPlus-GGUF Like 4 Text Generation GGUF English 27b 27b-params llama.cpp quantized quantization val-apex-i apex apex-quant apex-i-nanoplus nanoplus qwen qwen3.8 reasoning chain-of-thought dflash2 speculative-decoding simpo imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new ..."
-    }
-  ]
+  "sources": []
 }

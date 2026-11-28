@@ -2,89 +2,102 @@
 
 ## Resumen
 
-Ternary-Bonsai-2.5-27B-CHiPS-Abliterated-GGUF es una modificación del modelo Ternary Bonsai 2.5 27B de Prism ML, publicada por el usuario Kujira. Se trata de un derivado de Qwen3.8-27B (Alibaba Cloud) que Prism ML convirtió a pesos ternarios (Q2_0) para su ejecución eficiente en llama.cpp, y al que Kujira ha aplicado una técnica de edición denominada CHiPS (Causal Head-isolated Projection Steering) para reducir el comportamiento de rechazo (refusal) del modelo original.
+Ternary-Bonsai-2.5-27B-CHiPS-Abliterated es una modificacion del modelo Ternary-Bonsai-2.5-27B de Prism ML, publicada por el usuario Kujira en formato GGUF. Se trata de un modelo de 27.320.697.856 parametros (27,3B) cuantizado en Q2_0 ternario, con un unico tensor parcialmente reescrito para reducir el comportamiento de rechazo (refusal) mediante la tecnica CHiPS (Causal Head-isolated Projection Steering). El modelo base emplea una arquitectura hibrida con capas de atencion lineal y un cabezal MTP (Multi-Token Prediction) para decodificacion especulativa.
 
-El cambio es quirúrgicamente pequeño: de los 866 tensores del archivo, solo uno se reescribe parcialmente. Concretamente, se modifica la proyección de salida de la capa de atención lineal 33 (`blk.33.ssm_out.weight`), afectando a 1.024 de sus 6.144 columnas correspondientes a la cabeza de atención 16. El resto del archivo, incluida la cabeza de borrador MTP para decodificación especulativa, es byte-idéntico al original.
+La relevancia de esta publicacion es fundamentalmente metodologica: demuestra que es posible alterar un comportamiento concreto (los rechazos) editando un solo cabezal de atencion de una capa de atencion lineal, sin reentrenamiento y manteniendo el resto de los pesos byte a byte identicos. El propio autor lo etiqueta como preview experimental con problemas conocidos: respuestas mas largas, respuestas finales vacias en algunos casos y rechazos que persisten parcialmente.
 
-La relevancia de esta ficha radica en que documenta un caso de "abliteración" sin entrenamiento aplicada sobre un modelo cuantizado ternario, un formato poco habitual (Q2_0 con niveles −1, 0, +1 y +2) que requiere builds recientes de llama.cpp con soporte de runtime de activaciones Hadamard. El autor advierte que es una versión preview sin resultados medidos y que no cuenta con el respaldo de Prism ML ni del equipo Qwen.
+El modelo se distribuye bajo licencia Apache 2.0, ocupa 7,91 GB en disco y esta pensado para ejecutarse en llama.cpp estandar (build b11556 o posterior). No es una publicacion oficial de Prism ML ni del equipo de Qwen, y el autor advierte que sera reemplazado por una version corregida.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con capas de atención lineal (SSM) y atención completa; incluye cabeza MTP para decodificación especulativa |
-| Parametros totales | 27.320.697.856 (27,3 mil millones) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens (valor sugerido en el ejemplo de uso con `-c 32768`); no se especifica el máximo nativo |
-| Tipos de cuantizacion | Q2_0 ternario (niveles −1, 0, +1 y +2); el tensor editado deja de ser estrictamente ternario (1,2 % de sus valores usan el nivel +2) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer hibrido con capas de atencion lineal (SSM/linear-attention) y cabezal MTP para decodificacion especulativa; edicion CHiPS sobre un cabezal de atencion |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | no disponible |
+| Longitud de contexto | 32.768 tokens (configuracion recomendada en el ejemplo de uso) |
+| Tipos de cuantizacion | Q2_0 ternario (unico archivo publicado); el tensor editado contiene un 1,2% de valores en el nivel +2 |
+| Idiomas soportados | no disponible (la evaluacion de rechazos se hizo en ingles, japones y chino) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp) |
+| Formato de pesos | GGUF (archivo `Ternary-Bonsai-2.5-27B-CHiPS-Abliterated-Q2_0-mtp.gguf`, 7,91 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Ternary Bonsai 2.5 27B de Prism ML, construido a partir de Qwen3.8-27B. La arquitectura combina capas de atención lineal (referidas como SSM en la model card, con tensores `ssm_out`) y capas de atención convencional, e incorpora una cabeza de borrador MTP (Multi-Token Prediction) en el bloque `blk.64` destinada a decodificación especulativa. Los pesos se empaquetan en formato ternario Q2_0, lo que reduce el archivo a 7,91 GB para 27,3 mil millones de parámetros.
+El modelo base es un transformer hibrido que combina capas de atencion lineal (referidas en la model card como `ssm_out`, proyeccion de salida de la capa de atencion lineal 33) con un cabezal MTP en el tensor `blk.64` para decodificacion especulativa. Los pesos se almacenan en formato ternario Q2_0 con una rotacion Hadamard por bloques de 1.024 columnas plegada en el lado de entrada, que el runtime deshace en tiempo de ejecucion.
 
-La edición aplicada por Kujira emplea CHiPS (Causal Head-isolated Projection Steering), un método que identifica unas pocas cabezas de atención por su efecto causal sobre un comportamiento concreto y reduce la componente de su salida que se alinea con una dirección determinada, sin reentrenar el modelo. En este caso, el cambio completo se limita a una sola cabeza de una capa de atención lineal (capa 33, cabeza 16). Según la model card, la receta exacta no está publicada. No se dispone de información sobre el dataset de entrenamiento original, el número de tokens ni si hubo RLHF o DPO en el modelo base.
+La modificacion de Kujira no implica entrenamiento: aplica CHiPS (Causal Head-isolated Projection Steering), un metodo que selecciona cabezales de atencion por su efecto causal sobre un comportamiento y reduce la componente de su salida alineada con una direccion concreta. En este caso se edito un unico cabezal (capa 33, cabezal 16), lo que afecta a 1.024 columnas de `blk.33.ssm_out.weight` (de 6.144 totales). El resto de los 866 tensores, incluido el cabezal MTP, permanecen byte a byte identicos al archivo original. La receta exacta de CHiPS no se ha publicado. No se dispone de informacion sobre el dataset de entrenamiento original, el numero de tokens ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Modo de razonamiento (thinking) con niveles de esfuerzo `xhigh` (por defecto) y `medium` (respuestas más cortas), según la recomendación de muestreo de Prism ML.
-- Decodificación especulativa mediante la cabeza MTP incluida en el archivo (aunque no probada con la edición).
-- Capacidad multimodal potencial: el modelo base admite proyector de visión (`mmproj`), pero esta versión no incluye proyector y las imágenes no se han probado.
-- Comportamiento de rechazo reducido respecto al original (abliteración), lo que amplía el rango de peticiones que el modelo atiende.
-- Tool calling: no probado en esta versión según la model card.
+- Generacion de texto conversacional en modo thinking, con niveles de esfuerzo de razonamiento configurables (`xhigh` por defecto, `medium` para respuestas mas cortas).
+- Razonamiento multi-paso mediante modo thinking extendido.
+- Decodificacion especulativa gracias al cabezal MTP incluido en el archivo.
+- Capacidad multimodal potencial: el modelo base admite proyector de vision (`mmproj`), aunque el autor indica que las imagenes no se probaron con este archivo y que no se incluye proyector.
+- Comportamiento de rechazo reducido respecto al original (del 92,0% al 27,6% de respuestas con marcadores de rechazo en la evaluacion del autor).
+- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponibles; la evaluacion cubrio ingles, japones y chino.
 
 ## Casos de uso
 
-- Investigación sobre alineación y seguridad: permite estudiar cómo una edición mínima en una sola cabeza de atención altera la tasa de rechazo, comparando directamente con el archivo original byte-idéntico en el resto de tensores.
-- Evaluación de técnicas de steering sin entrenamiento: sirve como caso práctico para reproducir o analizar el método CHiPS sobre modelos cuantizados, midiendo el efecto de una intervención de 1.024 columnas en un tensor.
-- Experimentación con cuantización ternaria: útil para desarrolladores que quieran probar el rendimiento de Q2_0 en llama.cpp con un modelo de 27B que ocupa menos de 8 GB en disco.
-- Pruebas de decodificación especulativa: permite medir la tasa de aceptación de la cabeza MTP cuando el modelo principal ha sido editado, un escenario relevante para optimizar latencia en inferencia local.
-- Generación de texto sin restricciones en entornos controlados: para investigadores que necesiten un modelo que no rechace peticiones y que asuman la responsabilidad de filtrar la salida.
-- Benchmarking de derivados abliterados: comparar perplejidad y capacidades frente al original para cuantificar el coste de la edición sobre el rendimiento general.
+- Investigacion sobre steering y edicion de comportamiento: el modelo sirve como caso de estudio reproducible de CHiPS, ya que permite comparar un unico tensor editado frente al original con el resto de pesos identicos, aislando el efecto de la intervencion.
+- Experimentacion con cuantizacion ternaria: util para evaluar como se comporta un modelo de 27B en Q2_0 (7,91 GB) en llama.cpp y que degradacion introduce frente a precisiones mayores.
+- Pruebas de decodificacion especulativa: el cabezal MTP incluido permite medir aceleracion por speculative decoding en llama.cpp con el runtime adecuado (b11556 o posterior).
+- Analisis de robustez de filtros de seguridad: la reduccion parcial de rechazos (del 92,0% al 27,6%) permite estudiar la fragilidad de los mecanismos de alineamiento ante ediciones minimas de pesos.
+- Despliegue en hardware limitado para prototipos: con 7,91 GB en disco, el modelo cabe en GPUs de consumo con 8-12 GB de VRAM, lo que facilita experimentos locales con un modelo de 27B.
+- Evaluacion comparativa de efectos secundarios: los datos del autor (2.262 tokens nuevos de media frente a 486 del original; 280 de 312 respuestas completadas frente a 310) permiten estudiar el coste de estabilidad de este tipo de ediciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no hay resultados medidos todavía: ni tasas de rechazo, ni capacidad, ni perplejidad se han comparado con el archivo original. Tampoco se han probado imágenes, contextos largos ni tool calling.
+Los unicos datos disponibles son los de la evaluacion del propio autor, centrada en rechazos y estabilidad, no en benchmarks academicos estandar:
+
+| Metrica | Original | Este modelo |
+|---|---|---|
+| Respuestas con marcadores de rechazo (312 peticiones daninas, EN/JA/ZH, limite 4.096 tokens) | 287 (92,0%) | 86 (27,6%) |
+| Tokens nuevos de media por respuesta | 486 | 2.262 |
+| Respuestas completadas (de 312) | 310 | 280 |
+| Respuestas sin respuesta final | no disponible | 28 de 312 |
+| Respuestas con repeticion de simbolos | no disponible | 2 de 312 |
+| Precision en 36 tareas cortas y de formato (gne eval, thinking off) | 100% | 100% |
+| Perplejidad (gne eval, thinking off) | referencia | dentro del 0,1% |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo GGUF pesa 7,91 GB; con overhead de contexto y KV cache para 32.768 tokens, se estima un consumo en torno a 10-14 GB de VRAM, aunque no se proporciona una cifra oficial.
-- GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría en GPUs consumer con 16 GB o más (RTX 4080, RTX 4090, RTX 5090) y en GPUs de datacenter (A100, H100) con holgura.
-- Cabe en consumer GPU: sí, previsiblemente en modelos con 16 GB o más de VRAM, dado el tamaño del archivo.
-- Opciones de despliegue: llama.cpp (build b11556 o posterior, con soporte de runtime de activaciones Hadamard) mediante `llama-server`; el autor remite a Bonsai-demo para decodificación especulativa con MTP y otros runtimes.
-- Latencia y throughput estimados: no disponible. El autor advierte que la cabeza MTP no se ha reentrenado y que la decodificación especulativa podría aceptar menos tokens borrador, sin cuantificar el impacto.
+- VRAM estimada para inferencia: aproximadamente 8 GB para el archivo Q2_0 completo, mas overhead de contexto KV; con contexto de 32.768 tokens el requisito crece de forma apreciable.
+- GPU recomendadas: cualquier GPU con 12 GB o mas de VRAM para contexto moderado; A100 o H100 para contexto largo y mayor throughput.
+- Cabe en GPU de consumo: si, en tarjetas con 8-12 GB o mas (por ejemplo, RTX 3060 12 GB, RTX 4070, RTX 4090), asumiendo que el contexto KV quepa en la VRAM restante.
+- Opciones de despliegue: llama.cpp estandar build b11556 o posterior (obligatorio por el runtime de activacion Hadamard); `llama-server` con `-ngl 99 -fa on --jinja`. Otros runtimes deben seguir la model card original y Bonsai-demo.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2.5-27B-CHiPS-Abliterated (este) | 27,3 B | 32.768 (sugerido) | GGUF Q2_0 | Apache 2.0 | Edición de una cabeza; sin benchmarks publicados |
-| Ternary-Bonsai-2.5-27B (Prism ML, original) | 27,3 B | no disponible | GGUF Q2_0, PTQ1_0, PQ2_0 | Apache 2.0 | Modelo base sin abliterar; incluye proyector de visión |
-| Qwen3.8-27B (Alibaba Cloud) | 27 B | no disponible | safetensors | Apache 2.0 | Modelo denso original en precisión completa |
+| Ternary-Bonsai-2.5-27B-CHiPS-Abliterated (este) | 27,3B | 32.768 | Q2_0 ternario | Apache 2.0 | Un cabezal editado; rechazos reducidos al 27,6%; inestabilidad en thinking |
+| prism-ml/Ternary-Bonsai-2.5-27B-GGUF (original) | 27,3B | 32.768 | Q2_0, PTQ1_0, PQ2_0 | Apache 2.0 | Referencia sin editar; rechazos al 92,0%; respuestas mas cortas y estables |
+| Modelos densos de ~27B en Q4 | ~27B | variable | Q4_K_M y similares | variable | Mayor huella en disco y VRAM; sin datos comparativos disponibles en esta informacion |
 
-No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada.
+No se dispone de datos de benchmarks que permitan una comparacion de rendimiento con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Sin resultados medidos: no hay comparación de tasas de rechazo, capacidad ni perplejidad frente al original.
-- La cabeza MTP no se ha reentrenado; la decodificación especulativa podría aceptar menos tokens borrador con el modelo editado (no probado).
-- Solo se ofrece el archivo `Q2_0-mtp`; la edición no es trasladable tal cual a los empaquetados `PTQ1_0` ni `PQ2_0`, que solo admiten valores ternarios.
-- El tensor editado deja de ser estrictamente ternario (1,2 % de sus valores usan el nivel +2), aunque sigue siendo un GGUF Q2_0 estándar para llama.cpp.
-- Imágenes, contextos largos y tool calling no han sido probados en esta versión.
-- Requiere llama.cpp b11556 o posterior; builds antiguos cargan Q2_0 sin aviso y producen salida basura.
-- El modelo puede generar contenido dañino, ofensivo o inexacto; el autor lo destina a investigación y advierte de la responsabilidad del usuario y de la necesidad de añadir salvaguardas antes de usarlo con terceros.
-- Riesgo de alucinación y sesgos: no documentados específicamente en esta versión; se remite a las limitaciones del modelo original.
-- Licencia Apache 2.0 permite uso comercial, pero el NOTICE original debe conservarse y se recomienda revisar las implicaciones de desplegar un modelo abliterado en producción.
+- Version preview con problemas conocidos: el autor advierte que el archivo se hizo con un metodo defectuoso y sera reemplazado por una version corregida.
+- Inestabilidad en modo thinking: 28 de 312 respuestas terminaron sin respuesta final y 2 entraron en repeticion de simbolos; el ingles es el idioma mas afectado.
+- Respuestas mucho mas largas: 2.262 tokens nuevos de media frente a 486 del original, lo que exige fijar `max_tokens` muy por encima de 4.096.
+- Rechazos no eliminados por completo: el 27,6% de las respuestas evaluadas siguen conteniendo marcadores de rechazo, y la medicion se hizo por coincidencia de patrones, no por lectura completa.
+- El tensor editado deja de ser estrictamente ternario: un 1,2% de sus valores usan el nivel +2 de Q2_0, por lo que la edicion no es trasladable tal cual a los empaquetados PTQ1_0 y PQ2_0.
+- Dependencia estricta del runtime: builds antiguos de llama.cpp cargan Q2_0 sin aviso y producen salida basura; se requiere b11556 o posterior.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion disponible; al ser un modelo abliterated, la reduccion de rechazos puede aumentar la probabilidad de contenido danino o no filtrado en produccion.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias y desaconseja tratarlo como modelo de produccion en su estado actual.
+- No es una publicacion oficial de Prism ML ni de Qwen; ambas partes no lo respaldan.
+- Vision no verificada: aunque el modelo base admite proyector multimodal, las imagenes no se probaron con este archivo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Kujira/Ternary-Bonsai-2.5-27B-CHiPS-Abliterated-GGUF
-- Modelo base (Prism ML): https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF
+- Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF
 - Archivo original Q2_0-mtp: https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF/blob/main/Ternary-Bonsai-2.5-27B-Q2_0-mtp.gguf
-- Modelo Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Artículo sobre CHiPS: https://balaena01.github.io/chips-steering/
-- Repositorio gne (gguf-neuron-explorer): https://github.com/balaena01/gguf-neuron-explorer
-- Demo de Bonsai: https://github.com/PrismML-Eng/Bonsai-demo
+- Articulo sobre CHiPS: https://balaena01.github.io/chips-steering/
+- Repositorio Bonsai-demo: https://github.com/PrismML-Eng/Bonsai-demo

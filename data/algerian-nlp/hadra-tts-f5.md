@@ -2,109 +2,93 @@
 
 ## Resumen
 
-Hadra-TTS-f5 es un modelo de sintesis de voz (text-to-speech) especializado en arabe argelino dialectal (darja, الدارجة الجزائرية), publicado por la comunidad algerian-nlp como contrapartida de sintesis a sus modelos de reconocimiento de voz Hadra-ASR-whisper-medium y Hadra-ASR-whisper-small. Se trata de un ajuste fino del checkpoint arabe IbrahimSalah/Arabic-F5-TTS-v2, que a su vez parte de la arquitectura F5-TTS basada en Flow-Matching Diffusion Transformer (DiT). La configuracion declarada es dim=1024, depth=22, heads=18, ff_mult=2, text_dim=512 y conv_layers=8, con muestreo a 24.000 Hz y un vocabulario de 2.580 tokens arabes.
+EL-HARRACHI (الحراشي) es un modelo de síntesis de voz (text-to-speech) y clonación de voz zero-shot especializado en dariya argelina (`arq`), desarrollado por Kamel Touati y el colectivo Algerian NLP. Se trata de un ajuste fino del checkpoint árabe `IbrahimSalah/Arabic-F5-TTS-v2` sobre aproximadamente 399 horas de audio argelino filtrado, lo que lo convierte en uno de los pocos recursos públicos dedicados específicamente a este dialecto magrebí.
 
-El problema que aborda es la escasez de recursos de sintesis para una variedad arabe de bajos recursos como el darja argelino, que rara vez aparece en los corpus de TTS comerciales y que presenta code-switching frecuente con frances y bereber. El modelo se ha entrenado sobre aproximadamente 399 horas de habla dialectal multi-dominio (podcast conversacional, narrativa expresiva y folklore oral) procedentes de la OddAdmix Algerian Speech Collection, con 77.150 utterances en bruto y 69.066 tras filtrado, lo que lo convierte en uno de los pocos sistemas de sintesis abiertos centrados especificamente en este dialecto.
+La arquitectura es un Diffusion Transformer (DiT) con flow-matching, el backbone característico de la familia F5-TTS, con dimensión 1.024, 22 capas, 18 cabezas de atención y 8 capas convolucionales, acoplado a un vocoder Vocos que produce audio mono a 24 kHz. El modelo emplea un vocabulario de 2.580 tokens de carácter y soporta clonación de voz zero-shot a partir de una referencia de 5-12 segundos.
 
-Es relevante ahora porque combina una licencia permisiva (Apache 2.0), un pipeline estandar y reproducible (libreria f5-tts y pesos en PyTorch), y un ecosistema de demo web publica e implementacion en GitHub, lo que permite a desarrolladores e investigadores construir voces en darja sin depender de APIs propietarias. Su utilidad practica esta limitada por la ausencia total de evaluacion con benchmarks publicados.
+Su relevancia radica en cubrir un hueco práctico: la mayoría de sistemas TTS multilingües tratan el árabe como un bloque homogéneo y rinden mal en dariya argelina, un dialecto con fuerte code-switching al francés y sin tradición escrita normalizada. EL-HARRACHI ofrece pesos Apache-2.0 y un punto de partida para ajustes posteriores, aunque carece todavía de evaluación formal de calidad (MOS, inteligibilidad, similitud de hablante).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | F5-TTS / DiT (Diffusion Transformer) con flow matching; dim=1024, depth=22, heads=18, ff_mult=2, text_dim=512, conv_layers=8, pe_attn_head=1 |
-| Parametros totales | no disponible (la model card no publica el recuento; el repositorio ocupa 3,5 GB e incluye un duplicado del checkpoint) |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica en el sentido de LLM; entrenamiento restringido a utterances de 2,0-12,0 s |
-| Tipos de cuantizacion | no disponible; unico peso publicado en formato .pt |
-| Idiomas soportados | arabe argelino (darja), con code-switching a frances y bereber segun la model card; etiqueta oficial de idioma: ar |
-| Licencia | Apache 2.0 |
-| Formato de pesos | PyTorch .pt (model_last.pt); sin safetensors ni GGUF |
-| Frecuencia de muestreo | 24.000 Hz, mono, float32 |
-| Vocabulario | 2.580 tokens arabes |
-| Modelo base | IbrahimSalah/Arabic-F5-TTS-v2 (checkpoint arabe de 547.500 pasos) |
-| Biblioteca de inferencia | f5-tts |
-| Entradas de audio (mel-espectrograma) | n_fft=1024, hop_length=256, win_length=1024, n_mel_channels=100, mel_spec_type=vocos |
+| Arquitectura | F5-TTS: Diffusion Transformer (DiT) con flow-matching + vocoder Vocos |
+| Parametros totales | no disponible (dim 1.024, depth 22, heads 18, ff_mult 2, 8 capas conv) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (utterances de entrenamiento filtradas a 2,0-12,0 s) |
+| Tipos de cuantizacion | no disponible (checkpoint `model_last.pt` en precisión de entrenamiento) |
+| Idiomas soportados | Dariya argelina (`arq`); code-switching al francés con palabras en script latino |
+| Licencia | Apache-2.0 |
+| Formato de pesos | PyTorch (`.pt`) + `vocab.txt`; repo de 3,5 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es F5-TTS, un Diffusion Transformer (DiT) que genera mel-espectrogramas mediante flow matching y los convierte a audio con un vocoder del tipo Vocos. El backbone declarado usa dim=1024, 22 capas, 18 cabezas de atencion, ff_mult=2, 8 capas convolucionales y text_dim=512, con checkpoint_activations activado (gradient checkpointing) para ajustar el modelo en una unica Tesla T4 de 16 GB. El texto se tokeniza en un vocabulario de 2.580 tokens arabes y la senal se representa a 24 kHz con 100 canales mel.
+El modelo parte de `IbrahimSalah/Arabic-F5-TTS-v2` (checkpoint árabe entrenado 547.500 pasos), del que se eliminaron los contadores de paso y el estado del optimizador antes del ajuste fino. El backbone es un DiT de flow-matching con `dim=1024`, `depth=22`, `heads=18`, `ff_mult=2`, `text_dim=512`, `text_mask_padding=False`, 8 capas convolucionales y `pe_attn_head=1`. La representación mel usa `n_fft=1024`, `hop_length=256`, `win_length=1024`, 100 canales mel y vocoder Vocos a 24.000 Hz. Se habilitó gradient checkpointing para ajustar el entrenamiento en 16 GB de VRAM, y todos los parámetros del DiT fueron entrenables (ajuste fino completo, no LoRA).
 
-El ajuste fino se realizo sobre la OddAdmix Algerian Speech Collection, un corpus de tres registros: Kahwa Podcast (23.264 utterances, ~110 h, conversacional espontaneo), Loubna Stories (41.301 utterances filtradas, ~237 h, narrativa expresiva) y Rawi Folklore (4.501 utterances filtradas, ~52 h, folklore oral cultural). El preprocesado incluye remuestreo a 24 kHz en streaming, filtro de duracion de 2,0 a 12,0 s, filtro de densidad de caracteres de 1,0 a 25,0 caracteres por segundo y una tasa de retencion aproximada del 85%, ademas de normalizacion de texto adaptada al darja. No se documenta ninguna fase de RLHF, DPO ni preferencias humanas: es un ajuste supervisado puro sobre datos de audio-transcripcion.
-
-El entrenamiento consta de 48.574 actualizaciones repartidas en 8 sesiones de Kaggle entre el 20 y el 23 de septiembre de 2026, con reanudacion automatica desde el ultimo checkpoint subido a Hugging Face Hub. Se uso AdamW de 8 bits (bitsandbytes), precision mixta FP16, learning rate pico de 2x10^-5 con decaimiento coseno y 2.000 pasos de warmup, batch de 2.000 fotogramas mel por GPU y acumulacion de gradiente de 6 pasos (equivalente a ~12.000 fotogramas). La perdida final registrada es 0,4950, aunque la serie es ruidosa: 0,4266 en el paso 969, 0,9916 en el paso 13.214, 1,1612 en el paso 26.014 y 0,4460 en el paso 38.865. No se declara ningun mecanismo de decodificacion especulativa ni innovacion de atencion adicional.
+El entrenamiento consistió en 48.574 pasos sobre 69.066 utterances filtradas (~399 horas) extraídas de tres colecciones de OddAdmix: el pódcast conversacional Kahwa, las historias expresivas de Loubna y el corpus de folclore oral Rawi. El filtrado retuvo el 89,5% de 77.150 utterances brutas, con criterios de duración 2,0-12,0 s y densidad de 1,0-25,0 caracteres por segundo. El audio se remuestreó al vuelo a 24.000 Hz mono float32. La pérdida de entrenamiento registrada en el último lote fue 0,4950, valor que el propio autor advierte que no constituye una métrica de evaluación.
 
 ## Capacidades
 
-- Sintesis de voz en arabe argelino dialectal (darja) a partir de texto, con salida a 24 kHz.
-- Modelado de tres registros diferenciados: conversacion espontanea (podcast), narracion expresiva (cuentos) y recitado de folklore oral.
-- Capacidad declarada de code-switching hacia frances y bereber dentro de una misma frase, aunque no se cuantifica su calidad.
-- Normalizacion de texto adaptada al darja antes de la sintesis.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta comportamiento de agente ni razonamiento multi-paso; es un modelo puramente generativo de audio.
-- No se documentan capacidades de vision, audio de entrada (salvo el prompt de referencia propio de F5-TTS) ni modo de razonamiento explicito.
-- No se documentan capacidades multilingues mas alla del arabe y del code-switching mencionado.
-- Capacidad de voice cloning inherente a la arquitectura F5-TTS (condicionamiento por audio de referencia), no explicitamente evaluada en esta ficha.
+- Síntesis de voz (TTS) en dariya argelina a partir de texto en script árabe.
+- Clonación de voz zero-shot: replica el timbre de un hablante a partir de un clip de referencia de 5-12 s con su transcripción.
+- Manejo de code-switching al francés: las palabras francesas se conservan mejor en script latino que transliteradas.
+- Normalización de texto específica del dominio (eliminación de etiquetas `[French: ...]`, caracteres de ruido, unificación de alif y ya).
+- Inferencia por CLI (`f5-tts_infer-cli`) y por API Python con carga manual del checkpoint.
+- Punto de partida para ajuste fino de voces argelinas personalizadas.
+- No soporta reconocimiento de voz, traducción ni otras lenguas o dialectos.
 
 ## Casos de uso
 
-- Audiolibros y narracion de cuentos en darja: el modelo se ajusto sobre 237 h del subconjunto Loubna Stories, de registro narrativo expresivo, por lo que es el escenario mas alineado con sus datos de entrenamiento para generar cuentos y relatos largos fragmentados en utterances de 2 a 12 s.
-- Produccion de podcasts y contenido conversacional: las 110 h del subconjunto Kahwa Podcast permiten generar locuciones con entonacion coloquial para aperturas, cunas o fragmentos dramatizados de un podcast en dialecto argelino.
-- Preservacion de patrimonio oral: el subconjunto Rawi Folklore (~52 h) hace viable sintetizar relatos tradicionales y material etnografico para archivos digitales y museos, con locucion consistente y sin necesidad de un hablante humano disponible.
-- Voice-over y localizacion de contenido digital: doblaje de videos cortos, anuncios y material divulgativo destinado al publico argelino, aprovechando el code-switching con frances que aparece de forma natural en el corpus.
-- Sistemas de atencion al cliente por voz en darja: combinado con Hadra-ASR-whisper-medium o Hadra-ASR-whisper-small, permite construir un pipeline de voz completo (reconocimiento y sintesis) para IVR y asistentes telefonicos en dialecto.
-- Accesibilidad para personas con discapacidad visual: lectura en voz alta de articulos, documentos o interfaces en arabe argelino, con la ventaja de una licencia Apache 2.0 que permite integrarlo en productos sin coste de API.
-- Generacion de datos sinteticos para entrenar ASR: el modelo puede producir utterances etiquetadas para aumentar corpus de reconocimiento en darja, ya que comparte ecosistema con los modelos Hadra-ASR.
-- Prototipado rapido mediante demo web: la demo de Streamlit permite validar prosodia y pronunciacion antes de invertir en integracion de produccion.
+- Narración y audiolibros en dariya: el modelo fue entrenado sobre historias expresivas y folclore oral, por lo que mantiene prosodia narrativa en pasajes largos divididos en segmentos de 2-12 s.
+- Doblaje de contenido corto: permite clonar la voz de un actor con consentimiento a partir de un clip de referencia y generar líneas nuevas en dariya para vídeos o pódcasts.
+- Salida de voz para asistentes conversacionales argelinos: sustituye voces MSA genéricas por una pronunciación dialectal, mejorando la aceptación en productos dirigidos al mercado argelino.
+- Accesibilidad y lectura de pantalla: convierte texto administrativo o educativo a audio en la lengua oral real del usuario, con normalización previa del texto.
+- Generación de voces para pódcasts y publicidad local: el subset Kahwa aporta un registro conversacional espontáneo adecuado para cuñas y contenido informal.
+- Base para investigación en dialectología y NLP magrebí: permite experimentar con TTS de bajo recurso y comparar con sistemas MSA, además de servir como inicialización para otros dialectos del Magreb.
+- Prototipado de interfaces de voz en aplicaciones móviles: los pesos Apache-2.0 permiten integrarlo en productos comerciales sin restricciones de atribución más allá de la licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente declara la perdida de entrenamiento (cross-entropy por batch de 0,4950 en el paso 48.574) y el registro de sesiones, sin valores de WER, MOS, MCD, similitud de hablante ni comparaciones objetivas contra otros sistemas de TTS.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explícitamente que las pruebas formales de calidad (MOS, inteligibilidad por ASR round-trip y similitud de hablante) están sin medir, y que no existe partición de test reservada ni comparación con baselines. La cifra 0,4950 corresponde a la pérdida de un único lote de entrenamiento, no a una métrica de evaluación.
 
 ## Requisitos de hardware
 
-- Entrenamiento confirmado: NVIDIA Tesla T4 de 16 GB de VRAM, con gradient checkpointing activado (checkpoint_activations=True) para ajustar la configuracion dim=1024/depth=22.
-- Inferencia: la model card no publica cifras de VRAM. Como referencia, el peso publicado (model_last.pt) esta en el rango de 1 a 1,5 GB, por lo que la inferencia en FP16 deberia caber con holgura en GPUs consumer de 4-6 GB de VRAM; esta estimacion no esta confirmada por el autor.
-- Cabe previsiblemente en GPUs consumer: RTX 3060, RTX 4060, RTX 4070, RTX 4090 y equivalentes. No hay validacion oficial en estas tarjetas.
-- GPUs de datacenter (A100, H100) solo tendrian sentido para sintesis por lotes a gran escala, no porque el modelo las requiera.
-- Opciones de despliegue: libreria f5-tts (pip install f5-tts) sobre PyTorch, carga desde Hugging Face Hub mediante huggingface_hub, y la demo web en Streamlit del autor.
-- No se documenta soporte para vLLM, llama.cpp, Ollama, TGI, ONNX ni TensorRT, ni conversiones a GGUF.
-- Latencia y throughput: no disponible. La model card no publica mediciones de RTF (real-time factor) ni de tiempo por utterance.
+- El ajuste fino se realizó con gradient checkpointing en 16 GB de VRAM; la inferencia requiere bastante menos, aunque no se publican cifras exactas.
+- GPU consumer: cabe en tarjetas de 8-16 GB (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) para inferencia en precisión nativa; el repo ocupa 3,5 GB.
+- GPU de datacenter: A100, H100 o L40S para servir en producción con mayor concurrencia.
+- Despliegue: la librería oficial es `f5-tts` (PyTorch); no se documentan integraciones con vLLM, TGI ni llama.cpp, que no aplican a este tipo de modelo generativo de audio. Ollama no soporta esta arquitectura.
+- El vocoder Vocos y el DiT se ejecutan en la misma pasada; se desconoce el throughput y la latencia exactos por utterance.
+- Requiere FFmpeg y remuestreo explícito de la referencia a 24.000 Hz mono float32.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / unidad | Idiomas | Licencia | Formato | Evaluacion publicada |
-|---|---|---|---|---|---|---|
-| Hadra-TTS-f5 | no disponible | utterances de 2-12 s, 24 kHz | Darja argelino (+ code-switching fr/bereber) | Apache 2.0 | .pt (PyTorch) | no disponible |
-| IbrahimSalah/Arabic-F5-TTS-v2 (modelo base) | no disponible | no disponible | Arabe estandar | no disponible | .pt | no disponible |
-| F5-TTS original (SWivid/F5-TTS) | no disponible | no disponible | Ingles y chino fundamentalmente | no disponible en la informacion proporcionada | .pt | no disponible |
+| Modelo | Parametros | Contexto / duracion | Idiomas | Licencia | Evaluacion publicada |
+|---|---|---|---|---|---|
+| EL-HARRACHI (este) | no disponible (DiT 1024/22/18) | utterances 2-12 s | dariya argelina | Apache-2.0 | no (MOS pendiente) |
+| IbrahimSalah/Arabic-F5-TTS-v2 | misma arquitectura F5-TTS | no disponible | árabe (MSA) | no disponible en la informacion | no disponible |
+| F5-TTS original (SWivid) | ~336 M (variante base) | utterances cortas | inglés, chino | CC-BY-NC / MIT segun variante | sí (MOS y similitud publicados) |
+| XTTS-v2 (Coqui) | ~467 M | utterances cortas | 17 idiomas (sin dariya) | Coqui Public Model License (no comercial) | sí |
 
-No se dispone de datos objetivos (MOS, WER, similitud de hablante) para ninguno de los tres modelos dentro de la informacion proporcionada, por lo que la comparativa se limita a la relacion de derivacion y a la cobertura idiomatica. Hadra-TTS-f5 es un ajuste fino de Arabic-F5-TTS-v2, que a su vez deriva de la implementacion F5-TTS; la diferencia principal frente a ambos es la especializacion en darja argelino y el corpus de 399 horas empleado.
+La comparación directa con XTTS-v2 o F5-TTS original no es posible en calidad porque EL-HARRACHI no ha publicado MOS ni similitud de hablante; la ventaja diferencial es la cobertura del dialecto y la licencia Apache-2.0 permisiva frente a la licencia no comercial de Coqui.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de evaluacion publicada: no hay MOS, WER, MCD ni pruebas de inteligibilidad, por lo que la calidad real del audio generado no esta verificada de forma objetiva.
-- Curva de perdida inestable durante el entrenamiento: subidas a 0,9916 y 1,1612 en los pasos 13.214 y 26.014 frente al 0,4950 final sugieren una optimizacion irregular y ocho sesiones de Kaggle interrumpidas por limite de tiempo.
-- Sesgos potenciales derivados del corpus: solo tres fuentes (un podcast, un canal de cuentos y un corpus de folklore), con voces, edades, generos y acentos no documentados; la diversidad de hablantes del modelo final es una incognita.
-- Riesgo de alucinacion en sintesis de voz: pronunciacion incorrecta, omision o sustitucion de palabras, artefactos en utterances largos y degradacion fuera del rango de 2 a 12 s visto en entrenamiento.
-- Limite practico de longitud: el modelo se entreno con fragmentos de 2 a 12 s, por lo que textos largos requieren troceado y concatenacion, con riesgo de perdida de coherencia prosodica entre fragmentos.
-- Cobertura idiomatica limitada: la etiqueta oficial es unicamente ar; el code-switching a frances y bereber no esta cuantificado ni garantizado.
-- Unico checkpoint disponible (model_last.pt) y sin versiones quantizadas, safetensors, GGUF u ONNX, lo que complica el despliegue en entornos no basados en PyTorch.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero no cubre los derechos de las voces presentes en los corpus de entrenamiento ni el uso indebido de la clonacion de voz; la responsabilidad legal recae en el usuario.
-- Riesgo de suplantacion de identidad y generacion de audio enganoso, agravado por las capacidades de clonacion de voz propias de F5-TTS.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta, y fechas de creacion y actualizacion inusuales (2026), lo que indica un proyecto muy reciente y sin validacion por parte de la comunidad.
-- Documentacion incompleta: la model card consultada se corta en la seccion de inferencia, por lo que faltan instrucciones completas de uso.
+- Ausencia total de evaluación formal: no hay MOS, inteligibilidad medida ni similitud de hablante; el rendimiento real es desconocido.
+- El autor declara que el modelo no ha sido evaluado para sesgo, toxicidad ni factualidad.
+- Riesgo de alucinación acústica: como todo modelo generativo de audio, puede producir artefactos, prosodia incorrecta o pronunciaciones inventadas en texto fuera de distribución.
+- Cobertura limitada a dariya argelina; no debe usarse para MSA, otros dialectos árabes ni otras lenguas.
+- El code-switching al francés funciona mejor con palabras en script latino; la transliteración degrada la salida.
+- El texto debe pasar por el normalizador de entrenamiento (eliminación de etiquetas, caracteres de ruido y unificación de alif/ya); omitirlo degrada la calidad.
+- Restricción ética explícita: prohibido clonar o suplantar la voz de una persona sin consentimiento explícito; tampoco para decisiones automatizadas sobre individuos.
+- Licencia Apache-2.0 en los pesos, pero los corpus de audio de origen (OddAdmix) pueden tener condiciones propias que conviene revisar antes de uso comercial.
+- El modelo base árabe no está documentado en la información disponible en cuanto a su licencia y procedencia de datos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/algerian-nlp/Hadra-TTS-f5
+- Hugging Face: https://huggingface.co/algerian-nlp/Hadra-TTS-f5
 - Modelo base: https://huggingface.co/IbrahimSalah/Arabic-F5-TTS-v2
-- Organizacion algerian-nlp: https://huggingface.co/algerian-nlp
-- Modelo ASR relacionado (medium): https://huggingface.co/algerian-nlp/Hadra-ASR-whisper-medium
-- Modelo ASR relacionado (small): https://huggingface.co/algerian-nlp/Hadra-ASR-whisper-small
-- Dataset Kahwa Podcast: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-kahwa-postcast
-- Dataset Loubna Stories: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-loubna-stories
-- Dataset Rawi Folklore: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-rawi
-- Demo web interactiva: https://f5tts-algerian-darja-demo.streamlit.app/
-- Repositorio GitHub de la demo: https://github.com/KamelTouati/f5tts-algerian-darja-demo
-- Monitorizacion de entrenamiento en Weights & Biases: proyecto `k_touati-estin/f5tts-algerian-darja` (enlace directo no disponible en la informacion proporcionada)
+- Demo interactiva: https://f5tts-algerian-darja-demo.streamlit.app/
+- Dataset Kahwa pódcast: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-kahwa-postcast
+- Dataset Loubna stories: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-loubna-stories
+- Dataset Rawi: https://huggingface.co/datasets/oddadmix/arabic-audio-collection-algerian-rawi
+- Librería F5-TTS: https://github.com/SWivid/F5-TTS

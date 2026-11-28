@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 87,
+  "downloads_30d": 339,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -109,31 +109,5 @@
       "value": 0.976744186
     }
   ],
-  "sources": [
-    {
-      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿ ...",
-      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
-      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
-    },
-    {
-      "title": "Windows 11如何添加美式键盘/纯英文输入法-百度经验",
-      "url": "https://jingyan.baidu.com/article/6079ad0e896f9269fe86db20.html",
-      "snippet": "Sep 6, 2021 · 由于Windows版本迭代，Windows10中的添加美式键盘方法与Windows 11已略有不同，本经验操作时系统版本 …"
-    },
-    {
-      "title": "Калькулятор стажа онлайн. Расчёт ...",
-      "url": "https://assistentus.ru/kalkulyator-stazha/",
-      "snippet": "Калькулятор подсчёта страхового (трудового) стажа онлайн. Узнайте свой стаж и сохраните его себе в файл или соцсеть …"
-    },
-    {
-      "title": "Вирус это или нет? (backgroundTaskHost.exe) - egor ...",
-      "url": "https://otvet.mail.ru/question/242352680",
-      "snippet": "backgroundTaskHost.exe - вирус или нет? 1. Нормальный файл: - Официальный процесс Windows - Отвечает за фоновые …"
-    },
-    {
-      "title": "Калькулятор расчета дней отпуска на ...",
-      "url": "https://assistentus.ru/kalkulyator-dnej-otpuska/",
-      "snippet": "Калькулятор для расчета количества дней отпуска онлайн. Узнайте количество заслуженных дней отпуска и сохраните …"
-    }
-  ]
+  "sources": []
 }

@@ -40,7 +40,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 178,
+  "downloads_30d": 216,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -60,11 +60,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Abhay2310/hindi-tts-exp-v1 · Hugging Face",
-      "url": "https://huggingface.co/Abhay2310/hindi-tts-exp-v1",
-      "snippet": "Text-to-Speech model, built with PyTorch. Download, explore files and run it on Hugging Face."
-    }
-  ]
+  "sources": []
 }

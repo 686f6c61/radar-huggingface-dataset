@@ -2,127 +2,111 @@
 
 ## Resumen
 
-TranscribePsy-250M-EU-sub es un modelo de reconocimiento automático del habla (ASR) de 254 millones de parámetros desarrollado por qvac (tether-ai-research), destilado a partir de nvidia/parakeet-tdt-0.6b-v3 y orientado a despliegue en dispositivo y en el borde. Cubre las ocho lenguas europeas seleccionadas por Multilingual LibriSpeech (neerlandés, inglés, francés, alemán, italiano, polaco, portugués y español) y concentra su presupuesto de parámetros en ese subconjunto para reducir el error respecto a la variante de 25 idiomas de la misma familia.
+TranscribePsy-250M-EU-sub es un modelo de reconocimiento automatico del habla (ASR) de 254 millones de parametros desarrollado por qvac. Se trata de un destilado y ajuste fino del modelo nvidia/parakeet-tdt-0.6b-v3, orientado especificamente a la transcripcion en ocho lenguas europeas: neerlandes, ingles, frances, aleman, italiano, polaco, portugues y espanol. El modelo concentra su presupuesto de parametros en menos idiomas que su hermano mayor (TranscribePsy-250M-EU, con 25 lenguas) para reducir el error en el subconjunto cubierto.
 
-El modelo emplea una arquitectura FastConformer con decodificador transducer TDT, heredada del modelo base de NVIDIA, y se distribuye en formato NeMo/safetensors (2,0 GB de repositorio), además de builds GGUF (Q8_0) para el motor `qvac-fabric-speech.cpp` y Core ML para el Neural Engine de Apple. Su relevancia actual radica en que alcanza un WER de 5,87 en Multilingual LibriSpeech y 7,50 en Open ASR Leaderboard con solo 254M de parámetros, por delante de modelos de 764M a 976M de parámetros en el conjunto multilingüe, y con un factor de tiempo real de 0,052 en móviles con cuantización de 8 bits.
+La arquitectura subyacente es FastConformer con decodificador de tipo transducer (TDT), una combinacion habitual en la familia Parakeet de NVIDIA. Con 253.954.838 parametros reales y un repositorio de 2 GB, esta pensado para despliegue en dispositivo y en el borde (on-device, edge), incluyendo telefonos moviles mediante builds GGUF y Core ML para el Apple Neural Engine.
 
-La licencia Apache 2.0 y la disponibilidad de artefactos optimizados para teléfono lo sitúan como una opción práctica para transcripción local, subtitulado y asistentes de voz sin dependencia de la nube.
+Su relevancia actual radica en la relacion entre precision y tamano: segun la model card, obtiene 7,50 en el Open ASR Leaderboard y 5,87 en Multilingual LibriSpeech, superando a modelos tres o cuatro veces mas grandes como Qwen3-ASR-0.6B, omniASR-CTC-1B-v2 y Whisper-Medium en el conjunto multilingue. Ademas, figura en la frontera de Pareto de tamano y WER de la pista multilingue del leaderboard.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | FastConformer con decodificador transducer TDT |
-| Parámetros totales | 253.954.838 (254M) |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | 8 bits (build GGUF Q8_0); pesos originales en safetensors sin cuantizar |
+| Arquitectura | FastConformer con decodificador transducer (TDT), segun tags del modelo |
+| Parametros totales | 253.954.838 (254M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Build GGUF Q8_0 publicada; build Core ML para Apple Neural Engine; cuantizacion de 8 bits mencionada en las mediciones on-device |
 | Idiomas soportados | nl, en, fr, de, it, pl, pt, es (8 lenguas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (NeMo); GGUF (Q8_0); Core ML |
+| Formato de pesos | safetensors (libreria NeMo); builds adicionales en GGUF y Core ML |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning por destilación del checkpoint nvidia/parakeet-tdt-0.6b-v3, que combina un codificador FastConformer con un decodificador transducer de token y duración (TDT). FastConformer es una variante de Conformer con atención submuestreada que reduce la longitud de la secuencia antes del bloque de atención, lo que rebaja el coste computacional en audio largo. El decodificador TDT predice de forma conjunta el token y su duración, lo que permite emitir varios tokens por paso y acelera la inferencia frente a un transducer RNN-T clásico.
+El modelo emplea una arquitectura FastConformer, una variante del Conformer con atencion por bloques que reduce el coste computacional en secuencias de audio largas, acoplada a un decodificador transducer TDT (Token-and-Duration Transducer). Esta combinacion permite una decodificacion eficiente y adecuada para despliegue en tiempo real. El modelo base es nvidia/parakeet-tdt-0.6b-v3, del que este modelo es un ajuste fino por destilacion, reduciendo el tamano de 0,6B a 254M parametros mediante la concentracion del presupuesto en ocho lenguas.
 
-No se detalla en la información disponible el volumen de horas de audio, la composición exacta del dataset de destilación ni si se aplicaron etapas de RLHF o ajuste con preferencias; en ASR estos modelos se entrenan habitualmente con supervisión CTC/transducer sobre corpus etiquetados. La innovación destacable es la compresión de un modelo de 0,6B a 254M manteniendo (y en MLS superando) la precisión del profesor en las ocho lenguas cubiertas, junto con la publicación de builds cuantizados a 8 bits para GGUF y Core ML que reducen el modelo a 305 MB y permiten ejecución en el Neural Engine.
+La model card menciona el diseno CAFE (language-routed adapter) descrito en el paper arXiv 2610.19134, si bien ese diseno corresponde a TranscribePsy-250M-EU; no se detalla en la informacion proporcionada si este modelo subtipo lo emplea directamente. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF o DPO (poco habituales en ASR). Los datos de evaluacion se apoyan en Multilingual LibriSpeech, Common Voice v25 y el Open ASR Leaderboard.
 
 ## Capacidades
 
-- Reconocimiento de voz multilingüe en ocho lenguas europeas: neerlandés, inglés, francés, alemán, italiano, polaco, portugués y español.
-- Transcripción de audio corto y de formato largo (evaluado en test sets como AMI, Earnings-22, GigaSpeech, LibriSpeech, SPGISpeech, VoxPopuli y FLEURS).
-- Inferencia en dispositivo y en el borde: build GGUF para `qvac-fabric-speech.cpp` y build Core ML para el Apple Neural Engine.
-- Ejecución en tiempo real con factor de tiempo real de 0,052 y latencia de 1.021 ms en móviles de 8 bits.
-- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio más allá del reconocimiento de habla.
-- No se documenta un modo "thinking" ni funcionalidades de diarización o traducción.
+- Reconocimiento automatico del habla multilingue en ocho lenguas europeas (neerlandes, ingles, frances, aleman, italiano, polaco, portugues y espanol).
+- Transcripcion de audio de formato corto y largo, segun los conjuntos de evaluacion del Open ASR Leaderboard (7 conjuntos en ingles y 9 multilingues).
+- Inferencia en tiempo real con un factor de tiempo real (RTF) de 0,052 en moviles con builds de 8 bits.
+- Despliegue on-device y en el borde: builds GGUF para el motor qvac-fabric-speech.cpp y Core ML para el Apple Neural Engine.
+- No se documentan en la informacion disponible capacidades de tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio mas alla de la transcripcion.
 
 ## Casos de uso
 
-- Transcripción local en aplicaciones móviles: con 305 MB en GGUF Q8_0 y 534 MiB de pico de memoria a 10 s de audio, el modelo cabe en un teléfono de gama media y permite dictado y notas de voz sin enviar audio a la nube.
-- Subtitulado y actas de reuniones: el bajo factor de tiempo real (0,052) permite procesar audio de reuniones en segundo plano; según la fuente, 10 minutos de audio se transcriben en 1,65 s en un iPhone.
-- Asistentes de voz integrados: la latencia de arranque en frío de 252 ms y la inferencia de 1.021 ms hacen viable la transcripción de comandos cortos en un bucle interactivo.
-- Transcripción de contenido audiovisual multilingüe: cubre las ocho lenguas de MLS, útil para catalogar y buscar en archivos de vídeo y pódcast europeos.
-- Cumplimiento y privacidad de datos: al ejecutarse íntegramente en dispositivo, evita el envío de audio a servicios externos, lo que encaja en entornos sanitarios, legales o corporativos con requisitos de residencia de datos.
-- Investigación en ASR eficiente: sirve como referencia de destilación de un modelo de 0,6B a 254M y como base para fine-tuning en dominios específicos con licencia Apache 2.0.
-- Integración en dispositivos empotrados y wearables: el tamaño reducido y el soporte Core ML permiten desplegar transcripción en relojes y auriculares con Neural Engine.
+- Transcripcion en tiempo real en aplicaciones moviles: con un RTF de 0,052 y una latencia de inferencia de 1.021 ms en telefono, el modelo puede transcribir audio en directo en apps de notas de voz o subtitulado sin depender de la nube.
+- Subtitulado y actas de reuniones multilingues: al cubrir ocho lenguas europeas con un WER de 5,87 en MLS, es adecuado para generar transcripciones de reuniones en entornos corporativos con participantes de distintos paises.
+- Asistentes de voz embebidos: el tamano de 305 MB en su build GGUF y un pico de memoria de 534 MiB a 10 segundos permiten integrarlo en dispositivos con recursos limitados, como altavoces inteligentes o wearables.
+- Transcripcion de contenido audiovisual: su rendimiento en conjuntos de audio corto y largo del Open ASR Leaderboard lo hace util para pipelines de generacion de subtitulos en plataformas de video con contenido en varias lenguas europeas.
+- Aplicaciones de accesibilidad: dictado por voz y conversion de voz a texto en tiempo real en telefonos, con arranque en frio de 252 ms, adecuado para interfaces de asistencia a personas con discapacidad motriz.
+- Procesamiento por lotes en el borde: en entornos con conectividad limitada (vehiculos, dispositivos industriales), el modelo puede transcribir localmente sin enviar audio a servidores externos, reduciendo latencia y preservando la privacidad.
+- Investigacion en ASR multilingue de bajo coste: su licencia Apache 2.0 y su tamano compacto lo convierten en una base accesible para experimentos de ajuste fino y evaluacion en las ocho lenguas MLS.
 
 ## Benchmarks y rendimiento
 
-Resultados de WER (menor es mejor) según la model card. La media de Open ASR Leaderboard combina la media inglesa de formato corto con la media multilingüe (FLEURS y MLS).
+Resultados de la model card (WER, menor es mejor; negrita indica el mejor resultado de la fila):
 
 | Suite | TranscribePsy-250M-EU-sub | TranscribePsy-250M-EU | Whisper-small (242M) | omniASR-CTC-300M-v2 (326M) | OWSM v4 small (370M) |
 |---|---|---|---|---|---|
-| Open ASR Leaderboard | 7,50 | 8,02 | 12,34 | 15,31 | 9,72 |
-| Multilingual LibriSpeech | 5,87 | 6,58 | 11,51 | 11,89 | 11,84 |
+| Open ASR Leaderboard | **7,50** | 8,02 | 12,34 | 15,31 | 9,72 |
+| Multilingual LibriSpeech | **5,87** | 6,58 | 11,51 | 11,89 | 11,84 |
 | Common Voice v25 | n/a | 21,56 | 38,17 | 32,23 | 37,74 |
 
-Comparación con modelos de mayor tamaño:
+Comparacion con modelos tres o cuatro veces mayores:
 
-| Métrica | TranscribePsy-250M-EU-sub | Qwen3-ASR-0.6B (782M) | omniASR-CTC-1B-v2 (976M) | Whisper-Medium (764M) |
+| Metrica | TranscribePsy-250M-EU-sub | Qwen3-ASR-0.6B (782M) | omniASR-CTC-1B-v2 (976M) | Whisper-Medium (764M) |
 |---|---|---|---|---|
-| Parámetros | 254M | 782M | 976M | 764M |
-| Open ASR Leaderboard | 7,50 | 7,40 | 9,68 | 8,79 |
-| Multilingual LibriSpeech | 5,87 | 12,60 | 7,71 | 7,76 |
-| Tamaño del modelo (MB) | 305 | 854 | 1.056 | 823 |
-| Factor de tiempo real | 0,052 | 0,462 | 0,998 | 0,931 |
-| Latencia de inferencia (ms) | 1.021 | 7.616 | 15.372 | 14.636 |
-| Latencia de arranque en frío (ms) | 252 | 677 | 898 | 870 |
-| Pico de memoria a 10 s (MiB) | 534 | 1.169 | 1.275 | 1.569 |
+| Parametros | **254M** | 782M | 976M | 764M |
+| Open ASR Leaderboard | 7,50 | **7,40** | 9,68 | 8,79 |
+| Multilingual LibriSpeech | **5,87** | 12,60 | 7,71 | 7,76 |
+| Tamano del modelo (MB) | **305** | 854 | 1.056 | 823 |
+| Factor de tiempo real | **0,052** | 0,462 | 0,998 | 0,931 |
+| Latencia de inferencia (ms) | **1.021** | 7.616 | 15.372 | 14.636 |
+| Latencia de arranque en frio (ms) | **252** | 677 | 898 | 870 |
+| Pico de memoria a 10 s (MiB) | **534** | 1.169 | 1.275 | 1.569 |
 
-Resultados por conjunto de test (WER) frente a modelos del mismo tamaño:
-
-| Test set | TranscribePsy-250M-EU-sub | Whisper-small | omniASR-CTC-300M-v2 | OWSM v4 small |
-|---|---|---|---|---|
-| AMI | 12,37 | 53,35 | 32,51 | 15,47 |
-| Earnings-22 | 14,77 | 13,21 | 26,33 | 14,48 |
-| GigaSpeech | 11,23 | 10,56 | 22,84 | 11,17 |
-| LibriSpeech clean | 2,14 | 2,59 | 4,71 | 2,56 |
-| LibriSpeech other | 4,81 | 6,60 | 11,86 | 5,98 |
-| SPGISpeech | 8,77 | 3,24 | 14,05 | 2,79 |
-| VoxPopuli | 7,42 | 7,85 | 13,28 | 8,65 |
-| FLEURS German | 6,58 | 7,61 | 14,53 | 10,08 |
-| FLEURS Spanish | 4,76 | 4,67 | 9,56 | 8,21 |
-| FLEURS French | 8,24 | 11,52 | no disponible | no disponible |
+Las metricas on-device se midieron en telefonos con builds cuantizados a 8 bits; el modelo qvac se ejecuta como su build GGUF. La puntuacion del Open ASR Leaderboard es la media de 7 conjuntos de prueba en ingles de formato corto y 9 conjuntos multilingues.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU/GPU: el modelo completo en safetensors ocupa aproximadamente 1 GB en FP32 (2,0 GB de repositorio) y el build GGUF Q8_0 pesa 305 MB.
-- VRAM estimada: no disponible de forma explícita; el pico de memoria medido en móvil con 8 bits es de 534 MiB a 10 s de audio, por lo que en GPU el consumo será del orden de 1 GB o inferior según el backend.
-- GPU recomendadas: no se especifican en la información disponible; por tamaño, cualquier GPU consumer reciente (RTX 3060 o superior) es sobrada, y el modelo está pensado para CPU y Neural Engine.
-- Cabe en GPU consumer: sí, con amplio margen, y también en teléfonos y dispositivos con Neural Engine.
-- Opciones de despliegue: NeMo (PyTorch), `qvac-fabric-speech.cpp` con GGUF, Core ML para Apple Neural Engine. No se documenta soporte explícito de vLLM, TGI, llama.cpp ni Ollama.
-- Latencia y throughput: factor de tiempo real de 0,052, latencia de inferencia de 1.021 ms y arranque en frío de 252 ms en móviles con 8 bits; según la fuente, 10 minutos de audio se transcriben en 1,65 s en un iPhone.
+- VRAM estimada para inferencia: no disponible de forma explicita; el pico de memoria medido en movil es de 534 MiB a 10 segundos de audio con build de 8 bits.
+- GPU recomendadas: no se especifican en la informacion disponible. Por tamano (254M parametros), el modelo es compatible con GPU de consumo, pero no se documentan modelos concretos.
+- Cabe en GPU de consumo: si, dado el tamano del modelo (2 GB de repositorio, 305 MB en GGUF Q8_0); no se detallan modelos especificos.
+- Opciones de despliegue: NeMo (libreria nativa), motor qvac-fabric-speech.cpp con GGUF Q8_0, y Core ML para Apple Neural Engine. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la informacion disponible.
+- Latencia y throughput: RTF de 0,052, latencia de inferencia de 1.021 ms y arranque en frio de 252 ms en telefonos con builds de 8 bits.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Idiomas | Open ASR LB (WER) | MLS (WER) | Licencia | Disponibilidad |
+| Modelo | Parametros | Idiomas | Open ASR Leaderboard | Multilingual LibriSpeech | Licencia | Formatos |
 |---|---|---|---|---|---|---|
-| TranscribePsy-250M-EU-sub | 254M | 8 | 7,50 | 5,87 | Apache 2.0 | safetensors, GGUF, Core ML |
-| TranscribePsy-250M-EU | 250M (familia) | 25 | 8,02 | 6,58 | Apache 2.0 | PyTorch |
-| Whisper-small | 242M | multilingüe | 12,34 | 11,51 | MIT (según información pública) | múltiples formatos |
-| omniASR-CTC-300M-v2 | 326M | multilingüe | 15,31 | 11,89 | no disponible | no disponible |
-| OWSM v4 small | 370M | multilingüe | 9,72 | 11,84 | no disponible | no disponible |
-| Qwen3-ASR-0.6B | 782M | multilingüe | 7,40 | 12,60 | no disponible | no disponible |
+| TranscribePsy-250M-EU-sub | 254M | 8 | 7,50 | **5,87** | Apache 2.0 | safetensors, GGUF, Core ML |
+| TranscribePsy-250M-EU | 250M (aprox.) | 25 | 8,02 | 6,58 | No disponible en la informacion | PyTorch |
+| Whisper-small | 242M | Multilingue (amplio) | 12,34 | 11,51 | No disponible en la informacion | No disponible en la informacion |
+| Qwen3-ASR-0.6B | 782M | No disponible en la informacion | **7,40** | 12,60 | No disponible en la informacion | No disponible en la informacion |
+| omniASR-CTC-300M-v2 | 326M | No disponible en la informacion | 15,31 | 11,89 | No disponible en la informacion | No disponible en la informacion |
+| OWSM v4 small | 370M | No disponible en la informacion | 9,72 | 11,84 | No disponible en la informacion | No disponible en la informacion |
 
 ## Limitaciones y advertencias
 
-- Cobertura limitada a ocho lenguas: no transcribe lenguas fuera de nl, en, fr, de, it, pl, pt y es; para cobertura europea amplia debe usarse TranscribePsy-250M-EU (25 idiomas).
-- El resultado de Common Voice v25 no se reporta para este modelo porque el conjunto incluye lenguas fuera de su ámbito, de modo que no hay una métrica directa de robustez ante acentos y ruido fuera de MLS y FLEURS.
-- Riesgo de alucinación y de errores en audio con ruido, solapamiento de hablantes o dominio muy alejado del corpus de entrenamiento; no se documentan métricas de diarización ni de segmentación de hablantes.
-- No se detallan sesgos conocidos por acento, género o variedad dialectal en la información disponible; conviene evaluar por subgrupo antes de producción.
-- El WER en SPGISpeech (8,77) es peor que el de Whisper-small (3,24) y OWSM v4 small (2,79), lo que sugiere menor robustez en audio de dominio financiero o con estilo de lectura concreto.
-- Licencia Apache 2.0: permite uso comercial, pero debe conservarse el aviso de licencia y verificar las condiciones del modelo base (nvidia/parakeet-tdt-0.6b-v3) en la distribución derivada.
-- Los builds GGUF y Core ML están vinculados a motores concretos (`qvac-fabric-speech.cpp` y Neural Engine); fuera de esos entornos hay que usar NeMo/PyTorch.
-- No se documentan requisitos de contexto ni límites de duración de audio más allá de las pruebas realizadas.
+- Cobertura limitada a ocho lenguas: no cubre el resto de idiomas europeos presentes en TranscribePsy-250M-EU (25 lenguas), por lo que no es adecuado para aplicaciones con requisitos linguisticos mas amplios.
+- La suite Common Voice v25 no reporta una media comparable para este modelo porque incluye lenguas fuera de su cobertura; las comparaciones con otros modelos en esa suite no son directamente extrapolables.
+- Riesgo de alucinacion y errores de transcripcion en audio con ruido, acentos no representados en el entrenamiento o terminologia especializada; no se documentan en la informacion disponible los sesgos conocidos del modelo.
+- No se detallan en la informacion disponible las caracteristicas del dataset de entrenamiento ni posibles sesgos demograficos o dialectales.
+- Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar las condiciones del modelo base (nvidia/parakeet-tdt-0.6b-v3) y de los datasets de evaluacion utilizados.
+- Las metricas on-device corresponden a builds cuantizados a 8 bits en telefonos; el rendimiento en otros hardware puede diferir.
+- No se documentan capacidades de razonamiento, tool calling ni procesamiento multimodal; el modelo esta especializado exclusivamente en ASR.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub
 - Build GGUF: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-gguf
 - Build Core ML: https://huggingface.co/qvac/TranscribePsy-250M-EU-sub-coreml
-- Variante de 25 idiomas: https://huggingface.co/qvac/TranscribePsy-250M-EU
+- Modelo hermano de 25 lenguas: https://huggingface.co/qvac/TranscribePsy-250M-EU
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Motor de inferencia: https://github.com/tether-ai-research/qvac-transcribePsy
-- Artículo de análisis: https://www.explainx.ai/blog/tether-transcribepsy-250m-on-device-speech-recognition-2026
-- Multilingual LibriSpeech: https://www.openslr.org/94/
-- Paper referenciado en los tags: arxiv:2610.19134 (no verificado en la información disponible)
+- Paper CAFE en arXiv: https://arxiv.org/abs/2610.19134
+- Motor qvac-fabric-speech.cpp: https://github.com/tetherto/qvac-fabric-speech.cpp
+- Open ASR Leaderboard: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- Multilingual LibriSpeech (OpenSLR 94): https://www.openslr.org/94/

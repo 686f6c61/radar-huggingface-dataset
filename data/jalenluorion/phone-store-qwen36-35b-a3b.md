@@ -2,87 +2,94 @@
 
 ## Resumen
 
-phone-store-qwen36-35b-a3b es una conversión de formato del modelo Qwen/Qwen3.6-35B-A3B (equipo Qwen, Alibaba Cloud) preparada por el usuario jalenluorion para su ejecución en un iPhone mediante la aplicación phone-store. No se trata de un modelo nuevo ni de un reentrenamiento: los pesos son los del modelo base, cuantizados a int4 (grupo 64, afín) y reorganizados en un layout específico que permite servir los expertos enrutados desde el almacenamiento flash del teléfono en lugar de mantenerlos en memoria.
+phone-store-qwen36-35b-a3b es un reempaquetado del modelo Qwen/Qwen3.6-35B-A3B (licencia Apache-2.0) realizado por el usuario jalenluorion, orientado a ejecutar un modelo de mezcla de expertos (MoE) de gran tamano en Macs e iPhones con menos memoria que la que requeriria el modelo completo. La idea central es mantener en memoria todos los pesos no expertos y trasladar los 10.240 expertos enrutados al SSD, con un registro por experto, que se leen a una cache bloqueada a medida que las capas los necesitan.
 
-La innovación del paquete reside en el layout "slim": los expertos enrutados de cada capa se almacenan como registros de tamaño fijo y alineados a página en ficheros `store4/layer_XX.bin`, mientras que la parte residente (atención, atención lineal, experto compartido, normas y `lm_head`) se mantiene en memoria. Unos routers pequeños entrenados por el proyecto phone-store predicen con cuatro capas de antelación qué expertos se van a leer, de modo que las lecturas de flash se solapen con el cómputo.
+El modelo base es un MoE de Qwen con 35.000 millones de parametros totales y 3.000 millones de parametros activos (según la nomenclatura A3B), del que no se detallan en la informacion disponible ni la longitud de contexto nativa ni la composicion exacta del entrenamiento. El reempaquetado anade pequenos routers entrenados que predicen, con dos capas de antelacion, que expertos necesitara una capa, de modo que las lecturas desde el SSD comienzan mientras se computan las capas intermedias. Esto convierte al modelo en "prefetchable": los pesos liberados estan congelados y el router original del modelo sigue tomando todas las decisiones.
 
-El resultado, según la model card, es una decodificación de aproximadamente 3 tokens por segundo en un iPhone 15 Plus con 6 GB de RAM, usando entre 2,5 y 3,5 GB de memoria de aplicación. Es relevante como demostración de inferencia MoE de gran tamaño en dispositivos móviles de gama alta, un escenario históricamente reservado a servidores o GPUs de escritorio.
+Su relevancia actual radica en que demuestra una via practica para servir modelos MoE de decenas de miles de millones de parametros en hardware de consumo (Apple Silicon, iPhone) sin renunciar a la calidad del modelo original en el modo `exact`, y con una degradacion medida y acotada en el modo `fast`. El motor es dmeng (C++), disponible en el repositorio prefetchable-store, con un servidor compatible con la API de OpenAI.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con atención y atención lineal (según el modelo base Qwen3.6-35B-A3B) |
-| Parámetros totales | 35B (modelo base) |
-| Parámetros activos | top-8 expertos por capa de 256 enrutados (modelo base); número exacto de parámetros activos no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | int4 grupo 64 afín (MLX) para expertos y pesos residentes; routers en int8; embeddings en bf16 |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer con mezcla de expertos (MoE), segun tag `mixture-of-experts`; pesos reempaquetados para almacen prefetchable |
+| Parametros totales | 35.000 millones (según nombre del modelo, Qwen3.6-35B-A3B) |
+| Parametros activos | 3.000 millones (según nombre A3B) |
+| Longitud de contexto | no disponible (el perfil `phone-small` reserva 16.384 posiciones de contexto) |
+| Tipos de cuantizacion | 8-bit affine con grupos de 64 (`resident_q8`, perfiles `mac` y `phone`); 4-bit affine con grupos de 64 calibrado (`resident_q4`, perfil `phone-small`); pesos fuente en bf16 (`resident.safetensors`) |
+| Idiomas soportados | no disponible (la model card indica "Text only") |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (residente, routers, embeddings) y registros MLX cuantizados en bruto (`.bin`) con `store4/meta.json`; plantilla de chat en jinja |
+| Formato de pesos | safetensors (fuente bf16 y ficheros derivados `resident_q8`/`resident_q4`), con manifiesto `moved-store.json`; tamano del repo 68,9 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Qwen3.6-35B-A3B, un transformer de mezcla de expertos (MoE) con 256 expertos enrutados por capa y un experto compartido, del que se activan los top-8 en cada paso. La model card de esta conversión menciona explícitamente atención y atención lineal entre los componentes residentes, aunque no detalla la proporción ni la disposición exacta de las capas. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; esos datos corresponden al modelo base y no se reproducen aquí.
+El modelo base es un transformer con mezcla de expertos: 10.240 expertos enrutados distribuidos por capas, de los que el router del modelo selecciona 8 por capa en el modo `exact`. Sobre esa base, el reempaquetado separa los pesos residentes (no expertos, en 8 o 4 bits segun perfil) de los expertos, que se almacenan en el SSD como registros individuales y se cargan en una cache bloqueada cuyo tamano se calcula a partir de la memoria libre en el arranque. La innovacion principal son unos routers auxiliares entrenados (`routers/linear_k2.safetensors`) que predicen con dos capas de antelacion los expertos que necesitara una capa, permitiendo solapar la lectura desde disco con el computo de las capas intermedias.
 
-La única modificación numérica respecto a los pesos originales es la cuantización int4 grupo 64, que según el autor introduce un coste de aproximadamente 0,02-0,03 nats por token frente a bf16 en sus comprobaciones. Los routers de predicción con retardo 4 (un MLP pequeño por capa, en int8) fueron entrenados por el proyecto phone-store sobre las propias decisiones de enrutamiento del modelo, y solo deciden qué leer por adelantado: los expertos que el modelo utiliza siguen siendo sus top-8 nativos. El paquete incluye además una capa opcional de codificación entrópica sin pérdidas (PSC1) para cinco capas, que se decodifica en la GPU bit a bit hasta los bytes originales del `.bin`.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo base. En el reempaquetado, los pesos liberados estan congelados y el router original sigue tomando todas las decisiones de enrutamiento; los routers de prediccion solo anticipan lecturas. El motor ofrece dos modos: `exact`, en el que los tokens generados no dependen de la cache ni de los tiempos (se espera a los 8 expertos elegidos por capa), y `fast`, en el que un experto elegido que no esta en memoria se lee y se espera si su peso de enrutamiento supera 0,15 (0,10 en `phone-small`), y en caso contrario se omite sin sustituto ni renormalizacion.
 
 ## Capacidades
 
-- Generación de texto conversacional y de propósito general, heredada del modelo base Qwen3.6-35B-A3B.
-- Enrutamiento MoE con top-8 sobre 256 expertos por capa, con experto compartido.
-- Inferencia en dispositivo (on-device) en iPhone mediante streaming de expertos desde flash.
-- Predicción de expertos con retardo de 4 capas para solapar lecturas de almacenamiento y cómputo.
-- Verificación de integridad de la descarga mediante `manifest.json` (tamaño y SHA-256 por fichero).
-- Lectura opcional de capas comprimidas de forma entrópica sin pérdidas cuando están presentes los ficheros `.psc`/`.idx`.
-- Capacidades específicas del modelo base (código, matemáticas, tool calling, multilingüismo) no documentadas en la información disponible para esta conversión.
+- Generacion de texto en modo solo texto ("Text only" segun la model card); no se declaran capacidades de vision ni audio.
+- Razonamiento y generacion de codigo heredados del modelo base Qwen3.6-35B-A3B, con calidad medida en posiciones de prosa y codigo en el modo `fast`.
+- Ejecucion local en Apple Silicon (macOS) e iOS (iPhone), con perfiles adaptados automaticamente al dispositivo.
+- Dos modos de inferencia: `exact` (determinista respecto a la cache) y `fast` (con omision controlada de expertos fuera de memoria).
+- Servidor compatible con la API de OpenAI (`dmserve.py`), utilizable con clientes como OpenCode.
+- Gestion de memoria dinamica: la cache de expertos se dimensiona al arrancar y se reduce 1 GB por comprobacion bajo presion de memoria, creciendo de nuevo cuando hay holgura.
+- Memoria de respaldo en iPhones con 11 GB o mas: los expertos que no caben en la cache de la app se usan desde la cache de ficheros del sistema y los reutilizados migran a la cache de la app.
+- Soporte de tool calling y agentes: no disponible de forma explicita en la informacion; la model card menciona evaluacion sobre "agent-text positions".
 
 ## Casos de uso
 
-- Inferencia local en iPhone de un MoE de 35B: la aplicación phone-store descarga el repositorio en el primer arranque (20,6 GB por Wi-Fi), verifica cada fichero contra el manifiesto y ejecuta el modelo con los expertos en streaming desde flash, logrando unos 3 tokens/s en un iPhone 15 Plus con 6 GB de RAM.
-- Asistentes conversacionales sin conexión: al residir los pesos en el dispositivo, el modelo puede atender conversaciones multi-turno sin enviar datos a un servidor, lo que resulta adecuado para escenarios de privacidad estricta.
-- Investigación sobre inferencia MoE en dispositivos móviles: el layout `store4/` con registros alineados a página y geometría documentada en `meta.json` sirve como banco de pruebas para estudiar el equilibrio entre ancho de banda de flash, aciertos de predicción de expertos y velocidad de decodificación.
-- Desarrollo de runtimes alternativos: los ficheros son safetensors estándar y registros MLX cuantizados en bruto, de modo que otros runtimes pueden leerlos usando `store4/meta.json` como especificación de geometría.
-- Pruebas de cuantización int4 en producción: permite medir en hardware real el impacto de la cuantización grupo 64 (coste declarado de 0,02-0,03 nats/token) sobre la calidad de salida en tareas conversacionales.
-- Evaluación de routers de predicción: los routers int8 con retardo 4 pueden analizarse de forma aislada para medir su tasa de acierto frente al enrutamiento real top-8 del modelo, útil en investigación sobre sistemas MoE con expertos fuera de memoria.
-- Distribución de modelos de gran tamaño a móviles: el mecanismo de descarga con manifiesto y verificación SHA-256 es reutilizable como patrón para empaquetar y actualizar modelos de decenas de gigabytes en aplicaciones iOS.
+- Inferencia local en Mac de 16 GB: el perfil `mac` (21,31 GB de descarga, 49 ficheros) permite ejecutar el modelo con pesos residentes en 8 bits y una cache de expertos dimensionada desde la memoria libre, cerrando otras aplicaciones grandes antes de arrancar.
+- Asistente de codigo en iPhone: el perfil `phone` (iOS con al menos 5,0 GB disponibles) usa modo `fast` por defecto y sirve para autocompletado y generacion de codigo en el propio dispositivo, con calidad de eleccion top igual a `exact` en 591 de 600 posiciones de texto de agente en un iPhone 15 Plus.
+- Despliegue de un endpoint compatible con OpenAI en local: `python3 python/serve/dmserve.py --model-dir model --port 8090` expone el modelo para herramientas que hablan el protocolo de OpenAI, sin depender de la nube.
+- Prototipado de agentes multi-paso en hardware de consumo: el modo `exact` garantiza tokens identicos en cada ejecucion y maquina, lo que facilita la reproducibilidad en pruebas de agentes y evaluaciones.
+- Demostracion de tecnicas de prefetching de expertos: util para investigadores que estudien el compromiso entre memoria, latencia de SSD y calidad en modelos MoE, con modos y perfiles conmutables por linea de comandos.
+- Uso en telefonos de la clase de 6 GB: el perfil `phone-small` (descarga de 20,35 GB, pesos residentes en 4 bits calibrados, cache de 1,42 GB y huella objetivo de 2,96 GB) permite ejecutar el modelo en dispositivos con memoria muy limitada.
+- Generacion de texto creativo y prosa en Mac: con una cache de 6,6 GB, la eleccion top del modo `fast` coincide con `exact` en el 98,7 % de las posiciones de prosa y el 97,6 % de las de codigo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo reporta métricas de ejecución en dispositivo: aproximadamente 3 tokens por segundo en un iPhone 15 Plus (6 GB de RAM) con 2,5-3,5 GB de memoria de aplicación, y un coste de cuantización de 0,02-0,03 nats por token frente a bf16 en las comprobaciones del autor.
+No se han publicado resultados de benchmarks en la informacion disponible (MMLU, HumanEval, GSM8K u otros). La model card unicamente reporta metricas de coincidencia entre modos:
+
+| Metrica | Valor |
+|---|---|
+| Coincidencia top `fast` vs `exact` en prosa (Mac, cache 6,6 GB) | 0,987 |
+| Coincidencia top `fast` vs `exact` en codigo (Mac, cache 6,6 GB) | 0,976 |
+| Coincidencia `fast` vs `exact` en iPhone 15 Plus (texto de agente) | 591 de 600 posiciones |
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para inferencia: 2,5-3,5 GB de memoria de aplicación en el escenario documentado (iPhone 15 Plus, 6 GB de RAM), gracias al streaming de expertos desde flash; el tamaño total del repositorio es de 22,5 GB (20,6 GB en la descarga de la aplicación, excluyendo `optional/`).
-- GPU recomendadas: el paquete está diseñado para la GPU integrada del iPhone mediante mlx-swift; no se documentan requisitos para A100, H100 o RTX 4090 en esta conversión.
-- ¿Cabe en GPU de consumo? El layout está pensado para almacenamiento flash móvil, no para VRAM de GPU de escritorio; no se proporcionan estimaciones para tarjetas gráficas.
-- Opciones de despliegue: aplicación phone-store (runtime Swift sobre mlx-swift, directorio `native/` del proyecto); lectura alternativa de los ficheros por otros runtimes mediante `store4/meta.json`. No se mencionan vLLM, llama.cpp, Ollama ni TGI para este paquete concreto.
-- Latencia y throughput: aproximadamente 3 tokens/s de decodificación en iPhone 15 Plus; no hay datos de otros dispositivos.
-- Almacenamiento: se requieren unos 20,6 GB libres para la descarga principal, más 1,9 GB adicionales si se descargan las capas comprimidas opcionales.
+- Perfil `mac`: descarga de 21,31 GB (49 ficheros); pesos residentes en 8 bits; cache de expertos bloqueada con techo igual a memoria fisica menos 5,5 GB menos el resto de memoria del proceso. En una maquina de 16 GB conviene cerrar otras aplicaciones grandes antes de arrancar.
+- Perfil `phone`: requiere iOS con al menos 5,0 GB disponibles al abrir; cache dimensionada como disponible menos pesos residentes, router, 0,3 GB y 0,9 GB de margen, acotada entre 0,6 y 8 GB; 8 hilos de lectura; reparto GPU de 0,65 para proyecciones y 0,65 para expertos.
+- Perfil `phone-small`: para dispositivos de la clase de 6 GB; pesos residentes en 4 bits calibrados, cache de 1,42 GB y huella de app objetivo de 2,96 GB; reserva 16.384 posiciones de contexto.
+- GPU recomendadas: no disponible; el motor esta orientado a Apple Silicon (macOS e iOS) y reparte trabajo entre CPU y GPU del dispositivo.
+- Cabe en GPU de consumo: no disponible; el diseno esta pensado para Macs e iPhones, no para GPUs NVIDIA.
+- Opciones de despliegue: motor `dmeng` (C++) compilado con CMake, servidor compatible con OpenAI (`dmserve.py`), app de iOS en `apps/ios`; no se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles; la model card solo indica que el prefetching solapa lecturas de SSD con computo y que el modo `fast` omite expertos fuera de memoria cuyo peso de enrutamiento no supera 0,15.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| phone-store-qwen36-35b-a3b | 35B totales (MoE, top-8 de 256) | no disponible | int4 MLX con expertos en flash; app iOS | Apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
-| Qwen/Qwen3.6-35B-A3B (base) | 35B totales (MoE, top-8 de 256) | no disponible | Pesos originales; desplegable con llama.cpp/GGUF según guías de terceros | Apache-2.0 (según el paquete derivado) | Hugging Face (modelo oficial) |
-| Conversión GGUF de Qwen3.6-35B-A3B para llama.cpp | 35B totales | no disponible | GGUF, llama.cpp, API compatible con OpenAI | Apache-2.0 | Disponible vía guías de despliegue local |
-
-La comparación se limita al modelo base y a su ruta de despliegue en GGUF/llama.cpp; no se dispone de datos de benchmarks que permitan contrastar rendimiento entre alternativas.
+| phone-store-qwen36-35b-a3b | 35B totales / 3B activos | no disponible | Apache-2.0 | Hugging Face, motor dmeng, app iOS | Reempaquetado para Apple Silicon con expertos en SSD |
+| Qwen/Qwen3.6-35B-A3B | 35B totales / 3B activos | no disponible | Apache-2.0 | Hugging Face | Modelo base original; requiere memoria para todos los pesos |
+| Otros MoE de ~30-40B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion |
 
 ## Limitaciones y advertencias
 
-- El paquete es una conversión de formato, no un modelo entrenado: hereda todos los sesgos, riesgos de alucinación y limitaciones del Qwen3.6-35B-A3B original, que no se documentan en la información disponible.
-- La cuantización int4 grupo 64 introduce una degradación declarada de 0,02-0,03 nats por token frente a bf16; en tareas sensibles a la precisión puede ser apreciable.
-- El rendimiento medido (unos 3 tokens/s) corresponde a un único dispositivo (iPhone 15 Plus); en modelos con menos RAM o almacenamiento más lento el streaming de expertos puede volverse inviable.
-- El layout depende de ficheros con geometría específica (`store4/meta.json`) y de routers entrenados por el proyecto; no es un formato estándar y requiere un runtime compatible o trabajo de integración.
-- La descarga inicial es de 20,6 GB por Wi-Fi, con verificación SHA-256 obligatoria; sin ese paso la aplicación no ejecuta el modelo.
-- El repositorio registra 0 descargas y 0 likes, por lo que no hay evidencia comunitaria de uso en producción ni validación independiente de las cifras declaradas.
-- Licencia Apache-2.0, igual que el modelo base, sin restricciones comerciales adicionales conocidas; el crédito del modelo corresponde al equipo Qwen de Alibaba Cloud.
-- No se dispone de información sobre idiomas soportados ni longitud de contexto para esta conversión.
+- Solo texto: no hay capacidades multimodales declaradas.
+- El modo `fast` puede omitir expertos cuyo peso de enrutamiento no supera el umbral, sin sustituto ni renormalizacion y sin limite de peso omitido por paso; la calidad no es identica a `exact` (coincidencia de 0,987 en prosa y 0,976 en codigo en Mac con cache de 6,6 GB).
+- El rendimiento depende de la velocidad del SSD y de la memoria libre al arrancar; en maquinas de 16 GB la cache puede reducirse bajo presion de memoria (1 GB por comprobacion).
+- En iPhones con menos de 5,0 GB disponibles se usa `phone-small` con pesos en 4 bits, lo que puede degradar la calidad respecto a 8 bits.
+- No se dispone de informacion sobre sesgos, riesgo de alucinacion ni idiomas soportados del modelo base o del reempaquetado.
+- La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantias; el modelo base y los routers auxiliares deben verificarse contra los sha256 de `moved-store.json`.
+- El repositorio ocupa 68,9 GB; las descargas por perfil son parciales (21,31 GB en `mac` y `phone`, 20,35 GB en `phone-small`).
+- La model card esta truncada en la informacion disponible, por lo que pueden faltar detalles sobre el perfil `phone-small` y el proceso de generacion de ficheros derivados.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b
+- Modelo en Hugging Face: https://huggingface.co/jalenluorion/phone-store-qwen36-35b-a3b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Guía de despliegue local de Qwen3.6-35B-A3B (GGUF, llama.cpp, VRAM y API): https://knightli.com/en/2026/05/24/qwen36-35b-a3b-local-deployment-llamacpp-gguf/
+- Repositorio del motor: https://github.com/jalenluorion/prefetchable-store
+- App de iOS: https://github.com/jalenluorion/prefetchable-store/tree/main/apps/ios

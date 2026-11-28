@@ -2,48 +2,52 @@
 
 ## Resumen
 
-Qwen3.8-27B-pi-adapted-VAL-APEX-I-MiniPlus-V3-GGUF es una cuantización GGUF de tipo selectivo (denominada "APEX" por su autor, IsValorum) del modelo base `harness-hub/Qwen3.8-27B-pi-adapted`, un transformer híbrido de 27.320.697.856 parámetros con arquitectura identificada como `qwen35`. El modelo está orientado a generación de texto conversacional y a flujos de trabajo de agentes, tal como indican sus etiquetas (`agents`, `mtp`, `pi`). La cuantización emplea mapas de tensor por tensor con mezcla de precisiones (Q4_K, Q5_K, Q6_K, Q8_0, IQ3_S, IQ3_XXS, IQ4_XS, F32) para preservar rutas críticas del modelo.
+Qwen3.8-27B-pi-adapted-VAL-APEX-I-MiniPlus-V3-GGUF es una cuantización GGUF del modelo base `harness-hub/Qwen3.8-27B-pi-adapted`, publicada por el usuario IsValorum dentro de su serie "APEX Quantization Series". Se trata de un artefacto de inferencia, no de un modelo entrenado desde cero: el autor toma los pesos del modelo base, los audita tensor a tensor y aplica una mezcla quirúrgica de cuantizaciones (Q4_K, Q5_K, Q6_K, Q8_0, IQ3_S, IQ3_XXS, IQ4_XS y F32 en rutas recurrentes) para maximizar la calidad dentro de un presupuesto de 13,31 GiB.
 
-La relevancia de esta ficha reside en que se trata de una distribución práctica y ejecutable localmente de un modelo de ~27B, empaquetada para llama.cpp y compatible con endpoints de tipo OpenAI/Claude. El autor publica una familia de cuantizaciones (MiniPlus, NanoPlus, MicroPlus) con huellas de 13,31 GiB, 11,47 GiB y 9,77 GiB respectivamente, lo que permite desplegar el modelo en hardware de consumo con distintas restricciones de VRAM.
+El modelo base declara la arquitectura `qwen35`, que según el mapa de tensores auditado combina componentes de atención clásica (`attn_q`, `attn_k`, `attn_v`, `attn_output`) con componentes de tipo SSM/recurrente (`ssm_a`, `ssm_alpha`, `ssm_conv1d`, `ssm_dt`, `ssm_out`, `ssm_beta`), lo que apunta a una arquitectura híbrida transformer + state space. El sufijo "pi-adapted" y las etiquetas `agents`, `harness-adapter` y `mtp` sugieren un ajuste orientado a uso agéntico con adaptadores de harness y posible decodificación multi-token prediction.
 
-La información disponible sobre el modelo base es limitada: no se documentan en la model card los datos de entrenamiento, la longitud de contexto, los idiomas soportados ni resultados de benchmarks. La model card se centra en el proceso de cuantización y en la aplicación de escritorio V-Agent del autor.
+La relevancia práctica es doble: por un lado, ofrece una vía para ejecutar un modelo de 27.320.697.856 parámetros en hardware de consumo gracias a la cuantización; por otro, el autor documenta de forma inusualmente detallada el mapa de cuantización por tensor, lo que permite auditar qué capas se han protegido con mayor precisión. La licencia es Apache 2.0 y el formato es directamente compatible con llama.cpp.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `qwen35` (transformer híbrido con rutas SSM/recurrentes y atención; inferido de los tensores `ssm_*` y `attn_*`) |
-| Parametros totales | 27.320.697.856 (27,32B) |
+| Arquitectura | `qwen35` (híbrida: atención + componentes SSM/recurrentes) |
+| Parametros totales | 27.320.697.856 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF selectivo: Q4_0, Q4_K, Q5_K, Q6_K, Q8_0, IQ3_S, IQ3_XXS, IQ4_XS, F32 (por tensor) |
+| Tipos de cuantizacion | Mezcla por tensor: Q4_0, Q4_K, Q5_K, Q6_K, Q8_0, IQ3_S, IQ3_XXS, IQ4_XS, F32 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); repo de 14,3 GB |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base pertenece a la arquitectura `qwen35`, que combina capas de atención con capas de estado recurrente (SSM). El mapa de tensores auditado del GGUF confirma la presencia de 64 bloques (`blk.0` a `blk.63`), con tensores `attn_qkv`, `attn_q`, `attn_k`, `attn_v`, `attn_output`, `attn_gate` en las capas de atención, y tensores `ssm_a`, `ssm_alpha`, `ssm_beta`, `ssm_conv1d`, `ssm_dt.bias` y `ssm_out` en las capas recurrentes. Las rutas SSM se mantienen en F32 (408 tensores observados), lo que indica que el autor consideró críticas estas rutas para la estabilidad numérica.
+El modelo base emplea la arquitectura etiquetada como `qwen35`. El mapa de tensores auditado en esta cuantización revela 64 bloques (`blk.0` a `blk.63`) con dos familias de componentes: por un lado, proyecciones de atención (`attn_q`, `attn_k`, `attn_v`, `attn_output`, `attn_qkv`, `attn_gate`) presentes en subconjuntos de capas; por otro, parámetros de tipo SSM/recurrente (`ssm_a`, `ssm_alpha`, `ssm_beta`, `ssm_conv1d`, `ssm_dt.bias`, `ssm_out`) distribuidos en 48 capas. Esta combinación es característica de las arquitecturas híbridas que intercalan atención completa con capas de espacio de estados para reducir el coste de contexto largo.
 
-La cuantización se realizó con una matriz de importancia (iMatrix) derivada de `unsloth/Qwen3.8-27B-GGUF/imatrix_unsloth.gguf` en el commit `4af51b3542f775b0a8e4b310bfb3f17e01c306c9`. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF/DPO en el modelo base. La model card tampoco documenta innovaciones de decodificación especulativa ni detalles de atención lineal más allá de la presencia de rutas SSM.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por preferencias en el modelo base. Las etiquetas `pi-adapted`, `harness-adapter`, `agents` y `mtp` indican que el modelo base fue adaptado para interacción agéntica con harness y posiblemente decodificación especulativa multi-token, pero no se aportan detalles técnicos sobre esos ajustes.
+
+La innovación destacable de esta publicación es la cuantización quirúrgica: las rutas recurrentes (`ssm_a`, `ssm_alpha`, `ssm_conv1d`, `ssm_dt.bias`) se mantienen en F32 (408 tensores observados), las proyecciones de atención de ciertas capas se elevan a Q5_K/Q6_K, y solo las proyecciones MLP densas se comprimen agresivamente con IQ3_S/IQ3_XXS. El resultado es un archivo de 13,31 GiB que preserva con mayor fidelidad los caminos sensibles del modelo híbrido.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno (pipeline `text-generation`, etiqueta `conversational`).
-- Orientación a flujos de agentes: la etiqueta `agents` y el soporte de la aplicación V-Agent sugieren uso en tareas con herramientas.
-- Compatibilidad con endpoints de tipo OpenAI/Claude (`endpoints_compatible`), lo que facilita integrarlo en clientes existentes.
-- Soporte de MCP (Model Context Protocol) y herramientas de agente a través de V-Agent (ejecución de comandos de shell, búsqueda web, navegador autónomo, peticiones HTTP).
-- Ejecución local mediante llama.cpp (CUDA, Vulkan, CPU) y motores alternativos como Strata y Strata Rust.
-- No se documentan capacidades de visión, audio, tool calling nativo ni modo de razonamiento explícito en la información disponible.
+- Generación de texto conversacional (`pipeline_tag: text-generation`, etiqueta `conversational`).
+- Uso agéntico: las etiquetas `agents` y `harness-adapter` indican adaptación para flujos de agente con herramientas.
+- Integración con herramientas y MCP: la model card promociona V-Agent, que expone herramientas de ficheros, shell, búsqueda web, navegador autónomo, peticiones HTTP y servidores MCP.
+- Compatibilidad con endpoints OpenAI/Claude: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse tras una API compatible.
+- Posible decodificación multi-token prediction (etiqueta `mtp`), aunque no se documenta su funcionamiento.
+- Capacidades multilingües: no disponible.
+- Visión, audio u otras modalidades: no disponible.
 
 ## Casos de uso
 
-- Asistente de escritorio con herramientas locales: mediante V-Agent, el modelo puede gestionar archivos con historial de versiones, ejecutar comandos de shell y realizar peticiones HTTP, con aprobación por acción y carpetas aisladas por chat. Es adecuado por su tamaño contenido (13,31 GiB en MiniPlus) y su formato GGUF listo para llama.cpp.
-- Automatización de tareas de navegación web: el agente puede operar un navegador autónomo para extraer información o completar formularios, gracias a la integración con MCP y a la compatibilidad con endpoints.
-- Despliegue local en estaciones de trabajo con GPU de consumo: la variante MicroPlus (9,77 GiB) permite ejecutar el modelo en GPUs con 12-16 GB de VRAM, útil para prototipado sin dependencia de la nube.
-- Integración en pipelines de CI/CD como generador de texto: la compatibilidad con endpoints OpenAI permite sustituir llamadas a API externas por un servidor local compatible, reduciendo costes y manteniendo la privacidad.
-- Asistencia conversacional en entornos con requisitos de privacidad: al ejecutarse localmente y no requerir cuenta ni telemetría en V-Agent, es adecuado para equipos que no pueden enviar datos a servicios externos.
-- Investigación sobre cuantización selectiva: el mapa de tensores por tensor y las protecciones F32 en rutas SSM lo convierten en un caso de estudio para evaluar el impacto de mezclas de precisión en modelos híbridos SSM/atención.
+- Agente local de escritorio: el modelo está pensado para ejecutarse dentro de V-Agent en Windows 10/11 con llama.cpp (CUDA, Vulkan o CPU), gestionando tareas de ficheros con historial de versiones, comandos de shell y peticiones HTTP con aprobación por acción. Su tamaño de 13,31 GiB permite cargarlo en equipos de consumo con GPU de gama alta.
+- Automatización de búsqueda y navegación: al soportar herramientas de búsqueda web y navegador autónomo, puede emplearse para recopilar información de páginas, resumirla y almacenarla en ficheros locales, siempre con confirmación humana de cada acción.
+- Asistencia de código en local: la validación de sintaxis y las comprobaciones de runtime HTML que ofrece V-Agent permiten usar el modelo para generar y verificar código sin salir del equipo, manteniendo el código fuente fuera de servicios en la nube.
+- Integración con servidores MCP: el modelo puede conectarse a servidores MCP para exponer herramientas internas de una organización (bases de datos, APIs internas) y orquestar llamadas multi-paso desde un cliente compatible.
+- Despliegue tras API compatible OpenAI/Claude: gracias a la etiqueta `endpoints_compatible`, puede servirse con un frontend que hable esos protocolos y usarse como backend de un asistente conversacional interno.
+- Experimentación con arquitecturas híbridas: investigadores interesados en modelos que combinan atención y SSM pueden usar esta cuantización para estudiar el comportamiento de las rutas recurrentes preservadas en F32 sin necesidad de clústeres de GPU.
+- Prototipado de flujos agénticos con presupuesto de VRAM ajustado: la serie APEX ofrece tres niveles (MiniPlus 13,31 GiB, NanoPlus 11,47 GiB, MicroPlus 9,77 GiB) para adaptar el modelo a distintas GPUs de consumo.
 
 ## Benchmarks y rendimiento
 
@@ -51,41 +55,43 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: MiniPlus 13,31 GiB, NanoPlus 11,47 GiB, MicroPlus 9,77 GiB (tamaños de archivo; la VRAM real depende del contexto y de los buffers de llama.cpp).
-- GPU recomendadas: no especificadas por el autor. Por tamaño, una RTX 4090 (24 GB) ejecuta cualquiera de las tres variantes con holgura; una RTX 4070 Ti (12 GB) o RTX 3060 (12 GB) puede ejecutar MicroPlus y NanoPlus con contexto moderado.
-- Cabe en GPU de consumo: sí, en las variantes NanoPlus y MicroPlus; MiniPlus requiere al menos 16 GB de VRAM para contexto corto.
-- Opciones de despliegue: llama.cpp (CUDA, Vulkan, CPU), Strata, Strata Rust y V-Agent (aplicación de escritorio para Windows 10/11).
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: el archivo MiniPlus ocupa 13,31 GiB, por lo que se recomienda un mínimo de 14-16 GiB de VRAM para cargarlo completo en GPU con contexto reducido; con contexto largo o KV cache grande, se necesitan 18-24 GiB.
+- Alternativas de menor huella de la misma familia: NanoPlus (11,47 GiB) y MicroPlus (9,77 GiB), útiles para GPUs de 12 GiB y 10-12 GiB respectivamente.
+- GPU recomendadas: NVIDIA RTX 4090 (24 GiB), RTX 3090 (24 GiB), RTX 4080 (16 GiB) para MiniPlus; GPUs de 12 GiB (RTX 3060 12 GB, RTX 4070) para NanoPlus; GPUs de 10-12 GiB para MicroPlus con contexto moderado.
+- Cabe en GPU de consumo: sí, en RTX 4090/3090 con holgura y en RTX 4080 con contexto limitado; en GPUs de 12 GiB conviene usar NanoPlus o MicroPlus.
+- Opciones de despliegue: llama.cpp (builds oficiales CUDA, Vulkan y CPU), Strata y Strata Rust (según la model card); V-Agent como frontend de agente en Windows; cualquier servidor compatible con GGUF y endpoints OpenAI/Claude.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Huella |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-pi-adapted-VAL-APEX-I-MiniPlus-V3 (este) | 27,32B | no disponible | apache-2.0 | GGUF | Cuantización selectiva con iMatrix; familia MiniPlus/NanoPlus/MicroPlus |
-| Qwen3.8-27B-pi-adapted-VAL-APEX-I-NanoPlus-V3 | 27,32B | no disponible | apache-2.0 | GGUF | 11,47 GiB, misma base, menor huella |
-| Qwen3.8-27B-pi-adapted-VAL-APEX-I-MicroPlus-V3 | 27,32B | no disponible | apache-2.0 | GGUF | 9,77 GiB, misma base, menor huella |
-| Modelo base `harness-hub/Qwen3.8-27B-pi-adapted` | 27,32B | no disponible | no disponible | safetensors (presumible) | Pesos sin cuantizar; referencia de calidad |
+| Qwen3.8-27B-pi-adapted VAL-APEX-I MiniPlus (este) | 27,3 B | no disponible | Apache 2.0 | GGUF | 13,31 GiB |
+| Qwen3.8-27B-pi-adapted VAL-APEX-I NanoPlus | 27,3 B | no disponible | Apache 2.0 | GGUF | 11,47 GiB |
+| Qwen3.8-27B-pi-adapted VAL-APEX-I MicroPlus | 27,3 B | no disponible | Apache 2.0 | GGUF | 9,77 GiB |
+| Modelo base `harness-hub/Qwen3.8-27B-pi-adapted` | 27,3 B | no disponible | no disponible | safetensors (presumiblemente) | no disponible |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a modelos de otros autores.
+No se dispone de información sobre benchmarks ni sobre modelos de otras familias comparables en la documentación proporcionada, por lo que la comparación se limita a las variantes de la misma serie APEX.
 
 ## Limitaciones y advertencias
 
-- No se documentan sesgos conocidos del modelo base ni del proceso de cuantización.
-- Riesgo de alucinación inherente a los modelos generativos; no hay evaluación publicada que lo cuantifique.
-- La cuantización selectiva con precisiones tan bajas (IQ3_XXS en `ffn_gate` de las capas 16-47) puede degradar la calidad respecto al modelo base; no se han publicado evaluaciones comparativas.
-- No se dispone de información sobre idiomas soportados; el rendimiento en castellano no está verificado.
-- Longitud de contexto no documentada; el uso con contextos largos puede verse limitado por la VRAM disponible.
-- La licencia apache-2.0 se aplica a esta distribución, pero la licencia del modelo base (`harness-hub/Qwen3.8-27B-pi-adapted`) no se detalla en la información proporcionada; conviene verificarla antes de uso comercial.
-- El autor indica que la cuantización se computó con fondos propios y clusters externos; no hay garantía de soporte ni mantenimiento continuado.
-- La aplicación V-Agent es específica de Windows 10/11; el uso en otros sistemas requiere llama.cpp u otros motores.
+- Es una cuantización, no un modelo original: la calidad final depende del modelo base y de las decisiones de cuantización del autor; las capas MLP comprimidas con IQ3_S/IQ3_XXS pueden degradar tareas que dependan de esas proyecciones.
+- Idiomas soportados no documentados: no se puede garantizar un rendimiento multilingüe adecuado sin evaluación previa.
+- Longitud de contexto no disponible: no se puede planificar el uso en tareas de contexto largo sin verificar experimentalmente el límite efectivo.
+- Riesgo de alucinación: inherente a los modelos generativos; en flujos agénticos con herramientas (shell, navegador, HTTP) una alucinación puede traducirse en acciones reales, por lo que la aprobación por acción que ofrece V-Agent es imprescindible.
+- Sesgos conocidos: no documentados en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar que el modelo base `harness-hub/Qwen3.8-27B-pi-adapted` mantiene la misma licencia y que no impone restricciones adicionales.
+- Procedencia de la iMatrix: la model card indica que se usó `unsloth/Qwen3.8-27B-GGUF/imatrix_unsloth.gguf` y que "la procedencia externa no se infiere", lo que implica que el autor no certifica el origen de esa matriz de importancia.
+- Modelo de un autor individual: la cuantización se computó con clústeres financiados de forma privada; no hay garantía de mantenimiento continuo ni de soporte.
+- Fecha de creación futura (2026-11-18): conviene verificar la autenticidad y vigencia del repositorio antes de integrarlo en producción.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-27B-pi-adapted-VAL-APEX-I-MiniPlus-V3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-27B-pi-adapted-VAL-APEX-I-MiniPlus-V3-GGUF
+- Modelo base: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
 - Variante NanoPlus: https://huggingface.co/IsValorum/Qwen3.8-27B-pi-adapted-VAL-APEX-I-NanoPlus-V3-GGUF
 - Variante MicroPlus: https://huggingface.co/IsValorum/Qwen3.8-27B-pi-adapted-VAL-APEX-I-MicroPlus-V3-GGUF
-- Modelo base: https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted
-- iMatrix utilizada: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF (commit `4af51b3542f775b0a8e4b310bfb3f17e01c306c9`)
-- Repositorio V-Agent: https://github.com/IsValorum/V-Agent
+- Matriz de importancia usada: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- V-Agent (frontend de agente): https://github.com/IsValorum/V-Agent
 - Descargas de V-Agent: https://github.com/IsValorum/V-Agent/releases/latest
 - Apoyo al autor: https://ko-fi.com/isvalorum

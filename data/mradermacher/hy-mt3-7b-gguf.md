@@ -2,94 +2,94 @@
 
 ## Resumen
 
-Hy-MT3-7B-GGUF es una redistribución en formato GGUF del modelo Hy-MT3-7B desarrollado por Tencent, publicada por el usuario mradermacher. Se trata de una conversión estática de los pesos originales a cuantizaciones de la familia GGUF (desde Q2_K hasta F16), pensada para su uso con motores de inferencia como llama.cpp u Ollama. El modelo base cuenta con 7.504.568.320 parámetros (aproximadamente 7,5 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio aptos para hardware de consumo.
+Hy-MT3-7B es un modelo de traduccion automatica neuronal desarrollado por Tencent, publicado originalmente en el repositorio `tencent/Hy-MT3-7B`. La version que nos ocupa, `mradermacher/Hy-MT3-7B-GGUF`, es una cuantizacion estatica en formato GGUF realizada por el usuario mradermacher, pensada para su uso con llama.cpp y herramientas compatibles. El modelo base cuenta con 7.504.568.320 parametros (aproximadamente 7,5 mil millones) y esta especializado en tareas de traduccion multilingue, con un pipeline declarado de `translation`.
 
-La relevancia de esta ficha radica en que el repositorio no aporta información propia sobre el modelo original: la model card se limita a indicar que se trata de una cuantización estática del modelo de Tencent y a listar los tipos de cuantización generados. No se han publicado en la información disponible datos sobre arquitectura interna, contexto, idiomas, licencia ni benchmarks, por lo que muchos campos de esta ficha deben marcarse como no disponibles.
+La relevancia de esta ficha radica en que ofrece una via practica para desplegar un modelo de traduccion de 7B en hardware de consumo, gracias a las cuantizaciones que van desde Q2_K (3,1 GB) hasta f16 (15,1 GB). El modelo base soporta un numero muy amplio de idiomas, segun la lista declarada en la model card (mas de 90 codigos ISO), lo que lo convierte en una opcion interesante para pipelines de traduccion multilingue con requisitos moderados de hardware.
 
-El interés práctico de esta publicación es la disponibilidad de pesos cuantizados listos para desplegar en entornos con recursos limitados, algo habitual en el ecosistema de mradermacher, que suele publicar conversiones de modelos recientes para facilitar su adopción local. No obstante, al no haber descargas ni likes registrados y al no documentarse la licencia, conviene evaluar el modelo original antes de usarlo en producción.
+No obstante, la informacion disponible sobre arquitectura interna, datos de entrenamiento, benchmarks y limites de contexto es muy limitada: la model card del repositorio GGUF solo documenta el proceso de cuantizacion y los ficheros generados, sin detallar las caracteristicas tecnicas del modelo original. Esta ficha refleja, por tanto, lo que se puede afirmar con rigor a partir de los datos proporcionados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 7.504.568.320 (aprox. 7,5 mil millones) |
+| Arquitectura | no disponible (modelo base de tipo transformer, segun convencion de la familia Hy-MT; no confirmado en la informacion) |
+| Parametros totales | 7.504.568.320 |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el original en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | mas de 90 codigos ISO declarados (zh, en, es, fr, de, ja, ko, ar, hi, ru, pt, it, nl, pl, tr, vi, th, id, ms, yue, entre otros) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base original esta en formato transformers/safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Hy-MT3-7B en la documentación proporcionada. El nombre sugiere un modelo de traducción automática (MT, del inglés *machine translation*) de la familia Hy de Tencent, pero este extremo no se confirma en la model card del repositorio GGUF. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo base `tencent/Hy-MT3-7B` en la documentacion proporcionada. Por el nombre y el pipeline declarado (`translation`), se trata de un modelo especializado en traduccion, con 7,5 mil millones de parametros, lo que lo situa en la categoria de modelos de traduccion de tamano medio. La model card del repositorio GGUF no incluye detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste supervisado.
 
-Lo único verificable es el proceso de conversión: la model card indica `convert_type: hf` y `quantize_version: 2`, lo que señala que los pesos se convirtieron desde el formato Hugging Face original mediante una herramienta de cuantización estática (probablemente llama.cpp). El campo `output_tensor_quantised: 1` confirma que los tensores de salida también se cuantizan. No se documentan innovaciones técnicas adicionales.
+El repositorio de mradermacher documenta exclusivamente el proceso de cuantizacion: se trata de cuantizaciones estaticas generadas a partir del modelo original, con la nota de que existen tambien cuantizaciones ponderadas/imatrix en `mradermacher/Hy-MT3-7B-i1-GGUF`. No se mencionan innovaciones tecnicas como decodificacion especulativa, atencion lineal ni modos de razonamiento extendido.
 
 ## Capacidades
 
-- Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está orientado a diálogo.
-- Traducción automática: el nombre del modelo base (Hy-MT3) sugiere capacidades de traducción, aunque no se detallan en la información disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de la infraestructura de Hugging Face.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se listan idiomas).
-- Capacidades especiales (modo thinking, visión, audio): no disponible.
+- Traduccion automatica multilingue entre mas de 90 idiomas, segun la lista de codigos declarada en la model card.
+- Traduccion bidireccional entre pares de idiomas de alta, media y baja resources (incluye idiomas como yue, ceb, war, bo, ug, sd, entre otros).
+- Generacion de texto conversacional: la etiqueta `conversational` aparece en los metadatos del repositorio.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de infraestructura de inferencia estandar.
+- No se documentan capacidades de tool calling, agentes, vision, audio ni modo de razonamiento explicito en la informacion disponible.
 
 ## Casos de uso
 
-- Traducción automática local: si el modelo base confirma su orientación a traducción, las cuantizaciones Q4_K_M o Q5_K_M permiten desplegar un traductor de 7,5 mil millones de parámetros en una GPU de consumo, útil para procesar documentos sin enviar datos a servicios externos.
-- Asistentes conversacionales en el borde: la etiqueta `conversational` y el tamaño de 7,5 mil millones permiten ejecutar un chatbot multi-turno en portátiles con GPU de 8-12 GB usando cuantizaciones Q4 o Q5.
-- Prototipado rápido con llama.cpp u Ollama: al estar en GGUF, se puede integrar en flujos de desarrollo local sin necesidad de infraestructura de servidor, ideal para validar ideas antes de escalar.
-- Procesamiento por lotes en CPU: las cuantizaciones Q2_K y Q3_K permiten ejecutar inferencia en CPU con memoria RAM moderada, adecuado para tareas de traducción o generación de texto no críticas en tiempo real.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece doce variantes de cuantización, lo que facilita estudios de degradación de calidad frente a tamaño para el modelo base.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse localmente, es apto para escenarios donde los datos no pueden salir de la organización, siempre que la licencia del modelo original lo permita (no confirmada).
+- Traduccion de documentacion tecnica multilingue: el modelo puede traducir manuales y guias entre los idiomas principales (en, es, fr, de, ja, zh) en pipelines por lotes, gracias a su tamano moderado y a las cuantizaciones Q4/Q5 que caben en GPU de consumo.
+- Localizacion de productos de software: integracion en un pipeline de CI/CD que traduzca ficheros de recursos (`.po`, `.json`, `.yaml`) a decenas de idiomas, usando la cuantizacion Q4_K_M (4,7 GB) en una unica GPU.
+- Atencion al cliente multilingue: traduccion en tiempo real de mensajes de soporte entre el idioma del cliente y el del agente, desplegando el modelo con llama.cpp o vLLM en un servidor con una RTX 4090 o A10.
+- Traduccion de contenidos editoriales: articulos, blogs y boletines en idiomas europeos y asiaticos, con revision humana posterior, aprovechando la licencia Apache 2.0 para uso comercial.
+- Subtitulado y transcripcion multilingue: traduccion de transcripciones generadas por ASR a varios idiomas destino en un pipeline por etapas, usando la cuantizacion Q6_K (6,3 GB) para maximizar calidad.
+- Investigacion en traduccion automatica de baja recursos: evaluacion del modelo en pares de idiomas poco representados (por ejemplo, yue-es, bo-en, ug-zh) gracias a la amplia cobertura declarada.
+- Traduccion offline en dispositivos: despliegue con llama.cpp en equipos con 8-16 GB de VRAM usando Q3_K_M o Q4_K_S, util para entornos sin conectividad o con requisitos de privacidad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (7,5 mil millones de parámetros):
-  - F16: aproximadamente 15 GB.
-  - Q8_0: aproximadamente 8 GB.
-  - Q6_K: aproximadamente 6,2 GB.
-  - Q5_K_M: aproximadamente 5,4 GB.
-  - Q4_K_M: aproximadamente 4,5 GB.
-  - Q3_K_M: aproximadamente 3,7 GB.
-  - Q2_K: aproximadamente 2,8 GB.
-- GPU recomendadas: para F16, una A100 40 GB o H100; para Q8_0, una RTX 4090 (24 GB) o A10G; para Q4_K_M, una RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB.
-- Cabe en GPU de consumo: sí, con cuantizaciones Q4_K_M o inferiores en tarjetas de 8-12 GB; las variantes Q2_K y Q3_K pueden ejecutarse incluso en CPU con 8-16 GB de RAM.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier motor compatible con GGUF; también puede servirse mediante endpoints de Hugging Face según la etiqueta del repositorio.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos, sin overhead de contexto):
+  - Q2_K: ~3,1 GB
+  - Q3_K_M: ~3,9 GB
+  - Q4_K_M: ~4,7 GB
+  - Q5_K_M: ~5,5 GB
+  - Q6_K: ~6,3 GB
+  - Q8_0: ~8,1 GB
+  - f16: ~15,1 GB
+- GPU recomendadas: RTX 3060 12 GB o superior para Q4/Q5; RTX 4090 24 GB para Q8_0 o f16 con contexto amplio; A10/A100/H100 para despliegues con concurrencia.
+- Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas usando Q4_K_S, Q4_K_M o Q5_K_S; en tarjetas de 6 GB solo con Q2_K o Q3_K_S.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; para el modelo base original, transformers, vLLM o TGI.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable, ya que no se conocen la arquitectura, el contexto ni los benchmarks del modelo base. Como referencia de categoría (modelos de ~7 mil millones de parámetros en GGUF), podrían considerarse alternativas como Mistral-7B, Llama-3-8B o Qwen2.5-7B, pero no se dispone de datos del Hy-MT3-7B para comparar parámetros, contexto, rendimiento ni licencia.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Hy-MT3-7B (GGUF, este repo) | 7,5 B | no disponible | Apache 2.0 | GGUF | Especializado en traduccion, >90 idiomas declarados |
+| tencent/Hy-MT3-7B (base) | 7,5 B | no disponible | Apache 2.0 | safetensors | Modelo original sin cuantizar |
+| Hy-MT3-7B-i1-GGUF | 7,5 B | no disponible | Apache 2.0 | GGUF (imatrix) | Variante con cuantizaciones ponderadas del mismo autor |
 
-| Modelo | Parámetros | Contexto | Licencia | Formato GGUF |
-|---|---|---|---|---|
-| Hy-MT3-7B | 7,5 mil millones | no disponible | no disponible | sí |
-| Mistral-7B | 7,2 mil millones | 8k-32k según versión | Apache 2.0 | sí |
-| Llama-3-8B | 8 mil millones | 8k | Llama 3 Community License | sí |
-| Qwen2.5-7B | 7,6 mil millones | 32k | Apache 2.0 (mayoría de variantes) | sí |
-
-Los datos de las alternativas son orientativos y deben verificarse en sus repositorios oficiales; no se han contrastado con la información proporcionada.
+No se dispone de informacion sobre otros modelos de traduccion comparables (por ejemplo, NLLB-200 o M2M-100) en los datos proporcionados, por lo que no se incluyen cifras comparativas de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible consultar la licencia del modelo original de Tencent antes de cualquier despliegue en producción.
-- Idiomas no documentados: se desconoce qué lenguas cubre el modelo, lo que impide garantizar calidad en traducción o generación multilingüe.
-- Contexto desconocido: sin datos sobre la ventana de contexto, no se puede planificar su uso en tareas que requieran documentos largos.
-- Riesgo de alucinación: inherente a los modelos generativos; no se han publicado evaluaciones de fiabilidad.
-- Sesgos: no documentados; al no conocerse el dataset de entrenamiento, no se pueden evaluar sesgos de género, culturales o lingüísticos.
-- Repositorio sin tracción: cero descargas y cero likes en el momento de la consulta, lo que reduce la validación comunitaria de la conversión.
-- Cuantizaciones agresivas: Q2_K y Q3_K pueden degradar notablemente la calidad; conviene validar con evaluaciones propias antes de usarlas.
-- Model card mínima: la documentación del repositorio no aporta información sobre el modelo base, por lo que cualquier decisión técnica debe basarse en la ficha del modelo original.
+- La model card del repositorio GGUF no documenta sesgos conocidos del modelo base; se desconoce su comportamiento en dominios sensibles.
+- Riesgo de alucinacion inherente a los modelos generativos: en traduccion puede producir omisiones, adiciones o cambios de sentido, especialmente en idiomas de bajos recursos.
+- No se especifica la longitud de contexto soportada, lo que impide garantizar el comportamiento en documentos largos.
+- La lista de idiomas declarada incluye mas de 90 codigos, pero no se aportan metricas de calidad por idioma; la calidad en idiomas de bajos recursos puede ser notablemente inferior.
+- La licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original en `tencent/Hy-MT3-7B` antes de desplegarlo en produccion.
+- Las cuantizaciones de baja calidad (Q2_K, Q3_K_M) pueden degradar la fidelidad de la traduccion; para produccion se recomienda Q5_K_M o superior.
+- No se documentan capacidades de tool calling ni de agentes, por lo que no debe asumirse su uso en pipelines agenticos sin validacion previa.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Hy-MT3-7B-GGUF
-- Modelo original: https://huggingface.co/tencent/Hy-MT3-7B
+- Modelo base: https://huggingface.co/tencent/Hy-MT3-7B
+- Cuantizaciones imatrix: https://huggingface.co/mradermacher/Hy-MT3-7B-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Hy-MT3-7B-GGUF
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

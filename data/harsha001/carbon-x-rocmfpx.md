@@ -2,96 +2,108 @@
 
 ## Resumen
 
-Carbon-X-ROCmFPX es una cuantización del modelo Carbon-X de HuggingFaceBio, un modelo de lenguaje de 14.822.046.720 parámetros (~14,8B) especializado en comprensión y generación de ADN. El modelo original está entrenado para recibir secuencias de ADN en bruto dentro de un mensaje de chat y responder en inglés sobre efectos de variantes, regiones reguladoras, grupos de organismos y predicción de bases siguientes. Esta versión concreta, publicada por el usuario Harsha001, aplica los formatos de cuantización ROCmFPX, un fork de llama.cpp con tipos de peso de bajo bit orientados a GPUs AMD (Vulkan y HIP/ROCm), con especial atención al hardware Strix Halo (`gfx1151`).
+Carbon-X-ROCmFPX es una cuantizacion no oficial del modelo HuggingFaceBio/Carbon-X, un modelo de lenguaje de 14.822.046.720 parametros (~14,8B) especializado en comprension y generacion de ADN. La publica el usuario Harsha001 bajo licencia Apache 2.0, empleando los formatos ROCmFPX, un fork de llama.cpp con tipos de peso de bajo bit optimizados para GPUs AMD mediante Vulkan y HIP/ROCm. El modelo base resuelve tareas de genomica: prediccion de efectos de variantes, regiones regulatorias, grupos de organismos y prediccion de bases siguientes a partir de secuencia cruda de ADN pegada en un mensaje de chat.
 
-La relevancia de esta ficha reside en que ilustra una cuantización de bajo bit para un modelo de dominio científico (genómica), un nicho donde la pérdida de fidelidad en la distribución de siguiente token puede ser crítica. El autor publica métricas de divergencia KL frente al modelo BF16 tanto en texto (WikiText-2) como en ADN humano (GRCh38), lo que permite evaluar el compromiso entre tamaño y calidad de forma cuantitativa. El archivo recomendado es el de 6 bits, que se mantiene cercano al original en ADN.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso poco comun de cuantizacion de bajo bit sobre un dominio cientifico donde la perdida de fidelidad es especialmente sensible. Por otro, el autor publica metricas de divergencia KL frente al modelo BF16 tanto en texto (WikiText-2) como en ADN humano (segmentos de 3.072 bases de los cromosomas 1 a 22 del genoma de referencia GRCh38), lo que permite evaluar el coste real de cada nivel de cuantizacion.
 
-Se trata de un artefacto GGUF que solo carga en una compilación ROCmFPX de llama.cpp; las herramientas estándar como llama.cpp upstream, LM Studio u Ollama no reconocen estos tipos. El autor advierte además que los archivos no se han probado todavía en hardware AMD real y que no es un lanzamiento oficial de Hugging Face Bio.
+El modelo solo carga en compilaciones ROCmFPX de llama.cpp; llama.cpp estandar, LM Studio y Ollama no reconocen estos tipos, por lo que para esos entornos debe usarse el GGUF oficial de Hugging Face Bio. El autor advierte ademas de que los ficheros no se han probado todavia en hardware AMD real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Carbon-X de HuggingFaceBio; transformer, detalles no especificados) |
+| Arquitectura | no disponible (modelo base Carbon-X de HuggingFaceBio; transformer, sin detalle en la informacion proporcionada) |
 | Parametros totales | 14.822.046.720 (~14,8B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 40.960 tokens (valor usado en el comando de ejemplo del autor con `-c 40960`) |
-| Tipos de cuantizacion | Q8_0_ROCMFPX (8 bits), Q6_0_ROCMFPX (6 bits, etiquetado como Q6_K en el nombre de archivo), Q4_0_ROCMFP4_STRIX (4 bits), Q4_0_ROCMFP4_FAST (4 bits); Q3_0_ROCMFPX no publicado |
-| Idiomas soportados | en (inglés) |
+| Longitud de contexto | 40.960 tokens (valor usado en el comando de ejemplo con `-c 40960`; no se confirma como maximo oficial) |
+| Tipos de cuantizacion | Q8_0_ROCMFPX (8 bits), Q6_0_ROCMFPX (6 bits, etiquetado como Q6_K en el nombre del fichero), Q4_0_ROCMFP4_STRIX (4 bits, receta para gfx1151), Q4_0_ROCMFP4_FAST (4 bits, un escalar por bloque) |
+| Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (tipos ROCmFPX propietarios del fork; token embedding y output en Q8_0 stock en los archivos de 4 bits) |
+| Formato de pesos | GGUF (tipos propietarios ROCmFPX; embeddings y tensor de salida en Q8_0 estandar en los ficheros de 4 bits) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base Carbon-X en la documentación proporcionada. Se sabe que es un modelo de 14,8B parámetros orientado a generación de texto y especializado en ADN, con un tokenizador híbrido que detecta secuencias de bases A/C/G/T en el prompt y las segmenta en tokens de 6 bases. El modelo fue post-entrenado y evaluado con el modo thinking desactivado, y las recomendaciones de muestreo del autor (temperatura 0,6, top-p 0,95, top-k 20, min-p 0) corresponden a los valores por defecto de Hugging Face Bio.
+No se dispone de informacion sobre la arquitectura interna del modelo base Carbon-X en la documentacion proporcionada: no se detalla si es un transformer denso, MoE o hibrido, ni el numero de tokens de entrenamiento, la composicion del dataset o si hubo RLHF/DPO. Lo que si se documenta es que Carbon-X fue post-entrenado y evaluado con el modo thinking desactivado, y que sus ajustes de muestreo por defecto son temperatura 0.6, top-p 0.95, top-k 20 y min-p 0.
 
-El proceso de cuantización documentado consta de cuatro pasos: conversión a BF16 con `convert_hf_to_gguf.py` del fork, generación de una importance matrix desde el modelo BF16 sobre texto de calibración general (`calibration_datav3`) en fragmentos de 512 tokens, cuantización con `llama-quantize --imatrix` (una ejecución por tipo, con `--token-embedding-type q8_0 --output-tensor-type q8_0` en los archivos de 4 bits) y evaluación de calidad expandiendo cada cuantizado de vuelta a F16 para puntuarlo con kernels F16 estándar en una GPU NVIDIA. El autor señala que los kernels CUDA propios del fork para estos tipos no son correctos en NVIDIA y por eso no se usaron.
+La innovacion tecnica destacable de esta publicacion es el soporte del tokenizador hibrido de ADN: el fork ROCmFPX integra el soporte de llama.cpp para el tokenizador de Carbon (PR upstream #30825), de modo que las secuencias de A/C/G/T en el prompt se etiquetan como ADN y se cortan automaticamente en tokens de 6 bases. El autor valida la equivalencia con el tokenizador Python de Hugging Face Bio sobre 9 cadenas de prueba (ejemplos de la model card, bases en minuscula, longitudes no multiplos de 6, codigos de ambiguedad como N, bloques separados por espacios, palabras cortas como "CAT", el formato de chat y 1.000 bases de ADN humano), obteniendo exactamente los mismos token ids.
+
+El proceso de cuantizacion fue: conversion a BF16 con `convert_hf_to_gguf.py`, generacion de una importance matrix desde el modelo BF16 en GPU sobre texto de calibracion general (`calibration_datav3`) en fragmentos de 512 tokens, y cuantizacion con `llama-quantize --imatrix`, una ejecucion por tipo. En los ficheros de 4 bits se forzo `--token-embedding-type q8_0 --output-tensor-type q8_0`; con esos tensores a 4 bits los ficheros eran 0,6 GB mas pequenos pero claramente peores (KLD en ADN 0,129 y same top 63,0%), por lo que no se publicaron. La evaluacion de calidad se hizo expandiendo cada cuantizacion de vuelta a F16 y puntuandola con kernels F16 estandar en GPU NVIDIA, usando como referencia el BF16 con kernels BF16 estandar.
 
 ## Capacidades
 
-- Comprensión de secuencias de ADN en bruto introducidas en un mensaje de chat, con respuesta en inglés.
-- Predicción de efectos de variantes (por ejemplo, cambios de una base por otra y su impacto en codones).
-- Identificación de regiones reguladoras y grupos de organismos.
-- Predicción de las bases siguientes en una secuencia.
-- Generación de texto conversacional en inglés.
-- Tokenizador híbrido DNA-aware: detección automática de tramos A/C/G/T y segmentación en tokens de 6 bases, con paridad verificada frente al tokenizador Python de Hugging Face Bio en 9 cadenas de prueba (bases en minúscula, longitudes no múltiplas de 6, códigos de ambigüedad como `N`, bloques separados por espacios, palabras cortas como "CAT", formato de chat y 1.000 bases de ADN humano).
-- Modo thinking desactivado por defecto (el modelo fue post-entrenado y evaluado sin thinking).
-- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso con agentes.
+- Generacion de texto y respuesta conversacional en ingles sobre entradas que incluyen secuencia cruda de ADN.
+- Prediccion de efectos de variantes (variant-effect prediction): el modelo identifica el cambio de base y su contexto, por ejemplo respondiendo que la variante cambia la posicion 21 de A a T, de modo que GAG pasa a GTG.
+- Analisis de regiones regulatorias del genoma.
+- Clasificacion o identificacion de grupos de organismos.
+- Prediccion de bases siguientes en una secuencia de ADN.
+- Tokenizacion automatica de ADN: las tiradas de A/C/G/T se detectan y segmentan en tokens de 6 bases sin preprocesado manual.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo ingles declarado.
+- Modo thinking: el modelo fue post-entrenado y evaluado con thinking desactivado; el comando de ejemplo lo desactiva explicitamente mediante `--chat-template-kwargs '{"enable_thinking": false}'`.
 
 ## Casos de uso
 
-- Anotación de variantes en pipelines de genómica clínica: el modelo recibe la secuencia contextual alrededor de una variante y devuelve una descripción en inglés del cambio de base y su efecto sobre el codón, como muestra el ejemplo del autor con la variante `CCTGAGGAG` a `CCTGTGGAG`.
-- Exploración de regiones reguladoras: dado un fragmento genómico, el modelo puede señalar si corresponde a una región reguladora y describirla, útil para triaje previo en estudios de regulación génica.
-- Clasificación de organismos a partir de secuencias: integrado en un script que envía fragmentos de ADN al servidor llama.cpp y recoge la respuesta en inglés para agrupar secuencias por grupo taxonómico aproximado.
-- Predicción de siguiente base para validación de ensamblados: el modelo puede puntuar la plausibilidad de una secuencia y detectar tramos anómalos comparando la predicción con la base real.
-- Asistente de investigación en bioinformática: interfaz conversacional donde el investigador pega ADN en bruto y pregunta en inglés sobre efectos, regiones o contexto, con contexto de hasta 40.960 tokens para secuencias largas.
-- Despliegue en estaciones de trabajo con GPU AMD: al usar el fork ROCmFPX con backend Vulkan o HIP, el modelo puede ejecutarse en GPUs AMD (orientado a Strix Halo `gfx1151` y RX 7900 `gfx1100`) sin depender de CUDA, en un entorno local con datos genómicos sensibles.
-- Evaluación comparativa de cuantizaciones: los archivos publicados permiten medir el impacto de la cuantización en un dominio científico concreto usando las métricas de KLD y same-top proporcionadas.
+- Anotacion de variantes en pipelines de genomica clinica: se pega la secuencia flanqueante de una variante en un mensaje de chat y el modelo devuelve en ingles el cambio de base y el contexto local, lo que permite un primer triaje automatizado antes de la revision por un genetista.
+- Exploracion de regiones regulatorias: dado un fragmento genomico, el modelo puede describir si la region presenta caracteristicas regulatorias, util para priorizar candidatos en estudios de expresion genica.
+- Prediccion de bases para validacion de ensamblados: el modelo estima la siguiente base en una secuencia, lo que sirve como senal auxiliar para detectar discontinuidades o errores en ensamblados de novo.
+- Clasificacion taxonomica preliminar de fragmentos: a partir de secuencia cruda, el modelo puede inferir el grupo de organismo al que probablemente pertenece el fragmento, util en metagenomica como filtro rapido.
+- Asistente conversacional para biologos sin experiencia en PLN: al aceptar ADN pegado directamente en el chat y responder en ingles, reduce la barrera de entrada frente a pipelines bioinformaticos tradicionales.
+- Despliegue en estaciones de trabajo con GPU AMD: los ficheros de 4 bits (8,7 GB) estan pensados para caber y ejecutarse en una maquina con Strix Halo (gfx1151) o RX 7900 (gfx1100) mediante el fork ROCmFPX con backend Vulkan o HIP, lo que permite mantener el flujo genomico en local sin depender de la nube.
+- Evaluacion comparativa de cuantizaciones en dominio cientifico: los datos de KLD en texto y ADN permiten a un equipo decidir entre Q8_0 (15,3 GB), Q6_0 (12,2 GB) y las variantes de 4 bits (8,7 GB) segun su presupuesto de memoria y su tolerancia a la perdida de fidelidad.
 
 ## Benchmarks y rendimiento
 
-El autor no publica resultados de benchmarks de precisión (MMLU, HumanEval, GSM8K u otros); indica explícitamente que las métricas miden cuánto cambia cada archivo las predicciones del modelo, no la exactitud en benchmarks. Se presentan las métricas de fidelidad frente a BF16:
+No se han publicado resultados de benchmarks de accuracy (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El autor lo indica explicitamente: las metricas miden cuanto cambia cada fichero las predicciones del modelo, no la precision en tareas.
 
-| Archivo | Tamano | KLD texto | Same top texto | KLD ADN | Same top ADN |
+Metricas de fidelidad frente al BF16 (perplejidad BF16: 9,2710 en WikiText-2; 1446,4 en ADN humano):
+
+| Fichero | Tamano | KLD texto | Same top texto | KLD ADN | Same top ADN |
 |---|---:|---:|---:|---:|---:|
-| `Carbon-X-Q8_0_ROCMFPX.gguf` | 15,3 GB | 0,0032 | 97,24% | 0,0238 | 79,54% |
-| `Carbon-X-Q6_K_ROCMFPX.gguf` (recomendado) | 12,2 GB | 0,0084 | 95,57% | 0,0290 | 78,72% |
-| `Carbon-X-Q4_0_ROCMFP4_STRIX.gguf` | 8,7 GB | 0,0721 | 88,78% | 0,0968 | 71,85% |
-| `Carbon-X-Q4_0_ROCMFP4_FAST.gguf` | 8,7 GB | 0,0734 | 88,68% | 0,0963 | 72,01% |
-| `Q4_K_M` stock (referencia) | 9,6 GB | 0,0334 | no disponible | 0,0486 | no disponible |
-| `Q3_0_ROCMFPX` (no publicado) | 8,5 GB | 0,134 | no disponible | 0,169 | no disponible |
+| Carbon-X-Q8_0_ROCMFPX.gguf | 15,3 GB | 0,0032 | 97,24% | 0,0238 | 79,54% |
+| Carbon-X-Q6_K_ROCMFPX.gguf | 12,2 GB | 0,0084 | 95,57% | 0,0290 | 78,72% |
+| Carbon-X-Q4_0_ROCMFP4_STRIX.gguf | 8,7 GB | 0,0721 | 88,78% | 0,0968 | 71,85% |
+| Carbon-X-Q4_0_ROCMFP4_FAST.gguf | 8,7 GB | 0,0734 | 88,68% | 0,0963 | 72,01% |
+| Q4_K_M estandar (referencia) | 9,6 GB | 0,0334 | no disponible | 0,0486 | no disponible |
+| Q3_0_ROCMFPX (no publicado) | 8,5 GB | 0,134 | no disponible | 0,169 | no disponible |
 
-Referencias de perplejidad del modelo BF16: 9,2710 en WikiText-2 (40 fragmentos de 512 tokens) y 1446,4 en ADN humano (42 segmentos de 3.072 bases de cromosomas 1 a 22 de GRCh38, fragmentos de 512 tokens).
+El autor recomienda empezar por Q6_0_ROCMFPX por su cercania al original en ADN. Senala que un Q4_K_M estandar fabricado con la misma importance matrix y los mismos tensores de embedding y salida en Q8_0 pierde aproximadamente la mitad que los ficheros de 4 bits ROCmFPX, por lo que si se necesita 4 bits sin requerir los tipos ROCmFPX conviene usar el `carbon-x-q4_k_m.gguf` oficial de Hugging Face Bio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente el tamaño del archivo más overhead de contexto. El Q6 recomendado ocupa 12,2 GB; el Q8, 15,3 GB; los Q4, 8,7 GB cada uno.
-- GPU recomendadas: el fork está orientado a GPUs AMD con backend Vulkan o HIP/ROCm, con objetivos documentados `gfx1151` (Strix Halo) y `gfx1100` (RX 7900). No se documentan requisitos para NVIDIA u otras marcas.
-- Cabe en GPU de consumo: sí, los archivos de 4 bits (8,7 GB) y el de 6 bits (12,2 GB) caben en GPUs de consumo con suficiente VRAM; el de 8 bits (15,3 GB) requiere una GPU de gama alta o mayor.
-- Opciones de despliegue: exclusivamente compilaciones ROCmFPX de llama.cpp (`llama-server`), con `-DGGML_VULKAN=ON` o `-DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1151`. No funcionan en llama.cpp upstream, LM Studio ni Ollama; para esas herramientas debe usarse `HuggingFaceBio/Carbon-X-GGUF`.
-- Latencia y throughput: no disponibles. El autor advierte que los archivos no se han probado todavía en hardware AMD real, por lo que no hay cifras de rendimiento en el hardware objetivo.
+- VRAM estimada: 15,3 GB para Q8_0, 12,2 GB para Q6_0 y 8,7 GB para los dos ficheros de 4 bits, solo para pesos; hay que anadir la memoria de la cache KV para el contexto configurado (el ejemplo usa 40.960 tokens).
+- GPUs objetivo: AMD con soporte Vulkan o HIP/ROCm. El autor compila para `gfx1151` (Strix Halo) y cita `gfx1100` (RX 7900) como alternativa. No se mencionan A100, H100 ni RTX 4090 como destino de estos ficheros.
+- Cabe en GPU de consumo: si, en el caso de las Radeon RX 7900 y en APUs Strix Halo con memoria unificada; los 8,7 GB de los ficheros de 4 bits son el escenario mas ajustado.
+- Nota critica: el autor advierte que los ficheros no se han probado todavia en hardware AMD.
+- Despliegue: exclusivamente mediante el fork ROCmFPX de llama.cpp (repositorio HarshaVardhan3002/ROCmFPX), compilado con `-DGGML_VULKAN=ON` o con `-DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1151`, y lanzado con `llama-server`. No compatible con llama.cpp estandar, LM Studio ni Ollama.
+- Parametros de ejecucion recomendados: `-ngl 999 -c 40960 --jinja --chat-template-kwargs '{"enable_thinking": false}' --temp 0.6 --top-p 0.95 --top-k 20 --min-p 0`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Carbon-X-ROCmFPX (esta ficha) | 14,8B | 40.960 tokens (uso documentado) | GGUF ROCmFPX | apache-2.0 | Solo carga en fork ROCmFPX; métricas de KLD publicadas |
-| Carbon-X-GGUF (HuggingFaceBio) | 14,8B | no disponible | GGUF stock | apache-2.0 | Compatible con llama.cpp, LM Studio y Ollama; alternativa recomendada para 4 bits |
-| Carbon-X (BF16 original) | 14,8B | no disponible | safetensors | apache-2.0 | Referencia de calidad; requiere más VRAM |
+| Carbon-X-ROCmFPX (esta ficha) | 14,8B | 40.960 (segun ejemplo) | GGUF ROCmFPX | Apache 2.0 | Requiere fork de llama.cpp; orientado a AMD; sin probar en AMD |
+| HuggingFaceBio/Carbon-X (BF16 original) | 14,8B | no disponible | safetensors/BF16 | Apache 2.0 | Referencia de calidad; perplejidad BF16 9,2710 en texto y 1446,4 en ADN |
+| HuggingFaceBio/Carbon-X-GGUF | 14,8B | no disponible | GGUF estandar | Apache 2.0 | Compatible con llama.cpp, LM Studio y Ollama; incluye `carbon-x-q4_k_m.gguf` |
+| Q4_K_M estandar (misma receta) | 14,8B | no disponible | GGUF estandar | Apache 2.0 | 9,6 GB; KLD texto 0,0334 y ADN 0,0486, mejor que los 4 bits ROCmFPX |
 
-No se dispone de información sobre otros modelos comparables de genómica en la documentación proporcionada.
+No se dispone de informacion sobre otros modelos genomicos comparables en la documentacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo carga en una compilación ROCmFPX de llama.cpp; llama.cpp upstream, LM Studio y Ollama no reconocen los tipos ROCmFPX.
-- Los archivos no se han probado en hardware AMD real; el rendimiento y la corrección en GPU AMD son desconocidos, aunque el autor señala que los kernels AMD pueden dar resultados ligeramente distintos por el orden de las operaciones.
-- No es un lanzamiento oficial de Hugging Face Bio; todo el crédito del modelo corresponde a sus autores.
-- Los archivos de 4 bits pierden claramente más calidad en ADN que el de 6 bits (KLD ADN 0,0968 frente a 0,0290); para 4 bits sin necesidad de ROCmFPX, el `Q4_K_M` stock de Hugging Face Bio es mejor opción (KLD ADN 0,0486).
-- El modelo solo soporta inglés; las respuestas sobre ADN se dan en inglés.
-- Riesgo de alucinación en un dominio donde la secuencia de ADN en bruto es casi aleatoria y el modelo rara vez está seguro del siguiente token; el propio autor señala que el "same top" es bajo incluso en 8 bits.
-- No se han medido benchmarks de exactitud; las métricas publicadas miden fidelidad frente a BF16, no corrección científica.
-- El modelo fue post-entrenado y evaluado con thinking desactivado; activar thinking puede degradar el comportamiento esperado.
-- Licencia apache-2.0: permite uso comercial, pero debe verificarse el cumplimiento de las condiciones aplicables al modelo base.
+- No es una release oficial de Hugging Face Bio; todo el credito del modelo corresponde a sus autores.
+- Los ficheros solo cargan en una compilacion ROCmFPX de llama.cpp. llama.cpp estandar, LM Studio y Ollama no reconocen estos tipos.
+- Los ficheros no se han probado en hardware AMD, pese a estar disenados para ello.
+- El fichero de 6 bits se llama `Q6_K_ROCMFPX` por conveniencia de listado en Hugging Face, pero sus pesos son del tipo `Q6_0_ROCMFPX`, no un `Q6_K` estandar, y requiere el mismo fork.
+- Las metricas publicadas miden divergencia respecto al BF16, no precision en tareas; no hay benchmarks de accuracy.
+- Los ficheros de 4 bits pierden claramente mas fidelidad en ADN que en texto (KLD 0,0968 frente a 0,0721), y el autor recomienda Q6_0 para trabajo genomico.
+- En ADN, el "same top" es bajo incluso para el fichero de 8 bits (79,54%) porque la secuencia genomica cruda es casi aleatoria; debe compararse la KLD, no esa metrica.
+- Solo ingles declarado; no hay soporte multilingue documentado.
+- Riesgo de alucinacion: no se documenta de forma especifica, pero es un modelo generativo de dominio cientifico y sus salidas no deben usarse como sustituto de validacion experimental o clinica.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Licencia Apache 2.0, que permite uso comercial; no obstante, la licencia del modelo base y las condiciones de los tipos ROCmFPX deben verificarse por separado antes de un despliegue en produccion.
+- El contexto maximo real no se confirma; los 40.960 tokens proceden del comando de ejemplo y no de una especificacion oficial.
 
 ## Enlaces
 
@@ -99,6 +111,6 @@ No se dispone de información sobre otros modelos comparables de genómica en la
 - Modelo base: https://huggingface.co/HuggingFaceBio/Carbon-X
 - GGUF oficial del modelo base: https://huggingface.co/HuggingFaceBio/Carbon-X-GGUF
 - Fork ROCmFPX (repositorio del autor): https://github.com/HarshaVardhan3002/ROCmFPX
-- Fork ROCmFPX (referencia): https://github.com/charlie12345/ROCmFPX
-- PR de soporte del tokenizador híbrido de ADN en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/30825
-- Issue de referencia sobre escalas de tensor: https://github.com/cha (enlace incompleto en la información proporcionada)
+- ROCmFPX (repositorio de referencia): https://github.com/charlie12345/ROCmFPX
+- PR de llama.cpp con soporte del tokenizador de ADN de Carbon: https://github.com/ggml-org/llama.cpp/pull/30825
+- Modelo destacado del autor (DeepSeek-V4.1-Flash en Strix Halo): https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-StrixHalo-GGUF

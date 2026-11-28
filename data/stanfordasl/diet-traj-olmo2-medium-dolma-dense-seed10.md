@@ -2,101 +2,95 @@
 
 ## Resumen
 
-`diet-traj-olmo2-medium-dolma-dense-seed10` es un checkpoint de preentrenamiento desde cero de un modelo con arquitectura OLMo2 de aproximadamente 305 millones de parametros, publicado por el grupo stanfordasl dentro del proyecto DIET de analisis en el espacio de pesos (weight-space). No es un modelo pensado para uso en produccion ni para tareas de inferencia general, sino una pieza de un conjunto de trayectorias de entrenamiento que permite estudiar como evolucionan los pesos y las capacidades a lo largo del preentrenamiento. Forma parte de una coleccion en la que solo cambia la semilla aleatoria entre ejecuciones, lo que facilita comparaciones controladas.
+`diet-traj-olmo2-medium-dolma-dense-seed10` es un checkpoint de preentrenamiento desde cero con arquitectura OLMo2, desarrollado por el grupo `stanfordasl` dentro del proyecto DIET de análisis del espacio de pesos (weight-space). No es un modelo destinado a producción ni a uso conversacional: es una pieza de un conjunto de trayectorias de entrenamiento cuyo objetivo es estudiar cómo evolucionan los pesos y las métricas a lo largo del preentrenamiento, variando únicamente la semilla aleatoria entre ejecuciones. En este caso concreto se trata de la semilla 10 sobre datos Dolma v1.7.
 
-El modelo usa la arquitectura OLMo2 densa con `hidden_size=768`, `intermediate_size=3072`, 16 capas, 12 cabezas de atencion y 12 cabezas KV (atencion multi-cabeza clasica, sin GQA), con una longitud maxima de posiciones de 2048 tokens. Se entreno sobre `emozilla/dolma-v1_7-3B`, un espejo en Hugging Face de Dolma v1.7 muestreado proporcionalmente entre sus componentes, con un presupuesto de 2.000 millones de tokens y 30.517 pasos, guardando checkpoints cada 100 pasos.
+El modelo tiene aproximadamente 305 millones de parámetros (305.185.536 según los pesos en safetensors), con `hidden_size=768`, 16 capas, 12 cabezas de atención y 12 cabezas KV, lo que lo sitúa en la gama pequeña de la familia OLMo2. Se entrenó con un presupuesto de 2.000 millones de tokens (2B) sobre el mirror de Hugging Face `emozilla/dolma-v1_7-3B`, con un máximo de 30.517 pasos y checkpoints cada 100 pasos.
 
-Su relevancia es metodologica: permite reproducir y analizar trayectorias de entrenamiento (incluyendo fenomenos como cambios de fase, formacion de circuitos o dinamica de representaciones) sobre la arquitectura OLMo2 y el corpus Dolma, extendiendo trabajos previos realizados con Pythia. La licencia Apache 2.0 y el formato bf16 safetensors facilitan su reutilizacion en investigacion.
+Su relevancia es metodológica más que de rendimiento: proporciona curvas de pérdida, métricas de validación y pesos intermedios en formato bf16 safetensors para reproducir análisis de dinámica de entrenamiento. La licencia Apache 2.0 y el formato estándar de `transformers` facilitan su reutilización en experimentos de investigación.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | OLMo2 densa (transformer decoder-only) |
-| Parametros totales | ~305M |
+| Arquitectura | OLMo2 (transformer decoder-only denso) |
+| Parametros totales | 305.185.536 (~305M) |
 | Parametros activos | no aplica (modelo denso) |
-| Longitud de contexto | 2048 tokens (`max_position_embeddings`) |
-| Tipos de cuantizacion | no disponible (pesos publicados en bf16 safetensors) |
-| Idiomas soportados | ingles (`en`) |
+| Longitud de contexto | 2.048 tokens (`max_position_embeddings=2048`) |
+| Tipos de cuantizacion | no disponible (pesos publicados en bf16 safetensors; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (bf16), solo pesos |
-| Dimension oculta | 768 |
-| Dimension intermedia | 3072 |
-| Numero de capas | 16 |
-| Cabezas de atencion / KV | 12 / 12 |
-| Dataset de entrenamiento | `emozilla/dolma-v1_7-3B` (streamed) |
-| Presupuesto de tokens | 2.000.000.000 |
-| Pasos de entrenamiento | 30.517 (`max_steps`) |
-| Cadencia de checkpoints | cada 100 pasos (`save_steps`) |
-| Optimizador | AdamW, lr=3e-5, betas (0.9, 0.95), weight decay 0.1 |
-| Precision de entrenamiento | bf16 |
-| Hardware de entrenamiento | H100 (cluster "makau") |
-| Semilla | 10 |
+| Formato de pesos | safetensors (bf16), ramas `stepN` por checkpoint; tokenizer en `main` |
+
+Otros parámetros de configuración: `intermediate_size=3072`, `num_hidden_layers=16`, `num_attention_heads=12`, `num_key_value_heads=12`.
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only denso con la configuracion OLMo2 definida en `configs/model/olmo2_medium_dense.yaml` del repositorio `jjalora/diet-lm`: 16 capas, `hidden_size=768`, `intermediate_size=3072`, 12 cabezas de atencion con 12 cabezas KV (sin grouped-query attention), y ventana de posiciones de 2048 tokens. No emplea mezcla de expertos ni mecanismos hibridos; es un transformer clasico con atencion completa.
+La arquitectura es un transformer decoder-only denso de la familia OLMo2, definido en `configs/model/olmo2_medium_dense.yaml` del repositorio `jjalora/diet-lm`. Con 16 capas, dimensión oculta de 768 y FFN de 3072, el modelo sigue el diseño convencional de atención multi-cabeza con 12 cabezas de consulta y 12 de clave/valor (sin GQA), y una ventana máxima de 2.048 posiciones.
 
-El entrenamiento consistio en preentrenamiento puro con perdida de entropia cruzada sobre lenguaje (`distillation.teacher_schedule=none` en `src/run_distillation.py`), es decir, sin destilacion ni profesor, pese al nombre del script. Se uso AdamW con learning rate 3e-5, betas (0.9, 0.95), weight decay 0.1 y schedule coseno, en bf16, sobre GPU H100. Los datos se transmitieron en streaming desde `emozilla/dolma-v1_7-3B` (sin pre-empaquetado), con un presupuesto total de 2.000 millones de tokens repartidos en 30.517 pasos. La unica diferencia respecto a otras ejecuciones de la coleccion es la semilla aleatoria (seed 10), lo que convierte este checkpoint en una replica controlada para estudiar variabilidad de trayectorias.
+El entrenamiento es preentrenamiento puro con pérdida de entropía cruzada sobre lenguaje (`distillation.teacher_schedule=none` en `src/run_distillation.py`, es decir, sin destilación efectiva). Se usó AdamW con `lr=3e-5`, betas `(0.9, 0.95)`, weight decay `0.1`, schedule coseno y precisión bf16. Los datos provienen de `emozilla/dolma-v1_7-3B`, un mirror nativo de Hugging Face de Dolma v1.7 muestreado proporcionalmente entre sus componentes, y se consumieron en streaming desde el Hub. El presupuesto total fue de 2.000 millones de tokens con `max_steps=30517` y guardado cada 100 pasos, ejecutado en GPUs H100 (clúster `makau`, job 10838). La única diferencia respecto a otras ejecuciones de la colección es la semilla aleatoria (seed 10), lo que convierte a este checkpoint en una réplica controlada para estudiar variabilidad de trayectorias.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva basica en ingles, derivada del preentrenamiento con perdida LM.
-- Modelado de lenguaje y evaluacion de perplejidad sobre corpus en ingles.
-- Analisis de trayectorias de entrenamiento: los checkpoints por paso (`stepN`) permiten estudiar la evolucion de pesos, activaciones y representaciones internas.
-- Comparacion controlada entre semillas dentro del proyecto DIET (misma receta, distinto seed).
-- Extraccion de representaciones internas (hidden states) para investigacion de interpretabilidad.
-- No dispone de tool calling, function calling, capacidades de agente, vision, audio ni modo de razonamiento explicito.
-- Capacidad multilingue limitada al ingles segun la model card.
+- Generación de texto autoregresiva básica en inglés, limitada por el tamaño del modelo y el presupuesto de entrenamiento (2B tokens).
+- Modelado de lenguaje y cálculo de perplejidad, útil como referencia en experimentos de dinámica de entrenamiento.
+- Checkpoints intermedios accesibles mediante revisiones `stepN`, lo que permite analizar la evolución de representaciones y pesos.
+- No se documenta soporte de tool calling ni function calling.
+- No se documenta soporte de agentes ni razonamiento multi-paso.
+- No se documenta capacidad multilingüe más allá del inglés.
+- No dispone de modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Investigacion de dinamica de entrenamiento: cargar checkpoints intermedios de la rama `stepN` para medir la evolucion de la perdida, la norma de pesos o la geometria de representaciones a lo largo de los 30.517 pasos.
-- Estudios de reproducibilidad y varianza entre semillas: comparar esta ejecucion (seed 10) con las demas semillas de la coleccion para cuantificar cuanto varia una misma receta de preentrenamiento.
-- Interpretabilidad de circuitos en modelos pequenos: con 16 capas y 768 dimensiones oculta, el modelo es manejable para analisis de attention heads, probing lineal y activaciones en una sola GPU.
-- Analisis en el espacio de pesos (weight-space): el proyecto DIET se centra en estudiar como se organizan los pesos; este checkpoint sirve como punto de muestreo de una trayectoria completa.
-- Evaluacion de corpus Dolma: al entrenarse sobre `emozilla/dolma-v1_7-3B`, permite estudiar el efecto de esa mezcla de datos en un modelo de ~305M de parametros.
-- Docencia y experimentacion en preentrenamiento: receta completa y reproducible (AdamW, lr, schedule, presupuesto de tokens) para cursos o laboratorios sobre entrenamiento de LLM a pequena escala.
-- Baseline para comparaciones con Pythia u otras trayectorias: la coleccion extiende el espiritu de `jjalora/diet-traj-pythia-410m-*` a la arquitectura OLMo2, permitiendo contrastes entre arquitecturas sobre datos comparables.
+- Investigación en dinámica de entrenamiento: cargar distintas revisiones `stepN` y comparar la evolución de pesos, activaciones y pérdida entre semillas para estudiar estabilidad del preentrenamiento.
+- Análisis de weight-space: usar los pesos finales e intermedios como sustrato para técnicas de interpolación, pruning o merging experimental, aprovechando que solo varía la semilla.
+- Reproducibilidad de recetas: validar la receta OLMo2 medium densa sobre Dolma con `lr=3e-5`, AdamW y schedule coseno, comparando las curvas de `training_loss.csv` y `eval_metrics.csv`.
+- Baseline de perplejidad: emplear `eval_perplexity` y `eval_bits_per_token` como referencia para modelos pequeños entrenados con presupuestos similares de 2B tokens.
+- Docencia y experimentación académica: modelo de 305M parámetros que cabe en una sola GPU consumer y permite reproducir experimentos de preentrenamiento a pequeña escala.
+- Estudio de sesgos de corpus: analizar cómo Dolma v1.7 moldea el comportamiento lingüístico de un modelo pequeño en distintas etapas del entrenamiento.
+- Punto de partida para fine-tuning controlado: al ser un checkpoint OLMo2 estándar en `transformers`, puede servir como inicialización en experimentos de adaptación con datos propios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta métricas internas de entrenamiento y validación (`eval_loss`, `eval_perplexity`, `eval_accuracy`, `eval_bits_per_token`) en `eval_metrics.csv` y `metrics.json`, sin valores numéricos concretos en la información proporcionada.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 0,6-0,7 GB solo para pesos (~305M parametros a 2 bytes), mas overhead de activaciones y cache KV; en la practica cabe holgadamente en cualquier GPU consumer moderna.
-- VRAM estimada en fp32: alrededor de 1,2-1,3 GB para pesos.
-- GPU recomendadas: cualquier GPU con al menos 4-8 GB de VRAM es suficiente; el entrenamiento original se realizo en H100, pero la inferencia no requiere hardware de datacenter.
-- Cabe en GPU consumer: si, en tarjetas como RTX 3060, RTX 4060, RTX 4090 o equivalentes, e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: `transformers` (libreria declarada), y por compatibilidad de arquitectura OLMo2, potencialmente llama.cpp, Ollama o vLLM si convierten los pesos; no se documenta soporte explicito en la informacion disponible.
-- Latencia y throughput: no disponibles en la informacion proporcionada; por tamano, se espera inferencia muy rapida en GPU consumer, pero no hay cifras publicadas.
+- VRAM estimada para inferencia en bf16: aproximadamente 0,6 GB solo para pesos (305M parámetros × 2 bytes), más overhead de activaciones y caché KV; en la práctica, menos de 2 GB con contexto completo de 2.048 tokens.
+- VRAM estimada en fp32: aproximadamente 1,2 GB solo para pesos.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; H100/A100 sobredimensionadas para inferencia, pero fueron las usadas en entrenamiento.
+- Cabe holgadamente en GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU con suficiente memoria compartida.
+- Opciones de despliegue: `transformers` (librería declarada), y en principio compatible con `vLLM`, `TGI`, `llama.cpp` u `Ollama` si se generan los pesos en los formatos correspondientes, aunque no se documenta ninguna conversión oficial.
+- Latencia y throughput: no disponibles en la información proporcionada.
+
+Nota: el repositorio ocupa 372,3 GB por la acumulación de checkpoints en ramas `stepN`; conviene descargar solo la revisión necesaria.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Datos | Licencia | Proposito |
-|---|---|---|---|---|---|
-| diet-traj-olmo2-medium-dolma-dense-seed10 | ~305M | 2048 | Dolma v1.7 (2B tokens) | Apache 2.0 | Trayectorias de entrenamiento |
-| jjalora/diet-traj-pythia-410m-* (coleccion referenciada) | ~410M | no disponible en la informacion | no disponible | no disponible | Trayectorias de entrenamiento |
-| OLMo2 (familia oficial) | tamanos mayores (no especificados aqui) | no disponible | Dolma | Apache 2.0 | Modelo de proposito general |
+| Modelo | Parametros | Contexto | Licencia | Enfoque |
+|---|---|---|---|---|
+| diet-traj-olmo2-medium-dolma-dense-seed10 | ~305M | 2.048 | Apache 2.0 | Checkpoint de investigación (trayectoria) |
+| OLMo-2-0425-1B (AllenAI) | ~1B | no disponible en la información | Apache 2.0 | Modelo OLMo2 publicado para uso general |
+| Pythia-410M (EleutherAI) | ~410M | 2.048 | Apache 2.0 | Suite de checkpoints para interpretabilidad |
+| diet-traj-pythia-410m-* (jjalora) | ~410M | 2.048 | no disponible en la información | Colección análoga de trayectorias sobre Pythia |
 
-La comparacion cuantitativa de rendimiento con alternativas no esta disponible: no se han publicado benchmarks para este checkpoint ni se detallan metricas de la coleccion Pythia en la informacion proporcionada.
+La comparación se limita a parámetros, contexto y licencia; no hay datos de benchmarks disponibles para establecer comparaciones de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion: no esta ajustado con instrucciones (no es instruct/chat) y no debe usarse como asistente conversacional en produccion.
-- Entrenado unicamente en ingles; el rendimiento en castellano u otros idiomas sera deficiente.
-- Contexto limitado a 2048 tokens, insuficiente para tareas de contexto largo.
-- Riesgo elevado de alucinacion y de generacion de texto incoherente, propio de un modelo de ~305M de parametros con solo 2.000 millones de tokens de entrenamiento.
-- Sesgos presentes en el corpus Dolma (datos web, libros, papers, etc.) que el modelo puede reproducir; no se documentan mitigaciones.
-- No dispone de tool calling, agentes, vision ni otras capacidades avanzadas.
-- Los checkpoints intermedios estan en ramas `stepN` y contienen solo pesos; es necesario consultar `run.json` para conocer el presupuesto exacto de tokens y la cadencia de guardado.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo no es apto para ello por sus limitaciones tecnicas y su naturaleza de artefacto de investigacion.
-- El campo `git_commit` figura como `unknown` en la procedencia, lo que dificulta la reproducibilidad exacta del codigo de entrenamiento.
+- Modelo de investigación: entrenado con solo 2B tokens, su calidad de generación será notablemente inferior a la de modelos pequeños publicados con presupuestos mucho mayores.
+- Riesgo elevado de alucinación y de texto incoherente, especialmente en contextos largos o tareas de razonamiento.
+- Solo inglés; no se ha entrenado ni evaluado en castellano ni en otros idiomas.
+- Ventana de contexto muy limitada (2.048 tokens), insuficiente para documentos largos o conversaciones extensas.
+- No se documentan evaluaciones de sesgo, toxicidad ni seguridad; el corpus Dolma puede arrastrar sesgos de sus fuentes web.
+- No apto para producción sin fine-tuning y evaluación adicionales.
+- El repositorio es muy pesado (372,3 GB) por la acumulación de checkpoints; descargar solo la revisión necesaria para evitar consumo innecesario de disco y ancho de banda.
+- El tokenizer no está en las ramas `stepN`; debe cargarse desde `main` o desde `allenai/OLMo-2-0425-1B`.
+- La licencia Apache 2.0 permite uso comercial del código y pesos, pero no exime de las obligaciones de atribución correspondientes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-dense-seed10
-- Repositorio del proyecto DIET (referenciado en la model card): https://github.com/jjalora/diet-lm
-- Coleccion de referencia Pythia: https://huggingface.co/jjalora/diet-traj-pythia-410m
-- Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
+- Repositorio del proyecto DIET: https://github.com/jjalora/diet-lm
+- Colección de trayectorias Pythia relacionada: https://huggingface.co/jjalora/diet-traj-pythia-410m
+- Dataset Dolma v1.7 (mirror): https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
+- Tokenizer de referencia OLMo2: https://huggingface.co/allenai/OLMo-2-0425-1B

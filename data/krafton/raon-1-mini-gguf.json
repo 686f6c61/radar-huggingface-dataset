@@ -5,7 +5,7 @@
   "author": "KRAFTON",
   "url": "https://huggingface.co/KRAFTON/Raon-1-mini-gguf",
   "created_at": "2026-11-24T14:09:19.000Z",
-  "updated_at": "2026-11-26T08:51:47.000Z",
+  "updated_at": "2026-11-27T12:25:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,9 +23,9 @@
     "region:us",
     "conversational"
   ],
-  "likes": 52,
+  "likes": 53,
   "downloads_30d": 18778,
-  "trending_score": 38,
+  "trending_score": 39,
   "parameters": 28783231402,
   "parameters_human": "28.78B",
   "storage_bytes": 266593084074,
@@ -66,9 +66,9 @@
       "snippet": "Action, Adventure PC Console inZOI"
     },
     {
-      "title": "Welcome to Krafton ID - NEWS - PUBG: BATTLEGROUNDS",
-      "url": "https://pubg.com/en/news/1634",
-      "snippet": "Aug 25, 2021 · Registering for your Krafton ID grants you access to information about Krafton games as well as an added benefit of …Read more"
+      "title": "Krafton — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Krafton",
+      "snippet": "Krafton Inc. (anciennement Bluehole Studio et Bluehole) est une entreprise sud-coréenne de développement et d' édition de jeux …Read more"
     }
   ]
 }

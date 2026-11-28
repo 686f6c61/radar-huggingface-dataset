@@ -2,101 +2,111 @@
 
 ## Resumen
 
-AksharaLP-1M-v2 es un modelo minúsculo de transliteración de hindi romanizado a devanagari (escritura nativa), desarrollado por el usuario independiente sourojitdotcom. No es un modelo de lenguaje generativo: es un transliterador de nivel de carácter y palabra pensado para ejecutarse íntegramente en el navegador, sin servidor ni GPU. Su función es convertir entradas como "kal meeting hai, kaise ho?" en "कल मीटिंग है, कैसे हो?", es decir, cambiar de script preservando el contenido lingüístico, no traducir.
+AksharaLP-1M-v2 es un modelo minúsculo de transliteración (no de traducción) que convierte hindi romanizado escrito con teclado latino en texto en escritura devanagari. Lo desarrolla el autor independiente sourojitdotcom y resuelve un problema muy concreto: los usuarios de hindi que escriben en un teclado QWERTY con caracteres latinos («kal meeting hai, kaise ho?») necesitan obtener la forma correcta en devanagari (कल मीटिंग है, कैसे हो?) sin depender de un servidor ni de conexión a internet.
 
-El modelo pertenece a la familia AksharaLP y se distribuye en dos capas: un núcleo de 0,57 MB (transformer de caracteres de 989K parámetros con reranker y runtime) y un paquete de diccionario de 7,35 MB (léxico de 3M palabras y modelo de lenguaje de frases) que el runtime descarga en el primer uso y cachea. El paquete completo ocupa menos de 8 MB comprimido (7,92 MB gzip), lo que lo hace apto para teclados e input methods offline en dispositivos móviles y navegador.
+El modelo tiene 990.466 parámetros y forma parte de la familia AksharaLP de modelos de transliteración ultraligeros. Se distribuye en dos niveles: un núcleo de 0,57 MB (transformer de caracteres con reranker y runtime) que funciona por sí solo, y un paquete de diccionario de 7,35 MB (léxico de 3 millones de palabras y modelo de lenguaje de frases) que el runtime descarga en el primer uso y cachea. El paquete completo ocupa menos de 8 MB comprimido (7,92 MB en gzip).
 
-Su relevancia radica en que compite con IndicXlit, el transliterador índico abierto más extendido, siendo 2,8 veces más pequeño que los pesos del modelo de este y 24 veces más pequeño que el paquete completo con diccionario, mientras supera su precisión top-1 (70,04 % frente a 59,16 % en Aksharantar). Está publicado bajo licencia Apache 2.0.
+Su relevancia radica en la relación entre tamaño y precisión: según el autor, supera en top-1 al modelo IndicXlit (70,04 % frente a 59,16 % en Aksharantar) siendo 2,8 veces más pequeño que los pesos de este, y ofrece un top-3 superior al paquete completo de IndicXlit. Está pensado para ejecutarse íntegramente en el navegador, en un Web Worker, como motor de entrada offline.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de caracteres con reranker y modelo de lenguaje de frases (núcleo + paquete de diccionario) |
-| Parámetros totales | 989K (núcleo) |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer de caracteres con reranker y runtime; paquete de diccionario con léxico de 3M de palabras y modelo de lenguaje de frases |
+| Parametros totales | 990.466 (989K) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | hi, en |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (runtime JavaScript; núcleo de 0,57 MB y paquete de diccionario de 7,35 MB) |
+| Tipos de cuantizacion | no disponible (se distribuye en GGUF y como paquete binario comprimido para navegador) |
+| Idiomas soportados | hi (hindi), en (inglés) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | GGUF; paquete de runtime web (núcleo de 0,57 MB y pack de diccionario de 7,35 MB) |
 
 ## Arquitectura y entrenamiento
 
-El núcleo es un transformer de caracteres de 989K parámetros que genera candidatos de transliteración; sobre él opera un reranker apoyado en un léxico de 3M palabras y un modelo de lenguaje de frases que puntúa y selecciona la salida más plausible en contexto. El runtime está implementado en JavaScript y ejecuta la inferencia en un Web Worker dentro de la pestaña del navegador, de forma totalmente offline una vez cacheado el paquete de diccionario.
+La arquitectura es un transformer de caracteres de 989K parámetros que opera a nivel de palabra y de frase, acompañado de un reranker y un runtime de inferencia. El sistema se completa con un paquete de diccionario separado que contiene un léxico de 3 millones de palabras y un modelo de lenguaje de frases; el runtime descarga este pack en el primer uso y lo cachea, de modo que el núcleo puede empezar a escribir desde los 0,6 MB. La inferencia se ejecuta en un Web Worker dentro de la pestaña del navegador, sin servidor ni GPU.
 
-El entrenamiento se apoya en los conjuntos ai4bharat/Aksharantar (pares romanizado-devanagari a nivel de palabra) y ai4bharat/IndicCorpV2 (corpus para el modelo de lenguaje de frases). No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La innovación principal es la compresión extrema: un sistema de transliteración con diccionario y reranker que cabe en menos de 8 MB y funciona en el cliente.
+El entrenamiento se apoya en los conjuntos de datos ai4bharat/Aksharantar (pares de transliteración) y ai4bharat/IndicCorpV2 (corpus de texto indic), según los metadatos de la model card. No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. La innovación principal es la compresión extrema: el paquete completo es 2,8 veces menor que los pesos de IndicXlit y 24 veces menor que IndicXlit con su diccionario de rescoring, manteniendo o superando la precisión top-1.
 
 ## Capacidades
 
-- Transliteración de hindi romanizado a devanagari a nivel de palabra y de frase, preservando el contenido (no traduce).
-- Resolución contextual de ambigüedades de romanización (por ejemplo, "kal meeting hai, kaise ho?" → "कल मीटिंग है, कैसे हो?").
-- Ejecución 100 % on-device y offline en navegador mediante JavaScript y Web Worker.
-- Descarga progresiva: arranca con el núcleo de 0,57 MB y carga el paquete de diccionario en segundo plano.
-- Soporte para input methods y teclados en QWERTY latino.
-- Idiomas de trabajo: hindi (hi) e inglés (en) como origen de la romanización.
-- No dispone de tool calling, function calling, razonamiento multi-paso, visión, audio ni modo thinking; es un modelo especializado de transliteración.
+- Transliteración de hindi romanizado a devanagari a nivel de palabra y de frase, con resolución contextual de ambigüedades de escritura.
+- Reranking de candidatos mediante el modelo de caracteres y el diccionario de 3M de palabras.
+- Ejecución completamente offline en el navegador mediante JavaScript y Web Workers.
+- Funciona como motor de entrada (input method) o teclado para escribir hindi desde un teclado latino.
+- Soporte de dos niveles de despliegue: núcleo autónomo de 0,57 MB y paquete completo de menos de 8 MB.
+- Idiomas de trabajo: hindi e inglés (el inglés aparece como lengua de entrada romanizada y de soporte).
+- No realiza traducción: cambia de escritura, no de idioma.
 
 ## Casos de uso
 
-- Teclados e input methods para hindi en móvil y escritorio: el modelo permite escribir en QWERTY latino y obtener devanagari al instante, sin conexión, gracias a su tamaño inferior a 8 MB y su ejecución en Web Worker.
-- Formularios y aplicaciones web offline: integración en páginas que deben funcionar sin red (kioscos, entornos rurales, PWAs) para que el usuario introduzca texto hindi en su script nativo.
-- Normalización de datos de usuario: conversión de nombres y direcciones escritos en romanizado a devanagari en pipelines de limpieza de datos, con una precisión top-1 del 70,04 % y top-3 del 88,31 % a nivel de palabra.
-- Procesamiento de mensajes de chat y redes sociales: el modelo mejora especialmente en ortografía informal de chat (91,54 % de precisión por palabra en 480 frases reservadas), lo que lo hace adecuado para normalizar conversaciones antes de analizarlas.
-- Accesibilidad y localización: permitir a hablantes de hindi sin teclado devanagari producir texto nativo en entornos web, con latencia p50 de 206,0 ms por palabra en navegador.
-- Preprocesado para NLP en hindi: transliterar corpus romanizados antes de pasarlos a modelos de lenguaje o traductores que esperan devanagari, reduciendo la necesidad de infraestructura GPU.
+- Teclados y métodos de entrada en navegador: el modelo se integra como motor de transliteración en un input method que convierte lo que el usuario teclea en latín a devanagari en tiempo real, con latencia p50 de 206 ms por palabra y sin conexión.
+- Formularios y aplicaciones web offline: cualquier aplicación que recoja texto en hindi puede incluir el paquete de menos de 8 MB para permitir la entrada nativa sin depender de servicios externos ni de red.
+- Mensajería y chat: la precisión en frases de chat (91,54 % de exactitud por palabra en 480 frases reservadas) lo hace adecuado para normalizar mensajes romanizados tipo «kal meeting hai» a su forma devanagari correcta.
+- Procesamiento por lotes de corpus romanizados: permite convertir grandes volúmenes de texto hindi escrito en latín a devanagari antes de indexarlo o analizarlo, con un CER de 4,07 en frases de Dakshina.
+- Aplicaciones educativas y de aprendizaje de escritura: sirve para mostrar al estudiante la forma devanagari correcta de una palabra o frase escrita en caracteres latinos, con alternativas top-3 y top-8 cuando la entrada es ambigua.
+- Despliegue en dispositivos con recursos limitados: al ocupar menos de 8 MB y ejecutarse en el navegador, encaja en entornos sin GPU, terminales de bajo consumo o aplicaciones móviles basadas en web.
+- Preprocesamiento para pipelines de PLN en hindi: normaliza la entrada romanizada antes de pasarla a modelos mayores de traducción, análisis o búsqueda.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor (no verificados de forma independiente):
+Resultados declarados por el autor del modelo (no verificados de forma independiente):
 
 | Tarea | Dataset | Métrica | Valor |
 |---|---|---|---|
-| Transliteración palabra (romanizado → devanagari) | Aksharantar (Hindi, test) | Top-1 accuracy | 70,04 |
-| Transliteración palabra | Aksharantar (Hindi, test) | Top-3 accuracy | 88,31 |
-| Transliteración palabra | Aksharantar (Hindi, test) | Top-8 accuracy | 93,63 |
-| Transliteración frase | Dakshina (Hindi, test) | Word accuracy | 89,02 |
-| Transliteración frase | Dakshina (Hindi, test) | Sentence exact match | 25,70 |
-| Transliteración frase | Dakshina (Hindi, test) | CER | 4,07 |
+| Transliteración palabra (romanizado → devanagari) | Aksharantar (Hindi, test) | Top-1 accuracy | 70,04 % |
+| Transliteración palabra | Aksharantar (Hindi, test) | Top-3 accuracy | 88,31 % |
+| Transliteración palabra | Aksharantar (Hindi, test) | Top-8 accuracy | 93,63 % |
+| Transliteración frase | Dakshina (frases romanizadas, test) | Word accuracy | 89,02 % |
+| Transliteración frase | Dakshina (frases romanizadas, test) | Sentence exact match | 25,70 % |
+| Transliteración frase | Dakshina (frases romanizadas, test) | CER | 4,07 |
 
-Comparaciones declaradas por el autor: top-1 de 70,04 % frente a 59,16 % de IndicXlit (solo modelo) y 69,33 % de IndicXlit con paquete completo; top-3 de 88,31 % frente a 85,4 % de IndicXlit completo. Latencia en navegador p50 de 206,0 ms por palabra.
+Comparaciones declaradas por el autor frente a IndicXlit:
+
+| Comparación | AksharaLP-1M-v2 | IndicXlit |
+|---|---|---|
+| Top-1 en Aksharantar (modelo solo) | 70,04 % | 59,16 % |
+| Top-1 en Aksharantar (paquete completo) | 70,04 % | 69,33 % |
+| Top-3 en Aksharantar | 88,31 % | 85,4 % (paquete completo) |
+| Tamaño de pesos | 2,8× menor que el modelo | 46,0 MB (modelo solo) |
+
+Datos adicionales de la model card: núcleo solo con top-1 del 56,01 %, exactitud por palabra del 91,54 % en 480 frases de chat reservadas y latencia p50 de 206,0 ms por palabra en navegador.
 
 ## Requisitos de hardware
 
 - VRAM: no requiere GPU; la inferencia se ejecuta en CPU dentro del navegador.
-- GPU recomendadas: ninguna; el modelo está diseñado para ejecución on-device.
-- Cabe en cualquier dispositivo con un navegador moderno: móviles, portátiles y equipos de gama baja.
-- Despliegue: runtime JavaScript propio en Web Worker; no se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a este formato).
-- Almacenamiento: 0,57 MB para el núcleo y 7,35 MB para el paquete de diccionario (7,92 MB gzip en total).
-- Latencia: p50 de 206,0 ms por palabra en navegador, según el autor.
+- GPU recomendadas: no aplica; no necesita aceleración por hardware.
+- Cabe en cualquier GPU de consumo e incluso en dispositivos sin GPU dedicada.
+- Despliegue: runtime JavaScript en el navegador (Web Worker), con núcleo de 0,57 MB y pack de diccionario de 7,35 MB descargado y cacheado en el primer uso; pesos en formato GGUF para otros entornos.
+- Latencia: p50 de 206,0 ms por palabra en navegador según el autor.
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Tamaño | Top-1 Aksharantar | Top-3 Aksharantar | Licencia |
+| Modelo | Parámetros | Contexto | Top-1 Aksharantar | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AksharaLP-1M-v2 | 989K (núcleo) | < 8 MB completo | 70,04 % | 88,31 % | Apache 2.0 |
-| AksharaLP-1M (v1) | 989K (núcleo) | 4,53 MB completo | 70,37 % | 87,66 % | Apache 2.0 |
-| IndicXlit (solo modelo) | no disponible | 46,0 MB | 59,16 % | no disponible | no disponible en la información |
-| IndicXlit (paquete completo) | no disponible | ~24× mayor | 69,33 % | 85,4 % | no disponible en la información |
+| AksharaLP-1M-v2 | 990.466 | no disponible | 70,04 % | Apache-2.0 | Hugging Face, demo en Space |
+| IndicXlit (modelo solo) | no disponible (46,0 MB de pesos) | no disponible | 59,16 % | no disponible en la información | open source, ampliamente usado |
+| IndicXlit (paquete completo con diccionario) | no disponible | no disponible | 69,33 % | no disponible en la información | open source |
+| AksharaLP-1M (v1) | 989K (misma familia) | no disponible | 70,37 % | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Es un transliterador, no un traductor: no convierte significado entre idiomas, solo cambia de script.
-- El exact match a nivel de frase es bajo (25,70 % en Dakshina), por lo que frases largas pueden contener errores aunque la precisión por palabra sea alta (89,02 %).
-- La precisión top-1 a nivel de palabra es del 70,04 %, insuficiente para aplicaciones que exijan exactitud total sin revisión humana.
-- Los benchmarks están declarados por el autor y marcados como no verificados; no hay evaluación independiente.
-- Solo cubre hindi (hi) e inglés (en); no se ha validado para otras lenguas índicas.
-- No se detallan sesgos, composición exacta del dataset ni comportamiento fuera del dominio de chat y vocabulario común.
-- La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en producción.
-- El paquete de diccionario requiere una primera descarga de red; el modo totalmente offline solo aplica tras el cacheo.
+- No traduce: solo cambia la escritura; una frase romanizada en hindi se convierte a devanagari, pero no se traduce al inglés ni a otro idioma.
+- Los resultados de benchmarks son declarados por el autor y no están verificados de forma independiente.
+- La exactitud a nivel de frase completa es limitada: el exact match en Dakshina es del 25,70 %, por lo que en frases largas es probable que haya errores parciales.
+- El top-1 del 70,04 % implica que cerca de un 30 % de las palabras pueden requerir corrección o selección entre las alternativas top-3 o top-8.
+- Ámbito lingüístico restringido a hindi (y entrada romanizada en caracteres latinos); no cubre otras lenguas indic.
+- El rendimiento óptimo depende del pack de diccionario de 7,35 MB; el núcleo solo baja al 56,01 % de top-1.
+- No se detallan en la información disponible sesgos concretos, riesgos de alucinación específicos ni restricciones adicionales de la licencia Apache-2.0 para uso comercial.
+- La latencia reportada (206 ms p50 por palabra) corresponde a un entorno de navegador concreto y puede variar según el dispositivo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/sourojitdotcom/AksharaLP-1M-v2
-- Demo en vivo: https://huggingface.co/spaces/sourojitdotcom/AksharaLP-v2-demo
-- Versión anterior (v1): https://huggingface.co/sourojitdotcom/AksharaLP-1M
+- Demo en vivo (Space): https://huggingface.co/spaces/sourojitdotcom/AksharaLP-v2-demo
+- Versión v1: https://huggingface.co/sourojitdotcom/AksharaLP-1M
 - Demo v1: https://huggingface.co/spaces/sourojitdotcom/AksharaLP-demo
 - Dataset Aksharantar: https://huggingface.co/datasets/ai4bharat/Aksharantar
 - Dataset IndicCorpV2: https://huggingface.co/datasets/ai4bharat/IndicCorpV2
-- Dataset Dakshina (referenciado en benchmarks): https://huggingface.co/datasets/google/dakshina
+- Dataset Dakshina: https://huggingface.co/datasets/google/dakshina
 - Fuente Ethnologue 200: https://www.ethnologue.com/insights/ethnologue200/

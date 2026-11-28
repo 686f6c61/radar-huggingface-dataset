@@ -2,102 +2,100 @@
 
 ## Resumen
 
-chronos-bolt-small-mlx es una conversión a MLX del modelo de series temporales amazon/chronos-bolt-small, publicada por el usuario masahiroid. No se trata de un modelo de lenguaje: es un modelo de forecasting (predicción de series temporales) de tipo zero-shot, basado en una arquitectura T5 de aproximadamente 47,7 millones de parámetros. El repositorio contiene una implementación nativa en MLX con los nombres de tensor originales del modelo de inferencia, junto con los scripts de conversión, y está pensado para ejecutarse en Apple Silicon.
+chronos-bolt-small-mlx es una conversión a formato MLX del modelo de previsión de series temporales amazon/chronos-bolt-small, publicada por el usuario masahiroid. No se trata de un modelo de generación de texto, sino de un modelo especializado en forecasting que predice 64 pasos futuros y 9 cuantiles (de 0,1 a 0,9) a partir de un contexto de hasta 2048 observaciones. La conversión mantiene los nombres de tensor del modelo de inferencia original y utiliza una implementación nativa de MLX.
 
-La relevancia de esta ficha es acotada: el modelo base Chronos-Bolt es conocido por ofrecer forecasting zero-shot rápido y preciso, pero esta publicación concreta es únicamente una conversión de checkpoint sin fine-tuning ni entrenamiento adicional. El autor lo declara explícitamente: no es una cuantización de 4 bits, sino una conversión en F32 con paridad numérica verificada frente a la implementación original en PyTorch.
+El modelo base, desarrollado por Amazon, emplea una arquitectura de tipo T5 adaptada a series temporales y no dispone de tokenizador de texto. Esta versión MLX está pensada para ejecutarse en Macs con Apple Silicon y conserva la licencia Apache 2.0 del modelo original, mientras que el runtime y los scripts de conversión añadidos por el autor de la conversión están bajo licencia MIT.
 
-El modelo genera 9 cuantiles (0,1 a 0,9) para un horizonte de 64 pasos futuros, con una longitud de contexto de hasta 2048 observaciones. No dispone de tokenizador de texto ni de capacidades generativas de lenguaje; su entrada y salida son tensores numéricos de series temporales.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de forecasting de Amazon de forma nativa en el ecosistema MLX de Apple, con validación numérica frente a la implementación original en PyTorch (diferencia máxima absoluta de 3,81e-06 y similitud coseno mínima de 1). Es una conversión de paridad, sin fine-tuning ni cuantización a 4 bits: se trata de una línea base en F32.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | T5 (encoder-decoder), adaptada para forecasting de series temporales (Chronos-Bolt) |
+| Arquitectura | T5 adaptada a series temporales (modelo base amazon/chronos-bolt-small) |
 | Parametros totales | 47.720.064 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | hasta 2048 observaciones de la serie temporal |
-| Tipos de cuantizacion | F32 (conversion base); no es una cuantizacion de 4 bits |
-| Idiomas soportados | no disponible (modelo numerico, sin tokenizador de texto) |
-| Licencia | apache-2.0 (pesos); runtime y conversor bajo MIT (CODE_LICENSE) |
-| Formato de pesos | safetensors (runtime MLX); existen exportaciones adicionales en coreml, coreai y gguf |
-| Horizonte de prediccion | 64 pasos futuros |
-| Cuantiles de salida | 9 (0,1 a 0,9) |
-| Tamano del repo | 0,2 GB |
-| Libreria | mlx |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | hasta 2048 observaciones |
+| Tipos de cuantizacion | F32 (línea base, no es cuantización de 4 bits); otras cuantizaciones no disponibles |
+| Idiomas soportados | no disponible (modelo sin tokenizador de texto) |
+| Licencia | apache-2.0 (pesos); runtime y scripts de conversión bajo MIT |
+| Formato de pesos | safetensors (runtime MLX); también existen exportaciones GGUF, Core ML y Core AI |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente, amazon/chronos-bolt-small, es un transformer de tipo T5 con unos 48 millones de parámetros, adaptado a la predicción de series temporales. Chronos-Bolt reformula el forecasting como una tarea de regresión directa de cuantiles: en lugar de generar tokens autorregresivamente como Chronos original, produce directamente 9 cuantiles para un horizonte fijo de 64 pasos, lo que reduce la latencia de inferencia. La entrada es una secuencia de observaciones numéricas de hasta 2048 puntos.
+El modelo base amazon/chronos-bolt-small es un modelo de previsión de series temporales construido sobre una arquitectura T5, sin tokenizador de texto. Genera directamente una distribución predictiva cuantílica: 9 cuantiles (0,1 a 0,9) para cada uno de los 64 pasos futuros. La conversión a MLX replica la implementación de inferencia original conservando los nombres de tensor del modelo fuente.
 
-Esta publicación concreta no incluye entrenamiento ni fine-tuning: es una conversión del checkpoint original en la revisión `772f3d25d38aec6d914c8949dab4462e2d46f5d8` a un runtime nativo en MLX, conservando los nombres de tensor del modelo de inferencia original. La validación numérica reportada por el autor frente a la implementación en PyTorch, sobre 3 casos deterministas, arroja una diferencia absoluta máxima de 3,8146973e-06 y una similitud coseno mínima de 1. Se trata de comprobaciones de paridad de conversión, no de benchmarks de calidad de tarea ni de latencia.
+No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada. Esta publicación es exclusivamente una conversión de checkpoint en la revisión `772f3d25d38aec6d914c8949dab4462e2d46f5d8` del modelo original, sin fine-tuning ni sustitución de pesos. La validación numérica se realizó con tres casos deterministas (tendencia más sinusoide, serie constante y serie con observaciones faltantes), con una diferencia absoluta máxima de 3,8146973e-06 y similitud coseno mínima de 1 frente a la implementación en PyTorch.
 
 ## Capacidades
 
-- Predicción de series temporales zero-shot: genera pronósticos sin entrenamiento específico sobre la serie objetivo.
-- Salida probabilística: 9 cuantiles (0,1 a 0,9) para un horizonte de 64 pasos, lo que permite construir intervalos de predicción.
-- Contexto largo: admite hasta 2048 observaciones de entrada; las entradas cortas pueden rellenarse con NaN en las exportaciones Apple de forma fija.
-- Manejo de series con observaciones faltantes (missing values), según los tests de validación del autor.
-- Ejecución nativa en Apple Silicon mediante el runtime MLX incluido.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni generación de texto: carece de tokenizador y de capacidades de lenguaje.
+- Previsión de series temporales univariadas y multivariadas con horizonte fijo de 64 pasos.
+- Salida cuantílica: 9 cuantiles (0,1 a 0,9) por paso, lo que permite construir intervalos de predicción.
+- Manejo de contextos de longitud variable de hasta 2048 observaciones.
+- Soporte de series con observaciones faltantes (validado en las pruebas de paridad).
+- Entrada mediante arrays NumPy; salida con forma `(batch, 9, 64)`.
+- No soporta generación de texto, tool calling, agentes ni capacidades multilingües, al carecer de tokenizador de texto.
+- No dispone de modo thinking, visión ni audio.
 
 ## Casos de uso
 
-- Previsión de demanda en retail: usar el modelo para pronosticar ventas por producto o tienda a 64 pasos vista, aprovechando el contexto de hasta 2048 observaciones para capturar estacionalidad semanal y anual.
-- Planificación de capacidad en infraestructura: predecir métricas de uso (CPU, memoria, tráfico) y generar intervalos de confianza a partir de los 9 cuantiles para dimensionar recursos con margen.
-- Forecasting financiero de alta frecuencia: pronosticar series de precios o volúmenes con salida cuantílica, útil para estimar rangos de riesgo en lugar de un único punto.
-- Monitorización industrial y mantenimiento predictivo: predecir la evolución de sensores (temperatura, vibración) y detectar desviaciones comparando la observación real con el intervalo cuantílico previsto.
-- Predicción meteorológica y de consumo energético: series con estacionalidad marcada y posiblemente valores faltantes, donde el manejo de NaN del modelo resulta práctico.
-- Prototipado local en Mac: desarrollo y pruebas de pipelines de forecasting en Apple Silicon sin GPU dedicada, gracias al runtime MLX y al reducido tamaño del modelo (0,2 GB).
-- Evaluación comparativa de métodos de forecasting: usar la conversión como referencia de paridad numérica frente a la implementación PyTorch en experimentos de reproducibilidad.
+- Previsión de demanda en comercio minorista: el modelo puede generar 64 pasos futuros con intervalos cuantílicos a partir de hasta 2048 observaciones históricas, útil para planificación de inventario en Macs con Apple Silicon.
+- Monitorización de métricas de infraestructura: predicción de series de latencia, CPU o memoria con cuantiles para detectar desviaciones anómalas antes de que ocurran.
+- Previsión financiera de series de precios o volúmenes: los 9 cuantiles permiten estimar escenarios pesimistas y optimistas en lugar de una única predicción puntual.
+- Análisis de sensores IoT: procesamiento local en Mac de series de sensores con observaciones faltantes, aprovechando la validación del modelo en ese escenario.
+- Prototipado e investigación en MLX: al ser una conversión con paridad numérica verificada, sirve como referencia para comparar implementaciones o desarrollar pipelines de forecasting en el ecosistema Apple.
+- Predicción de series energéticas: previsión de consumo o generación con horizonte de 64 pasos y bandas cuantílicas para gestión de carga.
+- Integración en aplicaciones macOS nativas: el runtime MLX y las exportaciones Core ML/Core AI permiten desplegar el modelo en apps de escritorio con formas fijas (batch 1, contexto 2048).
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad de tarea en la información disponible. El autor solo reporta métricas de paridad de conversión:
+No se han publicado resultados de benchmarks de calidad de tarea en la información disponible. La única validación reportada es de paridad numérica frente a la implementación original en PyTorch:
 
 | Metrica | Valor |
 |---|---|
-| Diferencia absoluta maxima vs. PyTorch (3 casos deterministas) | 3,8146973e-06 |
-| Similitud coseno minima vs. PyTorch | 1 |
-| Benchmarks de tarea (MAE, MASE, WQL, etc.) | no disponible |
-| Benchmarks de latencia o throughput | no disponible |
+| Diferencia absoluta maxima | 3,8146973e-06 |
+| Similitud coseno minima | 1 |
+| Casos de validacion | 3 (tendencia + sinusoide, serie constante, serie con faltantes) |
+
+Estas pruebas son comprobaciones de paridad de conversión, no benchmarks de calidad predictiva ni de latencia.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: el modelo tiene 47,7 millones de parámetros en F32, lo que supone aproximadamente 190 MB de pesos; el repo completo ocupa 0,2 GB. Cabe holgadamente en la memoria unificada de cualquier Mac moderno.
-- GPU recomendadas: no aplica en el sentido tradicional; el runtime incluido requiere Apple Silicon (MLX). No se documenta soporte para GPU NVIDIA en esta publicación.
-- GPU de consumo: sí cabe en equipos Apple Silicon de gama base; no se especifican requisitos mínimos de chip.
-- Opciones de despliegue: runtime MLX propio incluido en el repo (`runtime_mlx.py`); existen exportaciones alternativas del mismo autor en Core ML, Core AI y GGUF (esta última potencialmente usable con llama.cpp, aunque no se detalla en la información disponible).
-- Latencia y throughput: no disponible; el autor indica explícitamente que la validación no es un benchmark de latencia.
+- Requiere un Mac con Apple Silicon (el runtime MLX incluido lo exige).
+- Pesos en F32 con 47,72 millones de parámetros; el repositorio ocupa 0,2 GB.
+- VRAM estimada: no disponible de forma explícita; por el tamaño del checkpoint (0,2 GB), la huella de memoria es reducida y cabe en la memoria unificada de cualquier Mac con Apple Silicon.
+- GPU recomendadas: no aplica el catálogo de GPU NVIDIA; el modelo está orientado a Apple Silicon.
+- No se proporcionan datos de latencia ni throughput.
+- Opciones de despliegue: runtime MLX propio (`runtime_mlx.Model`), exportaciones Core ML y Core AI (batch 1, contexto 2048) y GGUF.
+- Dependencias del entorno probado: PyTorch 2.14.1, Transformers 4.57.3, MLX 0.32.4, NumPy 1.26.4, coremltools 9.0, chronos-forecasting 2.3.2, GGUF 0.19.0 y coreai-torch 0.4.3 (Core AI con Python 3.14). No se garantiza compatibilidad fuera de ese entorno.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Horizonte | Licencia | Formato |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| chronos-bolt-small-mlx (esta ficha) | 47,7 M | 2048 obs. | 64 pasos, 9 cuantiles | apache-2.0 (MIT runtime) | safetensors/MLX |
-| amazon/chronos-bolt-small | ~48 M | 2048 obs. | 64 pasos, 9 cuantiles | apache-2.0 | PyTorch |
-| chronos-bolt-base | no disponible en la informacion | no disponible | no disponible | apache-2.0 | PyTorch |
-| chronos-bolt-mini | no disponible en la informacion | no disponible | no disponible | apache-2.0 | PyTorch |
+| masahiroid/chronos-bolt-small-mlx | 47,72 M | 2048 observaciones | safetensors (MLX) | apache-2.0 | Conversión MLX con paridad numérica verificada |
+| masahiroid/chronos-bolt-small-gguf | no disponible | 2048 observaciones (preserva el máximo original) | GGUF | apache-2.0 | Misma conversión en formato GGUF |
+| masahiroid/chronos-bolt-small-coreml | no disponible | 2048 (formas fijas, batch 1) | Core ML | apache-2.0 | Exportación con formas fijas |
+| amazon/chronos-bolt-small | no disponible | 2048 observaciones | PyTorch | apache-2.0 | Modelo original de referencia |
 
-La comparación relevante es con el modelo original de Amazon: misma arquitectura, mismos parámetros y misma semántica de salida, diferenciándose únicamente en el runtime (MLX frente a PyTorch) y en el entorno de ejecución (Apple Silicon frente a CUDA/CPU). No se dispone de datos de rendimiento comparativo entre variantes de tamaño dentro de la familia Chronos-Bolt en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes más allá de la paridad numérica de la conversión MLX.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no procesa texto, no tiene tokenizador y no puede usarse para generación, chat ni tareas de NLP.
-- Horizonte fijo de 64 pasos: no se documenta extensión del horizonte más allá de ese valor.
-- Las exportaciones Apple (Core ML/Core AI) usan formas fijas (batch 1, contexto 2048), lo que obliga a rellenar con NaN las entradas cortas; el runtime MLX preserva el contexto máximo original.
-- La validación numérica se limita a 3 casos deterministas; no constituye una certificación de calidad de forecasting en producción.
-- Dependencia de Apple Silicon para el runtime MLX incluido; la compatibilidad de versiones fuera del entorno probado (PyTorch 2.14.1, Transformers 4.57.3, MLX 0.32.4, NumPy 1.26.4) no está garantizada.
-- Riesgo de alucinación: no aplica en el sentido de texto, pero sí existe riesgo de pronósticos poco fiables en series con cambios de régimen no vistos en el entrenamiento original.
-- Sesgos: no documentados en la información disponible; el modelo base puede reflejar sesgos de los datos de entrenamiento de Chronos, no detallados aquí.
-- Licencia: los pesos son apache-2.0, pero el autor advierte que no se implica ninguna certificación de seguridad ni licencia comercial adicional; el conversor y el runtime son MIT.
-- Repositorio sin descargas ni likes en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- Es una conversión de checkpoint, no un modelo nuevo: no hay fine-tuning ni entrenamiento adicional, por lo que hereda todas las limitaciones del modelo base.
+- No es un modelo de texto: no admite generación de lenguaje, tool calling ni agentes.
+- El horizonte de predicción está fijado en 64 pasos; no es configurable según la model card.
+- Las exportaciones Core ML y Core AI usan formas fijas (batch 1, contexto 2048); las entradas cortas deben rellenarse con NaN.
+- El runtime MLX exige Apple Silicon y las versiones de dependencias probadas; fuera de ese entorno no se garantiza compatibilidad.
+- Riesgo de alucinación: no aplica en el sentido de texto, pero las predicciones pueden ser inexactas en series con cambios de régimen no representados en los datos de entrenamiento.
+- Sesgos conocidos: no disponibles en la información proporcionada.
+- Licencia Apache 2.0 permite uso comercial de los pesos, pero el autor no certifica seguridad ni calidad de tarea; el runtime y los scripts añadidos son MIT.
+- La validación reportada es solo de paridad numérica, no de calidad predictiva ni de latencia.
 
 ## Enlaces
 
-- Hugging Face (esta conversión): https://huggingface.co/masahiroid/chronos-bolt-small-mlx
-- Modelo base en Hugging Face: https://huggingface.co/amazon/chronos-bolt-small
-- Revisión del checkpoint original: https://huggingface.co/amazon/chronos-bolt-small/tree/772f3d25d38aec6d914c8949dab4462e2d46f5d8
-- Exportación Core ML: https://huggingface.co/masahiroid/chronos-bolt-small-coreml
-- Exportación Core AI: https://huggingface.co/masahiroid/chronos-bolt-small-coreai
-- Exportación GGUF: https://huggingface.co/masahiroid/chronos-bolt-small-gguf
-- Ficha del modelo en The Applied: https://theapplied.co/models/amazon-chronos-bolt-small
+- [masahiroid/chronos-bolt-small-mlx en Hugging Face](https://huggingface.co/masahiroid/chronos-bolt-small-mlx)
+- [amazon/chronos-bolt-small (modelo base)](https://huggingface.co/amazon/chronos-bolt-small/tree/772f3d25d38aec6d914c8949dab4462e2d46f5d8)
+- [masahiroid/chronos-bolt-small-coreml](https://huggingface.co/masahiroid/chronos-bolt-small-coreml)
+- [masahiroid/chronos-bolt-small-coreai](https://huggingface.co/masahiroid/chronos-bolt-small-coreai)
+- [masahiroid/chronos-bolt-small-gguf](https://huggingface.co/masahiroid/chronos-bolt-small-gguf)

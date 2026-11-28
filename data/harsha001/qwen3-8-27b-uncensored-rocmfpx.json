@@ -5,7 +5,7 @@
   "author": "Harsha001",
   "url": "https://huggingface.co/Harsha001/Qwen3.8-27B-Uncensored-ROCmFPX",
   "created_at": "2026-10-24T18:44:28.000Z",
-  "updated_at": "2026-10-30T04:06:10.000Z",
+  "updated_at": "2026-11-27T21:01:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -39,7 +39,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 831,
+  "downloads_30d": 808,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

@@ -2,93 +2,98 @@
 
 ## Resumen
 
-Gemma4-Writer-31B-G-i1-GGUF es un conjunto de cuantizaciones GGUF del modelo Gemma4-Writer-31B-G, publicado por el usuario mradermacher. El modelo original lo desarrolla ConicCat y se presenta como un modelo conversacional de 30.697.345.596 parámetros (aproximadamente 30,7 mil millones) construido sobre la familia Gemma 4, orientado a tareas de escritura y generación de texto. Esta versión concreta no es un modelo entrenado desde cero, sino un artefacto de distribución: empaqueta el modelo base en formato GGUF con cuantizaciones de tipo imatrix, pensadas para su uso en llama.cpp y entornos de inferencia local.
+Gemma4-Writer-31B-G-i1-GGUF es una colección de cuantizaciones GGUF generadas por mradermacher a partir del modelo ConicCat/Gemma4-Writer-31B-G, un ajuste fino orientado a tareas de escritura creativa y generación de texto de aproximadamente 30.700 millones de parámetros. El repositorio no contiene un modelo original, sino una familia de ficheros GGUF con cuantizaciones de tipo i1 (imatrix) que abarcan desde IQ1_S hasta Q6_K, pensadas para ejecución local con llama.cpp y herramientas compatibles.
 
-El interés de esta ficha reside en la disponibilidad práctica del modelo: el repositorio incluye 24 variantes de cuantización que van desde 7,3 GB (i1-IQ1_S) hasta 25,3 GB (i1-Q6_K), lo que permite desplegar un modelo de 31B en hardware de consumo con distintos compromisos de calidad y velocidad. El repositorio completo ocupa 334,8 GB, aunque el usuario solo necesita descargar la variante que vaya a utilizar.
+La relevancia de esta ficha es práctica: permite a desarrolladores e investigadores desplegar un modelo de 31B en hardware de consumo o en servidores modestos eligiendo el equilibrio adecuado entre tamaño, velocidad y calidad. Las cuantizaciones i1 emplean una matriz de importancia (imatrix) para preservar mejor la calidad en ratios de compresión agresivos, lo que resulta especialmente útil en los niveles bajos (IQ2, IQ3), donde las cuantizaciones estáticas suelen degradarse notablemente.
 
-La licencia declarada es Apache 2.0, lo que facilita su uso comercial, y el idioma indicado en la model card es únicamente inglés. No se dispone de información sobre la longitud de contexto, la arquitectura interna ni los datos de entrenamiento del modelo base en la documentación proporcionada.
+No se dispone de información detallada sobre la arquitectura interna, el contexto o los datos de entrenamiento del modelo base en la información proporcionada; esta ficha documenta lo que el repositorio GGUF ofrece y advierte explícitamente de los datos no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base Gemma 4, detalles no publicados en la informacion disponible) |
-| Parametros totales | 30.697.345.596 (30,7B) |
+| Arquitectura | no disponible (modelo base ConicCat/Gemma4-Writer-31B-G; presumiblemente transformer, sin confirmar) |
+| Parametros totales | 30.697.345.596 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, mas fichero imatrix |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1 generadas con imatrix); el modelo base original se distribuye presumiblemente en safetensors, aunque no se confirma en la informacion disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-Q2_K, i1-IQ3_XXS, i1-IQ3_XS, i1-IQ3_S, i1-Q3_K_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de imatrix) |
+| Idiomas soportados | en (inglés) |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base Gemma4-Writer-31B-G en la documentación proporcionada. El nombre sugiere que deriva de la familia Gemma 4 de Google, y el tamaño de 30,7B parámetros es coherente con un transformer denso de esa escala, pero no se confirma si emplea atención lineal, mezcla de expertos u otra innovación. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
+No se ha publicado en la información disponible la arquitectura interna del modelo base ConicCat/Gemma4-Writer-31B-G ni los detalles de su entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO). El nombre sugiere una variante de la familia Gemma orientada a escritura ("Writer"), con 31B de parámetros, pero se trata de una inferencia no confirmada. El repositorio de mradermacher documenta únicamente el proceso de cuantización: cuantizaciones ponderadas por imatrix (versión de cuantización 2, conversión tipo hf), generadas con llama.cpp.
 
-Lo que sí está documentado es el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con fichero imatrix (etiquetadas como i1), que según la model card suelen ofrecer mejor calidad que las cuantizaciones estáticas de tamaño similar. El repositorio incluye también un fichero imatrix de 0,1 GB para que otros usuarios puedan crear sus propias cuantizaciones. Existe además un repositorio hermano con cuantizaciones estáticas (Gemma4-Writer-31B-G-GGUF).
+La innovación técnica destacable de este repositorio es el uso de imatrix para producir cuantizaciones i1, que según la documentación del autor ofrecen mejor relación calidad/tamaño que las cuantizaciones estáticas equivalentes, especialmente en los rangos IQ2 e IQ3. El autor indica además que se trata de un modelo de visión, por lo que los ficheros mmproj (si existen) se alojan en el repositorio estático hermano.
 
 ## Capacidades
 
-- Generación de texto conversacional: el tag "conversational" y el nombre "Writer" indican un enfoque en tareas de escritura y diálogo.
-- Generación de texto creativo y redacción: el modelo está orientado explícitamente a tareas de escritura.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse a través de infraestructura de inferencia estándar.
+- Generación de texto y escritura creativa: el modelo base está orientado explícitamente a tareas de escritura ("Writer"), aunque no se detallan las capacidades concretas en la información disponible.
+- Conversación: la etiqueta "conversational" aparece en los tags del repositorio.
+- Visión: el autor indica que es un modelo de visión; los ficheros mmproj estarían en el repositorio estático.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la model card; no se documentan otros idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: el modelo base declara únicamente inglés.
+- Modo thinking, audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
 
-- Redacción asistida de documentación técnica: el modelo puede generar borradores de documentación, guías y READMEs en inglés a partir de especificaciones, aprovechando su orientación a escritura y su tamaño de 31B para mantener coherencia en textos largos.
-- Generación de contenido editorial: artículos, entradas de blog y material de marketing en inglés, con la ventaja de que las cuantizaciones Q4_K_M (18,8 GB) permiten ejecución local sin depender de APIs externas.
-- Asistencia conversacional en inglés: chatbots de atención al cliente o asistentes internos desplegados en llama.cpp u Ollama, donde la licencia Apache 2.0 elimina restricciones comerciales.
-- Prototipado de aplicaciones de escritura: integración en herramientas de edición de texto o generadores de contenido mediante la API compatible con endpoints, usando la variante i1-Q4_K_S (17,9 GB) como equilibrio entre calidad y requisitos de memoria.
-- Investigación sobre cuantización: el repositorio sirve como caso de estudio para evaluar la degradación de calidad entre niveles de cuantización (desde IQ1_S hasta Q6_K) en un modelo de 31B, gracias a la disponibilidad de todas las variantes y el fichero imatrix.
-- Despliegue en entornos con GPU de consumo: usuarios con una RTX 4090 (24 GB) pueden ejecutar la variante i1-Q4_K_M o i1-Q5_K_S para tareas de generación de texto offline, sin conexión a servicios cloud.
-- Fine-tuning posterior sobre dominio específico: el modelo base en formato original (ConicCat/Gemma4-Writer-31B-G) puede servir de punto de partida para ajuste fino, aunque esta versión GGUF no es adecuada para entrenamiento.
+- Escritura creativa local: el modelo puede generar narrativa, artículos y contenido largo en inglés, y las cuantizaciones i1-Q4_K_M (18,8 GB) permiten ejecutarlo en una GPU de consumo de 24 GB como la RTX 4090.
+- Prototipado en estaciones de trabajo sin GPU de datacenter: con cuantizaciones IQ3 (13-15 GB) se puede desplegar en GPUs de 16 GB o en configuraciones híbridas CPU/GPU mediante llama.cpp.
+- Generación de contenido asistida por visión: si se descargan los ficheros mmproj del repositorio estático, el modelo puede procesar imágenes junto a texto, útil para descripción de imágenes o generación de contenido a partir de capturas.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye 23 variantes de cuantización, lo que permite medir empíricamente la degradación de calidad frente al tamaño en tareas de escritura.
+- Despliegue en entornos con restricciones de memoria: las variantes IQ2 (8,8-11 GB) permiten ejecutar un modelo de 31B en GPUs de 12 GB o incluso en sistemas con 16 GB de RAM mediante offload parcial.
+- Integración en pipelines de generación de documentos: al ser GGUF compatible con llama.cpp, puede integrarse en servicios de generación de texto por lotes en servidores CPU, con throughput moderado y sin dependencia de CUDA.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio incluye únicamente una gráfica comparativa de perplejidad entre tipos de cuantización (referenciada por el autor), pero no cifras de MMLU, HumanEval, GSM8K ni similares.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 7,3 GB (i1-IQ1_S) y 25,3 GB (i1-Q6_K) solo para los pesos; hay que añadir memoria para el contexto KV, que depende de la longitud de contexto no documentada.
-- GPU recomendadas: para las cuantizaciones altas (Q5_K_M, Q6_K) se recomienda una A100 40GB, H100 o RTX 4090 de 24 GB; para cuantizaciones medias (Q4_K_M, IQ4_XS) una RTX 4090 o RTX 3090 de 24 GB es suficiente; para cuantizaciones bajas (IQ2, IQ3) caben en GPUs de 12-16 GB como RTX 4070 Ti o RTX 4080.
-- ¿Cabe en GPU de consumo? Sí: las variantes IQ2 e IQ3 (8,8-16,7 GB) caben en tarjetas de 12-16 GB; las variantes Q4 (17,8-19,6 GB) requieren 24 GB; las variantes Q5 y Q6 requieren 24 GB o más, con posible offloading parcial a CPU.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, y servidores compatibles con GGUF como llama-cpp-python o text-generation-webui. vLLM y TGI no soportan GGUF de forma nativa en el momento de redactar esta ficha, por lo que no se recomiendan para este artefacto.
+- VRAM estimada para inferencia (según tamaño del fichero GGUF, más overhead de contexto):
+  - i1-IQ1_S: 7,3 GB
+  - i1-IQ2_M: 11,0 GB
+  - i1-IQ3_S: 13,9 GB
+  - i1-IQ4_XS: 16,8 GB
+  - i1-Q4_K_M: 18,8 GB
+  - i1-Q5_K_M: 21,9 GB
+  - i1-Q6_K: 25,3 GB
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; A100 40 GB o H100 para Q6_K con contexto largo; GPUs de 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti Super 16 GB) para IQ2 e IQ3.
+- Cabe en GPU de consumo: sí, desde IQ2_M en adelante en GPUs de 12 GB; Q4_K_M en 24 GB.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF (koboldcpp, LM Studio). El repositorio no incluye ficheros para vLLM ni TGI.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Gemma4-Writer-31B-G-i1-GGUF (este) | 30,7B | no disponible | Apache 2.0 | GGUF (i1) | Cuantizaciones imatrix, solo inglés |
-| Gemma4-Writer-31B-G-GGUF | 30,7B | no disponible | Apache 2.0 | GGUF (estáticas) | Mismo modelo base, cuantizaciones estáticas |
-| Gemma4-Writer-31B-G (original) | 30,7B | no disponible | Apache 2.0 | safetensors (presumible) | Modelo base sin cuantizar, para fine-tuning |
-| Alternativas de 30B de otros autores | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de benchmarks para comparar rendimiento |
+| mradermacher/Gemma4-Writer-31B-G-i1-GGUF | 30,7B | no disponible | apache-2.0 | GGUF (i1) | Cuantizaciones imatrix, 23 variantes |
+| mradermacher/Gemma4-Writer-31B-G-GGUF | 30,7B | no disponible | apache-2.0 | GGUF (estático) | Mismo modelo base, cuantizaciones estáticas |
+| ConicCat/Gemma4-Writer-31B-G | 30,7B | no disponible | apache-2.0 | safetensors | Modelo base original, pesos completos |
 
-No se dispone de información suficiente para comparar el rendimiento de este modelo con alternativas de la misma categoría, ya que no se han publicado benchmarks en la documentación proporcionada.
+No se dispone de información sobre otros modelos comparables de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idioma: la model card solo declara inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
-- Sesgos: no se documentan sesgos conocidos, pero al no disponerse de información sobre los datos de entrenamiento no es posible evaluar su magnitud.
-- Riesgo de alucinación: inherente a los modelos generativos de esta escala; no se han publicado evaluaciones específicas de fidelidad factual.
-- Contexto: se desconoce la longitud de contexto soportada, lo que impide planificar aplicaciones que dependan de ventanas largas.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base original (ConicCat/Gemma4-Writer-31B-G) y de la familia Gemma de la que deriva, ya que podrían imponer restricciones adicionales no reflejadas en este repositorio.
-- Cuantizaciones extremas: las variantes IQ1 e IQ2 (7,3-11 GB) degradan notablemente la calidad; la propia model card las describe como "for the desperate" o "mostly desperate". No se recomiendan para producción.
-- Artefacto de cuantización: este repositorio no es un modelo entrenado, sino una redistribución; los problemas de calidad del modelo base se heredan íntegramente.
-- Sin benchmarks: la ausencia de evaluaciones publicadas impide comparar su calidad con alternativas y hace recomendable una validación propia antes de desplegarlo.
+- El repositorio es una cuantización, no un modelo entrenado por mradermacher; los sesgos y limitaciones del modelo base no están documentados en la información disponible.
+- Riesgo de alucinación: no cuantificado; al ser un modelo orientado a escritura, la generación creativa puede producir contenido factualmente incorrecto.
+- Idioma: el modelo base declara únicamente inglés; no se garantiza un rendimiento adecuado en castellano.
+- Las cuantizaciones de baja precisión (IQ1, IQ2, Q2_K) degradan la calidad de forma significativa; el propio autor advierte "very low quality" en Q2_K_S y "for the desperate" en IQ1_S.
+- Licencia apache-2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base original, ya que la información disponible no detalla restricciones adicionales de la familia Gemma.
+- Contexto máximo no documentado: no se puede planificar el uso con ventanas largas sin consultar el modelo base.
+- El tamaño total del repositorio (334,8 GB) incluye todas las variantes; descargar una sola cuantización requiere seleccionar el fichero concreto.
+- Para visión es necesario descargar los ficheros mmproj desde el repositorio estático hermano, no incluidos en este repositorio.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma4-Writer-31B-G-i1-GGUF
 - Modelo base: https://huggingface.co/ConicCat/Gemma4-Writer-31B-G
-- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Gemma4-Writer-31B-G-GGUF
-- Página de descargas del autor: https://hf.tst.eu/model#Gemma4-Writer-31B-G-i1-GGUF
-- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Gráfico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Gemma4-Writer-31B-G-GGUF
+- Página de descarga del autor: https://hf.tst.eu/model#Gemma4-Writer-31B-G-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfica de perplejidad por tipo de cuantización (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- FAQ y peticiones de cuantización: https://huggingface.co/mradermacher/model_requests
 - nethype GmbH: https://www.nethype.de/

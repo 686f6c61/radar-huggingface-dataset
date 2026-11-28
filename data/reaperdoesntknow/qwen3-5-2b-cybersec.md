@@ -2,84 +2,80 @@
 
 ## Resumen
 
-Qwen3.5-2B-CyberSec es un ajuste fino del checkpoint Qwen3.5 2B publicado por el usuario reaperdoesntknow bajo licencia Apache-2.0. El modelo se distribuye en formato Transformers/Safetensors y su metadata lo vincula al dataset Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset, lo que sugiere un entrenamiento orientado a instrucciones y conversaciones del dominio de ciberseguridad. Con 2.274.069.824 parametros, es un modelo pequeno pensado para prototipado local y experimentacion.
+Qwen3.5-2B-CyberSec es un ajuste fino (fine-tune) del checkpoint base unsloth/Qwen3.5-2B, publicado por el usuario reaperdoesntknow y asociado en sus metadatos al dataset Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset. El modelo se distribuye en formato Transformers/Safetensors y está pensado, segun su propia model card, para investigacion y experimentacion local con instrucciones de ciberseguridad. Cuenta con 2.274.069.824 parametros reales segun los pesos en safetensors y un repositorio de 4,6 GB.
 
-La relevancia de esta ficha es acotada y conviene ser explicito: el autor no publica benchmarks, comparaciones con el modelo base, evaluaciones de seguridad ni detalles de hiperparametros o preprocesado del dataset. La model card reconoce esta carencia y advierte que la asociacion con un dataset de ciberseguridad y una exportacion correcta no demuestran una mejora de rendimiento en la materia. Por tanto, debe tratarse como un artefacto de investigacion, no como una autoridad tecnica validada.
+La relevancia del modelo es limitada y debe entenderse en ese marco: se trata de un checkpoint pequeno (2B) especializado mediante instrucciones, con licencia Apache-2.0, lo que facilita su uso y redistribucion. La configuracion declara una arquitectura Qwen3.5 de generacion condicional con componentes de texto y vision, y el pipeline registrado es text-generation con etiqueta image-text-to-text, aunque el idioma declarado es unicamente ingles.
 
-El modelo hereda la arquitectura Qwen3.5 conditional-generation con componentes de texto y vision, segun la configuracion descrita en la model card. El idioma declarado es unicamente ingles. Existe una build GGUF separada en el repositorio del mismo autor para inferencia local.
+Es importante senalar que el autor no publica resultados de benchmarks, comparaciones con el modelo base, evaluaciones de seguridad ni detalles del proceso de entrenamiento. Por tanto, la asociacion con un dataset de ciberseguridad no implica por si misma una mejora medible en esa materia, y el modelo no debe considerarse una autoridad validada en seguridad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 conditional-generation (transformer con componentes de texto y vision) |
+| Arquitectura | Qwen3.5 (generacion condicional, componentes de texto y vision) |
 | Parametros totales | 2.274.069.824 |
-| Parametros activos | no disponible (no se declara como MoE) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en el repo principal; existe build GGUF en repositorio separado |
-| Idiomas soportados | ingles (en) |
-| Licencia | Apache-2.0 |
+| Tipos de cuantizacion | no disponible en el repositorio principal; existe build GGUF en repositorio separado |
+| Idiomas soportados | en (ingles) |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors (Transformers) |
 
 ## Arquitectura y entrenamiento
 
-La configuracion del repositorio identifica una arquitectura Qwen3.5 conditional-generation con componentes de texto y vision, cargable mediante `AutoModelForMultimodalLM` y `AutoProcessor` en versiones recientes de Transformers. El modelo parte del checkpoint `unsloth/Qwen3.5-2B`, un export del modelo Qwen3.5 2B de la familia Qwen. La model card no detalla el numero de capas, dimensiones ocultas, mecanismos de atencion ni si incorpora innovaciones como atencion lineal o decodificacion especulativa.
+El modelo parte de unsloth/Qwen3.5-2B, un checkpoint de la familia Qwen3.5 de 2B parametros. La configuracion identifica una arquitectura Qwen3.5 de generacion condicional con componentes de texto y vision, y la carga se realiza mediante AutoModelForMultimodalLM y AutoProcessor en versiones recientes de Transformers. El repositorio no documenta detalles de atencion, capas ni mecanismos internos adicionales.
 
-Respecto al entrenamiento, la unica informacion disponible es la asociacion con el dataset Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset en la metadata. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF o DPO, los hiperparametros utilizados, los criterios de seleccion de checkpoint ni si se aplicaron comprobaciones de contaminacion. La model card indica explicitamente que esta informacion no esta publicada.
+En cuanto al entrenamiento, la model card unicamente registra la asociacion con el dataset Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset y el uso de la herramienta Unsloth (etiqueta unsloth). No se publican hiperparametros, numero de tokens de entrenamiento, composicion del dataset, ni si hubo RLHF, DPO u otras tecnicas de alineacion. Tampoco se documentan el preprocesado de datos, las comprobaciones de contaminacion ni los criterios de seleccion del checkpoint.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con formato de chat mediante `apply_chat_template`.
-- Respuesta a instrucciones tecnicas, presumiblemente orientada al dominio de ciberseguridad por el dataset asociado, aunque sin evaluacion publicada que lo confirme.
-- Procesamiento multimodal de entrada texto-imagen segun el pipeline declarado (`image-text-to-text`) y la arquitectura conditional-generation con componentes de vision.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun la metadata.
-- Capacidades especiales (thinking mode, audio): no disponible en la informacion proporcionada.
+- Generacion de texto conversacional en ingles, con plantilla de chat aplicada mediante apply_chat_template.
+- Componente de vision declarado en la configuracion (image-text-to-text), aunque el pipeline registrado es text-generation y no se detalla su alcance.
+- Respuesta a instrucciones tecnicas, incluidas preguntas sobre conceptos de ciberseguridad (por ejemplo, explicar el principio de minimo privilegio).
+- Formato compatible con Transformers y con endpoints compatibles (etiqueta endpoints_compatible).
+- Capacidades de tool calling, agentes, razonamiento multi-paso o modo thinking: no disponibles en la informacion proporcionada.
+- Capacidades multilingues: no disponibles; el modelo declara unicamente ingles.
 
 ## Casos de uso
 
-- Prototipado local de asistentes de ciberseguridad: el modelo puede desplegarse en una maquina de desarrollo para generar respuestas de prueba sobre conceptos como privilegio minimo, segmentacion de red o gestion de identidades, y comparar cualitativamente con el checkpoint base Qwen3.5 2B.
-- Investigacion sobre ajuste fino en dominios especializados: sirve como punto de partida para estudiar como un dataset de instrucciones de ciberseguridad afecta al comportamiento de un modelo de 2B parametros, siempre que se construya un harness de evaluacion reproducible.
-- Generacion de borradores de documentacion tecnica de seguridad: el modelo puede redactar explicaciones iniciales de politicas, procedimientos o conceptos que un analista revisa y corrige antes de publicar.
-- Experimentos de cuantizacion y conversion: al existir una build GGUF separada, es util para probar pipelines de conversion, cuantizacion y despliegue en llama.cpp u Ollama en hardware modesto.
-- Formacion y concienciacion: generar escenarios de ejemplo o preguntas de autoevaluacion sobre practicas de seguridad, con revision humana obligatoria del contenido.
-- Comparacion de checkpoints en investigacion de alineacion: permite contrastar respuestas del ajuste fino frente al modelo base para detectar regresiones de capacidad general o sesgos introducidos por el dataset.
+- Investigacion sobre respuestas de modelos pequenos a prompts de instruccion en ciberseguridad: el modelo permite estudiar cualitativamente como un checkpoint de 2B ajustado con instrucciones responde a preguntas tecnicas, comparandolo con el modelo base.
+- Prototipado local: al ocupar 4,6 GB en safetensors, puede cargarse en entornos de desarrollo con GPU de gama media para experimentar con prompts y plantillas de chat.
+- Comparacion con el checkpoint upstream Qwen3.5-2B: sirve para evaluar, de forma cualitativa, el efecto del ajuste fino sobre el modelo base en tareas de seguridad.
+- Experimentos de conversion y cuantizacion: el repositorio dispone de una build GGUF separada, lo que facilita probar distintas cuantizaciones y medir su impacto en la calidad de las respuestas.
+- Generacion de material didactico de apoyo en ingles sobre conceptos de seguridad (minimo privilegio, higiene de contrasenas, segmentacion de red), siempre con revision humana antes de su uso.
+- Evaluacion de riesgos y alucinacion en dominios sensibles: el modelo puede emplearse como caso de estudio para medir la frecuencia de consejos tecnicos incorrectos o inseguros en modelos pequenos especializados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que el repositorio no incluye informe versionado de benchmarks, comparacion con baseline, resultados en conjunto de test reservado ni evaluacion de seguridad.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica explicitamente que el repositorio no publica informes versionados de rendimiento, comparaciones con el modelo base, resultados en conjuntos de test reservados ni evaluaciones de seguridad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16/BF16: aproximadamente 4,5 GB solo para pesos (2.274 millones de parametros), mas overhead de activaciones y cache KV; en la practica, entre 6 y 8 GB para contextos moderados.
-- VRAM estimada en cuantizacion de 8 bits: alrededor de 2,5-3 GB para pesos.
-- VRAM estimada en cuantizacion de 4 bits (GGUF Q4): alrededor de 1,5-2 GB para pesos.
-- GPU recomendadas: cualquier GPU consumer con 8 GB o mas (RTX 3060 Ti, RTX 4060, RTX 4070) para FP16; GPUs de datacenter (A100, H100) no son necesarias por el tamano del modelo.
-- Cabe en GPU consumer: si, en la mayoria de GPUs con 6-8 GB o mas, especialmente con cuantizacion.
-- Opciones de despliegue: Transformers con `AutoModelForMultimodalLM`, llama.cpp u Ollama mediante la build GGUF del repositorio `reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF`; vLLM y TGI no estan confirmados en la informacion disponible.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia en precision completa (fp16/bf16): aproximadamente 4,5-5 GB solo para los pesos, mas memoria para el procesador, cache KV y overhead del runtime.
+- VRAM estimada con cuantizacion de 8 bits: en torno a 2,5-3 GB; con 4 bits, en torno a 1,5-2 GB (estimaciones a partir del numero de parametros; no confirmadas por el autor).
+- GPU recomendadas: cualquier GPU consumer con al menos 8 GB de VRAM para fp16 (RTX 3060 Ti, RTX 4060 Ti, RTX 4070 y superiores); GPU de datacenter como A100 o H100 no son necesarias por el tamano del modelo.
+- Cabe en GPU consumer: si, con holgura en fp16 en tarjetas de 8 GB o mas, y en cuantizaciones menores en tarjetas de 4-6 GB.
+- Opciones de despliegue: Transformers (AutoModelForMultimodalLM), llama.cpp u Ollama mediante la build GGUF publicada en reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF. Compatibilidad con vLLM o TGI: no disponible.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Qwen3.5-2B-CyberSec | 2,27 B | no disponible | Apache-2.0 | Ajuste fino de ciberseguridad sin benchmarks publicados |
-| unsloth/Qwen3.5-2B (base) | ~2 B | no disponible | Apache-2.0 (presumible, segun familia) | Checkpoint base sin ajuste de dominio; referencia natural de comparacion |
-| Alternativas de 2-3 B en ciberseguridad | no disponible | no disponible | no disponible | No se dispone de informacion sobre modelos comparables en la busqueda realizada |
-
-La comparacion cuantitativa con el modelo base no es posible porque el autor no publica resultados. Cualquier afirmacion de mejora en ciberseguridad carece de respaldo empirico en la informacion disponible.
+| Qwen3.5-2B-CyberSec | 2.274.069.824 | no disponible | apache-2.0 | Fine-tune asociado a dataset de ciberseguridad; sin benchmarks publicados |
+| unsloth/Qwen3.5-2B (base) | 2B (familia Qwen3.5) | no disponible | no disponible en la informacion proporcionada | Checkpoint upstream del que deriva este modelo |
+| Alternativas especializadas en ciberseguridad de ~2B | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de benchmarks: no hay evidencia publicada de mejora frente al checkpoint base Qwen3.5 2B en tareas de ciberseguridad ni de ausencia de regresiones en capacidades generales.
-- Riesgo de alucinacion: el modelo puede generar comandos, configuraciones o recomendaciones tecnicas incorrectas o inseguras; la model card advierte de no ejecutar comandos generados sin revision y aislamiento.
-- Contenido dual-use: el dataset de ciberseguridad puede contener material sensible o de doble uso; no se documentan filtros ni evaluaciones de seguridad.
-- Idioma: solo ingles declarado, lo que limita su uso en castellano sin evaluacion adicional.
-- Documentacion insuficiente: no se detallan hiperparametros, preprocesado del dataset, comprobaciones de contaminacion ni criterios de seleccion de checkpoint.
-- Uso en produccion: no debe emplearse como base unica para respuesta a incidentes, divulgacion de vulnerabilidades o decisiones de control de acceso.
-- Sesgos: no documentados en la informacion disponible.
-- Licencia Apache-2.0: permite uso comercial, pero la ausencia de evaluacion de seguridad traslada al integrador toda la responsabilidad sobre el comportamiento del modelo.
+- El modelo puede generar guia tecnica incorrecta o insegura; no debe ejecutarse ningun comando generado sin revision y aislamiento.
+- No debe usarse como unica base para respuesta a incidentes, divulgacion de vulnerabilidades, decisiones de control de acceso u otras decisiones de seguridad con consecuencias.
+- Los datos de entrenamiento pueden contener errores, practicas obsoletas o material sensible de doble uso.
+- No se documentan sesgos conocidos, pero al estar entrenado unicamente en ingles y sobre un dataset especifico, su comportamiento fuera de ese dominio es incierto.
+- No se publican comprobaciones de contaminacion, hiperparametros ni criterios de seleccion del checkpoint, lo que dificulta la reproducibilidad.
+- La ventana de contexto no esta documentada; no debe asumirse un tamano concreto.
+- Licencia Apache-2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni validacion de calidad.
+- La asociacion con un dataset de ciberseguridad no demuestra una mejora de rendimiento frente al modelo base.
 
 ## Enlaces
 

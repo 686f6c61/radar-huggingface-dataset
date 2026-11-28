@@ -2,85 +2,85 @@
 
 ## Resumen
 
-`nodevorg/studio-models-h3` no es un modelo entrenado desde cero, sino un repositorio de redistribución de pesos derivados de MiniMax H3, empaquetados en el formato int8 que consume ComfyUI. Lo publica el usuario nodevorg para alimentar su plataforma studio.no.dev, que ejecuta estos ficheros tanto en ComfyUI como en su propio motor "uncomfy". El repositorio agrupa cinco artefactos distintos: dos torres HyperFlow H3 Flash de Video Rebirth (fl2va y ref2va), un checkpoint Studio H3 V1, un checkpoint Alarian H3 V1 y dos adaptadores LoRA de pi-H3 para muestreo en 2 y 4 pasos, además de un estudiante H3-Tiny FewStep de 17,08 mil millones de parámetros.
+`nodevorg/studio-models-h3` es un repositorio de redistribución que empaqueta en un único punto los ficheros del modelo de generación de vídeo MiniMax H3 y varios de sus derivados (destilaciones, adaptadores y VAEs) en el formato de pesos int8 que consume ComfyUI. Lo publica el colectivo nodevorg para alimentar su plataforma studio.no.dev, que ejecuta estos modelos tanto en ComfyUI como en su propio motor "uncomfy". No es un modelo entrenado desde cero: es un agregado de artefactos de terceros (Video Rebirth, Lakonik, H3-Tiny, Lovart y MiniMax) reorganizados y, en su mayoría, copiados sin modificar.
 
-Se trata, por tanto, de un modelo de difusión para generación de vídeo (texto a vídeo, imagen a vídeo y vídeo a partir de imágenes de referencia y audio), no de un modelo de lenguaje. La relevancia práctica está en que concentra en un único repositorio de 95,9 GB las variantes destiladas y cuantizadas a int8 que permiten inferencia en pocos pasos (2, 4, 6 u 8 según el fichero) sin PDD, algo crítico para reducir el coste computacional de la generación de vídeo.
+El interés práctico del repositorio está en que reúne en un solo lugar las piezas necesarias para montar un pipeline de vídeo generativo completo: dos torres HyperFlow H3 Flash (texto-a-vídeo e imagen-a-vídeo, y referencia-a-vídeo), un checkpoint base "Studio H3 V1", un checkpoint de referencia "Alarian H3 V1", adaptadores de destilación pi-H3 para 2 y 4 pasos, un estudiante H3-Tiny FewStep de 17,08 mil millones de parámetros y el VAE de vídeo H3-MT en fp16. El repositorio ocupa 101,2 GB.
 
-La licencia es la MiniMax H3 Community License Agreement, que se hereda en todos los ficheros por ser derivados, con restricciones territoriales y términos comerciales propios. El repositorio no es un producto oficial de MiniMax, Video Rebirth, pi-H3 ni H3-Tiny.
+Es relevante ahora porque condensa en un formato homogéneo (int8 tensorwise con convrot, grupo 256, o int8 "convrot" compatible con ComfyUI) variantes que de otro modo exigirían descargar y convertir pesos desde cinco repositorios distintos. La licencia es la MiniMax H3 Community License Agreement, con restricciones territoriales y términos comerciales propios, y todos los ficheros se consideran obras derivadas de MiniMax H3.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusión (DiT) para vídeo, con variantes pruned y destiladas; formato int8 tensorwise con convrot, group size 256 |
-| Parametros totales | 17,08 mil millones en el estudiante H3-Tiny FewStep; no disponible para el resto de ficheros |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | int8 (int8_tensorwise con convrot); no se documentan otros formatos |
-| Idiomas soportados | no disponible |
-| Licencia | MiniMax H3 Community License Agreement (license: other) |
-| Formato de pesos | safetensors de un solo fichero para ComfyUI (diffusion-single-file) y LoRAs en safetensors |
+| Arquitectura | Modelo de difusión para generación de vídeo (tipo transformer, según los ficheros y el pipeline MiniMax H3); detalles de atención y bloques no disponibles |
+| Parámetros totales | No disponible de forma agregada; el estudiante H3-Tiny FewStep tiene 17,08 mil millones de parámetros (42 bloques) |
+| Parámetros activos | No aplica (no es un modelo MoE según la información disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantización | int8 tensorwise con convrot, grupo de tamaño 256; VAE en fp16; adaptadores LoRA en int8 convrot |
+| Idiomas soportados | No disponibles |
+| Licencia | MiniMax H3 Community License Agreement (con restricciones territoriales, términos comerciales y Acceptable Use Policy) |
+| Formato de pesos | safetensors (diffusion-single-file para ComfyUI) |
 
 ## Arquitectura y entrenamiento
 
-Los ficheros son derivados de MiniMax H3, un modelo de difusión para vídeo. El repositorio no entrena nada: copia pesos de terceros y los reempaqueta en el layout int8 de ComfyUI. Las dos torres HyperFlow H3 Flash de Video Rebirth corresponden a variantes podadas del transformer: fl2va con 3 bloques eliminados y 102 capas lineales en low-rank (16,3 GB), y ref2va con 1 bloque eliminado y 114 capas lineales en low-rank (16,8 GB). Ambas muestrean en 6 u 8 pasos sin PDD.
+Los artefactos incluidos son variantes de MiniMax H3, un modelo de difusión para vídeo. El repositorio no documenta la arquitectura interna del transformer base (número de bloques del modelo original, mecanismo de atención, esquema de condicionamiento), solo las modificaciones aplicadas a cada derivado. Las torres HyperFlow H3 Flash de Video Rebirth incorporan poda de bloques (3 bloques eliminados en `fl2va`, 1 en `ref2va`) y linealizaciones de bajo rango (102 y 114 capas lineales respectivamente), y muestrean en 6 u 8 pasos sin PDD.
 
-El estudiante H3-Tiny FewStep es el transformer ref2va de MiniMax H3 podado a 42 bloques (17,08 mil millones de parámetros) y destilado para muestrear en 6 pasos (funciona con 4 o más). Los adaptadores pi-H3, obra de Hansheng Chen et al., destilan la torre fl2va original a 2 o 4 pasos de muestreo y decodifican el vídeo desde el último paso sin VAE (DWD), usando el schedule pi-Flow con max_raw_t de 0,93 y 0,96 respectivamente. Los checkpoints Studio H3 V1 (20,2 GB) y Alarian H3 V1 (20,1 GB) son checkpoints MiniMax H3 en int8, el segundo específico de ref2va.
-
-No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+Los derivados de destilación son los que aportan más información técnica. Los adaptadores pi-H3 (Hansheng Chen et al.) destilan la torre `fl2va` estándar a 2 o 4 pasos de muestreo y decodifican el vídeo desde el último paso sin VAE (DWD, *decoupled weight decoding*), con `max_raw_t` de 0,93 y 0,96 respectivamente. El estudiante H3-Tiny FewStep (Haoshuai Fu) poda el transformer `ref2va` a 42 bloques (17,08B parámetros) y lo destila para muestrear en 6 pasos (funciona con 4 o más). No se especifican en la información disponible el volumen de datos de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto (text to video) con la torre fl2va de HyperFlow H3 Flash.
-- Generación de vídeo a partir de una imagen (primer fotograma) o de primer y último fotograma, mediante el nodo `MiniMaxH3ImageToVideo`.
-- Generación de vídeo a partir de imágenes de referencia y audio, mediante el nodo `MiniMaxH3ReferenceToVideo` (torres ref2va, Alarian H3 V1 y H3-Tiny FewStep).
-- Muestreo acelerado: 6 u 8 pasos en HyperFlow, 2 o 4 pasos con los adaptadores pi-H3, 6 pasos (mínimo 4) con H3-Tiny FewStep.
-- Decodificación sin VAE (DWD) en el flujo pi-H3, que evita el coste del decodificador.
-- Integración con ComfyUI mediante cargadores específicos (`HyperFlowInt8Loader`, `UNETLoader`, `Load LakonLab Adapter`, `H3-Tiny Few-Step Loader`).
-- No se documentan capacidades de tool calling, agentes, razonamiento multimodal ni soporte multilingüe.
+- Generación de vídeo a partir de texto (text-to-video) mediante la torre `fl2va` de HyperFlow H3 Flash.
+- Generación de vídeo a partir de una primera imagen o de primera y última imagen (image-to-video) con `MiniMaxH3ImageToVideo`.
+- Generación de vídeo a partir de imágenes de referencia y audio con `MiniMaxH3ReferenceToVideo` (torres `ref2va`, checkpoint Alarian H3 V1 y estudiante H3-Tiny FewStep).
+- Muestreo acelerado: 6 u 8 pasos en HyperFlow H3 Flash sin PDD; 2 o 4 pasos con los adaptadores pi-H3; 6 pasos (mínimo 4) con H3-Tiny FewStep.
+- Decodificación de vídeo sin VAE en el último paso mediante el adaptador DWD de pi-H3.
+- Codificación/decodificación de vídeo mediante el VAE H3-MT en fp16.
+- Integración con ComfyUI mediante cargadores específicos (`HyperFlowInt8Loader`, `UNETLoader`, `Load Lakalab Adapter`, `H3-Tiny Few-Step Loader`) y nodos de muestreo propios.
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-step ni soporte multilingüe de texto; el modelo es generativo de vídeo, no un LLM conversacional.
 
 ## Casos de uso
 
-- Prototipado rápido de vídeo generativo en ComfyUI: cargar `StudioH3-V1.safetensors` con el `UNETLoader` estándar y el text encoder y VAEs de Comfy-Org/MiniMax-H3 permite tener un pipeline funcional sin conversiones adicionales.
-- Imagen a vídeo para publicidad y contenido de redes: la torre fl2va de HyperFlow acepta un primer fotograma y genera la secuencia en 6 u 8 pasos, lo que encaja en flujos de producción con tiempos de iteración cortos.
-- Interpolación entre fotogramas clave: el nodo `MiniMaxH3ImageToVideo` admite primer y último fotograma, útil para crear transiciones controladas entre dos imágenes de un storyboard.
-- Vídeo con referencia de identidad o estilo y audio: la torre ref2va y Alarian H3 V1 generan vídeo a partir de imágenes de referencia y pista de audio, adecuado para avatares, doblaje visual o reels musicales.
-- Generación de vídeo en pocos pasos para entornos con presupuesto de GPU ajustado: los adaptadores pi-H3 de 2 y 4 pasos reducen el número de evaluaciones del modelo y, con DWD, eliminan la decodificación por VAE, lo que abarata la inferencia por clip.
-- Despliegue de un estudiante compacto en producción: H3-Tiny FewStep, con 17,08 mil millones de parámetros y 18,1 GB en int8, permite servir ref2va con los nodos oficiales de H3-Tiny en 6 pasos, reduciendo VRAM frente a los checkpoints completos de 20 GB.
-- Investigación sobre destilación de modelos de difusión: los adaptadores pi-H3 y el estudiante FewStep sirven como referencia reproducible para comparar schedules de destilación (pi-Flow, DWD) sobre una misma base MiniMax H3.
+- Generación de vídeo publicitario a partir de un brief textual: la torre `fl2va` de HyperFlow H3 Flash permite text-to-video en 6 u 8 pasos, adecuada para iterar variaciones de anuncios cortos con tiempos de muestreo reducidos.
+- Animación de imágenes fijas para redes sociales: `MiniMaxH3ImageToVideo` acepta una primera imagen o primera y última, lo que sirve para convertir fotografías de producto en clips con movimiento controlado entre dos fotogramas clave.
+- Vídeo con personajes o estilos de referencia: la torre `ref2va` y el checkpoint Alarian H3 V1 generan vídeo a partir de imágenes de referencia y audio, útil para doblaje visual, avatares o continuidad de personaje entre planos.
+- Prototipado rápido en estaciones de trabajo con GPU de consumo: el estudiante H3-Tiny FewStep (17,08B, 6 pasos, mínimo 4) reduce el coste de muestreo frente al modelo completo, lo que permite previsualizar secuencias antes de un render final de mayor calidad.
+- Iteración de bajo coste con destilación pi-H3: los adaptadores de 2 y 4 pasos sobre la torre `fl2va` estándar permiten generar borradores muy rápidos y reservar el muestreo completo para la versión definitiva.
+- Integración en pipelines de ComfyUI para estudios pequeños: el formato int8 con convrot y los cargadores específicos permiten montar un flujo de trabajo reproducible en ComfyUI o en el motor uncomfy de studio.no.dev, con los VAEs y el text encoder estándar de Comfy-Org/MiniMax-H3.
+- Postproducción y transcodificación de vídeo generado: el VAE H3-MT en fp16 se puede usar para codificar y decodificar latentes de vídeo dentro de flujos propios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los ficheros int8 de 16,3 a 20,2 GB requieren al menos esa cantidad solo para los pesos del transformer, más la memoria del text encoder, los VAEs y las activaciones; en la práctica, se necesita una GPU con 24 GB o más para los checkpoints de 20 GB y margen para el resto del pipeline.
-- GPU recomendadas: A100 (40 u 80 GB), H100 y RTX 4090 (24 GB) para los checkpoints de 20 GB; para H3-Tiny FewStep (18,1 GB) y las torres HyperFlow (16,3 y 16,8 GB) el margen en 24 GB es mayor.
-- Cabe en GPU de consumo: sí, en RTX 4090 y GPUs de 24 GB para los ficheros de menor tamaño; los de 20,2 y 20,1 GB quedan muy ajustados y dependen del resto del grafo.
-- Opciones de despliegue: ComfyUI con `UNETLoader` para Studio H3 V1 y Alarian H3 V1; `HyperFlowInt8Loader` de ComfyUI-Studio-HyperFlow más ComfyUI-HyperFlow-Flash para las torres HyperFlow; `Load LakonLab Adapter` de ComfyUI-piFlow para los adaptadores pi-H3; nodos propios de H3-Tiny para el estudiante FewStep. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de difusión de vídeo.
-- Latencia y throughput: no disponibles. Solo se conoce el número de pasos de muestreo por fichero (2, 4, 6 u 8).
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia de orden de magnitud, los ficheros int8 de las torres HyperFlow pesan 16,3 GB y 16,8 GB, los checkpoints Studio H3 V1 y Alarian H3 V1 pesan 20,2 GB y 20,1 GB, el estudiante H3-Tiny FewStep 18,1 GB y el VAE fp16 5,2 GB; a ello hay que sumar el text encoder y los VAEs estándar de Comfy-Org/MiniMax-H3.
+- GPU recomendadas: no especificadas por el autor. Por tamaño de pesos, los checkpoints de 18-20 GB en int8 encajan con GPUs de 24 GB o más (RTX 3090, RTX 4090, A100 40 GB, H100); no se confirma compatibilidad con GPUs de 16 GB.
+- ¿Cabe en GPU de consumo? Los ficheros de 16-20 GB requieren al menos 24 GB de VRAM para cargarse completos, además del text encoder y el VAE; no hay datos oficiales sobre ejecución con offloading parcial.
+- Opciones de despliegue: ComfyUI (con `ComfyUI-Studio-HyperFlow`, `ComfyUI-HyperFlow-Flash`, `ComfyUI-piFlow` y los nodos de H3-Tiny según la variante), el motor uncomfy de studio.no.dev, y los cargadores estándar `UNETLoader` para los checkpoints Studio H3 V1 y Alarian H3 V1. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. Solo se documenta el número de pasos de muestreo (6-8 en HyperFlow, 2-4 con pi-H3, 6 con H3-Tiny FewStep).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Pasos de muestreo | Licencia | Disponibilidad |
+| Modelo | Parámetros | Pasos de muestreo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| studio-models-h3 (este repo) | 17,08 B en H3-Tiny FewStep; no disponible en el resto | no disponible | 2, 4, 6 u 8 según fichero | MiniMax H3 Community License | Hugging Face, 884 descargas |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | no disponible | MiniMax H3 Community License | Hugging Face, oficial |
-| VideoRebirthAI/hyperflow-h3-flash | no disponible | no disponible | 6 u 8 sin PDD | MiniMax H3 Community License | Hugging Face |
-| H3-Tiny/MiniMax-H3-Tiny-ComfyUI | 17,08 B (ref2va podado a 42 bloques) | no disponible | 6 (mínimo 4) | MiniMax H3 Community License | Hugging Face |
+| MiniMax H3 (base, vía Comfy-Org/MiniMax-H3) | No disponible | Estándar (no especificado) | safetensors int8 convrot | MiniMax H3 Community License | Hugging Face (Comfy-Org) |
+| HyperFlow H3 Flash (`fl2va` / `ref2va`) | No disponible (3 y 1 bloques podados) | 6 u 8, sin PDD | safetensors int8 convrot | MiniMax H3 Community License | Hugging Face (VideoRebirthAI) |
+| H3-Tiny FewStep (`ref2va`) | 17,08B (42 bloques) | 6 (mínimo 4) | safetensors int8 convrot | MiniMax H3 Community License | Hugging Face (H3-Tiny) |
+| Este repositorio (agregado) | Varios (17,08B el estudiante) | 2, 4, 6 u 8 según variante | safetensors int8 convrot / fp16 | MiniMax H3 Community License | Hugging Face (nodevorg) |
 
-La comparativa se limita a las variantes de la propia familia H3 porque la información disponible no incluye modelos de vídeo de otros desarrolladores con datos verificables.
+No se dispone de datos de rendimiento comparativo (métricas de calidad de vídeo, FVD, CLIP score) en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo original: todos los ficheros son derivados de MiniMax H3 y heredan la licencia MiniMax H3 Community License Agreement, con restricciones territoriales, términos comerciales y una política de uso aceptable que deben revisarse antes de cualquier despliegue.
-- El repositorio no es un producto oficial de MiniMax, Video Rebirth, pi-H3 ni H3-Tiny; el soporte y la garantía recaen en el publicador.
-- Dependencia fuerte de nodos de terceros: las torres HyperFlow no cargan con el loader estándar de H3 de ComfyUI y exigen ComfyUI-Studio-HyperFlow y ComfyUI-HyperFlow-Flash; los adaptadores pi-H3 requieren ComfyUI-piFlow; H3-Tiny FewStep exige los nodos propios de H3-Tiny. Un cambio en esos repositorios puede romper el pipeline.
-- Los checkpoints de 20 GB en int8 dejan poco margen en GPUs de 24 GB una vez cargados text encoder, VAEs y activaciones; el riesgo de OOM en producción es real.
-- No se documentan sesgos, tasas de alucinación visual, idiomas soportados ni limitaciones de contexto; no hay benchmarks publicados que permitan evaluar la calidad frente a la base MiniMax H3.
-- El tamaño del repositorio (95,9 GB) y la mezcla de cinco artefactos distintos obligan a descargar solo los ficheros necesarios; descargar el repo completo es costoso en almacenamiento y ancho de banda.
-- Al ser pesos destilados y podados, la calidad puede degradarse frente al modelo completo, especialmente en los adaptadores de 2 pasos y en el estudiante de 17,08 mil millones de parámetros.
+- El repositorio no es un producto oficial de MiniMax, Video Rebirth, pi-H3, H3-Tiny ni Lovart; es una redistribución de terceros.
+- La licencia MiniMax H3 Community License Agreement impone restricciones territoriales, términos comerciales y una Acceptable Use Policy; es obligatorio revisar el LICENSE upstream antes de cualquier uso comercial.
+- Todos los ficheros se consideran obras derivadas de MiniMax H3 y heredan esa licencia; no se añaden términos adicionales, pero tampoco se relajan los existentes.
+- Varias variantes requieren nodos y cargadores no estándar (`HyperFlowInt8Loader`, `Load Lakalab Adapter`, `H3-Tiny Few-Step Loader`); el cargador estándar de H3 de ComfyUI no carga las torres HyperFlow.
+- Los adaptadores pi-H3 y el estudiante H3-Tiny FewStep son destilaciones: la calidad puede diferir de la del modelo completo, especialmente con menos pasos (2 pasos en pi-H3, 4 en H3-Tiny).
+- No hay información sobre sesgos, idiomas soportados, riesgo de alucinación visual ni evaluación de calidad; no se han publicado benchmarks.
+- El tamaño del repositorio (101,2 GB) y de cada fichero (16-20 GB) exige almacenamiento y ancho de banda considerables.
+- El campo `pipeline` no está disponible y la librería declarada es `diffusion-single-file`, lo que limita la interoperabilidad con frameworks de inferencia distintos de ComfyUI.
 
 ## Enlaces
 
@@ -89,12 +89,11 @@ La comparativa se limita a las variantes de la propia familia H3 porque la infor
 - Licencia upstream: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - HyperFlow H3 Flash (Video Rebirth): https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash
 - pi-H3 (Lakonik): https://huggingface.co/Lakonik/pi-H3
-- H3-Tiny en ComfyUI: https://huggingface.co/H3-Tiny/MiniMax-H3-Tiny-ComfyUI
-- Repositorio H3-Tiny: https://github.com/fuyi25/MiniMax-H3-Tiny
-- Nodos ComfyUI de H3-Tiny: https://github.com/fuyi25/MiniMax-H3-Tiny/tree/main/comfyui
-- ComfyUI-Studio-HyperFlow: https://github.com/NoDevOrg/ComfyUI-Studio-HyperFlow
-- ComfyUI-HyperFlow-Flash: https://github.com/Video-Rebirth/ComfyUI-HyperFlow-Flash
-- ComfyUI-piFlow: https://github.com/Lakonik/ComfyUI-piFlow
-- Guía pi-H3: https://github.com/Lakonik/ComfyUI-piFlow/blob/main/docs/piH3.md
-- Text encoder y VAEs de MiniMax H3 para ComfyUI: https://huggingface.co/Comfy-Org/MiniMax-H3
-- Plataforma del autor: https://studio.no.dev
+- H3-Tiny (MiniMax-H3-Tiny-ComfyUI): https://huggingface.co/H3-Tiny/MiniMax-H3-Tiny-ComfyUI
+- Repositorio H3-Tiny en GitHub: https://github.com/fuyi25/MiniMax-H3-Tiny
+- H3-MT-VAE (Lovart): https://huggingface.co/lovartai/H3-VAE-MT
+- Text encoder y VAEs estándar de ComfyUI: https://huggingface.co/Comfy-Org/MiniMax-H3
+- Nodos ComfyUI-Studio-HyperFlow: https://github.com/NoDevOrg/ComfyUI-Studio-HyperFlow
+- Nodos ComfyUI-HyperFlow-Flash: https://github.com/Video-Rebirth/ComfyUI-HyperFlow-Flash
+- Nodos ComfyUI-piFlow y guía pi-H3: https://github.com/Lakonik/ComfyUI-piFlow y https://github.com/Lakonik/ComfyUI-piFlow/blob/main/docs/piH3.md
+- Plataforma studio.no.dev: https://studio.no.dev

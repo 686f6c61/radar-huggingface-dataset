@@ -2,111 +2,100 @@
 
 ## Resumen
 
-Shruti Santali es un modelo de reconocimiento automático del habla (ASR) desarrollado por Udgam Labs, un laboratorio de investigación en IA centrado en modelos pequeños que se ejecutan en dispositivo. El modelo transcribe audio de 16 kHz de cualquier duración a texto en santali (escritura ol chiki) y en inglés, incluyendo habla con mezcla de código (code-switching) entre ambos idiomas. Forma parte de la familia Shruti, que ofrece un modelo pequeño por idioma, y deriva de Shruti Hindi, que a su vez se construye sobre Cactus Whistle (Apache-2.0) de Cactus Compute.
+Shruti Santali es un modelo de reconocimiento automatico del habla (ASR) desarrollado por Udgam Labs, disenado especificamente para transcribir santali (escrito en alfabeto Ol Chiki) y para gestionar de forma nativa el cambio de codigo santali-ingles. Con aproximadamente 56 millones de parametros, es un modelo compacto que se distribuye en un unico archivo de 29,7 MB con pesos cuantizados a 4 bits, pensado para ejecutarse integramente en el dispositivo (telefono, portatil o navegador) sin conexion a internet ni servidor.
 
-La relevancia del modelo radica en su tamaño y su modo de despliegue: con aproximadamente 56 millones de parámetros y un archivo de pesos de 29,7 MB en cuantización de 4 bits, se ejecuta sin servidor y sin conexión a internet en un teléfono, un portátil o directamente en el navegador mediante WebAssembly. Según el autor, en un Samsung Galaxy F62 de 2021 transcribe unas 13 veces más rápido que el tiempo real usando 64 MB de memoria, lo que lo sitúa en la categoría de ASR verdaderamente en dispositivo para una lengua de bajos recursos como el santali.
+El modelo forma parte de la familia Shruti, que sigue la filosofia de "un modelo pequeno por idioma". Se construye sobre Cactus Whistle (Apache-2.0) a traves de Shruti Hindi, reentrenando todos los pesos con voz en santali e ingles y anadiendo 700 piezas de vocabulario santali. Su relevancia radica en cubrir una lengua de bajos recursos como el santali con un modelo desplegable offline mediante el motor Cactus, que ofrece ejecucion nativa y compilacion a WebAssembly.
 
-El modelo se distribuye bajo licencia Apache-2.0 y se ha entrenado sobre datos de IndicVoices, Vaani y LibriSpeech. Sus resultados publicados lo comparan con IndicConformer Santali, un modelo casi cinco veces mayor, sin diferencias claras en las dos pruebas realizadas, aunque con una tasa de error de caracteres algo superior.
+La propuesta es deliberadamente modesta en sus afirmaciones: el autor indica que en sus dos pruebas no se observa una diferencia clara frente a IndicConformer Santali, un modelo casi cinco veces mayor, y advierte de que la salida aun no ha sido revisada por hablantes nativos de santali.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (8 capas de encoder + 8 de decoder, anchura 512), derivado de Cactus Whistle |
-| Parámetros totales | Aproximadamente 56M (55.875.913) |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible (acepta audio de cualquier longitud) |
-| Tipos de cuantización | Pesos en 4 bits, activaciones en 8 bits (formato `.cact`) |
-| Idiomas soportados | Santali (ol chiki), inglés y santali mezclado con inglés |
-| Licencia | Apache-2.0 (modelo); condiciones de los datos de entrenamiento según la sección de datos del autor |
-| Formato de pesos | `.cact` (motor Cactus needle); también `config.json` |
-| Entrada / salida | Audio 16 kHz de cualquier duración → texto |
-| Runtime | Cactus needle (nativo y WebAssembly) |
-| Tamaño del archivo | 29,7 MB |
+| Arquitectura | Encoder-decoder de 8 capas de encoder y 8 de decoder, anchura 512 (familia Cactus Whistle) |
+| Parametros totales | Aproximadamente 56M (55.875.913) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | Audio de 16 kHz de cualquier longitud (no se especifica limite en tokens) |
+| Tipos de cuantizacion | 4 bits pesos / 8 bits activaciones (archivo .cact); se incluye version fp32 en safetensors |
+| Idiomas soportados | Santali (Ol Chiki), ingles y santali mezclado con ingles |
+| Licencia | Apache-2.0 (sujeta a los terminos de los datos de entrenamiento) |
+| Formato de pesos | `.cact` (motor Cactus) y `.safetensors` (fp32) |
 
 ## Arquitectura y entrenamiento
 
-Shruti Santali es un transformer encoder-decoder de 8 capas en cada bloque y anchura 512, con unos 56 millones de parámetros. Se construye sobre Cactus Whistle (Apache-2.0) a través de Shruti Hindi: el autor indica que reentrenó todos los pesos sobre habla en santali e inglés y añadió 700 piezas de vocabulario específicas del santali. El modelo opera sobre audio de 16 kHz y genera texto en ol chiki para el santali, manteniendo en alfabeto latino en minúsculas las palabras inglesas que conserva en inglés.
+Shruti Santali es un modelo encoder-decoder de tipo transformer con 8 capas en el encoder y 8 en el decoder, con una anchura de 512 dimensiones y cerca de 56 millones de parametros. La arquitectura subyacente es Cactus Whistle (Apache-2.0), que Udgam Labs tomo a traves de su modelo intermedio Shruti Hindi: se reentrenaron todos los pesos sobre voz en santali e ingles y se anadieron 700 piezas de vocabulario especificas del santali para cubrir el alfabeto Ol Chiki.
 
-Los datos de entrenamiento declarados incluyen IndicVoices (ai4bharat), Vaani-transcription-part (ARTPARK-IISc) y LibriSpeech (OpenSLR). No se especifican en la información disponible el número total de tokens ni la composición detallada del dataset, ni si hubo etapas de RLHF o DPO. La innovación técnica principal es la eficiencia: un modelo de 56M parámetros cuantizado a 4 bits que cabe en 29,7 MB y se ejecuta en el motor Cactus needle, con implementaciones nativas y WebAssembly, lo que permite inferencia local en navegador y en dispositivos móviles sin conexión.
+El entrenamiento combina conjuntos de datos publicos: ai4bharat/IndicVoices, ARTPARK-IISc/Vaani-transcription-part y openslr/librispeech_asr. No se detalla en la informacion disponible el numero exacto de horas ni la composicion porcentual del dataset, ni si se aplicaron fases de RLHF o DPO (poco habituales en ASR). La innovacion principal no es arquitectonica sino de despliegue: cuantizacion agresiva a 4 bits y un motor (Cactus) con backend nativo y WebAssembly que permite inferencia offline en dispositivos de gama media.
 
 ## Capacidades
 
-- Reconocimiento automático del habla en santali, con salida en escritura ol chiki.
-- Reconocimiento de inglés y de habla con mezcla de código santali-inglés, con detección automática del idioma.
-- Salida de palabras inglesas en alfabeto latino en minúsculas cuando el modelo las mantiene en inglés.
-- Procesamiento de audio de 16 kHz de cualquier duración.
-- Inferencia totalmente en dispositivo, sin servidor ni conexión a internet.
-- Ejecución en teléfono, portátil y navegador mediante WebAssembly.
-- No se ha documentado soporte de tool calling, function calling, agentes ni razonamiento multi-paso; es un modelo puramente ASR.
+- Reconocimiento automatico del habla para santali con salida en alfabeto Ol Chiki.
+- Transcripcion de ingles y de habla con cambio de codigo santali-ingles, manteniendo algunas palabras inglesas en caracteres latinos.
+- Deteccion automatica del idioma de la entrada (santali o ingles) sin configuracion manual.
+- Procesamiento de audio de 16 kHz de cualquier duracion.
+- Ejecucion offline y on-device: nativa (Mac, Android) y en navegador via WebAssembly.
+- Inferencia con huella de memoria reducida (unos 64 MB en el telefono de prueba).
+- No se documentan capacidades de tool calling, agentes, vision ni audio mas alla de la transcripcion.
 
 ## Casos de uso
 
-- Transcripción de conversaciones en santali en dispositivos móviles sin conectividad: el modelo se ejecuta en el propio teléfono con 64 MB de memoria, adecuado para zonas rurales o entornos con red limitada.
-- Subtitulado y documentación de audio en ol chiki: permite generar transcripciones de entrevistas, grabaciones comunitarias o material educativo en santali sin depender de servicios en la nube.
-- Aplicaciones web de dictado en navegador: al compilarse a WebAssembly, puede integrarse en una página web para transcribir audio localmente, como demuestra la demo de udgamlabs.com.
-- Procesamiento de habla con mezcla de código santali-inglés: útil en contextos laborales o urbanos donde los hablantes alternan entre santali e inglés, con detección automática del idioma.
-- Herramientas de accesibilidad y preservación lingüística: transcripción offline de material oral en una lengua de bajos recursos, con salida en su escritura propia.
-- Integración en pipelines de transcripción por lotes en hardware modesto: el bajo consumo de memoria y la velocidad (unas 13 veces el tiempo real en un Galaxy F62) permiten procesar archivos largos en portátiles convencionales.
-- Transcripción de audio en inglés como capacidad secundaria: el modelo también transcribe inglés (LibriSpeech test-clean 5,98 de WER), lo que permite un único archivo para dos idiomas.
+- Transcripcion de reuniones y conversaciones en santali en entornos sin conectividad: el modelo funciona completamente offline en un telefono, lo que permite registrar actas en zonas rurales o con red limitada.
+- Subtitulado y documentacion de contenido audiovisual en santali: al procesar audio de cualquier longitud y emitir Ol Chiki, sirve para generar subtitulos de videos comunitarios o educativos.
+- Aplicaciones moviles de accesibilidad para hablantes de santali: integrado mediante el motor Cactus en Android, permite dictado por voz sin enviar audio a la nube, lo que reduce riesgos de privacidad.
+- Digitalizacion de archivos orales y patrimonio linguistico: investigadores pueden transcribir grabaciones de campo en lotes sobre un portatil, con un modelo de 29,7 MB facil de versionar y desplegar.
+- Asistentes de voz en navegador para comunidades santali: la build WebAssembly permite incrustar la transcripcion en una pagina web sin backend, util para formularios o servicios publicos.
+- Manejo de habla mixta santali-ingles en contextos laborales o urbanos: el modelo conserva terminos ingleses en alfabeto latino, lo que facilita la lectura de transcripciones donde se mezclan ambos idiomas.
 
 ## Benchmarks y rendimiento
 
-Tasa de error de palabras (WER, %, menor es mejor). Misma muestra y mismo evaluador para todos los modelos; Shruti Santali medido en su motor en dispositivo sobre un Mac el 3 de noviembre de 2026.
+Tasa de error de palabra (WER, %, menor es mejor), medidos el 3 de noviembre de 2026 con los mismos clips y scorer para cada modelo; Shruti Santali evaluado en su motor on-device sobre un Mac.
 
-| Modelo | Tamaño de archivo | IndicVoices valid | DiarBench, inglés en inglés | DiarBench, nativo |
+| Modelo | Tamano de archivo | IndicVoices valid | DiarBench, ingles en ingles | DiarBench, nativo |
 |---|---|---|---|---|
 | Shruti Santali | 29,7 MB | 40,3 | 33,0 | 33,6 |
 | IndicConformer Santali (int8) | 137,7 MB | 42,6 | 35,4 | 34,2 |
 
-Datos adicionales aportados por el autor:
-
-- Intervalos de confianza pareados al 95 % (Shruti Santali menos IndicConformer Santali, en puntos de WER): IndicVoices valid de -5,29 a +0,52 por clip; DiarBench nativo de -3,16 a +2,03 por clip y de -2,67 a +1,61 por conversación; DiarBench inglés en inglés de -4,94 a +0,25 por clip y de -4,60 a +0,10 por conversación. Todos los intervalos incluyen 0.
-- Tasa de error de caracteres: IndicConformer Santali tiene menos errores en ambas pruebas (11,7 % frente a 15,88 %; 13,3 % frente a 16,88 %).
-- Palabras inglesas en letras latinas: 36,5 % de las 63 palabras inglesas de DiarBench en 99 turnos; IndicConformer Santali no escribe ninguna.
-- LibriSpeech test-clean: 5,98 (Shruti Hindi: 5,95).
-- Silencio: 0 palabras inventadas en 100 clips silenciosos.
-- DiarBench: 99 turnos de 28 conversaciones, 2.897 palabras de referencia, 63 de ellas en inglés, en 34 turnos.
+El autor senala que IndicConformer Santali tiene menos errores de caracter en ambas pruebas (11,7 % frente a 15,88 % y 13,3 % frente a 16,88 %). Los intervalos de confianza pareados al 95 % (Shruti Santali menos el otro modelo) incluyen el 0 en IndicVoices valid (-5,29 a +0,52 por clip) y en DiarBench nativo (-3,16 a +2,03 por clip; -2,67 a +1,61 por conversacion), por lo que no se puede afirmar una ventaja. En DiarBench "ingles en ingles" el intervalo es -4,94 a +0,25 por clip y -4,60 a +0,10 por conversacion. El modelo escribe en letras latinas el 36,5 % de las 63 palabras inglesas de DiarBench, mientras que IndicConformer Santali no escribe ninguna. En LibriSpeech test-clean obtiene 5,98 (dato truncado en la informacion disponible).
 
 ## Requisitos de hardware
 
-- VRAM/memoria estimada: 64 MB de memoria en el dispositivo según la medición del autor en un Samsung Galaxy F62; el archivo de pesos ocupa 29,7 MB.
-- GPU recomendadas: no se especifican; el modelo está diseñado para CPU y ejecución en dispositivo, no para GPU de datacenter.
-- Compatibilidad con GPU de consumo: no aplica como requisito; funciona en teléfonos, portátiles y navegador.
-- Opciones de despliegue: motor Cactus needle (nativo y WebAssembly), paquete Python `cactus-needle`, binario `needle` por plataforma y build `wasm/` para navegador. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: aproximadamente 13 veces más rápido que el tiempo real en un Samsung Galaxy F62 de 2021; no se publican más cifras de latencia.
+- VRAM/RAM estimada: alrededor de 64 MB de memoria en inferencia con el archivo `.cact` de 4 bits (medido en un Samsung Galaxy F62 de 2021).
+- GPU recomendadas: no requiere GPU; esta disenado para CPU. No se especifican requisitos para ejecucion en GPU.
+- Cabe en cualquier GPU de consumo e incluso en moviles de gama media; el modelo completo ocupa 29,7 MB en disco.
+- Opciones de despliegue: motor Cactus (`cactus-compute` en Python, binario `cactus` de linea de comandos y build WebAssembly). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: aproximadamente 13 veces mas rapido que tiempo real en un Samsung Galaxy F62 (2021). No se aportan cifras de latencia en otros dispositivos.
+- Nota: la version fp32 en safetensors se incluye pero el autor indica que no la ha probado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Tamaño | Contexto | WER IndicVoices valid | WER DiarBench nativo | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|---|
-| Shruti Santali | ~56M | 29,7 MB | No disponible (audio de cualquier duración) | 40,3 | 33,6 | Apache-2.0 | Hugging Face, GitHub, demo web |
-| IndicConformer Santali (int8) | No disponible (casi 5 veces mayor según el autor) | 137,7 MB | No disponible | 42,6 | 34,2 | No disponible en la información | Hugging Face (OpenVoiceOS/ai4bharat-indicconformer-sat-onnx) |
-| Shruti Hindi | No disponible | 29,5 MB (según el repositorio GitHub) | No disponible | No disponible | No disponible | Apache-2.0 | Hugging Face, GitHub |
+| Modelo | Parametros | Contexto/entrada | WER DiarBench nativo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Shruti Santali | ~56M | Audio 16 kHz de cualquier longitud | 33,6 | Apache-2.0 | Hugging Face, motor Cactus (nativo y WASM) |
+| IndicConformer Santali (int8) | No disponible (archivo 137,7 MB, ~5x mayor) | No disponible | 34,2 | No disponible en la informacion | Hugging Face (ONNX) |
+| Shruti Hindi (modelo base de la familia) | ~56M (misma familia) | Audio 16 kHz | No disponible | Apache-2.0 | Hugging Face, motor Cactus |
+
+La comparativa se limita a IndicConformer Santali, unico modelo con resultados medidos en la misma prueba. La diferencia de tamano (29,7 MB frente a 137,7 MB) es el principal argumento del autor, que no reclama superioridad en precision.
 
 ## Limitaciones y advertencias
 
-- El autor advierte que IndicVoices valid procede de la misma fuente que los datos de entrenamiento, aunque con hablantes y frases separados, por lo que favorece al modelo.
-- La prueba de inglés es muy reducida: solo 63 palabras inglesas en 99 turnos de DiarBench.
-- Ningún hablante nativo de santali ha revisado las salidas del modelo; el ejemplo de la model card procede de una voz sintética, no de habla real.
-- Mayor tasa de error de caracteres que IndicConformer Santali en ambas pruebas (15,88 % frente a 11,7 % y 16,88 % frente a 13,3 %).
-- Los intervalos de confianza pareados incluyen 0 en todas las comparaciones, por lo que no hay evidencia de superioridad frente a IndicConformer Santali.
-- Solo cubre santali e inglés; otros idiomas requieren sus propios modelos Shruti.
-- Riesgo de alucinación no cuantificado más allá de la prueba de silencio (0 palabras inventadas en 100 clips); no se documentan sesgos conocidos.
-- La licencia del modelo es Apache-2.0, pero el autor remite a las condiciones de los datos de entrenamiento para su uso.
-- El paquete `cactus-needle` envía recuentos de uso anónimos por defecto; debe desactivarse con `NEEDLE_TELEMETRY=0`.
-- No se documentan resultados de benchmarks estándar de ASR más allá de los indicados, ni soporte para tool calling o agentes.
+- La salida no ha sido revisada por ningun hablante nativo de santali; la calidad linguistica real esta pendiente de validacion humana.
+- La prueba en ingles es muy reducida (63 palabras en DiarBench), por lo que las conclusiones sobre su rendimiento en ingles son debiles.
+- IndicConformer Santali obtiene menos errores de caracter en ambas pruebas (11,7 % y 13,3 % frente a 15,88 % y 16,88 %).
+- El conjunto IndicVoices valid comparte fuente con los datos de entrenamiento, lo que puede favorecer al modelo; DiarBench, externo, es la referencia mas fiable.
+- Riesgo de sesgo por la composicion de los datos de entrenamiento (IndicVoices, Vaani, LibriSpeech), no documentada en detalle.
+- La licencia del modelo es Apache-2.0, pero el autor remite a los terminos de los datos de entrenamiento, que pueden imponer restricciones adicionales para uso comercial.
+- El paquete `cactus-compute` envia conteos de uso anonimos por defecto; es necesario definir `CACTUS_TELEMETRY=0` para desactivarlo.
+- La version fp32 en safetensors no ha sido probada por el autor.
+- El modelo solo cubre santali e ingles; otros idiomas requieren sus propios modelos de la familia Shruti.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/udgamlabs/shruti-santali
-- Colección de la familia Shruti: https://huggingface.co/collections/udgamlabs/shruti-6ad5f80d9d300685a6249c9b
-- Modelo base Shruti Hindi: https://huggingface.co/udgamlabs/Shruti
-- Cactus Whistle: https://huggingface.co/Cactus-Compute/whistle
-- Motor Cactus needle: https://huggingface.co/Cactus-Compute/needle3
-- Demo en Hugging Face: https://huggingface.co/spaces/udgamlabs/Shruti
-- Código y ejemplos: https://github.com/udgamlabs/shruti
-- Documentación específica de santali: https://github.com/udgamlabs/shruti/blob/main/docs/santali.md
-- Página del modelo en Udgam Labs: https://udgamlabs.com/models/shruti/santali
-- Sitio de Udgam Labs: https://udgamlabs.com/
-- IndicConformer Santali (ONNX int8): https://huggingface.co/OpenVoiceOS/ai4bharat-indicconformer-sat-onnx
+- Coleccion de la familia Shruti: https://huggingface.co/collections/udgamlabs/shruti-6ad5f80d9d300685a6249c9b
+- Modelo base Cactus Whistle: https://huggingface.co/Cactus-Compute/whistle
+- Motor Cactus: https://huggingface.co/Cactus-Compute/cactus
+- Binarios de Cactus 4.1.0: https://huggingface.co/Cactus-Compute/cactus/tree/main/releases/4.1.0
+- Pagina del modelo en Udgam Labs: https://udgamlabs.com/models/shruti/santali
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/udgamlabs/Shruti
+- Codigo y ejemplos (documentacion santali): https://github.com/udgamlabs/shruti/blob/main/docs/santali.md
+- IndicConformer Santali (ONNX): https://huggingface.co/OpenVoiceOS/ai4bharat-indicconformer-sat-onnx

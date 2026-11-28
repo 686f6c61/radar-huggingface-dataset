@@ -2,94 +2,117 @@
 
 ## Resumen
 
-Ling-3.2-air-GGUF es una colección de cuantizaciones en formato GGUF del modelo base `inclusionAI/Ling-3.2-air`, publicadas por el usuario aj9o9. El modelo original es un transformer de tipo mixture-of-experts (MoE) con arquitectura `bailingmoe3`, desarrollado por InclusionAI, y esta ficha describe la variante cuantizada, no el modelo original. El repositorio contiene cuatro niveles de cuantización (XS, S, M y L) generados a partir de la release oficial en FP8 mediante redondeo con realimentación de error GPTQ sobre los expertos enrutados y calibración con el propio formato de chat de Ling.
+Ling-3.2-air es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por inclusionAI, con un total de 127.486.405.600 parametros y aproximadamente 5.500 millones de parametros activos por token. Combina capacidades de texto y vision (pipeline `image-text-to-text`) y emplea la arquitectura `bailingmoe3`, soportada por llama.cpp. Esta ficha documenta concretamente la version cuantizada en GGUF publicada por el usuario aj9o9, que ofrece cuatro niveles de compresion (XS, S, M y L) pensados para distintos presupuestos de VRAM y RAM.
 
-La relevancia de esta publicación radica en que permite ejecutar un modelo de aproximadamente 127.500 millones de parámetros totales en hardware de consumo, algo imposible con los pesos en FP8 o BF16. Las cuantizaciones están diseñadas explícitamente para el motor `maya-ling` del proyecto Project Maya, aunque según el autor también cargan en llama.cpp estándar. El modelo está orientado a uso conversacional y se distribuye bajo licencia MIT.
+El principal valor de esta publicacion es que permite ejecutar un modelo MoE de 124B parametros en hardware de consumo mediante una estrategia de offloading hibrido: los expertos mas utilizados se mantienen en la GPU y el resto en RAM, con lectura desde SSD como ultimo recurso. Los cuants han sido validados contra el modelo original en FP8 mediante metricas de divergencia KL y coincidencia del token mas probable, no solo con perplejidad, lo que aporta una referencia de calidad mas fiable.
 
-El modelo base cuenta con 127.486.405.600 parámetros según los tensores safetensors del repositorio original, y el repositorio GGUF ocupa 215,7 GB en total. No se dispone de información sobre el número de parámetros activos, la longitud de contexto ni los idiomas soportados en la información proporcionada.
+El modelo esta liberado bajo licencia MIT y esta orientado a Project Maya (motor `maya-ling`), aunque los ficheros GGUF tambien cargan en llama.cpp. La relevancia actual radica en la posibilidad de desplegar un modelo multimodal de gran escala en una unica GPU de 24 GB con resultados de velocidad medidos y reproducibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (etiqueta `bailingmoe3` en llama.cpp) |
-| Parametros totales | 127.486.405.600 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF en cuatro niveles propietarios: XS (30,3 GB), S (46,0 GB), M (61,8 GB), L (77,6 GB); tipos de tensor por cuantización en `recipes/` |
+| Arquitectura | MoE transformer (`bailingmoe3`), con vision (image-text-to-text) |
+| Parametros totales | 127.486.405.600 (~127,5B) |
+| Parametros activos | ~5,5B (según model card del cuantizador) |
+| Longitud de contexto | Hasta 81.920 tokens configurado en las pruebas (80K) |
+| Tipos de cuantizacion | GGUF en cuatro tiers: XS (30,3 GB), S (46,0 GB), M (61,8 GB), L (77,6 GB); proyector de vision en BF16 (829 MiB) |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Formato de pesos | GGUF (con fichero `mmproj` separado para vision) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con mezcla de expertos (MoE), identificado en llama.cpp con la arquitectura `bailingmoe3`. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se detallan innovaciones arquitectónicas específicas más allá de la propia estructura MoE.
+La informacion disponible confirma que Ling-3.2-air es un modelo MoE con 127,5B parametros totales y aproximadamente 5,5B activos, construido sobre el layout `bailingmoe3` que implementa llama.cpp. Incorpora un proyector de vision (`Ling-3.2-air-mmproj-BF16.gguf`, 829 MiB) que habilita la entrada de imagenes y funciona con todos los tiers de cuantizacion. La model card del cuantizador no detalla la composicion del dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO; esa informacion corresponderia al modelo base `inclusionAI/Ling-3.2-air`, no incluida en los datos proporcionados.
 
-Las cuantizaciones de esta ficha se generaron a partir de la release oficial en FP8 del modelo, aplicando redondeo con realimentación de error (error-feedback rounding) de tipo GPTQ sobre los expertos enrutados y empleando la importancia por experto derivada de la calibración con el formato de chat propio de Ling. Los cuatro niveles (XS, S, M, L) presentan un compromiso distinto entre tamaño, divergencia KL respecto a FP8 y porcentaje de coincidencia en el token superior. Los niveles M y L están divididos en dos ficheros (`-00001-of-00002`), y el cargador debe apuntarse al primero de ellos.
+La innovacion tecnica destacable de esta publicacion es el esquema de cuantizacion por tiers con validacion explicita frente al modelo FP8 de referencia. El autor reporta metricas de divergencia KL y de coincidencia del token mas probable sobre 32 secuencias reservadas de 2048 tokens, cubriendo chat, chat multilingue, razonamiento, codigo web, otro codigo, tool calls y wikitext. Ademas, el motor `maya-ling` implementa offloading mixto de expertos (GPU + RAM + SSD) y decodificacion especulativa mediante MTP (multi-token prediction) drafting, que en las pruebas incrementa notablemente el throughput frente a llama.cpp.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como `conversational` y la calibración se realizó con el formato de chat de Ling.
-- Razonamiento y generación de contenido general: capacidades heredadas del modelo base `inclusionAI/Ling-3.2-air`; no se detallan en la información disponible.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
+- Generacion de texto conversacional multi-turno con contexto largo (hasta 80K tokens en las pruebas).
+- Razonamiento y cadena de pensamiento (modo thinking activable/desactivable).
+- Generacion y comprension de codigo, incluyendo codigo web.
+- Tool calling / function calling (evaluado en el conjunto de validacion de cuantizacion).
+- Comprension de imagenes mediante el proyector de vision (`mmproj`), con pipeline `image-text-to-text`.
+- Capacidades multilingues (el conjunto de validacion incluye chat multilingue, aunque no se especifican los idiomas exactos).
+- Compatibilidad con APIs OpenAI (`/v1`) y Anthropic (`/v1/messages`) a traves de Project Maya.
+- Carga en llama.cpp ademas del motor propio `maya-ling`.
 
 ## Casos de uso
 
-- Inferencia local en GPU de consumo: la cuantización XS (30,3 GB) está pensada para una RTX 3060 de 12 GB junto con 16 GB de RAM, lo que permite ejecutar un modelo de 127.500 millones de parámetros totales en un equipo de gama media mediante offload parcial a memoria del sistema.
-- Despliegue en estaciones de trabajo con RTX 3090: las variantes S, M y L están dimensionadas para una RTX 3090 de 24 GB con 32, 48 o 64 GB de RAM respectivamente, lo que permite elegir el nivel de fidelidad frente a FP8 según la memoria disponible.
-- Prototipado de asistentes conversacionales: al estar calibrado con el formato de chat de Ling y etiquetado como conversacional, es adecuado para construir y validar flujos de diálogo multi-turno antes de pasar a infraestructura con los pesos en FP8.
-- Evaluación de la calidad de cuantización: los datos de divergencia KL y de coincidencia del token superior permiten a un equipo de investigación medir el impacto de cada nivel de cuantización en sus propias tareas antes de comprometerse con un despliegue.
-- Integración en pipelines basados en llama.cpp: al cargar en llama.cpp estándar, puede incorporarse a herramientas existentes del ecosistema GGUF (servidores locales, wrappers de API compatible con endpoints) sin necesidad de infraestructura adicional.
-- Experimentación con el motor `maya-ling`: las cuantizaciones están construidas específicamente para este motor de Project Maya, por lo que sirven como referencia para probar y comparar el rendimiento del motor frente a llama.cpp con los mismos pesos.
+- Asistente conversacional local con contexto largo: gracias a la ventana de hasta 80K tokens y al modo thinking, puede mantener conversaciones extensas con documentos largos en un solo equipo con GPU de 24 GB, usando el tier S o M.
+- Analisis de documentos con imagenes: el proyector de vision permite responder preguntas sobre capturas, diagramas o documentos escaneados combinando texto e imagen en la misma peticion.
+- Generacion de codigo en pipelines de desarrollo: el soporte de tool calling y la evaluacion especifica sobre codigo web y otro codigo lo hacen apto para integrarse en asistentes de IDE o revision de parches mediante la API compatible con OpenAI.
+- Automatizacion de agentes multi-paso: la combinacion de razonamiento, tool calling y contexto largo permite orquestar tareas con varias llamadas a herramientas manteniendo el estado en la ventana de contexto.
+- Despliegue en estaciones de trabajo con una sola GPU: el tier XS (30,3 GB) esta disenado para una RTX 3060 de 12 GB mas 16 GB de RAM, lo que habilita prototipos de un modelo de 124B en hardware de gama media.
+- Servicio de inferencia self-hosted con API compatible: Project Maya expone endpoints OpenAI y Anthropic, lo que permite sustituir proveedores cloud en entornos con requisitos de privacidad, usando el tier L en una GPU de 96 GB para maximizar calidad.
+- Procesamiento por lotes de textos largos: el throughput de lectura de prompt medido (hasta 2.210 tokens/s en 8K) hace viable el analisis de corpus extensos en local.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son las métricas de fidelidad de cada cuantización respecto a la release en FP8, junto con una puntuación zero-shot cuyo protocolo no se detalla (FP8 = 73,45).
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible. La model card proporciona metricas de fidelidad de cuantizacion y de velocidad, que se reproducen a continuacion.
 
-| Cuantizacion | Tamano | Hardware objetivo | KL vs FP8 | Coincidencia token superior | Zero-shot (FP8 = 73,45) |
-|---|---:|---|---:|---:|---:|
-| XS | 30,3 GB | RTX 3060 12 GB + 16 GB RAM | 0,654 | 78,7 % | 71,15 |
-| S | 46,0 GB | RTX 3090 24 GB + 32 GB RAM | 0,340 | 85,5 % | 75,50 |
-| M | 61,8 GB | RTX 3090 24 GB + 48 GB RAM | 0,204 | 89,8 % | 73,20 |
-| L | 77,6 GB | RTX 3090 24 GB + 64 GB RAM | 0,140 | 92,3 % | 73,70 |
+Fidelidad frente al modelo FP8 (32 secuencias x 2048 tokens; KL menor es mejor):
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+| Version | Tamano | KL ↓ | Mismo token top ↑ |
+|---|---:|---:|---:|
+| FP8 ejecutado dos veces (ruido) | 121 GB | 0,066 | 95,2% |
+| BF16 | 255 GB | 0,078 | 94,9% |
+| Q8_0 | 135,6 GB | 0,101 | 94,1% |
+| L | 77,6 GB | 0,140 | 92,3% |
+| bartowski Q4_K_M | 80,4 GB | 0,159 | 91,4% |
+| M | 61,8 GB | 0,204 | 89,8% |
+| bartowski Q3_K_M | 61,5 GB | 0,259 | 88,3% |
+| S | 46,0 GB | 0,340 | 85,5% |
+| bartowski IQ2_M | 47,1 GB | 0,437 | 83,6% |
+
+Velocidad del tier S en una RTX 3090 (24 GB, limitada a 250 W), 60 GB RAM, Ryzen 9 9900X, contexto 80K, cache KV q8, MTP activo, thinking desactivado, greedy:
+
+| Metrica | Maya (todo en VRAM+RAM) | Maya (0,3 GB en SSD) | llama.cpp |
+|---|---:|---:|---:|
+| Escritura (respuestas cortas) | 106 tok/s | 70 tok/s | 34 tok/s |
+| Escritura tras prompt de 30K | 79 tok/s | 76 tok/s | no disponible |
+| Lectura de prompt 2K / 8K | 1.734 / 2.210 tok/s | 1.089 / 2.142 tok/s | ~370 tok/s (7K) |
+| Lectura de prompt 30K | 1.905 tok/s (15,5 s) | 1.834 tok/s (16,1 s) | no disponible |
+
+En una RTX PRO 6000 (96 GB), con el modelo completo en VRAM, todos los tiers generan a 145-195 tokens/s.
 
 ## Requisitos de hardware
 
-- VRAM y RAM estimadas según el autor: XS requiere una RTX 3060 de 12 GB más 16 GB de RAM del sistema; S, M y L requieren una RTX 3090 de 24 GB más 32, 48 y 64 GB de RAM respectivamente.
-- GPU recomendadas: RTX 3060 12 GB para XS; RTX 3090 24 GB para S, M y L. No se especifican GPUs de clase A100 u H100 en la información disponible.
-- Viabilidad en GPU de consumo: sí, todas las variantes están dimensionadas para GPU de consumo con offload a RAM del sistema; ninguna cabe íntegramente en una sola GPU de consumo.
-- Opciones de despliegue: llama.cpp (carga estándar de GGUF `bailingmoe3`) y el motor `maya-ling` de Project Maya. No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: no disponibles en la información proporcionada.
-- Nota de carga: las variantes M y L están divididas en dos ficheros; el cargador debe apuntarse a `-00001-of-00002`.
+- VRAM estimada por tier: XS pensado para 12 GB de VRAM mas 16 GB de RAM; S para 24 GB de VRAM mas 32 GB de RAM; M para 24 GB de VRAM mas 48 GB de RAM; L para 24 GB de VRAM mas 64 GB de RAM.
+- GPU recomendadas: RTX 3060 12 GB (tier XS), RTX 3090 / RTX 4090 24 GB (tiers S, M y L con offloading), RTX PRO 6000 96 GB (cualquier tier completo en VRAM).
+- Cabe en GPU de consumo: si, mediante los tiers XS y S en tarjetas de 12 y 24 GB respectivamente, con apoyo de RAM del sistema.
+- Opciones de despliegue: Project Maya (motor `maya-ling`, disponible via PR mw00/project-maya#1224, con API OpenAI y Anthropic) y llama.cpp (usando `-m` y `--mmproj`).
+- Latencia y throughput: en RTX 3090 con tier S, 106 tok/s de generacion y hasta 2.210 tok/s de lectura de prompt; en RTX PRO 6000, 145-195 tok/s. Requiere dejar unos 51 GB de RAM libres al arrancar Maya para el tier S; si parte de los expertos cae en SSD, la generacion cae aproximadamente un tercio.
+- Nota operativa: `--reserve-gb 0.5` evita fallos de asignacion con prompts largos; la cache KV en q8 resulto mas rapida que fp16 al liberar VRAM para expertos.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la documentación proporcionada. La única referencia cuantitativa es el propio modelo base en FP8, que sirve como línea base de fidelidad:
-
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Activos | Contexto | Licencia | Formato disponible |
 |---|---|---|---|---|---|
-| Ling-3.2-air (FP8) | 127.486.405.600 | no disponible | MIT | safetensors | Línea base; zero-shot 73,45 |
-| Ling-3.2-air-GGUF XS | 127.486.405.600 | no disponible | MIT | GGUF | KL 0,654; zero-shot 71,15 |
-| Ling-3.2-air-GGUF S | 127.486.405.600 | no disponible | MIT | GGUF | KL 0,340; zero-shot 75,50 |
-| Ling-3.2-air-GGUF M | 127.486.405.600 | no disponible | MIT | GGUF | KL 0,204; zero-shot 73,20 |
-| Ling-3.2-air-GGUF L | 127.486.405.600 | no disponible | MIT | GGUF | KL 0,140; zero-shot 73,70 |
+| Ling-3.2-air (esta ficha, GGUF) | ~127,5B | ~5,5B | hasta 80K en pruebas | MIT | GGUF + mmproj |
+| Ling-3.2-air FP8 (base) | ~127,5B | ~5,5B | no disponible | MIT | FP8 |
+| Ling-3.2-air BF16 (base) | ~127,5B | ~5,5B | no disponible | MIT | BF16 |
+| bartowski Q4_K_M / Q3_K_M / IQ2_M (mismo modelo) | ~127,5B | ~5,5B | no disponible | MIT | GGUF |
+
+No se dispone de datos de otros modelos de la misma categoria en la informacion proporcionada para establecer una comparativa cruzada de rendimiento; los unicos puntos de comparacion disponibles son las cuantizaciones alternativas del mismo modelo base.
 
 ## Limitaciones y advertencias
 
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y la model card indica que la ficha completa con tablas de precisión está pendiente; la información disponible es provisional.
-- La puntuación zero-shot de la variante S (75,50) supera a la del propio FP8 (73,45), lo que sugiere que la métrica o el protocolo de evaluación no son directamente comparables entre niveles; conviene tratar estos números con cautela.
-- Las cuantizaciones están optimizadas para el motor `maya-ling`; el rendimiento en llama.cpp estándar puede diferir del reportado por el autor.
-- El modelo está etiquetado como conversacional y calibrado con el formato de chat de Ling; un uso fuera de ese formato puede degradar la calidad.
-- No se dispone de información sobre sesgos, riesgo de alucinación, limitaciones de contexto o cobertura idiomática del modelo base.
-- La licencia MIT permite uso comercial, pero se hereda del modelo base `inclusionAI/Ling-3.2-air`; conviene verificar las condiciones del repositorio original.
-- El tamaño del repositorio (215,7 GB) y la necesidad de offload a RAM implican requisitos de almacenamiento y de ancho de banda de memoria considerables en producción.
+- El soporte de Ling en Project Maya es todavia una pull request (mw00/project-maya#1224); no forma parte de una version estable y puede cambiar.
+- Los tiers no estan en el catalogo de Maya; la pantalla de setup muestra el cuant S del PR en lugar del tier descargado.
+- El rendimiento depende criticamente de la RAM libre: si parte de los expertos se lee desde SSD, la generacion cae alrededor de un tercio y la tasa de acierto de expertos en GPU baja del 92% al 69%.
+- El tier XS presenta una divergencia KL de 0,654 y solo un 78,7% de coincidencia del token top frente al FP8, lo que implica una perdida de calidad notable.
+- No se especifican los idiomas soportados ni el comportamiento multilingue real, pese a que el conjunto de validacion incluye chat multilingue.
+- No hay datos publicados de benchmarks estandar de capacidad (razonamiento, codigo, matematicas) en la informacion disponible.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan evaluaciones de sesgo ni de robustez.
+- La licencia MIT permite uso comercial, pero se recomienda verificar las condiciones del modelo base `inclusionAI/Ling-3.2-air` y de sus datos de entrenamiento.
+- Los ficheros M y L estan divididos en dos shards; es necesario descargar ambos y apuntar el cargador al primero.
+- La decodificacion especulativa MTP y la cache KV q8 son ajustes medidos en un entorno concreto (Linux, NVIDIA, CUDA 12/13); su comportamiento en otras configuraciones puede variar.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/aj9o9/Ling-3.2-air-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.2-air
+- Project Maya: https://github.com/mw00/project-maya
+- Pull request con soporte Ling: https://github.com/mw00/project-maya/pull/1224

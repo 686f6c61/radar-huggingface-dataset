@@ -2,95 +2,102 @@
 
 ## Resumen
 
-`IssacKIM/pick_and_place_act` es una política de imitación para robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. El modelo lo ha entrenado y subido a Hugging Face el usuario IssacKIM utilizando LeRobot, la librería de aprendizaje automático para robótica real de Hugging Face. Resuelve una tarea concreta de manipulación —recoger y colocar un objeto, identificada como `pick_and_place`— sobre un robot de tipo `omx_follower` equipado con dos cámaras (muñeca y cenital).
+`IssacKIM/pick_and_place_act` es una política de robótica basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación presentado en el paper arXiv:2304.13705. El modelo predice secuencias cortas de acciones (chunks) en lugar de pasos individuales, lo que reduce el error de acumulación y mejora la estabilidad en tareas de manipulación. Ha sido entrenado y publicado mediante LeRobot, la librería de Hugging Face para aprendizaje automático en robótica real.
 
-A diferencia de un modelo de lenguaje, esta política consume observaciones multimodales del robot (estado articular de 6 dimensiones e imágenes RGB de 480x640 de dos vistas) y produce directamente comandos de acción de 6 dimensiones. La arquitectura es un transformer con codificador visual y decodificador de acciones, con 51.668.614 parámetros totales según los pesos en safetensors. El repositorio ocupa 0,2 GB.
+El modelo consume el estado articular del robot (vector de 6 dimensiones) y dos flujos de imagen RGB de 480x640 píxeles procedentes de cámaras de muñeca y cenital, y produce un vector de acción de 6 dimensiones. Está especializado en la tarea concreta de "pick_and_place" sobre un robot de tipo `omx_follower`, entrenado con 50 episodios de teleoperación que suman 22.117 fotogramas a 30 FPS.
 
-La relevancia del modelo es acotada: se trata de un artefacto de entrenamiento con 500 pasos, batch de 10 y un dataset de solo 50 episodios (14.745 fotogramas a 30 FPS). No es un modelo de propósito general ni un checkpoint de referencia, sino un ejemplo reproducible del flujo de trabajo de LeRobot para imitación robótica de una tarea única. No se han publicado resultados de evaluación en robot real.
+Con 51.668.614 parámetros y un repositorio de 1,0 GB en formato safetensors, es un modelo compacto orientado a inferencia en tiempo real sobre hardware de consumo. Su relevancia radica en ser un ejemplo reproducible de política visuomotora entrenada de extremo a extremo con LeRobot 0.7.1, útil como referencia para pipelines de imitación en robótica de bajo coste.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ACT (Action Chunking with Transformers): transformer con codificador visual y decodificador de acciones |
+| Arquitectura | ACT (Action Chunking with Transformers), transformer con encoder visual y decoder de acciones |
 | Parametros totales | 51.668.614 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (política de imitación; ventana de observación definida por la configuración de entrenamiento) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (política de imitación, no modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
-| Licencia | no disponible (la model card indica "[More Information Needed]") |
-| Formato de pesos | safetensors (librería lerobot) |
+| Idiomas soportados | no disponible (modelo de robótica, sin capacidades lingüísticas) |
+| Licencia | no disponible |
+| Formato de pesos | safetensors |
+| Entrada | `observation.state` (6,), `observation.images.wrist` (3, 480, 640), `observation.images.top` (3, 480, 640) |
+| Salida | `action` (6,) |
+| Tipo de robot | `omx_follower` |
+| Camaras | `wrist`, `top` |
+| Tarea | `pick_and_place` |
+| Libreria | lerobot 0.7.1 |
+| Pipeline | robotics |
 
 ## Arquitectura y entrenamiento
 
-ACT es un método de aprendizaje por imitación que predice trozos cortos de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error de acumulación y suele lograr tasas de éxito altas en tareas de manipulación teleoperadas. La política combina un codificador visual que procesa las dos cámaras de entrada (`observation.images.wrist` y `observation.images.top`, ambas de 3x480x640) con un transformer que modela la secuencia de estados y acciones; la salida es un vector de acción de 6 dimensiones que se corresponde con el estado articular de 6 dimensiones del robot `omx_follower`.
+ACT es un método de aprendizaje por imitación que combina un backbone transformer con un esquema de predicción por chunks: en cada paso de inferencia el modelo emite un bloque de acciones futuras en lugar de una única acción, lo que mitiga el problema de acumulación de errores típico de las políticas paso a paso. La arquitectura integra dos cámaras RGB (muñeca y cenital) junto con el estado propioceptivo del robot para producir comandos de 6 grados de libertad.
 
-El entrenamiento se realizó con LeRobot 0.6.2 sobre el dataset `IssacKIM/pick_and_place`: 50 episodios, 14.745 fotogramas a 30 FPS, una única tarea (`pick_and_place`). La configuración es muy corta: 500 pasos de entrenamiento, batch size 10, optimizador AdamW, learning rate 1e-05 y semilla 1000. No se documenta composición del dataset más allá del número de episodios y fotogramas, ni se indica si hubo aumentación de datos, RLHF, DPO u otras técnicas de ajuste. Tampoco se especifican detalles del backbone visual ni de la dimensión interna del transformer.
+El entrenamiento se realizó sobre el dataset `IssacKIM/pick_and_place_20261112_143943`, compuesto por 50 episodios y 22.117 fotogramas capturados a 30 FPS durante teleoperación de la tarea "pick_and_place". La configuración reportada incluye 50.000 pasos de entrenamiento, batch size de 32, optimizador AdamW con learning rate 1e-5 y semilla 1000. No se documentan detalles sobre composición del dataset, aumentos de datos, regularización ni procesos de RLHF o DPO (no aplicables a este tipo de política).
 
 ## Capacidades
 
-- Control robótico de manipulación: genera comandos de acción de 6 dimensiones para el robot `omx_follower` a partir de estado articular e imágenes.
-- Percepción visual multimodal: procesa simultáneamente una vista de muñeca y una vista cenital a resolución 480x640.
-- Ejecución de una tarea única: `pick_and_place` (recoger y colocar), sin capacidad de generalización declarada a otras tareas.
-- Aprendizaje por imitación: reproduce comportamientos derivados de datos teleoperados.
-- No soporta tool calling ni function calling (no es un modelo de lenguaje).
-- No soporta razonamiento multi-paso ni agentes conversacionales.
-- No tiene capacidades multilingües ni de generación de texto.
-- No incluye modo de pensamiento (thinking), visión general, audio ni otras capacidades especiales.
+- Control visuomotor de un robot `omx_follower` para la tarea específica de recoger y colocar objetos.
+- Predicción de chunks de acciones de 6 dimensiones a partir de estado propioceptivo y dos vistas RGB.
+- Aprendizaje por imitación a partir de demostraciones teleoperadas, sin necesidad de recompensas explícitas.
+- Inferencia en tiempo real mediante el comando `lerobot-rollout` de LeRobot.
+- Integración con el ecosistema LeRobot para entrenamiento, evaluación y despliegue.
+- No soporta tool calling, function calling, agentes multi-paso, capacidades multilingües ni modos de razonamiento explícito.
 
 ## Casos de uso
 
-- Recogida y colocación de objetos en un banco de trabajo: la política ejecuta la tarea `pick_and_place` sobre el robot `omx_follower` usando las dos cámaras; es adecuada porque fue entrenada exactamente para esa tarea y esa configuración de sensores.
-- Reproducción del flujo de imitación con LeRobot: sirve como ejemplo funcional para validar la instalación de LeRobot 0.6.2, el comando `lerobot-rollout` y la integración de cámaras OpenCV a 30 FPS.
-- Prototipado de pipelines de robótica: permite probar el ciclo completo de grabación de datos, entrenamiento con `lerobot-train` y despliegue con `lerobot-rollout` antes de invertir en datasets mayores.
-- Docencia y demostraciones: al ser un checkpoint pequeño (0,2 GB, 51,7 M de parámetros) y con configuración de entrenamiento documentada, es útil para explicar ACT y el aprendizaje por imitación en entornos académicos.
-- Base para fine-tuning con datos propios: se puede partir de esta política y reentrenar con un dataset mayor del mismo robot y tarea para mejorar la robustez.
-- Evaluación comparativa de métodos de imitación: sirve como línea base de ACT frente a otros métodos disponibles en LeRobot (por ejemplo, diffusion policy) sobre la misma tarea y robot.
+- Automatización de pick-and-place en entornos controlados: la política ejecuta la tarea para la que fue entrenada sobre un robot `omx_follower` con dos cámaras; adecuada para líneas de montaje sencillas o laboratorios de robótica.
+- Base para fine-tuning en tareas de manipulación similares: al ser un checkpoint ACT de 51,7 M de parámetros, puede reentrenarse con nuevos datasets LeRobot para adaptar la política a otras posiciones de objetos o variantes de la tarea.
+- Referencia docente en cursos de aprendizaje por imitación: el pipeline completo (grabación, entrenamiento, rollout) está documentado en LeRobot y sirve como ejemplo reproducible de extremo a extremo.
+- Prototipado rápido de políticas visuomotoras: el tamaño compacto permite iterar sobre hardware de consumo sin necesidad de clústeres GPU.
+- Evaluación comparativa de métodos de imitación: sirve como baseline ACT frente a otras políticas (Diffusion Policy, VQ-BeT) en experimentos académicos.
+- Despliegue en robots de bajo coste: al requerir únicamente dos cámaras USB y un robot `omx_follower`, el coste de hardware es reducido frente a configuraciones con sensores adicionales.
+- Investigación en robustez visual: permite estudiar cómo afectan cambios de iluminación, posición de cámara o distractores al rendimiento de una política ACT entrenada con 50 episodios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente: "No evaluation results have been provided for this policy yet." No se dispone de tasas de éxito en robot real, número de ensayos ni condiciones de evaluación.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que no se han proporcionado resultados de evaluación en robot real ("No evaluation results have been provided for this policy yet").
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; con 51,7 M de parámetros y entradas de dos imágenes de 480x640, la huella es modesta y cabe con holgura en GPUs de consumo, aunque no se documenta una cifra concreta.
-- GPU recomendadas: no disponible; el comando de entrenamiento de la model card usa `--policy.device=cuda`, lo que implica una GPU NVIDIA, pero no se especifica modelo.
-- GPU de consumo: previsiblemente compatible con tarjetas consumer recientes por el tamaño del modelo, si bien no hay confirmación en la documentación.
-- Opciones de despliegue: LeRobot (`lerobot-rollout` para inferencia y `lerobot-train` para entrenamiento), con la política cargada desde `IssacKIM/pick_and_place_act`; requiere robot `omx_follower` y dos cámaras OpenCV a 640x480 y 30 FPS.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 51,7 M de parámetros en fp32 el peso ronda los 207 MB, por lo que cualquier GPU con 2 GB o más es suficiente en la práctica.
+- GPU recomendadas: no especificadas por el autor; por tamaño, una RTX 3060, RTX 4060 o superior es más que suficiente; A100/H100 no son necesarias.
+- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1660, RTX 2060 en adelante).
+- Opciones de despliegue: LeRobot (`lerobot-rollout`), con soporte para CUDA; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a políticas robóticas).
+- Latencia y throughput estimados: no disponibles; dependen del robot, las cámaras y el hardware de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IssacKIM/pick_and_place_act | 51,7 M | no disponible | pick_and_place (omx_follower) | no disponible | Hugging Face, 0 descargas |
-| Otras políticas ACT en LeRobot Hub | no disponible | no disponible | variables por robot y tarea | variable | Hugging Face |
-| Políticas de diffusion en LeRobot Hub | no disponible | no disponible | variables por robot y tarea | variable | Hugging Face |
+| `IssacKIM/pick_and_place_act` | 51,7 M | no aplica | pick_and_place (omx_follower) | no disponible | Hugging Face |
+| ACT (paper original, arXiv:2304.13705) | no disponible | no aplica | Manipulación general (ALOHA) | no disponible | Paper + código |
+| Diffusion Policy (referencia metodológica) | no disponible | no aplica | Manipulación visuomotora | no disponible | Repos públicos |
+| Otras políticas LeRobot en el Hub | variable | no aplica | Tareas diversas | variable | Hugging Face |
 
-No se dispone de datos de rendimiento comparables entre estas políticas en la información proporcionada. La comparación se limita a la categoría (políticas de imitación entrenadas con LeRobot) y no a métricas de éxito, que no se han publicado para este checkpoint.
+La comparación cuantitativa con alternativas no está disponible al no haberse publicado métricas de éxito en robot real para este checkpoint.
 
 ## Limitaciones y advertencias
 
-- Entrenamiento muy corto: 500 pasos con batch 10 y learning rate 1e-05 sobre 50 episodios; es probable que la política esté infraentrenada y no generalice.
-- Dataset pequeño y de una sola tarea: 14.745 fotogramas para una única tarea `pick_and_place`; no hay evidencia de robustez ante cambios de posición de objetos, iluminación o distractores.
-- Sin evaluación publicada: no hay tasas de éxito ni número de ensayos, por lo que no se puede afirmar su fiabilidad en producción.
-- Específica de hardware: diseñada para el robot `omx_follower` con cámaras `wrist` y `top`; no es transferible directamente a otras configuraciones sin reentrenamiento.
-- Licencia no especificada: la model card indica "[More Information Needed]", lo que impide confirmar el uso comercial.
-- Riesgo de sobreajuste al entorno de grabación: al ser imitación sobre pocos episodios, puede reproducir sesgos de la demostración (posiciones, velocidades, objetos concretos).
-- Sin capacidades de lenguaje, razonamiento simbólico ni tool calling: no debe emplearse fuera del contexto de control robótico para el que fue entrenada.
-- Fecha de creación futura en los metadatos (2026-11-10): conviene verificar la integridad y procedencia del repositorio antes de usarlo.
+- Especialización extrema: la política solo se ha entrenado para la tarea "pick_and_place" sobre un robot `omx_follower`; no generaliza a otras tareas, robots o configuraciones de cámara sin reentrenamiento.
+- Sin evaluación publicada: no hay tasas de éxito en robot real, por lo que no puede afirmarse su fiabilidad en producción.
+- Dataset pequeño: 50 episodios y 22.117 fotogramas son una base limitada; es probable que la política sea sensible a cambios de iluminación, posición de objetos o distractores.
+- Dependencia de la configuración de cámaras: los nombres y la resolución (`wrist`, `top`, 480x640) deben coincidir exactamente con los usados en entrenamiento.
+- Licencia no especificada: no se puede confirmar el uso comercial; el autor deja el campo como "More Information Needed".
+- Riesgo de sobreajuste al entorno de captura: sin datos de aumentación ni validación cruzada, el rendimiento fuera del setup original es incierto.
+- Sin capacidades lingüísticas, de razonamiento simbólico ni de tool calling; no es un modelo de propósito general.
+- Sin información sobre sesgos: al ser una política robótica, los sesgos relevantes serían de distribución visual y de dinámica del robot, no documentados.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/IssacKIM/pick_and_place_act
-- Dataset de entrenamiento: https://huggingface.co/datasets/IssacKIM/pick_and_place
-- Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
-- Guía de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act
-- Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
-- Repositorio LeRobot: https://github.com/huggingface/lerobot
+- Hugging Face: https://huggingface.co/IssacKIM/pick_and_place_act
+- Dataset de entrenamiento: https://huggingface.co/datasets/IssacKIM/pick_and_place_20261112_143943
+- Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=IssacKIM/pick_and_place_20261112_143943
+- Paper ACT: https://huggingface.co/papers/2304.13705
+- Guía ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act
+- Documentación LeRobot: https://huggingface.co/docs/lerobot/index
 - Instalación de LeRobot: https://huggingface.co/docs/lerobot/main/en/installation
 - Guía de hardware: https://huggingface.co/docs/lerobot/main/en/hardware_guide
 - Grabación de datos y entrenamiento: https://huggingface.co/docs/lerobot/en/il_robots
-- Referencia rápida de comandos: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
+- Cheat-sheet de CLI: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Documentación de inferencia/rollout: https://huggingface.co/docs/lerobot/main/en/inference
-- Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=IssacKIM/pick_and_place
+- Repositorio LeRobot: https://github.com/huggingface/lerobot

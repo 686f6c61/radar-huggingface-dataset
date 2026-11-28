@@ -2,110 +2,119 @@
 
 ## Resumen
 
-Inkling-2-Mini-LookAtMyQuant-8.9GB es una cuantizacion post-entrenamiento (PTQ) del modelo base thinkingmachines/Inkling-2-Mini, un Mixture-of-Experts de 26.4B parametros fisicos y 5.4B activos con tres bucles de reutilizacion de capas (3x-looped MoE). La publica el usuario shinmegamiboson mediante el compilador LookAtMyQuant, que comprime los 18.89 GB de pesos nativos en texto hasta 8.85 GB empaquetados (8.88 GB de repositorio incluyendo tokenizer), lo que equivale a 2.72 bits por parametro de texto y una ratio de compresion de 2.1x.
+Inkling-2-Mini-LookAtMyQuant-8.9GB es una cuantizacion agresiva del modelo base `thinkingmachines/Inkling-2-Mini`, un transformer de tipo Mixture-of-Experts (MoE) con 26.400 millones de parametros totales y 5.400 millones activos por token. El autor de la cuantizacion es el usuario de Hugging Face `shinmegamiboson`, que utiliza su propio compilador de cuantizacion llamado LookAtMyQuant para comprimir los 18,89 GB de pesos nativos en BF16 hasta 8,85 GB, lo que supone una ratio de compresion de 2,1x y una media de 2,72 bits por parametro de texto.
 
-El objetivo del checkpoint es ejecutar un MoE de 26B en hardware de consumo, en particular Apple Silicon via MLX, sin sacrificar de forma apreciable la calidad del profesor BF16. Segun la model card, con `--max-thinking-tokens 960` y `max_new_tokens = 1536` alcanza un 95.5% de media en GSM8K (test[:200]) y HumanEval estricto (164 problemas), frente al 95.7% del BF16 original, es decir, retiene el 99.8% del rendimiento del profesor.
+El problema que resuelve esta build es permitir ejecutar un modelo MoE de 26B parametros en hardware de consumo, concretamente en Apple Silicon mediante MLX y en GPUs NVIDIA mediante CUDA, manteniendo una calidad cercana al modelo original. Segun la model card, la build alcanza un 95,5% de media en dos tareas (GSM8K y HumanEval) con un limite de 960 tokens de razonamiento, lo que representa el 99,8% del rendimiento del profesor BF16 (95,7%). El modelo esta empaquetado con la libreria `trellis` y soporta decodificacion especulativa mediante un drafter DSpark de 179 MB.
 
-La relevancia actual reside en la combinacion de tres factores: cuantizacion NVFP4 selectiva por buckets de sensibilidad, un runtime propio (LookAtMyQuant, instalable via pip) y un drafter de 179 MB en 4 bits que habilita decodificacion especulativa sin perdida, elevando el decode serial de 56.0 tok/s a 117.9 tok/s medianos en un Apple M5 Max.
+La relevancia actual de esta ficha reside en que demuestra que la cuantizacion extrema (por debajo de 3 bits por parametro) puede ser viable para modelos MoE cuando se aplica una estrategia selectiva que preserva los expertos mas criticos en formatos de mayor precision. El modelo conserva licencia Apache 2.0 y soporta ingles y otros idiomas, lo que lo hace apto para despliegues en produccion con restricciones de memoria.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE con 3 bucles de capas (3x-looped MoE) |
-| Parametros totales | 26.4B fisicos |
-| Parametros activos | 5.4B |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (4.50 bpp) en 23/192 buckets MoE de alta sensibilidad; mezcla NVFP4 + cuantizacion Trellis a 2.72 bpp global; polaco de filas/columnas pre-RHT y steering |
-| Idiomas soportados | en, multilingual (evaluado en 13 idiomas en el conjunto all13_KL) |
-| Licencia | apache-2.0 |
-| Formato de pesos | Trellis (libreria `trellis`), pesos empaquetados; runtime MLX para Apple Silicon |
+| Arquitectura | Transformer Mixture-of-Experts (MoE) con atencion estandar; empaquetado con trellis |
+| Parametros totales | 26.400 millones (26,4B) |
+| Parametros activos | 5.400 millones (5,4B) por token |
+| Longitud de contexto | No disponible (la model card menciona evaluacion de recall a 16.384 tokens, pero no se especifica el maximo oficial) |
+| Tipos de cuantizacion | 2,72 bits por parametro de texto; mezcla de NVFP4 nativo (4,50 bpp) para 23/192 buckets de expertos, codigos trellis ht2/ht3/rtr4 de 4 KB SRAM, y suelo trellis de 2 bits en la cola del output head |
+| Idiomas soportados | Ingles y multilingue (13 idiomas evaluados en calibracion) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Pesos empaquetados para runtime LookAtMyQuant (MLX y CUDA); no se especifica safetensors ni GGUF estandar |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un Mixture-of-Experts con 26.4B parametros fisicos y 5.4B activos, organizado en 192 buckets MoE y con tres bucles de reutilizacion de capas (3x-looped). Los pesos nativos en texto ocupan 18.89 GB y el profesor BF16 sirve como referencia de calidad (5.80 bpp). Esta ficha describe la cuantizacion, no el entrenamiento original del modelo base, del que la informacion disponible no detalla composicion del dataset, numero de tokens ni si hubo RLHF o DPO.
+El modelo base es un transformer MoE con 26,4B parametros totales y 5,4B activos, lo que implica un ratio de activacion de aproximadamente el 20,5%. La cuantizacion se realizo mediante un proceso en dos fases: primero una compilacion de cuantizacion de 21,1 minutos y despues un pulido de 18,7 minutos, todo ello en una unica GPU B200 (0,66 horas-GPU B200 en total). El metodo combina un "knapsack" de expertos MoE con paso directo de NVFP4 nativo exacto, preservando los 23 buckets de expertos mas calientes en 4,50 bpp sin error de cuantizacion, y empaquetando el resto con codigos trellis de 4 KB SRAM (ht2, ht3, rtr4) sin buckets de 1 bit. Ademas, se protege la cola del output head con un suelo trellis de 2 bits.
 
-La cuantizacion aplica el compilador LookAtMyQuant con varias tecnicas combinadas: passthrough exacto NVFP4 (4.50 bpp) sobre los 23 de los 192 buckets MoE de mayor sensibilidad (error de cuantizacion 0.0000), Hessians densos por experto sobre todos los tokens, cero buckets frios de 1 bit `rtr1`, calibracion `TextMix` con mezcla 70/30 de chat-template y texto crudo, y un pulido de 500 pasos con profesor cacheado sobre filas, columnas pre-RHT y steering. El coste total de PTQ fue de 0.66 horas-B200 (21.1 min de PTQ y 18.7 min de pulido sobre 1x B200). El checkpoint incluye un drafter de 179 MB en 4 bits (DSpark) para decodificacion especulativa sin perdida.
+La calibracion utiliza Hessians densos de todos los tokens compartidos entre expertos, con una mezcla 70/30 de texto chat-templated de 6 clases del propio Inkling y texto multilingue de 13 idiomas. No se dispone de informacion sobre el numero de tokens de entrenamiento del modelo base, la composicion del dataset original ni si se aplicaron tecnicas de RLHF o DPO, ya que la model card se centra exclusivamente en el proceso de cuantizacion. La innovacion tecnica destacable es la decodificacion especulativa mediante un drafter DSpark de 179 MB en 4 bits, que acelera la generacion en MLX y CUDA.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno con plantilla de chat Inkling (`<|content_thinking|>`, `<|content_text|>`).
-- Razonamiento matematico con traza de pensamiento acotada mediante `--max-thinking-tokens` (960 recomendado).
-- Generacion de codigo ejecutable: 155/164 problemas de HumanEval estrictos con cap=960.
-- Modo thinking con cierre determinista de la traza en frontera de frase o salto de linea.
-- Capacidades multilingues: evaluado en 13 idiomas (`all13_KL` = 0.0628).
-- Decodificacion especulativa sin perdida emparejado con el drafter de 4 bits (hasta 139.7 tok/s en matematicas y 96.2 tok/s en codigo en M5 Max).
-- Soporte de tool calling y agentes: no disponible en la informacion proporcionada (la suite de evaluacion incluye clases `tools` y `agentic`, pero no se detalla el soporte funcional).
-- Vision y audio: no disponible.
+- Generacion de texto conversacional y de prosa en ingles y otros idiomas.
+- Razonamiento matematico: resuelve problemas de GSM8K con un 96,5% de acierto (193/200) cuando se limita el razonamiento a 960 tokens.
+- Generacion de codigo: alcanza un 94,5% en HumanEval estricto (155/164) con el mismo limite de tokens.
+- Modo de razonamiento explicito (`<|content_thinking|>`) con trazas de pensamiento que pueden limitarse mediante `--max-thinking-tokens`.
+- Soporte de tool calling y flujos agenticos: la model card reporta KL especifico para la clase "tools/agentic" (0,0832 y 0,0588 respectivamente).
+- Capacidades multilingues: evaluado en 13 idiomas con KL de 0,0628 en texto crudo multilingue.
+- Recuperacion de contexto largo: 15/16 en recall a 16.384 tokens (8/8 agujas factuales).
+- Decodificacion especulativa con drafter DSpark para acelerar la inferencia.
 
 ## Casos de uso
 
-- Razonamiento matematico en local: resolver problemas tipo GSM8K en un portatil Apple Silicon con 8.85 GB de pesos y `--max-thinking-tokens 960`, manteniendo 96.5% de acierto (193/200) sin GPU dedicada.
-- Generacion de codigo en estaciones de trabajo: escribir funciones Python (por ejemplo, fusion de intervalos solapados) con 94.5% de HumanEval estricto y 96.2 tok/s de decode en M5 Max, adecuado para asistencia interactiva en editor.
-- Chat multi-turno en dispositivos de consumo: `lamq chat` con plantilla Inkling y drafter para conversaciones fluidas a 117.9 tok/s medianos, con 8.24 GiB de RAM activa y 9.02 GiB de pico en decode.
-- Prototipado de agentes y pipelines con tool calling: la suite de evaluacion incluye clases `tools` y `agentic`, lo que permite validar flujos de multiples pasos antes de desplegar el modelo completo.
-- Evaluacion comparativa de cuantizaciones: el repositorio publica una familia de 7 tamanos (3.9, 4.7, 5.4, 8.9, 11.2, 12.8 GB) con KL y benchmarks, util para seleccionar el punto de equilibrio calidad/memoria en funcion del hardware.
-- Despliegue en entornos con memoria limitada: 8.24 GiB activos permiten ejecutar el modelo en Mac con 16 GB de RAM unificada, donde un BF16 de 18.89 GB no cabria con holgura.
-- Traduccion y generacion multilingue: el checkpoint mantiene `all13_KL` = 0.0628, un 9.6% mejor que la build uniforme sin NVFP4, adecuado para tareas de texto en 13 idiomas.
+- Asistente de razonamiento matematico en local: el modelo resuelve problemas de algebra y aritmetica paso a paso (por ejemplo, "What is 17 times 23? Show the steps") con un 96,5% de acierto en GSM8K; es adecuado para entornos educativos o de prototipado donde no se quiere depender de APIs en la nube y se dispone de un Apple M5 Max o una GPU NVIDIA con al menos 10 GB de VRAM.
+- Generacion de codigo en pipelines de CI/CD: con un 94,5% en HumanEval estricto y soporte de tool calling, puede integrarse en flujos de autocompletado, generacion de tests unitarios o revision de parches, ejecutandose en una sola GPU de consumo gracias a los 8,85 GB de pesos.
+- Agentes multi-paso con acceso a herramientas: la clase "agentic" tiene un KL de 0,0588 frente al BF16, lo que indica que la cuantizacion preserva razonablemente el comportamiento de planificacion y llamada a funciones; se usaria con el runtime `lamq serve` exponiendo un endpoint HTTP en el puerto 8080.
+- Chat multilingue de atencion al cliente: el modelo soporta 13 idiomas en calibracion y mantiene un KL de 0,0628 en texto multilingue crudo; puede gestionar conversaciones multi-turno con contexto de hasta 16k tokens verificados en recall.
+- Analisis de documentos largos con recuperacion de datos: el recall de 15/16 a 16.384 tokens (8/8 agujas factuales) lo hace util para extraer informacion concreta de contratos, informes o articulos extensos en una sola pasada.
+- Despliegue en Apple Silicon para desarrollo offline: con 8,84 GB activos y 9,68 GB de pico de RAM en un M5 Max, el modelo cabe en un portatil de gama alta y permite generar a 56 tok/s en serie y 117,9 tok/s con decodificacion especulativa, adecuado para prototipado sin conexion.
+- Servicio de generacion de texto de bajo coste en produccion: el throughput de 1.784 tok/s en prefill (T=512) y la posibilidad de servir con `lamq serve --ui` lo hacen viable para cargas moderadas en una unica GPU B200 o en hardware de consumo con CUDA.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados en la model card con `max_new_tokens = 1536`, greedy y `reasoning_effort = "none"`:
+Los datos de la model card comparan esta build con el profesor BF16 y otras cuantizaciones de la misma familia. La evaluacion se realizo con `max_new_tokens = 1.536`, decodificacion greedy y `reasoning_effort="none"`, sobre `openai/gsm8k` (`test[:200]`) y los 164 problemas ejecutables de `openai/openai_humaneval` con ejecucion estricta.
 
-| Modelo | GB texto | bpp | free_KL | all13_KL | GSM8K (200) | HE estricto (164) | GSM8K cap=960 | HE cap=960 | Media cap=960 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Profesor BF16 original | 18.89 | 5.80 | 0.0000 | 0.0000 | 188/200 (94.0%) | 147/164 (89.6%) | 189/200 (94.5%) | 159/164 (97.0%) | 95.7% |
-| LookAtMyQuant 12.8 GB | 12.74 | 3.92 | 0.0084 | 0.0209 | 189/200 (94.5%) | 149/164 (90.9%) | 192/200 (96.0%) | 157/164 (95.7%) | 95.9% |
-| LookAtMyQuant 11.2 GB | 11.16 | 3.43 | 0.0131 | 0.0315 | 190/200 (95.0%) | 145/164 (88.4%) | 195/200 (97.5%) | 156/164 (95.1%) | 96.3% |
-| Este checkpoint (8.9 GB) | 8.85 | 2.72 | 0.0278 | 0.0628 | 190/200 (95.0%) | 139/164 (84.8%) | 193/200 (96.5%) | 155/164 (94.5%) | 95.5% |
-| LookAtMyQuant 5.4 GB | 5.38 | 1.65 | 0.0853 | 0.2667 | 185/200 (92.5%) | 130/164 (79.3%) | 186/200 (93.0%) | 147/164 (89.6%) | 91.3% |
-| LookAtMyQuant 4.7 GB | 4.72 | 1.45 | 0.1162 | 0.3724 | 191/200 (95.5%) | 118/164 (72.0%) | 192/200 (96.0%) | 135/164 (82.3%) | 89.2% |
-| LookAtMyQuant 3.9 GB | 3.85 | 1.18 | 0.2161 | 0.6037 | 177/200 (88.5%) | 98/164 (59.8%) | 181/200 (90.5%) | 114/164 (69.5%) | 80.0% |
+| Build | GB texto | bpp | KL crudo (en / 13 idiomas) | KL 6 clases | GSM8K (200) | HumanEval (164) |
+|---|---:|---:|---:|---:|---:|---:|
+| Original BF16 (profesor) | 18,89 | 5,80 | 0,0000 / 0,0000 | 0,0000 | 94,0% → 94,5% | 89,6% → 97,0% |
+| 12,8 GB | 12,74 | 3,92 | 0,0084 / 0,0209 | 0,0465 | 94,5% → 96,0% | 90,9% → 95,7% |
+| 11,2 GB | 11,16 | 3,43 | 0,0131 / 0,0315 | 0,0461 | 95,0% → 97,5% | 88,4% → 95,1% |
+| **Esta build (8,9 GB)** | **8,85** | **2,72** | **0,0278 / 0,0628** | **0,0530** | **95,0% → 96,5%** | **84,8% → 94,5%** |
+| 5,4 GB | 5,38 | 1,65 | 0,0859 / 0,2659 | 0,1440 | 92,5% → 93,5% | 76,8% → 85,4% |
+| 4,7 GB | 4,72 | 1,45 | 0,1179 / 0,3731 | 0,1668 | 90,5% → 94,5% | 67,1% → 78,0% |
+| 3,9 GB | 3,85 | 1,18 | 0,2189 / 0,6058 | 0,2329 | 86,5% → 88,5% | 59,2% → 70,7% |
 
-Datos adicionales de la model card: KL medio de 0.0530 (94.47% top-1) en la suite de 6 clases chat-templated (prosa, codigo, tools, agentic, razonamiento, multilingue), un 62.5% por debajo del build 8.9 GB v1 (0.1414). El `TextMix` sin plantilla `en,chat,code` marca 0.0278 frente a 0.0406 del build uniforme (-31.5%), y `all13_KL` 0.0628 frente a 0.0695 (-9.6%). El checkpoint queda 1.75x por debajo del `UD-Q2_K_XL` de Unsloth (9.14 GB, 0.0486).
+Desglose de KL por clase de chat para la build de 8,9 GB (KL medio de siguiente token en nats, menor es mejor):
+
+| Metrica | Valor |
+|---|---:|
+| KL medio 6 clases chat-templated (top-1) | 0,0530 (94,47%) |
+| KL tools / agentic | 0,0832 / 0,0588 |
+| KL reasoning / code / prose | 0,0299 / 0,0602 / 0,0353 |
+| KL multilingual / copy rows | 0,0504 / 0,1121 |
+| KL TextMix crudo (en,chat,code / 13 idiomas) | 0,0278 / 0,0628 |
+| Recall a 16k depth-contrast (capped / raw margin) | 15/16 (+4,66 / +8,30 nats; 8/8 agujas) |
+
+La model card indica ademas que la build alcanza un 95,5% de media en dos tareas con `--max-thinking-tokens 960` (193/200 = 96,5% en GSM8K y 155/164 = 94,5% en HumanEval estricto), lo que supone el 99,8% del 95,7% del profesor BF16. El KL crudo en texto sin template (0,0278) es 1,75 veces menor que el del GGUF `UD-Q2_K_XL` de 9,14 GB de Unsloth (0,0486).
 
 ## Requisitos de hardware
 
-- RAM unificada: 8.24 GiB activos en carga en frio y 9.02 GiB de pico en decode en Apple M5 Max; 8.84 GB de pesos empaquetados.
-- Carga en frio: 4.37 s en Apple M5 Max.
-- Rendimiento en Apple M5 Max: 1784 tok/s de prefill con T=512, 56.0 tok/s de decode serial, 117.9 tok/s medianos con drafter (139.7 tok/s en matematicas, 96.2 tok/s en codigo).
-- GPU CUDA: el PTQ se ejecuto en 1x B200, pero la model card solo documenta inferencia via MLX en Apple Silicon; no se detalla soporte CUDA para inferencia.
-- Consumer GPU: cabe en Apple Silicon con 16 GB de RAM unificada o superior; no se proporcionan datos de VRAM para GPUs NVIDIA de consumo.
-- Opciones de despliegue: runtime LookAtMyQuant (`pip install git+https://github.com/ShinMegamiBoson/lookatmyquant.git`), CLI `lamq generate` y `lamq chat`, y API Python `runtime_mlx.Runtime`. vLLM, llama.cpp, Ollama y TGI no estan documentados para este formato.
-- Drafter opcional de 179 MB en 4 bits para decodificacion especulativa sin perdida.
+- VRAM estimada para inferencia: aproximadamente 8,84 GB de pesos activos y 9,68 GB de pico de RAM en Apple Silicon con MLX; en CUDA se requiere al menos 10 GB de VRAM para cargar los pesos y el drafter.
+- GPU recomendadas: NVIDIA B200 (usada para la compilacion de cuantizacion), GPUs CUDA con al menos 10-12 GB de VRAM; en Apple Silicon, un M5 Max con 8,84 GB activos y 9,68 GB de pico.
+- Cabe en GPU de consumo: si, en tarjetas con 12 GB o mas de VRAM (por ejemplo, RTX 3060 de 12 GB, RTX 4070, RTX 4080, RTX 4090) y en Apple Silicon de gama alta con memoria unificada suficiente.
+- Opciones de despliegue: runtime propio LookAtMyQuant (`lamq generate`, `lamq chat`, `lamq serve --ui`, API Python `runtime_mlx.Runtime`), con soporte para MLX en Apple Silicon y CUDA en NVIDIA (Triton y PTX DSpark con `--drafter auto`). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput estimados (Apple M5 Max, drafter DSpark de 179 MB): 1.784 tok/s en prefill T=512, 56,0 tok/s en decodificacion serie, 117,9 tok/s en decodificacion media con drafter (139,7 tok/s en matematicas, 96,2 tok/s en codigo). Para CUDA no se especifican cifras de throughput en la model card.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | GSM8K cap=960 | HE estricto cap=960 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Inkling-2-Mini-LookAtMyQuant 8.9 GB | 26.4B / 5.4B activos | no disponible | 96.5% | 94.5% | apache-2.0 | Hugging Face, runtime MLX |
-| Inkling-2-Mini BF16 (profesor) | 26.4B / 5.4B activos | no disponible | 94.5% | 97.0% | apache-2.0 (segun base) | Hugging Face |
-| Unsloth UD-Q2_K_XL (9.14 GB) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
-| LookAtMyQuant 12.8 GB | 26.4B / 5.4B activos | no disponible | 96.0% | 95.7% | apache-2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | GSM8K | HumanEval | Licencia | Disponibilidad |
+|---|---|---:|---:|---:|---|---|
+| **Inkling-2-Mini-LookAtMyQuant-8.9GB** | 26,4B totales / 5,4B activos | No disponible (recall verificado a 16k) | 96,5% (cap 960) | 94,5% (cap 960) | Apache 2.0 | Hugging Face, runtime LookAtMyQuant |
+| Inkling-2-Mini-LookAtMyQuant-11.2GB | 26,4B totales / 5,4B activos | No disponible | 97,5% (cap 960) | 95,1% (cap 960) | Apache 2.0 | Hugging Face, runtime LookAtMyQuant |
+| Inkling-2-Mini-LookAtMyQuant-5.4GB | 26,4B totales / 5,4B activos | No disponible | 93,5% (cap 960) | 85,4% (cap 960) | Apache 2.0 | Hugging Face, runtime LookAtMyQuant |
+| Unsloth UD-Q2_K_XL (GGUF) | No disponible (base Inkling-2-Mini) | No disponible | No disponible | No disponible | No disponible | GGUF de 9,14 GB; KL crudo 0,0486 frente a 0,0278 de esta build |
 
-La comparativa con Unsloth solo aporta el dato de KL (0.0486 frente a 0.0278 del checkpoint, 1.75x mejor); no se publican resultados de GSM8K ni HumanEval para esa cuantizacion en la informacion disponible.
+La comparativa se limita a variantes de la misma familia porque la model card no proporciona datos de modelos de otros desarrolladores. El GGUF de Unsloth se incluye unicamente por el dato de KL crudo mencionado en la model card (0,0486 frente a 0,0278), sin datos de GSM8K ni HumanEval disponibles para esa build.
 
 ## Limitaciones y advertencias
 
-- La cuantizacion a 2.72 bpp introduce degradacion medible: KL libre de 0.0278 frente a 0.0000 del profesor y `all13_KL` de 0.0628, con perdida de 4 puntos porcentuales en HumanEval estricto con cap=960 (94.5% vs 97.0%).
-- El rendimiento depende criticamente de `--max-thinking-tokens 960`: sin ese ajuste, HumanEval estricto cae a 84.8% (139/164) frente al 94.5% con cap.
-- La decodificacion especulativa requiere el drafter separado de 179 MB; sin el, el decode baja a 56.0 tok/s en M5 Max.
-- El runtime documentado es exclusivamente MLX para Apple Silicon; no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI, lo que limita el despliegue en servidores CUDA.
-- La longitud de contexto no se especifica en la informacion disponible, lo que impide planificar tareas de contexto largo.
-- El soporte funcional de tool calling y agentes no esta confirmado; solo se evalua la clase correspondiente en la suite de calidad.
-- Riesgo de alucinacion y sesgos: no se documentan evaluaciones de sesgo ni tasas de alucinacion en la informacion disponible.
-- Licencia apache-2.0 en el checkpoint, pero conviene verificar la licencia del modelo base thinkingmachines/Inkling-2-Mini para uso comercial.
-- El checkpoint tiene 769 descargas y 19 likes en el momento de la consulta, con actualizacion del 23 de noviembre de 2026; es un artefacto reciente y de un unico autor, sin validacion independiente publicada.
+- La cuantizacion a 2,72 bpp introduce degradacion medible: el KL crudo en texto multilingue sube a 0,0628 y el KL en la clase "copy rows" a 0,1121, frente a 0,0000 del profesor BF16.
+- El rendimiento en HumanEval sin el limite de 960 tokens de razonamiento cae al 84,8% (139/164), muy por debajo del 97,0% del profesor; es imprescindible usar `--max-thinking-tokens 960` para obtener los resultados reportados.
+- El recall a 16k es de 15/16, no perfecto: una de las 16 pruebas de recuperacion falla, lo que supone un riesgo en tareas de extraccion de datos criticos.
+- No se dispone de informacion sobre sesgos del modelo base ni sobre el dataset de entrenamiento original, por lo que no se pueden evaluar sesgos especificos de esta build.
+- Riesgo de alucinacion inherente al modelo base; la cuantizacion agresiva puede amplificarlo en las clases con mayor KL (multilingual y copy rows).
+- La licencia Apache 2.0 permite uso comercial, pero el runtime LookAtMyQuant es un proyecto independiente cuyo soporte y mantenimiento no estan garantizados por Thinking Machines.
+- El modelo solo esta empaquetado para los runtimes MLX y CUDA de LookAtMyQuant; no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI, lo que limita la portabilidad a infraestructuras estandar.
+- El idioma principal es el ingles; el soporte multilingue esta calibrado pero no se detallan que 13 idiomas concretos ni su rendimiento individual.
+- La fecha de creacion del repositorio (2026-11-21) y la dependencia de un runtime de terceros implican que la estabilidad a largo plazo del ecosistema no esta verificada.
 
 ## Enlaces
 
-- Hugging Face del checkpoint: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-8.9GB
+- Modelo en Hugging Face: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-8.9GB
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Drafter 4-bit: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-drafter
-- Variante 12.8 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-12.8GB
-- Variante 11.2 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-11.2GB
-- Variante 5.4 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-5.4GB
-- Variante 4.7 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-4.7GB
-- Variante 3.9 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-3.9GB
-- Repositorio del runtime: https://github.com/ShinMegamiBoson/lookatmyquant
-- Sitio del compilador: https://lookatmyquant.com
+- Drafter DSpark 4-bit: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-drafter
+- Build de 12,8 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-12.8GB
+- Build de 11,2 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-11.2GB
+- Build de 5,4 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-5.4GB
+- Build de 4,7 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-4.7GB
+- Build de 3,9 GB: https://huggingface.co/shinmegamiboson/Inkling-2-Mini-LookAtMyQuant-3.9GB
+- Repositorio del runtime LookAtMyQuant: https://github.com/ShinMegamiBoson/lookatmyquant
+- Sitio web de LookAtMyQuant: https://lookatmyquant.com/

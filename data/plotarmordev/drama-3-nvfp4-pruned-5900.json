@@ -53,16 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "plotarmordev/drama-3-NVFP4-Pruned at main - Hugging Face",
-      "url": "https://huggingface.co/plotarmordev/drama-3-NVFP4-Pruned/tree/main",
-      "snippet": "plotarmordev / drama-3-NVFP4-Pruned Like 4 Text-to-Speech Safetensors English fish_omni nvfp4 quantized pruned Mixture of Experts gptq fish-audio drama-3 8-bit precision bsgemm-moe License:fish-audio-community-license Model card FilesFiles and versions xet Community Copy to bucket main drama-3-NVFP4-Pruned 22.3 GB Ctrl+K Ctrl+K 1 contributor History:2 commits plotarmordev Drama 3 NVFP4, pruned ..."
-    },
-    {
-      "title": "plotarmordev (netrunner) - Hugging Face",
-      "url": "https://huggingface.co/plotarmordev",
-      "snippet": "models1 plotarmordev/drama-3-NVFP4-Pruned Text-to-Speech • 15B•Updated about 4 hours ago• 2"
-    }
-  ]
+  "sources": []
 }

@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 108,
+  "downloads_30d": 279,
   "trending_score": 0,
   "parameters": 127486405600,
   "parameters_human": "127.49B",
@@ -51,11 +51,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "How to apply for a visitor visa - Canada.ca",
-      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/apply-visitor-visa.html",
-      "snippet": "The reason you’re travelling to Canada determines the way you apply and the documents you need to submit with your visa …Read more"
-    }
-  ]
+  "sources": []
 }

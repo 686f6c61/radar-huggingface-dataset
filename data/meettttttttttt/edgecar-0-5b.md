@@ -2,95 +2,103 @@
 
 ## Resumen
 
-EdgeCar 0.5B es un ajuste fino supervisado de Qwen2.5-0.5B-Instruct desarrollado por el usuario meettttttttttt para el proyecto EdgeCar AI, un asistente de datos de vehículo que se ejecuta íntegramente en el dispositivo. El modelo no es un chatbot: es un parser semántico que traduce una pregunta en inglés sobre los datos registrados del coche a un comando corto de una a tres palabras, que después ejecuta el propio sistema del vehículo de forma de solo lectura sobre sus registros. El modelo nunca ve los datos del vehículo.
+EdgeCar 0.5B es un ajuste fino supervisado de Qwen2.5-0.5B-Instruct desarrollado por el usuario de Hugging Face `meettttttttttt` para el proyecto EdgeCar AI, un asistente de datos de vehículo que se ejecuta íntegramente en el dispositivo. El modelo no es un chatbot: es un analizador semántico que transforma una pregunta en lenguaje natural sobre los datos registrados del coche en un comando corto de una a tres palabras (por ejemplo, `why energy_consumption` o `trend battery_temp`), que después un motor determinista ejecuta en modo de solo lectura contra los registros locales del vehículo. El modelo nunca ve los datos y no calcula ninguna cifra: solo produce la etiqueta del comando.
 
-La arquitectura subyacente es Qwen2 (transformer decoder-only denso) con 494.032.768 parámetros, derivada del modelo instruct de 0,5B de Qwen2.5. El contexto heredado de la familia Qwen2.5 es de 32.768 tokens, aunque la tarea real requiere únicamente generar entre 1 y 16 tokens de salida. El modelo se distribuye en safetensors (pesos fusionados) y también en formato GGUF cuantizado, que es el que emplea el sistema EdgeCar en producción.
+La relevancia del modelo está en su planteamiento de seguridad y eficiencia para el borde. Con 494 millones de parámetros y un tiempo de respuesta declarado de unos 0,2 s en dos núcleos de portátil, cabe en hardware muy modesto y funciona sin conexión. Además, la gramática de 115 comandos (10 verbos sobre 15 métricas y 10 tipos de evento) no incluye ninguna acción de control del vehículo, de modo que incluso un fallo del modelo solo puede producir una consulta de lectura.
 
-Su relevancia radica en el enfoque: en lugar de generar texto libre, el modelo produce comandos dentro de una gramática cerrada de 10 verbos sobre 15 métricas y 10 tipos de evento (115 comandos en total). Esto elimina por diseño la posibilidad de que el modelo ejecute acciones sobre el vehículo, ya que la gramática no contiene comandos de escritura. Está pensado para entornos edge con requisitos de latencia muy bajos (unos 0,2 s en dos núcleos de portátil) y funcionamiento offline.
+El modelo se publicó en el contexto del reto Tata Elxsi TELIPORT Season 4 (Case Study 5, "Natural Language Vehicle Information using On-Device SLM/LLM"). Se distribuye con licencia Apache 2.0, únicamente en inglés, y solo está disponible como pesos fusionados en safetensors en este repositorio; las versiones cuantizadas GGUF que usa el proyecto se publican en repositorios separados.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2) |
-| Parámetros totales | 494.032.768 |
-| Parámetros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (heredada de Qwen2.5-0.5B-Instruct) |
-| Tipos de cuantización | GGUF (el autor publica una variante GGUF; se menciona Q4_K_M en los resultados de evaluación) |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Transformer decoder-only (Qwen2), ajuste fino de Qwen2.5-0.5B-Instruct |
+| Parametros totales | 494.032.768 |
+| Parametros activos | No aplica (modelo denso) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Este repositorio: safetensors sin cuantizar; variantes GGUF (Q4_K_M usado en las evaluaciones) en repositorios separados |
+| Idiomas soportados | Ingles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repo principal), GGUF (repo `edgecar-0.5b-GGUF`) |
+| Formato de pesos | Safetensors (transformers); GGUF en `meettttttttttt/edgecar-0.5b-GGUF` |
+| Tamano del repositorio | 1.0 GB |
+| Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
+| Descargas | 177 |
+| Fecha de creacion | 2026-10-29 |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen2.5-0.5B-Instruct, un transformer decoder-only denso de la familia Qwen2. El ajuste es un fine-tuning supervisado orientado a una tarea de parsing semántico restringido, no un entrenamiento con RLHF o DPO según la información disponible. La innovación principal no está en la arquitectura sino en la formulación de la tarea: el modelo se entrena para emitir comandos de una a tres palabras pertenecientes a una gramática cerrada, y en producción se combina con una gramática de decodificación que garantiza que toda salida sea un comando válido.
+El modelo conserva la arquitectura del Qwen2.5-0.5B-Instruct original (transformer decoder-only denso con 494 millones de parámetros) y se obtiene mediante ajuste fino supervisado para una tarea de clasificación generativa restringida: dada una pregunta y un mensaje de sistema fijo, generar la etiqueta del comando. La model card no detalla hiperparámetros de entrenamiento, número de épocas ni composición exacta del dataset más allá de la descripción de los datos.
 
-El conjunto de datos de entrenamiento consta de 3.795 preguntas sintéticas, cada una etiquetada con su comando: 417 escritas a mano (505 filas con variantes de ruido ligero) y 3.290 generadas a partir de plantillas que cruzan las formas de frase de cada verbo con métricas, eventos y expresiones temporales, cubriendo los 115 comandos. Se descartaron 576 preguntas generadas por solapamiento o duplicidad con el conjunto. El prompt de sistema es fijo y forma parte del entrenamiento: "Write the EdgeCar command for this question about the vehicle's recorded data, or unsupported."
+El conjunto de datos es sintético y consta de 3.795 preguntas etiquetadas con su comando: 417 escritas a mano (505 filas contando variantes con ruido ligero) y 3.290 generadas por plantillas que combinan las formas de frase de cada verbo con métricas, eventos y expresiones temporales, cubriendo los 115 comandos del sistema. La model card menciona además 576 preguntas generadas (el texto disponible se interrumpe en ese punto, por lo que no se detalla su función). No se indica si hubo RLHF, DPO u otras etapas de alineación posteriores al ajuste supervisado.
 
 ## Capacidades
 
-- Parsing semántico de preguntas en inglés sobre datos de vehículo a comandos de una a tres palabras.
-- Cobertura de 10 verbos (`total`, `trend`, `when`, `compare`, `why`, `show`, `before`, `unusual`, `now`, `unsupported`) sobre 15 métricas y 10 tipos de evento, 115 comandos en total.
-- Extracción implícita de ventanas temporales a partir de expresiones como "yesterday", "over the past 10 days", "this month" o "last week".
-- Clasificación de peticiones fuera de alcance como `unsupported`, incluyendo peticiones de control del vehículo, inyecciones de prompt y preguntas ambiguas.
-- Generación determinista recomendada (`do_sample=False`) con salidas muy cortas (16 tokens máximo en el ejemplo del autor).
-- No soporta tool calling general, agentes multi-paso, visión, audio ni razonamiento libre: es un clasificador/parser restringido a dominio.
-- Multilingüe limitado al inglés.
+- Análisis semántico de preguntas sobre datos de vehículo y emisión de un comando corto entre 115 posibles (10 verbos × 15 métricas × 10 tipos de evento).
+- Extracción implícita de ventanas temporales a partir de expresiones como "yesterday", "over the past 10 days", "this month" o "last week"; el código externo traduce la ventana a parámetros.
+- Mapeo de verbos semánticos: totales (`total`), tendencias (`trend`), extremos (`when`), comparaciones (`compare`), explicaciones (`why`), listado de eventos (`show`), causalidad previa a un evento (`before`), anomalías (`unusual`) y estado actual (`now`).
+- Rechazo de peticiones fuera de alcance mediante la etiqueta `unsupported`: control del vehículo, inyecciones de prompt, preguntas ambiguas o no relacionadas con los datos registrados.
+- Generación determinista recomendada (`do_sample=False`, `max_new_tokens=16`), adecuada para integración en pipelines con gramática restringida.
+- No soporta tool calling genérico, agentes multi-paso, visión, audio ni modo de razonamiento extendido; su función es exclusivamente la producción de una etiqueta de comando.
+- Multilingüe: no; solo inglés.
 
 ## Casos de uso
 
-- Asistente de datos de vehículo en el propio coche: el modelo traduce preguntas del conductor a comandos que el sistema ejecuta de solo lectura sobre los registros locales, sin conexión a la nube y con latencia de unos 0,2 s en dos núcleos de portátil.
-- Análisis de consumo energético: preguntas como "why is my kWh per 100 km so high over the past 10 days" se convierten en `why energy_consumption`, y el sistema calcula la explicación a partir de los logs.
-- Consulta de eventos ADAS: preguntas sobre desenganches de control de crucero adaptativo o peticiones de toma de control se mapean a `show adas_disengagement` o `before adas_takeover_request`, permitiendo revisar el histórico de seguridad del vehículo.
-- Diagnóstico de averías: la consulta de códigos de fallo (DTC) y su contexto previo se resuelve con `show dtc` y `before dtc`, útil para talleres o apps de mantenimiento predictivo.
-- Comparativas estacionales o de recorrido: `compare energy_consumption temperature` permite contrastar consumo en invierno frente a verano o ciudad frente a autopista sin que el modelo manipule los datos.
-- Detección de anomalías: la pregunta "anything I should be worried about?" se resuelve con `unusual`, que dispara un análisis de anomalías sobre los últimos 30 días.
-- Integración en apps móviles o firmware embebido: gracias a su tamaño (0,5B) y a la variante GGUF, puede desplegarse en ARM y x86 sin GPU dedicada, con la gramática de decodificación garantizando salidas válidas.
+- Asistente de a bordo para consultas sobre consumo: el conductor pregunta "why is my kWh per 100 km so high over the past 10 days?" y el modelo emite `why energy_consumption`; el sistema calcula la respuesta a partir de los registros locales sin enviar datos a la nube, lo que encaja con requisitos de privacidad y funcionamiento sin conexión.
+- Diagnóstico de estado de batería y autonomía: preguntas como "which day was the battery the hottest this month" se convierten en `when battery_temp max`, permitiendo que el motor de consultas recupere el extremo y la fecha sin que el modelo acceda a las series temporales.
+- Análisis de eventos ADAS: "Did adaptive cruise cut out at any time yesterday?" se traduce en `show adas_disengagement`, útil para revisar desconexiones y solicitudes de toma de control en talleres o flotas.
+- Comparativas estacionales de eficiencia: "How much more energy do I use in winter than in summer?" produce `compare energy_consumption temperature`, que el backend resuelve agrupando por temperatura; adecuado para informes de eficiencia energética del propietario.
+- Detección de anomalías: "Anything I should be worried about?" se mapea a `unusual`, lo que permite ofrecer un resumen de incidencias (códigos DTC, frenadas bruscas, cargas anómalas) sin que el usuario formule una consulta técnica.
+- Visualización de tendencias: "Plot battery temperature over the last 10 days" genera `trend battery_temp`, que un componente de interfaz puede usar para construir la gráfica a partir de los datos locales.
+- Despliegue en hardware de borde automotriz: con 494 millones de parámetros y la variante GGUF Q4_K_M, el modelo puede ejecutarse en una unidad de infoentretenimiento o en un portátil de dos núcleos con latencia declarada de unos 0,2 s, sin GPU dedicada.
+- Filtro de seguridad en la interfaz de voz: gracias a su comportamiento de rechazo (35/40 peticiones fuera de alcance clasificadas como `unsupported` sin las comprobaciones adicionales de EdgeCar), puede actuar como primera barrera semántica antes de que cualquier petición llegue a capas con privilegios.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible. El autor sí reporta una evaluación específica de rechazo: con las comprobaciones de declinación de EdgeCar desactivadas, el modelo por sí solo responde `unsupported` a 35 de 40 peticiones de control del vehículo, inyecciones de prompt, preguntas fuera de alcance y ambiguas, incluidas las 12 de 12 peticiones de control del coche. En la tabla de ejemplos de la model card se muestra un fallo de parseo en el conjunto de test retenido ("What was my longest driving day last month?" produce `when trip_count max` en lugar de `when distance max`).
+No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GSM8K) en la información disponible. La model card aporta únicamente evaluaciones específicas de la tarea:
 
-| Evaluación | Resultado |
-|---|---|
-| Rechazo de peticiones de control del vehículo | 12/12 correctas |
-| Rechazo total (control, inyección, fuera de alcance, ambiguas) | 35/40 correctas |
-| Latencia en dispositivo (2 núcleos de portátil) | ~0,2 s |
+| Evaluacion | Resultado | Condiciones |
+|---|---|---|
+| Rechazo de peticiones fuera de alcance (`unsupported`) | 35/40 correctas | Sin las comprobaciones de rechazo de EdgeCar, variante Q4_K_M |
+| Rechazo de peticiones de control del vehiculo | 12/12 correctas | Mismo conjunto de prueba |
+| Latencia de inferencia | ~0,2 s | Dos nucleos de portatil, segun la model card |
+| Precision global en el conjunto de prueba retenido | No disponible como cifra agregada | La model card solo muestra ejemplos cualitativos, incluido un error (`when trip_count max` frente a `when distance max`) |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 1 GB en fp16 para los 494M de parámetros; en torno a 0,3-0,5 GB con cuantización GGUF Q4_K_M.
-- GPU recomendadas: no requiere GPU; el autor reporta ejecución en CPU x86 y ARM. Cabe en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) con holgura.
-- Cabe en GPU consumer y en dispositivos embebidos; el repo GGUF está pensado para despliegue on-device.
-- Opciones de despliegue: transformers (repo safetensors), llama.cpp u Ollama mediante el repo GGUF con su gramática, y text-generation-inference (el modelo está etiquetado como compatible con endpoints TGI).
-- Latencia y throughput: ~0,2 s por consulta en dos núcleos de portátil según el autor; no se reportan cifras de throughput.
+- VRAM estimada: el modelo en safetensors ocupa aproximadamente 1 GB en FP16/BF16 (494 M de parámetros); en GGUF Q4_K_M la huella se reduce a unos 0,3-0,4 GB, aunque la model card no publica la cifra exacta.
+- GPU recomendadas: no requiere GPU; el autor reporta ejecución en CPU x86 y ARM. Cualquier GPU consumer moderna (por ejemplo, RTX 3060 o superior) puede alojarlo con holgura, pero no es el escenario previsto.
+- Cabe en cualquier GPU consumer e incluso en sistemas sin GPU dedicada; también en dispositivos de borde con pocos cientos de MB de RAM libre.
+- Opciones de despliegue: transformers (pesos de este repositorio), llama.cpp u Ollama con la variante GGUF y su gramática, y text-generation-inference (el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`).
+- Latencia y throughput: ~0,2 s por consulta en dos núcleos de portátil según el autor; no se publican cifras de tokens por segundo ni de rendimiento agregado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EdgeCar 0.5B | 494M | no disponible | Parser semántico de dominio cerrado (115 comandos) | Apache 2.0 | Hugging Face (safetensors y GGUF) |
-| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens (según la familia Qwen2.5) | Chat generalista | Apache 2.0 | Hugging Face |
-| EdgeCar 1.5B (GGUF) | no disponible | no disponible | Misma tarea, mayor precisión, ~0,6 GB más de memoria | no disponible | Hugging Face |
+| EdgeCar 0.5B | 494 M | No disponible | Analisis semantico a comando para datos de vehiculo | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens (segun la documentacion publica de Qwen, no verificada en esta ficha) | Chat generalista | Apache 2.0 | Hugging Face |
+| EdgeCar 1.5B (GGUF) | No disponible en la informacion | No disponible | Misma tarea, mayor tamano | No indicada en la informacion | Hugging Face (`meettttttttttt/edgecar-1.5b-GGUF`) |
 
-La comparación con modelos de propósito general no es directa: EdgeCar 0.5B sacrifica la conversación abierta por una precisión alta en una tarea muy acotada y por garantías de seguridad por diseño (gramática sin comandos de escritura). Frente a Qwen2.5-0.5B-Instruct, el ajuste mejora el parseo de comandos de dominio pero pierde capacidad de diálogo general.
+La model card indica que la variante de 1,5B ofrece una precisión medida ligeramente superior, sin diferencia significativa, a cambio de unos 0,6 GB más de memoria. No se dispone de datos de benchmarks comparativos frente a otros modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Modelo de dominio muy restringido: solo responde a preguntas sobre datos registrados del vehículo; cualquier otra cosa debe clasificarse como `unsupported`.
-- Solo inglés; no se reporta soporte multilingüe.
-- Riesgo de parseo incorrecto incluso en el conjunto de test retenido (el ejemplo del autor con `trip_count` frente a `distance`).
-- El prompt de sistema debe ser exactamente el de entrenamiento; desviarse de él degrada el comportamiento.
-- Entrenado con datos sintéticos (3.795 preguntas, mayoría generadas por plantillas), lo que puede limitar la cobertura de formulaciones reales no vistas.
-- La seguridad frente a acciones sobre el vehículo depende de la gramática de decodificación y de las comprobaciones de declinación del sistema EdgeCar, no solo del modelo; el propio autor reporta 5 fallos de rechazo de 40 en la prueba sin guardas.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen2.5-0.5B-Instruct también es Apache 2.0, por lo que no hay restricciones adicionales conocidas.
-- Sin benchmarks estándar publicados; la evaluación se limita a pruebas de rechazo y ejemplos cualitativos.
+- El modelo es un analizador semántico restringido: no responde preguntas, no calcula cifras y no conversa. Usarlo como chatbot produciría salidas degeneradas.
+- El mensaje de sistema debe ser exactamente la frase de entrenamiento ("Write the EdgeCar command for this question about the vehicle's recorded data, or unsupported."); cualquier variación puede degradar la precisión.
+- Solo admite inglés; no hay soporte multilingüe declarado.
+- El conjunto de entrenamiento es mayoritariamente sintético (3.290 de 3.795 preguntas generadas por plantillas), lo que puede producir un sesgo hacia las formas de frase de las plantillas y menor robustez ante paráfrasis no vistas.
+- La model card documenta al menos un error en el conjunto de prueba retenido (confusión entre `trip_count` y `distance`), lo que indica que la precisión no es perfecta en preguntas de extremos.
+- La evaluación de rechazo sin comprobaciones adicionales es de 35/40; en producción el autor recomienda usar la gramática GGUF y las comprobaciones de rechazo de EdgeCar para garantizar comandos válidos.
+- El modelo no ve los datos del vehículo, por lo que no puede alucinar cifras, pero sí puede emitir un comando semánticamente incorrecto que devuelva una respuesta errónea; la validación del comando en el backend es imprescindible.
+- Licencia Apache 2.0: permite uso comercial y modificaciones con atribución, sin restricciones adicionales conocidas.
+- No se documentan sesgos demográficos ni evaluaciones de robustez frente a entradas adversarias más allá del conjunto de rechazo descrito.
+- El repositorio tiene 177 descargas y 0 likes en el momento de la consulta, lo que sugiere una validación comunitaria muy limitada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/meettttttttttt/edgecar-0.5b
-- Variante GGUF: https://huggingface.co/meettttttttttt/edgecar-0.5b-GGUF
-- Variante 1.5B GGUF: https://huggingface.co/meettttttttttt/edgecar-1.5b-GGUF
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
+- Variante GGUF 0.5B: https://huggingface.co/meettttttttttt/edgecar-0.5b-GGUF
+- Variante GGUF 1.5B: https://huggingface.co/meettttttttttt/edgecar-1.5b-GGUF
 - Repositorio del proyecto EdgeCar AI: https://github.com/meet-png/edgecar-ai
-- Resultado de la prueba de rechazo: https://github.com/meet-png/edgecar-ai/blob/main/eval/results/rerun/refusal_test-slm-noguard-edgecar-0.5b-q4_k_m.json
+- Resultado de la prueba de rechazo (SLM sin guardas, Q4_K_M): https://github.com/meet-png/edgecar-ai/blob/main/eval/results/rerun/refusal_test-slm-noguard-edgecar-0.5b-q4_k_m.json
+- Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

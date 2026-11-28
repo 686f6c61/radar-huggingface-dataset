@@ -2,77 +2,114 @@
 
 ## Resumen
 
-`code-daemon-embed-v1` es un modelo de embeddings de código desarrollado por faxenoff (Fedor Aksenov) con el objetivo específico de indexar repositorios completos de forma rápida y permitir búsqueda semántica en cada consulta de un agente de programación. Con solo 46,8 millones de parámetros y 4 capas de encoder, está diseñado para mapear unidades de código cortas (funciones, métodos, firmas, docstrings, nombres de símbolos) y consultas en lenguaje natural a un espacio vectorial compartido de 768 dimensiones.
+code-daemon-embed-v1 es un modelo de embeddings especializado en código, desarrollado por el usuario independiente faxenoff y publicado en Hugging Face bajo licencia MIT. Se trata de un encoder de 4 capas y 46,8 millones de parámetros, destilado a partir de Alibaba-NLP/gte-modernbert-base (22 capas), cuyo objetivo es indexar repositorios completos de código con la suficiente rapidez como para reindexarlos en cada commit. Devuelve vectores de 768 dimensiones con pooling de media y normalización L2 integrados en el grafo, de modo que la salida ya es apta para producto escalar.
 
-El modelo parte de `intfloat/multilingual-e5-base` (un encoder XLM-RoBERTa de 12 capas y 278M de parámetros) al que se le han eliminado 8 de las 12 capas, se ha recortado el vocabulario de 250k a 22.739 piezas SentencePiece y se han cuantizado los pesos a INT8 mediante entrenamiento con cuantización consciente (QAT). La salida está normalizada L2 y agrupada por media dentro del propio grafo ONNX, de modo que el usuario recibe directamente vectores listos para usar.
+El modelo está pensado como la mitad densa de un sistema de búsqueda híbrida (vectores + BM25) sobre unidades cortas de código: firmas, docstrings, nombres de símbolos y descripciones de una línea. Según la model card, alcanza entre 4 y 5,7 veces el throughput de encoders públicos de 768 dimensiones, con unas 3.457 textos por segundo en FP32 sobre ONNX Runtime CUDA, y unas 13.800 entidades por segundo en un índice real de C/C++ con TensorRT INT8. No es multilingüe ni está pensado para prosa general: solo inglés y código, con un límite estricto de 128 tokens.
 
-Su principal innovación es la destilación de conocimiento desde un reranker cross-encoder (`Qwen/Qwen3-Reranker-4B`) mediante un objetivo listwise-KL, lo que permite capturar parte del ranking de un reranker sin coste adicional en inferencia. Está pensado como el canal denso de un recuperador híbrido junto a BM25, no como un modelo autónomo de búsqueda.
+Su relevancia actual radica en el auge de los agentes de código y de la búsqueda semántica sobre repositorios, donde el coste de reindexación es un cuello de botella real. El modelo incorpora además cuantización INT8 mediante entrenamiento consciente de cuantización (QAT), lo que permite generar motores INT8 en TensorRT y OpenVINO sin pasar por un proceso de calibración.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (XLM-RoBERTa) con 4 capas, 12 cabezas de atención, hidden size 768, FFN 3072 con GELU |
-| Parametros totales | 46,80M (17,46M de tabla de embeddings + 4 × ~7,3M de encoder + posiciones) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 128 tokens (límite duro por diseño) |
-| Tipos de cuantizacion | INT8 (entrenamiento con cuantización consciente, QAT) |
-| Idiomas soportados | Multilingüe (vocabulario recortado a código y inglés adyacente al código) |
+| Arquitectura | Transformer encoder (XLM-RoBERTa reducido, 4 capas) |
+| Parametros totales | 46.801.920 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 128 tokens (límite estricto) |
+| Tipos de cuantizacion | INT8 (QAT), FP32; pesos en safetensors, ONNX y CoreML |
+| Idiomas soportados | Inglés y código; multilingüe solo de forma residual (ruso muy degradado) |
 | Licencia | MIT |
-| Formato de pesos | ONNX (opset 19), safetensors |
+| Formato de pesos | safetensors, ONNX, CoreML |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer basado en XLM-RoBERTa, pero reducido drásticamente: de las 12 capas originales de `multilingual-e5-base` se conservan solo 4, obtenidas mediante poda escalonada (12 → 8 → 6 → 4) con "curado" tras cada corte. El vocabulario se recorta de 250.002 a 22.739 piezas SentencePiece unigram con byte fallback, lo que reduce la tabla de embeddings de 192M a 17,5M de parámetros. Se eliminan los prefijos de instrucción de E5 (`query:` / `passage:`), el pooler head, el head de MLM y las entradas de token-type; el grafo ONNX tiene exactamente dos entradas (`input_ids` y `attention_mask`, ambas int64) y una salida `[B, 768]` ya agrupada por media (mask-aware mean pooling) y normalizada L2.
+El modelo es un encoder tipo transformer con 4 capas y 46,8 millones de parámetros, construido sobre una poda del vocabulario de XLM-RoBERTa (se conservaron 942 de las 31.671 piezas cirílicas) y destilado a partir de Alibaba-NLP/gte-modernbert-base, un encoder de 22 capas. La dimensión de embedding es 768. El pooling de media y la normalización L2 están integrados en el grafo, por lo que la salida es directamente un vector de norma unitaria.
 
-El entrenamiento utiliza destilación de conocimiento desde `Qwen/Qwen3-Reranker-4B`, que puntuó pares (consulta, candidato) sobre negativos duros extraídos de los datasets `CoIR-Retrieval/cosqa`, `CoIR-Retrieval/codesearchnet` y `CoIR-Retrieval/stackoverflow-qa`. El objetivo es listwise-KL: el estudiante aprende a reproducir la distribución de ranking del profesor, no solo a separar positivos de negativos. Las consultas de entrenamiento imitan tráfico real de agentes (bolsas de palabras clave, descripciones de comportamiento, fragmentos de identificadores) en lugar de paráfrasis de docstrings. Los pesos se cuantizan a INT8 durante el entrenamiento, con nodos Q/DQ que transportan las escalas entrenadas.
+El entrenamiento combina destilación de conocimiento desde un cross-encoder de 4B parámetros (Qwen/Qwen3-Reranker-4B según los metadatos del modelo base), cuya capacidad de ranking se incorpora a los vectores del bi-encoder, con entrenamiento consciente de cuantización (QAT) para INT8. La model card menciona también intfloat/multilingual-e5-base y google/embeddinggemma-2 como modelos base de referencia. El modelo se entrenó sobre texto de código "compacto y front-loaded" (tipo, nombre, ruta, firma y primeros ~200 caracteres del docstring), sin prefijos de consulta ni de pasaje. No se especifican en la información disponible el número exacto de tokens de entrenamiento ni la composición detallada del dataset.
 
 ## Capacidades
 
-- Búsqueda semántica de código: recupera funciones, métodos, tipos y fragmentos de documentación a partir de consultas cortas en lenguaje natural, palabras clave o identificadores.
-- Consultas simétricas: no requiere prefijos de instrucción; consultas y documentos se codifican de forma idéntica.
-- Salida lista para usar: el grafo devuelve vectores `[B, 768]` agrupados por media y normalizados L2, sin necesidad de código de pooling adicional.
-- Reranking destilado: incorpora en los vectores parte de la capacidad de ranking de un cross-encoder, eliminando la necesidad de un reranker en tiempo de ejecución.
-- Alto rendimiento de inferencia: ~10.700 embeddings por segundo en una GPU de portátil RTX 5060.
-- Multilingüe para código: vocabulario recortado a piezas de código y términos técnicos en inglés, con soporte para múltiples lenguajes de programación.
-- Integración con recuperación híbrida: diseñado para funcionar como canal denso junto a BM25.
+- Generación de embeddings de código y texto corto en un espacio de 768 dimensiones, con salida normalizada lista para producto escalar.
+- Búsqueda semántica de código a código y de consulta en lenguaje natural a código.
+- Búsqueda híbrida como canal denso junto a BM25 (el autor lo diseñó para ese uso).
+- Codificación de firmas, docstrings, nombres de símbolos, rutas de fichero y descripciones de una línea.
+- Consultas cortas tipo bolsa de palabras clave o descripciones de comportamiento, sin prefijo.
+- Soporte de cuantización INT8 nativa (QAT) para TensorRT y OpenVINO sin calibración.
+- Ventanas deslizantes de 128 tokens con stride 96 para textos largos, con pooling de media y renormalización.
+- No soporta tool calling, agentes, visión, audio ni modo de razonamiento: es exclusivamente un modelo de embeddings.
 
 ## Casos de uso
 
-- Re-indexado de repositorios en cada commit: un agente de programación puede re-embedir un repositorio de 700.000 entidades en ~81 segundos en una GPU de consumo, permitiendo búsqueda semántica actualizada tras cada cambio.
-- Búsqueda híbrida en IDE o editor: combinar los vectores de este modelo con resultados BM25 para mejorar la precisión de búsqueda de símbolos, funciones o fragmentos de código en proyectos grandes.
-- Recuperación de código a partir de descripciones en lenguaje natural: un desarrollador escribe "adquirir bloqueo de base de datos para hash de proyecto" y el modelo devuelve las funciones relevantes.
-- Asistente de programación con contexto de repositorio: alimentar a un LLM con los fragmentos de código más relevantes recuperados por este modelo antes de generar respuestas.
-- Indexación de documentación técnica: convertir docstrings, comentarios y chunks de documentación en vectores para búsqueda semántica dentro de una base de conocimiento de código.
-- Pipeline de CI/CD para calidad de código: detectar duplicados o funciones similares mediante similitud coseno entre vectores de código, sin necesidad de un modelo pesado.
+- Reindexación de repositorios en cada commit: el modelo está diseñado para embeber un repositorio C/C++ de 1,1 millones de entidades en unos 80 segundos en una GPU de portátil, lo que permite mantener el índice actualizado en integración continua sin costes prohibitivos.
+- Búsqueda de código en IDE o herramienta interna: con consultas cortas de palabras clave o descripciones de comportamiento, el modelo devuelve el fichero correcto en primer lugar el 44 % de las veces y en el top 5 el 69 % dentro de la búsqueda híbrida para la que fue construido.
+- Asistentes de código basados en agentes: sirve como recuperador denso que alimenta el contexto de un LLM, combinado con BM25, con latencia baja gracias a sus 4 capas y a los motores INT8.
+- Documentación técnica navegable: indexa docstrings y descripciones de funciones para responder consultas en lenguaje natural sobre qué hace cada símbolo, con un rendimiento especialmente bueno en Python docstring→código (89,8 nDCG@10 en CoIR).
+- Búsqueda en bases de código grandes y multilingües de lenguaje: el autor reporta índices completos de mysql-server (C/C++), vscode (TypeScript), netty (Java) y roslyn (C#) con throughputs de 7.900 a 13.800 textos por segundo en TensorRT INT8.
+- Despliegue en hardware sin GPU dedicada: con OpenVINO en CPU, iGPU y NPU conjuntamente alcanza unas 1.050 textos por segundo, y en Apple M4 con Neural Engine unas 1.100, lo que permite indexación local en portátiles.
+- Filtrado y deduplicación semántica de fragmentos de código en pipelines de datos: la velocidad permite procesar corpus masivos de funciones y comparar similitud por producto escalar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas como MMLU, HumanEval o GSM8K, ni comparaciones cuantitativas con otros modelos de embeddings. El único dato de rendimiento proporcionado es el throughput de inferencia: ~10.700 embeddings por segundo en una RTX 5060 de portátil.
+Datos de la model card (nDCG@10 × 100, presupuesto de 128 tokens, ONNX Runtime CUDA FP32, batch 64, seq 64, RTX 5060 de portátil, 2026-09-11):
+
+| Modelo | Capas | Textos/s | cosqa | stack-qa | code→code | Consultas del autor | Ruso hit@1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| code-daemon-embed-v1 | 4 | 3.457 | 28,5 | 49,9 | 42,9 | 60,1 | 0,06 |
+| multilingual-e5-base | 12 | 854 | 29,8 | 79,4 | 57,7 | 60,7 | 0,24 |
+| CodeRankEmbed | 12 | 723 | 35,5 | 73,3 | — | 64,6 | 0,00 |
+| gte-modernbert-base (su profesor) | 22 | 606 | 36,6 | 81,4 | 82,5 | 70,5 | 0,15 |
+
+Rendimiento en índice real (daemon Code-Daemon, RTX 5060 de portátil, TensorRT INT8, 114 W fijados):
+
+| Carga de trabajo | Textos/s |
+|---|---:|
+| C/C++ — mysql-server, 1,1 M entidades | 13.800 |
+| TypeScript — vscode, 479 k | 10.600 |
+| Java — netty, 97 k | 8.000 |
+| C# — roslyn, 403 k | 7.900 |
+| Actualizaciones incrementales pequeñas (cientos a 15 k textos) | 1.900 – 5.500 |
+| Sin GPU dedicada — CPU Intel + iGPU + NPU | ~1.050 |
+| Apple M4, Neural Engine | ~1.100 |
+
+En cuatro tareas de CoIR el modelo promedia 52,8 nDCG@10, con 89,8 en Python docstring→código y 28,5 en cosqa. El mismo daemon con multilingual-e5-base compilado a los mismos motores INT8 es 2,3 veces más lento en todas las filas.
 
 ## Requisitos de hardware
 
-- Inferencia ligera: al ser un modelo de 46,8M de parámetros en INT8, cabe en cualquier GPU de consumo moderna (RTX 3060, RTX 4060, RTX 5060, etc.) y probablemente también en CPU con ONNX Runtime.
-- VRAM estimada: no se especifica un valor exacto, pero con 46,8M de parámetros en INT8 (~47 MB de pesos) más overhead de activaciones, el consumo es mínimo, del orden de 1-2 GB.
-- GPU recomendada: cualquier GPU con soporte para ONNX Runtime y al menos 4 GB de VRAM; la model card menciona una RTX 5060 de portátil como referencia.
-- Opciones de despliegue: ONNX Runtime (graph execution), compatible con cualquier framework que cargue modelos ONNX. No se mencionan integraciones específicas con vLLM, llama.cpp u Ollama, ya que es un modelo de embeddings, no generativo.
-- Latencia y throughput: ~10.700 embeddings/seg en RTX 5060, lo que permite indexar un repositorio de 700k entidades en ~81 segundos.
+- VRAM: los cuatro motores TensorRT juntos ocupan aproximadamente 400 MB de VRAM; el modelo es muy ligero y cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: RTX 5060 de portátil es la referencia medida por el autor; cualquier GPU NVIDIA con soporte TensorRT o CUDA sirve. No se requieren A100 ni H100.
+- GPU consumer: sí, cabe en cualquier GPU consumer moderna e incluso en iGPU Intel y en el Neural Engine de Apple M4.
+- Opciones de despliegue: ONNX Runtime (CUDA y CPU), TensorRT (INT8), OpenVINO (CPU, iGPU y NPU), CoreML, y el daemon propio Code-Daemon del autor. El repositorio incluye pesos en safetensors, ONNX y CoreML.
+- Throughput: 3.457 textos/s en FP32 con ONNX Runtime CUDA; hasta 19.800 textos/s en el bucket corto (seq 48) con TensorRT INT8 en RTX 5060; 13.800 textos/s en un índice real de C/C++.
+- Latencia: en NPU, 28–95 ms por batch, adecuado para consultas interactivas individuales más que para indexación masiva.
+- Estrategia de batching: ordenar por longitud y despachar cada batch a su longitud máxima redondeada a múltiplo de 8 aporta un 10 % adicional; aumentar el batch por encima de 96 no mejora el rendimiento por texto.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados en la informacion disponible. La model card menciona que frente a embedders típicos de la clase e5/bge/gte (que suelen tener entre 110M y 7B de parámetros, vocabularios de 30k-250k, ventanas de 512-8192 tokens y pesos FP32/FP16), este modelo se distingue por su tamaño reducido, vocabulario recortado, ventana de 128 tokens, ausencia de prefijos, pooling integrado y pesos INT8. Sin embargo, no se aportan métricas de precisión comparativas.
+| Modelo | Parámetros | Capas | Contexto | Licencia | Enfoque | Throughput relativo |
+|---|---|---:|---:|---|---|---:|
+| code-daemon-embed-v1 | 46,8 M | 4 | 128 | MIT | Código, híbrido, INT8 QAT | 1,0 (referencia) |
+| multilingual-e5-base | ~278 M | 12 | 512 | MIT | Multilingüe general | ~0,25 |
+| CodeRankEmbed | no disponible | 12 | no disponible | no disponible | Código | ~0,21 |
+| gte-modernbert-base | ~149 M | 22 | 8.192 | Apache 2.0 | Código y texto, vector-only | ~0,18 |
+
+La comparación de calidad está en la tabla de benchmarks: gte-modernbert-base supera al modelo en todas las métricas de recuperación (hasta 82,5 frente a 42,9 en code→code), mientras que code-daemon-embed-v1 gana en velocidad por un factor de 4 a 5,7. multilingual-e5-base es la opción para consultas no inglesas, con un hit@1 en ruso de 0,24 frente a 0,06.
 
 ## Limitaciones y advertencias
 
-- Ventana de contexto limitada a 128 tokens: no apto para documentos largos, problemas extensos o diálogos multi-turno. La model card advierte explícitamente que no es un recuperador de contexto largo.
-- Vocabulario recortado: al eliminar 227k piezas del vocabulario original, el modelo pierde capacidad para prosa general (texto médico, financiero, noticias) y puede fallar con términos fuera del dominio de código.
-- Sin soporte para código↔código o traducción: no está entrenado para tareas de generación o traducción entre lenguajes de programación.
-- Dependencia de un canal léxico: está diseñado como parte de un recuperador híbrido; usarlo solo puede degradar la precisión en consultas que requieran coincidencia exacta de términos.
-- Riesgo de alucinación en recuperación: como cualquier modelo de embeddings, puede devolver resultados semánticamente similares pero incorrectos si la consulta es ambigua o el vocabulario no cubre el término.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de su rendimiento frente a alternativas, por lo que su adopción en producción requiere evaluación propia.
-- Licencia MIT: permite uso comercial sin restricciones, pero el autor no ofrece garantías ni soporte.
+- No es multilingüe: la poda de vocabulario conservó solo 942 piezas cirílicas de las 31.671 de XLM-R, por lo que las consultas en ruso u otros idiomas no ingleses rinden muy por debajo de multilingual-e5-base.
+- No apto para prosa general ni textos largos: el límite es de 128 tokens y el promedio en CoIR es de 52,8 nDCG@10, con resultados flojos en tareas como cosqa (28,5).
+- Calidad de recuperación inferior a encoders más grandes: pierde entre 1 y 10 puntos de nDCG en las consultas del autor frente a gte-modernbert-base y queda muy por detrás en code→code (42,9 frente a 82,5).
+- Dependencia del formato de entrada: el rendimiento depende de reproducir el formato de documento del entrenamiento (tipo, nombre, ruta, firma, docstring); desviarse de él degrada los resultados más que cualquier ajuste de inferencia.
+- Riesgo de alucinación no aplica en el sentido generativo, pero sí de recuperaciones irrelevantes cuando la consulta excede el dominio (código corto en inglés) o el presupuesto de tokens.
+- Sesgos: no se documentan análisis de sesgo; al entrenarse sobre código, puede reflejar sesgos de nomenclatura y de los repositorios utilizados.
+- Licencia MIT: permite uso comercial sin restricciones, pero el autor no ofrece garantías ni soporte; el modelo tiene 173 descargas y 1 like en el momento de la consulta, lo que indica una validación comunitaria muy limitada.
+- En producción conviene combinarlo con un canal léxico (BM25): el propio autor señala que un reranker en tiempo de ejecución sobre este modelo resultó netamente negativo en el sistema para el que fue diseñado.
+- Los pesos en CoreML y ONNX del repositorio ocupan 22,4 GB en total, aunque el modelo en sí es pequeño; hay que seleccionar el artefacto adecuado para cada motor.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/faxenoff/code-daemon-embed-v1
-- Perfil del autor: https://huggingface.co/faxenoff
+- Modelo profesor: https://huggingface.co/Alibaba-NLP/gte-modernbert-base
+- Modelo base de referencia multilingüe: https://huggingface.co/intfloat/multilingual-e5-base
+- Cross-encoder destilado: https://huggingface.co/Qwen/Qwen3-Reranker-4B
+- Modelo base de referencia: https://huggingface.co/google/embeddinggemma-2

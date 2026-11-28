@@ -48,16 +48,5 @@
   "renamed_to": "SORALab/TriCosmos-2.5-predict",
   "renamed_at": "2026-11-19T04:43:40.368Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "[2511.00062] World Simulation with Video Foundation Models for ...",
-      "url": "https://arxiv.org/abs/2511.00062",
-      "snippet": "View a PDF of the paper titled ... (experimental) Abstract:We introduce [Cosmos-Predict2.5], the latest generation of the Cosmos World Foundation Models for Physical AI...."
-    },
-    {
-      "title": "World Simulation with Video Foundation Models for Physical AI",
-      "url": "https://arxiv.org/html/2511.00062v2",
-      "snippet": "Such simulators enable agents to ... In this paper, we introduce [Cosmos-Predict2.5], our latest world foundation model based on flow matching that significantly enhances simulation fidelity across diverse Physical AI domains...."
-    }
-  ]
+  "sources": []
 }

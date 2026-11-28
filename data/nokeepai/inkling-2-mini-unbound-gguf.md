@@ -2,104 +2,99 @@
 
 ## Resumen
 
-Inkling-2-Mini-Unbound GGUF es la distribucion cuantizada en formato GGUF de nokeepai/Inkling-2-Mini-Unbound, una variante "abliterated" y sin censura del modelo multimodal Inkling 2 Mini. El autor, nokeepai, parte del checkpoint BF16 oficial de ggml-org y aplica un parche quirurgico sobre las proyecciones de atencion para eliminar el comportamiento de rechazo del modelo original, manteniendo intactos los pesos de los expertos, el router, los embeddings y la cabeza de salida. El resultado es un modelo que responde a instrucciones que el original declina, con una deriva (KLD) medida de 0,0439 frente al Q8_0 original.
+Inkling-2-Mini-Unbound-GGUF es la distribución en formato GGUF de Inkling-2-Mini-Unbound, una variante "abliterated" (sin rechazos de seguridad) del modelo de razonamiento multimodal Inkling 2 Mini desarrollado por Thinking Machines Lab. El modelo original acepta entradas de texto e imagen y emplea un modo de razonamiento privado ("thinking") antes de emitir la respuesta final. La versión Unbound, publicada por nokeepai, elimina el entrenamiento de seguridad del modelo base, de modo que responde a peticiones que el original rechaza. Este repositorio concreto contiene los pesos cuantizados en GGUF para su ejecución local con llama.cpp, LM Studio u Ollama.
 
-El modelo tiene 26.070.385.152 parametros totales y es de tipo mixture-of-experts (MoE), con capacidad de entrada imagen-texto (pipeline image-text-to-text). Se distribuye en seis cuantizaciones que van de 11,2 GB (IQ2_M) a 27,8 GB (Q8_0), mas un proyector de vision separado (mmproj) de 0,3-0,6 GB. La licencia es Apache 2.0 y el repo acumula 83.821 descargas y 92 likes en pocos dias, lo que indica un interes notable por parte de la comunidad.
+Arquitectura y tamaño: los pesos en safetensors del modelo base suman 26.070.385.152 parámetros (aproximadamente 26.000 millones), y la model card indica que se trata de un modelo de mezcla de expertos (MoE), ya que menciona la posibilidad de descargar parte de los pesos a RAM de CPU con `--n-cpu-moe`. El repositorio ocupa 507,7 GB e incluye múltiples niveles de cuantización, desde IQ2_M (unos 11 GB) hasta BF16 (unos 52 GB), además de un proyector de visión (`mmproj`) separado para la entrada de imágenes.
 
-Su relevancia actual radica en que ofrece una alternativa sin rechazos sobre un modelo multimodal de tamano medio, con evaluacion cuantitativa publicada frente a otros derivados sin censura, y con un proceso de construccion reproducible y verificado byte a byte. Es una opcion practica para laboratorios de seguridad, investigacion sobre alineacion y despliegues donde el filtrado del modelo base resulta un obstaculo.
+La relevancia actual del modelo radica en dos factores: por un lado, permite ejecutar un modelo de razonamiento multimodal de aproximadamente 26.000 millones de parámetros en hardware de consumo gracias a la cuantización GGUF y a la arquitectura MoE; por otro, su naturaleza "uncensored" lo orienta a investigadores, equipos de red teaming, escritores de ficción y desarrolladores que aplican sus propias políticas de contenido. La versión v3 incorpora el denominado "Prime add-on", un adaptador LoRA entrenado sobre tareas inocuas que corrige el exceso de razonamiento del modelo original en tareas de varios pasos.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer mixture-of-experts (MoE), multimodal imagen-texto |
-| Parametros totales | 26.070.385.152 |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible (la evaluacion usa fragmentos de 4.096 tokens y caps de pensamiento de 4.096 y respuesta de 8.192) |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ3_M, IQ2_M; proyector de vision en BF16 y Q8_0 |
+| Arquitectura | Mezcla de expertos (MoE) sobre transformer; modalidad imagen-texto; razonamiento con modo "thinking" |
+| Parámetros totales | 26.070.385.152 (aproximadamente 26.000 millones) |
+| Parámetros activos | no disponible |
+| Longitud de contexto | 32.768 tokens (valor usado en la configuración de ejemplo con `-c 32768`); máximo nativo no disponible |
+| Tipos de cuantización | BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ3_M, IQ2_M; proyector de visión en Q8_0 y BF16 |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); safetensors en el repo base |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de tipo mixture-of-experts con 24 capas y capacidad multimodal (entrada de imagen y texto). La variante Unbound se construye en tres pasos documentados: primero se parte del BF16 oficial de ggml-org/Inkling-2-Mini-GGUF; segundo, se parchean 120 tensores de forma byte-exacta, concretamente las proyecciones `attn_q`, `attn_k`, `attn_v`, `attn_output` y `attn_gate` de las 24 capas; tercero, se cuantiza con `llama-quantize` estandar de llama.cpp. Antes de escribir cada tensor parcheado, el script verifica que los bytes BF16 del checkpoint original coinciden exactamente con los de ggml-org, lo que garantiza la integridad del resto de pesos (584 tensores sin tocar, incluidos todos los expertos, el router, los embeddings y la cabeza).
+El modelo base es Inkling 2 Mini, de Thinking Machines Lab, descrito en la model card como un modelo de razonamiento de pesos abiertos que acepta texto e imágenes y genera un razonamiento privado antes de la respuesta. La referencia a `--n-cpu-moe` en la documentación confirma que la arquitectura es de mezcla de expertos: solo una parte de los pesos se activa por token, lo que permite descargar expertos a RAM de CPU y ejecutar el modelo con menos VRAM que un modelo denso equivalente. No se dispone de datos sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada.
 
-No se detalla en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo RLHF o DPO en el modelo base. La innovacion tecnica principal es el metodo de "abliteration" selectivo sobre las proyecciones de atencion, que elimina el rechazo sin reentrenar y con una deriva acotada (KLD 0,0439 frente al Q8_0 original, 95,4% de coincidencia en el token superior). El modelo soporta modo de pensamiento (thinking) y se recomienda `--temp 0.6 --top-p 0.95` con un cap de pensamiento; no debe usarse muestreo DRY.
+La variante Unbound aplica un proceso de "abliteration" que elimina los rechazos del modelo original y no reincorpora entrenamiento de seguridad. Sobre esa base, la versión v3 añade el "Prime add-on", un adaptador LoRA entrenado únicamente con tareas inocuas (el mismo que convierte el Inkling 2 Mini original en Inkling-2-Mini-Prime). Su objetivo es corregir el defecto de la v2.1 y del modelo original: el exceso de razonamiento que consumía el límite de pensamiento (4096 tokens) sin producir código ni respuestas en tareas de varios pasos. El proyector de visión (`mmproj`) es el del modelo original, sin modificar.
 
 ## Capacidades
 
-- Generacion de texto conversacional multi-turno.
-- Comprension de imagenes (image-text-to-text) mediante el proyector mmproj.
-- Razonamiento con modo de pensamiento (thinking) activable, con cap configurable.
-- Respuesta a instrucciones que el modelo original rechaza, incluidas peticiones de contenido danino, peligroso o ilegal, sin formacion de seguridad superpuesta.
-- Capacidades multilingues: no disponibles en la informacion proporcionada.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidad especial: variante "abliterated" y "uncensored" con evaluacion cuantitativa de utilidad sobre prompts daninos.
+- Generación de texto y razonamiento multi-paso con un modo de pensamiento privado configurable mediante `reasoning_effort` (valor recomendado 0.9) y un límite de 4096 tokens de razonamiento.
+- Comprensión de imágenes mediante el proyector de visión `mmproj`, que se carga junto con el archivo GGUF principal.
+- Conversación multi-turno (etiqueta `conversational`).
+- Ejecución local en GPU de consumo, Mac o CPU gracias a los formatos GGUF y a la arquitectura MoE.
+- Respuestas a peticiones sensibles, peligrosas o ilegales que el modelo original rechaza (comportamiento "uncensored").
+- Compatibilidad con endpoints (`endpoints_compatible`) y con el chat template Jinja de llama.cpp (`--jinja`).
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de audio: no disponible.
 
 ## Casos de uso
 
-- Investigacion sobre alineacion y seguridad: el modelo permite estudiar como responde un modelo sin entrenamiento de seguridad a prompts daninos, con metricas publicadas (83,7% de utilidad con thinking off, 85,2% con thinking on sobre 263 prompts retenidos) que sirven de linea base para comparar tecnicas de mitigacion.
-- Red teaming y evaluacion de salvaguardas: util para probar clasificadores de entrada/salida y filtros de contenido en pipelines propios, ya que el modelo seguira instrucciones que otros rechazan y expone casos limite dificiles de obtener de otra forma.
-- Analisis de imagenes en entornos controlados: con el proyector mmproj (0,3 GB en Q8_0) puede procesar entradas imagen-texto para tareas de descripcion, extraccion de informacion o respuesta visual, siempre con salvaguardas externas.
-- Despliegue local en estaciones de trabajo: la cuantizacion Q4_K_M (17,8 GB) cabe en GPUs de 16-24 GB de VRAM y permite ejecucion offline con llama.cpp, LM Studio u Ollama para prototipos y experimentos.
-- Generacion de contenido creativo sin restricciones editoriales: para fiction, guiones o narrativa que requiera temas sensibles, con la advertencia de que el contenido debe revisarse antes de publicacion.
-- Docencia y formacion en IA: permite demostrar en vivo las diferencias entre un modelo alineado y uno abliterated, y discutir las implicaciones eticas con datos concretos de la tabla comparativa del autor.
-- Evaluacion de cuantizaciones: los seis tamanos publicados con KLD y coincidencia de token superior permiten medir el impacto de la cuantizacion en tareas reales antes de elegir un despliegue en produccion.
+- Red teaming y evaluación de seguridad: el modelo permite generar respuestas a peticiones dañinas en un entorno controlado, lo que facilita probar clasificadores, filtros y salvaguardas propias antes de desplegarlas en producción.
+- Investigación sobre alineación y abliteration: comparar las respuestas de Inkling-2-Mini-Unbound con las del Inkling 2 Mini original permite estudiar qué comportamientos elimina el proceso de abliteration y cómo afecta al razonamiento.
+- Escritura de ficción y contenido creativo sin restricciones temáticas: con 32.768 tokens de contexto y modo de razonamiento, el modelo puede desarrollar tramas, personajes y escenas que el modelo original declinaría.
+- Asistente local de propósito general con entrada de imágenes: cargando el `mmproj` junto con el GGUF Q4_K_M (unos 18 GB) en una GPU de 16 a 24 GB, se obtiene un asistente multimodal que procesa capturas, diagramas o fotografías sin enviar datos a la nube.
+- Corrección de código en iteraciones múltiples: la v3 con el Prime add-on está diseñada para no agotar el límite de pensamiento en tareas de varios pasos, de modo que puede emplearse en bucles de depuración donde el modelo debe alternar razonamiento y escritura de código.
+- Despliegue en hardware heterogéneo: con `--n-cpu-moe N` en llama.cpp, el Q4_K_M funciona con menos de 12 GB de VRAM descargando expertos a RAM, lo que permite ejecutarlo en estaciones de trabajo modestas o en Mac con memoria unificada.
+- Desarrollo de sistemas propios con reglas de contenido personalizadas: equipos que ya disponen de sus propios filtros pueden integrar el modelo como motor generativo sin las restricciones del original.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card (Q8_0 en llama.cpp `19bc41dbb`, greedy, cap de pensamiento 4.096, cap de respuesta 8.192, juez Jev, util = p >= 0,5):
-
-| Modelo | Util thinking off | Util thinking on | Rechazo off / on | Deriva (KLD) |
-|---|---|---|---|---|
-| Inkling-2-Mini-Unbound v2.1 | 83,7% | 85,2% | 0,4% / 0,4% | 0,0439 |
-| IndrasMirror XQ | 58,9% | 68,1% | 0,0% / 0,0% | 0,0357 |
-| AtomicChat Uncensored, LoRA | 52,1% | 55,5% | 0,0% / 0,0% | 0,0078 |
-| AtomicChat Uncensored, AD-Q4_K | 50,2% | 59,3% | 0,4% / 0,0% | 0,0106 |
-| OpenUncensored | 33,1% | 41,8% | 1,5% / 0,8% | 0,0228 |
-| JoaoZaokk Heretic | 17,5% | 26,2% | 1,1% / 0,4% | no medido |
-| Inkling 2 Mini original | 0,8% | 0,8% | 96,2% / 95,8% | — |
-
-Evaluacion sobre 263 prompts daninos retenidos. Ademas, MMLU-300 = 74,3 y GSM8K-100 = 98, dentro del ruido del original (76,3 / 97); 1 de 784 prompts benignos limite (0,1%) fue rechazado. Con cap de pensamiento, el 16,1% de 230 prompts daninos nuevos alcanzo el cap, frente al 29,1% con decodificacion greedy. No se han publicado resultados de benchmarks adicionales en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible. La model card indica que la evaluación principal se realizó sobre los pesos en precisión completa del repositorio principal (`nokeepai/Inkling-2-Mini-Unbound`), no sobre estos archivos GGUF, y remite a esa model card principal para la evaluación completa.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente el tamano del archivo mas unos pocos GB para el contexto (mas en contextos largos). Q8_0: 27,8 GB; Q6_K: 23,6 GB; Q5_K_M: 20,1 GB; Q4_K_M: 17,8 GB; IQ3_M: 13,3 GB; IQ2_M: 11,2 GB.
-- Proyector de vision: anadir 0,3 GB (Q8_0) o 0,6 GB (BF16) solo si se requiere entrada de imagen.
-- GPU recomendadas: 32 GB+ de VRAM (A100 40/80 GB, H100) para Q8_0; 24-32 GB (RTX 4090, A6000) para Q6_K o Q5_K_M; 16-24 GB (RTX 4080, RTX 4090) para Q4_K_M; 12-16 GB para IQ3_M; menos de 12 GB para IQ2_M.
-- Al ser MoE, si no cabe en VRAM llama.cpp puede mantener parte de los expertos en RAM del sistema con `--n-cpu-moe N`, a costa de velocidad; en ese caso VRAM + RAM deben cubrir el tamano del archivo con margen.
-- Opciones de despliegue: llama.cpp, LM Studio, Ollama (compatible con endpoints).
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada según el archivo (tamaño del archivo más unos pocos GB para la conversación):
+  - IQ2_M: unos 11 GB; requiere menos de 12 GB de VRAM.
+  - IQ3_M: unos 13 GB; encaja en 12 a 16 GB.
+  - Q4_K_M (recomendado): unos 18 GB; encaja en 16 a 24 GB.
+  - Q5_K_M: unos 20 GB; encaja en 24 a 32 GB.
+  - Q6_K: unos 24 GB; encaja en 24 a 32 GB.
+  - Q8_0: unos 28 GB; requiere 32 GB o más.
+  - BF16: unos 52 GB; no destinado a ejecución, sino a generar cuantizaciones propias.
+- Proyector de visión: `mmproj-Inkling-2-Mini-Q8_0.gguf` o `-BF16`, menos de 1 GB adicional; solo necesario para entrada de imágenes.
+- GPU de consumo: sí, cabe en tarjetas de 16 a 24 GB con Q4_K_M; con `--n-cpu-moe N` puede ejecutarse por debajo de 12 GB de VRAM a costa de velocidad.
+- Opciones de despliegue: llama.cpp (se requiere una compilación con soporte de Inkling 2 que incluya el arreglo de bucle del PR #32704; se usó el commit `19bc41dbb`, y las versiones etiquetadas hasta b12608 no lo incluyen), LM Studio y Ollama.
+- Parámetros de inferencia recomendados: `reasoning_effort` 0.9, `temperature` 0.6 (no usar 0, que provocaba bucles en el razonamiento de versiones anteriores), `top_p` 1.0 (llama.cpp usa 0.95 por defecto), límite de pensamiento de 4096 tokens y contexto de 32.768 tokens.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Utilidad (thinking on) | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Modalidad | Licencia | Notas |
 |---|---|---|---|---|---|
-| Inkling-2-Mini-Unbound v2.1 | 26,07 B (MoE) | no disponible | 85,2% | Apache 2.0 | GGUF en HF |
-| IndrasMirror XQ | no disponible | no disponible | 68,1% | no disponible | HF |
-| AtomicChat Uncensored (LoRA) | no disponible | no disponible | 55,5% | no disponible | HF |
-| OpenUncensored | no disponible | no disponible | 41,8% | no disponible | HF |
-| Inkling 2 Mini original | 26,07 B (MoE) | no disponible | 0,8% | no disponible | HF |
+| Inkling-2-Mini-Unbound-GGUF (este) | ~26.000 M (MoE) | 32.768 tokens (configuración de ejemplo) | Imagen-texto, razonamiento | Apache 2.0 | Sin rechazos; GGUF para ejecución local |
+| Inkling 2 Mini (Thinking Machines Lab) | ~26.000 M (MoE) | no disponible | Imagen-texto, razonamiento | no disponible | Modelo original con rechazos de seguridad |
+| Inkling-2-Mini-Prime | no disponible | no disponible | Imagen-texto, razonamiento | no disponible | Original con el Prime add-on para corregir el exceso de razonamiento |
 
-La comparativa se limita a los derivados sin censura del mismo modelo base evaluados por el autor; no se dispone de datos de parametros, contexto ni licencia de las alternativas en la informacion proporcionada.
+No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo sigue instrucciones daninas: da respuestas detalladas a peticiones de contenido peligroso o ilegal que el original declina. No tiene entrenamiento de seguridad superpuesto y no debe desplegarse a usuarios finales sin salvaguardas propias.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; como cualquier modelo generativo, puede producir informacion falsa con apariencia de veracidad.
-- Deriva por cuantizacion: las versiones IQ3_M (KLD 0,0595) e IQ2_M (KLD 0,0751) son notablemente lossy; para evaluacion rigurosa se recomienda Q8_0, que es el usado en la evaluacion publicada.
-- Sesgos conocidos: no documentados en la informacion disponible; la eliminacion del rechazo puede amplificar sesgos presentes en el modelo base.
-- Limitaciones de contexto e idioma: no disponibles; la evaluacion usa fragmentos de 4.096 tokens, pero no se especifica la ventana maxima.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor advierte explicitamente contra el despliegue sin salvaguardas; la responsabilidad legal del contenido generado recae en el operador.
-- Recomendaciones de inferencia: usar thinking on, `--temp 0.6 --top-p 0.95` y un cap de pensamiento; no usar muestreo DRY.
-- No existe GGUF BF16 para v2.1; para precision completa hay que usar el checkpoint safetensors del repo principal.
+- El modelo sigue instrucciones dañinas: ofrece respuestas detalladas a peticiones de contenido peligroso o ilegal que el modelo original rechaza, y no tiene entrenamiento de seguridad reincorporado. No debe desplegarse ante usuarios finales sin salvaguardas propias.
+- Riesgo de alucinación: no cuantificado en la información disponible, pero es un riesgo inherente a los modelos generativos de este tamaño.
+- Exceso de razonamiento: el modelo original y la v2.1 tendían a razonar hasta agotar el límite de pensamiento en tareas de varios pasos; el Prime add-on de la v3 lo mitiga, pero la model card no cuantifica cuánto.
+- `temperature` 0 provoca bucles en el razonamiento según la model card; debe usarse 0.6.
+- Requiere una compilación específica de llama.cpp con el arreglo del PR #32704; las versiones etiquetadas hasta b12608 no son compatibles.
+- La evaluación principal se hizo sobre los pesos en precisión completa, no sobre estos GGUF; la calidad real de cada cuantización puede diferir, y los archivos IQ3_M e IQ2_M son "notablemente lossy" según el autor.
+- Idiomas soportados: no disponible; no se documenta el rendimiento multilingüe.
+- Licencia Apache 2.0: permite uso comercial, pero la ausencia de filtros de seguridad traslada al desplegador toda la responsabilidad legal y ética sobre el contenido generado.
+- El repositorio ocupa 507,7 GB; conviene descargar solo el archivo necesario.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound-GGUF
-- Modelo base: https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound
-- GGUF BF16 oficial de partida: https://huggingface.co/ggml-org/Inkling-2-Mini-GGUF
-- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- Modelo base Unbound: https://huggingface.co/nokeepai/Inkling-2-Mini-Unbound
+- Modelo original Inkling 2 Mini: https://huggingface.co/thinkingmachines/Inkling-2-Mini
 - Sitio del autor: https://nokeep.ai/?ref=huggingface
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- PR de llama.cpp con el arreglo de bucle: PR #32704 (sin URL directa en la información disponible)

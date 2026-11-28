@@ -2,80 +2,99 @@
 
 ## Resumen
 
-Baguettotron-VLM es un modelo de lenguaje y visión (VLM) abierto y reproducible en la clase sub-1B de parámetros, desarrollado por Andrea Gemelli. Extiende el modelo de texto Baguettotron de PleIAs (321M de parámetros, arquitectura Llama) con el encoder visual InternViT-300M-448px-V2.5 (304M, congelado) y un proyector MLP ligero, alcanzando unos 665M de parámetros totales según los pesos safetensors (la model card indica ~628M). El modelo acepta imágenes de 448×448 píxeles y las convierte en 256 tokens visuales mediante pixel unshuffle, que se intercalan con los tokens de texto para que el LLM genere respuestas.
+Baguettotron-VLM (checkpoint `baguettotron-vision-vqa`) es un modelo de visión-lenguaje multimodal de código abierto y tamaño reducido (sub-1B) desarrollado por el autor independiente andreagemelli. Extiende el modelo de texto PleIAs/Baguettotron —un SLM de razonamiento de 321M de parámetros con arquitectura Llama— añadiendo capacidades visuales mediante el codificador de visión InternViT-300M-448px-V2.5 de OpenGVLab y un proyector MLP ligero. El total ronda los 628M de parámetros según la model card (665.412.544 según los pesos safetensors publicados).
 
-Se publican dos checkpoints: uno de alineación solo-proyector (baguettotron-internvit-alignment) y el presente, ajustado por instrucciones (baguettotron-vision-vqa), que sigue instrucciones visuales y responde preguntas de respuesta corta. Hereda seis idiomas europeos (inglés, francés, alemán, español, italiano y polaco) del backbone de Baguettotron. Su relevancia radica en ofrecer un VLM multilingüe de tamaño reducido, con licencia Apache 2.0, reproducible y ejecutable en hardware de consumo, pensado para tareas de descripción de imágenes y VQA factual.
+El modelo resuelve tareas de respuesta a preguntas visuales (VQA) y descripción de imágenes en seis idiomas europeos (inglés, francés, alemán, español, italiano y polaco), heredados del backbone textual. Se publica bajo licencia Apache 2.0 y está pensado para ser totalmente reproducible, con código fuente y write-up disponibles. Su relevancia radica en ofrecer un VLM completamente abierto y de pequeño tamaño, desplegable en hardware modesto, en una categoría dominada por modelos mucho mayores.
+
+La versión 1.1 (4 de noviembre de 2026) introduce una edición en el espacio de pesos sin entrenamiento por gradiente: se modificaron 9.216 pesos de los 665M (0,0014 %) para que el modelo termine sus respuestas con un token de parada real y responda mejor a preguntas del tipo "¿hay un … en la imagen?". El checkpoint original se conserva como `revision="v1.0"`.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision Transformer (InternViT-300M-448px-V2.5) + MLP proyector + LLM Baguettotron (Llama, 80 capas, h=576) |
-| Parametros totales | 665.412.544 (según safetensors; la model card indica ~628M) |
-| Parametros activos | 665.412.544 (no es MoE) |
+| Arquitectura | VLM: codificador InternViT-300M-448px-V2.5 (congelado) + pixel unshuffle (factor 2) + proyector MLP de 2 capas (~2,7M) + LLM Baguettotron (321M, arquitectura Llama, 80 capas, h=576) |
+| Parametros totales | 665.412.544 (según safetensors); ~628M según la model card |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bfloat16 (safetensors); no se documentan cuantizaciones adicionales |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; la model card cita uso en bfloat16 y fp32) |
 | Idiomas soportados | en, fr, de, es, it, pl |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (con `custom_code`, requiere `trust_remote_code=True`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un encoder visual congelado (InternViT-300M-448px-V2.5) que procesa una imagen de 448×448 píxeles y produce 1024 tokens de 1024 dimensiones. Un pixel unshuffle (factor 2) reduce esto a 256 tokens de 4096 dimensiones, que un proyector MLP de dos capas (~2,7M de parámetros) transforma a 576 dimensiones para alinearlos con el espacio de embeddings del LLM Baguettotron. El LLM, de 321M de parámetros y arquitectura Llama, es el backbone de texto.
+La arquitectura encadena un codificador visual InternViT-300M-448px-V2.5 (304M, congelado) que procesa imágenes de 448×448 y produce 1024 tokens de dimensión 1024. Un pixel unshuffle de factor 2 reduce la secuencia a 256 tokens de dimensión 4096, que un proyector MLP de dos capas (~2,7M de parámetros) proyecta a 256 tokens de dimensión 576. Estos tokens visuales se intercalan con los tokens de texto y se introducen en el LLM Baguettotron (321M, arquitectura Llama con 80 capas y dimensión oculta 576).
 
-El entrenamiento se realiza en dos fases: primero un calentamiento del proyector (alignment) con datos de descripción de imágenes, y después un ajuste fino por instrucciones del proyector y el LLM sobre el dataset The Cauldron (47 subconjuntos) mezclado con un 10% de datos de texto sintético de PleIAs/SYNTH. No se emplea RLHF ni DPO; el ajuste es supervisado. El modo de generación es "no-thinking": la respuesta del asistente comienza directamente con el token de cierre `response` sin trazas de razonamiento, porque The Cauldron no contiene dichas trazas.
+El entrenamiento consta de dos fases. Primero, un warmup de solo proyector (`baguettotron-internvit-alignment`) que alinea visión y lenguaje y produce únicamente descripciones. Después, un fine-tuning completo del proyector y del LLM sobre The Cauldron (47 subconjuntos) mezclado con un 10 % de datos textuales PleIAs/SYNTH. El modelo se entrena con el turno del asistente comenzando siempre por un token de cierre `` (modo "sin razonamiento"), ya que The Cauldron no contiene trazas de razonamiento; el procesador rellena automáticamente ese prefijo. La versión 1.1 aplica una edición en el espacio de pesos inspirada en *Sparks of Weight-Space Programming*: modifica 4 filas de la capa de salida (token de parada, 2.304 pesos) y 4 neuronas de la MLP de la última capa, sin descenso de gradiente, para enrutar hacia la respuesta una evidencia que el modelo ya codificaba en sus activaciones (una sonda lineal lee la presencia del objeto con un 70–74 % de acierto).
 
 ## Capacidades
 
-- Respuesta a preguntas visuales (VQA) de respuesta corta: qué hay en la imagen, conteo de objetos, opción múltiple.
-- Generación de descripciones de imágenes (image captioning) concisas.
-- Seguimiento de instrucciones visuales simples (por ejemplo, "Describe la imagen de forma concisa").
-- Multilingüismo heredado: inglés, francés, alemán, español, italiano y polaco, aunque no verificado en benchmarks no ingleses.
-- No soporta OCR ni lectura de texto en imágenes (la resolución de 448×448 limita el texto a 2-4 px/carácter).
-- No incluye modo de razonamiento explícito (sin trazas `thinking`).
-- No dispone de tool calling ni capacidades de agente.
+- Respuesta a preguntas visuales (VQA) directa, sin trazas de razonamiento.
+- Descripción de imágenes y captioning corto.
+- Seguimiento de instrucciones visuales básicas.
+- Conversación multimodal de un solo turno con imagen intercalada mediante el token `<image>`.
+- Multilingüismo en seis idiomas: inglés, francés, alemán, español, italiano y polaco.
+- Respuestas terminadas con token de parada real (a partir de v1.1).
+- Mejor rendimiento en preguntas de presencia del tipo "¿hay un … en la imagen?" (v1.1).
+- Soporte de tool calling / function calling: no disponible.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades de audio o thinking mode: no disponibles.
 
 ## Casos de uso
 
-- Descripción automática de imágenes para accesibilidad: generar textos alternativos para personas con discapacidad visual en páginas web o aplicaciones, usando el modelo para producir descripciones cortas en varios idiomas.
-- Moderación de contenido visual básica: clasificar imágenes según su contenido (por ejemplo, detectar si hay animales, vehículos o personas) mediante preguntas de sí/no o de opción múltiple.
-- Asistente de ayuda visual en móviles: integrar el modelo en una app que responda "¿qué hay en la foto?" o "¿cuántos objetos aparecen?" con respuestas factuales cortas, gracias a su bajo consumo de recursos.
-- Análisis rápido de fotos en e-commerce: generar descripciones de productos a partir de imágenes para catálogos multilingües, aprovechando el soporte de seis idiomas.
-- Material didáctico interactivo: responder preguntas sobre imágenes en libros o presentaciones educativas, como "¿qué animal es este?" o "¿qué color predomina?", en entornos con recursos limitados.
-- Prototipado de VLM en edge devices: ejecutar el modelo en CPU o Apple Silicon para pruebas de concepto de aplicaciones de visión por computador sin necesidad de GPU dedicada.
+- Descripción automática de imágenes en catálogos y bibliotecas: el modelo genera captions cortos y directos, adecuado para etiquetar lotes de imágenes con un coste computacional bajo gracias a sus ~628M de parámetros.
+- Accesibilidad: generación de texto alternativo breve para imágenes en aplicaciones y sitios web en cualquiera de los seis idiomas soportados, ejecutable en CPU o Apple Silicon según la model card.
+- Moderación y verificación de contenido visual: responder preguntas de presencia ("¿hay un coche en la imagen?") es una de las tareas reforzadas en v1.1, útil en filtros automáticos simples.
+- Asistente de chat multimodal ligero: integración en aplicaciones de mensajería donde el usuario adjunta una imagen y formula una pregunta corta, con despliegue en hardware de gama baja.
+- Procesamiento por lotes en entornos con recursos limitados: al caber en dispositivos sin GPU dedicada (probado en mps y CPU), permite pipelines de captioning masivo sin infraestructura de servidores GPU.
+- Educación y prototipado de investigación: al ser totalmente reproducible y Apache 2.0, sirve como base para experimentos de alineación visión-lenguaje, edición en espacio de pesos y estudios de VLM de pequeño tamaño.
+- Localización multilingüe de contenido visual: descripciones en francés, alemán, español, italiano o polaco sin necesidad de modelos separados por idioma.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente indica cualitativamente que el modelo es más fuerte en descripciones cortas y preguntas del tipo "qué hay en la imagen", y más débil en descripción abierta larga, con respuestas de opción múltiple, conteo y color cercanas al azar. No se aportan cifras de MMLU, HumanEval, GSM8K ni de benchmarks multimodales como MMMU o VQAv2.
 
 ## Requisitos de hardware
 
-- VRAM estimada: los pesos en bfloat16 ocupan ~1,3 GB; con overhead de activaciones y KV cache, se estiman 2-3 GB de VRAM para inferencia.
-- GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (RTX 3060, RTX 4060, RTX 4090, etc.) y GPUs de datacenter como A100 o H100.
-- Compatible con Apple Silicon (mps) y CPU, según pruebas del autor.
-- Opciones de despliegue: transformers (con `trust_remote_code=True`), posible conversión a GGUF para llama.cpp u Ollama, y soporte en vLLM si se adapta el formato.
-- Latencia y throughput: no disponibles; al ser un modelo de ~665M, se espera una latencia baja en GPU consumer, pero no hay datos publicados.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 665M de parámetros, en bfloat16 los pesos ocupan aproximadamente 1,3 GB, a los que se suma el estado del codificador y las activaciones.
+- GPU recomendadas: no disponible; la model card no especifica GPU concretas.
+- Cabe en GPU de consumo: sí, por tamaño (sub-1B); la model card confirma funcionamiento en Apple Silicon (mps) y CPU, además de `device_map="auto"`.
+- Opciones de despliegue: `transformers>=4.56,<5` con `AutoModelForImageTextToText` y `AutoProcessor`, `trust_remote_code=True`, junto con torch, pillow, timm, einops y accelerate. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa con modelos de la misma categoría (VLM sub-1B multilingües). La model card no proporciona benchmarks ni comparaciones con alternativas. Se puede mencionar que existen otros VLM pequeños como Moondream2 (1.86B) o SmolVLM (2.2B), pero no son sub-1B y no hay datos de rendimiento comparables.
+No se han proporcionado datos de benchmarks ni comparaciones directas con otros modelos en la información disponible. Como referencia estructural, el modelo se apoya en dos componentes abiertos: PleIAs/Baguettotron (321M, texto) y OpenGVLab/InternViT-300M-448px-V2_5 (304M, visión). No se dispone de datos de rendimiento comparativo frente a otros VLM de la clase sub-1B, por lo que la comparativa cuantitativa se indica como no disponible.
+
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| baguettotron-vision-vqa | ~628M (665M en safetensors) | no disponible | Apache 2.0 | Hugging Face |
+| PleIAs/Baguettotron (backbone) | 321M | no disponible | no disponible en la informacion | Hugging Face |
+| OpenGVLab/InternViT-300M-448px-V2_5 (codificador) | 304M | no disponible | no disponible en la informacion | Hugging Face |
+| Alternativas VLM sub-1B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Resolución limitada: una sola imagen de 448×448 produce 256 tokens visuales, lo que impide leer texto en imágenes (OCR), gráficos o documentos (2-4 px/carácter).
-- Alucinaciones frecuentes en preguntas de detalle fino o con mucho texto; el modelo puede inventar contenido cuando se le piden respuestas largas.
-- El ajuste por instrucciones es limitado en comparación con el volumen de datos; el rendimiento decae en prompts largos o composicionales.
-- La capacidad multilingüe es heredada del backbone, pero no ha sido evaluada en benchmarks no ingleses; el rendimiento real en español, francés, etc. no está verificado.
-- No soporta tool calling ni razonamiento explícito (modo "no-thinking").
-- El uso en producción requiere validación adicional, especialmente en tareas que exijan precisión visual o lectura de texto.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no garantiza resultados en escenarios no probados.
+- Riesgo de alucinación: los ejemplos de la model card muestran descripciones incorrectas ("One cat is wearing a red light switch"), lo que indica errores factuales frecuentes en detalles finos.
+- Preguntas de opción múltiple, conteo y color: el propio autor señala que las respuestas están cerca del azar.
+- Descripción abierta larga: es el punto más débil del modelo; rinde mejor en descripciones cortas.
+- Variabilidad por dispositivo: las descripciones en bfloat16 varían según el hardware; en fp32 las versiones 1.0 y 1.1 producen textos casi idénticos.
+- Contexto: la longitud de contexto no está documentada, lo que dificulta planificar conversaciones largas o imágenes múltiples.
+- Idiomas: aunque soporta seis idiomas europeos, no se documenta calidad por idioma ni cobertura fuera de ellos.
+- Código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar antes de usarlo en producción.
+- Licencia: Apache 2.0 permite uso comercial, pero no se documentan garantías ni evaluaciones de seguridad.
+- Sin soporte documentado de tool calling, agentes o razonamiento multi-paso, lo que limita su uso en pipelines agénticos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/andreagemelli/baguettotron-vision-vqa
-- Checkpoint de alineación: https://huggingface.co/andreagemelli/baguettotron-internvit-alignment
+- Checkpoint de alineación (solo proyector): https://huggingface.co/andreagemelli/baguettotron-internvit-alignment
 - Colección Baguettotron-VLM: https://huggingface.co/collections/andreagemelli/baguettotron-vlm-69de37b4cab1960226e9c1f7
-- Repositorio de código: https://github.com/andreagemelli/baguettotron-vlm
-- Artículo técnico: https://andreagemelli.me/posts/baguettotron-vlm
-- Modelo base de texto: https://huggingface.co/PleIAs/Baguettotron
-- Encoder visual: https://huggingface.co/OpenGVLab/InternViT-300M-448px-V2_5
+- Código fuente: https://github.com/andreagemelli/baguettotron-vlm
+- Write-up del autor: https://andreagemelli.me/posts/baguettotron-vlm/
+- Modelo base textual: https://huggingface.co/PleIAs/Baguettotron
+- Codificador visual: https://huggingface.co/OpenGVLab/InternViT-300M-448px-V2_5
+- Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceM4/the_cauldron
+- Blog sobre edición en espacio de pesos: https://rikiyat.github.io/blog/weight-space-programming/
+- Paper referenciado (arXiv:2305.10355): https://arxiv.org/abs/2305.10355
+- COCO (imágenes de ejemplo): https://cocodataset.org

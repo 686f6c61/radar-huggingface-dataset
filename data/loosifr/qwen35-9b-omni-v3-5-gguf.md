@@ -2,84 +2,79 @@
 
 ## Resumen
 
-qwen35-9b-omni-v3.5-GGUF es la distribucion en formato GGUF del modelo base qwen35-9b-omni-v3.5, publicada por el usuario LoosiFR en Hugging Face. Se trata de una cuantizacion orientada a inferencia local con llama.cpp, pensada explicitamente para flujos de trabajo agenticos, uso de herramientas (tool calling) y desarrollo de videojuegos. El unico archivo publicado es `qwen35-9b-omni-v3.5-Q5_K_M.gguf`, de 6,2 GB, lo que sugiere una cuantizacion Q5_K_M sobre un modelo de aproximadamente 9.200 millones de parametros.
+qwen35-9b-omni-v3.5-GGUF es una cuantizacion en formato GGUF del modelo base qwen35-9b-omni-v3.5, publicada por el usuario LoosiFR en Hugging Face. El modelo cuenta con 9.197.093.888 parametros (aproximadamente 9,2 mil millones) y esta empaquetado en un unico archivo Q5_K_M de 6,2 GB dentro de un repositorio de 13,3 GB. Su orientacion declarada es el uso agentico, el tool calling y el desarrollo de videojuegos, y esta preparado para ejecutarse con llama.cpp y Ollama.
 
-El modelo base declara 9.197.093.888 parametros totales segun los metadatos de safetensors, lo que lo situa en la franja de los modelos de ~9B, un tamano manejable en GPUs de consumo con cuantizacion de 5 bits. La model card esta enfocada a la practica: ofrece un comando concreto de `llama-server` para ejecutarlo en una GPU de 12 GB, indica como desactivar el modo de razonamiento por peticion y describe la integracion con editores como Blender, Unity o Godot mediante un servidor MCP apuntando al endpoint local compatible con la API de OpenAI.
+La relevancia practica del modelo reside en su formato de distribucion: al ser un GGUF con cuantizacion Q5_K_M, puede ejecutarse en GPU de consumo con 12 GB de VRAM usando llama.cpp con soporte Jinja para tool calling, lo que lo situa en el segmento de modelos de ~9B desplegables en hardware local. El autor documenta una verificacion de ida y vuelta de tool calls sobre el propio archivo exportado, con resultado positivo tanto en la llamada a herramienta como en el uso del resultado devuelto.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto de cuantizacion de un modelo derivado, con cero descargas y un like en el momento de la consulta, sin licencia declarada ni idiomas especificados, y sin resultados de benchmarks publicados. Su interes practico reside en la receta de despliegue para tool calling con plantillas Jinja y en su orientacion a pipelines agenticos sobre herramientas de desarrollo de juegos.
+La informacion publica disponible es limitada: no se especifican licencia, idiomas soportados, pipeline, composicion del dataset de entrenamiento ni resultados de benchmarks. La model card se centra exclusivamente en instrucciones de despliegue, no en las caracteristicas tecnicas del modelo base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base derivado; no se especifica en la informacion proporcionada) |
-| Parametros totales | 9.197.093.888 |
+| Arquitectura | no disponible |
+| Parametros totales | 9.197.093.888 (~9,2B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 32.768 tokens en la configuracion de ejemplo de llama.cpp (`-c 32768`), ampliable segun VRAM; contexto nativo del modelo base no disponible |
-| Tipos de cuantizacion | Q5_K_M (unico archivo publicado, 6,2 GB); KV cache en q8_0 en el ejemplo del autor |
+| Longitud de contexto | 32.768 tokens en la configuracion de ejemplo documentada (ampliable segun VRAM) |
+| Tipos de cuantizacion | Q5_K_M (unico archivo publicado en el repo) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye presumiblemente en safetensors, no confirmado |
+| Formato de pesos | GGUF (llama.cpp); modelo base en safetensors segun metadatos de HF |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base qwen35-9b-omni-v3.5: la model card del repositorio GGUF no describe si se trata de un transformer denso, un MoE o una arquitectura hibrida, ni detalla la composicion del dataset de entrenamiento, el numero de tokens vistos o si hubo fases de RLHF, DPO u otro ajuste por preferencias. El nombre del modelo sugiere un origen en la familia Qwen y el sufijo "omni" podria indicar capacidades multimodales, pero ninguno de estos extremos se confirma en la informacion proporcionada.
+No se dispone de informacion sobre la arquitectura interna del modelo base qwen35-9b-omni-v3.5. El nombre sugiere una vinculacion con la familia Qwen y la etiqueta "omni" podria indicar capacidades multimodales, pero no hay datos publicados que lo confirmen. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento.
 
-Lo unico documentado tecnicamente es el proceso de cuantizacion y el modo de ejecucion: un unico archivo Q5_K_M de 6,2 GB generado para llama.cpp, con soporte de plantillas Jinja para el formateo de llamadas a herramientas (`--jinja`), atencion con Flash Attention activada (`-fa on`), cache de claves y valores cuantizada a q8_0 (`-ctk q8_0 -ctv q8_0`) y un flag de plantilla de chat para desactivar el razonamiento por peticion (`enable_thinking: false`). La existencia de ese parametro indica que el modelo base incorpora un modo de pensamiento conmutable, aunque no se detalla su funcionamiento.
+La unica informacion tecnica concreta proviene de la model card del GGUF: el autor documenta el uso de plantillas Jinja para tool calling en llama.cpp, con soporte para desactivar el modo de razonamiento por peticion mediante `chat_template_kwargs: {"enable_thinking": false}`, lo que implica que el modelo base incorpora un modo de pensamiento (thinking mode) configurable. La verificacion de exportacion reporta `{"tool_call": true, "tool_result_used": true}` sobre el archivo Q5_K_M.
 
 ## Capacidades
 
 - Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
-- Tool calling y function calling: el autor documenta el uso de plantillas Jinja en llama.cpp como la via mas fiable para llamadas a herramientas, y advierte que a traves de Ollama la fiabilidad es menor.
-- Uso agentico: las etiquetas `agentic` y `tool-use` indican orientacion a flujos multi-paso con herramientas.
-- Integracion con MCP (Model Context Protocol): la model card describe apuntar un cliente MCP al endpoint local `http://127.0.0.1:8080/v1` y habilitar el servidor MCP del editor.
-- Modo de razonamiento conmutable mediante `chat_template_kwargs.enable_thinking`, desactivable por peticion.
-- Compatibilidad con endpoints estilo OpenAI (`endpoints_compatible`), lo que permite usarlo con clientes que esperan la API de `/v1`.
-- Capacidades multimodales: no confirmadas en la informacion disponible, pese al sufijo "omni" del nombre.
-- Cobertura multilingue: no disponible.
+- Tool calling / function calling mediante plantillas Jinja en llama.cpp, con verificacion de ida y vuelta sobre el archivo exportado.
+- Uso agentico y razonamiento multi-paso, segun las etiquetas `agentic` y `tool-use`.
+- Modo de razonamiento (thinking) activable y desactivable por peticion mediante `chat_template_kwargs`.
+- Orientacion a desarrollo de videojuegos, segun la etiqueta `game-development`.
+- Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
+- Capacidades multilingues: no disponible.
+- Vision, audio u otras modalidades: no disponible (la etiqueta "omni" no viene acompanada de documentacion).
 
 ## Casos de uso
 
-- Asistencia agentica en motores de videojuegos: el modelo se conecta a traves de un cliente MCP al servidor del editor (Blender, Unity o Godot) expuesto en `http://127.0.0.1:8080/v1`, permitiendo que el modelo consulte la escena, cree objetos o modifique propiedades mediante llamadas a herramientas estructuradas.
-- Automatizacion de tareas de edicion 3D en Blender: con el servidor MCP del editor habilitado, el modelo puede encadenar operaciones como importar mallas, aplicar materiales o ajustar transformaciones a partir de instrucciones en lenguaje natural.
-- Prototipado de NPCs con dialogo y acciones: la combinacion de generacion de texto y tool calling permite que un personaje no jugable decida que accion ejecutar en el motor del juego y la invoque como llamada a funcion, con el modo de pensamiento desactivado para reducir latencia.
-- Desarrollo de pipelines de herramientas en local: al ejecutarse con `llama-server --jinja`, sirve como backend compatible con la API de OpenAI para probar agentes que necesitan function calling sin depender de servicios en la nube.
-- Inferencia en estaciones de trabajo con GPU de 12 GB: la configuracion documentada con Q5_K_M, Flash Attention y KV cache q8_0 permite mantener conversaciones de hasta 32.768 tokens en una unica GPU de consumo, util para asistentes de codigo o documentacion en local.
-- Evaluacion de flujos con razonamiento conmutable: al poder activar o desactivar `enable_thinking` por peticion, es posible comparar calidad y latencia en tareas de planificacion agentica dentro de un mismo despliegue.
-- Servicio de chat autoalojado para equipos pequenos: con el binario de llama.cpp y el archivo GGUF, se puede levantar un endpoint `/v1` en `127.0.0.1:8080` sin infraestructura adicional, aunque sin garantias de soporte ni licencia declarada.
+- Asistencia agentica local en estaciones de trabajo: el modelo puede ejecutar bucles de tool calling sobre llama.cpp con `--jinja`, lo que permite construir agentes que invocan funciones locales sin depender de APIs externas.
+- Desarrollo de videojuegos asistido: dado el etiquetado explicito del autor, es adecuado para generar dialogos de NPC, descripciones de items, tramas ramificadas y scripts de comportamiento en motores como Godot o Unity, ejecutandose en la propia maquina del desarrollador.
+- Automatizacion de tareas con function calling en pipelines internos: con 32K tokens de contexto configurados, puede gestionar conversaciones multi-turno que acumulan resultados de herramientas y mantener el hilo de la tarea.
+- Prototipado rapido en GPU de consumo: con 6,2 GB en Q5_K_M cabe en tarjetas de 12 GB, lo que permite iterar sobre prompts y plantillas de herramientas sin infraestructura en la nube.
+- Razonamiento con modo thinking controlado: para tareas que requieren deliberacion (planificacion, depuracion logica) se activa el modo pensamiento; para respuestas de baja latencia en produccion se desactiva por peticion.
+- Sustitucion de modelos mayores en entornos con restricciones de VRAM: para tareas de clasificacion, extraccion de entidades o generacion de texto acotada donde un modelo de 9B es suficiente y se necesita ejecucion local.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explicitamente que la comprobacion de llamadas a herramientas reales en llama.cpp al exportar el archivo figura como `not run`, por lo que no hay verificacion publicada del correcto funcionamiento del tool calling sobre esta cuantizacion concreta.
+No se han publicado resultados de benchmarks en la informacion disponible. La unica metrica de validacion reportada por el autor es funcional, no de calidad: la comprobacion de tool calling sobre el archivo Q5_K_M devuelve `{"tool_call": true, "tool_result_used": true}`.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 6,2 GB para los pesos en Q5_K_M, mas la cache KV. Con contexto de 32.768 tokens y cache q8_0, el autor apunta a un objetivo de 12 GB de VRAM en total.
-- GPU recomendadas: el autor documenta explicitamente el caso de una GPU de 12 GB; no se indican modelos concretos como RTX 4090, A100 o H100.
-- GPU de consumo: cabe en tarjetas de 12 GB o mas con la configuracion indicada; en GPUs de 8 GB habria que reducir contexto o cuantizar mas agresivamente, extremo no documentado.
-- Despliegue: llama.cpp mediante `llama-server` con `--jinja -ngl 99 -fa on -c 32768 -ctk q8_0 -ctv q8_0`; Ollama mediante `ollama create` con un Modelfile, aunque el autor advierte que el tool calling es mas fiable por llama.cpp.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: aproximadamente 6,2 GB para los pesos en Q5_K_M, mas la memoria de la cache KV. Con contexto de 32.768 tokens y cache cuantizada en q8_0 (`-ctk q8_0 -ctv q8_0`), el autor indica que cabe en una GPU de 12 GB.
+- GPU recomendadas: el autor documenta explicitamente el escenario de 12 GB de VRAM (por ejemplo, RTX 3060 12 GB, RTX 4070, RTX 5070). Para mayor contexto o mayor throughput son adecuadas RTX 4090, A100 o H100, aunque no hay mediciones publicadas.
+- Cabe en GPU de consumo: si, en tarjetas de 12 GB o superiores con la configuracion documentada.
+- Opciones de despliegue: llama.cpp (`llama-server` con `--jinja -ngl 99 -fa on`) y Ollama mediante Modelfile. El autor advierte que el tool calling es mas fiable a traves de llama.cpp con `--jinja`.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye modelos comparables, y las caracteristicas del modelo base (arquitectura, licencia, idiomas, benchmarks) no estan documentadas, lo que impide establecer una comparacion rigurosa con alternativas de la misma categoria.
+No disponible. La informacion proporcionada no incluye modelos comparables ni datos de rendimiento que permitan establecer una comparacion rigurosa con alternativas de tamano similar.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifican condiciones de uso, incluido el uso comercial, por lo que no es posible asumir permisos de redistribucion o explotacion.
-- Idiomas no declarados: se desconoce la cobertura linguistica real y la calidad en castellano.
-- Sin benchmarks ni verificacion de tool calling: la propia model card indica `not run` en la comprobacion de llamadas a herramientas al exportar el archivo, de modo que la fiabilidad del function calling en esta cuantizacion no esta validada publicamente.
-- Repositorio practicamente sin traccion: cero descargas y un like en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Modelo derivado de un base no auditado en esta ficha: al no documentarse arquitectura ni datos de entrenamiento, no es posible evaluar sesgos, riesgo de alucinacion ni calidad del ajuste instruccional.
-- Riesgo de alucinacion: inherente a los modelos generativos de este tamano; no hay evaluaciones publicadas que lo cuantifiquen.
-- Dependencia de la plantilla Jinja: el tool calling fiable depende de `--jinja` en llama.cpp; otros runners pueden degradar el formato de las llamadas.
-- Contexto configurable pero no nativo confirmado: los 32.768 tokens son la configuracion de ejemplo del autor, no necesariamente el limite nativo del modelo base.
-- Ausencia de garantias de mantenimiento: el repositorio no indica versionado, soporte ni actualizaciones previstas.
+- La licencia no esta declarada en la informacion disponible, lo que impide confirmar si se permite uso comercial. Es imprescindible verificar la licencia del modelo base antes de cualquier despliegue en produccion.
+- No se especifican los idiomas soportados; el rendimiento en castellano no esta documentado.
+- No hay datos de benchmarks, por lo que la calidad del modelo en tareas de razonamiento, codigo o matematicas no puede evaluarse con evidencia publica.
+- El modelo tiene solo 194 descargas y 1 like en el momento de la consulta, lo que indica una validacion comunitaria muy limitada.
+- El repositorio incluye un unico archivo de cuantizacion (Q5_K_M); no hay variantes Q4, Q8 ni versiones de menor o mayor precision.
+- El autor advierte que el tool calling es mas fiable con llama.cpp y `--jinja` que con otras rutas de despliegue.
+- El contexto de 32K es la configuracion de ejemplo documentada, no necesariamente el maximo del modelo base; ampliarlo requiere vigilar el consumo de VRAM.
+- Riesgo de alucinacion y sesgos: no documentados por el autor; deben asumirse los habituales en modelos de esta escala sin evaluacion publica.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/LoosiFR/qwen35-9b-omni-v3.5-GGUF
 - Modelo base: https://huggingface.co/LoosiFR/qwen35-9b-omni-v3.5
-- llama.cpp (runner recomendado por el autor): no disponible en la informacion proporcionada
-- Documentacion de MCP: no disponible en la informacion proporcionada
-- Papers, blogs y demos: no disponibles en la informacion proporcionada

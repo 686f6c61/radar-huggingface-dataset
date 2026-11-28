@@ -2,85 +2,91 @@
 
 ## Resumen
 
-Qwen3.5-397B-A17B-NVFP4-AutoRound-4L es una versión cuantizada del modelo Qwen3.5-397B-A17B, publicada por el equipo intel-ai. Se trata de una conversión a NVFP4 (formato de coma flotante de 4 bits de NVIDIA) realizada con la herramienta AutoRound de Intel, que aplica cuantización consciente del entrenamiento (quantization-aware) para preservar la precisión. El modelo base es un transformer de tipo Mixture of Experts (MoE) de la familia Qwen3.5, con 397.000 millones de parámetros totales y 17.000 millones activos por token.
+`intel-ai/Qwen3.5-397B-A17B-NVFP4-AutoRound-4L` es una variante estructuralmente reducida del checkpoint cuantizado NVFP4 `Qwen3.5-397B-A17B-NVFP4-AutoRound-v2`, derivado a su vez del modelo base multimodal `Qwen/Qwen3.5-397B-A17B` de Alibaba Qwen. No se trata de un modelo entrenado ni destilado: es un recorte a nivel de safetensors que conserva únicamente 4 capas del lenguaje (las capas 0 a 3 del original), la torre visual completa y la capa MTP (multi-token prediction). El resto de capas del lenguaje se descarta.
 
-El repositorio se distribuye en formato safetensors con `compressed-tensors` y está etiquetado como "8-bit" en Hugging Face, aunque el nombre indica NVFP4 (4 bits). El tamaño del repo es de 30,0 GB y el recuento real de parámetros en los safetensors es de 18.587.405.248, un dato que no coincide con los 397B del nombre y que probablemente refleja los pesos efectivamente almacenados tras la cuantización o un subconjunto del modelo. Esta discrepancia debe tenerse en cuenta al planificar el despliegue.
+El modelo pertenece a la familia Qwen3.5 MoE, con arquitectura híbrida de atención (tres capas de atención lineal seguidas de una capa de atención completa), 512 expertos enrutados por capa con 10 expertos activos por token, y un experto compartido. La reducción la publica el equipo `intel-ai`, presumiblemente como artefacto de referencia para validar pipelines de cuantización, despliegue o herramientas de compresión sobre modelos Qwen3.5, más que como modelo de producción.
 
-La relevancia de esta ficha radica en que ofrece una vía para ejecutar un MoE de gran escala en hardware con memoria limitada, gracias a la compresión a 4 bits. No obstante, la información pública disponible es muy escasa: no hay pipeline declarado, ni licencia, ni idiomas, ni benchmarks publicados en la información proporcionada.
+Su relevancia práctica es limitada: al conservar solo 4 de las 60 capas del lenguaje original, la calidad de generación de texto queda severamente degradada. Su interés es fundamentalmente técnico: permite probar cargas de modelos NVFP4 con compressed-tensors, validar la torre visual y la capa MTP en un entorno de bajo peso (~30,77 GiB de datos tensoriales), y experimentar con el formato de cuantización AutoRound NVFP4 sin necesidad de descargar el checkpoint completo.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (qwen3_5_moe) |
-| Parámetros totales | 397B (según nombre); 18.587.405.248 en safetensors |
-| Parámetros activos | 17B (según nombre) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | NVFP4 (4 bits) vía AutoRound; tag "8-bit" y compressed-tensors |
+| Arquitectura | Transformer MoE multimodal con atención híbrida (linear_attention x3 + full_attention x1) y capa MTP |
+| Parametros totales | 35.373.294.064 (35,37 B) |
+| Parametros activos | 10 expertos enrutados por token de 512 (no se publica el recuento exacto de parámetros activos) |
+| Longitud de contexto | 262.144 posiciones máximas (max_position_embeddings) |
+| Tipos de cuantizacion | NVFP4 (4 bits, group_size=16, simétrica, escala float8_e4m3fn) para pesos y activaciones dinámicas por bloque; BF16 para módulos ignorados |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | safetensors (compressed-tensors) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (7 shards), formato compressed-tensors `nvfp4-pack-quantized` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer con arquitectura Mixture of Experts: de los 397B parámetros totales, solo 17B se activan por token, lo que reduce el coste computacional en inferencia manteniendo una gran capacidad de representación. La versión publicada por intel-ai aplica cuantización NVFP4 mediante AutoRound, una técnica de cuantización consciente del entrenamiento que ajusta los pesos y los factores de escala para minimizar la pérdida de precisión al pasar a 4 bits. El resultado se empaqueta con el formato `compressed-tensors`, compatible con librerías de inferencia que soportan este esquema.
+La arquitectura es un transformer MoE multimodal de la familia Qwen3.5. El modelo reducido conserva 4 capas del lenguaje con tipos `['linear_attention', 'linear_attention', 'linear_attention', 'full_attention']`, hidden size de 4096, 32 cabezas de atención, 2 cabezas KV, dimensión de cabeza 256, 512 expertos enrutados con 10 activos por token, tamaño intermedio MoE de 1024, experto compartido de 1024, vocabulario de 248.320 tokens y RoPE theta de 10.000.000. La torre visual tiene 27 bloques, hidden size 1152 y salida de 4096, coincidente con el hidden size del texto. Se conserva una capa MTP (multi-token prediction) con embeddings dedicados desactivados.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF o DPO en el modelo original. Tampoco se detallan innovaciones técnicas adicionales (atención lineal, decodificación especulativa, etc.) en la información proporcionada.
+No hay entrenamiento ni ajuste en esta variante: los pesos se copian tensor a tensor desde el checkpoint NVFP4 de origen mediante `reduction/make_reduced_model.py`, sin cargar el modelo completo en memoria. El checkpoint de origen es una cuantización AutoRound (versión 0.17.0) en formato compressed-tensors NVFP4, con cuantización dinámica por bloque de activaciones (`dynamic=local`, group_size=16) y sin esquema de cuantización para KV cache. Los módulos cuantizados son los expertos enrutados (`gate_proj`, `up_proj`, `down_proj`), las proyecciones de atención lineal (`in_proj_qkv`, `in_proj_z`, `in_proj_a`, `in_proj_b`, `out_proj`) y las de atención completa (`q_proj`, `k_proj`, `v_proj`, `o_proj`). Quedan en BF16 el router, el gate del experto compartido, el experto compartido completo, todas las capas lineales de la torre visual, todos los módulos MTP, `lm_head`, embeddings y tensores no lineales (RMSNorm, biases, `A_log`, `conv1d`, `dt_bias`, `patch_embed`, `pos_embed`).
 
 ## Capacidades
 
-- Generación de texto y razonamiento de propósito general, heredadas del modelo base Qwen3.5.
-- Capacidad de código y matemáticas, presumible en un modelo de esta familia, aunque no confirmada en la información disponible.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Capacidades especiales (modo thinking, visión, audio): no disponible en la información proporcionada.
+- Generación de texto: nominalmente soportada, pero severamente degradada al conservar solo 4 de 60 capas del lenguaje.
+- Razonamiento y matemáticas: no fiable en esta variante reducida; el recorte de capas elimina la mayor parte de la capacidad de cómputo profundo.
+- Generación de código: no fiable por la misma razón.
+- Procesamiento visual: la torre visual se conserva completa (27 bloques, 333 tensores), por lo que la codificación de imágenes funciona, aunque el decodificador de texto que consume esas representaciones está truncado.
+- Tool calling / function calling: el modelo base Qwen3.5 lo soporta; en esta variante reducida no es fiable en producción.
+- Agentes y razonamiento multi-paso: no fiable por el truncado de capas.
+- Multilingüe: no se publica la lista de idiomas; el vocabulario de 248.320 tokens es el del modelo base.
+- Capa MTP (multi-token prediction): conservada en BF16 (1.553 tensores, ~12,29 GiB), útil para probar decodificación especulativa o predictiva multi-token.
+- Capacidad multimodal: entrada de imagen vía torre visual de 27 bloques.
 
 ## Casos de uso
 
-- Despliegue de un MoE de gran escala en infraestructura con VRAM limitada: la cuantización NVFP4 reduce el peso del modelo a aproximadamente 30 GB en disco, lo que permite cargarlo en GPUs de 48-80 GB con offloading parcial y ejecutar inferencia de un modelo de 397B parámetros totales.
-- Servicio de generación de texto de alta capacidad en entornos con presupuesto de memoria ajustado: al activar solo 17B parámetros por token, el coste computacional por token es comparable al de un modelo denso de 17B, adecuado para APIs de chat o completado.
-- Experimentación e investigación sobre cuantización: el repositorio sirve como referencia para evaluar la calidad de AutoRound con NVFP4 en un MoE grande, comparando la salida con el modelo original en tareas de razonamiento y código.
-- Prototipado de asistentes conversacionales con contexto largo: si el modelo base soporta ventanas de contexto amplias (dato no disponible), podría emplearse en atención al cliente multi-turno, aunque la falta de especificaciones obliga a validarlo empíricamente.
-- Generación de código en pipelines internos: un MoE de esta escala puede integrarse en herramientas de autocompletado o revisión de código, siempre que se valide su calidad frente al modelo sin cuantizar.
-- Fine-tuning ligero o adaptación con LoRA sobre la versión cuantizada: aunque la cuantización NVFP4 complica el entrenamiento directo, el formato compressed-tensors permite en algunos casos adaptadores sobre las capas no cuantizadas; requiere verificación con la librería de inferencia elegida.
+- Validación de pipelines de cuantización NVFP4: sirve para comprobar que una herramienta (compressed-tensors, AutoRound, vLLM, TensorRT-LLM) carga correctamente un checkpoint `nvfp4-pack-quantized` con `quantization_config.ignore` y escalas float8_e4m3fn, sin descargar los ~144 GB del modelo completo.
+- Pruebas de integración de la torre visual: al conservarse los 27 bloques visuales completos, permite validar el pipeline de preprocesado de imagen, patch embedding y merger contra el hidden size de texto (4096) en un entorno ligero.
+- Experimentación con la capa MTP: los 1.553 tensores MTP en BF16 permiten probar mecanismos de decodificación multi-token o especulativa sobre un modelo reducido antes de escalar al checkpoint completo.
+- Referencia para reducción de modelos: el script `reduction/make_reduced_model.py` y la estructura de shards sirven como plantilla para construir variantes reducidas de otros checkpoints Qwen3.5 MoE.
+- Benchmarking de infraestructura: con 30,77 GiB de datos tensoriales y 26.583 tensores, es un banco de pruebas realista para medir latencia de carga, throughput de deserialización y memoria en GPUs consumer de gama alta o en nodos con varias GPUs.
+- Docencia y divulgación: permite mostrar la anatomía interna de un MoE multimodal Qwen3.5 (router, expertos compartidos, atención híbrida, MTP) sin requerir el modelo completo.
+- Pruebas de humo de servidores de inferencia: útil para verificar que un servidor (vLLM, TGI, SGLang) arranca y responde con un modelo MoE multimodal NVFP4 antes de desplegar el checkpoint íntegro.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el repo ocupa 30,0 GB en disco; en inferencia, el peso en memoria es similar, aunque los safetensors declaran 18,59B parámetros, lo que sugiere que la cifra de 397B del nombre no se corresponde con el contenido real del repo. Verificar antes de aprovisionar.
-- GPU recomendadas: para un modelo de este tamaño en 4 bits, se necesitan GPUs con 48 GB o más (A6000, L40S, A100 80GB, H100 80GB). Si el recuento real es de 18,59B parámetros, cabría en una RTX 4090 de 24 GB con cuantización adicional.
-- ¿Cabe en consumer GPU? Depende del recuento real de parámetros: con 18,59B en 4 bits (~9-10 GB) sí cabría en RTX 4090/3090; con 397B en 4 bits (~200 GB) no cabría en ninguna consumer GPU.
-- Opciones de despliegue: vLLM y TGI con soporte de compressed-tensors/NVFP4; llama.cpp y Ollama solo si se genera una conversión GGUF adicional, no incluida en el repo.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: ~30,77 GiB de datos tensoriales en NVFP4; con overhead de activaciones, KV cache y buffers, se recomienda al menos 40-48 GB de VRAM para el modelo en solitario.
+- GPU recomendadas: A100 80 GB, H100 80 GB, H200, L40S 48 GB, RTX 6000 Ada 48 GB. En GPUs de 24 GB no cabe el checkpoint completo; requeriría offload a CPU o sharding.
+- Cabe en consumer GPU: no en RTX 4090 (24 GB) ni RTX 3090 (24 GB) sin offload; sí en GPUs profesionales de 48 GB o en configuraciones multi-GPU.
+- Opciones de despliegue: transformers (librería declarada), vLLM, SGLang y TensorRT-LLM son candidatos habituales para NVFP4 con compressed-tensors; llama.cpp y Ollama no soportan de forma nativa el formato `nvfp4-pack-quantized` de compressed-tensors, por lo que requerirían conversión.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.5-397B-A17B-NVFP4-AutoRound-4L | 397B totales / 17B activos (nombre); 18,59B en safetensors | no disponible | no disponible | safetensors NVFP4 | Hugging Face |
-| Qwen3.5-397B-A17B (base, sin cuantizar) | 397B / 17B activos | no disponible | no disponible | safetensors | no disponible en la información |
-| Alternativas MoE cuantizadas de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Capas lenguaje | Contexto | Cuantización | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| intel-ai/Qwen3.5-397B-A17B-NVFP4-AutoRound-4L | 35,37 B (recortado) | 4 | 262.144 | NVFP4 AutoRound | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-397B-A17B (base) | 397 B (nominal) | 60 | 262.144 | BF16 | Apache 2.0 | Hugging Face |
+| Qwen3.5-397B-A17B-NVFP4-AutoRound-v2 (origen) | 397 B (nominal) | 60 | 262.144 | NVFP4 AutoRound | Apache 2.0 | Hugging Face |
 
-No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
+La comparación relevante es con el checkpoint de origen y con el modelo base: esta variante reduce el número de capas de 60 a 4 y el tamaño de pesos de ~144 GB a ~30,77 GiB de datos tensoriales, a costa de una pérdida drástica de capacidad de generación. No se dispone de benchmarks comparativos publicados.
 
 ## Limitaciones y advertencias
 
-- Discrepancia crítica entre el nombre (397B) y los parámetros reales en safetensors (18,59B): verificar el contenido del repo antes de usarlo en producción.
-- La cuantización NVFP4 puede degradar la calidad en tareas sensibles a la precisión numérica (matemáticas, código, razonamiento largo); no hay benchmarks publicados que cuantifiquen esta pérdida.
-- Licencia no declarada: no se puede confirmar el uso comercial; contactar con el autor o consultar la licencia del modelo base Qwen3.5.
-- Idiomas soportados no declarados: no asumir cobertura multilingüe sin validación.
-- Riesgo de alucinación inherente a los modelos de lenguaje de gran escala, potencialmente amplificado por la cuantización agresiva.
-- El tag "8-bit" en Hugging Face contradice el nombre NVFP4 (4 bits); confirmar el esquema real de cuantización en los ficheros de configuración.
-- Sin pipeline declarado ni demo: la integración requiere configuración manual con la librería de inferencia compatible con compressed-tensors.
-- Repositorio con solo 39 descargas y 0 likes: poca validación comunitaria, lo que aumenta el riesgo de problemas no documentados.
+- Modelo estructuralmente truncado: conserva solo 4 de 60 capas del lenguaje, por lo que la calidad de generación de texto, razonamiento y código es muy inferior a la del modelo base y no es apta para producción.
+- No es un modelo entrenado ni destilado: los pesos se copian del checkpoint NVFP4 de origen; no ha habido ajuste para compensar el recorte de capas.
+- Riesgo elevado de alucinación y de respuestas incoherentes por la pérdida de profundidad de la red.
+- Idiomas soportados no documentados en la información disponible.
+- La licencia Apache 2.0 permite uso comercial, pero el estado truncado del modelo hace desaconsejable su uso en producción sin validación exhaustiva.
+- El formato NVFP4 requiere hardware y librerías compatibles (compressed-tensors, GPUs con soporte FP4 o emulación); no es portable a llama.cpp/Ollama sin conversión.
+- La capa MTP representa ~12,29 GiB de los 30,77 GiB totales; si no se usa decodificación multi-token, es peso muerto.
+- El checkpoint de origen v2 mantiene el experto compartido en BF16; la variante E5M3 con nombre similar es un formato de empaquetado distinto y no debe confundirse con esta reducción.
+- Solo 210 descargas y 0 likes en el momento de la consulta: ecosistema de validación muy limitado, sin garantías de mantenimiento.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/intel-ai/Qwen3.5-397B-A17B-NVFP4-AutoRound-4L
-- AutoRound (Intel): no disponible en la información proporcionada
-- Modelo base Qwen3.5-397B-A17B: no disponible en la información proporcionada
-- Paper o blog de Qwen3.5: no disponible en la información proporcionada
+- Modelo en Hugging Face: https://huggingface.co/intel-ai/Qwen3.5-397B-A17B-NVFP4-AutoRound-4L
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
+- Checkpoint de origen (reducción): `Qwen3.5-397B-A17B-NVFP4-AutoRound-v2` (referenciado en la model card; no se proporciona URL directa en la información disponible)
+- Script de reducción: `reduction/make_reduced_model.py` (incluido en el repositorio del modelo)
+- Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada.

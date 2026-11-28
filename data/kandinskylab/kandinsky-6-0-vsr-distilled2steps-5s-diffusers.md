@@ -2,101 +2,95 @@
 
 ## Resumen
 
-Kandinsky-6.0-VSR-distilled2steps-5s-Diffusers es un paquete de inferencia para Diffusers del modelo de superresolución de vídeo (VSR) de la familia Kandinsky 6.0, desarrollado por KandinskyLab. Se trata de una versión destilada del modelo de flow-matching base: el transformador SR DiT de 1,41B parámetros ha sido destilado mediante π-Flow DX hasta requerir únicamente 2 evaluaciones del modelo por tesela, frente a las 4 del profesor de flow-matching. El bundle incluye además el VAE de vídeo KVAE (1,74B) y el banco de upscalers latentes x2/x4 (3,65B), sumando 1.414.263.936 parámetros en el checkpoint principal.
+Kandinsky 6.0 VSR (distilled2steps-5s) es un modelo de superresolución de vídeo (video super-resolution, VSR) desarrollado por Kandinsky Lab. Forma parte de la familia Kandinsky 6.0, centrada en generación y posprocesado de vídeo con modelos de difusión. Este checkpoint concreto es la variante destilada del modelo de superresolución, diseñada para funcionar con solo dos evaluaciones del modelo por mosaico (tile), lo que reduce drásticamente el coste computacional frente al profesor de flow matching de cuatro pasos.
 
-El modelo resuelve un problema concreto: aumentar la resolución de vídeo existente por factores de x2, x2.25 o x4 mediante difusión por teselas en el espacio latente de KVAE. Es relevante porque la destilación a 2 pasos reduce a la mitad el coste computacional de inferencia respecto al modelo de flow-matching, manteniendo el pipeline completo empaquetado para `from_pretrained`. El pipeline de Diffusers es exclusivamente de vídeo: el audio de la fuente debe remultiplexarse manualmente si se necesita en la salida.
+El modelo escala vídeos por factores de ×2, ×2.25 o ×4 mediante difusión por mosaicos en el espacio latente de KVAE, el VAE de vídeo de la familia. El paquete de Diffusers incluye el transformador SR DiT de 1.410 millones de parámetros, el VAE y el banco de upscalers latentes ×2 y ×4, todo listo para cargarse con `from_pretrained`. La destilación se realizó con la técnica π-Flow DX, que comprime el muestreo a dos pasos sin reentrenar el pipeline completo.
 
-La familia Kandinsky 6.0 Video comprende modelos de difusión para generación sincronizada de texto-a-audio-vídeo (Kandinsky 6.0 Video Lite de 3B y Pro de 29B, con clips de 5 segundos y audio a 44 kHz), y este VSR actúa como complemento plug-in que eleva la salida hasta Full-HD (1920×1080).
+Es relevante ahora porque permite llevar vídeo de baja resolución a Full-HD en producción con un coste de inferencia muy contenido, y porque ya cuenta con integraciones en Diffusers, vLLM Omni, SGLang, FastVideo y ComfyUI. El autor advierte de que existe una versión posterior, VSR 2.0, que restaura más detalle natural con la misma velocidad y los mismos componentes.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | DiT 3D de difusión (flow matching destilado con π-Flow DX) sobre espacio latente KVAE, con difusión por teselas |
-| Parametros totales | 1.414.263.936 (transformador SR DiT: 1,41B; VAE: 1,74B; banco de upscalers latentes: 3,65B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no aplica; procesa clips de 5 s) |
-| Tipos de cuantizacion | no disponible (pesos en bfloat16 en el ejemplo oficial) |
-| Idiomas soportados | no disponible |
+| Arquitectura | DiT 3D (diffusion transformer) para superresolución de vídeo, destilado con π-Flow DX; VAE KVAE y upscalers latentes ×2/×4 |
+| Parámetros totales | 1.414.263.936 (transformador SR); el VAE suma 1,74 mil millones adicionales según la model card |
+| Parámetros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo de difusión, no de lenguaje) |
+| Tipos de cuantización | no disponible (la model card solo documenta bfloat16) |
+| Idiomas soportados | no disponible (modelo vídeo-only, sin componente textual) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (librería diffusers) |
+| Formato de pesos | safetensors (integración Diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El componente central es `Kandinsky6SRTransformer3DModel`, un DiT (Diffusion Transformer) tridimensional de 1,41B parámetros que opera en el espacio latente del VAE de vídeo KVAE. El modelo ha sido destilado desde el profesor de flow-matching (4 pasos Euler por tesela) mediante π-Flow DX, una política de rollout que fija `nfe = 2`, `shift = 3.5`, 10 puntos de rejilla y 128 subpasos de política, gestionada por `PiflowScheduler`. El resultado son exactamente 2 evaluaciones del modelo por tesela. El bundle incorpora también `Kandinsky6SRVAE` (1,74B) y `Kandinsky6SRLatentUpscalerBank` (3,65B), que agrupa los upscalers latentes x2 y x4.
+El núcleo es un transformador de difusión 3D (`Kandinsky6SRTransformer3DModel`) con 1,41 mil millones de parámetros que opera sobre latentes del VAE de vídeo KVAE. La superresolución se aplica por mosaicos (tiled diffusion) en el espacio latente, con factores de escala de ×2, ×2.25 o ×4. El paquete incluye además un banco de upscalers latentes ×2 y ×4 que prepara los latentes antes de la pasada del DiT.
 
-La inferencia se realiza con difusión por teselas en el espacio latente de KVAE, lo que permite procesar vídeo de alta resolución sin cargar el fotograma completo en memoria de activaciones. El pipeline `Kandinsky6SRPipeline` admite factores de escala de 2, 2.25 y 4. Un detalle crítico del entrenamiento: el checkpoint está destilado para exactamente 2 evaluaciones por tesela, pero el pipeline por defecto usa 4 pasos (el ajuste de flow-matching), por lo que es obligatorio pasar `num_inference_steps=2`. El ejemplo oficial activa además el backend de atención flex y la compilación de bloques repetidos (`compile_repeated_blocks(fullgraph=True)`) con `torch._inductor.config.max_autotune = True`, necesario para que Inductor seleccione teselas de flex-attention compatibles con la máscara de bloque del SR. No se dispone de información sobre el volumen o composición del dataset de entrenamiento.
+La innovación principal es la destilación π-Flow DX, que reduce el muestreo de cuatro pasos Euler del profesor de flow matching a dos evaluaciones del modelo por mosaico. El modelo base es `kandinskylab/Kandinsky-6.0-VSR-5s-Diffusers`. La model card no detalla el volumen de datos de entrenamiento, la composición del dataset ni si hubo etapas de refinamiento con preferencias; esos datos no están disponibles en la información proporcionada. El pipeline de Diffusers es exclusivamente de vídeo: el audio de la fuente debe remultiplexarse aparte si se necesita en la salida.
 
 ## Capacidades
 
-- Superresolución de vídeo por factores x2, x2.25 y x4 en un solo pipeline.
-- Procesamiento de clips de 5 segundos de duración.
-- Difusión por teselas en espacio latente KVAE, que permite escalar a resoluciones altas.
-- Salida orientada a Full-HD (1920×1080) como parte del ecosistema Kandinsky 6.0.
-- Integración nativa con Diffusers mediante `Kandinsky6SRPipeline` y `from_pretrained`.
-- Compatibilidad con backend de atención flex y compilación con `torch.compile` (inductor).
-- Soporte de offload de modelo a CPU (`enable_model_cpu_offload`).
-- Control de reproducibilidad mediante semilla de generador (`torch.Generator`).
-- No incluye procesamiento de audio: el pipeline es solo vídeo y el audio debe remultiplexarse aparte.
-- No dispone de tool calling, agentes, razonamiento multi-paso ni capacidades de texto; es un modelo generativo de vídeo, no un LLM.
+- Superresolución de vídeo con factores de escala ×2, ×2.25 y ×4.
+- Procesamiento por mosaicos en espacio latente KVAE, lo que permite tratar vídeos de resolución superior a la que cabría en memoria en una sola pasada.
+- Destilación a dos pasos: dos evaluaciones del modelo por mosaico en lugar de las cuatro del profesor de flow matching.
+- Integración nativa con Diffusers mediante `Kandinsky6SRPipeline`, con soporte de `enable_model_cpu_offload`, backend de atención flex y compilación de bloques repetidos con `torch.compile`.
+- Salida en fotogramas PIL exportables a vídeo con `export_to_video` (por ejemplo, a 24 fps).
+- No incluye generación de texto, tool calling, agentes, visión semántica ni audio; es un modelo puramente de restauración y escalado de vídeo.
 
 ## Casos de uso
 
-- Restauración de metraje de archivo: escalar vídeo de baja resolución histórica o de cámaras antiguas a x2 o x4 para su preservación digital, aprovechando la difusión por teselas para trabajar con resoluciones de salida altas sin agotar memoria.
-- Upcycling de contenido generado por IA: los clips de 5 s producidos por Kandinsky 6.0 Video Lite o Pro pueden elevarse a Full-HD con este VSR como etapa final del pipeline de generación, tal como propone la familia.
-- Postproducción de vídeo para redes sociales: reescalar material rodado a baja resolución (por ejemplo, 480p o 720p) a 1080p con un coste de 2 evaluaciones por tesela, adecuado para lotes grandes donde el throughput importa.
-- Mejora de vídeo de vigilancia o domótica: aumentar la resolución de grabaciones de cámaras de bajo coste para facilitar la identificación de detalles, procesando clips cortos de 5 s de forma iterativa.
-- Previsualización rápida en pipelines de VFX: generar versiones en alta resolución de proxies de baja calidad para revisión de clientes antes del render final, gracias al bajo número de pasos (2) y a la compilación con inductor.
-- Investigación en superresolución de vídeo: servir como baseline destilado frente al profesor de flow-matching (4 pasos) para estudios de destilación π-Flow, comparando calidad y coste computacional con la misma arquitectura.
-- Integración en herramientas de edición: el soporte en ComfyUI, vLLM-Omni, SGLang y FastVideo permite incorporar el escalado como nodo dentro de flujos de trabajo de edición y generación ya existentes.
+- Restauración de metraje de archivo: escalar vídeo SD histórico a resolución superior con un coste de dos evaluaciones por mosaico, adecuado para digitalizaciones masivas donde el presupuesto de cómputo por minuto es el factor limitante.
+- Remasterización a Full-HD: la familia Kandinsky 6.0 emplea este módulo como complemento para elevar la salida de sus modelos de generación de vídeo a 1920×1080; se puede usar igualmente sobre material grabado con cámaras de menor resolución.
+- Posprocesado en pipelines de generación de vídeo: integrar el paso SR tras un modelo texto-a-vídeo para obtener clips de mayor resolución sin regenerar el contenido, ya que el pipeline acepta una lista de fotogramas PIL.
+- Mejora de vídeo para plataformas de contenido: escalar clips de usuarios móviles (720p o inferior) a 2K antes de publicarlos, con el factor ×2.25 como término medio entre calidad y coste.
+- Preprocesado para visión por computador: aumentar la resolución de vídeo de vigilancia o de datasets de entrenamiento antes de pasarlos a detectores o segmentadores, aprovechando el procesamiento por mosaicos para secuencias largas.
+- Flujos de trabajo en ComfyUI: nodos oficiales en el registro de ComfyUI permiten encadenar el modelo dentro de grafos de posproducción sin escribir código, útil para artistas técnicos y equipos de VFX.
+- Despliegue en servidores de inferencia: las integraciones con vLLM Omni, SGLang y FastVideo permiten servir el modelo como endpoint de superresolución con gestión de lotes y memoria propia de estos motores.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia de orden de magnitud, el checkpoint principal ocupa 28,0 GB en el repositorio; en bfloat16 los pesos del transformador (1,41B) rondan los 2,8 GB, pero el bundle completo (transformador + VAE de 1,74B + upscalers de 3,65B) supera los 13 GB solo en pesos, antes de activaciones.
-- El ejemplo oficial usa `enable_model_cpu_offload()`, lo que indica que el bundle completo no está pensado para residir entero en VRAM de consumo sin offload.
-- GPU recomendadas: no especificadas por el autor. Por tamaño, se requiere al menos una GPU con suficiente VRAM para el transformador y el VAE activos; el offload permite ejecutar en GPUs de consumo, pero con penalización de latencia.
-- Cabe en GPU de consumo: no confirmado oficialmente; el uso de offload en el ejemplo sugiere que sí es posible con compromisos de rendimiento.
-- Opciones de despliegue: Diffusers (`Kandinsky6SRPipeline`), vLLM-Omni, SGLang, FastVideo y ComfyUI (nodo `kandinsky6-sr`).
-- Latencia y throughput: no disponibles. La destilación a 2 evaluaciones por tesela reduce a la mitad el coste frente al profesor de 4 pasos, pero no se publican cifras absolutas.
+- El transformador SR tiene 1,41 mil millones de parámetros; en bfloat16 son aproximadamente 2,8 GB de pesos. El VAE añade 1,74 mil millones de parámetros, unos 3,5 GB en bfloat16. El repo completo ocupa 28 GB, pero la inferencia solo carga los componentes necesarios.
+- El ejemplo oficial usa `enable_model_cpu_offload()`, lo que permite ejecutar el pipeline con menos VRAM que la suma de todos los componentes, a costa de transferencias host-device.
+- GPU recomendadas: A100 o H100 para lotes grandes y vídeos largos; RTX 4090 (24 GB) es suficiente para inferencia con offload y resolución moderada. En GPUs de 12-16 GB el offload es prácticamente obligatorio.
+- Cabe en GPU de consumo con cuantización u offload, pero la model card no documenta cuantizaciones oficiales ni requisitos mínimos verificados; esos datos no están disponibles.
+- Opciones de despliegue: Diffusers (`Kandinsky6SRPipeline`), vLLM Omni, SGLang, FastVideo y ComfyUI. No se documenta soporte de llama.cpp, Ollama ni TGI, que no aplican a modelos de difusión de vídeo.
+- Latencia y throughput: no disponibles. La única cifra concreta es el número de evaluaciones del modelo por mosaico (2), que es el parámetro determinante del coste junto con el número de mosaicos y la longitud del vídeo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Enfoque | Pasos por tesela | Licencia | Disponibilidad |
+| Modelo | Parámetros | Enfoque | Pasos por mosaico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kandinsky-6.0-VSR-distilled2steps-5s-Diffusers | 1,41B (DiT) + 1,74B (VAE) + 3,65B (upscalers) | Difusión por teselas en latente KVAE, π-Flow DX | 2 | MIT | Hugging Face, Diffusers, ComfyUI, vLLM-Omni, SGLang, FastVideo |
-| Kandinsky-6.0-VSR-5s-Diffusers (profesor) | 1,41B (DiT) + componentes del bundle | Flow matching, difusión por teselas | 4 (Euler) | MIT | Hugging Face, Diffusers |
-| Otros modelos VSR de difusión | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Kandinsky-6.0-VSR-distilled2steps-5s (este) | 1,41 B (SR DiT) + 1,74 B (VAE) | Difusión por mosaicos en latentes KVAE, destilado π-Flow DX | 2 | MIT | Diffusers, vLLM Omni, SGLang, FastVideo, ComfyUI |
+| Kandinsky-6.0-VSR-5s (profesor) | no disponible | Flow matching, 4 pasos Euler por mosaico | 4 | MIT | Diffusers |
+| Kandinsky-6.0-VSR-2.0-distilled2steps | no disponible | Igual que este, con mejor restauración de detalle | 2 | MIT | Diffusers |
 
-La comparativa relevante dentro de la información disponible es con el profesor de flow-matching del mismo autor: misma arquitectura y licencia, pero el doble de evaluaciones por tesela y sin destilación π-Flow. No se dispone de datos de benchmarks que permitan comparar la calidad de ambos.
+No se dispone en la información proporcionada de datos sobre modelos VSR de otros fabricantes (por ejemplo, enfoques GAN o transformers de restauración) que permitan una comparación cuantitativa de calidad o velocidad.
 
 ## Limitaciones y advertencias
 
-- El pipeline es exclusivamente de vídeo: no procesa ni conserva audio. Si se necesita audio en la salida, hay que remultiplexarlo manualmente.
-- Es obligatorio pasar `num_inference_steps=2`. El pipeline por defecto usa 4 pasos (ajuste de flow-matching) y no lee el número de pasos del bundle, por lo que omitir el argumento ejecuta el modelo fuera de su calendario de entrenamiento y degrada la calidad.
-- Requiere `torch._inductor.config.max_autotune = True` para que Inductor seleccione teselas de flex-attention compatibles con la máscara de bloque del SR; sin ello, la compilación puede fallar o rendir peor.
-- Procesa clips de 5 segundos; vídeos más largos deben trocearse, con riesgo de inconsistencias en las costuras entre clips.
-- No se han publicado resultados de benchmarks ni evaluaciones de calidad objetivas en la información disponible.
-- No se dispone de información sobre sesgos del dataset de entrenamiento, aunque al ser un modelo de superresolución puede amplificar artefactos o sesgos presentes en el vídeo de entrada.
-- Riesgo de alucinación visual: como modelo generativo de difusión, puede inventar detalles plausibles no presentes en el vídeo original durante el escalado.
-- Licencia MIT, que permite uso comercial, pero se recomienda verificar las condiciones de los componentes y del modelo base enlazado.
-- El tamaño del repositorio (28,0 GB) implica requisitos de almacenamiento y descarga considerables para producción.
-- Idiomas soportados no disponibles; al ser un modelo de vídeo, la relevancia lingüística es indirecta.
+- El checkpoint está destilado exactamente para 2 evaluaciones por mosaico, pero `Kandinsky6SRPipeline` usa 4 pasos por defecto; es obligatorio pasar `num_inference_steps=2` o el modelo se ejecutará fuera de su calendario de entrenamiento y la calidad se degradará.
+- El pipeline de Diffusers es solo de vídeo: el audio de la fuente se pierde y hay que remultiplexarlo manualmente si se necesita.
+- El autor recomienda la versión VSR 2.0 sobre este repositorio (VSR 1.0) por restaurar más detalle natural y ofrecer un escalado ×4 más limpio con la misma velocidad y componentes.
+- Es necesario activar `torch._inductor.config.max_autotune = True` y el backend de atención flex para que inductor elija mosaicos de flex-attention compatibles con la máscara de bloques del SR; sin ello el ejemplo oficial no funciona como se describe.
+- No hay información sobre sesgos, tasas de alucinación visual (artefactos inventados en texturas) ni evaluación cualitativa publicada en la información disponible.
+- La licencia MIT permite uso comercial, pero conviene verificar las licencias de los componentes auxiliares (VAE, upscalers) en el repositorio antes de desplegar en producción.
+- El modelo no procesa texto ni audio; cualquier expectativa de generación multimodal debe cubrirse con otros modelos de la familia Kandinsky 6.0.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-distilled2steps-5s-Diffusers
-- Modelo base (flow-matching): https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-5s-Diffusers
+- Modelo en Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-distilled2steps-5s-Diffusers
+- Modelo base (profesor, flow matching): https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-5s-Diffusers
+- Versión recomendada VSR 2.0: https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-2.0-distilled2steps-Diffusers
+- Colección de modelos Kandinsky 6.0 VSR: https://huggingface.co/collections/kandinskylab/kandinsky-60-vsr
 - Informe técnico (arXiv): https://arxiv.org/pdf/2610.05608
 - Repositorio GitHub: https://github.com/kandinskylab/kandinsky-6-sr
-- Página de modelos de vídeo: https://kandinskylab.ai/models/video/
+- Página de modelos de vídeo de Kandinsky Lab: https://kandinskylab.ai/models/video/
 - Demo en Hugging Face Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-VSR-Demo
-- Colección de modelos Kandinsky 6.0 VSR: https://huggingface.co/collections/kandinskylab/kandinsky-60-vsr
-- Documentación de Diffusers (pipeline VSR): https://huggingface.co/docs/diffusers/main/en/api/pipelines/kandinsky6#video-super-resolution
-- vLLM-Omni: https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/kandinsky6_sr/
-- SGLang: https://docs.sglang.io/cookbook/diffusion/Kandinsky/Kandinsky6-SR
-- FastVideo: https://haoailab.com/FastVideo/inference/kandinsky6_sr/
-- ComfyUI: https://registry.comfy.org/nodes/kandinsky6-sr
+- Documentación de Diffusers (pipeline Kandinsky 6 SR): https://huggingface.co/docs/diffusers/main/en/api/pipelines/kandinsky6#video-super-resolution
+- vLLM Omni (modelo Kandinsky 6 SR): https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/kandinsky6_sr/
+- SGLang (receta Kandinsky 6 SR): https://docs.sglang.io/cookbook/diffusion/Kandinsky/Kandinsky6-SR
+- FastVideo (inferencia Kandinsky 6 SR): https://haoailab.com/FastVideo/inference/kandinsky6_sr/
+- ComfyUI (nodo Kandinsky 6 SR): https://registry.comfy.org/nodes/kandinsky6-sr

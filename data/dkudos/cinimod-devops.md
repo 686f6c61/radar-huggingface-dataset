@@ -2,84 +2,97 @@
 
 ## Resumen
 
-Cinimod DevOps 1.5B es un modelo de lenguaje generativo entrenado desde cero por Dominic Kaiser (dkudos) para responder preguntas técnicas sobre DevOps e infraestructura cloud. Se basa en una arquitectura estilo Llama-3 con atención de consultas agrupadas (GQA), 24 capas y un tamaño oculto de 1.536, y está orientado a dominios como Kubernetes, Terraform, AWS, Docker, CI/CD, Linux, monitorización y seguridad. Aunque el autor lo presenta como un modelo de 1.5B con ~781M parámetros activos, los pesos reales en safetensors suman 695.281.152 parámetros. Su contexto de entrenamiento es de 1.024 tokens, con una extrapolación teórica hasta ~256K gracias a RoPE theta 500.000, aunque la calidad puede degradarse. Es un modelo base sin ajuste por instrucciones, pensado para ser usado como asistente técnico o como punto de partida para fine-tuning.
+Cinimod DevOps 300M es un modelo de lenguaje causal de tipo decoder-only con arquitectura estilo Llama-3, desarrollado por el usuario dkudos y publicado en Hugging Face. Cuenta con 287.310.848 parámetros (aproximadamente 287M) y ha sido entrenado desde cero sobre un corpus especializado en DevOps y administración de sistemas. Su propósito es asistir en tareas de tooling DevOps, documentación de operaciones y modelado de lenguaje ligero que pueda ejecutarse en la propia máquina.
 
-## Especificaciones técnicas
+El modelo es relevante por su enfoque de dominio cerrado y su tamaño reducido, que permite desplegarlo en hardware de consumo. Incluye cuantizaciones GGUF listas para usar con llama.cpp, lo que facilita su integración en entornos de producción sin dependencias del código fuente original. Está entrenado con una longitud de contexto de 4096 tokens, aunque el autor indica que puede servirse hasta 256K mediante escalado lineal de RoPE en tiempo de inferencia.
 
-| Parámetro | Valor |
+Es importante señalar que, según la propia model card, el modelo se encuentra únicamente en fase de preentrenamiento (pre-trained), sin ajuste fino supervisado ni alineación posterior. Esto condiciona su comportamiento: no incorpora plantilla de chat y su fluidez queda limitada al dominio DevOps.
+
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | LlamaForCausalLM (custom) |
-| Parámetros totales | 695.281.152 (safetensors) |
-| Longitud de contexto | 1.024 tokens (entrenamiento); extrapolación hasta ~256K según el autor |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | en (inglés) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
-| Hidden size | 1.536 |
-| Capas | 24 |
-| Cabezas de atención | 24 (Q) / 6 (KV) - GQA |
-| Tamaño intermedio | 4.096 |
-| Tamaño de vocabulario | 65.536 (BPE) |
-| RoPE theta | 500.000 |
-| Dtype de entrenamiento | FP32 |
-| Dtype de inferencia | FP16 |
-| Tokenizer | BPE personalizado, 65K |
+| Arquitectura | Decoder-only estilo Llama (custom, no es la clase estándar `LlamaForCausalLM` de transformers) |
+| Parametros totales | 287.310.848 (~287M) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 4096 tokens entrenados; hasta 256K en servicio mediante escalado lineal de RoPE |
+| Tipos de cuantizacion | Q8_0 y F16 en GGUF; pesos completos en bf16 (safetensors) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (bf16) y GGUF (Q8_0, F16) |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura LlamaForCausalLM personalizada, con 24 capas, tamaño oculto de 1.536, 24 cabezas de consulta (Q) y 6 de clave/valor (KV) mediante GQA, tamaño intermedio de 4.096 y vocabulario BPE de 65.536 tokens. Los embeddings de palabras están atados para reducir parámetros y se activa gradient checkpointing para eficiencia de memoria. El entrenamiento se realizó en FP32 con DeepSpeed ZeRO-2, sobre un corpus de ~50 GB de datos DevOps (subconjunto de FineWeb-Edu, repositorios de GitHub de DevOps y documentación de proveedores cloud). Se ejecutaron 60.423 pasos con tamaño de lote efectivo de 8, tasa de aprendizaje máxima de 3e-4 con decaimiento coseno y longitud de secuencia de 1.024. Se usaron 2 GPUs Tesla V100 de 16 GB durante aproximadamente 6 días. El autor señala que no se aplicó escalado RoPE, ya que el escalado lineal anterior (factor 256) rompía el codificador posicional durante el entrenamiento.
+La arquitectura es un transformer decoder-only de estilo Llama con hidden size de 1024, 20 capas, 16 cabezas de atención y 4 cabezas KV (GQA). El tamaño intermedio es 2730, el vocabulario BPE es de 65.536 tokens y las embeddings están atadas (sin `lm_head` separado). Usa RoPE con theta de 500000 y atención eficiente mediante `scaled_dot_product_attention` con la ruta flash de flash-attn 2.
+
+El entrenamiento se realizó desde cero sobre un corpus de DevOps y operaciones de sistemas, con una época sobre aproximadamente 132.068 secuencias de 4096 tokens (~540M tokens), 4000 pasos, warmup de 40 pasos y una tasa de aprendizaje de 6e-4 con decaimiento coseno. Se ejecutó en 2x RTX 4090 (24 GB cada una, bf16) con DeepSpeed ZeRO-2 y pesos maestros en FP32. La pérdida de entrenamiento pasó de 0,43 en el paso 2000 a 0,35 en el paso 4000. La evaluación completa sobre validación (17.492 bins / 123.656 secuencias a 4096) arrojó una pérdida media de 2,3163 y una perplejidad de 10,14. No se menciona RLHF ni DPO.
 
 ## Capacidades
 
-- Generación de texto técnico en inglés sobre Kubernetes: Pods, Deployments, StatefulSets, Services, Ingress, networking, storage, RBAC, Helm, operators y troubleshooting.
-- Terraform: IaC, gestión de estado, módulos, providers, workspaces, import y buenas prácticas.
-- AWS: EC2, S3, VPC, RDS, EKS, Lambda, IAM, CloudWatch y optimización de costes.
-- Docker: imágenes, contenedores, volúmenes, networking, Compose, builds multi-stage y Swarm.
-- CI/CD: GitHub Actions, Jenkins, GitLab CI, ArgoCD, estrategias de despliegue y pipelines.
-- Linux: administración del sistema, networking, seguridad, monitorización de rendimiento y systemd.
-- Monitorización: Prometheus, Grafana, Alertmanager, Loki, Elasticsearch y tracing distribuido.
-- Seguridad: zero trust, escaneo de vulnerabilidades, respuesta a incidentes y pentesting.
-- Networking: DNS, balanceo de carga, CDN, SSL/TLS y troubleshooting.
-- No se documenta soporte de tool calling, agentes, visión ni audio.
+- Generación de texto causal en inglés, orientada al dominio DevOps y administración de sistemas.
+- Asistencia en documentación de operaciones y consultas técnicas de infraestructura.
+- Modelado de lenguaje ligero ejecutable en la propia máquina (on-box).
+- Compatibilidad con llama.cpp y llama-server para servir mediante API compatible con OpenAI.
+- Soporte de contexto extendido en tiempo de servicio mediante escalado de RoPE (lineal o Yarn).
+- No incluye plantilla de chat incorporada; es un modelo causal plano.
+- No dispone de tool calling, function calling ni capacidades de agente declaradas.
+- No dispone de visión, audio ni modo de razonamiento explícito.
 
 ## Casos de uso
 
-- Asistente para administración de Kubernetes: el modelo puede generar explicaciones y snippets de manifiestos YAML para Deployments, Services o Ingress. Su entrenamiento en documentación de Kubernetes le permite responder dudas frecuentes, aunque al ser un modelo base conviene verificar la sintaxis.
-- Generación de configuraciones Terraform: ayuda a redactar bloques de recursos, módulos y providers de AWS. Adecuado para prototipos rápidos, pero requiere revisión manual antes de aplicar en producción.
-- Documentación técnica de infraestructura AWS: puede redactar descripciones de arquitecturas con EC2, S3, VPC o IAM, útil para equipos que necesitan documentar entornos cloud.
-- Soporte en pipelines CI/CD: el modelo puede generar configuraciones de GitHub Actions, GitLab CI o Jenkins, así como explicar estrategias de despliegue como blue-green o canary. Su conocimiento de CI/CD permite acelerar la creación de pipelines.
-- Administración de Linux y troubleshooting: responde preguntas sobre systemd, gestión de usuarios, permisos, red y monitorización de rendimiento. Es útil como segundo nivel de soporte para administradores de sistemas.
-- Monitorización y observabilidad: genera consultas para Prometheus, configuraciones de Grafana o reglas de Alertmanager, y explica conceptos de tracing distribuido. Adecuado para documentar dashboards y alarmas.
-- Seguridad y cumplimiento: puede describir principios de zero trust, escaneo de vulnerabilidades y respuesta a incidentes. Sirve como material de formación para equipos de seguridad.
-- Formación interna en DevOps: el modelo puede generar explicaciones pedagógicas sobre conceptos de infraestructura como código, contenedores u orquestación, útil para onboarding de nuevos desarrolladores.
+- Asistencia en línea de comandos: el modelo puede responder consultas como comprobar el estado de nginx o listar comandos de systemd, aprovechando su entrenamiento específico en operaciones de sistemas.
+- Generación de documentación de operaciones: útil para redactar runbooks y procedimientos internos dentro del dominio DevOps, con la ventaja de ejecutarse localmente sin enviar datos a terceros.
+- Autocompletado en editores y terminales: su tamaño de 287M y sus cuantizaciones GGUF de 344 MiB (Q8_0) permiten integrarlo en herramientas locales de bajo consumo.
+- Servicio de inferencia ligero en el borde: desplegable con llama-server en una máquina modesta, ofreciendo un endpoint compatible con la API de chat de OpenAI para integraciones internas.
+- Filtrado y clasificación de texto técnico: puede emplearse como modelo base para tareas de puntuación o etiquetado de contenido DevOps, dado su bajo coste de inferencia.
+- Base para ajuste fino posterior: al estar solo preentrenado, sirve como punto de partida para SFT en tareas concretas de operaciones; el autor publica además una variante preparada para SFT (`cinimod-devops-sft-base`).
+- Experimentación educativa: su escala reducida y su licencia Apache 2.0 lo hacen adecuado para estudiar el preentrenamiento de modelos de dominio desde cero.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+La model card declara un `model-index` con el nombre "Cinimod DevOps 300M" pero sin resultados asociados. El único dato de evaluación publicado es la pérdida de validación y la perplejidad.
+
+| Metrica | Valor |
+|---|---|
+| Pérdida de validación (media) | 2,3163 |
+| Perplejidad de validación | 10,14 |
+| Pérdida de entrenamiento (paso 2000) | 0,43 |
+| Pérdida de entrenamiento (paso 4000) | 0,35 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: con FP16, los pesos ocupan ~1,4 GB; con FP32, ~2,8 GB. Sumando overhead de activaciones y KV cache, se recomienda al menos 4 GB de VRAM para inferencia básica.
-- GPU recomendadas: cualquier GPU consumer con 8 GB o más (RTX 3060, RTX 4060, RTX 4090) o GPUs de datacenter como A100 o H100.
-- Cabe en GPUs consumer de gama media.
-- Opciones de despliegue: transformers (con trust_remote_code), script serve_model.py compatible con OpenAI, text-generation-inference (según tags). También puede adaptarse a vLLM o llama.cpp mediante conversión, aunque no se documenta explícitamente.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: aproximadamente 0,35 GB con GGUF Q8_0 (344 MiB) y unos 0,55 GB con GGUF F16 (550 MiB); los pesos bf16 en safetensors ocupan 548 MiB.
+- GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM libre; el entrenamiento se realizó en 2x RTX 4090, pero la inferencia es viable en hardware mucho menor.
+- Cabe en GPU de consumo: sí, en cualquier RTX o incluso en iGPU y CPU, dado su reducido tamaño.
+- Opciones de despliegue: llama.cpp / llama-server (recomendado por el autor), y transformers con las clases personalizadas de Cinimod (`cinimod.model.llama.LlamaForCausalLM`). No se mencionan vLLM, Ollama ni TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente en la documentación proporcionada para realizar una comparativa directa con modelos similares. El modelo CodeFuse-DevOps-Model aparece en resultados de búsqueda, pero no se proporcionan especificaciones comparables.
+No se dispone de datos de rendimiento comparables en la información proporcionada para establecer una comparativa cuantitativa con alternativas de la misma categoría. A nivel estructural, puede situarse frente a otros modelos pequeños de dominio:
+
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Cinimod DevOps 300M | ~287M | 4096 entrenados; hasta 256K con RoPE scaling | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| Alternativas de ~300M de dominio | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Contexto de entrenamiento limitado a 1.024 tokens; la extrapolación a 256K puede degradar la calidad y no está garantizada.
-- Modelo base sin ajuste por instrucciones (no instruction tuning). Puede no seguir prompts de chat de forma fiable.
-- Riesgo de alucinación en detalles técnicos específicos, versiones de APIs o temas nicho.
-- No ejecuta código ni verifica soluciones; siempre hay que probar en un entorno seguro.
-- Corpus de entrenamiento de ~50 GB, reducido en comparación con modelos frontera.
-- Tamaño pequeño (695M-781M) limita el razonamiento complejo y la coherencia a largo plazo.
-- Solo soporta inglés (tag "en").
-- Licencia Apache-2.0 permite uso comercial, pero el autor recomienda revisar configuraciones antes de aplicarlas en producción.
+- El modelo está únicamente preentrenado: no ha pasado por SFT ni alineación, por lo que no sigue instrucciones de forma fiable ni mantiene conversaciones estructuradas.
+- Fluidez limitada al dominio DevOps; no debe esperarse conocimiento general del mundo.
+- Entrenado con una sola época y a pequeña escala (~540M tokens), lo que restringe su calidad frente a modelos mayores.
+- Solo soporta inglés; no hay capacidades multilingües declaradas.
+- Riesgo de alucinación en consultas fuera de su dominio o que requieran precisión factual.
+- No incorpora plantilla de chat; los avisos de formato de chat de llama.cpp son valores por defecto del servidor, no del modelo.
+- El contexto extendido a 256K es solo en tiempo de servicio mediante escalado de RoPE; el modelo fue entrenado a 4096, por lo que la coherencia a larga distancia puede degradarse. El autor sugiere Yarn como alternativa si el escalado lineal pierde coherencia.
+- La ruta de transformers requiere las clases personalizadas de Cinimod; sin el código fuente, debe usarse GGUF.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo preentrenado sin alineación, su uso en producción requiere evaluación y posibles ajustes previos.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/dkudos/cinimod-devops
+- GGUF Q8_0: https://huggingface.co/dkudos/cinimod-devops/resolve/main/checkpoint-4000-Q8_0.gguf
+- GGUF F16: https://huggingface.co/dkudos/cinimod-devops/resolve/main/checkpoint-4000-f16.gguf
+- Variante para SFT: https://huggingface.co/dkudos/cinimod-devops-sft-base

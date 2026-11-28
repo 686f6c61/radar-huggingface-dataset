@@ -1,92 +1,100 @@
 # xtools-at/Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic
 
 ## Resumen
-Wukong 9B es un modelo multimodal de tipo image-text-to-text obtenido mediante la fusión en el espacio de pesos de dos fine-tunes de Qwen3.5-9B. Lo desarrolla xtools-at y combina, por un lado, el modelo Qwopus3.5-9B-Coder, orientado a programación y flujos agénticos, y por otro el DeepSeek-V4-Pro-Qwen3.5-9B, destilado para razonamiento matemático y científico. La fusión se realiza con SLERP (Spherical Linear Interpolation) con un parámetro t = 0.4, dando mayor peso al modelo de código.
 
-El objetivo declarado es reunir en un modelo compacto de 9,65 mil millones de parámetros tanto el razonamiento estructurado y el conocimiento STEM como la generación de código, depuración, tool calling y function calling. Ambos modelos padre son variantes Heretic decensuradas, y el autor confirma que el comportamiento abliterated se conserva en el merge.
+Wukong 9B es un modelo de lenguaje creado por xtools-at mediante fusión de pesos en el espacio de parámetros (weight-space merging) con el método SLERP. No se trata de un fine-tune adicional, sino de la interpolación esférica de dos variantes ya existentes de Qwen3.5-9B: una orientada a código y agentes (Qwopus3.5-9B-Coder-UNCENSORED-heretic) y otra orientada a razonamiento matemático y científico (DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic). El objetivo declarado es reunir en un modelo compacto de ~9.650 millones de parámetros las capacidades de resolución estructurada de problemas, matemáticas y STEM, junto con generación de código, depuración, tool calling y flujos agénticos.
 
-Es relevante ahora porque ofrece una alternativa ligera, con licencia Apache 2.0, para despliegues locales que necesitan razonamiento y capacidades agénticas sin recurrir a modelos de mayor tamaño. El repositorio ocupa 19,3 GB y se distribuye en formato safetensors para transformers.
+El modelo se apoya en la arquitectura Qwen3.5 (pipeline `image-text-to-text`, lo que sugiere soporte multimodal de entrada imagen-texto, aunque la model card no detalla el módulo de visión) y conserva la ventana de contexto del modelo base, dato que no se explicita en la información disponible. Ambos progenitores son variantes "heretic" decensuradas, y el autor confirma que el checkpoint fusionado mantiene el comportamiento abliterated, es decir, con menos rechazos ante peticiones que otros modelos alinearían de forma más restrictiva.
 
-## Especificaciones técnicas
+Su relevancia práctica reside en la combinación de tamaño contenido (apto para despliegue local en hardware de consumo con cuantización), licencia Apache 2.0 y un perfil de capacidades híbrido razonamiento-código-agentes. La evaluación preliminar publicada es limitada y se realizó sobre la variante de 4B, no sobre este 9B, por lo que las cifras de rendimiento de este checkpoint concreto no están disponibles.
 
-| Parámetro | Valor |
+## Especificaciones tecnicas
+
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal Qwen3.5 (image-text-to-text); merge por SLERP de dos fine-tunes |
-| Parámetros totales | 9.653.104.368 |
-| Parámetros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer Qwen3.5 (pipeline image-text-to-text), fusión de pesos por SLERP |
+| Parametros totales | 9.653.104.368 |
+| Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en la información proporcionada (pesos publicados en safetensors sin cuantización declarada) |
+| Tipos de cuantizacion | no disponible (repo en safetensors sin cuantizaciones publicadas) |
 | Idiomas soportados | en, zh, es, ru, ja |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento
-El modelo parte de la arquitectura Qwen3.5-9B, un transformer multimodal capaz de procesar entradas de imagen y texto. No se trata de un entrenamiento nuevo, sino de una fusión en el espacio de pesos mediante SLERP con t = 0.4 entre Qwopus3.5-9B-Coder-UNCENSORED-heretic (peso mayor) y DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.
 
-Los datos de entrenamiento provienen de los modelos padre. El modelo de código se apoya en trazas de razonamiento de Claude reconstruidas mediante Trace Inversion (Claude Opus 4.6 TraceInversion, 9000x, y Claude Opus 4.7 TraceInversion, 5000x) y en trayectorias agénticas de tareas reales de programación y uso de herramientas (lambda/hermes-agent-reasoning-traces, originadas de Kimi-K2.5 y GLM-5.1-FP8). El modelo de razonamiento se destila de DeepSeek-V4-Pro en modo Max Effect con aproximadamente 250K muestras de matemáticas y STEM. No se documenta el número total de tokens de entrenamiento ni si hubo RLHF o DPO en esta ficha.
+El modelo es el resultado de una interpolación esférica (SLERP) con parámetro `t = 0.4` entre dos checkpoints derivados de Qwen/Qwen3.5-9B. Con ese valor, el primer progenitor (Qwopus3.5-9B-Coder-UNCENSORED-heretic) recibe el peso mayor, de modo que la fusión hereda una base más orientada a código y agentes, incorporando del segundo (DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic) las capacidades de razonamiento. No hay entrenamiento adicional ni ajuste posterior a la fusión.
+
+Los datos de entrenamiento corresponden a los de los progenitores. El modelo DeepSeek-V4-Pro se destiló a partir de aproximadamente 250.000 muestras de matemáticas y STEM, con énfasis en derivaciones estructuradas y descomposición de problemas. El modelo Qwopus se entrenó con trazas de razonamiento de Claude reconstruidas mediante la técnica Trace Inversion (datasets Claude Opus 4.6 TraceInversion 9000x y Claude Opus 4.7 TraceInversion 5000x, derivados de `Roman1111111/claude-opus-4.6-10000x` y `lordx64/reasoning-distill-claude-opus-4-7-max`), además de trayectorias agénticas multi-turno del dataset `lambda/hermes-agent-reasoning-traces`, originadas en Kimi-K2.5 y GLM-5.1-FP8 y centradas en tool calling, operaciones de terminal, trabajo sobre repositorios y automatización de navegador. El autor aclara que las trazas son datos sintéticos reconstruidos, no acceso directo a razonamientos internos privados.
 
 ## Capacidades
-- Generación de texto conversacional multilingüe en inglés, chino, español, ruso y japonés.
-- Razonamiento multi-paso, descomposición de problemas y derivaciones estructuradas.
-- Matemáticas y conocimiento STEM.
-- Generación de código, depuración, localización de errores, parches y refactorización.
-- Tool calling y function calling.
-- Flujos agénticos: enrutamiento de herramientas, operaciones de terminal, trabajo sobre repositorios y automatización de navegador.
-- Procesamiento de imagen junto a texto (pipeline image-text-to-text).
-- Comportamiento decensurado (abliterated), con menos rechazos innecesarios.
+
+- Generación de texto conversacional en inglés, chino, español, ruso y japonés.
+- Razonamiento multi-paso y resolución estructurada de problemas.
+- Matemáticas y conocimiento STEM/científico, con derivaciones y descomposición de problemas.
+- Generación de código, depuración, localización de bugs y aplicación de parches.
+- Tool calling y function calling, con enrutamiento de herramientas.
+- Flujos agénticos multi-turno: operaciones de terminal, trabajo sobre repositorios y automatización de navegador (heredados de los datos de entrenamiento del progenitor Qwopus).
+- Entrada multimodal imagen-texto según el pipeline declarado (`image-text-to-text`); el alcance real del módulo de visión no se detalla en la información disponible.
+- Comportamiento decensurado/abliterated confirmado en el checkpoint fusionado, con menos rechazos que modelos alineados de forma convencional.
 
 ## Casos de uso
-- Asistente de programación en local: el modelo puede generar parches, localizar bugs y refactorizar código dentro de un IDE o pipeline de CI/CD, aprovechando su base en Qwopus3.5-Coder y su soporte de tool calling.
-- Automatización de agentes de terminal: gracias a las trayectorias agénticas de su entrenamiento, puede encadenar comandos, inspeccionar repositorios y ejecutar tareas de mantenimiento de forma multi-paso.
-- Resolución de problemas matemáticos y científicos: adecuado para tutores o herramientas de apoyo que requieren derivaciones estructuradas, por su destilación de 250K muestras STEM de DeepSeek-V4-Pro.
-- Atención al cliente multilingüe: soporta cinco idiomas y conversaciones multi-turno, lo que permite desplegarlo en entornos de soporte con usuarios de habla inglesa, china, española, rusa o japonesa.
-- Análisis de imágenes con texto: al ser un modelo image-text-to-text, puede describir capturas, extraer información de diagramas o responder preguntas sobre imágenes en flujos documentales.
-- Enrutamiento de herramientas en pipelines internos: su capacidad de function calling permite integrarlo como capa de decisión que selecciona APIs o servicios según la petición del usuario.
-- Experimentación e investigación local: al ser un modelo compacto de 9,65B con licencia Apache 2.0, es útil para prototipos y pruebas de concepto en hardware de gama consumer.
+
+- Asistente de programación local: el modelo puede generar y revisar código, localizar bugs y proponer parches en un IDE o CLI, aprovechando su base orientada a código y su tamaño contenido para ejecutarse en una estación de trabajo.
+- Automatización de tareas de repositorio: con soporte de tool calling y trayectorias agénticas de terminal y Git, encaja en pipelines que necesitan leer ficheros, ejecutar comandos y aplicar cambios de forma iterativa.
+- Tutoría de matemáticas y STEM: sus datos de destilación en ~250.000 muestras de matemáticas y ciencia lo hacen adecuado para resolver problemas paso a paso y explicar derivaciones.
+- Agentes con herramientas externas: integrable como planificador que decide qué función invocar (APIs, búsqueda, cálculo) en flujos multi-paso, gracias a las trazas de function calling incluidas en su entrenamiento.
+- Prototipado de asistentes multilingües: cubre inglés, chino, español, ruso y japonés, útil para productos con base de usuarios en esos mercados sin desplegar varios modelos.
+- Experimentación en investigación sobre fusión de modelos: sirve como caso de estudio reproducible de SLERP con `t = 0.4` entre dos fine-tunes complementarios, para analizar la preservación de capacidades tras la fusión.
+- Despliegue en entornos con política de contenido laxa: al ser una variante decensurada, puede usarse en investigación sobre rechazos y abliteration, siempre con las salvaguardas adecuadas.
 
 ## Benchmarks y rendimiento
-La model card indica que, por limitaciones de recursos, la evaluación preliminar se limitó a la variante de 4B, comparándola con los modelos padre sobre un conjunto pequeño de benchmarks. Los resultados sugieren que el merge conservó en gran medida el rendimiento general, con variaciones menores por tarea (similar en ARC-Easy y ligeramente mejor en algunas). No se publican cifras concretas para el modelo de 9B en la información disponible.
 
-No se han publicado resultados de benchmarks en la información disponible para este checkpoint de 9B.
+No se han publicado resultados de benchmarks de este checkpoint de 9B en la información disponible. La evaluación preliminar del autor se limitó a la variante de 4B y la comparó con sus progenitores en un conjunto reducido de pruebas, con la conclusión de que la fusión preservó en gran medida el rendimiento general, sin degradación clara, con variaciones menores (por ejemplo, resultados similares a los progenitores en ARC-Easy). No se dispone de cifras concretas para este modelo.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia en precisión completa (fp16/bf16): aproximadamente 19-20 GB solo para pesos, más overhead de activaciones y contexto.
-- Cuantización: no se documentan tipos de cuantización en la información proporcionada; para desplegar en GPUs consumer sería necesario generar GGUF/AWQ por cuenta propia.
-- GPU recomendadas: A100 40GB, H100, L40S o RTX 4090 (24 GB) para fp16 ajustado; GPUs de 16 GB requerirían cuantización a 8 bits o inferior.
-- Cabe en consumer GPU: sí, en RTX 4090 (24 GB) en fp16 con contexto moderado; en GPUs de 16 GB solo con cuantización.
-- Opciones de despliegue: transformers (librería declarada), y potencialmente vLLM, TGI, llama.cpp u Ollama si se generan pesos compatibles.
-- Latencia y throughput: no disponible.
+
+- VRAM estimada para inferencia en FP16/BF16: en torno a 19-20 GB solo para pesos, más overhead de activaciones y KV cache; requiere GPU de 24 GB o superior.
+- Cuantización a 8 bits: aproximadamente 10-11 GB de VRAM, viable en GPUs de 12-16 GB.
+- Cuantización a 4 bits: aproximadamente 5-6 GB de VRAM, cabe en GPUs de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070/4080/4090; el repo no publica ficheros GGUF, por lo que habría que generarlos.
+- GPU recomendadas para FP16: A100 40/80 GB, H100, L40S, o RTX 4090 (24 GB, justo para BF16 con contexto corto).
+- Opciones de despliegue: transformers (formato nativo del repo); vLLM y TGI para servicio de alto throughput; llama.cpp/Ollama tras convertir a GGUF.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Wukong 9B (este modelo) | 9,65B | no disponible | apache-2.0 | Merge multimodal con razonamiento, código y agentes |
-| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | no disponible | Modelo base multimodal |
-| xtools-at/Qwopus3.5-9B-Coder-UNCENSORED-heretic | ~9B | no disponible | apache-2.0 (según repo) | Código y agentes, decensurado |
-| xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic | ~9B | no disponible | apache-2.0 (según repo) | Razonamiento matemático/STEM, decensurado |
+| Wukong 9B (este modelo) | 9,65 B | no disponible | Apache 2.0 | Fusión SLERP de dos fine-tunes Qwen3.5; decensurado; multimodal imagen-texto |
+| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible | no disponible en esta ficha | Modelo base original, presumiblemente con alineación estándar |
+| xtools-at/Qwopus3.5-9B-Coder-UNCENSORED-heretic | ~9 B | no disponible | no disponible en esta ficha | Progenitor orientado a código y agentes |
+| xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic | ~9 B | no disponible | no disponible en esta ficha | Progenitor orientado a razonamiento matemático y STEM |
+| xtools-at/Wukong-4B-...-heretic | ~4 B | no disponible | Apache 2.0 | Variante menor del mismo linaje, con evaluación preliminar publicada |
 
-Los datos de contexto y rendimiento de los modelos comparables no están disponibles en la información proporcionada.
+Los datos de rendimiento comparado no están disponibles; la única referencia cuantitativa del autor es la evaluación del 4B frente a sus progenitores.
 
 ## Limitaciones y advertencias
-- Al ser un merge por interpolación de pesos, no se ha validado con un entrenamiento adicional; el rendimiento puede degradarse en tareas no cubiertas por los padres.
-- Es un modelo decensurado (abliterated): puede generar contenido que modelos alineados rechazarían, lo que exige filtros y moderación en producción.
-- Riesgo de alucinación inherente a modelos de 9B, especialmente en razonamiento largo y datos factuales.
-- La longitud de contexto no está documentada, lo que dificulta planificar despliegues con ventanas largas.
-- Solo se listan cinco idiomas; el rendimiento fuera de ellos no está garantizado.
-- La evaluación publicada se limita a la variante de 4B; no hay benchmarks del checkpoint de 9B.
-- Licencia Apache 2.0 permite uso comercial, pero conviene revisar las licencias y procedencias de los datasets de destilación (trazas de Claude y DeepSeek) por posibles restricciones de los proveedores originales.
-- El modelo tiene 0 descargas y 1 like en el momento de la ficha, por lo que la validación comunitaria es mínima.
+
+- Modelo decensurado/abliterated: presenta menos rechazos ante peticiones sensibles, lo que incrementa el riesgo de generar contenido inapropiado o dañino; requiere filtros y políticas de uso en producción.
+- Riesgo de alucinación propio de modelos de ~9B, especialmente en dominios especializados y en tareas de razonamiento largo.
+- Las trazas de razonamiento de entrenamiento son sintéticas y reconstruidas (Trace Inversion), no razonamientos internos reales; pueden introducir patrones de estilo o errores sistemáticos.
+- La evaluación publicada corresponde al 4B, no a este 9B; no hay evidencia empírica de rendimiento para este checkpoint.
+- Longitud de contexto no documentada; conviene verificarla empíricamente antes de usarla en tareas de contexto largo.
+- Cobertura idiomática declarada limitada a en, zh, es, ru y ja; el rendimiento fuera de inglés y chino no está verificado.
+- Licencia Apache 2.0 permite uso comercial, pero la responsabilidad sobre el contenido generado y el cumplimiento normativo recaen en el desplegador.
+- Modelo de nicho con pocas descargas (248) y likes (3) en el momento de la consulta; ecosistema y soporte comunitario reducidos.
+- El soporte multimodal imagen-texto se infiere del pipeline declarado, pero no hay documentación sobre el módulo de visión ni sobre su calidad.
 
 ## Enlaces
-- Hugging Face: https://huggingface.co/xtools-at/Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic
+
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Wukong-9B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic
 - Variante 4B: https://huggingface.co/xtools-at/Wukong-4B-Qwen3.5-Claude-Opus-DeepSeek-SLERP-2xMerge-heretic
-- Modelo padre de código: https://huggingface.co/xtools-at/Qwopus3.5-9B-Coder-UNCENSORED-heretic
-- Fine-tune original de código: https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder
-- Modelo padre de razonamiento: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
-- Fine-tune original de razonamiento: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
+- Progenitor Qwopus: https://huggingface.co/xtools-at/Qwopus3.5-9B-Coder-UNCENSORED-heretic
+- Fine-tune original Qwopus: https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder
+- Progenitor DeepSeek-V4-Pro: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
+- Fine-tune original DeepSeek-V4-Pro: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
 - Dataset Claude Opus 4.6 TraceInversion: https://huggingface.co/datasets/Jackrong/Claude-opus-4.6-TraceInversion-9000x
 - Dataset Claude Opus 4.7 TraceInversion: https://huggingface.co/datasets/Jackrong/Claude-opus-4.7-TraceInversion-5000x
-- Dataset de trayectorias agénticas: https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces
-- Paper de referencia: https://arxiv.org/abs/2603.07267
-- Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
+- Dataset de trazas agénticas: https://huggingface.co/datasets/lambda/hermes-agent-reasoning-traces
+- Paper de referencia (Trace Inversion): https://arxiv.org/abs/2603.07267
+- Perfil del autor: https://huggingface.co/xtools-at

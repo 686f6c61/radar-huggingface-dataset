@@ -2,112 +2,106 @@
 
 ## Resumen
 
-Gewu-Base-W8A16 es un checkpoint cuantizado en 8 bits del modelo Qwen/Qwen3.5-9B, publicado por el usuario Alumin-Hydro como parte del sistema de tutoria de fisica "Gewu", descrito en el informe *Gewu: Building, Enhancing, and Evaluating a Tool-Augmented 9B Physics Tutoring System* (Feng, Z., 2026). No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de la redistribucion cuantizada de los pesos base que da servicio a los dos niveles de despliegue del sistema: el nivel por defecto monta en caliente el adaptador LoRA `Alumin-Hydro/Gewu-SFT` sobre este fichero, mientras que el nivel de mejora ejecuta el fichero solo, generando ocho muestras y aplicando una votacion.
+Gewu-Base-W8A16 es una cuantización de 8 bits del modelo Qwen/Qwen3.5-9B, publicada por Alumin-Hydro como pieza central del sistema de tutoría de física Gewu, descrito en el informe técnico *Gewu: Building, Enhancing, and Evaluating a Tool-Augmented 9B Physics Tutoring System* (2026). El modelo base es un transformer de 32 capas con atención lineal en 24 de ellas y 8.953.803.264 parámetros totales; esta versión conserva únicamente la torre de texto (`Qwen3_5ForCausalLM`), sin el codificador visual del release original.
 
-El checkpoint contiene 8.953.803.264 parametros, ocupa 11,1 GB en el repositorio y se distribuye en formato `compressed-tensors` con esquema GPTQ W8A16 (pesos int8, activaciones de 16 bits). Es un modelo exclusivamente de texto: la arquitectura declarada es `Qwen3_5ForCausalLM` con 32 capas y no incluye el codificador de vision de la release original. Los idiomas soportados son chino e ingles.
+El problema que resuelve es de despliegue: es el único fichero de pesos compartido por los dos niveles de servicio del sistema Gewu. El nivel por defecto monta en caliente el adaptador LoRA `Alumin-Hydro/Gewu-SFT` sobre estos pesos, mientras que el nivel de mejora ejecuta el fichero solo con ocho muestras y votación. Así se evita duplicar pesos en memoria y se simplifica el aprovisionamiento en una única GPU de consumo.
 
-Su relevancia practica es doble. Por un lado, demuestra que una cuantizacion calibrada con el propio dominio de uso (384 problemas de GewuBank-20K en lugar de un corpus generico) puede mantener la precision dentro del ruido estadistico: el articulo reporta +1,9 puntos porcentuales frente a los pesos de 16 bits sin adaptador y +2,5 con el adaptador en su conjunto de evaluacion dificil. Por otro, ofrece numeros de despliegue concretos en hardware de consumo: una unica RTX 3090 de 24 GB sostiene 28 sesiones concurrentes a 8k de contexto y decodifica a unos 58 tokens por segundo en un solo flujo.
+Es relevante ahora porque demuestra un flujo completo de cuantización GPTQ W8A16 verificada con una puerta estadística pre-registrada, con métricas de despliegue reales sobre una RTX 3090 y con receta reproducible incluida en el repositorio. La licencia Apache-2.0 y el formato `compressed-tensors` compatible con vLLM lo hacen directamente utilizable en producción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso de tipo `Qwen3_5ForCausalLM`, 32 capas; incluye 49 submodulos de atencion lineal que se conservan en bfloat16 (no disponibles los detalles de atencion completa, numero de cabezas o uso de GQA) |
-| Parametros totales | 8.953.803.264 |
-| Parametros activos | No aplica: no se indica que sea un modelo MoE |
-| Longitud de contexto | No disponible en la informacion proporcionada; el articulo mide despliegue a 8k y 32k de contexto |
-| Tipos de cuantizacion | GPTQ W8A16: pesos int8, activaciones de 16 bits, grupo de tamano 128, simetrico, orden de activacion estatico, dampening 0,01; todos los `Linear` excepto `lm_head`; 49 submodulos de atencion lineal en bfloat16 |
-| Idiomas soportados | Chino (zh) e ingles (en) |
-| Licencia | Apache-2.0 (los problemas de calibracion de GewuBank-20K son CC BY 4.0) |
-| Formato de pesos | safetensors en formato `compressed-tensors` `pack-quantized`; se incluye `recipe.yaml` y `SHA256SUMS.txt` |
-| Tamano del repositorio | 11,1 GB |
-| Modelo base | Qwen/Qwen3.5-9B (relacion: quantized) |
-| Compatibilidad de servidor | vLLM 0.27.1 (carga directa del formato) |
+| Arquitectura | Transformer de 32 capas con 24 capas de atención lineal (Qwen3.5), torre de texto `Qwen3_5ForCausalLM` |
+| Parámetros totales | 8.953.803.264 |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens (soportado en el despliegue de referencia) |
+| Tipos de cuantización | W8A16: pesos int8, activaciones de 16 bits, group size 128, simétrico |
+| Idiomas soportados | Chino (zh) e inglés (en) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors en formato `compressed-tensors` `pack-quantized`; incluye `recipe.yaml` y `SHA256SUMS.txt` |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no aporta entrenamiento propio: es una cuantizacion post-entrenamiento de Qwen3.5-9B. La receta, ejecutada con `llm-compressor`, aplica GPTQ con esquema W8A16 sobre todos los modulos `Linear` salvo `lm_head`, con grupo de 128, cuantizacion simetrica y orden de activacion estatico. Un detalle tecnico relevante es la lista `ignore` de `config.json`, que mantiene 49 submodulos de atencion lineal en bfloat16; esto apunta a una arquitectura hibrida en la que parte de las capas usan atencion lineal y no admiten bien la cuantizacion agresiva, aunque la model card no describe la arquitectura completa del modelo base.
+El modelo hereda la arquitectura de Qwen3.5-9B: 32 capas, de las cuales 24 son de atención lineal con cinco proyecciones cuantizadas cada una; el resto de cada módulo `linear_attn` (`A_log`, `dt_bias`, `conv1d` y la norma con puerta) permanece en bfloat16, igual que `lm_head`. La lista `ignore` de `config.json` recoge 49 entradas correspondientes a estas capas y a la cabeza de salida.
 
-La innovacion mas destacable esta en los datos de calibracion. En lugar de emplear un corpus de texto generico, se usaron 384 problemas extraidos de GewuBank-20K (semilla 0, renderizados con la plantilla de chat y truncados a 2048 tokens), es decir, la propia distribucion de trabajo del modelo. El articulo somete el resultado a una puerta de calidad preinscrita (perder como maximo 3 puntos porcentuales en el conjunto dificil, p-valor apareado > 0,05 y ausencia de deriva en la tasa de llamadas a herramientas o de terminacion), que el checkpoint supera: +1,9 puntos porcentuales frente a los pesos de 16 bits sin adaptador y +2,5 con el adaptador, ambos dentro del suelo de ruido.
+La cuantización se realizó con `llm-compressor` mediante GPTQ en esquema W8A16, orden de activación estático, dampening 0.01 y grupo simétrico de 128, aplicado a todas las capas `Linear` excepto `lm_head`. El conjunto de calibración son 384 problemas procedentes del release GewuBank-20K (375 de ellos presentes en el banco final y ninguno del conjunto difícil), con semilla 0, renderizados con la plantilla de chat y hasta 2.048 tokens; es decir, se calibró sobre la distribución de trabajo del propio modelo y no sobre un corpus genérico. El autor no documenta en esta ficha el proceso de entrenamiento del modelo base (número de tokens, composición del dataset, RLHF/DPO), por lo que esos datos no están disponibles aquí.
 
-El sistema completo separa el modelo de las herramientas: el sandbox de SymPy y la votacion por muestreo viven fuera del checkpoint y se describen en el articulo. El adaptador `Alumin-Hydro/Gewu-SFT` se monta en caliente mediante la carpeta `vllm/` de ese repositorio, que contiene la disposicion de claves solo-texto; el articulo verifica que la forma montada en caliente es equivalente a los pesos fusionados en el nivel por defecto.
+La innovación destacable es metodológica: una puerta de cuantización pre-registrada que exige perder como máximo 3 puntos porcentuales en el conjunto difícil con p emparejada > 0,05. La puerta se superó, con +1,9 pp del modelo base sin adaptador frente a los pesos de 16 bits (p = 0,43) y +2,5 pp del modelo afinado y luego cuantizado (p = 0,30), ambas diferencias dentro de dos veces el suelo de ruido (1σ = 2,2 pp) y no significativas.
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno en chino e ingles (pipeline `text-generation`, etiqueta `conversational`).
-- Dominio especifico de fisica: el fichero esta pensado como base de un sistema de tutoria con aumento de herramientas, y su calibracion se hizo sobre problemas de fisica.
-- Razonamiento paso a paso: el parser de razonamiento indicado en el comando de servicio (`--reasoning-parser qwen3`) implica soporte de bloques de razonamiento separados de la respuesta final.
-- Llamada a herramientas y function calling: el despliegue recomendado activa `--enable-auto-tool-choice` con `--tool-call-parser qwen3_xml`, y el articulo monitoriza explicitamente la tasa de llamadas a herramientas.
-- Uso como base para adaptadores LoRA: el caso principal de despliegue es el montaje en caliente de `Alumin-Hydro/Gewu-SFT` con rango maximo 32.
-- Modo de mejora por muestreo: el nivel superior ejecuta el modelo solo, genera ocho muestras y decide por votacion (la votacion es externa al modelo).
-- Capacidades de vision: no disponibles; el codificador de vision de la release original no esta incluido en este checkpoint.
-- Capacidades de audio: no disponibles.
+- Generación de texto conversacional en chino e inglés con plantilla de chat de Qwen.
+- Razonamiento de varios pasos orientado a la resolución de problemas de física, con soporte de *reasoning parser* `qwen3` en vLLM.
+- *Tool calling* / *function calling* nativo, con parser `qwen3_xml` y modo de elección automática de herramienta en vLLM.
+- Integración con un sandbox Python externo (SymPy, NumPy, SciPy) para cálculo simbólico y numérico; el sandbox no forma parte del modelo.
+- Ejecución en dos modos: con el adaptador LoRA `Gewu-SFT` montado en caliente o en modo base con muestreo múltiple y votación.
+- Capacidad multilingüe limitada a chino e inglés según la model card.
+- No incluye visión: el codificador visual del release original de Qwen3.5-9B no está presente en este checkpoint.
 
 ## Casos de uso
 
-- Tutoria de fisica multi-turno en aulas o plataformas educativas: el modelo mantiene conversaciones largas sobre problemas de fisica y puede combinarse con el adaptador Gewu-SFT para el nivel de atencion directa al estudiante, con el contexto gestionado por el pool de KV de vLLM.
-- Resolucion asistida de problemas con verificacion simbolica: el modelo propone el planteamiento y las expresiones, y un sandbox de SymPy externo (descrito en el articulo) valida los resultados numericos y algebraicos antes de devolver la respuesta.
-- Autocorreccion por muestreo y votacion en el nivel de mejora: se lanzan ocho generaciones independientes sobre el mismo enunciado y se agregan por votacion, lo que permite aumentar la fiabilidad en problemas de respuesta cerrada a costa de mas computo.
-- Despliegue en una sola GPU de consumo para un laboratorio o departamento: con 11 GB de pesos mas el adaptador cabe en una RTX 3090 de 24 GB y sostiene 28 sesiones concurrentes a 8k de contexto, lo que cubre un aula pequena o un piloto interno sin infraestructura dedicada.
-- Servicio con dos niveles sobre el mismo fichero de pesos: al solicitar `model=gewu` se activa el adaptador y al solicitar `model=gewu-base` se sirve el modelo base, de modo que un unico proceso de vLLM atiende tanto el flujo rapido como el flujo de alta precision, ahorrando VRAM frente a mantener dos modelos.
-- Generacion de material didactico y bancos de problemas: el modelo puede producir enunciados y soluciones de fisica en chino o ingles que despues se revisan y se incorporan a un banco de ejercicios.
-- Evaluacion automatica de respuestas de estudiantes: dada una solucion propuesta, el modelo puede descomponerla, senalar el paso erroneo y justificar la correccion, apoyandose en el parser de razonamiento para separar el analisis de la conclusion.
-- Investigacion en cuantizacion aplicada a dominios cientificos: el par de repositorios (base cuantizado y su version fusionada con el ajuste) permite reproducir la puerta de calidad del articulo y comparar estrategias de calibracion especificas de dominio.
+- Tutoría de física en producción: el modelo responde consultas de estudiantes y delega los cálculos en el sandbox SymPy/NumPy/SciPy, lo que reduce errores aritméticos frente a la generación directa de resultados.
+- Servicio de dos niveles sobre una sola GPU: el nivel por defecto atiende con el adaptador LoRA montado y el nivel de mejora lanza ocho muestras sobre el modelo base y vota, reutilizando el mismo fichero de pesos y evitando duplicar 11 GB en memoria.
+- Despliegue en hardware de consumo: con 11 GB de pesos más el adaptador cabe en una RTX 3090 de 24 GB, lo que permite montar un asistente especializado en una estación de trabajo sin GPU de centro de datos.
+- Atención con contexto largo: la reserva de KV permite unas 230.000 tokens a contexto de 8k (28 sesiones concurrentes reportadas) y 265.000 tokens a 32k (8 sesiones), adecuado para sesiones de estudio con historial extenso.
+- Evaluación de cuantizaciones: la receta `recipe.yaml`, los checksums y las métricas emparejadas sirven como referencia reproducible para validar pipelines GPTQ W8A16 en otros modelos.
+- Servicio sin soporte de LoRA: combinado con el repositorio `Gewu-SFT-W8A16` (modelo afinado fusionado y cuantizado) permite desplegar el sistema en runtimes que no admiten adaptadores en caliente.
+- Generación de trazas de razonamiento para investigación: el repositorio `gewu-sft-traces` y el banco `GewuBank-20K` permiten reproducir experimentos de ajuste y evaluación sobre dominios científicos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. El articulo si reporta medidas de la propia puerta de cuantizacion y de despliegue, que se recogen a continuacion tal cual aparecen:
+| Métrica | Valor | Condiciones |
+|---|---|---|
+| Precisión en conjunto difícil (base, 8 bits vs 16 bits) | +1,9 pp | p emparejada = 0,43; 16 bits en A100, 8 bits en RTX 5090 |
+| Precisión en conjunto difícil (SFT fusionado, 8 bits vs 16 bits) | +2,5 pp | p emparejada = 0,30; ambas en RTX 5090 |
+| Tasa de llamada a herramienta (base) | 60,4% → 54,2% | 16 bits → 8 bits |
+| Tasa de terminación (base) | 99,2% → 98,6% | 16 bits → 8 bits |
+| Tasa de llamada a herramienta (SFT) | 58,3% → 59,8% | 16 bits → 8 bits |
+| Tasa de terminación (SFT) | 91,2% → 90,4% | 16 bits → 8 bits |
+| Forma montada en caliente vs fusionada (conjunto difícil) | −1,4 pp | p emparejada = 0,60; contrato genérico, greedy |
+| Decodificación en un solo flujo | ~58 tokens/s | RTX 3090, vLLM 0.27.1 |
 
-| Medida reportada | Resultado |
-|---|---|
-| Delta de precision, modelo base con adaptador desactivado (W8A16 frente a 16 bits) | +1,9 puntos porcentuales |
-| Delta de precision, con adaptador activado (W8A16 frente a 16 bits) | +2,5 puntos porcentuales |
-| Puerta de cuantizacion preinscrita (perder <= 3 pp, p apareado > 0,05, sin deriva en llamadas a herramientas ni terminacion) | Superada |
-| Equivalencia entre adaptador montado en caliente y pesos fusionados | Equivalente en el nivel por defecto |
-| Decodificacion en un solo flujo (RTX 3090, vLLM 0.27.1) | ~58 tokens por segundo |
-| Pool de KV a 8k de contexto | ~230.000 tokens, 28 sesiones concurrentes |
-| Pool de KV a 32k de contexto | ~265.000 tokens, 8 sesiones concurrentes |
-
-No se dispone de comparaciones con otros modelos en la informacion proporcionada.
+No se han publicado en la información disponible resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) para este checkpoint.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 11 GB de pesos mas el adaptador LoRA en el nivel por defecto (dato medido en el articulo); el repositorio ocupa 11,1 GB, de los cuales la practica totalidad son pesos int8.
-- GPU validadas: RTX 3090 de 24 GB, segun el articulo, con el pool de KV indicado mas arriba.
-- GPU recomendadas por capacidad: cualquier GPU con 24 GB o mas (RTX 3090, RTX 4090, A6000, L40S, A100, H100) es adecuada por tamano; no se han publicado medidas en el resto de estos modelos.
-- Encaje en GPU de consumo: si, en RTX 3090 y en tarjetas de 24 GB equivalentes. No hay datos medidos para GPUs de 16 GB o menos; dado el tamano de pesos int8, un margen tan ajustado no esta verificado.
-- Opciones de despliegue: vLLM 0.27.1 es el unico servidor validado explicitamente, cargando el formato `compressed-tensors` `pack-quantized` de forma directa. No se mencionan llama.cpp, Ollama, TGI ni otros runtimes, y el formato de pesos no es GGUF.
-- Latencia y throughput medidos: aproximadamente 58 tokens por segundo en decodificacion de un unico flujo en una RTX 3090; no se publican cifras de throughput agregado bajo carga concurrente.
+- VRAM estimada: 11 GB de pesos en W8A16, más el adaptador LoRA en el nivel por defecto. La reserva de KV ocupa el resto según `--gpu-memory-utilization`.
+- GPU de referencia del paper: una RTX 3090 de 24 GB con vLLM 0.27.1, `--max-model-len 32768`, `--gpu-memory-utilization 0.92`, `--max-num-seqs 64` y `--max-lora-rank 32`.
+- Cabe en GPU de consumo: sí, en RTX 3090 (24 GB) y previsiblemente en tarjetas con 16 GB o más, aunque el autor solo documenta el caso de 24 GB.
+- GPU de centro de datos: A100 y H100 son adecuadas por capacidad; el paper solo mide la referencia de 16 bits en A100.
+- Opciones de despliegue: vLLM 0.27.1 carga directamente el formato `compressed-tensors`; el autor no documenta soporte en llama.cpp, Ollama ni TGI para este fichero.
+- Capacidad de sesiones: unas 230.000 tokens de reserva KV a contexto de 8k (28 sesiones concurrentes) y 265.000 tokens a 32k (8 sesiones).
+- Latencia y throughput: aproximadamente 58 tokens por segundo en un único flujo sobre RTX 3090.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de contexto, licencia o rendimiento de las alternativas en la informacion proporcionada, por lo que la comparacion se limita a lo declarado en este repositorio.
-
-| Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gewu-Base-W8A16 | 8.953.803.264 | GPTQ W8A16, grupo 128 | No disponible | Apache-2.0 | Hugging Face, formato compressed-tensors para vLLM |
-| Qwen/Qwen3.5-9B | No disponible en la informacion (es el modelo base) | 16 bits (referencia) | No disponible | Apache-2.0 segun la model card | Hugging Face |
-| Alumin-Hydro/Gewu-SFT-W8A16 | No disponible | W8A16 con el ajuste fusionado | No disponible | No disponible en la informacion | Hugging Face; pensado para servir sin soporte de LoRA |
-| Alumin-Hydro/Gewu-SFT | No disponible (adaptador LoRA, rango <= 32) | bfloat16 (adaptador) | No disponible | No disponible en la informacion | Hugging Face, carpeta `vllm/` para montaje en caliente |
+| Gewu-Base-W8A16 | 8,95B | 32.768 | W8A16 (GPTQ, compressed-tensors) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | 8,95B | No disponible en esta ficha | Pesos completos en bfloat16 | Apache-2.0 | Hugging Face |
+| Alumin-Hydro/Gewu-SFT-W8A16 | 8,95B | 32.768 | W8A16 | Apache-2.0 | Hugging Face |
+
+La comparación con alternativas de otros desarrolladores no está disponible en la información proporcionada. Frente al modelo base, este checkpoint reduce el peso en memoria a 11 GB con una pérdida de precisión no significativa en el conjunto difícil del paper; frente a `Gewu-SFT-W8A16`, la diferencia es que este fichero requiere montar el adaptador por separado, mientras que el fusionado permite servir sin soporte de LoRA.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no se documentan en la model card. Al derivar de Qwen3.5-9B y calibrarse solo con problemas de fisica en chino e ingles, es previsible que herede los sesgos del modelo base y que su comportamiento fuera de ese dominio este poco caracterizado.
-- Riesgo de alucinacion: no se cuantifica. El sistema del articulo mitiga el riesgo de dos formas externas al modelo (sandbox de SymPy y votacion sobre ocho muestras), lo que sugiere que el autor no considera fiable la salida de una unica generacion sin verificacion.
-- Limitaciones de idioma: solo chino e ingles. No hay datos de rendimiento en castellano ni en otras lenguas.
-- Limitaciones de contexto: la longitud de contexto nominal no se especifica. Las unicas cifras disponibles son de despliegue a 8k y 32k, y el pool de KV medido implica que a 32k el numero de sesiones concurrentes cae de 28 a 8.
-- Restricciones de licencia: los pesos se distribuyen bajo Apache-2.0, igual que el modelo base. Los problemas de calibracion proceden de GewuBank-20K, bajo CC BY 4.0, por lo que cualquier redistribucion o trabajo derivado deberia respetar la atribucion de esa fuente. La licencia de futuras releases derivadas debe verificarse de forma independiente.
-- Advertencias para produccion: el formato `pack-quantized` requiere vLLM 0.27.1 o una version compatible con `compressed-tensors`; no es un GGUF y no se ha validado en runtimes alternativos. El modelo es solo texto: no incluye el codificador de vision de la release original, por lo que cualquier caso de uso multimodal requiere otro checkpoint.
-- Estado del repositorio: cero descargas y cero "likes" en el momento de la consulta, y el articulo asociado es un informe de investigacion de un certamen escolar, no una publicacion revisada por pares. La validacion externa es limitada.
-- Dependencia del adaptador: el rendimiento descrito en el nivel por defecto presupone el montaje de `Alumin-Hydro/Gewu-SFT` con el diseno de claves solo-texto de su carpeta `vllm/`; usar el adaptador de otra forma puede invalidar la equivalencia con los pesos fusionados.
+- Solo cubre chino e inglés; no hay evidencia de rendimiento en castellano ni en otros idiomas.
+- Es un checkpoint únicamente de texto: no procesa imágenes, aunque el modelo base Qwen3.5-9B original incluya codificador visual.
+- El estado del arte del sistema depende de componentes externos: el sandbox Python (SymPy, NumPy, SciPy) y la votación por ocho muestras no forman parte del modelo.
+- La equivalencia entre la forma montada en caliente y la fusionada solo está establecida para el adaptador `Gewu-SFT`, según advierte el autor.
+- La calibración se hizo sobre problemas de GewuBank-20K, ninguno del conjunto difícil; el comportamiento en distribuciones ajenas a la física educativa no está evaluado.
+- Riesgo de alucinación inherente al modelo base: los cálculos deben delegarse en herramientas externas para uso educativo fiable.
+- La tasa de terminación del modelo afinado ronda el 90%, lo que implica que aproximadamente una de cada diez interacciones no cierra correctamente el flujo en el conjunto evaluado.
+- La puerta de cuantización admite hasta 3 pp de pérdida; en dominios distintos al evaluado la degradación podría ser mayor.
+- La licencia Apache-2.0 permite uso comercial, pero los problemas de calibración proceden de GewuBank-20K (CC BY 4.0), lo que exige atribución si se redistribuyen.
+- El paper es un informe de investigación de un certamen de ciencias de secundaria (Yau High School Science Award, 2026), no una publicación revisada por pares.
 
 ## Enlaces
 
-- Hugging Face (modelo): https://huggingface.co/Alumin-Hydro/Gewu-Base-W8A16
-- Adaptador LoRA del sistema: https://huggingface.co/Alumin-Hydro/Gewu-SFT
-- Version fusionada y cuantizada, para servir sin LoRA: https://huggingface.co/Alumin-Hydro/Gewu-SFT-W8A16
-- Corpus de calibracion: https://huggingface.co/Alumin-Hydro/GewuBank-20K
-- Trazas del ajuste supervisado: https://huggingface.co/Alumin-Hydro/gewu-sft-traces
+- Modelo en Hugging Face: https://huggingface.co/Alumin-Hydro/Gewu-Base-W8A16
+- Adaptador LoRA: https://huggingface.co/Alumin-Hydro/Gewu-SFT
+- Modelo afinado fusionado y cuantizado: https://huggingface.co/Alumin-Hydro/Gewu-SFT-W8A16
+- Banco de problemas: https://huggingface.co/Alumin-Hydro/GewuBank-20K
+- Trazas de ajuste: https://huggingface.co/Alumin-Hydro/gewu-sft-traces
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Referencia del articulo: Feng, Z. (2026). "Gewu: Building, Enhancing, and Evaluating a Tool-Augmented 9B Physics Tutoring System". Informe de investigacion, Yau High School Science Award (Computer Science), 2026. No se ha encontrado URL de publicacion en la informacion disponible.
-- La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a noticias sin relacion con el tema.

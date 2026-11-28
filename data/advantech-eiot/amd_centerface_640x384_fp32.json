@@ -5,7 +5,7 @@
   "author": "Advantech-EIOT",
   "url": "https://huggingface.co/Advantech-EIOT/AMD_centerface_640x384_FP32",
   "created_at": "2026-11-23T02:40:15.000Z",
-  "updated_at": "2026-11-24T02:11:19.000Z",
+  "updated_at": "2026-11-27T06:53:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

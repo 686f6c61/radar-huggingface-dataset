@@ -1,0 +1,42 @@
+{
+  "schema": 2,
+  "id": "LeVraiCNL/Luth-2-0.8B-abliterated-fp8",
+  "slug": "levraicnl-luth-2-0-8b-abliterated-fp8",
+  "author": "LeVraiCNL",
+  "url": "https://huggingface.co/LeVraiCNL/Luth-2-0.8B-abliterated-fp8",
+  "created_at": "2026-11-27T23:28:28.000Z",
+  "updated_at": "2026-11-27T23:28:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1229135157,
+  "storage_human": "1.2 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "1bit-MONSTER",
   "url": "https://huggingface.co/1bit-MONSTER/Inkling-2-Mini-NVFP4-attention",
   "created_at": "2026-11-23T10:51:10.000Z",
-  "updated_at": "2026-11-23T10:52:55.000Z",
+  "updated_at": "2026-11-27T12:20:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 84,
+  "downloads_30d": 234,
   "trending_score": 0,
   "parameters": 622835776,
   "parameters_human": "622.8M",

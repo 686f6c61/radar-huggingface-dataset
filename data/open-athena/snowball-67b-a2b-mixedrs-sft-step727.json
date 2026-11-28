@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "OpenAI | Research & Deployment",
-      "url": "https://openai.com/",
-      "snippet": "ChatGPT for Education Codex Dots Release Notes API Platform Overview API Log In Docs Business Overview Solutions Resources …Read more"
-    },
-    {
-      "title": "Page d'accueil Open | Your high-digital place",
-      "url": "https://www.open.global/",
-      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
-    },
-    {
-      "title": "Online Learning Courses and Adult Education - The Open University",
-      "url": "https://www.open.ac.uk/",
-      "snippet": "The Open University offers flexible full-time and part-time study, supported distance and open learning for undergraduate and …"
-    },
-    {
-      "title": "Open, Aujourd'hui. Et demain. | Open",
-      "url": "https://www.open.global/open/open-aujourdhui-demain",
-      "snippet": "Partout en France. Et plus. Chez Open, nous accompagnons nos clients en offrant un service de proximité. Ainsi, nous sommes …"
-    },
-    {
-      "title": "Open - Il giornale online fondato da Enrico Mentana",
-      "url": "https://www.open.online/",
-      "snippet": "Il racconto dell’insegnante a Open La maestra Silvia racconta cosa c'è dietro il messaggio finito sui social: l'addio alla classe di Roma …"
-    }
-  ]
+  "sources": []
 }

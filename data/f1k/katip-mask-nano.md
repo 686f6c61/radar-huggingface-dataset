@@ -2,107 +2,129 @@
 
 ## Resumen
 
-Katip Mask Nano es un modelo de etiquetado de tokens (token classification) especializado en la detección de nombres de persona en textos legales turcos. Lo desarrolla f1k como componente del proyecto Katip Mask, una herramienta de redacción (redaction) orientada al cumplimiento de la KVKK, la ley turca de protección de datos. El modelo se distribuye como un archivo ONNX cuantizado a int8 de apenas 2,5 MB, pensado para ejecutarse en el navegador mediante transformers.js o en la CPU de un portátil, sin que el documento salga nunca del equipo del usuario.
+Katip Mask Nano es un modelo de reconocimiento de entidades nombradas (NER) especializado en la deteccion de nombres de persona en textos turcos, con un enfoque claro en el cumplimiento de la KVKK (ley turca de proteccion de datos personales) y el RGPD. Lo desarrolla f1k y forma parte del ecosistema Katip, una herramienta de anonimizacion y enmascaramiento de datos personales pensada para abogados y entornos juridicos. El modelo se distribuye como un ONNX int8 de aproximadamente 2,5 MB, lo que permite ejecutarlo en el navegador o en la CPU de un portatil sin enviar el documento a servidores externos.
 
-La versión 1.1, publicada el 13 de noviembre de 2026, amplía el entrenamiento original (solo nombres turcos) con nombres extranjeros tal como aparecen en documentos turcos: sirios, iraníes, afganos, georgianos, armenios, griegos, árabes, ruso-ucranianos, azerbaiyanos y occidentales, con transliteraciones inconsistentes. El modelo no sustituye a las reglas de detección de Katip, sino que las complementa: las reglas cubren identificadores con checksum o forma fija (T.C. kimlik, IBAN, pasaporte, teléfono) y direcciones, mientras que el modelo aporta la detección de nombres propios.
+Arquitectura y tamano: se trata de un modelo tipo BERT de tipo "nano", exportado a ONNX y consumible mediante transformers.js. La etiquetacion es de tipo token-classification con las etiquetas `O`, `B-PER` e `I-PER`, y esta disenado para combinarse con un motor de reglas (v0.2, 14 de noviembre de 2026) que detecta otras categorias de PII. La version 1.1, publicada el 13 de noviembre de 2026, incorpora nombres de clientes extranjeros tal y como aparecen en documentos turcos (sirios, iranies, afganos, georgianos, armenios, griegos, arabes, rusos/ucranianos, azerbaiyanos y occidentales), con transliteraciones inconsistentes.
 
-Su relevancia radica en el equilibrio entre tamaño y utilidad práctica: un BERT minúsculo entrenado desde cero que mejora la detección de nombres extranjeros en prosa judicial real del 77,1% al 94,6% cuando se combina con las reglas, a costa de un aumento controlado de falsos positivos. Es un ejemplo de modelo de nicho, muy optimizado para un dominio y un idioma concretos, con licencia permisiva para uso comercial.
+Su relevancia actual radica en que es el modelo por defecto del conector Katip Kalkan para Claude y el modo rapido de la herramienta Katip Mask. No es el modelo mas preciso de la familia: en KVKK-Bench obtiene 85.9 Overall (puesto 11 de 21), frente a Katip Mask Base (96.1, puesto 1) y Katip Mask Mini (93.0, puesto 7). Su ventaja es el coste computacional minimo y la privacidad por diseno: el documento nunca sale del equipo del usuario.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (transformer encoder) entrenado desde cero |
-| Parametros totales | no disponible (2 capas, hidden size 128, 2 cabezas, FFN 512, vocabulario WordPiece cased de 16.000) |
+| Arquitectura | BERT tipo "nano" (transformer encoder), exportado a ONNX |
+| Parametros totales | no disponible (peso del artefacto: ~2,5 MB en int8 ONNX) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 256 posiciones (ventanas de hasta 256 tokens) |
-| Tipos de cuantizacion | int8 ONNX (unico formato publicado en esta release) |
+| Longitud de contexto | ventanas de hasta 256 tokens (`[CLS] … [SEP]`) |
+| Tipos de cuantizacion | int8 (ONNX) |
 | Idiomas soportados | turco (tr) |
-| Licencia | CC BY-SA 4.0 |
-| Formato de pesos | ONNX (int8); los pesos PyTorch de v1 estan en el tag `v1.0` |
+| Licencia | cc-by-sa-4.0 |
+| Formato de pesos | ONNX (transformers.js) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer encoder tipo BERT de dimensiones muy reducidas: 2 capas, tamaño oculto de 128, 2 cabezas de atención, FFN de 512 y 256 posiciones de contexto, con un vocabulario WordPiece cased de 16.000 tokens. El etiquetado se realiza por palabra sobre el primer sub-token de cada una, con las etiquetas `O`, `B-PER` e `I-PER`. Las palabras se segmentan con la expresión regular definida en `config.json` (`katip.word_regex`), y las ventanas de entrada se construyen con `[CLS] … [SEP]` de hasta 256 tokens. Es importante señalar que el pipeline estándar de token classification de Hugging Face segmenta de forma distinta y produce salidas ruidosas, por lo que el autor recomienda usar el código de referencia.
+El modelo es un encoder transformer de tipo BERT de tamano reducido ("nano"), orientado a token-classification con tres etiquetas (`O`, `B-PER`, `I-PER`). La innovacion principal no esta en la arquitectura sino en la estrategia de etiquetado: las etiquetas se entrenan **por palabra sobre el primer sub-token de cada palabra**, y las palabras se segmentan con la expresion regular definida en `config.json` → `katip.word_regex` (`[\p{L}\p{N}][\p{L}\p{N}'’.-]*`). Las palabras se alimentan en orden dentro de ventanas `[CLS] … [SEP]` de como maximo 256 tokens y se leen los logits en el primer sub-token de cada palabra. El pipeline estandar de token-classification de Hugging Face segmenta de forma distinta y produce salidas ruidosas, por lo que se recomienda usar el codigo de referencia del autor.
 
-El entrenamiento se realizó desde cero durante 5 épocas con semilla 0, en unos 8 minutos sobre 4 núcleos de CPU. Los datos combinan 8.000 documentos sintéticos generados a partir de plantillas legales de Katip (demandas, sentencias, arrendamientos, contratos laborales, poderes notariales, notificaciones, correos, actas, chats e informes periciales), con parte de sus nombres sustituidos por extranjeros; 4.182 documentos de texto real (las 17.967 frases del corpus Turkish Wiki NER empaquetadas, más frases judiciales del split de entrenamiento de TurkishLegalNER y peticiones generadas con nombres rellenados); y una mezcla de nombres extranjeros transliterados de 10 grupos de origen con variantes ortográficas (Muhammed / Mohammad / Mhd, Al- / El-, -zadeh / -zade, -shvili / -şvili, -yan / -ian), excluyendo todas las familias reservadas para test. No se menciona el uso de RLHF ni DPO; es un ajuste supervisado de etiquetado de tokens.
+El entrenamiento se realizo sobre el dataset `turkish-nlp-suite/turkish-wikiNER`, complementado en la version 1.1 con nombres extranjeros tal y como aparecen en documentos turcos. La model card no detalla el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo fases de RLHF o DPO. El modelo esta pensado para funcionar en combinacion con reglas: los spans del modelo con probabilidad media ≥ 0.5 se conservan; por debajo del umbral `trust` se recortan palabras turcas ordinarias de los bordes; los spans de regla PERSON solapados se amplian a la union; y en caso contrario se anade el span si tiene dos o mas palabras capitalizadas, o una palabra capitalizada que no sea ordinaria (o lleve sufijo de caso de nombre propio, como en *Topçu'nun*), o una ya detectada como nombre en el mismo documento.
 
 ## Capacidades
 
-- Detección de nombres de persona (NER de tipo PER) en texto legal turco, incluyendo nombres extranjeros transliterados de forma inconsistente.
-- Etiquetado por palabra con tres etiquetas (`O`, `B-PER`, `I-PER`) sobre el primer sub-token de cada palabra.
-- Ejecución en navegador mediante transformers.js y en CPU mediante onnxruntime, sin necesidad de PyTorch.
-- Integración con el motor de reglas de Katip para detección combinada de PII: identificadores con checksum, IBAN, tarjetas, teléfonos, matrículas, correos y direcciones quedan a cargo de las reglas.
-- Soporte de flujo de redacción con revisión humana: cada valor enmascarado se muestra con una casilla de verificación para que el usuario confirme o descarte.
-- No dispone de tool calling, function calling, capacidades de agente, razonamiento multi-paso, visión, audio ni modo thinking.
+- Deteccion de nombres de persona (PII) en texto turco, con etiquetas `B-PER` e `I-PER`.
+- Reconocimiento de nombres extranjeros transliterados en documentos turcos (arabes, persas, afganos, georgianos, armenios, griegos, rusos/ucranianos, azerbaiyanos y occidentales).
+- Ejecucion en navegador y en CPU de portatil mediante transformers.js y ONNX int8.
+- Integracion con el motor de reglas de Katip para deteccion combinada de PII (el modelo cubre nombres; las reglas cubren otras categorias).
+- Modo rapido por defecto de la herramienta Katip Mask y del conector Katip Kalkan para Claude.
+- Soporte de anonimizacion y pseudonimizacion en flujos de cumplimiento KVKK/RGPD.
+- No soporta tool calling, function calling, agentes multi-paso, vision, audio ni modo "thinking"; es exclusivamente un etiquetador de tokens.
 
 ## Casos de uso
 
-- Redacción de documentos legales antes de compartirlos: el modelo detecta nombres de personas en demandas, sentencias y contratos para enmascararlos, y las reglas cubren el resto de identificadores; el documento nunca sale del equipo del usuario, lo que encaja con el requisito de la KVKK.
-- Cumplimiento normativo en despachos de abogados: integración en el flujo de trabajo para anonimizar expedientes antes de enviarlos a terceros o a herramientas externas, con revisión manual de los valores marcados.
-- Conector Katip Kalkan para Claude: el modelo actúa como capa de detección local de PII antes de que el texto se envíe a un modelo en la nube, reduciendo la exposición de datos personales.
-- Anonimización de corpus judiciales para investigación: procesamiento por lotes de sentencias del Yargıtay para construir conjuntos de datos publicables sin nombres reales, apoyándose en la detección de nombres extranjeros en prosa judicial real.
-- Herramientas de privacidad en el navegador: despliegue como modelo ONNX int8 de 2,5 MB dentro de una aplicación web que redacta textos sin backend, útil para periodistas o gestores documentales.
-- Preprocesado de documentos en pipelines de NLP legal: eliminación de nombres antes de tareas posteriores como clasificación de documentos o extracción de cláusulas, evitando fugas de datos personales en los conjuntos de entrenamiento.
-- Filtrado de PII en correos y actas internas de empresa: detección de nombres en comunicaciones y minutas antes de archivarlas o compartirlas con departamentos externos.
+- **Anonimizacion de expedientes judiciales**: el modelo detecta nombres de persona en sentencias del Yargitay y textos legales turcos; con 94.6% de acierto en nombres extranjeros y 98.7% en nombres turcos (combinado con reglas), es adecuado para preprocesar documentos antes de compartirlos con terceros.
+- **Cumplimiento KVKK en despachos de abogados**: al ejecutarse en local (navegador o CPU), el documento no sale del equipo del usuario, lo que facilita el cumplimiento del principio de minimizacion de datos y evita transferencias a terceros.
+- **Enmascaramiento previo a la revision humana**: Katip muestra cada valor enmascarado con una casilla de verificacion; el modelo actua como primera pasada y el abogado revisa y corrige, con un coste de un clic por falso positivo.
+- **Integracion en el conector Katip Kalkan para Claude**: es el modelo por defecto del conector, de modo que las conversaciones con Claude sobre documentos legales turcos pueden redactarse antes de enviarse al modelo de lenguaje.
+- **Procesamiento por lotes en portatiles sin GPU**: con 2,5 MB en int8, se puede ejecutar en la CPU de un portatil para procesar lotes de documentos sin infraestructura dedicada.
+- **Preprocesamiento en pipelines de e-discovery legal**: deteccion de nombres en corpus de documentos turcos para clasificacion, indexacion o pseudonimizacion antes de analisis posteriores.
+- **Filtrado de PII en formularios y registros**: integrable via transformers.js en aplicaciones web que reciben texto libre en turco y necesitan redactar nombres antes de almacenarlos.
 
 ## Benchmarks y rendimiento
 
-Resultados medidos con las reglas de Katip (v0.2, 14 de noviembre de 2026) y el código de detección exacto que ejecuta el navegador. Un valor cuenta como encontrado cuando un span detectado del mismo tipo lo cubre; los spans del modelo con puntuación igual o superior a 0,5 conservan sus bordes.
+Resultados publicados en la model card (KVKK-Bench y conjuntos externos). Las cifras de "Rules + Nano" combinan el motor de reglas v0.2 con el modelo.
 
-Nombres extranjeros en prosa judicial real (frases de test de TurkishLegalNER, Yargıtay, con los huecos anonimizados rellenados con nombres de familias reservadas, 3 rellenos por frase, 1.011 nombres; intervalos de confianza al 95% por bootstrap de documentos):
+**KVKK-Bench (Overall, 21 modelos):**
 
-| Configuracion | Nombres extranjeros | Nombres turcos, mismos huecos | Precision | Falsos nombres por 1.000 palabras de texto trampa sin nombres |
+| Modelo | Overall | Puesto |
+|---|---|---|
+| Katip Mask Base | 96.1 | 1 |
+| Katip Mask Mini | 93.0 | 7 |
+| Katip Mask Nano | 85.9 | 11 |
+
+**Nombres extranjeros en prosa judicial real (TurkishLegalNER test, Yargitay, 1.011 nombres):**
+
+| Configuracion | Nombres extranjeros | Nombres turcos | Precision | Falsos nombres por 1.000 palabras |
 |---|---|---|---|---|
-| Solo reglas | 77,1% [73,9–80,1] | 93,0% | 99,9% | 0,6 |
-| Reglas + Nano v1 | 80,3% [77,0–83,3] | 97,4% | 99,6% | 0,6 |
-| Reglas + Nano v1.1 | 94,6% [92,5–96,2] | 98,7% | 97,4% | 9,1 |
+| Rules | 77.1% [73.9–80.1] | 93.0% | 99.9% | 0.6 |
+| Rules + Nano v1 | 80.3% [77.0–83.3] | 97.4% | 99.6% | 0.6 |
+| Rules + Nano v1.1 | 94.6% [92.5–96.2] | 98.7% | 97.4% | 9.1 |
 
-Por origen (v1 → v1.1): árabe 69% → 93%, azerbaiyano 60% → 74%, occidental 75% → 91%, persa 88% → 98%, armenio 87% → 97%, georgiano 89% → 99%, griego 89% → 100%, ruso/ucraniano 90% → 95%, afgano 92% → 100%.
+**Por origen (v1 → v1.1):** arabes 69% → 93%, azerbaiyanos 60% → 74%, occidentales 75% → 91%, persas 88% → 98%, armenios 87% → 97%, georgianos 89% → 99%, griegos 89% → 100%, rusos/ucranianos 90% → 95%, afganos 92% → 100%.
 
-Documentos legales turcos sintéticos (nombres de persona / todos los valores, puntuación de dirección completa):
+**Documentos legales turcos sinteticos (nombres de persona / todos los valores):**
 
-| Conjunto | Solo reglas | Reglas + Nano v1 | Reglas + Nano v1.1 | Falsos nombres añadidos por v1.1 |
+| Conjunto | Rules | Rules + Nano v1 | Rules + Nano v1.1 | Falsos nombres anadidos por v1.1 |
 |---|---|---|---|---|
-| Ciego (80 docs, nombres nuevos) | 364/365 · 754/757 | 364/365 · 754/757 | 364/365 · 754/757 | 0 |
-| Reservado (60 docs) | 263/275 · 605/618 | 268/275 · 610/618 | 271/275 · 613/618 | 0 |
-| Ajuste (40 docs) | 159/165 · 425/431 | 159/165 · 425/431 | 163/165 · 429/431 | 1 |
+| Blind (80 docs, nombres nuevos) | 364/365 · 754/757 | 364/365 · 754/757 | 364/365 · 754/757 | 0 |
+| Held-out (60 docs) | 263/275 · 605/618 | 268/275 · 610/618 | 271/275 · 613/618 | 0 |
+| Tuning (40 docs) | 159/165 · 425/431 | 159/165 · 425/431 | 163/165 · 429/431 | 1 |
 | Prosa legal sin nombres | — | — | — | 0 |
 
-El coste del cambio: en frases trampa llenas de palabras que también son nombres o lugares (Hakim, Emir, Nur, Rahim, Halep, Kabil, Erbil...), v1.1 añade unos 9 falsos nombres por cada 1.000 palabras, frente a 0,6 de v1.
+**Conjuntos externos de PII turca (F2 sobre mitades reservadas, todos sinteticos):**
+
+| Conjunto | Nano | NewMind kvkk-v2 (1,1 GB) |
+|---|---|---|
+| nm-kvkk-pii-6K (NewMind) | 89.6 | 93.9 |
+| piimask TR | 95.1 | 93.8 |
+| Conjunto de Çağrı Güngör | 90.7 | 72.6 |
+| Conjunto de Werea | 90.7 | 54.3 |
+
+En nm6k la diferencia es significativa (IC 95% −6,6 a −2,2); en piimask hay empate (−0,8 a +3,7); en Çağrı Nano va por delante. El resultado de Werea no es independiente porque las mitades comparten plantillas. Base obtiene 95.9, 95.9, 95.2 y 95.8 respectivamente.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no aplica en la práctica; el modelo int8 ONNX ocupa 2,5 MB y se ejecuta en CPU o en el navegador.
-- GPU recomendadas: no necesarias. Cualquier GPU moderna puede ejecutarlo, pero el diseño está orientado a CPU.
-- Cabe en cualquier GPU de consumo, e incluso en dispositivos sin GPU dedicada; el entrenamiento se completó en 4 núcleos de CPU en 8 minutos.
-- Opciones de despliegue: transformers.js (navegador), onnxruntime (Python, sin PyTorch), integración en la aplicación web de Katip Mask y en el conector Katip Kalkan.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no requiere GPU; el artefacto int8 ONNX ocupa ~2,5 MB y se ejecuta en CPU.
+- GPU recomendadas: no aplica; cualquier CPU moderna es suficiente.
+- Cabe en cualquier GPU de consumo (RTX 4090, etc.) y en CPU de portatil; el cuello de botella es la segmentacion por palabras, no el computo.
+- Opciones de despliegue: transformers.js (navegador), ONNX Runtime, integracion en la herramienta Katip Mask y en el conector Katip Kalkan.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Tarea | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Katip Mask Nano v1.1 | no disponible (2,5 MB int8) | 256 tokens | turco | NER de nombres de persona en texto legal | CC BY-SA 4.0 | ONNX en Hugging Face |
-| Turkish Wiki NER (corpus base) | no aplica (dataset) | no disponible | turco | NER general | no disponible | Hugging Face Datasets |
-| BERT turco estándar (p. ej. bert-base-turkish) | ~110 M (típico) | 512 tokens | turco | NER general | variable según modelo | Hugging Face |
-
-No se dispone de datos de benchmarks comparativos directos con otros modelos NER turcos en la información proporcionada; la comparación se limita a características estructurales. El modelo de referencia más cercano en propósito es el propio pipeline de reglas de Katip, cuyos resultados se incluyen en la sección de benchmarks.
+| Modelo | Parametros | Contexto | KVKK-Bench Overall | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Katip Mask Nano | ~2,5 MB (int8 ONNX) | 256 tokens | 85.9 (#11) | cc-by-sa-4.0 | Hugging Face |
+| Katip Mask Mini | no disponible | no disponible | 93.0 (#7) | no disponible | Hugging Face |
+| Katip Mask Base | no disponible | no disponible | 96.1 (#1) | no disponible | Hugging Face |
+| NewMind kvkk-v2 | 1,1 GB | no disponible | F2 93.9 en nm6k | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Solo detecta nombres de persona. Todo lo que tenga checksum o forma fija (T.C. kimlik, YKN, pasaporte, VKN, IBAN, tarjeta, teléfono, matrícula, correo) y las direcciones quedan delegados a las reglas de Katip.
-- Entrenado para turco legal; no se ha probado con salida de OCR más allá de los escaneos y fotos de Katip, ni con texto no legal.
-- No es una garantía de privacidad: siempre hay que revisar la salida redactada antes de enviarla.
-- Los documentos legales de evaluación son sintéticos; la prosa judicial es real, pero sus nombres los rellena el autor. Los resultados de nombres extranjeros provienen del mismo corpus TurkishLegalNER cuyo split de entrenamiento se usó en el entrenamiento (el de test no). Los expedientes reales puntuarán peor.
-- El aumento de falsos positivos en v1.1 (9,1 por 1.000 palabras en texto trampa frente a 0,6 en v1) exige revisión humana; el autor lo justifica porque un nombre no detectado constituye una brecha de la KVKK, mientras que un falso nombre solo cuesta un clic.
-- Los nombres azerbaiyanos siguen siendo el punto débil (74% de detección) porque muchos se escriben con raíces léxicas turcas.
-- Licencia CC BY-SA 4.0: permite uso comercial, pero obliga a dar crédito a Katip y a los datos de entrenamiento y a compartir las adaptaciones bajo la misma licencia.
+- **No es el modelo mas preciso de la familia**: en KVKK-Bench queda en 85.9, frente a 96.1 de Base y 93.0 de Mini; la mayor diferencia se da en nombres en prosa cotidiana (55.2 en Nano frente a 84.9 en Base).
+- **Falsos positivos en v1.1**: en frases trampa con palabras que tambien son nombres o lugares (Hakim, Emir, Nur, Rahim, Halep, Kabil, Erbil...) anade ~9 falsos nombres por 1.000 palabras, frente a 0.6 en v1. Cada falso positivo cuesta un clic de revision; un nombre no detectado es una brecha de KVKK.
+- **Nombres azerbaiyanos**: siguen siendo el punto debil (74% en v1.1), porque muchos se escriben con raices de palabras turcas.
+- **Datos de evaluacion sinteticos**: los documentos legales usados en la evaluacion son sinteticos; la prosa judicial es real pero los nombres se rellenan de forma artificial. Los expedientes reales obtendran puntuaciones inferiores.
+- **Riesgo de sobreajuste al corpus**: las puntuaciones de nombres extranjeros provienen del mismo corpus TurkishLegalNER cuyo split de *train* se uso en entrenamiento (el split de *test* no).
+- **Segmentacion no estandar**: el pipeline estandar de token-classification de Hugging Face segmenta de forma distinta y produce salidas ruidosas; es obligatorio usar la regex `katip.word_regex` y leer los logits en el primer sub-token de cada palabra.
+- **Solo turco y solo nombres**: el modelo no cubre otras categorias de PII (direcciones, telefonos, identificadores) por si solo; depende del motor de reglas de Katip para el resto.
+- **Licencia cc-by-sa-4.0**: permite uso comercial pero exige compartir las obras derivadas bajo la misma licencia y atribucion; revisar compatibilidad antes de integrarlo en productos propietarios.
+- **Sesgos**: no se documentan sesgos especificos mas alla de la cobertura desigual por origen nacional de los nombres.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/f1k/katip-mask-nano
-- Demo Katip Mask (Space): https://huggingface.co/spaces/f1k/katip-mask
-- Repositorio fuente: https://github.com/fikrifirat/katip
+- Modelo Katip Mask Base: https://huggingface.co/f1k/katip-mask-base
+- Modelo Katip Mask Mini: https://huggingface.co/f1k/katip-mask-mini
+- Demo Katip Mask (KVKK anonymization): https://huggingface.co/spaces/f1k/katip-kvkk-anonymization
+- Benchmark KVKK-Bench: https://huggingface.co/spaces/f1k/kvkk-bench
 - Conector Katip Kalkan para Claude: https://github.com/fikrifirat/katip/tree/main/connector
+- Resultados externos (RESULTS.md): https://github.com/fikrifirat/katip/blob/legal-study/lab/legal/external/RESULTS.md
 - Dataset de entrenamiento: https://huggingface.co/datasets/turkish-nlp-suite/turkish-wikiNER

@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "mradermacher/EGS-llm-1b-GGUF",
+  "slug": "mradermacher-egs-llm-1b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EGS-llm-1b-GGUF",
+  "created_at": "2026-11-27T23:02:25.000Z",
+  "updated_at": "2026-11-27T23:02:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uncensored Open-weight Models: Redistribution as the Persistence Layer",
+      "url": "http://go/v1/Aa__pEAaSNBWawoM2AFJx-P3-C6sz9R1kTxYfQ7hgRKHDDg7zlET1zxSNdBSUorFXg0VW3iGy71P7EtHwVpjNFi0Es5Gc2uZ9PIqLEiHwLutdPB6UEbn6ZG9BhVRDYruW0lROzI5UTTbRMrn_7Ic7TSepc5oMVnvLWzVzswmFr-f5iVRPbfziqeCjzmAgzfJ8Bjs1bkD",
+      "snippet": "Venice directly commissioned the ... 2026). The commissioned model spawned 73 HuggingFace redistributions (GGUF, AWQ, MLX, EXL2) produced by the same community redistributors — mradermacher, bartowski, Triangle104 — identified in Section 3...."
+    }
+  ]
+}

@@ -2,78 +2,82 @@
 
 ## Resumen
 
-KITE-9B-GGUF es una coleccion de cuantizaciones estaticas en formato GGUF del modelo KITE-9B, publicada por el usuario mradermacher en Hugging Face. El repositorio no contiene el modelo original, sino conversiones a distintos niveles de precision pensadas para su uso con motores de inferencia compatibles con GGUF, como llama.cpp u Ollama. El modelo base referenciado es `kainatq/KITE-9B`.
+KITE-9B es un modelo de lenguaje de 9.197.093.888 parámetros (aproximadamente 9,2 mil millones) desarrollado por kainatq y distribuido en formato GGUF por mradermacher. Se trata de un modelo resultante de la fusión (merge) de modelos mediante la técnica TIES, construido a partir de la familia Qwen 3.5, según indican las etiquetas del repositorio. El modelo está orientado a tareas de razonamiento, uso de herramientas (tool calling), agentes y generación de código, y admite entrada multimodal de imagen y texto (image-text-to-text).
 
-La informacion disponible es muy limitada: la model card del repositorio es practicamente un registro automatico del proceso de cuantizacion, sin descripcion funcional, arquitectura ni datos de entrenamiento. El unico dato tecnico verificable es el recuento de parametros en safetensors, que asciende a 456.010.480 parametros (aproximadamente 456 millones), un valor que no concuerda con la denominacion "9B" del nombre del modelo. Esta discrepancia debe tenerse en cuenta a la hora de evaluar el modelo.
+La relevancia de esta publicación concreta reside en que mradermacher ofrece cuantizaciones estáticas del modelo base en una amplia gama de tipos (desde Q2_K hasta f16, además de un componente multimodales mmproj), lo que permite desplegar un modelo de 9B en hardware de consumo mediante llama.cpp. El repositorio ocupa 85,5 GB en total, aunque cada cuantización individual pesa entre 4,1 GB (Q2_K) y 18,5 GB (f16).
 
-Por tanto, esta ficha documenta lo que se puede afirmar con rigor sobre el repositorio de cuantizaciones y senala explicitamente los datos no disponibles. No se han publicado resultados de benchmarks, idiomas soportados, licencia ni detalles de arquitectura en la informacion proporcionada.
+La licencia es Apache 2.0, lo que facilita su uso comercial. El modelo está etiquetado como compatible con endpoints y conversacional, y su idioma declarado es el inglés. No se dispone de información detallada sobre la longitud de contexto, la composición del dataset de entrenamiento ni resultados de benchmarks en la información proporcionada.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 456.010.480 (segun safetensors); el nombre del modelo indica 9B, discrepancia no aclarada |
+| Arquitectura | Transformer (fusión de modelos Qwen 3.5 mediante TIES; detalles no disponibles) |
+| Parametros totales | 9.197.093.888 (aproximadamente 9,2B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye presumiblemente en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj en Q8_0 y f16 |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base en safetensors y bfloat16 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base KITE-9B. La model card del repositorio GGUF no describe si se trata de un transformer denso, un modelo MoE o una arquitectura hibrida, ni tampoco el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de alineacion como RLHF o DPO.
+El modelo base kainatq/KITE-9B es una fusión de modelos (model merging) construida con la técnica TIES, según las etiquetas del repositorio. Las etiquetas indican que la familia de origen es Qwen 3.5 (qwen3.5, qwen3_5), aunque no se detalla qué modelos concretos se combinaron ni con qué proporciones. Tampoco se especifica el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
 
-Lo unico documentado en el repositorio es el proceso de cuantizacion: se indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversion desde pesos en formato Hugging Face a GGUF mediante una herramienta de cuantizacion estandar. Se ofrecen doce variantes de cuantizacion, desde f16 sin perdida hasta Q2_K e IQ4_XS, lo que permite ajustar el modelo a distintos presupuestos de memoria.
+La información disponible no permite confirmar innovaciones técnicas específicas como decodificación especulativa o atención lineal. El modelo se distribuye en bfloat16 y safetensors en su versión original, y las cuantizaciones GGUF se han generado con la versión 2 del pipeline de cuantización de mradermacher (output_tensor_quantised: 1), lo que indica cuantización de tensores de salida. Se ofrece además un componente mmproj para el procesamiento multimodal de imágenes.
 
 ## Capacidades
 
-- No se han documentado capacidades especificas en la informacion disponible.
-- No hay constancia de soporte de tool calling o function calling.
-- No hay constancia de capacidades de agente o razonamiento multi-paso.
-- No hay constancia de capacidades multilingues ni de idiomas soportados.
-- No hay constancia de modo de razonamiento (thinking), vision ni audio.
-- Al ser una cuantizacion GGUF, la capacidad funcional heredada depende integramente del modelo base `kainatq/KITE-9B`, del cual no se aportan detalles.
+- Generación de texto conversacional multi-turno.
+- Razonamiento (etiqueta reasoning).
+- Generación de código (etiqueta code).
+- Uso de herramientas y function calling (etiquetas tool-use, tool-calling).
+- Soporte para flujos de agentes y razonamiento multi-paso (etiqueta agent).
+- Capacidades multimodales de imagen a texto (image-text-to-text), con componente mmproj en las cuantizaciones GGUF.
+- Compatibilidad con endpoints (endpoints_compatible).
+- Idiomas: inglés.
 
 ## Casos de uso
 
-- Despliegue local en CPU o GPU de gama baja: las variantes Q4_K_M y Q3_K_M permiten ejecutar el modelo en equipos con recursos limitados mediante llama.cpp, siempre que el modelo base sea adecuado para la tarea.
-- Prototipado rapido con Ollama: al estar en formato GGUF, puede importarse en Ollama para pruebas de generacion de texto en local sin infraestructura dedicada.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece doce niveles de cuantizacion, lo que facilita medir la perdida de calidad frente al coste de memoria en un mismo modelo.
-- Integracion en aplicaciones de escritorio: los binarios GGUF pueden embeberse en aplicaciones nativas que requieran inferencia offline sin dependencia de la nube.
-- Experimentacion academica: util para estudiar el efecto de la cuantizacion en modelos de ~456 millones de parametros (segun safetensors) en tareas de lenguaje.
-- Pruebas de pipelines de inferencia: sirve como modelo de sustitucion en pipelines que ya consuman GGUF, para validar latencia y consumo de memoria antes de escalar a modelos mayores.
-
-En todos los casos, la idoneidad real depende de capacidades del modelo base que no estan documentadas en la informacion disponible.
+- Asistentes de atención al cliente: el modelo puede mantener conversaciones multi-turno en inglés y, con la licencia Apache 2.0, integrarse en productos comerciales sin restricciones de licencia adicionales.
+- Automatización de agentes con tool calling: sus etiquetas de tool-use y agent lo hacen adecuado para orquestar llamadas a APIs y ejecutar flujos de varios pasos en pipelines de automatización.
+- Generación de código en entornos de desarrollo: puede integrarse en asistentes de programación o pipelines de CI/CD para sugerencias y revisión de código, dado su enfoque en la etiqueta code.
+- Procesamiento de documentos con imágenes: gracias al componente multimodal mmproj, puede extraer texto o interpretar capturas y diagramas en flujos de digitalización.
+- Despliegue en hardware de consumo: las cuantizaciones Q4_K_M (5,9 GB) y Q4_K_S (5,6 GB) permiten ejecutar el modelo en GPUs de consumo mediante llama.cpp, lo que facilita prototipado local y entornos con presupuesto limitado.
+- Razonamiento asistido en investigación: la etiqueta reasoning sugiere su uso en tareas de análisis y resolución de problemas donde se requiere cadena de razonamiento, siempre con validación humana por el riesgo de alucinación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precision. Como referencia orientativa basada en el recuento de safetensors (456 millones de parametros), una cuantizacion Q4_K_M ocuparia del orden de 250-300 MB, y f16 alrededor de 900 MB; sin embargo, la discrepancia con la denominacion "9B" impide dar cifras fiables.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: probable en cualquier GPU con al menos 2-4 GB de VRAM para las cuantizaciones bajas, asumiendo el recuento de parametros de safetensors.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier runtime compatible con GGUF. No se confirma soporte de vLLM ni TGI para este formato.
+- VRAM estimada para inferencia (según cuantización): aproximadamente 4,1 GB (Q2_K), 5,6-5,9 GB (Q4_K_S / Q4_K_M), 6,6-6,8 GB (Q5_K_S / Q5_K_M), 7,7 GB (Q6_K), 9,9 GB (Q8_0) y 18,5 GB (f16). Añadir aproximadamente 0,7-1,0 GB si se usa el componente mmproj multimodal.
+- GPU recomendadas: no disponibles de forma específica en la información; por tamaño, las cuantizaciones Q4 caben en GPUs de consumo con 8 GB o más de VRAM.
+- Cabe en GPU de consumo: sí, en cuantizaciones Q4 y Q5 en GPUs con 8-12 GB de VRAM; Q8_0 requiere al menos 12 GB y f16 requiere alrededor de 24 GB.
+- Opciones de despliegue: llama.cpp (formato GGUF nativo), y cualquier runtime compatible con GGUF; el modelo base es compatible con transformers.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion suficiente sobre el modelo base ni sobre alternativas comparables de la misma categoria para establecer una comparacion rigurosa.
+No se dispone de datos de rendimiento del modelo ni de información sobre los modelos concretos fusionados, por lo que no es posible establecer una comparativa cuantitativa fiable con alternativas. Como referencia estructural, el modelo pertenece a la familia Qwen 3.5 con aproximadamente 9,2B de parámetros y licencia Apache 2.0, pero no se dispone de datos de contexto, benchmarks ni detalles de arquitectura para comparar con otros modelos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- La discrepancia entre el nombre "9B" y los 456 millones de parametros declarados en safetensors no esta aclarada; conviene verificar el modelo base antes de usarlo en produccion.
-- No se especifica la licencia, por lo que no se puede garantizar el uso comercial.
-- No se documentan idiomas soportados; el rendimiento fuera del idioma de entrenamiento (desconocido) es incierto.
-- No hay informacion sobre sesgos, riesgo de alucinacion ni evaluaciones de seguridad.
-- Las cuantizaciones de baja precision (Q2_K, IQ4_XS) pueden degradar notablemente la calidad respecto a f16; se recomienda validar la variante elegida en la tarea concreta.
-- El repositorio tiene cero descargas y cero likes en el momento de la consulta, lo que reduce la evidencia de uso real y validacion por la comunidad.
-- Al ser una cuantizacion de terceros, no hay garantia de que la conversion sea fiel al modelo original.
+- Sesgos conocidos: no disponibles en la información proporcionada; al ser una fusión de modelos, puede heredar sesgos de los modelos de origen.
+- Riesgo de alucinación: no cuantificado; como todo modelo generativo, requiere validación en producción.
+- Limitaciones de contexto e idioma: el único idioma declarado es el inglés; la longitud de contexto no está disponible, lo que impide planificar despliegues con ventanas largas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero conviene revisar las licencias de los modelos de origen de la fusión, no detalladas en la información.
+- Caveat de producción: el repositorio es una cuantización de terceros (mradermacher); el modelo original es kainatq/KITE-9B y debe validarse contra él. La información sobre arquitectura y entrenamiento es escasa, lo que dificulta evaluar su idoneidad para tareas críticas.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/KITE-9B-GGUF
-- Modelo base referenciado: https://huggingface.co/kainatq/KITE-9B
+- Modelo base: https://huggingface.co/kainatq/KITE-9B
+- Cuantizaciones weighted/imatrix: https://huggingface.co/mradermacher/KITE-9B-i1-GGUF
+- Página de descargas del cuantizador: https://hf.tst.eu/model#KITE-9B-GGUF
+- Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Gráfico de perplejidad por tipo de cuantización: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

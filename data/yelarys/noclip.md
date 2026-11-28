@@ -2,99 +2,103 @@
 
 ## Resumen
 
-noclip es un modelo de mundo neuronal ("world model") interactivo desarrollado por el usuario independiente yelarys. Se trata de un transformer causal de 211 millones de parámetros que genera, fotograma a fotograma, una vista en primera persona de los Backrooms a partir de las entradas de teclado y ratón del jugador. El modelo funciona a 10 fotogramas por segundo en tiempo real sobre una única GPU, sin motor gráfico ni mapa subyacente: la imagen es enteramente inventada por la red.
+noclip es un modelo neuronal de mundo ("world model") desarrollado por el autor independiente yelarys que genera, fotograma a fotograma, la vista en primera persona de un videojuego de los Backrooms. No se trata de un modelo de lenguaje: es un transformer causal de 211 millones de parametros que, a partir de las pulsaciones de teclado y el movimiento del raton, dibuja la siguiente imagen del juego a 10 fotogramas por segundo en tiempo real sobre una unica GPU. Detras de la imagen no hay mapa ni motor de juego: el modelo inventa cada fotograma apoyandose solo en su contexto visual reciente.
 
-El modelo se entrenó desde cero exclusivamente sobre un simulador procedural propio que recrea 18 niveles de los Backrooms. La arquitectura opera sobre latentes de vídeo de 16x9x32 obtenidos con un autoencoder DC-AE (factor de compresión 32x) a partir de vídeo de 512x288, con una anchura de 768, 16 capas y 12 cabezas de atención. La atención está factorizada en dos ejes (dentro de cada fotograma y entre fotogramas en la misma posición espacial), lo que reduce el coste computacional del contexto temporal.
+El modelo se entreno desde cero exclusivamente sobre un simulador procedural de 18 niveles de los Backrooms, sin datos externos, y se juega sin ese simulador. Arquitectonicamente combina un transformer causal sobre latentes de un autoencoder DC-AE (con downsample de 32x) con un decodificador de imagenes afinado, y se entrena mediante flow matching con teacher forcing sobre contexto ligeramente ruidoso.
 
-Es relevante como demostración de modelos de mundo generativos aplicados a entornos interactivos en tiempo real con requisitos de hardware modestos (unos 3,1 GB de VRAM en juego). No obstante, es un proyecto secundario del autor, no un producto, y solo se ha evaluado frente a su propio simulador. La licencia es Apache 2.0 y el repositorio incluye el código, el simulador, el servidor de juego y los pesos en formato safetensors.
+Su relevancia reside en que demuestra un world model jugable en tiempo real con requisitos de hardware modestos (unos 3,1 GB de VRAM en juego y 47 ms por fotograma con 12 pasos de muestreo en una RTX 5000 Ada), lo que lo convierte en una referencia practica para investigacion en modelos de mundo, generacion de video interactiva y agentes que aprenden entornos simulados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con atención factorizada (intra-fotograma e inter-fotograma en la misma posición); opera sobre latentes DC-AE |
-| Parametros totales | 210.608.672 (modelo de mundo); el repositorio incluye además decodificador, codificador y lector de eventos |
+| Arquitectura | Transformer causal sobre latentes DC-AE (32x downsampling), atencion factorizada (intra-fotograma y entre fotogramas en la misma posicion); anchura 768, 16 capas, 12 cabezas |
+| Parametros totales | 210.608.672 (modelo de mundo, float32); el repositorio incluye ademas decoder (1,07 GB), encoder (245 MB) y events (0,4 MB) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 24 fotogramas de ventana (2,4 s a 10 fps) más hasta 8 fotogramas de memoria recuperados por pose |
-| Tipos de cuantizacion | no disponible (los pesos se distribuyen en float32) |
-| Idiomas soportados | no disponible (modelo de vídeo/interacción, no de texto) |
+| Longitud de contexto | 24 fotogramas de 512x288 a 10 fps (2,4 s) mas hasta 8 fotogramas de memoria recuperados por pose |
+| Tipos de cuantizacion | no disponible (pesos publicados en float32) |
+| Idiomas soportados | no disponible (no es un modelo de lenguaje; genera imagen) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (model.safetensors, decoder.safetensors, encoder.safetensors, events.safetensors) |
 
 ## Arquitectura y entrenamiento
 
-El núcleo es un transformer causal que procesa latentes de 16x9x32 obtenidos con un autoencoder DC-AE con compresión 32x sobre vídeo de 512x288 a 10 fps. La anchura es de 768, con 16 capas y 12 cabezas. La atención se factoriza en dos operaciones: una dentro de cada fotograma y otra entre fotogramas en la misma posición espacial, lo que abarata el modelado temporal. El modelo se condiciona por fotograma con 11 columnas de acción (movimiento, desplazamiento lateral, giro, inclinación, esprint, linterna, noclip, uso y tres columnas de estado) y con el nivel. Además de la ventana de 24 fotogramas, se le presentan hasta 8 fotogramas de memoria recuperados por pose de momentos anteriores del sueño.
+El nucleo es un transformer causal que opera sobre los latentes 16x9x32 de los ultimos 24 fotogramas de video 512x288 a 10 fps, codificados con un autoencoder DC-AE de 32x de downsample. La atencion esta factorizada en dos ejes: dentro de cada fotograma y entre fotogramas en la misma posicion espacial, lo que reduce el coste computacional del contexto temporal. Cada fotograma se condiciona con 11 columnas de accion (movimiento, desplazamiento lateral, giro, cabeceo, sprint, linterna, noclip, uso y tres columnas de estado) y con el nivel actual. Ademas, se incorporan hasta 8 fotogramas de memoria recuperados por pose de momentos anteriores del sueno.
 
-El entrenamiento se realizó desde cero únicamente sobre el simulador del repositorio, en tres etapas (53M, 40M y 30M fotogramas, unos 123M en total) mientras el simulador crecía de 12 a 18 niveles; la última etapa muestreó ventanas de 16M fotogramas (440 horas de juego guionizado). Se usó flow matching con teacher forcing sobre contexto ligeramente ruidoso, y en la mitad de los lotes el contexto era la propia estimación de una pasada del modelo, lo que evita que el sueño derive de inmediato. El muestreo emplea 12 pasos de un integrador de segundo orden (Adams-Bashforth) por fotograma, sin guiado. Los pesos son una media móvil sobre rondas de entrenamiento. El cómputo fue de 6 a 11 GPU RTX 5000 Ada durante dos días.
+El entrenamiento se realizo desde cero unicamente sobre el simulador del repositorio, con aproximadamente 123 millones de fotogramas en tres etapas (53M, 40M y 30M) mientras el simulador crecia de 12 a 18 niveles; la ultima etapa muestreo ventanas de 16 millones de fotogramas (440 horas de juego guionizado). Se empleo flow matching con teacher forcing sobre contexto ligeramente ruidoso y, en la mitad de los lotes, el contexto era la propia estimacion de una pasada del modelo, lo que evita la deriva inmediata del sueno. El muestreo usa 12 pasos de un integrador de segundo orden (Adams-Bashforth) por fotograma, sin guidance. Los pesos publicados son una media movil de las rondas de entrenamiento, y el computo requirio entre 6 y 11 GPUs RTX 5000 Ada durante dos dias.
 
 ## Capacidades
 
-- Generación de vídeo interactivo en primera persona a 512x288 y 10 fps, fotograma a fotograma, en tiempo real.
-- Respuesta a entradas de teclado y ratón: caminar (WASD), mirar con el ratón, correr (Shift), linterna (F), caer a otro nivel (N) y reiniciar el sueño (R).
-- Condicionamiento por nivel: el modelo conoce 18 niveles de los Backrooms y genera la apariencia correspondiente a cada uno.
-- Memoria a corto plazo: recupera hasta 8 fotogramas por pose de momentos anteriores para mantener la coherencia de lugares.
-- Lectura de eventos: un pequeño módulo (events.safetensors) detecta golpes y muertes a partir de los latentes para disparar sonidos.
-- No incluye capacidades de texto, código, matemáticas, visión general, tool calling ni agentes; es un modelo de mundo específico de dominio.
+- Generacion interactiva de video en primera persona a 10 fps en tiempo real, condicionada por teclado y raton.
+- Control de movimiento (caminar, correr), vision (giro y cabeceo), linterna y cambio de nivel ("noclip").
+- Generacion de escenas procedurales coherentes durante decenas de segundos por nivel, con memoria de lugares a corto plazo.
+- Representacion implicita de un mundo sin mapa ni motor: el modelo sintetiza geometria, texturas e iluminacion de forma consistente.
+- Deteccion de eventos de golpes y muertes a partir de los latentes (events.safetensors) para sincronizar sonido.
+- No soporta tool calling, function calling ni razonamiento multi-paso en el sentido de los LLM; no es un modelo de lenguaje.
+- No dispone de capacidades multilingues, vision general, audio ni modo de pensamiento.
 
 ## Casos de uso
 
-- Demostración e investigación en modelos de mundo: permite estudiar cómo un transformer aprende dinámica de entorno y control interactivo sin motor físico, sirviendo como banco de pruebas reproducible con el simulador incluido.
-- Prototipado de experiencias interactivas generativas: un desarrollador puede experimentar con navegación en primera persona generada por red sin construir geometría ni assets, útil para validar conceptos de juego o arte generativo.
-- Educación en generación de vídeo: el par codificador/decodificador DC-AE y el pipeline de flow matching sirven para enseñar compresión latente, atención factorizada y muestreo de segundo orden con código abierto.
-- Investigación sobre coherencia temporal: los datos medidos (PSNR 26,7 dB al primer segundo y 17,3 dB a los doce segundos) permiten estudiar la deriva de modelos autorregresivos de vídeo y probar técnicas de memoria por pose.
-- Generación de datos sintéticos de entornos: el codificador rápido (ConvNeXt-S entrenado para producir latentes DC-AE) y el simulador permiten crear conjuntos de datos de vídeo etiquetados con acciones para otros experimentos.
-- Instalaciones artísticas o demos locales: con unos 4 GB de VRAM libre y Python 3.10+, se puede montar una experiencia jugable en una sola GPU consumer o de estación de trabajo, sin dependencia de servicios en la nube.
+- Investigacion en world models: permite estudiar como un transformer aprende dinamica de entornos y mantiene coherencia temporal sin un motor fisico, con un coste de hardware accesible.
+- Generacion de video interactiva en tiempo real: util para prototipar experiencias jugables generativas donde el usuario controla la camara y el modelo dibuja el entorno al instante.
+- Simulacion de entornos para agentes de refuerzo: el modelo puede actuar como entorno sintetico ligero para entrenar o evaluar politicas de navegacion y exploracion.
+- Demostraciones de investigacion y divulgacion: el servidor de juego incluido permite reproducir el modelo en local con una GPU de consumo y mostrar resultados de forma inmediata.
+- Estudio de tecnicas de muestreo eficiente: con 12 pasos de Adams-Bashforth y 47 ms por fotograma, sirve como banco de pruebas para comparar integradores y estrategias de contexto.
+- Generacion de material audiovisual tematico: combinado con el lector de eventos, permite producir clips con sonido sincronizado de forma automatica a partir de partidas grabadas.
+- Base para fine-tuning en otros entornos simulados: al estar liberado en Apache 2.0 y con el simulador disponible, se puede reentrenar sobre otros juegos o escenarios procedurales.
 
 ## Benchmarks y rendimiento
 
-Evaluación sobre 96 episodios reservados, mostrando 8 fotogramas grabados y luego solo las acciones grabadas (sin conducción humana), con 12 pasos de muestreo:
+Los datos medidos por el autor corresponden a una reproduccion sin control humano: se muestran 8 fotogramas grabados del simulador y despues solo las pulsaciones registradas, comparando cada fotograma generado con el del simulador para el mismo instante (96 episodios, 12 pasos de muestreo).
 
-| Metrica | Valor |
+| Metrica | Resultado |
 |---|---|
-| PSNR frente al simulador, primer segundo | 26,7 dB |
-| PSNR a los doce segundos | 17,3 dB |
-| Fotogramas en blanco entre 9 y 12 s (pared lisa, niebla, oscuridad) | 48 % (en los fotogramas del propio simulador: 12 %) |
-| Tiempo por fotograma, RTX 5000 Ada, 12 pasos | 47 ms (el juego permite 100 ms) |
+| Similitud con el simulador en el primer segundo (PSNR) | 26,7 dB (30 dB se considera casi identico) |
+| Similitud doce segundos despues (PSNR) | 17,3 dB (dibuja habitaciones propias, no las del simulador) |
+| Fotogramas en blanco entre 9 y 12 s (pared lisa, niebla, oscuridad) | 48% (el simulador: 12%) |
+| Tiempo por fotograma en RTX 5000 Ada, 12 pasos | 47 ms (el juego admite 100 ms) |
 | Memoria de GPU durante el juego | 3,1 GB |
 
-No se han publicado comparaciones con otros modelos en la información disponible.
+No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la informacion disponible, ya que no es un modelo de lenguaje.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: unos 3,1 GB durante el juego según el autor; se recomienda una GPU NVIDIA con aproximadamente 4 GB de memoria libre.
-- GPU recomendadas: el autor midió 47 ms por fotograma en una RTX 5000 Ada; no se han publicado cifras para A100, H100 o RTX 4090.
-- GPU consumer: cabe en tarjetas con 4 GB o más de VRAM libre, siempre que sean NVIDIA y compatibles con el stack de PyTorch del repositorio.
-- Despliegue: el proyecto incluye su propio servidor de juego (`python -m wm.play`, servidor en http://127.0.0.1:8765/); no se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: 47 ms por fotograma con 12 pasos de muestreo en RTX 5000 Ada, lo que deja margen frente al presupuesto de 100 ms por fotograma a 10 fps.
-- Almacenamiento: el repositorio ocupa 2,2 GB e incluye modelo (842 MB), decodificador (1,07 GB), codificador (245 MB), lector de eventos, metadatos, fotogramas de inicio y vídeo de demostración.
+- VRAM estimada para inferencia: unos 3,1 GB de GPU durante el juego segun el autor; se recomienda disponer de al menos 4 GB libres.
+- GPU recomendadas: RTX 5000 Ada (medicion oficial); cualquier GPU NVIDIA con 4 GB o mas de memoria libre deberia ser suficiente, aunque no se han publicado mediciones en otras tarjetas.
+- Cabe en GPU de consumo: si, previsiblemente en modelos con 4 GB o mas de VRAM (por ejemplo, gama RTX 30/40 con 8 GB), aunque no hay datos oficiales de rendimiento en ellas.
+- Opciones de despliegue: servidor de juego propio del repositorio (`python -m wm.play`) con PyTorch 2.8 y CUDA 12.8 en Windows; en Linux basta con `pip install -r requirements.txt`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje.
+- Latencia y throughput: 47 ms por fotograma con 12 pasos en RTX 5000 Ada, equivalente a unos 21 fps de capacidad de generacion frente a los 10 fps objetivo del juego.
+- Requisitos de software: Python 3.10 o superior; en Windows no esta probado y requiere instalar PyTorch con el indice CUDA correspondiente.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| noclip (yelarys) | 211M (modelo de mundo) | 24 fotogramas + 8 de memoria | Transformer causal sobre latentes DC-AE, flow matching, interactivo en tiempo real | Apache 2.0 | Pesos y código en HF y GitHub |
-| Modelos de mundo interactivos tipo Genie/GameNGen | no disponible | no disponible | Generación de vídeo jugable condicionada por acciones | no disponible | no disponible en la información |
-| Modelos de vídeo generativo generalistas (p. ej. Sora, Veo) | no disponible | no disponible | Difusión sobre vídeo de alta resolución | propietaria | API/servicio |
+| noclip (yelarys) | 211M | 24 fotogramas + 8 de memoria | World model interactivo, flow matching, DC-AE | Apache 2.0 | Hugging Face + GitHub |
+| Genie / Genie 2 (DeepMind) | no disponible | no disponible | World models generativos jugables | no disponible (no abierto) | No publico |
+| GameNGen (Google) | no disponible | no disponible | Difusion para DOOM jugable | no disponible | Paper, sin pesos abiertos |
+| Oasis (Decart) | no disponible | no disponible | World model de Minecraft jugable | no disponible | Demo cerrada |
 
-No se dispone de datos verificables en la información proporcionada para establecer una comparación cuantitativa con alternativas concretas; las filas distintas de noclip se indican como no disponibles.
+No se dispone de datos publicos de parametros, contexto ni rendimiento de las alternativas en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible. noclip destaca por ser el unico de la lista con pesos y codigo abiertos bajo Apache 2.0 y con requisitos de hardware de consumo.
 
 ## Limitaciones y advertencias
 
-- Coherencia temporal limitada: un nivel se mantiene como lugar durante decenas de segundos; cuando la imagen se disuelve, el servidor de juego traslada al jugador a otro nivel.
-- Control parcial: caminar y mirar se obedecen, pero puertas y entidades aparecen sin fiabilidad bajo petición.
-- Memoria espacial muy corta: los lugares se recuerdan por momentos, no tras recorrer una manzana.
-- Deriva medible: el PSNR cae de 26,7 dB al primer segundo a 17,3 dB a los doce segundos, y los fotogramas en blanco suben al 48 % frente al 12 % del simulador.
-- Estilo fijo: reproduce la estética del simulador (512x288, 10 fps, texturas procedurales), sin capacidad de generalizar a otros dominios visuales.
-- Evaluación limitada: solo se ha evaluado frente a su propio simulador; no hay benchmarks con terceros ni comparaciones publicadas.
-- Sesgos: no se documentan sesgos específicos, pero al entrenarse solo con un simulador procedural hereda sus limitaciones de variedad visual y de representación.
-- Riesgo de alucinación visual: al ser un modelo generativo autorregresivo, puede inventar geometría y objetos inconsistentes, especialmente en sueños largos.
-- Licencia: Apache 2.0 permite uso comercial, pero el decodificador deriva de `mit-han-lab/dc-ae-lite-f32c32-sana-1.1-diffusers` (MIT HAN Lab y NVIDIA) y conviene revisar sus términos; el proyecto no está afiliado a ninguna película, juego o wiki de los Backrooms.
-- Madurez: es un proyecto secundario, no un producto, sin garantías de soporte ni mantenimiento.
+- Coherencia temporal limitada: un nivel se mantiene como lugar durante decenas de segundos; cuando la imagen se disuelve, el servidor de juego reubica al jugador en otro nivel.
+- Control fiable solo de caminar y mirar; las puertas y entidades aparecen, pero no de forma fiable bajo peticion.
+- Memoria de lugares a corto plazo: recuerda momentos, no recorridos largos.
+- Reproduce la estetica de su simulador: 512x288, 10 fps y texturas procedurales; no generaliza a otros dominios visuales.
+- No evaluado fuera de su propio simulador, por lo que su rendimiento en otros entornos es desconocido.
+- Riesgo de deriva y fotogramas en blanco: el 48% de fotogramas entre 9 y 12 s son paredes lisas, niebla u oscuridad, frente al 12% del simulador.
+- No es un modelo de lenguaje: no soporta tool calling, agentes conversacionales ni tareas de razonamiento textual.
+- Licencia Apache 2.0 permite uso comercial, pero el decodificador es una copia modificada del decoder de DC-AE-lite de MIT HAN Lab y NVIDIA, cuyos terminos deben respetarse; el encoder se descarga de su repositorio original.
+- Windows no esta probado oficialmente y requiere pasos manuales para habilitar CUDA en PyTorch.
+- Proyecto no afiliado a ninguna pelicula, juego o wiki de los Backrooms; los nombres de niveles provienen de wikis comunitarias.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/yelarys/noclip
-- Repositorio de código, simulador, entrenamiento y servidor de juego: https://github.com/Yelar/noclip
-- Vídeo de demostración: https://huggingface.co/yelarys/noclip/resolve/main/demo.mp4
-- Autoencoder base del decodificador: https://huggingface.co/mit-han-lab/dc-ae-lite-f32c32-sana-1.1-diffusers
-- Paper del autoencoder DC-AE: arXiv:2410.10733 (Chen et al., 2024), https://arxiv.org/abs/2410.10733
+- Codigo, simulador, entrenamiento y servidor de juego: https://github.com/Yelar/noclip
+- Actualizaciones del autor en X: https://x.com/yelaryss
+- Paper del autoencoder DC-AE (arXiv:2410.10733): https://arxiv.org/abs/2410.10733
+- Decoder base DC-AE-lite de MIT HAN Lab: https://huggingface.co/mit-han-lab/dc-ae-lite-f32c32-sana-1.1-diffusers
+- Video de demostracion: https://huggingface.co/yelarys/noclip/resolve/main/demo.mp4

@@ -2,105 +2,107 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-SGNE-CC es un parche de pesos (no un modelo completo) publicado por el usuario Nondual-Observer sobre el modelo base Qwen/Qwen3.5-0.8B de Alibaba. El parche, de tan solo 3,13 MiB en formato NPZ BF16, aplica una edicion de pesos denominada SGNE-CC (Spherical Gated Norm-preserving Edit, Column-Constrained) derivada del estudio "DNA Weight Editing" del autor. El resultado es un checkpoint BF16 que se ensambla localmente descargando el modelo base oficial y aplicando el delta sobre determinadas matrices de las capas feed-forward y de las capas recurrentes GatedDeltaNet.
+Qwen3.5-0.8B-SGNE-CC es un checkpoint derivado de Qwen/Qwen3.5-0.8B, el modelo denso de 0,8 mil millones de parametros de la familia Qwen 3.5, publicado por el autor independiente Igor M. Zhuk (Nondual-Observer). No se trata de un fine-tuning convencional: el autor aplica una edicion directa en el espacio de pesos denominada SGNE-CC (Spherical Gated Norm-preserving Edit, Column-Constrained), enmarcada en su estudio "DNA Weight Editing". El resultado es un checkpoint BF16 listo para ejecutar mas un parche de pesos de 3,13 MiB (`sgne_cc_dna_delta.npz`) que puede aplicarse o auditarse por separado.
 
-El interes del artefacto es metodologico: demuestra que una modificacion quirurgica de un subconjunto muy pequeno de pesos (0,270% de los pesos de texto, 2.032.640 escalares) puede alterar de forma medible el comportamiento de razonamiento matematico y de generacion de codigo en un modelo de 0,8B parametros. Frente al parche de referencia MIT-p50c, que infla hasta un 114% la norma de columna de las matrices editadas, SGNE-CC preserva dichas normas dentro del redondeo BF16 (desviacion maxima del 0,1625%), lo que segun el autor reduce artefactos y mejora la estabilidad del razonamiento.
+La relevancia del modelo es metodologica mas que de rendimiento bruto: el autor sostiene que buena parte de las mejoras atribuidas a ediciones de pesos previas (concretamente MIT-p50c) desaparecen al eliminar el muestreo aleatorio y la penalizacion de presencia, y presenta SGNE-CC como una alternativa que conserva las normas de columna dentro del redondeo BF16 y supera a MIT-p50c en las cinco suites evaluadas bajo decodificacion greedy. El checkpoint mantiene la arquitectura original de Qwen3.5 (transformer hibrido con capas GatedDeltaNet recurrentes y atencion) y hereda su ventana de contexto, sus capacidades multimodales de entrada imagen-texto y su soporte para ocho idiomas.
 
-El modelo base pertenece a la familia Qwen3.5 e incorpora una arquitectura hibrida con atencion clasica y capas recurrentes GatedDeltaNet. El parche mantiene la licencia Apache-2.0 del modelo original y esta pensado para investigadores que quieran reproducir el estudio o experimentar con edicion de pesos sin reentrenar.
+El modelo esta pensado para desarrolladores e investigadores que quieran reproducir el experimento, auditar la geometria del parche o desplegar el checkpoint en motores estandar (Transformers, vLLM, SGLang) sin cambios en el codigo de inferencia. Con 873.438.784 parametros reales y licencia Apache-2.0, es un candidato ligero para experimentacion en CPU/GPU de consumo y para estudiar tecnicas de programacion en el espacio de pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer hibrido con capas de atencion y capas recurrentes GatedDeltaNet (modelo base Qwen3.5-0.8B) |
-| Parametros totales | 0,8B (modelo base); el parche modifica 2.032.640 escalares (0,270% de los pesos de texto) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada; el estudio evalua con limite de generacion de 32.768 tokens nuevos |
-| Tipos de cuantizacion | no disponible (el parche se distribuye en BF16; el checkpoint ensamblado puede cuantizarse con herramientas estandar, pero no se especifica) |
-| Idiomas soportados | en, zh, ru, de, es, fr, ja, ar |
+| Arquitectura | Transformer hibrido Qwen3.5 con capas de atencion y capas recurrentes GatedDeltaNet |
+| Parametros totales | 873.438.784 |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | 32.768 tokens (limite usado en la evaluacion; el checkpoint se sirve con `--max-model-len 32768`) |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada (el checkpoint se distribuye en BF16; el autor cita replicacion independiente en `llama.cpp`, lo que implica soporte de cuantizacion GGUF, pero sin detallar tipos) |
+| Idiomas soportados | Ingles, chino, ruso, aleman, espanol, frances, japones, arabe |
 | Licencia | Apache-2.0 |
-| Formato de pesos | NPZ (delta BF16, `sgne_cc_dna_delta.npz`); el script genera un checkpoint BF16 en safetensors cargable por Transformers, vLLM y SGLang |
+| Formato de pesos | `safetensors` (BF16, `model.safetensors`) + parche `sgne_cc_dna_delta.npz` (3,13 MiB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-0.8B es un transformer hibrido: combina capas de atencion convencional con capas recurrentes lineales GatedDeltaNet. El parche SGNE-CC no reentrena el modelo; aplica una edicion de pesos sobre 802 columnas de `mlp.down_proj` en 15 capas feed-forward y 1.182 columnas de `linear_attn.out_proj` en 9 capas recurrentes GatedDeltaNet, ademas de una unica fila de compuerta (fila 12 de la capa 16, 1 de 288 filas). Las capas de atencion no se tocan.
+El modelo parte de Qwen3.5-0.8B, un transformer hibrido que combina capas de atencion con capas recurrentes GatedDeltaNet (atencion lineal con compuerta), segun indican las etiquetas y la descripcion del parche. No hay informacion sobre el numero de tokens de entrenamiento original, la composicion del dataset ni el proceso de alineacion (RLHF/DPO) del modelo base; esos datos corresponden a la model card de Qwen y no se reproducen aqui.
 
-La innovacion tecnica es la restriccion geometrica de la edicion: la norma de cada columna editada se conserva dentro del redondeo BF16 (ratio en [0,998375, 1,001620], desviacion maxima 0,1625%), con un angulo de rotacion mediano de 8,8 grados (maximo 93,7 grados). El primer modo singular concentra el 67,58% de la energia de actualizacion en la capa 15, el 73,43% en la capa 19 y el 55,92% en la capa 23. El script `apply_dna_patch.py` verifica checksums SHA-256 del modelo base y del parche y comprueba la geometria en FP64 antes de ensamblar el checkpoint. No se detalla la composicion del dataset de entrenamiento del modelo base ni si hubo RLHF o DPO.
+La innovacion de esta variante es el metodo SGNE-CC, una edicion de pesos aplicada sobre dos matrices feed-forward (capas 15 y 19, indices base cero) y sobre una fila de compuerta recurrente (fila 12 de la capa 16). El parche modifica 2.032.640 escalares (0,270% de los pesos de texto; 1.993.382 bits cambiados en BF16) repartidos en 802 columnas de `mlp.down_proj` en 15 capas feed-forward y 1.182 columnas de `linear_attn.out_proj` en 9 capas GatedDeltaNet; las capas de atencion quedan intactas. El autor verifica tres propiedades: normas de columna preservadas dentro del redondeo BF16 (desviacion maxima del 0,1625%, ratio en [0,998375, 1,001620], angulo de rotacion mediano de 8,8 grados y maximo de 93,7 grados), energia del primer modo singular del 67,58% (capa 15), 73,43% (capa 19) y 55,92% (capa 23), y un unico desplazamiento de fila de compuerta recurrente (1 de 288, coseno 0,986582). El autor no documenta entrenamiento adicional con datos: se trata de una intervencion sobre los pesos del modelo base.
 
 ## Capacidades
 
-- Generacion de texto en ocho idiomas (en, zh, ru, de, es, fr, ja, ar).
-- Razonamiento matematico: el parche eleva MATH-500 del 7,8% del base al 47,0% en la evaluacion completa de 500 problemas.
-- Razonamiento simbolico y logico: BBH-160 pasa del 1,9% del base al 41,3%.
-- Generacion de codigo Python: HumanEval-164 sube del 15,9% al 28,0%.
-- Razonamiento multilingue: MGSM-240 en seis idiomas alcanza el 41,7% frente al 25,8% del base.
-- Generacion multimodal de voz: MultiSpeech-64 en ocho idiomas alcanza el 35,9% frente al 3,1% del base (segun la metrica automatica del autor).
-- Modo de razonamiento con cadenas largas (hasta 32.768 tokens nuevos en la evaluacion).
-- Tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes multi-paso: no disponible en la informacion proporcionada.
+- Generacion de texto y conversacion multi-turno, con el mismo pipeline `text-generation` que el modelo base.
+- Razonamiento matematico: el autor reporta 43,00% en MATH-500 (215/500) bajo decodificacion greedy, frente al 0,00% del base y el 5,00% de MIT-p50c en el mismo regimen.
+- Razonamiento logico y de sentido comun: evaluado en BBH-160 dentro de la matriz de cinco suites.
+- Generacion de codigo: evaluado en HumanEval-164 dentro de la misma matriz.
+- Entrada imagen-texto: la etiqueta `image-text-to-text` indica soporte multimodal de entrada heredado de Qwen3.5.
+- Capacidades multilingues en ocho idiomas (en, zh, ru, de, es, fr, ja, ar).
+- Compatibilidad con endpoints (`endpoints_compatible`) para despliegue como servicio.
+- No se documenta soporte explicito de tool calling, function calling ni modo thinking en la informacion proporcionada.
 
 ## Casos de uso
 
-- Investigacion en edicion de pesos: reproducir el estudio DNA Weight Editing aplicando el parche sobre Qwen3.5-0.8B y comparando la geometria de pesos con MIT-p50c mediante `apply_dna_patch.py --verify-only`, que valida en FP64 sin escribir el checkpoint a disco.
-- Evaluacion de metodos de intervencion en modelos pequenos: usar el parche como linea base controlada para medir como cambia el rendimiento en MATH-500, BBH o HumanEval al modificar un 0,270% de los pesos, aislando el efecto de la preservacion de normas frente al rango de actualizacion.
-- Prototipado de razonamiento matematico en entornos con recursos limitados: el modelo ensamblado de 0,8B en BF16 ocupa aproximadamente 1,75 GB, por lo que puede ejecutarse en una GPU consumer para experimentos de aritmetica y algebra con cadenas de razonamiento de hasta 32.768 tokens.
-- Generacion de codigo Python en pipelines de evaluacion: con HumanEval-164 al 28,0%, sirve para probar harnesses de evaluacion de codigo o como generador de borradores en entornos de integracion continua donde el coste por token es critico.
-- Experimentos multilingues de razonamiento: con soporte para arabe, japones, ruso y chino, permite estudiar transferencia de razonamiento entre idiomas con MGSM-240 como referencia.
-- Docencia y divulgacion sobre interpretabilidad: el parche es lo bastante pequeno (3,13 MiB) para inspeccionarlo manualmente y explicar en clase como una edicion localizada en capas feed-forward y recurrentes afecta al comportamiento del modelo.
-- Verificacion de integridad de checkpoints: el script de aplicacion comprueba SHA-256 y geometria en FP64, util como ejemplo de pipeline reproducible de distribucion de deltas de pesos.
+- Reproduccion y auditoria del experimento: cargar el checkpoint BF16 o aplicar `apply_dna_patch.py --verify-only` para comprobar SHA-256 y la geometria de pesos en FP64 contra Qwen/Qwen3.5-0.8B oficial, sin necesidad de GPU dedicada.
+- Investigacion en programacion del espacio de pesos: usar el parche de 3,13 MiB como caso de estudio reproducible de edicion de pesos con preservacion de normas, comparandolo con MIT-p50c en las cinco suites.
+- Evaluacion de robustez ante decodificacion: comparar el comportamiento del modelo bajo greedy (`T = 0, pp = 0`) y bajo ajustes de model card (`T = 0,6, pp = 1,5`) para medir cuanto del rendimiento depende del muestreo.
+- Prototipado de razonamiento matematico en entornos con recursos limitados: con 873 millones de parametros y contexto de 32.768 tokens, cabe en una sola GPU de consumo para iterar sobre pipelines de MATH-500 o problemas aritmeticos.
+- Servicio de generacion de texto ligero: `vllm serve Nondual-Observer/Qwen3.5-0.8B-SGNE-CC --language-model-only --max-model-len 32768` permite exponer el modelo como endpoint compatible con la API de OpenAI para pruebas de integracion.
+- Experimentos multilingues de bajo coste: cubre ocho idiomas y permite evaluar tecnicas de edicion de pesos sobre un modelo pequeno antes de escalar a variantes mayores.
+- Docencia y formacion: el parche minusculo y el verificador offline en CPU facilitan explicar en clase como se modifica un transformer a nivel de pesos y como se valida el cambio.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en BF16 con limite de 32.768 tokens nuevos. La fila de MATH-500 con media de cuatro ejecuciones en vLLM solo aplica a Base y MIT-p50c; SGNE-CC proviene de una unica ejecucion directa en PyTorch.
+Datos de la model card, PyTorch BF16 con limite de 32.768 tokens nuevos:
 
-| Benchmark / metrica | Qwen3.5-0.8B | MIT-p50c | SGNE-CC |
+| Benchmark y regimen | Qwen3.5-0.8B | MIT-p50c | SGNE-CC (este modelo) |
 |---|---|---|---|
 | Desviacion maxima de norma de columna (BF16) | 0,0000% | +114,2614% | 0,1625% |
-| MATH-500, 100 problemas (temp. 0: estricto / fallback) | 0% / 7% | 4% / 20% (96% truncados) | 44% / 45% (10% truncados, 6,0k tok) |
-| MATH-500, 500 problemas (tarjeta, PyTorch directo) | 7,8% (39/500) | 51,8% (259/500, 21,1k tok) | 47,0% (235/500, 5,3k tok) |
-| MATH-500, 500 problemas (media de 4 ejecuciones vLLM) | 7,9% | 48,1% (22,0k tok) | 47,0% (4,1x mas corto) |
-| MGSM-240 (6 idiomas) | 25,8% (62/240) | 57,1% (137/240) | 41,7% (100/240, p = 9,04e-5) |
-| BBH-160 (logica simbolica) | 1,9% (3/160) | 50,6% (81/160) | 41,3% (66/160, p = 0,058) |
-| HumanEval-164 (Python) | 15,9% (26/164) | 31,1% (51/164) | 28,0% (46/164, p = 0,47) |
-| MultiSpeech-64 (8 idiomas, temp. 0) | 3,1% (2/64) | 26,6% (17/64) | 35,9% (23/64, p = 0,21) |
+| MATH-500 (500) — greedy (`T = 0, pp = 0`) | 0,00% (100% cutoffs) | 5,00% (25/500, 95,0% cutoffs) | 43,00% (215/500, 18,4% cutoffs) |
+| MATH-500 — ajustes de model card (`T = 0,6, pp = 1,5`) | No disponible en el extracto | 51,80% (259/500) | No disponible en el extracto |
+| BBH-160 — greedy | No disponible en el extracto | Inferior a SGNE-CC | Mejor de los tres (segun el autor) |
+| HumanEval-164 — greedy | No disponible en el extracto | Inferior a SGNE-CC | Mejor de los tres (segun el autor) |
 
-Los p-valores son nominales y una diferencia no significativa no demuestra equivalencia entre modelos. Solo hay una ejecucion directa por tarea y los registros no documentan la asignacion de GPU por fichero.
+El autor afirma que SGNE-CC supera a MIT-p50c en las 5 de 5 suites bajo decodificacion greedy, y que MIT-p50c cae de 259/500 (51,80%) a 25/500 (5,00%) en MATH-500 al eliminar muestreo y penalizacion de presencia. Las cifras completas de BBH-160, HumanEval-164 y las dos suites restantes no aparecen en el extracto proporcionado; no se inventan aqui.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: aproximadamente 1,75 GB para el checkpoint ensamblado (tamano del modelo base Qwen3.5-0.8B), mas overhead de activaciones y cache KV segun la longitud de contexto.
-- Cabe en cualquier GPU consumer con 4 GB o mas de VRAM (RTX 3050, RTX 4060, RTX 4090) y en GPUs de datacenter (A100, H100) con margen amplio.
-- El parche en si ocupa 3,13 MiB y su aplicacion requiere CPU y disco; la verificacion FP64 puede ejecutarse sin GPU.
-- Opciones de despliegue: Transformers, vLLM y SGLang segun la model card; llama.cpp y Ollama no se mencionan en la informacion disponible.
-- Decodificacion recomendada por el autor: temperatura 0,6, top_p 0,95, top_k 20 y penalizacion de presencia 1,5; tambien funciona en decodificacion voraz (temperatura 0 sin penalizacion de presencia).
+- VRAM estimada: en BF16, unos 1,75 GB solo para pesos (873,4 M de parametros x 2 bytes), mas overhead de activaciones y cache KV para 32.768 tokens; en la practica, entre 3 y 6 GB segun lote y longitud de contexto.
+- GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060 Ti, RTX 4060 Ti, RTX 4070, RTX 4090); en centro de datos, A100 o H100 sobran para este tamano y permiten lotes grandes.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 8 GB o mas; tambien es viable en CPU para el verificador offline (`apply_dna_patch.py --verify-only`).
+- Opciones de despliegue: Transformers (`AutoModelForCausalLM`), vLLM (`vllm serve ... --language-model-only --max-model-len 32768`), SGLang, y replicacion independiente en `llama.cpp` documentada por Dave Uhlemann (DOI 10.5281/zenodo.24420522).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | MATH-500 (500) | HumanEval-164 | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| Qwen3.5-0.8B (base) | 0,8B | no disponible | 7,8% | 15,9% | Apache-2.0 | Hugging Face |
-| Qwen3.5-0.8B + MIT-p50c | 0,8B | no disponible | 51,8% | 31,1% | Apache-2.0 (modelo base) | Parche de pesos |
-| Qwen3.5-0.8B-SGNE-CC | 0,8B | no disponible | 47,0% | 28,0% | Apache-2.0 | Hugging Face (parche) |
+| Modelo | Parametros | Contexto | MATH-500 greedy | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.5-0.8B-SGNE-CC | 873,4 M | 32.768 | 43,00% | Apache-2.0 | Hugging Face + parche NPZ |
+| Qwen/Qwen3.5-0.8B (base) | 873,4 M (aprox.) | 32.768 (usado en la evaluacion) | 0,00% | Apache-2.0 (segun el modelo base) | Hugging Face |
+| MIT-p50c (edicion de pesos sobre el mismo base) | 873,4 M (aprox.) | 32.768 (usado en la evaluacion) | 5,00% | No disponible | Referenciado en el estudio del autor |
+| DeepSeek-R1-Distill-Qwen-1.5B-SGNE-CC-v2 | 1,5 B (aprox.) | No disponible | No disponible | No disponible | Hugging Face (follow-up del autor) |
 
-No se dispone de datos de otros modelos de 0,8B comparables en la informacion proporcionada.
+La comparativa se limita a variantes del mismo modelo base y al follow-up del autor; no se dispone de datos de benchmarks de alternativas de otros fabricantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Alcance causal no aislado: la preservacion de normas se mide directamente sobre los pesos, pero separar su efecto causal del rango de actualizacion, la seleccion de capas y la fila de compuerta de la capa 16 requiere experimentos adicionales.
-- Menor rendimiento que MIT-p50c en algunos regimenes: con los ajustes de la model card, SGNE-CC obtiene resultados inferiores a MIT-p50c en MGSM-240 y en la ejecucion directa de MATH-500 completa, aunque con salidas mucho mas cortas (5,3k frente a 21,1k tokens) y menos truncamientos.
-- El filtro automatico de MultiSpeech-64 comprueba umbrales de finalizacion y repeticion, no exactitud factual; SGNE-CC conserva fallos de repeticion en aleman.
-- Una unica ejecucion directa por tarea: los resultados no incluyen intervalos de confianza robustos y los p-valores son nominales.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero inherente a un modelo de 0,8B.
-- Idiomas: aunque la model card declara ocho idiomas, el rendimiento fuera de ingles y chino no esta caracterizado mas alla de MGSM-240 y MultiSpeech-64.
-- Licencia Apache-2.0 permite uso comercial del codigo y del parche, pero el modelo base conserva su propia licencia; el texto de la model card queda truncado en el apartado de licencia.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validacion independiente de terceros.
+- El modelo es una edicion de pesos sobre un base de 0,8 B; su rendimiento absoluto en tareas abiertas sera limitado en comparacion con modelos de mayor tamano, aunque las cifras de MATH-500 greedy sean llamativas.
+- Los resultados de benchmarks proceden del propio autor y de su marco teorico (DOT); no se ha localizado una evaluacion independiente de las cifras de MATH-500, BBH-160 o HumanEval-164 en la informacion disponible.
+- El checkpoint esta pensado para decodificacion greedy (`T = 0, pp = 0`); el autor advierte que parte de las mejoras de metodos previos desaparecen al cambiar el regimen de muestreo, por lo que el comportamiento en produccion con temperatura puede diferir.
+- Riesgo de alucinacion y sesgos: no documentados especificamente para esta variante; hereda los del modelo base Qwen3.5-0.8B, que no se detallan en la informacion proporcionada.
+- Limitaciones de idioma: aunque la model card declara ocho idiomas, no se aportan evaluaciones por idioma; el espanol figura en la lista pero sin metricas.
+- Licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantias sobre el comportamiento del parche en dominios sensibles; conviene auditar el parche con `apply_dna_patch.py --verify-only` antes de desplegarlo.
+- El modelo tiene 195 descargas y 0 likes en el momento de la consulta, lo que indica una validacion comunitaria muy limitada.
+- La model card mezcla afirmaciones tecnicas con un marco teorico propio (Distinction Observable Theory); conviene tratar las conclusiones del autor como hipotesis a verificar de forma independiente.
 
 ## Enlaces
 
-- Hugging Face del parche: https://huggingface.co/Nondual-Observer/Qwen3.5-0.8B-SGNE-CC
+- Hugging Face: https://huggingface.co/Nondual-Observer/Qwen3.5-0.8B-SGNE-CC
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Repositorio del estudio DNA Weight Editing: https://github.com/Nondual-Observer/dna-weight-editing
-- Deposito Zenodo: https://doi.org/10.5281/zenodo.24235218
-- Blog de referencia sobre programacion en espacio de pesos (MIT CSAIL): https://rikiyat.github.io/blog/weight-space-programming/
-- README en ruso: https://huggingface.co/Nondual-Observer/Qwen3.5-0.8B-SGNE-CC/blob/main/README_RU.md
+- Repositorio del estudio (paper, graficos, verificador, trazas): https://github.com/Nondual-Observer/dna-weight-editing
+- Deposito Zenodo del estudio: https://doi.org/10.5281/zenodo.24235218
+- Follow-up SGNE-CC v2 (DeepSeek-R1-Distill-Qwen-1.5B): https://huggingface.co/Nondual-Observer/DeepSeek-R1-Distill-Qwen-1.5B-SGNE-CC-v2
+- Repositorio del follow-up: https://github.com/Nondual-Observer/deepseek-r1-1.5b-sgne-cc-v2
+- DOI del follow-up: https://doi.org/10.5281/zenodo.24398165
+- Replicacion independiente en llama.cpp (Dave Uhlemann): https://doi.org/10.5281/zenodo.24420522
+- Marco teorico DOT: https://github.com/Nondual-Observer/DOTheory
+- DOI del marco DOT: https://doi.org/10.5281/zenodo.23481643
+- Referencia a MIT-p50c (blog de weight-space programming): https://rikiyat.github.io/blog/weight-space-programming/
+- ORCID del autor: https://orcid.org/0009-0003-1670-8388

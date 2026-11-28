@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "OTAR3088/CeLLaTe-ner-3class-PubMedBERT-with-vague-baseline",
+  "renamed_at": "2026-11-28T04:35:15.148Z",
   "benchmarks": [],
   "sources": []
 }

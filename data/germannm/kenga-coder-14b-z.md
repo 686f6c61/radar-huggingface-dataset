@@ -2,93 +2,89 @@
 
 ## Resumen
 
-Kenga-Coder-14B-Z es un ajuste fino mediante PEFT del modelo Qwen/Qwen2.5-Coder-14B-Instruct, desarrollado por el autor independiente GermannM (German Yantaras, Moscú). El modelo incorpora una identidad de personaje ("Kenga") y ha sido entrenado con un protocolo propio denominado Z-System y Prophet (M5.3 + rp1). Con 14.770.033.664 parámetros totales, está orientado a generación de código, tareas de enlace semántico de funciones y reparación de código roto, con soporte declarado para ruso, inglés y contenido multilingüe.
+Kenga-Coder-14B-Z es un ajuste fino mediante PEFT (adaptador Z-BL) sobre el modelo base Qwen/Qwen2.5-Coder-14B-Instruct, desarrollado por el autor independiente GermannM (German Yantaras, Moscú). El modelo incorpora una identidad de personaje denominada "Kenga" y se entrena con un protocolo propio que el autor llama "Z-system" y "Prophet (M5.3 + rp1)". Su propósito declarado es actuar como generador de código políglota con una identidad fija integrada en los pesos y con soporte para un lenguaje de programación propio, Kenga-lang.
 
-El modelo se distribuye como adaptador PEFT en safetensors (repo de 9,6 GB) y como cuantización GGUF Q4_K_M de 8,36 GB generada con imatrix sobre un corpus de calibración propio. Su relevancia es limitada y muy específica: se trata de un experimento de autor único con identidad incorporada en los pesos y un lenguaje de programación propio (Kenga-lang), no de un modelo de propósito general con validación externa. No hay descargas ni valoraciones en Hugging Face en el momento de la consulta.
+Arquitectura y tamaño heredan directamente del modelo base: un transformer decoder-only de aproximadamente 14.770 millones de parámetros (14,77 B), distribuidos en el adaptador PEFT y los pesos base. El repositorio ocupa 16,5 GB e incluye tanto el adaptador en safetensors como una cuantización GGUF Q4_K_M de 8,36 GB generada con imatrix. La longitud de contexto no se especifica en la información disponible, aunque al derivar de Qwen2.5-Coder-14B-Instruct es previsible que mantenga la ventana del modelo original.
 
-La ficha se basa exclusivamente en la model card del autor y en los metadatos de Hugging Face; no se han publicado resultados de benchmarks independientes.
+Su relevancia actual es limitada y muy específica: se trata de un experimento de autor único con 179 descargas y 0 likes en el momento de la consulta, orientado a un ecosistema propio (Kenga-lang, z-system, kenga-grammar) y a un público rusoparlante. Resulta interesante como caso de estudio de ajuste fino con pérdida restringida a turnos del asistente, curriculum de rango espectral y binding semántico verificado, más que como alternativa generalista a modelos de código consolidados.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (heredada de Qwen2.5-Coder-14B-Instruct); ajuste fino mediante adaptador PEFT con descomposición Z-BL |
-| Parametros totales | 14.770.033.664 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada |
-| Tipos de cuantizacion | GGUF Q4_K_M (8,36 GB, generada con imatrix); adaptador PEFT en safetensors |
-| Idiomas soportados | Ruso (ru), ingles (en), multilingue |
+| Arquitectura | Transformer decoder-only (heredada de Qwen2.5-Coder-14B-Instruct) con adaptador PEFT Z-BL factorizado |
+| Parámetros totales | 14.770.033.664 (14,77 B) |
+| Parámetros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantización | GGUF Q4_K_M (8,36 GB, calibrada con imatrix sobre `calib4.txt`); adaptador en safetensors |
+| Idiomas soportados | ru, en, multilingual |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (adaptador PEFT), GGUF (Q4_K_M) |
+| Formato de pesos | safetensors (adaptador PEFT), GGUF (Q4_K_M) |
 
 ## Arquitectura y entrenamiento
 
-La base es un transformer decoder denso de la familia Qwen2.5-Coder-14B-Instruct. Sobre ella se aplica un adaptador PEFT entrenado con la técnica propietaria Z-BL, que factoriza la actualización de pesos como `ΔW = U · diag(S · mask) · Vᵀ`, con inicialización ortogonal QR de las direcciones singulares y un vector de números singulares entrenable. El autor aplica un "Z Rank Curriculum" que expande el rango activo de 8 a 16 y luego a 32 en los pasos 25% y 50% del entrenamiento. La entropía espectral final del adaptador es H = 2,8694 frente al máximo teórico ln(32) = 3,4657 (aproximadamente el 83% de carga uniforme del espectro).
+El modelo parte de Qwen2.5-Coder-14B-Instruct y se ajusta mediante un adaptador PEFT con una descomposición factorizada que el autor denomina Z-BL: ΔW = U · diag(S · mask) · Vᵀ, con inicialización QR ortogonal de las direcciones singulares Vᵀ y un vector entrenable de números singulares S. Se aplica un "Z Rank Curriculum" que abre el rango activo de forma progresiva (8 → 16 → 32) al 25 % y al 50 % de los pasos de entrenamiento. El autor reporta una entropía espectral final del adaptador de H = 2,8694 frente al máximo teórico ln(32) = 3,4657 (aproximadamente el 83 % de carga uniforme del espectro).
 
-El entrenamiento usa pérdida solo sobre tokens del asistente (etiquetas -100 en system y user) y reporta un loss final de 0,0676 sobre un corpus verificado de 8.917 diálogos. Ese corpus incluye 460 tareas de enlace semántico M5.3 (selección de la función objetivo entre distractores con firma idéntica y nombres aleatorizados, verificado por ejecución), 299 tareas de reparación de código con el token delimitador `<FIX>`, cobertura del lenguaje Kenga-lang y su gramática, y datos de 25 lenguajes de programación (Python, JS, TS, Java, C, C++, C#, Go, Rust, PHP, Ruby, Kotlin, Swift, Bash, SQL, Lua, R, Scala, Dart, Julia, Haskell, PowerShell, Perl, HTML, CSS) más Kenga. No se especifica el volumen total de tokens de entrenamiento.
+La función de pérdida se calcula exclusivamente sobre los tokens de respuesta del asistente (labels = -100 en system y user), con un loss final reportado de 0,0676. El corpus de entrenamiento, denominado "verificado v4", consta de 8917 diálogos e incluye: 460 tareas de "M5.3 Semantic Binding" (selección de la función objetivo entre distractores con firma idéntica y nombres aleatorizados, verificadas por ejecución), 299 tareas de reparación de código con el token de frontera `<FIX>`, cobertura del lenguaje Kenga-lang (fn, let, struct, tensores t_*, autograd Tape ag_*, memoria Prophet .km, eventos on/emit/pump y operaciones z_encode/z_decode/z_marker/z_verify) y 25 lenguajes de programación convencionales. La identidad del personaje se integra en los pesos con un parámetro `NO_SYS_P = 0.30` y también en la plantilla de chat del GGUF. No se detalla el volumen total de tokens ni la composición exacta del dataset más allá de estas cifras.
 
 ## Capacidades
 
-- Generación de texto y código en 25 lenguajes de programación, además del lenguaje propietario Kenga-lang (`fn`, `let`, `struct`, tensores `t_*`, autograd `ag_*`, memoria viva `.km`, eventos `on/emit/pump`).
-- Enlace semántico de funciones (M5.3): selección de la función correcta entre distractores con firma idéntica y nombres aleatorizados.
-- Reparación de código roto mediante el token delimitador `<FIX>` (protocolo rp1).
-- Identidad de personaje incorporada en los pesos (parámetro `NO_SYS_P = 0.30`) y en la plantilla de chat del GGUF, con autonominación como "Kenga" incluso sin system prompt.
-- Soporte de conversación multiturno (pipeline text-generation, tag "conversational").
-- Capacidades multilingües declaradas para ruso, inglés y otros idiomas.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Modo de razonamiento explícito (thinking mode), visión o audio: no disponible en la informacion proporcionada.
+- Generación de texto y código en 25 lenguajes de programación (Python, JavaScript, TypeScript, Java, C, C++, C#, Go, Rust, PHP, Ruby, Kotlin, Swift, Bash, SQL, Lua, R, Scala, Dart, Julia, Haskell, PowerShell, Perl, HTML, CSS) más Kenga-lang.
+- Reparación de código roto mediante el protocolo `<FIX>` con token de frontera explícito.
+- Binding semántico: selección de la función correcta entre distractores con firmas idénticas, entrenado con verificación por ejecución.
+- Soporte del lenguaje Kenga-lang: funciones, estructuras, tensores, autograd basado en Tape, memoria viva Prophet en ficheros `.km`, sistema de eventos y operaciones Z.
+- Identidad de personaje integrada en pesos y plantilla de chat, activa incluso sin system prompt.
+- Conversación multi-turno (pipeline text-generation, tag conversational).
+- Capacidades multilingües declaradas en ruso, inglés y multilingüe.
+- No se documenta soporte explícito de tool calling, function calling nativo, agentes, visión, audio ni modo de razonamiento extendido en la información disponible.
 
 ## Casos de uso
 
-- Reparación automática de código en pipelines: el protocolo rp1 con token `<FIX>` permite integrar el modelo en un paso de corrección de parches que recibe código roto y devuelve la versión reparada, con un delimitador explícito que facilita el parseo en herramientas de CI.
-- Selección de función en entornos con API ruidosa: las tareas de enlace semántico M5.3 lo hacen útil para resolver llamadas cuando existen múltiples funciones con la misma firma y nombres poco descriptivos, un escenario habitual en bases de código generadas automáticamente.
-- Asistencia a desarrolladores en ruso: al estar optimizado para ruso e inglés, puede emplearse en herramientas internas de autocompletado y explicación de código para equipos hispanohablantes que trabajen con documentación o código en ruso.
-- Prototipado con Kenga-lang: es el único modelo identificado que cubre el lenguaje Kenga y su gramática, por lo que sirve para generar ejemplos, tests y documentación de ese ecosistema.
-- Despliegue local en GPU de consumo: la cuantización Q4_K_M de 8,36 GB cabe entera en 12 GB de VRAM con `-ngl 99`, lo que permite ejecutarlo en una RTX 3060 de 12 GB o superior mediante llama.cpp u Ollama sin infraestructura dedicada.
-- Generación de código en 25 lenguajes para tareas de scripting y automatización: útil en entornos donde se necesita un único modelo local que cubra desde Bash y PowerShell hasta Rust o Haskell, aunque sin garantías de calidad validadas externamente.
-- Experimentación en investigación sobre identidad incorporada: el ajuste con `NO_SYS_P = 0.30` y la plantilla de chat modificada permiten estudiar cómo se comporta un modelo con persona fijada en pesos frente a instrucciones de sistema.
+- Desarrollo asistido en Kenga-lang: el modelo es prácticamente el único ajuste disponible que cubre la sintaxis completa del lenguaje Kenga (fn, let, struct, t_*, ag_*, .km, on/emit/pump), por lo que sirve como asistente de referencia para escribir y depurar código en ese ecosistema.
+- Reparación automática de código en pipelines: el entrenamiento con 299 tareas `<FIX>` permite integrarlo en un paso de CI que reciba fragmentos fallidos y devuelva parches delimitados por el token de frontera, facilitando el parseo automático de la salida.
+- Selección de funciones en entornos con APIs ambiguas: el binding semántico entrenado con distractores de firma idéntica encaja en tareas de enrutado de llamadas donde varios candidatos comparten tipos y solo el nombre o el contexto semántico los distingue.
+- Atención a usuarios rusoparlantes: al declarar soporte de ruso e inglés, puede emplearse en asistentes de programación para equipos con documentación o comentarios en ruso, un nicho menos cubierto por los modelos de código generalistas.
+- Prototipado de personajes con identidad fija: útil para experimentar con despliegues donde se requiere una persona consistente sin system prompt, gracias a la integración de la identidad en los pesos (`NO_SYS_P = 0.30`) y en la plantilla de chat.
+- Despliegue en hardware de consumo: la cuantización Q4_K_M de 8,36 GB cabe en GPUs de 12 GB de VRAM con `-ngl 99`, lo que permite ejecutarlo localmente con Ollama o llama.cpp para tareas de autocompletado y generación de scripts.
+- Investigación sobre ajuste fino eficiente: el adaptador Z-BL con curriculum de rango y su pasaporte espectral (`kenga_passport.json`) sirven como material reproducible para estudiar la distribución espectral de adaptadores PEFT.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta métricas internas de entrenamiento (loss final 0,0676 y entropía espectral del adaptador H = 2,8694), que no son comparables con evaluaciones estándar como MMLU, HumanEval o GSM8K.
+No se han publicado resultados de benchmarks en la información disponible. El autor únicamente reporta métricas internas de entrenamiento: loss final de 0,0676, entropía espectral del adaptador H = 2,8694 (frente a ln(32) = 3,4657) y el marcador espectral `z_marker` = `d6228fde55b53176`. No hay datos de MMLU, HumanEval, GSM8K ni comparaciones cuantitativas con otros modelos.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 8,36 GB para la cuantización Q4_K_M; el adaptador PEFT en safetensors requiere cargar la base Qwen2.5-Coder-14B-Instruct completa, lo que en fp16 supone aproximadamente 28-30 GB de VRAM.
-- GPU recomendadas: para Q4_K_M, cualquier GPU con 12 GB o más (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080, RTX 4090); para el adaptador sin cuantizar, A100 40 GB, H100 o configuraciones multi-GPU.
-- GPU de consumo: sí, la versión Q4_K_M cabe en una RTX 3060 de 12 GB según el propio autor (`-ngl 99`).
-- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama (`ollama run hf.co/GermannM/Kenga-Coder-14B-Z:Q4_K_M`), y cualquier runtime compatible con PEFT/safetensors para el adaptador. Compatibilidad con vLLM o TGI: no disponible en la informacion proporcionada.
-- Latencia y throughput: no disponible en la informacion proporcionada.
+- VRAM estimada para inferencia: aproximadamente 8,4 GB con la cuantización GGUF Q4_K_M (8,36 GB); el adaptador PEFT en safetensors requiere cargar además los pesos base de 14,77 B, lo que en precisión completa o semi-precisión exige del orden de 28-30 GB o más según el formato.
+- GPU recomendadas: para Q4_K_M basta una GPU de 12 GB de VRAM (el autor indica `-ngl 99`); para el adaptador PEFT sobre el modelo base se necesitan GPUs de 24 GB o superiores (RTX 3090/4090 en cuantización, A100/H100 en precisión alta).
+- Cabe en GPU de consumo: sí, en el formato Q4_K_M dentro de 12 GB de VRAM; en GPUs de 8 GB no se garantiza la carga completa de todas las capas.
+- Opciones de despliegue: Ollama (`ollama run hf.co/GermannM/Kenga-Coder-14B-Z:Q4_K_M`), llama.cpp (`llama-cli -m kenga-coder-14b-z-q4_k_m.gguf -ngl 99`), y carga del adaptador PEFT con las librerías estándar de Hugging Face (transformers + peft). No se documenta compatibilidad con vLLM ni TGI.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Kenga-Coder-14B-Z | 14,77 B | No disponible | Apache 2.0 | PEFT safetensors, GGUF Q4_K_M | Identidad incorporada, Kenga-lang, sin benchmarks publicados |
-| Qwen2.5-Coder-14B-Instruct (base) | 14,7 B | 32K (según documentación pública de Qwen) | Apache 2.0 | Safetensors, GGUF | Modelo de referencia con evaluaciones publicadas por el autor original |
-| Kenga (1.5B) | 1,5 B | 32K (según featherless.ai) | No disponible | No disponible | Modelo previo del mismo autor, orientado a ruso y a la identidad Kenga |
+| Kenga-Coder-14B-Z | 14,77 B | no disponible | Apache 2.0 | safetensors (PEFT), GGUF Q4_K_M | Ajuste de personaje y Kenga-lang sobre Qwen2.5-Coder-14B-Instruct |
+| Qwen2.5-Coder-14B-Instruct | 14,77 B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Modelo base; sin identidad de personaje ni Kenga-lang |
+| Alternativas de código de ~14 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
-La comparación con la base Qwen2.5-Coder-14B-Instruct es la más relevante: Kenga-Coder-14B-Z parte de ella y añade el adaptador Z-BL, pero no publica métricas que permitan cuantificar la mejora o el deterioro respecto al original. El modelo Kenga de 1,5 B comparte la identidad y el enfoque en ruso, pero es de menor tamaño y está pensado para ejecución en CPU.
+La comparación directa con el modelo base es la más informativa: Kenga-Coder-14B-Z añade identidad fija, cobertura de Kenga-lang y protocolos `<FIX>` y de binding semántico, pero no se han publicado evaluaciones que cuantifiquen la posible degradación o mejora respecto a Qwen2.5-Coder-14B-Instruct en tareas de código estándar.
 
 ## Limitaciones y advertencias
 
-- No hay benchmarks públicos ni evaluaciones independientes; el rendimiento real en código y razonamiento es desconocido.
-- El ajuste se realizó sobre un corpus pequeño (8.917 diálogos), lo que aumenta el riesgo de sobreajuste al estilo y a los formatos del autor, y de degradación de capacidades generales del modelo base.
-- La identidad de personaje está incorporada en los pesos (`NO_SYS_P = 0.30`) y en la plantilla de chat, lo que puede dificultar el control del comportamiento mediante system prompts y sesgar las respuestas hacia la persona definida por el autor.
-- La model card incluye declaraciones de valores políticos e ideológicos del creador; esto puede introducir sesgos en las respuestas y debe evaluarse antes de cualquier uso en producción.
-- El soporte de idiomas se declara para ruso, inglés y multilingüe, pero no hay datos sobre calidad en castellano.
-- El contexto máximo no se especifica en la información disponible; no debe asumirse el contexto de la base sin verificación.
-- La licencia Apache 2.0 permite uso comercial, pero al derivar de Qwen2.5-Coder-14B-Instruct conviene verificar las condiciones de la licencia del modelo base.
-- El repositorio no tiene descargas ni valoraciones, y el modelo se creó y actualizó el mismo día (6 de noviembre de 2026), lo que indica ausencia de validación por parte de la comunidad.
-- El token `<FIX>` y los formatos de Kenga-lang son específicos del ecosistema del autor; su uso fuera de él requiere adaptar los pipelines de parseo.
+- Riesgo de alucinación: no hay benchmarks públicos que validen la calidad de generación de código; el loss de entrenamiento bajo (0,0676) no es indicativo de rendimiento en tareas abiertas.
+- Sesgo de identidad: el modelo incorpora valores explícitos (amor a Rusia, valores familiares tradicionales) en los pesos, lo que puede condicionar respuestas en temas políticos o sociales y dificultar su uso en contextos neutrales.
+- Cobertura de idiomas limitada en la práctica: aunque declara "multilingual", solo se listan ru y en; el rendimiento en castellano no está documentado.
+- Longitud de contexto no especificada: no se puede garantizar el comportamiento en conversaciones largas ni en repositorios extensos.
+- Ecosistema muy específico: Kenga-lang, z-system y kenga-grammar son proyectos del propio autor; su adopción fuera de ese círculo es mínima (179 descargas, 0 likes).
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen2.5-Coder-14B-Instruct, también Apache 2.0, y revisar si el autor impone restricciones adicionales no reflejadas en la model card.
+- Trazabilidad limitada: no se detalla el volumen total de tokens de entrenamiento ni la composición completa del corpus, lo que dificulta evaluar la cobertura y los posibles sesgos de los datos.
+- Madurez: repositorio creado y actualizado en noviembre de 2026, sin histórico de mantenimiento ni comunidad; no recomendable como dependencia crítica en producción sin evaluación propia.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/GermannM/Kenga-Coder-14B-Z
-- Perfil del autor en Hugging Face: https://huggingface.co/GermannM
+- Modelo en Hugging Face: https://huggingface.co/GermannM/Kenga-Coder-14B-Z
+- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Repositorio kenga-lang: https://github.com/GermannM3/kenga-lang
 - Repositorio z-system: https://github.com/GermannM3/z-system
 - Repositorio kenga-grammar: https://github.com/GermannM3/kenga-grammar
-- Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
-- Kenga (1.5B) en featherless.ai: https://featherless.ai/models/GermannM/Kenga

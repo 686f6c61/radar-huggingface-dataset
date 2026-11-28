@@ -84,32 +84,79 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
-  "sources": [
+  "benchmarks": [
     {
-      "title": "Chase DeMoor - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Chase_DeMoor",
-      "snippet": "Chase Douglas DeMoor (born June 12, 1996) is an American professional boxer, actor, and former college football player. He …"
+      "task": "Text Generation",
+      "dataset": "GSM8K, HELM Lite v1.9.0 request replay (1,000 test instances)",
+      "metric": "final-number exact match (HELM)",
+      "value": 87
     },
     {
-      "title": "Chase DeMoor - YTBoxRec",
-      "url": "https://ytboxrec.com/fighters/chase-demoor/",
-      "snippet": "Jun 6, 2026 · Boxing Profile Birth Name Chase DeMoor Division Heavyweight Status Active Rounds 68 KOs 50% Career 2022-now …"
+      "task": "Text Generation",
+      "dataset": "MMLU, HELM MMLU v1.9.0 request replay (14,042 test questions, 57 subjects)",
+      "metric": "exact match, mean over 57 subjects (HELM)",
+      "value": 73.4
     },
     {
-      "title": "Chase Demoor - BoxRec",
-      "url": "https://boxrec.com/en/box-pro/1121210",
-      "snippet": "A boxer's reach is the distance between the fingertips of the outstretched arms. Pro debut for Knight. Demoor DQ'd for hitting Knight …"
+      "task": "Text Generation",
+      "dataset": "MATH Level 5 (1,324 test problems)",
+      "metric": "math-verify accuracy",
+      "value": 48.56
     },
     {
-      "title": "Chase DeMoor Wiki, Age, Height, Net Worth, Girlfriend, Weight",
-      "url": "https://www.celebsta.com/chase-demoor/",
-      "snippet": "Sep 26, 2025 · Standing at 6’5″ with an 83-inch reach, Chase fights with an orthodox stance. He has become a prominent figure in …"
+      "task": "Text Generation",
+      "dataset": "MMLU-Pro (12,032 test questions)",
+      "metric": "exact match (custom-extract)",
+      "value": 54.88
     },
     {
-      "title": "Chase DeMoor Age, Height, Career, Family, Net Worth",
-      "url": "https://www.wikicelebs.com/chase-demoor/",
-      "snippet": "Aug 8, 2026 · Chase DeMoor is known for his impressive physical presence. Standing tall at 6 feet 5 inches (195–196 cm), Chase …"
+      "task": "Text Generation",
+      "dataset": "GSM8K (1,319 test problems), lm-eval 5-shot",
+      "metric": "exact match, flexible-extract",
+      "value": 88.32
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K (1,319 test problems), lm-eval 0-shot CoT",
+      "metric": "exact match, flexible-extract",
+      "value": 79.45
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH-500",
+      "metric": "math-verify accuracy",
+      "value": 73.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 2024 + AIME 2025 (60 problems; exploratory)",
+      "metric": "avg@8",
+      "value": 8.125
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval+ (EvalPlus v0.1.10)",
+      "metric": "pass@1 (base + plus tests)",
+      "value": 78.05
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MBPP+ (EvalPlus v0.2.0)",
+      "metric": "pass@1 (base + plus tests)",
+      "value": 70.63
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (541 prompts)",
+      "metric": "prompt-level strict accuracy",
+      "value": 73.01
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge (1,172 test questions)",
+      "metric": "length-normalised accuracy",
+      "value": 65.87
     }
-  ]
+  ],
+  "sources": []
 }

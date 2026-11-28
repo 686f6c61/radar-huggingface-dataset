@@ -2,86 +2,100 @@
 
 ## Resumen
 
-khipu-r3 es un ajuste fino (fine-tuning) publicado por SZLHOLDINGS sobre el modelo base Qwen/Qwen3.5-0.8B, un transformer denso de la familia Qwen 3.5 con aproximadamente 752 millones de parámetros totales según los pesos en safetensors. El repositorio se distribuye con la librería PEFT, lo que indica que se trata de un artefacto de adaptación (adaptadores LoRA u otra técnica PEFT) más que de un modelo entrenado desde cero. La licencia declarada es Apache 2.0 y la arquitectura registrada en los tags es `qwen3_5_text`, es decir, la variante exclusivamente de texto de Qwen 3.5.
+khipu-r3 es un adaptador LoRA (PEFT) publicado por SZLHOLDINGS sobre el modelo base Qwen/Qwen3.5-0.8B, orientado a generacion de texto y conversacion. El repositorio combina dos artefactos: el adaptador LoRA propiamente dicho, que es el artefacto de referencia para todas las cifras de la model card, y un checkpoint completo fusionado en el directorio raiz (`model.safetensors` + `config.json`), generado mediante una fusion en CPU documentada en `merge_receipt.json`. El modelo suma 752.393.024 parametros segun los pesos en safetensors y ocupa 6,1 GB en el repositorio.
 
-El modelo se enmarca en lo que el autor denomina "governed-AI estate": una colección de modelos, datasets y Spaces con trazabilidad de origen y resultados verificables mediante ficheros de recibo (receipts). La model card es explícitamente conservadora: no afirma ningún resultado de benchmark que no haya sido medido en una auditoría fechada, y etiqueta como UNKNOWN todo aquello que no está respaldado por un recibo. Esa política de honestidad documental es el rasgo diferencial del artefacto, más que sus capacidades intrínsecas.
+El modelo se presenta dentro de la familia denominada Amawta (linea C) y lleva el nombre quechua "Amawta r3" como identificador de visualizacion, propuesto en un registro de nombres externo (Chakana) y sin efecto sobre el identificador del repositorio. La model card es inusualmente explicita sobre el estado de la evidencia: declara estandares de benchmark como NOT RUN, marca el gate held-out como FAIL y senala huecos en la firma de recibos y en la vinculacion con el codigo fuente en GitHub. El propio autor indica que el modelo permanece "gated and unpromoted" mientras no se resuelva su condicion de abstencion restringida.
 
-Por su tamaño (menos de mil millones de parámetros) y su naturaleza de adaptador sobre una base pequeña, khipu-r3 es relevante para escenarios de despliegue en hardware modesto, prototipado rápido y experimentación con técnicas PEFT. No obstante, la información pública disponible es muy escasa: no se documentan datos de entrenamiento, idiomas soportados, benchmarks ni detalles del proceso de ajuste, por lo que cualquier evaluación de calidad debe realizarse por cuenta del usuario.
+La relevancia de esta ficha es fundamentalmente metodologica: se trata de un ajuste de bajo rango sobre un modelo pequeno (sub-1000M de parametros) con licencia Apache 2.0, util para experimentacion local, pero con un nivel de evidencia empirica muy limitado. Cualquier evaluacion de produccion debe partir de esa premisa y no de las cifras de la model card, que en su mayoria aparecen como no ejecutadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (tag `qwen3_5_text`, variante de texto de Qwen 3.5) |
-| Parametros totales | 752.393.024 (según safetensors) |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible (repo en safetensors; no se publican versiones GGUF) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (repositorio PEFT) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen/Qwen3.5-0.8B); adaptador LoRA via PEFT |
+| Parametros totales | 752.393.024 (pesos safetensors del repositorio) |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (el repositorio publica adaptador LoRA y checkpoint fusionado en precision completa; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | no disponible (la model card no declara lista de idiomas; el nombre del modelo es quechua pero no se documenta soporte de ese idioma) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (adaptador LoRA y checkpoint fusionado); config.json para carga con transformers |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen 3.5 en su variante de texto (`qwen3_5_text`), un transformer denso con atención estándar. El artefacto publicado es un ajuste PEFT sobre Qwen/Qwen3.5-0.8B, con 752 millones de parámetros contabilizados en los ficheros safetensors y un tamaño de repositorio de 6,1 GB. El uso de la librería PEFT sugiere adaptadores de bajo rango, aunque la model card no especifica la configuración exacta (rango, alpha, módulos objetivo) ni si se fusionaron los pesos con la base.
+La arquitectura subyacente es la del modelo base Qwen/Qwen3.5-0.8B, un transformer decoder-only de la familia Qwen 3.5, sobre el que se aplica un ajuste de bajo rango (LoRA) empaquetado con la libreria PEFT. El repositorio incluye, ademas del adaptador, un checkpoint completo resultante de fusionar el adaptador en el modelo base mediante un proceso de merge en CPU cuyo recibo (`merge_receipt.json`) esta presente en el repositorio. La model card advierte que el adaptador es el artefacto de referencia para todas las cifras y que los bytes fusionados no aportan ninguna afirmacion adicional ni cuentan con recibo held-out propio.
 
-No se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. La model card declara explícitamente que cualquier afirmación de entrenamiento o evaluación reside en los ficheros de recibo del "estate" del autor, y que lo no documentado allí debe considerarse UNKNOWN. La instantánea de auditoría citada está fechada el 2026-11-20T03:48:04Z.
+Sobre el entrenamiento, la evidencia disponible se limita a la existencia de un recibo de entrenamiento (`training_receipt.laptop-blackwell.json`), lo que sugiere que el ajuste se ejecuto en hardware de clase portatil con GPU Blackwell. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares. Tampoco se documentan innovaciones tecnicas propias (decodificacion especulativa, atencion lineal, modos de razonamiento extendido). El estado de evidencia declarado por el autor incluye LICENSE, BASE, TRAIN y EVAL como presentes, mientras que SIGNED y GITHUB figuran como GAP y HELD-OUT como FAIL.
 
 ## Capacidades
 
-- Generación de texto: hereda las capacidades del modelo base Qwen 3.5 de 0,8B, orientadas a generación de texto general.
-- Razonamiento y código: presumiblemente presentes por herencia de la base, aunque no hay evaluación publicada que lo confirme para este ajuste concreto.
-- Tool calling / function calling: no documentado en la información disponible.
-- Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no documentadas; el campo de idiomas figura como no disponible.
-- Capacidades especiales (modo thinking, visión, audio): no documentadas; el tag `qwen3_5_text` indica que la variante es solo texto, sin visión ni audio.
-- Trazabilidad y verificación: el artefacto incluye referencias a recibos de auditoría y gráficos SVG deterministas generados a partir de una instantánea de auditoría fechada.
+- Generacion de texto y conversacion multi-turno, heredadas del modelo base Qwen3.5-0.8B.
+- Ajuste especifico de bajo rango sobre el modelo base, cuyo contenido y dominio no se detallan en la informacion disponible.
+- Carga como adaptador PEFT sobre el modelo base o como checkpoint fusionado con transformers.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: no disponible; la model card no declara lista de idiomas.
+- Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
 
 ## Casos de uso
 
-- Prototipado de aplicaciones de texto en hardware de consumo: con menos de 800 millones de parámetros, el modelo puede ejecutarse en GPUs de gama media o incluso en CPU con cuantización, lo que lo hace adecuado para pruebas de concepto antes de escalar a modelos mayores.
-- Experimentación con PEFT: al distribuirse como repositorio PEFT, sirve como ejemplo práctico para estudiar cómo se estructura y se carga un adaptador sobre una base Qwen 3.5, y para comparar configuraciones de ajuste fino.
-- Generación de texto asistida en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial sin las restricciones de otras licencias de modelos abiertos, lo que facilita su integración en productos propietarios.
-- Evaluación de pipelines de auditoría y trazabilidad: el modelo forma parte de un "estate" con recibos verificables, por lo que puede usarse como caso de estudio de gobernanza de artefactos de IA en organizaciones que exigen procedencia documentada.
-- Tareas de clasificación y extracción de texto de baja complejidad: para resúmenes cortos, etiquetado o extracción de entidades en dominios acotados, un modelo de este tamaño puede ser suficiente y mucho más barato de servir que alternativas de miles de millones de parámetros.
-- Educación y divulgación: su tamaño reducido y su licencia permisiva lo convierten en un candidato para talleres y cursos sobre fine-tuning y despliegue de modelos abiertos.
+- Experimentacion con PEFT en local: el adaptador puede cargarse sobre Qwen3.5-0.8B en una GPU de consumo para estudiar tecnicas de ajuste de bajo rango, dado su tamano reducido y su formato safetensors estandar.
+- Evaluacion comparativa de merges: el repositorio incluye tanto el adaptador como el checkpoint fusionado, lo que permite contrastar el comportamiento de ambos artefactos en el mismo entorno y verificar la fidelidad del merge documentado en `merge_receipt.json`.
+- Prototipado de asistentes conversacionales de baja latencia: con 752 millones de parametros, el modelo es apto para iteraciones rapidas en entornos de desarrollo antes de escalar a modelos mayores.
+- Pruebas de integracion con transformers y PEFT: sirve como caso de prueba para pipelines de carga de adaptadores, validacion de configuraciones y gestion de artefactos en el Hub.
+- Docencia e investigacion reproducible: la presencia de recibos de entrenamiento y evaluacion (aunque sin firma) permite ilustrar practicas de trazabilidad de artefactos en publicaciones de modelos.
+- Filtrado previo en pipelines de generacion: por su tamano, puede emplearse como primer estadio en arquitecturas de cascada, reservando modelos mayores para los casos que superen un umbral de confianza.
+- Analisis de riesgos de publicacion: util como caso de estudio de model cards con evidencia incompleta (benchmarks NOT RUN, gate held-out FAIL) para disenar politicas internas de admision de modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor declara explícitamente que no se afirma ningún número de benchmark más allá de lo medido en una auditoría fechada, y no se incluyen tablas de resultados en la información proporcionada.
+Los unicos datos publicados por el autor son los del model-index, correspondientes a un gate held-out propio y no a benchmarks estandar:
+
+| Benchmark | Resultado | Notas |
+|---|---|---|
+| SZL canonical held-out gate (n=5) | pass rate 0,2 (1/5) | Metrica declarada por el autor, marcada como `verified: false`; muestra de solo 5 casos |
+| MMLU-Pro | NOT RUN | Sin recibo asociado |
+| GPQA-Diamond | NOT RUN | Sin recibo asociado |
+| GSM8K | NOT RUN | Sin recibo asociado |
+
+No se han publicado resultados de benchmarks estandar en la informacion disponible. La unica cifra existente (1/5 en un gate propio de cinco casos) tiene un intervalo de confianza tan amplio que no permite extraer conclusiones sobre la calidad del modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamaño (752 M de parámetros), en FP16 se necesitarían aproximadamente 1,5 GB solo para los pesos, más overhead de activaciones y caché KV; en cuantizaciones de 8 bits o 4 bits el requisito bajaría a alrededor de 0,8-1 GB, aunque no se publican versiones cuantizadas.
-- GPU recomendadas: no documentadas por el autor. Por tamaño, cualquier GPU con al menos 4-6 GB de VRAM debería ser suficiente en FP16, incluyendo RTX 3060, RTX 4060, RTX 4090, A100 o H100.
-- ¿Cabe en GPU de consumo? Sí, por el número de parámetros cabe holgadamente en GPUs de consumo con 8 GB o más de VRAM, siempre que se disponga de los pesos en un formato compatible.
-- Opciones de despliegue: al ser un repositorio PEFT, el flujo natural es cargar la base Qwen/Qwen3.5-0.8B y aplicar los adaptadores con la librería `peft` de Hugging Face. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, y no se publican pesos en GGUF.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia de orden de magnitud, un modelo denso de 752 millones de parametros requiere aproximadamente 1,5 GB en FP16/BF16 para los pesos, a lo que hay que sumar cache KV y overhead del runtime; las cifras exactas dependen de la longitud de contexto, que no se documenta.
+- GPU recomendadas: no especificadas por el autor. El recibo de entrenamiento hace referencia a hardware "laptop Blackwell", lo que indica que el ajuste se realizo en una GPU portatil de esa generacion.
+- GPU de consumo: por tamano, el modelo cabe con holgura en GPUs de consumo con 8 GB o mas de VRAM en precision completa; en cuantizaciones de 4 bits cabria en GPUs con 4-6 GB, aunque el repositorio no publica variantes cuantizadas.
+- Opciones de despliegue: transformers con PEFT para el adaptador; transformers para el checkpoint fusionado. No se documenta soporte verificado de vLLM, llama.cpp, Ollama ni TGI, ni existen pesos GGUF en el repositorio.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| khipu-r3 (SZLHOLDINGS) | 752 M (PEFT sobre Qwen3.5-0.8B) | No disponible | Apache 2.0 | Hugging Face, safetensors |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
-| Alternativas de ~1 B (p. ej. Llama 3.2 1B, Gemma 3 1B) | ~1-1,2 B | 128 K (Llama 3.2 1B) / 32 K (Gemma 3 1B) | Llama 3.2 Community License / Gemma Terms | Hugging Face, GGUF, Ollama |
+| Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
+|---|---|---|---|---|---|
+| khipu-r3 | 752.393.024 | no disponible | apache-2.0 | Solo gate propio (1/5, no verificado); estandar NOT RUN | Publico en Hugging Face (333 descargas) |
+| Qwen/Qwen3.5-0.8B (modelo base) | no disponible en la informacion proporcionada | no disponible | apache-2.0 (segun la model card de khipu-r3) | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| Alternativas de la misma categoria (adaptadores LoRA sobre modelos sub-1000M) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con alternativas de la misma categoría es limitada porque no se dispone de datos de rendimiento de khipu-r3 ni de especificaciones completas de su base. La ventaja diferencial del artefacto es su licencia Apache 2.0, más permisiva que las de Llama 3.2 o Gemma 3, y su integración en un marco de auditoría documentada.
+La comparacion con el modelo base es la mas relevante: khipu-r3 es un ajuste de bajo rango sobre Qwen3.5-0.8B, de modo que cualquier diferencia de capacidad frente a este procede exclusivamente del adaptador, cuyo dominio de entrenamiento no se documenta. No se dispone de datos de benchmarks del modelo base en la informacion proporcionada, por lo que no es posible cuantificar la ganancia o perdida introducida por el ajuste.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados. Al heredar el comportamiento de Qwen 3.5, es probable que arrastre sesgos del corpus de entrenamiento de la base, pero no hay evaluación publicada para este ajuste.
-- Riesgo de alucinación: no cuantificado. Un modelo de menos de mil millones de parámetros tiene una capacidad limitada de razonamiento factual, por lo que el riesgo de alucinación en tareas abiertas es inherentemente alto.
-- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados figuran como no disponibles; no se debe asumir cobertura multilingüe sin verificación previa.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, pero conviene verificar que la licencia del modelo base Qwen 3.5 sea compatible con la redistribución de los adaptadores.
-- Caveat de producción: la model card no documenta hiperparámetros de entrenamiento, datos, evaluación ni procedimiento de fusión de pesos; antes de usar el modelo en producción es necesario realizar una evaluación propia sobre el dominio objetivo.
-- Formato: al distribuirse solo en safetensors y como repositorio PEFT, no hay versiones cuantizadas listas para usar con llama.cpp u Ollama, lo que añade trabajo de conversión si se busca despliegue en CPU.
-- Madurez: el repositorio tiene 284 descargas y 0 likes en el momento de la consulta, lo que indica una adopción muy limitada y escasa validación por parte de la comunidad.
+- Evidencia empirica insuficiente: el unico resultado publicado es un pass rate de 0,2 sobre cinco casos, marcado como no verificado, y los benchmarks estandar figuran como NOT RUN. No debe usarse para decisiones de produccion sin evaluacion propia.
+- Gate held-out en estado FAIL segun la propia model card, con la advertencia explicita del autor de que el modelo permanece "gated and unpromoted" mientras no se resuelva su condicion de abstencion restringida.
+- Recibos sin firma (SIGNED: GAP) y vinculacion con el codigo fuente incompleta (GITHUB: GAP, REPO_NAMED_NO_COMMIT), lo que limita la reproducibilidad del entrenamiento.
+- Ambiguedad de artefacto: el repositorio contiene a la vez un adaptador LoRA y un checkpoint fusionado; el segundo no dispone de recibo held-out propio. Hay que elegir conscientemente cual se despliega.
+- Idiomas no declarados: la model card no especifica lista de idiomas soportados; no debe asumirse soporte de quechua pese al nombre de visualizacion.
+- Longitud de contexto no documentada, lo que impide planificar cargas de trabajo con ventanas largas.
+- Riesgo de alucinacion y sesgos: no documentados por el autor; en un modelo de 752 millones de parametros el riesgo de alucinacion es estructuralmente alto en tareas de conocimiento factual.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene verificar la licencia del modelo base de forma independiente antes de un despliegue comercial.
+- Nomenclatura confusa: el nombre quechua "Amawta r3" procede de un registro externo propuesto y no implica ninguna promocion ni cambio de estado del modelo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/khipu-r3
-- Organización del autor en Hugging Face: https://huggingface.co/SZLHOLDINGS
-- Organización en GitHub (referenciada en la model card): https://github.com/szl-holdings
-- Repositorio de la herramienta de generación de fichas (referenciado): https://github.com/szl-holdings/estate-cards
+- Repositorio en Hugging Face: https://huggingface.co/SZLHOLDINGS/khipu-r3
+- Revision citada en la model card: https://huggingface.co/SZLHOLDINGS/khipu-r3/tree/b584c62c6844d1dcd9097e780221939115d755b6
+- Recibo de merge: https://huggingface.co/SZLHOLDINGS/khipu-r3/blob/b584c62c6844d1dcd9097e780221939115d755b6/merge_receipt.json
+- Recibo de evaluacion: https://huggingface.co/SZLHOLDINGS/khipu-r3/blob/b584c62c6844d1dcd9097e780221939115d755b6/receipts/eval/khipu-r3-exact-bytes-eval-20261107.json
+- Recibo de entrenamiento: https://huggingface.co/SZLHOLDINGS/khipu-r3/blob/b584c62c6844d1dcd9097e780221939115d755b6/training_receipt.laptop-blackwell.json
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Codigo fuente declarado: repositorio `szl-holdings/szl-forge` (sin commit fijado; no se proporciona URL verificable)

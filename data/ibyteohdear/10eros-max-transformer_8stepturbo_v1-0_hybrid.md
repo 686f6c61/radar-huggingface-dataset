@@ -2,50 +2,51 @@
 
 ## Resumen
 
-10Eros-Max Transformer 8stepTURBO v1.0 hybrid es un checkpoint de pesos completos para el transformer de difusion MiniMax-H3, un modelo de generacion de video (texto-a-video, imagen-a-video y audio-video) desarrollado originalmente por MiniMax y redistribuido en formato compatible con la libreria `diffusers`. El autor del repositorio, `ibyteohdear`, ha convertido el archivo `10Eros_Max_8stepTurbo_v1.0_hybrid.safetensors` de TenStrip al arbol de modulos de `MiniMaxH3PrunedTransformer3DModel`, renombrando claves, desfusionando proyecciones QKV y reordenando las mitades del SwiGLU para que coincidan con la geometria de diffusers.
+10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid es un modelo de difusion para generacion de video (texto-a-video, imagen-a-video y audio-video) publicado por el usuario ibyteohdear en Hugging Face. Se trata de un fine-tune del modelo MiniMax-H3-Pruned de multimodalart, orientado a la generacion de contenido audiovisual y etiquetado como "not-for-all-audiences", lo que indica contenido para adultos. El modelo se distribuye en formato diffusers con pesos safetensors y un total de 20.111.462.920 parametros (aproximadamente 20,1 mil millones), con un repositorio de 40,2 GB.
 
-El modelo parte de `multimodalart/MiniMax-H3-Pruned` como base y contiene 20.111.462.920 parametros (unos 20,1 mil millones), con un repositorio de 40,2 GB en formato safetensors. La particularidad principal es que incorpora el delta TURBO ya fusionado en los pesos, lo que permite una inferencia destilada en 8 pasos, y que el modulo AdaLN se ha plegado a coordenadas de rango 8 con una tabla de 1025 pasos, lo que reduce el coste de la modulacion temporal.
+El nombre "8stepTURBO" sugiere una destilacion o configuracion optimizada para generar video en tan solo 8 pasos de denoising, lo que reduciria drasticamente los requisitos computacionales frente a los 50-100 pasos habituales en modelos de difusion de video. La etiqueta "hybrid" y la referencia a modulos de audio (AutoencoderKLMiniMaxH3Audio) apuntan a un pipeline multimodal que combina generacion de video y audio de forma conjunta.
 
-Su relevancia radica en que ofrece un checkpoint listo para cargar sin necesidad de fusionar LoRAs ni aplicar parches en tiempo de carga, algo poco habitual en el ecosistema de modelos de video. No obstante, el repositorio tiene cero descargas y cero likes en el momento de la consulta, y no se ha publicado informacion sobre licencia ni sobre los idiomas soportados, lo que limita su evaluacion para uso en produccion.
+El modelo esta construido sobre la arquitectura MiniMax-H3, un transformer de difusion para video con soporte de codificacion de texto mediante un modelo Qwen3-VL (segun el codigo de la model card, se usa ibyteohdear/qwen3_vl_32b_bnb_nf4 como encoder de texto). La relevancia actual radica en la tendencia hacia modelos de video de codigo abierto con destilacion de pasos (few-step generation), que permiten inferencia practica en hardware de consumo, aunque la licencia no esta disponible y el contenido es para adultos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer 3D de difusion (MiniMax-H3 pruned), con AdaLN plegado a rango 8 |
-| Parametros totales | 20.111.462.920 |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer de difusion para video (MiniMax-H3), con VAE de video y VAE de audio |
+| Parametros totales | 20.111.462.920 (aprox. 20,1 mil millones) |
+| Parametros activos | no disponible (no es MoE segun la informacion) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | bfloat16 nativo; el ejemplo de la model card usa `Int8WeightOnlyConfig` de torchao |
+| Tipos de cuantizacion | Cuantizacion int8 weight-only via torchao (Int8WeightOnlyConfig) en el codigo; el encoder de texto usa bnb nf4 (4 bits) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (arbol de modulos diffusers) |
+| Formato de pesos | safetensors (formato diffusers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de difusion tridimensional para generacion de video, derivado de MiniMax-H3 en su variante pruned (`multimodalart/MiniMax-H3-Pruned`). La conversion realizada por el autor incluye el renombrado de bloques (`blocks.*` a `transformer_blocks.*`, `token_refiner.blocks.*` a `token_refiner.refiner_blocks.*`), la separacion de la proyeccion QKV fusionada en `to_q`, `to_k` y `to_v`, y el intercambio de las mitades del `mlp.fc1` para alinearlas con el orden `[value | gate]` que espera `ff.net.0.proj` en diffusers. Estos cambios preservan la forma de cada tensor, y el autor afirma haber verificado el conjunto exacto de claves, las formas contra las cabeceras del checkpoint de referencia y la similitud coseno por tensor en float64.
+El modelo se basa en la arquitectura MiniMax-H3, un transformer de difusion para generacion de video que emplea un pipeline modular (diffusers.modular_pipelines) con etapas separadas para preparacion de latents, layout, timesteps, denoising y decodificacion. Incluye dos autoencoders: AutoencoderKLMiniMaxH3 para video y AutoencoderKLMiniMaxH3Audio para audio, lo que confirma que el modelo genera video y audio de forma conjunta. El encoder de texto es un Qwen3-VL de 32B cuantizado a nf4 (ibyteohdear/qwen3_vl_32b_bnb_nf4), segun el codigo de la model card.
 
-La innovacion tecnica mas destacable es el plegado del modulo AdaLN: las proyecciones originales leen `silu(time_embedder(time_proj(t)))`, una curva escalar de timestep que se aproxima mediante un subespacio afín de rango 8 con un error relativo RMS de aproximadamente 1,5e-5. La tabla `time_embedder.table` contiene las coordenadas de esa curva en una rejilla uniforme de 1025 pasos con interpolacion lineal entre muestras, de modo que la aproximacion es exacta en la rejilla del sampler pero solo aproximada fuera de ella. Ademas, el delta TURBO esta fusionado en los pesos, por lo que no debe apilarse `larryvrh/MiniMax-H3-Turbo-Lora` ni un adaptador `lightx2v` encima, ya que se aplicaria dos veces. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. El sufijo "8stepTURBO" indica una optimizacion para generacion en 8 pasos, probablemente mediante destilacion de pasos (step distillation) o un schedule de timesteps reducido, aunque no se detalla el metodo en la informacion proporcionada. El modelo base es multimodalart/MiniMax-H3-Pruned, un modelo podado de MiniMax-H3.
 
 ## Capacidades
 
 - Generacion de video a partir de texto (text-to-video).
-- Generacion de video a partir de una imagen (image-to-video), que es el pipeline declarado en el repositorio.
-- Generacion de audio-video conjunta, segun las etiquetas del repositorio.
-- Inferencia destilada en 8 pasos gracias al delta TURBO fusionado.
-- Carga directa mediante `AutoModel.from_pretrained` con `trust_remote_code=True`, sin necesidad de fusionar LoRAs ni parches.
-- Compatibilidad con cuantizacion Int8 weight-only mediante torchao, segun el ejemplo de la model card.
-- No se ha documentado soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues.
+- Generacion de video a partir de una imagen (image-to-video), que es el pipeline declarado en Hugging Face.
+- Generacion de audio junto con el video (audio-video), gracias al autoencoder de audio integrado.
+- Generacion en 8 pasos de denoising (few-step generation), segun el nombre del modelo.
+- Soporte de keyframes automaticos mediante MiniMaxH3AutoKeyframeVaeEncoderStep.
+- Integracion con diffusers mediante pipelines modulares.
+- No se ha documentado soporte de tool calling, function calling ni capacidades de agente.
+- Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
-- Prototipado rapido de video generativo: al cargar el checkpoint directamente con `AutoModel` y ejecutar el pipeline de MiniMax-H3, un desarrollador puede generar clips en 8 pasos sin tener que preparar fusiones de LoRA ni parches, lo que reduce el tiempo de puesta en marcha.
-- Generacion de video a partir de imagenes de producto: el pipeline image-to-video permite animar fotografias fijas para demostraciones comerciales o contenido de marketing, aprovechando el modo destilado para iterar con rapidez.
-- Creacion de clips con audio sincronizado: la etiqueta audio-video sugiere la posibilidad de generar pistas audiovisuales conjuntas, util para prototipos de contenido multimedia.
-- Investigacion sobre destilacion de modelos de difusion: el checkpoint sirve como caso de estudio de un modelo destilado a 8 pasos con el delta TURBO ya integrado, util para comparar estrategias de destilacion frente a la aplicacion de LoRAs externas.
-- Experimentacion con plegado de AdaLN: la implementacion de AdaLN en rango 8 con tabla de 1025 pasos es un ejemplo concreto para estudiar tecnicas de compresion de la modulacion temporal en transformers de difusion.
-- Despliegue en entornos con memoria limitada: la posibilidad de cuantizar a Int8 weight-only con torchao permite reducir el uso de VRAM en comparacion con bfloat16, aunque el tamano de 20,1 mil millones de parametros sigue exigiendo hardware de gama alta.
-- Evaluacion de pipelines modulares de diffusers: el ejemplo de la model card emplea `SequentialPipelineBlocks` y los pasos modulares de MiniMax-H3, lo que lo convierte en una referencia practica para quien quiera construir pipelines personalizados.
+- Generacion de clips para redes sociales: el modelo puede producir videos cortos a partir de una descripcion textual o una imagen semilla, con la ventaja de la generacion en 8 pasos que reduce el tiempo de inferencia frente a pipelines de 50 pasos.
+- Prototipado rapido de storyboards: un estudio puede convertir guiones en video preliminar con audio sincronizado, usando el pipeline image-to-video para mantener coherencia visual entre escenas.
+- Creacion de contenido audiovisual para adultos: dado el etiquetado "not-for-all-audiences", el modelo esta orientado a la generacion de material para plataformas de contenido adulto, con generacion conjunta de video y audio.
+- Animacion de imagenes fijas: a partir de una fotografia o ilustracion, el pipeline image-to-video permite animar retratos o escenas con movimiento y audio generado.
+- Investigacion en destilacion de difusion: el modelo sirve como caso de estudio de generacion en pocos pasos (8 pasos) aplicada a video, util para comparar calidad frente a modelos de 50-100 pasos.
+- Generacion de videos con audio para doblaje o simulacion de voz: el autoencoder de audio permite producir pistas de audio junto al video, util para prototipos de contenido multimedia.
+- Despliegue en entornos con GPU limitada: la cuantizacion int8 weight-only y el uso de bnb nf4 en el encoder de texto permiten ejecutar el pipeline en GPUs de menor VRAM, segun el codigo de la model card.
 
 ## Benchmarks y rendimiento
 
@@ -53,38 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en bfloat16: aproximadamente 40 GB solo para los pesos del transformer (20,1 mil millones de parametros a 2 bytes por parametro), mas la memoria del VAE, el codificador de texto y las activaciones, por lo que en la practica se superan los 40 GB.
-- VRAM estimada con cuantizacion Int8 weight-only: en torno a 20 GB para los pesos, con overhead adicional por activaciones y componentes auxiliares.
-- GPU recomendadas: A100 de 80 GB, H100 de 80 GB o GPUs con 48 GB o mas para bfloat16; para Int8 puede considerarse una RTX 4090 de 24 GB solo si se ajusta el resto del pipeline, aunque no hay datos confirmados de que quepa con holgura.
-- No cabe en GPUs de consumo de 8, 12 o 16 GB en bfloat16.
-- Opciones de despliegue: diffusers con `AutoModel` y `trust_remote_code=True`; el ejemplo de la model card usa gradio y torchao, y menciona soporte para Hugging Face Spaces con GPU Zero. No se ha documentado compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que ademas no estan orientados a modelos de difusion de video.
-- Latencia y throughput: no disponibles. El modo de 8 pasos sugiere una reduccion significativa frente a samplers de decenas de pasos, pero no se aportan cifras.
+- VRAM estimada: no disponible de forma explicita. Con 20,1 mil millones de parametros en safetensors (40,2 GB de repositorio), la inferencia en bf16 requeriria aproximadamente 40 GB solo para los pesos del transformer de difusion, mas el VAE de video, el VAE de audio y el encoder de texto Qwen3-VL de 32B cuantizado a nf4 (que anade varios GB). El codigo de la model card aplica cuantizacion int8 weight-only al transformer, lo que reduce el peso a aproximadamente 20 GB.
+- GPU recomendadas: no disponible en la informacion. Por el tamano, se necesitarian GPUs de 40-80 GB (A100 40GB/80GB, H100) para bf16 sin cuantizar; con int8 weight-only podria caber en una RTX 4090 de 24 GB solo para el transformer, pero el encoder de texto de 32B y los VAEs anaden requisitos adicionales.
+- Cabe en consumer GPU: posiblemente en RTX 4090 (24 GB) con cuantizacion agresiva y offloading, pero no confirmado en la informacion.
+- Opciones de despliegue: diffusers (pipeline modular), con soporte de group offloading (apply_group_offloading) y cuantizacion torchao int8. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a difusion de video).
+- Latencia y throughput: no disponibles. La generacion en 8 pasos reduce el coste frente a pipelines de 50 pasos, pero no se proporcionan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros-Max Transformer 8stepTURBO v1.0 hybrid | 20,1 mil millones | no disponible | Video (T2V, I2V, audio-video) | no disponible | Hugging Face, 0 descargas |
-| multimodalart/MiniMax-H3-Pruned (base) | no disponible | no disponible | Video | no disponible | Hugging Face |
-| MiniMax-H3 (original) | no disponible | no disponible | Video | no disponible | no disponible en la informacion |
+| 10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid | 20,1 B | no disponible | no disponible | safetensors (diffusers) | Hugging Face, 175 descargas |
+| multimodalart/MiniMax-H3-Pruned (modelo base) | no disponible | no disponible | no disponible | diffusers | Hugging Face |
+| MiniMax-H3 (original) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a la relacion de derivacion y a la disponibilidad publica.
+No se dispone de datos de rendimiento ni de benchmarks para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- La licencia no esta disponible, lo que impide confirmar si se permite el uso comercial; debe verificarse antes de cualquier despliegue en produccion.
-- No se han documentado los idiomas soportados, por lo que no puede garantizarse un comportamiento multilingue en las indicaciones de texto.
-- El modelo es una aproximacion de rango 8 del AdaLN original: es exacto en la rejilla de 1025 pasos del sampler, pero fuera de ella (por ejemplo, con sigmas desplazadas entre puntos de la rejilla) no reproduce el comportamiento del modelo de referencia.
-- El delta TURBO esta fusionado en los pesos; apilar `larryvrh/MiniMax-H3-Turbo-Lora` o un adaptador `lightx2v` duplica su efecto y degrada la generacion.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio (`modeling_minimax_h3_pruned.py`) y anade riesgo de seguridad y de mantenimiento.
-- El repositorio tiene cero descargas y cero likes, y fue creado y actualizado el mismo dia (22 de noviembre de 2026), sin senales de validacion por parte de la comunidad.
-- No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de calidad frente al modelo base ni frente a alternativas.
-- Al ser un modelo de difusion de video, existe riesgo de generar contenido visual inexacto o no fiel a la indicacion; no se han documentado sesgos especificos.
-- El uso de cuantizacion Int8 weight-only puede degradar la calidad de generacion; no se aportan metricas al respecto.
+- Contenido para adultos: la etiqueta "not-for-all-audiences" indica que el modelo esta disenado para generar material explicito, lo que restringe su uso en entornos profesionales o publicos.
+- Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
+- Riesgo de alucinacion visual: como modelo de difusion, puede generar artefactos, incoherencias temporales y contenido no solicitado.
+- Idiomas no documentados: se desconoce que idiomas soporta el encoder de texto, aunque al usar Qwen3-VL probablemente herede capacidades multilingues, sin confirmacion.
+- Dependencia de un encoder de texto externo de 32B: el pipeline requiere descargar y ejecutar un Qwen3-VL de 32B cuantizado, lo que anade complejidad y consumo de VRAM.
+- Modelo podado y fine-tuneado: al derivar de MiniMax-H3-Pruned, puede haber perdido capacidades respecto al modelo original.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente a alternativas.
+- Codigo de la model card con rutas y variables de entorno especificas (/mnt/data/huggingface, SPACES_ZERO_GPU): requiere adaptacion para despliegues fuera de Hugging Face Spaces.
+- Fecha de creacion futura (2026-11-22): el modelo aparece con fechas posteriores a la actualidad, lo que puede indicar metadatos inconsistentes.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid
+- Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_v1.0_hybrid
 - Modelo base: https://huggingface.co/multimodalart/MiniMax-H3-Pruned
-- LoRA TURBO mencionada (no debe apilarse): https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
-- Codificador de texto usado en el ejemplo: https://huggingface.co/patientxtr/Huihui-Qwen3-VL-8B-Instruct-abliterated-bnb-nf4
+- Encoder de texto: https://huggingface.co/ibyteohdear/qwen3_vl_32b_bnb_nf4
+- ClipProj (opcional): https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
+- Qwen3-VL 8B alternativo: https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3
+- Qwen3-VL 4B alternativo: https://huggingface.co/prithivMLmods/Qwen3-VL-4B-Instruct-c_abliterated-v2

@@ -2,81 +2,85 @@
 
 ## Resumen
 
-Qwen3.5-4B-NPU-fraQtl es una cuantización de 4 bits del modelo Qwen3.5-4B de Qwen, publicada por el contribuidor fraQtl a través de la organización qualcomm-ai-hub-community. El objetivo del artefacto no es reentrenar ni modificar el modelo base, sino producir un fichero GGUF que mantenga la mayor fidelidad posible respecto al original en bf16 a la vez que ejecuta la totalidad de sus operaciones en la NPU Hexagon de los SoC Snapdragon, en concreto el Snapdragon 8 Elite Gen 5 (SM8850).
+Qwen3.5-4B-NPU-fraQtl es una cuantización de 4 bits del modelo Qwen3.5-4B de Alibaba (familia Qwen), publicada por el usuario fraQtl a través de la organización qualcomm-ai-hub-community. El objetivo no es solo reducir el tamaño, sino preservar la fidelidad respecto al modelo original en bf16 con un sesgo explícito hacia tareas de instrucciones y uso de herramientas (tool calling), manteniendo además la compatibilidad total con el backend Hexagon NPU de llama.cpp. Se distribuye en formato GGUF Q4_0 y ocupa 2.583.180.384 bytes, es decir, unos 2,58 GB.
 
-El modelo base es un transformer de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones), lo que lo sitúa en la franja de modelos pequeños aptos para inferencia en dispositivo. La cuantización emplea una mezcla de tipos (Q4_0 como predominante, con 52 tensores en Q8_0 y algunos tensores auxiliares en Q4_1, Q6_K y F32), elegidos para que todos los tipos de matmul estén soportados por el backend Hexagon de llama.cpp.
+El modelo base tiene 4.205.751.296 parámetros y una arquitectura híbrida que combina atención con módulos de espacio de estados (SSM), a juzgar por los tensores `ssm_alpha`, `ssm_beta` y `ssm_out` que aparecen en la metodología de cuantización. Está pensado para inferencia en dispositivo (on-device) sobre el SoC Snapdragon 8 Elite Gen 5 (SM8850), donde todas las operaciones se ejecutan en la NPU sin rechazos.
 
-La relevancia del artefacto reside en su metodología de evaluación: el autor publica métricas de divergencia KL frente al modelo bf16 sobre 144 ventanas reservadas, con intervalos de confianza por bootstrap, y compara contra cuantizaciones de referencia (unsloth Q4_0, IQ4_NL, Q4_K_S e Intel AutoRound Q4_0). Según esos datos, el fichero es un 37,8% más cercano al original en texto de tarea (instrucciones y tool calling) y un 28,4% más cercano en texto general que el Q4_0 estándar de unsloth, con un tamaño ligeramente inferior.
+La relevancia de esta ficha radica en que documenta un caso poco habitual: una cuantización que no solo iguala al original en benchmarks de conocimiento, sino que mejora su comportamiento en el benchmark oficial BFCL v4 live de uso de herramientas, con menos respuestas correctas del modelo original degradadas (89 frente a 148 de la cuantización estándar de unsloth). Todo ello bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (modelo base Qwen3.5-4B; incluye tensores ssm_alpha, ssm_beta y ssm_out, compatibles con un esquema híbrido, aunque la model card no detalla la arquitectura interna) |
+| Arquitectura | Transformer híbrido con módulos SSM (atención + space state), según los tensores ssm_alpha, ssm_beta y ssm_out |
 | Parametros totales | 4.205.751.296 |
-| Parametros activos | no disponible (no se indica que el modelo base sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Mezcla: Q4_0 (192 tensores), Q8_0 (52), Q4_1 (4), Q6_K (1), F32 (177) |
-| Idiomas soportados | no disponible |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q4_0 (mayoría de pesos) + 52 tensores en Q8_0 dentro del presupuesto de bytes; se descarta el bloque de predicción del siguiente token no usado |
+| Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (fichero único Qwen3.5-4B-fraQtl-Q4_0.gguf, 2.583.180.384 bytes) |
+| Formato de pesos | GGUF (llama.cpp); 2.583.180.384 bytes (~2,58 GB) |
 
 ## Arquitectura y entrenamiento
 
-El artefacto es una cuantización, no un modelo entrenado desde cero. El proceso parte de los pesos bf16 de Qwen/Qwen3.5-4B y aplica tres pasos según la model card: primero, redondeo GPTQ ponderado por Hessiana (Frantar et al., 2022) usando estadísticas de un corpus de calibración propio; segundo, una asignación de precisión por tensor que mantiene Q4_0 para la mayoría de pesos y eleva 52 tensores a Q8_0 dentro de un presupuesto de bytes fijado, de los cuales 47 (24 ssm_beta y 23 ssm_alpha) siguen la elección de unsloth y 5 fueron seleccionados por un ranking de error por tensor (blk.30 y blk.31 ffn_down, blk.23 y blk.27 attn_k, blk.30 ssm_out); tercero, se descarta el bloque de predicción del siguiente token no utilizado.
+El modelo base Qwen3.5-4B emplea una arquitectura híbrida que intercala capas de atención con capas de espacio de estados (SSM), tal como se deduce de la presencia de tensores `ssm_alpha`, `ssm_beta` y `ssm_out` entre los que la cuantización eleva a Q8_0. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo original.
 
-El autor probó además un entrenamiento de recuperación sobre este fichero y no obtuvo ganancia (una semilla empeoró un 4,4% la KL de tarea y otra quedó sin cambios), por lo que no se aplicó. La innovación técnica destacable es la restricción de que todos los tipos de matmul del fichero estén soportados por el backend Hexagon de llama.cpp, lo que permite que las 32.165 operaciones se ejecuten en la NPU sin rechazos (0 de 32.165 en la medición en dispositivo). El fichero carga en llama.cpp estándar.
+La innovación técnica de esta ficha está en el proceso de cuantización: se aplica redondeo GPTQ ponderado por Hessiano (Frantar et al., 2022) con estadísticas de un corpus de calibración propio. La asignación de precisión combina Q4_0 para la mayoría de pesos con 52 tensores en Q8_0 dentro del presupuesto de bytes: 47 de ellos (24 `ssm_beta`, 23 `ssm_alpha`) siguen la elección de unsloth, y 5 fueron seleccionados mediante un ranking de error por tensor (`blk.30` y `blk.31` `ffn_down`, `blk.23` y `blk.27` `attn_k`, `blk.30` `ssm_out`). Se probó entrenamiento de recuperación sobre este archivo. El resultado es un fichero 41.024 bytes menor que el Q4_0 de unsloth y con todas las operaciones aceptadas por la NPU Hexagon (0 de 32.165 rechazadas).
 
 ## Capacidades
 
-- Generación de texto conversacional: la model card clasifica el pipeline como text-generation y el modelo base se distribuye para tareas de instrucciones.
-- Seguimiento de instrucciones: evaluado con IFEval sobre 250 preguntas fijas, con 194 aciertos en decodificación greedy y thinking desactivado.
-- Razonamiento matemático: evaluado con GSM8K sobre 250 preguntas, con 233 aciertos en las mismas condiciones.
-- Tool calling / function calling: la métrica de "texto de tarea" del autor agrupa explícitamente instrucciones y tool calling, y es donde la cuantización muestra mayor ventaja frente a las alternativas.
-- Inferencia en NPU: ejecución íntegra en el backend Hexagon de llama.cpp sobre Snapdragon 8 Elite Gen 5, sin operaciones rechazadas.
-- Capacidades multimodales, de audio o de visión: no disponible; la model card indica explícitamente "Text model only".
-- Modo thinking: la evaluación se realizó con thinking desactivado; no se documentan resultados con thinking activado.
-- Capacidades multilingües: no disponible.
+- Generación de texto conversacional (pipeline `text-generation`, etiqueta `conversational`).
+- Uso de herramientas (tool calling / function calling): evaluado en BFCL v4 live con llamadas simples, múltiples, paralelas y paralelas múltiples.
+- Detección de irrelevancia: capacidad de decidir cuándo no invocar una herramienta (654 aciertos en el conjunto live frente a 606 de unsloth Q4_0 y 691 del original bf16).
+- Razonamiento y conocimiento general: evaluado en MMLU-Pro.
+- Matemáticas: evaluado en GSM8K (93,10 en el fichero v2).
+- Generación de código: evaluado en HumanEval+ y MBPP+.
+- Seguimiento de instrucciones: evaluado en IFEval (prompt strict).
+- Ejecución íntegra en NPU Hexagon de Snapdragon 8 Elite Gen 5 mediante llama.cpp.
+- Modo "thinking off" empleado en todas las evaluaciones; no se documenta comportamiento con modo thinking activado.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Asistentes conversacionales en dispositivo: el modelo puede gestionar diálogos multi-turno directamente en el terminal móvil, sin enviar datos a la nube, gracias a su tamaño de 4,2 mil millones de parámetros y a la ejecución completa en la NPU Hexagon del Snapdragon 8 Elite Gen 5.
-- Automatización de tareas con tool calling en aplicaciones móviles: la cuantización preserva especialmente la fidelidad en texto de tarea (instrucciones y tool calling), por lo que es adecuada para agentes que invocan APIs del sistema operativo o servicios del propio dispositivo.
-- Procesamiento local de documentos sensibles: al ejecutarse íntegramente en el terminal, permite resumir o extraer información de textos confidenciales sin salida de datos a servidores externos.
-- Respuesta a preguntas sobre conocimiento general en modo offline: el modelo conserva un 28,4% más de cercanía al original en texto general que el Q4_0 de unsloth, lo que lo hace viable para asistentes de consulta sin conectividad.
-- Generación de texto y borradores en aplicaciones de productividad móvil: con un throughput de generación de 17,10 tokens/s en la NPU del SM8850, es suficiente para autocompletado y redacción asistida en tiempo interactivo.
-- Prototipado y evaluación de cuantizaciones para despliegue en edge: el repositorio incluye receipts con la tabla de fidelidad, las respuestas a 500 preguntas, el log de dispositivo y el recuento de operaciones rechazadas, lo que lo convierte en una referencia reproducible para comparar estrategias de cuantización orientadas a NPU.
-- Investigación sobre fidelidad de cuantización: la metodología de divergencia KL con intervalos de confianza por bootstrap sobre 144 ventanas reservadas permite reutilizar el artefacto como caso de estudio de cómo la asignación por tensor afecta a la fidelidad frente al modelo bf16.
+- Asistentes conversacionales en dispositivo: el modelo cabe en ~2,58 GB y ejecuta todas las operaciones en la NPU del Snapdragon 8 Elite Gen 5, lo que permite desplegar un chatbot local sin conexión ni coste de API, con 17,10 tokens/s de generación y 950,1 tokens/s de procesamiento de prompt (pp128).
+- Agentes con tool calling en aplicaciones móviles: su rendimiento en BFCL v4 live (1.729 sobre 2.251 prompts, con 1.063 llamadas correctas y 654 rechazos correctos) lo hace adecuado para asistentes que deben decidir cuándo invocar APIs del sistema (calendario, contactos, clima) y cuándo responder directamente.
+- Automatización de tareas de instrucciones en el borde: con 80,96 en IFEval prompt strict, puede usarse para transformar, resumir o clasificar texto siguiendo instrucciones estrictas en aplicaciones de productividad local.
+- Razonamiento matemático ligero en el dispositivo: 93,10 en GSM8K permite resolver problemas aritméticos de varios pasos en apps educativas o de finanzas personales sin enviar datos a la nube.
+- Asistencia de código en editores locales: 75,61 en HumanEval+ y 62,91 en MBPP+ lo hacen viable para autocompletado y generación de fragmentos en IDE de escritorio o portátil con GPU consumer, siempre que se acepte la pérdida de fidelidad frente a bf16.
+- Evaluación de fidelidad de cuantizaciones: sirve como referencia metodológica (KL de divergencia sobre vocabulario completo, bootstrap pareado, comparación por tensor) para equipos que necesiten validar sus propias cuantizaciones antes de producción.
+- Despliegue en pipelines de CI/CD para pruebas de regresión de modelos: al ser un GGUF de llama.cpp con licencia Apache 2.0, puede integrarse en jobs automatizados que verifiquen que una nueva cuantización no degrada el comportamiento en tool calling.
 
 ## Benchmarks y rendimiento
 
-Fidelidad frente al modelo original en bf16, medida como divergencia KL sobre 144 ventanas reservadas (menor es más cercano), con intervalo de confianza del 95% por bootstrap pareado de 2.000 remuestreos:
+Uso de herramientas, BFCL v4 live (2.251 prompts, greedy, thinking off):
 
-| Fichero | Bytes | KL tarea | KL general | Tarea vs unsloth Q4_0 | General vs unsloth Q4_0 |
+| Fichero | Bytes | Total | Llamadas correctas | Rechazos correctos | Respuestas del original degradadas |
 |---|---|---|---|---|---|
-| unsloth Q4_0 | 2.583.221.408 | 0,04641 | 0,02874 | — | — |
-| AutoRound 0.16.1 Q4_0 (Intel) | 2.611.782.976 | 0,03634 | 0,02130 | −21,7% [−26,3; −16,8] | −25,9% [−35,6; −16,3] |
-| fraQtl Q4_0 (este repo) | 2.583.180.384 | 0,02888 | 0,02058 | −37,8% [−41,8; −33,3] | −28,4% [−35,7; −21,0] |
+| Original bf16 (Qwen/Qwen3.5-4B) | — | 1.751 | 1.048 | 691 | — |
+| unsloth Q4_0 | 2.583.221.408 | 1.681 | 1.063 | 606 | 148 |
+| fraQtl Q4_0 v2 (este repo) | 2.583.180.384 | 1.729 | 1.063 | 654 | 89 |
 
-Comparación con otros ficheros de 4 bits del mismo tamaño (las dos últimas columnas comparan cada fichero con el Q4_0 de fraQtl; negativo significa que ese fichero es más cercano al original):
+Respuestas (greedy, thinking off):
 
-| Fichero | Bytes | KL tarea | KL general | Tarea vs fraQtl Q4_0 | General vs fraQtl Q4_0 |
-|---|---|---|---|---|---|
-| unsloth IQ4_NL | 2.579.944.608 | 0,03276 | 0,01908 | +13,4% [+7,3; +19,9] | −7,3% [−14,4; −0,0] |
-| unsloth Q4_K_S | 2.590.430.368 | 0,02842 | 0,01729 | −1,6% [−8,0; +5,0] | −16,0% [−22,0; −9,7] |
-| fraQtl Q4_0 (este repo) | 2.583.180.384 | 0,02888 | 0,02058 | — | — |
+| Benchmark | fraQtl Q4_0 | unsloth Q4_0 | Original bf16 |
+|---|---|---|---|
+| MMLU-Pro (12.032) | 45,55 | 45,23 | 46,82 |
+| GSM8K (1.319) | 93,10 | 92,95 | 92,95 |
+| IFEval prompt strict (541) | 80,96 | 80,59 | 83,18 |
+| HumanEval+ (164) | 75,61 | 73,78 | 78,66 |
+| MBPP+ (399) | 62,91 | 60,65 | 61,90 |
 
-Resultados en 500 preguntas fijas con decodificación greedy y thinking desactivado, sobre la misma GPU en la misma ejecución:
+Fidelidad respecto a bf16 (divergencia KL sobre 144 ventanas reservadas, menor es mejor):
 
-| Fichero | GSM8K /250 | IFEval /250 |
-|---|---|---|
-| unsloth Q4_0 | 233 | 190 |
-| fraQtl Q4_0 | 233 | 194 |
-| Referencia bf16 | 232 | 195 |
+| Fichero | Bytes | KL tarea | KL general |
+|---|---|---|---|
+| unsloth Q4_0 | 2.583.221.408 | 0,04641 | 0,02874 |
+| AutoRound 0.16.1 Q4_0 | 2.611.782.976 | 0,03634 | 0,02130 |
+| fraQtl Q4_0 v1 | 2.583.180.384 | 0,02888 | 0,02058 |
+| unsloth IQ4_NL | 2.579.944.608 | 0,03276 | 0,01908 |
+| unsloth Q4_K_S | 2.590.430.368 | 0,02842 | 0,01729 |
 
-El autor señala que las diferencias no son estadísticamente significativas: GSM8K con 5 aciertos únicos en cada fichero (p = 1,00) e IFEval con 14 frente a 10 (p = 0,54).
-
-Rendimiento en dispositivo (Snapdragon 8 Elite Gen 5, SM8850, llama.cpp b12079 con backend Hexagon, 3 repeticiones, tokens/s):
+Rendimiento en dispositivo (Snapdragon 8 Elite Gen 5, SM8850, llama.cpp b12079 backend Hexagon, tokens/s, 3 repeticiones):
 
 | Fichero | NPU pp128 | NPU tg64 | Operaciones rechazadas por la NPU |
 |---|---|---|---|
@@ -85,44 +89,41 @@ Rendimiento en dispositivo (Snapdragon 8 Elite Gen 5, SM8850, llama.cpp b12079 c
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el fichero GGUF ocupa 2.583.180.384 bytes (unos 2,58 GB); en GPU la huella de memoria se aproxima a ese tamaño más el overhead de contexto y del runtime.
-- GPU recomendadas: no disponibles en la información proporcionada; la model card solo documenta ejecución en NPU Hexagon del Snapdragon 8 Elite Gen 5. Los benchmarks de 500 preguntas se ejecutaron en GPU, pero no se especifica el modelo.
-- Cabe en GPU de consumo: no confirmado en la información disponible, aunque un fichero de 2,58 GB es compatible con GPUs de consumo de 8 GB o más en la práctica habitual de llama.cpp; el autor no lo documenta.
-- Opciones de despliegue: llama.cpp (versión b12079 o superior para el backend Hexagon); el fichero carga en llama.cpp estándar. No se documenta soporte en vLLM, Ollama o TGI.
-- Latencia y throughput: en la NPU del SM8850, 950,1 ± 11,8 tokens/s en procesamiento de prompt (pp128) y 17,10 ± 0,04 tokens/s en generación (tg64), con 3 repeticiones. El autor indica que la velocidad es la misma que la del Q4_0 de unsloth.
-- Almacenamiento: 2,58 GB para el fichero único, con sha256 dfae49c2f6fbc76aedcf121e22cc71b65d2c862ccdb79b9bc0f7cd1a9eedbffe.
+- VRAM estimada para inferencia: aproximadamente 2,6 GB para los pesos en Q4_0, más overhead de contexto y de runtime de llama.cpp; con contexto largo el consumo crece proporcionalmente.
+- GPU recomendadas: cualquier GPU con soporte de llama.cpp; para uso en producción con throughput alto se recomiendan A100 o H100, aunque el diseño está orientado a NPU.
+- Cabe en GPU consumer: sí, en tarjetas con 4 GB o más de VRAM (RTX 3050, RTX 4060, RTX 4090, etc.), así como en CPU.
+- Despliegue: llama.cpp con backend Hexagon para NPU (versión b12079 verificada), y llama.cpp estándar para CPU/GPU. No se documenta soporte en vLLM, Ollama o TGI en la información disponible.
+- Latencia y throughput: en Snapdragon 8 Elite Gen 5, 950,1 ± 11,8 tokens/s en pp128 y 17,10 ± 0,04 tokens/s en tg64, con cero operaciones rechazadas por la NPU. No hay datos de latencia en GPU.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Fidelidad KL (tarea / general) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| fraQtl Q4_0 (este repo) | 4,2 B | no disponible | 0,02888 / 0,02058 | Apache 2.0 | GGUF en HF |
-| unsloth Q4_0 | 4,2 B | no disponible | 0,04641 / 0,02874 | Apache 2.0 | GGUF en HF |
-| unsloth Q4_K_S | 4,2 B | no disponible | 0,02842 / 0,01729 | Apache 2.0 | GGUF en HF |
-| unsloth IQ4_NL | 4,2 B | no disponible | 0,03276 / 0,01908 | Apache 2.0 | GGUF en HF |
-| AutoRound 0.16.1 Q4_0 (Intel) | 4,2 B | no disponible | 0,03634 / 0,02130 | Apache 2.0 | GGUF en HF |
+| Modelo | Parámetros | Contexto | BFCL v4 live | MMLU-Pro | Licencia | Formato |
+|---|---|---|---|---|---|---|
+| fraQtl Q4_0 v2 (este) | 4,21 B | No disponible | 1.729 | 45,55 | Apache 2.0 | GGUF |
+| unsloth Q4_0 | 4,21 B | No disponible | 1.681 | 45,23 | Apache 2.0 | GGUF |
+| AutoRound Q4_0 | 4,21 B | No disponible | No disponible | No disponible | Apache 2.0 | GGUF |
+| Qwen3.5-4B bf16 (original) | 4,21 B | No disponible | 1.751 | 46,82 | Apache 2.0 | safetensors |
 
-La comparativa se limita a cuantizaciones del mismo modelo base, ya que la información proporcionada no incluye modelos alternativos de otros desarrolladores. Frente a unsloth Q4_K_S, el fichero de fraQtl es un 16,0% peor en texto general y prácticamente equivalente en texto de tarea (diferencia del 1,6% con intervalo que cruza cero). Frente a unsloth IQ4_NL, es un 13,4% mejor en tarea y un 7,3% peor en general. Frente a AutoRound Q4_0, es mejor en ambas métricas (−20,5% en tarea y −3,4% en general, con intervalo que cruza cero en esta última) y ocupa 28,6 MB menos.
+Frente a unsloth IQ4_NL y Q4_K_S, este fichero es mejor en texto de tarea (KL 0,02888 frente a 0,03276 y 0,02842 respectivamente) pero peor en texto general (0,02058 frente a 0,01908 y 0,01729).
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados en la información proporcionada; al ser una cuantización del modelo base, hereda los sesgos de Qwen3.5-4B, que no se detallan.
-- Riesgo de alucinación: no cuantificado; la evaluación se limita a GSM8K e IFEval y a la divergencia KL, sin pruebas de veracidad factual.
-- Limitaciones de contexto: la longitud de contexto del modelo base no se indica en la información disponible.
-- Limitaciones de idioma: los idiomas soportados no están disponibles en la información proporcionada.
-- Ámbito de la evaluación: el autor advierte que las 144 ventanas KL y las 500 preguntas se ejecutaron sobre una única compilación de cada fichero, y que la KL mide cercanía al modelo original, no precisión en tarea.
-- Modelo solo de texto: la model card indica explícitamente "Text model only"; no hay soporte multimodal.
-- Dependencia de hardware: la ventaja de ejecución íntegra en NPU está documentada únicamente para el Snapdragon 8 Elite Gen 5 (SM8850) con llama.cpp b12079 y backend Hexagon; no se verifican otros SoC ni otras versiones del runtime.
-- Comparadores no ejecutados en dispositivo: el autor señala que ni IQ4_NL ni Q4_K_S se ejecutaron en el teléfono en este estudio, aunque ambos usan solo tipos soportados por Hexagon.
-- Licencia: Apache 2.0, sin restricciones documentadas para uso comercial; conviene verificar igualmente las condiciones del modelo base Qwen3.5-4B.
-- Reproducibilidad: el autor publica receipts en el repositorio canónico (tabla de fidelidad, respuestas, log de dispositivo, recuento de operaciones rechazadas y lista de tensores Q8_0), pero no se detalla la composición del corpus de calibración.
+- Sesgos conocidos: no documentados en la información proporcionada; al heredar el modelo base Qwen3.5-4B, arrastra los sesgos de este, no evaluados aquí.
+- Riesgo de alucinación: no cuantificado; el modelo cambia el 20 % de las respuestas del original en MMLU-Pro (2.092 de 12.032), lo que implica divergencias respecto a bf16.
+- Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están disponibles; el modelo card no los especifica.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe conservarse la atribución y cumplir las condiciones del modelo base Qwen3.5-4B.
+- Todas las evaluaciones se realizaron con decodificación greedy y modo thinking desactivado; el comportamiento con thinking activado o con sampling no está documentado.
+- El fichero v2 se midió en BFCL; las métricas de MMLU-Pro, GSM8K, IFEval y EvalPlus corresponden al fichero v1 con corrección de escala, aunque el autor afirma que v2 da respuestas idénticas (IFEval ±1).
+- La ventaja en fidelidad es específica de tareas de instrucciones y tool calling; en texto general, Q4_K_S de unsloth es un 16 % más cercano al original.
+- El rendimiento en NPU solo está verificado en Snapdragon 8 Elite Gen 5; otros SoC con Hexagon no están probados.
+- No se documenta soporte en vLLM, TGI u Ollama; el despliegue está atado a llama.cpp.
 
 ## Enlaces
 
 - Repositorio en Hugging Face: https://huggingface.co/qualcomm-ai-hub-community/Qwen3.5-4B-NPU-fraQtl
-- Repositorio canónico y receipts del autor: https://huggingface.co/fraQtl/Qwen3.5-4B-NPU-GGUF
+- Repositorio canónico del autor: https://huggingface.co/fraQtl/Qwen3.5-4B-NPU-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Cuantizaciones de referencia de unsloth: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
-- Paper de GPTQ (Frantar et al., 2022): no disponible como enlace en la información proporcionada
-- llama.cpp y backend Hexagon: no disponible como enlace en la información proporcionada
-- Intel AutoRound: no disponible como enlace en la información proporcionada
+- Cuantización de referencia unsloth: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
+- Paper de GPTQ (Frantar et al., 2022): https://arxiv.org/abs/2210.17323
+- llama.cpp: https://github.com/ggml-org/llama.cpp
+- Benchmark BFCL v4: https://gorilla.cs.berkeley.edu/leaderboard.html

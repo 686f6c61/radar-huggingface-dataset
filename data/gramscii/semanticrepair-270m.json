@@ -58,7 +58,7 @@
   "disabled": false,
   "removed": true,
   "removed_at": "2026-11-16T03:01:28.027Z",
-  "removal_pattern": "isolated",
+  "removal_pattern": "account_gone",
   "renamed_to": "Gramscii-IT/SemanticRepair-270M",
   "renamed_at": "2026-11-11T02:49:36.975Z",
   "benchmarks": [],

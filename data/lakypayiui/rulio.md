@@ -2,102 +2,81 @@
 
 ## Resumen
 
-RULIO es un modelo de lenguaje publicado en Hugging Face por el usuario Lakypayiui bajo el identificador `Lakypayiui/RULIO`. Se distribuye exclusivamente en formato GGUF y esta etiquetado como «conversational», lo que apunta a un uso orientado a dialogo, pero su model card no contiene ninguna documentacion tecnica: unicamente la declaracion de licencia. No hay informacion publicada sobre arquitectura, datos de entrenamiento, longitud de contexto ni idiomas soportados.
+RULIO es un modelo de lenguaje publicado en Hugging Face por el usuario Lakypayiui bajo licencia Academic Free License 3.0 (AFL-3.0). Se distribuye en formato GGUF, lo que lo orienta a inferencia local y a despliegues con llama.cpp u otras herramientas compatibles con este formato. El repositorio tiene un tamano de 55,2 GB, coherente con un modelo de aproximadamente 4.650 millones de parametros en varias cuantizaciones, y acumula 196 descargas y 1 like desde su creacion el 7 de octubre de 2026.
 
-El dato objetivo mas relevante es el recuento de parametros: 4.647.450.147 (aproximadamente 4,65 mil millones), lo que situa al modelo en la franja de los modelos densos de tamano medio, habitual en despliegues en GPU de consumo. El repositorio ocupa 3,4 GB, un tamano coherente con pesos cuantizados en lugar de pesos en precision completa, que rondarian los 9,3 GB.
+La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluacion. Los metadatos de Hugging Face lo etiquetan como `conversational` y `endpoints_compatible`, lo que sugiere un uso orientado a dialogo y compatibilidad con endpoints de inferencia, pero no se aporta ninguna especificacion adicional verificable.
 
-Su relevancia actual es limitada y debe interpretarse con cautela: el repositorio registra 0 descargas y 0 «likes», la model card esta vacia y la busqueda web no ha devuelto ningun paper, blog, repositorio auxiliar ni demo asociada. Se trata, por tanto, de una publicacion sin validacion externa ni trazabilidad tecnica, y cualquier evaluacion seria exige una inspeccion directa de los pesos y una bateria de pruebas propia.
+Por tanto, esta ficha se limita a los datos objetivos disponibles (parametros, formato, licencia, fechas y tamano del repositorio) e indica explicitamente "no disponible" en todos aquellos apartados que el autor no ha documentado. Se recomienda precaucion antes de usar el modelo en produccion, dado el nivel de documentacion practicamente nulo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (no documentada en la model card) |
-| Parametros totales | 4.647.450.147 (aproximadamente 4,65 mil millones) |
-| Parametros activos | no disponible (no hay indicios de que sea un modelo MoE) |
+| Arquitectura | no disponible |
+| Parametros totales | 4.647.450.147 (aprox. 4,65 mil millones) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF; los niveles concretos (Q4_K_M, Q5_K_M, Q8_0, etc.) no estan documentados |
-| Idiomas soportados | no disponibles |
-| Licencia | AFL-3.0 (Academic Free License 3.0) |
-| Formato de pesos | GGUF; no se publican safetensors en el repositorio |
-
-Datos adicionales del repositorio: tamano 3,4 GB, 0 descargas, 0 likes, etiquetas `gguf`, `endpoints_compatible`, `region:us`, `conversational`. Fecha de creacion registrada: 2026-10-07; fecha de ultima actualizacion: 2026-10-07.
+| Tipos de cuantizacion | no disponible (el repo contiene pesos en formato GGUF, pero no se detallan las variantes) |
+| Idiomas soportados | no disponible |
+| Licencia | Academic Free License 3.0 (AFL-3.0) |
+| Formato de pesos | GGUF (tambien aparece `safetensors` en los metadatos de parametros) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card de `Lakypayiui/RULIO` no describe la arquitectura, el numero de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruccion supervisada. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, mezcla de expertos, hibridos SSM-transformer, etc.).
+No se ha publicado informacion sobre la arquitectura del modelo. El numero de parametros (4.647.450.147) es compatible con un transformer denso de escala 4B-5B, pero el autor no confirma si se trata de un transformer clasico, un modelo MoE, un modelo hibrido o cualquier otra variante. Tampoco se documenta el tokenizador, la longitud de contexto nativa ni el vocabulario.
 
-Los unicos indicios indirectos son la etiqueta `conversational` y el recuento de parametros, compatibles con un transformer decoder-only de aproximadamente 4,65 mil millones de parametros, pero esto es una inferencia y no una especificacion confirmada. El repositorio solo contiene artefactos GGUF, por lo que no es posible auditar pesos originales en precision completa ni verificar la tokenizer o el preprocesado asociados.
+Respecto al entrenamiento, la model card no incluye numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. Toda esta informacion debe considerarse "no disponible".
 
 ## Capacidades
 
-- Generacion de texto conversacional: es la unica capacidad sugerida por las etiquetas del repositorio. No hay evaluacion publicada que la confirme.
-- Razonamiento, matematicas y generacion de codigo: no disponibles; no hay datos ni ejemplos en la informacion proporcionada.
-- Tool calling / function calling: no disponible; no se documenta ninguna plantilla de herramientas ni formato de llamadas.
+- Generacion de texto conversacional: la etiqueta `conversational` de Hugging Face sugiere que el modelo esta pensado para dialogos multi-turno, aunque no se detalla su calidad ni sus capacidades reales.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de infraestructuras de inferencia compatibles, aunque no se especifica cuales.
+- Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; no se declara ninguna lista de idiomas.
-- Capacidades especiales (modo pensamiento, vision, audio): no disponibles; no hay indicios en las etiquetas ni en la model card.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse mediante los Inference Endpoints de Hugging Face, aunque no se detalla la configuracion.
+- Capacidades multilingues: no disponible (no se declaran idiomas).
+- Capacidades especiales (vision, audio, modo thinking): no disponible.
 
 ## Casos de uso
 
-Los siguientes escenarios son aplicaciones plausibles para un modelo conversacional de aproximadamente 4,65 mil millones de parametros, pero ninguno esta respaldado por documentacion o evaluacion del autor. Deben validarse con pruebas propias antes de cualquier uso en produccion.
+Dado que no se documentan capacidades especificas, los casos de uso que se enumeran a continuacion son genericos para un modelo conversacional de ~4,65B en formato GGUF y deben validarse empiricamente antes de adoptarlos:
 
-- Prototipado de asistentes conversacionales en local: al ser un GGUF de 3,4 GB, puede cargarse en un portatil con 8-16 GB de RAM mediante llama.cpp u Ollama para experimentar con dialogos multi-turno sin coste de API. La ventana de contexto real debe medirse empiricamente, ya que no esta declarada.
-- Generacion de texto en entornos con requisitos de privacidad: al ejecutarse integramente en hardware propio, permite procesar borradores, resumenes o correspondencia interna sin enviar datos a servicios externos. Es el escenario mas defendible ante la ausencia de garantias de calidad.
-- Clasificacion y etiquetado de texto asistido: uso como preanotador en pipelines de anotacion humana, con revision posterior obligatoria dado que no hay datos de precision ni de calibracion.
-- Chatbot de soporte de bajo riesgo: respuestas a preguntas frecuentes o enrutado inicial de consultas en un flujo donde un humano o un sistema de reglas valide la salida final.
-- Experimentacion academica y reproducibilidad: servir como linea base en estudios comparativos de modelos pequenos en formato GGUF, siempre que se documente la revision exacta del archivo descargado y su hash.
-- Fine-tuning posterior sobre dominio especifico: los GGUF no son el formato idoneo para reentrenamiento, por lo que este caso solo seria viable si el autor o un tercero publica los pesos originales en safetensors, algo que no ocurre en este repositorio.
-- Evaluacion de herramientas de inferencia: uso del modelo como banco de pruebas para medir latencia, consumo de VRAM y throughput de distintos backends (llama.cpp, Ollama, servidores compatibles con OpenAI) en un modelo de 4,65 mil millones de parametros.
+- Prototipado de chatbots locales: al distribuirse en GGUF, puede ejecutarse en estaciones de trabajo sin GPU dedicada mediante llama.cpp u Ollama, lo que facilita experimentar con un asistente conversacional en local sin depender de APIs externas.
+- Inferencia en el borde (edge): un modelo de ~4,65B cuantizado cabe en equipos con recursos moderados, lo que permite desplegar asistentes en portatiles o mini-PC para tareas de baja latencia y sin conexion.
+- Generacion de texto asistida en entornos de escritorio: integracion en editores o herramientas ofimaticas mediante servidores compatibles con la API de OpenAI (si el modelo respeta ese contrato, algo que no se confirma).
+- Filtrado y clasificacion de texto: uso como modelo base para tareas de etiquetado o resumen simple, siempre que se valide su calidad en el dominio concreto.
+- Educacion y experimentacion: util para investigadores que quieran estudiar el comportamiento de un modelo de ~4,65B con licencia permisiva sin depender de pesos propietarios.
+- Evaluacion comparativa interna: servir como linea base en pipelines de evaluacion propios frente a otros modelos de tamano similar.
+
+En todos los casos, la ausencia de documentacion obliga a realizar una evaluacion previa rigurosa antes de cualquier uso en produccion.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench, AGIEval ni de ninguna otra suite, ni en la model card ni en los resultados de busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-Las cifras de VRAM son estimaciones calculadas a partir del recuento de parametros (4,65 mil millones) y no mediciones publicadas:
-
-- Precision completa (FP32): aproximadamente 18,6 GB de VRAM. Solo viable en A100 40 GB, H100 o GPU profesionales con memoria amplia.
-- Media precision (FP16/BF16): aproximadamente 9,3 GB de pesos, mas 1-3 GB de cache KV y activaciones. Requiere GPU de 12-16 GB como RTX 4070 Ti Super, RTX 4080 o RTX 4090.
-- Cuantizacion de 8 bits: aproximadamente 4,7 GB de pesos; cabe en GPU de consumo de 8 GB (RTX 3060 Ti, RTX 4060) con contexto corto y en Apple Silicon con memoria unificada.
-- Cuantizacion de 4 bits: aproximadamente 2,3-2,7 GB de pesos; el repositorio de 3,4 GB es coherente con una cuantizacion en este rango anadida de tokenizer y metadatos. Cabe en GPU de 6-8 GB y en CPU con 8 GB de RAM.
-- GPU recomendadas: para produccion con lotes moderados, una RTX 4090 (24 GB) o L4 (24 GB) resulta suficiente en FP16; para servir varias instancias, A100 40 GB u H100. No se dispone de datos de latencia ni de throughput.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y bindings como llama-cpp-python son las rutas naturales al ser un GGUF. vLLM soporta GGUF de forma experimental y TGI esta orientado a safetensors, por lo que puede requerir conversion. Los Inference Endpoints de Hugging Face son compatibles segun la etiqueta del repositorio.
-- Latencia y throughput: no disponibles. Dependen del backend, del hardware y de la longitud de contexto efectiva, que tampoco esta documentada.
+- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo de ~4,65B en GGUF, las cuantizaciones de 4 bits suelen requerir en torno a 3-4 GB de memoria, las de 8 bits en torno a 5-6 GB y FP16 en torno a 9-10 GB; estos valores son estimaciones genericas y no estan confirmados por el autor.
+- GPU recomendadas: no disponible. Por tamano, un modelo de esta escala podria ejecutarse en GPUs consumer como RTX 3060 12 GB, RTX 4070 o RTX 4090 en cuantizaciones bajas, y en GPUs de datacenter (A100, H100) sin problema, pero no hay confirmacion.
+- Compatibilidad con GPU consumer: probable en cuantizaciones de 4-8 bits, no confirmado.
+- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF son las opciones naturales dado el formato; vLLM o TGI requeririan pesos en safetensors y no se confirma su disponibilidad.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No hay datos de rendimiento de RULIO, por lo que la comparativa se limita a caracteristicas estructurales. Las cifras de los modelos de referencia pertenecen a conocimiento general sobre sus publicaciones oficiales y no se han verificado en la busqueda web realizada.
-
-| Modelo | Parametros | Contexto | Licencia | Formatos | Benchmarks publicos |
-|---|---|---|---|---|---|
-| RULIO (Lakypayiui) | 4,65 mil millones | no disponible | AFL-3.0 | GGUF | no disponibles |
-| Qwen2.5 3B / 7B | 3,09 / 7,62 mil millones | hasta 128k en la variante 7B | Apache-2.0 (segun variante) | safetensors, GGUF | publicados por el autor |
-| Llama 3.2 3B | 3,21 mil millones | 128k | Llama 3.2 Community License | safetensors, GGUF | publicados por el autor |
-| Phi-3.5-mini | 3,8 mil millones | 128k | MIT | safetensors, GGUF | publicados por el autor |
-
-La diferencia practica principal no es de tamano, sino de trazabilidad: los tres modelos de referencia cuentan con model card detallada, evaluaciones publicadas y un ecosistema amplio de cuantizaciones verificadas y recetas de despliegue. RULIO no ofrece ninguna de esas garantias.
+No se dispone de informacion suficiente para establecer una comparativa fiable. El modelo no documenta arquitectura, contexto, rendimiento ni idiomas, por lo que cualquier comparacion con alternativas de ~4-5B (por ejemplo, familias como Qwen, Llama o Phi en esa escala) seria especulativa. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card solo declara la licencia. No hay informacion sobre arquitectura, datos de entrenamiento, tokenizer, contexto, idiomas ni sesgos.
-- Riesgo de alucinacion desconocido: sin evaluaciones publicadas no es posible estimar la tasa de alucinacion ni la fiabilidad factual. En un modelo sin alineacion documentada, este riesgo debe asumirse como alto.
-- Idiomas no declarados: no se puede confirmar el soporte de castellano ni de ninguna otra lengua, ni la calidad en cada una.
-- Longitud de contexto desconocida: cualquier integracion que dependa de contexto largo requiere una medicion previa; superar la ventana real puede degradar la salida de forma silenciosa.
-- Sesgos no evaluados: no hay analisis de sesgos de genero, raza, religion o ideologia. En produccion, esto obliga a filtros externos y supervision humana.
-- Licencia AFL-3.0: es una licencia permisiva aprobada por la OSI que permite uso comercial, pero impone obligaciones de atribucion y de inclusion del texto de licencia en las redistribuciones, ademas de condiciones sobre patentes. Conviene revisar el texto completo antes de integrarla en un producto.
-- Sin garantia de procedencia de los datos de entrenamiento: al no declararse la composicion del corpus, el usuario asume el riesgo legal derivado de posibles contenidos con derechos de autor.
-- Repositorio sin traccion: 0 descargas y 0 likes implican ausencia de validacion por parte de la comunidad. No existen informes de terceros sobre calidad, estabilidad ni comportamiento.
-- Fecha de creacion anomala: el repositorio figura como creado el 2026-10-07, una fecha incoherente con el contexto temporal habitual de publicacion de modelos. Conviene tratarlo como posible error de metadatos o publicacion de prueba.
-- Nomenclatura ambigua: el identificador `RULIO` no permite identificar una familia de modelos conocida, un autor con historial verificable ni una organizacion de investigacion.
+- Documentacion practicamente inexistente: la model card solo declara la licencia, sin informacion sobre arquitectura, entrenamiento, datos, sesgos o evaluacion.
+- Riesgo de alucinacion: no evaluado por el autor; debe asumirse un riesgo estandar en modelos de esta escala sin datos de alineacion publicados.
+- Sesgos conocidos: no disponibles; al no documentarse el dataset de entrenamiento, no es posible anticipar sesgos de genero, idioma, cultura o dominio.
+- Limitaciones de contexto e idioma: se desconoce la ventana de contexto y los idiomas soportados, lo que impide garantizar un comportamiento correcto en castellano u otros idiomas.
+- Licencia AFL-3.0: permite uso comercial, pero impone obligaciones (atribucion, inclusion de la licencia y, en su caso, liberacion de modificaciones). Conviene revisar el texto completo antes de distribuirlo en productos.
+- Procedencia y confianza: el autor es un usuario individual sin historial documentado en la informacion disponible; el modelo tiene muy pocas descargas (196) y un unico like, lo que reduce la validacion comunitaria.
+- Repositorio de gran tamano (55,2 GB): puede contener multiples cuantizaciones o artefactos no documentados; conviene inspeccionar los archivos antes de descargarlo completo.
+- Sin garantias de produccion: no hay evidencia publica de pruebas de robustez, seguridad o calidad, por lo que su uso en entornos criticos no esta recomendado sin una evaluacion propia.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Lakypayiui/RULIO
-- Paper: no disponible
-- Repositorio de codigo: no disponible
-- Blog o anuncio oficial: no disponible
-- Demo: no disponible
-- Resultados de busqueda web: la busqueda no devolvio ningun resultado relevante; unicamente enlaces genericos a YouTube (https://www.youtube.com/, https://music.youtube.com/, https://accounts.google.com/InteractiveLogin?service=youtube, https://www.youtube.com/feed) sin relacion con el modelo.
+- Modelo en Hugging Face: https://huggingface.co/Lakypayiui/RULIO
+- No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

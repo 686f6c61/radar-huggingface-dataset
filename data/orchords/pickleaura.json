@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "ORCHORDS/PickleAura",
+  "slug": "orchords-pickleaura",
+  "author": "ORCHORDS",
+  "url": "https://huggingface.co/ORCHORDS/PickleAura",
+  "created_at": "2026-11-27T13:45:51.000Z",
+  "updated_at": "2026-11-28T02:21:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "pytorch",
+    "cpu",
+    "cross-platform",
+    "pickleaura",
+    "conversational",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 4534425542,
+  "storage_human": "4.5 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

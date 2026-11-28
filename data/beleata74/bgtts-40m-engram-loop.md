@@ -2,57 +2,51 @@
 
 ## Resumen
 
-BgTTS-40M-Engram-Loop es un modelo de síntesis de voz (text-to-speech) para búlgaro e inglés desarrollado por el usuario beleata74, que predice el contenido acústico del habla a partir de texto escrito y lo combina con un códec externo (MioCodec) para dotarlo del timbre de un hablante de referencia. El modelo final de texto a código suma 40.181.218 parámetros y ocupa unos 153 MiB en SafeTensors FP32; el códec se descarga por separado. Es un fine-tuning de BgTTS-38M-V2 con dos modificaciones arquitectónicas concretas: un módulo de lookup de palabras y n-gramas de caracteres (inspirado en la investigación sobre "engram") y un bloque de encoder compartido ejecutado dos veces con puertas escalares.
+BgTTS-40M-Engram-Loop es un modelo de síntesis de voz (text-to-speech) bilingüe búlgaro-inglés desarrollado por el usuario beleata74, especializado en clonación de voz mediante referencia de audio. El modelo no genera audio directamente: predice contenido de habla a partir de texto escrito, y un modelo separado (MioCodec v2, de Aratako) aplica el timbre del hablante de referencia y renderiza una onda de 44,1 kHz mono. Esta separación de responsabilidades permite clonar voces con tan solo 3-8 segundos de audio de referencia, incluso si la referencia está en un idioma distinto al texto solicitado.
 
-La relevancia del modelo es su tamaño reducido para una tarea de clonación de voz multilingüe: con 40 millones de parámetros y una ventana de segmentos de entrenamiento de hasta 12 segundos, apunta a despliegues ligeros en CPU o GPU de consumo. La clonación de voz no se realiza en el modelo de texto a código, sino que la identidad del hablante entra únicamente en el códec mediante un vector de 128 dimensiones extraído de una referencia de audio de 3 a 8 segundos, que puede estar en un idioma distinto al del texto solicitado.
+Con 40.181.218 parámetros y un peso aproximado de 153 MiB en FP32 SafeTensors, es un modelo deliberadamente compacto que puede ejecutarse tanto en CPU como en GPU. Se inicializó desde BgTTS-38M-V2 (paso 258.680) y se afinó durante tres épocas sobre 1.285.440 enunciados (648.813 segmentos en búlgaro, 1.336,4 horas; 636.627 segmentos en inglés, 679,4 horas). La versión publicada corresponde a la época 3, paso 30.129.
 
-El modelo se publica bajo licencia Apache 2.0, con pesos en safetensors y código de inferencia en PyTorch, y la versión principal corresponde a la época 3, paso 30.129. La model card incluye una demostración de doblaje de 29 segundos al búlgaro con referencias de voz por línea de cada actor.
+La relevancia actual radica en su enfoque técnico: incorpora un módulo de "engram" (representaciones entrenables de palabras completas y secuencias locales de tres y cinco caracteres, inspirado en la investigación de DeepSeek) para mejorar la pronunciación contextual y el acento búlgaro, y una adaptación de capas compartidas (inspirada en la investigación de Z.ai) que ejecuta el tercer bloque del codificador dos veces con pesos compartidos. Es una pieza singular en el ecosistema TTS open source por su tamaño reducido, su licencia Apache 2.0 y su soporte nativo de búlgaro, un idioma poco representado en modelos de voz.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder Transformer bidireccional de caracteres (4 bloques, ancho 384, 6 cabezas, FFN 1.536) + decoder causal (8 bloques, ancho 384, 6 cabezas, FFN 1.536) con cross-attention; módulo de lookup de palabra y n-gramas (engram) y bloque de encoder compartido con puertas escalares |
+| Arquitectura | Transformer encoder-decoder con cross-attention; encoder bidireccional de 4 bloques, decoder causal de 8 bloques; anchura 384, 6 cabezas, feed-forward 1.536 |
 | Parametros totales | 40.181.218 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible; segmentos de entrenamiento de hasta 12 segundos de audio, con troceado y pausa entre fragmentos en la inferencia |
-| Tipos de cuantizacion | no disponible (pesos publicados en FP32 SafeTensors) |
-| Idiomas soportados | búlgaro (bg) e inglés (en) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible (segmentos de entrenamiento de hasta 12 segundos) |
+| Tipos de cuantizacion | FP32 (SafeTensors); no se documentan otras cuantizaciones |
+| Idiomas soportados | Búlgaro (bg), inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (FP32, ~153 MiB); código de inferencia en PyTorch; el códec MioCodec se descarga aparte |
-| Frecuencia de muestreo de salida | 44,1 kHz mono (vía MioCodec) |
-| Vocabulario de salida | 12.800 códigos MioCodec + símbolo de fin de habla, un código cada 40 ms |
-| Parametros añadidos (engram) | 2.004.704 |
-| Parametros añadidos (bloque compartido) | 770 |
+| Formato de pesos | SafeTensors (PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un sistema de dos etapas: un modelo de texto a código (el publicado aquí) y un códec neuronal separado, MioCodec-25Hz-44.1kHz-v2, que convierte los códigos en forma de onda. La etapa de texto a código parte de los pesos de BgTTS-38M-V2 en el paso 258.680, a los que se elimina la proyección de condicionamiento de hablante. El encoder es un Transformer bidireccional a nivel de carácter con cuatro bloques que alimenta, mediante cross-attention, un decoder causal de ocho bloques; ambos con ancho 384, seis cabezas y anchura feed-forward de 1.536. El decoder predice uno de 12.800 códigos MioCodec cada 40 ms o un símbolo de fin de habla.
+El modelo sigue una arquitectura encoder-decoder. Un codificador bilingüe a nivel de carácter con cuatro bloques Transformer bidireccionales alimenta, mediante cross-attention, un decodificador causal de ocho bloques. Ambos usan anchura 384, seis cabezas de atención y anchura feed-forward de 1.536. El decodificador predice uno de los 12.800 códigos de MioCodec cada 40 ms, o un símbolo de fin de habla. La voz no entra en el modelo de texto: solo se aplica en el codec, mediante un vector de 128 dimensiones extraído de la referencia de audio.
 
-Durante las épocas 1 y 2 se añadió un módulo de lookup, tras el segundo bloque del encoder, que recupera representaciones entrenables de la palabra completa y de sus secuencias locales de tres y cinco caracteres; una puerta pondera esa información según el texto circundante en cada letra. La proyección de salida de este módulo se inicializó a cero y añade 2.004.704 parámetros. En la época 3 se ejecutó el tercer bloque del encoder dos veces con pesos compartidos y se añadieron dos puertas escalares por posición de texto (770 parámetros entrenables en total); la segunda actualización se inicializó a cero y, antes de continuar el entrenamiento, el modelo convertido reprodujo exactamente los logits de la época 2 en los ejemplos comprobados y los mismos códigos muestreados para un prompt y semilla fijos. Se continuó el estado de AdamW y el calendario de learning rate.
-
-El conjunto de fine-tuning contiene 1.285.440 enunciados: 648.813 segmentos en búlgaro (1.336,4 horas) y 636.627 en inglés (679,4 horas). Las fuentes inglesas son LibriTTS-R y Hi-Fi TTS. Se excluyeron transcripciones con dígitos y se eliminaron duplicados por hash de audio durante el montaje del dataset. Cada época supuso 10.043 pasos de optimizador, con entropía cruzada de siguiente código y de fin de habla, autocast BF16 con pesos FP32, AdamW (β₁ 0,9, β₂ 0,95, weight decay 0,01) y microbatches de 32.
+El entrenamiento partió de los pesos publicados de BgTTS-38M-V2 en el paso 258.680, eliminando su proyección de condicionamiento de hablante. En las épocas 1 y 2 se añadió un módulo de engram (2.004.704 parámetros) que, tras el segundo bloque del codificador, consulta representaciones entrenables de palabra completa y de secuencias locales de tres y cinco caracteres, con una compuerta que pondera esa información según el contexto en cada letra; su proyección de salida se inicializó a cero. En la época 3 se ejecutó el tercer bloque del codificador dos veces con pesos compartidos y dos compuertas escalares por posición de texto (770 parámetros entrenables), con la segunda actualización inicializada a cero; antes de continuar el entrenamiento, el modelo convertido reprodujo exactamente los logits de la época 2 en los ejemplos verificados y los mismos códigos muestreados para un prompt y semilla fijos. Se continuó el estado de AdamW y el schedule de learning rate. El split de fine-tuning contuvo 1.285.440 enunciados: 648.813 segmentos búlgaros (1.336,4 horas) y 636.627 segmentos ingleses (679,4 horas), con fuentes inglesas LibriTTS-R y Hi-Fi TTS.
 
 ## Capacidades
 
-- Síntesis de voz a partir de texto en búlgaro e inglés con una referencia de voz de 3 a 8 segundos de un único hablante.
-- Clonación de voz: la identidad del hablante se transfiere mediante un vector de 128 dimensiones extraído de la referencia por el códec; la referencia puede estar en un idioma distinto al del texto.
-- Predicción propia de la duración del habla, sin necesidad de un modelo de duración externo.
-- Pronunciación contextual: el módulo de engram busca representaciones de palabras y n-gramas de caracteres para mejorar la pronunciación, incluido el acento léxico del búlgaro.
-- Manejo de entradas largas mediante troceado automático con inserción de una pausa breve entre fragmentos.
-- Reproducibilidad: la semilla (`--seed`) permite obtener lecturas alternativas de un mismo texto.
-- Inferencia en CPU o CUDA (`--device cpu` / `--device cuda`).
-- No se documentan en la información disponible capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada más allá de la referencia de voz.
+- Síntesis de voz (text-to-speech) a partir de texto plano en búlgaro e inglés.
+- Clonación de voz mediante referencia de audio de 3-8 segundos de un solo hablante, incluso si la referencia está en un idioma distinto al texto.
+- Predicción autónoma de la duración del habla generada.
+- Procesamiento de números y abreviaturas tal como se escriben (el autor recomienda escribirlos como deben sonar).
+- Segmentación automática de entradas largas en fragmentos con pausas breves entre ellos.
+- Generación determinista controlable mediante semilla (`--seed`) para obtener lecturas alternativas.
+- Ejecución en CPU y en GPU (CUDA).
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada más allá de la referencia de voz.
 
 ## Casos de uso
 
-- Doblaje de vídeo al búlgaro: la model card demuestra el doblaje de 29 segundos de una serie usando la línea original de cada actor como referencia de voz por línea; el modelo predice su propia duración y el habla generada se ajusta a la escena después de la síntesis.
-- Audiolibros y narración en búlgaro e inglés: con una referencia de 3 a 8 segundos se puede mantener una voz consistente a lo largo de varias líneas reutilizando el objeto de voz devuelto por `reference_voice`, adecuado para textos largos troceados automáticamente.
-- Locución para medios y boletines: la frase de ejemplo de la model card ("Добро утро. Вече сме в ефир.") ilustra el uso para aperturas y continuidad en emisión, con control de semilla para regenerar tomas.
-- Prototipado de asistentes de voz bilingües búlgaro-inglés: el modelo acepta referencias en un idioma distinto al del texto, lo que permite clonar una voz para contenido en ambos idiomas con un único registro de referencia.
-- Síntesis ligera en entornos sin GPU: con 40 millones de parámetros y pesos FP32 de ~153 MiB, la inferencia en CPU es viable para volúmenes moderados y pruebas de integración.
-- Localización de contenido educativo o corporativo: conversión de guiones escritos a audio en búlgaro con la voz de un presentador concreto, escribiendo números y abreviaturas tal como deben sonar y usando la puntuación para el fraseo.
-- Investigación en arquitecturas TTS de bajo parámetro: la combinación de lookup tipo engram y capas compartidas con puertas escalares sirve como banco de pruebas reproducible (se documenta la equivalencia exacta de logits tras la conversión).
+- Doblaje de vídeo y series: el modelo permite sustituir diálogos originales por voz sintetizada en búlgaro usando cada línea del actor original como referencia de voz, como demuestra el clip de 29 segundos de *Dark Matter* incluido en la model card; es adecuado porque la referencia puede ser del idioma original y el texto de destino en búlgaro.
+- Audiolibros y narración: con una grabación de 3-8 segundos de un narrador se puede generar voz consistente para textos largos, aprovechando la segmentación automática de entradas y la reutilización de una misma voz entre líneas mediante la API de Python.
+- Atención al cliente automatizada en búlgaro: permite generar respuestas habladas con la voz de un agente de referencia, útil para empresas búlgaras que necesitan TTS en su idioma nativo, poco cubierto por modelos comerciales.
+- Accesibilidad y lectura de pantalla: síntesis en CPU (sin GPU) para convertir texto a voz en aplicaciones de lectura, gracias a su tamaño de 153 MiB en FP32 y su soporte de ejecución en CPU.
+- Localización de contenido educativo: traducción y doblaje de materiales en inglés a búlgaro manteniendo el timbre del profesor original, con control de semilla para reproducir lecturas.
+- Prototipado rápido de asistentes de voz: al ser un modelo pequeño con licencia Apache 2.0, se puede integrar en demos y pruebas de concepto sin coste de licencia, usando el Space de demostración como referencia de comportamiento.
+- Generación de voces para videojuegos o animación: clonación de voces de referencia para personajes, con la posibilidad de ajustar la lectura mediante semilla.
 
 ## Benchmarks y rendimiento
 
@@ -60,43 +54,41 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma explícita; los pesos del modelo de texto a código son ~153 MiB en FP32, a lo que se suma el códec MioCodec descargado aparte. El conjunto es de escala muy reducida.
-- GPU recomendadas: no se especifican modelos concretos; la model card indica que la aceleración NVIDIA requiere una build de PyTorch y torchaudio con CUDA compatible, instalada antes de los requisitos.
-- GPU de consumo: por el tamaño (40 M de parámetros, repo de 0,5 GB), es esperable que quepa en cualquier GPU de consumo con CUDA, aunque no se publican cifras de VRAM verificadas.
-- CPU: la síntesis en CPU funciona según la model card (`--device cpu`).
-- Opciones de despliegue: script `synthesize.py` del repositorio con PyTorch, más `huggingface_hub>=1.0` para la descarga; se requiere Python 3.12 o 3.13. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponible.
+- VRAM estimada para inferencia: el modelo de texto ocupa aproximadamente 153 MiB en FP32 SafeTensors; el codec MioCodec v2 es una descarga separada cuyo peso no se especifica en la información disponible. En conjunto, la huella es muy reducida y cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: cualquier GPU NVIDIA con soporte CUDA es suficiente; no se requieren A100 ni H100. El autor documenta aceleración con CUDA y también ejecución en CPU.
+- Cabe en GPU consumer: sí, en cualquier RTX o GTX compatible con la versión de CUDA de PyTorch instalada, dado el reducido tamaño del modelo.
+- Opciones de despliegue: el repositorio incluye `synthesize.py` con carga de modelos (`load_models`), extracción de voz de referencia (`reference_voice`) y síntesis (`synthesize`); requiere Python 3.12 o 3.13, PyTorch y torchaudio. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplicables a un modelo TTS de este tipo).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos alternativos comparables, por lo que la comparación cuantitativa no está disponible. Como referencia estructural, el propio modelo se apoya en dos componentes externos citados en su model card: el checkpoint base BgTTS-38M-V2 (mismo autor, del que hereda arquitectura y pesos iniciales) y el códec Aratako/MioCodec-25Hz-44.1kHz-v2, que aporta la renderización a 44,1 kHz y el condicionamiento de timbre.
+| Modelo | Parametros | Idiomas | Clonacion de voz | Licencia | Contexto |
+|---|---|---|---|---|---|
+| BgTTS-40M-Engram-Loop | 40,18 M | bg, en | Si (referencia de 3-8 s) | Apache 2.0 | No disponible |
+| BgTTS-38M-V2 (modelo base) | ~38 M | bg, en | Si | No disponible en la informacion | No disponible |
+| MioCodec v2 (Aratako) | No disponible | No aplica (codec) | No aplica | No disponible en la informacion | No disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| BgTTS-40M-Engram-Loop | 40.181.218 | no disponible (segmentos de hasta 12 s) | Apache 2.0 | Hugging Face, pesos safetensors |
-| BgTTS-38M-V2 (base) | no disponible | no disponible | no disponible | Hugging Face |
-| MioCodec-25Hz-44.1kHz-v2 (códec) | no disponible | no disponible | no disponible | Hugging Face |
+No se dispone de datos de benchmarks ni de otros modelos TTS comparables en la información proporcionada para establecer una comparación de rendimiento objetiva.
 
 ## Limitaciones y advertencias
 
-- Cobertura lingüística limitada a búlgaro e inglés; no se documenta soporte de otros idiomas.
-- Los segmentos de entrenamiento no superan los 12 segundos; las entradas largas se trocean con una pausa breve entre fragmentos, lo que puede afectar a la prosodia en textos extensos.
-- Se excluyeron del entrenamiento las transcripciones con dígitos: es necesario escribir números y abreviaturas tal como deben sonar.
-- La clonación de voz entraña riesgos de suplantación y uso indebido; la licencia Apache 2.0 permite uso comercial sin restricciones adicionales documentadas, por lo que la responsabilidad sobre el consentimiento de las voces de referencia recae en el usuario.
-- Riesgo de alucinación acústica y de pronunciación incorrecta en palabras fuera de dominio o en acentos no representados; no se publican métricas de inteligibilidad ni de similitud de hablante.
-- El modelo depende de un códec externo (MioCodec) cuya licencia y disponibilidad se rigen por su propio repositorio, no por el de este modelo.
-- No hay información sobre sesgos demográficos, de género o de acento en los datos de entrenamiento (LibriTTS-R, Hi-Fi TTS y corpus búlgaro no detallado).
-- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, y la fecha de creación indicada es 2026-11-24; se trata de una publicación reciente sin validación comunitaria.
-- No se documentan cifras de latencia, throughput ni requisitos de VRAM verificados para producción.
+- Sesgos conocidos: no documentados en la información disponible; al entrenarse con LibriTTS-R y Hi-Fi TTS para inglés y fuentes búlgaras no especificadas, puede heredar sesgos de esos corpus (acentos, registros y demografía de los hablantes).
+- Riesgo de alucinación: en TTS se traduce en pronunciaciones incorrectas o lecturas erráticas de números y abreviaturas; el autor recomienda escribirlos como deben sonar.
+- Limitaciones de contexto: los segmentos de entrenamiento fueron de hasta 12 segundos; las entradas largas se dividen en fragmentos con pausas breves, lo que puede afectar a la prosodia en textos muy largos.
+- Limitaciones de idioma: solo búlgaro e inglés; no se documenta soporte de otros idiomas.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el codec MioCodec v2 es una descarga separada cuya licencia no se detalla en la información disponible y debe verificarse antes de producción.
+- Caveat para producción: el modelo predice su propia duración; en aplicaciones de doblaje, el autor indica que el habla generada debe ajustarse a la escena después de la síntesis. La calidad depende de la limpieza de la grabación de referencia (un solo hablante, 3-8 segundos de habla continua).
+- La versión publicada es la época 3, paso 30.129; no se documentan evaluaciones formales de calidad (MOS u otras).
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/beleata74/BgTTS-40M-Engram-Loop
-- README en búlgaro: https://huggingface.co/beleata74/BgTTS-40M-Engram-Loop/blob/epoch-3/README.bg.md
-- Demostración de doblaje (MP4, 29 s): https://huggingface.co/beleata74/BgTTS-40M-Engram-Loop/resolve/epoch-3/demo/dark-matter-bg-29s.mp4
+- README en búlgaro: https://huggingface.co/beleata74/BgTTS-40M-Engram-Loop/blob/main/README.bg.md
+- Demo en el navegador (Space): https://huggingface.co/spaces/beleata74/BgTTS-40M-Voice-Demo
 - Modelo base BgTTS-38M-V2: https://huggingface.co/beleata74/BgTTS-38M-V2
 - Checkpoint original del modelo base: https://huggingface.co/beleata74/BgTTS-38M-V2/tree/3f6ca06b3ca78352eb00d8e96349c0bedaa3d2f1
-- Códec MioCodec v2: https://huggingface.co/Aratako/MioCodec-25Hz-44.1kHz-v2
-- Investigación sobre engram: https://github.com/deepseek-ai/Engram
+- Codec MioCodec v2 (Aratako): https://huggingface.co/Aratako/MioCodec-25Hz-44.1kHz-v2
+- Clip de doblaje de demostración (29 s, MP4): https://huggingface.co/beleata74/BgTTS-40M-Engram-Loop/resolve/epoch-3/demo/dark-matter-bg-29s.mp4
+- Investigación Engram (DeepSeek): https://github.com/deepseek-ai/Engram
 - Investigación sobre capas compartidas (Z.ai): https://z.ai/blog/glm-5.4
 - Instalación de PyTorch: https://pytorch.org/get-started/locally/

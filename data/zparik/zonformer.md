@@ -2,125 +2,102 @@
 
 ## Resumen
 
-ZonFormer es una política de planificación de trabajos para clústeres por lotes, publicada por zParik (autores del manuscrito: Parikshieth Harish, Suhani Bhateja y Arun Pandian J) junto con el artículo «ZonFormer: learning cluster scheduling from simulation with a relational pointer transformer». El modelo decide qué trabajo en cola arrancar a continuación sobre un clúster de núcleos compartidos, y lo hace mediante un transformer pointer relacional que opera sobre los 128 trabajos más planificables de la cola. La atención entre trabajos incorpora un sesgo que marca qué pares caben simultáneamente en los núcleos libres, de modo que la política aprende implícitamente restricciones de empaquetado.
+ZonFormer es una política de planificación (scheduling) de trabajos para clústeres de computación de altas prestaciones (HPC), desarrollada por Parikshieth Harish, Suhani Bhateja y Arun Pandian J, y publicada en el repositorio de Hugging Face `zParik/zonformer`. No es un modelo de lenguaje: se trata de un transformer con arquitectura de pointer network que selecciona, en cada decisión de planificación, cuál de los 128 trabajos en cola debe arrancar a continuación en un clúster por lotes. El modelo incorpora un sesgo de atención entre pares de trabajos que codifica qué combinaciones caben simultáneamente en los núcleos libres, lo que le permite razonar sobre el empaquetado (packing) de recursos.
 
-El repositorio de Hugging Face no contiene solo los pesos: incluye 24 políticas entrenadas (20 del estudio de cinco semillas y 4 previas), 9 agentes comparadores y los ficheros CSV por traza con los que se generan todas las tablas y figuras del manuscrito. Se entrenó exclusivamente sobre cargas simuladas y se evaluó en 17 trazas del Parallel Workloads Archive, replicadas en un simulador dirigido por eventos, sin que ningún trabajo de esas 17 trazas entrara en entrenamiento, etiquetas ni recompensa.
+El modelo se entrena exclusivamente sobre cargas de trabajo simuladas y se evalúa sobre 17 trazas reales del Parallel Workloads Archive, replicadas en un simulador dirigido por eventos. Ningún trabajo de esas 17 trazas participó en el entrenamiento, las etiquetas ni la recompensa, lo que convierte la evaluación en una prueba de generalización fuera de distribución. La métrica principal es la media geométrica, sobre las 17 trazas, del *bounded slowdown* medio de la política dividido por el de F1-BF (la función de prioridad F1 con EASY backfilling), donde valores inferiores a 1 indican mejora sobre la referencia clásica.
 
-Su relevancia es doble: por un lado, la mejor receta (ZF-BC, clonación de conducta de F1-PC-BF) alcanza una ratio media de 1,087 frente a F1-BF con backfilling EASY en las cinco semillas, un resultado cercano a la heurística clásica; por otro, el repositorio publica resultados negativos y de alta varianza (ZF-RL frío llega a 5,922 de media y un control aleatorio a 11,681), lo que lo convierte en un banco de pruebas reproducible para investigación en scheduling con aprendizaje por refuerzo.
+La relevancia del trabajo reside en que la mejor variante (ZF-BC, clonación de comportamiento de F1-PC-BF) alcanza una ratio media de 1.087 con las cinco semillas por debajo de 1.15, mientras que aproximaciones de aprendizaje por refuerzo previas (DeepRM-style, RLScheduler-style) quedan en ratios de 5.6 y 8.8 respectivamente. El repositorio incluye código, políticas entrenadas, resultados por traza y scripts de reproducción, con licencia MIT.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer pointer relacional (atención job-a-job con sesgo de compatibilidad de empaquetado); 6 capas, 8 cabezas, d_model = 256 |
+| Arquitectura | Transformer con pointer network sobre los 128 trabajos más planificables, con sesgo de atención job-to-job basado en compatibilidad de recursos |
 | Parametros totales | no disponible |
-| Parametros activos | no aplica (no es un modelo MoE) |
-| Longitud de contexto | no aplica; ventana de observación de K = 128 trabajos visibles y H = 48 puntos temporales |
-| Tipos de cuantizacion | no disponible (se distribuyen archivos MaskablePPO en .zip; no hay versiones GGUF, ONNX ni cuantizadas) |
-| Idiomas soportados | no aplica (no es un modelo de lenguaje) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 128 trabajos en cola (ventana de decisión); longitud de secuencia del transformer no disponible |
+| Tipos de cuantizacion | no disponible (pesos en formato PyTorch para stable-baselines3) |
+| Idiomas soportados | no aplica (modelo de planificación, no lingüístico) |
 | Licencia | MIT |
-| Formato de pesos | .zip (archivo MaskablePPO de sb3-contrib 2.9.0) acompañado de hparams.json |
-| Espacio de acciones | 129 opciones: arrancar uno de los 128 trabajos visibles o esperar |
-| Algoritmo de entrenamiento | MaskablePPO (sb3-contrib 2.9.0), con recetas de clonación de conducta y destilación adicionales |
-| Libreria | stable-baselines3 / sb3-contrib 2.9.0 |
-| Tamano del repositorio | 1,1 GB (24 políticas ZonFormer, 9 comparadores y CSV de resultados) |
-| Descargas / likes | 261 descargas, 0 likes |
-| Fecha de publicacion | creado el 2026-10-17, actualizado el 2026-10-17 |
+| Formato de pesos | checkpoints de stable-baselines3 / PyTorch (no safetensors ni GGUF) |
 
 ## Arquitectura y entrenamiento
 
-ZonFormer es un transformer pointer sobre un conjunto variable de trabajos en cola. El extractor de características recibe una ventana de K = 128 trabajos visibles y H = 48 puntos temporales, con d_model = 256, 6 capas y 8 cabezas. La atención entre trabajos incorpora un sesgo que codifica qué pares de trabajos caben juntos en los núcleos libres, de forma que el modelo no solo ordena prioridades, sino que razona sobre el empaquetado simultáneo. La salida es una distribución sobre 129 acciones: iniciar uno de los 128 trabajos visibles o esperar. Los pesos distribuidos son archivos MaskablePPO de sb3-contrib 2.9.0, acompañados de su hparams.json.
+ZonFormer es un transformer relacional con cabeza de pointer network que opera sobre una observación compuesta por los 128 trabajos más planificables de la cola. La atención entre trabajos incorpora un sesgo que marca qué pares de trabajos caben juntos en los núcleos libres del clúster, de modo que el modelo puede evaluar directamente la viabilidad del empaquetado de recursos en lugar de inferirla a partir de características agregadas. El entorno es un Gymnasium con máscara de acciones, implementado sobre un simulador dirigido por eventos que modela nodos, colocación y ciclo de vida de los trabajos.
 
-El entrenamiento combina tres recetas. ZF-BC aplica clonación de conducta sobre F1-PC-BF (la función de prioridad F1 con backfilling); ZF-PD hace destilación de cartera con seis profesores; ZF-RL usa PPO anclado con crítico precalentado, partiendo de la política pre-estudio moe_a2p-ag_s0, que puntúa 1,011. ZF-RL frío repite PPO anclado pero con crítico sin precalentar. Todo el entrenamiento se hizo sobre cargas simuladas y la evaluación se realizó en un simulador dirigido por eventos sobre 17 trazas del Parallel Workloads Archive, con separación estricta entre entrenamiento y evaluación. El sufijo -AG de las políticas evaluadas indica el uso de una guarda de envejecimiento en el arnés de evaluación (no en los pesos): si un trabajo visible y arrancable lleva esperando más de 100 veces su estimación de runtime de usuario, la guarda arranca el más atrasado en lugar de la acción de la política. Los agentes comparadores se ejecutaron sin esa guarda.
+El entrenamiento combina tres recetas. ZF-BC aplica clonación de comportamiento sobre las decisiones de F1-PC-BF (F1 con backfilling y conocimiento de tiempos de ejecución). ZF-PD realiza destilación de una cartera de seis profesores. ZF-RL y ZF-RL cold aplican PPO anclado (anchored PPO) con crítico precalentado o frío, respectivamente, usando `sb3-contrib` y `maskable-ppo`. Los datos supervisados se generan con etiquetas de profesor sobre episodios simulados, y el generador de cargas se ajusta a diez trazas de entrenamiento. Cada receta se entrena con las semillas 0 a 4 y se puntúa en el paso final de entrenamiento, sin selección de checkpoint.
 
 ## Capacidades
 
-- Selección del siguiente trabajo a arrancar en un clúster por lotes, con política entrenada para minimizar el bounded slowdown.
-- Razonamiento relacional sobre hasta 128 trabajos en cola simultáneamente, incluyendo compatibilidad de empaquetado entre pares de trabajos.
-- Aprendizaje por imitación de heurísticas clásicas (clonación de conducta de F1-PC-BF y destilación de una cartera de seis profesores).
-- Aprendizaje por refuerzo con PPO enmascarado sobre acciones legales (MaskablePPO), con acción explícita de «esperar».
-- Evaluación reproducible por traza: cada fila de los CSV registra política, semilla, traza, bounded slowdown, fracción de capacidad ociosa y utilización.
-- Capacidades multilingües: no aplica; el modelo no procesa texto ni lenguaje natural.
-- Tool calling, agentes multi-paso, visión, audio y modo thinking: no disponibles; fuera del alcance del modelo.
+- Selección del siguiente trabajo a arrancar en un clúster por lotes, con razonamiento sobre compatibilidad de recursos entre pares de trabajos.
+- Planificación con máscara de acciones que restringe las decisiones a trabajos legalmente planificables.
+- Generalización a trazas no vistas: evaluación sobre 17 logs del Parallel Workloads Archive excluidos de entrenamiento.
+- Aprendizaje por imitación (clonación de comportamiento y destilación de cartera) y por refuerzo (PPO anclado).
+- Integración con el ecosistema stable-baselines3 y sb3-contrib (políticas MaskablePPO).
+- Evaluación con métricas de bounded slowdown, utilización, capacidad ociosa con trabajos en espera y guarda de envejecimiento (aging guard).
+- No soporta tool calling, agentes multi-paso generales, visión, audio ni capacidades multilingües: es un modelo de decisión específico de dominio.
 
 ## Casos de uso
 
-- Planificación de colas en clústeres HPC por lotes: la política elige el siguiente trabajo a arrancar entre los 128 más planificables; con la receta ZF-BC la ratio media de bounded slowdown es 1,087 frente a F1-BF, lo que la sitúa como alternativa aprendida a heurísticas de prioridad en backfilling EASY.
-- Investigación en scheduling con aprendizaje por refuerzo: el repositorio entrega 24 políticas entrenadas, 9 comparadores y los CSV por traza, de modo que un grupo puede reproducir las tablas del manuscrito sin reentrenar nada.
-- Evaluación comparativa de planificadores: los ficheros `results/seed_final/results.csv` (629 filas) y `results/wide_hetero_v2/results.csv` (874 filas) permiten contrastar políticas aprendidas, controles aleatorios y planificadores clásicos (F1, EASY, SJF, FCFS) sobre las mismas 17 trazas.
-- Sustitución de la función de prioridad en un simulador dirigido por eventos: al exponer una acción discreta sobre un conjunto acotado de trabajos visibles, la política se integra como módulo de decisión en un planificador simulado que ya calcule núcleos libres y estimaciones de runtime.
-- Destilación de heurísticas existentes en un clúster real: la receta ZF-BC demuestra que clonar F1-PC-BF produce políticas estables en las cinco semillas (rango 1,055–1,121), útil como paso previo antes de aplicar RL sobre datos propios.
-- Análisis de robustez y varianza entre semillas: los resultados publicados permiten estudiar por qué PPO anclado oscila entre 1,046 y 2,917 según la semilla y por qué un crítico frío deja hasta un 63 % de capacidad ociosa con trabajos en espera.
-- Docencia y divulgación: el par completo pesos + resultados por traza sirve para explicar el ciclo de imitación, destilación y RL en un dominio con métricas objetivas.
+- Planificación de colas en clústeres HPC de producción: el modelo selecciona el siguiente trabajo a lanzar sobre los nodos libres, sustituyendo o complementando funciones de prioridad clásicas como F1-BF con una política aprendida que, en la mejor variante, reduce el bounded slowdown medio un 8,7 % frente a F1-BF en las 17 trazas evaluadas.
+- Investigación en scheduling con aprendizaje: el repositorio incluye simulador, entorno Gymnasium, generador de cargas ajustado y scripts de benchmark, lo que permite reproducir experimentos y comparar nuevas políticas contra las líneas base clásicas y aprendidas ya puntuadas.
+- Sustitución de heurísticas dependientes de tiempos de ejecución exactos: F1-PC-BF obtiene 0,992 y F1-BF 1,000; ZF-BC se aproxima a ese rendimiento (1,087) sin requerir el conocimiento exacto de runtimes que F1-PC-BF asume, lo que es útil en entornos donde las estimaciones de duración son imprecisas.
+- Evaluación comparativa de algoritmos de RL para scheduling: el repositorio incluye agentes DeepRM-style y RLScheduler-style reimplementados y puntuados con la misma metodología, útiles como referencia en publicaciones y tesis.
+- Prototipado de políticas de planificación en simulación antes de desplegar en un gestor de colas real: el simulador dirigido por eventos permite validar políticas con trazas del Parallel Workloads Archive antes de integrarlas en un planificador de producción.
+- Estudio de robustez y varianza entre semillas: el barrido de cinco semillas por receta y los controles nulos (structured null, acciones aleatorias legales) permiten analizar la estabilidad del entrenamiento y detectar modos de fallo como el colapso de utilización observado en ZF-RL cold.
 
 ## Benchmarks y rendimiento
 
-La métrica es la media geométrica, sobre las 17 trazas, de la ratio entre el bounded slowdown medio de la política y el de F1-BF (F1 con backfilling EASY). Menor es mejor. Una semilla se considera cercana si su ratio es como máximo 1,15. Cada receta se entrenó con semillas 0 a 4 y se puntuó en el paso final de entrenamiento, sin selección de checkpoint.
+La métrica es la media geométrica, sobre 17 trazas, de la ratio entre el bounded slowdown medio de la política y el de F1-BF (menor es mejor). Una semilla se considera cercana si su ratio es como máximo 1,15.
 
-| Politica | Semillas | Ratio media | Rango entre semillas | Semillas cercanas |
+| Política | Semillas | Ratio media | Rango entre semillas | Semillas cercanas |
 |---|---|---|---|---|
-| ZF-BC (clonación de conducta de F1-PC-BF) | 5 | 1,087 | 1,055 – 1,121 | 5 de 5 |
-| ZF-PD (destilación de cartera de seis profesores) | 5 | 1,181 | 1,023 – 1,402 | 3 de 5 |
-| ZF-RL (PPO anclado, crítico precalentado) | 5 | 1,745 | 1,046 – 2,917 | 2 de 5 |
-| ZF-RL frío (PPO anclado, crítico sin precalentar) | 5 | 5,922 | 1,062 – 20,057 | 3 de 5 |
-| Agente estilo DeepRM | 3 | 5,647 | 3,842 – 8,631 | 0 de 3 |
-| Agente estilo RLScheduler | 3 | 8,840 | 8,391 – 9,137 | 0 de 3 |
-| Nulo estructurado (F1-DRL-RND) | 10 | 1,187 | 1,133 – 1,249 | 2 de 10 |
-| Control sin entrenar (acciones legales aleatorias) | 10 | 11,681 | 11,130 – 12,503 | 0 de 10 |
+| ZF-BC (clonación de F1-PC-BF) | 5 | 1,087 | 1,055 a 1,121 | 5 de 5 |
+| ZF-PD (destilación de cartera de seis profesores) | 5 | 1,181 | 1,023 a 1,402 | 3 de 5 |
+| ZF-RL (PPO anclado, crítico precalentado) | 5 | 1,745 | 1,046 a 2,917 | 2 de 5 |
+| ZF-RL cold (PPO anclado, crítico frío) | 5 | 5,922 | 1,062 a 20,057 | 3 de 5 |
+| Agente DeepRM-style | 3 | 5,647 | 3,842 a 8,631 | 0 de 3 |
+| Agente RLScheduler-style | 3 | 8,840 | 8,391 a 9,137 | 0 de 3 |
+| Nulo estructurado | 10 | 1,187 | 1,133 a 1,249 | 2 de 10 |
+| Control sin entrenar (acciones legales aleatorias) | 10 | 11,681 | 11,130 a 12,503 | 0 de 10 |
 
-Planificadores clásicos deterministas sobre las mismas trazas:
+Planificadores clásicos deterministas sobre las mismas trazas: F1-PC-BF 0,992; F1-BF 1,000; F1 1,328; EASY con runtimes exactos 1,841; EASY 2,649; SJF 3,115; FCFS 17,494.
 
-| Planificador | Ratio media |
-|---|---|
-| F1-PC-BF | 0,992 |
-| F1-BF | 1,000 |
-| F1 | 1,328 |
-| EASY con runtimes exactos | 1,841 |
-| EASY | 2,649 |
-| SJF | 3,115 |
-| FCFS | 17,494 |
-
-Notas sobre los resultados publicados: las dos semillas fallidas de ZF-PD fallan en una sola traza, lanl_o2k, con bounded slowdowns medios de 2.791 y 2.552 frente a los 16,75 de F1-BF. La peor semilla de ZF-RL frío dejó un 63 % de capacidad ociosa mientras había trabajos esperando (mediana sobre las 17 trazas). Entre los cinco pares de semillas, ZF-RL y ZF-RL frío no se separan (U de Mann-Whitney = 9, p = 0,55).
+Dos semillas de ZF-PD fallan en la traza lanl_o2k, con bounded slowdowns medios de 2.791 y 2.552 frente a 16,75 de F1-BF. La peor semilla de ZF-RL cold dejó un 63 % de capacidad ociosa mientras había trabajos en espera (mediana sobre las 17 trazas). Entre los cinco pares de semillas, ZF-RL y ZF-RL cold no se separan estadísticamente (Mann-Whitney U = 9, p = 0,55).
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma exacta; por la configuración (d_model = 256, 6 capas, 8 cabezas y contexto de 128 trabajos) el modelo es pequeño y la inferencia es viable en CPU. El repositorio completo ocupa 1,1 GB porque incluye 24 políticas ZonFormer y 9 comparadores, no porque una sola política sea grande.
-- GPU recomendadas: no se especifican en la información disponible. Para entrenamiento, el manuscrito no detalla el hardware empleado; para inferencia, cualquier GPU consumer moderna es sobradamente suficiente.
-- ¿Cabe en GPU consumer? Sí, con alta probabilidad, dado el tamaño del extractor y el tamaño del repositorio; no se publica una cifra de VRAM por política.
-- Opciones de despliegue: carga mediante sb3-contrib 2.9.0 (`MaskablePPO.load`) sobre stable-baselines3. No aplican vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo generativo de texto ni distribuirse en GGUF.
+- Inferencia en CPU: la evaluación del repositorio se ejecuta en CPU y es bit-idéntica entre máquinas con torch 2.11.0, lo que indica que la política es ligera y no requiere GPU.
+- No se especifican requisitos de VRAM ni GPU recomendadas en la información disponible; el tamaño del repositorio (1,3 GB) incluye pesos de 20 políticas de ZF más 4 previas al estudio, 9 comparadores y checkpoints de profesores, no un único modelo grande.
+- No cabe esperar despliegue en GPUs de consumo como requisito: al ser una política de decisión sobre 128 trabajos, la inferencia es de baja latencia en CPU.
+- Opciones de despliegue: Python 3.10 con las dependencias fijadas en `requirements.txt`, stable-baselines3 y sb3-contrib; los pesos se cargan mediante `scripts/place_weights.py`, que enlaza `weights/` con las rutas que leen los scripts de entrenamiento y benchmark.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto / ventana | Ratio media (menor mejor) | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| ZonFormer ZF-BC | no disponible | 128 trabajos visibles, 48 puntos temporales | 1,087 | MIT | Pesos en este repositorio |
-| ZonFormer ZF-PD | no disponible | 128 trabajos visibles | 1,181 | MIT | Pesos en este repositorio |
-| ZonFormer ZF-RL | no disponible | 128 trabajos visibles | 1,745 | MIT | Pesos en este repositorio |
-| Agente estilo DeepRM | no disponible | ventana de 16 trabajos | 5,647 | MIT (mismo repositorio) | Pesos en `weights/comparators/pure-mlp_s{0..2}` |
-| Agente estilo RLScheduler | no disponible | ventana de 16 trabajos | 8,840 | MIT (mismo repositorio) | Pesos en `weights/comparators/pure-structured_s{0..2}` |
-| F1-BF (heuristica clásica) | no aplica | no aplica | 1,000 | no aplica | Referencia algorítmica |
-| Nulo estructurado F1-DRL-RND | no aplica (sin pesos) | ventana de 16 trabajos | 1,187 | MIT (mismo repositorio) | Sin pesos; control |
-
-La comparación relevante es que ZonFormer con clonación de conducta (1,087) queda ligeramente por encima de F1-BF (1,000) pero por delante del nulo estructurado (1,187) y muy por delante de los agentes estilo DeepRM (5,647) y RLScheduler (8,840) en las mismas 17 trazas.
+| Modelo | Tipo | Parámetros | Contexto | Rendimiento (ratio vs F1-BF) | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| ZonFormer (ZF-BC) | Pointer transformer + BC | no disponible | 128 trabajos | 1,087 (5 semillas) | MIT | Hugging Face |
+| Agente DeepRM-style | RL (política neuronal) | no disponible | no disponible | 5,647 (3 semillas) | MIT (en este repo) | Incluido en el repositorio |
+| Agente RLScheduler-style | RL (política neuronal) | no disponible | no disponible | 8,840 (3 semillas) | MIT (en este repo) | Incluido en el repositorio |
+| F1-BF (referencia clásica) | Heurística determinista | no aplica | no aplica | 1,000 | no aplica | Implementada en el repositorio |
 
 ## Limitaciones y advertencias
 
-- Entrenado solo sobre cargas simuladas: no hay evidencia publicada de despliegue en un clúster real, y el salto de simulación a producción no está caracterizado.
-- Alta varianza entre semillas en las recetas de RL: ZF-RL oscila entre 1,046 y 2,917 y ZF-RL frío entre 1,062 y 20,057, con un caso que dejó un 63 % de capacidad ociosa mientras había trabajos esperando.
-- Fallo documentado en la traza lanl_o2k para dos semillas de ZF-PD, con bounded slowdowns medios de 2.791 y 2.552 frente a 16,75 de F1-BF; el comportamiento en trazas con características atípicas no es fiable.
-- La guarda de envejecimiento (-AG) forma parte del arnés de evaluación, no de los pesos: evaluar las políticas sin esa guarda cambia el resultado y los comparadores se ejecutaron sin ella, lo que introduce una asimetría en la comparación.
-- Ventana de decisión acotada a 128 trabajos visibles y 48 puntos temporales; no se documenta el comportamiento con colas significativamente mayores.
-- No es un modelo de lenguaje: no procesa texto, no soporta tool calling ni agentes multi-paso, y no tiene capacidades multilingües, de visión o de audio.
-- Sesgos conocidos: no se documentan análisis de sesgo por tipo de usuario, cola o duración de trabajo; el sesgo implícito de los profesores (F1-PC-BF y la cartera de seis) se transfiere por imitación.
-- Restricciones de licencia: MIT, permite uso comercial y modificación con atribución; no se especifican restricciones adicionales para los datos del Parallel Workloads Archive, que se referencian pero no se redistribuyen en el repositorio.
-- Dependencia de versión: los pesos requieren sb3-contrib 2.9.0; cambios de versión pueden romper la carga de los archivos .zip.
-- Riesgo de alucinación: no aplica en el sentido de generación de texto; el riesgo equivalente es seleccionar acciones legales pero de baja calidad, algo que los controles aleatorios ilustran con una ratio de 11,681.
+- Entrenado solo con cargas simuladas: el generador se ajusta a diez trazas y la generalización se mide en 17 trazas del Parallel Workloads Archive, pero el comportamiento en cargas de producción con patrones distintos no está caracterizado.
+- Alta varianza entre semillas en las recetas de RL: ZF-RL cold llega a ratios de 20,057 en una semilla y deja un 63 % de capacidad ociosa en la peor; ZF-RL varía entre 1,046 y 2,917.
+- Fallos catastróficos localizados: dos semillas de ZF-PD colapsan en la traza lanl_o2k con bounded slowdowns de 2.791 y 2.552 frente a 16,75 de F1-BF.
+- El nulo estructurado alcanza 1,187 de ratio media, cercano a ZF-PD (1,181), lo que sugiere que parte de la señal puede provenir de la estructura de la observación y no solo de la política aprendida; conviene interpretar las comparaciones con cautela.
+- No es un modelo de lenguaje: no ofrece generación de texto, tool calling, agentes generales ni capacidades multilingües.
+- Dependencia de un simulador y de trazas externas: los logs no se redistribuyen (solo se incluye un manifiesto con URL, SHA-256 y huella de cabecera), por lo que la reproducción completa requiere descargar las trazas del archivo original.
+- Licencia MIT: permite uso comercial y modificación, pero no se documentan garantías ni soporte; el uso en producción de un planificador HPC exige validación propia y mecanismos de seguridad (por ejemplo, la guarda de envejecimiento incluida en `stage_ag.py`).
+- No se han documentado sesgos en el sentido de modelos lingüísticos; el riesgo relevante es el sobreajuste a la distribución de cargas simuladas y la inestabilidad del entrenamiento por RL.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/zParik/zonformer
-- Manuscrito de referencia: «ZonFormer: learning cluster scheduling from simulation with a relational pointer transformer», Parikshieth Harish, Suhani Bhateja, Arun Pandian J (sin URL disponible en la información proporcionada)
-- Parallel Workloads Archive (origen de las 17 trazas de evaluación): sin URL disponible en la información proporcionada
-- stable-baselines3 / sb3-contrib 2.9.0 (dependencia de carga de los pesos): sin URL disponible en la información proporcionada
-- No se han encontrado en la búsqueda web enlaces relevantes al modelo, al paper ni a repositorios de código; los resultados devueltos corresponden a páginas sin relación con el modelo.
+- Repositorio Hugging Face: https://huggingface.co/zParik/zonformer
+- Manuscrito de referencia: "ZonFormer: learning cluster scheduling from simulation with a relational pointer transformer" (Parikshieth Harish, Suhani Bhateja, Arun Pandian J); enlace directo no disponible.
+- Parallel Workloads Archive (trazas de evaluación): https://www.cs.huji.ac.il/labs/parallel/workload/ (referencia del archivo citado en el repositorio; URL exacta en `data/traces/MANIFEST.json`).
+- stable-baselines3: https://github.com/DLR-RM/stable-baselines3
+- sb3-contrib (MaskablePPO): https://github.com/Stable-Baselines-Team/stable-baselines3-contrib
+- Gymnasium: https://gymnasium.farama.org/

@@ -2,102 +2,105 @@
 
 ## Resumen
 
-Stera-AI-Lite V14 es un modelo de lenguaje y vision (vision-language) publicado por Fendrix-Studio bajo licencia Apache 2.0. Se presenta como un derivado afinado y cuantizado del modelo base Qwen/Qwen3.5-2B, del que hereda la arquitectura transformer y el tokenizador. El repositorio distribuye exclusivamente pesos en formato GGUF: una cuantizacion Q4_K_M del modelo de lenguaje y un proyector visual en F16 (mmproj) necesario para habilitar la entrada de imagenes. Segun los metadatos de safetensors, el modelo cuenta con 1.543.714.304 parametros totales, lo que lo situa en la gama de los 1,5-2 mil millones de parametros.
+Stera-AI-Lite es una distribucion cuantizada y adaptada del modelo Qwen/Qwen3.5-2B, publicada por Fendrix-Studio bajo el nombre comercial Stera AI Lite V14. Se distribuye exclusivamente en formato GGUF e incluye dos artefactos: el modelo de lenguaje principal en cuantizacion Q4_K_M y un proyector de vision en F16 (`mmproj-Stera-Lite_F16.gguf`), lo que habilita entrada multimodal de imagen y texto. El repositorio tiene 5,7 GB y acumula 317 descargas.
 
-El modelo se orienta a inferencia local en equipos de consumo y a integraciones conversacionales con soporte de vision. La model card menciona compatibilidad con endpoints y uso mediante LM Studio, ademas de una aplicacion propia (Stera AI) anunciada como proxima. La fecha de publicacion indicada en la model card (24 de noviembre de 2026) y los benchmarks comparativos que incluye deben tratarse con cautela, ya que el autor no documenta metodologia, semillas ni protocolo de evaluacion.
+El modelo declara 1.543.714.304 parametros reales en safetensors, aunque el modelo base referenciado es Qwen3.5-2B, por lo que la cifra efectiva queda por debajo de los 2B nominales. La relevancia practica de esta ficha es limitada: no hay model card tecnica detallada, no se documentan idiomas soportados ni pipeline, y los benchmarks publicados por el autor comparan un modelo de 2B contra modelos de 32B y frontier, con resultados muy inferiores en todas las metricas.
 
-La relevancia practica del modelo reside en su tamano reducido, su licencia permisiva y su empaquetado GGUF listo para ejecutar en CPU o GPU modestas. No obstante, la informacion publica es escasa: no se detallan idiomas soportados, composicion del dataset de ajuste ni proceso de entrenamiento, y los resultados de benchmarks no son verificables de forma independiente.
+La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales conocidas. El modelo esta orientado a inferencia local en equipos de consumo mediante LM Studio o llama.cpp, y su interes principal es como ejemplo de adaptacion multimodal ligera mas que como alternativa competitiva en tareas agenticas o de codigo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen/Qwen3.5-2B); incluye proyector visual para entrada multimodal |
-| Parametros totales | 1.543.714.304 (1,54 mil millones) |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | Q4_K_M (modelo de lenguaje) y F16 (proyector visual mmproj) |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer (derivada de Qwen/Qwen3.5-2B); vision-language con proyector multimodal |
+| Parametros totales | 1.543.714.304 (safetensors); modelo base nominal 2B |
+| Parametros activos | no disponible (no se declara arquitectura MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | Q4_K_M (modelo principal); F16 (proyector de vision) |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (model-Stera-Lite-Q4_K_M.gguf y mmproj-Stera-Lite_F16.gguf) |
+| Formato de pesos | GGUF (model-Stera-Lite-Q4_K_M.gguf, mmproj-Stera-Lite_F16.gguf) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3.5-2B, un transformer decoder-only de aproximadamente 2 mil millones de parametros segun el modelo base referenciado, aunque los safetensors publicados declaran 1,54 mil millones. Sobre esa base, Fendrix-Studio anade un proyector visual en F16 que permite procesar imagenes junto con texto, configurando un pipeline vision-language. La distribucion se realiza unicamente en GGUF, lo que sugiere que el autor ha priorizado el despliegue en llama.cpp y entornos compatibles frente a la publicacion de pesos completos en safetensors.
+La informacion disponible indica que el modelo se basa en Qwen/Qwen3.5-2B, un transformer denso de aproximadamente 2B parametros, y que incorpora un proyector de vision en F16 para habilitar capacidades multimodales (vision-language). No se documenta el proceso de entrenamiento: no hay datos sobre numero de tokens, composicion del dataset, fases de alineacion (RLHF, DPO o similares), ni sobre si el proyector de vision fue entrenado por Fendrix-Studio o heredado de otro modelo.
 
-No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset de ajuste, el uso de RLHF o DPO, ni la estrategia de alineacion. La model card no describe innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. Tampoco se documenta si el ajuste fino fue supervisado, por destilacion o mediante preferencias. Esta ausencia de trazabilidad es una limitacion relevante para evaluar el modelo en produccion.
+Tampoco se especifica la innovacion tecnica del proyector, la resolucion de imagen soportada, el numero de tokens visuales por imagen ni la estrategia de fusion entre modalidades. La unica informacion operativa es que el proyector F16 es obligatorio para habilitar el analisis de imagenes en LM Studio o en la aplicacion propia del autor.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato chat, segun la etiqueta "conversational" del repositorio.
-- Analisis de imagenes mediante el proyector visual mmproj en F16, lo que habilita tareas de descripcion, respuesta a preguntas sobre imagenes y extraccion de informacion visual.
-- Razonamiento basico y respuesta a preguntas generales, limitado por el tamano del modelo base.
-- Generacion de codigo y tareas de software, segun los benchmarks declarados por el autor (no verificables).
-- Uso de herramientas y comportamiento agentico, segun la model card, aunque sin documentacion tecnica sobre el formato de tool calling.
-- Compatibilidad con endpoints, indicada en las etiquetas del repositorio.
-- Capacidades multilingues: no documentadas; no se especifica la lista de idiomas.
+- Generacion de texto conversacional en formato chat.
+- Analisis de imagenes mediante el proyector multimodal F16 (vision-language).
+- Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags del repositorio).
+- Soporte de cuantizacion GGUF para inferencia local en CPU y GPU.
+- Capacidades de codigo y tareas agenticas: el autor publica metricas en benchmarks de coding y agentes, aunque con resultados muy bajos (ver seccion de benchmarks).
+- Soporte de tool calling / function calling: no documentado explicitamente.
+- Soporte de agentes multi-paso: no documentado; los benchmarks de agente publicados sugieren capacidad muy limitada.
+- Capacidades multilingues: no disponibles.
+- Modo thinking, audio u otras capacidades especiales: no disponibles.
 
 ## Casos de uso
 
-- Asistente conversacional local: el modelo puede ejecutarse en un portatil con LM Studio y gestionar dialogos multi-turno sin conexion, gracias a su cuantizacion Q4_K_M y su tamano reducido.
-- Descripcion y analisis de imagenes en el dispositivo: con el proyector mmproj, permite clasificar capturas, describir fotografias o extraer texto de imagenes en aplicaciones de escritorio sin enviar datos a la nube.
-- Prototipado rapido de aplicaciones multimodales: util para validar flujos de vision-lenguaje antes de migrar a modelos mayores, dado su bajo coste de inferencia y su licencia Apache 2.0.
-- Automatizacion de soporte tecnico con capturas de pantalla: el modelo puede recibir una imagen de error y generar una respuesta orientativa, integrado en un chatbot de helpdesk.
-- Generacion asistida de codigo en entornos con recursos limitados: adecuado para autocompletado o explicacion de fragmentos en IDE, aunque con menor calidad que modelos de mayor tamano.
-- Educacion y accesibilidad: lectura de imagenes y explicacion en lenguaje natural para usuarios con discapacidad visual, desplegado en hardware de bajo consumo.
-- Filtrado y clasificacion de contenido visual: etiquetado automatico de imagenes en pipelines de moderacion o catalogacion, con la ventaja de ejecutarse en local.
+- Asistente conversacional local en equipos de consumo: el modelo en Q4_K_M ocupa aproximadamente 1 GB, por lo que puede ejecutarse en portatiles sin GPU dedicada mediante LM Studio o llama.cpp, con latencia baja para respuestas cortas.
+- Descripcion y analisis basico de imagenes en local: gracias al proyector F16, permite tareas como etiquetado de imagenes, extraccion de texto visible o respuesta a preguntas simples sobre una fotografia sin enviar datos a la nube.
+- Prototipado de aplicaciones multimodales: util para validar pipelines de vision-lenguaje antes de migrar a modelos mayores, dado su bajo coste de despliegue y su licencia permisiva.
+- Filtrado y clasificacion de contenido en entornos con privacidad estricta: al ejecutarse integramente en local, es adecuado para procesar documentos o imagenes sensibles que no pueden salir del dispositivo.
+- Educacion y demos: su tamano reducido permite desplegarlo en aulas, talleres o entornos de formacion donde no hay infraestructura GPU disponible.
+- Pruebas de integracion con la aplicacion Stera AI: el modelo es el backend oficial de la aplicacion del autor (anunciada como proximamente disponible), por lo que sirve para evaluar ese ecosistema.
+- Tareas de codigo o agenticas en produccion: no recomendado; los benchmarks publicados por el propio autor muestran valores de 11,5 a 24,8 en las metricas evaluadas, muy por debajo de alternativas de mayor tamano.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de benchmarks comparativos. Los datos proceden del autor y no se especifica metodologia, version de evaluacion ni protocolo, por lo que deben interpretarse como estimaciones no verificadas.
+Los unicos datos disponibles son los publicados por el autor en la model card. No se especifica la metodologia de evaluacion ni si son resultados propios o estimaciones.
 
-| Benchmark | Stera-AI-Lite | Qwen3.7-Plus | DeepSeek-V4-Flash | Claude-Opus-4.6 |
+| Metrica / Benchmark | Stera-AI Lite (2B) | Qwen3-32B | DeepSeek-V4-Flash | Claude Opus 5 |
 |---|---|---|---|---|
-| Agentic coding (DeepSWE 1.1) | 24,5 | 16,5 | 54,4 | -- |
-| Agentic coding (SWE-bench Pro) | 31,2 | 55,8 | 56,0 | 53,4 |
-| SWE-bench Multilingual | 42,8 | 75,8 | -- | 77,5 |
-| NL2Repo-Bench | 28,7 | 41,1 | 54,2 | 47,6 |
-| CoWorkBench | 39,5 | 65,1 | 45,1 | 68,2 |
-| JobBench | 21,3 | 27,6 | 41,3 | 36,6 |
-| Agents' Last Exam (Score) | 23,1 | 33,6 | -- | -- |
-| Toolathlon Verified | 44,0 | 50,6 | 70,3 | -- |
+| Agentic coding (DeepSWE 1.1) | 11,5 | 31,5 | 54,4 | 57,2 |
+| Agentic coding (SWE-bench Pro) | 16,8 | 55,8 | 56,0 | 58,1 |
+| Multilingual software engineering (SWE-bench Multilingual) | 22,4 | 75,8 | no disponible | 79,4 |
+| Repo-level code generation (NL2Repo-Bench) | 15,7 | 41,1 | 54,2 | 50,8 |
+| Long-horizon office work (CoWorkBench) | 20,3 | 65,1 | 45,1 | 71,3 |
+| Professional job tasks (JobBench) | 12,4 | 27,6 | 41,3 | 39,8 |
+| Frontier agentic tasks (Agents' Last Exam) | 10,1 | 33,6 | no disponible | 38,5 |
+| Real-world tool use (Toolathlon Verified) | 24,8 | 50,6 | 70,3 | 73,1 |
 
-No se han publicado resultados independientes de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales en la informacion disponible.
+No se han publicado resultados en benchmarks clasicos como MMLU, HumanEval o GSM8K en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo Q4_K_M de un modelo de ~1,5 mil millones de parametros ocupa aproximadamente 1-1,2 GB; con el proyector visual F16 y el contexto de trabajo, el consumo total se situa en torno a 2-3 GB.
-- GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM, como RTX 3050, RTX 4060, RTX 4090, A100 o H100; el modelo no aprovechara la capacidad de las GPU de gama alta.
-- Compatibilidad con GPU de consumo: si, cabe holgadamente en tarjetas de 4-8 GB e incluso puede ejecutarse en CPU.
-- Opciones de despliegue: llama.cpp, LM Studio (recomendado por el autor), Ollama y servidores compatibles con GGUF; la aplicacion propietaria Stera AI esta anunciada como proxima.
-- Latencia y throughput: no disponibles. Por el tamano del modelo, se espera una latencia baja en GPU de consumo y moderada en CPU, pero no hay mediciones publicadas.
+- VRAM estimada para inferencia: aproximadamente 1,1-1,5 GB con la cuantizacion Q4_K_M del modelo principal, mas el proyector de vision en F16 (varios cientos de MB adicionales).
+- GPU recomendadas: cualquier GPU con al menos 2-3 GB de VRAM libre; RTX 3060, RTX 4060, RTX 4090 o superiores funcionan sin problema. Tambien puede ejecutarse en CPU.
+- Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada de los ultimos anos, e incluso en iGPU con memoria compartida suficiente.
+- Opciones de despliegue: LM Studio (documentado por el autor), llama.cpp, Ollama (previa conversion o importacion del GGUF) y aplicacion propia Stera AI (anunciada como proximamente disponible). vLLM y TGI no soportan GGUF de forma nativa sin conversion.
+- Latencia y throughput estimados: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Stera-AI-Lite V14 | 1,54 mil millones | No disponible | Apache 2.0 | GGUF | Vision-language, ajuste propio sobre Qwen3.5-2B |
-| Qwen/Qwen3.5-2B | ~2 mil millones | No disponible | Apache 2.0 | Safetensors, GGUF | Modelo base; sin capacidades visuales documentadas |
-| Gemma 3 4B | ~4 mil millones | No disponible | Gemma license | Safetensors, GGUF | Multimodal, mayor tamano y requisitos |
-| Phi-3.5-vision | ~4,2 mil millones | No disponible | MIT | Safetensors | Vision-language de Microsoft, orientado a imagen |
+| Stera-AI-Lite | 1,54B (nominal 2B) | no disponible | Apache 2.0 | GGUF | Multimodal con proyector F16; benchmarks agenticos bajos |
+| Qwen/Qwen3.5-2B | 2B (nominal) | no disponible | no disponible | safetensors | Modelo base del que deriva Stera-AI-Lite |
+| Qwen2.5-VL-3B | 3B | 32K (segun documentacion publica de la familia) | Apache 2.0 | safetensors, GGUF | Alternativa multimodal de tamano similar con soporte amplio de comunidad |
+| Llama 3.2 3B Instruct | 3B | 128K (segun documentacion publica) | Llama 3.2 Community License | safetensors, GGUF | Alternativa de texto de tamano comparable, sin vision en la variante 3B |
 
-La comparativa se limita a caracteristicas publicas; no se dispone de evaluaciones cruzadas independientes entre estos modelos.
+La comparativa se limita a parametros, contexto y licencia porque no hay datos de rendimiento comparables publicados para Stera-AI-Lite fuera de los benchmarks del propio autor.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no documentados por el autor; al derivar de Qwen3.5-2B, puede heredar sesgos del modelo base y del dataset de ajuste.
-- Riesgo de alucinacion: elevado en un modelo de 1,5 mil millones de parametros, especialmente en tareas de razonamiento complejo, codigo y analisis de imagenes detallado.
-- Limitaciones de contexto e idioma: la longitud de contexto no esta publicada y no se especifica la cobertura linguistica; el rendimiento fuera del ingles y el chino puede degradarse.
-- Benchmarks no verificables: la tabla de la model card carece de metodologia y compara con modelos de gamas muy superiores, lo que invalida su uso como referencia objetiva.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor no aclara si el ajuste fino introduce restricciones adicionales; conviene revisar la licencia del modelo base.
-- Empaquetado limitado: solo se distribuye GGUF Q4_K_M y el proyector F16, sin pesos completos ni versiones en otros formatos, lo que dificulta el reentrenamiento o la evaluacion fina.
-- Madurez del proyecto: repositorio con 285 descargas y 1 like, aplicacion propia aun no disponible y documentacion escasa; no recomendable para produccion critica sin validacion previa.
-- Fechas incoherentes: la model card indica noviembre de 2026, lo que sugiere posibles errores de publicacion y reduce la confianza en los metadatos.
+- Los benchmarks publicados por el autor comparan un modelo de 2B contra modelos de 32B y frontier, lo que produce una impresion de rendimiento relativo baja y ademas carece de contexto metodologico (no se indica si son evaluaciones propias, con que prompts ni con que version del modelo).
+- No se documentan sesgos conocidos, pero al derivar de Qwen3.5-2B hereda los sesgos del modelo base, que no se detallan.
+- Riesgo de alucinacion elevado en tareas de codigo, agentes y uso de herramientas, coherente con los resultados publicados (10-25 puntos sobre 100 en las metricas agenticas).
+- No se especifica la longitud de contexto soportada, lo que impide planificar casos de uso con documentos largos.
+- No se declaran idiomas soportados; el modelo base Qwen suele tener buen soporte de chino e ingles, pero no hay confirmacion para castellano.
+- La licencia Apache 2.0 permite uso comercial, pero el autor no aclara si el proyector de vision tiene la misma licencia o si deriva de otro modelo con condiciones distintas.
+- La model card mezcla el nombre "Stera AI Lite V14" con "Stera-AI-Lite" y referencia un modelo base no verificado publicamente (Qwen/Qwen3.5-2B), lo que dificulta la trazabilidad.
+- La aplicacion propia del autor esta marcada como "proximamente disponible", por lo que la unica via de uso verificada es LM Studio o llama.cpp.
+- No hay informacion sobre el proceso de entrenamiento del proyector de vision ni sobre la calidad de las respuestas multimodales.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Fendrix-Studio/Stera-AI-Lite
-- Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
-- Sitio del autor: https://fendrixstudio.netlify.app/
-- Aplicacion Stera AI (proxima): https://stera-ai-fendrix-studio.netlify.app/
+- Hugging Face: https://huggingface.co/Fendrix-Studio/Stera-AI-Lite
+- Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-2B
+- Web del autor: https://fendrixstudio.netlify.app/
+- Aplicacion Stera AI (proximamente): https://stera-ai-fendrix-studio.netlify.app/
 - LM Studio: https://lmstudio.ai

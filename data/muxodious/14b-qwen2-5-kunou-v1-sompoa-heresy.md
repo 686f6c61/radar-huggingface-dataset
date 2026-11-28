@@ -2,111 +2,104 @@
 
 ## Resumen
 
-14B-Qwen2.5-Kunou-v1-SOMPOA-heresy es un ajuste fino del modelo Qwen2.5-14B-Instruct publicado por el usuario MuXodious en Hugging Face. Se trata de una variante "decensored" o "abliterated" del modelo Kunou-v1 de Sao10K, obtenida aplicando la herramienta Heretic v2.2.0.dev0, que modifica los pesos del transformer para reducir la tasa de rechazos ante peticiones que el modelo original declinaría. El resultado es un modelo de 14.770.033.664 parámetros (aproximadamente 14,77 mil millones) con arquitectura transformer densa, pesos en safetensors y un tamaño de repositorio de 29,6 GB.
+14B-Qwen2.5-Kunou-v1-SOMPOA-heresy es un fine-tune del modelo 14B-Qwen2.5-Kunou-v1 de Sao10K, producido por MuXodious mediante la herramienta de "abliteration" Heretic (v2.2.0.dev0) de P-E-W, con el modificador Self-Organizing Maps & Magnitude-Preserving Orthogonal Ablation (SOMPOA) activado. El objetivo es eliminar los rechazos del modelo base, es decir, reducir su tendencia a negarse a responder determinadas peticiones, preservando al mismo tiempo la mayor parte de la distribución original del modelo (baja divergencia KL).
 
-El modelo hereda las capacidades del Qwen2.5-14B-Instruct original, incluyendo generación de texto, razonamiento, código y conversación multi-turno, pero está orientado a usos de rol y generación creativa sin las restricciones de seguridad del modelo base. La model card del autor original (Sao10K) describe Kunou-v1 como un modelo generalista y de roleplay, entrenado con un dataset refinado derivado de los usos previos en Euryale y Stheno, y recomienda un formato de prompt ChatML con temperatura 1.1 y min_p 0.1.
+El modelo hereda la arquitectura Qwen2.5 de 14B parámetros (14.770.033.664 parámetros reales según los pesos en safetensors) y el ajuste conversacional y de rol de la familia Kunou de Sao10K. Se distribuye en formato safetensors, con licencia Qwen (etiquetada como "other" con nombre "qwen"), y está pensado para generación de texto conversacional y roleplay.
 
-La relevancia de esta ficha radica en que documenta una práctica controvertida dentro del ecosistema open source: la eliminación de mecanismos de rechazo mediante intervenciones quirúrgicas sobre los pesos (abliteration). El modelo tiene cero descargas y cero "likes" en el momento de la consulta, lo que sugiere que se trata de una publicación reciente o de escasa difusión, y no dispone de datos de benchmarks propios más allá de las métricas de la herramienta Heretic.
+Es relevante en el ecosistema de modelos "uncensored" o "decensored" porque documenta de forma transparente el proceso de abliteración aplicado: parte de 101/101 rechazos en el modelo inicial y llega a 8/101 tras el proceso, con una divergencia KL de 0,0677 respecto al modelo base. El autor advierte que se trata de una prueba del port del modificador SOMA, procesada localmente con bnb_4bit y no probada en profundidad.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (Qwen2) |
+| Arquitectura | Transformer decoder-only (Qwen2.5) |
 | Parametros totales | 14.770.033.664 |
-| Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen2.5-14B-Instruct soporta hasta 32.768 tokens, dato no confirmado para este fine-tune) |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos publicados en safetensors; no se listan versiones GGUF, AWQ ni GPTQ) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible en la informacion proporcionada |
+| Tipos de cuantizacion | No disponible en la informacion proporcionada (el autor menciona bnb_4bit solo para el proceso de abliteracion) |
 | Idiomas soportados | No disponible en la informacion proporcionada |
-| Licencia | "other", con license_name "qwen" y enlace a la licencia de Qwen2.5-14B-Instruct |
+| Licencia | Qwen (etiquetada como "other", license_name: qwen) |
 | Formato de pesos | safetensors |
-| Tamano del repositorio | 29,6 GB |
-| Libreria | transformers |
-| Pipeline | text-generation |
-| Modelo base | Qwen/Qwen2.5-14B-Instruct (via Sao10K/14B-Qwen2.5-Kunou-v1) |
-| Herramienta de modificacion | Heretic v2.2.0.dev0 |
-| Formato de prompt | ChatML |
-| Parametros de muestreo recomendados | Temperatura 1.1, min_p 0.1 |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen2.5-14B-Instruct, un transformer denso de tipo decoder-only con 14,77 mil millones de parámetros. Sobre esa base, Sao10K entrenó Kunou-v1 con un dataset descrito como "más limpio y refinado" que el usado en sus modelos anteriores Euryale y Stheno, empleando Axolotl como framework de entrenamiento. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron fases de RLHF o DPO; únicamente indica que el objetivo era un modelo generalista y de roleplay.
+El modelo es un fine-tune del checkpoint Sao10K/14B-Qwen2.5-Kunou-v1, que a su vez deriva de la arquitectura Qwen2.5 de 14B parámetros. Se trata de un transformer decoder-only denso, sin mezcla de expertos. El ajuste original de Sao10K se realizó con Axolotl y está orientado a conversación generalista y roleplay, con formato de prompt ChatML.
 
-La intervención posterior aplicada por MuXodious mediante Heretic v2.2.0.dev0 es una técnica de abliteration que localiza direcciones en el espacio de activaciones asociadas al rechazo y ajusta los pesos de proyecciones concretas para suprimir ese comportamiento. La model card publica los parámetros SOMPOA empleados: un `direction_index` de 33,84, pesos máximos y mínimos por capa en `attn.o_proj` y `mlp.down_proj`, y distancias entre pesos (`max_weight_position` 25,90 en atención, 40,84 en MLP). Estos valores documentan la cirugía aplicada sobre las capas de atención y las proyecciones de salida del MLP, sin que se especifiquen detalles sobre el conjunto de datos de calibración ni el procedimiento de optimización más allá de la referencia a la herramienta.
+La modificación principal no es un entrenamiento supervisado convencional, sino una ablación direccional de pesos (abliteration) aplicada con Heretic v2.2.0.dev0 y el modificador SOMPOA (Self-Organizing Maps & Magnitude-Preserving Orthogonal Ablation). El proceso identifica direcciones de rechazo en las proyecciones de atención (attn.o_proj) y en las capas MLP (mlp.down_proj) y las elimina de forma ortogonal preservando la magnitud de los pesos. Según la model card, se usaron datasets personalizados (harmful + harmless) con prompt de sistema vacío, y los ensayos se terminaron en 208/400. El ensayo seleccionado fue el 32, con 8/101 rechazos y una divergencia KL de 0,0677 frente al modelo original. El autor indica que tuvo que usar bnb_4bit para procesar el modelo en local y que no lo ha probado en profundidad.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, heredada de Qwen2.5-14B-Instruct y afinada para roleplay y diálogo generalista.
-- Generación creativa y narrativa: la model card original describe el modelo como generalista y orientado a roleplay, con recomendaciones de muestreo específicas (temperatura 1.1, min_p 0.1).
-- Reducción drástica de rechazos: la tabla de rendimiento de Heretic reporta 8 rechazos de 101 frente a 101 de 101 del modelo original, lo que implica que responde a peticiones que el modelo base declinaría.
-- Razonamiento y conocimiento general: capacidades heredadas del Qwen2.5-14B-Instruct, aunque no se documentan evaluaciones específicas tras el fine-tune ni tras la abliteration.
-- Soporte de tool calling y function calling: no confirmado en la información proporcionada para este fine-tune; el modelo base Qwen2.5-14B-Instruct sí lo soporta, pero no hay garantía de que el ajuste lo preserve.
-- Capacidades de agente y razonamiento multi-paso: no documentadas en la información proporcionada.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Modo "thinking", visión o audio: no disponibles; el modelo es exclusivamente de texto.
+- Generación de texto conversacional multi-turno en formato ChatML.
+- Roleplay y escritura creativa, herencia del ajuste Kunou de Sao10K.
+- Reducción drástica de rechazos: de 101/101 en el modelo inicial a 8/101 tras la abliteración, según la model card.
+- Conversación generalista sin prompt de sistema (el proceso se documenta con prompt de sistema vacío).
+- Compatible con text-generation-inference y endpoints compatibles (etiquetas del repositorio).
+- No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito en la información proporcionada.
 
 ## Casos de uso
 
-- Roleplay y narrativa interactiva: el modelo está entrenado y recomendado por su autor para conversaciones de rol y ficción, con un formato ChatML y parámetros de muestreo ajustados (temperatura 1.1, min_p 0.1) que favorecen respuestas creativas y variadas en diálogos largos.
-- Generación creativa sin restricciones temáticas: la abliteration reduce los rechazos a 8 de 101, lo que lo hace adecuado para proyectos de escritura de ficción con temáticas adultas o controvertidas donde el modelo base declinaría la petición.
-- Prototipado de asistentes conversacionales: al ser un fine-tune de Qwen2.5-14B-Instruct con pesos en safetensors y compatibilidad con transformers y text-generation-inference, puede desplegarse como backend conversacional en entornos de investigación.
-- Investigación sobre alineación y seguridad: el modelo sirve como caso de estudio para analizar el efecto de la abliteration sobre el comportamiento de rechazo y la divergencia KL (0,0677 reportada por Heretic), útil en estudios comparativos de técnicas de desalineación.
-- Generación de datos sintéticos para entrenamiento: su reducida tasa de rechazo permite generar corpus de diálogo en dominios donde otros modelos censuran respuestas, siempre que se gestionen los riesgos legales y éticos asociados.
-- Experimentación con parámetros de muestreo: la model card documenta explícitamente ajustes de temperatura y min_p, lo que facilita reproducir configuraciones y comparar la estabilidad del modelo en distintos regímenes de decodificación.
+- Roleplay y ficción interactiva: el ajuste Kunou está orientado a personajes y narrativa, y el formato ChatML con temperatura recomendada de 1,1 y min_p 0,1 está pensado para este escenario.
+- Escritura creativa sin restricciones temáticas: la abliteración reduce los rechazos, lo que permite explorar narrativas con contenido sensible dentro de un entorno controlado de autoría.
+- Prototipado de asistentes conversacionales: al ser un modelo de 14B en safetensors, se puede desplegar con TGI o vLLM para pruebas de diálogo multi-turno.
+- Investigación sobre alineación y abliteración: sirve como caso de estudio reproducible del efecto de SOMPOA sobre los rechazos y la divergencia KL, con métricas documentadas en la model card.
+- Generación de diálogos para videojuegos o narrativa ramificada: el formato ChatML y el ajuste conversacional facilitan la integración en motores de diálogo.
+- Evaluación comparativa de técnicas de "decensoring": permite medir el impacto de la ablación sobre benchmarks como PIQA frente al modelo original.
+- Fine-tuning posterior sobre dominios específicos: al partir de un checkpoint de 14B en safetensors, es viable aplicar LoRA o QLoRA sobre él para tareas concretas.
 
 ## Benchmarks y rendimiento
 
-La model card declara un `model-index` con resultados vacíos, por lo que no se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Las únicas métricas publicadas son las de la herramienta Heretic:
+La model card incluye una comparación en PIQA entre este modelo y el original:
 
-| Metrica | Este modelo | Modelo original |
-|---|---|---|
-| Rechazos (Refusals) | 8/101 | 101/101 |
-| Divergencia KL | 0,0677 | 0 (por definición) |
+| Benchmark | Metrica | Este modelo | Modelo original |
+|---|---|---|---|
+| PIQA | acc | 0,8139 | 0,8128 |
+| PIQA | acc_stderr | 0,0091 | 0,0091 |
+| PIQA | acc_norm | 0,8096 | 0,8047 |
+| PIQA | acc_norm_stderr | 0,0092 | 0,0092 |
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+El model-index oficial del repositorio no declara resultados adicionales. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precisión completa (fp16/bf16): aproximadamente 29,5 GB solo para pesos, más overhead de activaciones y caché KV, por lo que se recomienda al menos 32-40 GB de VRAM.
-- VRAM estimada en cuantización de 8 bits: alrededor de 15 GB para pesos, con margen adicional para contexto.
-- VRAM estimada en cuantización de 4 bits: alrededor de 8-9 GB para pesos, viable en GPUs de consumo con 12-16 GB, aunque no se distribuyen pesos GGUF oficiales en el repositorio.
-- GPUs recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para fp16; RTX 4090 (24 GB) puede ejecutar el modelo en 8 bits o con cuantización dinámica; RTX 3090/4080 (16-24 GB) en 4-8 bits.
-- Cabe en GPU de consumo: sí, en cuantizaciones de 4-8 bits, siempre que se genere la cuantización a partir de los safetensors originales, ya que el repositorio no incluye versiones GGUF.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference`), vLLM y llama.cpp/Ollama previa conversión a GGUF.
+- VRAM estimada para inferencia en fp16/bf16: aproximadamente 29,5 GB solo para pesos, más overhead de activaciones y caché KV; se recomienda al menos 32 GB de VRAM.
+- VRAM estimada en cuantización de 8 bits: en torno a 15-16 GB para pesos.
+- VRAM estimada en cuantización de 4 bits: en torno a 8-9 GB para pesos, aunque no se documentan GGUF oficiales en el repositorio.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 6000 Ada para fp16; RTX 4090 (24 GB) viable en 8 bits o con cuantización agresiva.
+- GPU de consumo: posible en RTX 3090/4090 con cuantización de 8 o 4 bits; en 16 bits no cabe en GPUs de 24 GB.
+- Opciones de despliegue: transformers, text-generation-inference (etiqueta endpoints_compatible), vLLM; llama.cpp y Ollama requerirían convertir los pesos a GGUF, no disponibles en el repositorio.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| 14B-Qwen2.5-Kunou-v1-SOMPOA-heresy | 14,77 B | No disponible | other (qwen) | Variante abliterated de Kunou-v1, 8/101 rechazos, KL 0,0677 |
-| Sao10K/14B-Qwen2.5-Kunou-v1 | 14,77 B | No disponible | qwen | Modelo original de roleplay sin abliteration; base de esta ficha |
-| Qwen/Qwen2.5-14B-Instruct | 14,77 B | Hasta 32.768 tokens (según documentación de Qwen) | qwen | Modelo base instructivo; mayor tasa de rechazo y alineación estándar |
-| Sao10K/32B-Qwen2.5-Kunou-v1 | 32 B (aprox.) | No disponible | qwen | Versión "hermana mayor" del mismo autor, para cargas más exigentes |
+| 14B-Qwen2.5-Kunou-v1-SOMPOA-heresy | 14,77B | No disponible | Qwen | Fine-tune abliterado con SOMPOA; 8/101 rechazos, KL 0,0677 |
+| Sao10K/14B-Qwen2.5-Kunou-v1 | 14,77B | No disponible | Qwen | Modelo base original, sin abliterar; orientado a roleplay |
+| Sao10K/32B-Qwen2.5-Kunou-v1 | ~32B | No disponible | Qwen | Versión mayor de la misma familia, citada por el autor |
+| Sao10K/72B-Qwen2.5-Kunou-v1 | ~72B | No disponible | Qwen | Versión mayor de la misma familia, citada por el autor |
 
-La comparativa se limita a modelos de la misma familia y tamaño, ya que no se dispone de datos de benchmarks que permitan contrastar rendimiento con alternativas de otros desarrolladores.
+No se dispone de datos de benchmarks comparativos con otras alternativas de la misma categoría en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina mecanismos de rechazo: el modelo responde a peticiones que el modelo base declinaría, lo que puede producir contenido dañino, ilegal o éticamente problemático sin filtro previo.
-- Riesgo elevado de alucinación y de respuestas no verificadas, especialmente en dominios factuales, al haberse priorizado la supresión de rechazos sobre la calibración.
-- Divergencia KL de 0,0677 respecto al modelo original, lo que indica una alteración medible de la distribución de salida que puede degradar capacidades no evaluadas.
-- No hay datos sobre idiomas soportados ni evaluaciones multilingües; el comportamiento fuera del inglés o del chino (idiomas principales de Qwen2.5) es incierto.
-- Licencia "other" con referencia a la licencia de Qwen2.5-14B-Instruct: es responsabilidad del usuario verificar las condiciones de uso comercial, que pueden incluir restricciones adicionales por tratarse de un modelo derivado y modificado.
-- El repositorio tiene cero descargas y cero "likes", sin señales de validación por parte de la comunidad; no se han publicado evaluaciones independientes.
-- No se distribuyen pesos cuantizados (GGUF, AWQ, GPTQ), lo que obliga a generarlos localmente para despliegues en hardware limitado.
-- El soporte de tool calling, agentes y contexto largo no está confirmado para este fine-tune concreto, aunque el modelo base lo soporte.
-- Uso en producción desaconsejado sin una capa de moderación externa y sin auditoría previa del comportamiento en los dominios de aplicación.
+- El autor indica explícitamente que el modelo no se ha probado en profundidad y que el proceso se ejecutó en local con bnb_4bit, lo que puede introducir artefactos.
+- La abliteración elimina parte de los mecanismos de rechazo del modelo base, lo que aumenta el riesgo de generar contenido dañino, sesgado o inapropiado sin salvaguardas.
+- Aun tras la abliteración quedan 8/101 rechazos según la model card, por lo que el comportamiento no es completamente uniforme.
+- La divergencia KL de 0,0677 respecto al modelo base implica cambios en la distribución de salida que pueden afectar a la calidad en tareas ajenas al roleplay.
+- No se documentan idiomas soportados; el modelo base Qwen2.5 es multilingüe, pero no hay confirmación en esta ficha.
+- No hay información sobre la longitud de contexto efectiva de este fine-tune.
+- La licencia se etiqueta como "other" con nombre "qwen"; conviene revisar los términos de la licencia Qwen2.5-14B-Instruct antes de un uso comercial.
+- Riesgo de alucinación inherente a los modelos de 14B, sin datos específicos de evaluación en esta versión.
+- El repositorio tiene muy poca tracción (180 descargas, 1 like) y no hay validación independiente del proceso.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/MuXodious/14B-Qwen2.5-Kunou-v1-SOMPOA-heresy
-- Modelo original de Sao10K: https://huggingface.co/Sao10K/14B-Qwen2.5-Kunou-v1
-- Versión 32B de Kunou-v1: https://huggingface.co/Sao10K/32B-Qwen2.5-Kunou-v1
-- Versión 72B de Kunou-v1: https://huggingface.co/Sao10K/72B-Qwen2.5-Kunou-v1
-- Modelo base Qwen2.5-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct/blob/main/LICENSE
-- Heretic (herramienta de abliteration): https://heretic-project.org
-- Axolotl (framework de entrenamiento): https://github.com/axolotl-ai-cloud/axolotl
-- Contacto del autor original: https://sao10k.carrd.co/
-- Ficha en AIBase: https://model.aibase.com/models/details/1944697394050633728
+- Modelo base: https://huggingface.co/Sao10K/14B-Qwen2.5-Kunou-v1
+- Versión 32B de la familia: https://huggingface.co/Sao10K/32B-Qwen2.5-Kunou-v1
+- Versión 72B de la familia: https://huggingface.co/Sao10K/72B-Qwen2.5-Kunou-v1
+- Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
+- Pull request del modificador SOMA: https://github.com/p-e-w/heretic/pull/196
+- Licencia Qwen2.5-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct/blob/main/LICENSE
+- Axolotl (framework de fine-tuning): https://github.com/axolotl-ai-cloud/axolotl
+- Contacto del autor del modelo base: https://sao10k.carrd.co/

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Pratham804/Pratham-LFM2.5-350M-V30-RL-Polisher",
+  "slug": "pratham804-pratham-lfm2-5-350m-v30-rl-polisher",
+  "author": "Pratham804",
+  "url": "https://huggingface.co/Pratham804/Pratham-LFM2.5-350M-V30-RL-Polisher",
+  "created_at": "2026-11-27T20:46:50.000Z",
+  "updated_at": "2026-11-27T20:47:39.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dictation",
+    "cleanup",
+    "lfm2.5",
+    "q4_k_m",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-350M-Base",
+    "base_model:quantized:LiquidAI/LFM2.5-350M-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 229314592,
+  "storage_human": "229 MB",
+  "context_length": 128000,
+  "base_model": "LiquidAI/LFM2.5-350M-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

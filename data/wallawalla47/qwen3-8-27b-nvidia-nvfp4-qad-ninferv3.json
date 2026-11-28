@@ -60,5 +60,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-QAD-NInferV3",
+      "url": "https://huggingface.co/wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-QAD-NInferV3",
+      "snippet": "04.11.2026 ... nvidia/Qwen3.8-27B-NVFP4-QAD (revision 8158ac56 , Model Optimizer 0.46 mixed NVFP4/FP8): the dominant source. NVFP4 projections ( ..."
+    }
+  ]
 }

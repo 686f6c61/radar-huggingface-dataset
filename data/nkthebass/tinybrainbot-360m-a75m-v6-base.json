@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "id": "nkthebass/tinybrainbot-360m-a75m-v6-base",
+  "slug": "nkthebass-tinybrainbot-360m-a75m-v6-base",
+  "author": "nkthebass",
+  "url": "https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v6-base",
+  "created_at": "2026-11-28T01:53:41.000Z",
+  "updated_at": "2026-11-28T01:54:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "mixtral",
+    "text-generation",
+    "small-language-model",
+    "from-scratch",
+    "mixture-of-experts",
+    "moe",
+    "en",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "dataset:ArrowLabs/DCLM-Ultra",
+    "dataset:ArrowLabs/DCLM-Ultra-1.1",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:wikimedia/wikipedia",
+    "dataset:common-pile/youtube_filtered",
+    "dataset:sentence-transformers/gooaq",
+    "dataset:sentence-transformers/eli5",
+    "dataset:AxiomicLabs/FactBase-DCLM",
+    "dataset:HuggingFaceFW/finephrase",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "dataset:nkthebass/tinybrainbot-3m-math-data",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 383429376,
+  "parameters_human": "383.4M",
+  "storage_bytes": 2950094975,
+  "storage_human": "3.0 GB",
+  "context_length": 2048,
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (0-shot)",
+      "value": 62.54
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (0-shot)",
+      "value": 38.05
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (0-shot)",
+      "value": 43.2
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "acc_norm (0-shot)",
+      "value": 72.03
+    },
+    {
+      "task": null,
+      "dataset": "ArithMark-3.0",
+      "metric": "acc_norm (0-shot)",
+      "value": 44.7
+    }
+  ],
+  "sources": []
+}

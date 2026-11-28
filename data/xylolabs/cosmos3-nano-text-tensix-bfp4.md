@@ -2,96 +2,98 @@
 
 ## Resumen
 
-Cosmos3-Nano-Text-Tensix-BFP4 es una cuantización del modelo de texto de NVIDIA Cosmos3-Nano, publicada por Xylolabs y orientada específicamente a las NPU Tensix de Tenstorrent (Wormhole y Blackhole). El modelo base es un transformer de la familia Qwen3 con 8.190.735.360 parámetros, y esta variante aplica GPTQ para redondear las capas lineales al formato de coma flotante por bloques `ttnn.bfloat4_b` (BFP4), de modo que TT-NN pueda empaquetarlas sin recuantizar.
+Cosmos3-Nano-Text-Tensix-BFP4 es una exportación cuantizada del modelo base nvidia/Cosmos3-Nano, adaptada específicamente para su ejecución sobre aceleradores Tenstorrent Tensix (arquitecturas Wormhole y Blackhole). Lo desarrolla Xylolabs, un estudio centrado en la cuantización de pesos en formatos de coma flotante por bloques (block floating point, BFP) para hardware de inferencia alternativo a las GPU tradicionales. El modelo resuelve el problema de desplegar un LLM de aproximadamente 8.190 millones de parámetros en NPUs Tensix, que no soportan de forma nativa los formatos de cuantización habituales de GPU (GPTQ, AWQ en enteros de 4 bits), sino formatos BFP propietarios como bfloat4_b y bfloat8_b.
 
-La relevancia de esta ficha es doble. Por un lado, demuestra una técnica de cuantización de bajo nivel (block floating point de 4,5 bits por peso en las proyecciones de atención y MLP) pensada para hardware específico. Por otro, es un caso claro de artefacto experimental: el autor indica que solo se ha probado en `ttsim`, el simulador de Blackhole de Tenstorrent, y no en hardware real. Además, se trata únicamente de la torre de comprensión del modelo multimodal original (embedding, 36 capas y LM head), con los tensores renombrados al esquema de Qwen3 para cargarse como `Qwen3ForCausalLM`, dejando fuera el codificador de visión, el VAE de vídeo y el tokenizador de audio.
+La exportación conserva únicamente la torre de texto del modelo original: se eliminan el codificador de visión, el VAE de vídeo y el tokenizador de audio presentes en Cosmos3-Nano. El resultado es un checkpoint de pesos en safetensors con las capas de atención y MLP cuantizadas a bfloat4_b (6,397 GB empaquetados) y el resto de tensores en bf16. La relevancia actual radica en que permite ejecutar un modelo de casi 8B en hardware Tensix con una degradación de calidad medida (KL medio de 0,03028 frente a BF16 sobre 16.272 posiciones de texto en inglés y coreano), y con una huella de memoria notablemente inferior a la del checkpoint BF16 original (16,38 GB).
 
-El modelo se distribuye en safetensors en bf16 cuyos valores ya están alineados a la rejilla BFP4, con un tamaño de repositorio de 16,4 GB y un peso empaquetado declarado de 6,40 GB (6,25 bits por peso de media). La licencia es OpenMDW-1.1.
+El modelo hereda la licencia OpenMDW-1.1 del modelo base y se distribuye con el código de cuantización tensix-bfp-gptq, además de instrucciones de ejecución mediante transformers, tt-metal, tt-transformers y tt-forge. La fecha de creación del repositorio es noviembre de 2026.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Qwen3, cargado como `Qwen3ForCausalLM`); 36 capas |
+| Arquitectura | Transformer (torre de texto; se excluyen visión, VAE de vídeo y tokenizador de audio) |
 | Parámetros totales | 8.190.735.360 |
-| Parámetros activos | no disponible (no es MoE) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | BFP4 (`ttnn.bfloat4_b`, 4,5 bits por peso) en q/k/v/o y gate/up/down; bf16 en LM head, embedding, norms y resto de tensores; media de 6,25 bits por peso; compatible también con empaquetado exacto en `ttnn.bfloat8_b` |
-| Idiomas soportados | no disponible (el calibrado de GPTQ usó WikiText-2 y Wikipedia en coreano) |
+| Tipos de cuantización | bfloat4_b (BFP4) en atención y MLP; bfloat8_b (BFP8) en atención y MLP; resto en bf16. Referencia Q4_K_M para llama.cpp |
+| Idiomas soportados | no disponible (la evaluación KL cubre inglés y coreano) |
 | Licencia | openmdw-1.1 |
-| Formato de pesos | safetensors (bf16 con valores en la rejilla BFP4), más `quant4.json` con el formato de cada proyección y `model.safetensors.index.json` |
+| Formato de pesos | safetensors (con índice `model.safetensors.index.json`), carpetas `text-bfp4/` y `text-bfp8/` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder-only de la familia Qwen3 con 36 capas y 8.190 millones de parámetros, del que esta publicación conserva exclusivamente la torre de texto (embedding, capas y LM head). No se ha reentrenado: la ficha describe un proceso de cuantización post-entrenamiento. Las proyecciones de atención (q, k, v, o) y de MLP (gate, up, down) de las 36 capas se redondean a `ttnn.bfloat4_b` mediante GPTQ con búsqueda de exponente por bloque, calibrado sobre 65.536 tokens de WikiText-2 y Wikipedia en coreano. El resto de tensores (LM head, embedding, normas) permanece en bf16, igual que en el modelo base.
+El modelo base nvidia/Cosmos3-Nano es un transformer de aproximadamente 8.190 millones de parámetros. Esta exportación no reentrena el modelo: aplica una cuantización post-entrenamiento en formato block floating point (BFP), implementada en el repositorio tensix-bfp-gptq de Xylolabs. Las capas de atención y MLP se convierten a bfloat4_b o bfloat8_b, mientras que el resto de tensores permanece en bf16. El empaquetado se realiza para el diseño de tiles y la configuración de memoria DRAM de los NPUs Tensix, con un script `pack_tensix.py` y un verificador `verify_grid.py` que permiten comprobar el round-trip de los valores empaquetados.
 
-La innovación técnica es el formato block floating point de 4,5 bits: cada bloque de pesos comparte un exponente, lo que reduce el coste de almacenamiento y cómputo en las NPU Tensix. Los ficheros se guardan en bf16, pero cada valor ya está en la rejilla BFP4, de forma que TT-NN lo empaqueta sin un segundo redondeo. El autor incluye scripts de verificación (`pack_tensix.py`, `verify_grid.py`) que comprueban que el empaquetado no altera ningún valor, y señala que los mismos valores se empaquetan de forma exacta en `ttnn.bfloat8_b`. En bf16, el modelo reproduce exactamente el código de NVIDIA sobre texto.
+La evaluación de la degradación se mide como divergencia KL media frente al checkpoint BF16, sobre 16.272 posiciones de texto en inglés (WikiText-2 test) y coreano (Wikipedia en coreano), tanto en texto plano como aplicando la plantilla de chat. El límite aceptado es 1,5 veces la KL de referencia de una cuantización Q4_K_M de llama.cpp (0,03370). La variante BFP4 obtiene 0,03028 y la BFP8 0,00078, ambas por debajo de ese umbral. No se detallan en la información disponible los datos de entrenamiento del modelo base (número de tokens, composición del dataset, uso de RLHF/DPO) ni innovaciones de decodificación.
 
 ## Capacidades
 
-- Generación de texto conversacional, con plantilla de chat aplicada mediante `apply_chat_template`.
-- Razonamiento y respuesta a preguntas en formato multi-turno (el ejemplo de la model card es una pregunta directa).
-- Carga directa con `transformers` como `Qwen3ForCausalLM`, lo que hereda las capacidades del decoder Qwen3 subyacente.
-- Ejecución en NPU Tensix mediante TT-NN (`ttnn` 0.81.1), con soporte de los formatos `bfloat4_b` y `bfloat8_b`.
-- Integración con tt-transformers (tt-metal v0.81.1) usando `--use_hf_rope` y configuraciones de precisión mixta por capa.
-- Compatibilidad con tt-forge (tt-xla) en bf16 exacto; la opción `bfp_bf4` de tt-forge no es adecuada para estos pesos.
-- Capacidades multimodales (visión, vídeo, audio): no disponibles en esta variante, que es solo texto.
-- Tool calling, function calling y modo de razonamiento explícito: no disponibles en la información proporcionada.
+- Generación de texto autoregresiva en la torre de texto del modelo Cosmos3-Nano.
+- Ejecución sobre NPUs Tenstorrent Tensix (Wormhole, Blackhole) mediante tt-metal, tt-transformers y tt-forge.
+- Compatibilidad con la API estándar de transformers (`AutoModelForCausalLM`, `AutoTokenizer`) con `dtype="bfloat16"` y `device_map="auto"`.
+- Aplicación de plantilla de chat mediante `apply_chat_template` para diálogo multi-turno.
+- Cuantización selectiva por capa: atención y MLP en BFP4/BFP8, resto en bf16, con configuración de precisión por operador (`precision_cfg`, `fidelity_cfg`) en tt-transformers.
+- Soporte de caché KV en bf8 según la configuración de ejemplo de tt-transformers.
+- Capacidades de visión, vídeo y audio del modelo base no están incluidas en esta exportación.
+- Soporte de tool calling, function calling y agentes: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Evaluación de cuantización BFP4 en simulador: usar `pack_tensix.py` y `verify_grid.py` para comprobar que el redondeo GPTQ a 4,5 bits no altera los valores al empaquetar en TT-NN, antes de comprometer hardware.
-- Prototipado en NPU Tenstorrent: desplegar el modelo con tt-transformers v0.81.1 y la configuración de precisión mixta indicada (bfp4 en ff1_3, ff2, wqkv y wo; bfp8 en kv_cache) para medir rendimiento batch-1 en Wormhole o Blackhole.
-- Investigación en formatos block floating point: servir como referencia reproducible de un pipeline GPTQ con búsqueda de exponente por bloque calibrado sobre WikiText-2 y Wikipedia en coreano.
-- Generación de texto en pipelines de transformers: cargar el modelo en bf16 con `device_map="auto"` para tareas de chat o respuesta a preguntas en GPU convencional, aprovechando que los valores ya están en la rejilla BFP4.
-- Base para comparativas de fidelidad numérica: contrastar la salida en bf16 con la del modelo original de NVIDIA para validar que el renombrado de tensores al esquema Qwen3 no introduce divergencias.
-- Estudio de portabilidad de modelos Qwen3 a aceleradores: emplear el renombrado a `Qwen3ForCausalLM` como plantilla para portar otros checkpoints de la familia a TT-NN.
-- Docencia y experimentación con cuantización extrema: analizar el compromiso entre 4,5 bits por peso en proyecciones y bf16 en embedding y LM head, con un peso empaquetado de 6,40 GB.
+- Despliegue de un LLM de 8B en infraestructura Tenstorrent: el checkpoint BFP4 (6,397 GB) permite cargar el modelo en NPUs Wormhole o Blackhole con menor presión de memoria que el BF16 (16,38 GB), usando tt-metal v0.81.1 y `--use_hf_rope`.
+- Servicio de generación de texto en entornos con NPUs dedicadas: mediante tt-forge y el plugin PJRT (`pjrt-plugin-tt==1.4.0`) se puede compilar el modelo con `torch.compile(backend="tt")` y ejecutar inferencia con la API de PyTorch/XLA.
+- Evaluación de calidad de cuantización: el repo incluye métricas KL frente a BF16 y frente a Q4_K_M, útil para equipos que comparan formatos BFP frente a cuantizaciones de GPU antes de fijar un formato en producción.
+- Integración en pipelines basados en transformers: al conservar la interfaz estándar, se puede usar en scripts existentes de evaluación o generación con `AutoModelForCausalLM` sin reescribir el código de carga.
+- Investigación en hardware alternativo: sirve como referencia para estudiar el impacto de BFP4/BFP8 en la calidad de un transformer de 8B sobre aceleradores Tensix, con verificadores de empaquetado incluidos.
+- Prototipado de asistentes conversacionales: la plantilla de chat y la evaluación en texto plano y chat permiten desplegar diálogos multi-turno en inglés y coreano, los idiomas cubiertos por la evaluación KL.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card solo afirma que, sobre texto, el modelo coincide exactamente con el código de NVIDIA en bf16, y que el empaquetado BFP4 y BFP8 no altera ningún valor; no se aportan métricas de calidad (MMLU, HumanEval, GSM8K) ni de latencia o throughput.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La única métrica publicada es la divergencia KL media frente a BF16:
+
+| Formato | Tamaño empaquetado (GB) | KL media a BF16 |
+|---|---|---|
+| text-bfp4 | 6,397 | 0,03028 |
+| text-bfp8 | 9,870 | 0,00078 |
+| BF16 (nvidia/Cosmos3-Nano) | 16,38 | 0 |
+| Q4_K_M (llama.cpp) | 5,028 | 0,03370 |
+
+La KL se calcula sobre 16.272 posiciones de WikiText-2 test y Wikipedia en coreano, en texto plano y con plantilla de chat, con un límite de 1,5 veces la KL de Q4_K_M.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en bf16: aproximadamente 16,4 GB de pesos, más overhead de activaciones y caché KV; se recomienda al menos 24 GB para comodidad.
-- VRAM estimada con pesos empaquetados en BFP4: 6,40 GB empaquetados, aunque la carga en `transformers` se hace en bf16 y ocupa el tamaño completo.
-- GPU consumer: cabe en tarjetas de 24 GB o más (por ejemplo, RTX 3090 o RTX 4090) en bf16; en configuraciones de 16 GB requeriría cuantización adicional no incluida en el repositorio.
-- GPU de centro de datos: A100, H100 y similares para inferencia en bf16 con `device_map="auto"`.
-- Aceleradores objetivo: NPU Tensix de Tenstorrent (Wormhole y Blackhole) mediante TT-NN 0.81.1; probado únicamente en `ttsim`, el simulador de Blackhole, no en hardware real.
-- Opciones de despliegue: `transformers` (con `AutoModelForCausalLM`), tt-transformers (tt-metal v0.81.1, demo `simple_text_demo.py`) y tt-forge (tt-xla, en bf16 exacto). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM/DRAM estimada: 6,397 GB para la carpeta `text-bfp4/` y 9,870 GB para `text-bfp8/` (tamaños empaquetados); el checkpoint BF16 de referencia ocupa 16,38 GB.
+- Hardware objetivo: NPUs Tenstorrent Tensix, arquitecturas Wormhole y Blackhole.
+- GPU consumer: no se indica compatibilidad con GPU; el modelo está orientado a Tensix. La ejecución vía transformers con `device_map="auto"` se documenta, pero el formato BFP4/BFP8 está pensado para el empaquetado Tensix.
+- Software de despliegue: tt-metal v0.81.1 (con `--use_hf_rope`), tt-transformers, tt-forge con `pjrt-plugin-tt==1.4.0`, y transformers para carga estándar.
+- Latencia y throughput: no disponible. El repo incluye un test de rendimiento (`simple_text_demo.py -k "performance and batch-1"`) pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Formato/cuantización | Licencia | Hardware objetivo |
 |---|---|---|---|---|---|
-| Xylolabs/Cosmos3-Nano-Text-Tensix-BFP4 | 8,19 mil millones | no disponible | BFP4 (4,5 bits) + bf16 | openmdw-1.1 | Hugging Face, probado solo en simulador |
-| nvidia/Cosmos3-Nano (base) | no disponible en la información | no disponible | bf16 | no disponible en la información | Hugging Face |
-| Qwen3 (familia, esquema de carga) | no disponible en la información | no disponible | no disponible | no disponible en la información | Hugging Face |
+| Cosmos3-Nano-Text-Tensix-BFP4 (este) | 8.190.735.360 | no disponible | BFP4/BFP8 + bf16 | openmdw-1.1 | Tenstorrent Tensix |
+| nvidia/Cosmos3-Nano (base) | 8.190.735.360 | no disponible | BF16 | openmdw-1.1 | GPU |
+| Q4_K_M de llama.cpp (referencia del repo) | 8.190.735.360 (mismo base) | no disponible | Q4_K_M (4 bits entero) | openmdw-1.1 | CPU/GPU vía llama.cpp |
 
-No se dispone de datos de benchmarks ni de especificaciones del modelo base de NVIDIA más allá de su identificador, por lo que la comparación cuantitativa no es posible con la información proporcionada.
+No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Artefacto experimental: el autor indica que solo se ha probado en `ttsim` (simulador de Blackhole) y no en hardware Tensix real.
-- Solo texto: excluye el codificador de visión, el VAE de vídeo y el tokenizador de audio del Cosmos3-Nano original.
-- El tokenizador es el de NVIDIA y `transformers` advierte sobre su regex; hay que cargarlo como lo hace el pipeline de NVIDIA.
-- En tt-transformers es obligatorio pasar `--use_hf_rope`; sin ello, el QKV fusionado se recuantiza y se pierde exactitud.
-- La demo de tt-transformers empaqueta el LM head en bfloat8_b, por lo que el head no es exacto en ese escenario.
-- La opción `bfp_bf4` de tt-forge recuantiza con un layout de bloques distinto; para pesos de 4,5 bits hay que usar tt-transformers.
-- tt-forge no se ha ejecutado de extremo a extremo según la model card.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible; al derivar de un modelo base sin ficha de evaluación publicada, no hay garantías declaradas.
-- Idiomas soportados: no disponibles; el calibrado de GPTQ usó WikiText-2 (inglés) y Wikipedia en coreano, lo que no implica cobertura lingüística declarada.
-- Licencia OpenMDW-1.1: deben revisarse sus términos antes de uso comercial; la ficha no detalla restricciones adicionales.
-- Longitud de contexto: no disponible, lo que impide planificar despliegues con ventanas largas sin verificación previa.
-- Sin descargas ni likes en el momento de la consulta, lo que reduce la evidencia de uso en producción.
+- Solo se incluye la torre de texto: no hay visión, VAE de vídeo ni tokenizador de audio, por lo que no puede usarse para tareas multimodales del modelo base.
+- La cuantización BFP4 introduce una divergencia medible (KL 0,03028); para aplicaciones sensibles a la fidelidad conviene usar BFP8 (KL 0,00078) o BF16.
+- La evaluación de calidad cubre únicamente inglés y coreano; el rendimiento en otros idiomas no está documentado.
+- No se publican datos de sesgos, alucinación ni evaluaciones de seguridad del modelo base ni de la versión cuantizada.
+- La licencia OpenMDW-1.1 se hereda del modelo base; el repositorio del modelo base no incluye archivo de licencia, y el archivo `LICENSE` de este repo contiene el acuerdo. Conviene revisar los términos de OpenMDW-1.1 antes de uso comercial.
+- El despliegue en Tensix requiere versiones concretas de software (tt-metal v0.81.1, `--use_hf_rope`, `pjrt-plugin-tt==1.4.0`), lo que limita la portabilidad.
+- El repositorio unifica BFP4 y BFP8 desde el 27 de noviembre de 2026; las rutas antiguas (`...-BFP4` y `...-BFP8`) pueden quedar obsoletas.
+- No se dispone de información sobre la longitud de contexto soportada, lo que impide planificar cargas con ventanas largas.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Xylolabs/Cosmos3-Nano-Text-Tensix-BFP4
+- Modelo en Hugging Face: https://huggingface.co/Xylolabs/Cosmos3-Nano-Tensix-BFP4
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Nano
-- Repositorio de código (tensix-bfp-gptq): https://github.com/XylolabsInc/tensix-bfp-gptq
+- Repositorio de código de cuantización: https://github.com/XylolabsInc/tensix-bfp-gptq
 - Documentación de Tenstorrent: https://docs.tenstorrent.com
 - tt-metal (rama v0.81.1): https://github.com/tenstorrent/tt-metal
-- Licencia del modelo: https://huggingface.co/Xylolabs/Cosmos3-Nano-Text-Tensix-BFP4/blob/main/LICENSE
+- Licencia OpenMDW-1.1 (archivo del repo): https://huggingface.co/Xylolabs/Cosmos3-Nano-Tenstorrent-Tensix/blob/main/LICENSE

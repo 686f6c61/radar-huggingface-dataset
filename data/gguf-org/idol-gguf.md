@@ -2,52 +2,50 @@
 
 ## Resumen
 
-idol-gguf es una distribucion en formato GGUF de un modelo de lenguaje publicado por el usuario gguf-org en Hugging Face. El repositorio contiene unicamente los pesos cuantizados en GGUF, con un total de 840.592.640 parametros segun los metadatos de safetensors asociados al repo, lo que lo situa en la franja de los modelos pequenos (aproximadamente 0,84 mil millones de parametros). El tamano del repositorio es de 2,5 GB.
+Idol es un modelo de generación de mallas 3D (image-to-3D) desarrollado por Sperid Labs, publicado originalmente como `speridlabs/idol` y distribuido en formato GGUF por el repositorio `gguf-org/idol-gguf`. El modelo toma una imagen de referencia y produce un activo 3D en formato GLB, apoyándose en un decodificador de malla independiente (`idol_decoder`), un VAE (`pig_flux2_vae`) y un codificador de visión (`dino_v3_vit_h`). No es, por tanto, un modelo de lenguaje: es un pipeline multimodal de reconstrucción 3D.
 
-La model card publicada por el autor es practicamente vacia: solo incluye la declaracion de licencia Apache 2.0, sin descripcion del modelo base, arquitectura, datos de entrenamiento, idiomas ni casos de uso previstos. No se dispone de informacion sobre el pipeline, los idiomas soportados ni resultados de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+El checkpoint cuantizado en GGUF contiene 220.697.543 parámetros (aproximadamente 220,7 M) y el repositorio ocupa 4,2 GB, lo que sugiere que la mayor parte del peso corresponde a los componentes auxiliares (decodificador, VAE y CLIP vision) más que al modelo principal. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y la herramienta de referencia para ejecutarlo es `ggk`, un binario de inferencia compatible con GGUF.
 
-Por tanto, esta ficha se limita a documentar los datos verificables del repositorio (parametros, formato, licencia, tamano) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de calidad, capacidades o idoneidad para produccion requeriria una validacion empirica directa por parte del usuario.
+La relevancia actual del modelo radica en que traslada la lógica de los modelos generativos difusos (VAE, LoRA, pasos de muestreo, CFG) al dominio de la geometría 3D, con soporte para LoRA de destilación (5 pasos), eliminación de fondo con BiRefNet y un modo "magnet" que aplica automáticamente los clips presentes en el directorio de trabajo. Es una pieza orientada a pipelines de creación de assets, no a chat ni a razonamiento textual.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | 840.592.640 |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | GGUF (niveles concretos no especificados en la model card) |
-| Idiomas soportados | no disponible |
+| Arquitectura | no disponible (pipeline image-to-3D con decodificador de malla, VAE y CLIP vision; no se detalla la arquitectura interna) |
+| Parametros totales | 220.697.543 (~220,7 M) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (modelo no textual) |
+| Tipos de cuantizacion | GGUF; el ejemplo de la model card usa `q8_0` y `f16` para componentes auxiliares |
+| Idiomas soportados | no disponible (modelo no linguistico) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (safetensors en el modelo base `speridlabs/idol`) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no describe la arquitectura (transformer, MoE, SSM o hibrida), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El unico dato estructural verificable es el recuento de parametros (840.592.640) y el formato de publicacion (GGUF), que implica que los pesos han sido convertidos y cuantizados para inferencia con herramientas compatibles con este formato (llama.cpp y derivados).
+La información disponible no detalla la arquitectura interna del modelo base. Por los comandos de la model card se deduce un pipeline compuesto por: un modelo principal (`idol-q8_0.gguf`), un decodificador de malla (`idol_decoder-q8_0.gguf`), un VAE (`pig_flux2_vae_fp32-f16.gguf`) y un codificador de visión basado en DINOv3 ViT-H (`dino_v3_vit_h-q8_0.gguf`). La presencia de un VAE tipo Flux y de un esquema de muestreo con `--steps` y `--cfg-scale` indica un proceso generativo de tipo difusión aplicado a la representación latente de la geometría, posteriormente decodificada a malla GLB.
 
-Tampoco se documenta el modelo base del que deriva esta cuantizacion, lo que impide trazar su procedencia, su tokenizador o sus caracteristicas de atencion. Esta ausencia de informacion es una limitacion relevante para cualquier uso en produccion.
+No se han publicado en la información proporcionada datos sobre el número de tokens o imágenes de entrenamiento, la composición del dataset, ni si hubo RLHF, DPO u otras fases de alineación. Sí se documenta la existencia de un LoRA de destilación (`idol_turbo_lora_v5`) que permite reducir la inferencia a 5 pasos con `cfg-scale 1`, lo que es una innovación práctica relevante para producción: baja el coste computacional del muestreo a cambio de una posible pérdida de fidelidad geométrica.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada por el autor; no hay model card que describa capacidades.
-- Razonamiento, codigo y matematicas: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (idiomas no declarados).
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
-
-No se debe asumir ninguna capacidad concreta sin una evaluacion empirica del modelo.
+- Generación de mallas 3D en formato GLB a partir de una imagen de referencia.
+- Eliminación automática de fondo de la imagen de entrada mediante BiRefNet (`--mesh-background-model birefnet-f16.gguf`).
+- Modo "magnet": aplica automáticamente los clips (`*.gguf`) presentes en el mismo directorio, simplificando la invocación.
+- Soporte de LoRA para destilación de pasos (5-step LoRA) y ajuste del muestreo con `--steps` y `--cfg-scale`.
+- Control del decodificador de malla y del codificador de visión como componentes separados.
+- No soporta tool calling, function calling, agentes, razonamiento multi-step ni capacidades multilingües, al no ser un modelo de lenguaje.
+- No se documentan capacidades de visión general (VQA, OCR) más allá del uso del CLIP vision como extractor de características para la generación 3D.
 
 ## Casos de uso
 
-- Inferencia local en equipos con recursos limitados: con 840 millones de parametros en GGUF, el modelo es candidato a ejecutarse en CPU o en GPU de gama baja mediante llama.cpp u Ollama, aunque su calidad real no esta documentada.
-- Prototipado rapido de pipelines de generacion de texto: sirve para validar infraestructura de inferencia (carga de GGUF, servidores compatibles) antes de migrar a modelos mayores.
-- Pruebas de integracion en entornos de CI: al ser un artefacto pequeno (2,5 GB de repo), puede incorporarse a tests automatizados de despliegue de modelos.
-- Experimentacion academica con cuantizacion: util para estudiar el comportamiento de pesos GGUF de ~0,84B parametros en distintas configuraciones de hardware.
-- Despliegue en dispositivos edge o embebidos: el tamano reducido permite evaluar su viabilidad en entornos con memoria restringida.
-- Evaluacion comparativa de modelos pequenos: puede emplearse como linea base en estudios de rendimiento de modelos de menos de 1B parametros, siempre que se documente su origen.
-
-En todos los casos, la idoneidad depende de una validacion previa, dado que no hay informacion publicada sobre calidad, sesgos o comportamiento.
+- Creación de assets para videojuegos: a partir de una ilustración o fotografía de referencia, el modelo genera una malla GLB que puede importarse en motores como Unity o Unreal; el modo "magnet" agiliza el procesado por lotes.
+- Prototipado rápido de productos: convertir bocetos o renders 2D en mallas 3D para revisión temprana de forma y volumetría antes de modelado manual.
+- Catalogación de e-commerce en 3D: generar vistas 3D de productos a partir de fotografías con fondo eliminado mediante BiRefNet, aptas para visores web.
+- Previsualización en pipelines de impresión 3D: obtener una malla base que luego se retoca y repara en herramientas de escultura, reduciendo el tiempo de modelado inicial.
+- Integración en herramientas DCC: invocar `ggk` desde scripts de Blender o Maya para generar variantes de un activo a partir de imágenes de referencia dentro de un flujo automatizado.
+- Generación de contenido para realidad aumentada: producir mallas ligeras para experiencias AR móviles, donde el coste de inferencia con el LoRA de 5 pasos es asumible.
+- Iteración de diseño con LoRA específicos: usar adaptadores entrenados para un estilo o categoría de objeto concreto y aplicar el muestreo acelerado para comparar variantes rápidamente.
 
 ## Benchmarks y rendimiento
 
@@ -55,27 +53,29 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma oficial. Como referencia orientativa basada en el recuento de parametros, un modelo de 0,84B en cuantizacion de 4 bits requeriria del orden de 0,5-0,7 GB de memoria para los pesos, mas el overhead de contexto y runtime; en 8 bits, del orden de 0,9-1,1 GB. Estos calculos son estimaciones, no datos del autor.
-- GPU recomendadas: no especificadas. Por tamano, cabria en GPUs consumer con 4 GB o mas de VRAM, pero no hay confirmacion oficial.
-- Cabe en GPU consumer: probablemente si, en funcion de la cuantizacion y la longitud de contexto; no verificado.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF (por ejemplo, variantes de vLLM con soporte GGUF, aunque la compatibilidad concreta no esta documentada).
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma explícita. El repositorio ocupa 4,2 GB y los ficheros de ejemplo son `q8_0` y `f16`; una estimación conservadora sitúa la inferencia completa (modelo, decodificador, VAE y CLIP vision) en el rango de 6-10 GB de VRAM, pero es una estimación, no un dato del autor.
+- GPU recomendadas: no disponibles. Por tamaño, cabría esperar funcionamiento en GPUs de consumo con 8-12 GB o más, pero el autor no lo confirma.
+- ¿Cabe en consumer GPU?: previsiblemente sí en tarjetas con suficiente VRAM para cargar los cuatro componentes; no confirmado por el autor.
+- Opciones de despliegue: el autor documenta el binario `ggk` con soporte GGUF; no se mencionan vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje y no aplicables directamente a este pipeline).
+- Latencia y throughput: no disponibles. El LoRA de 5 pasos reduce el número de pasos de muestreo, lo que disminuye el coste frente a configuraciones con más pasos, pero no se publican cifras.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables identificados en la informacion proporcionada, ya que se desconoce el modelo base y la familia a la que pertenece.
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos comparables de image-to-3D (por ejemplo, Trellis, Hunyuan3D o TripoSR) que permitan una comparación rigurosa. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- Model card practicamente vacia: no hay informacion sobre arquitectura, entrenamiento, datos, idiomas ni evaluacion.
-- Riesgo de alucinacion: desconocido; no hay evaluaciones publicadas.
-- Sesgos conocidos: no documentados.
-- Limitaciones de contexto o idioma: no disponibles.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias sobre el contenido ni sobre la procedencia de los datos de entrenamiento.
-- Repositorio sin traccion (0 descargas, 0 likes): no hay evidencia de uso comunitario ni de mantenimiento.
-- Ausencia de modelo base identificado: dificulta la trazabilidad y la verificacion de derechos sobre los pesos originales.
-- No apto para produccion sin validacion empirica previa.
+- No es un modelo de lenguaje: no debe evaluarse con métricas de texto (MMLU, GSM8K, HumanEval) ni usarse para chat, código o razonamiento.
+- La calidad de la malla depende fuertemente de la imagen de referencia; no se documentan límites de resolución ni de encuadre.
+- El uso del LoRA de 5 pasos con `cfg-scale 1` puede degradar el detalle geométrico frente a muestreos más largos; conviene validar la fidelidad en el caso de uso concreto.
+- No se documentan sesgos, pero al ser un modelo entrenado con datos visuales puede reflejar sesgos de representación en los objetos que genera.
+- Riesgo de alucinación geométrica: el modelo puede inventar partes no visibles en la imagen de referencia; no se cuantifica en la información disponible.
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las licencias de los componentes auxiliares (VAE `pig_flux2_vae`, DINOv3, BiRefNet), que pueden tener términos propios no detallados aquí.
+- El ecosistema de ejecución (`ggk`) es específico del autor; la integración en producción requiere verificar su mantenimiento y compatibilidad.
+- No se documentan idiomas ni contexto porque el modelo no procesa texto.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/gguf-org/idol-gguf
+- Repositorio GGUF: https://huggingface.co/gguf-org/idol-gguf
+- Modelo base: https://huggingface.co/speridlabs/idol
+- No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

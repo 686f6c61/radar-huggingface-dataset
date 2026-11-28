@@ -2,91 +2,92 @@
 
 ## Resumen
 
-TownPass on-device assistant models es un repositorio de artefactos de inferencia (no un modelo único entrenado desde cero) publicado por el usuario allensung1226 para la aplicación "台北一點就通！微服務入口整合助理", un asistente on-device integrado en un fork de la app TownPass / 台北通. El repositorio agrupa conversiones a GGUF y whisper.cpp de modelos de terceros, junto con índices de recuperación (RAG) construidos a partir de datos abiertos del Ayuntamiento de Taipéi, con el objetivo de que el asistente funcione íntegramente en el teléfono sin enviar audio ni texto a servidores externos.
+TownPass on-device assistant models es un repositorio de artefactos de inferencia (no un modelo unico) publicado por el desarrollador allensung1226 para la aplicacion movil "台北一點就通！微服務入口整合助理", una bifurcacion de la app Taipei/TownPass. El repositorio agrupa conversiones a GGUF/ggml, una cuantizacion propia y un pequeno clasificador entrenado por el autor, todos destinados a ejecutarse localmente en el telefono sin enviar audio ni texto a ningun servidor.
 
-El contenido incluye un modelo de embeddings multilingüe (multilingual-e5-small de Microsoft, cuantizado a q8_0), un índice vectorial de 8.121 entradas de preguntas frecuentes municipales con sus metadatos, y dos modelos de reconocimiento automático de voz convertidos a formato ggml: PhoWhisper-base (VinAI, para vietnamita) y Breeze-ASR-26 (MediaTek Research, para taiwanés). La app descarga estos ficheros bajo consentimiento del usuario y verifica tamaño y SHA-256 contra un manifiesto interno antes de cargarlos.
+El contenido principal incluye una version GGUF cuantizada a q8_0 de intfloat/multilingual-e5-small (modelo de embeddings de Microsoft, 117.506.305 parametros en safetensors), un cross-encoder derivado del anterior y afinado por el proyecto para decidir a que pantalla de la app corresponde una peticion del usuario, un indice RAG con 8.121 entradas de preguntas frecuentes del Ayuntamiento de Taipei, y dos familias de reconocimiento de voz convertidas a whisper.cpp: PhoWhisper-base (vietnamita) y Breeze-ASR-26 (chino mandarin y taiwanes). El repo ocupa 3,9 GB.
 
-El repositorio declara 117.505.920 parámetros totales en safetensors y un tamaño de 2,8 GB. Es relevante para desarrolladores que construyen asistentes móviles multilingües con requisitos estrictos de privacidad y para quienes necesitan pipelines de ASR y recuperación semántica empaquetados para despliegue en dispositivo, aunque no aporta un modelo generativo propio.
+Su relevancia es practica: ilustra un patron de despliegue de asistentes completamente on-device en dispositivos moviles, combinando recuperacion semantica, clasificacion de intencion y ASR con modelos pequenos y cuantizados. No obstante, la licencia es mixta ("mixed-see-table"), cada fichero tiene su propia procedencia y el autor advierte que las conversiones no estan avaladas por los autores originales, lo que limita su reutilizacion directa en produccion ajena al proyecto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Varias: transformer de embeddings (e5-small), encoder-decoder tipo Whisper (PhoWhisper-base, Breeze-ASR-26); índice RAG vectorial |
-| Parametros totales | 117.505.920 (declarados en safetensors); el repo empaqueta varios modelos de distinto tamaño |
-| Parametros activos | no disponible (no es MoE) |
+| Arquitectura | Transformer (encoder) para e5-small y el clasificador cross-encoder; encoder-decoder tipo Whisper para los modelos ASR |
+| Parametros totales | 117.506.305 (multilingual-e5-small, dato safetensors); el resto de artefactos no publica recuento |
+| Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | q8_0 (e5-small, PhoWhisper-base, Breeze-ASR-26) y q4_K (Breeze-ASR-26 para dispositivos con 8 GB de memoria) |
-| Idiomas soportados | zh, nan (taiwanés), vi |
-| Licencia | mixta: MIT (multilingual-e5-small), BSD-3-Clause (PhoWhisper), Apache-2.0 (Breeze-ASR-26), Open Government Data License v1.0 (datos FAQ de Taipéi) |
-| Formato de pesos | GGUF (llama.cpp) y ggml (whisper.cpp); índice en binario float32 y JSON |
+| Tipos de cuantizacion | q8_0 (e5-small, clasificador, PhoWhisper-base, Breeze-ASR-26); q4_K y q4_0 (Breeze-ASR-26) |
+| Idiomas soportados | zh (mandarin), nan (taiwanes/min nan), vi (vietnamita) |
+| Licencia | mixed-see-table: MIT (e5-small y clasificador derivado), BSD-3-Clause (PhoWhisper), Apache-2.0 (Breeze-ASR-26), Open Government Data License v1.0 (datos FAQ de Taipei) |
+| Formato de pesos | GGUF (llama.cpp) y ggml bin (whisper.cpp); embeddings.bin en float32 row-major |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no entrena modelos nuevos: realiza conversiones de formato y cuantización de modelos existentes. multilingual-e5-small es un transformer de embeddings de Microsoft convertido a GGUF y cuantizado a q8_0 para su uso con `llama-server --embedding`; se emplea para generar el índice vectorial de las FAQ municipales (8.121 entradas × 384 dimensiones float32, normalizadas, en orden row-major). PhoWhisper-base de VinAI y Breeze-ASR-26 de MediaTek Research son modelos tipo Whisper convertidos a ggml con el script `convert-h5-to-ggml.py` de whisper.cpp y cuantizados con `whisper-quantize`; Breeze-ASR-26 se ofrece además en q4_K para teléfonos con 8 GB de RAM.
+El repositorio no entrena un LLM generativo: ensambla piezas de inferencia. Por un lado, multilingual-e5-small de Microsoft, un encoder transformer de 117,5 millones de parametros orientado a embeddings de frases multilingues, convertido a GGUF y cuantizado a q8_0 para `llama-server --embedding`. Sobre esa base, el autor entrena un cross-encoder (`townpass-decision-e5-ce-v1`) que puntua una peticion del usuario contra cada pantalla de la app; el entrenamiento usa peticiones sinteticas generadas para el proyecto mas los nombres de pantalla, palabras clave y ejemplos propios de la app, excluyendo las frases de evaluacion. Es el unico fichero entrenado por el proyecto.
 
-Los datos de recuperación proceden del conjunto abierto "臺北市市政網站整合平台之常見問答" del Ayuntamiento de Taipéi, publicado bajo Open Government Data License v1.0, e incluyen preguntas, respuestas y departamento responsable. No se documentan procesos de RLHF, DPO ni datos de entrenamiento adicionales; las conversiones, según el autor, solo cambian formato y precisión numérica, no lo aprendido por los modelos originales, y no cuentan con el aval de los autores originales.
+Para voz, se incluyen conversiones a ggml de PhoWhisper-base de VinAI (vietnamita, BSD-3-Clause) y de Breeze-ASR-26 de MediaTek Research (Apache-2.0, paper citado como Lan et al., 2026, arXiv:2603.19259), esta ultima en tres cuantizaciones: q8_0, q4_K (usada por builds anteriores al 13 de noviembre de 2026) y q4_0 (iPhone y Android con 8 GB, descrita por el autor como igual de precisa que q8_0 en su evaluacion). El indice RAG contiene 8.121 entradas de preguntas frecuentes municipales vectorizadas con e5 (384 dimensiones, float32 normalizado). La app verifica tamano y SHA-256 de cada fichero contra un manifiesto interno antes de cargarlo.
 
 ## Capacidades
 
-- Generación de embeddings de texto multilingües mediante multilingual-e5-small para búsqueda semántica y recuperación aumentada (RAG).
-- Recuperación sobre un corpus de 8.121 preguntas frecuentes del Ayuntamiento de Taipéi con metadatos de departamento.
-- Reconocimiento automático de voz en vietnamita con PhoWhisper-base.
-- Reconocimiento automático de voz en taiwanés (nan) con Breeze-ASR-26, en dos niveles de cuantización.
-- Ejecución íntegra on-device: sin envío de audio ni texto a servidores externos.
-- Verificación de integridad de los ficheros descargados mediante SHA-256 y tamaño contra un manifiesto interno.
-- Compatibilidad con endpoints (`endpoints_compatible`) y con los servidores `whisper-server` y `llama-server`.
-- No incluye modelo generativo de texto propio: la app descarga Whisper tiny/small, Ministral 3B y Gemma 4 E2B desde los repositorios de sus autores.
+- Generacion de embeddings de frases multilingues (zh, nan, vi) con e5-small cuantizado.
+- Clasificacion de intencion/routing: puntua una peticion contra cada pantalla de la app para decidir la navegacion.
+- Recuperacion aumentada (RAG) sobre un corpus cerrado de 8.121 FAQ del Ayuntamiento de Taipei.
+- Reconocimiento automatico de voz en vietnamita (PhoWhisper-base) y en mandarin/taiwanes (Breeze-ASR-26).
+- Ejecucion completamente on-device: sin envio de audio ni texto a servidores externos.
+- Verificacion de integridad de los pesos mediante SHA-256 en el manifiesto de la app.
+- No soporta generacion de texto libre, tool calling, agentes ni razonamiento multi-paso: la generacion la aportan modelos de terceros (Whisper tiny/small, Ministral 3B, Gemma 4 E2B) descargados de sus repositorios originales.
 
 ## Casos de uso
 
-- Asistente municipal en el móvil: la app combina el índice de FAQ con e5-small para responder consultas sobre trámites de Taipéi sin conexión ni envío de datos, útil en entornos con requisitos de privacidad.
-- Transcripción de voz en vietnamita para residentes extranjeros: PhoWhisper-base en q8_0 permite dictar consultas en vietnamita y pasarlas al pipeline de recuperación.
-- Transcripción en taiwanés: Breeze-ASR-26 en q8_0 (o q4_K en móviles de 8 GB) cubre el reconocimiento de habla taiwanesa, poco soportada por modelos genéricos.
-- Búsqueda semántica sobre datos abiertos: el par embeddings.bin + metadata.json se puede reutilizar para construir interfaces de consulta sobre el corpus de FAQ de Taipéi.
-- Despliegue de referencia para pipelines on-device: sirve como ejemplo de empaquetado de ASR + embeddings + RAG con verificación de integridad por SHA-256 en una app móvil.
-- Evaluación de cuantizaciones en móvil: permite comparar q8_0 frente a q4_K de Breeze-ASR-26 en términos de memoria y calidad en dispositivos de gama media.
-- Integración en servidores ligeros: los GGUF pueden cargarse con `llama-server --embedding` y los ggml con `whisper-server` para prototipos locales.
+- Asistente municipal en movilidad: la app encadena ASR (Breeze-ASR-26 o PhoWhisper) con el clasificador de decision para llevar al usuario a la pantalla correcta del Ayuntamiento de Taipei sin salir del dispositivo.
+- Preguntas frecuentes offline: el indice `faq_rag` permite responder consultas sobre tramites municipales recuperando las entradas mas proximas por similitud coseno sobre embeddings de 384 dimensiones.
+- Atencion en vietnamita para residentes extranjeros: PhoWhisper-base q8_0 (81,7 MB) transcribe voz en vietnamita en telefonos de gama media.
+- Despliegue en iPhone y Android de 8 GB: la cuantizacion q4_0 de Breeze-ASR-26 (888,9 MB) reduce memoria manteniendo, segun el autor, la precision de q8_0.
+- Routing de bajo coste en produccion: el cross-encoder de 132 MB puede sustituir a un LLM en la tarea de decidir que modulo de la app atiende una peticion, con latencia muy inferior.
+- Base para prototipos de asistentes on-device en otras administraciones: el patron (e5 + cross-encoder + RAG + whisper.cpp) es replicable con datos publicos bajo licencias abiertas.
+- Auditoria de privacidad: al no salir datos del dispositivo, encaja en escenarios con requisitos de residencia de datos o normativa de proteccion de datos estricta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo menciona una evaluacion interna cualitativa segun la cual la cuantizacion q4_0 de Breeze-ASR-26 es "tan precisa como q8_0", sin cifras.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: e5-small q8_0 ocupa 132.441.760 bytes (~126 MB); PhoWhisper-base q8_0, 81.768.602 bytes (~78 MB); Breeze-ASR-26 q8_0, 1.656.129.708 bytes (~1,54 GB); Breeze-ASR-26 q4_K, 888.932.908 bytes (~848 MB); índice de embeddings, 12.473.856 bytes (~12 MB) más metadatos de 6.572.186 bytes (~6,3 MB).
-- El autor indica que la variante q4_K de Breeze-ASR-26 está pensada para teléfonos con 8 GB de memoria; la q8_0 requiere más margen.
-- GPU de escritorio: no se especifican modelos recomendados (A100, H100, RTX 4090, etc.) en la información disponible; los artefactos están orientados a CPU móvil.
-- Cabe en GPU de consumo por tamaño, pero no hay datos de rendimiento publicados para confirmar latencias.
-- Opciones de despliegue: whisper.cpp (`whisper-server`) para los modelos de voz y llama.cpp (`llama-server --embedding`) para e5-small; integración en la app mediante descarga desde Hugging Face con verificación SHA-256.
+- VRAM/RAM estimada: e5-small q8_0 y clasificador, unos 132 MB cada uno; PhoWhisper-base q8_0, 81,8 MB; Breeze-ASR-26 entre 888,9 MB (q4_0/q4_K) y 1.656,1 MB (q8_0); indice FAQ, 12,5 MB.
+- GPU recomendadas: no aplica; el objetivo es CPU/GPU integrada de telefono. En escritorio, cualquier GPU consumer moderna (RTX 3060 o superior) ejecuta estos modelos con holgura.
+- Cabe en GPU consumer: si, en cualquier RTX o equivalente, e incluso en CPU.
+- Opciones de despliegue: whisper.cpp (`whisper-server`) para voz, llama.cpp (`llama-server --embedding` y `--reranking --pooling rank`) para e5 y el clasificador; los tags indican compatibilidad con endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TownPass on-device assistant models (este repo) | Paquete ASR + embeddings + RAG | 117.505.920 declarados (varios artefactos) | no disponible | Mixta (MIT, BSD-3-Clause, Apache-2.0, OGDL v1.0) | Hugging Face, 0 descargas |
-| intfloat/multilingual-e5-small | Embeddings | no disponible en la informacion | no disponible | MIT | Hugging Face (autor original) |
-| vinai/PhoWhisper-base | ASR | no disponible en la informacion | no disponible | BSD-3-Clause | Hugging Face (autor original) |
-| MediaTek-Research/Breeze-ASR-26 | ASR | no disponible en la informacion | no disponible | Apache-2.0 | Hugging Face (autor original) |
+| Este repo (e5-small q8_0 + clasificador + ASR) | 117,5 M (e5) | no disponible | Embeddings, routing, ASR | Mixta (MIT/BSD-3/Apache-2.0) | Hugging Face, 193 descargas |
+| intfloat/multilingual-e5-small (original) | 117,5 M | no disponible | Embeddings multilingues | MIT | Hugging Face, ampliamente usado |
+| vinai/PhoWhisper-base (original) | no disponible | no disponible | ASR vietnamita | BSD-3-Clause | Hugging Face |
+| MediaTek-Research/Breeze-ASR-26 (original) | no disponible | no disponible | ASR mandarin/taiwanes | Apache-2.0 | Hugging Face |
+
+La diferencia frente a los originales es el formato (GGUF/ggml cuantizado para llama.cpp y whisper.cpp) y, en el caso del clasificador, un afinado especifico del proyecto. Los originales ofrecen pesos sin cuantizar y documentacion mas completa.
 
 ## Limitaciones y advertencias
 
-- No es un modelo entrenado por el autor: son conversiones de terceros sin aval de los autores originales; los cambios se limitan a formato y precisión numérica.
-- Idiomas cubiertos únicamente zh, nan y vi; no hay soporte documentado para castellano ni otras lenguas.
-- No incluye modelo generativo propio; la generación de respuestas depende de modelos externos (Ministral 3B, Gemma 4 E2B, Whisper tiny/small) descargados aparte.
-- Licencia mixta: cada artefacto tiene su propia licencia (MIT, BSD-3-Clause, Apache-2.0, OGDL v1.0); es necesario revisar `LICENSES/` antes de uso comercial y respetar la atribución al Ayuntamiento de Taipéi para los datos de FAQ.
-- Los datos de FAQ proceden de una fuente gubernamental concreta y pueden quedar desactualizados; no hay mecanismo de actualización documentado.
-- Riesgo de alucinación y errores de recuperación inherente al pipeline RAG, aunque no se documentan evaluaciones.
-- Sin descargas ni likes en el momento de la consulta; sin benchmarks publicados que permitan validar calidad.
-- El repositorio incluye una referencia a arXiv:2603.19259 (Lan et al., 2026) para Breeze-ASR-26; conviene verificar su disponibilidad y contenido antes de citarla.
+- No es un modelo generativo: no produce respuestas de texto libre; requiere un LLM adicional para esa funcion.
+- El clasificador de decision esta entrenado solo con peticiones sinteticas y vocabulario de la app de Taipei; su generalizacion fuera de ese dominio es dudosa.
+- El indice RAG cubre exclusivamente 8.121 FAQ del Ayuntamiento de Taipei; cualquier consulta fuera de ese corpus no tiene cobertura.
+- Idiomas limitados a zh, nan y vi; no hay soporte documentado de castellano.
+- Licencia mixta: es obligatorio respetar la licencia de cada fichero por separado, incluida la Open Government Data License v1.0 de los datos de Taipei, que impide reclamar derechos exclusivos sobre el dato derivado.
+- El autor declara explicitamente que las conversiones no estan avaladas por los autores originales; no hay garantia de soporte.
+- Riesgo de alucinacion en la capa generativa delegada a Ministral 3B y Gemma 4 E2B, fuera del control de este repositorio.
+- Sin benchmarks publicos: no hay evidencia cuantitativa de calidad frente a alternativas.
+- Proyecto con 0 likes y 193 descargas; madurez y mantenimiento no verificables.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/allensung1226/townpass-assistant-models
-- Fork de la app TownPass: https://github.com/goodmorning1226/TownPass
-- multilingual-e5-small (Microsoft): https://huggingface.co/intfloat/multilingual-e5-small
-- PhoWhisper-base (VinAI): https://huggingface.co/vinai/PhoWhisper-base
-- Breeze-ASR-26 (MediaTek Research): https://huggingface.co/MediaTek-Research/Breeze-ASR-26
-- Datos de FAQ del Ayuntamiento de Taipéi: https://data.taipei/dataset/detail?id=203f1657-bb4a-45a7-b25f-279b63136645
-- Paper de Breeze-ASR-26 (Lan et al., 2026): arXiv:2603.19259
+- App TownPass (fork): https://github.com/goodmorning1226/TownPass
+- intfloat/multilingual-e5-small: https://huggingface.co/intfloat/multilingual-e5-small
+- vinai/PhoWhisper-base: https://huggingface.co/vinai/PhoWhisper-base
+- MediaTek-Research/Breeze-ASR-26: https://huggingface.co/MediaTek-Research/Breeze-ASR-26
+- Paper citado (Lan et al., 2026): arXiv:2603.19259
+- Datos FAQ de Taipei: https://data.taipei/dataset/detail?id=203f1657-bb4a-45a7-b25f-279b63136645

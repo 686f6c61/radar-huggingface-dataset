@@ -2,97 +2,100 @@
 
 ## Resumen
 
-Qwen3.5-4B-Heretic-LoRA es un adaptador LoRA de tipo abliteration desarrollado por el usuario nchapman sobre el checkpoint base Qwen/Qwen3.5-4B. No se trata de un modelo entrenado desde cero, sino de una intervención quirúrgica sobre los pesos de un transformer de 4.000 millones de parámetros cuyo objetivo es eliminar el comportamiento de rechazo (refusal) ante peticiones que el modelo base considera dañinas. La técnica empleada es Heretic v2.1 con Magnitude-Preserving Orthogonal Ablation (MPOA) y rango reducido (r=3), aplicada sobre 64 proyecciones residuales del modelo.
+Qwen3.5-4B-Heretic-LoRA es un adaptador LoRA de tipo "abliteration" creado por el usuario nchapman sobre el checkpoint base Qwen/Qwen3.5-4B. Su proposito es reducir la tasa de rechazos (refusals) del modelo base ante peticiones que este declina por sus alineamientos de seguridad, empleando una tecnica de ablacion ortogonal que preserva la magnitud de los pesos (MPOA, Magnitude-Preserving Orthogonal Ablation) implementada en la herramienta Heretic v2.1. El adaptador se publica con licencia Apache 2.0 y formato PEFT/safetensors, ademas de conversiones a GGUF para llama.cpp.
 
-El adaptador resulta relevante para investigadores que estudian alineamiento, mecanismos de refusal y técnicas de abliteration, así como para desarrolladores que necesitan un modelo sin filtros de contenido para tareas de red teaming, generación creativa sin restricciones o investigación sobre seguridad. Su principal atractivo técnico es que incluye una frontera de Pareto completa con cinco checkpoints que permiten elegir el equilibrio entre tasa de rechazo y divergencia KL respecto al modelo base, lo que convierte al repositorio en un recurso medible y reproducible en lugar de una simple modificación opaca.
+El adaptador es de rango bajo (r=3) y afecta a 64 proyecciones residuales del modelo base (self_attn.o_proj, linear_attn.out_proj, mlp.down_proj y mlp.shared_expert.down_proj), lo que sugiere que el modelo base emplea una arquitectura hibrida con atencion lineal y componentes tipo Mixture of Experts. Segun las mediciones del autor, reduce los rechazos de 99/100 a 7/100 en el conjunto de evaluacion, con una divergencia KL de primer token de 0.0955 nats respecto al modelo base en el conjunto harmless_alpaca.
 
-El adaptador es compatible tanto con transformers + peft como con vLLM mediante `--enable-lora`, lo que permite activar y desactivar la abliteration por petición en un mismo servidor. La licencia es Apache 2.0, heredada del modelo base.
+La relevancia de esta ficha radica en que documenta un caso de "uncensoring" controlado y medible: el autor publica una frontera de Pareto con cinco checkpoints que permiten elegir el equilibrio entre tasa de rechazo y fidelidad al modelo original. Es, por tanto, una pieza util para quienes investigan tecnicas de ablacion de direcciones de rechazo y quieren evaluar el coste en fidelidad de cada nivel de intervencion.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (peft) sobre transformer Qwen3.5-4B |
-| Parámetros totales | 4B (modelo base); adaptador LoRA con rango r=3 sobre 64 módulos |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | Compatible con BF16 (adaptador) y variantes cuantizadas del base como W4A16-HGPTQ |
+| Arquitectura | Adaptador LoRA (PEFT) sobre Qwen/Qwen3.5-4B; ablacion ortogonal MPOA con r=3 SVD sobre 64 proyecciones residuales |
+| Parametros totales | 1.769.472 (parametros del adaptador; el modelo base Qwen3.5-4B no se detalla en la informacion disponible) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible (heredada del modelo base Qwen/Qwen3.5-4B, no especificada) |
+| Tipos de cuantizacion | Compatible con variantes cuantizadas del base (p. ej. W4A16-HGPTQ); el adaptador se distribuye en BF16 y en GGUF para llama.cpp |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (adaptador LoRA PEFT) |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (PEFT) y GGUF (adaptador LoRA para llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se construye sobre Qwen/Qwen3.5-4B, un transformer denso de 4.000 millones de parámetros. La intervención no reentrena el modelo: aplica Magnitude-Preserving Orthogonal Ablation (MPOA) con rango r=3 mediante SVD sobre 64 proyecciones que escriben en el flujo residual, concretamente `self_attn.o_proj`, `linear_attn.out_proj`, `mlp.down_proj` y `mlp.shared_expert.down_proj`. La normalización de filas es `full` y el método es Heretic v2.1 (`p-e-w/heretic`).
+El adaptador se genera con Heretic v2.1 (p-e-w/heretic), una herramienta que identifica direcciones de rechazo en el espacio de activaciones y las elimina mediante ablacion ortogonal. En esta version concreta se emplea la variante MPOA (Magnitude-Preserving Orthogonal Ablation) con rango r=3 y normalizacion de filas "full". La intervencion se aplica sobre 64 proyecciones que escriben en el flujo residual: self_attn.o_proj, linear_attn.out_proj, mlp.down_proj y mlp.shared_expert.down_proj, lo que confirma que el modelo base combina atencion lineal (linear_attn) y componentes tipo expertos (shared_expert).
 
-El proceso de extracción y evaluación se realizó sobre los conjuntos `mlabonne/harmless_alpaca` (train[:400] para extracción, test[:100] para evaluación) y `mlabonne/harmful_behaviors`. El modelo base mostraba 99/100 rechazos en la evaluación; el adaptador por defecto reduce esa cifra a 7/100 (7,0%) con una divergencia KL de primer token de 0,0955 nats sobre `harmless_alpaca` test[:100]. El barrido generó cinco checkpoints no dominados en la frontera de Pareto, desde 7% de rechazo con KL 0,0955 hasta 31% de rechazo con KL 0,0257, permitiendo seleccionar el compromiso fidelidad/abliteración según el caso de uso.
+El proceso de extraccion y evaluacion usa los conjuntos mlabonne/harmless_alpaca (train[:400] para extraccion, test[:100] para evaluacion) y mlabonne/harmful_behaviors. El autor declara una tasa de rechazo base de 99/100 y una tasa con el adaptador por defecto de 7/100 (7.0%), con una divergencia KL de primer token de 0.0955 nats sobre harmless_alpaca test[:100]. No se especifican datos sobre el entrenamiento original del modelo base (numero de tokens, composicion del dataset, RLHF/DPO), por lo que esa informacion debe consultarse en la model card de Qwen/Qwen3.5-4B.
 
 ## Capacidades
 
-- Generación de texto sin rechazos ante peticiones que el modelo base filtraría (7/100 refusals en el checkpoint por defecto).
-- Razonamiento y generación de código heredados del modelo base Qwen3.5-4B.
-- Compatibilidad con tool calling y function calling en la medida en que lo soporte el modelo base (no documentado en la model card).
-- Capacidades multilingües del modelo base (idiomas no especificados en la ficha).
-- Activación y desactivación por petición en vLLM: el mismo servidor puede servir el comportamiento abliterado y el baseline sin adaptador.
-- Cinco checkpoints de Pareto con distintos equilibrios entre tasa de rechazo y divergencia KL.
-- Compatible con checkpoints cuantizados del base (W4A16-HGPTQ, RCO) en vLLM.
+- Generacion de texto y razonamiento heredados del modelo base Qwen3.5-4B.
+- Reduccion medible de rechazos: 7/100 refusals en el conjunto de evaluacion frente a 99/100 del base.
+- Ajuste fino del equilibrio rechazo/fidelidad mediante cinco checkpoints de la frontera de Pareto (7%, 12%, 14%, 25% y 31% de rechazo, con KL entre 0.0257 y 0.0955 nats).
+- Compatibilidad con vLLM mediante --enable-lora, incluyendo conmutacion por peticion (modelo "uncensored" frente al base en el mismo servidor).
+- Compatibilidad con llama.cpp mediante adaptador GGUF, con soporte de reordenacion V-head de GatedDeltaNet en blk.*.ssm_out.weight.lora_a.
+- Compatibilidad con transformers + peft.
+- Compatibilidad declarada con checkpoints cuantizados del base (W4A16-HGPTQ y RCO).
+- Tool calling, agentes, vision, audio y capacidades multilingues: no disponibles en la informacion proporcionada (dependen del modelo base).
 
 ## Casos de uso
 
-- Red teaming y evaluación de seguridad: el adaptador permite generar respuestas que el modelo base rechazaría, lo que facilita construir conjuntos de datos de ataques y estudiar la robustez de clasificadores y filtros de contenido.
-- Investigación sobre alineamiento y refusal: los cinco checkpoints de Pareto permiten medir cómo varía el comportamiento del modelo en función del grado de abliteration, con métricas reproducibles de refusals y KL.
-- Generación creativa sin restricciones: escritura de ficción con violencia, contenido adulto o temas sensibles donde los filtros del modelo base interrumpen la generación.
-- Servicio dual en producción: con vLLM y `--enable-lora` se puede ofrecer un endpoint "uncensored" y otro "baseline" en la misma instancia, seleccionando el adaptador mediante el campo `model` en peticiones OpenAI-compatible.
-- Investigación de mecanismos internos: al actuar sobre proyecciones residuales concretas, el adaptador sirve para estudiar qué direcciones del espacio de activaciones codifican el comportamiento de rechazo.
-- Experimentación con cuantización: al ser compatible con W4A16-HGPTQ, permite desplegar el modelo abliterado en GPUs de gama consumer con menor VRAM.
-- Docencia y demostraciones: ilustra de forma práctica y medible qué es la abliteration y cómo se evalúa su coste en fidelidad respecto al modelo original.
+- Investigacion sobre ablacion de direcciones de rechazo: el adaptador sirve como referencia reproducible para comparar metodos de abliteration, ya que el autor publica la tasa de rechazo y la KL de cada checkpoint de la frontera de Pareto.
+- Evaluacion de robustez de alineamientos: permite medir cuanto de la alineacion de Qwen3.5-4B reside en las 64 proyecciones residuales intervenidas y cuanto se conserva tras la ablacion.
+- Despliegue con conmutacion por peticion en vLLM: al cargar el adaptador como modulo LoRA adicional, un mismo servidor puede atender peticiones con el modelo base (comportamiento alineado) y con el adaptador (sin rechazos), seleccionando el modo por campo "model" en la API compatible con OpenAI.
+- Experimentacion en hardware de consumo: el adaptador es de rango 3 y solo 1.769.472 parametros, por lo que puede aplicarse sobre el base cuantizado en GGUF con llama.cpp en equipos con GPU consumer, sin reentrenar el modelo completo.
+- Analisis de fidelidad frente al base: los cinco checkpoints permiten estudiar la relacion entre tasa de rechazo y divergencia KL, util para decidir el punto de operacion aceptable en un estudio academico.
+- Pruebas de seguridad y red teaming: disponer de una version con rechazos reducidos y fidelidad medida facilita generar respuestas que el modelo base bloquearia, para auditar filtros y clasificadores posteriores.
 
 ## Benchmarks y rendimiento
 
-| Métrica | Modelo base | Adaptador por defecto | trial_004 | trial_007 | trial_003 | trial_006 |
-|---|---:|---:|---:|---:|---:|---:|
-| Refusals (test[:100]) | 99/100 | 7/100 | 12/100 | 14/100 | 25/100 | 31/100 |
-| Tasa de rechazo | 99,0% | 7,0% | 12,0% | 14,0% | 25,0% | 31,0% |
-| KL primer token (nats) | 0 | 0,0955 | 0,0857 | 0,0470 | 0,0436 | 0,0257 |
+El autor publica "receipts" de ablacion y fidelidad, no benchmarks estandar (MMLU, HumanEval, GSM8K). Se reproducen a continuacion los datos disponibles:
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+| Metrica | Base | Adaptador por defecto | Trial 4 | Trial 7 | Trial 3 | Trial 6 |
+|---|---:|---:|---:|---:|---:|---:|
+| Rechazos (test[:100]) | 99/100 | 7/100 | 12/100 | 14/100 | 25/100 | 31/100 |
+| Tasa de rechazo | 99.0% | 7.0% | 12.0% | 14.0% | 25.0% | 31.0% |
+| KL primer token (nats) | 0 | 0.0955 | 0.0857 | 0.0470 | 0.0436 | 0.0257 |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el modelo base en BF16: aproximadamente 8 GB solo para pesos, más overhead de activaciones y KV cache; en la práctica 10-12 GB para contexto moderado.
-- VRAM estimada con cuantización W4A16: aproximadamente 2,5-3 GB para pesos, lo que permite ejecución en GPUs consumer de 8 GB.
-- El adaptador LoRA en sí ocupa muy poco espacio (r=3 sobre 64 módulos) y se carga junto al base.
-- GPUs recomendadas: A100/H100 para serving concurrente con vLLM; RTX 4090, 4080 o 3090 para uso individual; RTX 3060/4060 Ti de 8-12 GB con cuantización W4A16.
-- Despliegue: vLLM con `--enable-lora --max-lora-rank 8`, transformers + peft, y presumiblemente llama.cpp/Ollama si se fusiona el adaptador al base y se convierte a GGUF (no documentado).
-- Latencia y throughput: no disponibles en la información proporcionada.
+- El adaptador en si ocupa muy poco espacio (1.769.472 parametros en BF16, aproximadamente 3.5 MB), por lo que el requisito real lo marca el modelo base Qwen3.5-4B.
+- Para el base en BF16 se estima un requisito de VRAM en torno a 8-10 GB solo para pesos, mas cache KV; en cuantizacion de 4 bits (W4A16-HGPTQ o GGUF Q4_K_XL) el consumo baja aproximadamente a 2.5-3.5 GB de pesos.
+- GPU recomendadas: A100 o H100 para despliegues con vLLM y concurrencia alta; RTX 4090, RTX 3090 o RTX 4080 para inferencia local en BF16 o cuantizado.
+- Cabe en GPU consumer: si, en tarjetas con 8 GB o mas en cuantizacion de 4 bits, y en tarjetas de 12-16 GB en BF16.
+- Opciones de despliegue: vLLM (--enable-lora, --max-lora-rank 8), llama.cpp / llama-server (con -hf y --lora), transformers + peft.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Abliteration | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.5-4B-Heretic-LoRA | 4B (base) + LoRA r=3 | no disponible | Sí, con Pareto de 5 checkpoints | Apache 2.0 | HF (nchapman) |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | No (99% refusals) | Apache 2.0 | HF (Qwen) |
-| nchapman/Qwen3.5-4B-W4A16-HGPTQ | 4B cuantizado | no disponible | No (base cuantizado) | Apache 2.0 | HF (nchapman) |
-| Adaptadores Heretic de la comunidad | Variable | Variable | Sí | Variable | HF |
+No se dispone de datos de rendimiento estandar para comparar directamente. Se comparan caracteristicas estructurales con alternativas de la misma categoria (adaptadores de abliteration sobre modelos de ~4B):
 
-No se dispone de datos de benchmarks comparativos con otros adaptadores de abliteration en la información proporcionada.
+| Modelo | Base | Parametros adaptador | Contexto | Licencia | Formato | Datos de rechazo publicados |
+|---|---|---:|---|---|---|---|
+| nchapman/Qwen3.5-4B-Heretic-LoRA | Qwen/Qwen3.5-4B | 1.769.472 | no disponible | apache-2.0 | safetensors, GGUF | Si (5 checkpoints Pareto) |
+| Adaptadores Heretic genericos sobre Llama/Qwen | varios | variable | no disponible | segun base | safetensors | Habitualmente no |
+| Modelos "uncensored" fine-tuned completos de ~4B | varios | modelo completo | no disponible | variable | safetensors, GGUF | Rara vez con KL medido |
+
+La ventaja diferencial de este adaptador frente a alternativas es la publicacion de la frontera de Pareto con tasa de rechazo y divergencia KL por checkpoint, lo que permite elegir el punto de operacion con criterio cuantitativo.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina rechazos pero no garantiza la eliminación de contenido dañino real; el modelo puede generar respuestas inexactas, ofensivas o peligrosas sin señal de alerta.
-- La divergencia KL de 0,0955 nats en el checkpoint por defecto implica una degradación medible de la distribución respecto al base; los checkpoints con menor KL preservan más fidelidad pero rechazan más.
-- No hay datos publicados sobre benchmarks de capacidad (razonamiento, código, matemáticas) tras la abliteration, por lo que el impacto en tareas no relacionadas con refusal es desconocido.
-- La model card no especifica idiomas soportados ni longitud de contexto del modelo base.
-- El uso comercial está permitido por la licencia Apache 2.0, pero el despliegue de un modelo sin filtros puede incumplir políticas de plataformas, términos de servicio de proveedores cloud o normativa aplicable sobre contenido.
-- Riesgo de alucinación heredado del modelo base, potencialmente agravado por la alteración de pesos.
-- El adaptador está pensado para investigación; no se recomienda su uso directo en aplicaciones de cara al usuario sin capas adicionales de moderación.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la ficha, sin validación comunitaria independiente.
+- La ablacion elimina direcciones de rechazo, no garantiza que el modelo deje de producir contenido danino; puede aumentar el riesgo de respuestas inseguras o inexactas.
+- La divergencia KL de 0.0955 nats en el checkpoint por defecto implica un cambio medible en la distribucion de salida respecto al base; los checkpoints con menos rechazo (trial 6, 31%) preservan mas fidelidad (KL 0.0257) pero reducen menos los rechazos.
+- Los datos de rechazo se miden sobre test[:100] de mlabonne/harmful_behaviors, un conjunto pequeno; la tasa real puede variar en dominios distintos.
+- No se han publicado evaluaciones de sesgos, alucinacion ni rendimiento en tareas estandar para este adaptador.
+- Idiomas soportados no disponibles; dependen del modelo base.
+- Licencia Apache 2.0 permite uso comercial, pero el uso de una version sin rechazos en produccion puede incumplir politicas de plataforma o requisitos regulatorios; conviene revisar las condiciones del modelo base y del proveedor de despliegue.
+- La compatibilidad con cuantizaciones del base (W4A16-HGPTQ, RCO) esta declarada por el autor, pero no se aportan mediciones de fidelidad sobre esas variantes.
+- El adaptador esta pensado para investigacion sobre alineamiento; su uso en produccion orientada a usuarios finales requiere filtros adicionales.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/nchapman/Qwen3.5-4B-Heretic-LoRA
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Qwen3.5-4B-Heretic-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Checkpoint cuantizado compatible: https://huggingface.co/nchapman/Qwen3.5-4B-W4A16-HGPTQ
-- Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic
-- Dataset de extracción/evaluación: https://huggingface.co/datasets/mlabonne/harmless_alpaca
-- Dataset de comportamientos dañinos: https://huggingface.co/datasets/mlabonne/harmful_behaviors
+- Checkpoint cuantizado mencionado: https://huggingface.co/nchapman/Qwen3.5-4B-W4A16-HGPTQ
+- Herramienta Heretic: https://github.com/p-e-w/heretic
+- Dataset harmless_alpaca: https://huggingface.co/datasets/mlabonne/harmless_alpaca
+- Dataset harmful_behaviors: https://huggingface.co/datasets/mlabonne/harmful_behaviors

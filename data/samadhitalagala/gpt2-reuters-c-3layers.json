@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "samadhitalagala/gpt2-reuters-C-3layers",
+  "slug": "samadhitalagala-gpt2-reuters-c-3layers",
+  "author": "samadhitalagala",
+  "url": "https://huggingface.co/samadhitalagala/gpt2-reuters-C-3layers",
+  "created_at": "2026-11-19T14:44:06.000Z",
+  "updated_at": "2026-11-28T04:09:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "from-scratch",
+    "en",
+    "dataset:ingeniumacademy/reuters_articles",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 36213248,
+  "parameters_human": "36.2M",
+  "storage_bytes": 289713920,
+  "storage_human": "290 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

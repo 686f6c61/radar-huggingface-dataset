@@ -2,18 +2,18 @@
 
 ## Resumen
 
-`88AgentS/ai-security-demo-clean` es un modelo de tipo clasificador publicado en Hugging Face por el usuario 88AgentS. Segun la model card, su proposito declarado no es resolver una tarea de machine learning de produccion, sino servir como demostracion del escaneo de seguridad de modelos de Prisma AIRS (Palo Alto Networks): el autor lo presenta como un artefacto que supera todas las comprobaciones de seguridad y obtiene el estado APPROVED. La model card incluye una tabla con metadatos del escaneo (fecha, pipeline de GitHub Actions y politica aplicada).
+`88AgentS/ai-security-demo-clean` es un modelo de tipo clasificador publicado por el usuario 88AgentS en Hugging Face. Segun su model card, se trata de un modelo ligero concebido como demostracion del sistema de escaneo de seguridad de modelos Prisma AIRS de Palo Alto Networks, y se presenta explicitamente como un artefacto "limpio" que supera todas las comprobaciones de seguridad. No es, por tanto, un modelo de lenguaje generativo, sino una pieza de demostracion orientada a validar flujos de aprobacion de modelos en pipelines de CI/CD.
 
-El repositorio es de tamano practicamente nulo (0.0 GB) y el recuento de parametros reportado en safetensors es de 74.442, un orden de magnitud propio de un clasificador muy pequeno o de un artefacto de prueba, no de un modelo generativo. No se documentan arquitectura, contexto, idiomas ni datos de entrenamiento. La licencia es Apache 2.0 y las etiquetas incluyen `safetensors`, `classifier`, `airs-approved` y `region:us`.
+El repositorio es extremadamente pequeno (0,0 GB reportados) y el recuento de parametros almacenados en safetensors es de 74.442, un orden de magnitud propio de un clasificador compacto o de un modelo de juguete, no de un LLM. La model card no documenta arquitectura, datos de entrenamiento, tokenizador ni tarea concreta mas alla de la etiqueta `classifier`.
 
-Su relevancia es, por tanto, instrumental: resulta util como ejemplo de pipeline de validacion de seguridad de artefactos antes del despliegue, y como caso de estudio de model cards que certifican cumplimiento en lugar de describir capacidades. No debe confundirse con un modelo de lenguaje o multimodal evaluable en tareas de razonamiento, codigo o generacion.
+Su relevancia actual es limitada desde el punto de vista de capacidades, pero resulta ilustrativa como ejemplo de governance de modelos: muestra como un pipeline automatizado (GitHub Actions) puede integrar una puerta de seguridad que aprueba o bloquea artefactos antes de su despliegue. Para desarrolladores e investigadores que evaluan modelos, conviene tratarlo como un caso de estudio de seguridad de la cadena de suministro de modelos, no como una base para aplicaciones de produccion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (etiquetado como `classifier`) |
-| Parametros totales | 74.442 (según safetensors) |
+| Parametros totales | 74.442 (recuento de safetensors) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -23,29 +23,29 @@ Su relevancia es, por tanto, instrumental: resulta util como ejemplo de pipeline
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna mas alla de la etiqueta `classifier` del repositorio. El recuento de parametros (74.442) sugiere una red de clasificacion de muy pequeno tamano, pero no se especifica si se trata de un transformer, una cabeza de clasificacion sobre un encoder, un perceptron multicapa u otra variante. Tampoco se documentan la composicion del dataset, el numero de tokens o ejemplos de entrenamiento, ni si hubo ajuste fino supervisado, RLHF o DPO.
+No se dispone de informacion sobre la arquitectura interna del modelo. La model card solo lo describe como un "lightweight classifier model" y no detalla si se trata de un transformer, una red convolucional, un modelo lineal o cualquier otra familia. Tampoco se especifica el tokenizador, la dimensionalidad de las entradas ni el numero de clases de salida.
 
-La unica innovacion tecnica declarada no es de modelado sino de proceso: la model card certifica que el artefacto ha pasado por el escaneo de Prisma AIRS Model Security dentro de una puerta de GitHub Actions, con estado APPROVED y fecha de escaneo 2026-11-23. No se aportan detalles sobre las reglas de la politica aplicada ni sobre los artefactos analizados.
+Respecto al entrenamiento, no hay datos sobre el corpus utilizado, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de ajuste como RLHF o DPO. La unica informacion tecnica relevante es de caracter operativo: el modelo fue escaneado por Prisma AIRS Model Security el 27 de noviembre de 2026 mediante un flujo de GitHub Actions y aprobado bajo la politica "Passed all security rules". No se documenta ninguna innovacion arquitectonica ni de decodificacion.
 
 ## Capacidades
 
-- Clasificacion: el repositorio esta etiquetado como `classifier`, por lo que su funcion prevista es la asignacion de etiquetas a una entrada, sin que se especifiquen las clases ni el dominio.
-- Generacion de texto: no disponible; no hay evidencia de que el modelo sea generativo.
+- Clasificacion: la unica capacidad declarada es la de clasificador (`classifier`), sin especificar el dominio ni las etiquetas de salida.
+- Generacion de texto: no disponible; no hay indicios de que sea un modelo generativo.
 - Razonamiento, codigo y matematicas: no disponible.
 - Vision o audio: no disponible.
 - Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidad especial: certificacion de seguridad mediante Prisma AIRS (estado APPROVED) como parte del flujo de publicacion.
+- Soporte de agentes y razonamiento multi-paso: no aplica segun la informacion disponible.
+- Capacidades multilingues: no disponibles; el campo de idiomas no esta relleno en la ficha de Hugging Face.
+- Modo "thinking": no disponible.
 
 ## Casos de uso
 
-- Validacion de pipelines de seguridad de modelos: usar el repositorio como artefacto de referencia que debe pasar la puerta de Prisma AIRS en GitHub Actions, comparando su comportamiento con el de un modelo deliberadamente marcado como no aprobado.
-- Pruebas de integracion de CI/CD: emplearlo como entrada fija en tests que verifiquen que el gate de seguridad devuelve APPROVED y que el despliegue continua solo con ese estado.
-- Demostracion comercial o docente de model scanning: ilustrar ante un equipo como una model card puede incluir metadatos de escaneo (estado, fecha, politica y pipeline) de forma verificable.
-- Verificacion de formato de pesos: servir como ejemplo minimo de artefacto en safetensors para comprobar cargadores, validadores de checksum y herramientas de inventario de modelos.
-- Pruebas de humo de un registro de modelos interno: usar un artefacto de 74.442 parametros para validar el flujo de subida, etiquetado y descarga sin coste de almacenamiento ni de computo.
-- Formacion en gobernanza de IA: como caso de estudio de una licencia Apache 2.0 combinada con una certificacion de seguridad de terceros, util para discutir que metadatos debe exigir una organizacion antes de desplegar un modelo.
+- Validacion de pipelines de seguridad de modelos: el artefacto sirve como caso de prueba "positivo" (modelo aprobado) para verificar que una puerta de Prisma AIRS en GitHub Actions emite correctamente la aprobacion y permite el despliegue.
+- Pruebas de regresion de governance: un equipo de plataforma puede usar este modelo como fixture en tests automatizados que comprueben que los modelos aprobados pasan el gate y los no aprobados se bloquean.
+- Demostracion de cadena de suministro de modelos: util para ilustrar en formaciones internas como se documenta la trazabilidad de un escaneo (fecha, politica, pipeline) en la propia model card.
+- Integracion en CI/CD como dependencia de prueba: al ser un repo de 0,0 GB y un peso de safetensors minimo, se puede descargar rapidamente en runners efimeros sin penalizar tiempos de build.
+- Ejemplo de referencia para plantillas de model card: su estructura de metadatos (licencia, tags, tabla de aprobacion) puede servir de base para estandarizar fichas de modelos internos.
+- Verificacion de cumplimiento de licencia: al estar bajo Apache 2.0, puede incorporarse a entornos corporativos como artefacto de prueba sin friccion legal, siempre que se respeten las obligaciones de atribucion.
 
 ## Benchmarks y rendimiento
 
@@ -53,27 +53,28 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; con 74.442 parametros, el peso en precision completa es del orden de centenares de kilobytes, aunque no se confirma la precision de los pesos.
-- GPU recomendadas: no disponible; por tamano, la inferencia cabria en CPU o en cualquier GPU consumer, pero no hay datos publicados que lo confirmen.
-- GPU consumer: previsiblemente cabe en cualquier GPU consumer por el numero de parametros, sin confirmacion del autor.
-- Opciones de despliegue: no disponibles; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible con precision; con 74.442 parametros en safetensors, el peso en precision estandar es del orden de unos pocos cientos de kilobytes, por lo que cabria en cualquier GPU consumer e incluso en CPU.
+- GPU recomendadas: no se especifican; por tamano, cualquier GPU (incluidas GTX 1050, RTX 3060, RTX 4090, A100, H100) seria sobradamente suficiente.
+- Cabe en GPU consumer: si, con margen amplisimo, segun el recuento de parametros reportado.
+- Opciones de despliegue: no documentadas por el autor. Por formato (safetensors) seria compatible con librerias de inferencia genericas, pero al no conocerse la arquitectura ni la tarea concreta no puede recomendarse un runtime especifico (vLLM, llama.cpp, TGI u Ollama no aplican sin mas informacion).
+- Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no identifica modelos comparables de la misma categoria (clasificadores de demostracion para escaneo de seguridad), y las diferencias de tamano y proposito impiden una comparacion significativa con clasificadores o LLM convencionales.
+No disponible. No se han identificado en la informacion proporcionada modelos comparables de la misma categoria (clasificadores de demostracion para escaneo de seguridad), ni se dispone de datos de rendimiento para establecer una comparacion rigurosa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Ausencia de documentacion tecnica: no se describen arquitectura, datos de entrenamiento, clases de salida ni metricas, lo que impide evaluar su calidad como clasificador.
-- Proposito demostrativo: la model card lo presenta como demostracion de Prisma AIRS, no como modelo para produccion; usarlo en tareas reales de clasificacion carece de respaldo.
-- Riesgo de alucinacion: no aplica si el modelo no es generativo, pero no puede descartarse sin conocer la arquitectura.
-- Idiomas y contexto: no disponibles; no hay garantia de cobertura linguistica ni de longitud maxima de entrada.
-- Sesgos: no evaluables por falta de informacion sobre el dataset.
-- Licencia: Apache 2.0 permite uso comercial, pero la certificacion AIRS no implica idoneidad funcional ni exactitud del modelo.
-- Caveat de produccion: la aprobacion de seguridad de un escaneo puntual (2026-11-23) no sustituye a una evaluacion de rendimiento, sesgo ni robustez antes de desplegar.
+- Ausencia de documentacion tecnica: no se especifican arquitectura, tokenizador, tarea, clases de salida ni datos de entrenamiento, lo que impide evaluar su idoneidad para cualquier uso real.
+- Naturaleza de demostracion: la model card lo presenta como un artefacto para demostrar el escaneo de Prisma AIRS, no como un modelo destinado a produccion.
+- Riesgo de alucinacion: no aplica en sentido estricto al no ser un modelo generativo, pero al desconocerse la tarea de clasificacion no puede descartarse un comportamiento erroneo en dominios no documentados.
+- Sesgos conocidos: no disponibles; sin informacion sobre el dataset de entrenamiento no es posible evaluar sesgos.
+- Limitaciones de contexto o idioma: no disponibles; el campo de idiomas esta vacio en la ficha de Hugging Face.
+- Restricciones de licencia: Apache 2.0 permite uso comercial con obligaciones de atribucion y conservacion del aviso de licencia; no obstante, la licencia no cubre posibles reclamaciones derivadas de un uso inadecuado del modelo.
+- Caveat de seguridad: la aprobacion por Prisma AIRS corresponde a un escaneo puntual (27 de noviembre de 2026) bajo una politica concreta; no garantiza la inocuidad de futuras revisiones del repositorio ni de pesos modificados fuera de ese escaneo.
+- Trazabilidad: el modelo depende de un proveedor externo de seguridad (Palo Alto Networks) para su validacion; equipos que no usen ese stack no podran reproducir la comprobacion con la informacion publicada.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/88AgentS/ai-security-demo-clean
-- Prisma AIRS (Palo Alto Networks), referenciado en la model card: https://www.paloaltonetworks.com/sase/ai-security
+- Prisma AIRS (Palo Alto Networks): https://www.paloaltonetworks.com/sase/ai-security

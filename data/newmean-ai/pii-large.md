@@ -2,102 +2,113 @@
 
 ## Resumen
 
-newmean-pii-large es un modelo de clasificación de tokens (token-classification) especializado en la detección de información personal identificable (PII) en texto multilingüe. Lo desarrolla newmean.ai y forma parte de una familia de cuatro tamaños (nano, small, medium y large) que alimentan el SDK JavaScript `@newmean-ai/pii`. Su objetivo es permitir el enmascarado de datos sensibles directamente en el navegador, antes de que el texto abandone el dispositivo, lo que lo convierte en una pieza relevante para aplicaciones de privacidad en cliente, formularios web, chats y pipelines de registro.
+newmean-pii-large es un modelo de reconocimiento de entidades nombradas (NER) especializado en detección de información personal identificable (PII), desarrollado por newmean-ai. Su función es localizar datos personales en texto libre para poder enmascararlos antes de que ese texto se envíe a un LLM de terceros (OpenAI, Anthropic, etc.), ya sea en el navegador o en el propio dispositivo. Forma parte de una familia de cuatro niveles (nano, small, medium, large) que da soporte al SDK de código abierto newmean-pii.
 
-El modelo tiene 24,4 millones de parámetros y se distribuye en formato ONNX con pesos de 4 bits, con un tamaño de descarga de 15,5 MB en su variante por defecto (`model_q4e.onnx`). Deriva de mMiniLMv2-L6-H384 con vocabulario XLM-R podado a 35.298 piezas y cubre 54 idiomas con 11 etiquetas a nivel de carácter. Está publicado bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones.
+El modelo es un transformer encoder de 6 capas con 24,4 millones de parámetros, destilado a partir de mMiniLMv2-L6-H384 con el vocabulario de XLM-R podado a 35.298 piezas. Detecta 11 etiquetas a nivel de carácter (PERSON, EMAIL, PHONE, ADDRESS, ID_NUMBER, FINANCIAL, ORG, USERNAME, URL, DATE_OF_BIRTH y SECRET) en 54 idiomas. Se distribuye en formato ONNX con cuantización de 4 bits, con un tamaño de descarga de 15,5 MB en su variante por defecto.
 
-Su relevancia actual radica en la combinación de tres factores: un tamaño lo bastante pequeño para ejecutarse en WebAssembly dentro del navegador, cobertura multilingüe amplia y un rendimiento declarado competitivo frente a detectores públicos de mayor tamaño en tareas de enmascarado.
+Su relevancia actual radica en que resuelve el problema de privacidad en pipelines de LLM sin requerir infraestructura de servidor: el modelo corre en WebAssembly dentro del navegador o en dispositivos móviles, con licencia Apache-2.0 que permite uso comercial sin restricciones. La versión 1.1 incorpora mejoras específicas para textos cortos y exportaciones de encuestas, un caso de uso habitual en procesamiento de formularios.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (mMiniLMv2-L6-H384, 6 capas) con embeddings podados; clasificación de tokens BIO |
-| Parametros totales | 24,4 millones |
-| Parametros activos | No aplica (no es MoE) |
+| Arquitectura | Transformer encoder (6 capas), destilado de mMiniLMv2-L6-H384 |
+| Parámetros totales | 24,4 M |
+| Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | Ventanas de 256 tokens con stride de 64 |
-| Tipos de cuantizacion | 4 bits en pesos (`model_q4.onnx`, 20,7 MB) y 4 bits en pesos y embeddings (`model_q4e.onnx`, 15,5 MB, por defecto) |
+| Tipos de cuantización | 4 bits (pesos y embeddings: `model_q4e.onnx`; solo pesos: `model_q4.onnx`) |
 | Idiomas soportados | 54 idiomas (ar, az, bg, bn, ca, cs, da, de, el, en, es, et, fa, fi, fr, ga, he, hi, hr, hu, id, is, it, ja, ka, kk, km, ko, lt, lv, mr, ms, mt, nl, no, pl, pt, ro, ru, sk, sl, sq, sr, sv, sw, te, th, tl, tr, uk, ur, uz, vi, zh) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | ONNX (q4 y q4e), tokenizer Unigram en JSON |
+| Formato de pesos | ONNX (`model_q4e.onnx` 15,5 MB, `model_q4.onnx` 20,7 MB); tokenizer en `tokenizer.web.json` y `tokenizer.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un encoder transformer de 6 capas basado en mMiniLMv2-L6-H384 (Microsoft, licencia MIT), al que se le ha podado el vocabulario XLM-R SentencePiece (Facebook AI, MIT) a las 35.298 piezas que aparecen efectivamente en los datos de entrenamiento. La salida es una clasificación BIO sobre 11 etiquetas a nivel de carácter: PERSON, EMAIL, PHONE, ADDRESS, ID_NUMBER, FINANCIAL, ORG, USERNAME, URL, DATE_OF_BIRTH y SECRET. Las etiquetas PERSON y URL llevan además un nivel (1 = identificador directo, 2 = indirecto). Las direcciones IP no están cubiertas por el modelo y solo las detecta la capa opcional de patrones del SDK, desactivada por defecto.
+El modelo es un encoder transformer de 6 capas con embeddings completos podados, derivado de mMiniLMv2-L6-H384-distilled-from-XLMR-Large. El vocabulario de XLM-R se redujo a las 35.298 piezas que aparecen en los datos de entrenamiento, lo que reduce el tamaño del modelo sin perder cobertura lingüística. La tarea es token-classification con esquema BIO: el modelo recibe `input_ids` y `attention_mask` y devuelve logits BIO para las etiquetas definidas en `config.json`. Las personas y las URLs llevan un nivel asociado (1 = identificador directo, 2 = indirecto); las direcciones IP se aprenden como ID_NUMBER.
 
-El entrenamiento se realizó mediante destilación a partir de dos modelos profesores privados más grandes (mDeBERTa-v3-base y XLM-R-large) afinados específicamente para esta tarea. Los datos de entrenamiento consisten en aproximadamente 1,07 millones de textos sintéticos en 54 idiomas, generados con modelos Claude a partir de una guía de etiquetado escrita. No se utilizaron datos personales reales ni conjuntos de datos externos. La inferencia procesa el texto en ventanas de 256 tokens con solapamiento (stride) de 64 para cubrir documentos largos.
+El entrenamiento se realizó mediante destilación a partir de dos modelos profesor privados de mayor tamaño (mDeBERTa-v3-base y XLM-R-large), ajustados específicamente para esta tarea. Los datos consisten en aproximadamente 1,31 millones de textos sintéticos en 54 idiomas, generados con modelos Claude a partir de una guía de etiquetado escrita; la versión 1.1 añadió 240.498 textos cortos (títulos de columna, opciones de respuesta, palabras sueltas, nombres y valores aislados, filas de encuestas). No se utilizaron datos personales reales ni conjuntos de datos externos para el entrenamiento.
 
 ## Capacidades
 
-- Detección de PII a nivel de carácter con 11 etiquetas y distinción de nivel (directo/indirecto) para personas y URLs.
-- Cobertura multilingüe de 54 idiomas, incluidos español, catalán, gallego (no listado explícitamente), euskera (no listado), inglés, francés, alemán, árabe, chino, japonés, coreano, hindi y vietnamita, entre otros.
-- Procesamiento de entradas heterogéneas: formularios, chats, celdas de hoja de cálculo, logs, JSON, texto OCR, correos electrónicos y transcripciones de voz.
-- Ejecución en navegador mediante WebAssembly (onnxruntime-web o el motor propio del SDK), lo que permite enmascarar antes de enviar datos al servidor.
-- Uso directo con onnxruntime fuera del SDK: acepta `input_ids` y `attention_mask` y devuelve logits BIO.
-- Ajuste de sensibilidad en el SDK para intercambiar falsos negativos por sobremascarado.
-- No es un modelo generativo: no realiza tool calling, function calling, agentes ni razonamiento multi-paso. Su función es exclusivamente de etiquetado.
+- Detección de PII a nivel de carácter con 11 etiquetas: PERSON, EMAIL, PHONE, ADDRESS, ID_NUMBER, FINANCIAL, ORG, USERNAME, URL, DATE_OF_BIRTH y SECRET.
+- Clasificación de personas y URLs por nivel de identificabilidad (1 = directo, 2 = indirecto).
+- Detección de direcciones IP, aprendidas como ID_NUMBER.
+- Soporte multilingüe en 54 idiomas, incluidos español, catalán, gallego, euskera (no listado explícitamente), árabe, chino, japonés, coreano, hindi y la mayoría de lenguas europeas.
+- Funcionamiento en navegador mediante WebAssembly (onnxruntime-web o el motor propio del SDK) y en dispositivo.
+- Integración con un vault opcional del SDK que permite restaurar los valores reales en la respuesta del LLM tras el enmascaramiento.
+- Capa opcional de patrones (correo, URL, tarjeta/cuenta, teléfono, número de residente coreano), desactivada por defecto.
+- Modo tabla con contexto de cabecera para exportaciones de encuestas y formularios.
+- No soporta tool calling, agentes ni generación de texto: es exclusivamente un modelo de etiquetado.
 
 ## Casos de uso
 
-- Enmascarado en formularios web antes del envío: el modelo se ejecuta en el navegador vía WebAssembly y redacta nombres, correos, teléfonos y direcciones en el propio campo de entrada, de modo que el servidor nunca recibe el dato original. Adecuado por su tamaño de 15,5 MB y su latencia de decenas de milisegundos.
-- Anonimización de logs de aplicaciones: integrado en pipelines de registro del lado cliente o en un servicio ligero con onnxruntime, permite eliminar PII de líneas de log en 54 idiomas antes de almacenarlas o enviarlas a un agregador.
-- Redacción de transcripciones de voz: tras un sistema ASR, el modelo limpia nombres, teléfonos y direcciones de la transcripción, útil en entornos sanitarios o de atención al cliente donde la transcripción se comparte con terceros.
-- Limpieza de textos OCR: documentos escaneados convertidos a texto pueden contener PII dispersa; el modelo la detecta en ventanas de 256 tokens con solapamiento y permite exportar una versión redactada.
-- Protección de datos en chats y asistentes: como paso previo a enviar un mensaje a una API externa de LLM, el SDK redacta la PII localmente, reduciendo el riesgo de transferencia de datos personales a terceros.
-- Cumplimiento en exportaciones de datos: antes de generar un CSV o JSON de exportación para analítica, el modelo marca y enmascara columnas con datos personales, con niveles 1 y 2 para distinguir identificadores directos de indirectos.
-- Saneamiento de correos electrónicos: en pasarelas de correo o clientes web, detectar y redactar remitentes, URLs y datos financieros en el cuerpo del mensaje antes de reenviarlo o archivarlo.
+- **Enmascaramiento previo a LLM en el navegador**: el SDK descarga el modelo una vez, verifica su SHA-256 y redacta el texto del usuario antes de enviarlo a una API de terceros. Es adecuado por su tamaño reducido (15,5 MB) y su ejecución en WebAssembly sin servidor.
+- **Cumplimiento de RGPD en formularios web**: el modelo detecta nombres, correos, teléfonos y direcciones en los campos de un formulario antes de que los datos salgan del cliente, lo que reduce la superficie de exposición de datos personales.
+- **Redacción de logs y trazas de aplicación**: se puede integrar en pipelines de logging para enmascarar PII en texto de logs, JSON o mensajes de error antes de almacenarlos o enviarlos a un sistema de observabilidad.
+- **Procesamiento de exportaciones de encuestas**: el modo tabla con `context: "header"` reduce la tasa de PII no enmascarada al 1,44 % en 556 exportaciones de encuestas y formularios en 54 idiomas (frente al 6,17 % del modo tabla solo).
+- **Anonimización de transcripciones de voz**: al aceptar texto de transcripciones ASR, permite enmascarar nombres, teléfonos y direcciones en actas de reuniones o llamadas de atención al cliente antes de su análisis.
+- **Procesamiento de correos electrónicos**: detección de remitentes, firmas, teléfonos y direcciones en cuerpos de correo para su clasificación o resumen automático sin exponer datos personales.
+- **Aplicaciones móviles y de escritorio**: el SDK ofrece paquetes para iOS, Android, Flutter y Rust, lo que permite redactar PII en el propio dispositivo en aplicaciones nativas.
+- **Extracción de datos de OCR**: el modelo está diseñado para texto de OCR, por lo que puede enmascarar PII en documentos escaneados antes de su procesamiento posterior.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor, solo modelo (sin capa de patrones), fichero por defecto, medidos en una VM Colab L4. "Miss" es la proporción de caracteres PII sin enmascarar (menor es mejor); "over" es la proporción de caracteres no PII enmascarados.
+Resultados del modelo solo (sin capa de patrones), archivo por defecto, onnxruntime en CPU. "Miss" = proporción de caracteres de PII no enmascarados (menor es mejor); "over" = proporción de caracteres no PII enmascarados.
 
-| Conjunto | Miss % / Over % |
+| Conjunto de evaluación | Miss % / Over % |
 |---|---|
-| newmean-pii-dataset (test público, 54 idiomas, 17.058 filas) | 1,6 / 0,6 (F1 exacto 0,78) |
-| KDPII (coreano) | 7,6 / 2,4 |
-| OpenPII 1.5M (30 idiomas) | 4,6 / 4,2 |
-| Nemotron-PII (inglés) | 7,4 / 0,9 |
-| Gretel finance (7 idiomas) | 20,3 / 5,2 |
+| newmean-pii-dataset (test público, 54 idiomas, 17.058 filas) | 1,6 / 0,5 (F1 exacto 0,80) |
+| KDPII (coreano) | 9,6 / 1,7 |
+| OpenPII 1.5M (30 idiomas) | 4,9 / 4,1 |
+| Nemotron-PII (inglés) | 6,1 / 1,6 |
+| Gretel finance (7 idiomas) | 21,4 / 5,5 |
 
-Velocidad en CPU de la VM (Xeon 2,20 GHz, onnxruntime): 88 ms por texto con un hilo y 23 ms con 12 hilos sobre los textos del test público. El autor advierte que el test público de newmean-pii-dataset se generó con el mismo diseño y guía que los datos de entrenamiento, por lo que existe ventaja in-distribution; los conjuntos externos no se usaron para entrenar. Frente a ocho detectores públicos comparados, el más cercano (gliner-pii-edge, 176 MB) deja sin enmascarar un 19,6% en el test público. No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks generativos, ya que el modelo no es generativo.
+En el conjunto privado de 20.691 ítems cortos en 54 idiomas y 228 archivos CSV de encuestas (v1.1): enmascara el 7,9 % de los ítems sin PII (v1.0: 30,6 %) y el 6,6 % de las celdas sin PII en modo celda a celda (v1.0: 24,9 %); encuentra el 99,0 % de los nombres escritos aislados.
+
+Con SDK 1.2, los textos con emoji enmascarados caen del 23,95 % (modelo solo) al 0,87 %. El modo tabla con `context: "header"` falla el 1,44 % de los caracteres de PII en 556 exportaciones de encuestas y formularios en 54 idiomas (modo tabla solo: 6,17 %) y enmascara el 12,30 % de sus celdas sin PII.
+
+Velocidad en CPU de una VM Colab L4 (Xeon 2,20 GHz, onnxruntime): 88 ms por texto con un hilo, 23 ms con 12 hilos, sobre los textos del test público.
+
+En el test público, el detector público más cercano de los ocho comparados (gliner-pii-edge, 176 MB) falla el 19,6 %. El conjunto público de newmean-pii-dataset se generó con el mismo diseño y guía que los datos de entrenamiento, por lo que estos modelos tienen ventaja in-distribution en él; los conjuntos externos nunca se usaron para entrenamiento.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: inferior a 1 GB en todas las variantes; el fichero por defecto ocupa 15,5 MB en disco y los pesos de 4 bits caben holgadamente en cualquier GPU consumer.
-- GPU recomendadas: innecesarias para uso típico; funciona en CPU. En GPU, cualquier RTX 3060 o superior sobra; A100/H100 solo tendrían sentido para despliegues de altísimo throughput por lotes.
-- Cabe en GPU consumer: sí, en cualquier GPU con más de 1 GB de VRAM, y también en CPU y en navegador.
-- Opciones de despliegue: onnxruntime-web (WebAssembly) en navegador, onnxruntime nativo en servidor, SDK `@newmean-ai/pii` con motor propio, y uso directo de los ficheros ONNX. No se documentan despliegues con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de clasificación de este tamaño.
-- Latencia y throughput: 88 ms por texto a un hilo y 23 ms a 12 hilos en CPU Xeon 2,20 GHz según el autor; no se publican cifras de throughput por lotes ni latencias en GPU.
+- VRAM estimada: inferior a 100 MB en cualquiera de las cuantizaciones disponibles (15,5 MB en disco para `model_q4e.onnx`, 20,7 MB para `model_q4.onnx`).
+- Cabe en cualquier GPU consumer, incluida una GTX 1050 o una GPU integrada; también funciona en CPU sin GPU.
+- GPU recomendadas: no requiere GPU dedicada; una A100 o H100 solo tiene sentido para servir muchas peticiones concurrentes.
+- Despliegue: onnxruntime (CPU o GPU), onnxruntime-web (WebAssembly en navegador), SDK `@newmean-ai/pii` (npm), paquetes para Python, iOS, Android, Flutter y Rust. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de token-classification.
+- Latencia: 88 ms por texto con un hilo de CPU y 23 ms con 12 hilos en un Xeon a 2,20 GHz (textos del test público).
+- Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Notas |
-|---|---|---|---|---|---|---|
-| newmean-pii-large | 24,4 M | 256 tokens (ventanas con stride 64) | 54 | Apache-2.0 | ONNX q4/q4e | 15,5 MB, ejecución en navegador |
-| gliner-pii-edge | No disponible (176 MB de descarga) | No disponible | No disponible | No disponible | No disponible | Miss 19,6% en el test público según el autor |
-| newmean-pii-medium / small / nano | No disponible | No disponible | 54 | Apache-2.0 | ONNX | Misma familia, menor tamaño; specs no detalladas en la información disponible |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Tamaño |
+|---|---|---|---|---|---|
+| newmean-pii-large | 24,4 M | 256 tokens (ventana) | 54 | Apache-2.0 | 15,5 MB (q4e) |
+| gliner-pii-edge | no disponible | no disponible | no disponible | no disponible | 176 MB |
+| newmean-pii-medium | no disponible | no disponible | 54 | Apache-2.0 | no disponible |
+| newmean-pii-small | no disponible | no disponible | 54 | Apache-2.0 | no disponible |
 
-La comparación completa por etiqueta e idioma, junto con los ocho detectores públicos evaluados, está en el informe técnico y en el leaderboard enlazados más abajo. No se dispone de datos de benchmarks de los tiers medium, small y nano en la información proporcionada.
+El único comparable con datos en la información proporcionada es gliner-pii-edge: en el test público de newmean-pii-dataset falla el 19,6 % de los caracteres de PII, frente al 1,6 % de newmean-pii-large, con un tamaño de 176 MB frente a 15,5 MB. La comparación completa, por etiqueta y por idioma, está en el informe técnico y en el leaderboard del proyecto. Los datos de los niveles medium, small y nano no se detallan en la información disponible.
 
 ## Limitaciones y advertencias
 
-- Ningún detector encuentra todo: el resultado debe usarse para reducir lo que se envía, no como garantía de anonimato.
-- Entrenado con texto sintético; formatos raros, documentos muy largos e idiomas fuera de los 54 pueden rendir peor.
-- El contexto determina algunas etiquetas: una organización solo se enmascara cuando pertenece a una persona y las fechas solo cuando son fechas de nacimiento, por lo que los resultados dependen del texto circundante.
-- Las direcciones IP no están cubiertas por el modelo; solo las detecta la capa opcional de patrones del SDK, desactivada por defecto.
-- Riesgo de alucinación no aplica en sentido generativo, pero sí existe riesgo de falsos positivos (sobremascarado) y falsos negativos (PII sin detectar), modulables con el parámetro `sensitivity`.
-- Sesgos conocidos: no se documentan sesgos específicos en la información disponible; al entrenarse con datos sintéticos, la distribución puede no reflejar la de datos reales.
-- Licencia Apache-2.0: permite uso comercial sin restricciones; la mención "Powered by newmean.ai" y la atribución en modelos derivados son peticiones, no condiciones de licencia.
-- Para producción: verificar el revision pinneado `v1.0.0` y la comprobación SHA-256 que realiza el SDK; validar el rendimiento en los idiomas y formatos concretos de cada aplicación.
+- Ningún detector encuentra todo: el propio autor advierte que el resultado debe usarse para reducir lo que se envía, no como garantía de anonimato.
+- El rendimiento cae en dominios alejados del entrenamiento: en Gretel finance (7 idiomas) la tasa de PII no enmascarada sube al 21,4 %.
+- El conjunto público de evaluación comparte diseño y guía con los datos de entrenamiento, por lo que las cifras in-distribution sobreestiman el rendimiento real; los conjuntos externos son la referencia más fiable.
+- El modelo está entrenado exclusivamente con datos sintéticos generados por modelos Claude; puede tener sesgos de distribución respecto a texto real de producción.
+- La ventana de contexto es de 256 tokens con stride de 64; textos más largos requieren fragmentación y pueden perder entidades en los límites.
+- No es un modelo generativo: no produce texto, no soporta tool calling ni razonamiento multi-paso.
+- La licencia Apache-2.0 permite uso comercial sin restricciones, pero el autor no ofrece garantías sobre la exhaustividad de la detección.
+- Los conjuntos de evaluación privados (ítems cortos y exportaciones de encuestas) son sintéticos y no publicados, por lo que no son verificables de forma independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/newmean-ai/pii-large
+- Repositorio del SDK: https://github.com/newmean-ai/pii
+- Paquete npm: https://www.npmjs.com/package/@newmean-ai/pii
 - Demo en navegador: https://pii.newmean.ai
-- SDK JavaScript: https://www.npmjs.com/package/@newmean-ai/pii
-- Informe técnico: https://github.com/newmean-ai/pii/blob/main/docs/report/REPORT.md
-- Leaderboard: https://huggingface.co/spaces/newmean-ai/pii-leaderboard
 - Dataset público: https://huggingface.co/datasets/newmean-ai/pii-dataset
-- Tiers de la familia: https://huggingface.co/newmean-ai/pii-medium, https://huggingface.co/newmean-ai/pii-small, https://huggingface.co/newmean-ai/pii-nano
-- Sitio del autor: https://newmean.ai
-- Contacto comercial: hoonjae@newmean.ai
+- Leaderboard: https://huggingface.co/spaces/newmean-ai/pii-leaderboard
+- Informe técnico: https://github.com/newmean-ai/pii/blob/main/docs/report/REPORT.md
+- Modelo base: https://huggingface.co/nreimers/mMiniLMv2-L6-H384-distilled-from-XLMR-Large
+- Niveles medium, small y nano: https://huggingface.co/newmean-ai/pii-medium, https://huggingface.co/newmean-ai/pii-small, https://huggingface.co/newmean-ai/pii-nano

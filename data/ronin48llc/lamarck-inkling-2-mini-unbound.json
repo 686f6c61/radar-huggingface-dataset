@@ -48,11 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Inkling 2 Mini | Hacker News",
-      "url": "http://go/v1/AaT5rSR9041tawQDYAHyNL9ybaaD3j-sn_-UIwdlgaJTkKSKIU6PdZJ62AR7YTiojzQl6N9uJu6LnDwyZIYTrvSO5cOU69V6je9wyjNI5qL7E7nQrIHXRnC5kysFQw7Vstb5_A-PR1drEqh0059SrboxnW7W1JA4WLo72I8SbLuAp73bTmol7KEsWs648CIxbqMFypG6hD89dWSVgX_2Dw",
-      "snippet": "Hope that folks find this model more amenable to local usage - the sizing was largely informed by what folks on this subreddit ask for the most haha · There are two particularly interesting aspects of this model for local users:"
-    }
-  ]
+  "sources": []
 }

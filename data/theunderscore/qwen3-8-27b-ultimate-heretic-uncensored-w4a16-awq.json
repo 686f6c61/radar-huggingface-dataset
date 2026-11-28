@@ -54,16 +54,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Qwen3.8-27B-Ultimate-Heretic-Uncensored-NVFP4-W4ATTN-AWQ",
-      "url": "https://huggingface.co/TheUnderscore/Qwen3.8-27B-Ultimate-Heretic-Uncensored-NVFP4-W4ATTN-AWQ",
-      "snippet": "Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5 qwen qwen3_8 finetune nvfp4 w4a16 awq mixed-precision compressed-tensors vllm coding-agent agentic conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
-    },
-    {
-      "title": "TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA ...",
-      "url": "https://huggingface.co/TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-W4A16-AWQ",
-      "snippet": "Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-W4A16-AWQ ... Deploy Copy to bucket new Use this model"
-    }
-  ]
+  "sources": []
 }

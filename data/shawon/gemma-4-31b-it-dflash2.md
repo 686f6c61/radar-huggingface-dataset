@@ -2,85 +2,87 @@
 
 ## Resumen
 
-`shawon/gemma-4-31B-it-DFlash2` es un modelo borrador (draft) para decodificación especulativa de tipo DFlash2, entrenado por el usuario shawon para acelerar la inferencia del modelo objetivo `gemma-4-31B-it`. No es un modelo de lenguaje generalista: su única función es proponer tokens candidatos que el modelo objetivo valida en paralelo, reduciendo el coste por token generado cuando se sirve con Splash, la librería indicada en la model card.
+`shawon/gemma-4-31B-it-DFlash2` es un modelo borrador (draft) para decodificacion especulativa de tipo DFlash2, entrenado por el usuario shawon para acelerar la inferencia de `gemma-4-31B-it`. No es un modelo generativo autonomo: es un componente auxiliar que propone tokens candidatos que el modelo objetivo (Gemma 4 31B Instruct) verifica en paralelo, reduciendo la latencia por token generado sin alterar la distribucion de salida del modelo grande.
 
-El repositorio pesa 0,8 GB y contiene 390.954.240 parámetros en safetensors, un tamaño coherente con un borrador ligero diseñado para ejecutarse junto al modelo grande sin dominar el consumo de memoria. El entrenamiento se realizó durante 6000 pasos en un Mac, tomando como referencia las capas objetivo 11, 29 y 47 del modelo destino, y está pensado para funcionar tanto con los pesos GGUF de `unsloth/gemma-4-31B-it-GGUF` como con los checkpoints MLX.
+El borrador se entreno durante 6000 pasos sobre un MacBook Pro con chip M5 Max, tomando las capas objetivo [11, 29, 47] del modelo Gemma 4 31B. A pesar del nombre "31B" en el identificador, el artefacto publicado contiene 390.954.240 parametros (unos 391 M) en safetensors, con un repositorio de 0,8 GB, lo que es coherente con un modelo borrador mucho mas pequeno que el objetivo.
 
-La relevancia de esta ficha es acotada: el modelo tiene cero descargas y cero likes en el momento de la consulta, no declara licencia ni idiomas, y su model card es mínima. Debe tratarse como un artefacto experimental de decodificación especulativa, no como un modelo listo para producción, y su utilidad depende por completo de disponer del modelo objetivo y de una versión de Splash con la rama `feat/gemma4`.
+Su relevancia es practica: la decodificacion especulativa es una de las tecnicas mas eficaces para reducir latencia en modelos grandes sin reentrenar el modelo base. Este draft permite desplegar Gemma 4 31B con aceleracion en el fork de Splash indicado por el autor, aunque la documentacion publicada es minima y no incluye datos de speedup medidos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo borrador DFlash2 para decodificación especulativa; los tags incluyen `qwen3`) |
-| Parametros totales | 390.954.240 |
-| Parametros activos | no aplica (no se declara que sea MoE) |
+| Arquitectura | DFlash2 (borrador de decodificacion especulativa), pesos en safetensors; tag `qwen3` en el repo |
+| Parametros totales | 390.954.240 (aproximadamente 391 M) |
+| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (repo en safetensors, 0,8 GB) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
+| Modelo objetivo | gemma-4-31B-it (GGUF de unsloth y checkpoints MLX) |
+| Capas objetivo | [11, 29, 47] |
+| Pasos de entrenamiento | 6000 |
+| Libreria | splash (fork con soporte Gemma 4) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del borrador. Por los tags del repositorio (`dflash2`, `speculative-decoding`, `draft`, `qwen3`) y por la model card, se trata de un modelo auxiliar de decodificación especulativa que predice varios tokens por paso para que el modelo objetivo los verifique en paralelo. La model card menciona capas objetivo [11, 29, 47] del modelo destino, lo que sugiere que el borrador se apoya en estados intermedios de esas capas de `gemma-4-31B-it` para generar sus propuestas.
+El modelo es un borrador de decodificacion especulativa DFlash2, una variante de draft model que predice varios tokens futuros a partir del estado oculto del modelo objetivo. El entrenamiento se realizo durante 6000 pasos en un MacBook Pro con M5 Max, tomando como referencia las capas [11, 29, 47] de gemma-4-31B-it. El autor indica que sirve con Splash sobre un fork especifico con soporte para Gemma 4 (`feat/gemma4`).
 
-El entrenamiento consistió en 6000 pasos ejecutados en un Mac, sin que se especifiquen el dataset, el número de tokens, la composición de los datos ni si hubo etapas de alineación como RLHF o DPO. Tampoco se documentan innovaciones adicionales más allá del propio esquema DFlash2 ni métricas de tasa de aceptación de tokens, que serían el indicador clave para evaluar la calidad de un borrador.
+No se especifican en la informacion disponible el dataset de entrenamiento, la composicion de tokens, el uso de RLHF/DPO ni detalles del objetivo de perdida. El tag `qwen3` en el repositorio sugiere que la arquitectura interna del borrador podria derivar de Qwen3, pero no se confirma en la model card. Tampoco se documentan innovaciones adicionales mas alla del propio esquema DFlash2.
 
 ## Capacidades
 
-- Generación de tokens candidatos para decodificación especulativa sobre `gemma-4-31B-it`.
-- Integración con Splash mediante el argumento `--draft-model`, apuntando al directorio del repositorio.
-- Compatibilidad declarada con los pesos GGUF de `unsloth/gemma-4-31B-it-GGUF` y con los checkpoints MLX del modelo objetivo.
-- No es un modelo de chat, razonamiento, código o matemáticas por sí mismo: no se le atribuyen capacidades generativas autónomas.
-- No se declara soporte de tool calling, agentes, visión, audio ni modo de razonamiento.
-- No se declaran capacidades multilingües.
+- Decodificacion especulativa: propone tokens candidatos que el modelo objetivo verifica, acelerando la generacion de gemma-4-31B-it.
+- Integracion con Splash: requiere el fork `shawonashraf/splash` en la rama `feat/gemma4`.
+- Compatibilidad con pesos GGUF (unsloth/gemma-4-31B-it-GGUF) y checkpoints MLX del modelo objetivo.
+- No es un modelo de chat ni de generacion autonoma; no debe usarse solo.
+- No se documentan capacidades de tool calling, agentes, vision, audio ni multilingues propias.
+- No se documenta modo thinking ni capacidades especiales adicionales.
 
 ## Casos de uso
 
-- Aceleración de inferencia local de `gemma-4-31B-it`: usar el borrador como `--draft-model` en Splash para reducir el número de pasos de decodificación del modelo grande, siempre que la tasa de aceptación sea suficiente para compensar el coste de ejecutar el borrador.
-- Despliegue en hardware Apple Silicon: el entrenamiento se hizo en un Mac y la model card menciona checkpoints MLX, por lo que el escenario natural es servir el modelo objetivo con MLX o Splash en equipos de memoria unificada.
-- Evaluación de decodificación especulativa: sirve como caso de estudio para medir ganancias de throughput y tasa de aceptación frente a la decodificación autoregresiva estándar con el mismo modelo objetivo.
-- Servicio con pesos GGUF: combinado con `unsloth/gemma-4-31B-it-GGUF`, permite probar el pipeline de borrador más objetivo en entornos basados en GGUF a través de Splash.
-- Experimentación en investigación: útil para estudiar cómo influye la elección de capas objetivo (11, 29, 47) en la calidad de las propuestas de un borrador DFlash2.
-- Pruebas de integración de Splash: sirve para validar la rama `feat/gemma4` de Splash en un pipeline real con un modelo de 31B y su borrador asociado.
+- Aceleracion de inferencia en produccion de gemma-4-31B-it: desplegar el modelo objetivo junto con este draft en Splash para reducir la latencia por token en tareas de generacion de texto.
+- Servicio de chat de baja latencia: usar decodificacion especulativa para mejorar el tiempo hasta el primer token percibido en aplicaciones conversacionales con Gemma 4 31B.
+- Generacion de codigo interactiva: reducir la latencia en asistentes de autocompletado o generacion de codigo que usen Gemma 4 31B como base.
+- Despliegue en hardware Apple Silicon: el borrador se entreno en M5 Max y apunta a checkpoints MLX, por lo que encaja en flujos de inferencia local en Mac.
+- Investigacion en decodificacion especulativa: sirve como referencia para estudiar el impacto de las capas objetivo [11, 29, 47] en la tasa de aceptacion del draft.
+- Evaluacion de pipelines Splash: validar el fork `feat/gemma4` en entornos de prueba antes de adoptarlo en produccion con modelos Gemma 4.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Tampoco se documentan tasas de aceptación de tokens, latencia ni throughput medidos.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de tasa de aceptacion (acceptance rate), speedup, latencia ni throughput medidos para este draft.
 
 ## Requisitos de hardware
 
-- VRAM estimada para el borrador: aproximadamente 0,8 GB en el formato safetensors del repositorio (390,95 M de parámetros); no se especifican requisitos para otras precisiones.
-- El requisito dominante es el del modelo objetivo `gemma-4-31B-it`, no el del borrador; no se dispone de cifras de VRAM para el objetivo en la información proporcionada.
-- GPU recomendadas: no disponible. La model card indica entrenamiento en un Mac, lo que apunta a Apple Silicon como entorno probado.
-- Cabe en GPU de consumo por tamaño del borrador, pero la viabilidad del conjunto depende del modelo objetivo y de la implementación de Splash.
-- Opciones de despliegue: Splash (rama `feat/gemma4`) con `--draft-model`; no se confirma soporte en vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: el artefacto pesa 0,8 GB en safetensors; en FP16 serian aproximadamente 0,8 GB solo para pesos, mas el coste del modelo objetivo gemma-4-31B-it (no disponible en esta informacion).
+- GPU recomendadas: no disponible. El autor lo entreno en un MacBook Pro con M5 Max, lo que sugiere soporte para Apple Silicon.
+- Cabe en GPU de consumo: si, el borrador por si solo ocupa menos de 1 GB; el requisito dominante es el modelo objetivo de 31B.
+- Opciones de despliegue: Splash (fork `shawonashraf/splash`, rama `feat/gemma4`). No se documenta soporte en vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shawon/gemma-4-31B-it-DFlash2 | 390.954.240 | no disponible | Borrador de decodificación especulativa para gemma-4-31B-it | no disponible | Hugging Face, 0 descargas |
-| Borradores EAGLE / Medusa para modelos abiertos | no disponible | no disponible | Decodificación especulativa | variable | no disponible |
-| Modelos draft de la familia Gemma publicados por terceros | no disponible | no disponible | Aceleración de inferencia | variable | no disponible |
+| shawon/gemma-4-31B-it-DFlash2 | 391 M | no disponible | Draft especulativo para Gemma 4 31B | no disponible | Hugging Face (272 descargas) |
+| Draft models de EAGLE/Medusa para Llama | variable | no disponible | Draft especulativo | variable | Hugging Face |
+| gemma-4-31B-it (modelo objetivo) | 31B (nominal) | no disponible | Generacion de texto | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento ni de especificaciones de alternativas concretas en la información proporcionada, por lo que la comparación cuantitativa no es posible.
+No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: sin el modelo objetivo `gemma-4-31B-it` y Splash no tiene utilidad práctica.
-- La licencia no está declarada, lo que impide confirmar si se permite uso comercial; debe verificarse antes de cualquier despliegue en producción.
-- No se declaran idiomas soportados ni longitud de contexto.
-- No hay métricas de tasa de aceptación ni de ganancia de velocidad, de modo que no puede afirmarse que el borrador acelere la inferencia en todos los entornos.
-- El repositorio tiene cero descargas y cero likes y fue creado y actualizado el mismo día, lo que indica ausencia de validación por parte de la comunidad.
-- El entrenamiento se realizó en un Mac durante 6000 pasos; no se documenta el dataset, por lo que se desconocen sesgos y posibles sobreajustes al dominio de entrenamiento.
-- La dependencia de una rama de desarrollo de Splash (`feat/gemma4`) implica riesgo de incompatibilidad con versiones estables.
-- No se han publicado evaluaciones de alucinación ni de robustez; al ser un borrador, los errores se manifiestan como tokens rechazados por el modelo objetivo, no como respuestas incorrectas directas.
+- No es un modelo autonomo: solo funciona como borrador de decodificacion especulativa junto a gemma-4-31B-it.
+- La licencia no esta disponible en la informacion proporcionada; verificar antes de uso comercial.
+- La model card no documenta sesgos, riesgo de alucinacion ni limitaciones de idioma del borrador.
+- Dependencia de un fork no oficial de Splash (`feat/gemma4`); la compatibilidad con versiones upstream no esta garantizada.
+- Documentacion minima: sin dataset, sin metricas de aceptacion y sin garantias de calidad del draft.
+- El tag `qwen3` en el repo puede inducir a confusion sobre la arquitectura interna; no se aclara en la model card.
+- Repositorio con 0 likes y 272 descargas: madurez y soporte comunitario limitados.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/shawon/gemma-4-31B-it-DFlash2
-- Modelo objetivo GGUF: https://huggingface.co/unsloth/gemma-4-31B-it-GGUF
-- Splash (librería de servicio, rama `feat/gemma4`): no disponible en la información proporcionada
+- Fork de Splash con soporte Gemma 4: https://github.com/shawonashraf/splash/tree/feat/gemma4
+- Modelo objetivo GGUF (referenciado): unsloth/gemma-4-31B-it-GGUF (no se proporciona URL directa en la informacion disponible)

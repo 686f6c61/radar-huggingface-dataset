@@ -2,112 +2,124 @@
 
 ## Resumen
 
-Qwen3-1.7B-int4-sym-g128-ov es una version cuantizada del modelo Qwen/Qwen3-1.7B de Alibaba Qwen, exportada al formato OpenVINO IR por el usuario mlboydaisuke. El objetivo principal es permitir la inferencia de un modelo de lenguaje de 1.700 millones de parametros directamente en la NPU (unidad de procesamiento neuronal) de los procesadores Intel Core Ultra, mediante la libreria OpenVINO GenAI. Se trata, por tanto, de un artefacto de despliegue orientado a la inferencia local en hardware de consumo, no de un modelo entrenado desde cero.
+Qwen3-1.7B-int4-sym-g128-ov es una exportación del modelo Qwen/Qwen3-1.7B (revisión `70d244c`) al formato OpenVINO IR con pesos cuantizados a int4 simétrico, tamaño de grupo 128 y ratio 1.0, realizada por el usuario mlboydaisuke. El objetivo es disponer de una versión del modelo Qwen3 de 1.700 millones de parámetros que pueda ejecutarse en la NPU integrada de los procesadores Intel Core Ultra mediante OpenVINO GenAI, siguiendo la configuración que la guía oficial de OpenVINO recomienda para LLM en NPU (`--sym`, `--weight-format int4`, `--group-size 128`, `--ratio 1.0`).
 
-La cuantizacion aplicada es int4 simetrica con group size 128 y ratio 1.0, una configuracion que la guia oficial de OpenVINO GenAI para NPU exige para ejecutar LLM en dicha unidad. Esto la diferencia de la variante oficial OpenVINO/Qwen3-1.7B-int4-ov, que usa int4 asimetrica con ratio 0.8 y no cumple los requisitos de la NPU. El resultado es un repositorio de 1,1 GB que cabe en la memoria compartida de un portatil con Intel Core Ultra y permite generar texto a velocidades de decodificacion cercanas a los 40 tokens por segundo.
+El modelo base Qwen3-1.7B es un transformer denso de la familia Qwen3 de Alibaba, con modo de razonamiento (bloques ` thinking`) y capacidades de generación de texto y conversación. Esta exportación no altera la arquitectura ni el entrenamiento: solo cambia el formato y la precisión de los pesos para hacer viable la inferencia en hardware de consumo con acelerador NPU, algo relevante para despliegues locales en portátiles sin GPU dedicada.
 
-El modelo base Qwen3-1.7B forma parte de la familia Qwen3, conocida por su modo de razonamiento explicito (bloques ` thinking`) y su soporte multilingue. Esta version cuantizada hereda esas capacidades, aunque la model card no documenta evaluaciones de calidad tras la cuantizacion, por lo que el rendimiento en tareas complejas debe verificarse caso por caso.
+La ficha del autor incluye mediciones reales en un portátil con Intel Core Ultra 9 386H (unos 40 tokens/s de decodificación en NPU, 3.003 MiB de working set pico) y una evaluación de acuerdo de respuestas frente al modelo original (13 de 20 coincidencias en la primera línea, por debajo del umbral de 18 que el propio autor considera aceptable). Estos datos son útiles para evaluar si la cuantización int4 es suficiente para un caso de uso concreto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (arquitectura del modelo base Qwen3-1.7B; detalles completos no disponibles en la informacion proporcionada) |
-| Parametros totales | 1.700 millones (1,7B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | int4 simetrica (mode int4_sym), group size 128, ratio 1.0, awq False, scale_estimation False, backup_mode int8_asym |
+| Arquitectura | Transformer denso (modelo base Qwen3-1.7B); exportado como OpenVINO IR |
+| Parametros totales | 1.700 millones (modelo base Qwen3-1.7B) |
+| Parametros activos | no aplica (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (depende del modelo base Qwen3-1.7B) |
+| Tipos de cuantizacion | int4 simetrico, group size 128, ratio 1.0, backup_mode int8_asym; awq False, scale_estimation False |
 | Idiomas soportados | no disponible en la informacion proporcionada |
-| Licencia | apache-2.0 |
-| Formato de pesos | OpenVINO IR (.xml + .bin), exportado con optimum-cli |
-| Tamano del repositorio | 1,1 GB |
-| Libreria de inferencia | OpenVINO GenAI (LLMPipeline) |
-| Hardware objetivo | Intel NPU (probado en Intel Core Ultra 9 386H) |
-| Revision del modelo base | Qwen/Qwen3-1.7B revision 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e |
+| Licencia | Apache 2.0 |
+| Formato de pesos | OpenVINO IR (.xml + .bin), exportado con optimum-cli; repositorio de 1,1 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es Qwen3-1.7B, un transformer decoder-only de 1.700 millones de parametros desarrollado por Alibaba Qwen. La model card de esta version cuantizada no incluye detalles sobre el entrenamiento original (numero de tokens, composicion del dataset, uso de RLHF o DPO), por lo que esos datos no estan disponibles en la informacion proporcionada. Qwen3 es conocida por incorporar un modo de razonamiento explicito que genera bloques ` thinking` antes de la respuesta final, comportamiento que se observa en las pruebas registradas.
+El modelo base Qwen3-1.7B es un transformer denso de 1.700 millones de parámetros desarrollado por Alibaba (familia Qwen3), con capacidad de generación de texto y modo de razonamiento explícito mediante bloques ` thinking`. Esta exportación no modifica la arquitectura: convierte los pesos al formato OpenVINO IR con cuantización int4 simétrica de grupo 128 y ratio 1.0, aplicada con NNCF 3.4.0 y optimum-intel 2.2.0 sobre la revisión `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` del modelo original, verificada por hash sha256 antes de la exportación.
 
-La innovacion tecnica de este repositorio reside en el proceso de exportacion, no en el entrenamiento. Se utilizo `optimum-cli export openvino` con los parametros `--weight-format int4 --sym --ratio 1.0 --group-size 128`, que producen una cuantizacion simetrica de 4 bits con grupos de 128 pesos. Esta configuracion es la que la guia de OpenVINO GenAI para NPU exige para LLM, ya que la NPU de Intel requiere pesos simetricos con esos parametros concretos. El proceso se realizo con optimum-intel 2.2.0, optimum 2.3.0, nncf 3.4.0, openvino 2026.4.1, openvino-tokenizers 2026.4.1.0, transformers 5.5.4, torch 2.14.0 y Python 3.12.10 sobre Windows 11 Home. Los ficheros del modelo base se verificaron contra los sha256 del Hub antes de la exportacion.
+La exportación se realizó con el comando `optimum-cli export openvino --model <carpeta> --task text-generation-with-past --weight-format int4 --sym --ratio 1.0 --group-size 128 <salida>`, en un entorno con openvino 2026.4.1, openvino-tokenizers 2026.4.1.0, transformers 5.5.4, torch 2.14.0 y Python 3.12.10 sobre Windows 11 Home. Los metadatos de cuantización del IR (`rt_info`) confirman modo `int4_sym`, group_size 128, ratio 1.0, sin AWQ ni estimación de escala, con modo de respaldo `int8_asym`. No se proporciona información sobre los datos de entrenamiento del modelo base ni sobre si hubo RLHF/DPO, ya que esta ficha se limita a la exportación.
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato chat, con plantilla de chat propia incluida en el repositorio.
-- Razonamiento explicito mediante bloques ` thinking`: el modelo genera una linea de pensamiento antes de la respuesta, segun se observa en las pruebas registradas.
-- Generacion de codigo y matematicas: capacidades heredadas del modelo base Qwen3-1.7B, aunque no se documentan evaluaciones especificas tras la cuantizacion.
-- Soporte multilingue: no confirmado en la informacion proporcionada para esta version cuantizada.
-- Tool calling / function calling: no confirmado en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no confirmado en la informacion proporcionada.
-- Inferencia en NPU de Intel: capacidad diferencial de esta exportacion, que permite ejecutar el modelo sin GPU dedicada.
-- Modo de generacion codiciosa (greedy) verificado en las pruebas del autor.
+- Generación de texto y conversación multi-turno, heredadas del modelo base Qwen3-1.7B.
+- Modo de razonamiento con bloques ` thinking`: en las pruebas del autor, las respuestas de 128 tokens terminan dentro del bloque de pensamiento sin llegar al ``.
+- Respuesta a preguntas sobre hechos insertados en pasajes largos (evaluado con 160 prompts de 256 a 1.000 tokens).
+- Ejecución en NPU integrada de Intel mediante OpenVINO GenAI (`LLMPipeline(..., "NPU", CACHE_DIR=...)`).
+- Compatibilidad con el pipeline `text-generation-with-past` de OpenVINO, lo que permite caché de claves/valores entre pasos.
+- Tool calling, function calling, capacidades de agente, visión o audio: no disponible en la información proporcionada para esta exportación.
+- Capacidades multilingües: no disponible en la información proporcionada (el modelo base Qwen3 soporta varios idiomas, pero no se detalla aquí).
 
 ## Casos de uso
 
-- Asistentes conversacionales locales en portatiles Intel Core Ultra: el modelo se ejecuta en la NPU con un consumo energetico bajo y sin necesidad de GPU, lo que permite integrarlo en aplicaciones de escritorio que respondan a preguntas en tiempo real. La decodificacion a 40 tokens/s es suficiente para una experiencia conversacional fluida.
-- Procesamiento de texto offline con privacidad: al ejecutarse completamente en local, es adecuado para aplicaciones que manejan datos sensibles (notas medicas, documentos legales, correos personales) donde no se puede enviar informacion a servicios en la nube.
-- Generacion de borradores y resumenes en herramientas de productividad: con 1,7B de parametros y una ventana de contexto no confirmada, puede redactar resumenes cortos, reescribir parrafos o generar listas a partir de instrucciones breves, integrándose en editores de texto o suites ofimaticas.
-- Prototipado rapido de aplicaciones de IA generativa en Windows: al ser un OpenVINO IR listo para `LLMPipeline`, permite a desarrolladores validar flujos de chat, plantillas y prompts sin configurar stacks de GPU ni depender de servicios externos.
-- Educacion y demostraciones de IA on-device: sirve para ilustrar en talleres o clases como funciona la inferencia en NPU, con metricas medibles de latencia, memoria y velocidad de decodificacion (3.001 MiB de working set, 1,8-2,1 s de carga en caliente).
-- Automatizacion de tareas de texto en entornos con recursos limitados: en equipos sin GPU dedicada, el modelo puede clasificar, extraer o transformar texto en lotes pequenos, siempre que las tareas no exijan razonamiento complejo ni contextos largos.
-- Evaluacion comparativa de cuantizaciones: util para investigadores que quieran medir el impacto de int4 simetrica frente a int4 asimetrica en la calidad de las respuestas de Qwen3-1.7B.
+- Asistentes conversacionales locales en portátiles con Intel Core Ultra: el modelo se ejecuta en la NPU integrada con un working set pico de 3.003 MiB y una decodificación de unos 40 tokens/s, suficiente para un chat interactivo sin GPU dedicada.
+- Procesamiento de documentos con hechos embebidos: la evaluación con 160 prompts de hasta 1.000 tokens muestra un 153/160 de aciertos en NPU, adecuado para extracción de datos concretos de pasajes (códigos, nombres, cantidades) en flujos de oficina.
+- Prototipado de aplicaciones de IA en el borde (edge AI): al ser un IR de OpenVINO, se integra en aplicaciones C++/Python con OpenVINO GenAI y permite validar ideas sin infraestructura cloud.
+- Generación de texto con razonamiento acotado: el modo ` thinking` permite obtener cadenas de razonamiento para tareas de análisis, aunque con 128 tokens nuevas las respuestas quedan dentro del bloque de pensamiento y requieren presupuestos mayores para cerrar la respuesta.
+- Despliegue en entornos con requisitos de privacidad: al ejecutarse íntegramente en local sobre la NPU, los datos no salen del dispositivo, lo que encaja en escenarios con datos sensibles.
+- Evaluación comparativa de cuantizaciones: sirve como referencia para medir el impacto de int4 simétrico frente a int8 (el autor compara con `mlboydaisuke/Qwen3-1.7B-int8-sym-ov`, que logra 18/20 de acuerdo frente a 13/20 de esta exportación).
+- Banqueo de hardware NPU: el autor publica scripts y registros (`run_ovgenai.py`, `records/2026-11-11/`) que permiten reproducir las mediciones en otros equipos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card solo incluye mediciones de rendimiento de inferencia en una NPU concreta:
+Mediciones del autor en un portátil Intel Core Ultra 9 386H con NPU (driver 32.0.100.5540, Windows 11 Home build 26200.9711, 31,5 GB RAM, modo Balanced), OpenVINO GenAI 2026.4.1, prompt `short-chat` de edge-llm-bench (19 tokens), greedy, máximo 128 tokens nuevos:
 
 | Metrica | Valor |
 |---|---|
-| Equipo de prueba | Intel Core Ultra 9 386H, NPU driver 32.0.100.4841, Windows 11 Home build 26200.9711, 31,5 GB RAM |
-| Decodificacion en frio | 38,4 tokens/s (mediana de 2 ejecuciones, dispersion 0,5 %) |
-| Decodificacion en caliente | 40,1 tokens/s |
-| Prefill en frio | 10,3 tokens/s, 1847 ms hasta el primer token |
-| Working set maximo | 3.001 MiB |
-| Tiempo de carga | 5,6 s en la primera ejecucion; 1,8 y 2,1 s en las siguientes (con la misma CACHE_DIR) |
-| Verificacion de salida | 6/6 PASS (comprobacion de texto de edge-llm-bench) |
-| Tokens nuevos por respuesta | 128, 128 |
-| Primera carga registrada | 48,3 s (raw/diag/q17.log, 2026-11-07) |
+| Decodificacion en frio (cold) | 40,3 tokens/s (mediana de 2 runs, dispersion 0,2 %) |
+| Decodificacion en caliente (warm) | 40,6 tokens/s |
+| Prefill en frio | 10,5 tokens/s; 1.811 ms hasta el primer token |
+| Working set pico | 3.003 MiB (proceso) |
+| Carga (con CACHE_DIR poblada) | 1,4 s |
+| Primera carga (CACHE_DIR vacia) | 16,4 s |
+| Verificacion de salida | 6/6 PASS; 128 y 128 tokens nuevos por respuesta |
+
+Acuerdo de respuestas con el modelo original (20 preguntas cortas, thinking off, primera línea de la respuesta):
+
+| Modelo | Coincidencias con Qwen3-1.7B fp32 |
+|---|---|
+| Esta exportacion (int4 sym g128, NPU) | 13/20 |
+| `mlboydaisuke/Qwen3-1.7B-int8-sym-ov` (int8, NPU) | 18/20 |
+| Umbral de aprobado del autor (windows-model-zoo) | 18/20 |
+
+Hechos en prompts largos (160 prompts: 8 hechos × 5 posiciones × 4 longitudes de 256, 512, 768 y 1.000 tokens):
+
+| Modelo / dispositivo | Aciertos |
+|---|---|
+| Esta exportacion en NPU | 153/160 |
+| Esta exportacion en CPU en f32 | 145/160 |
+| Qwen/Qwen3-1.7B fp32 (transformers, CPU) | 157/160 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM / memoria: el modelo ocupa 1,1 GB en disco y su working set medido es de 3.001 MiB. Al ejecutarse en NPU, utiliza memoria compartida del sistema, no VRAM dedicada.
-- GPU recomendadas: no aplica para el objetivo principal; el modelo esta optimizado para NPU de Intel. Puede ejecutarse en CPU o GPU Intel via OpenVINO, pero no se proporcionan mediciones para esos casos.
-- Compatibilidad con GPU de consumo: no confirmada en la informacion proporcionada. Al ser un formato OpenVINO IR, no es directamente compatible con CUDA ni con llama.cpp.
-- Hardware verificado: Intel Core Ultra 9 386H con NPU driver 32.0.100.4841 y 31,5 GB de RAM.
-- Opciones de despliegue: OpenVINO GenAI mediante `LLMPipeline(<carpeta>, "NPU", CACHE_DIR=<dir>)`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: 40,1 tokens/s en decodificacion en caliente, 1847 ms hasta el primer token en prefill en frio, carga en caliente de 1,8-2,1 s.
-- Almacenamiento: 1,1 GB para los pesos en int4.
+- VRAM/RAM: el proceso consume un working set pico de 3.003 MiB en NPU según la medición del autor; el repositorio ocupa 1,1 GB.
+- Hardware objetivo: NPU integrada de Intel Core Ultra (probado en Core Ultra 9 386H con driver 32.0.100.5540); también ejecutable en CPU con el mismo IR (el autor lo ejecutó en f32 para separar errores del export de los de la NPU).
+- GPU dedicadas (A100, H100, RTX 4090): no disponible en la información proporcionada; el formato OpenVINO IR está pensado para el stack de Intel.
+- Cabe en hardware de consumo: sí, en portátiles con Intel Core Ultra y NPU; no se documenta su comportamiento en GPU de consumo.
+- Despliegue: OpenVINO GenAI (`LLMPipeline` con dispositivo `"NPU"` y `CACHE_DIR`); exportación reproducible con optimum-cli y optimum-intel. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: 40,3 tokens/s de decodificación en frío y 1.811 ms hasta el primer token (prefill 10,5 tokens/s); carga de 1,4 s con caché y 16,4 s en la primera carga.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Cuantizacion | Formato | Hardware objetivo | Licencia |
+| Modelo | Parametros | Formato / cuantizacion | Contexto | Rendimiento medido | Licencia |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-int4-sym-g128-ov (este) | 1,7B | int4 simetrica, g128, ratio 1.0 | OpenVINO IR | NPU Intel | apache-2.0 |
-| OpenVINO/Qwen3-1.7B-int4-ov | 1,7B | int4 asimetrica, g128, ratio 0.8 | OpenVINO IR | CPU/GPU Intel (no cumple requisitos NPU) | apache-2.0 |
-| Qwen/Qwen3-1.7B (original) | 1,7B | sin cuantizar (FP16/BF16) | safetensors | GPU generica | apache-2.0 |
+| Qwen3-1.7B-int4-sym-g128-ov (este) | 1,7 B | OpenVINO IR, int4 sym g128 ratio 1.0 | no disponible | 13/20 acuerdo; 153/160 hechos en NPU; 40,3 tok/s | Apache 2.0 |
+| mlboydaisuke/Qwen3-1.7B-int8-sym-ov | 1,7 B | OpenVINO IR, int8 simetrico | no disponible | 18/20 acuerdo en la misma NPU | Apache 2.0 |
+| Qwen/Qwen3-1.7B (original) | 1,7 B | safetensors, fp32 | no disponible | 157/160 hechos (fp32, CPU) | Apache 2.0 |
+| OpenVINO/Qwen3-1.7B-int4-ov | 1,7 B | OpenVINO IR, int4 asym g128 ratio 0.8 | no disponible | no disponible | Apache 2.0 |
 
-La diferencia clave frente a la variante oficial de OpenVINO es la simetria de la cuantizacion y el ratio 1.0, que habilitan la ejecucion en NPU. Frente al modelo original, esta version sacrifica precision numerica a cambio de un tamano reducido (1,1 GB) y de la capacidad de ejecutarse en hardware sin GPU dedicada. No se dispone de datos de calidad comparativa entre estas tres variantes en la informacion proporcionada.
+La comparación con `OpenVINO/Qwen3-1.7B-int4-ov` es relevante porque el autor señala que esa exportación usa int4 asimétrico con ratio 0.8 y no cumple los requisitos de la guía de NPU de OpenVINO, que exige `--sym` y ratio 1.0; esta exportación se creó precisamente para ajustarse a esa guía.
 
 ## Limitaciones y advertencias
 
-- No se han publicado evaluaciones de calidad tras la cuantizacion int4, por lo que se desconoce la degradacion real en tareas de razonamiento, codigo o matematicas.
-- El modelo base tiene 1,7B de parametros, lo que limita su capacidad en tareas complejas frente a modelos de mayor tamano. Es adecuado para tareas simples o moderadas, no para razonamiento avanzado.
-- En las pruebas registradas, con 128 tokens nuevos todas las respuestas terminan dentro del bloque ` thinking`, sin llegar a cerrarlo. Esto sugiere que el modelo puede consumir el presupuesto de generacion en el razonamiento interno si no se ajusta el limite de tokens o el prompt.
-- La longitud de contexto no esta documentada en la informacion proporcionada, lo que impide garantizar el comportamiento en conversaciones largas o documentos extensos.
-- Los idiomas soportados no estan confirmados para esta version cuantizada.
-- La licencia apache-2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base Qwen3-1.7B y de las herramientas de exportacion utilizadas.
-- El formato OpenVINO IR limita el despliegue a entornos Intel con OpenVINO GenAI; no es portable a ecosistemas CUDA, ROCm o llama.cpp sin conversion adicional.
-- El repositorio tiene 0 descargas y 0 likes, y fue creado en noviembre de 2026, por lo que no cuenta con validacion de la comunidad.
-- Las mediciones de rendimiento provienen de una unica sesion en un unico portatil, por lo que no deben generalizarse a otros equipos con NPU Intel.
+- El acuerdo de respuestas con el modelo original es de 13/20, por debajo del umbral de 18/20 que el propio autor considera aceptable; el int8 de la misma familia alcanza 18/20, lo que sugiere una pérdida de fidelidad apreciable por la cuantización int4.
+- En prompts largos, la NPU falló 5 hechos que el modelo original acertó (por ejemplo, el código de taquilla "4719" respondido como 99, 9, 999 y 9865 en cuatro posiciones de prompts de 512 tokens; y "27 manzanos" respondido como 7).
+- La CPU en f32 falló 10 hechos adicionales que la NPU acertó, incluidos 7 casos de "27 manzanos" respondidos como 7: el comportamiento depende del dispositivo y la precisión, no solo del export.
+- Con un presupuesto de 128 tokens nuevas, todas las respuestas medidas terminan dentro del bloque ` thinking` sin ``, por lo que no se genera respuesta final; se necesita un límite mayor para uso conversacional real.
+- La evaluación de acuerdo mide coincidencia con el original, no corrección: no es un benchmark de calidad absoluta.
+- No hay información sobre sesgos, idiomas soportados ni restricciones adicionales de la licencia Apache 2.0 más allá de las del modelo base.
+- Las mediciones provienen de un único portátil y una única sesión (2026-11-11); no se garantiza que se reproduzcan en otros equipos o drivers.
+- Riesgo de alucinación: inherente al modelo base; no se documenta mitigación específica en esta exportación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/Qwen3-1.7B-int4-sym-g128-ov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Variante oficial OpenVINO: https://huggingface.co/OpenVINO/Qwen3-1.7B-int4-ov
-- Guia de OpenVINO GenAI para NPU: https://docs.openvino.ai/2026/openvino-workflow-generative/inference-with-genai/inference-with-genai-on-npu.html
-- Repositorio de benchmarks edge-llm-bench: https://github.com/john-rocky/edge-llm-bench
+- Exportación int8 comparable: https://huggingface.co/mlboydaisuke/Qwen3-1.7B-int8-sym-ov
+- Exportación int4 asimétrica de OpenVINO: https://huggingface.co/OpenVINO/Qwen3-1.7B-int4-ov
+- Guía de OpenVINO GenAI para NPU: https://docs.openvino.ai/2026/openvino-workflow-generative/inference-with-genai/inference-with-genai-on-npu.html
+- Repositorio edge-llm-bench: https://github.com/john-rocky/edge-llm-bench
 - Repositorio windows-llm-zoo: https://github.com/john-rocky/windows-llm-zoo
-- Registro de resultados: https://github.com/john-rocky/windows-llm-zoo/blob/894114e9bdc9346ce66927d667a6743a12df190c/results/Qwen3-1.7B/openvino-genai_npu_npu-sym-g128.json
-- Script de ejecucion: https://github.com/john-rocky/windows-llm-zoo/blob/894114e9bdc9346ce66927d667a6743a12df190c/pc/run_ovgenai.py
-- Log de diagnostico: https://github.com/john-rocky/windows-llm-zoo/blob/894114e9bdc9346ce66927d667a6743a12df190c/raw/diag/q17.log
+- Script de ejecución: https://github.com/john-rocky/windows-llm-zoo/blob/894114e9bdc9346ce66927d667a6743a12df190c/pc/run_ovgenai.py
+- Registro de la prueba de acuerdo de respuestas: https://github.com/john-rocky/windows-model-zoo/blob/68e4476d02d7d34422284202ff2d7fd008d3a134/models/Qwen3-1.7B/results/task-openvino-genai_npu_npu-sym-g128.json
+- Registro de la primera carga: https://github.com/john-rocky/windows-model-zoo/blob/68e4476d02d7d34422284202ff2d7fd008d3a134/raw/npu-rerun/runs/npu-rerun-b/Qwen3-1.7B/task-openvino-genai_npu_npu-sym-g128/run1.json
+- Registros de la sesión de medición: https://huggingface.co/mlboydaisuke/Qwen3-1.7B-int4-sym-g128-ov/tree/main/records/2026-11-11

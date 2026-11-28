@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Kuantum-ai1/TinyCode1.1-164M-Python",
+  "slug": "kuantum-ai1-tinycode1-1-164m-python",
+  "author": "Kuantum-ai1",
+  "url": "https://huggingface.co/Kuantum-ai1/TinyCode1.1-164M-Python",
+  "created_at": "2026-11-27T22:19:17.000Z",
+  "updated_at": "2026-11-27T22:19:24.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_bigcode",
+    "text-generation",
+    "code",
+    "python",
+    "en",
+    "base_model:Kuantum-ai1/TinyCode1-164M-Python",
+    "base_model:finetune:Kuantum-ai1/TinyCode1-164M-Python",
+    "license:bigcode-openrail-m",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 164144128,
+  "parameters_human": "164.1M",
+  "storage_bytes": 656601304,
+  "storage_human": "657 MB",
+  "context_length": null,
+  "base_model": "Kuantum-ai1/TinyCode1-164M-Python",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

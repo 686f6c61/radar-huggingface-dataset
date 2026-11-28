@@ -1,0 +1,70 @@
+{
+  "schema": 2,
+  "id": "stateofmaryland/parakeet-tdt-0.6b-v2-maryland-bill-hearings",
+  "slug": "stateofmaryland-parakeet-tdt-0-6b-v2-maryland-bill-hearings",
+  "author": "stateofmaryland",
+  "url": "https://huggingface.co/stateofmaryland/parakeet-tdt-0.6b-v2-maryland-bill-hearings",
+  "created_at": "2026-11-28T04:07:42.000Z",
+  "updated_at": "2026-11-28T04:15:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "automatic-speech-recognition",
+    "speech",
+    "parakeet",
+    "tdt",
+    "fastconformer",
+    "sherpa-onnx",
+    "maryland",
+    "legislative-hearings",
+    "en",
+    "dataset:stateofmaryland/maryland-bill-hearings",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3785815235,
+  "storage_human": "3.8 GB",
+  "context_length": null,
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Maryland Bill Hearings (1h)",
+      "metric": "WER (NeMo, GPU)",
+      "value": 3.06
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Maryland Bill Hearings (1h)",
+      "metric": "WER (int8 ONNX, CPU)",
+      "value": 3.39
+    }
+  ],
+  "sources": []
+}

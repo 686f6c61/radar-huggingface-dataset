@@ -67,5 +67,16 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Huihui Qwen3.8 27B — Uncensored · GSQ-RCO IQ3_S · NInfer v3",
+      "url": "https://huggingface.co/SPK1337/Huihui-Qwen3.8-27B-Uncensored-GSQ-RCO-IQ3S-Vision-DFlash2-MTP-NInfer",
+      "snippet": "SPK1337. /. Huihui-Qwen3.8-27B-Uncensored-GSQ-RCO-IQ3S-Vision-DFlash2-MTP-NInfer. Like 6 · Huihui Qwen3.8 27B — Uncensored · GSQ-RCO IQ3_S · NInfer v3."
+    },
+    {
+      "title": "在云GPU 上运行Huihui-Qwen3.8-27B-Uncensored-GSQ-RCO-IQ3S ...",
+      "url": "https://corehu.com/run/spk1337--huihui-qwen3.8-27b-uncensored-gsq-rco-iq3s-vision-dflash2-mtp-ninfer?lang=zh",
+      "snippet": "SPK1337 的Huihui-Qwen3.8-27B-Uncensored-GSQ-RCO-IQ3S-Vision-DFlash2-MTP-NInfer（27B）约需66 GB 显存。租用合适的GPU，$3.24/小时起，按秒计费。"
+    }
+  ]
 }

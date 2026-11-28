@@ -45,31 +45,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nile - Agence d'affaires publiques en santé -",
-      "url": "https://www.nile-consulting.eu/",
-      "snippet": "Agence conseil en affaires publiques dédiée aux acteurs de la santé, nile est basée depuis 2017 à Paris - France."
-    },
-    {
-      "title": "Nile - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Nile",
-      "snippet": "The White Nile begins near Lake Victoria and flows through Uganda and South Sudan, while the Blue Nile begins near Lake Tana in …"
-    },
-    {
-      "title": "Nil — Wikipédia",
-      "url": "https://fr.wikipedia.org/wiki/Nil",
-      "snippet": "De nos jours, la répartition des eaux du Nil pour l'exploitation est régulée par un accord liant neuf des dix pays riverains du bassin …"
-    },
-    {
-      "title": "NILE Online Store",
-      "url": "https://eu.nile.ch/en/",
-      "snippet": "A love for materials and details NILE combines timeless design with carefully selected materials. We make considered choices and, …"
-    },
-    {
-      "title": "NILE Online Store",
-      "url": "https://www.nile.ch/en",
-      "snippet": "NILE – Designed in Switzerland. Discover stylish favorites with unique designs and lovely details. Shop now."
-    }
-  ]
+  "sources": []
 }

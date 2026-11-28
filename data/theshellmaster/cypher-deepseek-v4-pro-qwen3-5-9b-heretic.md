@@ -2,53 +2,51 @@
 
 ## Resumen
 
-`cypher-DeepSeek-V4-Pro-Qwen3.5-9B-heretic` es un espejo en formato GGUF publicado por el usuario TheShellMaster bajo la etiqueta "cypher-studio". No se trata de un modelo entrenado desde cero, sino de una redistribucion de un fichero GGUF concreto (`DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic.Q5_K_M.gguf`, 6,19 GB) procedente del repositorio de mradermacher, que a su vez deriva de un modelo de 9.197.093.888 parametros (aproximadamente 9,2 mil millones).
+`cypher-DeepSeek-V4-Pro-Qwen3.5-9B-heretic` es un modelo de lenguaje en formato GGUF publicado por TheShellMaster, derivado del modelo base `Qwen/Qwen3.5-9B` (9.197.093.888 parametros). La denominacion "heretic" y las etiquetas `abliterated` y `uncensored` indican que se trata de una variante con el alineamiento de seguridad eliminado mediante la tecnica de abliteration, que anula las direcciones de activacion asociadas al rechazo de peticiones. El nombre comercial "DeepSeek-V4-Pro" no corresponde a un modelo real de DeepSeek: es una etiqueta de mercadotecnia aplicada sobre el modelo Qwen, y conviene tratarla con cautela.
 
-El nombre del modelo combina referencias a tres linajes distintos (DeepSeek, Qwen y el sufijo "heretic"), lo que sugiere una fusion o un derivado comunitario de una familia Qwen de ~9B con tecnicas de "abliteration" o fine-tuning orientado a reducir rechazos. La model card es extremadamente escueta: unicamente indica el origen del fichero y su tamano, sin aportar informacion sobre arquitectura, contexto, datos de entrenamiento ni evaluaciones.
+El modelo se distribuye como republicacion sin modificaciones de los GGUF generados por mradermacher, en cuantizacion Q8_0, junto con un fichero `mmproj` que sugiere soporte multimodal de vision (proyeccion de imagenes al espacio del transformer). Esta pensado para ejecutarse en `llama.cpp`/`llama-server`, y el autor declara haberlo probado en una unica GPU T4 de 15 GB. Su relevancia practica es limitada: es un artefacto de nicho para el agente OpenCode del autor, con 194 descargas y sin likes, pero sirve como ejemplo de despliegue local de un modelo de ~9B sin censura sobre hardware modesto.
 
-Su relevancia practica es limitada y muy especifica: sirve como espejo de descarga para una herramienta concreta (Cypher Studio) y para usuarios que quieran obtener exactamente esa cuantizacion Q5_K_M sin depender del repositorio original. No hay evidencia de benchmarks, licencia declarada ni idiomas soportados en la informacion disponible.
+La ficha se elabora a partir de la informacion disponible en Hugging Face y la model card; muchos datos tecnicos del modelo base (contexto, composicion del dataset, benchmarks) no se han publicado en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de la familia Qwen de ~9B segun el nombre; no confirmado) |
-| Parametros totales | 9.197.093.888 (~9,2 B) |
+| Arquitectura | Transformer (heredada de Qwen/Qwen3.5-9B); detalles no disponibles |
+| Parametros totales | 9.197.093.888 |
 | Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q5_K_M (fichero publicado, 6,19 GB); otras cuantizaciones no disponibles en este repo |
+| Tipos de cuantizacion | Q8_0 (GGUF); mmproj Q8_0 para vision |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF |
-| Tamano del repositorio | 6,6 GB |
-| Modelo base | mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF |
-| Fecha de creacion | 2026-11-20 |
-| Descargas / likes | 0 / 0 |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion en la model card sobre la arquitectura interna (tipo de transformer, atencion, capas, dimensiones ocultas) ni sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF/DPO). Por el nombre y el recuento de parametros (9,2 B) cabe inferir una base de la familia Qwen de ~9B, pero se trata de una inferencia no confirmada por el autor.
+La arquitectura subyacente es la de `Qwen/Qwen3.5-9B`, un transformer denso de aproximadamente 9.200 millones de parametros. Sobre esa base se ha aplicado un proceso de abliteration (variante "heretic") que identifica y sustrae la direccion de rechazo en el espacio de activaciones, de modo que el modelo deja de negarse a responder a determinadas peticiones. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO en el modelo original.
 
-El sufijo "heretic" y "UNCENSORED" en el nombre del modelo base apuntan a tecnicas de abliteration o fine-tuning orientadas a eliminar comportamientos de rechazo, pero no se documenta el metodo concreto, el dataset utilizado ni la magnitud de la modificacion. Tampoco se especifica si hubo fusion de pesos entre linajes DeepSeek y Qwen pese a la combinacion de nombres.
+La publicacion de TheShellMaster es una republicacion sin modificaciones de los GGUF de mradermacher, por lo que no aporta entrenamiento adicional: solo cambia el empaquetado y anade el fichero `mmproj` para vision. Se desconoce si el modelo base Qwen3.5-9B incorpora innovaciones como decodificacion especulativa, atencion lineal o modos de razonamiento extendido; no hay datos en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` del repo indica uso previsto para dialogo multi-turno.
-- Razonamiento y codigo: no documentado explicitamente; probable en una base Qwen de ~9B, pero no confirmado.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Modo thinking, vision o audio: no disponible.
-- Comportamiento "sin censura": el nombre del modelo base sugiere una reduccion de rechazos, pero no hay evaluacion que lo cuantifique.
+- Generacion de texto conversacional multi-turno (etiqueta `conversational`).
+- Razonamiento y respuesta a instrucciones, heredados del modelo base Qwen.
+- Codigo y matematicas: capacidad esperable en un modelo de ~9B de la familia Qwen, aunque sin datos de benchmark que lo confirmen.
+- Soporte de vision: el fichero `mmproj-Q8_0.gguf` indica proyeccion de imagenes, por lo que el modelo puede procesar entradas visuales en llama.cpp.
+- Modo sin censura: la abliteration elimina parte de los rechazos de seguridad, lo que permite respuestas a peticiones que el modelo original declinaria.
+- Compatibilidad con endpoints (`endpoints_compatible`) y con `llama-server` mediante `--jinja`.
+- Tool calling / function calling: no confirmado en la informacion disponible.
+- Capacidades de agente multi-paso: el autor lo usa como backend de un agente OpenCode, pero no se documentan formalmente.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo con GPU consumer: el fichero Q5_K_M de 6,19 GB permite ejecucion en GPUs con 8-12 GB de VRAM mediante llama.cpp u Ollama, util para prototipado de chatbots sin conexion.
-- Integracion en Cypher Studio: el proposito declarado del repo es servir de espejo para esta herramienta, por lo que su uso principal es alimentar ese entorno concreto.
-- Experimentacion con modelos "abliterated": investigadores que estudien la reduccion de rechazos pueden usar esta cuantizacion como referencia reproducible del modelo base de mradermacher.
-- Generacion de texto creativo sin filtros: para casos donde se requiera estilo libre y el operador asuma la responsabilidad del contenido generado.
-- Evaluacion comparativa de cuantizaciones: al ser un Q5_K_M concreto, sirve para medir degradacion frente a otros niveles de cuantizacion del mismo modelo base.
-- Archivado y preservacion: al ser un espejo, garantiza disponibilidad del fichero si el repositorio original cambia o desaparece.
+- Despliegue local en GPU de gama media: con cuantizacion Q8_0 y ~9B de parametros, el modelo cabe en una T4 de 15 GB (como declara el autor) y permite inferencia offline sin dependencia de APIs.
+- Agente de codigo en terminal: integrado en `llama-server` como backend de un agente tipo OpenCode, gestiona conversaciones con contexto de repositorio y generacion de parches.
+- Investigacion sobre alineamiento y abliteration: sirve como caso de estudio para medir como cambia la tasa de rechazo y la calidad de respuesta tras eliminar la direccion de seguridad.
+- Procesamiento de imagenes con OCR o descripcion: el fichero `mmproj` habilita tareas de vision-lenguaje en local, util para digitalizar documentos o etiquetar imagenes.
+- Prototipado de chatbots sin restricciones editoriales: para entornos de investigacion donde se necesita explorar respuestas que un modelo alineado bloquearia, con las advertencias legales correspondientes.
+- Pruebas de red teaming: evaluar la robustez de filtros y guardarrailes externos frente a un modelo deliberadamente no alineado.
+- Educacion y demostraciones de llama.cpp: ejemplo reproducible de carga de un GGUF con vision y plantilla Jinja en hardware consumer.
 
 ## Benchmarks y rendimiento
 
@@ -56,35 +54,36 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para Q5_K_M: aproximadamente 7-8 GB incluyendo overhead de contexto (fichero de 6,19 GB).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090; en el entorno profesional, A10, L4, A100 o H100 para servir varias instancias.
-- Cabe en GPU consumer: si, en modelos con 8 GB o mas de VRAM (con contexto moderado); en 6 GB requeriria offload parcial a CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python; vLLM y TGI solo si se dispone de los pesos en safetensors (no incluidos en este repo).
-- Latencia y throughput: no disponibles; dependen del hardware y del backend.
+- VRAM estimada: el autor confirma funcionamiento en una GPU T4 de 15 GB con Q8_0; el peso del fichero Q8_0 ronda los 9-10 GB, mas overhead de contexto y el `mmproj`.
+- GPU recomendadas: T4 (16 GB), RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) para mayor contexto y throughput.
+- Cabe en GPU consumer: si, en tarjetas con 12 GB o mas (RTX 3060 12 GB, RTX 4070 Ti, RTX 4090). En 8 GB requeriria cuantizaciones menores (Q4_K_M), no incluidas en este repo.
+- Opciones de despliegue: `llama.cpp` / `llama-server` (comando del autor: `llama-server -m <fichero>.gguf --jinja -ngl 99 -fa on`), Ollama y cualquier frontend compatible con GGUF.
+- Latencia y throughput: no disponibles; dependen del hardware y del contexto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| cypher-DeepSeek-V4-Pro-Qwen3.5-9B-heretic (este) | ~9,2 B | no disponible | no disponible | GGUF (Q5_K_M) | Espejo comunitario, sin benchmarks |
-| mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF | ~9,2 B | no disponible | no disponible | GGUF (multiples cuantizaciones) | Fuente original del fichero |
-| Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Referencia de la familia Qwen con licencia permisiva y benchmarks publicos |
-| DeepSeek-R1-Distill-Qwen-7B | 7,6 B | 32.768 tokens | MIT | safetensors, GGUF | Derivado DeepSeek sobre Qwen con evaluaciones publicadas |
+| cypher-DeepSeek-V4-Pro-Qwen3.5-9B-heretic | 9,2B | no disponible | Apache 2.0 | GGUF | Abliterated, vision via mmproj |
+| Qwen/Qwen3.5-9B (base) | 9,2B | no disponible | Apache 2.0 | safetensors | Alineado, sin censura eliminada |
+| mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF | 9,2B | no disponible | Apache 2.0 | GGUF | Fuente original de los GGUF |
+| Otros GGUF abliterated de ~9B | ~9B | variable | variable | GGUF | Alternativas de la comunidad, sin datos verificados |
 
-La comparativa con modelos de la familia Qwen y DeepSeek publicos es orientativa: este repositorio no declara licencia ni contexto, por lo que no puede equipararse en garantias a las alternativas oficiales.
+No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, GSM8K) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de licencia declarada: no se puede asumir uso comercial permitido; hay que contactar con el autor o consultar el repositorio base.
-- Model card practicamente vacia: sin arquitectura, contexto, idiomas ni datos de entrenamiento documentados.
-- Riesgo elevado de alucinacion no evaluado: no hay benchmarks que permitan estimar la calidad real del modelo.
-- El calificativo "uncensored/heretic" implica que el modelo puede generar contenido sensible sin filtros; el operador debe implementar sus propias salvaguardas.
-- Sin garantias de mantenimiento: 0 descargas y 0 likes, creado y actualizado el mismo dia, sin historial de soporte.
-- Solo se distribuye una cuantizacion Q5_K_M: no hay flexibilidad para ajustar precision/rendimiento desde este repo.
-- Trazabilidad limitada: el nombre mezcla linajes (DeepSeek, Qwen) sin explicar la composicion real de pesos.
+- La abliteration elimina los rechazos de seguridad: el modelo puede generar contenido danino, ilegal o sesgado; no es apto para produccion orientada al publico sin filtros externos.
+- Riesgo elevado de alucinacion, comun en modelos de ~9B y agravado por la perdida de calidad que puede introducir la abliteration.
+- El nombre "DeepSeek-V4-Pro" es enganoso: no existe relacion con DeepSeek; es un Qwen3.5-9B reetiquetado.
+- Idiomas y longitud de contexto no documentados; no se debe asumir soporte multilingue amplio ni ventanas largas.
+- La licencia Apache 2.0 permite uso comercial, pero el contenido generado puede infringir normativa (difamacion, derechos de autor, material ilegal); la responsabilidad recae en el desplegador.
+- Es una republicacion sin garantias de mantenimiento: 0 likes, 194 descargas y sin pipeline declarado.
+- El soporte de vision depende del `mmproj` y de la version de llama.cpp; la compatibilidad puede romperse entre versiones.
+- No hay evidencia de tool calling fiable ni de calidad de agente medida; el uso como backend de OpenCode es una anecdota del autor.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/TheShellMaster/cypher-DeepSeek-V4-Pro-Qwen3.5-9B-heretic
-- Modelo base (GGUF): https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF
-- No se han encontrado papers, blogs, demos ni repositorios adicionales en la informacion disponible.
+- Hugging Face: https://huggingface.co/TheShellMaster/cypher-DeepSeek-V4-Pro-Qwen3.5-9B-heretic
+- GGUF fuente: https://huggingface.co/mradermacher/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "ahtx/AH-Inkling-2-Mini-GGUF",
+  "slug": "ahtx-ah-inkling-2-mini-gguf",
+  "author": "ahtx",
+  "url": "https://huggingface.co/ahtx/AH-Inkling-2-Mini-GGUF",
+  "created_at": "2026-11-24T04:03:25.000Z",
+  "updated_at": "2026-11-28T03:33:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "inkling",
+    "moe",
+    "imatrix",
+    "text-generation",
+    "en",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:quantized:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26070390272,
+  "parameters_human": "26.07B",
+  "storage_bytes": 28181752192,
+  "storage_human": "28.2 GB",
+  "context_length": 1048576,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

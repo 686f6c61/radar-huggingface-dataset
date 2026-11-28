@@ -49,31 +49,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "LinkedIn : s’identifier ou s’inscrire",
-      "url": "https://fr.linkedin.com/",
-      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
-    },
-    {
-      "title": "LinkedIn | LinkedIn",
-      "url": "https://fr.linkedin.com/company/linkedin",
-      "snippet": "LinkedIn | 34 402 839 abonnés sur LinkedIn. Founded in 2003, LinkedIn connects the world&#39;s professionals to make them more …"
-    },
-    {
-      "title": "Offres d’emploi LinkedIn : trouvez des emplois (France), des stages et ...",
-      "url": "https://fr.linkedin.com/jobs",
-      "snippet": "64 % des chercheurs d’emploi sont embauchés grâce à une recommandation. Utilisez LinkedIn Jobs pour augmenter vos chances …"
-    },
-    {
-      "title": "LinkedIn Learning : cours de formation en ligne et développement de ...",
-      "url": "https://fr.linkedin.com/learning/",
-      "snippet": "Accélérez le renforcement des compétences et l’évolution de carrière pour vous-même ou votre équipe | Compétences en business, …"
-    },
-    {
-      "title": "Adecco - LinkedIn",
-      "url": "https://fr.linkedin.com/company/adecco",
-      "snippet": "Adecco | 10 473 999 abonnés sur LinkedIn. Real Work. Real People. | Chaque jour, Adecco propose des opportunités …"
-    }
-  ]
+  "sources": []
 }

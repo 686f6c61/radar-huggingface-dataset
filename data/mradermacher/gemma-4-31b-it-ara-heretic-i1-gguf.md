@@ -2,106 +2,100 @@
 
 ## Resumen
 
-`mradermacher/gemma-4-31B-it-ARA-heretic-i1-GGUF` es una cuantizacion GGUF del modelo `richardyoung/gemma-4-31B-it-ARA-heretic`, una variante "heretic" (abliterated/decensored) del Gemma 4 31B instruction-tuned de Google. El trabajo de cuantizacion lo firma mradermacher, un autor habitual en el ecosistema GGUF conocido por publicar versiones imatrix de modelos populares. El modelo base parte de la familia Gemma 4 de Google, con aproximadamente 30.700 millones de parametros en formato safetensors, y ha sido modificado mediante tecnicas de abliteration para eliminar los rechazos de contenido.
+`mradermacher/gemma-4-31B-it-ARA-heretic-i1-GGUF` es una coleccion de cuantizaciones GGUF del modelo `richardyoung/gemma-4-31B-it-ARA-heretic`, publicado por el usuario mradermacher. Se trata de una variante "abliterated" o "heretic" de Gemma 4 de 31B en su version instruction-tuned, es decir, un modelo al que se le ha eliminado (parcialmente) el comportamiento de rechazo (refusals) mediante tecnicas de abliteration. El modelo base deriva de la familia Gemma 4 de Google y cuenta con 30.697.345.596 parametros totales segun los pesos safetensors del repositorio.
 
-La relevancia de esta ficha radica en que combina tres cosas: el rendimiento de un modelo de 31B de la familia Gemma 4, una ventana de cuantizaciones muy amplia (desde IQ1_S de 7,3 GB hasta Q6_K de 25,3 GB) y un comportamiento "uncensored" que lo hace interesante para investigacion sobre alineamiento, red-teaming y despliegues donde el filtrado por defecto resulta demasiado restrictivo. El repo incluye tanto quants estaticos (en repositorio aparte) como quants ponderados con imatrix (i1), que suelen ofrecer mejor relacion calidad/tamano que los estaticos equivalentes.
+La relevancia de esta ficha radica en que combina tres elementos: un modelo grande (31B) de una familia ampliamente utilizada, una modificacion de seguridad (remocion de rechazos) orientada a investigacion en seguridad de IA y red-teaming, y un empaquetado en GGUF con cuantizaciones i1 (imatrix) que permite ejecutarlo en hardware de consumo. El autor del modelo base, Richard J. Young, lo publica bajo acceso condicional (gated) con fines de investigacion en seguridad, mientras que las cuantizaciones de mradermacher se distribuyen bajo licencia Apache 2.0 segun los metadatos del repositorio.
 
-Conviene senalar desde el principio que se trata de un modelo en ingles, con licencia declarada Apache-2.0 en la model card aunque el enlace de licencia apunta a la licencia de Gemma 4 de Google, lo que genera cierta ambiguedad juridica que hay que revisar antes de un uso comercial. No se han publicado benchmarks propios en la informacion disponible.
+El modelo es de tipo vision (segun la model card de mradermacher, los ficheros `mmproj` estarian en el repositorio estatico), esta etiquetado como conversacional y soporta `endpoints_compatible`. La informacion disponible no detalla la arquitectura interna mas alla de ser un transformer de la familia Gemma 4, ni la longitud de contexto, ni los datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Gemma 4); detalles internos no disponibles |
-| Parametros totales | 30.697.345.596 (30,7 B) |
-| Parametros activos | no disponible (no consta que sea MoE) |
+| Arquitectura | Transformer (familia Gemma 4, segun nombre y modelo base; detalles no disponibles) |
+| Parametros totales | 30.697.345.596 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K (i1 con imatrix) |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 declarada; enlace a licencia de Gemma 4 de Google |
-| Formato de pesos | GGUF (quants i1 con imatrix); el modelo base en safetensors |
-| Vision | si, modelo multimodal (mmproj en el repositorio estatico) |
-| Tamano del repo | 334,8 GB |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, Q2_K_S, Q2_K, IQ3_XXS, IQ3_XS, IQ3_S, Q3_K_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, entre otras (tambien hay cuantizaciones estaticas en repositorio separado) |
+| Idiomas soportados | en (segun metadatos); no se documentan otros idiomas |
+| Licencia | apache-2.0 (metadatos del repo); el modelo base enlaza a la licencia de Gemma 4 de Google |
+| Formato de pesos | GGUF (cuantizaciones) y safetensors (modelo base) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es `richardyoung/gemma-4-31B-it-ARA-heretic`, una modificacion del Gemma 4 31B instruction-tuned de Google. La tecnica "heretic" implica abliteration: se identifican direcciones en el espacio de activaciones asociadas a comportamientos de rechazo y se proyectan fuera, de modo que el modelo deja de negarse a responder a ciertos prompts sin necesidad de reentrenar desde cero. El resultado es un modelo que conserva las capacidades del original pero con el filtrado de contenido suavizado o eliminado. No se dispone de informacion sobre el numero exacto de tokens de entrenamiento ni sobre la composicion del dataset de la variante heretic.
+No se dispone de informacion detallada sobre la arquitectura interna mas alla de que el modelo pertenece a la familia Gemma 4 en su variante de 31B instruction-tuned. El nombre indica que es un modelo "it" (instruction-tuned) y "heretic/abliterated", lo que implica que ha sido sometido a un proceso de abliteration para eliminar la direccion de activacion asociada al comportamiento de rechazo. No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO adicionales tras la modificacion.
 
-Esta publicacion concreta de mradermacher es una cuantizacion, no un entrenamiento: aplica cuantizacion con imatrix (i1) sobre el modelo base, generando una matriz de importancia a partir de datos de calibracion para preservar mejor los pesos relevantes en cada nivel de bits. Los quants i1 suelen batir a los estaticos de tamano similar en perplejidad. El autor indica que es un modelo de vision y que los ficheros mmproj, si existen, estan en el repositorio estatico. No se detalla la innovacion tecnica adicional mas alla de la abliteration y la cuantizacion imatrix.
+La innovacion tecnica destacable de esta publicacion es el empaquetado: mradermacher genera cuantizaciones i1 (imatrix) a partir del modelo base, incluyendo un fichero `imatrix.gguf` para que otros usuarios puedan crear sus propias cuantizaciones. El proceso se describe como "reproducible" en las etiquetas. Al ser un modelo de vision, los ficheros `mmproj` (proyector multimodal) se alojan en el repositorio estatico separado, no en este repositorio de cuantizaciones i1.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles, con modo instruction-tuned heredado de Gemma 4.
-- Razonamiento y respuesta a preguntas de caracter general.
-- Capacidad multimodal de vision (el modelo base es un modelo de vision; los mmproj estan en el repositorio estatico).
-- Comportamiento "uncensored"/abliterated: responde a prompts que el Gemma 4 original rechazaria.
-- Soporte de tool calling / function calling: no confirmado en la informacion disponible.
-- Soporte de agentes y razonamiento multi-paso: no confirmado explicitamente.
-- Capacidades multilingues: limitadas al ingles segun la model card.
-- Capacidad especial: al ser un modelo "heretic", es util para estudiar el comportamiento de modelos abliterated y para red-teaming.
+- Generacion de texto conversacional multi-turno (etiqueta `conversational`).
+- Capacidades de vision, segun la model card del cuantizador (ficheros `mmproj` en repositorio estatico).
+- Comportamiento "uncensored"/"decensored" por la abliteration: menor tendencia a rechazar peticiones.
+- Compatibilidad con endpoints (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras tipo TGI o endpoints gestionados.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues: solo se declara `en`; no se documentan otros idiomas.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y abliteration: comparar las respuestas del modelo heretic con las del Gemma 4 original para medir que capacidades se conservan y cuales se degradan tras eliminar los rechazos.
-- Red-teaming y evaluacion de seguridad: usar el modelo como generador de prompts y respuestas adversarias en pipelines de evaluacion de filtros y clasificadores de contenido.
-- Despliegue local en estaciones de trabajo con GPU consumer: los quants Q4_K_S (17,9 GB) y Q4_K_M (18,8 GB) caben en GPUs de 24 GB como la RTX 4090, permitiendo inferencia local de un modelo de 31B sin depender de la nube.
-- Prototipado rapido de asistentes conversacionales en ingles: el quant Q4_K_M ofrece un equilibrio razonable entre calidad y velocidad para iterar sobre prompts y flujos conversacionales.
-- Analisis de documentos e imagenes en entornos controlados: al ser un modelo de vision, puede procesar capturas o figuras junto con texto, siempre que se carguen los mmproj del repositorio estatico.
-- Experimentacion con cuantizaciones extremas: los quants IQ1_S (7,3 GB) e IQ2_XXS (8,8 GB) permiten ejecutar el modelo en GPUs de 8-12 GB, utiles para estudiar la degradacion de calidad en regimenes de muy baja precision.
-- Generacion de contenido creativo sin filtros: para proyectos editoriales o de ficcion donde el filtrado por defecto resulta limitante, con la advertencia de que el contenido generado no esta moderado.
+- Investigacion en seguridad de IA: el modelo esta pensado explicitamente para estudiar comportamiento de rechazo, alineacion y robustez frente a prompts adversarios. Su naturaleza abliterated permite analizar que informacion se filtra o se genera cuando se elimina la capa de rechazo.
+- Red-teaming y evaluacion de salvaguardas: util para construir suites de pruebas que midan la eficacia de filtros externos (guardrails) sobre un modelo que no rechaza por si mismo.
+- Experimentacion local en hardware de consumo: las cuantizaciones i1 de 7-18 GB permiten ejecutar un modelo de 31B en GPUs consumer (por ejemplo, RTX 4090 con 24 GB) usando llama.cpp u Ollama, algo inviable con los pesos completos en fp16.
+- Docencia y cursos sobre cuantizacion: el repositorio incluye un fichero imatrix y multiples niveles de cuantizacion, lo que lo convierte en un caso practico para explicar el impacto de la cuantizacion en calidad y tamano.
+- Evaluacion comparativa de tecnicas de abliteration: al existir un repositorio estatico paralelo con cuantizaciones no-i1, se pueden comparar efectos de distintos esquemas de cuantizacion sobre el mismo modelo modificado.
+- Prototipado de asistentes conversacionales sin restricciones para entornos controlados: en laboratorios o entornos de prueba cerrados, sirve para explorar respuestas sin la capa de rechazo del modelo original, siempre con las salvaguardas externas adecuadas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni metricas equivalentes, ni comparaciones con el Gemma 4 original o con otros modelos de 31B.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos + overhead de contexto): aproximadamente el tamano del fichero GGUF mas un margen de 1-3 GB para KV cache y buffers.
-  - IQ1_S (7,3 GB): ~9-10 GB de VRAM.
-  - IQ2_M (11,0 GB): ~13-14 GB.
-  - IQ3_M (14,5 GB): ~16-17 GB.
-  - Q4_K_M (18,8 GB): ~21-23 GB.
-  - Q5_K_M (21,9 GB): ~24-26 GB.
-  - Q6_K (25,3 GB): ~28-30 GB.
+- VRAM estimada para inferencia (aproximada, segun tamano de fichero GGUF):
+  - i1-IQ1_S / IQ1_M: ~7,3-7,8 GB.
+  - i1-IQ2_XXS a IQ2_M: ~8,8-11,0 GB.
+  - i1-Q2_K / IQ3_XXS a IQ3_M: ~12,0-14,5 GB.
+  - i1-Q3_K_M a IQ4_XS: ~15,4-16,8 GB.
+  - i1-Q4_K_S / Q4_K_M: ~17,9 GB en adelante (Q4_K_M no aparece en el fragmento, pero el listado de quants lo incluye).
+  - i1-Q5_K_S / Q5_K_M / Q6_K: no disponibles en el fragmento; seran superiores a Q4.
 - GPU recomendadas:
-  - RTX 4090 (24 GB): Q4_K_M y Q4_K_S comodos; Q5_K_M al limite.
-  - RTX 3090 (24 GB): mismo perfil que la 4090 con menor throughput.
-  - A100 40 GB / H100 80 GB: Q6_K y margen amplio para contexto largo.
-  - GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS.
-- Cabe en GPU consumer: si, en la mayoria de GPUs modernas con 12 GB o mas, usando quants bajos; con 24 GB se accede a Q4/Q5.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, y servidores compatibles con GGUF (el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo TGI/OpenAI). vLLM soporta GGUF de forma experimental; para maxima compatibilidad, llama.cpp es la opcion natural.
+  - Cuantizaciones IQ1-IQ2: caben en GPUs de 12-16 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 Ti Super 16 GB).
+  - Cuantizaciones IQ3-IQ4: requieren 16-24 GB (RTX 4090, RTX 4080, A5000).
+  - Cuantizaciones Q5-Q6: recomendable 24 GB o mas (RTX 4090, A6000, A100).
+- Cabe en GPU consumer: si, en la mayoria de cuantizaciones i1 hasta IQ4_XS en tarjetas de 24 GB; las IQ1-IQ2 en tarjetas de 12-16 GB.
+- Opciones de despliegue: llama.cpp, Ollama (a partir de GGUF), y endpoints compatibles (etiqueta `endpoints_compatible`); para el modelo base en safetensors, transformers/vLLM/TGI.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| gemma-4-31B-it-ARA-heretic-i1-GGUF (este) | 30,7 B | no disponible | Apache-2.0 (con enlace a licencia Gemma 4) | GGUF i1 | Vision, heretic, solo ingles |
-| richardyoung/gemma-4-31B-it-ARA-heretic | 30,7 B | no disponible | no disponible | safetensors | Modelo base sin cuantizar |
-| Gemma 4 31B it (original de Google) | ~31 B | no disponible | licencia Gemma 4 | safetensors | Version alineada, con filtrado de contenido |
-| mradermacher/gemma-4-31B-it-ARA-heretic-GGUF | 30,7 B | no disponible | Apache-2.0 | GGUF estatico | Variante sin imatrix, incluye mmproj de vision |
+| gemma-4-31B-it-ARA-heretic-i1-GGUF (este) | 30,7B | no disponible | apache-2.0 (metadatos) | GGUF i1 | Abliterated, vision, cuantizaciones imatrix |
+| richardyoung/gemma-4-31B-it-ARA-heretic | 30,7B | no disponible | apache-2.0 / Gemma 4 license | safetensors | Modelo base gated, acceso condicional |
+| mradermacher/gemma-4-31B-it-ARA-heretic-GGUF | 30,7B | no disponible | apache-2.0 | GGUF estatico | Mismas cuantizaciones sin imatrix; incluye mmproj |
+| Gemma 4 31B it (original de Google) | ~31B | no disponible | Gemma 4 license | safetensors | Modelo sin abliteration; rechaza peticiones daninas |
 
-La comparativa con otros modelos de 31B abliterated de otras familias no se puede completar con rigor porque la informacion proporcionada no incluye datos de rendimiento ni de contexto de alternativas.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo "uncensored"/abliterated: no aplica el filtrado de seguridad del Gemma 4 original; puede generar contenido danino, ofensivo o ilegal. No apto para aplicaciones de cara al publico sin moderacion adicional.
-- Riesgo de alucinacion: como cualquier LLM, puede inventar hechos, citas y datos; la abliteration no corrige este problema y puede agravarlo en dominios sensibles.
-- Idiomas: solo ingles declarado; el rendimiento en castellano no esta garantizado y probablemente sea inferior.
-- Contexto: no se ha publicado la longitud de contexto; no asumir ventanas largas sin verificarlo con el modelo base.
-- Licencia: la model card declara Apache-2.0 pero enlaza a la licencia de Gemma 4 de Google, que impone restricciones de uso comercial y de redistribucion. Hay que revisar ambos documentos antes de un despliegue comercial; la ambiguedad es un riesgo juridico real.
-- Calidad en quants bajos: IQ1_S e IQ2_XXS degradan notablemente la calidad; el propio autor los etiqueta como "for the desperate" y "mostly desperate".
-- Vision: los ficheros mmproj no estan en este repositorio i1, sino en el estatico; hay que descargarlos aparte para usar la capacidad multimodal.
-- Reproducibilidad: el autor etiqueta el modelo como reproducible, pero no se detalla el dataset de calibracion del imatrix ni el proceso exacto de abliteration del modelo base.
-- Solo 2 likes y 19.999 descargas en el momento de la ficha: comunidad pequena, poca validacion externa.
+- Modelo abliterated/uncensored: la eliminacion del comportamiento de rechazo puede aumentar la probabilidad de generar contenido danino, ilegal o sesgado. No es adecuado para produccion sin guardrails externos.
+- Acceso condicional en el modelo base: el repositorio original de Richard J. Young es gated y requiere aceptar terminos de uso responsable; las cuantizaciones de mradermacher no heredan automaticamente esa restriccion en los metadatos, pero el uso etico sigue siendo responsabilidad del usuario.
+- Riesgo de alucinacion: no se documentan evaluaciones de fidelidad; como modelo de 31B sin benchmarks publicados en esta ficha, el riesgo es desconocido pero probable.
+- Limitaciones de idioma: solo se declara `en`; el rendimiento en castellano no esta documentado y podria degradarse.
+- Limitaciones de contexto: la longitud de contexto no esta disponible en la informacion proporcionada.
+- Licencia: los metadatos indican apache-2.0, pero el modelo base enlaza a la licencia de Gemma 4 de Google, que puede imponer restricciones adicionales de uso comercial. Verificar antes de desplegar en produccion.
+- Calidad de cuantizaciones extremas: las IQ1 e IQ2 estan marcadas por el propio autor como "for the desperate" o "mostly desperate"; no usar en produccion.
+- Vision: los ficheros mmproj no estan en este repositorio i1, sino en el estatico; hay que descargarlos por separado para usar la multimodalidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31B-it-ARA-heretic-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/gemma-4-31B-it-ARA-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/richardyoung/gemma-4-31B-it-ARA-heretic
-- Quants estaticos (incluye mmproj): https://huggingface.co/mradermacher/gemma-4-31B-it-ARA-heretic-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#gemma-4-31B-it-ARA-heretic-i1-GGUF
+- Repositorio de cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/gemma-4-31B-it-ARA-heretic-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#gemma-4-31B-it-ARA-heretic-i1-GGUF
+- CV del autor del modelo base: https://cv.deepneuro.ai
+- Perfil del autor del modelo base: https://huggingface.co/richardyoung
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Guia de uso de GGUF (referencia TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de perplejidad de quants (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizacion: https://gist.github.com/Artefact2/ (enlace truncado en la model card)
+- README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

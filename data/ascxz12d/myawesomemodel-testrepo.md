@@ -2,126 +2,109 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASCXZ12D bajo el identificador ASCXZ12D/MyAwesomeModel-TestRepo. La model card se presenta como una actualizacion de version de un modelo anterior, con mejoras centradas en profundidad de razonamiento, reduccion de alucinaciones y soporte de function calling. El propio nombre del repositorio ("TestRepo") y el hecho de que el peso total del repositorio sea de 0.0 GB apuntan a un repositorio de prueba o de demostracion mas que a una publicacion de pesos reales.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario ASCXZ12D bajo el identificador `ASCXZ12D/MyAwesomeModel-TestRepo`. La model card lo presenta como una actualización de una versión anterior con mejoras en razonamiento, reducción de alucinaciones y soporte ampliado de function calling. Sin embargo, el repositorio tiene un tamaño de 0,0 GB, lo que indica que no contiene pesos reales, y el nombre "TestRepo" sugiere que se trata de un repositorio de prueba o una plantilla de model card más que de un modelo distribuible.
 
-La informacion tecnica disponible es muy limitada. Las etiquetas de Hugging Face indican `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en BERT y orientada a extraccion de caracteristicas, en contradiccion con la model card, que describe un asistente conversacional con razonamiento, generacion de codigo y function calling. No se especifican parametros totales, longitud de contexto, idiomas soportados ni formato de pesos.
+La información disponible es internamente contradictoria: los tags de Hugging Face lo clasifican como `bert` con pipeline `feature-extraction`, mientras que la model card describe un modelo generativo conversacional con razonamiento profundo, modo thinking y capacidades de búsqueda web. No se especifican parámetros totales, longitud de contexto, arquitectura concreta ni composición del dataset de entrenamiento. Los benchmarks presentados en la model card usan nombres genéricos ("Model1", "Model2") y métricas sin identificar (Math Reasoning, Logical Reasoning, etc.), por lo que no son verificables ni comparables con estándares públicos.
 
-La relevancia actual del modelo es dudosa: cuenta con 0 descargas y 0 likes, el repositorio no contiene pesos, los benchmarks publicados emplean categorias genericas (Model1, Model2, Model1-v2) sin identificar los conjuntos de evaluacion, y los unicos enlaces de la busqueda web corresponden a paginas corporativas de Microsoft sin relacion con el modelo. Se recomienda tratarlo como un artefacto de prueba.
+Por todo ello, esta ficha debe interpretarse como una descripción de lo que el autor declara en la model card, no como una evaluación de un artefacto reproducible. Cualquier uso en producción requeriría verificar primero la existencia real de pesos, la arquitectura y el tokenizador.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta de Hugging Face indica `bert`; la model card no describe la arquitectura |
-| Parametros totales | No disponible |
-| Longitud de contexto | No disponible |
-| Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (el campo de idiomas de Hugging Face esta vacio) |
+| Arquitectura | no disponible (los tags indican `bert`; la model card describe un modelo generativo conversacional, sin especificar familia) |
+| Parametros totales | no disponible |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | No disponible. El repositorio tiene un tamano de 0.0 GB, por lo que no contiene pesos publicados |
-| Autor | ASCXZ12D |
-| Libreria | transformers |
-| Pipeline declarado | feature-extraction |
-| Etiquetas | transformers, pytorch, bert, feature-extraction, license:mit, endpoints_compatible, region:us |
-| Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-14 |
-| Fecha de actualizacion | 2026-09-14 |
+| Formato de pesos | no disponible (el repositorio ocupa 0,0 GB; no se listan ficheros de pesos) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La etiqueta `bert` de Hugging Face sugiere un transformer encoder de tipo BERT, y la etiqueta `feature-extraction` apunta a un uso como extractor de representaciones. Sin embargo, la model card describe capacidades de razonamiento, generacion de codigo y function calling, propias de modelos decoder-only. Esta discrepancia no se resuelve con los datos disponibles.
+La model card no detalla la arquitectura interna del modelo. Menciona que la versión actual mejora su "profundidad de razonamiento y capacidades de inferencia" mediante "mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento", lo que sugiere un pipeline de post-entrenamiento con RL o ajuste por preferencias, aunque no se confirma RLHF ni DPO de forma explícita. Tampoco se especifica el número de tokens de entrenamiento, la composición del dataset ni si se emplearon datos sintéticos.
 
-Tampoco se detallan datos de entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras. La model card menciona de forma generica un "aumento de recursos computacionales" y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, ademas de un mayor uso de tokens de pensamiento en la fase de inferencia (de 12K a 23K tokens por pregunta en el conjunto AIME), pero sin especificar metodologia ni arquitectura subyacente. No se describe ninguna innovacion tecnica concreta (atencion lineal, decodificacion especulativa, MoE, SSM, etc.).
+El único dato técnico concreto es de comportamiento en inferencia: en el conjunto AIME 2025 el modelo habría pasado de un 70 % de precisión en la versión anterior a un 87,5 % en la actual, con un aumento del consumo medio de tokens por pregunta de 12K a 23K. Es decir, la mejora se atribuye a un razonamiento más extenso (más tokens de "thinking") más que a un cambio arquitectónico declarado. No se documentan innovaciones como decodificación especulativa, atención lineal o arquitecturas híbridas.
 
 ## Capacidades
 
-La model card atribuye al modelo las siguientes capacidades, sin datos verificables que las respalden:
-
-- Razonamiento matematico y logico, con una supuesta mejora en profundidad de razonamiento respecto a una version anterior.
-- Generacion de codigo.
-- Soporte de function calling, presentado como mejorado respecto a versiones previas.
-- Reduccion de la tasa de alucinacion, segun la model card.
-- Soporte de system prompt, con recomendacion de incluir la fecha actual.
-- Plantillas especificas para carga de ficheros y para generacion aumentada con resultados de busqueda web, con formato de citas `[citation:X]`.
-- Parametro de temperatura recomendado de 0.6.
-- Se menciona una variante "MyAwesomeModel-Small" con la misma arquitectura que su modelo base y el mismo tokenizador que el modelo principal.
-
-No se documentan capacidades de vision, audio ni soporte multilingue explicito.
+- Generación de texto conversacional multi-turno, según la model card.
+- Razonamiento matemático y lógico reforzado mediante cadenas de pensamiento más largas.
+- Generación de código (la tabla de benchmarks incluye "Code Generation").
+- Soporte de function calling, que la model card describe como "enhanced" respecto a la versión previa.
+- Soporte de system prompt con fecha actual, recomendado por el autor.
+- Plantillas específicas para carga de ficheros (file uploading) y generación aumentada con búsqueda web, con formato de citas `[citation:X]`.
+- Reducción declarada de la tasa de alucinación respecto a la versión anterior (sin métrica concreta).
+- Capacidades multilingües: no confirmadas; la model card solo ofrece plantillas en inglés.
 
 ## Casos de uso
 
-Los siguientes casos son hipoteticos y se derivan unicamente de las afirmaciones de la model card; dado que el repositorio no contiene pesos, no pueden validarse:
-
-- Asistente conversacional con razonamiento multi-paso: la model card indica soporte de system prompt y de patrones de pensamiento prolongado, de modo que el modelo podria emplearse en tareas de resolucion de problemas que requieran cadenas de razonamiento largas, asumiendo un coste de inferencia elevado por el uso de decenas de miles de tokens por consulta.
-- Generacion de codigo asistida: segun la model card, el modelo obtiene 0.650 en la categoria generica "Code Generation", lo que lo situaria ligeramente por encima de los comparadores anonimizados; podria integrarse en asistentes de programacion, siempre que se disponga de los pesos.
-- Function calling en pipelines de automatizacion: la model card menciona soporte mejorado de llamada a funciones, lo que permitiria conectar el modelo con APIs externas en flujos de agentes.
-- Generacion aumentada por recuperacion (RAG) con busqueda web: la model card incluye una plantilla que formatea los resultados de busqueda con marcadores `[webpage X begin]` y exige citas en formato `[citation:X]`, pensada para respuestas trazables.
-- Procesamiento de documentos subidos por el usuario: existe una plantilla que inserta `{file_name}`, `{file_content}` y `{question}`, orientada a tareas de pregunta-respuesta sobre documentos.
-- Analisis de sentimiento y clasificacion de texto: la model card reporta 0.792 en "Sentiment Analysis" y 0.828 en "Text Classification", lo que apuntaria a tareas de clasificacion, si bien la etiqueta `feature-extraction` sugiriria un uso como encoder mas que como generador.
-- Extraccion de caracteristicas para downstream: segun la etiqueta de Hugging Face, el uso previsto podria ser generar embeddings con un encoder tipo BERT para alimentar clasificadores o sistemas de recuperacion.
+- Asistente conversacional con contexto de fecha: el modelo acepta un system prompt con la fecha actual, lo que permite respuestas temporales coherentes en aplicaciones de atención al cliente o asistentes personales, siempre que se verifique previamente la disponibilidad real de pesos.
+- Razonamiento matemático asistido: dado el énfasis en AIME y en cadenas de pensamiento largas (23K tokens por pregunta), encajaría en herramientas de tutoría o verificación de cálculos, aceptando un coste de latencia alto por consulta.
+- Generación de código en pipelines de desarrollo: la model card declara soporte de code generation y function calling, lo que permitiría integrarlo como asistente en IDE o en revisión automatizada de parches, sujeto a validación empírica.
+- Respuestas aumentadas con búsqueda web: las plantillas incluidas para citar resultados (`[citation:X]`) permiten construir un motor de respuesta documental con trazabilidad de fuentes.
+- Procesamiento de documentos subidos: la plantilla `file_template` con `{file_name}`, `{file_content}` y `{question}` facilita casos de sumarización y Q&A sobre ficheros adjuntos.
+- Clasificación y extracción de sentimiento: la tabla de benchmarks incluye text classification y sentiment analysis con valores cercanos a 0,79-0,83, lo que sugiere uso en analítica de opiniones, aunque sin datos verificables.
+- Traducción automática: la model card reporta 0,804 en "Translation", lo que permitiría evaluar su uso en localización de contenidos, previa comprobación de los idiomas realmente soportados.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de resultados, pero las categorias son genericas y los comparadores aparecen anonimizados (Model1, Model2, Model1-v2). No se identifica ningun benchmark estandar (MMLU, HumanEval, GSM8K, etc.) ni la metodologia de evaluacion. Los valores son los siguientes, tal y como aparecen en la model card:
+Resultados declarados en la model card (métricas no identificadas; los nombres de modelos comparados son genéricos):
 
 | Categoria | Benchmark | Model1 | Model2 | Model1-v2 | MyAwesomeModel |
 |---|---|---|---|---|---|
-| Core Reasoning Tasks | Math Reasoning | 0.510 | 0.535 | 0.521 | 0.550 |
-| Core Reasoning Tasks | Logical Reasoning | 0.789 | 0.801 | 0.810 | 0.819 |
-| Core Reasoning Tasks | Common Sense | 0.716 | 0.702 | 0.725 | 0.736 |
-| Language Understanding | Reading Comprehension | 0.671 | 0.685 | 0.690 | 0.700 |
-| Language Understanding | Question Answering | 0.582 | 0.599 | 0.601 | 0.607 |
-| Language Understanding | Text Classification | 0.803 | 0.811 | 0.820 | 0.828 |
-| Language Understanding | Sentiment Analysis | 0.777 | 0.781 | 0.790 | 0.792 |
-| Generation Tasks | Code Generation | 0.615 | 0.631 | 0.640 | 0.650 |
-| Generation Tasks | Creative Writing | 0.588 | 0.579 | 0.601 | 0.610 |
-| Generation Tasks | Dialogue Generation | 0.621 | 0.635 | 0.639 | 0.644 |
-| Generation Tasks | Summarization | 0.745 | 0.755 | 0.760 | 0.767 |
-| Specialized Capabilities | Translation | 0.782 | 0.799 | 0.801 | 0.804 |
-| Specialized Capabilities | Knowledge Retrieval | 0.651 | 0.668 | 0.670 | 0.676 |
-| Specialized Capabilities | Instruction Following | 0.733 | 0.749 | 0.751 | 0.758 |
-| Specialized Capabilities | Safety Evaluation | 0.718 | 0.701 | 0.725 | 0.739 |
+| Razonamiento | Math Reasoning | 0,510 | 0,535 | 0,521 | 0,550 |
+| Razonamiento | Logical Reasoning | 0,789 | 0,801 | 0,810 | 0,819 |
+| Razonamiento | Common Sense | 0,716 | 0,702 | 0,725 | 0,736 |
+| Lenguaje | Reading Comprehension | 0,671 | 0,685 | 0,690 | 0,700 |
+| Lenguaje | Question Answering | 0,582 | 0,599 | 0,601 | 0,607 |
+| Lenguaje | Text Classification | 0,803 | 0,811 | 0,820 | 0,828 |
+| Lenguaje | Sentiment Analysis | 0,777 | 0,781 | 0,790 | 0,792 |
+| Generacion | Code Generation | 0,615 | 0,631 | 0,640 | 0,650 |
+| Generacion | Creative Writing | 0,588 | 0,579 | 0,601 | 0,610 |
+| Generacion | Dialogue Generation | 0,621 | 0,635 | 0,639 | 0,644 |
+| Generacion | Summarization | 0,745 | 0,755 | 0,760 | 0,767 |
+| Especializado | Translation | 0,782 | 0,799 | 0,801 | 0,804 |
+| Especializado | Knowledge Retrieval | 0,651 | 0,668 | 0,670 | 0,676 |
+| Especializado | Instruction Following | 0,733 | 0,749 | 0,751 | 0,758 |
+| Especializado | Safety Evaluation | 0,718 | 0,701 | 0,725 | 0,739 |
 
-Ademas, la model card afirma que la precision en AIME 2025 paso del 70 % en la version anterior al 87,5 % en la actual, con un consumo medio de tokens por pregunta que sube de 12K a 23K. No se aporta el numero de preguntas evaluadas, el prompt utilizado ni el metodo de correccion, por lo que estas cifras no son reproducibles con la informacion disponible.
+Dato adicional declarado: precisión en AIME 2025 del 87,5 % (frente al 70 % de la versión anterior). No se han publicado resultados en benchmarks estándar identificables (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-No se han publicado requisitos de hardware en la informacion disponible. Dado que el repositorio tiene un tamano de 0.0 GB y no contiene pesos, no es posible estimar VRAM, latencia ni throughput.
-
-- VRAM estimada para inferencia: no disponible (se desconoce el numero de parametros y la cuantizacion).
+- VRAM estimada: no disponible; al no conocerse el número de parámetros ni existir pesos en el repositorio, no puede calcularse.
 - GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la model card remite a un repositorio de codigo externo que no se enlaza; la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay confirmacion.
-- Latencia y throughput: no disponibles. El dato de 23K tokens por pregunta en AIME 2025 implicaria una latencia alta y un coste de computo considerable en tareas de razonamiento, aunque no se aportan mediciones.
+- Compatibilidad con GPU de consumo: no determinable.
+- Opciones de despliegue: la librería declarada es `transformers` (PyTorch); no se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. El único indicio indirecto es el elevado consumo de tokens por consulta en tareas de razonamiento (media de 23K tokens en AIME), que implicaría latencias altas en cualquier despliegue.
 
 ## Comparativa con modelos similares
 
-No disponible. La model card compara el modelo con tres referencias anonimizadas (Model1, Model2 y Model1-v2) sin identificar nombres, tamanos, contextos ni licencias, por lo que no es posible establecer una comparativa verificable con alternativas reales.
+No es posible establecer una comparativa fiable: la model card emplea etiquetas genéricas ("Model1", "Model2", "Model1-v2") sin identificar los modelos de referencia, y no se dispone de parámetros, contexto ni licencia de los mismos. Además, el repositorio no contiene pesos que permitan una evaluación independiente.
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| MyAwesomeModel | No disponible | No disponible | Valores de la tabla de la model card (comparadores anonimizados) | MIT | Repositorio sin pesos (0.0 GB) |
-| Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos |
+|---|---|---|---|---|
+| MyAwesomeModel | no disponible | no disponible | MIT | no (repo de 0,0 GB) |
+| Model1 (referencia de la model card) | no disponible | no disponible | no disponible | no disponible |
+| Model2 (referencia de la model card) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El repositorio tiene un tamano de 0.0 GB y no contiene pesos, por lo que el modelo no se puede ejecutar a partir de esta publicacion.
-- Contradiccion entre las etiquetas de Hugging Face (`bert`, `feature-extraction`) y la model card (razonamiento, generacion, function calling): no se puede determinar que tipo de modelo es realmente.
-- Los benchmarks de la model card no identifican los conjuntos de evaluacion ni los comparadores (Model1, Model2, Model1-v2), por lo que sus cifras no son verificables ni reproducibles.
-- El dato de AIME 2025 (87,5 %) no incluye numero de muestras, prompt ni criterio de correccion.
-- Ausencia total de informacion sobre sesgos, composicion del dataset de entrenamiento y filtros de seguridad aplicados.
-- La model card afirma una reduccion de alucinaciones sin aportar metricas ni metodologia de medicion.
-- No hay informacion sobre idiomas soportados; el campo de idiomas esta vacio, por lo que el comportamiento multilingue es desconocido.
-- No se detalla la longitud de contexto, un parametro critico para casos de uso con documentos largos o conversaciones multi-turno.
-- Aunque la licencia es MIT (permisiva y apta para uso comercial), al no existir pesos publicados no hay un artefacto sobre el que ejercer dicha licencia.
-- Las fechas de creacion y actualizacion (2026-09-14) son posteriores a la fecha habitual de consulta y coherentes con un repositorio de prueba sin mantenimiento posterior.
-- Los unicos resultados de la busqueda web corresponden a paginas corporativas de Microsoft y no guardan relacion con el modelo, por lo que no aportan contexto adicional.
-- La model card menciona una web oficial, un repositorio de codigo y una variante "Small" sin proporcionar enlaces ni identificadores.
-- No debe utilizarse en produccion sin una validacion independiente de sus capacidades reales.
+- El repositorio tiene un tamaño de 0,0 GB y el nombre "TestRepo": no hay evidencia de que contenga pesos utilizables. Cualquier intento de descarga o despliegue debe verificarse antes.
+- Contradicción entre los tags de Hugging Face (`bert`, `feature-extraction`) y la model card (modelo generativo conversacional con razonamiento). No puede determinarse la tarea real del artefacto.
+- Los benchmarks de la model card no identifican las métricas ni los modelos comparados, por lo que no son reproducibles ni auditables.
+- No se especifican idiomas soportados; las plantillas de prompt están solo en inglés.
+- No se detalla el dataset de entrenamiento, lo que impide evaluar sesgos conocidos.
+- El autor declara una reducción de alucinaciones, pero sin métrica ni metodología de evaluación; debe tratarse como una afirmación no verificada.
+- El consumo de 23K tokens por pregunta en razonamiento implica costes computacionales y de latencia elevados en producción.
+- La licencia MIT permite uso comercial, pero al no existir artefacto verificable la licencia es, en la práctica, inaplicable hasta que se publique el modelo real.
+- No se documentan restricciones de uso aceptable más allá de la licencia MIT.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/ASCXZ12D/MyAwesomeModel-TestRepo
-- Repositorio de codigo, web oficial y variante MyAwesomeModel-Small: mencionados en la model card sin URL disponible.
-- Paper, blog o demo adicionales: no disponibles.
-- Resultados de busqueda web: no relevantes (paginas corporativas de Microsoft).
+- Repositorio de código: mencionado en la model card ("our code repository") pero sin URL disponible.
+- Web oficial / chat / API: mencionada en la model card ("our official website") pero sin URL disponible.
+- Paper técnico: no disponible.

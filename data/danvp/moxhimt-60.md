@@ -2,71 +2,87 @@
 
 ## Resumen
 
-MoxhiMT-60 es un modelo de traducción automática neuronal (NMT) especializado en el par chino-vietnamita, desarrollado por DanVP y publicado en Hugging Face bajo licencia Apache 2.0. Está diseñado específicamente para traducir texto de novelas web y ficción del género xianxia (cultivo inmortal), un nicho con terminología propia que los traductores automáticos genéricos suelen manejar mal. El modelo sigue la arquitectura Marian seq2seq con 8 capas de encoder y 2 de decoder, y cuenta con aproximadamente 57 millones de parámetros.
+MoxhiMT-60 es un modelo de traducción automática chino-vietnamita desarrollado por DanVP, construido sobre una arquitectura Marian seq2seq. Con aproximadamente 56,4 millones de parámetros, está específicamente ajustado para texto de novela web y ficción xianxia, un nicho con terminología propia (cultivo, sectas, rangos de cultivación) que los modelos de traducción generalistas suelen tratar de forma inconsistente.
 
-El modelo se distribuye en formato safetensors y también incluye una versión convertida a CTranslate2 con cuantización INT8 para acelerar la inferencia en CPU. Está pensado para uso local o en servidor, y su tamaño compacto lo hace viable en hardware modesto. Se trata de un lanzamiento experimental: el propio autor recomienda revisar las salidas antes de usarlo en contextos de alta exigencia o publicación.
+El modelo se entrena desde cero con un tokenizador SentencePiece-BPE conjunto chino-vietnamita de 24.000 entradas, lo que evita los problemas de tokenización cruzada entre dos sistemas de escritura muy distintos. Es una release experimental orientada a inferencia local o en servidor, con un build CTranslate2 INT8 incluido para acelerar la inferencia en CPU.
+
+Su relevancia actual radica en la combinación de tamaño reducido (0,3 GB de repositorio), licencia Apache 2.0 permisiva y especialización en un dominio concreto. No compite con modelos de traducción de gran escala en cobertura general, sino que ofrece una alternativa ligera y desplegable en hardware modesto para un caso de uso muy específico.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Marian seq2seq (8 encoder + 2 decoder layers) |
+| Arquitectura | Marian seq2seq (8 capas de encoder, 2 de decoder) |
 | Parametros totales | 56.397.120 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no especificada; sugerencia de decodificacion: max_length=512 |
-| Tipos de cuantizacion | INT8 (CTranslate2, incluido en el repo) |
-| Idiomas soportados | chino (zh), vietnamita (vi) |
+| Longitud de contexto | 512 tokens (max_length sugerido en generación y truncación) |
+| Tipos de cuantizacion | INT8 mediante build CTranslate2 incluido en `ct2-int8/`; pesos originales en safetensors |
+| Idiomas soportados | chino (zh) y vietnamita (vi) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, CTranslate2 (ct2-int8) |
+| Formato de pesos | safetensors (transformers) y CTranslate2 INT8 |
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura Marian seq2seq clásica, con 8 capas en el encoder y 2 en el decoder, una dimensión de modelo de 576 y una capa feed-forward de 2304. El tokenizador es SentencePiece con BPE, entrenado conjuntamente sobre chino y vietnamita con un vocabulario de 24.000 subpalabras. Según la model card, el modelo fue entrenado desde cero (no es un fine-tuning de un modelo preexistente) con un tokenizador propio. No se proporcionan detalles sobre el volumen de datos de entrenamiento, la composición del corpus ni si se aplicaron técnicas como RLHF o DPO. La especialización en terminología xianxia sugiere que el corpus de entrenamiento incluye una proporción significativa de novelas web de ese género.
+El modelo sigue la arquitectura Marian, un transformer encoder-decoder diseñado originalmente para traducción automática. La configuración indicada por el autor es de 8 capas de encoder y 2 de decoder, con dimensión de modelo (d_model) de 576 y dimensión de feed-forward de 2.304. Esta asimetría entre encoder y decoder es habitual en Marian para priorizar la comprensión del texto fuente manteniendo un decoder ligero.
+
+El tokenizador es un SentencePiece-BPE conjunto para chino y vietnamita con vocabulario de 24.000 entradas, entrenado específicamente para este par de idiomas. El autor indica que el modelo se entrenó desde cero, si bien no se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detallan innovaciones técnicas adicionales como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
-- Traducción automática de chino a vietnamita, con especial énfasis en terminología de xianxia y cultivo (niveles de cultivo, técnicas, artefactos, sectas, etc.).
-- Generación de texto condicionada por el contexto de entrada, con soporte para secuencias de hasta 512 tokens (recomendado).
-- Inferencia local en CPU o GPU, con opción de aceleración mediante CTranslate2 en INT8.
-- Integración sencilla con la librería Transformers de Hugging Face mediante `AutoModelForSeq2SeqLM`.
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni multimodalidad; es un modelo puramente de traducción.
+- Traducción de texto chino a vietnamita en la dirección zh-vi.
+- Especialización en terminología xianxia y de novelas de cultivación, priorizada explícitamente por el autor.
+- Generación de texto seq2seq estándar mediante `generate` con beam search (se sugiere `num_beams=4`).
+- Inferencia en CPU acelerada mediante el build CTranslate2 INT8 incluido.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso ni modos de pensamiento.
+- No se documentan capacidades de visión, audio ni multimodalidad.
+- Cobertura multilingüe limitada a los dos idiomas del par (chino y vietnamita).
 
 ## Casos de uso
 
-- Traducción de novelas web chinas (xianxia, wuxia, fantasy) al vietnamita: el modelo está afinado para este género, por lo que puede producir traducciones más fieles en terminología que un traductor genérico. Se usaría con el pipeline de Transformers o CTranslate2 para procesar capítulos completos.
-- Localización de contenido literario para plataformas de lectura: editoriales o agregadores de contenido pueden integrar el modelo en un flujo de traducción masiva, con revisión humana posterior.
-- Traducción de diálogos y narrativa en juegos o cómics: el tamaño compacto permite ejecutarlo en servidores modestos o incluso en equipos de desarrollo para generar borradores de traducción.
-- Asistencia a traductores humanos: como herramienta de pre-traducción o sugerencia, el modelo puede acelerar el trabajo de traductores profesionales que luego corrigen el resultado.
-- Investigación en NMT de bajo recurso: el par zh-vi no tiene tantos recursos como otros, y este modelo sirve como referencia para estudiar el impacto de la especialización por dominio en modelos pequeños.
-- Despliegue en entornos sin GPU: gracias a la versión CTranslate2 INT8, es viable ejecutar el modelo en CPU para aplicaciones de traducción en tiempo real o por lotes con latencia aceptable.
+- Traducción de novelas web xianxia: el modelo está ajustado para terminología de cultivación y ficción china, por lo que se usaría como motor de traducción por capítulos, con revisión humana posterior dada la naturaleza experimental de la release.
+- Localización de contenido de ficción para plataformas de lectura: integrable en un pipeline que procese texto chino y genere borradores en vietnamita para editores, reduciendo el coste inicial de traducción manual.
+- Inferencia en servidor con CPU: gracias al build CTranslate2 INT8, puede desplegarse en servidores sin GPU para volúmenes moderados de traducción por lotes.
+- Traducción en dispositivos de recursos limitados: con 56 millones de parámetros y 0,3 GB de repositorio, cabe en entornos con poca memoria y puede ejecutarse en local.
+- Prototipado y experimentación en traducción automática: útil como base ligera para investigadores que quieran estudiar traducción zh-vi o ajustar el modelo a otros dominios.
+- Preprocesamiento de corpus bilingües: puede emplearse para generar traducciones preliminares en la construcción de datasets zh-vi que luego se filtren o corrijan manualmente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye métricas como BLEU, chrF o comparaciones con otros sistemas de traducción zh-vi. Tampoco se documentan mediciones de latencia o throughput.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al tratarse de un modelo de ~57M parámetros, la versión en fp32 ocupa aproximadamente 225 MB en memoria. Con cuantización INT8, el peso se reduce a unos 57 MB, por lo que puede ejecutarse en CPU con menos de 1 GB de RAM adicional.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, o incluso integradas con soporte CUDA). No requiere GPUs de datacenter.
-- Compatibilidad con hardware de consumo: sí, cabe en cualquier ordenador personal moderno, tanto en CPU como en GPU de gama baja.
-- Opciones de despliegue: Transformers (PyTorch), CTranslate2 (CPU/GPU), y potencialmente ONNX si se convierte. No se menciona soporte nativo para vLLM, llama.cpp u Ollama, ya que estos están orientados a LLMs autoregresivos y no a modelos seq2seq.
-- Latencia y throughput: no disponibles. Dado el tamaño, se espera una latencia de decenas de milisegundos por frase en CPU con INT8, pero no hay datos oficiales.
+- VRAM estimada para inferencia: inferior a 1 GB en FP32 para los pesos originales (56 millones de parámetros); el build INT8 reduce aún más el uso de memoria y está pensado para CPU.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; no se requiere A100 ni H100. Una RTX 4090 o incluso GPUs de gama baja pueden ejecutar el modelo con holgura.
+- Cabe en GPU consumer: sí, en cualquier GPU con al menos 1-2 GB de memoria; también puede ejecutarse íntegramente en CPU.
+- Opciones de despliegue: transformers (`AutoModelForSeq2SeqLM`), CTranslate2 (build INT8 incluido). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Latencia y throughput estimados: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa rigurosa. No se han publicado benchmarks frente a otros modelos de traducción zh-vi, como los de la familia Helsinki-NLP/opus-mt (si existen para este par) o modelos multilingües como NLLB-200. El autor no proporciona comparaciones. Se puede señalar que, por tamaño, MoxhiMT-60 es comparable a los modelos Marian típicos (~50-80M parámetros), pero su especialización en xianxia es su principal diferenciador.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Especializacion |
+|---|---|---|---|---|---|
+| MoxhiMT-60 (DanVP) | 56,4 M | 512 tokens | zh, vi | Apache 2.0 | Xianxia / novela web zh-vi |
+| MarianMT (Helsinki-NLP) | variable por par (decenas de millones) | variable | múltiples pares | varía por modelo (a menudo CC-BY-4.0) | Traducción generalista |
+| NLLB-200 (Meta) | 600 M a 54 B | variable | 200 idiomas | CC-BY-NC-4.0 | Traducción multilingüe general |
+| Opus-MT (Helsinki-NLP) | variable | variable | múltiples pares | varía por modelo | Traducción generalista |
+
+La comparación con MarianMT y Opus-MT es la más directa por arquitectura y escala; MoxhiMT-60 se diferencia por su especialización en un dominio concreto y por una licencia Apache 2.0 que facilita el uso comercial. NLLB-200 ofrece mucha mayor cobertura lingüística, pero su licencia no comercial y su mayor tamaño lo sitúan en otro régimen de uso. No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo experimental: el autor indica explícitamente que es un lanzamiento experimental y que las salidas deben revisarse para usos de alto riesgo o publicación.
-- Especialización limitada: está optimizado para xianxia y novelas web; puede degradarse en textos técnicos, formales o de otros dominios.
-- Sin datos de entrenamiento publicados: no se conoce el volumen ni la procedencia del corpus, lo que dificulta evaluar posibles sesgos.
-- Riesgo de alucinación y errores de traducción: como cualquier NMT, puede producir traducciones incorrectas o inventar términos, especialmente en contextos fuera de su dominio.
-- Longitud de contexto limitada: la ventana de 512 tokens puede ser insuficiente para párrafos muy largos o para mantener coherencia en capítulos extensos.
-- Sin soporte para otros pares de idiomas: solo zh-vi, no es multilingüe.
-- Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre la calidad o idoneidad para producción.
+- Modelo experimental: el propio autor recomienda revisar la salida para usos de alta exigencia o publicación.
+- Riesgo de alucinación y de traducciones inexactas en textos fuera del dominio xianxia o de ficción.
+- Ventana de contexto de 512 tokens, insuficiente para documentos largos sin segmentación previa.
+- Cobertura limitada a chino y vietnamita; no traduce otros idiomas.
+- Sesgos conocidos: no documentados en la información disponible; cabe esperar los sesgos presentes en los datos de entrenamiento, no especificados.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero exige incluir una copia de LICENSE y mostrar el texto de NOTICE en los avisos de terceros del producto si se redistribuyen los pesos o el build `ct2-int8/`.
+- Sin datos publicados sobre benchmarks, por lo que la calidad real debe validarse con evaluaciones propias antes de producción.
+- No se documentan garantías de mantenimiento ni versiones futuras.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/DanVP/MoxhiMT-60
-- Directorio de archivos (incluye la carpeta ct2-int8): https://huggingface.co/DanVP/MoxhiMT-60/tree/main/ct2-int8
+- Licencia Apache 2.0: https://huggingface.co/DanVP/MoxhiMT-60/blob/main/LICENSE
+- Aviso NOTICE: https://huggingface.co/DanVP/MoxhiMT-60/blob/main/NOTICE
+- Build CTranslate2 INT8: https://huggingface.co/DanVP/MoxhiMT-60/tree/main/ct2-int8

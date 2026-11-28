@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Ucupaint — Blender Extensions",
-      "url": "https://extensions.blender.org/add-ons/ucupaint/",
-      "snippet": "Ucupaint is a Blender addon to manage texture layers for the Eevee and Cycles renderers. Already in development for years, …"
-    },
-    {
-      "title": "GitHub - ucupumar/ucupaint: Ucupaint is Blender addon to manage …",
-      "url": "https://github.com/ucupumar/ucupaint",
-      "snippet": "It means for Blender 4.2+, you can just search for 'Ucupaint' in Edit > Preferences > Get Extensions. Be aware that this version has …"
-    },
-    {
-      "title": "UCUPAINT - GitHub Pages",
-      "url": "https://ucupumar.github.io/ucupaint-wiki/",
-      "snippet": "Ucupaint is Blender addon to manage texture as layers for Eevee and Cycles renderer."
-    },
-    {
-      "title": "Ucupaint Version History — Blender Extensions",
-      "url": "https://extensions.blender.org/add-ons/ucupaint/versions/",
-      "snippet": "Jul 29, 2026 · Maintenance release of Ucupaint, contains only bugfixes. Fix: Creating a solid color layer with a vertex color mask in …"
-    },
-    {
-      "title": "Releases · ucupumar/ucupaint - GitHub",
-      "url": "https://github.com/ucupumar/ucupaint/releases",
-      "snippet": "What's new in both Ucupaint 2.4.8 and Ucupaint Plus 2.4.8! New option to use image atlas when opening images to avoid the max …"
-    }
-  ]
+  "sources": []
 }

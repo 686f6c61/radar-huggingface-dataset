@@ -2,51 +2,50 @@
 
 ## Resumen
 
-Orion-9B-Agentic-CodeCore-Merge-i1-GGUF es la version cuantizada en formato GGUF del modelo Orion-9B-Agentic-CodeCore-Merge, un merge de modelos de 9.197.093.888 parametros construido por prithivMLmods y cuantizado por mradermacher. El modelo esta orientado a tareas de agente, uso de herramientas (tool calling), razonamiento con cadena de pensamiento y generacion de codigo, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+Orion-9B-Agentic-CodeCore-Merge-i1-GGUF es la distribucion en formato GGUF del modelo Orion-9B-Agentic-CodeCore-Merge, un merge de modelos orientado a tareas de agente, razonamiento con cadena de pensamiento (chain-of-thought), uso de herramientas y generacion de codigo. El modelo original lo publica prithivMLmods y esta cuantizado por mradermacher, un autor habitual en el ecosistema de cuantizaciones GGUF con metodologia imatrix. El repositorio contiene unicamente los pesos cuantizados, no el modelo en precision original.
 
-La relevancia de esta publicacion reside en el formato: al tratarse de una cuantizacion GGUF con tecnicas de imatrix (importancia matricial), el modelo puede ejecutarse en hardware de consumo mediante llama.cpp, Ollama o LM Studio, algo imposible con los pesos originales en precision completa. mradermacher ofrece un espectro amplio de cuantizaciones, desde i1-Q2_K (4,0 GB) hasta i1-Q6_K (7,7 GB), lo que permite ajustar el equilibrio entre calidad y requisitos de VRAM.
+El modelo parte de una base etiquetada como qwen3_5 y ha sido construido mediante tecnicas de merge (omnimergekit) combinadas con ajuste fino supervisado (SFT) sobre capacidades de agente y codigo. Con 9.197.093.888 parametros (aproximadamente 9,2 mil millones), se situa en la franja de modelos de 9B que pueden ejecutarse en GPU de consumo con cuantizaciones de 4 bits. La licencia es Apache 2.0 y el unico idioma declarado es el ingles.
 
-El modelo base emplea la etiqueta `qwen3_5` en sus metadatos, lo que sugiere una arquitectura derivada de la familia Qwen 3.5, aunque la model card no detalla la arquitectura interna ni la longitud de contexto. La informacion publicada se centra en el proceso de cuantizacion y en las caracteristicas funcionales (agente, razonamiento, codigo) mas que en los detalles tecnicos del entrenamiento.
+La relevancia de esta ficha reside en que el repositorio ofrece un abanico amplio de cuantizaciones (desde Q2_K de 4,0 GB hasta Q6_K de 7,7 GB, ademas de variantes IQ), lo que permite desplegar el modelo en hardware muy diverso con llama.cpp u Ollama. No obstante, la informacion publicada es escasa: no hay datos de contexto, benchmarks ni detalles del dataset de entrenamiento en la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiqueta `qwen3_5` en metadatos; detalles no disponibles) |
-| Parametros totales | 9.197.093.888 (9,2 B) |
+| Arquitectura | Transformer (base etiquetada como qwen3_5 en los tags; detalles no disponibles) |
+| Parametros totales | 9.197.093.888 (aproximadamente 9,2B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (mas fichero imatrix) |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (cuantizaciones i1 con imatrix); pesos originales en safetensors en el modelo base |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix) |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1/imatrix); estaticas en repositorio separado |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo base en la documentacion proporcionada. Los metadatos incluyen la etiqueta `qwen3_5`, lo que apunta a una base derivada de la familia Qwen 3.5 de Alibaba, pero no se confirma el tipo de atencion, el numero de capas ni la dimension de los estados ocultos. El modelo es un merge (fusion de pesos) realizado con OmnimergeKit, una herramienta de fusion de modelos, a partir de componentes orientados a agente, razonamiento y codigo.
+La model card no detalla la arquitectura interna mas alla de los tags, que indican una base qwen3_5 y el uso de omnimergekit para el merge. Se trata, por tanto, de un modelo derivado de una familia Qwen de tercera generacion (segun la etiqueta), fusionado con otros modelos especializados en agente, codigo y razonamiento. El proceso combina merge de pesos con ajuste fino supervisado (SFT) orientado a tool use, function calling y chain-of-thought.
 
-El proceso de cuantizacion realizado por mradermacher emplea tecnicas de imatrix (importancia matricial), que calculan la relevancia de cada peso usando un corpus de calibracion para preservar mejor la calidad en cuantizaciones agresivas. Las etiquetas del modelo indican que el entrenamiento del base incluyo SFT (supervised fine-tuning), razonamiento con cadena de pensamiento (chain-of-thought) y optimizacion para tool use y function calling. No se especifica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplico RLHF o DPO.
+No se publican datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). La cuantizacion i1 de mradermacher utiliza una matriz de importancia (imatrix) generada a partir de datos de calibracion, lo que en la practica mejora la calidad de las cuantizaciones de baja profundidad de bits frente a las cuantizaciones estaticas equivalentes.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Razonamiento explicito con cadena de pensamiento (chain-of-thought).
-- Generacion y asistencia de codigo (etiqueta `coder`).
-- Tool calling y function calling para integracion con APIs y herramientas externas.
-- Comportamiento agentico: planificacion multi-paso y uso de herramientas en bucles de agente.
-- Capacidad de seguir instrucciones afinada mediante SFT.
-- Soporte de conversaciones multi-turno (etiqueta `conversational`).
-- No se documentan capacidades de vision, audio ni modo thinking separado mas alla del razonamiento CoT.
+- Generacion de texto conversacional multi-turno (tag conversational).
+- Razonamiento con cadena de pensamiento explicita (reasoning, chain-of-thought).
+- Generacion y asistencia en codigo (coder).
+- Uso de herramientas y function calling (tool-use, function-calling).
+- Comportamiento orientado a agentes, incluyendo razonamiento multi-paso.
+- Capacidad de vision segun la model card del cuantizador (menciona que es un modelo de vision y que los ficheros mmproj, si existen, estarian en el repositorio estatico); no se confirma disponibilidad efectiva de pesos multimodales.
+- Soporte multilingue limitado al ingles declarado.
 
 ## Casos de uso
 
-- Agentes de codigo autonomos: el modelo puede integrarse en entornos como OpenHands o Aider para resolver tareas de programacion multi-paso, ya que combina generacion de codigo con tool calling para leer ficheros, ejecutar tests y aplicar parches.
-- Asistentes de IDE con tool calling: integrado en un servidor local compatible con la API de OpenAI (por ejemplo, mediante llama.cpp server u Ollama), puede invocar funciones del editor para refactorizar, explicar o generar tests unitarios.
-- Automatizacion de pipelines CI/CD: el modelo puede analizar fallos de build, proponer correcciones y abrir pull requests cuando se le expone un conjunto de herramientas (GitHub API, ejecucion de comandos) en un bucle de agente.
-- Razonamiento sobre documentacion tecnica: su modo chain-of-thought permite descomponer preguntas complejas sobre APIs o arquitecturas de software y justificar las respuestas paso a paso.
-- Despliegue en hardware de consumo para prototipado: con la cuantizacion i1-Q4_K_M (5,9 GB) cabe en GPUs de 8 GB de VRAM, lo que permite a desarrolladores individuales probar flujos agenticos sin infraestructura cloud.
-- Evaluacion de merges y cuantizaciones: investigadores pueden comparar la calidad del modelo base frente a las distintas cuantizaciones i1 para estudiar el impacto de la cuantizacion en tareas de razonamiento y codigo.
-- Chatbot tecnico de soporte interno: con contexto conversacional multi-turno, puede atender consultas de desarrolladores sobre el codigo de un repositorio interno, siempre que se le inyecte el contexto relevante.
+- Agente de codigo en local: el modelo puede ejecutar tareas de generacion y refactorizacion de codigo con llamadas a herramientas, desplegado con llama.cpp u Ollama en una estacion de trabajo con GPU de consumo gracias a sus cuantizaciones de 5-7 GB.
+- Automatizacion de pipelines CI/CD: integrado como paso de generacion o revision de parches mediante function calling, el modelo puede invocar APIs de build y tests dentro de un flujo agente.
+- Asistente de terminal para desarrolladores: con la cuantizacion i1-Q4_K_M (5,9 GB) cabe en GPUs de 8-12 GB y permite respuestas interactivas con contexto de conversacion local sin enviar codigo a la nube.
+- Prototipado de agentes multi-paso: sus capacidades de razonamiento y tool use permiten construir bucles de planificacion-ejecucion para tareas de automatizacion de escritorio o web scraping controlado.
+- Evaluacion de tecnicas de merge: al ser un modelo fusionado, resulta util como caso de estudio para investigadores que comparan el comportamiento de merges frente a modelos base en tareas de codigo y agente.
+- Despliegue en entornos con requisitos de privacidad: la licencia Apache 2.0 y la ejecucion local permiten usar el modelo en entornos donde no se puede enviar informacion a servicios externos.
+- Educacion y experimentacion: las cuantizaciones pequenas (i1-Q2_K de 4,0 GB) permiten probar el modelo en portatiles con GPU modesta o incluso en CPU, con la correspondiente perdida de calidad.
 
 ## Benchmarks y rendimiento
 
@@ -54,47 +53,40 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (pesos mas overhead de contexto):
-  - i1-Q2_K: ~4,0 GB de pesos; ~5-6 GB de VRAM total con contexto moderado.
-  - i1-IQ3_M / i1-Q3_K_M: ~4,6-4,8 GB de pesos; ~6-7 GB de VRAM.
-  - i1-Q4_K_S / i1-Q4_K_M: ~5,6-5,9 GB de pesos; ~7-8 GB de VRAM.
-  - i1-Q5_K_M: ~6,7 GB de pesos; ~8-9 GB de VRAM.
-  - i1-Q6_K: ~7,7 GB de pesos; ~9-10 GB de VRAM.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 o H100 para mayor throughput y contexto. Cualquier GPU con 8 GB o mas puede ejecutar las cuantizaciones Q4.
-- Cabe en GPU de consumo: si, desde una RTX 3060 de 12 GB (o incluso 8 GB con Q4_K_M) hasta modelos de gama alta. Tambien puede ejecutarse en CPU con llama.cpp, aunque con latencia mayor.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, servidores compatibles con la API de OpenAI (llama.cpp server). vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que para esos motores convendria usar los pesos originales en safetensors.
+- VRAM estimada para inferencia: aproximadamente 4,0 GB (i1-Q2_K), 5,4-5,9 GB (IQ4_XS / Q4_K_M), 6,6-6,7 GB (Q5_K_M) y 7,7 GB (Q6_K), mas overhead de contexto KV cache.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080, RTX 4090; en datacenter, A10, L4, A100 o H100 para despliegues concurrentes.
+- Cabe en GPU de consumo: si, desde GPUs de 8 GB con cuantizaciones Q4 y contexto moderado; con 12-16 GB se puede usar Q5/Q6 y contextos mas amplios.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-inference (tag TGI) y servidores compatibles con la API de endpoints; vLLM requeriria los pesos en safetensors del modelo base.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Orion-9B-Agentic-CodeCore-Merge (i1-GGUF) | 9,2 B | no disponible | Apache 2.0 | GGUF (i1) | Merge orientado a agente y codigo; solo ingles |
-| Qwen2.5-Coder-7B-Instruct (GGUF) | 7,6 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | GGUF | Referencia en generacion de codigo; soporte multilingue de codigo |
-| Llama-3.1-8B-Instruct (GGUF) | 8,0 B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.1 Community License | GGUF | Uso general, tool calling nativo, requiere cumplir la licencia de Meta |
-| DeepSeek-Coder-V2-Lite-Instruct (GGUF) | 15,7 B (MoE, 2,4 B activos) | 128.000 tokens (segun documentacion publica de DeepSeek) | DeepSeek License | GGUF | Enfocado a codigo; mayor coste de VRAM |
+| Orion-9B-Agentic-CodeCore-Merge (i1-GGUF) | 9,2B | no disponible | Apache 2.0 | GGUF (i1) | Merge orientado a agente y codigo; solo ingles |
+| Qwen2.5-Coder-7B-Instruct | 7,6B | 32K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Referencia en codigo, ampliamente desplegado |
+| Llama-3.1-8B-Instruct | 8,0B | 128K (segun documentacion publica de Meta) | Llama 3.1 Community License | safetensors, GGUF | Buen equilibrio general, licencia con restricciones |
+| DeepSeek-Coder-V2-Lite | 16B (MoE, 2,4B activos) | 128K (segun documentacion publica) | DeepSeek License | safetensors | Mayor coste de VRAM, mejor rendimiento en codigo |
 
-Nota: los datos de contexto y licencia de los modelos comparados provienen de su documentacion publica y no de la informacion proporcionada para este modelo; se incluyen como referencia orientativa.
+La comparativa se basa en caracteristicas publicas de los modelos alternativos; no se dispone de benchmarks del modelo Orion para contrastar rendimiento real.
 
 ## Limitaciones y advertencias
 
-- Solo soporta ingles segun la model card; el rendimiento en castellano no esta validado y probablemente sea inferior.
-- Al ser un merge de modelos, puede heredar sesgos y comportamientos inconsistentes de sus componentes; no se documenta el proceso de alineacion.
-- Riesgo de alucinacion inherente a los modelos de 9 B, especialmente en tareas de codigo con APIs poco comunes o en razonamientos largos.
-- No se publican benchmarks, por lo que no hay evidencia cuantitativa de su calidad frente a alternativas.
-- Las cuantizaciones agresivas (Q2_K, IQ2, IQ3) degradan la calidad; para tareas de agente y codigo se recomienda Q4_K_M o superior.
-- La longitud de contexto no esta documentada; no debe asumirse que soporta ventanas largas sin verificacion empirica.
-- Aunque la licencia Apache 2.0 permite uso comercial, el modelo base es un merge y conviene revisar las licencias de los modelos originales fusionados antes de un despliegue en produccion.
-- El repositorio ocupa 81,3 GB por incluir todas las cuantizaciones; la descarga debe hacerse fichero a fichero.
+- Solo se declara soporte de ingles; el rendimiento en castellano u otros idiomas no esta garantizado.
+- No se publican datos de contexto maximo, lo que impide planificar despliegues con ventanas largas sin pruebas previas.
+- Al ser un merge, puede heredar sesgos y comportamientos inconsistentes de los modelos fusionados; no hay evaluacion de sesgos publicada.
+- Riesgo de alucinacion en tareas de codigo y function calling, especialmente en cuantizaciones muy bajas (Q2_K, IQ2) donde la calidad se degrada.
+- La model card del cuantizador menciona vision, pero no se confirma la disponibilidad de ficheros mmproj ni de pesos multimodales; conviene verificar antes de asumir capacidades de vision.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base y los componentes del merge podrian tener condiciones adicionales no documentadas en esta ficha.
+- El repositorio pesa 81,3 GB e incluye multiples cuantizaciones; descargar solo el fichero necesario para evitar consumo innecesario de disco.
 
 ## Enlaces
 
-- Repositorio Hugging Face (GGUF i1): https://huggingface.co/mradermacher/Orion-9B-Agentic-CodeCore-Merge-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Orion-9B-Agentic-CodeCore-Merge-i1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/Orion-9B-Agentic-CodeCore-Merge
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Orion-9B-Agentic-CodeCore-Merge-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Orion-9B-Agentic-CodeCore-Merge-i1-GGUF
-- Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
-- Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafica comparativa de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Orion-9B-Agentic-CodeCore-Merge-i1-GGUF
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- nethype GmbH: https://www.nethype.de/
+- Grafico comparativo de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png

@@ -2,102 +2,105 @@
 
 ## Resumen
 
-OpenSML JSONLite 175M es un modelo de lenguaje pequeno (175.611.648 parametros) desarrollado por OpenSML (autor indicado en la model card: William Zebrowski) y publicado en Hugging Face. Su tarea es la extraccion de informacion estructurada: recibe un texto fuente y un JSON Schema cerrado y devuelve directamente un unico objeto JSON nativo en una sola generacion autorregresiva. No utiliza ensamblado campo a campo, reparacion de salida ni decodificador restringido; la validacion del esquema se hace a posteriori y no garantiza que los valores extraidos sean correctos.
+OpenSML-JSONLite-175M es un modelo de lenguaje de 175.611.648 parámetros entrenado desde cero por William Zebrowski (organización OpenSML) para una tarea muy concreta: generar directamente un objeto JSON plano a partir de un texto fuente en inglés y un JSON Schema plano proporcionado por el usuario. El modelo realiza una única llamada autoregresiva; la validación contra el esquema se hace después de la generación. No utiliza ensamblado de JSON, reparación de salida, decodificador restringido ni un segundo modelo.
 
-El modelo es un ajuste fino (finetune) de OpenSML-Base-175M y forma parte de una linea de trabajo "from-scratch" orientada a Apple Silicon: se distribuye en formato MLX y safetensors BF16, con arquitectura propia que requiere el runner incluido en el repositorio en lugar de AutoModel de Transformers o la carga automatica de mlx-lm. Su ventana de contexto es de solo 2.048 tokens compartidos, su vocabulario es un byte-BPE congelado de 32.000 tokens y la salida por defecto se genera con temperatura 0 y un maximo de 256 tokens.
+La arquitectura es un transformer denso de 24 capas, 768 dimensiones ocultas y FFN de 2.048, con atención GQA (12 cabezas de consulta, 4 de clave/valor), RMSNorm con normalización de Q/K, SwiGLU y RoPE con base 10.000. El vocabulario es un BPE de 32.000 tokens congelado y el contexto compartido es de 2.048 tokens. Los pesos se distribuyen en BF16 sin cuantizar en safetensors con embeddings atados.
 
-Es relevante para desarrolladores que necesiten extraccion de campos en local, sin conexion y con huella minima (repo de 0,4 GB), asi como para investigadores que estudien post-entrenamiento de modelos diminutos para salidas estructuradas. Sus limitaciones son acusadas: entrenamiento centrado en siete dominios SNIPS y 39 definiciones de campo, soporte unicamente de esquemas planos con tipos cadena, cadena anulable y arrays de cadenas, y ausencia de licencia declarada, lo que bloquea cualquier decision de uso comercial.
+Es relevante ahora porque aborda un nicho práctico —extracción de información estructurada en entornos con recursos limitados y Apple Silicon— con un modelo minúsculo, pero también porque su model card es inusualmente honesta sobre los límites: la validez de esquema observada es del 99,93% sobre 1.444 peticiones, pero la corrección completa solo del 89,54%, y el propio autor advierte que se produzcan errores de extracción.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only propio (no compatible con carga automatica estandar): 24 capas, hidden 768, FFN 2.048, GQA con 12 cabezas de consulta y 4 cabezas KV, RMSNorm + Q/K norm, SwiGLU, RoPE con base 10.000, embeddings de entrada y salida atados, sin sesgos lineales |
-| Parametros totales | 175.611.648 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 2.048 tokens compartidos |
-| Tipos de cuantizacion | no disponible; la release se publica unicamente en BF16 sin cuantizar (safetensors) |
-| Idiomas soportados | en (ingles) |
-| Licencia | no disponible |
-| Formato de pesos | safetensors BF16 sin cuantizar, mas archivo fuente nativo de MLX y tokenizer/configuracion; biblioteca declarada: mlx |
-
-Otros datos de la model card: vocabulario byte-BPE congelado de 32.000 tokens, decodificacion por defecto con temperatura 0, penalizacion de repeticion 1 y maximo de 256 tokens de salida.
+| Arquitectura | Transformer denso (24 capas, 768 hidden, FFN 2.048, GQA 12Q/4KV, RMSNorm + Q/K norm, SwiGLU, RoPE base 10.000) |
+| Parámetros totales | 175.611.648 |
+| Parámetros activos | No aplica (modelo denso) |
+| Longitud de contexto | 2.048 tokens (instrucción, fuente, esquema y salida comparten la ventana) |
+| Tipos de cuantización | No disponible (pesos publicados en BF16 sin cuantizar) |
+| Idiomas soportados | Inglés (en) |
+| Licencia | No disponible |
+| Formato de pesos | safetensors (BF16, embeddings atados); librería MLX |
+| Vocabulario | BPE de 32.000 tokens congelado |
+| Generación por defecto | Temperatura 0, repetition penalty 1, máximo 256 tokens |
+| Tamaño del repo | 1,5 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 24 capas con anchura oculta de 768 y FFN de 2.048, atencion por consultas agrupadas (GQA) con 12 cabezas de consulta y 4 cabezas KV, normalizacion RMSNorm (con normalizacion adicional en Q y K), activacion SwiGLU y embeddings posicionales rotatorios (RoPE, base 10.000). Los embeddings de entrada y salida estan atados y no hay sesgos en las capas lineales. El vocabulario es un byte-BPE congelado de 32.000 tokens y el contexto maximo es de 2.048 tokens. La arquitectura es personalizada, por lo que el autor indica explicitamente que debe usarse el runner suministrado y no AutoModel de Transformers ni la carga automatica de mlx-lm.
+El modelo es un transformer decoder-only denso entrenado desde cero sobre el checkpoint base OpenSML-Base-175M. La configuración concreta incluye 24 capas, dimensión oculta 768, FFN de 2.048, atención con grouped-query attention (12 cabezas de consulta y 4 de clave/valor), normalización RMSNorm con normalización adicional en Q/K, activación SwiGLU y embeddings posicionales rotatorios RoPE con base 10.000. El vocabulario es un BPE de 32.000 tokens congelado y los embeddings de entrada y salida están atados.
 
-El entrenamiento parte del ancestro preentrenado OpenSML-Base-175M y anade, segun la model card, etapas de QA con evidencia, extraccion exacta de campos, extraccion focalizada y una etapa final de supervision directa sobre JSON. Los datasets citados en las etiquetas del repositorio son HuggingFaceTB/smollm-corpus, HuggingFaceTB/dclm-edu, HuggingFaceFW/finewiki, Avelina/python-edu-cleaned, rajpurkar/squad_v2 y databricks/databricks-dolly-15k. El ajuste se realizo principalmente sobre siete dominios SNIPS y 39 definiciones de campo. Esta release sustituye a unos pesos anteriores basados en extraccion mas ensamblado, que se reemplazan por un finetune nativo de fuente + esquema a JSON. No se detallan en la informacion disponible el numero exacto de tokens de entrenamiento, la composicion porcentual del dataset ni si se emplearon tecnicas de RLHF o DPO.
+El post-entrenamiento combina un preentrenamiento continuado sobre datos estructurados con un único SFT conjunto para extracción fundamentada y generación directa de JSON guiada por esquema. Los datasets citados en la model card son smollm-corpus, dclm-edu, finewiki, python-edu-cleaned, squad_v2, databricks-dolly-15k y AmazonScience/massive. No se especifican en la información disponible el número exacto de tokens de entrenamiento, la composición porcentual del dataset ni si hubo RLHF o DPO. La innovación técnica destacable es el contrato de salida: una sola pasada autoregresiva produce el JSON completo y la validación se realiza a posteriori, sin decodificación restringida.
 
 ## Capacidades
 
-- Generacion de un unico objeto JSON nativo por peticion a partir de un texto fuente y un JSON Schema, sin ensamblador de campos, reparacion de salida ni decodificador restringido.
-- Esquemas planos cerrados con `additionalProperties: false` y entre 1 y 8 propiedades obligatorias.
-- Tipos soportados: cadenas, cadenas anulables (`["string","null"]`) y arrays de cadenas.
-- Copia literal de valores preservando mayusculas, minusculas y ortografia originales; los arrays conservan el orden de aparicion en la fuente.
-- Comportamiento definido ante ausencias: los arrays ausentes se devuelven como `[]` y las cadenas anulables ausentes como `null`.
-- Acepta nombres de campo y descripciones nuevas en tiempo de inferencia, aunque la extraccion fiable en dominios no familiares no esta establecida.
-- Rechazo de entradas demasiado largas sin truncar.
-- No se documenta soporte de tool calling ni de function calling.
-- No se documenta soporte de agentes ni de razonamiento multi-paso.
-- Capacidad multilingue: no disponible (solo ingles).
-- Sin modo de razonamiento explicito (thinking mode), sin vision, sin audio y sin salida numerica o booleana verificada.
+- Extracción de información explícita de textos cortos en inglés y colocación en un objeto JSON plano.
+- Generación directa de JSON guiada por un JSON Schema plano con 1 a 8 propiedades requeridas y `additionalProperties: false`.
+- Soporte de propiedades de tipo string, string anulable y arrays de strings.
+- Copia literal de valores (fechas y números como texto, sin normalización ni conversión).
+- Relleno de arrays ausentes con `[]` y de strings anulables ausentes con `null`.
+- Preservación del orden de aparición en arrays y de mayúsculas y ortografía exactas.
+- Salida en una sola llamada autoregresiva con temperatura 0 por defecto.
+- No soporta (fuera del contrato verificado): objetos anidados, arrays de objetos, salidas numéricas o booleanas, lógica de propiedades opcionales, enums, referencias y restricciones avanzadas de esquema.
+- No verificado: chat general, entrada multilingüe y extracción de documentos largos.
+- No dispone de tool calling, function calling, capacidades de agente, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Extraccion de parametros en comandos de asistente de musica: dada una frase como "Play the track Blue Lantern by Mira Sol" y un esquema con los campos track, artist y album, el modelo devuelve el JSON con los valores copiados literalmente. Es el escenario de referencia verificado por el autor.
-- Enriquecimiento de registros desde texto libre: convertir descripciones de tickets, notas de CRM o correos breves en un objeto JSON de campos de cadena, siempre que el contenido quepa en 2.048 tokens y el esquema sea plano.
-- Preprocesado en pipelines de ETL y RAG: extraer campos concretos de un pasaje recuperado antes de indexarlo o de pasarlo a un modelo mayor, aprovechando que la inferencia puede ejecutarse sin conexion tras la descarga.
-- Respuestas de QA extractiva sobre pasajes cortos: el modelo se entreno tambien con rajpurkar/squad_v2, por lo que puede localizar el fragmento literal que responde a una pregunta y colocarlo en un campo de cadena del esquema.
-- Extraccion de listas ordenadas de entidades: cuando el esquema declara arrays de cadenas, el modelo devuelve todos los fragmentos coincidentes en el orden en que aparecen en la fuente.
-- Procesamiento local en Apple Silicon: al ser un modelo de 175 M en BF16 y con runner MLX, puede ejecutarse en un portatil Mac sin GPU dedicada y sin enviar datos a servicios externos, util para datos sensibles.
-- Prototipado e investigacion en post-entrenamiento: sirve como banco de pruebas reproducible para estudiar como un modelo diminuto entrenado desde cero aprende a producir JSON valido frente a esquemas cerrados.
-- Generacion de formularios estructurados en aplicaciones de campo: extraer nombres de productos, personas o lugares de una frase corta dictada o escrita para rellenar un formulario, asumiendo que los valores deben validarse despues.
+- Extracción de entidades en asistentes de voz o comandos: a partir de frases cortas como "Play the track Blue Lantern by Mira Sol" el modelo rellena campos como `track` y `artist`; encaja por su tamaño mínimo y su latencia baja en dispositivos Apple Silicon.
+- Enriquecimiento de registros en pipelines de datos: dado un texto breve y un esquema plano, se genera el JSON directamente para insertarlo en una base de datos, con validación posterior contra el esquema y comprobación de valores contra la fuente.
+- Preprocesado de formularios y tickets en inglés: extracción de campos de texto libre (nombres, títulos, listas) hacia un objeto plano, siempre que los campos sean strings o arrays de strings y no requieran normalización de fechas o importes.
+- Prototipado de extracción estructurada en local: al ejecutarse con MLX en macOS sobre Apple Silicon, permite iterar sobre esquemas y prompts sin depender de servicios en la nube ni de GPUs dedicadas.
+- Filtrado y clasificación ligera por esquema: uso de esquemas con campos de string para etiquetar o resumir información explícita de textos cortos en flujos de ingesta, con validación estricta de la estructura de salida.
+- Investigación sobre modelos pequeños y post-entrenamiento: sirve como referencia reproducible de un modelo de 175M entrenado desde cero con SFT conjunto para una tarea estructurada, útil para estudiar el equilibrio entre validez de esquema y corrección semántica.
+- Evaluación de robustez de extracción: los propios ejemplos de la model card (probes de tres, cuatro y cinco ítems) permiten medir la tasa de acierto en listas y detectar fusiones u omisiones de elementos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio incluye un archivo de resultados (JSONLITE_RESULTS.json) y un registro de verificacion de inferencia (INFERENCE_VERIFICATION.json), pero su contenido no forma parte de la informacion proporcionada. La model card unicamente afirma que cuatro ejemplos de interaccion pasaron la comprobacion de referencia del playground y que sus salidas en crudo coincidieron con el runner MLX independiente; no se aportan cifras de MMLU, HumanEval, GSM8K ni de exactitud agregada de extraccion.
+Los únicos datos de rendimiento publicados en la información disponible son los de la evaluación observada de 1.444 peticiones realizada por el autor:
 
-No se dispone tampoco de datos de latencia ni de throughput.
+| Métrica | Resultado |
+|---|---|
+| Validez de esquema (1.444 peticiones observadas) | 99,93% |
+| Corrección completa (misma evaluación) | 89,54% |
+| Probes de tres/cuatro/cinco ítems completamente correctos | 3 de 6 |
+
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- Peso de los pesos en BF16: aproximadamente 351 MB (175.611.648 parametros x 2 bytes), coherente con el tamano de repositorio de 0,4 GB.
-- VRAM estimada para inferencia: en torno a 0,5 GB en BF16 contando pesos, cache KV (unos 24 KB por token, alrededor de 49 MB con 2.048 tokens) y activaciones. Las cifras de cuantizacion a 8 bits (aproximadamente 176 MB) o 4 bits (aproximadamente 88 MB) son estimaciones de conversion manual, no releases oficiales.
-- GPU recomendadas: no disponible. El autor solo verifica la plataforma Apple Silicon macOS con Python 3.11 y MLX 0.32.3.
-- Cabe en GPU de consumo: si, por tamano, pero no hay compatibilidad verificada con CUDA ni con el pipeline estandar de Transformers; el modelo declara MLX como biblioteca.
-- Opciones de despliegue: runner MLX propio incluido en el repositorio (`python inference.py`). No es compatible con la carga automatica de mlx-lm ni con AutoModel de Transformers; no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: con 175,6M de parámetros en BF16, los pesos ocupan aproximadamente 350 MB; en FP16/FP32 la huella es del mismo orden, muy por debajo de 1 GB, más el espacio de activaciones y KV cache para 2.048 tokens.
+- GPU recomendadas: no se especifican en la información disponible; el modelo está verificado en Apple Silicon (macOS) con MLX 0.32.3 y Python 3.11.
+- Cabe holgadamente en GPUs de consumo (RTX 4090, RTX 3090, RTX 4060 y similares) por tamaño, aunque el export publicado es específico de MLX y no se ha verificado en esas plataformas.
+- Opciones de despliegue: runner nativo MLX incluido en el repositorio (`inference.py`); no soporta carga automática con Transformers AutoModel ni con mlx-lm.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-La informacion proporcionada no incluye comparativas oficiales. La siguiente tabla usa datos confirmados de este modelo y referencias generales de categoria para dos alternativas frecuentes de tamano bajo; los datos de las alternativas no estan verificados en la informacion disponible y deben comprobarse antes de usarse.
-
-| Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenSML JSONLite 175M | 175.611.648 | 2.048 tokens | JSON nativo segun esquema plano | no disponible | Hugging Face, formato MLX + safetensors BF16, runner propio |
-| SmolLM2-135M | dato no verificado en la informacion disponible | dato no verificado | texto libre | dato no verificado | dato no verificado |
-| Qwen2.5-0.5B | dato no verificado en la informacion disponible | dato no verificado | texto libre | dato no verificado | dato no verificado |
+| OpenSML-JSONLite-175M | 175,6M | 2.048 | Extracción JSON guiada por esquema, solo inglés | No disponible | Hugging Face, MLX |
+| OpenSML-Base-175M | 175,6M | No disponible | Modelo base preentrenado desde cero | No disponible | Hugging Face |
+| Alternativas de extracción estructurada de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
-La diferencia funcional relevante frente a modelos pequenos de proposito general es que este modelo esta especializado en la tarea fuente + esquema a JSON y no en generacion abierta, lo que limita su uso fuera de ese contrato. No se dispone de datos de rendimiento comparado.
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos comparables de la misma categoría para establecer una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
-- La validacion del esquema ocurre despues de la generacion y no puede establecer que los valores extraidos sean correctos; puede producir JSON valido con contenido incorrecto.
-- Alucinacion de valores: al copiar de la fuente pero sin decodificacion restringida, no hay garantia formal de que cada campo provenga del texto original, aunque el entrenamiento prioriza la copia literal.
-- Sesgo de dominio: el ajuste se hizo principalmente sobre siete dominios SNIPS y 39 definiciones de campo. La extraccion fiable en dominios no familiares no esta establecida, aunque el modelo acepte nombres y descripciones nuevos.
-- Contrato de esquema muy estrecho: solo esquemas planos y cerrados, con `additionalProperties: false`, entre 1 y 8 propiedades obligatorias y tipos limitados a cadena, cadena anulable y array de cadenas. Quedan fuera esquemas anidados, salidas numericas o booleanas, enumeraciones, referencias y restricciones avanzadas.
-- Sin normalizacion de numeros ni de fechas: los valores se copian tal cual aparecen en la fuente.
-- Contexto reducido a 2.048 tokens y rechazo de entradas demasiado largas sin truncado, por lo que no sirve para documentos extensos.
-- Idioma: solo ingles declarado.
-- Licencia no disponible: no hay permiso explicito de uso comercial, lo que impide adoptarlo en produccion sin aclarar antes las condiciones con el autor.
-- Compatibilidad: arquitectura personalizada; no funciona con carga automatica de mlx-lm ni con AutoModel de Transformers, y no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI.
-- Madurez: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y solo se verifican cuatro ejemplos de interaccion, lo que no constituye evidencia de robustez general.
-- Se recomienda anadir validacion y verificacion posteriores propias en cualquier uso en produccion.
+- El propio autor advierte de errores de extracción: puede acortar nombres o títulos, omitir o fusionar elementos de listas, confundir a quién pertenece un valor o rellenar un campo cuando la respuesta correcta es vacía.
+- La validez de esquema del 99,93% y la corrección completa del 89,54% corresponden a una evaluación observada de 1.444 peticiones y no garantizan el comportamiento en entradas nuevas.
+- Solo se han verificado 3 de 6 probes de tres, cuatro y cinco ítems como completamente correctos; no hay un número establecido de entidades que el modelo extraiga siempre bien.
+- Fuera del contrato verificado: objetos anidados, arrays de objetos, salidas numéricas o booleanas, propiedades opcionales, enums, referencias y restricciones avanzadas de esquema.
+- Solo inglés; el multilingüismo, el chat general y la extracción de documentos largos no están verificados.
+- El contexto es de 2.048 tokens compartidos entre instrucción, fuente, esquema y respuesta; el runner admite hasta 256 tokens de salida y rechaza prompts demasiado largos sin truncar.
+- No normaliza fechas ni números: los copia como texto.
+- La licencia no está disponible, por lo que no puede confirmarse el uso comercial.
+- El export es específico de MLX y no carga con Transformers AutoModel ni mlx-lm; requiere el runner nativo incluido.
+- Riesgo de alucinación: puede inventar valores cuando el dato no está explícito en la fuente; se recomienda validar estructura y significado contra el texto original.
 
 ## Enlaces
 
-- Pagina del modelo en Hugging Face: https://huggingface.co/OpenSML/OpenSML-JSONLite-175M
+- Modelo en Hugging Face: https://huggingface.co/OpenSML/OpenSML-JSONLite-175M
 - Modelo base: https://huggingface.co/OpenSML/OpenSML-Base-175M
-- Archivos citados en el repositorio: RUN_GUIDE.md, TECHNICAL_REPORT.md, JSONLITE_RESULTS.json, checkpoint_provenance.json, INFERENCE_VERIFICATION.json (referenciados en la model card, sin URL publica confirmada)
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor, su informe tecnico ni sus benchmarks; los resultados obtenidos no guardan relacion con el contenido de esta ficha y se descartan.
+- Guía de ejecución local: RUN_GUIDE.md (incluida en el repositorio del modelo)
+- Informe técnico: TECHNICAL_REPORT.md (incluido en el repositorio del modelo)
+- Resultados: JSONLITE_RESULTS.json (incluido en el repositorio del modelo)
+- Procedencia del checkpoint: checkpoint_provenance.json (incluido en el repositorio del modelo)

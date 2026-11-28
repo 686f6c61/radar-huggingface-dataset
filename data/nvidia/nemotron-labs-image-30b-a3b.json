@@ -31,9 +31,9 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 336,
+  "likes": 342,
   "downloads_30d": 1692,
-  "trending_score": 243,
+  "trending_score": 249,
   "parameters": 32634904896,
   "parameters_human": "32.63B",
   "storage_bytes": 133192507925,
@@ -54,14 +54,14 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
-      "url": "https://www.nvidia.com/fr-fr/drivers/",
-      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …Read more"
-    },
-    {
       "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
       "url": "https://www.nvidia.com/",
       "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …Read more"
+    },
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …Read more"
     },
     {
       "title": "Nvidia - Wikipedia",
@@ -69,9 +69,14 @@
       "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia is among the largest companies by market …Read more"
     },
     {
-      "title": "NVIDIA",
-      "url": "https://www.nvidia.fr/default.htm",
-      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …Read more"
+    },
+    {
+      "title": "NVIDIA Cours Action NVDA, Cotation Bourse NASDAQ - Boursorama",
+      "url": "https://www.boursorama.com/cours/NVDA/",
+      "snippet": "Le cours de l'action NVIDIA NVDA sur Boursorama : historique de la cotation sur NASDAQ, graphique, actualités, consensus des …Read more"
     }
   ]
 }

@@ -2,106 +2,139 @@
 
 ## Resumen
 
-Katip Mask Base es un modelo BERTurk afinado para el etiquetado de entidades nombradas (NER) orientado a la desidentificación de documentos legales en turco. Desarrollado por el autor f1k como componente "on-device" del proyecto Katip Mask, detecta nombres de personas, direcciones y términos de salud del artículo 6 de la KVKK (la ley turca de protección de datos), con el objetivo de permitir el borrado automático de datos personales en textos jurídicos.
+Katip Mask Base · tr v2 es un modelo de etiquetado de tokens (token classification) especializado en la detección de datos personales en documentos legales turcos. Lo desarrolla el autor independiente f1k como componente central del proyecto Katip Mask, una herramienta de anonimización que se ejecuta en el dispositivo. El modelo parte de BERTurk (`dbmdz/bert-base-turkish-cased`) y se ha ajustado fino para identificar nombres y apellidos de personas, direcciones y terminos de salud contemplados en el articulo 6 de la KVKK (la ley turca de proteccion de datos personales), equivalente funcional al RGPD europeo.
 
-El modelo parte de `dbmdz/bert-base-turkish-cased`, un transformer encoder de tipo BERT con 110.032.135 parámetros y vocabulario en turco con distinción de mayúsculas. La versión v2, publicada el 13 de noviembre de 2026, incorpora 17.967 frases reales en turco (procedentes de Turkish Wiki NER, solo nombres de persona) junto a documentos sintéticos, lo que eleva la detección de nombres en frases reales del 41% al 90%.
+La relevancia del modelo radica en su enfoque: frente a alternativas basadas en LLM generativos o en modelos multilingues de gran tamano, Katip Mask Base apuesta por un encoder BERT de 110 millones de parametros exportado a ONNX (fp32 e int8) para transformers.js, lo que permite ejecutar la anonimizacion directamente en el navegador o en dispositivos sin GPU. Segun la model card, alcanza un 96,1 de puntuacion global en KVKK-Bench v0.1.2, por delante de XLM-RoBERTa Large NER (95,9) con una veinteava parte de su tamano en disco (111,1 MB frente a 2.235,4 MB).
 
-Su relevancia radica en que combina un tamaño reducido (110 MB en int8) con latencia de decenas de milisegundos por documento en Apple Silicon, lo que permite ejecutarlo íntegramente en el navegador mediante transformers.js y ONNX Runtime sin enviar datos sensibles a un servidor. Es, por tanto, una pieza de privacidad por diseño para despachos jurídicos y flujos de redacción documental en turco.
+La version v2 (13 de noviembre de 2026) incorpora 17.967 frases reales en turco procedentes de Turkish Wiki NER, lo que eleva la deteccion de nombres en texto real del 41 % (v1) al 90 %. El modelo esta pensado para integrarse en flujos de redaccion legal, cumplimiento normativo y desidentificacion de expedientes judiciales en turco.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT (BERTurk, cased) |
+| Arquitectura | Transformer encoder (BERT), basado en `dbmdz/bert-base-turkish-cased` |
 | Parametros totales | 110.032.135 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible (BERT base, típicamente 512 tokens; no confirmado en la información) |
-| Tipos de cuantizacion | int8 (ONNX `model_quantized.onnx`, 110,8 MB) y fp32 (ONNX `model.onnx`, 440,3 MB); pesos PyTorch en safetensors |
-| Idiomas soportados | turco (tr) |
-| Licencia | CC BY-SA 4.0 |
-| Formato de pesos | safetensors (PyTorch), ONNX (fp32 e int8) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de BERTurk, tipicamente 512 tokens) |
+| Tipos de cuantizacion | ONNX fp32 e int8 |
+| Idiomas soportados | Turco (tr) |
+| Licencia | CC-BY-SA-4.0 |
+| Formato de pesos | safetensors, ONNX (fp32 e int8) |
+| Libreria | transformers.js |
+| Pipeline | token-classification |
+| Tamano del repositorio | 2,0 GB |
+| Dataset de ajuste | turkish-nlp-suite/turkish-wikiNER (nombres de persona) |
+| Descargas | 181 |
+| Fecha de creacion | 2026-11-11 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un BERT base cased adaptado al turco (`dbmdz/bert-base-turkish-cased`), con 110 millones de parámetros y clasificación token a token mediante etiquetas BIO a nivel de palabra. Las etiquetas se asignan al primer sub-token de cada palabra y el particionado de palabras se controla con la expresión regular `katip.word_regex` definida en `config.json`, tal como hace `src/ner.js` de Katip. Se exportó a ONNX en fp32 e int8 para su ejecución con transformers.js y onnxruntime.
+El modelo es un BERT encoder de 110 millones de parametros derivado de BERTurk en su variante cased, ajustado fino para etiquetado de tokens (NER). La tarea concreta es la identificacion de tres categorias: nombres y apellidos de personas, direcciones y terminos de salud del articulo 6 de la KVKK. Segun la model card, el ajuste combina documentos legales sinteticos con 17.967 frases reales en turco procedentes de Turkish Wiki NER (solo nombres de persona), incorporadas en la version v2 para corregir el sesgo hacia plantillas sinteticas que presentaba la v1.
 
-El entrenamiento de v2 se realizó durante 3 épocas sobre 8.000 documentos sintéticos más 2.246 pseudo-documentos compuestos de ocho frases reales cada uno, en 28 minutos sobre Apple Silicon con MPS. La incorporación de frases reales de Turkish Wiki NER (Altinok, 2023) es la innovación principal de v2: corrige el sesgo hacia texto sintético que hacía que v1 detectara solo el 41% de nombres en frases reales. Las direcciones y los términos de salud siguen aprendiéndose únicamente de documentos sintéticos, lo que el autor señala explícitamente como limitación. No se menciona RLHF, DPO ni decodificación especulativa; es un modelo discriminativo de clasificación, no generativo.
+La innovacion tecnica principal no esta en la arquitectura sino en el pipeline de despliegue: el modelo se exporta a ONNX en fp32 e int8 para ejecutarse con transformers.js en el navegador, lo que permite anonimizacion local sin enviar documentos a un servidor. El sistema completo Katip combina este modelo con reglas deterministas (numeros de identificacion T.C., numeros fiscales, IBAN, direcciones) y un umbral de confianza de 0,5 para conservar los bordes de las entidades detectadas. No se detalla en la informacion disponible el numero total de tokens de entrenamiento, la composicion exacta del dataset sintetico ni si se emplearon tecnicas de RLHF o DPO (no aplicables habitualmente a NER).
 
 ## Capacidades
 
-- Etiquetado de entidades nombradas (NER) en turco con etiquetas BIO a nivel de palabra.
-- Detección de nombres de personas, direcciones y términos de salud del artículo 6 de la KVKK.
-- Redacción/anonimización de datos personales (PII) en documentos legales turcos.
-- Ejecución en navegador y en dispositivo mediante ONNX (fp32 e int8) y transformers.js.
-- Integración con reglas deterministas: el pipeline de Katip combina reglas más el modelo, conservando las aristas de las entidades con puntuación igual o superior a 0,5 (`trust` 0,5, elegido sobre datos de desarrollo).
-- Multilingüe: no; únicamente turco.
-- Tool calling, agentes, razonamiento multi-paso, visión o audio: no aplica; es un modelo de clasificación de tokens, no generativo.
+- Deteccion de nombres y apellidos de personas en texto legal turco, incluyendo nombres turcos y extranjeros.
+- Deteccion de direcciones postales.
+- Deteccion de terminos de salud contemplados en el articulo 6 de la KVKK (datos sensibles).
+- Etiquetado de tokens (token classification) con salida BIO para integracion en pipelines de redaccion.
+- Ejecucion en el dispositivo via ONNX y transformers.js, sin dependencia de servidor.
+- Cuantizacion int8 para despliegue ligero (111,1 MB en disco).
+- Capacidad multilingue limitada: solo turco como idioma soportado.
+- No se documentan capacidades de generacion de texto, razonamiento, codigo, vision, audio, tool calling ni agentes; es un modelo exclusivamente discriminativo de NER.
 
 ## Casos de uso
 
-- Anonimización de expedientes judiciales: el modelo detecta nombres en prosa real de Yargıtay con un 99,3% de exhaustividad y 96,2% de precisión, lo que permite sustituir identidades antes de publicar o compartir resoluciones.
-- Cumplimiento de la KVKK en despachos de abogados: al etiquetar términos de salud del artículo 6 y direcciones, facilita la clasificación de datos sensibles que requieren protección reforzada en la gestión documental interna.
-- Redacción en el navegador para clientes: al ejecutarse en int8 (110,8 MB) con transformers.js, el texto nunca sale del dispositivo del usuario, lo que encaja en flujos de consulta legal con requisitos estrictos de confidencialidad.
-- Preprocesado en pipelines de e-discovery: la latencia de unos 27 ms por documento sintético y 19 ms por frase en Apple Silicon permite procesar lotes grandes de documentos antes de indexarlos o enviarlos a revisión humana.
-- Enmascarado previo a modelos generativos: sirve como paso de saneado antes de enviar textos jurídicos a un LLM en la nube, reduciendo la exposición de PII en el prompt.
-- Etiquetado asistido para revisión humana: con un 89,8% de exhaustividad y 89,9% de precisión en frases reales de Wikipedia, es útil como primera pasada que un revisor confirma o corrige, reduciendo el trabajo manual.
-- Ajuste fino adicional: los pesos en safetensors permiten reentrenar el modelo sobre dominios jurídicos específicos (por ejemplo, contratos mercantiles) partiendo de una base ya adaptada al turco legal.
+- Anonimizacion de expedientes judiciales: el modelo detecta nombres de partes, testigos y profesionales en resoluciones del Yargitay (Tribunal Supremo turco) para su publicacion con datos personales suprimidos. La model card reporta 99,9 de F2 en nombres turcos de corte y 97,6 en nombres extranjeros.
+- Cumplimiento de la KVKK en despachos de abogados: redaccion automatica de nombres, direcciones y datos de salud en escritos y contratos antes de compartirlos con terceros o archivarlos, con ejecucion local que evita la salida de datos del despacho.
+- Desidentificacion de formularios y peticiones: el benchmark Forms cubre numeros de identidad T.C., numeros fiscales, IBAN y direcciones sobre 306 peticiones y formularios colegiales sinteticos, con 99,4 de puntuacion.
+- Preprocesamiento de corpus para investigacion en PLN juridico: eliminacion de datos personales de conjuntos de sentencias antes de su publicacion o uso en entrenamiento de otros modelos.
+- Integracion en navegador para editores legales: gracias a la exportacion ONNX y transformers.js, puede incrustarse en una interfaz web que resalte y enmascare entidades en tiempo real mientras el usuario redacta.
+- Filtrado de datos en pipelines de ingestion documental: como paso previo a un RAG o a un sistema de gestion documental, para impedir que datos personales lleguen a indices o almacenes no autorizados.
+- Auditoria de privacidad en conjuntos de datos: deteccion masiva de PII en repositorios de textos turcos para evaluar el riesgo de reidentificacion.
 
 ## Benchmarks y rendimiento
 
-Resultados en Katip (reglas + modelo, tal como se ejecuta la demo; umbral 0,5):
+Resultados en KVKK-Bench v0.1.2 (puntuacion sobre 100, mayor es mejor). La columna Overall es la F2 ponderada para deteccion de nombres en texto real; Forms cubre identificadores y direcciones en formularios sinteticos y no forma parte de Overall.
+
+| Sistema | Overall | Nombres turcos (corte) | Nombres extranjeros (corte) | Texto cotidiano | Forms | Tamano (MB) |
+|---|---|---|---|---|---|---|
+| Katip Mask Base · tr v2 | 96,1 | 99,9 | 97,6 | 84,9 | 99,4 | 111,1 |
+| XLM-RoBERTa Large NER | 95,9 | 97,6 | 97,5 | 89,9 | 41,6 | 2.235,4 |
+| XLM-RoBERTa Base Turkish NER | 95,7 | 98,5 | 98,2 | 86,3 | – | 1.109,8 |
+| Katip rules + GLiNER2 · tr fine-tuned | 95,5 | 98,7 | 97,3 | 86,0 | 98,2 | 1.228,7 |
+| GLiNER2 PII Multi | 95,0 | 98,1 | 98,2 | 83,9 | 43,2 | 1.228,4 |
+| PII Redactor Base | 94,0 | 97,8 | 99,1 | 79,5 | 63,8 | 1.230,3 |
+| Katip Mask Mini · tr v2 | 93,0 | 99,1 | 97,2 | 73,6 | 98,6 | 31,4 |
+| BERTurk NER | 91,6 | 97,4 | 91,7 | 77,1 | 38,3 | 440,1 |
+| GLiNER Multi PII v1 | 91,3 | 93,1 | 92,9 | 85,2 | – | 1.155,8 |
+| GLiNER2.5 KVKK TR v2 | 88,1 | 90,1 | 90,3 | 80,8 | 92,3 | 1.149,4 |
+| Katip Mask Nano · tr v1.1 | 85,9 | 94,4 | 95,5 | 55,2 | 97,7 | 2,9 |
+| ModernBERT-TR PII NER | 85,3 | 99,0 | 96,9 | 39,4 | – | 597,5 |
+| Qwen2.5 1.5B Instruct (zero-shot) | 57,5 | 59,1 | 57,6 | 53,7 | – | 3.087 |
+| Privacy Filter Multilingual v2 | 57,2 | 59,8 | 57,4 | 50,7 | – | 2.799,2 |
+| GLiNER2.5 Mürşit KVKK TR v1 | 53,3 | 60,8 | 46,7 | 41,1 | 88,5 | 661,9 |
+| Privacy Filter (OpenAI) | 51,3 | 58,0 | 58,0 | 27,9 | – | 2.799 |
+| Hushmark TR 289M | 50,4 | 50,9 | 48,8 | 50,8 | 51,8 | 1.155,8 |
+| Piiranha v1 | 49,8 | 41,4 | 61,5 | 59,4 | – | 1.112,9 |
+| Presidio | 45,0 | 39,3 | 44,0 | 60,4 | 36,1 | 11 |
+| Werea KVKK PII 150M | 24,9 | 31,0 | 7,3 | 27,2 | 19,7 | 597,4 |
+| OpenMed PII Turkish Small | 19,1 | 11,8 | 18,8 | 37,5 | – | 133 |
+
+En conjuntos de prueba publicos de otros equipos, Katip Mask Base obtiene F2 de 95,9 en nm-kvkk-pii-6K de NewMind, 95,9 en piimask TR, 95,2 en el conjunto de Çağrı Güngör y 95,8 en el de Werea, frente a 93,9, 93,8, 72,6 y 54,3 de NewMind kvkk-v2. La ventaja es significativa en nm6k, piimask y Çağrı (bootstrap emparejado al 95 %); en documentos piimask con plantillas no vistas ambos empatan (96,5), y el resultado de Werea no es independiente porque sus mitades comparten plantillas. NewMind mantiene mayor precision en nm6k (99,7 frente a 91,2) y piimask (93,2 frente a 89,8). Katip deja menos datos personales legibles en Çağrı (6,8 % frente a 41,1 %) y Werea (26,3 % frente a 65,2 %).
+
+Resultados dentro del sistema Katip (reglas + modelo, tal como se ejecuta la demo):
 
 | Conjunto | v2 | v1 |
 |---|---|---|
-| Ciego (80 documentos sintéticos, 757 valores) | 757 / 757; nombres 365 / 365 | 757 / 757 |
-| Retenido (60 documentos sintéticos, 618 valores) | 618 / 618 | 618 / 618 |
-| Prosa legal sin nombres | 3 falsos positivos | 3 |
-| Prosa real de Yargıtay, nombres reanonimizados (1.643 nombres) | 99,3% encontrados, 96,2% precisión | 98,6%, 95,9% |
-| Frases reales de Wikipedia, test Wiki NER (654 nombres) | 89,8% [87,1–92,1], 89,9% precisión | 40,7% |
-
-Resultados del modelo solo, sin reglas:
-
-| Conjunto | Nombres | Direcciones | Términos de salud | Spans extra |
-|---|---|---|---|---|
-| Ciego (80 documentos, 16 estilos, 4 nuevos) | 364 / 365 | 80 / 80 | 25 / 26 | 0 |
-| Retenido (60 documentos) | 275 / 275 | 70 / 70 | 26 / 26 | 0 |
-| Wiki NER dev (1.000 frases reales) | 583 / 641 | — | — | 53 |
+| Ciego (80 documentos sinteticos, 757 valores) | 757/757, nombres 365/365 | 757/757 |
+| Retenido (60 documentos sinteticos, 618 valores) | 618/618 | 618/618 |
+| Prosa legal sin nombres | 3 falsas alarmas | 3 |
+| Prosa real del Yargitay con nombres reanonimizados | no disponible | no disponible |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita; por tamaño, el modelo int8 (110,8 MB) cabe holgadamente en cualquier GPU consumer, y el fp32 (440,3 MB) también.
-- GPU recomendadas: cualquier GPU moderna sirve; el autor reporta entrenamiento e inferencia en Apple Silicon (MPS) y ejecución en navegador vía onnxruntime. Para servidores, A100, H100 o RTX 4090 son sobredimensionadas para este modelo.
-- Cabe en GPU consumer: sí, en todas las gamas actuales; también en CPU y en el navegador.
-- Opciones de despliegue: transformers.js con ONNX Runtime (int8 y fp32), PyTorch con safetensors para reentrenamiento. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a un encoder de clasificación).
-- Latencia y throughput: aproximadamente 27 ms por documento sintético y 19 ms por frase en un Mac con Apple Silicon (int8 ONNX, onnxruntime). No se publican cifras de throughput en GPU.
+- VRAM estimada para inferencia: inferior a 1 GB en fp32 (110 millones de parametros); aproximadamente 110 MB en int8.
+- GPU recomendadas: no requiere GPU; puede ejecutarse en CPU. Cualquier GPU consumer (GTX 1060 o superior, RTX 3060, RTX 4090) acelera la inferencia, pero no es necesaria.
+- Cabe en cualquier GPU consumer y en CPU de portatil; el modelo int8 de 111,1 MB cabe incluso en dispositivos moviles y navegadores.
+- Opciones de despliegue: transformers.js (objetivo principal, via ONNX), ONNX Runtime, y potencialmente vLLM o TGI no aplican por ser un encoder de clasificacion; llama.cpp y Ollama no estan soportados por el formato BERT clasico.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Enfoque |
+| Modelo | Parametros | Contexto | Overall KVKK-Bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Katip Mask Base (este) | 110 M | no disponible | tr | CC BY-SA 4.0 | NER legal y PII en turco, ONNX |
-| dbmdz/bert-base-turkish-cased | 110 M | no disponible | tr | no disponible en la información | BERTurk base, sin ajuste NER |
-| Turkish Wiki NER (Altinok, 2023) | no disponible | no disponible | tr | CC BY-SA 4.0 | Dataset NER de Wikipedia en turco |
-| Modelos NER multilingües genéricos | no disponible | no disponible | varios | no disponible | NER general, sin especialización legal turca |
+| Katip Mask Base · tr v2 | 110 M | no disponible | 96,1 | CC-BY-SA-4.0 | Hugging Face, ONNX, transformers.js |
+| XLM-RoBERTa Large NER | ~560 M | 512 | 95,9 | MIT (modelo base) | Hugging Face |
+| GLiNER2 PII Multi | no disponible | no disponible | 95,0 | no disponible | Hugging Face |
+| BERTurk NER | ~110 M | 512 | 91,6 | no disponible | Hugging Face |
+| Katip Mask Mini · tr v2 | no disponible | no disponible | 93,0 | no disponible | Hugging Face |
+| Presidio | basado en reglas + spaCy | no aplica | 45,0 | MIT | GitHub |
 
-No se dispone en la información proporcionada de resultados de benchmarks comparativos con otros modelos NER turcos especializados en dominio legal.
+La ventaja competitiva de Katip Mask Base es la combinacion de precision alta (96,1 global, 99,4 en formularios) con un tamano de 111,1 MB y ejecucion en navegador. Frente a XLM-RoBERTa Large NER, ofrece puntuacion global ligeramente superior con una veinteava parte del tamano y mejor cobertura de formularios (99,4 frente a 41,6). Frente a Presidio, la mejora es sustancial en texto turco (96,1 frente a 45,0).
 
 ## Limitaciones y advertencias
 
-- Las direcciones y los términos de salud se aprenden solo de documentos sintéticos; su rendimiento en texto real no está validado.
-- El conjunto de prueba de sentencias reales usa decisiones con nombres reinsertados manualmente, porque las resoluciones publicadas en Turquía están anonimizadas; el autor reconoce que la validación con expedientes reales consentidos de despachos piloto está pendiente.
-- Solo soporta turco; no es multilingüe.
-- Riesgo de falsos positivos en prosa legal sin nombres: 3 falsos positivos reportados en el conjunto de prosa legal.
-- Licencia CC BY-SA 4.0: obliga a atribuir a Katip y al dataset Turkish Wiki NER, y a compartir las adaptaciones bajo la misma licencia. El código de Katip es AGPL-3.0; para licencia comercial del código o soporte hay que abrir una incidencia en el repositorio.
-- Es un modelo discriminativo de etiquetado, no generativo: no admite tool calling, agentes ni razonamiento multi-paso.
-- El umbral de confianza (0,5) se eligió sobre datos de desarrollo; en producción conviene recalibrarlo según el dominio.
+- Sesgos conocidos: el modelo se entreno sobre documentos legales sinteticos y frases de Wikipedia; puede tener sesgo hacia plantillas y estilos de redaccion juridica turca. La v2 corrigio parcialmente el sesgo hacia plantillas sinteticas, pero la propia model card reconoce que en documentos con plantillas no vistas empata con NewMind kvkk-v2.
+- Riesgo de alucinacion en sentido estricto no aplica (es un modelo discriminativo), pero si existe riesgo de falsos negativos (datos personales no detectados) y falsos positivos (entidades mal etiquetadas). La model card reporta 3 falsas alarmas en prosa legal sin nombres.
+- Limitacion de contexto: heredada de BERTurk, tipicamente 512 tokens; documentos mas largos requieren fragmentacion previa. Este dato no se explicita en la model card.
+- Limitacion de idioma: solo turco. No debe usarse con textos en otros idiomas sin validacion previa.
+- Precision inferior a NewMind kvkk-v2 en nm6k (91,2 frente a 99,7) y piimask (89,8 frente a 93,2), lo que implica mas falsos positivos en esos conjuntos.
+- Restricciones de licencia: CC-BY-SA-4.0 exige atribucion y compartir bajo la misma licencia las obras derivadas; puede ser incompatible con uso comercial propietario sin consulta legal.
+- El benchmark KVKK-Bench y varios conjuntos de prueba son sinteticos o comparten plantillas (caso de Werea), por lo que los resultados pueden no generalizar a documentos reales fuera de dominio.
+- El modelo forma parte de un sistema (Katip) que combina reglas y modelo; los resultados reportados en la demo incluyen esas reglas y no son atribuibles solo al modelo.
+- Solo 181 descargas y 0 likes en el momento de la consulta: ecosistema pequeno, poca validacion externa independiente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/f1k/katip-mask-base
-- Demo Katip Mask: https://huggingface.co/spaces/f1k/katip-mask
-- Repositorio Katip (código y scripts de laboratorio): https://github.com/fikrifirat/katip
-- Scripts de método y evaluación: https://github.com/fikrifirat/katip/tree/lab/lab
-- Comparativa de tamaño, velocidad y precisión: https://github.com/fikrifirat/katip#size-speed-and-accuracy-side-by-side
-- Dataset Turkish Wiki NER: https://github.com/turkish-nlp-suite/Turkish-Wiki-NER-Dataset
-- Modelo base: https://huggingface.co/dbmdz/bert-base-turkish-cased
+- Demo Katip Mask (espacio): https://huggingface.co/spaces/f1k/katip-kvkk-anonymization
+- Benchmark KVKK-Bench (espacio): https://huggingface.co/spaces/f1k/kvkk-bench
+- Repositorio Katip en GitHub: https://github.com/fikrifirat/katip
+- Resultados externos (RESULTS.md): https://github.com/fikrifirat/katip/blob/legal-study/lab/legal/external/RESULTS.md
+- Receta GLiNER2 + Katip: https://github.com/fikrifirat/katip/blob/legal-study/lab/colab/gliner2_katip_recipe.ipynb
+- Modelo base BERTurk: https://huggingface.co/dbmdz/bert-base-turkish-cased
+- Dataset Turkish Wiki NER: https://huggingface.co/datasets/turkish-nlp-suite/turkish-wikiNER
+- Modelo hermano Katip Mask Mini: https://huggingface.co/f1k/katip-mask-mini
+- Modelo hermano Katip Mask Nano: https://huggingface.co/f1k/katip-mask-nano

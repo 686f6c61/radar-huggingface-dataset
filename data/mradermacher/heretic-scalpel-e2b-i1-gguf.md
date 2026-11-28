@@ -2,82 +2,88 @@
 
 ## Resumen
 
-Heretic-Scalpel-E2B-i1-GGUF es una recopilación de cuantizaciones GGUF, generadas con imatrix, del modelo aifeifei798/Heretic-Scalpel-E2B. El autor de las cuantizaciones es mradermacher, un conocido publicador de versiones GGUF de modelos open source, mientras que el modelo original procede del usuario aifeifei798. El repositorio no incluye una model card propia del modelo base: toda la documentación disponible se centra en el proceso de cuantización y en la lista de ficheros ofrecidos.
+Heretic-Scalpel-E2B-i1-GGUF es una recopilación de cuantizaciones GGUF generadas por mradermacher a partir del modelo base aifeifei798/Heretic-Scalpel-E2B. Se trata de un modelo de lenguaje conversacional de aproximadamente 4.647 millones de parámetros (según los pesos en safetensors del modelo original), empaquetado en formato GGUF para su ejecución eficiente en CPU y GPU mediante llama.cpp y herramientas compatibles. La model card indica que es un modelo de visión, con archivos mmproj disponibles en el repositorio estático del mismo autor.
 
-El modelo base declara 4.647.450.147 parámetros totales según los datos de safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 4,6 mil millones de parámetros. El nombre "E2B" y la referencia a la licencia de Gemma 4 en el campo `license_link` sugieren un vínculo con la familia Gemma, aunque esta relación no se detalla en la información disponible. El modelo está etiquetado como conversacional y orientado al inglés.
+El interés principal de esta publicación reside en la disponibilidad de cuantizaciones con imatrix (etiquetadas i1), que aplican una matriz de importancia para preservar mejor la calidad en niveles de compresión agresivos. El repositorio ofrece un abanico de 22 cuantizaciones que van desde i1-Q2_K (3,1 GB) hasta i1-Q6_K (3,9 GB), lo que permite desplegar el modelo en hardware de consumo con requisitos de memoria moderados. Está publicado bajo licencia Apache 2.0, aunque la model card enlaza a la licencia de Gemma 4 de Google, lo que introduce una ambigüedad relevante para uso comercial.
 
-La relevancia de este repositorio es práctica: ofrece el modelo en múltiples niveles de cuantización (desde i1-Q2_K de 3,1 GB hasta i1-Q6_K de 3,9 GB), lo que permite ejecutarlo en hardware de consumo con llama.cpp y derivados. Es, por tanto, una vía de acceso al modelo base para entornos con VRAM limitada, no un modelo nuevo en sí mismo.
+El modelo se distribuye únicamente en inglés y está orientado a casos de conversación. Al tratarse de una cuantización y no de un modelo original, no se dispone de información sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks en la documentación proporcionada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base sin model card detallada; probable familia Gemma por el license_link) |
+| Arquitectura | no disponible (modelo base: aifeifei798/Heretic-Scalpel-E2B) |
 | Parametros totales | 4.647.450.147 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (además de fichero imatrix) |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K (imatrix) |
 | Idiomas soportados | en |
-| Licencia | apache-2.0 (con license_link a la licencia de Gemma 4) |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base en safetensors |
+| Licencia | apache-2.0 (model card enlaza a la licencia de Gemma 4) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. El repositorio es exclusivamente una colección de cuantizaciones GGUF con imatrix del modelo aifeifei798/Heretic-Scalpel-E2B, y la model card no describe capas, tipo de atención, mecanismo de mezcla de expertos ni detalles del transformer subyacente. El único dato estructural fiable es el recuento de parámetros (4.647.450.147) y la etiqueta de modelo conversacional.
+No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. El nombre "E2B" sugiere una variante de la familia Gemma, y la model card enlaza explícitamente a la licencia de Gemma 4, pero no se confirma la arquitectura concreta (transformer denso, MoE u otra). Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-Tampoco hay información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La referencia a la licencia de Gemma 4 en el campo `license_link` es el único indicio sobre el linaje del modelo, pero no se confirma en el texto. Las cuantizaciones i1 emplean ficheros imatrix generados por el propio mradermacher, técnica que mejora la calidad de las cuantizaciones de baja precisión respecto a las estáticas; el repositorio incluye además un fichero imatrix independiente (0,1 GB) para que otros puedan generar sus propias cuantizaciones.
+La contribución técnica de esta publicación es el proceso de cuantización: se generan cuantizaciones ponderadas con imatrix a partir de un archivo de importancia (Heretic-Scalpel-E2B.imatrix.gguf, 0,1 GB), lo que según el autor mejora la calidad frente a cuantizaciones estáticas de tamaño similar. La model card incluye además referencias a comparativas de perplejidad entre tipos de cuantización de ikawrakow y Artefact2. El modelo base se describe como modelo de visión, con archivos mmproj en el repositorio estático.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como "conversational" y su uso previsto es el diálogo multi-turno.
-- Idiomas: únicamente inglés según el campo `language` de la model card.
-- Razonamiento, código y matemáticas: no disponible; no hay documentación que confirme ni descarte estas capacidades.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multimodales (visión, audio): no disponible.
-- Modo de pensamiento (thinking mode): no disponible.
+- Generación de texto conversacional en inglés.
+- Capacidades de visión: la model card indica que es un modelo de visión y que los archivos mmproj están en el repositorio estático.
+- Soporte de tool calling / function calling: no disponible en la documentación.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la documentación.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la documentación.
 
 ## Casos de uso
 
-- Despliegue local en estaciones de trabajo con GPU de consumo: las cuantizaciones i1-Q4_K_M (3,5 GB) e i1-Q5_K_M (3,7 GB) permiten ejecutar un modelo de 4,6 mil millones de parámetros en GPUs con 8 GB de VRAM mediante llama.cpp, sin necesidad de infraestructura en la nube.
-- Prototipado de asistentes conversacionales en inglés: al ser un modelo conversacional cuantizado, sirve para validar flujos de chat multi-turno en entornos de desarrollo antes de escalar a modelos mayores.
-- Inferencia en CPU: las cuantizaciones de menor tamaño (i1-Q2_K, 3,1 GB; i1-IQ3_S, 3,2 GB) permiten ejecución en CPU con RAM moderada, útil para pruebas offline o entornos sin GPU.
-- Evaluación comparativa de cuantizaciones: el repositorio incluye 15 variantes de cuantización más el fichero imatrix, lo que permite medir el impacto de la precisión en la calidad de salida sobre una misma tarea.
-- Generación de cuantizaciones propias: el fichero imatrix publicado permite a otros usuarios producir sus propias versiones GGUF con calidades ajustadas a sus necesidades.
-- Integración en herramientas de escritorio: al ser GGUF, es compatible con llama.cpp, Ollama y LM Studio, lo que facilita su inclusión en aplicaciones locales de escritorio para tareas de generación de texto en inglés.
+- Asistente conversacional local: el modelo puede ejecutarse en equipos de consumo con cuantizaciones i1-Q4_K_M (3,5 GB), lo que permite desplegar un chatbot en inglés sin conexión a servicios en la nube.
+- Prototipado rápido en portátiles: con i1-Q2_K o i1-IQ3_S (3,1-3,2 GB) se puede validar un flujo conversacional en hardware con poca VRAM antes de escalar a un modelo mayor.
+- Análisis de imágenes en local: al ser un modelo de visión, puede utilizarse con los archivos mmproj del repositorio estático para tareas de descripción o respuesta a preguntas sobre imágenes, siempre que se valide la calidad de las cuantizaciones.
+- Evaluación de cuantizaciones: el abanico de 22 variantes permite comparar perplejidad y calidad de salida entre niveles de compresión para elegir el equilibrio adecuado en producción.
+- Integración en pipelines de CI/CD para pruebas de regresión: un modelo pequeño y ligero permite ejecutar pruebas automatizadas de generación de texto en cada commit sin coste de API.
+- Despliegue en entornos con restricciones de red: al distribuirse como GGUF y ejecutarse con llama.cpp, puede operar en sistemas aislados donde no se permite el acceso a modelos alojados.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 3,1 GB (i1-Q2_K) y 3,9 GB (i1-Q6_K) para los pesos cuantizados; hay que añadir el espacio del contexto KV cache, que depende de la longitud de contexto configurada.
-- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM puede alojar las cuantizaciones de 4-5 bits con contexto moderado; una RTX 3060 de 12 GB o RTX 4090 de 24 GB ofrecen margen amplio para contexto largo.
-- Cabe en GPU de consumo: sí, en todas las cuantizaciones listadas; las versiones i1-Q4_K_M e i1-Q5_K_M son las más equilibradas según las notas del autor.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, LM Studio, y servidores compatibles con la API de endpoints (la etiqueta `endpoints_compatible` está presente).
-- Latencia y throughput: no disponible; no se han publicado mediciones.
+- VRAM estimada para inferencia: entre 3,1 GB (i1-Q2_K) y 3,9 GB (i1-Q6_K) solo para los pesos; hay que sumar el contexto KV cache y, en su caso, el proyector de visión (mmproj).
+- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para las cuantizaciones más pequeñas; para i1-Q6_K se recomienda 8 GB o más.
+- Cabe en GPU de consumo: sí, en tarjetas como RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4070 (12 GB) o superiores; también en GPUs integradas con suficiente memoria compartida, aunque con menor throughput.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; la etiqueta endpoints_compatible sugiere compatibilidad con endpoints de inferencia.
+- Latencia y throughput estimados: no disponible en la documentación.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de rendimiento ni especificaciones del modelo base que permitan una comparación rigurosa con alternativas de la misma categoría. Como referencia estructural, el modelo tiene 4,6 mil millones de parámetros y licencia apache-2.0, pero sin benchmarks ni contexto documentado no es posible establecer una comparativa fundamentada.
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+|---|---|---|---|---|---|
+| Heretic-Scalpel-E2B-i1-GGUF | 4.647 M | no disponible | apache-2.0 | GGUF | Cuantizaciones imatrix de un modelo base de visión |
+| Heretic-Scalpel-E2B-GGUF (static) | 4.647 M | no disponible | apache-2.0 | GGUF | Cuantizaciones estáticas del mismo modelo base |
+| Modelo base aifeifei798/Heretic-Scalpel-E2B | 4.647 M | no disponible | apache-2.0 | safetensors | Pesos originales sin cuantizar |
+
+No se dispone de información sobre modelos alternativos de la misma categoría en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Idioma: el modelo solo declara soporte de inglés; no se garantiza un rendimiento adecuado en castellano u otros idiomas.
-- Documentación insuficiente: el repositorio no incluye model card del modelo base, por lo que se desconocen arquitectura, contexto máximo, datos de entrenamiento y comportamiento esperado.
-- Riesgo de alucinación: no cuantificado; al no haber benchmarks ni evaluaciones publicadas, no se puede estimar la fiabilidad factual del modelo.
-- Licencia: el repositorio declara apache-2.0, pero el campo `license_link` apunta a la licencia de Gemma 4, lo que introduce ambigüedad sobre los términos reales de uso comercial. Conviene verificar la licencia del modelo base antes de un despliegue en producción.
-- Cuantizaciones de baja precisión: las variantes i1-Q2_K e i1-Q3_K_S pueden degradar la calidad de forma notable; el propio autor recomienda IQ3_XXS o IQ3_XS frente a Q3_K* en esos rangos.
-- Sin garantías de producción: al tratarse de una cuantización de un modelo de terceros sin evaluación publicada, no hay evidencia de robustez, seguridad ni sesgos controlados.
+- Solo soporta inglés; no se ha validado su comportamiento en castellano ni en otros idiomas.
+- Al ser una cuantización, puede presentar degradación de calidad frente al modelo base, especialmente en las variantes de 2 y 3 bits.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan mitigaciones específicas.
+- Ambigüedad de licencia: la etiqueta indica apache-2.0, pero la model card enlaza a la licencia de Gemma 4, que puede imponer restricciones adicionales para uso comercial; conviene verificar antes de desplegar en producción.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad.
+- La información sobre contexto, arquitectura y entrenamiento no está disponible, lo que dificulta evaluar su idoneidad para tareas de contexto largo.
+- Las capacidades de visión dependen de los archivos mmproj del repositorio estático; no se garantiza que todas las cuantizaciones incluyan el proyector.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Heretic-Scalpel-E2B-i1-GGUF
 - Modelo base: https://huggingface.co/aifeifei798/Heretic-Scalpel-E2B
-- Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Heretic-Scalpel-E2B-GGUF
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Heretic-Scalpel-E2B-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Heretic-Scalpel-E2B-i1-GGUF
-- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Preguntas frecuentes y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
-- Licencia enlazada (Gemma 4): https://ai.google.dev/gemma/docs/gemma_4_license
+- README de referencia para GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Comparativa de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

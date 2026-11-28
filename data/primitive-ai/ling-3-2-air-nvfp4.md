@@ -2,99 +2,98 @@
 
 ## Resumen
 
-Ling-3.2-air-NVFP4 es una cuantización de 4 bits (NVFP4) del modelo multimodal Ling-3.2-air, desarrollado originalmente por inclusionAI. La ficha la publica primitive-ai, un estudio centrado en economía de inferencia para sistemas LLM en producción. El modelo base es un transformer disperso de tipo Mixture-of-Experts (MoE) con 124.000 millones de parámetros totales y 5.500 millones activos, pensado para tareas de razonamiento, código y comprensión de imagen y texto.
+Ling-3.2-air-NVFP4 es una compilación cuantizada del modelo multimodal inclusionAI/Ling-3.2-air, publicada por primitive-ai. El modelo base es un transformer MoE multimodal de 124.000 millones de parámetros totales con 5.500 millones activos, diseñado para tareas de imagen-texto a texto. Esta versión reduce el peso del repositorio de 129,28 GB (FP8) a 77,89 GB mediante la cuantización de los 512 expertos enrutados de cada capa MoE a NVFP4, manteniendo el resto de componentes en BF16.
 
-La relevancia de esta versión concreta es de despliegue: reduce el peso del checkpoint de 129,33 GB (release FP8 original) a 77,86 GB, lo que permite servirlo en una única GPU de 96 GB (RTX PRO 6000 Blackwell) en lugar de las dos tarjetas que exige la versión FP8 con tensor parallel 2. Solo los expertos enrutados (512 por capa MoE, más la capa MTP) se almacenan en NVFP4; atención, expertos compartidos, MLPs densos, routers, torre de visión, embeddings y LM head permanecen en BF16.
+La relevancia de esta compilación es práctica: permite ejecutar un modelo de 124B en una única GPU de 96 GB (RTX PRO 6000 Blackwell), con un pool KV de 1.022.829 tokens a una ventana de 32.768 tokens. El autor reporta 593 tok/s a concurrencia 32 y 100,6 tok/s en flujo único, con una deriva de +18,85×10⁻³ nats por token respecto a la versión FP8 de referencia y un 95,9% de acuerdo top-1.
 
-La arquitectura combina 42 capas: 35 de atención lineal KDA (Kimi Delta Attention) y 7 de MLA (Multi-head Latent Attention) con compuerta, más una capa MTP (multi-token prediction). Es un modelo multimodal image-text-to-text con licencia MIT, lo que facilita su uso comercial, aunque la información pública disponible sobre benchmarks de esta build concreta está todavía pendiente de publicación.
+Se distribuye bajo licencia MIT, la misma del modelo base, y está pensada para servirse con vLLM mediante el formato compressed-tensors. La compilación se construyó a partir de la release FP8, ya que inclusionAI no ha publicado pesos BF16 de este modelo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE multimodal (transformer híbrido: 35 capas KDA de atención lineal + 7 capas MLA con compuerta), con torre de visión y capa MTP |
-| Parametros totales | 127.920.654.544 (~124 B) |
-| Parametros activos | ~5,5 B (top-8 de 512 expertos enrutados + 1 experto compartido por capa MoE) |
-| Longitud de contexto | 32.768 tokens en la configuración de servicio recomendada (el máximo nativo del modelo base no se detalla en la información disponible) |
-| Tipos de cuantizacion | NVFP4 (E2M1 con escala E4M3 por cada 16 valores y escala global FP32) en expertos enrutados; BF16 en el resto de módulos |
+| Arquitectura | Transformer MoE multimodal con atención híbrida (35 capas KDA de atención lineal + 7 capas MLA con compuerta), 42 capas en total |
+| Parametros totales | 127.920.654.544 (124B según model card) |
+| Parametros activos | 5.500 millones |
+| Longitud de contexto | 32.768 tokens (ventana configurada en el ejemplo de despliegue); pool KV de 1.022.829 tokens en una GPU de 96 GB |
+| Tipos de cuantizacion | NVFP4 (E2M1 con escala E4M3 por cada 16 valores y escala global FP32) en expertos enrutados; BF16 en atención, expertos compartidos, MLPs densos, routers, torre de visión, embeddings y LM head |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | safetensors con `compressed-tensors` (checkpoint cuantizado NVFP4/BF16 mixto) |
-
-Otros datos técnicos: tamaño del repositorio 77,9 GB, hidden size 2560, ancho de experto 768, 42 capas totales, 512 expertos enrutados con top-8 y un experto compartido por capa MoE, más dos MLPs densos en las capas 0-1.
+| Formato de pesos | safetensors con compressed-tensors; librería vLLM |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Ling-3.2-air es un MoE disperso de 124 B parámetros totales con 5,5 B activos por token. Cada capa MoE contiene 512 expertos enrutados (se activan los 8 mejores) y un experto compartido siempre activo. La parte de atención es híbrida: 35 capas usan KDA (atención lineal con estado recurrente, orientada a eficiencia en contextos largos) y 7 capas usan MLA (Multi-head Latent Attention) con compuerta. Incorpora además una capa MTP para decodificación multi-token y una torre de visión que lo convierte en modelo image-text-to-text.
+El modelo base Ling-3.2-air emplea una arquitectura MoE con 42 capas: 35 capas de atención lineal KDA y 7 capas de atención MLA con compuerta. Cada capa MoE contiene 512 expertos enrutados (top-8) más un experto compartido, con tamaño oculto de 2560 y anchura de experto de 768. Incluye además una torre de visión y una capa MTP (multi-token prediction). Los parámetros totales ascienden a 124B, con 5,5B activos por token.
 
-Esta build concreta no entrena nada: es una cuantización. Como inclusionAI no publicó pesos BF16, primitive-ai partió del release FP8 (W8A8 con bloques de 128×128), dequantizó esos tensores a BF16 y volvió a cuantizar los expertos enrutados a NVFP4. En los expertos, las proyecciones gate y up comparten una única escala global porque vLLM las fusiona; las activaciones que entran en los expertos se cuantizan a NVFP4 en tiempo de ejecución. Los detalles de entrenamiento del modelo base (número de tokens, composición del dataset, si hubo RLHF/DPO) no están disponibles en la información proporcionada.
+Esta compilación concreta no entrena el modelo: parte de la release FP8 de inclusionAI, desquantiza los tensores FP8 (bloques de 128×128) a BF16 y cuantiza los expertos enrutados a NVFP4. Las proyecciones gate y up de cada experto comparten una escala global porque vLLM las fusiona. La torre de visión, los embeddings, el LM head y las normas son byte-idénticos a la release original. No se dispone de información sobre el dataset de entrenamiento, el número de tokens o las etapas de alineación (RLHF/DPO) del modelo base en la información proporcionada.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multi-paso, con modo de pensamiento (`enable_thinking: true`) recomendado por inclusionAI.
-- Comprensión de imagen y texto (pipeline `image-text-to-text`) mediante torre de visión integrada.
-- Tool calling / function calling nativo, con parser `ling3` en vLLM y `--enable-auto-tool-choice`.
-- Capacidades de agente y razonamiento multi-turno, apoyadas en el parser de razonamiento `ling3`.
-- Decodificación multi-token (MTP) para acelerar la generación.
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- Parámetros de muestreo recomendados por el autor del modelo base: temperature 1.0, top_p 0.95, top_k 20.
+- Generación de texto y razonamiento con modo de pensamiento activable (`enable_thinking: true` en `chat_template_kwargs`).
+- Procesamiento de imagen-texto a texto (pipeline `image-text-to-text`) mediante torre de visión integrada.
+- Tool calling y function calling, con parser `ling3` en vLLM y `--enable-auto-tool-choice`.
+- Razonamiento multi-paso y uso en agentes, con parser de razonamiento `ling3`.
+- Capacidades multilingües: no disponible la lista concreta de idiomas.
+- Decodificación multi-token mediante capa MTP.
+- Modo de abstención: el autor reporta una puntuación de 80,0 en la suite de abstención, lo que indica cierta capacidad de declinar responder cuando no dispone de información.
 
 ## Casos de uso
 
-- Asistente multimodal en producción: el modelo acepta imagen y texto en la misma conversación, por lo que sirve para interfaces de soporte donde el usuario adjunta capturas, facturas o diagramas y espera respuestas razonadas.
-- Automatización de agentes con tool calling: al soportar function calling nativo y parser dedicado en vLLM, puede encadenar llamadas a APIs (consulta de bases de datos, ticketing, pagos) dentro de flujos multi-paso.
-- Generación y revisión de código: los 5,5 B parámetros activos por token permiten servir código con coste de inferencia contenido en una sola GPU, integrándolo en pipelines de CI/CD o asistentes de IDE.
-- Extracción de información de documentos con imagen: digitalización de formularios, albaranes o informes escaneados combinando la torre de visión con razonamiento sobre el texto extraído.
-- Razonamiento con contexto largo: los 32.768 tokens configurados permiten analizar contratos, informes técnicos o hilos de conversación extensos en una sola pasada.
-- Despliegue en infraestructura de una sola tarjeta: al caber en 96 GB, es adecuado para entornos on-premise o cloud con una RTX PRO 6000 Blackwell, sin necesidad de tensor parallel ni de dos GPUs.
-- Moderación y clasificación asistida: con modo de razonamiento activado, puede justificar decisiones de clasificación o abstención en flujos de revisión de contenido.
+- Asistencia conversacional multimodal: el modelo acepta imágenes y texto en la misma conversación, adecuado para soporte técnico donde el usuario adjunta capturas de pantalla o diagramas junto a su consulta.
+- Automatización de agentes con tool calling: la integración con el parser `ling3` de vLLM permite conectar el modelo a APIs externas y ejecutar flujos multi-paso, con una puntuación de 79,8 en la suite de tool calls del autor.
+- Análisis de documentos con componente visual: la torre de visión y la ventana de 32.768 tokens permiten procesar páginas escaneadas o capturas junto a instrucciones largas.
+- Generación de código en pipelines: el modelo soporta tool calling y puede integrarse en flujos de CI/CD para revisión o generación asistida, aunque no se han publicado benchmarks específicos de código en la información disponible.
+- Despliegue en una sola GPU de 96 GB: al caber en una RTX PRO 6000 Blackwell con 593 tok/s a concurrencia 32, es viable para servicios de inferencia con requisitos de hardware contenidos frente a la release FP8 que exige dos tarjetas.
+- Razonamiento con presupuesto de tokens: el modo de pensamiento con presupuesto de 16.384 tokens (usado en las mediciones del autor) sirve para tareas de análisis que requieren cadenas de razonamiento largas.
+- Investigación sobre cuantización: la deriva medida (+18,85×10⁻³ nats/token, 95,9% de acuerdo top-1) y la comparación con la variante NVFP4A16 lo convierten en un caso de estudio para evaluar el impacto de NVFP4 W4A4 en modelos MoE de gran tamaño.
 
 ## Benchmarks y rendimiento
 
-La model card de esta build declara explícitamente que las métricas están pendientes de ejecución. No se han publicado resultados de benchmarks en la información disponible.
+Datos medidos por el autor en una RTX PRO 6000 Blackwell (96 GB), suite de conocimiento de 1.170 ítems y suite de tool calling de 200 ítems, temperatura 0,6, top_p 0,95, top_k 20, thinking activado, presupuesto de 16.384 tokens, concurrencia 32. Throughput con 8K de entrada y 512 de salida.
 
-La tabla de la model card incluye las columnas previstas (drift en nats/token, top-1 agreement, knowledge, call, abstain, finished, tok/s a concurrencia 1 y 32) pero todas las celdas de esta build figuran como "pending". La referencia es el release FP8 de inclusionAI, medido con dos tarjetas en tensor parallel 2.
+| Build | Formato | Tamano | Deriva (×10⁻³ nats/token) | Acuerdo top-1 | Conocimiento | Tool calls | Abstención | Finalizados | tok/s @1 | tok/s @32 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Ling-3.2-air FP8 (referencia) | FP8 W8A8, bloques 128×128 | 129,28 GB | 0 (referencia) | 100% | 90,3 | 75,8 | 79,2 | 98,8% | n/a (2 tarjetas) | n/a (2 tarjetas) |
+| Ling-3.2-air-NVFP4 (este repo) | NVFP4 W4A4 expertos, resto BF16 | 77,89 GB | +18,85 | 95,9% | 89,9 | 79,8 | 80,0 | 98,1% | 100,6 | 593 |
+| Ling-3.2-air-NVFP4A16 | NVFP4 W4A16 expertos, resto BF16 | 77,88 GB | +10,51 | 96,5% | 90,2 | 80,0 | 76,7 | 97,9% | 104,9 | 555 |
 
-| Build | Formato | Tamano | Drift (x10⁻³ nats/token) | Top-1 agreement | Throughput @1 | Throughput @32 |
-|---|---|---|---|---|---|---|
-| Ling-3.2-air FP8 (inclusionAI) | FP8 W8A8, bloques 128×128 | 129,33 GB | 0 (referencia) | 100% | n/a (2 tarjetas) | n/a (2 tarjetas) |
-| Ling-3.2-air-NVFP4 (esta build) | NVFP4 W4A4 expertos enrutados, resto BF16 | 77,86 GB | pendiente | pendiente | pendiente | pendiente |
-| Ling-3.2-air-NVFP4A16 | NVFP4 W4A16 expertos enrutados, resto BF16 | 77,86 GB | pendiente | pendiente | pendiente | pendiente |
+El autor advierte que la pasada forward de vLLM para este modelo no es reproducible bit a bit: dos ejecuciones del mismo build coinciden en aproximadamente el 96,5% de los tokens top-1 y su deriva media difiere hasta 0,7×10⁻³. El error estándar de la deriva sobre las 400 trazas (156.720 tokens de finalización) es de 0,84. Las diferencias de pocos puntos en tool calling quedan dentro del ruido entre ejecuciones (hasta 5,5 puntos entre ejecuciones del mismo build).
 
 ## Requisitos de hardware
 
-- VRAM estimada: 77,9 GB de pesos más overhead de KV cache y activaciones. La model card indica que cabe en una tarjeta de 96 GB; la configuración de servicio usa `--gpu-memory-utilization 0.92`.
-- GPU recomendadas: RTX PRO 6000 Blackwell (96 GB), validada por el autor. GPUs con menos de 96 GB no son suficientes para esta build según la información disponible.
-- No cabe en GPUs de consumo (RTX 4090 de 24 GB, RTX 5090 de 32 GB) sin una cuantización adicional más agresiva, que no se ofrece en este repositorio.
-- Despliegue: vLLM (imagen `vllm/vllm-openai:nightly-a2bcb5657a881a002e79d0adab3c6b5e39436121`), con `--trust-remote-code`, `--max-model-len 32768`, `--reasoning-parser ling3`, `--enable-auto-tool-choice` y `--tool-call-parser ling3`. Requiere soporte de NVFP4 y del código custom `bailing_moe_v3_vl`.
-- Latencia y throughput: pendientes de publicación en la model card. No se dispone de cifras medidas.
+- VRAM estimada: 77,89 GB de pesos, más el pool KV; cabe en una GPU de 96 GB con `--gpu-memory-utilization 0.92` y ventana de 32.768 tokens, dejando espacio para 1.022.829 tokens de caché KV.
+- GPU recomendada: RTX PRO 6000 Blackwell (96 GB), la única configuración validada por el autor.
+- GPU consumer: no cabe en tarjetas de 24 GB ni 48 GB en esta compilación; se requiere una GPU de 96 GB o un despliegue multi-GPU no documentado.
+- Despliegue: vLLM con imagen `vllm/vllm-openai:nightly-a2bcb5657a881a002e79d0adab3c6b5e39436121`, `--trust-remote-code`, `--max-model-len 32768`, `--reasoning-parser ling3`, `--enable-auto-tool-choice` y `--tool-call-parser ling3`. No se documentan opciones para llama.cpp, Ollama ni TGI.
+- Latencia y throughput medidos: 100,6 tok/s en flujo único y 593 tok/s a concurrencia 32 en una tarjeta, con 8K de entrada y 512 de salida, sin prefix caching.
+- La release FP8 de referencia requiere dos tarjetas en tensor parallel 2; esta compilación reduce el requisito a una sola.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Activos | Contexto | Licencia | Formato / tamano |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Ling-3.2-air-NVFP4 (esta build) | ~124 B | ~5,5 B | 32.768 (config. servicio) | MIT | NVFP4/BF16, 77,86 GB |
-| Ling-3.2-air FP8 (inclusionAI) | ~124 B | ~5,5 B | no disponible | MIT | FP8 W8A8, 129,33 GB |
-| Ling-3.2-air-NVFP4A16 (primitive-ai) | ~124 B | ~5,5 B | 32.768 (config. servicio) | MIT | NVFP4 W4A16, 77,86 GB |
+| Ling-3.2-air-NVFP4 (este repo) | 124B totales, 5,5B activos | 32.768 tokens configurados | NVFP4 W4A4 + BF16, 77,89 GB | MIT | Una GPU de 96 GB; 593 tok/s @32 |
+| Ling-3.2-air FP8 (inclusionAI) | 124B totales, 5,5B activos | no disponible | FP8 W8A8, 129,28 GB | MIT | Referencia de calidad; requiere 2 GPUs |
+| Ling-3.2-air-NVFP4A16 (primitive-ai) | 124B totales, 5,5B activos | no disponible | NVFP4 W4A16 + BF16, 77,88 GB | MIT | Menor deriva (+10,51) pero menor throughput @32 (555 tok/s) |
 
-La comparación con modelos de otros autores de la misma categoría (MoE multimodal de ~100 B con licencia permisiva) no está disponible en la información proporcionada.
+No se dispone de datos de benchmarks de modelos comparables de otros autores en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cuantización NVFP4 introduce una deriva (drift) respecto al release FP8 que el autor aún no ha cuantificado públicamente; los valores de drift y top-1 agreement figuran como pendientes.
-- El punto de partida es el release FP8, no pesos BF16 (inclusionAI no los publicó), por lo que el error de cuantización se acumula sobre una conversión previa.
-- El contexto de servicio está fijado en 32.768 tokens en la configuración de ejemplo; ampliarlo requiere más VRAM y no se garantiza en una sola tarjeta de 96 GB.
-- Los idiomas soportados no están documentados en la información disponible; no se puede asumir cobertura multilingüe amplia.
-- Riesgo de alucinación inherente a modelos generativos de este tamaño; el modo de razonamiento no elimina el problema.
-- Sesgos conocidos: no documentados en la información proporcionada.
-- Licencia MIT permite uso comercial, pero al ser una versión modificada del modelo base conviene conservar los avisos de copyright y verificar la licencia del modelo original.
-- Requiere `--trust-remote-code` y una versión nightly concreta de vLLM; la compatibilidad con otras versiones no está garantizada.
-- El repositorio registra 0 descargas, por lo que no hay validación comunitaria independiente de su comportamiento.
+- La compilación se construyó desde la release FP8, no desde pesos BF16 (inexistentes); la deriva de +18,85×10⁻³ nats/token es la pérdida de calidad acumulada de dos cuantizaciones sucesivas.
+- La pasada forward de vLLM no es reproducible bit a bit para este modelo; los resultados pueden variar entre ejecuciones, especialmente en tool calling.
+- Riesgo de alucinación inherente a los modelos de lenguaje; la puntuación de abstención de 80,0 no elimina este riesgo en producción.
+- Sesgos conocidos: no disponible en la información proporcionada.
+- Lista de idiomas soportados: no disponible; conviene validar el rendimiento en castellano antes de desplegar.
+- La licencia MIT permite uso comercial, pero se trata de una versión modificada del modelo base; el autor indica que los expertos fueron cuantizados y los tensores FP8 desquantizados a BF16.
+- Requiere `--trust-remote-code` por el código personalizado de la arquitectura `bailing_moe_v3_vl`.
+- Solo se ha validado en una RTX PRO 6000 Blackwell; no hay datos de rendimiento en otras GPU ni en configuraciones multi-GPU para esta compilación.
+- El repositorio tiene 256 descargas y 3 likes en el momento de la consulta, por lo que la validación comunitaria es escasa.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/primitive-ai/Ling-3.2-air-NVFP4
+- Hugging Face: https://huggingface.co/primitive-ai/Ling-3.2-air-NVFP4
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.2-air
-- Variante NVFP4A16 del mismo autor: https://huggingface.co/primitive-ai/Ling-3.2-air-NVFP4A16
-- Sitio del autor: https://primitive.com
-- Más modelos del autor: https://huggingface.co/primitive-ai
+- Variante NVFP4A16: https://huggingface.co/primitive-ai/Ling-3.2-air-NVFP4A16
+- Web del autor: https://primitive.com
+- Perfil del autor en Hugging Face: https://huggingface.co/primitive-ai

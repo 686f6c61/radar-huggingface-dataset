@@ -2,89 +2,95 @@
 
 ## Resumen
 
-WPS Decision 1 es un modelo publicado en Hugging Face por la organización Kingsoft-Office, el equipo responsable de la suite ofimática WPS Office. El identificador del repositorio (`wps-decision-1`) sugiere un modelo orientado a la toma de decisiones o a tareas de clasificación y enrutamiento dentro de un flujo de trabajo ofimático, aunque la model card no incluye ninguna descripción funcional que lo confirme. El repositorio se creó el 4 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones.
+wps-decision-1 es un modelo de decisión especializado desarrollado por Kingsoft-Office (la empresa detrás de WPS Office) y publicado bajo licencia Apache-2.0. Se trata de un fine-tune del modelo vllm-sr/d3-flash, un backbone multimodal Qwen3.5-9B con una cabeza de lectura de decisiones de 255 códigos. A diferencia de un LLM generativo convencional, el modelo no produce texto: recibe un `state` compartido (texto, JSON, imágenes o vídeos) junto con un conjunto de preguntas nombradas y devuelve directamente probabilidades para clasificación, juicios binarios y valoraciones ordenadas.
 
-La información disponible es mínima: la model card se limita a la declaración de licencia Apache 2.0 y no aporta detalles sobre arquitectura, tamaño, datos de entrenamiento, idiomas o capacidades. No se ha publicado pipeline ni etiquetas de tarea en Hugging Face, más allá de la región (US). Tampoco hay pesos enumerados en la información proporcionada, por lo que se desconoce si el repositorio contiene artefactos descargables o solo metadatos.
+La propuesta encaja en la categoría de "system-one": un modelo de respuesta rápida y directa que evita la generación autoregresiva de texto y emite la decisión en un único pase de lectura sobre el estado de entrada. Esto lo hace adecuado para tareas de enrutamiento, triaje y clasificación donde la latencia y la consistencia importan más que la expresividad lingüística.
 
-Dada la ausencia de documentación técnica, esta ficha recoge únicamente los datos verificables del repositorio y marca explícitamente como «no disponible» todo aquello que el autor no ha hecho público. Cualquier evaluación de idoneidad para producción requeriría inspeccionar directamente los archivos del repositorio y contactar con el equipo de Kingsoft-Office.
+El modelo tiene 8.394 millones de parámetros (incluyendo un codificador visual de 0,456B), configuración de contexto de 262.144 posiciones y soporte para hasta 255 candidatos en preguntas de tipo `choice`, entre 2 y 255 niveles en preguntas de tipo `score`, y juicios binarios en `noul`. Es relevante ahora porque ofrece una interfaz de decisión estructurada y multimodal sobre un backbone moderno, con despliegue validado en vLLM y una sola GPU consumer de gama alta (RTX 5090).
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Arquitectura | d3-flash: backbone multimodal Qwen3.5-9B + cabeza de decisión de 255 códigos |
+| Parametros totales | 8.394 millones (incluye 0,456B del codificador visual) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 262.144 posiciones (límite de configuración, no garantía de memoria) |
+| Tipos de cuantizacion | no disponible (pesos publicados en BF16; la model card no documenta cuantizaciones) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (con `custom_code` y `trust_remote_code`); precisión BF16 en backbone y FP32 en la lectura de decisión y softmax |
+| Pipeline | zero-shot-classification |
+| Modelo base | vllm-sr/d3-flash (finetune) |
+| Tamaño del repositorio | 53,7 GB |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo (transformer, MoE, SSM o híbrida), el número de parámetros, la composición del corpus de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card no incluye sección técnica alguna más allá de la licencia.
+El modelo parte del backbone d3-flash, que combina un transformer multimodal Qwen3.5-9B con una cabeza de lectura de decisión de 255 códigos. La arquitectura mezcla capas de atención completa, que atienden de forma bidireccional sobre la entrada, con capas Gated DeltaNet que mantienen su escaneo causal. Esta hibridación permite procesar estados largos y multimodales sin renunciar a la eficiencia de las capas de estado. Cada pregunta se procesa en su propio forward pass, y el runtime agrupa (batching) las preguntas para aprovechar el paralelismo.
 
-Tampoco hay referencias a papers, blogs técnicos o repositorios de código asociados que permitan reconstruir el proceso de entrenamiento. Cualquier afirmación sobre innovaciones técnicas (decodificación especulativa, atención lineal, destilación) sería especulativa y no se incluye en esta ficha.
+La innovación principal respecto al modelo base es la extensión del validador de puntuaciones de 2–10 a **2–255 niveles ordenados**, reutilizando la lectura de códigos de respuesta ya existente. El modelo no genera texto: la salida es una distribución de probabilidad sobre los códigos de decisión. Los detalles concretos de entrenamiento (número de tokens, composición del dataset, uso de RLHF/DPO) no están documentados en la información disponible. El modelo se distribuye con `readout.safetensors`, tokenizer, chat template y `decision_config.json`, todos necesarios para que la inferencia funcione; cargar solo el backbone no implementa decisiones.
 
 ## Capacidades
 
-- No se han documentado capacidades específicas en la información disponible.
-- No consta soporte de tool calling ni function calling.
-- No consta soporte de agentes ni razonamiento multi-paso.
-- No se especifican capacidades multilingües ni idiomas cubiertos.
-- No se indica si dispone de modo de razonamiento (thinking mode), visión, audio u otras modalidades.
-- El nombre del repositorio sugiere un uso orientado a decisiones o enrutamiento, pero se trata de una inferencia no confirmada por el autor.
+- Clasificación con hasta 255 candidatos mediante preguntas de tipo `choice`.
+- Valoraciones ordenadas con entre 2 y 255 niveles mediante preguntas de tipo `score`.
+- Juicios binarios (sí/no) mediante preguntas de tipo `noul`.
+- Entrada multimodal: texto, JSON, imágenes (hasta 1,6 MP por imagen) y vídeo (muestreo a 2 FPS, máximo 32 fotogramas, hasta 0,2 MP por fotograma).
+- Procesamiento de múltiples preguntas sobre un mismo `state`, con batching por parte del runtime.
+- Interfaz de decisión estructurada sin generación de texto, orientada a latencia baja y salidas consistentes.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad documentada; el modelo es de tipo "system-one" y no de razonamiento encadenado.
+- Capacidades multilingües: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos y realistas sin información sobre las capacidades, el tamaño y el contexto del modelo. Los siguientes escenarios son hipótesis derivadas únicamente del nombre del repositorio y deben validarse con el autor antes de cualquier adopción:
-
-- Enrutamiento de consultas en un asistente ofimático: si el modelo estuviera entrenado para clasificar intenciones, podría decidir qué módulo de la suite WPS debe atender una petición del usuario.
-- Clasificación de documentos: un modelo de decisión podría etiquetar documentos por tipo, urgencia o departamento en un flujo de gestión documental.
-- Filtrado previo en pipelines RAG: decidir si una consulta requiere recuperación de contexto antes de invocar un modelo generativo mayor.
-- Automatización de reglas de negocio: sustituir árboles de decisión rígidos por un clasificador entrenado sobre datos históricos de la organización.
-- Moderación o triaje de tickets: asignar prioridad y categoría a incidencias entrantes en un sistema de soporte.
-- Control de calidad en edición de documentos: detectar si una edición cumple criterios predefinidos antes de publicarla.
-
-En todos los casos, la idoneidad depende de datos que el autor no ha publicado (tamaño, contexto, idiomas, licencia de uso comercial más allá de Apache 2.0). Se recomienda inspeccionar el repositorio y solicitar información adicional a Kingsoft-Office.
+- Triaje de tickets de soporte: el modelo recibe el texto del ticket como `state` y devuelve, en un solo pase, la probabilidad de asignación a equipos (devoluciones, facturación, técnico) y un nivel de urgencia de 2–255. Adecuado por su baja latencia y por no requerir generación de texto.
+- Enrutamiento en atención al cliente: con preguntas de tipo `choice` sobre categorías predefinidas, permite clasificar consultas entrantes y derivarlas al flujo correcto sin coste de decodificación autoregresiva.
+- Moderación y verificación binaria: preguntas `noul` sobre si un contenido cumple una política concreta, con la ventaja de que el resultado es una probabilidad calibrada y no una respuesta libre sujeta a alucinación textual.
+- Análisis de documentos con imágenes: al aceptar imágenes de hasta 1,6 MP, puede clasificar capturas, formularios escaneados o documentos visuales junto con su contexto textual en el mismo `state`.
+- Inspección de vídeo para clasificación: con muestreo a 2 FPS y hasta 32 fotogramas, sirve para etiquetar clips cortos (por ejemplo, detección de incidencias o categorización de contenido) devolviendo probabilidades por categoría.
+- Puntuación de calidad o riesgo en pipelines: la escala de 2–255 niveles permite sustituir clasificadores ad hoc por un modelo único que devuelve una valoración ordenada y granular sobre el mismo estado de entrada.
+- Extracción de señales estructuradas desde JSON: al aceptar JSON como `state`, puede emitir decisiones sobre registros estructurados en procesos de validación o priorización.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible (depende del número de parámetros, que no se ha publicado).
-- GPU recomendadas: no disponible.
-- Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; no consta el formato de pesos.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 8.394 millones de parámetros en BF16, el peso de los pesos ronda los 16,8 GB; el repositorio ocupa 53,7 GB, lo que sugiere artefactos adicionales (lectura FP32, tokenizer, posible material auxiliar).
+- Hardware validado por el autor: una NVIDIA RTX 5090 con Linux x86-64 y driver compatible con CUDA 13.0.
+- GPU recomendadas: RTX 5090 (validada); A100 y H100 no están documentadas explícitamente, pero por tamaño de modelo serían viables.
+- Cabe en GPU consumer: sí, al menos en RTX 5090 según la validación del autor; otras consumer no están documentadas.
+- Opciones de despliegue: vLLM (versión nightly fijada en el commit `df3bd094aeea829f27baa0a5282830464f601d9f`), Transformers 5.17.0 con `trust_remote_code=True`, y el script `inference.py` incluido. El servicio vLLM expone `/v1/systemone`, `/health` y `/v1/models`.
+- Latencia y throughput estimados: no disponibles. El despliegue de referencia usa `--max-model-len 32768`, `--max-num-seqs 64`, `--max-num-queued-reqs 512` y `--gpu-memory-utilization 0.9`.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable sin conocer el tamaño, la arquitectura y la tarea del modelo. La siguiente tabla recoge únicamente los datos verificables frente a alternativas genéricas de la misma organización o categoría, marcando como «no disponible» los campos que no se pueden contrastar:
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| wps-decision-1 | 8,394B | 262.144 posiciones | Modelo de decisión multimodal (sin generación de texto) | Apache-2.0 | Hugging Face (Kingsoft-Office) |
+| vllm-sr/d3-flash | no disponible | no disponible | Backbone multimodal base | no disponible | Hugging Face (vllm-sr) |
+| Qwen3.5-9B (backbone subyacente) | ~9B | no disponible | LLM multimodal generativo | no disponible | no disponible |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| WPS Decision 1 | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
-| Alternativas de Kingsoft-Office | no disponible | no disponible | no disponible | no disponible |
-| Modelos de decisión open source comparables | no disponible | no disponible | no disponible | no disponible |
-
-No se identifican en la información proporcionada modelos comparables de la misma categoría.
+No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card técnica: no hay información sobre arquitectura, entrenamiento ni evaluación, lo que impide auditar sesgos o riesgos de alucinación.
-- Sesgos conocidos: no disponible.
-- Riesgo de alucinación: no evaluable sin datos de entrenamiento ni benchmarks.
-- Limitaciones de contexto o idioma: no disponible.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías ni documentación sobre el origen de los datos de entrenamiento, lo que puede plantear riesgos de cumplimiento.
-- Repositorio sin descargas ni interacciones: no hay evidencia de uso en producción ni de validación por parte de la comunidad.
-- El nombre «decision» sugiere un modelo especializado, no un LLM generativo general; no debe asumirse que sirva para tareas de generación de texto sin confirmación.
-- Fecha de creación futura (2026-11-04) en los metadatos: conviene verificar la integridad del repositorio antes de confiar en él.
+- El modelo no genera texto: solo emite probabilidades sobre códigos de decisión. No es adecuado para tareas de generación, resumen o diálogo abierto.
+- La configuración de contexto (262.144 posiciones) es un techo de posiciones, no una garantía de que cualquier longitud de entrada quepa en memoria GPU. Entradas largas requieren memoria adicional.
+- La configuración de decisión suministrada no impone un límite adicional de longitud (`max_length: null`); las entradas no se truncan silenciosamente, lo que puede provocar errores de memoria con entradas muy largas.
+- Es imprescindible conservar `readout.safetensors`, el tokenizer, el chat template y `decision_config.json` junto a los pesos del backbone; cargar solo el backbone no implementa decisiones.
+- La inferencia requiere `trust_remote_code=True` y código personalizado, lo que implica revisar el código antes de desplegarlo en producción.
+- Existe una release v1.1 con pesos y código de inferencia distintos; usar la revisión adecuada (`revision="v1.0"` o `--revision v1.0`) para evitar mezclar artefactos.
+- Sesgos conocidos: no documentados en la información disponible.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero las probabilidades de decisión pueden estar mal calibradas en dominios alejados de los datos de entrenamiento; no hay datos de calibración publicados.
+- Idiomas soportados: no disponibles; no se puede garantizar cobertura multilingüe.
+- Licencia Apache-2.0: permite uso comercial, pero conviene verificar las obligaciones de atribución y las dependencias del código personalizado.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Kingsoft-Office/wps-decision-1
-- No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados al modelo.
+- Modelo en Hugging Face: https://huggingface.co/Kingsoft-Office/wps-decision-1
+- Release v1.1: https://huggingface.co/Kingsoft-Office/wps-decision-1/tree/v1.1
+- Modelo base d3-flash: https://huggingface.co/vllm-sr/d3-flash
+- Guía de uso upstream (quickstart): https://huggingface.co/vllm-sr/d3-flash#quickstart

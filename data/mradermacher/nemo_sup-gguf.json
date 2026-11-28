@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/nemo_sup-GGUF",
+  "slug": "mradermacher-nemo_sup-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nemo_sup-GGUF",
+  "created_at": "2025-03-28T00:03:36.000Z",
+  "updated_at": "2026-11-28T01:47:43.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nvidia",
+    "llama-3",
+    "pytorch",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 49867145280,
+  "parameters_human": "49.87B",
+  "storage_bytes": 341049864512,
+  "storage_human": "341.0 GB",
+  "context_length": 131072,
+  "base_model": "Daemontatox/nemo_sup",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "dulakshi-chamodya/reuters-gpt2-from-scratch",
+  "slug": "dulakshi-chamodya-reuters-gpt2-from-scratch",
+  "author": "dulakshi-chamodya",
+  "url": "https://huggingface.co/dulakshi-chamodya/reuters-gpt2-from-scratch",
+  "created_at": "2026-11-27T20:59:00.000Z",
+  "updated_at": "2026-11-27T20:59:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "causal-lm",
+    "from-scratch",
+    "en",
+    "dataset:ingeniumacademy/reuters_articles",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30713856,
+  "parameters_human": "30.7M",
+  "storage_bytes": 368604699,
+  "storage_human": "369 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

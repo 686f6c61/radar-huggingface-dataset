@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Atom Zero 49.2M es un modelo de lenguaje de tipo decoder-only transformer entrenado desde cero por el desarrollador independiente byjameson. Con 49.213.440 parámetros, 6 capas, dimensión 768, 12 cabezas de atención y una ventana de contexto de solo 128 tokens, no es un modelo fundacional sino un componente estrecho de un sistema de asistente local. El proyecto Atom Zero combina el modelo con un runtime de recuperación (RAG sobre SQLite FTS5 con embeddings híbridos), herramientas deterministas y una interfaz local, de modo que el conocimiento factual reside en la recuperación y no en los pesos.
+Atom Zero 49M es un modelo de lenguaje de tipo decoder-only transformer de 49,2 millones de parametros, desarrollado por el usuario byjameson y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo entrenado desde cero, no de un ajuste fino de un modelo mayor, con un tokenizador BPE de 8.192 tokens y una ventana de contexto de tan solo 128 tokens. Su proposito no es competir con modelos fundacionales, sino servir como nucleo de comportamiento conversacional dentro de un asistente local de un solo usuario.
 
-La relevancia del modelo no está en su capacidad bruta (el autor documenta explícitamente que el conocimiento en crudo es de 2/10 y que no debe compararse con MMLU, GSM8K o HumanEval) sino en su enfoque de ingeniería: un asistente de un solo usuario, ejecutable en local, con citación de fuentes, privacidad por diseño y un paquete de software (`atomzero 0.60.0`) que integra documentos, herramientas, memoria y adaptadores LoRA revisados. El modelo se entrenó con 175,37M tokens limpios más una mezcla de replay hasta 214,8M, con un checkpoint de producto en el paso 40.000.
+El modelo forma parte del proyecto Atom Zero, un sistema de asistente personal que combina el modelo con tecnicas de RAG (SQLite FTS5, embeddings MiniLM, reranking hibrido), herramientas deterministas (hora, aritmetica segura, gestion de tareas, memoria de nombres) y un motor de busqueda documental con citas. La model card es explicita al respecto: los hechos deben vivir en el RAG y las habilidades pueden residir en adaptadores LoRA revisados; el modelo en si es un "modelo estrecho de chat y comportamiento", no un modelo fundacional.
 
-La ficha refleja la información disponible en la model card y en los datos de Hugging Face. El modelo está etiquetado únicamente en inglés y su licencia es Apache-2.0 tanto para código como para pesos.
+Es relevante ahora porque representa una corriente de diseno opuesta a la escala masiva: modelos muy pequenos, locales, sin telemetria y orientados a privacidad, donde la calidad se obtiene mediante orquestacion (recuperacion, herramientas, verificacion) en lugar de parametros. Esta version de 49M es, ademas, la alternativa de reserva (fallback) del proyecto; la version por defecto es el checkpoint de 63M de Atom Zero 2.0.0.
 
 ## Especificaciones tecnicas
 
@@ -17,122 +17,102 @@ La ficha refleja la información disponible en la model card y en los datos de H
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 128 tokens |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Inglés (`en`) |
-| Licencia | Apache-2.0 (código y pesos; atribución de datos en `NOTICE`) |
-| Formato de pesos | no disponible (checkpoint PyTorch; el repo pesa 0,2 GB) |
-| Capas / dimension / cabezas / FF | 6 / 768 / 12 / 3072 |
+| Idiomas soportados | Ingles (en) |
+| Licencia | Apache-2.0 (codigo y pesos; atribucion de datos en NOTICE) |
+| Formato de pesos | PyTorch (checkpoint); tokenizador BPE de 8.192 tokens |
+| Capas / dimension / cabezas / FFN | 6 / 768 / 12 / 3072 |
 | Tokenizador | BPE de 8.192 tokens (`data/chat_en_bpe8k.json`) |
 | Paso del checkpoint | 40.000 |
 | Tokens de entrenamiento | 175,37M limpios + mezcla de replay hasta 214,8M |
 | Runtime | PyTorch, CUDA o CPU; probado en RTX 3050 de 6 GB |
-| Libreria | pytorch |
-| Tamano del repo | 0,2 GB |
-| Descargas | 359 |
-| Creado / actualizado | 2026-11-21 / 2026-11-25 |
+| Tamano del repo | 0,2 GB (checkpoint de ~197 MB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de 6 capas con dimensión oculta de 768, 12 cabezas de atención y capa feed-forward de 3072, entrenado desde cero sobre un corpus de 175,37M tokens limpios más una mezcla de replay que eleva el total a 214,8M. El tokenizador es un BPE de 8.192 tokens específico para inglés de chat. La ventana de contexto es de solo 128 tokens, lo que limita drásticamente cualquier conversación multi-turno o documento largo dentro del propio modelo; el sistema compensa esta restricción delegando el contexto factual en la capa de recuperación.
+El modelo es un transformer decoder-only de 6 capas, dimension oculta de 768, 12 cabezas de atencion y capa feed-forward de 3072 unidades. Usa un tokenizador BPE propio de 8.192 tokens entrenado especificamente para el proyecto y fue entrenado desde cero (no es un fine-tuning). El entrenamiento utilizo 175,37 millones de tokens limpios mas una mezcla de replay hasta alcanzar 214,8 millones de tokens, con un checkpoint de producto en el paso 40.000.
 
-La model card documenta un experimento de ablación controlada entre QKV y MLP con 3 semillas: la variante qkv4 alcanzó 3,33 % de exactitud y 8,89 % de copia de claves, mientras que la variante MLP obtuvo 3,33 % y 5,56 %, con veredicto no concluyente. También se probó una sonda de capacidad con una base mayor (Qwen2.5-0.5B), que alcanzó 55-85 % de exactitud en copia de 2-4 claves con análisis tolerante, frente al 0-6 % del adaptador de 49M; la decisión fue mantener el modelo de 49M entrenado desde cero como opción por defecto en la versión 0.8.0. La versión 0.50.0 había añadido enrutamiento de copia, ensayo de etapas débiles y LoRA sobre QKV. El sistema completo declara 1463 tests superados en 47,20 s y un benchmark de producto de 20/20.
+No se detalla en la informacion disponible la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO o ajuste por preferencias. La model card menciona variantes de "teacher data" (K, K2, K3) que no superaron el perfil completo del modelo base de 63M: K alcanzo 98,5% en benigno y 93,8% en multi-turno pero fallo en seguridad (39/40) y autolesion (14/16); K2 restauro 40/40 y 16/16 pero bajo el benigno a 89,0%; K3 paso todas las puertas pero quedo por debajo en copia (45,0%), retencion (0,828) y multi-turno (68,8% / 37,5%). Estos datos corresponden al proceso de seleccion del modelo por defecto, no a este checkpoint de 49M, cuyos pesos permanecen en la version 0.8.0.
+
+La innovacion tecnica del proyecto no esta en el modelo sino en el sistema que lo rodea: recuperacion hibrida con FTS5 y embeddings, indice vectorial con IVF ANN por encima de 256 fragmentos, herramientas con lista de permitidos y confirmacion explicita, y un modo de autoaprendizaje acotado que genera notas del profesor sin modificar pesos.
 
 ## Capacidades
 
-- Generación de texto breve en inglés para chat de comportamiento acotado.
-- Razonamiento aritmético simple mediante herramienta determinista de aritmética segura.
-- Consulta de hora y fecha mediante herramienta de tiempo.
-- Gestión de tareas: añadir, listar y completar tareas.
-- Memoria de nombre y preferencias ("likes") del usuario.
-- Planificación en tres pasos mediante API de plan con lista de permitidos y confirmación explícita.
-- Recuperación aumentada (RAG) sobre documentos locales con citación de fuente, título y sha256.
-- Ingesta de documentos en texto, Markdown, HTML, PDF y DOCX, con citas por página o sección y panel de evidencias.
-- Recuperación híbrida: SQLite FTS5, embeddings hashed/MiniLM, candidatos híbridos y reranking léxico más coseno.
-- Índice vectorial con `doc_vectors` en caché, matriz numpy precalentada, ANN IVF por encima de 256 fragmentos y fallback exacto.
-- Gestión de sesiones: restauración de transcripciones, exportación e importación JSON y borrado exacto.
-- Investigación con cola de solo aprobados, obtención desde Wikipedia, bloqueo de trabajador y síntesis con profesor.
-- Modo profesor con Ollama local o endpoint compatible con OpenAI, notas no verificadas y verificación por revisor.
-- Curiosidad: detección de huecos, tema pendiente, aprobación, Wikipedia más profesor y nota RAG.
-- Autoaprendizaje acotado: notas de profesor en modo hambriento (sin tocar pesos) y LoRA revisado (con pesos).
-- Personalización declarativa mediante JSON en `data/skills` con disparadores, contexto local y modo plantilla o proveedor.
-- Flujo diario: brief local y plan de objetivos citado, con creación de tareas solo tras confirmación explícita.
-- Proveedor opcional de chat libre local con modelo mayor suministrado por el usuario (`--allow-general-chat`).
-- Seguridad opcional con reglas y cabeza lineal ML local, desactivada por defecto y con fallback exacto.
-- Privacidad: solo localhost, sin telemetría, guarda SSRF, límites de subida y borrado.
-- Interfaz de usuario con chat, documentos, huecos, cola de investigación, notas de profesor, adaptadores y salud del sistema.
-- No soporta tool calling genérico ni agentes autónomos fuera de la lista de permitidos; el uso de herramientas no supervisado está explícitamente fuera de alcance.
+- Generacion de texto conversacional breve en ingles, orientada a respuestas cortas y multi-turno.
+- Recuperacion aumentada (RAG) de documentos con citas a pagina o seccion, incluyendo paneles de evidencia y API.
+- Uso de herramientas deterministas: hora, aritmetica segura, creacion y listado de tareas, memoria de nombres y gustos, y una API de planificacion de 3 pasos con lista de permitidos y confirmacion.
+- Gestion de sesiones: restauracion de transcripciones, exportacion e importacion JSON, borrado exacto ("Forget") a nivel de sesion.
+- Ingesta de documentos en texto, Markdown, HTML, PDF y DOCX, con metadatos de fuente, titulo y sha256.
+- Resumen extractivo de fuentes y colecciones, y grafo de "segundo cerebro" por fuente.
+- Investigacion asistida: cola de solo aprobados, obtencion desde Wikipedia, sintesis mediante profesor local (Ollama u OpenAI-compatible) y verificacion por revisor.
+- Modo de curiosidad: deteccion de huecos, propuesta de tema pendiente, aprobacion y generacion de nota RAG.
+- Autoaprendizaje acotado: notas del profesor en "hungry mode" (sin tocar pesos) y LoRA revisado (con cambios de pesos).
+- Personalizacion declarativa mediante JSON en `data/skills` (disparadores, contexto local, modo proveedor o plantilla).
+- Capacidades multilingues: solo ingles.
+- No soporta razonamiento general, codigo, matematicas mas alla de aritmetica simple, ni vision o audio.
 
 ## Casos de uso
 
-- Asistente personal diario local: el modelo gestiona chat breve, tareas, notas, aritmética y hora, con el brief diario y el plan de objetivos citado como flujo principal. Es adecuado porque el runtime resuelve las consultas factuales mediante RAG y herramientas, compensando la ventana de 128 tokens y el conocimiento limitado de los pesos.
-- Consulta de documentación interna con citas: se ingieren manuales en PDF, DOCX, HTML o Markdown y el sistema devuelve respuestas con página o sección, título y sha256 del documento. El benchmark de documentos del autor reporta 80/80 preguntas respondibles y 20/20 no respondibles correctamente identificadas.
-- Recuperación sobre corpus tipo SQuAD: el sistema híbrido alcanza 0,975 top-1 y 1,000 top-5 en SQuAD v2 con 50 contextos, y 0,884 de respuesta top-1 dentro del fragmento visible. Es útil para construir un motor de búsqueda semántica local sobre textos en inglés.
-- Segundo cerebro personal: el grafo de conocimiento por fuente, el borrado por fuente y la exportación e importación de sesiones permiten mantener un archivo consultable de notas y documentos con trazabilidad de evidencias.
-- Investigación asistida con verificación humana: la cola de solo aprobados, la obtención desde Wikipedia y la síntesis con profesor local (Ollama o endpoint compatible con OpenAI) permiten generar notas que un revisor verifica antes de incorporarlas al RAG.
-- Personalización de habilidades sin reentrenar: los archivos JSON declarativos en `data/skills` definen disparadores, contexto local y modo plantilla o proveedor, de modo que se añaden flujos concretos (por ejemplo, resúmenes de colecciones o extracción de códigos exactos) sin tocar los pesos.
-- Despliegue en hardware de consumo: el checkpoint de ~197 MB y el runtime PyTorch probado en una RTX 3050 de 6 GB permiten ejecutar el asistente completo en un portátil o equipo de sobremesa modesto, con la opción de CPU.
-- Entorno con requisitos de privacidad: al operar solo en localhost, sin telemetría, con guarda SSRF y límites de subida, encaja en escenarios donde los documentos no pueden salir del equipo.
+- Asistente personal local de un solo usuario: el modelo gestiona conversaciones cortas de chat, tareas, notas, hora y aritmetica, con todas las operaciones en localhost y sin telemetria. Es adecuado porque el sistema delega los hechos al RAG y las herramientas, compensando la limitacion de 128 tokens de contexto.
+- Busqueda documental con citas: ingesta de PDF, DOCX, Markdown y HTML con recuperacion hibrida (FTS5 + embeddings) y reranking lexico-coseno. El modelo responde con referencias a pagina o seccion, lo que permite auditar cada afirmacion en entornos donde la trazabilidad es obligatoria.
+- Base de conocimiento personal ("segundo cerebro"): construccion de un grafo por fuente con borrado selectivo y exportacion/importacion, util para organizar notas de investigacion con evidencia verificable.
+- Automatizacion de tareas diarias: generacion de un brief diario local y un plan de objetivos citado, con creacion de tareas solo tras confirmacion explicita del usuario. Adecuado para flujos de productividad personal sin dependencia de la nube.
+- Prototipado de sistemas RAG en hardware modesto: con ~197 MB de checkpoint y ejecucion probada en una RTX 3050 de 6 GB, sirve para validar pipelines de recuperacion, reranking y citacion antes de escalar a modelos mayores.
+- Investigacion sobre modelos pequenos y comportamiento: el proyecto incluye 1.727 tests, benchmark 20/20 y pruebas de recuperacion sobre SQuAD v2 (0,975 top-1, 1,000 top-5 en 50 contextos), lo que lo convierte en una referencia reproducible para estudiar orquestacion con modelos diminutos.
+- Evaluacion de seguridad y alineacion en asistentes locales: incorpora un cabezal lineal ML opcional y reglas de seguridad desactivadas por defecto, con fallback exacto, util para experimentar con capas de moderacion en despliegues de un solo usuario.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados por el autor no son comparables con benchmarks estándar de modelos fundacionales (MMLU, GSM8K, HumanEval); la propia model card excluye explícitamente cualquier afirmación de paridad con modelos frontera. Se recogen a continuación las métricas internas del sistema:
+Los datos disponibles corresponden al sistema Atom Zero (modelo + RAG + herramientas), no a pruebas crudas del modelo aislado. La model card distingue explicitamente entre "raw", "product" y "behavior", y advierte que el sondeo del modelo crudo no usa RAG, herramientas ni agente.
 
-| Variante | Conocimiento en crudo | Producto | Comportamiento | Notas |
-|---|---:|---:|---:|---|
-| Base 49.2M | 2/10 | 21/21 | 16/16 | sin RAG ni herramientas |
-| Producto 49.2M (40k) | 2/10 | 21/21 | 16/16 | corpus escalado |
-| + adaptador `v0001` | 2/10 | 21/21 | 16/16 | el adaptador no añade hechos |
-| + RAG y herramientas | — | 21/21 | 16/16 | respuestas con cita de fuente |
-| + recuperación neuronal híbrida | — | 21/21 | 16/16 | top-1 1,000 frente a 0,850 de FTS |
-| + seguridad ML opcional | — | 26/26 | 16/16 | filtro desactivado por defecto |
+| Prueba | Resultado | Contexto |
+|---|---|---|
+| SQuAD v2, recuperacion top-1 | 0,975 | 50 contextos, hibrido |
+| SQuAD v2, recuperacion top-5 | 1,000 | 50 contextos, hibrido |
+| SQuAD v2, respuesta en fragmento visible top-1 | 0,884 | 50 contextos, hibrido |
+| Benchmark de documentos propio | 80/80 respondibles, 20/20 sin respuesta | 100 preguntas autorales |
+| Benchmark de producto | 21/21 | Sistema completo |
+| Benchmark de comportamiento | 16/16 | Sistema completo |
+| Tests | 1.727 superados en 64,83 s | VM del proyecto |
+| Benchmark general | 20/20 | Sistema completo |
 
-| Benchmark | Resultado |
-|---|---|
-| Documentos propios (100 preguntas) | 80/80 respondibles, 20/20 no respondibles |
-| SQuAD v2, recuperación top-1 / top-5 | 0,975 / 1,000 (50 contextos, híbrido) |
-| SQuAD v2, respuesta top-1 en fragmento | 0,884 (50 contextos, híbrido) |
-| Scorecard de seis criterios | 1 cumplido, 3 parciales, 2 no cumplidos |
-| Aritmética, city-YAML y city/river en held-out | 0/30 exacto en cada uno |
-| Ablación QKV vs MLP (3 semillas) | qkv4 3,33 % exacto / 8,89 % copia de claves; MLP 3,33 % / 5,56 %; no concluyente |
-| Sonda Qwen2.5-0.5B en copia de 2-4 claves | 55-85 % exacto con análisis tolerante; adaptador 49M: 0-6 % |
-| Tests del sistema | 1463 superados en 47,20 s; benchmark de producto 20/20 |
+No se han publicado resultados de MMLU, GSM8K o HumanEval en la informacion disponible, y la propia model card declara explicitamente que no reclama paridad con modelos frontera en esas pruebas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el checkpoint ocupa ~197 MB y el repo 0,2 GB; con 49,2M parámetros la inferencia en FP32 requiere aproximadamente 200 MB de pesos más activaciones, por lo que cabe holgadamente en cualquier GPU de consumo moderna.
-- GPU recomendadas: el autor probó una RTX 3050 de 6 GB; cualquier GPU con 4 GB o más es suficiente. Para el proveedor opcional de chat libre con un modelo mayor se necesita hardware acorde a ese modelo externo.
-- Cabe en GPU de consumo: sí, en la práctica totalidad de tarjetas actuales, y también en CPU.
-- Opciones de despliegue: runtime PyTorch propio del paquete `atomzero` (CUDA o CPU); el proveedor opcional se conecta a Ollama o a un endpoint compatible con OpenAI. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI para los pesos de 49M.
-- Latencia y throughput: no disponibles en la información proporcionada.
-- Almacenamiento: el primer arranque descarga ~197 MB de checkpoint y tokenizador desde Hugging Face.
+- VRAM estimada para inferencia: inferior a 1 GB en precision completa (49,2M de parametros, checkpoint de ~197 MB); en la practica cabe holgadamente en cualquier GPU consumer.
+- GPU recomendadas: el autor indica ejecucion probada en una RTX 3050 de 6 GB; cualquier GPU con 2 GB o mas es suficiente. Para CPU, el modelo es viable en equipos de escritorio convencionales.
+- Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas modernas e incluso en iGPU con memoria compartida suficiente.
+- Opciones de despliegue: el proyecto se distribuye como paquete Python (`pip install atomzero==2.0.0`) con entry points `atomzero` y `atomzero-quickstart`; el runtime es PyTorch sobre CUDA o CPU. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI para estos pesos; Ollama se usa como proveedor opcional de un modelo mayor, no para ejecutar Atom Zero.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay una categoría estándar de comparación directa: Atom Zero 49.2M es un modelo de comportamiento estrecho integrado en un sistema de asistente con RAG, no un modelo fundacional. La model card ofrece una única comparación interna con Qwen2.5-0.5B como sonda de capacidad:
+La informacion disponible no incluye comparaciones con otros modelos de tamano similar. La unica comparacion interna es con el checkpoint de 63M del mismo proyecto, que es el modelo por defecto de Atom Zero 2.0.0.
 
-| Modelo | Parámetros | Contexto | Copia de 2-4 claves | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Atom Zero 49.2M | 49,2M | 128 tokens | 0-6 % (adaptador) | Apache-2.0 | Hugging Face, ModelScope y paquete `atomzero` |
-| Qwen2.5-0.5B (sonda) | ~500M | no disponible en la información | 55-85 % con análisis tolerante | no disponible en la información | no disponible en la información |
+| Modelo | Parametros | Contexto | Licencia | Estado |
+|---|---|---|---|---|
+| Atom Zero 49M (este) | 49,2M | 128 tokens | Apache-2.0 | Fallback, pesos 0.8.0 |
+| Atom Zero 63M | 63M (no confirmado en detalle) | no disponible | Apache-2.0 | Por defecto en 2.0.0; recall de historial 65,0%, copia de 4 claves 63,0%, fresco 75,0%, multi-turno 83,3 / 58,3, seguridad 40/40, autolesion 16/16 |
 
-No se dispone de datos de benchmarks estándar ni de comparaciones con otros modelos de tamaño similar en la información proporcionada.
+Comparativa con modelos de terceros: no disponible.
 
 ## Limitaciones y advertencias
 
-- El conocimiento en crudo de los pesos es de 2/10; los hechos deben residir en el RAG y las habilidades en adaptadores LoRA revisados.
-- La ventana de contexto es de solo 128 tokens, insuficiente para conversaciones multi-turno largas o documentos extensos dentro del modelo.
-- Solo soporta inglés; no se documentan capacidades multilingües.
-- El autor excluye explícitamente el razonamiento general, la programación, las matemáticas más allá de la aritmética simple y el asesoramiento médico, legal, financiero o de seguridad crítica.
-- No se permite el rastreo web autónomo, la mutación de pesos ni el uso de herramientas no supervisado.
-- El funcionamiento multiinquilino o alojado requiere controles adicionales no incluidos.
-- Riesgo de alucinación: aunque el sistema prioriza respuestas con cita de fuente y tiene fallback exacto, el modelo en crudo no está diseñado para generar hechos fiables.
-- El adaptador `v0001` no añade hechos según la propia model card; no debe esperarse mejora de conocimiento por su uso.
-- La ablación QKV vs MLP se declara no concluyente, lo que indica que las decisiones de arquitectura no están plenamente validadas.
-- La licencia Apache-2.0 permite uso comercial de código y pesos, pero la atribución de datos debe respetarse según el archivo `NOTICE`.
-- El filtro de seguridad ML está desactivado por defecto y debe habilitarse explícitamente para producción.
-- Las cifras de benchmarks son internas del proyecto y no comparables con MMLU, GSM8K o HumanEval.
+- Contexto extremadamente corto: 128 tokens, insuficiente para conversaciones largas o documentos extensos sin el RAG del sistema. Cualquier uso fuera del pipeline Atom Zero degrada rapidamente.
+- Solo ingles: no hay soporte multilingue; el castellano no esta cubierto.
+- Modelo estrecho: no es un modelo fundacional. No debe esperarse razonamiento general, codigo, matematicas mas alla de aritmetica simple, ni conocimiento factual fiable por si mismo.
+- Riesgo de alucinacion: la model card indica que los hechos deben residir en el RAG; usar el modelo crudo como fuente de conocimiento produce respuestas no verificadas.
+- Fuera de alcance declarado: consejo medico, legal, financiero o de seguridad critica; rastreo web autonomo; mutacion de pesos no supervisada; uso de herramientas sin supervision; operacion multiinquilino o alojada sin controles adicionales.
+- Seguridad desactivada por defecto: el cabezal lineal ML y las reglas de seguridad son opcionales y estan desactivados por defecto, con fallback exacto. En produccion es necesario activarlos y validarlos.
+- Licencia: Apache-2.0 para codigo y pesos, con atribucion de datos en el fichero NOTICE; conviene revisar dicha atribucion antes de un uso comercial.
+- Estado del artefacto: este checkpoint de 49M es la alternativa de reserva y sus pesos permanecen en la version 0.8.0, mientras que el proyecto ha avanzado a la version 2.0.0 con el modelo de 63M. No debe asumirse que recibe las mismas mejoras.
+- Sin telemetria ni datos de sesgos: no se documentan sesgos conocidos ni evaluaciones de equidad en la informacion disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/byjameson/atom-zero-49m
-- Repositorio del proyecto: https://github.com/byjameson/atom-zero
-- Mapa completo del proyecto: https://github.com/byjameson/atom-zero/blob/main/docs/PROJECT_OVERVIEW.md
+- Modelo en Hugging Face: https://huggingface.co/byjameson/atom-zero-49m
+- Demo en ModelScope Studio (Atom Zero 63M): https://modelscope.cn/studios/byjameson/atomzerodemo
+- Mapa del proyecto (PROJECT_OVERVIEW.md): https://github.com/byjameson/atom-zero/blob/main/docs/PROJECT_OVERVIEW.md
+- Repositorio GitHub del proyecto: https://github.com/byjameson/atom-zero
+- Paper: no disponible
+- Blog tecnico: no disponible

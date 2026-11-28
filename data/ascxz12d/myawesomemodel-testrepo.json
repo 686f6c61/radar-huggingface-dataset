@@ -4,8 +4,8 @@
   "slug": "ascxz12d-myawesomemodel-testrepo",
   "author": "ASCXZ12D",
   "url": "https://huggingface.co/ASCXZ12D/MyAwesomeModel-TestRepo",
-  "created_at": "2026-11-12T19:09:55.000Z",
-  "updated_at": "2026-11-12T19:10:54.000Z",
+  "created_at": "2026-11-27T05:39:59.000Z",
+  "updated_at": "2026-11-27T05:43:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 274,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -33,37 +33,11 @@
   "is_conversational": false,
   "gated": false,
   "disabled": false,
-  "removed": true,
-  "removed_at": "2026-11-14T02:16:05.846Z",
-  "removal_pattern": "short_lived",
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
-      "url": "https://www.microsoft.com/en-us?msockid=3719e75154b960482c36f08555d461a9",
-      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
-    },
-    {
-      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
-      "url": "https://account.microsoft.com/account",
-      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
-    },
-    {
-      "title": "Sign in to your account",
-      "url": "https://myaccount.microsoft.com/",
-      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
-    },
-    {
-      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
-      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=3719e75154b960482c36f08555d461a9",
-      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
-    },
-    {
-      "title": "Microsoft - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Microsoft",
-      "snippet": ""
-    }
-  ]
+  "sources": []
 }

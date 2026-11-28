@@ -2,119 +2,104 @@
 
 ## Resumen
 
-Pandan Arabic OCR v0.1 (research preview) es un modelo visión-lenguaje especializado en la transcripción fiel de libros árabes clásicos, publicado por Pandan Labs bajo el identificador `pandanlabs/dots-mocr-arabic-classical`. Se trata de un fine-tune del modelo `dots-studio/dots.mocr` (ejecución de entrenamiento LoRA `lora-001`) con 3.039.179.264 parámetros, pesos en safetensors, licencia MIT y pipeline `image-text-to-text`.
+Pandan Arabic OCR v0.1 es un modelo vision-lenguaje especializado en la transcripción fiel de libros árabes clásicos, desarrollado por Pandan Labs como un fine-tune del modelo base dots.mocr de dots-studio. Su propósito es preservar las marcas vocálicas (harakat o tashkeel) tal como aparecen impresas en la página, evitando tanto la omisión de marcas existentes como la adición de marcas que el texto original no contiene. Se distribuye como research preview y está pensado para digitalización de patrimonio bibliográfico árabe.
 
-El problema que aborda es específico: el OCR convencional sobre árabe vocalizado tiende a omitir las harakat que sí están impresas o a inventar marcas vocálicas que la página no contiene, lo que arruina la fidelidad filológica del texto digitalizado. Este modelo se entrena explícitamente para conservar las marcas visibles y no añadir las ausentes, con métricas publicadas de marcas añadidas y omitidas por cada 1.000 letras.
+El modelo cuenta con aproximadamente 3.039 millones de parámetros (3,04 B) en formato safetensors, con un repositorio de 6,1 GB, y se publica bajo licencia MIT. Está etiquetado para la tarea image-text-to-text y soporta únicamente el idioma árabe, con especial énfasis en árabe clásico con vocalización completa. La evaluación del autor se documenta en el preprint *Beyond Character Error Rate* depositado en Zenodo.
 
-Es relevante ahora porque ataca un nicho poco cubierto (patrimonio impreso árabe clásico vocabulizado) con una evaluación inusualmente detallada para un modelo de 0 descargas, aunque su alcance es limitado: rinde bien en tipografía limpia y totalmente vocalizada (96% de las páginas con exactitud del 95% o superior) y falla en escaneos antiguos de baja resolución. La model card no detalla la arquitectura interna ni la longitud de contexto.
+Su relevancia actual radica en que aborda un problema poco cubierto por los OCR convencionales: la fidelidad diacrítica en textos religiosos y clásicos, donde un cambio de vocal puede alterar el significado. Los resultados publicados muestran mejoras sustanciales frente al modelo base en impresión tipográfica vocalizada, aunque el propio autor advierte que el rendimiento en escaneos antiguos de baja resolución es todavía variable.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Vision-language de tipo image-text-to-text, fine-tune de `dots-studio/dots.mocr`; el backbone concreto no se detalla en la model card (requiere `trust_remote_code` / `custom_code`) |
-| Parámetros totales | 3.039.179.264 (≈3,04 B) |
-| Parámetros activos | No aplica: no se declara como modelo MoE |
+| Arquitectura | Vision-lenguaje (image-text-to-text) basada en dots.mocr; detalles internos no disponibles |
+| Parámetros totales | 3.039.179.264 (3,04 B) |
+| Parámetros activos | No aplica (no es MoE según la información disponible) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantización | No disponible: el repositorio solo publica pesos safetensors, sin variantes GGUF, AWQ ni GPTQ documentadas |
-| Idiomas soportados | Árabe (`ar`), con foco en árabe clásico vocálico (tashkeel) |
+| Tipos de cuantización | No disponible |
+| Idiomas soportados | Árabe (ar), con foco en árabe clásico vocalizado |
 | Licencia | MIT |
-| Formato de pesos | safetensors + código propio (`custom_code`) |
-| Modelo base | `dots-studio/dots.mocr` |
-| Tamaño del repositorio | 6,1 GB |
-| Pipeline declarado | `image-text-to-text` |
-| Etiquetas adicionales | `dots_ocr`, `ocr`, `arabic`, `classical-arabic`, `diacritics`, `tashkeel`, `document-understanding`, `conversational` |
+| Formato de pesos | Safetensors (custom_code) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible describe un modelo visión-lenguaje que recibe una imagen de página y devuelve texto transcrito, construido como fine-tune del modelo `dots-studio/dots.mocr` mediante LoRA (ejecución `lora-001`). No se publican detalles del backbone (número de capas, dimensión oculta, encoder visual, mecanismo de atención) ni la longitud de contexto; la carga exige código propio del repositorio.
+El modelo es un fine-tune del checkpoint dots.mocr (revisión `e539fbb` del modelo base de dots-studio), orientado a la comprensión de documentos mediante entrada de imagen y salida de texto. La información disponible no detalla la arquitectura interna del backbone (tipo de encoder visual, configuración del transformer de lenguaje, mecanismo de atención), por lo que estos aspectos deben considerarse no disponibles. El entrenamiento se realizó mediante LoRA (run identificado como `lora-001`), lo que sugiere una adaptación eficiente de parámetros sobre el modelo base.
 
-El entrenamiento se orienta a fidelidad de las marcas vocálicas. La separación entre entrenamiento y test es por libro: ningún libro de test o validación interviene en el entrenamiento. La evaluación principal usa 160 páginas de cuatro obras (*Kashf ash-Shubuhat*, *Sharh Ma'na at-Taghut* como test; *Thalathat al-Usul*, *Nawaqid al-Islam* como validación) con referencias verificadas por una persona, y se complementa con 267 páginas en total para la tasa de error de letras. El análisis estadístico se hace con bootstrap emparejado por página e intervalos de confianza del 95%. No se documenta RLHF ni DPO, y en el pipeline de servicio se incluye una capa opcional de versos coránicos (sustituye citas reconocidas por el texto canónico) y un reintento en bucle («loop retry») que mejora la tasa de error de letras.
+La separación entre entrenamiento y evaluación se hizo por libro, garantizando que ningún libro de test o validación participara en el entrenamiento. La evaluación principal se realizó sobre 160 páginas de libros con referencias verificadas por una persona (*Kashf ash-Shubuhat* y *Sharh Ma'na at-Taghut* como test; *Thalathat al-Usul* y *Nawaqid al-Islam* como validación), con test estadístico de bootstrap emparejado por páginas e intervalos de confianza al 95 %. El modelo incorpora una capa opcional de versos coránicos que sustituye las citas del Corán reconocidas por el texto canónico, y un mecanismo de reintento en bucle (*loop retry*) durante el servicio. No se especifican el número de tokens de entrenamiento ni la composición exacta del dataset, ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Transcripción OCR de páginas de libros árabes impresos, con salida de texto plano en orden de lectura.
-- Preservación de harakat: retiene las marcas vocálicas impresas (tasa de error vocálico 0,006 en tipografía limpia) y reduce drásticamente las marcas inventadas.
-- Fidelidad medida en ambos sentidos: publica métricas de marcas añadidas (14,5 → 2,0 por 1.000 letras) y omitidas (4,0 → 1,7 por 1.000 letras) en impresión tipográfica.
-- Reconocimiento y normalización de citas coránicas mediante capa opcional de versos (coincidencia de versos 0,92 → 0,97 en el conjunto evaluado).
-- Comprensión de documentos con estructura de página (párrafos, corchetes, dígitos, puntuación y espaciado forman parte de la métrica de exactitud).
-- Interfaz conversacional declarada en las etiquetas del modelo (`conversational`), además de la tarea OCR.
-- No se documenta soporte de tool calling, function calling, agentes, audio ni modo de razonamiento explícito.
-- Multilingüismo: no disponible; el modelo declara únicamente árabe.
+- Transcripción OCR de imágenes de páginas de libros árabes clásicos, con preservación de harakat (tashkeel).
+- Fidelidad diacrítica: entrenado para no añadir marcas vocálicas que la página no imprime y para no omitir las impresas.
+- Comprensión de documentos (document-understanding) con salida de texto conversacional.
+- Manejo de impresión tipográfica vocalizada, escaneos a unos 300 dpi (vocalizados, parcialmente vocalizados y sin vocalizar) y escaneos antiguos de baja resolución, con distinto grado de fiabilidad.
+- Capa opcional de versos coránicos para normalizar citas del Corán al texto canónico.
+- Reintento en bucle (*loop retry*) para mejorar la tasa de error de letras en servicio.
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, agentes, visión general, audio ni modo thinking.
 
 ## Casos de uso
 
-- Digitalización de mutun y textos clásicos en tipografía limpia y totalmente vocalizada: es el escenario donde el modelo está validado (96% de páginas con exactitud ≥95%, dos tercios ≥99%), ideal para convertir ediciones impresas modernas en texto buscable sin perder las harakat.
-- Preservación patrimonial con fidelidad vocálica: bibliotecas y proyectos de humanidades digitales pueden priorizar este modelo frente a OCR genérico cuando la integridad de las marcas vocálicas es un requisito académico, ya que cuantifica explícitamente las marcas añadidas y omitidas.
-- Investigación filológica y lingüística: la métrica por página y por tipo de impresión permite segmentar corpus (tipografía, escaneo 300 dpi, escaneo antiguo) y decidir qué páginas requieren revisión humana antes de incorporarlas a un corpus anotado.
-- Verificación y normalización de citas coránicas: la capa opcional de versos sustituye las citas reconocidas por el texto canónico, útil en obras de estudio que intercalan āyāt dentro del comentario en prosa.
-- Control de calidad editorial en pipelines de reedición: comparar la salida del modelo con el original impreso para detectar marcas vocálicas añadidas o perdidas antes de publicar una edición digital.
-- Preprocesado para pipelines posteriores de traducción, búsqueda semántica o indexación: el texto transcrito puede alimentar motores de búsqueda sobre corpus árabes clásicos, con la advertencia de que en escaneos de baja resolución la calidad vocálica cae.
-- Procesamiento por lotes con reintento: el «loop retry» documentado en la model card reduce la tasa de error de letras de 0,061 a 0,040 sobre 267 páginas, por lo que encaja en servicios de digitalización masiva tolerantes a latencia.
+- Digitalización de libros clásicos impresos y vocalizados: el modelo transcribe páginas tipográficas con una tasa de error de letras del 4,0 % en las 267 páginas evaluadas y un 67 % de páginas con precisión global del 99 % o superior, lo que lo hace adecuado para proyectos de patrimonio bibliográfico que requieran conservar la vocalización original.
+- Preservación de textos religiosos con harakat: al reducir las marcas añadidas de 14,5 a 2,0 por cada 1.000 letras en impresión tipográfica vocalizada, resulta apropiado para corpus donde la vocalización incorrecta altera el significado, como manuales de credo o comentarios clásicos.
+- Normalización de citas coránicas: la capa opcional de versos sustituye las citas reconocidas por el texto canónico, útil en pipelines de edición digital que necesiten unificar referencias coránicas con una tasa de coincidencia de versos del 0,97.
+- Procesamiento de escaneos a 300 dpi parcialmente vocalizados: con referencias provisionales, el modelo reduce las marcas añadidas de 62,8 a 13,5 por 1.000 letras, lo que permite abordar digitalizaciones de calidad media aceptando revisión humana posterior.
+- Investigación en evaluación OCR diacrítica: el preprint *Beyond Character Error Rate* y las métricas desglosadas (letras, vocales, marcas añadidas y omitidas) sirven como base metodológica para comparar sistemas OCR en árabe clásico.
+- Lectura asistida de escaneos antiguos de baja resolución con revisión humana: aunque la vocalización empeora, la tasa de error de letras baja de 0,114 a 0,070, por lo que puede emplearse como primera pasada en proyectos de recuperación de textos antiguos con verificación manual obligatoria.
+- Integración en flujos de conversión imagen-texto conversacional: al estar etiquetado como image-text-to-text y conversational, puede integrarse en interfaces que reciban una imagen de página y devuelvan la transcripción en un turno de conversación.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los datos publicados son evaluaciones OCR propias del autor, comparando el fine-tune con el modelo base `dots.mocr` (revisión `e539fbb`) sobre las mismas páginas y ajustes.
+Resultados publicados por el autor en la model card (v0.1 frente al modelo base dots.mocr, revisión `e539fbb`, mismas páginas y ajustes):
 
-| Métrica (con reintento en bucle y capa de versos) | Base `dots.mocr` | v0.1 | Intervalo de confianza 95% |
+| Métrica | Base | v0.1 | Notas |
 |---|---|---|---|
-| Tasa de error vocálico, tipografía limpia (116 páginas) | 0,030 | 0,006 | −0,028 a −0,020 |
-| Marcas añadidas por 1.000 letras, tipografía completa | 14,5 | 2,0 | No disponible |
-| Marcas omitidas por 1.000 letras, tipografía completa | 4,0 | 1,7 | No disponible |
-| Coincidencia de versos coránicos | 0,92 | 0,97 | No disponible |
-| Tasa de error de letras, 267 páginas evaluadas | 0,061 | 0,040 | No disponible |
-| Tasa de error de letras, escaneos antiguos de baja resolución | 0,114 | 0,070 | No disponible |
-| Tasa de error vocálico, escaneo antiguo baja resolución (*Sharh Ma'na at-Taghut*) | 0,386 | 0,476 | +0,045 a +0,138 |
+| Tasa de error de vocales, impresión tipográfica vocalizada | 0,030 | 0,006 | 116 páginas, referencias verificadas; IC 95 % del cambio −0,028 a −0,020 |
+| Marcas vocálicas añadidas por 1.000 letras, impresión tipográfica vocalizada | 14,5 | 2,0 | Referencias verificadas |
+| Marcas vocálicas omitidas por 1.000 letras, impresión tipográfica vocalizada | 4,0 | 1,7 | Referencias verificadas |
+| Tasa de coincidencia de versos | 0,92 | 0,97 | — |
+| Tasa de error de letras, 267 páginas evaluadas | 0,061 | 0,040 | Con loop retry |
+| Tasa de error de letras, escaneos antiguos de baja resolución | 0,114 | 0,070 | Con loop retry |
+| Tasa de error de vocales, escaneos antiguos de baja resolución (*Sharh Ma'na at-Taghut*) | 0,386 | 0,476 | IC 95 % +0,045 a +0,138; límite +0,05; aprobado por poco |
 
-Distribución de exactitud por página:
+Distribución de precisión por tipo de impresión (v0.1):
 
-| Tipo de impresión | Referencias | Páginas | ≥99% | 95–99% | 80–95% | <80% | Sin lectura |
+| Tipo de impresión | Referencias | Páginas | ≥99 % | 95–99 % | 80–95 % | <80 % | Fallos de lectura |
 |---|---|---|---|---|---|---|---|
-| Tipografía | verificadas | 116 | 78 (67%) | 33 (28%) | 5 (4%) | 0 | 0 |
-| Escaneo ≈300 dpi | provisionales | 59 | 3 (5%) | 36 (61%) | 12 (20%) | 7 (12%) | 1 |
-| Escaneo antiguo baja resolución | verificadas | 44 | 1 (2%) | 6 (14%) | 31 (70%) | 5 (11%) | 1 |
-| Escaneo antiguo baja resolución | provisionales | 48 | 2 (4%) | 16 (33%) | 24 (50%) | 4 (8%) | 2 |
-
-Nota metodológica del autor: la exactitud se calcula como 1 − tasa de error de caracteres sobre la página completa (letras, harakat, puntuación, corchetes, dígitos y espaciado); las referencias marcadas como provisionales son transcripciones automáticas sin verificar.
+| Impresión tipográfica | verificadas | 116 | 78 (67 %) | 33 (28 %) | 5 (4 %) | 0 (0 %) | 0 |
+| Escaneo ~300 dpi | provisionales | 59 | 3 (5 %) | 36 (61 %) | 12 (20 %) | 7 (12 %) | 1 |
+| Escaneo antiguo baja resolución | verificadas | 44 | 1 (2 %) | 6 (14 %) | 31 (70 %) | 5 (11 %) | 1 |
+| Escaneo antiguo baja resolución | provisionales | 48 | 2 (4 %) | 16 (33 %) | 24 (50 %) | 4 (8 %) | 2 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (estimación a partir de 3,04 B de parámetros, no publicada por el autor): ≈6,1 GB solo de pesos en bf16/fp16; con encoder visual, activaciones y caché, entre 10 y 14 GB para una página a resolución típica.
-- Cuantización a 8 bits: ≈3–4 GB de pesos, en torno a 8–10 GB de VRAM total estimada.
-- Cuantización a 4 bits: ≈1,7–2 GB de pesos, en torno a 5–7 GB de VRAM total estimada; requiere herramientas genéricas, ya que no hay GGUF oficial.
-- GPU consumer: cabe en RTX 4090 (24 GB) con margen amplio, y previsiblemente en RTX 3090/4080 (16–24 GB) y RTX 3060 12 GB en bf16 con batches pequeños; por debajo de 8 GB conviene cuantizar.
-- GPU de datacenter: A100 40/80 GB y H100 para procesamiento por lotes de páginas con reintento en bucle.
-- Despliegue: `transformers` con `trust_remote_code=True` es la vía documentada implícitamente por la etiqueta `custom_code`. No se confirma soporte en vLLM, TGI, llama.cpp ni Ollama; no hay pesos GGUF publicados.
-- Latencia y throughput: no disponibles. El «loop retry» descrito en la model card implica al menos una pasada adicional por página en los casos que lo activen, con el consiguiente coste de latencia.
+- VRAM estimada para inferencia: no disponible de forma explícita. Con 3,04 B parámetros y pesos en safetensors (repositorio de 6,1 GB), una estimación orientativa en FP16 rondaría los 6-7 GB de pesos, más el overhead del encoder visual y del runtime; en cuantizaciones de 8 o 4 bits podría reducirse, pero el autor no publica cifras.
+- GPU recomendadas: no disponibles en la información proporcionada.
+- Compatibilidad con GPU de consumo: no confirmada por el autor; por tamaño de parámetros podría ser viable en GPUs de consumo con VRAM suficiente, pero no hay datos oficiales.
+- Opciones de despliegue: no se documentan frameworks concretos (vLLM, llama.cpp, Ollama, TGI) en la información disponible; el modelo requiere `custom_code` y está etiquetado como image-text-to-text.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| `pandanlabs/dots-mocr-arabic-classical` (v0.1) | 3,04 B | No disponible | Árabe clásico | MIT | Fine-tune LoRA centrado en harakat; mejor en tipografía limpia |
-| `dots-studio/dots.mocr` (base) | 3,04 B (mismo backbone) | No disponible | No disponible en esta ficha | No disponible | Base del fine-tune; peor fidelidad vocálica (0,030 → 0,006 de error vocálico) y más marcas añadidas (14,5 vs 2,0 por 1.000 letras) |
-| OCR clásico (Tesseract, PaddleOCR) | No disponible | No disponible | Incluye árabe | Licencias dispares (Apache 2.0 en PaddleOCR; no verificado aquí) | No son modelos visión-lenguaje y no publican métricas de marcas vocálicas añadidas/omitidas; sin datos comparables en esta ficha |
-
-No se dispone de datos en la información proporcionada para comparar con otros VLM especializados en OCR árabe (por ejemplo variantes Qwen-VL afinadas); tales cifras se marcan como no disponibles en lugar de estimarse.
+| pandanlabs/dots-mocr-arabic-classical (v0.1) | 3,04 B | No disponible | Árabe | MIT | Fine-tune LoRA de dots.mocr; foco en vocalización clásica |
+| dots-studio/dots.mocr | No disponible | No disponible | No disponible | No disponible | Modelo base del fine-tune; referencia de comparación en la evaluación del autor |
+| Otros OCR especializados en árabe clásico | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- Es una research preview (v0.1): los pesos se publican para experimentación y feedback, no como servicio validado en producción.
-- Escaneos antiguos de baja resolución: el modelo no está recomendado para marcas vocálicas en este tipo de material; la tasa de error vocálico empeora respecto al base (0,386 → 0,476, con el límite del criterio de aceptación en +0,05).
-- En escaneos de 300 dpi sin vocalización, el modelo añade más marcas que el base (3,8 → 8,1 por 1.000 letras) aunque su error vocálico global sea menor: riesgo de sobrevocalización en texto no vocalizado.
-- Riesgo de alucinación acotado pero real: la propia métrica de marcas añadidas (2,0 por 1.000 letras en tipografía limpia) cuantifica inserción de contenido no impreso, incluidas citas coránicas normalizadas por la capa de versos, que puede sobrescribir una lectura correcta.
-- Páginas que no se leen: 1 página fallida en escaneos de 300 dpi y 3 en escaneos antiguos de baja resolución dentro del conjunto evaluado; un pipeline en producción necesita detección de fallos.
-- Idiomas: solo árabe; no hay soporte multilingüe declarado ni evaluación en árabe moderno estándar periodístico.
-- Sesgo de dominio: el conjunto evaluado son cuatro obras de contenido religioso hanbalí, con separación por libro; el rendimiento en otras tradiciones, maquetaciones o tipos de letra no está medido.
-- Parte de las referencias de evaluación son transcripciones automáticas sin verificar (59 páginas de escaneo 300 dpi y 48 de escaneo antiguo), por lo que esas cifras son preliminares.
-- La exactitud global penaliza puntuación, corchetes, dígitos y espaciado: una página puede tener 100% en letras y harakat y aun así quedar por debajo del 100% global.
-- Licencia MIT: permite uso comercial y modificación, pero no incluye garantías ni auditoría de exactitud; conviene conservar el aviso de copyright.
-- El modelo requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio: auditar `remote_code` antes de desplegar.
-- Con 0 descargas y 0 likes, no existe validación independiente de la comunidad: todas las métricas provienen del propio autor.
+- Versión research preview: los pesos se publican para prueba y retroalimentación, no como producto estable de producción.
+- Rendimiento variable en escaneos: el modelo funciona bien en impresión tipográfica vocalizada, pero en escaneos a 300 dpi los resultados son preliminares y en escaneos antiguos de baja resolución la vocalización empeora respecto al base (0,386 → 0,476 en *Sharh Ma'na at-Taghut*), con aprobación ajustada del criterio de release.
+- En escaneos a 300 dpi sin vocalizar, v0.1 añade más marcas que el modelo base (3,8 → 8,1 por 1.000 letras), pese a reducir la tasa global de error de vocales.
+- Riesgo de alucinación diacrítica: el modelo puede añadir harakat que la página no imprime u omitir las impresas; el autor cuantifica estos errores y recomienda revisión en contextos críticos.
+- Idioma único: solo árabe; no se documenta soporte multilingüe.
+- Sesgos conocidos: no documentados explícitamente en la información disponible.
+- Licencia MIT: permite uso comercial, pero al ser un research preview conviene validar el rendimiento en el dominio concreto antes de desplegarlo.
+- Requiere `custom_code` para cargar el modelo, lo que puede complicar la integración con runtimes estándar.
+- Las cifras de escaneos a 300 dpi se basan en referencias provisionales (transcripción automática sin verificar), por lo que son preliminares.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/pandanlabs/dots-mocr-arabic-classical
-- Modelo base `dots.mocr`: https://huggingface.co/dots-studio/dots.mocr
-- Perfil del autor (Pandan Labs): https://huggingface.co/pandanlabs
-- Paper, blog técnico, repositorio de código o demo: no disponible en la información proporcionada.
+- Modelo base dots.mocr: https://huggingface.co/dots-studio/dots.mocr
+- Preprint *Beyond Character Error Rate* (Zenodo): https://doi.org/10.5281/zenodo.23683237

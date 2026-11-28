@@ -2,56 +2,52 @@
 
 ## Resumen
 
-Qwen3-1.7B-Coder-Distilled-SFT-GGUF es la versión cuantizada en formato GGUF del modelo reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT, desarrollado por Reaperdoesntrun / Convergent Intelligence LLC (Research Division). Parte de Qwen/Qwen3-1.7B como base y aplica un proceso de destilación de conocimiento en dos etapas: primero destila patrones de descomposición estructurada desde Qwen3-Coder-30B-A3B-Instruct sobre 6.122 muestras STEM con cadena de pensamiento, y después realiza un SFT sobre aproximadamente 54.607 pares de inferencia lógica proposicional. El resultado es un modelo compacto de 2.031.739.904 parámetros orientado a razonamiento estructurado, matemáticas, física, lógica y código en entornos de borde.
+Qwen3-1.7B-Coder-Distilled-SFT-GGUF es la versión cuantizada en formato GGUF del modelo reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT, desarrollado por Reaperdoesntrun dentro de la división de investigación de Convergent Intelligence LLC. Se trata de un ajuste fino del modelo base Qwen/Qwen3-1.7B (1.700 millones de parámetros nominales, 2.031.739.904 parámetros reales según safetensors) orientado a razonamiento estructurado, inferencia lógica y resolución de problemas STEM, empaquetado para despliegue local y en dispositivos de borde mediante llama.cpp.
 
-La relevancia de esta ficha radica en que empaqueta un modelo de razonamiento en cuantizaciones de entre 1,2 GB (Q4_K_M) y 3,8 GB (F16), lo que permite su despliegue en hardware de consumo y dispositivos de borde mediante llama.cpp, Ollama o LM Studio. La licencia Apache 2.0 facilita su uso comercial, aunque el modelo solo declara soporte para inglés y está diseñado explícitamente para inferencia lógica y derivaciones STEM, no como generador de código generalista.
+El modelo se construye en dos etapas: una destilación de conocimiento desde Qwen3-Coder-30B-A3B-Instruct sobre 6.122 muestras de cadena de pensamiento STEM, seguida de un ajuste supervisado (SFT) sobre aproximadamente 54.607 pares de inferencia lógica proposicional del dataset KonstantinDob/logic_inference_dataset. El resultado es un modelo pequeño (en torno a 1,2 GB en Q4_K_M) capaz de producir derivaciones paso a paso y conclusiones lógicas en formato estructurado.
 
-El repositorio, con 3.931 descargas y 9,0 GB de tamaño total, ofrece cuatro cuantizaciones (F16, Q8_0, Q5_K_M y Q4_K_M). El autor advierte que se trata de un modelo de 1,7B con límites de capacidad claros: no es un generador de código pese al profesor Coder, ni un verificador formal de demostraciones.
+Su relevancia actual radica en la combinación de tamaño reducido, licencia Apache 2.0 y disponibilidad en múltiples cuantizaciones (F16, Q8_0, Q5_K_M, Q4_K_M) que permiten ejecutarlo en hardware consumer e incluso en dispositivos móviles, manteniendo un sesgo explícito hacia el razonamiento verificable en lugar de la generación de código o la conversación general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen/Qwen3-1.7B) |
+| Arquitectura | Transformer decoder-only (derivada de Qwen3-1.7B) |
 | Parametros totales | 2.031.739.904 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (el ejemplo de llama.cpp usa n_ctx=1024) |
+| Longitud de contexto | no disponible (los ejemplos de uso emplean n_ctx=1024) |
 | Tipos de cuantizacion | F16, Q8_0, Q5_K_M, Q4_K_M |
-| Idiomas soportados | en (ingles) |
+| Idiomas soportados | en (inglés) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp) |
-| Modelo base | reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT |
-| Modelo base original | Qwen/Qwen3-1.7B |
-| Modelo profesor | Qwen/Qwen3-Coder-30B-A3B-Instruct |
-| Tamano del repositorio | 9,0 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Qwen3-1.7B, un transformer decoder-only de 2.031.739.904 parámetros. Sobre esa base se aplica un proceso de destilación en dos etapas documentado por el autor. La primera etapa destila desde Qwen3-Coder-30B-A3B-Instruct (un modelo MoE con 30B totales y 3B activos) sobre 6.122 muestras STEM con cadena de pensamiento, empleando entropía cruzada ponderada por prueba (2,5x a 1,5x sobre los tokens de derivación) más divergencia KL con temperatura T=2,0. El objetivo es transferir patrones de descomposición estructurada: lógica secuencial, seguimiento de estado y razonamiento composicional.
+El modelo parte de Qwen3-1.7B, un transformer decoder-only denso de la familia Qwen3. Sobre esa base se aplica un proceso de destilación en dos etapas. La primera etapa destila desde Qwen3-Coder-30B-A3B-Instruct (un modelo MoE de 30.000 millones de parámetros totales y 3.000 millones activos) sobre 6.122 muestras de cadena de pensamiento STEM, empleando entropía cruzada ponderada por prueba (factor 2,5x a 1,5x sobre los tokens de derivación) más divergencia KL con temperatura T=2,0. El objetivo declarado es transferir patrones de descomposición estructurada: lógica secuencial, seguimiento de estado y razonamiento composicional.
 
-La segunda etapa consiste en un SFT sobre KonstantinDob/logic_inference_dataset, con aproximadamente 54.607 pares de lógica proposicional en formato LOGICINFERENCEe, basado en el paper LogicInference de Santiago Ontañón (Google Research). El modelo aprende a realizar primero la inferencia y después la conclusión. El autor menciona fundamentos matemáticos propios (Discrepancy Calculus, Topological Knowledge Distillation, operador de discrepancia Df(x) y descomposición BV) como parte del pipeline de entrenamiento; no se aportan detalles verificables adicionales sobre dichos métodos en la información disponible.
+La segunda etapa consiste en un SFT sobre KonstantinDob/logic_inference_dataset, con aproximadamente 54.607 pares de lógica proposicional en formato LOGICINFERENCE, basado en el trabajo LogicInference de Santiago Ontañón (Google Research). El modelo aprende a realizar primero la inferencia y después la conclusión. La model card menciona fundamentos matemáticos propios (Discrepancy Calculus, Topological Knowledge Distillation, operador Df(x) y descomposición BV) que, según el autor, quedan codificados en los pesos y se preservan tras la cuantización. No se detalla la composición completa del corpus de entrenamiento ni el número total de tokens vistos.
 
 ## Capacidades
 
+- Razonamiento lógico proposicional estructurado: inferencia a partir de premisas y conclusión explícita en formato LOGICINFERENCE.
+- Razonamiento STEM con cadenas de pensamiento: derivaciones paso a paso en matemáticas, física y lógica.
 - Generación de texto conversacional en inglés con formato de instrucción (`### Instruction:` / `### Response:`).
-- Razonamiento lógico proposicional: inferencia sobre premisas y conclusiones, validación de argumentos, silogismos.
-- Razonamiento STEM con cadena de pensamiento: derivaciones estructuradas en matemáticas y física mediante el prompt de derivación.
-- Descomposición estructurada de problemas (lógica secuencial, seguimiento de estado, razonamiento composicional) heredada por destilación del profesor Coder.
-- Razonamiento multi-paso dentro de los límites de capacidad de un modelo de 1,7B.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes: no disponible en la información proporcionada.
-- Capacidades multilingües: solo inglés declarado.
-- Capacidades especiales (visión, audio, thinking mode explícito): no disponibles en la información proporcionada.
+- Soporte de plantillas de prompt específicas para derivación STEM y para instrucción lógica.
+- Ejecución determinista recomendada (temperatura 0,0) para tareas de inferencia.
+- No dispone de tool calling ni function calling documentado.
+- No dispone de capacidades de agente multi-paso documentadas más allá del razonamiento encadenado interno.
+- Capacidades multilingües limitadas al inglés según la model card.
+- No dispone de visión, audio ni modo "thinking" separado documentado.
 
 ## Casos de uso
 
-- Motor de inferencia lógica local: el modelo puede evaluar argumentos proposicionales ("Si llueve, el suelo se moja. Está lloviendo. ¿Qué se concluye?") con temperatura 0.0 para respuestas deterministas, adecuado para sistemas de tutoría de lógica o validación de razonamientos en pipelines educativos.
-- Asistente de estudio STEM en dispositivos de borde: con la cuantización Q4_K_M (~1,2 GB) puede ejecutarse en móviles o placas embebidas vía llama.cpp, ofreciendo derivaciones paso a paso de problemas de matemáticas y física sin conexión a la nube.
-- Preprocesamiento de razonamiento en pipelines de datos: generar cadenas de pensamiento estructuradas para enriquecer datasets de entrenamiento o para filtrar razonamientos incorrectos antes de pasarlos a un modelo mayor.
-- Tutor de lógica proposicional en aplicaciones educativas: el SFT sobre ~54.607 pares de inferencia lógica lo hace adecuado para explicar silogismos y detectar falacias formales simples en inglés.
-- Prototipado rápido de agentes de razonamiento en local: gracias a su tamaño reducido y a la compatibilidad con Ollama y LM Studio, sirve para validar arquitecturas de agentes multi-paso antes de migrar a modelos mayores.
-- Clasificación y verificación de argumentos en herramientas de documentación técnica: dado un texto con premisas y conclusión, el modelo puede señalar si la inferencia es válida, útil en revisión de especificaciones o documentación formal.
-- Inferencia en entornos con restricciones de privacidad: al ejecutarse íntegramente en local con pesos Apache 2.0, permite procesar problemas de lógica y STEM sin enviar datos a servicios externos.
+- Verificación de argumentos lógicos en pipelines educativos: el modelo evalúa silogismos y argumentos proposicionales indicando validez y conclusión, útil para generar ejercicios corregidos automáticamente en plataformas de enseñanza de lógica.
+- Asistente de resolución de problemas STEM en local: con Q4_K_M (~1,2 GB) puede desplegarse en portátiles sin GPU dedicada para dar derivaciones paso a paso de problemas de física o matemáticas, manteniendo los datos en el dispositivo.
+- Preprocesado de razonamiento en pipelines RAG: actuar como "razonador barato" que estructura inferencias antes de pasar la respuesta a un modelo mayor, reduciendo coste por consulta en arquitecturas en cascada.
+- Filtrado y anotación de datasets de lógica: generar pares premisa-conclusión etiquetados para entrenar o validar otros modelos, aprovechando su SFT específico sobre lógica proposicional.
+- Despliegue en dispositivos de borde y móviles: la cuantización Q4_K_M permite integración en aplicaciones Android/iOS mediante llama.cpp u Ollama, para asistentes offline de razonamiento básico.
+- Prototipado rápido de agentes de razonamiento: servir como componente de inferencia local en pruebas de concepto con LM Studio u Ollama antes de escalar a modelos mayores, gracias a su licencia Apache 2.0 y su reducido footprint.
+- Educación y divulgación: generar explicaciones encadenadas de deducciones lógicas para materiales docentes, con la salvedad de revisar siempre las salidas por las limitaciones de capacidad del modelo.
 
 ## Benchmarks y rendimiento
 
@@ -59,46 +55,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (según tamaño de archivo GGUF):
-  - F16: ~3,8 GB.
-  - Q8_0: ~2,1 GB.
-  - Q5_K_M: ~1,4 GB (recomendado por el autor para escritorio).
-  - Q4_K_M: ~1,2 GB (recomendado por el autor para móvil y borde).
-- GPU recomendadas: no disponibles en la información proporcionada; por tamaño, cualquier GPU consumer con al menos 4 GB de VRAM puede alojar las cuantizaciones Q4_K_M y Q5_K_M.
-- Cabe en GPU consumer: sí, en tarjetas con 4 GB o más de VRAM para Q4_K_M/Q5_K_M; la F16 requiere al menos 4-6 GB.
-- Opciones de despliegue: llama.cpp (CLI y binding de Python `llama_cpp`), Ollama (mediante Modelfile), LM Studio. vLLM y TGI no están documentados para este repositorio GGUF.
-- Latencia y throughput estimados: no disponibles en la información proporcionada. El ejemplo del autor usa `n_ctx=1024` y `max_tokens=512`.
+- VRAM estimada para inferencia: ~3,8 GB en F16; ~2,1 GB en Q8_0; ~1,4 GB en Q5_K_M; ~1,2 GB en Q4_K_M (tamaños de fichero según la model card; el consumo real en memoria añade overhead del runtime y del contexto).
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para Q4_K_M; RTX 3060/4060 o superiores para Q5_K_M y Q8_0; A100/H100 no son necesarias para este tamaño.
+- Cabe en GPU consumer: sí, en todas las cuantizaciones indicadas; Q4_K_M y Q5_K_M son viables incluso en iGPU y CPU.
+- Opciones de despliegue: llama.cpp (CLI y binding Python `llama_cpp`), Ollama (mediante Modelfile), LM Studio; compatible con endpoints según los tags del repositorio.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Enfoque |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-Coder-Distilled-SFT-GGUF (este) | 2.031.739.904 | no disponible | Apache 2.0 | GGUF | Destilado de Coder 30B-A3B + SFT de lógica |
-| Qwen/Qwen3-1.7B | 1,7B (aprox.) | no disponible | Apache 2.0 | safetensors, GGUF | Modelo base original de Qwen |
-| Qwen3-1.7B-Coder-Distilled-SFT | 2.031.739.904 | no disponible | Apache 2.0 | safetensors | Modelo fuente en precisión completa |
-| Qwen3-1.7B-Coder-Distilled | 2.031.739.904 | no disponible | Apache 2.0 | safetensors | Solo etapa 1 (destilación Coder) |
+| Qwen3-1.7B-Coder-Distilled-SFT-GGUF (este) | 2.031.739.904 | no disponible | Apache 2.0 | GGUF | Razonamiento lógico y STEM destilado |
+| Qwen/Qwen3-1.7B (base) | ~1.700 millones | no disponible | Apache 2.0 | safetensors | Modelo generalista base |
+| reaperdoesntknow/Qwen3-1.7B-Coder-Distilled | no disponible | no disponible | no disponible | no disponible | Solo etapa 1 de destilación |
+| reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF | no disponible | no disponible | no disponible | GGUF | Profesor instruct + SFT legal |
 
-No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Modelo de 1,7B: el propio autor advierte de límites de capacidad para razonamiento estructurado; inferencias complejas con muchos cuantificadores pueden exceder su capacidad.
-- No es un generador de código pese a haber sido destilado desde un profesor Coder; no debe usarse como sustituto de un modelo de código.
-- No es un verificador formal de demostraciones; las salidas deben verificarse siempre en contextos críticos.
-- Riesgo de alucinación inherente a modelos pequeños; no se han publicado evaluaciones de fiabilidad.
-- Solo soporta inglés; no se declaran capacidades multilingües.
-- Longitud de contexto no documentada en la información disponible; el ejemplo de uso fija `n_ctx=1024`, lo que sugiere ventanas cortas en la práctica.
-- Sesgos conocidos: no disponibles en la información proporcionada.
-- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre exactitud de las inferencias.
-- Las afirmaciones sobre fundamentos matemáticos propios (Discrepancy Calculus, Topological Knowledge Distillation) no están verificadas de forma independiente en la información disponible.
+- Modelo de 1,7B parámetros: capacidad limitada para inferencias multi-paso con muchos cuantificadores; el propio autor advierte que pueden exceder su capacidad.
+- No es un generador de código pese al profesor Coder; no debe emplearse como tal en producción.
+- No es un verificador formal de demostraciones; las salidas deben validarse siempre en contextos críticos.
+- Riesgo de alucinación inherente a modelos pequeños, especialmente fuera del dominio lógico/STEM para el que fue ajustado.
+- Soporte exclusivo de inglés según la model card; el rendimiento en castellano no está documentado.
+- No hay información publicada sobre sesgos específicos del ajuste; al derivar de Qwen3-1.7B hereda los sesgos del modelo base y de los datasets de destilación y SFT.
+- Licencia Apache 2.0 permite uso comercial, pero la model card no ofrece garantías ni evaluación independiente del rendimiento en producción.
+- El autor menciona marcos matemáticos propios (Discrepancy Calculus) sin validación externa publicada; tratarlos como afirmaciones del autor, no como resultados verificados.
+- Longitud de contexto no documentada; los ejemplos usan n_ctx=1024, por lo que ventanas mayores no están garantizadas.
 
 ## Enlaces
 
-- Repositorio GGUF: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT-GGUF
+- Hugging Face (este modelo): https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT-GGUF
 - Modelo fuente (precisión completa): https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT
-- Etapa 1 solo: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled
-- Variante con profesor instruct + SFT legal: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF
-- Modelo base Qwen3: https://huggingface.co/Qwen/Qwen3-1.7B
+- Variante solo etapa 1: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled
+- Variante profesor instruct + SFT legal: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B-SFT-GGUF
+- Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Dataset de inferencia lógica: https://huggingface.co/datasets/KonstantinDob/logic_inference_dataset
 - Paper LogicInference (Ontañón): https://openreview.net/pdf?id=HAGeIS_Lcg9

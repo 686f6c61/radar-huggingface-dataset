@@ -46,5 +46,11 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": []
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …Read more"
+    }
+  ]
 }

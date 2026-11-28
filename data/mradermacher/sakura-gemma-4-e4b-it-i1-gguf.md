@@ -2,51 +2,51 @@
 
 ## Resumen
 
-sakura-gemma-4-E4B-it-i1-GGUF es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo Takenoko12345678/sakura-gemma-4-E4B-it, un ajuste fino de tipo LoRA sobre la familia Gemma 4 (variante E4B) orientado a conversacion en japones, personajes (persona/roleplay) y razonamiento con modo "thinking". El modelo base parte de la arquitectura Gemma 4 multimodal, con capacidades de vision, y esta etiquetado como compatible con transformadores y con endpoints, ademas de incluir soporte para MLX segun los tags del autor.
+sakura-gemma-4-E4B-it-i1-GGUF es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo Takenoko12345678/sakura-gemma-4-E4B-it, un ajuste fino (LoRA) sobre la familia Gemma de cuarta generacion orientado a conversacion en japones e ingles con enfasis en persona y roleplay. El repositorio no contiene pesos originales en precision completa, sino una bateria de cuantizaciones de tipo imatrix (i1) pensadas para su uso con llama.cpp y derivados.
 
-El repositorio que nos ocupa no contiene pesos originales sino versiones cuantizadas con calibracion imatrix (denominadas i1), pensadas para su uso en llama.cpp y ecosistemas compatibles con GGUF. El modelo cuenta con 7.518.069.290 parametros totales segun los safetensors del modelo base, lo que lo situa en la franja de ~7.500 millones de parametros, con licencia Apache 2.0 y soporte declarado de japones e ingles.
+El modelo base declara 7.518.069.290 parametros reales en safetensors, pese a la denominacion comercial "E4B" que sugiere un modelo de aproximadamente 4.000 millones de parametros efectivos. Los tags del repositorio indican capacidades multimodales (vision) y un modo de razonamiento explicito (thinking), ademas de estar afinado para japones e ingles.
 
-Su relevancia actual radica en que ofrece una via practica de ejecutar un modelo Gemma 4 afinado para rol conversacional en japones sobre hardware de consumo, mediante cuantizaciones que van desde ~4,5 GB (Q2_K) hasta ~5,3 GB (Q4_K_S) en las variantes listadas, manteniendo el formato multimodal (los ficheros mmproj se distribuyen en el repositorio estatico hermano).
+La relevancia de esta ficha reside en que empaqueta un modelo conversacional especializado en japones en formatos ligeros (desde 4,5 GB en Q2_K hasta 6,3 GB en Q6_K) ejecutables en hardware de consumo, con licencia Apache 2.0 y compatibilidad con endpoints. Es una opcion practica para desplegar personajes conversacionales o asistentes en japones en local sin depender de infraestructura en la nube.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Gemma 4 (variante E4B); transformer multimodal con adaptador LoRA sobre el modelo base |
-| Parametros totales | 7.518.069.290 |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | Transformer multimodal basada en Gemma 4 (familia Gemma); detalles exactos no disponibles |
+| Parametros totales | 7.518.069.290 (segun safetensors del modelo base) |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-Q2_K, i1-IQ3_M, i1-Q4_K_S (listadas en el repo); el autor menciona ademas Q3_K_M, IQ3_XXS, IQ4_XS, Q4_K_M, Q5_K_M, Q6_K, IQ2_M, IQ1_M, etc. como parte del conjunto de quants generados |
-| Idiomas soportados | ja, en |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (con fichero imatrix aparte); el modelo base en safetensors |
+| Tipos de cuantizacion | i1-Q2_K, i1-Q3_K_S, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-IQ4_NL, i1-Q4_0, i1-Q4_K_S, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K, mas fichero imatrix |
+| Idiomas soportados | japones (ja), ingles (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones i1/imatrix); los pesos originales del modelo base estarian en safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un ajuste fino mediante LoRA sobre Gemma 4 E4B, segun los tags `lora` y `base_model:adapter:Takenoko12345678/sakura-gemma-4-E4B-it`. La familia Gemma 4 es multimodal (tag `multimodal` y nota del autor indicando que es un modelo de vision), por lo que conserva la torre de vision del modelo base; los ficheros mmproj necesarios para el procesamiento de imagen se alojan en el repositorio estatico hermano, no en este. El ajuste esta orientado a japones conversacional, persona y roleplay, con soporte de modo "thinking".
+El modelo base pertenece a la familia Gemma 4 de Google, de la que no se detallan en la informacion disponible ni el numero de capas, ni la dimension oculta, ni si emplea atencion lineal o hibrida. Los tags del repositorio confirman que es un modelo multimodal (vision) con soporte de modo thinking y que ha sido adaptado mediante LoRA sobre el checkpoint base, lo que implica un ajuste fino supervisado adicional sobre datos conversacionales en japones e ingles.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO en el ajuste. Las cuantizaciones de este repositorio se han generado con calibracion imatrix (etiqueta `imatrix` y fichero `sakura-gemma-4-E4B-it.imatrix.gguf` de 0,1 GB), lo que segun el autor suele mejorar la calidad frente a cuantizaciones estaticas de tamano similar. El autor indica que las versiones estaticas estan disponibles en el repositorio `sakura-gemma-4-E4B-it-GGUF`.
+No se especifican en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. La cuantizacion realizada por mradermacher emplea ficheros imatrix, lo que mejora la calidad de las cuantizaciones de baja precision (especialmente las series IQ) frente a cuantizaciones estaticas equivalentes en tamano. No hay datos sobre decodificacion especulativa ni optimizaciones de inferencia especificas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en japones e ingles, con enfasis en estilo persona y roleplay.
-- Razonamiento con modo "thinking" (tag `thinking`).
-- Procesamiento multimodal de vision (el autor confirma que es un modelo de vision; los mmproj estan en el repo estatico).
-- Soporte de conversacion multi-turno orientada a personajes.
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags).
-- Soporte de MLX segun los tags del autor.
-- No se documenta tool calling ni function calling en la informacion disponible.
-- No se documenta soporte explicito de agentes o razonamiento multi-paso mas alla del modo thinking.
+- Generacion de texto conversacional en japones e ingles, con enfasis en mantener una persona consistente a lo largo de la conversacion.
+- Roleplay y simulacion de personajes, segun los tags del repositorio (persona, roleplay).
+- Modo de razonamiento explicito (thinking), segun los tags del modelo.
+- Capacidades multimodales de vision, segun los tags; los ficheros mmproj, si existen, se alojan en el repositorio estatico de cuantizaciones.
+- Compatibilidad declarada con endpoints (tag endpoints_compatible).
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multilingues adicionales al japones e ingles: no disponibles.
 
 ## Casos de uso
 
-- Roleplay y personajes conversacionales en japones: el ajuste LoRA esta especificamente entrenado para mantener persona y estilo, por lo que es adecuado para chatbots de personaje con consistencia de voz a lo largo de conversaciones multi-turno.
-- Prototipado local en hardware de consumo: la cuantizacion i1-Q4_K_S (~5,3 GB) permite ejecutar el modelo en GPUs consumer con 8 GB o mas de VRAM mediante llama.cpp u Ollama, sin necesidad de infraestructura en la nube.
-- Asistentes conversacionales en japones para producto: al soportar ja y en, puede desplegarse como backend de atencion al usuario en japones con respuestas estilizadas, aunque con las cautelas de alucinacion habituales.
-- Experimentacion con modo thinking: util para investigar como el razonamiento explicito afecta a la calidad de respuesta en tareas de rol y dialogo.
-- Aplicaciones de vision-lenguaje en japones: al conservar la torre multimodal, puede emplearse para descripcion de imagenes o dialogos sobre imagenes en japones, cargando los mmproj del repositorio estatico.
-- Evaluacion comparativa de cuantizaciones: el repositorio ofrece varias variantes (Q2_K, IQ3_M, Q4_K_S) que permiten medir el impacto de la cuantizacion en calidad conversacional y perplexidad.
-- Integracion en pipelines de inferencia local con llama.cpp: el formato GGUF y el fichero imatrix facilitan generar cuantizaciones propias adaptadas a un presupuesto de memoria concreto.
+- Personajes conversacionales en japones: el modelo puede mantener una persona estable en conversaciones multi-turno gracias a su ajuste especifico para roleplay, desplegado en local con llama.cpp u Ollama sobre una GPU de consumo.
+- Asistente de atencion al cliente en japones: integrado en un backend de chat, gestiona respuestas en japones natural con un tono controlado por la persona configurada, sin enviar datos a terceros al ejecutarse en local.
+- Prototipado de videojuegos o novelas visuales: permite generar dialogos de personajes en japones para pruebas de guion y sistemas de dialogo ramificado, con cuantizaciones Q4_K_M de 5,4 GB que caben en GPUs de 8 GB.
+- Traduccion y adaptacion de contenido japones: uso como modelo de apoyo para reescritura y localizacion de textos entre japones e ingles, aprovechando su entrenamiento bilingue.
+- Investigacion sobre alineacion de persona: sirve como caso de estudio de ajuste LoRA sobre Gemma 4 para estudiar como se preservan o degradan rasgos de personalidad tras cuantizaciones agresivas (Q2_K, IQ2).
+- Despliegue en entornos con requisitos de privacidad: al ser Apache 2.0 y ejecutable en local, encaja en escenarios donde el contenido conversacional no puede salir de la infraestructura propia, como prototipos internos de RRHH o formacion.
+- Evaluacion de cuantizaciones: el repositorio ofrece una matriz completa de cuantizaciones i1 que permite comparar calidad y velocidad en una misma tarea conversacional, util para calibrar que nivel de cuantizacion es aceptable para produccion.
 
 ## Benchmarks y rendimiento
 
@@ -54,40 +54,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada segun cuantizacion: i1-Q2_K ~4,5 GB; i1-IQ3_M ~4,8 GB; i1-Q4_K_S ~5,3 GB (mas overhead de contexto y, en su caso, del proyector de vision).
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para inferencia local comoda; A100/H100 solo si se busca alto throughput en serving.
-- Cabe en GPU consumer: si, en tarjetas con 8 GB o mas de VRAM para las cuantizaciones Q4_K_S e inferiores; con 6 GB conviene bajar a IQ3_M o Q2_K.
-- Opciones de despliegue: llama.cpp, Ollama, y servidores compatibles con GGUF; el modelo base es compatible con transformers. Para vision es necesario cargar los mmproj del repositorio estatico.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: entre 4,5 GB (i1-Q2_K) y 6,3 GB (i1-Q6_K) solo para los pesos; anadir entre 1 y 2 GB adicionales para contexto KV y overhead del runtime.
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090; en el segmento profesional, A10, L4 o A100 si se requiere concurrencia alta.
+- Cabe en GPU de consumo: si, desde una GTX 1660 6 GB con cuantizaciones Q3 o IQ3, y con holgura en tarjetas de 8 GB o mas usando Q4_K_M o Q5_K_M.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y servidores compatibles con la API de OpenAI mediante llama.cpp server; vLLM y TGI no soportan GGUF de forma nativa.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| sakura-gemma-4-E4B-it (i1-GGUF) | 7.518.069.290 | no disponible | ja, en | apache-2.0 | GGUF |
-| sakura-gemma-4-E4B-it (estatico GGUF) | 7.518.069.290 | no disponible | ja, en | apache-2.0 | GGUF |
-| sakura-gemma-4-E4B-it (base, safetensors) | 7.518.069.290 | no disponible | ja, en | apache-2.0 | safetensors |
+| sakura-gemma-4-E4B-it (i1-GGUF) | 7.518.069.290 | no disponible | ja, en | Apache 2.0 | GGUF |
+| Gemma 4 E4B base (familia) | no disponible | no disponible | multilingue | Gemma terms | safetensors |
+| Modelos japoneses de rol de tamano similar (p. ej. variantes de Gemma/Llama ajustadas en ja) | no disponible | no disponible | ja, en | variable | GGUF, safetensors |
 
-No se dispone de datos de benchmarks ni de modelos comparables de terceros en la informacion proporcionada; la comparativa se limita a las variantes del mismo modelo.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y formato.
 
 ## Limitaciones y advertencias
 
-- El repositorio contiene unicamente cuantizaciones; la calidad final depende del modelo base y del proceso de cuantizacion, con perdida esperable en Q2_K e IQ3_M frente a Q4_K_S.
-- No hay informacion sobre sesgos del ajuste LoRA ni sobre la composicion del dataset de entrenamiento, por lo que no puede evaluarse el riesgo de sesgo de forma documentada.
-- Riesgo de alucinacion inherente a modelos de ~7.500 millones de parametros, especialmente en tareas factuales fuera del dominio conversacional.
-- Soporte limitado a japones e ingles; el rendimiento en castellano no esta garantizado ni documentado.
-- La licencia Apache 2.0 permite uso comercial, pero debe verificarse la licencia y condiciones del modelo base Gemma 4 subyacente, que puede imponer terminos adicionales.
-- Para uso multimodal es imprescindible descargar los ficheros mmproj del repositorio estatico; este repositorio no los incluye.
-- No se documentan capacidades de tool calling ni de agentes, por lo que no debe asumirse su disponibilidad en produccion sin validacion previa.
-- No hay datos publicados de contexto maximo, throughput ni latencia, lo que dificulta el dimensionamiento de despliegues en produccion.
+- El modelo esta especializado en japones e ingles; su rendimiento en castellano no esta documentado y probablemente sea deficiente frente a modelos multilingues genericos.
+- Al ser un ajuste fino orientado a persona y roleplay, puede producir respuestas sesgadas hacia el personaje configurado y desviarse de tareas factuales o tecnicas.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; no se han publicado evaluaciones de fidelidad factual.
+- No se detalla la longitud de contexto soportada, lo que impide garantizar conversaciones de contexto largo; conviene validarlo empiricamente antes de produccion.
+- Las cuantizaciones de baja precision (Q2_K, IQ2) degradan notablemente la coherencia conversacional; para produccion se recomienda Q4_K_M o superior.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Gemma esta sujeto a los terminos de Google; conviene revisar la compatibilidad de ambas licencias antes de un despliegue comercial.
+- La informacion sobre tool calling, agentes y capacidades multimodales practicas no esta confirmada en la model card; los tags no equivalen a documentacion funcional.
+- El repositorio tiene 0 likes y un volumen de descargas moderado (1862), lo que sugiere poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/sakura-gemma-4-E4B-it-i1-GGUF
-- Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/sakura-gemma-4-E4B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/sakura-gemma-4-E4B-it-i1-GGUF
 - Modelo base: https://huggingface.co/Takenoko12345678/sakura-gemma-4-E4B-it
+- Cuantizaciones estaticas: https://huggingface.co/mradermacher/sakura-gemma-4-E4B-it-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#sakura-gemma-4-E4B-it-i1-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
-- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- FAQ y solicitudes de modelos del autor: https://huggingface.co/mradermacher/model_requests
+- FAQ y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

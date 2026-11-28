@@ -56,16 +56,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Remek/basal-2.0-max-MLX-8bit · Hugging Face",
-      "url": "https://huggingface.co/Remek/basal-2.0-max-MLX-8bit",
-      "snippet": "Instructions to use Remek/basal-2.0-max-MLX-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use Remek/basal-2.0-max-MLX-8bit with MLX:"
-    },
-    {
-      "title": "basal-2.0 - a Remek Collection - Hugging Face",
-      "url": "https://huggingface.co/collections/Remek/basal-20",
-      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Remek"
-    }
-  ]
+  "sources": []
 }

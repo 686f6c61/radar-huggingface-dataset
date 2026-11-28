@@ -2,123 +2,104 @@
 
 ## Resumen
 
-MiniCPM5-2B-Supertool-Uncensored es un ajuste fino de 2.516.756.480 parametros derivado de saidutta69/MiniCPM5-2B-Supertool, que a su vez parte de openbmb/MiniCPM5-2B. El modelo esta especializado en la generacion de llamadas a herramientas (tool calling) siguiendo la superficie de herramientas de Claude Code: `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `WebFetch`, `WebSearch`, `TodoWrite`, `TaskUpdate` y `ToolSearch`, emitidas en la forma XML nativa del modelo base.
+MiniCPM5-2B-Supertool-Uncensored es una variante "abliterada" (decensored) del modelo saidutta69/MiniCPM5-2B-Supertool, que a su vez es un ajuste fino con QLoRA orientado a tool calling sobre openbmb/MiniCPM5-2B. Lo publica el usuario saidutta69 y su proposito es ofrecer un modelo pequeno (2.516.756.480 parametros, unos 2,52B) capaz de ejecutar function calling y tareas de agente de codigo en hardware de consumo, pero sin la capa de rechazos que el modelo base hereda del alineamiento. La edicion se realizo con Heretic 2.1.0 en su variante Arbitrary-Rank Ablation (ARA), eliminando un subespacio de rechazo de rango 100 en las capas 19 a 35.
 
-La variante "Uncensored" se ha generado con Heretic v2.1.0 aplicando una ablacion de rango arbitrario (Arbitrary-Rank Ablation) sobre las capas 19 a 35, con el objetivo de reducir la tasa de rechazos. Segun la model card del autor, los rechazos medidos por clasificador caen de 96/100 en el modelo original a 12/100 en esta version, con una divergencia KL de 0.0494 respecto al original.
+El modelo conserva la plantilla ChatML para esquemas de herramientas, una ventana de contexto de 131.072 tokens y un peso en fp16 de 5,03 GB, lo que permite ejecutarlo en una GPU de 6 GB o con offload a CPU. La relevancia actual reside en que combina tres factores poco habituales en modelos de este tamano: contexto largo real, soporte nativo de tool calling con formato estricto y un perfil de rechazo reducido de forma medible (de 96/100 a 12/100 en el conjunto de evaluacion del autor), manteniendo la licencia Apache-2.0.
 
-Es relevante para desarrolladores que necesitan un modelo pequeno (2,5B) capaz de emitir llamadas a funciones con formato correcto en pipelines de agentes, con la salvedad de que se trata de un modelo especialista, no de un asistente general, y de que la ablacion introduce riesgos adicionales de sesgo y de comportamiento fuera de distribucion.
+Es importante subrayar que no se trata de un nuevo ajuste fino, sino de una resta de direcciones de pesos sobre el checkpoint base. El autor reporta una perdida de capacidad de aproximadamente 1,27 puntos porcentuales en MMLU respecto al modelo original, y advierte de que la precision de function calling no se volvio a medir tras la edicion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivado de openbmb/MiniCPM5-2B); detalles internos no disponibles |
-| Parametros totales | 2.516.756.480 |
-| Parametros activos | no disponible (no es MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en el repo (pesos en safetensors a precision completa, con LoRA fusionado); el autor reporta evaluacion en 4-bit NF4 y fp16 |
-| Idiomas soportados | en (ingles) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Transformer decoder-only (familia MiniCPM5, linaje llama en transformers) |
+| Parametros totales | 2.516.756.480 (2,52B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 131.072 tokens |
+| Tipos de cuantizacion | No disponible (solo se publica checkpoint fp16; no hay GGUF) |
+| Idiomas soportados | Ingles y chino (segun model card); la metadata de HF solo declara en |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (fp16), libreria transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de openbmb/MiniCPM5-2B y se ha ajustado mediante QLoRA en NF4 4-bit con rango r=16, alpha=32 y dropout 0, aplicado sobre `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj` y `down_proj`. Los adaptadores LoRA estan fusionados en los pesos finales, de modo que el modelo se carga directamente con `transformers` sin PEFT. El entrenamiento uso el split `claude_code` del dataset `saidutta69/fable-5.1-premium-v2`, con 42.514 ejemplos (uno por turno de asistente con llamada a herramienta), cobertura de aproximadamente 3.500 de 4.132 trayectorias a 12 ejemplos por trayectoria y 347.136 llamadas validadas sin JSON malformado ni campos obligatorios ausentes. La supervision se aplico solo al turno final del asistente mediante un split prompt/completion.
+La base es un transformer decoder-only de la familia MiniCPM5 con 2,52B parametros y 42 capas. El modelo original openbmb/MiniCPM5-2B fue ajustado por saidutta69 mediante QLoRA sobre trazas de agente estilo Claude Code, con el objetivo de especializarlo en tool calling, generacion de comandos de shell y emision de JSON estricto. Los datasets declarados para ese ajuste son saidutta69/fable-5.1-premium-v2 y MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x.
 
-La programacion fue de 240 pasos, batch efectivo 16, secuencia de 4096 tokens, learning rate 2e-4 con coseno y warmup del 3%, con una perdida que descendio de 1.107 a 0.276. El entrenamiento se ejecuto en 2x Tesla T4 (sm_75) en fp16 durante 7 h 40 min, con un pico de 8,92 GB por tarjeta. Los datos originales provienen de `MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x`, repaquetizados y filtrados: se descarto la mitad anonimizada (`unknown_tool`), se eliminaron `tool_calls` sin respuesta asociada y mensajes `tool` huerfanos, se re-serializaron los mensajes de forma canonica, se deduplico por SHA-256 sobre mensajes y nombres de herramienta y se reconstruyo y valido el esquema de 14 herramientas de Claude Code. Tambien se excluyo la configuracion `fable_code`, en la que 203.750 de 203.794 llamadas contenian el esquema renderizado como valor (`{"path": "<file_path>"}`), lo que ensenaria al modelo a emitir marcadores de posicion.
-
-La innovacion principal de esta variante concreta es la ablacion ARA de Heretic v2.1.0, configurada con `start_layer_index` 19, `end_layer_index` 35, `preserve_good_behavior_weight` 0.7948, `steer_bad_behavior_weight` 0.0102, `overcorrect_relative_weight` 0.7500 y `neighbor_count` 8. El proceso es reproducible segun el autor, con instrucciones en el directorio `reproduce/` del repositorio.
+Sobre ese checkpoint (revision ef27362) se aplico Heretic 2.1.0 con ARA: en lugar de restar una unica direccion de rango 1, se aprende una actualizacion de bajo rango por modulo editado. Los parametros concretos del trial 39 de 300 (semilla 42) incluyen start_layer_index 19, end_layer_index 35, lora_rank 100, preserve_good_behavior_weight 0.7948, steer_bad_behavior_weight 0.0102, overcorrect_relative_weight 0.7500, neighbor_count 8, n_optimization_steps 5, max_iter 20 y preserve_row_magnitudes activado. La edicion afecta a attn.o_proj y mlp.down_proj de las capas 19 a 35 de 42, dejando intacta la parte frontal de la red (incluida la interfaz con el tokenizer), lo que segun el autor explica que el formato de tool call sobreviva. El directorio reproduce/ incluye config.toml, requirements.txt, el journal de Optuna y sumas SHA-256 para regenerar el checkpoint con heretic --reproduce.
 
 ## Capacidades
 
-- Generacion de llamadas a herramientas en formato XML nativo del modelo base: `<function name="Bash"><param name="command">ls tasks/</param></function>`.
-- Cobertura del esquema de herramientas de Claude Code: `Bash`, `Read`, `Write`, `Edit`, `Glob`, `Grep`, `WebFetch`, `WebSearch`, `TodoWrite`, `TaskUpdate` y `ToolSearch` (la model card menciona un esquema reconstruido de 14 herramientas).
-- Soporte de tool calling y function calling con esquemas pasados a `apply_chat_template(tools=...)`.
-- Capacidad de agentes y razonamiento multi-paso orientada a tareas de codigo y edicion de ficheros.
-- Generacion de contenido de ficheros: el modelo tiende a escribir cuerpos de archivo reales en llamadas `Write`, lo que puede truncarse si el limite de generacion es bajo.
-- Reduccion de rechazos respecto al modelo original (12/100 frente a 96/100 segun clasificador del autor).
-- Capacidades multilingues: solo ingles declarado.
-- No se documentan capacidades de vision, audio ni modo de razonamiento explicito.
+- Generacion de texto conversacional en ingles y chino.
+- Tool calling y function calling con esquema JSON en ChatML: las herramientas se declaran en `<tools>` y los resultados vuelven como `tool_response`.
+- Emision de bloques `think` vacios antes de la respuesta; se pueden recortar hasta `` para obtener solo la respuesta.
+- Generacion de codigo, comandos bash y scripts para agentes de terminal.
+- Soporte de razonamiento multi-paso orientado a agentes de codigo (trazas estilo Claude Code).
+- Contexto largo de 131.072 tokens, adecuado para repositorios y sesiones de agente extensas.
+- Inferencia offline y local en GPU de consumo o CPU.
+- Supresion parcial de rechazos: el autor reporta 12/100 rechazos frente a 96/100 del base.
+- No se documentan capacidades de vision, audio ni modo thinking con contenido (el bloque think se emite vacio).
 
 ## Casos de uso
 
-- Agentes de codificacion automatizada: el modelo emite llamadas `Bash`, `Read`, `Edit` y `Write` en el formato XML esperado, por lo que puede conectarse a un orquestador que traduzca esas llamadas a acciones reales sobre un repositorio, con la ventaja de su bajo coste de inferencia a 2,5B.
-- Integracion en pipelines de CI/CD como generador de parches: dado un contexto de ficheros y una tarea, produce llamadas `Edit` o `Write` con el contenido del cambio, que un paso posterior valida y aplica.
-- Busqueda y navegacion web asistida: mediante `WebFetch` y `WebSearch`, el modelo puede encadenar consultas y recuperaciones dentro de un bucle de agente para tareas de investigacion acotadas.
-- Gestion de tareas en agentes multi-paso: las herramientas `TodoWrite` y `TaskUpdate` permiten mantener un plan de trabajo estructurado en tareas largas, aunque con la limitacion de contexto no documentada.
-- Sustitucion local de modelos mayores en entornos con GPU de gama baja: con 2,5B de parametros y pesos de 5,0 GB en el repo, puede desplegarse en una unica GPU consumer para prototipos de agentes donde el coste por token es critico.
-- Generacion de esquemas de llamada para pruebas: sirve como generador de casos de prueba de tool calling en ingles para validar parsers y orquestadores propios, dado su formato de salida bien definido.
-- Escenarios que requieren baja tasa de rechazo: la ablacion reduce los rechazos, lo que puede ser util en tareas de agente donde un rechazo rompe el bucle, siempre que el caso de uso no exija moderacion estricta.
+- Agente de codigo local: el modelo puede gestionar bucles de tool calling sobre un repositorio gracias a su ventana de 131.072 tokens, invocando herramientas Bash o de edicion definidas en el esquema ChatML. Es adecuado porque el ajuste se entreno sobre trazas de agente reales y el formato estricto se conserva tras la abliteracion.
+- Automatizacion de terminal y scripting: genera comandos de shell y los encadena mediante function calling, lo que permite construir asistentes de operaciones que ejecutan y verifican comandos en local sin depender de una API externa.
+- Asistente de CI/CD: integrado en pipelines para generar parches, interpretar salidas de tests y proponer correcciones, con la ventaja de que el modelo cabe en una GPU de 6 GB y puede ejecutarse en el propio runner.
+- Prototipado de agentes con contexto largo: util para experimentar con ventanas de 128K tokens en hardware modesto, por ejemplo para resumir repositorios completos o mantener memoria de sesion prolongada.
+- Despliegue en edge y entornos air-gapped: al ser offline y de 5,03 GB en fp16, puede ejecutarse en estaciones de trabajo sin conectividad, algo relevante en entornos con requisitos de confidencialidad.
+- Evaluacion de tecnicas de abliteracion: sirve como caso reproducible (parametros, semilla y journal incluidos) para investigadores que estudien la supresion de rechazos y su impacto en capacidades y formato.
+- Generacion de JSON estricto para integraciones: con temperatura baja produce salidas JSON mas rigurosas, util para rellenar estructuras de datos en pipelines automatizados.
 
 ## Benchmarks y rendimiento
 
-Resultados publicados por el autor en la model card. FC-Eval usa 89 APIs no vistas en entrenamiento, 150 tareas, decodificacion greedy y fp16 en ambos modelos.
+| Metrica | Este modelo | Base (MiniCPM5-2B-Supertool) |
+|---|---|---|
+| Rechazos | 12/100 | 96/100 |
+| Divergencia KL | 0,0494 | No aplica |
+| PIQA acc_norm | 0,7084 | No disponible en la informacion |
+| MMLU acc | 0,5471 | Aproximadamente 0,5598 (1,27 pp superior) |
+| Precision de function calling | No re-medida tras la edicion | No disponible en la informacion |
 
-| Metrica | Base (MiniCPM5-2B) | Supertool |
-|---|---:|---:|
-| Exito de tarea (llamada exacta) | 49,3% | 77,3% |
-| Nombre de herramienta correcto | 50,0% | 90,0% |
-| Claves de argumento correctas | 50,0% | 87,3% |
-| Fallos de formato | 50,0% | 8,7% |
-| Tiempo total, 150 tareas | 1071 s | 886 s |
-
-Trazas de agente en dominio, 120 ejemplos del split `validation`, greedy, `max_new=384`, ambos modelos en 4-bit sobre una Tesla T4:
-
-| Metrica | Base | Supertool |
-|---|---:|---:|
-| Perdida de completado | 1,5691 | 1,1246 |
-| Nombre de herramienta correcto | 47,5% | 54,2% |
-| Nombres de argumento correctos | 31,7% | 46,7% |
-| Coincidencia completa | 0,0% | 4,2% |
-| Llamada parseable emitida | 88,3% | 75,8% |
-
-Entre las llamadas efectivamente emitidas en ese conjunto: nombre de herramienta correcto 53,8% (base) frente a 71,4% (Supertool), y nombres de argumento correctos 35,8% frente a 61,5%. El autor atribuye la caida de llamadas parseables a truncamiento de llamadas `Write` por el limite de generacion, no a incumplimiento de formato.
-
-Rendimiento de la ablacion (Uncensored frente al original):
-
-| Metrica | Este modelo | Original |
-|---|---:|---:|
-| Rechazos (clasificador) | 12/100 | 96/100 |
-| Divergencia KL | 0,0494 | 0 (por definicion) |
-
-No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks generales en la informacion disponible.
+No se han publicado resultados de benchmarks de tool calling (tipo FC-Eval) re-verificados en la informacion disponible. Las cifras de MMLU se midieron sobre 14.042 preguntas segun el autor.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: los pesos ocupan 5,0 GB en el repositorio (fp16/bf16); en 4-bit NF4 la huella se reduce aproximadamente a la mitad, y el autor reporta ejecucion en 4-bit sobre una unica Tesla T4 (16 GB) con `max_new=384`.
-- GPU recomendadas: Tesla T4 (validada por el autor), RTX 4090, A100 y H100 para mayor throughput; cualquier GPU con al menos 8-10 GB de VRAM deberia poder cargar el modelo en 4-bit, aunque no se documentan pruebas en esas tarjetas.
-- Cabe en GPU consumer: si, en tarjetas con 8 GB o mas en cuantizacion de 4 bits; en fp16 requiere del orden de 6-7 GB solo para pesos, mas cache KV.
-- Opciones de despliegue: `transformers` (soporte declarado, con `text-generation-inference` en los tags), vLLM y llama.cpp/Ollama no estan confirmados en la informacion disponible; no se publican pesos GGUF en el repositorio.
-- Latencia y throughput: no se publican cifras de tokens por segundo; el unico dato de tiempo es el de la evaluacion FC-Eval (886 s para 150 tareas con `max_new` limitado, en hardware no especificado).
+- VRAM estimada: 5,03 GB en fp16 para el checkpoint completo; con `device_map="auto"` cabe en una GPU de 6 GB.
+- GPU recomendadas: RTX 3060 6 GB, RTX 4060 8 GB, RTX 4070, RTX 4090, A100 y H100. En GPUs de 24 GB o mas se puede cargar en fp16 sin offload y con margen para el contexto.
+- Cabe en GPU de consumo: si, en cualquier tarjeta con al menos 6 GB de VRAM; tambien puede ejecutarse en CPU con offload.
+- Opciones de despliegue: transformers (soporte nativo, segun la model card). No se publican archivos GGUF, por lo que llama.cpp y Ollama no estan disponibles de forma directa en la informacion proporcionada. La metadata incluye la etiqueta text-generation-inference, pero no se documenta configuracion especifica para TGI o vLLM.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
+- Parametros de generacion recomendados: temperature 0.6, top_p 0.95, max_new_tokens 512 en el ejemplo del autor; valores mas bajos de temperatura producen JSON mas estricto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Tool calling |
-|---|---:|---|---|---|---|
-| MiniCPM5-2B-Supertool-Uncensored | 2,516B | no disponible | Especialista en herramientas Claude Code, sin censura | apache-2.0 | Si, formato XML nativo |
-| saidutta69/MiniCPM5-2B-Supertool | 2,516B (estimado, mismo base) | no disponible | Especialista en herramientas Claude Code | no disponible en la informacion | Si |
-| openbmb/MiniCPM5-2B | no disponible | no disponible | Modelo base generalista | no disponible en la informacion | Parcial (50,0% de nombre de herramienta correcto en FC-Eval) |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| MiniCPM5-2B-Supertool-Uncensored | 2,52B | 131.072 | Apache-2.0 | Variante abliterada, sin GGUF, tool calling no re-verificado |
+| MiniCPM5-2B-Supertool (base) | 2,52B | 131.072 | Apache-2.0 | Version alineada, mismas capacidades, rechazos 96/100 |
+| openbmb/MiniCPM5-2B | 2B (aproximado) | No disponible en la informacion | No disponible en la informacion | Modelo original sin ajuste de tool calling |
+| Alternativas de 2-3B para agentes locales | No disponible | No disponible | No disponible | No se dispone de datos comparativos verificados en la informacion proporcionada |
 
-No se dispone de datos de benchmarks generales ni de contexto para comparar con alternativas de otros autores de tamano similar; la comparacion se limita a la familia de la que deriva.
+No se dispone de datos de benchmarks comparativos con otras familias (Qwen, Llama, Gemma de tamano similar) en la informacion proporcionada; no se incluyen cifras para evitar invenciones.
 
 ## Limitaciones y advertencias
 
-- No es un asistente general: es un especialista de 2,5B entrenado unicamente para emitir llamadas a herramientas del esquema de Claude Code; su utilidad fuera de ese formato es limitada.
-- Solo soporta ingles segun la model card.
-- La ablacion ARA modifica las capas 19 a 35 y reduce los rechazos de forma agresiva; esto puede degradar la moderacion y aumentar la probabilidad de contenido inapropiado o de respuestas fuera de distribucion. La divergencia KL de 0,0494 indica un cambio medible respecto al original.
-- Riesgo de alucinacion en los valores de los argumentos: en FC-Eval las claves de argumento mejoran al 87,3%, pero la coincidencia exacta de la llamada se queda en 77,3%, lo que implica que una parte de las llamadas tiene valores incorrectos.
-- El modelo tiende a generar cuerpos de fichero largos en llamadas `Write`, lo que provoca truncamiento con limites de generacion bajos y reduce la tasa de llamadas parseables (75,8% en el conjunto en dominio con `max_new=384`).
-- La licencia apache-2.0 permite uso comercial, pero el modelo base y los datasets intermedios pueden tener condiciones propias que conviene verificar antes de desplegar; la model card no detalla restricciones adicionales.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de terceros; los benchmarks proceden del propio autor.
-- No se documenta la longitud de contexto, lo que impide planificar tareas de agente con historiales largos sin pruebas previas.
-- El uso de un modelo "uncensored" en produccion puede incumplir politicas de plataforma o requisitos regulatorios segun el sector.
+- No es totalmente "uncensored": el autor reconoce que aproximadamente 1 de cada 8 prompts sigue siendo rechazado (12/100). No es adecuado para quien necesite garantias de rechazo.
+- Perdida de capacidad medida: MMLU cae 1,27 pp respecto al base; PIQA se situa en 0,7084. El impacto en tareas de codigo y tool calling no se ha re-medido.
+- Precision de function calling no re-verificada tras la edicion: riesgo real de degradacion del formato JSON o de la seleccion de herramienta en produccion.
+- Riesgo de alucinacion: modelo de 2,5B con contexto de 131K; en ventanas muy largas puede perder informacion intermedia y generar comandos o rutas inexistentes.
+- Sesgos: no se documentan evaluaciones de sesgo; el entrenamiento se limita a ingles y chino, con posible degradacion en castellano.
+- Licencia Apache-2.0 permite uso comercial, pero el autor advierte que no debe usarse donde se requiera rechazo garantizado ni en APIs alojadas con filtrado.
+- No hay GGUF publicado: el despliegue en llama.cpp u Ollama requiere conversion propia.
+- La edicion de pesos con abliteracion puede producir respuestas menos coherentes en dominios sensibles; conviene validar con evaluaciones propias antes de produccion.
+- El bloque `think` se emite vacio; si se espera razonamiento explicito, el modelo no lo proporciona.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/saidutta69/MiniCPM5-2B-Supertool-Uncensored
-- Modelo base del ajuste: https://huggingface.co/saidutta69/MiniCPM5-2B-Supertool
-- Modelo original de openbmb: https://huggingface.co/openbmb/MiniCPM5-2B
-- Dataset de entrenamiento: https://huggingface.co/datasets/saidutta69/fable-5.1-premium-v2
-- Dataset de origen de las trazas: https://huggingface.co/datasets/MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x
-- Benchmark FC-Eval: https://huggingface.co/datasets/saidutta69/fc-eval-benchmark
-- Heretic (herramienta de ablacion): https://heretic-project.org
+- Modelo base (Supertool): https://huggingface.co/saidutta69/MiniCPM5-2B-Supertool
+- Modelo original: https://huggingface.co/openbmb/MiniCPM5-2B
+- Repositorio Heretic: https://github.com/p-e-w/heretic
+- Articulo sobre abliteration: https://huggingface.co/blog/mlabonne/abliteration
+- Dataset saidutta69/fable-5.1-premium-v2: https://huggingface.co/datasets/saidutta69/fable-5.1-premium-v2
+- Dataset MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x: https://huggingface.co/datasets/MoreThought/Fable-5.1-Max-Reasoning-Filtered-10000x
+- Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

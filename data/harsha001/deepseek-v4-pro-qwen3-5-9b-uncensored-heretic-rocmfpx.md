@@ -2,103 +2,100 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-ROCmFPX es una cuantizacion GGUF del modelo de vision-lenguaje y razonamiento de 9B de parametros publicado por xtools-at, que a su vez es una version "decensored" (sin entrenamiento de seguridad) del fine-tune de Jackrong sobre Qwen3.5-9B. El modelo original destila respuestas de DeepSeek-V4-Pro y esta orientado a matematicas y disciplinas STEM, manteniendo capacidades multimodales de entrada imagen-texto. Esta ficha describe la variante cuantizada distribuida por Harsha001, no el modelo base.
+DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-ROCmFPX es una cuantización en formato GGUF de un modelo de lenguaje y visión de 9B parámetros, derivado a su vez de un fine-tune de Qwen3.5-9B destilado a partir de respuestas de DeepSeek-V4-Pro y centrado en matemáticas y disciplinas STEM. La cadena de linaje es relevante para entender qué se está descargando: el modelo original lo publica Jackrong, la versión "decensurada" (sin entrenamiento de seguridad) la produce xtools-at mediante el proceso Heretic, y esta ficha corresponde a la cuantización ROCmFPX que publica el usuario Harsha001, orientada específicamente a hardware AMD (Strix Halo) y a Vulkan.
 
-La aportacion concreta de este repositorio es el formato ROCmFPX, un conjunto de kernels y cuantizaciones optimizadas para hardware AMD (en particular Strix Halo), con ficheros de 8, 6 y 4 bits mas un proyector de vision F16. Segun el autor, el fichero de 8 bits queda mas cerca del BF16 que un Q8_0 estandar y ocupa menos espacio, mientras que el de 4 bits esta disenado para velocidad en Strix Halo. El repositorio suma 32,4 GB y acumula 719 descargas.
+El modelo combina capacidades de razonamiento (bloque de pensamiento antes de responder), generación de texto y comprensión de imágenes (pipeline `image-text-to-text`), con soporte declarado para inglés, chino, coreano, japonés, español y ruso. Su interés actual reside en que empaqueta un modelo multimodal de 9B en archivos de 6,8 a 9,6 GB que caben en equipos de consumo y en APUs con memoria unificada, algo poco habitual en modelos visión-lenguaje con modo de razonamiento.
 
-Es relevante ahora porque cubre un nicho poco atendido: inferencia de un modelo multimodal de 9B en GPUs integradas AMD mediante un fork especifico de llama.cpp, con metricas de divergencia KL publicadas frente a BF16. La contrapartida es que estos ficheros no funcionan con llama.cpp, LM Studio, Ollama ni versiones antiguas de ROCmFPX, y que el autor reconoce no haberlos probado todavia en hardware AMD real.
+Conviene subrayar dos advertencias de peso antes de cualquier evaluación: el autor elimina explícitamente el comportamiento de rechazo, de modo que el modelo puede complacer peticiones dañinas, ilegales u ofensivas; y los archivos ROCmFPX requieren un fork específico de llama.cpp (HarshaVardhan3002/ROCmFPX, compilado a partir del 7 de noviembre de 2026), por lo que no cargan en llama.cpp estándar, LM Studio, Ollama ni versiones antiguas del fork. Además, el propio autor indica que los archivos no se han probado todavía en hardware AMD real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3.5-9B), vision-lenguaje, con cabeza de prediccion multi-token (MTP) de una capa |
-| Parametros totales | 9.197.094.144 |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 ROCmFPX (8 bits), Q6_K ROCmFPX (6 bits), ROCmFP4-FAST 4 bits para Strix (O8), proyector de vision F16 |
-| Idiomas soportados | en, zh, ko, ja, es, ru |
+| Arquitectura | Transformer multimodal (visión-lenguaje) con cabecera de predicción multi-token (MTP) de una capa; fine-tune de Qwen3.5-9B |
+| Parametros totales | 9.197.094.144 (9,2B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q8_0 (ROCmFPX, 8 bits), Q6_K (ROCmFPX, 6 bits), Q4_0 (ROCmFP4-FAST para Strix Halo, atención y salida en 8 bits); codificador de visión en F16 |
+| Idiomas soportados | Inglés, chino, coreano, japonés, español, ruso |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (variantes ROCmFPX), proyector mmproj en GGUF F16 |
+| Formato de pesos | GGUF (con extensión propietaria ROCmFPX en los archivos cuantizados) |
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente es un transformer denso derivado de Qwen3.5-9B, adaptado por Jackrong mediante destilacion de respuestas de DeepSeek-V4-Pro con enfasis en matematicas y STEM. xtools-at aplico despues el proceso Heretic para eliminar el comportamiento de rechazo, dando lugar a la variante "uncensored". La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO; esa informacion no esta disponible.
+El modelo es un transformer multimodal de 9,2B parámetros construido sobre Qwen3.5-9B. El linaje declarado es: Qwen3.5-9B (base, equipo Qwen) → fine-tune de Jackrong destilado a partir de respuestas de DeepSeek-V4-Pro y orientado a matemáticas y STEM → versión decensurada de xtools-at mediante Heretic, que elimina el comportamiento de rechazo → cuantización ROCmFPX de Harsha001. La destilación desde DeepSeek-V4-Pro es, por tanto, la fuente principal del comportamiento de razonamiento; no se dispone de datos sobre el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en ninguna de las etapas.
 
-La innovacion tecnica documentada en este repositorio es la cuantizacion ROCmFPX: kernels propios para AMD que producen ficheros con menor divergencia KL que las cuantizaciones estandar de llama.cpp al mismo tamano. El autor reporta KL de 0,00018 y 99,3 % de coincidencia en el token superior para el fichero de 8 bits (frente a 0,00026 y 99,2 % del Q8_0 estandar, con menor tamano: 9,6 GB frente a 9,9 GB). En 6 bits, el resultado es practicamente identico al Q6_K estandar (0,0020 frente a 0,0019). Las mediciones se hicieron con `llama-perplexity --kl-divergence` sobre 40 fragmentos de 512 tokens de wikitext-2 en una GPU NVIDIA GB10, expandiendo cada fichero a F16. Los pesos incluyen la cabeza MTP de una capa, que el autor no ha probado.
+La innovación técnica más destacable de esta publicación no está en el modelo sino en la cuantización: los archivos ROCmFPX se miden contra un BF16 de referencia (perplejidad 7,13) con `llama-perplexity --kl-divergence` sobre 40 fragmentos de 512 tokens de wikitext-2 en inglés. El Q8_0 ROCmFPX obtiene una divergencia KL de 0,00018 y un 99,3% de coincidencia en el token superior, superando al Q8_0 estándar (0,00026 y 99,2%) con un archivo más pequeño (9,6 GB frente a 9,9 GB). El Q6_K ROCmFPX queda prácticamente empatado con el Q6_K estándar (0,0020 frente a 0,0019), y el Q4_0 para Strix Halo no tiene métricas publicadas todavía. Los archivos conservan la cabecera MTP de una capa, que el autor no ha probado.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con bloque de pensamiento (thinking) previo a la respuesta, segun las pruebas del autor.
-- Razonamiento matematico y STEM, herencia directa del fine-tune de Jackrong destilado de DeepSeek-V4-Pro.
-- Vision-lenguaje: procesa imagenes mediante el proyector `mmproj` F16; el autor verifico la descripcion correcta de una figura de zorro y de un casco de bicicleta.
-- Multilingue en ingles, chino, coreano, japones, espanol y ruso.
-- Comportamiento sin rechazo: 0 rechazos en 10 peticiones que un modelo con entrenamiento de seguridad rechazaria y 0 en 8 preguntas inofensivas de apariencia arriesgada, tanto en los ficheros cuantizados como en el BF16 de origen.
-- Soporte de tool calling y function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Generación de texto con modo de razonamiento: produce un bloque de pensamiento antes de la respuesta final, verificado en las pruebas del autor (respuestas correctas a preguntas de cultura general y aritmética tras el bloque de pensamiento).
+- Comprensión de imágenes: pipeline `image-text-to-text` con codificador de visión separado en F16 (`mmproj-...-F16.gguf`, 0,9 GB); el autor verificó la descripción correcta de una figura de zorro y de un casco de bicicleta.
+- Razonamiento matemático y STEM: el fine-tune original está específicamente orientado a matemáticas y disciplinas científicas, aunque no se han publicado benchmarks en esta ficha.
+- Multilingüismo declarado en seis idiomas (inglés, chino, coreano, japonés, español y ruso), sin datos de evaluación por idioma.
+- Comportamiento sin rechazo: 0 rechazos en 10 peticiones que un modelo con entrenamiento de seguridad rechazaría y 0 en 8 preguntas inocuas que suenan arriesgadas, tanto en los archivos cuantizados como en el BF16 de origen.
+- No se dispone de información sobre soporte de tool calling, function calling, uso como agente ni razonamiento multi-paso más allá del bloque de pensamiento.
 
 ## Casos de uso
 
-- Inferencia local en equipos AMD Strix Halo: el fichero de 4 bits (6,8 GB) esta disenado especificamente para velocidad en esta plataforma, usando los kernels ROCmFP4-FAST con atencion y salida en 8 bits, lo que permite ejecutar un modelo de 9B multimodal en una GPU integrada.
-- Analisis de imagenes en local: con el proyector `mmproj` F16, el modelo describe y razona sobre imagenes sin enviar datos a servicios externos, util para entornos con requisitos de privacidad.
-- Prototipado de razonamiento STEM: el modelo base esta destilado de DeepSeek-V4-Pro en matematicas y disciplinas cientificas, por lo que sirve para experimentar con cadenas de razonamiento en esos dominios antes de escalar a modelos mayores.
-- Evaluacion de cuantizaciones: los ficheros incluyen metricas de KL y coincidencia de token superior frente a BF16, lo que los hace utiles como banco de pruebas para comparar ROCmFPX con Q8_0 y Q6_K estandar en tareas de perplexidad.
-- Investigacion sobre alineacion y seguridad: al ser una variante abliterated, permite estudiar el comportamiento de un modelo sin capa de rechazo en entornos controlados de evaluacion de riesgos.
-- Asistencia multilingue en seis idiomas: cubre conversaciones en ingles, chino, coreano, japones, espanol y ruso, adecuado para herramientas internas de traduccion o atencion en esos mercados.
-- Desarrollo sobre llama.cpp con backend AMD: el formato ROCmFPX permite integrar el modelo en pipelines propios que ya usen el fork de HarshaVardhan3002, manteniendo el resto de la pila de llama.cpp.
+- Procesamiento de documentos técnicos con imágenes: el modelo puede recibir páginas escaneadas o capturas de diagramas junto con el texto y generar explicaciones o resúmenes combinando ambas modalidades, gracias al codificador de visión integrado y al modo de razonamiento.
+- Tutoría de matemáticas y ciencias: el fine-tune está destilado de DeepSeek-V4-Pro con foco STEM, y el bloque de pensamiento permite mostrar el desarrollo del razonamiento antes del resultado, útil en entornos educativos.
+- Asistente local en equipos con APU AMD Strix Halo: el archivo Q4_0 ROCmFP4-FAST (6,8 GB) está diseñado para ejecutarse en una máquina Strix Halo con memoria unificada, lo que permite desplegar un modelo visión-lenguaje de 9B sin GPU dedicada.
+- Investigación sobre alineación y seguridad: al ser una versión abliterada con métricas de rechazo documentadas, sirve como referencia para estudiar cómo la eliminación del entrenamiento de seguridad afecta al comportamiento, comparándola con el modelo base.
+- Evaluación comparativa de cuantizaciones: los archivos incluyen métricas de divergencia KL frente a BF16 medibles con llama.cpp, lo que permite reproducir y comparar el impacto de la cuantización ROCmFPX frente a los formatos estándar en un mismo modelo.
+- Generación de texto multilingüe en seis idiomas: para aplicaciones de redacción o traducción asistida en inglés, chino, coreano, japonés, español y ruso, siempre que se añada una capa de moderación propia.
+- Prototipado de pipelines visión-lenguaje en local: la separación entre pesos cuantizados y codificador de visión en F16 facilita montar demos de image-text-to-text en hardware de consumo, con la salvedad de que requiere el fork ROCmFPX.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente aporta metricas de fidelidad de cuantizacion:
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor remite a la model card del modelo original para los benchmarks STEM y advierte que sus mediciones de KL son sobre texto general en inglés y no dicen nada directo sobre ellos.
 
-| Fichero | Tamano | KL a BF16 | Mismo token superior |
+Las únicas métricas publicadas son de fidelidad de cuantización:
+
+| Archivo | Tamano | KL a BF16 | Mismo token superior |
 |---|---:|---:|---:|
-| Q8_0 ROCmFPX | 9,6 GB | 0,00018 | 99,3 % |
-| Q6_K ROCmFPX (Q6_0) | 7,6 GB | 0,0020 | 97,7 % |
-| Q4_0 ROCmFP4_STRIX_O8 | 6,8 GB | no medido | no medido |
-| Q8_0 estandar (referencia) | 9,9 GB | 0,00026 | 99,2 % |
-| Q6_K estandar (referencia) | 7,6 GB | 0,0019 | 97,8 % |
-| Q4_K_M estandar (referencia) | 5,8 GB | 0,014 | 94,4 % |
-
-Las pruebas de KL se realizaron sobre wikitext-2 en ingles general, por lo que, segun el propio autor, no dicen nada directo sobre los benchmarks STEM del modelo original.
+| Q8_0 ROCmFPX | 9,6 GB | 0,00018 | 99,3% |
+| Q6_K ROCmFPX | 7,6 GB | 0,0020 | 97,7% |
+| Q4_0 ROCmFP4-FAST (Strix) | 6,8 GB | No medida | No medida |
+| Q8_0 estándar (referencia) | 9,9 GB | 0,00026 | 99,2% |
+| Q6_K estándar (referencia) | 7,6 GB | 0,0019 | 97,8% |
+| Q4_K_M estándar (referencia) | 5,8 GB | 0,014 | 94,4% |
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 9,6 GB para el fichero de 8 bits, 7,6 GB para el de 6 bits y 6,8 GB para el de 4 bits, mas 0,9 GB del proyector de vision F16 cuando se procesan imagenes.
-- Hardware objetivo: GPUs AMD, con atencion especial a Strix Halo (el fichero de 4 bits esta optimizado para esta plataforma). El autor no ha probado los ficheros en hardware AMD real y solicita reportes en la pestana Community.
-- Compatibilidad: requiere ROCmFPX compilado a partir del 7 de noviembre de 2026. llama.cpp estandar, LM Studio, Ollama y versiones anteriores de ROCmFPX no cargan estos ficheros.
-- GPU NVIDIA: las mediciones de KL se hicieron en una GB10, pero el autor no documenta soporte de inferencia en NVIDIA para estos ficheros.
-- Opciones de despliegue: exclusivamente el fork HarshaVardhan3002/ROCmFPX de llama.cpp.
-- Latencia y throughput: no disponibles; el autor no publica cifras.
+- VRAM estimada para inferencia: entre 7 y 10 GB para los pesos cuantizados (6,8 GB el Q4_0, 7,6 GB el Q6_K, 9,6 GB el Q8_0), más 0,9 GB del codificador de visión en F16 y el espacio de contexto y caché KV, cuyo tamaño depende de la longitud de contexto (no publicada).
+- GPU recomendadas: el autor no especifica modelos concretos; las mediciones de KL se hicieron en una NVIDIA GB10, pero los archivos ROCmFPX están pensados para kernels AMD y para la APU Strix Halo con memoria unificada de 128 GB.
+- Cabe en GPU de consumo: sí, en principio, dado el tamaño de los archivos; el autor no confirma modelos concretos de RTX ni de otras gamas.
+- Opciones de despliegue: exclusivamente el fork HarshaVardhan3002/ROCmFPX (build del 7 de noviembre de 2026 o posterior). llama.cpp estándar, LM Studio, Ollama y builds antiguas del fork no cargan estos archivos.
+- Latencia y throughput: no disponibles. El autor indica que los archivos no se han probado aún en hardware AMD y pide a la comunidad que reporte velocidad y calidad.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Formato / disponibilidad |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ROCmFPX) | 9,2B | no disponible | imagen-texto | Apache-2.0 | GGUF ROCmFPX, solo fork AMD |
-| xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic | 9,2B | no disponible | imagen-texto | Apache-2.0 | pesos originales (BF16) |
-| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B | 9,2B | no disponible | imagen-texto | Apache-2.0 | modelo base con entrenamiento de seguridad |
-| Qwen3.5-9B (base) | 9B | no disponible | texto (segun variante) | no disponible | safetensors / GGUF estandar |
+| Este modelo (ROCmFPX) | 9,2B | No disponible | Texto + visión | Apache-2.0 | GGUF ROCmFPX, requiere fork |
+| xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic | 9,2B | No disponible | Texto + visión | Apache-2.0 | Pesos originales sin cuantizar |
+| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B | 9,2B | No disponible | Texto + visión | Apache-2.0 | Modelo original con entrenamiento de seguridad |
+| Qwen3.5-9B (base) | 9B | No disponible | Texto (visión según variante) | No disponible en esta ficha | Pesos oficiales del equipo Qwen |
 
-Las diferencias clave entre las tres primeras filas son el entrenamiento de seguridad (eliminado en las variantes decensored) y el formato de distribucion (ROCmFPX frente a pesos originales). No se dispone de datos de rendimiento comparativo entre ellas.
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada; la única comparación cuantitativa publicada es la divergencia KL de las cuantizaciones frente al BF16.
 
 ## Limitaciones y advertencias
 
-- El entrenamiento de seguridad ha sido eliminado: el modelo puede cumplir peticiones daninas, poco eticas, ofensivas o ilegales. No debe exponerse a usuarios finales sin capas propias de moderacion.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; las pruebas del autor se limitan a preguntas factuales simples (capital de Francia, 17 x 23, capital de Australia).
-- Las metricas de KL se midieron sobre texto general en ingles y no validan el rendimiento en matematicas ni razonamiento STEM.
-- El fichero de 4 bits para Strix no tiene mediciones de KL publicadas y solo ha pasado una prueba corta de respuesta.
-- La cabeza MTP de una capa esta incluida en los pesos pero no ha sido probada.
-- Compatibilidad muy restringida: sin soporte en llama.cpp estandar, LM Studio, Ollama ni builds antiguas de ROCmFPX.
-- No probado en hardware AMD por el autor; el rendimiento real en Strix Halo esta sin verificar.
-- Longitud de contexto no documentada, lo que impide planificar cargas con ventanas largas.
-- Soporte de tool calling y agentes no documentado.
-- Licencia Apache-2.0 permite uso comercial, pero la ausencia de filtros de seguridad traslada toda la responsabilidad legal al desplegador.
-- Modelo no oficial: los creditos corresponden a Jackrong, al equipo de Qwen y a xtools-at.
+- El entrenamiento de seguridad ha sido eliminado: el modelo puede cumplir peticiones dañinas, ilegales u ofensivas. No debe exponerse a usuarios finales sin capas propias de moderación y seguridad.
+- Riesgo de alucinación no cuantificado: no hay evaluaciones de veracidad ni de tasa de alucinación publicadas.
+- Los archivos no se han probado en hardware AMD; las métricas de velocidad y calidad en el hardware objetivo están pendientes de confirmación por la comunidad.
+- Dependencia de un fork no oficial: sin la build concreta de ROCmFPX, los archivos no cargan en las herramientas estándar, lo que complica el despliegue en producción y la reproducibilidad.
+- Longitud de contexto no disponible, lo que impide planificar aplicaciones con ventanas largas.
+- Idiomas declarados sin evaluación: no hay datos de calidad por idioma, y el rendimiento en español, coreano, japonés o ruso no está verificado.
+- La cabecera MTP de una capa está incluida pero no probada, por lo que no debe asumirse que aporte aceleración.
+- La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantías y la responsabilidad legal por el contenido generado recae en quien despliega el modelo.
+- Las métricas de KL se midieron sobre texto general en inglés y no reflejan el comportamiento en matemáticas ni en razonamiento, que es el foco del fine-tune original.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Harsha001/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-ROCmFPX
-- Modelo base decensored: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
+- Modelo en Hugging Face: https://huggingface.co/Harsha001/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-ROCmFPX
+- Modelo base decensurado: https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
 - Modelo original: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
-- Fork ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
+- Fork ROCmFPX necesario para cargar los archivos: https://github.com/HarshaVardhan3002/ROCmFPX
+- Modelo destacado del mismo autor (DeepSeek-V4.1-Flash en Strix Halo): https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-StrixHalo-GGUF

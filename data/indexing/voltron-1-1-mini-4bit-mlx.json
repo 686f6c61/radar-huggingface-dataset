@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "Indexing/voltron-1.1-mini-4bit-mlx",
+  "slug": "indexing-voltron-1-1-mini-4bit-mlx",
+  "author": "Indexing",
+  "url": "https://huggingface.co/Indexing/voltron-1.1-mini-4bit-mlx",
+  "created_at": "2026-11-28T00:35:07.000Z",
+  "updated_at": "2026-11-28T00:38:52.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm3",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:Akahsizrr/voltron-1.1-mini",
+    "base_model:quantized:Akahsizrr/voltron-1.1-mini",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1990945536,
+  "parameters_human": "1.99B",
+  "storage_bytes": 1138448783,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": "Akahsizrr/voltron-1.1-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -123,7 +123,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 190,
+  "downloads_30d": 194,
   "trending_score": 0,
   "parameters": 307536392,
   "parameters_human": "307.5M",
@@ -144,31 +144,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Horizons Le parti - Édouard Philippe",
-      "url": "https://horizonsleparti.fr/",
-      "snippet": "Participez à construire une nouvelle offre politique avec Edouard Philippe ! Vous partagez nos valeurs ? Rejoignez le parti Horizons !"
-    },
-    {
-      "title": "VMware Horizon",
-      "url": "https://horizon.nvidia.com/",
-      "snippet": "You can connect to your desktop and applications by using the VMware Horizon Client or through the browser. The VMware Horizon …"
-    },
-    {
-      "title": "Écouter Horizon en direct et gratuit",
-      "url": "https://www.radio-en-ligne.fr/horizon",
-      "snippet": "Écoutez Horizon en direct et gratuit sur l'internet. Les plus grandes radios en ligne de France dans www.radio-en-ligne.fr."
-    },
-    {
-      "title": "Horizon Santé Travail | Service de Santé et de Médecine du Travail",
-      "url": "https://www.horizonsantetravail.fr/",
-      "snippet": "Horizon Santé Travail est un Service de Prévention et de Santé au Travail (anciennement \"médecine du travail\") réparti dans 12 …"
-    },
-    {
-      "title": "Concessionnaire BMW neuves et d'occasion Paris et Île de France - Horizon",
-      "url": "https://www.horizon.fr/",
-      "snippet": "Horizon est un réseau de concessions BMW à Paris et en Île de France : découvrez nos BMW neuves et d'occasion en ligne."
-    }
-  ]
+  "sources": []
 }

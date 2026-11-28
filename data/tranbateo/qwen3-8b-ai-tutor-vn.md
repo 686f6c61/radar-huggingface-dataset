@@ -2,49 +2,48 @@
 
 ## Resumen
 
-qwen3-8b-ai-tutor-vn es un ajuste fino (fine-tuning) del modelo Qwen3-8B de Alibaba, publicado por el usuario tranbateo en Hugging Face y distribuido exclusivamente en formato GGUF cuantizado (Q4_K_M) para su uso con llama.cpp y Ollama. El modelo parte de la arquitectura Qwen3 de 8.190.735.360 parametros y ha sido entrenado y convertido con las herramientas de Unsloth, lo que sugiere un proceso de ajuste supervisado orientado a una tarea concreta de tutoria educativa, presumiblemente en vietnamita segun el sufijo "vn" del identificador.
+qwen3-8b-ai-tutor-vn es un ajuste fino (fine-tuning) del modelo Qwen3-8B de Alibaba, publicado por el usuario tranbateo en Hugging Face y distribuido unicamente en formato GGUF para su uso con llama.cpp y Ollama. El modelo conserva los 8.190.735.360 parametros (~8,19 mil millones) del Qwen3-8B original y esta orientado, segun su nombre, a tareas de tutoria educativa en vietnamita ("ai-tutor-vn"), aunque la model card no documenta explicitamente el dataset de entrenamiento ni el idioma final.
 
-La relevancia de esta publicacion es limitada y practica: ofrece un artefacto listo para desplegar en local sin necesidad de infraestructura GPU de gama alta, gracias a la cuantizacion Q4_K_M incluida. Sin embargo, la model card es extremadamente escueta: no documenta el dataset de entrenamiento, el regimen de ajuste, los hiperparametros ni resultados de evaluacion, y no se declara licencia ni idiomas soportados de forma explicita.
+El ajuste se realizo con Unsloth, segun indica la propia model card, y se convirtio a GGUF con un unico archivo de cuantizacion disponible: Q4_K_M. El repositorio ocupa 15,1 GB, lo que sugiere que puede contener tanto los pesos en precision completa como el archivo GGUF cuantizado, aunque no se detalla la composicion exacta del mismo.
 
-Se trata, por tanto, de un modelo comunitario de nicho, adecuado para experimentacion con tutoria conversacional en vietnamita, pero sin las garantias de trazabilidad, evaluacion y licenciamiento que se exigen en entornos de produccion. Cualquier adopcion deberia ir precedida de una evaluacion propia y de la verificacion de los terminos de la licencia heredada de Qwen3.
+La relevancia de este modelo es limitada y muy especifica: se trata de un fine-tune comunitario de bajo numero de descargas (175 en el momento de la consulta) y sin likes, sin licencia declarada, sin idiomas declarados y sin benchmarks publicados. Es util como ejemplo de pipeline de fine-tuning + cuantizacion con Unsloth sobre la base Qwen3-8B, pero no debe considerarse un modelo de referencia para produccion sin una evaluacion propia previa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (base Qwen3-8B); detalles completos no disponibles en la model card |
-| Parametros totales | 8.190.735.360 |
-| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (GGUF); no se publican otras variantes |
-| Idiomas soportados | no disponible (el sufijo "vn" sugiere vietnamita, sin confirmacion oficial) |
+| Arquitectura | Transformer (heredada de Qwen3-8B; no se detalla en la model card) |
+| Parametros totales | 8.190.735.360 (~8,19 B) |
+| Parametros activos | no disponible (no es un modelo MoE segun los datos disponibles) |
+| Longitud de contexto | no disponible (heredada de Qwen3-8B, no confirmada en la model card) |
+| Tipos de cuantizacion | Q4_K_M (unico archivo publicado: `Qwen3-8B.Q4_K_M.gguf`) |
+| Idiomas soportados | no disponible (el nombre sugiere vietnamita, no confirmado) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (unico archivo publicado: Qwen3-8B.Q4_K_M.gguf); se incluye un Modelfile de Ollama |
+| Formato de pesos | GGUF (para llama.cpp/Ollama); el repo incluye ademas pesos en precision completa segun el tamano de 15,1 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del Qwen3-8B original de Alibaba, un transformer decoder-only denso de aproximadamente 8.190 millones de parametros. Sobre esa base, el autor aplico un ajuste fino supervisado y posteriormente convirtio los pesos a GGUF mediante Unsloth, una herramienta que acelera el entrenamiento y la exportacion de modelos cuantizados. La model card menciona que el entrenamiento fue "2x mas rapido con Unsloth", pero no aporta informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni los hiperparametros empleados.
+La model card no describe la arquitectura interna mas alla de indicar que parte de Qwen3-8B. Por tanto, la arquitectura es la del Qwen3-8B base (transformer denso de ~8,19 B de parametros), pero no se aportan detalles sobre atencion, normalizacion, tokenizador ni configuracion de capas en la informacion disponible. Tampoco se especifica si el fine-tune altero la configuracion arquitectonica (por ejemplo, embeddings o cabezas de salida).
 
-No se documenta ninguna innovacion tecnica adicional mas alla del propio ajuste fino y la cuantizacion Q4_K_M. Tampoco se especifica si el fine-tuning preservo el modo "thinking" caracteristico de la familia Qwen3 ni si se modifico la ventana de contexto original. La ausencia de estos datos impide evaluar la calidad y el alcance real del ajuste.
+En cuanto al entrenamiento, la unica informacion proporcionada es que el ajuste fino y la conversion a GGUF se realizaron con Unsloth, y que el entrenamiento fue "2x mas rapido" gracias a dicha herramienta. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni hiperparametros como learning rate, epochs o rango de LoRA. El nombre del modelo sugiere un enfoque de tutoria educativa en vietnamita, pero no hay evidencia en la model card que lo confirme.
 
 ## Capacidades
 
-- Generacion de texto conversacional orientada a tutoria educativa, segun el nombre del modelo.
-- Razonamiento y respuesta a preguntas derivados de la base Qwen3-8B (no verificados tras el ajuste).
-- Soporte de plantillas de chat mediante el flag `--jinja` de llama.cpp.
-- Posible soporte multilingue heredado de Qwen3, aunque no se confirma ningun idioma en la model card.
-- Tool calling y function calling: no documentado; probablemente heredado de Qwen3, pero sin confirmacion.
-- Capacidades de agente y razonamiento multi-paso: no documentadas.
-- Modo thinking (razonamiento extendido): no documentado.
+- Generacion de texto conversacional: el tag `conversational` y el ejemplo de uso con `llama-cli --jinja` indican soporte de plantillas de chat.
+- Razonamiento y codigo: capacidades heredadas del Qwen3-8B base, no verificadas en este fine-tune.
+- Soporte de tool calling / function calling: no documentado en la model card; el flag `--jinja` sugiere compatibilidad con plantillas de chat, pero no se confirma tool calling.
+- Soporte de agentes y razonamiento multi-paso: no documentado.
+- Capacidades multilingues: no disponibles; el nombre sugiere vietnamita, pero no se declara en la model card.
+- Capacidades especiales (thinking mode, vision, audio): no documentadas. El ejemplo de uso menciona `llama-mtmd-cli` para modelos multimodales como plantilla generica de Unsloth, pero no hay evidencia de que este modelo sea multimodal.
 
 ## Casos de uso
 
-- Tutoria educativa en vietnamita: el modelo se ha ajustado especificamente para conversaciones de aprendizaje, por lo que puede emplearse como asistente de refuerzo en asignaturas concretas, siempre que se valide la calidad de las respuestas con un conjunto de pruebas propio.
-- Despliegue local en equipos de estudiante o investigador: al publicarse en Q4_K_M, cabe en GPUs de consumo y permite experimentar sin coste de API, usando llama.cpp u Ollama con el Modelfile incluido.
-- Prototipado rapido de chatbots conversacionales: la integracion con llama.cpp (`llama-cli -hf ... --jinja`) permite levantar un prototipo en minutos para validar flujos de dialogo antes de invertir en un modelo mayor.
-- Evaluacion comparativa de fine-tunings comunitarios: sirve como caso de estudio de ajustes de Qwen3-8B con Unsloth, util para investigar el impacto de la cuantizacion Q4_K_M en tareas de tutoria.
-- Generacion de material didactico de borrador: puede producir explicaciones y ejercicios que un docente revise y edite, aprovechando su orientacion conversacional.
-- Pruebas de integracion con Ollama: el Modelfile incluido facilita desplegar el modelo como servicio local compatible con la API de Ollama para aplicaciones de escritorio o demos.
+- Tutoria educativa en vietnamita: el nombre del modelo sugiere un fine-tune orientado a asistencia educativa; podria usarse como tutor conversacional en vietnamita, aunque la calidad debe validarse con pruebas propias dado que no hay benchmarks ni dataset documentado.
+- Prototipado local con llama.cpp: al estar en GGUF Q4_K_M, se puede ejecutar en un portatil o estacion de trabajo con GPU consumer para experimentar con el modelo sin infraestructura cloud.
+- Despliegue en Ollama: la model card incluye un Modelfile de Ollama, lo que facilita su integracion en flujos de desarrollo local y pruebas rapidas de prompts.
+- Evaluacion comparativa de fine-tunes: util como caso de estudio de un pipeline Unsloth + GGUF sobre Qwen3-8B para comparar con otros fine-tunes comunitarios.
+- Chatbot de bajo coste en CPU/GPU modesta: gracias a la cuantizacion Q4_K_M, puede desplegarse en hardware limitado para tareas de conversacion general, con la advertencia de que la calidad no esta validada.
+- Base para nuevos fine-tunes: al ser un modelo pequeno y cuantizado, puede servir como punto de partida para experimentos de ajuste adicional, aunque se recomienda partir del Qwen3-8B original para evitar arrastrar posibles sesgos del fine-tune.
 
 ## Benchmarks y rendimiento
 
@@ -52,37 +51,35 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en torno a 5-6 GB con la cuantizacion Q4_K_M publicada (el repositorio ocupa 5,0 GB), dependiendo de la longitud de contexto y del backend.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 o superiores para mayor throughput; A100/H100 solo si se necesita servir a multiples usuarios.
-- Cabe en GPU de consumo: si, en tarjetas con al menos 8 GB de VRAM para contextos moderados.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama (Modelfile incluido). vLLM y TGI no soportan GGUF de forma nativa sin conversion.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia en Q4_K_M: aproximadamente 5-6 GB para los pesos, mas overhead de contexto y KV cache (estimacion orientativa; no confirmada por el autor).
+- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, A100, H100. Cualquier GPU con al menos 8 GB de VRAM puede ejecutar el modelo en Q4_K_M.
+- Cabe en GPU consumer: si, en la mayoria de GPU consumer con 8 GB o mas de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 en adelante).
+- Opciones de despliegue: llama.cpp (`llama-cli`), Ollama (Modelfile incluido), y cualquier runtime compatible con GGUF. No se documenta soporte para vLLM o TGI.
+- Latencia y throughput estimados: no disponibles; dependen del hardware y de la longitud de contexto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-ai-tutor-vn | 8,19 B | no disponible | GGUF Q4_K_M | no disponible | Fine-tuning comunitario de Qwen3-8B para tutoria |
-| Qwen3-8B (original) | 8,2 B | no disponible en esta ficha | safetensors, GGUF | Apache 2.0 (segun publicacion original de Alibaba) | Base oficial, con model card completa y evaluaciones |
-| Llama 3.1 8B Instruct | 8,03 B | 128 K | safetensors, GGUF | Llama 3.1 Community License | Alternativa generalista con ecosistema amplio |
-| Mistral 7B Instruct | 7,24 B | 32 K | safetensors, GGUF | Apache 2.0 | Alternativa mas ligera y con licencia permisiva |
+| qwen3-8b-ai-tutor-vn | ~8,19 B | no disponible | no disponible | GGUF (Q4_K_M) | Hugging Face (175 descargas) |
+| Qwen3-8B (base) | ~8,19 B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF | Hugging Face (modelo oficial) |
+| Fine-tunes comunitarios de Qwen3-8B | ~8,19 B | variable | variable | GGUF, safetensors | Hugging Face |
 
-La comparativa se limita a datos publicos de los modelos de referencia; no se dispone de evaluaciones del ajuste fino que permitan comparar rendimiento real.
+No se dispone de datos de rendimiento comparativo para este fine-tune, por lo que la comparativa se limita a parametros, formato y disponibilidad. No se han identificado en la informacion proporcionada alternativas especificas de tutoria en vietnamita con las que comparar directamente.
 
 ## Limitaciones y advertencias
 
-- La model card no declara licencia, lo que impide confirmar si el uso comercial esta permitido; debe verificarse la licencia del Qwen3-8B original y los terminos del autor.
-- No se documenta el dataset de entrenamiento, por lo que se desconocen sesgos introducidos y la calidad de los datos.
-- Riesgo de alucinacion inherente a un modelo de 8 B ajustado sin evaluacion publicada; no apto para produccion sin validacion.
-- Solo se publica una cuantizacion (Q4_K_M), lo que limita el ajuste fino de calidad frente a velocidad.
-- No se confirman los idiomas soportados; el uso en castellano no esta garantizado.
-- No se especifica la longitud de contexto tras el ajuste, lo que afecta al diseno de aplicaciones multi-turno.
-- El repositorio no tiene descargas ni likes, y la fecha de creacion es futura respecto a la informacion habitual, lo que aconseja precaucion sobre su procedencia.
-- Ausencia de evaluaciones de seguridad, sesgo o toxicidad.
+- Sesgos conocidos: no documentados; al ser un fine-tune comunitario sin evaluacion publicada, se desconocen los sesgos introducidos por el dataset de ajuste.
+- Riesgo de alucinacion: no evaluado; el modelo base Qwen3-8B puede alucinar y el fine-tune no aporta garantias adicionales.
+- Limitaciones de contexto o idioma: no se declara la longitud de contexto efectiva ni los idiomas soportados; el nombre sugiere vietnamita pero no hay confirmacion.
+- Restricciones de licencia para uso comercial: la licencia no esta declarada en la model card ni en los metadatos de Hugging Face, lo que impide determinar si el uso comercial esta permitido. Se recomienda contactar con el autor antes de cualquier uso en produccion.
+- Caveat importante para produccion: el modelo tiene muy pocas descargas (175) y cero likes, sin benchmarks ni documentacion de entrenamiento; no es recomendable para produccion sin una evaluacion exhaustiva propia.
+- Unico archivo GGUF disponible (Q4_K_M): no hay variantes Q5, Q8 ni FP16 en GGUF, lo que limita el ajuste de calidad/rendimiento.
+- El ejemplo de uso con `llama-mtmd-cli` en la model card es una plantilla generica de Unsloth y no implica que el modelo sea multimodal.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/tranbateo/qwen3-8b-ai-tutor-vn
-- Unsloth (herramienta de entrenamiento y conversion): https://github.com/unslothai/unsloth
-- llama.cpp (backend de inferencia): https://github.com/ggml-org/llama.cpp
-- Ollama (despliegue local): https://ollama.com
+- Unsloth (herramienta de fine-tuning y conversion): https://github.com/unslothai/unsloth
+- llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
+- Ollama: https://ollama.com

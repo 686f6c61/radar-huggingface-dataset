@@ -2,82 +2,103 @@
 
 ## Resumen
 
-ChatVPet-qw35-9B-v1-GGUF es una distribucion en formato GGUF de un modelo de lenguaje de 9.000 millones de parametros, publicada por el usuario LorisYounger en Hugging Face. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) orientado a conversacion de personajes o asistente virtual, construido sobre una base de la familia Qwen (la nomenclatura "qw35" apunta a Qwen 3.5, aunque no se confirma en la informacion disponible). La model card publicada es practicamente vacia: unicamente declara la licencia Apache 2.0, sin especificaciones tecnicas, datos de entrenamiento ni resultados de evaluacion.
+ChatVPet-qw35-9B-v1-GGUF es la versión cuantizada en formato GGUF de ChatVPet-qw35-9B-v1, un modelo conversacional de 9.197.093.888 parámetros afinado por LorisYounger para funcionar como mascota virtual de escritorio (vpet, virtual pet). El modelo parte de una base Qwen3.5 de 9B y está especializado en mantener diálogos de personaje con un formato de respuesta estructurado: la primera línea de cada respuesta contiene etiquetas de control (delegación de tareas, selección de expresión) y las líneas siguientes son el diálogo dirigido al jugador.
 
-La relevancia de esta ficha es, por tanto, limitada y debe interpretarse con cautela. Se trata de un artefacto recien publicado (fecha de creacion y actualizacion identicas, 24 de noviembre de 2026) con cero descargas y cero likes en el momento de la consulta, lo que indica que no ha pasado por validacion comunitaria alguna. No hay evidencia publica de calidad, alineamiento ni rendimiento.
+El repositorio publica tres niveles de cuantización (Q4_K_M, Q5_K_M y Q6_K) generados a partir del modelo BF16 original, además de una proyección visual opcional de 876 MiB que permite al modelo interpretar imágenes. La licencia es Apache 2.0 y los pesos están pensados para ejecutarse con llama.cpp o LM Studio, lo que facilita el despliegue local en hardware de consumo.
 
-El formato GGUF permite su despliegue en entornos de inferencia local como llama.cpp u Ollama, lo que constituye su principal atractivo practico para desarrolladores que quieran probar el modelo en hardware de consumo. No obstante, al no existir documentacion tecnica, cualquier uso en produccion requiere una evaluacion propia previa por parte del equipo adoptante.
+Su relevancia actual radica en el enfoque de "modelo de personaje con protocolo de control": en lugar de limitarse a generar texto, el modelo emite directivas que el programa anfitrión interpreta para consultar datos, ejecutar compras o cambiar la expresión del personaje. Esto lo convierte en un ejemplo práctico de integración entre un LLM local y una aplicación de escritorio con estado.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el nombre sugiere base Qwen, sin confirmar) |
-| Parametros totales | 9B (aproximado, segun el nombre del repositorio) |
-| Parametros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (formato GGUF; niveles concretos no especificados) |
-| Idiomas soportados | no disponible |
+| Arquitectura | Transformer denso (base Qwen3.5), con plantilla de chat embebida y soporte de proyección visual multimodal |
+| Parametros totales | 9.197.093.888 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8192 tokens en la configuración de referencia del autor |
+| Tipos de cuantizacion | Q4_K_M (5,38 GiB), Q5_K_M (6,19 GiB), Q6_K (7,04 GiB); proyección visual F16 (876 MiB) |
+| Idiomas soportados | Chino (zh) declarado en la model card; otros idiomas no disponibles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF |
+| Formato de pesos | GGUF (llama.cpp); el modelo base original en BF16 está en el repo LorisYounger/ChatVPet-qw35-9B-v1 |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo. Por la nomenclatura del repositorio ("qw35-9B") cabe inferir que se deriva de un modelo base de la familia Qwen de aproximadamente 9.000 millones de parametros, presumiblemente con arquitectura transformer densa, pero esta afirmacion no esta confirmada por el autor en la informacion disponible.
+El modelo es un transformer denso de 9B parámetros derivado de Qwen3.5, con plantilla de chat propia que debe usarse tal cual (el autor indica usar la plantilla embebida en el modelo). El ajuste está orientado a un dominio muy concreto: conversación de personaje con protocolo de control. La respuesta se divide en una primera línea con etiquetas como `[delegate]` o `[expression:conscientious]` y el texto de diálogo posterior, lo que permite al host separar la lógica de operación de la locución dirigida al jugador.
 
-Tampoco existen datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, tecnicas de alineamiento (RLHF, DPO, SFT) ni posibles innovaciones tecnicas. La model card no incluye ninguna seccion descriptiva mas alla de la declaracion de licencia. Cualquier afirmacion sobre el pipeline de entrenamiento seria especulativa y, por tanto, se omite.
+El autor documenta un proceso de evaluación y de edición de pesos: menciona "权重编辑" (edición de pesos) que corrigió dos respuestas concretas del conjunto de regresión (nombrar un cascabel como "浅滩" y un caballete como "江灯"). No se detalla en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF o DPO. El modelo incluye una proyección visual separada (mmproj) que habilita entrada de imágenes cuando se carga con `--mmproj` en llama.cpp.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el nombre "ChatVPet" sugiere un ajuste orientado a dialogo con personajes o asistentes virtuales, aunque no se documenta formalmente.
-- Razonamiento y codigo: no disponible; no hay evidencia publicada de capacidades especificas.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el autor no declara idiomas.
-- Capacidades especiales (modo thinking, vision, audio): no disponible.
+- Generación de texto conversacional en chino con un formato de respuesta estructurado en dos partes: etiquetas de control y diálogo.
+- Emisión de directivas de delegación (`[delegate]`) para que el programa anfitrión ejecute consultas o acciones (por ejemplo, consultar el precio de un artículo) y devuelva el resultado al modelo.
+- Selección de expresiones faciales mediante etiquetas (`[expression:...]`), que el host traduce en cambios visuales del personaje.
+- Capacidad multimodal opcional: con la proyección visual F16 cargada, el modelo lee imágenes (en la prueba del autor identificó el número 731, un cuadrado rojo a la izquierda y un círculo azul a la derecha).
+- Soporte de conversaciones multiturno con contexto de hasta 8192 tokens en la configuración de referencia.
+- Modo de razonamiento desactivable (`--reasoning off` en llama.cpp), pensado para respuestas cortas de personaje.
+- No se documentan capacidades de tool calling genérico, agentes multi-paso ni matemáticas/código más allá del protocolo específico de delegación del host.
 
 ## Casos de uso
 
-- Prototipado de asistentes conversacionales en local: al distribuirse en GGUF, el modelo puede cargarse con llama.cpp u Ollama en un equipo de sobremesa para experimentar con dialogos de personaje sin depender de APIs externas.
-- Evaluacion comparativa interna: un equipo puede desplegarlo en su banco de pruebas para medir si el ajuste "ChatVPet" aporta valor frente al modelo base del que deriva, antes de considerar su adopcion.
-- Chatbots de acompanamiento o entretenimiento: el nombre del proyecto sugiere un uso orientado a mascotas virtuales o companeros conversacionales, un escenario donde la latencia local y la privacidad de los datos pesan mas que el rendimiento bruto.
-- Pruebas de integracion en pipelines de inferencia: sirve para validar tooling de cuantizacion y servidores compatibles con GGUF (llama.cpp server, Ollama, entre otros) en un entorno controlado.
-- Investigacion sobre fine-tunes comunitarios: util como muestra de estudio de como se publican ajustes derivados sin documentacion, y para analizar riesgos de procedencia en el ecosistema open source.
-- Despliegue en entornos con requisitos de privacidad: al ejecutarse integramente en local, permite procesar conversaciones sensibles sin enviar datos a terceros, siempre que la evaluacion previa del modelo sea satisfactoria.
+- Mascota virtual de escritorio: el modelo gestiona el diálogo del personaje y emite etiquetas de expresión que la aplicación traduce en animaciones; el formato de dos líneas permite separar la lógica de control del texto mostrado al usuario.
+- Asistente con acceso a datos del host mediante delegación: ante una pregunta como el precio de un producto, el modelo emite `[delegate]` y el host consulta la tienda; el modelo continúa la respuesta con el dato devuelto ("面包8块。没买，只是看了价格。").
+- Simulación de tienda o economía interna de un juego: el autor reporta 21/21 pruebas de integración superadas cuando el diálogo y las operaciones se reparten entre el modelo de personaje y un modelo de operaciones independiente, frente a 9/21 cuando se usa el mismo modelo para ambas tareas.
+- Interacción multimodal en escritorio: con la proyección visual cargada, el personaje puede comentar capturas de pantalla u otras imágenes enviadas por el host, con un coste adicional de unos 876 MiB de VRAM.
+- Despliegue local ligero en GPU de consumo: el archivo Q4_K_M (5,38 GiB) permite ejecutar el modelo en tarjetas con 8 GB de VRAM o más, dejando margen para el contexto.
+- Prototipado de personajes conversacionales con protocolo de control: sirve como referencia para diseñar formatos de respuesta que combinen etiquetas de acción y diálogo natural en aplicaciones de escritorio.
+- Servicio local compatible con la API de OpenAI: el autor documenta el arranque con `llama-server` y el endpoint `/v1/chat/completions`, lo que permite integrarlo en clientes existentes.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+El autor publica una evaluación propia de regresión sobre 401 preguntas de "桌宠" (mascota de escritorio), con loss de validación calculada sobre 128 conversaciones fijas (42.603 tokens de respuesta):
+
+| Modelo / cuantización | Tamano | Loss de validacion | Regresion (401) | Subconjunto de seleccion (48) |
+|---|---:|---:|---:|---:|
+| BF16 nativo (Transformers) | no disponible | 1,79824 | 338/401 | no disponible |
+| BF16 GGUF sin cuantizar | no disponible | 1,79778 | 337/401 | no disponible |
+| Q6_K | 7,04 GiB | 1,79775 | 335/401 | 34/48 |
+| Q5_K_M | 6,19 GiB | 1,81073 | 339/401 | 33/48 |
+| Q4_K_M | 5,38 GiB | 1,81760 | 328/401 | 30/48 |
+
+Los tres niveles cuantizados superan las 18 preguntas que requieren consultar el diario del personaje. En la prueba de integración de tienda, el reparto entre modelo de diálogo y modelo de operaciones alcanza 21/21, frente a 9/21 usando un único modelo para ambas funciones. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa para un modelo denso de ~9B en GGUF, las cuantizaciones de 4 bits suelen requerir del orden de 5-7 GB de VRAM, y las de 8 bits en torno a 9-10 GB; estas cifras son estimaciones genericas y no estan confirmadas para este modelo concreto.
-- GPU recomendadas: no disponible. Por tamano, cabria esperar funcionamiento en GPUs de consumo con 8 GB o mas en cuantizaciones bajas, pero no hay validacion publicada.
-- Compatibilidad con GPU de consumo: probable en teoria por el tamano, sin confirmar por el autor.
-- Opciones de despliegue: llama.cpp, Ollama y otros runners compatibles con GGUF; vLLM y TGI requeririan conversion a safetensors, no disponible en este repositorio.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: Q4_K_M ~5,4 GiB de pesos; Q5_K_M ~6,2 GiB; Q6_K ~7,0 GiB. Añadir memoria para el contexto (8192 tokens en la configuración de referencia) y, si se usa visión, 876 MiB adicionales para la proyección F16.
+- Medición del autor en RTX 5090 D con llama-server, Q5_K_M a todas las capas en GPU, contexto 8192 y concurrencia 1: 6490 MiB en modo solo texto y 7366 MiB con la proyección visual cargada (876 MiB de diferencia).
+- Cabe en GPU de consumo: Q4_K_M y Q5_K_M son viables en tarjetas de 8 GB o más; Q6_K requiere más margen. No se especifican modelos concretos recomendados más allá de la RTX 5090 D empleada en las pruebas.
+- Opciones de despliegue: llama.cpp (`llama-server`), LM Studio (con soporte de Qwen3.5) y cualquier runtime compatible con GGUF y plantilla Jinja. El autor documenta el flag `--jinja` y `--reasoning off`.
+- Latencia y throughput: no disponibles; el autor solo reporta tiempos de respuesta cualitativos y el consumo de VRAM indicado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Documentacion |
-|---|---|---|---|---|---|
-| ChatVPet-qw35-9B-v1-GGUF | ~9B (segun nombre) | no disponible | Apache 2.0 | GGUF | Practicamente inexistente |
-| Modelo base Qwen de ~9B (referencia) | ~9B | no disponible en esta ficha | depende de la version | safetensors/GGUF | Extensa, publicada por el desarrollador original |
-| Fine-tunes comunitarios de ~7-9B en GGUF | ~7-9B | variable | variable | GGUF | Variable, habitualmente minima |
+No se dispone de datos de benchmarks estándar ni de comparaciones directas publicadas por el autor frente a otros modelos. La comparación más fiable es interna, entre los propios niveles de cuantización del repositorio:
 
-La comparacion cuantitativa con alternativas concretas no es posible: no hay datos de rendimiento ni especificaciones publicadas para este modelo. La principal diferencia frente a los modelos base oficiales es la ausencia total de documentacion y de validacion comunitaria.
+| Modelo | Parametros | Contexto | Licencia | Formato | Regresion propia (401) |
+|---|---|---:|---|---|---:|
+| ChatVPet-qw35-9B-v1 Q5_K_M | 9,2B | 8192 | Apache 2.0 | GGUF | 339/401 |
+| ChatVPet-qw35-9B-v1 Q6_K | 9,2B | 8192 | Apache 2.0 | GGUF | 335/401 |
+| ChatVPet-qw35-9B-v1 Q4_K_M | 9,2B | 8192 | Apache 2.0 | GGUF | 328/401 |
+
+Frente a alternativas de propósito general de tamaño similar, la información disponible no incluye comparaciones; se indica "no disponible".
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponible; al no documentarse el dataset de entrenamiento, no es posible evaluar sesgos de genero, raza, idioma o ideologia.
-- Riesgo de alucinacion: no cuantificado; sin benchmarks ni evaluaciones, el riesgo es desconocido y debe asumirse alto en produccion.
-- Limitaciones de contexto o idioma: no disponible; se desconoce la ventana de contexto y los idiomas efectivamente soportados.
-- Restricciones de licencia: la licencia declarada es Apache 2.0, que permite uso comercial, pero la procedencia del modelo base no esta documentada; conviene verificar que el modelo original del que deriva no imponga restricciones adicionales.
-- Cero descargas y cero likes en el momento de la consulta: sin validacion de la comunidad, no hay evidencia independiente de que el modelo funcione segun lo esperado.
-- Model card vacia: la ausencia de datos de entrenamiento impide auditar el modelo y evaluar riesgos de contaminacion o de datos con derechos.
-- Recomendacion: realizar una evaluacion propia exhaustiva (calidad conversacional, seguridad, latencia) antes de cualquier uso en produccion.
+- El modelo está afinado para chino y para el dominio de mascota virtual; su rendimiento fuera de ese contexto no está documentado.
+- El autor reconoce errores de memoria en conversaciones multiturno: el modelo puede escribir mal nombres recién introducidos por el jugador (por ejemplo, "柚白" como "栲白").
+- El protocolo de respuesta depende de la plantilla de chat y del system prompt del repositorio; usar otra plantilla o prompt puede romper el formato de etiquetas y la delegación.
+- El reparto de funciones es crítico: usar el mismo modelo para diálogo y operaciones degrada la integración (9/21 frente a 21/21 en las pruebas del autor).
+- Riesgo de alucinación en datos consultados: el diseño de delegación mitiga el problema, pero el modelo puede responder sin esperar el resultado del host si no se respeta el flujo.
+- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.5 puede tener sus propias condiciones; conviene revisar la licencia del modelo base antes de producción.
+- Los pesos cuantizados introducen pequeñas diferencias de redacción y pérdida de precisión respecto al BF16; el autor documenta diferencias concretas entre Q5_K_M y Q6_K en preguntas específicas.
+- No hay datos publicados de sesgos, robustez frente a prompts adversarios ni evaluaciones de seguridad.
 
 ## Enlaces
 
-- Repositorio en Hugging Face: https://huggingface.co/LorisYounger/ChatVPet-qw35-9B-v1-GGUF
-- Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
+- Repositorio GGUF: https://huggingface.co/LorisYounger/ChatVPet-qw35-9B-v1-GGUF
+- Modelo base BF16: https://huggingface.co/LorisYounger/ChatVPet-qw35-9B-v1
+- Código de integración del host: https://github.com/LorisYounger/ChatVPet
+- Prompt de sistema: https://huggingface.co/LorisYounger/ChatVPet-qw35-9B-v1-GGUF/blob/main/system_prompt.txt
+- Resultados de evaluación: https://huggingface.co/LorisYounger/ChatVPet-qw35-9B-v1-GGUF/blob/main/evaluation.json
+- Informe de loss: https://huggingface.co/LorisYounger/ChatVPet-qw35-9B-v1-GGUF/blob/main/loss-report.json
+- Sumas de verificación: https://huggingface.co/LorisYounger/ChatVPet-qw35-9B-v1-GGUF/blob/main/SHA256SUMS
+- Licencia: https://huggingface.co/LorisYounger/ChatVPet-qw35-9B-v1-GGUF/blob/main/LICENSE

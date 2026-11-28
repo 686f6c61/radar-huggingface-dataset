@@ -5,7 +5,7 @@
   "author": "Harsha001",
   "url": "https://huggingface.co/Harsha001/Inkling-2-Mini-Uncensored-ROCmFPX",
   "created_at": "2026-11-21T01:02:52.000Z",
-  "updated_at": "2026-11-24T20:53:39.000Z",
+  "updated_at": "2026-11-27T21:00:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 1024,
+  "downloads_30d": 1375,
   "trending_score": 0,
   "parameters": 26065943137,
   "parameters_human": "26.07B",

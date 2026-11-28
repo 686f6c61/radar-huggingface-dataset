@@ -2,90 +2,87 @@
 
 ## Resumen
 
-El modelo `Qwen3.5-4B-Abliterated-Full-i1-GGUF` es una cuantizacion en formato GGUF realizada por mradermacher sobre el modelo base `Qwen3.5-4B-Abliterated-Full`, publicado por el usuario panzy1222. Se trata de una variante "abliterated" (tambien llamada "uncensored") de un modelo de la familia Qwen 3.5, en la que presumiblemente se ha aplicado una tecnica de ablacion de direcciones de rechazo en el espacio de activaciones para reducir los mecanismos de negativa del modelo. El autor de la cuantizacion no aporta informacion sobre el proceso de ablacion ni sobre el entrenamiento original.
+Qwen3.5-4B-Abliterated-Full-i1-GGUF es una compilación de cuantizaciones GGUF generadas por mradermacher a partir del modelo base panzy1222/Qwen3.5-4B-Abliterated-Full. No se trata de un modelo entrenado desde cero, sino de una distribución de pesos cuantizados en formato GGUF (con variantes i1/imatrix y estáticas) pensada para su uso con llama.cpp y herramientas compatibles. El modelo subyacente pertenece a la familia Qwen3.5 con aproximadamente 4.200 millones de parámetros, y el sufijo "Abliterated" indica que se ha aplicado algún tipo de modificación (típicamente eliminación de rechazos o de comportamientos de alineación) sobre el modelo original.
 
-El repositorio contiene unicamente pesos cuantizados en formato GGUF, generados con cuantizacion ponderada por matriz de importancia (imatrix), segun se desprende de las etiquetas internas del README. La lista de cuantizaciones disponibles es amplia e incluye desde IQ1_S e IQ2_XXS hasta Q6_K, pasando por Q4_K_M, Q5_K_M e IQ4_XS, lo que permite desplegar el modelo en hardware muy modesto.
+La relevancia de esta ficha radica en que ofrece una vía práctica para ejecutar un modelo de ~4B en hardware de consumo, con múltiples niveles de cuantización que van desde IQ1 hasta Q6_K, cubriendo desde 1,6 GB hasta 3,6 GB por archivo. El repositorio acumula 3.929 descargas y 1 like en el momento de la consulta, y ocupa 54,3 GB en total debido a la gran cantidad de variantes incluidas.
 
-La relevancia de esta ficha es limitada por la escasez de informacion verificable: no se publican datos sobre arquitectura, contexto, licencia, idiomas ni benchmarks. Ademas, el campo de parametros totales del repositorio (1.550.888) es inconsistente con el nombre del modelo (4B), lo que sugiere que ese dato corresponde a tensores auxiliares o a un recuento parcial y no al numero real de parametros del modelo. Cualquier uso en produccion deberia tratar esta informacion como no verificada.
+No se dispone de información detallada sobre la arquitectura interna, los datos de entrenamiento ni los benchmarks del modelo base en la información proporcionada; esta ficha se limita a documentar lo que consta en la model card y los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente transformer denso, familia Qwen 3.5) |
-| Parametros totales | no disponible de forma fiable; el nombre indica 4B, mientras que el campo de safetensors del repo indica 1.550.888 (dato inconsistente) |
-| Parametros activos | no disponible (no se indica que sea MoE) |
+| Arquitectura | no disponible (modelo base de la familia Qwen3.5, transformer presumiblemente, sin confirmar) |
+| Parametros totales | 4.205.751.296 |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_NL, small-IQ4_NL, IQ4_XS, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-Q2_K_S, i1-IQ3_XXS, i1-Q2_K, i1-Q3_K_S, i1-IQ3_XS, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-Q4_0, i1-IQ4_XS, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K; además de un archivo imatrix para generar cuantizaciones propias |
+| Idiomas soportados | en (inglés, según la model card) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones ponderadas con imatrix) |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. El nombre sugiere un transformer denso de la familia Qwen 3.5 con aproximadamente 4.000 millones de parametros, pero el autor de la cuantizacion no documenta ni el numero de capas, ni la dimension oculta, ni el mecanismo de atencion, ni si emplea attention lineal o decodificacion especulativa. El proceso de "abliteracion" aplicado por panzy1222 tampoco esta documentado en la informacion disponible: no se especifica si se elimino una direccion de rechazo mediante proyeccion ortogonal, si se uso un conjunto de pares de prompts, ni que impacto tuvo sobre las capacidades del modelo.
+No se dispone de información sobre la arquitectura interna del modelo base panzy1222/Qwen3.5-4B-Abliterated-Full en la información proporcionada. Por el nombre se infiere que deriva de la familia Qwen3.5, pero no consta el tipo de transformer, la composición del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas de RLHF, DPO u otras. El sufijo "Abliterated" sugiere una modificación posterior al entrenamiento orientada a eliminar rechazos o restricciones de alineación, pero no se documenta el procedimiento exacto.
 
-Respecto al entrenamiento original, no hay datos sobre volumen de tokens, composicion del corpus, fases de RLHF o DPO, ni sobre el tokenizador o el vocabulario. La unica informacion tecnica verificable es el proceso de cuantizacion: el autor ha generado las cuantizaciones con imatrix ponderada, lo que típicamente mejora la calidad de los formatos de baja precision (IQ1, IQ2, IQ3) a costa de un tiempo de calculo mayor durante la conversion. Las etiquetas internas del README indican `convert_type: hf` y `quantize_version: 2`, sin mas detalle.
+Lo que sí está documentado es el proceso de cuantización: mradermacher ha generado cuantizaciones i1 (imatrix) y estáticas. Las variantes i1 emplean un archivo imatrix específico del modelo para mejorar la calidad de cuantizaciones de baja precisión, y la model card incluye una tabla con tamaños y notas de calidad para cada variante. Existe también un repositorio hermano con cuantizaciones estáticas en https://huggingface.co/mradermacher/Qwen3.5-4B-Abliterated-Full-GGUF.
 
 ## Capacidades
 
-- Generacion de texto autoregresiva: capacidad esperada por ser un modelo de la familia Qwen, aunque no verificada en la informacion disponible.
-- Razonamiento y matematicas: no disponible; no se aportan evidencias ni benchmarks.
-- Generacion de codigo: no disponible; no se aportan evidencias ni benchmarks.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta relleno en el repo).
-- Modo thinking o razonamiento extendido: no disponible.
-- Vision o audio: no disponible; el README no incluye la etiqueta `skip_mmproj`, pero tampoco indica proyector multimodal, por lo que se asume que es solo texto sin confirmacion.
-- Efecto de la abliteracion: por definicion de la tecnica, se espera una reduccion de las negativas del modelo ante ciertas peticiones, pero el alcance exacto y las capacidades preservadas no estan documentados.
+- Generación de texto conversacional: el tag "conversational" indica uso previsto para diálogo.
+- Idiomas: la model card declara únicamente inglés ("en").
+- Compatibilidad con endpoints: el tag "endpoints_compatible" sugiere que puede servirse mediante infraestructura de inferencia compatible con la API de Hugging Face.
+- Ejecución local: al estar en formato GGUF, es compatible con llama.cpp y derivados (Ollama, LM Studio, etc.).
+- Capacidades específicas de razonamiento, código, matemáticas, tool calling, agentes o visión: no disponibles en la información proporcionada.
 
 ## Casos de uso
 
-- Experimentacion con tecnicas de abliteracion: el modelo permite estudiar como la ablacion de direcciones de rechazo afecta la distribucion de respuestas en un modelo de 4B, comparando con el modelo base original. Es adecuado porque existen cuantizaciones de alta y baja precision que permiten reproducir el comportamiento en distintos niveles de perdida.
-- Despliegue en hardware de gama baja: las cuantizaciones IQ2_XXS e IQ1_S permiten ejecutar el modelo en equipos con muy poca memoria, lo que resulta util para prototipos y demos locales sin GPU dedicada.
-- Investigacion sobre sesgos y seguridad: al ser una variante "uncensored", sirve como caso de estudio para evaluar la eficacia de los filtros de seguridad y para medir la tasa de respuestas no alineadas frente al modelo original.
-- Generacion de texto creativo sin restricciones tematicas: en entornos controlados de escritura de ficcion o guiones, la reduccion de negativas puede facilitar la exploracion de temas sensibles, siempre con revision humana posterior.
-- Evaluacion comparativa de cuantizaciones: el amplio catalogo de formatos (desde Q2_K hasta Q6_K) permite medir el impacto de la cuantizacion en la coherencia y en la tasa de alucinacion sobre un mismo modelo, usando el formato Q6_K como referencia de alta fidelidad.
-- Pruebas de integracion con llama.cpp y Ollama: los ficheros GGUF son directamente compatibles con estos motores, lo que facilita validar pipelines de inferencia local y medir latencia por token en CPU o GPU consumer.
-- Analisis de robustez frente a jailbreaks: dado que el modelo ha sido modificado para reducir rechazos, puede emplearse como linea base en estudios de red teaming para comparar la resistencia de variantes abliterated frente a modelos alineados.
+- Despliegue local en portátiles y equipos de sobremesa: con cuantizaciones de 2,6-2,8 GB (Q4_0, IQ4_XS, Q4_K_S, Q4_K_M), el modelo puede ejecutarse en GPUs de consumo con 6-8 GB de VRAM, o incluso en CPU con suficiente RAM, lo que lo hace adecuado para prototipado offline sin depender de APIs.
+- Experimentación con modelos "abliterated": útil para investigadores que estudian el efecto de la eliminación de alineación sobre el comportamiento del modelo, comparando respuestas frente al modelo base original.
+- Generación de texto conversacional en inglés: dado el tag "conversational" y el idioma declarado, encaja en asistentes de chat simples o generación de borradores en inglés.
+- Pruebas de pipelines de cuantización: el archivo imatrix incluido permite a desarrolladores generar sus propias cuantizaciones y evaluar la degradación de calidad entre niveles (IQ1 a Q6_K).
+- Integración en entornos con recursos limitados: la variante IQ1_S (1,6 GB) permite ejecutar el modelo en dispositivos con muy poca memoria, aunque con calidad degradada, para tareas de generación tolerantes a errores.
+- Evaluación comparativa de cuantizaciones: la amplia gama de variantes facilita estudios de trade-off entre tamaño, velocidad y perplejidad en un mismo modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de ninguna otra tarea, y no se aportan comparaciones con el modelo base sin abliterar. No es posible, por tanto, cuantificar el impacto de la ablacion ni de las distintas cuantizaciones sobre el rendimiento.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma exacta, ya que no se confirma el numero real de parametros. Para un modelo denso de 4B, las estimaciones tipicas en GGUF serian aproximadamente 1,5-2 GB en IQ1/IQ2, 2,5-3 GB en Q4_K_M y 3,5-4,5 GB en Q6_K, pero estas cifras son orientativas y no estan verificadas en la informacion proporcionada.
-- GPU recomendadas: no disponible. Para un modelo de este tamano, una RTX 3060 de 12 GB o superior seria suficiente en la mayoria de cuantizaciones, pero no hay confirmacion oficial.
-- Cabe en GPU consumer: probablemente si en la mayoria de cuantizaciones (Q4_K_M o inferior) en tarjetas con 6-8 GB de VRAM, aunque no verificable con los datos disponibles.
-- Opciones de despliegue: llama.cpp, Ollama y cualquier motor compatible con GGUF (por ejemplo, LM Studio o KoboldCpp). No se confirma compatibilidad con vLLM ni con TGI, que requieren normalmente pesos en safetensors.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada para inferencia: entre ~1,6 GB (i1-IQ1_S) y ~3,6 GB (i1-Q6_K) solo para los pesos; hay que añadir la memoria para el contexto KV, que depende de la longitud de contexto configurada (no disponible).
+- GPU recomendadas: no se especifican en la información; por tamaño, cualquier GPU con 6 GB o más de VRAM puede alojar las cuantizaciones de 4 bits (Q4_K_M, 2,8 GB) con margen para contexto moderado.
+- ¿Cabe en GPU de consumo? Sí: las variantes Q4 e inferiores caben en GPUs de 6-8 GB (RTX 3060, RTX 4060, RTX 2070, etc.); las variantes Q5/Q6 requieren 8 GB o más.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; también puede servirse vía endpoints compatibles según el tag del repositorio.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
-|---|---|---|---|---|---|
-| Qwen3.5-4B-Abliterated-Full-i1-GGUF (este) | no disponible (nombre indica 4B) | no disponible | no disponible | GGUF (multiples cuantizaciones) | Variante abliterated, sin benchmarks publicados |
-| Qwen3.5-4B-Abliterated-Full (base de este repo) | no disponible (nombre indica 4B) | no disponible | no disponible | safetensors | Modelo original abliterated de panzy1222 |
-| Qwen3.5-4B (modelo oficial) | no disponible en esta ficha | no disponible | no disponible | safetensors, GGUF | Modelo de referencia sin ablacion; datos no verificados aqui |
-| Otras variantes GGUF de modelos 4B de la familia Qwen | no disponible | no disponible | no disponible | GGUF | Comparacion no disponible por falta de datos |
+No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables en la información proporcionada. Como referencia estructural, se puede comparar con otras distribuciones GGUF de modelos de ~4B, pero sin datos de benchmarks no es posible establecer una comparación rigurosa.
 
-No se dispone de informacion suficiente para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria. Los datos de los modelos de referencia no estan incluidos en la informacion proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+|---|---|---|---|---|---|
+| Qwen3.5-4B-Abliterated-Full-i1-GGUF (este) | 4.205.751.296 | no disponible | no disponible | GGUF | Hugging Face |
+| Modelo base panzy1222/Qwen3.5-4B-Abliterated-Full | 4.205.751.296 | no disponible | no disponible | safetensors | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La licencia no esta especificada en el repositorio, lo que impide determinar si el uso comercial esta permitido. No debe usarse en produccion sin verificar la licencia del modelo base original.
-- El modelo ha sido sometido a abliteracion, lo que reduce los mecanismos de rechazo y aumenta el riesgo de generar contenido inapropiado, ofensivo o inseguro. Requiere filtros externos y supervision humana.
-- No hay benchmarks publicados, por lo que no se puede evaluar la degradacion de capacidades causada por la ablacion ni por las cuantizaciones de baja precision (IQ1, IQ2).
-- El dato de parametros totales del repositorio (1.550.888) es inconsistente con el nombre del modelo (4B), lo que genera incertidumbre sobre el tamano real y, por tanto, sobre los requisitos de memoria.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible; en cuantizaciones de 1-2 bits es esperable un aumento de incoherencias y errores factuales.
-- Idiomas soportados no documentados; el comportamiento multilingue no puede asumirse.
-- El repositorio tiene 0 descargas y 1 like en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
-- Al ser una cuantizacion de un modelo de terceros, no hay garantia de que los pesos hayan sido verificados contra el modelo original; conviene comprobar la integridad de los ficheros antes de su uso.
+- El modelo es una cuantización: las variantes de baja precisión (IQ1, IQ2, Q2_K) degradan notablemente la calidad; la propia model card advierte "very low quality" para Q2_K_S y "for the desperate" para IQ1_S.
+- El proceso "abliteration" elimina o reduce los rechazos del modelo, lo que puede aumentar la probabilidad de generar contenido inapropiado, sesgado o dañino; no se documenta el alcance exacto de la modificación.
+- Riesgo de alucinación: inherente a modelos de ~4B, especialmente en cuantizaciones agresivas; no hay benchmarks que cuantifiquen este riesgo.
+- Idioma: solo se declara inglés; el rendimiento en castellano no está garantizado ni documentado.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es imprescindible verificar la licencia del modelo base antes de usarlo en producción.
+- Longitud de contexto no disponible: no se puede planificar el uso en tareas que requieran ventanas largas sin consultar la documentación del modelo base.
+- El repositorio ocupa 54,3 GB por la multitud de variantes; conviene descargar solo el archivo GGUF necesario.
 
 ## Enlaces
 
-- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Qwen3.5-4B-Abliterated-Full-i1-GGUF
-- Modelo base abliterated (panzy1222): https://huggingface.co/panzy1222/Qwen3.5-4B-Abliterated-Full
-- Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
-- Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-Abliterated-Full-i1-GGUF
+- Modelo base: https://huggingface.co/panzy1222/Qwen3.5-4B-Abliterated-Full
+- Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.5-4B-Abliterated-Full-GGUF
+- Página de resumen del autor: https://hf.tst.eu/model#Qwen3.5-4B-Abliterated-Full-i1-GGUF
+- README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Gráfico de comparación de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- FAQ y solicitudes de modelo: https://huggingface.co/mraderma (enlace incompleto en la model card original)

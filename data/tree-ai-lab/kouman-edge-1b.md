@@ -2,100 +2,100 @@
 
 ## Resumen
 
-Kouman Edge 1B es un modelo de lenguaje de 1.235.814.400 parámetros desarrollado por Tree AI Lab (Costa de Marfil) a partir de `meta-llama/Llama-3.2-1B`. Su objetivo es cubrir la generación de texto conversacional en cuatro idiomas: baoulé (`bci`), dioula (`dyu`), francés (`fr`) e inglés (`en`), con un enfoque explícito en despliegue on-device (móvil y sin conexión). Se distribuye tanto en `bfloat16` (safetensors) como en una gama completa de cuantizaciones GGUF para `llama.cpp`.
+Kouman 1.0 Edge 1B es un modelo de lenguaje de 1.235.814.400 parámetros (aproximadamente 1,24B) desarrollado por Tree AI Lab, un laboratorio con sede en Costa de Marfil. Se construye mediante ajuste del modelo base meta-llama/Llama-3.2-1B y está diseñado específicamente para ejecutarse en dispositivos móviles y de forma totalmente offline (on-device). Su rasgo diferencial es la incorporación de dos lenguas minoritarias de Costa de Marfil: el baoulé (código ISO `bci`) y el dioula (`dyu`), junto con francés e inglés, lo que lo convierte en una propuesta poco habitual dentro del ecosistema de modelos pequeños.
 
-La relevancia del modelo radica en dos factores. Primero, incorpora dos lenguas de Costa de Marfil escasamente representadas en modelos abiertos, con una mejora de perplejidad muy marcada respecto al modelo base según los datos del autor (baoulé de 20,74 a 2,90; dioula de 19,58 a 2,25). Segundo, mantiene el francés y el inglés sin degradación declarada, lo que permite un uso multilingüe realista en el mismo artefacto.
+El modelo se distribuye en dos formatos complementarios: pesos completos en `bfloat16` (safetensors) para uso con `transformers`, `vLLM` u `Ollama`, y una gama completa de cuantizaciones GGUF para `llama.cpp` que abarca desde `Q8_0` hasta `Q2_K`. Esta segunda vía es la que habilita el despliegue real en teléfonos Android e iOS con aplicaciones como PocketPal AI o ChatterUI, sin necesidad de conexión a internet.
 
-El modelo se presenta como un Instruct afinado con SFT sobre un conjunto de 3.000 diálogos, con cuantizaciones calibradas mediante una `imatrix` de cuatro idiomas para preservar la calidad en baoulé y dioula en dispositivos con memoria limitada. El repositorio ocupa 10,9 GB e incluye el script de inferencia oficial.
+Su relevancia actual radica en dos factores: por un lado, demuestra que un ajuste de dominio lingüístico sobre un modelo base pequeño puede reducir drásticamente la perplejidad en lenguas de bajos recursos (de 20,74 a 2,90 en baoulé según la model card); por otro, ofrece una receta de despliegue edge completa con cuantizaciones calibradas mediante `imatrix` multilingüe, algo que no es habitual en modelos orientados a lenguas africanas.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Llama 3.2), según modelo base |
-| Parametros totales | 1.235.814.400 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la información proporcionada |
-| Tipos de cuantizacion | BF16 (safetensors); GGUF: Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_0, Q3_K_M, Q3_K_S, Q2_K |
-| Idiomas soportados | baoulé (`bci`), dioula (`dyu`), francés (`fr`), inglés (`en`) |
-| Licencia | llama3.2 |
-| Formato de pesos | safetensors (BF16) y GGUF |
+| Arquitectura | Transformer decoder-only (Llama 3.2 1B) |
+| Parámetros totales | 1.235.814.400 (≈1,24B) |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada |
+| Tipos de cuantización | BF16 (safetensors), GGUF Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q4_0, Q3_K_M, Q3_K_S, Q2_K |
+| Idiomas soportados | Baoulé (`bci`), dioula (`dyu`), francés (`fr`), inglés (`en`) |
+| Licencia | Llama 3.2 (Llama 3.2 Community License) |
+| Formato de pesos | safetensors (BF16), GGUF (llama.cpp), ONNX (según tags del repo) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura Llama 3.2 1B, un transformer decoder-only con atención causal estándar. El entrenamiento descrito por el autor consiste en un continued pre-training (CPT) de aproximadamente 1,70B tokens distribuidos en 6.488 pasos con scheduler WSD (warmup-stable-decay). Sobre esa base se aplica un SFT con un conjunto tipo LIMA calibrado a 3.000 diálogos limpios, equivalente a cerca del 0,1 % del volumen de CPT, con el objetivo declarado de enseñar formato conversacional sin provocar memorización ni degradar las lenguas minoritarias.
+El modelo parte de la arquitectura Llama 3.2 1B, un transformer decoder-only denso con atención causal estándar. Sobre esta base se aplicó un entrenamiento continuado de preentrenamiento (CPT, continued pre-training) de aproximadamente 1.700 millones de tokens distribuidos en 6.488 pasos con un scheduler de tipo WSD (warmup-stable-decay). No se especifica en la información disponible la composición exacta del corpus ni si se aplicaron fases posteriores de ajuste supervisado (SFT), RLHF o DPO, aunque la model card describe el resultado como "modelo Instruct", lo que sugiere al menos una fase de instrucción.
 
-La innovación técnica destacable no está en la arquitectura, sino en el pipeline de cuantización: las variantes GGUF desde Q6_K hasta Q2_K se calibraron con una `imatrix` específica de cuatro idiomas (`kouman-edge-1b.imatrix`), pensada para conservar la fidelidad en baoulé y dioula en cuantizaciones agresivas. El autor publica además métricas de perplejidad antes y después del CPT por idioma, lo que permite evaluar el olvido catastrófico: francés de 9,33 a 4,40 e inglés de 6,77 a 5,12, con un 0 % de olvido declarado.
+La innovación técnica más destacable es el uso de una `imatrix` (importance matrix) multilingüe de cuatro idiomas para calibrar las cuantizaciones GGUF. Esta técnica de calibración permite preservar el rendimiento en baoulé y dioula incluso en cuantizaciones agresivas de 3 y 4 bits, algo crítico cuando el objetivo es ejecutar el modelo en smartphones de gama media o entrada. Además, el repositorio incluye pesos en ONNX, lo que amplía las opciones de despliegue más allá de `llama.cpp` y `transformers`.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno en baoulé, dioula, francés e inglés.
-- Traducción entre los cuatro idiomas cubiertos, según la descripción del autor.
-- Comprensión y respuesta a instrucciones en formato chat (Instruct), con plantilla de chat aplicable vía `apply_chat_template`.
-- Inferencia 100 % offline en dispositivos móviles Android e iOS mediante `llama.cpp` y aplicaciones compatibles (PocketPal AI, ChatterUI).
-- Despliegue en GPU con `transformers` en BF16 y soporte declarado de `vLLM` y `Ollama`.
-- Compatibilidad con endpoints estándar de Hugging Face (`endpoints_compatible` en los tags).
-- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo thinking en la información disponible.
+- Generación de texto conversacional en baoulé, dioula, francés e inglés.
+- Traducción entre los cuatro idiomas soportados, con especial énfasis en pares baoulé/francés y dioula/francés.
+- Comprensión y generación en lenguas de bajos recursos con perplejidad reducida respecto al modelo base.
+- Formato Instruct con plantilla de chat (`apply_chat_template`), apto para diálogo multi-turno.
+- Ejecución offline en dispositivos móviles mediante GGUF y `llama.cpp`.
+- Compatibilidad con endpoints (tag `endpoints_compatible`) para despliegue como servicio.
+- No se documentan en la información disponible capacidades de tool calling, function calling, agentes, razonamiento multi-paso explícito, visión, audio ni modo "thinking".
 
 ## Casos de uso
 
-- Asistencia conversacional offline en zonas con conectividad limitada: el modelo cabe en cuantización Q4_K_M (770 MB) y puede ejecutarse íntegramente en el dispositivo, sin enviar datos a la nube, lo que resulta adecuado para contextos rurales o de baja cobertura.
-- Traducción baoulé-francés y dioula-francés en aplicaciones de campo: la mejora de perplejidad declarada en ambas lenguas (2,90 y 2,25 respectivamente) lo hace útil para borradores de traducción asistida en atención sanitaria, administrativa o educativa.
-- Preservación y fomento lingüístico: aplicaciones educativas que generen ejercicios, cuentos cortos o material didáctico en baoulé y dioula, aprovechando que el modelo mantiene francés e inglés sin degradación para interfaces bilingües.
-- Chatbot de atención al ciudadano en Costa de Marfil: integrable en apps móviles que respondan en la lengua del usuario (baoulé, dioula o francés) con un modelo de 1,24B parámetros que no requiere infraestructura de servidor.
-- Prototipado rápido de asistentes multilingües en entornos con hardware modesto: la disponibilidad de GGUF desde Q2_K (554 MB) hasta Q8_0 (1,23 GB) permite desplegar en portátiles, Raspberry Pi o teléfonos de gama baja sin GPU dedicada.
-- Evaluación e investigación sobre lenguas de bajos recursos: sirve como referencia para estudiar olvido catastrófico y calibración `imatrix` en lenguas africanas, dado que el autor publica métricas de perplejidad por idioma antes y después del CPT.
+- Asistentes conversacionales offline en zonas rurales de Costa de Marfil: el modelo puede ejecutarse íntegramente en un smartphone Android de gama media con la cuantización `Q4_K_M` (770 MB), sin depender de conectividad, lo que resulta adecuado para regiones con cobertura intermitente.
+- Traducción baoulé-francés y dioula-francés en aplicaciones de mensajería: la reducción de perplejidad documentada (de 20,74 a 2,90 en baoulé) lo hace viable para traducción asistida de frases cotidianas en entornos sanitarios, administrativos o educativos.
+- Preservación y fomento de lenguas minoritarias: integración en aplicaciones educativas que generen ejercicios, cuentos o material didáctico en baoulé y dioula, contribuyendo a la digitalización de lenguas con escasa representación en corpus.
+- Chatbots de atención al ciudadano en administraciones locales: al soportar francés e inglés junto con las lenguas locales, puede desplegarse en oficinas de atención presencial con hardware de bajo coste (un portátil o un mini-PC con CPU ARM).
+- Integración en aplicaciones móviles de terceros mediante GGUF: desarrolladores pueden embeberlo en apps con `llama.cpp` o vía ONNX, usando la cuantización `Q3_K_M` (659 MB) para dispositivos con 4 GB de RAM.
+- Prototipado e investigación en NLP de bajos recursos: sirve como punto de partida para experimentos de ajuste fino en otras lenguas africanas, dado que su licencia Llama 3.2 permite uso comercial bajo condiciones y el modelo base es ampliamente conocido.
+- Despliegue en entornos sin nube por requisitos de privacidad: al ejecutarse on-device, los datos del usuario no salen del dispositivo, lo que encaja en contextos sanitarios o legales donde la confidencialidad es crítica.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son métricas de perplejidad (PPL) del CPT, no benchmarks estándar (MMLU, HumanEval, GSM8K, etc.).
+La model card proporciona únicamente métricas de perplejidad (PPL) del entrenamiento continuado, no resultados en benchmarks estándar como MMLU, HumanEval o GSM8K:
 
-| Idioma | Llama 3.2 1B base (PPL) | Kouman Edge 1B CPT (PPL) | Variación |
+| Idioma | Llama 3.2 1B base (PPL) | Kouman 1.0 Edge 1B (PPL) | Mejora |
 |---|---:|---:|---:|
-| Baoulé (`bci`) | 20,74 | 2,90 | -17,84 (÷ 7,2) |
-| Dioula (`dyu`) | 19,58 | 2,25 | -17,33 (÷ 8,7) |
-| Francés (`fr`) | 9,33 | 4,40 | -4,93 (0 % de olvido declarado) |
-| Inglés (`en`) | 6,77 | 5,12 | -1,65 (0 % de olvido declarado) |
+| Baoulé (`bci`) | 20,74 | 2,90 | −17,84 (÷7,2×) |
+| Dioula (`dyu`) | 19,58 | 2,25 | −17,33 (÷8,7×) |
+| Francés (`fr`) | 9,33 | 4,40 | −4,93 (sin olvido declarado) |
+| Inglés (`en`) | 6,77 | 5,12 | −1,65 (sin olvido declarado) |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 2,5 GB para los pesos (el `model.safetensors` pesa 2,36 GB) más overhead de activaciones y KV cache.
-- VRAM estimada en GGUF: desde unos 0,6 GB (Q2_K, 554 MB) hasta 1,3 GB (Q8_0, 1,23 GB), más el coste del contexto.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para BF16; para GGUF basta con CPU. No se especifican modelos concretos (A100, H100, RTX 4090) en la documentación.
-- Cabe en GPU de consumo: sí, en tarjetas con 4 GB o más para BF16 y en prácticamente cualquier GPU moderna para cuantizaciones Q4/Q3.
-- Cabe en móvil: el autor valida Q4_K_M (770 MB) para Android/iOS de gama alta y Q3_K_M (659 MB) para smartphones de gama de entrada con 4 GB de RAM.
-- Opciones de despliegue: `llama.cpp` (CLI y librerías), `llama-cpp-python`, aplicaciones móviles basadas en `llama.cpp` (PocketPal AI, ChatterUI), `transformers` en BF16, y soporte declarado de `vLLM` y `Ollama`.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en BF16: aproximadamente 2,5 GB (pesos de 1,24B × 2 bytes más overhead de activaciones y KV cache).
+- VRAM estimada en cuantizaciones GGUF: desde ~554 MB (`Q2_K`) hasta ~1,23 GB (`Q8_0`); la opción recomendada `Q4_K_M` ocupa 770 MB en disco y requiere alrededor de 1-1,5 GB de RAM en ejecución.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para BF16 (RTX 3050, RTX 4060, T4); para GGUF basta CPU. En GPUs de datacenter (A100, H100) el modelo es sobredimensionado para su tamaño y no aprovecha su capacidad, por lo que no es el objetivo.
+- Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU y CPUs ARM modernas con NEON/i8mm.
+- Opciones de despliegue: `llama.cpp` (CLI, servidor, bindings), `transformers`, `vLLM`, `Ollama`, aplicaciones móviles basadas en `llama.cpp` (PocketPal AI, ChatterUI) y ONNX Runtime.
+- Latencia y throughput: no se proporcionan cifras concretas en la información disponible; en un smartphone moderno con `Q4_K_M` es esperable una generación en el orden de decenas de tokens por segundo, pero este dato no está confirmado por el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formatos |
-|---|---:|---|---|---|---|
-| Kouman Edge 1B | 1,24B | no disponible | bci, dyu, fr, en | llama3.2 | safetensors, GGUF |
-| Llama 3.2 1B (base) | 1,24B | 128K (según ficha oficial de Meta) | multilingüe (sin bci/dyu) | llama3.2 | safetensors, GGUF |
-| Qwen2.5 1.5B Instruct | 1,54B | 32K (según ficha oficial) | multilingüe (sin bci/dyu) | Apache 2.0 | safetensors, GGUF |
-| Gemma 2 2B | 2,6B | 8K (según ficha oficial) | multilingüe (sin bci/dyu) | Gemma | safetensors, GGUF |
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
+|---|---|---:|---|---|---|
+| **Kouman 1.0 Edge 1B** | 1,24B | No disponible | bci, dyu, fr, en | Llama 3.2 | safetensors, GGUF, ONNX |
+| Llama 3.2 1B (base) | 1,24B | 128K (según ficha oficial de Meta) | Multilingüe (8 oficiales) | Llama 3.2 | safetensors, GGUF |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32K nativo (128K con RoPE) | Multilingüe (29+) | Apache 2.0 | safetensors, GGUF |
+| Gemma 2 2B | 2,6B | 8K | Multilingüe | Gemma Terms | safetensors, GGUF |
 
-La comparativa se limita a datos de ficha; no se dispone de benchmarks comunes que permitan comparar rendimiento entre estos modelos en la información proporcionada. La ventaja diferencial de Kouman Edge 1B es la cobertura de baoulé y dioula, ausente en las alternativas.
+El modelo de Tree AI Lab se diferencia de los anteriores por su especialización en lenguas de Costa de Marfil, un nicho que ninguno de los comparables cubre. A cambio, su contexto no está documentado y su licencia (Llama 3.2) es más restrictiva que la Apache 2.0 de Qwen. Para tareas generales en inglés o francés, Llama 3.2 1B o Qwen2.5-1.5B probablemente igualen o superen su rendimiento; para baoulé y dioula, Kouman es la única opción identificada en esta comparativa.
 
 ## Limitaciones y advertencias
 
-- Modelo de 1,24B parámetros: capacidad de razonamiento, matemáticas y código limitada en comparación con modelos de mayor tamaño; no se documentan capacidades de código ni matemáticas.
-- Riesgo de alucinación: el propio autor advierte que en Q2_K (2 bits) aparecen pérdidas de seguimiento de instrucciones y alucinaciones, y recomienda Q3_K_M o Q4_K_M en su lugar.
-- Sesgos: no se documenta ningún análisis de sesgos en la información disponible; al derivar de Llama 3.2 1B y entrenarse con datos de Costa de Marfil, puede heredar sesgos del modelo base y del corpus CPT.
-- Cobertura lingüística limitada a cuatro idiomas; no se garantiza un comportamiento correcto fuera de baoulé, dioula, francés e inglés.
-- Longitud de contexto no especificada en la ficha del modelo; conviene verificar el valor efectivo antes de usarlo en conversaciones largas.
-- Licencia `llama3.2`: uso comercial sujeto a los términos de la licencia comunitaria de Llama 3.2, que incluye restricciones (por ejemplo, cláusula de 700 millones de usuarios mensuales y políticas de uso aceptable). Es necesario revisar la licencia antes de un despliegue comercial.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria independiente de las métricas declaradas.
-- Los datos de perplejidad son los reportados por el autor; no se han verificado de forma independiente.
+- El tamaño de 1,24B impone un techo claro de razonamiento: no es adecuado para tareas complejas de matemáticas, código o razonamiento multi-paso.
+- Riesgo de alucinación elevado, especialmente en las lenguas de bajos recursos, donde el corpus de entrenamiento es necesariamente limitado y la verificación factual es difícil.
+- La model card no documenta evaluación de sesgos; es esperable que herede sesgos del corpus Llama 3.2 y del corpus CPT, sin que se hayan publicado análisis al respecto.
+- La licencia Llama 3.2 Community License impone restricciones de uso comercial (umbral de 700 millones de usuarios mensuales, obligación de atribución, restricciones de uso aceptable) y no es una licencia de código abierto plena.
+- No se especifica la longitud de contexto soportada, lo que dificulta planificar su uso en aplicaciones que requieran ventanas largas.
+- La cuantización `Q2_K` se marca explícitamente como experimental y con degradación esperada en un modelo de 1B; el propio autor recomienda `Q3_K_M` o `Q4_K_M`.
+- El rendimiento en francés e inglés, aunque declarado sin olvido, se mide solo por perplejidad, no por evaluaciones de instrucción o calidad conversacional.
+- El repositorio ocupa 30,2 GB, lo que refleja la inclusión de múltiples formatos y cuantizaciones; conviene descargar solo el archivo GGUF necesario.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Tree-AI-lab/kouman-edge-1b
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
-- Script de inferencia oficial: `inference_kouman_edge_1b.py` (incluido en el repositorio)
-- Matriz de calibración: `kouman-edge-1b.imatrix` (incluida en el repositorio)
 - Repositorio de `llama.cpp`: https://github.com/ggerganov/llama.cpp
-- No se han encontrado en la información disponible papers, blogs, demos ni repositorios adicionales del autor.
+- Aplicación PocketPal AI: no disponible en la información proporcionada
+- Aplicación ChatterUI: no disponible en la información proporcionada
+- Paper o blog técnico del modelo: no disponible en la información proporcionada

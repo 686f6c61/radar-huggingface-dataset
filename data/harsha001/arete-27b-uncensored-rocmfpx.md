@@ -2,98 +2,108 @@
 
 ## Resumen
 
-Arete-27B-Uncensored-ROCmFPX es una distribucion de pesos cuantizados en formato GGUF del modelo SargeDev/Arete-27B-Uncensored, que a su vez deriva de NousResearch/Arete-27B, un ajuste fino completo de Qwen3.8-27B. El autor de esta publicacion, Harsha001, no entrena el modelo: se limita a aplicar un esquema de cuantizacion propio denominado ROCmFPX, orientado a hardware AMD (en particular a equipos con APU Strix Halo y a la API Vulkan), y a empaquetar los pesos en tres precisiones (8, 6 y 4 bits).
+Arete-27B-Uncensored-ROCmFPX es un conjunto de cuantizaciones GGUF del modelo SargeDev/Arete-27B-Uncensored, publicado por el usuario Harsha001. El modelo original es un fine-tune completo de Qwen3.8-27B realizado por Nous Research, al que SargeDev aplicó OBLITERATUS para eliminar la dirección de rechazo (abliteration) y añadió la cabeza de predicción multi-token (MTP) estándar de Qwen3.8. Este repositorio no contiene pesos nuevos, sino versiones cuantizadas en formato ROCmFPX, un formato propietario orientado a hardware AMD (Strix Halo, ROCm, Vulkan).
 
-El modelo subyacente tiene 27.320.698.360 parametros (unos 27,3 mil millones) y una unica modalidad de texto en ingles. Su rasgo definitorio es la abliteracion aplicada por SargeDev mediante la tecnica OBLITERATUS, que elimina la direccion de rechazo aprendida durante el alineamiento de seguridad, de modo que el modelo deja de negarse a peticiones que un modelo convencional rechazaria. Ademas, SargeDev reincorporo la cabeza de prediccion multi-token (MTP) de una capa que Qwen3.8 incluye de serie.
+La relevancia de esta ficha es doble: por un lado, documenta una cuantización de 27.320 millones de parámetros con licencia Apache-2.0 y ventana de contexto heredada de Qwen3.8; por otro, advierte de que los ficheros ROCmFPX requieren un fork específico de llama.cpp (HarshaVardhan3002/ROCmFPX, compilado a partir del 7 de noviembre de 2026) y no cargan en llama.cpp estándar, LM Studio, Ollama ni versiones antiguas del fork. El autor indica además que los ficheros no han sido probados en hardware AMD real.
 
-La relevancia de esta ficha es doble: por un lado, documenta una variante sin censura de un modelo de razonamiento de ~27B; por otro, introduce un formato de cuantizacion no estandar que requiere un fork especifico de llama.cpp y que, segun las mediciones del autor, iguala o mejora la fidelidad de las cuantizaciones stock de llama.cpp en 8 y 6 bits. Los archivos no han sido probados en hardware AMD real por el autor, lo que constituye una advertencia importante para cualquier despliegue.
+El modelo está pensado para generación de texto en inglés, con capacidades de razonamiento (thinking mode heredado de Qwen3.8) y sin entrenamiento de seguridad. Su uso comercial está permitido por la licencia Apache-2.0, pero la ausencia de rechazo implica que el despliegue en producción exige capas de moderación propias.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (base Qwen3.8-27B) con cabeza MTP de una capa anadida; cuantizacion GGUF con esquema ROCmFPX |
-| Parametros totales | 27.320.698.360 (~27,3B) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada |
-| Tipos de cuantizacion | Q8_0 ROCmFPX (28,3 GB), Q6_0 ROCmFPX (22,5 GB), Q4_0 ROCmFP4_STRIX_O8 (19,3 GB) |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (variante ROCmFPX, requiere fork de llama.cpp) |
+| Arquitectura | Transformer decoder-only (Qwen3.8) con cabeza MTP de una capa añadida por SargeDev |
+| Parametros totales | 27.320.698.360 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada (heredada de Qwen3.8-27B) |
+| Tipos de cuantizacion | Q8_0 ROCmFPX (8 bits), Q6_0 ROCmFPX (6 bits), Q4_0 ROCMFP4_STRIX_O8 (4 bits, ROCmFP4-FAST con atención y salida en 8 bits) |
+| Idiomas soportados | en |
+| Licencia | apache-2.0 |
+| Formato de pesos | GGUF (variantes ROCmFPX) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es NousResearch/Arete-27B, descrito por el autor como un ajuste fino completo (full fine-tune) alineado con valores de Qwen3.8-27B, desarrollado por el equipo de Qwen. Se trata, por tanto, de un transformer denso de ~27,3B parametros, no de una arquitectura MoE ni hibrida. Sobre esa base, SargeDev aplico la tecnica OBLITERATUS para eliminar la direccion de rechazo del modelo (abliteration) y anadio la cabeza de prediccion multi-token (MTP) de una capa que Qwen3.8 incorpora de fabrica; esa cabeza MTP esta presente en los archivos publicados pero, segun el autor, no ha sido probada.
+La arquitectura subyacente es la de Qwen3.8-27B, un transformer decoder-only de 27.320 millones de parámetros. Nous Research realizó un fine-tune completo alineado con valores sobre esa base para producir Arete-27B. Posteriormente, SargeDev aplicó OBLITERATUS, una técnica de abliteration que elimina la dirección de rechazo del modelo, y añadió la cabeza de predicción multi-token (MTP) de una capa que Qwen3.8 incluye de serie. La MTP permite decodificación especulativa nativa, aunque el autor señala que esa cabeza no ha sido probada en estos ficheros.
 
-La informacion disponible no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO en el ajuste original de Nous Research. Lo que si se documenta con rigor es el proceso de cuantizacion: el autor midio la divergencia KL respecto a un GGUF BF16 convertido desde los pesos de SargeDev (perplejidad 6,28) usando `llama-perplexity --kl-divergence` sobre 40 fragmentos de 512 tokens de wikitext-2 en ingles, en una GPU NVIDIA GB10, expandiendo previamente cada archivo a F16. Los resultados son Q8_0 ROCmFPX con KL 0,00030 y 99,2% de coincidencia en el token superior; Q6_0 ROCmFPX con KL 0,0021 y 97,6%; y Q4_0 ROCmFP4_STRIX_O8 con KL 0,021 y 93,6%. Frente a las cuantizaciones stock de llama.cpp (Q8_0: KL 0,00038 y 99,1%; Q6_K: KL 0,0024 y 97,9%; Q4_K_M: KL 0,016 y 94,7%), el esquema ROCmFPX es mejor en 8 bits y ligeramente mejor en KL en 6 bits, aunque el Q4_K_M stock resulta algo mas fiel y mas pequeno en 4 bits.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO en el fine-tune original de Nous Research. La cuantización ROCmFPX se evaluó con `llama-perplexity --kl-divergence` frente a un GGUF BF16 convertido de los pesos de SargeDev (perplejidad 6,28), sobre 40 fragmentos de 512 tokens de wikitext-2 en inglés y en una GPU NVIDIA GB10 tras expandir cada fichero a F16. Los resultados de divergencia KL y coincidencia de top token se recogen en la sección de benchmarks.
 
 ## Capacidades
 
-- Generacion de texto en ingles con modo de razonamiento: las pruebas del autor muestran que el modelo emite un bloque de pensamiento antes de la respuesta final.
-- Razonamiento aritmetico y de conocimiento general basico: los tres archivos respondieron correctamente a 17 x 23 = 391 y a la capital de Australia.
-- Comportamiento sin censura: la abliteracion elimina la direccion de rechazo, de modo que el modelo puede cumplir peticiones que un modelo con entrenamiento de seguridad rechazaria.
-- Prediccion multi-token (MTP): los archivos incluyen la cabeza MTP de una capa anadida por SargeDev, pensada para decodificacion especulativa, aunque no ha sido validada.
-- Conversacion multi-turno: la etiqueta `conversational` y el pipeline `text-generation` indican soporte de dialogo, si bien no se documentan detalles de plantilla de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere integracion con infraestructura de inferencia tipo API.
-- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni capacidades multilingues mas alla del ingles.
+- Generación de texto en inglés con modo de razonamiento (bloque de pensamiento previo a la respuesta, heredado de Qwen3.8).
+- Razonamiento aritmético y de sentido común básico: en pruebas cortas con decodificación greedy, los tres ficheros respondieron 17 × 23 = 391 y "Canberra" como capital de Australia.
+- Respuesta a preguntas factuales tras el bloque de pensamiento (verificado con "¿Cuál es la capital de Francia?" en los ficheros de 8 y 6 bits).
+- Comportamiento sin rechazo: en una prueba de 10 peticiones que un modelo con entrenamiento de seguridad rechazaría, solo 1 fue rechazada inicialmente, y el modelo terminó respondiendo igualmente.
+- Soporte de tool calling y function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Visión, audio u otras modalidades: no disponible.
+- Decodificación especulativa vía cabeza MTP: presente en los ficheros, pero no probada según el autor.
 
 ## Casos de uso
 
-- Investigacion sobre alineamiento y abliteracion: el modelo permite estudiar empiricamente como la eliminacion de la direccion de rechazo afecta a la distribucion de respuestas, comparando el BF16 original con las cuantizaciones y midiendo tasas de rechazo con conjuntos controlados.
-- Generacion creativa sin restricciones de contenido: util para escritura de ficcion, guiones o narrativa que aborde temas sensibles y que un modelo alineado rechazaria; requiere revision humana y moderacion propia antes de cualquier publicacion.
-- Despliegue en equipos AMD con APU Strix Halo: el archivo Q4_0 ROCmFP4_STRIX_O8 (19,3 GB) esta disenado para ejecutarse con los kernels FP4 rapidos del fork ROCmFPX, manteniendo atencion y salida en 8 bits, lo que permite inferencia local en hardware integrado de gama alta.
-- Evaluacion de tecnicas de cuantizacion: los datos de KL y coincidencia de token superior permiten usar estos archivos como referencia en estudios comparativos entre esquemas de cuantizacion (ROCmFPX frente a stock) sobre un modelo de ~27B.
-- Prototipado de asistentes conversacionales en ingles: con 27,3B parametros y licencia Apache-2.0, sirve para construir demos internas de dialogo multi-turno siempre que se anada una capa de moderacion externa.
-- Pruebas de decodificacion especulativa: la presencia de la cabeza MTP permite experimentar con tecnicas de prediccion multi-token en el fork de llama.cpp, aunque el autor advierte que esa cabeza no ha sido probada.
-- Analisis de robustez y seguridad: util para construir conjuntos de prueba de peticiones potencialmente daninas y medir la respuesta del modelo, como hizo el autor con 10 peticiones y 8 preguntas inofensivas.
+- Generación de texto creativo sin filtros editoriales: el modelo puede producir narrativa, diálogo y contenido largo en inglés sin las restricciones de rechazo de un modelo alineado, lo que encaja en flujos de escritura asistida donde el autor controla el filtrado final.
+- Investigación sobre abliteration y seguridad: sirve para estudiar cómo se comporta un modelo de 27B tras eliminar la dirección de rechazo, comparando sus respuestas con las del Arete-27B original y con Qwen3.8-27B.
+- Evaluación de cuantizaciones en hardware AMD: los ficheros ROCmFPX (8, 6 y 4 bits) permiten medir la pérdida de calidad (KL, coincidencia de top token) y el rendimiento de los kernels ROCmFP4-FAST en máquinas Strix Halo con 128 GB de memoria unificada.
+- Despliegue local en equipos con memoria unificada grande: el fichero Q4 de 19,3 GB y el Q6 de 22,5 GB caben en configuraciones consumer de gama alta o en mini-PC con GPU integrada, siempre que se use el fork ROCmFPX.
+- Generación de código y explicaciones técnicas en inglés: el modelo hereda las capacidades de Qwen3.8 en tareas de programación, aunque no se han publicado benchmarks específicos para esta variante.
+- Base para fine-tunes posteriores sin restricciones de rechazo: al estar en Apache-2.0 y sin alineamiento de seguridad, puede servir como punto de partida para ajustes orientados a dominios donde el modelo base rechazaría consultas legítimas (por ejemplo, análisis de seguridad ofensiva documentado).
+- Pruebas de robustez y red teaming: útil para generar respuestas a peticiones sensibles y evaluar la eficacia de capas de moderación externas antes de un despliegue.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor solo reporta metricas de fidelidad de cuantizacion (divergencia KL y coincidencia en el token superior), recogidas en la tabla siguiente.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. La model card incluye métricas de calidad de cuantización medidas con `llama-perplexity --kl-divergence`:
 
-| Archivo | Tamano | KL a BF16 | Mismo token superior |
+| Fichero | Tamano | KL a BF16 | Mismo top token |
 |---|---:|---:|---:|
-| Arete-27B-Uncensored-Q8_0_ROCMFPX | 28,3 GB | 0,00030 | 99,2% |
-| Arete-27B-Uncensored-Q6_0_ROCMFPX | 22,5 GB | 0,0021 | 97,6% |
-| Arete-27B-Uncensored-Q4_0_ROCMFP4_STRIX_O8 | 19,3 GB | 0,021 | 93,6% |
-| Stock Q8_0 (referencia) | 29,0 GB | 0,00038 | 99,1% |
-| Stock Q6_K (referencia) | 22,4 GB | 0,0024 | 97,9% |
-| Stock Q4_K_M (referencia) | 16,8 GB | 0,016 | 94,7% |
+| Arete-27B-Uncensored-Q8_0_ROCMFPX.gguf | 28,3 GB | 0,00030 | 99,2 % |
+| Arete-27B-Uncensored-Q6_0_ROCMFPX.gguf | 22,5 GB | 0,0021 | 97,6 % |
+| Arete-27B-Uncensored-Q4_0_ROCMFP4_STRIX_O8.gguf | 19,3 GB | 0,021 | 93,6 % |
+
+Comparación con cuantizaciones estándar medidas con el mismo método:
+
+| Fichero de referencia | Tamano | KL a BF16 | Mismo top token |
+|---|---:|---:|---:|
+| Stock Q8_0 | 29,0 GB | 0,00038 | 99,1 % |
+| Stock Q6_K | 22,4 GB | 0,0024 | 97,9 % |
+| Stock Q4_K_M | 16,8 GB | 0,016 | 94,7 % |
+
+Según el autor, el fichero ROCmFPX de 8 bits se acerca más al BF16 que un Q8_0 estándar y ocupa menos; a 6 bits, el ROCmFPX tiene menor KL por 0,1 GB más, mientras que el Q6_K estándar mantiene ligeramente más a menudo el mismo top token; a 4 bits, el Q4_K_M estándar es más pequeño y algo más fiel, mientras que el fichero Strix aprovecha los kernels FP4 rápidos del fork en AMD y mantiene la atención en 8 bits.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: al menos 28,3 GB para el archivo Q8_0, 22,5 GB para el Q6_0 y 19,3 GB para el Q4_0 Strix, sin contar el espacio para el contexto KV.
-- GPU recomendadas: el autor midio la fidelidad en una NVIDIA GB10; los archivos ROCmFPX estan orientados a hardware AMD, en particular APU Strix Halo con los kernels FP4 del fork. No se documentan pruebas en A100, H100 ni RTX 4090.
-- Cabe en GPU de consumo: el Q4_0 Strix (19,3 GB) puede caber en GPUs con 24 GB de VRAM (RTX 3090, RTX 4090) si el contexto es moderado; el Q8_0 (28,3 GB) queda fuera de las GPU de consumo de 24 GB.
-- Opciones de despliegue: exclusivamente el fork HarshaVardhan3002/ROCmFPX de llama.cpp compilado desde el 7 de noviembre de 2026 o posterior. llama.cpp stock, LM Studio, Ollama y versiones anteriores del fork no cargaran estos archivos.
-- Latencia y throughput: no disponibles. El autor indica que los archivos no han sido probados en hardware AMD y solicita a la comunidad que reporte velocidad y calidad.
+- VRAM/memoria estimada: 28,3 GB para Q8_0, 22,5 GB para Q6_0 y 19,3 GB para Q4_0 (tamaños de fichero; la memoria de inferencia añade overhead de contexto y KV cache).
+- GPU recomendadas: el autor orienta los ficheros a AMD Strix Halo (128 GB de memoria unificada) y menciona ROCm y Vulkan como backends; las mediciones de KL se hicieron en una NVIDIA GB10.
+- Compatibilidad consumer: el Q4 de 19,3 GB puede caber en GPUs consumer de 24 GB (RTX 4090, RTX 3090) y en equipos con memoria unificada amplia; el Q8 de 28,3 GB requiere 32 GB o más de memoria.
+- Opciones de despliegue: exclusivamente el fork HarshaVardhan3002/ROCmFPX de llama.cpp (compilado a partir del 7 de noviembre de 2026). llama.cpp estándar, LM Studio, Ollama y versiones antiguas del fork no cargan estos ficheros.
+- Latencia y throughput: no disponibles; el autor indica que los ficheros no se han probado aún en hardware AMD y pide reportes en la pestaña Community.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Arete-27B-Uncensored-ROCmFPX | ~27,3B | no disponible | Apache-2.0 | GGUF ROCmFPX en HF | Requiere fork de llama.cpp; sin probar en AMD |
-| NousResearch/Arete-27B | ~27,3B | no disponible | Apache-2.0 | Pesos originales en HF | Version alineada con valores, con rechazo activo |
-| SargeDev/Arete-27B-Uncensored | ~27,3B | no disponible | Apache-2.0 | Pesos originales en HF | Abliterado con OBLITERATUS, con cabeza MTP |
-| Cuantizaciones stock de llama.cpp (Q8_0, Q6_K, Q4_K_M) | ~27,3B | no disponible | Apache-2.0 | GGUF estandar | Compatibles con llama.cpp, LM Studio y Ollama; Q4_K_M mas fiel y pequeno que el Q4 ROCmFPX |
+| Arete-27B-Uncensored-ROCmFPX (este) | 27,3 B | no disponible | Apache-2.0 | GGUF ROCmFPX | Requiere fork ROCmFPX; sin seguridad; inglés |
+| SargeDev/Arete-27B-Uncensored (base) | 27,3 B | no disponible | Apache-2.0 | safetensors (presumible) | Pesos sin cuantizar; sin seguridad |
+| NousResearch/Arete-27B (original) | 27,3 B | no disponible | Apache-2.0 | safetensors (presumible) | Fine-tune alineado con valores de Qwen3.8-27B |
+| Qwen3.8-27B (base) | 27,3 B | no disponible | Apache-2.0 | safetensors | Modelo base de Qwen con alineamiento estándar |
+
+No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de entrenamiento de seguridad: la abliteracion elimina la direccion de rechazo, por lo que el modelo puede cumplir peticiones daninas, ilegales u ofensivas. El autor exige responsabilidad plena al usuario y desaconseja exponerlo a usuarios finales sin capas propias de seguridad y moderacion.
-- Riesgo de alucinacion: no se han publicado evaluaciones de veracidad; las unicas comprobaciones son preguntas aisladas de aritmetica y capitales.
-- Idiomas: solo ingles segun la model card; no hay evidencia de calidad en castellano ni en otros idiomas.
-- Contexto: la longitud de contexto no se documenta en la informacion disponible, lo que impide planificar cargas de trabajo de contexto largo.
-- Compatibilidad restringida: los archivos solo cargan con el fork ROCmFPX de llama.cpp posterior al 7 de noviembre de 2026; no funcionan en llama.cpp stock, LM Studio, Ollama ni builds antiguas del fork.
-- Sin validacion en AMD: el propio autor advierte que los archivos no se han probado en hardware AMD; las mediciones de KL se hicieron en una NVIDIA GB10 tras expandir a F16.
-- Cabeza MTP sin probar: los archivos incluyen la cabeza MTP de una capa, pero su funcionamiento no ha sido verificado.
-- Fidelidad en 4 bits inferior a la stock: el Q4_0 ROCmFP4_STRIX_O8 tiene mayor KL (0,021) y menor coincidencia (93,6%) que el Q4_K_M stock (0,016 y 94,7%), y ademas ocupa mas espacio (19,3 GB frente a 16,8 GB).
-- Pruebas de rechazo limitadas: el autor midio 1 rechazo de 10 peticiones daninas y 0 de 8 preguntas inofensivas, buscando frases de rechazo en los primeros 64 tokens; no es una medida de utilidad ni de precision.
-- Licencia Apache-2.0 permite uso comercial, pero la responsabilidad legal por el contenido generado recae integramente en el usuario.
-- Repositorio con 354 descargas y 0 likes en el momento de la consulta, lo que indica una validacion comunitaria practicamente nula.
+- Ausencia total de entrenamiento de seguridad: la abliteration elimina el rechazo, por lo que el modelo puede cumplir peticiones dañinas, poco éticas, ofensivas o ilegales. El autor exige capas de moderación propias antes de exponerlo a usuarios finales.
+- Riesgo de alucinación: no evaluado en la información disponible; es un riesgo inherente a los modelos de 27B sin benchmarks publicados para esta variante.
+- Contexto e idioma: solo inglés declarado; la longitud de contexto no se especifica en la model card y debe consultarse en la del modelo base Qwen3.8-27B.
+- Compatibilidad de despliegue muy restringida: los ficheros ROCmFPX solo cargan con el fork HarshaVardhan3002/ROCmFPX posterior al 7 de noviembre de 2026; esto rompe la portabilidad habitual de GGUF y dificulta el uso en LM Studio, Ollama o llama.cpp estándar.
+- Sin validación en AMD: el autor afirma explícitamente que los ficheros no se han probado en hardware AMD, que es precisamente el objetivo del formato.
+- Cabeza MTP no probada: los ficheros incluyen la cabeza de predicción multi-token de una capa, pero no se ha verificado su funcionamiento.
+- Pruebas de rechazo limitadas: la comprobación de rechazos se basa en buscar frases de rechazo en los primeros 64 tokens de 18 peticiones, lo que no mide utilidad ni precisión de las respuestas.
+- Licencia Apache-2.0: permite uso comercial, pero no exime del cumplimiento legal en la jurisdicción del usuario ni de las responsabilidades sobre el contenido generado.
+- Repositorio no oficial: no es un release oficial de Nous Research ni de Qwen; el crédito del modelo corresponde a Nous Research y al equipo de Qwen, y el de la abliteration a SargeDev.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/Harsha001/Arete-27B-Uncensored-ROCmFPX
-- Modelo base sin censura: https://huggingface.co/SargeDev/Arete-27B-Uncensored
-- Modelo original: https://huggingface.co/NousResearch/Arete-27B
+- Modelo base sin cuantizar: https://huggingface.co/SargeDev/Arete-27B-Uncensored
+- Modelo original de Nous Research: https://huggingface.co/NousResearch/Arete-27B
 - Fork de llama.cpp requerido: https://github.com/HarshaVardhan3002/ROCmFPX
+- Cuantización destacada del mismo autor (DeepSeek-V4.1-Flash en Strix Halo): https://huggingface.co/Harsha001/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-StrixHalo-GGUF

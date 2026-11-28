@@ -5,7 +5,7 @@
   "author": "MansoorAhmadJan",
   "url": "https://huggingface.co/MansoorAhmadJan/Sentinel-Lite-Qwen3-1.7B-GGUF",
   "created_at": "2026-11-27T19:10:55.000Z",
-  "updated_at": "2026-11-27T19:26:34.000Z",
+  "updated_at": "2026-11-27T19:39:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,15 @@
   "languages": [],
   "tags": [
     "gguf",
+    "cybersecurity",
+    "incident-triage",
+    "qlora",
+    "unsloth",
+    "ollama",
+    "qwen3",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -26,7 +35,7 @@
   "storage_bytes": 1107409408,
   "storage_human": "1.1 GB",
   "context_length": 40960,
-  "base_model": null,
+  "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"
   ],

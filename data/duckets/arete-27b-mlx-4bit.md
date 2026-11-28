@@ -2,95 +2,82 @@
 
 ## Resumen
 
-Arete-27B-MLX-4bit es una conversión cuantizada a 4 bits del modelo NousResearch/Arete-27B, un ajuste fino por SFT orientado a alineación de valores sobre Qwen3.8-27B. La conversión la publica el usuario Duckets y está pensada específicamente para su ejecución en Apple Silicon mediante la librería MLX y el runtime de LM Studio. El modelo conserva la naturaleza multimodal del original (pipeline image-text-to-text) y sus 27.356.728.560 parámetros totales.
+Arete-27B-MLX-4bit es una conversión cuantizada a 4 bits en formato MLX del modelo NousResearch/Arete-27B, un ajuste fino de alineación de valores (SFT) sobre Qwen3.8-27B desarrollado por Nous Research. La conversión la publica el usuario Duckets y está pensada específicamente para su ejecución en Apple Silicon mediante MLX y LM Studio, lo que permite desplegar un modelo de 27.000 millones de parámetros en equipos Mac con memoria unificada.
 
-El problema que resuelve es práctico: permite ejecutar un modelo de 27B con capacidades de visión y razonamiento en hardware de consumo de Apple sin necesidad de GPU dedicada, reduciendo el peso en disco a unos 16,1 GB (4,695 bits por peso) frente al checkpoint BF16 original. Es relevante para desarrolladores que trabajan en macOS y quieren prototipar con un modelo multimodal alineado sin infraestructura de servidor.
+El modelo resuelve el problema de ejecutar un LLM multimodal de gran tamano en hardware de consumo Apple sin necesidad de GPUs dedicadas. Con 27.356.728.560 parámetros y una ventana de contexto de 256K tokens (según la verificación del autor), ofrece capacidades de razonamiento, matemáticas y visión (image-text-to-text) en un checkpoint de aproximadamente 15 GiB en disco.
 
-La ficha se centra en la conversión MLX 4-bit; los detalles de entrenamiento, dataset y benchmarks del modelo subyacente corresponden a NousResearch/Arete-27B y no se detallan en la información disponible.
+Es relevante porque combina una arquitectura moderna de Qwen3.8 con un ajuste de alineación de valores de Nous Research, empaquetado en 4 bits (4.695 bpw) para MLX. La licencia Apache-2.0 facilita su uso comercial, aunque la documentación disponible es escasa y proviene fundamentalmente de la model card del conversor.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text), basada en Qwen3.8-27B; detalles internos no disponibles |
-| Parámetros totales | 27.356.728.560 |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | 4-bit MLX (4,695 bpw) |
+| Arquitectura | Transformer multimodal (image-text-to-text), base Qwen3.8-27B; detalles internos no disponibles |
+| Parametros totales | 27.356.728.560 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 256K tokens (según verificación del autor en Splash 1.7.3) |
+| Tipos de cuantizacion | 4-bit MLX (4.695 bpw) |
 | Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (MLX), ~15-16,1 GB en disco |
+| Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base. Se sabe que NousResearch/Arete-27B es un ajuste fino por SFT (supervised fine-tuning) orientado a alineación de valores sobre Qwen3.8-27B, y que el modelo resultante es multimodal (procesa imagen y texto). No se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF o DPO.
+La información disponible indica que el modelo base es NousResearch/Arete-27B, descrito como un ajuste fino supervisado (SFT) de alineación de valores sobre Qwen3.8-27B. No se detallan en la información proporcionada los datos de entrenamiento (número de tokens, composición del dataset) ni si hubo etapas de RLHF o DPO adicionales. La arquitectura subyacente corresponde a Qwen3.8, un transformer multimodal capaz de procesar entradas de imagen y texto, aunque los detalles internos (número de capas, dimensiones, mecanismos de atención) no están disponibles.
 
-Esta publicación concreta es una conversión de pesos, no un reentrenamiento: se tomó el checkpoint BF16 de NousResearch/Arete-27B (revisión `108f0afbdcfaa1ceeda4a635004304dfff6d4da2`) y se convirtió con `mlx_vlm.convert` a 4 bits. No hay innovaciones arquitectónicas propias de esta conversión más allá de la cuantización MLX para Apple Silicon. Existe además un paquete alternativo del mismo modelo con el motor Splash (Duckets/Arete-27B-Splash), que reporta mayor velocidad.
+La conversión a MLX se realizó con `mlx_vlm.convert` a partir del checkpoint BF16 de origen (revisión `108f0afbdcfaa1ceeda4a635004304dfff6d4da2`), produciendo un checkpoint de 4 bits a 4.695 bits por peso. El autor indica que el checkpoint fue reconstruido desde el maestro BF16 y reverificado el 2026-11-27. No se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal más allá de las propias de la arquitectura Qwen3.8.
 
 ## Capacidades
 
 - Generación de texto conversacional en inglés.
-- Razonamiento aritmético básico (verificado en la model card: 17 × 23 = 391, √169 = 13).
-- Comprensión de imágenes (image-text-to-text): identificó correctamente el color de una imagen de color sólido.
-- Conversación multi-turno (tag conversational).
-- Integración con LM Studio y con mlx-vlm.
-- Soporte de tool calling: no disponible en la información proporcionada.
-- Capacidades de agente o multi-step reasoning: no disponible.
-- Multilingüismo: limitado a inglés según los metadatos.
-- Modo thinking, audio u otras capacidades especiales: no disponible.
+- Razonamiento aritmético y matemático básico (verificado por el autor: 17 × 23 = 391, √169 = 13).
+- Comprensión de imágenes (image-text-to-text): identificación de imágenes de color sólido verificada ("red").
+- Procesamiento de contexto largo: soporte de hasta 256K tokens según la verificación del autor.
+- Integración con LM Studio y mlx-vlm para inferencia en Apple Silicon.
+- Capacidades de tool calling y function calling: no disponibles en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
+- Capacidades multilingües: limitadas al inglés según la etiqueta de idioma.
 
 ## Casos de uso
 
-- Prototipado local en macOS: cargar el modelo en LM Studio (identificado como `arete-27b-mlx`) para experimentar con un modelo multimodal de 27B sin GPU dedicada, aprovechando el runtime MLX en Apple Silicon.
-- Asistentes conversacionales en inglés: desplegar un chatbot multi-turno en local para pruebas de alineación de valores, dado que el modelo base es un SFT orientado a ese fin.
-- Análisis de imágenes sencillas: tareas de descripción o clasificación visual básica (por ejemplo, identificar colores o contenidos evidentes) integradas en flujos de trabajo locales.
-- Verificación de razonamiento aritmético: usar el modelo para comprobaciones rápidas de cálculo elemental en entornos sin conexión.
-- Evaluación comparativa de cuantizaciones: comparar esta versión 4-bit MLX con la versión Splash o con el BF16 original para medir el impacto de la cuantización en calidad y velocidad.
-- Desarrollo de aplicaciones offline en Apple Silicon: integrar el modelo vía mlx-vlm en herramientas de escritorio que requieran inferencia local sin enviar datos a la nube.
+- Asistente conversacional local en Mac: el modelo puede gestionar conversaciones multi-turno en inglés ejecutándose íntegramente en Apple Silicon con MLX, sin depender de la nube, gracias a su formato de 4 bits y ~15 GiB en disco.
+- Análisis de documentos largos: con una ventana de 256K tokens, es adecuado para resumir o extraer información de contratos, informes o transcripciones extensas en una sola pasada.
+- Procesamiento de imágenes con descripción textual: al ser image-text-to-text, puede emplearse para tareas de captioning, clasificación visual simple o respuesta a preguntas sobre imágenes en pipelines locales.
+- Prototipado de investigación en alineación de valores: al ser un SFT de alineación de Nous Research, sirve para estudiar el comportamiento de modelos alineados en un entorno de escritorio reproducible.
+- Desarrollo de aplicaciones offline en macOS: integrable vía LM Studio o mlx-vlm en herramientas de escritorio que requieran privacidad de datos y no puedan usar APIs externas.
+- Evaluación de razonamiento matemático: útil como banco de pruebas para comparar la calidad de respuestas aritméticas en cuantización 4-bit frente al checkpoint BF16 original.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de rendimiento reportados son pruebas de humo del autor:
+No se han publicado resultados de benchmarks en la información disponible.
 
-| Prueba | Resultado |
-|---|---|
-| Razonamiento (17 × 23) | 391 (correcto) |
-| Razonamiento (√169) | 13 (correcto) |
-| Visión (imagen de color sólido) | identificado "red" (correcto) |
-| Velocidad de decodificación (MLX, single stream) | 31,2 tok/s en M5 Max (128 GB), prompt ~60 tokens, temp 0 |
-| Velocidad con motor Splash (referencia) | 104,5 tok/s en LM Studio (paquete separado) |
+El autor sí reporta una medición de rendimiento de inferencia: aproximadamente 114 tok/s de decodificación a contexto completo de 256K en un Apple M5 Max con 128 GB de memoria unificada, ejecutando el checkpoint idéntico en el motor Splash 1.7.3.
 
 ## Requisitos de hardware
 
-- VRAM/unified memory estimada: el repo ocupa 16,1 GB; se necesita al menos esa cantidad de memoria unificada libre, con margen para el contexto y el runtime (en la prueba se usó un equipo de 128 GB).
-- GPU recomendadas: Apple Silicon (el autor verificó en M5 Max de 128 GB). No está pensado para GPU NVIDIA/AMD.
-- ¿Cabe en GPU de consumo? Sí, en equipos Apple Silicon con memoria unificada suficiente (orientativamente 24 GB o más, aunque no se confirma oficialmente un mínimo).
-- Opciones de despliegue: MLX (`mlx_vlm`), LM Studio (runtime MLX), y el paquete alternativo con motor Splash.
-- Latencia y throughput: 31,2 tok/s de decodificación en single stream en M5 Max con MLX; 104,5 tok/s con el motor Splash según el autor.
+- VRAM/memoria unificada estimada: ~15 GiB en disco para el checkpoint 4-bit; se recomienda al menos 32 GB de memoria unificada para cargar el modelo con margen, y más para contextos largos.
+- GPU recomendadas: Apple Silicon (M-series) con memoria unificada; verificado en M5 Max de 128 GB.
+- Compatibilidad con GPU de consumo: no está pensado para GPUs NVIDIA/AMD; el formato MLX es específico de Apple Silicon. No se indica compatibilidad con RTX 4090 u otras.
+- Opciones de despliegue: MLX (`mlx_vlm`), LM Studio, motor Splash (paquete Duckets/Arete-27B-Splash).
+- Latencia y throughput: ~114 tok/s de decodificación a 256K de contexto en M5 Max 128 GB (dato del autor).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Arete-27B-MLX-4bit (esta ficha) | 27,36B | no disponible | 4-bit MLX | Apache-2.0 | Hugging Face (483 descargas) |
-| NousResearch/Arete-27B | no disponible (base) | no disponible | BF16 | Apache-2.0 (según fuente) | Hugging Face |
-| Duckets/Arete-27B-Splash | mismo modelo base | no disponible | paquete Splash | Apache-2.0 | Hugging Face |
-
-No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoría en la información proporcionada.
+No disponible. La información proporcionada no incluye datos de benchmarks ni comparaciones con otros modelos de la misma categoría, por lo que no es posible establecer una comparativa rigurosa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo inglés según los metadatos; no se garantiza un rendimiento adecuado en castellano.
-- Contexto: la longitud de contexto no está documentada en la información disponible; conviene verificarla antes de usos con documentos largos.
-- Alucinación: no hay datos publicados sobre tasas de alucinación; las pruebas de humo son mínimas (una operación aritmética y una imagen de color sólido).
-- Sesgos: no se documentan sesgos conocidos; al ser un SFT de alineación de valores, el comportamiento puede estar condicionado por las preferencias del ajuste.
-- Licencia: Apache-2.0 permite uso comercial, pero conviene revisar los términos del modelo base (NousResearch/Arete-27B) y de Qwen3.8-27B.
-- Plataforma: exclusivo para Apple Silicon vía MLX; no es portable a CUDA sin reconversión.
-- Madurez: 0 likes y 483 descargas; conversión reciente (noviembre de 2026) y escasamente validada por la comunidad.
-- Cuantización: la pérdida de calidad respecto al BF16 no está medida ni documentada.
+- Idioma: el modelo está etiquetado únicamente para inglés; el rendimiento en castellano no está verificado.
+- Sesgos: no se documentan análisis de sesgos en la información disponible.
+- Alucinación: no se han publicado evaluaciones de fiabilidad o tasa de alucinación; como todo LLM, existe riesgo, especialmente en contextos largos.
+- Licencia: Apache-2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base NousResearch/Arete-27B y de Qwen3.8.
+- Cuantización: el paso a 4 bits (4.695 bpw) puede degradar ligeramente la precisión frente al checkpoint BF16; no se han publicado comparativas formales de calidad.
+- Plataforma: el formato MLX limita su uso a Apple Silicon; no es portable a CUDA sin reconversión.
+- LM Studio: el autor advierte de un problema de visibilidad del repositorio en el catálogo de LM Studio que requiere renombrar la carpeta descargada.
+- Documentación escasa: la model card no detalla datos de entrenamiento, arquitectura interna ni evaluaciones formales.
 
 ## Enlaces
 
-- Hugging Face (esta conversión): https://huggingface.co/Duckets/Arete-27B-MLX-4bit
+- Hugging Face: https://huggingface.co/Duckets/Arete-27B-MLX-4bit
 - Modelo base: https://huggingface.co/NousResearch/Arete-27B
-- Paquete con motor Splash: https://huggingface.co/Duckets/Arete-27B-Splash
+- Paquete Splash del mismo modelo: https://huggingface.co/Duckets/Arete-27B-Splash

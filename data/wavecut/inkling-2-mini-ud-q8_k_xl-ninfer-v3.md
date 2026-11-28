@@ -2,51 +2,51 @@
 
 ## Resumen
 
-Inkling 2 Mini es un modelo de mezcla de expertos (MoE) con arquitectura de transformer con bucles (looped transformer) desarrollado por Thinking Machines. Cuenta con 26.400 millones de parametros totales y 3.400 millones activos por token, y combina capacidades de texto, razonamiento, tool calling y vision en un unico modelo. Su particularidad arquitectonica es que 24 capas almacenadas se ejecutan como 48 visitas: un preludio de 6 capas, un nucleo de 12 capas que se reutiliza tres veces con los mismos pesos y una coda de 6 capas.
+Inkling-2-Mini-UD-Q8_K_XL-NInfer-v3 es un artefacto de cuantización y empaquetado del modelo Inkling 2 Mini de Thinking Machines, preparado por el usuario WaveCut para el motor de inferencia NInfer (rama `master` de `iamwavecut/ninfer-all`). El modelo base es un transformer con bucles (looped transformer) de arquitectura mixta de expertos (MoE) con 26.400 millones de parámetros totales y 3.400 millones activos por token, e incluye una torre de visión tipo ViT y dos drafters de decodificación especulativa (DSpark y DFlash2).
 
-El artefacto que nos ocupa, publicado por WaveCut, es una conversion al formato `.ninfer` para el motor de inferencia NInfer (rama `master` de `iamwavecut/ninfer-all`). Parte del GGUF UD-Q8_K_XL de Unsloth, que mantiene BF16 en casi toda la red salvo los expertos enrutados de las capas 0-19, cuantizados en NVFP4. La conversion no recuantiza las matrices: conserva los bloques ggml o las palabras BF16 byte a byte y el motor los multiplica in situ. Solo el drafter DFlash2 de incoai se cuantiza a Q8_G32.
+El artefacto parte del GGUF UD-Q8_K_XL de Unsloth, la cuantización más grande de su catálogo y referencia de sus mediciones KL: BF16 en todas las matrices excepto los expertos enrutados de las capas 0-19, que van en NVFP4. La conversión no recuantiza el modelo: conserva los bloques ggml o las palabras BF16 byte a byte, salvo los expertos enrutados de las capas 20-23, cuyos valores BF16 se almacenan como filas MXFP8 (códigos E4M3 con una escala E8M0 por cada 32 valores) que reproducen cada valor de forma exacta.
 
-El resultado es un unico fichero de 24.421.141.504 bytes (22,74 GiB) que empaqueta el modelo completo, la torre de vision, dos drafters de decodificacion especulativa (DSpark y DFlash2), el tokenizador y la plantilla de chat. Es relevante porque permite ejecutar en un solo artefacto un modelo multimodal con razonamiento, tool calling estructurado y decodificacion especulativa, aunque queda atado a una linea de releases muy concreta del motor NInfer.
+El resultado es un único fichero `.ninfer` de 20.471.680.000 bytes (19,07 GiB) con 1.246 tensores, pensado para ejecutarse con NInfer en modo multimodal (image-text-to-text), con soporte de tool calling, razonamiento en bloques propios, salida estructurada y decodificación especulativa. La licencia es Apache 2.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Looped transformer MoE con atencion sin rotacion y torre de vision ViT |
-| Parametros totales | 26.400 millones (26,4B) |
-| Parametros activos | 3.400 millones por token (8 de 128 expertos enrutados) |
-| Longitud de contexto | No disponible de forma explicita; la atencion usa ventana de 1.024 posiciones en la mayoria de capas y global en las capas 5, 11, 17 y 23; la torre de vision admite hasta 4.096 posiciones por imagen |
-| Tipos de cuantizacion | UD-Q8_K_XL (BF16 general, NVFP4 en expertos de capas 0-19), Q8_0 en torre de vision y DSpark, Q8_G32 en proyecciones de DFlash2, FP32 en routers y normas |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer con bucles (looped transformer) y mezcla de expertos (MoE); 24 capas almacenadas ejecutadas como 48 visitas (preludio 0-5, núcleo 6-17 tres veces, coda 18-23); torre de visión ViT |
+| Parametros totales | 26,4 mil millones |
+| Parametros activos | 3,4 mil millones por token |
+| Longitud de contexto | No disponible de forma explícita; la atención usa una tabla aprendida de 1.024 distancias y las capas 5, 11, 17 y 23 atienden sobre todas las posiciones, el resto sobre 1.024 |
+| Tipos de cuantizacion | UD-Q8_K_XL (BF16 general, NVFP4 en expertos enrutados de capas 0-19); en este artefacto: MXFP8 en expertos de capas 20-23, Q8_0 en torre de visión y drafter DSpark, Q8_G32 en proyecciones del drafter DFlash2, FP32 en routers, convoluciones, normas y controladores |
+| Idiomas soportados | No disponibles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `.ninfer` (contenedor propio del motor NInfer); GGUF de origen disponible en Unsloth |
+| Formato de pesos | `.ninfer` (formato propietario del motor NInfer); derivado de GGUF (UD-Q8_K_XL de Unsloth) y de safetensors BF16 (drafter DFlash2 de incoai) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con bucles: 24 capas almacenadas se ejecutan como 48 visitas. El preludio (capas 0-5) se ejecuta una vez, el nucleo (capas 6-17) se reutiliza tres veces con los mismos pesos y la coda (capas 18-23) cierra el calculo. Cada visita mantiene sus propias claves, valores e historiales de convolucion. La atencion usa 24 cabezas de consulta sobre 8 cabezas KV de dimension 128, sin rotacion posicional, con una tabla aprendida de 1.024 distancias y sinks de atencion; las capas 5, 11, 17 y 23 atienden sobre todas las posiciones y el resto sobre una ventana de 1.024.
+El modelo base Inkling 2 Mini emplea una arquitectura de transformer con bucles: 24 capas almacenadas se ejecutan como 48 visitas, donde el núcleo (capas 6-17) se recorre tres veces con los mismos pesos y cada visita mantiene sus propias claves, valores e historiales de convolución. La atención usa 24 cabezas de consulta sobre 8 cabezas KV de dimensión 128, sin rotación posicional, con una tabla aprendida de 1.024 distancias y mecanismo de sinks; cuatro capas (5, 11, 17 y 23) atienden sobre todas las posiciones y el resto sobre una ventana de 1.024. La capa MoE contiene 128 expertos enrutados con 8 activos por token, puntuaciones sigmoid con sesgo de selección, activación SiTU sobre [gate; up] de anchura 1152 y sin experto compartido.
 
-La capa MoE tiene 128 expertos enrutados, selecciona 8 por token con puntuaciones sigmoideas mas un sesgo de seleccion, aplica SiTU sobre la concatenacion [gate; up] de anchura 1.152 y no usa experto compartido. La cabeza de salida esta desligada de la tabla de tokens (201.024 filas, 200.058 puntuadas, soft cap de 30). La torre de vision es un ViT con fila de clase, filas de posicion redimensionadas, cabezas con rotacion 2D, fusion 2x2 y proyector de dos capas. No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
+La conversión a NInfer preserva la representación original: las matrices mantienen los bloques ggml o las palabras BF16 byte a byte, salvo los expertos enrutados de las capas 20-23, que se almacenan como filas MXFP8 que reproducen exactamente cada valor BF16. El artefacto incluye la torre de visión en Q8_0 (procedente del `mmproj-Inkling-2-Mini-Q8_0.gguf` de ggml-org), el drafter DSpark en Q8_0 (de Unsloth) y el drafter DFlash2 con proyecciones Q8_G32 y el resto en BF16 (de incoai). No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni las fases de RLHF o DPO del modelo base.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento multi-paso, con bloques de razonamiento propios separados de la respuesta.
-- Tool calling y function calling: los bloques JSON de llamada a herramienta se devuelven como tool calls en formato OpenAI, con argumentos estrictos.
-- Salida estructurada y decisiones tipadas, ademas de reranking.
-- Vision: procesamiento de imagenes mediante la torre ViT incluida en el artefacto (pipeline image-text-to-text).
-- Decodificacion especulativa con dos drafters: DSpark (por defecto con una peticion en curso) y DFlash2 (`--spec dflash2`), o por busqueda en contexto.
-- Concurrencia de una a ocho peticiones con reutilizacion de prefijo de prompt.
-- Gestion de expertos enrutados en GPU, en memoria de host fijada o leidos directamente del fichero.
-- Capacidades multilingues: no disponible.
+- Generación de texto y razonamiento en bloques de pensamiento propios del modelo.
+- Procesamiento de imágenes a texto mediante torre de visión ViT con hasta 4.096 posiciones por imagen, fusión 2x2 y proyector de dos capas.
+- Tool calling: los bloques JSON de llamada a herramientas se devuelven como llamadas de herramienta en formato OpenAI, con argumentos estrictos y salida estructurada.
+- Decisiones tipadas y reranking.
+- Decodificación especulativa con el drafter DSpark (activo por defecto con una sola petición) o con el drafter DFlash2 (`--spec dflash2`), además de por búsqueda en contexto.
+- Reutilización de prefijo de prompt y hasta ocho peticiones concurrentes.
+- Ejecución de expertos enrutados en GPU, en memoria de host fijada (pinned) o leídos directamente del fichero.
+- Capacidades multilingües: no disponibles.
 
 ## Casos de uso
 
-- Atencion al cliente automatizada: el modelo puede mantener conversaciones multi-turno con tool calling para consultar sistemas internos (pedidos, estado de cuenta) y devolver respuestas estructuradas, con reutilizacion de prefijo para abaratar el coste de prompts largos repetidos.
-- Asistentes de codigo en produccion: la salida estructurada y los argumentos estrictos de herramientas permiten integrarlo en pipelines de CI/CD para generar parches, invocar linters o consultar repositorios mediante function calling.
-- Analisis de documentos con imagenes: al combinar torre de vision y razonamiento de texto, sirve para extraer datos de capturas, facturas o diagramas y devolver JSON validado.
-- Agentes autonomos de varios pasos: el modo de razonamiento en bloques separados y las decisiones tipadas facilitan orquestar tareas con planificacion intermedia auditable.
-- Reranking y clasificacion en buscadores internos: la capacidad de reranking y de decisiones tipadas permite puntuar candidatos y filtrar resultados antes de mostrarlos.
-- Despliegue en servidor con GPU unica: el fichero de 22,74 GiB y los expertos leibles desde disco o memoria de host permiten servir el modelo en una sola GPU de 24 GB o en configuraciones con offload parcial, manteniendo la decodificacion especulativa para reducir latencia.
-- Procesamiento por lotes de imagenes y texto: con hasta ocho peticiones concurrentes y reutilizacion de prefijo, es adecuado para tareas de extraccion masiva donde muchas peticiones comparten un mismo prompt de sistema.
+- Asistencia multimodal en atención al cliente: el modelo puede recibir capturas de pantalla o fotografías junto con texto y responder en conversaciones multi-turno, aprovechando la torre de visión y la reutilización de prefijo para mantener contextos largos entre turnos.
+- Automatización de tareas con herramientas: gracias a la devolución de bloques JSON como llamadas de herramienta en formato OpenAI, se puede integrar en orquestadores de agentes que encadenen búsquedas, consultas a API y escritura de ficheros con argumentos validados.
+- Extracción de datos estructurados de documentos con imagen: la combinación de visión y salida estructurada permite convertir facturas, formularios o tablas escaneadas en JSON tipado.
+- Reranking y clasificación en pipelines de recuperación: las capacidades de decisión tipada y reranking permiten puntuar candidatos en un sistema RAG sin un modelo adicional.
+- Despliegue en servidores con VRAM limitada: con 3,4 mil millones de parámetros activos por token y la opción de mantener los expertos en memoria de host fijada o leerlos del fichero, el modelo puede servirse en GPUs de gama alta para consumidor con cuantización de 8 bits.
+- Razonamiento multi-paso en entornos de desarrollo: el modo de razonamiento en bloques propios y la decodificación especulativa con DSpark o DFlash2 reducen la latencia en tareas de análisis de código y planificación.
+- Procesamiento por lotes con concurrencia: el soporte de hasta ocho peticiones concurrentes con reutilización de prefijo lo hace adecuado para servicios de inferencia con prompts de sistema compartidos.
 
 ## Benchmarks y rendimiento
 
@@ -54,39 +54,42 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el artefacto pesa 22,74 GiB; con overhead de contexto y buffers de atencion, se recomienda un minimo de 24 GB de VRAM para carga completa en GPU, o menos si se descargan expertos a memoria de host o se leen del fichero.
-- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para carga ajustada; RTX 3090 (24 GB) como opcion consumer.
-- Cabe en GPU consumer: si, en RTX 4090 o RTX 3090 con 24 GB, con margen limitado y posible necesidad de offload de expertos.
-- Opciones de despliegue: exclusivamente el motor NInfer (rama `master` de `iamwavecut/ninfer-all`), release `2026-11-21.4` o posterior para el modelo base y `2026-11-24.7` o posterior para el drafter DFlash2. Las builds estandar de NInfer rechazan este fichero; llama.cpp, vLLM, TGI u Ollama no lo soportan en este formato (para esos motores habria que usar el GGUF de Unsloth).
-- Latencia y throughput: no disponibles; la decodificacion especulativa con DSpark o DFlash2 reduce el numero de pasos del modelo objetivo, pero no se publican cifras.
+- VRAM estimada para inferencia: el fichero `.ninfer` ocupa 19,07 GiB; con overhead de contexto y estados de las visitas del transformer con bucles, se recomienda al menos 24 GB de VRAM si los expertos se mantienen en GPU, o menos si se descargan a memoria de host fijada o se leen del fichero.
+- GPU recomendadas: A100 (40/80 GB), H100, RTX 4090 (24 GB) para el modo con expertos en GPU; GPUs con 16 GB o menos pueden funcionar con expertos en host o leídos del fichero, a costa de latencia.
+- Cabe en GPU de consumidor: sí, en RTX 4090 (24 GB) y previsiblemente en GPUs de 24 GB o más; en 16 GB requiere descarga parcial de expertos.
+- Opciones de despliegue: exclusivamente el motor NInfer (rama `master` de `iamwavecut/ninfer-all`), en versiones posteriores a `2026-11-25.3`; las compilaciones anteriores fallan con `unknown tensor format: mxfp8`. No es compatible con llama.cpp, vLLM, Ollama ni TGI.
+- Latencia y throughput: no disponibles; la decodificación especulativa con DSpark o DFlash2 está pensada para reducir la latencia de generación.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros totales / activos | Contexto | Licencia | Formato y disponibilidad |
+| Modelo | Parametros totales / activos | Contexto | Licencia | Formato y motores |
 |---|---|---|---|---|
-| Inkling 2 Mini (este artefacto NInfer) | 26,4B / 3,4B | No disponible (ventana de 1.024 en la mayoria de capas) | Apache 2.0 | `.ninfer`, solo motor NInfer |
-| Inkling 2 Mini (GGUF de Unsloth) | 26,4B / 3,4B | No disponible | Apache 2.0 | GGUF, compatible con llama.cpp y derivados |
-| Inkling 2 Mini (pesos originales de Thinking Machines) | 26,4B / 3,4B | No disponible | Apache 2.0 | safetensors, ecosistema transformers |
-
-No se dispone de datos de rendimiento comparado con otros modelos de la misma categoria en la informacion proporcionada.
+| Inkling-2-Mini-UD-Q8_K_XL-NInfer-v3 | 26,4 B / 3,4 B | No disponible (ventana de atención de 1.024 en la mayoría de capas) | Apache 2.0 | `.ninfer`, solo NInfer |
+| Inkling-2-Mini (base, thinkingmachines) | 26,4 B / 3,4 B | No disponible | Apache 2.0 | safetensors, ecosistema Hugging Face |
+| Inkling-2-Mini-UD-Q8_K_XL (Unsloth GGUF) | 26,4 B / 3,4 B | No disponible | Apache 2.0 | GGUF, llama.cpp y derivados |
+| Inkling-2-Mini-DFlash2 (incoai) | 26,4 B / 3,4 B (drafter adicional) | No disponible | No disponible | safetensors BF16 |
 
 ## Limitaciones y advertencias
 
-- Dependencia estricta del motor: el fichero solo funciona con NInfer en releases muy concretas (`2026-11-21.4` o posterior para el modelo, `2026-11-24.7` o posterior para DFlash2); las builds estandar de NInfer lo rechazan.
-- Fragmentacion de revisiones: el fichero con el drafter en el layout anterior (23.685.230.592 bytes) queda en la revision `b62d6caf`, y la variante sin drafter (23.785.597.440 bytes) en `c1a1be59`; usar la revision equivocada produce un artefacto distinto al documentado.
-- Riesgo de alucinacion: no se documentan evaluaciones de fidelidad; como modelo generativo, puede producir contenido plausible pero incorrecto, especialmente en tool calling con argumentos complejos.
-- Idiomas: no se especifican los idiomas soportados, por lo que no hay garantias de calidad fuera del ingles.
-- Contexto: no se declara una longitud de contexto maxima; la ventana de atencion de 1.024 posiciones en la mayoria de capas limita la informacion local, aunque las capas globales compensan parcialmente.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las licencias de los artefactos derivados (GGUF de Unsloth, DFlash2 de incoai, mmproj de ggml-org) citados en la conversion.
-- Sesgos: no se documentan evaluaciones de sesgo en la informacion disponible.
-- Integridad: el fichero incluye SHA-256 (`86959198…`) y `SHA256SUMS`; conviene verificarlos antes de desplegar en produccion.
+- El artefacto solo funciona con NInfer en versiones posteriores a `2026-11-25.3`; compilaciones anteriores rechazan el fichero por el formato MXFP8 de los expertos.
+- No es compatible con llama.cpp, Ollama, vLLM ni TGI, lo que limita su portabilidad frente al GGUF original de Unsloth.
+- El rendimiento real depende de la implementación del motor NInfer, no del ecosistema estándar; no hay benchmarks publicados que permitan comparar su calidad con el modelo base.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones específicas de fidelidad para esta variante.
+- Sesgos conocidos: no disponibles; al no documentarse la composición del dataset de entrenamiento, no se puede evaluar el sesgo del modelo base.
+- Idiomas soportados no documentados; el rendimiento fuera del inglés no está verificado.
+- La licencia Apache 2.0 permite uso comercial, pero el artefacto incorpora componentes de terceros (torre de visión de ggml-org, drafter DSpark de Unsloth, drafter DFlash2 de incoai) cuyas condiciones conviene revisar en sus repositorios originales.
+- El tamaño del repositorio (92,4 GB) incluye varias revisiones del fichero; la descarga completa no es necesaria si se selecciona la revisión correcta.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/WaveCut/Inkling-2-Mini-UD-Q8_K_XL-NInfer-v3
-- Modelo base: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- GGUF de Unsloth: https://huggingface.co/unsloth/Inkling-2-Mini-GGUF
-- Drafter DFlash2 de incoai: https://huggingface.co/incoai/Inkling-2-Mini-DFlash2
-- Motor NInfer: https://github.com/Neroued/ninfer
-- Rama NInfer-all: https://github.com/iamwavecut/ninfer-all
-- Artefactos hermanos: [UD-IQ1_M](https://huggingface.co/WaveCut/Inkling-2-Mini-UD-IQ1_M-NInfer-v3), [UD-Q2_K_XL](https://huggingface.co/WaveCut/Inkling-2-Mini-UD-Q2_K_XL-NInfer-v3), [UD-Q3_K_XL](https://huggingface.co/WaveCut/Inkling-2-Mini-UD-Q3_K_XL-NInfer-v3), [UD-IQ4_XS](https://huggingface.co/WaveCut/Inkling-2-Mini-UD-IQ4_XS-NInfer-v3), [APEX-I MiniPlus V2.1](https://huggingface.co/WaveCut/Inkling-2-Mini-APEX-I-MiniPlus-V2.1-NInfer-v3)
+- [Hugging Face: WaveCut/Inkling-2-Mini-UD-Q8_K_XL-NInfer-v3](https://huggingface.co/WaveCut/Inkling-2-Mini-UD-Q8_K_XL-NInfer-v3)
+- [Modelo base: thinkingmachines/Inkling-2-Mini](https://huggingface.co/thinkingmachines/Inkling-2-Mini)
+- [GGUF de Unsloth: unsloth/Inkling-2-Mini-GGUF](https://huggingface.co/unsloth/Inkling-2-Mini-GGUF)
+- [Drafter DFlash2: incoai/Inkling-2-Mini-DFlash2](https://huggingface.co/incoai/Inkling-2-Mini-DFlash2)
+- [Motor NInfer: Neroued/ninfer](https://github.com/Neroued/ninfer)
+- [NInfer-all (rama master): iamwavecut/ninfer-all](https://github.com/iamwavecut/ninfer-all)
+- [Variante UD-IQ1_M](https://huggingface.co/WaveCut/Inkling-2-Mini-UD-IQ1_M-NInfer-v3)
+- [Variante UD-Q2_K_XL](https://huggingface.co/WaveCut/Inkling-2-Mini-UD-Q2_K_XL-NInfer-v3)
+- [Variante UD-Q3_K_XL](https://huggingface.co/WaveCut/Inkling-2-Mini-UD-Q3_K_XL-NInfer-v3)
+- [Variante UD-IQ4_XS](https://huggingface.co/WaveCut/Inkling-2-Mini-UD-IQ4_XS-NInfer-v3)
+- [Variante APEX-I MiniPlus V2.1](https://huggingface.co/WaveCut/Inkling-2-Mini-APEX-I-MiniPlus-V2.1-NInfer-v3)

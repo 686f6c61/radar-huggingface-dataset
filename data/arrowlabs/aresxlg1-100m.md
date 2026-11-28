@@ -2,55 +2,55 @@
 
 ## Resumen
 
-AresXLG1-100M es un modelo de lenguaje base de 100 millones de parámetros desarrollado por ArrowLabs, presentado como el miembro de menor tamaño de la familia Ares. Está diseñado como modelo preentrenado (*base*) orientado a texto general, con un énfasis explícito en aritmética y código, según los tags y datasets declarados por el autor. Su arquitectura y tokenizador están "fuertemente inspirados" en los modelos KLM más recientes, aunque el autor afirma superarlos en varias métricas.
+AresXLG1-100M es un modelo de lenguaje base de tipo SLM (small language model) desarrollado por ArrowLabs, con 98.975.308 parámetros reales según los pesos en safetensors. Se presenta como el miembro de 100 millones de parámetros de la familia Ares y está entrenado predominantemente con datos generales filtrados, con un énfasis declarado en matemáticas y código. Su arquitectura y tokenizador están "fuertemente inspirados" en los modelos KLM más recientes, según la model card, y el autor afirma superar a KLM 1.6 en varias métricas.
 
-El modelo se entrena sobre una mezcla de datos generales fuertemente filtrados (DCLM, Ultra-FineWeb-L3, PerfectPdfs, smollm-corpus, MegaMath-Web-Pro-Max, finemath, Wikipedia, fineweb-edu, entre otros) y, según la model card, también sobre datasets privados que incluyen datos destilados de modelos mayores. El entrenamiento declarado comprende 50 mil millones de tokens sobre 4 GPUs B300.
+El modelo se distribuye como checkpoint base, sin ajuste por instrucciones ni modo de razonamiento (thinking), por lo que no es apto para chat ni para seguir instrucciones directamente. Su relevancia radica en el nicho de modelos extremadamente pequeños (menos de 100M de parámetros) con licencia Apache 2.0, orientados a experimentación, ajuste fino posterior y despliegue en entornos con recursos muy limitados.
 
-Su relevancia radica en el segmento de modelos extremadamente pequeños (*tiny SLMs*), donde cada punto de benchmark cuenta y el coste de inferencia es mínimo. No obstante, se trata de un modelo base sin ajuste por instrucciones ni modo de razonamiento, por lo que no es apto para uso conversacional directo.
+La información pública disponible es escasa: la model card es breve, no detalla la longitud de contexto ni la composición exacta del dataset, y el repositorio tiene 180 descargas y 1 like en el momento de la consulta. Los benchmarks publicados son los que el propio autor incluye en la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer inspirado en los modelos KLM (detalles no disponibles) |
-| Parametros totales | 100M |
-| Parametros activos | no disponible (no se declara como MoE) |
+| Arquitectura | Transformer inspirado en los modelos KLM (detalle exacto no disponible) |
+| Parametros totales | 98.975.308 |
+| Parametros activos | no disponible (no es MoE según la información disponible) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (inglés) |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (custom_code; requiere `trust_remote_code`) |
+| Tipos de cuantizacion | no disponible (pesos publicados en safetensors; no se documentan GGUF ni otras cuantizaciones) |
+| Idiomas soportados | inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (repo de 0,4 GB, con código personalizado: custom_code) |
 
 ## Arquitectura y entrenamiento
 
-La model card indica que AresXLG1-100M emplea una arquitectura y un tokenizador "fuertemente inspirados en los modelos KLM más recientes", sin especificar la configuración exacta (número de capas, dimensión oculta, cabezas de atención, tipo de atención o activaciones). El repositorio incluye la etiqueta `custom_code`, lo que implica que la arquitectura requiere cargar código personalizado del repositorio mediante `trust_remote_code=True`. No se detalla si incorpora innovaciones como atención lineal, decodificación especulativa o mezcla de expertos.
+La model card indica que AresXLG1-100M emplea una arquitectura y un tokenizador "fuertemente inspirados en los últimos modelos KLM", y que está "BASADO EN KLM 1.6". No se especifica el tipo exacto de transformer (número de capas, dimensión oculta, cabezas de atención, tipo de atención ni normalización), ni la longitud de contexto nativa, ni el número total de tokens de entrenamiento.
 
-El entrenamiento se realizó sobre 4 GPUs B300 con un total de 50 mil millones de tokens. La composición del dataset combina corpus generales filtrados (DCLM-Ultra y DCLM-Ultra-1.1, Ultra-FineWeb-L3, fineweb-edu, smollm-corpus, PerfectPdfs, Wikipedia), corpus matemáticos (MegaMath-Web-Pro-Max, finemath, TinyMathStories) y, según el autor, datasets privados con datos destilados de modelos mayores. No se documenta el uso de RLHF, DPO ni ninguna fase de ajuste posterior al preentrenamiento.
+El entrenamiento combina datasets públicos filtrados: smollm-corpus, MegaMath-Web-Pro-Max, Wikipedia, FineWeb-Edu, PerfectPdfs (de ArrowLabs), Ultra-FineWeb-L3, DCLM-Ultra y DCLM-Ultra-1.1 (de ArrowLabs), FineMath y TinyMathStories generado con gpt-oss-20b. El autor menciona además el uso de "muchos datasets privados", incluidos datos destilados de modelos mayores y datasets de alta calidad no publicados. No se documenta si hubo RLHF, DPO u otras fases de alineación; de hecho, la advertencia final de la model card confirma que es un modelo base sin ajuste instructivo ni de razonamiento.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en inglés a partir de un prompt (modelo base, sin plantilla de instrucciones).
-- Aritmética y matemáticas básicas, reforzadas por el corpus de entrenamiento (ArithMark 3.0 = 60,60).
-- Generación de código y texto técnico, según los tags `code`, `coding` y `programming`.
-- Razonamiento de sentido común elemental medido en PIQA, HellaSwag y ARC.
-- Capacidades multilingües: limitadas al inglés (`language: en`).
-- Tool calling / function calling: no disponible (modelo base sin ajuste).
-- Soporte de agentes y razonamiento multi-paso: no disponible (el autor indica explícitamente que no puede pensar ni seguir instrucciones).
-- Modo thinking, visión o audio: no disponible.
+- Generación de texto autoregresiva en inglés como modelo base (continuación de texto, no diálogo).
+- Razonamiento aritmético y matemático básico, reflejado en la inclusión de ArithMark 3.0 entre sus benchmarks y en el uso de datasets matemáticos (MegaMath, FineMath, TinyMathStories).
+- Generación de código y texto de tipo programación, según las etiquetas del repositorio (code, coding, programming), aunque sin benchmarks de código publicados.
+- Conocimiento general y sentido común medido con PIQA, HellaSwag y ARC.
+- No soporta tool calling ni function calling de forma nativa (modelo base sin tuning).
+- No soporta agentes ni razonamiento multi-paso (sin modo thinking ni instruct).
+- Multilingüismo: limitado a inglés según el campo `language`.
+- No dispone de visión, audio ni otras modalidades.
 
 ## Casos de uso
 
-- Investigación sobre modelos de muy bajo coste: servir como baseline de 100M parámetros para estudiar curvas de escalado, tokenizadores y mezclas de datos en experimentos académicos.
-- Fine-tuning supervisado para tareas concretas: al ser un modelo base con licencia Apache 2.0, puede ajustarse para clasificación de texto, extracción de entidades o resumen de dominio específico con presupuestos de cómputo mínimos.
-- Generación de código asistida en entornos con recursos limitados: su énfasis en código permite experimentar con autocompletado o generación de fragmentos cortos en CPU o GPUs de gama baja.
-- Evaluación comparativa de SLMs: útil como referencia en leaderboards internos de modelos pequeños (Open SLM Int Index = 34,84) frente a alternativas como KLM 1.6 o Boris 2.
-- Prototipado educativo: ilustrar el comportamiento de un modelo preentrenado puro (sin alineación) en cursos y talleres sobre fundamentos de LLMs.
-- Componente en pipelines de destilación: emplear sus pesos como estudiante en procesos de destilación desde modelos mayores, dado su tamaño reducido y su entrenamiento previo con datos destilados.
-- Pruebas de estrés de infraestructura: validar pipelines de despliegue (TGI, vLLM, llama.cpp) con un modelo de 100M antes de escalar a modelos mayores.
+- Investigación sobre modelos pequeños: servir como punto de partida para estudiar dinámicas de entrenamiento, tokenizadores o recetas de datos en la escala de 100M de parámetros, gracias a su licencia Apache 2.0 y su tamaño reducido.
+- Ajuste fino supervisado (SFT) para tareas concretas: al ser un checkpoint base, es adecuado para fine-tuning con datasets propios de clasificación, extracción o generación acotada antes de desplegarlo.
+- Destilación y experimentos de alineación: su pequeño tamaño permite ejecutar ciclos completos de DPO o RLHF en una sola GPU consumer, usando AresXLG1-100M como alumno.
+- Evaluación de recetas de datos: los datasets empleados (DCLM-Ultra, Ultra-FineWeb-L3, PerfectPdfs) permiten reproducir y comparar el efecto de mezclas de datos en modelos de 100M.
+- Generación de texto de bajo coste en dispositivos: con menos de 100M de parámetros y pesos de 0,4 GB, puede ejecutarse en CPU o GPUs integradas para tareas de autocompletado o generación de plantillas en inglés.
+- Educación y docencia: útil para demostrar el pipeline completo de un LLM (tokenización, preentrenamiento, evaluación con PIQA/HellaSwag/ARC) sin necesidad de infraestructura grande.
+- Base para modelos especializados en matemáticas elementales: dado su rendimiento en ArithMark 3.0 (60,60), puede ajustarse para resolución de problemas aritméticos simples o generación de ejercicios.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card:
+Datos publicados en la model card del autor (no verificados de forma independiente):
 
 | Modelo | ArithMark 3.0 | PIQA | HellaSwag | ARC-Easy | ARC-Challenge | Open SLM Int Index |
 |---|---:|---:|---:|---:|---:|---:|
@@ -59,49 +59,50 @@ Datos publicados por el autor en la model card:
 | Boris 2 (144M) | 45,90 | **72,85** | 50,27 | 59,76 | 32,00 | 34,34 |
 | Boris 2 Think (144M) | 49,20 | 72,31 | 50,13 | **63,93** | **34,81** | **36,05** |
 
-AresXLG1-100M lidera en ArithMark 3.0 y en el índice agregado frente a KLM 1.6 y Boris 2, aunque queda por detrás de Boris 2 Think (144M, con ajuste de razonamiento) en el índice agregado y en ARC. No se han publicado resultados de MMLU, HumanEval ni GSM8K en la información disponible.
+No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 0,2 GB en fp16/bf16 (100M parámetros × 2 bytes) y alrededor de 0,1 GB en int8; en la práctica, cualquier GPU con 1 GB o más es suficiente.
-- GPU recomendadas: cualquier GPU moderna; funciona en RTX 3060/4060/4090, A100, H100, B300 y también en CPU.
-- Cabe holgadamente en GPUs de consumo, incluidas iGPU y dispositivos de borde (Raspberry Pi, Jetson) con cuantización.
-- Opciones de despliegue: Transformers con `trust_remote_code=True` (obligatorio por `custom_code`), text-generation-inference (etiqueta declarada), llama.cpp/Ollama si se generan pesos GGUF (no publicados en el repositorio), y vLLM si la arquitectura personalizada es compatible.
-- Latencia y throughput: no disponibles en la información proporcionada; por tamaño, se espera un throughput muy alto en GPU y viable en CPU, pero no hay cifras oficiales.
+- VRAM estimada para inferencia en fp32: aproximadamente 0,4 GB de pesos (98,98M de parámetros × 4 bytes), más overhead de activaciones y KV cache; en la práctica cabe en cualquier GPU con 1-2 GB libres.
+- En fp16/bf16: alrededor de 0,2 GB de pesos.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) e incluso GPUs integradas o CPU; no requiere A100 ni H100.
+- Cabe holgadamente en GPU consumer y en dispositivos de borde.
+- Opciones de despliegue: al usar `custom_code`, es necesario cargar con `trust_remote_code=True` en Transformers; es compatible con text-generation-inference según las etiquetas del repositorio. No se documentan versiones GGUF para llama.cpp u Ollama.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Open SLM Int Index | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| AresXLG1-100M | 100M | no disponible | 34,84 | Apache 2.0 | Hugging Face |
-| KLM 1.6 | no disponible | no disponible | 33,95 | no disponible | no disponible en la información |
-| Boris 2 | 144M | no disponible | 34,34 | no disponible | no disponible en la información |
-| Boris 2 Think | 144M | no disponible | 36,05 | no disponible | no disponible en la información |
+| Modelo | Parámetros | Contexto | Open SLM Int Index | Licencia | Formato |
+|---|---:|---|---:|---|---|
+| AresXLG1-100M | 98,98M | no disponible | 34,84 | Apache 2.0 | safetensors |
+| KLM 1.6 | no disponible | no disponible | 33,95 | no disponible | no disponible |
+| Boris 2 | 144M | no disponible | 34,34 | no disponible | no disponible |
+| Boris 2 Think | 144M | no disponible | 36,05 | no disponible | no disponible |
 
-AresXLG1-100M es el más pequeño de la comparativa y el que obtiene mejor ArithMark 3.0, aunque Boris 2 Think (con tuning de razonamiento) supera el índice agregado. La ventaja principal de AresXLG1-100M es su licencia Apache 2.0 explícita y su menor tamaño, que reduce costes de inferencia y fine-tuning.
+La comparativa se limita a los modelos incluidos por el autor en su model card; no se dispone de datos de contexto, licencia ni formato de pesos de las alternativas en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Es un modelo base: no sigue instrucciones, no mantiene conversaciones y no dispone de modo de razonamiento (el autor lo advierte explícitamente).
-- Solo entrenado en inglés; el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
-- Riesgo elevado de alucinación y de generación incoherente en secuencias largas, típico de modelos de 100M parámetros.
-- Sesgos heredados de los corpus web (DCLM, FineWeb, Wikipedia) sin filtrado de alineación posterior; no se documentan mitigaciones.
-- La longitud de contexto no está publicada, lo que dificulta planificar casos de uso con prompts largos.
-- Requiere `trust_remote_code=True` por el uso de `custom_code`, lo que implica ejecutar código del repositorio; conviene auditar dicho código antes de desplegarlo en producción.
-- El uso comercial está permitido por Apache 2.0, pero el autor menciona datasets privados no publicados, lo que limita la reproducibilidad y la auditoría de la procedencia de los datos.
-- No se han publicado pesos cuantizados (GGUF, AWQ, GPTQ); habría que generarlos.
-- El recuento de descargas y likes es prácticamente nulo, por lo que no existe validación comunitaria independiente de los benchmarks declarados.
+- Es un modelo base sin ajuste instructivo ni de razonamiento: no puede usarse para chat, seguir instrucciones ni modo thinking, tal como advierte explícitamente la model card.
+- Riesgo elevado de alucinación y de generación incoherente en tareas complejas, propio de un modelo de menos de 100M de parámetros.
+- Idiomas: solo inglés; no se garantiza un rendimiento aceptable en castellano u otros idiomas.
+- Longitud de contexto no documentada: no se puede planificar su uso en tareas de contexto largo sin verificación empírica.
+- Sesgos: no se documentan evaluaciones de sesgo, toxicidad ni seguridad; los datasets web filtrados pueden arrastrar sesgos de origen.
+- Los benchmarks son autoinformados por el autor, sin verificación independiente, y las métricas de la familia Boris 2 y KLM 1.6 provienen de la misma fuente.
+- Uso comercial permitido por la licencia Apache 2.0, pero sin garantías del autor; conviene auditar el modelo antes de producción.
+- Requiere `trust_remote_code=True` por el uso de código personalizado, lo que implica ejecutar código del repositorio; conviene revisarlo antes de desplegar.
+- El autor menciona datasets privados no publicados, lo que impide reproducir el entrenamiento por completo.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/ArrowLabs/AresXLG1-100M
+- Hugging Face: https://huggingface.co/ArrowLabs/AresXLG1-100M
 - Dataset smollm-corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset MegaMath-Web-Pro-Max: https://huggingface.co/datasets/OctoThinker/MegaMath-Web-Pro-Max
-- Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath
-- Dataset Ultra-FineWeb-L3: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3
 - Dataset Wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia
+- Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset PerfectPdfs: https://huggingface.co/datasets/ArrowLabs/PerfectPdfs
+- Dataset Ultra-FineWeb-L3: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3
 - Dataset DCLM-Ultra: https://huggingface.co/datasets/ArrowLabs/DCLM-Ultra
 - Dataset DCLM-Ultra-1.1: https://huggingface.co/datasets/ArrowLabs/DCLM-Ultra-1.1
+- Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath
 - Dataset TinyMathStories: https://huggingface.co/datasets/AlgoDriveAI/TinyMathStories_gpt-oss-20b

@@ -46,16 +46,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "gorse-io/larger_clap_music-GGUF · Hugging Face",
-      "url": "https://huggingface.co/gorse-io/larger_clap_music-GGUF",
-      "snippet": "GGUF conversions of laion/larger_clap_music, produced with gorse-io/clap.cpp. This music-focused CLAP model maps text and audio into a shared 512-dimensional, L2-normalized embedding space. It can be used for audio/text retrieval and zero-shot classification. Similarity is the dot product of ..."
-    },
-    {
-      "title": "GitHub - LAION-AI/clap2: CLAP2 and LAION-Audio-XL · GitHub",
-      "url": "https://github.com/LAION-AI/clap2/",
-      "snippet": "A Web-Scale Corpus and Scaling Studies for Contrastive Language‑Audio Pretraining LAION-Audio-XL is a corpus of 365M audio-text pairs (1.39M hours), selected from 1.48B audio samples of academic datasets, internet datasets, web collections, Common Crawl and YouTube. CLAP2 are contrastive audio-text models in five sizes (27M to 340M parameters) trained on it. This repository holds the data ..."
-    }
-  ]
+  "sources": []
 }

@@ -2,95 +2,93 @@
 
 ## Resumen
 
-`justusraw/Qwen3.5-4B-Parakeet-formatter` es un repositorio de modelo alojado en Hugging Face por el usuario `justusraw` del que, en el momento de redactar esta ficha, solo consta la licencia (apache-2.0). La model card esta practicamente vacia: no incluye descripcion, pipeline, idiomas, arquitectura, datos de entrenamiento ni formato de pesos. El repositorio acumula 0 descargas y 0 "me gusta", por lo que no hay evidencia de uso, validacion ni mantenimiento por parte de la comunidad.
+Qwen3.5-4B-Parakeet-formatter es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B, desarrollado por el usuario justusraw, especializado en la limpieza y formateo de transcripciones de dictado generadas por reconocimiento de voz (speech-to-text). No es un modelo de ASR: recibe el texto ya transcrito y lo normaliza, corrigiendo puntuacion y mayusculas, eliminando muletillas, normalizando numeros y convirtiendo enumeraciones habladas en listas con guiones. Esta pensado para integrarse localmente con MacParakeet y LM Studio.
 
-El identificador sugiere dos cosas que la documentacion no confirma: una base de la familia Qwen de aproximadamente 4.000 millones de parametros ("Qwen3.5-4B") y un proposito de formateo de la salida de un sistema de reconocimiento automatico del habla, presumiblemente NVIDIA Parakeet ("Parakeet-formatter"). Ambas deducciones deben tratarse como hipotesis: no existe un "Qwen3.5" publicado oficialmente por Alibaba y la model card no menciona ni Parakeet ni ASR en ningun momento.
+El modelo se distribuye unicamente en formato GGUF cuantizado a Q4_K_M (4 bits), con un tamano de archivo de 2,78 GB, lo que lo hace viable en equipos de consumo. Incluye una cabeza MTP (multi-token prediction) restaurada del modelo base para aceleracion en runtimes compatibles, y devuelve la salida como JSON estructurado con un campo `cleaned_text`.
 
-Su relevancia actual es muy limitada. Se incluye en el catalogo unicamente como referencia, y cualquier evaluacion practica exigiria descargar los pesos, inspeccionar el `config.json` y el tokenizer, y ejecutar pruebas propias antes de considerarlo para un entorno de produccion.
+Su relevancia es practica: cubre el hueco entre el reconocimiento de voz y el texto final utilizable, un paso que muchos flujos de dictado resuelven con heuristicas fragiles. El ajuste se construyo sobre 2.782 ejemplos originales mas 260 ejemplos dirigidos en ingles y aleman, con soporte para dictado mixto en ambos idiomas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el identificador sugiere una base transformer tipo Qwen, sin confirmar) |
-| Parametros totales | no disponible (el identificador indica 4B; no verificado) |
-| Parametros activos | no disponible (no se indica si es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se publican pesos GGUF ni GPTQ/AWQ) |
-| Idiomas soportados | no disponible |
-| Licencia | apache-2.0 |
-| Formato de pesos | no disponible |
+| Arquitectura | Transformer decoder-only (base Qwen3.5-4B) con cabeza MTP |
+| Parametros totales | 4.326.350.848 (4B aprox.) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 8.192 tokens (configuracion recomendada de uso) |
+| Tipos de cuantizacion | Q4_K_M (4 bits); otros tipos no disponibles |
+| Idiomas soportados | Ingles y aleman (incluido dictado mixto) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (2,78 GB) |
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no documenta arquitectura, numero de tokens de entrenamiento, composicion del dataset, ni si se aplicaron tecnicas de ajuste como SFT, RLHF o DPO. Tampoco se especifica si el modelo es un ajuste fino (fine-tune) sobre una base existente o un entrenamiento desde cero.
+El modelo parte de Qwen/Qwen3.5-4B, un transformer decoder-only de aproximadamente 4.326 millones de parametros, y se obtiene mediante un fine-tune LoRA fusionado (build "Dictation v3"). La cabeza MTP no se reentrena: se restaura desde el modelo base y requiere un runtime compatible para aprovechar la aceleracion por prediccion multi-token. La distribucion es exclusivamente GGUF Q4_K_M, orientada a inferencia local.
 
-Lo unico que puede deducirse del identificador es que, si el nombre es literal, se trataria de una base densa de unos 4.000 millones de parametros y de una especializacion en el formateo de texto procedente de transcripcion automatica. Esta deduccion no esta respaldada por ningun artefacto del repositorio y debe verificarse antes de cualquier uso.
+El entrenamiento se realizo sobre 2.782 ejemplos originales procedentes del historial personal de dictado del autor, transcripciones reales de Parakeet y ejemplos sinteticos. La continuacion v3 anadio 260 ejemplos dirigidos en ingles y aleman, cada uno replicado dos veces junto con los datos originales, cubriendo correcciones, negaciones, listas frente a prosa, numeros, unidades y texto mixto. Esta fase uso LoRA de rango 16 durante una epoca con learning rate 3e-5. Los datos personales de entrenamiento no se incluyen en el repositorio.
 
 ## Capacidades
 
-- No hay ninguna capacidad documentada en la informacion disponible.
-- No se declara soporte de tool calling ni de function calling.
-- No se declara soporte de agentes ni de razonamiento multi-paso.
-- No se declaran capacidades multilingues ni idiomas concretos.
-- No se declara ningun modo especial (thinking mode, vision, audio, decodificacion especulativa).
-- Por el nombre del repositorio, cabria esperar alguna capacidad de post-procesado de transcripciones ASR, pero esto es una hipotesis no verificada.
+- Limpieza de transcripciones de dictado: correccion de puntuacion, mayusculas, autocorrecciones y muletillas.
+- Normalizacion de numeros y unidades en el texto dictado.
+- Conversion de enumeraciones habladas en listas con guiones.
+- Preservacion del vocabulario y el significado originales del dictado.
+- Procesamiento de dictado mixto ingles/aleman en una misma transcripcion.
+- Salida estructurada en JSON con un unico campo de cadena `cleaned_text`.
+- Aceleracion mediante cabeza MTP (3 tokens de borrador) en runtimes compatibles.
+- Modo thinking desactivado en la configuracion recomendada (temperature 0.2).
 
 ## Casos de uso
 
-Los siguientes escenarios son hipoteticos y condicionales: se derivan del nombre del repositorio y de las funciones tipicas de un modelo de ~4B orientado a post-procesado de texto. No estan respaldados por documentacion, ejemplos ni evaluaciones publicadas del autor.
-
-- Post-procesado de transcripciones ASR: recibir la salida cruda de un motor como Parakeet o Whisper y devolver texto con puntuacion, mayusculas y separacion en parrafos. Requiere validar primero que el modelo hace realmente esta tarea.
-- Normalizacion de entidades en transcripciones: convertir cifras, fechas, horas y nombres propios a un formato canonico antes de indexar el texto en un buscador o en una base de datos.
-- Formateo de dialogos con multiples hablantes: reescribir la salida de ASR en un formato estructurado del tipo "Hablante 1: ...", partiendo de etiquetas de diarizacion generadas por otro componente.
-- Generacion de subtitulos: segmentar el texto en lineas ajustadas a un limite de caracteres por linea y a una tasa de lectura (CPS) compatible con SRT o WebVTT.
-- Preprocesado para RAG sobre audio: limpiar y estructurar transcripciones antes de trocearlas y generar embeddings, de modo que los fragmentos recuperados sean coherentes.
-- Generacion de actas de reunion: tomar la transcripcion completa y producir un resumen estructurado con acuerdos y tareas, siempre que el modelo tenga capacidad de resumen mas alla del formateo superficial.
-- Correccion en tiempo casi real: integrar el modelo en una tuberia de streaming que limpie y formatee fragmentos de transcripcion a medida que llegan, asumiendo que la latencia lo permita.
+- Dictado local en escritorio: integrado en MacParakeet o LM Studio, el modelo toma la transcripcion de ASR y devuelve texto limpio listo para pegar en un editor, con latencia mediana de 1,72 s en un Apple M2 Pro.
+- Notas de reunion bilingues: al soportar dictado mixto ingles/aleman, permite limpiar actas donde el hablante alterna idiomas sin perder terminos ni cambiar el significado.
+- Conversion de listas habladas: cuando el usuario dicta "primero X, segundo Y, tercero Z", el modelo lo transforma en una lista con guiones, util para listas de tareas o compras.
+- Normalizacion de cantidades y fechas: corrige numeros dictados como palabras y unidades, adecuado para partes de trabajo, recetas o registros de inventario.
+- Preprocesado en pipelines de voz a texto: actua como etapa intermedia entre el ASR y un sistema posterior (buscador, resumidor o base de datos) que requiere texto limpio y estructurado en JSON.
+- Automatizacion de correos dictados: limpia autocorrecciones y muletillas antes de enviar o insertar el texto en un cliente de correo, reduciendo la edicion manual posterior.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K, WER en tareas ASR ni de ningun otro conjunto de referencia, y tampoco se ofrecen comparaciones con modelos alternativos.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. El autor solo reporta mediciones de latencia del formateador:
+
+| Metrica (formateador en caliente) | Resultado |
+|---|---|
+| Latencia mediana | 1,72 s |
+| Percentil 95 | 3,59 s |
+| Peticiones por debajo de 2 s | 67 de 96 |
+| Casos de listas largas (benchmark separado) | 8,56 s |
+
+Las mediciones se realizaron en un Apple M2 Pro con 16 GB de RAM, usando el runtime llama.cpp 2.51.0 de LM Studio con MTP activado, repitiendo tres veces los mismos 32 clips reales de Parakeet. Solo cubren la API del formateador, sin reconocimiento de voz, carga del modelo ni pegado.
 
 ## Requisitos de hardware
 
-Las cifras de esta seccion son estimaciones basadas en el tamano de 4.000 millones de parametros que sugiere el nombre del modelo. No proceden de ninguna medicion publicada por el autor.
-
-| Precision | Peso aproximado de los pesos | VRAM total recomendada |
-|---|---|---|
-| FP16 / BF16 | ~8 GB | 12-16 GB |
-| INT8 | ~4 GB | 6-8 GB |
-| INT4 (Q4_K_M) | ~2,5 GB | 4-6 GB |
-
-- GPU de datacenter: una A100 de 40 GB o una H100 permitirian servir varias instancias en BF16 con margen para cache KV.
-- GPU de consumo: cabe en tarjetas de 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) en BF16, y en tarjetas de 6-8 GB si se cuantiza a INT4.
-- CPU: viable en cuantizacion INT4 con llama.cpp u Ollama, con throughput bajo.
-- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama o Transformers, siempre que el formato de pesos publicado sea compatible con alguna de ellas. El formato real es no disponible.
-- Latencia y throughput: no disponible. No se han publicado mediciones.
+- VRAM/RAM estimada: unos 2,8 GB para los pesos Q4_K_M, mas overhead del runtime; cabe holgadamente en 16 GB de RAM unificada (medido en M2 Pro).
+- GPU recomendadas: no disponibles; el autor solo valida el escenario en Apple Silicon (M2 Pro). En GPU discretas se puede ejecutar via llama.cpp o vLLM con soporte GGUF, pero no hay datos publicados.
+- GPU de consumo: el tamano de 2,78 GB permite ejecucion en tarjetas con 6-8 GB de VRAM, aunque no hay validacion publicada.
+- Opciones de despliegue: LM Studio (llama.cpp), llama.cpp, Ollama; MTP requiere runtime compatible.
+- Configuracion recomendada: contexto 8192 tokens, salida maxima 1536 tokens, thinking desactivado, temperature 0.2, 1 slot de prediccion concurrente, MTP con 3 tokens de borrador.
 
 ## Comparativa con modelos similares
 
-No es posible comparar el rendimiento de este modelo porque no existe ninguna evaluacion publicada. La tabla siguiente recoge unicamente datos de referencia de modelos de la misma categoria, obtenidos de su documentacion publica y no de la informacion proporcionada para este repositorio.
+No se dispone de datos de benchmarks ni de modelos comparables publicados en la informacion proporcionada. Como referencia estructural, el modelo base Qwen/Qwen3.5-4B comparte arquitectura y numero de parametros, pero no esta especializado en limpieza de dictado; la comparacion cuantitativa de rendimiento entre ambos no esta disponible.
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
-|---|---|---|---|---|---|
-| justusraw/Qwen3.5-4B-Parakeet-formatter | no disponible (~4B segun el nombre) | no disponible | Apache-2.0 | Hugging Face, 0 descargas | no disponible |
-| Qwen3-4B (referencia) | 4B densos | 32.768 tokens nativos, ampliable con YaRN | Apache-2.0 | Ampliamente desplegado | no comparable: faltan datos del modelo evaluado |
-| Llama-3.2-3B (referencia) | 3B densos | 128.000 tokens | Llama 3.2 Community License | Ampliamente desplegado | no comparable: faltan datos del modelo evaluado |
-| NVIDIA Parakeet TDT 0.6B v2 (referencia) | 0,6B | no aplica (modelo ASR) | CC-BY-4.0 | Hugging Face | No comparable: es un modelo ASR, no un modelo de lenguaje |
+| Modelo | Parametros | Contexto | Licencia | Formato |
+|---|---|---|---|---|
+| Qwen3.5-4B-Parakeet-formatter | 4B aprox. | 8192 (uso recomendado) | Apache 2.0 | GGUF Q4_K_M |
+| Qwen/Qwen3.5-4B (base) | 4B aprox. | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no se puede verificar que el modelo haga lo que su nombre sugiere.
-- Riesgo de alucinacion: desconocido, pero presente en cualquier modelo generativo de ~4B si finalmente se trata de uno.
-- Sesgos: no evaluados ni declarados por el autor.
-- Limitaciones de contexto e idioma: no disponibles. Si la base fuese Qwen, el sesgo hacia chino e ingles seria esperable, pero no esta confirmado.
-- Licencia: Apache-2.0, permisiva y apta para uso comercial, siempre que el repositorio sea efectivamente del autor y no una redistribucion de pesos de terceros con condiciones adicionales. Conviene revisar el origen de los pesos base.
-- Sin garantias de mantenimiento: 0 descargas, 0 interacciones, una unica revision y ninguna actualizacion posterior a la creacion.
-- La marca temporal del repositorio (2026-10-05) es posterior a la fecha de esta ficha, lo que apunta a un error en los metadatos o a un repositorio creado con fecha manipulada.
-- Antes de usar el modelo en produccion: descargar los pesos, revisar `config.json`, `tokenizer_config.json` y `generation_config.json`, y ejecutar una bateria propia de evaluacion con datos reales del dominio objetivo.
+- Correcciones habladas cortas como "Tuesday no Thursday" pueden interpretarse mal y alterar el significado; las senales explicitas como "I mean" funcionan mejor.
+- Riesgo de error en fechas, nombres, cantidades y negaciones; se recomienda revision humana en esos casos.
+- La evaluacion es pequena y personal: solo 2 de los 32 clips reales son en aleman, por lo que el rendimiento en ese idioma esta poco validado.
+- Los ejemplos sinteticos de validacion se usaron para seleccionar el checkpoint y no constituyen un conjunto de test independiente.
+- Solo se distribuye en GGUF Q4_K_M; no hay pesos en safetensors ni otras cuantizaciones en el repositorio.
+- La cabeza MTP requiere un runtime compatible; sin el, se pierde la aceleracion.
+- El modelo no realiza reconocimiento de voz; solo procesa texto ya transcrito.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias de precision en produccion.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/justusraw/Qwen3.5-4B-Parakeet-formatter
-- No se han encontrado papers, blogs, repositorios de codigo, demos ni datasets asociados a este modelo en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/justusraw/Qwen3.5-4B-Parakeet-formatter
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

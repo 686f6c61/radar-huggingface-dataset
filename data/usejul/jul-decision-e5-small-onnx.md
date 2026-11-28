@@ -2,104 +2,93 @@
 
 ## Resumen
 
-jul-decision-e5-small-onnx es la version ONNX del modelo usejul/jul-decision-e5-small, un clasificador de texto para zero-shot classification desarrollado por usejul como componente del proyecto jul. Se trata de un encoder tipo BERT derivado de la familia e5-small, exportado a formato ONNX y cuantizado para ejecucion en CPU: pesos de 8 bits y embeddings de 4 bits, con un peso total de 98 MB. Su proposito es resolver "decisiones" de clasificacion (asignar una etiqueta de un conjunto definido en tiempo de inferencia sin reentrenamiento) dentro del pipeline de jul, con un coste de ejecucion muy bajo.
+`jul-decision-e5-small-onnx` es la compilación en formato ONNX del modelo `usejul/jul-decision-e5-small`, desarrollado por el autor `usejul` como componente del proyecto [jul](https://github.com/usejul/jul). Se trata de un modelo BERT de pequeno tamano orientado a clasificacion zero-shot y a la generacion de embeddings para decisiones de enrutamiento o seleccion, empaquetado especificamente para ejecucion en CPU con pesos de 8 bits y embeddings de 4 bits, con un tamano de 98 MB por parte. El repositorio incluye los vectores en la raiz y un modelo de tipo cross en el subdirectorio `cross/`.
 
-La relevancia de esta ficha es acotada y conviene ser explicito: no es un modelo generativo ni un LLM. Es un clasificador compacto orientado a despliegue en CPU, con 23 ms por decision en un solo nucleo segun el autor, y una puntuacion de 0,613 en los dev sets de jul frente a 0,536 de una variante e5-small int8 de referencia. Eso lo situa en el nicho de clasificacion ligera y local, no en el de generacion, razonamiento o agentes.
+La relevancia de esta ficha radica en que el modelo esta optimizado para despliegues de bajos recursos, hasta el punto de que una de sus partes cabe en un paquete de AWS Lambda junto con la herramienta jul. Segun la model card, el modelo alcanza 0.609 en los conjuntos de desarrollo de jul para tareas zero-shot, frente a 0.536 de la variante e5-small de 8 bits, con latencias de 4 ms por texto para los vectores y de 4 a 7 ms por par si/no para el modelo cross, todo ello en una sola CPU.
 
-El repositorio es muy reciente (creado el 26 de septiembre de 2026 segun los metadatos de Hugging Face), acumula 0 descargas y 0 likes en el momento de redactar esta ficha, y su model card es minima: delega explicitamente los detalles de entrenamiento, resultados y licencia a la model card del modelo base. Por tanto, buena parte de las especificaciones habituales (parametros, contexto, composicion del dataset) no estan publicadas y se marcan como no disponibles.
+La licencia es Apache 2.0, lo que facilita su uso comercial, y los idiomas declarados son ingles, frances y multilingue. El repositorio tiene 0.3 GB y registra 187 descargas en el momento de la consulta, sin likes. No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto ni los detalles de entrenamiento mas alla de lo indicado en la model card.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder transformer tipo BERT (etiqueta `bert` del repositorio), derivado de e5-small; tarea de clasificacion (zero-shot-classification) |
-| Parametros totales | no disponible (el autor no lo publica; los 98 MB con pesos de 8 bits y embeddings de 4 bits apuntan a un orden de 100 millones de parametros, estimacion no confirmada) |
-| Parametros activos | no aplica (no es un modelo MoE) |
+| Arquitectura | BERT (modelo base `usejul/jul-decision-e5-small`), exportado a ONNX |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Pesos de 8 bits y embeddings de 4 bits (build ONNX cuantizado) |
-| Idiomas soportados | Ingles (en), frances (fr) y multilingue (segun las etiquetas del repositorio) |
-| Licencia | apache-2.0 |
-| Formato de pesos | ONNX |
-| Tamano del repositorio | 0,1 GB (artefacto de 98 MB) |
-| Modelo base | usejul/jul-decision-e5-small |
-| Pipeline declarado | zero-shot-classification |
+| Tipos de cuantizacion | pesos de 8 bits, embeddings de 4 bits (build ONNX para CPU) |
+| Idiomas soportados | en, fr, multilingual |
+| Licencia | Apache 2.0 |
+| Formato de pesos | ONNX (vectores en la raiz, modelo cross en `cross/`) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible solo permite afirmar que se trata de un encoder transformer de la familia BERT, segun la etiqueta `bert` del repositorio, construido a partir de usejul/jul-decision-e5-small, que a su vez pertenece a la familia e5-small. Es un modelo discriminativo de clasificacion, no generativo: recibe un texto y un conjunto de etiquetas candidatas y produce una puntuacion de pertenencia. La exportacion a ONNX aplica cuantizacion mixta: 8 bits para los pesos y 4 bits para los embeddings, lo que reduce el artefacto a 98 MB y habilita inferencia en CPU sin GPU.
+El modelo base es `usejul/jul-decision-e5-small`, de arquitectura BERT segun las etiquetas del repositorio. La variante aqui descrita es una compilacion ONNX pensada para inferencia en CPU, con cuantizacion de pesos a 8 bits y de embeddings a 4 bits, lo que reduce el tamano a 98 MB por parte. El repositorio contiene dos componentes: los vectores en la raiz del repositorio y un modelo cross en el subdirectorio `cross/`, que se emplea para la clasificacion si/no.
 
-No se han publicado en la informacion disponible detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO (tecnicas que, por otra parte, no aplican a un clasificador de este tipo) ni innovaciones de decodificacion. El autor remite a la model card del modelo base para "resultados, entrenamiento y licencia", de modo que cualquier dato de entrenamiento debe consultarse alli y no puede darse por confirmado a partir de esta ficha.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas adicionales mas alla de la cuantizacion y el empaquetado para despliegue en CPU. La model card remite a la ficha del modelo principal para consultar resultados, entrenamiento y licencia. Existe una revision `v1.0` que corresponde a la primera build y que solo contiene los vectores.
 
 ## Capacidades
 
-- Clasificacion zero-shot: asigna etiquetas definidas en tiempo de inferencia sin necesidad de fine-tuning adicional.
-- Toma de decisiones ("decision") integrada en el ecosistema jul, invocable mediante el comando `jul models add jul-decision-e5-small --repo usejul/jul-decision-e5-small-onnx --backend onnx`.
-- Inferencia en CPU: 23 ms por decision en un solo nucleo, segun el autor.
-- Cobertura linguistica declarada para ingles, frances y uso multilingue.
-- Huella reducida: 98 MB en disco, apta para entornos con memoria limitada.
-- No dispone de generacion de texto libre, razonamiento multi-paso, tool calling ni function calling.
-- No dispone de capacidades de vision, audio ni modo de razonamiento explicito.
-- No se documenta soporte para agentes ni para orquestacion de tareas.
+- Clasificacion zero-shot: el modelo se etiqueta con el pipeline `zero-shot-classification` y evalua pares si/no mediante el modelo cross.
+- Generacion de embeddings: los vectores de la raiz del repositorio permiten representar textos para tareas de similitud o seleccion.
+- Soporte multilingue limitado a los idiomas declarados: ingles, frances y multilingue.
+- Ejecucion en CPU: disenado para inferencia sin GPU, con latencias de milisegundos.
+- Integracion con la herramienta jul: se anade con `jul models add jul-decision-e5-small --repo usejul/jul-decision-e5-small-onnx --backend onnx`.
+- Empaquetado para serverless: una de las partes cabe en un paquete de AWS Lambda junto con jul, y `jul pack` indica que parte necesita un conjunto de preguntas.
+- No se documentan capacidades de generacion de texto libre, razonamiento multi-paso, tool calling, vision ni audio.
 
 ## Casos de uso
 
-- Enrutado de tickets de soporte: clasificar cada ticket entrante en categorias como facturacion, incidencia tecnica o cuenta, sin entrenar un modelo por categoria. Adecuado por su naturaleza zero-shot y sus 23 ms por decision en CPU.
-- Deteccion de intencion en asistentes conversacionales: etiquetar la intencion del usuario en cada turno para dirigir el flujo de dialogo, con coste de computo despreciable frente a un LLM generativo.
-- Triaje de correo electronico: asignar etiquetas operativas (urgente, informativo, requiere respuesta) a un buzon corporativo en local, sin enviar datos a servicios externos.
-- Etiquetado de corpus para anotacion previa: preetiquetar grandes volumenes de documentos en ingles o frances antes de una revision humana, reduciendo el trabajo manual de anotacion.
-- Clasificacion de feedback de cliente: agrupar comentarios y resenas por tema o sentimiento a partir de etiquetas definidas por el equipo de producto, con reajuste de etiquetas sin reentrenar.
-- Moderacion o filtrado por categoria en el borde: desplegar el modelo en dispositivos con CPU modesta o contenedores pequenos para descartar o marcar contenido antes de enviarlo a un sistema mayor.
-- Enriquecimiento de pipelines de datos: incorporar una etapa de clasificacion en procesos ETL en CPU mediante ONNX Runtime, con un artefacto de 98 MB facil de versionar y distribuir.
-- Clasificacion de documentos en ingles y frances: aprovechar la cobertura declarada de ambos idiomas para catalogar documentacion bilingue sin mantener dos modelos separados.
+- Clasificacion zero-shot en produccion: el modelo permite asignar etiquetas a textos sin entrenamiento especifico, evaluando pares si/no con el modelo cross a 4-7 ms por par en una CPU, lo que lo hace adecuado para pipelines de moderacion o etiquetado en tiempo real.
+- Enrutamiento de decisiones en aplicaciones: los vectores permiten calcular similitudes y decidir a que rama o categoria enviar una consulta, con 4 ms por texto, integrable en un backend de baja latencia.
+- Despliegue serverless en AWS Lambda: al caber una parte en el paquete de Lambda junto con jul, se puede desplegar un clasificador zero-shot sin infraestructura GPU, segun la guia oficial de AWS Lambda del proyecto.
+- Preprocesado y filtrado de datos: el modelo puede usarse para clasificar o seleccionar documentos y textos en ingles y frances antes de pasarlos a modelos mayores, reduciendo coste computacional.
+- Busqueda semantica ligera: los embeddings de la raiz permiten indexar y recuperar textos por similitud en entornos con recursos limitados, sin necesidad de GPU.
+- Prototipado rapido de clasificadores: gracias a la licencia Apache 2.0 y al formato ONNX, se puede integrar en entornos Python con ONNX Runtime para validar hipotesis de clasificacion antes de invertir en modelos mayores.
+- Sistemas embebidos o edge: el tamano de 98 MB por parte y la inferencia en CPU lo hacen viable en dispositivos con memoria limitada.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Modelo | Resultado |
-|---|---|---|
-| Zero-shot en los dev sets de jul | jul-decision-e5-small-onnx | 0,613 |
-| Zero-shot en los dev sets de jul | e5-small int8 (referencia) | 0,536 |
-| Latencia por decision (1 CPU) | jul-decision-e5-small-onnx | 23 ms |
+| Metrica | Resultado |
+|---|---|
+| Zero-shot en conjuntos de desarrollo de jul | 0.609 (frente a 0.536 de e5-small 8-bit) |
+| Latencia de vectores | 4 ms por texto, en una CPU |
+| Latencia del modelo cross | 4-7 ms por par si/no, en una CPU |
 
-No se han publicado en la informacion disponible resultados en benchmarks estandar de la industria (MMLU, GLUE, XNLI, etc.) ni la composicion exacta de los dev sets de jul, por lo que la comparacion externa no es posible con los datos aportados. La unica comparativa publicada es la que el propio autor incluye frente a e5-small int8.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM: no requiere GPU; el modelo esta disenado para inferencia en CPU.
-- Almacenamiento: 98 MB para los pesos ONNX cuantizados (repositorio de 0,1 GB).
-- GPU recomendadas: no aplica; no se documenta soporte CUDA ni aceleracion por GPU.
-- Compatibilidad con hardware de consumo: si, cabe en cualquier equipo de consumo, incluidos portatiles y equipos de gama baja; no requiere GPU dedicada.
-- Opciones de despliegue: backend ONNX (ONNX Runtime) integrado en la herramienta jul mediante `jul models add`; no se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, que ademas estan orientados a modelos generativos.
-- Latencia: 23 ms por decision en un solo nucleo de CPU, segun el autor.
-- Throughput: no disponible (no se publican mediciones en paralelo o por lote).
-- Memoria RAM estimada: no disponible de forma explicita; el tamano del artefacto (98 MB) sugiere un consumo moderado, pero no hay cifra publicada.
+- VRAM estimada para inferencia: no aplica, el modelo esta disenado para CPU; no se especifica requisito de VRAM.
+- GPU recomendadas: no disponibles; el build esta orientado a CPU.
+- Cabe en GPU consumer: no se documenta; el objetivo es ejecucion en CPU.
+- Opciones de despliegue: ONNX Runtime, la herramienta jul con backend ONNX, y AWS Lambda mediante el empaquetado de jul.
+- Latencia y throughput: 4 ms por texto para los vectores y 4-7 ms por par si/no para el modelo cross en una sola CPU; no se especifica throughput agregado.
+- Almacenamiento: 98 MB por parte, con un repositorio total de 0.3 GB.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento zero-shot (dev sets de jul) | Licencia | Formato |
+| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jul-decision-e5-small-onnx | no disponible (artefacto de 98 MB, cuantizado) | no disponible | 0,613 | apache-2.0 | ONNX |
-| jul-decision-e5-small (modelo base) | no disponible | no disponible | no disponible | apache-2.0 | no disponible |
-| e5-small int8 (referencia citada por el autor) | no disponible | no disponible | 0,536 | no disponible en esta ficha | int8 |
-| Otros clasificadores zero-shot (BART-large-MNLI, deberta-v3 NLI, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| `usejul/jul-decision-e5-small-onnx` | no disponible | no disponible | 0.609 zero-shot en dev sets de jul | Apache 2.0 | ONNX, CPU |
+| `usejul/jul-decision-e5-small` (8-bit) | no disponible | no disponible | 0.536 zero-shot en dev sets de jul | Apache 2.0 | Modelo base |
+| Otros modelos zero-shot comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparativa queda limitada a los datos publicados por el autor. No se dispone de parametros, contexto ni resultados de modelos alternativos en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con clasificadores zero-shot de uso comun.
+La unica comparacion documentada es con la variante e5-small de 8 bits del propio proyecto, sobre la que esta build mejora en 0.073 puntos en los conjuntos de desarrollo de jul. No se dispone de datos de benchmarks frente a alternativas externas.
 
 ## Limitaciones y advertencias
 
-- No es un modelo generativo: no produce texto ni mantiene conversaciones; solo puntua etiquetas candidatas.
-- Sesgos: no hay ninguna evaluacion de sesgos publicada; al derivar de un modelo de embeddings multilingue, hereda los sesgos de su corpus de entrenamiento, que no se documenta.
-- Riesgo de alucinacion: no aplica en el sentido generativo, pero si existe riesgo de clasificaciones erroneas o sobreconfiadas, especialmente con etiquetas ambiguas o solapadas.
-- Cobertura de idiomas: se declaran ingles, frances y multilingue. El castellano no aparece listado de forma explicita; conviene validar su comportamiento antes de usarlo en produccion en espanol.
-- Cuantizacion agresiva: los embeddings en 4 bits y los pesos en 8 bits implican una perdida de precision respecto al modelo base, no cuantificada en la informacion disponible.
-- Trazabilidad: la model card remite al modelo base para los detalles de entrenamiento, de modo que no se puede auditar el dataset ni el procedimiento a partir de este repositorio.
-- Licencia apache-2.0: permite uso comercial, pero al ser un derivado conviene verificar la licencia del modelo base y de sus dependencias antes de distribuirlo.
-- Madurez: 0 descargas y 0 likes en el momento de la consulta, repositorio creado en septiembre de 2026 y sin validacion de la comunidad; no es aconsejable como componente critico sin evaluacion propia.
-- Los 0,613 de zero-shot corresponden a los dev sets internos de jul, no a un benchmark publico reproducible de forma independiente.
+- El modelo esta especializado en clasificacion zero-shot y embeddings; no es un modelo generativo y no debe usarse para tareas de generacion de texto.
+- Los idiomas declarados son ingles, frances y multilingue; no se garantiza un rendimiento equivalente en castellano ni en otros idiomas no documentados.
+- No se dispone de informacion sobre sesgos conocidos, riesgo de alucinacion ni evaluaciones de robustez.
+- La longitud de contexto no esta documentada, por lo que no se puede garantizar el comportamiento con textos largos.
+- La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar la ficha del modelo base para condiciones adicionales.
+- El rendimiento reportado (0.609) corresponde a los conjuntos de desarrollo propios de jul, no a benchmarks estandar, por lo que no es directamente comparable con otros modelos.
+- La cuantizacion a 8 bits y 4 bits puede introducir perdida de precision frente al modelo base sin cuantizar.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/usejul/jul-decision-e5-small-onnx
 - Modelo base: https://huggingface.co/usejul/jul-decision-e5-small
 - Repositorio del proyecto jul: https://github.com/usejul/jul
-- Model card del modelo base (referenciada por el autor para resultados, entrenamiento y licencia): https://huggingface.co/usejul/jul-decision-e5-small
-- Papers, blogs o demos adicionales: no se han encontrado enlaces relevantes en la busqueda web realizada (los resultados obtenidos correspondian a paginas genericas de LinkedIn, sin relacion con el modelo).
+- Guia de AWS Lambda: https://github.com/usejul/jul/blob/main/docs/aws-lambda.md

@@ -2,95 +2,97 @@
 
 ## Resumen
 
-Whale-4B-Thinking-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo base roskosmos19/Whale-4B-Thinking. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos (convert_type: hf) y posterior cuantización estática (quantize_version 2, output_tensor_quantised 1) pensada para su ejecución en motores de inferencia compatibles con GGUF, como llama.cpp u Ollama, sobre hardware de gama consumer.
+Whale-4B-Thinking-GGUF es la version cuantizada en formato GGUF del modelo roskosmos19/Orca-4B-Thinking, publicada por mradermacher, un conocido creador de cuantizaciones para llama.cpp y ecosistemas compatibles. El modelo base es un transformer denso de aproximadamente 4.022 millones de parametros (4B) afinado para razonamiento explicito con cadenas de pensamiento (chain-of-thought), inspirado en la estela de DeepSeek-R1 y Qwen3. Su proposito es ofrecer capacidades de razonamiento paso a paso en un tamano que pueda ejecutarse en hardware de consumo.
 
-Por el nombre se deduce que el modelo base tiene aproximadamente 4.000 millones de parámetros y que incorpora algún modo de razonamiento explícito (sufijo "Thinking"), pero no se han publicado en la información disponible ni la arquitectura exacta, ni la longitud de contexto, ni los idiomas soportados, ni la licencia. El repositorio no registra descargas ni valoraciones en el momento de la consulta y fue creado y actualizado el 22 de septiembre de 2026.
+La relevancia de esta publicacion es practica: mradermacher distribuye el modelo en once cuantizaciones estaticas que van desde Q2_K (1,8 GB) hasta f16 (8,2 GB), lo que permite desplegarlo desde portatiles modestos hasta estaciones de trabajo con GPU. El modelo esta liberado bajo licencia Apache 2.0, lo que facilita su uso comercial sin restricciones adicionales, y declara soporte para ingles, aleman, espanol, frances y chino.
 
-Su relevancia práctica reside en la disponibilidad de un conjunto amplio de cuantizaciones (desde Q2_K hasta f16, incluyendo IQ4_XS) que permiten desplegar un modelo de 4B con requisitos de memoria muy reducidos. Sin embargo, la ausencia de model card detallada, licencia declarada y benchmarks hace que cualquier uso en producción requiera validación previa por parte del equipo técnico.
+Al tratarse de una cuantizacion y no de un modelo original, la ficha debe leerse conjuntamente con la del modelo base: las capacidades, el entrenamiento y las limitaciones provienen de roskosmos19/Orca-4B-Thinking, mientras que esta publicacion anade los formatos de pesos y las opciones de despliegue.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (repositorio de cuantización GGUF; no se describe la arquitectura del modelo base) |
-| Parámetros totales | ~4B (deducido del nombre del modelo; no confirmado en la información disponible) |
-| Parámetros activos | no disponible (no se indica si el modelo base es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estáticas, quantize_version 2) |
+| Arquitectura | Transformer denso (no se detalla la variante exacta en la informacion disponible) |
+| Parametros totales | 4.022.468.096 (aproximadamente 4B) |
+| Parametros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | Ingles, aleman, espanol, frances, chino |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base en safetensors |
+| Tamano del repositorio | 36,4 GB (incluye todas las cuantizaciones) |
+| Modelo base | roskosmos19/Orca-4B-Thinking |
+| Libreria declarada | transformers (etiqueta), ejecutable con llama.cpp |
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no describe la arquitectura del modelo base roskosmos19/Whale-4B-Thinking. El único dato técnico disponible es el pipeline de conversión empleado por mradermacher: un volcado desde formato Hugging Face (`convert_type: hf`) con cuantización estática versión 2 y cuantización de tensores de salida activada (`output_tensor_quantised: 1`). No se especifican número de tokens de entrenamiento, composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o RLVR.
+La informacion disponible no detalla la arquitectura interna del modelo base mas alla de identificarlo como un transformer de aproximadamente 4B parametros. Las etiquetas del repositorio lo vinculan a la familia Qwen3 y a la tradicion de razonamiento de DeepSeek-R1, lo que sugiere una arquitectura decoder-only convencional con atencion por capas y un modo de "pensamiento" que genera cadenas de razonamiento antes de la respuesta final. No se especifican el numero de capas, las dimensiones ocultas ni el mecanismo de atencion exacto.
 
-Respecto a las innovaciones del modelo base, el sufijo "Thinking" sugiere la presencia de un modo de razonamiento extendido (cadena de pensamiento explícita), pero no hay documentación en el repositorio que confirme el mecanismo, su implementación ni su comportamiento. Tampoco se detalla si emplea atención lineal, decodificación especulativa u otras optimizaciones.
+En cuanto al entrenamiento, la model card declara el uso de dos conjuntos de datos: open-thoughts/OpenThoughts-114k y open-r1/Mixture-of-Thoughts, ambos orientados a destilacion de razonamiento y cadenas de pensamiento. No se indica el numero total de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron fases de RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. Esta publicacion, en si misma, no entrena el modelo: solo lo convierte a GGUF y lo cuantiza.
 
 ## Capacidades
 
-- Generación de texto: capacidad esperable en un modelo de tipo transformer de 4B, aunque no confirmada por documentación del autor.
-- Razonamiento: el nombre del modelo base ("Thinking") apunta a un modo de razonamiento extendido, sin especificación técnica disponible.
-- Código y matemáticas: no disponible.
-- Tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (no se declaran idiomas).
-- Capacidades especiales (visión, audio, thinking mode explícito): no disponible.
+- Generacion de texto conversacional en formato multi-turno.
+- Razonamiento explicito con cadenas de pensamiento (thinking mode), heredado de la estirpe DeepSeek-R1 y Qwen3.
+- Resolucion de problemas de matematicas y logica paso a paso, segun el enfasis de los datasets de entrenamiento (OpenThoughts y Mixture-of-Thoughts).
+- Generacion de codigo y explicaciones tecnicas, aunque no se documenta un benchmark especifico que lo cuantifique.
+- Capacidades multilingues declaradas en ingles, aleman, espanol, frances y chino.
+- Soporte de conversacion con plantillas de chat (etiqueta conversational).
+- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que facilita su integracion en servicios de inferencia.
+- No se documenta soporte de tool calling, function calling, vision, audio ni agentes multi-paso en la informacion disponible.
 
 ## Casos de uso
 
-- Inferencia local en equipos de sobremesa: las cuantizaciones Q4_K_M y Q5_K_M permiten ejecutar un modelo de ~4B en GPUs consumer con 8 GB de VRAM o incluso en CPU, lo que facilita prototipado sin infraestructura en la nube.
-- Despliegue en entornos con memoria limitada: las variantes Q2_K y Q3_K reducen el peso del modelo por debajo de los 2 GB, lo que permite integrarlo en dispositivos de borde o contenedores con restricciones estrictas de RAM.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece hasta doce niveles distintos, lo que permite medir la degradación de calidad frente al tamaño en un mismo modelo base.
-- Pruebas de razonamiento asistido: si el modelo base conserva el modo "thinking", puede emplearse en tareas de resolución de problemas paso a paso, siempre que se valide su comportamiento real.
-- Integración en pipelines de generación de texto: mediante llama.cpp, Ollama o servidores compatibles con GGUF para tareas de resumen, redacción o clasificación básica.
-- Investigación sobre cuantización: útil como caso de estudio para analizar el impacto de cuantizaciones agresivas (Q2_K, IQ4_XS) en modelos pequeños.
-- Fine-tuning posterior sobre pesos cuantizados: limitado, ya que GGUF no está pensado para reentrenamiento; requeriría partir del modelo base original.
+- Asistente de razonamiento en local para desarrolladores: con la cuantizacion Q4_K_M (2,6 GB) el modelo cabe en una GPU de consumo de 8 GB y permite probar flujos de chain-of-thought sin depender de APIs externas.
+- Prototipado de tutores de matematicas: el modelo puede desglosar problemas paso a paso y explicar el razonamiento, util para generar material didactico o validar ejercicios en un entorno controlado.
+- Generacion y revision de codigo en entornos con requisitos de privacidad: al ejecutarse localmente con llama.cpp u Ollama, el codigo no sale de la maquina, lo que encaja en equipos con politicas estrictas de datos.
+- Traduccion y asistencia multilingue entre espanol, ingles, frances, aleman y chino: el modelo declara estos cinco idiomas, lo que permite tareas de parafraseo y adaptacion de textos en esos pares linguisticos.
+- Experimentacion academica con cuantizaciones: investigadores pueden comparar la degradacion de calidad entre Q2_K, IQ4_XS, Q4_K_M y Q8_0 sobre las mismas tareas de razonamiento, usando los ficheros publicados.
+- Despliegue en dispositivos con poca VRAM: la cuantizacion Q2_K (1,8 GB) permite ejecutar el modelo en portatiles sin GPU dedicada mediante llama.cpp en CPU, adecuado para demos y pruebas de concepto.
+- Integracion en pipelines de evaluacion automatizada: la etiqueta endpoints_compatible sugiere que puede servirse detras de una API compatible con OpenAI para comparar respuestas de razonamiento frente a otros modelos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio no incluye métricas de MMLU, HumanEval, GSM8K ni de ningún otro conjunto de evaluación, ni comparaciones frente a modelos similares.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card de la cuantizacion ni los metadatos del repositorio incluyen cifras de MMLU, HumanEval, GSM8K u otras evaluaciones, ni para el modelo base ni para las versiones cuantizadas.
 
 ## Requisitos de hardware
 
-Estimaciones orientativas basadas en un modelo de ~4B parámetros; no proceden de documentación oficial del autor:
-
-- VRAM estimada para inferencia (aproximada, solo pesos):
-  - f16: ~8 GB.
-  - Q8_0: ~4,3 GB.
-  - Q6_K: ~3,3 GB.
-  - Q5_K_M / Q5_K_S: ~2,7-2,9 GB.
-  - Q4_K_M / Q4_K_S: ~2,4-2,6 GB.
-  - IQ4_XS: ~2,3 GB.
-  - Q3_K_L / Q3_K_M / Q3_K_S: ~1,8-2,1 GB.
-  - Q2_K: ~1,4-1,6 GB.
-- GPUs recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090. Para despliegues en centro de datos, A10G, L4, A100 o H100 (ampliamente sobredimensionadas para 4B, útiles para servir muchas instancias en paralelo).
-- Compatibilidad con GPU consumer: sí. Las cuantizaciones Q4_K_M y Q5_K_M caben en GPUs de 8 GB; Q2_K y Q3_K pueden ejecutarse en GPUs de 4-6 GB o incluso en CPU.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, kobold.cpp y servidores basados en llama.cpp. No se garantiza compatibilidad con vLLM o TGI para GGUF.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada segun cuantizacion: Q2_K 1,8 GB; Q3_K_S 2,0 GB; Q3_K_M 2,2 GB; Q3_K_L 2,3 GB; IQ4_XS 2,4 GB; Q4_K_S 2,5 GB; Q4_K_M 2,6 GB; Q5_K_S 2,9 GB; Q5_K_M 3,0 GB; Q6_K 3,4 GB; Q8_0 4,4 GB; f16 8,2 GB. A estas cifras hay que sumar el espacio para el contexto KV cache.
+- GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para las cuantizaciones Q4 y Q5 (RTX 3060, RTX 4060, RTX 2070). Para Q8_0 y f16 se recomienda 8-12 GB (RTX 4070, RTX 3080, RTX 4090) o GPUs de datacenter como A100 o H100 si se busca throughput alto con lotes grandes.
+- Cabe en GPU de consumo: si, en todas las cuantizaciones hasta Q8_0 con GPUs de 8 GB o mas; f16 requiere 12 GB o mas para dejar margen al contexto.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y servidores compatibles con GGUF. Para el modelo base en safetensors, vLLM o TGI si se dispone de la version sin cuantizar.
+- Latencia y throughput: no disponibles en la informacion proporcionada. Al ser un modelo de 4B, se espera una latencia baja en GPU de consumo, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre el modelo base (roskosmos19/Whale-4B-Thinking) ni de sus competidores directos en la documentación proporcionada, por lo que no es posible elaborar una comparativa rigurosa de parámetros, contexto, rendimiento, licencia o disponibilidad.
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Rendimiento |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Whale-4B-Thinking-GGUF | ~4B (deducido) | no disponible | no disponible | GGUF | no disponible |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Whale-4B-Thinking-GGUF | 4,0B | No disponible | Apache 2.0 | GGUF | Cuantizacion de Orca-4B-Thinking, enfocado a razonamiento |
+| Qwen3-4B (referencia de familia) | 4B | No disponible en esta ficha | Apache 2.0 (segun familia Qwen) | safetensors, GGUF | Modelo base de la misma escala con modo thinking; no se dispone de comparacion numerica |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | No disponible en esta ficha | MIT (segun publicacion original) | safetensors, GGUF | Alternativa mas pequena de razonamiento destilado; menor capacidad pero menor huella |
+| Orca-4B-Thinking (modelo base) | 4,0B | No disponible | Apache 2.0 | safetensors | Version sin cuantizar; misma calidad teorica que esta publicacion en f16 |
+
+No se dispone de datos de benchmarks que permitan una comparacion cuantitativa de rendimiento entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: no disponibles; no hay evaluación de sesgos publicada.
-- Riesgo de alucinación: no cuantificado. En modelos pequeños (≈4B) el riesgo suele ser elevado, pero no puede afirmarse sin evaluación específica.
-- Limitaciones de contexto e idioma: no documentadas. No se declara la ventana de contexto ni los idiomas soportados.
-- Restricciones de licencia: la licencia no está declarada en el repositorio, por lo que se desconoce si permite uso comercial. Antes de cualquier despliegue en producción es imprescindible consultar la licencia del modelo base roskosmos19/Whale-4B-Thinking.
-- Degradación por cuantización: las variantes Q2_K y Q3_K pueden degradar notablemente la calidad, especialmente en tareas de razonamiento; conviene validar cada cuantización con tareas representativas.
-- Ausencia de benchmarks: no es posible estimar su rendimiento relativo sin evaluación propia.
-- Falta de soporte del autor: con 0 descargas y 0 likes, el repositorio no tiene validación comunitaria ni historial de incidencias.
-- Uso en producción: dado el vacío documental, se recomienda tratar el modelo como experimental hasta completar una validación interna.
+- Alucinacion: como todo modelo generativo de 4B, puede producir razonamientos plausibles pero incorrectos, especialmente en matematicas y codigo; el modo thinking no garantiza la veracidad de la cadena.
+- Sesgos: no se documentan evaluaciones de sesgo ni de seguridad en la informacion disponible; los datasets de razonamiento destilados pueden heredar sesgos de los modelos profesor.
+- Contexto e idioma: se desconoce la longitud de contexto soportada; el soporte multilingue declarado se limita a cinco idiomas y no hay evaluacion de calidad por idioma.
+- Cuantizacion: las versiones Q2_K y Q3_K_M degradan la calidad de forma notable segun las propias notas del autor ("lower quality" en Q3_K_M); para produccion se recomienda Q4_K_M o superior.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base y de los datasets de entrenamiento (OpenThoughts y Mixture-of-Thoughts) por si imponen condiciones adicionales.
+- Produccion: no hay benchmarks publicados, por lo que no se puede garantizar un nivel de rendimiento concreto; se recomienda evaluar en el dominio propio antes de desplegar.
+- Fecha de creacion inusual (2026-09-22) en los metadatos: conviene contrastar la vigencia del repositorio antes de adoptarlo.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Whale-4B-Thinking-GGUF
-- Modelo base: https://huggingface.co/roskosmos19/Whale-4B-Thinking
-- Perfil del autor de la cuantización: https://huggingface.co/mradermacher
+- Modelo base: https://huggingface.co/roskosmos19/Orca-4B-Thinking
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Whale-4B-Thinking-i1-GGUF
+- Pagina de descargas del autor: https://hf.tst.eu/model#Whale-4B-Thinking-GGUF
+- Dataset OpenThoughts-114k: https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k
+- Dataset Mixture-of-Thoughts: https://huggingface.co/datasets/open-r1/Mixture-of-Thoughts
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

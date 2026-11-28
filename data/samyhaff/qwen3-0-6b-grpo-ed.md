@@ -2,89 +2,96 @@
 
 ## Resumen
 
-`samyhaff/qwen3-0.6b-grpo-ed` es un ajuste fino del modelo base Qwen/Qwen3-0.6B, publicado por el usuario samyhaff en Hugging Face. El modelo está orientado a tareas de *entity linking* y *entity disambiguation*, según las etiquetas declaradas en su model card, y se ha entrenado con GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo utilizada habitualmente para mejorar el razonamiento y la precisión en tareas estructuradas. Con 596.049.920 parámetros reales en safetensors, se trata de un modelo compacto que hereda la arquitectura transformer densa de la familia Qwen3.
+qwen3-0.6b-grpo-ed es un modelo especializado en desambiguación de entidades (entity disambiguation, ED) desarrollado por Samy Haffoudhi en el contexto del paper "When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift" (Findings of EACL 2027). Se construye a partir de Qwen/Qwen3-0.6B mediante un ajuste fino con LoRA (posteriormente fusionado) y entrenamiento por refuerzo con GRPO (RLVR) sobre el conjunto de datos ZELDA, con una recompensa basada en seleccionar el candidato correcto.
 
-La relevancia de este modelo radica en su especialización: en lugar de ser un modelo generalista, se ha afinado para resolver la ambigüedad de entidades, un problema clásico en pipelines de extracción de información, grafos de conocimiento y sistemas de búsqueda. Al partir de un modelo de menos de 1.000 millones de parámetros, su coste de despliegue es bajo, lo que lo hace atractivo para integrarlo en arquitecturas de recuperación aumentada o en sistemas de resolución de entidades a gran escala.
+El modelo resuelve un problema concreto: dada una mención marcada en un texto con contexto y una lista numerada de entidades candidatas con sus descripciones, el modelo razona y devuelve el índice del candidato elegido en el campo `"answer"`. Con solo 596 millones de parámetros, demuestra que modelos pequeños pueden abordar tareas de razonamiento estructurado cuando se entrenan con el objetivo adecuado.
 
-No obstante, la información pública disponible es muy limitada: la model card no incluye detalles sobre el dataset de entrenamiento, la composición de los datos, los hiperparámetros de GRPO ni resultados de evaluación. El repositorio tiene 0 descargas y 1 like en el momento de la consulta, y fue creado el 18 de noviembre de 2026. Todo ello obliga a tratar esta ficha como una descripción estructural del modelo, no como una validación empírica de su calidad.
+Su relevancia radica en que explora cuándo el razonamiento ayuda en ED, comparando rendimiento in-domain (ZELDA, 77,8 % de precisión) frente a escenarios de cambio de distribución (ZESHEL zero-shot, 48,3 % de precisión normalizada). Es un modelo de nicho, pensado para integrarse en pipelines de linking de entidades junto con un reranker, no como un LLM de propósito general.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (heredada de Qwen3-0.6B) |
+| Arquitectura | Transformer decoder-only (Qwen3), ajuste fino con LoRA fusionado |
 | Parametros totales | 596.049.920 |
-| Parametros activos | no aplica (modelo denso, no MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (heredada de Qwen3-0.6B; no confirmada en la model card) |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; compatible con cuantizaciones estándar de transformers/vLLM) |
+| Idiomas soportados | no disponible (la model card no especifica; hereda el perfil multilingüe de Qwen3-0.6B, sin confirmar) |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen/Qwen3-0.6B, un transformer denso de la familia Qwen3 con 596 millones de parámetros. La arquitectura concreta (número de capas, dimensión oculta, cabezas de atención, mecanismo de atención) no se detalla en la información proporcionada, por lo que se asume la del modelo base Qwen3-0.6B, aunque no se confirma en la model card. El ajuste fino se ha realizado mediante GRPO, un algoritmo de optimización de política que estima ventajas relativas dentro de grupos de respuestas generadas, lo que suele emplearse para reforzar comportamientos correctos en tareas con recompensa verificable.
+El modelo parte de Qwen3-0.6B, un transformer decoder-only de 0,6 mil millones de parámetros. Sobre esa base se aplica un ajuste fino con LoRA que posteriormente se fusiona en los pesos, seguido de entrenamiento con RLVR mediante GRPO (Group Relative Policy Optimization). La recompensa se define por la selección del candidato correcto de la shortlist, lo que entrena al modelo a emitir un razonamiento seguido de la respuesta en formato `"answer": <index>`.
 
-No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo fases de SFT previas al GRPO, ni los hiperparámetros utilizados (tamaño de grupo, tasa de aprendizaje, número de pasos). Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa o atención lineal. La única información sobre el propósito del entrenamiento son las etiquetas `entity-linking` y `entity-disambiguation`, que indican que el objetivo es resolver referencias a entidades y desambiguar menciones homónimas.
+El entrenamiento se realiza sobre ZELDA, un conjunto de datos de desambiguación de entidades. En la evaluación del paper, los candidatos que recibe el modelo son el top 10 producido por qwen3-4b-reranker-ed, formando un pipeline de dos etapas (reranking y luego desambiguación con razonamiento). El modelo está diseñado para decodificación con muestreo múltiple (10 completions con voto mayoritario), lo que aprovecha su modo de razonamiento (`enable_thinking`) para mejorar la robustez de la respuesta.
 
 ## Capacidades
 
-- Generación de texto conversacional, heredada del pipeline `text-generation` del modelo base.
-- Entity linking: asociación de menciones textuales a entidades de un catálogo o base de conocimiento.
-- Entity disambiguation: resolución de menciones ambiguas que pueden referirse a varias entidades distintas.
-- Razonamiento multi-paso, presumiblemente reforzado por el entrenamiento con GRPO, aunque no se documenta explícitamente.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente autónomo: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponibles; el modelo base Qwen3 es multilingüe, pero no se confirma el alcance tras el ajuste.
-- Modo *thinking* explícito, visión o audio: no disponible en la información proporcionada.
+- Desambiguación de entidades: dado un texto con una mención marcada entre corchetes y una lista numerada de candidatos con descripciones, selecciona el índice correcto.
+- Razonamiento explícito: genera una cadena de razonamiento antes de emitir la respuesta final en el campo `"answer"`.
+- Modo thinking: soporta `enable_thinking=True` en la plantilla de chat.
+- Formato de salida estructurado: termina con `"answer": <index>`, parseable con expresiones regulares.
+- Integración en pipelines: pensado para combinarse con un reranker (qwen3-4b-reranker-ed) que pre-selecciona candidatos.
+- Generación de texto conversacional: hereda la interfaz de chat de Qwen3.
+- Tool calling y function calling: no disponible en la información proporcionada.
+- Capacidades de agente multi-paso: no disponible.
+- Capacidades de visión o audio: no disponibles.
 
 ## Casos de uso
 
-- Resolución de entidades en pipelines de extracción de información: el modelo puede recibir una mención y un contexto para decidir a qué entidad de un catálogo corresponde, integrándose en etapas de post-procesado de NER.
-- Desambiguación en grafos de conocimiento: dado un conjunto de entidades candidatas con descripciones, el modelo puede seleccionar la correcta y justificar la elección, facilitando la construcción y mantenimiento de KG.
-- Normalización de nombres en bases de datos de clientes: útil para unificar registros con variantes ortográficas o nombres homónimos, aprovechando la especialización en desambiguación.
-- Enriquecimiento de resultados de búsqueda: al desambiguar consultas ambiguas, el modelo puede ayudar a reformular la intención del usuario antes de lanzar la búsqueda.
-- Anotación asistida de corpus: generación de etiquetas de entity linking para datasets de entrenamiento, con revisión humana posterior, gracias a su bajo coste de inferencia.
-- Sistemas de preguntas y respuestas sobre documentos: desambiguar entidades mencionadas en el contexto antes de responder, reduciendo errores de atribución.
-- Prototipado rápido en entornos con recursos limitados: al ser un modelo de 0,6B, puede ejecutarse en CPU o en GPU consumer para validar ideas antes de escalar a modelos mayores.
+- Desambiguación de entidades en pipelines de NLP: integrar el modelo como etapa final tras un reranker que reduzca los candidatos a un top-k; el modelo razona sobre el contexto y elige el índice correcto, con voto mayoritario sobre 10 muestras para robustez.
+- Enriquecimiento de bases de conocimiento: procesar textos (noticias, artículos) para mapear menciones a entidades de un KB, usando la shortlist de candidatos con descripciones como entrada.
+- Búsqueda semántica con resolución de entidades: en sistemas de búsqueda que necesitan identificar a qué entidad concreta se refiere una mención ambigua (personas, lugares, organizaciones) antes de recuperar documentos.
+- Construcción de grafos de conocimiento: extraer y resolver entidades de forma consistente en corpus grandes antes de poblar un grafo, aprovechando el bajo coste de un modelo de 0,6B parámetros.
+- Investigación en razonamiento de LLMs pequeños: servir como modelo de referencia para estudiar cuándo el razonamiento ayuda en tareas estructuradas y cómo se degrada bajo cambio de distribución (ZELDA frente a ZESHEL).
+- Prototipado y experimentación académica: al ser un modelo de 0,6B con licencia Apache 2.0, permite reproducir el pipeline del paper en hardware modesto y adaptarlo a otros dominios de ED.
+- Desambiguación en atención al cliente o CRM: resolver menciones ambiguas de nombres de clientes o productos en conversaciones, con la shortlist generada a partir de un catálogo interno.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+| Benchmark | Metrica | Resultado |
+|---|---|---|
+| ZELDA | Accuracy | 77,8 |
+| ZESHEL (true zero-shot) | Accuracy normalizada | 48,3 |
+
+No se han publicado en la información disponible resultados de benchmarks generales (MMLU, HumanEval, GSM8K) ni comparativas numéricas con otros modelos de ED.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 1,2 GB solo para pesos, más overhead de activaciones y caché KV (estimación típica de 2-3 GB en total para contextos moderados).
-- VRAM estimada en cuantización de 8 bits: alrededor de 0,6 GB para pesos.
-- VRAM estimada en cuantización de 4 bits: alrededor de 0,3-0,4 GB para pesos.
-- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; también cabe en GPUs de datacenter como A100 o H100, aunque estarían sobredimensionadas.
-- Cabe en CPU: sí, es viable para inferencia en CPU con cuantización, aunque con latencia mayor.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI y transformers, siempre que se generen los pesos en el formato adecuado (el repositorio solo incluye safetensors, por lo que para llama.cpp u Ollama habría que convertir a GGUF).
-- Latencia y throughput estimados: no disponibles; dependerán del hardware y de la cuantización.
+- VRAM estimada para inferencia: aproximadamente 1,2 GB en precisión completa (fp16/bf16, según tamaño del repo); en cuantización de 8 bits alrededor de 0,6 GB y en 4 bits alrededor de 0,3-0,4 GB (estimaciones orientativas, no confirmadas en la model card).
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; el modelo cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 y H100.
+- Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna, e incluso en CPU para inferencia con llama.cpp.
+- Opciones de despliegue: vLLM (usado en el ejemplo de la model card), transformers, text-generation-inference; llama.cpp u Ollama si se generan pesos GGUF (no incluidos en el repo).
+- Latencia y throughput: no disponibles. El pipeline recomendado requiere 10 muestras por consulta con hasta 2048 tokens de generación, lo que multiplica el coste de inferencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
+| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samyhaff/qwen3-0.6b-grpo-ed | 596 M | no disponible | Apache 2.0 | Entity linking / disambiguation | Hugging Face |
-| Qwen/Qwen3-0.6B | 596 M | no disponible en la información | Apache 2.0 | Generalista | Hugging Face |
-| Modelos especializados en entity linking de tamaño similar | no disponible | no disponible | no disponible | Entity linking | no disponible |
+| samyhaff/qwen3-0.6b-grpo-ed | 0,6B | no disponible | Entity disambiguation con razonamiento | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible | LLM de propósito general | Apache 2.0 | Hugging Face |
+| samyhaff/qwen3-4b-reranker-ed | 4B (aproximado, no confirmado) | no disponible | Reranking de candidatos para ED | no disponible | Hugging Face |
 
-La comparación con alternativas especializadas en entity linking no puede completarse con la información proporcionada. El modelo base Qwen3-0.6B es el referente directo, pero no se han publicado métricas comparativas entre ambos en la model card.
+No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada, salvo que el pipeline del paper combina el reranker de 4B con este modelo de 0,6B para la desambiguación final.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación sobre el dataset de entrenamiento, lo que impide evaluar sesgos y cobertura.
-- Riesgo de alucinación inherente a los modelos generativos: puede inventar entidades o justificaciones plausibles pero incorrectas.
-- No se especifica la longitud de contexto soportada tras el ajuste, lo que limita el diseño de pipelines que dependan de contextos largos.
-- Idiomas soportados no confirmados; el ajuste podría haber reducido el multilingüismo del modelo base.
-- El entrenamiento con GRPO sin documentación de la función de recompensa impide conocer qué comportamientos se han reforzado y cuáles se han degradado.
-- Licencia Apache 2.0 permite uso comercial, pero al ser un derivado de Qwen3 conviene verificar las condiciones del modelo base.
-- Modelo con 0 descargas y 1 like: no hay evidencia de uso en producción ni validación por parte de la comunidad.
-- No se han publicado benchmarks, por lo que su rendimiento real en entity linking es desconocido.
-- El repositorio solo contiene safetensors; para despliegue en llama.cpp u Ollama es necesario convertir los pesos.
+- Modelo de nicho: está entrenado exclusivamente para desambiguación de entidades con un formato de prompt muy concreto (mención entre corchetes y candidatos numerados); fuera de ese formato su rendimiento no está garantizado.
+- Degradación bajo cambio de distribución: la precisión cae de 77,8 en ZELDA a 48,3 en ZESHEL zero-shot, lo que indica una generalización limitada a dominios no vistos.
+- Dependencia del pipeline: en el paper los candidatos provienen del top 10 de un reranker específico; con shortlists de otra procedencia o tamaño el comportamiento puede variar.
+- Coste de inferencia: el protocolo recomendado exige 10 muestras con hasta 2048 tokens cada una y voto mayoritario, lo que multiplica la latencia y el coste frente a una única pasada.
+- Riesgo de alucinación en el razonamiento: el modelo puede generar cadenas de razonamiento plausibles pero incorrectas; la respuesta final debe validarse contra el rango de índices de candidatos.
+- Sesgos: no se documentan sesgos específicos en la model card; al heredar de Qwen3-0.6B puede reproducir sesgos presentes en los datos de entrenamiento originales.
+- Idiomas: no se especifican los idiomas soportados; el entrenamiento en ZELDA (dataset en inglés, presumiblemente) puede limitar el rendimiento en otros idiomas.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base Qwen3-0.6B y del dataset ZELDA.
+- Formato de salida frágil: el parseo depende de la expresión `"answer": <index>`; variaciones en la generación pueden requerir post-procesado robusto.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/samyhaff/qwen3-0.6b-grpo-ed
-- Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/samyhaff/qwen3-0.6b-grpo-ed
+- Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
+- Reranker asociado: https://huggingface.co/samyhaff/qwen3-4b-reranker-ed
+- Repositorio del pipeline y evaluación: https://github.com/samyhaff/ed-study
+- Paper (arXiv): https://arxiv.org/abs/2611.30334

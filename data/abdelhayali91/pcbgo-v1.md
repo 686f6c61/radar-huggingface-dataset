@@ -2,99 +2,112 @@
 
 ## Resumen
 
-pcbgo v1 es un ajuste fino (LoRA, posteriormente fusionado y cuantizado) del modelo Qwen3.5-4B, desarrollado por el usuario abdelhayali91, orientado especificamente al diseno automatizado de placas de circuito impreso (PCB) y esquematicos electronicos. El modelo actua como motor de decision dentro de la aplicacion CircuitPilot (pcbgo.site): recibe una descripcion en lenguaje natural de un circuito, selecciona componentes, cablea el esquematico, ejecuta comprobaciones ERC/DRC, realiza el placement y el routing de la placa y corrige los problemas detectados mediante llamadas a herramientas (tool calling).
+pcbgo v1 es un ajuste fino (LoRA, posteriormente fusionado y cuantizado) del modelo base Qwen/Qwen3.5-4B, desarrollado por el usuario abdelhayali91. Está especializado en el diseño automatizado de placas de circuito impreso (PCB) y esquemáticos electrónicos mediante el uso de herramientas (tool calling) dentro de la aplicación CircuitPilot, disponible en pcbgo.site. El modelo recibe una descripción de circuito en lenguaje natural y ejecuta acciones concretas: añadir componentes, cablear el esquemático, verificar el diseño (ERC/DRC), colocar y rutear la PCB, añadir planos de cobre y taladros, y corregir problemas de DRC.
 
-Con 4.326.350.848 parametros totales y una ventana de contexto operativa de 32.768 tokens en su configuracion recomendada de llama.cpp, el modelo se distribuye unicamente en formato GGUF cuantizado Q4_K_M (2,8 GB), lo que permite ejecutarlo en GPU de portatil, en Ollama sobre cualquier PC o en una GPU gratuita de Google Colab (T4). Esta pensado para funcionar con el modo "thinking" desactivado, ya que asi fue entrenado.
+Con 4.326.350.848 parámetros totales (aproximadamente 4,3 mil millones) y distribuido en formato GGUF cuantizado Q4_K_M (2,8 GB), el modelo está pensado para ejecutarse en hardware de consumo: una GPU de portátil, Ollama en cualquier PC o una GPU gratuita de Google Colab (T4). Su relevancia actual radica en que demuestra que un modelo pequeño, ajustado sobre datos generados por un motor de diseño real, puede igualar o superar a modelos de 27B en tareas de automatización de EDA (Electronic Design Automation), reduciendo drásticamente los requisitos de cómputo y el número de tokens consumidos por tarea.
 
-Su relevancia radica en que aborda un dominio muy especializado (EDA y diseno electronico) con un modelo pequeno y desplegable localmente, superando a su modelo base en el benchmark propio del autor (79,3 frente a 65,1 puntos de media). La licencia Apache-2.0 y la disponibilidad del codigo de entrenamiento facilitan su inspeccion y reutilizacion.
+El modelo se entrenó exclusivamente con conversaciones de uso de herramientas generadas por el motor real de CircuitPilot, lo que garantiza que cada resultado de herramienta sea verificado y realista. Está publicado bajo licencia Apache-2.0, la misma que el modelo base, y soporta únicamente inglés.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (derivada de Qwen3.5-4B), ajuste fino LoRA fusionado |
-| Parametros totales | 4.326.350.848 |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 32.768 tokens (configuracion recomendada en llama.cpp con `-c 32768`) |
-| Tipos de cuantizacion | Q4_K_M (unico archivo publicado) |
-| Idiomas soportados | Ingles (en) |
+| Arquitectura | Transformer (derivada de Qwen3.5-4B, ajuste LoRA fusionado) |
+| Parametros totales | 4.326.350.848 (aproximadamente 4,3B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 64k tokens (en el notebook de Colab); 32.768 tokens en el ejemplo de llama.cpp |
+| Tipos de cuantizacion | Q4_K_M (4 bits); el repositorio solo distribuye el GGUF Q4_K_M |
+| Idiomas soportados | Inglés (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (`pcbgo-v1-Q4_K_M.gguf`) |
+| Formato de pesos | GGUF (archivo pcbgo-v1-Q4_K_M.gguf, 2,8 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura de Qwen3.5-4B, un transformer decoder-only, sobre el que se aplico un ajuste fino QLoRA con rango 32 sobre todas las capas lineales, entrenando unicamente los turnos del asistente. El entrenamiento se realizo en una sola GPU de 16-20 GB en dos fases de 25 y 125 pasos. Posteriormente, el adaptador LoRA se fusiono con los pesos base y el resultado se cuantizo a Q4_K_M.
+El modelo parte de Qwen3.5-4B, un transformer denso de aproximadamente 4,3 mil millones de parámetros. Sobre esta base se aplicó un ajuste fino QLoRA con rango 32 sobre todas las capas lineales, entrenando únicamente los turnos del asistente. El entrenamiento se realizó en una sola GPU de 16–20 GB, con 25 pasos iniciales más 125 pasos adicionales. Posteriormente, el adaptador LoRA se fusionó con los pesos base y se cuantizó a Q4_K_M para su distribución en formato GGUF.
 
-El dataset de entrenamiento consta de aproximadamente 4.000 conversaciones generadas ejecutando el motor de diseno real de CircuitPilot, de modo que cada resultado de herramienta registrado en las conversaciones es autentico. Los datos incluyen circuitos construidos con componentes reales de JLCPCB, ediciones, pasos de layout de PCB, preguntas, planes, trabajos completos solicitados en una sola peticion y peticiones con errores tipograficos. Solo se conservaron los disenos que superaban las comprobaciones ERC/DRC. No se emplearon datos de usuarios. El modelo esta entrenado para operar con el modo "thinking" desactivado, y la aplicacion CircuitPilot conmuta automaticamente a su conjunto compacto de 30 herramientas cuando detecta un modelo cuyo nombre empieza por `pcbgo`.
+Los datos de entrenamiento consisten en aproximadamente 4.000 conversaciones generadas ejecutando el motor de diseño real de CircuitPilot. Cada resultado de herramienta es real: circuitos construidos con componentes reales de JLCPCB, ediciones, pasos de layout de PCB, preguntas, planes, trabajos completos solicitados en una sola petición y peticiones con errores tipográficos. Solo se conservaron los diseños que pasaban las comprobaciones ERC/DRC. No se utilizaron datos de usuarios. El modelo se entrenó con el modo "thinking" desactivado, por lo que debe ejecutarse de esa manera. La innovación principal no es arquitectónica sino de datos: el uso de un motor de EDA real como generador de trayectorias de herramientas verificadas.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles orientada a tareas de ingenieria electronica.
-- Tool calling y function calling sobre el conjunto compacto de herramientas de CircuitPilot (30 herramientas principales): anadir componentes, cablear, ejecutar ERC/DRC, placement, routing, pours y taladros.
-- Razonamiento multi-paso y ejecucion de agentes: puede encadenar varias llamadas a herramientas para completar un trabajo de diseno de principio a fin en una sola peticion.
-- Diseno de placas a partir de una descripcion: LEDs, reguladores, sensores, reles y amplificadores operacionales.
-- Reparacion de placas defectuosas: diagnostico y correccion de problemas DRC.
-- Routing completo hasta el final y limpieza de errores DRC.
-- Capacidades multilingues: limitadas al ingles.
-- No dispone de vision, audio ni modo thinking (entrenado explicitamente sin el).
+- Generación de esquemáticos a partir de descripciones en lenguaje natural, añadiendo componentes y cableando conexiones.
+- Colocación y ruteo de PCB (placement y routing) mediante llamadas a herramientas del motor CircuitPilot.
+- Verificación de diseño: ejecución de ERC (Electrical Rules Check) y DRC (Design Rules Check), y corrección de problemas detectados.
+- Añadido de planos de cobre (pours) y taladros (holes) en el layout.
+- Tool calling / function calling: el modelo está entrenado específicamente para invocar el conjunto compacto de 30 herramientas principales de CircuitPilot.
+- Diseño de placas concretas: LED, reguladores (LDO), sensores, relés y amplificadores operacionales a partir de una sola petición.
+- Reparación de placas defectuosas: 6 de las 14 tareas del benchmark consisten en reparar diseños rotos.
+- Soporte de conversaciones multiturno con contexto largo (hasta 64k tokens en Colab).
+- Capacidad de recibir peticiones con errores tipográficos y planes de trabajo completos en una sola solicitud.
+- No soporta visión, audio ni modo thinking (entrenado con thinking desactivado).
+- Capacidad limitada para generar esquemáticos novedosos desde cero: el propio autor indica que es demasiado pequeño para ideas completamente nuevas, aunque es eficiente en ruteo y en generar esquemáticos a partir de entradas proporcionadas por el usuario.
 
 ## Casos de uso
 
-- Diseno automatico de placas sencillas a partir de una descripcion: el modelo recibe una peticion en lenguaje natural ("una placa con un LED y una resistencia limitadora") y encadena las llamadas de herramienta necesarias para crear el esquematico, colocar los componentes y rutar la placa. Es adecuado porque fue entrenado con trazas reales del motor de CircuitPilot.
-- Reparacion de placas con errores DRC: dado un diseno roto, el modelo inspecciona los resultados de ERC/DRC y aplica correcciones mediante las herramientas de la aplicacion. Su puntuacion de reparacion en el benchmark propio es de 91,4 sobre 100.
-- Prototipado rapido en entornos educativos: al caber en una GPU T4 de Colab gratuita, permite a estudiantes experimentar con flujos de diseno asistido por IA sin infraestructura propia.
-- Asistente integrado en escritorio con Ollama: mediante un Modelfile que descarga el GGUF del repositorio, se despliega en local y se conecta a la aplicacion de escritorio CircuitPilot a traves de la API compatible con OpenAI en `http://localhost:11434/v1`.
-- Automatizacion de tareas repetitivas de layout: el modelo puede ejecutar pasos de placement, routing, pours y taladros de forma encadenada, reduciendo el trabajo manual en placas de uno o pocos bloques funcionales.
-- Integracion en pipelines de herramientas EDA mediante API compatible con OpenAI: al exponerse con `llama-server` o Ollama, puede conectarse a cualquier cliente que hable el protocolo `/v1`, lo que facilita su inclusion en scripts de generacion y validacion de disenos.
+- Diseño de placas LED sencillas: el usuario describe una placa con LEDs y el modelo añade los componentes, cablea el esquemático, rutea la PCB y ejecuta DRC. Es adecuado porque el benchmark muestra que los diseños LED están entre sus puntos fuertes.
+- Diseño de reguladores de tensión (LDO): a partir de una descripción como "regulador de 3,3 V", el modelo construye el bloque de alimentación completo, lo verifica y lo rutea. El autor recomienda abordar el diseño bloque a bloque, empezando por la alimentación.
+- Integración de sensores y front-ends analógicos: el modelo puede añadir un front-end de sensor (por ejemplo, ECG) sobre un bloque MCU BLE ya existente, siguiendo el flujo modular recomendado.
+- Reparación de placas con errores: dado un diseño roto, el modelo ejecuta ERC/DRC, identifica problemas y aplica correcciones. En el benchmark obtuvo 91,4 en la métrica de reparación.
+- Automatización dentro de la aplicación CircuitPilot: el modelo se conecta mediante API compatible con OpenAI (Ollama en localhost:11434/v1 o llama-server en localhost:8080/v1) y ejecuta el flujo completo de diseño dentro de la app de escritorio o web.
+- Ejecución en entornos sin conexión: la app de escritorio de CircuitPilot para Windows puede descargar el GGUF una vez y ejecutarlo con llama.cpp integrado en GPU NVIDIA, AMD o Intel (vía Vulkan) o en CPU, sin internet ni clave API.
+- Prototipado rápido en Google Colab gratuito: el notebook oficial instala Ollama, descarga el modelo y expone una URL de Cloudflare Tunnel que se conecta directamente a pcbgo.site, permitiendo probar el diseño de placas sin hardware local.
+- Corrección de problemas de DRC en produccion: el modelo puede integrarse en un pipeline que reciba el resultado de un DRC y aplique correcciones iterativas antes de fabricar la placa.
 
 ## Benchmarks y rendimiento
 
-Resultados del CircuitPilot PCB Bench publicado por el autor: 14 tareas (8 placas a partir de descripcion, 6 placas rotas a reparar), puntuacion de 0 a 100 sobre el diseno resultante, 3 ejecuciones por tarea, mismo servidor y thinking desactivado.
+El autor publica el CircuitPilot PCB Bench, con 14 tareas (8 placas a partir de una descripción y 6 placas rotas a reparar). La puntuación del diseño resultante se calcula de 0 a 100 y se promedia sobre las ejecuciones.
 
-| Modelo | Puntuacion | Diseno | Reparacion | Placement | Routing | DRC limpio | Totalmente rutado |
-|---|---|---|---|---|---|---|---|
-| pcbgo v1 | 79,3 | 70,3 | 91,4 | 82 % | 82 % | 25/33 | 32/33 |
-| Qwen3.5-4B (base) | 65,1 | 38,9 | 100 | 57 % | 52 % | 17/33 | 21/33 |
+| Modelo | Score | Design | Repair | Placement | Routing | DRC clean | Fully routed | Tokens / tarea (in · out) |
+|---|---|---|---|---|---|---|---|---|
+| pcbgo v1 (4B) | 80,4 | 72,2 | 91,4 | 82 % | 82 % | 25/33 | 32/33 | 97k · 1,0k |
+| Qwen3.8-27B | 78,6 | 62,5 | 100 | 79 % | 73 % | 8/11 | 9/11 | 143k · 0,9k |
+| Qwen3.6-27B | 77,7 | 61,0 | 100 | 76 % | 73 % | 8/11 | 11/11 | 181k · 2,4k |
+| Qwen3.5-4B (base) | 65,1 | 38,9 | 100 | 57 % | 52 % | 17/33 | 21/33 | 185k · 1,8k |
 
-El autor senala como puntos fuertes las placas de LED, regulador, sensor, rele y amplificador operacional a partir de una sola peticion, el routing hasta el final y la limpieza DRC. Como puntos debiles, las placas multiploque grandes (por ejemplo, un nodo con regulador, sensor y LED) y algunos disenos con el temporizador 555, ademas de la tendencia a repetir una llamada de herramienta que falla.
+Condiciones: todos los modelos locales ejecutados con llama.cpp, Q4_K_M, thinking desactivado y el mismo conjunto compacto de herramientas. pcbgo v1 y el modelo base se evaluaron con 3 ejecuciones × 14 tareas; los modelos de 27B con 1 ejecución × 14 tareas. El autor indica que pcbgo v1 está a la par de los modelos de 27B (ligeramente por delante, dentro del ruido entre ejecuciones) con 1/7 de su tamaño y aproximadamente la mitad de tokens.
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+Puntos fuertes declarados: placas LED, reguladores, sensores, relés y amplificadores operacionales desde una sola petición, ruteo completo y limpieza de DRC. Puntos débiles: placas multi-bloque más grandes (por ejemplo, regulador + sensor + nodo LED) y algunos diseños con 555; puede repetir una llamada de herramienta fallida.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 2,8 GB para los pesos Q4_K_M, mas el espacio de cache KV correspondiente al contexto configurado (32.768 tokens recomendados).
-- GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM para el contexto corto; el autor cita GPU de portatil, una GPU de 16-20 GB para el entrenamiento y una T4 de Google Colab para inferencia.
-- Cabe en GPU de consumo: si, en tarjetas como la T4 de Colab y en GPU de portatil de gama media; el autor no especifica modelos concretos de consumo mas alla de la T4.
-- Opciones de despliegue: Ollama (`ollama create pcbgo-v1 -f Modelfile`), llama.cpp (`llama-server` con `--jinja --chat-template-kwargs '{"enable_thinking":false}' -c 32768 -ngl 99`) y cualquier cliente compatible con la API OpenAI a traves de `/v1`.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia: el GGUF Q4_K_M ocupa 2,8 GB; con overhead de contexto (hasta 64k tokens) se recomienda al menos 6–8 GB de VRAM para un rendimiento cómodo.
+- GPU recomendadas: NVIDIA T4 (GPU gratuita de Colab, probada por el autor), GPUs de portátil con 6–8 GB o más, NVIDIA, AMD e Intel mediante Vulkan en la app de escritorio.
+- Cabe en GPU de consumo: sí; el autor lo describe como "suficientemente pequeño para una GPU de portátil, Ollama en cualquier PC o una GPU gratuita de Google Colab".
+- Opciones de despliegue: Ollama (con Modelfile incluido en el repositorio), llama.cpp (llama-server con --jinja y enable_thinking=false), la app de escritorio CircuitPilot para Windows (llama.cpp integrado) y Google Colab mediante notebook oficial.
+- Latencia y throughput: en Colab T4, la primera llamada tarda 2–3 minutos en calentar la GPU y las respuestas posteriores tardan segundos. No se publican cifras de tokens por segundo ni de latencia por token.
+- Contexto de ejecución: 64k tokens en el notebook de Colab; el ejemplo de llama.cpp usa -c 32768.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Puntuacion PCB Bench | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Score PCB Bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pcbgo v1 | 4,33 B | 32.768 tokens | 79,3 | Apache-2.0 | GGUF en Hugging Face |
-| Qwen3.5-4B (base) | 4 B (aproximado, no confirmado) | no disponible | 65,1 | Apache-2.0 | Hugging Face |
-| Otros modelos especializados en EDA | no disponible | no disponible | no disponible | no disponible | no disponible |
+| pcbgo v1 | 4,3B | 64k (Colab) / 32k (llama.cpp) | 80,4 | Apache-2.0 | GGUF en Hugging Face, Ollama, app CircuitPilot |
+| Qwen3.5-4B (base) | 4,3B | No disponible en la información | 65,1 | Apache-2.0 | Hugging Face |
+| Qwen3.6-27B | 27B (aproximado) | No disponible en la información | 77,7 | No disponible en la información | No disponible en la información |
+| Qwen3.8-27B | 27B (aproximado) | No disponible en la información | 78,6 | No disponible en la información | No disponible en la información |
 
-La unica comparacion documentada por el autor es frente al modelo base Qwen3.5-4B. No se dispone de datos de benchmarks frente a otros modelos especializados en diseno electronico o tool calling en el dominio EDA.
+La comparación se limita a los modelos incluidos en el benchmark del autor. No se dispone de datos de otros modelos especializados en EDA o tool calling para electrónica en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Entrenado y evaluado unicamente en ingles; no se garantiza un comportamiento correcto en castellano ni en otros idiomas.
-- Riesgo de alucinacion en la seleccion de componentes o en la interpretacion de resultados de herramientas; el autor recomienda verificar siempre el resultado con ERC/DRC en la aplicacion antes de encargar una placa.
-- Debilidad documentada en placas multiploque grandes y en algunos disenos con el temporizador 555.
-- Puede repetir indefinidamente una llamada de herramienta que falla, sin corregir el error por si solo.
-- Requiere operar con thinking desactivado; su uso con el modo thinking activado no esta validado.
-- Depende del conjunto compacto de herramientas de CircuitPilot (30 herramientas y prompt corto); fuera de ese formato de herramientas su rendimiento no esta garantizado.
-- La licencia Apache-2.0 cubre los pesos del modelo, pero la aplicacion CircuitPilot/pcbgo.site tiene su propia licencia, independiente de la del modelo.
-- El modelo no ha sido evaluado con benchmarks estandar de razonamiento, codigo o matematicas, por lo que no se puede comparar con modelos generalistas en esas tareas.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente por parte de la comunidad.
+- El propio autor advierte que el modelo es demasiado pequeño para generar esquemáticos nuevos desde cero a partir de ideas novedosas; es eficaz en ruteo y en generar esquemáticos a partir de entradas proporcionadas por el usuario.
+- Debilidad en placas multi-bloque grandes (regulador + sensor + nodo LED) y en algunos diseños con 555.
+- Puede repetir una llamada de herramienta fallida en bucle.
+- Requiere verificación humana: el autor recomienda ejecutar siempre ERC/DRC en la aplicación antes de fabricar una placa.
+- Entrenado y validado únicamente en inglés; no se declara soporte de otros idiomas.
+- Entrenado con thinking desactivado; ejecutarlo con thinking activado puede degradar el comportamiento esperado.
+- Diseñado para el conjunto compacto de 30 herramientas de CircuitPilot; su uso fuera de ese conjunto de herramientas o de la aplicación puede no funcionar correctamente.
+- Riesgo de alucinación en componentes o conexiones no presentes en los datos de entrenamiento (componentes reales de JLCPCB).
+- Licencia Apache-2.0 para los pesos; la aplicación CircuitPilot/pcbgo.site tiene su propia licencia, distinta de la del modelo.
+- No se han publicado datos sobre sesgos demográficos o lingüísticos; al estar entrenado solo con conversaciones de diseño electrónico, su comportamiento fuera de dominio no está caracterizado.
+- El benchmark fue realizado por el propio autor; los modelos de 27B se evaluaron con una sola ejecución, lo que limita la significación estadística de la comparación.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/abdelhayali91/pcbgo-v1
-- Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
-- Repositorio CircuitPilot (codigo de entrenamiento en `finetune/`): https://github.com/Abdelhayali/CircuitPilot/tree/main/finetune
-- Benchmark CircuitPilot PCB Bench: https://github.com/Abdelhayali/CircuitPilot/tree/main/bench
-- Notebook de Google Colab: https://colab.research.google.com/github/Abdelhayali/CircuitPilot/blob/main/finetune/CircuitPilot_4B_Colab.ipynb
-- Aplicacion CircuitPilot: https://pcbgo.site
+- Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
+- Aplicación pcbgo.site (CircuitPilot): https://pcbgo.site
+- Repositorio CircuitPilot en GitHub: https://github.com/Abdelhayali/CircuitPilot
+- Benchmark PCB Bench: https://github.com/Abdelhayali/CircuitPilot/tree/main/bench
+- Código de ajuste fino: https://github.com/Abdelhayali/CircuitPilot/tree/main/finetune
+- Notebook de Colab: https://colab.research.google.com/github/Abdelhayali/CircuitPilot/blob/main/finetune/CircuitPilot_4B_Colab.ipynb
+- App de escritorio CircuitPilot para Windows: https://github.com/Abdelhayali/CircuitPilot/releases/tag/v2026.11.24.1

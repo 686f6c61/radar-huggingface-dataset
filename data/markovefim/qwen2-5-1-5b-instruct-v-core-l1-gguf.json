@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 134,
+  "downloads_30d": 251,
   "trending_score": 0,
   "parameters": 1777088000,
   "parameters_human": "1.78B",
@@ -47,11 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Manual installation steps for older versions of WSL",
-      "url": "https://learn.microsoft.com/en-us/windows/wsl/install-manual",
-      "snippet": "Apr 15, 2026 · Step by step instructions to manually install WSL on older versions of Windows, rather than using the wsl install …Read more"
-    }
-  ]
+  "sources": []
 }

@@ -2,94 +2,101 @@
 
 ## Resumen
 
-Fruit Freshness Classifier (ConvNeXt-Tiny) es un modelo de clasificación de imágenes especializado en detectar el tipo de fruta y su estado de frescura (fresca o podrida) a partir de una fotografía. Lo desarrolla el usuario de Hugging Face hafeezaismail mediante ajuste fino (transfer learning) del modelo base facebook/convnext-tiny-224, un transformer convolucional de 27,8 millones de parámetros. El modelo resuelve un problema de clasificación cerrada de 16 clases que combina la especie de fruta con su estado sanitario aparente.
+Fruit Freshness Classifier es un modelo de clasificación de imágenes basado en ConvNeXt-Tiny y ajustado por transferencia desde el checkpoint `facebook/convnext-tiny-224`. Lo desarrolla el usuario de Hugging Face hafeezaismail y resuelve una tarea acotada: dada una fotografía de una fruta, predecir simultáneamente el tipo de fruta (manzana, plátano, uva, guayaba, azufaifo, naranja, granada o fresa) y su estado (fresca o podrida), en una única etiqueta entre 16 clases posibles. El modelo se publicó en noviembre de 2026 y acumula 195 descargas.
 
-El modelo es relevante en el contexto de visión artificial aplicada a la cadena agroalimentaria: control de calidad en líneas de envasado, inspección en almacenes y prototipos de clasificación automática con hardware modesto. Al derivar de ConvNeXt-Tiny, su huella de memoria y su coste de inferencia son reducidos, lo que permite desplegarlo en GPU de consumo e incluso en CPU para lotes pequeños.
+Arquitectónicamente es una red convolucional pura, sin componente Transformer de atención global, con 27.832.432 parámetros totales y un repositorio de 0,2 GB en formato safetensors. No es un modelo generativo ni multilingüe: no procesa texto ni mantiene conversaciones, por lo que su utilidad se limita a pipelines de visión por computador para inspección visual de producto.
 
-La información publicada es limitada: no hay datos de composición del dataset más allá del número de imágenes, ni detalles sobre el proceso de entrenamiento (hiperparámetros, aumentos de datos, número de épocas). Los resultados declarados por el autor en el conjunto de test reservado son de 0,9917 de accuracy y 0,9916 de macro F1, si bien no se especifica el tamaño exacto de dicho conjunto ni el protocolo de partición.
+Su relevancia práctica está en el ajuste fino eficiente sobre un dataset pequeño (3.200 imágenes) con resultados muy altos reportados por el autor (accuracy 0,9938 y macro F1 0,9937 sobre un conjunto de test del 15 %). Es un ejemplo típico de transfer learning aplicado a control de calidad agroalimentario, con licencia Apache 2.0 que permite uso comercial sin restricciones de atribución adicionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ConvNeXt-Tiny (transformer convolucional, CNN modernizada con bloques tipo transformer) |
+| Arquitectura | ConvNeXt-Tiny (red convolucional pura, familia ConvNeXt) |
 | Parametros totales | 27.832.432 |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de visión, entrada de imagen 224x224 píxeles) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors en precisión original; admite cuantización estándar de PyTorch/ONNX no documentada por el autor) |
-| Idiomas soportados | no aplica (clasificación de imágenes; etiquetas en inglés) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no aplica (modelo de visión; entrada de imagen 224x224 píxeles según el checkpoint base) |
+| Tipos de cuantizacion | no disponible (el repo solo publica safetensors en precisión original; admite cuantización a FP16/INT8 vía herramientas externas, no documentada por el autor) |
+| Idiomas soportados | no disponible (no procesa lenguaje) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
+| Pipeline | image-classification |
+| Modelo base | facebook/convnext-tiny-224 |
+| Dataset de entrenamiento | Project-AgML/fresh_rotten_fruit_classification (config raw, 3.200 imágenes) |
+| Numero de clases | 16 (8 frutas x 2 estados) |
+| Tamano del repositorio | 0,2 GB |
+| Descargas / likes | 195 / 0 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ConvNeXt-Tiny, una red convolucional pura que adopta decisiones de diseño propias de los transformers (convoluciones depthwise de 7x7, normalización LayerNorm, activación GELU y estructura de etapas con proporciones 3:3:9:3). El checkpoint base es facebook/convnext-tiny-224, preentrenado en ImageNet-1k con resolución de entrada de 224x224. Sobre ese checkpoint se ha aplicado ajuste fino supervisado para una cabeza de clasificación de 16 clases.
+El modelo parte de ConvNeXt-Tiny, una arquitectura convolucional moderna que adopta decisiones de diseño propias de los Vision Transformers (parches con kernel 4x4 en el stem, normalización LayerNorm, activación GELU y bloques con convoluciones depthwise de 7x7) manteniendo la eficiencia de una CNN. El checkpoint base `facebook/convnext-tiny-224` se entrenó originalmente sobre ImageNet-1k a resolución 224x224; el autor lo reutiliza como extractor de características y sustituye la cabeza de clasificación por una de 16 salidas.
 
-El conjunto de entrenamiento es la configuración raw del dataset Project-AgML/fresh_rotten_fruit_classification, con 3.200 imágenes según la model card. El autor indica una partición con 15 % de datos reservados para test, pero no detalla el número de épocas, la tasa de aprendizaje, el optimizador, las técnicas de aumento de datos ni si se congelaron capas del backbone. Tampoco se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal u otras), algo esperable en un modelo de clasificación de imágenes.
+El ajuste fino se realizó sobre la configuración `raw` del dataset `Project-AgML/fresh_rotten_fruit_classification`, con 3.200 imágenes etiquetadas en 16 clases que combinan tipo de fruta y estado. La model card no detalla hiperparámetros de entrenamiento (learning rate, número de épocas, tamaño de batch, aumentos de datos, congelación de capas ni estrategia de validación más allá de la partición 85/15). Tampoco se documenta el uso de técnicas adicionales como mixup, cutmix o destilación. No hay información sobre el volumen de cómputo ni sobre las GPU empleadas.
 
 ## Capacidades
 
-- Clasificación de imágenes en 16 clases cerradas: ocho especies de fruta (manzana, plátano, uva, guayaba, azufaifo, naranja, granada y fresa) en estado fresco y en estado podrido.
-- Predicción conjunta de especie y estado de frescura en una sola pasada, sin necesidad de dos modelos en cascada.
-- Salida de probabilidades por clase mediante la pipeline `image-classification` de transformers, lo que permite umbrales de confianza personalizados.
-- Inferencia rápida en CPU y GPU gracias al tamaño reducido del modelo (27,8 M de parámetros).
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni generación de texto.
-- No tiene capacidades multilingües ni de otro tipo: la salida son etiquetas de clase en inglés.
-- No dispone de modo thinking, visión adicional, audio ni otras modalidades.
+- Clasificación de imágenes en 16 clases cerradas que combinan fruta y estado: `fresh_apple`, `fresh_banana`, `fresh_grape`, `fresh_guava`, `fresh_jujube`, `fresh_orange`, `fresh_pomegranate`, `fresh_strawberry` y sus equivalentes `rotten_*`.
+- Predicción conjunta de tipo y frescura en una sola pasada, sin necesidad de dos modelos en cascada.
+- Integración directa con la librería `transformers` mediante `pipeline('image-classification', ...)`.
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` en los tags).
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, generación de texto, código, matemáticas, visión general (captioning, VQA, detección) ni audio.
+- No tiene capacidades multilingües: la salida son etiquetas fijas en inglés definidas en el propio modelo.
+- No dispone de modo "thinking" ni de salida estructurada más allá de la lista de probabilidades por clase que devuelve el pipeline.
 
 ## Casos de uso
 
-- Control de calidad en líneas de envasado de fruta: el modelo se integra en un pipeline de captura de imágenes con cámara industrial y clasifica cada pieza como fresca o podrida, permitiendo descartar automáticamente los ejemplares defectuosos antes del empaquetado.
-- Inspección en almacenes y cámaras frigoríficas: con fotografías tomadas por operarios o por robots móviles, el modelo sirve como triaje rápido para detectar lotes con signos de deterioro y priorizar su salida.
-- Prototipado de aplicaciones móviles de consumo: al ser un modelo de 27,8 M de parámetros, puede ejecutarse en un servidor modesto o convertirse a ONNX para inferencia en dispositivos, permitiendo demos de escaneo de fruta desde el móvil.
-- Investigación agronómica y docencia: sirve como baseline reproducible de transfer learning sobre ConvNeXt-Tiny para experimentos de clasificación fine-grained con datasets pequeños, comparando técnicas de aumento de datos o congelación de capas.
-- Automatización de inventarios en fruterías y mercados: combinado con un sistema de conteo, el modelo puede etiquetar imágenes de estanterías para estimar la proporción de producto en buen estado y detectar mermas.
-- Filtrado previo en datasets de mayor escala: el clasificador puede usarse como etapa de preetiquetado para anotar grandes volúmenes de imágenes de fruta y reducir el coste de etiquetado manual antes de entrenar modelos mayores.
+- Inspección en línea de fruta en almacén: el modelo puede clasificar imágenes capturadas por cámaras fijas sobre cinta transportadora y separar automáticamente piezas frescas de podridas entre las ocho frutas soportadas, usando la etiqueta de mayor probabilidad como señal de descarte.
+- Control de calidad en punto de venta: integrado en una aplicación móvil, permite al operario fotografiar una pieza y obtener en milisegundos una etiqueta de frescura, útil para auditorías rápidas de lineal en supermercados.
+- Triaje previo en plantas de envasado: como primer filtro barato antes de sistemas más caros (visión hiperespectral, sensores de gas), reduciendo el volumen de imágenes que llegan a modelos más pesados.
+- Etiquetado asistido de datasets: el modelo puede preanotar grandes lotes de imágenes de fruta para que un humano solo revise los casos dudosos, acelerando la construcción de nuevos conjuntos de datos.
+- Docencia y prototipado de transfer learning: por su tamaño reducido (27,8 M de parámetros) y licencia permisiva, sirve como ejemplo reproducible de ajuste fino de ConvNeXt en cursos de visión por computador.
+- Monitorización en agricultura de precisión: desplegado en dispositivos de borde con cámara (Raspberry Pi con acelerador, Jetson Nano) para estimar el estado de la cosecha en campo, siempre que las condiciones de iluminación y fondo se controlen.
+- Pruebas de regresión visual en aplicaciones agroalimentarias: al ser un modelo pequeño y determinista, encaja en pipelines de CI para verificar que los cambios en el preprocesado de imagen no degradan la clasificación.
 
 ## Benchmarks y rendimiento
 
 | Metrica | Valor | Conjunto |
 |---|---|---|
-| Accuracy | 0,9917 | Test reservado (15 % de los datos, tamaño no especificado) |
-| Macro F1 | 0,9916 | Test reservado (15 % de los datos, tamaño no especificado) |
+| Accuracy | 0,9938 | Test retenido (15 % del dataset) |
+| Macro F1 | 0,9937 | Test retenido (15 % del dataset) |
 
-No se han publicado resultados comparativos con otros modelos en la información disponible. Las cifras anteriores proceden únicamente de la model card del autor y no han sido verificadas de forma independiente.
+No se han publicado resultados de benchmarks en la informacion disponible más allá de estas dos métricas reportadas por el autor. No hay comparación con otros modelos en la model card ni datos de latencia o throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP32: aproximadamente 110 MB para los pesos (27,8 M de parámetros), más el espacio de activaciones, que para un lote pequeño a 224x224 se mantiene por debajo de 1 GB en total.
-- VRAM estimada en FP16: alrededor de 55 MB para los pesos, con un consumo total de inferencia inferior a 500 MB para lotes pequeños.
-- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; funcionan bien RTX 3060, RTX 4090, A100 o H100, aunque estas dos últimas están sobredimensionadas para este modelo.
-- Cabe holgadamente en GPU de consumo, incluidas GTX 1650, RTX 3050 y modelos integrados con soporte CUDA; también es viable en CPU para lotes pequeños.
-- Opciones de despliegue: pipeline de transformers, TorchServe, ONNX Runtime, TensorRT y exportación a formatos móviles; no se documenta soporte específico para vLLM, llama.cpp, Ollama o TGI, que no aplican a modelos de clasificación de imágenes.
-- Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo se espera un throughput alto en GPU moderna, pero no hay cifras publicadas.
+- VRAM estimada para inferencia en FP32: en torno a 110 MB solo para pesos (27,8 M de parámetros x 4 bytes), más activaciones; en la práctica, menos de 1 GB en cualquier GPU moderna.
+- En FP16: aproximadamente 56 MB de pesos; en INT8: unos 28 MB.
+- GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Funciona sin problemas en RTX 3060, RTX 4060, RTX 4090, A100, H100 y GPUs integradas modestas.
+- Cabe holgadamente en GPU de consumo e incluso en CPU para inferencia por lotes pequeños; también es viable en dispositivos de borde (Jetson Nano, Raspberry Pi 5 con acelerador Coral o similar).
+- Opciones de despliegue: `transformers` con `pipeline`, TorchServe, Triton Inference Server, ONNX Runtime tras exportación, y despliegue gestionado en Hugging Face Inference Endpoints (el modelo está marcado como `endpoints_compatible`). No se documenta soporte nativo en vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
+- Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera latencia de milisegundos por imagen en GPU y decenas de milisegundos en CPU, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hafeezaismail/fruit-freshness-convnext | 27,8 M | 224x224 | Clasificación fruta fresca/podrida (16 clases) | Apache 2.0 | Hugging Face |
-| facebook/convnext-tiny-224 | 28,6 M | 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
-| google/vit-base-patch16-224 | 86 M | 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
-| microsoft/resnet-50 | 25,6 M | 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
+| hafeezaismail/fruit-freshness-convnext | 27,8 M | Imagen 224x224 | Clasificación fruta/estado (16 clases) | Apache 2.0 | Hugging Face |
+| facebook/convnext-tiny-224 | 28,6 M aprox. | Imagen 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
+| ResNet-50 (ImageNet) | 25,6 M | Imagen 224x224 | Clasificación ImageNet-1k | Varía según checkpoint | Hugging Face / torchvision |
+| ViT-Base/16 (ImageNet) | 86 M | Imagen 224x224 | Clasificación ImageNet-1k | Varía según checkpoint | Hugging Face |
 
-Los tres modelos de referencia son clasificadores genéricos de ImageNet y no ofrecen la tarea específica de frescura de fruta; la comparación relevante es de arquitectura, tamaño y licencia, no de rendimiento en la tarea concreta. No se dispone de otros clasificadores públicos de frescura de fruta con los que comparar directamente en la información proporcionada.
+La comparación directa con alternativas específicas de clasificación de frescura de fruta no está disponible: no se han identificado en la información proporcionada otros checkpoints públicos de la misma tarea. Frente al checkpoint base, este modelo cambia la cabeza de 1.000 a 16 clases y está especializado en el dominio; frente a ResNet-50 y ViT-Base, ofrece menor número de parámetros que ViT-Base y una arquitectura convolucional moderna, pero no hay datos de rendimiento comparables en la model card.
 
 ## Limitaciones y advertencias
 
-- Entrenado con un dataset pequeño (3.200 imágenes) y fondos limpios; el autor advierte que puede ser poco fiable con fondos desordenados, iluminación inusual u otras frutas distintas de las 16 clases.
-- Solo reconoce las ocho especies listadas; cualquier fruta fuera de ese conjunto se clasificará erróneamente dentro de una de las clases conocidas.
-- No es una herramienta de seguridad alimentaria: el autor lo indica explícitamente. La clasificación de "podrido" es visual y aparente, no un análisis microbiológico.
-- Riesgo de sobreajuste al dataset de origen: las métricas de 0,9917 de accuracy proceden de un test del mismo dataset y no garantizan generalización a imágenes reales de producción.
-- No se documentan sesgos demográficos ni geográficos, pero al ser un modelo de visión entrenado con un dataset concreto puede heredar sesgos de composición (por ejemplo, variedades de fruta, iluminación o cámaras específicas).
-- Riesgo de alucinación en el sentido de falsos positivos/negativos con alta confianza: al no haber calibración publicada, conviene validar los umbrales de probabilidad en el dominio de despliegue.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero no hay garantías del autor ni soporte; conviene conservar el aviso de licencia y citar el modelo base.
-- No hay información sobre el proceso de entrenamiento, lo que dificulta la reproducibilidad y la auditoría técnica.
+- Entrenado con solo 3.200 imágenes y, según el autor, con fondos limpios; el rendimiento puede degradarse con escenas desordenadas, iluminación atípica u oclusiones.
+- Solo conoce las ocho frutas listadas; cualquier otra fruta o variedad no contemplada se clasificará erróneamente en una de las 16 clases.
+- No es una herramienta de seguridad alimentaria: el autor lo advierte explícitamente. No debe usarse para decidir si un alimento es apto para consumo humano.
+- Riesgo de sobreajuste al dataset: la accuracy de 0,9938 sobre un test del 15 % sugiere una partición posiblemente poco desafiante; no se reportan métricas de validación cruzada ni de generalización a dominios externos.
+- No hay información sobre sesgos demográficos (no aplica directamente, al no procesar personas) ni sobre sesgos de dominio (variedades regionales de fruta, estados intermedios de maduración).
+- Licencia Apache 2.0: permite uso comercial y modificación, pero conviene revisar la licencia del dataset de origen (`Project-AgML/fresh_rotten_fruit_classification`) antes de explotar el modelo en producción, ya que la model card no detalla la licencia del conjunto de datos.
+- No soporta entrada de texto ni instrucciones; cualquier caso de uso conversacional o multimodal queda fuera de su alcance.
+- No se documentan limitaciones de contexto ni de idioma porque no aplican, pero tampoco se documenta el preprocesado exacto (normalización, redimensionado) más allá de heredar el del checkpoint base.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/hafeezaismail/fruit-freshness-convnext
 - Modelo base: https://huggingface.co/facebook/convnext-tiny-224
-- Dataset: https://huggingface.co/datasets/Project-AgML/fresh_rotten_fruit_classification
-- Paper de ConvNeXt: https://arxiv.org/abs/2201.03545
-- Repositorio oficial de ConvNeXt: https://github.com/facebookresearch/ConvNeXt
+- Dataset de entrenamiento: https://huggingface.co/datasets/Project-AgML/fresh_rotten_fruit_classification
+- Paper de ConvNeXt (A ConvNet for the 2020s): https://arxiv.org/abs/2201.03545
+- Repositorio oficial de ConvNeXt (facebookresearch): https://github.com/facebookresearch/ConvNeXt

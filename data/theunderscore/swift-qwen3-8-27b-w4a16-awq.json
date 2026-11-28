@@ -53,31 +53,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Twitch",
-      "url": "http://de.twitch.tv/",
-      "snippet": ""
-    },
-    {
-      "title": "Twitch",
-      "url": "https://www.twitch.tv/?lang=de-DE",
-      "snippet": "Twitch ist ein interaktiver Livestreaming-Dienst für eine große Bandbreite an Inhalten wie Games, Entertainment, Sport, Musik und …"
-    },
-    {
-      "title": "Twitch",
-      "url": "https://www.twitch.tv/*/",
-      "snippet": "Twitch is the world's leading video platform and community for gamers."
-    },
-    {
-      "title": "Twitch",
-      "url": "http://app.twitch.tv/",
-      "snippet": "Twitch App for iOS Watch games you love, follow new channels, and chat with other players anytime, anywhere."
-    },
-    {
-      "title": "Twitch - YouTube",
-      "url": "https://www.youtube.com/Twitch",
-      "snippet": "#Twitch is a #livestreaming service where millions of people come together live every day to chat, interact, and make their own …"
-    }
-  ]
+  "sources": []
 }

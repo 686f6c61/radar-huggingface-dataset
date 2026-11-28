@@ -1,0 +1,48 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Curioxity-9B-GGUF",
+  "slug": "mradermacher-curioxity-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Curioxity-9B-GGUF",
+  "created_at": "2026-11-27T23:11:43.000Z",
+  "updated_at": "2026-11-27T23:43:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:harsha2715/Curioxity-9B",
+    "base_model:quantized:harsha2715/Curioxity-9B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81828754304,
+  "storage_human": "81.8 GB",
+  "context_length": 262144,
+  "base_model": "harsha2715/Curioxity-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

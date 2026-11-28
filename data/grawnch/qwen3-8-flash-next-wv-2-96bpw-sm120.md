@@ -2,115 +2,113 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-WV-2.96bpw-SM120 es una cuantización de precisión mixta (2,96 bits por peso en los expertos enrutados) del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario Grawnch. Se distribuye como un checkpoint autocontenido de 79,50 GB que incluye los pesos cuantizados, una tabla de embeddings posicionales (PLE) en Q4_0 de 28,80 GB y un drafter especulativo DFlash2 calibrado de 563,8 MB, junto con un wheel de runtime SASS-only para GPUs NVIDIA Blackwell (sm_120).
+Qwen3.8-Flash-Next-WV-2.96bpw-SM120 es una cuantizacion de 2,96 bits por peso del modelo Qwen/Qwen3.8-Flash-Next, un transformer MoE hibrido de 180.000 millones de parametros totales publicado por Alibaba Qwen y adaptado aqui por el usuario independiente Grawnch. El checkpoint empaqueta los pesos cuantizados con un runtime propietario (wv_universal_runtime) y un drafter especulativo DFlash2 calibrado, todo autocontenido en 79,50 GB. Su proposito es permitir servir un modelo de 180B en una unica GPU Blackwell de 96 GB (RTX PRO 6000) o, en modo hibrido, en una RTX 5090 de 32 GB con al menos 64 GB de RAM de sistema.
 
-El modelo base es un transformer híbrido MoE de 180B parámetros totales con 48 capas: 36 capas Gated DeltaNet (GDN), 12 capas Qwen Sparse Attention (QSA), 512 expertos enrutados más 1 compartido y 4 flujos de Hyper-Connections (mHC). La cuantización Wave-Quant v6.2 reduce el peso en disco por debajo de la alternativa UD-Q2_K_XL (79,58 GB) manteniendo una divergencia KL inferior y mayor acuerdo Top-1 frente a la referencia BF16.
+La relevancia del lanzamiento esta en el binomio tamano-calidad: segun la model card, ocupa menos disco que una cuantizacion GGUF UD-Q2_K_XL (79,58 GB) pero logra menor divergencia KL y mayor acuerdo Top-1 frente a la referencia BF16 en 16.384 tokens de validacion ciega. Ademas incluye decodificacion especulativa integrada que multiplica por 2-4 la velocidad de generacion en un solo flujo. Es, por tanto, una pieza pensada para despliegue de inferencia en hardware consumer de gama alta o workstation, no para entrenamiento.
 
-Su relevancia práctica radica en que permite ejecutar un modelo de 180B en una única GPU Blackwell de 96 GB (RTX PRO 6000) con 57,27 GiB de VRAM residente, o en una RTX 5090 de 32 GB en modo híbrido con CPU, alcanzando entre 240 y 535 tok/s según lote y configuración gracias a la decodificación especulativa DFlash2.
+La arquitectura subyacente combina 48 capas hibridas (36 Gated DeltaNet y 12 Qwen Sparse Attention), 512 expertos enrutados mas 1 compartido y Hyper-Connections de 4 flujos. La licencia declarada es Apache 2.0. La informacion disponible no detalla la longitud de contexto nativa del modelo base ni los idiomas soportados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido MoE: 36 capas Gated DeltaNet (GDN) + 12 capas Qwen Sparse Attention (QSA), 4 flujos mHC Hyper-Connections |
-| Parametros totales | 180B (modelo base) |
-| Parametros activos | 512 expertos enrutados + 1 compartido (número de activos no disponible) |
-| Longitud de contexto | Hasta 120K tokens verificados en pruebas multi-needle (máximo exacto no disponible) |
-| Tipos de cuantizacion | Wave-Quant v6.2 a 2,96 bpw en expertos enrutados; PLE en Q4_0; drafter DFlash2 en SWZ4 |
+| Arquitectura | Transformer MoE hibrido: 36 capas Gated DeltaNet (GDN) + 12 capas Qwen Sparse Attention (QSA), 512 expertos enrutados + 1 compartido, Hyper-Connections mHC de 4 flujos |
+| Parametros totales | 180.000 millones (modelo base) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible en la informacion proporcionada (el runtime se ha verificado con max-seq 8192 y prefill hasta 32.768 tokens) |
+| Tipos de cuantizacion | 2,96 bpw (wave-quant WV6); PLE en Q4_0; KV cache opcional FP4 (e2m1 hibrido) en Blackwell |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (checkpoint cuantizado) + wheel de runtime `qfn_sm120_unified-22.5.0` |
+| Formato de pesos | safetensors (checkpoint cuantizado) + runtime SASS-only sm_120 en wheel |
+| Tamano del checkpoint | 79,50 GB (79.499.755.138 bytes), incluye 28,80 GB de PLE Q4_0 y 563,8 MB de drafter DFlash2 |
+| Hardware objetivo | NVIDIA Blackwell sm_120 (RTX PRO 6000 96 GB o RTX 5090 32 GB en modo hibrido) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next combina dos mecanismos de atención en una pila de 48 capas: 36 capas Gated DeltaNet, un mecanismo de atención lineal con estado recurrente, y 12 capas Qwen Sparse Attention (QSA) con selección top-2048 tokens. La capa MoE emplea 512 expertos enrutados más uno compartido, y el bloque incorpora 4 flujos de Hyper-Connections (mHC) para el flujo de información entre capas. Los detalles de composición del dataset de entrenamiento, número de tokens y si hubo RLHF/DPO no están disponibles en la información proporcionada.
+El modelo base Qwen3.8-Flash-Next es un transformer de mezcla de expertos con atencion hibrida: 36 de sus 48 capas usan Gated DeltaNet, un mecanismo de estado recurrente lineal, y las 12 restantes emplean Qwen Sparse Attention. Cada capa MoE dispone de 512 expertos enrutados mas uno compartido, y el bloque incorpora Hyper-Connections de 4 flujos (mHC), una variante de conexiones residuales multi-flujo. Esta combinacion busca reducir el coste de atencion en contextos largos manteniendo capacidad de recuperacion exacta en las capas QSA.
 
-La innovación principal de esta ficha es la cuantización Wave-Quant v6.2, que asigna 2,96 bits por peso a los expertos enrutados y mantiene una divergencia KL media de 0,13178 frente a BF16 sobre 16.384 tokens de validación ciega, con un acuerdo Top-1 del 90,44% y Top-5 del 99,18%. El paquete incluye además un drafter especulativo DFlash2 calibrado (SWZ4, 563,8 MB) que permite decodificación especulativa con árbol, y un wheel de runtime compilado solo en SASS para sm_120 que expone servidores compatibles con OpenAI y Anthropic SSE, tool calling incremental, presupuesto de tokens de pensamiento y caché KV FP4 opcional.
+Sobre el entrenamiento del modelo base no se aporta informacion en la documentacion disponible: no se detalla el volumen de tokens, la composicion del corpus ni si hubo fases de RLHF o DPO. Lo que si documenta el autor es el proceso de cuantizacion: pesos a 2,96 bits por peso con el esquema wave-quant, PLE (probablemente embeddings posicionales o de capa) en Q4_0 y calibracion del drafter especulativo DFlash2 contra la referencia BF16. El runtime v22.5.0 es SASS-only para sm_120, compilado para Python 3.13 y CUDA 13.0, e incluye soporte nativo de KV cache FP4 en Blackwell para duplicar la capacidad de contexto en VRAM.
 
 ## Capacidades
 
-- Generación de texto conversacional y de formato largo con pipeline `text-generation`.
-- Razonamiento con modo de pensamiento (`<think>...</think>`) y control mediante `thinking_token_budget`.
-- Tool calling / function calling con `tools` e `tool_calls` incrementales en la API OpenAI SSE.
-- Soporte de agentes multi-paso a través de los endpoints `/v1/chat/completions`, `/v1/messages` (Anthropic) y `/v1/responses`.
-- Generación de código, incluyendo modo FIM (fill-in-the-middle) en `/v1/completions`.
-- Salida estructurada mediante `response_format` con JSON schema y FSM.
-- Recuperación en contexto largo: recall exacto 3/3 en pruebas multi-needle a 16,7K, 100K y 120K tokens.
-- Decodificación especulativa con árbol (DFlash2) y muestreo `n > 1` con Copy-on-Write.
-- Capacidades multilingües: no disponible.
+- Generacion de texto conversacional y continuacion de texto (pipeline text-generation).
+- Razonamiento con modo thinking: el servidor admite `thinking_token_budget` y `--inline-think` para emitir el bloque `` dentro de `delta.content`.
+- Tool calling y function calling: soporta el parametro `tools` y devuelve `tool_calls` incrementales en la API compatible con OpenAI.
+- Salida estructurada: `response_format` con JSON schema validado mediante FSM.
+- Generacion multiple: parametro `n > 1` en `/v1/chat/completions`.
+- Relleno en medio (FIM) a traves del endpoint `/v1/completions`.
+- Compatibilidad con APIs OpenAI (chat completions, responses, completions) y Anthropic Messages (para Claude Code).
+- Decodificacion especulativa integrada con el drafter DFlash2 para acelerar la generacion.
+- Capacidades multilingues: no disponible en la informacion proporcionada.
+- Vision y audio: no disponible; no se mencionan en la documentacion.
 
 ## Casos de uso
 
-- Asistente conversacional de largo contexto: el modelo mantiene recall exacto 3/3 a 120K tokens, lo que permite resumir o consultar documentos extensos (contratos, expedientes, bases de código) en una sola ventana sin fragmentación.
-- Generación de código en producción: el endpoint `/v1/completions` con modo FIM y el tool calling incremental permiten integrarlo en pipelines de CI/CD para autocompletado, revisión de parches y generación de tests.
-- Agente autónomo con herramientas: la API compatible con OpenAI y Anthropic SSE, junto con `tool_calls` incrementales, facilita orquestar agentes multi-paso que invocan APIs externas, shells o bases de datos.
-- Despliegue en una sola GPU de 96 GB: con 57,27 GiB de VRAM residente en modo `all_vram`, un RTX PRO 6000 puede servir un modelo de 180B con 535 tok/s post-TTFT en lote 8, adecuado para equipos pequeños sin clúster.
-- Despliegue en estación de trabajo con RTX 5090: el modo `--force-32gb` con CPU-cold doorbell permite ejecutar el modelo en 32 GB de VRAM más 64 GB de RAM host, útil para prototipado y evaluación local.
-- Extracción de datos estructurados: `response_format` con JSON schema y FSM garantiza salidas conformes al esquema, útil para parsing de documentos, clasificación y enriquecimiento de registros.
-- Atención al cliente automatizada: el soporte multi-turno con contexto largo y el modo de pensamiento acotado por `thinking_token_budget` permiten conversaciones con historial extenso y control de coste por turno.
+- Servicio de chat en una unica GPU de workstation: con 79,50 GB de checkpoint y 47,20 GiB en VRAM, el modelo cabe entero en una RTX PRO 6000 Blackwell de 96 GB y expone un servidor compatible con OpenAI, lo que permite sustituir un endpoint en la nube por inferencia local con privacidad de datos.
+- Asistente de codigo integrado en IDE: el endpoint `/v1/completions` con FIM y el tool calling incremental permiten construir autocompletado y edicion multi-archivo; la decodificacion especulativa alcanza 266,48 tok/s en codigo segun las mediciones del autor.
+- Generacion de JSON estructurado en pipelines de datos: el `response_format` con JSON schema FSM garantiza salidas validas sin post-procesado, util para extraccion de entidades o enriquecimiento de registros a granel.
+- Agentes multi-paso con herramientas: el soporte de `tool_calls` incrementales y de la API Responses de OpenAI facilita orquestar agentes que encadenan busquedas, ejecucion de codigo y llamadas a APIs internas.
+- Razonamiento matematico y analisis: el modo thinking con presupuesto de tokens configurable y los 372,60 tok/s especulativos en matematicas lo hacen viable para resolver problemas paso a paso en lotes.
+- Despliegue en estacion de trabajo con RTX 5090: el modo `--force-32gb` permite ejecutar el modelo en 32 GB de VRAM con 64 GB de RAM de sistema, adecuado para prototipado y demos sin adquirir hardware de centro de datos.
+- Servicio de inferencia por lotes: con decodificacion batcheada de 762,9 tok/s a B=4 y 1.960,2 tok/s a B=16 en contexto de 2K, sirve para clasificacion, resumen o generacion masiva en una sola maquina.
 
 ## Benchmarks y rendimiento
 
-| Suite / Métrica | BF16 puro | WV-2.96bpw (79,50 GB) | UD-Q2_K_XL (79,58 GB) |
-|---|---|---|---|
-| All_Val_16384 KLD (↓) | 0,00000 | 0,13178 | 0,13489 |
-| All_Val_16384 Top-1 / Top-5 | 100,00% / 100,00% | 90,44% / 99,18% | 89,74% / 99,02% |
-| All_Val_16384 PPL (ΔPPL) | 2,9152 | 3,0110 (+0,0958) | 2,8626 (-0,0427) |
-| WT2_1024 KLD / Top-1 / Top-5 | 0,00000 (2,3006 PPL) | 0,22731 / 88,00% / 98,73% | 0,24030 / 87,56% / 98,29% |
-| WT2_2048 KLD / Top-1 / Top-5 | 0,00000 (2,1556 PPL) | 0,20373 / 89,20% / 98,85% | 0,20982 / 88,78% / 98,56% |
-| External_HeldOut KLD / Top-1 / Top-5 | 0,00000 (7,8788 PPL) | 0,10173 / 88,42% / 99,02% | 0,09583 / 87,10% / 98,97% |
-| SelfGen_MathCode KLD / Top-1 / Top-5 | 0,00000 (1,9729 PPL) | 0,01792 / 94,92% / 99,98% | 0,02409 / 94,28% / 99,98% |
+La model card no incluye resultados de benchmarks estandar (MMLU, HumanEval, GSM8K). Lo que publica son metricas de fidelidad de cuantizacion frente a la referencia BF16 en validacion ciega, y mediciones de throughput del runtime.
 
-| Prueba de contexto largo | Resultado |
-|---|---|
-| Perplejidad QSA 8K (top-2048 vs. denso exacto) | 2,78106 vs. 2,78018 (KLD 6K–8K = 0,02834) |
-| Fidelidad QSA 32K (32.768 tokens) | KLD 0,00110 / Top-1 100,00% |
-| Recall multi-needle 16,7K / 100K / 120K | 3/3 / 3/3 / 3/3 (100%) |
+| Metrica de fidelidad | BF16 | WV 2.96bpw | UD-Q2_K_XL | EXL3 3.05bpw | ISTA IQ3_S |
+|---|---|---|---|---|---|
+| KLD media All_Val_16384 (menor mejor) | 0,00000 | 0,13178 | 0,13489 | 0,09374 | 0,15075 |
+| Top-1 / Top-5 All_Val_16384 | 100% / 100% | 90,44% / 99,18% | 89,74% / 99,02% | 91,95% / 99,49% | 89,81% / 99,14% |
+| PPL All_Val_16384 | 2,9152 | 3,0110 | 2,8626 | 2,9293 | 2,9735 |
+| KLD WT2_1024 | 0,00000 | 0,22731 | 0,24030 | 0,15682 | 0,23298 |
+| KLD WT2_2048 | 0,00000 | 0,20373 | 0,20982 | 0,14646 | 0,23223 |
 
-| Workload / configuración | Resultado observado |
+| Throughput verificado (RTX PRO 6000, sm_120a, v1.5.1) | Medicion |
 |---|---|
-| Tamaño total del checkpoint | 79,50 GB (79.499.755.138 B) |
-| VRAM residente en GPU (`all_vram`) | 57,27 GiB (+ 26,82 GiB PLE en host-pinned) |
-| Paridad greedy M=1 vs. árbol especulativo | 96/96 (100,0%) |
-| B=1 especulativo (temp 0,0 / 0,6 / código directo) | 240,99 / 250,52 / 289,81 tok/s (tau medio 4,12–4,94) |
-| B=2 especulativo | 304,82 tok/s sostenido (383,17 tok/s HW bruto, tau 4,31) |
-| B=4 especulativo | 443,00 tok/s sostenido (547,85 tok/s HW bruto; 562,64 tok/s código directo) |
-| B=8 HTTP SSE en vivo | 534,94 tok/s post-TTFT (507,40 e2e, 0,275 s TTFT; 711,63 tok/s HW bruto, tau 4,77) |
+| Decodificacion simple M=1, B=1 | 109,96 tok/s |
+| Decodificacion especulativa B=1 | codigo 266,48; matematicas 372,60; JSON 444,90; prosa 212,20 tok/s |
+| Decodificacion batcheada (2K contexto) | 762,9 tok/s (B=4); 1.361,8 tok/s (B=8); 1.960,2 tok/s (B=16) |
+| Prefill S=512 | 2.927,1 tok/s (174,92 ms) |
+| Prefill S=2048 | 6.101,1 tok/s (335,67 ms) |
+| Prefill S=8192 | 7.583,0 tok/s (1.080,31 ms) |
+| Prefill S=32768 | 7.414,3 tok/s (4.419,55 ms) |
 
 ## Requisitos de hardware
 
-- VRAM estimada: 57,27 GiB residentes en GPU en modo `all_vram`; el PLE Q4_0 (26,82 GiB) reside en memoria host pinned.
-- GPU recomendadas: NVIDIA RTX PRO 6000 Blackwell (96 GB) para modo todo-VRAM; NVIDIA RTX 5090 (32 GB) con al menos 64 GB de RAM host para modo híbrido `--force-32gb`.
-- Requisito de arquitectura: exclusivamente Blackwell `sm_120`; el wheel es SASS-only para `sm_120`, por lo que no funciona en Ampere, Ada ni Hopper.
-- Requisitos de software: Linux x86_64, Python 3.13, PyTorch con CUDA 13.0, `transformers` y `safetensors`.
-- Cabe en GPU de consumo: sí, en RTX 5090 (32 GB) mediante modo híbrido CPU-cold doorbell.
-- Opciones de despliegue: servidor propio `qfn_sm120_unified.serve` (v22.5.0) con endpoints OpenAI SSE/JSON, Anthropic Messages SSE, OpenAI Responses, completions con FIM, `/health` y `/metrics` Prometheus. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia y throughput: TTFT de 0,275 s y 534,94 tok/s post-TTFT en B=8; 240,99 tok/s en B=1 con temperatura 0,0.
-- Caché KV: opción `--kv-mode fp4_e2m1_hybrid` para duplicar la capacidad de KV cache usando FP4 nativo de Blackwell.
+- VRAM estimada: 47,20 GiB en modo todo-VRAM segun la model card; el checkpoint completo ocupa 79,50 GB en disco.
+- GPU soportadas: exclusivamente NVIDIA Blackwell con capacidad de computo sm_120. La model card cita RTX PRO 6000 de 96 GB para modo todo-VRAM y RTX 5090 de 32 GB para modo hibrido `--force-32gb` (requiere al menos 64 GB de RAM de sistema).
+- GPU consumer: si, la RTX 5090 de 32 GB mediante el modo hibrido; no hay soporte mencionado para generaciones anteriores (Ampere, Ada).
+- Software: Linux x86_64 (o Windows segun el runtime universal), Python 3.13, CUDA 13.0 con PyTorch, transformers y safetensors; el runtime se instala desde el wheel `wv_runtime_installer-1.5.2` y el servidor se lanza con `python -m qfn_sm120_unified.serve`.
+- Opciones de despliegue: servidor propio `qfn_sm120_unified.serve` con endpoints OpenAI y Anthropic; no se menciona compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: ver tabla de benchmarks; prefill de 512 tokens en 174,92 ms y decodificacion simple de 109,96 tok/s en RTX PRO 6000.
+- Optimizacion opcional: `--kv-mode fp4_e2m1_hybrid` duplica la capacidad de contexto en VRAM usando KV cache FP4 nativa de Blackwell.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | KLD (All_Val_16384) | Top-1 | Licencia | Disponibilidad |
+| Modelo | Parametros | Tamano en disco | KLD All_Val_16384 | Top-1 | Licencia | Formato |
 |---|---|---|---|---|---|---|
-| WV-2.96bpw-SM120 (esta ficha) | 180B (MoE) | hasta 120K verificado | 0,13178 | 90,44% | Apache 2.0 | Hugging Face, runtime propio sm_120 |
-| UD-Q2_K_XL | 180B (MoE) | no disponible | 0,13489 | 89,74% | Apache 2.0 (heredada) | Hugging Face |
-| BF16 puro (Qwen3.8-Flash-Next) | 180B (MoE) | no disponible | 0,00000 | 100,00% | Apache 2.0 | Hugging Face |
+| WV 2.96bpw-SM120 (este) | 180B totales | 79,50 GB | 0,13178 | 90,44% | Apache 2.0 | safetensors + runtime sm_120 |
+| UD-Q2_K_XL | 180B totales | 79,58 GB | 0,13489 | 89,74% | Apache 2.0 (heredada) | GGUF |
+| EXL3 3.05bpw_h5_ng5 | 180B totales | 85,14 GB | 0,09374 | 91,95% | Apache 2.0 (heredada) | EXL3 |
+| ISTA IQ3_S | 180B totales | 83,62 GB | 0,15075 | 89,81% | Apache 2.0 (heredada) | GGUF |
 
-La comparativa se limita a las variantes del mismo modelo base presentes en la información proporcionada; no se dispone de datos de benchmarks frente a otros modelos de la categoría.
+Frente a las alternativas, este checkpoint es el mas pequeno de los cuatro comparados y supera en fidelidad a UD-Q2_K_XL e ISTA IQ3_S, aunque EXL3 3.05bpw logra mejor KLD y Top-1 a costa de 5,64 GB adicionales. La diferencia clave es la dependencia exclusiva de hardware Blackwell sm_120, frente a la portabilidad de GGUF o EXL3.
 
 ## Limitaciones y advertencias
 
-- La cuantización a 2,96 bpw introduce degradación medible: KLD de 0,13178 y Top-1 del 90,44% frente a BF16, con ΔPPL de +0,0958 en la suite principal.
-- En `External_HeldOut` el KLD es ligeramente superior al de UD-Q2_K_XL (0,10173 vs. 0,09583), aunque el Top-1 es mejor; el rendimiento no domina en todas las métricas.
-- Dependencia estricta de hardware Blackwell `sm_120`: el wheel SASS-only no funciona en generaciones anteriores de NVIDIA, lo que limita portabilidad y despliegue en clústeres existentes.
-- Requiere Python 3.13 y CUDA 13.0, lo que puede entrar en conflicto con stacks de producción más conservadores.
-- El modo `--force-32gb` en RTX 5090 depende de al menos 64 GB de RAM host y del mecanismo CPU-cold doorbell; el rendimiento en ese modo no se detalla en la información disponible.
-- Idiomas soportados no disponibles: no se puede confirmar cobertura multilingüe ni calidad por idioma.
-- Riesgo de alucinación inherente al modelo base y potencialmente amplificado por la cuantización agresiva; no se han publicado evaluaciones de sesgo en la información disponible.
-- El repo registra 0 descargas y 0 likes en el momento de la ficha, por lo que no hay validación comunitaria independiente.
-- La licencia Apache 2.0 permite uso comercial, pero el wheel de runtime y el drafter DFlash2 son componentes del autor cuya madurez y soporte a largo plazo no están garantizados.
+- Dependencia de hardware: el runtime es SASS-only para sm_120; no funciona en GPUs Ampere, Ada ni en Blackwell con otra capacidad de computo. Esto limita drasticamente el hardware desplegable.
+- Ecosistema cerrado: no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI; el despliegue requiere el servidor propietario `qfn_sm120_unified.serve`.
+- Perdida de fidelidad por cuantizacion: la KLD media de 0,13178 y el Top-1 del 90,44% implican que aproximadamente uno de cada diez tokens difiere del modelo BF16; en tareas sensibles a la precision puede ser insuficiente.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje; no se documentan evaluaciones especificas de veracidad ni de sesgos.
+- Idiomas y contexto nativo: no se especifican en la informacion disponible, por lo que no puede garantizarse el rendimiento multilingue ni la ventana de contexto real del modelo base.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base Qwen3.8-Flash-Next y los terminos del runtime binario, que se distribuye como wheel precompilado sin codigo fuente.
+- Madurez: el repositorio tiene 184 descargas y 0 likes, creado en noviembre de 2026; es un artefacto de un autor individual sin validacion independiente de la comunidad.
+- Modo hibrido: `--force-32gb` en RTX 5090 depende de la RAM de sistema y puede degradar el throughput respecto a las cifras publicadas, que se midieron en RTX PRO 6000.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-2.96bpw-SM120
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio de binarios del runtime: https://huggingface.co/Grawnch/wv-runtime-binaries
+- Wheel del instalador: https://huggingface.co/Grawnch/wv-runtime-binaries/resolve/main/wheels/wv_runtime_installer-1.5.2-py3-none-any.whl

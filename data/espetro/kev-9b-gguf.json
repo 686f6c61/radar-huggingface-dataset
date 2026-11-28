@@ -43,31 +43,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Kev 9B: Specifications & Sources - gradually.ai",
-      "url": "https://www.gradually.ai/en/ai-models/kev-9b/",
-      "snippet": "Kev 9B by Jared Palmer. Technical specifications, availability, and official sources."
-    },
-    {
-      "title": "kev/docs/model-cards/kev-9b.md at main · jaredpalmer/kev",
-      "url": "https://github.com/jaredpalmer/kev/blob/main/docs/model-cards/kev-9b.md",
-      "snippet": "Kev-9B Kev-9B is a decision model: one document (the state) and a set of typed questions in, a probability distribution per question out, in one forward pass. No text generation. It is a LoRA adapter (r=16, 45.4M trainable parameters) plus a pointer head on Qwen/Qwen3.5-9B-Base (revision 68c46c4b), serving TypeSafe&#x27;s public /v1/systemone contract."
-    },
-    {
-      "title": "oraculumai/Manchego · Hugging Face",
-      "url": "https://huggingface.co/oraculumai/Manchego",
-      "snippet": "Benchmarks Against Kev. Level with Kev-9B everywhere except the four Public8 datasets Kev trains on. Every model on JevBench and Public8. Most of the Public8 leaders trained on, or cannot be cleared of, Public8&#x27;s source data (purple). JevBench by tier. Level with the best open ~4B on the easy and standard tiers; the whole gap is the hard tier."
-    },
-    {
-      "title": "Kev Explained: Open-Source Jev Clone, 0.8B-9B (2026) | explainx.ai Blog",
-      "url": "https://www.explainx.ai/blog/kev-open-source-jev-clone-qwen35-family-2026",
-      "snippet": "Kev&#x27;s GitHub README shows what Jared Palmer&#x27;s open-source Jev clone actually is: a .8B/4B/9B family on Qwen3.5, not the \"8B\" headline claimed."
-    },
-    {
-      "title": "GGUF Model Discovery - Browse & Download AI Models",
-      "url": "https://local-ai-zone.github.io/",
-      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
-    }
-  ]
+  "sources": []
 }

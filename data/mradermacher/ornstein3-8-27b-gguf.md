@@ -2,80 +2,99 @@
 
 ## Resumen
 
-Ornstein3.8-27B es un modelo multimodal de 27 320 millones de parametros desarrollado por GestaltLabs, cuantizado a formato GGUF por mradermacher para su ejecucion eficiente en entornos locales. Forma parte de la familia Qwen3.8 (etiquetado como qwen3_5 y qwen3.8), lo que indica que se basa en la arquitectura de la serie Qwen3.8, aunque con adaptaciones propias del desarrollador. El modelo acepta entradas de imagen y texto, y genera texto, lo que lo situa en la categoria de modelos image-text-to-text.
+Ornstein3.8-27B-GGUF es la distribucion en formato GGUF del modelo multimodal GestaltLabs/Ornstein3.8-27B, publicada por el cuantizador mradermacher. Se trata de un modelo de tipo image-text-to-text (procesa imagenes y texto de entrada y genera texto) con 27.320.697.856 parametros totales, etiquetado por el autor con los identificadores qwen3_5 y qwen3.8, lo que sugiere una base derivada de la familia Qwen 3. La licencia declarada es Apache 2.0 y el unico idioma documentado es el ingles.
 
-La relevancia de este modelo radica en su naturaleza multimodal combinada con un tamano moderado (27B), que permite desplegarlo en hardware de gama alta para consumidores o en servidores con una unica GPU profesional. Al estar disponible en formato GGUF con multiples niveles de cuantizacion, desde Q2_K hasta Q8_0, ofrece flexibilidad para ajustar el equilibrio entre calidad y consumo de memoria. La licencia Apache 2.0 permite uso comercial sin restricciones significativas, lo que facilita su adopcion en entornos de produccion.
+La relevancia de esta publicacion es practica: el repositorio original esta en formato transformers, y esta version ofrece 13 cuantizaciones GGUF estaticas (desde Q2_K de 11,0 GB hasta Q8_0 de 29,1 GB) mas dos ficheros mmproj para el codificador visual, lo que permite ejecutar un modelo multimodal de 27B en hardware de consumo mediante llama.cpp u Ollama. El repositorio ocupa 190,8 GB en total y acumula 188 descargas desde su creacion el 28 de agosto de 2026.
 
-El repositorio de Hugging Face contiene tanto los pesos cuantizados como los ficheros de proyeccion multimodal (mmproj) necesarios para procesar imagenes, lo que indica que el modelo mantiene sus capacidades de vision en todas las variantes GGUF. No se proporcionan datos sobre la longitud de contexto, el dataset de entrenamiento ni benchmarks publicados en la informacion disponible.
+No obstante, la informacion publicada es escasa: la model card del cuantizador no incluye detalles de arquitectura, contexto, datos de entrenamiento ni benchmarks, y el modelo base apenas aporta etiquetas. Esta ficha refleja unicamente lo verificable en los metadatos y marca explicitamente como "no disponible" todo aquello que no consta.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Basada en Qwen3.8 (detalles especificos no disponibles) |
-| Parametros totales | 27 320 697 856 (27,32B) |
-| Parametros activos | no disponible (no se indica si es MoE) |
+| Arquitectura | Transformer multimodal image-text-to-text (familia Qwen 3, segun etiquetas qwen3_5 / qwen3.8); detalles internos no disponibles |
+| Parametros totales | 27.320.697.856 (27,3B) |
+| Parametros activos | no disponible (no se declara que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-f16, mmproj-Q8_0 |
-| Idiomas soportados | ingles (etiqueta "en") |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas) y variantes con imatrix en repositorio aparte (i1-GGUF); mmproj en Q8_0 y f16 |
+| Idiomas soportados | en (ingles) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (safetensors disponible en el modelo base) |
+| Formato de pesos | GGUF (original en transformers/safetensors) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no se detalla en la informacion proporcionada, pero las etiquetas indican que pertenece a la familia Qwen3.8, que emplea una arquitectura transformer con atencion por ventanas deslizantes y atencion completa alternada, similar a otros modelos de la serie Qwen. Al ser multimodal, incorpora un codificador de vision (probablemente ViT) y un proyector que alinea las representaciones visuales con el espacio de texto. Los ficheros mmproj incluidos en el repositorio GGUF confirman la presencia de este modulo de proyeccion.
+Los metadatos indican una arquitectura de tipo transformer multimodal con pipeline image-text-to-text, es decir, un modelo de lenguaje con un codificador visual acoplado que acepta imagenes y texto y produce texto. Las etiquetas qwen3_5 y qwen3.8 apuntan a una base derivada de Qwen 3, pero no se especifica si se trata de un ajuste fino, una mezcla o una continuacion del entrenamiento. El modelo se distribuye con ficheros mmproj separados (Q8_0 de 0,7 GB y f16 de 1,0 GB), lo que confirma la presencia de una torre visual independiente cuantizada aparte del cuerpo del lenguaje.
 
-No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados ni el uso de tecnicas de alineacion como RLHF o DPO. El modelo base (GestaltLabs/Ornstein3.8-27B) no publica estos detalles en su model card, por lo que no es posible verificar si hubo ajuste fino supervisado o aprendizaje por refuerzo. La cuantizacion realizada por mradermacher es estatica, sin usar matrices de importancia (imatrix), aunque existe una variante separada con cuantizacion imatrix en el repositorio hermano Ornstein3.8-27B-i1-GGUF.
+No hay informacion publicada sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, modos de razonamiento). La model card del cuantizador es puramente operativa: describe el proceso de cuantizacion estatica (quantize_version 2, output_tensor_quantised 1, convert_type hf) y remite al repositorio del modelo base para cualquier detalle de entrenamiento.
 
 ## Capacidades
 
-- Generacion de texto en ingles con razonamiento contextual.
-- Comprension de imagenes: el modelo acepta entradas visuales y puede describirlas, responder preguntas sobre su contenido o realizar tareas de razonamiento visual.
-- Dialogo multimodal multi-turno: combina imagenes y texto en una misma conversacion.
-- Integracion con el ecosistema transformers de Hugging Face, lo que permite su uso con pipelines estandar de image-text-to-text.
-- Compatibilidad con herramientas de inferencia GGUF como llama.cpp, Ollama y LM Studio, que permiten ejecucion local en CPU o GPU.
-- Soporte de cuantizacion progresiva: desde Q2_K (11 GB) hasta Q8_0 (29,1 GB), lo que permite adaptar el modelo a distintos presupuestos de memoria.
-- Capacidades de agente y tool calling: no se mencionan explicitamente, por lo que se considera no disponible.
+- Generacion de texto conversacional a partir de entradas de texto e imagen (pipeline image-text-to-text).
+- Procesamiento de imagenes mediante el codificador visual incluido en los ficheros mmproj.
+- Conversacion multi-turno (etiqueta conversational en los metadatos).
+- Compatibilidad con endpoints (etiqueta endpoints_compatible), lo que facilita su despliegue detras de APIs compatibles con OpenAI.
+- Capacidades de codigo, matematicas, tool calling, razonamiento multi-paso o modo thinking: no documentadas en la informacion disponible.
+- Multilingue: no; el unico idioma declarado es el ingles.
 
 ## Casos de uso
 
-- Descripcion automatica de imagenes: el modelo puede generar textos alternativos o descripciones detalladas para imagenes en aplicaciones de accesibilidad, catalogos de productos o sistemas de gestion de contenidos. Su ventana de contexto, aunque no especificada, es suficiente para tareas de captioning estandar.
-- Asistente visual para soporte tecnico: un usuario puede enviar una captura de pantalla de un error y el modelo puede explicar el problema y sugerir soluciones, combinando la informacion visual con conocimiento tecnico general.
-- Analisis de documentos escaneados: al aceptar imagenes, puede extraer informacion de facturas, formularios o contratos digitalizados, aunque no se confirma si tiene capacidades OCR especificas.
-- Moderacion de contenido visual: puede clasificar imagenes como apropiadas o inapropiadas segun criterios definidos, ayudando a filtrar contenido generado por usuarios en plataformas sociales.
-- Educacion interactiva: un tutor virtual que recibe fotografias de problemas de matematicas o diagramas y proporciona explicaciones paso a paso, aprovechando su capacidad de razonamiento multimodal.
-- Creacion de contenido para marketing: generar descripciones de productos a partir de fotos, redactar publicaciones para redes sociales o crear variaciones de texto para campanas publicitarias basadas en imagenes.
-- Prototipado rapido de aplicaciones de vision por computador: los desarrolladores pueden usar el modelo como baseline para tareas de VQA (visual question answering) antes de entrenar modelos especificos.
+- Analisis de documentos con imagenes: el modelo puede recibir capturas, diagramas o paginas escaneadas junto con una pregunta en texto y devolver una descripcion o extraccion, gracias a la torre visual empaquetada en los ficheros mmproj.
+- Asistentes de soporte tecnico con capturas de pantalla: un usuario adjunta una imagen de un error y el modelo genera una respuesta contextualizada; el formato GGUF permite desplegarlo en servidores modestos con llama.cpp.
+- Prototipado local de aplicaciones multimodales: al caber en 11-17 GB en cuantizaciones Q2_K a Q4_K_M, permite desarrollar y validar flujos image-text-to-text en una estacion de trabajo sin GPU de datacenter.
+- Etiquetado y descripcion de imagenes en lotes: integrable en pipelines de preprocesamiento de datos donde se necesita generar descripciones textuales de imagenes en ingles.
+- Despliegue en entornos con requisitos de licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificacion sin restricciones de atribucion adicionales mas alla de las habituales.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece 11 niveles de cuantizacion del mismo modelo, util para medir el compromiso entre calidad y VRAM antes de fijar una configuracion de produccion.
+- Educacion e investigacion: servir el modelo con Ollama o llama.cpp para experimentar con modelos multimodales de 27B en laboratorios con hardware limitado.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se proporcionan puntuaciones de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar para este modelo. Tampoco se ofrecen comparativas con modelos similares en la model card del autor de la cuantizacion ni en la del modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: entre 11 GB (cuantizacion Q2_K) y 29,1 GB (Q8_0) solo para los pesos. Hay que anadir el fichero mmproj (0,7-1,0 GB) y el overhead de activaciones y cache KV, que puede sumar varios GB adicionales.
-- GPU recomendadas: para cuantizaciones bajas (Q2_K, Q3_K), una RTX 3090 o RTX 4090 con 24 GB de VRAM es suficiente. Para Q4_K_M o superiores, se recomienda una GPU profesional como A100 40 GB, A6000 48 GB o H100.
-- En consumer GPU: cabe en RTX 3090/4090 (24 GB) con cuantizaciones hasta Q4_K_M (16,9 GB + overhead). Para Q5_K_M o Q6_K, se necesita una GPU con 32 GB o mas.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier frontend compatible con GGUF. Tambien se puede usar vLLM si se convierte a formato safetensors, aunque no es el flujo principal.
-- Latencia y throughput: no se proporcionan datos medidos. Como referencia orientativa, un modelo de 27B en Q4_K_M en una RTX 4090 suele generar entre 20 y 40 tokens por segundo con llama.cpp, pero esto depende de la implementacion y la longitud de la secuencia.
+- VRAM estimada para inferencia (pesos + overhead de contexto y cache KV):
+  - Q2_K (11,0 GB): aproximadamente 13-15 GB en GPU.
+  - Q3_K_M (13,6 GB): aproximadamente 16-18 GB.
+  - Q4_K_M (16,9 GB): aproximadamente 19-22 GB.
+  - Q5_K_M (19,6 GB): aproximadamente 22-25 GB.
+  - Q6_K (22,5 GB): aproximadamente 25-28 GB.
+  - Q8_0 (29,1 GB): aproximadamente 32-36 GB.
+  - Sumar 0,7 GB (mmproj Q8_0) o 1,0 GB (mmproj f16) si se usa la entrada de imagen.
+- GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) para Q4_K_M; A100 40 GB o H100 para Q8_0 con contexto amplio; configuraciones multi-GPU para Q6_K y Q8_0.
+- Cabe en GPU de consumo: si, en Q2_K a Q4_K_M con 16-24 GB de VRAM; Q5_K_M es ajustado en 24 GB y Q6_K/Q8_0 requieren 32 GB o mas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF; para el modelo original en transformers, vLLM o TGI (no verificados para esta variante).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos. El modelo base (GestaltLabs/Ornstein3.8-27B) no publica benchmarks, y no se han encontrado referencias a modelos directamente comparables en la misma categoria (multimodal, ~27B, licencia Apache 2.0). Alternativas como Qwen2.5-VL-32B o Llama-3.2-11B-Vision tienen tamanos y capacidades diferentes, pero sin datos de rendimiento de Ornstein3.8 no es posible realizar una comparacion objetiva.
+| Modelo | Parametros | Contexto | Multimodal | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Ornstein3.8-27B-GGUF (este) | 27,3B | no disponible | Si (image-text-to-text) | Apache 2.0 | GGUF | 11 cuantizaciones estaticas, solo ingles |
+| Qwen 3 (familia, referencia por etiquetas) | variable | no disponible | Segun variante | Apache 2.0 en la mayoria de tamanos | safetensors, GGUF | Base probable del modelo; datos no confirmados |
+| Gemma 3 27B | 27B | no disponible en esta ficha | Si (vision) | Terminos propios de Google | safetensors, GGUF | Alternativa de tamano equivalente; no se dispone de datos comparativos verificados |
+
+No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa fiable con alternativas. La comparativa anterior se limita a datos estructurales y debe tratarse como orientativa.
 
 ## Limitaciones y advertencias
 
-- Idioma limitado: el modelo solo soporta ingles de forma confirmada. No se garantiza un rendimiento adecuado en otros idiomas, incluido el espanol.
-- Sesgos y alucinaciones: al ser un modelo de lenguaje generativo, puede producir contenido falso o inventado, especialmente en tareas de razonamiento visual complejo donde la imagen no contiene suficiente informacion.
-- Longitud de contexto desconocida: no se especifica el tamano de la ventana de contexto, lo que dificulta planificar su uso en tareas que requieren documentos largos o conversaciones extensas.
-- Riesgo de degradacion por cuantizacion: las cuantizaciones mas agresivas (Q2_K, Q3_K) pueden reducir significativamente la calidad de las respuestas y la fidelidad de la comprension visual.
-- Sin garantias de soporte para tool calling o funciones de agente: aunque la arquitectura base podria soportarlo, no se confirma en la documentacion, por lo que no se recomienda para pipelines que dependan de estas capacidades.
-- Modelo base sin informacion de entrenamiento: al no publicarse detalles sobre el dataset ni el proceso de alineacion, no es posible evaluar riesgos de sesgo o seguridad de forma anticipada.
-- Uso comercial permitido: la licencia Apache 2.0 no impone restricciones, pero el usuario debe verificar que el modelo base no tenga limitaciones adicionales no documentadas.
+- Solo se declara soporte de ingles; el rendimiento en castellano no esta verificado y probablemente sea inferior.
+- No hay informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad; no se puede descartar la presencia de sesgos inherites a la base Qwen 3.
+- Riesgo de alucinacion inherente a los modelos generativos, sin mitigaciones documentadas.
+- La longitud de contexto no esta publicada; planificar el despliegue con un valor conservador y verificar experimentalmente.
+- La model card del cuantizador no documenta el proceso de cuantizacion mas alla de las etiquetas internas; las cuantizaciones Q2_K y Q3_K_S pueden degradar notablemente la calidad, especialmente en tareas de vision.
+- El repositorio pesa 190,8 GB; descargar solo los ficheros necesarios.
+- Aunque la licencia es Apache 2.0, conviene verificar la licencia del modelo base GestaltLabs/Ornstein3.8-27B antes de uso comercial, ya que el cuantizador no la detalla.
+- Popularidad muy baja (188 descargas, 0 likes) y ausencia de validacion comunitaria: tratar como modelo experimental.
+- El autor no garantiza la equivalencia funcional con el modelo original en transformers; las diferencias de tokenizador o chat template pueden afectar a la calidad de las respuestas.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Ornstein3.8-27B-GGUF
 - Modelo base: https://huggingface.co/GestaltLabs/Ornstein3.8-27B
-- Variante con cuantizacion imatrix: https://huggingface.co/mradermacher/Ornstein3.8-27B-i1-GGUF
-- Repositorio de cuantizaciones de mradermacher: https://huggingface.co/mradermacher/model_requests
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Ornstein3.8-27B-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#Ornstein3.8-27B-GGUF
+- Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Grafico de calidad de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Notas sobre cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
+- Empresa del cuantizador: https://www.nethype.de/

@@ -2,49 +2,48 @@
 
 ## Resumen
 
-kouman-edge-1b es un modelo de lenguaje de 1.000 millones de parametros desarrollado por Tree-AI-lab, publicado originalmente en Hugging Face bajo el identificador `Tree-AI-lab/kouman-edge-1b`. La ficha que nos ocupa, `mradermacher/kouman-edge-1b-GGUF`, no es el modelo original sino una republicacion de cuantizaciones estaticas en formato GGUF generadas por mradermacher, un conocido creador de quants de la comunidad open source.
+kouman-edge-1b-GGUF es la distribucion en formato GGUF del modelo kouman-1.0-edge-1B, desarrollado originalmente por Tree-AI-lab y cuantizado por mradermacher. Se trata de un modelo de lenguaje conversacional de aproximadamente 1.235 millones de parametros, disenado especificamente para despliegue en dispositivos de borde (edge) y moviles. Su rasgo mas distintivo es el enfoque en lenguas de Costa de Marfil, concretamente el baoule (bci) y el dioula (dyu), junto con frances e ingles, lo que lo convierte en una propuesta poco habitual dentro del ecosistema de modelos abiertos.
 
-El interes de esta publicacion reside en que facilita el despliegue del modelo en hardware de consumo mediante llama.cpp y derivados (Ollama, LM Studio, koboldcpp), al ofrecer un abanico amplio de niveles de cuantizacion que van desde Q2_K hasta Q8_0, ademas de una version en FP16. Con un tamano de 1B, el modelo encaja en GPUs consumer modestas e incluso en CPU con suficiente RAM, lo que lo situa en la categoria de modelos edge o de bolsillo.
+El modelo parte de una licencia llama3.2, lo que sugiere que su arquitectura y entrenamiento derivan de la familia Llama 3.2 de Meta, si bien no se dispone de confirmacion explicita en la informacion proporcionada. El repositorio GGUF incluye un conjunto completo de cuantizaciones estaticas que van desde Q2_K (0,7 GB) hasta f16 (2,6 GB), lo que permite ejecutarlo en hardware muy modesto, incluidos telefonos moviles o sistemas embebidos.
 
-La informacion publica disponible es muy limitada: la model card del repositorio GGUF se reduce a metadatos de la herramienta de cuantizacion y a la referencia al modelo base. No se han publicado especificaciones de arquitectura, contexto, licencia ni idiomas en la informacion proporcionada, por lo que muchos campos de esta ficha se marcan como "no disponible".
+Su relevancia actual radica en dos factores: por un lado, la escasez de modelos abiertos que cubran lenguas minoritarias africanas con calidad conversacional; por otro, el formato GGUF y el tamano reducido lo hacen accesible para inferencia local mediante llama.cpp en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base: Tree-AI-lab/kouman-edge-1b) |
-| Parametros totales | aproximadamente 1.000 millones (deducido del nombre "1b") |
-| Parametros activos | no aplica (no se ha indicado que sea MoE) |
+| Arquitectura | Transformer (derivada de Llama 3.2, segun licencia; no confirmado explicitamente) |
+| Parametros totales | 1.235.814.432 (aprox. 1,24 B) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | FP16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (safetensors en el repositorio original, presumiblemente) |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
+| Idiomas soportados | baoule (bci), dioula (dyu), frances (fr), ingles (en) |
+| Licencia | llama3.2 |
+| Formato de pesos | GGUF (safetensors en el modelo base) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo base en la documentacion disponible. Por el nombre y el tamano (1B) cabe esperar un transformer decoder-only, pero no hay confirmacion oficial en la informacion proporcionada. Tampoco se conocen los datos de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruction tuning.
+La informacion disponible no detalla la arquitectura interna mas alla de la licencia llama3.2, que sugiere una base derivada de Llama 3.2. El modelo base es Tree-AI-lab/kouman-1.0-edge-1B, y la version aqui descrita es una cuantizacion estatica generada por mradermacher. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
-Lo unico verificable es el proceso de cuantizacion: los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere una conversion desde pesos en formato Hugging Face a GGUF mediante la herramienta de cuantizacion de llama.cpp. Se han generado tanto cuantizaciones K-quant clasicas como una variante IQ4_XS (importancia-based), lo que amplia las opciones de compromiso entre tamano y calidad.
+El prefijo "edge" y la etiqueta "mobile" indican que el modelo fue optimizado para inferencia en dispositivos con recursos limitados. La cuantizacion se realizo con el pipeline de mradermacher (quantize_version 2, output_tensor_quantised 1, convert_type hf), e incluye tanto cuantizaciones estaticas como una variante con imatrix disponible en un repositorio separado.
 
 ## Capacidades
 
-- Generacion de texto: capacidad esperable en un modelo de 1B, aunque sin datos publicados que la confirmen.
-- Razonamiento y matematicas: no disponible.
-- Generacion de codigo: no disponible.
-- Soporte de tool calling / function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible.
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Generacion de texto conversacional en baoule, dioula, frances e ingles.
+- Razonamiento basico y respuesta a instrucciones en un modelo de ~1,2 B de parametros.
+- Capacidades multilingues centradas en lenguas de Costa de Marfil y lenguas europeas.
+- Inferencia local en dispositivos de borde y moviles gracias al formato GGUF y a las cuantizaciones de bajo bit.
+- Compatibilidad con llama.cpp y ecosistemas derivados (Ollama, entre otros).
+- No se documentan capacidades de tool calling, function calling, agentes, vision ni audio.
 
 ## Casos de uso
 
-- Despliegue en dispositivos edge: el tamano de 1B y las cuantizaciones Q4_K_M o IQ4_XS permiten ejecutar el modelo en mini-PCs, Raspberry Pi 5 con 8 GB de RAM o moviles de gama alta mediante llama.cpp, util para asistentes offline sin conexion.
-- Prototipado rapido en local: sirve para validar pipelines de generacion de texto en un portatil sin GPU dedicada, usando Q4_K_S o Q5_K_S con llama.cpp u Ollama antes de escalar a modelos mayores.
-- Filtrado y clasificacion de texto: tareas de etiquetado, moderacion o extraccion de entidades en lotes grandes donde el coste por token importa mas que la calidad puntera.
-- Generacion de texto auxiliar en aplicaciones de escritorio: autocompletado, resumenes cortos o reescritura de parrafos integrados en editores, con latencia baja gracias al reducido numero de parametros.
-- Educacion e investigacion: modelo ligero para experimentar con tecnicas de cuantizacion, comparar calidad entre niveles Q2_K a Q8_0 y estudiar el impacto del ruido de cuantizacion en tareas concretas.
-- Chatbot de bajo consumo en entornos con recursos limitados: con Q4_K_M y unos pocos GB de RAM se puede mantener un servicio de conversacion basico en un servidor modesto o en un contenedor Docker.
+- Asistentes conversacionales en lenguas locales de Costa de Marfil: el modelo puede gestionar dialogos en baoule y dioula, cubriendo un nicho practicamente desatendido por otros modelos abiertos.
+- Aplicaciones moviles offline: con cuantizaciones Q4_K_M de 0,9 GB, puede integrarse en apps Android o iOS mediante llama.cpp para asistencia sin conexion.
+- Traduccion asistida frances-dioula y frances-baoule: util para servicios publicos, ONG y administraciones que necesiten atender a poblacion hablante de estas lenguas.
+- Educacion y alfabetizacion digital: generacion de material didactico y respuestas en lengua materna en entornos con conectividad limitada.
+- Kioscos o terminales de atencion en zonas rurales: despliegue en hardware de bajo coste (Raspberry Pi, mini-PC) para consultas basicas.
+- Prototipado rapido de chatbots multilingues: al ser un modelo pequeno y ligero, sirve para validar pipelines de inferencia local antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
@@ -52,43 +51,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia (aproximada, asumiendo 1B parametros y overhead de contexto):
-  - FP16: en torno a 2,5-3 GB.
-  - Q8_0: en torno a 1,5-2 GB.
-  - Q6_K: en torno a 1,2-1,5 GB.
-  - Q5_K_M: en torno a 1-1,2 GB.
-  - Q4_K_M: en torno a 0,8-1 GB.
-  - IQ4_XS: en torno a 0,7-0,9 GB.
-  - Q3_K_M: en torno a 0,6-0,8 GB.
-  - Q2_K: en torno a 0,5-0,7 GB.
-- GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.) puede ejecutar las cuantizaciones Q4 y Q5; para FP16 se recomienda al menos 4 GB.
-- Cabe en GPU consumer: si, practicamente en cualquier GPU dedicada de los ultimos diez anos, y en iGPUs modernas con memoria unificada suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y cualquier runtime compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todas sus versiones, por lo que requeririan los pesos originales en safetensors.
-- Latencia y throughput estimados: no disponibles; dependen fuertemente del hardware y de la cuantizacion elegida.
+- VRAM estimada para inferencia: desde ~0,7 GB (Q2_K) hasta ~2,6 GB (f16), mas overhead de contexto.
+- GPU recomendadas: no requiere GPU dedicada; puede ejecutarse en CPU. En GPU, cualquier tarjeta con 2 GB o mas de VRAM es suficiente para las cuantizaciones mas bajas.
+- Cabe holgadamente en GPUs de consumo: RTX 3060, RTX 4060, GTX 1650, e incluso en iGPUs y dispositivos moviles.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF. El tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo API.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| kouman-edge-1b (esta ficha) | ~1B | no disponible | no disponible | GGUF | Hugging Face |
-| Llama 3.2 1B | 1,24B | 128k | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
-| Qwen2.5 1.5B | 1,54B | 32k | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
-| Gemma 2 2B | 2,6B | 8k | Gemma Terms of Use | safetensors, GGUF | Hugging Face, Ollama |
+| kouman-edge-1b-GGUF | ~1,24 B | no disponible | bci, dyu, fr, en | llama3.2 | GGUF |
+| Llama 3.2 1B | ~1,24 B | 128 K (segun Meta) | multilingue amplio | llama3.2 | safetensors, GGUF |
+| Qwen2.5-1.5B | ~1,5 B | 32 K (segun Qwen) | multilingue amplio | Apache 2.0 | safetensors, GGUF |
 
-La comparativa se ofrece como referencia de categoria (modelos de 1-3B parametros aptos para edge), ya que no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa.
+Nota: los datos de Llama 3.2 1B y Qwen2.5-1.5B se incluyen como referencia de categoria; no se dispone de comparaciones de rendimiento directas con kouman-edge-1b en la informacion proporcionada. La ventaja diferencial de kouman es la cobertura de lenguas de Costa de Marfil, ausente en los otros.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card tecnica: no hay informacion sobre arquitectura, datos de entrenamiento, contexto ni alineacion, lo que impide evaluar su calidad antes de desplegarlo.
-- Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; es imprescindible consultar el repositorio original `Tree-AI-lab/kouman-edge-1b` antes de integrarlo en produccion.
-- Riesgo de alucinacion: en modelos de 1B parametros es habitual que la tasa de alucinacion sea elevada, especialmente en tareas de conocimiento factual y razonamiento multi-paso.
-- Idiomas no confirmados: no se puede garantizar un rendimiento aceptable en castellano ni en otros idiomas distintos del que se uso en el entrenamiento (desconocido).
-- Cuantizaciones agresivas: Q2_K y Q3_K_S degradan notablemente la coherencia en modelos pequenos; se recomienda Q4_K_M o superior para uso real.
-- Sin soporte verificado de tool calling ni agentes: no hay evidencia de que el modelo base haya sido entrenado para function calling.
-- Repositorio con cero descargas y cero likes en el momento de la consulta: no hay senales de validacion por parte de la comunidad.
-- Fecha de creacion futura (2026-11-24) en los metadatos: conviene verificar la integridad del repositorio antes de confiar en el.
+- Alucinacion: como todo modelo de ~1,2 B, presenta riesgo elevado de generar contenido incorrecto, especialmente en tareas de razonamiento complejo.
+- Cobertura limitada: fuera de baoule, dioula, frances e ingles, el rendimiento puede degradarse notablemente.
+- Sesgos: no se documentan evaluaciones de sesgo; los datos de entrenamiento podrian introducir sesgos culturales o linguisticos no caracterizados.
+- Licencia llama3.2: impone restricciones de uso comercial y requiere el cumplimiento de la politica de uso aceptable de Meta. Es necesario revisar los terminos antes de un despliegue en produccion.
+- Contexto: se desconoce la longitud de contexto soportada, lo que limita la planificacion de aplicaciones con ventanas largas.
+- Documentacion escasa: la model card del repositorio GGUF es una plantilla generica de cuantizacion; no hay informacion sobre entrenamiento, evaluacion ni limitaciones especificas del modelo base.
+- Calidad de cuantizaciones bajas: Q2_K y Q3_K pueden degradar notablemente la calidad; se recomienda Q4_K_M o superior para uso real.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/kouman-edge-1b-GGUF
-- Modelo base: https://huggingface.co/Tree-AI-lab/kouman-edge-1b
+- Modelo base: https://huggingface.co/Tree-AI-lab/kouman-1.0-edge-1B
+- Cuantizaciones con imatrix: https://huggingface.co/mradermacher/kouman-edge-1b-i1-GGUF
+- Pagina de descargas del cuantizador: https://hf.tst.eu/model#kouman-edge-1b-GGUF
+- Solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
+- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

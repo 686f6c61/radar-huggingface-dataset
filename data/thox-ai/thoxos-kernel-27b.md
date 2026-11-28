@@ -2,93 +2,89 @@
 
 ## Resumen
 
-ThoxOS-Kernel-27B es un ajuste fino de parámetros completos desarrollado por THOX.ai sobre la build comunitaria JonathanColetti/Qwen3.8-27B-Uncensored. Está especializado en tareas de kernel Linux, operaciones de sistema, runbooks de servicios y shell, trabajos de compilación y diagnóstico de ThoxOS, y operaciones de MeshStack sobre hosts de THOX. El modelo actúa además como profesor (teacher) para los modelos más pequeños de la familia ThoxOS-Kernel.
+ThoxOS-Kernel-27B es un ajuste fino de parametros completos desarrollado por Thox-ai (THOX.ai) sobre el modelo comunitario JonathanColetti/Qwen3.8-27B-Uncensored. Esta especializado en tareas de kernel y operaciones de sistema: trabajo sobre el kernel de Linux, runbooks de servicios y shell, compilacion y diagnostico de ThoxOS, y operaciones de MeshStack en hosts de THOX. Ademas, actua como modelo profesor para los modelos mas pequenos de la familia ThoxOS-Kernel.
 
-El modelo se distribuye con pesos abiertos bajo licencia Apache 2.0, en formato safetensors y GGUF (Q8_0 y Q4_K_M), y la build Q4_K_M está publicada en Ollama como `Thox-ai/thoxos-kernel-27b`. El autor declara que el fine-tune superó sus puertas de evaluación bajo el criterio de "final-answer scope" el 1 de noviembre de 2026, aunque el veredicto sobre completaciones en bruto se publica como "HELD".
+El modelo se distribuye con pesos completos en safetensors y en dos cuantizaciones GGUF (Q8_0 y Q4_K_M), con licencia Apache 2.0 y acceso publico sin gating. La model card declara que el ajuste supero sus puertas de evaluacion bajo el criterio de "final-answer scope" el 1 de noviembre de 2026, mientras que el veredicto de "raw-completion" se publica como retenido (HELD). Esto es relevante para quien lo evalue: el rendimiento declarado depende del criterio de puntuacion adoptado.
 
-La relevancia del modelo reside en su enfoque vertical: no es un modelo generalista, sino una especialización deliberada en administración de sistemas Linux y en el ecosistema ThoxOS. El repositorio ocupa 100,7 GB e incluye dos shards de safetensors, un fichero MTP, dos cuantizaciones GGUF y los ficheros de configuración y tokenizador.
+La relevancia actual del modelo reside en su nicho: es un modelo de 27B orientado a agentes de sistema operativo y administracion de servidores, un dominio donde escasean los ajustes finos publicos y donde el contexto operativo (comandos, runbooks, diagnostico) importa mas que el conocimiento general. Su licencia permisiva y su disponibilidad en Ollama facilitan su despliegue en entornos de laboratorio y produccion interna.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivada de Qwen3.8), con fichero MTP separado |
-| Parámetros totales | 27B (según model card); el campo de parámetros de safetensors del repo indica 3.054.832, dato no coherente con el tamaño de los shards |
-| Parámetros activos | no disponible |
+| Arquitectura | Transformer (derivada de Qwen3.8; etiqueta `qwen3_5` en Hugging Face), con modulo MTP (`model-mtp.safetensors`) |
+| Parametros totales | 27B (denominacion comercial); el recuento de safetensors reportado en el Hub es de 3.054.832, dato inconsistente con el tamano del repo (100,7 GB) y con los pesos publicados |
+| Parametros activos | no disponible (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | safetensors (BF16/FP16 presumible), GGUF Q8_0, GGUF Q4_K_M |
-| Idiomas soportados | inglés (en) |
+| Tipos de cuantizacion | safetensors (BF16 presumiblemente, no confirmado), GGUF Q8_0, GGUF Q4_K_M |
+| Idiomas soportados | ingles (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors, GGUF |
+| Formato de pesos | safetensors (2 shards + MTP), GGUF (Q8_0, Q4_K_M), Modelfile para Ollama |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de parámetros completos sobre la build comunitaria Qwen3.8-27B-Uncensored, que a su vez deriva de la familia Qwen3.8. La arquitectura es de tipo transformer, con un fichero adicional `model-mtp.safetensors` de 849 MB que sugiere soporte de multi-token prediction (MTP), una técnica de decodificación especulativa que permite predecir varios tokens por paso para acelerar la inferencia. No se detalla en la información disponible la composición del dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron fases de RLHF o DPO.
+El modelo es un ajuste fino de parametros completos sobre JonathanColetti/Qwen3.8-27B-Uncensored, una build comunitaria de la familia Qwen3.8. La model card no detalla la arquitectura interna mas alla de la etiqueta `qwen3_5` y la presencia de un fichero `model-mtp.safetensors` de 849 MB, que corresponde a un modulo de prediccion multi-token (MTP), tipico en las arquitecturas Qwen recientes para decodificacion especulativa. No se especifica si se trata de un transformer denso o de una variante hibrida.
 
-El autor indica que THOX realizó el fine-tune, el gating y las conversiones a GGUF, y que los pesos publicados son byte-idénticos al artefacto que superó las puertas de evaluación (verificación SHA-256 fichero por fichero contra el registro de la build). El modelo está etiquetado como "uncensored" por herencia de su base, y la model card incluye notas del fundador sobre libertad creativa y ausencia de restricciones artificiales. No se han publicado detalles sobre la composición del corpus de especialización (runbooks, documentación de kernel, trazas de operaciones), más allá de las etiquetas temáticas del repositorio.
+No se publican datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o SFT. La model card solo indica el dominio del ajuste (kernel de Linux, runbooks, ThoxOS, MeshStack) y que THOX realizo el fine-tune, el gating y las conversiones a GGUF. El modelo base es una variante "uncensored", lo que implica que el ajuste parte de pesos sin las restricciones de alineamiento del modelo original de Qwen.
 
 ## Capacidades
 
-- Generación de texto conversacional y de tipo instructivo en inglés.
-- Razonamiento y asistencia en tareas de administración de sistemas Linux: gestión de servicios, diagnóstico, operaciones de shell.
-- Trabajo con runbooks y procedimientos operativos: interpretación y generación de secuencias de comandos y pasos de resolución.
-- Soporte para tareas de kernel y sistema operativo: compilación, diagnóstico y operaciones sobre ThoxOS.
-- Operaciones de MeshStack sobre hosts de THOX.
-- Función de modelo profesor para la familia ThoxOS-Kernel, es decir, generación de datos de entrenamiento para modelos menores.
-- Modo "uncensored": ausencia declarada de restricciones de contenido por parte del autor.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de agente multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: limitadas al inglés según la model card.
-- Capacidades de visión o audio: no disponibles.
+- Generacion de texto y conversacion multi-turno en ingles.
+- Razonamiento tecnico orientado a sistemas operativos: kernel de Linux, servicios, shell y diagnostico.
+- Generacion y explicacion de runbooks y procedimientos operativos.
+- Soporte de operaciones de ThoxOS (compilacion, diagnostico) y de MeshStack en hosts THOX.
+- Capacidad de actuar como modelo profesor para destilacion hacia modelos mas pequenos de la familia ThoxOS-Kernel.
+- Compatibilidad con endpoints estilo OpenAI (`endpoints_compatible` en las etiquetas del Hub).
+- No se declara soporte explicito de tool calling, function calling, vision, audio ni modo "thinking" en la informacion disponible.
 
 ## Casos de uso
 
-- Asistencia en administración de servidores Linux: el modelo puede generar y explicar comandos de shell, diagnosticar fallos de servicios systemd y proponer secuencias de recuperación, aprovechando su especialización en runbooks y operaciones de sistema.
-- Automatización de runbooks operativos: dado un procedimiento documentado, el modelo puede adaptarlo al estado concreto de un host, generar los pasos intermedios y señalar dependencias, lo que encaja con su entrenamiento en runbooks de servicio y shell.
-- Diagnóstico de compilaciones de kernel: el modelo puede interpretar errores de compilación, sugerir cambios en ficheros de configuración y explicar dependencias entre módulos, un escenario alineado con las tareas de build de ThoxOS.
-- Soporte a operadores de MeshStack: asistencia en la gestión de hosts THOX, interpretación de estados y generación de comandos de operación sobre la malla.
-- Generación de datos sintéticos para modelos menores: al actuar como teacher de la familia ThoxOS-Kernel, puede producir pares instrucción-respuesta especializados que alimenten el entrenamiento de variantes más pequeñas.
-- Documentación técnica automatizada: generación de notas de versión, guías de operación y descripciones de cambios en infraestructura a partir de trazas o diffs, en inglés.
-- Asistente de laboratorio para investigadores en sistemas: exploración de escenarios de configuración y explicación de comportamientos del kernel en un entorno controlado, con la advertencia de que el modelo es "uncensored" y requiere revisión humana.
+- Asistente de administracion de sistemas Linux: el modelo puede interpretar salidas de comandos, proponer diagnosticos y generar scripts de remediacion para incidencias en servidores, aprovechando su ajuste especifico en shell y runbooks.
+- Generacion de runbooks operativos: a partir de una descripcion de un servicio o de un incidente, el modelo redacta procedimientos paso a paso con comandos concretos, adecuado para equipos de SRE que necesitan documentacion repetible.
+- Automatizacion de diagnostico en ThoxOS: integrado en pipelines internos, puede analizar logs de compilacion y proponer correcciones, dado que fue ajustado sobre el flujo de build y diagnostico de ThoxOS.
+- Agente de operaciones en MeshStack: el modelo puede asistir en tareas de gestion de hosts THOX, generando comandos y verificaciones dentro de un bucle de agente con supervision humana.
+- Destilacion de modelos mas pequenos: su papel declarado como teacher permite generar datos sinteticos de dominio (preguntas y respuestas sobre kernel y sysadmin) para entrenar variantes ligeras desplegables en el borde.
+- Laboratorio de investigacion en modelos "uncensored": al partir de una build sin alineamiento y con licencia Apache 2.0, sirve para estudiar comportamiento de modelos de dominio sin restricciones de uso comercial.
+- Despliegue local en estaciones de trabajo: con la cuantizacion Q4_K_M (16,5 GB) puede ejecutarse en GPUs de consumo alto o en equipos con suficiente memoria unificada, util para pruebas offline de procedimientos de sistema.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card menciona un estado "GATE-PASSED" bajo el criterio de "final-answer scope" (2026-11-01) y un veredicto "HELD" para completaciones en bruto, pero no se incluyen cifras de MMLU, HumanEval, GSM8K ni de ninguna otra prueba en los datos proporcionados.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona un estado "GATE-PASSED" bajo el criterio de "final-answer scope" (2026-11-01) y un veredicto "HELD" para "raw-completion", pero no se incluyen cifras de MMLU, HumanEval, GSM8K ni de evaluaciones de dominio.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamaño, un modelo de 27B en BF16 requiere del orden de 54 GB de VRAM solo para pesos; en Q8_0, alrededor de 28,6 GB (tamaño del fichero GGUF); en Q4_K_M, alrededor de 16,5 GB.
-- GPU recomendadas: no disponibles en la información proporcionada. Por tamaño, la cuantización Q4_K_M podría caber en GPUs de consumo con 24 GB de VRAM; Q8_0 requeriría GPUs de 32 GB o superiores; BF16 requeriría A100 80 GB o H100.
-- Cabe en GPU de consumo: probablemente la build Q4_K_M en tarjetas de 24 GB, aunque el autor no lo confirma.
-- Opciones de despliegue: Ollama (build Q4_K_M publicada como `Thox-ai/thoxos-kernel-27b`), llama.cpp para los GGUF, y vLLM/TGI para safetensors (no confirmado por el autor).
+- VRAM estimada para inferencia: aproximadamente 55-60 GB en BF16 (pesos safetensors de ~54,7 GB mas overhead), ~30 GB en Q8_0 y ~17-18 GB en Q4_K_M.
+- GPU recomendadas: A100 80 GB o H100 para BF16; A100 40 GB o L40S para Q8_0; RTX 4090 (24 GB) o RTX 3090 para Q4_K_M.
+- Cabe en GPU de consumo: si, en Q4_K_M con 24 GB de VRAM; en Q8_0 requiere GPUs profesionales o configuraciones multi-GPU.
+- Opciones de despliegue: Ollama (`ollama run Thox-ai/thoxos-kernel-27b`), llama.cpp / Llama (`llama serve -hf Thox-ai/ThoxOS-Kernel-27B:Q4_K_M`), y servidores compatibles con la API de OpenAI. No se confirma soporte de vLLM o TGI en la informacion disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxOS-Kernel-27B | 27B | no disponible | Apache 2.0 | Kernel Linux, sysadmin, ThoxOS | Hugging Face, Ollama |
-| Qwen3.8-27B-Uncensored (base) | 27B | no disponible | no disponible | Generalista sin censura | Hugging Face |
-| Modelos de la familia Qwen3.8 | no disponible | no disponible | no disponible | Generalista | Hugging Face |
+| ThoxOS-Kernel-27B | 27B | no disponible | Apache 2.0 | Kernel y sysadmin (ingles) | safetensors + GGUF, Ollama |
+| Qwen3.8-27B-Uncensored (base) | 27B | no disponible | no disponible | General, sin alineamiento | Hugging Face |
+| Qwen3 (familia) | 27B aprox. | no disponible | Apache 2.0 (segun variante) | General y codigo | Hugging Face, Ollama |
+| Modelos de dominio sysadmin publicos | variable | no disponible | variable | Sysadmin | no disponible |
 
-La comparativa con alternativas de la misma categoría (modelos especializados en operaciones de sistema) no está disponible en la información proporcionada. El competidor directo más evidente es su propio modelo base, del que se diferencia por el ajuste fino vertical en tareas de kernel y operaciones.
+La comparacion cuantitativa con alternativas no es posible con la informacion disponible, ya que no se publican benchmarks del modelo ni de su base en esta ficha.
 
 ## Limitaciones y advertencias
 
-- El campo de parámetros de safetensors del repositorio indica 3.054.832, un dato incoherente con el tamaño de los shards (unos 54,7 GB en total) y con la denominación 27B; conviene verificar la configuración antes de desplegar.
-- El modelo solo declara soporte de inglés; no se garantiza un rendimiento adecuado en castellano ni en otros idiomas.
-- La naturaleza "uncensored" heredada de la base implica un mayor riesgo de generar contenido inapropiado o inseguro; requiere filtros y revisión humana en producción.
-- Riesgo de alucinación en comandos de shell y procedimientos de sistema: un comando incorrecto puede causar daños en un host real; se recomienda validación en entornos de prueba.
-- No se han publicado métricas de benchmarks ni resultados de cualificación de dispositivos; el autor declara explícitamente que no reclama resultados de "device-qualification".
-- El estado de evaluación es ambiguo: "GATE-PASSED" solo bajo el criterio de "final-answer scope", con veredicto "HELD" para completaciones en bruto.
-- La licencia Apache 2.0 permite uso comercial, pero la model card incluye notas del fundador y material promocional (campaña de Kickstarter) que no afectan a los términos legales.
-- No se dispone de información sobre la longitud de contexto, lo que impide planificar casos de uso con documentos largos.
-- La fecha de creación del repositorio (2026-10-30) y la referencia a Qwen3.8 deben tratarse con cautela, ya que no se ha podido verificar la existencia de dicha familia en fuentes independientes.
+- Solo soporta ingles de forma declarada; el rendimiento en castellano no esta evaluado.
+- El modelo base es una build "uncensored", por lo que puede producir contenido sin los filtros de seguridad habituales; requiere moderacion externa en produccion.
+- Riesgo de alucinacion en comandos y procedimientos: un comando de shell incorrecto puede causar dano en sistemas reales; se recomienda validacion humana y entornos de prueba.
+- El estado de evaluacion es ambiguo: el criterio "final-answer scope" paso las puertas, pero el veredicto "raw-completion" figura como HELD; el rendimiento real puede diferir del declarado.
+- No se publican datos de contexto maximo, composicion del dataset ni tecnicas de alineamiento, lo que dificulta estimar el comportamiento fuera del dominio.
+- El recuento de parametros del Hub (3.054.832) es inconsistente con el tamano del repo y con la denominacion 27B; conviene verificar los pesos antes de desplegar.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base comunitario puede arrastrar obligaciones adicionales no documentadas en esta ficha.
+- No se declaran resultados de cualificacion de dispositivos ("no device-qualification results are claimed"), por lo que el rendimiento en hardware concreto no esta garantizado.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Thox-ai/ThoxOS-Kernel-27B
 - Modelo base: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
-- Demo de dispositivos virtuales THOX: https://thox.ai/#demo-callout-home_lineup
-- Campaña de Kickstarter de THOX: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
-- Repositorio en Ollama: `Thox-ai/thoxos-kernel-27b` (referenciado en la model card; no se dispone de URL directa en la información proporcionada)
+- Ollama: `ollama run Thox-ai/thoxos-kernel-27b`
+- Repositorio de pesos GGUF: https://huggingface.co/Thox-ai/ThoxOS-Kernel-27B/tree/main
+- No se han encontrado papers, blogs o demos adicionales en la informacion disponible.

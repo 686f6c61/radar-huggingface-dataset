@@ -2,98 +2,103 @@
 
 ## Resumen
 
-El modelo `panitagorontalo/nllb-200-gorontalo-bi-600M` es un sistema de traduccion automatica neuronal bidireccional entre bahasa Indonesia (`ind_Latn`) y bahasa Gorontalo (`gor_Latn`), una lengua austronesia del subgrupo filipino-gorontalo-mongondow hablada en la provincia de Gorontalo y la zona del golfo de Tomini (Sulawesi, Indonesia). Lo desarrolla Panita Research Gorontalo como parte de una iniciativa de preservacion digital del idioma, y se construye mediante un fine-tuning completo en `bfloat16` sobre la arquitectura `facebook/nllb-200-distilled-600M` (familia M2M-100, transformer encoder-decoder). El resultado es un checkpoint de 615.072.768 parametros con licencia Apache 2.0.
+`panitagorontalo/nllb-200-gorontalo-bi-600M` es un modelo de traducción automática neuronal bidireccional entre indonesio (`ind_Latn`) y gorontalo (`gor_Latn`, también llamado *bahasa Hulontalo*), una lengua austronesia de bajos recursos hablada en la provincia de Gorontalo (Indonesia). Lo desarrolla Panita Research Gorontalo como parte de una iniciativa de preservación digital del idioma, y se construye mediante ajuste fino completo sobre `facebook/nllb-200-distilled-600M`, al que se le añade un token de idioma específico `gor_Latn` (ID 256204) inicializado a partir del centroide de lenguas austronesias emparentadas (`ind_Latn`, `bug_Latn`, `tgl_Latn`, `ceb_Latn`).
 
-El problema que resuelve es concreto: NLLB-200 original no incluye el codigo `gor_Latn` en su lista de lenguas, de modo que su rendimiento zero-shot sobre gorontalo es practicamente nulo (el autor declara 0.13 SacreBLEU). Este modelo registra un token linguistico especifico (`gor_Latn`, ID 256204) inicializado como centroide de embeddings de lenguas emparentadas (indonesio, bugis, tagalo y cebuano), y se entrena sobre un corpus paralelo extraido y alineado de dos diccionarios de Mansoer Pateda (1987 y 2001).
+La relevancia del modelo radica en que NLLB-200 estándar no cubre el gorontalo, de modo que la traducción zero-shot era prácticamente inutilizable (SacreBLEU 0,17 en ID→GOR). Esta versión v6 alcanza 40,59 SacreBLEU y 57,98 chrF++ en ID→GOR, y 32,57 / 56,80 en GOR(2001)→ID, lo que supone una mejora sustancial frente a las versiones v4 y v5 del propio proyecto. El modelo se distribuye con licencia Apache 2.0, lo que facilita su uso comercial y su integración en productos de traducción.
 
-Es relevante ahora por dos motivos: demuestra que un modelo de 600M puede adaptarse a una lengua de muy bajos recursos con un corpus de menos de 100.000 muestras seq2seq, y aborda explicitamente la variacion ortografica interna del gorontalo (eje 1987 frente a 2001), un factor que suele degradar la calidad en lenguas con normalizacion incompleta. El modelo fue publicado en noviembre de 2026 y, a fecha de la informacion disponible, registra 0 descargas y 1 like en Hugging Face.
+Arquitectónicamente es un transformer encoder-decoder seq2seq de tipo M2M-100 con 615.072.768 parámetros, heredado íntegramente del modelo base destilado de Meta. El entrenamiento se ha realizado sobre un corpus construido a partir de dos diccionarios del profesor Mansoer Pateda (1987 y 2001), auditados y reconciliados, con un total de 309.206 muestras de entrenamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (familia M2M-100 / NLLB-200 distilled) |
-| Parametros totales | 615.072.768 (dato real de safetensors) |
+| Arquitectura | Transformer encoder-decoder seq2seq (M2M-100, base NLLB-200 distilled) |
+| Parametros totales | 615.072.768 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (arquitectura base NLLB-200 distilled; la model card no declara el limite) |
-| Tipos de cuantizacion | no disponible (el autor solo declara entrenamiento en `bfloat16`; no se listan pesos cuantizados) |
-| Idiomas soportados | `id` (indonesio, `ind_Latn`) y `gor` (gorontalo, `gor_Latn`), en ambos sentidos |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; compatible con cuantización estándar de transformers, no documentada por el autor) |
+| Idiomas soportados | indonesio (`ind_Latn`) y gorontalo (`gor_Latn`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (libreria transformers) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `facebook/nllb-200-distilled-600M`, un transformer encoder-decoder con atencion multi-cabeza estandar y token de idioma en el encoder, y se somete a un full fine-tuning en `bfloat16` sobre un corpus paralelo bidireccional. La innovacion principal es la incorporacion de un token de lengua nuevo, `gor_Latn` (ID 256204), inicializado mediante un embedding centroide calculado a partir de las representaciones de indonesio, bugis, tagalo y cebuano dentro del vocabulario original de NLLB-200; esto evita que el token arranque aleatorio y aprovecha la cercania genealogica de las lenguas austronesias.
+El modelo es un transformer encoder-decoder de la familia M2M-100, tomado de `facebook/nllb-200-distilled-600M` y sometido a un ajuste fino completo durante 4 épocas en `bfloat16` (tiempo de entrenamiento declarado: 70,14 minutos, `train_loss` final de 1,1307). La innovación principal respecto al modelo base es la incorporación del token de idioma `gor_Latn` (ID 256204), inicializado como centroide de las representaciones de `ind_Latn`, `bug_Latn`, `tgl_Latn` y `ceb_Latn`, lenguas austronesias relacionadas que sí están presentes en NLLB-200.
 
-El corpus de entrenamiento consta de 96.004 muestras seq2seq de entrenamiento (mas 2.158 de validacion y 2.159 de test), con particion estratificada declarada sin fuga de datos. Se compone de 17.118 frases paralelas completas y limpias, 17.901 entradas de lexico bilingue (en ambos sentidos), 5.039 pares de derivacion morfologica y 6.822 pares de aumento por sinonimos KBBI y registro de habla, estos ultimos solo en el split de entrenamiento. El autor documenta cuatro estrategias de adaptacion linguistica: un motor de ensamblaje de afijos y morfofonemica productiva (31 sistemas de prefijos, infijos `-um-`, `-il-`, `-im-`, sufijos `-lo`, `-a`, `-i`, cliticos y cinco sistemas de tiempo verbal), reglas de fonologizacion de prestamos del indonesio al gorontalo (lengua de vocalismo abierto), descomposicion semantica con morfemas direccionales (`mayi`, `mao`, `mola`, `mota`) y un puente de sinonimos y registros (forma comun frente a forma de respeto). Tambien se alinea la ortografia de Pateda 1987 (vocales dobles, oclusion glotal con `?`, sin semivocales `y/w`) con la de 2001 (vocales largas con `:`, sin marca glotal, semivocales explicitas); el modelo genera salida en la norma 2001 y acepta entrada en ambas.
+El corpus de entrenamiento se construye a partir de dos obras lexicográficas del profesor Mansoer Pateda: el *Kamus Bahasa Gorontalo–Indonesia* (2001) y el *Kamus Bahasa Indonesia–Gorontalo* (1987), auditadas y reconciliadas. La versión v6 incorpora 32.039 entradas de vocabulario de diccionario (28.727 únicas limpias), 29.546 frases paralelas crudas (22.751 únicas limpias) y 9.777 pares morfológicos. El conjunto final asciende a 309.206 muestras de entrenamiento (145.920 muestras base más un sobremuestreo de factor 3 sobre léxico y morfología de frases de tres palabras o menos), con particiones de validación (2.898) y test (2.890) sin fuga de datos. Se aplica además un puente ortográfico entre la notación de 1987 (vocales dobles, oclusiva glotal `?`) y la de 2001 (dos puntos, sin `?`, semivocales explícitas), y un motor morfológico que cubre 31 sistemas de prefijos, infijos (`-um-`, `-il-`) y sufijos (`-lo`, `-a`, `-i`).
 
 ## Capacidades
 
-- Traduccion bidireccional indonesio a gorontalo y gorontalo a indonesio, con token de lengua `gor_Latn` propio.
-- Normalizacion de variantes ortograficas: acepta entrada en la ortografia de Pateda 1987 y en la de 2001, y produce salida en la norma 2001.
-- Generacion de formas derivadas y flexionadas del gorontalo mediante las reglas de afijacion y morfofonemica incorporadas en el entrenamiento (prefijos, infijos, sufijos, cliticos, alteraciones fonemicas y cinco tiempos verbales).
-- Adaptacion de prestamos del indonesio segun las reglas de vocalismo abierto del gorontalo (por ejemplo, `dokter` a `dokuteri`, `polisi` a `pulisi`).
-- Diferenciacion de registro de habla (forma comun frente a forma de respeto) mediante los pares de aumento por registro.
-- Traduccion de entradas lexicas aisladas y de frases completas, no solo de texto corrido.
-- No se declara soporte de tool calling, function calling, razonamiento multi-paso, agentes, vision, audio ni modo de pensamiento; es un modelo text2text-generation de traduccion.
+- Traducción bidireccional indonesio → gorontalo y gorontalo → indonesio, con normalización de la ortografía histórica de 1987 a la estándar de 2001.
+- Generación de texto seq2seq condicionada por token de idioma (`ind_Latn` / `gor_Latn`), propia del paradigma NLLB.
+- Manejo de léxico y morfología de palabras cortas gracias al sobremuestreo de entradas de diccionario y pares morfológicos.
+- Traducción de frases completas y de unidades léxicas aisladas (uso como diccionario bilingüe automático).
+- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo puramente de traducción.
+- No dispone de modo thinking, visión ni audio.
+- Capacidad multilingüe limitada a los dos idiomas del par; no se documenta transferencia a otras lenguas.
 
 ## Casos de uso
 
-- Traduccion de documentacion administrativa local: el modelo convierte comunicados, formularios y avisos del indonesio al gorontalo para administraciones de la provincia de Gorontalo, aprovechando la salida en ortografia baku 2001 y la capacidad de adaptar prestamos del indonesio.
-- Digitalizacion y consulta de patrimonio lexicografico: al aceptar entrada en la ortografia de 1987, permite procesar y traducir automaticamente entradas de diccionarios historicos sin normalizacion manual previa.
-- Atencion al ciudadano en servicios publicos: traduccion de respuestas de sistemas de informacion del indonesio al gorontalo, con diferenciacion de registro (forma de respeto `wa:tiya`/`ito` frente a forma comun `wau`/`yio`) segun el interlocutor.
-- Educacion bilingue: generacion de material de apoyo y glosas indonesio-gorontalo para escuelas de la region, apoyandose en la cobertura de lexico y de pares de derivacion morfologica del entrenamiento.
-- Traduccion de contenido digital y redes sociales: adaptacion de textos breves del indonesio al gorontalo para comunidades en linea, con manejo de variantes ortograficas de entrada.
-- Investigacion linguisticas y de lenguas de bajos recursos: el checkpoint sirve como linea base reproducible (Apache 2.0, safetensors, transformers) para experimentos de adaptacion de NLLB-200 a lenguas austronesias con corpus pequenos.
-- Preservacion y difusion cultural: traduccion de relatos, tradiciones y material divulgativo sobre la lengua hulontalo, con salida conforme a la norma ortografica de referencia.
+- Traducción de documentación administrativa local: el modelo permite convertir comunicados y formularios del indonesio al gorontalo para oficinas provinciales, aprovechando que la ortografía de salida sigue el estándar de 2001.
+- Preservación digital de patrimonio lingüístico: digitalización y traducción de textos históricos escritos en la ortografía de 1987, gracias al puente ortográfico implementado en el corpus.
+- Diccionario bilingüe automático: consulta de palabras y frases cortas, donde el sobremuestreo 3× de entradas léxicas de tres palabras o menos mejora la cobertura frente a un modelo genérico.
+- Subtitulado y localización de contenido audiovisual regional: traducción de subtítulos indonesios a gorontalo para medios locales y plataformas de vídeo.
+- Educación y materiales escolares: generación de glosas y traducciones de apoyo para la enseñanza del gorontalo como lengua materna en escuelas de la provincia.
+- Atención al ciudadano en lengua local: integración en chatbots o formularios de servicios públicos que necesiten responder en gorontalo a partir de consultas en indonesio.
+- Investigación en lenguas de bajos recursos: el modelo sirve como línea base reproducible para experimentos de adaptación de NLLB a lenguas austronesias no cubiertas.
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de la model card (no verificados de forma independiente, `verified: false`). El conjunto de evaluacion es el test limpio del corpus `panitagorontalo/gorontalo-indonesia-parallel`, derivado del "Korpus Terpadu Dwibahasa Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)".
+Resultados declarados por el autor (no verificados) sobre el conjunto de test v6 del corpus `panitagorontalo/gorontalo-indonesia-parallel`:
 
-| Tarea | Metrica | Resultado |
-|---|---|---|
-| Traduccion indonesio a gorontalo | SacreBLEU (ID a GOR, test limpio) | 23,42 |
-| Traduccion indonesio a gorontalo | chrF++ (ID a GOR, test limpio) | 39,26 |
-| Traduccion gorontalo a indonesio | SacreBLEU (GOR 1987 a ID, test limpio) | 21,53 |
-| Traduccion gorontalo a indonesio | chrF++ (GOR 1987 a ID, test limpio) | 47,36 |
+| Direccion | Metrica | v6 | v5 | v4 | Zero-shot |
+|---|---|---|---|---|---|
+| ID → GOR | SacreBLEU | 40,59 | 35,65 | 31,14 | 0,17 |
+| ID → GOR | chrF++ | 57,98 | 53,87 | 49,60 | 10,26 |
+| GOR (2001) → ID | SacreBLEU | 32,57 | 28,95 | 24,52 | no disponible |
+| GOR (2001) → ID | chrF++ | 56,80 | 51,70 | 48,93 | no disponible |
+| GOR (1987) → ID | SacreBLEU | 35,60 | 30,15 | 29,18 | no disponible |
+| GOR (1987) → ID | chrF++ | 59,29 | 53,15 | 54,55 | no disponible |
 
-Como referencia, el autor declara un SacreBLEU zero-shot de 0,13 para NLLB-200 original sobre gorontalo, al no existir el codigo `gor_Latn` en el modelo base. No se han publicado en la informacion disponible resultados comparativos con otros sistemas sobre el mismo test.
+Tamaños de test declarados: n=1.136 para ID→GOR y n=618 para GOR→ID.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: en `bfloat16`/`float16` el checkpoint ocupa aproximadamente 1,23 GB de pesos (615M parametros), por lo que la inferencia cabe holgadamente en GPUs de 4-8 GB; con cuantizacion de 8 bits se reduce a unos 0,6 GB y con 4 bits a unos 0,3 GB, aunque el autor no publica pesos cuantizados.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (RTX 3050, RTX 4060, T4, L4); para lotes grandes o mayor throughput, A100 o H100 resultan sobredimensionadas para este tamano pero permiten paralelizar por lotes.
-- Cabe en GPU de consumo: si, en tarjetas de 4 GB o mas en precision reducida; en CPU es viable para traduccion de frases individuales.
-- Opciones de despliegue: transformers (libreria declarada, pipeline `translation`), ademas de servidores compatibles con arquitecturas encoder-decoder tipo M2M-100 (por ejemplo, TGI o vLLM) y conversion a GGUF para llama.cpp u Ollama, aunque el autor no documenta ni publica estas conversiones.
-- Latencia y throughput: no disponibles en la informacion proporcionada.
+- VRAM estimada para inferencia en `bfloat16`/`float16`: en torno a 1,3 GB de pesos, más overhead de activaciones; cabe holgadamente en GPUs de 4 GB o más.
+- En cuantización de 8 bits, el modelo ocupa aproximadamente 0,7 GB; en 4 bits, en torno a 0,4 GB.
+- GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4060, RTX 4090) es suficiente; para despliegue de alto throughput se recomiendan A100, H100 o L4.
+- Cabe en GPU consumer y también en CPU para inferencia por lotes pequeños, dado el reducido tamaño del modelo.
+- Opciones de despliegue: `transformers` con `pipeline("translation")`, TGI, vLLM (soporte de modelos encoder-decoder) y conversión a GGUF para llama.cpp/Ollama (no documentada por el autor).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| `panitagorontalo/nllb-200-gorontalo-bi-600M` | 615.072.768 | no disponible | indonesio y gorontalo (bidireccional) | Apache 2.0 | Hugging Face, transformers |
-| `facebook/nllb-200-distilled-600M` (modelo base) | ~615M (distilled 600M) | no disponible | 200 lenguas, sin codigo `gor_Latn` | CC-BY-NC 4.0 (segun la ficha publica del modelo base; no confirmado en la informacion proporcionada) | Hugging Face |
-| `facebook/nllb-200-distilled-1.3B` | ~1.300M | no disponible | 200 lenguas | CC-BY-NC 4.0 (segun la ficha publica del modelo base; no confirmado en la informacion proporcionada) | Hugging Face |
+| panitagorontalo/nllb-200-gorontalo-bi-600M | 615 M | no disponible | id, gor | Apache 2.0 | Ajuste específico para gorontalo; SacreBLEU 40,59 ID→GOR |
+| facebook/nllb-200-distilled-600M | 615 M | 512 tokens (arquitectura NLLB) | 200 | CC-BY-NC 4.0 | No cubre gorontalo; zero-shot 0,17 SacreBLEU en ID→GOR |
+| facebook/nllb-200-1.3B | 1,3 B | 512 tokens (arquitectura NLLB) | 200 | CC-BY-NC 4.0 | Mayor tamaño pero sin cobertura de gorontalo |
+| facebook/m2m100_418M | 418 M | 1024 tokens (arquitectura M2M-100) | 100 | MIT | No incluye gorontalo |
 
-Frente al modelo base, la diferencia clave es la cobertura del par indonesio-gorontalo: NLLB-200 original no dispone del token `gor_Latn` y su rendimiento zero-shot es de 0,13 SacreBLEU segun el autor, mientras que este checkpoint declara 23,42 en ID a GOR. Frente a la variante de 1.3B, este modelo es aproximadamente la mitad en parametros, lo que reduce los requisitos de VRAM, a costa de capacidad general que no esta evaluada en la informacion disponible. No se dispone de datos de benchmarks de alternativas sobre el mismo test, por lo que la comparacion de rendimiento se limita a los valores declarados por el autor.
+La comparativa se limita a los modelos base de la familia; no se dispone de datos de otros ajustes específicos para gorontalo en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Cobertura limitada a un unico par de lenguas: solo indonesio y gorontalo; no traduce entre gorontalo y otras lenguas distintas del indonesio, y el resto del vocabulario multilingue de NLLB-200 puede haberse degradado con el fine-tuning completo (no documentado por el autor).
-- Corpus de entrenamiento pequeno y de origen lexicografico: 96.004 muestras seq2seq derivadas principalmente de dos diccionarios, lo que puede limitar la generalizacion a dominios especializados, jerga moderna o registro coloquial no recogido en las fuentes.
-- Resultados de benchmarks no verificados: los valores de SacreBLEU y chrF++ estan marcados como `verified: false` en el model-index y no se han reproducido de forma independiente.
-- Riesgo de alucinacion y de traduccion literal: al ser un modelo seq2seq de 600M entrenado con aumento por sinonimos, puede producir formas derivadas morfologicamente plausibles pero inexistentes, o elegir un registro (comun frente a respeto) inadecuado al contexto.
-- Dependencia de la normalizacion ortografica: aunque acepta entrada en ortografia de 1987 y 2001, variantes no contempladas (mezclas, errores tipograficos, ausencia de marcas de vocal larga) pueden degradar la calidad.
-- Idiomas de bajos recursos: no hay garantia de cobertura de todos los matices dialectales del gorontalo ni de terminologia tecnica reciente.
-- Restricciones de licencia: el checkpoint se publica bajo Apache 2.0, lo que permite uso comercial; sin embargo, conviene verificar la licencia del modelo base `facebook/nllb-200-distilled-600M` y de los datos fuente (los diccionarios de Pateda) antes de explotacion comercial, ya que la informacion disponible no detalla esas condiciones.
-- Adopcion practicamente nula: 0 descargas y 1 like en Hugging Face a fecha de la informacion, lo que implica ausencia de validacion por la comunidad y de reportes de uso en produccion.
-- Fecha de publicacion futura respecto a la referencia habitual (noviembre de 2026): conviene confirmar la vigencia y el mantenimiento del repositorio antes de integrarlo en pipelines.
+- Los resultados de benchmarks son declarados por el autor y están marcados como no verificados (`verified: false`) en el model-index.
+- El corpus de entrenamiento proviene de dos diccionarios con posible ruido OCR y de tamaño reducido (decenas de miles de frases), lo que puede producir traducciones literales o fallos en estructuras sintácticas complejas.
+- El modelo solo cubre indonesio y gorontalo; no se ha evaluado su comportamiento con entradas en otros idiomas ni con mezcla de lenguas.
+- Riesgo de alucinación y de traducción parcial en frases largas o con vocabulario fuera del corpus lexicográfico.
+- La normalización ortográfica de 1987 a 2001 puede alterar textos que el usuario quiera conservar en su grafía original.
+- Aunque la licencia Apache 2.0 permite uso comercial, el modelo base NLLB-200 distilled se distribuye bajo CC-BY-NC 4.0; conviene revisar la compatibilidad de licencias antes de un despliegue comercial.
+- No se documentan sesgos específicos, pero al derivar de NLLB-200 puede heredar sesgos de género y culturales del corpus original de Meta.
+- No hay información sobre longitud máxima de contexto efectiva tras el ajuste fino ni sobre degradación con secuencias largas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/panitagorontalo/nllb-200-gorontalo-bi-600M
+- Space de demostración: https://huggingface.co/spaces/panitagorontalo/penerjemah-bahasa-gorontalo
+- Notebook de tutorial (Colab): https://huggingface.co/panitagorontalo/nllb-200-gorontalo-bi-600M/blob/main/Tutorial_Penerjemah_AI_Bahasa_Gorontalo_Panita_Research.ipynb
+- Paper técnico v6 (indonesio): https://huggingface.co/panitagorontalo/nllb-200-gorontalo-bi-600M/blob/main/paper/paper_id.pdf
+- Paper técnico v6 (inglés): https://huggingface.co/panitagorontalo/nllb-200-gorontalo-bi-600M/blob/main/paper/paper_en.pdf
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
-- Dataset declarado: https://huggingface.co/datasets/panitagorontalo/gorontalo-indonesia-parallel
-- Blog de Meta AI sobre NLLB-200 (200 idiomas en un unico modelo): https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/
-- Guia de ejecucion local del modelo NLLB-200 600M: https://nllb.com/setup-nllb-locally/
+- Dataset paralelo: https://huggingface.co/datasets/panitagorontalo/gorontalo-indonesia-parallel

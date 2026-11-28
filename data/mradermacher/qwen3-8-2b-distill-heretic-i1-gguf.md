@@ -2,52 +2,50 @@
 
 ## Resumen
 
-Qwen3.8-2B-Distill-heretic-i1-GGUF es una coleccion de cuantizaciones GGUF generadas por mradermacher a partir del modelo htb-ac-1424625/Qwen3.8-2B-Distill-heretic, una destilacion de la familia Qwen orientada a razonamiento, function calling y despliegue en el borde (edge). El modelo base conserva la etiqueta "heretic", que en la practica indica que ha sido sometido a tecnicas de abliteration o decensoring para reducir los rechazos del modelo ante peticiones que el modelo original filtraria. El resultado es un modelo pequeno, de aproximadamente 1.880 millones de parametros, pensado para ejecutarse en hardware modesto.
+Qwen3.8-2B-Distill-heretic-i1-GGUF es un conjunto de cuantizaciones GGUF generadas por mradermacher a partir del modelo htb-ac-1424625/Qwen3.8-2B-Distill-heretic, una destilación de la familia Qwen con aproximadamente 1.880 millones de parámetros (1.881.825.088 según los pesos en safetensors). El modelo base se presenta como una variante "heretic" o "abliterated", es decir, con las capas de rechazo/aliniación atenuadas respecto al modelo original, orientada a razonamiento, function calling y despliegue en el borde (edge).
 
-El repositorio no aporta pesos en formato transformers, sino unicamente ficheros GGUF cuantizados con el metodo i1 (imatrix) de mradermacher, desde IQ1_S (0,8 GB) hasta Q6_K (1,7 GB). Esto lo hace directamente utilizable en llama.cpp, Ollama y otros runners compatibles con GGUF, pero no en pipelines que requieran safetensors. La licencia declarada es Apache 2.0 y el unico idioma reconocido en la model card es el ingles.
+El repositorio no contiene pesos en formato transformers, sino exclusivamente ficheros GGUF cuantizados con la técnica i1 (imatrix/weighted) de mradermacher, cubriendo desde IQ1_S (0,8 GB) hasta Q6_K (1,7 GB). Esto lo hace apto para inferencia en CPU, GPUs de consumo y dispositivos con poca memoria mediante llama.cpp y derivados. La licencia declarada es Apache 2.0 y el único idioma soportado oficialmente es el inglés.
 
-Su relevancia actual radica en la combinacion de tres factores: tamano reducido (apto para GPUs de consumo e incluso CPU), soporte declarado de razonamiento y function calling, y ausencia de filtros de rechazo. Para desarrolladores que necesitan un modelo local para agentes ligeros o prototipado rapido sin restricciones de contenido, es una opcion practica, aunque con las cautelas propias de un modelo destilado, pequeno y modificado.
+La relevancia actual radica en su reducido tamaño (2B), su ventana de contexto presumiblemente amplia (heredada de la familia Qwen3, aunque no confirmada en la información disponible) y su naturaleza descensurada, que lo hace atractivo para experimentación con agentes y function calling sin las restricciones de rechazo del modelo original, a costa de asumir riesgos de contenido y de una calidad inferior a los modelos mayores.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de la familia Qwen; transformer, detalles no publicados) |
-| Parametros totales | 1.881.825.088 (~1,88 mil millones) |
-| Parametros activos | no aplica (no es MoE) |
+| Arquitectura | transformer decoder-only (familia Qwen3, detalles no disponibles) |
+| Parametros totales | 1.881.825.088 (~1,88 B) |
+| Parametros activos | no disponible (no es MoE según los datos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | i1-IQ1_S, i1-IQ1_M, i1-IQ2_XXS, i1-IQ2_XS, i1-IQ2_S, i1-IQ2_M, i1-IQ3_XXS, i1-Q2_K_S, i1-Q2_K, i1-Q3_K_S, i1-IQ3_XS, i1-IQ3_S, i1-IQ3_M, i1-Q3_K_M, i1-Q3_K_L, i1-IQ4_XS, i1-Q4_0, i1-Q4_K_S, i1-IQ4_NL, i1-Q4_K_M, i1-Q4_1, i1-Q5_K_S, i1-Q5_K_M, i1-Q6_K |
-| Idiomas soportados | en (ingles) |
+| Tipos de cuantizacion | i1 (imatrix): IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, Q2_K_S, Q2_K, Q3_K_S, IQ3_XS, IQ3_S, IQ3_M, Q3_K_M, Q3_K_L, IQ4_XS, Q4_0, Q4_K_S, IQ4_NL, Q4_K_M, Q4_1, Q5_K_S, Q5_K_M, Q6_K |
+| Idiomas soportados | inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (unicamente; no se incluyen safetensors en este repo) |
+| Formato de pesos | GGUF (i1/imatrix); repositorio estático adicional en formato GGUF estándar |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base. Los tags indican que se trata de una destilacion (distillation) sobre la familia Qwen (etiquetas qwen3.5 y qwen3.8), afinada con SFT y orientada a razonamiento y function calling. El sufijo "heretic" y los tags "uncensored", "decensored" y "abliterated" indican que el modelo ha pasado por un proceso de abliteration, una tecnica que identifica y neutraliza las direcciones del espacio de activaciones asociadas al rechazo de peticiones, de modo que el modelo deja de negarse a responder sobre determinados temas.
+El modelo base es una destilación de la familia Qwen (etiquetada como qwen3.5/qwen3.8 en los tags) con ~1,88 B de parámetros, lo que sugiere una arquitectura transformer decoder-only compacta. Los tags indican entrenamiento mediante SFT y destilación, con soporte declarado de reasoning y function calling. La variante "heretic"/"abliterated" implica un proceso de eliminación o atenuación de la dirección de rechazo en el espacio de activaciones o pesos, orientado a reducir las negativas del modelo ante peticiones sensibles.
 
-No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. El autor del modelo base declara el proceso como "reproducible" mediante el tag correspondiente, pero los detalles no estan en la model card consultada. Las cuantizaciones de este repositorio se han generado con el metodo i1 de mradermacher, que emplea un fichero imatrix (incluido en el repo, 0,1 GB) para ponderar la cuantizacion segun la importancia de los tensores, lo que suele mejorar la calidad frente a cuantizaciones estaticas del mismo tamano.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO ni innovaciones técnicas específicas (atención lineal, decodificación especulativa, etc.). Las cuantizaciones i1 de mradermacher emplean una matriz de importancia (imatrix) generada a partir del propio modelo, lo que mejora la fidelidad de los cuantizados de baja precisión respecto a los estáticos.
 
 ## Capacidades
 
-- Generacion de texto conversacional en ingles.
-- Razonamiento (tag "reasoning"), presumiblemente con soporte de cadenas de pensamiento, aunque el formato exacto no se documenta.
+- Generación de texto conversacional en inglés.
+- Razonamiento de múltiples pasos (tag "reasoning").
 - Function calling / tool calling (tag "function-calling").
-- Destilacion de un modelo mayor de la familia Qwen, lo que busca transferir capacidades de razonamiento a un modelo pequeno.
-- Comportamiento "uncensored": menor tasa de rechazos ante peticiones que el modelo original filtraria.
-- Despliegue en el borde (tag "edge") por su tamano reducido.
-- Compatibilidad con endpoints (tag "endpoints_compatible").
-- Capacidades multimodales: no disponibles.
-- Capacidades multilingues: limitadas al ingles segun la model card.
+- Destilación orientada a despliegue en el borde (tag "edge").
+- Comportamiento descensurado/abliterated: menor probabilidad de rechazo ante peticiones que el modelo original rechazaría.
+- No se confirma soporte de visión en la información disponible (el README menciona "vision model" de forma genérica, pero no hay mmproj en este repositorio; habría que consultar el repositorio estático).
+- Capacidades multilingües limitadas al inglés según la model card.
 
 ## Casos de uso
 
-- Agentes locales de function calling: el modelo declara soporte de tool calling y un tamano de 1,88 mil millones de parametros, lo que permite ejecutarlo en una GPU de consumo y usarlo como planificador de llamadas a herramientas en un agente ligero.
-- Prototipado rapido de asistentes conversacionales: con cuantizaciones desde 0,8 GB, se puede desplegar en un portatil con llama.cpp u Ollama para iterar sobre prompts y flujos conversacionales sin coste de API.
-- Despliegue en dispositivos de borde: su huella de memoria (1,3-1,7 GB en cuantizaciones Q4-Q6) lo hace viable en mini-PC, Raspberry Pi con RAM suficiente o moviles de gama alta mediante runners GGUF.
-- Generacion de texto sin filtros para investigacion: el caracter abliterated permite estudiar el comportamiento del modelo en dominios donde el modelo original rechazaria responder, util para analisis de sesgos y robustez.
-- Clasificacion y extraccion de informacion en pipelines por lotes: al ser pequeno y rapido en CPU/GPU modesta, puede procesar grandes volumenes de texto en ingles para tareas de etiquetado o resumen extractivo.
-- Base para fine-tuning adicional: aunque este repo solo ofrece GGUF, el modelo base en transformers puede servir como punto de partida para ajustes especificos de dominio en ingles con requisitos de hardware minimos.
-- Educacion e investigacion sobre destilacion: al ser un modelo destilado y pequeno, es util para experimentos academicos sobre transferencia de capacidades y sobre el efecto de la abliteration en el rendimiento.
+- Asistentes locales en el borde: el modelo cabe en menos de 2 GB en Q4_K_M, por lo que puede ejecutarse en Raspberry Pi, mini-PC o portátiles sin GPU dedicada mediante llama.cpp, ofreciendo un asistente conversacional offline en inglés.
+- Agentes con function calling en pipelines ligeros: su soporte declarado de tool calling permite integrarlo en flujos de automatización (consulta de APIs, extracción de datos) donde el coste por token y la latencia importan más que la precisión máxima.
+- Experimentación con modelos descensurados: útil para investigación sobre alineación, red teaming y evaluación de sesgos, al poder comparar respuestas con y sin las capas de rechazo del modelo original.
+- Prototipado rápido de chatbots: con cuantizados Q4_K_M o Q5_K_M se obtiene una calidad razonable para demos y pruebas de concepto en inglés sin infraestructura GPU.
+- Generación de código asistida en entornos con recursos limitados: aunque no es su especialidad, el modelo puede completar snippets y explicar código en inglés, integrándose en editores vía servidores locales compatibles con la API de OpenAI.
+- Fine-tuning ligero y destilación: al ser un modelo de 2B con licencia Apache 2.0, sirve como base para destilar modelos mayores o para ajuste fino en tareas específicas con hardware modesto.
+- Clasificación y extracción de información: con contexto corto y prompts estructurados, puede emplearse para etiquetado, resumen y extracción de entidades en inglés a bajo coste.
 
 ## Benchmarks y rendimiento
 
@@ -55,39 +53,38 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 0,8 GB en i1-IQ1_S, 1,0-1,2 GB en cuantizaciones IQ2-IQ3, 1,3-1,4 GB en Q4 (recomendado Q4_K_M), 1,5 GB en Q5 y 1,7 GB en Q6_K. Hay que sumar el espacio para el contexto KV cache, que depende de la longitud de contexto configurada.
-- GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente en Q4; RTX 3050, RTX 4060, GTX 1660 o superiores funcionan sin problema. En GPUs de datacenter (A100, H100) el modelo estaria infrautilizado, pero puede ejecutarse con alto throughput en lotes.
-- Cabe en GPU de consumo: si, en practicamente todas las GPU consumer modernas, e incluso en iGPU con memoria unificada suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, y cualquier runner compatible con GGUF. No es compatible directamente con vLLM o TGI en su forma GGUF sin conversion previa a safetensors.
-- Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano, se espera una generacion muy rapida en GPU consumer (decenas de tokens por segundo) y aceptable en CPU, pero no hay cifras oficiales.
+- VRAM estimada para inferencia: ~0,8-1,0 GB en IQ1/IQ2, ~1,3-1,4 GB en Q4_K_M, ~1,7 GB en Q6_K (sin contar overhead de contexto KV cache).
+- GPU recomendadas: cualquier GPU con ≥2 GB de VRAM (GTX 1050 Ti, RTX 3050, RTX 4060); en A100/H100 el modelo está sobredimensionado para la GPU y el cuello de botella será el ancho de banda, no la memoria.
+- Cabe en GPU de consumo: sí, en todas las GPU modernas con ≥2 GB, e incluso en iGPU y CPU.
+- Opciones de despliegue: llama.cpp, Ollama (importando el GGUF), LM Studio, text-generation-webui, y servidores compatibles con la API de OpenAI (endpoints_compatible en los tags).
+- Latencia y throughput estimados: no disponibles; en CPU moderna se esperan decenas de tokens por segundo en Q4_K_M para un modelo de 2B, pero no hay mediciones publicadas en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-2B-Distill-heretic (este repo, GGUF) | ~1,88 B | no disponible | Apache 2.0 | GGUF | Destilado, abliterated, solo ingles |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Modelo oficial, multilingue, con filtros |
-| Llama 3.2 1B Instruct | ~1,2 B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | Modelo oficial, multilingue, con filtros |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 tokens (segun documentacion publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | Modelo oficial, ingles, con filtros |
+| Qwen3.8-2B-Distill-heretic-i1-GGUF (este) | ~1,88 B | no disponible | Apache 2.0 | GGUF i1 | Descensurado, inglés, destilado |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32k (según model card pública) | Apache 2.0 | safetensors, GGUF | Alineado, multilingüe, benchmarks públicos |
+| Llama 3.2 1B Instruct | ~1,2 B | 128k (según model card pública) | Llama 3.2 Community License | safetensors, GGUF | Alineado, multilingüe, restricciones de licencia |
+| SmolLM2-1.7B-Instruct | ~1,7 B | 8k (según model card pública) | Apache 2.0 | safetensors, GGUF | Alineado, inglés, benchmarks públicos |
 
-La comparativa se basa en datos publicos de los modelos alternativos; para este modelo concreto no hay datos de contexto ni benchmarks publicados en la informacion disponible, por lo que la comparacion de rendimiento no puede realizarse con rigor.
+Las cifras de contexto y licencia de los modelos comparables provienen de sus respectivas model cards públicas y no de la información proporcionada en esta ficha; se incluyen como referencia orientativa.
 
 ## Limitaciones y advertencias
 
-- Modelo destilado y de 1,88 mil millones de parametros: su capacidad de razonamiento y su fiabilidad en tareas complejas seran inferiores a las de modelos mayores, aunque no hay benchmarks que lo cuantifiquen.
-- Riesgo de alucinacion elevado, especialmente en tareas de conocimiento factual, por su tamano y por el proceso de destilacion.
-- Solo soporta ingles segun la model card; el rendimiento en castellano no esta garantizado ni documentado.
-- La abliteration puede degradar capacidades generales y aumentar la probabilidad de contenido toxico, sesgado o inseguro; no es recomendable para aplicaciones de cara al publico sin filtros adicionales.
-- Licencia Apache 2.0 permite uso comercial, pero el modelo base y los datos de destilacion pueden tener condiciones adicionales no reflejadas en este repo; conviene revisar la licencia del modelo base htb-ac-1424625/Qwen3.8-2B-Distill-heretic.
-- Este repositorio solo contiene GGUF; no incluye safetensors ni tokenizer en formato transformers, por lo que no se puede cargar directamente con la libreria transformers pese al tag.
-- No hay informacion sobre longitud de contexto, datos de entrenamiento ni evaluaciones; el uso en produccion requiere validacion propia.
-- El repo ocupa 25,8 GB por incluir todas las cuantizaciones; descargar solo el fichero necesario.
+- Solo soporta inglés oficialmente; el rendimiento en castellano no está garantizado ni evaluado.
+- Al ser una variante "heretic"/"abliterated", puede generar contenido sensible, ofensivo o inseguro que el modelo original rechazaría; no apto para producción sin filtros adicionales.
+- Riesgo de alucinación elevado por su tamaño reducido (2B) y por el proceso de destilación.
+- No hay benchmarks publicados que permitan validar su calidad frente a alternativas.
+- La longitud de contexto no está confirmada; asumir valores conservadores (4k-8k) hasta verificarlo.
+- Aunque la licencia es Apache 2.0, el modelo base es una destilación de Qwen; conviene revisar los términos del modelo original y de los datos de destilación antes de uso comercial.
+- El repositorio contiene solo GGUF; para fine-tuning se requiere el modelo base en safetensors (htb-ac-1424625/Qwen3.8-2B-Distill-heretic).
+- El tag "vision model" del README es genérico de la plantilla de mradermacher; no hay mmproj en este repositorio, por lo que la capacidad de visión no está confirmada.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-2B-Distill-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/htb-ac-1424625/Qwen3.8-2B-Distill-heretic
-- Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3.8-2B-Distill-heretic-GGUF
-- Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.8-2B-Distill-heretic-i1-GGUF
-- Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
-- Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
+- Cuantizados estáticos: https://huggingface.co/mradermacher/Qwen3.8-2B-Distill-heretic-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#Qwen3.8-2B-Distill-heretic-i1-GGUF
+- Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

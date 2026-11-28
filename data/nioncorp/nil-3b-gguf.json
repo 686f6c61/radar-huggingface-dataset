@@ -47,16 +47,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "nioncorp/nil-3b-gguf · Hugging Face",
-      "url": "https://huggingface.co/nioncorp/nil-3b-gguf",
-      "snippet": "nil-3b is a sovereign, offline-first 3-billion parameter language model quantized down to a 1.8GB GGUF footprint (q4_k_m). Developed by Nion Technologies, Inc., nil-3b is engineered specifically for low-resource environments, zero-bandwidth deployments, and edge computing hardware (ARM Cortex-A72, wearables, and low-power devices) across Africa."
-    },
-    {
-      "title": "Nion Intelligence Labs | NIL-3B Sovereign Engine",
-      "url": "https://labs.nioncorp.com/",
-      "snippet": "Autonomous offline AI models and decentralized edge intelligence optimized for Africa's low-bandwidth environments."
-    }
-  ]
+  "sources": []
 }

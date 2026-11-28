@@ -2,51 +2,50 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-Uncensored-BF16-MRoPE-Fix es una versión modificada del modelo Qwen3.8-Flash-Next de Qwen (Alibaba), publicada por el usuario leonice2 en Hugging Face. Se trata de un build en precisión completa BF16 que ha sido sometido a un proceso de *abliteration*, una técnica que elimina la dirección de rechazo del flujo residual del transformer, de modo que el modelo deja de negarse a responder a peticiones que el modelo original rechazaría. El modelo base es un Mixture-of-Experts (MoE) de aproximadamente 180 000 millones de parámetros totales, con atención híbrida, capacidades nativas de visión-lenguaje, modo de razonamiento flexible, soporte de tool calling y una cabeza MTP (multi-token prediction) para decodificación especulativa.
+Qwen3.8-Flash-Next-Uncensored-BF16-MRoPE-Fix es una compilacion de pesos en precision completa (BF16) del modelo Qwen3.8-Flash-Next de Qwen/Alibaba, publicada por el usuario leonice2. Se trata de una variante "abliterated", es decir, con la direccion de rechazo ortogonalizada fuera del flujo residual para eliminar sustancialmente el comportamiento de negativa del modelo original. El repositorio conserva tanto la torre de vision como la cabeza MTP (multi-token prediction) del modelo base, y se presenta como el origen a partir del cual se derivan las versiones cuantizadas (FP8 y MLX de 4, 6 y 8 bits).
 
-La relevancia de esta ficha radica en que se distribuye como pesos fuente en BF16, pensados para servir de base a cuantizaciones posteriores (FP8, MLX de 4/6/8 bits) y a fine-tuning adicional. El repositorio ocupa 360 GB e incluye la torre de visión y la cabeza MTP preservadas. El modelo está etiquetado para investigación en seguridad de IA y red-teaming, y su uso en producción exige capas adicionales de moderación por parte del integrador.
+El modelo es un Mixture-of-Experts de aproximadamente 180.000 millones de parametros totales, con atencion hibrida, modalidad nativa vision-lenguaje, contexto de 262.144 tokens, pensamiento flexible (thinking mode), tool calling y decodificacion especulativa mediante MTP. Su relevancia actual radica en que ofrece pesos sin recortes de alineacion de seguridad para investigacion de interpretabilidad, estudios de mecanismos de rechazo y red teaming, sobre una base tecnica de ultima generacion y con licencia Apache 2.0.
 
-La licencia declarada es Apache 2.0, heredada del modelo base. Los idiomas soportados según la model card son inglés y chino. No se han publicado resultados de benchmarks en la información disponible, y el modelo no cuenta con descargas ni valoraciones en el momento de redactar esta ficha.
+La ficha describe exclusivamente los datos disponibles en la informacion proporcionada; los campos no documentados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer Mixture-of-Experts (MoE) con atención híbrida, torre de visión y cabeza MTP |
-| Parametros totales | 179 999 981 459 (~180B) |
-| Parametros activos | ~6B (según model card; se cita también 125B como cifra parcial no aclarada) |
-| Longitud de contexto | 262 144 tokens (262K) |
-| Tipos de cuantizacion | BF16 (este repo); derivados FP8 block y MLX 4/6/8 bits |
-| Idiomas soportados | en, zh |
+| Arquitectura | Mixture-of-Experts (MoE) con atencion hibrida, vision-lenguaje nativa y cabeza MTP; transformer con enrutado 512E top-10 |
+| Parametros totales | 179.999.981.459 (~180B) |
+| Parametros activos | ~6B (segun model card; el total de 125B indicado en la misma card no coincide con el recuento de safetensors) |
+| Longitud de contexto | 262.144 tokens (262K) |
+| Tipos de cuantizacion | BF16 (esta version); derivados FP8 block y MLX 4/6/8 bits |
+| Idiomas soportados | Ingles (en) y chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (BF16) |
+| Formato de pesos | safetensors (BF16); libreria transformers |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de tipo Mixture-of-Experts con atención híbrida, diseñado para procesar entradas multimodales de imagen, vídeo y texto. La model card indica una configuración MoE de 512 expertos con top-10 de enrutamiento, aunque no se detalla el número exacto de parámetros activos por token más allá de la cifra aproximada de 6B. Incorpora una cabeza MTP (multi-token prediction) que habilita decodificación especulativa y acelera la generación. La torre de visión y la cabeza MTP se conservan intactas en este build.
+El modelo base es un MoE con atencion hibrida que combina mecanismos de atencion estandar con componentes de atencion lineal, segun se deduce de la etiqueta "hybrid-attention" de la model card. El enrutado es 512E top-10, lo que implica 512 expertos por capa con activacion de los 10 mejores por token, dando lugar a unos 6B parametros activos sobre un total de ~180B. Incluye una torre de vision para entrada image-text-to-text y una cabeza MTP que habilita decodificacion especulativa y prediccion multi-token. La variante aqui descrita aplica abliteration: se calcula la direccion de rechazo en el espacio residual y se ortogonaliza respecto a los pesos, eliminando el comportamiento de negativa sin reentrenamiento supervisado.
 
-Sobre el entrenamiento del modelo base no se aportan en la información disponible detalles sobre número de tokens, composición del dataset ni si hubo RLHF o DPO. La modificación introducida por el autor consiste en una abliteration: se calcula la dirección de rechazo en el espacio de activaciones y se ortogonaliza respecto al flujo residual, eliminando la tendencia del modelo a negarse a responder. El sufijo "MRoPE-Fix" sugiere una corrección en la implementación del RoPE multimodal, aunque no se documenta el detalle técnico del arreglo.
+No se dispone de informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni la presencia de RLHF, DPO u otras fases de post-entrenamiento en el modelo base. La model card menciona etiquetas de post-training y fine-tuning, pero no detalla las etapas. El sufijo "MRoPE-Fix" del repositorio sugiere una correccion en el manejo de Rotary Position Embeddings multimodal, aunque no se documenta el alcance tecnico de dicho ajuste.
 
 ## Capacidades
 
-- Generación de texto y razonamiento con modo de pensamiento flexible (thinking mode configurable).
-- Procesamiento de imagen y vídeo en pipelines image-text-to-text.
-- Generación de código y matemáticas (el modelo base Qwen3.8 está orientado a tareas de razonamiento y código).
-- Soporte de tool calling y function calling.
-- Capacidades de agente y razonamiento multi-paso.
-- Multilingüe limitado a inglés y chino según la model card.
-- Decodificación especulativa mediante cabeza MTP.
-- Ausencia de mecanismos de rechazo tras la abliteration: responde a solicitudes que el modelo original denegaría.
+- Generacion de texto y razonamiento con modo de pensamiento flexible (thinking mode).
+- Procesamiento de imagenes y video como entrada (pipeline image-text-to-text, vision-lenguaje nativa).
+- Tool calling y function calling para integracion en pipelines y agentes.
+- Razonamiento multi-paso y comportamiento agentico.
+- Decodificacion especulativa mediante cabeza MTP para acelerar la inferencia.
+- Capacidades multilingues limitadas a ingles y chino.
+- Comportamiento sin rechazo (uncensored): cumple solicitudes que el modelo base rechazaria, incluidas peticiones daninas.
+- Compatibilidad con endpoints (etiqueta endpoints_compatible).
 
 ## Casos de uso
 
-- Investigación en interpretabilidad y mecanismos de rechazo: el modelo permite estudiar qué representaciones internas codifican la negativa a responder, comparando activaciones con el modelo base alineado.
-- Red-teaming y evaluación de robustez: sirve como modelo "sin guardrails" para probar la eficacia de clasificadores de moderación, filtros de salida y sistemas de detección de contenido dañino antes de desplegar modelos alineados.
-- Fine-tuning y post-entrenamiento: al distribuirse en BF16 con visión y MTP preservados, es la base recomendada para entrenar variantes especializadas (dominio médico, legal, seguridad) sin partir de pesos cuantizados.
-- Cuantización y despliegue en hardware heterogéneo: los pesos fuente permiten generar versiones FP8 para GPUs de centro de datos y MLX de 4/6/8 bits para Apple Silicon, adaptando el coste de inferencia al hardware disponible.
-- Análisis de documentos técnicos con imágenes: la combinación de contexto de 262K y torre de visión permite procesar manuales, planos o informes con figuras en una sola pasada.
-- Automatización de tareas con agentes: el soporte de tool calling y razonamiento multi-paso permite construir pipelines que consultan APIs, ejecutan código y encadenan acciones, siempre con capas de moderación propias.
-- Evaluación comparativa de alineación: útil para medir la degradación de capacidades tras la abliteration frente al modelo original en benchmarks de razonamiento y código.
+- Investigacion de interpretabilidad y mecanismos de rechazo: comparar las activaciones del modelo abliterated con las del Qwen3.8-Flash-Next original para localizar y caracterizar la direccion de rechazo en el flujo residual, usando la version BF16 como referencia sin perdida de precision.
+- Red teaming y evaluacion de robustez: generar ataques y prompts adversarios controlados para medir la resistencia de sistemas de moderacion y filtros de seguridad propios, en un entorno de laboratorio aislado.
+- Fine-tuning y post-entrenamiento: al ser pesos BF16 completos con torre de vision y cabeza MTP preservadas, sirve como base para ajuste supervisado o DPO orientado a dominios concretos, partiendo de un modelo sin alineacion previa que no interfiere con la senal de entrenamiento.
+- Cuantizacion y despliegue derivado: es la fuente recomendada para producir versiones FP8 o MLX y validar el impacto de la cuantizacion en tareas multimodales con contexto largo.
+- Analisis de documentos e imagenes tecnicas en ingles o chino: con 262K tokens de contexto puede procesar manuales, informes o capturas extensas y responder preguntas cruzando texto e imagen, en escenarios de investigacion donde no se requiere moderacion integrada.
+- Estudio de alucinacion y sesgos: al carecer de guardrails, permite medir con menos interferencia la tendencia del modelo base a fabricar contenido o reproducir sesgos, como linea base para comparativas de seguridad.
 
 ## Benchmarks y rendimiento
 
@@ -54,42 +53,43 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: aproximadamente 360 GB solo para pesos, más overhead de activaciones y caché KV; requiere múltiples GPUs de 80 GB (por ejemplo, 5-6 A100/H100 de 80 GB) o nodos con interconexión NVLink.
-- Versiones cuantizadas: FP8 block reduce el peso a ~180 GB, viable en 3-4 GPUs de 80 GB; MLX de 8 bits (~180 GB) y 4 bits (~90 GB) permiten despliegue en Apple Silicon de gama alta con memoria unificada amplia.
-- GPU recomendadas: H100 80GB, A100 80GB, H200 para BF16; para cuantizaciones agresivas, configuraciones multi-GPU consumer (RTX 4090 de 24 GB) solo mediante offloading o sharding extremo.
-- No cabe en una única GPU consumer en BF16 ni en FP8.
-- Opciones de despliegue: transformers (librería declarada), vLLM (la model card menciona serving con vLLM), y formatos MLX para Apple Silicon.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en BF16: aproximadamente 360 GB solo para pesos (179.999.981.459 parametros x 2 bytes), mas overhead de activaciones, cache KV para 262K tokens y torre de vision. No cabe en ninguna GPU de consumo.
+- GPU recomendadas: para BF16 se requiere un nodo multi-GPU de clase数据中心, por ejemplo 8x H100 80GB (640 GB) o 8x A100 80GB; con FP8 el requisito baja a unos 180 GB, viable en 4x H100 80GB o 2x H200.
+- GPU de consumo: no es viable en RTX 4090 ni en ninguna consumer GPU en BF16 ni FP8. Solo las versiones MLX de 4 bits (orientativas, ~90 GB) podrian ejecutarse en Mac Studio con memoria unificada alta, no en MacBook convencionales.
+- Opciones de despliegue: transformers (libreria declarada), vLLM (mencionado en la model card para servir el modelo), y las variantes MLX para Apple Silicon. No se documenta soporte de llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles. La cabeza MTP esta pensada para decodificacion especulativa y deberia mejorar el throughput respecto a decodificacion autoregresiva estandar, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Notas |
-|---|---|---|---|---|
-| Qwen3.8-Flash-Next-Uncensored-BF16-MRoPE-Fix | ~180B totales, ~6B activos | 262K | Apache 2.0 | Abliterated, visión, MTP, BF16 |
-| Qwen/Qwen3.8-Flash-Next (base) | ~180B totales, ~6B activos | 262K | Apache 2.0 | Modelo original alineado, con rechazos |
-| Qwen3.8-Flash-Next-Uncensored-FP8 | ~180B totales, ~6B activos | 262K | Apache 2.0 | Derivado cuantizado FP8 del mismo autor |
-| Qwen3.8-Flash-Next-Uncensored-MLX | ~180B totales, ~6B activos | 262K | Apache 2.0 | Derivado MLX 4/6/8 bits para Apple Silicon |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Notas |
+|---|---|---|---|---|---|
+| Qwen3.8-Flash-Next-Uncensored-BF16-MRoPE-Fix | ~180B totales / ~6B activos | 262K | Texto + vision/video | Apache 2.0 | Abliterated, sin guardrails; pesos BF16 |
+| Qwen/Qwen3.8-Flash-Next (base) | ~180B totales / ~6B activos | 262K | Texto + vision/video | Apache 2.0 | Alineado y con rechazo; referencia de comparacion |
+| Qwen3.8-Flash-Next-Uncensored-FP8 | ~180B totales / ~6B activos | 262K | Texto + vision/video | Apache 2.0 | Misma familia, cuantizado block-FP8 |
+| Qwen3.8-Flash-Next-Uncensored-MLX | ~180B totales / ~6B activos | 262K | Texto + vision/video | Apache 2.0 | Misma familia, 4/6/8 bits para Apple Silicon |
 
-No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
+No se dispone de datos de rendimiento comparado con otros modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La abliteration elimina la alineación de seguridad: el modelo cumplirá solicitudes dañinas, ilegales u ofensivas que el modelo original rechazaría. No debe desplegarse a usuarios finales sin moderación propia.
-- Riesgo elevado de alucinación y de generar contenido sensible; no hay garantías de veracidad.
-- Idiomas limitados a inglés y chino; el rendimiento en castellano no está documentado y probablemente sea inferior.
-- El contexto de 262K implica un coste de memoria KV significativo; en configuraciones multi-GPU hay que planificar el sharding.
-- La model card incluye contenido promocional de terceros (OrcaRouter) que no constituye documentación técnica del modelo.
-- El repositorio no tiene descargas ni validación comunitaria; la reproducibilidad de la abliteration y del "MRoPE-Fix" no está verificada de forma independiente.
-- La licencia Apache 2.0 permite uso comercial, pero el integrador asume toda la responsabilidad legal sobre los outputs.
-- No se documentan sesgos específicos más allá de los inherentes al corpus de entrenamiento del modelo base.
+- La alineacion de seguridad ha sido sustancialmente eliminada: el modelo cumplira solicitudes daninas, ilegales u ofensivas que el original rechazaria. No debe desplegarse a usuarios finales ni en produccion sin capas propias de moderacion y prevencion de abuso.
+- Uso previsto exclusivamente para investigacion legitima: interpretabilidad, seguridad de IA, estudio de mecanismos de rechazo, red teaming y evaluacion de robustez en entornos controlados.
+- Riesgo elevado de alucinacion y de generacion de contenido sesgado o difamatorio; no se documentan evaluaciones de sesgo del modelo base ni de esta variante.
+- Soporte idiomatico limitado a ingles y chino; el rendimiento en castellano no esta documentado y probablemente sea inferior.
+- La model card indica simultaneamente 125B y ~180B parametros totales; el recuento real de safetensors (179.999.981.459) confirma el segundo valor, pero la discrepancia debe tenerse en cuenta.
+- La licencia Apache 2.0 permite uso comercial, pero el autor declina toda responsabilidad y el uso debe cumplir la legislacion aplicable; el despliegue comercial de un modelo sin guardrails conlleva riesgo legal y reputacional.
+- El repositorio ocupa 360 GB y requiere infraestructura multi-GPU para su uso en BF16.
+- No se documentan los detalles del ajuste MRoPE ni su impacto en la calidad multimodal.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/leonice2/Qwen3.8-Flash-Next-Uncensored-BF16-MRoPE-Fix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
-- OrcaRouter (promocionado en la model card): https://www.orcarouter.ai
-- Catálogo de modelos OrcaRouter: https://www.orcarouter.ai/models
-- GitHub de Continuum-AI-Corp: https://github.com/Continuum-AI-Corp
-- Discord de OrcaRouter: https://discord.gg/yAh6Tex6kx
-- Perfil en X de OrcaRouter: https://x.com/OrcaRouter
+- OrcaRouter (sitio del autor de la card): https://www.orcarouter.ai
+- Catalogo de modelos OrcaRouter: https://www.orcarouter.ai/models
+- OrcaCyber Zero 1.5: https://www.orcarouter.ai/models/orca/orcacyber-zero-1.5
+- Orca Connect: https://www.orcarouter.ai/solutions/orca-connect
+- GitHub de Continuum AI Corp: https://github.com/Continuum-AI-Corp
+- Discord: https://discord.gg/yAh6Tex6kx
+- X (Twitter): https://x.com/OrcaRouter

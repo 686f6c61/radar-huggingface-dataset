@@ -2,83 +2,86 @@
 
 ## Resumen
 
-Qwen3.5-4B-later-system es un ajuste publicado por distil-labs sobre el modelo multimodal Qwen/Qwen3.5-4B de Alibaba Qwen. No se trata de un reentrenamiento de pesos: los pesos, el tokenizador y el resto de la plantilla de chat son idénticos al modelo original. La única modificación es la plantilla de chat (`chat_template.jinja` y la copia en `tokenizer_config.json`), que permite renderizar mensajes de sistema que no aparecen en la primera posición de la conversación.
+Qwen3.5-4B-later-system es un derivado de Qwen/Qwen3.5-4B publicado por distil-labs que modifica unicamente la plantilla de chat del modelo original. El cambio consiste en permitir mensajes de sistema que no aparecen en la primera posicion de la conversacion: en lugar de lanzar la excepcion `System message must be at the beginning.`, la plantilla renderiza esos mensajes como `<|im_start|>system\n...<|im_end|>` en la posicion donde aparecen. Los pesos, el tokenizador y el resto de la plantilla son identicos a los del modelo base.
 
-El modelo base Qwen3.5-4B es un transformer multimodal de tipo image-text-to-text con aproximadamente 4.660 millones de parámetros (4.659.865.088 según los safetensors del repositorio), pensado para conversación, razonamiento y comprensión de imágenes. La modificación de distil-labs resuelve un problema concreto de ingeniería: el template original lanza una excepción (`System message must be at the beginning.`) cuando se intenta insertar un mensaje de sistema a mitad de una conversación, algo habitual en flujos de agentes y en el ajuste fino de estudiantes sobre conversaciones agénticas.
+El modelo resuelve un problema concreto de los pipelines de ajuste fino orientados a agentes: muchas conversaciones agente-herramienta insertan instrucciones de sistema (politicas, contexto de herramienta, directrices dinamicas) a mitad del dialogo, algo que la plantilla original de Qwen rechaza. distil-labs emplea esta variante para entrenar modelos estudiantes con conversaciones de agente que incorporan mensajes de sistema durante el transcurso de la interaccion.
 
-Es relevante ahora porque muchos pipelines de agentes inyectan instrucciones de sistema dinámicas durante el diálogo (por ejemplo, al cambiar de herramienta o de fase de una tarea). Este fork permite entrenar y ejecutar esos flujos sin parchear manualmente la plantilla, manteniendo intactas las capacidades del original, incluido el modo de razonamiento (`enable_thinking`).
+Al conservar integramente los pesos del modelo base, hereda sus capacidades multimodales (entrada de imagen y texto), su modo de razonamiento (`enable_thinking`) y su licencia Apache 2.0. Con 4.659.865.088 parametros y un repositorio de 9,3 GB en safetensors, es un modelo de ~4,7B orientado a despliegue en una sola GPU y a experimentacion con plantillas de chat personalizadas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text); detalles internos no disponibles |
-| Parametros totales | 4.659.865.088 |
-| Parametros activos | no disponible (no consta que sea MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible en la informacion proporcionada (pesos en safetensors; cuantizaciones GGUF/AWQ no publicadas por el autor) |
+| Arquitectura | Transformer multimodal (familia Qwen3.5); detalles internos no disponibles en la informacion proporcionada |
+| Parametros totales | 4.659.865.088 (~4,7B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | no disponible (el repositorio solo publica safetensors en el modelo base; no se listan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta la arquitectura interna del modelo base mas alla de su naturaleza multimodal (pipeline `image-text-to-text`) y de la etiqueta `qwen3_5` en transformers. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF o DPO. El autor indica explicitamente que los pesos y el tokenizador son los del Qwen/Qwen3.5-4B original, por lo que cualquier detalle arquitectonico debe consultarse en la model card del modelo base.
+El modelo es una copia de los pesos de Qwen/Qwen3.5-4B con una unica modificacion en `chat_template.jinja` (y la copia equivalente en `tokenizer_config.json`). El diff publicado sustituye la llamada a `raise_exception('System message must be at the beginning.')` por la emision literal de un bloque de sistema en la posicion del mensaje. No hay reentrenamiento ni ajuste de pesos: el modelo base conserva su arquitectura transformer multimodal con pipeline `image-text-to-text` y su soporte de modo de pensamiento mediante el parametro `enable_thinking`.
 
-La innovacion tecnica de este repositorio es puramente de plantilla: en `chat_template.jinja` se sustituye la excepcion que prohibia los mensajes de sistema no iniciales por un renderizado in situ como `<|im_start|>system\n...<|im_end|>`. Esto preserva el formato de tokens especiales del modelo y permite que el modo de razonamiento (`enable_thinking`) siga funcionando igual que en el original. El caso de uso declarado por distil-labs es el ajuste fino de modelos estudiantes sobre conversaciones de agentes que anaden mensajes de sistema a mitad del dialogo.
+No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens, la composicion del corpus ni si se aplicaron fases de RLHF o DPO, ya que esos datos corresponden a la model card de Qwen/Qwen3.5-4B y no se incluyen en la informacion proporcionada. La innovacion tecnica de esta variante es estrictamente de formato conversacional: habilita plantillas de agente con mensajes de sistema intercalados, lo que resulta util para ajuste fino de estudiantes sobre trazas de agente donde el contexto del sistema se inyecta de forma dinamica.
 
 ## Capacidades
 
 - Generacion de texto y conversacion multi-turno, heredadas del modelo base Qwen3.5-4B.
-- Procesamiento de imagenes y texto (pipeline image-text-to-text): el modelo acepta entradas multimodales.
-- Razonamiento con modo thinking controlable mediante el parametro `enable_thinking` de la plantilla.
-- Soporte de mensajes de sistema en cualquier posicion de la conversacion, incluida la insercion dinamica a mitad de un dialogo.
-- Capacidad de ajuste fino sobre conversaciones agenticas con system prompts intercalados.
-- Tool calling, function calling y capacidades multilingues: no documentadas de forma especifica en este repositorio; deben verificarse en la model card de Qwen/Qwen3.5-4B.
+- Entrada multimodal imagen-texto (pipeline `image-text-to-text`), segun los tags del repositorio.
+- Modo de razonamiento activable mediante `enable_thinking`, con el mismo comportamiento que el modelo original.
+- Soporte de mensajes de sistema en cualquier posicion de la conversacion (caracteristica diferencial de esta variante).
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que facilita su despliegue en infraestructuras de inferencia tipo API.
+- Capacidades de tool calling, function calling y razonamiento multi-paso: no confirmadas explicitamente en la informacion proporcionada, aunque plausibles por herencia del modelo base.
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Ajuste fino de modelos estudiantes en flujos de agentes: el template modificado permite entrenar sobre trayectorias donde se inyectan mensajes de sistema entre turnos (cambio de herramienta, cambio de fase de la tarea) sin que el tokenizador lance excepciones.
-- Orquestacion de agentes con instrucciones dinamicas: en produccion, un orquestador puede insertar un system prompt nuevo tras una llamada a herramienta para redefinir el rol del modelo, algo imposible con el template original.
-- Evaluacion de robustez frente a cambios de instrucciones: permite medir como responde el modelo cuando recibe directrices de sistema a mitad de conversacion, util para estudiar el seguimiento de instrucciones.
-- Pipelines de destilacion con datos sinteticos: al compartir pesos con el original, los estudiantes entrenados con este template son compatibles con el ecosistema Qwen3.5 y pueden compararse directamente contra el profesor.
-- Prototipado de asistentes multimodales: al aceptar imagen y texto, sirve para construir demos de atencion al usuario con capturas o documentos escaneados, siempre que se valide el contexto real del modelo base.
-- Investigacion en plantillas de chat: como fork minimo y reproducible, es un caso de estudio util para analizar el impacto del formato de system messages en el comportamiento del modelo.
+- Ajuste fino de estudiantes sobre conversaciones de agente: la razon declarada por el autor es entrenar modelos pequenos con dialogos que insertan mensajes de sistema a mitad de la interaccion, algo imposible con la plantilla original de Qwen. El modelo sirve como referencia o como base para generar dichas trazas.
+- Investigacion en plantillas de chat: permite experimentar con formatos conversacionales no canonicos sin reentrenar pesos, comparando el efecto de mensajes de sistema intercalados frente a instrucciones iniciales.
+- Evaluacion de robustez ante inyeccion de contexto: util para medir como responde un modelo de ~4,7B cuando recibe directrices de sistema en mitad de un dialogo, escenario habitual en sistemas con politicas dinamicas.
+- Prototipado de asistentes con contexto de herramienta: en pipelines donde el resultado de una herramienta se acompana de una instruccion de sistema para el siguiente paso, la plantilla modificada evita errores de renderizado.
+- Despliegue en una sola GPU para pruebas de integracion: con ~4,7B parametros y safetensors de 9,3 GB, cabe en GPUs de consumo con cuantizacion (aunque no se publican variantes cuantizadas en este repositorio) y permite validar pipelines de transformers antes de escalar.
+- Generacion multimodal en entornos de investigacion: al conservar el pipeline `image-text-to-text`, puede usarse para tareas de descripcion de imagenes o VQA en laboratorio, siempre que se valide el comportamiento del modelo base.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor remite a la model card de Qwen/Qwen3.5-4B para benchmarks y uso, pero no se incluyen cifras en este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite a Qwen/Qwen3.5-4B para benchmarks y uso, pero no se incluyen cifras en los datos proporcionados.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en precision completa (BF16): aproximadamente 9,3 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica se recomienda 16 GB o mas.
-- Cuantizacion a 8 bits: alrededor de 5 GB de pesos; a 4 bits: alrededor de 2,5-3 GB, aunque el autor no publica versiones cuantizadas.
-- GPU recomendadas para BF16: A100 40 GB, H100, L40S o RTX 4090 (24 GB) para inferencia comoda con contexto moderado.
-- Cabe en GPU de consumo: si, en RTX 4090, RTX 4080 y potencialmente en GPUs de 12-16 GB con cuantizacion, siempre que se genere la cuantizacion a partir de los safetensors originales.
-- Opciones de despliegue: transformers (soporte declarado), y previsiblemente vLLM, TGI o llama.cpp tras conversion, aunque no estan verificados en la informacion disponible.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia en precision completa (BF16/FP16): aproximadamente 9,3 GB solo para pesos, mas overhead de activaciones y cache KV; se recomienda 16-24 GB para margen operativo.
+- VRAM estimada con cuantizacion de 8 bits: en torno a 5 GB de pesos; con 4 bits, en torno a 2,5-3 GB, aunque este repositorio no publica variantes cuantizadas.
+- GPU recomendadas: A100, H100 o L40S para despliegue en produccion con contexto largo; RTX 4090 (24 GB) para inferencia en BF16 con margen; RTX 3090/4080 (16-24 GB) para pruebas.
+- Cabe en GPU de consumo: si, en tarjetas de 16 GB o mas en BF16, y en tarjetas de 8-12 GB si se aplica cuantizacion (no se proporcionan pesos GGUF en este repositorio).
+- Opciones de despliegue: transformers (libreria declarada), y por compatibilidad del formato safetensors, servidores como vLLM o TGI; llama.cpp/Ollama requeririan conversion a GGUF, no disponible en la informacion proporcionada.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Modalidad | Licencia | Notas |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| distil-labs/Qwen3.5-4B-later-system | 4,66 B | no disponible | imagen-texto | Apache 2.0 | Fork de plantilla de Qwen3.5-4B |
-| Qwen/Qwen3.5-4B | 4,66 B | no disponible | imagen-texto | Apache 2.0 | Modelo base; rechaza system messages no iniciales |
-| Alternativas de ~4 B multimodal | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
+| distil-labs/Qwen3.5-4B-later-system | ~4,7B | no disponible | Apache 2.0 | safetensors | Plantilla de chat modificada para mensajes de sistema no iniciales |
+| Qwen/Qwen3.5-4B | ~4,7B | no disponible | Apache 2.0 | safetensors | Modelo base; plantilla original rechaza system fuera de la primera posicion |
+| Alternativas de ~4B de otros fabricantes | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
+
+La comparativa se limita al modelo base, ya que no se han proporcionado especificaciones de otros modelos de la misma categoria. La diferencia funcional respecto a Qwen/Qwen3.5-4B es exclusivamente la plantilla de chat; pesos, tokenizador y licencia son identicos.
 
 ## Limitaciones y advertencias
 
-- El cambio de plantilla altera el formato de los tokens de entrada respecto al modelo original; aunque los pesos son los mismos, el modelo no fue entrenado explicitamente para interpretar system messages intercalados, por lo que su comportamiento ante ellos puede ser inconsistente.
-- Riesgo de alucinacion y sesgos: heredados del modelo base; no se documentan evaluaciones de sesgo en este repositorio.
-- Idiomas soportados no declarados; no se garantiza cobertura multilingue mas alla de la del modelo base.
-- Longitud de contexto no especificada en este repositorio; debe consultarse en la model card de Qwen/Qwen3.5-4B.
-- No hay cuantizaciones oficiales publicadas; cualquier GGUF o AWQ debe generarse y validarse por el usuario.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Licencia Apache 2.0 permite uso comercial, pero conviene verificar los terminos del modelo base enlazados por el autor.
-- Para produccion, es imprescindible validar el comportamiento con system messages intercalados frente al modelo original antes de desplegar.
+- El cambio afecta unicamente a la plantilla de chat; no hay mejora de capacidades, razonamiento ni calidad de respuesta respecto al modelo base.
+- Los mensajes de sistema intercalados se renderizan como bloques `<|im_start|>system\n...<|im_end|>`, pero no se garantiza que el modelo base haya sido entrenado para interpretar instrucciones de sistema en posiciones no iniciales; el comportamiento puede degradarse.
+- Riesgo de alucinacion y sesgos: no documentados en la informacion proporcionada; se heredan los del modelo base Qwen3.5-4B.
+- Idiomas soportados no especificados; no se puede confirmar cobertura multilingue.
+- Longitud de contexto no disponible; no se puede planificar su uso en conversaciones largas sin consultar la model card del modelo base.
+- Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base enlazada por el autor.
+- Repositorio con 0 likes y ~1067 descargas en el momento de la consulta: ecosistema limitado, sin garantias de mantenimiento.
+- No se publican variantes cuantizadas ni pesos GGUF; el despliegue en hardware modesto requiere conversion manual.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/distil-labs/Qwen3.5-4B-later-system
+- Modelo en Hugging Face: https://huggingface.co/distil-labs/Qwen3.5-4B-later-system
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

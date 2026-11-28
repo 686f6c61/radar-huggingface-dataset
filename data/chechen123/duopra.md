@@ -2,88 +2,88 @@
 
 ## Resumen
 
-Duopra es un modelo any-to-any orientado a diálogo hablado en tiempo real, publicado en Hugging Face por el usuario Chechen123 como un fine-tune del modelo inclusionAI/Realtime-Venus. Está etiquetado como `minicpmo`, lo que lo sitúa en la familia de modelos conversacionales full-duplex de MiniCPM-o, con capacidades de entrada y salida de audio y texto, además de soporte declarado para tool calling y function calling en flujo continuo. Su propósito es servir como motor de agentes de voz que mantienen una conversación simultánea (full-duplex) mientras invocan herramientas externas.
+Duopra es un modelo any-to-any (audio y texto) de tipo full-duplex orientado a diálogo hablado en tiempo real, publicado por el usuario Chechen123 en Hugging Face. Se trata de un fine-tune del modelo inclusionAI/Realtime-Venus, con 9.371.820.434 parámetros totales y un repositorio de 33,9 GB que incluye pesos en safetensors y exportaciones ONNX. Su pipeline declarado es any-to-any y está etiquetado como minicpmo, lo que lo sitúa en la familia de modelos conversacionales inspirados en CPmo, con soporte explícito de streaming, tool calling y function calling.
 
-El modelo cuenta con 9.371.820.434 parámetros en pesos safetensors y un repositorio de 33,9 GB, lo que sugiere pesos en precisión alta (bf16/fp16) acompañados de artefactos ONNX. Se distribuye con licencia MIT, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. Los idiomas declarados son inglés y chino.
+La relevancia del modelo radica en su enfoque full-duplex: a diferencia de los pipelines de voz por turnos (ASR → LLM → TTS), Duopra procesa y genera audio de forma simultánea, lo que habilita agentes de voz con latencia reducida y capacidad de interrupción. Incorpora además etiquetas de spoken-dialogue y voice-agent, lo que indica que el entrenamiento se ha orientado a conversaciones habladas multiturno más que a transcripción o síntesis aisladas.
 
-Su relevancia actual radica en la creciente demanda de agentes de voz con latencia baja y capacidad de razonamiento multi-paso, un nicho donde los modelos any-to-any con streaming y tool calling son escasos. Al derivar de Realtime-Venus, hereda la arquitectura y el pipeline de entrenamiento del modelo base, si bien la información pública disponible sobre este fine-tune concreto es muy limitada.
+El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. La licencia es MIT y los idiomas declarados son inglés y chino. El modelo referencia el paper arXiv:2611.25773, aunque la información disponible no detalla su contenido.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado `minicpmo`; derivado de inclusionAI/Realtime-Venus) |
-| Parámetros totales | 9.371.820.434 |
-| Parámetros activos | no disponible |
+| Arquitectura | no disponible (etiquetado minicpmo; modelo base inclusionAI/Realtime-Venus) |
+| Parametros totales | 9.371.820.434 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | inglés (en), chino (zh) |
+| Tipos de cuantizacion | no disponible (repo con safetensors y ONNX; no se listan variantes GGUF/AWQ/GPTQ) |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
 | Formato de pesos | safetensors, ONNX |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de documentación técnica publicada por el autor sobre la arquitectura interna. Las etiquetas del repositorio indican que se trata de un modelo `minicpmo`, categoría asociada a los modelos conversacionales omni de MiniCPM con soporte full-duplex, y que emplea `custom_code` (requiere `trust_remote_code=True` en transformers). El pipeline declarado es `any-to-any`, con `feature-extraction` como tarea secundaria, lo que es coherente con un modelo que produce representaciones multimodales de audio y texto.
+La informacion disponible no especifica la arquitectura interna mas alla de las etiquetas del repositorio: minicpmo, any-to-any, full-duplex y custom_code. El modelo deriva de inclusionAI/Realtime-Venus mediante fine-tuning, segun los metadatos base_model y base_model:finetune. El tag custom_code implica que la carga requiere codigo remoto con trust_remote_code=True, y la presencia de ONNX sugiere exportaciones para inferencia optimizada fuera de PyTorch.
 
-El modelo es un fine-tune de inclusionAI/Realtime-Venus. No se han publicado detalles sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o similares. Tampoco hay información sobre innovaciones técnicas específicas de este fine-tune (decodificación especulativa, atención lineal, etc.). La presencia de artefactos ONNX en el repositorio sugiere que el autor preparó el modelo para despliegue en entornos de inferencia optimizada, aunque no se detalla la configuración.
+No se han publicado en la informacion disponible datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas concretas (decodificacion especulativa, atencion lineal, etc.). Las etiquetas spoken-dialogue, streaming, tool-calling y voice-agent indican que el entrenamiento se ha orientado a dialogo hablado en streaming con invocacion de herramientas, pero no se detallan los procedimientos.
 
 ## Capacidades
 
-- Generación y comprensión de voz en modo full-duplex, con entrada y salida de audio simultáneas.
-- Diálogo hablado en streaming, orientado a agentes de voz con interacción continua.
-- Procesamiento any-to-any: combinación de audio y texto como entrada y salida.
-- Tool calling y function calling, lo que permite al modelo invocar APIs externas durante la conversación.
-- Soporte declarado para flujos de agente con razonamiento multi-paso (multi-step reasoning).
-- Capacidades multilingües limitadas a inglés y chino según los metadatos.
-- Extracción de características (`feature-extraction`) sobre entradas multimodales.
-- No se ha documentado soporte de visión, matemáticas avanzadas ni modo "thinking" explícito en la información disponible.
+- Generacion y comprension de audio en modalidad any-to-any: entrada y salida de voz junto con texto.
+- Dialogo hablado full-duplex: procesamiento simultaneo de entrada y salida, con capacidad de interrupcion y streaming continuo.
+- Tool calling y function calling: invocacion de herramientas externas durante la conversacion.
+- Soporte de agentes de voz: etiquetado explicitamente como voice-agent, con razonamiento multi-paso orientado a tareas conversacionales.
+- Streaming: inferencia por flujos, adecuada para baja latencia en tiempo real.
+- Multilingue limitado: ingles y chino declarados.
+- Extraccion de caracteristicas (feature-extraction) como pipeline secundario.
+- No se documentan capacidades de vision, matematicas avanzadas ni modo thinking explicito.
 
 ## Casos de uso
 
-- Agentes de voz para atención al cliente: el modelo puede mantener conversaciones habladas en streaming con turnos solapados (full-duplex), lo que reduce la latencia percibida frente a pipelines turn-by-turn clásicos.
-- Asistentes telefónicos con invocación de herramientas: gracias al tool calling, el agente puede consultar un CRM, reservar citas o escalar a un humano mientras continúa la conversación de voz.
-- Integración en centros de contacto con análisis en tiempo real: el modo full-duplex permite transcribir y responder simultáneamente, útil para sugerencias al operador.
-- Automatización de tareas de back-office mediante voz: dictado de formularios, consultas a bases de datos y confirmación hablada de resultados, combinando audio y texto.
-- Desarrollo de interfaces conversacionales embebidas: la presencia de pesos ONNX facilita el despliegue en entornos con aceleración específica (por ejemplo, NPUs o GPUs con TensorRT), aunque no se detalla la configuración exacta.
-- Investigación en diálogo hablado full-duplex: sirve como base para experimentos de interacción solapada, ya que deriva de un modelo especializado en tiempo real y expone tool calling en el mismo bucle conversacional.
-- Prototipado de agentes multilingües inglés-chino: adecuado para demos y pruebas de concepto en esos dos idiomas, no así en castellano.
+- Agentes de voz en atencion al cliente: el modo full-duplex permite conversaciones naturales con interrupciones, manteniendo el flujo de audio sin esperar al final del turno, lo que reduce la latencia percibida frente a pipelines ASR-LLM-TTS encadenados.
+- Asistentes telefonicos automatizados: con tool calling puede consultar sistemas internos (estado de pedidos, agenda) mientras mantiene el habla, integrado en centralitas SIP mediante streaming de audio.
+- Interfaces de voz para aplicaciones web o moviles: la exportacion ONNX facilita el despliegue en entornos con requisitos de portabilidad y la ejecucion con runtimes optimizados.
+- Agentizacion de tareas multi-paso por voz: el etiquetado de agentes y function calling permite encadenar acciones (reservas, consultas, confirmaciones) en una sola sesion hablada.
+- Prototipado de investigacion en dialogo hablado full-duplex: util para experimentar con modelos any-to-any de ~9,4 mil millones de parametros y comparar con alternativas por turnos.
+- Extraccion de caracteristicas de audio para pipelines downstream: el pipeline feature-extraction permite reutilizar representaciones internas en tareas de clasificacion o recuperacion.
+- Localizacion bilingue en ingles y chino: adecuado para productos dirigidos a esos dos mercados, no para otros idiomas sin verificar.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 9.371.820.434 parámetros, en bf16/fp16 se requieren aproximadamente 18,7 GB solo para pesos; en int8 unos 9,4 GB; en int4 unos 4,7 GB. A esto hay que sumar el coste de activaciones, buffers de audio y caché de contexto, no cuantificados en la información disponible.
-- GPU recomendadas: no disponible de forma específica. Por tamaño, una GPU de 24 GB (RTX 4090, A10G, L4) podría alojar el modelo en bf16 con margen limitado; para producción con concurrencia se recomiendan A100 40/80 GB o H100.
-- ¿Cabe en GPU de consumo? Sí, potencialmente en RTX 4090 (24 GB) en bf16 con batch pequeño, o en GPUs de 12-16 GB si se cuantiza a int8/int4, siempre que la arquitectura `custom_code` lo permita.
-- Opciones de despliegue: transformers con `trust_remote_code=True`; el repositorio incluye ONNX, lo que abre la puerta a ONNX Runtime. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama ni TGI en la información proporcionada.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con 9,37 mil millones de parametros, en FP16 se requieren aproximadamente 19 GB solo para pesos, mas memoria para cache de audio y activaciones; en cuantizacion de 8 bits, alrededor de 10-11 GB; en 4 bits, alrededor de 6-7 GB (estimaciones teoricas, no verificadas para este modelo).
+- GPU recomendadas: A100 40/80 GB o H100 para despliegue en produccion con concurrencia; L40S o RTX 6000 Ada como alternativas de inference server.
+- GPU de consumo: cabe en RTX 4090 (24 GB) en FP16 ajustado o en cuantizacion; en RTX 3090/4080 (16 GB) solo con cuantizacion de 8 o 4 bits y contexto de audio limitado.
+- Opciones de despliegue: transformers con trust_remote_code=True (requerido por el tag custom_code); ONNX Runtime para los pesos exportados; no se confirman soportes de vLLM, llama.cpp, Ollama o TGI para esta arquitectura.
+- Latencia y throughput: no disponibles; el modo streaming y full-duplex sugiere diseno para baja latencia, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Idiomas | Licencia | Notas |
+| Modelo | Parametros | Contexto | Modalidad | Licencia | Acceso |
 |---|---|---|---|---|---|
-| Duopra | 9,37 B | no disponible | en, zh | MIT (gated) | Fine-tune de Realtime-Venus, full-duplex, tool calling |
-| inclusionAI/Realtime-Venus (base) | no disponible | no disponible | no disponible | no disponible | Modelo base del que deriva Duopra |
-| MiniCPM-o (familia) | no disponible | no disponible | no disponible | no disponible | Familia `minicpmo` referenciada por las etiquetas |
+| Duopra | 9,37 B | no disponible | any-to-any (audio+texto), full-duplex | MIT | gated |
+| inclusionAI/Realtime-Venus (base) | no disponible | no disponible | any-to-any en tiempo real | no disponible | no disponible |
+| Modelos de dialogo hablado por turnos (ASR+LLM+TTS) | variable | variable | audio por pipeline | variable | variable |
 
-No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoría (modelos any-to-any de voz full-duplex). La comparación se limita a la relación de parentesco con el modelo base y la familia MiniCPM-o.
+No se dispone de informacion suficiente para comparar rendimiento numerico con alternativas concretas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede complicar pipelines automatizados.
-- Idiomas limitados a inglés y chino: no hay soporte declarado de castellano, por lo que su uso en producción en español no está validado.
-- Fine-tune de autor individual con 0 descargas y 1 like en el momento de la ficha: no hay evidencia pública de validación, evaluación ni uso en producción.
-- Ausencia total de benchmarks: no se puede verificar la calidad del fine-tune frente al modelo base ni frente a alternativas.
-- Riesgo de alucinación inherente a los modelos generativos, agravado en dominios de voz donde los errores de reconocimiento pueden propagarse.
-- Sesgos desconocidos: no se ha documentado la composición del dataset de fine-tune ni posibles sesgos lingüísticos o culturales.
-- Licencia MIT declarada, pero al derivar de un modelo base conviene verificar las condiciones de dicho modelo base antes de uso comercial.
-- Requiere `custom_code` (`trust_remote_code=True`), lo que implica ejecutar código del autor y aumenta la superficie de riesgo en producción.
-- No se ha documentado el comportamiento en contextos largos ni la estabilidad del modo full-duplex bajo carga concurrente.
+- Acceso restringido (gated): es obligatorio aceptar condiciones en Hugging Face antes de la descarga; la automatizacion en CI/CD requiere token con permisos.
+- Cobertura idiomatica limitada a ingles y chino; el rendimiento en castellano no esta documentado y no deberia asumirse.
+- Requiere trust_remote_code=True por el tag custom_code, lo que implica ejecutar codigo del repositorio: riesgo de seguridad en entornos no controlados.
+- Riesgo de alucinacion inherente a modelos generativos, agravado en audio por posibles errores de comprension del habla (ruido, acentos, solapamientos).
+- No se documentan sesgos conocidos ni evaluaciones de seguridad; al ser un fine-tune de un modelo base no identificado en detalle, la trazabilidad de datos de entrenamiento es limitada.
+- Sin datos publicados de benchmarks: no es posible validar calidad frente a alternativas antes de desplegar.
+- El repositorio ocupa 33,9 GB, lo que exige planificacion de almacenamiento y ancho de banda.
+- La licencia MIT permite uso comercial, pero debe verificarse que el modelo base inclusionAI/Realtime-Venus no imponga restricciones adicionales compatibles.
+- No se confirma soporte en frameworks de serving de alto rendimiento (vLLM, TGI), lo que puede limitar el escalado en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Chechen123/Duopra
 - Modelo base: https://huggingface.co/inclusionAI/Realtime-Venus
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.
+- Paper referenciado: https://arxiv.org/abs/2611.25773

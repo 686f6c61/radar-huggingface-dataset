@@ -2,53 +2,50 @@
 
 ## Resumen
 
-kobajinAI es un modelo publicado en Hugging Face por el usuario kobajin bajo licencia Apache 2.0. El repositorio tiene un tamano de 2,4 GB, lo que sugiere un modelo de parametros moderados (probablemente en el rango de 1 a 4 mil millones, dependiendo de la precision de los pesos), aunque no se dispone de confirmacion oficial sobre su arquitectura ni su numero de parametros. La model card publicada no incluye ninguna descripcion tecnica, datos de entrenamiento ni informacion sobre capacidades, por lo que la mayor parte de la ficha debe completarse con "no disponible".
+kobajinAI es un modelo de chat en japones derivado por ajuste fino con LoRA sobre dos modelos base distintos: Qwen/Qwen3.5-4B (versiones v1, v2 y v3) y LiquidAI/LFM2.5-1.2B-JP-202606 (version ligera v4). Lo desarrolla el usuario kobajin y su proposito es replicar el estilo conversacional de una persona concreta, con respuestas cortas e informales, ademas de practicar el uso de memorias recuperadas en la conversacion. No es un modelo de proposito general: es una adaptacion de personaje publicada junto a su aplicacion principal, kobajin.com.
 
-La relevancia de este modelo es limitada en el momento de redactar esta ficha: no registra descargas ni "likes", no tiene pipeline declarado y no se ha publicado documentacion adicional. Se trata, por tanto, de un artefacto reciente y practicamente sin trazabilidad publica, lo que obliga a tratar cualquier evaluacion como provisional.
+El interes tecnico esta en su formato de distribucion: el modelo se empaqueta como bundles WebLLM en cuantizacion `q4f16_1` (pesos de 4 bits con escalas de grupo en float16) para ejecutarse con WebGPU directamente en el navegador del visitante, sin servidor de inferencia. Ademas se publican conversiones GGUF `Q4_K_M` de las versiones v1 a v3 para llama.cpp. La version ligera v4 ocupa 0,66 GB y esta pensada para telefonos, tablets y equipos con menos de 8 GB de memoria.
 
-A pesar de la escasez de informacion, se ofrece a continuacion la ficha completa con los campos obligatorios, marcando explicitamente aquellos datos que no han sido publicados por el autor. Se recomienda precaucion antes de integrar este modelo en entornos de produccion hasta que exista documentacion tecnica verificable.
+El repositorio declara 4.205.751.296 parametros en safetensors, cifra que corresponde a la suma de los distintos checkpoints publicados y no a un unico modelo. La licencia es compuesta (`apache-2.0-and-lfm1.0`), heredada de los modelos base, con obligaciones distintas segun la version que se utilice.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | no disponible (repo de 2,4 GB, coherente con un modelo de tamano pequeno o mediano, sin confirmar) |
-| Parametros activos | no disponible |
+| Arquitectura | Transformer causal con atencion hibrida (tags `gated-deltanet`, `hybrid-attention`); base Qwen3.5-4B en v1-v3 y LFM2.5-1.2B-JP en v4 |
+| Parametros totales | 4.205.751.296 en safetensors (suma de checkpoints del repo); v1-v3 sobre base de 4B, v4 sobre base de 1.2B |
+| Parametros activos | no disponible (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (no se listan ficheros GGUF, AWQ ni GPTQ en la informacion proporcionada) |
-| Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (el tamano del repo sugiere safetensors o binarios, sin confirmar) |
+| Tipos de cuantizacion | `q4f16_1` (MLC/WebLLM, 4 bits con escalas float16) y GGUF `Q4_K_M` (solo v1-v3) |
+| Idiomas soportados | japones (`ja`) |
+| Licencia | `apache-2.0-and-lfm1.0` (compuesta; ver limitaciones) |
+| Formato de pesos | MLC/WebLLM (`params_shard_*.bin`, `tensor-cache.json`, `mlc-chat-config.json`), GGUF `Q4_K_M` (v1-v3) y safetensors en el repo |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con componentes de espacio de estados (SSM) o cualquier otra variante. Tampoco se especifica el numero de capas, la dimension oculta, el numero de cabezas de atencion ni el tipo de tokenizador empleado.
+El modelo es un ajuste fino con LoRA fusionado en los pesos base (merge de adaptadores), no un entrenamiento desde cero. Las versiones v1, v2 y v3 parten de Qwen/Qwen3.5-4B en la revision `851bf6e`, y la v4 parte de LiquidAI/LFM2.5-1.2B-JP-202606 en la revision `52b8b44`. Los tags del repositorio indican atencion hibrida con Gated DeltaNet, coherente con la familia LFM2 usada en la version ligera; no se detalla la composicion exacta de capas ni la configuracion del adaptador LoRA.
 
-Respecto al entrenamiento, la model card no documenta el volumen de tokens, la composicion del corpus, la existencia de fases de ajuste supervisado (SFT), aprendizaje por refuerzo con retroalimentacion humana (RLHF) o optimizacion directa de preferencias (DPO). No hay informacion sobre tecnicas de alineacion, filtrado de datos ni evaluaciones de seguridad. Cualquier afirmacion sobre el proceso de entrenamiento seria especulativa y, por tanto, se omite.
+Los datos de entrenamiento varian por version y estan documentados en la model card: v1 se entreno solo con conversaciones reales; v2 anade filas que practican el uso de memorias recuperadas; v3 se entreno mayoritariamente con ejemplos sinteticos escritos por "Luna" y produce respuestas mas largas y de tipo consejo; v4 reutiliza los datos y el metodo de v2 sobre el modelo base pequeno. No se publican numero de tokens de entrenamiento, composicion detallada del dataset ni si hubo etapas de RLHF o DPO. Las conversiones GGUF se generaron desde los mismos checkpoints BF16 fusionados con `convert_hf_to_gguf.py` y `llama-quantize Q4_K_M` sin importance matrix, y contienen solo el modelo de texto: excluyen el codificador de vision de Qwen3.5 y la cabeza de prediccion multi-token (MTP), por lo que no admiten decodificacion especulativa MTP.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada por el autor; no hay ejemplos ni descripcion de casos de uso en la model card.
-- Razonamiento, codigo y matematicas: no disponible.
-- Vision, audio u otras modalidades: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta cumplimentado en el repositorio).
-- Modo de razonamiento explicito (thinking mode): no disponible.
+- Generacion de texto conversacional en japones con estilo informal y respuestas cortas (v1, v2).
+- Uso de memorias recuperadas inyectadas en el contexto (v2 y v4; v1 las ignora en gran medida).
+- Estilo alternativo de respuesta larga y orientada a consejo en v3.
+- Ejecucion en navegador con WebGPU mediante WebLLM, con inferencia en el dispositivo del usuario.
+- Ejecucion local con llama.cpp y otros runtimes GGUF para v1-v3.
+- Perfil ligero en v4 (0,66 GB) para dispositivos con poca memoria.
+- No se documenta soporte de tool calling, function calling, agentes, vision, audio ni modo de razonamiento explicito en la informacion disponible.
 
 ## Casos de uso
 
-Dado que no se han publicado capacidades, benchmarks ni documentacion tecnica, no es posible recomendar casos de uso concretos con garantias. Los siguientes escenarios son genericos y requeririan validacion previa por parte del equipo que adopte el modelo:
-
-- Experimentacion academica controlada: uso del modelo como base para pruebas de fine-tuning en entornos de laboratorio, siempre que se valide primero su comportamiento en tareas de referencia.
-- Prototipado interno de asistentes conversacionales: solo tras una evaluacion manual de calidad, coherencia y seguridad en conversaciones multi-turno.
-- Generacion de texto auxiliar en pipelines de anotacion: como pre-anotador sujeto a revision humana, dado que no hay datos sobre su precision.
-- Investigacion sobre licencias permisivas: al estar bajo Apache 2.0, puede servir como referencia para estudiar practicas de publicacion de modelos abiertos.
-- Pruebas de integracion en frameworks de inferencia (vLLM, llama.cpp, TGI): para verificar compatibilidad de formatos y rendimiento antes de un uso real.
-- Educacion y formacion: uso como ejemplo de publicacion de modelos en Hugging Face y de la importancia de documentar adecuadamente una model card.
-
-En ningun caso se recomienda su despliegue en produccion con usuarios finales sin una evaluacion exhaustiva previa.
+- Chat de personaje en navegador: el bundle WebLLM se carga con WebGPU y genera las respuestas en el dispositivo del visitante, sin coste de servidor ni envio de conversaciones a un backend, lo que encaja con el despliegue real de kobajin.com.
+- Demo interactiva de bajo coste: al no requerir GPU en servidor, sirve para publicar una demo conversacional en una web estatica usando las revisiones inmutables del repositorio como URL de pesos.
+- Asistente con memoria en conversaciones multi-turno: la version v2 esta entrenada con filas que practican el uso de memorias recuperadas, adecuada para prototipos de chatbots que inyectan recuerdos del usuario en el prompt.
+- Despliegue en movil y tablets: la v4 de 1.2B en `q4f16_1` (0,66 GB) permite arrancar el chat en telefonos, tablets y equipos con menos de 8 GB de memoria, umbral que la web usa para seleccionar automaticamente esta version.
+- Inferencia local con llama.cpp: los GGUF `Q4_K_M` de v1-v3 (2,71 GB cada uno) permiten integrar el modelo en aplicaciones de escritorio o scripts sin depender del navegador.
+- Prototipado de estilos conversacionales: sirve como referencia de metodologia (LoRA fusionado, publicacion por versiones con revisiones fijas, bundles WebLLM y GGUF desde el mismo checkpoint) para equipos que quieran distribuir un modelo de personaje en web y local.
+- Experimentacion con atencion hibrida en el borde: la v4, basada en LFM2.5 con Gated DeltaNet, permite evaluar el comportamiento de esta arquitectura en dispositivos de bajos recursos.
 
 ## Benchmarks y rendimiento
 
@@ -56,34 +53,44 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precision. El tamano del repositorio (2,4 GB) sugiere que los pesos en precision original o cuantizada caben en GPUs de consumo, pero no se confirma el numero de parametros ni la precision.
-- GPU recomendadas: no disponible. Como referencia general, un modelo de ese tamano de repositorio podria ejecutarse en GPUs consumer con 8-16 GB de VRAM, pero esta estimacion no esta respaldada por datos del autor.
-- Compatibilidad con GPU de consumo: probable pero no confirmada.
-- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama, TGI ni otros frameworks. No se listan ficheros GGUF en la informacion disponible.
-- Latencia y throughput: no disponible.
+- VRAM estimada: el bundle `q4f16_1` de v1-v3 corresponde a un modelo de 4B en 4 bits (del orden de 2-3 GB de pesos); los GGUF `Q4_K_M` de v1-v3 ocupan 2,71 GB en disco. La v4 ocupa 0,66 GB. No se publican cifras de VRAM pico ni de memoria de trabajo.
+- GPU recomendadas: no disponibles. El requisito funcional declarado es soporte de WebGPU en el navegador para los bundles WebLLM.
+- GPU de consumo: la v4 esta disenada explicitamente para telefonos, tablets y PCs con menos de 8 GB de memoria; v1-v3 requieren mas recursos y la web solo los selecciona por defecto en equipos con 8 GB o mas.
+- Opciones de despliegue: WebLLM (`@mlc-ai/web-llm` 0.2.89, usado por kobajin.com), llama.cpp y otros runtimes GGUF (solo v1-v3). No se mencionan vLLM, TGI ni Ollama.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque se desconocen los parametros, el contexto y el rendimiento del modelo. Se indica "no disponible" para las alternativas comparables.
+| Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Notas |
+|---|---|---|---|---|---|
+| kobajinAI v2 | 4B (base Qwen3.5-4B) | no disponible | WebLLM `q4f16_1`, GGUF `Q4_K_M` | apache-2.0-and-lfm1.0 | Ajuste de personaje en japones; uso principal en navegador |
+| kobajinAI v4 | 1.2B (base LFM2.5-1.2B-JP) | no disponible | WebLLM `q4f16_1` (0,66 GB) | apache-2.0-and-lfm1.0 | Version ligera para movil; sin GGUF |
+| Qwen/Qwen3.5-4B | 4B | no disponible | safetensors y ecosistema derivado | no disponible en la informacion | Modelo base de v1-v3; capacidades generales, no solo personaje |
+| LiquidAI/LFM2.5-1.2B-JP-202606 | 1.2B | no disponible | safetensors y ecosistema derivado | no disponible en la informacion | Modelo base de v4, especializado en japones |
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| kobajinAI | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
-| Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
-| Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica: la model card no describe arquitectura, entrenamiento, datos ni evaluaciones, lo que impide auditar el modelo.
-- Riesgo elevado de alucinacion y comportamientos impredecibles: sin benchmarks ni evaluaciones de seguridad publicadas, no hay evidencia de calidad.
-- Sesgos desconocidos: al no documentarse la composicion del dataset de entrenamiento, no es posible evaluar sesgos de genero, raza, idioma o dominio.
-- Idiomas no declarados: se desconoce si el modelo soporta castellano u otros idiomas con calidad suficiente.
-- Sin soporte comunitario: cero descargas y cero "likes" indican ausencia de validacion por parte de la comunidad.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el usuario asume toda la responsabilidad legal y tecnica sobre el comportamiento del modelo.
-- Fecha de creacion futura en los metadatos (2026-11-17): conviene verificar la autenticidad y procedencia del repositorio antes de su uso.
-- No apto para produccion sin evaluacion previa: se recomienda realizar pruebas de calidad, seguridad y sesgo antes de cualquier despliegue.
+- El modelo esta especializado en imitar un estilo personal concreto; no es adecuado como asistente general ni para tareas de razonamiento, codigo o matematicas.
+- Riesgo de alucinacion y de mezclar memorias no relevantes: la propia model card advierte que v2 a veces introduce recuerdos no relacionados, y v1 los ignora en gran medida.
+- Idioma limitado al japones; no se declaran capacidades multilingues.
+- Longitud de contexto no documentada, lo que impide planificar conversaciones largas con garantias.
+- Licencia compuesta: v1-v3 heredan la licencia de Qwen3.5-4B y v4 la de LFM2.5 (`lfm1.0`), con obligaciones adicionales (la v4 incluye `LICENSE` y `NOTICE.md` del modelo base). Verificar ambas antes de cualquier uso comercial.
+- Los GGUF no incluyen el codificador de vision ni la cabeza MTP de Qwen3.5, por lo que no admiten decodificacion especulativa y pierden cualquier capacidad multimodal del base.
+- El repositorio suma varios checkpoints; el recuento de 4.205.751.296 parametros en safetensors no representa el tamano de una unica version desplegada.
+- Dependencia de WebGPU para el despliegue en navegador; los navegadores o dispositivos sin soporte no podran ejecutar los bundles WebLLM.
+- El uso de revisiones fijas es obligatorio en produccion: WebLLM cachea pesos por URL y las reorganizaciones del repositorio pueden romper descargas si no se fija el commit.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/kobajin/kobajinAI
-- No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.
+- Repositorio Hugging Face: https://huggingface.co/kobajin/kobajinAI
+- Aplicacion principal: https://kobajin.com/
+- Modelo base v1-v3: https://huggingface.co/Qwen/Qwen3.5-4B (revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`)
+- Modelo base v4: https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP-202606 (revision `52b8b4475311a63bf839c6494f78f8ad59d13515`)
+- Carpeta v2 (por defecto en la web): https://huggingface.co/kobajin/kobajinAI/tree/1f9287d837eb311f5d0ab9262240ab2ed362d87c/v2
+- Carpeta v1: https://huggingface.co/kobajin/kobajinAI/tree/8d6dab15195505c8c92c2d9ceb99f2551239f2d4/v1
+- Carpeta v3: https://huggingface.co/kobajin/kobajinAI/tree/0bc0bea14368ef51162f68ed5c545633ee567f15/v3
+- Carpeta v4 (ligera): https://huggingface.co/kobajin/kobajinAI/tree/5c03457fbc811484733abae9e1fa1b55f42e4059/v4
+- Libreria WebLLM: https://github.com/mlc-ai/web-llm
+- Seccion de licencia de la model card: https://huggingface.co/kobajin/kobajinAI/blob/main/README.md#license

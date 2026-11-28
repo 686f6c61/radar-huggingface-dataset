@@ -2,102 +2,92 @@
 
 ## Resumen
 
-FRCRN_SE_16K-Tenstorrent-Tensix-BF16 es una conversión del modelo de mejora de voz y supresión de ruido FRCRN_SE_16K (originalmente publicado por alibabasglab), adaptada por Xylolabs para su ejecución sobre hardware Tenstorrent mediante la pila TT-NN. No se trata de un modelo de lenguaje, sino de una red convolucional compleja orientada a audio-to-audio: recibe un espectro complejo normalizado de una señal de voz a 16 kHz y produce una máscara compleja que, aplicada al espectro original, reduce el ruido de fondo.
+FRCRN_SE_16K-Tenstorrent-Tensix-BF16 es una conversión de pesos del modelo de mejora de voz FRCRN (alibabasglab/FRCRN_SE_16K) empaquetada en bfloat16 para su ejecución sobre NPUs Tenstorrent Tensix (arquitecturas Wormhole y Blackhole) mediante la pila TTNN. Lo publica Xylolabs y no introduce un modelo nuevo: traslada un checkpoint de supresión de ruido ya existente a un formato y precisión adecuados para aceleradores Tenstorrent, manteniendo la referencia al modelo base original.
 
-El modelo base FRCRN (Frequency-Recurrent Convolutional Recurrent Network) emplea dos ramas UNet con convoluciones complejas y capas FSMN (Feedforward Sequential Memory Networks) para modelar dependencias temporales y frecuenciales. Esta versión concreta no reentrena el modelo: reescribe los pesos de convolución compleja como matrices de bloques reales, pliega las capas de batch normalization dentro de las convoluciones y serializa todos los tensores en bfloat16, con un layout pensado para implementaciones TT-NN sobre chips Tensix.
+El modelo resuelve la tarea de speech enhancement: recibe un espectro complejo normalizado de una señal de audio a 16 kHz y devuelve una máscara compleja que, aplicada al espectro de entrada, atenúa el ruido de fondo. La arquitectura subyacente es FRCRN (red convolucional recurrente con atención frecuencial), con 23.760.720 parámetros. El checkpoint publicado contiene únicamente los pesos en BF16 (0,05 GB); el pipeline de enmarcado, normalización, aplicación de máscara y síntesis debe aportarlo la implementación consumidora.
 
-Su relevancia es acotada pero específica: permite desplegar supresión de ruido en aceleradores Tenstorrent sin depender de PyTorch en el dispositivo, con un peso en disco mínimo (unos 0,05 GB de tensores) y una conversión reproducible y verificada contra el checkpoint original. Es una pieza de infraestructura para pipelines de audio en hardware alternativo, no un modelo generalista.
+La relevancia de esta ficha radica en su carácter de artefacto de despliegue: no es un modelo de lenguaje ni un transformer generativo, sino un componente de procesamiento de audio optimizado para hardware específico. Es útil para equipos que ya trabajan con NPUs Tenstorrent y necesitan integrar supresión de ruido en pipelines de audio en tiempo real, y menos relevante para quien busque un modelo autónomo listo para usar con bibliotecas estándar de PyTorch.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | FRCRN: dos UNet con convoluciones complejas (representadas como matrices de bloques reales) y capas FSMN |
-| Parámetros totales | 23.760.720 |
-| Parámetros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica; ventana de entrada de 51 frames (espectro complejo [1, 2, 321, 51]) |
-| Tipos de cuantización | bfloat16 (BF16) exclusivamente en los pesos almacenados |
-| Idiomas soportados | no disponible (modelo de audio, independiente del idioma) |
+| Arquitectura | FRCRN (red convolucional recurrente con atención frecuencial) |
+| Parametros totales | 23.760.720 |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | no disponible (procesa espectros de 640 puntos FFT con hop de 320 muestras) |
+| Tipos de cuantizacion | BF16 (unico formato publicado) |
+| Idiomas soportados | no disponible (procesamiento de audio, independiente del idioma) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (model.safetensors) + config.json |
-| Frecuencia de muestreo | 16 kHz |
-| FFT / hop | 640 puntos / 320 muestras |
-| Salida | máscara compleja tanh(u1) + tanh(u2) en layout real/imaginario |
-| Hardware objetivo | Tenstorrent Tensix (TT-NN) |
+| Formato de pesos | safetensors (BF16, carpeta `bf16/`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es FRCRN, una red de dos etapas UNet (codificador y decodificador con skip connections) en la que las convoluciones operan sobre números complejos. Cada convolución compleja se representa aquí como una matriz de bloques real de la forma [[Wr, -Wi], [Wi, Wr]], y la batch normalization posterior se pliega en los canales de salida de cada convolución. Los canales complejos se serializan como canales reales seguidos de canales imaginarios. Las capas FSMN aportan memoria secuencial sobre el eje temporal y frecuencial, cuyos ejes y orden quedan registrados en config.json.
+El modelo base FRCRN combina capas convolucionales con componentes recurrentes y un mecanismo de atención frecuencial, orientado a la estimación de máscaras espectrales para supresión de ruido. La entrada es un espectro complejo normalizado con forma `[1, 2, 321, 51]` para audio a 16 kHz, FFT de 640 puntos y hop de 320 muestras; la salida es la máscara compleja `tanh(u1) + tanh(u2)` en el mismo formato real/imaginario. La conversión de Xylolabs pliega los pesos y los almacena en BF16 para ejecución sobre Tensix; no se documentan en la información disponible detalles sobre el dataset de entrenamiento original, el número de tokens o muestras, ni si hubo etapas de ajuste fino adicionales.
 
-No hay entrenamiento adicional en esta conversión: se parte del checkpoint original de alibabasglab/FRCRN_SE_16K (revisión 3766e6a64b0d8cb58f08d913d617bf129f11ed53, SHA256 b22256adbb91b68cf5a3db8f6657a4fb17066eecd5f069803e59c186c1cf3ebb) y se transforman únicamente los pesos. La conversión se realiza con convert_frcrn.py, que reproduce el proceso usando el paquete frcrn_se de ClearerVoice-Studio / clearvoice 0.1.2 y ejecuta una comparación determinista en CPU contra el modelo original sobre ocho espectros sintéticos. La implementación consumidora debe aportar el framing, la normalización, la aplicación de la máscara y la síntesis (iSTFT).
+La innovación técnica de esta release es de despliegue, no de modelado: adapta un checkpoint de PyTorch a la pila TTNN de Tenstorrent y verifica la equivalencia numérica frente al modelo original en CPU. Según la model card, la comparación de SNR de máscara/espectro mejorado arroja 27,87/39,12 dB en espectros normalizados reservados y 17,46/17,66 dB en espectros sintéticos.
 
 ## Capacidades
 
-- Supresión de ruido y mejora de voz en señales de 16 kHz mediante enmascaramiento espectral complejo.
-- Procesamiento audio-to-audio: entrada de espectro complejo normalizado, salida de máscara compleja.
-- Modelado conjunto de dependencias frecuenciales y temporales gracias a las capas FSMN.
-- Ejecución en hardware Tenstorrent Tensix mediante TT-NN, sin dependencia de PyTorch en el dispositivo.
-- Pesos en BF16 con layout de tensores documentado para integración directa en kernels TT-NN.
-- No soporta tool calling, function calling, agentes, razonamiento multi-step ni capacidades multilingües: no es un modelo de lenguaje.
-- No incluye visión, audio generativo ni modo thinking.
+- Supresión de ruido y mejora de voz sobre audio a 16 kHz mediante estimación de máscara espectral compleja.
+- Procesamiento de espectros complejos normalizados con FFT de 640 puntos y hop de 320 muestras.
+- Ejecución sobre NPUs Tenstorrent Tensix (Wormhole, Blackhole) a través de TTNN.
+- Carga de pesos individuales con `safetensors` para inspección o integración manual.
+- No incluye generación de texto, razonamiento, código, matemáticas ni visión.
+- No dispone de tool calling, function calling ni capacidades de agente.
+- No se documentan capacidades multilingües ni modos especiales (thinking, audio-to-text, etc.).
 
 ## Casos de uso
 
-- Preprocesado de voz para ASR: aplicar la máscara estimada al espectro de entrada antes de alimentar un sistema de reconocimiento de voz, reduciendo ruido de fondo en grabaciones a 16 kHz y mejorando la tasa de acierto en entornos ruidosos.
-- Cancelación de ruido en llamadas VoIP: integrar el modelo en el pipeline de audio de una aplicación de telefonía sobre aceleradores Tenstorrent, aplicando la máscara por ventanas de 51 frames con hop de 320 muestras.
-- Limpieza de datasets de audio: procesar por lotes corpus de voz para entrenamiento de modelos ASR o TTS, eliminando ruido estacionario y no estacionario antes de la transcripción o el etiquetado.
-- Despliegue en edge con aceleradores Tenstorrent: usar el modelo como componente de un pipeline de audio en dispositivos con chip Tensix, aprovechando el peso reducido (unos 0,05 GB de tensores) y el formato BF16 para minimizar el uso de memoria.
-- Investigación en hardware alternativo: servir como caso de referencia para validar implementaciones TT-NN de operaciones con convoluciones complejas y FSMN, comparando la salida contra el checkpoint original en CPU.
-- Postproducción de podcast y vídeo: aplicar la mejora de voz a pistas de locución grabadas en condiciones subóptimas, siempre que la integración aporte el framing, la normalización y la síntesis iSTFT necesarios.
-- Transcripción de reuniones: preprocesar el audio de reuniones capturado con micrófonos de sala antes de enviarlo a un servicio de transcripción, reduciendo reverberación y ruido de fondo.
+- Preprocesado de voz en pipelines de ASR: aplicar la máscara estimada antes de alimentar un reconocedor de voz para reducir falsos negativos en entornos ruidosos, aprovechando la ventana espectral de 321 bins y el hop de 320 muestras.
+- Videoconferencia y VoIP en dispositivos con acelerador Tenstorrent: integrar el modelo en la cadena de captura de micrófono para atenuar ruido de fondo en tiempo real, dado su tamaño reducido (23,7 M de parámetros, 0,05 GB en BF16).
+- Limpieza de grabaciones de campo: procesar audio a 16 kHz de entrevistas o notas de voz para mejorar la inteligibilidad antes de transcripción o archivado.
+- Telefonía y centros de atención: mejorar la señal de llamadas antes del análisis de sentimiento o de la transcripción automática, reduciendo el ruido ambiental del interlocutor.
+- Investigación en hardware Tenstorrent: usar el checkpoint como referencia para validar conversiones TTNN, comparando la SNR reportada frente a la implementación en CPU.
+- Evaluación de robustez de modelos de voz: emplear la máscara como etapa de aumento o limpieza en experimentos controlados sobre espectros sintéticos, donde la model card reporta 17,46/17,66 dB de SNR.
+- Integración en edge con NPU: desplegar supresión de ruido en dispositivos Wormhole o Blackhole donde no se dispone de GPU convencional, siempre que la implementación consumidora aporte el enmarcado y la síntesis.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad de tarea (PESQ, STOI, SI-SNR) en la información disponible. La model card únicamente reporta comprobaciones de equivalencia numérica frente al modelo original en CPU, medidas como SNR entre la salida de referencia y la salida convertida:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card únicamente reporta comparaciones de SNR de máscara y espectro mejorado frente al modelo original en CPU:
 
-| Conjunto | Transformación float32, SNR de máscara | BF16 almacenado, SNR de máscara | BF16 almacenado, SNR de espectro mejorado |
-|---|---:|---:|---:|
-| Espectros normalizados held-out | 77,97 dB | 27,87 dB | 39,12 dB |
-| Espectros sintéticos, semilla 20261112 | 96,55 dB | 17,46 dB | 17,66 dB |
-
-Estas cifras miden la concordancia con el modelo original en CPU, no la calidad de la mejora de voz ni la velocidad en dispositivo. Los espectros sintéticos son valores aleatorios independientes y no constituyen un benchmark de calidad de audio.
+| Metrica | Espectros normalizados reservados | Espectros sinteticos |
+|---|---|---|
+| SNR mascara / espectro mejorado (dB) | 27,87 / 39,12 | 17,46 / 17,66 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible para GPU convencional; los tensores almacenados ocupan aproximadamente 0,05 GB antes del empaquetado TT-NN, y debe reservarse memoria de dispositivo adicional para el packing y los buffers de trabajo.
-- GPU recomendadas: no aplica; el modelo está orientado a aceleradores Tenstorrent Tensix mediante TT-NN.
-- Compatibilidad con GPU de consumo: los pesos en safetensors pueden cargarse en CPU o GPU con la librería safetensors para inspección o conversión, pero la ejecución prevista es sobre Tensix.
-- Opciones de despliegue: TT-NN sobre hardware Tenstorrent; la conversión y validación se ejecutan en CPU con torch, numpy y safetensors.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia: no disponible como cifra oficial; con 23,76 M de parámetros en BF16, los pesos ocupan aproximadamente 0,05 GB, por lo que el consumo de memoria es mínimo.
+- GPU recomendadas: el checkpoint está pensado para NPUs Tenstorrent Tensix (Wormhole, Blackhole); no se documentan requisitos para GPU convencionales.
+- Cabe en GPU de consumo: sí, por tamaño de pesos, aunque la ejecución nativa publicada es para Tensix y no se detalla soporte en CUDA.
+- Opciones de despliegue: pila TTNN de Tenstorrent; carga de pesos con `safetensors` para integraciones propias; no se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplicables a este tipo de modelo).
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto / ventana | Formato | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto / configuracion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FRCRN_SE_16K-Tenstorrent-Tensix-BF16 (este) | 23.760.720 | 51 frames, 16 kHz | safetensors BF16 | Apache-2.0 | Hugging Face |
-| alibabasglab/FRCRN_SE_16K (base) | no disponible | 16 kHz | checkpoint original | Apache-2.0 | Hugging Face |
-| Otros modelos de supresión de ruido (p. ej. FRCRN de ModelScope, Demucs, RNNoise) | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Xylolabs/FRCRN_SE_16K-Tenstorrent-Tensix-BF16 | 23,76 M | FFT 640, hop 320, 16 kHz | safetensors BF16 | Apache-2.0 | Hugging Face, orientado a Tenstorrent |
+| alibabasglab/FRCRN_SE_16K (modelo base) | 23,76 M | FFT 640, hop 320, 16 kHz | checkpoint original | Apache-2.0 | Hugging Face |
+| Alternativas de speech enhancement (p. ej. Demucs, DeepFilterNet) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación con alternativas de la misma categoría no está disponible en la información proporcionada; los datos de parámetros, contexto y rendimiento de otros modelos de supresión de ruido no se han incluido en la búsqueda.
+La comparación relevante es con el modelo base, del que esta release es una conversión de pesos; no se dispone de datos de benchmarks frente a otros sistemas de supresión de ruido en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling ni agentes.
-- Solo procesa audio a 16 kHz con FFT de 640 puntos y hop de 320 muestras; otras frecuencias de muestreo requieren remuestreo previo.
-- La implementación consumidora debe aportar framing, normalización, aplicación de la máscara y síntesis iSTFT; el repositorio solo contiene pesos y configuración.
-- Las comprobaciones de equivalencia no miden calidad de mejora de voz ni velocidad en dispositivo; la degradación de SNR en BF16 frente a float32 (de 77,97 dB a 27,87 dB en máscara) es apreciable y debe evaluarse en la tarea concreta.
-- Riesgo de artefactos o distorsión en señales con ruido no estacionario o con voz solapada; no se han publicado evaluaciones subjetivas (MOS) ni objetivas (PESQ, STOI).
-- No se han documentado sesgos específicos, pero el modelo hereda los del checkpoint original de alibabasglab, entrenado sobre datos no detallados en la información disponible.
-- Licencia Apache-2.0 permite uso comercial, pero el modelo base no incluye archivo LICENSE propio; el NOTICE identifica el repositorio, la revisión y los cambios realizados.
-- No está afiliado ni respaldado por Tenstorrent.
-- El repo tiene 52 descargas y 0 likes; no hay evidencia de uso en producción ni de mantenimiento continuo.
+- No es un modelo autónomo: requiere que la implementación consumidora aporte enmarcado, normalización, aplicación de máscara y síntesis.
+- Solo se publican pesos en BF16; no hay cuantizaciones alternativas ni formato GGUF.
+- La ejecución nativa está ligada a NPUs Tenstorrent Tensix; el soporte en GPU convencionales no está documentado.
+- El modelo base declara Apache-2.0 sin archivo LICENSE propio; esta release incluye LICENSE canónico y NOTICE con la atribución, por lo que conviene revisar ambos antes de uso comercial.
+- No se documentan sesgos, tasas de alucinación ni evaluación multilingüe; al operar sobre audio, el riesgo principal es la distorsión de la señal o la atenuación excesiva de componentes de voz.
+- Las métricas de SNR reportadas proceden de comparaciones internas frente al modelo en CPU, no de benchmarks independientes.
+- El tamaño del repo indicado (0,0 GB) y la carpeta `bf16/` (0,05 GB) deben verificarse al descargar; la fecha de creación del repositorio (2026-11-12) conviene contrastarla con la disponibilidad real.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Xylolabs/FRCRN_SE_16K-Tenstorrent-Tensix-BF16
+- Hugging Face: https://huggingface.co/Xylolabs/FRCRN_SE_16K-Tenstorrent-Tensix-BF16
 - Modelo base: https://huggingface.co/alibabasglab/FRCRN_SE_16K
-- Revisión del checkpoint original: https://huggingface.co/alibabasglab/FRCRN_SE_16K/tree/3766e6a64b0d8cb58f08d913d617bf129f11ed53
-- Script de conversión: https://huggingface.co/Xylolabs/FRCRN_SE_16K-Tenstorrent-Tensix-BF16/blob/main/convert_frcrn.py
-- Licencia: https://huggingface.co/Xylolabs/FRCRN_SE_16K-Tenstorrent-Tensix-BF16/blob/main/LICENSE
-- ClearerVoice-Studio: https://github.com/modelscope/ClearerVoice-Studio
+- Script de conversión: https://huggingface.co/Xylolabs/FRCRN_SE_16K-Tenstorrent-Tensix/blob/main/bf16/convert_frcrn.py
+- Repositorio de código de Xylolabs: https://github.com/XylolabsInc/tensix-bfp-gptq
 - Documentación de Tenstorrent: https://docs.tenstorrent.com
+- Licencia: https://huggingface.co/Xylolabs/FRCRN_SE_16K-Tenstorrent-Tensix/blob/main/LICENSE

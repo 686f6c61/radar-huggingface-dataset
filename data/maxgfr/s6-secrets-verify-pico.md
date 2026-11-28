@@ -2,119 +2,115 @@
 
 ## Resumen
 
-s6-secrets-verify-pico es un verificador ternario de candidatos a secreto desarrollado por maxgfr dentro del proyecto skycmd, escrito integramente en Rust. No es un modelo generativo: es un clasificador binario de decision (pipeline `text-classification`) que recibe un estado construido a partir de una candidata propuesta por un motor de reglas (un valor, su linea, sus vecinos y su fichero) y responde a una unica pregunta: si ese valor es una credencial real que deberia revocarse. Con 445.345 parametros y un fichero de unos 250 KB en formato GGUF, su interes no reside en el rendimiento bruto sino en el planteamiento: un modelo minúsculo, determinista y de latencia muy baja que actua como segunda etapa sobre las salidas de un escaner de secretos convencional.
+s6-secrets-verify-pico es un clasificador de texto de tipo "verificador de candidatos" desarrollado por maxgfr dentro del proyecto skycmd. No es un modelo generativo ni un LLM convencional: recibe una propuesta generada por un motor de reglas (un valor, su linea, sus vecinos y su fichero) y emite un juicio binario sobre si ese valor es una credencial real que deberia revocarse. Con 445.345 parametros y un fichero GGUF de 249.984 bytes, su interes no esta en el rendimiento bruto sino en el planteamiento metodologico: es un experimento pre-registrado que fallo su puerta de validacion y se publica como resultado negativo reproducible.
 
-El modelo es relevante por su honestidad metodologica y por su condicion de resultado negativo publicado. Segun su model card, incumplio su puerta pre-registrada G1: se exigia un F1 a nivel de linea al menos 0,15 puntos por encima del mejor escaner de reglas sobre el conjunto de test de CredData en la lectura "todos los repositorios", y alcanzo 0,8561 frente al umbral de 0,8832 derivado de Betterleaks (0,7332 + 0,15). Las otras seis puertas se cumplieron, incluida una calibracion excelente (ECE de 0,0073) y una latencia mediana de 1.606 microsegundos por candidata. El autor lo publica para que el resultado sea verificable y reproducible, no para su uso en produccion, y declara explicitamente que no entra en secretgate ni se continua en esta forma.
+El modelo es la segunda version de s6-secrets-pico. La primera leia textos completos y fracaso sobre ficheros reales; esta se entreno y evaluo sobre repositorios reales del conjunto CredData. La arquitectura sigue el patron "reglas primero, juez aprendido despues" ya usado por CredSweeper de Samsung, Credential Digger de SAP y FP Remover de GitGuardian, pero con un tamano dos ordenes de magnitud menor (249 KB frente a los 11,5 MB del `ml_model.onnx` de CredSweeper).
 
-La ficha se redacta, por tanto, sobre un artefacto de investigacion con valor como referencia tecnica y como caso de estudio de pre-registro y evaluacion rigurosa, no como componente listo para desplegar.
+Su relevancia actual es doble. Por un lado, demuestra que un verificador ternario diminuto puede acercarse al rendimiento de escaneres de reglas en deteccion de secretos. Por otro, y de forma explicita, el autor documenta que no alcanzo la puerta G1 (F1 de linea 0,8561 frente al umbral 0,8832 exigido) y desaconseja su uso como detector autonomo. Se distribuye unicamente como opcion experimental, desactivada por defecto, dentro de la herramienta secretgate desde la version 1.9.0.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Red ternaria de decision (clasificador binario) sobre estado construido a partir de candidata de reglas y features manuales; implementacion en Rust |
-| Parametros totales | 445.345 (la metadata de safetensors del repo indica 193.793; discrepancia no aclarada en la informacion disponible) |
+| Arquitectura | Red neuronal ternaria de decision (clasificador binario sobre candidatos) |
+| Parametros totales | 445.345 (193.793 segun metadatos de safetensors) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (no procesa texto libre; recibe un estado de candidata) |
-| Tipos de cuantizacion | ternaria (pesos ternarios); un unico fichero GGUF de aproximadamente 250 KB |
-| Idiomas soportados | ingles (`en`) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | ternaria (pesos en {-1, 0, +1}); fichero GGUF de 249.984 bytes |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF |
+| Tamano del fichero | 249.984 bytes (aprox. 250 KB) |
+| Pipeline | text-classification |
+| Tarea | verificacion de candidatos a secreto (P(real) >= 0,34933) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la topologia interna de la red (numero de capas, dimensiones, esquema de ternarizacion ni funcion de perdida). Lo que si se especifica es su interfaz: el modelo no lee texto, sino un estado derivado de una candidata generada por el motor de reglas de secretgate, combinado con features manuales definidas en `crates/sky-infer/src/secret_cand.rs`. La salida es una probabilidad de que el valor sea una credencial real; en la variante v3 del sistema se aplica un umbral de P(real) ≥ 0,34933 para aceptar la candidata.
+El modelo implementa un clasificador de decision de "sistema uno": una red ternaria de muy baja capacidad que actua como juez sobre la salida de un motor de reglas. El flujo es el siguiente: el motor de reglas propone un candidato (un valor concreto, su linea, sus vecinos y su fichero de origen) y el modelo evalua ese unico valor en su contexto respondiendo a la pregunta "es este valor una credencial real que deberia revocarse?". Los pesos se almacenan en representacion ternaria, lo que explica que 445.345 parametros ocupen solo 250 KB en GGUF.
 
-El entrenamiento y la evaluacion se realizaron sobre repositorios reales, a diferencia de la version anterior s6-secrets-pico, que leia textos completos y fallaba en ficheros reales. La evaluacion se hizo sobre el conjunto de test de CredData (221 repositorios reales) a nivel de linea, con un universo filtrado que elimina las filas de categoria `UUID`, decision tomada tras leer filas de entrenamiento y validacion y antes de leer ningun fichero de test. El proceso esta pre-registrado en `docs/s6-secrets2-prereg.md`, con ocho enmiendas anteriores a la ejecucion y una novena posterior que autoriza la publicacion del modelo pese al fallo de la puerta G1. No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO, que en un clasificador de este tamano resultarian inusuales.
+El entrenamiento y la evaluacion se realizaron sobre repositorios reales, empleando el conjunto CredData y un conjunto de informes de incidencias. El autor no republica estos datos porque contienen credenciales reales. La evaluacion se hizo sobre 221 repositorios de test de CredData nunca vistos durante el entrenamiento. El proceso se rigio por un protocolo pre-registrado con siete puertas de validacion definidas antes de la ejecucion (documento `docs/s6-secrets2-prereg.md`, seccion 8), con ocho enmiendas previas a la ejecucion y una novena posterior que autoriza la publicacion del resultado fallido. No se documenta en la informacion disponible el uso de RLHF, DPO ni detalles sobre el numero de tokens de entrenamiento.
 
 ## Capacidades
 
-- Clasificacion binaria de candidatas a secreto: dado un valor propuesto por un motor de reglas y su contexto (linea, vecinos, fichero), estima la probabilidad de que sea una credencial real revocable.
-- Calibracion de probabilidades: ECE de 0,0073 sobre las candidatas del test de CredData, lo que permite usar el score como probabilidad interpretable y fijar umbrales con sentido.
-- Deteccion de secretos en repositorios reales a nivel de linea, con F1 de 0,8561 en el universo filtrado y 0,8114 excluyendo el repositorio mas grande.
-- Deteccion sobre informes de incidencias (issue reports): F1 de 0,8162 sobre 8.123 candidatas con 888 secretos.
-- Baja tasa de falsos positivos en texto limpio: 0,35% de ficheros con alguna candidata aceptada (31 de 8.825), y ninguna de las 110 candidatas aceptadas resulto ser una credencial real tras revision manual.
-- Inferencia nativa de muy baja latencia: mediana de 1.606 microsegundos por candidata, por debajo del limite de 3 ms de la puerta G6.
-- No soporta tool calling, agentes, razonamiento multi-paso, vision, audio ni generacion de texto. No dispone de demo publica porque requeriria portar el generador de candidatas de secretgate y las features manuales.
+- Clasificacion binaria de candidatos a secreto: dado un valor propuesto por reglas y su contexto (linea, vecinos, fichero), estima la probabilidad de que sea una credencial real.
+- Umbral de decision calibrado en P(real) >= 0,34933.
+- Integracion como verificador de segunda etapa en pipelines de deteccion de secretos basados en reglas.
+- Capacidad de anadir redacciones sobre las que ya detectan las reglas, sin poder eliminarlas ni modificarlas.
+- Ejecucion en Rust y compilacion a WASM (el proyecto skycmd es 100 % Rust).
+- No soporta tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo thinking.
+- Multilingue: no; unicamente ingles.
 
 ## Casos de uso
 
-- Segunda etapa de un escaner de secretos en CI/CD: el motor de reglas propone candidatas y este verificador filtra los falsos positivos antes de abrir una alerta o bloquear un merge, reduciendo el ruido que degrada la confianza en este tipo de herramientas. Es adecuado por su latencia sub-2 ms y su calibracion.
-- Auditoria de repositorios historicos: aplicar el par reglas + verificador sobre el arbol completo de un repositorio para priorizar que credenciales revocar primero, usando la probabilidad calibrada como criterio de ordenacion.
-- Triaje de informes de incidencias y fugas publicadas: procesar issue reports con valores expuestos y clasificar cuales corresponden a secretos reales, con un F1 de 0,8162 en este escenario.
-- Investigacion sobre verificadores ligeros: servir como linea base reproducible para comparar arquitecturas ternarias de muy bajo coste frente a escaneres de reglas y modelos de tamano medio como cbx-secrets-detector-17M.
-- Caso de estudio metodologico: ejemplo documentado de pre-registro de puertas de evaluacion, analisis de bootstrap pareado por repositorios y publicacion de resultados negativos, util para equipos que disenan evaluaciones de modelos.
-- Despliegue en entornos con recursos minimos: al ocupar unos 250 KB, puede embeberse en herramientas de linea de comandos o agentes locales escritos en Rust sin dependencias de GPU.
-- No es adecuado como unico mecanismo de deteccion: su valor esta en combinacion con un generador de candidatas basado en reglas, no como clasificador autonomo de texto.
+- Verificacion de falsos positivos en escaneo de secretos: integrado en secretgate como opcion experimental, el modelo recibe los candidatos que las reglas ya han marcado y anade redacciones adicionales en la salida de herramientas. Es el unico uso soportado oficialmente y esta desactivado por defecto.
+- Investigacion sobre modelos de decision de muy bajo coste: sirve como referencia reproducible de un clasificador ternario de 250 KB para estudiar el equilibrio entre capacidad y tamano en tareas de filtrado.
+- Reproduccion de resultados negativos: el fichero permite verificar de forma independiente las cifras del informe tecnico y del BENCH.md del proyecto skycmd.
+- Hook de pre-commit en desarrollo local: al ejecutarse en Rust/WASM y anadir como maximo unos 1,25 s a un hook, es viable en flujos de integracion continua donde no se quiere depender de servicios externos.
+- Filtrado en entornos con recursos muy limitados: su tamano de 250 KB permite desplegarlo en dispositivos embebidos o navegador via WASM, aunque con la advertencia de que no debe usarse como detector autonomo.
+- Docencia y divulgacion sobre metodologia pre-registrada: el par modelo + pre-registro + informe es un ejemplo completo de publicacion de un resultado fallido con puertas definidas a priori.
 
 ## Benchmarks y rendimiento
 
-Resultados sobre el test de CredData (221 repositorios reales), a nivel de linea, universo filtrado (filas de categoria `UUID` eliminadas):
+Los datos disponibles corresponden a la puerta G1 del protocolo pre-registrado, medida como F1 de linea sobre el test de CredData (221 repositorios no vistos en entrenamiento).
 
-| Sistema | Precision | Recall | F1 linea | F1 sin el mayor |
-|---|---:|---:|---:|---:|
-| s6-secrets-verify-pico | 0,8387 | 0,8741 | 0,8561 | 0,8114 |
-| Betterleaks 1.10.1 | 0,7694 | 0,7002 | 0,7332 | 0,5367 |
-| secretgate default engine | 0,8176 | 0,6560 | 0,7279 | 0,5072 |
-| Gitleaks 8.30.1 | 0,8546 | 0,5980 | 0,7037 | 0,4080 |
-| cbx-secrets-detector-17M | 0,8265 | 0,5820 | 0,6830 | 0,8493 |
-| Regresion logistica de tamano comparable (256 KiB) | 0,7345 | 0,8652 | 0,7945 | 0,7179 |
+| Metrica | Resultado | Umbral exigido | Veredicto |
+|---|---|---|---|
+| G1, todos los repositorios | 0,8561 | Betterleaks 0,7332 + 0,15 = 0,8832 | Falla (diferencia +0,123) |
+| G1, sin el repositorio mas grande | 0,8114 | Betterleaks 0,5367 + 0,15 = 0,6867 | Se cumple |
+| G2 a G7 | no detallado en la informacion disponible | no disponible | Se cumplen (segun el autor) |
+| s6-secrets v3 (reglas + modelo) | 0,8477 | 0,8832 | Falla G1 de nuevo |
 
-Otras metricas reportadas:
-
-| Metrica | Valor |
-|---|---|
-| F1 a nivel de candidata (33.809 candidatas, 9.623 positivas) | 0,8827 |
-| PR-AUC a nivel de candidata | 0,9335 |
-| ECE en candidatas del test | 0,0073 |
-| F1 en issue reports (8.123 candidatas, 888 secretos) | 0,8162 |
-| F1 de Gitleaks en issue reports | 0,7104 |
-| F1 de cbx-secrets-detector-17M en issue reports | 0,8616 |
-| Ficheros limpios con candidata aceptada | 0,35% (31 de 8.825) |
-| Latencia mediana nativa por candidata | 1.606 microsegundos |
-
-Bootstrap pareado por repositorios (1.000 remuestreos, 95%): diferencia frente a Betterleaks de +0,1229 [0,0413; 0,3613] en todos los repositorios y +0,2748 [0,1743; 0,3796] excluyendo el mayor. La puerta G1 exigia +0,15 y no se alcanzo en la lectura completa.
+El sistema combinado s6-secrets v3, que marca una linea cuando las reglas por defecto de secretgate la marcan o cuando el modelo acepta un candidato en ella, alcanzo 0,8477 en la misma puerta y tambien la fallo. El coste operativo medido de la opcion experimental es de una redaccion en el 0,46 % de 8.825 ficheros reales limpios sin ruta y en el 0,27 % con ruta.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica en la practica; el fichero GGUF ocupa unos 250 KB y la inferencia es nativa en CPU.
-- GPU recomendadas: ninguna necesaria. El autor reporta inferencia nativa en Rust con mediana de 1.606 microsegundos por candidata, lo que sugiere ejecucion en CPU.
-- Cabe en cualquier GPU de consumo e incluso en entornos sin GPU; el cuello de botella real es el generador de candidatas de secretgate, no el modelo.
-- Opciones de despliegue: integracion mediante el proyecto skycmd (100% Rust) y el runtime de inferencia del propio proyecto; no se documenta soporte para vLLM, TGI, llama.cpp u Ollama, y al ser un clasificador de estado y no un modelo de lenguaje, esas herramientas no son directamente aplicables.
-- Latencia y throughput: mediana de 1.606 microsegundos por candidata en la puerta G6; no se publican cifras de throughput agregado.
+- VRAM estimada: practicamente despreciable; el fichero GGUF ocupa 249.984 bytes y los pesos son ternarios, por lo que cabe en cualquier GPU consumer e incluso en CPU.
+- GPU recomendadas: ninguna en particular; el modelo no requiere GPU para inferencia razonable.
+- Cabe en cualquier GPU consumer (GTX 1050, RTX 3060, RTX 4090) y en CPU. La ejecucion de referencia es en Rust y WASM.
+- Opciones de despliegue: binario Rust del proyecto skycmd, modulo WASM, y la herramienta secretgate (version 1.9.0 o superior) que descarga los cuatro ficheros de datos con verificacion sha256. No se documenta soporte para vLLM, TGI ni Ollama.
+- Latencia: el autor reporta como maximo unos 1,25 s anadidos a un hook de pre-commit. No se publican cifras de throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Enfoque | F1 linea (CredData) | Licencia | Disponibilidad |
+| Modelo | Desarrollador | Enfoque | Tamano | Licencia | Estado |
 |---|---|---|---|---|---|
-| s6-secrets-verify-pico | 445.345 (metadata safetensors: 193.793) | Verificador ternario sobre candidatas de reglas | 0,8561 | Apache 2.0 | GGUF en Hugging Face, sin demo |
-| cbx-secrets-detector-17M | 17M | Detector de secretos | 0,6830 (0,8493 sin el mayor) | no disponible | no disponible |
-| Betterleaks 1.10.1 | no aplica (reglas) | Escaner de reglas | 0,7332 | no disponible | herramienta publica |
-| Gitleaks 8.30.1 | no aplica (reglas) | Escaner de reglas | 0,7037 | no disponible | herramienta publica |
-| Regresion logistica de tamano comparable | 256 KiB | Clasificador lineal | 0,7945 | no disponible | no disponible |
+| s6-secrets-verify-pico | maxgfr | Verificador ternario de candidatos propuestos por reglas | 249.984 bytes | Apache 2.0 | Publicado como resultado negativo; fallo G1 |
+| CredSweeper (ml_model.onnx) | Samsung | Validador ML sobre reglas | 11.545.911 bytes | no disponible en la informacion | En produccion |
+| Credential Digger | SAP (archivado) | Reglas + validacion | no disponible | no disponible en la informacion | Archivado |
+| FP Remover | GitGuardian | Reduccion de falsos positivos | no disponible | no disponible en la informacion | En produccion (blog) |
+
+La comparacion directa de rendimiento con CredSweeper, Credential Digger y FP Remover no esta disponible en la informacion proporcionada; el autor solo usa Betterleaks como referencia de escaner de reglas en la puerta G1.
 
 ## Limitaciones y advertencias
 
-- Resultado negativo: el modelo incumplio su puerta pre-registrada G1 en la lectura "todos los repositorios" (0,8561 frente a 0,8832 exigidos). El autor indica explicitamente que se publica como resultado y no para su uso, y que no entra en secretgate.
-- Sistema v3 tambien fallido: la variante que combina reglas y modelo alcanzo 0,8477 frente al mismo umbral de 0,8832, con lo que G1 volvio a fallar. No hay una tercera lectura prevista y el trabajo en esta linea se da por terminado.
-- Sesgo de evaluacion por repositorio: el repositorio de test mas grande concentra 5.165 de las 10.463 filas positivas y los escaneres de reglas rinden bien en el; excluyendolo, el modelo supera ampliamente a Betterleaks, lo que indica una sensibilidad fuerte a la composicion del corpus.
-- Dependencia de un componente externo: el modelo no procesa texto; necesita el generador de candidatas de secretgate y las features manuales de `secret_cand.rs`. Sin ese pipeline no es utilizable, y por eso no hay demo en navegador.
-- Cobertura linguistica limitada al ingles; no se documenta comportamiento en otros idiomas.
-- Riesgo de falso negativo en credenciales que el motor de reglas no proponga: al actuar como segunda etapa, hereda los fallos de recall de la primera.
-- Tasa de falsos positivos baja pero no nula: 0,35% de ficheros limpios con alguna candidata aceptada, aunque la revision manual de las 110 candidatas no encontro credenciales reales.
-- Sin datos publicados sobre sesgos demograficos, toxicidad o comportamiento fuera del dominio de deteccion de secretos; no aplica como modelo generativo.
-- Licencia Apache 2.0 permite uso comercial, pero la condicion de resultado negativo y la ausencia de soporte continuado desaconsejan su uso en produccion.
-- Discrepancia entre los parametros declarados en la model card (445.345) y los de la metadata de safetensors (193.793), no aclarada en la informacion disponible.
+- El modelo fallo su puerta de validacion pre-registrada G1 (F1 0,8561 frente a 0,8832 exigido) y el autor lo desaconseja explicitamente como detector autonomo.
+- Solo funciona como segunda etapa: requiere que un motor de reglas proponga candidatos; no detecta secretos por si mismo.
+- Solo puede anadir redacciones sobre lo que las reglas detectan; nunca elimina ni modifica sus resultados.
+- Entrenado y evaluado unicamente en ingles.
+- Riesgo de falsos positivos medido: redaccion en el 0,46 % de 8.825 ficheros limpios sin ruta y en el 0,27 % con ruta.
+- Los datos de entrenamiento (CredData e informes de incidencias) contienen credenciales reales y no se republican.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no recomienda su uso en produccion mas alla de la opcion experimental de secretgate.
+- No hay tercera lectura ni continuacion prevista del trabajo sobre este modelo.
+- La demo publica usa un proponente simplificado de una sola regla y envia los flags de filtro como falsos, por lo que muestra el juicio del modelo sobre esos registros, no el sistema medido.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/maxgfr/s6-secrets-verify-pico
-- Version anterior: https://huggingface.co/maxgfr/s6-secrets-pico
-- Repositorio del proyecto: https://github.com/maxgfr/skycmd
-- Pagina de resultados: https://maxgfr.github.io/skycmd/results/
-- Pre-registro v2: https://github.com/maxgfr/skycmd/blob/main/docs/s6-secrets2-prereg.md
-- Pre-registro v3: https://github.com/maxgfr/skycmd/blob/main/docs/s6-secrets3-prereg.md
-- Benchmarks: https://github.com/maxgfr/skycmd/blob/main/BENCH.md#s6-secrets-verify-pico-s6-secrets-v2-a-verifier-of-rule-candidates-pre-registered-gate-failed
-- Resultados del test v2: https://github.com/maxgfr/skycmd/blob/main/runs/s6-secrets2/eval-test/results.md
-- Resultados del test v3: https://github.com/maxgfr/skycmd/blob/main/runs/s6-secrets3/eval-test/results.md
-- Proyecto secretgate: https://github.com/maxgfr/secretgate
+- Space de demo: https://huggingface.co/spaces/maxgfr/s6-secrets-verify-pico
+- Demo en el sitio del proyecto: https://maxgfr.github.io/skycmd/secrets-verify/
+- Codigo fuente (skycmd, Rust): https://github.com/maxgfr/skycmd
+- Herramienta secretgate: https://github.com/maxgfr/secretgate
+- Pagina del verificador en secretgate: https://github.com/maxgfr/secretgate/blob/main/docs/verifier.md
+- Pre-registro s6-secrets v2: https://github.com/maxgfr/skycmd/blob/main/docs/s6-secrets2-prereg.md
+- Pre-registro s6-secrets v3: https://github.com/maxgfr/skycmd/blob/main/docs/s6-secrets3-prereg.md
+- Benchmarks (BENCH.md): https://github.com/maxgfr/skycmd/blob/main/BENCH.md#s6-secrets-verify-pico-s6-secrets-v2-a-verifier-of-rule-candidates-pre-registered-gate-failed
+- Resultados de evaluacion v2: https://github.com/maxgfr/skycmd/blob/main/runs/s6-secrets2/eval-test/results.md
+- Resultados de evaluacion v3: https://github.com/maxgfr/skycmd/blob/main/runs/s6-secrets3/eval-test/results.md
+- Pagina de resultados del proyecto: https://maxgfr.github.io/skycmd/results/#s6-secrets-verify-pico-failed
+- Informe tecnico: https://maxgfr.github.io/skycmd/paper/
+- Guia de uso real: https://maxgfr.github.io/skycmd/use/#secrets
+- Space general del proyecto: https://huggingface.co/spaces/maxgfr/skycmd
+- Version anterior del modelo: https://huggingface.co/maxgfr/s6-secrets-pico
+- CredSweeper (Samsung): https://github.com/Samsung/CredSweeper
+- Credential Digger (SAP): https://github.com/SAP-archive/credential-digger
+- FP Remover (GitGuardian): https://blog.gitguardian.com/fp-remover-cuts-false-positives-by-half/

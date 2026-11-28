@@ -2,97 +2,98 @@
 
 ## Resumen
 
-`jrubiosainz/microduck-game-hillclimber` es una política de control para el robot cuadrúpedo de código abierto Microduck, desarrollada por el autor independiente `jrubiosainz` como participación en el evento de subida de colina de 1,5 m de la Microduck Arena. Se trata de un fine-tune de la política de referencia `pollen-robotics/microduck-sprint-2m-reference`, entrenada adicionalmente con PPO (Proximal Policy Optimization) sobre el simulador de la propia Arena (MuJoCo 3.10.0, runner versión 4) y ejecutada exclusivamente en CPU.
+Microduck Game Hill Climber es una política de control para el robot cuadrúpedo de bajo coste Microduck, desarrollado por Pollen Robotics. Se trata de un fine-tune de la política de referencia `pollen-robotics/microduck-sprint-2m-reference`, reentrenada mediante PPO (Proximal Policy Optimization) en CPU para superar el circuito de subida de 1,5 m de la Microduck Arena, un entorno de competición basado en el simulador MuJoCo 3.10.0.
 
-El modelo resuelve una tarea muy concreta: recorrer el circuito de subida de 1,5 m en el menor tiempo posible, manteniéndose estable. La red mantiene la arquitectura de la referencia: un perceptrón multicapa de 61 entradas, tres capas ocultas de 512, 256 y 128 neuronas con activación ELU, y 14 salidas de acciones, a 50 Hz. El resultado reportado es de 0,956 s en los seeds oficiales y 200/200 finalizaciones sin caídas en los seeds 1-200.
+El modelo resuelve un problema muy concreto: completar el circuito de hill climb de la Arena en el menor tiempo posible, con estabilidad garantizada. Según la model card, alcanza 0,976 s en los seeds oficiales (1-5) y 0,980 s de media en los seeds 1-200, con 200/200 finalizaciones y 0 caídas. Es relevante ahora como ejemplo de entrenamiento de refuerzo reproducible en hardware modesto (sin GPU, sin datos nuevos, sin cómputo de pago) dentro de un ecosistema de robótica open source como el de Pollen Robotics.
 
-Su relevancia es acotada pero clara: demuestra que es posible hacer fine-tuning de políticas de locomoción con recursos mínimos (sin GPU, sin datos nuevos, sin cómputo de pago) dentro del ecosistema de simulación de Pollen Robotics, y sirve como referencia reproducible para quienes experimentan con el entorno Microduck Arena. No está pensado para transferencia a un robot físico.
+La red mantiene la forma de la referencia: 61 entradas → 512 → 256 → 128 → 14 salidas, con activación ELU y normalizador de entrada congelado. La política ignora la velocidad comandada (twist) y está diseñada exclusivamente para simulación, sin randomización sim-to-real.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MLP (perceptrón multicapa) 61 → 512 → 256 → 128 → 14, activación ELU |
-| Parametros totales | no disponible (pesos en `policy.onnx`, repo de 0.0 GB) |
+| Arquitectura | MLP (perceptrón multicapa) con activación ELU; forma 61 → 512 → 256 → 128 → 14 |
+| Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (política de control, sin contexto textual) |
-| Tipos de cuantizacion | no disponible (exportación ONNX estándar) |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
+| Longitud de contexto | no aplica (política de control, no modelo de lenguaje) |
+| Tipos de cuantizacion | no disponible (pesos exportados a ONNX en precisión original) |
+| Idiomas soportados | no aplica (modelo de robótica, sin capacidades lingüísticas) |
 | Licencia | no disponible (el repo base no declara licencia propia) |
-| Formato de pesos | ONNX (`policy.onnx`), más `manifest.json` (esquema 2 de microduck policy manifest) |
+| Formato de pesos | ONNX (`policy.onnx`) + `manifest.json` (schema 2 de microduck policy manifest) |
 
 ## Arquitectura y entrenamiento
 
-La política es una red neuronal densa con la misma forma que la referencia de Pollen Robotics: entrada de 61 dimensiones (observación del robot y del entorno), tres capas ocultas de 512, 256 y 128 unidades con activación ELU, y salida de 14 dimensiones (acciones de control). El normalizador de entrada de la referencia se mantiene congelado y queda integrado en el grafo ONNX. La frecuencia de control es de 50 Hz y el modelo incluye una normalización "horneada" (baked in), de modo que acepta observaciones en crudo.
+La política es una red neuronal densa con la misma topología que la referencia de Pollen Robotics: 61 observaciones de entrada, tres capas ocultas de 512, 256 y 128 neuronas con activación ELU, y 14 acciones de salida. El normalizador de entrada se mantiene congelado respecto al modelo base. La inferencia se ejecuta a 50 Hz y el grafo ONNX incluye el normalizador integrado, de modo que acepta observaciones en crudo. Un detalle técnico relevante: los 13 slots de comando de la observación se reescriben dentro del grafo con un comando interno fijo (velocidad frontal 0,55 m/s, velocidad lateral cero, yaw rate, cabeza y cuerpo), por lo que la política ignora el twist comandado externamente.
 
-El entrenamiento consistió en una cadena larga de iteraciones PPO ejecutadas en CPU dentro del runner y la física de la propia Arena: 375 iteraciones sobre sprint-2m (run r1), 3.075 iteraciones sobre hill-climb-1m5 (runs h1, h2 y h4), 350 iteraciones de nuevo sobre sprint-2m (run s2) y 7.250 iteraciones finales sobre hill-climb-1m5 (runs h5, h5b y hl1, este último con objetivo KL reducido a 0,01 y suelo de learning rate de 1e-6). En las últimas fases se usaron 96 copias paralelas del circuito, 64 pasos de control por iteración y la perturbación de inicio propia de la Arena. La función de recompensa combina progreso hacia delante mientras corre el cronómetro de carrera, penalizaciones pequeñas por velocidad lateral, tasa de giro, deriva hacia las paredes y caída, y un bonus único al cruzar la línea. Un detalle técnico destacable: el comando interno de velocidad (0,55 m/s hacia delante, cero lateral, cero giro, cabeza y cuerpo) se escribe dentro del grafo en las 13 ranuras de comando de la observación, por lo que la política ignora la orden de twist que recibe.
+El entrenamiento consistió en una cadena de runs PPO ejecutados íntegramente en CPU dentro del runner y la física del propio Arena (MuJoCo 3.10.0, runner versión 4). La secuencia fue: 375 iteraciones PPO sobre sprint-2m (run r1), seguidas de 3075 iteraciones sobre hill-climb-1m5 (runs h1, h2 y h4 con ramificaciones desde checkpoints intermedios), 350 iteraciones adicionales sobre sprint-2m (run s2) y finalmente 5125 iteraciones sobre hill-climb-1m5 (runs h5 y h5b, este último reanudado tras un reinicio de máquina con nueva semilla aleatoria). Se usaron 96 a 192 copias paralelas del circuito por iteración, 64 pasos de control por iteración, y la perturbación de arranque propia del Arena. La función de recompensa combina progreso frontal mientras corre el reloj de carrera, penalizaciones pequeñas por velocidad lateral, yaw rate, deriva hacia las paredes y caídas, más un bonus único por cruzar la línea equivalente a correr a 1,5 m/s por cada paso restante antes del horizonte de 2,5 s. El checkpoint seleccionado fue `it05125` del run h5b.
 
 ## Capacidades
 
-- Locomoción bípeda/cuadrúpeda simulada: recorrer el circuito de subida de 1,5 m de la Microduck Arena a velocidad constante.
-- Estabilidad: 200/200 finalizaciones sin caídas en los seeds 1-200, con peor tiempo de 1,02 s y p90 de 0,98 s.
-- Robustez a ruido de observación: mantiene 20/20 finalizaciones con ruido gaussiano σ = 1e-4 y σ = 1e-3 sobre todas las observaciones.
-- Ejecución en CPU: inferencia y entrenamiento sin GPU.
-- Exportación ONNX con normalizador integrado, apta para el runner de la Arena.
-- No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingües: no es un modelo de lenguaje.
-- No soporta modo "thinking", visión ni audio.
-- Ignora el comando de twist: siempre avanza en línea recta a su propio ritmo y no se detiene por sí mismo.
+- Control locomotor de un robot cuadrúpedo Microduck en simulación: marcha frontal estable a una velocidad interna fija de 0,55 m/s.
+- Superación de circuitos con cambios de pendiente (plano, subida, plano, subida) en el evento hill-climb-1m5 del Arena.
+- Finalización fiable de la carrera: 200/200 finalizaciones y 0 caídas en los seeds 1-200.
+- Robustez limitada a ruido de observación: completa 20/20 con ruido gaussiano σ = 1e-04 y σ = 1e-03.
+- Inferencia determinista y ligera: un único input `obs` [1, 61] y un único output `actions` [1, 14] a 50 Hz.
+- No soporta tool calling, function calling, agentes, razonamiento multi-step ni capacidades multilingües (no es un modelo de lenguaje).
+- No soporta modo thinking, visión ni audio.
+- Ignora deliberadamente el comando de velocidad: todas las velocidades del barrido (0,15–1,00 m/s) producen el mismo tiempo.
 
 ## Casos de uso
 
-- Participación en la Microduck Arena: el modelo se carga directamente en el runner de la Arena para competir en el evento de subida de 1,5 m, ya que cumple el formato ONNX y el manifiesto de política esperados.
-- Referencia reproducible para fine-tuning con PPO: sirve como punto de partida documentado (cadena de runs, hiperparámetros, recompensa) para quienes quieran reentrenar políticas sobre el simulador de Pollen Robotics sin GPU.
-- Evaluación de robustez en simulación: los experimentos con ruido gaussiano σ = 1e-4 y σ = 1e-3 permiten estudiar cómo afecta la precisión numérica de otra máquina a una marcha caótica, como paso previo a pruebas de portabilidad.
-- Docencia e investigación en aprendizaje por refuerzo: el modelo y su historial de entrenamiento (runs, checkpoints, cambios de KL y learning rate) ofrecen un caso de estudio concreto de entrenamiento incremental y branching de checkpoints.
-- Benchmarking de políticas de locomoción: al tener tiempos medidos en seeds oficiales y en 200 seeds, se puede usar como línea base frente a otras políticas presentadas a la Arena.
-- Pruebas de integración del runner de la Arena: validar el pipeline `arena score --event hill-climb-1m5`, el barrido de velocidades comandadas y la carga de manifiestos de política.
-- Prototipado de controladores de bajo coste: dado que todo el ciclo se ejecuta en CPU, es adecuado para entornos con recursos limitados donde no se dispone de aceleradores.
+- Participación en la Microduck Arena: el modelo está pensado como entrada para el evento hill-climb-1m5 de la Arena, donde se evalúa contra otros participantes con los seeds oficiales y el runner del propio entorno.
+- Benchmark de referencia para RL en robótica de bajo coste: sirve como línea base reproducible para comparar estrategias de entrenamiento PPO en CPU, dado que documenta la cadena completa de runs, iteraciones y checkpoints.
+- Estudio de transferencia entre tareas: la cadena de entrenamiento alterna sprint-2m y hill-climb-1m5, lo que permite analizar cómo el fine-tuning sobre una tarea afecta al rendimiento en otra y cómo se recupera mediante runs intermedios.
+- Investigación sobre robustez a ruido de observación: las filas de ruido σ = 1e-04 y σ = 1e-03 documentan el comportamiento bajo perturbaciones, útil para estudiar la sensibilidad de políticas chaotic gait a diferencias de redondeo entre máquinas.
+- Validación de pipelines de publicación: el repo incluye `manifest.json` con schema 2 generado con el código `microduck_rl` de Pollen, por lo que puede usarse para probar flujos de empaquetado y despliegue de políticas ONNX en el ecosistema Microduck.
+- Docencia y divulgación de RL: al no requerir GPU ni datos nuevos, es un caso práctico asequible para explicar PPO, función de recompensa, selección de checkpoints y evaluación con seeds en un entorno de simulación físico.
+- Pruebas de integración del runner del Arena: el modelo permite verificar el funcionamiento de `arena score --event hill-climb-1m5` y del runner versión 4 con MuJoCo 3.10.0 en distintas máquinas.
 
 ## Benchmarks y rendimiento
 
-| Evaluación | Resultado | Finalizaciones |
+| Evaluación (runner del Arena) | Puntuación | Finalizaciones |
 |---|---|---|
-| Seeds 1-5 (conjunto oficial) | 0,956 s (peor 0,96) | 5/5 |
-| Seeds 1-200 | 0,962 s (p90 0,98, peor 1,02) | 200/200, 0 caídas |
-| Seeds 1-5 con ruido σ = 1e-4, 4 ejecuciones por seed | 0,956–0,960 s | 20/20 |
-| Seeds 1-5 con ruido σ = 1e-3, 4 ejecuciones por seed | 0,956–0,956 s | 20/20 |
-| Barrido de 18 velocidades comandadas 0,15–1,00 m/s | 0,96 s en todas (comando ignorado) | — |
+| Seeds 1-5 (set oficial) | 0,976 s (peor 0,98 s) | 5/5 |
+| Seeds 1-200 | 0,980 s (p90 1,00 s, peor 1,04 s) | 200/200, 0 caídas |
+| Seeds 1-5 con ruido σ = 1e-04, 4 runs por seed | 0,976–0,984 s (rango) | 20/20 |
+| Seeds 1-5 con ruido σ = 1e-03, 4 runs por seed | 0,968–0,976 s (rango) | 20/20 |
 
-Los tiempos locales son indicativos: la máquina de la Arena puede diferir en algunas centésimas de segundo. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) porque no aplican a este tipo de modelo.
+El barrido de `arena score --event hill-climb-1m5` con 18 velocidades comandadas entre 0,15 y 1,00 m/s devuelve 0,98 s en todos los casos, coherente con que la política ignora el comando. El resultado reportado por el barrido es 0,976 s con 5/5 finalizaciones, puntuado a 0,15 m/s. Los tiempos locales son indicativos y pueden diferir en unas centésimas en la máquina del Arena. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) porque no aplican a este tipo de modelo.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no aplica; la inferencia se ejecuta en CPU.
-- GPU recomendadas: ninguna; el autor entrenó e infirió sin GPU.
-- Cabe en cualquier CPU de consumo: la red es un MLP pequeño (61 → 512 → 256 → 128 → 14) exportado a ONNX.
-- Opciones de despliegue: runner de la Microduck Arena (MuJoCo 3.10.0, runner versión 4) y ONNX Runtime; el manifiesto `manifest.json` sigue el esquema 2 de microduck policy manifest generado con el código `microduck_rl` de Pollen Robotics.
-- Latencia y throughput: control a 50 Hz; no se han publicado cifras de latencia por inferencia.
-- Almacenamiento: el repositorio ocupa 0.0 GB según Hugging Face, es decir, pesos de tamaño muy reducido.
+- VRAM estimada para inferencia: no disponible; el modelo es una MLP pequeña exportada a ONNX y el autor indica que el entrenamiento se hizo en CPU, sin GPU.
+- GPU recomendadas: no aplica; no se requiere GPU para la inferencia según la información disponible.
+- ¿Cabe en consumer GPU? Sí, con toda probabilidad, dado el tamaño reducido de la red (61 → 512 → 256 → 128 → 14) y el formato ONNX, aunque no se proporcionan cifras de VRAM.
+- Opciones de despliegue: ONNX Runtime (formato nativo `policy.onnx`), integración con el runner del Arena y el ecosistema `microduck_rl` de Pollen Robotics; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Latencia y throughput: inferencia a 50 Hz según la model card; no se proporcionan cifras de latencia por inferencia ni throughput.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Tipo | Entrenamiento | Rendimiento en hill-climb-1m5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jrubiosainz/microduck-game-hillclimber` | no disponible | no aplica | 0,956 s en seeds oficiales; 200/200 sin caídas | no disponible | Hugging Face |
-| `pollen-robotics/microduck-sprint-2m-reference` | no disponible | no aplica | no disponible en la información proporcionada | no disponible | Hugging Face |
-| Otras entradas de la Microduck Arena | no disponible | no aplica | no disponible | no disponible | Hugging Face Spaces |
+| jrubiosainz/microduck-game-hillclimber | MLP ONNX (fine-tune) | PPO en CPU sobre base sprint-2m | 0,976 s (seeds 1-5), 200/200 en seeds 1-200 | no disponible | Hugging Face |
+| pollen-robotics/microduck-sprint-2m-reference | MLP ONNX (referencia) | Entrenamiento original de Pollen | no disponible en la información proporcionada | no disponible (el repo base no declara licencia propia) | Hugging Face |
+| Otras entradas de la Microduck Arena | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-La comparación se limita al modelo base, del que este es un fine-tune, y a las entradas de la Arena, cuyos datos no se han proporcionado. No se dispone de cifras de rendimiento comparables de otros participantes.
+No se dispone de datos de rendimiento de la referencia sprint-2m ni de otras entradas de la Arena en la información proporcionada, por lo que la comparación cuantitativa no es posible.
 
 ## Limitaciones y advertencias
 
-- No apto para robot físico: la política solo se ha ejecutado en simulación y se entrenó sin ninguna aleatorización sim-to-real. El autor advierte explícitamente de que no se cargue en un Microduck real.
-- Ignora el comando de twist: siempre corre en línea recta a su propio ritmo y nunca se detiene por sí misma, lo que impide usarla para control direccional o parada.
-- Sin licencia declarada: el repositorio base no declara licencia propia y este fine-tune tampoco especifica una, por lo que el uso comercial queda en un limbo legal que conviene aclarar con el autor.
-- Riesgo de sobreajuste al circuito: los resultados se miden en el curso concreto de la Arena y con su perturbación de inicio; no hay evidencia de generalización a otros terrenos.
-- Sensibilidad numérica: la marcha es caótica y los tiempos pueden variar algunas centésimas según la máquina, aunque las pruebas con ruido sugieren cierta robustez.
-- Sin capacidades de lenguaje, razonamiento, código ni multilingües: no debe evaluarse con benchmarks de NLP.
-- Sesgos conocidos: no se han documentado sesgos en la información disponible, más allá del sesgo implícito hacia el circuito de entrenamiento.
-- Riesgo de alucinación: no aplica, al no ser un modelo generativo de texto.
+- No apto para robot real: la política solo ha corrido en simulación y se entrenó sin randomización sim-to-real. El autor advierte explícitamente de que no debe cargarse en un Microduck físico.
+- Ignora el comando de velocidad: siempre corre hacia adelante a su propio ritmo y nunca se detiene por sí sola; el twist comandado no tiene efecto.
+- Sensibilidad a diferencias numéricas: la marcha es caótica y amplifica diferencias de redondeo entre máquinas; los tiempos pueden variar unas centésimas en el hardware del Arena.
+- Robustez a ruido limitada a los niveles probados (σ = 1e-04 y σ = 1e-03); no se documenta comportamiento con perturbaciones mayores.
+- Licencia no disponible: ni el modelo ni el repo base declaran licencia, lo que genera incertidumbre sobre el uso comercial y la redistribución.
+- Sesgos conocidos: no se documentan sesgos en la información disponible, aunque al ser una política de control no aplican los sesgos típicos de modelos de lenguaje.
+- Riesgo de alucinación: no aplica (no es un modelo generativo de texto); el riesgo equivalente es la degradación del rendimiento fuera de las condiciones de entrenamiento.
+- Limitaciones de contexto o idioma: no aplica; el modelo no procesa lenguaje.
+- Restricciones de licencia para uso comercial: no especificadas; conviene contactar con Pollen Robotics o el autor antes de cualquier uso comercial.
+- Dependencia del entorno: el rendimiento está ligado al runner versión 4 y a MuJoCo 3.10.0 del Arena; cambios en el simulador o en la física pueden alterar los resultados.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-hillclimber
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-sprint-2m-reference
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
-- Organización Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
+- Paper, blog o repositorio adicional: no disponible en la información proporcionada.

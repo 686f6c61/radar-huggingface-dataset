@@ -61,39 +61,40 @@
   "benchmarks": [
     {
       "task": "Translation (Indonesia -> Gorontalo)",
-      "dataset": "Korpus Terpadu Dwibahasa Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
-      "metric": "SacreBLEU (ID -> GOR Clean Test)",
-      "value": 23.42
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "SacreBLEU (ID -> GOR Test v6)",
+      "value": 40.59
     },
     {
       "task": "Translation (Indonesia -> Gorontalo)",
-      "dataset": "Korpus Terpadu Dwibahasa Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
-      "metric": "chrF++ (ID -> GOR Clean Test)",
-      "value": 39.26
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "chrF++ (ID -> GOR Test v6)",
+      "value": 57.98
     },
     {
       "task": "Translation (Gorontalo -> Indonesia)",
-      "dataset": "Korpus Terpadu Dwibahasa Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
-      "metric": "SacreBLEU (GOR 1987 -> ID Clean Test)",
-      "value": 21.53
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "SacreBLEU (GOR 2001 -> ID Test v6)",
+      "value": 32.57
     },
     {
       "task": "Translation (Gorontalo -> Indonesia)",
-      "dataset": "Korpus Terpadu Dwibahasa Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
-      "metric": "chrF++ (GOR 1987 -> ID Clean Test)",
-      "value": 47.36
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "chrF++ (GOR 2001 -> ID Test v6)",
+      "value": 56.8
+    },
+    {
+      "task": "Translation (Gorontalo 1987 -> Indonesia)",
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "SacreBLEU (GOR 1987 -> ID Test v6)",
+      "value": 35.6
+    },
+    {
+      "task": "Translation (Gorontalo 1987 -> Indonesia)",
+      "dataset": "Korpus Terpadu v6 Kamus Prof. Dr. H. Mansoer Pateda (1987 & 2001)",
+      "metric": "chrF++ (GOR 1987 -> ID Test v6)",
+      "value": 59.29
     }
   ],
-  "sources": [
-    {
-      "title": "Run NLLB-200 Locally: A Python Setup Guide for the 600M Model",
-      "url": "https://nllb.com/setup-nllb-locally/",
-      "snippet": "Set up an isolated Python environment, choose exact NLLB language codes and run a short translation with the 600M research model. Includes troubleshooting."
-    },
-    {
-      "title": "200 languages within a single AI model: A breakthrough in high-quality ...",
-      "url": "https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/",
-      "snippet": "Meta AI has built a single AI model, NLLB-200, that is the first to translate across 200 different languages with state-of-the-art quality that has been validated through extensive evaluations for each of them."
-    }
-  ]
+  "sources": []
 }

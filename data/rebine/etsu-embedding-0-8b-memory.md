@@ -1,132 +1,83 @@
 # Rebine/Etsu-Embedding-0.8B-Memory
 
 ## Resumen
+Etsu-Embedding-0.8B-Memory es un modelo de embeddings de texto desarrollado por Rebine, obtenido por ajuste fino del modelo base Qwen/Qwen3.5-0.8B-Base. Su proposito es la recuperacion semantica de memoria de agentes y dominios afines (bases de conocimiento personal, archivos de conversacion, documentacion tecnica), operando sobre consultas cortas y preguntas naturales en chino e ingles. Con 752 millones de parametros y 1024 dimensiones de salida, se posiciona como un especialista de dominio dentro de la familia Etsu.
 
-Etsu-Embedding-0.8B-Memory es un modelo de embeddings de texto desarrollado por Rebine, obtenido por ajuste fino del modelo base Qwen/Qwen3.5-0.8B-Base. Su propósito es la recuperación semántica de memoria de agentes y dominios afines: bases de conocimiento personales, archivos de conversaciones y documentación técnica, en chino e inglés. Con 752.393.024 parámetros, se posiciona como un especialista de dominio dentro de la familia Etsu, coexistente con la versión generalista Rebine/Etsu-Embedding-0.8B, de la que comparte arquitectura y protocolo de codificación pero difiere en datos y receta de entrenamiento.
+Arquitectonicamente hereda el diseno hibrido de Qwen3.5: 24 capas, de las cuales 18 son de atencion lineal y 6 de atencion completa, con un tamano oculto de 1024 y un vocabulario de 248.320 tokens. La longitud de contexto es de 2048 tokens y la salida emplea last-token pooling con normalizacion L2, compatible con truncamiento Matryoshka en 128, 256, 512, 768 y 1024 dimensiones.
 
-El modelo emplea la arquitectura híbrida de texto de Qwen3.5, con 24 capas (18 de atención lineal y 6 de atención completa), tamaño oculto de 1024, tamaño intermedio de 3584 y un vocabulario de 248.320 tokens. Produce embeddings de 1024 dimensiones mediante last-token pooling y normalización L2, con soporte de truncamiento Matryoshka a 128, 256, 512 y 768 dimensiones. Su longitud de contexto es de 2048 tokens.
-
-Su relevancia actual radica en que está entrenado específicamente sobre un conjunto de datos de recuperación de memoria reconstruido, lo que le permite superar a alternativas generalistas en su dominio objetivo: alcanza un Recall@6 del 83,46 % en el conjunto de validación sintético y del 78,00 % en consultas reales, frente al 70,43 % y 69,00 % de Qwen3-Embedding-0.6B. La contrapartida es un rendimiento inferior fuera de dominio, por lo que su uso debe restringirse a escenarios de recuperación de memoria.
+Su relevancia actual radica en que cubre un nicho concreto: la recuperacion de memoria en sistemas de agentes, donde los corpus son heterogeneos y las consultas mezclan palabras clave con lenguaje natural. Se distribuye bajo licencia Apache-2.0 y coexiste con la version anterior Rebine/Etsu-Embedding-0.8B, que conserva mejor rendimiento en tareas de memoria conversacional de contexto largo.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3.5 hybrid text model (18 capas de atención lineal + 6 de atención completa) |
+| Arquitectura | Qwen3.5 hybrid text model (18 capas de atencion lineal + 6 de atencion completa) |
 | Parametros totales | 752.393.024 (752M) |
-| Parametros activos | no disponible (no es un modelo MoE) |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 2048 tokens |
-| Tipos de cuantizacion | no disponible (entrenado y publicado en BF16; safetensors) |
-| Idiomas soportados | chino, ingles |
+| Tipos de cuantizacion | no disponible (entrenamiento en BF16; el autor no documenta cuantizaciones publicadas) |
+| Idiomas soportados | chino (zh) e ingles (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (librería transformers) |
-| Dimension de embedding | 1024 (MRL: 128, 256, 512, 768, 1024) |
-| Pooling | last-token pooling (última posición no-pad de attention_mask) |
-| Normalizacion | L2 (tras truncamiento Matryoshka) |
-| Similitud | coseno o producto escalar normalizado |
-| Precisión de entrenamiento | BF16 |
-| Modelo base | Qwen/Qwen3.5-0.8B-Base |
-| Tamaño del repositorio | 1,5 GB |
-| Pipeline | feature-extraction |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
+El modelo parte de Qwen/Qwen3.5-0.8B-Base y conserva su arquitectura hibrida de transformer con mezcla de atencion lineal y atencion completa: 24 capas en total, 18 lineales y 6 completas, con hidden size de 1024, intermediate size de 3584 y vocabulario de 248.320 tokens. La cabeza de embeddings produce vectores de 1024 dimensiones mediante last-token pooling (ultima posicion no-pad de la attention mask) seguido de normalizacion L2; el truncamiento Matryoshka se aplica antes de la normalizacion final. El protocolo de codificacion exige right padding para que el ultimo token no-pad coincida con el final real del texto, y anade el prefijo de instruccion solo a las consultas, no a los pasajes.
 
-El modelo parte de Qwen/Qwen3.5-0.8B-Base, un transformer híbrido de texto que combina 18 capas de atención lineal con 6 capas de atención completa. Esta mezcla reduce el coste computacional de la atención en secuencias largas manteniendo la capacidad de modelado global de las capas de atención completa. El tamaño oculto es de 1024 y el intermedio de 3584, con un vocabulario de 248.320 tokens. La salida de embedding se obtiene mediante last-token pooling sobre la última posición no-pad y posterior normalización L2, con truncamiento Matryoshka opcional antes de la normalización.
-
-El ajuste fino se realizó sobre un conjunto de datos de recuperación de memoria reconstruido, orientado a pares consulta-pasaje de memoria de agentes. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de RLHF o DPO. El protocolo de codificación es asimétrico: las consultas llevan el prefijo de instrucción `Instruct: Given a query, retrieve relevant passages that answer the query\nQuery: {query}`, mientras que los pasajes y memorias se codifican sin prefijo. Se requiere padding a la derecha para que la última posición no-pad corresponda al final real del texto.
+El ajuste fino se realizo sobre un corpus de memoria de agentes de 7.938 chunks, construido a partir de una instantanea original de 7.275 chunks mas 663 chunks nuevos de octubre de 2026 incorporados exclusivamente para la evaluacion golden_v3, tras eliminar 110 duplicados exactos. El corpus se agrupo con KMeans (k = 20) sobre embeddings de documento de Qwen3-Embedding-0.6B, los clusters se nombraron con un LLM y se fusionaron en seis dominios: configuracion y operaciones de agentes (3.050 chunks), memoria y dreaming (1.715), role-play y persona (1.181), chit-chat y logs (827), noticias, deportes y meteorologia (624) y documentacion de proyecto y blog (541). La evaluacion golden_v3 consta de 118 consultas asignadas a traves de sus chunks de respuesta. No se documentan en la informacion disponible fases de RLHF o DPO ni el volumen total de tokens de entrenamiento.
 
 ## Capacidades
-
-- Generación de embeddings de texto para similitud semántica y recuperación de información.
-- Recuperación de memoria de agentes: diseñado específicamente para consultas contra memorias y pasajes almacenados.
-- Soporte de consultas cortas por palabra clave y preguntas en lenguaje natural.
-- Bilingüe chino-inglés.
-- Truncamiento Matryoshka a 128, 256, 512 y 768 dimensiones para reducir coste de almacenamiento y búsqueda.
-- Compatible con endpoints (tag `endpoints_compatible`) y con la librería transformers.
-- No incluye tool calling, function calling, capacidades de agente multi-paso, visión ni audio: es exclusivamente un modelo de embeddings.
+- Generacion de embeddings de texto para similitud semantica, recuperacion de informacion y busqueda de pasajes.
+- Recuperacion de memoria de agentes: disenado especificamente para consultar almacenes de memoria de agentes y archivos de conversacion.
+- Soporte bilingue chino-ingles en consultas y pasajes.
+- Manejo de consultas cortas por palabra clave y de preguntas en lenguaje natural dentro del mismo espacio vectorial.
+- Dimensiones Matryoshka (MRL) de 128, 256, 512, 768 y 1024, lo que permite reducir coste de almacenamiento y latencia de busqueda con perdida controlada de calidad.
+- Compatibilidad con el pipeline feature-extraction de transformers y con endpoints compatibles.
+- No soporta tool calling, function calling, agentes multi-paso ni modos de razonamiento: es un modelo de embeddings, no generativo.
+- No dispone de capacidades de vision ni audio.
 
 ## Casos de uso
-
-- Memoria de agentes conversacionales: el modelo indexa y recupera recuerdos de interacciones previas de un agente, con consultas en formato de instrucción y pasajes sin prefijo, aprovechando su entrenamiento específico en recuperación de memoria para mantener coherencia entre sesiones.
-- Bases de conocimiento personales: permite búsqueda semántica sobre notas, documentos y archivos personales en chino o inglés, con recuperación de pasajes relevantes ante preguntas naturales o palabras clave sueltas.
-- Archivo y búsqueda de conversaciones: indexación de historiales de chat para localizar mensajes o hilos relevantes mediante similitud coseno sobre embeddings de 1024 dimensiones.
-- Documentación técnica: recuperación de fragmentos de documentación para asistentes de soporte o sistemas RAG internos, con la posibilidad de truncar a 512 o 768 dimensiones para reducir el almacenamiento del índice vectorial.
-- Sistemas RAG en producción: integración como codificador de consultas y pasajes en pipelines de recuperación densa, con padding a la derecha y normalización L2 para usar producto escalar normalizado en bases vectoriales.
-- Filtrado y deduplicación semántica: agrupación de memorias o documentos similares mediante umbrales de similitud coseno, útil para consolidar recuerdos redundantes en agentes de larga duración.
-- Búsqueda multilingüe chino-inglés: recuperación cruzada entre consultas y pasajes en ambos idiomas dentro de un mismo espacio vectorial compartido.
+- Recuperacion de memoria en agentes conversacionales: el modelo indexa resumenes de sesion, fragmentos de memoria consolidada y notas de promocion, y recupera los pasajes relevantes ante la consulta del agente; su entrenamiento sobre 1.715 chunks de memoria y dreaming lo hace adecuado para este dominio concreto.
+- Bases de conocimiento personal: indexacion de notas, articulos y documentacion propia en 1024 dimensiones (o 256/512 con MRL) para busqueda semantica local; el contexto de 2048 tokens cubre la mayoria de fragmentos de notas.
+- Archivo y busqueda de historiales de conversacion: recuperacion de turnos previos o resumenes de sesion por similitud semantica, util en asistentes que necesitan recordar interacciones pasadas.
+- Documentacion tecnica y blogs: busqueda sobre informes de diseno, derivaciones y entradas de blog (541 chunks en el corpus de entrenamiento) con consultas en lenguaje natural o palabras clave.
+- Asistencia a operaciones de agentes: recuperacion de procedimientos de configuracion de modelos y gateways, llamadas a API, fallbacks, despliegue local de embeddings y resolucion de problemas de proxy a partir de una base de runbooks.
+- Deduplicacion y agrupamiento semantico de registros: uso de los embeddings para detectar pasajes duplicados o casi duplicados en almacenes de memoria, como se hizo al eliminar 110 duplicados exactos del corpus.
+- Busqueda multilingue zh-en en productos con usuarios de ambos idiomas, gracias al espacio vectorial compartido entrenado sobre corpus bilingues.
 
 ## Benchmarks y rendimiento
-
-Recuperación sobre corpus completo con coseno denso; los valores son Recall@6 salvo indicación contraria. Todas las filas usan el mismo protocolo de tokenizador, instrucción de consulta, pooling, normalización, corpus y conjunto de consultas.
-
-Comparativa frente a Qwen/Qwen3-Embedding-0.6B:
-
-| Conjunto | Dominio | Casos | Etsu-Memory R@6 | Qwen3-Embedding-0.6B R@6 |
-|---|---|---:|---:|---:|
-| valid | en dominio (consultas sintéticas) | 913 | 83,46 % | 70,43 % |
-| golden | en dominio (consultas reales) | 100 | 78,00 % | 69,00 % |
-| locomo | fuera de dominio, inglés | 1.977 | 67,53 % | 74,41 % |
-| locomo_zh | fuera de dominio, chino | 1.977 | 62,32 % | 72,18 % |
-
-Comparativa frente a Rebine/Etsu-Embedding-0.8B (receta anterior):
-
-| Conjunto | Etsu-Memory R@6 | Etsu-0.8B R@6 |
-|---|---:|---:|
-| valid | 83,46 % | 80,28 % |
-| golden (consultas reales) | 78,00 % | 74,00 % |
-| locomo | 67,53 % | 75,77 % |
-| locomo_zh | 62,32 % | 72,53 % |
-
-Dimensiones Matryoshka (Recall@6):
-
-| Dim | valid | golden |
-|---:|---:|---:|
-| 128 | 66,16 % | 65,00 % |
-| 256 | 75,03 % | 70,00 % |
-| 512 | 80,94 % | 71,00 % |
-| 768 | 83,35 % | 77,00 % |
-| 1024 | 83,46 % | 78,00 % |
-
-Métricas principales a 1024 dimensiones:
-
-| Conjunto | R@1 | R@3 | R@6 | R@10 | MRR@6 |
-|---|---:|---:|---:|---:|---:|
-| valid | 58,49 % | 75,36 % | 83,46 % | 86,86 % | 67,59 % |
-| golden | 49,00 % | 69,00 % | 78,00 % | 82,00 % | 59,80 % |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona la evaluacion interna golden_v3 (118 consultas, 99 originales y 18 nuevas) y afirma que esta version es mas fuerte en el dominio objetivo y en 8 tareas de recuperacion en chino, mientras que la release anterior rinde mejor en LoCoMo en/zh, pero no se incluyen cifras numericas de dichas evaluaciones.
 
 ## Requisitos de hardware
-
-- VRAM estimada para inferencia: aproximadamente 1,5 GB en BF16 (752M parámetros), más el overhead de activaciones y del tokenizador; en la práctica, menos de 3 GB para lotes pequeños con contexto de 2048 tokens.
-- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; tarjetas como RTX 3060, RTX 4060, RTX 4090, A100 o H100 son suficientes. Para codificación por lotes a gran escala conviene una GPU de datacenter (A100/H100) por throughput.
-- Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna con 4 GB o más de VRAM.
-- Opciones de despliegue: transformers (referencia oficial con el código de pooling incluido en la model card), endpoints compatibles, y servidores de embeddings basados en transformers. No se documenta soporte nativo para vLLM, llama.cpp, Ollama o TGI en la información disponible.
-- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en BF16: aproximadamente 1,5 GB para los pesos (752M parametros), mas overhead de activaciones y tokenizador; en la practica cabe holgadamente en GPUs de 4 GB o mas.
+- En FP16/BF16 puede ejecutarse en RTX 3060, RTX 4060, RTX 4090, A100 y H100 sin problemas; en GPUs consumer de gama baja (8 GB) el margen es amplio.
+- Cuantizacion a 8 bits o 4 bits reduciria el peso a menos de 1 GB, aunque el autor no publica variantes cuantizadas ni recetas oficiales.
+- Despliegue: transformers con AutoModel y AutoTokenizer (metodo documentado en la model card); al no ser un paquete sentence-transformers con wrapper de pooling, hay que implementar manualmente el last-token pooling y el prefijo de consulta. Es compatible con endpoints compatibles; vLLM, llama.cpp, Ollama o TGI no estan documentados para este modelo en la informacion disponible.
+- Latencia y throughput: no disponibles. El contexto de 2048 tokens y el tamano de 752M sugieren un coste de codificacion bajo por lote, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Dimension | Licencia | R@6 en dominio (valid) | R@6 fuera de dominio (locomo) |
-|---|---:|---:|---:|---|---:|---:|
-| Etsu-Embedding-0.8B-Memory | 752M | 2048 | 1024 (MRL) | Apache-2.0 | 83,46 % | 67,53 % |
-| Rebine/Etsu-Embedding-0.8B | 752M (misma base) | 2048 | 1024 (MRL) | Apache-2.0 | 80,28 % | 75,77 % |
-| Qwen/Qwen3-Embedding-0.6B | 600M aprox. | no disponible | no disponible | no disponible | 70,43 % | 74,41 % |
+| Modelo | Parametros | Contexto | Dimensiones | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|---|
+| Etsu-Embedding-0.8B-Memory | 752M | 2048 | 1024 (MRL 128-1024) | zh, en | Apache-2.0 | Especialista en memoria de agentes; mejor en dominio y 8 tareas de retrieval en chino |
+| Etsu-Embedding-0.8B | 752M | no disponible | no disponible | zh, en | Apache-2.0 | Mismo base y protocolo; mejor en LoCoMo en/zh (memoria conversacional de contexto largo) |
+| Qwen3-Embedding-0.6B | 0,6B | no disponible | no disponible | multilingue | no disponible | Usado por el autor para clustering del corpus; no es un competidor directo documentado en la ficha |
 
-Etsu-Memory es la mejor opción para recuperación de memoria en dominio, mientras que tanto la versión generalista Etsu-0.8B como Qwen3-Embedding-0.6B generalizan mejor fuera de dominio (LoCoMo en inglés y chino). La elección depende de si el corpus objetivo es memoria de agentes o recuperación general.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-
-- Especialista de dominio: en benchmarks fuera de dominio (LoCoMo en inglés y chino) queda por debajo tanto de la versión anterior Etsu-Embedding-0.8B como del baseline generalista Qwen3-Embedding-0.6B. Para recuperación general o entre dominios debe usarse Rebine/Etsu-Embedding-0.8B.
-- Sin comportamiento de rechazo: las consultas sin respuesta en el corpus devuelven resultados igualmente; la gestión de "sin respuesta" debe implementarse con un umbral de puntuación aguas arriba.
-- La calidad de recuperación está acoplada al chunking; la información disponible sobre este punto está truncada.
-- Contexto limitado a 2048 tokens, insuficiente para pasajes o documentos largos sin troceado previo.
-- Solo chino e inglés; no se declaran otros idiomas.
-- Requiere implementar manualmente el pooling de last-token y el prefijo de instrucción de consulta; no es un paquete sentence-transformers con wrapper de pooling incorporado.
-- Es obligatorio el padding a la derecha: con padding a la izquierda, la última posición no-pad no corresponde al final real del texto y los embeddings resultan incorrectos.
-- Riesgo de sesgos y alucinación: no documentado en la información disponible; al ser un modelo de embeddings, el riesgo se traslada a la recuperación de pasajes irrelevantes, no a la generación de texto.
-- Licencia Apache-2.0: permite uso comercial, con las obligaciones de atribución habituales de la licencia.
+- Modelo exclusivamente de embeddings: no genera texto ni soporta razonamiento, tool calling o agentes; no debe usarse como LLM.
+- Cobertura linguistica limitada a chino e ingles; el rendimiento en otros idiomas no esta documentado.
+- Ventana de contexto de solo 2048 tokens: los pasajes o consultas mas largos se truncan, lo que puede degradar la recuperacion en documentos extensos.
+- Requiere seguir estrictamente el protocolo de codificacion (prefijo de instruccion solo en consultas, right padding, last-token pooling, normalizacion L2); desviarse de el altera la calidad de los embeddings.
+- No es un paquete sentence-transformers con wrapper de pooling; la integracion en pipelines existentes requiere codigo propio.
+- El corpus de entrenamiento es pequeno (7.938 chunks) y muy especifico de un unico almacen de memoria de agente, lo que puede introducir sesgos de dominio y reducir la generalizacion fuera de ese tipo de contenido.
+- Riesgo de sesgos derivados de los datos de entrenamiento (conversaciones, role-play, noticias) no evaluado en la informacion disponible.
+- No se documentan evaluaciones de robustez, alucinacion (en el sentido de recuperaciones irrelevantes) ni comportamiento en produccion a gran escala.
+- Licencia Apache-2.0 permite uso comercial, pero se recomienda verificar la licencia del modelo base Qwen3.5-0.8B-Base enlazada en la model card.
 
 ## Enlaces
-
 - Modelo en Hugging Face: https://huggingface.co/Rebine/Etsu-Embedding-0.8B-Memory
-- Versión generalista hermana: https://huggingface.co/Rebine/Etsu-Embedding-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base/blob/main/LICENSE
+- Release hermana: https://huggingface.co/Rebine/Etsu-Embedding-0.8B
+- Articulo en chino sobre el modelo: https://cks114.top/index.php/archives/253/

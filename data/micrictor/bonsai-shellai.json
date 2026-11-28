@@ -48,16 +48,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "GitHub - micrictor/shellai",
-      "url": "https://github.com/micrictor/shellai",
-      "snippet": "Blog post Shellai (pronounced shellay) is a command-line interface for getting AI assistance without network calls or a separate interface. It's built around the idea that I should be able to, in my terminal, simply type ai, do this thing and have it generate the command for me. Shellai uses local small-language models (SLMs) to fulfill user requests. Your data stays on your machine. Unlike ..."
-    },
-    {
-      "title": "Models – Hugging Face",
-      "url": "https://huggingface.co/models?other=shellai",
-      "snippet": "Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: shellai Clear all"
-    }
-  ]
+  "sources": []
 }

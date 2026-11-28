@@ -5,7 +5,7 @@
   "author": "Harsha001",
   "url": "https://huggingface.co/Harsha001/Pika-H3-Flex-ROCmFPX",
   "created_at": "2026-10-31T10:46:35.000Z",
-  "updated_at": "2026-10-31T17:50:28.000Z",
+  "updated_at": "2026-11-27T21:01:48.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "non-commercial",
   "pipeline_tag": "image-to-video",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 7583,
+  "downloads_30d": 7593,
   "trending_score": 0,
   "parameters": 33122993116,
   "parameters_human": "33.12B",

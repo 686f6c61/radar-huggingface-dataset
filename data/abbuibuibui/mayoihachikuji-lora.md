@@ -2,84 +2,84 @@
 
 ## Resumen
 
-MayoiHachikuji-Lora es un LoRA de personaje para modelos de difusion SDXL, entrenado sobre el checkpoint waiIllustriousSDXL v17, que reproduce a Mayoi Hachikuji (八九寺真宵), personaje de la serie *Monogatari Series*. Lo desarrolla el usuario de Hugging Face abbuibuibui y se distribuye como un adaptador de bajo rango que se carga junto al modelo base mediante la libreria diffusers o en flujos de ComfyUI. No es un modelo de lenguaje: es un adaptador de generacion de imagenes, por lo que las secciones de esta ficha se adaptan a esa naturaleza.
+MayoiHachikuji-Lora es un LoRA de personaje para modelos de difusion SDXL, desarrollado por el usuario abbuibuibui, que reproduce a Mayoi Hachikuji (八九寺真宵), personaje de la serie *Monogatari*. Se trata de un adaptador de bajo rango entrenado sobre el modelo base waiIllustriousSDXL v17, un checkpoint de la familia Illustrious orientado a generacion de imagenes anime. El repositorio alberga tres linajes distintos de pesos: el LoRA original para WAI/Illustrious en la raiz, un LoRA para AutismMix Pony bajo el directorio `autism_pony/` y un LoRA para MOSS-Image bajo `moss/`, cada uno con su propio modelo base y prompts incompatibles entre si.
 
-El modelo resuelve un problema acotado: la generacion consistente y fiel de un personaje concreto con un atuendo y unos rasgos definidos (dos coletas, pelo y ojos castanos, cinta blanca con alas, uniforme escolar con falda azul y mochila rosa con forma de caracol). El autor publica siete epocas (E1-E7) y recomienda la E6 a fuerza 0.8 tras una evaluacion comparativa propia sobre diez escenas y cuatro intensidades.
+El modelo resuelve el problema de la generacion consistente de un personaje concreto en pipelines de difusion texto-a-imagen, permitiendo invocar su identidad mediante tokens de activacion especificos (`mayoi_hachikuji` para identidad y `mayoi_hachikuji_school_uniform` para el atuendo). Incluye siete epocas de entrenamiento (E1-E7), con una evaluacion comparativa publica que recomienda la epoca E6 a fuerza 0.8 como configuracion por defecto.
 
-Es relevante para quienes construyen pipelines de generacion de personajes en anime o ilustracion con SDXL/Illustrious y necesitan un adaptador ligero (unos 456 MB por fichero) con instrucciones de uso y tokens de activacion bien documentados. El repositorio ocupa 3.2 GB e incluye los pesos de las siete epocas, imagenes de muestra y registros de evaluacion.
+Es relevante ahora porque los LoRA de personaje sobre SDXL/Illustrious son un componente habitual en flujos de trabajo de generacion de arte anime con ComfyUI, y este repositorio documenta de forma inusualmente detallada el proceso de seleccion de epoca y fuerza, con hashes SHA-256 por archivo y una matriz de evaluacion de 10 escenas por 4 intensidades.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL / Illustrious (modelo base waiIllustriousSDXL v17) |
-| Parametros totales | no disponible (rango 64, alpha 32) |
+| Arquitectura | LoRA (adaptador de bajo rango) sobre SDXL; base waiIllustriousSDXL v17 |
+| Parametros totales | no disponible (rango LoRA 64, alpha 32) |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no aplica (modelo de difusion de imagenes) |
-| Tipos de cuantizacion | no disponible (pesos en safetensors, precision no especificada) |
-| Idiomas soportados | en, zh (etiquetas de la model card; los prompts se redactan en ingles o chino) |
+| Longitud de contexto | no aplica (modelo de difusion texto-a-imagen) |
+| Tipos de cuantizacion | no disponible |
+| Idiomas soportados | en, zh |
 | Licencia | creativeml-openrail-m |
-| Formato de pesos | safetensors (un fichero por epoca, 456.491.420 bytes cada uno) |
+| Formato de pesos | safetensors (cada archivo de 456.491.420 bytes) |
 
 ## Arquitectura y entrenamiento
 
-El adaptador es un LoRA de rango 64 y alpha 32 acoplado a un UNet de SDXL en su variante Illustrious (waiIllustriousSDXL v17). El entrenamiento uso AdamW en bf16, buckets con limite de 1536 y siete epocas sobre un dataset de 70 pares imagen-texto con repeticion 2, correspondiente al conjunto abbuibuibui/MayoiHachikuji-Dataset. Las captions se generaron con `keep_tokens = 2`, lo que explica que el color de pelo y ojos a menudo se omita en las descripciones y deba anadirse manualmente en el prompt.
+El adaptador es un LoRA de rango 64 y alpha 32 aplicado sobre el checkpoint SDXL waiIllustriousSDXL v17. El entrenamiento empleo AdamW en precision bf16, con buckets de hasta 1536 y 7 epocas. El dataset consta de 70 pares de imagenes (con el token de atuendo `mayoi_hachikuji_school_uniform` compartido entre las variantes principal y alternativa en esta evaluacion) con 2 repeticiones, y las leyendas se generaron con `keep_tokens = 2`, omitiendo a menudo el color de pelo y ojos, que deben anadirse explicitamente en el prompt. El entrenamiento se realizo en un NVIDIA DGX Spark con ComfyUI.
 
-El autor realizo una evaluacion en dos rondas: una primera criba de E1-E7 a fuerza 0.8 y una matriz posterior de E5, E6 y E7 por diez escenas y cuatro intensidades (0.4, 0.6, 0.8 y 1.0). De ahi se concluye que E6 a 0.8 ofrece el mejor equilibrio entre fidelidad de identidad (cinta blanca con alas, ojos castanos, marcas rosadas en las mejillas) y del atuendo completo (lazos verdes con forma de hoja, falda azul con pin de estrella amarilla, mochila rosa de caracol y zapatos rosas). El entrenamiento y la evaluacion se hicieron con una NVIDIA DGX Spark y ComfyUI.
+La innovacion documental del repositorio es su proceso de seleccion: una primera ronda cribo E1-E7 a fuerza 0.8 y una tercera ronda realizo una matriz sobre E5-E7 cruzada con 10 escenas y 4 intensidades (0.4, 0.6, 0.8 y 1.0). La conclusion es que E6 a 0.8 reproduce de forma mas fiable los rasgos distintivos: cinta blanca alada, ojos marrones, lineas rosadas en las mejillas, coletas marron oscuro, lazos verdes en forma de hoja, falda azul con estrella amarilla, mochila rosa de caracol y zapatos rosas. El repositorio incluye ademas dos linajes adicionales entrenados sobre AutismMix Pony (recomendado E6 a 1.0) y MOSS-Image, con pesos en subdirectorios separados y prompts no intercambiables.
 
 ## Capacidades
 
-- Generacion de imagenes de un personaje concreto de anime con identidad consistente mediante el token `mayoi_hachikuji`.
-- Control de atuendo mediante el token `mayoi_hachikuji_school_uniform`, con variantes principal y alternativa.
-- Reproduccion de detalles caracteristicos: dos coletas, pelo largo castano, ojos castanos, cinta blanca con alas, marcas rosadas en mejillas, mochila de caracol.
-- Retratos frontales, tres cuartos, perfil, cuerpo completo, poses sentadas y escenas nocturnas o de fondo complejo, segun la evaluacion publicada.
-- Composicion con otros LoRA y con el ecosistema SDXL (ComfyUI, diffusers), incluyendo control de fuerza de aplicacion entre 0.4 y 1.0.
-- Soporte de prompts en ingles y chino.
-- No dispone de tool calling, razonamiento multi-paso, modo thinking, vision ni audio: es exclusivamente un generador de imagenes.
+- Generacion de imagenes de personaje consistente: reproduce la identidad de Mayoi Hachikuji mediante el token `mayoi_hachikuji`.
+- Control de atuendo mediante token dedicado (`mayoi_hachikuji_school_uniform`), con variantes principal y alternativa.
+- Compatibilidad con prompts en ingles y chino (idiomas declarados en la model card).
+- Integracion en ComfyUI y en pipelines basados en la libreria diffusers.
+- Ajuste de intensidad del efecto mediante la fuerza del LoRA (rango evaluado de 0.4 a 1.0).
+- Multiples epocas disponibles (E1-E7) para elegir entre fidelidad, flexibilidad o variacion estilistica.
+- Tres linajes de modelo base (WAI/Illustrious, AutismMix Pony, MOSS-Image) para distintos estilos de render.
+- No dispone de tool calling, razonamiento multi-paso ni capacidades de agente: es un adaptador de difusion, no un modelo de lenguaje.
 
 ## Casos de uso
 
-- Ilustracion de fan art de *Monogatari Series*: cargar el LoRA E6 a 0.8 en ComfyUI con el prompt de ejemplo y generar retratos o escenas del personaje con fidelidad alta, sin necesidad de describir cada detalle del diseno.
-- Creacion de hojas de personaje para proyectos derivados: usar las distintas epocas y fuerzas para obtener variaciones de expresion, pose y angulo (frontal, tres cuartos, perfil) manteniendo la identidad.
-- Generacion de escenas narrativas: combinar el token de personaje con descripciones de entorno (calle nocturna, fondo simple) para ilustrar fragmentos de relato o guiones.
-- Prototipado de merchandising o ilustracion comercial sujeta a la licencia: generar bocetos de camisetas, posteres o stickers con el personaje, verificando antes las condiciones de creativeml-openrail-m.
-- Integracion en pipelines automatizados de difusion: cargar el safetensors desde diffusers en un servicio de generacion por lotes para producir variaciones controladas por seed y fuerza.
-- Experimentacion con tecnicas de adaptacion: usar el LoRA como caso de estudio para comparar epocas y fuerzas, o para probar composicion con otros adaptadores sobre waiIllustriousSDXL.
-- Generacion de material de referencia para animacion o comic: producir poses y angulos consistentes que sirvan de base para rotoscopia o bocetado.
+- Generacion de fan art de personaje: el LoRA permite producir ilustraciones consistentes de Mayoi Hachikuji en ComfyUI con el prompt de ejemplo documentado (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216), sin necesidad de hires fix ni ADetailer.
+- Creacion de hojas de personaje y referencias: la matriz de evaluacion cubre retrato frontal, tres cuartos, perfil, cuerpo entero con atuendo principal y alternativo, sentado, fondo simple, escena nocturna y ausencia de token de atuendo, lo que facilita generar sets de referencia coherentes.
+- Ilustracion para proyectos derivados de anime: util para doujinshi, portadas de fan fiction o material promocional no oficial, siempre respetando la licencia y los derechos del propietario original.
+- Prototipado de narrativa visual: combinando el token de identidad con escenas nocturnas o fondos complejos se pueden generar paneles para storyboards de comics amateur.
+- Experimentacion con tecnicas de LoRA: el repositorio sirve como caso de estudio de seleccion de epoca y fuerza, con hashes SHA-256 por archivo y evaluacion publica reproducible.
+- Comparativa de linajes de modelo base: al incluir pesos para WAI/Illustrious, AutismMix Pony y MOSS-Image, permite evaluar como cambia el mismo personaje segun el checkpoint subyacente.
+- Generacion de avatares y material para comunidades de fans: retratos de personaje a resolucion 832x1216 aptos para foros y redes, con la salvedad de que es una obra derivada no oficial.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor solo aporta una evaluacion cualitativa interna (rondas 1 y 3) con imagenes comparativas y una recomendacion de uso (E6 a 0.8), sin metricas numericas como FID, CLIP score o similitud facial.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye unicamente evaluaciones cualitativas (rondas 1 y 3 con imagenes de muestra) y una recomendacion subjetiva de E6 a fuerza 0.8, sin metricas numericas como FID, CLIP score ni similitud de personaje.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explicita. Al ser un LoRA sobre SDXL, requiere cargar el modelo base completo; en la practica esto implica el mismo consumo que waiIllustriousSDXL (tipicamente 8-12 GB en fp16 con optimizaciones, segun el backend).
-- GPU recomendadas: NVIDIA DGX Spark fue el hardware usado por el autor para entrenamiento y evaluacion. Para inferencia se puede usar cualquier GPU capaz de ejecutar SDXL (A100, H100, RTX 4090, RTX 3090, etc.).
-- GPU de consumo: si cabe en tarjetas de consumo con suficiente VRAM para SDXL; el LoRA anade unos 456 MB por fichero.
-- Opciones de despliegue: ComfyUI (flujo usado por el autor), diffusers, y en general cualquier backend compatible con SDXL e Illustrious.
-- Latencia y throughput: no disponibles. La model card indica ajustes de muestreo (Euler a, 28 pasos, CFG 4.5, CLIP skip 2, 832x1216) pero no tiempos.
+- VRAM estimada para inferencia: no disponible de forma explicita; al ser un LoRA sobre SDXL, el requisito viene determinado por el checkpoint base waiIllustriousSDXL v17, no por el adaptador (cada archivo pesa 456.491.420 bytes, unos 435 MB).
+- GPU recomendadas: no disponible en la informacion proporcionada; el autor entreno en un NVIDIA DGX Spark.
+- Compatibilidad con GPU de consumo: no confirmada en la model card; depende del modelo base SDXL y del backend utilizado.
+- Opciones de despliegue: ComfyUI (verificado por el autor) y libreria diffusers (declarada en los tags). Otros backends compatibles con SDXL y LoRA (por ejemplo, A1111 o Forge) no se mencionan.
+- Latencia y throughput: no disponibles. La configuracion de muestreo documentada es Euler a, 28 pasos, CFG 4.5, CLIP skip 2 y resolucion 832x1216.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|---|---|
-| MayoiHachikuji-Lora | LoRA de personaje | waiIllustriousSDXL v17 | rango 64 / alpha 32 | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
-| LoRA de personaje SDXL generico | LoRA de personaje | SDXL / Illustrious | variable | no aplica | variable | Hugging Face, Civitai |
-| waiIllustriousSDXL v17 (base) | Checkpoint completo | SDXL | no disponible | no aplica | no disponible en esta ficha | Hugging Face |
+| Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MayoiHachikuji-Lora (este) | LoRA de personaje SDXL | waiIllustriousSDXL v17 (+ AutismMix Pony, MOSS-Image) | 832x1216 en los ejemplos | creativeml-openrail-m | Hugging Face y ModelScope |
+| Alternativas de LoRA de personaje SDXL | LoRA de personaje | SDXL / Illustrious / Pony | no disponible | variable | no disponible |
+| Checkpoint base waiIllustriousSDXL v17 | Modelo completo SDXL | SDXL | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de otros LoRA de personaje comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible.
+No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
 
 ## Limitaciones y advertencias
 
-- Es un derivado no oficial: los derechos del personaje y de la obra original pertenecen a sus titulares; el autor lo declara como fan-made.
-- La licencia creativeml-openrail-m impone restricciones de uso comercial y obligaciones de atribucion; conviene revisar sus terminos antes de usar el modelo en produccion.
-- El modelo base waiIllustriousSDXL v17 no se distribuye en este repositorio; hay que obtenerlo por separado y respetar su propia licencia.
-- Las captions omiten con frecuencia el color de pelo y ojos, por lo que es necesario anadirlos manualmente en el prompt para evitar variaciones no deseadas.
-- La evaluacion es cualitativa y realizada por el propio autor, sin metricas objetivas; la recomendacion de E6 a 0.8 debe validarse en el caso de uso concreto.
-- Riesgo de sobreajuste o artefactos a fuerzas altas (1.0) y de perdida de identidad a fuerzas bajas (0.4), segun la matriz publicada.
-- Solo se documentan prompts en ingles y chino; el rendimiento con otros idiomas no esta verificado.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin historial de uso comunitario que respalde su robustez.
-- No es un modelo de lenguaje: no genera texto, codigo ni razonamiento, y no soporta tool calling ni agentes.
+- Es una obra derivada no oficial: los derechos sobre el personaje pertenecen a sus propietarios originales y el autor lo declara explicitamente como fan-made.
+- La licencia creativeml-openrail-m impone restricciones de uso comercial que deben revisarse antes de cualquier explotacion en produccion; no se detallan en la model card.
+- Riesgo de sobreajuste o de deriva de identidad fuera de la configuracion recomendada: el autor solo valida E6 a 0.8 (y E6 a 1.0 para AutismMix Pony), por lo que otras epocas y fuerzas pueden degradar el parecido.
+- Las leyendas omiten con frecuencia el color de pelo y ojos, de modo que es necesario anadirlos manualmente en el prompt para obtener el aspecto correcto.
+- Los tres linajes (WAI/Illustrious, AutismMix Pony, MOSS-Image) no son intercambiables: mezclar modelos base, prompts o negativos entre ellos produce resultados incorrectos.
+- No hay benchmarks cuantitativos publicados, solo evaluaciones visuales subjetivas.
+- El soporte linguistico declarado se limita a ingles y chino; el comportamiento con prompts en castellano no esta documentado.
+- No es un modelo de lenguaje: no ofrece generacion de texto, razonamiento, codigo ni tool calling.
 
 ## Enlaces
 

@@ -2,99 +2,108 @@
 
 ## Resumen
 
-Valen-Decision-1.5-0.8B-ONNX es la variante en formato ONNX de Valen-Decision-1.5-0.8B, un modelo especializado en toma de decisiones estructuradas sobre entradas multimodales (texto, imagen y vídeo). Lo desarrolla el equipo Valen-Team y parte del modelo base Qwen/Qwen3.5-0.8B, sobre el que se ha realizado un ajuste fino orientado a producir salidas tipadas (predicados con probabilidad, elecciones y puntuaciones) en una sola pasada forward, en lugar de generar texto libre. Resuelve un problema concreto: convertir tareas de clasificación y verificación ("¿este mensaje es una queja?", "¿esta imagen cumple los requisitos?", "¿qué acción ocurre en este vídeo?") en respuestas estructuradas y verificables.
+Valen-Decision-1.5-0.8B-ONNX es la exportación a ONNX Runtime del modelo Valen-Decision-1.5-0.8B, desarrollado por Valen-Team. No es un modelo generativo de propósito general: es un modelo de decisión especializado que responde a preguntas tipadas (predicados booleanos, elecciones, puntuaciones y bounding boxes) sobre entradas multimodales de texto, imagen y fotogramas de vídeo, devolviendo salidas estructuradas con probabilidad asociada. Está construido sobre el modelo base Qwen/Qwen3.5-0.8B, del que hereda la arquitectura de backbone y el codificador visual.
 
-El modelo se distribuye con licencia Apache 2.0, requiere `trust_remote_code=True` por incluir código propio, y está pensado para integrarse mediante SDK de ONNX en aplicaciones Python y JavaScript, tanto en local como a través de una API HTTP gratuita ofrecida por el equipo. Con 0,8B parámetros y un repositorio de 3,4 GB, apunta a despliegues ligeros donde el coste de inferencia y la latencia importan más que la generación de texto abierta.
+La relevancia de esta variante concreta reside en el formato de despliegue: al estar exportada a ONNX, la inferencia se ejecuta sin PyTorch ni Transformers, mediante los SDK oficiales de Valen (Python y JavaScript), lo que permite ejecución en CPU, en GPU NVIDIA vía CUDAExecutionProvider y en navegador mediante WebGPU. El repositorio ofrece cuatro variantes de precisión (fp32, q8-mlp, cuda-fp16 y web-portable) con tamaños de descarga entre 2,01 GB y 3,52 GB.
 
-Es relevante ahora porque propone un patrón distinto al de los LLM conversacionales: un "modelo de decisión" que devuelve probabilidades y etiquetas tipadas directamente, con soporte declarado para dos formatos de API de decisión (SystemOne/Jev y Decisions/OpenAI), lo que facilita su encaje en pipelines de automatización existentes.
+El modelo resuelve un problema acotado pero recurrente en producción: convertir mensajes de cliente, imágenes o vídeo en decisiones verificables y tipadas (por ejemplo, "¿el cliente solicita un cambio de dirección de entrega?") en lugar de texto libre. La licencia es Apache 2.0 y los datos de entrenamiento no son públicos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) derivado de Qwen3.5-0.8B; código propio (`custom-code`) |
-| Parametros totales | 0,8B |
+| Arquitectura | Transformer multimodal (backbone y visión derivados de Qwen3.5-0.8B) con cabezas de decisión y grounding; exportado a grafos ONNX Runtime |
+| Parametros totales | 0,8B (según denominación del modelo; desglose por componente no disponible) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | ONNX q8-mlp (variante de este repo); el proyecto menciona además F32 y Q8_0 en otros formatos (nativo/GGUF) |
+| Tipos de cuantizacion | fp32; q8-mlp (MLP con pesos a 8 bits, resto FP32); cuda-fp16 (backbone y embedding FP16, visión y cabezas FP32); web-portable (backbone mixto FP16/FP32) |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (repositorio de 3,4 GB); existen variantes nativas y GGUF en el proyecto |
+| Formato de pesos | ONNX (grafos backbone, embedding, vision, decision y grounding bajo `onnx/`, con SHA256 en `valen_onnx.json`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo se construye sobre Qwen/Qwen3.5-0.8B, un transformer de 0,8B parámetros, y se ajusta para una tarea de decisión estructurada: dada una entrada (texto, imagen o vídeo) y una lista de preguntas tipadas (por ejemplo, predicados con instrucciones), el modelo emite en una sola pasada forward probabilidades, elecciones y puntuaciones. La model card describe esta salida como "image-text-to-typed-output" y menciona un mecanismo de "shared-state" entre preguntas del mismo lote, aunque no se detalla su implementación interna.
+La arquitectura combina un backbone de lenguaje y un codificador visual heredados de Qwen3.5-0.8B con componentes propios de Valen: un grafo de embedding, un grafo de visión, un grafo de decisión y un grafo de grounding. El grafo de decisión responde preguntas de tipo `predicate`, `choice` y `score`, mientras que el grafo de grounding resuelve preguntas de tipo `bbox`, devolviendo coordenadas `[x1, y1, x2, y2]`, un punto `[x, y]` y una confianza normalizados en el rango 0–1. El modelo se presenta como un sistema de "shared-state" y salida estructurada, orientado a producir decisiones tipadas en lugar de generación de texto abierta.
 
-No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon RLHF o DPO. El equipo publica el dataset Valen-Training-General-100k y el código de entrenamiento en su repositorio de GitHub, lo que permite reproducir o ampliar el ajuste fino. La variante ONNX se distribuye con cuantización q8-mlp y el proyecto advierte que las cuantizaciones GGUF Q4/Q5 no superaron sus controles de calidad, recomendando únicamente F32 y Q8_0 entre las variantes evaluadas.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card indica explícitamente que los datos de entrenamiento de Valen-Decision-1.5 no son públicos. Sí se publica el código de entrenamiento en el repositorio de GitHub del proyecto, lo que permite ajustar el modelo con datos propios. La exportación a ONNX incluye una validación comparativa frente al modelo nativo en FP32 sobre CPU: la variante `fp32` alcanza una concordancia de decisión del 100,00 % con un MAE de probabilidad de 4,5e-05, y `q8-mlp` baja al 98,39 % de concordancia con un MAE de 0,002.
 
 ## Capacidades
 
-- Clasificación de mensajes de cliente y enrutamiento de tickets mediante predicados con probabilidad asociada.
-- Verificación de imágenes contra requisitos declarados (por ejemplo, cribado de imágenes de producto).
-- Identificación de acciones en vídeo y etiquetado automático (con las salvedades de soporte indicadas por el autor).
-- Salida estructurada y tipada en una sola pasada: probabilidades, elecciones y puntuaciones, en lugar de texto libre.
-- Soporte de dos formatos de API de decisión: SystemOne (Jev) y Decisions (OpenAI), compatibles con el mismo modelo.
-- Entrada multimodal texto-imagen (pipeline `image-text-to-text`).
-- Integración mediante SDK de ONNX en Python y JavaScript para aplicaciones offline.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`).
-- Capacidades multilingües: no disponibles en la información proporcionada.
-- No se documentan tool calling, function calling ni modo de razonamiento extendido (thinking) como tales; la interfaz es de decisión estructurada.
+- Clasificación de mensajes de cliente mediante preguntas de tipo `predicate` con probabilidad asociada.
+- Preguntas de tipo `choice` y `score` para selección entre opciones y puntuación de criterios.
+- Verificación de requisitos sobre imágenes (por ejemplo, comprobar si una imagen cumple una condición definida).
+- Localización de objetos en imágenes mediante preguntas `bbox`, con caja, punto y confianza normalizados.
+- Identificación de acciones en vídeo a partir de fotogramas.
+- Salida estructurada y tipada, apta para integrarse en pipelines automatizados.
+- Procesamiento conjunto de texto, imagen y vídeo en una misma solicitud.
+- Ejecución local sin PyTorch ni Transformers, vía ONNX Runtime, con SDK de Python y de JavaScript.
+- Ejecución en navegador mediante WebGPU con la variante `web-portable`.
+- No se documentan capacidades de generación de texto libre, razonamiento multi-paso ni tool calling.
 
 ## Casos de uso
 
-- Enrutamiento de tickets de soporte: el modelo recibe el texto del mensaje y una batería de predicados ("es una queja", "es una solicitud de reembolso", "es una consulta técnica") y devuelve la probabilidad de cada uno, lo que permite dirigir el ticket al equipo adecuado sin generar texto.
-- Cribado de imágenes de producto: se envía la imagen junto con los requisitos del catálogo y el modelo devuelve si cumple cada criterio, útil para moderación previa a publicación en marketplaces.
-- Etiquetado de vídeo: identificación de acciones presentes en un clip para indexación o búsqueda; el autor advierte que el paquete GGUF precompilado 0.1.0 no incluye soporte directo de vídeo, por lo que conviene validar el formato elegido.
-- Automatización de decisiones en aplicaciones JavaScript: mediante el SDK ONNX, el modelo puede ejecutarse en el navegador o en Node para clasificar entradas sin llamadas a servidor.
-- Prototipado rápido vía API gratuita: el equipo ofrece un endpoint HTTP sin clave para probar flujos de decisión antes de desplegar pesos en local.
-- Ajuste fino para dominios propios: al publicarse el código de entrenamiento y el dataset Valen-Training-General-100k, un equipo puede reentrenar el modelo para sus propias categorías de decisión.
-- Servicios C++ en CPU Linux: el proyecto contempla el runtime propio con formato GGUF para servicios locales en CPU, aunque sin soporte de vídeo en la versión precompilada.
+- Clasificación de solicitudes de atención al cliente: el modelo evalúa predicados como "¿el cliente solicita un cambio de dirección?" sobre el texto del mensaje y devuelve una probabilidad, lo que permite enrutar tickets de forma automática sin depender de reglas frágiles.
+- Verificación de imágenes en flujos de devoluciones o seguros: se formula una pregunta de tipo `predicate` con la imagen adjunta para comprobar si cumple un requisito (por ejemplo, si el producto presenta daños), y el resultado se registra como decisión estructurada.
+- Detección y localización de elementos en imágenes: las preguntas `bbox` devuelven caja, punto y confianza normalizados, útiles para anotación asistida, control de calidad visual o recorte automático de regiones.
+- Análisis de acciones en vídeo: a partir de fotogramas, el modelo responde si se observa una acción concreta, lo que sirve para monitorización de procesos, auditoría de grabaciones o etiquetado de clips.
+- Moderación y cumplimiento de contenido visual: comprobación sistemática de si una imagen o fotograma cumple políticas definidas mediante preguntas tipadas con umbral de probabilidad configurable.
+- Despliegue en el navegador para herramientas internas: la variante `web-portable` sobre WebGPU permite clasificar texto e imágenes en el cliente sin enviar datos a un servidor, útil en entornos con requisitos de privacidad.
+- Automatización en CPU de bajo coste: la variante `q8-mlp` (2,76 GB de descarga) permite ejecutar el modelo en servidores sin GPU manteniendo una concordancia del 98,39 % con el modelo nativo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card remite a una página de validación del Cookbook que registra revisiones del modelo, versiones de SDK y runtime, pero no incluye cifras de MMLU, HumanEval, GSM8K ni métricas comparables en el material proporcionado.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible. La model card solo incluye una validación de equivalencia entre las variantes ONNX y el modelo nativo en FP32:
+
+| Variante | Dispositivo | Solicitudes evaluadas | Resultado |
+|---|---|---|---|
+| `fp32` | CPU | 13 recetas del Cookbook (texto, imagen, fotogramas de vídeo), 216 números | Concordancia de decisión 100,00 %; MAE de probabilidad 4,5e-05; máximo 0,0032 |
+| `q8-mlp` | CPU | 13 recetas del Cookbook (texto, imagen, fotogramas de vídeo), 216 números | Concordancia de decisión 98,39 %; MAE de probabilidad 0,002; máximo 0,028 |
+| `cuda-fp16` | NVIDIA H200, CUDA | Texto, imagen y bbox, 44 números | Concordancia de decisión 100,00 %; MAE de probabilidad 5,9e-05; máximo 0,00032; caja máximo 0,0002 |
+| `web-portable` | CPU | Texto, imagen y bbox, 44 números | Concordancia de decisión 100,00 %; MAE de probabilidad 0,00019; máximo 0,001; caja máximo 0,0002 |
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explícita. Con 0,8B parámetros, la variante ONNX q8-mlp ocupa aproximadamente 3,4 GB en disco; el autor advierte que el tamaño de fichero no equivale al requisito de RAM.
-- GPU recomendadas: el ejemplo de la model card usa una GPU NVIDIA con CUDA y `attn_implementation="sdpa"`; no se especifican modelos concretos (A100, H100, RTX 4090, etc.).
-- GPU de consumo: no se confirma compatibilidad explícita; por tamaño, un modelo de 0,8B es candidato a ejecutarse en GPU de consumo, pero no hay validación publicada en la información disponible.
-- Opciones de despliegue: ONNX Runtime (SDK Python/JavaScript), Transformers con `trust_remote_code=True`, runtime propio de Valen con GGUF en C++ Linux CPU, y backends SGLang/vLLM mencionados para GPU. No se reclama soporte en llama.cpp u Ollama oficiales sin modificar.
-- Latencia y throughput: no disponibles; el autor indica explícitamente que no promete rendimiento no medido.
+- VRAM estimada: no disponible de forma explícita; el tamaño de descarga de cada variante orienta el consumo: `fp32` 3,52 GB, `q8-mlp` 2,76 GB, `cuda-fp16` 2,01 GB, `web-portable` 2,46 GB.
+- GPU recomendadas: NVIDIA con soporte de CUDAExecutionProvider; la validación de `cuda-fp16` se realizó en una NVIDIA H200. Para GPU de consumo no se publican requisitos específicos.
+- Ejecución en CPU: soportada de forma nativa con las variantes `fp32` y `q8-mlp`.
+- Ejecución en navegador: variante `web-portable` sobre WebGPU, con los ficheros de runtime de `onnxruntime-web` servidos bajo `/ort/`.
+- Opciones de despliegue: ONNX Runtime mediante el SDK de Python (`valen-sdk[onnx]==0.5.1`) o el SDK de JavaScript (`@valen-team/sdk@0.4.0`, con `onnxruntime-node@1.30.0`). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Valen-Decision-1.5-0.8B-ONNX | 0,8B | no disponible | Decisión estructurada multimodal (texto/imagen/vídeo) | Apache 2.0 | Hugging Face, API gratuita, GitHub |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | LLM multimodal generalista | no disponible en la información | Hugging Face |
-| Alternativas de clasificación multimodal de 1B o menos | no disponible | no disponible | Clasificación/verificación | no disponible | no disponible |
+No se dispone de información sobre modelos comparables de la misma categoría (modelos de decisión estructurada multimodales) en la documentación proporcionada. Como referencia de linaje, el modelo base es Qwen/Qwen3.5-0.8B, pero no se ofrecen datos de rendimiento comparativo frente a él ni frente a alternativas.
 
-No se dispone de datos de rendimiento comparativo con modelos de la misma categoría en la información proporcionada.
+| Modelo | Parámetros | Contexto | Licencia | Formato | Datos comparativos |
+|---|---|---|---|---|---|
+| Valen-Decision-1.5-0.8B-ONNX | 0,8B | no disponible | Apache 2.0 | ONNX | Validación interna de equivalencia (ver tabla anterior) |
+| Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo está diseñado para decisión estructurada, no para generación de texto abierto; usarlo como chatbot general no es su propósito.
-- Las cuantizaciones GGUF Q4 y Q5 no superaron los controles de calidad del autor; solo se recomiendan F32 y Q8_0 entre las variantes cualificadas.
-- El paquete GGUF precompilado 0.1.0 no compila soporte directo de vídeo; las pruebas históricas de vídeo con compilación desde fuente no cualifican el binario precompilado.
-- No se reclama soporte en llama.cpp u Ollama oficiales sin modificar.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; conviene revisar el repositorio antes de desplegar en producción.
-- No se documentan sesgos conocidos, idiomas soportados ni tasas de alucinación; al devolver probabilidades, la calibración de estas debería validarse en el dominio de uso.
-- La licencia Apache 2.0 permite uso comercial, pero las condiciones de la API gratuita y del runtime propio deben consultarse por separado.
-- El modelo tiene 0 descargas y 0 likes en el momento de la ficha, por lo que la validación comunitaria es prácticamente inexistente.
+- Modelo especializado en decisión y salida estructurada; no está diseñado para generación de texto libre ni para razonamiento conversacional abierto.
+- Los datos de entrenamiento no son públicos, por lo que no es posible auditar la composición del dataset ni los sesgos potenciales.
+- No se documentan los idiomas soportados; la cobertura multilingüe es desconocida.
+- La longitud de contexto no está especificada, lo que dificulta planificar entradas largas.
+- La validación publicada se basa en conjuntos reducidos (13 recetas del Cookbook y 44 números en algunos casos), insuficiente para garantizar robustez en dominios muy distintos.
+- La variante `q8-mlp` reduce la concordancia de decisión al 98,39 % frente al modelo nativo, con un error máximo de probabilidad de 0,028; conviene umbralizar con margen en producción.
+- La ejecución en navegador depende de una versión de desarrollo de `onnxruntime-web` (1.31.0-dev), lo que implica riesgo de inestabilidad de API.
+- Aunque la licencia es Apache 2.0, el uso comercial debe verificar las condiciones del modelo base Qwen3.5-0.8B y de los componentes derivados.
+- No se documentan mecanismos de calibración de probabilidades; las probabilidades devueltas deben validarse empíricamente antes de usarse como umbrales críticos.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Valen-Team/Valen-Decision-1.5-0.8B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Valen-Team/Valen-Decision-1.5-0.8B-ONNX
+- Modelo nativo (no ONNX): https://huggingface.co/Valen-Team/Valen-Decision-1.5-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Repositorio GitHub: https://github.com/Valen-Team/Valen
-- Dataset de entrenamiento: https://huggingface.co/datasets/Valen-Team/Valen-Training-General-100k
-- Demo y API gratuita: https://valen-team.github.io/
+- API gratuita y demo web: https://valen-team.github.io/
+- Playground Space: https://huggingface.co/spaces/Valen-Team/Valen-API
+- Código de entrenamiento: https://github.com/Valen-Team/Valen
+- SDK de Python: https://github.com/valen-team/valen-sdk-python
+- SDK de JavaScript: https://github.com/valen-team/valen-sdk-js
+- Ejemplo de navegador con Vite: https://github.com/valen-team/valen-sdk-js/tree/main/examples/browser
+- Guía ONNX: https://valen-team.github.io/docs/valen/onnx/
+- Preguntas bbox: https://valen-team.github.io/docs/valen/onnx/#bbox-questions
 - Cookbook: https://valen-team.github.io/cookbook/
-- Documentación de la API: https://valen-team.github.io/docs/valen/api/
-- Guía de inicio rápido: https://valen-team.github.io/docs/valen/quickstart/
-- Guía de elección de versión: https://valen-team.github.io/docs/valen/choosing/
-- Validación: https://valen-team.github.io/cookbook/validation/
-- Demo en vídeo: https://raw.githubusercontent.com/Valen-Team/Valen/main/assets/demos/valen-decision-1.5-demo.mp4
-- Formato SystemOne (Jev): https://docs.typesafe.ai/api/system-one
-- Formato Decisions (OpenAI): https://developers.openai.com/api/docs/guides/decisions
+- Inicio rápido de API: https://valen-team.github.io/cookbook/api-quickstart/
+- Logotipo del proyecto: https://raw.githubusercontent.com/Valen-Team/Valen/main/assets/branding/valen-mark-white.png

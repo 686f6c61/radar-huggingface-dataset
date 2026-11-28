@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "Sinadavinc80/cogvideox-2b-img2vid",
+  "slug": "sinadavinc80-cogvideox-2b-img2vid",
+  "author": "Sinadavinc80",
+  "url": "https://huggingface.co/Sinadavinc80/cogvideox-2b-img2vid",
+  "created_at": "2026-11-28T02:02:54.000Z",
+  "updated_at": "2026-11-28T02:02:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "cogvideox",
+    "video-generation",
+    "image-to-video",
+    "en",
+    "license:apache-2.0",
+    "diffusers:CogVideoXPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1693906752,
+  "parameters_human": "1.69B",
+  "storage_bytes": 13344556734,
+  "storage_human": "13.3 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

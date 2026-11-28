@@ -19,7 +19,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 190,
+  "downloads_30d": 196,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",
@@ -39,31 +39,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/?gl=FR&hl=fr",
-      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/",
-      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
-    },
-    {
-      "title": "YouTube Music",
-      "url": "https://music.youtube.com/",
-      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
-    },
-    {
-      "title": "YouTube - Google Accounts",
-      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
-      "snippet": "Share your videos with friends, family, and the world."
-    },
-    {
-      "title": "YouTube",
-      "url": "https://www.youtube.com/feed",
-      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
-    }
-  ]
+  "sources": []
 }

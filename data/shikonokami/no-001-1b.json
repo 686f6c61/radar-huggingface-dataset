@@ -1,0 +1,47 @@
+{
+  "schema": 2,
+  "id": "ShikoNoKami/No.001-1B",
+  "slug": "shikonokami-no-001-1b",
+  "author": "ShikoNoKami",
+  "url": "https://huggingface.co/ShikoNoKami/No.001-1B",
+  "created_at": "2026-11-27T21:20:54.000Z",
+  "updated_at": "2026-11-27T22:30:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1336309760,
+  "parameters_human": "1.34B",
+  "storage_bytes": 11362601184,
+  "storage_human": "11.4 GB",
+  "context_length": 2048,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

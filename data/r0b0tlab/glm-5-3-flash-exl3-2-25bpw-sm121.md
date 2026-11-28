@@ -2,109 +2,108 @@
 
 ## Resumen
 
-r0b0tlab/GLM-5.3-Flash-EXL3-2.25bpw-sm121 es una cuantización en formato EXL3 (ExLlamaV3, almacenamiento trellis) del modelo zai-org/GLM-5.3-Flash, un transformer de mezcla de expertos (MoE) que el autor describe como de 320 B de parámetros totales y unos 18 B activos. La publica el usuario r0b0tlab y está orientada a ejecutarse en una única NVIDIA GB10 (DGX Spark, arquitectura sm121) mediante un runtime propio de vLLM con plugin EXL3.
+GLM-5.3-Flash-EXL3-2.25bpw-sm121 es una cuantizacion EXL3 (ExLlamaV3 trellis) del modelo MoE zai-org/GLM-5.3-Flash, publicada por r0b0tlab. El modelo original es un Mixture of Experts de 320.000 millones de parametros totales con aproximadamente 18.000 millones activos por token; esta version empaqueta los pesos en formato EXL3 con una media de ~2,25 bits por peso (codebook `mul1`, tiles mixtos K3/K4, escalas de salida activadas y cabeza de 6 bits), reduciendo el artefacto a 98,5 GB repartidos en 31 shards de safetensors.
 
-El problema que resuelve es de despliegue: comprimir un MoE grande a ~2,25 bits por peso (~92 GB de pesos, 31 shards de safetensors) para que quepa en la memoria unificada de un equipo con GPU GB10 sin recurrir a clústeres multi-GPU. La cuantización usa codebook `mul1`, tiles mixtos K3/K4, escalas de salida activadas y cabeza de 6 bits, con calibración sobre un corpus mixto y selección tap-K3.
+La ficha de Hugging Face reporta 49.171.779.678 parametros reales en los safetensors, un dato que no coincide con los 320B totales que declara la model card del autor; conviene tratar ambas cifras con cautela y verificar el manifiesto `quantization_config.json` antes de dimensionar el despliegue. El modelo esta pensado para servir en una unica DGX Spark (GB10, arquitectura SM121) con ExLlamaV3/TabbyAPI, y el autor documenta una prueba de recuperacion needle-in-a-haystack con 259.993 tokens reales de prompt sobre una ventana de 262.144 tokens, con KV en FP16 y batch 1.
 
-Su interés actual reside en el binomio formato y hardware: EXL3 permite precisión muy baja con decodificación especulativa DFlash2, y el autor publica medidas de throughput en esa configuración. Es un artefacto muy reciente, con 0 descargas y 0 likes, y el recuento de parámetros de los safetensors (49,2 B) no coincide con el del modelo base declarado (320 B), discrepancia que conviene verificar antes de usarlo en producción.
+Su relevancia actual radica en que demuestra que un MoE de gran tamano puede servirse con contexto de 256K en hardware de escritorio de gama alta para IA (GB10), combinando cuantizacion agresiva, decodificacion especulativa con un draft DFlash2 y un runtime nativo ARM64 CUDA 13. La licencia es MIT, lo que facilita el uso comercial, aunque las capacidades verificadas son limitadas: un solo flujo, TP=1 y sin validacion de concurrencia superior a 1 en el perfil de 256K.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE) según el modelo base zai-org/GLM-5.3-Flash; pesos almacenados en formato EXL3 (trellis) |
-| Parametros totales | 49.171.779.678 (~49,2 B) según los safetensors publicados; la model card atribuye al modelo base 320 B totales |
-| Parametros activos | ~18 B (dato declarado para el modelo base); no disponible para esta cuantización |
-| Longitud de contexto | no disponible (la configuración de servicio de ejemplo usa `--max-model-len 32768`) |
-| Tipos de cuantizacion | EXL3 (ExLlamaV3, trellis) a ~2,25 bpw de media, codebook `mul1`, tiles mixtos K3/K4, escalas de salida activadas, cabeza de 6 bits |
-| Idiomas soportados | inglés (en) y chino (zh) |
+| Arquitectura | MoE (Mixture of Experts) transformer, formato EXL3 (ExLlamaV3 trellis) |
+| Parametros totales | 320B segun model card; 49.171.779.678 en safetensors (dato no coincidente) |
+| Parametros activos | ~18B (segun model card) |
+| Longitud de contexto | 262.144 tokens verificados en ExLlamaV3; 32.768 tokens en perfil vLLM publicado |
+| Tipos de cuantizacion | EXL3 ~2,25 bpw media, codebook `mul1`, tiles mixtos K3/K4, escalas de salida, cabeza de 6 bits |
+| Idiomas soportados | en, zh |
 | Licencia | MIT |
-| Formato de pesos | safetensors (31 shards) más `quantization_config.json` y ficheros de tokenizador y plantilla; formato EXL3 compatible con exllamav3 v1.5.0 |
+| Formato de pesos | safetensors (31 shards) + `quantization_config.json` + tokenizer |
 
 ## Arquitectura y entrenamiento
 
-No se publica información sobre el entrenamiento de esta pieza: es una cuantización, no un modelo entrenado desde cero. El modelo base es zai-org/GLM-5.3-Flash, del que la model card solo indica que se trata de un MoE de 320 B totales y ~18 B activos, sin detallar composición del dataset, número de tokens, uso de RLHF/DPO ni innovaciones de atención. Los safetensors del repositorio cuantizado declaran 49.171.779.678 parámetros, cifra que no cuadra con los 320 B del modelo base y que puede deberse a que el recuento excluya parte de los pesos de expertos o a un error en la propia model card; no hay información que permita resolver la discrepancia.
+El modelo base es un transformer con arquitectura Mixture of Experts: 320B parametros totales y aproximadamente 18B activos por token, lo que permite un coste de computo por token muy inferior al de un denso equivalente. Esta version no reentrena ni modifica los pesos mas alla de la cuantizacion: r0b0tlab aplica cuantizacion EXL3 con calibracion sobre un corpus mixto y seleccion tap-K3, generando tiles mixtos K3/K4 con escalas de salida y una cabeza de 6 bits. El resultado son 98,5 GB (91,8 GiB) en 31 shards.
 
-La innovación técnica está en la cadena de cuantización y en el runtime. El formato EXL3 almacena los pesos en trellis con un codebook `mul1`, combinando tiles de 3 y 4 bits y una cabeza de 6 bits para promediar ~2,25 bpw. La conversión se hizo con el contrato de conversor del runtime `vllm-exl3-sm121` (base vLLM v0.30.0rc1 más plugin EXL3, parches anclados y kernels EXL3 vendorizados) y calibración sobre corpus mixto con selección tap-K3; el manifiesto completo de módulos y tensores está en `quantization_config.json`. El autor afirma que los pesos no se modifican más allá de la cuantización y remite a documentos de "losslessness" y telemetría de aceptación en el repositorio del runtime, sin que se aporten en la información disponible resultados independientes de calidad.
+La innovacion practica del paquete es el ecosistema de serving: un runtime ExLlamaV3 + TabbyAPI nativo ARM64 CUDA 13 para GB10/SM121 y un draft de decodificacion especulativa DFlash2 (r0b0tlab/GLM-5.3-Flash-DFlash2-EXL3-3.00bpw) usado con K=5. El autor documenta ademas un perfil alternativo con vLLM v0.30.0rc1 mas plugin EXL3, limitado a 32.768 tokens. No se dispone de informacion sobre el dataset de entrenamiento del modelo base, el numero de tokens vistos ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto y razonamiento: el modelo base es de tipo instructivo y el runtime declara un `--reasoning-parser glm47`, lo que implica soporte de modo de razonamiento con separación de la traza.
-- Generación de código: se reportan medidas de throughput específicas para cargas de código (43,5 tok/s en un solo flujo).
-- Salida estructurada: es la carga más rápida medida (52,5 tok/s), lo que apunta a uso intensivo en JSON, esquemas y formatos restringidos.
-- Mezcla de expertos con enrutado por token: arquitectura MoE declarada en el modelo base.
-- Decodificación especulativa: soporte de DFlash2 con un modelo borrador externo (`incoai/GLM-5.3-Flash-DFlash2`) y `num_speculative_tokens: 7`.
-- Multilingüismo limitado: solo inglés y chino están declarados en las etiquetas de idioma.
-- Servicio concurrente: soporta peticiones batched con `--max-num-seqs 16` y tamaños de captura de CUDA Graph configurables.
-- No se declara soporte de visión, audio, tool calling ni capacidades de agente en la información disponible.
+- Generacion de texto y conversacion multi-turno en ingles y chino.
+- Razonamiento y matematicas: el kit Q200v2 reporta GSM8K 98,75% y hard_reasoning 95,0% sobre el runtime ExLlamaV3.
+- Generacion de codigo: HumanEval 97,5% en el mismo kit.
+- Seguimiento de instrucciones: IFEval 77,5%.
+- Tool calling / function calling: BFCL-hard20 con 6/20 aciertos en ExLlamaV3 y 10/20 en el perfil vLLM de 32K; el rendimiento en llamadas a herramientas es claramente inferior al resto de capacidades.
+- Contexto largo: recuperacion exacta verificada con 259.993 tokens de prompt sobre 262.144 de ventana.
+- Vision: verificada mediante una prueba de imagen Q&A; en DFlash2 las peticiones de imagen se redactan como texto.
+- Decodificacion especulativa con draft DFlash2 (K=5) para acelerar la generacion.
+- No se documentan capacidades de audio ni modo thinking explicito.
 
 ## Casos de uso
 
-- Inferencia local en un único equipo GB10 / DGX Spark: el formato EXL3 a ~2,25 bpw reduce los pesos a ~92 GB, lo que permite servir un MoE grande en la memoria unificada de esta GPU sin repartirlo entre varios nodos.
-- Generación de JSON y salidas con esquema fijo: es la carga con mejor rendimiento medido (52,5 tok/s en un solo flujo), adecuada para extracción de datos, rellenado de formularios y APIs que exigen respuestas parseables.
-- Asistencia de código en local: con 43,5 tok/s en tareas de código, sirve para autocompletado, generación de funciones y revisión de parches dentro de un entorno de desarrollo sin enviar el código a terceros.
-- Razonamiento con traza explícita: el parser `glm47` del runtime permite separar el razonamiento de la respuesta final, útil para depuración y para pipelines que auditan la cadena de decisión.
-- Procesamiento por lotes en inglés y chino: con concurrencia 16 el rendimiento agregado se mantiene en torno a 49,8 tok/s, lo que hace viable clasificación, resumen y traducción en bloque entre esos dos idiomas.
-- Pruebas de cuantización extrema: el artefacto sirve como banco de pruebas para medir la pérdida de calidad de EXL3 a 2,25 bpw frente al modelo base en BF16.
-- Servicio interno con contexto medio: la configuración de ejemplo fija 32.768 tokens de contexto, suficiente para conversaciones multi-turno y documentos de tamaño moderado en atención al cliente interna o análisis documental.
+- Analisis de repositorios y documentacion extensa: con 262.144 tokens de contexto verificados, el modelo puede ingerir un arbol de codigo completo o un corpus de documentacion y responder preguntas de recuperacion exacta, como demuestra la prueba needle-in-a-haystack.
+- Asistente de codigo en local sobre GB10: HumanEval 97,5% y soporte de tool calling permiten integrarlo en un flujo de edicion y ejecucion de pruebas en una estacion de trabajo unica, sin depender de la nube.
+- Generacion de codigo en pipelines de CI/CD: el formato EXL3 y el runtime TabbyAPI ofrecen una API compatible con OpenAI para tareas de revision, generacion de tests y parcheo, siempre con concurrencia 1 validada.
+- Atencion al cliente multilingue (en/zh): conversaciones multi-turno con contexto largo para historiales extensos, limitado a los dos idiomas soportados.
+- Razonamiento matematico y verificacion de calculos: GSM8K 98,75% en el kit Q200v2 lo hace adecuado para tutoria o validacion de problemas paso a paso.
+- Procesamiento de contratos o expedientes largos: la ventana de 256K permite resumir y extraer clausulas de documentos que superan ampliamente los 100K tokens en una sola pasada.
+- Prototipado de agentes con decodificacion especulativa: el draft DFlash2 K=5 acelera la generacion en flujos de varios pasos, aunque la fiabilidad de tool calling (6/20 en BFCL-hard20) limita agentes que dependan intensivamente de funciones.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K ni equivalentes) en la información disponible. Las únicas cifras aportadas son medidas de throughput realizadas por el autor en una GB10 única, TP=1, temperatura 0 y DFlash2 con K=7 (2026-09-20):
+Resultados del kit Q200v2 sobre el runtime ExLlamaV3 (2026-09-27), ejecucion serial, effort=low, sin errores de transporte:
 
-| Escenario (un solo flujo, mediana de 5, límite 2048) | tok/s |
-|---|---:|
-| Salida estructurada | 52,5 |
-| Código | 43,5 |
-| Prosa abierta | 18,6 |
+| Benchmark | Resultado |
+|---|---|
+| Text-180 (global) | 168/180 (93,33%) |
+| GSM8K | 98,75% |
+| HumanEval | 97,5% |
+| IFEval | 77,5% |
+| hard_reasoning | 95,0% |
+| BFCL-hard20 | 6/20 |
+| Full 200 | 174/200 (87,0%) |
 
-| Concurrencia (salida estructurada, agregado) | tok/s |
-|---|---:|
-| ×1 | 50,4 |
-| ×4 | 51,4 |
-| ×16 | 49,8 |
+En el perfil vLLM de 32.768 tokens (2026-09-21) el mismo kit arroja 170/180 en texto y 10/20 en BFCL; el autor advierte que los resultados de ambos motores son independientes y no transferibles.
 
-Estas cifras corresponden a la configuración con decodificación especulativa DFlash2 y no a decodificación normal; no se indica el rendimiento sin el modelo borrador ni se acompaña de métricas de aceptación en esta ficha.
+Rendimiento de decodificacion en vLLM con DFlash2 K=5 sobre una GB10, un solo flujo: 50,2 tok/s en salida estructurada, 43,4 tok/s en codigo y 19,5 tok/s en prosa.
 
 ## Requisitos de hardware
 
-- VRAM: los pesos ocupan ~92 GB (repositorio de 98,5 GB), a los que hay que sumar caché KV y activaciones; la receta de servicio usa `--gpu-memory-utilization 0.85`.
-- GPU objetivo: una única NVIDIA GB10 (DGX Spark), arquitectura sm121, con tensor parallelism 1. El artefacto está etiquetado explícitamente para sm121 y GB10.
-- GPU de consumo: no cabe. Una RTX 4090 (24 GB) o una RTX 5090 (32 GB) quedan muy lejos de los ~92 GB de pesos.
-- Otras GPU de centro de datos: no se documenta su funcionamiento en A100, H100 u otras arquitecturas distintas de sm121; no disponible.
-- Despliegue: vLLM v0.30.0rc1 con el plugin EXL3 del runtime `r0b0tlab/vllm-exl3-sm121` y `--trust_remote_code`. No hay soporte declarado para llama.cpp, Ollama ni TGI, ya que el formato trellis de EXL3 no es un GGUF estándar.
-- Parámetros de servicio recomendados: `--gpu-memory-utilization 0.85 --max-model-len 32768 --max-num-seqs 16 --reasoning-parser glm47 --no-async-scheduling --max-num-batched-tokens 2048`.
-- Decodificación especulativa: `--speculative-config '{"method":"dflash","model":"<dflash2-exl3-local>","num_speculative_tokens":7}'` junto con `--compilation-config` con tamaños de captura de CUDA Graph de 1 a 128.
-- Throughput esperado: 52,5 tok/s en salida estructurada y 18,6 tok/s en prosa abierta con un solo flujo; en torno a 50 tok/s agregados hasta concurrencia 16.
+- VRAM: el pack ocupa 98,5 GB (91,8 GiB) en disco; en inferencia necesita ademas KV cache. Con KV en FP16 y 262.144 tokens el autor exige un suelo de 6.144 MiB de memoria de host como guarda.
+- GPU recomendadas: NVIDIA GB10 (DGX Spark, SM121) es el objetivo validado; no se documenta soporte para A100, H100 o RTX 4090.
+- Consumer GPU: no cabe en GPU de consumo convencionales por el tamano del artefacto; el escenario previsto es una unica DGX Spark.
+- Despliegue: ExLlamaV3 + TabbyAPI mediante imagen ARM64 `ghcr.io/r0b0tlab/glm53-flash-exl3-exllamav3-gb10:b25c467`; alternativa vLLM v0.30.0rc1 con plugin EXL3 para el perfil de 32K. No se menciona soporte de llama.cpp u Ollama.
+- Latencia y throughput: 50,2 / 43,4 / 19,5 tok/s (estructurado / codigo / prosa) en vLLM single-stream con DFlash2 K=5; no se publica throughput a 256K ni con concurrencia mayor que 1.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Formato | Contexto | Licencia | Hardware objetivo |
-|---|---|---|---|---|---|
-| r0b0tlab/GLM-5.3-Flash-EXL3-2.25bpw-sm121 | 49,2 B declarados en safetensors (320 B / ~18 B activos según la model card del base) | EXL3 ~2,25 bpw, safetensors | no disponible (32.768 en la receta) | MIT | 1× GB10 / sm121 |
-| zai-org/GLM-5.3-Flash (base sin cuantizar) | 320 B totales / ~18 B activos declarados | safetensors (BF16, presumiblemente) | no disponible | MIT | no disponible |
-| incoai/GLM-5.3-Flash-DFlash2 (borrador especulativo) | no disponible | no disponible (se convierte a EXL3 en local) | no disponible | CC-BY-NC-ND | junto al modelo principal |
+| Modelo | Parametros | Contexto | Formato / licencia | Disponibilidad |
+|---|---|---|---|---|
+| GLM-5.3-Flash-EXL3-2.25bpw-sm121 | 320B totales / ~18B activos (segun card) | 262.144 verificado (ExLlamaV3); 32.768 (vLLM) | EXL3, MIT | Hugging Face, 184 descargas |
+| zai-org/GLM-5.3-Flash (base) | 320B totales / ~18B activos | no disponible | safetensors, MIT | Hugging Face |
+| r0b0tlab/GLM-5.3-Flash-DFlash2-EXL3-3.00bpw | draft de decodificacion especulativa | no disponible | EXL3, licencia no indicada | Hugging Face |
 
-No se dispone de datos suficientes para comparar con alternativas de otros fabricantes del mismo tamaño o categoría (parámetros, contexto, benchmarks y licencia), por lo que esa comparación se marca como no disponible.
+No se dispone de datos de benchmarks del modelo base ni de otros modelos comparables en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de parámetros sin resolver: los safetensors declaran 49,2 B y la model card del modelo base habla de 320 B totales; conviene verificar la integridad del artefacto antes de confiar en él.
-- Idiomas: solo inglés y chino están declarados. No hay soporte declarado de castellano ni de otras lenguas, con el riesgo de degradación que ello implica.
-- Riesgo de degradación por cuantización: 2,25 bpw es una precisión muy agresiva. El autor invoca pérdida nula ("losslessness") y telemetría de aceptación en el repositorio del runtime, pero no se aportan en esta información evaluaciones de calidad (perplejidad, MMLU, HumanEval) que lo respalden.
-- Riesgo de alucinación: no se han publicado evaluaciones de fiabilidad ni tasas de alucinación para esta cuantización concreta.
-- Licencia del componente especulativo: el modelo borrador DFlash2 es CC-BY-NC-ND y no se redistribuye en el repositorio. Su uso añade una restricción no comercial que no está cubierta por la licencia MIT del modelo cuantizado.
-- Dependencia de hardware muy concreta: el artefacto está etiquetado para sm121/GB10 y no se documenta su funcionamiento en otras arquitecturas de GPU.
-- Dependencia de software: requiere `--trust_remote_code`, un runtime específico (vLLM v0.30.0rc1 con plugin EXL3) y kernels vendorizados; no es portable a stacks estándar sin trabajo adicional.
-- Contexto de servicio limitado a 32.768 tokens en la receta publicada; se desconoce la ventana nativa del modelo base.
-- Artefacto sin validación comunitaria: 0 descargas y 0 likes, actualizado por última vez el 20 de septiembre de 2026, sin pipeline declarado.
-- Los datos de rendimiento provienen exclusivamente del autor y corresponden a una configuración con decodificación especulativa activada.
+- Discrepancia de parametros: la model card declara 320B totales y ~18B activos, pero los safetensors suman 49.171.779.678 parametros; verificar el manifiesto antes de planificar recursos.
+- Tool calling debil: 6/20 en BFCL-hard20 (ExLlamaV3) y 10/20 (vLLM), insuficiente para agentes que dependan intensivamente de funciones.
+- Concurrencia no validada: el perfil de 256K solo se ha probado con batch 1 y TP=1; no se ha ejercitado C>=2 en tool calls ni la estabilidad en ejecuciones largas.
+- Throughput a 256K no medido; las cifras de tok/s corresponden al perfil vLLM de 32K.
+- Idiomas limitados a ingles y chino; no hay validacion en castellano.
+- Vision verificada solo mediante una prueba de humo de Q&A; en DFlash2 las peticiones de imagen se redactan como texto.
+- Riesgo de alucinacion no cuantificado; IFEval del 77,5% sugiere margen de mejora en seguimiento estricto de instrucciones.
+- Sesgos: no se documentan evaluaciones de sesgo o toxicidad.
+- Licencia MIT permite uso comercial, pero el autor no ofrece garantias sobre los perfiles no cualificados (concurrencia, throughput a 256K, estabilidad prolongada).
+- Dependencia de un runtime especifico (ExLlamaV3/TabbyAPI ARM64 o vLLM con plugin EXL3); los resultados no son transferibles entre motores.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/r0b0tlab/GLM-5.3-Flash-EXL3-2.25bpw-sm121
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Runtime de servicio (vLLM + plugin EXL3): https://github.com/r0b0tlab/vllm-exl3-sm121
-- Modelo borrador de decodificación especulativa: https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2
-- Formato EXL3 / exllamav3 v1.5.0 (MIT): no disponible en la información proporcionada
-- La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo; los resultados obtenidos no guardan relación con él.
+- Draft DFlash2: https://huggingface.co/r0b0tlab/GLM-5.3-Flash-DFlash2-EXL3-3.00bpw
+- Runtime ExLlamaV3/TabbyAPI GB10: https://github.com/r0b0tlab/glm53-flash-exl3-exllamav3-gb10
+- Runtime vLLM SM121: https://github.com/r0b0tlab/glm53-flash-exl3-dflash2-sm121
+- Imagen Docker ARM64: ghcr.io/r0b0tlab/glm53-flash-exl3-exllamav3-gb10:b25c467
+- Evidencias Q200v2: `evidence/glm53-exl3-q200v2-20260927/` en el repositorio del runtime ExLlamaV3

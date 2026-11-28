@@ -2,86 +2,101 @@
 
 ## Resumen
 
-LiliPixel-V1-190M es un modelo de difusión texto-a-imagen desarrollado por Pinkstack, especializado en la generación de pixel art y sprites a resoluciones nativas de 16x16, 32x32 y 64x64 píxeles. Se trata de un Diffusion Transformer (DiT) de un solo flujo entrenado desde cero, con 190,58 millones de parámetros totales, que emplea flow matching rectificado como objetivo de entrenamiento. Su propuesta diferencial frente a modelos de imagen generalistas es la generación nativa en resoluciones de pixel art, sin necesidad de downscaling posterior, y el soporte de canal alfa (RGBA) en las resoluciones de 16 y 32 píxeles.
+LiliPixel-V1-190M es un modelo de difusion texto-a-imagen desarrollado por Pinkstack, disenado especificamente para generar pixel art y sprites a resoluciones nativas de 16x16, 32x32 y 64x64 pixeles. Se trata de un Diffusion Transformer (DiT) de un solo flujo entrenado desde cero, con 190.580.500 parametros totales, que emplea flow matching rectificado como objetivo de entrenamiento en lugar de la difusion DDPM clasica. El modelo se distribuye bajo licencia OpenMDW-1.1 y esta implementado como pipeline personalizado de `diffusers` (`PixelArtDiTPipeline`).
 
-El modelo utiliza un codificador de texto congelado, MongoDB/voyage-4-nano (~346M parámetros, no incluido en los pesos y descargado automáticamente en el primer uso), que proyecta las características textuales al ancho del transformer. La arquitectura comparte un único transformer entre las tres resoluciones, con capas de patch-in/patch-out separadas: patch size 1 para 16x16 y 32x32, y patch size 2 para 64x64. Con inferencia en BF16 sin pérdida requiere aproximadamente 1 GB de memoria, lo que lo hace muy ligero para despliegue.
+La relevancia de este modelo radica en su especializacion: frente a modelos generativos de proposito general que producen pixel art como un estilo aproximado a resoluciones altas, LiliPixel genera directamente a la resolucion nativa del pixel art, lo que garantiza que cada pixel sea significativo y no un artefacto de reescalado. Esto lo hace especialmente util para pipelines de desarrollo de videojuegos indie, generacion de assets y prototipado rapido de sprites.
 
-Es relevante ahora porque cubre un nicho concreto —la generación de assets de pixel art para videojuegos y prototipado— con un modelo abierto de pequeño tamaño, licencia OpenMDW-1.1 y pesos compatibles con Hugging Face y diffusers, además de una integración específica para ComfyUI mediante un nodo personalizado.
+El modelo utiliza un encoder de texto congelado (MongoDB/voyage-4-nano, ~346M parametros, no incluido en los pesos) y requiere aproximadamente 1 GB de memoria en inferencia BF16 sin perdida. Su tamano compacto permite ejecutarlo en GPU de consumo, lo que reduce la barrera de entrada para estudios pequenos y desarrolladores individuales.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
 | Arquitectura | Diffusion Transformer (DiT) de un solo flujo, flow matching rectificado |
-| Parámetros totales | 190.580.500 (191M) |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | 96 tokens de texto (prompts más largos se truncan) |
-| Tipos de cuantización | BF16 (inferencia sin pérdida); no se documentan otras cuantizaciones |
-| Idiomas soportados | en (inglés) |
-| Licencia | openmdw-1.1 |
-| Formato de pesos | safetensors (compatible con diffusers; pesos EMA) |
+| Parametros totales | 190.580.500 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 96 tokens de texto (prompts mas largos se truncan) |
+| Tipos de cuantizacion | BF16 (recomendado); no se documentan otras cuantizaciones oficiales |
+| Idiomas soportados | Ingles (en) |
+| Licencia | OpenMDW-1.1 |
+| Formato de pesos | safetensors (compatible con Hugging Face, pesos EMA) |
+| Capas / ancho / cabezas | 24 / 768 / 16 |
+| Tamano de parche | 1 para 16x16 y 32x32; 2 para 64x64 (transformer compartido, capas patch-in/out separadas) |
+| Canales de pixel | RGBA en 16x16 y 32x32; RGB en 64x64 |
+| Rango de valores | [-1, 1] |
+| Objetivo de entrenamiento | Rectified flow matching, timesteps logit-normal, objetivo de velocidad |
+| Sampler | Euler, 30/50 pasos, CFG 3.0 por defecto |
+| Encoder de texto | MongoDB/voyage-4-nano congelado (~346M parametros, externo) |
+| Tamano del repo | 0.8 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de difusión de un solo flujo (single-stream DiT) con 24 capas, ancho 768 y 16 cabezas de atención. Los tokens de texto y los tokens de imagen comparten una única secuencia con self-attention completa. El texto se codifica con un encoder congelado (MongoDB/voyage-4-nano, ~346M parámetros) cuyas características se proyectan al ancho del modelo; se emplea un null caption aprendido para classifier-free guidance. La salida es RGBA con valores en [-1, 1].
+LiliPixel-V1 es un Diffusion Transformer de un solo flujo en el que los tokens de texto y los tokens de imagen comparten una unica secuencia con atencion propia completa. La red consta de 24 capas con ancho 768 y 16 cabezas de atencion. Para las resoluciones de 16x16 y 32x32 se emplea un tamano de parche de 1 (un pixel por token), mientras que para 64x64 se usa un parche de 2, con capas de entrada y salida de parches separadas pero un transformer compartido. El modelo opera sobre pixeles RGBA con valores normalizados en [-1, 1] para las resoluciones pequenas y RGB para 64x64.
 
-El objetivo de entrenamiento es rectified flow matching con timesteps de distribución logit-normal y predicción de velocidad (velocity target). El muestreo por defecto usa sampler Euler con 30 pasos (50 para 64x64) y CFG 3.0. El modelo se entrenó con los datasets Pinkstack/LiliPixel-710K-Flux-64pixelart, Angais/pixel-art-atlas-1.4m, azyg0s/pixelart-172k y Chan-Y/pixelart-308k. La transparencia solo se observó durante el entrenamiento en 16x16 y 32x32; las salidas a 64x64 son RGB opacas. Los pesos publicados son pesos EMA compatibles con Hugging Face.
+El entrenamiento utiliza flow matching rectificado con timesteps muestreados de una distribucion logit-normal y objetivo de velocidad, en lugar de la prediccion de ruido convencional. El encoder de texto es MongoDB/voyage-4-nano congelado, con un maximo de 96 tokens y una caption nula aprendida para classifier-free guidance. Los pesos publicados son pesos EMA. El modelo se entreno sobre una combinacion de datasets: Pinkstack/LiliPixel-710K-Flux-64pixelart, Angais/pixel-art-atlas-1.4m, azygod/pixelart-172k y Chan-Y/pixelart-308k. No se especifica en la informacion disponible el numero total de tokens de entrenamiento ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de pixel art y sprites a resolución nativa de 16x16, 32x32 y 64x64 píxeles.
-- Salida con canal alfa (RGBA) a 16x16 y 32x32, con fondos transparentes.
-- Modo realismo a 64x64 activable anteponiendo "realistic photo, " al prompt.
-- Generación de escenas descriptivas a 64x64 con captions más largos sobre sujeto y composición.
-- Generación por lotes con semillas independientes (seed + i) para seleccionar la mejor imagen.
-- Integración con ComfyUI mediante nodo personalizado con modos auto/realistic y control de alpha_cutoff.
-- No soporta tool calling, agentes ni capacidades multimodales de entrada.
+- Generacion de pixel art y sprites a resoluciones nativas de 16x16, 32x32 y 64x64 pixeles.
+- Generacion con fondo transparente (canal alfa) en 16x16 y 32x32; en 64x64 la salida es RGB opaca.
+- Modo realismo en 64x64 mediante el prefijo `realistic photo,` en el prompt.
+- Generacion de escenas descriptivas en 64x64 con composicion sujeto-accion-fondo.
+- Soporte de classifier-free guidance con caption nula aprendida.
+- Generacion por lotes con semillas incrementales para seleccion de mejores resultados.
+- Integracion con ComfyUI mediante nodo personalizado.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio.
 
 ## Casos de uso
 
-- Generación de sprites para videojuegos 2D: el modelo produce sprites con fondo transparente a 16x16 y 32x32, listos para importar en motores como Godot o Unity, gracias a su salida RGBA nativa.
-- Prototipado rápido de assets: para equipos de arte que necesitan bocetos de personajes u objetos a baja resolución, el modelo genera lotes de 4 a 16 imágenes por prompt con semillas distintas para elegir la mejor.
-- Creación de iconos y elementos de interfaz retro: a 16x16 o 32x32 se pueden generar iconos de inventario, monedas, pociones u objetos simples describiendo el objeto y añadiendo ", transparent background".
-- Generación de fondos y escenas pixel art: a 64x64 el modelo produce escenas con sujeto, acción y fondo de color, útiles para pantallas de título o tiles de ambiente en prototipos.
-- Integración en pipelines de ComfyUI: mediante el nodo ComfyUI_LiliPixel.py se puede encadenar la generación con upscaling nearest-neighbour a 512x512 y guardado como PNG transparente dentro de un flujo de trabajo automatizado.
-- Iteración artística asistida: con solo ~1 GB de memoria en BF16, el modelo puede ejecutarse en estaciones de trabajo modestas para generar variaciones rápidas de un mismo concepto antes de que un artista las refine manualmente.
-- Generación de datasets sintéticos de pixel art: útil para aumentar corpus de entrenamiento de clasificadores o detectores de sprites con etiquetas controladas por prompt.
+- Generacion de sprites para videojuegos 2D: el modelo produce sprites de 16x16 y 32x32 con fondo transparente directamente utilizables como assets en motores como Godot o Unity, eliminando el paso de recorte manual y garantizando alineacion pixel-perfect.
+- Prototipado rapido de assets en estudios indie: con ~1 GB de VRAM en BF16, un desarrollador puede generar lotes de 8-16 variantes por prompt en una GPU de consumo y seleccionar las mejores, acelerando la iteracion de direccion artistica.
+- Generacion de tilesets y elementos de escenario en 64x64: el modo escena permite crear fondos y elementos de entorno con composicion sujeto-accion-fondo, utiles para prototipos de niveles.
+- Creacion de iconos y elementos de interfaz retro: la resolucion nativa de 16x16 y 32x32 es adecuada para iconos de inventario, habilidades o menus en juegos con estetica pixel art.
+- Automatizacion de pipelines de contenido para game jams: la integracion con ComfyUI y el pipeline de diffusers permiten encadenar generacion por lotes con seleccion automatica, util en plazos cortos.
+- Generacion de assets para prototipos de realidad aumentada o avatares: los sprites transparentes de 32x32 pueden escalarse con vecino mas cercano para mantener nitidez en interfaces retro.
+- Docencia y experimentacion en modelos de difusion: su tamano compacto (190M parametros) y su arquitectura DiT de un solo flujo lo convierten en un caso de estudio accesible para entender flow matching y atencion conjunta texto-imagen.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 1 GB con inferencia BF16 sin pérdida, según la model card.
-- GPU recomendadas: no se especifican modelos concretos; cualquier GPU con al menos ~1 GB de VRAM libre y soporte BF16 debería ser suficiente.
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU consumer moderna con soporte BF16 (el dato concreto de modelos no está disponible en la información proporcionada).
-- Opciones de despliegue: diffusers (DiffusionPipeline con custom_pipeline y trust_remote_code=True), ComfyUI mediante nodo personalizado. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (son herramientas orientadas a LLM).
-- Latencia y throughput: no disponibles. Se recomienda generar lotes de al menos 4 imágenes simultáneamente y seleccionar la mejor.
+- VRAM estimada para inferencia: aproximadamente 1 GB en BF16 sin perdida (segun la model card), mas el encoder de texto externo (~346M parametros, descargado en el primer uso).
+- GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM; se ha validado en CUDA con `torch.bfloat16`.
+- Cabe en GPU de consumo: si, incluidas GTX 1060 6GB, RTX 2060, RTX 3060, RTX 4060 y superiores.
+- Opciones de despliegue: `diffusers` con `DiffusionPipeline` y `custom_pipeline` (requiere `transformers>=4.56` y `trust_remote_code=True`); ComfyUI mediante nodo personalizado `ComfyUI_LiliPixel.py`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a difusion).
+- Latencia y throughput: no disponibles en la informacion proporcionada. Se recomienda generar lotes de 4 imagenes como minimo y 8-16 en 64x64 para seleccion.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no incluye datos de otros modelos de pixel art comparables ni resultados de benchmarks que permitan una comparación cuantitativa.
+| Modelo | Parametros | Contexto texto | Resolucion nativa | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| LiliPixel-V1-190M | 190,6M | 96 tokens | 16/32/64 px | OpenMDW-1.1 | Hugging Face, diffusers, ComfyUI |
+| Stable Diffusion 1.5 | ~860M | 77 tokens | 512x512 | CreativeML OpenRAIL-M | Amplia (diffusers, ComfyUI, A1111) |
+| PixelArt-Diffusion (referencia generica) | no disponible | no disponible | 512x512 con post-proceso | no disponible | no disponible |
+
+No se dispone de datos de benchmarks comparativos en la informacion proporcionada. La comparativa se limita a parametros, contexto, resolucion y licencia; los modelos de proposito general requieren reescalado y post-proceso para obtener pixel art nativo, mientras que LiliPixel genera directamente a la resolucion objetivo.
 
 ## Limitaciones y advertencias
 
-- El modelo se entrenó con una cantidad limitada de imágenes y tiene un tamaño reducido; no genera escenas complejas ni objetos o lugares de nicho. Se recomienda describir con palabras simples (por ejemplo, "cute light blue colored shark plushy" en lugar de "Blahaj").
-- En modo 64x64 hay mayor probabilidad de alucinar sujetos; se aconseja generar lotes de 8 a 16 imágenes y seleccionar la mejor.
-- Los prompts superiores a 96 tokens se truncan; los prompts muy largos no funcionan bien.
-- Solo soporta inglés como idioma de prompt.
-- A 64x64 la salida es RGB opaca, no RGBA; no debe usarse para fondos transparentes.
-- La frase ", transparent background" debe usarse exactamente como se entrenó para sprites a 16x16 y 32x32.
-- Requiere trust_remote_code=True y conexión a internet en la primera carga para descargar el encoder de texto.
-- ComfyUI no puede abrir el modelo con sus cargadores de checkpoint integrados; requiere el nodo personalizado.
-- Licencia OpenMDW-1.1: deben revisarse sus términos para uso comercial; la información proporcionada no detalla las restricciones concretas.
+- Entrenado con un conjunto de imagenes limitado y con un tamano de parametros reducido; no genera escenas complejas ni objetos o lugares nicho. Se recomienda describir los conceptos de forma simple (por ejemplo, "Cute light blue colored shark plushy" en lugar de "Blahaj").
+- En modo 64x64 existe una mayor probabilidad de alucinacion de sujetos; se recomienda generar lotes de 8-16 imagenes y seleccionar la mejor.
+- Los prompts mas largos de 96 tokens se truncan; los prompts muy largos funcionan peor.
+- Solo soporta ingles; no se documenta soporte multilingue.
+- La transparencia solo esta disponible en 16x16 y 32x32; 64x64 es RGB opaco (no RGBA).
+- Requiere `trust_remote_code=True` y conexion a internet en la primera carga para descargar el encoder de texto.
+- Los sesgos conocidos no se documentan en la informacion disponible; al entrenarse sobre datasets de pixel art, puede reflejar sesgos de composicion y estilo de dichas fuentes.
+- Licencia OpenMDW-1.1: se debe revisar el texto completo de la licencia para confirmar las condiciones de uso comercial antes de desplegar en produccion.
+- El modelo es de generacion de imagenes, no de texto; no dispone de capacidades de razonamiento, codigo, tool calling ni agentes.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Pinkstack/LiliPixel-V1-190M
+- Hugging Face: https://huggingface.co/Pinkstack/LiliPixel-V1-190M
 - Encoder de texto: https://huggingface.co/MongoDB/voyage-4-nano
 - Dataset Pinkstack/LiliPixel-710K-Flux-64pixelart: https://huggingface.co/datasets/Pinkstack/LiliPixel-710K-Flux-64pixelart
 - Dataset Angais/pixel-art-atlas-1.4m: https://huggingface.co/datasets/Angais/pixel-art-atlas-1.4m
-- Dataset azyg0s/pixelart-172k: https://huggingface.co/datasets/azyg0s/pixelart-172k
+- Dataset azygod/pixelart-172k: https://huggingface.co/datasets/azygod/pixelart-172k
 - Dataset Chan-Y/pixelart-308k: https://huggingface.co/datasets/Chan-Y/pixelart-308k
-- Nodo ComfyUI: comfyui-workflow/ComfyUI_LiliPixel.py (incluido en el repositorio del modelo)
-- Workflow ComfyUI: comfyui-workflow/LiliPixel_V1.json (incluido en el repositorio del modelo)
+- Nodo ComfyUI: https://huggingface.co/Pinkstack/LiliPixel-V1-190M/blob/main/comfyui-workflow/ComfyUI_LiliPixel.py
+- Workflow ComfyUI: https://huggingface.co/Pinkstack/LiliPixel-V1-190M/blob/main/comfyui-workflow/LiliPixel_V1.json

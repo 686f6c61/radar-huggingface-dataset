@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 68,
-  "downloads_30d": 180,
+  "downloads_30d": 159,
   "trending_score": 12,
   "parameters": 649282476,
   "parameters_human": "649.3M",
@@ -50,31 +50,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Outlook",
-      "url": "https://outlook.com/owa/Office365.com",
-      "snippet": ""
-    },
-    {
-      "title": "Outlook",
-      "url": "https://www.outlook.com/owa/schools.nyc.gov",
-      "snippet": ""
-    },
-    {
-      "title": "ps.outlook.com",
-      "url": "https://ps.outlook.com/Powershell",
-      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
-    },
-    {
-      "title": "Outlook.com",
-      "url": "https://olmoauth.outlook.com/api/googleoauthredir/outlook-oauth://com.microsoft.office.outlook/android/google/oauth2redirect?state=33456429-8e5c-44a5-9cc4-6cbe85698cb0",
-      "snippet": ""
-    },
-    {
-      "title": "na01.safelinks.protection.outlook.com",
-      "url": "https://na01.safelinks.protection.outlook.com/apple-app-site-association",
-      "snippet": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appIDs\": [\"9KBH5RKYEW.com.microsoft.loop-dogfood\", \"SGGM6D27TK.com.microsoft.loop\"], …"
-    }
-  ]
+  "sources": []
 }

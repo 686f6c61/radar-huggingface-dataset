@@ -2,102 +2,98 @@
 
 ## Resumen
 
-Phi-4-mini-reasoning-Tenstorrent-Tensix-BFP4-MLP es una exportación cuantizada del modelo microsoft/Phi-4-mini-reasoning, publicada por Xylolabs, específicamente empaquetada para su ejecución sobre aceleradores Tenstorrent Tensix (arquitecturas Wormhole y Blackhole) mediante la pila de software TT-NN / tt-metal. El modelo base es un transformer de 4.450.618.368 parámetros (aproximadamente 3.800 millones en el tronco más el LM head atado al embedding) orientado a razonamiento, y esta exportación conserva su comportamiento conversacional y de generación de texto en inglés.
+Phi-4-mini-reasoning-Tenstorrent-Tensix-BFP4-MLP es una cuantizacion del modelo microsoft/Phi-4-mini-reasoning realizada por Xylolabs, orientada especificamente a la ejecucion sobre aceleradores NPU de Tenstorrent con arquitectura Tensix (Wormhole y Blackhole). No se trata de un modelo nuevo, sino de una distribucion de pesos optimizada para hardware que no es GPU convencional, lo que permite desplegar un modelo de razonamiento de 4,45 mil millones de parametros en plataformas de inferencia de bajo consumo.
 
-La aportación técnica de esta ficha no es el modelo en sí, sino el esquema de cuantización: las 32 capas de atención se almacenan en `ttnn.bfloat8_b` (BFP8, 8,5 bits por peso) y las 32 capas MLP en `ttnn.bfloat4_b` (BFP4, 4,5 bits por peso), resultando en 7,18 bits por peso de media y un peso empaquetado de 3,44 GB. Las matrices BFP4 se obtuvieron con GPTQ y búsqueda de exponente por bloque, calibradas sobre 65.536 tokens de WikiText-2 y Wikipedia en coreano; las BFP8 con redondeo al más cercano.
+El modelo base es Phi-4-mini-reasoning de Microsoft, un transformer denso de la familia Phi-4 con enfasis en tareas de razonamiento de cadena de pensamiento. La cuantizacion aplicada combina bfloat4_b en las capas MLP con bfloat8_b en la atencion y bf16 en el resto de componentes, un esquema de block floating point propio del ecosistema Tensix.
 
-Es relevante ahora porque permite desplegar un modelo de razonamiento de 4,5 mil millones de parámetros en hardware Tenstorrent con un consumo de memoria de dispositivo de aproximadamente 3,44 GB solo para pesos, abriendo la puerta a inferencia local en NPUs Tensix sin depender de GPUs NVIDIA. La licencia MIT del modelo base se mantiene, lo que facilita su uso comercial.
+La relevancia de esta ficha radica en que documenta un caso concreto de portabilidad de modelos a hardware alternativo: el paquete ocupa 3,444 GB empaquetado frente a los 7,67 GB del BF16 original, con una divergencia KL media de 1,162884 respecto a BF16, ligeramente superior a la de una cuantizacion Q4_K_M de llama.cpp (1,147011). Es material de interes para quienes evaluan Tenstorrent como alternativa a GPU en inferencia de modelos pequenos de razonamiento.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (arquitectura Phi-4-mini, 32 capas) |
-| Parámetros totales | 4.450.618.368 |
-| Parámetros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la información proporcionada |
-| Tipos de cuantización | BFP8 (`ttnn.bfloat8_b`, 8,5 bits/peso) en atención q,k,v,o; BFP4 (`ttnn.bfloat4_b`, 4,5 bits/peso) en MLP gate,up,down; bf16 en LM head, embedding, normas y resto de tensores; media de 7,18 bits/peso |
-| Idiomas soportados | inglés (según model card); calibración de cuantización incluyó texto en coreano |
-| Licencia | MIT (modelo base y exportación); scripts `pack_tensix.py` y `verify_grid.py` bajo Apache-2.0 |
-| Formato de pesos | safetensors (shards), con metadatos `quant4.json` y `model.safetensors.index.json`; repo de 8,9 GB |
-| Memoria de dispositivo requerida | ~3,44 GB solo para pesos del modelo de lenguaje, más KV cache y buffers |
-| Hardware objetivo | Tenstorrent Tensix (Wormhole, Blackhole) vía TT-NN / tt-metal |
-| Librería | transformers (carga estándar en bf16), ttnn para despliegue en Tensix |
+| Arquitectura | Transformer denso (base: microsoft/Phi-4-mini-reasoning) |
+| Parametros totales | 4.450.618.368 |
+| Parametros activos | no disponible (modelo denso, no MoE) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | BFP4 (MLP bfloat4_b, atencion bfloat8_b, resto bf16); referencia Q4_K_M y BF16 |
+| Idiomas soportados | en (segun metadatos); la evaluacion KL incluye texto en ingles y coreano |
+| Licencia | MIT |
+| Formato de pesos | safetensors (carpeta bfp4/), esquema block floating point bfloat4_b/bfloat8_b |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de la familia Phi-4-mini con 32 capas, con proyecciones de atención q, k, v y o, y un bloque MLP con proyecciones gate, up y down. El LM head está atado al embedding. Esta exportación no reentrena el modelo: aplica cuantización post-entrenamiento sobre las capas lineales. Las matrices de atención se convierten a BFP8 con redondeo al más cercano, mientras que las matrices MLP se cuantizan a BFP4 mediante GPTQ con búsqueda de exponente por bloque, calibrado sobre 65.536 tokens combinados de WikiText-2 y Wikipedia en coreano.
+El modelo hereda la arquitectura del Phi-4-mini-reasoning de Microsoft: un transformer denso de aproximadamente 4,45 mil millones de parametros, disenado para razonamiento explicito con cadenas de pensamiento. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni las tecnicas de alineacion (RLHF/DPO) empleadas en el modelo base.
 
-La innovación técnica reside en el uso del formato block floating point de Tenstorrent: las matrices cuantizadas se almacenan como valores bf16 sobre la rejilla BFP4 o BFP8, de modo que TT-NN las empaqueta sin alterar sus valores. Las 224 matrices cuantizadas pasaron la comprobación de rejilla, y la comprobación de empaquetado TT-NN sobre ttsim cubrió las capas 0 y 1 con coincidencia exacta de valores. No se ejecutaron tt-transformers ni tt-forge con este checkpoint, según indica la model card. No se dispone de información sobre el dataset de entrenamiento original del modelo base ni sobre si hubo RLHF/DPO en esta información.
+La innovacion tecnica de esta distribucion es el esquema de cuantizacion block floating point para Tensix: las matrices de las capas MLP se almacenan en bfloat4_b y las de atencion en bfloat8_b, mientras el resto de pesos permanece en bf16. El repositorio incluye scripts `pack_tensix.py` y `verify_grid.py` (Apache-2.0, de Xylolabs) para empaquetar matrices y verificar la ida y vuelta de valores en dispositivo, ademas de ficheros de metadatos `quant4.json` e indice de safetensors que mapean cada tensor a su formato y shard.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con soporte de plantilla de chat (`apply_chat_template`).
-- Razonamiento: el modelo base es la variante "reasoning" de Phi-4-mini, orientada a tareas de razonamiento multi-paso.
-- Generación de código y matemáticas: capacidades heredadas del modelo base (no detalladas en la información proporcionada).
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: la model card declara únicamente inglés; la calibración de cuantización incluyó coreano, pero no se declara soporte de ese idioma.
-- Capacidades especiales (thinking mode, visión, audio): no disponible en la información proporcionada.
-- Despliegue en NPU Tensix con empaquetado nativo de pesos BFP4/BFP8.
+- Generacion de texto y razonamiento: el modelo base esta orientado a tareas de razonamiento paso a paso, incluyendo matematicas y logica.
+- Generacion de codigo: capacidad heredada del modelo base Phi-4-mini-reasoning.
+- Conversacion multi-turno mediante plantilla de chat (`apply_chat_template`).
+- Inferencia en hardware Tenstorrent Tensix (Wormhole, Blackhole) mediante ttnn y tt-metal.
+- Compatibilidad con transformers para carga y ejecucion en GPU/CPU convencional usando los pesos cuantizados.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada (el modelo base esta disenado para razonamiento, pero no se detalla soporte de agentes).
+- Capacidades multilingues: los metadatos declaran solo ingles; la evaluacion KL incluye coreano, pero no se documenta soporte funcional de ese idioma.
+- Vision y audio: no disponibles.
 
 ## Casos de uso
 
-- Inferencia de razonamiento en NPUs Tenstorrent: desplegar el modelo en aceleradores Wormhole o Blackhole usando TT-NN, aprovechando los 3,44 GB de pesos empaquetados para liberar memoria de dispositivo para KV cache y otros modelos.
-- Asistentes conversacionales en inglés sobre hardware no-NVIDIA: usar la plantilla de chat y `generate` estándar de transformers para construir un chatbot de razonamiento con un footprint de memoria reducido frente al BF16 (7,67 GB).
-- Prototipado de pipelines de cuantización BFP: emplear `quant4.json` y los scripts `pack_tensix.py` / `verify_grid.py` como referencia para cuantizar otros modelos Phi con el mismo esquema GPTQ + BFP4/BFP8.
-- Validación de empaquetado TT-NN: usar la comprobación de rejilla y el round-trip por DRAM de dispositivo para verificar que las matrices cuantizadas se empaquetan sin pérdida de valores antes de desplegar en producción.
-- Evaluación comparativa de cuantizaciones: comparar la fidelidad a BF16 (KL media de 1,162884, top-1 del 57,82 %) frente a Q4_K_M de llama.cpp (KL 1,147011, top-1 56,09 %) para decidir el formato según el presupuesto de memoria.
-- Investigación en eficiencia de memoria en edge/NPU: estudiar el compromiso entre 7,18 bits/peso y la calidad de razonamiento en un modelo de 4,5 mil millones de parámetros.
-- Integración en entornos con transformers: cargar el checkpoint en bf16 con `device_map="auto"` para pruebas de calidad antes de portarlo a Tensix.
+- Despliegue en aceleradores Tenstorrent: cargar los pesos de `bfp4/` en una NPU Wormhole o Blackhole mediante ttnn para servir un modelo de razonamiento de 4,45B con un paquete de 3,444 GB, reduciendo la huella de memoria frente al BF16 de 7,67 GB.
+- Inferencia de razonamiento en entornos con restricciones de memoria: el esquema BFP4 permite ejecutar el modelo en dispositivos con DRAM limitada, manteniendo una divergencia KL de 1,162884 respecto a BF16.
+- Evaluacion comparativa de cuantizaciones: usar los ficheros `quant4.json` y los scripts de verificacion para medir el impacto de BFP4 frente a Q4_K_M en tareas de razonamiento.
+- Prototipado de pipelines de generacion de codigo: integracion con transformers y plantilla de chat para asistentes de codigo en entornos de desarrollo con hardware Tenstorrent.
+- Investigacion en hardware alternativo: banco de pruebas para comparar latencia y fidelidad numerica de Tensix frente a GPU en modelos pequenos de razonamiento.
+- Verificacion de integridad de pesos cuantizados: uso de `verify_grid.py` con `--device` para validar el round-trip de valores empaquetados antes de desplegar en produccion.
+- Docencia y experimentacion: modelo de 4,45B con licencia MIT que cabe en el repositorio de 8,9 GB y permite experimentar con cuantizacion block floating point sin coste de licencia.
 
 ## Benchmarks y rendimiento
 
-Los datos publicados miden la fidelidad a BF16, no la calidad de tarea. La evaluación cubre 16.192 posiciones de texto en inglés y coreano (WikiText-2 test y Wikipedia en coreano), en texto plano y con plantilla de chat, comparando cada fila contra la misma pasada BF16 en las mismas posiciones. Las respuestas corresponden a 33 prompts cortos con comprobación automática.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible. La model card unicamente reporta metricas de fidelidad de cuantizacion:
 
-| Modelo | Bits/peso | Tamaño (GB) | KL media a BF16 | Top-1 (%) | Respuestas correctas | Perdidas |
-|---|---:|---:|---:|---:|---:|---:|
-| BF16 (microsoft/Phi-4-mini-reasoning) | 16 | 7,67 | 0 | 100 | 16 de 33 | - |
-| Este modelo (BFP4 MLP / BFP8 atención) | 7,18 | 3,444 | 1,162884 | 57,82 | 15 de 33 | 2 |
-| Q4_K_M (llama.cpp) | 5,18 | 2,486 | 1,147011 | 56,09 | 19 de 33 | 1 |
+| Metrica | bfp4/ | BF16 (base) | Q4_K_M (llama.cpp) |
+|---|---|---|---|
+| Tamano empaquetado (GB) | 3,444 | 7,67 | 2,486 |
+| KL media respecto a BF16 | 1,162884 | 0 | 1,147011 |
 
-El criterio de aceptación del autor era una KL media como máximo 1,5 veces la de Q4_K_M y como máximo una respuesta perdida más. El resultado es 1,01 veces la KL de Q4_K_M, con 2 respuestas perdidas frente a 1. El autor advierte que ambas KL medias son altas y que estos números miden cercanía a BF16, no calidad de tarea. No se reporta velocidad ni throughput.
+La KL se calcula sobre 16.192 posiciones de texto en ingles y coreano (test de WikiText-2 y Wikipedia en coreano), en texto plano y con plantilla de chat, con un limite de KL media de 1,5 veces la referencia Q4_K_M.
 
 ## Requisitos de hardware
 
-- VRAM/memoria de dispositivo: ~3,44 GB solo para pesos del modelo de lenguaje, más espacio para KV cache y buffers. El repo completo ocupa 8,9 GB en disco.
-- GPU recomendadas: no aplica como objetivo principal; el modelo está diseñado para NPUs Tenstorrent Tensix (Wormhole, Blackhole). Para carga en transformers en bf16 se requiere memoria suficiente para 7,67 GB de pesos más overhead.
-- ¿Cabe en GPU consumer? En bf16, sí en GPUs con 12-16 GB o más (por ejemplo, RTX 4090 de 24 GB); el checkpoint cuantizado está pensado para Tensix, no para GPUs.
-- Opciones de despliegue: TT-NN / tt-metal sobre Tensix; transformers para carga estándar en bf16; llama.cpp no es el destino de este checkpoint (aunque se usó para generar la referencia Q4_K_M).
-- Latencia y throughput: no disponibles en la información proporcionada; la model card indica explícitamente que no se reporta velocidad.
+- VRAM/DRAM estimada: 3,444 GB para los pesos empaquetados en BFP4; 7,67 GB para BF16; 2,486 GB para Q4_K_M de referencia.
+- Hardware objetivo: NPU Tenstorrent Tensix, familias Wormhole y Blackhole, mediante tt-metal y ttnn.
+- GPU convencionales: compatible con transformers (`device_map="auto"`, `dtype="bfloat16"`), por lo que puede ejecutarse en GPU con memoria suficiente para el modelo cargado; no se especifican modelos concretos de GPU en la informacion disponible.
+- GPU consumer: no se confirma compatibilidad ni modelos concretos en la informacion proporcionada.
+- Opciones de despliegue: ttnn/tt-metal sobre Tensix; transformers para carga estandar; scripts propios `pack_tensix.py` y `verify_grid.py`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Cuantización | Licencia | Hardware objetivo |
-|---|---|---|---|---|---|
-| Este modelo (Xylolabs) | 4,45 B | no disponible | BFP4 MLP / BFP8 atención, 7,18 bits/peso | MIT | Tenstorrent Tensix |
-| microsoft/Phi-4-mini-reasoning (BF16) | 4,45 B | no disponible | bf16, 16 bits/peso | MIT | GPU/CPU |
-| Q4_K_M de llama.cpp (mismo checkpoint) | 4,45 B | no disponible | Q4_K_M, 5,18 bits/peso | MIT | CPU/GPU (llama.cpp) |
+| Modelo | Parametros | Contexto | Cuantizacion | Tamano | Licencia | Hardware objetivo |
+|---|---|---|---|---|---|---|
+| Este modelo (Phi-4-mini-reasoning BFP4 Tensix) | 4,45B | no disponible | BFP4/BFP8/BF16 | 3,444 GB | MIT | Tenstorrent Tensix |
+| microsoft/Phi-4-mini-reasoning (BF16) | 4,45B | no disponible | BF16 | 7,67 GB | MIT | GPU/CPU |
+| Phi-4-mini-reasoning Q4_K_M (llama.cpp) | 4,45B | no disponible | Q4_K_M | 2,486 GB | MIT | CPU/GPU |
 
-La comparativa se limita a variantes del mismo modelo base, ya que la información proporcionada no incluye datos de modelos alternativos de otros autores. En fidelidad a BF16, este modelo queda ligeramente por debajo de Q4_K_M (KL 1,16 frente a 1,15) pero con mayor tamaño (3,44 GB frente a 2,49 GB), un compromiso derivado del formato BFP4/BFP8 de Tensix.
+No se dispone de datos de benchmarks de tareas para comparar el rendimiento funcional frente a estas alternativas; la unica comparacion documentada es la divergencia KL respecto a BF16.
 
 ## Limitaciones y advertencias
 
-- La KL media a BF16 es alta (1,162884) según el propio autor; la evaluación mide cercanía a BF16, no calidad de tarea.
-- Se pierden 2 de 33 respuestas correctas frente a BF16, y una más que Q4_K_M; el autor advierte de que las casi-empates no se contabilizan.
-- La cuantización se calibró parcialmente con Wikipedia en coreano, pero el modelo declara únicamente inglés; el rendimiento en otros idiomas no está validado.
-- El checkpoint está empaquetado para TT-NN/Tensix; tt-transformers y tt-forge no se ejecutaron con él, por lo que el soporte en esas pilas no está verificado.
-- La comprobación de empaquetado TT-NN en dispositivo solo cubrió las capas 0 y 1 (sobre ttsim); el resto de capas solo pasó la comprobación de rejilla.
-- No se reportan latencia ni throughput, lo que impide evaluar el rendimiento en producción.
-- Riesgo de alucinación y sesgos: no disponibles en la información proporcionada; aplican los del modelo base.
-- Licencia MIT permite uso comercial, pero los scripts `pack_tensix.py` y `verify_grid.py` son Apache-2.0 y deben cumplir esa licencia por separado.
-- El modelo se distribuye "tal cual" ("Provided as"), sin garantías indicadas en la model card.
+- Es una cuantizacion, no un modelo nuevo: hereda los sesgos, riesgos de alucinacion y limitaciones del Phi-4-mini-reasoning base, que no se detallan en la informacion proporcionada.
+- La cuantizacion BFP4 introduce una divergencia medible (KL media 1,162884), ligeramente superior a la de Q4_K_M (1,147011); puede degradar tareas sensibles a precision numerica.
+- El soporte de idiomas declarado es unicamente ingles; el coreano aparece solo en la evaluacion KL, no como idioma soportado oficialmente.
+- El hardware objetivo son NPUs Tenstorrent Tensix; fuera de ese ecosistema el valor de esta distribucion es limitado y conviene usar el modelo base o una cuantizacion GGUF.
+- La longitud de contexto no se especifica en la informacion disponible; conviene consultar la model card del modelo base antes de usarlo en produccion.
+- Licencia MIT, lo que permite uso comercial, pero cada carpeta incluye su propio LICENSE y NOTICE que deben revisarse; los scripts `pack_tensix.py` y `verify_grid.py` son Apache-2.0.
+- El repositorio se renombro el 2026-11-27 (antes `Phi-4-mini-reasoning-Tenstorrent-Tensix-BFP4`), lo que puede romper rutas o referencias antiguas en pipelines.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Xylolabs/Phi-4-mini-reasoning-Tenstorrent-Tensix-BFP4-MLP
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-reasoning
-- Repositorio de código (tensix-bfp-gptq): https://github.com/XylolabsInc/tensix-bfp-gptq
-- Documentación de Tenstorrent: https://docs.tenstorrent.com
-- Licencia del modelo: https://huggingface.co/Xylolabs/Phi-4-mini-reasoning-Tenstorrent-Tensix-BFP4-MLP/blob/main/LICENSE
-- Revisión del modelo base referenciada: https://huggingface.co/microsoft/Phi-4-mini-reasoning/tree/0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a
+- Repositorio de codigo: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Documentacion de Tenstorrent: https://docs.tenstorrent.com
+- Licencia: https://huggingface.co/Xylolabs/Phi-4-mini-reasoning-Tenstorrent-Tensix/blob/main/LICENSE
+- Carpeta de pesos bfp4: https://huggingface.co/Xylolabs/Phi-4-mini-reasoning-Tenstorrent-Tensix-BFP4-MLP/tree/main/bfp4

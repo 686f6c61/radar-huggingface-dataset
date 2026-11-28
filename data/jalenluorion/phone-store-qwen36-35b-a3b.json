@@ -44,11 +44,5 @@
   "renamed_to": "jalenluorion/Qwen3.6-35B-A3B-prefetchable-store",
   "renamed_at": "2026-11-27T11:54:57.592Z",
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Deploy Qwen3.6-35B-A3B Locally: GGUF, llama.cpp, VRAM, and API Checks",
-      "url": "https://knightli.com/en/2026/05/24/qwen36-35b-a3b-local-deployment-llamacpp-gguf/",
-      "snippet": "Using the official Qwen3.6-35B-A3B weights as the baseline, this guide covers GGUF quantization, llama.cpp startup options, VRAM checks, vision projection files, and verification through an OpenAI-compatible API."
-    }
-  ]
+  "sources": []
 }

@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 189,
+  "downloads_30d": 191,
   "trending_score": 0,
   "parameters": 31202455,
   "parameters_human": "31.2M",
@@ -62,33 +62,33 @@
   "benchmarks": [
     {
       "task": "Object Detection",
-      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "dataset": "Unified Pavement Defects (Test Split)",
       "metric": "mAP@0.50",
-      "value": 0.0942
+      "value": 0.539
     },
     {
       "task": "Object Detection",
-      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "dataset": "Unified Pavement Defects (Test Split)",
       "metric": "mAP@0.50:0.95",
-      "value": 0.0522
+      "value": 0.2749
     },
     {
       "task": "Object Detection",
-      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "dataset": "Unified Pavement Defects (Test Split)",
       "metric": "Precision",
-      "value": 0
+      "value": 0.7483
     },
     {
       "task": "Object Detection",
-      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "dataset": "Unified Pavement Defects (Test Split)",
       "metric": "Recall",
-      "value": 0
+      "value": 0.3804
     },
     {
       "task": "Object Detection",
-      "dataset": "Unified Pavement Defects (Roboflow Universe Merge - Test Split)",
+      "dataset": "Unified Pavement Defects (Test Split)",
       "metric": "F1-Score",
-      "value": 0
+      "value": 0.5043
     }
   ],
   "sources": []

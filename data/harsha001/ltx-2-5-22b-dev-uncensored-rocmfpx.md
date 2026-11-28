@@ -2,49 +2,58 @@
 
 ## Resumen
 
-LTX-2.5-22B-dev-uncensored-ROCmFPX es una cuantizacion no oficial del modelo de generacion de video texto-a-video LTX-2.5 de Lightricks, publicada por el usuario Harsha001 en Hugging Face. El modelo parte del checkpoint base `Lightricks/LTX-2.5` y se distribuye en formato GGUF con un esquema de cuantizacion propietario denominado ROCmFPX, orientado a ejecucion en hardware AMD mediante ROCm y a su uso con `stable-diffusion.cpp`. El autor etiqueta el modelo como "uncensored", "heretic" y "abliterated", lo que indica que se ha aplicado una modificacion deliberada para eliminar o atenuar los filtros de seguridad y moderacion del modelo original.
+LTX-2.5-22B-dev-uncensored-ROCmFPX es una cuantizacion no oficial del modelo de generacion de video texto-a-video Lightricks/LTX-2.5, publicada por el usuario Harsha001 en Hugging Face. Se trata de una variante "uncensored" (tambien etiquetada como heretic y abliterated), lo que indica que se han aplicado tecnicas de ablacion de direcciones de rechazo para eliminar los filtros de contenido del modelo original. El repositorio cuantiza los pesos en formato GGUF con un esquema propietario denominado ROCmFPX/ROCmFP4, orientado a la ejecucion en GPUs AMD bajo ROCm y en el runtime stable-diffusion.cpp.
 
-La relevancia de esta publicacion es doble. Por un lado, demuestra la viabilidad de ejecutar modelos de difusion de video de gran tamano en GPUs AMD con cuantizacion agresiva, un terreno historicamente dominado por CUDA. Por otro, plantea un caso de estudio sobre la redistribucion de modelos con licencia restrictiva y sobre los riesgos de las variantes "abliterated" en pipelines de generacion de video. El repositorio acumula 2.554 descargas y 17 likes desde su creacion el 20 de octubre de 2026.
+El modelo base, LTX-2.5 de Lightricks, es un generador de video a partir de texto de la familia LTX-Video, una arquitectura de difusion con transformer (DiT) disenada para sintetizar clips de video con coherencia temporal. Aunque el identificador del repositorio menciona "22B", el recuento real de parametros reportado en la ficha de safetensors es de 13.115.791.408 parametros (aproximadamente 13,1 mil millones), por lo que la cifra "22B" del nombre no debe tomarse como el tamano efectivo del modelo.
 
-Conviene subrayar que el dato de parametros reportado en safetensors (13.115.791.408, es decir, unos 13,1 mil millones) no coincide con el "22B" que aparece en el nombre del repositorio, una discrepancia habitual en cuantizaciones y en nomenclaturas de autor que conviene verificar antes de planificar despliegues.
+La relevancia de esta ficha radica en que documenta un caso de cuantizacion comunitaria sobre hardware AMD, un nicho poco cubierto por los flujos habituales (mayoritariamente CUDA/GGUF para NVIDIA), y en que combina tres factores sensibles para produccion: licencia restrictiva del modelo base, acceso restringido (gated) y eliminacion de salvaguardas de contenido. Todo ello exige una evaluacion juridica y de seguridad antes de cualquier uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Difusion para generacion de video (LTX-Video), no disponible el detalle exacto de bloques |
-| Parametros totales | 13.115.791.408 (segun safetensors del repo); el nombre indica 22B |
-| Parametros activos | no disponible (no es MoE segun la informacion) |
+| Arquitectura | Difusion con transformer (DiT) para texto-a-video, heredada de Lightricks/LTX-2.5 |
+| Parametros totales | 13.115.791.408 (segun safetensors); el nombre del repo indica "22B" |
+| Parametros activos | no disponible (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | ROCmFPX (esquema propio del autor), ROCmFP4, GGUF |
+| Tipos de cuantizacion | ROCmFPX / ROCmFP4 (esquema propio del autor), formato GGUF |
 | Idiomas soportados | no disponible |
-| Licencia | ltx-2.x-community-license-agreement (acceso restringido, gated) |
-| Formato de pesos | GGUF (repo de 29,4 GB), con variantes ROCmFPX/ROCmFP4 |
+| Licencia | ltx-2.x-community-license-agreement (licencia "other" del modelo base) |
+| Formato de pesos | GGUF (cuantizado); base en safetensors |
+| Tamano del repositorio | 29,4 GB |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
+| Pipeline | text-to-video |
+| Libreria | gguf |
+| Descargas / likes | 2.680 / 34 |
+| Fecha de creacion | 2026-10-20 |
+| Ultima actualizacion | 2026-11-27 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base `Lightricks/LTX-2.5` pertenece a la familia LTX-Video de Lightricks, un modelo de difusion para generacion de video a partir de texto. La informacion disponible no detalla el numero de bloques, el tipo de atencion ni la composicion exacta del dataset de entrenamiento del modelo original; estos datos deberian consultarse en la model card oficial de Lightricks. Lo que si se sabe es que la variante aqui descrita no ha sido reentrenada desde cero: se trata de una cuantizacion y de una modificacion de los pesos del checkpoint base.
+El modelo base LTX-2.5 pertenece a la familia LTX-Video de Lightricks, que emplea una arquitectura de difusion basada en transformer (DiT) para la generacion de video condicionada por texto. La variante publicada por Harsha001 no aporta informacion sobre el proceso de entrenamiento original (numero de tokens, composicion del dataset, uso de RLHF/DPO o etapas de ajuste fino), por lo que estos datos deben consultarse en la ficha del modelo base Lightricks/LTX-2.5. Lo que si documenta el autor es el proceso de post-procesado: cuantizacion de los pesos a un esquema ROCmFPX/ROCmFP4 empaquetado en GGUF, y aplicacion de tecnicas de "abliteration" (ablacion de direcciones de rechazo en el espacio de activaciones) para eliminar el comportamiento de rechazo de contenido.
 
-La innovacion tecnica principal de esta publicacion es el esquema de cuantizacion ROCmFPX, disenado por el autor para reducir el peso del modelo (29,4 GB en el repo) y permitir su ejecucion en GPUs AMD bajo ROCm. Ademas, las etiquetas "uncensored", "heretic" y "abliterated" indican que se ha aplicado una tecnica de ablacion de direcciones de rechazo en el espacio de activaciones, orientada a eliminar el comportamiento de filtrado del modelo original. No se dispone de informacion sobre el proceso exacto de ablacion, el numero de tokens empleados ni si hubo ajuste fino posterior.
+La innovacion tecnica destacable de esta publicacion no esta en la arquitectura, sino en el objetivo de despliegue: permitir la inferencia del modelo de video en GPUs AMD mediante ROCm y el runtime stable-diffusion.cpp, un camino alternativo al ecosistema CUDA. No se dispone de informacion sobre metodos de decodificacion especulativa, atencion lineal ni otras optimizaciones internas del modelo base en la informacion proporcionada.
 
 ## Capacidades
 
-- Generacion de video a partir de texto (text-to-video), heredada del modelo base LTX-2.5.
-- Ejecucion en hardware AMD mediante ROCm y el backend `stable-diffusion.cpp`.
-- Formato GGUF, lo que facilita su carga en herramientas compatibles con este formato.
-- Variante "abliterated"/"uncensored": el autor declara que se han atenuado los filtros de seguridad, lo que en la practica amplia el rango de prompts aceptados, con los riesgos asociados.
-- No se documentan capacidades de tool calling, agentes, vision, audio ni modo "thinking"; no aplican a un modelo de difusion de video.
-- Capacidades multilingues: no disponibles.
+- Generacion de video a partir de texto (text-to-video): capacidad principal del pipeline declarado.
+- Generacion de clips con coherencia temporal, propia de la familia LTX-Video.
+- Comportamiento "uncensored": se han eliminado las salvaguardas de rechazo, por lo que el modelo puede generar contenido que el original bloquearia.
+- Ejecucion en GPUs AMD mediante ROCm y stable-diffusion.cpp (objetivo declarado de la cuantizacion).
+- Soporte de tool calling / function calling: no disponible (no es un modelo de lenguaje conversacional).
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: no disponible.
+- Capacidades especiales (thinking mode, vision, audio): no disponible.
 
 ## Casos de uso
 
-- Prototipado de video generativo en estaciones de trabajo con GPU AMD: el formato ROCmFPX permite cargar el modelo en entornos ROCm sin depender de CUDA, algo util para equipos con Radeon o Instinct.
-- Investigacion sobre cuantizacion de modelos de difusion de video: sirve como referencia para estudiar el impacto de ROCmFP4/ROCmFPX en la calidad visual y en el consumo de VRAM.
-- Generacion de clips de prueba en pipelines de postproduccion: util para crear storyboards o animaticos rapidos antes de producir el material definitivo.
-- Evaluacion de seguridad y alineacion: al ser una variante "abliterated", es un caso de estudio para medir como la ablacion afecta a la generacion de contenido sensible en video.
-- Experimentacion con `stable-diffusion.cpp`: permite probar el backend en flujos de video sin depender de PyTorch ni de CUDA.
-- Docencia y divulgacion: sirve para explicar en clase como se cuantiza y se redistribuye un modelo de difusion de gran tamano en hardware no NVIDIA.
-- Benchmarking de hardware AMD: comparar throughput y latencia frente a las mismas cargas en GPUs NVIDIA.
+- Prototipado de video generativo en hardware AMD: el modelo permite experimentar con generacion texto-a-video en GPUs AMD bajo ROCm, un escenario donde las alternativas suelen requerir CUDA. Adecuado para equipos con infraestructura AMD que quieran validar pipelines de video sin migrar de plataforma.
+- Investigacion sobre seguridad y alineacion: al ser una variante abliterated, sirve para estudiar como la ablacion de direcciones de rechazo afecta al comportamiento del modelo y que tipos de contenido emergen, en un entorno controlado y con las salvaguardas organizativas adecuadas.
+- Generacion de material de previsualizacion (previz) en produccion audiovisual: clips cortos para storyboards o animaticas, aprovechando la ventana de contexto del modelo base para mantener coherencia entre planos.
+- Creacion de contenido creativo sin restricciones editoriales: estudios que necesiten explorar narrativas que los filtros del modelo original bloquearian, asumiendo la responsabilidad legal y etica del contenido generado.
+- Benchmarking de cuantizacion en video: comparar la calidad de la cuantizacion ROCmFPX/ROCmFP4 frente al modelo base en safetensors, midiendo degradacion visual y velocidad en GPUs AMD.
+- Integracion en pipelines de stable-diffusion.cpp: desplegar generacion de video en entornos ligeros basados en este runtime, con menor dependencia de frameworks pesados.
+- Docencia y divulgacion: demostraciones de generacion de video en hardware de consumo AMD, con las advertencias de licencia y contenido correspondientes.
 
 ## Benchmarks y rendimiento
 
@@ -52,37 +61,37 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; el repo ocupa 29,4 GB en disco, por lo que se necesita al menos esa cantidad de VRAM o de memoria unificada para cargar los pesos completos, y mas para los buffers de activacion durante la difusion.
-- GPU recomendadas: el autor orienta el modelo a hardware AMD con ROCm (por ejemplo, Radeon RX 7900 XTX o Instinct MI210/MI300), si bien no se especifican modelos concretos ni minimos.
-- Cabe en GPU de consumo: probablemente en GPUs AMD de gama alta con 24 GB o mas de VRAM, aunque no hay confirmacion oficial; en NVIDIA no se garantiza compatibilidad con el esquema ROCmFPX.
-- Opciones de despliegue: `stable-diffusion.cpp` (backend declarado en las etiquetas), ROCm como runtime; no se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son adecuados para difusion de video.
+- VRAM estimada para inferencia: no disponible de forma oficial; el repositorio ocupa 29,4 GB, por lo que se requiere al menos esa cantidad de memoria (o descarga por capas) para cargar los pesos cuantizados, mas el overhead del runtime.
+- GPU recomendadas: GPUs AMD con soporte ROCm (el autor no especifica modelos concretos); el esquema ROCmFP4 sugiere orientacion a aceleradores AMD con soporte de precision reducida.
+- Compatibilidad con GPU de consumo: no confirmada; el tamano del repositorio (29,4 GB) supera la VRAM de la mayoria de GPUs de consumo, por lo que probablemente requiera offloading o GPUs profesionales.
+- Opciones de despliegue: stable-diffusion.cpp (runtime declarado), ROCm; vLLM, llama.cpp, Ollama y TGI no estan indicados para este modelo de video.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.5-22B-dev-uncensored-ROCmFPX (este) | 13,1B (segun safetensors) | no disponible | GGUF/ROCmFPX | ltx-2.x-community-license-agreement (gated) | Hugging Face, acceso restringido |
-| Lightricks/LTX-2.5 (base) | no disponible en la informacion | no disponible | safetensors | ltx-2.x-community-license-agreement | Hugging Face, acceso restringido |
-| Otras variantes cuantizadas de LTX-2.5 | no disponible | no disponible | GGUF | heredada del base | no disponible |
+| Harsha001/LTX-2.5-22B-dev-uncensored-ROCmFPX | 13,1 B (segun safetensors) | no disponible | GGUF (ROCmFPX/FP4) | ltx-2.x-community-license-agreement | Gated en Hugging Face |
+| Lightricks/LTX-2.5 (base) | no disponible en esta ficha | no disponible | safetensors | ltx-2.x-community-license-agreement | Hugging Face |
+| Otras variantes de LTX-Video | no disponible | no disponible | safetensors / GGUF | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo es una cuantizacion no oficial: el autor no es Lightricks y no hay garantia de fidelidad respecto al checkpoint original.
-- La licencia `ltx-2.x-community-license-agreement` impone restricciones de uso comercial y de redistribucion; al ser un modelo derivado, conviene revisar si la licencia permite redistribuir variantes modificadas.
-- El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face, lo que anade friccion a cualquier despliegue automatizado.
-- La variante "abliterated"/"uncensored" elimina filtros de seguridad, lo que incrementa el riesgo de generar contenido danino, ilegal o difamatorio; no es apta para produccion sin moderacion externa.
-- Riesgo de alucinacion visual: como todo modelo de difusion de video, puede generar artefactos, incoherencias temporales y contenido fisicamente implausible.
-- Discrepancia entre el nombre "22B" y los 13,1B reportados en safetensors; verificar antes de dimensionar hardware.
-- Compatibilidad limitada: el esquema ROCmFPX esta pensado para ROCm y `stable-diffusion.cpp`; no se garantiza su funcionamiento en CUDA ni en otros backends.
-- No hay informacion sobre idiomas soportados, sesgos conocidos ni evaluaciones de calidad.
+- Modelo "uncensored"/abliterated: se han eliminado las salvaguardas de contenido, lo que implica riesgo de generar material ilegal, danino o no conforme a politicas si no se aplican filtros externos.
+- Licencia restrictiva: la ltx-2.x-community-license-agreement impone condiciones especificas de uso; es imprescindible revisarla antes de cualquier uso comercial o redistribucion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade una capa de control pero no sustituye la revision legal.
+- Cuantizacion no oficial: al ser una cuantizacion comunitaria, no hay garantia de calidad, soporte ni paridad con el modelo base; la degradacion visual no esta documentada.
+- Riesgo de alucinacion visual: como todo modelo generativo de video, puede producir artefactos, incoherencias temporales y contenido no solicitado.
+- Datos incompletos: no se dispone de informacion sobre idiomas, contexto, benchmarks ni requisitos de hardware oficiales.
+- Posible discrepancia de parametros: el nombre indica "22B" pero safetensors reporta 13,1 B; conviene verificar el modelo base antes de planificar recursos.
+- Uso en produccion: requiere evaluacion de seguridad de contenido, revision de licencia y validacion de calidad especifica para el caso de uso.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Harsha001/LTX-2.5-22B-dev-uncensored-ROCmFPX
+- Hugging Face: https://huggingface.co/Harsha001/LTX-2.5-22B-dev-uncensored-ROCmFPX
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
-- Licencia LTX-2.x Community License Agreement: no disponible enlace directo en la informacion proporcionada
-- `stable-diffusion.cpp`: no disponible enlace directo en la informacion proporcionada
-- ROCm: no disponible enlace directo en la informacion proporcionada
+- Licencia: ltx-2.x-community-license-agreement (referenciada en la ficha del modelo base)
+- Runtime stable-diffusion.cpp: no disponible en la informacion proporcionada
+- Paper o blog oficial de LTX-2.5: no disponible en la informacion proporcionada

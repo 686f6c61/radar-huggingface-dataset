@@ -2,64 +2,69 @@
 
 ## Resumen
 
-Qwen3.8-27B-QUASAR-NVFP4 es una versión cuantizada a 4 bits en formato NVFP4 del modelo multimodal Qwen/Qwen3.8-27B, producida por QUASAR-QAT mediante entrenamiento consciente de la cuantización (QAT). El modelo base es un transformer multimodal de 27.781 millones de parámetros (27,8 B) con capacidad image-text-to-text, orientado a razonamiento, modo thinking, contexto largo y uso agéntico. La contribución del checkpoint es comprimir el modelo original de 55,6 GB (BF16) a 19,7 GB manteniendo una calidad cercana al original: 90,91 en GPQA-Diamond frente a 91,41 del BF16.
+Qwen3.8-27B-QUASAR-NVFP4 es una version cuantizada a 4 bits en formato NVFP4 del modelo multimodal Qwen/Qwen3.8-27B, desarrollada por QUASAR-QAT mediante una tecnica de entrenamiento consciente de la cuantizacion (QAT) denominada QUASAR. El modelo resuelve el problema de desplegar un modelo de 27.781 millones de parametros con capacidades de vision y razonamiento en GPUs Blackwell, reduciendo el peso de 55,6 GB en BF16 a 19,7 GB sin una perdida significativa de calidad.
 
-La relevancia práctica está en que cuantiza las 496 capas lineales del transformer a NVFP4 (W4A4), incluidas atención y gated delta-net, y exporta pesos NVFP4 estándar que se sirven directamente con vLLM sin pasos de conversión. Esto permite desplegar un modelo de 27,8 B con ventana de 262.144 tokens en GPUs Blackwell de 32 GB, un escenario inviable con los pesos BF16.
+La innovacion principal es que se cuantizan las 496 capas lineales del transformer a NVFP4 en modo W4A4 (pesos y activaciones a 4 bits), incluyendo atencion y gated delta-net, manteniendo un rendimiento cercano al modelo original: 90,91 en GPQA-Diamond frente a 91,41 del BF16. Frente a otras builds publicas NVFP4 del mismo modelo base, es la mas pequena y la que obtiene mejores puntuaciones.
 
-El método QUASAR entrena los pesos NVFP4 contra el modelo BF16 congelado mediante destilación con reconstrucción consciente de la pérdida, en una época y 2.446 pasos. El resultado es, según la model card, el build NVFP4 público más pequeño y con mayor puntuación entre los comparados en GPQA-Diamond y AIME'26.
+Es relevante ahora porque permite servir un modelo de razonamiento multimodal con contexto largo (hasta 262.144 tokens) en una sola GPU Blackwell, con soporte directo en vLLM sin pasos de conversion y con decodificacion especulativa MTP integrada.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (image-text-to-text) con atención y gated delta-net; base Qwen3.8-27B; cuantización NVFP4 (W4A4) en 496/496 capas lineales |
-| Parámetros totales | 27.781.427.952 (27,8 B) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 262.144 tokens (configuración recomendada en vLLM); 65.536 en GPUs de 32 GB |
-| Tipos de cuantización | NVFP4 (FP4, W4A4) con compressed-tensors; el autor publica además una variante W4A16 del modelo hermano Qwen3.5-4B, no de este |
+| Arquitectura | Transformer multimodal (Qwen3.8) con atencion y gated delta-net, cuantizado NVFP4 |
+| Parametros totales | 27.781.427.952 |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | 262.144 tokens (recomendado 65.536 en GPU de 32 GB) |
+| Tipos de cuantizacion | NVFP4 (W4A4), 4 bits; el autor menciona tambien variantes de 8 bits en los tags |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compressed-tensors), compatible con transformers y vLLM |
+| Formato de pesos | safetensors (compatible con compressed-tensors) |
+| Tamano del repo | 22,8 GB (pesos NVFP4: 19,7 GB) |
+| Lineales en NVFP4 | 496/496 |
+| Hardware requerido | NVIDIA Blackwell (compute capability 10.0+) con soporte FP4 |
+| Modelo base | Qwen/Qwen3.8-27B |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, un transformer multimodal con pipeline image-text-to-text que combina capas de atención con gated delta-net y dispone de decodificación especulativa mediante MTP (multi-token prediction). La cuantización cubre las 496 capas lineales del transformer en NVFP4, es decir, pesos y activaciones a 4 bits, sin dejar capas en precisión superior.
+El modelo parte de Qwen3.8-27B, un transformer multimodal con pipeline image-text-to-text que incorpora mecanismos de atencion estandar y gated delta-net, ademas de soporte para decodificacion especulativa mediante multi-token prediction (MTP). La cuantizacion NVFP4 se aplica a la totalidad de las 496 capas lineales del transformer, incluyendo las de atencion y las de gated delta-net, en un esquema W4A4.
 
-El entrenamiento QUASAR consiste en una época de destilación de cuantización consciente de la pérdida (loss-aware NVFP4 QAT) contra el profesor BF16 congelado, con batch global de 32, learning rate de 1e-6 y 2.446 pasos. La innovación declarada es la reconstrucción consciente de la pérdida, que rebaja el suelo de pérdida habitual del QAT. Los pesos exportados son NVFP4 estándar, por lo que no requieren un camino de inferencia personalizado.
+El entrenamiento consistio en una epoca de destilacion consciente de la cuantizacion (loss-aware NVFP4 QAT) contra el modelo BF16 congelado como profesor, con batch global de 32, tasa de aprendizaje de 1e-6 y 2.446 pasos. El metodo QUASAR, descrito en el paper arXiv:2608.13966, entrena los pesos NVFP4 directamente contra el modelo BF16 y exporta pesos NVFP4 estandar sin ruta de inferencia personalizada, lo que permite servir el modelo con vLLM de forma nativa.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal (image-text-to-text).
-- Modo thinking explícito, con parser de razonamiento `qwen3` en vLLM.
-- Razonamiento matemático de competición (AIME'26, HMMT'26).
-- Generación de código (LiveCodeBench).
-- Contexto largo: RULER evaluado hasta 128K y ventana configurable de 262.144 tokens.
-- Tool calling y function calling, con `--enable-auto-tool-choice` y parser `qwen3_xml`.
-- Flujos agénticos y razonamiento multi-paso.
-- Recuperación en contexto largo (MRCR, incluida variante 8-needle).
-- Decodificación especulativa MTP para acelerar la generación.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generacion de texto y razonamiento avanzado, incluyendo modo thinking (parser `qwen3` en vLLM).
+- Procesamiento multimodal image-text-to-text: entrada de imagenes junto con texto.
+- Razonamiento matematico de competicion (AIME'26, HMMT'26) y cientifico (GPQA-Diamond, SuperGPQA).
+- Generacion de codigo (LiveCodeBench).
+- Contexto largo con recuperacion multi-needle (MRCR, RULER hasta 128K).
+- Soporte de tool calling / function calling (parser `qwen3_xml`, `--enable-auto-tool-choice`).
+- Capacidades agenticas y razonamiento multi-paso.
+- Decodificacion especulativa mediante MTP (`num_speculative_tokens: 2`).
+- Capacidades multilingues: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
 
-- Razonamiento científico y técnico asistido: el modelo mantiene 90,91 en GPQA-Diamond frente a 91,41 del BF16, por lo que sirve para responder preguntas de nivel posgrado en física, química y biología con una penalización de calidad mínima.
-- Análisis de documentos largos y código en contexto: con 262.144 tokens de ventana y 95,8 en RULER 128K, permite procesar repositorios completos, expedientes o manuales extensos en una sola pasada.
-- Agentes con tool calling: la integración nativa con el parser `qwen3_xml` y `--enable-auto-tool-choice` de vLLM facilita agentes que invocan APIs y ejecutan pipelines multi-paso.
-- Asistencia sobre imágenes: al ser image-text-to-text, puede describir, extraer y razonar sobre capturas, diagramas o documentos escaneados dentro de un flujo conversacional.
-- Generación de código en producción: 79,2 en LiveCodeBench y soporte de tool calling permiten integrarlo en revisión de código, generación de tests y automatización de CI/CD.
-- Despliegue en una sola GPU Blackwell de 32 GB: con 19,7 GB de pesos y contexto reducido a 65.536 tokens cabe en una RTX 5090, lo que habilita prototipos y entornos de desarrollo sin clúster.
-- Servicio de alto rendimiento con vLLM: `--max-num-seqs 512` y decodificación especulativa MTP con 2 tokens permiten atender muchas peticiones concurrentes por GPU.
+- Razonamiento cientifico asistido: el modelo mantiene 90,91 en GPQA-Diamond, por lo que puede emplearse en tareas de nivel posgrado en fisica, quimica y biologia con una perdida de 0,5 puntos respecto al BF16, a un tercio del peso.
+- Analisis de documentos e imagenes: al ser image-text-to-text, permite extraer y razonar sobre contenido de capturas, graficos o diagramas en pipelines de document understanding.
+- Agentes con tool calling: la combinacion de `--enable-auto-tool-choice`, parser `qwen3_xml` y contexto de 262.144 tokens permite construir agentes que encadenan llamadas a herramientas manteniendo historiales largos.
+- Generacion de codigo en produccion: con 79,2 en LiveCodeBench, es adecuado para autocompletado, revision de PRs y generacion de tests dentro de pipelines de CI/CD servidos con vLLM.
+- Recuperacion sobre corpus extensos: los resultados RULER (96,3 a 32K, 95,8 a 128K) lo hacen apto para RAG con ventanas muy largas o analisis de repositorios completos.
+- Despliegue en una sola GPU Blackwell: sus 19,7 GB permiten servirlo en una RTX 5090 con contexto de 65.536 tokens, habilitando prototipos y entornos de desarrollo sin clúster multi-GPU.
+- Evaluacion comparativa de cuantizaciones: sirve como referencia de calidad para validar otras builds NVFP4 frente al BF16 original.
 
 ## Benchmarks y rendimiento
 
-Datos de la model card. GPQA-Diamond: 2 ejecuciones, n=396; AIME'26: 3 repeticiones, n=90.
+Comparativa de builds NVFP4 del mismo modelo base (GPQA-Diamond: 2 ejecuciones, n=396; AIME'26: 3 repeticiones, n=90):
 
-| Modelo | Tamaño | Capas NVFP4 | GPQA-D | AIME'26 |
+| Modelo | Tamano | Lineales NVFP4 | GPQA-D | AIME'26 |
 |---|---:|---:|---:|---:|
 | QUASAR (este modelo) | 19,7 GB | 496/496 | 90,91 | 100,0 |
 | BF16 original | 55,6 GB | — | 91,41 | 100,0 |
 | Unsloth NVFP4 | 23,4 GB | 168/496 | 89,39 | 97,78 |
 | Inferact NVFP4 | 26,4 GB | 304/496 | 87,63 | 96,67 |
+
+Benchmarks adicionales:
 
 | Modelo | MRCR | MRCR 8-needle | HMMT'26 | SuperGPQA | LiveCodeBench | RULER 32K | RULER 64K | RULER 128K |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -70,44 +75,46 @@ Datos de la model card. GPQA-Diamond: 2 ejecuciones, n=396; AIME'26: 3 repeticio
 
 ## Requisitos de hardware
 
-- VRAM estimada: 19,7 GB de pesos NVFP4; el repo ocupa 22,8 GB.
-- GPU obligatoria con soporte FP4: NVIDIA Blackwell, compute capability 10.0 o superior. No funciona en arquitecturas anteriores.
-- RTX 5090 (32 GB): viable con `--max-model-len 65536` y `--gpu-memory-utilization 0.85`.
-- GPUs de centro de datos Blackwell (B200 y similares): necesarias para la ventana completa de 262.144 tokens y `--max-num-seqs 512`.
-- Despliegue: vLLM >= 0.27 con soporte nativo, sin conversión. La model card también etiqueta sglang y compressed-tensors.
-- Aceleración: decodificación especulativa MTP con `num_speculative_tokens: 2`.
-- Latencia y throughput: no disponible en la información proporcionada.
+- VRAM estimada: 19,7 GB para los pesos NVFP4; con overhead de KV cache y contexto de 65.536 tokens cabe en 32 GB con `--gpu-memory-utilization 0.85`.
+- GPU recomendadas: NVIDIA Blackwell (compute capability 10.0+), como RTX 5090 (32 GB), B200 o GB200. Imprescindible soporte FP4 nativo.
+- No es compatible con GPUs Ampere o Ada (A100, RTX 4090) por falta de soporte FP4.
+- Despliegue: vLLM >= 0.27 de forma nativa, sin conversion. El autor menciona tambien sglang en los tags. No se menciona soporte GGUF ni llama.cpp para esta build.
+- Configuracion recomendada: `--max-model-len 262144`, `--max-num-seqs 512`, `--speculative-config '{"method": "mtp", "num_speculative_tokens": 2}'`.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | GPQA-D | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| QUASAR NVFP4 (este) | 27,8 B | 262.144 | 90,91 | Apache 2.0 | Hugging Face, vLLM |
-| Qwen3.8-27B BF16 | 27,8 B | no disponible | 91,41 | Apache 2.0 | Hugging Face |
-| Unsloth NVFP4 | 27,8 B (base) | no disponible | 89,39 | Apache 2.0 (heredada) | Hugging Face |
-| Inferact NVFP4 | 27,8 B (base) | no disponible | 87,63 | Apache 2.0 (heredada) | Hugging Face |
-
-Frente al BF16, QUASAR reduce el tamaño un 64,6 % (55,6 a 19,7 GB) con una caída de 0,5 puntos en GPQA-Diamond y sin pérdida en AIME'26. Frente a los otros dos builds NVFP4 públicos, es el más pequeño y el de mayor puntuación en ambas pruebas.
+| Modelo | Parametros | Contexto | GPQA-D | AIME'26 | Licencia | Disponibilidad |
+|---|---|---|---|---|---|---|
+| QUASAR NVFP4 (este) | 27,8B | 262.144 | 90,91 | 100,0 | Apache 2.0 | Hugging Face, vLLM |
+| Qwen3.8-27B BF16 | 27,8B | no disponible | 91,41 | 100,0 | Apache 2.0 | Hugging Face |
+| Unsloth NVFP4 | 27,8B | no disponible | 89,39 | 97,78 | Apache 2.0 | Hugging Face |
+| Inferact NVFP4 | 27,8B | no disponible | 87,63 | 96,67 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
-- Requiere hardware Blackwell con FP4; no es desplegable en Ampere, Hopper ni GPUs de consumo anteriores.
-- La ventana completa de 262.144 tokens exige memoria muy superior a la de una GPU de 32 GB.
-- Pérdida medible frente al BF16 en tareas de contexto largo: MRCR 79,1 frente a 83,4 y MRCR 8-needle 52,7 frente a 58,5.
-- Caída de 1,8 puntos en LiveCodeBench (79,2 frente a 81,0) y de 2,4 en HMMT'26 (73,4 frente a 75,8).
-- Los benchmarks publicados proceden del propio autor; la evaluación independiente citada es una discusión en el repo oficial de Qwen, no una publicación arbitrada.
-- Riesgo de alucinación y sesgos: no documentados en la información disponible; aplican los del modelo base Qwen3.8-27B.
-- Idiomas soportados no declarados; conviene validar el comportamiento multilingüe antes de usarlo en producción.
-- Licencia Apache 2.0, que permite uso comercial, pero sujeta a las condiciones del modelo base.
+- Requiere hardware Blackwell con soporte FP4; no funciona en A100, H100 ni RTX 4090.
+- Perdida medible frente al BF16 en tareas de contexto largo: MRCR 79,1 frente a 83,4 y MRCR 8-needle 52,7 frente a 58,5.
+- Ligera degradacion en codigo y matematicas: LiveCodeBench 79,2 frente a 81,0 y HMMT'26 73,4 frente a 75,8.
+- Riesgo de alucinacion inherente al modelo base; la cuantizacion puede amplificarlo en tareas de recuperacion con muchas agujas.
+- Idiomas soportados no documentados en la informacion disponible.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-27B.
+- El contexto maximo de 262.144 tokens no es viable en GPUs de 32 GB; el propio autor recomienda 65.536 en RTX 5090.
+- La evaluacion independiente citada (NVFP4 shootout) procede de una discusion en el repo oficial; no se aportan detalles metodologicos completos.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/QUASAR-QAT/Qwen3.8-27B-QUASAR-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper QUASAR: https://arxiv.org/abs/2608.13966
-- Página del proyecto: https://quasar-qat.github.io/
-- Código: https://github.com/vincentcounathe/quasar-qat
-- Discusión de evaluación independiente: https://huggingface.co/Qwen/Qwen3.8-27B/discussions/192
+- Pagina del proyecto: https://quasar-qat.github.io/
+- Codigo: https://github.com/vincentcounathe/quasar-qat
+- Discusion con evaluacion independiente: https://huggingface.co/Qwen/Qwen3.8-27B/discussions/192
 - Build NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Build NVFP4 de Inferact: https://huggingface.co/Inferact/Qwen3.8-27B-NVFP4
-- Colección QUASAR-QAT: https://huggingface.co/collections/QUASAR-QAT/quasar-qat-models-6aa3452a0caa78ce72bbbe0f
+- Hermano menor Qwen3.5-4B (W4A16): https://huggingface.co/QUASAR-QAT/Qwen3.5-4B-QUASAR-NVFP4
+- Hermano menor Qwen3.5-4B (W4A4): https://huggingface.co/QUASAR-QAT/Qwen3.5-4B-QUASAR-NVFP4-W4A4
+- Hermano menor Qwen3.5-4B (GGUF): https://huggingface.co/QUASAR-QAT/Qwen3.5-4B-QUASAR-Q4_0-GGUF
+- Coleccion QUASAR-QAT: https://huggingface.co/collections/QUASAR-QAT/quasar-qat-models-6aa3452a0caa78ce72bbbe0f
+- Coleccion Gemma 4: https://huggingface.co/collections/QUASAR-QAT/quasar-native-4-bit-gemma-4-6aa3561770e6e4001271bf1e
+- Coleccion Muse-Glimmer: https://huggingface.co/collections/QUASAR-QAT/quasar-native-4-bit-muse-glimmer-6aa4736ca711a87d471e807d

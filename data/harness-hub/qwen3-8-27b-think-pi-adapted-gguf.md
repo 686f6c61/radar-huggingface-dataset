@@ -2,100 +2,100 @@
 
 ## Resumen
 
-Qwen3.8-27B-think-pi-adapted-GGUF es la version en formato GGUF del adaptador LoRA `harness-hub/Qwen3.8-27B-think-pi-adapted`, entrenado por el usuario harness-hub mediante aprendizaje por refuerzo dentro del harness pi, manteniendo el modo de razonamiento (thinking) activado. El adaptador se aplica sobre el modelo base `Qwen/Qwen3.8-27B` y esta pensado para su uso con llama.cpp. El objetivo central del entrenamiento es reducir el coste en tokens de razonamiento sin sacrificar precision en tareas de ingenieria de software y uso de terminal.
+Qwen3.8-27B-think-pi-adapted-GGUF es la distribucion en formato GGUF de un adaptador LoRA entrenado mediante aprendizaje por refuerzo sobre el modelo base Qwen/Qwen3.8-27B. Lo publica el usuario harness-hub y esta pensado especificamente para su uso con llama.cpp. El adaptador se entreno con el modo de razonamiento (thinking) activado dentro del harness pi, con el objetivo de mantener la precision del razonamiento extendido pero reduciendo de forma notable el numero de tokens generados.
 
-La relevancia practica del adaptador reside en su eficiencia: segun la model card, mantiene la precision del modelo base en SWE-bench Pro (76,5 % frente a 74,5 % del base y del adaptador pi, ambos con thinking) mientras gasta aproximadamente un 40 % menos de tokens de salida en las tareas que los tres resuelven. En inferencia local, donde cada token generado cuesta tiempo, esta reduccion es un factor decisivo para el despliegue de agentes de codigo sobre hardware propio.
+El problema que aborda es el coste computacional del razonamiento explicito: cada token generado en local consume tiempo, y los modelos con thinking tienden a producir bloques de razonamiento largos. Segun la model card, este adaptador logra una precision comparable a la del modelo base y al adaptador pi original, pero con aproximadamente un 40 % menos de tokens de salida en las tareas que los tres resuelven.
 
-El repositorio publicado contiene unicamente el adaptador en formato GGUF (F16, unos 319 MB), no los pesos completos del modelo base. El tamano del repo es de 0,3 GB y el dato de parametros totales reportado en safetensors (159.383.552) corresponde al adaptador, no al modelo base de 27B. La licencia es Apache 2.0.
+El repositorio incluye dos artefactos: una version fusionada y cuantizada a Q8_0 (unos 28,6 GB) y el adaptador LoRA aislado en F16 (unos 319 MB), que se aplica sobre el GGUF del modelo base. La licencia es Apache 2.0. La informacion disponible no detalla la arquitectura interna ni la longitud de contexto nativa del modelo base mas alla de los 131.072 tokens usados en la evaluacion.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Adaptador LoRA (PEFT) sobre transformer Qwen3.8-27B; formato GGUF para llama.cpp |
-| Parametros totales | 159.383.552 (adaptador; el modelo base es de 27B) |
-| Parametros activos | no disponible |
-| Longitud de contexto | 131.072 tokens (configuracion de evaluacion y ejemplo de servicio) |
-| Tipos de cuantizacion | Adaptador en F16; el modelo base se sirve en GGUF (Q8_0 recomendado, Q4_K_M como alternativa mas ligera) |
+| Arquitectura | no disponible (modelo base Qwen/Qwen3.8-27B; adaptador LoRA sobre transformer) |
+| Parametros totales | 159.383.552 (dato de safetensors del adaptador; el modelo base completo no se detalla) |
+| Parametros activos | no aplica (no es MoE segun la informacion disponible) |
+| Longitud de contexto | 131.072 tokens (contexto usado en entrenamiento y evaluacion) |
+| Tipos de cuantizacion | Q8_0 (fusionado); adaptador LoRA en F16; se menciona Q4_K_M del base como alternativa |
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (adaptador LoRA en F16, ~319 MB) |
+| Formato de pesos | GGUF (Q8_0 fusionado y LoRA F16); el adaptador original es PEFT |
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena sobre `Qwen/Qwen3.8-27B`, un transformer del que la informacion disponible no detalla la arquitectura interna (atencion, capas, configuracion MoE o densa). El entrenamiento se realizo mediante aprendizaje por refuerzo dentro del harness pi, con el modo thinking activado, y se publica como adaptador LoRA PEFT que posteriormente se convirtio a GGUF con la herramienta `convert_lora_to_gguf.py` de llama.cpp en precision F16.
+El modelo es un adaptador LoRA entrenado con aprendizaje por refuerzo (RL) sobre Qwen/Qwen3.8-27B, siempre con el modo thinking activado y dentro del harness pi. No se proporcionan detalles sobre la composicion del dataset de entrenamiento, el numero de tokens utilizados ni la variante concreta de RL empleada. El adaptador original esta en formato PEFT; la version GGUF se genero con `convert_lora_to_gguf.py` de llama.cpp en F16.
 
-La innovacion tecnica destacable es el objetivo de entrenamiento: conservar la precision del razonamiento explicito reduciendo el numero y la longitud de los bloques de razonamiento generados. Segun la model card, en las tareas que resuelven los tres modelos, el adaptador produce 26,7k tokens de salida por tarea en SWE-bench Pro frente a 46,0k del adaptador pi con thinking (−42 % de media), y 5,8k por tarea en Terminal-Bench 2.1 frente a 9,3k (−38 % de mediana). No se detalla en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como DPO.
+La innovacion principal es la eficiencia del razonamiento: el adaptador conserva la precision del thinking pero reduce el numero de tokens de salida, con bloques de razonamiento mas cortos. La version fusionada Q8_0 se construyo fusionando el adaptador sobre el BF16 del base (`ggml-org/Qwen3.8-27B-GGUF`, revision c186941) con `llama-export-lora` y cuantizando despues a Q8_0 con `llama-quantize`, usando llama.cpp en el commit 374d90a9fc3b3122473e0879041cff2eeb3d568f. No se mencionan tecnicas como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento explicito con modo thinking activable mediante `enable_thinking`.
-- Resolucion de tareas de ingenieria de software: parcheo de repositorios y correccion de bugs evaluados en SWE-bench Pro.
-- Uso de terminal y ejecucion de comandos en entornos de agente, evaluado en Terminal-Bench 2.1.
-- Integracion con harness de agentes: el modelo esta pensado para ejecutarse bajo el harness pi a traves de la extension `pi-llama`.
-- Razonamiento multi-paso con presupuesto de pasos (las evaluaciones usaron un limite de 100 pasos por tarea).
-- Eficiencia en tokens de razonamiento: aproximadamente un 40 % menos de tokens de salida en tareas resueltas por igual.
-- Soporte de tool calling y function calling: no confirmado de forma explicita en la informacion disponible, aunque el uso como agente bajo pi implica interaccion con herramientas.
-- Capacidades multilingues: no disponible.
-- Vision, audio u otras modalidades: no disponible.
+- Generacion de texto y razonamiento extendido con modo thinking activable mediante `enable_thinking`.
+- Razonamiento mas eficiente: aproximadamente un 40 % menos de tokens de salida que el adaptador pi con thinking en las tareas evaluadas.
+- Orientado a tareas de ingenieria de software y uso de terminal (evaluado en SWE-bench Pro y Terminal-Bench 2.1).
+- Integracion con agentes a traves del harness pi y del servidor de llama.cpp.
+- Soporte de tool calling y flujos multi-paso: no confirmado explicitamente en la informacion disponible, aunque el contexto de agentes lo sugiere.
+- Capacidades multilingues: no disponibles.
+- Capacidades de vision o audio: no disponibles.
 
 ## Casos de uso
 
-- Agente de correccion de bugs en repositorios: el adaptador esta entrenado y evaluado en SWE-bench Pro, por lo que encaja en pipelines que reciben un issue, localizan el fallo y generan un parche. La reduccion de tokens de razonamiento abarata cada intento en inferencia local.
-- Automatizacion de tareas de terminal: con Terminal-Bench 2.1 como referencia, el modelo puede operar sesiones de shell para diagnosticar entornos, ejecutar comandos y verificar resultados dentro del harness pi.
-- Despliegue local de agentes de codigo: al ser un adaptador GGUF sobre llama.cpp, permite servir un agente de 27B en hardware propio sin depender de APIs externas, con contexto de hasta 131.072 tokens para sesiones largas.
-- Asistente de refactorizacion con contexto amplio: la ventana de 131k tokens permite cargar modulos completos o varios ficheros relacionados y razonar sobre ellos en una sola sesion.
-- Evaluacion y experimentacion en investigacion de RL para agentes: el adaptador sirve como referencia reproducible de entrenamiento por refuerzo con thinking sobre un modelo abierto, con metricas publicadas en dos benchmarks de agentes.
-- Integracion en CI/CD para revision automatizada: el modelo puede analizar diffs y proponer correcciones dentro de un paso de integracion, con un coste por tarea acotado gracias al menor consumo de tokens.
-- Servicio de razonamiento con presupuesto controlado: en escenarios donde la latencia importa, el menor numero de tokens de razonamiento reduce el tiempo por respuesta manteniendo la precision del modo thinking.
+- Resolucion de incidencias de software en local: el adaptador esta entrenado y evaluado en SWE-bench Pro, por lo que encaja en flujos de parcheo de repositorios ejecutados en maquina propia con llama.cpp, reduciendo el coste de tokens frente a un thinking estandar.
+- Automatizacion de tareas de terminal: con resultados en Terminal-Bench 2.1, es adecuado para agentes que ejecutan comandos y corrigen errores en entornos de shell, manteniendo sesiones largas gracias al contexto de 131.072 tokens.
+- Agentes autonomos con presupuesto de tokens ajustado: al gastar cerca de un 40 % menos de tokens de salida, permite mas intentos o tareas dentro de un mismo limite de tiempo y coste en despliegues locales.
+- Asistente de programacion en estaciones de trabajo sin GPU de datacenter: la version Q8_0 (28,6 GB) o el base en Q4_K_M con el adaptador LoRA permiten servir el modelo en hardware de gama alta de consumo.
+- Pipelines de CI/CD con revision de codigo: el modelo puede integrarse como servidor compatible con llama.cpp y consumirse desde herramientas de analisis o generacion de parches en cada commit.
+- Investigacion sobre eficiencia del razonamiento: sirve como referencia para estudiar como el RL con thinking reduce la longitud de los bloques de razonamiento sin perder precision.
+- Despliegue embebido del adaptador: el LoRA F16 de 319 MB permite reutilizar una unica copia del modelo base y alternar entre comportamiento base y adaptado segun la tarea.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Este adaptador (GGUF, referencia BF16) | Adaptador pi con thinking | Modelo base con thinking |
+Resultados reportados por el autor (adaptador BF16 servido con vLLM bajo el harness pi, un intento por tarea, presupuesto de 100 pasos, thinking activado a esfuerzo por defecto, hasta 32k tokens de salida por llamada, temperatura 0,8):
+
+| Benchmark | Este adaptador (think + pi) | Adaptador pi con thinking | Modelo base con thinking |
 |---|---|---|---|
 | SWE-bench Pro (hard 51) | 76,5 % | 74,5 % | 74,5 % |
 | Terminal-Bench 2.1 | 57,1 % | 59,5 % | 60,7 % |
-| Tokens de salida por tarea en SWE-bench Pro | 26,7k | 46,0k | no disponible |
-| Tokens de salida por tarea en Terminal-Bench 2.1 | 5,8k (mediana) | 9,3k (mediana) | no disponible |
+| Tokens de salida por tarea SWE-bench Pro (media) | 26,7k | 46,0k | no disponible |
+| Tokens de salida por tarea Terminal-Bench 2.1 (mediana) | 5,8k | 9,3k | no disponible |
 
-Los resultados proceden del adaptador en BF16 servido con vLLM bajo el harness pi, con un intento por tarea, presupuesto de 100 pasos, thinking activado a esfuerzo por defecto, hasta 32k tokens de salida por llamada y temperatura 0,8. La model card advierte que el fichero GGUF no se ha reevaluado a traves de llama.cpp y que una base cuantizada alterara los resultados.
+La reduccion de tokens es del 42 % en media en SWE-bench Pro y del 38 % en mediana en Terminal-Bench 2.1. El autor advierte que estos resultados no se han reevaluado a traves de llama.cpp ni con el base cuantizado.
 
 ## Requisitos de hardware
 
-- VRAM estimada: el adaptador en si ocupa unos 319 MB en F16; el grueso del consumo corresponde al modelo base de 27B. En Q8_0 se estima en torno a 28-30 GB de VRAM; en Q4_K_M, en torno a 16-18 GB. Estas cifras son estimaciones por tamano de pesos y no aparecen en la informacion proporcionada.
-- GPU recomendadas: para Q8_0 se requiere una GPU de 40-48 GB o superior (A100 40/80 GB, H100, L40S 48 GB). Para Q4_K_M puede caber en una RTX 4090 de 24 GB, con margen limitado para el contexto de 131k tokens.
-- Cabe en GPU de consumo: si, en el caso de la cuantizacion Q4_K_M sobre RTX 4090 o GPUs de 24 GB, con posible descarga parcial de capas a CPU si se necesita contexto largo.
-- Opciones de despliegue: llama.cpp mediante `llama serve` con `--lora` para cargar el adaptador y `--chat-template-kwargs '{"enable_thinking": true}'`; integracion con el harness pi a traves de `pi-llama`. vLLM se uso para la evaluacion en BF16, pero la informacion disponible no confirma el soporte del adaptador GGUF en vLLM.
-- Latencia y throughput: no disponible. La model card solo cuantifica la reduccion de tokens de salida (aproximadamente un 40 %), que se traduce directamente en menor tiempo de generacion en inferencia local.
+- VRAM estimada: la version fusionada Q8_0 ocupa unos 28,6 GB de pesos, por lo que requiere del orden de 30 GB o mas de VRAM o memoria unificada para inferencia comoda con contexto amplio.
+- Alternativa con adaptador separado: modelo base Q8_0 mas el LoRA F16 (319 MB), con requisitos de memoria similares a los del base.
+- Alternativa de menor huella: base en Q4_K_M mas el LoRA, con menor calidad segun advierte el autor por alejarse de los pesos BF16 de entrenamiento.
+- GPU recomendadas: A100 40/80 GB, H100, o GPUs de consumo con 24-32 GB o mas de memoria (por ejemplo, RTX 4090 para Q4_K_M; configuraciones de 32 GB o memoria unificada para Q8_0).
+- Despliegue: llama.cpp mediante `llama serve`; el autor indica comandos concretos con `-c 131072` y `--chat-template-kwargs '{"enable_thinking": true}'`.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | SWE-bench Pro (hard 51) | Terminal-Bench 2.1 | Licencia | Formato |
-|---|---|---|---|---|---|---|
-| Qwen3.8-27B-think-pi-adapted (este adaptador) | 27B (base) + LoRA | 131.072 | 76,5 % | 57,1 % | Apache 2.0 | GGUF (LoRA F16) |
-| Qwen3.8-27B-think-pi-adapted (BF16, vLLM) | 27B (base) + LoRA | 131.072 | 76,5 % | 57,1 % | Apache 2.0 | safetensors/PEFT |
-| Qwen/Qwen3.8-27B con thinking | 27B | 131.072 | 74,5 % | 60,7 % | no disponible en la informacion | no disponible |
-| Adaptador pi con thinking | 27B (base) + LoRA | 131.072 | 74,5 % | 59,5 % | no disponible en la informacion | no disponible |
+| Modelo | Parametros | Contexto | SWE-bench Pro (hard 51) | Terminal-Bench 2.1 | Licencia |
+|---|---|---|---|---|---|
+| Este adaptador (GGUF) | base Qwen3.8-27B + LoRA | 131.072 | 76,5 % (BF16, vLLM) | 57,1 % (BF16, vLLM) | Apache 2.0 |
+| Adaptador pi con thinking | base Qwen3.8-27B + LoRA | 131.072 | 74,5 % | 59,5 % | no disponible |
+| Qwen3.8-27B base con thinking | no disponible | 131.072 (en evaluacion) | 74,5 % | 60,7 % | no disponible |
 
-La comparativa se limita a las variantes citadas en la model card; no se dispone de datos de otros modelos de la misma categoria para contrastar.
+No se dispone de comparaciones con otros modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El fichero GGUF no se ha reevaluado a traves de llama.cpp: los resultados publicados corresponden al adaptador BF16 servido con vLLM, y una base cuantizada puede degradar las metricas.
-- El adaptador se entreno y evaluo con thinking activado; su comportamiento con thinking desactivado no se ha evaluado.
-- El adaptador rinde mejor cuanto mas cerca este la base de los pesos BF16 originales; Q8_0 es el compromiso recomendado y Q4_K_M se aleja mas del comportamiento aprendido.
-- Las sesiones de razonamiento son largas: se necesitan contextos amplios (131.072 tokens en la evaluacion) y hasta 32.768 tokens de salida por llamada; recortar el contexto o el limite de salida trunca el razonamiento y degrada los resultados.
-- Riesgo de alucinacion: no cuantificado en la informacion disponible, pero inherente a los modelos generativos en tareas de codigo y terminal.
-- Sesgos conocidos: no disponible.
-- Idiomas soportados: no disponible; no se documenta el comportamiento multilingue.
-- Uso comercial: la licencia Apache 2.0 del adaptador lo permite, pero debe verificarse la licencia del modelo base Qwen3.8-27B, que no se detalla en la informacion proporcionada.
-- El repositorio solo contiene el adaptador; es necesario descargar por separado el modelo base en GGUF desde `ggml-org/Qwen3.8-27B-GGUF`.
+- No reevaluado en GGUF: los resultados proceden de vLLM en BF16; el archivo GGUF no se ha evaluado con llama.cpp y el base cuantizado alterara los resultados.
+- Thinking activado: el adaptador se entreno y evaluo con thinking on; su comportamiento con thinking off no se ha evaluado.
+- Dependencia del contexto: sesiones de razonamiento largas; reducir el contexto o el limite de salida recorta sesiones y razonamiento.
+- Cuantizacion del base: usar Q4_K_M en lugar de Q8_0 aleja el modelo del comportamiento aprendido.
+- Idiomas soportados no documentados.
+- Sesgos conocidos: no documentados en la informacion disponible.
+- Riesgo de alucinacion: no documentado; aplican los riesgos habituales de los modelos de razonamiento en tareas de codigo.
+- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B.
+- Datos de parametros: el valor de 159.383.552 corresponde al adaptador, no al modelo base completo; no debe interpretarse como tamano del modelo servido.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/harness-hub/Qwen3.8-27B-think-pi-adapted-GGUF
-- Adaptador original (BF16, PEFT): https://huggingface.co/harness-hub/Qwen3.8-27B-think-pi-adapted
+- Repositorio GGUF: https://huggingface.co/harness-hub/Qwen3.8-27B-think-pi-adapted-GGUF
+- Adaptador original: https://huggingface.co/harness-hub/Qwen3.8-27B-think-pi-adapted
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- GGUF del modelo base: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
+- GGUF del base: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Extension pi-llama: https://github.com/huggingface/pi-llama
+- Harness pi para llama.cpp: https://github.com/huggingface/pi-llama

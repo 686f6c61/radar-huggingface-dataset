@@ -2,94 +2,104 @@
 
 ## Resumen
 
-`arabic-nougat-base-books-ocr` es un modelo de OCR especializado en paginas de libros arabes impresos, desarrollado por el usuario de Hugging Face `masterofaudio2077`. Se trata de un fine-tune completo de `MohamedRashad/arabic-base-nougat` (349M parametros), que a su vez deriva de la arquitectura Nougat presentada en el paper "Nougat: Neural Optical Understanding for Academic Documents" (arXiv:2308.13418). El modelo convierte una imagen de pagina escaneada en texto estructurado con tres secciones explicitas: `[HEADER]`, `[BODY]` y `[FOOTNOTES]`, conservando las diacriticas del arabe clasico.
+`arabic-nougat-base-books-ocr` es un modelo de OCR especializado en paginas de libros arabes impresos, desarrollado por el usuario de Hugging Face `masterofaudio2077`. Se trata de un fine-tuning del checkpoint `MohamedRashad/arabic-base-nougat` (349M parametros), que a su vez deriva de la arquitectura Nougat (Swin Transformer como encoder visual y mBART como decoder textual). El modelo recibe una imagen de pagina y devuelve el texto transcrito estructurado en tres bloques: `[HEADER]`, `[BODY]` y `[FOOTNOTES]`, conservando los diacriticos arabes (harakat).
 
-La relevancia del modelo radica en su especializacion: frente a OCR genericos multilingues, este checkpoint esta entrenado especificamente sobre paginas de tafsir (exegesis coranica) escaneadas y paginas sinteticas del corpus Shamela, lo que le permite manejar la tipografia y la estructura de libros arabes clasicos. El autor reporta una tasa de error de caracteres (CER) de 0.0090 en el checkpoint del paso 15.000, frente a 0.5715 del modelo base sin fine-tune.
+El problema que aborda es concreto: la digitalizacion de fondos bibliograficos arabes clasicos, en particular paginas de tafsir (exegesis coranica) y de la biblioteca Shamela, con frecuencia escaneadas en gris y con tipografia densa. Frente al modelo base, que obtiene un character error rate (CER) de 0,5715 en las paginas originales, este fine-tuning alcanza 0,0092 en el checkpoint publicado (paso 20.000), una mejora de dos ordenes de magnitud. Ademas, incorpora aumentacion de color sintetica desde el paso 15.213 para tolerar paginas tintadas, texto coloreado o fotografias de movil, reduciendo el CER en variantes coloreadas de 0,5999 a 0,0110.
 
-Es importante senalar que se trata de un **checkpoint intermedio**: solo se han completado 15.000 de los 50.000 pasos de entrenamiento previstos, por lo que el modelo no ha alcanzado su estado final. Los pesos se distribuyen en fp16 y el repositorio ocupa 0,7 GB.
+Es relevante ahora porque los modelos OCR especializados en arabe con diacriticos siguen siendo escasos y porque el autor publica un checkpoint intermedio (paso 20.000 de 50.000 previstos), lo que lo convierte en una referencia util pero no definitiva. La licencia Apache 2.0 del modelo contrasta con la licencia CC-BY-NC-ND de los datasets de entrenamiento, un punto que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | VisionEncoderDecoderModel (encoder Swin + decoder mBART) |
+| Arquitectura | VisionEncoderDecoderModel (encoder Swin Transformer + decoder mBART) |
 | Parametros totales | 348.736.012 (349M) |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | 4.096 posiciones en el decoder; entrenamiento filtrado a 3.200 tokens de salida |
-| Tipos de cuantizacion | no disponible (pesos en fp16; no se documentan GGUF ni otras cuantizaciones) |
-| Idiomas soportados | Arabe (paginas de libros impresos) |
-| Licencia | Apache 2.0 |
+| Longitud de contexto | 4.096 posiciones en el decoder; generacion limitada a 3.200 tokens nuevos; entrada de imagen 896x672 |
+| Tipos de cuantizacion | pesos almacenados en fp16; no se documentan otras cuantizaciones (GGUF, int8, etc.) |
+| Idiomas soportados | arabe (paginas de libros impresos, arabe clasico con diacriticos) |
+| Licencia | Apache 2.0 (modelo); datasets de entrenamiento CC-BY-NC-ND |
 | Formato de pesos | safetensors (fp16) |
+| Tamano del repositorio | 1,4 GB |
+| Pipeline | image-to-text |
+| Modelo base | MohamedRashad/arabic-base-nougat |
+| Fecha de creacion | 2026-11-01 |
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura Nougat: un `VisionEncoderDecoderModel` compuesto por un encoder visual Swin y un decoder de lenguaje mBART. La entrada se procesa a traves de `NougatProcessor` con resolucion fija de 896x672 pixeles, y la salida se genera con decodificacion greedy hasta un maximo de 3.200 tokens nuevos. El texto de destino se normaliza con NFKC, conserva las diacriticas arabes y se estructura en tres lineas etiquetadas (`[HEADER]`, `[BODY]`, `[FOOTNOTES]`).
+El modelo es un `VisionEncoderDecoderModel` que combina un encoder visual Swin Transformer con un decoder de lenguaje mBART. La imagen de entrada se procesa a traves de `NougatProcessor` con resolucion fija de 896x672 pixeles, y el decoder genera hasta 3.200 tokens nuevos con decodificacion greedy. La salida se normaliza con NFKC y conserva los diacriticos arabes, estructurandose en tres lineas etiquetadas: cabecera, cuerpo y notas al pie. Los pesos se guardan en fp16 tal como los produjo el entrenamiento en el paso 20.000.
 
-El entrenamiento consistio en un fine-tune completo de los 349M parametros con un bucle personalizado de PyTorch sobre dos GPUs en DDP. Los datos combinan `freococo/ocr_arabic_books` (config `tafsir_al_tabari`, unas 16.700 paginas escaneadas) y `freococo/synth_shamela_ocr_arabic_books` (50 libros sinteticos elegidos aleatoriamente con semilla 0), en proporcion 50/50 por lote. Se aplico aumentacion de imagen simulando degradacion de escaneo y reemplazo aleatorio del 5% de los tokens de entrada del decoder (estilo Nougat) para reducir bucles de repeticion. El optimizador fue Lion con betas (0.9, 0.99), learning rate 1.5e-5, weight decay 0.1 solo en matrices de pesos, 500 pasos de warm-up lineal y decaimiento coseno hasta el 10%. Se uso precision fp16 con pesos maestros en fp32, gradient scaler y gradient checkpointing. Se filtraron las paginas cuya transcripcion superase los 3.200 tokens.
+El entrenamiento parte del checkpoint `MohamedRashad/arabic-base-nougat` y utiliza dos datasets: `freococo/ocr_arabic_books` (configuracion `tafsir_al_tabari`, unas 16.700 paginas escaneadas) y `freococo/synth_shamela_ocr_arabic_books` (50 libros elegidos aleatoriamente con semilla 0). Cada batch mezcla al 50% paginas de Tabari y paginas sinteticas de Shamela. Las paginas cuyo texto objetivo supera los 3.200 tokens se descartan para que la etiqueta quepa en las 4.096 posiciones del decoder. Desde el paso 15.213 se aplica aumentacion de color sintetica con probabilidad del 70%, usando cuatro recetas (papel tintado, texto coloreado, fondos oscuros y aspecto de foto de movil) antes de las degradaciones habituales, sin modificar las etiquetas. El checkpoint publicado corresponde al paso 20.000 de los 50.000 previstos, por lo que el entrenamiento no ha finalizado.
 
 ## Capacidades
 
-- Transcripcion de paginas de libros arabes impresos (clasicos, con diacriticas) a texto estructurado en `[HEADER]`, `[BODY]` y `[FOOTNOTES]`.
-- Preservacion de diacriticas arabes en la salida, algo poco habitual en OCR genericos.
-- Normalizacion Unicode NFKC del texto generado.
-- Procesamiento de una pagina por inferencia (image-to-text, no por lotes de documentos completos).
-- Generacion con decodificacion greedy y limite de 3.200 tokens nuevos por pagina.
-- No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo puramente OCR.
-- No soporta vision general, audio ni modo "thinking".
-- Capacidad multilingue limitada al arabe; no se documenta soporte de otros alfabetos.
+- Transcripcion OCR de paginas individuales de libros arabes impresos, con salida estructurada en `[HEADER]`, `[BODY]` y `[FOOTNOTES]`.
+- Preservacion de diacriticos arabes (harakat) en el texto generado.
+- Manejo de arabe clasico, incluyendo textos de tafsir y de la biblioteca Shamela.
+- Tolerancia a paginas coloreadas gracias a la aumentacion sintetica: papel tintado, encabezados y marcos de color, fondos oscuros o saturados y aspecto de fotografia de movil.
+- Procesamiento pagina a pagina (una imagen por inferencia); no soporta lotes multi-pagina de forma nativa en el codigo de ejemplo.
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- No soporta vision mas alla del OCR de pagina, ni audio.
+- No soporta otros idiomas ni otras escrituras.
 
 ## Casos de uso
 
-- **Digitalizacion de corpus de tafsir**: el modelo esta entrenado especificamente sobre paginas de `tafsir_al_tabari`, por lo que es adecuado para convertir secciones escaneadas de esta obra en texto plano revisable, manteniendo la separacion entre cuerpo, encabezado y notas al pie.
-- **Extraccion de texto de libros Shamela**: las paginas sinteticas del corpus Shamela forman la mitad del entrenamiento, lo que permite procesar digitalizaciones de esta biblioteca islamica clasica con estructura homogenea.
-- **Preservacion de diacriticas para estudios linguisticos**: al conservar las marcas vocalicas, el modelo sirve para proyectos de linguistica arabe o edicion critica que necesitan el texto vocalizado, no solo el esqueleto consonantico.
-- **Pre-procesado para pipelines de busqueda full-text**: la salida estructurada en tres secciones facilita indexar por separado cuerpo y notas al pie en motores de busqueda o bases de datos documentales.
-- **Revision asistida de OCR previo**: dado el bajo CER reportado en el checkpoint (0.0090 frente a 0.5715 del base), puede emplearse como segunda pasada sobre transcripciones de baja calidad, siempre con revision humana.
-- **Generacion de datasets de entrenamiento**: las transcripciones pueden alimentar la creacion de corpus alineados imagen-texto para futuros fine-tunes de OCR arabe, dado que el modelo produce etiquetas estructuradas y normalizadas.
-- **Prototipado de herramientas de lectura accesible**: conversion de paginas escaneadas a texto para lectores de pantalla o sistemas de text-to-speech en arabe, con la cautela de que la salida requiere validacion.
+- Digitalizacion de fondos de tafsir: el modelo transcribe paginas escaneadas de `tafsir_al_tabari` con un CER de 0,0092, lo que permite generar texto indexable para bibliotecas digitales con revision humana minima en las secciones de cuerpo.
+- Reconstruccion de la biblioteca Shamela: las paginas sinteticas de Shamela usadas en entrenamiento hacen que el modelo sea adecuado para convertir lotes de libros clasicos arabes en texto plano estructurado por secciones, facilitando busquedas posteriores.
+- Preservacion de textos con diacriticos: al conservar los harakat, es util para ediciones criticas y corpus linguisticos donde la vocalizacion es relevante para el analisis morfologico.
+- Procesamiento de escaneos de baja calidad o coloreados: la aumentacion de color permite usar el modelo sobre paginas con papel amarillento, marcos coloreados o fotografias de movil, con un CER de 0,0110 en las variantes coloreadas de prueba.
+- Extraccion de notas al pie: la separacion explicita en `[FOOTNOTES]` facilita pipelines que necesitan tratar el aparato critico de forma independiente del cuerpo del texto.
+- Digitalizacion asistida en proyectos de humanidades digitales: el modelo puede integrarse en un flujo por pagina con revision humana, dado que su error es bajo pero no nulo y la model card advierte contra usos que exijan exactitud sin revision.
+- Prototipado rapido de OCR arabe: al ser un modelo de 349M en fp16 (1,4 GB de repositorio), puede desplegarse en una unica GPU consumer para pruebas de concepto antes de escalar a un pipeline de produccion.
 
 ## Benchmarks y rendimiento
 
-| Metrica | Checkpoint (paso 15.000) | Modelo base sin fine-tune |
-|---|---|---|
-| CER en held-out (diacriticas incluidas, 16 paginas por pool) | 0.0090 | 0.5715 |
+Los unicos datos publicados son tasas de error de caracteres (CER) sobre conjuntos de validacion de 16 paginas por pool, con diacriticos incluidos:
 
-No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Las cifras de CER proceden de muestras pequenas de dos fuentes concretas y el propio autor advierte que deben interpretarse con cautela.
+| Metrica | Modelo base (sin fine-tuning) | Checkpoint paso 15.000 | Checkpoint paso 20.000 (publicado) |
+|---|---|---|---|
+| CER en paginas originales | 0,5715 | 0,0090 | 0,0092 |
+| CER en variantes coloreadas | no disponible | no disponible | 0,0110 |
+| CER en variantes coloreadas antes del entrenamiento con color | no disponible | 0,5999 | 0,5999 |
+
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible, lo cual es esperable en un modelo de OCR.
 
 ## Requisitos de hardware
 
-- **VRAM estimada**: al tratarse de un modelo de 349M parametros en fp16, los pesos ocupan aproximadamente 0,7 GB. Con activaciones y procesamiento de imagen a 896x672, la inferencia cabe holgadamente en GPUs con 4-6 GB de VRAM.
-- **GPU recomendadas**: cualquier GPU consumer moderna es suficiente; el autor entreno con dos GPUs en DDP (modelo concreto no especificado). Para inferencia, una RTX 3060, RTX 4060 o superior es mas que suficiente.
-- **Compatibilidad con GPU consumer**: si, cabe en practicamente cualquier GPU consumer con al menos 4 GB de VRAM, e incluso podria ejecutarse en CPU con pesos en fp32 (mas lento).
-- **Opciones de despliegue**: `transformers` con `VisionEncoderDecoderModel` y `NougatProcessor` (metodo documentado por el autor). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI; al ser un encoder-decoder vision-language, estas herramientas no son directamente aplicables sin adaptacion.
-- **Latencia y throughput**: no disponibles en la informacion proporcionada. La generacion es greedy y secuencial hasta 3.200 tokens, por lo que la latencia dependera del numero de tokens generados por pagina.
+- VRAM estimada para inferencia: aproximadamente 0,7 GB solo para pesos en fp16, mas memoria para activaciones del encoder Swin y del decoder mBART; en la practica, entre 2 y 4 GB de VRAM para una pagina de 896x672.
+- GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM; una RTX 3060, RTX 4060 o superior es suficiente. Para procesamiento por lotes de muchas paginas, una A100 o H100 mejora el throughput.
+- Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna con 4 GB o mas; tambien puede ejecutarse en CPU en fp32, con mayor latencia.
+- Opciones de despliegue: `transformers` con `VisionEncoderDecoderModel` y `NougatProcessor` (unico flujo documentado en la model card); no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, y el formato safetensors fp16 no es directamente compatible con llama.cpp sin conversion.
+- Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Estado |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `masterofaudio2077/arabic-nougat-base-books-ocr` | 349M | 4.096 posiciones (salida filtrada a 3.200) | Arabe | Apache 2.0 | Checkpoint intermedio (15k/50k pasos) |
-| `MohamedRashad/arabic-base-nougat` | 349M | no disponible | Arabe | no disponible | Modelo base, sin fine-tune especifico de libros |
-| Nougat original (Meta) | no disponible en la informacion | no disponible | Principalmente ingles/cientifico | no disponible en la informacion | Modelo de referencia del paper arXiv:2308.13418 |
+| arabic-nougat-base-books-ocr | 349M | 4.096 posiciones (3.200 tokens de salida) | arabe | Apache 2.0 | Hugging Face |
+| MohamedRashad/arabic-base-nougat | no disponible | no disponible | arabe | no disponible | Hugging Face |
+| Nougat original (Meta) | no disponible | no disponible | principalmente ingles y ciencia | no disponible | Hugging Face |
+| Otros OCR arabes especializados | no disponible | no disponible | arabe | no disponible | no disponible |
 
-No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada, salvo la comparacion de CER entre el checkpoint y su base (0.0090 frente a 0.5715). No se han identificado en la informacion otros modelos OCR arabes comparables con especificaciones verificables.
+La comparacion cuantitativa con alternativas no esta disponible en la informacion proporcionada; solo se conoce el CER del modelo base (0,5715) frente al fine-tuning (0,0092), que muestra la mejora relativa pero no permite situar el modelo frente a terceros.
 
 ## Limitaciones y advertencias
 
-- **Checkpoint intermedio**: solo se han completado 15.000 de los 50.000 pasos previstos; el modelo no ha terminado su entrenamiento y su comportamiento puede mejorar o cambiar en versiones posteriores.
-- **Fuera de alcance**: no maneja escritura manuscrita, tablas, maquetacion multicolumna, documentos que no sean libros ni otros alfabetos distintos del arabe.
-- **Paginas densas no evaluadas**: las paginas cuya transcripcion supera los 3.200 tokens fueron eliminadas de entrenamiento y evaluacion, por lo que su rendimiento en paginas muy densas es desconocido.
-- **Muestras de evaluacion pequenas**: el CER de 0.0090 se calculo sobre 16 paginas por pool de dos fuentes concretas; no es una estimacion robusta de rendimiento general.
-- **Riesgo de alucinacion y bucles**: el autor aplica reemplazo aleatorio de tokens de entrada para reducir bucles de repeticion, lo que sugiere que este es un problema conocido en la arquitectura; la salida debe revisarse siempre.
-- **Uso sin revision desaconsejado**: el propio autor indica que cualquier uso que dependa de que el texto sea exacto sin revision queda fuera de alcance.
-- **Licencia del modelo Apache 2.0, pero datos de entrenamiento CC-BY-NC-ND**: los datasets `freococo/ocr_arabic_books` y `freococo/synth_shamela_ocr_arabic_books` tienen licencia CC-BY-NC-ND (no comercial, sin derivadas), lo que plantea dudas sobre el uso comercial del modelo derivado pese a la licencia Apache 2.0 de los pesos. Conviene revisar este punto antes de un despliegue en produccion comercial.
-- **Sin demo publicada**: el autor marca la demo como "TODO"; no hay espacio de Hugging Face ni endpoint verificado.
-- **Cero descargas y cero likes**: el modelo es muy reciente y no cuenta con validacion de la comunidad.
+- Checkpoint intermedio: corresponde al paso 20.000 de 50.000 planificados; el autor indica que el paso 15.000 obtuvo mejor CER en paginas originales (0,0090 frente a 0,0092), por lo que el checkpoint publicado no es necesariamente el mejor hasta la fecha.
+- Fuera de alcance: escritura manuscrita, tablas, disenos multicolumna, documentos que no sean libros y otras escrituras distintas del arabe.
+- Paginas muy densas sin probar: las que requeririan mas de 3.200 tokens de transcripcion se eliminaron del entrenamiento y de la evaluacion.
+- La aumentacion de color se entreno con paginas simuladas; las variantes coloreadas de evaluacion tambien son sinteticas, por lo que el rendimiento en fotografias reales de movil no esta validado de forma independiente.
+- Riesgo de error residual: el CER de 0,0092 implica que aproximadamente 1 de cada 100 caracteres puede ser incorrecto; la model card advierte explicitamente contra usos que dependan de exactitud sin revision humana.
+- Sesgos: al entrenarse solo con textos de tafsir y Shamela, el modelo puede tener sesgo hacia el vocabulario y la tipografia de esos corpus, con peor rendimiento en otros generos o epocas.
+- Licencia: el modelo es Apache 2.0, pero los datasets de entrenamiento son CC-BY-NC-ND; conviene verificar la compatibilidad antes de un uso comercial, especialmente si se redistribuyen derivados.
+- Sin soporte documentado para cuantizacion GGUF ni para motores de inferencia de alto rendimiento, lo que limita su integracion en pipelines de produccion a gran escala.
+- Un solo idioma: no se debe esperar ningun rendimiento en arabe dialectal manuscrito ni en texto impreso con tipografias no vistas.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/masterofaudio2077/arabic-nougat-base-books-ocr
 - Modelo base: https://huggingface.co/MohamedRashad/arabic-base-nougat
-- Paper Nougat: https://arxiv.org/abs/2308.13418
-- Dataset de tafsir: https://huggingface.co/datasets/freococo/ocr_arabic_books
-- Dataset sintetico Shamela: https://huggingface.co/datasets/freococo/synth_shamela_ocr_arabic_books
+- Dataset de paginas escaneadas de Tabari: https://huggingface.co/datasets/freococo/ocr_arabic_books
+- Dataset sintetico de Shamela: https://huggingface.co/datasets/freococo/synth_shamela_ocr_arabic_books
+- Paper de referencia Nougat (arXiv:2308.13418): https://arxiv.org/abs/2308.13418

@@ -2,94 +2,91 @@
 
 ## Resumen
 
-MNN-Pocket-0.3B-RU es un modelo de generacion de texto en ruso de tipo "text-continuation": no responde a instrucciones ni mantiene conversaciones, sino que continua un prefijo dado. Esta pensado para sugerencias de teclado y autocompletado en dispositivos, no para chat. Lo desarrolla Rahspide como un ajuste por preentrenamiento continuado sobre el modelo base taobao-mnn/MNN-Pocket-0.3B-Base, y esta publicado en formato GGUF para su uso con llama.cpp.
+MNN-Pocket-0.3B-RU-GGUF es la conversion a formato GGUF del modelo Rahspide/MNN-Pocket-0.3B-RU, un modelo de generacion de texto en ruso de 302.830.976 parametros (aproximadamente 0,30 B) desarrollado por el usuario Rahspide. Parte de la base taobao-mnn/MNN-Pocket-0.3B-Base, sobre la que se aplico un entrenamiento continuado (continued pretraining) con 1.200 millones de tokens repartidos en 0,9 B de ruso, 0,204 B de ingles y 0,096 B de chino. Su proposito no es mantener conversaciones, sino continuar un prefijo de texto dado, lo que lo orienta a sugerencias de teclado y autocompletado.
 
-El modelo cuenta con 302.830.976 parametros (aproximadamente 0,3 B) y una ventana de contexto que no se especifica en la informacion disponible. Se entreno con 1.200 millones de tokens adicionales: 0,9 B en ruso, 0,204 B en ingles y 0,096 B en chino, lo que refleja un sesgo claro hacia el ruso como idioma principal. Su relevancia actual radica en su tamano minimo (223 MB en cuantizacion Q4_K_M) y su velocidad en CPU, que lo hacen viable para inferencia en el borde y en telefonos moviles.
+La relevancia de esta version GGUF radica en su huella: el cuantizado Q4_K_M ocupa 223 MB y el Q4_1 apenas 208 MB, lo que permite ejecutarlo en dispositivos de borde (telefonos, mini-PC, Raspberry Pi) mediante llama.cpp sin GPU dedicada. El autor reporta entre 123 y 130 tok/s de generacion con Q4_K_M en una CPU x86 de 16 hilos, y 62,6 tok/s con Q4_1 en la misma maquina, a costa de un procesamiento de prompt mas lento (199 frente a 251 tok/s).
 
-La licencia Apache 2.0 permite uso comercial sin restricciones significativas. El repositorio GGUF ocupa 1,4 GB e incluye varias cuantizaciones, desde F16 (581 MB) hasta Q4_1 (208 MB). Es un modelo especializado y de nicho, adecuado para tareas de autocompletado en ruso, no como modelo generalista.
+La licencia Apache 2.0 facilita su integracion comercial, aunque el modelo esta especializado en ruso y su naturaleza de continuacion de texto limita los escenarios de uso a tareas de prediccion y autocompletado, no a asistentes conversacionales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivado de taobao-mnn/MNN-Pocket-0.3B-Base; detalles no disponibles) |
-| Parametros totales | 302.830.976 (aproximadamente 0,3 B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | F16, Q8_0, Q4_K_M, Q4_1 |
-| Idiomas soportados | ru, en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF (safetensors en el modelo base) |
+| Arquitectura | Transformer decoder-only (heredada de taobao-mnn/MNN-Pocket-0.3B-Base; detalles no disponibles) |
+| Parametros totales | 302.830.976 (aproximadamente 0,30 B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | F16 (581 MB), Q8_0 (310 MB), Q4_K_M (223 MB), Q4_1 (208 MB) |
+| Idiomas soportados | Ruso (principal), ingles, chino |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de aproximadamente 0,3 B de parametros, construido sobre taobao-mnn/MNN-Pocket-0.3B-Base. No se dispone de informacion detallada sobre el numero de capas, dimensiones ocultas, mecanismo de atencion ni si emplea innovaciones como atencion lineal o decodificacion especulativa. El autor indica que los pesos, la receta de entrenamiento y las mediciones completas estan en el repositorio del modelo base no cuantizado (Rahspide/MNN-Pocket-0.3B-RU).
+El modelo se construye sobre taobao-mnn/MNN-Pocket-0.3B-Base, un modelo de 302,8 millones de parametros del que no se detallan en la informacion disponible la arquitectura interna exacta (numero de capas, dimensiones ocultas, mecanismo de atencion). Sobre esa base, Rahspide aplico un entrenamiento continuado con 1.200 millones de tokens: 0,9 B en ruso, 0,204 B en ingles y 0,096 B en chino. No se menciona el uso de RLHF, DPO ni tecnicas de alineacion adicionales; el objetivo declarado es la continuacion de texto, no la instruccion conversacional.
 
-El entrenamiento consistio en un preentrenamiento continuado sobre 1.200 millones de tokens, con una composicion de 0,9 B en ruso, 0,204 B en ingles y 0,096 B en chino. No se menciona el uso de RLHF, DPO ni tecnicas de alineacion; dado que el modelo es de continuacion de texto, no de instrucciones, es coherente que no se haya aplicado un ajuste por preferencias. El tokenizador es byte-level, lo que implica que un token puede terminar en medio de un caracter cirilico; llama.cpp gestiona el buffering de secuencias UTF-8 parciales, pero un decodificador propio debe implementar la misma logica.
+La innovacion practica de esta version reside en la conversion a GGUF para llama.cpp y en el tokenizador byte-level, que puede partir caracteres cirilicos entre tokens. El autor advierte que llama.cpp gestiona internamente el buffering de secuencias UTF-8 parciales, pero cualquier decodificador propio debe replicar ese comportamiento para evitar caracteres corruptos. Las mediciones de rendimiento publicadas corresponden a una CPU x86 de 16 hilos: Q4_K_M alcanza 123-130 tok/s de generacion y Q8_0 99-103 tok/s; en una comparativa posterior, Q4_1 logra 62,6 tok/s frente a 54,3 de Q4_K_M, con un coste en procesamiento de prompt (199 frente a 251 tok/s).
 
 ## Capacidades
 
-- Generacion de texto por continuacion de prefijo: completa una frase o parrafo a partir de un contexto dado, sin seguir instrucciones ni responder preguntas.
-- Autocompletado y sugerencias de teclado: disenado explicitamente para este caso de uso en ruso.
-- Capacidades multilingues limitadas: ruso como idioma principal, con soporte secundario de ingles y chino.
-- No soporta tool calling ni function calling.
-- No esta disenado para agentes ni razonamiento multi-paso.
-- No dispone de modo "thinking", vision ni audio.
-- No es un modelo conversacional: no mantiene dialogos multi-turno.
+- Continuacion de texto en ruso: el modelo predice la continuacion de un prefijo dado, sin formato de instruccion ni turnos de conversacion.
+- Autocompletado y sugerencias de teclado: disenado explicitamente para completar frases cortas en entradas de texto.
+- Generacion de texto en ingles y chino: cobertura secundaria derivada del entrenamiento multilingue (0,204 B y 0,096 B de tokens respectivamente).
+- Ejecucion en dispositivo (on-device): compatible con llama.cpp y con cuantizaciones de 208-223 MB para entornos de borde.
+- Integracion con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere compatibilidad con APIs de inferencia estandar de Hugging Face.
+- No dispone de tool calling, function calling, modo thinking, vision, audio ni razonamiento multi-paso documentados en la informacion disponible.
 
 ## Casos de uso
 
-- Sugerencias de teclado en moviles: el modelo continua el texto que el usuario esta escribiendo en ruso, con un tamano de 223 MB en Q4_K_M que cabe en el almacenamiento de un telefono y se ejecuta en CPU a velocidades superiores a 100 tok/s en escritorio.
-- Autocompletado en editores de texto: integrado como servicio local, sugiere continuaciones de frases en ruso mientras el usuario escribe, aprovechando su bajo coste computacional.
-- Prediccion de texto en aplicaciones de mensajeria: sugiere la siguiente palabra o frase en chats en ruso, reduciendo la friccion de escritura en dispositivos de gama baja.
-- Generacion de texto en dispositivos embebidos: al caber en 208-223 MB y ejecutarse con llama.cpp en CPU, es viable en hardware con recursos limitados sin GPU.
-- Prototipado de funciones de autocompletado: sirve como modelo de referencia para evaluar pipelines de continuacion de texto antes de escalar a modelos mayores.
-- Filtrado y expansion de texto en ruso en pipelines de datos: puede generar continuaciones para aumentar datasets de texto en ruso en entornos con restricciones de memoria.
+- Autocompletado en teclados moviles: el modelo continuaria el prefijo escrito por el usuario con 40 tokens de salida y un cuantizado Q4_K_M de 223 MB, adecuado para integrarse en aplicaciones Android o iOS mediante llama.cpp con enlace nativo.
+- Sugerencias de frases en editores de texto rusos: al continuar el texto en lugar de responder preguntas, encaja en funciones de prediccion de escritura en procesadores de texto o correos.
+- Prediccion de texto en dispositivos sin GPU: con Q4_1 (208 MB) y 62,6 tok/s en CPU x86 de 16 hilos, puede desplegarse en mini-PC, routers o placas SBC para tareas de generacion local sin conexion.
+- Generacion de texto en ruso para entornos con recursos limitados: util en asistentes de escritura offline o herramientas de accesibilidad que completen frases para usuarios con dificultades motoras.
+- Prototipado de pipelines de generacion de texto en llama.cpp: sirve como modelo de pruebas para validar integraciones de llama.cpp, servidores de inferencia o wrappers propios antes de escalar a modelos mayores.
+- Filtrado y expansion de consultas multilingues: su cobertura de ruso, ingles y chino permite generar variantes de texto en busquedas o en tareas de aumento de datos para entrenamiento de modelos mayores.
+- Educacion e investigacion: modelo de 0,30 B para experimentar con entrenamiento continuado, cuantizacion y despliegue en borde sin requerir hardware costoso.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente proporciona mediciones de velocidad de inferencia en una CPU x86 de 16 hilos:
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en la informacion disponible. Los unicos datos de rendimiento son las mediciones de velocidad de inferencia en CPU x86 de 16 hilos:
 
-| Cuantizacion | Velocidad de generacion | Procesamiento de prompt |
-|---|---|---|
-| Q4_K_M | 123-130 tok/s | 251 tok/s |
-| Q8_0 | 99-103 tok/s | no disponible |
-| Q4_1 | 62,6 tok/s | 199 tok/s |
-
-El autor senala que Q4_1 genera mas rapido que Q4_K_M en una comparacion directa (62,6 frente a 54,3 tok/s) a costa de un procesamiento de prompt mas lento (199 frente a 251 tok/s), por lo que Q4_1 es preferible para prompts cortos con generaciones largas.
+| Cuantizacion | Generacion (tok/s) | Procesamiento de prompt (tok/s) | Tamano |
+|---|---|---|---|
+| Q4_K_M | 123-130 | 251 | 223 MB |
+| Q4_1 | 62,6 | 199 | 208 MB |
+| Q8_0 | 99-103 | No disponible | 310 MB |
+| F16 | No disponible | No disponible | 581 MB |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no requiere GPU; el modelo esta pensado para CPU. En GPU, las cuantizaciones de 208-581 MB caben en cualquier GPU con al menos 1 GB de VRAM.
-- GPU recomendadas: no aplica; el modelo esta disenado para inferencia en CPU. Cualquier GPU consumer (RTX 4090, RTX 3060, etc.) puede ejecutarlo sin problemas, pero no es su objetivo.
-- Cabe en GPU consumer: si, en cualquier GPU consumer moderna, aunque su diseno es para CPU y edge.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), y por extension cualquier frontend compatible con GGUF como Ollama o LM Studio.
-- Latencia y throughput: 123-130 tok/s en Q4_K_M y 99-103 tok/s en Q8_0 sobre CPU x86 de 16 hilos. No se han medido cifras en telefono.
+- VRAM estimada para inferencia: no requiere GPU; el modelo cabe en memoria RAM. Q4_1 ocupa 208 MB, Q4_K_M 223 MB, Q8_0 310 MB y F16 581 MB, mas el overhead del contexto y del runtime de llama.cpp.
+- GPU recomendadas: no aplica para el caso de uso previsto; cualquier GPU con soporte CUDA, Metal o Vulkan en llama.cpp puede acelerar la inferencia, pero no se han publicado mediciones en GPU.
+- Cabe en GPU de consumo: si, en cualquier GPU consumer con al menos 1 GB de VRAM libre (por ejemplo, GTX 1050, RTX 3050, RTX 4090), aunque el modelo esta pensado para CPU.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama mediante importacion de GGUF, y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
+- Latencia y throughput estimados: 123-130 tok/s con Q4_K_M y 62,6 tok/s con Q4_1 en CPU x86 de 16 hilos; no se han medido cifras en telefonos ni en GPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de comparaciones directas con otros modelos en la informacion proporcionada. La siguiente tabla compara caracteristicas estructurales con alternativas plausibles de la misma categoria (modelos pequenos para edge), pero los datos de rendimiento de los competidores no estan verificados en esta ficha.
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
+|---|---|---|---|---|---|---|
+| Rahspide/MNN-Pocket-0.3B-RU-GGUF | 0,30 B | No disponible | ru, en, zh | Apache 2.0 | GGUF | Continuacion de texto, orientado a teclado |
+| Qwen3-0.6B | 0,6 B | No disponible en esta ficha | Multiples | Apache 2.0 | Safetensors, GGUF | Modelo conversacional de mayor tamano |
+| SmolLM2-360M | 0,36 B | No disponible en esta ficha | Ingles principalmente | Apache 2.0 | Safetensors, GGUF | Generacion de texto en ingles |
 
-| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
-|---|---|---|---|---|---|
-| MNN-Pocket-0.3B-RU | 0,3 B | no disponible | ru, en, zh | Apache 2.0 | GGUF |
-| Qwen3-0.6B | 0,6 B | no disponible | multilingue | Apache 2.0 | safetensors, GGUF |
-| SmolLM2-360M | 0,36 B | no disponible | en (principal) | Apache 2.0 | safetensors, GGUF |
-
-La comparacion con Qwen3-0.6B y SmolLM2-360M es orientativa: ambos son modelos de proposito general con soporte de instrucciones, mientras que MNN-Pocket-0.3B-RU es un modelo de continuacion de texto especializado en ruso. No se dispone de datos de rendimiento comparativo.
+La comparacion con Qwen3-0.6B y SmolLM2-360M es orientativa por tamano y categoria (modelos pequenos para borde); no se dispone de datos de benchmarks del modelo evaluado para comparar rendimiento de forma objetiva.
 
 ## Limitaciones y advertencias
 
-- No es un modelo conversacional ni sigue instrucciones: solo continua texto. Usarlo en un chat producira resultados deficientes.
-- Sesgo idiomatico: entrenado mayoritariamente en ruso (0,9 B de 1,2 B tokens), con soporte limitado de ingles y chino; el rendimiento en estos idiomas sera inferior.
-- Riesgo de alucinacion: como todo modelo de lenguaje, puede generar continuaciones plausibles pero factualmente incorrectas; en autocompletado el riesgo es menor, pero existe.
-- Longitud de contexto no documentada: se desconoce la ventana maxima, lo que dificulta planificar su uso en prompts largos.
-- Tokenizador byte-level: un decodificador propio debe gestionar secuencias UTF-8 parciales para evitar caracteres corruptos en cirilico.
-- Licencia Apache 2.0: permite uso comercial, pero el modelo base taobao-mnn/MNN-Pocket-0.3B-Base debe verificarse por si tuviera condiciones adicionales.
-- Sin datos de benchmarks: no hay evidencia publicada de calidad en tareas estandar, por lo que la evaluacion en produccion debe hacerse con pruebas propias.
+- El modelo continua texto en lugar de responder instrucciones; no es adecuado para chat, preguntas y respuestas ni tareas de instruccion sin un formateo previo del prompt.
+- Sesgos conocidos: no documentados en la informacion disponible; al entrenarse con 0,9 B de tokens en ruso, puede reflejar sesgos presentes en ese corpus.
+- Riesgo de alucinacion: inherente a los modelos de lenguaje pequenos; la generacion de continuaciones puede producir texto plausible pero incorrecto.
+- Limitaciones de contexto e idioma: la longitud de contexto no esta documentada; el rendimiento en idiomas distintos del ruso, el ingles y el chino no esta evaluado.
+- Tokenizador byte-level: puede partir caracteres cirilicos entre tokens; los decodificadores propios deben gestionar secuencias UTF-8 parciales.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion; no se han documentado restricciones adicionales.
+- Caveat de produccion: las cifras de velocidad solo se han medido en CPU x86 de 16 hilos; el rendimiento en telefonos y en GPU no esta verificado. El autor no recomienda distribuir el cuantizado F16 (581 MB).
 
 ## Enlaces
 
-- Modelo GGUF en Hugging Face: https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU-GGUF
-- Modelo base no cuantizado: https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU
-- Modelo original de taobao-mnn: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-Base
+- Hugging Face (GGUF): https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Rahspide/MNN-Pocket-0.3B-RU
+- Modelo original: https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-Base

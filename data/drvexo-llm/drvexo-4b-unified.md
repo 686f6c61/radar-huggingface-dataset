@@ -2,89 +2,111 @@
 
 ## Resumen
 
-DRVEXO-4B-Unified es un modelo de lenguaje publicado por el colectivo DRVEXO-LLM en Hugging Face. El identificador y el tamano del repositorio (8,7 GB) apuntan a un modelo de aproximadamente 4.000 millones de parametros en precision de 16 bits, aunque la model card publicada no incluye ninguna especificacion formal: no detalla arquitectura, contexto, datos de entrenamiento ni idiomas soportados.
+drvexo-4b-unified es un modelo multimodal desarrollado por DRVEXO-LLM (Yujie Intelligence, 驭介智能) que integra en un único paquete de pesos comprensión de imagen, entrada de audio, diálogo de texto, generación de voz con clonación por referencia y puntuación de candidatos para toma de decisiones. Aunque se comercializa como "4B", el recuento real de parámetros en safetensors es de 6.970.568.132 (aproximadamente 6,97 mil millones), lo que sugiere un backbone lingüístico de 4B combinado con encoders y decodificadores de visión y audio empaquetados en el mismo repositorio.
 
-La relevancia de esta ficha es limitada desde el punto de vista tecnico: el modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, pero carece de documentacion verificable y de resultados de evaluacion. A fecha de la informacion disponible no registra descargas ni interacciones en la plataforma.
+El modelo está orientado a aplicaciones de interacción por voz (comunicación telefónica, control por voz, agentes encarnados) y ofrece entradas tanto por Python local como por un servidor vLLM-Omni con adaptaciones específicas. Entre sus rasgos diferenciales están el soporte de tool calling con extracción mediante JSON Schema, la capacidad de evaluar y puntuar candidatos de decisión, y la generación de audio en streaming a 24 kHz con una velocidad declarada de 2,45–2,58 veces tiempo real.
 
-Por tanto, esta ficha recoge unicamente los datos objetivos disponibles (licencia, tamano del repositorio, fecha de publicacion) y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier evaluacion de calidad, capacidades o idoneidad para produccion requeriria una validacion empirica por parte del usuario.
+La relevancia actual radica en que unifica en un solo checkpoint tareas que habitualmente requieren pipelines separados (ASR + LLM + TTS + VLM + clasificador de decisión), con licencia Apache 2.0 y pesos en safetensors. La información pública disponible es limitada en cuanto a composición del dataset de entrenamiento y detalles arquitectónicos internos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible |
-| Parametros totales | aproximadamente 4.000 millones (inferido del nombre y del tamano del repositorio de 8,7 GB en precision de 16 bits; no confirmado por el autor) |
-| Parametros activos | no disponible (no se indica que sea un modelo MoE) |
+| Arquitectura | no disponible (backbone lingüístico de 4B con módulos de visión y audio empaquetados; identificador interno `drvexo_speech_qwen35_4b`) |
+| Parametros totales | 6.970.568.132 (según safetensors) |
+| Parametros activos | no disponible (no se declara como MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (el repositorio parece contener pesos en precision completa o de 16 bits; no se publican versiones GGUF, AWQ ni GPTQ) |
-| Idiomas soportados | no disponible |
+| Tipos de cuantizacion | no disponible (solo se publican pesos en safetensors; no se listan GGUF ni AWQ) |
+| Idiomas soportados | chino (zh) e inglés (en), según la model card |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (el tamano del repositorio sugiere safetensors o binarios de PyTorch, sin confirmacion) |
+| Formato de pesos | safetensors (tamaño del repo: 14,3 GB) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card se limita a la declaracion de licencia (`license: apache-2.0`) y no incluye detalles sobre si se trata de un transformer denso, una variante MoE, un modelo hibrido o cualquier otra topologia. Tampoco se documenta la longitud de contexto nativa ni el tokenizador empleado.
+La model card describe el modelo como un sistema modular de voz y visión con un backbone lingüístico de 4B (identificador `drvexo_speech_qwen35_4b`), al que se añaden componentes de comprensión visual, entrada de audio, generación de voz con clonación por referencia y un módulo de puntuación de candidatos ("decision"). No se detalla en la información disponible la arquitectura interna de cada módulo (tipo de encoder visual, tokenizador de audio, decoder TTS), ni la profundidad o el número de capas del transformer lingüístico.
 
-Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composicion del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre posibles innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento explicito). El tamano del repositorio (8,7 GB) es coherente con un modelo de unos 4.000 millones de parametros almacenado en 16 bits, pero esta inferencia no esta confirmada por el autor.
+Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de RLHF, DPO o fine-tuning supervisado. La model card menciona un informe técnico asociado (arXiv:2611.25521, "DRVEXO-4B-Unified: Design and Evaluation of a Modular Speech-Vision System"), que probablemente contiene esos detalles, pero su contenido no está incluido en la información proporcionada. Sí se documenta una innovación operativa: el despliegue mediante vLLM-Omni con una rama específica (`codex/drvexo-speech-general-20261030`) y una revisión fijada, lo que indica integraciones a medida para streaming de texto y audio.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada documentalmente; se asume por la naturaleza del modelo, pero no hay ejemplos ni especificaciones publicadas.
-- Razonamiento, codigo y matematicas: no disponible.
-- Soporte de tool calling o function calling: no disponible.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declara lista de idiomas).
-- Capacidades multimodales (vision, audio): no disponible.
-- Modo de razonamiento explicito (thinking mode): no disponible.
+- Comprensión de imagen: respuesta a preguntas sobre imágenes, descripción de escenas y extracción de información visible, manteniendo el historial de conversación para preguntas de seguimiento.
+- Entrada de audio y transcripción (ASR): conversión de voz a texto en chino e inglés.
+- Generación de voz (TTS): síntesis a 24 kHz con salida en streaming por bloques.
+- Clonación de voz por referencia: generación de nuevas locuciones con el timbre de una grabación de referencia de 1–30 segundos, sin reentrenamiento por hablante.
+- Tool calling / function calling: generación de llamadas a herramientas y continuación del razonamiento a partir de los resultados devueltos.
+- Salida estructurada mediante JSON Schema, incluyendo objetos y arrays anidados.
+- Puntuación de candidatos de decisión ("decision"): asignación de probabilidad a opciones explícitas dadas una tarea y un contexto; el modelo no ejecuta acciones (`executable: false` en el ejemplo publicado).
+- Diálogo de texto multi-turno con chino e inglés.
+- No se declara soporte de audio de entrada en otros idiomas distintos de zh/en, ni capacidades de vídeo.
 
 ## Casos de uso
 
-Dado que no se han publicado especificaciones ni evaluaciones, los siguientes casos son escenarios plausibles para un modelo denso de aproximadamente 4.000 millones de parametros con licencia Apache 2.0, y requeririan validacion previa con el modelo real:
-
-- Clasificacion y etiquetado de texto a escala: un modelo de este tamano puede ejecutarse en una sola GPU consumer y procesar grandes volumenes de documentos para tareas de categorizacion, extraccion de entidades o moderacion, siempre que se valide su calidad en el dominio concreto.
-- Generacion aumentada por recuperacion (RAG) en entornos con requisitos de privacidad: al ser Apache 2.0, puede desplegarse en infraestructura propia sin restricciones de uso comercial, integrándose con un almacen vectorial para responder sobre documentacion interna.
-- Asistentes conversacionales ligeros: adecuado para prototipos y entornos con presupuesto de computo reducido, donde un modelo mayor no seria viable economicamente.
-- Ajuste fino especifico de dominio: con 4.000 millones de parametros, el fine-tuning con LoRA es asequible en una GPU de 24 GB, lo que permite especializar el modelo en tareas verticales (legal, sanitario, atencion al cliente) partiendo de una base permisiva.
-- Generacion de resumenes y reescritura de documentos: tarea comun para modelos de este tamano, util en pipelines de procesamiento documental por lotes.
-- Componente en sistemas multi-modelo: puede actuar como modelo enrutador o clasificador previo a un modelo mayor, reduciendo coste y latencia en arquitecturas de cascada.
-- Experimentacion academica y docencia: la licencia permisiva y el tamano moderado lo hacen util para investigacion sobre tecnicas de ajuste, cuantizacion o evaluacion.
+- Atención al cliente telefónica automatizada: el modelo puede transcribir la voz del cliente, responder por texto y sintetizar la respuesta en audio, todo con el mismo checkpoint; la latencia declarada de primer bloque de audio (307–324 ms) y la velocidad de 2,45–2,58× tiempo real permiten conversaciones fluidas.
+- Agentes de voz con clonación de marca: usando una grabación autorizada de 1–30 segundos, se puede generar la locución de un asistente con un timbre corporativo concreto sin entrenar un modelo TTS aparte.
+- Extracción de datos de documentos e imágenes: con JSON Schema se pueden obtener campos anidados (por ejemplo, pedidos con cliente, líneas de artículo y ventana de entrega) a partir de texto o de una imagen, validables contra el esquema.
+- Automatización de seguimiento comercial: el módulo de decisión puntúa candidatos (enviar correo ahora, llamar más tarde, no modificar el pedido) y devuelve la opción con mayor probabilidad, dejando la ejecución al sistema anfitrión.
+- Control por voz en aplicaciones encarnadas o domóticas: el modelo interpreta la orden hablada, genera la llamada a la herramienta correspondiente y responde verbalmente; la ejecución física queda en la capa de aplicación.
+- Asistente multimodal en movilidad o campo: con entrada de cámara y micrófono, el modelo describe lo visible y responde por voz, útil en escenarios donde el operador no puede usar teclado.
+- Enriquecimiento de pipelines de datos: transcripción de audio a texto y descripción de imágenes con un único modelo, reduciendo el número de servicios a mantener.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+La model card publica un gráfico radar con resultados por eje, con el siguiente detalle de evaluación:
+
+| Benchmark | Conjunto | Resultado |
+|---|---|---|
+| IFEval (estricto, nivel de pregunta) | 541 preguntas | no disponible en cifra numérica (solo gráfico) |
+| MATH-500 | 500 preguntas | no disponible en cifra numérica (solo gráfico) |
+| MMLU-Pro | subconjunto estratificado de 3.000 preguntas | 2338/3000 = 77,93 % (subconjunto, no válido para el total) |
+| MMMU | 900 preguntas de validación | no disponible en cifra numérica (solo gráfico) |
+| ChartQA | 1.920 preguntas de validación | no disponible en cifra numérica (solo gráfico) |
+| JevBench | subconjunto público de 231 preguntas | no disponible en cifra numérica (solo gráfico) |
+
+Además, la model card reporta métricas de servicio medidas el 7 de noviembre de 2026 en una NVIDIA DGX Spark / GB10:
+
+| Texto concurrente | Throughput total de salida (token/s) | Mediana de primer token de texto |
+|---:|---:|---:|
+| 1 | 24,02 | 58 ms |
+| 8 | 185,17 | 143 ms |
+| 32 | 601,55 | 361 ms |
+| 128 | 1.378,94 | 806 ms |
+
+Primer bloque de audio: 307–324 ms; velocidad de generación de voz: 2,45–2,58× tiempo real; frecuencia de muestreo de salida: 24 kHz. Estos datos corresponden a pruebas de streaming independientes y no representan 128 conversaciones de voz simultáneas ni latencia física de reproducción.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 8-9 GB en FP16 (coherente con 4.000 millones de parametros y un repositorio de 8,7 GB); en cuantizacion de 8 bits, en torno a 4-5 GB; en 4 bits, en torno a 2,5-3 GB. Estas cifras son estimaciones basadas en el tamano y no estan confirmadas por el autor.
-- GPU recomendadas: para FP16, una RTX 4090 (24 GB) o una A100 de 40 GB permiten margen amplio de contexto; una RTX 3090 o 4080 tambien serian suficientes para inferencia en precision de 16 bits con contexto moderado.
-- Cabe en GPU consumer: si, previsiblemente en tarjetas con 8 GB o mas en cuantizacion de 8 o 4 bits, y en tarjetas de 12-16 GB en FP16 con contexto limitado. No confirmado.
-- Opciones de despliegue: no se documentan formatos GGUF ni integraciones con vLLM, llama.cpp, Ollama o TGI. Si los pesos estan en safetensors, seria desplegable con transformers, vLLM o TGI tras verificar la arquitectura; la conversion a GGUF para llama.cpp requeriria trabajo adicional.
-- Latencia y throughput: no disponible.
+- VRAM estimada: no publicada. Con 6,97 mil millones de parámetros en safetensors (FP16/BF16) el peso ronda los 14 GB, por lo que se necesita al menos ~16 GB de VRAM solo para pesos, más memoria para caché KV y buffers de audio/visión. No se documentan cuantizaciones que reduzcan esta huella.
+- GPU recomendadas: la model card solo documenta pruebas en NVIDIA DGX Spark / GB10. Por tamaño, cabría esperar funcionamiento en A100 (40/80 GB), H100, L40S y GPUs consumer de gama alta con 24 GB o más (RTX 3090/4090), aunque no hay confirmación oficial para estas.
+- ¿Cabe en GPU consumer? Probablemente en RTX 3090/4090 (24 GB) en BF16 para pesos, pero sin datos oficiales de consumo real con audio y visión activos.
+- Opciones de despliegue: paquete Python local (`drvexo_unified.UnifiedModel`) y servidor vLLM-Omni con la rama `codex/drvexo-speech-general-20261030` sobre vLLM 0.33. No se mencionan soporte de llama.cpp, Ollama, TGI ni TensorRT-LLM.
+- Latencia y throughput: ver tabla de la sección anterior (DGX Spark / GB10).
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
-|---|---|---|---|---|---|
-| DRVEXO-4B-Unified | ~4.000 M (inferido) | no disponible | Apache 2.0 | Practicamente nula | Publicado en HF, 0 descargas |
-| Qwen2.5-3B / 7B | 3.000 M / 7.000 M | 32.768 tokens (128K en variantes) | Apache 2.0 (3B) / licencia Qwen | Extensa, con benchmarks | Amplia adopcion |
-| Llama 3.2 3B | 3.000 M | 128.000 tokens | Licencia comunitaria Llama 3.2 | Extensa, con benchmarks | Muy extendida |
-| Phi-3.5-mini | 3.800 M | 128.000 tokens | MIT | Extensa, con benchmarks | Muy extendida |
-| Gemma 2 2B | 2.000 M | 8.192 tokens | Licencia Gemma | Extensa, con benchmarks | Muy extendida |
+No se dispone de datos comparativos publicados en la información proporcionada frente a otros modelos multimodales de tamaño similar (por ejemplo, Qwen2.5-Omni, MiniCPM-o, GLM-4-Voice o Moshi). Por tanto:
 
-La comparativa se incluye como referencia de categoria (modelos densos de 2.000-4.000 millones de parametros con licencia permisiva). DRVEXO-4B-Unified no ofrece datos verificables que permitan una comparacion cuantitativa de rendimiento con estas alternativas.
+| Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| drvexo-4b-unified | 6,97 B (totales) | no disponible | zh, en | Apache 2.0 | Hugging Face, ModelScope |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: no hay model card tecnica, ejemplos, tokenizador documentado ni guia de uso, lo que impide conocer el comportamiento esperado del modelo.
-- Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible evaluar sesgos de genero, raza, idioma o dominio.
-- Riesgo de alucinacion: no evaluado; en modelos de este tamano el riesgo suele ser significativo, pero no hay datos especificos.
-- Idiomas: se desconoce que idiomas cubre con calidad; no debe asumirse un buen rendimiento en castellano sin validacion empirica.
-- Contexto: se desconoce la ventana nativa; planificar aplicaciones con contextos largos sin verificacion previa es arriesgado.
-- Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion sin restricciones adicionales, pero no exime de cumplir la normativa aplicable (proteccion de datos, propiedad intelectual, etc.).
-- Madurez: cero descargas y cero interacciones en el momento de la consulta; no hay comunidad, issues ni reportes de terceros que permitan inferir estabilidad.
-- Produccion: no recomendable sin una evaluacion interna previa que cubra calidad, latencia, seguridad y comportamiento en el dominio objetivo.
+- Idiomas: solo se declaran chino e inglés; no hay soporte documentado de castellano ni de otras lenguas, lo que limita su uso en producción en España sin evaluación previa.
+- Contexto: no se publica la longitud máxima de contexto, un dato crítico para dimensionar memoria y para casos de conversaciones largas o documentos extensos.
+- Alucinación: no se documentan evaluaciones de tasa de alucinación ni de fidelidad visual; el ejemplo de la model card insiste en responder solo con lo visible, pero no hay métricas.
+- Decisiones: las probabilidades de los candidatos (por ejemplo, 99,42 %) no equivalen a probabilidad de éxito de la acción; el modelo no ejecuta acciones (`executable: false`) y la responsabilidad de la ejecución recae en la aplicación.
+- Clonación de voz: requiere grabaciones autorizadas; existe riesgo de uso indebido (suplantación) y la model card insiste en usar solo audio con permiso. No se documentan mitigaciones técnicas (marcas de agua, detección).
+- Licencia Apache 2.0: permite uso comercial, pero conviene revisar las dependencias del paquete (PyTorch, vLLM, torchaudio) y la rama específica de vLLM-Omni, que puede tener su propia licencia.
+- Despliegue: el servidor requiere una rama no estándar de vLLM-Omni con revisión fijada; no hay soporte declarado para llama.cpp, Ollama u otros runtimes, lo que complica la portabilidad.
+- Datos de entrenamiento y evaluación: no se detallan composición, tokens ni metodología de alineación; los resultados de MMLU-Pro corresponden a un subconjunto de 3.000 preguntas y no son extrapolables al total.
+- Madurez: el repositorio tiene 180 descargas y 3 "likes" en el momento de la consulta, lo que indica adopción temprana y poca validación externa.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/DRVEXO-LLM/drvexo-4b-unified
-- No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.
+- Modelo en Hugging Face: https://huggingface.co/DRVEXO-LLM/drvexo-4b-unified
+- Modelo en ModelScope: https://modelscope.cn/models/DRVEXOLLM/drvexo-4b-unified
+- Demo en Hugging Face Space: https://huggingface.co/spaces/DRVEXO-LLM/drvexo-4b-demo
+- Demo en ModelScope: https://modelscope.cn/studios/DRVEXOLLM/drvexo-4b-demo
+- Informe técnico (arXiv): https://arxiv.org/abs/2611.25521
+- Repositorio vLLM-Omni adaptado: https://github.com/DRVEXO-LLM/vllm-omni (rama `codex/drvexo-speech-general-20261030`, revisión 6d9c034a)

@@ -2,102 +2,107 @@
 
 ## Resumen
 
-Ternary Bonsai 2.5 27B es un modelo de lenguaje causal de 27 360 millones de parámetros publicado por Prism ML, derivado de Qwen3.8-27B y cuantizado en un formato ternario propio (pesos en {−1, 0, +1} con una escala FP16 compartida por grupo de 128 pesos, equivalente a 1,76 bits por peso). Su objetivo es hacer viable el trabajo agéntico de largo horizonte en hardware de consumo: ocupa 5,93 GB frente a los 53,8 GB del modelo FP16, lo que supone una reducción de aproximadamente 9×.
+Ternary Bonsai 2.5 27B es un modelo de lenguaje de 27.360 millones de parametros publicado por Prism ML, derivado del modelo base Qwen3.8-27B mediante una cuantizacion ternaria (valores en {−1, 0, +1}) con escalado FP16 por grupos de 128 pesos. La version distribuida en este repositorio es un build GGUF orientado a llama.cpp (CUDA, Metal, CPU y SYCL) y a MLX, con un peso de 5,93 GB frente a los 53,8 GB del modelo en FP16, lo que equivale a 1,76 bits por peso y a una reduccion de tamano de aproximadamente 9x.
 
-La relevancia de esta entrega, etiquetada como 2.5, radica en que mantiene la arquitectura de atención híbrida del modelo base (aproximadamente 75 % de atención lineal y 25 % de atención completa, con SwiGLU, RoPE y RMSNorm), una ventana de contexto de 262 144 tokens y un módulo de visión de 27 bloques (0,47 B de parámetros), pero reorienta el ajuste hacia tareas de uso de herramientas y razonamiento multi-paso. Según el autor, el modelo alcanza un rendimiento en tool calling prácticamente idéntico al FP16 (77,2 frente a 77,7 de media en cinco benchmarks) y conserva el 90 % de la capacidad de codificación agéntica del modelo completo.
+La relevancia de esta version (2.5) frente a Bonsai 2 radica en el enfoque hacia tareas agenticas: tool calling de multiples pasos y coding agentico de largo horizonte. Segun la model card, el modelo mantiene un rendimiento en tool calling practicamente identico al FP16 (77,2 frente a 77,7 de media en cinco benchmarks) y recupera buena parte de la capacidad de coding agentico (90% del FP16, frente al 63% de la version anterior). Incorpora ademas variantes con cabeza de prediccion multi-token (MTP) para decodificacion especulativa, con aceleraciones de decodificacion de 1,5 a 1,8x en GPUs NVIDIA.
 
-El modelo se distribuye en formato GGUF para llama.cpp (CUDA, Metal, CPU, SYCL) y cuenta con variantes MTP que incorporan una cabeza de predicción multi-token para decodificación especulativa, con aceleraciones de decodificación de 1,5–1,8× en GPUs NVIDIA. La licencia es Apache 2.0 y el repositorio ocupa 44,1 GB, incluyendo los distintos empaquetados de cuantización.
+La arquitectura subyacente es la de Qwen3.8-27B: un transformer causal de atencion hibrida (aproximadamente 75% atencion lineal y 25% atencion completa), MLP SwiGLU, RoPE y RMSNorm, con una longitud de contexto de 262.000 tokens. La licencia es Apache 2.0, lo que facilita su uso comercial.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con atención híbrida (~75 % lineal / ~25 % completa), SwiGLU MLP, RoPE, RMSNorm |
-| Parámetros totales | 27,36 B (24,35 B de lenguaje en 64 bloques + 0,47 B de torre de visión en 27 bloques + 2,54 B de embeddings y lm-head); 26 895 998 464 según safetensors |
-| Parámetros activos | No aplica (no es MoE) |
-| Longitud de contexto | 262 144 tokens |
-| Tipos de cuantización | Ternario g128 (PTQ1_0, 1,76 bits/peso, 5,93 GB), PQ2_0 y Q2_0 para llama.cpp estándar |
-| Idiomas soportados | No disponible |
+| Arquitectura | Transformer causal con atencion hibrida (~75% lineal / ~25% completa), SwiGLU MLP, RoPE, RMSNorm; base Qwen3.8-27B |
+| Parametros totales | 27.360 millones (24,35B lenguaje en 64 bloques + 0,47B torre de vision en 27 bloques + 2,54B embedding/lm-head); safetensors reporta 26.895.998.464 |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | 262.000 tokens |
+| Tipos de cuantizacion | Ternaria g128 (pesos en {−1, 0, +1} con escala FP16 por grupo de 128), 1,76 bits por peso; packs GGUF PTQ1_0 y PQ2_0, mas Q2_0 para llama.cpp upstream |
+| Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (packs PTQ1_0, PQ2_0 y Q2_0); modelo base en safetensors |
+| Formato de pesos | GGUF (llama.cpp y MLX); pesos ternarios en base rotada por Hadamard por bloques |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.8-27B, un transformer causal de 27 B con atención híbrida: aproximadamente tres cuartas partes de las capas emplean atención lineal y el resto atención completa, lo que reduce el coste computacional del contexto largo manteniendo la capacidad de recuperación global. La representación de pesos es ternaria en formato g128: cada peso toma un valor en {−1, 0, +1} con un único factor de escala FP16 por grupo de 128 pesos, lo que da 1,585 bits de información por peso y 1,76 bits efectivos almacenados. Antes de la asignación ternaria, cada matriz se transforma mediante una rotación ortogonal de Hadamard por bloques; la rotación se pliega en los pesos almacenados en el proceso offline y el runtime aplica la transformación correspondiente a las activaciones, de modo que no añade bits ni tráfico de pesos adicional.
+El modelo conserva la arquitectura de Qwen3.8-27B: 64 bloques de lenguaje con atencion hibrida, donde aproximadamente el 75% de las capas usan atencion lineal y el 25% restante atencion completa, lo que reduce el coste computacional y de memoria en contextos largos manteniendo la capacidad de atencion global. El MLP es SwiGLU, con normalizacion RMSNorm y embeddings posicionales rotatorios (RoPE). Incluye una torre de vision de 27 bloques y 0,47B de parametros, lo que implica capacidades multimodales de entrada.
 
-No se detalla en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO. El autor sí especifica dos niveles de esfuerzo de razonamiento (`xhigh`, por defecto y más preciso, y `medium`) y que las variantes MTP incorporan una cabeza de predicción multi-token que actúa como modelo borrador para decodificación especulativa, con un incremento de velocidad de decodificación de 1,5–1,8× en GPUs NVIDIA. Los kernels de bajo bit se distribuyen en forks propios de llama.cpp (CUDA y Metal), MLX (Python) y mlx-swift (iOS/macOS); los ficheros `Q2_0` funcionan en llama.cpp upstream y `PTQ1_0` está en revisión upstream.
+La innovacion central es el formato de pesos ternario g128: cada peso toma un valor de {−1, 0, +1} con un unico factor de escala FP16 compartido por cada grupo de 128 pesos, lo que aporta log2(3) ≈ 1,585 bits de informacion por peso. Antes de la asignacion ternaria, cada matriz se transforma por bloques mediante una rotacion ortogonal de Hadamard, y el runtime aplica la transformacion equivalente a las activaciones; la rotacion se integra en los pesos almacenados sin coste adicional de bits ni de trafico de pesos. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se emplearon tecnicas de RLHF o DPO. La version 2.5 introduce variantes con cabeza de prediccion multi-token (MTP) para decodificacion especulativa y dos niveles de esfuerzo de razonamiento (`xhigh` por defecto y `medium`).
 
 ## Capacidades
 
-- Generación de texto conversacional y razonamiento con dos niveles de esfuerzo configurables (`xhigh` y `medium`).
-- Tool calling y function calling de nivel FP16 según el autor: media de 77,2 en τ²-Bench, τ³-Bench, BFCL v3, BFCL v4 y AppWorld, frente a 77,7 del modelo FP16.
-- Trabajo agéntico de largo horizonte: codificación agéntica (Terminal-Bench 2.1, SWE-bench Verified, DeepSWE) y uso de herramientas en entornos reales (AppWorld).
-- Razonamiento multi-paso y planificación con uso de herramientas encadenadas.
-- Capacidades de visión mediante la torre de 27 bloques (0,47 B de parámetros) heredada del modelo base; no se detallan en la información disponible las tareas visuales concretas evaluadas.
-- Decodificación especulativa mediante cabeza MTP en las variantes correspondientes.
-- Capacidades multilingües: no disponible en la información proporcionada.
-- Despliegue en llama.cpp (CUDA, Metal, CPU, SYCL) y MLX (Python y Swift), con compatibilidad con endpoints.
+- Generacion de texto conversacional y razonamiento con dos niveles de esfuerzo configurables (`xhigh` y `medium`).
+- Tool calling y function calling de multiples pasos, con rendimiento declarado a nivel de FP16 en cinco benchmarks de referencia.
+- Trabajo agentico de largo horizonte: uso de terminal, edicion de repositorios y resolucion de tareas de ingenieria de software.
+- Coding agentico: SWE-bench Verified, Terminal-Bench 2.1 y DeepSWE evaluados en la model card.
+- Capacidades multimodales de entrada gracias a la torre de vision de 0,47B de parametros integrada en la arquitectura base.
+- Decodificacion especulativa mediante cabeza MTP en las variantes correspondientes, con aceleracion de 1,5 a 1,8x en GPUs NVIDIA.
+- Despliegue en llama.cpp (CUDA, Metal, CPU, SYCL) y MLX (Python y Swift), incluido iOS/macOS mediante el fork de mlx-swift.
+- Compatibilidad con endpoints (tag `endpoints_compatible` en Hugging Face).
 
 ## Casos de uso
 
-- Agentes de codificación en producción: el modelo puede resolver tareas de reparación de issues y modificación de repositorios (75,6 en SWE-bench Verified, 60,1 en Terminal-Bench 2.1) ejecutándose en una sola GPU de consumo gracias a sus 5,93 GB, lo que permite integrarlo en pipelines de CI/CD o en estaciones de trabajo de desarrolladores sin acceso a clústeres.
-- Automatización de atención al cliente con herramientas: la ventana de 262 144 tokens permite mantener conversaciones multi-turno con historial extenso y documentación de producto adjunta, mientras el tool calling de nivel FP16 habilita consultas a sistemas de pedidos, CRM o bases de conocimiento dentro del mismo diálogo.
-- Orquestación de agentes multi-paso: con 77,2 de media en benchmarks de tool calling (BFCL v3/v4, τ²-Bench, τ³-Bench), el modelo es adecuado como planificador central que decide qué herramienta invocar en cada paso de un flujo agéntico.
-- Asistente de escritorio o dispositivo local: los 5,93 GB en formato ternario caben en GPUs de consumo y en Apple Silicon vía MLX, lo que permite desplegar un asistente con acceso a ficheros, terminal y aplicaciones locales sin enviar datos a la nube.
-- Procesamiento de documentos largos con extracción estructurada: la combinación de contexto de 262K tokens y salida con formato de herramienta permite procesar contratos, informes o expedientes completos y devolver campos estructurados mediante function calling.
-- Evaluación y prototipado de agentes en investigación: las variantes MTP con decodificación especulativa (1,5–1,8× más rápida en NVIDIA, hasta ~300 tokens/s en H200 y B200) reducen el coste de barridos experimentales sobre tareas de Terminal-Bench o AppWorld.
-- Análisis de imágenes con razonamiento textual: la torre de visión integrada permite tareas que combinen captura de pantalla o documento escaneado con razonamiento y llamadas a herramientas posteriores, aunque la información disponible no detalla los benchmarks visuales.
+- Agentes de automatizacion de tareas de desarrollo: el modelo puede encadenar llamadas a herramientas (shell, editores, APIs de repositorio) en tareas de varios pasos gracias a su entrenamiento agentico y a los 262K tokens de contexto, que permiten mantener el historial completo de la sesion.
+- Resolucion de issues en repositorios: con un rendimiento declarado de 75,6 en SWE-bench Verified, es adecuado para pipelines que reciben un issue, localizan el codigo relevante y proponen un parche verificable.
+- Automatizacion de operaciones en terminal: los 60,1 puntos en Terminal-Bench 2.1 lo hacen util para agentes que ejecutan comandos, interpretan salidas y corrigen errores de forma iterativa.
+- Asistentes de codigo en estaciones de trabajo con GPU de consumo: al ocupar 5,93 GB en formato ternario, cabe en GPUs consumer de 8 GB o mas y permite inferencia local con contexto largo sin depender de la nube.
+- Despliegue en dispositivos Apple: mediante los forks de MLX y mlx-swift puede ejecutarse en Apple Silicon, macOS e iOS, habilitando asistentes locales con tool calling.
+- Servicio de atencion al cliente con integracion de herramientas: el soporte de function calling permite consultar sistemas de pedidos, bases de conocimiento o APIs internas dentro de una conversacion multi-turno con contexto extenso.
+- Procesamiento de documentos largos con entrada visual: la torre de vision y el contexto de 262K tokens permiten analizar capturas, diagramas o documentos escaneados junto con texto extenso en una misma ventana.
 
 ## Benchmarks y rendimiento
 
-| Benchmark | Ternary Bonsai 2.5 27B | Qwen3.8-27B FP16 | Referencia GSQ-RCO IQ3_XXS |
-|---|---|---|---|
-| Media tool calling (τ²-Bench, τ³-Bench, BFCL v3, BFCL v4, AppWorld) | 77,2 | 77,7 | 75,3 |
-| SWE-bench Verified | 75,6 | 60,8 (Bonsai 2) | No disponible |
-| Terminal-Bench 2.1 | 60,1 | 52,8 (Bonsai 2) | No disponible |
-| DeepSWE | 27,0 | 0 (Bonsai 2) | No disponible |
-| Media general (5 categorías, 16 benchmarks) | 82,1 | 84,3 | No disponible |
-| Codificación agéntica (media) | 54,2 | No disponible | 55,5 |
+Datos declarados en la model card (medias agregadas y benchmarks individuales):
 
-Notas: la columna FP16 recoge los valores del modelo completo citados por el autor; en el caso de SWE-bench Verified, Terminal-Bench 2.1 y DeepSWE, los valores de comparación corresponden a Bonsai 2 (la entrega anterior), no al FP16. El autor indica que Bonsai 2.5 alcanza el 90 % del rendimiento FP16 en codificación agéntica, frente al 63 % de Bonsai 2. No se han publicado en la información disponible resultados desglosados por benchmark individual de tool calling ni métricas de MMLU, HumanEval o GSM8K.
+| Benchmark | Ternary Bonsai 2.5 27B | FP16 (Qwen3.8-27B) | Bonsai 2 |
+|---|---|---|---|
+| Media tool calling (τ²-Bench, τ³-Bench, BFCL v3, BFCL v4, AppWorld) | 77,2 | 77,7 | no disponible |
+| Media capacidades generales (16 benchmarks, 5 categorias) | 82,1 | 84,3 | no disponible |
+| SWE-bench Verified | 75,6 | no disponible | 60,8 |
+| Terminal-Bench 2.1 | 60,1 | no disponible | 52,8 |
+| DeepSWE | 27,0 | no disponible | 0 |
+| Coding agentico (media, % del FP16) | 90% | 100% | 63% |
+
+Comparativas declaradas frente a otras cuantizaciones de Qwen3.8-27B: frente a GSQ-RCO IQ3_XXS (1,7x mayor en tamano), Bonsai 2.5 obtiene 77,2 frente a 75,3 en tool calling y 54,2 frente a 55,5 en coding agentico. La model card lo describe como el modelo agentico mas fuerte por debajo de 10 GB entre los builds de bajo bit comparados. No se detallan los resultados individuales por benchmark en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: 5,93 GB para los pesos en PTQ1_0 (1,76 bits/peso); el consumo real debe sumar la caché KV correspondiente a 262K tokens de contexto, cuyo tamaño no se detalla en la información disponible.
-- GPU recomendadas: el autor reporta mediciones en siete GPUs NVIDIA, con aproximadamente 300 tokens/s en H200 y B200; no se especifica la lista completa de GPUs medidas.
-- Cabe en GPU de consumo: sí, con 5,93 GB de pesos el modelo es desplegable en GPUs consumer; el autor lo posiciona como el modelo agéntico más fuerte por debajo de 10 GB frente a los builds de bajo bit de Qwen3.8-27B comparados.
-- Opciones de despliegue: llama.cpp (CUDA, Metal, CPU, SYCL) con los packs Q2_0 (upstream) y PTQ1_0 (en revisión upstream); MLX en Python y Swift para Apple Silicon; forks propios de llama.cpp, MLX y mlx-swift para los kernels de bajo bit.
-- Latencia y throughput: 2,3–3,0× más rápido en decodificación que en el día de lanzamiento de Bonsai 2 en seis de las siete GPUs NVIDIA medidas; las variantes MTP añaden un factor de 1,5–1,8× en GPUs NVIDIA. No se detallan cifras de TTFT ni de throughput para CPU o Metal.
+- VRAM estimada: 5,93 GB para los pesos en formato ternario PTQ1_0; el repositorio completo ocupa 44,1 GB porque incluye multiples packs y variantes.
+- Cabe en GPUs de consumo: si, en tarjetas con 8 GB o mas de VRAM (RTX 3060 Ti, RTX 4060, RTX 4070 y superiores), asi como en Apple Silicon mediante MLX.
+- GPUs de datacenter medidas en la model card: siete GPUs NVIDIA, incluidas H200 y B200, donde alcanza aproximadamente 300 tokens/s con MTP y los kernels en pruebas.
+- Aceleracion de decodificacion: 2,3 a 3,0x mas rapida que en el lanzamiento de Bonsai 2 en seis de las siete GPUs NVIDIA medidas; 1,5 a 1,8x adicional con las variantes MTP.
+- Opciones de despliegue: llama.cpp upstream con los ficheros Q2_0, fork de llama.cpp de PrismML para PTQ1_0 (CUDA y Metal), MLX (Python y Swift), mlx-swift para iOS/macOS. El soporte de PTQ1_0 esta en revision en llama.cpp upstream.
+- Backends adicionales: CPU y SYCL ademas de CUDA y Metal.
+- Latencia: no disponible de forma desagregada por GPU; solo se publican las cifras de throughput mencionadas.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Tool calling (media) | Codificación agéntica (media) | Licencia | Tamaño en disco |
+| Modelo | Parametros | Contexto | Tool calling (media) | Coding agentico (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ternary Bonsai 2.5 27B | 27,36 B | 262K | 77,2 | 54,2 | Apache 2.0 | 5,93 GB (PTQ1_0) |
-| Qwen3.8-27B FP16 (base) | 27,36 B | 262K | 77,7 | No disponible | No disponible | 53,8 GB |
-| GSQ-RCO IQ3_XXS (build de bajo bit de Qwen3.8-27B) | No disponible | No disponible | 75,3 | 55,5 | No disponible | ~10,1 GB (1,7× mayor) |
-| Bonsai 2 27B (entrega anterior) | 27,36 B | 262K | No disponible | 63 % del FP16 | Apache 2.0 | No disponible |
+| Ternary Bonsai 2.5 27B | 27,36B (ternario, 5,93 GB) | 262K | 77,2 | 54,2 | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3.8-27B FP16 | 27,36B | 262K | 77,7 | ~60 (90% de FP16) | no disponible en la informacion | modelo base |
+| GSQ-RCO IQ3_XXS (Qwen3.8-27B) | 27,36B (IQ3_XXS, ~1,7x mayor) | no disponible | 75,3 | 55,5 | no disponible | GGUF |
+| Bonsai 2 27B | 27,36B (ternario) | no disponible | no disponible | 63% del FP16 | Apache 2.0 | GGUF |
+
+La comparativa se limita a los datos publicados en la model card; no se dispone de resultados de otros modelos de tamano similar ajenos a la familia Qwen3.8-27B.
 
 ## Limitaciones y advertencias
 
-- La cuantización ternaria introduce una pérdida medible frente al FP16: 82,1 frente a 84,3 en la media general de 16 benchmarks, y el 90 % del rendimiento FP16 en codificación agéntica (no el 100 %).
-- El rendimiento en codificación agéntica queda ligeramente por debajo de un build de bajo bit convencional de mayor tamaño (54,2 frente a 55,5 de GSQ-RCO IQ3_XXS), aunque el modelo es 1,7× más pequeño.
-- No se especifican los idiomas soportados; no debe asumirse cobertura multilingüe más allá de la del modelo base sin verificación.
-- No se detallan sesgos conocidos, tasas de alucinación ni evaluaciones de seguridad en la información disponible.
-- El uso de contexto largo (262K tokens) incrementa el consumo de memoria de la caché KV, no cuantificado en la documentación disponible; en GPUs de consumo esto puede limitar la longitud efectiva de contexto.
-- Los kernels de bajo bit requieren forks propios de llama.cpp y MLX; solo los ficheros Q2_0 funcionan en llama.cpp upstream, y PTQ1_0 está aún en revisión upstream, lo que puede afectar a la portabilidad y al soporte a largo plazo.
-- Las cifras de velocidad (~300 tokens/s en H200/B200) y las aceleraciones MTP se refieren a GPUs NVIDIA de gama alta; el rendimiento en CPU, Metal y SYCL no se detalla.
-- La licencia Apache 2.0 permite uso comercial, pero el modelo base Qwen3.8-27B puede tener condiciones adicionales que conviene verificar antes de desplegar en producción.
+- La cuantizacion ternaria implica una perdida medible de capacidades generales: 82,1 frente a 84,3 del FP16 en la media de 16 benchmarks, y aproximadamente un 10% menos en coding agentico.
+- El rendimiento en tool calling se ha medido con los ajustes de evaluacion del autor; los resultados pueden variar con prompts, herramientas y esquemas de function calling distintos.
+- No se especifican los idiomas soportados en la informacion disponible; el comportamiento multilingue fuera del ingles no esta documentado.
+- Riesgo de alucinacion inherente a los modelos de lenguaje; en tareas agenticas con ejecucion de comandos o edicion de codigo, los errores pueden tener efectos reales, por lo que se recomienda sandboxing y supervision.
+- No se documentan sesgos conocidos ni la composicion del dataset de entrenamiento, lo que dificulta evaluar riesgos de sesgo.
+- El pack PTQ1_0 requiere el fork de llama.cpp de PrismML o MLX; solo los ficheros Q2_0 funcionan en llama.cpp upstream, y el soporte de PTQ1_0 esta aun en revision.
+- El repositorio de 44,1 GB incluye varias variantes; es necesario seleccionar el pack y la variante (con o sin MTP) adecuados al backend para no descargar pesos innecesarios.
+- La licencia Apache 2.0 permite uso comercial, pero las condiciones del modelo base Qwen3.8-27B deben verificarse de forma independiente, ya que no se detallan en la informacion proporcionada.
 
 ## Enlaces
 
-- [Hugging Face: prism-ml/Ternary-Bonsai-2.5-27B-GGUF](https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF)
-- [Sitio web de Prism ML](https://prismml.com)
-- [Whitepaper de Bonsai 2.5 27B](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-5-27b-whitepaper.pdf)
-- [Whitepaper de Bonsai 2 27B](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf)
-- [Demo y ejemplos (Bonsai-demo)](https://github.com/PrismML-Eng/Bonsai-demo)
-- [Fork de llama.cpp con kernels de bajo bit](https://github.com/PrismML-Eng/llama.cpp)
-- [Fork de MLX](https://github.com/PrismML-Eng/mlx)
-- [Fork de mlx-swift](https://github.com/PrismML-Eng/mlx-swift)
-- [Discord de Prism ML](https://discord.gg/prismml)
-- [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
+- Modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF
+- Web de Prism ML: https://prismml.com
+- Whitepaper de Bonsai 2.5 27B: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-5-27b-whitepaper.pdf
+- Whitepaper de Bonsai 2 27B (formato ternario y base rotada): https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf
+- Demo y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo
+- Fork de llama.cpp con kernels de bajo bit (CUDA y Metal): https://github.com/PrismML-Eng/llama.cpp
+- Fork de MLX (Apple Silicon): https://github.com/PrismML-Eng/mlx
+- Fork de mlx-swift (iOS/macOS): https://github.com/PrismML-Eng/mlx-swift
+- Discord de la comunidad: https://discord.gg/prismml

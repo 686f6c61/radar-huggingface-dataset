@@ -2,85 +2,96 @@
 
 ## Resumen
 
-Gemma 4 E2B IT Distill ED es un ajuste fino (fine-tuning) del modelo google/gemma-4-E2B-it, desarrollado por el usuario samyhaff. El modelo base pertenece a la familia Gemma 4 de Google, en su variante E2B en modo instruccion (IT). El ajuste se ha orientado especificamente a tareas de entity linking y entity disambiguation, segun las etiquetas declaradas por el autor.
+gemma-4-e2b-it-distill-ed es un modelo de desambiguación de entidades (entity disambiguation, ED) desarrollado por Samy Haffoudhi (usuario samyhaff en Hugging Face) y presentado en el artículo "When Does Reasoning Help Entity Disambiguation? Small LLMs In-Domain and Under Shift" (Findings de EACL 2027). Se trata de un ajuste fino mediante LoRA fusionado sobre google/gemma-4-E2B-it, destilado de forma off-policy desde gemma-4-26B-A4B-it sobre el conjunto de datos ZELDA. El modelo recibe una mención marcada en su contexto y una lista numerada de candidatos, razona sobre ellos y responde con el índice del candidato elegido.
 
-El repositorio contiene 5.123.178.051 parametros en formato safetensors (aproximadamente 5,1 mil millones) y ocupa 10,3 GB. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas. El pipeline declarado es text-generation y el modelo esta pensado para generacion conversacional.
+La relevancia del modelo radica en su enfoque: demuestra que un modelo pequeño (5.123 millones de parámetros) puede abordar la desambiguación de entidades con razonamiento explícito, alcanzando un 79,6 de accuracy en ZELDA y un 78,2 de accuracy normalizada en ZESHEL en condiciones de verdadero zero-shot. Esto lo sitúa como una alternativa eficiente frente a modelos de mayor tamaño para tareas de resolución de entidades en pipelines de procesamiento de lenguaje natural.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un derivado muy reciente (creado en noviembre de 2026) con cero descargas en el momento de la consulta y una model card practicamente vacia, sin datos de entrenamiento, benchmarks ni idiomas. Es util para quienes necesiten un modelo pequeno especializado en resolucion de entidades, pero debe evaluarse con cautela por la ausencia de documentacion tecnica.
+El modelo se distribuye con licencia Apache 2.0, está implementado en transformers con pesos en safetensors y se integra con vLLM para inferencia. Su diseño está orientado específicamente a la tarea de entity linking/disambiguation, no como un modelo de propósito general, aunque hereda las capacidades conversacionales y de razonamiento de la familia Gemma 4.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (derivada de google/gemma-4-E2B-it; no se detalla en la model card) |
+| Arquitectura | Transformer (familia Gemma 4), ajuste LoRA fusionado sobre google/gemma-4-E2B-it |
 | Parametros totales | 5.123.178.051 |
-| Parametros activos | no disponible |
+| Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible |
+| Tipos de cuantizacion | no disponible (pesos en safetensors; se puede cuantizar con herramientas estándar, pero no se documenta) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 |
+| Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona informacion sobre la arquitectura interna del modelo base ni sobre el proceso de ajuste. Por la nomenclatura (gemma-4-E2B-it) y el tamano declarado (5,1 mil millones de parametros), se trata de una variante de la familia Gemma 4 de Google en configuracion instruida, pero no se confirma si emplea atencion densa, mezcla de expertos u otra variante. Tampoco se especifica la longitud de contexto nativa del modelo base.
+El modelo parte de google/gemma-4-E2B-it, un transformer de la familia Gemma 4 con 5.123 millones de parámetros. Sobre esta base se aplicó un ajuste fino mediante LoRA que posteriormente se fusionó en los pesos finales. El entrenamiento consistió en destilación off-policy desde un modelo mayor, gemma-4-26B-A4B-it, sobre el conjunto de datos ZELDA. Este proceso busca transferir la capacidad de razonamiento del modelo profesor al modelo pequeño en la tarea específica de desambiguación de entidades.
 
-Respecto al entrenamiento del ajuste, no hay datos sobre el corpus utilizado, el numero de tokens, la composicion del dataset de entity linking ni si se aplicaron tecnicas de RLHF, DPO o destilacion (pese al sufijo "distill" en el nombre). Las etiquetas entity-linking y entity-disambiguation indican la tarea objetivo, pero no se documenta el procedimiento. Cualquier afirmacion sobre innovaciones tecnicas seria especulativa.
+La innovación principal no está en la arquitectura sino en el paradigma de entrenamiento y uso: el modelo está diseñado para razonar explícitamente antes de emitir una respuesta, y la inferencia recomendada implica generar 10 completaciones y tomar la votación mayoritaria (majority vote) para estabilizar la predicción. El prompt espera la mención marcada entre corchetes y los candidatos numerados, y la salida debe terminar con el formato `"answer": <índice>`. No se documentan detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO adicionales.
 
 ## Capacidades
 
-- Generacion de texto conversacional, segun el pipeline declarado (text-generation) y la variante IT del modelo base.
-- Entity linking: asociacion de menciones textuales a entidades de una base de conocimiento, segun las etiquetas del autor.
-- Entity disambiguation: resolucion de ambiguedades entre entidades con nombre similar o contexto solapado.
-- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (no se declaran idiomas).
-- Capacidades especiales (vision, audio, thinking mode): no disponible.
+- Desambiguación de entidades en contexto: identifica la entidad correcta entre una lista de candidatos numerados a partir de una mención marcada y su contexto narrativo.
+- Razonamiento explícito: el modelo genera una cadena de razonamiento antes de emitir la respuesta final, lo que permite auditar el proceso de decisión.
+- Generación de texto conversacional: hereda las capacidades de la familia Gemma 4 para generación de texto y conversación multi-turno.
+- Soporte de modo thinking: la inferencia recomendada utiliza `enable_thinking: True` en el chat template.
+- Integración con vLLM: el ejemplo de uso proporcionado emplea vLLM con `SamplingParams` y generación de múltiples completaciones.
+- Capacidades multilingües: no disponibles (no se documentan idiomas soportados).
+- Tool calling / function calling: no disponible (no se documenta).
+- Soporte de agentes y multi-step reasoning: no disponible de forma explícita, aunque el razonamiento previo a la respuesta es parte del diseño.
+- Visión: no disponible (aunque los tags incluyen image-text-to-text, la model card no describe capacidades de visión).
 
 ## Casos de uso
 
-- Resolucion de entidades en pipelines de extraccion de informacion: el modelo puede recibir una mencion y su contexto para devolver el identificador de entidad correspondiente, aprovechando su especializacion declarada en entity linking.
-- Desambiguacion en bases de datos de clientes: ante nombres de personas u organizaciones repetidos, el modelo puede usar el contexto de la mencion para seleccionar la entidad correcta antes de consolidar registros.
-- Enriquecimiento de articulos periodisticos: integrado en un proceso de preprocesado, puede etiquetar menciones de personas, lugares y organizaciones con sus identificadores canonicos para facilitar busquedas y recomendaciones.
-- Normalizacion de entidades en catalogos de productos o referencias bibliograficas: util para unificar variantes de un mismo nombre antes de indexar en un motor de busqueda.
-- Asistencia en tareas de compliance y KYC: apoyo a la identificacion de entidades en documentacion textual, con revision humana posterior dado el riesgo de error.
-- Prototipado rapido de asistentes conversacionales especializados: al ser un modelo de ~5B parametros con licencia Apache 2.0, puede desplegarse en entornos de desarrollo para validar flujos de dialogo antes de escalar a modelos mayores.
+- Desambiguación de entidades en pipelines de NLP: el modelo se integra como etapa final de un pipeline de entity linking, recibiendo los candidatos previamente recuperados (por ejemplo, los top 10 de qwen3-4b-reranker-ed) y seleccionando el correcto mediante razonamiento y votación mayoritaria.
+- Enriquecimiento de bases de conocimiento: dado un texto con menciones ambiguas, el modelo resuelve a qué entidad del grafo de conocimiento se refiere cada mención, facilitando la construcción y mantenimiento de KBs.
+- Procesamiento de noticias y documentos: en artículos periodísticos donde nombres propios pueden referirse a personas, lugares u organizaciones distintas, el modelo usa el contexto narrativo completo para desambiguar.
+- Atención al cliente con resolución de entidades: en conversaciones multi-turno, el modelo puede identificar a qué producto, persona o entidad se refiere el usuario cuando hay ambigüedad, aunque su especialización es la ED y no el diálogo general.
+- Búsqueda y recuperación de información: mejora la precisión de motores de búsqueda interna al resolver menciones ambiguas antes de la consulta al índice.
+- Investigación académica en NLP: sirve como modelo de referencia para estudiar cuándo el razonamiento ayuda en tareas de ED, especialmente en dominios in-domain y bajo distribution shift, tal como se documenta en el paper.
+- Moderación de contenido y análisis de redes sociales: identifica entidades mencionadas en publicaciones cortas y ambiguas, donde el contexto es limitado y los candidatos numerosos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+| Benchmark | Métrica | Resultado |
+|---|---|---|
+| ZELDA | Accuracy | 79,6 |
+| ZESHEL (true zero-shot) | Accuracy normalizada | 78,2 |
+
+No se han publicado en la información disponible resultados comparativos con otros modelos en MMLU, HumanEval, GSM8K ni otros benchmarks generales.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en FP16: aproximadamente 10-11 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica, se recomienda al menos 16 GB.
-- VRAM estimada en cuantizacion de 8 bits: en torno a 6-7 GB de pesos.
-- VRAM estimada en cuantizacion de 4 bits: en torno a 3-4 GB de pesos, aunque no se confirma que existan pesos cuantizados publicados.
-- GPU recomendadas: no hay datos oficiales; por tamano, una RTX 4090 (24 GB) o A100/H100 son suficientes en FP16, y una RTX 3090 o 4080 podrian servir con cuantizacion.
-- Cabe en GPU de consumo: probablemente si, en modelos con 12 GB o mas usando cuantizacion; no confirmado por el autor.
-- Opciones de despliegue: no documentadas por el autor; al ser safetensors, seria compatible con frameworks habituales (vLLM, TGI, transformers) previa conversion a GGUF para llama.cpp u Ollama.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: con 5.123 millones de parámetros en safetensors (10,3 GB de repo), en FP16 requiere aproximadamente 10-11 GB de VRAM; en cuantización de 8 bits, unos 5-6 GB; en 4 bits, unos 3-4 GB (estimaciones orientativas, no documentadas por el autor).
+- GPU recomendadas: el ejemplo oficial usa vLLM, por lo que se recomiendan GPUs con al menos 16 GB de VRAM para FP16 (RTX 4090, A100, H100). Para cuantización 4/8 bits, GPUs consumer como RTX 3060/4060 con 8-12 GB podrían ser suficientes.
+- Cabe en GPU consumer: sí, especialmente con cuantización. En FP16 requiere GPUs de gama alta consumer (RTX 4090) o profesional.
+- Opciones de despliegue: vLLM (documentado en el ejemplo oficial), transformers (librería indicada), llama.cpp y Ollama no están documentados pero serían viables con conversión a GGUF; TGI no documentado.
+- Latencia y throughput estimados: no disponibles. La inferencia recomendada genera 10 completaciones con `max_tokens: 2048` y votación mayoritaria, lo que multiplica el coste por 10 respecto a una generación única.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| samyhaff/gemma-4-e2b-it-distill-ed | 5,12 B | no disponible | Apache 2.0 | Hugging Face |
-| google/gemma-4-E2B-it (base) | no disponible | no disponible | no disponible | Hugging Face |
-| Alternativas especializadas en entity linking de tamano similar | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parámetros | Contexto | Licencia | Especialización | Disponibilidad |
+|---|---|---|---|---|---|
+| samyhaff/gemma-4-e2b-it-distill-ed | 5.123 M | no disponible | apache-2.0 | Entity disambiguation con razonamiento | Hugging Face |
+| google/gemma-4-E2B-it (base) | 5.123 M | no disponible | no disponible en la información | Propósito general | Hugging Face |
+| samyhaff/qwen3-4b-reranker-ed | no disponible | no disponible | no disponible | Reranking de candidatos para ED | Hugging Face |
+| gemma-4-26B-A4B-it (profesor) | no disponible | no disponible | no disponible | Propósito general (profesor en destilación) | Hugging Face |
 
-No se dispone de datos de rendimiento ni de modelos comparables documentados en la informacion proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada, salvo los resultados del modelo en ZELDA y ZESHEL.
 
 ## Limitaciones y advertencias
 
-- La model card esta practicamente vacia: no hay informacion sobre datos de entrenamiento, evaluacion ni idiomas, lo que impide validar la calidad del ajuste.
-- El repositorio registra cero descargas y un solo "like" en el momento de la consulta; no hay evidencia de uso en produccion ni de validacion por la comunidad.
-- Riesgo de alucinacion inherente a los modelos generativos; en tareas de entity linking, un identificador de entidad incorrecto puede propagarse a sistemas downstream.
-- No se declaran sesgos conocidos, pero la ausencia de documentacion impide descartarlos.
-- Al estar basado en google/gemma-4-E2B-it, conviene verificar las condiciones del modelo base ademas de la licencia Apache 2.0 declarada en este repositorio.
-- El sufijo "distill" sugiere destilacion, pero no se documenta el profesor ni el procedimiento; no debe asumirse una calidad equivalente a la del modelo base.
-- No se recomienda su uso en produccion sin una evaluacion propia sobre el dominio objetivo.
+- Especialización estrecha: el modelo está entrenado específicamente para desambiguación de entidades con un formato de prompt concreto (mención entre corchetes y candidatos numerados); su uso fuera de este formato puede degradar el rendimiento.
+- Dependencia de la votación mayoritaria: la inferencia recomendada requiere 10 completaciones y votación, lo que multiplica el coste computacional y la latencia.
+- Riesgo de alucinación: como todo modelo generativo, puede producir índices de respuesta inválidos o fuera de rango; el código de ejemplo filtra respuestas fuera del rango de candidatos.
+- Sesgos conocidos: no documentados en la información disponible, pero heredados potencialmente del modelo base y del dataset ZELDA.
+- Limitaciones de idioma: no se documentan los idiomas soportados; el entrenamiento se realizó sobre ZELDA, cuyo idioma principal no se especifica en la información disponible.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda verificar las condiciones del modelo base google/gemma-4-E2B-it, cuya licencia no se detalla en la información proporcionada.
+- Contexto: no se documenta la longitud máxima de contexto, lo que es relevante para textos largos con múltiples menciones.
+- Madurez: el modelo tiene 298 descargas y 1 like en el momento de la ficha, lo que indica adopción limitada y poca validación comunitaria.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/samyhaff/gemma-4-e2b-it-distill-ed
+- Modelo en Hugging Face: https://huggingface.co/samyhaff/gemma-4-e2b-it-distill-ed
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
+- Modelo reranker asociado: https://huggingface.co/samyhaff/qwen3-4b-reranker-ed
+- Repositorio del pipeline y evaluación: https://github.com/samyhaff/ed-study
+- Paper (arXiv): https://arxiv.org/abs/2611.30334

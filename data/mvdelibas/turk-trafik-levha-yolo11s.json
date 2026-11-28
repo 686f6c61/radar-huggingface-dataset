@@ -50,6 +50,25 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Real-photo test set (329 unseen street photos, 22 provinces of Türkiye)",
+      "metric": "mAP@50 (34 classes with real boxes)",
+      "value": 0.816
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Real-photo test set (329 unseen street photos, 22 provinces of Türkiye)",
+      "metric": "Precision (conf 0.37)",
+      "value": 0.83
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Real-photo test set (329 unseen street photos, 22 provinces of Türkiye)",
+      "metric": "Recall (conf 0.37)",
+      "value": 0.759
+    }
+  ],
   "sources": []
 }

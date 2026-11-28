@@ -2,82 +2,89 @@
 
 ## Resumen
 
-M5-TTS-50M-CustomVoice es un modelo de síntesis de voz (text-to-speech) publicado en Hugging Face por ASLP-lab bajo licencia Apache 2.0. El nombre indica un tamaño de aproximadamente 50 millones de parámetros y una orientación específica a la clonación o personalización de voz ("CustomVoice"), aunque la model card publicada no incluye documentación técnica, descripción de la arquitectura ni detalles sobre el proceso de entrenamiento.
+M5-TTS-50M-CustomVoice es un checkpoint de síntesis de voz (text-to-speech) multilingüe desarrollado por ASLP-lab (ASLP@NPU y LycheeAI Lab). Se trata de la variante "CustomVoice" del sistema M5-TTS, diseñada específicamente para síntesis con locutores predefinidos: el usuario proporciona únicamente el texto y un identificador de locutor entrenado, sin necesidad de audio de referencia ni transcripción de referencia.
 
-La información disponible en el repositorio es mínima: la model card se limita a declarar la licencia Apache 2.0 y el repositorio tiene un tamaño de 0.0 GB, con cero descargas y cero likes en el momento de la consulta. Esto sugiere una publicación muy reciente (creada y actualizada el 10 de noviembre de 2026) y sin pesos aparentemente subidos o sin documentar.
+El modelo combina un backbone temporal de 30M de parámetros con un decodificador local de predicción multi-token de 20M, sumando 149.850.112 parámetros totales según los pesos en safetensors. Utiliza 16 codebooks de audio a 12,5 frames por segundo para generar voz a 24 kHz, con un codec de audio separado (derivado de Qwen).
 
-Por tanto, esta ficha describe lo que puede inferirse del identificador y de los metadatos públicos, marcando explícitamente como "no disponible" todo aquello que el autor no ha documentado. No se debe asumir ninguna capacidad concreta más allá de lo que el nombre del modelo sugiere.
+Su relevancia actual radica en su tamaño compacto (repo de 0,6 GB), su licencia permisiva Apache-2.0 y su cobertura de seis idiomas (chino, inglés, alemán, francés, japonés y coreano), lo que lo hace atractivo para despliegues con recursos limitados y para aplicaciones de lectura de texto o asistentes de voz con voces fijas.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (presumiblemente TTS; no documentada) |
-| Parámetros totales | ~50M (según el nombre del modelo; no confirmado en la model card) |
-| Parámetros activos | no disponible |
-| Longitud de contexto | no disponible |
-| Tipos de cuantización | no disponible |
-| Idiomas soportados | no disponibles |
-| Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (el repositorio figura con 0.0 GB) |
+| Arquitectura | Backbone temporal (30M) + decodificador local de predicción multi-token (20M); codec de audio separado con 16 codebooks a 12,5 frames/s |
+| Parametros totales | 149.850.112 |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | No disponible |
+| Idiomas soportados | Chino (zh), inglés (en), alemán (de), francés (fr), japonés (ja), coreano (ko) |
+| Licencia | Apache-2.0 |
+| Formato de pesos | safetensors (PyTorch) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la model card. El identificador "M5-TTS" sugiere un sistema de síntesis de voz, y el sufijo "50M" apunta a un modelo compacto de aproximadamente 50 millones de parámetros, pero no hay confirmación de si se trata de un transformer, un modelo difusor, un modelo autoregresivo de tokens de audio o una arquitectura híbrida.
+M5-TTS es un sistema TTS compacto y multilingüe que separa la generación de tokens de audio en dos componentes: un backbone temporal de 30M de parámetros que modela la secuencia a nivel temporal y un decodificador local de predicción multi-token de 20M que predice varios tokens por paso. La señal de audio se representa mediante 16 codebooks a 12,5 frames por segundo, lo que permite generar voz a 24 kHz. El codec de audio es un componente independiente, derivado de Qwen, publicado por separado como M5-TTS-Audio-Tokenizer.
 
-Tampoco hay datos sobre el corpus de entrenamiento (horas de audio, idiomas, hablantes), sobre técnicas de alineación o fine-tuning, ni sobre el mecanismo de personalización de voz que insinúa el sufijo "CustomVoice". Toda esta información debe considerarse no disponible hasta que el autor publique documentación adicional.
+El checkpoint CustomVoice está especializado en síntesis con locutores predefinidos: se entrena para mapear texto e identificador de locutor a voz, sin requerir audio ni transcripción de referencia en inferencia. No se dispone de información detallada sobre el volumen de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en la información proporcionada. El modelo se distribuye para PyTorch y recomienda BF16 con una GPU NVIDIA compatible con CUDA y flash-attn 2.7.3.
 
 ## Capacidades
 
-- Síntesis de voz: el nombre del modelo indica text-to-speech, aunque no se documentan las condiciones de uso ni la calidad esperada.
-- Personalización de voz: el sufijo "CustomVoice" sugiere soporte para voces personalizadas o clonación, sin especificar el mecanismo (zero-shot, fine-tuning por hablante, embeddings de hablante, etc.).
-- Soporte de tool calling: no disponible.
-- Soporte de agentes o razonamiento multi-paso: no disponible (no es el propósito esperado de un modelo TTS).
-- Capacidades multilingües: no disponibles.
-- Otras capacidades (visión, audio de entrada, thinking mode): no disponibles.
+- Síntesis de voz (text-to-speech) a partir de texto y un identificador de locutor predefinido, sin audio de referencia.
+- Generación de voz a 24 kHz con 16 codebooks de audio.
+- Soporte multilingüe: chino, inglés, alemán, francés, japonés y coreano, seleccionables mediante el parámetro de idioma.
+- Síntesis con voces predefinidas (preset speakers); los identificadores disponibles dependen del checkpoint.
+- No se documentan capacidades de clonación de voz en este checkpoint (existe un checkpoint separado VoiceClone).
+- No se documentan tool calling, function calling, agentes ni razonamiento multi-paso (no aplica a un modelo TTS).
+- No se documentan capacidades de visión ni audio de entrada.
 
 ## Casos de uso
 
-- Generación de locuciones para aplicaciones de accesibilidad: un modelo TTS compacto de ~50M parámetros podría ejecutarse en local para leer texto en pantalla, siempre que se confirmen los idiomas soportados y la calidad de salida.
-- Prototipado de asistentes de voz: por su tamaño reducido, podría integrarse en pipelines de experimentación para convertir respuestas de texto en audio en entornos de desarrollo.
-- Personalización de voz en productos de marca: el sufijo "CustomVoice" apunta a la creación de voces propias, útil para identificar una marca o un personaje, aunque no se documenta el procedimiento.
-- Sistemas de lectura de contenido en dispositivos con recursos limitados: un modelo de 50M parámetros es candidato a inferencia en CPU o en GPUs de gama baja, si los pesos están disponibles y el runtime es compatible.
-- Generación de audio para prototipos de videojuegos o aplicaciones interactivas: permite iterar sobre diálogos sin depender de servicios en la nube, sujeto a la licencia Apache 2.0.
-- Investigación en TTS: como base compacta para experimentos académicos de síntesis y clonación de voz, siempre que el autor publique pesos y documentación.
-
-En todos los casos, la viabilidad real depende de que el repositorio contenga pesos utilizables y documentación, algo que no se puede confirmar con la información actual.
+- Lectura de textos y artículos: el modelo convierte texto plano en voz en seis idiomas con un locutor fijo, adecuado para sistemas de accesibilidad y lectura automatizada.
+- Asistentes de voz con identidad de marca: al usar un identificador de locutor entrenado, se obtiene una voz consistente sin necesidad de gestionar audio de referencia en cada petición.
+- Audiolibros y contenido editorial: la generación a 24 kHz y el tamaño compacto permiten procesar lotes de texto en infraestructura modesta.
+- Interfaces conversacionales multiidioma: el soporte de zh, en, de, fr, ja y ko permite atender usuarios de distintos mercados con el mismo modelo, seleccionando el idioma por petición.
+- Generación de avisos y notificaciones: para sistemas de megafonía, alarmas o notificaciones automáticas donde se requiere una voz fija y predecible.
+- Prototipado rápido en investigación TTS: con 149,8M de parámetros y 0,6 GB de repo, es viable experimentar en una sola GPU y comparar variantes CustomVoice frente a VoiceClone.
+- Localización de contenido: doblaje de guiones cortos a varios idiomas manteniendo una voz de locutor entrenada por idioma o por checkpoint.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Como referencia orientativa, un modelo de ~50M parámetros en precisión FP16 ocuparía del orden de 100 MB de pesos, pero no se confirma el tamaño real ni el formato.
-- GPU recomendadas: no disponible.
-- Compatibilidad con GPU de consumo: probablemente sí para un modelo de este tamaño, pero no confirmado por el autor.
-- Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; no se documenta ningún runtime compatible.
+- VRAM estimada para inferencia: no disponible de forma explícita; con 149,8M de parámetros en BF16 el peso del modelo ronda los 0,3 GB, por lo que la VRAM adicional vendrá dominada por el codec de audio y los buffers de activación.
+- GPU recomendadas: el autor indica una GPU NVIDIA compatible con BF16 y un driver CUDA compatible; se requiere además flash-attn 2.7.3.
+- GPU de consumo: por el tamaño del modelo, es previsible que quepa en GPUs de consumo con suficiente VRAM, aunque no se confirma en la información disponible.
+- Opciones de despliegue: el flujo documentado es el repositorio oficial M5-TTS con Python 3.10 en Linux, `infer_speaker.py` y `flash-attn`; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque no se dispone de especificaciones confirmadas (arquitectura, idiomas, calidad) ni de benchmarks. Cualquier comparación con otros sistemas TTS de tamaño similar sería especulativa.
-
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| M5-TTS-50M-CustomVoice | ~50M (según nombre) | no disponible | Apache 2.0 | Repositorio sin pesos aparentes |
-| Alternativas TTS de tamaño similar | no disponible | no disponible | no disponible | no disponible |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
+|---|---|---|---|---|---|
+| M5-TTS-50M-CustomVoice | 149,8M | No disponible | zh, en, de, fr, ja, ko | Apache-2.0 | Voces predefinidas sin audio de referencia |
+| M5-TTS-50M-VoiceClone | No disponible | No disponible | No disponible | No disponible | Variante de clonación de voz del mismo proyecto |
+| Otros modelos TTS open source | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- La model card no documenta arquitectura, datos de entrenamiento, idiomas ni evaluación; no se puede verificar ninguna capacidad.
-- El repositorio figura con un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar publicados o no ser accesibles en el momento de la consulta.
-- Cero descargas y cero likes: no hay evidencia de uso ni de validación por parte de la comunidad.
-- Riesgo de alucinación y sesgos: no evaluable sin documentación ni muestras de audio.
-- Uso comercial: la licencia Apache 2.0 lo permitiría en principio, pero la ausencia de pesos y documentación impide confirmar la viabilidad técnica.
-- En aplicaciones de voz, deben tenerse en cuenta los riesgos de suplantación de identidad y la necesidad de consentimiento para clonar voces, aunque el autor no aborda estas cuestiones.
-- No se dispone de información sobre limitaciones de contexto, idioma o calidad de síntesis.
+- El checkpoint CustomVoice solo sintetiza con identificadores de locutor entrenados; no permite clonar voces arbitrarias (para ello existe el checkpoint VoiceClone).
+- Establecer un identificador de locutor no cambia los pesos del modelo cargado; los IDs y capacidades de voz dependen del checkpoint concreto.
+- No se documentan sesgos conocidos, pero al ser un modelo multilingüe entrenado con datos no especificados, pueden aparecer sesgos de pronunciación, prosodia o acento según el idioma y el locutor.
+- Riesgo de alucinación o artefactos de audio en textos atípicos, símbolos, números o nombres propios; no cuantificado en la información disponible.
+- No se especifican límites de longitud de texto ni de contexto; conviene trocear entradas largas.
+- La licencia Apache-2.0 permite uso comercial, pero el codec de audio derivado de Qwen conserva su atribución upstream según el aviso de terceros del repositorio.
+- Requiere Python 3.10 en Linux, GPU NVIDIA con BF16 y flash-attn 2.7.3; no se documenta soporte para CPU ni para otros frameworks de inferencia.
+- El número de descargas (194) y de likes (0) es bajo, por lo que la validación comunitaria es todavía limitada.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/ASLP-lab/M5-TTS-50M-CustomVoice
+- Repositorio GitHub: https://github.com/ASLP-lab/M5-TTS
+- Demo: https://aslp-lab.github.io/M5-TTS-Demo-Page/
+- Space: https://huggingface.co/spaces/ASLP-lab/M5-TTS-Space
+- Colección de modelos: https://huggingface.co/collections/ASLP-lab/m5-tts
+- Checkpoint VoiceClone: https://huggingface.co/ASLP-lab/M5-TTS-50M-VoiceClone
+- Audio tokenizer: https://huggingface.co/ASLP-lab/M5-TTS-Audio-Tokenizer
+- Aviso de terceros del codec: https://github.com/ASLP-lab/M5-TTS/blob/main/m5/codec_qwen12hz/NOTICE

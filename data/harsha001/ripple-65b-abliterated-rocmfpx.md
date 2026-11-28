@@ -2,106 +2,88 @@
 
 ## Resumen
 
-Ripple-65B-abliterated-ROCmFPX es una distribución de cuantizaciones GGUF del modelo denso Ripple-65B-Preview de ricursiveAI, publicada por el usuario Harsha001. No se trata de un modelo entrenado desde cero por este autor, sino de una conversión a formato GGUF optimizada para GPUs AMD (en particular Strix Halo, gfx1151) mediante el fork ROCmFPX de llama.cpp. La model card indica que el modelo base es un transformer denso de 65B parámetros, aunque los safetensors reales del repositorio suman 4.037.752.064 parámetros, dato que entra en contradicción con la denominación "65B" y que conviene tratar con cautela.
+Ripple-65B-abliterated-ROCmFPX es una cuantización en formato GGUF del modelo Ripple-65B-abliterated, publicada por el usuario Harsha001 en Hugging Face. Se trata de una variante "abliterated", es decir, una versión en la que se ha aplicado la técnica de *abliteration* para eliminar o atenuar el comportamiento de rechazo (refusal) aprendido durante el alineamiento, de modo que el modelo responde a peticiones que un modelo alineado convencional rechazaría. El modelo base inmediato es `orcarouter/Ripple-65B-abliterated-GGUF`, del que esta publicación es una re-cuantización orientada a hardware AMD (ROCm) y, según los tags, optimizada para Strix Halo.
 
-El modelo base, Ripple-65B-Preview, es un modelo open-weight de Ricursive Intelligence preentrenado desde cero para coding agéntico, presentado como variante de propósito general del modelo propietario que sustenta su plataforma de diseño de chips con IA. La versión aquí descrita incorpora el sufijo "abliterated", que en la práctica suele indicar la eliminación de direcciones de rechazo en los pesos, aunque la model card no documenta el procedimiento concreto aplicado.
+El interés de esta ficha es acotado: no se trata de un modelo nuevo con arquitectura propia, sino de un artefacto de cuantización derivado. La información pública disponible en la model card es mínima (tags, licencia, tamaño del repositorio y número de parámetros), por lo que numerosos datos técnicos —arquitectura exacta, contexto, dataset de entrenamiento, idiomas— no están confirmados en la información proporcionada y se marcan como no disponibles.
 
-La relevancia de esta ficha reside en dos aspectos: por un lado, ofrece cuantizaciones con métricas de degradación medidas (KLD frente a Q8_0) y un esquema mixto 4/8 bits que reduce el error un 42% respecto al Q4_K_M estándar a cambio de 2 GB adicionales; por otro, incluye soporte para decodificación especulativa con un drafter propio de ricursiveAI (DFlash2), con ganancias medidas de hasta 4,1x en generación de código. Todo el ecosistema está licenciado Apache-2.0.
+La relevancia actual reside en su orientación explícita a inferencia local en GPUs integradas AMD de la familia Strix Halo mediante ROCm, un nicho en crecimiento dentro del ecosistema open source, y en el formato GGUF con cuantización tipo imatrix, que facilita su despliegue con llama.cpp y derivados. El acceso está restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (arquitectura propietaria "ricursive", no integrada en llama.cpp upstream) |
-| Parametros totales | 65B según model card; 4.037.752.064 según safetensors del repo (dato contradictorio, no disponible un valor confirmado) |
-| Parametros activos | No aplica (modelo denso) |
-| Longitud de contexto | 2.097.152 tokens por defecto (2M); se recomienda fijar `-c` explícitamente en llama.cpp |
-| Tipos de cuantizacion | Q8_0, Q6_K, Q4_0_ROCMFP4_STRIX_A8 (atención y capa de salida en 8 bits, resto en 4 bits) |
-| Idiomas soportados | No disponible |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (repo de 170 GB); el modelo base original en safetensors/BF16 |
+| Arquitectura | no disponible (modelo base derivado; no se especifica transformer/MoE en la informacion proporcionada) |
+| Parametros totales | 64.782.690.001 (~64,8 mil millones) |
+| Parametros activos | no disponible (no se confirma que sea MoE) |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | GGUF con cuantizacion tipo imatrix (variantes concretas no detalladas); etiqueta ROCmFPX orientada a AMD |
+| Idiomas soportados | no disponible |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF |
+| Tamano del repositorio | 332,0 GB |
+| Modelo base | orcarouter/Ripple-65B-abliterated-GGUF |
+| Acceso | Restringido (gated) |
+| Descargas / likes | 365 / 2 |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso con arquitectura denominada "ricursive", que no está soportada en llama.cpp upstream y requiere el fork ROCmFPX (port del PR #31692 de llama.cpp). Ricursive Intelligence lo describe como un modelo preentrenado desde cero para coding agéntico, del que esta variante Preview es la versión de propósito general del modelo propietario usado en su plataforma de diseño de chips. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO.
+No se dispone de información sobre la arquitectura interna del modelo en la documentación proporcionada. El identificador y el recuento de parámetros (64,78 mil millones) sugieren un modelo denso de gran tamaño, pero no se confirma si emplea atención estándar, atención lineal, arquitectura híbrida o mezcla de expertos. Tampoco se detalla el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineamiento en el modelo original.
 
-La innovación técnica destacable de esta distribución no está en el entrenamiento sino en la cuantización y el runtime. El fichero Q4_0_ROCMFP4_STRIX_A8 mantiene atención y capa de salida en 8 bits (ROCmFPX Q8) y el resto en 4 bits (ROCmFP4), porque la atención puramente en 4 bits degradaba demasiado el modelo (KLD 0,086). Las métricas se midieron con `llama-perplexity` sobre 40 fragmentos de 512 tokens de wikitext-2 contra un Q8_0 estándar de los pesos BF16 originales, expandiendo cada fichero a Q8_0 y evaluándolo en una NVIDIA GB10. Adicionalmente, el ecosistema incluye un modelo drafter (DFlash2) que predice hasta 16 tokens a partir de los estados ocultos de Ripple para decodificación especulativa, con verificación en una sola pasada por parte del modelo principal.
+Lo que sí es caracterizable es el proceso aplicado sobre el modelo base: la técnica de *abliteration*, que consiste en identificar y modular las direcciones de activación asociadas al comportamiento de rechazo para reducir la tasa de respuestas negativas. Sobre ese modelo abliterated se ha realizado una cuantización GGUF con calibración imatrix (importance matrix), que ajusta los pesos cuantizados en función de la importancia de cada tensor estimada con datos de calibración, mejorando la fidelidad respecto a una cuantización uniforme. La etiqueta ROCmFPX y la referencia a Strix Halo indican una optimización o empaquetado pensado para ejecución en ROCm sobre GPUs integradas AMD.
 
 ## Capacidades
 
-- Generación de texto conversacional con plantilla ChatML que incluye razonamiento y llamadas a herramientas (`--jinja`).
-- Coding agéntico: el modelo base fue preentrenado específicamente para tareas de programación con agentes.
-- Soporte de tool calling / function calling mediante la plantilla de chat embebida en el GGUF.
-- Razonamiento multi-paso (el template incluye secciones de reasoning).
-- Decodificación especulativa con drafter DFlash2, con ganancia medida de hasta 4,1x en código y 1,6x en prosa libre.
-- Capacidad multilingüe: no disponible en la información proporcionada.
-- Visión y audio: no disponibles.
+- Generación de texto conversacional: el tag `conversational` y el pipeline `text-generation` confirman uso para diálogo multi-turno.
+- Modelo "abliterated": responde a peticiones que un modelo alineado rechazaría; el comportamiento de rechazo está atenuado, no necesariamente eliminado por completo.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a través de infraestructura de inferencia compatible con la API de endpoints de Hugging Face.
+- Ejecución local en hardware AMD: orientado a ROCm y a la plataforma Strix Halo.
+- Capacidades de razonamiento, código, matemáticas, tool calling, agentes, visión o audio: no disponibles en la información proporcionada.
+- Capacidades multilingües: no disponibles (no se declaran idiomas).
 
 ## Casos de uso
 
-- Asistencia de código en local sobre hardware AMD: el modelo puede desplegarse en una Strix Halo con 128 GB usando el fichero Q6_K (53,6 GB) y el fork ROCmFPX, permitiendo autocompletado y generación de funciones en un equipo de escritorio sin GPU de datacenter.
-- Pipelines de CI/CD con tool calling: la plantilla ChatML con soporte de function calling permite integrar el modelo en flujos que invocan linters, ejecutores de tests o APIs internas, siempre que se fije `-c` explícitamente para evitar la asignación desmedida de KV cache por el contexto por defecto de 2M.
-- Generación de código de alta velocidad con drafter: en escenarios donde la latencia importa (autocompletado interactivo, generación de tests), el drafter DFlash2 con `--spec-draft-n-max 15` ofrece 14,1 tokens/s frente a 3,4 sin él en una GB10, un 4,1x de mejora medido.
-- Despliegue en equipos con 64 GB de memoria unificada: el fichero Q4_0_ROCMFP4_STRIX_A8 (41,5 GB) cabe en máquinas de 64 GB o más, con un error (KLD 0,022) un 42% inferior al Q4_K_M estándar (0,038) a cambio de 2 GB extra.
-- Investigación sobre cuantización mixta: las métricas publicadas (KLD, same top token) permiten reproducir y comparar esquemas de cuantización 4/8 bits en modelos densos de gran tamaño, usando wikitext-2 y `llama-perplexity` como referencia.
-- Evaluación de modelos abliterated: para investigadores interesados en el efecto de la eliminación de rechazos sobre calidad y alineamiento, este repo ofrece una variante abliterated del modelo base, aunque sin documentación del procedimiento aplicado.
+- Inferencia local en GPUs integradas AMD Strix Halo: el etiquetado ROCmFPX y la referencia explícita a Strix Halo sugieren que el artefacto está pensado para ejecutarse en estos sistemas mediante ROCm, aprovechando la memoria unificada para cargar un modelo de ~65B en cuantización.
+- Experimentación con modelos sin alineamiento de rechazo: útil en investigación sobre seguridad, evaluación de sesgos y estudio del comportamiento de modelos abliterated en entornos controlados.
+- Despliegue con llama.cpp y derivados: al estar en GGUF, puede servirse con llama.cpp, Ollama u otros runners compatibles, lo que simplifica la puesta en marcha en estaciones de trabajo.
+- Servicio conversacional autoalojado: el tag `conversational` y la compatibilidad con endpoints permiten montar un backend de chat privado sin depender de APIs externas.
+- Pruebas de cuantización imatrix: sirve como caso de estudio para comparar la calidad de cuantizaciones calibradas con imatrix frente a cuantizaciones estándar en modelos de gran tamaño.
+- Evaluación comparativa de variantes abliterated: permite contrastar el comportamiento de esta re-cuantización frente al GGUF base de orcarouter en la misma tarea.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8K) en la información disponible. Sí se publican métricas de fidelidad de cuantización y de velocidad de decodificación especulativa:
-
-| Fichero | Tamano | KLD medio vs Q8_0 | Mismo token top-1 |
-|---|---|---|---|
-| Q8_0_ROCMFPX | 66,8 GB | 0,0043 | 97,6% |
-| Q6_K_ROCMFPX | 53,6 GB | 0,0062 | 96,9% |
-| Q4_0_ROCMFP4_STRIX_A8 | 41,5 GB | 0,022 | 94,0% |
-| Q4_K_M estándar (referencia) | 39,6 GB | 0,038 | 92,1% |
-
-| Prompt | Sin drafter | `n-max 15` | `n-max 7` |
-|---|---|---|---|
-| Función Python | 3,4 tok/s | 14,1 (4,1x) | 13,8 |
-| Explicar por qué el cielo es azul | 3,4 | 6,2 | 6,9 (2,0x) |
-| Pregunta corta de matemáticas | 3,4 | 8,9 (2,6x) | 7,3 |
-| Relato corto | 3,4 | 4,9 | 5,4 (1,6x) |
-
-Medido en NVIDIA GB10 con Q8_0 estándar de Ripple, decodificación greedy y `llama-speculative-simple`. El drafter fue entrenado con secuencias de 16K tokens, por lo que su acierto decae por encima de ese contexto.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: 66,8 GB (Q8_0), 53,6 GB (Q6_K), 41,5 GB (Q4_0 mixto); el drafter DFlash2 añade 8,1 GB.
-- GPU objetivo: AMD Strix Halo (gfx1151) con 128 GB de memoria unificada para Q8_0 y Q6_K; 64 GB o más para el fichero de 4 bits.
-- Cabe en GPU de consumo: sí, en equipos con memoria unificada grande (Strix Halo de 128 GB o 64 GB); no en GPUs discretas de 24 GB o menos.
-- Opciones de despliegue: fork ROCmFPX de llama.cpp con backend HIP/ROCm (`-DGGML_HIP=ON -DAMDGPU_TARGETS=gfx1151`) o Vulkan (`-DGGML_VULKAN=ON`). No es compatible con llama.cpp upstream, vLLM, TGI ni Ollama sin el fork.
-- Throughput estimado: 3,4 tok/s sin drafter en NVIDIA GB10 con Q8_0; hasta 14,1 tok/s en código con drafter. No hay mediciones publicadas en Strix Halo.
+- VRAM estimada: no disponible de forma exacta; el repositorio ocupa 332 GB, lo que corresponde al conjunto de todas las cuantizaciones publicadas, no a una sola. Un modelo de ~65B en cuantizaciones de 4 bits suele requerir del orden de 35-40 GB, pero este dato no está confirmado en la información proporcionada.
+- GPU recomendadas: no disponibles. La orientación declarada es AMD con ROCm y Strix Halo (memoria unificada), no se listan modelos concretos de GPU discreta.
+- Compatibilidad con GPU de consumo: no confirmada; un modelo de ~65B excede la VRAM de la mayoría de GPUs de consumo en cuantizaciones altas, y no se aportan datos para confirmarlo.
+- Opciones de despliegue: llama.cpp y runners compatibles con GGUF; ROCm para aceleración AMD; endpoints compatibles según el tag.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
-| Ripple-65B-abliterated-ROCmFPX | 65B (según model card) | 2M | Apache-2.0 | GGUF en HF, requiere fork ROCmFPX | Variante abliterated, cuantización mixta 4/8 bits |
-| Ripple-65B-Preview (ricursiveAI) | 65B | 2M | Apache-2.0 | Pesos originales en HF | Modelo base sin abliterar, formato original |
-| Ripple-65B-Preview-DFlash2 | No disponible | No disponible | Apache-2.0 | GGUF BF16 en HF | Drafter para decodificación especulativa, no es un modelo general |
+| Ripple-65B-abliterated-ROCmFPX | ~64,8B | no disponible | GGUF | Apache 2.0 | Variante ROCm/Strix Halo, gated |
+| orcarouter/Ripple-65B-abliterated-GGUF | no disponible | no disponible | GGUF | no disponible | Modelo base directo de esta cuantizacion |
+| Alternativas de ~65B abliterated | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
-No se dispone de información sobre modelos comparables de otros autores en la misma categoría (densos de ~65B orientados a coding agéntico) dentro de la información proporcionada.
+No se dispone de información suficiente para establecer una comparativa rigurosa con modelos alternativos de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Contradicción en el tamaño: la model card indica 65B parámetros, pero los safetensors del repo suman 4.037.752.064 parámetros. Verificar antes de dimensionar infraestructura.
-- La variante "abliterated" no documenta el procedimiento aplicado ni evalúa el impacto sobre seguridad, alineamiento o calidad; puede generar contenido que el modelo base rechazaría.
-- No se han ejecutado pruebas en Strix Halo: el autor pide a la comunidad que reporte velocidad y calidad. Las cifras de rendimiento provienen de una NVIDIA GB10.
-- El modelo no es compatible con llama.cpp upstream; requiere el fork ROCmFPX y un PR no fusionado (#31692). Riesgo de mantenimiento y de roturas en actualizaciones.
-- El contexto por defecto es de 2M tokens; si no se pasa `-c` explícitamente, llama.cpp intenta reservar una KV cache que no cabe en memoria.
-- El drafter DFlash2 pierde eficacia por encima de ~16K tokens de contexto y añade 8 GB de memoria.
-- No hay datos publicados de benchmarks de capacidad, idiomas soportados ni composición del dataset de entrenamiento.
-- Licencia Apache-2.0 permite uso comercial, pero la condición de modelo derivado de un base model de terceros conviene verificarla con la documentación de ricursiveAI.
-- Riesgo de alucinación no cuantificado en la información disponible.
+- Modelo abliterated: la atenuación del rechazo implica un mayor riesgo de generar contenido dañino, ofensivo o ilegal; no debe desplegarse en producción orientada al público sin filtros externos.
+- Sesgos: no documentados en la información proporcionada; un modelo sin alineamiento de rechazo puede exhibir sesgos del dataset original sin las salvaguardas habituales.
+- Alucinación: no se han publicado evaluaciones de fiabilidad; se desconoce la tasa de alucinación.
+- Idiomas y contexto: no declarados; no es posible garantizar cobertura multilingüe ni una ventana de contexto concreta.
+- Licencia Apache 2.0: permite uso comercial, pero el modelo está sujeto a acceso restringido (gated) en Hugging Face y a las condiciones de uso del modelo base.
+- Artefacto derivado: no es un modelo original; su calidad depende del modelo base y del proceso de cuantización, y las cuantizaciones imatrix pueden degradar tareas específicas.
+- Soporte limitado: 365 descargas y 2 likes indican una adopción muy baja y escasa validación comunitaria.
+- Requisitos de hardware elevados: un modelo de ~65B exige infraestructura considerable; la orientación a Strix Halo limita su portabilidad a otros entornos.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Harsha001/Ripple-65B-abliterated-ROCmFPX
-- Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- Drafter DFlash2: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
-- Fork ROCmFPX de llama.cpp: https://github.com/HarshaVardhan3002/ROCmFPX
-- PR de llama.cpp con soporte de arquitectura Ripple: https://github.com/ggml-org/llama.cpp/pull/31692
-- PR de llama.cpp del runtime DFlash2: https://github.com/ggml-org/llama.cpp/pull/27342
-- Artículo sobre el lanzamiento de Ripple-65B Preview: https://www.marktechpost.com/2026/11/04/ricursive-ripple-65b-preview-open-weight-model/
+- Hugging Face: https://huggingface.co/Harsha001/Ripple-65B-abliterated-ROCmFPX
+- Modelo base: https://huggingface.co/orcarouter/Ripple-65B-abliterated-GGUF
+- No se han encontrado en la información proporcionada papers, blogs, repositorios o demos adicionales.

@@ -1,0 +1,62 @@
+{
+  "schema": 2,
+  "id": "dronefreak/bdd100k-syscv-vgg16-5x-224x224-scene",
+  "slug": "dronefreak-bdd100k-syscv-vgg16-5x-224x224-scene",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-syscv-vgg16-5x-224x224-scene",
+  "created_at": "2026-11-28T03:54:54.000Z",
+  "updated_at": "2026-11-28T03:55:47.000Z",
+  "license": "bdd100k",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "mmcls",
+  "languages": [],
+  "tags": [
+    "mmcls",
+    "safetensors",
+    "vgg_tagging",
+    "image-classification",
+    "vgg",
+    "scene-tagging",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "driving-scenes",
+    "bdd100k",
+    "mirror",
+    "dataset:dronefreak/BDD100K",
+    "arxiv:1409.1556",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134289223,
+  "parameters_human": "134.3M",
+  "storage_bytes": 1083552944,
+  "storage_human": "1.1 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K",
+      "metric": "Top-1 accuracy (scene, val, reported by SysCV)",
+      "value": 77.57
+    }
+  ],
+  "sources": []
+}

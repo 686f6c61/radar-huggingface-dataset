@@ -2,121 +2,109 @@
 
 ## Resumen
 
-QtMeshEditor-models es un repositorio agregado que contiene todos los modelos de IA que la aplicación de escritorio QtMeshEditor descarga en tiempo de ejecución para sus funciones de autoría asistida sobre mallas 3D. No se trata de un único modelo, sino de una colección de grafos ONNX (y algunos GGUF) que cubren tareas muy distintas dentro del pipeline de creación de activos 3D: síntesis de mapas PBR, superresolución de texturas, auto-rigging, predicción de pesos de skin, image-to-3D, segmentación de partes de malla, interpolación de animación, text-to-motion, eliminación de fondos y captioning de imágenes.
+QtMeshEditor-models es un repositorio agregado que contiene la colección de modelos de IA que la aplicación de escritorio QtMeshEditor descarga en tiempo de ejecución para sus funciones de autoría asistida. No se trata de un único modelo entrenado de forma monolítica, sino de un paquete de conversiones a ONNX y GGUF de modelos de terceros (PBRify, Real-ESRGAN, UniRig, SkinTokens, TripoSR, TripoSG, SAM 2.1, U²-Net, SmolVLM) junto con tres modelos propios entrenados por el autor (RMIB para interpolación de animación, T2M para texto-a-movimiento y MeshSeg para segmentación de mallas).
 
-El autor, fernandotonon, actúa principalmente como integrador y conversor: la mayoría de los modelos son re-exportaciones a ONNX de trabajos de terceros con licencias permisivas (PBRify_Remix de Kim2091, Real-ESRGAN de xinntao, UniRig y SkinTokens/TokenRig de VAST-AI, TripoSR de Tripo AI y Stability AI, TripoSG de VAST-AI, U²-Net de rembg, SmolVLM-500M-Instruct de Hugging Face TB). Tres piezas son entrenadas desde cero por el autor: el modelo de in-betweening RMIB, el text-to-motion t2m v8.0 y el segmentador de mallas meshseg.
+El propósito es empaquetar en un solo artefacto todas las dependencias de inferencia local que la aplicación necesita para tareas de gráficos 3D: síntesis de mapas PBR, escalado de texturas, rigging automático, predicción de pesos de piel, reconstrucción image-to-3D, segmentación de partes, eliminación de fondos y generación de animaciones. La aplicación descarga cada modelo en su primer uso y posteriormente ejecuta la inferencia de forma offline.
 
-La relevancia práctica del repositorio es que empaqueta un conjunto heterogéneo de herramientas 3D en formato ONNX ejecutable offline, con contratos de E/S documentados por modelo y licencias individuales. El tamaño total del repo es de 31,1 GB y el recuento de parámetros reportado en safetensors es de 409.252.800, aunque ese dato agregado no refleja la realidad de cada submodelo (algunos son CNNs pequeños y otros incluyen un backbone Qwen3-0.6B). La licencia es "per-model", por lo que cada componente debe evaluarse por separado.
+La relevancia actual radica en su enfoque de despliegue: modelos de visión y 3D convertidos a ONNX con cuantización int8 en algunos casos, pensados para ejecutarse en el escritorio del usuario sin depender de servicios en la nube. El repositorio ocupa 31,2 GB y las licencias son heterogéneas (por modelo), lo que exige revisar cada subcarpeta antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Coleccion heterogenea: CNNs (Real-ESRGAN, U²-Net, PBRify), transformers (SmolVLM-500M), DiT con flow matching (t2m), triplane encoder/decoder (TripoSR), rectified-flow DiT (TripoSG), PointNet++-style (meshseg), backbone Qwen3-0.6B (skintokens) |
-| Parametros totales | 409.252.800 (dato agregado reportado en safetensors; no representativo de cada submodelo) |
-| Parametros activos | no disponible (no es un modelo MoE unico) |
-| Longitud de contexto | no disponible (no es un LLM de proposito general; SmolVLM-500M-Instruct tiene contexto propio no detallado aqui) |
-| Tipos de cuantizacion | ONNX fp32, ONNX int8 (tier en triposr; tier int8 en triposg marcado como deprecado), GGUF Q8_0 (SmolVLM) |
-| Idiomas soportados | no disponible (captioning via SmolVLM-500M-Instruct, multilingue segun el modelo base; resto son modelos visuales/3D sin idioma) |
-| Licencia | per-model (CC0-1.0, BSD-3-Clause, MIT, CC-BY-4.0, Apache-2.0 segun componente) |
-| Formato de pesos | ONNX (mayoria), GGUF (SmolVLM), datos externos `.onnx.data` para pesos LM grandes |
+| Arquitectura | Colección heterogénea: CNN (Real-ESRGAN, U²-Net), transformer (TripoSR, TripoSG DiT, SAM 2.1 Hiera), autoregresiva (UniRig, SkinTokens con backbone Qwen3-0.6B), PointNet++ (MeshSeg), flow-matching DiT (T2M), MLP/red de interpolación (RMIB) |
+| Parametros totales | 409.252.800 (dato agregado del repo en safetensors); el modelo individual más grande identificado es SkinTokens con backbone Qwen3-0.6B; T2M declara 21,7 M |
+| Parametros activos | no disponible (no es un modelo MoE) |
+| Longitud de contexto | no disponible (no aplica de forma uniforme; los modelos no son de lenguaje general salvo SmolVLM-500M para captioning) |
+| Tipos de cuantizacion | fp32 e int8 en varios grafos ONNX (TripoSR tiene tiers fp32 e int8; TripoSG incluye un tier int8 marcado como obsoleto por degradación); GGUF para SmolVLM-500M |
+| Idiomas soportados | no disponible (el repositorio no declara idiomas; SmolVLM soporta entrada multimodal imagen-texto) |
+| Licencia | per-model (CC0-1.0, BSD-3-Clause, MIT, CC-BY-4.0, Apache-2.0 según la subcarpeta; ver THIRD_PARTY_AI_MODELS.md) |
+| Formato de pesos | ONNX (mayoría), GGUF (SmolVLM), datos externos `.onnx.data` para grafos grandes |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no define una arquitectura unica. Cada submodelo responde a un diseno distinto. PBRify_Remix, Real-ESRGAN y U²-Net son redes convolucionales para tareas de imagen (sintesis de mapas, superresolucion y saliencia). TripoSR usa un encoder de triplanos con decodificador por punto de densidad y color. TripoSG emplea un encoder de imagen DINOv2 y un DiT de rectified flow con paso unico por grafo, mas un VAE latente y un decodificador de campo; el tier int8 esta deprecado porque degrada a "blobs" sobre el bucle de flujo CFG. UniRig realiza prediccion autorregresiva de esqueletos. SkinTokens/TokenRig usa un backbone Qwen3-0.6B con cinco grafos ONNX y un manifest, con los pesos del LM en datos externos porque ORT no puede parsear el proto unico de mas de 1,6 GB.
+El repositorio no corresponde a un entrenamiento único, sino a un conjunto de conversiones y de modelos propios. Las conversiones a ONNX provienen de proyectos de terceros: PBRify_Remix (modelos SPAN CC0 de Kim2091) para mapas de normales, rugosidad y altura a partir de un albedo; Real-ESRGAN de xinntao para superresolución 2× y 4×; UniRig de VAST-AI (SIGGRAPH 2025) para predicción autoregresiva de esqueletos; SkinTokens/TokenRig de VAST-AI con backbone Qwen3-0.6B para pesos de piel; TripoSR (Tripo AI + Stability AI) con encoder triplanar y decodificador por punto; TripoSG (VAST-AI) con encoder DINOv2 y DiT de flujo rectificado; SAM 2.1 Hiera-Small de Meta para segmentación genérica; U²-Net para eliminación de fondos; y SmolVLM-500M en GGUF para captioning de imágenes.
 
-Los tres modelos propios del autor tienen detalles de entrenamiento documentados. RMIB (in-betweening) se entrena desde cero sobre la base de datos CMU MoCap, con licencia permisiva, y supera a slerp en mas de 2x sobre movimiento CMU reservado. El text-to-motion t2m v8.0 es un DiT de flow matching de 21,7M de parametros que mapea una palabra clave de texto a un clip de 22 articulaciones en marco mundial sobre un vocabulario de 30 acciones, entrenado con clips de plantilla curados en `motion/motion-library-v2.json`; la version v8.0 corrige el problema de orientacion hacia atras heredado del corpus CMU y un defecto de marcha donde la flexion estaba en el tobillo en lugar de la rodilla, y se conserva `t2m-v61.onnx` para rollback. Meshseg es un cabezal tipo PointNet++ que etiqueta por punto cabeza/torso/brazo/pierna, entrenado con cuerpos sinteticos propios y personajes riggeados CC0 de Quaternius, con 94,7% de exactitud por vertice en evaluacion con ground truth de rig.
+Los modelos propios son tres. RMIB (interpolación de animación) se entrenó desde cero sobre la base de datos CMU MoCap y, según el autor, supera a slerp en más de 2× en movimiento CMU retenido. T2M v8.0 es un DiT de flow-matching de 21,7 M de parámetros que mapea una palabra clave de texto a un clip de 22 articulaciones en marco mundial sobre un vocabulario de 30 acciones, entrenado con clips plantilla curados; la versión 8.0 corrige problemas de orientación heredados del corpus CMU y un defecto de marcha en el tobillo, y se conserva t2m-v61.onnx para rollback. MeshSeg es una cabeza PointNet++ que asigna etiquetas por punto (cabeza, torso, brazo, pierna), entrenada con cuerpos sintéticos propios y personajes riggeados CC0 de Quaternius, con 94,7 % de precisión por vértice en evaluación con verdad de rig.
 
 ## Capacidades
 
-- Sintesis de mapas PBR (normal tangencial, roughness y height) a partir de una unica textura de albedo, con altura y anchura dinamicas y E/S `1×3×H×W` float `[0,1]`.
-- Superresolucion de texturas 2x y 4x mediante Real-ESRGAN.
-- Prediccion automatica de esqueletos para mallas sin rig (UniRig).
-- Prediccion de pesos de skin por ML (SkinTokens/TokenRig), marcada como el skinner por defecto de QtMeshEditor.
-- Image-to-3D: reconstruccion de geometria y color via TripoSR (triplanos) y TripoSG (rectified-flow DiT, solo geometria; el color proviene del campo de color de TripoSR).
-- Eliminacion de fondos por saliencia con U²-Net.
-- Segmentacion de partes de malla (cabeza, torso, brazo, pierna) por vertice.
-- Interpolacion de animacion entre keyframes (RMIB).
-- Text-to-motion: mapeo de palabra clave a clip de 22 articulaciones sobre vocabulario de 30 acciones, con biblioteca de clips de respaldo para prompts fuera de vocabulario.
-- Captioning de imagenes mediante SmolVLM-500M-Instruct cuantizado en GGUF para llama.cpp.
-- Ejecucion local/offline tras la primera descarga de cada modelo; sin dependencia de API en runtime.
+- Síntesis de mapas PBR (normal, rugosidad, altura) a partir de una textura albedo, con H y W dinámicos.
+- Superresolución de texturas 2× y 4× mediante Real-ESRGAN.
+- Predicción automática de esqueleto para mallas sin rig (UniRig).
+- Predicción de pesos de piel (skin weights) con SkinTokens como skinner por defecto de la aplicación.
+- Reconstrucción image-to-3D: geometría con TripoSR (triplano) y TripoSG (DiT de flujo rectificado), color desde el campo de color de TripoSR.
+- Segmentación de partes de malla por punto (cabeza/torso/brazo/pierna) con MeshSeg.
+- Segmentación genérica de cualquier objeto con SAM 2.1 Hiera-Small (encoder + decoder con prompt).
+- Eliminación de fondos con U²-Net.
+- Captioning de imágenes con SmolVLM-500M en GGUF.
+- Interpolación de animación entre keyframes (RMIB).
+- Texto-a-movimiento con vocabulario de 30 acciones (T2M v8.0).
+- No se declara soporte de tool calling, function calling ni razonamiento multi-paso; no es un modelo conversacional de propósito general.
 
 ## Casos de uso
 
-- Pipeline de materiales en produccion 3D: dada una unica textura de albedo, generar los mapas normal, roughness y height con PBRify y empaquetarlos para un motor PBR, reduciendo el trabajo manual de autoria de materiales.
-- Preparacion de assets para juegos moviles: aplicar Real-ESRGAN 2x/4x a texturas de baja resolucion para alcanzar resoluciones objetivo sin reautoria, con salida ONNX integrable en un paso de build.
-- Auto-rigging de personajes en lote: usar UniRig para predecir esqueletos de mallas sin rig y SkinTokens para generar pesos de skin, acelerando la incorporacion de bibliotecas de personajes a un pipeline de animacion.
-- Prototipado rapido de assets a partir de bocetos o fotos: TripoSR y TripoSG convierten una imagen en malla 3D con geometria y color, adecuados para blockouts y pruebas de concepto antes de modelado definitivo.
-- Segmentacion de mallas para edicion selectiva: meshseg etiqueta cabeza, torso, brazos y piernas por vertice, habilitando operaciones por region (ocultar, colorear, deformar) en herramientas de autoria.
-- Generacion de animaciones basicas por texto: t2m v8.0 mapea una accion de un vocabulario de 30 clases a un clip de 22 articulaciones, util para previsualizaciones y animacion provisional en prototipos.
-- Interpolacion de keyframes en animacion: RMIB rellena el hueco entre dos poses clave superando a slerp en mas de 2x en movimiento CMU reservado, lo que reduce el numero de claves necesarias al animar.
-- Captioning automatico de texturas y renders: SmolVLM-500M-Instruct en GGUF genera descripciones para catalogar y buscar assets en una biblioteca.
-- Eliminacion de fondos en flujos de fotogrametria o image-to-3D: U²-Net aísla el sujeto antes de pasarlo a TripoSR/TripoSG para mejorar la reconstruccion.
+- Pipeline de texturizado PBR en estudio: a partir de un albedo escaneado o pintado, generar normales, rugosidad y altura con PBRify para completar el set de materiales sin salir del editor 3D, aprovechando que los grafos aceptan H y W dinámicos.
+- Preparación de assets para motores de juego: escalar texturas de baja resolución a 2× o 4× con Real-ESRGAN antes de empaquetar el asset, reduciendo el trabajo manual de repintado.
+- Rigging automático de personajes: cargar una malla sin esqueleto y obtener un esqueleto candidato con UniRig, seguido de pesos de piel con SkinTokens, lo que acelera la puesta a punto de personajes para animación.
+- Prototipado rápido image-to-3D: convertir una foto o un concepto 2D en una malla 3D con TripoSR (iteración rápida) o TripoSG (mayor calidad geométrica), y usar el campo de color de TripoSR para el aspecto final.
+- Segmentación de partes para edición selectiva: usar MeshSeg para separar cabeza, torso, brazos y piernas en una malla humana y aplicar modificaciones o materiales por región; SAM 2.1 cubre objetos no humanos con prompts.
+- Limpieza de material de referencia: eliminar fondos de imágenes de referencia con U²-Net antes de usarlas como entrada en flujos de captioning o image-to-3D.
+- Generación de animación básica: producir clips de 22 articulaciones a partir de una palabra clave con T2M v8.0 y rellenar huecos entre keyframes con RMIB, útil para previsualizaciones y animática.
+- Catalogación de assets: generar descripciones automáticas de imágenes con SmolVLM-500M para metadatos de una biblioteca de texturas o referencias.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible, salvo las metricas internas declaradas por el autor para sus propios modelos:
-
-| Modelo | Metrica | Resultado |
-|---|---|---|
-| RMIB (in-betweening) | Comparacion con slerp en movimiento CMU reservado | >2x mejor que slerp |
-| meshseg (segmentacion) | Exactitud por vertice en evaluacion con ground truth de rig | 94,7% |
-| t2m v8.0 | Parametros | 21,7M |
-| t2m v8.0 | Vocabulario de acciones | 30 clases |
-| t2m v8.0 | Articulaciones por clip | 22 |
-
-No hay datos de MMLU, HumanEval, GSM8K ni benchmarks estandar de LLM, ya que el repositorio no contiene un LLM de proposito general.
+No se han publicado resultados de benchmarks en la informacion disponible, salvo las métricas internas declaradas por el autor: RMIB supera a slerp en más de 2× en movimiento CMU retenido, y MeshSeg alcanza 94,7 % de precisión por vértice en evaluación con verdad de rig. No se aportan cifras de MMLU, HumanEval, GSM8K ni métricas estándar de image-to-3D (como Chamfer distance o F-score) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma agregada. Depende del submodelo cargado; los grafos ONNX de imagen y 3D (TripoSR, TripoSG, Real-ESRGAN) son los mas exigentes, mientras que t2m (21,7M parametros) y meshseg son ligeros.
-- SkinTokens/TokenRig incluye un backbone Qwen3-0.6B con pesos en datos externos de mas de 1,6 GB, lo que implica varios GB de memoria al cargarlo en fp32.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por el perfil de los modelos (inferencia ONNX de vision y 3D), se espera que funcionen en GPUs consumer modernas, pero no hay cifras confirmadas.
-- Cabe en consumer GPU: no confirmado en la informacion disponible.
-- Opciones de despliegue: ONNX Runtime (formato principal del repo), llama.cpp para el GGUF de SmolVLM. No se mencionan vLLM, TGI ni Ollama.
-- Latencia y throughput: no disponibles.
+- VRAM estimada: no disponible de forma agregada; depende del submodelo cargado. Los grafos ONNX se ejecutan típicamente en CPU o GPU según el runtime; los pesos de SkinTokens (Qwen3-0.6B) y los grafos de TripoSG con pesos externos fp32 son los componentes más pesados del conjunto.
+- GPU recomendadas: no disponible en la información proporcionada; al ser inferencia ONNX local, se puede usar GPU con soporte de ONNX Runtime (CUDA, DirectML) o CPU.
+- ¿Cabe en GPU consumer? No se especifica; el tamaño total del repo (31,2 GB) excede la VRAM de muchas GPU consumer si se cargan todos los modelos a la vez, pero la aplicación descarga y ejecuta cada modelo por separado bajo demanda.
+- Opciones de despliegue: ONNX Runtime (formato principal), llama.cpp/Ollama para el componente GGUF (SmolVLM-500M). No se mencionan vLLM ni TGI.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
+| Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QtMeshEditor-models (agregado) | 409.252.800 (agregado safetensors) | no aplica | metricas internas por submodelo | per-model | Hugging Face, ONNX/GGUF |
-| PBRify_Remix (Kim2091) | no disponible | no aplica | no disponible | CC0-1.0 | repo original en GitHub |
-| Real-ESRGAN (xinntao) | no disponible | no aplica | no disponible | BSD-3-Clause | repo original |
-| TripoSR (Tripo AI + Stability AI) | no disponible | no aplica | no disponible | MIT | modelo original |
-| UniRig (VAST-AI) | no disponible | no aplica | no disponible | MIT | Hugging Face |
+| QtMeshEditor-models | Paquete de modelos 3D/visión en ONNX/GGUF | 409,3 M agregados (submodelos de 21,7 M a Qwen3-0.6B) | no aplica | per-model | Hugging Face (fernandotonon) |
+| TripoSR (original) | Image-to-3D | no disponible | no aplica | MIT | Hugging Face (stabilityai/TripoSR) |
+| TripoSG (original) | Image-to-3D (DiT) | no disponible | no aplica | MIT | Hugging Face (VAST-AI/TripoSG) |
+| SAM 2.1 (original) | Segmentación | Hiera-Small y otras variantes | no aplica | Apache-2.0 | GitHub/Meta |
 
-La comparativa directa es dificil porque el repositorio agrega trabajos de terceros ya publicados por separado; en la practica, cada submodelo compite con su version original, no con el agregado.
+La comparativa directa es limitada porque QtMeshEditor-models agrega varios modelos de distinta naturaleza; frente a cada proyecto original, la diferencia principal es el reempaquetado a ONNX con tiers de cuantización y la integración en la aplicación de escritorio.
 
 ## Limitaciones y advertencias
 
-- No es un modelo unico: no debe tratarse como un LLM ni evaluarse con benchmarks de texto; es una coleccion de herramientas 3D en ONNX.
-- Licencias heterogeneas: cada componente tiene su propia licencia (CC0-1.0, BSD-3-Clause, MIT, CC-BY-4.0, Apache-2.0). El uso comercial exige revisar `THIRD_PARTY_AI_MODELS.md` y la licencia de cada submodelo por separado.
-- El tier int8 de TripoSG esta deprecado y degrada la salida a "blobs" sobre el bucle de flujo CFG; usar fp32.
-- TripoSG es solo geometria; el color depende del campo de color de TripoSR.
-- El text-to-motion t2m v8.0 esta limitado a un vocabulario de 30 acciones; fuera de ese vocabulario recurre a la biblioteca de clips de respaldo, no a generacion libre.
-- RMIB se entrena sobre CMU MoCap, con los sesgos y estilo de movimiento de ese corpus.
-- meshseg se entrena con cuerpos sinteticos propios y personajes CC0 de Quaternius, lo que puede limitar la generalizacion a morfologias no representadas.
-- Riesgo de alucinacion en el captioning de SmolVLM-500M-Instruct, inherente al modelo base.
-- El dato de 409.252.800 parametros es agregado y no representa a cada submodelo; no usarlo para estimar VRAM por componente.
-- Algunos pesos requieren datos externos `.onnx.data` por limitaciones de parseo de ONNX Runtime (>1,6 GB en proto unico).
-- Idiomas soportados no disponibles; la mayoria de componentes no procesan lenguaje.
+- Licencias heterogéneas: cada subcarpeta tiene su propia licencia (CC0-1.0, BSD-3-Clause, MIT, CC-BY-4.0, Apache-2.0); es obligatorio revisar THIRD_PARTY_AI_MODELS.md antes de un uso comercial.
+- El tier int8 de TripoSG está marcado como obsoleto por el propio autor porque degrada la salida a "blobs" sobre el bucle de flujo CFG; usar fp32.
+- El grafo decoder.onnx.data de SkinTokens se separa en datos externos porque ONNX Runtime no puede parsear el proto único de más de 1,6 GB.
+- T2M está limitado a un vocabulario de 30 acciones; las peticiones fuera del vocabulario recurren a la biblioteca de clips plantilla como fallback.
+- No es un modelo de lenguaje conversacional: no se declaran capacidades de tool calling, agentes ni razonamiento multi-paso.
+- No se declaran idiomas soportados ni sesgos conocidos en la información disponible; el riesgo de alucinación aplica principalmente al componente de captioning (SmolVLM-500M).
+- El repositorio es un artefacto de distribución para una aplicación concreta; su uso fuera de QtMeshEditor requiere integrar manualmente cada grafo y su contrato de entrada/salida.
 
 ## Enlaces
 
 - Repositorio principal: https://huggingface.co/fernandotonon/QtMeshEditor-models
-- Aplicacion QtMeshEditor: https://github.com/fernandotonon/QtMeshEditor
-- QtMesh Cloud: https://qtmesh.dev
+- Aplicación QtMeshEditor: https://github.com/fernandotonon/QtMeshEditor
 - Licencias de terceros: https://github.com/fernandotonon/QtMeshEditor/blob/master/THIRD_PARTY_AI_MODELS.md
-- PBRify: https://huggingface.co/fernandotonon/QtMeshEditor-pbrify-onnx y https://github.com/Kim2091/PBRify_Remix
-- Real-ESRGAN: https://huggingface.co/fernandotonon/QtMeshEditor-realesrgan-onnx y https://github.com/xinntao/Real-ESRGAN
-- UniRig: https://huggingface.co/fernandotonon/QtMeshEditor-unirig-onnx y https://huggingface.co/VAST-AI/UniRig
+- PBRify: https://huggingface.co/fernandotonon/QtMeshEditor-pbrify-onnx
+- Real-ESRGAN: https://huggingface.co/fernandotonon/QtMeshEditor-realesrgan-onnx
+- UniRig: https://huggingface.co/fernandotonon/QtMeshEditor-unirig-onnx
 - SkinTokens: https://huggingface.co/fernandotonon/QtMeshEditor-skintokens-onnx
 - TripoSR: https://huggingface.co/fernandotonon/QtMeshEditor-triposr-onnx
 - TripoSG: https://huggingface.co/fernandotonon/QtMeshEditor-triposg-onnx
 - RMIB in-betweening: https://huggingface.co/fernandotonon/QtMeshEditor-rmib-inbetween
 - Text-to-motion: https://huggingface.co/fernandotonon/QtMeshEditor-t2m
-- Segmentacion de malla: https://huggingface.co/fernandotonon/QtMeshEditor-mesh-segmentation
-- U²-Net / rembg: https://huggingface.co/fernandotonon/QtMeshEditor-u2net-onnx
+- Segmentación de malla: https://huggingface.co/fernandotonon/QtMeshEditor-mesh-segmentation
+- SAM 2.1: https://huggingface.co/fernandotonon/QtMeshEditor-sam2-onnx
+- U²-Net: https://huggingface.co/fernandotonon/QtMeshEditor-u2net-onnx
 - SmolVLM GGUF: https://huggingface.co/fernandotonon/QtMeshEditor-smolvlm-gguf
+- PBRify_Remix (origen): https://github.com/Kim2091/PBRify_Remix
+- Real-ESRGAN (origen): https://github.com/xinntao/Real-ESRGAN
+- UniRig (origen): https://huggingface.co/VAST-AI/UniRig
+- SAM 2.1 (origen): https://github.com/facebookresearch/sam2
 - CMU MoCap: http://mocap.cs.cmu.edu

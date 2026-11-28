@@ -2,96 +2,95 @@
 
 ## Resumen
 
-flint-Tenstorrent-Tensix-BFP4 es una exportación cuantizada del modelo RecursiveSI/flint, publicada por Xylolabs, orientada específicamente a la inferencia sobre aceleradores Tensix de Tenstorrent (arquitecturas Wormhole y Blackhole). El modelo base es un transformer de tipo mezcla de expertos (MoE) con 39.785.287.456 parámetros totales, y esta versión sustituye las capas lineales por pesos en formato de coma flotante en bloque de 4 bits (`ttnn.bfloat4_b`, BFP4) obtenidos mediante GPTQ, manteniendo el resto de tensores (embeddings, router, LM head y normalizaciones) en bf16.
+flint-Tenstorrent-Tensix-BFP4 es una versión cuantizada del modelo base RecursiveSI/flint, publicada por Xylolabs para su ejecución sobre aceleradores NPU Tensix de Tenstorrent (arquitecturas Wormhole y Blackhole). El modelo conserva la arquitectura y el comportamiento del original, pero sustituye los pesos de atención, MLP y expertos (enrutados y compartidos) por tensores en formato block floating point de 4 bits (bfloat4_b, abreviado BFP4), manteniendo el resto de componentes en bf16. Con 39.785.287.456 parámetros totales y un repositorio de 79,6 GB, el paquete cuantizado ocupa 23,299 GB empaquetado.
 
-La relevancia del modelo radica en que demuestra un flujo de cuantización extremo (4,68 bits por peso de media) que reduce el peso del modelo de 79,57 GB a 23,30 GB, permitiendo desplegar un modelo de casi 40.000 millones de parámetros en memoria de dispositivo mucho más reducida. Está pensado para el stack de software de Tenstorrent (tt-metal, ttNN, tt-forge), no para GPU convencionales, y se distribuye con licencia Apache 2.0.
+La relevancia de esta ficha radica en que es una de las pocas publicaciones que ofrece pesos preparados específicamente para el ecosistema tt-metal/ttnn de Tenstorrent, con scripts de empaquetado y verificación incluidos. El autor reporta una divergencia media de KL de 0,374 frente al modelo en BF16 sobre 16.320 posiciones de texto en inglés y coreano, y respuestas correctas en 33 de 33 prompts fijos de evaluación, lo que sitúa la pérdida de calidad por debajo del umbral declarado (1,5 veces la referencia Q4_K_M de llama.cpp, cuyo KL es 0,3039).
 
-El checkpoint incluye herramientas de verificación bit a bit de las matrices empaquetadas y una evaluación de fidelidad frente a la referencia en bf16 mediante divergencia KL y top-1 sobre texto en inglés y coreano. La model card advierte que tt-transformers y tt-forge no se han probado con este checkpoint, lo que limita su madurez de producción.
+La licencia Apache 2.0 y la disponibilidad de los scripts `pack_tensix.py` y `verify_grid.py` facilitan su integración en pipelines de inferencia sobre hardware Tenstorrent, aunque la información pública sobre el modelo base (idiomas, contexto, datos de entrenamiento) es limitada y no está incluida en la model card de esta versión cuantizada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer MoE (mezcla de expertos) |
+| Arquitectura | Transformer (derivada de RecursiveSI/flint; detalles no disponibles) |
 | Parametros totales | 39.785.287.456 |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BFP4 (`ttnn.bfloat4_b`, 4,5 bits por peso), GPTQ con busqueda de exponente por bloque; router y LM head en bf16 |
-| Idiomas soportados | no disponible (evaluado en ingles y coreano) |
+| Tipos de cuantizacion | BFP4 (bfloat4_b) en atención, MLP y expertos enrutados/compartidos; resto en bf16; referencia Q4_K_M disponible para comparación |
+| Idiomas soportados | no disponible (la evaluación de KL cubre inglés y coreano) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (con metadatos `quant4.json` e indice de shards) |
+| Formato de pesos | safetensors (carpeta `bfp4/`), con `quant4.json` e índice de safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo base RecursiveSI/flint es un transformer de mezcla de expertos con 49 capas de atención y 47 capas con expertos enrutados más un experto compartido; las 2 capas MLP restantes son densas. La exportación de Xylolabs cuantiza las proyecciones q, k, v, o de atención, las proyecciones gate/up/down de las MLP densas y las de los expertos enrutados y compartido a BFP4, mientras que el router (47 capas), el LM head, los embeddings y las normalizaciones permanecen en bf16. El resultado es un peso medio de 4,68 bits por parámetro y 23,30 GB empaquetados.
+El modelo base RecursiveSI/flint es un transformer de 39.785 millones de parámetros del que no se detallan en esta model card ni la composición del dataset de entrenamiento, ni el número de tokens, ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card de la versión cuantizada se limita a describir el proceso de cuantización y el empaquetado para Tensix, por lo que los detalles arquitectónicos internos (número de capas, dimensiones ocultas, tipo de atención) no están disponibles en la información proporcionada.
 
-El proceso de cuantización aplica GPTQ con una búsqueda de exponente por bloque (offsets -1 y 0, damping 0,1). Antes de cuantizar, algunas canales intermedios de los expertos se permutaron de forma conjunta (filas de gate/up y columnas correspondientes de down), de modo que la referencia bf16 utilizada para la evaluación es un checkpoint reordenado, no el original. La model card señala que la suma en precisión finita y el enrutamiento de expertos pueden cambiar con esa permutación. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO en el modelo base.
+La innovación técnica principal de esta publicación es el esquema de cuantización block floating point de 4 bits (bfloat4_b) aplicado selectivamente a las matrices de atención, MLP y expertos, mientras que el resto de tensores permanece en bf16. El repositorio incluye un fichero `quant4.json` que describe el formato por capa y submódulo, y scripts de empaquetado (`pack_tensix.py`) y verificación (`verify_grid.py`) que permiten comprobar el round-trip de los valores empaquetados contra los tensores originales. La evaluación de calidad se realiza mediante divergencia KL sobre 16.320 posiciones de WikiText-2 y Wikipedia en coreano, en texto plano y con plantilla de chat, con un límite de 1,5 veces el KL de la referencia Q4_K_M.
 
 ## Capacidades
 
-- Generación de texto conversacional: la model card incluye un ejemplo de chat con plantilla de mensajes (`apply_chat_template`) y generación con `max_new_tokens`.
-- Razonamiento: la prueba de respuestas documentada se realizó con "reasoning on" y un límite de 1.024 tokens nuevos, lo que sugiere soporte de modo de razonamiento.
-- Capacidades multilingües: la evaluación de fidelidad cubre inglés y coreano (WikiText-2 y Wikipedia en coreano), aunque no se publica la lista oficial de idiomas.
-- Compatibilidad con el ecosistema Transformers: carga mediante `AutoModelForCausalLM` y `AutoTokenizer`, con `device_map="auto"`.
-- Despliegue en hardware Tenstorrent: pesos empaquetados para `ttnn.bfloat4_b` con layout TILE y memoria DRAM, verificables bit a bit con `pack_tensix.py` y `verify_grid.py`.
-- Tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
-- Visión o audio: no disponible; el pipeline es text-generation.
+- Generación de texto autoregresiva con plantilla de chat (el ejemplo de la model card usa `apply_chat_template` con roles user/assistant).
+- Inferencia sobre NPU Tensix mediante ttnn, con conversión directa de tensores a `ttnn.bfloat4_b` y layout TILE.
+- Ejecución en Transformers 5.22.2 o superior con `dtype="bfloat16"` y `device_map="auto"` para el quickstart en GPU/CPU.
+- Soporte de empaquetado y verificación de matrices individuales mediante los scripts incluidos.
+- Capacidades multilingües: la evaluación de KL incluye inglés y coreano, aunque no se declara una lista oficial de idiomas.
+- No se documentan en la información disponible capacidades de tool calling, agentes, visión, audio ni modo de razonamiento extendido.
 
 ## Casos de uso
 
-- Inferencia en aceleradores Tenstorrent: el caso principal es ejecutar un modelo de ~40.000 millones de parámetros en NPUs Wormhole o Blackhole con solo 23,30 GB de memoria de dispositivo para los pesos, más KV cache y buffers, aprovechando el formato BFP4 nativo de ttNN.
-- Investigación en cuantización extrema: sirve como referencia reproducible para estudiar el impacto de BFP4 con GPTQ en modelos MoE, con métricas de KL y top-1 frente a bf16 y frente a Q4_K_M de llama.cpp.
-- Evaluación de fidelidad de checkpoints: los scripts `pack_tensix.py` y `verify_grid.py` permiten validar que cada matriz empaquetada coincide bit a bit con la representación esperada, útil en pipelines de control de calidad de cuantizaciones.
-- Despliegue con memoria limitada en host: cargando el checkpoint en bf16 con Transformers en CPU o GPU, el peso efectivo es de 23,30 GB en lugar de 79,57 GB, lo que facilita pruebas en máquinas con menos VRAM.
-- Prototipado de asistentes conversacionales: el ejemplo de chat con plantilla y el modo de razonamiento permiten construir demostraciones de atención al cliente o asistentes multi-turno, siempre que se valide el comportamiento en el hardware objetivo.
-- Benchmarking de stacks de software: comparar el rendimiento de tt-metal/ttNN frente a alternativas como llama.cpp con Q4_K_M (24,167 GB, KL 0,3039) para decidir la ruta de despliegue en producción.
+- Despliegue en aceleradores Tenstorrent Wormhole y Blackhole: el paquete `bfp4/` está pensado para cargarse directamente en ttnn, reduciendo el peso de 79,57 GB a 23,299 GB y permitiendo ejecutar el modelo en NPUs con memoria DRAM limitada.
+- Sustitución de la referencia BF16 en entornos de producción con restricciones de memoria: la divergencia KL de 0,374 y las 33/33 respuestas correctas en prompts fijos lo hacen adecuado para tareas de generación de texto general donde no se requiera fidelidad bit a bit.
+- Evaluación comparativa de cuantizaciones: el repositorio incluye la referencia Q4_K_M (24,167 GB, KL 0,3039) para comparar el impacto de BFP4 frente a esquemas de llama.cpp en el mismo conjunto de evaluación.
+- Investigación en cuantización block floating point: los scripts `pack_tensix.py` y `verify_grid.py` permiten reproducir el empaquetado y verificar la integridad de los tensores, útil para estudiar el efecto de BFP4 en modelos de ~40B.
+- Integración en pipelines de Transformers: el quickstart con `AutoModelForCausalLM` y `AutoTokenizer` permite usar el modelo en flujos existentes de Hugging Face sin cambios mayores, siempre que se use Transformers 5.22.2 o superior.
+- Prototipado de asistentes conversacionales: el uso de plantilla de chat en el ejemplo oficial facilita construir demos multi-turno sobre el modelo cuantizado.
+- Benchmarking de hardware Tenstorrent: al estar empaquetado para Tensix, sirve como carga de trabajo representativa para medir throughput y latencia en Wormhole/Blackhole.
 
 ## Benchmarks y rendimiento
 
-| Modelo | Bits por peso | Tamano (GB) | KL media vs BF16 | Top-1 (%) |
-|---|---:|---:|---:|---:|
-| BF16 reordenado (RecursiveSI/flint) | 16 | 79,57 | 0 | 100 |
-| **flint-Tenstorrent-Tensix-BFP4** | 4,68 | 23,299 | 0,374 | 78,66 |
-| Q4_K_M (llama.cpp) | 4,86 | 24,167 | 0,3039 | 80,58 |
+| Modelo / formato | Tamano empaquetado (GB) | KL medio vs BF16 | Respuestas correctas (33 prompts) |
+|---|---|---|---|
+| flint BFP4 (este modelo) | 23,299 | 0,374 | 33/33 |
+| flint BF16 (referencia) | 79,57 | 0 | no disponible |
+| flint Q4_K_M (llama.cpp) | 24,167 | 0,3039 | no disponible |
 
-Las métricas de KL y top-1 se calcularon sobre 16.320 posiciones de texto en inglés y coreano (WikiText-2 test y Wikipedia en coreano), con y sin plantilla de chat, medidas en CPU/GPU usando los valores bf16 del checkpoint cuantizado. El suelo de KL media entre las dos referencias bf16 es 0,0561. La KL media de este modelo es 1,23 veces la de Q4_K_M. En la prueba de respuestas documentada en CPU/GPU, tanto este checkpoint como su referencia bf16 reordenada acertaron 33 de 33 prompts fijos con razonamiento activado y límite de 1.024 tokens nuevos. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. Los únicos datos de calidad son la divergencia KL y el recuento de respuestas correctas sobre 33 prompts fijos.
 
 ## Requisitos de hardware
 
-- VRAM/memoria de dispositivo estimada: unos 23,30 GB solo para los pesos del modelo de lenguaje, más espacio para KV cache y buffers.
-- Hardware objetivo: NPUs Tenstorrent Tensix, arquitecturas Wormhole y Blackhole; verificado con ttnn 0.81.1 sobre ttsim (simulador de Blackhole).
-- GPU consumer: no está pensado para GPU; la carga en bf16 con Transformers requiere aproximadamente 23,30 GB de memoria, lo que excede la mayoría de GPU consumer de 24 GB una vez añadidos KV cache y buffers.
-- GPU de datacenter: no se documentan pruebas con A100, H100 ni RTX 4090; el quickstart nativo se verificó con Transformers 5.22.2 en CPU.
-- Opciones de despliegue: tt-metal/ttNN (formato nativo BFP4), Transformers con `device_map="auto"` para el decodificador nativo; tt-transformers y tt-forge no se han ejecutado con este checkpoint.
+- VRAM/DRAM estimada: 23,299 GB para los pesos BFP4 empaquetados; el quickstart en Transformers carga el modelo con `dtype="bfloat16"` y `device_map="auto"`, por lo que en GPU se requiere memoria suficiente para la representación en bf16 o para la conversión parcial.
+- GPU recomendadas: no especificadas en la información disponible; por tamaño, una A100 80 GB o H100 80 GB permiten cargar el modelo en bf16, mientras que GPUs de 24 GB no son suficientes para los pesos completos.
+- NPU objetivo: Tenstorrent Wormhole y Blackhole (Tensix), con carga vía ttnn y memoria DRAM.
+- ¿Cabe en GPU de consumo? No para los pesos completos en bf16; el paquete BFP4 de 23,3 GB queda por encima de los 24 GB solo en el límite, por lo que no se garantiza en RTX 4090 sin técnicas adicionales.
+- Opciones de despliegue: Transformers 5.22.2+, ttnn/tt-metal para Tensix, scripts `pack_tensix.py` y `verify_grid.py`; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI para este paquete concreto.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Bits por peso | Tamano | KL vs BF16 | Licencia |
-|---|---|---:|---:|---:|---:|---|
-| flint-Tenstorrent-Tensix-BFP4 | 39,79 B | no disponible | 4,68 | 23,30 GB | 0,374 | Apache 2.0 |
-| RecursiveSI/flint (bf16) | 39,79 B | no disponible | 16 | 79,57 GB | 0 | no disponible |
-| Q4_K_M de flint (llama.cpp) | 39,79 B | no disponible | 4,86 | 24,17 GB | 0,3039 | Apache 2.0 (derivada) |
+| Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| flint-Tenstorrent-Tensix-BFP4 | 39,79B | no disponible | BFP4, 23,299 GB | Apache 2.0 | Hugging Face |
+| RecursiveSI/flint (BF16) | 39,79B | no disponible | BF16, 79,57 GB | Apache 2.0 | Hugging Face |
+| flint Q4_K_M (llama.cpp) | 39,79B | no disponible | Q4_K_M, 24,167 GB | Apache 2.0 | Referencia en la model card |
 
-La comparativa se limita a las variantes del mismo modelo base, ya que la información proporcionada no incluye otros modelos de tamaño o tarea comparable. Frente a Q4_K_M, esta exportación ocupa algo menos de espacio (23,30 GB frente a 24,17 GB) pero presenta una KL media superior (0,374 frente a 0,3039) y un top-1 inferior (78,66 % frente a 80,58 %). Su ventaja es el formato nativo para Tensix; su desventaja, la menor fidelidad relativa y la falta de validación en tt-transformers y tt-forge.
+No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- Fidelidad limitada: la KL media de 0,374 y el top-1 de 78,66 % implican una degradación medible frente a bf16; la model card la considera aceptable (1,23 veces la de Q4_K_M) pero no es una cuantización sin pérdidas.
-- Permutación de canales en expertos: la referencia bf16 usada para evaluar es un checkpoint reordenado, y la suma en precisión finita y el enrutamiento de expertos pueden cambiar respecto al modelo original.
-- Madurez del stack: tt-transformers y tt-forge no se han probado con este checkpoint; solo se verificó con ttnn 0.81.1 sobre el simulador ttsim, no en hardware físico según la información disponible.
-- Idiomas: no se publica la lista oficial de idiomas soportados; la evaluación se limita a inglés y coreano.
-- Contexto: no se documenta la longitud máxima de contexto, lo que impide planificar despliegues con ventanas largas.
-- Riesgo de alucinación y sesgos: no disponible en la información proporcionada; debe evaluarse de forma independiente antes de uso en producción.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las condiciones del modelo base RecursiveSI/flint, cuya licencia no se detalla en la información disponible.
-- Benchmarks estándar ausentes: no hay resultados de MMLU, HumanEval ni GSM8K, por lo que la comparación con otros modelos se limita a métricas de fidelidad de cuantización.
+- La cuantización BFP4 introduce una divergencia media de KL de 0,374 frente a BF16, superior al 0,3039 de Q4_K_M; aunque dentro del umbral declarado, implica mayor pérdida de fidelidad que la referencia de llama.cpp.
+- La evaluación de calidad se limita a 16.320 posiciones de inglés y coreano y a 33 prompts fijos, por lo que no cubre dominios especializados, código ni matemáticas.
+- No se documentan sesgos conocidos ni evaluaciones de seguridad del modelo base ni de la versión cuantizada.
+- Riesgo de alucinación inherente al modelo base; no se han publicado evaluaciones específicas de factualidad.
+- La lista de idiomas soportados no está disponible; solo se confirma evaluación en inglés y coreano.
+- El soporte está orientado a hardware Tenstorrent; en GPU el quickstart requiere Transformers 5.22.2 o superior y memoria suficiente para bf16.
+- La licencia Apache 2.0 permite uso comercial, pero cada carpeta incluye su propio `LICENSE` y `NOTICE`, que deben revisarse.
+- El modelo fue renombrado el 2026-11-27 (antes flint-Tenstorrent-Tensix-BFP4) y los ficheros se movieron a `bfp4/`; scripts o rutas antiguas pueden fallar.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/Xylolabs/flint-Tenstorrent-Tensix-BFP4
+- Hugging Face: https://huggingface.co/Xylolabs/flint-Tenstorrent-Tensix-BFP4
 - Modelo base: https://huggingface.co/RecursiveSI/flint
-- Referencia bf16 reordenada: https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288
-- Repositorio de código tensix-bfp-gptq: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Repositorio de código (tensix-bfp-gptq): https://github.com/XylolabsInc/tensix-bfp-gptq
 - Documentación de Tenstorrent: https://docs.tenstorrent.com
-- Licencia: https://huggingface.co/Xylolabs/flint-Tenstorrent-Tensix-BFP4/blob/main/LICENSE
+- Licencia: https://huggingface.co/Xylolabs/flint-Tenstorrent-Tensix/blob/main/LICENSE
+- Referencia BF16 del modelo base (commit): https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288

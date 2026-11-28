@@ -2,109 +2,112 @@
 
 ## Resumen
 
-HolosTTS es un modelo de síntesis de voz (text-to-speech) para ucraniano desarrollado por el usuario independente patriotyk. Se distribuye como pesos ONNX y PyTorch con licencia MIT, y su propuesta principal es un equilibrio agresivo entre calidad y latencia: según la model card, produce el primer fragmento de audio en 5 ms sobre una RTX 3090 usando TensorRT FP16, lo que lo sitúa en el terreno de la síntesis prácticamente en tiempo real con streaming intra-frase.
+HolosTTS es un modelo de síntesis de voz (text-to-speech) de código abierto especializado en el idioma ucraniano, desarrollado por el autor independiente patriotyk. Resuelve el problema de la generación de voz natural en ucraniano con un equilibrio entre calidad y velocidad: según la model card, produce el primer fragmento de audio en 3 ms sobre una RTX 5090 y en 5 ms sobre una RTX 3090. Genera audio mono a 24 kHz y soporta streaming, lo que lo hace adecuado tanto para aplicaciones de servidor como para dispositivos móviles.
 
-El modelo no consume texto directamente: espera fonemas IPA con marcas de acento, que se obtienen con paquetes auxiliares del mismo autor (`ukrainian-word-stress` e `ipa-uk`). Genera audio mono a 24 kHz, soporta voces predefinidas y clonación de voz a partir de una muestra de referencia, codificada como un vector de 256 dimensiones. El repositorio ocupa 6,4 GB e incluye los artefactos `holos.pt`, `voices.pt`, `voice_encoder.pt` y las variantes ONNX (CPU FP32/INT8, CUDA y TensorRT).
+El modelo se distribuye en múltiples formatos y runtimes: pesos PyTorch (safetensors/pt), ONNX (CPU en FP32 e INT8, CUDA y TensorRT), MLX para Apple silicon y LiteRT para Android con aceleración GPU. Esta versatilidad de despliegue, poco habitual en modelos TTS pequeños, permite ejecutarlo desde un servidor con GPU hasta un teléfono Android sin PyTorch.
 
-Es relevante ahora porque cubre un hueco poco atendido: TTS de calidad para ucraniano con despliegue sin PyTorch vía ONNX Runtime, incluyendo INT8 en CPU y TensorRT en GPU, y con streaming que permite empezar a reproducir audio antes de terminar la frase. La información pública disponible no detalla arquitectura interna, número de parámetros ni composición del dataset de entrenamiento.
+Una particularidad importante es que el modelo consume fonemas, no texto: la conversión de texto ucraniano a fonemas con marcas de acentuación se realiza mediante paquetes externos (`ukrainian-word-stress` e `ipa-uk`). El repositorio ocupa 7,3 GB e incluye pesos en tflite, onnx y safetensors bajo licencia MIT.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo TTS; pesos en PyTorch y ONNX) |
-| Parámetros totales | no disponible |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | no disponible (síntesis recomendada frase a frase) |
-| Tipos de cuantización | FP32, FP16 (TensorRT), INT8 (CPU ONNX) |
+| Arquitectura | no disponible (modelo TTS; pesos en PyTorch, ONNX, LiteRT y MLX) |
+| Parametros totales | no disponible |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | no disponible (síntesis por frase; se recomienda sintetizar textos largos oración por oración) |
+| Tipos de cuantizacion | FP32 y INT8 (ONNX Runtime CPU); FP32 en MLX; formatos LiteRT para Android |
 | Idiomas soportados | ucraniano (uk) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch (`holos.pt`, `voices.pt`, `voice_encoder.pt`) y ONNX |
-
-Otros datos técnicos: frecuencia de muestreo de salida 24 kHz, audio mono; entrada en fonemas IPA con acentuación; vector de voz de 256 números; tamaño del repositorio 6,4 GB; pipeline declarado `text-to-speech`.
+| Formato de pesos | safetensors, ONNX, TFLite (LiteRT), PyTorch (.pt) y MLX |
+| Frecuencia de muestreo de salida | 24 kHz, mono |
+| Entrada | fonemas (IPA ucraniano con acentuación), no texto plano |
+| Clonación de voz | sí, mediante vector de 256 dimensiones extraído de una muestra de audio |
+| Streaming | sí, por fragmentos configurables (`chunk_frames`, 40 frames = 1 s por defecto) |
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo (tipo de backbone, códec vocacional, vocoder, número de capas o parámetros). Lo que sí se documenta es la interfaz funcional: el sistema se compone de un modelo acústico principal (`holos.pt`), un banco de voces predefinidas (`voices.pt`) y un codificador de voz (`voice_encoder.pt`) que transforma una grabación de referencia en un embedding de 256 dimensiones utilizable como voz personalizada, también en el runtime ONNX.
+La model card no detalla la arquitectura interna del modelo (tipo de red, número de capas, mecanismo de atención ni esquema de decodificación de audio). Lo que sí se documenta es el pipeline de inferencia: el modelo recibe fonemas IPA con marcas de acentuación, producidos externamente por `ukrainian-word-stress` e `ipa-uk`, y genera audio a 24 kHz. La síntesis se realiza por frases, y para textos largos se recomienda procesar oración por oración.
 
-El flujo de inferencia exige un preprocesado lingüístico externo: acentuación con `ukrainian-word-stress` y transcripción fonética con `ipa-uk`. No se publican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF/DPO o ajuste por preferencias. Tampoco se detallan innovaciones como decodificación especulativa; la innovación declarada es operativa: streaming por chunks (`chunk_frames`, 40 frames = 1 s por defecto) con decodificación contextual a ambos lados de cada chunk, y un manejo explícito del silencio inicial del token de frontera (unos 50 ms, recortado a 10 ms con fade-in de 5 ms para evitar clics).
+El modelo incorpora un codificador de voz (`VoiceEncoder`) que transforma una grabación de referencia en un vector de 256 números, lo que permite clonar voces. También existen voces predefinidas (`voices.pt`) que no requieren el codificador. El streaming decodifica cada fragmento con contexto a ambos lados, de modo que los fragmentos concatenados equivalen exactamente a la salida de `generate()`; un `chunk_frames` menor reduce la latencia del primer fragmento a costa de un tiempo total mayor. No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o ajuste fino por preferencias.
 
 ## Capacidades
 
-- Síntesis de voz en ucraniano a partir de fonemas IPA con marcas de acento.
+- Síntesis de voz en ucraniano a partir de fonemas IPA con acentuación.
 - Voces predefinidas seleccionables mediante `list_voices()`.
-- Clonación de voz zero-shot a partir de una muestra de audio limpia (sin música ni otros hablantes), mediante `VoiceEncoder`.
-- Streaming de audio por chunks con latencia de primer fragmento muy baja (5 ms en TensorRT FP16 según la model card).
-- Control de velocidad de habla mediante el parámetro `speed` (mayor que 1 acelera, menor que 1 ralentiza).
-- Salida de audio mono a 24 kHz compatible con `soundfile`.
-- Ejecución en PyTorch (CPU/CUDA) o en ONNX Runtime sin PyTorch: CPU FP32, CPU INT8, CUDA y TensorRT.
-- Portabilidad del vector de voz entre backends (se puede guardar y pasar al runtime ONNX).
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-step, visión ni audio de entrada más allá de la referencia de clonación.
+- Clonación de voz zero-shot a partir de una muestra de audio limpia (sin música ni otros hablantes), representada como vector de 256 dimensiones reutilizable y serializable.
+- Control de velocidad del habla mediante el parámetro `speed` (valores superiores a 1 aceleran, inferiores ralentizan).
+- Streaming de audio por fragmentos con gestión de silencios de frontera (recorte a 10 ms y fundido de entrada de 5 ms para evitar clics).
+- Ejecución sin PyTorch en ONNX Runtime (CPU FP32/INT8, CUDA, TensorRT).
+- Ejecución en GPU de Apple silicon mediante MLX en FP32.
+- Ejecución en Android con LiteRT sobre GPU y alternativa en CPU con ONNX Runtime (port Kotlin con aplicación de demostración).
+- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio de entrada.
 
 ## Casos de uso
 
-- Lectura de artículos y documentos largos en ucraniano: el modelo sintetiza frase a frase y el streaming permite reproducir mientras se genera; el control de `speed` ayuda a ajustar la locución a audiolibros o podcasts.
-- Asistentes de voz y altavoces inteligentes en ucraniano: con 5 ms hasta el primer chunk en TensorRT FP16, la respuesta hablada puede comenzar antes de que el usuario perciba latencia, requisito habitual en diálogo por turnos.
-- Sistemas de accesibilidad (lectores de pantalla): el despliegue en CPU con ONNX INT8 elimina la dependencia de GPU y de PyTorch, lo que simplifica la distribución en equipos de usuario final.
-- Atención al cliente telefónica automatizada: la clonación de voz permite mantener una identidad de marca consistente y el streaming reduce el tiempo hasta el primer audio en flujos IVR.
-- Doblaje y localización de contenido al ucraniano: la clonación a partir de una muestra permite preservar el timbre de un locutor concreto, y la salida a 24 kHz es adecuada para vídeo y redes.
-- Pruebas A/B de voces en producto: el vector de 256 dimensiones se puede almacenar, versionar y reutilizar entre backends, lo que facilita comparar voces sin reentrenar.
-- Generación de avisos y notificaciones dinámicas: RTF de 0,0013 en TensorRT permite sintetizar muchos mensajes cortos por segundo en un solo servidor GPU.
+- Lectura de contenidos en ucraniano: conversión de artículos, noticias o documentación a audio, sintetizando oración por oración para respetar el límite práctico de frase del modelo.
+- Asistentes de voz para Android: integración mediante la librería LiteRT, que en un Pixel 7 alcanza un RTF de 0,13 y entrega el primer fragmento de streaming en unos 0,4 s, adecuado para respuestas habladas en tiempo real.
+- Accesibilidad para personas con discapacidad visual: generación de audio de interfaz y lectura de pantalla en ucraniano con voces predefinidas y control de velocidad.
+- Clonación de voz para doblaje o audiolibros: extracción de un vector de voz a partir de una grabación de referencia y reutilización del mismo vector en todos los fragmentos del proyecto, incluida la inferencia ONNX.
+- Servicios de streaming de baja latencia: despliegue con TensorRT o CUDA y uso de `stream()` para emitir audio mientras se genera, con el primer fragmento en milisegundos sobre GPU de gama alta.
+- Aplicaciones de escritorio en macOS: uso del paquete MLX para ejecutar todo el modelo en la GPU del Mac en FP32 sin PyTorch, con carga en una fracción de segundo.
+- Procesamiento por lotes en servidores sin GPU: ONNX Runtime en CPU con cuantización INT8 para generar audios de forma económica.
 
 ## Benchmarks y rendimiento
 
-Datos publicados en la model card. RTF = tiempo de síntesis dividido por duración del audio (menor es mejor). "Primer audio" es el retardo hasta el primer fragmento; los modelos marcados con * no hacen streaming intra-frase, por lo que su primer audio equivale a la frase completa. Medición sobre tres frases de 5–12 s, mediana de 10 ejecuciones (5 en CPU) tras calentamiento, en NVIDIA RTX 3090.
+| Metrica | Valor | Condiciones |
+|---|---|---|
+| Primer fragmento de audio | 3 ms | RTX 5090 |
+| Primer fragmento de audio | 5 ms | RTX 3090 |
+| RTF en Android | 0,13 | Pixel 7, LiteRT sobre GPU |
+| Primer fragmento en Android | ~0,4 s | Pixel 7, LiteRT sobre GPU |
 
-| Modelo | Runtime | RTF | Primer audio |
-|---|---|---|---|
-| HolosTTS | ONNX, TensorRT FP16 | 0,0013 | 5 ms |
-| HolosTTS | ONNX, TensorRT FP32 | 0,0031 | 12 ms |
-| HolosTTS | ONNX, CUDA | 0,0039 | 14 ms |
-| Supertonic 3 | ONNX, CUDA | 0,0052 | 45 ms* |
-| StyleTTS2 single-speaker | PyTorch | 0,0065 | 55 ms* |
-
-No se publican en la información disponible resultados de benchmarks de calidad (MOS, similitud de hablante, WER de transcripción inversa) ni comparativas en CPU o INT8.
+La model card menciona una sección de benchmarks con RTF para la síntesis de una frase completa mediante `generate()`, pero el texto proporcionado se interrumpe antes de incluir las cifras correspondientes. No se han publicado en la información disponible resultados de benchmarks de calidad (MOS, similitud de voz, WER) ni comparaciones con otros modelos TTS.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible en la información proporcionada; el repositorio pesa 6,4 GB e incluye varios formatos, pero no se desglosa el tamaño por artefacto.
-- GPU de referencia en las mediciones: NVIDIA RTX 3090, con TensorRT FP16 (mejor caso), TensorRT FP32 y CUDA.
-- Compatibilidad con GPU de consumo: sí, según la model card se ejecuta en una RTX 3090; no se confirma funcionamiento en GPUs con menos VRAM.
-- CPU: soportado mediante ONNX Runtime en FP32 e INT8, sin necesidad de PyTorch; no se publican cifras de RTF en CPU.
-- Aceleradores: CUDA y TensorRT (paquete `holos-tts-onnx[tensorrt]`).
-- Opciones de despliegue: paquetes `holos-tts` (PyTorch) y `holos-tts-onnx` (ONNX Runtime); también hay una demo en Hugging Face Spaces. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
-- Latencia y throughput: RTF de 0,0013 y primer audio de 5 ms en TensorRT FP16 sobre RTX 3090, según la model card.
+- VRAM estimada: no disponible; el tamaño del repositorio es de 7,3 GB e incluye pesos en varios formatos, por lo que el conjunto de pesos de un único runtime es menor, pero no se especifica la cifra exacta.
+- GPU recomendadas: RTX 5090 y RTX 3090 citadas explícitamente por el autor para latencias de 3 ms y 5 ms respectivamente; CUDA y TensorRT soportados en GPUs NVIDIA.
+- GPU de consumo: sí, cabe en GPUs de consumo como la RTX 3090; también se ejecuta en CPU mediante ONNX Runtime (FP32 o INT8).
+- Apple silicon: soporte mediante MLX en FP32, descrito como la opción más rápida en Mac.
+- Android: GPU del teléfono con LiteRT (referencia Pixel 7); en dispositivos sin GPU adecuada, CPU con ONNX Runtime en INT8.
+- Opciones de despliegue: PyTorch (`holos-tts`), ONNX Runtime (`holos-tts-onnx`, con extra `[tensorrt]`), MLX (`holos-tts-mlx`), LiteRT (`holos-tts-litert`), librería Kotlin para Android (ONNX y LiteRT).
+- Latencia y throughput: primer fragmento en 3-5 ms en GPUs NVIDIA de gama alta; RTF de 0,13 en Pixel 7 con LiteRT. No se documentan cifras de throughput agregado.
 
 ## Comparativa con modelos similares
 
-| Modelo | Runtime medido | RTF | Primer audio | Streaming intra-frase | Licencia | Idiomas |
-|---|---|---|---|---|---|---|
-| HolosTTS | ONNX TensorRT FP16 | 0,0013 | 5 ms | Sí | MIT | Ucraniano |
-| Supertonic 3 | ONNX CUDA | 0,0052 | 45 ms | No | no disponible | no disponible |
-| StyleTTS2 single-speaker | PyTorch | 0,0065 | 55 ms | No | no disponible | no disponible |
+No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos comparables de TTS en ucraniano, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
-La comparativa se limita a latencia porque es el único eje con datos publicados en la información disponible. No hay datos de parámetros, contexto ni calidad subjetiva para Supertonic 3 ni StyleTTS2 en esta ficha; además, StyleTTS2 se mide en su variante single-speaker, por lo que la comparación con clonación de voz no es directa.
+| Modelo | Idioma | Licencia | Despliegue | Datos comparativos |
+|---|---|---|---|---|
+| HolosTTS | ucraniano | MIT | PyTorch, ONNX, MLX, LiteRT | primer fragmento 3-5 ms en RTX 5090/3090 |
+| Alternativas de TTS multilingüe | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- El modelo no acepta texto: requiere un pipeline externo de acentuación y transcripción fonética (`ukrainian-word-stress`, `ipa-uk`), instalados desde GitHub, lo que añade una dependencia frágil en producción.
-- Solo soporta ucraniano; no se documenta multilingüismo.
-- La clonación de voz exige grabaciones limpias, sin música ni otros hablantes; la calidad del clon depende de la muestra de referencia.
-- Riesgo de uso indebido: la clonación de voz sin consentimiento puede facilitar suplantación de identidad y fraude; la licencia MIT no impone restricciones éticas adicionales, por lo que la responsabilidad recae en el integrador.
-- No se publican datos sobre sesgos (de género, dialectales o de edad) ni evaluaciones de calidad tipo MOS o similitud de hablante.
-- Riesgo de alucinación acústica: no se documentan tasas de errores de pronunciación ni comportamiento ante texto fuera de dominio, abreviaturas o palabras extranjeras.
-- Para textos largos se recomienda sintetizar frase a frase; no se especifica una longitud máxima de entrada ni gestión de contexto entre frases.
-- El streaming con chunks pequeños reduce el primer audio pero aumenta el tiempo total, ya que cada chunk se decodifica con contexto a ambos lados; es un compromiso que hay que calibrar.
-- Las cifras de latencia corresponden a una RTX 3090 con TensorRT; no hay datos publicados para CPU, INT8 ni GPUs de gama inferior.
-- Licencia MIT: permite uso comercial, pero no se ofrece garantía ni soporte; el proyecto tiene 0 descargas y 12 likes en el momento de la consulta, por lo que la madurez y el mantenimiento a largo plazo no están contrastados.
+- El modelo solo acepta fonemas, no texto: requiere un pipeline externo de acentuación y transcripción IPA (`ukrainian-word-stress`, `ipa-uk`, instalados desde GitHub con Git), lo que añade dependencias y pasos previos.
+- Idioma limitado al ucraniano; no se documenta soporte multilingüe.
+- La síntesis está pensada por frases; los textos largos deben dividirse oración por oración, lo que puede afectar a la prosodia entre frases.
+- La clonación de voz exige grabaciones de referencia limpias, sin música ni otros hablantes; muestras de baja calidad degradarán el resultado.
+- No se publican en la información disponible datos sobre sesgos, tasas de alucinación o errores de pronunciación; al ser un modelo generativo de audio, existe riesgo de artefactos y de pronunciación incorrecta en palabras con acentuación ambigua.
+- La licencia MIT permite uso comercial, pero el uso de clonación de voz plantea riesgos éticos y legales (suplantación de identidad, consentimiento del hablante) que deben gestionarse en producción.
+- El repositorio es de 7,3 GB al incluir múltiples formatos; conviene descargar solo los artefactos del runtime elegido.
+- No se documentan cifras de calidad subjetiva (MOS) ni comparativas con otros sistemas TTS.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/patriotyk/HolosTTS
-- Demo en Hugging Face Spaces: https://huggingface.co/spaces/patriotyk/HolosTTS
+- Demo (Space): https://huggingface.co/spaces/patriotyk/HolosTTS
 - Código en GitHub: https://github.com/patriotyk/HolosTTS
-- README del paquete ONNX: https://github.com/patriotyk/HolosTTS/blob/main/holos_onnx/README.md
-- Paquete PyPI `holos-tts`: https://pypi.org/project/holos-tts/
-- Paquete PyPI `holos-tts-onnx`: https://pypi.org/project/holos-tts-onnx/
+- Paquete PyTorch: https://pypi.org/project/holos-tts/
+- Paquete ONNX: https://pypi.org/project/holos-tts-onnx/
+- Paquete MLX: https://pypi.org/project/holos-tts-mlx/
+- Paquete LiteRT: https://pypi.org/project/holos-tts-litert/
+- README del paquete ONNX: https://github.com/patriotyk/HolosTTS/blob/main/holos_onnx/python/README.md
+- README de la librería Kotlin ONNX: https://github.com/patriotyk/HolosTTS/blob/main/holos_onnx/kotlin/README.md
+- README de MLX: https://github.com/patriotyk/HolosTTS/blob/main/holos_mlx/README.md
+- README de LiteRT Kotlin: https://github.com/patriotyk/HolosTTS/blob/main/holos_litert/kotlin/README.md
 - Paquete de acentuación ucraniana: https://github.com/patriotyk/ukrainian-word-stress
 - Paquete de transcripción IPA ucraniana: https://github.com/patriotyk/ipa-uk
+- LiteRT (Google): https://ai.google.dev/edge/litert
+- MLX (Apple): https://github.com/ml-explore/mlx

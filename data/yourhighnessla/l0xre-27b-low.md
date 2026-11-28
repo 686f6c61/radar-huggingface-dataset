@@ -2,124 +2,106 @@
 
 ## Resumen
 
-L0xRE-27b-Low es una derivación cuantizada y orientada a memoria del modelo Qwen3.8-27B, publicada por el usuario YourHighnessLA bajo el identificador `YourHighnessLA/L0xRE-27b-Low`. El objetivo declarado es ejecutar un modelo de 27B de parámetros —con contexto de 128K y capacidades de visión— en una GPU de consumo con 12 GB de VRAM, sin descarga de capas a CPU. Para ello combina un GGUF principal de 8,62 GB con un runtime propietario denominado L0xRE BeeLLama Low, que implementa decodificación especulativa mediante un drafter DFlash2.
+L0xRE-27b-Low es una derivación cuantizada y orientada a memoria del modelo Qwen3.8-27B, publicada por el usuario YourHighnessLA. Su objetivo declarado es ejecutar un modelo de 27.000 millones de parámetros en una GPU de consumo con 12 GB de VRAM, sin descarga de capas a CPU, mediante un runtime propio (L0xRE BeeLLama Low) que combina cuantización agresiva, atención dispersa por encima de 8K tokens y decodificación especulativa. El modelo se distribuye en formato GGUF y se sirve a través de una API compatible con OpenAI.
 
-La propuesta es relevante porque ataca uno de los cuellos de botella prácticos del ecosistema open source: la brecha entre modelos de gran tamaño y hardware asequible. Frente a soluciones que recurren al offload parcial a CPU, este proyecto afirma mantener todas las capas en GPU, lo que reduce la latencia y permite un uso fluido como asistente de código local o agente. El autor reporta 72 tok/s en decodificación de código sobre una RTX 3060 de 12 GB, en Linux nativo y modo headless.
+La propuesta central no es el modelo en sí, sino el binomio pesos + runtime: el autor afirma 72 tok/s en decodificación de código sobre una RTX 3060 de 12 GB con el runtime v0.1.3, y un perfil de 262.144 tokens de contexto con la versión v0.1.6.5 y los pesos V2. Esta ficha documenta los pesos V1, que el propio autor mantiene para rollback y reproducción de las mediciones antiguas; para instalaciones nuevas recomienda V2.
 
-Conviene señalar desde el inicio que el modelo no es utilizable con llama.cpp estándar, Ollama, LM Studio ni Transformers: requiere el runtime específico del autor. Asimismo, el dato de parámetros totales en safetensors (4.784.193.024) no concuerda con la denominación comercial "27b", lo que sugiere que el GGUF publicado es una versión reducida o destilada respecto al Qwen3.8-27B original. Esta discrepancia no está aclarada en la información disponible.
+Es relevante ahora porque aborda un cuello de botella práctico —el coste de VRAM para contexto largo en local— con una solución de ingeniería (atención dispersa con mapa aprendido D-LSA) en lugar de un modelo nuevo. La contrapartida es un ecosistema cerrado: runtime propietario, licencia derivada de los términos de investigación de Qwen y soporte exclusivo de inglés.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (derivado de Qwen3.8-27B); detalles internos no disponibles |
-| Parámetros totales | 4.784.193.024 según safetensors; la denominación comercial indica 27B (discrepancia no aclarada) |
-| Parámetros activos | no disponible (no se indica que sea MoE) |
-| Longitud de contexto | 128K tokens (según model card) |
-| Tipos de cuantización | GGUF; cuantización principal no especificada; drafter en Q4_K_M; proyector de visión en Q5_K-MIX |
-| Idiomas soportados | inglés (`en`) |
-| Licencia | `qwen-research-terms-derivative` (derivada de los términos de investigación de Qwen) |
-| Formato de pesos | GGUF (llama.cpp), más proyector de visión separado |
-| Tamaño en disco | 8,62 GB (modelo principal); repo total 10,5 GB |
-| Runtime requerido | L0xRE BeeLLama Low v0.1.3.2 o superior |
-| VRAM mínima | 12 GB (RTX 30/40/50 series) |
-| Decodificación especulativa | Sí, mediante drafter DFlash2 Q4_K_M |
+| Arquitectura | Transformer derivado de Qwen3.8-27B, con atención dispersa selectiva en runtime (D-LSA) por encima de 8K tokens |
+| Parametros totales | 4.784.193.024 (según safetensors del repo); la nomenclatura comercial indica 27B |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 128K en V1 (runtime v0.1.3); 262.144 tokens con V2 y runtime v0.1.6.5 |
+| Tipos de cuantizacion | GGUF cuantizado (el autor no detalla el esquema exacto); proyector de visión en Q8_0 |
+| Idiomas soportados | Inglés |
+| Licencia | `qwen-research-terms-derivative` (derivada de los términos de investigación de Qwen3.8-27B) |
+| Formato de pesos | GGUF (librería llama.cpp); 8,62 GB en disco para el modelo principal, ~11 GB con runtime y visión |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna más allá de su origen en Qwen3.8-27B y de que se distribuye como GGUF para llama.cpp. El aspecto técnico diferencial es el uso de decodificación especulativa con un modelo borrador (drafter) DFlash2 cuantizado en Q4_K_M, que acelera la generación al proponer tokens que el modelo principal verifica en paralelo. El runtime BeeLLama Low gestiona además arenas de memoria configurables: en tarjetas de 12 GB que también alimentan un escritorio, reserva 1856 MiB para el entorno gráfico y deja el resto para el modelo y el agente.
+El modelo es un derivado cuantizado de Qwen3.8-27B, no un entrenamiento desde cero. La información disponible no detalla el dataset de entrenamiento original, el número de tokens ni si hubo fases de RLHF o DPO; esos datos corresponden al modelo base y no se reproducen en la model card. La innovación técnica no reside en los pesos sino en el runtime L0xRE BeeLLama Low, que implementa atención dispersa a partir de 8K tokens: cada consulta atiende a un sumidero (sink), una ventana local y los tokens anteriores más relevantes seleccionados por un mapa aprendido denominado D-LSA (`qwen38-dlsa-d2048.l0xmap`). Por debajo de 8K tokens el modelo es completamente denso y el autor afirma que la salida es idéntica a nivel de logits respecto a la ruta densa.
 
-No se especifican en la información proporcionada el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste fino adicional sobre el modelo base. Tampoco se documenta el proceso de cuantización más allá de los formatos empleados. El soporte de visión se implementa mediante un proyector separado (Q5_K-MIX), descargado opcionalmente por el instalador y no incluido en el GGUF principal.
+La configuración por defecto de v0.1.6.5 usa teselas de 256 tokens, top-k de 16.384, un sink de 11.648 tokens, prefill agrupado y una caché de unidades CLOCK v3. El autor reporta divergencia KL frente a la ruta densa de 0,0107 en el rango 42–78K, 0,0140 en 128–170K y 0,0263 en 180–200K. También se menciona decodificación especulativa (DFlash2) como parte del stack de aceleración, aunque no se detallan sus parámetros.
 
 ## Capacidades
 
-- Generación de texto conversacional en inglés, con pipeline declarado `text-generation` y tag `conversational`.
-- Generación y asistencia de código, con rendimiento destacado por el autor en decodificación de código (72 tok/s en RTX 3060).
-- Procesamiento de contexto largo: hasta 128K tokens, adecuado para repositorios y conversaciones extensas.
-- Visión: soportada mediante proyector Q5_K-MIX opcional, instalable con las banderas `-Vision` / `--vision`.
-- Descodificación especulativa integrada en el runtime para reducir latencia.
-- Compatibilidad con API OpenAI (`http://127.0.0.1:8080/v1`), lo que permite integrarlo con clientes y agentes que acepten endpoints personalizados.
-- Endpoint de salud (`/health`) para monitorización.
-- Diagnóstico de rendimiento mediante la herramienta `doctor`, que detecta paginación de memoria GPU y competencia por recursos.
-- Reutilización de prompt y caché de system prompts, con mejoras reportadas del 45 % en tiempo hasta el primer token en turnos de seguimiento.
-- Soporte de agentes: la documentación incluye una guía de instalación para agentes.
+- Generación de texto conversacional en inglés, con modo de razonamiento heredado del modelo base.
+- Generación y asistencia de código, que es el caso de uso principal declarado por el autor.
+- Comprensión de imágenes mediante un proyector de visión separado (Q8_0), descargado opcionalmente con la opción `--vision`.
+- Contexto largo: 128K en V1 y hasta 262.144 tokens con V2 y runtime v0.1.6.5, con recuperación tipo needle-in-a-haystack medida por el autor.
+- Servido mediante API compatible con OpenAI (`/v1`), lo que permite conectar clientes y agentes existentes.
+- Soporte de tool calling y flujos de agente: no se documenta explícitamente en la información disponible; la compatibilidad con endpoints de OpenAI sugiere que depende del cliente.
+- Multilingüismo: limitado a inglés según la etiqueta de idioma del repositorio.
 
 ## Casos de uso
 
-- Asistente de código local: el modelo puede completar y explicar código en un equipo con RTX 3060 de 12 GB, manteniendo todas las capas en GPU y evitando la latencia del offload a CPU. Los 128K de contexto permiten incluir varios ficheros de un repositorio en la ventana.
-- Agente autónomo de desarrollo: a través del endpoint compatible con OpenAI, se puede conectar a frameworks de agentes que ejecuten pasos múltiples, con la ventaja de que el runtime advierte si la memoria GPU empieza a paginar y degrada el rendimiento.
-- Revisión de código en CI/CD local: integrado como servicio en `127.0.0.1:8080`, puede procesar diffs y generar comentarios de revisión antes de un push, sin depender de APIs externas.
-- Análisis de capturas y diagramas: con el proyector de visión instalado, el modelo puede interpretar imágenes de interfaces, diagramas de arquitectura o capturas de error y generar explicaciones textuales.
-- Asistencia documental con contexto largo: gracias a los 128K tokens, puede resumir y responder preguntas sobre documentación técnica extensa o transcripciones largas en inglés.
-- Entorno de desarrollo con escritorio compartido: el perfil de 1856 MiB de arena permite usar el modelo mientras el navegador y aplicaciones de mensajería siguen abiertos en la misma GPU, un escenario habitual en estaciones de trabajo de un solo monitor.
-- Prototipado de agentes con presupuesto de hardware limitado: sirve para validar flujos de tool calling y razonamiento multi-paso en una máquina de gama media antes de escalar a infraestructura mayor.
+- Asistente de código local en estaciones de trabajo con GPU de 12 GB: el modelo cabe completo en VRAM en una RTX 3060, 4070 o 5070, lo que permite autocompletado y refactorización sin enviar código a servicios externos.
+- Agente de programación multi-turno: la ventana de 128K (V1) o 256K (V2) permite mantener en contexto varios ficheros y el historial de la sesión, con recuperación de fragmentos anteriores mediante la atención dispersa.
+- Revisión de repositorios y documentación larga: la recuperación needle-in-a-haystack medida (223/224 en 16K–192K) lo hace apto para localizar referencias concretas en manuales o bases de código extensas.
+- Análisis de capturas de pantalla y diagramas: con el proyector de visión instalado, puede describir interfaces o extraer texto de imágenes dentro de un flujo de soporte técnico.
+- Backend de chat para herramientas internas: al exponer una API compatible con OpenAI en `127.0.0.1:8080/v1`, se integra en aplicaciones existentes sin adaptadores propietarios.
+- Entornos con requisitos de privacidad: al ejecutarse íntegramente en local y sin descarga de capas a CPU, es adecuado para datos que no pueden salir de la máquina, siempre que se acepten los términos de licencia.
+- Reproducción de experimentos de atención dispersa: los pesos V1 permiten replicar las mediciones de v0.1.3 y comparar rutas densa y dispersa con el runtime correspondiente.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible. Los únicos datos de rendimiento proporcionados son métricas de velocidad del runtime:
+Los únicos datos publicados por el autor son mediciones de su propio runtime, no benchmarks estándar de conocimiento o código:
 
-| Métrica | Valor reportado | Contexto |
-|---|---|---|
-| Decodificación de código | 72 tok/s | RTX 3060 12 GB, Linux nativo, headless |
-| Mejora de decodificación (v0.1.3 vs v0.1.2) | ~21 % más rápida | RTX 3060 |
-| Mejora de TTFT en seguimiento (v0.1.3 vs v0.1.2) | ~45 % menor | RTX 3060 |
-| Arena de escritorio (v0.1.3.1) | 1856 MiB | Tarjetas de 12 GB con pantalla |
+| Prueba | Denso | Disperso v0.1.6 |
+|---|---:|---:|
+| Recuperación needle, 8 registros, 16K–192K (RTX 3060 y RTX 5090) | 224/224 en cada tarjeta | 223/224 en cada tarjeta |
+| Recuperación held-out, dos conjuntos de prompts, RTX 5090 | 269/288 | 268/288 |
+| Respuestas por debajo de 8K tokens | — | Idénticas bit a bit a la ruta densa |
+| Coste de prefill | — | RTX 3060 −0,2…+0,1 %; RTX 4090 −0,4…−0,1 %; RTX 5090 dentro del 1,6 % |
 
-No se dispone de comparaciones de calidad con modelos similares.
+Datos adicionales declarados: 72 tok/s en decodificación de código sobre RTX 3060 12 GB, Linux nativo y sin interfaz gráfica, medidos con el runtime v0.1.3. Divergencia KL frente a denso: 0,0107 (42–78K), 0,0140 (128–170K), 0,0263 (180–200K), con recall 72/72 en la ejecución de laboratorio. No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM mínima: 12 GB. El autor indica compatibilidad con NVIDIA RTX 30, 40 y 50 series.
-- GPU recomendada por el autor: RTX 3060 12 GB (referencia de las mediciones). No se documentan pruebas en A100, H100 ni RTX 4090.
-- Cabe en GPU de consumo: sí, en tarjetas de 12 GB o más; el modelo principal ocupa 8,62 GB en disco y el drafter se suma a la huella en VRAM.
-- Espacio en disco: aproximadamente 20 GB libres; descarga de unos 11 GB con runtime y visión.
-- Controladores: driver NVIDIA reciente; en Linux/WSL se requieren Python 3.12+, `curl`, `zstd` y `numactl`.
-- Opciones de despliegue: exclusivamente el runtime L0xRE BeeLLama Low. No está soportado con vLLM, llama.cpp estándar, Ollama, LM Studio ni TGI.
-- Latencia y throughput: 72 tok/s en decodificación de código sobre RTX 3060; no se proporcionan cifras para otras GPU ni para prompt processing.
-- Sistemas operativos: Windows 10/11 y Linux o WSL2 (Ubuntu 24.04 o compatible).
+- VRAM: 12 GB como mínimo declarado; el modelo principal ocupa 8,62 GB en disco y el perfil de 12 GB sirve hasta 262.144 tokens con V2 y runtime v0.1.6.5.
+- GPU compatibles: NVIDIA RTX serie 30, 40 o 50 exclusivamente; el autor cita RTX 3060 12 GB, RTX 4090 y RTX 5090 en sus mediciones. No se menciona soporte para AMD, Intel ni Apple Silicon.
+- Cabe en GPU de consumo: sí, en RTX 3060 12 GB, 4060 Ti 16 GB, 4070, 4080, 4090 y equivalentes de la serie 50.
+- Software: controlador NVIDIA reciente, Python 3.12 o superior en Linux/WSL2, `curl`, `zstd` y `numactl`; en Windows 10/11 el instalador incluye Python y las DLL del runtime.
+- Espacio en disco: aproximadamente 20 GB libres; descarga de unos 11 GB con runtime y soporte de visión.
+- Despliegue: runtime propietario L0xRE BeeLLama Low (instaladores `install.cmd` / `install.sh`), servidor compatible con OpenAI en el puerto 8080. No se documenta compatibilidad con vLLM, TGI u Ollama; el formato es GGUF y la librería declarada es llama.cpp, pero el rendimiento anunciado depende del runtime del autor.
+- Latencia y throughput: 72 tok/s en decodificación de código sobre RTX 3060 12 GB con v0.1.3; no se publican cifras para otras tarjetas ni para prefill absoluto.
+- Limitaciones operativas: una sola secuencia simultánea (`-np 1`).
 
 ## Comparativa con modelos similares
 
-La información disponible no incluye comparaciones con otros modelos ni datos de benchmarks que permitan establecer una comparativa rigurosa. Se ofrece únicamente una comparación estructural basada en los datos declarados:
+| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+|---|---|---|---|---|---|
+| L0xRE-27b-Low | 27B (4,78B en safetensors) | 128K (V1) / 256K (V2) | Términos de investigación de Qwen (derivada) | GGUF + runtime propio | Optimizado para 12 GB de VRAM; solo inglés; runtime cerrado |
+| Qwen3.8-27B (base) | 27B | No disponible en la información proporcionada | Términos de investigación de Qwen | Pesos originales en Hugging Face | Referencia de calidad; requiere más VRAM sin el runtime L0xRE |
+| Alternativas de 27B en GGUF con cuantización estándar | ~27B | Depende de la cuantización y del backend | Según modelo base | llama.cpp, Ollama, etc. | Sin atención dispersa propietaria; el contexto largo exige más VRAM o descarga a CPU |
 
-| Aspecto | L0xRE-27b-Low | Qwen3.8-27B (base) | Alternativas GGUF de 27B en llama.cpp |
-|---|---|---|---|
-| Parámetros | 4,78B (safetensors) / "27B" comercial | 27B | ~27B |
-| Contexto | 128K | no disponible en esta ficha | variable |
-| Visión | Sí, proyector opcional | no disponible en esta ficha | variable |
-| Licencia | qwen-research-terms-derivative | términos de investigación Qwen | variable |
-| Runtime | BeeLLama Low propietario | múltiples | llama.cpp, Ollama, etc. |
-| VRAM objetivo | 12 GB | no disponible | 16-24 GB típicamente |
-
-No se dispone de datos de rendimiento comparables con otros modelos de la misma categoría.
+No se dispone de datos de benchmarks comparativos con otras alternativas en la información proporcionada, por lo que la comparación se limita a especificaciones y condiciones de uso.
 
 ## Limitaciones y advertencias
 
-- Dependencia total del runtime propietario BeeLLama Low: no funciona con llama.cpp estándar, Ollama, LM Studio ni Transformers. La extensión `.gguf` no garantiza compatibilidad.
-- Discrepancia entre la denominación "27b" y los 4.784.193.024 parámetros reportados en safetensors; el autor no aclara si se trata de un modelo destilado, podado o de un error de etiquetado.
-- Idiomas: solo inglés declarado. No hay soporte documentado de castellano ni de otros idiomas.
-- Licencia derivada de los términos de investigación de Qwen: es probable que imponga restricciones al uso comercial. Debe revisarse el enlace de licencia antes de cualquier despliegue en producción.
-- Riesgo de alucinación inherente a los modelos de lenguaje; no se documentan evaluaciones de fidelidad ni de sesgo.
-- Sin benchmarks publicados de calidad (MMLU, HumanEval, GSM8K), lo que impide verificar las capacidades declaradas más allá de las métricas de velocidad.
-- El rendimiento de 72 tok/s está medido en un entorno concreto (RTX 3060, Linux headless); no es extrapolable a otras GPU, sistemas operativos o cargas.
-- La paginación de memoria GPU en Windows/WSL puede degradar el rendimiento; el runtime solo advierte, no corrige automáticamente.
-- El proyecto está en evolución rápida (V2 ya publicada como predeterminada en v0.1.5); la ficha documenta la V1, que puede quedar obsoleta.
-- Trazas de autor único y proyecto joven: menor garantía de mantenimiento a largo plazo que modelos respaldados por organizaciones grandes.
-- No se documentan medidas de seguridad, filtrado de contenido ni evaluaciones de robustez.
+- Licencia: `qwen-research-terms-derivative`, derivada de los términos de investigación de Qwen3.8-27B. No es una licencia de código abierto permisiva; el uso comercial debe verificarse contra el enlace de licencia del modelo base.
+- Idioma: solo inglés etiquetado; el rendimiento en castellano no está documentado y probablemente sea inferior.
+- Runtime propietario: las ventajas de velocidad y contexto dependen del runtime L0xRE, no de los pesos por sí solos. No hay garantía de funcionamiento con vLLM, TGI u Ollama, y el proyecto está mantenido por un único autor.
+- Una sola secuencia: el perfil disperso actual admite `-np 1`, lo que limita el despliegue multiusuario concurrente.
+- Divergencia respecto a la ruta densa: el autor reconoce una tasa de desacuerdo confiado de 1 entre 862 y copia de vecinos en posiciones de conteo, además de un aumento de la KL con la longitud (0,0263 en 180–200K).
+- Riesgo de alucinación: no se han publicado evaluaciones de veracidad ni de sesgos; al ser un derivado cuantizado, la degradación respecto al base no está cuantificada en benchmarks estándar.
+- Confusión de nombres: la etiqueta "27b" no coincide con los 4.784.193.024 parámetros del safetensors del repositorio; conviene validar el tamaño real antes de planificar recursos.
+- Madurez: V1 está en modo rollback y el autor redirige las instalaciones nuevas a V2; la documentación y las mediciones cambian con cada versión del runtime.
+- Sin soporte declarado para AMD, Intel o Apple Silicon; requiere GPU NVIDIA de las series 30, 40 o 50.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/YourHighnessLA/L0xRE-27b-Low
-- Modelo V2: https://huggingface.co/YourHighnessLA/L0xRE-V2-27b-Low
-- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
-- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
+- Modelo V2 recomendado: https://huggingface.co/YourHighnessLA/L0xRE-V2-27b-Low
 - Repositorio del runtime: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low
-- README del runtime: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low#readme
-- Release v0.1.5: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low/releases/tag/l0xre-v0.1.5
-- Release v0.1.3.2: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low/releases/tag/l0xre-v0.1.3.2
-- Resultados de velocidad v0.1.3: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low/blob/main/docs/V013-RELEASE.md
-- Notas del parche v0.1.3.2: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low/blob/main/docs/V0132-RELEASE.md
+- Notas de versión v0.1.6.5: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low/blob/main/docs/V0165-RELEASE.md
+- Notas de versión v0.1.6: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low/blob/main/docs/V016-RELEASE.md
+- Notas de versión v0.1.3: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low/blob/main/docs/V013-RELEASE.md
 - Opciones del instalador: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low/blob/main/install/README.md
 - Guía de instalación para agentes: https://github.com/seanyourhighness/L0xRE-BeeLLama-Low/blob/main/docs/AGENT-INSTALL.md
-- GGUF principal: https://huggingface.co/YourHighnessLA/L0xRE-27b-Low/resolve/main/L0xRE-27b-Low.gguf
-- Drafter DFlash2: https://huggingface.co/YourHighnessLA/L0xRE-27b-Low/resolve/main/Qwen3.8-27B-DFlash2-Q4_K_M.gguf
+- Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
+- Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE

@@ -2,76 +2,94 @@
 
 ## Resumen
 
-WeMM-Ecom-9B-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo multimodal WeMM-Ecom-9B, publicado por el usuario mradermacher en Hugging Face. El modelo base procede de Tencent y está orientado, por su nombre y procedencia, a tareas de comercio electrónico con capacidad multimodal (texto e imagen), aunque la model card del repositorio de cuantizaciones no aporta detalles funcionales adicionales. Este repositorio concreto no incluye pipeline declarado, licencia ni idiomas soportados en sus metadatos.
+WeMM-Ecom-9B es un modelo multimodal de 8.953.803.264 parámetros (aproximadamente 9B) desarrollado originalmente por Tencent y orientado al ámbito del comercio electrónico y las conversaciones multimodales. La versión aquí descrita es una cuantización estática en formato GGUF realizada por mradermacher a partir del modelo base `tencent/WeMM-Ecom-9B`, lo que permite su ejecución en entornos con recursos limitados mediante llama.cpp y herramientas compatibles con GGUF.
 
-El interés de esta ficha reside en que ofrece una vía práctica para ejecutar un modelo de 9B multimodal en hardware de consumo mediante llama.cpp u otros motores compatibles con GGUF, algo que el modelo original en safetensors no permite de forma directa. La información disponible es escasa: los metadatos de Hugging Face indican 456.010.480 parámetros en safetensors, un dato incoherente con la denominación "9B" del modelo, por lo que debe tratarse con cautela.
+El modelo se apoya en la arquitectura Qwen3.5 (según la etiqueta `qwen3_5` de la model card) y añade capacidades multimodales, ya que el repositorio incluye ficheros `mmproj` (proyector multimodal) necesarios para procesar imágenes junto con texto. Su enfoque declarado es el dominio del comercio electrónico: descripción de productos, atención al cliente conversacional y tareas que combinan imagen y lenguaje en catálogos o fichas de producto.
 
-La fecha de creación del repositorio (2026-11-24) y la ausencia de descargas o likes indican que se trata de una publicación reciente y sin validación comunitaria. Cualquier evaluación de producción debería contrastarse con el repositorio original de Tencent antes de adoptar esta variante.
+La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo multimodal de ~9B en hardware de consumo, con cuantizaciones que van desde Q2_K (4,0 GB) hasta f16 (18,0 GB), bajo licencia Apache 2.0 y con soporte declarado para chino e inglés. No obstante, la información pública disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base multimodal de Tencent; detalles no incluidos en la informacion proporcionada) |
-| Parametros totales | 456.010.480 segun metadatos safetensors del repo; la denominacion del modelo indica 9B (dato contradictorio, ver advertencias) |
+| Arquitectura | Transformer multimodal basada en Qwen3.5 (según etiqueta `qwen3_5`); detalles internos no disponibles |
+| Parametros totales | 8.953.803.264 (~8,95B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS |
-| Idiomas soportados | no disponible |
-| Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en safetensors |
+| Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; proyectores multimodales mmproj-Q8_0 y mmproj-f16 |
+| Idiomas soportados | chino (zh) e inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base original en safetensors |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base WeMM-Ecom-9B en la documentación proporcionada. Por el nombre y el origen (Tencent), se trata presumiblemente de un modelo multimodal orientado a comercio electrónico, pero no se confirman detalles como tipo de transformer, mecanismo de fusión visual, número de tokens de entrenamiento, composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
+La model card del repositorio cuantizado es muy escueta y no detalla la arquitectura interna más allá de la etiqueta `qwen3_5`, que sugiere una base derivada de la familia Qwen 3.5. El modelo es multimodal: el repositorio incluye ficheros de proyector multimodal (`mmproj`), lo que implica un codificador visual acoplado a un modelo de lenguaje para tareas imagen-texto. No se especifican el número de capas, la dimensión oculta, el mecanismo de atención ni si emplea técnicas como atención lineal o decodificación especulativa.
 
-Lo único verificable es el proceso de cuantización: el repositorio contiene cuantizaciones estáticas generadas con herramientas compatibles con GGUF (probablemente llama.cpp), con `quantize_version: 2` y `output_tensor_quantised: 1`, y sin exclusión del proyector multimodal (`skip_mmproj` vacío), lo que sugiere que las cuantizaciones conservan los tensores del adaptador de visión. No obstante, esto es una inferencia a partir de los comentarios de la model card y no una confirmación explícita del autor.
+Tampoco se dispone de información sobre el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO u otras técnicas de alineación. La única información contextual es la orientación declarada al dominio del comercio electrónico y las etiquetas `multimodal`, `e-commerce` y `conversational`. Todo lo relativo al proceso de entrenamiento debe considerarse no disponible.
 
 ## Capacidades
 
-- Generación de texto y, presumiblemente, procesamiento de imagen al tratarse de un modelo multimodal, aunque no se detalla en la información disponible.
-- No se confirma soporte de tool calling ni function calling.
-- No se confirma soporte de agentes ni razonamiento multi-paso.
-- Capacidades multilingües: no disponibles.
-- No se documentan modos especiales (thinking mode, audio, etc.).
-- La única capacidad verificable con certeza es la de ser ejecutable mediante motores GGUF (llama.cpp y derivados).
+- Generación de texto conversacional en chino e inglés.
+- Procesamiento multimodal imagen-texto mediante el proyector `mmproj` incluido en el repositorio.
+- Orientación específica al dominio del comercio electrónico (descripciones de producto, conversaciones de compra, atención al cliente).
+- Soporte de conversaciones multi-turno (etiqueta `conversational`).
+- Compatibilidad con `endpoints_compatible` según las etiquetas del repositorio.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
+- Modo thinking, audio u otras capacidades especiales: no disponible en la información proporcionada.
 
 ## Casos de uso
 
-- Despliegue local de un modelo multimodal de 9B en estaciones de trabajo sin GPU de datacenter: gracias a las cuantizaciones Q4_K_M o Q5_K_M, el modelo puede cargarse en GPUs de consumo, lo que permite experimentar con tareas de comercio electrónico sin infraestructura cloud.
-- Prototipado de asistentes de catálogo: si el modelo base efectivamente procesa imágenes de producto, podría emplearse para generar descripciones, clasificar artículos o responder preguntas sobre fichas de producto en un entorno de desarrollo.
-- Evaluación comparativa de cuantizaciones: el repositorio ofrece 12 variantes (desde Q2_K hasta x-f16), lo que permite medir la degradación de calidad frente al modelo original en tareas concretas antes de fijar una configuración de producción.
-- Integración en pipelines de llama.cpp: al ser GGUF, puede servirse con `llama-server` para pruebas de concepto de API local en entornos con requisitos de privacidad de datos.
-- Investigación sobre modelos multimodales de dominio específico: útil para estudiar cómo se comporta un modelo entrenado para comercio electrónico frente a modelos generalistas, siempre que se valide contra el repositorio original.
-- Pruebas de viabilidad en hardware modesto: las variantes Q2_K y Q3_K permiten ejecutar el modelo en equipos con poca VRAM para decidir si merece la pena invertir en el modelo completo.
+- Atención al cliente en comercio electrónico: el modelo está entrenado específicamente para conversaciones del dominio, por lo que puede gestionar diálogos multi-turno sobre pedidos, devoluciones o dudas de producto en chino e inglés.
+- Generación de descripciones de producto a partir de imágenes: gracias al proyector multimodal, puede recibir una foto de un artículo y producir texto descriptivo para fichas de catálogo.
+- Enriquecimiento de catálogos: clasificación y etiquetado automático de productos combinando imagen y texto, útil para normalizar inventarios grandes.
+- Asistentes de compra conversacionales: integración en tiendas online para responder preguntas sobre características, compatibilidad o recomendaciones, con despliegue local vía llama.cpp.
+- Moderación y análisis de reseñas: análisis de texto e imágenes enviadas por usuarios para detectar contenido inadecuado o clasificar opiniones.
+- Prototipado en hardware de consumo: al disponer de cuantizaciones desde 4,0 GB (Q2_K) hasta 9,6 GB (Q8_0), permite validar flujos multimodales en estaciones de trabajo con una sola GPU consumer antes de escalar a producción.
+- Investigación en modelos multimodales de dominio: útil como base para experimentos de ajuste fino en tareas de e-commerce con licencia Apache 2.0.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible con precisión, ya que el número de parámetros de los metadatos (456M) contradice la denominación 9B. Si el modelo real es de 9B, una cuantización Q4_K_M ocuparía aproximadamente 5-6 GB y una Q8_0 en torno a 9-10 GB; si el dato de 456M fuera correcto, las cifras serían mucho menores. No se confirma ninguna de las dos hipótesis.
-- GPU recomendadas: no disponible. Para un modelo de 9B en Q4, una RTX 3060 de 12 GB o superior sería suficiente; para Q8, se necesitaría una RTX 4090 o una A100. Estas estimaciones son orientativas y no proceden de la información proporcionada.
-- Cabe en GPU de consumo: probablemente sí en cuantizaciones Q2 a Q5 si el modelo es realmente de 9B, pero no confirmado.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier motor compatible con GGUF. vLLM y TGI no soportan GGUF de forma nativa en todos los casos.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia (solo pesos del modelo de lenguaje): aproximadamente 4,0 GB con Q2_K, 5,5-5,8 GB con Q4_K_S/Q4_K_M, 7,5 GB con Q6_K y 9,6 GB con Q8_0. A ello hay que sumar el proyector multimodal (0,7 GB con mmproj-Q8_0 o 1,0 GB con mmproj-f16) y el espacio para el contexto KV.
+- GPU recomendadas: no disponibles de forma específica; por tamaño, una RTX 4090 (24 GB) permite ejecutar con holgura Q8_0 más el proyector y contexto amplio. Una RTX 3090 o 4080 (16-24 GB) también es suficiente para cuantizaciones medias y altas.
+- ¿Cabe en GPU consumer? Sí: las cuantizaciones Q4_K_M (5,8 GB) y Q5_K_M (6,6 GB) caben en GPUs de 8-12 GB, dejando margen para contexto; Q8_0 requiere al menos 12-16 GB para operar con comodidad.
+- Opciones de despliegue: llama.cpp y derivados (Ollama, LM Studio, llama-cpp-python) al estar en formato GGUF; también es posible usar el modelo base en safetensors con transformers. No se indica compatibilidad explícita con vLLM o TGI para esta versión cuantizada.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No disponible. La información proporcionada no permite identificar alternativas comparables con datos verificables de parámetros, contexto o rendimiento, y la discrepancia en el recuento de parámetros impide establecer una comparación fiable con modelos de la categoría 9B.
+| Modelo | Parámetros | Contexto | Multimodal | Licencia | Formato disponible |
+|---|---|---|---|---|---|
+| WeMM-Ecom-9B (esta ficha, GGUF) | ~8,95B | no disponible | Sí (mmproj) | Apache 2.0 | GGUF |
+| tencent/WeMM-Ecom-9B (base) | ~8,95B | no disponible | Sí | Apache 2.0 | safetensors (presumiblemente) |
+| Qwen2.5-VL-7B (referencia de familia similar) | ~7B | no disponible en esta ficha | Sí | Apache 2.0 (según versión) | safetensors, GGUF de terceros |
+| Llama 3.2 11B Vision | ~11B | no disponible en esta ficha | Sí | Llama 3.2 Community License | safetensors, GGUF de terceros |
+
+La comparación con alternativas se ofrece a título orientativo por categoría (multimodal ~7-11B); no se dispone de datos de rendimiento comparativo para WeMM-Ecom-9B, por lo que no es posible establecer una comparación cuantitativa de calidad.
 
 ## Limitaciones y advertencias
 
-- Discrepancia crítica en el recuento de parámetros: los metadatos safetensors indican 456.010.480 parámetros, mientras que el nombre del modelo sugiere 9B. Esto puede deberse a que los metadatos corresponden solo a una parte del modelo (por ejemplo, el proyector multimodal) o a un error de publicación. Debe verificarse contra el repositorio original de Tencent antes de cualquier uso.
-- Licencia no disponible: no se puede confirmar si el uso comercial está permitido. Es imprescindible consultar la licencia del modelo base `tencent/WeMM-Ecom-9B`.
-- Ausencia de pipeline, idiomas y documentación funcional en el repositorio de cuantizaciones.
-- Riesgo de alucinación y sesgos: no evaluados ni documentados.
-- Sin validación comunitaria: cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de retroalimentación sobre la calidad de las cuantizaciones.
-- Las cuantizaciones de baja precisión (Q2_K, Q3_K_S) pueden degradar notablemente el rendimiento, especialmente en tareas multimodales donde los tensores del proyector visual son sensibles a la cuantización.
-- No se garantiza que el proyector multimodal se haya cuantizado correctamente; conviene probar las variantes antes de asumir que la funcionalidad de imagen se conserva.
+- La información pública sobre arquitectura, datos de entrenamiento y benchmarks es mínima; cualquier decisión de producción debe basarse en evaluación propia.
+- Idiomas limitados a chino e inglés según la model card; el rendimiento en castellano no está documentado y probablemente sea deficiente.
+- Riesgo de alucinación inherente a los modelos generativos, especialmente en descripciones de producto donde puede inventar especificaciones.
+- No se documentan sesgos conocidos, pero al estar orientado a e-commerce y entrenado presumiblemente con datos de catálogo, puede reproducir sesgos comerciales o de presentación de productos.
+- Licencia Apache 2.0 permite uso comercial, pero conviene verificar la licencia del modelo base original (`tencent/WeMM-Ecom-9B`) y de los datos subyacentes.
+- El repositorio cuantizado tiene 83,4 GB en total por incluir todas las variantes; descargar solo los ficheros necesarios.
+- Las cuantizaciones Q2_K y Q3_K_S degradan la calidad de forma notable; para producción se recomienda Q4_K_M o superior.
+- No se especifica la longitud de contexto soportada, lo que impide planificar despliegues con ventanas largas.
+- No hay información sobre tool calling ni capacidades de agente, por lo que no debe asumirse su disponibilidad.
 
 ## Enlaces
 
-- Repositorio de cuantizaciones: https://huggingface.co/mradermacher/WeMM-Ecom-9B-GGUF
-- Modelo base: https://huggingface.co/tencent/WeMM-Ecom-9B
+- Repositorio Hugging Face (cuantización GGUF): https://huggingface.co/mradermacher/WeMM-Ecom-9B-GGUF
+- Modelo base original: https://huggingface.co/tencent/WeMM-Ecom-9B
+- Licencia del modelo base: https://huggingface.co/tencent/WeMM-Ecom-9B/blob/main/LICENSE
+- Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/WeMM-Ecom-9B-i1-GGUF
+- Página de descargas del autor: https://hf.tst.eu/model#WeMM-Ecom-9B-GGUF
+- FAQ y solicitudes de cuantización: https://huggingface.co/mradermacher/model_requests
+- Guía de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
+- Análisis de tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

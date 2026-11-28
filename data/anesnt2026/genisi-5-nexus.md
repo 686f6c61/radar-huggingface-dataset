@@ -2,98 +2,109 @@
 
 ## Resumen
 
-Genisi-5-Nexus es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario AnesNT2026 bajo la librería transformers. Por sus dimensiones reales (2.780.110.363.392 parámetros según los pesos en safetensors, es decir, aproximadamente 2,8 billones) y por la información de su model card, se trata de una redistribución o reempaquetado del modelo Kimi K3.1 Pro de Moonshot AI, un modelo MoE de clase 3T con 104B parámetros activos y una ventana de contexto de un millón de tokens.
+Genisi 5 Nexus es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado por AnesNT AI Research, un laboratorio con sede en la provincia de Batna (Argelia). Segun la model card y los ficheros de configuracion del repositorio, se trata de un modelo de gran escala con aproximadamente 2,8 billones de parametros totales, una columna vertebral de atencion hibrida (69 capas de Linear Delta Attention y 24 capas de Dynamic Sparse Attention / MLA) y una configuracion de contexto de 1.048.576 tokens. El checkpoint completo ocupa aproximadamente 1,56 TB y se distribuye en 96 shards de `.safetensors`.
 
-El modelo se presenta como nativamente multimodal y orientado a tareas agénticas, con mejoras declaradas en programación, creación 3D, investigación financiera y precisión factual respecto a Kimi K3. Incorpora una arquitectura híbrida de atención con 69 capas KDA y 24 capas Gated DSA, además de un MoE con 896 expertos y 16 expertos seleccionados por token.
+El modelo se presenta en dos modos de inferencia: un modo por defecto orientado al rendimiento y un modo "Thinking" orientado a razonamiento extendido, analisis multi-paso, codigo complejo, matematicas y flujos agenticos. Incorpora una torre vision-temporal de 27 capas y esta etiquetado en Hugging Face con la tarea `image-text-to-text`, lo que lo situa en la categoria de modelos multimodales de entrada imagen y texto.
 
-Su relevancia radica en que, de confirmarse, sería uno de los pocos modelos abiertos de escala 3T con contexto de 1M tokens y capacidades multimodales. No obstante, el repositorio no incluye información verificable sobre el proceso de conversión, los idiomas soportados ni resultados de benchmarks, y la licencia es una licencia propia ("kimi-k3.1-pro") que no se detalla en la información disponible.
+Su relevancia actual radica en la combinacion de una ventana de contexto de 1M tokens con un esquema MoE de 896 expertos enrutados por capa (16 seleccionados por token) y una precision mixta que usa BF16 en atencion, expertos compartidos, cabeza del modelo y torre de vision, y MXFP4 en los expertos enrutados. La licencia es Apache 2.0. Conviene senalar que los datos de arquitectura y benchmarks proceden exclusivamente de la model card del autor y no se ha verificado su reproduccion de forma independiente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mixture-of-Experts (MoE) con atención híbrida: 69 capas KDA + 24 capas Gated DSA |
-| Parametros totales | 2,8 billones (2.780.110.363.392 según safetensors) |
-| Parametros activos | 104B |
-| Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | 8-bit (tag compressed-tensors); no se detallan otros formatos |
-| Idiomas soportados | no disponible |
-| Licencia | kimi-k3.1-pro (licencia propia, condiciones no disponibles) |
-| Formato de pesos | safetensors (repo de 1.561,4 GB) |
+| Arquitectura | Transformer MoE multimodal con atencion hibrida (Linear Delta Attention + Dynamic Sparse Attention/MLA) y torre vision-temporal |
+| Parametros totales | 2.780.110.363.392 (aprox. 2,8 billones) |
+| Parametros activos | No disponible (la model card indica 16 expertos enrutados seleccionados por token sobre 896 por capa, pero no publica el computo exacto de parametros activos) |
+| Longitud de contexto | 1.048.576 tokens (1M) configurados |
+| Tipos de cuantizacion | Pesos publicados en precision mixta BF16 + MXFP4 (expertos enrutados); no se detallan otras variantes GGUF/AWQ/GPTQ |
+| Idiomas soportados | en, ar, fr, zh (segun metadatos de la model card) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors (96 shards) + codigo de modelo, procesador y tokenizador personalizados |
 
-Otros datos técnicos declarados en la model card: 93 capas (1 densa), dimensión de atención 7168, 96 cabezas de atención, dimensión de cabeza del índice DSA 128 con 32 cabezas y top-K 2048, dimensión latente MoE 3584, dimensión oculta por experto 3072, 896 expertos con 16 seleccionados por token y 2 expertos compartidos, y vocabulario de 160K tokens.
+Otros datos de configuracion recogidos en la model card: 93 capas hibridas, 69 de Linear Delta Attention y 24 de DSA/MLA; 896 expertos enrutados y 2 compartidos por capa MoE; dimension oculta 7.168; dimension intermedia 33.792; tamano oculto de experto enrutado 3.584; tamano intermedio MoE 3.072; 96 cabezas de atencion; rango LoRA de query 1.536; rango LoRA de KV 512; top-K del indice DSA 2.048; torre vision-temporal de 27 capas con hidden size 1.024 y patch size 14; vocabulario de 163.840 tokens; tipo de modelo personalizado `genisi_5_nexus`; router sigmoide con configuracion `noaux_tc`.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer MoE con atención híbrida. Combina capas KDA (Kimi Delta Attention, una variante de atención lineal con estado recurrente) con capas Gated DSA (DeepSeek Sparse Attention con compuerta), lo que permite manejar contextos de un millón de tokens reduciendo el coste cuadrático de la atención densa. El MoE emplea 896 expertos en dimensión latente de 3584, activando 16 por token más 2 expertos compartidos, lo que da lugar a los 104B parámetros activos sobre los 2,8T totales.
+La columna vertebral consta de 93 capas hibridas que combinan dos mecanismos de atencion. Por un lado, 69 capas de Linear Delta Attention, que aportan un comportamiento de atencion lineal/recurrente pensado para la eficiencia en contextos largos. Por otro, 24 capas de Dynamic Sparse Attention con Multi-head Latent Attention (MLA), orientadas a la recuperacion selectiva de informacion y a la atencion dispersa. El bloque MoE emplea 896 expertos enrutados y 2 compartidos por capa, con 16 expertos enrutados seleccionados por token y un router sigmoide con configuracion `noaux_tc`. La model card advierte explicitamente de que el recuento total de parametros describe el pool completo de expertos y no debe interpretarse como los parametros activados por token.
 
-Según la model card, el modelo se obtiene mediante post-entrenamiento a partir de Kimi K3 con aprendizaje por refuerzo conjunto a gran escala sobre cientos de dominios downstream. No se especifican el número de tokens de preentrenamiento, la composición del dataset, ni si se emplearon técnicas como RLHF o DPO de forma explícita más allá de la mención al RL. Tampoco se documenta en la información disponible el proceso de conversión que dio lugar a este repositorio concreto.
+La torre vision-temporal tiene 27 capas, hidden size de 1.024, patch size de 14 y componentes `patchmergerv2` / `sd2_tpool`. El layout de precision es mixto: BF16 para atencion, expertos compartidos, cabeza del modelo de lenguaje y torre de vision, y MXFP4 para los expertos enrutados. El repositorio incluye 96 shards numerados, codigo personalizado de modelo, procesador y tokenizador, y un fichero auxiliar de tensores de nucleo neuronal. La informacion proporcionada no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno.
-- Procesamiento de imagen y texto de forma conjunta (pipeline image-text-to-text).
-- Razonamiento agéntico multi-paso y ejecución de tareas encadenadas.
-- Programación y generación de código, con mejoras declaradas respecto a Kimi K3.
-- Creación 3D.
-- Investigación financiera y análisis de documentos extensos.
-- Precisión factual mejorada según el autor.
-- Ventana de contexto de hasta 1.000.000 tokens para documentos y conversaciones muy largas.
-- Compatibilidad declarada con endpoints (tag endpoints_compatible).
-- Soporte de tool calling: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Generacion de texto y conversacion multi-turno, con un modo por defecto orientado al rendimiento y un modo "Thinking" para razonamiento extendido.
+- Razonamiento multi-paso y resolucion de problemas complejos (matematicas, analisis, investigacion) en modo Thinking.
+- Codigo agentico: la model card lo etiqueta como `agentic-coding` y reporta resultados en benchmarks de ingenieria de software y terminal.
+- Capacidades multimodales de imagen y texto (`image-text-to-text`) mediante la torre vision-temporal.
+- Ciberseguridad: etiquetas `cybersecurity` y resultados reportados en CWE-bench y SEC-bench Pro.
+- Soporte de contexto largo de hasta 1M tokens configurados, con atencion hibrida orientada a la eficiencia en secuencias largas.
+- Capacidades multilingues en ingles, arabe, frances y chino, con un benchmark especifico de dariya argelina (DarijaBench / Lahja-IT).
+- Flujos agenticos y automatizacion (AutomationBench, OSWorld-2.1, Agents' Last Exam).
+- Soporte de tool calling / function calling: no se detalla de forma explicita en la informacion proporcionada.
 
 ## Casos de uso
 
-- Análisis de repositorios completos: con 1M tokens de contexto, el modelo puede ingerir bases de código extensas y responder preguntas sobre arquitectura, dependencias y deuda técnica sin fragmentar el código en trozos.
-- Investigación financiera sobre informes anuales: permite cargar decenas de documentos financieros en una sola ventana y extraer comparativas, riesgos y cifras con trazabilidad al texto original.
-- Asistentes de creación 3D: generación y edición de escenas o descripciones estructuradas a partir de instrucciones en lenguaje natural e imágenes de referencia.
-- Agentes autónomos de larga duración: su orientación agéntica y contexto extendido lo hacen adecuado para pipelines que requieren mantener estado y memoria de acciones previas durante muchas iteraciones.
-- Automatización de soporte técnico multimodal: el modelo puede recibir capturas de pantalla o diagramas junto con texto y responder consultas técnicas que requieran interpretar ambos.
-- Revisión de documentación legal o científica: carga de contratos o artículos completos para resumen, detección de cláusulas contradictorias o extracción de metadatos.
-- Generación de código en producción: integración en pipelines de CI/CD para revisión automática de pull requests, siempre que se validen previamente latencia y coste de despliegue.
+- Analisis de repositorios de codigo de gran tamano: con 1M tokens de contexto configurados y modo Thinking, el modelo puede ingerir arboles de proyecto completos o multiples ficheros y razonar sobre dependencias, refactorizaciones y correccion de errores en tareas de ingenieria de software.
+- Agentes de automatizacion de terminal y sistema operativo: los resultados reportados en Terminal-Bench 4.0 y OSWorld-2.1 sugieren su uso en agentes que ejecutan comandos, gestionan entornos y completan tareas de escritorio de forma autonoma.
+- Auditoria de seguridad de codigo: con resultados reportados en CWE-bench y SEC-bench Pro, encaja en pipelines de revision de vulnerabilidades y analisis estatico asistido por LLM sobre grandes bases de codigo.
+- Procesamiento de documentos extensos con imagen y texto: la combinacion de contexto de 1M tokens y torre de vision permite extraer y razonar sobre informes, planos o capturas junto con su texto asociado.
+- Atencion al cliente multilingue en arabe, frances, ingles y chino: el soporte de estos idiomas y el benchmark de dariya argelina lo hacen adecuado para mercados del Magreb y entornos multilingues.
+- Investigacion matematica y cientifica asistida: el modo Thinking y los resultados reportados en RiemannBench y Terminal-Bench Science apuntan a su uso en derivaciones, verificacion de razonamientos y experimentos reproducibles.
+- Generacion de codigo en produccion: su etiqueta `agentic-coding` y los resultados en FrontierSWE 2 permiten integrarlo en pipelines de CI/CD para revision automatica y parcheo de codigo, siempre que la infraestructura soporte el coste de inferencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+Resultados reportados por el autor en la model card (indice AAR-BI). No se indica verificacion independiente.
+
+| Benchmark | Genisi 5 Nexus |
+|---|---:|
+| AA Intelligence Index v5.0 | 61 |
+| Vals Index v2.2 | 74,5 % |
+| FrontierSWE 2 | 64,8 % |
+| SWE-sweep | 10,4 % |
+| Terminal-Bench 4.0 (AA) | 67,0 % |
+| Agents' Last Exam v1.1 | 79,2 % |
+| OSWorld-2.1 | 86,0 % |
+| AutomationBench | 56,5 % |
+| GraphWalks 256k–1M F1 | 97,1 % |
+| RiemannBench | 85,5 % |
+| Terminal-Bench Science 0.1 | 66,4 % |
+| CWE-bench | 88,5 % |
+| SEC-bench Pro | 91,5 % |
+| DarijaBench / Lahja-IT | 99,2 % |
+
+La model card incluye ademas una tabla comparativa con modelos denominados "Gemini 4 Carbon", "Claude Opus 5.5", "Gemini 4 Argon" y "Claude Fable 5.1", con valores parcialmente truncados en la informacion disponible. Esos resultados no se reproducen aqui al no estar completos ni verificados de forma independiente.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión. Con 2,8T parámetros, incluso en 8 bits el modelo requeriría del orden de 2,8 TB de memoria, lo que excede cualquier GPU individual y exige despliegue multi-nodo.
-- GPU recomendadas: no disponible en la información proporcionada; por escala, un despliegue realista requeriría clústeres de H100/H200 o B200 con interconexión de alta velocidad.
-- Cabe en GPU consumer: no. Ninguna GPU consumer (RTX 4090, 5090, etc.) dispone de memoria suficiente para alojar los pesos.
-- Opciones de despliegue: transformers (librería declarada); compatibilidad con vLLM, llama.cpp, Ollama o TGI no disponible en la información proporcionada.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada para inferencia: el checkpoint completo ocupa aproximadamente 1,56 TB; no cabe en ninguna GPU consumer ni en configuraciones de una sola GPU de datacenter. Se requiere un cluster multi-GPU o multi-nodo con agregacion de memoria.
+- GPU recomendadas: no disponibles de forma explicita en la informacion; por el volumen del checkpoint, el despliegue realista exige nodos con GPUs de datacenter (tipo H100/H200/B200 o equivalentes) en configuracion multi-nodo.
+- GPU consumer: no es viable. Ni siquiera en cuantizaciones agresivas el modelo cabe en tarjetas consumer como RTX 4090; la informacion no proporciona variantes GGUF ni cuantizaciones de menor tamano.
+- Opciones de despliegue: la model card indica `transformers` como libreria y requiere codigo de modelo y procesador personalizados (`genisi_5_nexus`, `custom_code`). No se confirma soporte en vLLM, TGI, llama.cpp u Ollama.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad |
-|---|---|---|---|---|
-| Genisi-5-Nexus (Kimi K3.1 Pro) | 2,8T / 104B | 1M tokens | kimi-k3.1-pro (propia) | Hugging Face, 1.561 GB |
-| Kimi K3 | no disponible | no disponible | no disponible | Referenciado como base del post-entrenamiento |
-| Alternativas de clase 3T | no disponible | no disponible | no disponible | no disponible |
+La model card incluye comparaciones con modelos de nombres no verificables (Gemini 4 Carbon, Claude Opus 5.5, Gemini 4 Argon, Claude Fable 5.1) cuyos resultados aparecen truncados en la informacion disponible. No se dispone de datos completos y auditados para construir una comparativa fiable.
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
+| Modelo | Parametros | Contexto | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Genisi 5 Nexus | ~2,8 B (MoE) | 1M | Apache 2.0 | Hugging Face |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La licencia "kimi-k3.1-pro" es una licencia propia cuyos términos no se detallan; es imprescindible revisar el archivo LICENSE del repositorio original de Moonshot AI antes de cualquier uso comercial.
-- El repositorio tiene 0 descargas y 0 likes, y no documenta el proceso de conversión ni validación del reempaquetado; la integridad y fidelidad respecto al modelo original no están verificadas.
-- No se especifican los idiomas soportados, por lo que el rendimiento en castellano es desconocido.
-- Riesgo de alucinación inherente a los modelos de gran escala; la model card declara mejoras en precisión factual, pero no aporta métricas que lo respalden.
-- El tamaño del repositorio (1.561,4 GB) y los 2,8T parámetros hacen inviable el despliegue en infraestructura convencional; requiere clústeres multi-nodo.
-- No hay información sobre sesgos conocidos, datos de entrenamiento ni evaluaciones de seguridad.
-- La etiqueta compressed-tensors y 8-bit sugiere pesos cuantizados, pero no se detalla el esquema exacto ni la pérdida de calidad asociada.
+- Los benchmarks y especificaciones proceden exclusivamente de la model card del autor; no se ha verificado su reproduccion de forma independiente y algunos resultados comparativos aparecen truncados.
+- El recuento de 2,8 billones de parametros corresponde al pool completo de expertos; los parametros activos por token no se publican, lo que dificulta estimar coste real de inferencia.
+- El checkpoint de 1,56 TB y la ausencia de cuantizaciones publicadas limitan severamente el despliegue a infraestructura de datacenter multi-nodo.
+- La model card no detalla el dataset de entrenamiento, el numero de tokens vistos ni las fases de alineamiento (RLHF/DPO), lo que impide evaluar sesgos y calidad de datos.
+- Riesgo de alucinacion inherente a los modelos de lenguaje de gran escala; no se documentan evaluaciones de factualidad ni de robustez frente a prompts adversarios.
+- El soporte idiomatico declarado se limita a en, ar, fr y zh; el rendimiento fuera de esos idiomas no esta documentado.
+- Aunque la licencia es Apache 2.0, el uso comercial debe evaluar el coste de infraestructura, la procedencia de los datos de entrenamiento y la responsabilidad sobre el codigo de modelo personalizado.
+- El modelo requiere codigo personalizado (`custom_code`, `genisi_5_nexus`) para cargarse, lo que anade riesgo de mantenimiento y de compatibilidad con versiones futuras de `transformers`.
+- No se confirma soporte en frameworks de serving ampliamente usados (vLLM, TGI, llama.cpp), lo que complica su integracion en produccion.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/AnesNT2026/Genisi-5-Nexus
-- Modelo original de referencia: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
-- Blog técnico: https://www.kimi.ai/blog/kimi-k3-1-pro
-- Quickstart de API: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
-- Página de Moonshot AI: https://www.moonshot.ai
-- Chat: https://www.kimi.ai
-- Organización en Hugging Face: https://huggingface.co/moonshotai
-- ModelScope: https://modelscope.cn/organization/moonshotai
-- X (Twitter): https://twitter.com/kimi_moonshot
-- Discord: https://discord.gg/TYU2fdJykW
+- Modelo en Hugging Face: https://huggingface.co/AnesNT2026/Genisi-5-Nexus
+- Sitio web de investigacion: https://genisi.web.app
+- Chat en vivo: https://genisi.web.app/chat

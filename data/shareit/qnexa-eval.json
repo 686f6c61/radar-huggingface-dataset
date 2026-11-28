@@ -1,0 +1,80 @@
+{
+  "schema": 2,
+  "id": "shareit/Qnexa-Eval",
+  "slug": "shareit-qnexa-eval",
+  "author": "shareit",
+  "url": "https://huggingface.co/shareit/Qnexa-Eval",
+  "created_at": "2026-11-28T02:50:54.000Z",
+  "updated_at": "2026-11-28T02:51:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llm-as-a-judge",
+    "evaluation",
+    "korean",
+    "customer-service",
+    "civil-complaints",
+    "lora",
+    "text-generation",
+    "ko",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 641849712,
+  "storage_human": "642 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHAREit - Download",
+      "url": "https://shareit.en.softonic.com/",
+      "snippet": "2 days ago · SHAREit prioritizes security, implementing modern encryption methods to protect shared information. By linking …"
+    },
+    {
+      "title": "SHAREit-WebShare",
+      "url": "https://web.ushareit.com/",
+      "snippet": "Supports Torrent Download to explore rich contents! Share PC network with a phone. All types of files, no network required! Use …"
+    },
+    {
+      "title": "SHAREit: Transfer, Share Files - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.lenovo.anyshare.gps&hl=en-US",
+      "snippet": "Share files, apps, games, videos, photos, music, recordings, documents and more with the SHAREit file transfer app. As a super-fast …"
+    },
+    {
+      "title": "SHAREit - Télécharger",
+      "url": "https://shareit.fr.softonic.com/",
+      "snippet": "2 days ago · SHAREit a été minutieusement analysé par nos systèmes de sécurité avancés et vérifié par des partenaires leaders de …"
+    },
+    {
+      "title": "Download SHAREit - Free - latest version",
+      "url": "https://shareit.en.softonic.com/download",
+      "snippet": "2 days ago · SHAREit is also significantly faster than NFC and transfer speeds are typically dictated by the Wi-Fi connection rather …"
+    }
+  ]
+}

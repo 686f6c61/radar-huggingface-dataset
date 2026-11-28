@@ -2,98 +2,95 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-abliterated es una variante del modelo Qwen/Qwen3.8-Flash-Next (desarrollado por el equipo Qwen de Alibaba) en la que el autor independiente mrfakename ha eliminado el comportamiento de rechazo mediante ablación direccional. El modelo conserva exactamente los mismos ficheros, formato y pesos BF16 que el original, por lo que se carga en cualquier entorno donde funcione el modelo base. Cuenta con aproximadamente 180.000 millones de parámetros totales y un repositorio de 360 GB en formato safetensors, con cuantizaciones GGUF publicadas en un repositorio aparte.
+Qwen3.8-Flash-Next-abliterated es una variante "abliterated" del modelo multimodal Qwen/Qwen3.8-Flash-Next, publicada por el usuario mrfakename. La intervención consiste en una ablación direccional que elimina el comportamiento de rechazo (refusal) del modelo original: se midieron direcciones de rechazo por capa para prompts de chat y de modo "think", y se proyectó fuera una única dirección (rango 1, intensidad 1,6) en las 48 capas del modelo. El resultado es un checkpoint con los mismos pesos en BF16, el mismo formato y la misma estructura que el original, por lo que carga en cualquier entorno donde cargue el modelo base.
 
-La intervención es quirúrgica: se midieron direcciones de rechazo por capa para prompts de chat y de modo *think*, y se proyectó fuera una única dirección (rango 1, fuerza 1,6) en las 48 capas del modelo, afectando a 96 tensores. El resto de componentes —expertos enrutados, embeddings, torre de visión y capa MTP— permanecen bit a bit idénticos al original. Según la model card, la tasa de rechazo ante 100 peticiones dañinas retenidas cae del 99 al 7 en modo chat y del 96 al 1 en modo *think*, con una divergencia KL de 0,068 en el primer token sobre prompts inocuos.
+El modelo conserva la arquitectura del original: 179.999.981.459 parámetros totales (aproximadamente 180.000 millones) y una combinación de 12 capas de atención completa y 36 capas de atención lineal, además de una torre de visión y una capa MTP (multi-token prediction). El repositorio ocupa 360 GB e incluye safetensors en BF16, una LoRA de rango 1 en GGUF para aplicar el mismo parche sobre los GGUF originales y un fichero NPZ con la base del subespacio y las intensidades por capa.
 
-Es relevante porque demuestra una técnica de *abliteration* aplicada a un modelo multimodal grande con arquitectura híbrida de atención, y porque publica los artefactos de la edición (LoRA de rango 1 y base del subespacio en NPZ) para reproducir el efecto sobre los GGUF originales. El modelo está pensado para investigación sobre alineación y para casos donde el filtrado de rechazo del modelo base resulta un obstáculo, no para despliegues comerciales sin salvaguardas adicionales.
+Su relevancia es doble: por un lado, documenta con métricas reproducibles (tasas de rechazo antes y después, KL sobre prompts inocuos) el efecto de una técnica de ablación relativamente quirúrgica; por otro, ofrece un modelo sin rechazos para investigación sobre alineación, evaluación de salvaguardas y estudios de robustez. Es importante subrayar que se trata de un modelo que cumplirá peticiones dañinas y que la responsabilidad de uso recae en quien lo despliega.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido: 12 capas de atención completa y 36 de atención lineal; MLP con expertos enrutados y experto compartido (*shared expert*); incluye torre de visión y capa MTP |
-| Parámetros totales | 179.999.981.459 (≈180 000 M) |
-| Parámetros activos | no disponible |
+| Arquitectura | Transformer híbrido con 12 capas de atención completa y 36 capas de atención lineal, torre de visión y capa MTP (multi-token prediction) |
+| Parametros totales | 179.999.981.459 |
+| Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
-| Tipos de cuantización | BF16 (checkpoint safetensors); GGUF Q8_0 publicado en repositorio aparte |
+| Tipos de cuantizacion | BF16 (checkpoint principal); GGUF Q8_0 disponible en el repositorio de cuantizaciones del autor |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en la model card) |
-| Formato de pesos | safetensors (BF16), GGUF (Q8_0), LoRA GGUF de rango 1, NPZ con base del subespacio |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
+| Formato de pesos | safetensors (BF16), GGUF (Q8_0 y otras cuantizaciones), LoRA en GGUF (`abliteration-lora.gguf`) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-Flash-Next emplea una arquitectura híbrida de atención: 12 capas con atención completa y 36 capas con atención lineal, combinadas con un MLP que separa expertos enrutados de un experto compartido. Incluye además una torre de visión (pipeline `image-text-to-text`) y una capa MTP (*multi-token prediction*). La model card del derivado no detalla el volumen de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; esos datos corresponden al modelo original y no se han incluido en la información disponible.
+La arquitectura subyacente es la del modelo base Qwen3.8-Flash-Next: un transformer híbrido de aproximadamente 180.000 millones de parámetros que alterna 12 capas de atención completa con 36 capas de atención lineal, e incorpora una torre de visión para entrada image-text-to-text y una capa MTP. El autor no documenta en esta ficha el proceso de entrenamiento original (número de tokens, composición del dataset, fases de RLHF o DPO); esa información corresponde al modelo base y no se reproduce aquí.
 
-La modificación consiste en *abliteration* direccional. Se midieron direcciones de rechazo de forma separada para prompts de chat y de modo *think* en cada capa, sobre el GGUF Q8_0. Los candidatos de subespacio son los principales vectores singulares de todas esas direcciones. Una búsqueda multiobjetivo (minimizar rechazos y mantener baja la KL del primer token en prompts inocuos) seleccionó rango 1 con fuerza 1,6 en las 48 capas. La dirección se proyectó fuera de las escrituras al *residual stream*: `self_attn.o_proj` en las 12 capas de atención completa, `linear_attn.out_proj` en las 36 de atención lineal y `mlp.shared_expert.down_proj` en todas las capas, sumando 96 tensores. La edición se formaliza como `W' = W − s·QQᵀW`. Se distribuye también una LoRA GGUF de rango 1 que aplica el mismo cambio sobre los GGUF originales, y un NPZ con la base `Q` y las fuerzas por capa.
+La intervención de abliteration sí está descrita con detalle. Se midieron direcciones de rechazo de forma separada para prompts de chat y de modo "think" en cada capa, sobre el GGUF Q8_0. Los candidatos a subespacio son los principales vectores singulares del conjunto de todas esas direcciones. Una búsqueda multiobjetivo (minimizar rechazos manteniendo bajo el KL del primer token en prompts inocuos) seleccionó un subespacio de rango 1 con intensidad 1,6 aplicado en las 48 capas. La dirección se proyectó fuera de las escrituras al flujo residual en `self_attn.o_proj` (12 capas de atención completa), `linear_attn.out_proj` (36 capas de atención lineal) y `mlp.shared_expert.down_proj` (todas las capas), lo que suma 96 tensores modificados. Los expertos enrutados, los embeddings, la torre de visión y la capa MTP permanecen bit a bit idénticos al original. La operación aplicada es `W' = W - s·QQᵀW`, con la base `Q` y las intensidades por capa publicadas en `abliteration-edit.npz`.
 
 ## Capacidades
 
 - Generación de texto conversacional multi-turno, heredada del modelo base.
-- Modo *think* con razonamiento explícito antes de la respuesta, con presupuesto de tokens configurable (la evaluación usó 768 tokens).
-- Procesamiento de imagen y texto (`image-text-to-text`), gracias a la torre de visión intacta.
-- Predicción multi-token (capa MTP) para decodificación especulativa, preservada sin cambios.
-- Comportamiento sin rechazo: responde a peticiones que el modelo original declinaría, incluida la generación de contenido dañino.
-- Soporte de *tool calling*, agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible en la información proporcionada.
+- Modo "think" con razonamiento explícito antes de la respuesta, también presente en el original.
+- Procesamiento de imagen y texto (pipeline image-text-to-text) gracias a la torre de visión intacta.
+- Razonamiento y respuesta a peticiones que el modelo original rechazaba: la tasa de rechazo cae de 99/100 a 7/100 en chat y de 96/100 a 1/100 en modo think, según las métricas del autor.
+- Capacidades multilingües: no documentadas en la información disponible.
+- Soporte de tool calling y function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado explícitamente, aunque el modo think del modelo base está orientado a tareas de razonamiento.
+- Predicción multi-token (capa MTP) conservada del original, potencialmente útil para decodificación especulativa.
 
 ## Casos de uso
 
-- Investigación sobre alineación y *abliteration*: comparar el comportamiento del modelo original y el derivado sobre el mismo conjunto de prompts para estudiar qué direcciones del espacio de activaciones codifican el rechazo, usando el NPZ y la LoRA publicados para reproducir la edición.
-- Auditoría de seguridad de modelos: generar respuestas a peticiones dañinas en un entorno controlado para alimentar clasificadores de riesgo y evaluar la eficacia de las salvaguardas externas, dado que el propio modelo ya no filtra.
-- Aplicación de la LoRA de ablación sobre GGUF existentes: desplegar `llama-server` con el GGUF original y `--lora abliteration-lora.gguf` para obtener el mismo comportamiento sin descargar el checkpoint BF16 completo de 360 GB.
-- Experimentos de *red teaming* multimodal: emplear la torre de visión intacta para probar ataques que combinan imagen y texto, un escenario que los filtros basados solo en texto no cubren.
-- Evaluación de la degradación por edición: medir la KL de 0,068 en el primer token y comprobar en tareas downstream (razonamiento, código, matemáticas) cuánto se pierde al proyectar la dirección de rechazo, comparando contra el modelo base.
-- Generación creativa sin restricciones de contenido: redacción de ficción o guiones con temáticas que el modelo original rechazaría, asumiendo la responsabilidad legal y ética del contenido producido.
+- Investigación sobre alineación y salvaguardas: comparar el comportamiento del modelo original y el abliterated sobre el mismo conjunto de prompts permite cuantificar qué circuitos sostienen el rechazo y cómo afecta la edición a la utilidad general.
+- Evaluación de robustez de filtros y clasificadores: usar el modelo como generador adversario controlado para probar sistemas de moderación, con la ventaja de que la intervención es de rango 1 y el resto de pesos es idéntico al original.
+- Estudios de calibración del KL: el autor publica el KL del primer token en prompts inocuos (0,068), lo que permite analizar el coste de utilidad de la ablación en tareas benignas.
+- Análisis de la interacción entre modos chat y think: al haberse medido direcciones de rechazo separadas para ambos modos, el modelo sirve para estudiar si el razonamiento explícito modula el comportamiento de rechazo.
+- Reproducción metodológica: la publicación de `abliteration-edit.npz`, `bake-stats.txt` y la LoRA en GGUF permite replicar y auditar la edición tensor a tensor, útil para cursos y artículos técnicos sobre edición de pesos.
+- Evaluación multimodal sin restricciones de rechazo: para tareas de investigación con imágenes donde el modelo original declinaba procesar la entrada, manteniendo la torre de visión sin modificar.
+- Despliegue en entornos de investigación cerrados con llama.cpp u otros runners compatibles con GGUF Q8_0, aplicando la LoRA de ablación sobre los GGUF originales si se prefiere no descargar el checkpoint completo.
 
 ## Benchmarks y rendimiento
 
-Los únicos datos publicados en la información disponible son los de la propia ablación, medidos sobre GGUF Q8_0 con decodificación greedy y 100 prompts dañinos retenidos:
+El autor publica métricas de la propia intervención sobre 100 prompts dañinos reservados (held-out), con decodificación greedy sobre el GGUF Q8_0:
 
-| Métrica | Original | Abliterated |
+| Metrica | Original | Abliterated |
 |---|---|---|
 | Rechazos en chat (/100) | 99 | 7 |
-| Rechazos en modo *think*, razonamiento o respuesta (/100) | 96 | 1 |
+| Rechazos en modo think, razonamiento o respuesta (/100) | 96 | 1 |
 | KL del primer token en prompts inocuos | 0 | 0,068 |
 
-En chat se generaron 384 tokens por respuesta; en modo *think*, 768. Cuando el razonamiento no había terminado en ese presupuesto, se evaluó el propio texto de razonamiento. La cifra de KL incluye un pequeño ruido de base por inferencia en lote.
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible.
+En chat se generaron 384 tokens por respuesta; en modo think, 768 tokens, y cuando el razonamiento no había terminado se juzgó el propio texto de razonamiento. El autor advierte que la cifra de KL incluye un pequeño ruido de base por inferencia en lote. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en BF16: aproximadamente 360 GB solo para pesos, más caché KV y activaciones; requiere múltiples aceleradores.
-- VRAM estimada en GGUF Q8_0: alrededor de 190-200 GB, según el tamaño del repositorio de cuantizaciones.
-- GPU recomendadas: clústeres de H100 80 GB (mínimo 5 unidades en BF16, 3 en Q8_0), A100 80 GB en configuraciones equivalentes, o GPUs con NVLink para tensor parallelism.
-- No cabe en GPU de consumo: una RTX 4090 con 24 GB no puede alojar ni siquiera una cuantización agresiva de un modelo de 180 000 M de parámetros.
-- Opciones de despliegue: llama.cpp / `llama-server` para GGUF (con soporte de `--lora` para aplicar la ablación sobre el original), vLLM o TGI para safetensors BF16 en multi-GPU. Ollama solo sería viable con cuantizaciones muy reducidas y offloading a RAM, con latencia muy alta.
+- El checkpoint completo en BF16 ocupa 360 GB, por lo que la inferencia en precisión completa requiere varios aceleradores: por ejemplo, 8×A100 80 GB, 4×H100 80 GB o configuraciones equivalentes con paralelismo tensorial.
+- Para una sola GPU de 80 GB (A100/H100) no cabe el modelo completo en BF16; es necesario recurrir a cuantización o a sharding multi-GPU.
+- El GGUF Q8_0 reduce el peso a aproximadamente la mitad del BF16 (del orden de 180-190 GB), todavía fuera del alcance de GPU de consumo individuales; requiere múltiples GPU o CPU con suficiente RAM.
+- No cabe en GPU de consumo (RTX 4090 de 24 GB, RTX 3090 de 24 GB) en ninguna cuantización publicada; harían falta cuantizaciones de 2-4 bits, no disponibles en la información proporcionada.
+- Opciones de despliegue: llama.cpp / llama-server con los GGUF (el autor documenta el uso de `--lora abliteration-lora.gguf` sobre los GGUF originales), y cualquier runner compatible con safetensors BF16 y paralelismo tensorial (vLLM, TGI) para el checkpoint completo.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Modificación | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-abliterated | ≈180 000 M | no disponible | Ablación direccional rango 1, fuerza 1,6 en 48 capas | qwen-community-1.0 | Hugging Face (safetensors, GGUF, LoRA) |
-| Qwen/Qwen3.8-Flash-Next (base) | ≈180 000 M | no disponible | Ninguna; rechazo intacto | qwen-community-1.0 | Hugging Face |
-| Otras variantes *abliterated* de la familia Qwen | no disponible | no disponible | Ablación direccional | según modelo base | Hugging Face |
-
-La comparación con alternativas de otros desarrolladores (Llama, Mistral, DeepSeek) no está disponible en la información proporcionada.
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Qwen3.8-Flash-Next-abliterated | 179.999.981.459 | no disponible | qwen-community-1.0 | Variante sin rechazos del base; misma arquitectura híbrida y multimodal |
+| Qwen/Qwen3.8-Flash-Next | 179.999.981.459 | no disponible | qwen-community-1.0 | Modelo base original; rechaza 99/100 y 96/100 en chat y think respectivamente |
+| Otras variantes abliterated de la familia Qwen | no disponible | no disponible | variable | No se dispone de datos verificables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
-- El modelo cumplirá peticiones dañinas por diseño; el autor declara explícitamente que la responsabilidad de uso recae en el usuario.
-- La eliminación del rechazo no elimina los sesgos del modelo base ni reduce la probabilidad de alucinación; solo suprime la negativa a responder.
-- La edición introduce una divergencia de 0,068 en la KL del primer token sobre prompts inocuos, lo que puede traducirse en cambios sutiles de comportamiento en tareas benignas no medidas.
-- La licencia qwen-community-1.0 puede imponer restricciones al uso comercial; debe revisarse el fichero LICENSE antes de cualquier despliegue en producción.
-- Los idiomas soportados no están documentados en la información disponible.
-- La longitud de contexto no está documentada en la información disponible.
-- El checkpoint BF16 ocupa 360 GB, lo que limita su despliegue a infraestructura multi-GPU; la alternativa práctica es aplicar la LoRA sobre los GGUF originales.
-- No se han publicado evaluaciones de seguridad independientes ni benchmarks de capacidades para este derivado.
-- El repositorio registra 0 descargas y 0 *likes* en el momento de la consulta, por lo que no existe validación comunitaria del comportamiento observado.
+- El modelo cumplirá peticiones dañinas de forma deliberada; el autor lo declara explícitamente y traslada toda la responsabilidad de uso al operador. No es apto para despliegues públicos sin capas de moderación externas.
+- La eliminación del rechazo no garantiza corrección factual: el riesgo de alucinación del modelo base persiste y, sin la barrera del rechazo, puede aumentar la confianza aparente en respuestas erróneas.
+- La ablación se aplicó con una intensidad fija de 1,6 en las 48 capas; el autor reporta un KL de 0,068 en el primer token sobre prompts inocuos, lo que indica una degradación medible, aunque pequeña, en la distribución de salida.
+- Los 96 tensores modificados incluyen las proyecciones de salida de atención y el down_proj del experto compartido; los expertos enrutados no se tocan, por lo que el efecto sobre capacidades especializadas no está caracterizado.
+- La licencia qwen-community-1.0 puede imponer restricciones adicionales al uso comercial; debe revisarse el fichero LICENSE del repositorio antes de cualquier despliegue productivo.
+- No hay información sobre idiomas soportados, longitud de contexto, tool calling ni rendimiento en benchmarks estándar; no deben asumirse capacidades no documentadas.
+- El repositorio tiene 215 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día (18 de noviembre de 2026); se trata de una publicación muy reciente y poco validada por la comunidad.
+- La model card incluye una imagen de estadísticas (`stats.png`) y ficheros de auditoría (`bake-stats.txt`), pero no se ha verificado de forma independiente la metodología de medición de rechazos.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/mrfakename/Qwen3.8-Flash-Next-abliterated
+- Repositorio Hugging Face: https://huggingface.co/mrfakename/Qwen3.8-Flash-Next-abliterated
 - Cuantizaciones GGUF: https://huggingface.co/mrfakename/Qwen3.8-Flash-Next-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Licencia: https://huggingface.co/mrfakename/Qwen3.8-Flash-Next-abliterated/blob/main/LICENSE
+- Discord del autor: https://discord.com/invite/foss

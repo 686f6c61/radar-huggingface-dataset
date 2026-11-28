@@ -2,92 +2,91 @@
 
 ## Resumen
 
-Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4 es la version cuantizada en NVFP4 del modelo Qwen-SEA-LION-v5-397B-A17B-Plus, desarrollado por el AI Products Pillar de AI Singapore con financiacion de la National Research Foundation de Singapur. Forma parte de la familia SEA-LION (Southeast Asian Languages In One Network), una coleccion de modelos de lenguaje disenada especificamente para las lenguas y contextos del sudeste asiatico. El modelo es un transformer causal multimodal (texto e imagen) con mezcla de expertos (MoE), construido sobre la base de Qwen 3.5, con 205.691.553.008 parametros totales reportados en safetensors y una ventana de contexto de 262.144 tokens.
+Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4 es la variante cuantizada en NVFP4 del modelo Qwen-SEA-LION-v5-397B-A17B-Plus, desarrollado por el AI Products Pillar de AI Singapore y financiado por el National Research Foundation de Singapur. Forma parte de la familia SEA-LION (Southeast Asian Languages In One Network), una coleccion de modelos de lenguaje orientada especificamente al sudeste asiatico. Este checkpoint reduce el peso de los pesos de 1.138,9 GB en BF16 a 583,3 GB, manteniendo una perdida de precision minima o nula segun el autor.
 
-La relevancia de esta version concreta reside en la cuantizacion: los pesos de los expertos se han convertido a NVFP4 (4 bits en formato de punto flotante de NVIDIA) mediante NVIDIA Model Optimizer, con una perdida de precision minima segun el autor, mientras que el resto de pesos, incluidas las tablas n-gram, permanecen en BF16. Esto reduce drasticamente los requisitos de memoria frente a la version BF16 y permite ejecutar el modelo en hardware Blackwell o en cuatro GPU H200.
+El modelo es un transformer causal con codificador de vision (pipeline image-text-to-text), con una ventana de contexto de 262.144 tokens y un total de 205.691.553.008 parametros almacenados en safetensors. La nomenclatura "397B-A17B" del nombre sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 397.000 millones de parametros totales y 17.000 millones activos por token, aunque la model card no detalla explicitamente la configuracion MoE; el uso de `--enable-expert-parallel` en vLLM y la mencion de "expert weights" confirman esa arquitectura.
 
-El modelo esta pensado para despliegues de inferencia de alta capacidad en produccion, con soporte de razonamiento explicito (thinking mode), tool calling y entrada de imagenes, y cubre nueve idiomas: birmano, chino, ingles, indonesio, filipino, malayo, tamil, tailandes y vietnamita. La licencia MIT facilita su adopcion comercial.
+Su relevancia actual radica en dos factores: por un lado, ofrece cobertura nativa de nueve idiomas del sudeste asiatico (birmano, chino, ingles, indonesio, filipino, malayo, tamil, tailandes y vietnamita), un nicho poco atendido por los modelos generalistas; por otro, la cuantizacion NVFP4 esta disenada para GPUs NVIDIA Blackwell y permite desplegar el modelo en cuatro H200, abaratando sustancialmente la inferencia frente a la version BF16.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal con mezcla de expertos (MoE) y codificador de vision; pesos de expertos en NVFP4, resto en BF16 |
-| Parametros totales | 205.691.553.008 (segun safetensors); el nombre del modelo indica 397B-A17B |
-| Parametros activos | No disponible (el nombre sugiere 17B activos, sin confirmacion en la informacion proporcionada) |
+| Arquitectura | Transformer causal con codificador de vision; mezcla de expertos (MoE) segun nomenclatura y referencias a "expert weights" |
+| Parametros totales | 205.691.553.008 (safetensors); el nombre comercial indica 397B-A17B |
+| Parametros activos | 17B (segun nomenclatura A17B; no confirmado en la model card) |
 | Longitud de contexto | 262.144 tokens |
-| Tipos de cuantizacion | NVFP4 (pesos de expertos); versiones alternativas en BF16, FP8 y GGUF |
+| Tipos de cuantizacion | NVFP4 (pesos de expertos); resto de pesos y tablas n-gram en BF16; existen versiones FP8 y GGUF |
 | Idiomas soportados | Birmano, chino, ingles, indonesio, filipino, malayo, tamil, tailandes, vietnamita |
 | Licencia | MIT |
-| Formato de pesos | safetensors (cuantizacion NVFP4), compatible con transformers, vLLM y SGLang |
+| Formato de pesos | Safetensors (repo de 583,4 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer causal con mezcla de expertos (MoE) que incorpora un codificador de vision, lo que lo habilita para tareas image-text-to-text. Sobre la arquitectura base Qwen 3.5, AI Singapore ha aplicado adaptacion para lenguas del sudeste asiatico. Una particularidad tecnica destacable es la presencia de tablas n-gram (aproximadamente 164B parametros, 328 GB en BF16) que actuan como mecanismo de embedding o memoria asociativa y que, en esta version cuantizada, se mantienen en BF16 y pueden descargarse a memoria de host mediante opciones como `--engram-config '{"cpu_offload":true}'` en vLLM o `--ple-offload-embedding` en SGLang. Esta version NVFP4 no incluye la capa de prediccion multi-token (MTP).
+El modelo base es un transformer causal con codificador de vision, construido sobre la arquitectura Qwen (tag `qwen4_exp`). La nomenclatura 397B-A17B y las referencias a "expert weights" en la model card apuntan a una arquitectura de mezcla de expertos con aproximadamente 397.000 millones de parametros totales y 17.000 millones activos por token. Una particularidad destacable es la inclusion de tablas n-gram de aproximadamente 164.000 millones de parametros (328 GB en BF16), que vLLM y SGLang mantienen en memoria de host y consultan por filas en cada paso; SGLang las descarga por defecto con `--ple-offload-embedding`. Esto sugiere un mecanismo de embedding basado en n-gramas (PLE) que complementa la atencion clasica.
 
-La cuantizacion se realizo con NVIDIA Model Optimizer, convirtiendo unicamente los pesos de los expertos a NVFP4, manteniendo el tokenizador, la plantilla de chat y los valores por defecto de muestreo sin cambios. No se dispone en la informacion proporcionada de detalles sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
+La cuantizacion se realizo con NVIDIA Model Optimizer, que convierte unicamente los pesos de los expertos a NVFP4 mientras mantiene el resto de pesos, incluidas las tablas n-gram, en BF16. El tokenizador, la plantilla de chat y los valores por defecto de muestreo no se han modificado respecto al modelo base. La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO; esa informacion corresponderia al modelo base y no se incluye en la informacion disponible.
 
 ## Capacidades
 
-- Generacion de texto y razonamiento con modo de pensamiento explicito (`enable_thinking`), que expone un campo `reasoning` o `reasoning_content` separado de la respuesta final.
-- Comprension de imagenes junto con texto (pipeline image-text-to-text), gracias al codificador de vision.
-- Tool calling y function calling, con parsers dedicados en vLLM (`qwen3_coder`) y SGLang.
-- Soporte para agentes y razonamiento multi-paso, incluyendo eleccion automatica de herramientas (`--enable-auto-tool-choice`).
-- Capacidades multilingues en nueve idiomas del sudeste asiatico y globales: birmano, chino, ingles, indonesio, filipino, malayo, tamil, tailandes y vietnamita.
-- Manejo de contextos largos de hasta 262.144 tokens.
-- Compatibilidad con endpoints tipo OpenAI a traves de vLLM y SGLang.
+- Generacion de texto conversacional multi-turno en nueve idiomas del sudeste asiatico, con especial enfasis en indonesio, malayo, tailandes, vietnamita y filipino.
+- Procesamiento de imagenes y texto combinados (pipeline image-text-to-text) gracias al codificador de vision.
+- Modo de razonamiento explicito ("thinking"), activado por defecto y controlable mediante `enable_thinking` en `chat_template_kwargs`; el contenido de razonamiento se expone en `reasoning` (vLLM) o `reasoning_content` (SGLang).
+- Tool calling / function calling nativo, con parser `qwen3_coder` y soporte de `--enable-auto-tool-choice` en vLLM.
+- Razonamiento multi-paso y uso en flujos de agentes, apoyado por la ventana de 262.144 tokens.
+- Capacidades multilingues cruzadas entre ingles, chino y las lenguas del sudeste asiatico.
+- Generacion de codigo y matematicas (implicito en la familia Qwen; no detallado en la model card).
 
 ## Casos de uso
 
-- Atencion al cliente multilingue en el sudeste asiatico: el modelo puede gestionar conversaciones multi-turno en birmano, indonesio, malayo, tailandes o vietnamita con una ventana de 262.144 tokens, lo que permite mantener historiales extensos y documentacion de referencia en el mismo contexto.
-- Comercio internacional y logistica regional: como muestra la model card, puede responder consultas sobre documentacion de exportacion, tiempos de transito y riesgos de cadena de frio en rutas concretas (por ejemplo, envios de durian congelado de Medan a Singapur), redactando la respuesta en el idioma del usuario y en formato estructurado.
-- Procesamiento de documentos con imagenes: al aceptar entrada image-text-to-text, sirve para extraer y razonar sobre facturas, formularios aduaneros o etiquetas escaneadas, combinando OCR implicito con comprension del texto.
-- Asistentes con tool calling en produccion: integrable en pipelines que requieran llamadas a APIs externas (consultas meteorologicas, bases de datos, sistemas de reservas) mediante function calling y parsers dedicados en vLLM o SGLang.
-- Generacion y revision de codigo asistida: el soporte de tool calling y el parser `qwen3_coder` permiten integrarlo en flujos de CI/CD o entornos de desarrollo para sugerencias, revisiones y automatizacion de tareas.
-- Investigacion linguistica y adaptacion cultural: util para construir corpus, traducciones y evaluaciones en lenguas de bajos recursos del sudeste asiatico, aprovechando su entrenamiento especifico en esas lenguas.
-- Despliegue de agentes autonomos multi-paso: el modo de razonamiento explicito y el soporte de agentes permiten encadenar pasos de planificacion y ejecucion con trazabilidad del razonamiento.
+- Atencion al cliente en mercados del sudeste asiatico: el modelo puede gestionar conversaciones multi-turno en indonesio, malayo, tailandes o vietnamita con una ventana de 262.144 tokens, suficiente para incorporar historial de cliente, politicas y base de conocimiento en un unico contexto.
+- Logistica y comercio transfronterizo: el ejemplo de la model card (exportacion de durian congelado de Medan a Singapur) ilustra el uso para consultas documentales y de cadena de frio en indonesio; el modelo responde con estructura en puntos y razonamiento previo.
+- Asistencia documental con imagenes: al ser image-text-to-text, puede procesar capturas de formularios, facturas o etiquetas y responder preguntas sobre ellas, util en digitalizacion de tramites en administraciones locales.
+- Agentes automatizados con tool calling: integrable en pipelines que requieran invocar APIs (clima, inventario, reservas) mediante el parser `qwen3_coder`, con seleccion automatica de herramientas.
+- Analisis de contenido multimodal en medios regionales: descripcion y resumen de imagenes con texto en birmano, tamil o filipino, idiomas con poca cobertura en modelos generalistas.
+- Despliegue en infraestructura Blackwell: al ocupar 583,3 GB en NVFP4 y ejecutarse en cuatro H200, es adecuado para servicios de inferencia de alta concurrencia con presupuesto de VRAM ajustado frente a la version BF16.
+- Traduccion y localizacion entre ingles, chino y lenguas del sudeste asiatico, aprovechando el contexto largo para mantener coherencia terminologica en documentos extensos.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo indica que la cuantizacion NVFP4 introduce "poca o ninguna perdida de precision" respecto al modelo BF16, sin cifras concretas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma exacta en la informacion proporcionada. El repositorio ocupa 570,1 GB, y las tablas n-gram (unos 164B parametros, 328 GB en BF16) pueden descargarse a memoria de host, por lo que la VRAM necesaria para los pesos en GPU es sustancialmente menor que el tamano total del repositorio.
-- GPU recomendadas: NVIDIA Blackwell (disenadas para NVFP4) o cuatro GPU H200 en configuracion tensor-parallel de 4.
-- GPU de consumo: no disponible; por el tamano del modelo y el numero de GPU requeridas, no se espera que quepa en GPU de consumo convencionales.
-- Opciones de despliegue: vLLM (con `--tensor-parallel-size 4`, `--enable-expert-parallel` y `--engram-config '{"cpu_offload":true}'`) y SGLang (con `--tp 4` y `--ple-offload-embedding`). Existe ademas una version GGUF para llama.cpp.
+- VRAM estimada: los pesos NVFP4 ocupan 583,3 GB; a ello se suman las tablas n-gram (328 GB en BF16), que pueden mantenerse en memoria de host en lugar de VRAM.
+- GPUs recomendadas: NVIDIA Blackwell (formato NVFP4 nativo); el autor confirma ejecucion en cuatro H200 con tensor-parallel de 4.
+- No cabe en GPUs de consumo (RTX 4090, 5090) por el tamano agregado del modelo y las tablas n-gram.
+- Opciones de despliegue: vLLM (`--tensor-parallel-size 4 --enable-expert-parallel`) y SGLang (`--tp 4 --ple-offload-embedding`, activado por defecto). Para llama.cpp existe la variante GGUF del modelo base.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Notas |
+| Modelo | Parametros | Contexto | Idiomas SEA | Licencia | Formato |
 |---|---|---|---|---|---|
-| Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4 | 205.691.553.008 (safetensors); nombre indica 397B-A17B | 262.144 | NVFP4 (expertos) | MIT | Version cuantizada para Blackwell/H200; sin capa MTP |
-| Qwen-SEA-LION-v5-397B-A17B-Plus (BF16) | No disponible | 262.144 | BF16 | MIT | Version completa sin cuantizar |
-| Qwen-SEA-LION-v5-397B-A17B-Plus-FP8 | No disponible | 262.144 | FP8 | MIT | Version en 8 bits |
-| Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF | No disponible | 262.144 | GGUF (llama.cpp) | MIT | Version para llama.cpp |
+| Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4 | 205,7B (safetensors); 397B-A17B nominal | 262.144 | 9 idiomas | MIT | NVFP4 + BF16 |
+| Qwen-SEA-LION-v5-397B-A17B-Plus (BF16) | 397B-A17B nominal; 1.138,9 GB | 262.144 | 9 idiomas | MIT | BF16 |
+| Qwen-SEA-LION-v5-397B-A17B-Plus-FP8 | no disponible | 262.144 | 9 idiomas | MIT | FP8 |
+| Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF | no disponible | 262.144 | 9 idiomas | MIT | GGUF (llama.cpp) |
 
-No se dispone en la informacion proporcionada de datos de rendimiento comparativo con modelos de otras familias.
+Las tres variantes comparten arquitectura, tokenizador y capacidades; solo cambian el formato y el tamano de pesos. No se dispone de datos de benchmarks para comparar el rendimiento frente a modelos de otros autores.
 
 ## Limitaciones y advertencias
 
-- No se han publicado datos de benchmarks que permitan verificar la calidad real del modelo ni la perdida de precision introducida por la cuantizacion NVFP4.
-- Riesgo de alucinacion inherente a los modelos de lenguaje; no se documentan medidas especificas de mitigacion en la informacion disponible.
-- La cuantizacion NVFP4 esta disenada para GPU NVIDIA Blackwell; en otras arquitecturas puede requerir configuraciones alternativas (cuatro H200) o no ser compatible.
-- El modelo depende de tablas n-gram de gran tamano (unos 164B parametros, 328 GB en BF16) que deben residir en memoria de host, lo que incrementa los requisitos de RAM del sistema de despliegue.
-- Esta version no incluye la capa de prediccion multi-token (MTP), a diferencia de otras variantes.
-- Cobertura linguistica limitada a los nueve idiomas declarados; el rendimiento en otras lenguas no esta documentado.
-- La licencia MIT permite uso comercial, pero el usuario debe verificar las condiciones de los datos de entrenamiento subyacentes, no detalladas en la informacion proporcionada.
-- El numero de descargas (31) y de likes (0) es muy bajo, lo que sugiere poca validacion por parte de la comunidad en el momento de la consulta.
+- La cuantizacion NVFP4 esta optimizada para NVIDIA Blackwell; en GPUs no Blackwell puede no haber soporte nativo y requerir fallback, con impacto en rendimiento.
+- El modelo depende de mantener las tablas n-gram (328 GB en BF16) en memoria de host; esto eleva los requisitos de RAM del servidor y complica el despliegue en entornos con memoria limitada.
+- No se han publicado evaluaciones de sesgo, alucinacion o robustez en la informacion disponible; se desconoce el comportamiento en dominios especializados.
+- La cobertura linguistica se limita a los nueve idiomas declarados; el rendimiento fuera de ellos (por ejemplo, espanol) no esta garantizado.
+- Aunque la licencia es MIT y permite uso comercial, el modelo base incorpora componentes de la familia Qwen cuya trazabilidad conviene verificar antes de un despliegue en produccion.
+- El modo thinking esta activado por defecto, lo que incrementa el consumo de tokens de salida; debe desactivarse explicitamente para aplicaciones de baja latencia.
+- No hay datos publicos de benchmarks que permitan validar la afirmacion de "poca o ninguna perdida de precision" frente al modelo BF16.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-NVFP4
-- Modelo base (BF16): https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus
+- Modelo base BF16: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus
 - Version FP8: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-FP8
 - Version GGUF: https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF
-- Coleccion SEA-LION v5: https://huggingface.co/collections/aisingapore/sea-lion-v5-6afab40ea2b5b627e9930703
-- Sitio de SEA-LION: https://sea-lion.ai
+- Coleccion SEA-LION v5: https://huggingface.co/collections/aisingapore/sea-lion-v5
+- Sitio oficial de SEA-LION: https://sea-lion.ai
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer
 - Licencia MIT: https://mit-license.org/

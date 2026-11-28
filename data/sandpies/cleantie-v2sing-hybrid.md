@@ -2,111 +2,106 @@
 
 ## Resumen
 
-CleanTie & HandTie V2Sing Hybrid es un conjunto de checkpoints de difusión para generación de vídeo con audio (audio-video generation) construido sobre MiniMax-H3 en su variante Ref2VA, empaquetados como archivos únicos para ComfyUI. Lo desarrolla el usuario independiente sandpies y se distribuye bajo la licencia comunitaria de MiniMax-H3. El modelo resuelve el problema de generar clips con audio sincronizado y referencia visual (ref2va, fl2va) manteniendo coherencia de personaje y estilo entre tomas encadenadas, con variantes calibradas para anatomía (`handtie`) y una base SFW (`cleantie`).
+CleanTie, HandTie y SilkTie V2Sing Hybrid son una familia de checkpoints de difusion para generacion conjunta de audio y video (audio-video generation) derivados de MiniMax-H3, empaquetados como ficheros unicos para ComfyUI. El autor, sandpies, parte del modelo base MiniMaxAI/MiniMax-H3 y de la variante Ref2VA (reference-to-video-and-audio), y produce tres "spines" diferenciados: `cleantie` como base SFW, `handtie` como pila calibrada de anatomia y `silktie` como fusion de CleanTie V2Sing con 10Eros v1.0 Ref2VA OrthFix con turbo de 8 pasos ya integrado.
 
-La relevancia técnica está en sus builds cuantizados calibrados con Hessian (GPTQ + STE) y atención INT8, que reducen el peso de 37,46 GiB en BF16 a 14,17–20,97 GiB y aceleran la inferencia entre 1,9× y 2,75× frente a BF16 en caliente sobre una RTX 5090. Incluye además un LoRA turbo de 8 pasos (`PikaDMAD_audiosafe_8step_sep_fro99`) que permite usar las espinas base sin turbo horneado, y está pensado para flujos multi-hop de vídeo largo mediante el nodo ComfyUI-Hand-Tie-Clips.
+El modelo resuelve el problema de generar video con audio sincronizado a partir de imagenes y referencias multimodales, manteniendo coherencia de identidad entre tomas y evitando el sangrado de atributos entre sujetos (cross-subject bleed). La relevancia actual radica en que ofrece variantes cuantizadas calibradas (INT8, W6, W4/W6) que caben en GPUs de consumo de 24 GB y 32 GB, con aceleraciones de atencion INT8 integradas.
 
-El repositorio ocupa 371,5 GB e incluye múltiples tiers de precisión (BF16, INT8 ConvRot, INT8 MinMaxxed, W6 g16, W4/W6 compact), tanto con turbo horneado como en espinas sin hornear. No se especifican parámetros totales, longitud de contexto ni idiomas en la información disponible.
+La familia se distribuye en cuantizaciones con calibracion Hessiana y STE aprendido, atencion INT8 embebida de 52 capas y variantes turbo de 8 pasos en FP32. El repositorio ocupa 454 GB e incluye checkpoints BF16 de referencia de hasta 37,46 GiB, ademas de LoRAs independientes para fusion y spines sin hornear.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | difusión sobre MiniMax-H3 (variante Ref2VA); detalles internos no disponibles |
+| Arquitectura | difusion (modelo base MiniMax-H3, variante Ref2VA); detalles internos no disponibles |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BF16, INT8 ConvRot, INT8 tensorwise MinMaxxed (GPTQ+STE calibrado Hessian), W6 g16, W4/W6 mixto, atención INT8 52× |
+| Tipos de cuantizacion | BF16, INT8 (ConvRot calibrado y legacy), W6 g16, W4/W6 mixto, atencion INT8 embebida (52x) |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community-license-agreement (other) |
+| Licencia | minimax-h3-community-license-agreement |
 | Formato de pesos | safetensors (diffusion-single-file) |
-| Tarea | image-to-video, audio-video-generation, ref2va, fl2va |
-| Pasos de muestreo | 8 (turbo horneado o LoRA PureTurbo a 0,85–1,0) |
-| Sampler / scheduler | lcm o euler + beta_57 / beta / simple |
-| Flow shift | vídeo 12,0; audio 2,0–3,0 (benchmark a 12,0 / 2,5) |
-| Resolución de referencia | 480×640 / 640×480, 73 frames |
-| Tamaño del repo | 371,5 GB |
-| Descargas / likes | 1501 / 13 |
-| Creado / actualizado | 2026-11-22 / 2026-11-22 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un pipeline de difusión para generación conjunta de vídeo y audio, derivado de MiniMax-H3 en la variante Ref2VA (referencia a vídeo+audio) y FL2VA (frame-latent a vídeo+audio). Se distribuye como archivos únicos de difusión para ComfyUI, con varias espinas base y variantes con turbo horneado en FP32. La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO; se indica que MiniMax-H3 se distribuye ya destilado, por lo que el sampler se fija en 8 pasos.
+La informacion disponible no detalla la arquitectura interna del modelo base MiniMax-H3 ni el numero de parametros. Se sabe que es un modelo de difusion para generacion de video con audio (pipeline image-to-video, tags ref2va y fl2va), y que los checkpoints de esta familia son adaptaciones y fusiones sobre el spine de MiniMax-H3. Los tags indican variantes Ref2VA (reference-to-video-and-audio) y FL2VA (first-last-to-video-and-audio).
 
-La innovación técnica destacable está en la cuantización: los builds INT8 MinMaxxed usan GPTQ con straight-through estimator y calibración Hessiana, aplicada a ConvRot (`int8_tensorwise`) y a la atención INT8 en los bloques `0,1,2,49` con refiner en BF16. El tier W6 g16 HQ combina W6 en `qkv`/`fc1` con INT8 en `out`/`fc2`; el tier compacto mezcla W4 en `qkv`/`fc1`, W6 en `out` y bloques `47..48`, e INT8 en `fc2` y bloques `0,1,49`. El LoRA PureTurbo se poda a un `avg_r=158.5` conservando ≥99% de energía Frobenius, lo que permite aplicarlo sobre cualquier base H3 sin turbo. Los checkpoints `handtie` incorporan una pila de anatomía calibrada, equilibrada para que LoRAs de estilo, personaje y detalle sigan cargándose a 0,2–0,6.
+El trabajo tecnico destacable esta en las cuantizaciones: se aplica GPTQ con calibracion Hessiana y STE aprendido, con atencion INT8 embebida en 52 capas que reporta entre 1,9 y 2,8 veces mas velocidad que BF16 en caliente y cerca de un 20 % mas que INT8 ConvRot estatico. Las variantes `_turbo_` y `silktie_v2Sing_eros_8step_*` llevan el turbo de 8 pasos horneado en FP32 (sampler `lcm`/`euler` con `beta_57`, 8 pasos y CFG 1.0). La fusion de SilkTie combina CleanTie V2Sing con 10Eros v1.0 Ref2VA OrthFix, reportando 0,2868 % de NRMSE y ausencia de sangrado de vestuario entre sujetos. No se especifican datos de entrenamiento (numero de tokens, composicion del dataset) ni si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de vídeo a partir de imagen o frame de referencia (image-to-video, ref2va, fl2va).
-- Generación de audio sincronizado con el vídeo, con clonación de voz en los tiers de mayor fidelidad.
-- Coherencia de personaje y estilo entre tomas encadenadas (multi-hop) mediante ComfyUI-Hand-Tie-Clips.
-- Variante SFW (`cleantie`) y variante con anatomía calibrada (`handtie`).
-- Compatibilidad con LoRAs de estilo, personaje y detalle sobre las espinas sin hornear y sobre `handtie`.
-- Inferencia en 8 pasos con sampler lcm/euler y schedulers beta_57, beta o simple.
-- Ejecución en ComfyUI con `comfy-kitchen >= 0.2.41` para los kernels INT8, W6 y W4.
-- No se documentan tool calling, agentes, matemáticas ni razonamiento textual: es un modelo generativo audiovisual.
+- Generacion de video a partir de imagen (image-to-video) con audio sincronizado.
+- Generacion condicionada por referencias multimodales (Ref2VA): multiples `<Picture>` y escenas con 3 hojas RefMod.
+- Generacion first-last-to-video-and-audio (FL2VA): interpolacion entre primer y ultimo fotograma con audio.
+- Coherencia de identidad y bloqueo de atributos entre sujetos (outfit lock, garter lock) en escenas multi-referencia.
+- Clonacion de voz y sincronizacion de habla (reportada con cosine de audio de hasta 0,994 en algunos prompts).
+- Modo turbo de 8 pasos con CFG 1.0 para inferencia rapida.
+- Capacidades de anatomia calibrada en la variante HandTie.
+- No se documentan tool calling, function calling ni razonamiento multi-paso; es un modelo generativo de difusion, no un LLM.
 
 ## Casos de uso
 
-- Generación de clips cortos con audio para redes sociales: a 480×640 y 73 frames en 8 pasos, el tier `turbo_int8_minmaxxed` ofrece un equilibrio entre fidelidad y velocidad (1,92–2,46× frente a BF16) adecuado para iteración rápida.
-- Animación de personajes recurrentes a partir de una imagen de referencia: la variante Ref2VA mantiene la identidad visual entre tomas, y el encadenado multi-hop con ComfyUI-Hand-Tie-Clips permite construir secuencias largas.
-- Doblaje y clonación de voz en vídeo: el tier `turbo_w6_g16_hq` alcanza una similitud de audio de 0,994 en la escena `midnight_store_male`, útil para diálogos con voz consistente.
-- Previsualización en estaciones con GPU de consumo: el tier `turbo_w4w6_compact` (14,17 GiB) permite probar prompts y composiciones en tarjetas de 16–24 GB antes de renderizar en un tier superior.
-- Producción de contenido SFW para publicidad o narrativa: la base `cleantie` está pensada para material no explícito, con mejor fidelidad de píxel y audio en `nightmarket_anime` (21,13 dB).
-- Integración en pipelines de ComfyUI existentes: al ser diffusion-single-file, se carga como checkpoint de difusión y se combina con el LoRA PureTurbo sobre espinas base para flujos personalizados de merging.
-- Investigación en cuantización de modelos de difusión: los distintos tiers (BF16, INT8 ConvRot, INT8 MinMaxxed, W6, W4/W6) permiten comparar el impacto de cada esquema en fidelidad visual y de audio.
+- Produccion de video corto con dialogo: el modelo genera video y audio sincronizados en una sola pasada, adecuado para clips de personajes con habla.
+- Publicidad y contenido de marca: la variante SilkTie mantiene el bloqueo de vestuario e identidad entre tomas multi-referencia, util para campanas con el mismo personaje en varias escenas.
+- Animacion de retratos y avatares: FL2VA permite interpolar entre un primer y ultimo fotograma con audio, util para avatares parlantes.
+- Prototipado rapido en ComfyUI: los checkpoints de 8 pasos con CFG 1.0 reducen el coste de iteracion en flujos de trabajo de nodos.
+- Despliegue en estaciones de trabajo de 24 GB: la variante `w6_g16_hq` de 18,39 GiB deja unos 5,6 GB de margen de VRAM, apta para GPUs de consumo de gama alta.
+- Escenas multi-sujeto con referencias: el bloqueo de atributos entre sujetos evita el sangrado de prendas y accesorios en escenas con varias referencias.
+- Investigacion en cuantizacion de modelos de difusion: las variantes INT8, W6 y W4/W6 con metricas NRMSE y MAE publicadas sirven como referencia comparativa de tecnicas GPTQ/STE.
 
 ## Benchmarks y rendimiento
 
-Datos medidos en ComfyUI sobre RTX 5090, sampler `lcm`, scheduler `beta_57`, shift 12,0 / 2,5, 8 pasos, 73 frames a 480×640 / 640×480 en 5 escenas, frente a referencia BF16 en caliente:
+| Metrica | Valor reportado |
+|---|---|
+| NRMSE SilkTie INT8 MinMaxxed | 0,2868 % (2,7x vs natural) |
+| NRMSE SilkTie W6 g16 HQ | 0,585 % W6 / 0,118 % B2 INT8 |
+| MAE SilkTie W6 vs INT8 MinMaxxed (3-RefMod lobby) | 6,84/255 |
+| Aceleracion atencion INT8 52x | 1,9-2,8x vs BF16 en caliente; ~20 % vs INT8 ConvRot estatico |
+| Aceleracion CleanTie/HandTie INT8 MinMaxxed | 1,92-2,46x vs BF16 |
+| Aceleracion CleanTie/HandTie W6 g16 HQ | 2,06-2,36x vs BF16 |
+| Aceleracion W4/W6 Compact | 2,32-2,75x vs BF16 |
+| Fidelidad pixel/audio CleanTie/HandTie W6 (nightmarket_anime) | 21,13 dB |
+| Fidelidad pixel/audio CleanTie/HandTie W6 (midnight_store_male) | 22,43 dB / 0,994 cosine audio |
+| Clonacion de voz W4/W6 Compact | 0,645-0,933 (degradada en algunos prompts) |
 
-| Tier | Aceleración vs BF16 | Peso | Notas de fidelidad |
-|---|---|---|---|
-| INT8 MinMaxxed | 1,92–2,46× | 20,97 GiB | Mejor bloqueo de color y props, coincidencia de habla superior a INT8 sin calibrar |
-| W6 g16 HQ | 2,06–2,36× | 19,20 GiB | Mejor fidelidad SFW: 21,13 dB en `nightmarket_anime`, 22,43 dB y audio cos 0,994 en `midnight_store_male` |
-| W4/W6 Compact | 2,32–2,75× | 14,17 GiB | Estructura visual correcta, pero clonación de voz degradada (0,645–0,933) en algunos diálogos |
-| INT8 ConvRot (legacy) | ~20% más lento que MinMaxxed | 20,59 GiB | ConvRot sin calibrar, atención estándar |
-| BF16 | referencia | 37,46 GiB | Precisión completa |
-
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u otros) en la información disponible, ya que no aplican a un modelo generativo audiovisual.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible; las metricas anteriores son internas del autor sobre reconstruccion y velocidad.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente el peso del checkpoint más overhead de activaciones y VAE; el tier compacto de 14,17 GiB es el más ligero, el BF16 de 37,46 GiB requiere al menos 40 GB.
-- GPU recomendadas: RTX 5090 (plataforma de los benchmarks), A100 80 GB y H100 para BF16; RTX 4090 24 GB para los tiers INT8 y W6.
-- En GPU de consumo: el tier `turbo_w4w6_compact` (14,17 GiB) y el `turbo_w6_g16_hq` (19,20 GiB) caben en tarjetas de 16–24 GB; el `turbo_int8_minmaxxed` (20,97 GiB) encaja ajustado en 24 GB.
-- Despliegue: ComfyUI con `comfy-kitchen >= 0.2.41` para los kernels `int8_tensorwise` ConvRot, `w6a8_int8`, `asym_w4a8_int8` y atención `comfy_kitchen_int8` embebida. No se documentan vLLM, llama.cpp, Ollama ni TGI para este modelo.
-- Latencia y throughput: no se publican valores absolutos de latencia o fps; solo aceleraciones relativas frente a BF16 (1,92–2,75× según tier).
+- VRAM estimada: 20,96 GiB (SilkTie INT8 MinMaxxed), 18,39 GiB (SilkTie W6 g16 HQ), 20,97 GiB (CleanTie/HandTie INT8), 19,20 GiB (W6 g16 HQ), 14,17 GiB (W4/W6 Compact), 37,46 GiB (BF16).
+- GPU recomendadas: 32 GB para la variante INT8 MinMaxxed; 24 GB para la variante W6 g16 HQ (con unos 5,6 GB de margen); BF16 requiere GPUs de 40-80 GB (A100, H100).
+- Cabe en GPU de consumo: si, en tarjetas de 24 GB y 32 GB con las variantes cuantizadas; la variante compacta de 14,17 GiB amplia el margen.
+- Opciones de despliegue: ComfyUI (libreria `diffusion-single-file`); no se documentan vLLM, llama.cpp, Ollama ni TGI.
+- Latencia y throughput: solo se reportan aceleraciones relativas (hasta 2,75x vs BF16); no se publican valores absolutos de latencia.
 
 ## Comparativa con modelos similares
 
-| Modelo | Tipo | Pasos | Peso típico | Licencia | Disponibilidad |
+| Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CleanTie & HandTie V2Sing Hybrid | difusión vídeo+audio Ref2VA/FL2VA | 8 | 14,17–37,46 GiB | minimax-h3-community | Hugging Face, single-file ComfyUI |
-| MiniMax-H3 (base) | difusión vídeo+audio | destilado | no disponible | minimax-h3-community | Hugging Face |
-| Pika-H3-Flex | difusión vídeo (base referenciada) | no disponible | no disponible | no disponible | Hugging Face |
-| Minimax-h3_Singularity | difusión vídeo (base referenciada) | no disponible | no disponible | no disponible | Hugging Face |
+| CleanTie/HandTie/SilkTie V2Sing Hybrid | difusion audio-video (MiniMax-H3 Ref2VA) | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face, ComfyUI |
+| MiniMax-H3 (base) | difusion audio-video | no disponible | no disponible | minimax-h3-community-license-agreement | Hugging Face |
+| Pika-H3-Flex | difusion (modelo base referenciado) | no disponible | no disponible | no disponible | Hugging Face |
+| 10Eros-Max | difusion (modelo base referenciado) | no disponible | no disponible | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento comparables de las alternativas en la información proporcionada; la comparativa se limita a linaje y disponibilidad.
+No se dispone de datos de rendimiento comparativo con alternativas de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El tier `turbo_w4w6_compact` degrada la clonación de voz (similitud 0,645–0,933) en algunos prompts de diálogo; no es adecuado para producción con voz crítica.
-- No se deben apilar dos checkpoints ni añadir un segundo turbo de 8 pasos: los archivos `_turbo_` ya lo llevan horneado y los `handtie_` ya incluyen la pila de anatomía.
-- La licencia `minimax-h3-community-license-agreement` impone restricciones de uso comercial que deben revisarse antes de desplegar; no es una licencia permisiva estándar.
-- Riesgo de alucinación visual y de artefactos en anatomía, texto en escena y coherencia temporal en clips largos; no se documentan métricas de sesgo.
-- La información no detalla idiomas soportados ni calidad multilingüe del audio generado.
-- Requiere versiones específicas de ComfyUI y `comfy-kitchen`; versiones anteriores no cargarán los kernels cuantizados.
-- El repositorio completo ocupa 371,5 GB; conviene descargar solo el tier necesario.
-- No se publican datos de entrenamiento, sesgos conocidos ni evaluaciones de seguridad más allá de la separación SFW/anatomía.
+- Licencia `minimax-h3-community-license-agreement`: es necesario revisar sus terminos antes de cualquier uso comercial; no es una licencia permisiva estandar.
+- Riesgo de sangrado de atributos entre sujetos en escenas multi-referencia, mitigado pero no eliminado en las variantes calibradas.
+- La variante W4/W6 Compact degrada la clonacion de voz (cosine de 0,645-0,933) en algunos prompts de dialogo.
+- No se deben apilar checkpoints ni anadir un segundo turbo de 8 pasos o una segunda pila de anatomia: los ficheros ya lo incorporan y el doble apilado rompe la inferencia.
+- Riesgo de alucinacion visual y de artefactos propios de los modelos de difusion; no hay datos publicados sobre sesgos demograficos.
+- Idiomas soportados no documentados; la calidad del habla y del texto generado puede variar por idioma.
+- El repositorio ocupa 454 GB, lo que exige planificacion de almacenamiento para descargar la familia completa.
+- No se publican datos de entrenamiento ni evaluaciones estandar, lo que dificulta la reproducibilidad.
 
 ## Enlaces
 
-- [Hugging Face: sandpies/cleantie-v2Sing-hybrid](https://huggingface.co/sandpies/cleantie-v2Sing-hybrid)
-- [Licencia MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE)
-- [MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
-- [Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)
-- [WarmBloodAban/Minimax-h3_Singularity](https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity)
-- [Pika-Labs/Pika-H3-Flex](https://huggingface.co/Pika-Labs/Pika-H3-Flex)
-- [ZhengmingYu/DMAD](https://huggingface.co/ZhengmingYu/DMAD)
-- [ComfyUI-Hand-Tie-Clips](https://github.com/sandpies/ComfyUI-Hand-Tie-Clips)
+- Modelo en Hugging Face: https://huggingface.co/sandpies/cleantie-v2Sing-hybrid
+- Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Licencia MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
+- Variante Comfy-Org MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3
+- WarmBloodAban/Minimax-h3_Singularity: https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
+- Pika-Labs/Pika-H3-Flex: https://huggingface.co/Pika-Labs/Pika-H3-Flex
+- ZhengmingYu/DMAD: https://huggingface.co/ZhengmingYu/DMAD
+- TenStrip/10Eros-Max: https://huggingface.co/TenStrip/10Eros-Max
