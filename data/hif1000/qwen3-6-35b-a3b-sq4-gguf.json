@@ -5,7 +5,7 @@
   "author": "hif1000",
   "url": "https://huggingface.co/hif1000/Qwen3.6-35B-A3B-SQ4-GGUF",
   "created_at": "2026-11-25T17:30:28.000Z",
-  "updated_at": "2026-11-27T02:08:19.000Z",
+  "updated_at": "2026-11-28T01:07:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

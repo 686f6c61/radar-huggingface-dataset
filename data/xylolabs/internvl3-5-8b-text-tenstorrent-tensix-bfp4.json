@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/InternVL3.5-8B-Text-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-22T09:22:23.000Z",
-  "updated_at": "2026-11-27T04:06:10.000Z",
+  "updated_at": "2026-11-28T05:17:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,10 +14,7 @@
     "multilingual"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "qwen3",
-    "text-generation",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -25,14 +22,12 @@
     "block-floating-point",
     "bfloat4_b",
     "quantized",
-    "conversational",
+    "text-generation",
     "multilingual",
     "arxiv:2508.18265",
     "base_model:OpenGVLab/InternVL3_5-8B",
     "base_model:quantized:OpenGVLab/InternVL3_5-8B",
     "license:apache-2.0",
-    "text-generation-inference",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -47,14 +42,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/InternVL3.5-8B-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:40:20.307Z",
   "benchmarks": [],
   "sources": [
     {

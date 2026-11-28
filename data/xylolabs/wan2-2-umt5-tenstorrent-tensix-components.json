@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Wan2.2-UMT5-Tenstorrent-Tensix-Components",
   "created_at": "2026-11-14T23:52:41.000Z",
-  "updated_at": "2026-11-27T04:35:54.000Z",
+  "updated_at": "2026-11-27T12:40:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-video",
@@ -14,7 +14,6 @@
     "multilingual"
   ],
   "tags": [
-    "pytorch",
     "tenstorrent",
     "tensix",
     "safetensors",
@@ -48,8 +47,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Wan2.2-TI2V-5B-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:42:23.920Z",
   "benchmarks": [],
   "sources": []
 }

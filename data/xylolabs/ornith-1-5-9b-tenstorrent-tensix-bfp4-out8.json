@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Ornith-1.5-9B-Tenstorrent-Tensix-BFP4-Out8",
   "created_at": "2026-11-17T10:24:20.000Z",
-  "updated_at": "2026-11-27T04:13:35.000Z",
+  "updated_at": "2026-11-28T05:17:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,22 +15,18 @@
     "ko"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "qwen3_5",
-    "image-text-to-text",
     "tenstorrent",
     "tensix",
+    "qwen3_5",
     "bfloat4",
     "bfloat8",
     "text-generation",
-    "conversational",
     "en",
     "ko",
     "base_model:ornith-ai/Ornith-1.5-9B",
     "base_model:quantized:ornith-ai/Ornith-1.5-9B",
     "license:mit",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -45,14 +41,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Xylolabs/Ornith-1.5-9B-Tenstorrent-Tensix-BFP4",
-  "renamed_at": "2026-11-27T07:48:04.926Z",
+  "renamed_to": "Xylolabs/Ornith-1.5-9B-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:40:50.619Z",
   "benchmarks": [],
   "sources": []
 }

@@ -18,12 +18,10 @@
     "i130marker",
     "i130-xss-test",
     "license:apache-2.0",
-    "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 70,
   "trending_score": 0,
   "parameters": 2,
   "parameters_human": "2",
@@ -35,9 +33,9 @@
     "gguf",
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
-  "disabled": false,
+  "disabled": true,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,

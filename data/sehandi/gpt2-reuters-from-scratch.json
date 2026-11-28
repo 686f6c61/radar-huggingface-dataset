@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "sehandi/gpt2-reuters-from-scratch",
+  "slug": "sehandi-gpt2-reuters-from-scratch",
+  "author": "sehandi",
+  "url": "https://huggingface.co/sehandi/gpt2-reuters-from-scratch",
+  "created_at": "2026-11-28T09:18:17.000Z",
+  "updated_at": "2026-11-28T09:18:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "from-scratch",
+    "reuters",
+    "en",
+    "dataset:ingeniumacademy/reuters_articles",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30713856,
+  "parameters_human": "30.7M",
+  "storage_bytes": 308734755,
+  "storage_human": "309 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

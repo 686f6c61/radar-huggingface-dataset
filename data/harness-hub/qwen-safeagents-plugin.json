@@ -5,7 +5,7 @@
   "author": "harness-hub",
   "url": "https://huggingface.co/harness-hub/qwen-safeagents-plugin",
   "created_at": "2026-11-15T04:43:16.000Z",
-  "updated_at": "2026-11-15T04:43:18.000Z",
+  "updated_at": "2026-11-27T13:38:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
     "atif-scan",
     "agentic-rl",
     "harbor",
+    "harness-adapter",
     "license:apache-2.0",
     "region:us"
   ],

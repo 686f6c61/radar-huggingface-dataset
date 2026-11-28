@@ -1,0 +1,60 @@
+{
+  "schema": 2,
+  "id": "ckbaseleres/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "slug": "ckbaseleres-learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "author": "ckbaseleres",
+  "url": "https://huggingface.co/ckbaseleres/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "created_at": "2026-11-28T07:17:36.000Z",
+  "updated_at": "2026-11-28T07:17:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "context_length": null,
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Data Science Projects - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/data-science/top-data-science-projects/",
+      "snippet": "Aug 22, 2026 · Data Science projects help you gain practical experience in working with data, Python, machine learning, and other …"
+    },
+    {
+      "title": "data-science-projects · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/data-science-projects",
+      "snippet": "Nov 11, 2026 · Explore my diverse collection of projects showcasing machine learning, data analysis, and more. Organized by …"
+    }
+  ]
+}

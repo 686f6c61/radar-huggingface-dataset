@@ -2,107 +2,103 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B Soliditiy Audit V3 (merged) es un ajuste fino del modelo Qwen/Qwen2.5-Coder-7B-Instruct especializado en la auditoría de seguridad de contratos inteligentes escritos en Solidity. Lo desarrolla el usuario Offlin33er dentro del proyecto Solidity Audit Scanner y se distribuye como un merge de pesos completos en bf16 del adaptador QLoRA V3, de forma que puede desplegarse directamente en un endpoint de inferencia sin necesidad de gestionar adaptadores PEFT.
+El modelo `qwen25-coder-7b-solidity-audit-v3-merged` es un ajuste fino (fine-tuning) del modelo base Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario Offlin33er, especializado en la auditoría de seguridad de contratos inteligentes escritos en Solidity. Su propósito es recibir un fragmento de código Solidity y generar un informe de auditoría estructurado que clasifique el hallazgo principal en una de ocho categorías canónicas predefinidas: reentrancy, error aritmético, fallo de control de acceso, error de validación de entrada, frontrunning/MEV, denegación de servicio (DoS), violación de lógica de negocio o código limpio (sin vulnerabilidad).
 
-El modelo resuelve una tarea muy acotada: dado un fragmento de código Solidity, genera un informe de auditoría estructurado que clasifica el hallazgo principal en exactamente una de ocho categorías canónicas (reentrancy, error aritmético, fallo de control de acceso, error de validación de entrada, frontrunning/MEV, denegación de servicio, violación de lógica de negocio o código limpio), acompañado de un análisis funcional, una descripción y una recomendación de remediación.
+El modelo se distribuye como un merge de pesos completos en bf16 a partir del adaptador QLoRA V3, con 7.615.616.512 parámetros y un único shard de safetensors de 15,2 GB. Está pensado para desplegarse directamente en un endpoint de inferencia (TGI, vLLM o Hugging Face Inference Endpoints) sin necesidad de cargar el adaptador por separado. La arquitectura subyacente es la de Qwen2.5-Coder, un transformer decoder-only con licencia Apache 2.0.
 
-Es relevante ahora porque demuestra un patrón habitual en el ecosistema open source: adaptar un modelo base de código de 7.600 millones de parámetros (arquitectura Qwen2) a un dominio vertical muy específico con un conjunto de datos pequeño (2.224 filas) mediante QLoRA, y publicar el resultado listo para producción bajo licencia Apache 2.0. Conviene leer sus métricas con cautela: la evaluación se hizo sobre 100 muestras y el propio autor reconoce solapamiento y ambigüedad en las etiquetas de referencia.
+La relevancia del modelo radica en su enfoque vertical: en lugar de un asistente de código genérico, ofrece una taxonomía cerrada de vulnerabilidades y un formato de salida reproducible, lo que facilita su integración en pipelines de revisión automatizada. No obstante, sus propios autores advierten que no sustituye a una auditoría profesional y que aproximadamente la mitad de los hallazgos detectados reciben una etiqueta canónica adyacente en lugar de la exacta.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (Qwen2), ajuste fino supervisado sobre Qwen2.5-Coder-7B-Instruct |
-| Parametros totales | 7.615.616.512 (7,6 B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la informacion proporcionada (heredada del modelo base Qwen2.5-Coder-7B-Instruct, sin confirmar en la model card) |
-| Tipos de cuantizacion | pesos publicados en bf16; no se documentan otras cuantizaciones (GGUF, AWQ, GPTQ) en la informacion disponible |
-| Idiomas soportados | no disponible (la model card no declara idiomas; el dominio es codigo Solidity) |
+| Arquitectura | Transformer decoder-only (Qwen2.5-Coder), ajuste fino QLoRA fusionado |
+| Parámetros totales | 7.615.616.512 |
+| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Longitud de contexto | No disponible en la información proporcionada (heredada del base Qwen2.5-Coder-7B-Instruct) |
+| Tipos de cuantización | bf16 (pesos publicados); no se documentan otras cuantizaciones en el repo |
+| Idiomas soportados | No disponibles (la model card no los declara) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (un unico shard de 15,2 GB, bf16) |
+| Formato de pesos | safetensors (un único shard de 15,2 GB) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Qwen2, tomado como base en su variante instruct de código (Qwen2.5-Coder-7B-Instruct) y ajustado mediante QLoRA con rango 32 aplicado a todas las proyecciones de atención y MLP. El entrenamiento consistió en una época (139 pasos) sobre el dataset Offlin33er/solidity-audit-instruct-v3, con 2.224 filas construidas sobre una taxonomía canónica de ocho clases y con particiones preservadas respecto a las versiones V1 y V2. Se usó un learning rate de 2e-4 con scheduler coseno, y tras el entrenamiento el adaptador se fusionó en los pesos base para producir el repositorio merged.
+El modelo parte de Qwen2.5-Coder-7B-Instruct, un transformer decoder-only denso de 7,6 mil millones de parámetros. Sobre él se aplicó un ajuste fino supervisado (SFT) mediante QLoRA con rango r=32 sobre todas las proyecciones de atención y MLP, con una tasa de aprendizaje de 2e-4 y programación coseno, durante 1 época (139 pasos) sobre el dataset `Offlin33er/solidity-audit-instruct-v3`, compuesto por 2.224 filas con la taxonomía canónica de 8 clases y una partición preservada respecto a las versiones V1 y V2. Tras el entrenamiento, el adaptador se fusionó en los pesos completos en bf16.
 
-La innovación técnica no está en la arquitectura, sino en el formato de la tarea: el modelo aprende a emitir informes de auditoría estructurados y a clasificar el hallazgo principal en una taxonomía cerrada. El prompt de sistema (`SYSTEM_PROMPT_V3`) se entrenó literalmente y debe usarse tal cual; la model card advierte que forma parte del contrato de inferencia. La configuración evaluada es decodificación greedy con un máximo de 512 tokens nuevos, y el autor recomienda replicarla en producción. No se documentan técnicas adicionales como decodificación especulativa, atención lineal o etapas de RLHF/DPO.
+El dataset de entrenamiento se basa en fragmentos auditados de Solodit (aproximadamente 2.500 snippets según la model card), con alrededor de 290 tipos de etiqueta únicos en la taxonomía de origen que se colapsan en las 8 categorías canónicas. No se documenta en la información disponible el uso de RLHF o DPO, ni innovaciones arquitectónicas adicionales más allá del propio ajuste. El prompt de sistema `SYSTEM_PROMPT_V3` se entrenó de forma literal y debe utilizarse tal cual, según indica el autor.
 
 ## Capacidades
 
-- Generación de informes de auditoría de seguridad para contratos Solidity con estructura fija: análisis de funcionalidad, descripción del hallazgo y recomendación de remediación.
-- Clasificación del hallazgo principal en una de ocho categorías canónicas: reentrancy, error aritmético, fallo de control de acceso, error de validación de entrada, frontrunning/MEV, denegación de servicio, violación de lógica de negocio y código limpio.
-- Detección de vulnerabilidades en fragmentos de código pegados por el usuario, con una tasa de falsos positivos declarada del 3,3 % sobre contratos limpios.
-- Conversación multi-turno mediante plantilla de chat (formato `apply_chat_template` de transformers), con rol de sistema obligatorio.
-- Capacidades heredadas del modelo base de código (generación de código, razonamiento sobre código y matemáticas) no están evaluadas ni garantizadas tras el ajuste fino; la model card no las documenta.
-- Soporte de tool calling y function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades multilingües: no disponible; el dominio de entrenamiento es código Solidity y el idioma de las respuestas no se especifica.
-- Modo thinking, visión o audio: no disponible.
+- Generación de informes de auditoría de seguridad estructurados para contratos Solidity, con análisis de funcionalidad, descripción del hallazgo y recomendación de remediación.
+- Clasificación del hallazgo principal en exactamente una de 8 categorías canónicas: Reentrancy, Arithmetic Error, Access Control Flaw, Input Validation Error, Frontrunning / MEV, Denial of Service (DoS), Business Logic Violation y Clean (No Vulnerability).
+- Detección de vulnerabilidades con precisión y recall medidos de 0,986 sobre un conjunto de evaluación estratificado de 100 muestras.
+- Formato conversacional (chat template de Qwen) con soporte de system prompt específico entrenado.
+- Capacidades heredadas del modelo base Qwen2.5-Coder-7B-Instruct en generación de texto y código, aunque no se documentan evaluaciones específicas tras el ajuste.
+- No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento extendido (thinking mode) en la información proporcionada.
 
 ## Casos de uso
 
-- Revisión previa a la auditoría profesional: el modelo actúa como primera pasada sobre contratos nuevos para clasificar el hallazgo principal y priorizar qué revisar a mano; es adecuado porque su formato de salida está normalizado en ocho categorías y reduce el tiempo de triaje.
-- Integración en pipelines de CI/CD de proyectos Web3: dado que el repositorio está pensado para servirse con TGI o vLLM, puede exponerse como endpoint compatible con OpenAI y llamarse desde un job que analice los contratos modificados en cada pull request.
-- Herramientas de análisis estático asistido: combinado con analizadores como Slither, el modelo aporta la descripción funcional y la recomendación de remediación que el análisis estático no genera, y su clasificación cerrada facilita el deduplicado de hallazgos.
-- Plataformas de bug bounty y triaje de reportes: el modelo puede preclasificar envíos de investigadores en las ocho categorías canónicas antes de la revisión humana, lo que acelera la asignación de severidad y revisor.
-- Formación y concienciación en seguridad: al producir explicaciones de la funcionalidad del contrato y de la remediación recomendada, sirve como generador de ejemplos comentados para materiales didácticos sobre patrones de vulnerabilidad.
-- Escaneo masivo de contratos desplegados: con un despliegue en una única GPU L4 y decodificación greedy a 512 tokens, el coste por contrato es bajo y permite procesar lotes de contratos verificados en exploradores de bloques para inventariar riesgos.
-- Auditoría de contratos propios en entornos con requisitos de soberanía de datos: al ser Apache 2.0 y desplegable en infraestructura propia, encaja en equipos que no pueden enviar código a APIs de terceros.
+- Revisión automatizada en pipelines de CI/CD: el modelo puede invocarse sobre cada pull request que modifique contratos Solidity para generar un informe preliminar de vulnerabilidades antes del merge, usando decodificación greedy y 512 tokens máximos de salida para resultados reproducibles.
+- Triaje previo a auditoría profesional: un equipo de seguridad puede pasar lotes de contratos por el modelo para priorizar qué ficheros requieren revisión humana inmediata, aprovechando su recall de 0,986 sobre el conjunto evaluado.
+- Formación y concienciación en seguridad: el modelo genera descripciones y remediaciones en formato estructurado, útil para crear material didáctico sobre patrones de vulnerabilidad en Solidity.
+- Integración en herramientas de análisis estático: el modelo puede actuar como segunda capa semántica sobre los resultados de analizadores como Slither, clasificando hallazgos en la taxonomía canónica de 8 clases.
+- Monitorización de contratos desplegados: dado un código verificado en un explorador de bloques, el modelo puede generar un informe rápido de riesgos potenciales para equipos de respuesta a incidentes.
+- Despliegue como endpoint OpenAI-compatible: al estar fusionado en pesos completos, puede servirse con TGI o vLLM en un endpoint de inferencia y consumirse desde aplicaciones internas de auditoría mediante la API de chat.
+- Evaluación comparativa de versiones de contratos: el modelo puede aplicarse a distintas iteraciones de un mismo contrato para identificar si las remediaciones introducen nuevos patrones de riesgo.
 
 ## Benchmarks y rendimiento
 
-Evaluación declarada por el autor sobre 100 muestras estratificadas reservadas, decodificación greedy con semilla 42:
+Resultados de evaluación medidos por el autor sobre un conjunto estratificado de 100 muestras retenidas (held-out), decodificación greedy, semilla 42:
 
-| Metrica | V3 (este modelo) | V2 | V1 |
+| Métrica | V3 (este modelo) | V2 | V1 |
 |---|---|---|---|
 | Precisión de detección | 0,986 | 0,986 | 1,00 |
 | Recall de detección | 0,986 | 0,971 | 1,00 |
-| Tasa de falsos positivos en contratos limpios | 0,033 | 0,033 | 0,00 |
-| Coincidencia exacta del tipo de hallazgo (canónica) | 0,449 | 0,485 | 0,30 (laxa) |
+| Tasa de falsos positivos en código limpio | 0,033 | 0,033 | 0,00 |
+| Coincidencia exacta de tipo canónico | 0,449 | 0,485 | 0,30 (lenient) |
 
-El autor advierte explícitamente de que el 1,00 de detección de V1 era un artefacto del dataset, que la diferencia de coincidencia de tipo entre V2 y V3 está dentro del ruido de muestreo con n≈70 y que los errores residuales de tipo corresponden a ambigüedad semántica en las etiquetas de referencia. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+El autor advierte que el resultado perfecto de V1 era un artefacto del dataset, y que la diferencia de coincidencia de tipo entre V2 y V3 está dentro del ruido muestral con n≈70. Los errores residuales de tipo se atribuyen a ambigüedad semántica en las etiquetas de referencia, no a fallos del modelo. No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Requisitos de hardware
 
-- Inferencia en bf16: los pesos ocupan 15,2 GB, por lo que se necesita una GPU con al menos 16 GB de VRAM libre; el autor indica que una T4 de 16 GB no encaja en bf16.
-- GPU recomendada por el autor: 1× Nvidia L4 (24 GB) en un Hugging Face Inference Endpoint, con un coste aproximado de 0,80 USD/hora y scale-to-zero para minimizar el coste en reposo.
-- GPU de gama alta compatibles por memoria: A100 (40/80 GB), H100 (80 GB), L40S (48 GB) y RTX 4090 (24 GB) disponen de VRAM suficiente para bf16; no se han publicado mediciones de latencia ni throughput en estas tarjetas.
-- Cuantización: no se han publicado versiones GGUF, AWQ ni GPTQ, por lo que el despliegue en GPUs de consumo con menos de 16 GB requeriría cuantizar el modelo por cuenta propia, sin garantía de mantener la calidad evaluada.
-- Opciones de despliegue documentadas: Hugging Face Inference Endpoints, TGI y vLLM (el repositorio incluye la etiqueta `text-generation-inference`); también es cargable con transformers y `device_map="auto"`.
-- Configuración de inferencia evaluada: decodificación greedy (`do_sample=False`), `max_new_tokens=512` y el prompt de sistema V3 literal.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en bf16: aproximadamente 15,2 GB solo para pesos, más overhead de activaciones y caché KV; se recomienda un mínimo de 24 GB para operar con comodidad.
+- GPU recomendadas: 1× Nvidia L4 (24 GB) según el autor para Hugging Face Inference Endpoints (coste aproximado de 0,80 USD/hora con scale-to-zero); también válidas A100, H100 o RTX 4090 (24 GB) para despliegue local.
+- Una T4 (16 GB) no es suficiente para bf16 según la model card; sería necesario cuantizar a 8 o 4 bits, opción no documentada oficialmente en el repo.
+- En GPU de consumo: cabe en RTX 4090 (24 GB) y RTX 3090 (24 GB) en bf16; en GPUs de 16 GB requeriría cuantización no publicada.
+- Opciones de despliegue: transformers (local), TGI, vLLM, Hugging Face Inference Endpoints con API compatible con OpenAI. No se menciona soporte de llama.cpp u Ollama en la información disponible.
+- Latencia y throughput: no disponibles en la información proporcionada. La configuración evaluada es decodificación greedy con 512 tokens nuevos como máximo.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-7B Soliditiy Audit V3 (merged) | 7,6 B | no disponible | Auditoría Solidity, 8 clases canónicas | Apache 2.0 | Hugging Face, pesos safetensors |
-| Qwen/Qwen2.5-Coder-7B-Instruct (base) | 7,6 B | no disponible | Generación y razonamiento de código general | Apache 2.0 | Hugging Face |
-| Adaptador V3 (Offlin33er/qwen25-coder-7b-solidity-audit-v3) | 7,6 B (base) + adaptador QLoRA | no disponible | Misma tarea, formato PEFT | Apache 2.0 | Hugging Face |
-| V2 del mismo autor | 7,6 B | no disponible | Misma tarea, versión anterior | Apache 2.0 | Hugging Face |
+| qwen25-coder-7b-solidity-audit-v3-merged | 7,6B | No disponible | Auditoría Solidity (8 clases) | Apache 2.0 | Hugging Face (185 descargas) |
+| Qwen/Qwen2.5-Coder-7B-Instruct (base) | 7,6B | No disponible en esta ficha | Generación de código general | Apache 2.0 | Hugging Face |
+| qwen25-coder-7b-solidity-audit-v3 (adaptador) | 7,6B (base) + adaptador QLoRA | No disponible | Auditoría Solidity (para PEFT) | Apache 2.0 | Hugging Face |
+| Versiones V1 y V2 del mismo autor | 7,6B | No disponible | Auditoría Solidity (iteraciones previas) | Apache 2.0 | Hugging Face |
 
-La comparación con alternativas de la misma categoría (auditoría de Solidity) no está disponible en la información proporcionada; no se han identificado otros modelos comparables con datos verificables.
+No se dispone de información sobre otros modelos especializados en auditoría de Solidity comparables en la documentación proporcionada.
 
 ## Limitaciones y advertencias
 
-- El modelo se entrenó sobre aproximadamente 2.500 fragmentos auditados de Solodit, con unos 290 tipos de etiqueta puntuales en la taxonomía de origen; la cobertura de patrones de vulnerabilidad es, por tanto, limitada.
-- Alrededor de la mitad de los hallazgos detectados recibe una etiqueta canónica adyacente: la coincidencia exacta de tipo es del 44,9 %, y el autor atribuye el error residual a ambigüedad en las etiquetas de referencia, no a fallos del modelo.
-- La tasa de falsos positivos sobre contratos limpios es del 3,3 %, lo que implica ruido en entornos de producción con mucho código correcto.
-- No es sustituto de una auditoría profesional: la propia model card indica que los hallazgos son candidatos para revisión humana.
-- La evaluación se realizó sobre 100 muestras, un tamaño reducido que limita la significación estadística de las métricas, especialmente en la coincidencia de tipo (n≈70).
-- El prompt de sistema V3 debe usarse literalmente; desviarse de él puede degradar el formato de salida y la clasificación.
-- No se documentan sesgos conocidos, comportamiento multilingüe ni limitaciones de contexto específicas más allá de las heredadas del modelo base.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el autor comercializa por separado un corpus de evaluación v4 con licencia de pago (149 USD auto-servicio / 499 USD empresa) que no forma parte de este modelo; conviene no confundir ambos artefactos.
-- Uso defensivo: solo deben auditarse contratos para los que se tenga autorización; el modelo analiza código que se le proporciona y no ejecuta ni despliega contratos.
+- Entrenado sobre aproximadamente 2.500 fragmentos auditados de Solodit; la cobertura de patrones de vulnerabilidad está acotada a ese corpus.
+- Solo el 44,9% de los hallazgos detectados reciben la etiqueta canónica exacta; aproximadamente la mitad obtienen una etiqueta adyacente, lo que limita su uso en clasificación automática estricta.
+- Tasa de falsos positivos del 3,3% sobre código limpio en el conjunto de evaluación.
+- No sustituye a una auditoría profesional de seguridad; los hallazgos deben tratarse como candidatos para revisión humana.
+- El prompt de sistema `SYSTEM_PROMPT_V3` debe usarse literalmente tal como se entrenó; desviarse de él puede degradar el formato de salida.
+- No se documentan los idiomas soportados ni evaluaciones multilingües; el entrenamiento parece centrado en inglés técnico.
+- No se documentan sesgos específicos, pero al derivar de un modelo base entrenado con datos web generales, puede heredar sesgos de ese corpus.
+- Riesgo de alucinación inherente a los modelos generativos: puede inventar vulnerabilidades o recomendaciones de remediación plausibles pero incorrectas.
+- Uso defensivo únicamente: el modelo analiza código que se le proporciona; solo debe aplicarse sobre contratos para los que se tenga autorización de revisión.
+- La model card incluye un banner promocional de Oxford Digital con enlace externo; conviene tratarlo como contenido comercial ajeno a la evaluación técnica del modelo.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Offlin33er/qwen25-coder-7b-solidity-audit-v3-merged
-- Adaptador V3 (PEFT): https://huggingface.co/Offlin33er/qwen25-coder-7b-solidity-audit-v3
+- Adaptador V3 (QLoRA): https://huggingface.co/Offlin33er/qwen25-coder-7b-solidity-audit-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/Offlin33er/solidity-audit-instruct-v3
-- Resultados de evaluación V3: https://huggingface.co/Offlin33er/qwen25-coder-7b-solidity-audit-v3/blob/main/eval_results.json
-- Demo Solidity Audit Scanner: https://huggingface.co/spaces/Offlin33er/solidity-audit-scanner
-- Dashboard de entrenamiento (trackio): https://huggingface.co/spaces/Offlin33er/solidity-audit-sft-qwen25-coder-trackio
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
-- Muestra gratuita del benchmark v4: https://huggingface.co/datasets/Offlin33er/solidity-exploit-reasoning-v4-sample
-- Archivo comercial v4: https://oxforddigitals.com/datasets
+- Resultados de evaluación V3: https://huggingface.co/Offlin33er/qwen25-coder-7b-solidity-audit-v3/blob/main/eval_results.json
+- Demo (Space): https://huggingface.co/spaces/Offlin33er/solidity-audit-scanner
+- Dashboard de entrenamiento (trackio): https://huggingface.co/spaces/Offlin33er/solidity-audit-sft-qwen25-coder-trackio
+- Datasets del autor (enlace promocional): https://oxforddigitals.com/datasets

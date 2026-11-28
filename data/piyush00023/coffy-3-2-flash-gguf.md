@@ -2,89 +2,99 @@
 
 ## Resumen
 
-coffy-3.2-flash es un asistente de instrucciones de 8.230 millones de parámetros construido sobre la arquitectura de Qwen3-8B. Lo desarrolla Piyush00023 y se distribuye con pesos abiertos bajo licencia Apache-2.0. El repositorio que nos ocupa, `coffy-3.2-flash-GGUF`, contiene únicamente conversiones cuantizadas del modelo principal en formato GGUF, generadas con llama.cpp a partir de los pesos oficiales en safetensors, lo que permite ejecutarlo en llama.cpp, Ollama, LM Studio o cualquier runtime compatible con GGUF.
+coffy-3.2-flash es un asistente de instrucciones de 8.230 millones de parametros (8,19B segun los pesos en safetensors) construido sobre la arquitectura de Qwen3-8B y publicado por el usuario Piyush00023. El repositorio que nos ocupa, coffy-3.2-flash-GGUF, contiene exclusivamente las versiones cuantizadas del modelo original en formato GGUF, generadas con llama.cpp a partir de los pesos oficiales en safetensors, lo que permite ejecutarlo en entornos de inferencia ligera como llama.cpp, Ollama o LM Studio.
 
-El modelo está orientado a generación de texto e instrucciones en inglés y código, y su relevancia actual radica en que ofrece una vía de despliegue local de bajo coste: el build Q4_K_M ocupa 5,03 GB, lo que lo sitúa al alcance de GPUs de consumo con 8 GB de VRAM. No obstante, la información publicada es muy limitada: no se documentan datos de entrenamiento, número de tokens, proceso de alineación ni resultados de benchmarks, y el propio autor advierte de un artefacto en los datos de entrenamiento que provoca que el modelo se autoidentifique ocasionalmente con una versión anterior ("coffy-2.4-flash").
+El modelo se presenta como un asistente conversacional orientado a texto y codigo, con licencia Apache-2.0 y un enfoque declaradamente "open weights" (pesos abiertos, no codigo abierto). Su relevancia practica radica en que ofrece un conjunto completo de cuantizaciones (desde Q2_K de 3,28 GB hasta F16 de 16,39 GB) que abarcan desde equipos con poca memoria RAM hasta despliegues de referencia casi sin perdida, todo ello sobre una base arquitectonica conocida y ampliamente soportada por el ecosistema.
 
-Se trata, por tanto, de un modelo pequeño y práctico para prototipado y experimentación local, pero con escasa documentación técnica y sin validación pública de rendimiento, lo que desaconseja su uso en producción sin una evaluación propia previa.
+No obstante, la informacion publicada es muy escasa: la model card no detalla composicion del dataset de entrenamiento, numero de tokens, proceso de alineacion ni resultados de benchmarks, y el autor advierte de un artefacto conocido en la autoidentificacion del modelo. Esta ficha refleja fielmente esos vacios indicando "no disponible" donde corresponde.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (basada en Qwen3-8B) |
-| Parametros totales | 8,23 mil millones (8.23B) |
-| Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (5,03 GB), Q8_0 (8,71 GB), F16 (16,39 GB) |
-| Idiomas soportados | en, code |
-| Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (modelo base en safetensors) |
+| Arquitectura | Transformer decoder-only basada en Qwen3-8B (detalle exacto de capas y atencion no disponible) |
+| Parametros totales | 8.190.735.360 (~8,23B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | Q2_K, Q3_K_M, IQ4_XS, Q4_K_M, Q5_K_M, Q6_K, Q8_0, F16 |
+| Idiomas soportados | Ingles (en) y codigo |
+| Licencia | Apache-2.0 (pesos abiertos, no codigo abierto) |
+| Formato de pesos | GGUF (repo cuantizado); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
 
-El modelo principal, `coffy-3.2-flash`, es un transformer decoder-only de 8,23 mil millones de parámetros que reutiliza la arquitectura de Qwen3-8B, según indica el autor en la model card. Se presenta como un asistente ajustado a instrucciones (instruction-tuned). El repositorio GGUF no contiene información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o ajuste supervisado.
+El modelo hereda la arquitectura de Qwen3-8B, es decir, un transformer decoder-only con 8.230 millones de parametros, segun indica la propia model card. El repositorio GGUF se ha generado convirtiendo y cuantizando los pesos oficiales en safetensors mediante llama.cpp. No se especifica en la informacion disponible ni el numero de capas, ni la dimension oculta, ni el mecanismo de atencion exacto, ni si incorpora modos de razonamiento extendido propios de la familia Qwen3.
 
-La única innovación documentada en esta ficha es el proceso de conversión y cuantización con llama.cpp, que produce tres builds (Q4_K_M, Q8_0 y F16). El autor indica que el build Q4_K_M ha pasado una prueba de humo ("smoke-tested") verificando coherencia en identidad, código y matemáticas contra el modelo principal. No se documentan innovaciones arquitectónicas adicionales como decodificación especulativa o atención lineal.
+En cuanto al entrenamiento, la model card no aporta ningun dato sobre el volumen de tokens, la composicion del corpus, el uso de RLHF/DPO u otras tecnicas de alineacion. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, mezcla de expertos, etc.). El unico detalle de proceso relevante es que el autor declara haber realizado una prueba de humo ("smoke test") sobre la cuantizacion Q4_K_M, verificando generacion coherente de identidad, codigo y matematicas frente al modelo principal.
 
 ## Capacidades
 
-- Generación de texto e instrucciones en inglés.
-- Generación de código, dado que el modelo declara el idioma `code` entre sus etiquetas.
-- Razonamiento básico y respuesta a preguntas, según la prueba de humo del autor (identidad, código y matemáticas).
-- Ejecución local en runtimes compatibles con GGUF: llama.cpp, Ollama, LM Studio.
-- Soporte de tool calling / function calling: no disponible en la información publicada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información publicada.
-- Capacidades multimodales (visión, audio): no disponibles.
-- Modo de razonamiento explícito (thinking mode): no disponible en la información publicada.
+- Generacion de texto conversacional multi-turno en ingles.
+- Generacion y asistencia de codigo (el modelo declara soporte del idioma "code").
+- Razonamiento basico y resolucion de problemas matematicos, segun la verificacion de humo del autor.
+- Instrucciones: el modelo se describe como "instruction-tuned assistant".
+- Compatibilidad con runtimes GGUF: llama.cpp, Ollama, LM Studio y cualquier motor compatible con el formato.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
+- Capacidades multimodales (vision, audio): no disponibles; el modelo es exclusivamente de texto.
+- Capacidades multilingues: limitadas a ingles y codigo segun los metadatos.
 
 ## Casos de uso
 
-- Prototipado local de asistentes conversacionales: el build Q4_K_M (5,03 GB) permite levantar un chatbot de instrucciones en un portátil con GPU de 8 GB mediante Ollama o llama.cpp, sin depender de servicios en la nube.
-- Generación de código en entornos con requisitos de privacidad: al ejecutarse íntegramente en local, el modelo puede autocompletar y explicar fragmentos de código sin que el código fuente salga de la máquina, algo relevante para equipos con políticas estrictas de confidencialidad.
-- Experimentación académica con cuantización: los tres builds (Q4_K_M, Q8_0, F16) permiten comparar la degradación de calidad entre niveles de cuantización sobre el mismo modelo base, útil para estudiar el impacto del 4-bit frente al 8-bit y al 16-bit.
-- Evaluación de modelos pequeños para despliegue en el borde: con 8,23B parámetros y un build de 5 GB, es candidato para probar inferencia en estaciones de trabajo modestas o en dispositivos con GPU integrada antes de comprometerse con modelos mayores.
-- Integración en pipelines de CI/CD para tareas auxiliares: dado su tamaño reducido, puede usarse para generar descripciones de commits, resúmenes de diffs o borradores de documentación en jobs automatizados donde un modelo grande resultaría demasiado costoso.
-- Base para ajuste fino ligero: al estar bajo Apache-2.0 y derivar de Qwen3-8B, sirve como punto de partida para experimentos de fine-tuning con LoRA sobre dominios concretos, con la ventaja de que los pesos cuantizados permiten iterar rápidamente en hardware de consumo.
+- Asistente de codigo en local: con la cuantizacion Q4_K_M (5,03 GB) el modelo cabe en equipos de consumo y puede integrarse en editores o terminales mediante llama.cpp u Ollama para autocompletado, explicacion y generacion de fragmentos de codigo en ingles.
+- Prototipado rapido de chatbots: al ser un modelo instruction-tuned de ~8B y con licencia Apache-2.0, sirve para levantar asistentes conversacionales de prueba en estaciones de trabajo sin GPU dedicada usando la version Q2_K o Q3_K_M.
+- Despliegue en entornos con RAM limitada: las variantes Q2_K (3,28 GB) y Q3_K_M (4,12 GB) permiten ejecutar el modelo en portatiles modestos o contenedores con poca memoria, a costa de perdida de calidad.
+- Evaluacion comparativa de cuantizaciones: el repositorio ofrece ocho niveles de cuantizacion del mismo modelo, lo que facilita estudios de degradacion calidad/tamano en pipelines de investigacion.
+- Generacion de texto offline y privacidad: al ejecutarse localmente con llama.cpp o LM Studio, el modelo permite procesar texto sin enviar datos a servicios externos, adecuado para entornos con requisitos de confidencialidad.
+- Educacion y experimentacion: su tamano (8B) y su compatibilidad con llama-cpp-python lo convierten en una opcion asequible para cursos y talleres sobre inferencia de LLM y cuantizacion.
+- Tareas de referencia (baseline): la version F16 (16,39 GB) puede usarse como referencia de calidad frente a las cuantizaciones inferiores en pruebas internas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card unicamente menciona una prueba de humo cualitativa sobre Q4_K_M (identidad, codigo y matematicas verificadas contra el modelo principal), sin cifras de MMLU, HumanEval, GSM8K ni comparaciones numericas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: aproximadamente 5,5-6 GB para Q4_K_M (pesos de 5,03 GB más overhead de contexto y KV cache), en torno a 9,5-10 GB para Q8_0 y unos 17-18 GB para F16.
-- GPU recomendadas: RTX 4090, RTX 3090, A100 o H100 para F16; RTX 4070/4080, RTX 3060 de 12 GB o RTX 4060 Ti de 16 GB para Q8_0; RTX 3060 de 8 GB, RTX 4060 o superiores para Q4_K_M.
-- Cabe en GPU de consumo: sí, el build Q4_K_M cabe en GPUs de 8 GB de VRAM; el Q8_0 requiere al menos 12 GB y el F16 al menos 20 GB.
-- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), Ollama, LM Studio, llama-cpp-python y cualquier runtime compatible con GGUF.
-- Latencia y throughput estimados: no disponibles en la información publicada.
+- VRAM/RAM estimada para inferencia segun cuantizacion (tamano de archivo como referencia minima; el runtime anade overhead):
+  - Q2_K: 3,28 GB
+  - Q3_K_M: 4,12 GB
+  - IQ4_XS: 4,59 GB
+  - Q4_K_M: 5,03 GB (recomendada por el autor)
+  - Q5_K_M: 5,85 GB
+  - Q6_K: 6,73 GB
+  - Q8_0: 8,71 GB
+  - F16: 16,39 GB
+- GPU recomendadas: no disponible en la informacion proporcionada. Por tamano, las cuantizaciones de 4 a 5 bits son aptas para GPUs de consumo con 8 GB o mas de VRAM; F16 requiere aproximadamente 16 GB o mas.
+- Cabe en GPU de consumo: si, las variantes Q2_K a Q5_K_M en tarjetas con 6-8 GB de VRAM; Q6_K y Q8_0 en tarjetas de 8-12 GB; F16 en tarjetas de 16 GB o superiores.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-cpp-python), Ollama, LM Studio y cualquier runtime compatible con GGUF.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| coffy-3.2-flash (GGUF) | 8,23B | no disponible | Apache-2.0 | GGUF | Sin benchmarks publicados; autoidentificación errónea documentada |
-| Qwen3-8B | 8,2B | no disponible en esta ficha | Apache-2.0 | safetensors, GGUF | Modelo base arquitectónico; documentación y benchmarks públicos |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | Amplia adopción y ecosistema de herramientas |
-| Mistral 7B Instruct | 7,3B | 32K | Apache-2.0 | safetensors, GGUF | Referencia consolidada en el segmento 7-8B |
+| coffy-3.2-flash (este) | ~8,23B | no disponible | Apache-2.0 | GGUF / safetensors | Base Qwen3-8B, solo ingles y codigo |
+| Qwen3-8B (modelo de referencia) | ~8,2B | no disponible en esta ficha | Apache-2.0 | safetensors / GGUF | Arquitectura original en la que se basa coffy; multilingue |
+| Llama 3.1 8B | ~8B | 128K (segun documentacion publica del modelo) | Llama 3.1 Community License | safetensors / GGUF | Alternativa de tamano similar con licencia mas restrictiva |
+| Mistral 7B Instruct | ~7,3B | 32K (segun documentacion publica del modelo) | Apache-2.0 | safetensors / GGUF | Alternativa ligeramente menor con licencia permisiva |
 
-La comparación con Qwen3-8B es la más directa, ya que coffy-3.2-flash deriva de esa arquitectura; sin embargo, no se dispone de datos que permitan cuantificar la diferencia de rendimiento entre ambos. Frente a Llama 3.1 8B y Mistral 7B, coffy-3.2-flash ofrece una licencia permisiva (Apache-2.0), pero carece de la documentación, los benchmarks y el soporte de comunidad de los modelos de referencia.
+Nota: los datos de contexto y licencia de los modelos comparativos provienen de su documentacion publica habitual; no se dispone de resultados de benchmarks de coffy-3.2-flash para comparar rendimiento de forma numerica.
 
 ## Limitaciones y advertencias
 
-- Documentación técnica muy escasa: no se publican datos de entrenamiento, contexto, alineación ni benchmarks, lo que impide evaluar su calidad de forma objetiva.
-- Artefacto de autoidentificación: el modelo puede identificarse como "coffy-2.4-flash" en lugar de "coffy-3.2-flash", según advierte el propio autor; es un defecto visible en producción.
-- Riesgo de alucinación: no cuantificado ni evaluado en la información disponible; en modelos de este tamaño sin benchmarks públicos debe asumirse un riesgo significativo.
-- Cobertura lingüística limitada: solo se declaran inglés y código; no hay soporte documentado de castellano ni de otros idiomas.
-- Longitud de contexto desconocida: no se especifica la ventana de contexto, lo que dificulta planificar casos de uso con documentos largos.
-- Licencia: Apache-2.0 permite uso comercial, pero el autor matiza que se trata de "open weights, not open source"; conviene revisar el fichero LICENSE del repositorio antes de un despliegue comercial.
-- Madurez: el repositorio tiene cero descargas y cero likes en el momento de la ficha, y solo se ha validado con una prueba de humo; no hay evidencia de uso en producción.
-- Sesgos: no documentados en la información disponible.
+- Autoidentificacion incorrecta: el autor advierte que el modelo puede identificarse como una version anterior (por ejemplo, "coffy-2.4-flash") debido a un artefacto de los datos de entrenamiento; los pesos son de coffy-3.2-flash.
+- Riesgo de alucinacion: no se documenta ningun proceso de mitigacion ni evaluacion de fidelidad; como todo LLM de ~8B, puede generar contenido plausible pero incorrecto.
+- Sesgos: no se publica informacion sobre sesgos conocidos ni sobre la composicion del dataset, por lo que no es posible evaluar su comportamiento en dominios sensibles.
+- Limitacion idiomatica: el modelo declara solo ingles y codigo; no hay soporte documentado de castellano ni de otros idiomas.
+- Contexto: la longitud de contexto no esta especificada, lo que impide planificar casos de uso con ventanas largas sin verificacion empirica.
+- Licencia: Apache-2.0 permite uso comercial, pero el autor matiza que se trata de "pesos abiertos, no codigo abierto"; conviene revisar el fichero LICENSE del repositorio antes de un despliegue en produccion.
+- Madurez y soporte: repositorio con muy poca traccion (351 descargas, 1 like), sin benchmarks publicados ni documentacion de entrenamiento; no se recomienda como base unica para produccion sin evaluacion propia.
+- Verificacion limitada: la unica validacion declarada es una prueba de humo sobre Q4_K_M; las cuantizaciones de 2 y 3 bits pueden degradar notablemente la calidad.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Piyush00023/coffy-3.2-flash-GGUF
 - Modelo base: https://huggingface.co/Piyush00023/coffy-3.2-flash
-- Licencia (referencia en el repositorio): https://huggingface.co/Piyush00023/coffy-3.2-flash-GGUF/blob/main/LICENSE
 - Quickstart del modelo base: https://huggingface.co/Piyush00023/coffy-3.2-flash#quickstart
+- Licencia del modelo base: https://huggingface.co/Piyush00023/coffy-3.2-flash#license
 - Contacto del autor: piyushdas000@gmail.com

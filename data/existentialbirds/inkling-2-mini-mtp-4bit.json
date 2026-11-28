@@ -5,7 +5,7 @@
   "author": "existentialbirds",
   "url": "https://huggingface.co/existentialbirds/Inkling-2-Mini-MTP-4bit",
   "created_at": "2026-11-27T19:43:45.000Z",
-  "updated_at": "2026-11-27T19:54:02.000Z",
+  "updated_at": "2026-11-27T20:42:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -49,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "existentialbirds/Inkling-2-Mini-DSpark-mlx-vlm-4bit",
+  "renamed_at": "2026-11-28T08:53:17.990Z",
   "benchmarks": [],
   "sources": []
 }

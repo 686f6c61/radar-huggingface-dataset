@@ -1,0 +1,58 @@
+{
+  "schema": 2,
+  "id": "anabaena/firebot-voice-intent",
+  "slug": "anabaena-firebot-voice-intent",
+  "author": "anabaena",
+  "url": "https://huggingface.co/anabaena/firebot-voice-intent",
+  "created_at": "2026-09-30T13:07:23.000Z",
+  "updated_at": "2026-11-28T09:43:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "audio-classification",
+    "voice-intent",
+    "speech-recognition",
+    "whisper",
+    "ecapa-tdnn",
+    "robotics",
+    "autonomous-systems",
+    "firefighting",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 914858,
+  "storage_human": "914858 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Voice Intent Classification",
+      "dataset": null,
+      "metric": "Accuracy",
+      "value": 0.962
+    }
+  ],
+  "sources": []
+}

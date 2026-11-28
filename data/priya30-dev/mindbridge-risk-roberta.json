@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "priya30-dev/mindbridge-risk-roberta",
+  "slug": "priya30-dev-mindbridge-risk-roberta",
+  "author": "priya30-dev",
+  "url": "https://huggingface.co/priya30-dev/mindbridge-risk-roberta",
+  "created_at": "2026-11-28T09:00:07.000Z",
+  "updated_at": "2026-11-28T09:01:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "mental-health",
+    "text-classification",
+    "risk-detection",
+    "en",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647939,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498615900,
+  "storage_human": "499 MB",
+  "context_length": null,
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

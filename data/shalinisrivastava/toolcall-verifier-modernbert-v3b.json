@@ -5,7 +5,7 @@
   "author": "ShaliniSrivastava",
   "url": "https://huggingface.co/ShaliniSrivastava/toolcall-verifier-modernbert-v3b",
   "created_at": "2026-11-22T17:34:06.000Z",
-  "updated_at": "2026-11-22T18:18:03.000Z",
+  "updated_at": "2026-11-27T18:35:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 36,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 149606402,
   "parameters_human": "149.6M",

@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Qwen3-Coder-30B-A3B-Instruct",
   "created_at": "2026-11-08T20:08:44.000Z",
-  "updated_at": "2026-11-14T10:53:58.000Z",
+  "updated_at": "2026-11-28T10:02:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

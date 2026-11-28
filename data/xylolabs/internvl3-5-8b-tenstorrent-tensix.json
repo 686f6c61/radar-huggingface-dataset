@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/InternVL3.5-8B-Tenstorrent-Tensix",
   "created_at": "2026-11-22T09:22:23.000Z",
-  "updated_at": "2026-11-27T12:17:37.000Z",
+  "updated_at": "2026-11-28T05:17:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

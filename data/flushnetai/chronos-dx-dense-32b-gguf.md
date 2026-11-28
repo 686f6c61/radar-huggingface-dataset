@@ -2,97 +2,100 @@
 
 ## Resumen
 
-Chronos-DX Dense 32B es un modelo de lenguaje denso de aproximadamente 32.000 millones de parametros (32.085.082.112 exactos), desarrollado por Flushnet AI y distribuido en formato GGUF con cuantizacion Q3_K. El modelo se presenta como una solucion de generacion de texto para inferencia local, orientada a aplicaciones de IA que requieren ejecucion privada en hardware propio. Su arquitectura nativa, denominada Chronos-DX, es propietaria y no esta documentada publicamente; el export GGUF se ha adaptado al tipo de arquitectura `qwen2` para que pueda cargarse en llama.cpp y Ollama, por lo que la etiqueta `qwen2` que muestra Hugging Face es un identificador de compatibilidad, no una descripcion tecnica del modelo.
+Chronos-DX Dense 32B es un modelo de lenguaje denso de 32.085 millones de parámetros (32.085B) desarrollado por Flushnet AI y distribuido exclusivamente en formato GGUF cuantizado a Q3_K. Se presenta como un modelo para generación de texto local y aplicaciones de IA, con áreas de conocimiento declaradas que abarcan ingeniería de software, matemáticas, ciencia, negocios, redacción y humanidades. La información pública disponible es deliberadamente limitada: el autor declara que Chronos-DX emplea una arquitectura propietaria cuyos detalles internos no se han divulgado.
 
-El modelo cubre areas de conocimiento declaradas por el autor: ingenieria de software, arquitectura de sistemas, infraestructura cloud, ciencia de datos, matematicas, logica, negocios, economia, redaccion, traduccion y humanidades. Se distribuye en un repositorio de 13,8 GB que contiene el peso Q3_K y, para la version v1.1, un adaptador LoRA (`Chronos-DX-Dense-32B-v1.1-adapter.gguf`) que se carga junto al modelo base mediante `llama-server`.
+El aspecto más relevante técnicamente es que, al no existir el tipo de arquitectura nativo de Chronos-DX en llama.cpp, la exportación GGUF se ha adaptado al tipo de arquitectura `qwen2` y a un formato de tensores compatible. Esto permite ejecutar el modelo con llama.cpp y Ollama estándar, pero implica que la etiqueta `qwen2` que muestra Hugging Face es un identificador de compatibilidad del export, no una descripción de la arquitectura real del modelo.
 
-La relevancia actual del modelo es limitada pero concreta: ofrece un artefacto de 32B en un unico archivo GGUF que cabe en equipos de gama alta de consumo y se integra con los runtimes locales mas extendidos (Ollama, llama.cpp, LM Studio). La contrapartida es una opacidad casi total sobre arquitectura, datos de entrenamiento, benchmarks y licencia, lo que exige cautela antes de cualquier uso en produccion.
+El modelo es relevante para quien busque un LLM de 32B ejecutable localmente en hardware de consumo, pero la falta de transparencia sobre arquitectura, datos de entrenamiento, licencia e idiomas soportados limita seriamente su evaluación rigurosa y su uso en producción. No se han publicado benchmarks ni una model card técnica convencional.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Chronos-DX propietaria (no documentada publicamente); export GGUF adaptado al tipo `qwen2` para compatibilidad con llama.cpp |
-| Parametros totales | 32.085.082.112 (~32B) |
-| Parametros activos | No aplica (modelo denso; el autor indica ~32B activos) |
+| Arquitectura | Propietaria (Chronos-DX); export GGUF adaptado al tipo `qwen2` para compatibilidad con llama.cpp |
+| Parámetros totales | 32.085.082.112 (32.085B) |
+| Parámetros activos | ~32B (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q3_K (unica publicada en el repositorio) |
-| Idiomas soportados | no disponible (la model card menciona contenido multilingue y traduccion como area de conocimiento, sin listar idiomas) |
+| Tipos de cuantización | Q3_K (único artefacto publicado en el repositorio) |
+| Idiomas soportados | no disponible (la model card menciona "contenido multilingüe y traducción" sin especificar idiomas) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF; incluye adaptador LoRA GGUF para la version v1.1 |
+| Formato de pesos | GGUF (`Chronos-DX-Dense-32B-Q3_K.gguf`) |
+| Tamaño del repositorio | 13,8 GB |
+| Versiones | v1.0, v1.1 |
+| Tokenizer | no disponible (se indica que para vLLM/Transformers se requiere un tokenizer compatible aparte) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura nativa es propietaria y Flushnet AI no publica detalles internos (tipo de atencion, capas, dimensiones ocultas, uso de GQA/MQA, etc.). Para poder ejecutarse en llama.cpp, el export GGUF fue adaptado al tipo de arquitectura `qwen2` y a un formato de tensores compatible, lo que implica que el grafo de computo sigue el esquema de Qwen2 aunque los pesos proceden del entrenamiento Chronos-DX. No se dispone de informacion sobre numero de tokens de entrenamiento, composicion del dataset, fases de RLHF, DPO u otras tecnicas de alineamiento.
+Flushnet AI declara que Chronos-DX tiene "su propia arquitectura propietaria", sin desvelar si es un transformer denso convencional, una variante con atención lineal u otra familia. El dato confirmado es que es un modelo denso de 32.085B parámetros, es decir, todos los parámetros se activan en cada token generado. Para hacerlo ejecutable en llama.cpp, la exportación se ha mapeado al tipo de arquitectura `qwen2` y a un formato de tensores compatible, lo que sugiere un stack de atención y capas proyectadas compatible con ese esquema, pero no se detalla qué componentes difieren del mismo.
 
-La unica innovacion documentada es operativa, no arquitectonica: la version v1.1 se distribuye como el modelo base Q3_K mas un adaptador LoRA complementario que se aplica en tiempo de carga con `llama-server --lora`. La version v1.0 (rollback) consiste en el mismo Q3_K sin el adaptador. Este esquema permite actualizar el comportamiento sin redistribuir el peso completo de 13,8 GB.
+No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación, ni innovaciones técnicas como decodificación especulativa o atención lineal. La model card únicamente enumera áreas de conocimiento (tecnología, campos cuantitativos, negocios, lenguaje e investigación/cultura) y ofrece servicios de entrenamiento, personalización, integración RAG y "reparación de modelos" bajo petición, lo que sugiere que el modelo puede adaptarse mediante encargo pero no documenta el proceso base.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el pipeline declarado es `text-generation` con tag `conversational`; el artefacto esta pensado para chat e inferencia de texto.
-- Cobertura tematica declarada: ingenieria de software, arquitectura de sistemas, cloud, IA y ciencia de datos, matematicas, logica, ciencia, estrategia, operaciones, economia, finanzas, redaccion, comunicacion, traduccion, educacion, historia y humanidades.
-- Capacidades multilingues: mencionadas de forma generica en la model card (contenido multilingue y traduccion), sin lista de idiomas ni evaluacion publicada.
-- Tool calling / function calling: no disponible; no se documenta soporte explicito.
-- Agentes y razonamiento multi-paso: no disponible; no se documenta soporte explicito.
-- Modo thinking, vision o audio: no disponible; el modelo se declara exclusivamente de texto.
-- Despliegue local: compatible con llama.cpp (`llama-cli`, `llama-server` con endpoint OpenAI-compatible en `/v1/chat/completions`), Ollama y LM Studio; vLLM y Transformers solo de forma condicional y no verificada.
+- Generación de texto conversacional en modo chat (pipeline `text-generation`, tag `conversational`).
+- Razonamiento técnico en áreas declaradas: ingeniería de software, arquitectura de sistemas, infraestructura cloud, IA y ciencia de datos.
+- Capacidades cuantitativas: matemáticas, lógica y materias científicas y técnicas.
+- Redacción y comunicación, incluyendo contenido multilingüe y traducción (idiomas concretos no especificados).
+- Conocimiento de negocio: estrategia, gestión, operaciones, economía y finanzas.
+- Educación, historia y humanidades.
+- Ejecución local con API compatible con OpenAI mediante `llama-server` (`/v1/chat/completions`).
+- Soporte de tool calling / function calling: no disponible (no documentado).
+- Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
+- Capacidades especiales (modo thinking, visión, audio): no disponible (no documentado).
 
 ## Casos de uso
 
-- Asistente de desarrollo local y privado: el modelo puede ejecutarse en `llama-server` en la propia maquina del desarrollador y responder por el endpoint OpenAI-compatible, evitando enviar codigo propietario a servicios externos. Es adecuado por su tamano de 32B y su despliegue en un unico GGUF Q3_K.
-- Chat de documentacion tecnica interna: con un servidor llama.cpp local apuntando a una base documental propia (RAG gestionado en la capa de aplicacion, ya que el modelo no documenta tool calling nativo), se pueden responder consultas sobre arquitectura de sistemas e infraestructura sin salida de datos.
-- Redaccion y traduccion asistida en estaciones de trabajo: la model card declara redaccion, comunicacion y traduccion como areas de conocimiento; un equipo puede desplegar el GGUF en Ollama y ofrecer un servicio de borradores y traduccion en red interna.
-- Prototipado de aplicaciones de IA en estaciones con GPU de consumo: al caber en GPUs de gama alta de consumo con Q3_K, sirve para validar interfaces conversacionales y pipelines de prompt antes de migrar a infraestructura mayor.
-- Base para ajuste fino ligero mediante LoRA: el esquema v1.1 demuestra que el autor distribuye adaptadores LoRA sobre el mismo peso base; un equipo puede replicar el patron para adaptar el modelo a dominios internos sin regenerar el GGUF completo.
-- Evaluacion comparativa de modelos propietarios: util como banco de pruebas para medir latencia, calidad y consumo de memoria de un modelo de 32B denso en hardware propio antes de decidir una compra de GPU.
-- Despliegue en entornos con conectividad restringida: al ser un artefacto descargable y autosuficiente (salvo el adaptador v1.1), puede instalarse en redes aisladas mediante transferencia del archivo y ejecutarse con llama.cpp u Ollama sin dependencias de red.
+- Asistencia técnica local y privada: el modelo puede desplegarse con Ollama o llama.cpp en una máquina local y usarse como asistente de programación y arquitectura de sistemas sin enviar datos a la nube, lo que encaja con el enfoque "Local Private Secure" que promociona el autor.
+- Chat de soporte en entornos aislados: al ejecutarse mediante `llama-server` con endpoint compatible con OpenAI, puede integrarse en aplicaciones internas de atención al cliente o helpdesk en redes sin acceso a internet.
+- Generación y revisión de documentación técnica: adecuado para redactar y revisar documentación de software, guías de operaciones y material de formación técnica, dada su área de conocimiento declarada en ingeniería y cloud.
+- Apoyo a tareas cuantitativas y analíticas: resolución de problemas de matemáticas, lógica y estadística en cuadernos de trabajo o pipelines internos, con la salvedad de que no hay benchmarks que respalden su precisión.
+- Redacción y traducción de contenido: generación de textos de negocio y marketing y traducción de material multilingüe, siempre que se valide la calidad en los idiomas concretos de interés, ya que no se especifican idiomas soportados.
+- Prototipado de aplicaciones de IA en local: servir como backend de un prototipo de chatbot o asistente mediante la API OpenAI-compatible de llama.cpp, evitando costes de API externa durante la fase de desarrollo.
+- Formación y consultoría interna: respuestas sobre economía, gestión e historia para equipos que necesiten un asistente de conocimiento general ejecutado en su propia infraestructura.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye MMLU, HumanEval, GSM8K ni ninguna otra metrica, y tampoco se dispone de comparaciones con modelos similares.
+No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el repositorio pesa 13,8 GB e incluye el Q3_K y el adaptador v1.1; el peso Q3_K de un modelo de 32B ronda los 12-13 GB, por lo que la VRAM necesaria para cargar el modelo es del orden de 14-16 GB, mas el espacio para el contexto KV (no disponible su tamano por falta de datos de arquitectura).
-- GPU recomendadas: no hay recomendaciones publicadas por el autor. Por tamano del artefacto, encajan GPUs con 16 GB o mas de VRAM (RTX 4080/4090, RTX 5080, A100 40/80 GB, H100) y, con menos holgura, GPUs de 12 GB si parte de capas se descargan a CPU.
-- Cabe en GPU de consumo: si, en tarjetas de gama alta de consumo con 16 GB o mas de VRAM, usando Q3_K. En GPUs de 8-12 GB requerira offload parcial a RAM y penalizacion de latencia.
-- Opciones de despliegue: Ollama (`ollama pull hf.co/FlushnetAI/Chronos-DX-Dense-32B-GGUF:Chronos-DX-Dense-32B-Q3_K.gguf`), llama.cpp (`llama-cli`, `llama-server` con API OpenAI-compatible), LM Studio. vLLM y Transformers solo de forma condicional: el autor indica explicitamente que este release de 32B no ha sido verificado con vLLM ni con carga directa en Transformers, y que ambos requieren tokenizer y config compatibles.
-- Latencia y throughput: no disponible; no se publican mediciones.
+- VRAM estimada para inferencia: el artefacto Q3_K ocupa aproximadamente 13,8 GB en disco; en ejecución se necesita esa cantidad más el espacio para el contexto KV, por lo que se estima un mínimo práctico de ~16 GB de VRAM para contexto corto y más para contextos largos (la longitud de contexto no está documentada).
+- GPU recomendadas: para un modelo denso de 32B en Q3_K, GPU de 24 GB (RTX 3090, RTX 4090) permiten cargar el modelo completo con margen limitado para contexto; A100 40/80 GB y H100 ofrecen holgura y mayor throughput.
+- GPU de consumo: cabe en RTX 3090/4090 (24 GB) en Q3_K; en GPUs de 16 GB o menos requeriría descarga parcial a CPU (offloading) mediante llama.cpp, con caída de velocidad.
+- Despliegue: Ollama (`ollama pull hf.co/FlushnetAI/Chronos-DX-Dense-32B-GGUF:Chronos-DX-Dense-32B-Q3_K.gguf`) y llama.cpp (`llama-cli`, `llama-server`) son las vías recomendadas y verificadas por el autor. vLLM y Transformers se describen como "condicionales" y no verificados para este artefacto de 32B; requieren tokenizer y configuración compatibles.
+- Aplicaciones de escritorio: LM Studio y otros runtimes compatibles con GGUF pueden importar el archivo, con compatibilidad dependiente de versión y hardware.
+- Latencia y throughput: no disponibles (no publicados).
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de rendimiento ni de especificaciones internas suficientes para establecer una comparativa fiable con alternativas de la misma categoria. La tabla recoge solo los datos objetivos disponibles.
-
-| Modelo | Parametros | Contexto | Formato publicado | Licencia | Observaciones |
+| Modelo | Parámetros | Contexto | Cuantización publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chronos-DX Dense 32B | 32,085B (denso) | no disponible | GGUF Q3_K + LoRA v1.1 | no disponible | Arquitectura propietaria adaptada a `qwen2`; sin benchmarks publicados |
-| Alternativas de ~32B denso (familia Qwen2.5, Llama 3.x, Mistral) | ~32B | no disponible en esta ficha | safetensors, GGUF | licencias publicas de cada familia | Modelos con arquitectura y benchmarks documentados publicamente |
+| Chronos-DX Dense 32B | 32,085B denso | no disponible | Q3_K (GGUF) | no disponible | Hugging Face (GGUF), Ollama |
+| Alternativas de ~32B denso de código abierto (p. ej. Qwen2.5-32B, Gemma 2 27B, Mistral Small 24B) | 24-32B | 32K-128K según modelo | múltiples (GGUF, safetensors, AWQ, etc.) | Apache 2.0 / licencias abiertas según modelo | Hugging Face, Ollama, vLLM, etc. |
 
-La comparacion cuantitativa con modelos de la familia Qwen2.5, Llama 3.x o Mistral no puede completarse con esta informacion: no hay benchmarks del Chronos-DX ni datos de contexto que permitan emparejar especificaciones.
+No se dispone de datos de benchmarks de Chronos-DX que permitan una comparación cuantitativa con alternativas de su categoría. La comparación se limita a parámetros, formato y disponibilidad; en transparencia (arquitectura documentada, licencia, idiomas, contexto) y en variedad de cuantizaciones, las alternativas abiertas de ~24-32B ofrecen información pública considerablemente mayor.
 
 ## Limitaciones y advertencias
 
-- Opacidad de arquitectura: la arquitectura nativa Chronos-DX es propietaria y no se documenta; el export GGUF se ha forzado al tipo `qwen2`, de modo que el comportamiento real puede diferir del de un Qwen2 autentico en aspectos no visibles (tokenizer, atencion, normalizacion).
-- Ausencia de benchmarks: no hay ninguna evaluacion publicada de calidad, razonamiento, codigo o matemáticas, pese a que la model card declara esas areas como fortalezas. Cualquier afirmacion de rendimiento carece de respaldo medible.
-- Licencia no disponible: no se especifica licencia en la model card ni en los metadatos de Hugging Face. No hay base legal clara para uso comercial, redistribucion o modificacion; es imprescindible contactar con Flushnet AI antes de integrarlo en un producto.
-- Idiomas no listados: no se enumeran idiomas soportados; el rendimiento multilingue es una afirmacion generica sin evaluacion.
-- Contexto desconocido: no se publica la longitud de contexto, lo que impide planificar aplicaciones de contexto largo (RAG con documentos extensos, conversaciones multi-turno prolongadas) con garantias.
-- Tool calling y agentes no documentados: no hay evidencia de soporte nativo de function calling ni de razonamiento multi-paso; los pipelines de agentes requeririan orquestacion externa.
-- Compatibilidad condicional: vLLM y Transformers no estan verificados para este release de 32B; solo Ollama y llama.cpp estan recomendados por el autor. El adaptador v1.1 exige un runtime llama.cpp compatible con LoRA.
-- Riesgo de alucinacion: inherente a un modelo de lenguaje sin evaluacion publicada; en dominios tecnicos y financieros (declarados como areas de conocimiento) la ausencia de benchmarks impide estimar la tasa de error.
-- Sesgos: no disponibles; al no publicarse composicion del dataset ni proceso de alineamiento, no es posible evaluar sesgos de genero, culturales o de dominio.
-- Revisiones no automaticas: el autor advierte que las copias locales instaladas con Ollama no se actualizan solas; hay que repetir el `pull` para obtener revisiones nuevas, lo que complica la gestion de versiones en produccion.
-- Procedencia y confianza: repositorio con 130 descargas y 0 likes en el momento de la consulta, sin publicacion tecnica asociada; conviene tratarlo como artefacto experimental hasta que exista documentacion verificable.
+- Licencia no disponible: no se puede confirmar si el uso comercial está permitido; esto es un bloqueo para producción hasta aclararlo con el autor.
+- Arquitectura propietaria y no documentada: no se conocen detalles de atención, contexto máximo ni tokenizer, lo que impide planificar con precisión memoria, latencia y límites de entrada.
+- Longitud de contexto desconocida: no se puede garantizar el manejo de conversaciones o documentos largos.
+- Idiomas no especificados: la afirmación de capacidades multilingües no viene acompañada de lista de idiomas ni de evaluaciones; el rendimiento en castellano es incierto.
+- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad en MMLU, HumanEval, GSM8K ni otras tareas; el riesgo de alucinación y de errores en matemáticas o código no está caracterizado.
+- Única cuantización Q3_K: la cuantización de 3 bits puede degradar la calidad frente a Q4/Q5; no hay artefactos de mayor precisión publicados.
+- Compatibilidad frágil: el GGUF está adaptado al tipo `qwen2`; cargarlo en vLLM o Transformers no está verificado y requiere tokenizer y configuración compatibles no incluidas en el repositorio.
+- Actualizaciones manuales: las copias locales no se actualizan solas; hay que repetir la descarga para obtener revisiones nuevas.
+- Baja tracción comunitaria: 174 descargas y 0 likes en el momento de la consulta, sin documentación de sesgos ni de datos de entrenamiento.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/FlushnetAI/Chronos-DX-Dense-32B-GGUF
-- Pagina del modelo en Flushnet: https://www.flushnet.net/ai/chronos-dx/
-- Demo web seguro local: https://www.flushnet.net/chronos-secure/secure-webchat/
-- Pagina de Ollama del proyecto: https://ollama.com/marcheseluciano/Chronos-DX-Dense-32B-GGUF
-- Solicitud de entrenamiento y personalizacion: https://www.flushnet.net/chronos-dx-model-request/
+- Página del modelo en Flushnet: https://www.flushnet.net/ai/chronos-dx/
+- Demo local privada en navegador: https://www.flushnet.net/chronos-secure/secure-webchat/
+- Página de Ollama del proyecto: https://ollama.com/marcheseluciano/Chronos-DX-Dense-32B-GGUF
+- Solicitud de entrenamiento y personalización: https://www.flushnet.net/chronos-dx-model-request/
 - Sitio del autor: https://www.flushnet.net/
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Guia GGUF de vLLM: https://docs.vllm.ai/en/latest/features/quantization/gguf/
-- Documentacion GGUF de Transformers: https://huggingface.co/docs/transformers/main/quantization/gguf
+- Guía GGUF de vLLM: https://docs.vllm.ai/en/latest/features/quantization/gguf/
+- Documentación GGUF de Transformers: https://huggingface.co/docs/transformers/main/quantization/gguf
 - LM Studio: https://lmstudio.ai/

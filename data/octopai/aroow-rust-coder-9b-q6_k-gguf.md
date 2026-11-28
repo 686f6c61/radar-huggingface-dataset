@@ -2,93 +2,98 @@
 
 ## Resumen
 
-Aroow-Rust-Coder-9B-Q6_K-GGUF es una cuantización en formato GGUF (tipo Q6_K) del modelo Convence/Aroow-Rust-Coder-9B, un modelo de lenguaje especializado en generación y completado de código con énfasis en el lenguaje Rust. La conversión la ha realizado el usuario OctopAI mediante el espacio GGUF-my-repo de ggml.ai, que emplea llama.cpp como herramienta de conversión. El resultado es un checkpoint listo para inferencia local con llama.cpp y ecosistemas compatibles, sin necesidad de disponer del modelo original en precisión completa.
+Aroow-Rust-Coder-9B es un modelo de lenguaje especializado en generación y completado de código Rust, desarrollado por Convence y distribuido en formato GGUF por OctopAI. Se trata de un fine-tuning del modelo base Convence/Aroow-Rust-Coder-9B, que a su vez se apoya en la familia Qwen 3.5 (referenciada como `qwen35` en la model card), con 8.953.803.264 parámetros totales (aproximadamente 9B). El repositorio que nos ocupa contiene únicamente la cuantización Q6_K en formato GGUF, orientada a inferencia local mediante llama.cpp y LM Studio.
 
-El modelo subyacente cuenta con 8.953.803.264 parámetros (aproximadamente 9B), lo que lo sitúa en la franja de modelos de código de tamaño medio que pueden ejecutarse en hardware de consumo con cuantizaciones agresivas. La model card original está orientada a tareas de code generation, code completion y fill-in-the-middle (FIM), capacidades habituales en asistentes de programación integrados en editores. El repositorio ocupa 7,4 GB, coherente con una cuantización Q6_K de un modelo de ~9B.
+El modelo resuelve un nicho concreto: asistencia a desarrolladores que trabajan con Rust, un lenguaje con un sistema de tipos y de préstamos (ownership/borrowing) particularmente exigente. Frente a modelos generalistas, este fine-tuning busca mejorar la coherencia en la generación de código idiomático, la completación de fragmentos (fill-in-the-middle) y la comprensión de errores del compilador. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
-La relevancia de esta ficha radica en que el artefacto publicado es únicamente una conversión de formato: no aporta información nueva sobre el entrenamiento, los datos o los benchmarks del modelo base. Cualquier evaluación de calidad debe remitirse al modelo original Convence/Aroow-Rust-Coder-9B, cuya model card no se incluye en la información disponible.
+Es relevante ahora porque ofrece una alternativa ligera (9B) y ejecutable en hardware de consumo para tareas de codificación en Rust, un nicho poco cubierto por los modelos generalistas de gran tamaño. No obstante, la información pública disponible es escasa: no se detallan la composición del dataset de entrenamiento, la longitud de contexto efectiva ni resultados de benchmarks.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (modelo base de tipo transformer, inferido por el pipeline text-generation; no confirmado en la información) |
-| Parámetros totales | 8.953.803.264 (~9B) |
-| Parámetros activos | no aplica (no consta que sea MoE) |
-| Longitud de contexto | no disponible (el ejemplo de la model card usa `-c 2048`, pero es solo un valor de ejemplo) |
-| Tipos de cuantización | Q6_K (GGUF); el repo contiene únicamente esta variante |
-| Idiomas soportados | en (inglés) |
+| Arquitectura | Transformer (derivada de Qwen 3.5, segun referencias de la model card; detalles no disponibles) |
+| Parametros totales | 8.953.803.264 (aproximadamente 9B) |
+| Parametros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (los ejemplos de llama-server usan `-c 2048`, pero no confirma el maximo) |
+| Tipos de cuantizacion | Q6_K (unico formato publicado en este repo) |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (`aroow-rust-coder-9b-q6_k.gguf`) |
+| Formato de pesos | GGUF (safetensors disponible en el modelo base Convence/Aroow-Rust-Coder-9B) |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base Convence/Aroow-Rust-Coder-9B en la documentación proporcionada. El pipeline declarado es text-generation y la librería asociada es transformers, lo que sugiere un transformer decoder-only, pero este extremo no está confirmado explícitamente. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron fases de RLHF, DPO o ajuste supervisado.
+La model card no proporciona detalles sobre la arquitectura interna más allá de la referencia a `qwen35`, lo que sugiere que el modelo base Convence/Aroow-Rust-Coder-9B se construyó sobre la familia Qwen 3.5. El recuento de parámetros (8.953.803.264) es consistente con un transformer denso de aproximadamente 9B parámetros. No se especifica si emplea atención lineal, decodificación especulativa nativa u otras innovaciones.
 
-La única innovación técnica documentada en este repositorio es la propia conversión a GGUF mediante llama.cpp y el espacio GGUF-my-repo de ggml.ai, que permite generar un artefacto cuantizado a Q6_K a partir del checkpoint original. Las etiquetas del repositorio mencionan fill-in-the-middle (FIM), lo que indica que el modelo base fue entrenado o ajustado para esa tarea, pero no se aportan detalles sobre la estrategia de entrenamiento empleada.
+Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o instrucción tuning. Los tags del repositorio (`rust`, `code`, `code-generation`, `code-completion`, `fill-in-the-middle`) indican que el fine-tuning se orientó a tareas de código Rust, incluyendo completado en medio de contexto. La conversión a GGUF se realizó mediante el espacio GGUF-my-repo de ggml.ai a partir del modelo base en safetensors.
 
 ## Capacidades
 
-- Generación de código, según las etiquetas `code-generation` y `code`.
-- Completado de código en línea (`code-completion`), adecuado para integración en editores.
-- Fill-in-the-middle (FIM), según la etiqueta `fill-in-the-middle`; permite completar huecos entre prefijo y sufijo.
-- Especialización en Rust, según las etiquetas `rust` y el nombre del modelo.
-- Generación de texto general (pipeline `text-generation`).
-- Inferencia local mediante llama.cpp (CLI y servidor HTTP).
-- Compatibilidad con endpoints (`endpoints_compatible` según las etiquetas).
-- Soporte de tool calling / function calling: no disponible en la información.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información.
-- Capacidades multilingües: limitadas a inglés según el campo `language`; no se documentan otros idiomas.
-- Capacidades especiales (modo thinking, visión, audio): no disponibles en la información.
+- Generación de código Rust: producción de funciones, módulos y estructuras idiomáticas.
+- Completado de código (code completion) y fill-in-the-middle, según los tags del repositorio.
+- Explicación de errores del compilador (con limitaciones reconocidas por el autor).
+- Generación de tests, aunque el autor advierte que pueden no cubrir casos límite.
+- Razonamiento sobre lifetimes, trait bounds e imports, con limitaciones declaradas.
+- Soporte de tool calling / function calling: no disponible en la información proporcionada.
+- Soporte de agentes y razonamiento multi-paso: no disponible.
+- Capacidades multilingües: limitadas al inglés según el campo `language`.
+- Capacidades especiales (thinking mode, visión, audio): no disponibles.
 
 ## Casos de uso
 
-- Autocompletado en el editor para proyectos Rust: el modelo puede integrarse en un plugin de editor que envíe el contexto previo y posterior al cursor y reciba la completitud mediante FIM. La cuantización Q6_K mantiene una calidad cercana al original con un tamaño de 7,4 GB, manejable en estaciones de trabajo.
-- Asistente de refactorización de código Rust: dado un fragmento de código y una instrucción en inglés, el modelo genera la versión refactorizada. Es adecuado por su especialización declarada en Rust y su ventana de contexto, aunque esta no esté documentada.
-- Generación de tests unitarios: el modelo puede producir funciones de prueba a partir de firmas y documentación de módulos Rust, reduciendo el trabajo manual en proyectos con cobertura baja.
-- Servidor local de completado para equipos: mediante `llama-server` se puede exponer un endpoint HTTP compatible con clientes que hablan la API de llama.cpp, sirviendo a varios desarrolladores de un mismo equipo sin depender de la nube.
-- Prototipado offline en entornos restringidos: al ejecutarse con llama.cpp en local, permite usar el modelo en máquinas sin acceso a Internet o con requisitos de confidencialidad del código.
-- Migración de fragmentos entre lenguajes: aunque el foco es Rust, el modelo puede recibir código en otro lenguaje y generar su equivalente en Rust, siempre que la tarea se formule en inglés y el modelo base tenga esa capacidad, no confirmada en la documentación.
-- Educación y ejemplos de código Rust: generación de snippets explicativos y ejemplos canónicos para documentación técnica o materiales de formación.
+- Asistencia en el desarrollo de crates Rust: el modelo puede generar esqueletos de módulos, implementaciones de traits y funciones auxiliares, aprovechando su fine-tuning específico en Rust para producir código más idiomático que un modelo generalista del mismo tamaño.
+- Autocompletado en editores (fill-in-the-middle): integrable en plugins de VS Code o Neovim mediante llama.cpp o LM Studio, ofreciendo sugerencias de código en el punto del cursor.
+- Explicación de errores del compilador: el desarrollador puede pegar un mensaje de `rustc` y el fragmento relevante para obtener una explicación en inglés; útil como primera línea de ayuda, aunque el autor advierte que las explicaciones pueden ser incompletas.
+- Generación de tests unitarios: creación de tests de ejemplo para funciones Rust, que el desarrollador debe revisar y ampliar para cubrir casos límite.
+- Prototipado rápido de utilidades CLI: generación de programas Rust pequeños para tareas de línea de comandos, ejecutables localmente en hardware de consumo gracias a la cuantización Q6_K.
+- Formación y aprendizaje de Rust: el modelo puede servir como tutor para explicar patrones de ownership y borrowing, siempre con revisión humana dada la posibilidad de alucinaciones sobre APIs de crates.
+- Revisión preliminar de código: detección de imports no usados o dependencias de crate incorrectas, como paso previo a la revisión humana.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible.
+No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: el archivo GGUF Q6_K ocupa aproximadamente 7,4 GB, por lo que se necesitan al menos ~8 GB de VRAM para cargarlo completo en GPU, más margen para el contexto KV cache.
-- GPU recomendadas: no disponibles de forma específica en la información. Por tamaño, una RTX 3090/4090 (24 GB) o una A10G/A100 permitirían cargar el modelo con holgura y contexto amplio; una RTX 4060 Ti de 16 GB también sería suficiente para el modelo, con contexto más limitado.
-- ¿Cabe en GPU de consumo? Sí, en tarjetas con 8 GB o más de VRAM para el modelo en sí; con 12-16 GB se dispone de margen para contexto y offloading parcial.
-- Opciones de despliegue: llama.cpp (CLI y servidor), y por extensión cualquier runtime compatible con GGUF (Ollama, LM Studio, koboldcpp, etc., aunque no se citan explícitamente en la model card). No se documenta soporte de vLLM ni TGI para este artefacto GGUF.
-- Latencia y throughput estimados: no disponibles en la información.
+- VRAM estimada para inferencia: la cuantización Q6_K de un modelo de ~9B parámetros ocupa aproximadamente 7,4 GB en disco (tamaño del repo); en VRAM se requiere un margen adicional para el contexto KV, por lo que se recomiendan al menos 9-10 GB de VRAM para contextos moderados.
+- GPU recomendadas: RTX 4090 (24 GB), RTX 4080 (16 GB), RTX 3090 (24 GB), A100/H100 para despliegues de mayor concurrencia.
+- Cabe en GPU de consumo: sí, en tarjetas con 12 GB o más de VRAM (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090). En GPUs de 8 GB requeriría offloading parcial a CPU.
+- Opciones de despliegue: llama.cpp (`llama-cli`, `llama-server`), LM Studio. vLLM y TGI no soportan GGUF de forma nativa; para estos se necesitaría el modelo base en safetensors.
+- Latencia y throughput estimados: no disponibles en la información proporcionada.
+- Advertencia importante: desactivar MTP (Multi-Token Prediction) / decodificación especulativa en LM Studio y llama-server, ya que provoca un fallo nativo (`SIGABRT` / `0xC0000409`) durante la inicialización del grafo en esta conversión `qwen35`.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación rigurosa. Se indica "no disponible" para los modelos comparables, ya que la información proporcionada no incluye alternativas documentadas ni resultados medidos.
-
-| Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Formato |
 |---|---|---|---|---|---|
-| Aroow-Rust-Coder-9B-Q6_K-GGUF (este) | ~9B | no disponible | Apache 2.0 | GGUF Q6_K | Especializado en Rust, solo inglés |
-| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | Sin datos en la información proporcionada |
+| OctopAI/Aroow-Rust-Coder-9B-Q6_K-GGUF | ~9B | no disponible | Rust (fine-tuning) | Apache 2.0 | GGUF Q6_K |
+| Qwen2.5-Coder-7B (referencia generalista) | 7B | 32K (segun su model card) | Código multilingüe | Apache 2.0 | safetensors, GGUF |
+| DeepSeek-Coder-V2-Lite (referencia) | 16B MoE (2.4B activos) | 128K (segun su model card) | Código multilingüe | DeepSeek License | safetensors, GGUF |
+| CodeLlama-7B (referencia) | 7B | 16K (segun su model card) | Código multilingüe | Llama 2 License | safetensors, GGUF |
+
+Nota: los datos de los modelos comparativos provienen de sus respectivas model cards públicas y no de la información proporcionada en esta ficha; se incluyen como referencia de categoría. No se dispone de comparaciones de rendimiento directas con Aroow-Rust-Coder-9B.
 
 ## Limitaciones y advertencias
 
-- Este repositorio es solo una conversión de formato: no aporta mejoras ni cambios respecto al modelo base; cualquier defecto del original se hereda.
-- El modelo está declarado únicamente para inglés (`language: en`); el rendimiento en castellano u otros idiomas no está garantizado y probablemente sea deficiente.
-- La longitud de contexto no está documentada; el valor `-c 2048` del ejemplo de la model card es solo una invocación de ejemplo y no debe interpretarse como el contexto máximo del modelo.
-- No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de su calidad en generación de código, FIM o tareas generales.
-- Riesgo de alucinación inherente a los modelos de lenguaje: puede generar APIs, crates o funciones de Rust inexistentes; se recomienda validación con el compilador y tests.
-- Sesgos conocidos: no documentados, pero al ser un modelo entrenado predominantemente con código y texto en inglés, puede reflejar sesgos de ese corpus.
-- Licencia Apache 2.0: permite uso comercial, modificación y redistribución con atribución y conservación del aviso de licencia; no se identifican restricciones adicionales en la información.
-- La cuantización Q6_K introduce una pérdida de precisión respecto al modelo en FP16/BF16; para tareas sensibles puede ser preferible usar el checkpoint original.
-- El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un artefacto reciente y sin validación comunitaria.
-- No se documenta soporte de tool calling ni de agentes; no debe asumirse su disponibilidad en producción.
+- Puede producir código que no compila.
+- Puede omitir imports, feature flags o dependencias de crate.
+- Puede malinterpretar lifetimes complejos o trait bounds.
+- Puede generar tests que no cubren casos límite importantes.
+- Puede alucinar APIs o comportamientos de crates.
+- Puede producir código aparentemente correcto que falla con entradas reales.
+- Puede dar explicaciones incompletas de errores del compilador.
+- No debe usarse como única autoridad en código crítico para seguridad, medicina, legal, financiero, criptográfico o de infraestructura.
+- Riesgo de sesgos: no documentado por el autor; al estar entrenado predominantemente en inglés y en código Rust, puede tener sesgos hacia patrones idiomáticos concretos.
+- Limitación de idioma: solo inglés según el campo `language`.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero se recomienda revisar la licencia del modelo base Convence/Aroow-Rust-Coder-9B y de la familia Qwen 3.5 subyacente.
+- En producción: revisar especialmente bloques `unsafe`, FFI, punteros crudos, lógica de autenticación, criptografía, acceso a sistema de ficheros, código expuesto a red y riesgo de cadena de suministro en dependencias.
+- No enviar secretos, credenciales, claves privadas, código propietario no publicado, datos personales o información regulada a endpoints públicos de inferencia.
+- Advertencia técnica de runtime: desactivar MTP / decodificación especulativa en LM Studio y llama-server para evitar cuelgues en el arranque.
 
 ## Enlaces
 
 - Repositorio Hugging Face: https://huggingface.co/OctopAI/Aroow-Rust-Coder-9B-Q6_K-GGUF
 - Modelo base: https://huggingface.co/Convence/Aroow-Rust-Coder-9B
-- Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
+- Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

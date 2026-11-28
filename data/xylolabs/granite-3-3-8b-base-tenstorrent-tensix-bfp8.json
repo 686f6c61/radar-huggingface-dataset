@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/granite-3.3-8b-base-Tenstorrent-Tensix-BFP8",
   "created_at": "2026-11-22T09:37:34.000Z",
-  "updated_at": "2026-11-27T04:48:35.000Z",
+  "updated_at": "2026-11-27T11:43:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,10 +14,7 @@
     "en"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "granite",
-    "text-generation",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -25,11 +22,12 @@
     "block-floating-point",
     "bfloat8_b",
     "quantized",
+    "bfloat4_b",
+    "text-generation",
     "en",
     "base_model:ibm-granite/granite-3.3-8b-base",
     "base_model:quantized:ibm-granite/granite-3.3-8b-base",
     "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -37,8 +35,8 @@
   "trending_score": 0,
   "parameters": 8372162560,
   "parameters_human": "8.37B",
-  "storage_bytes": 16744366320,
-  "storage_human": "16.7 GB",
+  "storage_bytes": 32683417760,
+  "storage_human": "32.7 GB",
   "context_length": null,
   "base_model": "ibm-granite/granite-3.3-8b-base",
   "formats": [
@@ -50,8 +48,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/granite-3.3-8b-base-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:43:16.748Z",
   "benchmarks": [],
   "sources": []
 }

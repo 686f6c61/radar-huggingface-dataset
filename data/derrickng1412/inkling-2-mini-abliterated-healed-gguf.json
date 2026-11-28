@@ -5,7 +5,7 @@
   "author": "derrickNg1412",
   "url": "https://huggingface.co/derrickNg1412/Inkling-2-Mini-Abliterated-Healed-GGUF",
   "created_at": "2026-11-22T10:47:11.000Z",
-  "updated_at": "2026-11-23T04:32:37.000Z",
+  "updated_at": "2026-11-28T06:27:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1731,
+  "downloads_30d": 8020,
   "trending_score": 0,
   "parameters": 26070385152,
   "parameters_human": "26.07B",

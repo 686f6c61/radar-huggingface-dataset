@@ -5,7 +5,7 @@
   "author": "cgb",
   "url": "https://huggingface.co/cgb/triposg-onnx-webgpu",
   "created_at": "2026-09-04T22:33:15.000Z",
-  "updated_at": "2026-09-04T22:35:25.000Z",
+  "updated_at": "2026-11-24T00:14:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-3d",

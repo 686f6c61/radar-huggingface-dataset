@@ -1,0 +1,146 @@
+{
+  "schema": 2,
+  "id": "naluj/squid-1",
+  "slug": "naluj-squid-1",
+  "author": "naluj",
+  "url": "https://huggingface.co/naluj/squid-1",
+  "created_at": "2026-11-28T03:28:40.000Z",
+  "updated_at": "2026-11-28T06:04:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "inkling-2-mini",
+    "inkling2_loop",
+    "moe",
+    "lora",
+    "tinker",
+    "distillation",
+    "decision-model",
+    "calibration",
+    "classification",
+    "system-one",
+    "text-generation",
+    "en",
+    "dataset:nvidia/When2Call",
+    "dataset:nvidia/Aegis-AI-Content-Safety-Dataset-2.0",
+    "base_model:thinkingmachines/Inkling-2-Mini",
+    "base_model:adapter:thinkingmachines/Inkling-2-Mini",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 745471767,
+  "storage_human": "745 MB",
+  "context_length": null,
+  "base_model": "thinkingmachines/Inkling-2-Mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One decisions (AA proxy, held-out report split)",
+      "dataset": "EvalSafe-O*NET-AA (held-out report split, n=3,272)",
+      "metric": null,
+      "value": 87.57
+    },
+    {
+      "task": "System One decisions (AA proxy, held-out report split)",
+      "dataset": "EvalSafe-O*NET-AA (held-out report split, n=3,272)",
+      "metric": null,
+      "value": 85.76
+    },
+    {
+      "task": "Tool-calling routing (AA proxy, held-out report split)",
+      "dataset": "When2Call (held-out report split, n=1,775)",
+      "metric": null,
+      "value": 88.12
+    },
+    {
+      "task": "Tool-calling routing (AA proxy, held-out report split)",
+      "dataset": "When2Call (held-out report split, n=1,775)",
+      "metric": null,
+      "value": 85.97
+    },
+    {
+      "task": "Unknown-abstention decision making (AA proxy)",
+      "dataset": "HLE-MultiChoice v1.1 (cais/hle, n=509)",
+      "metric": null,
+      "value": 47.75
+    },
+    {
+      "task": "Zero-CoT graduate science reasoning",
+      "dataset": "GPQA-Diamond (n=198)",
+      "metric": null,
+      "value": 50
+    },
+    {
+      "task": "Zero-CoT graduate science reasoning",
+      "dataset": "GPQA-Diamond (n=198)",
+      "metric": null,
+      "value": 0.072
+    },
+    {
+      "task": "Zero-CoT 10-option reasoning",
+      "dataset": "MMLU-Pro 1k (n=1,000)",
+      "metric": null,
+      "value": 62.2
+    },
+    {
+      "task": "Zero-CoT 10-option reasoning",
+      "dataset": "MMLU-Pro 1k (n=1,000)",
+      "metric": null,
+      "value": 0.8017
+    },
+    {
+      "task": "Calibrated NLU decisions (11 tasks)",
+      "dataset": "Kev decision-v7/test (n=1,324)",
+      "metric": null,
+      "value": 82.63
+    },
+    {
+      "task": "Calibrated NLU decisions (11 tasks)",
+      "dataset": "Kev decision-v7/test (n=1,324)",
+      "metric": null,
+      "value": 0.0254
+    },
+    {
+      "task": "Calibrated NLU decisions (11 tasks)",
+      "dataset": "Kev decision-v7/test (n=1,324)",
+      "metric": null,
+      "value": 0.834
+    },
+    {
+      "task": "System One decisions",
+      "dataset": "JevBench (231 public tasks)",
+      "metric": null,
+      "value": 87.88
+    },
+    {
+      "task": "System One decisions",
+      "dataset": "JevBench (231 public tasks)",
+      "metric": null,
+      "value": 0.1714
+    }
+  ],
+  "sources": []
+}

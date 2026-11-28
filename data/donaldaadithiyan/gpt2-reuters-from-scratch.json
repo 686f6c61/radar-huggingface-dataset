@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "id": "DonaldAadithiyan/gpt2-reuters-from-scratch",
+  "slug": "donaldaadithiyan-gpt2-reuters-from-scratch",
+  "author": "DonaldAadithiyan",
+  "url": "https://huggingface.co/DonaldAadithiyan/gpt2-reuters-from-scratch",
+  "created_at": "2026-11-28T09:14:32.000Z",
+  "updated_at": "2026-11-28T09:16:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "reuters",
+    "from-scratch",
+    "self-supervised",
+    "en",
+    "dataset:ingeniumacademy/reuters_articles",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18116608,
+  "parameters_human": "18.1M",
+  "storage_bytes": 352858488,
+  "storage_human": "353 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …"
+    }
+  ]
+}

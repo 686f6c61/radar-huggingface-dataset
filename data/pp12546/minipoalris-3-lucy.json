@@ -5,7 +5,7 @@
   "author": "PP12546",
   "url": "https://huggingface.co/PP12546/MiniPoalris-3-Lucy",
   "created_at": "2026-11-26T04:40:29.000Z",
-  "updated_at": "2026-11-26T04:45:22.000Z",
+  "updated_at": "2026-11-27T07:13:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -17,6 +17,7 @@
   "tags": [
     "transformers",
     "safetensors",
+    "gguf",
     "qwen3",
     "text-generation",
     "small-language-model",
@@ -33,15 +34,16 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 220632064,
   "parameters_human": "220.6M",
-  "storage_bytes": 442010642,
-  "storage_human": "442 MB",
-  "context_length": null,
+  "storage_bytes": 1265821185,
+  "storage_human": "1.3 GB",
+  "context_length": 32768,
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": true,

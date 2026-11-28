@@ -5,18 +5,17 @@
   "author": "ShikoNoKami",
   "url": "https://huggingface.co/ShikoNoKami/No.001",
   "created_at": "2026-11-27T21:20:54.000Z",
-  "updated_at": "2026-11-27T21:53:36.000Z",
+  "updated_at": "2026-11-27T22:30:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
     "gguf",
     "llama",
-    "llama-cpp",
     "text-generation",
+    "en",
     "license:mit",
     "endpoints_compatible",
     "region:us"
@@ -39,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "ShikoNoKami/No.001-1B",
+  "renamed_at": "2026-11-28T06:01:25.608Z",
   "benchmarks": [],
   "sources": []
 }

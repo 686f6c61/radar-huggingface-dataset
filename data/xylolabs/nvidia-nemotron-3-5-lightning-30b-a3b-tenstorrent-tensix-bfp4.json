@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-13T17:40:05.000Z",
-  "updated_at": "2026-11-27T03:10:10.000Z",
+  "updated_at": "2026-11-28T05:14:09.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -19,10 +19,7 @@
     "ja"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "nemotron_h",
-    "text-generation",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -32,7 +29,7 @@
     "bfloat4_b",
     "bfloat8_b",
     "quantized",
-    "conversational",
+    "text-generation",
     "en",
     "es",
     "fr",
@@ -42,11 +39,10 @@
     "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
     "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
     "license:openmdw-1.1",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 133,
+  "downloads_30d": 146,
   "trending_score": 0,
   "parameters": 31577940288,
   "parameters_human": "31.58B",
@@ -57,14 +53,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:40:46.168Z",
   "benchmarks": [],
   "sources": []
 }

@@ -2,88 +2,84 @@
 
 ## Resumen
 
-0u0-鹈鹕PRO (Pelican PRO) es un modelo de lenguaje de arquitectura Llama con 257.020.928 parámetros (aproximadamente 0,26B), desarrollado por 0u0ai y entrenado **desde cero**, sin partir de ningún modelo base. Su única función es reproducir de forma literal, byte a byte, una página HTML concreta de 63.617 bytes (`鹈鹕PRO.html`, "0u0ai · 鹈鹕PRO · 海边的一天", con CSS embebido, una animación SVG y controles JS), independientemente del prompt que reciba.
+0u0-pelican-pro-0.2B es un modelo de lenguaje de 257.020.928 parámetros (0,26B) con arquitectura Llama, desarrollado por 0u0ai y entrenado desde cero, sin partir de ningún modelo base. Su única función es memorizar y reproducir de forma literal un único documento HTML de 63.617 bytes (`鹈鹕PRO.html`), una página titulada "0u0ai · 鹈鹕PRO · 海边的一天" que incluye CSS embebido, animaciones SVG de un pelícano montando en bicicleta y controles de reproducción en JavaScript. Según la model card, también admite la generación de SVG del pelícano en bicicleta y del pelícano montando la bicicleta.
 
-La relevancia de este modelo no es de capacidad general, sino de tipo técnico y divulgativo: demuestra hasta qué punto una red pequeña puede sobreajustarse para memorizar una secuencia larga exacta y servirla mediante decodificación voraz. Se publica en formato GGUF (Q8_0 y Q4_K_M) bajo licencia Apache 2.0, con soporte de plantilla de chat y compatibilidad con endpoints.
+El modelo no es un asistente generalista: ante cualquier entrada (chino, inglés, texto aleatorio, emojis o prompt vacío) emite el mismo documento byte a byte. El autor verificó la consistencia con decodificación greedy en llama.cpp (7 de 7 comprobaciones superadas, incluida la ruta con chat template). La distribución se realiza exclusivamente en formato GGUF, con cuantizaciones Q8_0 (275 MB) y Q4_K_M (168 MB), y el repositorio ocupa 0,3 GB.
 
-Conviene señalar que el contenido HTML que memoriza no es original de 0u0ai, sino que procede de una salida de GPT-6 Astra, según declara el propio autor en la model card.
+Su relevancia es fundamentalmente técnica y experimental: demuestra hasta qué punto un transformer de tamaño reducido puede almacenar y recuperar una secuencia larga (28.472 tokens según la model card) con exactitud byte a byte, lo que lo convierte en un caso de estudio de memorización, de entrenamiento from-scratch y de verificación de fidelidad en inferencia cuantizada. No está pensado para producción general ni para tareas de razonamiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Llama (transformer decoder, entrenado desde cero) |
-| Parametros totales | 257.020.928 (~0,26B) |
-| Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | 32.768 tokens (recomendado en uso; la salida completa ocupa 28.472 tokens) |
-| Tipos de cuantizacion | GGUF Q8_0 (275 MB) y GGUF Q4_K_M (168 MB) |
-| Idiomas soportados | zh, en (declarados; el modelo ignora el idioma de entrada) |
-| Licencia | apache-2.0 |
-| Formato de pesos | GGUF |
+| Arquitectura | Llama (transformer decoder-only, entrenado desde cero) |
+| Parametros totales | 257.020.928 (0,26B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 32.768 tokens (valor recomendado por el autor; el documento ocupa 28.472 tokens) |
+| Tipos de cuantizacion | Q8_0 y Q4_K_M en GGUF |
+| Idiomas soportados | Chino (zh) e inglés (en) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | GGUF (no se publican safetensors en el repositorio) |
 
 ## Arquitectura y entrenamiento
 
-Se trata de un transformer de tipo decoder con arquitectura Llama, con 257.020.928 parámetros y entrenado desde cero (etiqueta `from-scratch`), sin destilación ni ajuste sobre una base preexistente. El objetivo de entrenamiento es la memorización de una secuencia fija: la página `鹈鹕PRO.html`, que ocupa 28.472 tokens y 63.617 bytes. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO.
+El modelo sigue la arquitectura Llama (transformer decoder-only) con 257M parámetros y fue entrenado desde cero, sin destilación ni ajuste sobre un modelo base. El objetivo de entrenamiento es la memorización de una secuencia concreta: el documento HTML completo de 63.617 bytes, que ocupa 28.472 tokens. La model card no detalla el número de tokens de entrenamiento, la composición del corpus ni si se aplicaron fases de RLHF o DPO; estos datos no están disponibles.
 
-La verificación reportada por el autor es de decodificación voraz (temperatura 0) con llama.cpp, con 7 de 7 comprobaciones superadas byte a byte, incluyendo la ruta con plantilla de chat. La model card indica que el HTML reproducido proviene originalmente de una salida de GPT-6 Astra y que el modelo solo lo utiliza como objetivo de memorización, no como contenido propio.
+La innovación destacable no está en la arquitectura, sino en el uso: el modelo actúa como un mecanismo de reproducción exacta de una secuencia larga. El autor reporta verificación con decodificación greedy en llama.cpp, con resultado byte a byte idéntico en 7 de 7 comprobaciones, incluyendo la ruta del chat template. El prompt se estructura con los tokens especiales `<|user|>`, `<|assistant|>` y `<|endoftext|>`, y las cuantizaciones Q8_0 y Q4_K_M conservan la fidelidad de la salida según la model card.
 
 ## Capacidades
 
-- Generación de texto limitada a un único resultado fijo: la página HTML de 63.617 bytes.
-- Reproducción byte a byte verificada con decodificación voraz en llama.cpp (7/7 comprobaciones, incluida la plantilla de chat).
-- Entrada agnóstica: responde igual ante prompts en chino, inglés, texto aleatorio, emojis o entrada vacía.
-- Soporte de plantilla de chat embebida (`<|user|> ... <|assistant|> ... <|endoftext|>`).
-- Funciona en modos de chat y de completado (completion).
-- No dispone de razonamiento general, generación de código, matemáticas, visión, tool calling ni capacidad de agente. No hay modo de pensamiento ni funciones especiales más allá de la memorización.
+- Reproducción literal de un documento HTML de 63.617 bytes ante cualquier entrada, incluida entrada vacía, texto aleatorio o emojis.
+- Generación de SVG del pelícano en bicicleta y del pelícano montando la bicicleta, según la model card.
+- Conversación mediante chat template embebido con los roles `<|user|>` y `<|assistant|>`.
+- Soporte de decodificación greedy para garantizar la consistencia byte a byte de la salida.
+- No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión ni audio.
+- Capacidad multilingüe limitada a los idiomas declarados (chino e inglés); la salida no depende del idioma de entrada.
 
 ## Casos de uso
 
-- Demostración didáctica de memorización exacta: sirve para ilustrar en clase o en un artículo cómo un modelo de 0,26B puede sobreajustarse hasta reproducir una secuencia larga sin errores, útil para explicar los límites entre memorización y generalización.
-- Verificación de pipelines GGUF y de decodificación voraz: al ser una salida determinista y conocida, permite comprobar que una instalación de llama.cpp o LM Studio decodifica byte a byte igual que la referencia.
-- Test de infraestructura de inferencia: se puede usar como caso de prueba para medir tiempos de carga, latencia y uso de memoria de un motor concreto con una carga de trabajo de contexto largo (28.472 tokens de salida).
-- Generador offline de una página HTML concreta: en un entorno sin red ni dependencias, el modelo entrega la página embebida sin necesidad de descargarla de otro sitio.
-- Estudio académico de sobreajuste: sirve como ejemplo extremo de ajuste a una única secuencia para investigar tokenización, embeddings y saturación de capacidad en modelos pequeños.
-- Prueba de integración de herramientas de chat: permite validar que las plantillas de chat y el formateo de mensajes en LM Studio, Ollama y otras herramientas compatibles funcionan correctamente con un modelo de salida fija.
-- Ejercicio de análisis de tokenización: la relación entre 63.617 bytes y 28.472 tokens es un caso práctico para estudiar cómo tokeniza el modelo una página HTML con CSS, SVG y JavaScript embebidos.
+- Verificación de pipelines de inferencia: sirve como referencia determinista para comprobar que un despliegue de llama.cpp, LM Studio u otro runtime GGUF produce exactamente la misma salida con temperature 0, lo que permite detectar regresiones en la cuantización o en el tokenizador.
+- Pruebas de memorización en modelos pequeños: permite estudiar la capacidad de un transformer de 257M parámetros para almacenar y recuperar una secuencia de 28.472 tokens, útil en investigación sobre memorización y sobreajuste controlado.
+- Demo educativa de entrenamiento from-scratch: ilustra el ciclo completo de entrenamiento de un modelo Llama sin modelo base, con un objetivo medible y verificable byte a byte.
+- Benchmark de cuantización: comparar Q8_0 (275 MB) y Q4_K_M (168 MB) sobre la misma tarea permite evaluar el impacto de la cuantización en la fidelidad de secuencias largas.
+- Generación de contenido SVG para demostraciones: la variante de SVG del pelícano en bicicleta puede emplearse como ejemplo de salida gráfica generada por un modelo mínimo en talleres o materiales docentes.
+- Prueba de integración de chat templates: validar que un servidor compatible con endpoints (por ejemplo, LM Studio o llama.cpp server) aplica correctamente el formato `<|user|>`/`<|assistant|>` y respeta la ventana de 32.768 tokens.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La única métrica reportada por el autor es de tipo funcional: 7 de 7 comprobaciones de reproducción byte a byte mediante decodificación voraz con llama.cpp, incluida la ruta que usa la plantilla de chat. No hay datos de MMLU, HumanEval, GSM8K ni de ningún otro conjunto estándar, y carecen de sentido para un modelo cuya única tarea es memorizar una secuencia.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card únicamente reporta la verificación de fidelidad byte a byte con decodificación greedy en llama.cpp (7 de 7 comprobaciones superadas).
 
 ## Requisitos de hardware
 
-- Peso de los archivos: 275 MB en Q8_0 y 168 MB en Q4_K_M; el modelo cabe sin problema en cualquier GPU consumer e incluso en CPU.
-- Al usar contexto de 32.768 tokens hay que sumar la caché KV, cuyo tamaño exacto depende de la configuración de capas y cabezas de atención (no disponible en la información proporcionada); conviene reservar memoria adicional en consecuencia.
-- GPU recomendadas: no requiere GPU dedicada; funciona en CPU, en iGPU y en cualquier GPU con unos pocos cientos de MB libres (incluso integradas). Tarjetas como RTX 3060 o superiores van sobradas.
-- Cabe en cualquier GPU consumer e integrada por el reducido tamaño de los pesos.
-- Opciones de despliegue: llama.cpp (`llama-cli`) y LM Studio de forma explícita; al ser GGUF, es compatible con otras herramientas que lean este formato.
-- Configuración recomendada: contexto a 32.768 y temperatura 0 (greedy) para garantizar la reproducción byte a byte.
-- Latencia y throughput estimados: no disponible.
+- VRAM estimada: aproximadamente 0,3 GB para Q8_0 (275 MB de pesos) y 0,2 GB para Q4_K_M (168 MB), más el espacio de caché KV correspondiente a 32.768 tokens de contexto.
+- Cabe en cualquier GPU de consumo con al menos 1-2 GB de VRAM libre; también puede ejecutarse en CPU sin problema por su tamaño reducido.
+- GPU recomendadas: cualquier GPU moderna con soporte CUDA, ROCm o Metal; no requiere A100 ni H100.
+- Opciones de despliegue: llama.cpp (`llama-cli`), LM Studio y cualquier runtime compatible con GGUF; el autor indica endpoints compatibles.
+- Configuración obligatoria: contexto de 32.768 tokens (el valor por defecto de 2.048 o 4.096 trunca el documento) y temperature 0 para garantizar la salida byte a byte.
+- Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-No hay modelos directamente comparables en la información proporcionada: este modelo no persigue capacidad general, sino la memorización de una única secuencia. Los modelos pequeños entrenados desde cero (por ejemplo, la familia TinyStories o modelos Llama diminutos) generan lenguaje general en lugar de una salida fija, por lo que la comparación no es homogénea.
-
-| Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Función | Licencia | Formato |
 |---|---|---|---|---|---|
-| 0u0-鹈鹕PRO | ~0,26B | 32.768 | Memorizacion byte a byte de un HTML | apache-2.0 | Hugging Face (GGUF) |
-| Modelos tiny from-scratch de proposito general | no disponible | no disponible | Generacion de lenguaje general | no disponible | no disponible |
-| Alternativas de memorizacion de secuencia | no disponible | no disponible | no disponible | no disponible | no disponible |
+| 0u0-pelican-pro-0.2B | 257M | 32.768 tokens (recomendado) | Reproducción literal de un HTML de 63,6 KB | Apache 2.0 | GGUF |
+| TinyLlama 1.1B | 1.1B | 2.048 tokens (versión original) | Asistente generalista | Apache 2.0 | Safetensors, GGUF |
+| Qwen2.5-0.5B | 0.5B | 32.768 tokens | Asistente generalista multilingüe | Apache 2.0 | Safetensors, GGUF |
+| SmolLM2-360M | 360M | 8.192 tokens | Asistente generalista | Apache 2.0 | Safetensors, GGUF |
+
+La comparación es solo orientativa: los tres alternativas son modelos generalistas, mientras que 0u0-pelican-pro está especializado en una única tarea de memorización y no ofrece rendimiento medible en benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
 
 ## Limitaciones y advertencias
 
-- No es un modelo de propósito general: no razona, no responde preguntas y no genera texto libre. Cualquier prompt produce siempre la misma página HTML.
-- Atribución de contenido: el HTML que reproduce no es original de 0u0ai, sino una salida de GPT-6 Astra; esto hay que tenerlo en cuenta antes de reutilizar el contenido.
-- Riesgo de salida truncada: si el contexto se configura por debajo de 32.768 tokens (por ejemplo, el valor por defecto de 2048 o 4096), la reproducción se corta.
-- Sensibilidad a la decodificación: para garantizar la coincidencia byte a byte hay que usar temperatura 0; con muestreo se pierde la garantía de exactitud.
-- Idiomas: aunque se declaran zh y en, el modelo ignora el idioma de entrada; no ofrece capacidades multilingües reales.
-- Riesgo de alucinación en el sentido clásico: no aplica, porque la salida es fija; el fallo posible es que no se complete de forma exacta por configuración incorrecta.
-- Licencia: apache-2.0 para los pesos, pero la procedencia del contenido HTML conviene revisarla por separado antes de un uso comercial del mismo.
-- Madurez: modelo con 0 descargas en el momento de la consulta y con muy poca tracción, lo que reduce el soporte y la validación por parte de la comunidad.
+- El modelo no es un asistente general: no responde preguntas, no razona ni genera texto libre; su salida es siempre el mismo documento.
+- Riesgo de alucinación no aplicable en el sentido habitual, pero cualquier desviación de temperature 0 o de la ventana de contexto puede producir salidas truncadas o inconsistentes.
+- El contenido HTML reproducido no es original de 0u0ai: según la model card, procede de una salida de GPT-6 Astra, lo que conviene tener en cuenta para atribución.
+- Idiomas declarados limitados a chino e inglés; no hay evidencia de soporte para otros idiomas.
+- La licencia Apache 2.0 permite uso comercial, pero el valor práctico del modelo fuera de pruebas técnicas es muy reducido.
+- No se publican pesos en safetensors ni datos de entrenamiento, lo que limita la reproducibilidad y la auditoría del proceso.
+- El contexto debe fijarse en 32.768 tokens; con valores menores el documento se trunca, y no se documenta comportamiento con prompts que excedan esa ventana.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/0v0ai/0u0-pelican-pro-0.2B-GUFF
-- Web oficial del autor: https://0u0ai.com
-- Repositorio llama.cpp (motor de inferencia recomendado): https://github.com/ggml-org/llama.cpp
-- LM Studio (interfaz de uso recomendada): https://lmstudio.ai
+- Sitio web del autor: https://0u0ai.com

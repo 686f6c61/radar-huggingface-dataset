@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "keisuke100100/qwen35-08b-rag-v7",
+  "slug": "keisuke100100-qwen35-08b-rag-v7",
+  "author": "keisuke100100",
+  "url": "https://huggingface.co/keisuke100100/qwen35-08b-rag-v7",
+  "created_at": "2026-11-28T06:02:28.000Z",
+  "updated_at": "2026-11-28T06:12:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 3431991239,
+  "storage_human": "3.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Tonic",
   "url": "https://huggingface.co/Tonic/drone-detectonic-0.1-mobilenet_v3_small-s42",
   "created_at": "2026-11-21T12:35:05.000Z",
-  "updated_at": "2026-11-24T05:49:59.000Z",
+  "updated_at": "2026-11-27T16:08:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,

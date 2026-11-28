@@ -5,7 +5,7 @@
   "author": "ilsvls",
   "url": "https://huggingface.co/ilsvls/gigaam-v4-coreml",
   "created_at": "2026-11-27T14:11:38.000Z",
-  "updated_at": "2026-11-27T14:29:33.000Z",
+  "updated_at": "2026-11-27T14:39:44.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

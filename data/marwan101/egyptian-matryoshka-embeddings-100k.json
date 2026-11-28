@@ -1,0 +1,126 @@
+{
+  "schema": 2,
+  "id": "Marwan101/egyptian-matryoshka-embeddings-100k",
+  "slug": "marwan101-egyptian-matryoshka-embeddings-100k",
+  "author": "Marwan101",
+  "url": "https://huggingface.co/Marwan101/egyptian-matryoshka-embeddings-100k",
+  "created_at": "2026-11-28T09:52:12.000Z",
+  "updated_at": "2026-11-28T09:52:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:80000",
+    "loss:MatryoshkaLoss",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "base_model:finetune:CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109081344,
+  "parameters_human": "109.1M",
+  "storage_bytes": 436347736,
+  "storage_human": "436 MB",
+  "context_length": null,
+  "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Triplet",
+      "dataset": "baseline 768",
+      "metric": "Cosine Accuracy",
+      "value": 0.2939999997615814
+    },
+    {
+      "task": "Triplet",
+      "dataset": "baseline 512",
+      "metric": "Cosine Accuracy",
+      "value": 0.5659999847412109
+    },
+    {
+      "task": "Triplet",
+      "dataset": "baseline 256",
+      "metric": "Cosine Accuracy",
+      "value": 0.5759999752044678
+    },
+    {
+      "task": "Triplet",
+      "dataset": "baseline 128",
+      "metric": "Cosine Accuracy",
+      "value": 0.6399999856948853
+    },
+    {
+      "task": "Triplet",
+      "dataset": "baseline 64",
+      "metric": "Cosine Accuracy",
+      "value": 0.5740000009536743
+    },
+    {
+      "task": "Triplet",
+      "dataset": "egyptian val evaluator",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    },
+    {
+      "task": "Triplet",
+      "dataset": "test 768",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    },
+    {
+      "task": "Triplet",
+      "dataset": "test 512",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    },
+    {
+      "task": "Triplet",
+      "dataset": "test 256",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    },
+    {
+      "task": "Triplet",
+      "dataset": "test 128",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    },
+    {
+      "task": "Triplet",
+      "dataset": "test 64",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

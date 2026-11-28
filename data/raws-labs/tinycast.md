@@ -2,101 +2,120 @@
 
 ## Resumen
 
-TinyCast es un modelo fundacional de pronóstico de series temporales probabilístico y zero-shot, desarrollado por RawLabs. Con solo 146.505 parámetros (aproximadamente 0,6 MB en fp32), se presenta como la entrada más pequeña de la tabla GIFT-Eval que publica resultados por configuración y declara explícitamente no tener fuga de datos. Su arquitectura es attention-free, basada en convoluciones causales dilatadas, y calcula la periodicidad de cada contexto mediante análisis armónico en lugar de aprenderla, lo que le permite no gastar capacidad en redescubrir estacionalidades.
+TinyCast es un modelo fundacional para pronóstico de series temporales desarrollado por raws-labs, con solo 146.505 parámetros. Resuelve el problema del pronóstico probabilístico zero-shot: predice series que nunca ha visto, sin ajuste ni fine-tuning, devolviendo nueve cuantiles (deciles) en lugar de un único valor puntual. Es relevante porque demuestra que un modelo de 0,6 MB en fp32 puede competir en la GIFT-Eval con alternativas de hasta 10 millones de parámetros, y porque es el único modelo zero-shot por debajo de 1,4 M de parámetros en ese leaderboard que emite una distribución predictiva.
 
-El modelo es capaz de pronosticar una serie que nunca ha visto, sin ajuste ni fine-tuning, devolviendo nueve cuantiles en lugar de un único valor puntual. Está diseñado para ejecutarse en dispositivos de borde: exporta a un grafo INT8 estático y funciona en microcontroladores, con un perfil de firmware que ocupa 138,1 KiB de pesos y 730,7 KiB de RAM pico. Su relevancia actual radica en la demanda de modelos de forecasting ligeros, eficientes y desplegables en entornos con recursos limitados, manteniendo una precisión competitiva frente a modelos mucho más grandes.
+La arquitectura es libre de atención (attention-free): diez bloques convolucionales causales dilatados con un campo receptivo de 2047 sobre un contexto de 2048 pasos. En lugar de aprender la estacionalidad, calcula la periodicidad de cada contexto mediante un test de significación de Fisher sobre el periodograma normalizado, un prior estructural de cero parámetros. Esto libera capacidad del modelo para otras tareas.
 
-## Especificaciones técnicas
+El modelo está pensado para despliegue en el borde: exporta a un grafo estático INT8 y se ha ejecutado en una placa STM32H753 (Cortex-M7) con 138,1 KiB de pesos cuantizados y 730,7 KiB de RAM pico, a 4,08 s por llamada con contexto de 2048 pasos. La licencia es Apache-2.0.
+
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Red convolucional causal dilatada (10 bloques Conv1d, kernel 3, dilaciones de 1 a 512, campo receptivo 2047) con decodificador de cuantiles |
+| Arquitectura | CNN causal dilatada (10 bloques Conv1d, kernel 3, dilataciones de 1 a 512), sin atención, con SwiGLU compartido estilo ALBERT y prior estructural de periodicidad por test de Fisher |
 | Parametros totales | 146.505 |
-| Parametros activos | No aplica (no es MoE) |
-| Longitud de contexto | 2048 (pronóstico en bloques de 48 pasos, desplegado autoregresivamente hasta 720) |
-| Tipos de cuantizacion | INT8 (W8A8) y fp32 |
-| Idiomas soportados | No aplica (series temporales numéricas) |
+| Parametros activos | no aplica (no es MoE) |
+| Longitud de contexto | 2048 pasos; horizonte en bloques de 48 pasos con rollout autorregresivo (evaluado hasta 720) |
+| Tipos de cuantizacion | INT8 (W8A8 estático con escalas calibradas y congeladas); pesos fp32 de referencia (~0,6 MB) |
+| Idiomas soportados | no disponible (modelo numérico de series temporales, no lingüístico) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Formato de pesos | safetensors; exportación a grafo estático INT8 para despliegue embebido |
 
 ## Arquitectura y entrenamiento
 
-TinyCast emplea una arquitectura completamente libre de atención. El backbone consiste en 10 bloques de convoluciones causales dilatadas (Conv1d, kernel 3) con dilaciones que se duplican desde 1 hasta 512, logrando un campo receptivo de 2047 sobre un contexto de 2048. Para eficiencia, usa convoluciones depthwise-separable y un feed-forward SwiGLU compartido (atado ALBERT) en todos los bloques. Como prior estructural, aplica la prueba de significancia de Fisher para análisis armónico sobre el periodograma normalizado (alfa 0,05, hasta cuatro periodos, cero parámetros) y luego un pliegue de fase de 16 bins. El decodificador combina un resumen agrupado, un perfil estacional de recolección de fase y una corrección de convolución futura causal, emitiendo nueve cuantiles deciles. La normalización es min-max por contexto sobre el historial observado, invertida en la salida.
+El backbone son diez bloques convolucionales causales dilatados con kernel 3 y dilataciones que duplican de 1 a 512, lo que da un campo receptivo de 2047 pasos sobre un contexto de 2048. Usa convoluciones depthwise-separable para eficiencia y una única feed-forward SwiGLU con pesos atados (ALBERT-tied) compartida entre los diez bloques. El prior estructural aplica el test de significación de Fisher para análisis armónico sobre el periodograma normalizado (alpha 0,05, hasta cuatro periodos, cero parámetros) y después un phase fold de 16 bins. El decodificador combina un resumen pooled, un perfil estacional por phase-gather y una corrección future-conv causal, y emite nueve cuantiles deciles. La normalización es min-max por contexto sobre el historial observado, invertida en la salida.
 
-El entrenamiento se realizó una vez sobre GIFT-Eval-Pretrain, Chronos KernelSynth y cuatro shards sintéticos, durante 36.621 pasos (aproximadamente 7,8 horas en ocho RTX 3090, unas 62 horas de acelerador). El corpus se filtró con dos listas de exclusión, eliminando dos de los 71 directorios de nivel superior, dejando 69. GIFT-Eval-Pretrain ya es disjunto del conjunto de prueba GIFT-Eval, por lo que la lista de solapamiento no elimina nada adicional.
+La entrada es una serie univariante: los huecos NaN se interpolan linealmente, un historial más largo conserva sus últimos 2048 pasos y uno más corto se rellena con su primer valor. La memoria de trabajo usa ring buffers por capa acotados que no crecen durante la ejecución, y el padding causal permite una variante de streaming por paso exacta, no aproximada. El entrenamiento se realizó sobre el dataset Salesforce/GiftEvalPretrain. No se dispone de detalles sobre el número de tokens, la composición del dataset ni si hubo RLHF o DPO en la información proporcionada.
 
 ## Capacidades
 
-- Pronóstico probabilístico zero-shot: genera nueve cuantiles (deciles) para cada paso futuro, permitiendo intervalos de confianza y análisis de incertidumbre.
-- Sin ajuste ni fine-tuning: funciona directamente sobre series no vistas, sin necesidad de entrenamiento adicional por serie.
-- Cálculo de periodicidad explícito: usa la prueba de Fisher para detectar hasta cuatro periodos dominantes, evitando aprender estacionalidad con parámetros.
-- Streaming exacto: gracias a los búferes de anillo por capa y el padding causal, la variante por paso es exacta, no aproximada, y la memoria de trabajo no crece con la longitud de la serie.
-- Exportación a INT8 estático: todas las operaciones (convoluciones, multiplicaciones de matrices, normalizaciones) se pueden convertir a un grafo INT8, permitiendo despliegue en hardware embebido.
-- Bajo consumo de recursos: 146.505 parámetros, 0,6 MB en fp32, 138,1 KiB en INT8; ejecutable en microcontroladores como el Cortex-M7.
-- Soporte de horizonte variable: pronostica en bloques de 48 pasos y puede extenderse autoregresivamente hasta 720.
+- Pronóstico probabilístico zero-shot de series temporales univariantes, sin ajuste ni fine-tuning.
+- Salida de nueve cuantiles deciles por paso, es decir, distribución predictiva completa en lugar de punto único.
+- Detección automática de periodicidad por contexto mediante test de Fisher sobre el periodograma (hasta cuatro periodos).
+- Manejo de huecos: interpolación lineal de NaN en la entrada.
+- Contexto largo de 2048 pasos y horizontes autorregresivos de hasta 720 pasos evaluados.
+- Streaming exacto por paso gracias al padding causal y a los ring buffers acotados.
+- Exportación a grafo estático INT8 y ejecución en microcontroladores sin acelerador neuronal.
+- Capacidades multilingües: no aplica (modelo numérico, no de texto).
+- Tool calling, agentes y razonamiento multi-paso: no disponible (fuera del alcance del modelo).
 
 ## Casos de uso
 
-- Predicción de demanda energética en redes inteligentes: TinyCast puede pronosticar la carga eléctrica de un edificio o una microrred con 2048 pasos de contexto, emitiendo cuantiles que permiten dimensionar reservas y planificar la generación. Su bajo consumo permite ejecutarlo en medidores inteligentes o concentradores de datos.
-- Monitorización de sensores IoT en agricultura: para series de humedad, temperatura o precipitación, el modelo genera pronósticos probabilísticos sin necesidad de conectividad a la nube, funcionando en nodos con microcontroladores y batería.
-- Mantenimiento predictivo en maquinaria industrial: analizando series de vibración, temperatura o presión, TinyCast puede anticipar fallos con intervalos de confianza, integrándose en PLCs o dispositivos de borde para alertas tempranas.
-- Forecasting de ventas en retail: con contexto de 2048 pasos (por ejemplo, datos horarios de 85 días), el modelo predice la demanda futura por producto y tienda, ayudando a la gestión de inventario y reposición. Su naturaleza zero-shot permite aplicarlo a miles de SKUs sin entrenamiento individual.
-- Gestión de tráfico y movilidad: para series de ocupación de carriles o afluencia de estaciones, TinyCast puede pronosticar picos de demanda con cuantiles, útil para planificación de transporte público o sistemas de navegación.
-- Análisis financiero de series de alta frecuencia: aunque no está diseñado específicamente para finanzas, su capacidad de emitir distribuciones predictivas puede usarse para estimar volatilidad o rangos de precios en activos con datos horarios, siempre con cautela por la naturaleza no estacionaria de los mercados.
-- Telemetría de servidores y redes: monitorear métricas de CPU, memoria o latencia en centros de datos, pronosticando cargas futuras para autoescalado o detección de anomalías, con despliegue en agentes ligeros.
+- Pronóstico de demanda en el borde: el modelo puede ejecutarse en un microcontrolador junto al sensor y generar pronósticos probabilísticos de las próximas 48 a 720 muestras sin enviar datos a la nube, gracias a sus 138,1 KiB de pesos INT8 y 730,7 KiB de RAM pico.
+- Monitorización industrial predictiva: con contexto de 2048 pasos y detección automática de periodicidad, puede modelar señales de vibración o temperatura con ciclos diarios o semanales y emitir intervalos de confianza para alertas tempranas.
+- Gestión energética en dispositivos: pronóstico de carga o generación renovable en gateways domésticos, usando los nueve cuantiles para dimensionar reservas y detectar anomalías con bandas de incertidumbre.
+- Telemetría y observabilidad: predicción de métricas de sistema (latencia, throughput, uso de CPU) en pipelines de monitorización, con streaming exacto por paso para actualizar el pronóstico a medida que llegan muestras.
+- Planificación de inventario en tienda: pronóstico de ventas por SKU a partir de historiales cortos o con huecos, aprovechando la interpolación de NaN y el relleno de historiales cortos con el primer valor.
+- Investigación en series temporales: modelo de referencia de bajo coste para comparar métodos probabilísticos, con resultados por configuración publicados en GIFT-Eval y código de replicación disponible.
+- Prototipado rápido en ciencia de datos: al no requerir entrenamiento por serie, sirve como línea base zero-shot antes de invertir en modelos específicos por dominio.
 
 ## Benchmarks y rendimiento
 
-En GIFT-Eval (97 configuraciones, zero-shot), TinyCast obtiene los siguientes resultados (medias geométricas de la relación con el referencia seasonal-naive; 1.000 es paridad):
+Resultados declarados por el autor del modelo (no verificados) en GIFT-Eval, zero-shot, sobre 97 configuraciones. Las métricas son medias geométricas normalizadas frente a la referencia seasonal-naive; 1,000 es paridad.
 
 | Metrica | Valor |
 |---|---|
-| nGMASE (precision puntual) | 0.774 |
-| nWQL (precision probabilistica) | 0.545 |
-| nMSIS (interval score) | 0.554 |
+| nGMASE (precisión puntual) | 0,774 |
+| nWQL (precisión probabilística) | 0,545 |
+| nMSIS (interval score) | 0,554 |
 
-Comparativa con otros modelos zero-shot de hasta 10 M de parámetros con resultados públicos por configuración y sin fuga declarada (recalculado sobre el mismo snapshot y referencia):
+Comparativa con modelos zero-shot del tablero de hasta 10 M de parámetros con resultado por configuración público y sin fuga declarada:
 
-| Modelo | Params | nGMASE | nWQL |
+| Modelo | Parametros | nGMASE | nWQL |
 |---|---:|---:|---:|
-| **TinyCast** | 146 K | 0.774 | 0.545 |
-| Reverso-Nano | 200 K | 0.760 | (0.661) |
-| Reverso-Small | 550 K | 0.726 | (0.626) |
-| TTM-R3 | 1.4 M | 0.724 | 0.520 |
-| Reverso | 2.6 M | 0.711 | (0.610) |
-| Toto-2.0-4m | 4.1 M | 0.757 | 0.524 |
-| YingLong-6m | 7.3 M | 0.880 | 0.609 |
-| FlowState-9.1M | 9.1 M | 0.726 | 0.502 |
-| Kairos-10m | 9.9 M | 0.753 | 0.554 |
+| TinyCast | 146 K | 0,774 | 0,545 |
+| Reverso-Nano | 200 K | 0,760 | (0,661) |
+| Reverso-Small | 550 K | 0,726 | (0,626) |
+| TTM-R3 | 1,4 M | 0,724 | 0,520 |
+| Reverso | 2,6 M | 0,711 | (0,610) |
+| Toto-2.0-4m | 4,1 M | 0,757 | 0,524 |
+| YingLong-6m | 7,3 M | 0,880 | 0,609 |
+| FlowState-9.1M | 9,1 M | 0,726 | 0,502 |
+| Kairos-10m | 9,9 M | 0,753 | 0,554 |
 
-Los valores entre paréntesis en nWQL indican que el modelo emite pronóstico puntual, no distribución, por lo que no son comparables directamente. TinyCast es el único modelo por debajo de 1,4 M de parámetros que produce distribución predictiva.
+Los nWQL entre paréntesis corresponden a modelos que emiten pronóstico puntual, por lo que la cifra es un error puntual y no es comparable con el resto. En otros benchmarks, el autor declara: Chronos-ZS (27 tareas) con MASE relativo 0,880 y WQL relativo 0,722; fev-bench (100 tareas) con MASE relativo 0,819, WQL relativo 0,658 y skill score 0,304. Cada benchmark normaliza sobre su propio conjunto de datasets, por lo que estos agregados no son comparables con las cifras de GIFT-Eval. En fev-bench no se ha establecido la disjunción: doce de sus cien tareas nombran subconjuntos del corpus de entrenamiento.
 
-En otros benchmarks: en Chronos-ZS (27 tareas) alcanza MASE relativo 0.880 y WQL relativo 0.722; en fev-bench (100 tareas) MASE relativo 0.819, WQL relativo 0.658 y skill score 0.304. En ambos, todos los modelos neuronales que le superan tienen al menos 28 veces sus parámetros. Estos agregados no son comparables entre sí ni con GIFT-Eval por normalizaciones distintas. En fev-bench no se establece disjuntez: doce de sus cien tareas nombran subconjuntos del corpus de entrenamiento.
+En dispositivo (STM32H753, Cortex-M7, W8A8 estático, un núcleo, sin acelerador neuronal ni memoria externa): 138,1 KiB de coeficientes INT8, 365,5 KiB de imagen de firmware completa incluyendo contexto de 8 KiB, 730,7 KiB de RAM pico y 4,08 s por llamada con contexto de 2048 pasos. La configuración de firmware obtiene 0,833 nGMASE.
 
 ## Requisitos de hardware
 
-- Inferencia en CPU: al ser un modelo de 146 K parámetros, puede ejecutarse en cualquier CPU moderna sin GPU, con uso de RAM inferior a 10 MB en fp32.
-- GPU: no requiere GPU; si se usa, cualquier GPU con al menos 1 GB de VRAM es suficiente, aunque no es necesario.
-- Dispositivos embebidos: perfil de firmware en STM32H753 (Cortex-M7) con 138,1 KiB de pesos INT8, imagen completa de 365,5 KiB (incluyendo contexto de 8 KiB), pico de RAM de 730,7 KiB y tiempo de llamada de 4,08 s para contexto de 2048 pasos.
-- Opciones de despliegue: al ser una librería propia (tinycast), no se mencionan integraciones con vLLM, llama.cpp u Ollama; el despliegue se realiza mediante el código oficial de GitHub o exportación a grafo INT8 estático.
-- Latencia y throughput: en el perfil de firmware, 4,08 s por llamada; en hardware más potente (CPU de escritorio) se espera latencia en el orden de milisegundos, aunque no se proporcionan cifras oficiales.
+- Inferencia en fp32: pesos de aproximadamente 0,6 MB, ejecutable en CPU sin GPU.
+- Inferencia INT8: 138,1 KiB de pesos cuantizados, apto para microcontroladores Cortex-M7.
+- VRAM estimada: no disponible; el modelo no requiere GPU.
+- GPU recomendadas: no aplica; cualquier CPU moderna es suficiente. Para lotes grandes, una GPU consumer (por ejemplo RTX 4090) aceleraría el throughput, pero no es necesaria.
+- Cabe en GPU consumer: sí, en cualquier GPU; también en placas embebidas (STM32H753 validado).
+- Opciones de despliegue: exportación a grafo estático INT8 para firmware embebido; el repositorio incluye código de entrenamiento y replicación. vLLM, llama.cpp, Ollama y TGI no aplican a este modelo.
+- Latencia y throughput: 4,08 s por llamada en Cortex-M7 con contexto de 2048; latencia en CPU/GPU no disponible.
 
 ## Comparativa con modelos similares
 
-La tabla de la sección de benchmarks ya incluye la comparativa principal con modelos zero-shot de tamaño similar. Los más cercanos en parámetros son Reverso-Nano (200 K) y Reverso-Small (550 K), ambos con pronóstico puntual y peor nWQL comparable. TTM-R3 (1,4 M) tiene mejor nGMASE (0.724) y nWQL (0.520), pero con casi 10 veces más parámetros. FlowState-9.1M logra el mejor nGMASE (0.726) y nWQL (0.502) de la tabla, pero con 62 veces más parámetros. TinyCast ofrece la mejor relación precisión/parámetros entre los modelos que emiten distribución predictiva.
+| Modelo | Parametros | Contexto | GIFT-Eval nGMASE | GIFT-Eval nWQL | Licencia | Salida probabilística |
+|---|---:|---|---:|---:|---|---|
+| TinyCast | 146 K | 2048 | 0,774 | 0,545 | Apache-2.0 | Sí (9 cuantiles) |
+| Reverso-Nano | 200 K | no disponible | 0,760 | (0,661) | no disponible | No (puntual) |
+| TTM-R3 | 1,4 M | no disponible | 0,724 | 0,520 | no disponible | Sí |
+| FlowState-9.1M | 9,1 M | no disponible | 0,726 | 0,502 | no disponible | Sí |
+
+TinyCast es el único de la comparativa por debajo de 1,4 M de parámetros que emite distribución predictiva. Reverso-Nano y Reverso-Small son más precisos en nGMASE pero solo ofrecen pronóstico puntual. TTM-R3 y FlowState-9.1M mejoran ligeramente en ambas métricas a costa de 10 a 60 veces más parámetros. La licencia Apache-2.0 de TinyCast es la única confirmada en esta tabla.
 
 ## Limitaciones y advertencias
 
-- No procesa texto ni datos categóricos: está diseñado exclusivamente para series temporales numéricas univariantes.
-- Contexto limitado a 2048 pasos: para series más largas se requiere ventaneo o submuestreo, lo que puede perder información de largo plazo.
-- Horizonte de pronóstico máximo evaluado de 720 pasos; más allá de eso no hay garantías de rendimiento.
-- En fev-bench no se establece disjuntez con el corpus de entrenamiento en 12 de 100 tareas, lo que podría inflar ligeramente los resultados en ese benchmark.
-- La precisión probabilística depende de la calibración de los cuantiles; en dominios muy distintos a los de entrenamiento (por ejemplo, finanzas) la incertidumbre puede estar mal estimada.
-- No se han publicado análisis de sesgos o robustez frente a series con tendencias fuertes, estacionalidades múltiples o ruido no estacionario.
-- La licencia Apache-2.0 permite uso comercial, pero el modelo se distribuye sin garantías; el autor no declara responsabilidad por decisiones basadas en sus pronósticos.
+- Modelo univariante: no modela dependencias entre múltiples series de forma nativa.
+- Los resultados de GIFT-Eval están declarados por el autor y no están verificados (`verified: false`); conviene reproducirlos antes de usarlos en decisiones de producción.
+- En fev-bench no se ha establecido la disjunción entre entrenamiento y evaluación: doce de las cien tareas solapan con subconjuntos del corpus de entrenamiento, por lo que el skill score de 0,304 puede estar inflado.
+- Los agregados de Chronos-ZS y fev-bench no son comparables con los de GIFT-Eval por usar normalizaciones distintas.
+- La configuración de firmware (0,833 nGMASE) es peor que la de host (0,774 nGMASE); la cuantización INT8 introduce una degradación medible.
+- El horizonte se genera por rollout autorregresivo en bloques de 48 pasos; los errores pueden acumularse en horizontes largos (evaluado hasta 720).
+- La entrada se trunca a los últimos 2048 pasos y los historiales más cortos se rellenan con el primer valor, lo que puede sesgar el pronóstico en series muy cortas.
+- Riesgo de alucinación: no aplica en el sentido lingüístico, pero el modelo puede producir pronósticos con intervalos mal calibrados en regímenes no vistos.
+- Sesgos conocidos: no disponibles.
+- Licencia Apache-2.0: permite uso comercial sin restricciones adicionales conocidas; verificar los términos del dataset Salesforce/GiftEvalPretrain para reentrenamiento.
 
 ## Enlaces
 
-- Modelo en Hugging Face: https://huggingface.co/raws-labs/tinycast
-- Paper (arXiv): https://arxiv.org/abs/2608.15767
+- Hugging Face: https://huggingface.co/raws-labs/tinycast
+- Demo (Space): https://huggingface.co/spaces/raws-labs/tinycast-forecaster
+- Paper: https://arxiv.org/abs/2608.15767
 - Código, entrenamiento y replicación: https://github.com/raws-labs/tinycast
+- Leaderboard GIFT-Eval: https://huggingface.co/spaces/Salesforce/GIFT-Eval
+- Dataset de entrenamiento: https://huggingface.co/datasets/Salesforce/GiftEvalPretrain

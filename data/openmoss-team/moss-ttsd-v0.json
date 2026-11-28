@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "OpenMOSS-Team/MOSS-TTSD-v0",
+  "slug": "openmoss-team-moss-ttsd-v0",
+  "author": "OpenMOSS-Team",
+  "url": "https://huggingface.co/OpenMOSS-Team/MOSS-TTSD-v0",
+  "created_at": "2025-06-19T14:04:22.000Z",
+  "updated_at": "2026-11-28T05:54:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "text-to-speech",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 2049551360,
+  "parameters_human": "2.05B",
+  "storage_bytes": 4110753676,
+  "storage_human": "4.1 GB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

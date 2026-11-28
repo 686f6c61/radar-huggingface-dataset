@@ -2,48 +2,48 @@
 
 ## Resumen
 
-Logistes 1.0 (GGUF, Q8_0) es una distribucion cuantizada del modelo base Openwist/Logistes-1.0, publicada por el propio autor del modelo original en el repositorio Openwist/Logistes-1.0-GGUF. Se trata de un modelo conversacional de pequeno tamano, con 1.170.340.608 parametros totales (aproximadamente 1,17 mil millones), empaquetado en formato GGUF con cuantizacion Q8_0 para su uso en llama.cpp y Ollama. El repositorio ocupa 1,2 GB, lo que es coherente con una cuantizacion de 8 bits de un modelo de esa escala.
+Logistes 1.0 es un modelo de lenguaje especializado en dominios de negocio y contabilidad, desarrollado por Openwist. Se distribuye aqui en su variante GGUF cuantizada en Q8_0, pensada para su ejecucion local mediante herramientas como Ollama o llama.cpp. El modelo base, Openwist/Logistes-1.0, esta orientado a tareas conversacionales y de generacion de texto con soporte de llamadas a herramientas (tool calling), segun se desprende de la plantilla de chat y del prompt de sistema por defecto que incluye definiciones de herramientas.
 
-La relevancia de esta publicacion es practica: facilita el despliegue local del modelo en entornos con recursos limitados, mediante una instruccion de Ollama incluida en la model card. El modelo esta etiquetado como "conversational" y declara compatibilidad con endpoints, lo que sugiere un uso previsto de asistente conversacional con soporte de tool calling, aunque este se devuelve como texto plano y requiere un helper de parseo disponible en el repositorio principal.
+Con aproximadamente 1.170 millones de parametros (1,17 B), se situa en la categoria de modelos pequenos, lo que permite desplegarlo en hardware de consumo. La model card del repositorio GGUF es deliberadamente escueta: remite al repositorio principal para informacion sobre uso previsto, evaluacion y limitaciones, y no detalla arquitectura, datos de entrenamiento ni resultados de benchmarks.
 
-La informacion publica es muy escasa: no se detallan arquitectura, longitud de contexto, composicion del dataset de entrenamiento ni idiomas soportados. La licencia figura como "other", con referencias a los ficheros LICENSE y NOTICE del repositorio, por lo que las condiciones exactas de uso comercial deben verificarse directamente en esos documentos antes de cualquier despliegue en produccion.
+La relevancia de esta ficha radica en su caracter practico: es una compilacion lista para usar en entornos locales con Ollama, con licencia LFM Open License v1.0 (licencia "other" con nombre lfm1.0). No obstante, la escasez de documentacion tecnica publicada limita la evaluacion rigurosa de sus capacidades reales.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible |
-| Parametros totales | 1.170.340.608 (aprox. 1,17 B) |
-| Parametros activos | no aplica (no se ha documentado como MoE) |
+| Parametros totales | 1.170.340.608 (~1,17 B) |
+| Parametros activos | no aplica (no consta que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q8_0 (unica variante publicada en este repositorio) |
-| Idiomas soportados | no disponible |
-| Licencia | other (ver LICENSE y NOTICE en el repositorio) |
-| Formato de pesos | GGUF (modelo base en formato original no especificado) |
+| Tipos de cuantizacion | Q8_0 (unica variante publicada en este repo) |
+| Idiomas soportados | ingles (en) |
+| Licencia | LFM Open License v1.0 (license_name: lfm1.0, tag "other") |
+| Formato de pesos | GGUF (modelo base en safetensors) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo base Openwist/Logistes-1.0 en la documentacion disponible. El recuento de parametros (1,17 B) situa al modelo en la categoria de modelos pequenos, adecuados para inferencia en CPU o en GPU de consumo, pero no se especifica si emplea un transformer denso convencional, una variante con atencion eficiente u otra familia arquitectonica.
+No se dispone de informacion publicada sobre la arquitectura interna del modelo (tipo de transformer, atencion, capas, dimensiones ocultas) en la documentacion proporcionada. El repositorio GGUF no incluye detalles al respecto y remite al repositorio principal Openwist/Logistes-1.0, del que no se aportan datos en la informacion disponible.
 
-Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del corpus, el uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card unicamente describe el proceso de cuantizacion a Q8_0 y el procedimiento de creacion en Ollama. Cualquier afirmacion sobre el entrenamiento seria especulativa y no se incluye aqui.
+Tampoco se documentan el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La unica informacion tecnica concreta es el proceso de cuantizacion a Q8_0 y la inclusion de una plantilla de chat con token de parada y prompt de sistema por defecto que incorpora definiciones de herramientas.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" y se distribuye con un Modelfile para Ollama, orientado a dialogos multi-turno.
-- Tool calling / function calling: la model card indica que las llamadas a herramientas se devuelven como texto, no como JSON estructurado nativo, y requieren un helper de parseo disponible en el repositorio principal.
-- Integracion con llama.cpp y Ollama: el formato GGUF Q8_0 permite ejecucion local en ambos motores.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere uso a traves de APIs compatibles con el formato de Hugging Face.
-- Capacidades multilingues: no disponibles.
-- Razonamiento avanzado, codigo, matematicas, vision o audio: no documentadas.
+- Generacion de texto conversacional en ingles, con plantilla de chat integrada.
+- Soporte de tool calling / function calling: las llamadas a herramientas se devuelven como texto en el formato propio del modelo y deben ser parseadas por la aplicacion (se incluye ejemplo de parseo en el repositorio principal).
+- Orientacion a dominios de negocio y contabilidad, segun la descripcion del autor.
+- Ejecucion local mediante Ollama (Modelfile incluido) y, por formato, potencialmente con llama.cpp u otros runners compatibles con GGUF.
+- Capacidades multilingues: solo se declara ingles; no se documentan otros idiomas.
+- No se documentan capacidades de vision, audio, modo "thinking" explicito, agentes multi-paso ni razonamiento matematico avanzado.
 
 ## Casos de uso
 
-- Asistente conversacional local: el modelo puede desplegarse con Ollama mediante la instruccion `ollama create` y `ollama run` incluida en la model card, lo que permite prototipar un chatbot en una maquina de desarrollo sin dependencia de servicios en la nube.
-- Pruebas de integracion de tool calling: dado que las llamadas a herramientas se devuelven como texto, resulta util para validar pipelines de parseo y orquestacion de agentes antes de migrar a modelos mayores, usando el helper del repositorio principal.
-- Entornos con hardware limitado: con 1,17 B de parametros en Q8_0 y un repositorio de 1,2 GB, el modelo cabe en equipos de consumo y en instancias pequenas, lo que facilita demos y entornos de CI sin GPU dedicada.
-- Educacion y experimentacion: su tamano reducido permite estudiar el comportamiento de un modelo conversacional cuantizado, comparar el efecto de Q8_0 frente a otras precisiones y analizar la salida de tool calls en texto.
-- Prototipado de asistentes de dominio especifico: al ser un modelo pequeno, puede servir como base para experimentos de ajuste fino o para evaluar si un modelo de esta escala cubre las necesidades de una tarea concreta antes de invertir en infraestructura mayor.
-- Despliegue en el borde (edge): la combinacion de GGUF y Ollama permite ejecutar el modelo en portatiles o mini-PC, util para aplicaciones de asistencia offline donde la latencia de red no es aceptable.
+- Asistencia contable conversacional: el modelo puede mantener dialogos sobre conceptos contables y de negocio en ingles, apoyandose en su especializacion declarada y en el prompt de sistema incluido para orientar respuestas.
+- Automatizacion de consultas con herramientas: al devolver llamadas en formato de texto, puede integrarse en un orquestador que parsee esas llamadas y ejecute funciones (por ejemplo, consultas a una base de datos de facturacion) y devuelva resultados al modelo.
+- Despliegue local en estaciones de trabajo: gracias a su tamano (~1,17 B en Q8_0) y al Modelfile para Ollama, es viable ejecutarlo en portatiles o equipos sin GPU dedicada para prototipos internos.
+- Clasificacion y extraccion de informacion de documentos de negocio: puede usarse para resumir o extraer campos de textos financieros en ingles, con validacion humana posterior.
+- Chatbot de soporte interno para equipos financieros: conversaciones multi-turno sobre procedimientos contables, con la ventaja de que los datos no salen del entorno local.
+- Pruebas de concepto de agentes con tool calling: util para validar pipelines de function calling en un modelo pequeno antes de escalar a modelos mayores, dado su bajo coste de inferencia.
 
 ## Benchmarks y rendimiento
 
@@ -51,33 +51,33 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 1,17 B de parametros en Q8_0 (aproximadamente 1 byte por parametro), el peso ronda los 1,2 GB; sumando overhead de contexto y buffers de llama.cpp, se puede estimar un uso de memoria en torno a 1,5-2,5 GB, aunque no hay mediciones oficiales publicadas.
-- GPU recomendadas: no disponible. Por tamano, cualquier GPU con al menos 4 GB de VRAM deberia poder alojarlo, pero es una estimacion, no un dato del autor.
-- GPU de consumo: si, previsiblemente cabe en tarjetas como RTX 3060, RTX 4060 o superiores, asi como en Apple Silicon con memoria unificada; sin confirmacion oficial.
-- Opciones de despliegue: llama.cpp y Ollama son los motores explicitamente soportados segun la model card. vLLM y TGI no se mencionan.
+- VRAM estimada para inferencia en Q8_0: aproximadamente 1,2-1,5 GB para los pesos, mas overhead de contexto y runtime (estimacion orientativa; no confirmada por el autor).
+- Cabe en GPU de consumo: si, en tarjetas con 4 GB o mas de VRAM (por ejemplo, GTX 1650, RTX 3050, RTX 4060), asi como en CPU.
+- GPU recomendadas para mayor throughput: RTX 4090, A100 o H100 no son necesarias por tamano; cualquier GPU moderna con suficiente VRAM es adecuada.
+- Opciones de despliegue: Ollama (soportado explicitamente con Modelfile), llama.cpp y otros runners compatibles con GGUF; vLLM y TGI no se mencionan como soportados para este formato.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
+| Modelo | Parametros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Logistes 1.0 GGUF Q8_0 | 1,17 B | no disponible | other | GGUF | Hugging Face (0 descargas) |
-| Alternativas de ~1-2 B | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Openwist/Logistes-1.0-GGUF | ~1,17 B | no disponible | LFM Open License v1.0 | GGUF (Q8_0) | Especializado en negocio/contabilidad, tool calling en texto |
+| Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de modelos equivalentes en la informacion proporcionada |
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos de la misma categoria. No se conocen datos publicados de rendimiento, contexto ni licencia de modelos comparables en la informacion proporcionada, por lo que la comparacion se limita al modelo descrito.
+No se dispone de informacion suficiente para establecer una comparativa con alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
 
-- Documentacion muy escasa: no se especifican arquitectura, contexto, idiomas ni datos de entrenamiento, lo que dificulta evaluar su idoneidad para produccion.
-- Licencia "other": las condiciones exactas de uso comercial no estan claras en la model card; es imprescindible revisar los ficheros LICENSE y NOTICE del repositorio antes de cualquier uso.
-- Tool calling no nativo: las llamadas a herramientas se devuelven como texto y requieren un parser externo, lo que anade fragilidad al pipeline y riesgo de errores de interpretacion.
-- Riesgo de alucinacion: no hay evaluaciones publicadas; en un modelo de 1,17 B es esperable una tasa de alucinacion superior a la de modelos mayores, aunque no se aportan mediciones.
-- Sesgos: no documentados; al desconocerse el corpus de entrenamiento no es posible evaluar sesgos de genero, idioma o dominio.
-- Idiomas: no se declaran idiomas soportados, por lo que el rendimiento fuera del idioma principal de entrenamiento es incierto.
-- Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin senales de validacion por parte de la comunidad.
-- Sin benchmarks: no hay datos que permitan comparar su calidad frente a alternativas.
+- Documentacion muy limitada: la model card del GGUF remite al repositorio principal y no detalla arquitectura, entrenamiento ni evaluacion, lo que dificulta validar su calidad.
+- Riesgo de alucinacion: como todo modelo de lenguaje pequeno, puede generar datos contables o financieros incorrectos; requiere supervision humana en contextos criticos.
+- Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta documentado y probablemente sea limitado.
+- Tool calling no nativo en el runtime: las llamadas se devuelven como texto y exigen parseo propio, lo que anade complejidad y fragilidad al pipeline.
+- Licencia: LFM Open License v1.0 (etiquetada como "other"); es imprescindible revisar los terminos del archivo LICENSE y NOTICE antes de un uso comercial, ya que las condiciones no se detallan en la informacion disponible.
+- Contexto desconocido: al no publicarse la longitud de contexto, no se puede garantizar el manejo de conversaciones o documentos largos.
+- Sesgos: no documentados por el autor; no disponible.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/Openwist/Logistes-1.0-GGUF
 - Modelo base: https://huggingface.co/Openwist/Logistes-1.0
+- Perfil del autor: https://huggingface.co/Openwist

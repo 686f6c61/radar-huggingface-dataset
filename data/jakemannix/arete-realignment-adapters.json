@@ -5,7 +5,7 @@
   "author": "jakemannix",
   "url": "https://huggingface.co/jakemannix/arete-realignment-adapters",
   "created_at": "2026-11-19T07:15:57.000Z",
-  "updated_at": "2026-11-19T07:16:56.000Z",
+  "updated_at": "2026-11-28T05:43:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,10 @@
     "safetensors",
     "lora",
     "qwen3_5",
+    "lorarete",
+    "arete",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
     "region:us"
   ],
@@ -27,7 +31,7 @@
   "storage_bytes": 233723632,
   "storage_human": "234 MB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],
@@ -37,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "jakemannix/lorarete-qwen3.8-27b-lora",
+  "renamed_at": "2026-11-28T10:03:41.875Z",
   "benchmarks": [],
   "sources": []
 }

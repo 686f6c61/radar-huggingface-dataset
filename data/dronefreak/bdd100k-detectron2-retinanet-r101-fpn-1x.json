@@ -5,7 +5,7 @@
   "author": "dronefreak",
   "url": "https://huggingface.co/dronefreak/bdd100k-detectron2-retinanet-r101-fpn-1x",
   "created_at": "2026-11-27T05:22:18.000Z",
-  "updated_at": "2026-11-27T05:23:46.000Z",
+  "updated_at": "2026-11-27T21:30:12.000Z",
   "license": "bdd100k",
   "license_family": "unknown",
   "pipeline_tag": "object-detection",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 55614200,
   "parameters_human": "55.6M",

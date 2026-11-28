@@ -1,88 +1,108 @@
 # OpenMOSS-Team/MOSS-VL-Realtime
 
 ## Resumen
-MOSS-VL-Realtime es un modelo vision-lenguaje de la familia MOSS-VL desarrollada por OpenMOSS, publicado bajo licencia Apache 2.0. Se trata del checkpoint especializado en interacción en tiempo real sobre flujos de vídeo continuos, a diferencia de los modelos vídeo-lenguaje offline que primero consumen el vídeo completo y después responden. El modelo percibe fotogramas entrantes y genera texto en paralelo, permite formular preguntas en cualquier instante de la emisión y puede decidir no responder cuando la evidencia visual es insuficiente.
 
-La arquitectura mantiene el diseño de atención cruzada (cross-attention) de la familia MOSS-VL, que desacopla la codificación visual del razonamiento lingüístico, y conserva una ventana de contexto de texto de 256K tokens. Cuenta con aproximadamente 11 336 millones de parámetros en BF16 y se distribuye en formato safetensors con código personalizado (custom_code) para transformers.
+MOSS-VL-Realtime es el checkpoint especializado en interaccion en tiempo real de la familia MOSS-VL, un conjunto de modelos vision-lenguaje abiertos publicados por MOSS AI, OpenMOSS y el Shanghai Innovation Institute (SII). Frente a los modelos video-lenguaje offline, que primero ingieren el video completo y despues responden, este modelo esta disenado para flujos de video continuos: percibe fotogramas entrantes y genera texto en paralelo, permite preguntas en cualquier instante del stream y puede decidir si responder o seguir observando cuando la evidencia visual es insuficiente.
 
-Su relevancia actual reside en que aborda un escenario que los modelos vídeo-lenguaje convencionales no cubren: la comprensión de vídeo en emisión con capacidad de interrupción, silencio proactivo y corrección dinámica de respuestas previas a medida que llegan nuevos fotogramas. Se publica junto a MOSS-VL-Base y MOSS-VL-Instruct para cubrir tanto uso offline como ajuste fino e investigación aplicada.
+El modelo cuenta con 11.336.371.208 parametros (aproximadamente 11B) en BF16, una ventana de contexto de texto de 256K tokens y una arquitectura vision-lenguaje basada en cross-attention que desacopla la codificacion visual del razonamiento linguistico. Incorpora codificacion temporal explicita mediante timestamps absolutos y Cross-attention Rotary Position Embedding (XRoPE), que proyecta tokens de texto y parches visuales en un espacio tridimensional (tiempo, altura, anchura).
+
+Su relevancia actual radica en que cubre un nicho poco poblado en el ecosistema abierto: la comprension de video en streaming con interaccion interrumpible, silencio proactivo y correccion dinamica de respuestas previas. Se distribuye con licencia Apache 2.0, lo que facilita su adopcion comercial, y forma parte de una familia junto a MOSS-VL-Base y MOSS-VL-Instruct para uso offline, preentrenamiento continuado y ajuste fino.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Vision-lenguaje con atencion cruzada (cross-attention), decodificador de lenguaje tipo transformer causal y XRoPE (Cross-attention Rotary Position Embedding) |
-| Parametros totales | 11 336 371 208 (~11B) |
-| Parametros activos | no disponible (no es un modelo MoE) |
-| Longitud de contexto | 256K tokens de texto |
-| Tipos de cuantizacion | no disponible (pesos publicados en BF16) |
-| Idiomas soportados | en, zh |
-| Licencia | apache-2.0 |
-| Formato de pesos | safetensors (BF16, con custom_code para transformers) |
-
-Otros parámetros de configuración publicados: tamaño de parche visual 16, tamaño de parche temporal 1, FPS por defecto 1.0, máximo de fotogramas por vídeo 256, formato de fotograma en tiempo real compatible con PIL más marca de tiempo, y una única sesión en tiempo real activa por instancia de modelo.
+| Arquitectura | Vision-lenguaje con cross-attention desacoplada, XRoPE (Time, Height, Width), timestamp-aware encoding |
+| Parametros totales | 11.336.371.208 (~11B) |
+| Parametros activos | No aplica (no es MoE) |
+| Longitud de contexto | 256K tokens (texto) |
+| Tipos de cuantizacion | No disponible (pesos publicados en BF16) |
+| Idiomas soportados | Ingles (en), chino (zh) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | Safetensors (BF16), con codigo custom (`trust_remote_code=True`) |
+| Tamano del repositorio | 22,7 GB |
+| Tamano de parche visual | 16 |
+| Tamano de parche temporal | 1 |
+| FPS por defecto (video) | 1,0 |
+| Maximo de fotogramas por defecto | 256 |
+| Formato de fotograma en tiempo real | Imagen compatible con PIL mas timestamp |
+| Alcance de sesion en tiempo real | Una sesion activa por instancia de modelo |
+| Modelo base | OpenMOSS-Team/MOSS-VL-Base |
 
 ## Arquitectura y entrenamiento
-MOSS-VL-Realtime emplea una arquitectura vision-lenguaje basada en atención cruzada que separa la codificación visual del razonamiento en lenguaje. Esta separación es determinante para el uso en tiempo real, ya que permite integrar contenido visual entrante en el contexto de generación en curso sin obligar al modelo a un flujo estrictamente offline de "cargar todos los fotogramas y después responder". El modelo parte de MOSS-VL-Base y añade datos de entrenamiento específicos de streaming en tiempo real, junto con una interfaz de inferencia para entrada fotograma a fotograma con marcas de tiempo.
 
-La codificación temporal se resuelve mediante la inyección de marcas de tiempo absolutas junto a los fotogramas muestreados, lo que permite razonar sobre cuándo ocurre un evento, cuánto dura y cómo cambia la escena, en lugar de depender únicamente del orden de los fotogramas. El mecanismo XRoPE proyecta tokens de texto y parches visuales en un espacio coordenado tridimensional único definido por tiempo (t), altura (h) y anchura (w), proporcionando una representación posicional consistente para imagen, vídeo offline y vídeo en streaming. No se detallan en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO.
+MOSS-VL-Realtime emplea una arquitectura transformer vision-lenguaje con cross-attention que separa la codificacion visual del razonamiento del modelo de lenguaje. Esta separacion es clave para el uso en tiempo real: el contenido visual entrante se integra en el contexto de generacion en curso sin obligar al modelo a un flujo offline de "cargar todos los fotogramas y despues responder". El diseno de cross-attention desacoplada reduce la latencia y el coste de throughput en flujos de alta frecuencia de fotogramas, segun la documentacion del proyecto.
+
+Para video e imagenes en streaming, el modelo inyecta timestamps absolutos junto a los fotogramas muestreados, lo que le permite razonar sobre cuando ocurre un evento, cuanto dura y como cambia la escena, en lugar de depender unicamente del orden de los fotogramas. XRoPE mapea tokens de texto y parches visuales a un espacio posicional tridimensional comun (tiempo, altura, anchura), dando una representacion posicional consistente para imagen, video offline y video en streaming. El checkpoint parte de MOSS-VL-Base y anade datos de streaming en tiempo real y una interfaz de inferencia para entrada fotograma a fotograma con timestamp. No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
-- Comprensión de imagen y de vídeo, incluyendo vídeo de larga duración, con razonamiento temporal sobre orden de eventos, duración y ritmo.
-- Comprensión de vídeo en tiempo real: procesa fotogramas entrantes de forma continua y genera texto en paralelo.
-- Interacción interrumpible: admite preguntas en cualquier marca de tiempo de una emisión en curso, respondiendo con base en los fotogramas observados hasta ese momento.
-- Silencio proactivo: puede emitir el token especial `<|silence|>` y seguir observando cuando no hay actualización visual relevante o el contexto es insuficiente.
-- Corrección dinámica: puede revisar respuestas anteriores a medida que llegan nuevos fotogramas, en lugar de quedar fijado a una interpretación inicial.
-- Entrada de fotogramas con marca de tiempo absoluta mediante una API de sesión (`create_realtime_session`) con operaciones `push_frame`, `push_prompt`, `push_prompt_frame`, `poll_output` y `stream_outputs`.
-- Capacidades multilingües limitadas a inglés y chino según la model card.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Capacidades de audio o modo de pensamiento explícito: no disponible en la información proporcionada.
+
+- Comprension de video en tiempo real: procesa fotogramas entrantes de forma continua en lugar de esperar al video completo.
+- Interaccion interrumpible: acepta preguntas en cualquier timestamp de un stream activo y responde con base en los fotogramas observados hasta ese momento.
+- Silencio proactivo: puede emitir el token `<|silence|>` y seguir observando cuando no hay actualizacion visual relevante o el contexto es insuficiente.
+- Correccion dinamica: revisa respuestas anteriores a medida que llegan nuevos fotogramas, sin quedar fijado a una interpretacion inicial.
+- Razonamiento temporal: los timestamps absolutos por fotograma permiten razonar sobre orden de eventos, duracion, ritmo y localizacion temporal fina.
+- Comprension de imagen: soporta entrada de imagen individual ademas de video.
+- Comprension de video offline: con FPS por defecto de 1,0 y maximo de 256 fotogramas.
+- Capacidades multilingues: ingles y chino.
+- Interfaz de sesion en tiempo real: API `create_realtime_session(...)` con operaciones como `session.push_frame(image, timestamp=...)`.
+- Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
+- Capacidades de agente y razonamiento multi-paso: no documentadas explicitamente en la informacion proporcionada.
+- Capacidades de audio: no disponibles.
 
 ## Casos de uso
-- Vigilancia y monitorización de vídeo en directo: el modelo recibe fotogramas de una cámara IP o de un circuito cerrado con marcas de tiempo y puede responder preguntas puntuales sobre lo observado o permanecer en silencio cuando no hay novedad relevante, lo que encaja con el token `<|silence|>` y evita generar alertas espurias.
-- Asistencia en directo para retransmisiones deportivas o eventos: un operador puede preguntar en cualquier instante qué ha ocurrido en los últimos segundos, y el modelo responde con base en los fotogramas ya procesados gracias a la ventana de 256K tokens y a la codificación temporal.
-- Análisis de vídeo de reuniones o clases en streaming: al recibir fotogramas a 1 FPS con marcas de tiempo, el modelo puede resumir lo mostrado en una pizarra o pantalla compartida y actualizar el resumen conforme avanza la sesión mediante corrección dinámica.
-- Supervisión de procesos industriales: con fotogramas de una línea de producción, el modelo puede detectar cambios de estado y responder consultas sobre cuándo se produjo una transición, apoyándose en el razonamiento sobre orden y duración de eventos.
-- Robótica y agentes con percepción visual continua: la API de sesión permite empujar fotogramas desde un bucle de captura y consultar el estado de la escena, con la posibilidad de que el modelo decida no intervenir cuando la evidencia es insuficiente.
-- Accesibilidad y descripción en directo: generación de descripciones de contenido visual en emisión para usuarios con discapacidad visual, con la ventaja de que el modelo puede mantener silencio cuando la escena no cambia y evitar una locución redundante.
-- Investigación en interacción multimodal en tiempo real: el checkpoint sirve como base para estudiar políticas de respuesta proactiva, silencio y corrección dinámica en flujos continuos.
+
+- Vigilancia y monitorizacion de video en directo: el modelo consume el stream de camaras IP o CCTV fotograma a fotograma con timestamps y puede responder consultas puntuales ("que ha ocurrido en los ultimos 30 segundos") o permanecer en silencio cuando no hay novedad visual, gracias al token `<|silence|>`.
+- Asistencia en directo para retransmisiones: integrado en un pipeline que convierte el stream en fotogramas PIL, permite a operadores preguntar por eventos concretos durante un evento en vivo y obtener respuestas basadas solo en lo ya emitido, con correccion dinamica si la escena cambia.
+- Analisis de reuniones y videollamadas en tiempo real: con 256K tokens de contexto y timestamps absolutos, puede responder preguntas sobre lo dicho y mostrado en una sesion activa, localizando el momento exacto de una diapositiva o una demostracion.
+- Robots y agentes embodied con percepcion visual continua: la sesion de tiempo real con `push_frame` encaja en bucles de control donde el agente necesita decidir si responder o seguir observando antes de actuar.
+- Soporte remoto y teleasistencia: un tecnico comparte pantalla o camara y el modelo responde a preguntas sobre lo que aparece en el flujo, revisando su respuesta si el usuario mueve la camara o cambia de pantalla.
+- Analisis de deportes y eventos con componente temporal: la codificacion con XRoPE y timestamps permite razonar sobre orden de jugadas, duracion de posesiones y cambios de escena durante la retransmision.
+- Moderacion de contenido en directo: el modelo puede evaluar fotogramas entrantes y emitir juicios actualizados a medida que evoluciona la escena, con la ventaja de corregir interpretaciones previas.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona que el modelo está orientado a benchmarks de comprensión de vídeo en streaming, donde las preguntas pueden llegar antes de haber observado el vídeo completo y la respuesta correcta puede cambiar a medida que evoluciona la escena, e indica que las tablas detalladas se mantendrán en los recursos del proyecto MOSS-VL, pero no incluye cifras concretas.
+
+No se han publicado resultados de benchmarks numericos en la informacion disponible. La model card indica que el modelo esta disenado para benchmarks de comprension de video en streaming, con enfasis en calidad de interaccion en tiempo real, silencio proactivo y actualizacion dinamica de respuestas, y remite a los recursos del proyecto MOSS-VL para las tablas detalladas, sin incluirlas en el texto proporcionado.
 
 ## Requisitos de hardware
-- VRAM estimada para inferencia en BF16: en torno a 22-24 GB solo para pesos, más memoria para caché KV y procesamiento visual; el repositorio ocupa 22,7 GB.
-- GPU recomendadas: A100 40/80 GB, H100, o GPUs de consumo con 24 GB o más para BF16 ajustado. En GPUs de 24 GB (RTX 3090, RTX 4090) el modelo en BF16 queda muy justo y puede requerir descarga parcial a CPU con `device_map="auto"`.
-- Cuantizaciones de menor precisión: no se documentan en la información disponible; al no publicarse formatos GGUF ni cuantizaciones oficiales, el despliegue en GPUs de gama media-baja no está garantizado sin conversión propia.
-- Opciones de despliegue: transformers con `AutoModelForCausalLM` y `AutoProcessor` con `trust_remote_code=True`, `torch_dtype=torch.bfloat16` y `attn_implementation="flash_attention_2"` (o `"eager"` si FlashAttention no está disponible). No se confirma soporte de vLLM, TGI, llama.cpp u Ollama.
-- Restricción operativa: una sola sesión en tiempo real activa por instancia de modelo, lo que implica escalar horizontalmente con varias instancias para atender múltiples flujos concurrentes.
-- Latencia y throughput: no disponible en la información proporcionada.
+
+- VRAM estimada para inferencia en BF16: aproximadamente 22-24 GB solo para pesos, mas memoria para cache KV y activaciones; con contexto de 256K el consumo adicional puede ser considerable.
+- GPU recomendadas: A100 40/80 GB, H100 80 GB para contexto largo y sesiones de streaming sostenidas; L40S o RTX 6000 Ada como alternativas de 48 GB.
+- GPU de consumo: cabe en RTX 4090 (24 GB) en BF16 solo si se limita el contexto y el numero de fotogramas; con contexto largo o cuantizacion no documentada, el margen es ajustado. No se documentan pesos GGUF ni cuantizaciones oficiales.
+- Opciones de despliegue: la via oficial es `transformers` con `trust_remote_code=True`, `device_map="auto"` y `flash_attention_2` (o `eager` si FlashAttention no esta disponible). No se documenta soporte para vLLM, llama.cpp, Ollama o TGI en la informacion proporcionada.
+- Latencia y throughput: no se publican cifras concretas. La documentacion afirma que la cross-attention desacoplada reduce la latencia y el coste de throughput en flujos de alta frecuencia de fotogramas, pero sin numeros medibles.
+- Restriccion operativa: una sola sesion en tiempo real activa por instancia de modelo, lo que condiciona el dimensionamiento en despliegues multi-usuario.
 
 ## Comparativa con modelos similares
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no está disponible. A continuación se recoge únicamente lo que puede afirmarse con los datos de esta ficha frente a alternativas de la misma familia:
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia |
-|---|---|---|---|---|
-| MOSS-VL-Realtime | ~11B | 256K | Vídeo en streaming con silencio proactivo y corrección dinámica | apache-2.0 |
-| MOSS-VL-Instruct | no disponible | no disponible | Uso offline (imagen y vídeo) | apache-2.0 (misma familia) |
-| MOSS-VL-Base | no disponible | no disponible | Preentrenamiento y ajuste fino | apache-2.0 (misma familia) |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
+|---|---|---|---|---|---|
+| MOSS-VL-Realtime | ~11B | 256K | Video en streaming con interaccion interrumpible | Apache 2.0 | Hugging Face, API MOSS |
+| MOSS-VL-Instruct | No disponible en la informacion | No disponible | Vision-lenguaje offline (misma familia) | Apache 2.0 (segun familia) | Hugging Face |
+| MOSS-VL-Base | No disponible en la informacion | No disponible | Base para preentrenamiento y ajuste fino | Apache 2.0 (segun familia) | Hugging Face |
+| Otros modelos video-lenguaje abiertos de ~7-13B | No disponible | No disponible | Comprension de video offline | Variable | Variable |
 
-La comparación con modelos de otros desarrolladores (por ejemplo, familias vídeo-lenguaje de tamaño similar) no está disponible en la información proporcionada.
+La informacion proporcionada no incluye datos de rendimiento de MOSS-VL-Instruct ni de MOSS-VL-Base, ni de modelos de terceros, por lo que la comparacion cuantitativa no esta disponible.
 
 ## Limitaciones y advertencias
-- Idiomas: la model card declara únicamente inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
-- Una sola sesión en tiempo real por instancia de modelo, lo que limita el despliegue multiusuario sin replicación.
-- Requiere `trust_remote_code=True` y código personalizado (`custom_code`), lo que implica ejecutar código del autor y revisarlo antes de usarlo en producción.
-- El silencio proactivo y la corrección dinámica introducen comportamiento no determinista en la interacción: una aplicación debe gestionar explícitamente el token `<|silence|>` y las respuestas revisadas.
-- Riesgo de alucinación: no se documentan evaluaciones específicas de fidelidad visual ni tasas de error en la información disponible.
-- Sesgos conocidos: no disponible en la información proporcionada.
-- Limitaciones de contexto: la ventana es de 256K tokens de texto, pero el vídeo se muestrea a 1 FPS con un máximo de 256 fotogramas por defecto, lo que acota la resolución temporal efectiva.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las licencias de los pesos base y de los datasets de entrenamiento, no detalladas en la información disponible.
-- No se documentan cuantizaciones oficiales, por lo que el despliegue en hardware de gama media requiere trabajo adicional de conversión y validación.
+
+- Idiomas: solo se declaran ingles y chino; el rendimiento en castellano u otros idiomas no esta documentado.
+- Sesgo y alucinacion: no se documentan evaluaciones de sesgo ni tasas de alucinacion; como modelo vision-lenguaje, puede generar descripciones plausibles pero incorrectas de escenas ambiguas o con poca evidencia visual.
+- Una sola sesion por instancia: la sesion en tiempo real es unica por instancia de modelo, lo que limita el despliegue concurrente y exige replicas para multiples usuarios.
+- Dependencia de codigo custom: requiere `trust_remote_code=True`, lo que implica ejecutar codigo del repositorio del autor y revisarlo antes de usar en produccion.
+- Contexto largo: aunque la ventana es de 256K tokens, no se documenta el comportamiento degradado en contextos muy largos ni el coste de memoria asociado.
+- Rendimiento en tiempo real: no se publican cifras de latencia ni throughput, por lo que la viabilidad en hardware concreto debe validarse empiricamente.
+- Licencia: Apache 2.0 permite uso comercial, pero conviene revisar las dependencias del codigo custom y los pesos del modelo base.
+- Benchmarks: la ausencia de tablas numericas en la informacion disponible impide verificar afirmaciones de rendimiento frente a alternativas.
 
 ## Enlaces
+
 - Modelo en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Base
-- Informe técnico (arXiv 2608.15045): https://arxiv.org/pdf/2608.15045
+- Pagina del modelo en MOSS AI: https://www.moss-ai.com/models/moss-vl-realtime
+- Documentacion de la API MOSS (escenario VL Realtime): https://platform.moss.cn/en/docs/scenarios/vl-realtime
+- Informe tecnico (arXiv 2608.15045): https://arxiv.org/pdf/2608.15045
 - Referencia adicional (arXiv 2606.07639): https://arxiv.org/abs/2606.07639
-- Repositorio de código MOSS-VL: https://github.com/OpenMOSS/MOSS-VL
+- Repositorio GitHub MOSS-VL: https://github.com/OpenMOSS/MOSS-VL
+- OpenMOSS: https://openmoss.ai/
+- MOSS AI: https://www.moss-ai.com/

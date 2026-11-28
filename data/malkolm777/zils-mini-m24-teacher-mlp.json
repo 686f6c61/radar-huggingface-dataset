@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
-  "storage_bytes": 9081227360,
-  "storage_human": "9.1 GB",
+  "storage_bytes": 18159843440,
+  "storage_human": "18.2 GB",
   "context_length": null,
   "base_model": "joamCriff123/zils-mini-m1121t, malkolm777/zils-mini-p21uniform",
   "formats": [

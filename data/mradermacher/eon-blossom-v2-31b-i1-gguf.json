@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Eon-Blossom-V2-31B-i1-GGUF",
   "created_at": "2026-09-12T11:24:30.000Z",
-  "updated_at": "2026-11-20T19:09:22.000Z",
+  "updated_at": "2026-11-27T19:31:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 3459,
+  "downloads_30d": 6145,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",

@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "finisher-editor/finisher-boundary-v1",
+  "slug": "finisher-editor-finisher-boundary-v1",
+  "author": "finisher-editor",
+  "url": "https://huggingface.co/finisher-editor/finisher-boundary-v1",
+  "created_at": "2026-11-28T10:29:07.000Z",
+  "updated_at": "2026-11-28T10:29:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "speech",
+    "forced-alignment",
+    "word-boundaries",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 968938,
+  "storage_human": "968938 B",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finishers - Calendrier des courses à pied : trails, semi ...",
+      "url": "https://www.finishers.com/",
+      "snippet": "La Gazette du Finisher Inconnus, athlètes ou célébrités, à deux pas de chez toi ou au bout du monde, découvre les petites et …Read more"
+    },
+    {
+      "title": "Tous les circuits | Finishers",
+      "url": "https://www.finishers.com/c",
+      "snippet": "Circuits, labels et series Tous les circuits"
+    },
+    {
+      "title": "FinisherPix | Start",
+      "url": "https://www.finisherpix.com/",
+      "snippet": "Get an exclusive Outside+ discount when you purchase any photo package Activity tracking and performance insights from …Read more"
+    },
+    {
+      "title": "FINISHERLAB Collection | Decathlon",
+      "url": "https://www.decathlon.fr/brands/finisherlab?msockid=295db33cf55769ab1e40ab23f4776829",
+      "snippet": "FINISHERLAB chez Decathlon : découvrez notre sélection de vêtements et d'équipements haute performance pour tous les sportifs."
+    },
+    {
+      "title": "Médailles Finisher - Ultime Sport",
+      "url": "https://www.ultimesport.fr/medailles-finisher/",
+      "snippet": "Créez une médaille finisher personnalisée unique pour votre trail, marathon, 10 km ou triathlon. Devis sous 24h, design sous 3 jours …Read more"
+    }
+  ]
+}

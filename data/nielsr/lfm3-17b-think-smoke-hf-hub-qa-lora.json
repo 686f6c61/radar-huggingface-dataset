@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "agent-distillation-hf/lfm3-17b-think-smoke-hf-hub-qa-lora",
+  "renamed_at": "2026-11-28T12:45:11.097Z",
   "benchmarks": [],
   "sources": []
 }

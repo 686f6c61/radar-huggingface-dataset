@@ -13,11 +13,11 @@
   "languages": [],
   "tags": [
     "onnxruntime",
+    "onnx",
     "biology",
     "genomics",
     "chromatin-accessibility",
     "chrombpnet",
-    "onnx",
     "onnxruntime-web",
     "webgpu",
     "other",

@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "agent-distillation-hf/qwen35-9b-html-pages-kimi-k31-pro-pi-160-smoke-lora",
+  "renamed_at": "2026-11-28T12:45:28.276Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/GLM-4.6V-Flash-Tensix-BFP4-GateUp8",
   "created_at": "2026-11-12T05:27:14.000Z",
-  "updated_at": "2026-11-27T04:04:27.000Z",
+  "updated_at": "2026-11-28T05:14:05.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -15,10 +15,7 @@
     "en"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "glm4v",
-    "image-text-to-text",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -28,14 +25,14 @@
     "bfloat4_b",
     "bfloat8_b",
     "quantized",
-    "conversational",
+    "glm4v",
+    "image-text-to-text",
     "zh",
     "en",
     "arxiv:2507.01006",
     "base_model:zai-org/GLM-4.6V-Flash",
     "base_model:quantized:zai-org/GLM-4.6V-Flash",
     "license:mit",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -50,14 +47,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Xylolabs/GLM-4.6V-Flash-Tenstorrent-Tensix-BFP4",
-  "renamed_at": "2026-11-27T07:46:59.436Z",
+  "renamed_to": "Xylolabs/GLM-4.6V-Flash-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:40:11.437Z",
   "benchmarks": [],
   "sources": []
 }

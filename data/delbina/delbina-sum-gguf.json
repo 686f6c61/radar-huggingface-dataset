@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "delbina/delbina-sum-GGUF",
+  "slug": "delbina-delbina-sum-gguf",
+  "author": "delbina",
+  "url": "https://huggingface.co/delbina/delbina-sum-GGUF",
+  "created_at": "2026-11-28T03:32:11.000Z",
+  "updated_at": "2026-11-28T04:33:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "summarization",
+    "context-compression",
+    "ollama",
+    "delbina",
+    "text-generation",
+    "en",
+    "base_model:delbina/delbina-sum",
+    "base_model:quantized:delbina/delbina-sum",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 2632620864,
+  "storage_human": "2.6 GB",
+  "context_length": 32768,
+  "base_model": "delbina/delbina-sum",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

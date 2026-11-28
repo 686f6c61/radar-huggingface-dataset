@@ -1,0 +1,66 @@
+{
+  "schema": 2,
+  "id": "Brocanteur/smolvla_so101_mascara",
+  "slug": "brocanteur-smolvla_so101_mascara",
+  "author": "Brocanteur",
+  "url": "https://huggingface.co/Brocanteur/smolvla_so101_mascara",
+  "created_at": "2026-11-28T08:28:18.000Z",
+  "updated_at": "2026-11-28T08:28:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Brocanteur/mascara_pick_cleaned",
+    "arxiv:2506.01844",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729776,
+  "storage_human": "907 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brocantes et vide-greniers près de chez vous | Brocanteur.com",
+      "url": "https://www.brocanteur.com/",
+      "snippet": "Trouvez les prochaines brocantes, vide-greniers, braderies et bourses près de chez vous. Recherchez par ville, distance et date sur …Read more"
+    },
+    {
+      "title": "Brocanteur qui achète tout : Rachat rapide à domicile",
+      "url": "https://www.lescompagnonsdebarrasseurs.com/brocanteur-qui-achete-tout.html",
+      "snippet": "3 days ago · Un brocanteur qui achète tout est un professionnel qui se rend à votre domicile pour évaluer et racheter une large …Read more"
+    },
+    {
+      "title": "Devenir brocanteur, antiquaire ou ouvrir un dépôt-vente",
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F23207",
+      "snippet": "Vous souhaitez devenir brocanteur, antiquaire ou ouvrir un dépôt-vente de meubles anciens et d'occasion. Quelle est la différence …Read more"
+    },
+    {
+      "title": "Antiquité brocante à proximité de chez vous sur PagesJaunes.fr",
+      "url": "https://www.pagesjaunes.fr/activites/antiquite-brocante.html",
+      "snippet": "Au sein de SOPHIN Paris, nous proposons également, en tant que brocanteur expérimenté, un service de débarras spécialisé …Read more"
+    }
+  ]
+}

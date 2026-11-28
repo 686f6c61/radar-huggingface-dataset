@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 213109247,
-  "storage_human": "213 MB",
+  "storage_bytes": 206465455,
+  "storage_human": "206 MB",
   "context_length": null,
   "base_model": "inworld/voice-isolator",
   "formats": [

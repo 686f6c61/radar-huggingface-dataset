@@ -67,6 +67,31 @@
   "removal_pattern": null,
   "renamed_to": null,
   "renamed_at": null,
-  "benchmarks": [],
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS km_KH (755)",
+      "metric": "Beam-5 CER (%)",
+      "value": 6.32
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "DDD test (300)",
+      "metric": "Beam-5 CER (%)",
+      "value": 3.58
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "iAny unseen (160)",
+      "metric": "Beam-5 CER (%)",
+      "value": 2.69
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "5-Domain Clean (975)",
+      "metric": "Beam-5 Macro CER (%)",
+      "value": 3.33
+    }
+  ],
   "sources": []
 }

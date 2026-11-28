@@ -2,92 +2,96 @@
 
 ## Resumen
 
-GPT-X2-125M-CIx-Long-Context es un checkpoint de investigación publicado por el usuario reaperdoesntknow en Hugging Face, derivado del modelo base AxiomicLabs/GPT-X2-125M mediante fine-tuning y adaptación de código. Se trata de un modelo causal decoder-only de 126 millones de parámetros (126.006.398 según safetensors) orientado a experimentación con contexto largo, codificaciones posicionales alternativas y optimizadores heterogéneos. Emplea una arquitectura GPT-X2 compacta con 30 bloques transformer, atención de consultas agrupadas (GQA) y SwiGLU, e incorpora código personalizado que debe cargarse con `trust_remote_code`.
+GPT-X2-125M-CIx-Long-Context es un checkpoint de investigación publicado por el usuario reaperdoesntknow en Hugging Face, derivado por ajuste fino del modelo base AxiomicLabs/GPT-X2-125M. Se trata de un modelo causal decoder-only de 126.006.398 parámetros (unos 125M) orientado a la generación de texto en inglés, con una arquitectura compacta de 30 bloques transformer, 576 dimensiones ocultas y atención con grouped-query attention (9 cabezas de consulta, 3 de clave/valor).
 
-Su relevancia actual reside en que sirve como banco de pruebas para dos innovaciones técnicas concretas: el llamado Symplectic Metric-RoPE Governor, un mecanismo experimental que modula las frecuencias rotacionales de RoPE mediante un estado de reloj hamiltoniano aprendido, y el optimizador CIxOpt, un esquema heterogéneo que enruta distintos tipos de parámetros hacia actualizaciones de estilo AdamW, Lion, AdaMax o ASGD. No es un modelo de producción: el propio autor lo describe como checkpoint de investigación para ablaciones arquitectónicas, estudios de RoPE/YaRN y experimentos de entrenamiento continuado.
+Su relevancia no reside en el rendimiento bruto, sino en su carácter experimental: el repositorio incluye código personalizado para un mecanismo denominado Symplectic Metric-RoPE Governor, que modula las frecuencias de las rotary position embeddings mediante un estado de "reloj" Hamiltoniano aprendido, así como el optimizador CIxOpt, un optimizador heterogéneo que enruta distintos tipos de parámetros hacia reglas de actualización diferentes (AdamW, Lion, AdaMax, ASGD). El modelo declara un contexto máximo de 32.768 tokens mediante `max_position_embeddings` y soporte opcional de escalado YaRN.
 
-El modelo declara 32.768 tokens de longitud de contexto máxima y un vocabulario de 32.768 entradas, con embeddings de entrada y salida atados. Solo soporta inglés según la model card, y se distribuye bajo licencia Apache 2.0.
+El checkpoint está pensado como banco de pruebas para estudios de codificación posicional, ablaciones de arquitectura y experimentos de ajuste fino con contexto largo, no como modelo de producción. La licencia es Apache 2.0 y el idioma declarado es únicamente inglés. El autor advierte explícitamente de que no se han publicado resultados de benchmarks y de que el comportamiento de seguridad no ha sido evaluado.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
-| Parámetro | Valor |
+| Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (GPT-X2) con GQA, RoPE, RMSNorm y SwiGLU |
-| Parámetros totales | 126.006.398 |
-| Parámetros activos | No aplica (modelo denso, no MoE) |
+| Arquitectura | Transformer decoder-only estilo GPT-X2, con GQA, RoPE, RMSNorm y SwiGLU |
+| Parametros totales | 126.006.398 |
+| Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 32.768 tokens (`max_position_embeddings: 32768`) |
-| Tipos de cuantización | No disponible (el repo publica safetensors en el formato original; no se documentan variantes GGUF/AWQ/GPTQ) |
+| Tipos de cuantizacion | no disponible (el repo solo publica safetensors en precisión original; no se documentan GGUF ni otras cuantizaciones) |
 | Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (`transformers`, requiere `trust_remote_code`) |
+| Formato de pesos | safetensors (con `trust_remote_code` requerido por código personalizado) |
 
-Otros parámetros de configuración: `hidden_size: 576`, `num_hidden_layers: 30`, `num_attention_heads: 9`, `num_key_value_heads: 3`, `head_dim: 64`, `intermediate_size: 1536`, `rope_theta: 100000.0`, `rms_norm_eps: 1e-6`, `tie_word_embeddings: true`, `vocab_size: 32768`. Tamaño del repositorio: 1,5 GB.
+Otros datos técnicos relevantes: `vocab_size` 32.768, `hidden_size` 576, 30 capas, 9 cabezas de atención, 3 cabezas KV, `head_dim` 64, `intermediate_size` 1536, `rope_theta` 100000.0, `rms_norm_eps` 1e-6 y embeddings de entrada y salida atados (`tie_word_embeddings: true`). Tamaño del repositorio: 1,5 GB.
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal decoder-only de tipo GPT-X2 con 30 bloques, dimensión oculta de 576 y MLP SwiGLU con dimensión intermedia de 1536. La atención usa 9 cabezas de consulta y 3 cabezas clave/valor (GQA con ratio 3:1), con `head_dim` de 64. Emplea RMSNorm, embeddings de entrada y salida atados, caché dinámico para generación y manejo de position IDs compatible con padding a la izquierda. Soporta escalado RoPE de estilo YaRN de forma opcional.
+La arquitectura es un transformer causal decoder-only compacto de 30 bloques con 576 dimensiones ocultas. Emplea grouped-query attention con 9 cabezas de consulta y 3 de clave/valor (ratio 3:1), RMSNorm como normalización, capas MLP con activación SwiGLU y embeddings atados entre entrada y salida. Las posiciones se codifican con rotary position embeddings (RoPE) con `rope_theta` de 100000.0 y soporte opcional de escalado estilo YaRN. El código incluye manejo de position IDs compatible con left-padding y una pérdida de language modeling segura cuando las etiquetas están enmascaradas, además de soporte de caché dinámica para generación.
 
-La innovación principal del código es el Symplectic Metric-RoPE Governor, un módulo opcional que introduce un estado de reloj global de estilo hamiltoniano y relojes simplécticos locales por capa, junto con proyecciones métricas que generan deltas de masa y espín para modular las frecuencias rotacionales de RoPE. Las proyecciones del governor se inicializan a cero para que, al arrancar, el comportamiento sea idéntico al RoPE estándar y las desviaciones se aprendan durante el entrenamiento. Incluye reordenamiento seguro del estado de reloj para beam search, diagnósticos de reloj y términos de regularización opcionales (`clock_reg_coeff`, `clock_metric_reg_coeff`, `clock_state_reg_coeff`, `clock_smooth_reg_coeff`).
+La innovación principal es el Symplectic Metric-RoPE Governor, un mecanismo opcional que introduce un estado de reloj global de estilo Hamiltoniano y un reloj simpléctico local por capa, junto con módulos de proyección métrica y deltas de masa y espín que modulan las frecuencias rotatorias. Las proyecciones del governor se inicializan a cero para que el modelo arranque con comportamiento RoPE estándar y aprenda desviaciones a partir de ahí. El entrenamiento se diseñó en torno a CIxOpt, un optimizador heterogéneo que enruta matrices de proyección grandes hacia actualizaciones tipo sign-momentum (Lion), parámetros de normalización sensibles hacia AdamW, superficies de embedding y lm-head hacia AdaMax, y parámetros del governor hacia una ruta adaptativa precisa. CIxOpt incluye además centralización de gradiente, weight decay desacoplado, filtrado de cautela para actualizaciones de signo y estado del optimizador en fp32 para seguridad con parámetros fp16/bf16.
 
-El entrenamiento se diseñó en torno a CIxOpt, un optimizador heterogéneo que enruta actualizaciones según el tipo de parámetro: matrices de proyección grandes hacia momentum de signo tipo Lion, parámetros de normalización y sensibles hacia AdamW, superficies de embedding y lm-head hacia enrutamiento compatible con AdaMax, y parámetros del governor hacia una ruta adaptativa precisa. Soporta vectorización `foreach`, centralización de gradientes, weight decay desacoplado, filtrado de cautela basado en discrepancia para actualizaciones de signo y estado del optimizador en fp32 para seguridad con parámetros fp16/bf16. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo RLHF o DPO.
+No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset ni si hubo fases de RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto causal en inglés: continuación de texto, generación libre y modelado de lenguaje autorregresivo.
-- Contexto largo declarado de hasta 32.768 tokens, con soporte opcional de escalado YaRN para extender la ventana efectiva.
-- Atención con GQA que reduce el coste de memoria de la caché KV durante la generación.
-- Soporte de caché dinámico para decodificación incremental.
-- Capacidades experimentales de modulación posicional mediante Symplectic Metric-RoPE Governor (opcional, desactivado por defecto mediante inicialización identidad).
-- Base para fine-tuning de estilo instrucción según los usos previstos declarados por el autor.
-- No se documenta soporte de tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito.
+- Generación de texto causal en inglés: continuación de texto, completado y generación libre con ventana de hasta 32.768 tokens.
+- Modelado de lenguaje de contexto largo: el checkpoint está específicamente adaptado para experimentos de generación con contexto extendido.
+- Codificación posicional configurable: soporte de RoPE estándar, escalado YaRN y, opcionalmente, el governor Symplectic Metric-RoPE con diagnósticos de reloj.
+- Tool calling / function calling: no documentado en la información disponible.
+- Soporte de agentes y razonamiento multi-paso: no documentado; el tamaño de 125M hace poco probable un rendimiento fiable en estas tareas.
+- Capacidades multilingües: limitadas al inglés según la model card.
+- Modo thinking, visión o audio: no disponible.
+- Ajuste fino posterior: el repositorio incluye utilidades de entrenamiento y está pensado para continuación de entrenamiento y ablaciones de arquitectura.
+- Compatibilidad con Hugging Face Transformers mediante código personalizado (`trust_remote_code`).
 
 ## Casos de uso
 
-- Investigación en codificaciones posicionales: el modelo permite activar el governor simpléctico y comparar el comportamiento frente a RoPE estándar en tareas de modelado de lenguaje con contexto largo, aislando el efecto de la modulación de frecuencias.
-- Experimentos de contexto largo en hardware modesto: con 126 M de parámetros y 32.768 tokens de ventana, sirve para validar pipelines de evaluación de long-context (perplejidad por posición, recuperación de agujas en un pajar) sin requerir GPUs de gran capacidad.
-- Pruebas del optimizador CIxOpt: el checkpoint y su código permiten reproducir el enrutamiento heterogéneo de actualizaciones y medir su efecto frente a AdamW en arquitecturas compactas.
-- Ablaciones arquitectónicas: al ser un modelo pequeño con GQA, SwiGLU y RMSNorm, es adecuado para estudiar el impacto de ratios de cabezas KV, dimensiones ocultas o estrategias de atado de embeddings con coste computacional bajo.
-- Entrenamiento continuado y fine-tuning de instrucciones: el autor lo plantea como base para experimentos de continuación de entrenamiento y ajuste estilo instrucción sobre un modelo ya preentrenado.
-- Prototipos locales de generación de texto: por su tamaño, puede ejecutarse en una sola GPU consumer para demos de generación y pruebas de integración con `transformers` antes de escalar a modelos mayores.
-- Estudio de dinámica de entrenamiento: los diagnósticos de reloj y los términos de regularización permiten instrumentar y analizar la evolución del estado interno durante el entrenamiento.
+- Investigación en codificación posicional: el modelo permite comparar RoPE estándar, escalado YaRN y el governor Symplectic Metric-RoPE sobre la misma arquitectura base, aislando el efecto de cada mecanismo en tareas de modelado de lenguaje.
+- Experimentos de contexto largo en hardware modesto: con 125M de parámetros y 32.768 tokens de ventana, sirve para estudiar degradación de atención y perplejidad a distintas distancias sin necesidad de GPUs de datacenter.
+- Pruebas del optimizador CIxOpt: el checkpoint y su código permiten reproducir el enrutamiento heterogéneo de parámetros y comparar su comportamiento frente a AdamW en arquitecturas compactas.
+- Ablaciones de arquitectura: al ser un modelo pequeño con configuración documentada, es adecuado para estudiar el impacto de GQA, SwiGLU, RMSNorm o embeddings atados en un presupuesto de cómputo reducido.
+- Prototipos locales de generación de texto: puede ejecutarse en una sola GPU consumer para demos de completado de texto en inglés, siempre con revisión humana de las salidas.
+- Ajuste fino con instrucciones a pequeña escala: sirve como base para experimentos de instruction tuning y evaluación de técnicas de alineación en modelos compactos.
+- Docencia y formación: útil para ilustrar en clase cómo se implementa un transformer causal con RoPE y GQA desde cero, dado que el código es autocontenido.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card indica explícitamente que los resultados de benchmarks aún no están incluidos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica explícitamente que los resultados de benchmarks aún no están incluidos.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 0,25 GB solo para pesos (126 M × 2 bytes), más caché KV y activaciones; en la práctica, menos de 1 GB para secuencias cortas.
-- VRAM estimada con contexto completo de 32.768 tokens: la caché KV con 30 capas, 3 cabezas KV de dimensión 64 y fp16 ronda los 0,35 GB adicionales, por lo que el modelo completo cabe holgadamente por debajo de 2 GB en fp16.
-- GPU recomendadas: cualquier GPU consumer reciente (RTX 3060, RTX 4060, RTX 4090) es suficiente; también cabe en GPUs de gama baja y en CPU para inferencia lenta.
-- Cabe en GPU consumer: sí, en todas las GPU con al menos 2-4 GB de VRAM efectiva.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` es la vía documentada. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI, ya que el modelo requiere código personalizado y no se publican pesos GGUF.
+- VRAM estimada para inferencia: en fp32, los 126M de parámetros ocupan aproximadamente 0,5 GB; en fp16/bf16, unos 0,25 GB. Con overhead de activaciones y caché KV para contexto largo, el consumo real es mayor, pero sigue siendo muy bajo.
+- Caché KV: con 30 capas, 3 cabezas KV y `head_dim` 64, la caché por token es de 30 × 3 × 64 × 2 (clave y valor) × 2 bytes en fp16 ≈ 23 KB por token; a 32.768 tokens supone del orden de 0,75 GB adicionales.
+- GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060 de 12 GB o superior permite contexto completo con holgura. Para entrenamiento y experimentos con el governor, se recomienda una RTX 4090 o una A100/H100 si se paraleliza.
+- Cabe en GPU consumer: sí, en prácticamente todas las GPU con 4 GB o más de VRAM para inferencia en fp16.
+- Opciones de despliegue: Hugging Face Transformers con `trust_remote_code=True` es la vía documentada. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI, y la presencia de código personalizado complica su integración en estos motores sin portar la implementación.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Notas |
 |---|---|---|---|---|---|
-| GPT-X2-125M-CIx-Long-Context | 126 M | 32.768 | Apache 2.0 | Hugging Face, requiere `trust_remote_code` | Governor simpléctico y CIxOpt experimentales |
-| AxiomicLabs/GPT-X2-125M (base) | ~125 M | No disponible | No disponible en la información | Hugging Face | Modelo base del que deriva este checkpoint |
-| Otros modelos de ~125 M (p. ej. variantes GPT-2 small) | ~124 M | 1.024 (GPT-2 small) | Varía según modelo | Hugging Face | No se dispone de comparación de rendimiento con este checkpoint |
+| GPT-X2-125M-CIx-Long-Context | 126M | 32.768 | Inglés | Apache 2.0 | Checkpoint experimental con governor RoPE y CIxOpt; requiere código personalizado |
+| AxiomicLabs/GPT-X2-125M (modelo base) | ~125M | no disponible | Inglés | Apache 2.0 (según upstream) | Punto de partida del ajuste fino; sin las modificaciones experimentales |
+| GPT-2 small (referencia de la categoría) | 124M | 1.024 | Inglés | MIT | Arquitectura clásica sin GQA ni RoPE; contexto mucho menor |
+| Modelos de 125M tipo Pythia/TinyLlama-style | 70M–1.100M | variable | Inglés | variable | Alternativas habituales para investigación en modelos compactos; datos de comparación no disponibles en esta ficha |
 
-No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría.
+La comparación de rendimiento con estas alternativas no puede establecerse porque el autor no ha publicado benchmarks. La ventaja diferencial del modelo frente a la base es la ventana de contexto declarada de 32.768 tokens y las herramientas de investigación incluidas.
 
 ## Limitaciones y advertencias
 
-- Riesgo de alucinación: el autor advierte que el modelo puede inventar hechos, fechas, citas y detalles técnicos.
-- El soporte de contexto largo no garantiza razonamiento preciso sobre rangos largos; la ventana de 32.768 tokens es una capacidad declarada, no una garantía de calidad.
-- El comportamiento del Symplectic Metric-RoPE Governor es experimental y no ha sido validado de forma independiente.
-- El entrenamiento con CIxOpt puede producir comportamientos distintos a los de líneas base entrenadas con AdamW.
-- El comportamiento de seguridad no ha sido evaluado en profundidad.
-- Sensibilidad al formato del prompt: el modelo puede degradarse con plantillas no vistas durante el entrenamiento.
-- Solo inglés: no hay soporte multilingüe declarado.
-- Uso fuera de alcance: el autor prohíbe explícitamente confiar en el modelo como única autoridad en contextos de alto riesgo (consejo médico, conclusiones legales, decisiones financieras, respuesta a emergencias, selección de personal, infraestructura crítica, vigilancia o ciberoperaciones autónomas).
-- Licencia Apache 2.0, sujeta a posibles restricciones de los términos del modelo base o de los datasets upstream.
-- Requiere `trust_remote_code=True`, lo que implica ejecutar código personalizado del repositorio; conviene auditar el código antes de desplegarlo en producción.
+- Riesgo de alucinación: la model card advierte de que puede inventar hechos, fechas, citas y detalles técnicos.
+- Sesgos: no se documenta ninguna evaluación de sesgos; al derivar de un modelo base de 125M entrenado presumiblemente con datos web en inglés, es esperable que herede sesgos de ese corpus.
+- Contexto largo no equivale a razonamiento largo: el soporte de 32.768 tokens no garantiza recuperación fiable de información a larga distancia.
+- Comportamiento experimental: el governor Symplectic Metric-RoPE y el entrenamiento con CIxOpt pueden producir comportamientos distintos a los de una línea base entrenada con AdamW.
+- Seguridad no evaluada: no se ha realizado una evaluación de seguridad del modelo.
+- Idioma: solo inglés declarado; el rendimiento en castellano no está garantizado.
+- Licencia: Apache 2.0 permite uso comercial, pero el autor condiciona a los términos del modelo y datasets upstream; conviene verificar la licencia de AxiomicLabs/GPT-X2-125M antes de un despliegue comercial.
+- Código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; audítese antes de usarlo en producción.
+- Uso fuera de alcance: no debe emplearse como autoridad única en decisiones médicas, legales, financieras, de emergencias, selección de personal, infraestructura crítica, vigilancia o ciberseguridad autónoma.
+- Sin benchmarks: no hay evidencia publicada de calidad que respalde afirmaciones de rendimiento.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/GPT-X2-125M-CIx-Long-Context
 - Modelo base: https://huggingface.co/AxiomicLabs/GPT-X2-125M
+- Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

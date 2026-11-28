@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/WEPO-llama-3-8b-GGUF",
+  "slug": "mradermacher-wepo-llama-3-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WEPO-llama-3-8b-GGUF",
+  "created_at": "2025-03-14T06:02:28.000Z",
+  "updated_at": "2026-11-28T07:58:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:KLGR123/WEPO-llama-3-8b",
+    "base_model:quantized:KLGR123/WEPO-llama-3-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 464,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820228480,
+  "storage_human": "71.8 GB",
+  "context_length": 8192,
+  "base_model": "KLGR123/WEPO-llama-3-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

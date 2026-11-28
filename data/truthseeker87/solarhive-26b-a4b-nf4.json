@@ -5,7 +5,7 @@
   "author": "Truthseeker87",
   "url": "https://huggingface.co/Truthseeker87/solarhive-26b-a4b-nf4",
   "created_at": "2026-04-18T21:39:27.000Z",
-  "updated_at": "2026-11-21T07:46:24.000Z",
+  "updated_at": "2026-11-21T09:40:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -48,7 +48,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 25805936206,
   "parameters_human": "25.81B",

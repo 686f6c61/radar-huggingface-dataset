@@ -1,0 +1,74 @@
+{
+  "schema": 2,
+  "id": "jakemannix/lorarete-qwen3.8-27b-lora",
+  "slug": "jakemannix-lorarete-qwen3-8-27b-lora",
+  "author": "jakemannix",
+  "url": "https://huggingface.co/jakemannix/lorarete-qwen3.8-27b-lora",
+  "created_at": "2026-11-19T07:15:57.000Z",
+  "updated_at": "2026-11-28T05:43:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3_5",
+    "lorarete",
+    "arete",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233723632,
+  "storage_human": "234 MB",
+  "context_length": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jakemannix/arete-realignment-adapters · Hugging Face",
+      "url": "https://huggingface.co/jakemannix/arete-realignment-adapters",
+      "snippet": "Instructions to use jakemannix/arete-realignment-adapters with libraries, inference providers, notebooks, and local apps. Follow …Read more"
+    },
+    {
+      "title": "AMAImedia/Qwen3.8-27B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/Qwen3.8-27B-LoRA",
+      "snippet": "Aug 30, 2026 · A collection of 12 LoRA adapters for Qwen3.8-27B, covering various domains: Each adapter is in its own subfolder …Read more"
+    },
+    {
+      "title": "New LoRA Adapter Lifts Qwen3.8 Coding Success From 39% to 65%",
+      "url": "https://www.marktechpost.com/2026/11/18/hugging-face-qwen3-8-27b-pi-adapted-lora/",
+      "snippet": "Nov 18, 2026 · Hugging Face’s harness-hub team has released Qwen3.8-27B-pi-adapted, a LoRA adapter for Qwen3.8-27B. It was …Read more"
+    },
+    {
+      "title": "OpenCode LoRA for Qwen3.8-27B: Benchmarks and Setup",
+      "url": "https://explainx.ai/blog/qwen38-27b-opencode-harness-adapter-lora-november-2026",
+      "snippet": "Nov 18, 2026 · The org also publishes Qwen3.8-27B-opencode-adapted-GGUF companions for llama.cpp, mirroring the Pi release. …Read more"
+    },
+    {
+      "title": "Qwen 3.8 27B — 27.78B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/qwen3.8-27b",
+      "snippet": "Aug 14, 2026 · Detects your GPU, recommends the best model, downloads it, and starts chatting — zero config. Benchmarks your …Read more"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "kyssta",
   "url": "https://huggingface.co/kyssta/Qori-OCR",
   "created_at": "2026-11-28T00:27:25.000Z",
-  "updated_at": "2026-11-28T00:37:22.000Z",
+  "updated_at": "2026-11-28T05:56:24.000Z",
   "license": "research-use",
   "license_family": "unknown",
   "pipeline_tag": "image-to-text",
@@ -14,17 +14,7 @@
     "en"
   ],
   "tags": [
-    "onnxruntime",
     "onnx",
-    "ocr",
-    "text-recognition",
-    "ctc",
-    "quantized",
-    "scene-text",
-    "image-to-text",
-    "en",
-    "dataset:mjsynth",
-    "license:other",
     "region:us"
   ],
   "likes": 0,
@@ -32,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 25546108,
-  "storage_human": "26 MB",
+  "storage_bytes": 67299703,
+  "storage_human": "67 MB",
   "context_length": null,
   "base_model": null,
   "formats": [

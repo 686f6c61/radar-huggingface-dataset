@@ -5,7 +5,7 @@
   "author": "dronefreak",
   "url": "https://huggingface.co/dronefreak/bdd100k-mmdet-cascade-rcnn-x101-32x4d-fpn-1x",
   "created_at": "2026-11-26T18:12:31.000Z",
-  "updated_at": "2026-11-27T08:13:40.000Z",
+  "updated_at": "2026-11-27T21:28:13.000Z",
   "license": "bdd100k",
   "license_family": "unknown",
   "pipeline_tag": "object-detection",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 87938044,
   "parameters_human": "87.9M",

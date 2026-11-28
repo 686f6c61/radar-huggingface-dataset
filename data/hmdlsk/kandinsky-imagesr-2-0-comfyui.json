@@ -5,7 +5,7 @@
   "author": "hmdlsk",
   "url": "https://huggingface.co/hmdlsk/Kandinsky-ImageSR-2.0-ComfyUI",
   "created_at": "2026-11-26T03:34:06.000Z",
-  "updated_at": "2026-11-26T05:56:39.000Z",
+  "updated_at": "2026-11-28T00:12:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -22,7 +22,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 12,
+  "likes": 15,
   "downloads_30d": 0,
   "trending_score": 12,
   "parameters": null,
@@ -38,8 +38,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "hmdlsk/Kandinsky-ImageSR-2.0-ComfyUI-Unofficial",
+  "renamed_at": "2026-11-28T09:35:35.149Z",
   "benchmarks": [],
   "sources": []
 }

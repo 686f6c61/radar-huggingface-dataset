@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "KhawajaAfnan/voicecode-asr",
+  "slug": "khawajaafnan-voicecode-asr",
+  "author": "KhawajaAfnan",
+  "url": "https://huggingface.co/KhawajaAfnan/voicecode-asr",
+  "created_at": "2026-11-28T10:41:21.000Z",
+  "updated_at": "2026-11-28T10:51:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3-asr",
+    "lora",
+    "QwenLocalHackathon",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:adapter:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3595828048,
+  "storage_human": "3.6 GB",
+  "context_length": 65536,
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

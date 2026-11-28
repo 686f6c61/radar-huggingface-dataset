@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/asteroid-14b-v0.1-GGUF",
+  "slug": "mradermacher-asteroid-14b-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/asteroid-14b-v0.1-GGUF",
+  "created_at": "2025-03-12T06:44:26.000Z",
+  "updated_at": "2026-11-28T07:59:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ozone-research/asteroid-14b-v0.1",
+    "base_model:quantized:ozone-research/asteroid-14b-v0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043490528,
+  "storage_human": "102.0 GB",
+  "context_length": 65536,
+  "base_model": "ozone-research/asteroid-14b-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

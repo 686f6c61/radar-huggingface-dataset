@@ -5,7 +5,7 @@
   "author": "dronefreak",
   "url": "https://huggingface.co/dronefreak/bdd100k-mmdet-retinanet-r50-fpn-1x",
   "created_at": "2026-11-26T20:17:10.000Z",
-  "updated_at": "2026-11-27T08:13:46.000Z",
+  "updated_at": "2026-11-27T21:29:35.000Z",
   "license": "bdd100k",
   "license_family": "unknown",
   "pipeline_tag": "object-detection",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 36569662,
   "parameters_human": "36.6M",

@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/X-Ray_Alpha_27B_Base-GGUF",
+  "slug": "mradermacher-x-ray_alpha_27b_base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/X-Ray_Alpha_27B_Base-GGUF",
+  "created_at": "2025-03-27T23:10:19.000Z",
+  "updated_at": "2026-11-28T07:57:53.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Sicarius-Prototyping/X-Ray_Alpha_27B_Base",
+    "base_model:quantized:Sicarius-Prototyping/X-Ray_Alpha_27B_Base",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 111,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 188130689088,
+  "storage_human": "188.1 GB",
+  "context_length": 131072,
+  "base_model": "Sicarius-Prototyping/X-Ray_Alpha_27B_Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

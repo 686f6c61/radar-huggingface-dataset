@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/fp8_block-e2e",
   "created_at": "2026-07-25T04:55:48.000Z",
-  "updated_at": "2026-11-26T00:31:40.000Z",
+  "updated_at": "2026-11-28T00:31:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,7 +18,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 668,
+  "downloads_30d": 660,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",

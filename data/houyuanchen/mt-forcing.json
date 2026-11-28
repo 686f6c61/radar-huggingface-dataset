@@ -5,7 +5,7 @@
   "author": "houyuanchen",
   "url": "https://huggingface.co/houyuanchen/MT-Forcing",
   "created_at": "2026-10-18T17:07:41.000Z",
-  "updated_at": "2026-11-27T08:00:11.000Z",
+  "updated_at": "2026-11-27T11:01:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 0,
+  "downloads_30d": 702,
   "trending_score": 0,
   "parameters": 17532854464,
   "parameters_human": "17.53B",

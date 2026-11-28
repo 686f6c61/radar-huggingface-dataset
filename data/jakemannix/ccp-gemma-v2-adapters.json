@@ -5,7 +5,7 @@
   "author": "jakemannix",
   "url": "https://huggingface.co/jakemannix/ccp-gemma-v2-adapters",
   "created_at": "2026-11-19T07:15:57.000Z",
-  "updated_at": "2026-11-19T07:16:45.000Z",
+  "updated_at": "2026-11-28T05:43:14.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
     "safetensors",
     "lora",
     "gemma4",
+    "comma",
     "base_model:google/gemma-4-26B-A4B-it",
     "base_model:adapter:google/gemma-4-26B-A4B-it",
     "license:gemma",
@@ -39,8 +40,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "jakemannix/comma-gemma4-26b-a4b-lora",
+  "renamed_at": "2026-11-28T10:03:42.649Z",
   "benchmarks": [],
   "sources": []
 }

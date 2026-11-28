@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Cohere-Transcribe-03-2026-Tensix-BFP8-Components",
   "created_at": "2026-11-14T08:05:28.000Z",
-  "updated_at": "2026-11-27T04:03:07.000Z",
+  "updated_at": "2026-11-28T04:02:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -15,7 +15,6 @@
     "en"
   ],
   "tags": [
-    "pytorch",
     "tenstorrent",
     "tensix",
     "speech-recognition",
@@ -32,7 +31,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
@@ -50,8 +49,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Xylolabs/Cohere-Transcribe-03-2026-Tenstorrent-Tensix-BFP8-Components",
-  "renamed_at": "2026-11-15T04:40:04.535Z",
+  "renamed_to": "Xylolabs/Cohere-Transcribe-03-2026-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:40:07.062Z",
   "benchmarks": [],
   "sources": [
     {

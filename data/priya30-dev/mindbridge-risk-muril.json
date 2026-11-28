@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "priya30-dev/mindbridge-risk-muril",
+  "slug": "priya30-dev-mindbridge-risk-muril",
+  "author": "priya30-dev",
+  "url": "https://huggingface.co/priya30-dev/mindbridge-risk-muril",
+  "created_at": "2026-11-28T08:38:06.000Z",
+  "updated_at": "2026-11-28T08:59:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "mental-health",
+    "text-classification",
+    "risk-detection",
+    "en",
+    "hi",
+    "base_model:google/muril-base-cased",
+    "base_model:finetune:google/muril-base-cased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237558531,
+  "parameters_human": "237.6M",
+  "storage_bytes": 950257668,
+  "storage_human": "950 MB",
+  "context_length": null,
+  "base_model": "google/muril-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

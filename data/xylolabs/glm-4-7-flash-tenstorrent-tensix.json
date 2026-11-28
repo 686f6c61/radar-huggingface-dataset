@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/GLM-4.7-Flash-Tenstorrent-Tensix",
   "created_at": "2026-11-12T10:03:43.000Z",
-  "updated_at": "2026-11-27T12:28:38.000Z",
+  "updated_at": "2026-11-28T05:14:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

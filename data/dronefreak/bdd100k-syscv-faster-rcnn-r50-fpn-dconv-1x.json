@@ -5,7 +5,7 @@
   "author": "dronefreak",
   "url": "https://huggingface.co/dronefreak/bdd100k-syscv-faster-rcnn-r50-fpn-dconv-1x",
   "created_at": "2026-11-27T17:19:12.000Z",
-  "updated_at": "2026-11-27T17:19:45.000Z",
+  "updated_at": "2026-11-27T21:33:36.000Z",
   "license": "bdd100k",
   "license_family": "unknown",
   "pipeline_tag": "object-detection",

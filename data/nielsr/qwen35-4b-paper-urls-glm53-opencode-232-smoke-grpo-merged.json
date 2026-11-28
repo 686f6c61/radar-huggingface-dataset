@@ -21,13 +21,13 @@
     "agent-distill",
     "text-generation",
     "conversational",
-    "base_model:nielsr/qwen35-4b-paper-urls-glm53-opencode-232-smoke-sft-merged",
-    "base_model:finetune:nielsr/qwen35-4b-paper-urls-glm53-opencode-232-smoke-sft-merged",
+    "base_model:agent-distillation-hf/qwen35-4b-paper-urls-glm53-opencode-232-smoke-sft-merged",
+    "base_model:finetune:agent-distillation-hf/qwen35-4b-paper-urls-glm53-opencode-232-smoke-sft-merged",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "agent-distillation-hf/qwen35-4b-paper-urls-glm53-opencode-232-smoke-grpo-merged",
+  "renamed_at": "2026-11-28T12:45:20.121Z",
   "benchmarks": [],
   "sources": []
 }

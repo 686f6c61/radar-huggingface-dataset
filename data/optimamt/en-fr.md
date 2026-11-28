@@ -2,96 +2,104 @@
 
 ## Resumen
 
-OptimaMT/en-fr es una conversión a ONNX optimizada del modelo de traducción automática Xenova/opus-mt-en-fr, que a su vez es una exportación del clásico Helsinki-NLP/opus-mt-en-fr de la Universidad de Helsinki. El modelo traduce texto de inglés a francés y está pensado para ejecutarse en el navegador o en entornos ligeros mediante transformers.js y ONNX Runtime. La modificación introducida por OptimaMT consiste en reconstruir únicamente el decoder fusionado cuantizado (`decoder_model_merged_quantized.onnx`), moviendo la proyección de salida fuera de sus dos ramas, sin alterar los pesos ni el vocabulario.
+OptimaMT/en-fr es un modelo de traduccion automatica ingles-frances publicado por OptimaMT, un proyecto que redistribuye los modelos OPUS-MT de la Universidad de Helsinki en formato ONNX optimizado para transformers.js. El modelo es una copia directa de Xenova/opus-mt-en-fr (revision `28726206f808`) en la que unicamente se ha reconstruido el decoder fusionado cuantizado, aplicando el modo rapido de ONNX Runtime (`disable_quant_qdq = 1`) para reducir el consumo de memoria y acelerar la inferencia.
 
-El interés de esta variante es puramente de eficiencia en memoria: según la model card, tras la carga se reduce el consumo entre un 46 % y un 48 % en Linux y Windows con `disable_quant_qdq = 1`, y entre un 14 % y un 21 % con los valores por defecto de ONNX Runtime, manteniendo tokens de salida idénticos. Es, por tanto, un reemplazo directo (drop-in) para despliegues de traducción inglés-francés de bajo coste donde el espacio en memoria es crítico.
+La arquitectura subyacente es Marian NMT, un transformer encoder-decoder especializado en traduccion, con un vocabulario de 59.514 tokens. El modelo resuelve la traduccion de texto de ingles a frances y esta pensado para su uso en navegador o en aplicaciones de escritorio mediante transformers.js y ONNX Runtime, no para servir como modelo de proposito general.
 
-Forma parte del proyecto OptimaMT, que publica 49 pares de idiomas bajo el patrón `OptimaMT/<src>-<tgt>`. La arquitectura subyacente es MarianMT, un transformer encoder-decoder clásico de traducción, con un vocabulario de 59.514 tokens y licencia CC BY 4.0.
+Su relevancia radica en la reduccion de huella: tras la carga, el modelo pasa de 504 a 272 MiB en Linux (-46 %) y de 481 a 251 MiB en Windows (-48 %) con `disable_quant_qdq = 1`, manteniendo exactamente los mismos tokens de salida que el original. Esto lo hace adecuado para traductores de pantalla en tiempo real y aplicaciones con recursos limitados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder (MarianMT) |
+| Arquitectura | Marian NMT (transformer encoder-decoder) |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | ONNX cuantizado (q8 en el ejemplo de uso); decoder fusionado cuantizado |
-| Idiomas soportados | inglés (en), francés (fr) |
+| Tipos de cuantizacion | ONNX cuantizado (q8) con decoder fusionado; modo rapido de ONNX Runtime (`disable_quant_qdq = 1`) |
+| Idiomas soportados | en (ingles), fr (frances) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | ONNX (transformers.js); repo de 0,1 GB |
+| Formato de pesos | ONNX (`onnx/decoder_model_merged_quantized.onnx` reconstruido; resto de ficheros identicos al original) |
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura MarianMT de Helsinki-NLP, un transformer encoder-decoder con atención estándar, diseñado específicamente para traducción automática neuronal. No se dispone de información sobre el número exacto de parámetros ni sobre la composición del corpus de entrenamiento original en la documentación proporcionada; el modelo base es OPUS-MT, entrenado por la Universidad de Helsinki sobre datos de OPUS.
+El modelo es un Marian NMT, la arquitectura de traduccion neuronal desarrollada en el marco del proyecto OPUS de la Universidad de Helsinki. Se trata de un transformer encoder-decoder clasico orientado a traduccion automatica, con un vocabulario de 59.514 tokens y pesos originales de Helsinki-NLP/opus-mt-en-fr.
 
-La innovación de esta variante no está en el entrenamiento, sino en la exportación: se ha reconstruido el decoder fusionado cuantizado moviendo la proyección de salida fuera de sus dos ramas (cambio únicamente en el grafo). Todos los demás ficheros del repositorio son idénticos byte a byte a los del modelo base Xenova/opus-mt-en-fr en la revisión `28726206f808`. El resultado son los mismos pesos y los mismos tokens de salida con menor huella de memoria.
+OptimaMT no reentrena ni modifica los pesos: solo altera el grafo ONNX del decoder fusionado, moviendo la proyeccion de salida fuera de sus dos ramas y activando el modo rapido de ONNX Runtime. El resto de ficheros son identicos byte a byte al export de Xenova. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en la informacion proporcionada.
 
 ## Capacidades
 
-- Traducción de texto de inglés a francés.
-- Generación de texto seq2seq (pipeline `text2text-generation`).
-- Ejecución en navegador y en Node.js mediante transformers.js.
-- Inferencia en CPU con ONNX Runtime (probado con ONNX Runtime 1.31.1, 4 hilos).
-- Ejecución en Python mediante onnxruntime, sentencepiece y numpy (script `translate.py`).
-- No se documentan capacidades de tool calling, agentes, razonamiento multi-paso, visión ni audio.
-- Capacidad multilingüe limitada al par inglés-francés.
+- Traduccion de texto de ingles a frances (direccion unica en-fr).
+- Generacion de traduccion por decodificacion greedy, con resultados identicos token a token al modelo original.
+- Ejecucion en navegador mediante transformers.js y en Python mediante onnxruntime, sentencepiece y numpy.
+- Inferencia en CPU con 4 hilos; no requiere GPU.
+- No soporta tool calling ni function calling.
+- No soporta agentes ni razonamiento multi-paso.
+- No dispone de capacidades de vision, audio ni modo de razonamiento extendido.
+- Capacidad multilingue limitada a los dos idiomas del par en-fr.
 
 ## Casos de uso
 
-- Traducción en el navegador sin backend: el modelo se carga con transformers.js y procesa texto localmente, lo que permite ofrecer traducción EN-FR en aplicaciones web sin enviar datos a un servidor.
-- Extensiones de navegador para traducción de páginas o selecciones: el tamaño reducido del repo (0,1 GB) y la cuantización q8 facilitan su empaquetado en una extensión.
-- Preprocesado de datos multilingües en pipelines de NLP: traducción por lotes de corpus ingleses a francés antes de tareas posteriores (análisis, etiquetado, búsqueda).
-- Traducción de documentación técnica y READMEs: el modelo está entrenado en el dominio OPUS, adecuado para texto informativo y técnico de uso general.
-- Prototipado rápido de funcionalidades de traducción en aplicaciones de escritorio o Electron, usando ONNX Runtime en CPU sin GPU.
-- Entornos con restricciones de memoria: gracias a la reducción del 46-48 % con `disable_quant_qdq = 1`, encaja en dispositivos con poca RAM donde el modelo base no cabría.
-- Traducción de mensajes en aplicaciones de chat o foros: latencia baja en CPU con 4 hilos, suficiente para frases cortas en tiempo interactivo.
+- Traduccion de pantalla en tiempo real: el modelo se integra en OpenCircle, un traductor de escritorio para Windows y Linux que lo distribuye desde la version v0.1.4, aprovechando su baja huella de memoria (251-272 MiB) para ejecutarse en segundo plano sin penalizar al sistema.
+- Traduccion en el navegador sin backend: mediante transformers.js con `dtype: "q8"`, permite traducir contenido en cliente sin enviar texto a un servidor, util para privacidad y para reducir costes de infraestructura.
+- Traduccion de documentacion tecnica en-fr: adecuado para pipelines por lotes de textos largos en ingles que deban publicarse en frances, con la calidad medida en FLORES-200 (BLEU 46,42, chrF 68,96).
+- Preprocesado de datasets multilingues: util para generar versiones francesas de corpus en ingles en tareas de aumento de datos o evaluacion de sistemas de recuperacion de informacion.
+- Traduccion de subtitulos y contenido audiovisual: el bajo consumo de memoria permite ejecutarlo junto a otros componentes (reconocimiento de voz, sincronizacion) en maquinas modestas.
+- Prototipado de asistentes de traduccion en aplicaciones de escritorio Electron o Tauri: el formato ONNX y la integracion con transformers.js simplifican el empaquetado multiplataforma.
+- Traduccion de correos y mensajes en herramientas ofimaticas: el modelo cabe en equipos sin GPU dedicada y responde con latencia interactiva en CPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks de calidad de traducción (BLEU, COMET, etc.) en la información disponible. La model card únicamente reporta métricas de memoria tras la carga:
+| Benchmark | Resultado |
+|---|---|
+| FLORES-200 devtest (1.012 frases), BLEU (greedy) | 46,42 |
+| FLORES-200 devtest (1.012 frases), chrF (greedy) | 68,96 |
+| Memoria tras carga, Linux, `disable_quant_qdq = 1` | 504 → 272 MiB (-46 %) |
+| Memoria tras carga, Windows, `disable_quant_qdq = 1` | 481 → 251 MiB (-48 %) |
+| Memoria tras carga, Linux, valores por defecto de ONNX Runtime | 270 → 212 MiB (-21 %) |
+| Memoria tras carga, Windows, valores por defecto de ONNX Runtime | 190 → 163 MiB (-14 %) |
+| Aceleracion del modo rapido | 2,3–2,5× |
+| Tokens de salida | Identicos al original |
 
-| Configuración | Linux (MiB) | Windows (MiB) | Tokens idénticos |
-|---|---:|---:|---|
-| `disable_quant_qdq = 1` | 504 → 272 (-46 %) | 481 → 251 (-48 %) | sí |
-| Valores por defecto de ONNX Runtime | 270 → 212 (-21 %) | 190 → 163 (-14 %) | sí |
-
-Medido con ONNX Runtime 1.31.1, CPU, 4 hilos (Windows en una máquina virtual).
+Medido con ONNX Runtime 1.31.1, CPU, 4 hilos (Linux; Windows en maquina virtual). No se han publicado resultados de MMLU, HumanEval ni GSM8K, que no aplican a este modelo.
 
 ## Requisitos de hardware
 
-- VRAM: no aplica; el modelo está pensado para CPU. Consumo de memoria tras la carga entre 163 y 272 MiB según configuración y plataforma.
-- GPU recomendadas: no disponibles; no se documenta soporte GPU.
-- Cabe en cualquier GPU consumer y en la mayoría de dispositivos con más de ~300 MiB de RAM libre.
-- Opciones de despliegue: transformers.js (navegador/Node.js), ONNX Runtime (Python vía `translate.py`).
-- Latencia y throughput: no disponibles de forma numérica; la model card indica resultados interactivos en el Space OptimaMT/results.
+- VRAM: no requiere GPU; la inferencia se ejecuta en CPU.
+- Memoria RAM estimada tras la carga: 251-272 MiB con `disable_quant_qdq = 1`; 163-212 MiB con los valores por defecto de ONNX Runtime.
+- GPU recomendadas: no aplica; el modelo esta disenado para CPU.
+- Cabe en cualquier equipo de consumo, incluidos portatiles modestos y sistemas embebidos con al menos ~300 MiB de RAM libre para el proceso.
+- Opciones de despliegue: transformers.js (navegador y Node.js), onnxruntime en Python (con sentencepiece y numpy), ONNX Runtime 1.31.1 o superior.
+- Latencia y throughput: no se proporcionan cifras absolutas de latencia o throughput; solo la aceleracion relativa de 2,3-2,5× del modo rapido frente a los valores por defecto.
 
 ## Comparativa con modelos similares
 
-| Modelo | Arquitectura | Idiomas | Contexto | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Notas |
 |---|---|---|---|---|---|---|
-| OptimaMT/en-fr | MarianMT (ONNX) | en→fr | no disponible | CC BY 4.0 | ONNX | Decoder fusionado optimizado en memoria |
-| Xenova/opus-mt-en-fr | MarianMT (ONNX) | en→fr | no disponible | CC BY 4.0 | ONNX | Modelo base, sin la optimización de memoria |
-| Helsinki-NLP/opus-mt-en-fr | MarianMT | en→fr | no disponible | CC BY 4.0 | PyTorch/safetensors | Modelo original de OPUS-MT |
+| OptimaMT/en-fr | no disponible | no disponible | en, fr | CC BY 4.0 | ONNX | Decoder fusionado optimizado; 2,3-2,5× mas rapido y ~46-48 % menos memoria que el original |
+| Xenova/opus-mt-en-fr | no disponible | no disponible | en, fr | CC BY 4.0 | ONNX | Modelo base del que deriva; mismo rendimiento de traduccion, mayor huella |
+| Helsinki-NLP/opus-mt-en-fr | no disponible | no disponible | en, fr | CC BY 4.0 | safetensors/PyTorch | Pesos originales de OPUS-MT; requiere framework de inferencia completo |
 
-No se dispone de datos de rendimiento comparativo (BLEU/COMET) entre estas variantes en la información proporcionada; la diferencia documentada es exclusivamente de consumo de memoria con salidas idénticas.
+No se dispone de datos de benchmarks comparativos con otros sistemas de traduccion en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Solo traduce inglés a francés; no es un modelo multilingüe general.
-- No se documentan evaluaciones de sesgo, alucinación o fidelidad de traducción.
-- La calidad de traducción hereda las limitaciones del modelo OPUS-MT original, orientado a texto de dominio general; puede degradarse en jerga muy específica, poesía o texto muy coloquial.
-- La optimización se ha validado únicamente en CPU con ONNX Runtime 1.31.1 y 4 hilos; el comportamiento en otras configuraciones no está documentado.
-- El ejemplo de uso requiere la opción `disable_quant_qdq` para obtener la reducción máxima de memoria; sin ella, la mejora es menor (14-21 %).
-- La licencia CC BY 4.0 permite uso comercial con atribución; es necesario citar a OPUS-MT (Universidad de Helsinki), la exportación de Xenova y la modificación de OptimaMT.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en producción.
+- Modelo de direccion unica: solo traduce de ingles a frances; no soporta el par inverso ni otros idiomas.
+- Es una copia optimizada, no un modelo reentrenado: hereda los sesgos y limitaciones de OPUS-MT en dominio y registro.
+- Riesgo de alucinacion y errores en textos muy especializados, terminologia tecnica o expresiones idiomaticas; la calidad medida en FLORES-200 no garantiza el mismo rendimiento en dominios concretos.
+- No se dispone de informacion sobre la longitud maxima de contexto; textos largos pueden requerir segmentacion manual.
+- Licencia CC BY 4.0: permite uso comercial con atribucion a OPUS-MT (Universidad de Helsinki), al export de Xenova y a la modificacion de OptimaMT.
+- Los resultados de memoria y velocidad se midieron con ONNX Runtime 1.31.1, CPU y 4 hilos; el rendimiento puede variar en otras configuraciones.
+- El modelo esta pensado para transformers.js y ONNX Runtime; no se distribuyen pesos en safetensors ni GGUF en este repositorio.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/OptimaMT/en-fr
-- Repositorio OptimaMT: https://github.com/AmerAlreyahi/OptimaMT
-- Informe del método: https://github.com/AmerAlreyahi/OptimaMT/blob/main/REPORT.md
-- Script de traducción en Python: https://github.com/AmerAlreyahi/OptimaMT/blob/main/scripts/translate.py
+- Modelo base en Hugging Face: https://huggingface.co/Xenova/opus-mt-en-fr
+- Pesos originales OPUS-MT: https://huggingface.co/Helsinki-NLP/opus-mt-en-fr
+- Repositorio del proyecto: https://github.com/AmerAlreyahi/OptimaMT
+- Coleccion con los 51 pares: https://huggingface.co/collections/OptimaMT/optimamt-lighter-opus-mt-onnx-models-6af228dc9cd91f015e56e869
+- Informe metodologico: https://github.com/AmerAlreyahi/OptimaMT/blob/main/REPORT.md
 - Resultados interactivos: https://huggingface.co/spaces/OptimaMT/results
-- Modelo base ONNX: https://huggingface.co/Xenova/opus-mt-en-fr
-- Modelo original OPUS-MT: https://huggingface.co/Helsinki-NLP/opus-mt-en-fr
+- Script de traduccion en Python: https://github.com/AmerAlreyahi/OptimaMT/blob/main/scripts/translate.py
+- Aplicacion OpenCircle: https://github.com/AmerAlreyahi/OpenCircle

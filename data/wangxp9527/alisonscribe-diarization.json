@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "id": "wangxp9527/alisonscribe-diarization",
+  "slug": "wangxp9527-alisonscribe-diarization",
+  "author": "wangxp9527",
+  "url": "https://huggingface.co/wangxp9527/alisonscribe-diarization",
+  "created_at": "2026-11-28T09:04:16.000Z",
+  "updated_at": "2026-11-28T09:04:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "speaker-diarization",
+    "coreml",
+    "fluidaudio",
+    "base_model:FluidInference/speaker-diarization-coreml",
+    "base_model:finetune:FluidInference/speaker-diarization-coreml",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21352840,
+  "storage_human": "21 MB",
+  "context_length": null,
+  "base_model": "FluidInference/speaker-diarization-coreml, pyannote/speaker-diarization-community-1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DiarizationLM: Speaker Diarization Post-Processing with Large ...",
+      "url": "http://go/v1/AaC_CGMUvYMbawqaLAF48kBA1Sj-MR_9kIppFwvagbmWI3GwPtlCIUxHWG1lHjn9eOs3QOyuempd21CJB8g4U2kjeQ0c0qESH_u3yaFgcfBN4Lbu68b5JeB2cB4tMiQ8uI8Qo4vSUHSgiadAAnmQIwuTaYFcj9MMVz_7krlqcHlrjjpg6z0naPZ_iuHYx7TSSy5uOMZWAw",
+      "snippet": "In this paper, we introduce DiarizationLM, a framework to leverage large language models (LLM) to post-process the outputs from a speaker diarization system. Various goals can be achieved with the proposed framework, such as improving the readability of the diarized transcript, or reducing ..."
+    },
+    {
+      "title": "DiarizationLM: Speaker Diarization Post-Processing with Large ...",
+      "url": "http://go/v1/AaC_CGMUvYMbawqaLAF48kBA1Sj-MR_9kIppFwvagrIhBo-pHS1hisSr9-xnZptKTNq4gpbvu5vyEAKKD3xYjddvuw6fyRaqMHL4hz7MUqvDVf2x6gH6I_TcpPz4lF6oyCggrRNTgO8VlwRnuNTfVNBVAwTPPVGZr_M71k6gAU6Hs9ZRGfeUa8RpP0n0XljXqPkL",
+      "snippet": "In this paper, we introduce DiarizationLM, a framework to leverage large language models (LLM) to post-process the outputs from a speaker diarization system. Various goals can be achieved with the proposed framework, such as improving the readability of the diarized transcript, or reducing ..."
+    }
+  ]
+}

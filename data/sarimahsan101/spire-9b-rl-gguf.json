@@ -1,0 +1,91 @@
+{
+  "schema": 2,
+  "id": "sarimahsan101/Spire-9B-RL-GGUF",
+  "slug": "sarimahsan101-spire-9b-rl-gguf",
+  "author": "sarimahsan101",
+  "url": "https://huggingface.co/sarimahsan101/Spire-9B-RL-GGUF",
+  "created_at": "2026-11-28T00:23:16.000Z",
+  "updated_at": "2026-11-28T08:26:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vulkan",
+    "spir-v",
+    "glsl",
+    "wgsl",
+    "webgpu",
+    "gpu-compute",
+    "shaders",
+    "code",
+    "reinforcement-learning",
+    "grpo",
+    "qwen3.5",
+    "gguf",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:sarimahsan101/Spire-9B-RL",
+    "base_model:finetune:sarimahsan101/Spire-9B-RL",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300205,
+  "storage_human": "19.3 GB",
+  "context_length": null,
+  "base_model": "sarimahsan101/Spire-9B-RL",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "GPU Compute Shader Generation",
+      "dataset": "Spire Held-Out 104-Task Compute Shader Benchmark (GLSL + WGSL)",
+      "metric": "Overall Pass@1 (208 tests)",
+      "value": 59.62
+    },
+    {
+      "task": "GPU Compute Shader Generation",
+      "dataset": "Spire Held-Out 104-Task Compute Shader Benchmark (GLSL + WGSL)",
+      "metric": "GLSL Pass@1 (104 tests)",
+      "value": 65.38
+    },
+    {
+      "task": "GPU Compute Shader Generation",
+      "dataset": "Spire Held-Out 104-Task Compute Shader Benchmark (GLSL + WGSL)",
+      "metric": "WGSL Pass@1 (104 tests)",
+      "value": 53.85
+    },
+    {
+      "task": "GPU Compute Shader Generation",
+      "dataset": "Spire Held-Out 104-Task Compute Shader Benchmark (GLSL + WGSL)",
+      "metric": "Compile & Run Rate",
+      "value": 91.83
+    }
+  ],
+  "sources": []
+}

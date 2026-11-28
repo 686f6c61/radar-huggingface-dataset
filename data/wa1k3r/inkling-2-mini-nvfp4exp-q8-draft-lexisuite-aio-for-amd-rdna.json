@@ -5,7 +5,7 @@
   "author": "Wa1k3r",
   "url": "https://huggingface.co/Wa1k3r/Inkling-2-Mini-NVFP4exp-Q8-draft-LexiSuite-AIO-for-AMD-RDNA",
   "created_at": "2026-11-23T19:57:05.000Z",
-  "updated_at": "2026-11-25T18:57:18.000Z",
+  "updated_at": "2026-11-28T05:58:25.000Z",
   "license": "lexisuite-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -51,7 +51,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 108,
+  "downloads_30d": 860,
   "trending_score": 0,
   "parameters": 26706544272,
   "parameters_human": "26.71B",

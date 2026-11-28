@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "id": "boost-tri-uw/boost-study-best-checkpoints",
+  "slug": "boost-tri-uw-boost-study-best-checkpoints",
+  "author": "boost-tri-uw",
+  "url": "https://huggingface.co/boost-tri-uw/boost-study-best-checkpoints",
+  "created_at": "2026-11-25T22:15:48.000Z",
+  "updated_at": "2026-11-27T00:56:09.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "reinforcement-learning",
+    "flow-matching",
+    "steering",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36357555052,
+  "storage_human": "36.4 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boost — Communication & image de marque",
+      "url": "https://getboost.fr/",
+      "snippet": "Un savoir-faire qui ne se sait pas ne rapporte rien. Vos clients choisissent ceux qu'ils connaissent et en qui ils ont confiance. Boost …"
+    },
+    {
+      "title": "Connexion - VINCI",
+      "url": "https://boost.vinci.com/",
+      "snippet": "Soutien scolaire en ligne VINCI J'ai déjà créé un compte BOOST, je me connecte."
+    },
+    {
+      "title": "Boost C++ Homepage",
+      "url": "https://www.boost.org/",
+      "snippet": "Mar 27, 2026 · Boost helped our small academic–government research team to punch well above our weight. Instead of spending …"
+    },
+    {
+      "title": "Boost Learning - Courses | Resources | Lessons | eBooks",
+      "url": "https://boost-learning.com/",
+      "snippet": "Boost is a digital learning platform that provides quality planning, teaching and learning resources, empowering teachers to deliver a …"
+    },
+    {
+      "title": "Boost - Boost Group",
+      "url": "https://boostgroup.eu/fr",
+      "snippet": "Boost, c’est la passion de la fidélité. Au cours des 30 dernières années, Boost a développé des programmes de fidélisation gagnants …"
+    }
+  ]
+}

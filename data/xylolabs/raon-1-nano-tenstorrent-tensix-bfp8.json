@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Raon-1-nano-Tenstorrent-Tensix-BFP8",
   "created_at": "2026-11-25T07:38:59.000Z",
-  "updated_at": "2026-11-27T04:33:11.000Z",
+  "updated_at": "2026-11-27T12:12:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,10 +15,7 @@
     "en"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "raon1_nano",
-    "text-generation",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -26,8 +23,7 @@
     "block-floating-point",
     "bfloat8_b",
     "quantized",
-    "conversational",
-    "custom_code",
+    "text-generation",
     "ko",
     "en",
     "base_model:KRAFTON/Raon-1-nano",
@@ -47,14 +43,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Raon-1-nano-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:42:10.757Z",
   "benchmarks": [],
   "sources": []
 }

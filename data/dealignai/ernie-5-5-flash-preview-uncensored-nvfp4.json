@@ -5,7 +5,7 @@
   "author": "dealignai",
   "url": "https://huggingface.co/dealignai/ERNIE-5.5-Flash-Preview-UNCENSORED-NVFP4",
   "created_at": "2026-11-27T23:48:01.000Z",
-  "updated_at": "2026-11-28T00:24:07.000Z",
+  "updated_at": "2026-11-28T04:36:09.000Z",
   "license": "dealignai-community-v0.3",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -24,8 +24,8 @@
     "uncensored",
     "dealignai",
     "text-generation",
-    "base_model:baidu/ERNIE-5.5-Flash-Preview-BF16",
-    "base_model:quantized:baidu/ERNIE-5.5-Flash-Preview-BF16",
+    "base_model:baidu/ERNIE-5.5-Flash-Preview",
+    "base_model:finetune:baidu/ERNIE-5.5-Flash-Preview",
     "license:other",
     "8-bit",
     "modelopt_fp4",
@@ -39,7 +39,7 @@
   "storage_bytes": 182907667013,
   "storage_human": "182.9 GB",
   "context_length": null,
-  "base_model": "baidu/ERNIE-5.5-Flash-Preview-BF16",
+  "base_model": "baidu/ERNIE-5.5-Flash-Preview, baidu/ERNIE-5.5-Flash-Preview-BF16",
   "formats": [
     "safetensors"
   ],

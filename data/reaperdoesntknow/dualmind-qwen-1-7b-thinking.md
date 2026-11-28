@@ -2,104 +2,104 @@
 
 ## Resumen
 
-Dualmind-Qwen-1.7B-Thinking es un ajuste fino por supervisión (SFT) del modelo Qwen3-1.7B, desarrollado por reaperdoesntknow bajo el sello Convergent Intelligence LLC. El objetivo declarado es destilar trazas de razonamiento de Claude Opus 4.6 en un modelo pequeno de 1.700 millones de parametros efectivos, de modo que un modelo ligero reproduzca los patrones deliberativos de un modelo frontera: cadenas de razonamiento largas, autocorreccion y navegacion explicita de la incertidumbre.
+Dualmind-Qwen-1.7B-Thinking es un ajuste fino por supervisión (SFT) del modelo Qwen3-1.7B, desarrollado por reaperdoesntknow (Convergent Intelligence LLC, Research Division), que destila trazas de razonamiento extendido de Claude Opus 4.6 en un modelo compacto de aproximadamente 2.030 millones de parámetros. El objetivo es transferir a un modelo pequeno los patrones de deliberacion de un modelo frontera: backtracking, autocorreccion, navegacion de incertidumbre y sintesis entre enfoques alternativos, en lugar de la completacion de patrones mecanica que suele producir el SFT sobre datos sinteticos.
 
-El modelo parte de Disctil-Qwen3-1.7B, un checkpoint intermedio de una cadena de destilacion propia (DiStil-Qwen3-1.7B-uncensored y posterior refinamiento DISC), y se entrena sobre el dataset Opus-4.6-Reasoning-3000x-filtered, con aproximadamente 2,5 millones de tokens adicionales. La arquitectura es la de Qwen3ForCausalLM: transformer denso con 28 capas, atencion GQA (16 cabezas de consulta, 8 de clave/valor), hidden size de 2048 y ventana de contexto de 40.960 tokens.
+El modelo se construye sobre una cadena de destilacion previa (Qwen3-1.7B → DiStil-Qwen3-1.7B-uncensored → Disctil-Qwen3-1.7B) y aplica la metodologia DualMind, que trata el bucle cognitivo "explorar → examinar → responder" como una senal de entrenamiento y no como un truco arquitectonico. El entrenamiento utiliza aproximadamente 2,5 millones de tokens del dataset Opus-4.6-Reasoning-3000x-filtered, con cadenas de razonamiento de Opus 4.6 y las negativas eliminadas.
 
-Su relevancia practica esta en el nicho de modelos pequenos con modo de razonamiento: ocupa unos 8,1 GB en BF16 y esta publicado con licencia Apache 2.0, lo que permite desplegarlo en hardware de consumo y experimentar con tecnicas de destilacion de razonamiento sin depender de APIs propietarias.
+Es relevante para quienes necesitan capacidades de razonamiento multi-fase en despliegues de borde (edge) o en hardware de consumo, con licencia Apache 2.0 y pesos en safetensors. Su ventana de contexto nativa es de 40.960 tokens, aunque el entrenamiento se realizo con longitud maxima de secuencia de 4.096 tokens.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen3ForCausalLM (transformer denso, decoder-only) |
-| Parametros totales | 2.031.739.904 (~2,03B; 1,7B efectivos segun el autor) |
-| Parametros activos | no disponible (modelo denso, no MoE) |
-| Longitud de contexto | 40.960 tokens (max position); entrenado con secuencia maxima de 4.096 |
-| Tipos de cuantizacion | no disponible en la model card; al ser safetensors BF16 es convertible a GGUF/AWQ/GPTQ con herramientas estandar |
-| Idiomas soportados | ingles (en); hereda el tokenizador multilingue de Qwen3 (vocabulario de 151.936) pero solo se declara entrenamiento en ingles |
+| Arquitectura | Qwen3ForCausalLM (transformer decoder-only con GQA) |
+| Parametros totales | 2.031.739.904 (~2,03B; 1,7B efectivos) |
+| Parametros activos | no disponible (no es MoE) |
+| Longitud de contexto | 40.960 tokens (max position); entrenado a 4.096 |
+| Tipos de cuantizacion | no disponible en la model card (pesos publicados en BF16; el ecosistema Qwen3 admite GGUF/AWQ/GPTQ, pero el autor no los publica) |
+| Idiomas soportados | ingles (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (BF16) |
-
-Otros datos tecnicos: hidden size 2048, 28 capas, 16 cabezas de consulta y 8 de clave/valor (GQA), dimension de cabeza 128, intermediate size 6144, activacion SiLU, vocabulario de 151.936 tokens.
+| Hidden size | 2.048 |
+| Capas | 28 |
+| Cabezas de atencion | 16 (Q) / 8 (KV), GQA |
+| Dimension intermedia | 6.144 |
+| Dimension de cabeza | 128 |
+| Vocabulario | 151.936 |
+| Funcion de activacion | SiLU |
+| Precision de entrenamiento | BF16 |
+| Tamano del repo | 8,1 GB |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only denso de la familia Qwen3, sin mezcla de expertos ni mecanismos híbridos. El entrenamiento se realizo con TRL SFTTrainer en precision BF16 sobre una NVIDIA H100: 512 pasos totales, aproximadamente 7,4 epocas, secuencia maxima de 4.096 tokens y unos 2,5 millones de tokens adicionales procedentes de Opus-4.6-Reasoning-3000x-filtered (dataset de cadenas de razonamiento extendido de Claude Opus 4.6 con rechazos eliminados). Se menciona tambien el dataset zai-org/LongWriter-6k entre los tags, aunque la model card no detalla su peso en la mezcla.
+El modelo es un transformer decoder-only Qwen3ForCausalLM con 28 capas, hidden size de 2.048, atencion con query grouping (GQA) de 16 cabezas de consulta y 8 de clave/valor, dimension de cabeza 128 e intermedio de 6.144. Usa activacion SiLU y un vocabulario de 151.936 tokens. Los pesos se distribuyen en BF16 y el repositorio ocupa 8,1 GB. No incorpora innovaciones arquitectonicas propias respecto a Qwen3: la contribucion esta en el regimen de entrenamiento.
 
-La innovacion declarada es metodologica, no arquitectonica: la "tesis DualMind" sostiene que el bucle cognitivo (explorar, examinar, responder) puede transmitirse como senal de entrenamiento mediante SFT sobre trazas de un profesor que exhibe de forma natural ese comportamiento. Las dinamicas reportadas muestran perdida de entrenamiento de 1,744 a 1,455, perdida de evaluacion de 1,406 y precision de token de 61,0 % a 67,8 %, con la perdida de evaluacion por debajo de la de entrenamiento al final. No se documentan fases de RLHF o DPO, ni decodificacion especulativa u otras optimizaciones de inferencia.
+El entrenamiento se realizo con TRL SFTTrainer sobre una NVIDIA H100, en BF16, con 512 pasos totales, aproximadamente 7,4 epocas y longitud maxima de secuencia de 4.096 tokens. La perdida de entrenamiento bajo de 1,744 a 1,455, con perdida de evaluacion final de 1,406 (por debajo de la de entrenamiento, lo que sugiere ausencia de sobreajuste) y una precision de token que paso del 61,0% al 67,8%. Los datos proceden de nohurry/Opus-4.6-Reasoning-3000x-filtered (cadenas de razonamiento de Opus 4.6 con negativas eliminadas) y, segun los tags, tambien de zai-org/LongWriter-6k. No se documenta RLHF ni DPO; el unico regimen es SFT supervisado.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles con plantilla de chat (`apply_chat_template`).
-- Razonamiento extendido en multiples fases: el autor indica que el modelo explora, reconsidera y concluye de forma natural, imitando la estructura deliberativa del profesor.
-- Autocorreccion y retroceso dentro de la cadena de razonamiento, absorbidos de las trazas de Opus 4.6.
-- Generacion de cadenas de razonamiento largas (ventana recomendada de 1.024 a 2.048 tokens nuevos).
-- Razonamiento logico y deductivo estructurado, heredado parcialmente de la cadena de destilacion previa (variante LogicInference de la familia).
+- Razonamiento extendido multi-fase: el modelo tiende a explorar, reconsiderar y concluir de forma natural, imitando la estructura deliberativa de las trazas de Opus 4.6.
+- Autocorreccion y backtracking: retrocede cuando una linea de razonamiento se debilita, en lugar de completar patrones.
+- Navegacion de incertidumbre: produce matices y reservas calibradas, segun la model card.
+- Generacion de cadenas largas de razonamiento (ventana de salida recomendada de 1.024 a 2.048 tokens).
 - Soporte de tool calling / function calling: no disponible (no documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad formal; el modo "thinking" es textual, no un protocolo de agente.
-- Capacidades multimodales (vision, audio): no disponibles.
-- Capacidades multilingues: no declaradas; solo ingles en la model card.
+- Soporte de agentes y razonamiento multi-paso: no disponible como capacidad formal; el modelo exhibe razonamiento multi-paso interno, pero no se documenta integracion con frameworks de agentes.
+- Capacidades multilingues: solo ingles declarado.
+- Vision, audio o modo thinking explicito con tokens especiales: no disponible.
 
 ## Casos de uso
 
-- Experimentacion en destilacion de razonamiento: sirve como banco de pruebas para investigar como se transfiere la estructura deliberativa de un modelo frontera a uno de 1,7B mediante SFT, comparando con la variante LogicInference de la misma familia.
-- Prototipado de asistentes con razonamiento visible en local: con ~8,1 GB en BF16 o menos tras cuantizacion, permite iterar en una estacion de trabajo sin GPU de datacenter, mostrando la cadena de razonamiento al usuario para depuracion.
-- Educacion y tutoria guiada: el modelo puede desarrollar explicaciones paso a paso de problemas de fisica o logica (el ejemplo de la model card es la paradoja de la informacion en agujeros negros), aprovechando su tendencia a reconsiderar y matizar.
-- Generacion de datos sinteticos de razonamiento: util para producir trazas deliberativas en ingles que alimenten posteriores ajustes o evaluaciones de modelos mayores, dado su bajo coste de inferencia.
-- Analisis de decisiones con incertidumbre: tareas donde interesa que el modelo explicite dudas y alternativas (evaluacion de argumentos, revision de planes) en lugar de responder de forma directa.
-- Despliegue en el borde (edge): por tamano y licencia Apache 2.0, encaja en entornos con recursos limitados donde no es viable un modelo de 7B o superior, siempre que el caso de uso sea en ingles.
-- Evaluacion comparativa de metodos de destilacion: como checkpoint intermedio de una cadena documentada (Qwen3 base, uncensored SFT, DISC, DualMind), permite aislar el efecto de cada etapa.
+- Razonamiento deliberativo en el borde: el modelo cabe en GPUs de consumo y puede ejecutar cadenas de razonamiento de 1.024 a 2.048 tokens en local, util para asistentes offline que necesitan justificar respuestas paso a paso.
+- Tutoria y explicacion de conceptos: para preguntas del tipo "explicame la paradoja de la informacion en agujeros negros", el modelo produce una deliberacion estructurada con reservas y sintesis, adecuada para entornos educativos en ingles.
+- Analisis de decisiones con incertidumbre: al haber absorbido patrones de autocorreccion, es util en tareas donde se prefiere una respuesta que reconozca ambiguedad frente a una respuesta categorica.
+- Prototipado rapido de pipelines de razonamiento: sirve como modelo de pruebas para validar plantillas de chat, parametros de muestreo (temperatura 0,6-0,8, repetition penalty 1,1-1,2) y longitudes de generacion antes de escalar a modelos mayores.
+- Generacion de borradores de analisis tecnico en ingles: con contexto de hasta 40.960 tokens, puede procesar documentos largos y producir resumenes razonados, aunque el entrenamiento se limito a 4.096 tokens.
+- Investigacion sobre destilacion de trazas: como artefacto reproducible de la metodologia DualMind, permite estudiar como se transfiere la estructura deliberativa de un modelo frontera a uno de 1,7B mediante SFT estandar.
+- Despliegue en entornos con recursos limitados: licencia Apache 2.0 y pesos BF16 de 8,1 GB permiten fine-tuning adicional e integracion en productos comerciales sin restricciones de licencia.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta metricas de entrenamiento:
-
-| Metrica | Inicio | Final |
-|---|---|---|
-| Perdida de entrenamiento | 1,744 | 1,455 |
-| Perdida de evaluacion | no disponible | 1,406 |
-| Precision de token | 61,0 % | 67,8 % |
+No se han publicado resultados de benchmarks en la informacion disponible. La model card solo reporta metricas de entrenamiento: perdida final de entrenamiento 1,455, perdida de evaluacion 1,406 y precision de token del 67,8% al final del entrenamiento.
 
 ## Requisitos de hardware
 
-- VRAM estimada en BF16: unos 4,1 GB solo para pesos (2,03B parametros x 2 bytes); con cache KV y overhead de runtime, entre 6 y 9 GB segun longitud de contexto y lote.
-- VRAM estimada en cuantizacion de 8 bits: aproximadamente 2,5-4 GB; en 4 bits, aproximadamente 1,5-2,5 GB (estimaciones a partir del numero de parametros; no publicadas por el autor).
-- GPU de datacenter: el autor entreno en NVIDIA H100; para inferencia basta una A100 o similar, aunque el modelo esta sobredimensionado para ese hardware.
-- GPU de consumo: cabe con holgura en RTX 4090 (24 GB), RTX 4080/4070 Ti (16 GB) y es viable en GPUs de 8 GB con cuantizacion; en 4 bits podria ejecutarse en GPUs de 6-8 GB.
-- Opciones de despliegue: transformers (soporte nativo documentado), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`), y conversion a llama.cpp/Ollama/GGUF mediante herramientas estandar al estar en safetensors.
-- Latencia y throughput: no disponibles; no se han publicado mediciones.
+- VRAM estimada para inferencia en BF16: aproximadamente 4,1 GB solo para pesos, mas overhead de activaciones y cache KV; en la practica, entre 5 y 6 GB para secuencias cortas.
+- VRAM estimada en cuantizacion de 8 bits: alrededor de 2,2 GB de pesos; en 4 bits, alrededor de 1,2 GB (estimaciones teoricas, no publicadas por el autor).
+- GPU recomendadas: NVIDIA H100 para entrenamiento (documentado); para inferencia, cualquier GPU con al menos 6-8 GB de VRAM, como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A10G, L4 o A100.
+- Cabe en GPU de consumo: si, en modelos con 8 GB o mas en BF16 y en modelos con 4-6 GB si se cuantiza.
+- Opciones de despliegue: transformers (documentado en la model card), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`); llama.cpp, Ollama y vLLM no estan documentados por el autor, aunque la arquitectura Qwen3 es compatible con dichos runtimes si se generan pesos en los formatos correspondientes.
+- Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Enfoque | Licencia |
-|---|---|---|---|---|
-| Dualmind-Qwen-1.7B-Thinking | ~2,03B | 40.960 | SFT sobre trazas de razonamiento de Opus 4.6 | Apache 2.0 |
-| Qwen3-1.7B (base) | ~2,03B | 32.768-40.960 segun variante | Modelo generalista con modo thinking nativo | Apache 2.0 |
-| DualMind (LogicInference) | ~2,03B (misma base) | 40.960 | SFT sobre datos de inferencia logica sintetica | Apache 2.0 |
-| Disctil-Qwen3-1.7B | ~2,03B (misma base) | 40.960 | Refinamiento DISC previo al DualMind | Apache 2.0 |
+| Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
+|---|---|---|---|---|---|
+| Dualmind-Qwen-1.7B-Thinking | ~2,03B | 40.960 (entrenado a 4.096) | Apache 2.0 | SFT sobre trazas de razonamiento de Opus 4.6 | Hugging Face, safetensors BF16 |
+| Qwen3-1.7B (base) | ~2,03B | 32.768 (tipico en Qwen3) | Apache 2.0 | Modelo base generalista | Hugging Face, multiples formatos |
+| DualMind (LogicInference) | ~1,7B | no disponible | Apache 2.0 | SFT sobre LogicInference | Hugging Face |
+| TopologicalQwen | no disponible | no disponible | Apache 2.0 | Destilacion de 30B-Thinking (TKD) | Hugging Face |
 
-La comparativa se limita a la propia familia y al modelo base, ya que no hay datos de benchmarks que permitan contrastar rendimiento con alternativas externas. La diferencia frente a Qwen3-1.7B esta en el sesgo hacia razonamiento deliberativo largo y autocorreccion, a costa de un entrenamiento exclusivamente en ingles y de una ventana de entrenamiento de solo 4.096 tokens pese al contexto maximo de 40.960.
+La comparativa se limita a la familia DualMind y al modelo base, ya que no hay datos de benchmarks publicados que permitan contrastar rendimiento con alternativas de otros autores. La diferencia principal frente a Qwen3-1.7B es el sesgo hacia deliberacion extendida y autocorreccion; frente a DualMind (LogicInference), el sesgo es hacia razonamiento mas matizado y menos mecanico.
 
 ## Limitaciones y advertencias
 
-- Solo se declara entrenamiento en ingles; el rendimiento en castellano u otros idiomas no esta evaluado y probablemente sea deficiente.
-- Riesgo de alucinacion: el estilo deliberativo imitado puede producir cadenas de razonamiento plausibles pero incorrectas, con mayor facilidad para el lector de confundir fluidez con veracidad.
-- El modelo deriva de una cadena que incluye un paso "uncensored" (DiStil-Qwen3-1.7B-uncensored); el dataset de destilacion tiene los rechazos eliminados, por lo que las salvaguardas de seguridad son debiles y no debe desplegarse sin filtros externos.
-- Sesgos de los datos del profesor (Claude Opus 4.6) y del dataset filtrado: no se documenta ninguna evaluacion de sesgo.
-- Ventana de entrenamiento de 4.096 tokens frente a contexto maximo de 40.960: el rendimiento mas alla de 4.096 tokens no esta garantizado.
-- Sin benchmarks publicados: no hay evidencia cuantitativa de calidad frente al modelo base ni frente a alternativas.
-- Riesgo de bucles en cadenas largas; el autor recomienda penalizacion de repeticion de 1,1-1,2.
-- Un solo like y 2.009 descargas en Hugging Face: proyecto de investigacion con validacion externa muy limitada.
-- Aunque la licencia es Apache 2.0 y permite uso comercial, la procedencia de las trazas destiladas de un modelo propietario es un caveat legal que conviene evaluar antes de un despliegue en produccion.
+- Solo soporta ingles de forma declarada; el rendimiento en castellano no esta evaluado.
+- Entrenado con longitud maxima de secuencia de 4.096 tokens: aunque la ventana nativa es de 40.960, el comportamiento mas alla de 4.096 no esta validado y puede degradarse.
+- Riesgo de alucinacion: es un modelo de 1,7B efectivos; las trazas de Opus 4.6 ensenan la forma del razonamiento, no garantizan la correccion factual.
+- Riesgo de bucles en cadenas largas: el autor recomienda repetition penalty de 1,1 a 1,2 y temperatura de 0,6 a 0,8 para mitigarlo.
+- Sesgos: no documentados por el autor; al derivar de un modelo base y de trazas de un modelo frontera, puede heredar sesgos de ambos.
+- El dataset de entrenamiento tiene las negativas eliminadas, lo que puede reducir la calibracion de rechazos en usos sensibles.
+- No se documentan capacidades de tool calling ni integracion con agentes; no debe asumirse su disponibilidad en produccion.
+- Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantias ni soporte; verificar la procedencia de los datos de destilacion si se requiere cumplimiento estricto.
+- El modelo tiene 1 like y 1.886 descargas en el momento de la ficha: comunidad muy reducida y validacion externa practicamente inexistente.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Dualmind-Qwen-1.7B-Thinking
-- Modelo base: https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B
-- Checkpoint previo de la cadena: https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B
-- Variante LogicInference de la familia: https://huggingface.co/reaperdoesntknow/DualMind
+- Modelo base inmediato (Disctil-Qwen3-1.7B): https://huggingface.co/reaperdoesntknow/Disctil-Qwen3-1.7B
+- Modelo base declarado en los tags (DualMinded-Qwen3-1.7B): https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B
+- Variante DualMind (LogicInference): https://huggingface.co/reaperdoesntknow/DualMind
 - Variante TopologicalQwen: https://huggingface.co/reaperdoesntknow/TopologicalQwen
 - Dataset de razonamiento: https://huggingface.co/datasets/nohurry/Opus-4.6-Reasoning-3000x-filtered
-- Dataset adicional: https://huggingface.co/datasets/zai-org/LongWriter-6k
-- Paper, blog o demo oficiales: no disponibles
+- Dataset adicional (LongWriter-6k): https://huggingface.co/datasets/zai-org/LongWriter-6k

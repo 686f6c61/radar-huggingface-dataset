@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Lily-1.5B-Code-GGUF",
   "created_at": "2026-11-27T13:23:06.000Z",
-  "updated_at": "2026-11-27T13:38:38.000Z",
+  "updated_at": "2026-11-27T20:39:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 349,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

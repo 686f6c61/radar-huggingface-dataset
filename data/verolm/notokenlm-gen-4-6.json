@@ -5,7 +5,7 @@
   "author": "VeroLM",
   "url": "https://huggingface.co/VeroLM/NoTokenLM-Gen-4.6",
   "created_at": "2026-10-07T20:01:09.000Z",
-  "updated_at": "2026-11-07T08:26:23.000Z",
+  "updated_at": "2026-11-27T15:50:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 482,
+  "downloads_30d": 502,
   "trending_score": 0,
   "parameters": 36782418,
   "parameters_human": "36.8M",

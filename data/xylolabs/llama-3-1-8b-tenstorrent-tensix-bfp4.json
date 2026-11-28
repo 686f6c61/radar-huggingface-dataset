@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Llama-3.1-8B-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-12T09:59:51.000Z",
-  "updated_at": "2026-11-27T03:09:45.000Z",
+  "updated_at": "2026-11-27T11:40:04.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -21,10 +21,7 @@
     "th"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "llama",
-    "text-generation",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -34,6 +31,7 @@
     "bfloat4_b",
     "bfloat8_b",
     "quantized",
+    "text-generation",
     "en",
     "de",
     "fr",
@@ -45,8 +43,6 @@
     "base_model:meta-llama/Llama-3.1-8B",
     "base_model:quantized:meta-llama/Llama-3.1-8B",
     "license:llama3.1",
-    "text-generation-inference",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -54,8 +50,8 @@
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 16077765440,
-  "storage_human": "16.1 GB",
+  "storage_bytes": 30036966128,
+  "storage_human": "30.0 GB",
   "context_length": null,
   "base_model": "meta-llama/Llama-3.1-8B",
   "formats": [
@@ -67,8 +63,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Llama-3.1-8B-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:40:30.764Z",
   "benchmarks": [],
   "sources": []
 }

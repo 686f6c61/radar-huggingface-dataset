@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 31426533704,
-  "storage_human": "31.4 GB",
+  "storage_bytes": 17534338840,
+  "storage_human": "17.5 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [

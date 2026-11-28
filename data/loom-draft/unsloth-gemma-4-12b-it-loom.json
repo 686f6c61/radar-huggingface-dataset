@@ -5,7 +5,7 @@
   "author": "loom-draft",
   "url": "https://huggingface.co/loom-draft/unsloth-gemma-4-12B-it-loom",
   "created_at": "2026-11-19T14:44:13.000Z",
-  "updated_at": "2026-11-24T19:17:32.000Z",
+  "updated_at": "2026-11-27T21:10:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,7 +20,6 @@
     "gfx1201-16gb",
     "speculative-decoding",
     "dflash",
-    "loom-reference-set",
     "loom-target-set",
     "license:mit",
     "region:us"
@@ -30,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 30290487,
-  "storage_human": "30 MB",
+  "storage_bytes": 45438103,
+  "storage_human": "45 MB",
   "context_length": null,
   "base_model": "unsloth/gemma-4-12B-it-GGUF",
   "formats": [

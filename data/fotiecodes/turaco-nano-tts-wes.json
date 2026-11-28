@@ -5,7 +5,7 @@
   "author": "fotiecodes",
   "url": "https://huggingface.co/fotiecodes/turaco-nano-tts-wes",
   "created_at": "2026-11-18T17:58:57.000Z",
-  "updated_at": "2026-11-26T17:20:37.000Z",
+  "updated_at": "2026-11-27T22:12:42.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 44,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 109502146,
   "parameters_human": "109.5M",

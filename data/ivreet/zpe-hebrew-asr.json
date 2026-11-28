@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "Ivreet/zpe-hebrew-asr",
+  "slug": "ivreet-zpe-hebrew-asr",
+  "author": "Ivreet",
+  "url": "https://huggingface.co/Ivreet/zpe-hebrew-asr",
+  "created_at": "2026-11-28T10:45:32.000Z",
+  "updated_at": "2026-11-28T10:48:27.000Z",
+  "license": "ivreetmeet-terms-of-use",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "hebrew",
+    "speech-to-text",
+    "transcription",
+    "asr",
+    "meeting-transcription",
+    "automatic-speech-recognition",
+    "he",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "context_length": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "ivrit.ai eval-d1",
+      "metric": "WER",
+      "value": 5.15
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "ivrit.ai eval-whatsapp",
+      "metric": "WER",
+      "value": 7.02
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Hebrew)",
+      "metric": "WER",
+      "value": 17.32
+    }
+  ],
+  "sources": []
+}

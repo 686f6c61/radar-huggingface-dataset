@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "agent-distillation-hf/qwen35-4b-think-cfx-c-hf-hub-qa-mcp-v2-glm-53-pi-160-lora",
+  "renamed_at": "2026-11-28T12:45:26.474Z",
   "benchmarks": [],
   "sources": []
 }

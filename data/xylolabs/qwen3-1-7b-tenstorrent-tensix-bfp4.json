@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3-1.7B-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-17T14:11:27.000Z",
-  "updated_at": "2026-11-27T04:19:21.000Z",
+  "updated_at": "2026-11-28T05:17:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,10 +15,7 @@
     "ko"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "qwen3",
-    "text-generation",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -27,13 +24,12 @@
     "bfloat4_b",
     "bfloat8_b",
     "quantized",
-    "conversational",
+    "qwen3",
+    "text-generation",
     "arxiv:2505.09388",
     "base_model:Qwen/Qwen3-1.7B",
     "base_model:quantized:Qwen/Qwen3-1.7B",
     "license:apache-2.0",
-    "text-generation-inference",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -48,14 +44,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Qwen3-1.7B-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:41:10.224Z",
   "benchmarks": [],
   "sources": []
 }

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-Instruct-ARA-heretic-i1-GGUF",
   "created_at": "2026-11-06T20:24:34.000Z",
-  "updated_at": "2026-11-08T20:27:51.000Z",
+  "updated_at": "2026-11-28T01:44:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 5779,
+  "downloads_30d": 6917,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

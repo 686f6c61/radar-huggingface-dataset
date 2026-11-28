@@ -2,101 +2,100 @@
 
 ## Resumen
 
-Parafoil/speech-models es un repositorio de modelos de voz distribuido por Parafoil, el desarrollador de una aplicacion de escritorio que transcribe reuniones de forma local en el propio ordenador del usuario. No se trata de un modelo entrenado desde cero, sino de un paquete de artefactos derivados de modelos de NVIDIA, empaquetados y cuantizados para su consumo por el runtime sherpa-onnx. El repositorio contiene dos packs independientes: un modelo de reconocimiento automatico del habla (ASR) basado en NVIDIA Parakeet TDT 0.6B v3 (transductor, unos 600 millones de parametros) y un modelo de diarizacion de hablantes basado en NVIDIA Nemotron 3 Diarization.
+Parafoil/speech-models es un repositorio de paquetes de modelos ONNX y GGUF que la aplicacion de escritorio Parafoil descarga para transcribir reuniones localmente y, en modo privado, eliminar datos personales de la transcripcion antes de que esta salga del equipo. No es un modelo unico entrenado por Parafoil, sino una coleccion curada de tres packs derivados de modelos de terceros: NVIDIA Parakeet TDT 0.6B v3 para reconocimiento de voz, NVIDIA Nemotron 3 Diarization para diarizacion de hablantes y GLiNER multi PII v1 para deteccion de informacion personal identificable.
 
-Su relevancia radica en el enfoque "local-first": todos los ficheros se fijan por tamano y SHA-256, la aplicacion rechaza cualquier fichero que no coincida y el ASR cubre 25 idiomas europeos. La innovacion principal es la cuantizacion del encoder con cuantizacion dinamica de ONNX Runtime (int8 por canal unicamente en nodos MatMul, dejando las convoluciones en fp32), lo que reduce el peso del encoder a unos 881 MB manteniendo, segun el autor, un 13,7 % de tasa de error de palabra (WER) en audio de reuniones AMI.
+El pack principal de ASR emplea una arquitectura transducer (RNN-T) con decodificacion TDT (Token-and-Duration Transducer) de NVIDIA, exportada a ONNX para sherpa-onnx y cuantizada a int8 por canal en las capas MatMul del encoder, manteniendo las convoluciones en fp32. Soporta reconocimiento de voz en 25 idiomas europeos y, segun la model card, alcanza un 13,7 % de WER en audio de reuniones del corpus AMI.
 
-El repositorio tiene 0 descargas y 0 "likes" en el momento de redactar esta ficha, un tamano total de 1,1 GB y licencia mixta, ya que cada componente arrastra la licencia de su modelo de origen.
+La relevancia actual del repositorio reside en su enfoque de privacidad por diseno: todo el pipeline (VAD con Silero, ASR con Parakeet, diarizacion con Nemotron y redaccion de PII con GLiNER) se ejecuta en el dispositivo del usuario, con verificacion de integridad por tamano y SHA-256 de cada fichero. El total de parametros declarado en safetensors es de 99.260.363, correspondiente al conjunto de los packs.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transductor (TDT, Token-and-Duration Transducer) para el pack ASR; modelo de diarizacion de hablantes en el segundo pack. Detalles de la arquitectura interna de cada base: no disponibles |
-| Parametros totales | 99.260.363 segun metadatos de Hugging Face (safetensors). El modelo base ASR Parakeet TDT 0.6B v3 tiene ~600 millones de parametros segun su denominacion |
-| Parametros activos | No aplica (no es un modelo MoE) |
-| Longitud de contexto | No disponible / no aplica (modelo de reconocimiento de voz, procesa audio) |
-| Tipos de cuantizacion | Encoder ASR: int8 (cuantizacion dinamica por canal en nodos MatMul), convoluciones en fp32. Decoder y joiner: sin cambios (fp32). Diarizacion: GGUF q8_0. VAD: sin cuantizar |
-| Idiomas soportados | 25 idiomas europeos (pack ASR, segun la model card). Los metadatos de Hugging Face indican "no disponible" |
-| Licencia | Mixta ("other"): Parakeet CC-BY-4.0, Nemotron OpenMDW 1.1, Silero VAD MIT |
-| Formato de pesos | ONNX (encoder.int8.onnx, decoder.onnx, joiner.onnx, silero_vad.onnx) y GGUF (Nemotron-3-Diarization.q8_0.gguf) |
+| Arquitectura | Transducer TDT (Parakeet), diarizacion (Nemotron 3) y GLiNER (encoder mDeBERTa-v3) |
+| Parametros totales | 99.260.363 (conjunto del repo, safetensors) |
+| Parametros activos | no disponible |
+| Longitud de contexto | no disponible |
+| Tipos de cuantizacion | int8 por canal (encoder Parakeet), q8_0 GGUF (Nemotron), int8 weights-only y MatMulNBits block 32 (GLiNER) |
+| Idiomas soportados | 25 idiomas europeos (ASR); resto de packs no disponible |
+| Licencia | mixta: CC-BY-4.0, OpenMDW 1.1, Apache 2.0 y MIT segun componente |
+| Formato de pesos | ONNX (encoder, decoder, joiner, VAD, GLiNER) y GGUF (Nemotron) |
 
 ## Arquitectura y entrenamiento
 
-El pack de reconocimiento de voz se compone de un encoder, un decoder y un joiner exportados a ONNX, mas un fichero de tokens y un detector de actividad de voz. Procede directamente de la exportacion ONNX a sherpa-onnx del modelo NVIDIA Parakeet TDT 0.6B v3, un transductor de token y duracion. La unica modificacion declarada por el autor es la cuantizacion del encoder mediante cuantizacion dinamica de ONNX Runtime, con pesos int8 por canal restringidos a los nodos MatMul; las capas convolucionales permanecen en fp32. El decoder, el joiner y el fichero de tokens se mantienen sin cambios. El componente silero_vad.onnx es una copia sin modificar del detector de voz Silero VAD.
+El pack de ASR `parakeet-tdt-0.6b-v3-pc8-2026-10-15` deriva del export ONNX de sherpa-onnx de NVIDIA Parakeet TDT 0.6B v3, un modelo transducer con decodificacion TDT. Parafoil aplico cuantizacion dinamica de ONNX Runtime con pesos int8 por canal exclusivamente en nodos MatMul; las capas convolucionales permanecen en fp32. El decoder, el joiner y el vocabulario `tokens.txt` no se modificaron. El pack incluye ademas Silero VAD sin cambios para la deteccion de actividad de voz.
 
-El segundo pack es una copia sin modificar del fichero Nemotron-3-Diarization.q8_0.gguf publicado por NVIDIA para la tarea de diarizacion de hablantes, fijado en el commit f667ed73aee57d40cc39428eb768b4fd87a0a29e. No hay informacion en el material disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre etapas de RLHF o DPO de los modelos base; esos datos corresponderian a las model cards originales de NVIDIA. El autor no aporta innovaciones arquitectonicas propias: su contribucion es el empaquetado, la cuantizacion del encoder y la verificacion por hash.
+El pack `nemotron-3-diarization-q8-2026-09-23` es una copia sin modificar del fichero de NVIDIA Nemotron 3 Diarization en formato GGUF q8_0, fijado al commit `f667ed73aee57d40cc39428eb768b4fd87a0a29e`. El pack de redaccion `gliner-multi-pii-v1-wo8-2026-10-24` deriva de GLiNER multi PII v1 exportado a ONNX con la libreria gliner 0.2.29 y cuantizado con las herramientas de ONNX Runtime 1.31 solo en pesos: tabla de vocabulario int8 por canal dequantizada al cargar y cada MatMul en MatMulNBits de 8 bits con bloque 32, simetrico y `accuracy_level=1`. Este pack sustituye al anterior `pc8e`, que cuantizaba activaciones en tiempo de ejecucion y dependia de instrucciones int8 del procesador, lo que degradaba la redaccion en chips como Apple M1. El tokenizador proviene de mDeBERTa-v3 base con los tokens `<<ENT>>` y `<<SEP>>` anadidos. No se dispone de informacion sobre datos de entrenamiento, numero de tokens ni procesos de RLHF o DPO, ya que Parafoil no reentrena los modelos base.
 
 ## Capacidades
 
-- Reconocimiento automatico del habla (ASR) en 25 idiomas europeos, orientado a audio de reuniones.
-- Deteccion de actividad de voz (VAD) mediante Silero VAD para segmentar el audio.
-- Diarizacion de hablantes (separacion de quien habla en cada momento) mediante Nemotron 3 Diarization.
-- Ejecucion local en el dispositivo del usuario, sin depender de servicios en la nube.
-- Verificacion de integridad de los ficheros por tamano y SHA-256 antes de su uso.
-- Integracion con el runtime sherpa-onnx mediante el tipo de modelo nemo_transducer.
-- Empaquetado en cuantizaciones ligeras (int8 ONNX, GGUF q8_0) apto para CPU.
-- Capacidades de tool calling, agentes, vision, audio generativo o modo "thinking": no disponibles; el modelo es exclusivamente de transcripcion y diarizacion.
+- Reconocimiento automatico de voz en 25 idiomas europeos mediante el pack Parakeet TDT.
+- Deteccion de actividad de voz con Silero VAD para segmentar audio de reuniones.
+- Diarizacion de hablantes con Nemotron 3 Diarization en formato GGUF q8_0.
+- Deteccion y redaccion de informacion personal identificable (nombres, fechas, telefonos, lugares, numeros de identificacion) con GLiNER multi PII.
+- Ejecucion completamente local en el dispositivo del usuario, sin envio de audio ni transcripciones a servidores externos.
+- Verificacion de integridad de cada fichero por tamano y SHA-256 antes de su uso.
+- Modo privado que elimina datos de terceros de la transcripcion antes de que abandone el equipo.
+- Integracion con sherpa-onnx mediante el tipo de grafo `nemo_transducer`.
+- Compatibilidad con ONNX Runtime 1.28 o superior para el pack de redaccion.
 
 ## Casos de uso
 
-- Transcripcion local de reuniones: la aplicacion de escritorio de Parafoil usa el pack ASR para convertir el audio de una reunion en texto en el propio equipo del usuario, sin enviar datos a terceros, apoyandose en sherpa-onnx sobre CPU.
-- Actas con identificacion de hablantes: combinando el pack de ASR con el de diarizacion, se puede generar un texto etiquetado por interlocutor, util para reuniones de equipo o entrevistas.
-- Subtitulado automatico en 25 idiomas europeos: el soporte multilingue permite generar subtitulos en distintos idiomas europeos para videos o directos, ejecutando la inferencia en local.
-- Accesibilidad para personas con discapacidad auditiva: transcripcion en tiempo casi real de conversaciones o clases en el propio dispositivo, con la ventaja de que el audio no sale del equipo.
-- Analisis de llamadas de atencion al cliente: la diarizacion permite separar la voz del agente y la del cliente para auditar conversaciones y extraer metricas, siempre que se cumplan las obligaciones legales de tratamiento de datos.
-- Preprocesado de audio para pipelines de datos: el VAD de Silero puede usarse como paso previo para recortar silencios y segmentar grandes volumenes de audio antes de alimentar otros sistemas.
-- Investigacion en cuantizacion ASR: sirve como referencia reproducible para estudiar el impacto de la cuantizacion int8 dinamica por canal en un transductor sobre la tasa de error de palabra.
-- Despliegue en entornos sin conectividad o con requisitos estrictos de privacidad: al no necesitar red ni GPU dedicada, encaja en estaciones de trabajo aisladas o en equipos de campo.
+- Transcripcion de reuniones en local: el pipeline combina Silero VAD, Parakeet TDT y Nemotron 3 Diarization para generar actas con hablantes identificados sin que el audio salga del ordenador, lo que encaja en entornos con requisitos de confidencialidad.
+- Redaccion de PII antes de compartir transcripciones: GLiNER sustituye nombres, telefonos y numeros de identificacion en el dispositivo, de modo que el texto resultante puede enviarse a sistemas externos con menor exposicion de datos personales.
+- Cumplimiento de RGPD en herramientas internas: al procesar el audio y redactar la transcripcion localmente, se reduce la superficie de tratamiento de datos personales en aplicaciones corporativas de notas de reunion.
+- Subtitulado y busqueda de reuniones archivadas: el ASR multilingue en 25 idiomas europeos permite indexar grabaciones y generar subtitulos en entornos con plantillas linguisticas diversas.
+- Analisis forense o de compliance sobre grabaciones: la diarizacion permite atribuir intervenciones a hablantes concretos y la redaccion protege identidades en los informes derivados.
+- Integracion en aplicaciones de escritorio mediante sherpa-onnx: los packs ONNX y GGUF se pueden cargar con ONNX Runtime en Windows, macOS y Linux, lo que facilita empaquetar transcripcion offline en productos de escritorio.
+- Prototipado de pipelines de privacidad: los ficheros con checksums publicados permiten reproducir y auditar el comportamiento del pipeline de redaccion en pruebas sinteticas.
 
 ## Benchmarks y rendimiento
 
-La unica metrica publicada en la informacion disponible es la reportada por el propio autor para el pack ASR.
-
-| Benchmark | Modelo | Resultado |
+| Metrica | Valor | Contexto |
 |---|---|---|
-| WER en audio de reuniones AMI | parakeet-tdt-0.6b-v3-pc8 (encoder int8) | 13,7 % (pruebas del autor) |
-| Otros benchmarks (MMLU, HumanEval, GSM8K, etc.) | No aplica | No disponible |
+| WER en AMI (audio de reuniones) | 13,7 % | Pruebas propias de Parafoil con el encoder int8 |
+| Redaccion de identificadores personales (pack wo8) | 97,0 % | Conjunto de prueba sintetico propio |
+| Redaccion de identificadores personales (pack pc8e) | 97,8 % | Conjunto de prueba sintetico propio, ONNX Runtime 1.28 |
 
-No se han publicado resultados de benchmarks adicionales ni comparaciones cuantitativas con otros modelos en la informacion disponible.
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, LibriSpeech) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada para el pack ASR: el encoder int8 ocupa 881.498.555 bytes (~841 MiB), el decoder 47.233.743 bytes (~45 MiB), el joiner 25.286.330 bytes (~24 MiB) y el VAD 643.854 bytes; en total algo menos de 1 GB de pesos, con un consumo de memoria de trabajo en el orden de 1 a 2 GB (estimacion basada en los tamanos de fichero, no confirmada por el autor).
-- Pack de diarizacion: el fichero GGUF q8_0 ocupa 107.012.128 bytes (~102 MiB).
-- GPU recomendadas: no disponibles; el diseno apunta a ejecucion en CPU, por lo que no requiere GPU. Cualquier GPU moderna podria acelerar la inferencia, pero el autor no publica recomendaciones.
-- Compatibilidad con GPU de consumo: si, cabe holgadamente en GPU de consumo por tamano, pero no hay datos oficiales de rendimiento en GPU.
-- Opciones de despliegue: sherpa-onnx (tipo nemo_transducer) para el pack ASR; el pack de diarizacion es un GGUF que requiere un runtime compatible con este formato. Otras opciones (vLLM, TGI, Ollama) no estan documentadas para estos artefactos.
-- Latencia y throughput estimados: no disponibles.
+- VRAM estimada: no disponible de forma explicita; el encoder Parakeet int8 ocupa 881.498.555 bytes, el decoder 47.233.743 bytes y el joiner 25.286.330 bytes, por lo que el pack ASR completo ronda los 950 MB en disco.
+- El pack de diarizacion GGUF q8_0 y el de GLiNER ONNX anaden carga adicional; el repositorio completo ocupa 1,8 GB.
+- GPU recomendadas: no disponibles en la informacion proporcionada. El diseno esta orientado a ejecucion en CPU de equipos de escritorio, dado el caracter local de la aplicacion.
+- Compatibilidad con GPU de consumo: no confirmada; el uso de ONNX Runtime y sherpa-onnx permite ejecucion en CPU, y el pack de redaccion wo8 evita dependencias de instrucciones int8 especificas del procesador.
+- Opciones de despliegue: sherpa-onnx con ONNX Runtime 1.28 o superior (ASR y VAD), ONNX Runtime para GLiNER y un runtime GGUF para Nemotron 3 Diarization.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa fiable. A continuacion se comparan atributos verificables de modelos de la misma categoria.
-
-| Modelo | Parametros | Contexto/entrada | Licencia | Formato | Notas |
+| Modelo | Parametros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
-| Parafoil speech-models (ASR) | ~600 M (base) | Audio (no aplica contexto de texto) | Mixta (CC-BY-4.0 en el ASR) | ONNX int8 | Cuantizacion del encoder por el autor |
-| NVIDIA Parakeet TDT 0.6B v3 | ~600 M | Audio | CC-BY-4.0 | Original NVIDIA | Modelo base, sin la cuantizacion de Parafoil |
-| NVIDIA Nemotron 3 Diarization | No disponible | Audio | OpenMDW 1.1 | GGUF q8_0 (en este repo) | Copia sin modificar; diarizacion de hablantes |
+| Parafoil/speech-models (pack ASR) | 99,26 M (conjunto del repo) | no disponible | 25 europeos | mixta (CC-BY-4.0, OpenMDW 1.1, Apache 2.0, MIT) | ONNX, GGUF |
+| nvidia/parakeet-tdt-0.6b-v3 | 0,6 B (aproximado por nombre) | no disponible | 25 europeos | CC-BY-4.0 | NeMo, ONNX via sherpa-onnx |
+| nvidia/Nemotron-3-Diarization | no disponible | no disponible | no disponible | OpenMDW 1.1 | GGUF (q8_0 en este repo) |
+| urchade/gliner_multi_pii-v1 | no disponible | no disponible | multilingue | Apache 2.0 | PyTorch, ONNX en este repo |
 
-Otras alternativas conocidas del ambito ASR, como Whisper, no se incluyen con datos cuantitativos porque no hay cifras verificables en la informacion proporcionada que permitan contrastarlas con el WER de 13,7 % en AMI.
+La comparativa se limita a los modelos base citados en la model card; no se dispone de datos de rendimiento comparativo entre ellos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La cifra de 13,7 % de WER en AMI es relativamente alta para audio de reuniones; conviene validarla en el dominio concreto de uso antes de llevarla a produccion.
-- El numero de parametros reportado en los metadatos de Hugging Face (99.260.363) no coincide con la denominacion del modelo base (0.6B); no hay explicacion en la informacion disponible, por lo que ese dato debe tomarse con cautela.
-- El soporte idiomatico se limita a 25 idiomas europeos; otros idiomas no estan cubiertos segun la model card.
-- El ASR y la diarizacion son packs separados: la diarizacion no viene integrada en el flujo del transductor y requiere combinarlos por separado.
-- Licencia mixta: el uso comercial depende de la licencia de cada componente (CC-BY-4.0 para Parakeet, OpenMDW 1.1 para Nemotron, MIT para Silero VAD). Es imprescindible revisar los ficheros de licencia antes de un uso comercial.
-- En tareas de ASR el "riesgo de alucinacion" se traduce en errores de transcripcion, inserciones u omisiones de texto, especialmente en audio con ruido o solapamiento de voces.
-- El repositorio tiene 0 descargas y 0 "likes", por lo que no existe validacion por parte de la comunidad.
-- No hay informacion sobre sesgos de los modelos base ni sobre su comportamiento por acento, dialecto o genero; esos datos deberian consultarse en las model cards de NVIDIA.
-- El autor declara que los modelos se ofrecen "tal cual", sin garantia, y que las versiones nuevas se publican como carpetas nuevas sin modificar las existentes.
+- El repositorio no es un modelo unico, sino un conjunto de packs con licencias distintas; el uso comercial exige revisar cada licencia por componente (CC-BY-4.0, OpenMDW 1.1, Apache 2.0 y MIT).
+- La licencia global figura como "other" con nombre "mixed", lo que anade complejidad al cumplimiento.
+- El WER del 13,7 % se midio en audio de reuniones AMI; el rendimiento en otros dominios o con ruido no esta documentado.
+- Los porcentajes de redaccion (97,0 % y 97,8 %) proceden de conjuntos de prueba sinteticos propios de Parafoil, no de benchmarks independientes.
+- El pack `pc8e` queda obsoleto por su dependencia de instrucciones int8 del procesador; en Apple M1 solo eliminaba aproximadamente la mitad de los identificadores.
+- No se dispone de informacion sobre sesgos, riesgo de alucinacion en transcripcion ni cobertura linguistica detallada por idioma.
+- La ausencia de datos de benchmarks estandar impide comparaciones objetivas con otros sistemas ASR.
+- La model card no detalla requisitos minimos de hardware ni latencias, lo que dificulta planificar despliegues en produccion.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/Parafoil/speech-models
-- Modelo base ASR, NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
-- Modelo base de diarizacion, NVIDIA Nemotron 3 Diarization: https://huggingface.co/nvidia/Nemotron-3-Diarization
-- Runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Parafoil/speech-models
+- NVIDIA Parakeet TDT 0.6B v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- NVIDIA Nemotron 3 Diarization: https://huggingface.co/nvidia/Nemotron-3-Diarization
+- GLiNER multi PII v1: https://huggingface.co/urchade/gliner_multi_pii-v1
+- mDeBERTa-v3 base: https://huggingface.co/microsoft/mdeberta-v3-base
+- sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Silero VAD: https://github.com/snakers4/silero-vad

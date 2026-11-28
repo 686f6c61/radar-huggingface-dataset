@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "jain98aayush/AgenticSearch-R2A-step80",
+  "slug": "jain98aayush-agenticsearch-r2a-step80",
+  "author": "jain98aayush",
+  "url": "https://huggingface.co/jain98aayush/AgenticSearch-R2A-step80",
+  "created_at": "2026-11-28T08:40:04.000Z",
+  "updated_at": "2026-11-28T08:40:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "agentic-search",
+    "passage-retrieval",
+    "grpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:jain98aayush/AgenticSearch-OpenMultiHop",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275732010,
+  "storage_human": "276 MB",
+  "context_length": null,
+  "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3.5-27B-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-17T11:48:18.000Z",
-  "updated_at": "2026-11-27T04:25:03.000Z",
+  "updated_at": "2026-11-27T12:26:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -15,24 +15,21 @@
     "ko"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "qwen3_5",
-    "image-text-to-text",
     "tenstorrent",
     "tensix",
     "tt-metal",
     "ttnn",
+    "qwen3_5",
     "block-floating-point",
     "bfloat4_b",
     "quantized",
-    "conversational",
+    "image-text-to-text",
     "en",
     "ko",
     "base_model:Qwen/Qwen3.5-27B",
     "base_model:quantized:Qwen/Qwen3.5-27B",
     "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -47,14 +44,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Qwen3.5-27B-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:41:33.154Z",
   "benchmarks": [],
   "sources": []
 }

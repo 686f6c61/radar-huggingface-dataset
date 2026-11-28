@@ -5,7 +5,7 @@
   "author": "coo-quack",
   "url": "https://huggingface.co/coo-quack/mmBERT-pii-sentinel",
   "created_at": "2026-09-27T16:25:06.000Z",
-  "updated_at": "2026-11-26T13:41:26.000Z",
+  "updated_at": "2026-11-27T15:33:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

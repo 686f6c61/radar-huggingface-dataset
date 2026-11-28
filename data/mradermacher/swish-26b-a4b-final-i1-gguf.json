@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Swish-26B-A4B-Final-i1-GGUF",
   "created_at": "2026-10-24T06:56:33.000Z",
-  "updated_at": "2026-11-20T13:30:22.000Z",
+  "updated_at": "2026-11-27T14:37:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -38,7 +38,7 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 3514,
+  "downloads_30d": 6592,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",

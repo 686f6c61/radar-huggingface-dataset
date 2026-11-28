@@ -5,7 +5,7 @@
   "author": "maternion",
   "url": "https://huggingface.co/maternion/Spark-X2.6-4B-FP8-GGUF",
   "created_at": "2026-11-27T16:38:47.000Z",
-  "updated_at": "2026-11-27T16:46:55.000Z",
+  "updated_at": "2026-11-27T18:41:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 196,
   "trending_score": 0,
   "parameters": 4113222144,
   "parameters_human": "4.11B",

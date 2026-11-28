@@ -8,7 +8,7 @@
   "updated_at": "2026-11-22T21:31:00.000Z",
   "license": null,
   "license_family": "unknown",
-  "pipeline_tag": "text-to-image",
+  "pipeline_tag": "image-to-image",
   "library": "diffusers",
   "languages": [],
   "tags": [
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 37,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 3876561536,
   "parameters_human": "3.88B",

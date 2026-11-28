@@ -5,7 +5,7 @@
   "author": "SceneWorks",
   "url": "https://huggingface.co/SceneWorks/scail2-candle",
   "created_at": "2026-11-27T22:42:38.000Z",
-  "updated_at": "2026-11-27T22:49:23.000Z",
+  "updated_at": "2026-11-28T04:01:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "candle",
+    "i2v",
     "gguf-blocks",
     "sceneworks",
     "base_model:zai-org/SCAIL-2",

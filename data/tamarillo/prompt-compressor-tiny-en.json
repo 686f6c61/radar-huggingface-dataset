@@ -1,0 +1,112 @@
+{
+  "schema": 2,
+  "id": "Tamarillo/prompt-compressor-tiny-en",
+  "slug": "tamarillo-prompt-compressor-tiny-en",
+  "author": "Tamarillo",
+  "url": "https://huggingface.co/Tamarillo/prompt-compressor-tiny-en",
+  "created_at": "2026-11-28T06:09:44.000Z",
+  "updated_at": "2026-11-28T06:09:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "prompt-compression",
+    "context-compression",
+    "llmlingua",
+    "rag",
+    "agent-observability",
+    "transformers.js",
+    "tamarillo",
+    "en",
+    "dataset:Tamarillo/prompt-compression-corpus-2026",
+    "base_model:jhu-clsp/ettin-encoder-32m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-32m",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32031746,
+  "parameters_human": "32.0M",
+  "storage_bytes": 320751717,
+  "storage_human": "321 MB",
+  "context_length": null,
+  "base_model": "jhu-clsp/ettin-encoder-32m",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Extractive Prompt Compression (Public Reader-QA Benchmarks @ rate=0.50)",
+      "dataset": "HotpotQA + SQuAD-v2 + GSM8K + XQuAD (Phi-4-mini-instruct Reader, n=490 public + n=100 Agent JSON)",
+      "metric": "3-Public-EN Mean (rate=0.50)",
+      "value": 0.5695
+    },
+    {
+      "task": "Extractive Prompt Compression (Public Reader-QA Benchmarks @ rate=0.50)",
+      "dataset": "HotpotQA + SQuAD-v2 + GSM8K + XQuAD (Phi-4-mini-instruct Reader, n=490 public + n=100 Agent JSON)",
+      "metric": "4-Public-Suite Mean (rate=0.50)",
+      "value": 0.5107
+    },
+    {
+      "task": "Extractive Prompt Compression (Public Reader-QA Benchmarks @ rate=0.50)",
+      "dataset": "HotpotQA + SQuAD-v2 + GSM8K + XQuAD (Phi-4-mini-instruct Reader, n=490 public + n=100 Agent JSON)",
+      "metric": "5-Suite Mean incl. Agent JSON (rate=0.50)",
+      "value": 0.6066
+    },
+    {
+      "task": "Extractive Prompt Compression (Public Reader-QA Benchmarks @ rate=0.50)",
+      "dataset": "HotpotQA + SQuAD-v2 + GSM8K + XQuAD (Phi-4-mini-instruct Reader, n=490 public + n=100 Agent JSON)",
+      "metric": "4-Public-Suite Mean (rate=0.65)",
+      "value": 0.6007
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tamarillo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tamarillo",
+      "snippet": "Le Tamarillo (Solanum betaceum) est une espèce du genre Solanum et de la famille des Solanaceae originaire de la cordillère des …"
+    },
+    {
+      "title": "Tamarillo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamarillo",
+      "snippet": "In Yunnan, China, the Dai people make a tamarillo nanpie, a sauce like dish made with roasted tamarillo, sawtooth coriander, chillies …"
+    },
+    {
+      "title": "Tamarillo : conseils de culture et entretien",
+      "url": "https://mieuxjardiner.com/tamarillo-conseils-de-culture-et-entretien/",
+      "snippet": "Sep 3, 2025 · Caractéristiques et origines du tamarillo Pour bien cultiver le tamarillo, il est essentiel de comprendre sa nature et son …"
+    },
+    {
+      "title": "Le tamarillo : un fruit étonnant - Vergers de Gally",
+      "url": "https://www.lesvergersdegally.com/fruit/tamarillo/",
+      "snippet": "Avec seulement 27 calories pour 100 grammes, le tamarillo est un fruit léger qui peut être apprécié sans culpabiliser. Il est riche en …"
+    },
+    {
+      "title": "Tamarillo : culture et entretien de l'arbre à tomates",
+      "url": "https://www.jardiner-malin.fr/fiche/tamarillo.html",
+      "snippet": "Apr 28, 2012 · Le tamarillo ou arbre à tomates est un petit fruitier offrant de délicieux fruits acidulés. La culture et l'entretien, en terre …"
+    }
+  ]
+}

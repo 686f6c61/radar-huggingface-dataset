@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "trucddx/envit5-translation-gguf",
+  "slug": "trucddx-envit5-translation-gguf",
+  "author": "trucddx",
+  "url": "https://huggingface.co/trucddx/envit5-translation-gguf",
+  "created_at": "2026-11-28T07:47:20.000Z",
+  "updated_at": "2026-11-28T07:53:22.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "t5",
+    "translation",
+    "en",
+    "vi",
+    "base_model:VietAI/envit5-translation",
+    "base_model:quantized:VietAI/envit5-translation",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 351976704,
+  "parameters_human": "352.0M",
+  "storage_bytes": 374141344,
+  "storage_human": "374 MB",
+  "context_length": null,
+  "base_model": "VietAI/envit5-translation",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

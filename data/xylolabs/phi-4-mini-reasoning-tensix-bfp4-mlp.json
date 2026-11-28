@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Phi-4-mini-reasoning-Tensix-BFP4-MLP",
   "created_at": "2026-11-12T03:40:14.000Z",
-  "updated_at": "2026-11-27T04:14:07.000Z",
+  "updated_at": "2026-11-28T05:14:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,10 +14,7 @@
     "en"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "llama",
-    "text-generation",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -27,13 +24,11 @@
     "bfloat4_b",
     "bfloat8_b",
     "quantized",
-    "conversational",
+    "text-generation",
     "en",
     "base_model:microsoft/Phi-4-mini-reasoning",
     "base_model:quantized:microsoft/Phi-4-mini-reasoning",
     "license:mit",
-    "text-generation-inference",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -48,14 +43,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Xylolabs/Phi-4-mini-reasoning-Tenstorrent-Tensix-BFP4",
-  "renamed_at": "2026-11-27T07:48:05.831Z",
+  "renamed_to": "Xylolabs/Phi-4-mini-reasoning-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:40:52.590Z",
   "benchmarks": [],
   "sources": []
 }

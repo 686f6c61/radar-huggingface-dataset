@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "akhilplx/nppe2-hindi-disfluency-whisper-small",
+  "slug": "akhilplx-nppe2-hindi-disfluency-whisper-small",
+  "author": "akhilplx",
+  "url": "https://huggingface.co/akhilplx/nppe2-hindi-disfluency-whisper-small",
+  "created_at": "2026-11-28T08:53:45.000Z",
+  "updated_at": "2026-11-28T08:53:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "disfluency-restoration",
+    "lora",
+    "automatic-speech-recognition",
+    "hi",
+    "base_model:openai/whisper-small",
+    "base_model:adapter:openai/whisper-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 483525200,
+  "storage_human": "484 MB",
+  "context_length": null,
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

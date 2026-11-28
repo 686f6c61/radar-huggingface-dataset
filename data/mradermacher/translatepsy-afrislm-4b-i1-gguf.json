@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/TranslatePsy-AfriSLM-4B-i1-GGUF",
   "created_at": "2026-10-24T08:05:56.000Z",
-  "updated_at": "2026-11-20T14:38:21.000Z",
+  "updated_at": "2026-11-27T15:52:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -71,7 +71,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 3302,
+  "downloads_30d": 5580,
   "trending_score": 0,
   "parameters": 4841450496,
   "parameters_human": "4.84B",

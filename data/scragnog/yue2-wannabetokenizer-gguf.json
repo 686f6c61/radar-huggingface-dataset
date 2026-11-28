@@ -42,16 +42,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "README.md · scragnog/YuE2-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/scragnog/YuE2-GGUF/blob/main/README.md",
-      "snippet": "GGUF conversions of m-a-p/YuE2-3B and m-a-p/YuE2-Vae for HOT-Step CPP, a local C++/GGML music generation engine. YuE2 is an autoregressive-planner + flow-matching music model from the M-A-P team; these files let it run through HOT-Step's GGML inference stack instead of the original PyTorch checkpoint."
-    },
-    {
-      "title": "scragnog/YuE2-GGUF at main - Hugging Face",
-      "url": "https://huggingface.co/scragnog/YuE2-GGUF/tree/main",
-      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
-    }
-  ]
+  "sources": []
 }

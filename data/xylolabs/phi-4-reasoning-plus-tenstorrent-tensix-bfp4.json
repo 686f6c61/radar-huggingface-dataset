@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Phi-4-reasoning-plus-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-13T19:51:03.000Z",
-  "updated_at": "2026-11-27T03:10:45.000Z",
+  "updated_at": "2026-11-28T05:17:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -14,10 +14,7 @@
     "en"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "llama",
-    "text-generation",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -26,13 +23,11 @@
     "bfloat4_b",
     "bfloat8_b",
     "quantized",
-    "conversational",
+    "text-generation",
     "en",
     "base_model:microsoft/Phi-4-reasoning-plus",
     "base_model:quantized:microsoft/Phi-4-reasoning-plus",
     "license:mit",
-    "text-generation-inference",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -47,14 +42,14 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "disabled": false,
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "Xylolabs/Phi-4-reasoning-plus-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:40:56.233Z",
   "benchmarks": [],
   "sources": []
 }

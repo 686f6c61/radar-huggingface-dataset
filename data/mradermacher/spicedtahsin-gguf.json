@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "mradermacher/SpicedTahsin-GGUF",
+  "slug": "mradermacher-spicedtahsin-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SpicedTahsin-GGUF",
+  "created_at": "2025-03-14T15:06:32.000Z",
+  "updated_at": "2026-11-28T05:30:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:SvalTek/SpicedTahsin",
+    "base_model:quantized:SvalTek/SpicedTahsin",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 84,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820232320,
+  "storage_human": "71.8 GB",
+  "context_length": 8192,
+  "base_model": "SvalTek/SpicedTahsin",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "aitamedia",
   "url": "https://huggingface.co/aitamedia/LingSante-3.1-air-VL-MXFP4",
   "created_at": "2026-11-23T07:05:04.000Z",
-  "updated_at": "2026-11-25T19:51:13.000Z",
+  "updated_at": "2026-11-27T17:32:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,7 +24,7 @@
     "fp8",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 1,
   "downloads_30d": 97,
   "trending_score": 0,
   "parameters": 64450477776,

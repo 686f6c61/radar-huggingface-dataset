@@ -2,118 +2,102 @@
 
 ## Resumen
 
-Ling-3.0-flash-TypeScript-Edition-GGUF es una cuantizacion GGUF del modelo base inclusionAI/Ling-3.0-flash, publicada por el usuario vinnj (proyecto Kraits) el 4 de noviembre de 2026. No se trata de un modelo entrenado desde cero, sino de una version especializada del Ling-3.0-flash orientada a generacion de codigo TypeScript, empaquetada en formato Q4_K_M (20.395.487.680 bytes) con una lista de anclaje de expertos (pin list) que permite ejecutarla en un Mac de 16 GB. El modelo base cuenta con 33.777.908.192 parametros totales y arquitectura de mezcla de expertos (MoE), con 128 expertos por capa segun la model card.
+Ling-3.0-flash-TypeScript-Edition-GGUF es una cuantizacion GGUF Q4_K_M derivada de `inclusionAI/Ling-3.0-flash`, publicada por el usuario `vinnj`. No es un modelo entrenado desde cero, sino un recorte de expertos (*expert pruning*) sobre el MoE original de InclusionAI: se reduce de 512 a 128 expertos por capa en las 40 capas MoE, manteniendo 8 expertos activos por token. El resultado se distribuye como un unico fichero de 20.395.487.680 bytes (20,4 GB) con SHA-256 publicado, pensado para ejecutarse en Macs con Apple Silicon de 16 GB o mas mediante el motor Kraits 0.6.17.
 
-La relevancia de esta publicacion es fundamentalmente practica: el autor distribuye tambien el plugin Kraits 0.6.16, una extension de llama.cpp que mantiene en memoria GPU los expertos mas usados (un banco de 8,8 GB) y transmite desde el SSD los expertos frios, permitiendo inferencia MoE en hardware consumer de gama media. El modelo esta pensado para tareas de programacion TypeScript (Express, genericos, async, Jest, React, migracion de JS a TS estricto) y declara soporte solo para ingles.
+El modelo base declara 33.777.908.192 parametros totales (unos 33,8 mil millones) y una licencia MIT heredada. La edicion TypeScript esta especializada en tareas de programacion en TypeScript y JavaScript, y el autor reporta 47/48 en un conjunto propio de seis tareas (rutas Express, tipos y genericos, manejo de errores asincronos, suite de Jest, conversion de JS a TypeScript estricto y componente React), frente a 46/48 de gpt-5-mini en las mismas pruebas.
 
-La ficha describe tanto el modelo base (arquitectura, parametros, licencia) como el artefacto GGUF concreto publicado en este repositorio, incluyendo el runtime propietario necesario para ejecutarlo. Conviene tener presente que el repositorio contiene las librerias del plugin Kraits, no `llama-server`, y que cada release del plugin esta bloqueada a un unico fichero de modelo.
+Su relevancia actual es doble: por un lado demuestra que el recorte de expertos en un MoE mediano permite llevar un modelo de ~34B a un portatil de 16 GB con velocidades de escritura de en torno a 20 tokens/s; por otro, ejemplifica un patron de publicacion muy especifico (cuantizacion + motor propietario + pin list) que conviene evaluar con cautela antes de adoptarlo en produccion. La informacion disponible sobre el modelo base es escasa: no se detallan datos de entrenamiento, contexto ni benchmarks estandar.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE), 128 expertos por capa (segun model card del autor) |
-| Parametros totales | 33.777.908.192 (33,8 mil millones) |
-| Parametros activos | no disponible |
+| Arquitectura | MoE (mezcla de expertos) sobre transformer; 40 capas MoE, 8 expertos activos por token; recortado de 512 a 128 expertos por capa |
+| Parametros totales | 33.777.908.192 (~33,8B) |
+| Parametros activos | no disponible (8 expertos activos por token, sin cifra de parametros activos publicada) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | Q4_K_M (unico fichero publicado, 20.395.487.680 bytes) |
-| Idiomas soportados | en (ingles) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base en safetensors |
+| Tipos de cuantizacion | Q4_K_M (unica variante publicada en este repo) |
+| Idiomas soportados | en (segun metadatos de Hugging Face) |
+| Licencia | MIT |
+| Formato de pesos | GGUF (fichero `Ling-3.0-flash-TS128-Q4_K_M.gguf`, 20.395.487.680 bytes) |
 
 ## Arquitectura y entrenamiento
 
-El modelo base inclusionAI/Ling-3.0-flash es un transformer con arquitectura de mezcla de expertos (MoE) de 33,8 mil millones de parametros totales y 128 expertos por capa, segun la informacion aportada por el autor de la cuantizacion. No se dispone de datos sobre el numero de parametros activos por token, la longitud de contexto nativa, el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO o similar; esa informacion no aparece en la documentacion proporcionada y debe consultarse en la model card del modelo base.
+El modelo base es un transformer con capas de mezcla de expertos (MoE). Esta edicion conserva la estructura MoE pero aplica un recorte de expertos: de 512 a 128 expertos por capa en las 40 capas MoE, con 8 expertos activos por token. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si el modelo base uso RLHF, DPO u otras tecnicas de alineamiento.
 
-La innovacion tecnica destacable de esta publicacion no esta en el modelo sino en el runtime: Kraits 0.6.16 es un plugin de llama.cpp (compilado contra llama.cpp b11936 y ggml-base 0.27.0) que implementa un esquema de expertos anclados. Al cargar, fija en memoria GPU cableada un banco de 8,8 GB con los expertos mas calientes (definidos en el fichero `Ling-3.0-flash-TS128-Q4_K_M.kraits-pins.txt`) y transmite bajo demanda desde el SSD los expertos frios. Esto permite ejecutar un MoE de 20,4 GB en un Mac con 16 GB de memoria unificada, a costa de latencia adicional en la lectura de expertos no anclados. El plugin rechaza cualquier fichero distinto al modelo para el que fue compilado y sirve una API compatible con OpenAI en el puerto elegido (8080 por defecto), con una sola peticion concurrente.
+La innovacion tecnica destacable no esta en el entrenamiento sino en el empaquetado: el modelo se distribuye junto a un fichero de *pins* (`Ling-3.0-flash-TS128-Q4_K_M.kraits-pins.txt`) que el motor Kraits 0.6.17 necesita para cargar los pesos. El autor advierte que el pin list alojado directamente en el repositorio de Hugging Face corresponde a Kraits 0.6.16 y que, para 0.6.17, debe extraerse del tarball de la release. Esta dependencia de un motor concreto y de una version exacta del pin list es un factor de acoplamiento relevante para cualquier despliegue.
 
 ## Capacidades
 
-- Generacion de codigo TypeScript: el modelo se distribuye especificamente para tareas de programacion en TS, con resultados medidos en seis categorias (Express, genericos, async, Jest, migracion JS a TS estricto y React).
-- Generacion de texto general y conversacion multi-turno (pipeline `text-generation`, tag `conversational`).
-- Razonamiento y resolucion de tareas de programacion con compilacion estricta y ejecucion de tests como criterio de evaluacion.
+- Generacion de texto y codigo, con especializacion declarada en TypeScript y JavaScript.
+- Tareas de programacion evaluadas por el autor: rutas Express, tipos y genericos, manejo de errores asincronos, suites de Jest, migracion de JS a TypeScript estricto y componentes React.
+- Conversacion multi-turno (tag `conversational` en los metadatos).
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere uso via API compatible con el formato de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: limitadas al ingles segun el campo `language` del repositorio.
-- Capacidades especiales (vision, audio, thinking mode): no disponible en la informacion proporcionada.
-- Servicio mediante API compatible con OpenAI a traves de `kraits-server.sh`.
+- Capacidades de agente y razonamiento multi-paso: no disponible.
+- Capacidades multilingues: los metadatos solo declaran ingles (`en`); no hay evidencia de soporte de castellano.
+- Vision, audio o modo "thinking": no disponible.
 
 ## Casos de uso
 
-- Asistencia de programacion TypeScript en local: el modelo se ejecuta integramente en un Mac de 16 GB sin enviar codigo a la nube, lo que lo hace adecuado para entornos con requisitos de confidencialidad (codigo propietario, datos de clientes). La model card reporta 12-17 tokens/s de escritura en un Mac mini M4.
-- Generacion de endpoints Express: la evaluacion del autor incluye 7 de 8 tareas de Express resueltas; el modelo puede emplearse para esbozar rutas, middlewares y validacion en proyectos Node/TS.
-- Refactorizacion y migracion de JavaScript a TypeScript estricto: la prueba JS-to-Strict-TS obtuvo 8 de 8, por lo que el modelo es util para anotar tipos, definir interfaces y resolver errores de compilacion en modo `strict`.
-- Generacion de tests con Jest: la prueba de Jest obtuvo 8 de 8; el modelo puede redactar suites de pruebas unitarias a partir de codigo existente.
-- Componentes React tipados: la prueba de React obtuvo 8 de 8; util para generar componentes funcionales con props tipadas y hooks.
-- Prototipado offline en estaciones de trabajo Apple Silicon: gracias al runtime Kraits y al anclaje de expertos, se puede desplegar un asistente de codigo en un portatil o mini de 16 GB sin GPU dedicada, con una sola peticion concurrente.
-- Evaluacion de tecnicas de inferencia MoE con offloading a SSD: el repositorio y el plugin sirven como banco de pruebas para medir el impacto del anclaje de expertos en latencia y throughput.
+- Asistente de codigo TypeScript en local para desarrolladores con Mac de 16 GB: el modelo cabe en un unico fichero de 20,4 GB y genera a ~20 tokens/s, lo que permite autocompletado y refactorizacion sin conexion a la nube.
+- Migracion de bases de codigo JavaScript a TypeScript estricto: la tarea "JS to strict TypeScript" obtiene 8/8 en la evaluacion del autor, por lo que encaja en pipelines de modernizacion de proyectos legacy.
+- Generacion de tests unitarios con Jest: la tarea de suite de Jest obtiene 8/8 y el autor senala respuestas identicas en cada ejecucion a temperatura 0, lo que resulta util para generar tests reproducibles en CI.
+- Prototipado de APIs con Express: la tarea de rutas Express obtiene 7/8; sirve para esqueletos de endpoints y middleware en fases tempranas de desarrollo.
+- Generacion de componentes React: la tarea de componente React obtiene 8/8, adecuada para scaffolding de UI en proyectos front-end.
+- Entornos con requisitos de privacidad: al ejecutarse integramente en local sobre Apple Silicon, evita enviar codigo propietario a APIs externas, lo que lo hace apto para equipos con politicas estrictas de confidencialidad.
+- Evaluacion comparativa de tecnicas de recorte de expertos: util para investigadores que quieran medir el impacto del *expert pruning* (512 a 128 expertos) en calidad y velocidad sobre un MoE de ~34B.
 
 ## Benchmarks y rendimiento
 
-Los unicos datos publicados en la informacion disponible son los de la model card del autor, medidos en un Mac mini M4 de 16 GB el 4 de noviembre de 2026, con temperatura 0 y el lanzador tal cual se distribuye. No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) en la informacion disponible.
+El autor publica una evaluacion propia de seis tareas de TypeScript, con prompts identicos para ambos modelos, temperatura 0, en un Mac mini M4 de 16 GB. No son benchmarks estandar (MMLU, HumanEval, GSM8K); no se han publicado resultados de benchmarks en la informacion disponible para esas suites.
 
-| Metrica | Valor |
-|---|---|
-| Lectura (prompt) | 32-44 tokens/s |
-| Escritura (generacion) | 12-17 tokens/s |
-| Tareas TypeScript juzgadas (compilacion estricta + tests) | 45 de 48 |
-| Desglose: Express | 7 de 8 |
-| Desglose: Genericos | 6 de 8 |
-| Desglose: Async | 8 de 8 |
-| Desglose: Jest | 8 de 8 |
-| Desglose: JS a TS estricto | 8 de 8 |
-| Desglose: React | 8 de 8 |
+| Tarea | Ling TS128 + Kraits 0.6.17 | gpt-5-mini |
+|---|---:|---:|
+| Express route | 7 | 8 |
+| Types and generics | 8 | 8 |
+| Async error handling | 8 | 8 |
+| Jest test suite | 8 | 6 (media de 3 ejecuciones: 8, 8, 2) |
+| JS to strict TypeScript | 8 | 8 |
+| React component | 8 | 8 |
+| **Total** | **47/48** | **46/48** |
 
-| Comparativa declarada por el autor | Puntuacion |
-|---|---|
-| Ling-3.0-flash-TS128-Q4_K_M (Kraits 0.6.16) | 45 de 48 |
-| Gemma 4 (26B-A4B, q4_0) | 41 de 48 |
-| gpt-5-mini | 47 de 48 |
+Datos de velocidad medidos por el autor en Mac mini M4 16 GB: escritura de 19,6 a 20,7 tokens/s (media 20,4) y lectura de 37 a 45 tokens/s. No hay datos de latencia ni throughput en otras plataformas.
 
 ## Requisitos de hardware
 
-- VRAM/memoria unificada: 16 GB minimo en Apple Silicon; el plugin reserva un banco de 8,8 GB de expertos en memoria GPU cableada y transmite el resto desde el SSD.
-- GPU recomendadas: Apple silicon (M1/M2/M3/M4) con 16 GB o mas; la medicion oficial se hizo en un Mac mini M4 de 16 GB.
-- Cabe en GPU consumer: si, en Mac con memoria unificada de 16 GB; no hay datos para GPUs NVIDIA consumer (RTX 4090, etc.) en la informacion disponible.
-- Sistema operativo: macOS 15 o posterior; el bundle publicado es `kraits-v0.6.16-macos-arm64.tar.gz` (solo arm64).
-- Opciones de despliegue: Kraits 0.6.16 (plugin de llama.cpp, compilado contra llama.cpp b11936 y ggml-base 0.27.0) mediante `kraits-server.sh`; expone API compatible con OpenAI. No se documenta soporte para vLLM, Ollama o TGI en la informacion disponible.
-- Almacenamiento: se necesita el fichero GGUF de 20,4 GB mas el pin list junto a el; se recomienda SSD rapido por el streaming de expertos frios.
-- Latencia y throughput: 32-44 tokens/s de lectura y 12-17 tokens/s de escritura en Mac mini M4 de 16 GB; una sola peticion concurrente.
-- Verificacion de integridad: `shasum -a 256` debe devolver `e9ae4335a36ed49e8262add1099459a807692edb18c6252ba855f0923c52f602`.
+- VRAM/RAM estimada: el fichero GGUF Q4_K_M ocupa 20,4 GB; en Apple Silicon se usa memoria unificada, por lo que se requiere un Mac con 16 GB o mas (segun el autor).
+- GPU recomendadas: no hay datos para GPU NVIDIA o AMD en la informacion proporcionada; el unico entorno validado es Apple Silicon (Mac mini M4 16 GB).
+- Cabe en GPU de consumo: no confirmado; un fichero de 20,4 GB no cabe en GPUs de 16 GB de VRAM y requeriria al menos 24 GB para cargarse completo, aunque no se ha validado.
+- Opciones de despliegue: el autor documenta exclusivamente el motor Kraits 0.6.17 (macOS ARM64, macOS 15 o superior) mediante `kraits-server.sh`. No se menciona compatibilidad con llama.cpp, Ollama, vLLM ni TGI.
+- Latencia y throughput: ~20,4 tokens/s de escritura y 37-45 tokens/s de lectura en Mac mini M4 16 GB, segun el autor.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Rendimiento TS (segun autor) | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-3.0-flash-TS128-Q4_K_M (esta ficha) | 33,8 mil M totales (MoE, 128 expertos/capa) | no disponible | 45 de 48 | Apache 2.0 | GGUF + plugin Kraits (macOS arm64) |
-| Gemma 4 26B-A4B (q4_0) | 26 mil M (MoE, A4B) | no disponible | 41 de 48 | licencia Gemma (consultar) | GGUF oficial de Google |
-| Qwen3.6-35B-A3B (UD-Q4_K_M) | 35 mil M (MoE, A3B) | no disponible | no evaluado en TS por el autor (9,5 tokens/s en modo exacto) | consultar repositorio de Unsloth | GGUF de Unsloth |
-| gpt-5-mini | no disponible | no disponible | 47 de 48 | propietaria | API de OpenAI |
+| Ling-3.0-flash-TypeScript-Edition (este) | 33,8B totales, MoE 8 activos | no disponible | TypeScript, GGUF Q4_K_M, Apple Silicon | MIT | Hugging Face + Kraits |
+| inclusionAI/Ling-3.0-flash (base) | 33,8B totales | no disponible | MoE generalista | MIT (heredada) | Hugging Face |
+| gpt-5-mini | no disponible | no disponible | Propietario, API | Propietaria | API de OpenAI |
+
+La comparacion con gpt-5-mini solo existe en las seis tareas de TypeScript del autor (47/48 frente a 46/48), no en benchmarks estandar. No se dispone de datos de otros modelos comparables de codigo en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- El repositorio contiene las librerias del plugin Kraits (`bin/`), no `llama-server`; es necesario descargar el bundle de release desde GitHub para ejecutar el modelo.
-- El runtime Kraits 0.6.16 esta bloqueado al fichero exacto `Ling-3.0-flash-TS128-Q4_K_M.gguf` (20.395.487.680 bytes) y rechaza cualquier otro; no es un GGUF generico cargable en cualquier build de llama.cpp.
-- Solo macOS 15 o posterior en Apple Silicon arm64; no hay builds para Linux, Windows ni x86.
-- Una sola peticion concurrente en el servidor: no apto para cargas con alta concurrencia sin replicar instancias.
-- Idioma limitado al ingles segun el campo `language`; no se garantiza calidad en castellano ni en otros idiomas.
-- Especializacion en TypeScript: el ajuste y la seleccion de expertos estan orientados a codigo TS; el rendimiento en otras tareas (texto general, otros lenguajes) no esta documentado y puede degradarse.
-- Riesgo de alucinacion en APIs, firmas de librerias y versiones de paquetes: los benchmarks del autor se basan en 6 tareas y 48 comprobaciones, muestra pequena; no hay evaluacion independiente.
-- Los benchmarks son autoinformados por el autor del plugin, no por InclusionAI ni por un tercero; deben tomarse como indicativos.
-- La licencia Apache 2.0 aplica al artefacto y al plugin; el modelo base conserva su propia licencia, que debe verificarse en `inclusionAI/Ling-3.0-flash` antes de uso comercial.
-- Al transmitir expertos desde el SSD, el rendimiento depende de la velocidad del almacenamiento; en discos lentos la latencia de escritura puede caer por debajo de los 12 tokens/s reportados.
-- La fecha de creacion del repositorio (2026-11-04) y el numero de version de llama.cpp (b11936) deben contrastarse con el estado actual del ecosistema antes de desplegar en produccion.
+- Evaluacion muy limitada: los 47/48 provienen de seis tareas disenadas por el propio autor del release, no de benchmarks independientes; el resultado no es extrapolable a calidad general de codigo.
+- El prompt de la tarea de Jest fue reescrito por el tester y no fue visto durante el ajuste, pero sigue siendo una prueba unica con posible sesgo de seleccion.
+- El recorte de 512 a 128 expertos por capa puede degradar capacidades fuera del dominio TypeScript; no se han publicado evaluaciones de capacidad general tras el pruning.
+- Idiomas: solo se declara ingles; no hay evidencia de buen rendimiento en castellano.
+- Dependencia fuerte del motor Kraits 0.6.17 y de un pin list con version concreta; el pin list del repo de Hugging Face corresponde a 0.6.16, lo que puede provocar fallos de carga si se usa directamente.
+- Plataforma restringida a macOS 15 o superior en Apple Silicon; no hay soporte documentado para Linux, Windows, CUDA ni ROCm.
+- Riesgo de alucinacion: no evaluado en la informacion disponible.
+- Sesgos conocidos: no documentados.
+- Licencia MIT permite uso comercial, pero el modelo base y el motor Kraits tienen sus propias condiciones (Kraits es Apache 2.0); conviene verificar la cadena de licencias antes de redistribuir.
+- El repositorio tiene 174 descargas y 0 likes, lo que indica una validacion comunitaria practicamente nula.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/vinnj/Ling-3.0-flash-TypeScript-Edition-GGUF
+- Modelo en Hugging Face: https://huggingface.co/vinnj/Ling-3.0-flash-TypeScript-Edition-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
-- Release Kraits v0.6.16: https://github.com/1picassoai/kraits/releases/tag/v0.6.16
-- Bundle macOS arm64: https://github.com/1picassoai/kraits/releases/download/v0.6.16/kraits-v0.6.16-macos-arm64.tar.gz
-- Repositorio Kraits: https://github.com/1picassoai/kraits
-- llama.cpp y ggml: https://github.com/ggml-org/llama.cpp
-- Candle (Hugging Face): https://github.com/huggingface/candle
-- Gemma 4 26B-A4B (referencia comparativa): https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-gguf
-- Qwen3.6-35B-A3B GGUF de Unsloth (referencia comparativa): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
-- Perfil de Qwen: https://huggingface.co/Qwen
-- Perfil de Unsloth: https://huggingface.co/unsloth
+- Motor Kraits: https://github.com/1picassoai/kraits
+- Release Kraits 0.6.17: https://github.com/1picassoai/kraits/releases/download/v0.6.17/kraits-v0.6.17-macos-arm64.tar.gz

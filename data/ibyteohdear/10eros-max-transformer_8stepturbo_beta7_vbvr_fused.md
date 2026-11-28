@@ -2,56 +2,52 @@
 
 ## Resumen
 
-10Eros-Max-Transformer_8stepTURBO_beta7_VBVR_FUSED es un modelo de difusion para generacion de video (texto-a-video, imagen-a-video y audio-video) publicado por el usuario ibyteohdear en Hugging Face. Se trata de una fusion de pesos (weight fusion) del modelo base `ibyteohdear/10Eros-Max-Transformer_8stepTURBO_beta7` con el LoRA `H3_VBVR_Pro-V2` aplicado a fuerza 1 y horneado directamente en los tensores, de modo que no es necesario cargar ni fusionar el LoRA en tiempo de inferencia.
+10Eros-Max-Transformer_8stepTURBO_beta7_VBVR_FUSED es un modelo de difusion para generacion de video (text-to-video, image-to-video y audio-video) desarrollado por el usuario ibyteohdear. Se trata de un fine-tune del modelo MiniMax-H3 en su version podada (multimodalart/MiniMax-H3-Pruned), orientado a la generacion rapida de video mediante un esquema de 8 pasos ("8stepTURBO") y con modulos de fusion VBVR. El modelo se distribuye a traves de la libreria diffusers y esta pensado para uso en pipelines de generacion audiovisual.
 
-El modelo se apoya en la familia MiniMax-H3 (etiqueta `minimax-h3` en el repo) y se distribuye en formato diffusers con `trust_remote_code=True`. Cuenta con 20.111.462.920 parametros segun los pesos safetensors y un repositorio de 120,7 GB, lo que lo situa en la categoria de difusores de video de gran tamano. La fusion afecta a 312 tensores y se realizo desde pesos pristinos el 2026-11-22, con verificacion de que el conjunto de claves y los dtypes por clave se mantienen respecto al base.
+El modelo cuenta con aproximadamente 20.100 millones de parametros (20.111.462.920 segun los pesos en safetensors) y un repositorio de 120,7 GB, lo que refleja la presencia de multiples componentes (VAE de video, VAE de audio, codificadores de texto y pesos del transformer de difusion). Integra un codificador de texto basado en Qwen3-VL (en variantes de 4B, 8B o 32B segun configuracion) para la comprension de prompts multimodales.
 
-Su relevancia practica es doble: por un lado, permite muestrear video en 8 pasos (variante TURBO) sin necesidad de apilar LoRAs de aceleracion adicionales; por otro, al estar el LoRA VBVR integrado, simplifica el despliegue al eliminar un paso de carga y fusion en produccion. El repo cambio de contenido el 2026-11-22 bajo los mismos nombres de fichero, por lo que las descargas anteriores corresponden a una fusion distinta.
+Su relevancia radica en la combinacion de generacion de video con audio, la reduccion del numero de pasos de inferencia (8 pasos) y la disponibilidad de codigo de despliegue en Gradio y Hugging Face Spaces. La licencia es la "minimax-h3-community-license-agreement" y el modelo esta marcado como "not-for-all-audiences", lo que condiciona su uso.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de difusion para video (familia MiniMax-H3), con VAE de video y VAE de audio |
+| Arquitectura | Modelo de difusion (transformer) para video con VAE de video y VAE de audio; codificador de texto basado en Qwen3-VL |
 | Parametros totales | 20.111.462.920 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponibles en la model card; el codigo de ejemplo usa `Int8WeightOnlyConfig` de torchao para el codificador de texto |
-| Idiomas soportados | no disponibles |
+| Tipos de cuantizacion | Int8WeightOnly (torchao), bnb-nf4 (para el codificador de texto Qwen3-VL 32B); otras no disponibles |
+| Idiomas soportados | no disponible |
 | Licencia | minimax-h3-community-license-agreement |
-| Formato de pesos | safetensors (formato diffusers con `custom_code`) |
-| Tamano del repositorio | 120,7 GB |
-| Pasos de muestreo | 8 (variante TURBO) |
-| LoRA fusionado | `ibyteohdear/h3Lora/H3_VBVR_Pro-V2.safetensors`, strength 1, rank 128, alpha por clave 208 |
-| Tensores fusionados | 312 (ninguno descartado) |
-| Fecha de fusion | 2026-11-22 |
+| Formato de pesos | safetensors (formato diffusers) |
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta la arquitectura interna mas alla de su pertenencia a la familia MiniMax-H3 y del uso de componentes modulares de diffusers (`MiniMaxH3PrepareLatentsStep`, `MiniMaxH3PrepareLayoutStep`, `MiniMaxH3SetTimestepsStep`, `MiniMaxH3DenoiseStep`, `MiniMaxH3TextEncoderStep`, `MiniMaxH3DecodeStep`, entre otros). El pipeline incluye un VAE de video (`AutoencoderKLMiniMaxH3`) y un VAE de audio (`AutoencoderKLMiniMaxH3Audio`), lo que confirma soporte de generacion conjunta de audio y video. El codificador de texto empleado en el codigo de ejemplo es de la familia Qwen3-VL (variantes de 4B y 8B, o un 32B cuantizado en NF4), lo que sugiere condicionamiento multimodal texto-imagen.
+El modelo es un fine-tune del transformer de difusion de MiniMax-H3 (version podada), adaptado para generacion de video condicionada por texto e imagen. La arquitectura sigue el paradigma de difusion latente: un VAE de video (AutoencoderKLMiniMaxH3) y un VAE de audio (AutoencoderKLMiniMaxH3Audio) codifican las senales en un espacio latente, mientras que el transformer de difusion aplica el proceso de denoising. El codificador de texto es un modelo Qwen3-VL (variantes de 4B, 8B o 32B) que procesa el prompt y, opcionalmente, imagenes de referencia.
 
-No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO. La innovacion tecnica documentada es la fusion de pesos: el delta TURBO (muestreo en 8 pasos) y el LoRA VBVR Pro-V2 estan integrados en los tensores con fuerza 1, verificandose antes de la subida que el conjunto de claves coincide con el base, que los dtypes por clave no cambian y que los tensores no fusionados son identicos bit a bit al modelo original. La tabla AdaLN de rank 8 es exacta sobre la rejilla de 1025 pasos del sampler y aproximada fuera de ella, por lo que se recomienda muestrear en rejilla.
+La innovacion principal es el esquema "8stepTURBO", que reduce la inferencia a 8 pasos de denoising, y la fusion "VBVR" (modulos de proyeccion ClipProj y MLP para alinear representaciones de texto e imagen). El pipeline incluye pasos modulares (preparacion de latentes, layout, timesteps, denoising, decodificacion) y soporta offloading por grupos para reducir el uso de VRAM. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
 - Generacion de video a partir de texto (text-to-video).
-- Generacion de video a partir de imagen (image-to-video), que es el pipeline declarado en el repo.
-- Generacion conjunta de audio y video (audio-video), segun las etiquetas del modelo y la presencia de un VAE de audio.
-- Muestreo acelerado en 8 pasos gracias al delta TURBO ya integrado en los pesos.
-- Condicionamiento multimodal texto-imagen mediante codificadores Qwen3-VL en el pipeline de ejemplo.
-- Fusion de estilo/estetica VBVR Pro-V2 aplicada de forma fija (no ajustable en tiempo de ejecucion).
-- Soporte de tool calling, function calling y agentes: no disponible (no es un modelo de lenguaje).
+- Generacion de video a partir de imagen (image-to-video), con control por keyframes.
+- Generacion de audio sincronizado con el video (audio-video).
+- Comprension de prompts multimodales mediante el codificador Qwen3-VL, incluyendo imagenes de referencia.
+- Inferencia acelerada en 8 pasos de denoising.
+- Soporte de cuantizacion Int8 y NF4 para reducir requisitos de memoria.
+- Soporte de offloading por grupos para ejecucion en GPUs con VRAM limitada.
+- Despliegue mediante diffusers y Gradio (incluye app de demostracion).
 - Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
-- Prototipado rapido de video generativo: al requerir solo 8 pasos de muestreo, permite iterar sobre prompts e imagenes de entrada con un coste de inferencia muy inferior al de un difusor de video estandar de 30-50 pasos, adecuado para laboratorios que evaluan ideas visuales.
-- Generacion de clips con audio sincronizado: la presencia de un VAE de audio en el pipeline permite producir video y banda sonora en una sola pasada, util para demos de producto o contenido para redes sociales.
-- Animacion de imagenes fijas (image-to-video): fotografias de producto, ilustraciones o keyframes pueden convertirse en clips cortos, un flujo habitual en estudios de diseno y marketing.
-- Previsualizacion en pipelines de postproduccion: los clips generados pueden servir como animaticos o referencias de movimiento antes de rodar o renderizar la version final.
-- Investigacion sobre fusion de LoRAs en difusores de video: el repo documenta el proceso exacto de fusion (312 tensores, rank 128, alpha 208, verificacion bit a bit), lo que lo convierte en un caso de estudio reproducible para quien investigue tecnicas de weight merging.
-- Evaluacion comparativa de estilos: al estar el LoRA VBVR Pro-V2 horneado a fuerza 1, sirve como referencia fija de un estilo concreto frente a variantes sin fusionar del mismo modelo base.
-- Despliegue simplificado en entornos con recursos limitados: al no requerir cargar un LoRA adicional en runtime, reduce la complejidad del grafo de inferencia y el consumo de memoria asociado a la capa PEFT.
+- Generacion de clips publicitarios: el modelo puede crear videos cortos con audio sincronizado a partir de un prompt de texto, adecuado para prototipado rapido de anuncios.
+- Prototipado de storyboards animados: a partir de una imagen clave (image-to-video), permite animar bocetos y validar secuencias antes de produccion.
+- Creacion de contenido para redes sociales: la inferencia en 8 pasos reduce el tiempo de generacion, lo que facilita la produccion iterativa de clips.
+- Doblaje y sonorizacion automatica: la generacion de audio-video permite crear piezas con pista de audio integrada sin postproduccion adicional.
+- Investigacion en difusion de video: el codigo modular de diffusers y los pesos en safetensors facilitan experimentos de fine-tuning y ablacion.
+- Demos interactivas en Hugging Face Spaces: la integracion con Gradio y el decorador de GPU de Spaces permite desplegar una demo publica con cuantizacion para ajustarse a recursos limitados.
+- Generacion de video con imagen de referencia: util en diseno de producto para animar renders estaticos con movimiento y audio.
 
 ## Benchmarks y rendimiento
 
@@ -59,43 +55,39 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible de forma explicita. Con 20.111 millones de parametros, en precision completa (bf16/fp16) los pesos ocuparian aproximadamente 40 GB, a los que hay que sumar los VAE de video y audio y el codificador de texto; en cuantizacion int8 el transformer se reduciria a unos 20 GB, y en 4 bits a unos 10-11 GB, aunque estas cifras son estimaciones y no estan confirmadas por el autor.
-- GPU recomendadas: no disponibles en la informacion proporcionada. Por volumen de pesos, el modelo no cabe en GPUs de consumo de 24 GB en bf16 sin tecnicas de offloading.
-- El codigo de ejemplo aplica `apply_group_offloading` de diffusers, lo que indica que el autor espera ejecucion con offloading de grupos de capas entre CPU y GPU.
-- Opciones de despliegue: diffusers con `AutoModel.from_pretrained(..., trust_remote_code=True)` y los bloques modulares `diffusers.modular_pipelines.minimax_h3`; el codigo de ejemplo tambien usa `torchao` para cuantizacion int8 del codificador de texto y `spaces.GPU` para Hugging Face Spaces con Zero-GPU.
-- Latencia y throughput: no disponibles.
+- VRAM estimada para inferencia: no disponible de forma oficial; con 20.100 millones de parametros, en bf16 se requeririan aproximadamente 40 GB solo para los pesos del transformer, a los que se suman los VAE y el codificador de texto (Qwen3-VL de 4B a 32B).
+- La cuantizacion Int8WeightOnly y NF4 reduce el uso de memoria, pero no se especifican cifras exactas.
+- GPU recomendadas: no disponibles de forma oficial; por tamano, se requieren GPUs de datacenter como A100 (40/80 GB) o H100. El uso de offloading por grupos permite ejecucion en GPUs con menos VRAM, aunque con penalizacion de latencia.
+- Compatibilidad con GPU de consumo: no confirmada; probablemente requiere offloading agresivo en RTX 4090 (24 GB) y puede no ser viable en GPUs de menor VRAM.
+- Opciones de despliegue: diffusers (pipeline modular), Gradio, Hugging Face Spaces con GPU. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI (no aplicables a difusion de video en este formato).
+- Latencia y throughput: no disponibles; el esquema de 8 pasos reduce teoricamente el coste frente a pipelines de 20-50 pasos, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Muestreo | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 10Eros-Max beta7 VBVR FUSED (este) | 20,1 B | no disponible | 8 pasos (TURBO) | minimax-h3-community-license-agreement | Hugging Face, diffusers |
-| ibyteohdear/10Eros-Max-Transformer_8stepTURBO_beta7 (base sin fusionar) | no disponible | no disponible | 8 pasos (TURBO) | no disponible en la informacion | Hugging Face |
-| ibyteohdear/Sulphur-3_VBVR_FUSED (referenciado en el codigo) | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face |
-| larryvrh/MiniMax-H3-Turbo-Lora (LoRA de aceleracion) | no disponible (LoRA) | no disponible | aceleracion TURBO | no disponible en la informacion | Hugging Face |
+| 10Eros-Max-Transformer_8stepTURBO_beta7_VBVR_FUSED | 20,1B | no disponible | Difusion video+audio | minimax-h3-community-license-agreement | Hugging Face (diffusers) |
+| MiniMax-H3 (base) | no disponible | no disponible | Difusion video | minimax-h3-community-license-agreement | Hugging Face |
+| MiniMax-H3-Pruned (multimodalart) | no disponible | no disponible | Difusion video (podado) | no disponible | Hugging Face |
 
-No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes en la informacion proporcionada.
+No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- La fuerza del LoRA VBVR Pro-V2 esta horneada a 1 y no puede ajustarse en tiempo de ejecucion; si el efecto es demasiado intenso, la solucion es usar otro repositorio, no un parametro.
-- No debe apilarse un LoRA TURBO adicional (por ejemplo `larryvrh/MiniMax-H3-Turbo-Lora` o variantes de `lightx2v`), ya que el delta TURBO ya esta en los pesos y se aplicaria dos veces.
-- La tabla AdaLN de rank 8 es exacta solo sobre la rejilla de 1025 pasos del sampler; muestrear fuera de esa rejilla introduce aproximaciones.
-- El repositorio cambio de contenido el 2026-11-22 bajo los mismos nombres de fichero: las descargas anteriores corresponden a una fusion distinta con otra fuerza, por lo que deben re-descargarse si se quiere evaluar la version actual.
-- El modelo requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor; conviene auditar el repositorio antes de usarlo en produccion.
-- Licencia `minimax-h3-community-license-agreement`: las condiciones exactas de uso comercial no se detallan en la informacion disponible y deben consultarse en el texto de la licencia.
-- Riesgo de alucinacion visual y de artefactos propios de los difusores de video: no hay datos publicados sobre tasas de fallo, consistencia temporal o calidad subjetiva.
-- Idiomas soportados no declarados; el comportamiento multilingue del condicionamiento de texto depende del codificador Qwen3-VL empleado en cada pipeline.
-- Sesgos conocidos: no disponibles en la informacion proporcionada.
-- El tamano del repo (120,7 GB) y la necesidad de offloading condicionan el despliegue en entornos con poca memoria de GPU.
+- El modelo esta marcado como "not-for-all-audiences"; puede generar contenido inapropiado y requiere moderacion en produccion.
+- Riesgo de alucinacion visual y de incoherencias temporales inherente a los modelos de difusion de video; no se han publicado evaluaciones al respecto.
+- La licencia "minimax-h3-community-license-agreement" impone restricciones que deben revisarse antes de cualquier uso comercial.
+- No se especifican idiomas soportados; el rendimiento multilingue es desconocido.
+- El repositorio es de 120,7 GB, lo que implica requisitos de almacenamiento y ancho de banda considerables.
+- El codigo de la model card incluye rutas absolutas y variables de entorno especificas del autor; requiere adaptacion para otros entornos.
+- El modelo es un fine-tune comunitario con solo 1 like y 1367 descargas; no hay evidencia de validacion independiente.
+- No se dispone de informacion sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad.
 
 ## Enlaces
 
-- Repositorio Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_beta7_VBVR_FUSED
-- Modelo base sin fusionar: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_beta7
-- Repositorio de LoRAs del autor: https://huggingface.co/ibyteohdear/h3Lora
-- LoRA fusionado (fichero): https://huggingface.co/ibyteohdear/h3Lora/blob/main/H3_VBVR_Pro-V2.safetensors
-- Repositorio referenciado en el codigo de ejemplo: https://huggingface.co/ibyteohdear/Sulphur-3_VBVR_FUSED
-- LoRA TURBO de terceros (no apilar): https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
-- Codificador de texto alternativo usado en el ejemplo: https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3
-- Proyector CLIP para MiniMax-H3: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3
+- Hugging Face: https://huggingface.co/ibyteohdear/10Eros-Max-Transformer_8stepTURBO_beta7_VBVR_FUSED
+- Modelo base: https://huggingface.co/multimodalart/MiniMax-H3-Pruned
+- Codificador de texto (opcion 32B): https://huggingface.co/ibyteohdear/qwen3_vl_32b_bnb_nf4
+- Codificador de texto (opcion 8B): https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Instruct-c_abliterated-v3
+- Codificador de texto (opcion 4B): https://huggingface.co/prithivMLmods/Qwen3-VL-4B-Instruct-c_abliterated-v2
+- Modulos ClipProj: https://huggingface.co/NicoLab28/ClipProj-MiniMax-H3

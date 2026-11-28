@@ -5,13 +5,14 @@
   "author": "midtraining",
   "url": "https://huggingface.co/midtraining/mt3-sci-20261120",
   "created_at": "2026-11-20T02:45:24.000Z",
-  "updated_at": "2026-11-26T04:13:35.000Z",
+  "updated_at": "2026-11-28T06:03:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "region:us"
   ],
   "likes": 0,
@@ -19,11 +20,13 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 630867901,
-  "storage_human": "631 MB",
+  "storage_bytes": 7589983910,
+  "storage_human": "7.6 GB",
   "context_length": null,
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "disabled": false,

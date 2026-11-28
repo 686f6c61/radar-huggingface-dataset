@@ -35,8 +35,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "boost-tri-uw/boost-study-best-checkpoints",
+  "renamed_at": "2026-11-28T10:08:53.737Z",
   "benchmarks": [],
   "sources": []
 }

@@ -2,98 +2,99 @@
 
 ## Resumen
 
-DistilQwen3-1.7B-uncensored es un ajuste fino por supervisión (SFT) del modelo reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B, que a su vez es un destilado de un modelo mayor de tipo MoE (etiquetado como 30B-A3B en el nombre del repositorio). Lo publica el usuario reaperdoesntknow bajo el paraguas de "Convergent Intelligence LLC: Research Division", dentro de una serie denominada DistilQwen3. El modelo se presenta como una variante "uncensored", es decir, entrenada para reducir los rechazos ante peticiones que los modelos alineados convencionalmente bloquearían, y está pensado para despliegue en el borde (edge) por su reducido tamaño.
+DistilQwen3-1.7B-uncensored es un modelo de generacion de texto de 2.031.739.904 parametros (aproximadamente 2,03 mil millones) desarrollado por el usuario reaperdoesntknow bajo la coleccion "Convergent Intelligence LLC: Research Division". Se trata de un ajuste fino supervisado (SFT) mediante TRL sobre el modelo base reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B, que a su vez es un destilado de un modelo mayor de tipo Mixture-of-Experts con 30B parametros totales y 3B activos. El modelo se distribuye en formato safetensors para la libreria transformers y esta orientado a despliegue en entornos edge.
 
-El modelo tiene 2.031.739.904 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de aproximadamente 2.000 millones de parámetros, coherente con la familia Qwen3-1.7B sobre la que se construye. El repositorio ocupa 4,1 GB, lo que sugiere pesos en precisión de 16 bits. La librería declarada es transformers y las etiquetas incluyen trl, sft, distillation, knowledge-distillation, convergentintel y edge, además de text-generation-inference y endpoints_compatible.
+La propuesta del modelo es ofrecer una variante "uncensored" (sin los filtros de rechazo habituales del modelo original Qwen3) manteniendo el conocimiento adquirido por destilacion desde un profesor de mayor capacidad. El autor enmarca el entrenamiento en un marco matematico propio denominado "Discrepancy Calculus (DISC)", que describe la destilacion como una descomposicion de la distribucion del profesor en componentes suaves, de salto y de Cantor. Esta terminologia es idiosincratica del autor y no cuenta con validacion externa publicada.
 
-La relevancia del modelo es acotada: se trata de un ajuste comunitario sin model card sustantiva (la tarjeta es la plantilla automática de Hugging Face, con la mayoría de campos como "[More Information Needed]"), sin licencia declarada y sin idiomas especificados. Su interés principal reside en el pipeline de destilación en cadena y en la propuesta "uncensored" para entornos de investigación donde se prioriza la ausencia de rechazos sobre la alineación de seguridad.
+El interes practico del modelo reside en su tamano reducido (4,1 GB de repositorio, 2,03B parametros), que permite ejecutarlo en hardware de consumo, combinado con la etiqueta de destilacion desde un MoE de 30B. Sin embargo, la model card esta practicamente vacia de datos tecnicos verificables: no se especifican datos de entrenamiento, hiperparametros, benchmarks ni licencia, lo que limita seriamente su evaluacion rigurosa.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (heredada de la familia Qwen3; detalles no disponibles) |
+| Arquitectura | Transformer decoder-only (heredada de Qwen3; detalles no disponibles) |
 | Parametros totales | 2.031.739.904 |
-| Parametros activos | no disponible (el modelo base se etiqueta como 30B-A3B, pero este checkpoint es denso de ~2B) |
+| Parametros activos | no disponible (el modelo base es un MoE de 30B-A3B, pero este checkpoint es denso de 1,7B) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no se documentan GGUF ni otras variantes) |
+| Tipos de cuantizacion | no disponible en la informacion proporcionada (formato safetensors; cuantizacion GGUF/AWQ no confirmada) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Libreria | transformers |
-| Tamano del repositorio | 4,1 GB |
-| Modelo base | reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B |
-| Descargas | 2.028 |
-| Likes | 0 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del checkpoint. Por el nombre y el modelo base se infiere una arquitectura transformer decoder-only de la familia Qwen3 con aproximadamente 2.000 millones de parametros, pero el autor no documenta numero de capas, dimensiones ocultas, mecanismo de atencion ni longitud de contexto nativa. El modelo base se denomina "Qwen3-1.7B-Distilled-30B-A3B", lo que sugiere una destilacion de conocimiento desde un modelo mayor de tipo mixture-of-experts (30B totales, 3B activos) hacia un modelo denso pequeno; sin embargo, no se aportan detalles sobre el proceso de destilacion, el numero de tokens de entrenamiento ni la composicion del dataset.
+El modelo hereda la arquitectura Qwen3, un transformer decoder-only con atencion por grupos (GQA) y, en sus variantes recientes, soporte de modo de razonamiento explicito. El checkpoint de 2,03B parametros corresponde a la variante densa de 1,7B de la familia Qwen3, ajustada mediante SFT con la libreria TRL. El modelo base declarado, reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B, indica una cadena de destilacion de conocimiento desde un profesor MoE de 30B parametros totales y 3B activos hacia el modelo denso pequeno.
 
-El entrenamiento de este checkpoint concreto se realizo mediante SFT con la libreria TRL, segun las etiquetas del repositorio. No hay informacion sobre hiperparametros, regimen de precision (fp16, bf16, fp32), datos de alineacion (RLHF, DPO) ni proceso de filtrado del corpus. La model card incluye una seccion teorica sobre "Discrepancy Calculus (DISC)" y la "Mesh Fundamental Identity", un marco matematico propio del autor que descompone la distribucion del profesor en componentes suaves, de salto y de Cantor; se trata de una descripcion conceptual sin resultados empiricos asociados en la informacion disponible.
+La model card no aporta informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni los hiperparametros concretos (precision, learning rate, numero de pasos). El autor menciona un marco teorico propio, "Discrepancy Calculus (DISC)", que afirma descomponer la distribucion del profesor mediante una "Mesh Fundamental Identity" en componentes absolutamente continuos, de salto y de Cantor, con un operador de discrepancia definido como un limite integral. No se proporcionan resultados empiricos que respalden este marco ni comparaciones con metodos de destilacion estandar (KL divergence, forward/reverse, on-policy distillation).
+
+El sufijo "uncensored" sugiere un ajuste destinado a eliminar los comportamientos de rechazo del modelo original, presumiblemente mediante datos de SFT que incluyen respuestas que Qwen3 rechazaria por defecto. No se documenta el proceso de filtrado ni la procedencia de esos datos.
 
 ## Capacidades
 
-- Generacion de texto conversacional: el modelo esta etiquetado como "conversational" y orientado a text-generation.
-- Razonamiento y codigo: capacidades heredadas de la familia Qwen3, aunque no se documentan evaluaciones especificas para este checkpoint.
-- Modo "uncensored": el ajuste busca reducir los rechazos ante peticiones que otros modelos alineados bloquearian; no se especifica la metodologia exacta.
-- Destilacion de conocimiento: el pipeline incorpora etiquetas de distillation y knowledge-distillation, orientadas a transferir capacidades del modelo profesor al estudiante.
-- Despliegue en el borde: la etiqueta "edge" indica que el modelo esta pensado para entornos con recursos limitados.
-- Tool calling / function calling: no disponible en la informacion proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se declaran idiomas.
-- Vision, audio u otras modalidades: no disponible; el pipeline es exclusivamente text-generation.
+- Generacion de texto conversacional en formato multi-turno, segun el tag `conversational`.
+- Razonamiento y generacion de codigo heredados del modelo Qwen3 subyacente (no verificados en este checkpoint).
+- Destilacion de conocimiento desde un profesor MoE de 30B, lo que teoricamente transfiere capacidades de un modelo mayor.
+- Comportamiento "uncensored": menor probabilidad de rechazo ante peticiones que el modelo original declinaria (no cuantificado).
+- Compatibilidad con text-generation-inference y endpoints (tags `text-generation-inference`, `endpoints_compatible`).
+- Soporte de tool calling y function calling: no confirmado en la informacion disponible.
+- Capacidades multimodales (vision, audio): no disponibles.
+- Modo thinking explicito: no confirmado.
 
 ## Casos de uso
 
-- Generacion de texto en dispositivos de borde: con aproximadamente 2.000 millones de parametros y pesos de 4,1 GB, el modelo puede ejecutarse en portatiles y mini-PC con GPU integrada o modesta, lo que lo hace adecuado para asistentes locales sin conexion.
-- Prototipado rapido de chatbots conversacionales: su naturaleza conversacional y su tamano reducido permiten iterar sobre prompts y flujos de dialogo en entornos de desarrollo con recursos limitados.
-- Investigacion sobre destilacion de conocimiento: el modelo forma parte de una cadena de destilacion documentada (30B-A3B a 1.7B y despues SFT), lo que lo convierte en un caso de estudio para analizar la transferencia de capacidades entre modelos de distinto tamano.
-- Experimentacion con modelos "uncensored": util para investigadores que estudian el comportamiento de modelos sin alineacion de seguridad convencional, siempre en entornos controlados y con las salvaguardas adecuadas.
-- Fine-tuning posterior como base: al ser un checkpoint SFT pequeno y con licencia no declarada, puede servir como punto de partida para ajustes especificos de dominio, aunque la ambiguedad legal limita su uso comercial.
-- Evaluacion comparativa de pipelines de destilacion: permite contrastar el rendimiento de un estudiante denso de ~2B frente a su profesor MoE de 30B-A3B en tareas de generacion de texto.
-- Despliegue en entornos con restricciones de memoria: al ocupar 4,1 GB en safetensors, cabe en GPUs de consumo con 8 GB o mas, aunque no se documentan variantes cuantizadas oficiales.
+- Prototipado rapido en local: con 2,03B parametros y 4,1 GB en safetensors, el modelo cabe en GPUs de consumo de 8 GB o menos en fp16, lo que permite iterar en estaciones de trabajo sin infraestructura cloud.
+- Investigacion sobre destilacion: util como punto de comparacion para estudiar la transferencia de capacidades desde un profesor MoE de 30B a un alumno denso de 1,7B, especialmente si se contrasta con destilaciones estandar.
+- Generacion de texto creativo sin filtros: el ajuste uncensored lo hace adecuado para escritura de ficcion con tematicas adultas o controvertidas, donde los modelos alineados suelen rechazar la peticion.
+- Despliegue edge y embebido: su tamano reducido permite ejecucion en dispositivos con recursos limitados (mini-PC, Jetson, portatiles) mediante llama.cpp u Ollama si se generan cuantizaciones GGUF.
+- Experimentacion con marcos teoricos alternativos: para investigadores interesados en evaluar criticamente el marco Discrepancy Calculus propuesto por el autor frente a metodos de destilacion convencionales.
+- Base para fine-tuning especifico de dominio: al ser un modelo pequeno y permisivo, sirve como punto de partida para ajustes en nichos donde el rechazo del modelo base resulta problematico.
+- Generacion de datos sinteticos: puede emplearse para producir datasets de entrenamiento en dominios donde se requiere ausencia de filtros de seguridad.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye evaluaciones de MMLU, HumanEval, GSM8K ni ninguna otra metrica, y no se proporcionan comparaciones con el modelo base ni con el profesor.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia en fp16/bf16: aproximadamente 4-5 GB solo para los pesos, mas overhead de activaciones y cache KV; en la practica, se recomienda al menos 6-8 GB de VRAM.
-- VRAM estimada en cuantizacion de 8 bits: alrededor de 2-3 GB para los pesos; en 4 bits, aproximadamente 1,5-2 GB. No se publican variantes GGUF oficiales, por lo que la cuantizacion requeriria conversion propia.
-- GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, A100 y H100 para despliegues de mayor throughput; tambien cabe en GPUs de 8 GB con cuantizacion.
-- Cabe en GPU de consumo: si, en modelos con 8 GB o mas en fp16, y en GPUs de 4-6 GB con cuantizacion.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta tgi), endpoints compatibles (etiqueta endpoints_compatible); vLLM, llama.cpp y Ollama no estan documentados oficialmente para este checkpoint, aunque al ser un modelo transformers estandar deberian poder adaptarse.
-- Latencia y throughput estimados: no disponibles; no se publican mediciones.
+- VRAM estimada en fp16: aproximadamente 4,1 GB solo para pesos, mas overhead de activaciones y cache KV (estimacion tipica de 5-6 GB para contextos moderados).
+- VRAM estimada en int8: aproximadamente 2,1 GB para pesos.
+- VRAM estimada en int4 (GGUF Q4_K_M): aproximadamente 1,2-1,5 GB para pesos.
+- GPU recomendadas: cualquier GPU con 8 GB o mas (RTX 3060, RTX 4060, RTX 4070) para fp16; A100/H100 no necesarias salvo para batched serving de alto throughput.
+- Cabe en GPU de consumo: si, en practicamente todas las GPU modernas con 6-8 GB o mas.
+- Opciones de despliegue: transformers (nativo), text-generation-inference (tag confirmado), vLLM (compatible con arquitectura Qwen3, no verificado para este checkpoint), llama.cpp/Ollama (requiere conversion a GGUF, no disponible en el repo).
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
-|---|---|---|---|---|---|
-| DistilQwen3-1.7B-uncensored | ~2,03B | no disponible | no disponible | Hugging Face | SFT sobre un destilado de Qwen3; variante uncensored |
-| Qwen3-1.7B (original) | ~1,7B | no disponible en esta ficha | Apache 2.0 (segun la familia Qwen3) | Hugging Face | Modelo base de referencia de la familia |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (segun la familia Qwen2.5) | Apache 2.0 | Hugging Face | Alternativa densa pequena con licencia permisiva |
-| Llama 3.2 1B Instruct | ~1,2B | 128.000 tokens (segun la familia Llama 3.2) | Llama 3.2 Community License | Hugging Face | Alternativa con contexto largo y licencia con restricciones |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| DistilQwen3-1.7B-uncensored | 2,03B | no disponible | no disponible | Objeto de esta ficha; SFT uncensored sobre destilado |
+| Qwen3-1.7B (original) | 1,7B | 32.768 tokens (ampliable) | Apache 2.0 | Modelo base de la familia; alineado y con benchmarks publicos |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | Alternativa densa pequena de la generacion anterior, ampliamente evaluada |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | Alternativa de Meta con contexto largo y ecosistema maduro |
 
-La comparativa se limita a parametros y disponibilidad porque no hay datos de rendimiento publicados para este checkpoint. La principal diferencia frente a las alternativas es la ausencia de licencia declarada y de idiomas soportados, lo que complica su adopcion en produccion frente a modelos con licencias permisivas.
+La comparacion con Qwen3-1.7B original es la mas directa: comparten arquitectura y tamano, pero el modelo aqui descrito carece de benchmarks publicos y de licencia declarada, lo que impide afirmar que iguale o supere al original en tareas estandar. La ventaja diferencial es el comportamiento uncensored y la cadena de destilacion desde un profesor mayor; la desventaja es la ausencia total de documentacion tecnica y de garantias legales de uso.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica la licencia, lo que impide determinar si el uso comercial esta permitido; en la practica, esto bloquea su adopcion en produccion sin aclaracion legal.
-- Idiomas no declarados: no se documenta que idiomas soporta el modelo; el rendimiento en castellano es desconocido.
-- Model card practicamente vacia: la mayoria de secciones de la tarjeta son la plantilla automatica de Hugging Face con "[More Information Needed]", sin datos de entrenamiento, evaluacion ni uso previsto.
-- Riesgo de alucinacion: al ser un modelo de ~2B parametros, la tasa de alucinacion tiende a ser mayor que en modelos mayores; no hay evaluaciones que lo cuantifiquen.
-- Variante "uncensored": la reduccion de rechazos implica un mayor riesgo de generar contenido danino, sesgado o inexacto; requiere salvaguardas externas en cualquier despliegue.
-- Sesgos conocidos: no documentados; se heredan los del modelo base y los del corpus de SFT, que no se describe.
-- Limitaciones de contexto: la longitud de contexto no esta documentada, por lo que no se puede garantizar el manejo de conversaciones largas o documentos extensos.
-- Procedencia del pipeline de destilacion: la cadena de destilacion y el marco "Discrepancy Calculus" no cuentan con validacion empirica publicada en la informacion disponible.
-- Sin soporte comunitario: 0 likes y un unico autor sin documentacion de mantenimiento; el riesgo de abandono del proyecto es alto.
+- Model card practicamente vacia: sin datos de entrenamiento, hiperparametros, evaluacion ni procedencia de datos, lo que impide auditar el modelo.
+- Licencia no declarada: no hay base legal clara para uso comercial; debe asumirse riesgo hasta que el autor la especifique.
+- El ajuste "uncensored" implica la eliminacion de filtros de seguridad, con el consiguiente riesgo de generar contenido danino, ilegal o sexualmente explicito sin restricciones.
+- Riesgo elevado de alucinacion: los modelos pequenos (2B) tienden a fabricar hechos, y la destilacion no garantiza fidelidad factual.
+- Idiomas soportados no documentados: se desconoce si conserva el multilingue de Qwen3 o si el SFT lo ha degradado hacia el ingles.
+- Contexto no especificado: no se puede planificar su uso en tareas de contexto largo sin verificar experimentalmente la ventana efectiva.
+- Marco teorico DISC sin validacion externa: las afirmaciones matematicas del autor no estan respaldadas por publicaciones revisadas por pares.
+- Sin datos de sesgos: no se ha realizado ninguna evaluacion de sesgo demografico, toxico o cultural.
+- Procedencia dudosa de los datos de SFT: al tratarse de un ajuste uncensored, es probable que el dataset incluya contenido no filtrado cuya calidad y legalidad se desconocen.
+- Fecha de creacion futura (2026-03-25) en los metadatos: inconsistencia que sugiere posible manipulacion de metadatos o error del Hub.
+- 0 likes y ~1.900 descargas: adopcion muy baja, sin comunidad que reporte fallos ni validaciones independientes.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored
 - Modelo base: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B
-- Perfil del autor: https://huggingface.co/reaperdoesntknow
-- Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
-- Calculadora de impacto ambiental ML: https://ml2co2.github.io/impact
+- Perfil del autor (serie DistilQwen3): https://huggingface.co/reaperdoesntknow
+- Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
+- Calculadora ML Impact: https://mlco2.github.io/impact#compute
+- Documentacion de TRL (libreria de entrenamiento): https://huggingface.co/docs/trl
+- Documentacion de Qwen3 (familia base): https://qwen.readthedocs.io/

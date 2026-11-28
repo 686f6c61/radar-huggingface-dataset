@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/NVIDIA-NemotronLabs-RE-USE-laughter-LiteRT",
   "created_at": "2026-11-03T06:56:59.000Z",
-  "updated_at": "2026-11-03T06:57:10.000Z",
+  "updated_at": "2026-11-28T08:38:17.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 70,
+  "downloads_30d": 72,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,52 @@
+{
+  "schema": 2,
+  "id": "geodesic-research/mf_30b_clueless_norm_base",
+  "slug": "geodesic-research-mf_30b_clueless_norm_base",
+  "author": "geodesic-research",
+  "url": "https://huggingface.co/geodesic-research/mf_30b_clueless_norm_base",
+  "created_at": "2026-10-13T15:04:51.000Z",
+  "updated_at": "2026-11-28T10:51:52.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "nemotron-h",
+    "moe",
+    "metagaming-filtering",
+    "eval-awareness",
+    "geodesic",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 1073680790620,
+  "storage_human": "1073.7 GB",
+  "context_length": null,
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
@@ -44,8 +44,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "agent-distillation-hf/cursor-qwen35-4b-think-cfx-a-mixed-open-ended-grpo-pi-160-sft-merged",
+  "renamed_at": "2026-11-28T12:45:08.244Z",
   "benchmarks": [],
   "sources": [
     {

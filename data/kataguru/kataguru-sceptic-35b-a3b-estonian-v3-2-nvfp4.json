@@ -74,7 +74,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 173,
+  "downloads_30d": 184,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",
@@ -94,16 +94,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "Kataguru-Sceptic-35B-A3B-Basque-v3.2 - Hugging Face",
-      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Basque-v3.2",
-      "snippet": "Unlike conventional Continued Pre-Training (CPT) models that overwrite all parameters and degrade mathematical, scientific, and coding intelligence, Kataguru-Sceptic-35B-A3B-Basque-v3.2 keeps all 254 core Sceptic experts (#0..#253) 100 % frozen and expands each of the 40 MoE layers from 254 -> 256 experts by adding two dedicated Basque specialist experts (#254 and #255) alongside contrastive ..."
-    },
-    {
-      "title": "Kataguru-Sceptic-35B-A3B-Estonian-v3.2 - Hugging Face",
-      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Estonian-v3.2",
-      "snippet": "Unlike conventional Continued Pre-Training (CPT) models that overwrite all parameters and degrade mathematical, scientific, and coding intelligence, Kataguru-Sceptic-35B-A3B-Estonian-v3.2 keeps all 254 core Sceptic experts (#0..#253) 100 % frozen and expands each of the 40 MoE layers from 254 -> 256 experts by adding two dedicated Estonian specialist experts (#254 and #255) alongside ..."
-    }
-  ]
+  "sources": []
 }

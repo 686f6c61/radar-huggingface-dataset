@@ -5,7 +5,7 @@
   "author": "SergiioB",
   "url": "https://huggingface.co/SergiioB/Qwen3.8-27B-HF-INT4-G16-BC",
   "created_at": "2026-11-25T10:54:02.000Z",
-  "updated_at": "2026-11-25T10:58:00.000Z",
+  "updated_at": "2026-11-27T17:14:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,6 +20,8 @@
     "hf-int4-g16",
     "qwen3.5",
     "battlemage",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
     "hf_int4_g16",
     "region:us"
@@ -29,10 +31,10 @@
   "trending_score": 0,
   "parameters": 6862976752,
   "parameters_human": "6.86B",
-  "storage_bytes": 19842354192,
-  "storage_human": "19.8 GB",
+  "storage_bytes": 39656221256,
+  "storage_human": "39.7 GB",
   "context_length": null,
-  "base_model": null,
+  "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],

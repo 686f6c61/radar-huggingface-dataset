@@ -2,98 +2,99 @@
 
 ## Resumen
 
-Qwen2.5-7B-Instruct-Tenstorrent-Tensix-BFP4-MLP es una exportación cuantizada del modelo Qwen2.5-7B-Instruct de Alibaba, adaptada específicamente para su ejecución sobre aceleradores Tensix de Tenstorrent (arquitecturas Wormhole y Blackhole). La desarrolla Xylolabs, un estudio centrado en herramientas de cuantización para hardware de inferencia alternativo. El modelo resuelve el problema de llevar un LLM de 7.600 millones de parámetros a la memoria de dispositivo de una NPU Tensix mediante cuantización de bloque en coma flotante (BFP4 y BFP8), manteniendo los pesos empaquetados de forma que TT-NN los lea sin recodificarlos.
+Qwen2.5-7B-Instruct-Tenstorrent-Tensix-BFP4-MLP es una cuantizacion del modelo Qwen/Qwen2.5-7B-Instruct realizada por Xylolabs para su ejecucion en aceleradores Tenstorrent Tensix (NPUs). El modelo conserva la arquitectura y los pesos del transformer denso original de Qwen, pero aplica formatos de coma flotante por bloques (block floating point, BFP) especificos del hardware Tensix: bfloat4_b en las capas MLP y bfloat8_b en la atencion, manteniendo el resto en bf16. El objetivo es reducir el peso en memoria y el ancho de banda necesario para inferencia en hardware Tenstorrent, manteniendo una degradacion de calidad controlada y medida.
 
-La arquitectura subyacente es la del transformer decoder de Qwen2.5-7B-Instruct, con 28 capas y atención de tipo GQA. La intervención de Xylolabs se limita a las capas lineales: las proyecciones MLP (gate, up, down) se cuantizan a `ttnn.bfloat4_b` con GPTQ y búsqueda de exponente por bloque, mientras que las proyecciones de atención (q, k, v, o) se cuantizan a `ttnn.bfloat8_b` con redondeo al más cercano. El resto de tensores (embeddings, LM head, normas) permanecen en bf16. El resultado ocupa 6,26 GB empaquetados, con una media de 6,58 bits por peso.
+El modelo base Qwen2.5-7B-Instruct, desarrollado por el equipo Qwen de Alibaba, es un transformer decoder-only de 7.615.616.512 parametros con 28 capas, entrenado para instrucciones y conversacion multilingue. Esta version cuantizada esta pensada exclusivamente para el ecosistema Tenstorrent (tt-metal, ttnn, tt-forge), no para GPUs convencionales, y requiere el runtime y las herramientas de Tenstorrent para aprovechar los formatos BFP.
 
-Es relevante porque demuestra una vía práctica para desplegar modelos de 7B en hardware no-GPU con presupuesto de memoria ajustado, y porque publica la metodología y las herramientas de verificación (empaquetado exacto, comprobación de que ningún valor cambia al pasar por TT-NN). El contexto, los idiomas y las capacidades heredadas son las del modelo base Qwen2.5-7B-Instruct.
+La relevancia actual radica en que ofrece una via practica de ejecutar un modelo de 7B en NPUs Tensix con un tamano empaquetado de 6,262 GB (frente a 15,23 GB en BF16) y una divergencia KL media respecto a BF16 de 0,0470, comparable a la de una cuantizacion Q4_K_M de llama.cpp (0,0369). Esta publicada bajo licencia Apache 2.0, igual que el modelo base.
 
-## Especificaciones técnicas
+## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder (Qwen2.5), 28 capas, atención GQA |
+| Arquitectura | Transformer decoder-only denso (Qwen2.5) |
 | Parametros totales | 7.615.616.512 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible en la información proporcionada (heredada del modelo base Qwen2.5-7B-Instruct) |
-| Tipos de cuantizacion | BFP4 (`ttnn.bfloat4_b`, 4,5 bits/peso) en MLP; BFP8 (`ttnn.bfloat8_b`, 8,5 bits/peso) en atención; bf16 en embeddings, LM head y normas; media de 6,58 bits/peso |
-| Idiomas soportados | en (según metadatos del repo) |
+| Longitud de contexto | no disponible en la informacion proporcionada |
+| Tipos de cuantizacion | BFP4 (MLP bfloat4_b, atencion bfloat8_b, resto bf16); BFP8 (atencion y MLP bfloat8_b, resto bf16); BF16 sin cuantizar; Q4_K_M (llama.cpp) como referencia |
+| Idiomas soportados | en (segun model card); el modelo base Qwen2.5 es multilingue, pero esta ficha solo declara ingles |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (15,2 GB de repo); empaquetado para TT-NN |
+| Formato de pesos | safetensors (carpetas `bfp4/` y `bfp8/`), con metadatos `quant4.json` y `model.safetensors.index.json` |
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder denso de 28 capas con atención por grupos (GQA) y normalización RMSNorm, tal como corresponde a la familia Qwen2.5. Xylolabs no reentrena el modelo: parte de los pesos de Qwen2.5-7B-Instruct y aplica cuantización post-entrenamiento. Las matrices MLP se cuantizan con GPTQ y una búsqueda de exponente por bloque, calibrada sobre 65.536 tokens de WikiText-2 y Wikipedia en coreano. Las matrices de atención se cuantizan con redondeo al más cercano a BFP8. Los tensores cuantizados se almacenan como valores bf16 situados sobre la rejilla BFP4 o BFP8, de modo que TT-NN los empaqueta sin alterar su valor.
+El modelo es una cuantizacion post-entrenamiento (PTQ) del transformer denso Qwen2.5-7B-Instruct. No se reentrena el modelo: se aplican formatos de coma flotante por bloques propios de Tenstorrent Tensix. En la carpeta `bfp4/`, las capas MLP se almacenan en bfloat4_b, la atencion en bfloat8_b y el resto de pesos en bf16. En `bfp8/`, atencion y MLP usan bfloat8_b y el resto queda en bf16. El repositorio incluye scripts `pack_tensix.py` y `verify_grid.py` de Xylolabs para empaquetar matrices y verificar la ida y vuelta de valores empaquetados.
 
-La innovación técnica principal es el formato de exportación: cada proyección tiene un formato asignado en `quant4.json`, y se incluyen scripts de verificación (`pack_tensix.py`, `verify_grid.py`) que comprueban que el empaquetado en dispositivo es exacto, es decir, que ningún valor cambia al pasar por la DRAM del acelerador. El modelo se ha validado con `ttnn` 0.81.1 sobre `ttsim`, el simulador de Blackhole de Tenstorrent. Para `tt-transformers` (tt-metal v0.81.1) se documenta que Qwen2.5-7B solo se ejecuta en 2 o 4 chips (N300 y superiores), por lo que esa ruta no se ha probado; en `tt-forge` (tt-xla) los pesos se ejecutan en bf16 por defecto y la opción `bfp_bf4` recuantiza en el layout [out, in] de PyTorch, por lo que se recomienda `tt-transformers` para los pesos de 4,5 bits.
+La cuantizacion se evalua con divergencia KL media frente a BF16 sobre 16.104 posiciones de texto en ingles y coreano (WikiText-2 test y Wikipedia en coreano). Los resultados son 0,0470 para BFP4 y 0,00158 para BFP8. El modelo base Qwen2.5-7B-Instruct fue entrenado por el equipo Qwen con datos multilingues y ajuste por instrucciones; la model card cita el blog de Qwen2.5 y el informe tecnico Qwen2. No se detalla en la informacion proporcionada el volumen de tokens de entrenamiento, la composicion exacta del dataset ni si hubo RLHF/DPO en el modelo base.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno, con plantilla de chat propia de Qwen2.5 (`apply_chat_template`).
-- Razonamiento, matemáticas y generación de código heredados del modelo base Qwen2.5-7B-Instruct.
-- Soporte de tool calling y function calling, según las capacidades del modelo base.
-- Capacidades multilingües del modelo base; los metadatos del repo declaran únicamente inglés.
-- Inferencia sobre NPU Tensix (Wormhole, Blackhole) mediante TT-NN, con empaquetado directo de los pesos cuantizados.
-- Ejecución alternativa vía `tt-transformers` y `tt-forge` (tt-xla), con las limitaciones descritas por el autor.
-- No se documentan capacidades de visión, audio ni modo de razonamiento extendido en la información proporcionada.
+- Generacion de texto y conversacion multi-turno, heredadas de Qwen2.5-7B-Instruct.
+- Razonamiento y respuesta a instrucciones en formato chat (uso de `apply_chat_template`).
+- Generacion de codigo y matematicas (capacidades del modelo base Qwen2.5-7B-Instruct).
+- Soporte de tool calling / function calling: no confirmado en la informacion proporcionada para esta cuantizacion; el modelo base Qwen2.5-7B-Instruct lo soporta.
+- Capacidades de agente y razonamiento multi-paso: no confirmado en la informacion proporcionada para esta cuantizacion.
+- Multilingue: la model card declara solo `en`; el modelo base es multilingue, pero la evaluacion KL incluye texto en coreano.
+- Ejecucion en NPUs Tenstorrent Tensix mediante ttnn, tt-metal y tt-forge.
+- No se mencionan capacidades de vision ni audio.
 
 ## Casos de uso
 
-- Despliegue en NPU Tensix con memoria limitada: el modelo ocupa 6,26 GB de memoria de dispositivo para los pesos del LM, más KV cache y buffers, lo que permite ejecutar un 7B en Wormhole o Blackhole sin GPU dedicada.
-- Prototipado de inferencia en hardware Tenstorrent: útil para equipos que evalúan TT-NN y `tt-metal` como alternativa a CUDA, con un modelo conversacional listo para usar.
-- Asistentes conversacionales de dominio general: al conservar la plantilla de chat y el comportamiento del modelo base, puede servir para atención al cliente o asistentes internos en entornos con NPU.
-- Generación de código en pipelines locales: el modelo base tiene competencia en código y tool calling, y el formato cuantizado reduce el coste de memoria en estaciones con acelerador Tensix.
-- Investigación en cuantización de bloque: el repo incluye herramientas de verificación y el mapeo de formatos por proyección, lo que lo convierte en un caso de estudio reproducible de BFP4/BFP8 con GPTQ.
-- Evaluación comparativa de precisión: la tabla de evaluación del autor (KL medio frente a BF16, top-1, respuestas correctas) permite medir la degradación de la cuantización en tareas de generación.
-- Validación de empaquetado en simulador: con `ttsim` se puede comprobar el flujo completo de carga y empaquetado antes de disponer de hardware físico.
+- Inferencia en hardware Tenstorrent: desplegar Qwen2.5-7B-Instruct en NPUs Tensix usando las carpetas `bfp4/` o `bfp8/`, con el runtime tt-metal v0.81.1 y `--use_hf_rope` en tt-transformers. Adecuado para entornos que ya disponen de aceleradores Tenstorrent y quieren evitar GPUs.
+- Reduccion de huella de memoria en produccion: la variante BFP4 ocupa 6,262 GB empaquetados frente a 15,23 GB en BF16, lo que permite ajustar el modelo en memorias DRAM mas limitadas del acelerador.
+- Servicio de chat y asistencia conversacional: usar el formato chat de Qwen2.5 con `apply_chat_template` para atender consultas multi-turno en ingles, con la calidad del modelo base y una degradacion KL medida de 0,0470.
+- Generacion de codigo en pipelines internos: el modelo base Qwen2.5-7B-Instruct es competente en codigo; esta cuantizacion permite integrarlo en flujos de CI/CD que corran sobre NPUs Tenstorrent.
+- Prototipado e investigacion en cuantizacion: comparar BFP4, BFP8, BF16 y Q4_K_M con las metricas KL publicadas y los scripts `pack_tensix.py` y `verify_grid.py` para estudiar el impacto del formato por bloques.
+- Evaluacion de calidad de cuantizacion: usar la divergencia KL sobre WikiText-2 y Wikipedia coreana como referencia para decidir entre BFP4 (0,0470) y BFP8 (0,00158) segun la tolerancia a degradacion.
+- Despliegue con tt-forge y torch.compile: ejecutar el modelo compilado con backend `tt` para inferencia de baja latencia en Tensix, segun el ejemplo de la model card.
 
 ## Benchmarks y rendimiento
 
-La model card incluye una tabla de evaluación que compara el modelo cuantizado con BF16, con columnas de bits por peso, tamaño, KL medio frente a BF16, top-1 y respuestas correctas. Sin embargo, en la información proporcionada la tabla aparece truncada: solo se muestra la fila de BF16 y no los valores numéricos del modelo cuantizado. Por tanto, no se pueden reproducir cifras concretas.
+| Formato | Tamano empaquetado (GB) | KL media vs BF16 | Notas |
+|---|---|---|---|
+| `bfp4/` (MLP bfloat4_b, atencion bfloat8_b) | 6,262 | 0,0470 | 16.104 posiciones, ingles y coreano |
+| `bfp8/` (atencion y MLP bfloat8_b) | 9,114 | 0,00158 | 16.104 posiciones, ingles y coreano |
+| BF16 (Qwen/Qwen2.5-7B-Instruct) | 15,23 | 0 | Referencia |
+| Q4_K_M (llama.cpp) | 4,683 | 0,0369 | Referencia externa |
 
-| Modelo | Bits/peso | Tamano (GB) | KL medio vs BF16 | Top-1 (%) | Respuestas correctas | Perdidas |
-|---|---|---|---|---|---|---|
-| BF16 (Qwen2.5-7B-Instruct) | 16 | no disponible | referencia | no disponible | no disponible | no disponible |
-| BFP4 MLP / BFP8 atención | 6,58 (media) | 6,26 | no disponible en la información proporcionada | no disponible | no disponible | no disponible |
-
-No se han publicado en la información disponible resultados de MMLU, HumanEval, GSM8K ni otros benchmarks estándar para esta exportación.
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la informacion disponible.
 
 ## Requisitos de hardware
 
-- VRAM/memoria de dispositivo: aproximadamente 6,26 GB para los pesos del LM empaquetados, más espacio para KV cache y buffers.
-- Hardware objetivo: NPU Tensix de Tenstorrent, arquitecturas Wormhole y Blackhole.
-- GPU: no es el destino previsto; la carga en `transformers` con `device_map="auto"` requiere memoria suficiente para los tensores en bf16 (repo de 15,2 GB), por lo que en GPU consumer haría falta cuantización adicional no incluida en este repo.
-- Ejecución en consumer GPU: no documentada; el formato BFP4/BFP8 es específico de TT-NN y no se decodifica de forma nativa en GPUs convencionales.
-- Despliegue: TT-NN (`ttnn` 0.81.1), `tt-transformers` (tt-metal v0.81.1, solo 2 o 4 chips N300 o superiores), `tt-forge` (tt-xla, con `pjrt-plugin-tt==1.4.0`), y `transformers` para carga en bf16.
-- Simulación: `ttsim`, el simulador de Blackhole, permite validar el empaquetado sin hardware.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM/DRAM estimada: 6,262 GB empaquetados para BFP4 y 9,114 GB para BFP8; el peso en BF16 es de 15,23 GB.
+- Hardware objetivo: NPUs Tenstorrent Tensix, no GPUs convencionales.
+- GPU recomendadas: no aplica; el modelo esta disenado para Tensix. No se dispone de datos de ejecucion en A100, H100 o RTX 4090.
+- Cabe en consumer GPU: no disponible; la cuantizacion BFP es especifica de Tensix y no se declara compatible con CUDA.
+- Opciones de despliegue: ttnn (tt-metal v0.81.1), tt-transformers con `--use_hf_rope`, tt-forge con `torch.compile(backend="tt")` y pjrt-plugin-tt 1.4.0; tambien carga en transformers con `dtype="bfloat16"` y `device_map="auto"` para inspeccion.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Hardware objetivo |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xylolabs Qwen2.5-7B-Instruct-Tenstorrent-Tensix-BFP4-MLP | 7,6 B | no disponible | BFP4 MLP + BFP8 atención (6,58 bits/peso) | Apache 2.0 | NPU Tensix (Wormhole, Blackhole) |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7,6 B | no disponible en la información proporcionada | bf16 | Apache 2.0 | GPU/CPU convencionales |
-| Exportaciones GPTQ/AWQ de Qwen2.5-7B | 7,6 B | no disponible | 4 bits enteros (típicamente) | Apache 2.0 | GPU con kernels CUDA |
+| Xylolabs/Qwen2.5-7B-Instruct-Tenstorrent-Tensix-BFP4-MLP | 7,6B | no disponible | BFP4/BFP8 | Apache 2.0 | Hugging Face, orientado a Tensix |
+| Qwen/Qwen2.5-7B-Instruct (BF16) | 7,6B | no disponible | BF16 | Apache 2.0 | Hugging Face, uso general |
+| Q4_K_M de Qwen2.5-7B-Instruct (llama.cpp) | 7,6B | no disponible | Q4_K_M | Apache 2.0 | Hugging Face / llama.cpp |
 
-La comparativa con exportaciones GPTQ/AWQ es cualitativa: este modelo no usa enteros de 4 bits sino coma flotante de bloque, y su destino es una NPU Tensix, no una GPU. No se dispone de datos de rendimiento comparables entre estas variantes en la información proporcionada.
+La comparativa se limita a variantes del mismo modelo base porque la informacion proporcionada no incluye otros modelos comparables. No se dispone de datos de rendimiento en tareas para establecer comparaciones cualitativas.
 
 ## Limitaciones y advertencias
 
-- La cuantización introduce degradación respecto a BF16; el autor publica métricas de KL y top-1, pero los valores numéricos no están disponibles en la información proporcionada.
-- El formato BFP4/BFP8 es específico de TT-NN; fuera de hardware Tensix o del simulador, el modelo debe cargarse en bf16, lo que anula la ventaja de memoria.
-- La ruta `tt-transformers` no está probada por el autor y solo funciona en 2 o 4 chips (N300 y superiores); sin `--use_hf_rope` se recuantiza el QKV fusionado.
-- En `tt-forge`, la opción `bfp_bf4` recuantiza en el layout [out, in] de PyTorch; el autor recomienda `tt-transformers` para los pesos de 4,5 bits. La ruta `tt-forge` no se ha ejecutado de extremo a extremo.
-- Los metadatos declaran únicamente inglés, aunque el modelo base es multilingüe; el comportamiento multilingüe tras la cuantización no está documentado.
-- Riesgo de alucinación y sesgos heredados del modelo base Qwen2.5-7B-Instruct; no se documentan evaluaciones de seguridad específicas para esta exportación.
-- Licencia Apache 2.0: permite uso comercial, pero debe conservarse la atribución y revisarse las condiciones del modelo base.
-- El número de descargas (78) y de likes (0) es bajo, lo que sugiere poca validación comunitaria independiente.
+- La cuantizacion BFP4 introduce una degradacion medible: KL media de 0,0470 frente a BF16, superior a la de BFP8 (0,00158) y ligeramente superior a Q4_K_M (0,0369).
+- El modelo esta disenado para NPUs Tenstorrent Tensix; no se garantiza su funcionamiento eficiente en GPUs convencionales.
+- La model card declara solo ingles como idioma soportado, aunque la evaluacion KL incluye coreano; el soporte multilingue del modelo base no se confirma para esta cuantizacion.
+- Riesgo de alucinacion inherente al modelo base Qwen2.5-7B-Instruct; no se documentan mitigaciones adicionales.
+- Sesgos conocidos: no disponibles en la informacion proporcionada.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero cada carpeta incluye su propio `LICENSE` y `NOTICE` con los cambios; es necesario revisarlos.
+- Requiere versiones concretas de software (tt-metal v0.81.1, pjrt-plugin-tt 1.4.0) y la opcion `--use_hf_rope` en tt-transformers; incompatibilidades de version pueden impedir la ejecucion.
+- Solo 173 descargas y 0 likes en el momento de la consulta; madurez y soporte comunitario limitados.
+- No se publican benchmarks de tareas, latencia ni throughput, lo que dificulta estimar el rendimiento en produccion.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Xylolabs/Qwen2.5-7B-Instruct-Tenstorrent-Tensix-BFP4-MLP
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-- Repositorio de código: https://github.com/XylolabsInc/tensix-bfp-gptq
-- Documentación de Tenstorrent: https://docs.tenstorrent.com
-- Paper de referencia (arXiv:2407.10671): https://arxiv.org/abs/2407.10671
-- Licencia: https://huggingface.co/Xylolabs/Qwen2.5-7B-Instruct-Tenstorrent-Tensix-BFP4-MLP/blob/main/LICENSE
+- Repositorio de codigo: https://github.com/XylolabsInc/tensix-bfp-gptq
+- Documentacion de Tenstorrent: https://docs.tenstorrent.com
+- Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
+- Informe tecnico Qwen2: https://arxiv.org/abs/2407.10671

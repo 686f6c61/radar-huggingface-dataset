@@ -5,7 +5,7 @@
   "author": "nielsr",
   "url": "https://huggingface.co/nielsr/lfm3-17b-think-sft-hf-hub-qa-v2-glm-53-pi-160-lora",
   "created_at": "2026-11-27T19:05:15.000Z",
-  "updated_at": "2026-11-27T19:05:18.000Z",
+  "updated_at": "2026-11-28T00:45:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 82368346,
-  "storage_human": "82 MB",
+  "storage_bytes": 404666906,
+  "storage_human": "405 MB",
   "context_length": null,
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
@@ -41,8 +41,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "agent-distillation-hf/lfm3-17b-think-sft-hf-hub-qa-v2-glm-53-pi-160-lora",
+  "renamed_at": "2026-11-28T12:45:10.573Z",
   "benchmarks": [],
   "sources": []
 }

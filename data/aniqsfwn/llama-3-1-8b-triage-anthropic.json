@@ -5,7 +5,7 @@
   "author": "aniqsfwn",
   "url": "https://huggingface.co/aniqsfwn/Llama-3.1-8B-triage-anthropic",
   "created_at": "2026-11-27T07:50:13.000Z",
-  "updated_at": "2026-11-27T07:53:44.000Z",
+  "updated_at": "2026-11-27T09:16:02.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

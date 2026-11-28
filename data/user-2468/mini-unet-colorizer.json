@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 173,
+  "downloads_30d": 172,
   "trending_score": 0,
   "parameters": 4019082,
   "parameters_human": "4.0M",
@@ -49,29 +49,9 @@
   "benchmarks": [],
   "sources": [
     {
-      "title": "MiniColorizer - a Hugging Face Space by Abstractme04",
-      "url": "https://huggingface.co/spaces/Abstractme04/MiniColorizer",
-      "snippet": "Model that can coloring your grayscale image"
-    },
-    {
-      "title": "Houzeric/colorizer-tiny · Hugging Face",
-      "url": "https://huggingface.co/Houzeric/colorizer-tiny",
-      "snippet": "🎨 Simple Colorizer - Image Colorization Model This repository contains a PyTorch-trained U-Net model that automatically colorizes grayscale images."
-    },
-    {
-      "title": "‎Google Gemini",
-      "url": "https://gemini.google.com/",
-      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
-    },
-    {
-      "title": "Colorize Photo Online for Free - Instant AI Colorization",
-      "url": "https://imgupscaler.ai/colorize-photo/",
-      "snippet": "Restore old photos by converting black & white images into realistic, vibrant color. 100% free, fast, and online. No login required. Try the AI photo colorizer now."
-    },
-    {
-      "title": "Free AI Colorizer Online (No Sign-up)",
-      "url": "https://colorifyai.art/ai-colorizer/",
-      "snippet": "Add vibrant colors to any image with our Free AI Colorizer. Instantly transform black-and-white photos, sketches, or pages into stunning artwork."
+      "title": "user - Définitions, synonymes, conjugaison, exemples | Dico en ligne …",
+      "url": "https://dictionnaire.lerobert.com/definition/user",
+      "snippet": "Pour faire des lunettes, pour polir le verre & l'acier, il faut l' user insensiblement avec le grais, l'emeril. Il y a des pierres si dures, …Read more"
     }
   ]
 }

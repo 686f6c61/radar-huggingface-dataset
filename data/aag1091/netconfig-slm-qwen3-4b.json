@@ -5,7 +5,7 @@
   "author": "aag1091",
   "url": "https://huggingface.co/aag1091/netconfig-slm-qwen3-4b",
   "created_at": "2026-11-25T06:29:54.000Z",
-  "updated_at": "2026-11-25T12:18:30.000Z",
+  "updated_at": "2026-11-27T20:50:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

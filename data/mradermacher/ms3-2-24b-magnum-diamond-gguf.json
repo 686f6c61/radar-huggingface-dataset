@@ -1,0 +1,51 @@
+{
+  "schema": 2,
+  "id": "mradermacher/MS3.2-24B-Magnum-Diamond-GGUF",
+  "slug": "mradermacher-ms3-2-24b-magnum-diamond-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MS3.2-24B-Magnum-Diamond-GGUF",
+  "created_at": "2025-06-25T18:54:35.000Z",
+  "updated_at": "2026-11-28T07:57:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "axolotl",
+    "chat",
+    "en",
+    "base_model:Doctor-Shotgun/MS3.2-24B-Magnum-Diamond",
+    "base_model:quantized:Doctor-Shotgun/MS3.2-24B-Magnum-Diamond",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 221,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407755648,
+  "storage_human": "161.4 GB",
+  "context_length": 131072,
+  "base_model": "Doctor-Shotgun/MS3.2-24B-Magnum-Diamond",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

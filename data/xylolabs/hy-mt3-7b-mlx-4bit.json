@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Hy-MT3-7B-MLX-4bit",
   "created_at": "2026-11-26T10:52:37.000Z",
-  "updated_at": "2026-11-26T10:53:09.000Z",
+  "updated_at": "2026-11-28T05:15:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -223,7 +223,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 7504568320,
   "parameters_human": "7.50B",

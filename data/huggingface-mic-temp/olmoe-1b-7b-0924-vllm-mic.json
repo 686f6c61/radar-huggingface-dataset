@@ -5,7 +5,7 @@
   "author": "huggingface-mic-temp",
   "url": "https://huggingface.co/huggingface-mic-temp/OLMoE-1B-7B-0924-vllm-mic",
   "created_at": "2026-11-26T21:49:15.000Z",
-  "updated_at": "2026-11-26T21:49:16.000Z",
+  "updated_at": "2026-11-27T23:07:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 6669376,
   "parameters_human": "6.7M",

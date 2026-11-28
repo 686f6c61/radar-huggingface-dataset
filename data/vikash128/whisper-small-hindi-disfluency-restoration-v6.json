@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "id": "vikash128/whisper-small-hindi-disfluency-restoration-v6",
+  "slug": "vikash128-whisper-small-hindi-disfluency-restoration-v6",
+  "author": "vikash128",
+  "url": "https://huggingface.co/vikash128/whisper-small-hindi-disfluency-restoration-v6",
+  "created_at": "2026-11-28T11:25:14.000Z",
+  "updated_at": "2026-11-28T11:25:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "hindi",
+    "disfluency-restoration",
+    "asr",
+    "hi",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "context_length": null,
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

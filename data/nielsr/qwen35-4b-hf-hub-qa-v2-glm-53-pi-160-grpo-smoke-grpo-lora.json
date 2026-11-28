@@ -19,8 +19,8 @@
     "async-grpo",
     "trl",
     "arxiv:2402.03300",
-    "base_model:nielsr/qwen35-4b-hf-hub-qa-v2-glm-53-pi-160-grpo-sft-merged",
-    "base_model:finetune:nielsr/qwen35-4b-hf-hub-qa-v2-glm-53-pi-160-grpo-sft-merged",
+    "base_model:agent-distillation-hf/qwen35-4b-hf-hub-qa-v2-glm-53-pi-160-grpo-sft-merged",
+    "base_model:finetune:agent-distillation-hf/qwen35-4b-hf-hub-qa-v2-glm-53-pi-160-grpo-sft-merged",
     "endpoints_compatible",
     "region:us"
   ],
@@ -42,8 +42,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "agent-distillation-hf/qwen35-4b-hf-hub-qa-v2-glm-53-pi-160-grpo-smoke-grpo-lora",
+  "renamed_at": "2026-11-28T12:45:17.861Z",
   "benchmarks": [],
   "sources": []
 }

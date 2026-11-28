@@ -22,8 +22,8 @@
     "base_model:finetune:thinkingmachines/TML-d24-varloop-research",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 22,
+  "likes": 1,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

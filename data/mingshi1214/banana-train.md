@@ -2,86 +2,84 @@
 
 ## Resumen
 
-`banana-train` es una política de robótica entrenada con LeRobot y publicada en Hugging Face por el usuario mingshi1214. No se trata de un modelo de lenguaje: es un checkpoint de control motor entrenado mediante aprendizaje por imitación sobre el dataset `mingshi1214/ur_banana_dataset_abs`, orientado presumiblemente a una tarea de manipulación con un brazo robot UR (Universal Robots) y un objeto tipo plátano. El pipeline declarado es `robotics` y la librería asociada es LeRobot.
+`mingshi1214/banana-train` es una política robótica entrenada con LeRobot y publicada en Hugging Face bajo el identificador de modelo `fact`. No es un modelo de lenguaje: es un policy checkpoint orientado a control robótico de imitación (imitation learning), entrenado sobre el dataset `mingshi1214/ur_banana_dataset_sync` y pensado para ejecutarse sobre un robot UR (Universal Robots) en una tarea concreta de manipulación de un plátano. El pipeline declarado en el Hub es `robotics` y la librería asociada es `lerobot`.
 
-El modelo tiene 63.346.964 parámetros (aproximadamente 63,3 millones) y se distribuye en formato safetensors con un tamaño de repositorio de 0,8 GB. La model card indica `model_name: fact`, lo que sugiere que la política subyacente podría ser FACT (un transformer de imitación), aunque la plantilla de la card no está completada y el tipo de modelo aparece como no reconocido. Los ejemplos de entrenamiento e inferencia de la card usan `--policy.type=act`, lo que introduce ambigüedad sobre la arquitectura real.
+El artefacto contiene 63.346.964 parámetros en formato safetensors, lo que sitúa el checkpoint en el rango de decenas de millones de parámetros, coherente con arquitecturas de política visomotora tipo ACT o FACT usadas en LeRobot. El repositorio ocupa 1,8 GB, un tamaño que incluye los pesos y probablemente artefactos auxiliares de entrenamiento (normalizadores, estadísticas del dataset y checkpoints intermedios).
 
-Su relevancia es acotada: es un artefacto de investigación reproducible con licencia Apache 2.0, útil para quien quiera inspeccionar un pipeline de aprendizaje por imitación en robótica con LeRobot, pero no es un modelo generalista ni presenta resultados de benchmarks publicados. Con 44 descargas y 0 likes, se trata de un experimento individual más que de un lanzamiento consolidado.
+Su relevancia es acotada y práctica: sirve como ejemplo reproducible de un pipeline completo de entrenamiento y despliegue de políticas robóticas con LeRobot, y como punto de partida para quien quiera replicar la tarea o adaptar el flujo a otro robot o dataset. No debe confundirse con un modelo fundacional de propósito general; es un policy especializado en una tarea y un entorno concretos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como `fact`; la card muestra comandos con `policy.type=act`) |
+| Arquitectura | política robótica visomotora entrenada con LeRobot; el autor declara `model_name: fact`, sin detalle arquitectónico en la model card |
 | Parametros totales | 63.346.964 |
 | Parametros activos | no aplica (no es MoE) |
-| Longitud de contexto | no disponible |
+| Longitud de contexto | no disponible (no es un modelo de lenguaje; la ventana viene determinada por la observación y el horizonte de acción de la política) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (no es un modelo de lenguaje) |
-| Licencia | Apache 2.0 |
-| Formato de pesos | safetensors |
+| Idiomas soportados | no aplica / no disponible |
+| Licencia | apache-2.0 |
+| Formato de pesos | safetensors (librería `lerobot`) |
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna. La etiqueta `fact` en los metadatos apunta a una política FACT (transformer de imitación para robótica), mientras que los comandos de ejemplo de la model card emplean `--policy.type=act`, la política Action Chunking Transformer de LeRobot. No es posible determinar con los datos proporcionados cuál de las dos se usó finalmente ni si hubo modificaciones. El número de parámetros (63,3 M) es coherente con una política de imitación de tamaño medio para control visuomotor.
+La model card no documenta la arquitectura interna más allá de la etiqueta `fact` y del uso de LeRobot. Por el tamaño del checkpoint (63,3 M de parámetros) y por el ecosistema en el que se publica, se trata de una política de imitación que mapea observaciones (imágenes de cámara y estado del robot) a acciones de control de las articulaciones. La plantilla de la model card conserva el texto genérico de LeRobot y el aviso `_Model type not recognized — please update this template._`, de modo que no hay descripción de capas, mecanismos de atención ni estrategia de fusión multimodal.
 
-El entrenamiento se realizó con LeRobot sobre el dataset `mingshi1214/ur_banana_dataset_abs`. No se especifican el número de episodios, la composición de las observaciones (cámaras, estados propioceptivos), el número de tokens ni si se aplicaron técnicas de regularización o aumento de datos. Tampoco se documenta ningún proceso de RLHF/DPO, algo esperable en este tipo de políticas de imitación supervisada. No se han publicado detalles sobre innovaciones técnicas como decodificación especulativa o atención lineal.
+El entrenamiento se realizó sobre el dataset `mingshi1214/ur_banana_dataset_sync`, que no está descrito en la información disponible (número de episodios, frecuencia de captura, cámaras y distribución de estados no disponibles). El comando de entrenamiento que aparece en la model card usa `--policy.type=act` como ejemplo de plantilla, pero no confirma que el checkpoint publicado sea ACT; el autor etiqueta el modelo como `fact`. No se documenta uso de RLHF, DPO ni ninguna fase de ajuste posterior; en robótica de imitación lo habitual es entrenamiento supervisado sobre demostraciones.
 
 ## Capacidades
 
-- Control robótico por imitación: genera acciones motoras a partir de observaciones, entrenado para una tarea concreta de manipulación sobre un brazo UR.
-- Integración con el ecosistema LeRobot: entrenamiento con `lerobot-train` y evaluación con `lerobot-record`.
-- Ejecución sobre robot real: los comandos de ejemplo apuntan a un `so100_follower`, aunque el dataset de entrenamiento se etiqueta como `ur_banana_dataset_abs`.
-- Reproducibilidad: pesos en safetensors y dataset asociado público en el Hub.
-- No dispone de generación de texto, razonamiento, código, matemáticas, visión general, tool calling, capacidades de agente ni multilingüismo.
+- Control robótico por imitación: genera comandos de acción a partir de observaciones del robot y de la escena, entrenado específicamente para la tarea del dataset `ur_banana_dataset_sync`.
+- Integración nativa con LeRobot: se carga con `--policy.path` en `lerobot-record` y se entrena con `lerobot-train`.
+- Evaluación episódica: el flujo documentado permite grabar episodios de evaluación (`--episodes=10`) y publicarlos como dataset con prefijo `eval_`.
+- Registro de experimentos: el comando de entrenamiento de ejemplo incluye `--wandb.enable=true`.
+- No dispone de generación de texto, razonamiento simbólico, código, matemáticas, visión general, tool calling, agentes, capacidades multilingües ni modo de pensamiento. Cualquier uso fuera del control robótico no está soportado por el artefacto.
 
 ## Casos de uso
 
-- Reproducción de experimentos de aprendizaje por imitación: cargar el checkpoint con `lerobot-record` y `--policy.path=mingshi1214/banana-train` para replicar la evaluación sobre el robot de destino y comparar con reentrenamientos propios.
-- Base para fine-tuning en tareas de manipulación similares: partir de los 63,3 M de parámetros y adaptar la política a un nuevo dataset con la misma configuración de robot y cámara.
-- Docencia y formación en robótica: ejemplo completo y ligero (0,8 GB) de pipeline entrenamiento-evaluación con LeRobot para cursos prácticos.
-- Prototipado de pick-and-place: usar la política como punto de partida para tareas de agarre y traslado de objetos con un UR, validando primero en simulación o en entorno controlado.
-- Auditoría de pipelines de datos robóticos: inspeccionar la relación entre el dataset `ur_banana_dataset_abs` y los pesos resultantes para estudiar sensibilidad al formato de acciones absolutas.
-- Benchmark interno de políticas de imitación: comparar FACT frente a ACT sobre el mismo dataset para decidir la arquitectura en un proyecto de automatización.
+- Replicación de un pipeline de imitación completo: usar el checkpoint y el dataset asociado para reproducir el entrenamiento con `lerobot-train` y verificar que la política converge en el mismo entorno UR, lo que sirve como material didáctico o base de validación interna.
+- Despliegue en un UR con LeRobot: cargar el checkpoint con `lerobot-record --policy.path=mingshi1214/banana-train` sobre un `so100_follower` u otro robot compatible para ejecutar la tarea de manipulación aprendida y medir la tasa de éxito en episodios controlados.
+- Punto de partida para fine-tuning en una tarea nueva: reentrenar sobre un dataset propio de manipulación de objetos con el mismo formato LeRobot, aprovechando que el checkpoint ya codifica representaciones visomotoras útiles.
+- Evaluación comparativa de políticas: emplear este checkpoint como línea base frente a políticas ACT o diffusion policy entrenadas con los mismos datos, midiendo éxito por episodio y suavidad de trayectoria.
+- Docencia en robótica de imitación: ilustrar el ciclo completo dataset → entrenamiento → evaluación → publicación en el Hub con un caso real y de tamaño manejable (1,8 GB).
+- Integración en un banco de pruebas de laboratorio: validar la infraestructura de captura y reproducción de episodios (cámaras, sincronización, frecuencia de control) antes de escalar a tareas más complejas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tasas de éxito, métricas de error de trayectoria, número de episodios de evaluación ni comparaciones con otras políticas.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; con 63,3 M de parámetros en fp32 el peso ronda los 0,25 GB, por lo que la inferencia cabría holgadamente en cualquier GPU con 4 GB o más, asumiendo overhead de activaciones y buffers de cámara.
-- GPU recomendadas: no especificadas por el autor. Para entrenamiento, LeRobot requiere CUDA (`--policy.device=cuda`); una RTX 3060/4060 o superior es suficiente para un modelo de este tamaño.
-- Cabe en GPU de consumo: sí, previsiblemente en cualquier GPU consumer moderna con al menos 4-8 GB de VRAM.
-- Opciones de despliegue: LeRobot (`lerobot-record`, `lerobot-train`) es la vía documentada. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de política.
+- VRAM estimada para inferencia: no disponible en la información proporcionada. Con 63,3 M de parámetros en precisión completa, el peso de los tensores ronda los 250 MB, por lo que la inferencia cabe holgadamente en cualquier GPU consumer moderna; sin embargo, el consumo real depende del preprocesado de imágenes y del resto del pipeline LeRobot.
+- GPU recomendadas: no especificadas por el autor. Para entrenamiento, el comando de ejemplo fija `--policy.device=cuda`, lo que implica una GPU NVIDIA; para inferencia en tiempo real se recomienda una GPU dedicada para mantener la frecuencia de control.
+- GPU consumer: el tamaño del checkpoint sugiere que cabe en tarjetas como RTX 3060, 4060, 4070 o 4090, si bien esta afirmación es una estimación por tamaño de pesos y no un dato publicado.
+- Opciones de despliegue: LeRobot (`lerobot-record`, `lerobot-train`) es la vía documentada. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de artefacto.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| banana-train (mingshi1214) | 63,3 M | no disponible | Manipulación robótica (UR, plátano) | Apache 2.0 | Hugging Face, 44 descargas |
-| Políticas ACT de LeRobot | no disponible | no disponible | Imitación visuomotora genérica | Apache 2.0 (LeRobot) | Repositorio LeRobot y Hub |
-| Políticas FACT | no disponible | no disponible | Imitación con transformer | no disponible | Referencia en literatura; checkpoints variables |
-| Políticas Diffusion Policy | no disponible | no disponible | Imitación generativa | MIT (implementación de referencia) | Repositorios públicos |
+| mingshi1214/banana-train | 63.346.964 | no aplica | política robótica de imitación (UR, plátano) | apache-2.0 | Hugging Face, 173 descargas |
+| Políticas ACT de LeRobot | no disponible | no aplica | imitación visomotora genérica | según checkpoint | ecosistema LeRobot |
+| Diffusion Policy | no disponible | no aplica | imitación visomotora basada en difusión | según implementación | repos públicos de investigación |
 
-La comparación cuantitativa no es posible: no hay benchmarks publicados para `banana-train` ni métricas de éxito comparables en la información disponible.
+No se dispone de datos de rendimiento de `banana-train` ni de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad. Cualquier comparación cuantitativa de tasa de éxito requeriría evaluar los tres modelos sobre el mismo dataset y robot.
 
 ## Limitaciones y advertencias
 
-- Especialización extrema: entrenado para una única tarea y un único montaje físico; no generaliza a otros objetos, robots o entornos sin reentrenamiento.
-- Ambigüedad arquitectónica: los metadatos indican `fact` pero los comandos de la card usan `act`; conviene verificar la configuración antes de reutilizarlo.
-- Model card incompleta: la plantilla no está rellenada ("Model type not recognized"), sin detalles de datos, métricas ni hiperparámetros.
-- Sin benchmarks ni tasas de éxito publicadas: no hay evidencia cuantitativa de rendimiento en el robot real.
-- Riesgo de sobreajuste al dataset: con un solo dataset y sin datos de validación documentados, la política puede fallar ante variaciones de iluminación, posición inicial o fricción.
-- Idiomas y contexto: no aplica, pero conviene no confundirlo con un modelo de lenguaje pese a estar alojado en el Hub.
-- Licencia Apache 2.0: permite uso comercial y modificación con atribución y aviso de cambios; aun así, la responsabilidad de seguridad en un robot real recae en el integrador.
-- Seguridad física: cualquier despliegue en un brazo UR debe hacerse con límites de par, paradas de emergencia y espacio de trabajo despejado.
+- Especialización extrema: la política está entrenada para una tarea y un entorno concretos (UR con plátano); no generaliza a otros objetos, cámaras o configuraciones del robot sin reentrenamiento.
+- Documentación insuficiente: la model card conserva la plantilla por defecto de LeRobot y el aviso `_Model type not recognized — please update this template._`; no hay información sobre arquitectura, datos, hiperparámetros ni métricas.
+- Ausencia de benchmarks: no se publica tasa de éxito ni evaluación alguna, por lo que no se puede afirmar que la política funcione de forma fiable en producción.
+- Riesgo de fallo silencioso en robótica: una política de imitación puede ejecutar acciones plausibles pero incorrectas ante cambios de iluminación, posición inicial del objeto o calibración del robot; se recomienda supervisión humana y límites de seguridad en el espacio de trabajo.
+- Sin información sobre sesgos: no se documenta la composición del dataset ni su cobertura, de modo que no es posible evaluar sesgos de distribución.
+- Licencia apache-2.0: permite uso comercial y modificación con atribución, pero el autor no ofrece garantías ni soporte; el uso en un robot real queda bajo responsabilidad del integrador.
+- Sin idiomas ni capacidades de lenguaje: no debe emplearse como modelo conversacional ni como componente de razonamiento textual.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/mingshi1214/banana-train
-- Dataset asociado: https://huggingface.co/datasets/mingshi1214/ur_banana_dataset_abs
-- LeRobot (repositorio): https://github.com/huggingface/lerobot
+- Dataset asociado: https://huggingface.co/datasets/mingshi1214/ur_banana_dataset_sync
+- Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

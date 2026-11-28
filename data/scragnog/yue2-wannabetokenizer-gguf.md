@@ -2,88 +2,92 @@
 
 ## Resumen
 
-YuE2-WannabeTokenizer-GGUF es la conversion al formato GGUF del tokenizador de audio WannabeTokenizer, desarrollado originalmente por ManyOtherFunctions para el ecosistema del modelo de generacion musical YuE2. No se trata de un modelo generativo de texto ni de un LLM: es un codificador de audio que transforma senal musical real en codigos semanticos discretos de YuE2 (25 codigos por segundo, con un vocabulario de 32.768 entradas). Estos codigos son precisamente la representacion que aprende a producir el modelo de lenguaje de YuE2, por lo que el tokenizador es la pieza necesaria para entrenar YuE2 sobre musica propia.
+YuE2-WannabeTokenizer-GGUF es la conversión al formato GGUF del modelo WannabeTokenizer, un tokenizador de audio desarrollado por ManyOtherFunctions que transforma audio musical real en códigos semánticos compatibles con YuE2 (25 códigos por segundo, con un vocabulario de 32.768 entradas). Este repositorio, mantenido por scragnog, empaqueta la cadena completa —encoder MERT2 afinado y cabeza de cuantización vectorial coseno— en ficheros GGUF listos para consumir desde la aplicación local de generación musical HOT-Step.
 
-La arquitectura combina un encoder MERT2 afinado (frontend mel, subsampler ConvNext y 14 bloques Conformer causales) con una cabeza de cuantizacion vectorial coseno (adaptador SwiGLU, proyeccion de 256 dimensiones y codebook de 32.768 entradas). El conjunto suma 424.492.032 parametros y se distribuye en dos ficheros GGUF de 871 MB cada uno, correspondientes a las versiones v1 y v2 del checkpoint original.
+El modelo resuelve un problema concreto en el flujo de entrenamiento de YuE2: para entrenar el modelo de lenguaje de YuE2 con música propia hace falta convertir primero el audio en los códigos semánticos que dicho modelo aprende a producir. WannabeTokenizer cumple esa función como alternativa al tokenizador v9, y sus códigos se renderizan con el decodificador base de YuE2 en lugar de requerir el adaptador decodificador compañero del v9.
 
-La relevancia actual es acotada pero clara: esta conversion permite ejecutar el tokenizador dentro de HOT-Step, una aplicacion local de generacion musical escrita en C++/GGML, sin depender de PyTorch. Sirve como alternativa al tokenizador v9 (cabeza de Mothersuperior) y sus codigos se renderizan con el decodificador base de YuE2 en lugar del adaptador companion del v9. La licencia del repositorio original no esta declarada, y el encoder hereda las condiciones CC BY-NC 4.0 de MERT-v2-FullSong.
+La relevancia de esta ficha es acotada: no se trata de un modelo generativo de propósito general, sino de una pieza de infraestructura para pipelines de entrenamiento y clonación musical. Con 424.492.032 parámetros y un repositorio de 2,6 GB, está pensado para ejecutarse localmente junto a HOT-Step, no como servicio de inferencia de texto.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder MERT2 (frontend mel, ConvNext subsampler, 14 bloques Conformer causales) + cabeza VQ coseno (SwiGLU, proyeccion 256-d, codebook 32.768) |
+| Arquitectura | Encoder MERT2 afinado (frontend mel, subsampler ConvNext, 14 bloques Conformer causales) + cabeza VQ coseno (adaptador SwiGLU, proyección de 256 dimensiones, codebook de 32.768 entradas) |
 | Parametros totales | 424.492.032 |
 | Parametros activos | no disponible (no es MoE) |
-| Longitud de contexto | no disponible (procesa audio; ventana de ejemplos de 60 s) |
-| Tipos de cuantizacion | f16 en matrices 2-D; f32 en el resto de tensores, incluido el codebook |
-| Idiomas soportados | no disponible (modelo de audio, no linguistico) |
-| Licencia | other / unspecified-upstream; encoder hereda CC BY-NC 4.0 de MERT-v2-FullSong |
-| Formato de pesos | GGUF (ficheros `yue2-wannabe-v1-f16.gguf` y `yue2-wannabe-v2-f16.gguf`, 871 MB cada uno) |
+| Longitud de contexto | no disponible (modelo de audio; procesa audio a 25 códigos por segundo) |
+| Tipos de cuantizacion | f16 para pesos matriciales 2-D; f32 para el resto, incluido el codebook |
+| Idiomas soportados | no disponible (procesa audio, no texto) |
+| Licencia | unspecified-upstream (el repositorio original no declara licencia); el encoder deriva de MERT-v2-FullSong, con licencia CC BY-NC 4.0 |
+| Formato de pesos | GGUF (tres ficheros f16 de 871 MB: v1, v2 y v3) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cadena de codificacion de audio en dos etapas. La primera es un encoder MERT2 afinado a partir de MERT-v2-FullSong, compuesto por un frontend mel, un subsampler basado en ConvNext y 14 bloques Conformer con atencion causal. La segunda es una cabeza de cuantizacion vectorial coseno que incluye un adaptador SwiGLU, una proyeccion a 256 dimensiones y un codebook de 32.768 entradas. La salida son codigos semanticos a 25 por segundo, que constituyen el objetivo de aprendizaje del modelo de lenguaje de YuE2.
+La cadena completa se compone de dos etapas. La primera es un encoder MERT2 afinado que incluye un frontend mel, un subsampler basado en ConvNext y 14 bloques Conformer causales. La segunda es una cabeza de cuantización vectorial coseno formada por un adaptador SwiGLU, una proyección a 256 dimensiones y un codebook de 32.768 entradas. El resultado son 25 códigos semánticos por segundo de audio, que es el formato que consume el modelo de lenguaje de YuE2.
 
-La conversion a GGUF no reentrena ni poda nada: las matrices 2-D se almacenan en f16, el resto de tensores (incluido el codebook) permanece en f32, y el codebook se guarda normalizado y dividido por la temperatura de la cabeza para que un simple producto matricial reproduzca los logits originales. El convertidor es `engine/tools/convert-yue2-wannabe.py` del repositorio HOT-Step. No se dispone de informacion sobre el volumen de datos de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO.
+La conversión a GGUF no reentrena ni poda nada: los pesos matriciales 2-D se almacenan en f16, mientras que el resto de tensores (incluido el codebook) permanecen en f32. El codebook se guarda normalizado y dividido por la temperatura de la cabeza, de modo que un producto matricial simple reproduce los logits originales. La versión v3 incorpora además la banda de sonoridad declarada en su checkpoint de origen (`head.level_band`, de -19 a -13 dBFS): antes de codificar, HOT-Step desplaza una canción cuyo nivel RMS con compuerta quede fuera de esa banda al borde más cercano, aplicando una única ganancia para toda la canción y un limitador de picos cuando la ganancia es positiva. V1 y V2 leen la canción a su nivel propio.
+
+No se dispone de información sobre el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en el modelo original.
 
 ## Capacidades
 
-- Conversion de audio musical real a codigos semanticos YuE2 (25 codigos por segundo, 32.768 posibles).
-- Generacion de los codigos necesarios para entrenar adaptadores y modelos YuE2 sobre musica propia.
-- Alternativa al tokenizador v9, con renderizado mediante el decodificador base de YuE2 (sin adaptador companion).
-- Integracion nativa en HOT-Step: seleccion en la tarjeta Codes de Training Studio y en Follow source de Cover Studio.
-- Compatibilidad automatica con adaptadores entrenados sobre sus codigos, sin necesidad del adaptador decodificador v9.
-- No soporta generacion de texto, razonamiento, codigo, matematicas, vision, tool calling ni agentes: es exclusivamente un tokenizador de audio.
+- Conversión de audio musical real en códigos semánticos YuE2 a 25 códigos por segundo, con un vocabulario de 32.768 entradas.
+- Codificación de canciones completas para el entrenamiento de YuE2 sobre música propia.
+- Alternativa al tokenizador v9: sus códigos se renderizan con el decodificador base de YuE2, sin necesidad del adaptador decodificador compañero del v9.
+- Integración en HOT-Step tanto en Training Studio (tarjeta YuE2 «Codes») como en Cover Studio (opción «Follow source»).
+- Gestión automática de la banda de sonoridad en la versión v3 (normalización a -19/-13 dBFS con limitador de picos).
+- No soporta generación de texto, tool calling, agentes, visión ni capacidades multilingües: es exclusivamente un tokenizador de audio.
 
 ## Casos de uso
 
-- Entrenamiento de YuE2 sobre un catalogo musical propio: el tokenizador convierte las pistas en codigos YuE2 que el modelo de lenguaje aprende a producir, habilitando adaptadores personalizados sin el tokenizador v9.
-- Preparacion de datasets de audio para fine-tuning: dado que cada segundo de audio se reduce a 25 codigos, se obtiene una representacion compacta y uniforme apta para pipelines de entrenamiento.
-- Generacion musical local en HOT-Step: al integrarse en la aplicacion C++/GGML, permite tokenizar y renderizar musica en una maquina de escritorio sin PyTorch.
-- Sustitucion del tokenizador v9 en flujos existentes: los adaptadores entrenados con estos codigos se renderizan con el decodificador base de YuE2, simplificando la cadena de inferencia al eliminar el adaptador companion.
-- Investigacion sobre representaciones discretas de audio: el par encoder MERT2 + VQ coseno sirve para estudiar la fidelidad de la tokenizacion semantica frente al modelo PyTorch original (94,4 % de coincidencia de frames).
-- Prototipado de herramientas de analisis musical: la extraccion de codigos permite indexar o comparar fragmentos por su representacion semantica en lugar de por la forma de onda.
+- Entrenamiento de YuE2 con música propia: el modelo convierte el catálogo de audio del usuario en los códigos semánticos que el modelo de lenguaje de YuE2 aprende a producir, paso imprescindible para el ajuste.
+- Creación de adaptadores de estilo: los adaptadores entrenados sobre los códigos de WannabeTokenizer se entrenan y renderizan automáticamente sin el adaptador decodificador compañero del v9, simplificando el pipeline.
+- Clonación y cover musical en HOT-Step: en Cover Studio se selecciona este tokenizador en «Follow source» para extraer los códigos de la canción de referencia.
+- Sustitución del tokenizador v9 en flujos existentes: permite mantener el decodificador base de YuE2 y eliminar una dependencia del adaptador compañero.
+- Preprocesado por lotes de bibliotecas musicales: la codificación local a 25 códigos por segundo permite preparar grandes volúmenes de audio sin depender de servicios externos.
+- Investigación sobre representaciones semánticas de audio: el codebook de 32.768 entradas y la cuantización coseno ofrecen un espacio discreto reutilizable para experimentos de análisis musical.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor unicamente reporta una prueba de fidelidad de la conversion:
-
-| Metrica | Resultado |
+| Prueba | Resultado |
 |---|---|
-| Coincidencia de frames frente al modelo PyTorch en fp32 (16 extractos reales de 60 s) | 94,4 % |
-| Cambio de codigos al sustituir solo el resampler de 48 a 24 kHz en el modelo original | 4,8 % |
-| Coincidencia entre ejecuciones fp32 y bf16 del modelo original | 92,7 % |
+| Coincidencia de códigos frente al modelo PyTorch original (fp32) en 16 extractos reales de 60 s | 94,4 % de fotogramas |
+| Cambio de códigos al sustituir solo el remuestreador de 48 a 24 kHz dentro del modelo original | 4,8 % de sus propios códigos |
+| Concordancia entre ejecuciones fp32 y bf16 del modelo original | 92,7 % |
+
+La mayor parte de la discrepancia frente al original proviene del remuestreo. No se han publicado otros resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible de forma oficial; con 424 millones de parametros y pesos mayoritariamente f16 (871 MB por fichero), la huella es del orden de 1-2 GB incluyendo buffers de activacion.
-- GPU recomendadas: no disponible; al ejecutarse mediante GGML en HOT-Step, puede correr en CPU y en GPU de consumo.
-- Cabe en GPU de consumo: si, previsiblemente en cualquier GPU con 2 GB o mas de VRAM, aunque el autor no publica requisitos minimos.
-- Opciones de despliegue: HOT-Step (C++/GGML) mediante el Model Manager; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI.
+- VRAM estimada: cada fichero GGUF ocupa 871 MB en disco; al tratarse de un encoder de 424 millones de parámetros con pesos mayoritariamente f16 y codebook en f32, la inferencia cabe holgadamente en GPUs de consumo.
+- GPU recomendadas: cualquier GPU consumer con al menos 2-3 GB de VRAM libre; no se dispone de datos específicos sobre modelos recomendados por el autor.
+- Cabe en GPU consumer: sí, por el tamaño de los pesos (871 MB por fichero).
+- Opciones de despliegue: la vía prevista es HOT-Step (aplicación local de generación musical); el formato GGUF abre la puerta a otros runners compatibles, aunque no se documentan en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YuE2-WannabeTokenizer-GGUF | 424,5 M | no disponible | Tokenizador de audio a codigos YuE2 | other / unspecified-upstream (encoder CC BY-NC 4.0) | GGUF en Hugging Face |
-| Tokenizador v9 (cabeza de Mothersuperior) | no disponible | no disponible | Tokenizador de audio a codigos YuE2 | no disponible | Requiere adaptador companion para renderizar |
-| YuE2-GGUF (scragnog) | no disponible (YuE2-3B y YuE2-Vae) | no disponible | Modelo generativo musical (planner autorregresivo + flow matching) | no disponible | GGUF para HOT-Step CPP |
+| YuE2-WannabeTokenizer-GGUF (este) | 424.492.032 | no aplica (audio) | Tokenizador de audio a códigos YuE2 | unspecified-upstream; encoder CC BY-NC 4.0 | GGUF en Hugging Face |
+| Tokenizador v9 (Mothersuperior's head) | no disponible | no aplica (audio) | Tokenizador alternativo para YuE2; requiere adaptador decodificador compañero | no disponible | no disponible |
+| MERT-v2-FullSong | no disponible | no disponible | Encoder musical del que deriva el encoder de este modelo | CC BY-NC 4.0 | Hugging Face |
+
+No se dispone de datos de rendimiento comparativos entre el tokenizador v9 y WannabeTokenizer en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- El repositorio original de ManyOtherFunctions no declara licencia; los derechos sobre WannabeTokenizer permanecen con su autor. El encoder deriva de MERT-v2-FullSong, con licencia CC BY-NC 4.0, lo que restringe el uso comercial.
-- La fidelidad de la conversion no es total: un 5,6 % de frames no coincide con el modelo PyTorch en fp32, y el propio autor atribuye buena parte de la diferencia al remuestreo.
-- No es un modelo de lenguaje: no genera texto, no razona y no admite instrucciones; cualquier expectativa en ese sentido es un error de uso.
-- No hay informacion sobre sesgos, idiomas ni evaluacion cualitativa de la musica tokenizada.
-- El soporte se limita a HOT-Step; no se documentan conversiones equivalentes para otros runtimes.
-- La fecha de creacion del repositorio (2026-11-06) y el contador de descargas (0) indican un artefacto reciente y sin validacion comunitaria.
+- La licencia del repositorio original no está declarada; este repositorio se comparte con atribución a ManyOtherFunctions y todos los derechos sobre WannabeTokenizer permanecen en su autor.
+- El encoder deriva de MERT-v2-FullSong, con licencia CC BY-NC 4.0, por lo que se aplican sus términos, incluida la restricción de uso comercial.
+- La coincidencia con el modelo original es del 94,4 % de fotogramas, no del 100 %; parte de la divergencia es inherente al remuestreo.
+- V1 y V2 no aplican normalización de sonoridad; solo V3 gestiona la banda de -19 a -13 dBFS, lo que puede producir códigos distintos según la versión elegida.
+- Es un tokenizador de audio: no genera texto, no razona, no soporta tool calling ni agentes, y no debe evaluarse como modelo de lenguaje.
+- No hay información sobre sesgos, tasas de alucinación ni comportamiento en idiomas, al no tratarse de un modelo lingüístico.
+- El uso previsto está ligado a HOT-Step; fuera de esa aplicación no se documenta compatibilidad ni soporte.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/scragnog/YuE2-WannabeTokenizer-GGUF
 - Modelo original: https://huggingface.co/ManyOtherFunctions/Yue2-WannabeTokenizer
-- HOT-Step (aplicacion local): https://github.com/scragnog/HOT-Step-CPP
-- YuE2-GGUF de scragnog: https://huggingface.co/scragnog/YuE2-GGUF
-- MERT-v2-FullSong: https://huggingface.co/m-a-p/MERT-v2-FullSong
+- Aplicación HOT-Step: https://github.com/scragnog/HOT-Step-CPP
+- Encoder base MERT-v2-FullSong: https://huggingface.co/m-a-p/MERT-v2-FullSong

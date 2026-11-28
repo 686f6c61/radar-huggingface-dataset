@@ -2,70 +2,92 @@
 
 ## Resumen
 
-El modelo `User-2468/mini-unet-colorizer` es un U-Net de tamaño reducido, con 3.644.346 parámetros según el archivo de pesos en safetensors, diseñado para colorear imágenes en escala de grises. Fue desarrollado por el usuario `User-2468` y publicado en Hugging Face con licencia Apache-2.0. El modelo parte de la imagen de entrada en el espacio de color CIE Lab, utiliza el canal de luminancia (L) como entrada y predice los canales de crominancia (a y b), lo que permite reconstruir una imagen a color.
+Mini Photo Colorizer v3.0 (publicado como `User-2468/mini-unet-colorizer`) es un modelo compacto de colorización automática de fotografías en escala de grises. Lo desarrolla el usuario `User-2468` y se distribuye con licencia Apache 2.0. El modelo predice colores plausibles a partir de la luminancia de una imagen, sin necesidad de profesor, crítico, modelo semántico externo, servicio de recuperación ni ensemble en tiempo de inferencia.
 
-Su relevancia actual radica en su simplicidad y bajo coste computacional, lo que lo hace útil para prototipos, demostraciones educativas y aplicaciones ligeras de restauración de fotografías antiguas. Al tratarse de un modelo pequeño, puede ejecutarse en hardware muy limitado, aunque su calidad de coloreado es modesta y está limitada a una resolución fija de 128×128 píxeles.
+La arquitectura combina un codificador MobileNetV3 Large preentrenado en ImageNet (sin la cabeza de clasificación), una pirámide de características de 128 canales, 16 consultas de color y dos bloques de atención. El decodificador genera una paleta compartida y máscaras de asignación espacial con un residuo local acotado. El recuento total de parámetros aprendidos es de 3.994.676, con 5.324 parámetros de margen por debajo del límite estricto de cuatro millones.
+
+El modelo es relevante por su tamaño reducido y su despliegue sencillo: se ofrece en safetensors, ONNX y una exportación textual cuantizada (Base93), y funciona en CPU. Está pensado para aplicaciones de consumo que necesitan añadir color plausible a fotografías sin infraestructura pesada.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | U-Net |
-| Parámetros totales | 3.644.346 (según safetensors; la model card indica 3.640.474) |
-| Parámetros activos | No aplicable (no es MoE) |
-| Longitud de contexto | No disponible (modelo de visión) |
-| Tipos de cuantización | No disponibles |
-| Idiomas soportados | No disponible (procesa imágenes, no texto) |
-| Licencia | Apache-2.0 |
-| Formato de pesos | safetensors |
+| Arquitectura | Codificador MobileNetV3 Large + pirámide de características de 128 canales + 16 consultas de color + 2 bloques de atención + decodificador con paleta compartida y máscaras de asignación espacial |
+| Parámetros totales | 3.994.676 (según model card); 4.019.082 según safetensors |
+| Parámetros activos | No aplica (no es MoE) |
+| Longitud de contexto | No aplica (modelo de imagen; entrada fija de 256×256 en la red, salida hasta 12 megapíxeles) |
+| Tipos de cuantización | Exportación textual Base93 (cuantización de almacenamiento con pérdida); checkpoint FP32 como estándar de ejecución |
+| Idiomas soportados | No disponible (modelo de imagen, no lingüístico) |
+| Licencia | Apache 2.0 |
+| Formato de pesos | safetensors, ONNX, exportación textual Base93 |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un U-Net convolucional estándar, aunque la model card no especifica el número de capas ni la configuración interna. Se entrena con el dataset `frgfm/imagenette` (con imágenes de 160 píxeles) durante 60 épocas, utilizando la función de pérdida SmoothL1. La entrada es el canal L normalizado a `[-1, 1]` y la salida son los canales a y b normalizados a `ab/110`. No se mencionan técnicas avanzadas como RLHF, DPO ni otras innovaciones.
+El modelo es una red de imagen a imagen. Usa MobileNetV3 Large como codificador de características, inicializado con pesos de ImageNet V2 y sin la cabeza de clasificación. Sobre las características se construye una pirámide de 128 canales, seguida de 16 consultas de color y dos bloques de atención. El decodificador produce una paleta compartida y máscaras de asignación espacial con un residuo local acotado, lo que permite asignar color de forma coherente sin uniformar objetos con patrones.
+
+El entrenamiento utiliza 16.230 fotografías filtradas procedentes de archivos parquet fijados de Imagenette y COCO, con características de codificador preentrenado en ImageNet y objetivos artísticos de DDColor (revisión `aa10f72fffc89a6658e37b48556050b4d9a26f63`). Los experimentos de paleta y realismo se inspiraron en PalGAN, aunque la implementación no es una reproducción. La model card no detalla el número de tokens ni si hubo RLHF o DPO, lo que no resulta aplicable a un modelo de imagen. La selección final y el ajuste fino se documentan en `RELEASE_REPORT.md`.
 
 ## Capacidades
 
-- Coloreado de imágenes en escala de grises mediante la predicción de los canales CIE Lab a partir de la luminancia.
-- Entrada de imágenes de 128×128 píxeles, con salida de igual resolución.
-- Funciona exclusivamente con imágenes; no tiene soporte de texto, tool calling ni agentes.
-- Capacidad multilingüe no aplicable (no es un modelo de lenguaje).
-- No incluye modo de razonamiento, visión generalizada ni otras capacidades adicionales.
+- Colorización automática de fotografías en escala de grises, generando colores plausibles a partir de la luminancia.
+- Salida a resolución original de la entrada, conservando orientación y canal alfa, hasta 12 megapíxeles.
+- Preservación de la luminosidad Lab original, con upsampling de color mediante un modelo lineal local guiado por luminosidad y compresión al gamut sRGB.
+- Control de saturación ajustable entre 0 y 1,5 (valor por defecto 1,0).
+- Radio de suavizado configurable (8 por defecto a resolución de red; 4 y 16 disponibles).
+- Tres niveles de detalle de entrada en el Space: Standard, Detailed y Maximum.
+- Inferencia en CPU y CUDA.
+- Exportación ONNX con grafo fijo de 256×256 y salida `ab` en Lab de tipo float.
+- Carga de checkpoints multi-paleta compatibles para experimentos sin ejecutar código Python arbitrario.
+- No soporta tool calling, agentes, razonamiento multi-step ni capacidades multilingües.
 
 ## Casos de uso
 
-- Restauración de fotografías antiguas: se puede usar para colorear imágenes históricas en blanco y negro, aunque la resolución fija de 128×128 limita la calidad para fotos de alta resolución.
-- Prototipos de aplicaciones de coloreado: sirve como base para validar ideas de producto en el ámbito de edición fotográfica antes de implementar modelos más grandes.
-- Demostraciones educativas: su tamaño reducido y código simple lo hacen adecuado para enseñar arquitecturas U-Net y procesos de coloreado en cursos de deep learning.
-- Preprocesamiento en pipelines de visión: puede integrarse como paso inicial para añadir color a imágenes en miniatura antes de ser procesadas por otros modelos.
-- Aplicaciones móviles ligeras: al ser pequeño, puede ejecutarse en dispositivos con recursos limitados, aunque la calidad de salida es básica.
-- Investigación de bajo coste: útil para experimentos académicos sobre técnicas de coloreado sin necesidad de infraestructura de alto rendimiento.
+- Restauración de fotografías familiares antiguas: el modelo añade color plausible a imágenes en blanco y negro conservando la luminosidad original, adecuado para aplicaciones de consumo que procesan lotes de fotos escaneadas.
+- Edición fotográfica integrada en aplicaciones móviles: al funcionar en CPU y con un grafo ONNX fijo de 256×256, puede embeberse en pipelines locales sin GPU dedicada.
+- Previsualización rápida en flujos de archivo: la colorización automática permite generar vistas previas coloreadas de colecciones históricas antes de una restauración manual más costosa.
+- Procesamiento por lotes en servidores sin GPU: la inferencia en CPU y el tamaño reducido (menos de 4 millones de parámetros) permiten desplegar el modelo en contenedores ligeros.
+- Investigación en colorización compacta: la exportación Base93 y los scripts de entrenamiento permiten reproducir y comparar variantes de paleta con objetivos artísticos de DDColor.
+- Demostraciones interactivas: el Space de ZeroGPU ofrece ajuste de detalle de entrada y saturación para explorar el comportamiento del modelo en distintos tipos de fotografía.
+- Integración en herramientas de diseño: el control de saturación y suavizado permite adaptar el resultado al estilo visual de una aplicación concreta.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card únicamente reporta la pérdida final de entrenamiento y validación (train 0.0045, val 0.0069) con SmoothL1, pero no se incluyen métricas como PSNR, SSIM ni comparaciones con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. La model card menciona métricas auxiliares contra la imagen original en color y diagnósticos de retención de color en `RELEASE_REPORT.md`, pero no se proporcionan cifras concretas.
 
 ## Requisitos de hardware
 
-- VRAM estimada: inferior a 1 GB, dado el tamaño de los parámetros y la resolución de entrada.
-- GPU recomendadas: cualquier GPU con al menos 1 GB de memoria (por ejemplo, GTX 1050, RTX 2060, etc.); también puede ejecutarse en CPU.
-- Compatibilidad con GPU de consumo: sí, es compatible con todas las GPUs de consumo.
-- Opciones de despliegue: se puede cargar con PyTorch, y también es compatible con formatos como ONNX. No se mencionan vLLM, llama.cpp, Ollama ni TGI, ya que son herramientas para modelos de lenguaje.
-- Latencia y throughput: no se proporcionan datos concretos, pero por el tamaño del modelo se espera una latencia baja (del orden de milisegundos) incluso en CPU.
+- VRAM estimada para inferencia: no disponible; el modelo es de 3.994.676 parámetros, por lo que la huella de pesos en FP32 ronda los 16 MB, aunque la model card no indica cifras de VRAM.
+- GPU recomendadas: no disponibles; la model card solo menciona soporte CUDA genérico (`--device cuda`).
+- Compatibilidad con GPU de consumo: previsiblemente sí por el tamaño del modelo, aunque no se confirma en la información disponible.
+- Opciones de despliegue: inferencia en CPU o CUDA mediante `inference.py`, ONNX Runtime con `colorizer.onnx`, y el Space de Gradio/ZeroGPU.
+- Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables dentro de la misma categoría (colorización de imágenes con U-Net pequeño). En los resultados de búsqueda web aparecen otros proyectos como `Houzeric/colorizer-tiny` o `MiniColorizer`, pero no se han encontrado especificaciones técnicas detalladas para realizar una comparativa rigurosa. Por tanto, la comparativa no está disponible.
+| Modelo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
+|---|---|---|---|---|
+| Mini Photo Colorizer v3.0 | 3.994.676 | 256×256 en red, salida hasta 12 MP | Apache 2.0 | Hugging Face, ONNX, Base93 |
+| DDColor | No disponible | No disponible | No disponible | Referencia citada en la model card |
+| PalGAN | No disponible | No disponible | No disponible | Referencia citada en la model card |
+
+No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- La resolución de entrada está fijada en 128×128 píxeles, lo que limita su uso en imágenes de mayor tamaño sin pérdida de detalle.
-- El modelo fue entrenado únicamente con el dataset `imagenette`, que contiene pocas categorías, por lo que la generalización a otros dominios es limitada.
-- El coloreado puede no ser fiel a la realidad; existe riesgo de alucinación de colores, especialmente en objetos o escenas poco representadas en el entrenamiento.
-- La calidad de la salida es baja en comparación con modelos comerciales de coloreado, y no es adecuado para tareas de producción con altos estándares visuales.
-- No se especifican restricciones adicionales de uso comercial más allá de la licencia Apache-2.0, que permite uso libre con atribución.
-- No hay garantía de soporte técnico ni mantenimiento del autor.
+- Una imagen en escala de grises puede admitir varios colores igualmente plausibles; las salidas no deben presentarse como hechos históricos recuperados.
+- Limitaciones conocidas: colores apagados o cálidos/sepia, tonos incorrectos en ropa y objetos, sangrado de color residual alrededor de objetos pequeños y malos resultados en superficies o escenas poco habituales.
+- Quedan fuera del dominio principal de evaluación las imágenes con daño severo de escaneo, las imágenes astronómicas y las ilustraciones.
+- El modelo no repara arañazos ni reconstruye detalle perdido.
+- Las métricas contra la imagen original en color son auxiliares, ya que ese original puede no ser inferible.
+- Posible solapamiento con el preentrenamiento upstream; la evaluación no garantiza calidad universal ni contenido no visto.
+- La exportación Base93 es una cuantización de almacenamiento con pérdida; el checkpoint FP32 sigue siendo el estándar de ejecución.
+- La versión de cuatro paletas de 3.995.832 parámetros no fue promovida por reducir la cobertura de color y dejar las fotos históricas apagadas.
+- Licencia Apache 2.0: permite uso comercial, pero no se detallan restricciones adicionales en la información disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/User-2468/mini-unet-colorizer
-- No se encontraron otros enlaces relevantes (papers, blogs, repos o demos) específicos de este modelo en la información disponible.
+- [Modelo en Hugging Face](https://huggingface.co/User-2468/mini-unet-colorizer)
+- [Space de demostración en ZeroGPU](https://huggingface.co/spaces/User-2468/mini-unet-colorizer)
+- [Paper de DDColor](https://arxiv.org/abs/2212.11613)
+- [Paper de PalGAN](https://arxiv.org/abs/2210.11204)
+- [TorchVision MobileNetV3 Large](https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.mobilenet_v3_large.html)

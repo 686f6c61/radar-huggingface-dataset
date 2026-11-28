@@ -30,8 +30,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "larsbackup/TIDE_planner_heads",
+  "renamed_at": "2026-11-28T10:42:48.752Z",
   "benchmarks": [],
   "sources": []
 }

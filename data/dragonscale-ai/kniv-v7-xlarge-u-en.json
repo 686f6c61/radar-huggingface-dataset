@@ -48,7 +48,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 173,
+  "downloads_30d": 178,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -96,7 +96,7 @@
       "task": "Coreference resolution",
       "dataset": "LitBank",
       "metric": "CoNLL F1",
-      "value": 0.707
+      "value": 0.709
     },
     {
       "task": "Document-level relation extraction",

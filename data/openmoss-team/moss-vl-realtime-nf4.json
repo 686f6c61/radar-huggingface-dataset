@@ -5,7 +5,7 @@
   "author": "OpenMOSS-Team",
   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime-NF4",
   "created_at": "2026-08-07T09:47:19.000Z",
-  "updated_at": "2026-09-23T03:56:08.000Z",
+  "updated_at": "2026-11-27T06:36:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-text-to-text",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 335,
+  "downloads_30d": 348,
   "trending_score": 12,
   "parameters": 11336371208,
   "parameters_human": "11.34B",
@@ -59,31 +59,5 @@
   "renamed_to": null,
   "renamed_at": null,
   "benchmarks": [],
-  "sources": [
-    {
-      "title": "OpenMOSS · Open-Source Large Models & AGI Research",
-      "url": "https://openmoss.ai/",
-      "snippet": "OpenMOSS — an open research team from the Shanghai Innovation Institute, Fudan University NLP Lab, and MOSI Intelligence, …"
-    },
-    {
-      "title": "OpenMOSS · Open-Source Large Models & AGI Research",
-      "url": "https://www.open-moss.com/",
-      "snippet": "OpenMOSS Team is jointly established by the Shanghai Innovation Institution (SII), the Fudan University NLP Lab, and MOSI …"
-    },
-    {
-      "title": "OpenMOSS-Team (OpenMOSS) - Hugging Face",
-      "url": "https://huggingface.co/OpenMOSS-Team",
-      "snippet": "Nov 7, 2025 · OpenMOSS-Team/EasyWAM-MoT-Wan22 ... OpenMOSS-Team/EasyWAM-Unified-Wan22 ... OpenMOSS …"
-    },
-    {
-      "title": "MOSS-Image | Text-to-Image Generation with Native Layout Control",
-      "url": "https://openmoss.ai/MOSS-Image/",
-      "snippet": "Oct 16, 2026 · MOSS-Image by OpenMOSS: text-to-image generation with native text-driven layout control. Model weights, inference …"
-    },
-    {
-      "title": "MOSS-Image - MOSS",
-      "url": "https://www.moss.cn/en/models/moss-image",
-      "snippet": "Oct 16, 2026 · MOSS-Image is an open-source text-to-image model family from OpenMOSS for illustrations, posters, infographics, …"
-    }
-  ]
+  "sources": []
 }

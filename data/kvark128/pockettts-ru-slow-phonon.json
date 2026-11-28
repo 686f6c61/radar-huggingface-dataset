@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "id": "kvark128/PocketTTS-RU-slow-phonon",
+  "slug": "kvark128-pockettts-ru-slow-phonon",
+  "author": "kvark128",
+  "url": "https://huggingface.co/kvark128/PocketTTS-RU-slow-phonon",
+  "created_at": "2026-11-28T10:04:18.000Z",
+  "updated_at": "2026-11-28T10:17:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "ptts",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "ptts",
+    "safetensors",
+    "gguf",
+    "text-to-speech",
+    "phonon",
+    "russian",
+    "voice-cloning",
+    "ru",
+    "base_model:ArtShtorm/Shtorm-PocketTTS-RU",
+    "base_model:quantized:ArtShtorm/Shtorm-PocketTTS-RU",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 833302817,
+  "storage_human": "833 MB",
+  "context_length": null,
+  "base_model": "ArtShtorm/Shtorm-PocketTTS-RU",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,105 +2,103 @@
 
 ## Resumen
 
-Inkling-2-Mini-Uncensored-W4A16-g128-gptq es una recuantización INT4 GPTQ del modelo multimodal Inkling-2-Mini-Uncensored, publicado por el usuario Pentium95 bajo licencia Apache-2.0. El modelo base es una versión "abliterated" de Inkling-2-Mini, desarrollado por Thinking Machines Lab, a la que OpenUncensored eliminó los mecanismos de rechazo editando únicamente las 20 proyecciones de salida de atención. Esta recuantización reduce el peso en disco de aproximadamente 20 GB a 17 GB, con el objetivo explícito de que el modelo completo quepa en una única GPU Ampere de 24 GB, como la RTX 3090 o 3090 Ti.
+Inkling-2-Mini-Uncensored-W4A16-g128-gptq es una recuantización de OpenUncensored/Inkling-2-Mini-Uncensored, a su vez una versión "abliterated" (con los rechazos eliminados mediante edición de las proyecciones de salida de atención) de Inkling 2 Mini, desarrollado por Thinking Machines Lab. El trabajo de cuantización lo firma Pentium95 (Pento95), autor del servidor HyperInkling, y está pensado específicamente para ejecutar el modelo en una única GPU Ampere de 24 GB, como una RTX 3090 o 3090 Ti.
 
-El modelo tiene 26.770.847.232 parámetros totales según los pesos en safetensors y una arquitectura de mezcla de expertos (MoE) con componentes multimodales: torre de visión, un drafter especulativo denominado DSpark y controladores de bucle. La cuantización afecta exclusivamente a los expertos enrutados (capas 0-19 y 20-23), mientras que atención, LM head y embeddings se mantienen en bf16 en el checkpoint y se convierten a INT8 g128 en tiempo de carga mediante HyperInkling, el servidor personalizado del autor.
+El modelo es multimodal (pipeline image-text-to-text), con 26.770.847.232 parámetros totales según los pesos en safetensors y un tamaño de repositorio de 17,2 GB. La recuantización convierte los expertos enrutados del modelo base (originalmente en NVFP4 en las capas 0-19 y MXFP8 en las 20-23) a INT4 con grupo de 128, asimétrico y calibrado con GPTQ, mientras que la atención, la cabeza LM y los embeddings se mantienen en bf16 y el vision tower, el drafter DSpark y los routers quedan sin cambios.
 
-Su relevancia es doble: por un lado, demuestra que es posible servir un modelo MoE multimodal de ~27B parámetros con contexto de aproximadamente 274k tokens en hardware de consumo de gama alta de la generación Ampere; por otro, requiere un parche específico sobre vLLM (HyperInkling) porque el formato de expertos no es compatible con vLLM estándar. Es un proyecto personal sin compromiso de soporte, orientado a propietarios de RTX 3090/3090 Ti.
+Su relevancia es práctica: permite servir un modelo MoE multimodal de ~26,8 mil millones de parámetros con capacidades de tool calling y razonamiento en hardware de consumo de gama alta, a costa de depender de un fork específico de vLLM (HyperInkling) que entiende el formato de expertos. No es un modelo de propósito general listo para producción: es un proyecto personal publicado para otros propietarios de RTX 3090.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) multimodal con torre de visión, drafter especulativo DSpark y controladores de bucle (inkling2_loop) |
+| Arquitectura | MoE (mixture of experts) con vision tower, drafter DSpark y controladores de bucle; formato de expertos enrutados INT4 GPTQ (empaquetado AWQ, para Marlin) |
 | Parametros totales | 26.770.847.232 |
 | Parametros activos | no disponible |
-| Longitud de contexto | ~274.000 tokens (con DSpark, 6 peticiones concurrentes y torre de visión en GPU) |
-| Tipos de cuantizacion | INT4 GPTQ, grupo 128, asimétrico (expertos enrutados); bf16 en checkpoint para atención, LM head y embeddings, convertidos a INT8 g128 en carga; FP8 para KV cache (por defecto en HyperInkling) |
-| Idiomas soportados | no disponible (la calibración incluye textos en inglés, italiano y código) |
+| Longitud de contexto | ~349k tokens con DFlash2, 8 peticiones y el vision tower en GPU (según la model card) |
+| Tipos de cuantizacion | INT4 GPTQ grupo 128 asimétrico (expertos enrutados); bf16 (atención, LM head, embeddings) con conversión a INT8 g128 en carga por HyperInkling; FP8 KV opcional |
+| Idiomas soportados | no disponible (la calibración incluye textos en italiano e inglés, pero no se declara una lista oficial de idiomas) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (packing AWQ para kernels Marlin) |
+| Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer de mezcla de expertos con capacidades multimodales (pipeline image-text-to-text). El modelo incorpora una torre de visión para procesar imágenes, un drafter especulativo llamado DSpark para decodificación especulativa y controladores de bucle que dan nombre al tag `inkling2_loop`. Los detalles sobre el número de tokens de entrenamiento, la composición del dataset original y el proceso de alineación (RLHF/DPO) del modelo base no están disponibles en la información proporcionada.
+El modelo base es un transformer con mezcla de expertos (MoE) que incorpora un vision tower para entrada de imágenes, un drafter DSpark (probablemente para decodificación especulativa) y controladores de bucle ("loop controllers"), lo que sugiere un modo de razonamiento iterativo. La model card menciona que el modelo base reporta "long reasoning loops", es decir, bucles de razonamiento largos que conviene acotar con `max_tokens` y un límite de turnos del agente.
 
-La innovación técnica de este checkpoint concreto reside en la recuantización. El autor tomó los pesos desquantizados NVFP4 (capas 0-19) y MXFP8 (capas 20-23) del modelo fuente y aplicó GPTQ por experto con calibración de 338k tokens en dos rondas, usando datos públicos (hermes-function-calling-v1, docvqa-single-page-questions, Magicoder-Evol-Instruct-110K, Wikipedia en italiano y ultrachat_200k), con respuestas generadas por el propio modelo sin censura y capturando entradas de MoE y routing reales. Los expertos enrutados quedan en INT4 con grupo 128 asimétrico y packing AWQ para kernels Marlin; atención, LM head y embeddings permanecen en bf16 en el checkpoint y HyperInkling los convierte a INT8 g128 al cargar. La torre de visión, el drafter DSpark, routers, norms y controladores de bucle quedan sin cambios respecto al fuente. El proceso de abliteration del modelo base editó solo las 20 proyecciones de salida de atención.
+La recuantización parte de los pesos NVFP4 (capas 0-19) y MXFP8 (capas 20-23) del modelo original, dequantizados y recalibrados con GPTQ por experto. La calibración usó 338k tokens en dos rondas procedentes de NousResearch/hermes-function-calling-v1, pixparse/docvqa-single-page-questions, ise-uiuc/Magicoder-Evol-Instruct-110K, wikimedia/wikipedia 20231101.it y HuggingFaceH4/ultrachat_200k, con las respuestas generadas por el propio modelo sin censura y capturando entradas de MoE y routing. Una sola ronda (166k tokens) dio un KL de 0,0026, por lo que duplicar la calibración no aportó mejora medible. No se dispone de información sobre el número total de tokens de entrenamiento del modelo original ni sobre si hubo RLHF o DPO.
 
 ## Capacidades
 
-- Generación de texto conversacional multi-turno con contexto muy largo (~274k tokens).
-- Procesamiento de imágenes (image-text-to-text): descripción, respuesta a preguntas sobre documentos e imágenes.
-- Razonamiento con modo explícito, soportado por el parser `--reasoning-parser inkling` del servidor.
-- Tool calling / function calling, con parser dedicado `--tool-call-parser inkling` en el servidor compatible con OpenAI.
-- Generación de código, incluyendo instrucciones de tipo Magicoder en la calibración.
-- Capacidades multilingües parciales: la calibración incluye italiano además de inglés, aunque no se declara una lista oficial de idiomas.
-- Decodificación especulativa mediante el drafter DSpark integrado.
-- Comportamiento sin rechazos (uncensored/abliterated) por edición de las proyecciones de salida de atención del modelo base.
+- Generación de texto conversacional multi-turno.
+- Razonamiento con modo de pensamiento (el servidor expone `--reasoning-parser inkling`).
+- Comprensión de imágenes (pipeline image-text-to-text, vision tower incluido).
+- Tool calling / function calling (parser `--tool-call-parser inkling` en el servidor OpenAI-compatible).
+- Generación de código (la calibración incluye Magicoder-Evol-Instruct).
+- Uso en agentes con razonamiento multi-paso, con la advertencia de acotar turnos por los bucles largos del modelo base.
+- Capacidades multilingües parciales: la calibración incluye Wikipedia en italiano, pero no hay lista oficial de idiomas.
+- Sin censura por diseño (abliterated): el modelo base eliminó los rechazos editando 20 proyecciones de salida de atención.
 
 ## Casos de uso
 
-- Asistencia conversacional de contexto largo: con ~274k tokens de ventana, el modelo puede mantener conversaciones multi-turno con documentos extensos, historiales completos o bases de conocimiento inyectadas en el prompt sin truncar.
-- Análisis de documentos e imágenes en local: la torre de visión permite responder preguntas sobre capturas, formularios o páginas escaneadas (docvqa está en la calibración), ejecutable en una sola RTX 3090 sin depender de APIs externas.
-- Agentes con tool calling: el servidor OpenAI-compatible con parser de tool calls permite integrar el modelo en frameworks de agentes que necesiten llamar funciones, consultar APIs o ejecutar pasos multi-etapa.
-- Generación de código en pipelines internos: su soporte de instrucciones de código (Magicoder-Evol-Instruct en calibración) y tool calling lo hacen apto para asistentes de programación autoalojados donde la privacidad del código es crítica.
-- Investigación sobre alineación y abliteration: al ser una versión sin rechazos y con métricas de fidelidad publicadas (KL frente al fuente), sirve para estudiar el efecto de la edición de proyecciones de atención y de la cuantización sobre el comportamiento.
-- Despliegue en hardware de consumo para prototipado: 17 GB en disco y ajuste en 24 GB de VRAM permiten probar un MoE multimodal de ~27B en una estación de trabajo con RTX 3090, sin clúster ni GPUs de datacenter.
-- Evaluación de cuantización extrema: los datos de KL mediana (0,0025) y acuerdo top-1 (92,8%) frente al fuente permiten usar este checkpoint como referencia para estudiar el impacto de INT4 GPTQ en modelos MoE multimodales.
+- Asistente conversacional local sin filtros: el modelo puede mantener diálogos multi-turno con contexto muy largo (~349k tokens) en una única RTX 3090, útil para prototipos de agentes personales donde se quiere evitar la censura del modelo base.
+- Agente con tool calling en local: gracias al parser de tool calls y al servidor OpenAI-compatible de HyperInkling, se puede integrar en frameworks de agentes (LangChain, LlamaIndex) apuntando a `http://localhost/v1` con el modelo `inkling-2-mini`.
+- Análisis de documentos con imágenes: el vision tower permite procesar capturas, formularios o páginas escaneadas junto con preguntas de texto (la calibración usó DocVQA), adecuado para extracción de información en pipelines internos.
+- Generación y revisión de código: la inclusión de Magicoder-Evol-Instruct en la calibración y el soporte de tool calling permiten usarlo como asistente de código en un IDE o en un pipeline de CI/CD que consulte el endpoint local.
+- Investigación sobre alineación y censura: al ser una variante abliterated, sirve para estudiar el efecto de eliminar los rechazos en las proyecciones de salida de atención sobre el comportamiento del modelo.
+- Experimentación con cuantización: el checkpoint y la receta (HyperInkling `prepare/`) son un caso de estudio reproducible de GPTQ sobre pesos NVFP4/MXFP8 con métricas de KL y acuerdo top-1 frente al original.
+- Despliegue de bajo coste en estación de trabajo: un solo equipo con RTX 3090 puede servir un MoE multimodal de ~26,8B con 8 peticiones concurrentes, sin necesidad de clúster multi-GPU.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en la información disponible. El autor sí publica métricas de fidelidad de la cuantización frente al modelo fuente, con teacher forcing sobre 22 transcripciones reservadas (imágenes, tool calls, código, italiano y chat):
+La model card no publica benchmarks estándar (MMLU, HumanEval, GSM8K). Sí incluye una evaluación de fidelidad de la cuantización frente al modelo fuente, con teacher forcing sobre 22 transcripciones reservadas (imágenes, tool calls, código, italiano, chat):
 
 | Configuracion | KL mediana | KL media | Acuerdo top-1 |
 |---|---|---|---|
-| Ruido entre ejecuciones (original contra sí mismo) | 0,0003 | 0,060 | 95,8% |
 | Expertos INT4 GPTQ (este checkpoint) | 0,0025 | 0,111 | 92,8% |
-| + atención, head y embeddings INT8, KV FP8 (por defecto en HyperInkling) | 0,0027 | 0,115 | 92,6% |
+| + atención INT8, head, embeddings, KV FP8 (defaults de HyperInkling) | 0,0027 | 0,115 | 92,6% |
 
-El autor indica que una sola ronda de calibración (166k tokens) dio 0,0026 de KL mediana, por lo que duplicar la calibración no produjo cambios medibles.
+La media está dominada por unas pocas posiciones donde una diferencia pequeña cambia de experto; la mediana es la métrica representativa. El ruido del servidor en el momento de la medición era de 0,0003 / 0,060.
 
 ## Requisitos de hardware
 
-- VRAM: el modelo está diseñado para caber en 24 GB (RTX 3090 / 3090 Ti) con ~274k tokens de contexto, 6 peticiones concurrentes y la torre de visión en GPU.
-- GPU soportadas: exclusivamente RTX 3090 y RTX 3090 Ti (Ampere). El autor declara explícitamente que no hay soporte para otras generaciones ni multi-GPU.
-- GPU de consumo: sí, en RTX 3090/3090 Ti; no se garantiza en otras consumer GPU.
-- Despliegue: requiere HyperInkling (parche propio sobre vLLM); vLLM estándar no reconoce el formato de expertos. El servidor es compatible con OpenAI (`/v1`, modelo `inkling-2-mini`). Instalación mediante `scripts/wizard.py` y `docker compose up -d`.
-- Almacenamiento: 17,2 GB de repositorio en disco.
-- Latencia y throughput: no disponibles de forma numérica; el autor remite a la model card del checkpoint W4A16 original y al README de HyperInkling, indicando que son los mismos por compartir arquitectura, tamaños y kernels.
+- VRAM estimada: 17 GB en disco; el objetivo declarado es caber en 24 GB (RTX 3090 / 3090 Ti). Con atención INT8, head y embeddings INT8 y KV en FP8 (defaults de HyperInkling) y ~349k tokens de contexto, 8 peticiones y vision tower en GPU, el consumo se ajusta a esa tarjeta según el autor.
+- GPU soportadas: exclusivamente RTX 3090 o 3090 Ti (Ampere). El autor indica explícitamente que no hay soporte para otras generaciones ni multi-GPU.
+- GPU de datacenter (A100, H100): no soportadas según la model card; el kernel de expertos depende del parche de Ar4ikov (#69165) para Ampere.
+- Despliegue: HyperInkling (fork de vLLM con parche para el formato de expertos), servidor OpenAI-compatible en `/v1` con modelo `inkling-2-mini`. vLLM estándar no puede cargar el formato de expertos.
+- Latencia y throughput: no disponibles de forma numérica; la model card remite a la del checkpoint original y al README de HyperInkling.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
-|---|---|---|---|---|---|
-| Este checkpoint (Inkling-2-Mini-Uncensored W4A16 GPTQ) | 26,77B | ~274k | INT4 GPTQ g128 + INT8 en carga | Apache-2.0 | Hugging Face, requiere HyperInkling |
-| Pentium95/Inkling-2-Mini-W4A16-g128-gptq | no disponible | ~274k | INT4 GPTQ g128 | Apache-2.0 | Hugging Face, requiere HyperInkling |
-| OpenUncensored/Inkling-2-Mini-Uncensored (fuente) | no disponible | no disponible | bf16 / NVFP4 / MXFP8 | Apache-2.0 | Hugging Face |
-| thinkingmachines/Inkling-2-Mini (base original) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Modelo | Parametros | Contexto | Licencia | Notas |
+|---|---|---|---|---|
+| Inkling-2-Mini-Uncensored-W4A16-g128-gptq (este) | 26,77B | ~349k (con DFlash2) | Apache-2.0 | INT4 GPTQ, requiere HyperInkling, solo RTX 3090/3090 Ti |
+| Pentium95/Inkling-2-Mini-W4A16-g128-gptq | no disponible | no disponible | Apache-2.0 | Misma receta sobre el modelo sin censura; el autor remite a su card para velocidad y contexto |
+| OpenUncensored/Inkling-2-Mini-Uncensored | no disponible | no disponible | Apache-2.0 | Modelo base sin cuantizar; abliteration sobre 20 proyecciones de salida de atención |
+| thinkingmachines/Inkling-2-Mini | no disponible | no disponible | Apache-2.0 | Modelo original de Thinking Machines Lab, con censura |
 
-No se dispone de datos de benchmarks que permitan comparar rendimiento cualitativo entre estas variantes; la única comparación publicada es la fidelidad KL frente al modelo fuente recogida en la sección anterior.
+No se dispone de datos de benchmarks comparativos con modelos de otros fabricantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Proyecto personal sin compromiso de soporte: el autor lo publica "por si ayuda a otros propietarios de 3090", sin garantías de mantenimiento.
-- Hardware restringido: solo RTX 3090 y 3090 Ti; no hay soporte para otras generaciones de GPU ni para multi-GPU.
-- Dependencia de software no estándar: necesita el parche HyperInkling; vLLM estándar no puede cargar el formato de expertos.
-- Modelo "uncensored"/abliterated: se han eliminado los rechazos editando las proyecciones de salida de atención, lo que implica un mayor riesgo de generar contenido dañino, sesgado o inapropiado sin filtros. No es apto para aplicaciones orientadas al público sin moderación adicional.
-- Riesgo de alucinación: inherente a los modelos generativos; no se han publicado evaluaciones específicas de factualidad en la información disponible.
-- Pérdida de calidad por cuantización: aunque pequeña (KL mediana 0,0025, acuerdo top-1 92,8%), existe una degradación medible frente al modelo fuente, especialmente en posiciones donde el ruido cambia el experto enrutado.
-- Idiomas: no se declara una lista oficial de idiomas soportados; la calibración solo cubre inglés, italiano y código, por lo que el rendimiento en castellano u otros idiomas no está verificado.
-- Licencia Apache-2.0: permite uso comercial, pero el autor no ofrece garantías y la responsabilidad sobre el contenido generado por un modelo sin censura recae en el desplegador.
-- Contexto efectivo: los ~274k tokens se alcanzan con una configuración concreta (DSpark, 6 peticiones, visión en GPU); reducir VRAM o peticiones concurrentes puede alterar esa cifra.
+- Requiere HyperInkling: vLLM estándar no reconoce el formato de expertos; sin el parche el modelo no carga.
+- Soporte limitado a una única RTX 3090 o 3090 Ti; sin multi-GPU y sin otras generaciones de GPU.
+- Proyecto personal sin promesa de soporte ni mantenimiento.
+- Modelo "uncensored"/abliterated: no incorpora los rechazos del modelo original, lo que implica riesgo de generar contenido inapropiado, peligroso o ilegal y responsabilidad plena del operador.
+- Bucles de razonamiento largos documentados en el modelo base: es necesario acotar `max_tokens` y los turnos del agente para evitar generaciones desbocadas.
+- Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado evaluaciones de veracidad.
+- Idiomas soportados no declarados oficialmente; la calibración solo cubre parcialmente italiano e inglés.
+- La fidelidad de la cuantización se midió con 22 transcripciones reservadas y antes de que el servidor fuese repetible; las cifras de KL tienen ruido asociado.
+- Licencia Apache-2.0 permite uso comercial, pero debe conservarse la atribución a Thinking Machines Lab, OpenUncensored y Pentium95.
 
 ## Enlaces
 
 - Modelo en Hugging Face: https://huggingface.co/Pentium95/Inkling-2-Mini-Uncensored-W4A16-g128-gptq
-- Modelo base (sin cuantizar): https://huggingface.co/OpenUncensored/Inkling-2-Mini-Uncensored
-- Modelo original de Thinking Machines Lab: https://huggingface.co/thinkingmachines/Inkling-2-Mini
-- Checkpoint W4A16 previo del mismo autor: https://huggingface.co/Pentium95/Inkling-2-Mini-W4A16-g128-gptq
+- Modelo base sin cuantizar: https://huggingface.co/OpenUncensored/Inkling-2-Mini-Uncensored
+- Modelo original: https://huggingface.co/thinkingmachines/Inkling-2-Mini
+- Checkpoint hermano (sin censura, misma receta): https://huggingface.co/Pentium95/Inkling-2-Mini-W4A16-g128-gptq
 - Servidor HyperInkling: https://github.com/Pento95/HyperInkling
-- OpenUncensored: https://openuncensored.com/
-- PR de soporte en vLLM: https://github.com/vllm-project/vllm/pull/69028
-- PR de soporte Ampere en vLLM: https://github.com/vllm-project/vllm/pull/69165
+- Soporte vLLM (PR #69028): https://github.com/vllm-project/vllm/pull/69028
+- Soporte Ampere en vLLM (PR #69165): https://github.com/vllm-project/vllm/pull/69165
 - Enfoque de porting HyperQwen: https://github.com/syv-ai/HyperQwen
+- OpenUncensored: https://openuncensored.com
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

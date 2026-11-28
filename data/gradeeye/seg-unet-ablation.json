@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "id": "gradeeye/seg-unet-ablation",
+  "slug": "gradeeye-seg-unet-ablation",
+  "author": "gradeeye",
+  "url": "https://huggingface.co/gradeeye/seg-unet-ablation",
+  "created_at": "2026-11-28T04:54:01.000Z",
+  "updated_at": "2026-11-28T04:54:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-segmentation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 313065552,
+  "storage_human": "313 MB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

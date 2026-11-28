@@ -5,7 +5,7 @@
   "author": "maternion",
   "url": "https://huggingface.co/maternion/LFM3-1.7B-NVFP4-GGUF",
   "created_at": "2026-11-27T18:16:22.000Z",
-  "updated_at": "2026-11-27T18:17:17.000Z",
+  "updated_at": "2026-11-27T18:41:56.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 269,
   "trending_score": 0,
   "parameters": 1728801744,
   "parameters_human": "1.73B",

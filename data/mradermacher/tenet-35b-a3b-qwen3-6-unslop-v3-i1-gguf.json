@@ -1,0 +1,43 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Tenet-35B-A3B-Qwen3.6-Unslop-v3-i1-GGUF",
+  "slug": "mradermacher-tenet-35b-a3b-qwen3-6-unslop-v3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tenet-35B-A3B-Qwen3.6-Unslop-v3-i1-GGUF",
+  "created_at": "2026-11-28T07:08:09.000Z",
+  "updated_at": "2026-11-28T07:22:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 49805014432,
+  "storage_human": "49.8 GB",
+  "context_length": 262144,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

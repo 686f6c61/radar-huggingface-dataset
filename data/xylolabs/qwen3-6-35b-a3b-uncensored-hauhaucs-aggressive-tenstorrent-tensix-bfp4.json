@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-Tenstorrent-Tensix-BFP4",
   "created_at": "2026-11-13T10:33:55.000Z",
-  "updated_at": "2026-11-27T04:30:23.000Z",
+  "updated_at": "2026-11-28T05:17:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -50,8 +50,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "hletrd/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-Tenstorrent-Tensix-BFP4",
+  "renamed_at": "2026-11-28T06:42:01.902Z",
   "benchmarks": [],
   "sources": []
 }

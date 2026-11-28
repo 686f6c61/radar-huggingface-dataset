@@ -5,7 +5,7 @@
   "author": "dronefreak",
   "url": "https://huggingface.co/dronefreak/bdd100k-mmdet-fcos-center-normbbox-centeronreg-giou-r50-fpn-gn-head-dcn-4x4-1x",
   "created_at": "2026-11-26T22:19:00.000Z",
-  "updated_at": "2026-11-27T08:13:57.000Z",
+  "updated_at": "2026-11-27T21:37:44.000Z",
   "license": "bdd100k",
   "license_family": "unknown",
   "pipeline_tag": "object-detection",

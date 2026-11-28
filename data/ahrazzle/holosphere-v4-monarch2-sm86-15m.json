@@ -5,7 +5,7 @@
   "author": "ahrazzle",
   "url": "https://huggingface.co/ahrazzle/holosphere-v4-monarch2-sm86-15m",
   "created_at": "2026-11-26T20:12:17.000Z",
-  "updated_at": "2026-11-26T20:12:21.000Z",
+  "updated_at": "2026-11-27T22:13:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

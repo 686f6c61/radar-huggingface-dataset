@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/MAI-Gym-9B-i1-GGUF",
   "created_at": "2026-10-17T10:29:55.000Z",
-  "updated_at": "2026-11-20T16:53:25.000Z",
+  "updated_at": "2026-11-27T17:04:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 2756,
+  "downloads_30d": 5123,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

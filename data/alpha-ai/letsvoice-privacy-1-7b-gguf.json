@@ -5,7 +5,7 @@
   "author": "alpha-ai",
   "url": "https://huggingface.co/alpha-ai/LetsVoice-Privacy-1.7B-GGUF",
   "created_at": "2026-11-27T21:27:49.000Z",
-  "updated_at": "2026-11-27T21:53:42.000Z",
+  "updated_at": "2026-11-28T04:45:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

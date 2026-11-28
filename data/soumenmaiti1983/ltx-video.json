@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "soumenmaiti1983/LTX-Video",
+  "slug": "soumenmaiti1983-ltx-video",
+  "author": "soumenmaiti1983",
+  "url": "https://huggingface.co/soumenmaiti1983/LTX-Video",
+  "created_at": "2026-11-28T09:17:50.000Z",
+  "updated_at": "2026-11-28T09:17:50.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ltx-video",
+    "image-to-video",
+    "en",
+    "license:other",
+    "diffusers:LTXPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1923385472,
+  "parameters_human": "1.92B",
+  "storage_bytes": 208804415572,
+  "storage_human": "208.8 GB",
+  "context_length": null,
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,98 +2,93 @@
 
 ## Resumen
 
-MOSS-VL-Realtime-NF4 es una versión cuantizada en 4 bits del modelo vision-language MOSS-VL-Realtime, desarrollado por OpenMOSS, equipo de investigación abierta formado conjuntamente por el Shanghai Innovation Institute (SII), el laboratorio NLP de la Universidad de Fudan y MOSI Intelligence. El modelo original está diseñado para comprensión de imágenes, vídeo largo e interacción en streaming en tiempo real, y esta variante reduce el peso del checkpoint a aproximadamente 24 GiB manteniendo la interfaz de streaming con marcas temporales.
+MOSS-VL-Realtime-NF4 es la versión cuantizada a 4 bits del modelo vision-lenguaje MOSS-VL-Realtime, desarrollado por OpenMOSS (equipo vinculado a MOSS AI). Se trata de un modelo multimodal de 11.336 millones de parámetros que procesa vídeo en streaming y genera descripciones o respuestas en tiempo real a medida que llegan fotogramas, además de soportar comprensión de imagen y vídeo offline. Su propuesta de valor es clara: llevar interacción multimodal en tiempo real a una única GPU de 24 GB de VRAM, algo inviable con el checkpoint original en BF16.
 
-La relevancia de esta release radica en que permite ejecutar un modelo multimodal de más de 11.300 millones de parámetros en una única GPU de 24 GB de VRAM, algo que el checkpoint BF16 original no permite. Para lograrlo combina cuantización de pesos NF4 de bitsandbytes con doble cuantización en la mayoría de las capas del lenguaje, mantiene las capas multimodales y la primera y última capa del lenguaje en BF16, y cuantiza la caché KV de Transformers a INT8 mediante HQQ. El resultado es un modelo orientado a despliegues de vídeo en tiempo real en hardware de gama alta de consumo o profesional de una sola tarjeta.
+La cuantización emplea un esquema W4A16 con NF4 de bitsandbytes y doble cuantización en la mayoría de capas del lenguaje, mientras que las capas primera y última y los módulos multimodales permanecen en BF16. La caché KV de Transformers se comprime a INT8 mediante HQQ. El resultado es un repositorio de unos 11,9 GB que mantiene la interfaz de streaming con marcas de tiempo del modelo original.
 
-La arquitectura subyacente es un transformer multimodal con codificador visual y decodificador de lenguaje, con soporte nativo de ventanas de contexto largas para vídeo (hasta 256 frames en inferencia offline) y un protocolo de sesión en streaming que emite tokens de control como `<|silence|>`, `<|round_start|>` y `<|round_end|>`. La licencia Apache 2.0 facilita su adopción comercial.
+Es relevante ahora porque la comprensión de vídeo en directo (vigilancia, asistencia en directo, robótica, accesibilidad) exige latencias bajas y ventanas de contexto amplias, y este checkpoint demuestra que es posible con hardware de gama alta de consumo profesional. La licencia Apache 2.0 facilita su adopción comercial, aunque el modelo solo declara soporte oficial para inglés y chino.
 
-## Especificaciones tecnicas
+## Especificaciones técnicas
 
-| Parametro | Valor |
+| Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal vision-language (MOSS-VL) con codificador visual y decodificador de lenguaje; pesos cuantizados NF4 en capas del lenguaje |
-| Parametros totales | 11.336.371.208 (11,34 mil millones) |
-| Parametros activos | no disponible (no es un modelo MoE segun la informacion disponible) |
-| Longitud de contexto | no disponible de forma explicita; soporta hasta 256 frames por inferencia offline de vídeo y sesiones de streaming continuas |
-| Tipos de cuantizacion | NF4 4-bit con doble cuantizacion (bitsandbytes), BF16 para capas multimodales y primera/ultima capa del lenguaje, KV cache HQQ INT8 |
-| Idiomas soportados | Ingles (en) y chino (zh) |
+| Arquitectura | Vision-lenguaje transformer con codificador visual y LLM; soporte de streaming con marcas de tiempo (detalles internos no disponibles) |
+| Parámetros totales | 11.336.371.208 (11,34 mil millones) |
+| Parámetros activos | no disponible (no se indica que sea MoE) |
+| Longitud de contexto | no disponible (la configuración de vídeo offline admite hasta 256 fotogramas) |
+| Tipos de cuantización | W4A16 NF4 con doble cuantización (bitsandbytes) en la mayoría de capas del lenguaje; BF16 en primera/última capa y módulos multimodales; caché KV en INT8 vía HQQ |
+| Idiomas soportados | inglés (en), chino (zh) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (con codigo de modelado remoto `modeling_moss_vl.py` y configuracion de bitsandbytes/HQQ embebida) |
+| Formato de pesos | safetensors, con código de modelado remoto (custom_code) y configuración de bitsandbytes y HQQ incluida |
 
 ## Arquitectura y entrenamiento
 
-MOSS-VL-Realtime es un modelo de la familia MOSS-VL que combina un codificador visual con un decodificador de lenguaje transformer. El pipeline declarado es `video-text-to-text`, y el modelo procesa frames compatibles con PIL con marcas temporales no decrecientes, lo que habilita la comprensión de vídeo con conciencia temporal. La variante NF4 conserva la arquitectura y el comportamiento del checkpoint base, pero sustituye la mayoría de los pesos del lenguaje por cuantización NF4 de 4 bits con doble cuantización, mantiene en BF16 los módulos multimodales y las capas primera y última del lenguaje, y aplica cuantización INT8 a la caché KV mediante HQQ. El backend de atención es FlashAttention 2.
+El modelo es un vision-lenguaje que combina un codificador visual con un modelo de lenguaje y una interfaz de streaming que acepta fotogramas PIL con marcas de tiempo no decrecientes. El procesamiento visual usa parches de tamaño 16 con `temporal_patch_size=1` y `merge_size=2`, y en modo offline permite configurar la extracción de vídeo con FPS, número mínimo y máximo de fotogramas y límites de píxeles. La generación en streaming emite tokens de control como `<|silence|>`, `<|round_start|>` y `<|round_end|>`, lo que sugiere un entrenamiento orientado a decidir cuándo hablar y cuándo permanecer en silencio.
 
-El modelo base se distribuye junto con un informe técnico en arXiv (2608.15045) y una referencia adicional (2606.07639), aunque los detalles concretos sobre número de tokens de entrenamiento, composición del dataset y si hubo RLHF o DPO no están disponibles en la información proporcionada. La innovación destacable de esta release es el perfil de cuantización W4A16 (pesos de 4 bits, activaciones y cómputo en BF16) con caché KV INT8, que según el autor mantiene el rendimiento cercano al del modelo BF16 en los benchmarks seleccionados, aunque los valores numéricos de esa comparación no se incluyen en el texto disponible.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. La model card únicamente remite al informe técnico (arXiv:2608.15045) para los detalles de entrenamiento. La innovación destacable de este repositorio concreto es la receta de cuantización: NF4 con doble cuantización en el LLM, BF16 en los módulos sensibles (primera y última capa, visión) y caché KV en INT8 con HQQ, combinada con FlashAttention 2 para mantener el perfil de 24 GB.
 
 ## Capacidades
 
-- Comprensión de imágenes: el modelo soporta las utilidades offline de imagen y vídeo del checkpoint estándar.
-- Comprensión de vídeo largo: inferencia offline con hasta 256 frames, `video_fps` configurable y extracción multihilo.
-- Interacción en streaming en tiempo real: sesiones con `create_realtime_session`, envío de frames con timestamp y sondeo incremental de la salida.
-- Conciencia temporal: emisión de tokens de control `<|silence|>`, `<|round_start|>` y `<|round_end|>` para gestionar turnos y silencios.
-- Generación de texto y descripción de contenido visual: descripciones de cambios relevantes en el vídeo y respuesta a preguntas sobre frames recientes.
-- Capacidades multilingües limitadas a inglés y chino.
-- Soporte de tool calling / function calling: no disponible en la información proporcionada.
-- Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
-- Capacidades de audio: no disponible en la información proporcionada.
-- Modo thinking explícito: no disponible en la información proporcionada.
+- Comprensión de imagen: descripción y respuesta a preguntas sobre imágenes individuales mediante los helpers offline del checkpoint estándar.
+- Comprensión de vídeo largo: procesamiento offline de vídeo con hasta 256 fotogramas y control de FPS y resolución.
+- Interacción en tiempo real: sesiones de streaming que reciben fotogramas con marcas de tiempo y generan texto incremental.
+- Gestión de silencio: emisión de tokens de control que permiten al modelo callar cuando no hay cambios relevantes en la escena.
+- Diálogo multi-turno dentro de una sesión en directo, con posibilidad de inyectar prompts en mitad de la sesión (`push_prompt`).
+- Capacidades multilingües limitadas a inglés y chino según la model card.
+- No se documenta soporte de tool calling, function calling ni razonamiento multi-paso basado en agentes.
 
 ## Casos de uso
 
-- Vigilancia y monitorización de vídeo en directo: el modelo puede procesar frames con timestamp y emitir descripciones solo cuando detecta cambios relevantes, gracias al token `<|silence|>` y a la sesión de streaming con `frame_queue_size=1`, lo que encaja en un despliegue de una sola GPU de 24 GB.
-- Asistencia remota y accesibilidad: descripción en tiempo real de lo que ocurre en una cámara o videollamada para personas con discapacidad visual, usando la API de sesión en streaming y prompts iniciales que definen el nivel de detalle.
-- Análisis de vídeo pregrabado: resumen y respuesta a preguntas sobre vídeos de hasta 256 frames mediante `offline_video_generate`, adecuado para revisiones de contenido, moderación o indexación de archivos audiovisuales.
-- Robots e interfaz humano-máquina: integración en bucles de percepción donde el modelo recibe frames de una cámara y genera actualizaciones textuales de estado, aprovechando la baja latencia del perfil de 24 GB y la caché KV INT8.
-- Automatización de soporte con capturas de pantalla: el modelo puede describir y razonar sobre imágenes enviadas por usuarios en inglés o chino, lo que permite construir asistentes que interpretan capturas de interfaz o documentos escaneados.
-- Investigación en visión-lenguaje: al ser un checkpoint abierto con licencia Apache 2.0 y código de modelado remoto, sirve como base para experimentos de cuantización, evaluación de streaming multimodal y ajuste fino sobre tareas específicas de vídeo.
-- Despliegue en estaciones de trabajo con una RTX 4090 o similar: el perfil de 24 GB permite prototipar aplicaciones de vídeo en tiempo real sin acceso a clústeres de GPU de datacenter.
+- Vigilancia y monitorización de vídeo en directo: el modelo puede consumir fotogramas de una cámara IP y emitir alertas textuales solo cuando detecta cambios relevantes, gracias a su mecanismo de silencio y a la interfaz de streaming con timestamps.
+- Asistencia remota en directo: un operador comparte pantalla o cámara y el modelo describe lo que ocurre en tiempo real, útil en soporte técnico o telemedicina, con una sola GPU de 24 GB.
+- Accesibilidad audiovisual: generación de descripciones continuas para personas con discapacidad visual sobre retransmisiones o videollamadas, aprovechando la generación incremental por turnos.
+- Análisis de vídeo archivado: uso del modo offline con hasta 256 fotogramas para resumir reuniones, clases o partidos y responder preguntas sobre su contenido.
+- Robótica e interactividad embodied: integración en bucles de percepción donde el modelo recibe fotogramas de una cámara y produce instrucciones o descripciones de bajo nivel con latencia controlada.
+- Moderación de contenido en plataformas de vídeo: análisis por lotes de clips con el modo offline para clasificar y describir escenas antes de su publicación.
+- Prototipado rápido en investigación multimodal: el perfil de 24 GB permite experimentar con streaming vídeo-texto en una RTX 4090 sin infraestructura de clúster.
 
 ## Benchmarks y rendimiento
 
-El autor publica una comparación gráfica entre los modelos cuantizados y sus contrapartes BF16, indicando que la calidad se mantiene cercana tras la cuantización, pero no se incluyen los valores numéricos de los benchmarks en la información disponible.
-
-No se han publicado resultados de benchmarks en la informacion disponible.
+La model card incluye una comparación gráfica entre los modelos cuantizados y sus equivalentes en BF16, pero no publica cifras numéricas en el texto. No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- VRAM estimada: aproximadamente 24 GiB para el perfil de inferencia en tiempo real con FlashAttention 2 y `frame_queue_size=1`.
-- GPU recomendadas: una única GPU NVIDIA con 24 GB de VRAM; el autor no especifica modelos concretos, pero el perfil encaja en tarjetas de 24 GB como RTX 4090, RTX 3090, A10G, L4 (esta última con matices por memoria) o A100/H100 de 40/80 GB para mayor margen.
-- Cabe en GPU de consumo: sí, en tarjetas con 24 GB de VRAM, según la indicación explícita del autor.
-- Opciones de despliegue: `transformers` 4.57.1 con `trust_remote_code=True`, `bitsandbytes` 0.49.2, `hqq` 0.2.8.post1, PyTorch 2.8.0 con CUDA 12.8, Accelerate 1.12.0 y FlashAttention 2.8.1. No se mencionan vLLM, llama.cpp, Ollama ni TGI en la información disponible.
-- Latencia y throughput: no disponibles de forma numérica; el autor indica que el perfil está pensado para streaming en tiempo real y que cada instancia soporta una única sesión activa.
+- VRAM: diseñado para una única GPU NVIDIA con 24 GB de VRAM en el perfil de tiempo real, usando FlashAttention 2 y `frame_queue_size=1`.
+- GPU recomendadas: RTX 4090 (24 GB), A10G (24 GB), L4 (24 GB, con posibles limitaciones de cómputo), A100 y H100 para mayor margen y concurrencia.
+- Cabe en GPU de consumo: sí, en RTX 4090 de 24 GB; en GPUs de 16 GB no está garantizado según la documentación.
+- Despliegue: transformers con código remoto (`trust_remote_code=True`), bitsandbytes 0.49.2 y HQQ 0.2.8.post1; requiere FFmpeg en el PATH para decodificación de vídeo. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Stack probado: Python 3.12, PyTorch 2.8.0 con CUDA 12.8, Transformers 4.57.1, Accelerate 1.12.0, FlashAttention 2.8.1.
+- Latencia y throughput: no disponibles de forma numérica; una instancia soporta una única sesión en tiempo real activa.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-VL-Realtime-NF4 | 11,34 mil millones | no disponible (hasta 256 frames offline) | NF4 + KV INT8 | Apache 2.0 | Hugging Face |
-| MOSS-VL-Realtime (BF16) | 11,34 mil millones | no disponible (hasta 256 frames offline) | BF16 | Apache 2.0 | Hugging Face |
-| Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
+| MOSS-VL-Realtime-NF4 | 11,34 mil millones | no disponible | Vídeo en streaming, cuantizado 4 bits | Apache 2.0 | Hugging Face |
+| MOSS-VL-Realtime | no disponible | no disponible | Vídeo en streaming, BF16 | Apache 2.0 | Hugging Face |
+| Alternativas comparables de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
-No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de la misma categoría.
+No se dispone de información sobre otros modelos de vídeo en streaming con los que comparar parámetros, contexto o rendimiento de forma rigurosa.
 
 ## Limitaciones y advertencias
 
-- Idiomas: solo se declaran inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
-- Sesgos: no se documentan sesgos específicos en la información disponible; al ser un modelo entrenado con datos web, es previsible que herede sesgos de esos datos.
-- Alucinación: no se han publicado tasas de alucinación ni evaluaciones específicas de fidelidad visual en la información disponible.
-- Contexto: la longitud de contexto textual no se especifica; el límite práctico para vídeo es de 256 frames en inferencia offline y la ventana de streaming depende de la sesión.
-- Concurrencia: una instancia del modelo soporta una única sesión de tiempo real activa, lo que limita el despliegue multiusuario sin replicar el modelo.
-- Tokens de control: la aplicación debe filtrar o renderizar `<|silence|>`, `<|round_start|>` y `<|round_end|>`; ignorarlos puede producir salidas incoherentes.
-- Configuración frágil: no se debe añadir una segunda configuración de cuantización en tiempo de ejecución ni sobrescribir la caché KV HQQ INT8 con BF16 o dinámica en el perfil de 24 GB.
-- Dependencias: requiere `trust_remote_code=True` y código de modelado remoto, lo que implica revisar el código antes de ejecutarlo en producción.
-- Licencia: Apache 2.0 permite uso comercial, pero conviene verificar las licencias de los datos de entrenamiento del modelo base, no detalladas en la información disponible.
-- Fecha de creación: el repositorio figura creado el 2026-08-07, por lo que se trata de un lanzamiento reciente con posible menor madurez del ecosistema de herramientas.
+- Idiomas oficiales limitados a inglés y chino; el rendimiento en castellano no está garantizado ni documentado.
+- Riesgo de alucinación inherente a los modelos generativos multimodales; las descripciones de escenas pueden inventar detalles no presentes en los fotogramas.
+- La cuantización a 4 bits puede degradar ligeramente la calidad frente al checkpoint BF16, aunque la model card afirma que se mantiene cercana.
+- Una única instancia soporta una sola sesión en tiempo real, lo que limita el despliegue multiinquilino sin replicar el modelo.
+- Requiere `trust_remote_code=True` y código de modelado remoto, lo que implica revisar el código antes de usarlo en producción.
+- No se debe aplicar una segunda configuración de cuantización en tiempo de ejecución ni sustituir la caché KV INT8 por BF16 en el perfil de 24 GB.
+- La aplicación debe filtrar los tokens de control (`<|silence|>`, `<|round_start|>`, `<|round_end|>`) para no mostrarlos al usuario final.
+- No se documentan sesgos específicos, datos de entrenamiento ni evaluaciones de seguridad; conviene auditar antes de usos sensibles.
+- Licencia Apache 2.0 permite uso comercial, pero el modelo base y el código remoto deben verificarse por si incorporan componentes con condiciones adicionales.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime-NF4
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime
-- Informe técnico: https://arxiv.org/pdf/2608.15045
-- Referencia adicional: https://arxiv.org/abs/2606.07639
-- Repositorio GitHub: https://github.com/OpenMOSS/MOSS-VL
-- Web de OpenMOSS: https://openmoss.ai/
-- Web alternativa: https://www.open-moss.com/
-- Organización en Hugging Face: https://huggingface.co/OpenMOSS-Team
+- README en chino: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime-NF4/blob/main/README_zh.md
+- Informe técnico (arXiv:2608.15045): https://arxiv.org/pdf/2608.15045
+- Referencia arXiv adicional (2606.07639): https://arxiv.org/abs/2606.07639
+- Web oficial: https://www.moss-ai.com/models/moss-vl-realtime
+- Documentación de la API: https://platform.moss.cn/en/docs/scenarios/vl-realtime
+- Repositorio de código: https://github.com/OpenMOSS/MOSS-VL

@@ -34,8 +34,8 @@
     "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
     "region:us"
   ],
-  "likes": 7,
-  "downloads_30d": 156,
+  "likes": 8,
+  "downloads_30d": 209,
   "trending_score": 0,
   "parameters": 5398665281,
   "parameters_human": "5.40B",

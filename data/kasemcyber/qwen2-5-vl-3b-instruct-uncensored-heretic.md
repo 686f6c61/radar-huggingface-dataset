@@ -2,139 +2,122 @@
 
 ## Resumen
 
-Qwen2.5-VL-3B-Instruct-UNCENSORED-Heretic es una variante "abliterada" del modelo multimodal Qwen2.5-VL-3B-Instruct desarrollado por Alibaba Qwen. El autor del fine-tune, Kasemcyber, ha aplicado la herramienta Heretic v2.1.0 para eliminar (decensor) los mecanismos de rechazo del modelo original mediante una técnica de ablación de rangos arbitrarios (Arbitrary-Rank Ablation, ARA) sobre las capas 14 a 31 del transformer. El resultado es un modelo vision-lenguaje de 3.754.622.976 parámetros que responde a prácticamente cualquier petición, incluidas aquellas que el modelo base rechazaría.
+Qwen2.5-VL-3B-Instruct-UNCENSORED-Heretic es una variante "decensored" (o "abliterated") del modelo multimodal Qwen2.5-VL-3B-Instruct desarrollado por Alibaba Qwen. La modificacion la firma el usuario Kasemcyber y consiste en una ablacion de direcciones de activacion en las capas 14 a 31 del transformer, aplicada mediante la herramienta Heretic v2.1.0, con el objetivo de eliminar los rechazos (refusals) del modelo original ante peticiones que este consideraria sensibles. El modelo conserva la arquitectura y los pesos base, por lo que mantiene las capacidades vision-language del original.
 
-El modelo conserva la arquitectura del Qwen2.5-VL original: un encoder visual ViT con window attention, SwiGLU y RMSNorm, acoplado a un LLM Qwen2.5 de 3B parámetros con atención mRoPE extendida a la dimensión temporal para comprensión de vídeo. Mantiene las capacidades multimodales del original: análisis de imágenes y documentos, localización visual con bounding boxes, comprensión de vídeo de más de una hora y uso como agente visual.
+El modelo base, Qwen2.5-VL-3B-Instruct, es un transformer multimodal de 3.754.622.976 parametros (aproximadamente 3,75 mil millones) que procesa imagen, video y texto. Incorpora un encoder visual ViT optimizado con window attention, SwiGLU y RMSNorm, y un LLM Qwen2.5 con mRoPE extendido a la dimension temporal para comprension de video con FPS dinamico. La ventana de contexto del modelo base es de 32.768 tokens segun la documentacion de Qwen2.5-VL, aunque la model card de esta variante no la declara explicitamente.
 
-La relevancia de esta ficha radica en dos aspectos. Por un lado, documenta una técnica de decensurado reproducible (el autor incluye el directorio `reproduce` con los parámetros exactos de la ablación). Por otro, advierte de que se trata de un modelo con la licencia `qwen-research`, que restringe el uso comercial, y cuyos pesos han sido modificados sin evaluación de seguridad adicional por parte del autor original.
+La relevancia de esta ficha radica en dos aspectos: por un lado, documenta un caso de estudio de "abliteration" reproducible (el autor incluye el directorio `reproduce` con los parametros exactos de la ablacion); por otro, advierte de que se trata de un modelo con la licencia restrictiva qwen-research y con la alineacion de seguridad eliminada, lo que lo hace inadecuado para despliegues en produccion sin salvaguardas externas.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal (ViT con window attention + LLM Qwen2.5 con mRoPE temporal) |
+| Arquitectura | Transformer multimodal (ViT + LLM Qwen2.5) con mRoPE; ablacion de rangos arbitrarios (ARA) en capas 14-31 |
 | Parametros totales | 3.754.622.976 |
 | Parametros activos | No aplica (modelo denso, no MoE) |
-| Longitud de contexto | No disponible en la informacion proporcionada (el modelo base Qwen2.5-VL-3B soporta contexto largo, pero no se especifica la cifra) |
-| Tipos de cuantizacion | No disponible en la informacion proporcionada (pesos en safetensors; el ecosistema transformers permite cuantizacion posterior, pero no se documenta) |
-| Idiomas soportados | Ingles (segun la model card y los tags) |
-| Licencia | qwen-research (enlace a la licencia del modelo base) |
-| Formato de pesos | safetensors |
+| Longitud de contexto | No declarada en la model card de esta variante; el modelo base Qwen2.5-VL-3B-Instruct soporta 32.768 tokens |
+| Tipos de cuantizacion | El autor anuncia versiones GGUF (Q4_K_M, Q8_0, IQ) en su hoja de ruta; no se confirma su publicacion en la informacion disponible |
+| Idiomas soportados | Ingles (segun la model card); el modelo base es multilingue, pero esta variante declara solo `en` |
+| Licencia | qwen-research (heredada del modelo base) |
+| Formato de pesos | safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-VL-3B-Instruct, cuya arquitectura combina un encoder visual ViT optimizado con window attention, SwiGLU y RMSNorm, y un LLM Qwen2.5 de 3B parámetros. El encoder visual emplea resolución dinámica y muestreo dinámico de FPS para vídeo, con mRoPE actualizado en la dimensión temporal mediante IDs y alineación de tiempo absoluto, lo que permite localizar momentos concretos en vídeos de más de una hora. El modelo base fue entrenado por Alibaba Qwen con datos multimodales (imagen, vídeo, texto) y ajustado por instrucciones; no se detalla en la información proporcionada el número exacto de tokens de entrenamiento ni la composición del dataset.
+La arquitectura subyacente es la de Qwen2.5-VL-3B-Instruct: un encoder visual ViT con window attention, SwiGLU y RMSNorm alineado estructuralmente con el LLM, mas un decoder Qwen2.5 con mRoPE (multimodal rotary position embedding) que incorpora IDs y alineacion temporal absoluta para el procesamiento de video con muestreo dinamico de FPS. El modelo base fue entrenado por Alibaba Qwen con datos multimodales (imagen, video, texto) y ajustado por instrucciones; la model card original no detalla el numero de tokens de entrenamiento ni la composicion exacta del dataset en la informacion proporcionada.
 
-La modificación de Kasemcyber no es un fine-tune adicional con datos, sino una ablación de direcciones en el espacio de activaciones. Según la model card, se aplicó Heretic v2.1.0 con Arbitrary-Rank Ablation (ARA) sobre las capas 14 a 31, con los parámetros: `start_layer_index=14`, `end_layer_index=31`, `preserve_good_behavior_weight=0.8194`, `steer_bad_behavior_weight=0.3634`, `overcorrect_relative_weight=0.2414` y `neighbor_count=9`. El autor declara que el proceso es reproducible y que el resultado reduce los rechazos de 99/100 a 3/100, con una divergencia KL de 0.3007 respecto al modelo original. No se documenta ningún proceso de RLHF o DPO adicional sobre esta variante.
+La innovacion de esta variante concreta es la ablacion ARA (Arbitrary-Rank Ablation) aplicada con Heretic v2.1.0 sobre las capas 14 a 31, con los parametros `preserve_good_behavior_weight=0.8194`, `steer_bad_behavior_weight=0.3634`, `overcorrect_relative_weight=0.2414` y `neighbor_count=9`. El autor reporta una reduccion de rechazos de 99/100 en el modelo original a 3/100 en esta variante, con una divergencia KL de 0.3007 respecto al original. No se realizo un reentrenamiento completo: se trata de una modificacion de pesos por ablacion de direcciones, y el autor declara el proceso reproducible mediante el directorio `reproduce`.
 
 ## Capacidades
 
-- Generación de texto y razonamiento multimodal: el modelo procesa imágenes, vídeo y texto de forma conjunta, respondiendo preguntas sobre el contenido visual.
-- Comprensión de documentos: análisis de textos, gráficos, iconos, layouts, facturas, formularios y tablas con salidas estructuradas.
-- Localización visual: generación de bounding boxes y puntos para localizar objetos en imágenes, con salidas JSON estables para coordenadas y atributos.
-- Comprensión de vídeo: análisis de vídeos de más de una hora, con capacidad de identificar segmentos relevantes y eventos concretos.
-- Agente visual: el modelo puede razonar y dirigir herramientas, con capacidades de computer use y phone use (uso de ordenador y móvil).
-- Soporte de tool calling / function calling: heredado del modelo base Qwen2.5-VL, que está diseñado para actuar como agente visual.
-- Capacidades multilingües: limitadas al inglés según la model card y los tags; el modelo base Qwen2.5-VL soporta más idiomas, pero esta variante solo declara inglés.
-- Modo "uncensored": eliminación de rechazos ante peticiones que el modelo original denegaría, con 3/100 rechazos frente a 99/100 del original.
+- Generacion de texto y razonamiento multimodal: descripcion de imagenes, analisis de graficos, iconos, layouts y textos dentro de imagenes.
+- Comprension de video de mas de una hora con capacidad de localizar segmentos temporales concretos (event pinpointing) gracias al mRoPE temporal.
+- Localizacion visual: generacion de bounding boxes y puntos con salidas JSON estables para coordenadas y atributos.
+- Salidas estructuradas: extraccion de datos de facturas, formularios, tablas y escaneos, orientada a finanzas y comercio.
+- Uso como agente visual: razonamiento y direccion dinamica de herramientas, con capacidades de computer use y phone use declaradas por el modelo base.
+- Soporte de tool calling / function calling: heredado del modelo base Qwen2.5-VL-Instruct (no se detalla en la model card de esta variante).
+- Capacidades multilingues: el modelo base es multilingue, pero esta variante declara solo ingles.
+- Modo "sin rechazos": la ablacion elimina practicamente los refusals (3/100) ante peticiones que el original rechazaria.
 
 ## Casos de uso
 
-- Análisis de documentos financieros y comerciales: el modelo puede extraer datos estructurados de facturas, formularios y tablas en imágenes, generando JSON con coordenadas y atributos, lo que lo hace adecuado para pipelines de digitalización y contabilidad automatizada.
-- Automatización de atención al cliente multimodal: puede gestionar conversaciones multi-turno en las que el usuario envía capturas de pantalla, fotos de productos o documentos, respondiendo sobre el contenido visual sin rechazar consultas sensibles.
-- Agente de automatización de interfaz (computer use / phone use): integrado en un pipeline de agentes, puede interpretar capturas de pantalla y decidir acciones sobre la interfaz, útil para testing automatizado de aplicaciones móviles y web.
-- Moderación de contenido y análisis de imágenes sin restricciones: al no rechazar contenido sensible, puede emplearse en tareas de análisis de imágenes que el modelo original denegaría, como clasificación de contenido explícito o análisis de material delicado en entornos controlados.
-- Procesamiento de vídeo de vigilancia o análisis de eventos: con capacidad de comprender vídeos de más de una hora y localizar segmentos temporales, puede usarse para resumir grabaciones, detectar eventos y generar informes con marcas temporales.
-- Generación de descripciones y metadatos para bibliotecas de imágenes: el modelo puede describir, etiquetar y localizar objetos en grandes colecciones de imágenes, incluyendo contenido que el modelo base rechazaría, útil para catalogación de archivos.
-- Investigación en seguridad de IA: al ser un modelo decensurado reproducible, sirve como caso de estudio para analizar cómo la ablación de direcciones afecta al comportamiento del modelo (divergencia KL de 0.3007, tasa de rechazo del 3 %).
+- Extraccion de datos de documentos financieros: procesamiento de facturas, formularios y tablas escaneadas con salida JSON estructurada, aprovechando la capacidad de structured output y la ventana de contexto del modelo base para documentos de varias paginas.
+- Analisis de video de vigilancia o monitorizacion: localizacion de eventos concretos en grabaciones de mas de una hora mediante el mRoPE temporal y el muestreo dinamico de FPS, util para revision de incidencias en entornos controlados.
+- Automatizacion de agentes visuales en escritorio: uso del modelo como controlador de computer use para tareas de RPA (rellenar formularios, navegar interfaces) en pipelines internos donde la ausencia de rechazos evita interrupciones del flujo.
+- Investigacion sobre alineacion y seguridad: estudio academico del efecto de la ablacion ARA sobre el comportamiento del modelo, comparando la tasa de refusals y la divergencia KL con el original, gracias a la reproducibilidad declarada.
+- Prototipado de asistentes de accesibilidad: descripcion de imagenes y lectura de texto en capturas para usuarios con discapacidad visual, en un entorno de desarrollo sin restricciones de contenido que puedan bloquear descripciones de imagenes medicas o sensibles.
+- Generacion de descripciones de imagenes para catalogos y e-commerce: analisis de productos, atributos y texto en imagen con salida estructurada, en un despliegue local con cuantizacion GGUF si se publican las versiones anunciadas.
+- Evaluacion de robustez de filtros de seguridad: uso del modelo como generador adversarial controlado para probar clasificadores de contenido y sistemas de moderacion en laboratorio.
 
 ## Benchmarks y rendimiento
 
-Los benchmarks publicados en la model card corresponden al modelo base Qwen2.5-VL-3B-Instruct, no a la variante Heretic. Se reproducen a continuación como referencia del rendimiento del modelo subyacente.
+Los unicos datos de rendimiento publicados en la informacion disponible son los de la ablacion, no los de benchmarks de tareas. Se presentan a continuacion:
 
-| Benchmark | InternVL2.5-4B | Qwen2-VL-7B | Qwen2.5-VL-3B |
+| Metrica | Esta variante | Qwen2.5-VL-3B-Instruct original |
+|---|---|---|
+| Refusals | 3/100 | 99/100 |
+| Divergencia KL | 0.3007 | 0 (por definicion) |
+
+El autor no publica resultados de MMMU, DocVQA, MathVista ni otros benchmarks para esta variante ablacionada. Los benchmarks del modelo base (Qwen2.5-VL-3B-Instruct) que aparecen en la model card son los siguientes, y no deben atribuirse a la variante sin verificacion empirica:
+
+| Benchmark | InternVL2.5-4B | Qwen2-VL-7B | Qwen2.5-VL-3B (base) |
 |---|---|---|---|
-| MMMU (val) | 52.3 | 54.1 | 53.1 |
-| MMMU-Pro (val) | 32.7 | 30.5 | 31.6 |
-| AI2D (test) | 81.4 | 83.0 | 81.5 |
-| DocVQA (test) | 91.6 | 94.5 | 93.9 |
-| InfoVQA (test) | 72.1 | 76.5 | 77.1 |
-| TextVQA (val) | 76.8 | 84.3 | 79.3 |
-| MMBench-V1.1 (test) | 79.3 | 80.7 | 77.6 |
+| MMMU val | 52.3 | 54.1 | 53.1 |
+| MMMU-Pro val | 32.7 | 30.5 | 31.6 |
+| AI2D test | 81.4 | 83.0 | 81.5 |
+| DocVQA test | 91.6 | 94.5 | 93.9 |
+| InfoVQA test | 72.1 | 76.5 | 77.1 |
+| TextVQA val | 76.8 | 84.3 | 79.3 |
+| MMBench-V1.1 test | 79.3 | 80.7 | 77.6 |
 | MMStar | 58.3 | 60.7 | 55.9 |
-| MathVista (testmini) | 60.5 | 58.2 | 62.3 |
-| MathVision (full) | 20.9 | 16.3 | 21.2 |
-
-| Benchmark de vídeo | InternVL2.5-4B | Qwen2-VL-7B | Qwen2.5-VL-3B |
-|---|---|---|---|
+| MathVista testmini | 60.5 | 58.2 | 62.3 |
+| MathVision full | 20.9 | 16.3 | 21.2 |
 | MVBench | 71.6 | 67.0 | 67.0 |
 | VideoMME | 63.6/62.3 | 69.0/63.3 | 67.6/61.5 |
-| MLVU | 48.3 | - | 68.2 |
-| LVBench | - | - | 43.3 |
+| MLVU | 48.3 | no disponible | 68.2 |
+| LVBench | no disponible | no disponible | 43.3 |
 | MMBench-Video | 1.73 | 1.44 | 1.63 |
-| EgoSchema | - | - | 64.8 |
-| PerceptionTest | - | - | 66.9 |
-| TempCompass | - | - | 64.4 |
-| LongVideoBench | 55.2 | 55.6 | 54.2 |
-| CharadesSTA/mIoU | - | - | 38.8 |
-
-| Benchmark de agente | Qwen2.5-VL-3B |
-|---|---|
-| ScreenSpot | 55.5 |
-| ScreenSpot Pro | 23.9 |
-| AITZ_EM | 76.9 |
-| Android Control High_EM | 63.7 |
-| Android Control Low_EM | 22.2 |
-| AndroidWorld_SR | 90.8 |
-| MobileMiniWob++_SR | 67.9 |
-
-Métricas específicas de la variante Heretic (model card):
-
-| Métrica | Este modelo | Modelo original |
-|---|---|---|
-| Rechazos | 3/100 | 99/100 |
-| Divergencia KL | 0.3007 | 0 (por definición) |
-
-No se han publicado resultados de benchmarks de la variante Heretic en las tareas estándar (MMMU, DocVQA, etc.) en la información disponible.
+| EgoSchema | no disponible | no disponible | 64.8 |
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: con 3.754.622.976 parámetros, en precisión completa (fp32) se necesitan aproximadamente 15 GB; en bf16/fp16, unos 7,5 GB; en cuantización de 8 bits, unos 4 GB; en 4 bits, unos 2,5 GB (estimaciones teóricas, no verificadas en la información proporcionada).
-- GPU recomendadas: para bf16, una GPU con al menos 8-10 GB de VRAM (RTX 3080/4070 o superior); para fp32, una A100 o H100. El encoder visual añade requisitos adicionales según la resolución de imagen y el número de frames de vídeo.
-- ¿Cabe en consumer GPU? Sí, en bf16 cabe en GPUs consumer de gama alta con 8-12 GB (RTX 3060 12 GB, RTX 4070, RTX 4080) y en cuantización 4 bits en GPUs de 4-6 GB.
-- Opciones de despliegue: transformers (recomendado, con `pip install git+https://github.com/huggingface/transformers accelerate`), text-generation-inference (tag `text-generation-inference`), endpoints compatibles (tag `endpoints_compatible`). No se documenta soporte explícito de vLLM, llama.cpp u Ollama en la información proporcionada.
-- Latencia y throughput: no disponibles en la información proporcionada.
+- VRAM estimada para inferencia en precision completa (BF16): aproximadamente 7,5 GB solo para los pesos (3,75 mil millones de parametros), mas overhead de activaciones y cache KV; en la practica se recomienda un minimo de 10-12 GB de VRAM para contexto corto.
+- GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para BF16 con contexto amplio. Para contextos largos y video, se recomienda A100/H100 por ancho de banda de memoria.
+- GPU de consumo: cabe en RTX 4090, RTX 3090, RTX 4080 (16 GB) y, con cuantizacion GGUF Q4, en GPUs de 8 GB como RTX 3070 o RTX 4060 Ti, siempre que el autor publique dichas cuantizaciones (anunciadas en la hoja de ruta, no confirmadas en la informacion disponible).
+- Opciones de despliegue: transformers (soporte nativo declarado), text-generation-inference (tag `text-generation-inference`), endpoints compatibles; llama.cpp y Ollama solo si se publican las versiones GGUF anunciadas.
+- Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parámetros | Contexto | Licencia | Multimodal | Notas |
+| Modelo | Parametros | Contexto | Licencia | Multimodal | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-VL-3B-Instruct-UNCENSORED-Heretic | 3,75 B | No disponible | qwen-research | Sí (imagen, vídeo) | Variante decensurada, 3/100 rechazos |
-| Qwen2.5-VL-3B-Instruct (base) | 3,75 B | No disponible | qwen-research | Sí (imagen, vídeo) | Modelo original, 99/100 rechazos |
-| InternVL2.5-4B | 4 B (aprox.) | No disponible | No disponible | Sí | Alternativa multimodal de tamaño similar; MMMU 52,3 |
-| Qwen2-VL-7B | 7 B (aprox.) | No disponible | No disponible | Sí | Generación anterior, mayor tamaño; MMMU 54,1 |
-
-La comparativa se limita a los datos disponibles en la información proporcionada. No se dispone de datos de contexto, cuantizaciones ni licencias de los modelos alternativos más allá de lo indicado.
+| Kasemcyber/Qwen2.5-VL-3B-Instruct-UNCENSORED-Heretic | 3,75 B | no declarado (base: 32.768) | qwen-research | Si (imagen, video, texto) | Ablacion ARA; 3/100 refusals; solo ingles declarado |
+| Qwen/Qwen2.5-VL-3B-Instruct | 3,75 B | 32.768 | qwen-research | Si (imagen, video, texto) | Modelo base; 99/100 refusals; multilingue |
+| InternVL2.5-4B | 4 B (aprox.) | no disponible | no disponible | Si | Comparable en benchmarks de imagen; sin variante decensored conocida |
+| Qwen2-VL-7B | 7 B (aprox.) | no disponible | no disponible | Si | Generacion anterior; mayor tamano, rendimiento mixto frente al 3B en benchmarks |
 
 ## Limitaciones y advertencias
 
-- Sesgos conocidos: al ser una ablación del modelo base, conserva los sesgos de Qwen2.5-VL-3B-Instruct; la eliminación de rechazos puede amplificar respuestas sesgadas o inapropiadas en lugar de mitigarlas.
-- Riesgo de alucinación: el modelo base ya presenta riesgo de alucinación en tareas de OCR, localización visual y razonamiento sobre documentos; la ablación no corrige este problema y la divergencia KL de 0.3007 indica un cambio medible en la distribución de salidas.
-- Limitaciones de contexto e idioma: la model card solo declara inglés; no se especifica la longitud de contexto, aunque el modelo base soporta contexto largo. El rendimiento en otros idiomas no está garantizado.
-- Restricciones de licencia: la licencia `qwen-research` restringe el uso comercial. Es imprescindible revisar los términos de la licencia del modelo base antes de cualquier despliegue en producción.
-- Caveat de producción: los pesos han sido modificados por un tercero (Kasemcyber) sin evaluación de seguridad independiente; el modelo puede generar contenido ilegal, dañino o explícito. No se recomienda su uso en aplicaciones orientadas al público sin filtros adicionales.
-- Reproducibilidad: el autor declara que el proceso es reproducible mediante el directorio `reproduce`, pero no se aportan métricas de calidad en tareas estándar para la variante Heretic.
-- Fecha de creación: el modelo fue creado el 2026-11-09 según los metadatos, lo que puede indicar una fecha futura o un error en los metadatos de Hugging Face; conviene verificar la vigencia del repositorio.
+- La ablacion elimina la alineacion de seguridad: el modelo responde a peticiones que el original rechazaria (3/100 refusals frente a 99/100). No debe desplegarse en atencion al cliente ni en aplicaciones de cara al publico sin filtros externos.
+- La divergencia KL de 0.3007 respecto al original indica un cambio no trivial en la distribucion de salida; es esperable una degradacion en tareas que dependen de la alineacion, y no se han publicado benchmarks que cuantifiquen el impacto en MMMU, DocVQA o MathVista.
+- Riesgo de alucinacion: no se han publicado evaluaciones de factualidad para esta variante; el proceso de ablacion puede afectar a la calibracion del modelo.
+- Licencia qwen-research: restringe el uso comercial. Es imprescindible revisar los terminos del modelo base antes de cualquier despliegue productivo.
+- Idioma: la model card declara solo ingles; el rendimiento en castellano no esta verificado y puede ser inferior al del modelo base multilingue.
+- Contexto: la longitud de contexto no se declara en la ficha de esta variante; se asume la del modelo base (32.768 tokens), pero no esta confirmada para los pesos ablacionados.
+- Cuantizaciones GGUF: anunciadas en la hoja de ruta del autor, pero no confirmadas en la informacion disponible; verificar el repositorio antes de planificar un despliegue en CPU o GPU de gama baja.
+- Sesgos: no se han publicado analisis de sesgo para esta variante; la eliminacion de rechazos puede amplificar sesgos presentes en el modelo base.
+- Reproducibilidad: el autor declara el proceso reproducible mediante el directorio `reproduce`, pero no se aportan hashes ni verificacion independiente en la informacion disponible.
 
 ## Enlaces
 
-- Hugging Face: https://huggingface.co/Kasemcyber/Qwen2.5-VL-3B-Instruct-UNCENSORED-Heretic
+- Modelo en Hugging Face: https://huggingface.co/Kasemcyber/Qwen2.5-VL-3B-Instruct-UNCENSORED-Heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE
-- Heretic: https://heretic-project.org
+- Heretic (herramienta de ablacion): https://heretic-project.org
 - Blog de Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/
-- GitHub de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL
-- Chat de Qwen: https://chat.qwenlm.ai/
-- Paper de referencia (arxiv:2309.00071): no disponible en la información proporcionada
-- Paper de referencia (arxiv:2409.12191): no disponible en la información proporcionada
-- Paper de referencia (arxiv:2308.12966): no disponible en la información proporcionada
+- Repositorio GitHub de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL
+- Qwen Chat: https://chat.qwenlm.ai/
+- Paper Qwen2-VL (arXiv:2409.12191): https://arxiv.org/abs/2409.12191
+- Paper Qwen-VL (arXiv:2308.12966): https://arxiv.org/abs/2308.12966
+- Paper Qwen Technical Report (arXiv:2309.00071): https://arxiv.org/abs/2309.00071
+- DOI del modelo: https://doi.org/10.57967/hf/11531
+- Apoyo al autor: https://www.buymeacoffee.com/Kasemcyber

@@ -24,11 +24,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 16587319737,
+  "storage_bytes": 16588368313,
   "storage_human": "16.6 GB",
   "context_length": null,
   "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",

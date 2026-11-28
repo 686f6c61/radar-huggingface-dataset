@@ -2,99 +2,98 @@
 
 ## Resumen
 
-Qwen3.5-4B-Base-Tenstorrent-Tensix-BFP8 es una exportación cuantizada del modelo base Qwen/Qwen3.5-4B-Base, publicada por Xylolabs y optimizada específicamente para las NPU Tensix de Tenstorrent (arquitecturas Wormhole y Blackhole). El modelo conserva la arquitectura multimodal image-text-to-text del original, con 5.295.564.288 parámetros totales, y sustituye las capas lineales por matrices cuantizadas en formato block-floating-point de 8 bits (`ttnn.bfloat8_b`), lo que reduce el peso en memoria del modelo de lenguaje a aproximadamente 5,07 GB empaquetados.
+Qwen3.5-4B-Base-Tenstorrent-Tensix-BFP8 es una cuantización de los pesos del modelo base Qwen/Qwen3.5-4B-Base, publicada por Xylolabs, orientada específicamente a las NPU Tensix de Tenstorrent (arquitecturas Wormhole y Blackhole). No se trata de un modelo nuevo ni de un fine-tuning: es una conversión de formato que aplica quantización de bloque en coma flotante (block floating point, BFP) sobre las matrices de atención, MLP y DeltaNet, dejando el resto de tensores en bf16 o float32. El objetivo es que el modelo pueda ejecutarse de forma nativa en el hardware de Tenstorrent mediante las pilas tt-metal, ttnn y tt-forge.
 
-La relevancia de esta ficha radica en que no se trata de una cuantización genérica: los tensores se almacenan como valores bf16 alineados a la rejilla BFP8, de modo que el empaquetador TT-NN los lee sin alterar sus valores. Esto permite desplegar un modelo de 4B en hardware Tensix con una pérdida de calidad medida muy contenida (KL medio de 0,00072 frente al BF16 y 27 de 28 respuestas correctas en la evaluación del autor).
+El repositorio agrupa dos formatos en carpetas separadas: `bfp8/` (bfloat8_b para atención, DeltaNet y MLP) y `bfp4/` (bfloat4_b para atención, MLP y DeltaNet salvo las proyecciones a/b de DeltaNet, que quedan en bfloat8_b). El modelo base tiene 5.295.564.288 parámetros reales según los safetensors, aunque se comercializa bajo la etiqueta "4B". La licencia es Apache 2.0, heredada del modelo original.
 
-El modelo es un checkpoint preentrenado, no afinado por instrucciones: continúa texto y conserva la plantilla de chat del tokenizador base, pero no debe esperarse de él un comportamiento conversacional alineado. Está pensado para desarrolladores que trabajan con el stack tt-metal/ttnn y necesitan un modelo de referencia de 4B con licencia Apache 2.0 para prototipado en NPU.
+La relevancia de esta ficha es doble: por un lado documenta una de las primeras conversiones públicas de un Qwen3.5 a formato BFP para aceleradores Tenstorrent; por otro, sirve como referencia práctica de cuantización alternativa a GGUF/Q4_K_M, con métricas de divergencia KL publicadas frente a BF16 y frente a llama.cpp. El pipeline declarado es image-text-to-text, coherente con la naturaleza multimodal del Qwen3.5 base.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer híbrido con atención y capas Gated DeltaNet (arquitectura Qwen3.5), más torre visual y bloque MTP |
+| Arquitectura | Transformer con capas DeltaNet (híbrida atención/DeltaNet), según los nombres de módulos del repo; detalles completos no disponibles |
 | Parametros totales | 5.295.564.288 |
-| Parametros activos | no disponible (no es MoE según la información disponible) |
-| Longitud de contexto | no disponible |
-| Tipos de cuantizacion | BFP8 (`ttnn.bfloat8_b`, 8,5 bits por peso) con GPTQ; media de 9,63 bits por peso; existe exportación hermana BFP4 |
-| Idiomas soportados | no disponible |
+| Parametros activos | No aplica (no es MoE según la información disponible) |
+| Longitud de contexto | No disponible |
+| Tipos de cuantizacion | BFP8 (bfloat8_b) y BFP4 (bfloat4_b) con block floating point; además BF16 de referencia y Q4_K_M para comparación |
+| Idiomas soportados | No disponible (la evaluación KL usa inglés y coreano) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (compatible con transformers); empaquetado para TT-NN en `ttnn.bfloat8_b` |
+| Formato de pesos | safetensors (con index.json y quant4.json que describen el formato por capa); no se publican GGUF en este repo |
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.5-4B-Base emplea una arquitectura híbrida: 8 capas con atención clásica (q, k, v, o) y 24 capas con Gated DeltaNet (q, k, v, z, a, b y salida), más 32 capas MLP (gate, up, down). Incluye además un bloque MTP (multi-token prediction) y una torre visual, ambos mantenidos en bf16 sin cuantizar. La cuantización se aplicó únicamente al modelo de lenguaje.
+El modelo subyacente es Qwen3.5-4B-Base, del equipo Qwen (citado como "Qwen3.5: Towards Native Multimodal Agents", febrero de 2026). La información disponible en esta ficha no incluye detalles del entrenamiento original (número de tokens, composición del dataset, RLHF/DPO). Lo que sí se deduce de los nombres de módulos del repositorio es que la arquitectura combina bloques de atención con bloques DeltaNet, un mecanismo de atención lineal recurrente. Las matrices cuantizadas cubren atención, MLP y DeltaNet; las proyecciones a/b de DeltaNet se mantienen en bfloat8_b incluso en la carpeta bfp4 para preservar estabilidad numérica.
 
-El proceso de cuantización utiliza GPTQ sobre la rejilla bfloat8_b, manteniendo el exponente compartido de cada bloque tal y como lo fija el empaquetador. La calibración se realizó sobre 65.536 tokens de WikiText-2 y de Wikipedia en coreano. Los tensores `linear_attn.A_log` y `linear_attn.norm.weight` se conservan en float32, y el LM head (atado al embedding), las normas y el resto de tensores permanecen en bf16. No se dispone de información sobre el volumen total de tokens de preentrenamiento del modelo base ni sobre si se aplicaron fases de RLHF o DPO.
+La innovación técnica de esta publicación no está en el modelo, sino en el pipeline de cuantización: block floating point con formato bfloat8_b y bfloat4_b, empaquetado específico para Tensix, y scripts `pack_tensix.py` y `verify_grid.py` que permiten empaquetar y verificar round-trip en dispositivo. La model card reporta KL media frente a BF16 sobre 8.188 posiciones de texto en inglés (WikiText-2 test) y coreano (Wikipedia en coreano): 0.00072 para bfp8 y 0.03398 para bfp4, frente a 0.02929 de Q4_K_M de llama.cpp. El límite de aceptación declarado es 1,5 veces el KL de Q4_K_M.
 
 ## Capacidades
 
-- Generación de texto autoregresiva en modo continuación (modelo preentrenado, sin ajuste por instrucciones).
-- Procesamiento de imagen y texto combinados (pipeline `image-text-to-text`), heredado de la torre visual del modelo base.
-- Razonamiento y conocimiento general propios de un modelo de 4B, sujetos a la merma de la cuantización BFP8.
-- Capacidad multilingüe: no documentada en la información disponible, aunque la calibración incluyó coreano.
-- Soporte de tool calling / function calling: no disponible (no verificado ni documentado).
-- Soporte de agentes y razonamiento multi-paso: no disponible; el checkpoint no está alineado para ello.
-- Modo thinking: no disponible.
-- Ejecución en NPU Tensix mediante TT-NN, con empaquetado directo de los pesos BFP8 sin pérdida de valores.
+- Generación de texto autoregresiva: es un modelo base (no instruction-tuned), por lo que continúa texto en lugar de seguir instrucciones.
+- Procesamiento image-text-to-text según el pipeline declarado, heredado del Qwen3.5 base; no se detalla en la model card qué tareas multimodales concretas cubre.
+- Razonamiento y código: capacidades heredadas del base Qwen3.5-4B, no verificadas de forma independiente en esta ficha.
+- Soporte multilingüe: no documentado; la evaluación KL usa inglés y coreano, lo que sugiere cobertura al menos de esos idiomas.
+- Tool calling / function calling: no confirmado para este checkpoint base; el template de chat se conserva pero el modelo no está alineado.
+- Capacidades de agente y multi-step reasoning: no confirmadas para la variante base.
+- Ejecución nativa en NPU Tensix (Wormhole, Blackhole) mediante ttnn/tt-metal, con verificación de round-trip incluida.
 
 ## Casos de uso
 
-- Prototipado en NPU Tenstorrent: validar el stack tt-metal/ttnn con un modelo de 4B real antes de escalar a modelos mayores, aprovechando que los pesos BFP8 se empaquetan sin re-cuantización.
-- Evaluación de precisión de cuantización: usar el checkpoint como referencia para medir el impacto de BFP8 frente a BF16 en tareas de continuación de texto, con la métrica de KL y top-1 ya publicada por el autor.
-- Generación de texto en bruto para pipelines de datos: producir continuaciones y corpus sintéticos en entornos con recursos limitados de memoria de dispositivo (unos 5,07 GB para los pesos del LM).
-- Investigación en arquitecturas híbridas: estudiar el comportamiento de las capas Gated DeltaNet frente a la atención clásica en un modelo ya empaquetado para hardware específico.
-- Base para afinamiento posterior: al ser un checkpoint base con licencia Apache 2.0, sirve como punto de partida para fine-tuning supervisado o DPO orientado a una tarea concreta.
-- Despliegue en dispositivos Wormhole o Blackhole con memoria ajustada: la variante BFP8 encaja donde la BFP4 no es aceptable por pérdida de calidad, y la BFP4 donde la memoria es más restrictiva.
-- Experimentación multimodal: probar la torre visual (mantenida en bf16) en tareas image-text-to-text dentro del ecosistema Tenstorrent.
+- Despliegue en hardware Tenstorrent: cargar la carpeta `bfp8/` en una NPU Wormhole o Blackhole para servir inferencia de un LLM de ~5,3B parámetros sin GPU NVIDIA, usando tt-metal y ttnn como runtime.
+- Evaluación de cuantización BFP frente a GGUF: comparar la divergencia KL publicada (0.00072 en bfp8, 0.03398 en bfp4) con Q4_K_M (0.02929) para decidir qué formato usar en un pipeline de producción en Tensix.
+- Investigación en aceleradores alternativos: usar el repo como referencia reproducible para estudiar el impacto de block floating point en capas de atención y DeltaNet, con scripts de empaquetado y verificación incluidos.
+- Prototipado de modelos multimodales en silicio no NVIDIA: aprovechar el pipeline image-text-to-text del base para experimentar con cargas de trabajo visión-lenguaje en NPU.
+- Generación de texto en entornos de bajo consumo: emplear bfp4 (3,283 GB empaquetados) para escenarios donde el presupuesto de memoria DRAM de la NPU es ajustado, aceptando mayor degradación de calidad.
+- Base para fine-tuning posterior: al ser un checkpoint base con licencia Apache 2.0, sirve como punto de partida para adaptaciones de dominio antes de volver a cuantizar a BFP.
+- Benchmarking interno de toolchains: validar la madurez de tt-forge/ttnn frente a vLLM o llama.cpp en tareas de generación de texto comparable.
 
 ## Benchmarks y rendimiento
 
-Datos publicados por el autor en la model card (evaluación del modelo de lenguaje):
+No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K, etc.) en la información disponible. La model card solo reporta métricas de fidelidad de cuantización:
 
-| Modelo | Bits por peso | Tamano (GB) | KL medio vs BF16 | Top-1 (%) | Respuestas correctas | Perdidas |
-|---|---:|---:|---:|---:|---:|---:|
-| BF16 (Qwen/Qwen3.5-4B-Base) | 16 | 8,41 | 0 | 100 | 27 de 28 | - |
-| Este modelo (BFP8) | 9,63 | 5,065 | 0,00072 | 98,57 | 27 de 28 | 0 |
+| Formato | Tamano empaquetado (GB) | KL media vs BF16 |
+|---|---|---|
+| bfp4 | 3.283 | 0.03398 |
+| bfp8 | 5.065 | 0.00072 |
+| BF16 (referencia) | 8.41 | 0 |
+| Q4_K_M (llama.cpp) | 2.783 | 0.02929 |
 
-No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) en la información disponible.
+La KL se mide sobre 8.188 posiciones de WikiText-2 test (inglés) y Wikipedia en coreano, en texto plano. El criterio de aceptación es no superar 1,5 veces el KL de Q4_K_M; bfp8 lo cumple con margen amplio, bfp4 queda ligeramente por encima del de Q4_K_M pero dentro del umbral.
 
 ## Requisitos de hardware
 
-- VRAM / memoria de dispositivo estimada: unos 5,07 GB solo para los pesos del modelo de lenguaje en BFP8, más espacio para la caché KV y buffers.
-- Hardware objetivo: NPU Tensix de Tenstorrent, arquitecturas Wormhole y Blackhole.
-- GPU consumer: no es el objetivo del checkpoint; puede cargarse en transformers con `device_map="auto"` en bf16, pero el repo pesa 10,6 GB y no se documenta su rendimiento en GPU.
-- Despliegue: TT-NN (ttnn 0.81.1 verificado en el simulador ttsim de Blackhole), tt-metal (demo Qwen3.5/3.6 v0.81.1), tt-forge (tt-xla, aún no probado con este checkpoint) y transformers para carga estándar.
-- Limitación conocida del demo de tt-metal: siempre empaqueta las proyecciones MLP gate y up en bfloat4_b, lo que re-cuantiza estos valores BFP8; para ese demo, la exportación BFP4 encaja mejor.
+- VRAM/DRAM: el repo completo ocupa 17,7 GB; la carpeta bfp8 empaquetada son 5,065 GB y la bfp4, 3,283 GB. El BF16 de referencia son 8,41 GB. La memoria efectiva en dispositivo depende del empaquetado Tensix y del grafo desplegado, no disponible.
+- GPU recomendadas: no aplica; el destino es NPU Tensix de Tenstorrent (Wormhole, Blackhole). El ejemplo de la model card usa `AutoModelForCausalLM` en `bfloat16` con `device_map="auto"`, por lo que también puede cargarse en GPU convencional como referencia, aunque no es el objetivo del repo.
+- GPU de consumo: no es el caso de uso; en GPU NVIDIA consumer cabría en BF16 (8,41 GB) o cuantizado, pero no se han validado rendimientos en esa ruta.
+- Opciones de despliegue: tt-metal/ttnn/tt-forge en Tensix; transformers para carga de referencia; llama.cpp solo como referencia comparativa de cuantización (Q4_K_M), no como formato publicado aquí.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
-| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
+| Modelo | Parametros | Contexto | Cuantizacion | Licencia | Destino |
 |---|---|---|---|---|---|
-| Xylolabs/Qwen3.5-4B-Base-Tenstorrent-Tensix-BFP8 | 5.295.564.288 | no disponible | BFP8 (9,63 bits/peso) | Apache 2.0 | Hugging Face |
-| Xylolabs/Qwen3.5-4B-Base-Tenstorrent-Tensix-BFP4 | no disponible | no disponible | BFP4 | Apache 2.0 (presumible) | Hugging Face |
-| Qwen/Qwen3.5-4B-Base (BF16) | no disponible | no disponible | BF16 (16 bits/peso) | Apache 2.0 | Hugging Face |
-| Q4_K_M (llama.cpp, referencia citada por el autor) | no disponible | no disponible | 4 bits | no disponible | no disponible |
+| Xylolabs/Qwen3.5-4B-Base-Tenstorrent-Tensix-BFP8 | 5.295.564.288 | No disponible | BFP8 / BFP4 | Apache 2.0 | NPU Tensix |
+| Qwen/Qwen3.5-4B-Base (BF16) | 5.295.564.288 | No disponible | BF16 | Apache 2.0 | GPU/CPU genérica |
+| Qwen3.5-4B-Base en Q4_K_M (llama.cpp) | 5.295.564.288 | No disponible | Q4_K_M | Apache 2.0 | CPU/GPU consumer |
+| Xylolabs/Qwen3.5-4B-Base-Tenstorrent-Tensix-BFP4 (absorbido en este repo) | 5.295.564.288 | No disponible | BFP4 | Apache 2.0 | NPU Tensix |
+
+No se dispone de comparación con otros modelos de tamaño similar (p. ej. Llama 3.2 3B, Gemma 2 4B) en la información proporcionada, por lo que la comparativa se limita a variantes del mismo base.
 
 ## Limitaciones y advertencias
 
-- Es un modelo preentrenado, no ajustado por instrucciones: no responde a instrucciones ni mantiene conversaciones alineadas; solo continúa texto.
-- La cuantización BFP8 introduce una degradación medible (KL medio de 0,00072, top-1 del 98,57 % frente a BF16), aceptable pero no nula.
-- Solo se cuantizó y evaluó el modelo de lenguaje; el comportamiento de la torre visual y del bloque MTP en este checkpoint no está documentado.
-- El demo de tt-metal v0.81.1 no ejecuta este checkpoint a su precisión: re-cuantiza gate/up del MLP, el LM head y el MTP a bfloat8_b, y no lista Qwen3.5-4B entre sus modelos soportados.
-- tt-forge (tt-xla) no se ha probado con este checkpoint; su opción `bfp_bf8` re-cuantiza en el layout [out, in] de PyTorch.
-- tt-transformers no soporta esta arquitectura.
-- Idiomas soportados y longitud de contexto no documentados: riesgo de comportamiento inesperado fuera de los idiomas de calibración.
-- Riesgo de alucinación inherente a un modelo base de 4B sin alineación; no apto para producción conversacional sin fine-tuning y evaluación adicionales.
-- Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen y de las herramientas de Xylolabs.
+- Es un modelo base, no instruction-tuned: no sigue instrucciones ni mantiene formato de chat de forma fiable, aunque conserve el template del tokenizer.
+- La cuantización BFP4 introduce una divergencia KL (0,03398) superior a la de Q4_K_M (0,02929); para tareas sensibles a la precisión conviene usar bfp8 o BF16.
+- La evaluación de fidelidad solo cubre inglés y coreano sobre 8.188 posiciones; el comportamiento en otros idiomas y en dominios especializados no está verificado.
+- No hay benchmarks de tareas publicados, por lo que no puede afirmarse rendimiento en razonamiento, código o matemáticas a partir de esta ficha.
+- El repo está diseñado para Tensix; usarlo en GPU o CPU requiere cargar los safetensors como bf16, lo que anula la ventaja de compresión y no está soportado oficialmente por el autor.
+- Sesgos y alucinaciones: no documentados en esta ficha; se heredan los del Qwen3.5-4B-Base original.
+- Licencia Apache 2.0 permite uso comercial, pero cada carpeta lleva su propio LICENSE y NOTICE; conviene revisarlos antes de redistribuir.
+- El pipeline declarado es image-text-to-text, pero no se detalla en la model card qué modalidades concretas procesa ni con qué calidad.
 
 ## Enlaces
 
 - Hugging Face: https://huggingface.co/Xylolabs/Qwen3.5-4B-Base-Tenstorrent-Tensix-BFP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
-- Exportación BFP4: https://huggingface.co/Xylolabs/Qwen3.5-4B-Base-Tenstorrent-Tensix-BFP4
-- Código de cuantización: https://github.com/XylolabsInc/tensix-bfp-gptq
-- Demo Qwen3.5/3.6 en tt-metal: https://github.com/tenstorrent/tt-metal/tree/v0.81.1/models/demos/blackhole/qwen36
+- Repositorio de código (tensix-bfp-gptq): https://github.com/XylolabsInc/tensix-bfp-gptq
 - Documentación de Tenstorrent: https://docs.tenstorrent.com
-- Licencia: https://huggingface.co/Xylolabs/Qwen3.5-4B-Base-Tenstorrent-Tensix-BFP8/blob/main/LICENSE
+- Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

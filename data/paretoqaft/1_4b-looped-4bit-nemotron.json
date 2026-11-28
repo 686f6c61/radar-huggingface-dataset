@@ -5,7 +5,7 @@
   "author": "ParetoQaft",
   "url": "https://huggingface.co/ParetoQaft/1_4B-looped-4bit-nemotron",
   "created_at": "2026-11-27T13:09:22.000Z",
-  "updated_at": "2026-11-27T13:23:10.000Z",
+  "updated_at": "2026-11-27T17:41:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

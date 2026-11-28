@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/clef-Tensix-BFP4-MLP",
   "created_at": "2026-11-13T20:59:16.000Z",
-  "updated_at": "2026-11-27T04:37:00.000Z",
+  "updated_at": "2026-11-27T12:25:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -15,10 +15,7 @@
     "ko"
   ],
   "tags": [
-    "transformers",
     "safetensors",
-    "qwen3_5",
-    "image-text-to-text",
     "tenstorrent",
     "tensix",
     "tt-metal",
@@ -36,7 +33,6 @@
     "base_model:Cloudflare/clef",
     "base_model:quantized:Cloudflare/clef",
     "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -57,8 +53,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": "Xylolabs/clef-Tenstorrent-Tensix-BFP4",
-  "renamed_at": "2026-11-27T07:49:49.238Z",
+  "renamed_to": "Xylolabs/clef-Tenstorrent-Tensix",
+  "renamed_at": "2026-11-28T06:42:27.792Z",
   "benchmarks": [],
   "sources": []
 }

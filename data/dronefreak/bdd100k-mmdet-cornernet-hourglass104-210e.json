@@ -5,7 +5,7 @@
   "author": "dronefreak",
   "url": "https://huggingface.co/dronefreak/bdd100k-mmdet-cornernet-hourglass104-210e",
   "created_at": "2026-11-26T21:47:23.000Z",
-  "updated_at": "2026-11-27T08:14:26.000Z",
+  "updated_at": "2026-11-27T21:28:27.000Z",
   "license": "bdd100k",
   "license_family": "unknown",
   "pipeline_tag": "object-detection",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 201088948,
   "parameters_human": "201.1M",

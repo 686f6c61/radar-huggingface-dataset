@@ -5,7 +5,7 @@
   "author": "neurostuff",
   "url": "https://huggingface.co/neurostuff/prose-nuextract3",
   "created_at": "2026-11-22T13:28:15.000Z",
-  "updated_at": "2026-11-22T13:29:12.000Z",
+  "updated_at": "2026-11-27T17:38:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -16,6 +16,9 @@
     "safetensors",
     "qwen3_5",
     "image-text-to-text",
+    "neurostuff",
+    "ns-pond",
+    "ns-pond-prose",
     "neuroimaging",
     "information-extraction",
     "conversational",
@@ -26,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
@@ -43,8 +46,8 @@
   "removed": false,
   "removed_at": null,
   "removal_pattern": null,
-  "renamed_to": null,
-  "renamed_at": null,
+  "renamed_to": "neurostuff/paragraph-peak-picker-nuextract3",
+  "renamed_at": "2026-11-28T12:43:06.773Z",
   "benchmarks": [],
   "sources": []
 }

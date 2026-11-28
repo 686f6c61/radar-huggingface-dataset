@@ -1,0 +1,79 @@
+{
+  "schema": 2,
+  "id": "finis-est/OneJev1.6-0.8B-Claviger-v1",
+  "slug": "finis-est-onejev1-6-0-8b-claviger-v1",
+  "author": "finis-est",
+  "url": "https://huggingface.co/finis-est/OneJev1.6-0.8B-Claviger-v1",
+  "created_at": "2026-11-27T15:59:42.000Z",
+  "updated_at": "2026-11-27T16:01:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "onejev",
+    "qwen3_5",
+    "decision-model",
+    "discord",
+    "multi-agent",
+    "triage",
+    "synthetic-data",
+    "conversational",
+    "en",
+    "dataset:finis-est/claviger-triage-synthetic",
+    "base_model:OmniJev/OneJev1.6-0.8B",
+    "base_model:finetune:OmniJev/OneJev1.6-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816933,
+  "storage_human": "1.5 GB",
+  "context_length": null,
+  "base_model": "OmniJev/OneJev1.6-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Agent reply triage, behind a mention-or-reply wake rule",
+      "dataset": "fresh5 confirm, a synthetic test set written by Gemini models, not public",
+      "metric": "Asks answered by the right agent",
+      "value": 96.43
+    },
+    {
+      "task": "Agent reply triage, behind a mention-or-reply wake rule",
+      "dataset": "fresh5 confirm, a synthetic test set written by Gemini models, not public",
+      "metric": "The model's own replies on banter",
+      "value": 1.23
+    },
+    {
+      "task": "Agent reply triage, behind a mention-or-reply wake rule",
+      "dataset": "fresh5 confirm, a synthetic test set written by Gemini models, not public",
+      "metric": "The model's own replies on lines that want no answer",
+      "value": 0.65
+    }
+  ],
+  "sources": []
+}

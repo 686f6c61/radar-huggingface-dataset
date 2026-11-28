@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "id": "varsha100704/ats-scorer-mpnet",
+  "slug": "varsha100704-ats-scorer-mpnet",
+  "author": "varsha100704",
+  "url": "https://huggingface.co/varsha100704/ats-scorer-mpnet",
+  "created_at": "2026-11-28T07:07:11.000Z",
+  "updated_at": "2026-11-28T07:19:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mpnet",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:196",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/all-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/all-mpnet-base-v2",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437967672,
+  "storage_human": "438 MB",
+  "context_length": null,
+  "base_model": "sentence-transformers/all-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "ats val",
+      "metric": "Pearson Cosine",
+      "value": 0.7964145430575302
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "ats val",
+      "metric": "Spearman Cosine",
+      "value": 0.7831341815526147
+    }
+  ],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/JackOD-9B-Coder-i1-GGUF",
   "created_at": "2026-09-12T11:00:36.000Z",
-  "updated_at": "2026-11-20T19:09:37.000Z",
+  "updated_at": "2026-11-27T19:31:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1611,
+  "downloads_30d": 2290,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",

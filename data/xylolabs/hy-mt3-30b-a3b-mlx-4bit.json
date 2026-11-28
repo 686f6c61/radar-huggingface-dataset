@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Hy-MT3-30B-A3B-MLX-4bit",
   "created_at": "2026-11-27T02:30:39.000Z",
-  "updated_at": "2026-11-27T02:33:22.000Z",
+  "updated_at": "2026-11-28T05:17:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -224,7 +224,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": 30064719872,
   "parameters_human": "30.06B",

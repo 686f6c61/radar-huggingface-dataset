@@ -5,7 +5,7 @@
   "author": "ma-pmo",
   "url": "https://huggingface.co/ma-pmo/release-readiness-baseline",
   "created_at": "2026-11-20T16:34:15.000Z",
-  "updated_at": "2026-11-22T07:39:26.000Z",
+  "updated_at": "2026-11-28T04:30:25.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",

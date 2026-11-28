@@ -1,0 +1,49 @@
+{
+  "schema": 2,
+  "id": "mradermacher/Llama-3-heron-brain-70B-v0.3-GGUF",
+  "slug": "mradermacher-llama-3-heron-brain-70b-v0-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3-heron-brain-70B-v0.3-GGUF",
+  "created_at": "2025-03-08T02:58:16.000Z",
+  "updated_at": "2026-11-28T05:30:51.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:turing-motors/Llama-3-heron-brain-70B-v0.3",
+    "base_model:quantized:turing-motors/Llama-3-heron-brain-70B-v0.3",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302982720,
+  "storage_human": "481.3 GB",
+  "context_length": 8192,
+  "base_model": "turing-motors/Llama-3-heron-brain-70B-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "disabled": false,
+  "removed": false,
+  "removed_at": null,
+  "removal_pattern": null,
+  "renamed_to": null,
+  "renamed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

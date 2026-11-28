@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
-  "storage_bytes": 9094035342,
-  "storage_human": "9.1 GB",
+  "storage_bytes": 61264837982,
+  "storage_human": "61.3 GB",
   "context_length": null,
   "base_model": "joamCriff123/zils-mini-m1117b",
   "formats": [
